@@ -1,0 +1,20 @@
+Thank you, you're on the list!
+
+You're signed up for PetPrep early access. When the app is ready, you'll be among the first to know.
+
+Our promise: We'll only email you when PetPrep is ready — nothing else.
+
+What's coming
+- 12 weeks: your child cares for a virtual pet: food, water, walks and training.
+- You see everything: a traffic light, Care Score and daily routines for every child.
+- At the end: a Certificate of Responsibility — and an answer to whether your family is ready for a real pet.
+
+See how it works: https://petprep.si/en
+
+Warm regards,
+the PetPrep team
+Ready for a pet. There for its whole life.
+
+You're receiving this because you signed up for early access at petprep.si.
+Unsubscribe: {% unsubscribe_url %}
+{{ organization.name }} · {{ organization.full_address }}

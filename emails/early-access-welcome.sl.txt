@@ -1,0 +1,20 @@
+Hvala, ste na seznamu!
+
+Prijava na zgodnji dostop do PetPrep je uspela. Ko bo aplikacija pripravljena, vam pišemo med prvimi.
+
+Obljuba: Pisali vam bomo samo takrat, ko bo PetPrep pripravljen — nič drugega.
+
+Kaj vas čaka
+- 12 tednov: otrok skrbi za virtualnega ljubljenčka: hranjenje, voda, sprehodi in šolanje.
+- Vi vidite vse: semafor, Care Score in dnevne rutine za vsakega otroka.
+- Na koncu: Certifikat odgovornosti — in odgovor, ali je družina pripravljena na pravo žival.
+
+Poglejte, kako deluje: https://petprep.si/sl
+
+Lep pozdrav,
+ekipa PetPrep
+Pripravljeni na žival. Ob njej vse življenje.
+
+To sporočilo ste prejeli, ker ste se na petprep.si prijavili na zgodnji dostop.
+Odjava: {% unsubscribe_url %}
+{{ organization.name }} · {{ organization.full_address }}
