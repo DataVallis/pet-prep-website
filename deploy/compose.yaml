@@ -1,0 +1,26 @@
+# PetPrep website on the production server (Hetzner, same host as the API).
+# Caddy from the API stack (project "backend") terminates TLS for petprep.si and
+# proxies to this container over the shared Docker network as `website:3000`.
+name: petprep-website
+
+services:
+  website:
+    image: petprep-website:${WEBSITE_IMAGE_TAG:-production}
+    container_name: petprep-website
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+    networks:
+      backend:
+        aliases:
+          - website
+    # No published ports: only Caddy reaches it.
+    deploy:
+      resources:
+        limits:
+          memory: 384M
+
+networks:
+  backend:
+    external: true
+    name: ${API_NETWORK:-backend_petprep-network}

@@ -1,0 +1,95 @@
+name: CI & Deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: website-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  checks:
+    name: Lint, types, build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run lint
+      - run: npm run build
+      - run: npx tsc --noEmit
+      - name: Shellcheck deploy script
+        run: shellcheck deploy/deploy.sh
+
+  image:
+    name: Docker image (build + smoke test, no push)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: false
+          load: true
+          tags: petprep-website:ci
+          cache-from: type=gha,scope=petprep-website
+          cache-to: type=gha,mode=max,scope=petprep-website
+      - name: Smoke test
+        run: |
+          set -eux
+          docker run -d --name web -p 3000:3000 petprep-website:ci
+          for i in $(seq 1 30); do curl -fsS -o /dev/null http://127.0.0.1:3000/ && break; sleep 1; done
+          curl -fsS http://127.0.0.1:3000/ | grep -q '<html lang="en"'
+          curl -fsS http://127.0.0.1:3000/sl | grep -q '<html lang="sl"'
+          curl -fsS http://127.0.0.1:3000/sitemap.xml | grep -q 'petprep.si/sl/kako-deluje'
+          curl -fsS -o /dev/null http://127.0.0.1:3000/llms.txt
+          curl -fsS -o /dev/null http://127.0.0.1:3000/en/opengraph-image
+          test "$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:3000/pogoji)" = 308
+          test "$(docker exec web id -u)" = 1001
+          docker rm -f web
+
+  deploy:
+    name: Deploy to production (petprep.si)
+    needs: [checks, image]
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    concurrency:
+      group: website-production
+      cancel-in-progress: false
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://petprep.si
+    steps:
+      - uses: actions/checkout@v4
+      - name: Upload and deploy
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.PRODUCTION_SSH_PRIVATE_KEY }}
+          SSH_HOST: ${{ secrets.PRODUCTION_HOST || '138.199.172.97' }}
+          SSH_USER: ${{ secrets.PRODUCTION_USER || 'deploy' }}
+          COMMIT_SHA: ${{ github.sha }}
+        run: |
+          if [ -z "$SSH_PRIVATE_KEY" ]; then
+            echo "ERROR: the PRODUCTION_SSH_PRIVATE_KEY secret is not set for this repository."
+            exit 1
+          fi
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H "$SSH_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+          SSH="ssh -i ~/.ssh/deploy_key -o StrictHostKeyChecking=accept-new"
+
+          echo "1. Uploading commit $COMMIT_SHA to /opt/petprep/website/incoming"
+          $SSH "${SSH_USER}@${SSH_HOST}" "mkdir -p /opt/petprep/website/incoming"
+          rsync -az --delete --exclude '.git' --exclude 'node_modules' --exclude '.next' \
+            -e "$SSH" ./ "${SSH_USER}@${SSH_HOST}:/opt/petprep/website/incoming/"
+
+          echo "2. Building and switching the website container"
+          $SSH "${SSH_USER}@${SSH_HOST}" \
+            "bash /opt/petprep/website/incoming/deploy/deploy.sh /opt/petprep/website/incoming $COMMIT_SHA"
