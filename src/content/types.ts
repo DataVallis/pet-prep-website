@@ -33,6 +33,8 @@ export type Block =
   | { type: "faq"; id?: string; heading?: string; items: { q: string; a: string }[] }
   | { type: "callout"; title: string; text: string; tone?: "mint" | "dark" }
   | { type: "pricing" }
+  /** Live cookie list rendered by CookieYes from the site's latest cookie scan. */
+  | { type: "cookies"; heading: string; paragraphs: string[]; settings: string; fallback: string }
   | { type: "contact" }
   | {
       type: "legal";
@@ -87,6 +89,7 @@ export type Dictionary = {
     dataEu: string;
     languages: string;
     company: string;
+    cookieSettings: string;
   };
   screens: Record<ScreenKey, string>;
   pricingPlans: {

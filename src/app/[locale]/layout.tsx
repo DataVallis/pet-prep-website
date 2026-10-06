@@ -8,6 +8,7 @@ import { graph, organizationLd, websiteLd } from "@/lib/jsonld";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
+import { ConsentAndAnalytics } from "@/components/ConsentAndAnalytics";
 import "../globals.css";
 
 const bricolage = localFont({
@@ -67,6 +68,9 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
   const dict = getDictionary(locale);
   return (
     <html lang={localeMeta[locale].htmlLang} className={`${bricolage.variable} ${instrument.variable}`}>
+      <head>
+        <ConsentAndAnalytics />
+      </head>
       <body className="flex min-h-screen flex-col">
         <JsonLd data={graph(organizationLd(dict), websiteLd(dict))} />
         <Header locale={locale} dict={dict} />

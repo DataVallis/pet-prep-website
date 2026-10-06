@@ -144,6 +144,23 @@ export function Blocks({ blocks, locale, dict }: { blocks: Block[]; locale: Loca
             return <Pricing key={i} locale={locale} dict={dict} />;
           case "contact":
             return <ContactCards key={i} dict={dict} />;
+          case "cookies":
+            return (
+              <section key={i} className="prose-legal max-w-3xl" aria-labelledby="cookies">
+                <h2 id="cookies">{b.heading}</h2>
+                {b.paragraphs.map((p) => <p key={p}>{fillPlaceholders(p, locale)}</p>)}
+                <p>
+                  <button type="button" className="cky-banner-element btn btn-secondary mt-2">
+                    {b.settings}
+                  </button>
+                </p>
+                {/* CookieYes fills this element with the live cookie table from its latest scan. */}
+                <div className="cky-audit-table-element cookie-table mt-6" />
+                <noscript>
+                  <p>{fillPlaceholders(b.fallback, locale)}</p>
+                </noscript>
+              </section>
+            );
           case "legal":
             return (
               <div key={i} className="prose-legal max-w-3xl">

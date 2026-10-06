@@ -57,6 +57,7 @@ const sl: Dictionary = {
     dataEu: "Podatki so shranjeni v EU.",
     languages: "Več jezikov kmalu.",
     company: "PetPrep je izdelek podjetja",
+    cookieSettings: "Nastavitve piškotkov",
   },
   screens: {
     pin: "Otrok se prijavi s 6-mestno kodo staršev — brez e-pošte in gesla.",
@@ -571,7 +572,7 @@ const sl: Dictionary = {
                 "Lokacije: PetPrep ne uporablja GPS.",
                 "Oglasov ter oglaševalskih ali sledilnih orodij tretjih oseb v aplikaciji.",
                 "Klepeta med uporabniki.",
-                "Ta spletna stran ne nastavlja oglaševalskih ali analitičnih piškotkov.",
+                "Oglaševalskih piškotkov na tej spletni strani. Analitične piškotke nastavimo samo, če jih dovolite (glejte Piškotki spodaj).",
               ],
             },
             {
@@ -582,6 +583,7 @@ const sl: Dictionary = {
                 "Za varnost storitve, na primer omejevanje ponavljajočih se poskusov prijave (zakoniti interes).",
                 "Za izpolnjevanje zakonskih obveznosti, na primer računovodstvo nakupov (zakonska obveznost).",
                 "Za obveščanje o začetku PetPrep po e-pošti, če ste se prijavili na zgodnji dostop (privolitev — odjava je mogoča v vsakem sporočilu).",
+                "Da razumemo, kako obiskovalci uporabljajo to spletno stran, z Google Analytics, samo če dovolite analitične piškotke (privolitev — spremenite jo lahko kadarkoli v Nastavitvah piškotkov).",
               ],
             },
             {
@@ -604,6 +606,8 @@ const sl: Dictionary = {
                 "Potisna obvestila: Apple Push Notification service in Firebase Cloud Messaging prek Expo; obvestila ne vsebujejo imen.",
                 "Nakupi: Apple App Store in Google Play; upravljanje naročnin prek RevenueCat, ko bodo nakupi na voljo.",
                 "E-pošta za zgodnji dostop: Klaviyo (prejme samo e-poštni naslov in jezik, ki ju oddate na tej spletni strani).",
+                "Privolitev za piškotke na spletni strani: CookieYes (shrani vašo izbiro).",
+                "Analitika spletne strani: Google Analytics 4 podjetja Google Ireland Ltd., samo z vašo privolitvijo; Google Analytics 4 ne shranjuje naslovov IP.",
               ],
             },
             {
@@ -629,6 +633,16 @@ const sl: Dictionary = {
               paragraphs: ["O pomembnih spremembah vas obvestimo v aplikaciji, preden začnejo veljati. Datum na vrhu kaže zadnjo različico."],
             },
           ],
+        },
+        {
+          type: "cookies",
+          heading: "12. Piškotki",
+          paragraphs: [
+            "Nujni piškotki skrbijo za delovanje strani in si zapomnijo vašo izbiro glede piškotkov. Analitične piškotke (Google Analytics) nastavimo samo, če jih dovolite v pasici, izbiro pa lahko kadarkoli spremenite.",
+            "Spodnja tabela se samodejno ustvari iz zadnjega pregleda te spletne strani, zato vedno prikazuje piškotke, ki jih dejansko uporabljamo.",
+          ],
+          settings: "Spremeni nastavitve piškotkov",
+          fallback: "Seznam piškotkov se naloži skupaj s pasico za piškotke. Če ga ne vidite, dovolite skripte na tej strani ali pišite na {privacyEmail}.",
         },
       ],
     },

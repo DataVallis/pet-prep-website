@@ -164,3 +164,20 @@
     scroll-behavior: auto;
   }
 }
+
+/* CookieYes live cookie table on the privacy page */
+.cookie-table {
+  overflow-x: auto;
+  font-size: 14px;
+}
+.cookie-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cookie-table th,
+.cookie-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 8px 10px;
+  border-bottom: 1px solid rgb(18 22 20 / 0.12);
+}

@@ -57,6 +57,7 @@ const en: Dictionary = {
     dataEu: "Data stored in the EU.",
     languages: "More languages coming soon.",
     company: "PetPrep is a product of",
+    cookieSettings: "Cookie settings",
   },
   screens: {
     pin: "Child login with a 6-digit code from the parent — no email, no password.",
@@ -571,7 +572,7 @@ const en: Dictionary = {
                 "No location: PetPrep does not use GPS.",
                 "No advertising and no third-party advertising or tracking SDKs in the app.",
                 "No chat between users.",
-                "This website does not set advertising or analytics cookies.",
+                "No advertising cookies on this website. Analytics cookies are set only if you allow them (see Cookies below).",
               ],
             },
             {
@@ -582,6 +583,7 @@ const en: Dictionary = {
                 "To keep the service secure, for example limiting repeated login attempts (legitimate interest).",
                 "To meet legal obligations, such as accounting for purchases (legal obligation).",
                 "To email you about the PetPrep launch if you joined the early access list (consent — you can unsubscribe in every email).",
+                "To understand how visitors use this website, with Google Analytics, only if you allow analytics cookies (consent — you can change it at any time under Cookie settings).",
               ],
             },
             {
@@ -604,6 +606,8 @@ const en: Dictionary = {
                 "Push notifications: Apple Push Notification service and Firebase Cloud Messaging via Expo; notifications contain no names.",
                 "Purchases: Apple App Store and Google Play; subscription management through RevenueCat when purchases go live.",
                 "Early access emails: Klaviyo (receives only the email address and language you submit on this website).",
+                "Website cookie consent: CookieYes (stores your consent choice).",
+                "Website analytics: Google Analytics 4 by Google Ireland Ltd., only with your consent; IP addresses are not stored by Google Analytics 4.",
               ],
             },
             {
@@ -629,6 +633,16 @@ const en: Dictionary = {
               paragraphs: ["We will tell you about important changes in the app before they take effect. The date at the top shows the latest version."],
             },
           ],
+        },
+        {
+          type: "cookies",
+          heading: "12. Cookies",
+          paragraphs: [
+            "Necessary cookies keep the website working and remember your consent choice. Analytics cookies (Google Analytics) are set only if you allow them in the banner, and you can change your choice at any time.",
+            "The table below is generated automatically from the latest scan of this website, so it always lists the cookies we actually use.",
+          ],
+          settings: "Change cookie settings",
+          fallback: "The cookie list loads with the consent banner. If you do not see it, allow scripts on this page or write to {privacyEmail}.",
         },
       ],
     },
