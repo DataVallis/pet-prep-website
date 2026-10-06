@@ -29,7 +29,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
 
         <div className="ml-auto hidden items-center gap-3 lg:flex">
           <LanguageSwitcher label={dict.lang.label} />
-          <PrimaryCta dict={dict} className="!min-h-10 !px-4 !text-[15px]" />
+          <PrimaryCta locale={locale} dict={dict} className="!min-h-10 !px-4 !text-[15px]" />
         </div>
 
         {/* Mobile menu: works without JavaScript */}
@@ -52,7 +52,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             </nav>
             <div className="mt-4 flex flex-col gap-4">
               <LanguageSwitcher label={dict.lang.label} />
-              <PrimaryCta dict={dict} />
+              <PrimaryCta locale={locale} dict={dict} />
             </div>
           </div>
         </details>

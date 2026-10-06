@@ -1,5 +1,8 @@
+import Link from "next/link";
+import { pathFor, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/content/types";
 import { site } from "@/lib/site";
+import { EarlyAccessForm } from "./EarlyAccessForm";
 
 type Variant = "primary" | "mint" | "secondary";
 
@@ -9,20 +12,24 @@ const variantClass: Record<Variant, string> = {
   secondary: "btn btn-secondary",
 };
 
-export function earlyAccessHref(dict: Dictionary) {
-  return `mailto:${site.email.hello}?subject=${encodeURIComponent(dict.cta.earlyAccessSubject)}`;
+export const EARLY_ACCESS_ID = "early-access";
+
+export function earlyAccessHref(locale: Locale) {
+  return `${pathFor(locale, "home")}#${EARLY_ACCESS_ID}`;
 }
 
 /**
- * The main call to action. Before launch it asks for early access by email;
- * once `site.launchState` is "live" it links to the app stores.
+ * The main call to action. Before launch it jumps to the early-access email form;
+ * once `site.launchState` is "live" it links to the App Store.
  */
 export function PrimaryCta({
+  locale,
   dict,
   label,
   variant = "primary",
   className = "",
 }: {
+  locale: Locale;
   dict: Dictionary;
   label?: string;
   variant?: Variant;
@@ -36,9 +43,9 @@ export function PrimaryCta({
     );
   }
   return (
-    <a href={earlyAccessHref(dict)} className={`${variantClass[variant]} ${className}`}>
+    <Link href={earlyAccessHref(locale)} className={`${variantClass[variant]} ${className}`}>
       {dict.cta.earlyAccess}
-    </a>
+    </Link>
   );
 }
 
@@ -51,7 +58,8 @@ function PhoneIcon() {
   );
 }
 
-export function StoreButtons({ dict }: { dict: Dictionary }) {
+/** Store buttons once live; the early-access form before launch. */
+export function StoreButtons({ locale, dict, tone = "mint" }: { locale: Locale; dict: Dictionary; tone?: "light" | "dark" | "mint" }) {
   if (site.launchState === "live" && site.stores.ios && site.stores.android) {
     return (
       <div className="flex flex-wrap gap-3">
@@ -60,10 +68,5 @@ export function StoreButtons({ dict }: { dict: Dictionary }) {
       </div>
     );
   }
-  return (
-    <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
-      <a href={earlyAccessHref(dict)} className="btn btn-primary"><PhoneIcon />{dict.cta.earlyAccess}</a>
-      <span className="text-[15px] font-medium">{dict.cta.comingSoon}</span>
-    </div>
-  );
+  return <EarlyAccessForm locale={locale} copy={dict.earlyAccess} privacyHref={pathFor(locale, "privacy")} tone={tone} />;
 }

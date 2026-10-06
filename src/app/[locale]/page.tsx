@@ -6,7 +6,9 @@ import { buildMetadata } from "@/lib/seo";
 import { appLd, faqLd, graph, webPageLd } from "@/lib/jsonld";
 import { JsonLd } from "@/components/JsonLd";
 import { HeroVisual } from "@/components/HeroVisual";
-import { PrimaryCta, StoreButtons } from "@/components/Cta";
+import { EARLY_ACCESS_ID, PrimaryCta, StoreButtons } from "@/components/Cta";
+import { EarlyAccessForm } from "@/components/EarlyAccessForm";
+import { site } from "@/lib/site";
 import { Pricing } from "@/components/Pricing";
 import { Faq } from "@/components/Faq";
 import { Screen } from "@/components/Screen";
@@ -64,12 +66,21 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
           </p>
           <h1 className="h-display text-[clamp(44px,6vw,76px)]">{h.hero.title}</h1>
           <p className="max-w-[540px] text-[19px] leading-relaxed text-muted sm:text-xl">{h.hero.lead}</p>
-          <div className="flex flex-wrap gap-3">
-            <PrimaryCta dict={dict} className="!min-h-14 !px-6 !text-[17px]" />
-            <Link href={pathFor(locale, "howItWorks")} className="btn btn-secondary !min-h-14 !px-6 !text-[17px]">
-              {dict.cta.secondary}
-            </Link>
-          </div>
+          {site.launchState === "live" ? (
+            <div className="flex flex-wrap gap-3">
+              <PrimaryCta locale={locale} dict={dict} className="!min-h-14 !px-6 !text-[17px]" />
+              <Link href={pathFor(locale, "howItWorks")} className="btn btn-secondary !min-h-14 !px-6 !text-[17px]">
+                {dict.cta.secondary}
+              </Link>
+            </div>
+          ) : (
+            <div className="flex flex-col gap-1">
+              <EarlyAccessForm locale={locale} copy={dict.earlyAccess} privacyHref={pathFor(locale, "privacy")} size="lg" />
+              <Link href={pathFor(locale, "howItWorks")} className="inline-flex items-center gap-2 self-start font-semibold text-mint-text hover:underline">
+                {dict.cta.secondary} <Arrow />
+              </Link>
+            </div>
+          )}
           <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted">
             {h.hero.trust.map((t) => (
               <li key={t} className="flex items-center gap-1.5"><Check className="text-mint-text" />{t}</li>
@@ -222,12 +233,12 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
       </section>
 
       {/* Final CTA */}
-      <section className="container-page pb-24">
-        <div className="relative flex flex-wrap items-center justify-between gap-8 overflow-hidden rounded-[36px] bg-mint px-8 py-14 sm:px-12 sm:py-16">
+      <section id={EARLY_ACCESS_ID} className="container-page scroll-mt-24 pb-24">
+        <div className="relative flex flex-wrap items-center justify-between gap-8 overflow-hidden rounded-[36px] bg-mint px-6 py-14 sm:px-12 sm:py-16">
           <div className="flex flex-[1_1_460px] flex-col gap-4">
             <h2 className="h-display text-[clamp(36px,4.6vw,60px)]">{h.final.title}</h2>
             <p className="max-w-[460px] text-lg leading-relaxed">{h.final.text}</p>
-            <div className="mt-2"><StoreButtons dict={dict} /></div>
+            <div className="mt-2"><StoreButtons locale={locale} dict={dict} /></div>
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/brand/petprep-mark.svg" alt="" width={220} height={220} className="h-auto w-[180px] sm:w-[220px]" />

@@ -9,7 +9,7 @@ import { breadcrumbLd, faqLd, graph, webPageLd } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/JsonLd";
 import { Blocks } from "@/components/Blocks";
-import { PrimaryCta } from "@/components/Cta";
+import { StoreButtons } from "@/components/Cta";
 
 export const dynamicParams = false;
 
@@ -90,9 +90,12 @@ export default async function SubPage({ params }: PageProps<"/[locale]/[slug]">)
         <Blocks blocks={page.blocks} locale={locale} dict={dict} />
 
         {!isLegal && key !== "contact" ? (
-          <div className="mt-20 flex flex-wrap items-center justify-between gap-6 rounded-[30px] bg-mint px-8 py-10 sm:px-10">
-            <p className="font-display text-[28px] font-extrabold leading-tight tracking-[-0.02em] sm:text-[34px]">{dict.home.final.title}</p>
-            <PrimaryCta dict={dict} />
+          <div className="mt-20 flex flex-wrap items-start justify-between gap-6 rounded-[30px] bg-mint px-6 py-10 sm:px-10">
+            <div className="flex max-w-md flex-col gap-2">
+              <p className="font-display text-[28px] font-extrabold leading-tight tracking-[-0.02em] sm:text-[34px]">{dict.home.final.title}</p>
+              <p className="leading-relaxed">{dict.earlyAccess.text}</p>
+            </div>
+            <div className="w-full max-w-[560px]"><StoreButtons locale={locale} dict={dict} /></div>
           </div>
         ) : null}
       </div>
