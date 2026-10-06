@@ -1,8 +1,8 @@
-import Link from "next/link";
 import { pathFor, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/content/types";
 import { site } from "@/lib/site";
 import { EarlyAccessForm } from "./EarlyAccessForm";
+import { EarlyAccessLink } from "./EarlyAccessLink";
 
 type Variant = "primary" | "mint" | "secondary";
 
@@ -43,9 +43,9 @@ export function PrimaryCta({
     );
   }
   return (
-    <Link href={earlyAccessHref(locale)} className={`${variantClass[variant]} ${className}`}>
+    <EarlyAccessLink href={earlyAccessHref(locale)} targetId={EARLY_ACCESS_ID} className={`${variantClass[variant]} ${className}`}>
       {dict.cta.earlyAccess}
-    </Link>
+    </EarlyAccessLink>
   );
 }
 
