@@ -38,6 +38,10 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           <span>
             {dict.footer.company} {site.company.name}, {site.company.city}. {dict.footer.languages}
           </span>
+          {/* CookieYes opens its preference centre on any element with this class. */}
+          <button type="button" className="cky-banner-element underline-offset-2 hover:text-fog hover:underline">
+            {dict.footer.cookieSettings}
+          </button>
         </div>
       </div>
     </footer>

@@ -44,6 +44,12 @@ profile import with `petprep_language`, `petprep_signup_source`, `petprep_signup
 with email marketing consent. If the list has double opt-in, Klaviyo sends the confirmation email.
 Local test: `KLAVIYO_PRIVATE_API_KEY=pk_… KLAVIYO_LIST_ID=… npm run dev`.
 
+## Cookies and analytics
+
+- `src/components/ConsentAndAnalytics.tsx` (in `<head>` of every page): Google Consent Mode v2 defaults (all denied) → CookieYes banner → Google Analytics 4 (`G-CGSBN9N46F`). IDs live in `src/lib/site.ts`.
+- GA sets cookies only after the visitor allows **Analytics** in the banner. In the CookieYes dashboard, **Google Consent Mode (GCM)** must be enabled, otherwise consent never reaches GA.
+- Privacy page section “Cookies” contains `<div class="cky-audit-table-element">` — CookieYes fills it with the live cookie list from its latest scan. Any element with class `cky-banner-element` (footer “Cookie settings”) reopens the preferences.
+
 ## SEO and AI search
 
 - Per-page `title`, `description`, canonical URL, `hreflang` (en, sl, x-default), Open Graph and Twitter cards (`src/lib/seo.ts`).

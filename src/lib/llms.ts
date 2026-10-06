@@ -39,6 +39,8 @@ function blockToMarkdown(b: Block, locale: Locale): string {
       return b.sections
         .map((s) => [`### ${s.heading}`, ...(s.paragraphs ?? []).map((p) => fillPlaceholders(p, locale)), ...(s.items ?? []).map((i) => `- ${fillPlaceholders(i, locale)}`)].join("\n\n"))
         .join("\n\n");
+    case "cookies":
+      return [`### ${b.heading}`, ...b.paragraphs.map((p) => fillPlaceholders(p, locale))].join("\n\n");
     case "screens":
       return "";
   }
