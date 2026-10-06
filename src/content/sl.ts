@@ -107,7 +107,7 @@ const sl: Dictionary = {
     button: "Prijava na zgodnji dostop",
     sending: "Pošiljam …",
     successTitle: "Ste na seznamu.",
-    successText: "Preverite e-pošto — če smo vam poslali potrditveno sporočilo, kliknite povezavo v njem.",
+    successText: "Hvala! Ko bo PetPrep pripravljen, vam pišemo med prvimi.",
     invalid: "Vpišite veljaven e-poštni naslov.",
     error: "Nekaj je šlo narobe. Poskusite znova čez trenutek.",
     consent: "S prijavo se strinjate, da vam pošiljamo e-pošto o PetPrep. Odjava je mogoča kadarkoli.",

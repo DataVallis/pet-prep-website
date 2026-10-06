@@ -38,6 +38,15 @@ function sameOrigin(req: NextRequest): boolean {
   }
 }
 
+/** Diagnostics without secrets: is Klaviyo configured in this container? */
+export function GET() {
+  const cfg = klaviyoConfig();
+  return NextResponse.json(
+    { configured: Boolean(cfg), listIdLength: cfg?.listId.length ?? 0, revision: cfg?.revision ?? null },
+    { headers: { "Cache-Control": "no-store" } },
+  );
+}
+
 export async function POST(req: NextRequest) {
   if (!sameOrigin(req)) return NextResponse.json({ ok: false, error: "forbidden" }, { status: 403 });
 

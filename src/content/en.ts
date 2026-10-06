@@ -107,7 +107,7 @@ const en: Dictionary = {
     button: "Get early access",
     sending: "Sending…",
     successTitle: "You are on the list.",
-    successText: "Check your inbox — if we sent a confirmation email, click the link in it to confirm.",
+    successText: "Thank you! We will email you first when PetPrep is ready.",
     invalid: "Please enter a valid email address.",
     error: "Something went wrong. Please try again in a moment.",
     consent: "By subscribing you agree to receive emails about PetPrep. Unsubscribe anytime.",
