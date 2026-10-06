@@ -35,6 +35,15 @@ Site-wide settings — domain, e-mail addresses, company details, launch state, 
 `public/screens/<locale>/<screen>.png` (780×1688, i.e. 390×844 @2x): `pin`, `contract`, `hud`, `picker`, `parent`, `report`, `assistant`, `certificate`.
 They are **product previews rendered in the CGP**, not captures from a device. Replace them with real screenshots (same file names and size) when available — especially `hud.png`, which should show the real AI pet video frame.
 
+## Early access (Klaviyo)
+
+Before launch the calls to action show an email form (`src/components/EarlyAccessForm.tsx`). It posts to `/api/subscribe`
+(`src/app/api/subscribe/route.ts`), which validates the address, checks the origin, drops bots (honeypot field), limits
+5 requests per IP per 10 minutes and calls Klaviyo server-side (`src/lib/klaviyo.ts`, API revision `2026-07-15`):
+profile import with `petprep_language`, `petprep_signup_source`, `petprep_signup_page`, then a subscription to the list
+with email marketing consent. If the list has double opt-in, Klaviyo sends the confirmation email.
+Local test: `KLAVIYO_PRIVATE_API_KEY=pk_… KLAVIYO_LIST_ID=… npm run dev`.
+
 ## SEO and AI search
 
 - Per-page `title`, `description`, canonical URL, `hreflang` (en, sl, x-default), Open Graph and Twitter cards (`src/lib/seo.ts`).
@@ -63,6 +72,11 @@ Caddy (in the API stack, `deployment/Caddyfile` of the `pet-prep` repo) terminat
 | `PRODUCTION_SSH_PRIVATE_KEY` | private key of the `deploy` user (ed25519) |
 | `PRODUCTION_HOST` | `138.199.172.97` (optional, default) |
 | `PRODUCTION_USER` | `deploy` (optional, default) |
+| `KLAVIYO_PRIVATE_API_KEY` | Klaviyo private API key (`pk_…`) with write access to Profiles, Lists and Subscriptions |
+| `KLAVIYO_LIST_ID` | ID of the Klaviyo early-access list |
+
+The two Klaviyo values are written to `/opt/petprep/website/.env` (mode 600) on every deploy and read by the container at start.
+Without them the early-access form answers “not configured” (HTTP 503).
 
 Manual deploy on the server: `bash /opt/petprep/website/incoming/deploy/deploy.sh /opt/petprep/website/incoming manual`.
 Rollback: `docker tag petprep-website:previous petprep-website:production && docker compose -f /opt/petprep/website/incoming/deploy/compose.yaml up -d --force-recreate`.

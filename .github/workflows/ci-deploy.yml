@@ -74,6 +74,8 @@ jobs:
           SSH_HOST: ${{ secrets.PRODUCTION_HOST || '138.199.172.97' }}
           SSH_USER: ${{ secrets.PRODUCTION_USER || 'deploy' }}
           COMMIT_SHA: ${{ github.sha }}
+          KLAVIYO_PRIVATE_API_KEY: ${{ secrets.KLAVIYO_PRIVATE_API_KEY }}
+          KLAVIYO_LIST_ID: ${{ secrets.KLAVIYO_LIST_ID }}
         run: |
           if [ -z "$SSH_PRIVATE_KEY" ]; then
             echo "ERROR: the PRODUCTION_SSH_PRIVATE_KEY secret is not set for this repository."
@@ -90,6 +92,15 @@ jobs:
           rsync -az --delete --exclude '.git' --exclude 'node_modules' --exclude '.next' \
             -e "$SSH" ./ "${SSH_USER}@${SSH_HOST}:/opt/petprep/website/incoming/"
 
-          echo "2. Building and switching the website container"
+          echo "2. Runtime secrets"
+          if [ -n "$KLAVIYO_PRIVATE_API_KEY" ] && [ -n "$KLAVIYO_LIST_ID" ]; then
+            printf 'KLAVIYO_PRIVATE_API_KEY=%s\nKLAVIYO_LIST_ID=%s\n' "$KLAVIYO_PRIVATE_API_KEY" "$KLAVIYO_LIST_ID" \
+              | $SSH "${SSH_USER}@${SSH_HOST}" "umask 077 && cat > /opt/petprep/website/.env"
+            echo "Klaviyo settings written to /opt/petprep/website/.env"
+          else
+            echo "WARNING: KLAVIYO_PRIVATE_API_KEY / KLAVIYO_LIST_ID not set — the early-access form will answer 503 until they are."
+          fi
+
+          echo "3. Building and switching the website container"
           $SSH "${SSH_USER}@${SSH_HOST}" \
             "bash /opt/petprep/website/incoming/deploy/deploy.sh /opt/petprep/website/incoming $COMMIT_SHA"

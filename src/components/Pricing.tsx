@@ -32,7 +32,7 @@ export function Pricing({ locale, dict }: { locale: Locale; dict: Dictionary }) 
               <li key={f} className="flex gap-2.5"><Check className="text-mint-text" />{f}</li>
             ))}
           </ul>
-          <div className="mt-auto pt-2"><PrimaryCta dict={dict} variant="secondary" className="w-full !whitespace-normal text-center" /></div>
+          <div className="mt-auto pt-2"><PrimaryCta locale={locale} dict={dict} variant="secondary" className="w-full !whitespace-normal text-center" /></div>
         </section>
         <section className="on-dark relative flex min-w-0 flex-col gap-5 rounded-[26px] bg-graphite p-6 text-fog sm:p-8" aria-labelledby="plan-challenge">
           <span className="absolute right-6 top-6 rounded-full bg-mint px-2.5 py-1 text-xs font-bold text-graphite">{challenge.badge}</span>
@@ -47,7 +47,7 @@ export function Pricing({ locale, dict }: { locale: Locale; dict: Dictionary }) 
               <li key={f} className="flex gap-2.5"><Check className="text-mint" />{f}</li>
             ))}
           </ul>
-          <div className="mt-auto pt-2"><PrimaryCta dict={dict} variant="mint" className="w-full !whitespace-normal text-center" /></div>
+          <div className="mt-auto pt-2"><PrimaryCta locale={locale} dict={dict} variant="mint" className="w-full !whitespace-normal text-center" /></div>
         </section>
       </div>
       <p className="text-sm text-muted">{note}</p>

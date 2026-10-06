@@ -94,6 +94,20 @@ export type Dictionary = {
     challenge: { name: string; badge: string; text: string; features: string[]; cta: string; unit: string };
     note: string;
   };
+  earlyAccess: {
+    title: string;
+    text: string;
+    label: string;
+    placeholder: string;
+    button: string;
+    sending: string;
+    successTitle: string;
+    successText: string;
+    invalid: string;
+    error: string;
+    consent: string;
+    privacyLink: string;
+  };
   contactCards: { title: string; text: string; email: "hello" | "privacy" | "partners" | "investors" }[];
   home: {
     meta: { title: string; description: string };

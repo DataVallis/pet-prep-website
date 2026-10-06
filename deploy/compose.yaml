@@ -10,6 +10,10 @@ services:
     restart: unless-stopped
     environment:
       NODE_ENV: production
+    # Runtime secrets (Klaviyo), written by the deploy workflow from GitHub secrets.
+    env_file:
+      - path: /opt/petprep/website/.env
+        required: false
     networks:
       backend:
         aliases:

@@ -99,6 +99,20 @@ const en: Dictionary = {
     note:
       "Purchases are made in the app through the App Store or Google Play. A second pet in the same family is a separate challenge. Prices include VAT where applicable.",
   },
+  earlyAccess: {
+    title: "Get early access",
+    text: "Be among the first families to try PetPrep. We will email you when it is ready — nothing else.",
+    label: "Your email address",
+    placeholder: "you@example.com",
+    button: "Get early access",
+    sending: "Sending…",
+    successTitle: "You are on the list.",
+    successText: "Check your inbox — if we sent a confirmation email, click the link in it to confirm.",
+    invalid: "Please enter a valid email address.",
+    error: "Something went wrong. Please try again in a moment.",
+    consent: "By subscribing you agree to receive emails about PetPrep. Unsubscribe anytime.",
+    privacyLink: "Privacy policy",
+  },
   contactCards: [
     { title: "Families", text: "Questions about the app, your account or the challenge.", email: "hello" },
     { title: "Privacy", text: "Data access, export, deletion or any privacy question.", email: "privacy" },
@@ -548,6 +562,7 @@ const en: Dictionary = {
                 "Care activity: actions in the simulation (feeding, water, cleaning, walks), daily step totals from the phone's motion sensor, scores and reports.",
                 "The Responsibility Contract: the child's finger signature, stored as a vector line with the time of signing.",
                 "Codes: login and invite codes are stored only as hashes and expire.",
+                "Early access list (this website): your email address, the language of the page and the time you signed up.",
               ],
             },
             {
@@ -566,6 +581,7 @@ const en: Dictionary = {
                 "To process purchases through the App Store or Google Play (performance of a contract).",
                 "To keep the service secure, for example limiting repeated login attempts (legitimate interest).",
                 "To meet legal obligations, such as accounting for purchases (legal obligation).",
+                "To email you about the PetPrep launch if you joined the early access list (consent — you can unsubscribe in every email).",
               ],
             },
             {
@@ -587,6 +603,7 @@ const en: Dictionary = {
                 "AI image and video generation: fal.ai (receives only the pet description).",
                 "Push notifications: Apple Push Notification service and Firebase Cloud Messaging via Expo; notifications contain no names.",
                 "Purchases: Apple App Store and Google Play; subscription management through RevenueCat when purchases go live.",
+                "Early access emails: Klaviyo (receives only the email address and language you submit on this website).",
               ],
             },
             {

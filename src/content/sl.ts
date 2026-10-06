@@ -99,6 +99,20 @@ const sl: Dictionary = {
     note:
       "Nakup poteka v aplikaciji prek App Store ali Google Play. Drugi ljubljenček v isti družini je ločen izziv. Cene vključujejo DDV, kjer se obračuna.",
   },
+  earlyAccess: {
+    title: "Prijava na zgodnji dostop",
+    text: "Bodite med prvimi družinami, ki preizkusijo PetPrep. Pisali vam bomo, ko bo pripravljen — nič drugega.",
+    label: "Vaš e-poštni naslov",
+    placeholder: "vi@primer.si",
+    button: "Prijava na zgodnji dostop",
+    sending: "Pošiljam …",
+    successTitle: "Ste na seznamu.",
+    successText: "Preverite e-pošto — če smo vam poslali potrditveno sporočilo, kliknite povezavo v njem.",
+    invalid: "Vpišite veljaven e-poštni naslov.",
+    error: "Nekaj je šlo narobe. Poskusite znova čez trenutek.",
+    consent: "S prijavo se strinjate, da vam pošiljamo e-pošto o PetPrep. Odjava je mogoča kadarkoli.",
+    privacyLink: "Politika zasebnosti",
+  },
   contactCards: [
     { title: "Družine", text: "Vprašanja o aplikaciji, računu ali izzivu.", email: "hello" },
     { title: "Zasebnost", text: "Dostop do podatkov, izvoz, izbris ali drugo vprašanje o zasebnosti.", email: "privacy" },
@@ -548,6 +562,7 @@ const sl: Dictionary = {
                 "Dejavnost skrbi: dejanja v simulaciji (hranjenje, voda, čiščenje, sprehodi), dnevno število korakov s senzorja gibanja, ocene in poročila.",
                 "Pogodba o odgovornosti: otrokov podpis s prstom, shranjen kot vektorska črta s časom podpisa.",
                 "Kode: kode za prijavo in povabila so shranjene samo kot zgoščene vrednosti in potečejo.",
+                "Seznam za zgodnji dostop (ta spletna stran): vaš e-poštni naslov, jezik strani in čas prijave.",
               ],
             },
             {
@@ -566,6 +581,7 @@ const sl: Dictionary = {
                 "Za obdelavo nakupov prek App Store ali Google Play (izvajanje pogodbe).",
                 "Za varnost storitve, na primer omejevanje ponavljajočih se poskusov prijave (zakoniti interes).",
                 "Za izpolnjevanje zakonskih obveznosti, na primer računovodstvo nakupov (zakonska obveznost).",
+                "Za obveščanje o začetku PetPrep po e-pošti, če ste se prijavili na zgodnji dostop (privolitev — odjava je mogoča v vsakem sporočilu).",
               ],
             },
             {
@@ -587,6 +603,7 @@ const sl: Dictionary = {
                 "Ustvarjanje AI slik in videov: fal.ai (prejme samo opis ljubljenčka).",
                 "Potisna obvestila: Apple Push Notification service in Firebase Cloud Messaging prek Expo; obvestila ne vsebujejo imen.",
                 "Nakupi: Apple App Store in Google Play; upravljanje naročnin prek RevenueCat, ko bodo nakupi na voljo.",
+                "E-pošta za zgodnji dostop: Klaviyo (prejme samo e-poštni naslov in jezik, ki ju oddate na tej spletni strani).",
               ],
             },
             {
