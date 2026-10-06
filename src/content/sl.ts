@@ -385,7 +385,7 @@ const sl: Dictionary = {
           heading: "Vprašanja o ceni",
           items: [
             { q: "Je brezplačna različica res brezplačna?", a: "Da. Mešanček je brezplačen za vedno, s celotno simulacijo, pravimi sprehodi in nadzorno ploščo za starše." },
-            { q: "Kaj vključuje izziv?", a: "Zahtevne pasme, kot je border collie, razpoloženja ljubljenčka kot AI videe, Certifikat odgovornosti na koncu in dostop za oba starša." },
+            { q: "Kaj vključuje izziv?", a: "Zahtevne pasme, kot je border collie, razpoloženja ljubljenčka kot AI videje, Certifikat odgovornosti na koncu in dostop za oba starša." },
             { q: "Ali sorojenci plačajo dvakrat?", a: "Ne. Otroci, ki si delijo enega ljubljenčka, plačajo eno ceno. Drugi ljubljenček v družini je ločen izziv." },
             { q: "Kako plačam?", a: "V aplikaciji, prek App Store ali Google Play. Preizkus in morebitno preklicanje urejate v svojem računu trgovine." },
           ],
@@ -577,7 +577,7 @@ const sl: Dictionary = {
             {
               heading: "6. Slike in videi, ustvarjeni z umetno inteligenco",
               paragraphs: [
-                "Fotografijo in kratke videe vsakega ljubljenčka ustvari AI storitev samo na podlagi opisa ljubljenčka (pasma, dlaka, lise ipd.). Opis nikoli ne vsebuje imen ali kakršnih koli podatkov o vaši družini. Končni mediji so shranjeni na naših strežnikih v EU in prikazani prek kratkotrajnih povezav.",
+                "Fotografijo in kratke videje vsakega ljubljenčka ustvari AI storitev samo na podlagi opisa ljubljenčka (pasma, dlaka, lise ipd.). Opis nikoli ne vsebuje imen ali kakršnih koli podatkov o vaši družini. Končni mediji so shranjeni na naših strežnikih v EU in prikazani prek kratkotrajnih povezav.",
               ],
             },
             {
@@ -657,7 +657,7 @@ const sl: Dictionary = {
             {
               heading: "5. Vsebina, ustvarjena z umetno inteligenco",
               paragraphs: [
-                "Slike in videe ljubljenčkov ustvari umetna inteligenca. So ponazoritve simuliranega ljubljenčka in se morda ne ujemajo povsem z nobeno pravo živaljo ali standardom pasme. Prihodnje funkcije AI asistenta bodo dajale le splošne informacije, nikoli diagnoze, in vedno kazale pot do pravega veterinarja.",
+                "Slike in videje ljubljenčkov ustvari umetna inteligenca. So ponazoritve simuliranega ljubljenčka in se morda ne ujemajo povsem z nobeno pravo živaljo ali standardom pasme. Prihodnje funkcije AI asistenta bodo dajale le splošne informacije, nikoli diagnoze, in vedno kazale pot do pravega veterinarja.",
               ],
             },
             {
