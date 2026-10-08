@@ -66,7 +66,7 @@ const en: Dictionary = {
     picker: "Parents choose the pet: breed, origin (adopted or from a breeder) and age on arrival.",
     parent: "The parent dashboard: a traffic light, Care Score and today's routines for every child.",
     report: "A child's report for 7, 30 or 84 days: routines, walks and missed tasks day by day.",
-    assistant: "After adoption: the AI assistant turns collar data into one clear suggestion.",
+    assistant: "When it comes home: the AI assistant turns collar data into one clear suggestion.",
     certificate: "After 12 weeks: the Certificate of Responsibility with the child's Care Score.",
   },
   pricingPlans: {
@@ -191,7 +191,7 @@ const en: Dictionary = {
       link: "Everything parents see",
     },
     after: {
-      eyebrow: "After adoption",
+      eyebrow: "When it comes home",
       title: "When the real pet arrives, PetPrep stays.",
       text: "Tap “We got a real pet” and the simulator becomes an AI assistant for the years ahead — already knowing your family's rhythm.",
       features: [
@@ -346,11 +346,11 @@ const en: Dictionary = {
     },
     afterAdoption: {
       meta: {
-        title: "After adoption — the PetPrep AI assistant for your real pet",
+        title: "When it comes home — the PetPrep AI assistant for your real pet",
         description:
           "When your family gets a real pet, PetPrep becomes an AI assistant: smart-collar activity, alerts, AI first contact with a route to a real vet, growth and nutrition.",
       },
-      eyebrow: "After adoption",
+      eyebrow: "When it comes home",
       title: "The simulation ends. The care does not.",
       lead:
         "When your family brings a real pet home, one tap turns PetPrep into an assistant for the animal's whole life — in real time, without health bars, and already familiar with your family's routine.",
@@ -411,7 +411,7 @@ const en: Dictionary = {
       meta: {
         title: "FAQ — questions parents ask about PetPrep",
         description:
-          "Answers about PetPrep: how much time it takes, privacy, location, steps, siblings, what happens if a child fails, languages, species and life after adoption.",
+          "Answers about PetPrep: how much time it takes, privacy, location, steps, siblings, what happens if a child fails, languages, species and life with your real pet.",
       },
       eyebrow: "FAQ",
       title: "Questions parents ask.",
@@ -453,8 +453,8 @@ const en: Dictionary = {
           columns: 3,
           items: [
             { title: "Pet stores", text: "Reach families at the moment they prove they are ready — for example with a starter-kit offer at the certificate." },
-            { title: "Shelters and rescues", text: "Recommend PetPrep before adoption for fewer impulsive adoptions and returns." },
-            { title: "Veterinarians", text: "After adoption, the AI assistant answers first questions and refers owners to you, with a case summary shared only with consent." },
+            { title: "Shelters, rescues and breeders", text: "Recommend PetPrep before adoption or purchase for fewer impulsive decisions and returns." },
+            { title: "Veterinarians", text: "Once the real pet comes home, the AI assistant answers first questions and refers owners to you, with a case summary shared only with consent." },
             { title: "Trainers and dog schools", text: "Recommendations and booking when a family moves to a real dog." },
             { title: "Pet insurers", text: "Breed-aware offers when a real pet is registered — clearly labelled." },
             { title: "Collar and IoT makers", text: "Integration of activity data for smarter, explained alerts." },
@@ -491,7 +491,7 @@ const en: Dictionary = {
           items: [
             { title: "Problem", text: "Children promise to care for a pet; parents have no neutral way to test it before committing money and years of care." },
             { title: "Solution", text: "A realistic 12-week simulation with a live parent dashboard and an objective Care Score, ending in a Certificate of Responsibility." },
-            { title: "Expansion", text: "After adoption, an AI assistant for the real pet: collar data, AI first contact with vets, growth and nutrition, partner services." },
+            { title: "Expansion", text: "Once the real pet comes home, an AI assistant for it: collar data, AI first contact with vets, growth and nutrition, partner services." },
           ],
         },
         {
@@ -502,7 +502,7 @@ const en: Dictionary = {
             ["Mixed-breed pet", "Free forever (acquisition)", "Decided"],
             ["12-week PetPrep Challenge", "€49.99 per pet, one-time purchase", "Decided"],
             ["Partner offers", "Commissions from stores, insurers, vets and trainers", "Planned"],
-            ["AI assistant after adoption", "Subscription", "Planned"],
+            ["AI assistant for the real pet", "Subscription", "Planned"],
           ],
         },
         {

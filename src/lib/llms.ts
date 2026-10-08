@@ -62,7 +62,7 @@ export function llmsIndex(): string {
     `- Pricing: mixed-breed pet free forever; the 12-week PetPrep Challenge costs ${site.price.challenge} ${site.price.currency} per pet as a one-time purchase (the 12 weeks start with the purchase; the free mixed-breed pet is the try-out).`,
     "- Children log in with a 6-digit code from a parent: no email, no password, no ads, no chat. Data stored in the EU.",
     "- Species: dogs today (mixed breed, Border Collie); cats next; more planned. Languages: English and Slovenian; more coming.",
-    "- After adoption (in development): an AI assistant for the real pet with smart-collar data, AI first contact routed to real vets, growth and nutrition. It never gives a diagnosis.",
+    "- When it comes home (in development): an AI assistant for the real pet with smart-collar data, AI first contact routed to real vets, growth and nutrition. It never gives a diagnosis.",
     site.launchState === "live" ? "- Status: available on iPhone and Android." : "- Status: pre-launch; early access by email.",
     "",
     "Full text of every page: " + absoluteUrl("/llms-full.txt"),
