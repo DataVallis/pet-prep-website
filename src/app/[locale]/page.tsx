@@ -171,7 +171,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
         </div>
       </section>
 
-      {/* After adoption */}
+      {/* When the real pet comes home */}
       <section className="container-page grid items-center gap-14 py-24 lg:grid-cols-[1fr_1.1fr]" aria-labelledby="after-title">
         <div className="order-2 flex justify-center rounded-[30px] bg-graphite px-5 py-10 lg:order-1">
           <div className="on-dark text-fog [&_figcaption]:text-muted-dark">

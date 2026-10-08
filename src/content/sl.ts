@@ -66,7 +66,7 @@ const sl: Dictionary = {
     picker: "Starši izberejo ljubljenčka: pasmo, izvor (posvojen ali od vzreditelja) in starost ob prihodu.",
     parent: "Nadzorna plošča za starše: semafor, Care Score in današnje rutine za vsakega otroka.",
     report: "Poročilo otroka za 7, 30 ali 84 dni: rutine, sprehodi in zamujene naloge po dnevih.",
-    assistant: "Po posvojitvi: AI asistent podatke z ovratnice prevede v en jasen predlog.",
+    assistant: "Ko pride domov: AI asistent podatke z ovratnice prevede v en jasen predlog.",
     certificate: "Po 12 tednih: Certifikat odgovornosti z otrokovim Care Score.",
   },
   pricingPlans: {
@@ -191,7 +191,7 @@ const sl: Dictionary = {
       link: "Vse, kar vidijo starši",
     },
     after: {
-      eyebrow: "Po posvojitvi",
+      eyebrow: "Ko pride domov",
       title: "Ko pride prava žival, PetPrep ostane.",
       text: "Tapnite »Dobili smo pravo žival« in simulator postane AI asistent za leta, ki prihajajo — in že pozna ritem vaše družine.",
       features: [
@@ -346,11 +346,11 @@ const sl: Dictionary = {
     },
     afterAdoption: {
       meta: {
-        title: "Po posvojitvi — PetPrep AI asistent za vašo pravo žival",
+        title: "Ko pride domov — PetPrep AI asistent za vašo pravo žival",
         description:
           "Ko družina dobi pravo žival, PetPrep postane AI asistent: aktivnost s pametne ovratnice, opozorila, AI prvi stik s potjo do pravega veterinarja, rast in prehrana.",
       },
-      eyebrow: "Po posvojitvi",
+      eyebrow: "Ko pride domov",
       title: "Simulacija se konča. Skrb ne.",
       lead:
         "Ko družina domov pripelje pravo žival, en dotik PetPrep spremeni v asistenta za vse njeno življenje — v realnem času, brez virtualnih metrik in z že znanim ritmom vaše družine.",
@@ -411,7 +411,7 @@ const sl: Dictionary = {
       meta: {
         title: "Pogosta vprašanja — kaj starši sprašujejo o PetPrep",
         description:
-          "Odgovori o PetPrep: koliko časa vzame, zasebnost, lokacija, koraki, sorojenci, kaj če otrok ne uspe, jeziki, živalske vrste in življenje po posvojitvi.",
+          "Odgovori o PetPrep: koliko časa vzame, zasebnost, lokacija, koraki, sorojenci, kaj če otrok ne uspe, jeziki, živalske vrste in življenje s pravim ljubljenčkom.",
       },
       eyebrow: "Pogosta vprašanja",
       title: "Vprašanja staršev.",
@@ -453,8 +453,8 @@ const sl: Dictionary = {
           columns: 3,
           items: [
             { title: "Trgovine za male živali", text: "Dosezite družine v trenutku, ko dokažejo, da so pripravljene — na primer s ponudbo začetnega paketa ob certifikatu." },
-            { title: "Zavetišča in društva", text: "Priporočite PetPrep pred posvojitvijo za manj impulzivnih posvojitev in vračil." },
-            { title: "Veterinarji", text: "Po posvojitvi AI asistent odgovori na prva vprašanja in lastnike napoti k vam, s povzetkom primera le ob soglasju." },
+            { title: "Zavetišča, društva in vzreditelji", text: "Priporočite PetPrep pred posvojitvijo ali nakupom za manj impulzivnih odločitev in vračil." },
+            { title: "Veterinarji", text: "Ko pride prava žival domov, AI asistent odgovori na prva vprašanja in lastnike napoti k vam, s povzetkom primera le ob soglasju." },
             { title: "Šole za pse", text: "Priporočila in rezervacije, ko družina dobi pravega psa." },
             { title: "Zavarovalnice za male živali", text: "Ponudbe glede na pasmo ob registraciji prave živali — jasno označene." },
             { title: "Proizvajalci ovratnic in IoT", text: "Povezava podatkov o aktivnosti za pametnejša, pojasnjena opozorila." },
@@ -491,7 +491,7 @@ const sl: Dictionary = {
           items: [
             { title: "Problem", text: "Otroci obljubijo skrb za žival; starši je nimajo s čim nevtralno preveriti, preden vložijo denar in leta skrbi." },
             { title: "Rešitev", text: "Realistična 12-tedenska simulacija z nadzorno ploščo za starše v živo in objektivnim Care Score, ki se konča s Certifikatom odgovornosti." },
-            { title: "Širitev", text: "Po posvojitvi AI asistent za pravo žival: podatki z ovratnice, AI prvi stik z veterinarji, rast in prehrana, partnerske storitve." },
+            { title: "Širitev", text: "Ko pride prava žival domov, AI asistent zanjo: podatki z ovratnice, AI prvi stik z veterinarji, rast in prehrana, partnerske storitve." },
           ],
         },
         {
@@ -502,7 +502,7 @@ const sl: Dictionary = {
             ["Mešanček", "Brezplačno za vedno (pridobivanje uporabnikov)", "Odločeno"],
             ["12-tedenski PetPrep izziv", "49,99 € na žival, enkratni nakup", "Odločeno"],
             ["Partnerske ponudbe", "Provizije trgovin, zavarovalnic, veterinarjev in šol", "V načrtu"],
-            ["AI asistent po posvojitvi", "Naročnina", "V načrtu"],
+            ["AI asistent za pravega ljubljenčka", "Naročnina", "V načrtu"],
           ],
         },
         {

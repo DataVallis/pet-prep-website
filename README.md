@@ -16,7 +16,7 @@ npm run build && npm run lint && npx tsc --noEmit
 | | English (default) | Slovenian |
 |---|---|---|
 | Home | `/` | `/sl` |
-| Pages | `/how-it-works`, `/for-parents`, `/after-adoption`, `/pricing`, `/faq`, `/partners`, `/investors`, `/contact`, `/privacy`, `/terms`, `/child-safety` | `/sl/kako-deluje`, `/sl/za-starse`, `/sl/po-posvojitvi`, `/sl/cenik`, `/sl/pogosta-vprasanja`, `/sl/partnerji`, `/sl/vlagatelji`, `/sl/kontakt`, `/sl/zasebnost`, `/sl/pogoji`, `/sl/varnost-otrok` |
+| Pages | `/how-it-works`, `/for-parents`, `/when-it-comes-home`, `/pricing`, `/faq`, `/partners`, `/investors`, `/contact`, `/privacy`, `/terms`, `/child-safety` | `/sl/kako-deluje`, `/sl/za-starse`, `/sl/ko-pride-domov`, `/sl/cenik`, `/sl/pogosta-vprasanja`, `/sl/partnerji`, `/sl/vlagatelji`, `/sl/kontakt`, `/sl/zasebnost`, `/sl/pogoji`, `/sl/varnost-otrok` |
 
 - `src/proxy.ts` serves English from the root (internally `/en/...`) and redirects `/en/...` to the root, so every page has one URL.
 - `/pogoji` and `/zasebnost` (linked from the app's sign-up screen) redirect to the Slovenian legal pages (`next.config.ts`).

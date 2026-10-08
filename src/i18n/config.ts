@@ -16,7 +16,7 @@ export const localeMeta: Record<Locale, { htmlLang: string; og: string; label: s
 export const pageSlugs = {
   howItWorks: { en: "how-it-works", sl: "kako-deluje" },
   parents: { en: "for-parents", sl: "za-starse" },
-  afterAdoption: { en: "after-adoption", sl: "po-posvojitvi" },
+  afterAdoption: { en: "when-it-comes-home", sl: "ko-pride-domov" },
   pricing: { en: "pricing", sl: "cenik" },
   faq: { en: "faq", sl: "pogosta-vprasanja" },
   partners: { en: "partners", sl: "partnerji" },

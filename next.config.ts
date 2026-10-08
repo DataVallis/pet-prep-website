@@ -14,6 +14,9 @@ const nextConfig: NextConfig = {
       { source: "/zasebnost", destination: "/sl/zasebnost", permanent: true },
       { source: "/terms-of-use", destination: "/terms", permanent: true },
       { source: "/privacy-policy", destination: "/privacy", permanent: true },
+      // Renamed 2026-10-08: the real pet can be adopted or bought.
+      { source: "/after-adoption", destination: "/when-it-comes-home", permanent: true },
+      { source: "/sl/po-posvojitvi", destination: "/sl/ko-pride-domov", permanent: true },
     ];
   },
   async headers() {
