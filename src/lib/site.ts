@@ -42,7 +42,7 @@ export const site = {
   /** Consent banner (CookieYes) and Google Analytics 4. Analytics only runs after consent (Consent Mode v2). */
   cookieyesScript: "https://cdn-cookieyes.com/client_data/62f2cbd0a9ac6653c320370d143f369f/script.js",
   gaMeasurementId: "G-CGSBN9N46F",
-  price: { challenge: 49.99, currency: "EUR", trialDays: 7, weeks: 12 },
+  price: { challenge: 49.99, currency: "EUR", weeks: 12 },
 } as const;
 
 export function absoluteUrl(path: string): string {

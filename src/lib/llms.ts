@@ -59,7 +59,7 @@ export function llmsIndex(): string {
     "Key facts:",
     "- 12-week pet readiness challenge for families; children aged about 7–12 (up to 16) care for a photorealistic AI pet; parents see a live dashboard with a daily traffic light and a Care Score.",
     "- One real week = one month of the pet's life. Walks use real step counts from the phone's motion sensor; no GPS.",
-    `- Pricing: mixed-breed pet free forever; the 12-week PetPrep Challenge costs ${site.price.challenge} ${site.price.currency} per pet with a ${site.price.trialDays}-day free trial.`,
+    `- Pricing: mixed-breed pet free forever; the 12-week PetPrep Challenge costs ${site.price.challenge} ${site.price.currency} per pet as a one-time purchase (the 12 weeks start with the purchase; the free mixed-breed pet is the try-out).`,
     "- Children log in with a 6-digit code from a parent: no email, no password, no ads, no chat. Data stored in the EU.",
     "- Species: dogs today (mixed breed, Border Collie); cats next; more planned. Languages: English and Slovenian; more coming.",
     "- After adoption (in development): an AI assistant for the real pet with smart-collar data, AI first contact routed to real vets, growth and nutrition. It never gives a diagnosis.",

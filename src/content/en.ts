@@ -20,7 +20,7 @@ const en: Dictionary = {
   nav: { home: "Home", menu: "Menu", close: "Close menu", skip: "Skip to content" },
   lang: { label: "Language", switchTo: "Switch language" },
   cta: {
-    primary: "Start the 7-day free trial",
+    primary: "Start free with a mixed breed",
     secondary: "See how it works",
     earlyAccess: "Get early access",
     earlyAccessSubject: "PetPrep early access",
@@ -84,7 +84,7 @@ const en: Dictionary = {
     },
     challenge: {
       name: "The 12-week PetPrep Challenge",
-      badge: "7 days free",
+      badge: "12 weeks + certificate",
       unit: "per pet · 12 weeks",
       text: "For families who want the full experience and a certificate at the end.",
       features: [
@@ -95,7 +95,7 @@ const en: Dictionary = {
         "One price when siblings share a pet",
         "Access for both parents",
       ],
-      cta: "Start the free trial",
+      cta: "Choose the challenge",
     },
     note:
       "Purchases are made in the app through the App Store or Google Play. A second pet in the same family is a separate challenge. Prices include VAT where applicable.",
@@ -388,11 +388,11 @@ const en: Dictionary = {
       meta: {
         title: "Pricing — PetPrep is free to start, €49.99 for the 12-week challenge",
         description:
-          "The mixed-breed pet is free forever. The 12-week PetPrep Challenge costs €49.99 per pet with a 7-day free trial. One price for siblings sharing a pet.",
+          "The mixed-breed pet is free forever. The 12-week PetPrep Challenge costs €49.99 per pet as a one-time purchase. One price for siblings sharing a pet.",
       },
       eyebrow: "Pricing",
       title: "Simple, fair pricing.",
-      lead: "Start free with a mixed-breed pet. Upgrade to the full 12-week challenge when you are ready — the first 7 days are free.",
+      lead: "Start free with a mixed-breed pet. Buy the full 12-week challenge when you are ready — the 12 weeks start with the purchase.",
       blocks: [
         { type: "pricing" },
         {
@@ -402,7 +402,7 @@ const en: Dictionary = {
             { q: "Is the free version really free?", a: "Yes. The mixed-breed pet is free forever, with the full simulation, real walks and the parent dashboard." },
             { q: "What does the challenge include?", a: "Demanding breeds such as the Border Collie, your pet's moods as AI videos, the Certificate of Responsibility at the end and access for both parents." },
             { q: "Do siblings pay twice?", a: "No. Children who share one pet pay one price. A second pet in the family is a separate challenge." },
-            { q: "How do I pay?", a: "In the app, through the App Store or Google Play. The 7-day trial and any cancellation are handled by your store account." },
+            { q: "How do I pay?", a: "In the app, through the App Store or Google Play. Refunds are handled by your store account." },
           ],
         },
       ],
@@ -500,7 +500,7 @@ const en: Dictionary = {
           head: ["Stream", "Model", "Status"],
           rows: [
             ["Mixed-breed pet", "Free forever (acquisition)", "Decided"],
-            ["12-week PetPrep Challenge", "€49.99 per pet, 7-day free trial", "Decided"],
+            ["12-week PetPrep Challenge", "€49.99 per pet, one-time purchase", "Decided"],
             ["Partner offers", "Commissions from stores, insurers, vets and trainers", "Planned"],
             ["AI assistant after adoption", "Subscription", "Planned"],
           ],
@@ -674,8 +674,8 @@ const en: Dictionary = {
               heading: "3. Free and paid features",
               items: [
                 "The mixed-breed pet is free.",
-                "The 12-week PetPrep Challenge costs €49.99 per pet and includes a 7-day free trial. Siblings sharing one pet pay one price.",
-                "Purchases, trials, refunds and cancellations are handled by the App Store or Google Play under their terms.",
+                "The 12-week PetPrep Challenge costs €49.99 per pet as a one-time purchase; the 12 weeks start with the purchase. The free mixed-breed pet is the way to try PetPrep first. Siblings sharing one pet pay one price.",
+                "Purchases and refunds are handled by the App Store or Google Play under their terms.",
               ],
             },
             {

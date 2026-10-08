@@ -20,7 +20,7 @@ const sl: Dictionary = {
   nav: { home: "Domov", menu: "Meni", close: "Zapri meni", skip: "Preskoči na vsebino" },
   lang: { label: "Jezik", switchTo: "Zamenjaj jezik" },
   cta: {
-    primary: "Začni 7-dnevni brezplačni preizkus",
+    primary: "Začni brezplačno z mešančkom",
     secondary: "Poglej, kako deluje",
     earlyAccess: "Prijava na zgodnji dostop",
     earlyAccessSubject: "PetPrep zgodnji dostop",
@@ -84,7 +84,7 @@ const sl: Dictionary = {
     },
     challenge: {
       name: "12-tedenski PetPrep izziv",
-      badge: "7 dni brezplačno",
+      badge: "12 tednov + certifikat",
       unit: "na žival · 12 tednov",
       text: "Za družine, ki želijo celotno izkušnjo in certifikat na koncu.",
       features: [
@@ -95,7 +95,7 @@ const sl: Dictionary = {
         "Ena cena, ko si sorojenci delijo ljubljenčka",
         "Dostop za oba starša",
       ],
-      cta: "Začni brezplačni preizkus",
+      cta: "Izberi izziv",
     },
     note:
       "Nakup poteka v aplikaciji prek App Store ali Google Play. Drugi ljubljenček v isti družini je ločen izziv. Cene vključujejo DDV, kjer se obračuna.",
@@ -388,11 +388,11 @@ const sl: Dictionary = {
       meta: {
         title: "Cenik — PetPrep je brezplačen za začetek, 12-tedenski izziv 49,99 €",
         description:
-          "Mešanček je brezplačen za vedno. 12-tedenski PetPrep izziv stane 49,99 € na žival s 7-dnevnim brezplačnim preizkusom. Ena cena za sorojence s skupnim ljubljenčkom.",
+          "Mešanček je brezplačen za vedno. 12-tedenski PetPrep izziv stane 49,99 € na žival kot enkratni nakup. Ena cena za sorojence s skupnim ljubljenčkom.",
       },
       eyebrow: "Cenik",
       title: "Preprosto in pošteno.",
-      lead: "Začnite brezplačno z mešančkom. Na celoten 12-tedenski izziv preklopite, ko ste pripravljeni — prvih 7 dni je brezplačnih.",
+      lead: "Začnite brezplačno z mešančkom. Celoten 12-tedenski izziv kupite, ko ste pripravljeni — 12 tednov začne teči z nakupom.",
       blocks: [
         { type: "pricing" },
         {
@@ -402,7 +402,7 @@ const sl: Dictionary = {
             { q: "Je brezplačna različica res brezplačna?", a: "Da. Mešanček je brezplačen za vedno, s celotno simulacijo, pravimi sprehodi in nadzorno ploščo za starše." },
             { q: "Kaj vključuje izziv?", a: "Zahtevne pasme, kot je border collie, razpoloženja ljubljenčka kot AI videje, Certifikat odgovornosti na koncu in dostop za oba starša." },
             { q: "Ali sorojenci plačajo dvakrat?", a: "Ne. Otroci, ki si delijo enega ljubljenčka, plačajo eno ceno. Drugi ljubljenček v družini je ločen izziv." },
-            { q: "Kako plačam?", a: "V aplikaciji, prek App Store ali Google Play. Preizkus in morebitno preklicanje urejate v svojem računu trgovine." },
+            { q: "Kako plačam?", a: "V aplikaciji, prek App Store ali Google Play. Morebitna vračila urejate v svojem računu trgovine." },
           ],
         },
       ],
@@ -500,7 +500,7 @@ const sl: Dictionary = {
           head: ["Vir", "Model", "Stanje"],
           rows: [
             ["Mešanček", "Brezplačno za vedno (pridobivanje uporabnikov)", "Odločeno"],
-            ["12-tedenski PetPrep izziv", "49,99 € na žival, 7 dni brezplačno", "Odločeno"],
+            ["12-tedenski PetPrep izziv", "49,99 € na žival, enkratni nakup", "Odločeno"],
             ["Partnerske ponudbe", "Provizije trgovin, zavarovalnic, veterinarjev in šol", "V načrtu"],
             ["AI asistent po posvojitvi", "Naročnina", "V načrtu"],
           ],
@@ -674,8 +674,8 @@ const sl: Dictionary = {
               heading: "3. Brezplačne in plačljive funkcije",
               items: [
                 "Mešanček je brezplačen.",
-                "12-tedenski PetPrep izziv stane 49,99 € na žival in vključuje 7-dnevni brezplačni preizkus. Sorojenci s skupnim ljubljenčkom plačajo eno ceno.",
-                "Nakupe, preizkuse, vračila in preklice urejata App Store ali Google Play po svojih pogojih.",
+                "12-tedenski PetPrep izziv stane 49,99 € na žival kot enkratni nakup; 12 tednov začne teči z nakupom. PetPrep najprej preizkusite z brezplačnim mešančkom. Sorojenci s skupnim ljubljenčkom plačajo eno ceno.",
+                "Nakupe in vračila urejata App Store ali Google Play po svojih pogojih.",
               ],
             },
             {
