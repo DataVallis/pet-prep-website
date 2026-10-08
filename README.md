@@ -33,7 +33,7 @@ Site-wide settings — domain, e-mail addresses, company details, launch state, 
 ## App screens
 
 `public/screens/<locale>/<screen>.png` (780×1688, i.e. 390×844 @2x): `pin`, `contract`, `hud`, `picker`, `parent`, `report`, `assistant`, `certificate`.
-They are **product previews rendered in the CGP**, not captures from a device. Replace them with real screenshots (same file names and size) when available — especially `hud.png`, which should show the real AI pet video frame.
+They are **product previews rendered in the CGP**, not captures from a device. Replace them with real screenshots (same file names and size) when available — `hud.png` shows a PetPrep AI-generated puppy (Nano Banana Pro, 2026-10-08) under the CGP HUD.
 
 ## Early access (Klaviyo)
 
