@@ -58,6 +58,7 @@ export function llmsIndex(): string {
     "",
     "Key facts:",
     "- 12-week pet readiness challenge for families; children aged about 7–12 (up to 16) care for a photorealistic AI pet; parents see a live dashboard with a daily traffic light and a Care Score.",
+    "- Also for adults who want a specific breed and want to try it first (\"is this breed really for me?\"): the adult creates the parent account, adds themselves as the carer profile and logs in with the 6-digit code; partner or children can be added later. Same pricing.",
     "- One real week = one month of the pet's life. Walks use real step counts from the phone's motion sensor; no GPS.",
     `- Pricing: mixed-breed pet free forever; the 12-week PetPrep Challenge costs ${site.price.challenge} ${site.price.currency} per pet as a one-time purchase (the 12 weeks start with the purchase; the free mixed-breed pet is the try-out).`,
     "- Children log in with a 6-digit code from a parent: no email, no password, no ads, no chat. Data stored in the EU.",
@@ -91,6 +92,7 @@ export function llmsFull(): string {
     out.push(`## ${h.how.title}`, ...h.how.steps.map((s) => `- **${s.title}:** ${s.text}`), "");
     out.push(`## ${h.realism.title}`, h.realism.text, ...h.realism.items.map((s) => `- **${s.title}:** ${s.text}`), "");
     out.push(`## ${h.parents.title}`, h.parents.text, "");
+    out.push(`## ${h.adults.title}`, h.adults.text, ...h.adults.points.map((s) => `- **${s.strong}:** ${s.text}`), h.adults.how, h.adults.note, "");
     out.push(`## ${h.after.title}`, h.after.text, ...h.after.features.map((s) => `- **${s.title}:** ${s.text}`), "");
     for (const key of pageKeys) {
       const p = dict.pages[key];

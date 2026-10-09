@@ -171,6 +171,29 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
         </div>
       </section>
 
+      {/* Adults trying a breed */}
+      <section className="container-page pt-24" aria-labelledby="adults-title">
+        <div className="grid gap-10 rounded-[30px] bg-mint-tint p-8 sm:p-12 lg:grid-cols-[1fr_1.1fr]">
+          <div className="flex flex-col gap-5">
+            <p className="eyebrow">{h.adults.eyebrow}</p>
+            <h2 id="adults-title" className="h-section">{h.adults.title}</h2>
+            <p className="text-lg leading-relaxed text-muted">{h.adults.text}</p>
+          </div>
+          <div className="flex flex-col gap-5">
+            <ul className="flex flex-col gap-3.5">
+              {h.adults.points.map((p) => (
+                <li key={p.strong} className="flex gap-3 leading-relaxed"><Check className="mt-1 text-mint-text" /><span><strong>{p.strong}</strong> — {p.text}</span></li>
+              ))}
+            </ul>
+            <p className="rounded-[18px] bg-white p-4 leading-relaxed">{h.adults.how}</p>
+            <p className="text-sm text-muted">{h.adults.note}</p>
+            <Link href={pathFor(locale, "faq")} className="inline-flex items-center gap-2 self-start font-semibold text-mint-text hover:underline">
+              {h.adults.link} <Arrow />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* When the real pet comes home */}
       <section className="container-page grid items-center gap-14 py-24 lg:grid-cols-[1fr_1.1fr]" aria-labelledby="after-title">
         <div className="order-2 flex justify-center rounded-[30px] bg-graphite px-5 py-10 lg:order-1">
