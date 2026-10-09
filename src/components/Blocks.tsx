@@ -2,6 +2,7 @@ import type { Locale } from "@/i18n/config";
 import type { Block, Dictionary } from "@/content/types";
 import { fillPlaceholders } from "@/content";
 import { ContactCards } from "./ContactCards";
+import { BreedRegister } from "./breeds/BreedRegister";
 import { Faq } from "./Faq";
 import { Pricing } from "./Pricing";
 import { Screen } from "./Screen";
@@ -144,6 +145,8 @@ export function Blocks({ blocks, locale, dict }: { blocks: Block[]; locale: Loca
             return <Pricing key={i} locale={locale} dict={dict} />;
           case "contact":
             return <ContactCards key={i} dict={dict} />;
+          case "breedRegistry":
+            return <BreedRegister key={i} locale={locale} />;
           case "cookies":
             return (
               <section key={i} className="prose-legal max-w-3xl" aria-labelledby="cookies">

@@ -16,7 +16,8 @@ npm run build && npm run lint && npx tsc --noEmit
 | | English (default) | Slovenian |
 |---|---|---|
 | Home | `/` | `/sl` |
-| Pages | `/how-it-works`, `/for-parents`, `/when-it-comes-home`, `/pricing`, `/faq`, `/partners`, `/investors`, `/contact`, `/privacy`, `/terms`, `/child-safety` | `/sl/kako-deluje`, `/sl/za-starse`, `/sl/ko-pride-domov`, `/sl/cenik`, `/sl/pogosta-vprasanja`, `/sl/partnerji`, `/sl/vlagatelji`, `/sl/kontakt`, `/sl/zasebnost`, `/sl/pogoji`, `/sl/varnost-otrok` |
+| Pages | `/how-it-works`, `/for-parents`, `/breeds`, `/when-it-comes-home`, `/pricing`, `/faq`, `/partners`, `/investors`, `/contact`, `/privacy`, `/terms`, `/child-safety` | `/sl/kako-deluje`, `/sl/za-starse`, `/sl/pasme`, `/sl/ko-pride-domov`, `/sl/cenik`, `/sl/pogosta-vprasanja`, `/sl/partnerji`, `/sl/vlagatelji`, `/sl/kontakt`, `/sl/zasebnost`, `/sl/pogoji`, `/sl/varnost-otrok` |
+| Breed register | `/breeds/border-collie`, `/breeds/labrador-retriever`, `/breeds/golden-retriever` | `/sl/pasme/border-collie`, `/sl/pasme/labradorec`, `/sl/pasme/zlati-prinasalec` |
 
 - `src/proxy.ts` serves English from the root (internally `/en/...`) and redirects `/en/...` to the root, so every page has one URL.
 - `/pogoji` and `/zasebnost` (linked from the app's sign-up screen) redirect to the Slovenian legal pages (`next.config.ts`).
@@ -29,6 +30,10 @@ Site-wide settings — domain, e-mail addresses, company details, launch state, 
 
 - `launchState: "prelaunch"` → calls to action ask for early access by e-mail. Set `"live"` and fill `stores.ios` / `stores.android` at launch.
 - `legalReviewed: false` → privacy policy and terms show a “being finalised with legal advisors” notice.
+
+## Breed register (M5-R11)
+
+`/breeds` (`/sl/pasme`) + one page per breed. **Data is not written here:** `src/content/breeds/registry.json` is a copy of the build-time export from the `pet-prep` repo (facts with sources, suitability tags with the app's wording, game numbers). Only the prose (intros, labels) and the in-app status (`availability.ts`) live in this repo. How to refresh: `src/content/breeds/README.md`.
 
 ## App screens
 

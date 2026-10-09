@@ -51,7 +51,7 @@ const en: Dictionary = {
   footer: {
     tagline: "Ready for a pet. There for its whole life.",
     groups: [
-      { title: "Product", links: ["howItWorks", "parents", "afterAdoption", "pricing", "faq"] },
+      { title: "Product", links: ["howItWorks", "parents", "breeds", "afterAdoption", "pricing", "faq"] },
       { title: "Company", links: ["partners", "investors", "contact"] },
       { title: "Trust", links: ["privacy", "terms", "childSafety"] },
     ],
@@ -782,6 +782,19 @@ const en: Dictionary = {
         { type: "callout", title: "Report a concern", text: "If something in PetPrep worries you, write to us and we will respond with priority.", tone: "dark" },
         { type: "contact" },
       ],
+    },
+    breeds: {
+      meta: {
+        title: "PetPrep breed register — dog breed needs, with sources",
+        description:
+          "Compare dog breeds by exercise, size, grooming and lifespan, filter by who they suit, and see how PetPrep simulates each breed. Every fact links to its source.",
+      },
+      navLabel: "Breeds",
+      eyebrow: "Breed register",
+      title: "Know the breed before it comes home.",
+      lead:
+        "What each breed in PetPrep really needs — exercise, grooming, meals, size and lifespan — from kennel clubs, veterinary charities and studies, with every source linked. Plus the rules PetPrep uses to simulate it.",
+      blocks: [{ type: "breedRegistry" }],
     },
   },
 };

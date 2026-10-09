@@ -1,6 +1,8 @@
 import "server-only";
-import { locales, localeMeta, pageKeys, pathFor, type Locale } from "@/i18n/config";
+import { breedIds, locales, localeMeta, pageKeys, pathFor, pathForBreed, type Locale } from "@/i18n/config";
 import { fillPlaceholders, getDictionary } from "@/content";
+import { getBreedCopy } from "@/content/breeds";
+import { breedPageMarkdown, breedRegisterMarkdown } from "@/lib/breeds";
 import type { Block } from "@/content/types";
 import { absoluteUrl, site } from "@/lib/site";
 
@@ -43,6 +45,8 @@ function blockToMarkdown(b: Block, locale: Locale): string {
       return [`### ${b.heading}`, ...b.paragraphs.map((p) => fillPlaceholders(p, locale))].join("\n\n");
     case "screens":
       return "";
+    case "breedRegistry":
+      return breedRegisterMarkdown(locale);
   }
 }
 
@@ -62,7 +66,8 @@ export function llmsIndex(): string {
     "- One real week = one month of the pet's life. Walks use real step counts from the phone's motion sensor; no GPS.",
     `- Pricing: mixed-breed pet free forever; the 12-week PetPrep Challenge costs ${site.price.challenge} ${site.price.currency} per pet as a one-time purchase (the 12 weeks start with the purchase; the free mixed-breed pet is the try-out).`,
     "- Children log in with a 6-digit code from a parent: no email, no password, no ads, no chat. Data stored in the EU.",
-    "- Species: dogs today (mixed breed, Border Collie); cats next; more planned. Languages: English and Slovenian; more coming.",
+    "- Species: dogs today (mixed breed in the free plan; Border Collie in the challenge; Labrador Retriever and Golden Retriever built and coming to the app soon); cats next; more planned. Languages: English and Slovenian; more coming.",
+    `- Breed register: one page per breed with sourced needs (exercise, grooming, meals, size, lifespan), who it suits, health notes (for information only, not vet-reviewed), every source linked, and the game rules PetPrep uses for that breed: ${absoluteUrl(pathFor("en", "breeds"))}`,
     "- When it comes home (in development): an AI assistant for the real pet with smart-collar data, AI first contact routed to real vets, growth and nutrition. It never gives a diagnosis.",
     site.launchState === "live" ? "- Status: available on iPhone and Android." : "- Status: pre-launch; early access by email.",
     "",
@@ -76,6 +81,10 @@ export function llmsIndex(): string {
     for (const key of pageKeys) {
       const p = dict.pages[key];
       lines.push(`- [${p.meta.title}](${absoluteUrl(pathFor(locale, key))}): ${p.meta.description}`);
+    }
+    const bc = getBreedCopy(locale);
+    for (const id of breedIds) {
+      lines.push(`- [${bc.breeds[id].name} — ${bc.page.eyebrow}](${absoluteUrl(pathForBreed(locale, id))}): ${bc.breeds[id].metaDescription}`);
     }
     lines.push("");
   }
@@ -102,6 +111,9 @@ export function llmsFull(): string {
         const md = blockToMarkdown(b, locale);
         if (md) out.push(md, "");
       }
+    }
+    for (const id of breedIds) {
+      out.push("---", "", breedPageMarkdown(locale, id, absoluteUrl(pathForBreed(locale, id))), "");
     }
   }
   return out.join("\n");
