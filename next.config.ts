@@ -17,6 +17,11 @@ const nextConfig: NextConfig = {
       // Renamed 2026-10-08: the real pet can be adopted or bought.
       { source: "/after-adoption", destination: "/when-it-comes-home", permanent: true },
       { source: "/sl/po-posvojitvi", destination: "/sl/ko-pride-domov", permanent: true },
+      // Breed register preview URLs (PR #9, never deployed) → animal register (M5-R11, 2026-10-10).
+      { source: "/breeds", destination: "/animals/dogs", permanent: true },
+      { source: "/breeds/:breed", destination: "/animals/dogs/:breed", permanent: true },
+      { source: "/sl/pasme", destination: "/sl/zivali/psi", permanent: true },
+      { source: "/sl/pasme/:breed", destination: "/sl/zivali/psi/:breed", permanent: true },
     ];
   },
   async headers() {

@@ -16,8 +16,8 @@ npm run build && npm run lint && npx tsc --noEmit
 | | English (default) | Slovenian |
 |---|---|---|
 | Home | `/` | `/sl` |
-| Pages | `/how-it-works`, `/for-parents`, `/breeds`, `/when-it-comes-home`, `/pricing`, `/faq`, `/partners`, `/investors`, `/contact`, `/privacy`, `/terms`, `/child-safety` | `/sl/kako-deluje`, `/sl/za-starse`, `/sl/pasme`, `/sl/ko-pride-domov`, `/sl/cenik`, `/sl/pogosta-vprasanja`, `/sl/partnerji`, `/sl/vlagatelji`, `/sl/kontakt`, `/sl/zasebnost`, `/sl/pogoji`, `/sl/varnost-otrok` |
-| Breed register | `/breeds/border-collie`, `/breeds/labrador-retriever`, `/breeds/golden-retriever` | `/sl/pasme/border-collie`, `/sl/pasme/labradorec`, `/sl/pasme/zlati-prinasalec` |
+| Pages | `/how-it-works`, `/for-parents`, `/animals`, `/when-it-comes-home`, `/pricing`, `/faq`, `/partners`, `/investors`, `/contact`, `/privacy`, `/terms`, `/child-safety` | `/sl/kako-deluje`, `/sl/za-starse`, `/sl/zivali`, `/sl/ko-pride-domov`, `/sl/cenik`, `/sl/pogosta-vprasanja`, `/sl/partnerji`, `/sl/vlagatelji`, `/sl/kontakt`, `/sl/zasebnost`, `/sl/pogoji`, `/sl/varnost-otrok` |
+| Animal register | `/animals/<species>` (`/animals/dogs`), `/animals/<species>/<breed>` (`/animals/dogs/labrador-retriever`), `/animals/<species>/compare?b=a,b,c` | `/sl/zivali/psi`, `/sl/zivali/psi/labradorec`, `/sl/zivali/psi/primerjava?b=…` |
 
 - `src/proxy.ts` serves English from the root (internally `/en/...`) and redirects `/en/...` to the root, so every page has one URL.
 - `/pogoji` and `/zasebnost` (linked from the app's sign-up screen) redirect to the Slovenian legal pages (`next.config.ts`).
@@ -31,9 +31,9 @@ Site-wide settings — domain, e-mail addresses, company details, launch state, 
 - `launchState: "prelaunch"` → calls to action ask for early access by e-mail. Set `"live"` and fill `stores.ios` / `stores.android` at launch.
 - `legalReviewed: false` → privacy policy and terms show a “being finalised with legal advisors” notice.
 
-## Breed register (M5-R11)
+## Animal register (M5-R11)
 
-`/breeds` (`/sl/pasme`) + one page per breed. **Data is not written here:** `src/content/breeds/registry.json` is a copy of the build-time export from the `pet-prep` repo (facts with sources, suitability tags with the app's wording, game numbers). Only the prose (intros, labels) and the in-app status (`availability.ts`) live in this repo. How to refresh: `src/content/breeds/README.md`.
+Hub `/animals` → species catalogue `/animals/<species>` (search, filters, sort, 24 per page, pick up to 3 to compare, URL state `?q=&tag=&size=&exercise=&grooming=&av=&sort=&page=&b=`; without JavaScript a plain A–Z list) → breed page `/animals/<species>/<breed>`; comparison `/animals/<species>/compare?b=…` (noindex). Species, breeds, slugs, availability and facts come from `src/content/registry/registry.json`, a copy of the build-time export in the `pet-prep` repo; layout code is generic and only looks up words in `src/content/registry/{en,sl}.ts`. The client parts load static JSON built from the registry: `/registry/<species>/index.<locale>.json` (slim index) and `/registry/<species>/compare.<locale>.json`. One share image per species (breed pages reuse it). Old preview URLs `/breeds…` and `/sl/pasme…` redirect permanently. How to refresh: `src/content/registry/README.md`.
 
 ## App screens
 

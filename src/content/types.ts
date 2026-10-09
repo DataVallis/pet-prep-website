@@ -36,8 +36,8 @@ export type Block =
   /** Live cookie list rendered by CookieYes from the site's latest cookie scan. */
   | { type: "cookies"; heading: string; paragraphs: string[]; settings: string; fallback: string }
   | { type: "contact" }
-  /** Breed register overview: filter + comparison (data from src/content/breeds/registry.json). */
-  | { type: "breedRegistry" }
+  /** Animal register hub: species from src/content/registry/registry.json (M5-R11). */
+  | { type: "animalsHub" }
   | {
       type: "legal";
       sections: { heading: string; paragraphs?: string[]; items?: string[] }[];
