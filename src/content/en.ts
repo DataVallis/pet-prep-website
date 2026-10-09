@@ -569,7 +569,7 @@ const en: Dictionary = {
       },
       eyebrow: "Legal",
       title: "Privacy Policy",
-      lead: "PetPrep is built for children, so we collect as little as possible and explain exactly what we do with it.",
+      lead: "PetPrep is built mainly for children, so we collect as little as possible and explain exactly what we do with it.",
       blocks: [
         {
           type: "legal",
@@ -584,7 +584,7 @@ const en: Dictionary = {
               heading: "2. What we collect",
               items: [
                 "Parent account: name (how your family calls you), email address, password (stored only as a secure hash), your device's time zone, and the time you accepted the terms and this policy.",
-                "Child profile: a nickname of up to 30 characters and, optionally, a birth year. No email, password, surname or date of birth.",
+                "Carer profile (a child or an adult who cares for the pet): a nickname of up to 30 characters and, optionally, a birth year — left empty for an adult. No email, password, surname or date of birth.",
                 "Devices: the phone model (for example “iPhone”, never a name the user gave the phone), and for notifications a push token, platform and app version.",
                 "Care activity: actions in the simulation (feeding, water, cleaning, walks), daily step totals from the phone's motion sensor, scores and reports.",
                 "The Responsibility Contract: the child's finger signature, stored as a vector line with the time of signing.",
@@ -616,6 +616,7 @@ const en: Dictionary = {
               heading: "5. Children",
               paragraphs: [
                 "Only a parent or legal guardian can create an account and add a child. The parent decides what the child can do and can delete the child's profile at any time. We never ask a child for contact details, never show ads and never allow contact with strangers.",
+                "The account holder can also create a carer profile for themselves or for another adult in the family — for example to test whether a breed suits them before buying or adopting. The same rules and the same minimal data apply to such a profile; every protection designed for children applies to it too.",
               ],
             },
             {
@@ -685,14 +686,14 @@ const en: Dictionary = {
             {
               heading: "1. The service",
               paragraphs: [
-                "PetPrep is provided by {company}, {city}, {country}{address}. PetPrep is a simulation that helps families find out whether a child is ready to care for a real pet. It is an educational tool, not veterinary advice, and it does not guarantee how a child will care for a real animal.",
+                "PetPrep is provided by {company}, {city}, {country}{address}. PetPrep is a simulation that helps families and individuals find out whether they are ready to care for a real pet — children, and adults who want to test whether a breed suits them before buying or adopting. It is an educational tool, not veterinary advice, and it does not guarantee how anyone will care for a real animal.",
               ],
             },
             {
               heading: "2. Accounts",
               items: [
-                "Accounts are created by adults (parents or legal guardians). You are responsible for the children you add and for keeping your password safe.",
-                "Children use PetPrep only through a profile created by their parent and log in with a code from the parent.",
+                "Accounts are created by adults (parents, legal guardians or adults using PetPrep for themselves). You are responsible for the profiles you add and for keeping your password safe.",
+                "Children or adults care for the pet through a carer profile created by the account holder and log in with a code from that account. The account holder can also create a carer profile for themselves.",
                 "Provide accurate information and keep login codes private.",
               ],
             },
