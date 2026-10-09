@@ -38,7 +38,7 @@ export const site = {
   },
   /** Legal texts are drafts until reviewed by a lawyer; a notice is shown while false. */
   legalReviewed: false,
-  legalUpdated: "2026-10-06",
+  legalUpdated: "2026-10-09",
   /** Consent banner (CookieYes) and Google Analytics 4. Analytics only runs after consent (Consent Mode v2). */
   cookieyesScript: "https://cdn-cookieyes.com/client_data/62f2cbd0a9ac6653c320370d143f369f/script.js",
   gaMeasurementId: "G-CGSBN9N46F",

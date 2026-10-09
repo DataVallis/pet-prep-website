@@ -569,7 +569,7 @@ const sl: Dictionary = {
       },
       eyebrow: "Pravno",
       title: "Politika zasebnosti",
-      lead: "PetPrep je narejen za otroke, zato zbiramo čim manj in natančno pojasnimo, kaj s tem počnemo.",
+      lead: "PetPrep je narejen predvsem za otroke, zato zbiramo čim manj in natančno pojasnimo, kaj s tem počnemo.",
       blocks: [
         {
           type: "legal",
@@ -584,7 +584,7 @@ const sl: Dictionary = {
               heading: "2. Kaj zbiramo",
               items: [
                 "Račun starša: ime (kako vas kliče družina), e-poštni naslov, geslo (shranjeno samo kot varna zgoščena vrednost), časovni pas vaše naprave in čas, ko ste sprejeli pogoje in to politiko.",
-                "Profil otroka: vzdevek do 30 znakov in po želji letnica rojstva. Brez e-pošte, gesla, priimka ali datuma rojstva.",
+                "Profil skrbnika (otrok ali odrasel, ki skrbi za ljubljenčka): vzdevek do 30 znakov in po želji letnica rojstva — pri odraslem je ne vpišete. Brez e-pošte, gesla, priimka ali datuma rojstva.",
                 "Naprave: model telefona (na primer »iPhone«, nikoli ime, ki ga je telefonu dal uporabnik), za obvestila pa žeton naprave, vrsta sistema in različica aplikacije.",
                 "Dejavnost skrbi: dejanja v simulaciji (hranjenje, voda, čiščenje, sprehodi), dnevno število korakov s senzorja gibanja, ocene in poročila.",
                 "Pogodba o odgovornosti: otrokov podpis s prstom, shranjen kot vektorska črta s časom podpisa.",
@@ -616,6 +616,7 @@ const sl: Dictionary = {
               heading: "5. Otroci",
               paragraphs: [
                 "Račun lahko ustvari in otroka doda samo starš ali zakoniti zastopnik. Starš odloča, kaj otrok lahko počne, in lahko otrokov profil kadarkoli izbriše. Otroka nikoli ne vprašamo za kontaktne podatke, mu ne prikazujemo oglasov in ne omogočamo stika s tujci.",
+                "Imetnik računa lahko profil skrbnika ustvari tudi zase ali za drugega odraslega člana družine — na primer, da pred nakupom ali posvojitvijo preizkusi, ali mu pasma ustreza. Za tak profil veljajo enaka pravila in enak najmanjši obseg podatkov; vsa zaščita, ki je namenjena otrokom, velja tudi zanj.",
               ],
             },
             {
@@ -685,14 +686,14 @@ const sl: Dictionary = {
             {
               heading: "1. Storitev",
               paragraphs: [
-                "PetPrep zagotavlja {company}, {city}, {country}{address}. PetPrep je simulacija, ki družinam pomaga ugotoviti, ali je otrok pripravljen skrbeti za pravo žival. Je izobraževalno orodje, ne veterinarski nasvet, in ne jamči, kako bo otrok skrbel za pravo žival.",
+                "PetPrep zagotavlja {company}, {city}, {country}{address}. PetPrep je simulacija, ki družinam in posameznikom pomaga ugotoviti, ali so pripravljeni skrbeti za pravo žival — otrokom in odraslim, ki pred nakupom ali posvojitvijo preizkušajo, ali jim pasma ustreza. Je izobraževalno orodje, ne veterinarski nasvet, in ne jamči, kako bo kdo skrbel za pravo žival.",
               ],
             },
             {
               heading: "2. Računi",
               items: [
-                "Račune ustvarijo odrasli (starši ali zakoniti zastopniki). Odgovorni ste za otroke, ki jih dodate, in za varnost svojega gesla.",
-                "Otroci PetPrep uporabljajo samo prek profila, ki ga ustvari starš, in se prijavijo s kodo starša.",
+                "Račune ustvarijo odrasli (starši, zakoniti zastopniki ali odrasli, ki PetPrep uporabljajo zase). Odgovorni ste za profile, ki jih dodate, in za varnost svojega gesla.",
+                "Za ljubljenčka skrbijo otroci ali odrasli prek profila skrbnika, ki ga ustvari imetnik računa, in se prijavijo s kodo iz tega računa. Imetnik računa lahko profil skrbnika ustvari tudi zase.",
                 "Navajajte točne podatke in kode za prijavo hranite zase.",
               ],
             },
