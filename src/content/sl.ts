@@ -51,7 +51,7 @@ const sl: Dictionary = {
   footer: {
     tagline: "Pripravljeni na žival. Ob njej vse življenje.",
     groups: [
-      { title: "Izdelek", links: ["howItWorks", "parents", "breeds", "afterAdoption", "pricing", "faq"] },
+      { title: "Izdelek", links: ["howItWorks", "parents", "animals", "afterAdoption", "pricing", "faq"] },
       { title: "Podjetje", links: ["partners", "investors", "contact"] },
       { title: "Zaupanje", links: ["privacy", "terms", "childSafety"] },
     ],
@@ -783,18 +783,18 @@ const sl: Dictionary = {
         { type: "contact" },
       ],
     },
-    breeds: {
+    animals: {
       meta: {
-        title: "PetPrep register pasem — potrebe pasem psov z viri",
+        title: "PetPrep register živali — vrste in pasme z viri",
         description:
-          "Primerjajte pasme psov po gibanju, velikosti, negi in življenjski dobi, filtrirajte po tem, za koga so primerne, in poglejte, kako jih simulira PetPrep. Vsako dejstvo ima vir.",
+          "Psi, mačke in njihove pasme: kaj res potrebujejo, za koga so primerne in kako jih simulira PetPrep. Iščite, filtrirajte in primerjajte pasme; vsako dejstvo ima vir.",
       },
-      navLabel: "Pasme",
-      eyebrow: "Register pasem",
-      title: "Spoznajte pasmo, preden pride domov.",
+      navLabel: "Živali",
+      eyebrow: "Register živali",
+      title: "Spoznajte žival, preden pride domov.",
       lead:
-        "Kaj vsaka pasma v PetPrep res potrebuje — gibanje, nego, obroke, velikost in življenjsko dobo — iz kinoloških zvez, veterinarskih dobrodelnih organizacij in raziskav, z vsemi viri. In pravila, po katerih jo PetPrep simulira.",
-      blocks: [{ type: "breedRegistry" }],
+        "Kaj vsaka vrsta in pasma v PetPrep res potrebuje — iz kinoloških zvez, mačjih zvez, veterinarskih dobrodelnih organizacij in raziskav, z vsemi viri. In pravila, po katerih jo PetPrep simulira.",
+      blocks: [{ type: "animalsHub" }],
     },
   },
 };

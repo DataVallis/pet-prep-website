@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { breedSlugs, defaultLocale, locales, localeMeta, pathFor, pathForBreed, type BreedId, type Locale, type RouteKey } from "@/i18n/config";
+import { defaultLocale, locales, localeMeta, pathFor, type Locale, type RouteKey } from "@/i18n/config";
 import { absoluteUrl, site } from "@/lib/site";
 
 export function alternatesFor(key: RouteKey) {
@@ -9,10 +9,11 @@ export function alternatesFor(key: RouteKey) {
   return languages;
 }
 
-export function breedAlternates(id: BreedId) {
+/** hreflang map for a page whose path differs per locale (animal register pages). */
+export function pathAlternates(paths: Record<Locale, string>) {
   const languages: Record<string, string> = {};
-  for (const l of locales) languages[localeMeta[l].htmlLang] = absoluteUrl(pathForBreed(l, id));
-  languages["x-default"] = absoluteUrl(pathForBreed(defaultLocale, id));
+  for (const l of locales) languages[localeMeta[l].htmlLang] = absoluteUrl(paths[l]);
+  languages["x-default"] = absoluteUrl(paths[defaultLocale]);
   return languages;
 }
 
@@ -26,10 +27,20 @@ export function buildMetadata(opts: {
   return buildMetadataFor({ ...opts, path: pathFor(opts.locale, opts.key), languages: alternatesFor(opts.key) });
 }
 
-/** Metadata of a breed register page (/breeds/<slug>, /sl/pasme/<slug>). */
-export function buildBreedMetadata(opts: { locale: Locale; id: BreedId; title: string; description: string }): Metadata {
-  if (!breedSlugs[opts.id]) throw new Error(`unknown breed ${opts.id}`);
-  return buildMetadataFor({ ...opts, path: pathForBreed(opts.locale, opts.id), languages: breedAlternates(opts.id) });
+/** Metadata of an animal register page (species catalogue, breed, comparison). */
+export function buildPathMetadata(opts: {
+  locale: Locale;
+  paths: Record<Locale, string>;
+  title: string;
+  description: string;
+  noIndex?: boolean;
+  /** Share image of another route (breed pages reuse their species image: one image per species, cheap at 300 breeds). */
+  imagePath?: string;
+}): Metadata {
+  const m = buildMetadataFor({ ...opts, path: opts.paths[opts.locale], languages: pathAlternates(opts.paths) });
+  if (!opts.imagePath) return m;
+  const image = { url: absoluteUrl(opts.imagePath), width: 1200, height: 630, alt: site.name };
+  return { ...m, openGraph: { ...m.openGraph, images: [image] }, twitter: { ...m.twitter, images: [image.url] } };
 }
 
 function buildMetadataFor(opts: {

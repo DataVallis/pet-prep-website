@@ -50,8 +50,9 @@ jobs:
           curl -fsS http://127.0.0.1:3000/sl | grep -q '<html lang="sl"'
           curl -fsS http://127.0.0.1:3000/sitemap.xml | grep -q 'petprep.si/sl/kako-deluje'
           curl -fsS -o /dev/null http://127.0.0.1:3000/llms.txt
-          curl -fsS http://127.0.0.1:3000/sl/pasme/labradorec | grep -q 'Labradorec'
-          curl -fsS http://127.0.0.1:3000/sitemap.xml | grep -q 'petprep.si/breeds/golden-retriever'
+          curl -fsS http://127.0.0.1:3000/sl/zivali/psi/labradorec | grep -q 'Labradorec'
+          curl -fsS http://127.0.0.1:3000/registry/dog/index.sl.json | grep -q 'labradorec'
+          curl -fsS http://127.0.0.1:3000/sitemap.xml | grep -q 'petprep.si/animals/dogs/golden-retriever'
           curl -fsS -o /dev/null http://127.0.0.1:3000/en/opengraph-image
           test "$(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:3000/pogoji)" = 308
           test "$(docker exec web id -u)" = 1001

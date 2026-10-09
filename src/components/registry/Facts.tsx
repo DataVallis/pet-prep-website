@@ -1,4 +1,6 @@
-import type { FactLine, SourceRef, TagView } from "@/lib/breeds";
+import type { FactLine, SourceRef } from "@/lib/registry/views";
+
+export type TagView = { tag: string; label: string; sources: SourceRef[] };
 
 /** Publisher name(s) + links to the numbered entries in the page's source list. */
 export function Cite({
