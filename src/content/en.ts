@@ -15,6 +15,8 @@ const en: Dictionary = {
       "kids and pets",
       "pet readiness test",
       "parent dashboard",
+      "try a dog breed before buying",
+      "is this breed right for me",
     ],
   },
   nav: { home: "Home", menu: "Menu", close: "Close menu", skip: "Skip to content" },
@@ -190,6 +192,28 @@ const en: Dictionary = {
       ],
       link: "Everything parents see",
     },
+    adults: {
+      eyebrow: "For adults",
+      title: "Try the breed before you bring it home.",
+      text: "Have your heart set on a particular breed? PetPrep is not only for kids. For 12 weeks you care for an AI pet of that breed with its real daily needs — and find out whether it is really for you, before you buy or adopt.",
+      points: [
+        {
+          strong: "The breed's real needs",
+          text: "meals in time windows, water, cleaning up and a daily step goal based on sourced exercise needs: an adult Border Collie needs 12,000 steps a day, a mixed breed 6,000.",
+        },
+        {
+          strong: "Training and puppy accidents",
+          text: "a short training session every day, and a puppy that can only hold it for about one hour per month of age before it has to go out — or there is a puddle on the floor.",
+        },
+        {
+          strong: "12 weeks show whether it fits your life",
+          text: "your working days, your free time and the weather. Because it will be a family dog, you can add your partner or children later.",
+        },
+      ],
+      how: "How to start: create an account as a parent, add yourself as the carer profile and log in with the 6-digit code — on the same phone or another one.",
+      note: "Available today: the mixed breed (free) and the Border Collie (in the 12-week challenge).",
+      link: "How to use PetPrep on your own",
+    },
     after: {
       eyebrow: "When it comes home",
       title: "When the real pet arrives, PetPrep stays.",
@@ -256,7 +280,7 @@ const en: Dictionary = {
             ["Walk", "6,000 real steps (puppies start at 2,000)", "No walk at all → ill the next morning"],
             ["Cleaning", "When the pet makes a mess — never during quiet hours", "No food or water until it is clean"],
           ],
-          note: "Puppies eat 4, then 3, then 2 times a day and need to go out about once per hour of age in months. A Border Collie needs 12,000 steps and gets hungry faster.",
+          note: "Puppies eat 4, then 3, then 2 times a day and can only hold it for about one hour per month of age. A Border Collie needs 12,000 steps and gets hungry faster.",
         },
         {
           type: "cards",
@@ -403,6 +427,7 @@ const en: Dictionary = {
             { q: "What does the challenge include?", a: "Demanding breeds such as the Border Collie, your pet's moods as AI videos, the Certificate of Responsibility at the end and access for both parents." },
             { q: "Do siblings pay twice?", a: "No. Children who share one pet pay one price. A second pet in the family is a separate challenge." },
             { q: "How do I pay?", a: "In the app, through the App Store or Google Play. Refunds are handled by your store account." },
+            { q: "Is it the same for adults?", a: "Yes. If you use PetPrep on your own to try a breed, the same applies: the mixed breed is free forever and the 12-week challenge costs €49.99 per pet." },
           ],
         },
       ],
@@ -411,7 +436,7 @@ const en: Dictionary = {
       meta: {
         title: "FAQ — questions parents ask about PetPrep",
         description:
-          "Answers about PetPrep: how much time it takes, privacy, location, steps, siblings, what happens if a child fails, languages, species and life with your real pet.",
+          "Answers about PetPrep: how much time it takes, using it as an adult without kids, privacy, location, steps, siblings, what happens if a child fails, languages, species and life with your real pet.",
       },
       eyebrow: "FAQ",
       title: "Questions parents ask.",
@@ -420,7 +445,8 @@ const en: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "What age is PetPrep for?", a: "It is designed for children aged about 7 to 12, and works well up to 16. Adults can also use it to test whether a demanding breed fits their life." },
+            { q: "What age is PetPrep for?", a: "For children it is designed for ages about 7 to 12, and works well up to 16. Adults use it too, to test whether a particular breed is really for them before they buy or adopt." },
+            { q: "Can I use PetPrep on my own, without kids?", a: "Yes. Create an account as a parent and add yourself as the carer profile — a nickname is enough, leave the birth year empty. Choose the breed, create a 6-digit code, then on the same phone or another one choose “I'm a kid” and type the code — that is how you become the carer. Because it will be a family dog, you can add your partner or children later so you care for it together. The price is the same as for families." },
             { q: "How much time does it take each day?", a: "A few minutes for food, water and cleaning — plus the walk a real dog would need anyway." },
             { q: "Does the app track my child's location?", a: "No. It only counts steps from the phone's motion sensor and asks for that permission when the child opens the walk. GPS is not used." },
             { q: "Does my child need an email address?", a: "No. You create the account; your child logs in with a 6-digit code you generate. We only store a nickname and, optionally, a birth year." },

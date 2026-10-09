@@ -15,6 +15,8 @@ const sl: Dictionary = {
       "otroci in hišni ljubljenčki",
       "test pripravljenosti",
       "nadzorna plošča za starše",
+      "preizkus pasme pred nakupom",
+      "je ta pasma res zame",
     ],
   },
   nav: { home: "Domov", menu: "Meni", close: "Zapri meni", skip: "Preskoči na vsebino" },
@@ -190,6 +192,28 @@ const sl: Dictionary = {
       ],
       link: "Vse, kar vidijo starši",
     },
+    adults: {
+      eyebrow: "Za odrasle",
+      title: "Preizkusite pasmo, preden jo pripeljete domov.",
+      text: "Si želite točno določeno pasmo? PetPrep ni samo za otroke. 12 tednov skrbite za AI ljubljenčka te pasme z njenimi resničnimi dnevnimi potrebami in vidite, ali je res za vas — preden jo kupite ali posvojite.",
+      points: [
+        {
+          strong: "Resnične potrebe pasme",
+          text: "obroki v časovnih oknih, voda, čiščenje in dnevni cilj korakov iz virov o potrebnem gibanju: odrasel border collie 12.000 korakov na dan, mešanček 6.000.",
+        },
+        {
+          strong: "Šolanje in nezgode mladička",
+          text: "vsak dan kratka vaja ukazov, mladiček pa zdrži le približno eno uro na mesec starosti, nato mora ven — sicer je na tleh luža.",
+        },
+        {
+          strong: "12 tednov pokaže, ali gre skupaj z vašim življenjem",
+          text: "z delovnikom, prostim časom in vremenom. Ker bo pes družinski, lahko kasneje dodate partnerja ali otroke.",
+        },
+      ],
+      how: "Kako začnete: ustvarite račun kot starš, dodajte sebe kot profil skrbnika in se prijavite s 6-mestno kodo — na istem ali drugem telefonu.",
+      note: "Danes sta na voljo mešanček (brezplačno) in border collie (v 12-tedenskem izzivu).",
+      link: "Kako PetPrep uporabljate sami",
+    },
     after: {
       eyebrow: "Ko pride domov",
       title: "Ko pride prava žival, PetPrep ostane.",
@@ -256,7 +280,7 @@ const sl: Dictionary = {
             ["Sprehod", "6.000 pravih korakov (mladiček začne pri 2.000)", "Brez sprehoda → naslednje jutro zboli"],
             ["Čiščenje", "Ko naredi nered — nikoli med tihimi urami", "Hrane in vode ni, dokler ni čisto"],
           ],
-          note: "Mladiček je 4-, nato 3- in 2-krat na dan in mora ven približno vsako uro na mesec starosti. Border collie potrebuje 12.000 korakov in hitreje postane lačen.",
+          note: "Mladiček je 4-, nato 3- in 2-krat na dan in zdrži le približno eno uro na mesec starosti, nato mora ven. Border collie potrebuje 12.000 korakov in hitreje postane lačen.",
         },
         {
           type: "cards",
@@ -403,6 +427,7 @@ const sl: Dictionary = {
             { q: "Kaj vključuje izziv?", a: "Zahtevne pasme, kot je border collie, razpoloženja ljubljenčka kot AI videje, Certifikat odgovornosti na koncu in dostop za oba starša." },
             { q: "Ali sorojenci plačajo dvakrat?", a: "Ne. Otroci, ki si delijo enega ljubljenčka, plačajo eno ceno. Drugi ljubljenček v družini je ločen izziv." },
             { q: "Kako plačam?", a: "V aplikaciji, prek App Store ali Google Play. Morebitna vračila urejate v svojem računu trgovine." },
+            { q: "Velja enako tudi za odrasle?", a: "Da. Če PetPrep uporabljate sami, da preizkusite pasmo, velja isto: mešanček je brezplačen za vedno, 12-tedenski izziv stane 49,99 € na žival." },
           ],
         },
       ],
@@ -411,7 +436,7 @@ const sl: Dictionary = {
       meta: {
         title: "Pogosta vprašanja — kaj starši sprašujejo o PetPrep",
         description:
-          "Odgovori o PetPrep: koliko časa vzame, zasebnost, lokacija, koraki, sorojenci, kaj če otrok ne uspe, jeziki, živalske vrste in življenje s pravim ljubljenčkom.",
+          "Odgovori o PetPrep: koliko časa vzame, uporaba za odrasle brez otrok, zasebnost, lokacija, koraki, sorojenci, kaj če otrok ne uspe, jeziki, živalske vrste in življenje s pravim ljubljenčkom.",
       },
       eyebrow: "Pogosta vprašanja",
       title: "Vprašanja staršev.",
@@ -420,7 +445,8 @@ const sl: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "Za katero starost je PetPrep?", a: "Namenjen je otrokom od približno 7 do 12 let, dobro deluje do 16. Uporabijo ga lahko tudi odrasli, ki preverjajo, ali zahtevna pasma ustreza njihovemu življenju." },
+            { q: "Za katero starost je PetPrep?", a: "Za otroke je namenjen od približno 7 do 12 let in dobro deluje do 16. Uporabljajo ga tudi odrasli, ki želijo pred nakupom ali posvojitvijo preizkusiti, ali je določena pasma res zanje." },
+            { q: "Lahko PetPrep uporabljam sam, brez otrok?", a: "Da. Ustvarite račun kot starš in dodajte sebe kot profil skrbnika — dovolj je vzdevek, letnice rojstva ne vpišete. Izberete pasmo, ustvarite 6-mestno kodo, nato na istem ali drugem telefonu izberete »Sem otrok« in vtipkate kodo — tako skrbite vi. Ker bo pes družinski, lahko kasneje dodate partnerja ali otroke, da skrbite skupaj. Cena je enaka kot za družine." },
             { q: "Koliko časa vzame na dan?", a: "Nekaj minut za hrano, vodo in čiščenje — in sprehod, ki bi ga pravi pes tako ali tako potreboval." },
             { q: "Ali aplikacija sledi lokaciji otroka?", a: "Ne. Šteje le korake s senzorja gibanja v telefonu in za to dovoljenje vpraša, ko otrok odpre sprehod. GPS se ne uporablja." },
             { q: "Ali otrok potrebuje e-poštni naslov?", a: "Ne. Račun ustvarite vi; otrok se prijavi s 6-mestno kodo, ki jo ustvarite. Shranimo le vzdevek in po želji letnico rojstva." },

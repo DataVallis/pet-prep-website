@@ -128,6 +128,18 @@ export type Dictionary = {
       points: { strong: string; text: string }[];
       link: string;
     };
+    /** Adults who want a specific breed and test it on themselves first (David, 2026-10-09). */
+    adults: {
+      eyebrow: string;
+      title: string;
+      text: string;
+      points: { strong: string; text: string }[];
+      /** How an adult starts on their own: parent account → add yourself → code. */
+      how: string;
+      /** Honest note on which breeds are available today. */
+      note: string;
+      link: string;
+    };
     after: {
       eyebrow: string;
       title: string;
