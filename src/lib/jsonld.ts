@@ -88,6 +88,44 @@ export function breadcrumbLd(locale: Locale, dict: Dictionary, key: RouteKey, ti
   };
 }
 
+/** WebPage of a breed register page, with its sources as citations. */
+export function breedPageLd(opts: {
+  locale: Locale;
+  path: string;
+  title: string;
+  description: string;
+  breedName: string;
+  sources: { publisher: string; title: string; url: string }[];
+  dateModified: string;
+}) {
+  const url = absoluteUrl(opts.path);
+  return {
+    "@type": "WebPage",
+    "@id": `${url}#webpage`,
+    url,
+    name: opts.title,
+    description: opts.description,
+    inLanguage: localeMeta[opts.locale].htmlLang,
+    isPartOf: { "@id": SITE_ID },
+    about: { "@type": "Thing", name: opts.breedName },
+    dateModified: opts.dateModified,
+    citation: opts.sources.map((s) => ({
+      "@type": "CreativeWork",
+      name: s.title,
+      url: s.url,
+      publisher: { "@type": "Organization", name: s.publisher },
+    })),
+  };
+}
+
+/** Home → parent page → current page. */
+export function breadcrumb3Ld(items: { name: string; path: string }[]) {
+  return {
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((it, i) => ({ "@type": "ListItem", position: i + 1, name: it.name, item: absoluteUrl(it.path) })),
+  };
+}
+
 export function faqLd(items: { q: string; a: string }[]) {
   return {
     "@type": "FAQPage",

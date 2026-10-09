@@ -25,6 +25,7 @@ export const pageSlugs = {
   privacy: { en: "privacy", sl: "zasebnost" },
   terms: { en: "terms", sl: "pogoji" },
   childSafety: { en: "child-safety", sl: "varnost-otrok" },
+  breeds: { en: "breeds", sl: "pasme" },
 } as const satisfies Record<string, Record<Locale, string>>;
 
 export type PageKey = keyof typeof pageSlugs;
@@ -40,4 +41,30 @@ export function pathFor(locale: Locale, key: RouteKey): string {
 
 export function pageKeyFromSlug(locale: Locale, slug: string): PageKey | undefined {
   return pageKeys.find((key) => pageSlugs[key][locale] === slug);
+}
+
+/**
+ * Breed register (M5-R11): one page per breed under the "breeds" page,
+ * e.g. /breeds/labrador-retriever and /sl/pasme/labradorec.
+ * Keys are the breed ids of src/content/breeds/registry.json.
+ */
+export const breedSlugs = {
+  border_collie: { en: "border-collie", sl: "border-collie" },
+  labrador_retriever: { en: "labrador-retriever", sl: "labradorec" },
+  golden_retriever: { en: "golden-retriever", sl: "zlati-prinasalec" },
+} as const satisfies Record<string, Record<Locale, string>>;
+
+export type BreedId = keyof typeof breedSlugs;
+export const breedIds = Object.keys(breedSlugs) as BreedId[];
+
+export function isBreedId(value: string): value is BreedId {
+  return (breedIds as string[]).includes(value);
+}
+
+export function pathForBreed(locale: Locale, id: BreedId): string {
+  return `${pathFor(locale, "breeds")}/${breedSlugs[id][locale]}`;
+}
+
+export function breedIdFromSlug(locale: Locale, slug: string): BreedId | undefined {
+  return breedIds.find((id) => breedSlugs[id][locale] === slug);
 }

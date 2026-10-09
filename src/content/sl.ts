@@ -51,7 +51,7 @@ const sl: Dictionary = {
   footer: {
     tagline: "Pripravljeni na žival. Ob njej vse življenje.",
     groups: [
-      { title: "Izdelek", links: ["howItWorks", "parents", "afterAdoption", "pricing", "faq"] },
+      { title: "Izdelek", links: ["howItWorks", "parents", "breeds", "afterAdoption", "pricing", "faq"] },
       { title: "Podjetje", links: ["partners", "investors", "contact"] },
       { title: "Zaupanje", links: ["privacy", "terms", "childSafety"] },
     ],
@@ -782,6 +782,19 @@ const sl: Dictionary = {
         { type: "callout", title: "Prijavite skrb", text: "Če vas karkoli v PetPrep skrbi, nam pišite — odgovorili bomo prednostno.", tone: "dark" },
         { type: "contact" },
       ],
+    },
+    breeds: {
+      meta: {
+        title: "PetPrep register pasem — potrebe pasem psov z viri",
+        description:
+          "Primerjajte pasme psov po gibanju, velikosti, negi in življenjski dobi, filtrirajte po tem, za koga so primerne, in poglejte, kako jih simulira PetPrep. Vsako dejstvo ima vir.",
+      },
+      navLabel: "Pasme",
+      eyebrow: "Register pasem",
+      title: "Spoznajte pasmo, preden pride domov.",
+      lead:
+        "Kaj vsaka pasma v PetPrep res potrebuje — gibanje, nego, obroke, velikost in življenjsko dobo — iz kinoloških zvez, veterinarskih dobrodelnih organizacij in raziskav, z vsemi viri. In pravila, po katerih jo PetPrep simulira.",
+      blocks: [{ type: "breedRegistry" }],
     },
   },
 };

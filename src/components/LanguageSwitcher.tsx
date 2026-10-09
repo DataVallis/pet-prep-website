@@ -2,10 +2,22 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { defaultLocale, isLocale, locales, localeMeta, pageKeyFromSlug, pathFor, type Locale, type RouteKey } from "@/i18n/config";
+import {
+  breedIdFromSlug,
+  defaultLocale,
+  isLocale,
+  locales,
+  localeMeta,
+  pageKeyFromSlug,
+  pathFor,
+  pathForBreed,
+  type BreedId,
+  type Locale,
+  type RouteKey,
+} from "@/i18n/config";
 
 /** Works out which page the visitor is on from the public URL. */
-function currentRoute(pathname: string): { locale: Locale; key: RouteKey } {
+function currentRoute(pathname: string): { locale: Locale; key: RouteKey; breed?: BreedId } {
   const parts = pathname.split("/").filter(Boolean);
   let locale: Locale = defaultLocale;
   if (parts[0] && isLocale(parts[0]) && parts[0] !== defaultLocale) {
@@ -15,12 +27,14 @@ function currentRoute(pathname: string): { locale: Locale; key: RouteKey } {
     parts.shift();
   }
   if (parts.length === 0) return { locale, key: "home" };
-  return { locale, key: pageKeyFromSlug(locale, parts[0]) ?? "home" };
+  const key = pageKeyFromSlug(locale, parts[0]) ?? "home";
+  const breed = key === "breeds" && parts[1] ? breedIdFromSlug(locale, parts[1]) : undefined;
+  return { locale, key, breed };
 }
 
 export function LanguageSwitcher({ label, dark = false }: { label: string; dark?: boolean }) {
   const pathname = usePathname() ?? "/";
-  const { locale, key } = currentRoute(pathname);
+  const { locale, key, breed } = currentRoute(pathname);
   return (
     <nav aria-label={label} className="flex items-center gap-1">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className={dark ? "text-muted-dark" : "text-muted"}>
@@ -33,7 +47,7 @@ export function LanguageSwitcher({ label, dark = false }: { label: string; dark?
         return (
           <Link
             key={l}
-            href={pathFor(l, key)}
+            href={breed ? pathForBreed(l, breed) : pathFor(l, key)}
             hrefLang={localeMeta[l].htmlLang}
             lang={localeMeta[l].htmlLang}
             aria-current={active ? "true" : undefined}
