@@ -118,11 +118,31 @@ export function breedPageLd(opts: {
   };
 }
 
-/** Home → parent page → current page. */
-export function breadcrumb3Ld(items: { name: string; path: string }[]) {
+/** A list of breadcrumbs (Home → … → current page). */
+export function breadcrumbsLd(items: { name: string; path: string }[]) {
   return {
     "@type": "BreadcrumbList",
     itemListElement: items.map((it, i) => ({ "@type": "ListItem", position: i + 1, name: it.name, item: absoluteUrl(it.path) })),
+  };
+}
+
+/** A species catalogue: CollectionPage + the breeds as an ItemList (URLs only). */
+export function collectionLd(opts: { locale: Locale; path: string; title: string; description: string; items: { name: string; path: string }[]; dateModified: string }) {
+  const url = absoluteUrl(opts.path);
+  return {
+    "@type": "CollectionPage",
+    "@id": `${url}#webpage`,
+    url,
+    name: opts.title,
+    description: opts.description,
+    inLanguage: localeMeta[opts.locale].htmlLang,
+    isPartOf: { "@id": SITE_ID },
+    dateModified: opts.dateModified,
+    mainEntity: {
+      "@type": "ItemList",
+      numberOfItems: opts.items.length,
+      itemListElement: opts.items.map((it, i) => ({ "@type": "ListItem", position: i + 1, name: it.name, url: absoluteUrl(it.path) })),
+    },
   };
 }
 

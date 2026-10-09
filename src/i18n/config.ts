@@ -25,7 +25,7 @@ export const pageSlugs = {
   privacy: { en: "privacy", sl: "zasebnost" },
   terms: { en: "terms", sl: "pogoji" },
   childSafety: { en: "child-safety", sl: "varnost-otrok" },
-  breeds: { en: "breeds", sl: "pasme" },
+  animals: { en: "animals", sl: "zivali" },
 } as const satisfies Record<string, Record<Locale, string>>;
 
 export type PageKey = keyof typeof pageSlugs;
@@ -44,27 +44,16 @@ export function pageKeyFromSlug(locale: Locale, slug: string): PageKey | undefin
 }
 
 /**
- * Breed register (M5-R11): one page per breed under the "breeds" page,
- * e.g. /breeds/labrador-retriever and /sl/pasme/labradorec.
- * Keys are the breed ids of src/content/breeds/registry.json.
+ * Animal & breed register (M5-R11, David 2026-10-10): /animals → /animals/<species> →
+ * /animals/<species>/<breed> (SL /sl/zivali/…). Species and breed slugs come from the
+ * registry (src/content/registry/registry.json); only the comparison page slug is fixed here.
  */
-export const breedSlugs = {
-  border_collie: { en: "border-collie", sl: "border-collie" },
-  labrador_retriever: { en: "labrador-retriever", sl: "labradorec" },
-  golden_retriever: { en: "golden-retriever", sl: "zlati-prinasalec" },
-} as const satisfies Record<string, Record<Locale, string>>;
+export const compareSlug: Record<Locale, string> = { en: "compare", sl: "primerjava" };
 
-export type BreedId = keyof typeof breedSlugs;
-export const breedIds = Object.keys(breedSlugs) as BreedId[];
-
-export function isBreedId(value: string): value is BreedId {
-  return (breedIds as string[]).includes(value);
+export function pathForSpecies(locale: Locale, speciesSlug: string): string {
+  return `${pathFor(locale, "animals")}/${speciesSlug}`;
 }
 
-export function pathForBreed(locale: Locale, id: BreedId): string {
-  return `${pathFor(locale, "breeds")}/${breedSlugs[id][locale]}`;
-}
-
-export function breedIdFromSlug(locale: Locale, slug: string): BreedId | undefined {
-  return breedIds.find((id) => breedSlugs[id][locale] === slug);
+export function pathForBreed(locale: Locale, speciesSlug: string, breedSlug: string): string {
+  return `${pathForSpecies(locale, speciesSlug)}/${breedSlug}`;
 }

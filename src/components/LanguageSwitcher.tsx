@@ -2,22 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import {
-  breedIdFromSlug,
-  defaultLocale,
-  isLocale,
-  locales,
-  localeMeta,
-  pageKeyFromSlug,
-  pathFor,
-  pathForBreed,
-  type BreedId,
-  type Locale,
-  type RouteKey,
-} from "@/i18n/config";
+import { useEffect, useState } from "react";
+import { defaultLocale, isLocale, locales, localeMeta, pageKeyFromSlug, pathFor, type Locale, type RouteKey } from "@/i18n/config";
 
 /** Works out which page the visitor is on from the public URL. */
-function currentRoute(pathname: string): { locale: Locale; key: RouteKey; breed?: BreedId } {
+function currentRoute(pathname: string): { locale: Locale; key: RouteKey } {
   const parts = pathname.split("/").filter(Boolean);
   let locale: Locale = defaultLocale;
   if (parts[0] && isLocale(parts[0]) && parts[0] !== defaultLocale) {
@@ -27,14 +16,39 @@ function currentRoute(pathname: string): { locale: Locale; key: RouteKey; breed?
     parts.shift();
   }
   if (parts.length === 0) return { locale, key: "home" };
-  const key = pageKeyFromSlug(locale, parts[0]) ?? "home";
-  const breed = key === "breeds" && parts[1] ? breedIdFromSlug(locale, parts[1]) : undefined;
-  return { locale, key, breed };
+  return { locale, key: pageKeyFromSlug(locale, parts[0]) ?? "home" };
+}
+
+/**
+ * Pages below a page (species, breeds of the animal register) have localized slugs that only
+ * the page knows; it publishes them as <link rel="alternate" hreflang> in <head>, so the switcher
+ * reads them from there after load. Without JavaScript it links to the parent page.
+ */
+function alternatesFromHead(): Partial<Record<Locale, string>> {
+  const out: Partial<Record<Locale, string>> = {};
+  for (const l of locales) {
+    const el = document.querySelector<HTMLLinkElement>(`link[rel="alternate"][hreflang="${localeMeta[l].htmlLang}"]`);
+    if (el?.href) {
+      try {
+        out[l] = new URL(el.href).pathname;
+      } catch {
+        // ignore a malformed link
+      }
+    }
+  }
+  return out;
 }
 
 export function LanguageSwitcher({ label, dark = false }: { label: string; dark?: boolean }) {
   const pathname = usePathname() ?? "/";
-  const { locale, key, breed } = currentRoute(pathname);
+  const { locale, key } = currentRoute(pathname);
+  const [alternates, setAlternates] = useState<{ path: string; hrefs: Partial<Record<Locale, string>> }>({ path: "", hrefs: {} });
+  useEffect(() => {
+    // Read after the new page's <head> is in place.
+    const id = window.setTimeout(() => setAlternates({ path: pathname, hrefs: alternatesFromHead() }), 0);
+    return () => window.clearTimeout(id);
+  }, [pathname]);
+  const hrefs = alternates.path === pathname ? alternates.hrefs : {};
   return (
     <nav aria-label={label} className="flex items-center gap-1">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className={dark ? "text-muted-dark" : "text-muted"}>
@@ -47,7 +61,7 @@ export function LanguageSwitcher({ label, dark = false }: { label: string; dark?
         return (
           <Link
             key={l}
-            href={breed ? pathForBreed(l, breed) : pathFor(l, key)}
+            href={hrefs[l] ?? pathFor(l, key)}
             hrefLang={localeMeta[l].htmlLang}
             lang={localeMeta[l].htmlLang}
             aria-current={active ? "true" : undefined}
