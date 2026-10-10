@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -138,7 +138,7 @@ const sl: RegistryCopy = {
   },
   categories: {
     size: { toy: "zelo majhen", small: "majhen", medium: "srednje velik", large: "velik", giant: "zelo velik" },
-    coat: { moderately_long: "zmerno dolga", smooth: "gladka (kratka)", short: "kratka", medium: "srednje dolga" },
+    coat: { moderately_long: "zmerno dolga", smooth: "gladka (kratka)", short: "kratka", medium: "srednje dolga", short_long: "kratka ali dolga (dve različici dlake)" },
     grooming_frequency: { once_a_week: "enkrat na teden", more_than_once_a_week: "večkrat na teden", daily: "vsak dan" },
     grooming_level: { moderate: "zmerne", high: "velike", low: "majhne" },
     shedding: { yes: "dlaka izpada", high: "dlaka močno izpada", moderate: "dlaka zmerno izpada", low: "dlaka malo izpada", minimal: "dlaka zelo malo izpada" },
@@ -229,6 +229,9 @@ const sl: RegistryCopy = {
     heat_stroke_risk: "Hitro se pregreje in je bolj dovzeten za toplotni udar kot večina psov, zlasti v toplem vremenu.",
     skin_fold_ear_problems: "Nagnjen je k vnetjem ušes in okužbam kožnih gub; kožne gube morajo biti čiste in suhe.",
     merle_colour_risk: "Barva merle ni v standardu pasme; pri tej pasmi pomeni večje tveganje za težave s sluhom in vidom.",
+    hind_leg_conformation: "The Royal Kennel Club pri tej pasmi opozarja na obliko zadnjih nog in način gibanja; zdrav pes ima raven hrbet in zmerno zakotene zadnje noge.",
+    hip_elbow_dysplasia: "Lahko je nagnjen k displaziji kolkov in komolcev; vzrediteljem svetujejo, naj psom pred paritvijo pregledajo kolke in komolce.",
+    degenerative_myelopathy: "Pri pasmi se pojavlja degenerativna mielopatija, bolezen hrbtenjače, ki počasi slabi zadnje noge; na voljo je test DNK.",
   },
   page: {
     eyebrow: "Register živali",
@@ -327,6 +330,14 @@ const sl: RegistryCopy = {
         "Potrebuje največ eno uro gibanja na dan in je primeren za stanovanje. Vsi viri pa opozarjajo na ploščat obraz: francoski buldog lahko težje diha in se hitro pregreje, zlasti v toplem vremenu, zato potrebuje senco, vodo in mirne sprehode. PDSA družinam svetuje, naj razmislijo tudi o posvojitvi odraslega francoskega buldoga.",
       ],
       sources: ["S76", "S78", "S79", "S81", "S82"],
+    },
+    german_shepherd: {
+      aka: "German Shepherd, alzaški ovčar",
+      text: [
+        "Nemški ovčar je velik, močan ovčarski pes iz Nemčije s pokončnimi ušesi in gosto dvojno dlako, kratko ali dolgo. Standard ga opisuje kot uravnoteženega, samozavestnega psa z močnimi živci, The Royal Kennel Club pa kot vsestranskega delovnega in službenega psa, znanega po pogumu in inteligenci.",
+        "Potrebuje vsaj dve uri gibanja na dan, primeren je za veliko hišo z vrtom in mu močno izpada dlaka. Britanske dobrodelne organizacije pišejo, da so nekateri lahko odlični družinski psi, ob majhnih otrocih pa naj bodo vedno pod nadzorom. The Royal Kennel Club vzrediteljem svetuje, naj psom pred paritvijo pregledajo kolke in komolce, in pri pasmi opozarja na obliko zadnjih nog.",
+      ],
+      sources: ["S95", "S97", "S99", "S100"],
     },
   },
 };
