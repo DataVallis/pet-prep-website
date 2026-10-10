@@ -4,8 +4,8 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 /** "a Border Collie", "an Akita". */
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
-const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 3: "terriers", 4: "dachshunds", 6: "scent hounds and related breeds", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba" };
+const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 6: "scent hounds and related breeds", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland" };
 
 const en: RegistryCopy = {
   hub: {
@@ -155,6 +155,7 @@ const en: RegistryCopy = {
     exact: (t) => t,
     median: (t) => `median ${t}`,
     more_than: (t) => `more than ${t}`,
+    less_than: (t) => `less than ${t}`,
     at_least: (t) => `at least ${t}`,
     up_to: (t) => `up to ${t}`,
     ideal: (t) => `ideal (breed standard): ${t}`,
@@ -404,6 +405,14 @@ const en: RegistryCopy = {
         "Its standard calls it alert, gay, courageous and self-reliant but friendly. UK sources call it an affectionate, playful family pet for children of any age, with play always supervised; it needs about an hour of exercise a day, can live in a flat, sheds, and needs brushing a few times a week. Because of its prey drive it should not live with smaller pets, and it does not like being left alone. Skin is a known concern: The Royal Kennel Club asks judges to look for signs of skin inflammation in the breed.",
       ],
       sources: ["S142", "S144", "S146", "S147"],
+    },
+    bernese_mountain_dog: {
+      aka: "Berner, Berner Sennenhund",
+      text: [
+        "The Bernese Mountain Dog is a large Swiss farm dog, originally used as a guard, draught and cattle dog in the Canton of Bern. Its standard describes a strong, agile, longhaired working dog with sturdy limbs and a long, shining, straight or slightly wavy coat. The only colour the standard allows is tricolour: jet black with rich tan on the cheeks, above the eyes, on the legs and chest, and white markings on the head and chest.",
+        "Its standard calls it self-confident, good-natured and friendly, and \"a kind and devoted family dog\" that is slow to mature. UK sources say it needs up to an hour of exercise a day, belongs in a large house with a large garden, sheds a lot and needs brushing more than once a week; it should not be left alone for long. It usually lives less than ten years, and UK sources list hip and elbow dysplasia, bloat and certain cancers among its health concerns.",
+      ],
+      sources: ["S150", "S152", "S153", "S154"],
     },
   },
 };

@@ -12,8 +12,8 @@ function form(n: number, one: string, two: string, few: string, many: string): s
 type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
-const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 6: "goniči, krvosledniki in sorodne pasme", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba" };
+const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 6: "goniči, krvosledniki in sorodne pasme", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -163,6 +163,7 @@ const sl: RegistryCopy = {
     exact: (t) => t,
     median: (t) => `mediana ${t}`,
     more_than: (t) => `več kot ${t}`,
+    less_than: (t) => `manj kot ${t}`,
     at_least: (t) => `vsaj ${t}`,
     up_to: (t) => `največ ${t}`,
     ideal: (t) => `idealno (standard pasme): ${t}`,
@@ -414,6 +415,14 @@ const sl: RegistryCopy = {
         "Standard ga opisuje kot pozornega, veselega, pogumnega in samostojnega, a prijaznega psa. Britanski viri pravijo, da je ljubeč in igriv družinski pes za otroke vseh starosti, igro pa je treba vedno nadzorovati; potrebuje okoli uro gibanja na dan, lahko živi v stanovanju, dlaka mu izpada in česati ga je treba nekajkrat na teden. Zaradi lovskega nagona ne sodi k manjšim živalim, sam pa ne ostaja rad. Koža je znana skrb: The Royal Kennel Club sodnikom naroča, naj bodo pri tej pasmi pozorni na znake vnetja kože.",
       ],
       sources: ["S142", "S144", "S146", "S147"],
+    },
+    bernese_mountain_dog: {
+      aka: "berner, berner sennenhund, bernese mountain dog",
+      text: [
+        "Bernski planšarski pes je velik švicarski kmečki pes, ki so ga v kantonu Bern nekoč uporabljali kot čuvaja, vlečnega psa in psa za govedo. Standard ga opisuje kot močnega, okretnega delovnega psa s čvrstimi nogami ter dolgo, sijočo, ravno ali rahlo valovito dlako. Edina barva, ki jo standard dovoljuje, je trobarvna: globoko črna z rjavimi oznakami na licih, nad očmi, na nogah in prsih ter z belimi oznakami na glavi in prsih.",
+        "Standard ga opisuje kot samozavestnega in dobrodušnega psa ter »prijaznega in vdanega družinskega psa«, ki počasi dozoreva. Britanski viri pravijo, da potrebuje do eno uro gibanja na dan, sodi v veliko hišo z velikim vrtom, dlaka mu močno izpada in česati ga je treba večkrat na teden; sam naj ne ostaja dolgo. Običajno živi manj kot deset let, britanski viri pa med zdravstvenimi skrbmi navajajo displazijo kolkov in komolcev, zasuk želodca in nekatere vrste raka.",
+      ],
+      sources: ["S150", "S152", "S153", "S154"],
     },
   },
 };
