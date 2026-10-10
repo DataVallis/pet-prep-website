@@ -4,8 +4,8 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 /** "a Border Collie", "an Akita". */
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
-const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 8: "retrievers, flushing dogs and water dogs" };
-const origins: Record<string, string> = { GB: "Great Britain" };
+const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France" };
 
 const en: RegistryCopy = {
   hub: {
@@ -79,7 +79,7 @@ const en: RegistryCopy = {
   },
   facets: {
     size: { label: "Size", values: { toy: "Toy", small: "Small", medium: "Medium", large: "Large", giant: "Giant" } },
-    exercise: { label: "Daily exercise", values: { under_1h: "Under 1 hour", h1_2: "1–2 hours", over_2h: "More than 2 hours" }, line: (v) => `${v.toLowerCase()} a day` },
+    exercise: { label: "Daily exercise", values: { under_1h: "Up to 1 hour", h1_2: "1–2 hours", over_2h: "More than 2 hours" }, line: (v) => `${v.toLowerCase()} a day` },
     grooming: { label: "Brushing", values: { weekly: "Once a week", several_weekly: "Several times a week", daily: "Daily", other: "Other" }, line: (v) => `brushing ${v.toLowerCase()}` },
   },
   groups: {
@@ -132,7 +132,7 @@ const en: RegistryCopy = {
     coat: { moderately_long: "moderately long", smooth: "smooth (short)", short: "short", medium: "medium length" },
     grooming_frequency: { once_a_week: "once a week", more_than_once_a_week: "more than once a week", daily: "daily" },
     grooming_level: { moderate: "moderate", high: "high", low: "low" },
-    shedding: { yes: "sheds", high: "sheds a lot", moderate: "sheds moderately", low: "sheds little" },
+    shedding: { yes: "sheds", high: "sheds a lot", moderate: "sheds moderately", low: "sheds little", minimal: "sheds minimally" },
   },
   statements: {
     food_motivated: () => "Strongly motivated by food — helpful in training, but watch the portions.",
@@ -155,6 +155,8 @@ const en: RegistryCopy = {
     median: (t) => `median ${t}`,
     more_than: (t) => `more than ${t}`,
     at_least: (t) => `at least ${t}`,
+    up_to: (t) => `up to ${t}`,
+    ideal: (t) => `ideal (breed standard): ${t}`,
     mean: (t) => `measured average: ${t}`,
     about: (t) => `about ${t}`,
     until: (t) => `until ${t}`,
@@ -195,8 +197,11 @@ const en: RegistryCopy = {
   },
   rules: {
     steps_rule: (p, f) =>
-      `Step goal = minutes of daily exercise × ${p.per_minute} steps: an adult gets ${p.minutes % 60 === 0 ? `${f.num(p.minutes / 60)} hours` : `${p.minutes} minutes`}, so ${f.num(p.steps)} steps a day.`,
-    learning: (p, f) => `Learns commands ${f.num(p.multiplier)}× as fast as the mixed breed of the free plan.`,
+      `Step goal = minutes of daily exercise × ${p.per_minute} steps: an adult gets ${p.minutes % 60 === 0 ? `${f.num(p.minutes / 60)} ${s(p.minutes / 60, "hour", "hours")}` : `${p.minutes} minutes`}, so ${f.num(p.steps)} steps a day.`,
+    learning: (p, f) =>
+      p.multiplier < 1
+        ? `Learns commands more slowly than the mixed breed of the free plan (${f.num(p.multiplier)}× its speed).`
+        : `Learns commands ${f.num(p.multiplier)}× as fast as the mixed breed of the free plan.`,
     senior_share: (p, f) => `Becomes a senior in month ${p.months} (${f.num(p.months / 12, 1)} years) — the last quarter of the breed's median lifespan.`,
     walk_sensor: () => "Walks count real steps from the phone's motion sensor — no GPS.",
     play_instead_of_steps: (p, f) =>
@@ -210,6 +215,10 @@ const en: RegistryCopy = {
     weight_gain: "Puts on weight easily — portions and treats need watching.",
     hip_elbow_dysplasia_eye_conditions: "Can be prone to hip and elbow dysplasia and to several inherited eye conditions.",
     cancer_risk: "Sources describe a higher risk of cancer in this breed.",
+    flat_face_breathing: "Flat-faced (brachycephalic) breed: the short muzzle, narrow nostrils and extra soft tissue in the airway can make breathing harder (brachycephalic obstructive airway syndrome, BOAS).",
+    heat_stroke_risk: "Overheats quickly and is more vulnerable to heatstroke than most dogs, especially in warm weather.",
+    skin_fold_ear_problems: "Prone to ear inflammation and skin-fold infections; the skin folds need to be kept clean and dry.",
+    merle_colour_risk: "Merle is not a breed-standard colour; in this breed it carries a higher risk of hearing and sight problems.",
   },
   page: {
     eyebrow: "Animal register",
@@ -300,6 +309,14 @@ const en: RegistryCopy = {
         "UK charities call it a great family dog for an active family, and one that can be a good first dog. The trade-offs are clear in the sources: at least two hours of exercise a day, brushing several times a week, and a coat that sheds a lot.",
       ],
       sources: ["S63", "S64", "S65", "S66", "S68", "S69"],
+    },
+    french_bulldog: {
+      aka: "Frenchie",
+      text: [
+        "The French Bulldog is a small, sturdy companion dog from France with a short, smooth coat and upright “bat ears”. Its standard describes a sociable, lively and playful dog; UK charities call it laid back and adaptable and say it tends to get along well with children, which has made it a popular family pet.",
+        "It needs up to an hour of exercise a day and suits a flat. The trade-off every source raises is the flat face: it can make breathing harder, and Frenchies overheat quickly, especially in warm weather — so shade, water and calm walks matter. PDSA suggests families also consider adopting an adult French Bulldog.",
+      ],
+      sources: ["S76", "S78", "S79", "S81", "S82"],
     },
   },
 };

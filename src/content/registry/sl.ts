@@ -12,8 +12,8 @@ function form(n: number, one: string, two: string, few: string, many: string): s
 type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
-const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 8: "prinašalci, šarivci in vodni psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija" };
+const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -87,7 +87,7 @@ const sl: RegistryCopy = {
   },
   facets: {
     size: { label: "Velikost", values: { toy: "Zelo majhen", small: "Majhen", medium: "Srednje velik", large: "Velik", giant: "Zelo velik" } },
-    exercise: { label: "Gibanje na dan", values: { under_1h: "Manj kot 1 ura", h1_2: "1–2 uri", over_2h: "Več kot 2 uri" }, line: (v) => `${v.toLowerCase()} gibanja na dan` },
+    exercise: { label: "Gibanje na dan", values: { under_1h: "Do 1 ure", h1_2: "1–2 uri", over_2h: "Več kot 2 uri" }, line: (v) => `${v.toLowerCase()} gibanja na dan` },
     grooming: { label: "Krtačenje", values: { weekly: "Enkrat na teden", several_weekly: "Večkrat na teden", daily: "Vsak dan", other: "Drugo" }, line: (v) => `krtačenje ${v.toLowerCase()}` },
   },
   groups: {
@@ -140,7 +140,7 @@ const sl: RegistryCopy = {
     coat: { moderately_long: "zmerno dolga", smooth: "gladka (kratka)", short: "kratka", medium: "srednje dolga" },
     grooming_frequency: { once_a_week: "enkrat na teden", more_than_once_a_week: "večkrat na teden", daily: "vsak dan" },
     grooming_level: { moderate: "zmerne", high: "velike", low: "majhne" },
-    shedding: { yes: "dlaka izpada", high: "dlaka močno izpada", moderate: "dlaka zmerno izpada", low: "dlaka malo izpada" },
+    shedding: { yes: "dlaka izpada", high: "dlaka močno izpada", moderate: "dlaka zmerno izpada", low: "dlaka malo izpada", minimal: "dlaka zelo malo izpada" },
   },
   statements: {
     food_motivated: () => "Hrana ga močno motivira — to pomaga pri šolanju, a pazite na količino.",
@@ -163,6 +163,8 @@ const sl: RegistryCopy = {
     median: (t) => `mediana ${t}`,
     more_than: (t) => `več kot ${t}`,
     at_least: (t) => `vsaj ${t}`,
+    up_to: (t) => `največ ${t}`,
+    ideal: (t) => `idealno (standard pasme): ${t}`,
     mean: (t) => `izmerjeno povprečje: ${t}`,
     about: (t) => `približno ${t}`,
     until: (t) => `do ${t}`,
@@ -205,7 +207,10 @@ const sl: RegistryCopy = {
   rules: {
     steps_rule: (p, f) =>
       `Cilj korakov = minute gibanja na dan × ${p.per_minute} korakov: odrasel pes ima ${p.minutes % 60 === 0 ? `${f.num(p.minutes / 60)} ${form(p.minutes / 60, "uro", "uri", "ure", "ur")}` : `${p.minutes} minut`}, torej ${f.num(p.steps)} korakov na dan.`,
-    learning: (p, f) => `Ukaze se uči ${f.num(p.multiplier)}-krat hitreje kot mešanček iz brezplačnega plana.`,
+    learning: (p, f) =>
+      p.multiplier < 1
+        ? `Ukaze se uči počasneje kot mešanček iz brezplačnega plana (${f.num(p.multiplier)}-kratnik njegove hitrosti).`
+        : `Ukaze se uči ${f.num(p.multiplier)}-krat hitreje kot mešanček iz brezplačnega plana.`,
     senior_share: (p, f) => `Starejši pes postane v ${p.months}. mesecu (${f.num(p.months / 12, 1)} leta) — v zadnji četrtini mediane življenjske dobe pasme.`,
     walk_sensor: () => "Sprehodi štejejo prave korake s senzorja gibanja v telefonu — brez GPS.",
     play_instead_of_steps: (p, f) =>
@@ -219,6 +224,10 @@ const sl: RegistryCopy = {
     weight_gain: "Hitro se zredi — pazite na velikost obrokov in priboljške.",
     hip_elbow_dysplasia_eye_conditions: "Lahko je nagnjen k displaziji kolkov in komolcev ter k več dednim boleznim oči.",
     cancer_risk: "Viri pri tej pasmi navajajo večje tveganje za raka.",
+    flat_face_breathing: "Pasma s ploščatim obrazom (brahicefalna): kratek gobček, ozke nosnice in odvečno mehko tkivo v dihalih lahko otežijo dihanje (brahicefalni obstruktivni sindrom dihalnih poti, BOAS).",
+    heat_stroke_risk: "Hitro se pregreje in je bolj dovzeten za toplotni udar kot večina psov, zlasti v toplem vremenu.",
+    skin_fold_ear_problems: "Nagnjen je k vnetjem ušes in okužbam kožnih gub; kožne gube morajo biti čiste in suhe.",
+    merle_colour_risk: "Barva merle ni v standardu pasme; pri tej pasmi pomeni večje tveganje za težave s sluhom in vidom.",
   },
   page: {
     eyebrow: "Register živali",
@@ -309,6 +318,14 @@ const sl: RegistryCopy = {
         "Britanske dobrodelne organizacije ga opisujejo kot odličnega psa za aktivno družino, ki je lahko tudi dober prvi pes. Viri pa jasno povedo, kaj to pomeni: vsaj dve uri gibanja na dan, krtačenje večkrat na teden in dlako, ki močno izpada.",
       ],
       sources: ["S63", "S64", "S65", "S66", "S68", "S69"],
+    },
+    french_bulldog: {
+      aka: "French Bulldog, frenchie",
+      text: [
+        "Francoski buldog je majhen, čvrst pes za družbo iz Francije s kratko, gladko dlako in pokončnimi »netopirskimi« ušesi. Standard ga opisuje kot družabnega, živahnega in igrivega psa, britanske dobrodelne organizacije pa kot sproščenega in prilagodljivega psa, ki se praviloma dobro razume z otroki — zato je priljubljen družinski pes.",
+        "Potrebuje največ eno uro gibanja na dan in je primeren za stanovanje. Vsi viri pa opozarjajo na ploščat obraz: francoski buldog lahko težje diha in se hitro pregreje, zlasti v toplem vremenu, zato potrebuje senco, vodo in mirne sprehode. PDSA družinam svetuje, naj razmislijo tudi o posvojitvi odraslega francoskega buldoga.",
+      ],
+      sources: ["S76", "S78", "S79", "S81", "S82"],
     },
   },
 };
