@@ -4,7 +4,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 /** "a Border Collie", "an Akita". */
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
-const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 4: "dachshunds", 6: "scent hounds and related breeds", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
+const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 3: "terriers", 4: "dachshunds", 6: "scent hounds and related breeds", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
 const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba" };
 
 const en: RegistryCopy = {
@@ -239,6 +239,10 @@ const en: RegistryCopy = {
     kneecap_luxation: "Luxating patellas, where the kneecap temporarily slips out of place, occur in the breed.",
     pra_and_eyelashes: "Eye problems occur in the breed: progressive retinal atrophy, which can slowly lead to blindness, and extra eyelashes that rub on the eye (distichiasis); breeders are advised to have the parents' eyes tested.",
     liver_shunt: "A portosystemic (liver) shunt, where blood bypasses the liver, can occur in the breed.",
+    skin_allergies: "Skin allergies are a known concern in the breed; The Royal Kennel Club asks judges to look for signs of skin inflammation, and owners are advised to ask their vet before choosing a shampoo.",
+    westie_lung: "A lung disease known as \"Westie lung\" (idiopathic pulmonary fibrosis), which makes breathing harder, can occur in the breed, mostly in older dogs.",
+    jaw_bone_disorder: "An inherited bone disorder of the jaw can occur in the breed.",
+    dry_eye: "Dry eye, where the eyes do not make enough tears and become dry and painful, can occur in the breed.",
   },
   page: {
     eyebrow: "Animal register",
@@ -392,6 +396,14 @@ const en: RegistryCopy = {
         "Its standard calls it affectionate, playful and even a bit of a clown, and says it loves children and plays endlessly with them; UK sources call it an excellent family pet given the right socialisation, and easy to train. It needs about 30 minutes of exercise a day, can live in a flat, and does not shed — but its long coat needs grooming every day to prevent knots and tangles.",
       ],
       sources: ["S136", "S138", "S140"],
+    },
+    west_highland_white_terrier: {
+      aka: "Westie",
+      text: [
+        "The West Highland White Terrier, or Westie, is a small terrier from Great Britain. Its standard describes a strongly built little dog with a deep chest, a level back and a harsh double coat about 5 cm long, small erect pointed ears and dark eyes set under heavy eyebrows. White is the only colour the standard allows.",
+        "Its standard calls it alert, gay, courageous and self-reliant but friendly. UK sources call it an affectionate, playful family pet for children of any age, with play always supervised; it needs about an hour of exercise a day, can live in a flat, sheds, and needs brushing a few times a week. Because of its prey drive it should not live with smaller pets, and it does not like being left alone. Skin is a known concern: The Royal Kennel Club asks judges to look for signs of skin inflammation in the breed.",
+      ],
+      sources: ["S142", "S144", "S146", "S147"],
     },
   },
 };
