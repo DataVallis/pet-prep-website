@@ -12,7 +12,7 @@ function form(n: number, one: string, two: string, few: string, many: string): s
 type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
-const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
+const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 6: "goniči, krvosledniki in sorodne pasme", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
 const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija" };
 
 const sl: RegistryCopy = {
@@ -237,6 +237,8 @@ const sl: RegistryCopy = {
     heart_valve_disease: "Bolezen srca zaradi oslabljene mitralne zaklopke je pri tej pasmi velika težava; pogosto jo najprej opazijo kot srčni šum, zato naj imajo psi za vzrejo najprej pregledano srce.",
     chiari_syringomyelia: "Pri pasmi se pojavljata Chiarijeva malformacija in siringomielija, boleča bolezen z votlinicami, polnimi tekočine, v hrbtenjači ob možganih; povezana je z obliko lobanje, ugotovijo jo z MRI.",
     eye_conditions: "Pri pasmi se pojavljajo dedne bolezni oči, na primer siva mrena, izbuljene ali razdražene oči pa so opozorilo pri presoji; na voljo so pregledi oči in testi DNK.",
+    epilepsy: "Pri pasmi se pojavlja epilepsija, bolezen možganov, ki lahko povzroči napade.",
+    back_disc_disease: "Pri pasmi se pojavlja bolezen medvretenčnih ploščic, ki blažijo stik med vretenci hrbtenice.",
   },
   page: {
     eyebrow: "Register živali",
@@ -351,6 +353,14 @@ const sl: RegistryCopy = {
         "Potrebuje okoli eno uro gibanja na dan, lahko živi v stanovanju in velja za dobrega z otroki, a naj bo igra pod nadzorom in ne mara biti sam. Dlako je treba česati večkrat na teden. Britanski viri kot glavni zdravstveni težavi navajajo bolezen srčne zaklopke in bolečo bolezen hrbtenjače, povezano z obliko lobanje, zato vzrediteljem svetujejo pregled srca in MRI psov.",
       ],
       sources: ["S103", "S105", "S106", "S108", "S110"],
+    },
+    beagle: {
+      aka: "beagle",
+      text: [
+        "Bigl je majhen gonič iz Velike Britanije, vzrejen za lov na zajce po sledi. Standard ga opisuje kot čvrstega, kompaktnega, veselega goniča — pogumnega, živahnega in pozornega, prijaznega, brez napadalnosti in plašnosti — s kratko, gosto dlako v barvah goničev, na primer tribarvno, rjavo-belo ali limonasto-belo, in vedno z belo konico repa.",
+        "Potrebuje do približno eno uro gibanja na dan in se, če ga od mladega dobro socializirate, zelo dobro znajde v družini, a naj bo ob otrocih pod nadzorom in naj ne ostaja sam, ker takrat laja in lahko grize stvari. Kratko dlako je dovolj krtačiti enkrat na teden, a izpada. Šolanje začnite zgodaj in z nagradami. Britanski veterinarji pri biglih najpogosteje zabeležijo prekomerno težo in bolezni zob, zato pazite na obroke in zobe.",
+      ],
+      sources: ["S111", "S113", "S115", "S116"],
     },
   },
 };
