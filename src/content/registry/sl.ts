@@ -271,8 +271,8 @@ const sl: RegistryCopy = {
     updated: "Posodobljeno",
     glanceTitle: "Na kratko",
     glanceNote: "Ključna dejstva iz virov na dnu strani. Kjer se viri razlikujejo, je navedena vsaka vrednost.",
-    portraitAlt: (name) => `${name} — ilustracija (AI)`,
-    portraitCaption: "Ilustracija, ustvarjena z AI",
+    portraitAlt: { ai_photo: (name) => `${name} — fotografija (AI)`, ai_illustration: (name) => `${name} — ilustracija (AI)` },
+    portraitCaption: { ai_photo: "Fotografija, ustvarjena z AI", ai_illustration: "Ilustracija, ustvarjena z AI" },
     qa: {
       title: "Vprašanja in odgovori",
       intro: "Odgovori temeljijo samo na dejstvih z viri s te strani; vsak odgovor navaja svoje vire.",

@@ -262,8 +262,8 @@ const en: RegistryCopy = {
     updated: "Updated",
     glanceTitle: "At a glance",
     glanceNote: "Key facts from the sources at the bottom of the page. Where sources differ, each value is listed.",
-    portraitAlt: (name) => `${name} — illustration (AI)`,
-    portraitCaption: "AI-generated illustration",
+    portraitAlt: { ai_photo: (name) => `${name} — photo (AI)`, ai_illustration: (name) => `${name} — illustration (AI)` },
+    portraitCaption: { ai_photo: "AI-generated photo", ai_illustration: "AI-generated illustration" },
     qa: {
       title: "Questions and answers",
       intro: "Answered only from the sourced facts on this page; every answer names its sources.",

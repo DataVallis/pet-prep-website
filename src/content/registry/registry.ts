@@ -72,7 +72,7 @@ export type Breed = {
   /**
    * Optional fields the website reads when the export provides them (absent today):
    * `updated` — ISO date of the breed's last content change (else the register date);
-   * `portrait` — an AI illustration at public/animals/<species EN slug>/<file>;
+   * `portrait` — an AI-generated photo (older exports: illustration) at public/animals/<species EN slug>/<file>;
    * `same_as` — authority URLs for the breed (Wikidata / Wikipedia), JSON-LD only.
    */
   updated?: string;
@@ -80,7 +80,10 @@ export type Breed = {
   same_as?: string[];
 };
 
-export type Portrait = { file: string; width: number; height: number; kind: "ai_illustration" };
+/** `ai_photo` = realistic AI photo (David 2026-10-10, M5-R11-05); `ai_illustration` = older exports, still read. */
+export type PortraitKind = "ai_photo" | "ai_illustration";
+
+export type Portrait = { file: string; width: number; height: number; kind: PortraitKind };
 
 export type Species = {
   id: string;

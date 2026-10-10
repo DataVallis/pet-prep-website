@@ -3,6 +3,8 @@
  * whatever species, fact groups, fields, facets and game rules the registry contains and looks
  * up their words here. A registry value without words here fails the build (see validate()).
  */
+import type { PortraitKind } from "@/content/registry/registry";
+
 export type Fmt = {
   /** 1234.5 → "1,234.5" / "1.234,5". */
   num: (n: number, digits?: number) => string;
@@ -128,8 +130,9 @@ export type RegistryCopy = {
     updated: string;
     glanceTitle: string;
     glanceNote: string;
-    portraitAlt: (name: string) => string;
-    portraitCaption: string;
+    /** per portrait kind: "ai_photo" (current) or "ai_illustration" (older exports) */
+    portraitAlt: Record<PortraitKind, (name: string) => string>;
+    portraitCaption: Record<PortraitKind, string>;
     /** Generated questions and answers (only from sourced facts). */
     qa: {
       title: string;
