@@ -15,7 +15,8 @@ export type RegistryCopy = {
     title: string;
     intro: string;
     breedCount: (n: number) => string;
-    open: (speciesMany: string) => string;
+    open: string;
+    openA11y: (speciesMany: string) => string;
     freePlan: (name: string, activity: string) => string;
     otherSpecies: string;
     methodTitle: string;

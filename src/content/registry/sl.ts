@@ -21,7 +21,8 @@ const sl: RegistryCopy = {
     intro:
       "Kaj vsaka vrsta in pasma v PetPrep res potrebuje — iz kinoloških zvez, mačjih zvez, veterinarskih dobrodelnih organizacij in raziskav, z vsemi viri. In pravila, po katerih jo PetPrep simulira.",
     breedCount: (n) => `${n} ${form(n, "pasma", "pasmi", "pasme", "pasem")} v registru`,
-    open: (many) => `Vse ${many.toLowerCase()}`,
+    open: "Poglej pasme",
+    openA11y: (many) => `Poglej pasme: ${many.toLowerCase()}`,
     freePlan: (name, activity) => `Brezplačni plan: ${name.toLowerCase()} (odrasla žival: ${activity}). Nima strani v registru.`,
     otherSpecies: "Druge živali so v načrtu.",
     methodTitle: "Kako nastaja ta register",

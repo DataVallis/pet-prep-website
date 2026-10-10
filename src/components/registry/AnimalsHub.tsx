@@ -28,8 +28,8 @@ export function AnimalsHub({ locale }: { locale: Locale }) {
               </h2>
               <p className="text-[17px] font-medium">{c.hub.breedCount(sp.breed_count)}</p>
               <p className="text-[15px] leading-relaxed text-muted">{c.hub.freePlan(sp.free_plan.name[locale], activityText(locale, sp.free_plan.adult_activity))}</p>
-              <Link href={speciesHref(locale, sp)} className="btn btn-secondary mt-auto self-start">
-                {c.hub.open(sp.name[locale].many)} <span aria-hidden="true">→</span>
+              <Link href={speciesHref(locale, sp)} className="btn btn-secondary mt-auto self-start" aria-label={c.hub.openA11y(sp.name[locale].many)}>
+                {c.hub.open} <span aria-hidden="true">→</span>
               </Link>
             </li>
           ))}

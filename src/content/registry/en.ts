@@ -13,7 +13,8 @@ const en: RegistryCopy = {
     intro:
       "What each species and breed in PetPrep really needs — from kennel clubs, cat registries, veterinary charities and studies, with every source linked. Plus the rules PetPrep uses to simulate it.",
     breedCount: (n) => `${n} ${s(n, "breed", "breeds")} in the register`,
-    open: (many) => `See all ${many.toLowerCase()}`,
+    open: "See breeds",
+    openA11y: (many) => `See breeds: ${many.toLowerCase()}`,
     freePlan: (name, activity) => `Free plan: ${name.toLowerCase()} (${activity} as an adult). It has no breed page.`,
     otherSpecies: "More animals are planned.",
     methodTitle: "How we build this register",
