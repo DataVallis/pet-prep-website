@@ -139,9 +139,9 @@ const sl: RegistryCopy = {
   categories: {
     size: { toy: "zelo majhen", small: "majhen", medium: "srednje velik", large: "velik", giant: "zelo velik" },
     coat: { moderately_long: "zmerno dolga", smooth: "gladka (kratka)", short: "kratka", medium: "srednje dolga", short_long: "kratka ali dolga (dve različici dlake)" },
-    grooming_frequency: { once_a_week: "enkrat na teden", more_than_once_a_week: "večkrat na teden", daily: "vsak dan" },
+    grooming_frequency: { once_a_week: "enkrat na teden", more_than_once_a_week: "večkrat na teden", daily: "vsak dan", every_day: "vsak dan" },
     grooming_level: { moderate: "zmerne", high: "velike", low: "majhne" },
-    shedding: { yes: "dlaka izpada", high: "dlaka močno izpada", moderate: "dlaka zmerno izpada", low: "dlaka malo izpada", minimal: "dlaka zelo malo izpada" },
+    shedding: { yes: "dlaka izpada", no: "dlaka ne izpada (to ne pomeni, da je hipoalergen)", high: "dlaka močno izpada", moderate: "dlaka zmerno izpada", low: "dlaka malo izpada", minimal: "dlaka zelo malo izpada" },
   },
   statements: {
     food_motivated: () => "Hrana ga močno motivira — to pomaga pri šolanju, a pazite na količino.",
@@ -214,7 +214,7 @@ const sl: RegistryCopy = {
         : p.multiplier === 1
           ? "Ukaze se uči enako hitro kot mešanček iz brezplačnega plana."
           : `Ukaze se uči ${f.num(p.multiplier)}-krat hitreje kot mešanček iz brezplačnega plana.`,
-    senior_share: (p, f) => `Starejši pes postane v ${p.months}. mesecu (${f.num(p.months / 12, 1)} leta) — v zadnji četrtini mediane življenjske dobe pasme.`,
+    senior_share: (p, f) => `Starejši pes postane v ${p.months}. mesecu (${f.num(p.months / 12, 1)} ${form(p.months / 12, "leto", "leti", "leta", "let")}) — v zadnji četrtini pričakovane življenjske dobe pasme.`,
     walk_sensor: () => "Sprehodi štejejo prave korake s senzorja gibanja v telefonu — brez GPS.",
     play_instead_of_steps: (p, f) =>
       `Brez sprehodov: odrasla mačka potrebuje ${p.sessions} ${form(p.sessions, "igro", "igri", "igre", "iger")} na dan s palico z vabo, vsaj ${f.num(p.gap_minutes / 60)} ${form(p.gap_minutes / 60, "uro", "uri", "ure", "ur")} narazen.`,
@@ -239,6 +239,9 @@ const sl: RegistryCopy = {
     eye_conditions: "Pri pasmi se pojavljajo dedne bolezni oči, na primer siva mrena, izbuljene ali razdražene oči pa so opozorilo pri presoji; na voljo so pregledi oči in testi DNK.",
     epilepsy: "Pri pasmi se pojavlja epilepsija, bolezen možganov, ki lahko povzroči napade.",
     back_disc_disease: "Pri pasmi se pojavlja bolezen medvretenčnih ploščic, ki blažijo stik med vretenci hrbtenice.",
+    pra_eye_disease: "Pri pasmi se pojavlja progresivna atrofija mrežnice, dedna bolezen oči, ki lahko počasi vodi v slepoto; na voljo so DNK testi in pregledi oči.",
+    hip_dysplasia: "Pri pasmi se pojavlja displazija kolkov, slabo razvit kolčni sklep, ki lahko vodi v artrozo; vzrediteljem svetujejo pregled kolkov staršev.",
+    bloat_gdv: "Pri pasmi se lahko pojavi zasuk želodca (napihnjenost, GDV) — to je nujno stanje, ki takoj potrebuje veterinarja.",
   },
   page: {
     eyebrow: "Register živali",
@@ -361,6 +364,14 @@ const sl: RegistryCopy = {
         "Potrebuje do približno eno uro gibanja na dan in se, če ga od mladega dobro socializirate, zelo dobro znajde v družini, a naj bo ob otrocih pod nadzorom in naj ne ostaja sam, ker takrat laja in lahko grize stvari. Kratko dlako je dovolj krtačiti enkrat na teden, a izpada. Šolanje začnite zgodaj in z nagradami. Britanski veterinarji pri biglih najpogosteje zabeležijo prekomerno težo in bolezni zob, zato pazite na obroke in zobe.",
       ],
       sources: ["S111", "S113", "S115", "S116"],
+    },
+    standard_poodle: {
+      aka: "standardni pudelj, poodle",
+      text: [
+        "Veliki pudelj je največja od štirih velikosti pudlja, pes za družbo iz Francije, ki izhaja iz evropskih psov za lov na race. Standard ga opisuje kot elegantnega, uravnoteženega psa ponosne drže — zvestega, veselega in dobrodušnega, učljivega — z bogato, kodrasto dlako ene same barve: črne, bele, rjave, sive ali plave (fawn).",
+        "Potrebuje do približno eno uro gibanja na dan in mu ustreza velika hiša z velikim vrtom. Če ga kot mladička dobro socializirate, se z otroki in drugimi ljubljenčki praviloma dobro razume. Dlaka mu ne izpada, a zato ni hipoalergen: potrebuje vsakodnevno česanje in redno striženje pri pasjem frizerju. Znan je kot zelo ubogljiv pes, ki se dobro uči.",
+      ],
+      sources: ["S118", "S120", "S121", "S122"],
     },
   },
 };

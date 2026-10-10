@@ -131,9 +131,9 @@ const en: RegistryCopy = {
   categories: {
     size: { toy: "toy", small: "small", medium: "medium", large: "large", giant: "giant" },
     coat: { moderately_long: "moderately long", smooth: "smooth (short)", short: "short", medium: "medium length", short_long: "short or long (two coat varieties)" },
-    grooming_frequency: { once_a_week: "once a week", more_than_once_a_week: "more than once a week", daily: "daily" },
+    grooming_frequency: { once_a_week: "once a week", more_than_once_a_week: "more than once a week", daily: "daily", every_day: "every day" },
     grooming_level: { moderate: "moderate", high: "high", low: "low" },
-    shedding: { yes: "sheds", high: "sheds a lot", moderate: "sheds moderately", low: "sheds little", minimal: "sheds minimally" },
+    shedding: { yes: "sheds", no: "does not shed (not the same as hypoallergenic)", high: "sheds a lot", moderate: "sheds moderately", low: "sheds little", minimal: "sheds minimally" },
   },
   statements: {
     food_motivated: () => "Strongly motivated by food — helpful in training, but watch the portions.",
@@ -205,7 +205,7 @@ const en: RegistryCopy = {
         : p.multiplier === 1
           ? "Learns commands as fast as the mixed breed of the free plan."
           : `Learns commands ${f.num(p.multiplier)}× as fast as the mixed breed of the free plan.`,
-    senior_share: (p, f) => `Becomes a senior in month ${p.months} (${f.num(p.months / 12, 1)} years) — the last quarter of the breed's median lifespan.`,
+    senior_share: (p, f) => `Becomes a senior in month ${p.months} (${f.num(p.months / 12, 1)} years) — the last quarter of the breed's expected lifespan.`,
     walk_sensor: () => "Walks count real steps from the phone's motion sensor — no GPS.",
     play_instead_of_steps: (p, f) =>
       `No walks: an adult cat needs ${p.sessions} play sessions a day with a wand toy, at least ${f.num(p.gap_minutes / 60)} hours apart.`,
@@ -230,6 +230,9 @@ const en: RegistryCopy = {
     eye_conditions: "Inherited eye conditions such as cataracts occur in the breed, and protruding or irritated eyes are a point of concern; eye testing and DNA tests are available.",
     epilepsy: "Epilepsy, a brain disorder that can cause seizures, occurs in the breed.",
     back_disc_disease: "Intervertebral disc disease, a problem with the cushioning discs between the bones of the back, occurs in the breed.",
+    pra_eye_disease: "Progressive retinal atrophy, an inherited eye disease that can slowly lead to blindness, occurs in the breed; DNA tests and eye testing are available.",
+    hip_dysplasia: "Hip dysplasia, a poorly developed hip joint that can lead to arthritis, occurs in the breed; breeders are advised to have the parents' hips scored.",
+    bloat_gdv: "Bloat (gastric dilatation-volvulus), where the stomach twists, can occur in the breed — it is an emergency that needs a vet straight away.",
   },
   page: {
     eyebrow: "Animal register",
@@ -351,6 +354,14 @@ const en: RegistryCopy = {
         "It needs up to about an hour of exercise a day and suits family life well if it is socialised from a young age, though it should be supervised with children and not left alone, when it may bark and chew things. Its short coat needs a weekly brush but it sheds. Training should start early and use rewards. UK vets most often see Beagles for weight gain and dental disease, so portions and teeth need watching.",
       ],
       sources: ["S111", "S113", "S115", "S116"],
+    },
+    standard_poodle: {
+      aka: "Standard Poodle",
+      text: [
+        "The Standard Poodle is the largest of the four Poodle sizes, a companion breed from France descended from European duck hunters. Its standard describes an elegant, well-balanced dog with a proud carriage — loyal, gay-spirited and good-tempered, capable of learning and being trained — with a profuse, frizzy curly coat in one solid colour: black, white, brown, grey or fawn.",
+        "It needs up to about an hour of exercise a day and suits a large house with a large garden. Given the right socialisation as a puppy it generally gets on well with children and other pets. Its coat does not shed, but that does not make it hypoallergenic: it needs daily grooming and regular clipping by a professional groomer. It is known for being very obedient and responding well to training.",
+      ],
+      sources: ["S118", "S120", "S121", "S122"],
     },
   },
 };
