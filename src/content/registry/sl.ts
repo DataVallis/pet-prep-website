@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 4: "jazbečarji", 6: "goniči, krvosledniki in sorodne pasme", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -242,6 +242,9 @@ const sl: RegistryCopy = {
     pra_eye_disease: "Pri pasmi se pojavlja progresivna atrofija mrežnice, dedna bolezen oči, ki lahko počasi vodi v slepoto; na voljo so DNK testi in pregledi oči.",
     hip_dysplasia: "Pri pasmi se pojavlja displazija kolkov, slabo razvit kolčni sklep, ki lahko vodi v artrozo; vzrediteljem svetujejo pregled kolkov staršev.",
     bloat_gdv: "Pri pasmi se lahko pojavi zasuk želodca (napihnjenost, GDV) — to je nujno stanje, ki takoj potrebuje veterinarja.",
+    inherited_eye_disease: "Pri pasmi se pojavljajo dedne bolezni oči, na primer anomalija očesa škotskih ovčarjev (CEA), siva mrena in progresivna atrofija mrežnice.",
+    drug_sensitivity_mdr1: "Nekateri psi te pasme so dedno občutljivi na nekatera zdravila (MDR1) — če je vaš pes občutljiv, to povejte veterinarju.",
+    merle_to_merle_breeding: "Merle je pri tej pasmi barva iz standarda; dveh psov merle pa ne smemo pariti med seboj, ker imajo takšni mladiči večje tveganje za okvare vida in sluha — The Royal Kennel Club jih ne registrira.",
   },
   page: {
     eyebrow: "Register živali",
@@ -380,6 +383,14 @@ const sl: RegistryCopy = {
         "Potrebuje do približno eno uro gibanja na dan, razdeljeno na nekaj sprehodov s časom za vohanje, in mu ustreza majhna hiša. Ljudi ima rad in se z otroki vseh starosti praviloma dobro razume, vedno pod nadzorom; zaradi močnega lovskega nagona pa ga ne priporočajo k manjšim živalim, sam doma pa ne zdrži dobro. Zaradi dolgega hrbta in kratkih nog je nagnjen k zdrsu diska, zato naj ne skače; vzrediteljem svetujejo pregled hrbtenice pred parjenjem.",
       ],
       sources: ["S124", "S125", "S126", "S127", "S129"],
+    },
+    australian_shepherd: {
+      aka: "aussie, avstralski ovcar",
+      text: [
+        "Avstralski ovčar je kljub imenu ameriška pasma — inteligenten delovni pes z močnim pastirskim in čuvajskim nagonom. Standard ga opisuje kot uravnoteženega psa srednje velikosti, nekoliko daljšega kot visokega, dobrodušnega in ob prvem srečanju včasih zadržanega, s srednje dolgo, ravno do valovito dlako modre merle, črne, rdeče merle ali rdeče barve, z belimi in porjavelimi oznakami ali brez njih.",
+        "Potrebuje več kot dve uri gibanja na dan in miselne izzive, kot so igre z ugankami in šolanje, ustreza pa mu velika hiša z velikim vrtom na podeželju. V pravem domu je lahko res dober družinski pes, a zaradi močnega pastirskega nagona rad »pase« otroke, zato ga ne priporočajo družinam z manjšimi otroki. Sam doma ne zdrži rad, dlako pa je treba ščetkati nekajkrat na teden.",
+      ],
+      sources: ["S131", "S133", "S134"],
     },
   },
 };
