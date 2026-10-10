@@ -1,22 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
-
-/** One row of the slim catalogue index (/registry/<species>/index.<locale>.json). */
-type Item = {
-  id: string;
-  n: string;
-  a: string;
-  s: string;
-  h: string;
-  k: string;
-  av: "in_app" | "coming_soon" | "info_only";
-  o: number;
-  f: Record<string, string>;
-  t: string[];
-  l: string;
-};
+import { PAGE_SIZE, recommendedOrder, type Item } from "./catalogue-shared";
 
 type Option = { value: string; label: string };
 
@@ -24,9 +11,16 @@ export type ExplorerProps = {
   locale: "en" | "sl";
   indexUrl: string;
   compareHref: string;
+  /** First results page in the default order, rendered on the server (crawlable rows, no layout shift). */
+  initial: Item[];
+  /** Number of breeds of the species (the full index is fetched only when it is larger than `initial`). */
+  total: number;
+  /** Only options that occur in the data (worked out on the server). */
   facets: { key: string; label: string; options: Option[] }[];
   tags: Option[];
   availability: Option[];
+  /** Availability values to offer as a filter (more than one present). */
+  availabilityFilter: Option[];
   strings: {
     searchLabel: string;
     searchPlaceholder: string;
@@ -51,14 +45,8 @@ export type ExplorerProps = {
   };
 };
 
-/** true in the browser, false in the static HTML (so nothing shows without JavaScript). */
-const noop = () => () => {};
-const useIsClient = () => useSyncExternalStore(noop, () => true, () => false);
-
-const PAGE_SIZE = 24;
 const COMPARE_MAX = 3;
 const SIZE_ORDER = ["toy", "small", "medium", "large", "giant"];
-const AV_ORDER = { in_app: 0, coming_soon: 1, info_only: 2 } as const;
 
 const norm = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 const fill = (t: string, v: Record<string, string | number>) => t.replace(/\{(\w+)\}/g, (_, k: string) => String(v[k] ?? ""));
@@ -66,8 +54,9 @@ const fill = (t: string, v: Record<string, string | number>) => t.replace(/\{(\w
 type State = { q: string; tags: string[]; facets: Record<string, string>; av: string; sort: "recommended" | "az" | "size"; page: number; picked: string[] };
 const EMPTY: State = { q: "", tags: [], facets: {}, av: "", sort: "recommended", page: 1, picked: [] };
 
-function readUrl(facetKeys: string[]): State {
-  const p = new URLSearchParams(window.location.search);
+function parseQuery(search: string, facetKeys: string[]): State {
+  if (!search) return EMPTY;
+  const p = new URLSearchParams(search);
   const list = (k: string) => (p.get(k) ?? "").split(",").filter(Boolean);
   const sort = p.get("sort");
   const facets: Record<string, string> = {};
@@ -96,29 +85,40 @@ function writeUrl(s: State) {
   window.history.replaceState(window.history.state, "", `${window.location.pathname}${qs ? `?${qs}` : ""}${window.location.hash}`);
 }
 
+/** The query string as an external store: "" in the server HTML, the real one after hydration. */
+const noop = () => () => {};
+const useSearch = () => useSyncExternalStore(noop, () => window.location.search, () => "");
+
+const hasFilters = (s: State) => s.tags.length > 0 || Object.values(s.facets).some(Boolean) || Boolean(s.av);
+
 /**
- * Search, filters, sort, pagination and "pick up to 3 to compare" for one species. Renders only
- * in the browser (it loads the slim index); without JavaScript the page shows the plain A–Z list.
+ * Search, filters, sort, pagination and "pick up to 3 to compare" for one species.
+ * The server renders the controls and the first results page as plain links (same markup the
+ * browser hydrates, so nothing moves); the full slim index is fetched only when there are more
+ * breeds than fit on the first page. Without JavaScript the rows and the A–Z list still work.
  */
-export function CatalogueExplorer({ locale, indexUrl, compareHref, facets, tags, availability, strings }: ExplorerProps) {
-  const isClient = useIsClient();
-  const [items, setItems] = useState<Item[] | null>(null);
+export function CatalogueExplorer({ locale, indexUrl, compareHref, initial, total, facets, tags, availability, availabilityFilter, strings }: ExplorerProps) {
+  const complete = initial.length >= total;
+  const [fetched, setFetched] = useState<Item[] | null>(null);
   const [failed, setFailed] = useState(false);
-  const [state, setState] = useState<State | null>(null);
-  /** Filters start open on wide screens; on phones they fold into one "Filters" row. */
-  const [filtersOpen, setFiltersOpen] = useState(true);
+  const items = complete ? initial : fetched;
   const facetKeys = useMemo(() => facets.map((f) => f.key), [facets]);
+  const search = useSearch();
+  const fromUrl = useMemo(() => parseQuery(search, facetKeys), [search, facetKeys]);
+  /** Local changes after the first render; until then the state comes from the URL. */
+  const [local, setLocal] = useState<State | null>(null);
+  const state = local ?? fromUrl;
+  /** Filters fold into one row on phones (CSS); open there when the URL already filters. */
+  const [filtersToggled, setFiltersToggled] = useState<boolean | null>(null);
+  const filtersOpen = filtersToggled ?? hasFilters(fromUrl);
 
   useEffect(() => {
+    if (complete) return;
     let cancelled = false;
     fetch(indexUrl)
       .then((r) => (r.ok ? (r.json() as Promise<Item[]>) : Promise.reject(new Error(String(r.status)))))
       .then((data) => {
-        if (cancelled) return;
-        const s = readUrl(facetKeys);
-        setState(s);
-        setFiltersOpen(window.matchMedia("(min-width: 768px)").matches || s.tags.length > 0 || Object.values(s.facets).some(Boolean) || Boolean(s.av));
-        setItems(data);
+        if (!cancelled) setFetched(data);
       })
       .catch(() => {
         if (!cancelled) setFailed(true);
@@ -126,18 +126,21 @@ export function CatalogueExplorer({ locale, indexUrl, compareHref, facets, tags,
     return () => {
       cancelled = true;
     };
-  }, [indexUrl, facetKeys]);
+  }, [indexUrl, complete]);
 
-  const update = useCallback((patch: Partial<State>, keepPage = false) => {
-    setState((cur) => {
-      const next = { ...(cur ?? EMPTY), ...patch, ...(keepPage ? {} : { page: 1 }) };
-      writeUrl(next);
-      return next;
-    });
-  }, []);
+  const update = useCallback(
+    (patch: Partial<State>, keepPage = false) => {
+      setLocal((cur) => {
+        const next = { ...(cur ?? fromUrl), ...patch, ...(keepPage ? {} : { page: 1 }) };
+        writeUrl(next);
+        return next;
+      });
+    },
+    [fromUrl],
+  );
 
   const filtered = useMemo(() => {
-    if (!items || !state) return [];
+    if (!items) return null;
     const tokens = norm(state.q).split(/\s+/).filter(Boolean);
     const out = items.filter(
       (it) =>
@@ -150,26 +153,20 @@ export function CatalogueExplorer({ locale, indexUrl, compareHref, facets, tags,
     const byName = (a: Item, b: Item) => collator.compare(a.n, b.n);
     if (state.sort === "az") out.sort(byName);
     else if (state.sort === "size") out.sort((a, b) => (SIZE_ORDER.indexOf(a.f.size ?? "") + 1 || 99) - (SIZE_ORDER.indexOf(b.f.size ?? "") + 1 || 99) || byName(a, b));
-    else out.sort((a, b) => AV_ORDER[a.av] - AV_ORDER[b.av] || a.o - b.o);
+    else out.sort(recommendedOrder);
     return out;
   }, [items, state, locale]);
 
-  if (!isClient || failed) return null; // without JS or data the A–Z list below still works
-  if (!items || !state) return <p className="text-sm text-muted" role="status">{strings.loading}</p>;
-
-  // Only offer options that exist in the data.
-  const presentTags = tags.filter((t) => items.some((it) => it.t.includes(t.value)));
-  const presentFacets = facets
-    .map((f) => ({ ...f, options: f.options.filter((o) => items.some((it) => it.f[f.key] === o.value)) }))
-    .filter((f) => f.options.length > 1);
-  const presentAv = availability.filter((o) => items.some((it) => it.av === o.value));
-
-  const pages = Math.max(1, Math.ceil(filtered.length / PAGE_SIZE));
-  const page = Math.min(state.page, pages);
-  const shown = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+  // Until the full index is here (large species only), show the server's first page.
+  const list = filtered ?? initial;
+  const count = filtered ? filtered.length : total;
+  const pages = Math.max(1, Math.ceil(count / PAGE_SIZE));
+  const page = filtered ? Math.min(state.page, pages) : 1;
+  const shown = filtered ? list.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE) : initial;
   const activeCount = state.tags.length + Object.values(state.facets).filter(Boolean).length + (state.av ? 1 : 0);
   const active = state.q || activeCount;
-  const pickedNames = state.picked.map((k) => items.find((it) => it.k === k)?.n).filter(Boolean);
+  const pickedNames = state.picked.map((k) => (items ?? initial).find((it) => it.k === k)?.n).filter(Boolean);
+  const ready = Boolean(items) && !failed;
   const goPage = (n: number) => {
     update({ page: n }, true);
     document.getElementById("catalogue-results")?.scrollIntoView({ block: "start" });
@@ -204,74 +201,83 @@ export function CatalogueExplorer({ locale, indexUrl, compareHref, facets, tags,
           </label>
         </div>
 
-        <details
-          open={filtersOpen}
-          onToggle={(e) => setFiltersOpen((e.currentTarget as HTMLDetailsElement).open)}
-          className="group flex flex-col gap-3"
-        >
-          <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between rounded-xl bg-fog px-3 text-[15px] font-semibold md:hidden [&::-webkit-details-marker]:hidden">
-            <span>
-              {strings.filtersTitle}
-              {activeCount ? ` (${activeCount})` : ""}
-            </span>
-            <span aria-hidden="true" className="transition-transform group-open:rotate-180">⌄</span>
-          </summary>
-        <fieldset className="mt-3 flex flex-col gap-3 md:mt-0">
-          <legend className="sr-only">{strings.filtersTitle}</legend>
-          {presentTags.length ? (
-            <div role="group" aria-label={strings.suitsTitle} className="flex flex-wrap items-center gap-2">
-              <span className="mr-1 text-sm font-semibold">{strings.suitsTitle}</span>
-              {presentTags.map((t) => {
-                const on = state.tags.includes(t.value);
-                return (
-                  <button
-                    key={t.value}
-                    type="button"
-                    aria-pressed={on}
-                    onClick={() => update({ tags: on ? state.tags.filter((x) => x !== t.value) : [...state.tags, t.value] })}
-                    className={`min-h-10 rounded-full px-3.5 py-1.5 text-sm font-medium ring-1 ${on ? "bg-graphite text-white ring-graphite" : "bg-white ring-line hover:ring-graphite"}`}
-                  >
-                    {on ? <span aria-hidden="true">✓ </span> : null}
-                    {t.label}
-                  </button>
-                );
-              })}
-            </div>
-          ) : null}
-          <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
-            {presentFacets.map((f) => (
-              <label key={f.key} className="flex flex-col gap-1.5">
-                <span className="text-sm font-semibold">{f.label}</span>
-                <select value={state.facets[f.key] ?? ""} onChange={(e) => update({ facets: { ...state.facets, [f.key]: e.target.value } })} className={selectCls}>
-                  <option value="">{strings.any}</option>
-                  {f.options.map((o) => (
-                    <option key={o.value} value={o.value}>
-                      {o.label}
-                    </option>
+        {tags.length || facets.length || availabilityFilter.length ? (
+          <div className="flex flex-col gap-3">
+            {/* Phones: one "Filters" row that folds the filters. Wider screens: always open (CSS only, so the server HTML matches). */}
+            <button
+              type="button"
+              aria-expanded={filtersOpen}
+              aria-controls="catalogue-filters"
+              onClick={() => setFiltersToggled(!filtersOpen)}
+              className="flex min-h-11 w-full items-center justify-between rounded-xl bg-fog px-3 text-[15px] font-semibold md:hidden"
+            >
+              <span>
+                {strings.filtersTitle}
+                {activeCount ? ` (${activeCount})` : ""}
+              </span>
+              <span aria-hidden="true" className={`transition-transform ${filtersOpen ? "rotate-180" : ""}`}>
+                ⌄
+              </span>
+            </button>
+            <fieldset id="catalogue-filters" className={`${filtersOpen ? "flex" : "hidden"} flex-col gap-3 md:flex`}>
+              <legend className="sr-only">{strings.filtersTitle}</legend>
+              {tags.length ? (
+                <div role="group" aria-label={strings.suitsTitle} className="flex flex-wrap items-center gap-2">
+                  <span className="mr-1 text-sm font-semibold">{strings.suitsTitle}</span>
+                  {tags.map((t) => {
+                    const on = state.tags.includes(t.value);
+                    return (
+                      <button
+                        key={t.value}
+                        type="button"
+                        aria-pressed={on}
+                        onClick={() => update({ tags: on ? state.tags.filter((x) => x !== t.value) : [...state.tags, t.value] })}
+                        className={`min-h-10 rounded-full px-3.5 py-1.5 text-sm font-medium ring-1 ${on ? "bg-graphite text-white ring-graphite" : "bg-white ring-line hover:ring-graphite"}`}
+                      >
+                        {on ? <span aria-hidden="true">✓ </span> : null}
+                        {t.label}
+                      </button>
+                    );
+                  })}
+                </div>
+              ) : null}
+              {facets.length || availabilityFilter.length ? (
+                <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+                  {facets.map((f) => (
+                    <label key={f.key} className="flex flex-col gap-1.5">
+                      <span className="text-sm font-semibold">{f.label}</span>
+                      <select value={state.facets[f.key] ?? ""} onChange={(e) => update({ facets: { ...state.facets, [f.key]: e.target.value } })} className={selectCls}>
+                        <option value="">{strings.any}</option>
+                        {f.options.map((o) => (
+                          <option key={o.value} value={o.value}>
+                            {o.label}
+                          </option>
+                        ))}
+                      </select>
+                    </label>
                   ))}
-                </select>
-              </label>
-            ))}
-            {presentAv.length > 1 ? (
-              <label className="flex flex-col gap-1.5">
-                <span className="text-sm font-semibold">{strings.availabilityLabel}</span>
-                <select value={state.av} onChange={(e) => update({ av: e.target.value })} className={selectCls}>
-                  <option value="">{strings.any}</option>
-                  {presentAv.map((o) => (
-                    <option key={o.value} value={o.value}>
-                      {o.label}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            ) : null}
+                  {availabilityFilter.length ? (
+                    <label className="flex flex-col gap-1.5">
+                      <span className="text-sm font-semibold">{strings.availabilityLabel}</span>
+                      <select value={state.av} onChange={(e) => update({ av: e.target.value })} className={selectCls}>
+                        <option value="">{strings.any}</option>
+                        {availabilityFilter.map((o) => (
+                          <option key={o.value} value={o.value}>
+                            {o.label}
+                          </option>
+                        ))}
+                      </select>
+                    </label>
+                  ) : null}
+                </div>
+              ) : null}
+            </fieldset>
           </div>
-        </fieldset>
-        </details>
+        ) : null}
 
-        <div className="flex flex-wrap items-center justify-between gap-2">
+        <div className="flex min-h-10 flex-wrap items-center justify-between gap-2">
           <p role="status" aria-live="polite" className="text-sm font-medium text-muted">
-            {filtered.length ? fill(strings.results, { n: filtered.length, total: items.length }) : strings.none}
+            {!filtered && active ? strings.loading : count ? fill(strings.results, { n: count, total }) : strings.none}
           </p>
           {active ? (
             <button type="button" onClick={() => update({ q: "", tags: [], facets: {}, av: "" })} className="min-h-10 px-2 text-sm font-semibold text-mint-text hover:underline">
@@ -297,6 +303,9 @@ export function CatalogueExplorer({ locale, indexUrl, compareHref, facets, tags,
                   title={full ? fill(strings.compareMax, { max: COMPARE_MAX }) : fill(strings.compareAdd, { name: it.n })}
                   className="mt-1 h-5 w-5 shrink-0 accent-[#121614] sm:mt-0"
                 />
+                {it.p ? (
+                  <Image src={it.p.src} width={48} height={Math.round((48 * it.p.h) / it.p.w)} alt="" loading="lazy" sizes="48px" className="h-12 w-12 shrink-0 rounded-xl bg-fog object-cover ring-1 ring-line" />
+                ) : null}
                 <div className="grid min-w-0 flex-1 gap-1 sm:grid-cols-[minmax(0,2fr)_minmax(0,3fr)_11.5rem] sm:items-center sm:gap-4">
                   <div className="min-w-0">
                     <Link href={it.h} className="font-display text-[17px] font-bold hover:text-mint-text">
@@ -321,11 +330,11 @@ export function CatalogueExplorer({ locale, indexUrl, compareHref, facets, tags,
 
       {pages > 1 ? (
         <nav aria-label={fill(strings.page, { n: page, total: pages })} className="flex flex-wrap items-center justify-between gap-3">
-          <button type="button" disabled={page <= 1} onClick={() => goPage(page - 1)} className="btn btn-secondary !min-h-11 !px-4 disabled:opacity-40">
+          <button type="button" disabled={page <= 1 || !ready} onClick={() => goPage(page - 1)} className="btn btn-secondary !min-h-11 !px-4 disabled:opacity-40">
             ← {strings.prev}
           </button>
           <span className="text-sm font-medium">{fill(strings.page, { n: page, total: pages })}</span>
-          <button type="button" disabled={page >= pages} onClick={() => goPage(page + 1)} className="btn btn-secondary !min-h-11 !px-4 disabled:opacity-40">
+          <button type="button" disabled={page >= pages || !ready} onClick={() => goPage(page + 1)} className="btn btn-secondary !min-h-11 !px-4 disabled:opacity-40">
             {strings.next} →
           </button>
         </nav>

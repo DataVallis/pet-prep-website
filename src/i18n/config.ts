@@ -26,6 +26,7 @@ export const pageSlugs = {
   terms: { en: "terms", sl: "pogoji" },
   childSafety: { en: "child-safety", sl: "varnost-otrok" },
   animals: { en: "animals", sl: "zivali" },
+  about: { en: "about", sl: "o-nas" },
 } as const satisfies Record<string, Record<Locale, string>>;
 
 export type PageKey = keyof typeof pageSlugs;
@@ -37,6 +38,10 @@ export function pathFor(locale: Locale, key: RouteKey): string {
   const prefix = locale === defaultLocale ? "" : `/${locale}`;
   if (key === "home") return prefix === "" ? "/" : prefix;
   return `${prefix}/${pageSlugs[key][locale]}`;
+}
+
+export function isPageKey(value: string): value is PageKey {
+  return (pageKeys as string[]).includes(value);
 }
 
 export function pageKeyFromSlug(locale: Locale, slug: string): PageKey | undefined {

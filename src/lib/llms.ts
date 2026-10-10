@@ -1,12 +1,24 @@
 import "server-only";
 import { locales, localeMeta, pageKeys, pathFor, type Locale } from "@/i18n/config";
-import { fillPlaceholders, getDictionary } from "@/content";
-import { registry } from "@/content/registry/registry";
-import { breedHref, breedMarkdown, getRegistryCopy, hubMarkdown, speciesHref } from "@/lib/registry/views";
+import { companyAddress, companyIds, fillPlaceholders, getDictionary } from "@/content";
+import { breedsOf, registry, type Species } from "@/content/registry/registry";
+import { markdownText } from "@/lib/links";
+import { breedHref, breedMarkdown, getRegistryCopy, hubMarkdown, speciesHref, speciesUpdated } from "@/lib/registry/views";
 import type { Block } from "@/content/types";
 import { absoluteUrl, site } from "@/lib/site";
 
+/** Per-species, per-language register files: /llms/<species id>.<locale>.txt (keeps /llms-full.txt small at ~300 breeds). */
+export const llmsSpeciesPath = (speciesId: string, locale: Locale) => `/llms/${speciesId}.${locale}.txt`;
+
 function blockToMarkdown(b: Block, locale: Locale): string {
+  const md = (t: string) => markdownText(locale, t, absoluteUrl);
+  return blockMarkdownRaw(b, locale)
+    .split("\n")
+    .map(md)
+    .join("\n");
+}
+
+function blockMarkdownRaw(b: Block, locale: Locale): string {
   const dict = getDictionary(locale);
   switch (b.type) {
     case "prose":
@@ -37,6 +49,8 @@ function blockToMarkdown(b: Block, locale: Locale): string {
     }
     case "contact":
       return dict.contactCards.map((c) => `- ${c.title}: ${site.email[c.email]}`).join("\n");
+    case "company":
+      return [b.heading ? `### ${b.heading}` : "", `${site.company.legalName}, ${companyAddress(locale)}. ${companyIds(locale)}. ${site.company.url}`].filter(Boolean).join("\n\n");
     case "legal":
       return b.sections
         .map((s) => [`### ${s.heading}`, ...(s.paragraphs ?? []).map((p) => fillPlaceholders(p, locale)), ...(s.items ?? []).map((i) => `- ${fillPlaceholders(i, locale)}`)].join("\n\n"))
@@ -58,7 +72,7 @@ export function llmsIndex(): string {
     "",
     `> ${en.meta.siteDescription}`,
     "",
-    `${site.name} is a product of ${site.company.name} (${site.company.city}, ${site.company.country}). Tagline: "${en.meta.slogan}"`,
+    `${site.name} is a product of ${site.company.legalName}, ${companyAddress("en")}; ${companyIds("en")}; ${site.company.url}. Founder: ${site.company.founder}. Tagline: "${en.meta.slogan}"`,
     "",
     "Key facts:",
     "- 12-week pet readiness challenge for families; children aged about 7–12 (up to 16) care for a photorealistic AI pet; parents see a live dashboard with a daily traffic light and a Care Score.",
@@ -72,6 +86,8 @@ export function llmsIndex(): string {
     site.launchState === "live" ? "- Status: available on iPhone and Android." : "- Status: pre-launch; early access by email.",
     "",
     "Full text of every page: " + absoluteUrl("/llms-full.txt"),
+    "Animal register, full text per species and language (every breed with its sourced facts, Q&A and game rules):",
+    ...registry.species.flatMap((sp) => locales.map((l) => `- ${sp.name.en.many} (${localeMeta[l].label}): ${absoluteUrl(llmsSpeciesPath(sp.id, l))}`)),
     "",
   ];
   for (const locale of locales) {
@@ -85,7 +101,7 @@ export function llmsIndex(): string {
     const rc = getRegistryCopy(locale);
     for (const sp of registry.species) {
       const many = sp.name[locale].many;
-      lines.push(`- [${rc.catalogue.metaTitle(many)}](${absoluteUrl(speciesHref(locale, sp))}): ${rc.catalogue.metaDescription(many)}`);
+      lines.push(`- [${rc.catalogue.metaTitle(many)}](${absoluteUrl(speciesHref(locale, sp))}): ${rc.catalogue.metaDescription(many)} Full text: ${absoluteUrl(llmsSpeciesPath(sp.id, locale))}`);
       for (const b of registry.breeds.filter((x) => x.species === sp.id)) {
         lines.push(`  - [${b.name[locale]}](${absoluteUrl(breedHref(locale, b))}) — ${rc.availability[b.availability].label}`);
       }
@@ -105,7 +121,7 @@ export function llmsFull(): string {
     out.push(`## ${h.how.title}`, ...h.how.steps.map((s) => `- **${s.title}:** ${s.text}`), "");
     out.push(`## ${h.realism.title}`, h.realism.text, ...h.realism.items.map((s) => `- **${s.title}:** ${s.text}`), "");
     out.push(`## ${h.parents.title}`, h.parents.text, "");
-    out.push(`## ${h.adults.title}`, h.adults.text, ...h.adults.points.map((s) => `- **${s.strong}:** ${s.text}`), h.adults.how, h.adults.note, "");
+    out.push(`## ${h.adults.title}`, h.adults.text, ...h.adults.points.map((s) => `- **${s.strong}:** ${s.text}`), h.adults.how, markdownText(locale, h.adults.note, absoluteUrl), "");
     out.push(`## ${h.after.title}`, h.after.text, ...h.after.features.map((s) => `- **${s.title}:** ${s.text}`), "");
     for (const key of pageKeys) {
       const p = dict.pages[key];
@@ -116,9 +132,30 @@ export function llmsFull(): string {
         if (md) out.push(md, "");
       }
     }
-    for (const b of registry.breeds) {
-      out.push("---", "", breedMarkdown(locale, b, absoluteUrl(breedHref(locale, b))), "");
-    }
+    // Breed pages are in the per-species files, so this file stays small as the register grows.
+    const rc = getRegistryCopy(locale);
+    out.push("---", "", `# ${rc.catalogue.eyebrow} (${localeMeta[locale].label})`, "");
+    for (const sp of registry.species) out.push(`- ${sp.name[locale].many}: ${absoluteUrl(llmsSpeciesPath(sp.id, locale))}`);
+    out.push("");
   }
+  return out.join("\n");
+}
+
+/** Every breed of one species in one language, as Markdown. */
+export function llmsSpecies(sp: Species, locale: Locale): string {
+  const rc = getRegistryCopy(locale);
+  const many = sp.name[locale].many;
+  const out = [
+    `# ${site.name} — ${rc.catalogue.title(many)}`,
+    "",
+    `> ${rc.catalogue.metaDescription(many)}`,
+    "",
+    `URL: ${absoluteUrl(speciesHref(locale, sp))}`,
+    `${rc.page.updated}: ${speciesUpdated(sp)}`,
+    "",
+    hubMarkdown(locale, absoluteUrl),
+    "",
+  ];
+  for (const b of breedsOf(sp.id)) out.push("---", "", breedMarkdown(locale, b, absoluteUrl(breedHref(locale, b))), "");
   return out.join("\n");
 }

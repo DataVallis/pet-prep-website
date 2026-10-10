@@ -21,8 +21,10 @@
   --color-danger-tint: #fde2de;
   --color-metric-low: #ff7a6b;
 
-  --font-display: var(--font-bricolage), system-ui, sans-serif;
-  --font-sans: var(--font-instrument), system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* "PetPrep …" is the family every weight file declares (src/app/fonts.ts); the next/font variable
+     after it adds the size-adjusted fallback face that keeps layout stable while the font loads. */
+  --font-display: "PetPrep Bricolage", var(--font-bricolage), system-ui, sans-serif;
+  --font-sans: "PetPrep Instrument", var(--font-instrument), system-ui, -apple-system, "Segoe UI", sans-serif;
 
   --radius-btn: 12px;
   --radius-card: 22px;
@@ -180,4 +182,19 @@
   vertical-align: top;
   padding: 8px 10px;
   border-bottom: 1px solid rgb(18 22 20 / 0.12);
+}
+
+/* Links inside content text (RichText). */
+@utility rich-link {
+  font-weight: 500;
+  color: var(--color-mint-text);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--color-mint-text) 45%, transparent);
+  text-underline-offset: 2px;
+  &:hover {
+    text-decoration-color: currentColor;
+  }
+  .on-dark & {
+    color: var(--color-mint);
+  }
 }

@@ -3,7 +3,9 @@ import type { Metadata } from "next";
 import { isLocale, pathFor } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { buildMetadata } from "@/lib/seo";
-import { appLd, faqLd, graph, webPageLd } from "@/lib/jsonld";
+import { appLd, graph, webPageLd } from "@/lib/jsonld";
+import { resolveRef } from "@/lib/links";
+import { RichText } from "@/components/RichText";
 import { JsonLd } from "@/components/JsonLd";
 import { HeroVisual } from "@/components/HeroVisual";
 import { EARLY_ACCESS_ID, PrimaryCta, StoreButtons } from "@/components/Cta";
@@ -55,7 +57,8 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
 
   return (
     <>
-      <JsonLd data={graph(webPageLd(locale, "home", h.meta.title, h.meta.description), appLd(locale, dict), faqLd(faqItems))} />
+      {/* FAQPage markup lives on /faq only; the home page shows a few of the same questions. */}
+      <JsonLd data={graph(webPageLd(locale, "home", h.meta.title, h.meta.description), appLd(locale, dict))} />
 
       {/* Hero */}
       <section className="container-page grid items-center gap-12 pb-20 pt-12 lg:grid-cols-[1fr_1.05fr] lg:pt-16">
@@ -186,7 +189,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
               ))}
             </ul>
             <p className="rounded-[18px] bg-white p-4 leading-relaxed">{h.adults.how}</p>
-            <p className="text-sm text-muted">{h.adults.note}</p>
+            <p className="text-sm text-muted"><RichText text={h.adults.note} locale={locale} /></p>
             <Link href={pathFor(locale, "faq")} className="inline-flex items-center gap-2 self-start font-semibold text-mint-text hover:underline">
               {h.adults.link} <Arrow />
             </Link>
@@ -231,7 +234,18 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
           </div>
           <ul className="flex flex-wrap gap-2.5">
             {h.species.chips.map((c) => (
-              <li key={c.label} className={`rounded-full px-4 py-2.5 text-[15px] font-semibold ${c.active ? "bg-graphite text-white" : "bg-white"}`}>{c.label}</li>
+              <li key={c.label}>
+                {c.link ? (
+                  <Link
+                    href={resolveRef(locale, c.link)}
+                    className={`inline-flex min-h-11 items-center rounded-full px-4 py-2.5 text-[15px] font-semibold ring-1 transition-colors ${c.active ? "bg-graphite text-white ring-graphite hover:bg-[#2a312d]" : "bg-white ring-transparent hover:ring-graphite"}`}
+                  >
+                    {c.label}
+                  </Link>
+                ) : (
+                  <span className={`inline-flex min-h-11 items-center rounded-full px-4 py-2.5 text-[15px] font-semibold ${c.active ? "bg-graphite text-white" : "bg-white"}`}>{c.label}</span>
+                )}
+              </li>
             ))}
           </ul>
         </div>
@@ -249,7 +263,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
       {/* FAQ */}
       <section className="container-page flex flex-col gap-8 pb-24" aria-labelledby="faq-title">
         <h2 id="faq-title" className="h-section">{h.faq.title}</h2>
-        <Faq items={faqItems} />
+        <Faq items={faqItems} locale={locale} />
         <Link href={pathFor(locale, "faq")} className="inline-flex items-center gap-2 self-start font-semibold text-mint-text hover:underline">
           {h.faq.link} <Arrow />
         </Link>

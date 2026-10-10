@@ -15,6 +15,11 @@ const aiAgents = [
   "Applebot-Extended",
   "CCBot",
   "Bingbot",
+  // Open policy (David, 2026-10-10): these were already allowed through "*"; listed for clarity.
+  "Bytespider",
+  "Meta-ExternalAgent",
+  "Amazonbot",
+  "DuckAssistBot",
 ];
 
 export default function robots(): MetadataRoute.Robots {

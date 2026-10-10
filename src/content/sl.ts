@@ -52,7 +52,7 @@ const sl: Dictionary = {
     tagline: "Pripravljeni na žival. Ob njej vse življenje.",
     groups: [
       { title: "Izdelek", links: ["howItWorks", "parents", "animals", "afterAdoption", "pricing", "faq"] },
-      { title: "Podjetje", links: ["partners", "investors", "contact"] },
+      { title: "Podjetje", links: ["about", "partners", "investors", "contact"] },
       { title: "Zaupanje", links: ["privacy", "terms", "childSafety"] },
     ],
     rights: "Vse pravice pridržane.",
@@ -91,7 +91,7 @@ const sl: Dictionary = {
       text: "Za družine, ki želijo celotno izkušnjo in certifikat na koncu.",
       features: [
         "Vse iz paketa Mešanček",
-        "Zahtevne pasme, na primer border collie",
+        "Zahtevne pasme, na primer [border collie](breed:border_collie)",
         "Razpoloženja ljubljenčka kot AI videi",
         "Certifikat odgovornosti",
         "Ena cena, ko si sorojenci delijo ljubljenčka",
@@ -126,7 +126,7 @@ const sl: Dictionary = {
     meta: {
       title: "PetPrep — Je vaš otrok pripravljen na žival? Ugotovite v 12 tednih.",
       description:
-        "Preden pride domov prava žival, otrok 12 tednov skrbi za življenjskega AI ljubljenčka — hrani ga, čisti za njim in z njim zares hodi. Vsak dan vidite, ali je res pripravljen.",
+        "Preden pride prava žival domov, otrok 12 tednov skrbi za AI ljubljenčka: hrana, čiščenje, pravi sprehodi. Vsak dan vidite, ali je res pripravljen.",
     },
     hero: {
       eyebrow: "12-tedenski PetPrep izziv",
@@ -211,7 +211,7 @@ const sl: Dictionary = {
         },
       ],
       how: "Kako začnete: ustvarite račun kot starš, dodajte sebe kot profil skrbnika in se prijavite s 6-mestno kodo — na istem ali drugem telefonu.",
-      note: "Danes sta na voljo mešanček (brezplačno) in border collie (v 12-tedenskem izzivu).",
+      note: "Danes sta na voljo mešanček (brezplačno) in [border collie](breed:border_collie) (v 12-tedenskem izzivu).",
       link: "Kako PetPrep uporabljate sami",
     },
     after: {
@@ -230,7 +230,12 @@ const sl: Dictionary = {
     species: {
       title: "Danes psi. Kmalu še druge živali.",
       text: "Narejen za družine po vsem svetu, v njihovem jeziku.",
-      chips: [{ label: "Pes · na voljo", active: true }, { label: "Mačka · naslednja" }, { label: "Druge vrste · v načrtu" }],
+      chips: [
+        { label: "Pes · na voljo", active: true, link: "species:dog" },
+        { label: "Border collie · v izzivu", link: "breed:border_collie" },
+        { label: "Mačka · naslednja", link: "species:cat" },
+        { label: "Druge vrste · v načrtu", link: "page:animals" },
+      ],
     },
     pricing: { eyebrow: "Cenik", title: "Preprosto in pošteno." },
     faq: { title: "Vprašanja staršev", link: "Vsa vprašanja" },
@@ -280,7 +285,7 @@ const sl: Dictionary = {
             ["Sprehod", "6.000 pravih korakov (mladiček začne pri 2.000)", "Brez sprehoda → naslednje jutro zboli"],
             ["Čiščenje", "Ko naredi nered — nikoli med tihimi urami", "Hrane in vode ni, dokler ni čisto"],
           ],
-          note: "Mladiček je 4-, nato 3- in 2-krat na dan in zdrži le približno eno uro na mesec starosti, nato mora ven. Border collie potrebuje 12.000 korakov in hitreje postane lačen.",
+          note: "Mladiček je 4-, nato 3- in 2-krat na dan in zdrži le približno eno uro na mesec starosti, nato mora ven. [Border collie](breed:border_collie) potrebuje 12.000 korakov in hitreje postane lačen.",
         },
         {
           type: "cards",
@@ -372,7 +377,7 @@ const sl: Dictionary = {
       meta: {
         title: "Ko pride domov — PetPrep AI asistent za vašo pravo žival",
         description:
-          "Ko družina dobi pravo žival, PetPrep postane AI asistent: aktivnost s pametne ovratnice, opozorila, AI prvi stik s potjo do pravega veterinarja, rast in prehrana.",
+          "Ko družina dobi pravo žival, PetPrep postane AI asistent: aktivnost z ovratnice, opozorila, AI prvi stik s pravim veterinarjem, rast in prehrana.",
       },
       eyebrow: "Ko pride domov",
       title: "Simulacija se konča. Skrb ne.",
@@ -424,7 +429,7 @@ const sl: Dictionary = {
           heading: "Vprašanja o ceni",
           items: [
             { q: "Je brezplačna različica res brezplačna?", a: "Da. Mešanček je brezplačen za vedno, s celotno simulacijo, pravimi sprehodi in nadzorno ploščo za starše." },
-            { q: "Kaj vključuje izziv?", a: "Zahtevne pasme, kot je border collie, razpoloženja ljubljenčka kot AI videje, Certifikat odgovornosti na koncu in dostop za oba starša." },
+            { q: "Kaj vključuje izziv?", a: "Zahtevne pasme, kot je [border collie](breed:border_collie), razpoloženja ljubljenčka kot AI videje, Certifikat odgovornosti na koncu in dostop za oba starša." },
             { q: "Ali sorojenci plačajo dvakrat?", a: "Ne. Otroci, ki si delijo enega ljubljenčka, plačajo eno ceno. Drugi ljubljenček v družini je ločen izziv." },
             { q: "Kako plačam?", a: "V aplikaciji, prek App Store ali Google Play. Morebitna vračila urejate v svojem računu trgovine." },
             { q: "Velja enako tudi za odrasle?", a: "Da. Če PetPrep uporabljate sami, da preizkusite pasmo, velja isto: mešanček je brezplačen za vedno, 12-tedenski izziv stane 49,99 € na žival." },
@@ -436,7 +441,7 @@ const sl: Dictionary = {
       meta: {
         title: "Pogosta vprašanja — kaj starši sprašujejo o PetPrep",
         description:
-          "Odgovori o PetPrep: koliko časa vzame, uporaba za odrasle brez otrok, zasebnost, lokacija, koraki, sorojenci, kaj če otrok ne uspe, jeziki, živalske vrste in življenje s pravim ljubljenčkom.",
+          "Odgovori o PetPrep: koliko časa vzame, uporaba za odrasle, zasebnost, lokacija, koraki, sorojenci, kaj če otrok ne uspe, jeziki in vrste živali.",
       },
       eyebrow: "Pogosta vprašanja",
       title: "Vprašanja staršev.",
@@ -454,7 +459,7 @@ const sl: Dictionary = {
             { q: "Ali si lahko sorojenci delijo ljubljenčka?", a: "Da. Vsak otrok podpiše svojo pogodbo, vsako dejanje se šteje tistemu, ki ga je naredil, in vsak dobi svoj pošten Care Score." },
             { q: "Kaj pa šola in spanje?", a: "Nastavite tihe ure. Ljubljenček se upočasni, obvestil ni, obroke, ki v celoti padejo v tihe ure, pa opravite vi." },
             { q: "Je za otroke strašljivo?", a: "Ne. Posledice so resnične, a nežne: ljubljenček gre k veterinarju ali v zavetišče, nikoli nič grafičnega, in vedno obstaja nov začetek." },
-            { q: "Katere živali so na voljo?", a: "Danes psi: brezplačni mešanček in border collie. Naslednja je mačka, druge vrste so v načrtu." },
+            { q: "Katere živali so na voljo?", a: "Danes [psi](species:dog): brezplačni mešanček in [border collie](breed:border_collie). Naslednja je [mačka](species:cat), druge vrste so v načrtu. V [registru živali](page:animals) so vse vrste in pasme s potrebami iz virov." },
             { q: "V katerih jezikih?", a: "Danes v angleščini in slovenščini. Več jezikov dodajamo, ko PetPrep prihaja v nove države." },
             { q: "Kaj se zgodi, ko dobimo pravo žival?", a: "PetPrep lahko postane AI asistent za vašo pravo žival. Ta del je v razvoju." },
           ],
@@ -465,7 +470,7 @@ const sl: Dictionary = {
       meta: {
         title: "Partnerji — sodelujte s PetPrep",
         description:
-          "PetPrep sodeluje s trgovinami za male živali, zavetišči, veterinarji, šolami za pse, zavarovalnicami, proizvajalci ovratnic in šolami za odgovorno pridobivanje živali.",
+          "PetPrep sodeluje s trgovinami za male živali, zavetišči, veterinarji, šolami za pse, zavarovalnicami in šolami za odgovorno pridobivanje živali.",
       },
       eyebrow: "Partnerji",
       title: "Bolje pripravljene družine za vse, ki jim je mar za živali.",
@@ -501,9 +506,9 @@ const sl: Dictionary = {
     },
     investors: {
       meta: {
-        title: "Vlagatelji — PetPrep",
+        title: "Vlagatelji — PetPrep, od preizkusa pripravljenosti do skrbi za žival",
         description:
-          "PetPrep otrokovo obljubo spremeni v objektiven dokaz, preden družina dobi žival, nato pa postane AI asistent za vse njeno življenje. Pred začetkom; predstavitev na zahtevo.",
+          "PetPrep otrokovo obljubo spremeni v dokaz, preden družina dobi žival, nato pa postane AI asistent za vse njeno življenje. Predstavitev na zahtevo.",
       },
       eyebrow: "Vlagatelji",
       title: "Od 12-tedenskega izziva do 10–15-letnega odnosa.",
@@ -547,7 +552,7 @@ const sl: Dictionary = {
           heading: "Faza",
           paragraphs: [
             "PetPrep je pred javnim začetkom, načrtovana je zaprta beta. Prvi trg sta Slovenija in regija, sledita DACH in Združeno kraljestvo; izdelek je od prvega dne zgrajen za lokalizacijo po svetu.",
-            "Ustanovitelj: David Tacer, full-stack razvijalec in podjetnik (Data Vallis, Maribor).",
+            "Ustanovitelj: David Tacer, razvijalec programske opreme in podjetnik (DATA VALLIS d.o.o., Maribor). Več [o nas](page:about).",
           ],
         },
         { type: "callout", title: "Zahtevajte predstavitev za vlagatelje.", text: "Predstavitev, prezentacijo in podatkovno sobo pošljemo na zahtevo.", tone: "dark" },
@@ -555,11 +560,14 @@ const sl: Dictionary = {
       ],
     },
     contact: {
-      meta: { title: "Kontakt — PetPrep", description: "Kontakt PetPrep: družine, zasebnost, partnerji in vlagatelji." },
+      meta: {
+        title: "Kontakt PetPrep — družine, zasebnost, partnerji, vlagatelji",
+        description: "Kontakt PetPrep: vprašanja družin, zahteve glede zasebnosti, partnerstva in vprašanja vlagateljev. Odgovorimo v slovenščini ali angleščini.",
+      },
       eyebrow: "Kontakt",
       title: "Preberemo vsako sporočilo.",
       lead: "Pišite na pravi naslov in odgovorili vam bomo čim prej, v slovenščini ali angleščini.",
-      blocks: [{ type: "contact" }],
+      blocks: [{ type: "contact" }, { type: "company", heading: "Podatki o podjetju" }],
     },
     privacy: {
       navLabel: "Zasebnost",
@@ -577,7 +585,7 @@ const sl: Dictionary = {
             {
               heading: "1. Kdo je odgovoren",
               paragraphs: [
-                "Upravljavec osebnih podatkov, ki se obdelujejo v aplikaciji PetPrep in na tej spletni strani, je {company}, {city}, {country}{address}. Kontakt za vprašanja o zasebnosti: {privacyEmail}.",
+                "Upravljavec osebnih podatkov, ki se obdelujejo v aplikaciji PetPrep in na tej spletni strani, je podjetje {company}, {address}; {companyIds}. Kontakt za vprašanja o zasebnosti: {privacyEmail}.",
               ],
             },
             {
@@ -631,7 +639,7 @@ const sl: Dictionary = {
                 "Gostovanje: Hetzner Online (strežniki v EU).",
                 "Ustvarjanje AI slik in videov: fal.ai (prejme samo opis ljubljenčka).",
                 "Potisna obvestila: Apple Push Notification service in Firebase Cloud Messaging prek Expo; obvestila ne vsebujejo imen.",
-                "Nakupi: Apple App Store in Google Play; upravljanje naročnin prek RevenueCat, ko bodo nakupi na voljo.",
+                "Nakupi: Apple App Store in Google Play; upravljanje nakupov prek RevenueCat, ko bodo nakupi na voljo.",
                 "E-pošta za zgodnji dostop: Klaviyo (prejme samo e-poštni naslov in jezik, ki ju oddate na tej spletni strani).",
                 "Privolitev za piškotke na spletni strani: CookieYes (shrani vašo izbiro).",
                 "Analitika spletne strani: Google Analytics 4 podjetja Google Ireland Ltd., samo z vašo privolitvijo; Google Analytics 4 ne shranjuje naslovov IP.",
@@ -675,7 +683,10 @@ const sl: Dictionary = {
     },
     terms: {
       navLabel: "Pogoji uporabe",
-      meta: { title: "Pogoji uporabe — PetPrep", description: "Pogoji za uporabo aplikacije in spletne strani PetPrep." },
+      meta: {
+        title: "Pogoji uporabe — PetPrep",
+        description: "Pogoji uporabe aplikacije in spletne strani PetPrep: računi, brezplačne in plačljive funkcije, poštena raba, vsebine AI, odgovornost in pravo.",
+      },
       eyebrow: "Pravno",
       title: "Pogoji uporabe",
       lead: "Pravila za uporabo PetPrep, napisana tako, da se jih da prebrati.",
@@ -686,7 +697,7 @@ const sl: Dictionary = {
             {
               heading: "1. Storitev",
               paragraphs: [
-                "PetPrep zagotavlja {company}, {city}, {country}{address}. PetPrep je simulacija, ki družinam in posameznikom pomaga ugotoviti, ali so pripravljeni skrbeti za pravo žival — otrokom in odraslim, ki pred nakupom ali posvojitvijo preizkušajo, ali jim pasma ustreza. Je izobraževalno orodje, ne veterinarski nasvet, in ne jamči, kako bo kdo skrbel za pravo žival.",
+                "PetPrep zagotavlja podjetje {company}, {address}; {companyIds}. PetPrep je simulacija, ki družinam in posameznikom pomaga ugotoviti, ali so pripravljeni skrbeti za pravo žival — otrokom in odraslim, ki pred nakupom ali posvojitvijo preizkušajo, ali jim pasma ustreza. Je izobraževalno orodje, ne veterinarski nasvet, in ne jamči, kako bo kdo skrbel za pravo žival.",
               ],
             },
             {
@@ -720,7 +731,7 @@ const sl: Dictionary = {
             },
             {
               heading: "6. Intelektualna lastnina",
-              paragraphs: ["PetPrep, njegov logotip, oblikovanje, programska oprema in vsebina pripadajo {company}. Aplikacijo lahko uporabljate za osebno, nekomercialno rabo svoje družine."],
+              paragraphs: ["PetPrep, njegov logotip, oblikovanje, programska oprema in vsebina pripadajo podjetju {company}. Aplikacijo lahko uporabljate za osebno, nekomercialno rabo svoje družine."],
             },
             {
               heading: "7. Odgovornost",
@@ -748,7 +759,7 @@ const sl: Dictionary = {
       meta: {
         title: "Varnost otrok — kako PetPrep varuje otroke",
         description:
-          "Standardi varnosti otrok v PetPrep: račune ustvarijo starši, prijava s kodo brez e-pošte, minimalni podatki, brez oglasov in klepeta, brez lokacije, preverjeni mediji in nadzor staršev.",
+          "Kako PetPrep varuje otroke: račune ustvarijo starši, prijava s kodo brez e-pošte, malo podatkov, brez oglasov, klepeta in lokacije, preverjeni mediji.",
       },
       eyebrow: "Zaupanje",
       title: "Narejen za otroke od prve vrstice kode.",
@@ -787,7 +798,7 @@ const sl: Dictionary = {
       meta: {
         title: "PetPrep register živali — vrste in pasme z viri",
         description:
-          "Psi, mačke in njihove pasme: kaj res potrebujejo, za koga so primerne in kako jih simulira PetPrep. Iščite, filtrirajte in primerjajte pasme; vsako dejstvo ima vir.",
+          "Psi, mačke in pasme: kaj potrebujejo, za koga so primerne in kako jih simulira PetPrep. Iščite in primerjajte pasme; vsako dejstvo ima vir.",
       },
       navLabel: "Živali",
       eyebrow: "Register živali",
@@ -795,6 +806,59 @@ const sl: Dictionary = {
       lead:
         "Kaj vsaka vrsta in pasma v PetPrep res potrebuje — iz kinoloških zvez, mačjih zvez, veterinarskih dobrodelnih organizacij in raziskav, z vsemi viri. In pravila, po katerih jo PetPrep simulira.",
       blocks: [{ type: "animalsHub" }],
+    },
+    about: {
+      meta: {
+        title: "O nas — podjetje, ustanovitelj in kako PetPrep preverja dejstva",
+        description:
+          "Kdo stoji za PetPrep: DATA VALLIS d.o.o. iz Maribora, ustanovitelj David Tacer, naše poslanstvo in kako register živali zbira in preverja dejstva.",
+      },
+      navLabel: "O nas",
+      eyebrow: "O nas",
+      title: "Kdo stoji za PetPrep.",
+      lead: "PetPrep nastaja v Mariboru, v majhnem podjetju za razvoj programske opreme. Na tej strani piše, kdo smo, zakaj razvijamo PetPrep in kako odločamo, kaj aplikacija in register živali povesta o živalih.",
+      blocks: [
+        {
+          type: "prose",
+          id: "company",
+          heading: "Podjetje",
+          paragraphs: [
+            "PetPrep je izdelek podjetja DATA VALLIS d.o.o., podjetja za razvoj programske opreme s sedežem v Mariboru. Isto podjetje upravlja to spletno stran in aplikacijo PetPrep ter je upravljavec osebnih podatkov (glejte [politiko zasebnosti](page:privacy)).",
+          ],
+        },
+        { type: "company" },
+        {
+          type: "prose",
+          id: "founder",
+          heading: "Ustanovitelj",
+          paragraphs: ["PetPrep je ustanovil David Tacer, razvijalec programske opreme in podjetnik iz Maribora."],
+        },
+        {
+          type: "prose",
+          id: "mission",
+          heading: "Naše poslanstvo",
+          paragraphs: [
+            "Vsaka družina sliši »Obljubim, da bom skrbel zanj.« PetPrep obljubo spremeni v dokaz: 12 tednov otrok — ali odrasel, ki si želi točno določeno pasmo — skrbi za realističnega AI ljubljenčka z vsakodnevnimi potrebami prave živali, starš pa vsak dan vidi, ali skrb zdrži.",
+            "Tudi neuspeh v simulaciji je dober rezultat: družina izve, preden bi trpela prava žival, in preden se zaveže letom skrbi in stroškov. Ko pa prava žival pride domov, želimo, da je PetPrep v pomoč vse njeno življenje.",
+          ],
+        },
+        {
+          type: "list",
+          id: "metodologija",
+          heading: "Kako nastaja register živali",
+          intro: "[Register živali](page:animals) in aplikacija uporabljata iste podatke. O tem, kaj sme register povedati, odločajo ta pravila:",
+          items: [
+            "Vsako dejstvo navaja svoj vir in povezavo nanj. Vire razvrščamo po teži: A — standardi pasem, recenzirani znanstveni članki in smernice veterinarskih združenj; B — svetovalne strani veterinarskih bolnišnic, univerz in nacionalnih organizacij za zaščito živali; C — sekundarni povzetki (enciklopedije, časopisni članki), ki jih uporabimo samo skupaj z virom A ali B.",
+            "Kot dejstvo objavimo samo podatek z virom. Vrednosti, ki je noben vir ne podpira, ne objavimo. Kjer se viri razlikujejo, navedemo vsakega z njegovo vrednostjo.",
+            "Pravila igre niso veterinarski nasvet. Kjer igra potrebuje število, ki ga viri ne podajo natančno (na primer dnevni cilj korakov), ga PetPrep določi na podlagi virov in ga prikaže samo v razdelku »Kako to simulira PetPrep«, označenega kot pravilo igre.",
+            "Podatki o zdravju so samo informativni. Povzemajo, kaj o pasmi pravijo viri, in jih ni pregledal veterinar. Za pravo žival se posvetujte z veterinarjem.",
+            "Standarde pasem povzemamo s svojimi besedami in jih ne prepisujemo, nobene pasme pa ne označimo kot »hipoalergene«.",
+            "Register nastane iz raziskovalnih podatkov PetPrep, istih, ki jih uporablja aplikacija. Ko se vir ali vrednost spremeni, register znova izvozimo, na strani vsake pasme pa je datum zadnje posodobitve. Če opazite napako, nam pišite na hello@petprep.si.",
+          ],
+        },
+        { type: "callout", title: "Vprašanja o PetPrep?", text: "Na strani s kontakti izberite pravi naslov — za družine, zasebnost, partnerje ali vlagatelje.", tone: "mint" },
+        { type: "contact" },
+      ],
     },
   },
 };

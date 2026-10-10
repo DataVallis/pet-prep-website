@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { compareSlug, isLocale, locales, pageSlugs, pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { breedBySlug, breedsOf, registry, speciesBySlug, type Breed, type Species } from "@/content/registry/registry";
-import { breedHref, buildBreedView, compareHref, getRegistryCopy, registryUpdated, speciesHref } from "@/lib/registry/views";
+import { breedHref, breedUpdated, buildBreedView, compareHref, formatDay, getRegistryCopy, portraitSrc, qaText, speciesHref } from "@/lib/registry/views";
 import { buildPathMetadata } from "@/lib/seo";
-import { breadcrumbsLd, breedPageLd, graph } from "@/lib/jsonld";
+import { breadcrumbsLd, breedPageLd, faqLd, graph } from "@/lib/jsonld";
 import { JsonLd } from "@/components/JsonLd";
 import { StoreButtons } from "@/components/Cta";
 import { Cite, FactList, TagChips } from "@/components/registry/Facts";
@@ -50,16 +51,20 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[
       title: c.compare.metaTitle(sp.name[r.locale].many),
       description: c.compare.intro,
       noIndex: true,
-      imagePath: `${speciesHref(r.locale, sp)}/opengraph-image`,
+      image: { path: `${speciesHref(r.locale, sp)}/opengraph-image`, width: 1200, height: 630, alt: c.compare.metaTitle(sp.name[r.locale].many) },
     });
   }
   const b = r.breed;
+  // Share image: the breed's AI portrait when the export has one, else a generated card with the breed name.
+  const image = b.portrait
+    ? { path: portraitSrc(b, b.portrait), width: b.portrait.width, height: b.portrait.height, alt: c.page.portraitAlt(b.name[r.locale]) }
+    : { path: `/og/${sp.id}/${b.id}.${r.locale}.png`, width: 1200, height: 630, alt: b.name[r.locale] };
   return buildPathMetadata({
     locale: r.locale,
     paths: each((l) => breedHref(l, b)),
-    title: c.page.metaTitle(b.name[r.locale], sp.name[r.locale].one),
+    title: c.page.metaTitle(b.name[r.locale], sp.name[r.locale].one, sp.id),
     description: c.page.metaDescription(b.name[r.locale], sp.name[r.locale].one),
-    imagePath: `${speciesHref(r.locale, sp)}/opengraph-image`,
+    image,
   });
 }
 
@@ -130,16 +135,23 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
   const labels = registry.suitability_labels[locale];
   const cite = c.page.sourceLabel;
 
+  const other: Locale = locale === "en" ? "sl" : "en";
   const ld = graph(
     breedPageLd({
       locale,
       path: v.href,
-      title: c.page.metaTitle(v.name, species.name[locale].one),
+      title: c.page.metaTitle(v.name, species.name[locale].one, species.id),
       description: c.page.metaDescription(v.name, species.name[locale].one),
       breedName: v.name,
+      alternateNames: [r.breed.name[other], ...r.breed.synonyms.en, ...r.breed.synonyms.sl].filter(
+        (n, i, all) => n && n.toLowerCase() !== v.name.toLowerCase() && all.findIndex((x) => x.toLowerCase() === n.toLowerCase()) === i,
+      ),
+      sameAs: r.breed.same_as ?? [],
+      image: v.portrait?.src,
       sources: v.sources,
-      dateModified: registryUpdated,
+      dateModified: breedUpdated(r.breed),
     }),
+    ...(v.faq.length ? [faqLd(v.faq.map((a) => ({ q: a.q, a: qaText(locale, a) })))] : []),
     breadcrumbsLd([
       { name: home.name, path: home.href },
       { name: animals.name, path: animals.href },
@@ -171,7 +183,48 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
             <p className="max-w-3xl text-[19px] leading-relaxed text-[#2a312d]">{c.page.metaDescription(v.name, species.name[locale].one)}</p>
           )}
           <p className="max-w-3xl rounded-[14px] bg-mint-tint px-4 py-3 text-sm leading-relaxed">{v.availability.text}</p>
+          <p className="text-sm text-muted">
+            {c.page.updated}: <time dateTime={v.updated}>{formatDay(locale, v.updated)}</time>
+          </p>
         </header>
+
+        {v.portrait ? (
+          <figure className="-mt-4 mb-12 flex max-w-xl flex-col gap-2 sm:mb-14">
+            <Image
+              src={v.portrait.src}
+              width={v.portrait.width}
+              height={v.portrait.height}
+              alt={v.portrait.alt}
+              priority
+              sizes="(min-width: 640px) 576px, calc(100vw - 40px)"
+              className="h-auto w-full rounded-[22px] bg-white ring-1 ring-line"
+            />
+            <figcaption className="text-[13px] text-muted">{v.portrait.caption}</figcaption>
+          </figure>
+        ) : null}
+
+        {v.glance.length ? (
+          <section aria-labelledby="glance" className="mb-16 flex max-w-4xl flex-col gap-4 sm:mb-20">
+            <h2 id="glance" className="h-card text-[24px] leading-tight sm:text-[28px]">{c.page.glanceTitle}</h2>
+            <dl className="grid gap-x-6 gap-y-3 rounded-[22px] border border-line bg-white p-5 text-[15px] leading-relaxed sm:grid-cols-[max-content_1fr] sm:p-6">
+              {v.glance.map((row) => (
+                <div key={row.key} className="contents">
+                  <dt className="font-semibold">{row.label}</dt>
+                  <dd className="text-[#2a312d]">
+                    {row.values.map((l, i) => (
+                      <span key={l.text + i}>
+                        {i > 0 ? "; " : null}
+                        {l.text}
+                        <Cite sources={l.sources} sourceLabel={cite} />
+                      </span>
+                    ))}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+            <p className="text-sm text-muted">{c.page.glanceNote}</p>
+          </section>
+        ) : null}
 
         <div className="flex flex-col gap-16 sm:gap-20">
           <section aria-labelledby="suits" className="flex flex-col gap-5">
@@ -198,7 +251,7 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
           <section aria-labelledby="needs" className="flex flex-col gap-5">
             <div className="flex flex-col gap-2">
               <h2 id="needs" className="h-card text-[28px] leading-tight sm:text-[34px]">{c.page.needsTitle}</h2>
-              <p className="max-w-3xl text-[17px] leading-relaxed text-muted">{c.page.needsIntro}</p>
+              <p className="max-w-3xl text-[17px] leading-relaxed text-muted">{c.page.needsIntro(species.id)}</p>
             </div>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {v.groups.map((g) => (
@@ -214,6 +267,48 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
               ))}
             </div>
           </section>
+
+          {v.faq.length ? (
+            <section aria-labelledby="qa" className="flex flex-col gap-5">
+              <div className="flex flex-col gap-2">
+                <h2 id="qa" className="h-card text-[28px] leading-tight sm:text-[34px]">{c.page.qa.title}</h2>
+                <p className="max-w-3xl text-[15px] leading-relaxed text-muted">{c.page.qa.intro}</p>
+              </div>
+              <div className="flex max-w-4xl flex-col divide-y divide-line rounded-[22px] border border-line bg-white">
+                {v.faq.map((a) => (
+                  <div key={a.q} className="flex flex-col gap-2 px-5 py-5 sm:px-6">
+                    <h3 className="text-[17px] font-semibold">{a.q}</h3>
+                    <p className="text-[15px] leading-relaxed text-[#2a312d]">
+                      {a.lead}{" "}
+                      {a.items.map((l, i) => (
+                        <span key={l.text + i}>
+                          {i > 0 ? c.page.qa.join : null}
+                          {l.text}
+                          <Cite sources={l.sources} sourceLabel={cite} />
+                        </span>
+                      ))}
+                      .
+                      {a.tail ? (
+                        <>
+                          {" "}
+                          {a.tail.lead}{" "}
+                          {a.tail.items.map((l, i) => (
+                            <span key={l.text + i}>
+                              {i > 0 ? c.page.qa.join : null}
+                              {l.text}
+                              <Cite sources={l.sources} sourceLabel={cite} />
+                            </span>
+                          ))}
+                          .
+                        </>
+                      ) : null}
+                      {a.note ? ` ${a.note}` : null}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          ) : null}
 
           <section aria-labelledby="simulation" className="on-dark flex flex-col gap-6 rounded-[30px] bg-graphite px-5 py-10 text-fog sm:px-10">
             <div className="flex flex-col gap-3">

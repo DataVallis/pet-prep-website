@@ -1,4 +1,6 @@
 import "server-only";
+import { existsSync } from "node:fs";
+import { join } from "node:path";
 import { compareSlug, pathFor, pathForBreed, pathForSpecies, type Locale } from "@/i18n/config";
 import en from "@/content/registry/en";
 import sl from "@/content/registry/sl";
@@ -12,6 +14,7 @@ import {
   type Activity,
   type Availability,
   type Breed,
+  type Portrait,
   type FactItem,
   type Range,
   type SexValue,
@@ -31,8 +34,55 @@ export function fmt(locale: Locale): Fmt {
   };
 }
 
-/** Last content update of the register (sitemap lastmod, JSON-LD dateModified). */
+/** Last content update of the register (sitemap lastmod, JSON-LD dateModified, "Updated" on pages). */
 export const registryUpdated = "2026-10-10";
+
+const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
+/** A breed's last update: its own `updated` from the export when present, else the register date. */
+export function breedUpdated(b: Breed): string {
+  if (b.updated !== undefined && !ISO_DATE.test(b.updated)) throw new Error(`registry: ${b.id}.updated must be YYYY-MM-DD, got "${b.updated}"`);
+  return b.updated ?? registryUpdated;
+}
+/** Latest update of any breed of a species (catalogue pages). */
+export function speciesUpdated(sp: Species): string {
+  return breedsOf(sp.id).map(breedUpdated).reduce((a, b) => (b > a ? b : a), registryUpdated);
+}
+
+const intlDate: Record<Locale, string> = { en: "en-GB", sl: "sl-SI" };
+/** "10 October 2026" / "10. 10. 2026". */
+export function formatDay(locale: Locale, iso: string): string {
+  const d = new Date(`${iso}T12:00:00Z`);
+  return locale === "sl"
+    ? `${d.getUTCDate()}. ${d.getUTCMonth() + 1}. ${d.getUTCFullYear()}`
+    : new Intl.DateTimeFormat(intlDate[locale], { dateStyle: "long", timeZone: "UTC" }).format(d);
+}
+
+// ─── breed portrait (optional AI illustration from the export) ────────────────
+
+export type PortraitView = { src: string; width: number; height: number; alt: string; caption: string };
+
+/** Public path of a portrait: public/animals/<species EN slug>/<file>. */
+export function portraitSrc(b: Breed, p: Portrait): string {
+  return `/animals/${getSpecies(b.species).slug.en}/${p.file}`;
+}
+
+function portraitView(locale: Locale, b: Breed): PortraitView | null {
+  const p = b.portrait;
+  if (!p) return null;
+  const c = copies[locale];
+  return { src: portraitSrc(b, p), width: p.width, height: p.height, alt: c.page.portraitAlt(b.name[locale]), caption: c.page.portraitCaption };
+}
+
+/** Fails the build for a portrait that is not a labelled AI illustration or whose file is missing. */
+function checkPortrait(b: Breed) {
+  const p = b.portrait;
+  if (!p) return;
+  if (p.kind !== "ai_illustration") throw new Error(`registry: ${b.id}.portrait.kind must be "ai_illustration"`);
+  if (!/^[\w.-]+\.(webp|avif|png|jpe?g)$/.test(p.file)) throw new Error(`registry: ${b.id}.portrait.file "${p.file}" is not a plain image file name`);
+  if (!(p.width > 0 && p.height > 0)) throw new Error(`registry: ${b.id}.portrait needs width and height`);
+  const file = join(process.cwd(), "public", portraitSrc(b, p));
+  if (!existsSync(file)) throw new Error(`registry: ${b.id}.portrait file is missing: public${portraitSrc(b, p)}`);
+}
 
 // ─── words for registry values ───────────────────────────────────────────────
 
@@ -108,10 +158,17 @@ export const compareHref = (locale: Locale, s: Species) => pathForBreed(locale, 
 
 // ─── breed page ──────────────────────────────────────────────────────────────
 
+export type GlanceRow = { key: string; label: string; values: FactLine[] };
+export type QaItem = { q: string; lead: string; items: FactLine[]; note?: string; tail?: { lead: string; items: FactLine[] } };
+
 export type BreedView = {
   breed: Breed;
   species: Species;
   name: string;
+  updated: string;
+  portrait: PortraitView | null;
+  glance: GlanceRow[];
+  faq: QaItem[];
   aka?: string;
   intro: string[];
   href: string;
@@ -129,6 +186,85 @@ export type BreedView = {
   sources: Source[];
 };
 
+/** Label of a fact field in the "at a glance" list; statement fields use their group heading. */
+function fieldLabel(locale: Locale, b: Breed, field: string): string {
+  const c = copies[locale];
+  const group = b.facts.find((x) => x.field === field)?.group ?? field;
+  return c.fields[field] ?? need(c.groups, group, "group");
+}
+
+/**
+ * "At a glance": the species' key fields (its comparison rows, chosen in the export), each with
+ * every sourced value of that field — where sources differ, all are listed.
+ */
+function glanceRows(locale: Locale, b: Breed): GlanceRow[] {
+  const sp = getSpecies(b.species);
+  return sp.compare_fields
+    .filter((k) => k !== "game_activity")
+    .map((k) => {
+      const facts = b.facts.filter((x) => x.field === k);
+      return {
+        key: k,
+        label: fieldLabel(locale, b, k),
+        values: facts.map((x) => ({ text: x.kind === "statement" ? factText(locale, x) : valueText(locale, x), sources: refs(x.source_ids) })),
+      };
+    })
+    .filter((r) => r.values.length > 0);
+}
+
+/** Topics of the generated breed Q&A and the fact fields that answer them (in this order). */
+const FAQ_TOPICS: { topic: "exercise" | "lifespan" | "size" | "grooming"; fields: string[] }[] = [
+  { topic: "exercise", fields: ["exercise"] },
+  { topic: "lifespan", fields: ["lifespan"] },
+  { topic: "size", fields: ["size", "weight"] },
+  { topic: "grooming", fields: ["grooming_frequency", "grooming_sources_differ", "grooming_level", "shedding", "coat"] },
+];
+
+/**
+ * 3–5 questions per breed, generated only from sourced registry facts: each answer lists every
+ * source's value with its source ids; a topic without facts has no question.
+ */
+function breedFaq(locale: Locale, b: Breed, tagLine: (t: { tag: string; source_ids: string[] }) => FactLine): QaItem[] {
+  const c = copies[locale];
+  const q = c.page.qa;
+  const name = b.name[locale];
+  const out: QaItem[] = [];
+  for (const { topic, fields } of FAQ_TOPICS) {
+    const facts = fields.flatMap((f) => b.facts.filter((x) => x.field === f));
+    if (!facts.length) continue;
+    const labelled = fields.filter((f) => b.facts.some((x) => x.field === f)).length > 1;
+    // Several fields: the label once per field ("Adult weight: …; …"), then only values.
+    const seen = new Set<string>();
+    const items = facts.map((x) => {
+      const first = !seen.has(x.field);
+      seen.add(x.field);
+      return { text: x.kind === "statement" || (labelled && first) ? factText(locale, x) : valueText(locale, x), sources: refs(x.source_ids) };
+    });
+    const distinct = new Set(facts.filter((x) => x.field === fields[0] || !labelled).map((x) => JSON.stringify(x.value))).size;
+    out.push({ q: q.questions[topic](name), lead: q.leads[topic](name), items, ...(facts.length > 1 && distinct > 1 && !labelled ? { note: q.differ } : {}) });
+  }
+  const { suits, consider } = b.suitability;
+  if (suits.length) {
+    out.push({
+      q: q.questions.suits(name),
+      lead: q.leads.suits(name),
+      items: suits.map(tagLine),
+      ...(consider.length ? { tail: { lead: q.considerLead, items: consider.map(tagLine) } } : {}),
+    });
+  }
+  return out;
+}
+
+/** One Q&A answer as plain text with its sources (JSON-LD, llms.txt). */
+export function qaText(locale: Locale, a: QaItem): string {
+  const c = copies[locale];
+  const cite = (l: FactLine) => `${l.text} (${l.sources.map((s) => `${s.publisher} ${s.id}`).join("; ")})`;
+  let t = `${a.lead} ${a.items.map(cite).join(c.page.qa.join)}.`;
+  if (a.tail) t += ` ${a.tail.lead} ${a.tail.items.map(cite).join(c.page.qa.join)}.`;
+  if (a.note) t += ` ${a.note}`;
+  return t;
+}
+
 export function buildBreedView(locale: Locale, b: Breed): BreedView {
   const c = copies[locale];
   const f = fmt(locale);
@@ -138,10 +274,15 @@ export function buildBreedView(locale: Locale, b: Breed): BreedView {
   const intro = c.intros[b.id];
   const g = b.game;
   const stageLabels = need(c.stageLabels, sp.id, "species stage labels");
+  const tagLine = (t: { tag: string; source_ids: string[] }): FactLine => ({ text: tagLabels[t.tag], sources: refs(t.source_ids) });
   return {
     breed: b,
     species: sp,
     name: b.name[locale],
+    updated: breedUpdated(b),
+    portrait: portraitView(locale, b),
+    glance: glanceRows(locale, b),
+    faq: breedFaq(locale, b, tagLine),
     aka: intro?.aka ?? ([...b.synonyms[locale]].join(", ") || undefined),
     intro: intro?.text ?? [],
     href: breedHref(locale, b),
@@ -202,6 +343,8 @@ export type IndexItem = {
   t: string[];
   /** one-line summary */
   l: string;
+  /** portrait thumbnail (optional AI illustration) */
+  p?: { src: string; w: number; h: number };
 };
 
 const SIZE_ORDER = ["toy", "small", "medium", "large", "giant"];
@@ -240,6 +383,7 @@ export function catalogueIndex(locale: Locale, sp: Species): IndexItem[] {
       f: b.facets,
       t: b.suitability.suits.map((x) => x.tag),
       l: lineParts.join(" · "),
+      ...(b.portrait ? { p: { src: portraitSrc(b, b.portrait), w: b.portrait.width, h: b.portrait.height } } : {}),
     };
   });
 }
@@ -294,6 +438,8 @@ function validate() {
       compareData(locale, sp);
       activityText(locale, sp.free_plan.adult_activity);
       for (const b of breedsOf(sp.id)) {
+        checkPortrait(b);
+        breedUpdated(b);
         buildBreedView(locale, b);
         const intro = c.intros[b.id];
         for (const s of intro?.sources ?? []) {
@@ -321,12 +467,22 @@ export function breedMarkdown(locale: Locale, b: Breed, url: string): string {
   const c = copies[locale];
   const v = buildBreedView(locale, b);
   const labels = registry.suitability_labels[locale];
-  const out = [`# ${v.name} — ${v.species.name[locale].one} · ${c.page.eyebrow}`, `URL: ${url}`, `${v.availability.label}: ${v.availability.text}`, ...v.intro];
+  const out = [
+    `# ${v.name} — ${v.species.name[locale].one} · ${c.page.eyebrow}`,
+    `URL: ${url}`,
+    `${c.page.updated}: ${v.updated}`,
+    `${v.availability.label}: ${v.availability.text}`,
+    ...v.intro,
+  ];
+  if (v.glance.length) {
+    out.push(`## ${c.page.glanceTitle}`, v.glance.map((r) => `- **${r.label}:** ${r.values.map((l) => `${l.text} (${l.sources.map((s) => `${s.publisher} ${s.id}`).join("; ")})`).join("; ")}`).join("\n"));
+  }
   if (v.suits.length || v.consider.length) {
     out.push(`## ${c.page.suitabilityTitle}`, `${labels.suits_title} ${v.suits.map((t) => t.label).join(", ") || "—"}\n${labels.consider_title} ${v.consider.map((t) => t.label).join(", ") || "—"}`);
   }
   out.push(`## ${c.page.needsTitle}`);
   for (const g of v.groups) out.push(`**${g.title}**\n${[...g.lines, ...g.general].map(mdLine).join("\n")}`);
+  if (v.faq.length) out.push(`## ${c.page.qa.title}`, v.faq.map((a) => `**${a.q}**\n${qaText(locale, a)}`).join("\n\n"));
   out.push(`## ${c.page.simTitle} (${c.page.simBadge})`);
   if (v.game) {
     out.push(

@@ -52,7 +52,7 @@ const en: Dictionary = {
     tagline: "Ready for a pet. There for its whole life.",
     groups: [
       { title: "Product", links: ["howItWorks", "parents", "animals", "afterAdoption", "pricing", "faq"] },
-      { title: "Company", links: ["partners", "investors", "contact"] },
+      { title: "Company", links: ["about", "partners", "investors", "contact"] },
       { title: "Trust", links: ["privacy", "terms", "childSafety"] },
     ],
     rights: "All rights reserved.",
@@ -91,7 +91,7 @@ const en: Dictionary = {
       text: "For families who want the full experience and a certificate at the end.",
       features: [
         "Everything in Mixed breed",
-        "Demanding breeds, such as the Border Collie",
+        "Demanding breeds, such as the [Border Collie](breed:border_collie)",
         "Your pet's moods as AI videos",
         "Certificate of Responsibility",
         "One price when siblings share a pet",
@@ -126,7 +126,7 @@ const en: Dictionary = {
     meta: {
       title: "PetPrep — Is your child ready for a pet? Find out in 12 weeks.",
       description:
-        "Before a real pet comes home, your child cares for a lifelike AI pet for 12 weeks — feeding, cleaning up and real walks. You see every day whether they are truly ready.",
+        "Before a real pet comes home, your child cares for a lifelike AI pet for 12 weeks: meals, cleaning up, real walks. You see daily if they are truly ready.",
     },
     hero: {
       eyebrow: "The 12-week PetPrep Challenge",
@@ -211,7 +211,7 @@ const en: Dictionary = {
         },
       ],
       how: "How to start: create an account as a parent, add yourself as the carer profile and log in with the 6-digit code — on the same phone or another one.",
-      note: "Available today: the mixed breed (free) and the Border Collie (in the 12-week challenge).",
+      note: "Available today: the mixed breed (free) and the [Border Collie](breed:border_collie) (in the 12-week challenge).",
       link: "How to use PetPrep on your own",
     },
     after: {
@@ -230,7 +230,12 @@ const en: Dictionary = {
     species: {
       title: "Dogs today. More species to come.",
       text: "Built for families worldwide, in their own language.",
-      chips: [{ label: "Dog · available", active: true }, { label: "Cat · next" }, { label: "More species · planned" }],
+      chips: [
+        { label: "Dog · available", active: true, link: "species:dog" },
+        { label: "Border Collie · in the challenge", link: "breed:border_collie" },
+        { label: "Cat · next", link: "species:cat" },
+        { label: "More species · planned", link: "page:animals" },
+      ],
     },
     pricing: { eyebrow: "Pricing", title: "Simple, fair pricing." },
     faq: { title: "Questions parents ask", link: "All questions" },
@@ -241,7 +246,7 @@ const en: Dictionary = {
       meta: {
         title: "How PetPrep works — a 12-week pet readiness challenge",
         description:
-          "How the PetPrep challenge works: choosing a pet, the Responsibility Contract, daily care, real walks, quiet hours, consequences and the Certificate of Responsibility.",
+          "How the 12-week PetPrep challenge works: choosing a pet, the Responsibility Contract, daily care, real walks, quiet hours and the certificate.",
       },
       eyebrow: "How it works",
       title: "Twelve weeks that show what a promise is worth.",
@@ -280,7 +285,7 @@ const en: Dictionary = {
             ["Walk", "6,000 real steps (puppies start at 2,000)", "No walk at all → ill the next morning"],
             ["Cleaning", "When the pet makes a mess — never during quiet hours", "No food or water until it is clean"],
           ],
-          note: "Puppies eat 4, then 3, then 2 times a day and can only hold it for about one hour per month of age. A Border Collie needs 12,000 steps and gets hungry faster.",
+          note: "Puppies eat 4, then 3, then 2 times a day and can only hold it for about one hour per month of age. A [Border Collie](breed:border_collie) needs 12,000 steps and gets hungry faster.",
         },
         {
           type: "cards",
@@ -372,7 +377,7 @@ const en: Dictionary = {
       meta: {
         title: "When it comes home — the PetPrep AI assistant for your real pet",
         description:
-          "When your family gets a real pet, PetPrep becomes an AI assistant: smart-collar activity, alerts, AI first contact with a route to a real vet, growth and nutrition.",
+          "When your family gets a real pet, PetPrep becomes an AI assistant: smart-collar activity, alerts, AI first contact with a real vet, growth and food.",
       },
       eyebrow: "When it comes home",
       title: "The simulation ends. The care does not.",
@@ -424,7 +429,7 @@ const en: Dictionary = {
           heading: "Pricing questions",
           items: [
             { q: "Is the free version really free?", a: "Yes. The mixed-breed pet is free forever, with the full simulation, real walks and the parent dashboard." },
-            { q: "What does the challenge include?", a: "Demanding breeds such as the Border Collie, your pet's moods as AI videos, the Certificate of Responsibility at the end and access for both parents." },
+            { q: "What does the challenge include?", a: "Demanding breeds such as the [Border Collie](breed:border_collie), your pet's moods as AI videos, the Certificate of Responsibility at the end and access for both parents." },
             { q: "Do siblings pay twice?", a: "No. Children who share one pet pay one price. A second pet in the family is a separate challenge." },
             { q: "How do I pay?", a: "In the app, through the App Store or Google Play. Refunds are handled by your store account." },
             { q: "Is it the same for adults?", a: "Yes. If you use PetPrep on your own to try a breed, the same applies: the mixed breed is free forever and the 12-week challenge costs €49.99 per pet." },
@@ -436,7 +441,7 @@ const en: Dictionary = {
       meta: {
         title: "FAQ — questions parents ask about PetPrep",
         description:
-          "Answers about PetPrep: how much time it takes, using it as an adult without kids, privacy, location, steps, siblings, what happens if a child fails, languages, species and life with your real pet.",
+          "Answers about PetPrep: daily time, using it as an adult, privacy and location, steps, siblings, what if a child fails, languages, species, real pets.",
       },
       eyebrow: "FAQ",
       title: "Questions parents ask.",
@@ -454,7 +459,7 @@ const en: Dictionary = {
             { q: "Can siblings share a pet?", a: "Yes. Each child signs their own contract, every action is credited to whoever did it and each child gets their own fair Care Score." },
             { q: "What about school and bedtime?", a: "Set quiet hours. The pet slows down, nothing is sent and meals that fall entirely in quiet hours are handled by you." },
             { q: "Is it scary for children?", a: "No. Consequences are real but gentle: the pet goes to the vet or the shelter, never anything graphic, and there is always a fresh start." },
-            { q: "Which animals are available?", a: "Dogs today: a free mixed breed and the Border Collie. Cats are next, more species are planned." },
+            { q: "Which animals are available?", a: "[Dogs](species:dog) today: a free mixed breed and the [Border Collie](breed:border_collie). [Cats](species:cat) are next, more species are planned. The [animal register](page:animals) lists every species and breed with sourced needs." },
             { q: "Which languages?", a: "English and Slovenian today. More languages are coming as PetPrep launches in new countries." },
             { q: "What happens after we get a real pet?", a: "PetPrep can become an AI assistant for your real pet. This part is in development." },
           ],
@@ -501,9 +506,9 @@ const en: Dictionary = {
     },
     investors: {
       meta: {
-        title: "Investors — PetPrep",
+        title: "Invest in PetPrep — from pet readiness to lifelong pet care",
         description:
-          "PetPrep turns a child's promise into objective proof before a family gets a pet, then becomes an AI assistant for the pet's whole life. Pre-launch; investor brief on request.",
+          "PetPrep turns a child's promise into proof before a family gets a pet, then becomes an AI assistant for its whole life. Pre-launch; brief on request.",
       },
       eyebrow: "Investors",
       title: "From a 12-week challenge to a 10–15-year relationship.",
@@ -547,7 +552,7 @@ const en: Dictionary = {
           heading: "Stage",
           paragraphs: [
             "PetPrep is pre-launch, with a closed beta planned. The first market is Slovenia and the region, followed by DACH and the UK; the product is built for global localization from day one.",
-            "Founder: David Tacer, full-stack developer and entrepreneur (Data Vallis, Maribor, Slovenia).",
+            "Founder: David Tacer, software developer and entrepreneur (DATA VALLIS d.o.o., Maribor, Slovenia). More [about us](page:about).",
           ],
         },
         { type: "callout", title: "Request the investor brief.", text: "We share the brief, deck and data room on request.", tone: "dark" },
@@ -555,11 +560,14 @@ const en: Dictionary = {
       ],
     },
     contact: {
-      meta: { title: "Contact — PetPrep", description: "Contact PetPrep: families, privacy, partners and investors." },
+      meta: {
+        title: "Contact PetPrep — families, privacy, partners, investors",
+        description: "Contact PetPrep: questions from families, privacy requests, partnerships and investor enquiries. We reply in English or Slovenian.",
+      },
       eyebrow: "Contact",
       title: "We read every message.",
       lead: "Write to the right inbox and we will reply as soon as we can, in English or Slovenian.",
-      blocks: [{ type: "contact" }],
+      blocks: [{ type: "contact" }, { type: "company", heading: "Company details" }],
     },
     privacy: {
       navLabel: "Privacy",
@@ -577,7 +585,7 @@ const en: Dictionary = {
             {
               heading: "1. Who is responsible",
               paragraphs: [
-                "The controller of personal data processed through the PetPrep app and this website is {company}, {city}, {country}{address}. Contact for privacy questions: {privacyEmail}.",
+                "The controller of personal data processed through the PetPrep app and this website is {company}, {address}; {companyIds}. Contact for privacy questions: {privacyEmail}.",
               ],
             },
             {
@@ -631,7 +639,7 @@ const en: Dictionary = {
                 "Hosting: Hetzner Online (servers in the EU).",
                 "AI image and video generation: fal.ai (receives only the pet description).",
                 "Push notifications: Apple Push Notification service and Firebase Cloud Messaging via Expo; notifications contain no names.",
-                "Purchases: Apple App Store and Google Play; subscription management through RevenueCat when purchases go live.",
+                "Purchases: Apple App Store and Google Play; purchase management through RevenueCat when purchases go live.",
                 "Early access emails: Klaviyo (receives only the email address and language you submit on this website).",
                 "Website cookie consent: CookieYes (stores your consent choice).",
                 "Website analytics: Google Analytics 4 by Google Ireland Ltd., only with your consent; IP addresses are not stored by Google Analytics 4.",
@@ -675,7 +683,10 @@ const en: Dictionary = {
     },
     terms: {
       navLabel: "Terms of use",
-      meta: { title: "Terms of Use — PetPrep", description: "The terms for using the PetPrep app and website." },
+      meta: {
+        title: "Terms of Use — PetPrep",
+        description: "The terms for using the PetPrep app and website: accounts, free and paid features, fair use, AI-generated content, liability and governing law.",
+      },
       eyebrow: "Legal",
       title: "Terms of Use",
       lead: "The rules for using PetPrep, written to be read.",
@@ -686,7 +697,7 @@ const en: Dictionary = {
             {
               heading: "1. The service",
               paragraphs: [
-                "PetPrep is provided by {company}, {city}, {country}{address}. PetPrep is a simulation that helps families and individuals find out whether they are ready to care for a real pet — children, and adults who want to test whether a breed suits them before buying or adopting. It is an educational tool, not veterinary advice, and it does not guarantee how anyone will care for a real animal.",
+                "PetPrep is provided by {company}, {address}; {companyIds}. PetPrep is a simulation that helps families and individuals find out whether they are ready to care for a real pet — children, and adults who want to test whether a breed suits them before buying or adopting. It is an educational tool, not veterinary advice, and it does not guarantee how anyone will care for a real animal.",
               ],
             },
             {
@@ -748,7 +759,7 @@ const en: Dictionary = {
       meta: {
         title: "Child safety — how PetPrep protects children",
         description:
-          "PetPrep's child-safety standards: parent-created accounts, code login without email, minimal data, no ads or chat, no location, verified media and parent controls.",
+          "How PetPrep protects children: parent-created accounts, code login without email, minimal data, no ads or chat, no location tracking, verified media.",
       },
       eyebrow: "Trust",
       title: "Built for children from the first line of code.",
@@ -787,7 +798,7 @@ const en: Dictionary = {
       meta: {
         title: "PetPrep animal register — species and breeds, with sources",
         description:
-          "Dogs, cats and their breeds: what each really needs, who it suits and how PetPrep simulates it. Search, filter and compare breeds; every fact links to its source.",
+          "Dogs, cats and their breeds: what each needs, who it suits and how PetPrep simulates it. Search and compare breeds; every fact links to its source.",
       },
       navLabel: "Animals",
       eyebrow: "Animal register",
@@ -795,6 +806,61 @@ const en: Dictionary = {
       lead:
         "What each species and breed in PetPrep really needs — from kennel clubs, cat registries, veterinary charities and studies, with every source linked. Plus the rules PetPrep uses to simulate it.",
       blocks: [{ type: "animalsHub" }],
+    },
+    about: {
+      meta: {
+        title: "About PetPrep — company, founder and how we source pet facts",
+        description:
+          "Who makes PetPrep: DATA VALLIS d.o.o. from Maribor, Slovenia, founder David Tacer, our mission, and how the animal register sources and checks its facts.",
+      },
+      navLabel: "About us",
+      eyebrow: "About us",
+      title: "Who makes PetPrep.",
+      lead: "PetPrep is made in Maribor, Slovenia, by a small software company. This page says who we are, why we build PetPrep and how we decide what the app and the animal register say about animals.",
+      blocks: [
+        {
+          type: "prose",
+          id: "company",
+          heading: "The company",
+          paragraphs: [
+            "PetPrep is a product of DATA VALLIS d.o.o., a software company with its registered office in Maribor, Slovenia. The same company operates this website and the PetPrep app and is the controller of personal data (see the [privacy policy](page:privacy)).",
+          ],
+        },
+        { type: "company" },
+        {
+          type: "prose",
+          id: "founder",
+          heading: "The founder",
+          paragraphs: [
+            "PetPrep was founded by David Tacer, a software developer and entrepreneur from Maribor, Slovenia.",
+          ],
+        },
+        {
+          type: "prose",
+          id: "mission",
+          heading: "Our mission",
+          paragraphs: [
+            "Every family hears “I promise I'll take care of it.” PetPrep turns that promise into proof: for 12 weeks a child — or an adult who wants a particular breed — cares for a lifelike AI pet with a real animal's daily needs, and the parent sees every day how the care holds.",
+            "Failing in the simulation is a good result too: the family finds out before a real animal suffers, and before committing to years of care and costs. When a real pet does come home, we want PetPrep to stay useful for the animal's whole life.",
+          ],
+        },
+        {
+          type: "list",
+          id: "methodology",
+          heading: "How the animal register is built",
+          intro: "The [animal register](page:animals) and the app use the same data. These rules decide what it may say:",
+          items: [
+            "Every fact names its source and links to it. Sources are graded by how much weight they deserve: A — breed standards, peer-reviewed papers and veterinary association guidelines; B — advice pages of veterinary hospitals, universities and national animal-welfare charities; C — secondary summaries (encyclopedias, press articles), used only together with an A or B source.",
+            "Only sourced facts are shown as facts. A value that no source supports is not published. Where sources disagree, each one is shown with its own value.",
+            "Game rules are not veterinary advice. Where the game needs a number that sources do not give exactly (for example a daily step goal), PetPrep decides it from the sources and shows it only under “How PetPrep simulates it”, labelled as a game rule.",
+            "Health notes are for information only. They summarise what the sources say about a breed and have not been reviewed by a veterinarian. For a real animal, ask a vet.",
+            "Breed standards are summarised in our own words, never copied at length, and a breed is never called “hypoallergenic”.",
+            "The register is generated from PetPrep's research data, the same data the app uses. When a source or a value changes, the register is exported again and each breed page shows the date of its last update. If you spot a mistake, write to hello@petprep.si.",
+          ],
+        },
+        { type: "callout", title: "Questions about PetPrep?", text: "Write to the right inbox on the contact page — families, privacy, partners or investors.", tone: "mint" },
+        { type: "contact" },
+      ],
     },
   },
 };

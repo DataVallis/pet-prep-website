@@ -69,7 +69,18 @@ export type Breed = {
   suitability: { suits: { tag: string; source_ids: SourceId[] }[]; consider: { tag: string; source_ids: SourceId[] }[] };
   game: Game | null;
   source_ids: SourceId[];
+  /**
+   * Optional fields the website reads when the export provides them (absent today):
+   * `updated` — ISO date of the breed's last content change (else the register date);
+   * `portrait` — an AI illustration at public/animals/<species EN slug>/<file>;
+   * `same_as` — authority URLs for the breed (Wikidata / Wikipedia), JSON-LD only.
+   */
+  updated?: string;
+  portrait?: Portrait | null;
+  same_as?: string[];
 };
+
+export type Portrait = { file: string; width: number; height: number; kind: "ai_illustration" };
 
 export type Species = {
   id: string;

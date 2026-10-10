@@ -10,6 +10,8 @@ function form(n: number, one: string, two: string, few: string, many: string): s
   return many;
 }
 type Fci = { number: number; group: number; origin: string };
+/** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
+const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 8: "prinašalci, šarivci in vodni psi" };
 const origins: Record<string, string> = { GB: "Velika Britanija" };
 
@@ -43,7 +45,7 @@ const sl: RegistryCopy = {
       `${count} ${form(count, "pasma", "pasmi", "pasme", "pasem")} (${many.toLowerCase()}) s potrebami iz virov, oznakami, za koga so primerne, in pravili, po katerih jih simulira PetPrep. Iščite, filtrirajte in primerjajte do tri.`,
     metaTitle: (many) => `${many} — register pasem z viri | PetPrep`,
     metaDescription: (many) =>
-      `${many}: poiščite in primerjajte pasme po potrebah, velikosti in tem, za koga so primerne. Vsako dejstvo ima vir; dodana so pravila, po katerih pasmo simulira PetPrep.`,
+      `${many}: poiščite in primerjajte pasme po potrebah, velikosti in tem, za koga so primerne. Vsako dejstvo ima vir, dodana so pravila igre PetPrep.`,
     searchLabel: "Iskanje pasme",
     searchPlaceholder: "Ime, npr. labradorec",
     filtersTitle: "Filtri",
@@ -65,6 +67,12 @@ const sl: RegistryCopy = {
     azTitle: "Vse pasme od A do Ž",
     azIntro: "Vse pasme v registru po abecedi.",
     freePlanTitle: "Brezplačni plan",
+    guideTitle: "Kako izbrati pasmo",
+    guide: () => [
+      "Začnite pri tem, kar lahko vaše gospodinjstvo da vsak dan: čas za gibanje, nego in prostor. Na strani vsake pasme so te potrebe zbrane na kratko, pri vsaki vrednosti pa je naveden vir; kjer se viri razlikujejo, so navedene vse vrednosti.",
+      "Kjer ima pasma velikostni razred (pri psih: zelo majhen, majhen, srednje velik, velik ali zelo velik), je to razred, ki ga navaja imenovani vir — običajno kinološka zveza — teže pa so razponi, ki jih navajajo viri, in ne naše ocene.",
+      "Oznake, kot je »Primerno za: aktivno družino«, so iste kot v aplikaciji in vsako podpirajo viri. Številke v razdelku »Kako to simulira PetPrep« so pravila igre PetPrep, ne navodila za nego. [Kako nastaja register](page:about#metodologija)",
+    ],
   },
   compare: {
     title: (many) => `Primerjava: ${many.toLowerCase()}`,
@@ -214,14 +222,22 @@ const sl: RegistryCopy = {
   },
   page: {
     eyebrow: "Register živali",
-    metaTitle: (name, one) => `${name} (${one.toLowerCase()}) — potrebe, viri in pravila igre | PetPrep`,
+    metaTitle: (name, one, species) =>
+      species === "dog"
+        ? `${name}: gibanje, velikost, življenjska doba in nega | PetPrep`
+        : species === "cat"
+          ? `${name}: velikost, življenjska doba in nega | PetPrep`
+          : `${name} (${one.toLowerCase()}): potrebe, življenjska doba in nega | PetPrep`,
     metaDescription: (name) =>
-      `${name}: kaj pasma potrebuje po podatkih iz virov — gibanje, nego, obroke, velikost, življenjsko dobo in za koga je primerna — ter kako jo simulira PetPrep.`,
+      `${name}: potrebe pasme iz virov — gibanje, nega, obroki, velikost, življenjska doba in za koga je primerna — ter kako jo simulira PetPrep.`,
     suitabilityTitle: "Za koga je primerna",
     suitabilityNote: "Iste oznake kot v aplikaciji. Vsako oznako podpirajo viri, navedeni na dnu strani.",
     suitabilityNone: "Za to pasmo še nimamo oznak, podprtih z viri.",
     needsTitle: "Kaj potrebuje",
-    needsIntro: "Iz standardov pasem, kinoloških in mačjih zvez ter veterinarskih dobrodelnih organizacij. Kjer se viri razlikujejo, navajamo vse.",
+    needsIntro: (species) =>
+      species === "cat"
+        ? "Iz podatkov mačjih zvez, veterinarskih organizacij in raziskav. Kjer se viri razlikujejo, navajamo vse."
+        : "Iz standardov pasem, kinoloških zvez, veterinarskih dobrodelnih organizacij in raziskav. Kjer se viri razlikujejo, navajamo vse.",
     general: (many) => `Splošna priporočila (${many.toLowerCase()}, ne posebej za to pasmo):`,
     noData: "V naših virih tega še ni.",
     simTitle: "Kako to simulira PetPrep",
@@ -243,6 +259,32 @@ const sl: RegistryCopy = {
     disclaimer: "PetPrep je simulacija za družine. Ta stran ni veterinarski nasvet — za pravo žival se posvetujte z veterinarjem ali klubom pasme.",
     backTo: (many) => `Vse pasme: ${many.toLowerCase()}`,
     compareWith: "Primerjaj z drugimi pasmami",
+    updated: "Posodobljeno",
+    glanceTitle: "Na kratko",
+    glanceNote: "Ključna dejstva iz virov na dnu strani. Kjer se viri razlikujejo, je navedena vsaka vrednost.",
+    portraitAlt: (name) => `${name} — ilustracija (AI)`,
+    portraitCaption: "Ilustracija, ustvarjena z AI",
+    qa: {
+      title: "Vprašanja in odgovori",
+      intro: "Odgovori temeljijo samo na dejstvih z viri s te strani; vsak odgovor navaja svoje vire.",
+      questions: {
+        exercise: (n) => `Koliko gibanja potrebuje ${mid(n)}?`,
+        lifespan: (n) => `Kako dolgo živi ${mid(n)}?`,
+        size: (n) => `Kakšne velikosti je ${mid(n)}?`,
+        grooming: (n) => `Koliko nege dlake potrebuje ${mid(n)}?`,
+        suits: (n) => `Za koga je ${mid(n)} primerna izbira?`,
+      },
+      leads: {
+        exercise: (n) => `Po naših virih potrebuje ${mid(n)} toliko gibanja:`,
+        lifespan: (n) => `Po naših virih je življenjska doba pasme ${mid(n)}:`,
+        size: (n) => `Velikost in teža pasme ${mid(n)} po naših virih:`,
+        grooming: (n) => `Dlaka in nega pasme ${mid(n)} po naših virih:`,
+        suits: (n) => `Po naših virih je ${mid(n)} primerna izbira za:`,
+      },
+      considerLead: "Upoštevajte:",
+      differ: "Viri navajajo različne vrednosti, zato navajamo vsako.",
+      join: "; ",
+    },
   },
   intros: {
     border_collie: {

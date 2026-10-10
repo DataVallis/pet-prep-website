@@ -4,11 +4,13 @@ import { notFound } from "next/navigation";
 import { isLocale, locales, pageSlugs, pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { breedsOf, registry, speciesBySlug, type Species } from "@/content/registry/registry";
-import { activityText, breedHref, compareHref, getRegistryCopy, registryUpdated, speciesHref } from "@/lib/registry/views";
+import { activityText, breedHref, catalogueIndex, compareHref, formatDay, getRegistryCopy, speciesHref, speciesUpdated } from "@/lib/registry/views";
 import { buildPathMetadata } from "@/lib/seo";
 import { breadcrumbsLd, collectionLd, graph } from "@/lib/jsonld";
 import { JsonLd } from "@/components/JsonLd";
 import { CatalogueExplorer } from "@/components/registry/CatalogueExplorer";
+import { PAGE_SIZE, recommendedOrder } from "@/components/registry/catalogue-shared";
+import { RichText } from "@/components/RichText";
 
 export const dynamicParams = false;
 
@@ -62,7 +64,7 @@ export default async function SpeciesCatalogue({ params }: PageProps<"/[locale]/
       title: c.catalogue.metaTitle(many),
       description: c.catalogue.metaDescription(many),
       items: breeds.map((b) => ({ name: b.name[locale], path: breedHref(locale, b) })),
-      dateModified: registryUpdated,
+      dateModified: speciesUpdated(species),
     }),
     breadcrumbsLd([
       { name: dict.common.breadcrumbHome, path: pathFor(locale, "home") },
@@ -71,9 +73,23 @@ export default async function SpeciesCatalogue({ params }: PageProps<"/[locale]/
     ]),
   );
 
+  // The first results page is rendered on the server; filter options are only those in the data.
+  const index = catalogueIndex(locale, species).sort(recommendedOrder);
   const suitsTags = Object.entries(registry.suitability_vocabulary)
-    .filter(([, kind]) => kind === "suits")
+    .filter(([tag, kind]) => kind === "suits" && index.some((it) => it.t.includes(tag)))
     .map(([tag]) => ({ value: tag, label: labels.tags[tag] }));
+  const facetOptions = species.facets
+    .map((k) => ({
+      key: k,
+      label: c.facets[k].label,
+      options: Object.entries(c.facets[k].values)
+        .filter(([value]) => index.some((it) => it.f[k] === value))
+        .map(([value, label]) => ({ value, label })),
+    }))
+    .filter((f) => f.options.length > 1);
+  const availability = (["in_app", "coming_soon", "info_only"] as const).map((v) => ({ value: v, label: c.availability[v].label }));
+  const availabilityFilter = availability.filter((o) => index.some((it) => it.av === o.value));
+  const updated = speciesUpdated(species);
 
   return (
     <>
@@ -98,15 +114,21 @@ export default async function SpeciesCatalogue({ params }: PageProps<"/[locale]/
           </p>
           <h1 className="h-display text-[clamp(36px,5.4vw,64px)]">{c.catalogue.title(many)}</h1>
           <p className="max-w-3xl text-[18px] leading-relaxed text-muted">{c.catalogue.lead(many, breeds.length)}</p>
+          <p className="text-sm text-muted">
+            {c.page.updated}: <time dateTime={updated}>{formatDay(locale, updated)}</time>
+          </p>
         </header>
 
         <CatalogueExplorer
           locale={locale}
           indexUrl={`/registry/${species.id}/index.${locale}.json`}
           compareHref={compareHref(locale, species)}
-          facets={species.facets.map((k) => ({ key: k, label: c.facets[k].label, options: Object.entries(c.facets[k].values).map(([value, label]) => ({ value, label })) }))}
+          initial={index.slice(0, PAGE_SIZE)}
+          total={index.length}
+          facets={facetOptions}
           tags={suitsTags}
-          availability={(["in_app", "coming_soon", "info_only"] as const).map((v) => ({ value: v, label: c.availability[v].label }))}
+          availability={availability}
+          availabilityFilter={availabilityFilter.length > 1 ? availabilityFilter : []}
           strings={{
             searchLabel: c.catalogue.searchLabel,
             searchPlaceholder: c.catalogue.searchPlaceholder,
@@ -160,6 +182,15 @@ export default async function SpeciesCatalogue({ params }: PageProps<"/[locale]/
               </div>
             ))}
           </div>
+        </section>
+
+        <section aria-labelledby="guide" className="mt-16 flex max-w-4xl flex-col gap-4">
+          <h2 id="guide" className="h-card text-[26px] leading-tight sm:text-[30px]">{c.catalogue.guideTitle}</h2>
+          {c.catalogue.guide(many).map((t) => (
+            <p key={t} className="text-[16px] leading-relaxed text-[#2a312d]">
+              <RichText text={t} locale={locale} />
+            </p>
+          ))}
         </section>
 
         <section className="mt-12 rounded-[22px] border border-line bg-white p-6">
