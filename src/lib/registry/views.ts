@@ -1,5 +1,6 @@
 import "server-only";
-import { existsSync } from "node:fs";
+import { createHash } from "node:crypto";
+import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { compareSlug, pathFor, pathForBreed, pathForSpecies, type Locale } from "@/i18n/config";
 import en from "@/content/registry/en";
@@ -65,8 +66,27 @@ const PORTRAIT_KINDS: readonly PortraitKind[] = ["ai_photo", "ai_illustration"];
 export type PortraitView = { src: string; width: number; height: number; alt: string; caption: string };
 
 /** Public path of a portrait: public/animals/<species EN slug>/<file>. */
-export function portraitSrc(b: Breed, p: Portrait): string {
+/** Public path of a portrait file (no query) — used for the build-time existence check. */
+function portraitPath(b: Breed, p: Portrait): string {
   return `/animals/${getSpecies(b.species).slug.en}/${p.file}`;
+}
+
+const portraitVersions = new Map<string, string>();
+
+/**
+ * Portrait URL with a content hash (`?v=`): a regenerated image keeps its file name,
+ * so without it browsers and the image optimizer keep showing the old picture
+ * (David 2026-10-10: the Maine Coon photo did not change after the switch to photos).
+ */
+export function portraitSrc(b: Breed, p: Portrait): string {
+  const path = portraitPath(b, p);
+  let v = portraitVersions.get(path);
+  if (v === undefined) {
+    const file = join(process.cwd(), "public", path);
+    v = existsSync(file) ? createHash("sha256").update(readFileSync(file)).digest("hex").slice(0, 12) : "";
+    portraitVersions.set(path, v);
+  }
+  return v ? `${path}?v=${v}` : path;
 }
 
 function portraitView(locale: Locale, b: Breed): PortraitView | null {
@@ -83,8 +103,8 @@ function checkPortrait(b: Breed) {
   if (!PORTRAIT_KINDS.includes(p.kind)) throw new Error(`registry: ${b.id}.portrait.kind must be one of ${PORTRAIT_KINDS.join(", ")}`);
   if (!/^[\w.-]+\.(webp|avif|png|jpe?g)$/.test(p.file)) throw new Error(`registry: ${b.id}.portrait.file "${p.file}" is not a plain image file name`);
   if (!(p.width > 0 && p.height > 0)) throw new Error(`registry: ${b.id}.portrait needs width and height`);
-  const file = join(process.cwd(), "public", portraitSrc(b, p));
-  if (!existsSync(file)) throw new Error(`registry: ${b.id}.portrait file is missing: public${portraitSrc(b, p)}`);
+  const file = join(process.cwd(), "public", portraitPath(b, p));
+  if (!existsSync(file)) throw new Error(`registry: ${b.id}.portrait file is missing: public${portraitPath(b, p)}`);
 }
 
 // ─── words for registry values ───────────────────────────────────────────────

@@ -10,6 +10,8 @@ const nextConfig: NextConfig = {
   },
   images: {
     formats: ["image/avif", "image/webp"],
+    // Breed portraits carry a content hash (?v=…) so a regenerated photo is never served from cache.
+    localPatterns: [{ pathname: "/animals/**" }, { pathname: "/**", search: "" }],
   },
   async redirects() {
     return [
