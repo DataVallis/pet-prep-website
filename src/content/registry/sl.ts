@@ -211,7 +211,9 @@ const sl: RegistryCopy = {
     learning: (p, f) =>
       p.multiplier < 1
         ? `Ukaze se uči počasneje kot mešanček iz brezplačnega plana (${f.num(p.multiplier)}-kratnik njegove hitrosti).`
-        : `Ukaze se uči ${f.num(p.multiplier)}-krat hitreje kot mešanček iz brezplačnega plana.`,
+        : p.multiplier === 1
+          ? "Ukaze se uči enako hitro kot mešanček iz brezplačnega plana."
+          : `Ukaze se uči ${f.num(p.multiplier)}-krat hitreje kot mešanček iz brezplačnega plana.`,
     senior_share: (p, f) => `Starejši pes postane v ${p.months}. mesecu (${f.num(p.months / 12, 1)} leta) — v zadnji četrtini mediane življenjske dobe pasme.`,
     walk_sensor: () => "Sprehodi štejejo prave korake s senzorja gibanja v telefonu — brez GPS.",
     play_instead_of_steps: (p, f) =>
@@ -232,6 +234,9 @@ const sl: RegistryCopy = {
     hind_leg_conformation: "The Royal Kennel Club pri tej pasmi opozarja na obliko zadnjih nog in način gibanja; zdrav pes ima raven hrbet in zmerno zakotene zadnje noge.",
     hip_elbow_dysplasia: "Lahko je nagnjen k displaziji kolkov in komolcev; vzrediteljem svetujejo, naj psom pred paritvijo pregledajo kolke in komolce.",
     degenerative_myelopathy: "Pri pasmi se pojavlja degenerativna mielopatija, bolezen hrbtenjače, ki počasi slabi zadnje noge; na voljo je test DNK.",
+    heart_valve_disease: "Bolezen srca zaradi oslabljene mitralne zaklopke je pri tej pasmi velika težava; pogosto jo najprej opazijo kot srčni šum, zato naj imajo psi za vzrejo najprej pregledano srce.",
+    chiari_syringomyelia: "Pri pasmi se pojavljata Chiarijeva malformacija in siringomielija, boleča bolezen z votlinicami, polnimi tekočine, v hrbtenjači ob možganih; povezana je z obliko lobanje, ugotovijo jo z MRI.",
+    eye_conditions: "Pri pasmi se pojavljajo dedne bolezni oči, na primer siva mrena, izbuljene ali razdražene oči pa so opozorilo pri presoji; na voljo so pregledi oči in testi DNK.",
   },
   page: {
     eyebrow: "Register živali",
@@ -338,6 +343,14 @@ const sl: RegistryCopy = {
         "Potrebuje vsaj dve uri gibanja na dan, primeren je za veliko hišo z vrtom in mu močno izpada dlaka. Britanske dobrodelne organizacije pišejo, da so nekateri lahko odlični družinski psi, ob majhnih otrocih pa naj bodo vedno pod nadzorom. The Royal Kennel Club vzrediteljem svetuje, naj psom pred paritvijo pregledajo kolke in komolce, in pri pasmi opozarja na obliko zadnjih nog.",
       ],
       sources: ["S95", "S97", "S99", "S100"],
+    },
+    cavalier_king_charles_spaniel: {
+      aka: "Cavalier King Charles Spaniel, kavalir",
+      text: [
+        "Kavalir King Charles španjel je majhen pritlikavi španjel iz Velike Britanije z dolgimi, pernatimi ušesi in dolgo, svilnato dlako v štirih barvah: blenheim, rubinasta, črno-rjava in tribarvna. Standard ga opisuje kot živahnega, gracioznega psa z nežnim izrazom — športnega, ljubečega, prijaznega in neustrašnega.",
+        "Potrebuje okoli eno uro gibanja na dan, lahko živi v stanovanju in velja za dobrega z otroki, a naj bo igra pod nadzorom in ne mara biti sam. Dlako je treba česati večkrat na teden. Britanski viri kot glavni zdravstveni težavi navajajo bolezen srčne zaklopke in bolečo bolezen hrbtenjače, povezano z obliko lobanje, zato vzrediteljem svetujejo pregled srca in MRI psov.",
+      ],
+      sources: ["S103", "S105", "S106", "S108", "S110"],
     },
   },
 };

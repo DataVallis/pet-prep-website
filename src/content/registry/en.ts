@@ -202,7 +202,9 @@ const en: RegistryCopy = {
     learning: (p, f) =>
       p.multiplier < 1
         ? `Learns commands more slowly than the mixed breed of the free plan (${f.num(p.multiplier)}× its speed).`
-        : `Learns commands ${f.num(p.multiplier)}× as fast as the mixed breed of the free plan.`,
+        : p.multiplier === 1
+          ? "Learns commands as fast as the mixed breed of the free plan."
+          : `Learns commands ${f.num(p.multiplier)}× as fast as the mixed breed of the free plan.`,
     senior_share: (p, f) => `Becomes a senior in month ${p.months} (${f.num(p.months / 12, 1)} years) — the last quarter of the breed's median lifespan.`,
     walk_sensor: () => "Walks count real steps from the phone's motion sensor — no GPS.",
     play_instead_of_steps: (p, f) =>
@@ -223,6 +225,9 @@ const en: RegistryCopy = {
     hind_leg_conformation: "The Royal Kennel Club names the shape of the hind legs and the way the dog moves as a point of concern in this breed; a sound dog has a level back and moderate hind legs.",
     hip_elbow_dysplasia: "Can be prone to hip and elbow dysplasia; breeders are advised to have the parents' hips and elbows tested before breeding.",
     degenerative_myelopathy: "Degenerative myelopathy, a disease of the spinal cord that slowly weakens the back legs, occurs in the breed; a DNA test is available.",
+    heart_valve_disease: "Heart disease caused by a weakening mitral valve is a big problem in this breed; it is often first noticed as a heart murmur, and breeding dogs should be heart-graded first.",
+    chiari_syringomyelia: "Chiari-like malformation and syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, occurs in the breed and is linked to skull shape; it is diagnosed by MRI scan.",
+    eye_conditions: "Inherited eye conditions such as cataracts occur in the breed, and protruding or irritated eyes are a point of concern; eye testing and DNA tests are available.",
   },
   page: {
     eyebrow: "Animal register",
@@ -329,6 +334,14 @@ const en: RegistryCopy = {
         "It needs at least two hours of exercise a day, suits a large house with a garden and sheds a lot. UK charities say some can make great family pets but should always be supervised around young children. The Royal Kennel Club asks breeders to test the parents' hips and elbows and lists the shape of the hind legs as a point of concern in the breed.",
       ],
       sources: ["S95", "S97", "S99", "S100"],
+    },
+    cavalier_king_charles_spaniel: {
+      aka: "Cavalier, CKCS",
+      text: [
+        "The Cavalier King Charles Spaniel is a small toy spaniel from Great Britain with long, feathered ears and a long, silky coat in four colours: Blenheim, ruby, black and tan, and tricolour. Its standard describes an active, graceful dog with a gentle expression — sporting, affectionate, friendly and fearless.",
+        "It needs about an hour of exercise a day, can live in a flat and is known to be good around children, though play should be supervised and it does not like being left alone. Its coat needs brushing more than once a week. UK sources name heart valve disease and a painful spinal condition linked to skull shape as the main health concerns, so breeders are asked to heart-test and MRI-scan their dogs.",
+      ],
+      sources: ["S103", "S105", "S106", "S108", "S110"],
     },
   },
 };
