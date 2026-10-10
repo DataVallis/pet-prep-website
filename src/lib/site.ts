@@ -5,16 +5,26 @@ export const site = {
   name: "PetPrep",
   /** Canonical origin, no trailing slash. Override with NEXT_PUBLIC_SITE_URL. */
   url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://petprep.si").replace(/\/$/, ""),
-  /** Company operating the service. */
+  /** Company operating the service (legal identity confirmed by David, 2026-10-10). */
   company: {
+    /** Short trading name used in running text. */
     name: "Data Vallis",
+    /** Registered legal name (AJPES). */
+    legalName: "DATA VALLIS d.o.o.",
     founder: "David Tacer",
+    street: "Ulica Šercerjeve brigade 5",
+    postalCode: "2000",
     city: "Maribor",
-    country: "Slovenia",
+    country: { en: "Slovenia", sl: "Slovenija" },
     countryCode: "SI",
-    // TODO(David): full registered address and registration / VAT number for the legal pages.
-    address: "",
-    registrationNumber: "",
+    /** ID za DDV (VAT ID); the company is registered for VAT. */
+    vatId: "SI89424999",
+    /** Davčna številka (tax number) = the VAT ID without the country prefix. */
+    taxNumber: "89424999",
+    vatRegistered: true,
+    /** Matična številka (company registration number). */
+    registrationNumber: "8552967000",
+    url: "https://datavallis.com",
   },
   // TODO(David): create these mailboxes (or change the addresses).
   email: {
@@ -38,14 +48,19 @@ export const site = {
   },
   /** Legal texts are drafts until reviewed by a lawyer; a notice is shown while false. */
   legalReviewed: false,
-  legalUpdated: "2026-10-09",
+  /** Last change of the privacy policy and terms (shown on those pages only). */
+  legalUpdated: "2026-10-10",
   /** Consent banner (CookieYes) and Google Analytics 4. Analytics only runs after consent (Consent Mode v2). */
   cookieyesScript: "https://cdn-cookieyes.com/client_data/62f2cbd0a9ac6653c320370d143f369f/script.js",
   gaMeasurementId: "G-CGSBN9N46F",
   price: { challenge: 49.99, currency: "EUR", weeks: 12 },
 } as const;
 
+/**
+ * Absolute URL of a path. The home page is the bare origin (no trailing slash), the same form
+ * Next.js prints in the canonical link, so canonical, og:url, sitemap and JSON-LD all match.
+ */
 export function absoluteUrl(path: string): string {
-  if (path === "/" || path === "") return site.url + "/";
+  if (path === "/" || path === "") return site.url;
   return site.url + (path.startsWith("/") ? path : `/${path}`);
 }

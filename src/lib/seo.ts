@@ -34,12 +34,12 @@ export function buildPathMetadata(opts: {
   title: string;
   description: string;
   noIndex?: boolean;
-  /** Share image of another route (breed pages reuse their species image: one image per species, cheap at 300 breeds). */
-  imagePath?: string;
+  /** Share image at another path (breed portrait, generated breed card, or the species image). */
+  image?: { path: string; width: number; height: number; alt: string };
 }): Metadata {
   const m = buildMetadataFor({ ...opts, path: opts.paths[opts.locale], languages: pathAlternates(opts.paths) });
-  if (!opts.imagePath) return m;
-  const image = { url: absoluteUrl(opts.imagePath), width: 1200, height: 630, alt: site.name };
+  if (!opts.image) return m;
+  const image = { url: absoluteUrl(opts.image.path), width: opts.image.width, height: opts.image.height, alt: opts.image.alt || site.name };
   return { ...m, openGraph: { ...m.openGraph, images: [image] }, twitter: { ...m.twitter, images: [image.url] } };
 }
 
@@ -56,7 +56,8 @@ function buildMetadataFor(opts: {
   return {
     title: { absolute: title },
     description,
-    alternates: { canonical: url, languages: opts.languages },
+    // A noindex page (breed comparison) keeps its canonical but announces no language alternates.
+    alternates: opts.noIndex ? { canonical: url } : { canonical: url, languages: opts.languages },
     openGraph: {
       type: "website",
       siteName: site.name,

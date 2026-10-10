@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import { isLocale, locales, localeMeta } from "@/i18n/config";
 import { getDictionary } from "@/content";
@@ -9,27 +8,8 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { ConsentAndAnalytics } from "@/components/ConsentAndAnalytics";
+import { fontClasses } from "../fonts";
 import "../globals.css";
-
-const bricolage = localFont({
-  src: [
-    { path: "../../fonts/BricolageGrotesque-700.woff2", weight: "700", style: "normal" },
-    { path: "../../fonts/BricolageGrotesque-800.woff2", weight: "800", style: "normal" },
-  ],
-  variable: "--font-bricolage",
-  display: "swap",
-});
-
-const instrument = localFont({
-  src: [
-    { path: "../../fonts/InstrumentSans-400.woff2", weight: "400", style: "normal" },
-    { path: "../../fonts/InstrumentSans-500.woff2", weight: "500", style: "normal" },
-    { path: "../../fonts/InstrumentSans-600.woff2", weight: "600", style: "normal" },
-    { path: "../../fonts/InstrumentSans-700.woff2", weight: "700", style: "normal" },
-  ],
-  variable: "--font-instrument",
-  display: "swap",
-});
 
 export const dynamicParams = false;
 
@@ -67,7 +47,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
   if (!isLocale(locale)) notFound();
   const dict = getDictionary(locale);
   return (
-    <html lang={localeMeta[locale].htmlLang} className={`${bricolage.variable} ${instrument.variable}`}>
+    <html lang={localeMeta[locale].htmlLang} className={fontClasses}>
       <head>
         <ConsentAndAnalytics />
       </head>

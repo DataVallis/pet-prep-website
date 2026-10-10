@@ -1,11 +1,13 @@
 import type { Locale } from "@/i18n/config";
 import type { Block, Dictionary } from "@/content/types";
-import { fillPlaceholders } from "@/content";
+import { companyAddress, companyIdLabels, fillPlaceholders } from "@/content";
+import { site } from "@/lib/site";
 import { ContactCards } from "./ContactCards";
 import { AnimalsHub } from "./registry/AnimalsHub";
 import { Faq } from "./Faq";
 import { Pricing } from "./Pricing";
 import { Screen } from "./Screen";
+import { RichText } from "./RichText";
 
 const tagDot: Record<string, string> = { ok: "bg-ok", warn: "bg-warn-fill", danger: "bg-danger" };
 const tagBg: Record<string, string> = { ok: "bg-mint-tint", warn: "bg-warn-tint", danger: "bg-danger-tint" };
@@ -15,9 +17,36 @@ function Heading({ children }: { children?: string }) {
   return <h2 className="h-card text-[28px] leading-tight sm:text-[34px]">{children}</h2>;
 }
 
-function Intro({ children }: { children?: string }) {
+function Intro({ children, locale }: { children?: string; locale: Locale }) {
   if (!children) return null;
-  return <p className="max-w-3xl text-[17px] leading-relaxed text-muted">{children}</p>;
+  return (
+    <p className="max-w-3xl text-[17px] leading-relaxed text-muted">
+      <RichText text={children} locale={locale} />
+    </p>
+  );
+}
+
+/** The operator's legal identity as a definition list (footer-independent, quotable). */
+export function CompanyDetails({ locale }: { locale: Locale }) {
+  const c = site.company;
+  const l = companyIdLabels[locale];
+  const rows: [string, React.ReactNode][] = [
+    [l.legalName, c.legalName],
+    [l.address, companyAddress(locale)],
+    [l.vat, `${c.vatId}${c.vatRegistered ? ` (${l.vatPayer})` : ""}`],
+    [l.registration, c.registrationNumber],
+    [l.web, <a key="w" href={c.url} className="rich-link" rel="noopener">{c.url.replace(/^https:\/\//, "")}</a>],
+  ];
+  return (
+    <dl className="grid max-w-3xl gap-x-6 gap-y-2 rounded-[22px] border border-line bg-white p-6 text-[15px] sm:grid-cols-[max-content_1fr]">
+      {rows.map(([k, v]) => (
+        <div key={k} className="contents">
+          <dt className="font-semibold">{k}</dt>
+          <dd className="text-[#2a312d]">{v}</dd>
+        </div>
+      ))}
+    </dl>
+  );
 }
 
 function Tick() {
@@ -35,21 +64,21 @@ export function Blocks({ blocks, locale, dict }: { blocks: Block[]; locale: Loca
         switch (b.type) {
           case "prose":
             return (
-              <section key={i} className="flex flex-col gap-4">
+              <section key={i} id={b.id} className="flex scroll-mt-24 flex-col gap-4">
                 <Heading>{b.heading}</Heading>
                 <div className="flex max-w-3xl flex-col gap-4 text-[17px] leading-relaxed text-[#2a312d]">
-                  {b.paragraphs.map((p) => <p key={p}>{p}</p>)}
+                  {b.paragraphs.map((p) => <p key={p}><RichText text={p} locale={locale} /></p>)}
                 </div>
               </section>
             );
           case "list":
             return (
-              <section key={i} className="flex flex-col gap-5">
+              <section key={i} id={b.id} className="flex scroll-mt-24 flex-col gap-5">
                 <Heading>{b.heading}</Heading>
-                <Intro>{b.intro}</Intro>
+                <Intro locale={locale}>{b.intro}</Intro>
                 <ul className="grid max-w-4xl gap-3.5">
                   {b.items.map((item) => (
-                    <li key={item} className="flex gap-3 text-[17px] leading-relaxed"><Tick />{item}</li>
+                    <li key={item} className="flex gap-3 text-[17px] leading-relaxed"><Tick /><span><RichText text={item} locale={locale} /></span></li>
                   ))}
                 </ul>
               </section>
@@ -58,7 +87,7 @@ export function Blocks({ blocks, locale, dict }: { blocks: Block[]; locale: Loca
             return (
               <section key={i} className="flex flex-col gap-6">
                 <Heading>{b.heading}</Heading>
-                <Intro>{b.intro}</Intro>
+                <Intro locale={locale}>{b.intro}</Intro>
                 <div className={`grid gap-4 sm:grid-cols-2 ${b.columns === 3 ? "lg:grid-cols-3" : ""}`}>
                   {b.items.map((c) => (
                     <div key={c.title} className={`flex flex-col gap-2.5 rounded-[22px] border border-line p-6 ${c.tag ? tagBg[c.tag] : "bg-white"}`}>
@@ -66,7 +95,7 @@ export function Blocks({ blocks, locale, dict }: { blocks: Block[]; locale: Loca
                         {c.tag ? <span aria-hidden="true" className={`h-2.5 w-2.5 rounded-full ${tagDot[c.tag]}`} /> : null}
                         {c.title}
                       </h3>
-                      <p className="text-[15px] leading-relaxed text-muted">{c.text}</p>
+                      <p className="text-[15px] leading-relaxed text-muted"><RichText text={c.text} locale={locale} /></p>
                     </div>
                   ))}
                 </div>
@@ -76,7 +105,7 @@ export function Blocks({ blocks, locale, dict }: { blocks: Block[]; locale: Loca
             return (
               <section key={i} className="flex flex-col gap-6">
                 <Heading>{b.heading}</Heading>
-                <Intro>{b.intro}</Intro>
+                <Intro locale={locale}>{b.intro}</Intro>
                 <ol className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                   {b.items.map((s, n) => (
                     <li key={s.title} className="flex flex-col gap-3 rounded-[22px] border border-line bg-white p-6">
@@ -93,7 +122,7 @@ export function Blocks({ blocks, locale, dict }: { blocks: Block[]; locale: Loca
               <section key={i} className="flex flex-col gap-8 rounded-[30px] bg-mint-tint px-5 py-10 sm:px-10">
                 <div className="flex flex-col gap-3">
                   <Heading>{b.heading}</Heading>
-                  <Intro>{b.intro}</Intro>
+                  <Intro locale={locale}>{b.intro}</Intro>
                 </div>
                 <div className={`grid justify-items-center gap-10 ${b.items.length > 1 ? "sm:grid-cols-2 lg:grid-cols-3" : ""}`}>
                   {b.items.map((s) => (
@@ -107,7 +136,7 @@ export function Blocks({ blocks, locale, dict }: { blocks: Block[]; locale: Loca
             return (
               <section key={i} className="flex flex-col gap-5">
                 <Heading>{b.heading}</Heading>
-                <Intro>{b.intro}</Intro>
+                <Intro locale={locale}>{b.intro}</Intro>
                 <div className="overflow-x-auto rounded-[22px] border border-line bg-white">
                   <table className="w-full min-w-[560px] border-collapse text-left text-[15px]">
                     <thead>
@@ -124,14 +153,15 @@ export function Blocks({ blocks, locale, dict }: { blocks: Block[]; locale: Loca
                     </tbody>
                   </table>
                 </div>
-                {b.note ? <p className="max-w-3xl text-sm leading-relaxed text-muted">{b.note}</p> : null}
+                {b.note ? <p className="max-w-3xl text-sm leading-relaxed text-muted"><RichText text={b.note} locale={locale} /></p> : null}
               </section>
             );
           case "faq":
             return (
-              <section key={i} className="flex flex-col gap-6">
+              <section key={i} id={b.id} className="flex scroll-mt-24 flex-col gap-6">
                 <Heading>{b.heading}</Heading>
-                <Faq items={b.items} />
+                {/* Without a block heading the questions are the page's second level (no H1 → H3 jump). */}
+                <Faq items={b.items} locale={locale} headingLevel={b.heading ? 3 : 2} />
               </section>
             );
           case "callout":
@@ -142,9 +172,18 @@ export function Blocks({ blocks, locale, dict }: { blocks: Block[]; locale: Loca
               </aside>
             );
           case "pricing":
-            return <Pricing key={i} locale={locale} dict={dict} />;
+            // The plans are first on /pricing, right under the H1: plan names are H2 there.
+            return <Pricing key={i} locale={locale} dict={dict} headingLevel={i === 0 ? 2 : 3} />;
           case "contact":
             return <ContactCards key={i} dict={dict} />;
+          case "company":
+            return (
+              <section key={i} id={b.id} className="flex scroll-mt-24 flex-col gap-5">
+                <Heading>{b.heading}</Heading>
+                <Intro locale={locale}>{b.intro}</Intro>
+                <CompanyDetails locale={locale} />
+              </section>
+            );
           case "animalsHub":
             return <AnimalsHub key={i} locale={locale} />;
           case "cookies":

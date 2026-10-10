@@ -1,6 +1,8 @@
 import type { RegistryCopy } from "./types";
 
 const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
+/** "a Border Collie", "an Akita". */
+const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 8: "retrievers, flushing dogs and water dogs" };
 const origins: Record<string, string> = { GB: "Great Britain" };
@@ -57,6 +59,12 @@ const en: RegistryCopy = {
     azTitle: "All breeds A–Z",
     azIntro: "Every breed in the register, alphabetically.",
     freePlanTitle: "Free plan",
+    guideTitle: "How to choose a breed",
+    guide: () => [
+      "Start with what your household can give every day: time for exercise, grooming and space. Each breed page lists these needs at a glance, with the named source of every value; where sources differ, all values are shown.",
+      "Where a breed has a size class (for dogs: toy, small, medium, large or giant), it is the class the named source gives — usually a kennel club — and weights are the ranges the sources state, not our estimates.",
+      "Tags such as “Good for: an active family” are the same as in the app and each is backed by sources. The numbers under “How PetPrep simulates it” are PetPrep's game rules, not care instructions. [How we build the register](page:about#methodology)",
+    ],
   },
   compare: {
     title: (many) => `Compare ${many.toLowerCase()}`,
@@ -205,14 +213,22 @@ const en: RegistryCopy = {
   },
   page: {
     eyebrow: "Animal register",
-    metaTitle: (name, one) => `${name} (${one.toLowerCase()}) — needs, sources and game rules | PetPrep`,
+    metaTitle: (name, one, species) =>
+      species === "dog"
+        ? `${name}: exercise, size, lifespan & care | PetPrep`
+        : species === "cat"
+          ? `${name}: size, lifespan, grooming & care | PetPrep`
+          : `${name} (${one.toLowerCase()}): needs, lifespan & care | PetPrep`,
     metaDescription: (name, one) =>
-      `${name}: what this ${one.toLowerCase()} breed needs, from sourced data — exercise, grooming, meals, size, lifespan and who it suits — plus how PetPrep simulates it.`,
+      `${name}: sourced needs of this ${one.toLowerCase()} breed — exercise, grooming, meals, size, lifespan, who it suits — and how PetPrep simulates it.`,
     suitabilityTitle: "Who it suits",
     suitabilityNote: "The same tags as in the app. Each tag is backed by the sources listed at the bottom of the page.",
     suitabilityNone: "No sourced suitability tags for this breed yet.",
     needsTitle: "What it needs",
-    needsIntro: "From breed standards, kennel clubs, registries and veterinary charities. Where sources differ, each one is shown.",
+    needsIntro: (species) =>
+      species === "cat"
+        ? "From cat breed registries, veterinary organisations and studies. Where sources differ, each one is shown."
+        : "From breed standards, kennel clubs, veterinary charities and studies. Where sources differ, each one is shown.",
     general: (many) => `General guidance for ${many.toLowerCase()} (not breed-specific):`,
     noData: "Not in our sources yet.",
     simTitle: "How PetPrep simulates it",
@@ -234,6 +250,32 @@ const en: RegistryCopy = {
     disclaimer: "PetPrep is a simulation for families. This page is not veterinary advice — for a real animal, ask a vet or the breed club.",
     backTo: (many) => `All ${many.toLowerCase()}`,
     compareWith: "Compare with other breeds",
+    updated: "Updated",
+    glanceTitle: "At a glance",
+    glanceNote: "Key facts from the sources at the bottom of the page. Where sources differ, each value is listed.",
+    portraitAlt: (name) => `${name} — illustration (AI)`,
+    portraitCaption: "AI-generated illustration",
+    qa: {
+      title: "Questions and answers",
+      intro: "Answered only from the sourced facts on this page; every answer names its sources.",
+      questions: {
+        exercise: (n) => `How much exercise does ${a(n)} need?`,
+        lifespan: (n) => `How long does ${a(n)} live?`,
+        size: (n) => `How big does ${a(n)} get?`,
+        grooming: (n) => `How much grooming does ${a(n)} need?`,
+        suits: (n) => `Who is the ${n} a good fit for?`,
+      },
+      leads: {
+        exercise: (n) => `According to our sources, the ${n} needs this much exercise:`,
+        lifespan: (n) => `According to our sources, the lifespan of the ${n} is:`,
+        size: (n) => `Size and adult weight of the ${n}, according to our sources:`,
+        grooming: (n) => `Coat and grooming of the ${n}, according to our sources:`,
+        suits: (n) => `Our sources describe the ${n} as a good fit for:`,
+      },
+      considerLead: "Keep in mind:",
+      differ: "The sources give different values, so each one is listed.",
+      join: "; ",
+    },
   },
   intros: {
     border_collie: {

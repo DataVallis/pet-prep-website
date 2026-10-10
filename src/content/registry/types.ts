@@ -50,6 +50,9 @@ export type RegistryCopy = {
     azTitle: string;
     azIntro: string;
     freePlanTitle: string;
+    /** "How to choose" text under the catalogue; may contain [label](ref) links. */
+    guideTitle: string;
+    guide: (many: string) => string[];
   };
   compare: {
     title: (many: string) => string;
@@ -93,13 +96,14 @@ export type RegistryCopy = {
   health: Record<string, string>;
   page: {
     eyebrow: string;
-    metaTitle: (name: string, speciesOne: string) => string;
+    /** Search-intent title per species ("Labrador Retriever: exercise, size, lifespan & care | PetPrep"). */
+    metaTitle: (name: string, speciesOne: string, speciesId: string) => string;
     metaDescription: (name: string, speciesOne: string) => string;
     suitabilityTitle: string;
     suitabilityNote: string;
     suitabilityNone: string;
     needsTitle: string;
-    needsIntro: string;
+    needsIntro: (speciesId: string) => string;
     general: (speciesMany: string) => string;
     noData: string;
     simTitle: string;
@@ -120,6 +124,24 @@ export type RegistryCopy = {
     disclaimer: string;
     backTo: (many: string) => string;
     compareWith: string;
+    /** "Updated" / "Posodobljeno" before the date of the last content change. */
+    updated: string;
+    glanceTitle: string;
+    glanceNote: string;
+    portraitAlt: (name: string) => string;
+    portraitCaption: string;
+    /** Generated questions and answers (only from sourced facts). */
+    qa: {
+      title: string;
+      intro: string;
+      questions: Record<"exercise" | "lifespan" | "size" | "grooming" | "suits", (name: string) => string>;
+      leads: Record<"exercise" | "lifespan" | "size" | "grooming" | "suits", (name: string) => string>;
+      considerLead: string;
+      /** Added when sources give different values for the same thing. */
+      differ: string;
+      /** Separator between sourced values in one answer. */
+      join: string;
+    };
   };
   /** Optional hand-written intro per breed id; `sources` must be in the breed's sources. */
   intros: Record<string, { aka?: string; text: string[]; sources: string[] }>;

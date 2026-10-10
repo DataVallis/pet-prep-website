@@ -4,6 +4,10 @@ const nextConfig: NextConfig = {
   // Self-contained server for the Docker image (Dockerfile).
   output: "standalone",
   poweredByHeader: false,
+  // Branded 404 for unmatched URLs (src/app/global-not-found.tsx): the root layout is under [locale].
+  experimental: {
+    globalNotFound: true,
+  },
   images: {
     formats: ["image/avif", "image/webp"],
   },

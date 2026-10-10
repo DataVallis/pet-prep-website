@@ -36,6 +36,8 @@ export type Block =
   /** Live cookie list rendered by CookieYes from the site's latest cookie scan. */
   | { type: "cookies"; heading: string; paragraphs: string[]; settings: string; fallback: string }
   | { type: "contact" }
+  /** The operator's legal identity (src/lib/site.ts company). */
+  | { type: "company"; id?: string; heading?: string; intro?: string }
   /** Animal register hub: species from src/content/registry/registry.json (M5-R11). */
   | { type: "animalsHub" }
   | {
@@ -150,7 +152,8 @@ export type Dictionary = {
       link: string;
       planned: string;
     };
-    species: { title: string; text: string; chips: { label: string; active?: boolean }[] };
+    /** `link` is a content ref (page:…, species:…, breed:…; see src/lib/links.ts). */
+    species: { title: string; text: string; chips: { label: string; active?: boolean; link?: string }[] };
     pricing: { eyebrow: string; title: string };
     faq: { title: string; link: string };
     final: { title: string; text: string };
