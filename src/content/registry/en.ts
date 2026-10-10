@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 4: "dachshunds", 6: "scent hounds and related breeds", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA" };
 
 const en: RegistryCopy = {
   hub: {
@@ -233,6 +233,9 @@ const en: RegistryCopy = {
     pra_eye_disease: "Progressive retinal atrophy, an inherited eye disease that can slowly lead to blindness, occurs in the breed; DNA tests and eye testing are available.",
     hip_dysplasia: "Hip dysplasia, a poorly developed hip joint that can lead to arthritis, occurs in the breed; breeders are advised to have the parents' hips scored.",
     bloat_gdv: "Bloat (gastric dilatation-volvulus), where the stomach twists, can occur in the breed — it is an emergency that needs a vet straight away.",
+    inherited_eye_disease: "Inherited eye diseases occur in the breed, such as collie eye anomaly, cataracts and progressive retinal atrophy.",
+    drug_sensitivity_mdr1: "Some dogs of the breed have an inherited sensitivity to certain medicines (multi-drug sensitivity, MDR1) — if your dog is affected, tell your vet.",
+    merle_to_merle_breeding: "Merle is a standard colour in this breed; two merle dogs should not be bred together, because such puppies risk impaired sight and hearing — the Royal Kennel Club does not register them.",
   },
   page: {
     eyebrow: "Animal register",
@@ -370,6 +373,14 @@ const en: RegistryCopy = {
         "It needs up to about an hour of exercise a day, split into a couple of walks with time for sniffing, and suits a small house. It loves people and generally gets along well with children of all ages, always supervised, but with its strong prey drive it is not recommended with smaller pets, and it does not do well left alone. Because of its long back and short legs it is prone to slipped discs, so it should not jump; breeders are asked to screen the spine before breeding.",
       ],
       sources: ["S124", "S125", "S126", "S127", "S129"],
+    },
+    australian_shepherd: {
+      aka: "Aussie",
+      text: [
+        "The Australian Shepherd is, despite its name, an American breed — an intelligent working dog with strong herding and guarding instincts. Its standard describes a well-balanced dog of medium size, slightly longer than tall, good natured and sometimes reserved at first meetings, with a medium-length, straight to wavy coat in blue merle, black, red merle or red, each with or without white and tan markings.",
+        "It needs more than two hours of exercise a day and mental challenges such as puzzle games and training, and suits a large house with a large garden in the country. In the right household it can make a really good family pet, but its strong herding instinct can make it herd children, so it is not recommended for families with smaller children. It does not like being left alone, and its coat needs brushing a few times a week.",
+      ],
+      sources: ["S131", "S133", "S134"],
     },
   },
 };
