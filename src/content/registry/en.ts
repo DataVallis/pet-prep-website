@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany" };
 
 const en: RegistryCopy = {
   hub: {
@@ -130,7 +130,7 @@ const en: RegistryCopy = {
   },
   categories: {
     size: { toy: "toy", small: "small", medium: "medium", large: "large", giant: "giant" },
-    coat: { moderately_long: "moderately long", smooth: "smooth (short)", short: "short", medium: "medium length" },
+    coat: { moderately_long: "moderately long", smooth: "smooth (short)", short: "short", medium: "medium length", short_long: "short or long (two coat varieties)" },
     grooming_frequency: { once_a_week: "once a week", more_than_once_a_week: "more than once a week", daily: "daily" },
     grooming_level: { moderate: "moderate", high: "high", low: "low" },
     shedding: { yes: "sheds", high: "sheds a lot", moderate: "sheds moderately", low: "sheds little", minimal: "sheds minimally" },
@@ -220,6 +220,9 @@ const en: RegistryCopy = {
     heat_stroke_risk: "Overheats quickly and is more vulnerable to heatstroke than most dogs, especially in warm weather.",
     skin_fold_ear_problems: "Prone to ear inflammation and skin-fold infections; the skin folds need to be kept clean and dry.",
     merle_colour_risk: "Merle is not a breed-standard colour; in this breed it carries a higher risk of hearing and sight problems.",
+    hind_leg_conformation: "The Royal Kennel Club names the shape of the hind legs and the way the dog moves as a point of concern in this breed; a sound dog has a level back and moderate hind legs.",
+    hip_elbow_dysplasia: "Can be prone to hip and elbow dysplasia; breeders are advised to have the parents' hips and elbows tested before breeding.",
+    degenerative_myelopathy: "Degenerative myelopathy, a disease of the spinal cord that slowly weakens the back legs, occurs in the breed; a DNA test is available.",
   },
   page: {
     eyebrow: "Animal register",
@@ -318,6 +321,14 @@ const en: RegistryCopy = {
         "It needs up to an hour of exercise a day and suits a flat. The trade-off every source raises is the flat face: it can make breathing harder, and Frenchies overheat quickly, especially in warm weather — so shade, water and calm walks matter. PDSA suggests families also consider adopting an adult French Bulldog.",
       ],
       sources: ["S76", "S78", "S79", "S81", "S82"],
+    },
+    german_shepherd: {
+      aka: "Alsatian, GSD",
+      text: [
+        "The German Shepherd Dog is a large, powerful herding dog from Germany with erect ears and a dense double coat, short or long. Its standard describes a well-balanced, self-assured dog with strong nerves, and the Royal Kennel Club calls it a versatile worker and service dog noted for bravery and intelligence.",
+        "It needs at least two hours of exercise a day, suits a large house with a garden and sheds a lot. UK charities say some can make great family pets but should always be supervised around young children. The Royal Kennel Club asks breeders to test the parents' hips and elbows and lists the shape of the hind legs as a point of concern in the breed.",
+      ],
+      sources: ["S95", "S97", "S99", "S100"],
     },
   },
 };
