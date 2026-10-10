@@ -214,7 +214,7 @@ const sl: RegistryCopy = {
         : p.multiplier === 1
           ? "Ukaze se uči enako hitro kot mešanček iz brezplačnega plana."
           : `Ukaze se uči ${f.num(p.multiplier)}-krat hitreje kot mešanček iz brezplačnega plana.`,
-    senior_share: (p, f) => `Starejši pes postane v ${p.months}. mesecu (${f.num(p.months / 12, 1)} leta) — v zadnji četrtini mediane življenjske dobe pasme.`,
+    senior_share: (p, f) => `Starejši pes postane v ${p.months}. mesecu (${f.num(p.months / 12, 1)} ${form(p.months / 12, "leto", "leti", "leta", "let")}) — v zadnji četrtini pričakovane življenjske dobe pasme.`,
     walk_sensor: () => "Sprehodi štejejo prave korake s senzorja gibanja v telefonu — brez GPS.",
     play_instead_of_steps: (p, f) =>
       `Brez sprehodov: odrasla mačka potrebuje ${p.sessions} ${form(p.sessions, "igro", "igri", "igre", "iger")} na dan s palico z vabo, vsaj ${f.num(p.gap_minutes / 60)} ${form(p.gap_minutes / 60, "uro", "uri", "ure", "ur")} narazen.`,
