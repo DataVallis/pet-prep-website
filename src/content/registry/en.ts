@@ -4,7 +4,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 /** "a Border Collie", "an Akita". */
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
-const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
+const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 6: "scent hounds and related breeds", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
 const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany" };
 
 const en: RegistryCopy = {
@@ -228,6 +228,8 @@ const en: RegistryCopy = {
     heart_valve_disease: "Heart disease caused by a weakening mitral valve is a big problem in this breed; it is often first noticed as a heart murmur, and breeding dogs should be heart-graded first.",
     chiari_syringomyelia: "Chiari-like malformation and syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, occurs in the breed and is linked to skull shape; it is diagnosed by MRI scan.",
     eye_conditions: "Inherited eye conditions such as cataracts occur in the breed, and protruding or irritated eyes are a point of concern; eye testing and DNA tests are available.",
+    epilepsy: "Epilepsy, a brain disorder that can cause seizures, occurs in the breed.",
+    back_disc_disease: "Intervertebral disc disease, a problem with the cushioning discs between the bones of the back, occurs in the breed.",
   },
   page: {
     eyebrow: "Animal register",
@@ -342,6 +344,13 @@ const en: RegistryCopy = {
         "It needs about an hour of exercise a day, can live in a flat and is known to be good around children, though play should be supervised and it does not like being left alone. Its coat needs brushing more than once a week. UK sources name heart valve disease and a painful spinal condition linked to skull shape as the main health concerns, so breeders are asked to heart-test and MRI-scan their dogs.",
       ],
       sources: ["S103", "S105", "S106", "S108", "S110"],
+    },
+    beagle: {
+      text: [
+        "The Beagle is a small scent hound from Great Britain, bred to hunt hare by following a scent. Its standard describes a sturdy, compactly built, merry hound — bold, active and alert, amiable and showing no aggression or timidity — with a short, dense coat in hound colours such as tricolour, tan and white or lemon and white, and always a white tip to the tail.",
+        "It needs up to about an hour of exercise a day and suits family life well if it is socialised from a young age, though it should be supervised with children and not left alone, when it may bark and chew things. Its short coat needs a weekly brush but it sheds. Training should start early and use rewards. UK vets most often see Beagles for weight gain and dental disease, so portions and teeth need watching.",
+      ],
+      sources: ["S111", "S113", "S115", "S116"],
     },
   },
 };
