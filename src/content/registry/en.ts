@@ -4,7 +4,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 /** "a Border Collie", "an Akita". */
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
-const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 6: "scent hounds and related breeds", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
+const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 4: "dachshunds", 6: "scent hounds and related breeds", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
 const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany" };
 
 const en: RegistryCopy = {
@@ -362,6 +362,14 @@ const en: RegistryCopy = {
         "It needs up to about an hour of exercise a day and suits a large house with a large garden. Given the right socialisation as a puppy it generally gets on well with children and other pets. Its coat does not shed, but that does not make it hypoallergenic: it needs daily grooming and regular clipping by a professional groomer. It is known for being very obedient and responding well to training.",
       ],
       sources: ["S118", "S120", "S121", "S122"],
+    },
+    dachshund: {
+      aka: "Sausage dog, Teckel",
+      text: [
+        "The Dachshund is a German badger and rabbit hunter, known at home as the Teckel, that comes in several sizes and three coats; this page is about the standard size with the smooth coat. Its standard describes a dog that is moderately long in proportion to its height, with no exaggeration — faithful, versatile and good tempered; intelligent, lively and courageous — with a dense, short, smooth coat in red, or black or chocolate with tan markings.",
+        "It needs up to about an hour of exercise a day, split into a couple of walks with time for sniffing, and suits a small house. It loves people and generally gets along well with children of all ages, always supervised, but with its strong prey drive it is not recommended with smaller pets, and it does not do well left alone. Because of its long back and short legs it is prone to slipped discs, so it should not jump; breeders are asked to screen the spine before breeding.",
+      ],
+      sources: ["S124", "S125", "S126", "S127", "S129"],
     },
   },
 };

@@ -12,7 +12,7 @@ function form(n: number, one: string, two: string, few: string, many: string): s
 type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
-const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 6: "goniči, krvosledniki in sorodne pasme", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
+const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 4: "jazbečarji", 6: "goniči, krvosledniki in sorodne pasme", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
 const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija" };
 
 const sl: RegistryCopy = {
@@ -372,6 +372,14 @@ const sl: RegistryCopy = {
         "Potrebuje do približno eno uro gibanja na dan in mu ustreza velika hiša z velikim vrtom. Če ga kot mladička dobro socializirate, se z otroki in drugimi ljubljenčki praviloma dobro razume. Dlaka mu ne izpada, a zato ni hipoalergen: potrebuje vsakodnevno česanje in redno striženje pri pasjem frizerju. Znan je kot zelo ubogljiv pes, ki se dobro uči.",
       ],
       sources: ["S118", "S120", "S121", "S122"],
+    },
+    dachshund: {
+      aka: "dachshund, teckel, jazbecar",
+      text: [
+        "Jazbečar je nemški lovec na jazbece in kunce, doma znan kot teckel, ki ga poznamo v več velikostih in s tremi vrstami dlake; ta stran je o standardni velikosti s kratko, gladko dlako. Standard ga opisuje kot psa, ki je glede na višino zmerno dolg, brez pretiravanja — zvestega, vsestranskega in dobrodušnega; inteligentnega, živahnega in pogumnega — z gosto, kratko, gladko dlako rdeče barve ali črne oziroma čokoladne s porjavelimi oznakami.",
+        "Potrebuje do približno eno uro gibanja na dan, razdeljeno na nekaj sprehodov s časom za vohanje, in mu ustreza majhna hiša. Ljudi ima rad in se z otroki vseh starosti praviloma dobro razume, vedno pod nadzorom; zaradi močnega lovskega nagona pa ga ne priporočajo k manjšim živalim, sam doma pa ne zdrži dobro. Zaradi dolgega hrbta in kratkih nog je nagnjen k zdrsu diska, zato naj ne skače; vzrediteljem svetujejo pregled hrbtenice pred parjenjem.",
+      ],
+      sources: ["S124", "S125", "S126", "S127", "S129"],
     },
   },
 };
