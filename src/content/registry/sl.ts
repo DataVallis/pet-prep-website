@@ -12,7 +12,7 @@ function form(n: number, one: string, two: string, few: string, many: string): s
 type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
-const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 4: "jazbečarji", 6: "goniči, krvosledniki in sorodne pasme", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
+const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 6: "goniči, krvosledniki in sorodne pasme", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
 const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba" };
 
 const sl: RegistryCopy = {
@@ -248,6 +248,10 @@ const sl: RegistryCopy = {
     kneecap_luxation: "Pri pasmi se pojavlja zdrsavanje pogačice (luksacija patele), ko pogačica začasno skoči iz ležišča.",
     pra_and_eyelashes: "Pri pasmi se pojavljajo težave z očmi: progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, in dodatne trepalnice, ki drgnejo oko (distihiaza); vzrediteljem svetujejo pregled oči staršev.",
     liver_shunt: "Pri pasmi se lahko pojavi portosistemski (jetrni) šant, pri katerem kri obide jetra.",
+    skin_allergies: "Kožne alergije so pri pasmi znana skrb; The Royal Kennel Club sodnikom naroča, naj bodo pozorni na znake vnetja kože, lastnikom pa svetujejo, naj se pred izbiro šampona posvetujejo z veterinarjem.",
+    westie_lung: "Pri pasmi se lahko pojavi bolezen pljuč, imenovana »westie lung« (idiopatska pljučna fibroza), ki otežuje dihanje — največkrat pri starejših psih.",
+    jaw_bone_disorder: "Pri pasmi se lahko pojavi dedna bolezen čeljustne kosti.",
+    dry_eye: "Pri pasmi se lahko pojavi suho oko, ko oči ne tvorijo dovolj solz ter postanejo suhe in boleče.",
   },
   page: {
     eyebrow: "Register živali",
@@ -402,6 +406,14 @@ const sl: RegistryCopy = {
         "Standard ga opisuje kot ljubečega, igrivega in celo malo klovna, ki ima rad otroke in se z njimi neutrudno igra; britanski viri pravijo, da je ob pravi socializaciji odličen družinski pes in da se hitro uči. Potrebuje okoli 30 minut gibanja na dan, lahko živi v stanovanju in mu dlaka ne izpada — dolgo dlako pa je treba česati vsak dan, da se ne zavozla.",
       ],
       sources: ["S136", "S138", "S140"],
+    },
+    west_highland_white_terrier: {
+      aka: "westie, west highland white terrier",
+      text: [
+        "Zahodnoškotski beli terier ali westie je majhen terier iz Velike Britanije. Standard ga opisuje kot čvrsto grajenega malega psa z globokimi prsmi, ravnim hrbtom in trdo dvojno dlako, dolgo približno 5 cm, z majhnimi pokončnimi koničastimi ušesi in temnimi očmi pod gostimi obrvmi. Edina barva, ki jo standard dovoljuje, je bela.",
+        "Standard ga opisuje kot pozornega, veselega, pogumnega in samostojnega, a prijaznega psa. Britanski viri pravijo, da je ljubeč in igriv družinski pes za otroke vseh starosti, igro pa je treba vedno nadzorovati; potrebuje okoli uro gibanja na dan, lahko živi v stanovanju, dlaka mu izpada in česati ga je treba nekajkrat na teden. Zaradi lovskega nagona ne sodi k manjšim živalim, sam pa ne ostaja rad. Koža je znana skrb: The Royal Kennel Club sodnikom naroča, naj bodo pri tej pasmi pozorni na znake vnetja kože.",
+      ],
+      sources: ["S142", "S144", "S146", "S147"],
     },
   },
 };
