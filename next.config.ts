@@ -28,6 +28,8 @@ const nextConfig: NextConfig = {
       { source: "/breeds/:breed", destination: "/animals/dogs/:breed", permanent: true },
       { source: "/sl/pasme", destination: "/sl/zivali/psi", permanent: true },
       { source: "/sl/pasme/:breed", destination: "/sl/zivali/psi/:breed", permanent: true },
+      // Standard Poodle SL name: "Veliki koder" (David 2026-10-10), first published as "Veliki pudelj".
+      { source: "/sl/zivali/psi/veliki-pudelj", destination: "/sl/zivali/psi/veliki-koder", permanent: true },
     ];
   },
   async headers() {
