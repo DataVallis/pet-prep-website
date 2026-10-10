@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 4: "dachshunds", 6: "scent hounds and related breeds", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba" };
 
 const en: RegistryCopy = {
   hub: {
@@ -130,7 +130,7 @@ const en: RegistryCopy = {
   },
   categories: {
     size: { toy: "toy", small: "small", medium: "medium", large: "large", giant: "giant" },
-    coat: { moderately_long: "moderately long", smooth: "smooth (short)", short: "short", medium: "medium length", short_long: "short or long (two coat varieties)" },
+    coat: { moderately_long: "moderately long", smooth: "smooth (short)", short: "short", medium: "medium length", short_long: "short or long (two coat varieties)", long: "long" },
     grooming_frequency: { once_a_week: "once a week", more_than_once_a_week: "more than once a week", daily: "daily", every_day: "every day" },
     grooming_level: { moderate: "moderate", high: "high", low: "low" },
     shedding: { yes: "sheds", no: "does not shed (not the same as hypoallergenic)", high: "sheds a lot", moderate: "sheds moderately", low: "sheds little", minimal: "sheds minimally" },
@@ -236,6 +236,9 @@ const en: RegistryCopy = {
     inherited_eye_disease: "Inherited eye diseases occur in the breed, such as collie eye anomaly, cataracts and progressive retinal atrophy.",
     drug_sensitivity_mdr1: "Some dogs of the breed have an inherited sensitivity to certain medicines (multi-drug sensitivity, MDR1) — if your dog is affected, tell your vet.",
     merle_to_merle_breeding: "Merle is a standard colour in this breed; two merle dogs should not be bred together, because such puppies risk impaired sight and hearing — the Royal Kennel Club does not register them.",
+    kneecap_luxation: "Luxating patellas, where the kneecap temporarily slips out of place, occur in the breed.",
+    pra_and_eyelashes: "Eye problems occur in the breed: progressive retinal atrophy, which can slowly lead to blindness, and extra eyelashes that rub on the eye (distichiasis); breeders are advised to have the parents' eyes tested.",
+    liver_shunt: "A portosystemic (liver) shunt, where blood bypasses the liver, can occur in the breed.",
   },
   page: {
     eyebrow: "Animal register",
@@ -381,6 +384,14 @@ const en: RegistryCopy = {
         "It needs more than two hours of exercise a day and mental challenges such as puzzle games and training, and suits a large house with a large garden in the country. In the right household it can make a really good family pet, but its strong herding instinct can make it herd children, so it is not recommended for families with smaller children. It does not like being left alone, and its coat needs brushing a few times a week.",
       ],
       sources: ["S131", "S133", "S134"],
+    },
+    havanese: {
+      aka: "Bichon Havanais",
+      text: [
+        "The Havanese is a small member of the bichon family and the national dog of Cuba. Its standard describes a sturdy little dog, low on its legs, with a very long, soft, flat or wavy coat that is never trimmed, and a tail carried high over the back. It comes in fawn, black, havana brown, tobacco, reddish brown and, rarely, white, with or without patches and tan markings.",
+        "Its standard calls it affectionate, playful and even a bit of a clown, and says it loves children and plays endlessly with them; UK sources call it an excellent family pet given the right socialisation, and easy to train. It needs about 30 minutes of exercise a day, can live in a flat, and does not shed — but its long coat needs grooming every day to prevent knots and tangles.",
+      ],
+      sources: ["S136", "S138", "S140"],
     },
   },
 };

@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 4: "jazbečarji", 6: "goniči, krvosledniki in sorodne pasme", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -138,7 +138,7 @@ const sl: RegistryCopy = {
   },
   categories: {
     size: { toy: "zelo majhen", small: "majhen", medium: "srednje velik", large: "velik", giant: "zelo velik" },
-    coat: { moderately_long: "zmerno dolga", smooth: "gladka (kratka)", short: "kratka", medium: "srednje dolga", short_long: "kratka ali dolga (dve različici dlake)" },
+    coat: { moderately_long: "zmerno dolga", smooth: "gladka (kratka)", short: "kratka", medium: "srednje dolga", short_long: "kratka ali dolga (dve različici dlake)", long: "dolga" },
     grooming_frequency: { once_a_week: "enkrat na teden", more_than_once_a_week: "večkrat na teden", daily: "vsak dan", every_day: "vsak dan" },
     grooming_level: { moderate: "zmerne", high: "velike", low: "majhne" },
     shedding: { yes: "dlaka izpada", no: "dlaka ne izpada (to ne pomeni, da je hipoalergen)", high: "dlaka močno izpada", moderate: "dlaka zmerno izpada", low: "dlaka malo izpada", minimal: "dlaka zelo malo izpada" },
@@ -245,6 +245,9 @@ const sl: RegistryCopy = {
     inherited_eye_disease: "Pri pasmi se pojavljajo dedne bolezni oči, na primer anomalija očesa škotskih ovčarjev (CEA), siva mrena in progresivna atrofija mrežnice.",
     drug_sensitivity_mdr1: "Nekateri psi te pasme so dedno občutljivi na nekatera zdravila (MDR1) — če je vaš pes občutljiv, to povejte veterinarju.",
     merle_to_merle_breeding: "Merle je pri tej pasmi barva iz standarda; dveh psov merle pa ne smemo pariti med seboj, ker imajo takšni mladiči večje tveganje za okvare vida in sluha — The Royal Kennel Club jih ne registrira.",
+    kneecap_luxation: "Pri pasmi se pojavlja zdrsavanje pogačice (luksacija patele), ko pogačica začasno skoči iz ležišča.",
+    pra_and_eyelashes: "Pri pasmi se pojavljajo težave z očmi: progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, in dodatne trepalnice, ki drgnejo oko (distihiaza); vzrediteljem svetujejo pregled oči staršev.",
+    liver_shunt: "Pri pasmi se lahko pojavi portosistemski (jetrni) šant, pri katerem kri obide jetra.",
   },
   page: {
     eyebrow: "Register živali",
@@ -391,6 +394,14 @@ const sl: RegistryCopy = {
         "Potrebuje več kot dve uri gibanja na dan in miselne izzive, kot so igre z ugankami in šolanje, ustreza pa mu velika hiša z velikim vrtom na podeželju. V pravem domu je lahko res dober družinski pes, a zaradi močnega pastirskega nagona rad »pase« otroke, zato ga ne priporočajo družinam z manjšimi otroki. Sam doma ne zdrži rad, dlako pa je treba ščetkati nekajkrat na teden.",
       ],
       sources: ["S131", "S133", "S134"],
+    },
+    havanese: {
+      aka: "havanez, bichon havanais, havanski bison",
+      text: [
+        "Havanski bišon je majhen pes iz družine bišonov in nacionalni pes Kube. Standard ga opisuje kot čvrstega malega psa nizkih nog z zelo dolgo, mehko, ravno ali valovito dlako, ki je ne strižemo, in z repom, nošenim visoko čez hrbet. Je plave, črne, havansko rjave, tobačne, rdečerjave in redko bele barve, z lisami in žganimi oznakami ali brez njih.",
+        "Standard ga opisuje kot ljubečega, igrivega in celo malo klovna, ki ima rad otroke in se z njimi neutrudno igra; britanski viri pravijo, da je ob pravi socializaciji odličen družinski pes in da se hitro uči. Potrebuje okoli 30 minut gibanja na dan, lahko živi v stanovanju in mu dlaka ne izpada — dolgo dlako pa je treba česati vsak dan, da se ne zavozla.",
+      ],
+      sources: ["S136", "S138", "S140"],
     },
   },
 };
