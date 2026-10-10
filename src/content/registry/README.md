@@ -26,7 +26,7 @@ npm run lint && npm run build && npx tsc --noEmit
 | Field | Type | Effect on the site |
 |---|---|---|
 | `updated` | `"YYYY-MM-DD"` | "Updated" date on the breed page, sitemap `lastmod`, JSON-LD `dateModified`; catalogue date = latest breed. Without it: `registryUpdated` in `src/lib/registry/views.ts`. |
-| `portrait` | `{ file, width, height, kind: "ai_illustration" } \| null` | Image at the top of the breed page (caption "AI-generated illustration"), `og:image` of the breed page and a lazy 48 px thumbnail in catalogue rows. The file must be at `public/animals/<species EN slug>/<file>` or the build fails. Without it: the page is unchanged and the share image is the generated name card (`/og/<species>/<breed>.<locale>.png`). |
+| `portrait` | `{ file, width, height, kind: "ai_photo" \| "ai_illustration" } \| null` | Image at the top of the breed page (caption "AI-generated photo" / "Fotografija, ustvarjena z AI"; older `ai_illustration` exports: "AI-generated illustration"), `og:image` of the breed page and a lazy 48 px thumbnail in catalogue rows. The file must be at `public/animals/<species EN slug>/<file>` or the build fails. Without it: the page is unchanged and the share image is the generated name card (`/og/<species>/<breed>.<locale>.png`). |
 | `same_as` | `string[]` | Authority URLs of the breed (Wikidata / Wikipedia) in JSON-LD `about.sameAs`. |
 
 Never ship a placeholder portrait: test with `PETPREP_REGISTRY_FILE=<fixture.json>` and a local image that is not committed.

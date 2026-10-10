@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[
   const b = r.breed;
   // Share image: the breed's AI portrait when the export has one, else a generated card with the breed name.
   const image = b.portrait
-    ? { path: portraitSrc(b, b.portrait), width: b.portrait.width, height: b.portrait.height, alt: c.page.portraitAlt(b.name[r.locale]) }
+    ? { path: portraitSrc(b, b.portrait), width: b.portrait.width, height: b.portrait.height, alt: c.page.portraitAlt[b.portrait.kind](b.name[r.locale]) }
     : { path: `/og/${sp.id}/${b.id}.${r.locale}.png`, width: 1200, height: 630, alt: b.name[r.locale] };
   return buildPathMetadata({
     locale: r.locale,

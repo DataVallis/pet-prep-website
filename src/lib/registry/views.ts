@@ -15,6 +15,7 @@ import {
   type Availability,
   type Breed,
   type Portrait,
+  type PortraitKind,
   type FactItem,
   type Range,
   type SexValue,
@@ -57,7 +58,9 @@ export function formatDay(locale: Locale, iso: string): string {
     : new Intl.DateTimeFormat(intlDate[locale], { dateStyle: "long", timeZone: "UTC" }).format(d);
 }
 
-// ─── breed portrait (optional AI illustration from the export) ────────────────
+// ─── breed portrait (optional AI photo from the export) ─────────────────────
+
+const PORTRAIT_KINDS: readonly PortraitKind[] = ["ai_photo", "ai_illustration"];
 
 export type PortraitView = { src: string; width: number; height: number; alt: string; caption: string };
 
@@ -70,14 +73,14 @@ function portraitView(locale: Locale, b: Breed): PortraitView | null {
   const p = b.portrait;
   if (!p) return null;
   const c = copies[locale];
-  return { src: portraitSrc(b, p), width: p.width, height: p.height, alt: c.page.portraitAlt(b.name[locale]), caption: c.page.portraitCaption };
+  return { src: portraitSrc(b, p), width: p.width, height: p.height, alt: c.page.portraitAlt[p.kind](b.name[locale]), caption: c.page.portraitCaption[p.kind] };
 }
 
-/** Fails the build for a portrait that is not a labelled AI illustration or whose file is missing. */
+/** Fails the build for a portrait that is not a labelled AI photo / illustration or whose file is missing. */
 function checkPortrait(b: Breed) {
   const p = b.portrait;
   if (!p) return;
-  if (p.kind !== "ai_illustration") throw new Error(`registry: ${b.id}.portrait.kind must be "ai_illustration"`);
+  if (!PORTRAIT_KINDS.includes(p.kind)) throw new Error(`registry: ${b.id}.portrait.kind must be one of ${PORTRAIT_KINDS.join(", ")}`);
   if (!/^[\w.-]+\.(webp|avif|png|jpe?g)$/.test(p.file)) throw new Error(`registry: ${b.id}.portrait.file "${p.file}" is not a plain image file name`);
   if (!(p.width > 0 && p.height > 0)) throw new Error(`registry: ${b.id}.portrait needs width and height`);
   const file = join(process.cwd(), "public", portraitSrc(b, p));
@@ -343,7 +346,7 @@ export type IndexItem = {
   t: string[];
   /** one-line summary */
   l: string;
-  /** portrait thumbnail (optional AI illustration) */
+  /** portrait thumbnail (optional AI photo) */
   p?: { src: string; w: number; h: number };
 };
 
