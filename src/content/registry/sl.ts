@@ -366,9 +366,9 @@ const sl: RegistryCopy = {
       sources: ["S111", "S113", "S115", "S116"],
     },
     standard_poodle: {
-      aka: "standardni pudelj, poodle",
+      aka: "pudelj, veliki pudelj, standardni pudelj",
       text: [
-        "Veliki pudelj je največja od štirih velikosti pudlja, pes za družbo iz Francije, ki izhaja iz evropskih psov za lov na race. Standard ga opisuje kot elegantnega, uravnoteženega psa ponosne drže — zvestega, veselega in dobrodušnega, učljivega — z bogato, kodrasto dlako ene same barve: črne, bele, rjave, sive ali plave (fawn).",
+        "Veliki koder je največja od štirih velikosti kodra (pudlja), pes za družbo iz Francije, ki izhaja iz evropskih psov za lov na race. Standard ga opisuje kot elegantnega, uravnoteženega psa ponosne drže — zvestega, veselega in dobrodušnega, učljivega — z bogato, kodrasto dlako ene same barve: črne, bele, rjave, sive ali plave (fawn).",
         "Potrebuje do približno eno uro gibanja na dan in mu ustreza velika hiša z velikim vrtom. Če ga kot mladička dobro socializirate, se z otroki in drugimi ljubljenčki praviloma dobro razume. Dlaka mu ne izpada, a zato ni hipoalergen: potrebuje vsakodnevno česanje in redno striženje pri pasjem frizerju. Znan je kot zelo ubogljiv pes, ki se dobro uči.",
       ],
       sources: ["S118", "S120", "S121", "S122"],
