@@ -319,6 +319,7 @@ const sl: RegistryCopy = {
     dry_eye: "Pri pasmi se lahko pojavi suho oko, ko oči ne tvorijo dovolj solz ter postanejo suhe in boleče.",
     heart_hcm: "Pri pasmi se pojavlja hipertrofična kardiomiopatija (HCM), dedna bolezen srca, pri kateri se srčna mišica zadebeli.",
     dental_weight_nail_care: "Velika britanska raziskava med najpogostejšimi težavami pasme navaja bolezni zob, prekomerno težo in predolge kremplje, zato lastnikom svetujejo redno nego zob, nadzor teže in skrajševanje krempljev.",
+    dental_weight_care: "PetMD med težavami, na katere je treba paziti, navaja bolezni zob in prekomerno težo, zato lastnikom svetuje redno ščetkanje zob in nadzor teže.",
   },
   page: {
     eyebrow: "Register živali",
@@ -533,6 +534,14 @@ const sl: RegistryCopy = {
         "CFA ga opisuje kot nežno mačko, ki vas pričaka pri vratih in vam sledi iz sobe v sobo; pogosto se igra brez iztegnjenih krempljev. PetMD piše, da je primeren tudi za družine z otroki, a naj bo prvo srečanje z otroki ali drugimi živalmi počasno in pod nadzorom, ter navaja, da nekaterim ragdollom zadošča česanje enkrat do dvakrat na teden; CFA svetuje redno česanje. Rodovniški mucki gredo v nov dom običajno pri 12–13 tednih (PDSA).",
       ],
       sources: ["C13", "C30", "C32"],
+    },
+    siberian_cat: {
+      aka: "sibirka, Siberian",
+      text: [
+        "GCCF opisuje sibirsko mačko kot pasmo, ki se razvija počasi, z gosto, vremensko odporno dlako: pod bolj grobo krovno dlako ima gosto, mehko podlanko, ki jo spomladi in jeseni močno menja. Samci tehtajo približno 7,7–11,8 kg, samice 5,9–7,7 kg, popolnoma razvita je lahko šele pri štirih do petih letih, GCCF pa navaja življenjsko dobo 12 do 15 let ali več.",
+        "GCCF jo opisuje kot energično in igrivo, a potrpežljivo mačko — dobro izbiro za družine z majhnimi otroki —, ki se dobro razume tudi z drugimi živalmi, tudi s psi. PetMD svetuje česanje vsaj enkrat na teden, med spomladanskim in jesenskim linjanjem pa več, in poudarja, da sibirska mačka ne velja za hipoalergeno. Rodovniški mucki gredo v nov dom običajno pri 12–13 tednih (PDSA).",
+      ],
+      sources: ["C13", "C34", "C35"],
     },
   },
 };
