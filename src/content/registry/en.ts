@@ -270,6 +270,7 @@ const en: RegistryCopy = {
       dna_pk_def: "DNA test for pyruvate kinase deficiency (PK def)",
       hcm_negative: "Breeding cats must be HCM negative (heart disease: hypertrophic cardiomyopathy)",
       dna_gsd4: "DNA test for glycogen storage disease type IV (GSD IV)",
+      dna_pra_b: "DNA test for progressive retinal atrophy in the Bengal (PRA-b)",
     },
   },
   health: {
@@ -306,6 +307,7 @@ const en: RegistryCopy = {
     dental_weight_care: "PetMD names dental disease and being overweight among the problems to watch for, so owners are advised to brush the cat's teeth regularly and keep its weight in check.",
     gsd_iv: "Glycogen storage disease type IV (GSD IV), an inherited disorder that affects kittens, occurs in the breed; a DNA test of the parents lets breeders avoid it.",
     hip_dysplasia_weight: "Hip dysplasia, a poorly developed hip joint, can occur in the breed; PetMD advises keeping the cat at a healthy weight to protect its joints.",
+    pra_pk_def: "Two inherited conditions occur in the breed: progressive retinal atrophy, an eye disease that can lead to blindness, and pyruvate kinase deficiency, a blood disorder; DNA tests of the parents let breeders avoid them.",
   },
   page: {
     eyebrow: "Animal register",
@@ -528,6 +530,14 @@ const en: RegistryCopy = {
         "The GCCF calls it energetic and fun-loving yet patient — a good choice for families with young children — and says it mixes well with other animals, including dogs. PetMD advises combing at least once a week, with extra effort while it sheds in spring and autumn, and notes that Siberians are not considered hypoallergenic. Pedigree kittens usually go to their new home at 12–13 weeks (PDSA).",
       ],
       sources: ["C13", "C34", "C35"],
+    },
+    bengal: {
+      aka: "Bengal cat",
+      text: [
+        "PDSA describes the Bengal as highly intelligent and energetic, a cat that needs plenty of mental stimulation and chances to exercise and likes a high vantage point such as a cat tree. It is affectionate, but more likely to curl up next to you than on your lap, and can be quite vocal. VCA notes that Bengals grow slowly and can take up to two years to reach physical maturity.",
+        "Its short, soft, spotted or marbled coat needs only a light brushing or combing once a week (PDSA). PetMD notes that the Bengal may not be the best fit for families with small children, while dogs and other cats may be fine with proper introductions. The breed was developed from crosses between the Asian leopard cat and domestic cats; PetPrep shows only the registered domestic Bengal. Pedigree kittens usually go to their new home at 12–13 weeks (PDSA).",
+      ],
+      sources: ["C13", "C44", "C45", "C46"],
     },
     norwegian_forest_cat: {
       aka: "Wegie, Skogkatt",

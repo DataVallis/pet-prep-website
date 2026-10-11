@@ -287,6 +287,7 @@ const sl: RegistryCopy = {
       dna_pk_def: "Test DNK za pomanjkanje piruvat-kinaze (PK def)",
       hcm_negative: "Vzrejne mačke morajo biti HCM negativne (bolezen srca: hipertrofična kardiomiopatija)",
       dna_gsd4: "Test DNK za bolezen kopičenja glikogena tipa IV (GSD IV)",
+      dna_pra_b: "Test DNK za progresivno atrofijo mrežnice pri bengalski mački (PRA-b)",
     },
   },
   health: {
@@ -323,6 +324,7 @@ const sl: RegistryCopy = {
     dental_weight_care: "PetMD med težavami, na katere je treba paziti, navaja bolezni zob in prekomerno težo, zato lastnikom svetuje redno ščetkanje zob in nadzor teže.",
     gsd_iv: "Pri pasmi se pojavlja dedna bolezen kopičenja glikogena tipa IV (GSD IV), ki prizadene mucke; z DNK-testom staršev se ji vzreditelji lahko izognejo.",
     hip_dysplasia_weight: "Pri pasmi se lahko pojavi displazija kolkov (slabo razvit kolčni sklep); PetMD svetuje, da mačka ohranja zdravo težo, ki varuje sklepe.",
+    pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
   },
   page: {
     eyebrow: "Register živali",
@@ -545,6 +547,14 @@ const sl: RegistryCopy = {
         "GCCF jo opisuje kot energično in igrivo, a potrpežljivo mačko — dobro izbiro za družine z majhnimi otroki —, ki se dobro razume tudi z drugimi živalmi, tudi s psi. PetMD svetuje česanje vsaj enkrat na teden, med spomladanskim in jesenskim linjanjem pa več, in poudarja, da sibirska mačka ne velja za hipoalergeno. Rodovniški mucki gredo v nov dom običajno pri 12–13 tednih (PDSA).",
       ],
       sources: ["C13", "C34", "C35"],
+    },
+    bengal: {
+      aka: "bengalka, Bengal",
+      text: [
+        "PDSA opisuje bengalsko mačko kot zelo inteligentno in energično mačko, ki potrebuje veliko miselnih izzivov in priložnosti za gibanje ter ima rada visoko razgledno točko, na primer mačje drevo. Je ljubeča, a se bo raje zvila ob vas kot v vašem naročju, in zna biti precej glasna. VCA navaja, da bengalke rastejo počasi in lahko telesno dozorijo šele pri dveh letih.",
+        "Njena kratka, mehka, pegasta ali marmorirana dlaka potrebuje le rahlo krtačenje ali česanje enkrat na teden (PDSA). PetMD opozarja, da bengalka morda ni najboljša izbira za družine z majhnimi otroki, s psi in drugimi mačkami pa se ob pravilnem uvajanju lahko razume. Pasma je nastala s križanjem azijske leopardje mačke z domačimi mačkami; PetPrep prikazuje le registrirano domačo bengalsko mačko. Rodovniški mucki gredo v nov dom običajno pri 12–13 tednih (PDSA).",
+      ],
+      sources: ["C13", "C44", "C45", "C46"],
     },
     norwegian_forest_cat: {
       aka: "wegie, skogkatt, Norwegian Forest Cat",
