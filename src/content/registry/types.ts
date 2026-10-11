@@ -3,7 +3,7 @@
  * whatever species, fact groups, fields, facets and game rules the registry contains and looks
  * up their words here. A registry value without words here fails the build (see validate()).
  */
-import type { PortraitKind } from "@/content/registry/registry";
+import type { ChecklistLevel, PortraitKind } from "@/content/registry/registry";
 
 export type Fmt = {
   /** 1234.5 → "1,234.5" / "1.234,5". */
@@ -96,6 +96,8 @@ export type RegistryCopy = {
     play_sessions: (n: number) => string;
   };
   rules: Record<string, (p: Record<string, number>, f: Fmt) => string>;
+  /** Breeder checklist (M5-R11-06): general items per species and the parents' health tests, per key. */
+  checklist: { items: Record<string, string>; tests: Record<string, string> };
   health: Record<string, string>;
   page: {
     eyebrow: string;
@@ -121,6 +123,13 @@ export type RegistryCopy = {
     healthTitle: string;
     healthNote: string;
     healthNone: string;
+    checklistTitle: string;
+    checklistIntro: (speciesId: string) => string;
+    checklistGeneralTitle: string;
+    checklistTestsTitle: string;
+    checklistLevels: (speciesId: string) => Record<ChecklistLevel, string>;
+    checklistUkNote: (speciesId: string) => string;
+    checklistStatus: Record<"none_recommended" | "not_found" | "not_checked", string>;
     sourcesTitle: string;
     sourcesIntro: string;
     sourceLabel: (id: string, publisher: string) => string;

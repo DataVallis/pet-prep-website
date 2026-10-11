@@ -51,6 +51,15 @@ export type Game = {
   basis_source_ids: SourceId[];
 };
 
+/** Breeder checklist (M5-R11-06): what to check before buying; tests = parents' health tests. */
+export type ChecklistLevel = "minimum" | "best_practice" | "other_scheme";
+export type ChecklistItem = { key: string; source_ids: SourceId[] };
+export type BreederChecklist = {
+  status: "listed" | "none_recommended" | "not_found" | "not_checked";
+  tests: { key: string; level: ChecklistLevel; source_ids: SourceId[] }[];
+  basis_source_ids: SourceId[];
+};
+
 export type Availability = "in_app" | "coming_soon" | "info_only";
 export type Localized<T = string> = { en: T; sl: T };
 
@@ -68,6 +77,8 @@ export type Breed = {
   health: HealthItem[];
   suitability: { suits: { tag: string; source_ids: SourceId[] }[]; consider: { tag: string; source_ids: SourceId[] }[] };
   game: Game | null;
+  /** Absent in exports before M5-R11-06 (2026-10-11). */
+  breeder_checklist?: BreederChecklist;
   source_ids: SourceId[];
   /**
    * Optional fields the website reads when the export provides them (absent today):
@@ -95,6 +106,8 @@ export type Species = {
   facets: string[];
   compare_fields: string[];
   general_facts: FactItem[];
+  /** What to check with the breeder for every breed of the species (M5-R11-06); absent in older exports. */
+  buyer_checklist?: ChecklistItem[];
   free_plan: { id: string; name: Localized; adult_activity: Activity; basis_source_ids: SourceId[] };
 };
 
