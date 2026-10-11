@@ -131,7 +131,7 @@ const en: RegistryCopy = {
   categories: {
     size: { toy: "toy", small: "small", medium: "medium", medium_large: "medium to large", large: "large", giant: "giant" },
     coat: { moderately_long: "moderately long", smooth: "smooth (short)", short: "short", medium: "medium length", short_long: "short or long (two coat varieties)", long: "long" },
-    grooming_frequency: { once_a_week: "once a week", more_than_once_a_week: "more than once a week", daily: "daily", every_day: "every day" },
+    grooming_frequency: { at_least_once_a_week: "at least once a week", once_a_week: "once a week", more_than_once_a_week: "more than once a week", daily: "daily", every_day: "every day" },
     grooming_level: { moderate: "moderate", high: "high", low: "low" },
     shedding: { yes: "sheds", no: "does not shed (not the same as hypoallergenic)", high: "sheds a lot", moderate: "sheds moderately", low: "sheds little", minimal: "sheds minimally" },
   },
@@ -421,6 +421,14 @@ const en: RegistryCopy = {
         "Its standard calls it friendly and gentle, alert and outgoing. UK sources say it needs more than two hours of exercise a day, a large house with a large garden and a very secure, high fence, as Huskies are known to escape; it sheds a lot, needs brushing a few times a week and does not cope well alone. The PDSA suggests it for adult-only homes or homes with teenagers rather than families with smaller children, and lists hip dysplasia, eye problems and epilepsy among its health concerns.",
       ],
       sources: ["S158", "S160", "S162"],
+    },
+    british_shorthair: {
+      aka: "British Blue",
+      text: [
+        "The British Shorthair is a sturdy, dense-coated cat with large round eyes — the CFA calls it a \"teddy bear\" cat. Most people picture it blue-grey, but it comes in a number of colours and patterns. It matures slowly: the CFA says it reaches full size at about three years, VCA says physical maturity can take up to five.",
+        "The CFA describes it as very affectionate and attached to its people; it gets along with everyone in the household regardless of age, but is usually not fond of being carried, and it has lived with dogs, rabbits and birds. VCA describes a moderate activity level and advises combing the coat at least weekly. Pedigree kittens usually go to their new home at 12–13 weeks (PDSA).",
+      ],
+      sources: ["C13", "C27", "C28"],
     },
   },
 };

@@ -222,17 +222,18 @@ function fieldLabel(locale: Locale, b: Breed, field: string): string {
  */
 function glanceRows(locale: Locale, b: Breed): GlanceRow[] {
   const sp = getSpecies(b.species);
+  // A breed without a fact for a comparison field gets no row (and no label lookup — a statement
+  // field's label comes from the group of the breed's own fact, e.g. the British Shorthair has no
+  // "sources differ on combing" statement, M5-R10-14).
   return sp.compare_fields
     .filter((k) => k !== "game_activity")
-    .map((k) => {
-      const facts = b.facts.filter((x) => x.field === k);
-      return {
-        key: k,
-        label: fieldLabel(locale, b, k),
-        values: facts.map((x) => ({ text: x.kind === "statement" ? factText(locale, x) : valueText(locale, x), sources: refs(x.source_ids) })),
-      };
-    })
-    .filter((r) => r.values.length > 0);
+    .map((k) => ({ k, facts: b.facts.filter((x) => x.field === k) }))
+    .filter(({ facts }) => facts.length > 0)
+    .map(({ k, facts }) => ({
+      key: k,
+      label: fieldLabel(locale, b, k),
+      values: facts.map((x) => ({ text: x.kind === "statement" ? factText(locale, x) : valueText(locale, x), sources: refs(x.source_ids) })),
+    }));
 }
 
 /** Topics of the generated breed Q&A and the fact fields that answer them (in this order). */

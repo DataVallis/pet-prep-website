@@ -139,7 +139,7 @@ const sl: RegistryCopy = {
   categories: {
     size: { toy: "zelo majhen", small: "majhen", medium: "srednje velik", medium_large: "srednje velik do velik", large: "velik", giant: "zelo velik" },
     coat: { moderately_long: "zmerno dolga", smooth: "gladka (kratka)", short: "kratka", medium: "srednje dolga", short_long: "kratka ali dolga (dve različici dlake)", long: "dolga" },
-    grooming_frequency: { once_a_week: "enkrat na teden", more_than_once_a_week: "večkrat na teden", daily: "vsak dan", every_day: "vsak dan" },
+    grooming_frequency: { at_least_once_a_week: "vsaj enkrat na teden", once_a_week: "enkrat na teden", more_than_once_a_week: "večkrat na teden", daily: "vsak dan", every_day: "vsak dan" },
     grooming_level: { moderate: "zmerne", high: "velike", low: "majhne" },
     shedding: { yes: "dlaka izpada", no: "dlaka ne izpada (to ne pomeni, da je hipoalergen)", high: "dlaka močno izpada", moderate: "dlaka zmerno izpada", low: "dlaka malo izpada", minimal: "dlaka zelo malo izpada" },
   },
@@ -431,6 +431,14 @@ const sl: RegistryCopy = {
         "Standard ga opisuje kot prijaznega in nežnega, pozornega in odprtega psa. Britanski viri pravijo, da potrebuje več kot dve uri gibanja na dan, veliko hišo z velikim vrtom ter zelo varno, visoko ograjo, saj haskiji radi pobegnejo; dlaka mu močno izpada, česati ga je treba nekajkrat na teden in sam se ne znajde dobro. PDSA ga priporoča za gospodinjstva z odraslimi ali najstniki, ne za družine z manjšimi otroki, med zdravstvenimi skrbmi pa navaja displazijo kolkov, težave z očmi in epilepsijo.",
       ],
       sources: ["S158", "S160", "S162"],
+    },
+    british_shorthair: {
+      aka: "britanka, British Blue",
+      text: [
+        "Britanska kratkodlaka mačka je čvrsta mačka z gosto dlako in velikimi okroglimi očmi — CFA jo imenuje mačka »medvedek«. Večina ljudi si jo predstavlja modro-sivo, a je v več barvah in vzorcih. Počasi dozoreva: po CFA doseže polno velikost pri približno treh letih, po VCA telesna zrelost lahko traja do pet let.",
+        "CFA jo opisuje kot zelo ljubečo mačko, ki se naveže na svoje ljudi; razume se z vsemi v gospodinjstvu ne glede na starost, a običajno ne mara, da jo nosite naokrog, in živela je že s psi, kunci in pticami. VCA navaja zmerno aktivnost in svetuje, da dlako počešete vsaj enkrat na teden. Rodovniški mucki gredo v nov dom običajno pri 12–13 tednih (PDSA).",
+      ],
+      sources: ["C13", "C27", "C28"],
     },
   },
 };
