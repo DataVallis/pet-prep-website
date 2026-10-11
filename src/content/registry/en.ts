@@ -213,7 +213,7 @@ const en: RegistryCopy = {
     litter_rule: (p) =>
       `Litter box: an adult cat uses it ${p.uses} times a day; each use is scooped within ${p.scoop_hours} hours (outside quiet hours), and all the litter is changed every ${p.change_days} days.`,
     scratching_after_missed_play: () => "After a day without enough play the cat scratches something once; the child carries it to the scratching post.",
-    grooming_rule: (p) => `Combing ${p.per_week} times a week.`,
+    grooming_rule: (p) => (p.per_week === 1 ? "Combing once a week." : p.per_week === 2 ? "Combing twice a week." : `Combing ${p.per_week} times a week.`),
   },
   checklist: {
     items: {

@@ -222,7 +222,7 @@ const sl: RegistryCopy = {
     litter_rule: (p) =>
       `Stranišče: odrasla mačka ga uporabi ${p.uses}-krat na dan; vsako uporabo je treba počistiti v ${p.scoop_hours} urah (zunaj tihih ur), ves pesek pa zamenjati vsakih ${p.change_days} dni.`,
     scratching_after_missed_play: () => "Po dnevu brez dovolj igre mačka enkrat nekaj spraska; otrok jo odnese na praskalnik.",
-    grooming_rule: (p) => `Česanje ${p.per_week}-krat na teden.`,
+    grooming_rule: (p) => (p.per_week === 1 ? "Česanje enkrat na teden." : p.per_week === 2 ? "Česanje dvakrat na teden." : `Česanje ${p.per_week}-krat na teden.`),
   },
   checklist: {
     items: {
