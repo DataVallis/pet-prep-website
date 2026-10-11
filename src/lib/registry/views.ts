@@ -515,7 +515,21 @@ function validate() {
       for (const b of breedsOf(sp.id)) {
         checkPortrait(b);
         breedUpdated(b);
-        buildBreedView(locale, b);
+        const v = buildBreedView(locale, b);
+        // every citation on the page must point at a listed source (visibleSourceIds may drop national ones)
+        const listed = new Set(v.sources.map((s) => s.id));
+        const cited = [
+          ...v.glance.flatMap((r) => r.values.flatMap((l) => l.sources)),
+          ...v.groups.flatMap((g) => [...g.lines, ...g.general].flatMap((l) => l.sources)),
+          ...v.health.flatMap((l) => l.sources),
+          ...[...v.suits, ...v.consider].flatMap((t) => t.sources),
+          ...(v.game?.basis ?? []),
+          ...[...v.checklist.general, ...v.checklist.national, ...v.checklist.groups.flatMap((g) => g.lines)].flatMap((l) => l.sources),
+          ...v.checklist.statusSources,
+        ].map((s) => s.id);
+        for (const id of [...cited, ...(c.intros[b.id]?.sources ?? [])]) {
+          if (!listed.has(id)) throw new Error(`registry/${locale}: ${b.id} cites ${id}, which is not in the page's source list`);
+        }
         const intro = c.intros[b.id];
         for (const s of intro?.sources ?? []) {
           if (!b.source_ids.includes(s)) throw new Error(`registry/${locale}.ts: ${b.id} intro cites ${s}, which is not in the breed's sources`);

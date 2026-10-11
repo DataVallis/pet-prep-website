@@ -338,7 +338,7 @@ const en: RegistryCopy = {
     healthNone: "Our sources do not include breed-specific health information for this breed yet.",
     checklistTitle: "Before you buy: what to check with the breeder",
     checklistIntro: (speciesId) =>
-      speciesId === "cat" ? "Questions to settle before you take a kitten home. Every point cites its source." : "Questions to settle before you take a puppy home. Every point cites its source.",
+      speciesId === "cat" ? "Questions to settle before you take a kitten home. The points are advice from vets, welfare charities and cat federations; each cites its source." : "Questions to settle before you take a puppy home. The points are advice from vets, welfare charities and kennel clubs; each cites its source.",
     checklistCountry: { code: null, title: "" },
     checklistLocalNote: "Laws on the minimum age, microchipping and vaccination differ by country — check the rules where you live.",
     checklistGeneralTitle: "For every breed",
