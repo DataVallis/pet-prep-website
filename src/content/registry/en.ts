@@ -131,7 +131,7 @@ const en: RegistryCopy = {
   categories: {
     size: { toy: "toy", small: "small", medium: "medium", medium_large: "medium to large", large: "large", giant: "giant" },
     coat: { moderately_long: "moderately long", smooth: "smooth (short)", short: "short", medium: "medium length", short_long: "short or long (two coat varieties)", long: "long" },
-    grooming_frequency: { at_least_once_a_week: "at least once a week", once_a_week: "once a week", more_than_once_a_week: "more than once a week", daily: "daily", every_day: "every day" },
+    grooming_frequency: { at_least_once_a_week: "at least once a week", at_least_once_or_twice_a_week: "at least once or twice a week", once_a_week: "once a week", more_than_once_a_week: "more than once a week", daily: "daily", every_day: "every day" },
     grooming_level: { moderate: "moderate", high: "high", low: "low" },
     shedding: { yes: "sheds", no: "does not shed (not the same as hypoallergenic)", high: "sheds a lot", moderate: "sheds moderately", low: "sheds little", minimal: "sheds minimally" },
   },
@@ -244,6 +244,8 @@ const en: RegistryCopy = {
     westie_lung: "A lung disease known as \"Westie lung\" (idiopathic pulmonary fibrosis), which makes breathing harder, can occur in the breed, mostly in older dogs.",
     jaw_bone_disorder: "An inherited bone disorder of the jaw can occur in the breed.",
     dry_eye: "Dry eye, where the eyes do not make enough tears and become dry and painful, can occur in the breed.",
+    heart_hcm: "Hypertrophic cardiomyopathy (HCM), an inherited heart disease in which the heart muscle thickens, occurs in the breed.",
+    dental_weight_nail_care: "A large UK study names dental disease, being overweight and overgrown claws among the most common problems in the breed, so owners are advised to keep up dental care, weight control and claw care.",
   },
   page: {
     eyebrow: "Animal register",
@@ -429,6 +431,14 @@ const en: RegistryCopy = {
         "The CFA describes it as very affectionate and attached to its people; it gets along with everyone in the household regardless of age, but is usually not fond of being carried, and it has lived with dogs, rabbits and birds. VCA describes a moderate activity level and advises combing the coat at least weekly. Pedigree kittens usually go to their new home at 12–13 weeks (PDSA).",
       ],
       sources: ["C13", "C27", "C28"],
+    },
+    ragdoll: {
+      aka: "Rag doll",
+      text: [
+        "The CFA describes the Ragdoll as a large, laid-back cat with a semi-long, plush and silky coat and blue eyes. Its darker \"points\" come in several patterns — colourpoint with no white, mitted with white feet, bicolour with more white, and van. It is slow to mature: it reaches its full coat colour at two years and its full size and weight at about four.",
+        "The CFA describes a gentle cat that greets you at the door and follows you from room to room, and usually plays without putting out its claws. PetMD calls it a good choice for families, including those with children, but advises slow, supervised introductions to children and other pets, and says some Ragdolls need combing only once or twice a week, while the CFA advises regular combing. Pedigree kittens usually go to a new home at 12–13 weeks (PDSA).",
+      ],
+      sources: ["C13", "C30", "C32"],
     },
   },
 };
