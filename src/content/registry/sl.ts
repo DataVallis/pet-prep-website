@@ -290,6 +290,7 @@ const sl: RegistryCopy = {
       dna_pra_b: "Test DNK za progresivno atrofijo mrežnice pri bengalski mački (PRA-b)",
       dna_jlpp: "Test DNK za juvenilno paralizo grla in polinevropatijo (JLPP)",
       dna_lemp2: "Test DNK za levkoencefalomielopatijo (LEMP-2)",
+      dna_huu: "Test DNK za hiperurikozurijo (HUU)",
     },
   },
   health: {
@@ -329,6 +330,9 @@ const sl: RegistryCopy = {
     laryngeal_paralysis_polyneuropathy: "Pri pasmi se pojavlja juvenilna paraliza grla in polinevropatija (JLPP), dedna bolezen živcev, ki prizadene grlo in zadnje noge; z DNK-testom staršev se ji vzreditelji lahko izognejo.",
     heart_sas: "Pri pasmi se pojavlja subaortna stenoza, zožitev tik pod srčno zaklopko, ki lahko povzroči srčni šum; psi za vzrejo naj imajo najprej pregledano srce.",
     inherited_eye_defects: "Pri pasmi se pojavljajo dedne bolezni oči, na primer displazija mrežnice in obstojna zenična membrana; na voljo je pregled oči.",
+    skin_fold_infections: "Kožne gube, zlasti na obrazu, lahko zadržujejo vlago in se okužijo (piodermija kožnih gub); gube na obrazu je treba čistiti vsak dan.",
+    eyelid_eye_problems: "Pri pasmi se pojavljajo težave z vekami (navznoter ali navzven obrnjene veke), suho oko in »češnjevo oko«; na voljo je pregled oči.",
+    hip_elbow_joint_disease: "Pri pasmi se pojavljata displazija kolkov in komolcev, ko se sklepi ne razvijejo pravilno, kar lahko vodi v bolezen sklepov.",
     pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
   },
   page: {
@@ -536,6 +540,14 @@ const sl: RegistryCopy = {
         "Standard ga opisuje kot dobrodušnega, mirnega, zelo vdanega, ubogljivega in delavnega psa, The Royal Kennel Club pa pravi, da je dobro vzgojen rotvajler čudovit družinski pes. Britanski viri pravijo, da potrebuje več kot dve uri gibanja na dan, veliko hišo z velikim vrtom in izkušenega lastnika, ker je tako močan; socializirati ga je treba že od malega. PDSA ga družinam z mlajšimi otroki in dojenčki ne priporoča, z drugimi živalmi pa ga nikoli ne puščajte brez nadzora. Dovolj je krtačenje enkrat na teden. Običajno živi manj kot deset let, The Royal Kennel Club pa pri pasmi spremlja obliko zadnjih nog.",
       ],
       sources: ["S166", "S168", "S169", "S171"],
+    },
+    bulldog: {
+      aka: "bulldog, buldog, english bulldog",
+      text: [
+        "Angleški buldog je srednje velik pes kratke, gladke dlake iz Velike Britanije: precej čokat, nizek, širok, močan in kompakten, z razmeroma kratkim obrazom, majhnimi tankimi »rose« uhlji in okroglimi, zelo temnimi očmi. Standard dovoljuje enobarvne pse, na primer rdeče, rumenorjave, peščene in bele, ter tigraste in pied; črna in črna z rjavim sta zelo nezaželeni. Zahteva velike, široko odprte nosnice in pravi, da so psi s težavami pri dihanju zelo nezaželeni.",
+        "Standard ga opisuje kot pozornega, pogumnega, zvestega, zanesljivega in neustrašnega psa, ki je videti strog, a je ljubeč, The Royal Kennel Club pa pravi, da je zaradi značaja in zvestobe še vedno zelo priljubljen družinski pes. Britanski viri pravijo, da potrebuje do ene ure gibanja na dan, nikoli v vročini dneva, in da se ob socializaciji v mladosti dobro razume z drugimi domačimi živalmi; krtačenje je potrebno enkrat na teden, gube na obrazu pa je treba čistiti vsak dan. PDSA ga opisuje kot pasmo z zelo sploščenim obrazom, ki ima zelo verjetno resne zdravstvene težave, na primer težko dihanje, in močno priporoča razmislek o bolj zdravi pasmi, križancu ali mešančku. Običajno živi manj kot deset let.",
+      ],
+      sources: ["S175", "S177", "S180"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
