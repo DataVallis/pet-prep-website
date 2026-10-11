@@ -227,20 +227,24 @@ const sl: RegistryCopy = {
   checklist: {
     items: {
       see_mother: "Mladička si oglejte skupaj z mamo, tam, kjer se je skotil.",
-      min_age_puppy: "Po slovenskem pravilniku o zaščiti hišnih živali (2009) mladička ni dovoljeno odvzeti od psice pred dopolnjenim 8. tednom starosti.",
-      microchip_registration: "V Sloveniji mora biti pes do dopolnjenega 8. tedna starosti označen z mikročipom, novi lastnik pa lastništvo prijavi v 7 dneh.",
-      vaccination_records: "Po slovenskem pravilniku (2009) vam mora prodajalec izročiti predpisane veterinarske dokumente.",
-      rabies_vaccination: "Cepljenje psov proti steklini je v Sloveniji obvezno; po pravilniku iz leta 2006 ga lastnik zagotovi, ko pes dopolni 3 mesece.",
-      pedigree_fci: "Prosite za rodovnik. Po pravilih FCI se rodovnik sme izdati le za pravilno poreklo; slovenska članica FCI je Kinološka zveza Slovenije.",
-      parents_dna_profile: "Za pse, vzrejene v Sloveniji: Veterinarska fakulteta v Ljubljani, uradni izvajalec za Kinološko zvezo Slovenije, navaja, da je profil DNK za lastnike vzrejnih psov obvezen — vprašajte, ali ga imata oba starša.",
+      min_age_puppy: "Mladiček naj ne zapusti mame pred 8. tednom starosti.",
+      pedigree_fci: "Prosite za rodovnik. Po pravilih FCI se rodovnik sme izdati le za pravilno poreklo.",
       parents_health_tests: "Prosite za izvide zdravstvenih testov obeh staršev. Kateri testi so pomembni, je odvisno od pasme.",
       breed_club_rules: "Nacionalne kinološke zveze lahko postavijo vzrejna pravila, ki presegajo pravila FCI — vprašajte pasemski klub, katere teste morajo opraviti starši.",
       written_contract: "Prosite za pisno kupoprodajno pogodbo, ki zapiše poreklo in zdravje mladička.",
       kitten_see_mother: "Mladička si oglejte skupaj z mamo, tam, kjer mladiči živijo.",
-      kitten_min_age: "Po slovenskem pravilniku (2009) mladiča ni dovoljeno odvzeti od mačke pred dopolnjenim 12. tednom starosti; pravila FIFe za rodovniške mačke določajo 14 tednov.",
+      kitten_min_age: "Po pravilih FIFe za rodovniške mačke mladič ne gre v nov dom pred 14. tednom starosti.",
       kitten_vaccination: "Mladiček je v celoti cepljen (panlevkopenija, kalicivirus, herpesvirus) in ima potrdilo o cepljenju.",
-      kitten_pedigree: "Rodovniški mladiček ima rodovnik z vsaj tremi generacijami; slovenska članica FIFe je ZFDS.",
+      kitten_pedigree: "Rodovniški mladiček ima rodovnik z vsaj tremi generacijami.",
       kitten_parents_tests: "Vprašajte, ali je imel kateri od staršev zdravstvene težave, ki bi jih mladiček lahko podedoval.",
+      min_age_puppy_si: "Po pravilniku o zaščiti hišnih živali (2009) mladička ni dovoljeno odvzeti od psice pred dopolnjenim 8. tednom starosti.",
+      microchip_registration: "Pes mora biti do dopolnjenega 8. tedna starosti označen z mikročipom, novi lastnik pa lastništvo prijavi v 7 dneh.",
+      vaccination_records: "Po pravilniku (2009) vam mora prodajalec izročiti predpisane veterinarske dokumente.",
+      rabies_vaccination: "Cepljenje psov proti steklini je obvezno; po pravilniku iz leta 2006 ga lastnik zagotovi, ko pes dopolni 3 mesece.",
+      kzs_member_si: "Slovenska članica FCI je Kinološka zveza Slovenije.",
+      parents_dna_profile: "Veterinarska fakulteta v Ljubljani, uradni izvajalec za Kinološko zvezo Slovenije, navaja, da je profil DNK za lastnike vzrejnih psov obvezen — vprašajte, ali ga imata oba starša.",
+      kitten_min_age_si: "Po pravilniku (2009) mladiča ni dovoljeno odvzeti od mačke pred dopolnjenim 12. tednom starosti.",
+      zfds_member_si: "Slovenska članica FIFe je Zveza felinoloških društev Slovenije (ZFDS).",
     },
     tests: {
       hip_scheme: "Rentgensko slikanje kolkov za displazijo kolkov (VB: shema BVA/KC)",
@@ -350,10 +354,9 @@ const sl: RegistryCopy = {
     healthNote: "Informativno, ni veterinarsko preverjeno. O zdravju svoje živali se posvetujte z veterinarjem.",
     healthNone: "V naših virih za to pasmo še ni podatkov o zdravju, značilnih za pasmo.",
     checklistTitle: "Pred nakupom: kaj preveriti pri vzreditelju",
-    checklistIntro: (speciesId) =>
-      speciesId === "cat"
-        ? "Vprašanja, ki jih razjasnite, preden mladička odpeljete domov. Slovenski predpisi so navedeni kot taki; druge točke so nasveti veterinarjev, organizacij za dobrobit živali in felinoloških zvez. Vsaka točka navaja vir."
-        : "Vprašanja, ki jih razjasnite, preden mladička odpeljete domov. Slovenski predpisi so navedeni kot taki; druge točke so nasveti veterinarjev, organizacij za dobrobit živali in kinoloških zvez. Vsaka točka navaja vir.",
+    checklistIntro: () => "Vprašanja, ki jih razjasnite, preden mladička odpeljete domov. Vsaka točka navaja vir.",
+    checklistCountry: { code: "SI", title: "V Sloveniji velja" },
+    checklistLocalNote: "",
     checklistGeneralTitle: "Za vse pasme",
     checklistTestsTitle: "Zdravstveni testi staršev za to pasmo",
     checklistLevels: (speciesId) => ({

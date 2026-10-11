@@ -373,6 +373,14 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
                 <FactList lines={v.checklist.general} empty="" sourceLabel={cite} />
               </div>
             ) : null}
+            {v.checklist.national.length ? (
+              <div className="flex max-w-3xl flex-col gap-3 rounded-[18px] border border-line bg-white p-5">
+                <h3 className="text-[19px] font-bold">{c.page.checklistCountry.title}</h3>
+                <FactList lines={v.checklist.national} empty="" sourceLabel={cite} />
+              </div>
+            ) : c.page.checklistLocalNote ? (
+              <p className="max-w-3xl text-[15px] leading-relaxed text-muted">{c.page.checklistLocalNote}</p>
+            ) : null}
             <div className="flex max-w-3xl flex-col gap-3">
               <h3 className="text-[19px] font-bold">{c.page.checklistTestsTitle}</h3>
               {v.checklist.status ? (

@@ -209,6 +209,8 @@ export type BreedView = {
   health: FactLine[];
   checklist: {
     general: FactLine[];
+    /** National rules for this language's country (sl → Slovenia); empty elsewhere. */
+    national: FactLine[];
     groups: { level: ChecklistLevel; title: string; lines: FactLine[] }[];
     /** Shown instead of (or, never, next to) the groups when the breed has no listed tests. */
     status: string | null;
@@ -305,7 +307,10 @@ function checklistView(locale: Locale, b: Breed): BreedView["checklist"] {
   const sp = getSpecies(b.species);
   const bc = b.breeder_checklist;
   if (!bc || !sp.buyer_checklist) throw new Error(`registry: ${b.id} has no breeder checklist — re-export from pet-prep main (M5-R11-06)`);
-  const general = sp.buyer_checklist.map((it) => ({ text: need(c.checklist.items, it.key, "checklist item"), sources: refs(it.source_ids) }));
+  const item = (it: { key: string; source_ids: string[] }) => ({ text: need(c.checklist.items, it.key, "checklist item"), sources: refs(it.source_ids) });
+  // International site: universal items for everyone, a country's rules only on its language pages.
+  const general = sp.buyer_checklist.filter((it) => !it.country).map(item);
+  const national = c.page.checklistCountry.code ? sp.buyer_checklist.filter((it) => it.country === c.page.checklistCountry.code).map(item) : [];
   const groups = CHECKLIST_LEVELS.map((level) => ({
     level,
     title: c.page.checklistLevels(b.species)[level],
@@ -313,10 +318,25 @@ function checklistView(locale: Locale, b: Breed): BreedView["checklist"] {
   })).filter((g) => g.lines.length > 0);
   return {
     general,
+    national,
     groups,
     status: bc.status === "listed" ? null : need(c.page.checklistStatus, bc.status, "checklist status"),
     statusSources: bc.status === "listed" ? [] : refs(bc.basis_source_ids),
   };
+}
+
+/**
+ * The breed's sources minus those cited only by another country's rules (an English reader does not
+ * get the Slovenian regulations in the list, M5-R11-06b).
+ */
+function visibleSourceIds(locale: Locale, b: Breed): string[] {
+  const code = copies[locale].page.checklistCountry.code;
+  const items = getSpecies(b.species).buyer_checklist ?? [];
+  const shown = new Set(items.filter((it) => !it.country || it.country === code).flatMap((it) => it.source_ids));
+  const hiddenOnly = new Set(items.filter((it) => it.country && it.country !== code).flatMap((it) => it.source_ids).filter((id) => !shown.has(id)));
+  for (const t of b.breeder_checklist?.tests ?? []) t.source_ids.forEach((id) => hiddenOnly.delete(id));
+  for (const id of b.breeder_checklist?.basis_source_ids ?? []) hiddenOnly.delete(id);
+  return b.source_ids.filter((id) => !hiddenOnly.has(id));
 }
 
 export function buildBreedView(locale: Locale, b: Breed): BreedView {
@@ -369,7 +389,7 @@ export function buildBreedView(locale: Locale, b: Breed): BreedView {
       : null,
     health: b.health.map((h) => ({ text: need(c.health, h.key, "health item"), sources: refs(h.source_ids) })),
     checklist: checklistView(locale, b),
-    sources: b.source_ids.map(getSource),
+    sources: visibleSourceIds(locale, b).map(getSource),
   };
 }
 
@@ -549,6 +569,8 @@ export function breedMarkdown(locale: Locale, b: Breed, url: string): string {
   out.push(`## ${c.page.healthTitle}`, `_${c.page.healthNote}_`, v.health.length ? v.health.map(mdLine).join("\n") : c.page.healthNone);
   out.push(`## ${c.page.checklistTitle}`, c.page.checklistIntro(b.species));
   if (v.checklist.general.length) out.push(`**${c.page.checklistGeneralTitle}**\n${v.checklist.general.map(mdLine).join("\n")}`);
+  if (v.checklist.national.length) out.push(`**${c.page.checklistCountry.title}**\n${v.checklist.national.map(mdLine).join("\n")}`);
+  else if (c.page.checklistLocalNote) out.push(`_${c.page.checklistLocalNote}_`);
   out.push(`**${c.page.checklistTestsTitle}**`);
   if (v.checklist.status) out.push(v.checklist.statusSources.length ? mdLine({ text: v.checklist.status, sources: v.checklist.statusSources }) : v.checklist.status);
   for (const g of v.checklist.groups) out.push(`_${g.title}_\n${g.lines.map(mdLine).join("\n")}`);
