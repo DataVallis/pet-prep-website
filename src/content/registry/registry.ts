@@ -77,7 +77,7 @@ export type Breed = {
   health: HealthItem[];
   suitability: { suits: { tag: string; source_ids: SourceId[] }[]; consider: { tag: string; source_ids: SourceId[] }[] };
   game: Game | null;
-  /** Absent in exports before M5-R11-06 (2026-10-11). */
+  /** Since M5-R11-06 (2026-10-11); the build fails without it (views.ts). */
   breeder_checklist?: BreederChecklist;
   source_ids: SourceId[];
   /**

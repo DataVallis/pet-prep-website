@@ -227,18 +227,19 @@ const sl: RegistryCopy = {
   checklist: {
     items: {
       see_mother: "Mladička si oglejte skupaj z mamo, tam, kjer se je skotil.",
-      min_age_puppy: "Mladiček ima ob odhodu od mame vsaj dopolnjenih 8 tednov (najmanj po slovenskih predpisih).",
-      microchip_registration: "Mladiček je označen z mikročipom (v Sloveniji do 8. tedna starosti) in registriran; novo lastništvo prijavite v 7 dneh.",
-      vaccination_records: "Ob nakupu dobite veterinarske dokumente s cepljenji; cepljenje psov proti steklini je v Sloveniji obvezno.",
-      pedigree_fci: "Čistopasemski mladiček ima rodovnik nacionalne kinološke zveze, ki je članica FCI (v Sloveniji: Kinološka zveza Slovenije).",
-      parents_dna_profile: "V Sloveniji je profil DNK za vzrejne pse obvezen — vprašajte za profila obeh staršev.",
-      parents_health_tests: "Prosite za izvide zdravstvenih testov obeh staršev. Kateri testi so pomembni, je odvisno od pasme — glejte seznam spodaj.",
-      breed_club_rules: "Kinološka zveza in pasemski klub v vsaki državi lahko postavita strožja vzrejna pravila od minimuma FCI — vprašajte pasemski klub, katere teste morajo opraviti starši.",
-      written_contract: "Zahtevajte pisno kupoprodajno pogodbo, ki zapiše poreklo in zdravje mladička.",
+      min_age_puppy: "Po slovenskem pravilniku o zaščiti hišnih živali (2009) mladička ni dovoljeno odvzeti od psice pred dopolnjenim 8. tednom starosti.",
+      microchip_registration: "V Sloveniji mora biti pes do dopolnjenega 8. tedna starosti označen z mikročipom, novi lastnik pa lastništvo prijavi v 7 dneh.",
+      vaccination_records: "Po slovenskem pravilniku (2009) vam mora prodajalec izročiti predpisane veterinarske dokumente.",
+      rabies_vaccination: "Cepljenje psov proti steklini je v Sloveniji obvezno; po pravilniku iz leta 2006 ga lastnik zagotovi, ko pes dopolni 3 mesece.",
+      pedigree_fci: "Prosite za rodovnik. Po pravilih FCI se rodovnik sme izdati le za pravilno poreklo; slovenska članica FCI je Kinološka zveza Slovenije.",
+      parents_dna_profile: "Za pse, vzrejene v Sloveniji: Veterinarska fakulteta v Ljubljani, uradni izvajalec za Kinološko zvezo Slovenije, navaja, da je profil DNK za lastnike vzrejnih psov obvezen — vprašajte, ali ga imata oba starša.",
+      parents_health_tests: "Prosite za izvide zdravstvenih testov obeh staršev. Kateri testi so pomembni, je odvisno od pasme.",
+      breed_club_rules: "Nacionalne kinološke zveze lahko postavijo vzrejna pravila, ki presegajo pravila FCI — vprašajte pasemski klub, katere teste morajo opraviti starši.",
+      written_contract: "Prosite za pisno kupoprodajno pogodbo, ki zapiše poreklo in zdravje mladička.",
       kitten_see_mother: "Mladička si oglejte skupaj z mamo, tam, kjer mladiči živijo.",
-      kitten_min_age: "Mladiček ima ob odhodu od mame vsaj dopolnjenih 12 tednov (slovenski predpisi); pravila FIFe za rodovniške mačke določajo 14 tednov.",
+      kitten_min_age: "Po slovenskem pravilniku (2009) mladiča ni dovoljeno odvzeti od mačke pred dopolnjenim 12. tednom starosti; pravila FIFe za rodovniške mačke določajo 14 tednov.",
       kitten_vaccination: "Mladiček je v celoti cepljen (panlevkopenija, kalicivirus, herpesvirus) in ima potrdilo o cepljenju.",
-      kitten_pedigree: "Rodovniški mladiček ima rodovnik z vsaj tremi generacijami (v Sloveniji je članica FIFe ZFDS).",
+      kitten_pedigree: "Rodovniški mladiček ima rodovnik z vsaj tremi generacijami; slovenska članica FIFe je ZFDS.",
       kitten_parents_tests: "Vprašajte, ali je imel kateri od staršev zdravstvene težave, ki bi jih mladiček lahko podedoval.",
     },
     tests: {
@@ -250,7 +251,7 @@ const sl: RegistryCopy = {
       ivdd_screening: "Pregled hrbtenice za bolezen medvretenčnih ploščic (IVDD)",
       hearing_baer: "Test sluha za gluhost (BAER)",
       cm_sm_mri: "Slikanje z magnetno resonanco za Chiarijevi podobno malformacijo in siringomielijo (VB: shema BVA/KC CM/SM)",
-      inbreeding_coi: "Nizko parjenje v sorodstvu in genska pestrost (koeficient inbridinga)",
+      inbreeding_coi: "Genska pestrost — preverite koeficient inbridinga",
       dna_prcd_pra: "Test DNK za progresivno atrofijo mrežnice (prcd-PRA)",
       dna_rcd4_pra: "Test DNK za progresivno atrofijo mrežnice (rcd4)",
       dna_gr_pra2: "Test DNK za progresivno atrofijo mrežnice (GR_PRA2)",
@@ -348,19 +349,19 @@ const sl: RegistryCopy = {
     checklistTitle: "Pred nakupom: kaj preveriti pri vzreditelju",
     checklistIntro: (speciesId) =>
       speciesId === "cat"
-        ? "Vprašanja, ki jih razjasnite, preden mladička odpeljete domov. Vsaka točka navaja vir; pravila so slovenska, če ni navedeno drugače."
-        : "Vprašanja, ki jih razjasnite, preden mladička odpeljete domov. Vsaka točka navaja vir; pravila so slovenska, če ni navedeno drugače.",
+        ? "Vprašanja, ki jih razjasnite, preden mladička odpeljete domov. Slovenski predpisi so navedeni kot taki; druge točke so nasveti veterinarjev, organizacij za dobrobit živali in felinoloških zvez. Vsaka točka navaja vir."
+        : "Vprašanja, ki jih razjasnite, preden mladička odpeljete domov. Slovenski predpisi so navedeni kot taki; druge točke so nasveti veterinarjev, organizacij za dobrobit živali in kinoloških zvez. Vsaka točka navaja vir.",
     checklistGeneralTitle: "Za vse pasme",
     checklistTestsTitle: "Zdravstveni testi staršev za to pasmo",
     checklistLevels: (speciesId) => ({
-      minimum: speciesId === "cat" ? "Testi, ki jih GCCF (VB) zahteva za vpis mačke v vzrejni register" : "Testi, ki jih Royal Kennel Club od vzrediteljev pričakuje vsaj",
+      minimum: speciesId === "cat" ? "Testi, ki jih GCCF (VB) zahteva za vpis mačke v vzrejni register" : "Testi, ki jih Royal Kennel Club priporoča kot minimum",
       best_practice: "Dodatni testi za najboljšo prakso",
       other_scheme: "Druge sheme pregledov za to pasmo",
     }),
     checklistUkNote: (speciesId) =>
       speciesId === "cat"
-        ? "Seznami so iz pravil britanske felinološke zveze in so v pomoč pri orientaciji. V Sloveniji se rodovniške mačke vpisujejo po pravilih FIFe prek ZFDS — vprašajte vzreditelja, katere teste so opravili starši."
-        : "Seznami so iz smernic britanske kinološke zveze in so v pomoč pri orientaciji. V Sloveniji vzrejna pravila za vsako pasmo določa njen pasemski klub v okviru Kinološke zveze Slovenije — vprašajte klub in vzreditelja, katere teste so opravili starši.",
+        ? "Seznam je iz pravil vzrejnega registra britanske zveze GCCF in je v pomoč pri orientaciji. Vprašajte vzreditelja, katere teste so opravili starši."
+        : "Seznami so od britanskega Royal Kennel Cluba in so v pomoč pri orientaciji; nacionalne kinološke zveze lahko postavijo svoja, strožja pravila. Vprašajte pasemski klub in vzreditelja, katere teste so opravili starši.",
     checklistStatus: {
       none_recommended: "Royal Kennel Club za to pasmo trenutno ne navaja priporočenih zdravstvenih pregledov pred vzrejo. Vzreditelja vseeno vprašajte o zdravju staršev.",
       not_found: "Za to pasmo še nismo našli zanesljivega vira, ki bi navajal zdravstvene teste staršev. Vprašajte pasemski klub in vzreditelja, katere teste so opravili starši.",

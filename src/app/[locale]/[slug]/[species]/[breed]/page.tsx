@@ -388,7 +388,9 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
                   <FactList lines={g.lines} empty="" sourceLabel={cite} />
                 </div>
               ))}
-              <p className="rounded-[14px] bg-mint-tint px-4 py-3 text-sm leading-relaxed">{c.page.checklistUkNote(species.id)}</p>
+              {v.checklist.groups.length ? (
+                <p className="rounded-[14px] bg-mint-tint px-4 py-3 text-sm leading-relaxed">{c.page.checklistUkNote(species.id)}</p>
+              ) : null}
             </div>
           </section>
 

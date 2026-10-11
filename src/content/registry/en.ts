@@ -218,18 +218,19 @@ const en: RegistryCopy = {
   checklist: {
     items: {
       see_mother: "See the puppy with its mother, where it was born.",
-      min_age_puppy: "The puppy is at least 8 full weeks old before it leaves its mother (the minimum in Slovenian rules).",
-      microchip_registration: "The puppy is microchipped (in Slovenia by 8 weeks of age) and registered; you report the new ownership within 7 days.",
-      vaccination_records: "You get the puppy's veterinary documents with its vaccinations; rabies vaccination of dogs is mandatory in Slovenia.",
-      pedigree_fci: "A purebred puppy has a pedigree from the national kennel club that is a member of the FCI (in Slovenia: Kinološka zveza Slovenije).",
-      parents_dna_profile: "In Slovenia, a DNA profile is mandatory for breeding dogs — ask for the parents' profiles.",
-      parents_health_tests: "Ask to see the health-test results of both parents. Which tests matter depends on the breed — see the list below.",
-      breed_club_rules: "Each country's kennel club and breed club can set stricter breeding rules than the FCI minimum — ask the breed club which tests the parents need.",
+      min_age_puppy: "Under Slovenia's 2009 pet-protection regulation, a puppy may not be taken from its mother before it is a full 8 weeks old.",
+      microchip_registration: "In Slovenia a dog must be microchipped by 8 weeks of age, and the new owner reports the ownership within 7 days.",
+      vaccination_records: "Under Slovenia's 2009 regulation, the seller must hand you the prescribed veterinary documents.",
+      rabies_vaccination: "Rabies vaccination of dogs is mandatory in Slovenia; under the 2006 regulation the owner has the dog vaccinated once it is 3 months old.",
+      pedigree_fci: "Ask for the pedigree. Under FCI rules a pedigree may be issued for correct parentage only; Slovenia's FCI member is Kinološka zveza Slovenije.",
+      parents_dna_profile: "For dogs bred in Slovenia: the Veterinary Faculty in Ljubljana, the official provider for Kinološka zveza Slovenije, says a DNA profile is mandatory for owners of breeding dogs — ask whether the parents have one.",
+      parents_health_tests: "Ask to see the health-test results of both parents. Which tests matter depends on the breed.",
+      breed_club_rules: "National kennel clubs can set breeding rules that go beyond the FCI's — ask the breed club which tests the parents need.",
       written_contract: "Ask for a written sale contract that records the puppy's background and health.",
       kitten_see_mother: "See the kitten with its mother, where the kittens live.",
-      kitten_min_age: "The kitten is at least 12 full weeks old before it leaves its mother (Slovenian rules); FIFe pedigree rules say 14 weeks.",
+      kitten_min_age: "Under Slovenia's 2009 regulation, a kitten may not be taken from its mother before it is a full 12 weeks old; FIFe pedigree rules say 14 weeks.",
       kitten_vaccination: "The kitten is fully vaccinated (panleukopenia, calicivirus, herpesvirus) and comes with a vaccination record.",
-      kitten_pedigree: "A pedigree kitten has a pedigree certificate showing at least three generations (in Slovenia, ZFDS is the FIFe member).",
+      kitten_pedigree: "A pedigree kitten comes with a pedigree certificate showing at least three generations; Slovenia's FIFe member is ZFDS.",
       kitten_parents_tests: "Ask whether either parent has had health problems the kitten could inherit.",
     },
     tests: {
@@ -241,7 +242,7 @@ const en: RegistryCopy = {
       ivdd_screening: "Spine screening for intervertebral disc disease (IVDD)",
       hearing_baer: "Hearing test for deafness (BAER)",
       cm_sm_mri: "MRI screening for Chiari-like malformation and syringomyelia (UK: BVA/KC CM/SM scheme)",
-      inbreeding_coi: "Low inbreeding and genetic diversity (inbreeding coefficient)",
+      inbreeding_coi: "Genetic diversity — check the inbreeding coefficient",
       dna_prcd_pra: "DNA test for progressive retinal atrophy (prcd-PRA)",
       dna_rcd4_pra: "DNA test for progressive retinal atrophy (rcd4)",
       dna_gr_pra2: "DNA test for progressive retinal atrophy (GR_PRA2)",
@@ -339,19 +340,19 @@ const en: RegistryCopy = {
     checklistTitle: "Before you buy: what to check with the breeder",
     checklistIntro: (speciesId) =>
       speciesId === "cat"
-        ? "Questions to settle before you take a kitten home. Every point cites its source; the rules shown are Slovenian unless stated."
-        : "Questions to settle before you take a puppy home. Every point cites its source; the rules shown are Slovenian unless stated.",
+        ? "Questions to settle before you take a kitten home. Slovenian rules are named as such; the other points are advice from vets, welfare charities and cat federations. Every point cites its source."
+        : "Questions to settle before you take a puppy home. Slovenian rules are named as such; the other points are advice from vets, welfare charities and kennel clubs. Every point cites its source.",
     checklistGeneralTitle: "For every breed",
     checklistTestsTitle: "Health tests of the parents for this breed",
     checklistLevels: (speciesId) => ({
-      minimum: speciesId === "cat" ? "Tests the GCCF (UK) requires before a cat goes on its breeding register" : "Tests the Royal Kennel Club asks breeders to do at a minimum",
+      minimum: speciesId === "cat" ? "Tests the GCCF (UK) requires before a cat goes on its breeding register" : "Tests the Royal Kennel Club recommends as a minimum",
       best_practice: "Further tests for best practice",
       other_scheme: "Other screening schemes for this breed",
     }),
     checklistUkNote: (speciesId) =>
       speciesId === "cat"
-        ? "These lists come from UK cat-federation rules and are an orientation. In Slovenia pedigree cats are registered under FIFe rules through ZFDS — ask the breeder which tests the parents have done."
-        : "These lists come from UK kennel-club guidance and are an orientation. In Slovenia the breeding rules for each breed are set by its breed club within Kinološka zveza Slovenije — ask the club and the breeder which tests the parents have done.",
+        ? "This list comes from the breeding-register rules of the UK's GCCF and is an orientation. Ask the breeder which tests the parents have done."
+        : "These lists come from the UK's Royal Kennel Club and are an orientation; national kennel clubs can set their own, stricter rules. Ask the breed club and the breeder which tests the parents have done.",
     checklistStatus: {
       none_recommended: "The Royal Kennel Club currently lists no recommended pre-breeding health screening for this breed. Still ask the breeder about the parents' health.",
       not_found: "We have not yet found a reliable source that lists health tests for the parents of this breed. Ask the breed club and the breeder which tests the parents have done.",

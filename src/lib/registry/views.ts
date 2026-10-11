@@ -303,8 +303,9 @@ const CHECKLIST_LEVELS: ChecklistLevel[] = ["minimum", "best_practice", "other_s
 function checklistView(locale: Locale, b: Breed): BreedView["checklist"] {
   const c = copies[locale];
   const sp = getSpecies(b.species);
-  const bc = b.breeder_checklist ?? { status: "not_checked" as const, tests: [], basis_source_ids: [] };
-  const general = (sp.buyer_checklist ?? []).map((it) => ({ text: need(c.checklist.items, it.key, "checklist item"), sources: refs(it.source_ids) }));
+  const bc = b.breeder_checklist;
+  if (!bc || !sp.buyer_checklist) throw new Error(`registry: ${b.id} has no breeder checklist — re-export from pet-prep main (M5-R11-06)`);
+  const general = sp.buyer_checklist.map((it) => ({ text: need(c.checklist.items, it.key, "checklist item"), sources: refs(it.source_ids) }));
   const groups = CHECKLIST_LEVELS.map((level) => ({
     level,
     title: c.page.checklistLevels(b.species)[level],
@@ -551,7 +552,7 @@ export function breedMarkdown(locale: Locale, b: Breed, url: string): string {
   out.push(`**${c.page.checklistTestsTitle}**`);
   if (v.checklist.status) out.push(v.checklist.statusSources.length ? mdLine({ text: v.checklist.status, sources: v.checklist.statusSources }) : v.checklist.status);
   for (const g of v.checklist.groups) out.push(`_${g.title}_\n${g.lines.map(mdLine).join("\n")}`);
-  out.push(`_${c.page.checklistUkNote(b.species)}_`);
+  if (v.checklist.groups.length) out.push(`_${c.page.checklistUkNote(b.species)}_`);
   out.push(`## ${c.page.sourcesTitle}`, v.sources.map((s) => `- ${s.id}: ${s.publisher} — ${s.title}. ${s.url}`).join("\n"));
   return out.join("\n\n");
 }
