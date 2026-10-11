@@ -271,6 +271,8 @@ const en: RegistryCopy = {
       hcm_negative: "Breeding cats must be HCM negative (heart disease: hypertrophic cardiomyopathy)",
       dna_gsd4: "DNA test for glycogen storage disease type IV (GSD IV)",
       dna_pra_b: "DNA test for progressive retinal atrophy in the Bengal (PRA-b)",
+      dna_jlpp: "DNA test for juvenile laryngeal paralysis and polyneuropathy (JLPP)",
+      dna_lemp2: "DNA test for leukoencephalomyelopathy (LEMP-2)",
     },
   },
   health: {
@@ -307,6 +309,9 @@ const en: RegistryCopy = {
     dental_weight_care: "PetMD names dental disease and being overweight among the problems to watch for, so owners are advised to brush the cat's teeth regularly and keep its weight in check.",
     gsd_iv: "Glycogen storage disease type IV (GSD IV), an inherited disorder that affects kittens, occurs in the breed; a DNA test of the parents lets breeders avoid it.",
     hip_dysplasia_weight: "Hip dysplasia, a poorly developed hip joint, can occur in the breed; PetMD advises keeping the cat at a healthy weight to protect its joints.",
+    laryngeal_paralysis_polyneuropathy: "Juvenile laryngeal paralysis and polyneuropathy (JLPP), an inherited nerve disease that affects the voice box and the back legs, occurs in the breed; a DNA test of the parents lets breeders avoid it.",
+    heart_sas: "Subaortic stenosis, a narrowing just below a heart valve that can cause a murmur, occurs in the breed; breeding dogs should have their hearts checked first.",
+    inherited_eye_defects: "Inherited eye conditions occur in the breed, such as retinal dysplasia and persistent pupillary membrane; eye testing is available.",
     pra_pk_def: "Two inherited conditions occur in the breed: progressive retinal atrophy, an eye disease that can lead to blindness, and pyruvate kinase deficiency, a blood disorder; DNA tests of the parents let breeders avoid them.",
   },
   page: {
@@ -506,6 +511,14 @@ const en: RegistryCopy = {
         "Its standard calls it friendly and gentle, alert and outgoing. UK sources say it needs more than two hours of exercise a day, a large house with a large garden and a very secure, high fence, as Huskies are known to escape; it sheds a lot, needs brushing a few times a week and does not cope well alone. The PDSA suggests it for adult-only homes or homes with teenagers rather than families with smaller children, and lists hip dysplasia, eye problems and epilepsy among its health concerns.",
       ],
       sources: ["S158", "S160", "S162"],
+    },
+    rottweiler: {
+      aka: "Rottie",
+      text: [
+        "The Rottweiler is a medium to large, powerful working dog from Germany. Its standard describes a stalwart dog, neither heavy nor light, with a short, coarse, flat-lying coat, medium pendant ears and dark brown almond-shaped eyes. The only colour it allows is black with clearly defined rich tan markings on the cheeks, muzzle, throat, chest and legs; white markings are a fault.",
+        "Its standard calls it good-natured, placid, very devoted, obedient and eager to work, and The Royal Kennel Club says a well-trained Rottweiler makes a wonderful family companion. UK sources say it needs more than two hours of exercise a day, a large house with a large garden and an experienced owner, because it is so powerful; it should be socialised from a young age. The PDSA does not recommend it for families with younger children and babies, and it should never be left unattended with other pets. A weekly brush is enough. It usually lives less than ten years, and The Royal Kennel Club watches the shape of its hind legs.",
+      ],
+      sources: ["S166", "S168", "S169", "S171"],
     },
     british_shorthair: {
       aka: "British Blue",
