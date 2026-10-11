@@ -273,6 +273,7 @@ const en: RegistryCopy = {
       dna_pra_b: "DNA test for progressive retinal atrophy in the Bengal (PRA-b)",
       dna_jlpp: "DNA test for juvenile laryngeal paralysis and polyneuropathy (JLPP)",
       dna_lemp2: "DNA test for leukoencephalomyelopathy (LEMP-2)",
+      dna_huu: "DNA test for hyperuricosuria (HUU)",
     },
   },
   health: {
@@ -312,6 +313,9 @@ const en: RegistryCopy = {
     laryngeal_paralysis_polyneuropathy: "Juvenile laryngeal paralysis and polyneuropathy (JLPP), an inherited nerve disease that affects the voice box and the back legs, occurs in the breed; a DNA test of the parents lets breeders avoid it.",
     heart_sas: "Subaortic stenosis, a narrowing just below a heart valve that can cause a murmur, occurs in the breed; breeding dogs should have their hearts checked first.",
     inherited_eye_defects: "Inherited eye conditions occur in the breed, such as retinal dysplasia and persistent pupillary membrane; eye testing is available.",
+    skin_fold_infections: "The skin folds, especially on the face, can trap moisture and become infected (skin fold pyoderma); the facial wrinkles need daily cleaning.",
+    eyelid_eye_problems: "Eyelid problems (eyelids turned in or out), dry eye and cherry eye occur in the breed; eye testing is available.",
+    hip_elbow_joint_disease: "Hip and elbow dysplasia, where the joints do not develop correctly, occur in the breed and can lead to joint disease.",
     pra_pk_def: "Two inherited conditions occur in the breed: progressive retinal atrophy, an eye disease that can lead to blindness, and pyruvate kinase deficiency, a blood disorder; DNA tests of the parents let breeders avoid them.",
   },
   page: {
@@ -519,6 +523,14 @@ const en: RegistryCopy = {
         "Its standard calls it good-natured, placid, very devoted, obedient and eager to work, and The Royal Kennel Club says a well-trained Rottweiler makes a wonderful family companion. UK sources say it needs more than two hours of exercise a day, a large house with a large garden and an experienced owner, because it is so powerful; it should be socialised from a young age. The PDSA does not recommend it for families with younger children and babies, and it should never be left unattended with other pets. A weekly brush is enough. It usually lives less than ten years, and The Royal Kennel Club watches the shape of its hind legs.",
       ],
       sources: ["S166", "S168", "S169", "S171"],
+    },
+    bulldog: {
+      aka: "English Bulldog, British Bulldog",
+      text: [
+        "The Bulldog is a medium-sized, smooth-coated dog from Great Britain: fairly thick set, low, broad, powerful and compact, with a relatively short face, small thin rose ears and round, very dark eyes. Its standard allows whole colours such as red, fawn, fallow and white, brindle and pied; black and black with tan are highly undesirable. It asks for large, wide-open nostrils and says that dogs showing breathing distress are highly undesirable.",
+        "Its standard calls it alert, bold, loyal, dependable and courageous, fierce in appearance but affectionate, and The Royal Kennel Club says it remains hugely popular as a family companion for its character and loyalty. UK sources say it needs up to an hour of exercise a day, never in the heat of the day, and gets on well with other household pets if socialised young; it needs grooming once a week, but its facial wrinkles need daily cleaning. The PDSA describes it as a severely flat-faced breed that is very likely to have serious health problems, such as breathing difficulties, and strongly recommends considering a healthier breed, a crossbreed or a mongrel. It usually lives less than ten years.",
+      ],
+      sources: ["S175", "S177", "S180"],
     },
     british_shorthair: {
       aka: "British Blue",
