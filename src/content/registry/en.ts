@@ -4,7 +4,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 /** "a Border Collie", "an Akita". */
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
-const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 6: "scent hounds and related breeds", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
+const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
 const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland" };
 
 const en: RegistryCopy = {
@@ -63,7 +63,7 @@ const en: RegistryCopy = {
     guideTitle: "How to choose a breed",
     guide: () => [
       "Start with what your household can give every day: time for exercise, grooming and space. Each breed page lists these needs at a glance, with the named source of every value; where sources differ, all values are shown.",
-      "Where a breed has a size class (for dogs: toy, small, medium, large or giant), it is the class the named source gives — usually a kennel club — and weights are the ranges the sources state, not our estimates.",
+      "Where a breed has a size class (for dogs: toy, small, medium, medium to large, large or giant), it is the class the named source gives — usually a kennel club — and weights are the ranges the sources state, not our estimates.",
       "Tags such as “Good for: an active family” are the same as in the app and each is backed by sources. The numbers under “How PetPrep simulates it” are PetPrep's game rules, not care instructions. [How we build the register](page:about#methodology)",
     ],
   },
@@ -79,7 +79,7 @@ const en: RegistryCopy = {
     activityRow: "Adult daily goal in PetPrep (game rule)",
   },
   facets: {
-    size: { label: "Size", values: { toy: "Toy", small: "Small", medium: "Medium", large: "Large", giant: "Giant" } },
+    size: { label: "Size", values: { toy: "Toy", small: "Small", medium: "Medium", medium_large: "Medium to large", large: "Large", giant: "Giant" } },
     exercise: { label: "Daily exercise", values: { under_1h: "Up to 1 hour", h1_2: "1–2 hours", over_2h: "More than 2 hours" }, line: (v) => `${v.toLowerCase()} a day` },
     grooming: { label: "Brushing", values: { weekly: "Once a week", several_weekly: "Several times a week", daily: "Daily", other: "Other" }, line: (v) => `brushing ${v.toLowerCase()}` },
   },
@@ -129,7 +129,7 @@ const en: RegistryCopy = {
     senior: "Senior",
   },
   categories: {
-    size: { toy: "toy", small: "small", medium: "medium", large: "large", giant: "giant" },
+    size: { toy: "toy", small: "small", medium: "medium", medium_large: "medium to large", large: "large", giant: "giant" },
     coat: { moderately_long: "moderately long", smooth: "smooth (short)", short: "short", medium: "medium length", short_long: "short or long (two coat varieties)", long: "long" },
     grooming_frequency: { once_a_week: "once a week", more_than_once_a_week: "more than once a week", daily: "daily", every_day: "every day" },
     grooming_level: { moderate: "moderate", high: "high", low: "low" },
@@ -413,6 +413,14 @@ const en: RegistryCopy = {
         "Its standard calls it self-confident, good-natured and friendly, and \"a kind and devoted family dog\" that is slow to mature. UK sources say it needs up to an hour of exercise a day, belongs in a large house with a large garden, sheds a lot and needs brushing more than once a week; it should not be left alone for long. It usually lives less than ten years, and UK sources list hip and elbow dysplasia, bloat and certain cancers among its health concerns.",
       ],
       sources: ["S150", "S152", "S153", "S154"],
+    },
+    siberian_husky: {
+      aka: "Husky",
+      text: [
+        "The Siberian Husky is a medium-sized working sled dog, recognised by the FCI as an American breed and described by The Royal Kennel Club as the lightest and fastest of the sled dogs. Its standard asks for a dog that is quick and light on its feet, with a double, medium-length coat, thick erect ears, brown or blue eyes (one of each is allowed) and a well-furred brush tail. Colours range from black to pure white; merle and brindle are not allowed.",
+        "Its standard calls it friendly and gentle, alert and outgoing. UK sources say it needs more than two hours of exercise a day, a large house with a large garden and a very secure, high fence, as Huskies are known to escape; it sheds a lot, needs brushing a few times a week and does not cope well alone. The PDSA suggests it for adult-only homes or homes with teenagers rather than families with smaller children, and lists hip dysplasia, eye problems and epilepsy among its health concerns.",
+      ],
+      sources: ["S158", "S160", "S162"],
     },
   },
 };

@@ -12,7 +12,7 @@ function form(n: number, one: string, two: string, few: string, many: string): s
 type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
-const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 6: "goniči, krvosledniki in sorodne pasme", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
+const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
 const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica" };
 
 const sl: RegistryCopy = {
@@ -71,7 +71,7 @@ const sl: RegistryCopy = {
     guideTitle: "Kako izbrati pasmo",
     guide: () => [
       "Začnite pri tem, kar lahko vaše gospodinjstvo da vsak dan: čas za gibanje, nego in prostor. Na strani vsake pasme so te potrebe zbrane na kratko, pri vsaki vrednosti pa je naveden vir; kjer se viri razlikujejo, so navedene vse vrednosti.",
-      "Kjer ima pasma velikostni razred (pri psih: zelo majhen, majhen, srednje velik, velik ali zelo velik), je to razred, ki ga navaja imenovani vir — običajno kinološka zveza — teže pa so razponi, ki jih navajajo viri, in ne naše ocene.",
+      "Kjer ima pasma velikostni razred (pri psih: zelo majhen, majhen, srednje velik, srednje velik do velik, velik ali zelo velik), je to razred, ki ga navaja imenovani vir — običajno kinološka zveza — teže pa so razponi, ki jih navajajo viri, in ne naše ocene.",
       "Oznake, kot je »Primerno za: aktivno družino«, so iste kot v aplikaciji in vsako podpirajo viri. Številke v razdelku »Kako to simulira PetPrep« so pravila igre PetPrep, ne navodila za nego. [Kako nastaja register](page:about#metodologija)",
     ],
   },
@@ -87,7 +87,7 @@ const sl: RegistryCopy = {
     activityRow: "Dnevni cilj odrasle živali v PetPrep (pravilo igre)",
   },
   facets: {
-    size: { label: "Velikost", values: { toy: "Zelo majhen", small: "Majhen", medium: "Srednje velik", large: "Velik", giant: "Zelo velik" } },
+    size: { label: "Velikost", values: { toy: "Zelo majhen", small: "Majhen", medium: "Srednje velik", medium_large: "Srednje velik do velik", large: "Velik", giant: "Zelo velik" } },
     exercise: { label: "Gibanje na dan", values: { under_1h: "Do 1 ure", h1_2: "1–2 uri", over_2h: "Več kot 2 uri" }, line: (v) => `${v.toLowerCase()} gibanja na dan` },
     grooming: { label: "Krtačenje", values: { weekly: "Enkrat na teden", several_weekly: "Večkrat na teden", daily: "Vsak dan", other: "Drugo" }, line: (v) => `krtačenje ${v.toLowerCase()}` },
   },
@@ -137,7 +137,7 @@ const sl: RegistryCopy = {
     senior: "Starejša žival",
   },
   categories: {
-    size: { toy: "zelo majhen", small: "majhen", medium: "srednje velik", large: "velik", giant: "zelo velik" },
+    size: { toy: "zelo majhen", small: "majhen", medium: "srednje velik", medium_large: "srednje velik do velik", large: "velik", giant: "zelo velik" },
     coat: { moderately_long: "zmerno dolga", smooth: "gladka (kratka)", short: "kratka", medium: "srednje dolga", short_long: "kratka ali dolga (dve različici dlake)", long: "dolga" },
     grooming_frequency: { once_a_week: "enkrat na teden", more_than_once_a_week: "večkrat na teden", daily: "vsak dan", every_day: "vsak dan" },
     grooming_level: { moderate: "zmerne", high: "velike", low: "majhne" },
@@ -423,6 +423,14 @@ const sl: RegistryCopy = {
         "Standard ga opisuje kot samozavestnega in dobrodušnega psa ter »prijaznega in vdanega družinskega psa«, ki počasi dozoreva. Britanski viri pravijo, da potrebuje do eno uro gibanja na dan, sodi v veliko hišo z velikim vrtom, dlaka mu močno izpada in česati ga je treba večkrat na teden; sam naj ne ostaja dolgo. Običajno živi manj kot deset let, britanski viri pa med zdravstvenimi skrbmi navajajo displazijo kolkov in komolcev, zasuk želodca in nekatere vrste raka.",
       ],
       sources: ["S150", "S152", "S153", "S154"],
+    },
+    siberian_husky: {
+      aka: "haski, husky, siberian husky",
+      text: [
+        "Sibirski haski je srednje velik delovni vlečni pes, ki ga FCI vodi kot ameriško pasmo, The Royal Kennel Club pa ga opisuje kot najlažjega in najhitrejšega med vlečnimi psi. Standard zahteva psa, ki je hiter in lahkoten, z dvojno, srednje dolgo dlako, debelimi pokončnimi uhlji, rjavimi ali modrimi očmi (dovoljeno je tudi eno rjavo in eno modro) in košatim repom. Barve segajo od črne do čisto bele; merle in tigrasta nista dovoljeni.",
+        "Standard ga opisuje kot prijaznega in nežnega, pozornega in odprtega psa. Britanski viri pravijo, da potrebuje več kot dve uri gibanja na dan, veliko hišo z velikim vrtom ter zelo varno, visoko ograjo, saj haskiji radi pobegnejo; dlaka mu močno izpada, česati ga je treba nekajkrat na teden in sam se ne znajde dobro. PDSA ga priporoča za gospodinjstva z odraslimi ali najstniki, ne za družine z manjšimi otroki, med zdravstvenimi skrbmi pa navaja displazijo kolkov, težave z očmi in epilepsijo.",
+      ],
+      sources: ["S158", "S160", "S162"],
     },
   },
 };
