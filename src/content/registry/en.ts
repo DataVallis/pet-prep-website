@@ -218,19 +218,15 @@ const en: RegistryCopy = {
   checklist: {
     items: {
       see_mother: "See the puppy with its mother, where it was born.",
-      min_age_puppy: "Under Slovenia's 2009 pet-protection regulation, a puppy may not be taken from its mother before it is a full 8 weeks old.",
-      microchip_registration: "In Slovenia a dog must be microchipped by 8 weeks of age, and the new owner reports the ownership within 7 days.",
-      vaccination_records: "Under Slovenia's 2009 regulation, the seller must hand you the prescribed veterinary documents.",
-      rabies_vaccination: "Rabies vaccination of dogs is mandatory in Slovenia; under the 2006 regulation the owner has the dog vaccinated once it is 3 months old.",
-      pedigree_fci: "Ask for the pedigree. Under FCI rules a pedigree may be issued for correct parentage only; Slovenia's FCI member is Kinološka zveza Slovenije.",
-      parents_dna_profile: "For dogs bred in Slovenia: the Veterinary Faculty in Ljubljana, the official provider for Kinološka zveza Slovenije, says a DNA profile is mandatory for owners of breeding dogs — ask whether the parents have one.",
+      min_age_puppy: "The puppy should not leave its mother before 8 weeks of age.",
+      pedigree_fci: "Ask for the pedigree. Under FCI rules a pedigree may be issued for correct parentage only.",
       parents_health_tests: "Ask to see the health-test results of both parents. Which tests matter depends on the breed.",
       breed_club_rules: "National kennel clubs can set breeding rules that go beyond the FCI's — ask the breed club which tests the parents need.",
       written_contract: "Ask for a written sale contract that records the puppy's background and health.",
       kitten_see_mother: "See the kitten with its mother, where the kittens live.",
-      kitten_min_age: "Under Slovenia's 2009 regulation, a kitten may not be taken from its mother before it is a full 12 weeks old; FIFe pedigree rules say 14 weeks.",
+      kitten_min_age: "Under FIFe pedigree rules, a kitten does not go to a new home before 14 weeks of age.",
       kitten_vaccination: "The kitten is fully vaccinated (panleukopenia, calicivirus, herpesvirus) and comes with a vaccination record.",
-      kitten_pedigree: "A pedigree kitten comes with a pedigree certificate showing at least three generations; Slovenia's FIFe member is ZFDS.",
+      kitten_pedigree: "A pedigree kitten comes with a pedigree certificate showing at least three generations.",
       kitten_parents_tests: "Ask whether either parent has had health problems the kitten could inherit.",
     },
     tests: {
@@ -342,9 +338,9 @@ const en: RegistryCopy = {
     healthNone: "Our sources do not include breed-specific health information for this breed yet.",
     checklistTitle: "Before you buy: what to check with the breeder",
     checklistIntro: (speciesId) =>
-      speciesId === "cat"
-        ? "Questions to settle before you take a kitten home. Slovenian rules are named as such; the other points are advice from vets, welfare charities and cat federations. Every point cites its source."
-        : "Questions to settle before you take a puppy home. Slovenian rules are named as such; the other points are advice from vets, welfare charities and kennel clubs. Every point cites its source.",
+      speciesId === "cat" ? "Questions to settle before you take a kitten home. The points are advice from vets, welfare charities and cat federations; each cites its source." : "Questions to settle before you take a puppy home. The points are advice from vets, welfare charities and kennel clubs; each cites its source.",
+    checklistCountry: { code: null, title: "" },
+    checklistLocalNote: "Laws on the minimum age, microchipping and vaccination differ by country — check the rules where you live.",
     checklistGeneralTitle: "For every breed",
     checklistTestsTitle: "Health tests of the parents for this breed",
     checklistLevels: (speciesId) => ({

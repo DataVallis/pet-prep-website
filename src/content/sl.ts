@@ -223,6 +223,8 @@ const sl: Dictionary = {
         { title: "AI prvi stik", text: "Hiter odgovor, nato predaja pravemu veterinarju." },
         { title: "Rast in prehrana", text: "Tedenska teža, krivulja rasti, čas za menjavo hrane." },
         { title: "Zaupanja vredni partnerji", text: "Veterinarji, šole za pse in zavarovalnice v bližini — jasno označeni." },
+        { title: "Genski test", text: "Katere pasme so v vašem mešančku — in na kaj biti pozorni." },
+        { title: "Kartica za veterinarja", text: "Sestava pasem in genske najdbe na enem mestu, pripravljene za veterinarja." },
       ],
       link: "O AI asistentu",
       planned: "V razvoju",
@@ -393,6 +395,8 @@ const sl: Dictionary = {
             { title: "Povezava s pametno ovratnico", text: "Povežite priljubljene GPS in sledilnike aktivnosti — ali PetPrep ovratnico — in aktivnost vidite v kontekstu." },
             { title: "Opozorila, ki pojasnijo", text: "»Max je danes pretekel 2 km, polovico manj kot običajno, in dobil večji obrok. Dodaten večerni sprehod mu bo pomagal, da se umiri.« Eno opažanje, en razlog, en predlog." },
             { title: "Najprej AI, nato pravi veterinar", text: "Postavite vprašanje ali naložite fotografijo. Asistent odgovori na splošna vprašanja, oceni nujnost in vas po potrebi preda pravemu veterinarju — nujni znaki gredo naravnost k veterinarju." },
+            { title: "Genski test za psa ali mačko", text: "Genski test naročite v aplikaciji ali naložite izvid testa, ki ga že imate. PetPrep pokaže, katere pasme so v mešančku, kaj je zanje značilno in katere zdravstvene težave so pri njih pogostejše — z viri. Odstotek pasme ni diagnoza in genski test ne pokaže alergij." },
+            { title: "Kartica za veterinarja", text: "Sestava pasem in neposredne genske najdbe na eni strani ali v kodi QR, da veterinar takoj ve, kaj je v mešančku." },
             { title: "Rast in prehrana", text: "Tedensko vpišete težo, vidite krivuljo rasti in dobite opomnik, ko je čas za drugo hrano." },
           ],
         },
@@ -522,7 +526,7 @@ const sl: Dictionary = {
           items: [
             { title: "Problem", text: "Otroci obljubijo skrb za žival; starši je nimajo s čim nevtralno preveriti, preden vložijo denar in leta skrbi." },
             { title: "Rešitev", text: "Realistična 12-tedenska simulacija z nadzorno ploščo za starše v živo in objektivnim Care Score, ki se konča s Certifikatom odgovornosti." },
-            { title: "Širitev", text: "Ko pride prava žival domov, AI asistent zanjo: podatki z ovratnice, AI prvi stik z veterinarji, rast in prehrana, partnerske storitve." },
+            { title: "Širitev", text: "Ko pride prava žival domov, AI asistent zanjo: podatki z ovratnice, AI prvi stik z veterinarji, rast in prehrana, genski testi, partnerske storitve." },
           ],
         },
         {
@@ -534,6 +538,7 @@ const sl: Dictionary = {
             ["12-tedenski PetPrep izziv", "49,99 € na žival, enkratni nakup", "Odločeno"],
             ["Partnerske ponudbe", "Provizije trgovin, zavarovalnic, veterinarjev in šol", "V načrtu"],
             ["AI asistent za pravega ljubljenčka", "Naročnina", "V načrtu"],
+            ["Genski testi za pse in mačke", "Prodaja testov in partnerska provizija", "V načrtu"],
           ],
         },
         {

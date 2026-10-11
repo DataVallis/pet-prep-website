@@ -125,6 +125,9 @@ export type RegistryCopy = {
     healthNone: string;
     checklistTitle: string;
     checklistIntro: (speciesId: string) => string;
+    /** National rules shown in this language (e.g. sl → Slovenia); null = none, show `checklistLocalNote` instead. */
+    checklistCountry: { code: string | null; title: string };
+    checklistLocalNote: string;
     checklistGeneralTitle: string;
     checklistTestsTitle: string;
     checklistLevels: (speciesId: string) => Record<ChecklistLevel, string>;

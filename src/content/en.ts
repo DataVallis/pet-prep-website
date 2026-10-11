@@ -223,6 +223,8 @@ const en: Dictionary = {
         { title: "AI first contact", text: "Answers fast, then hands over to a real vet." },
         { title: "Growth and food", text: "Weekly weight, growth chart, when to switch food." },
         { title: "Trusted partners", text: "Vets, trainers and insurers near you — clearly labelled." },
+        { title: "DNA test", text: "Which breeds are in your mixed breed — and what to watch for." },
+        { title: "Card for the vet", text: "Breed mix and DNA findings in one place, ready for the vet." },
       ],
       link: "About the AI assistant",
       planned: "In development",
@@ -393,6 +395,8 @@ const en: Dictionary = {
             { title: "Smart collar integration", text: "Connect popular GPS and activity trackers — or a PetPrep collar — and see activity in context." },
             { title: "Alerts that explain", text: "“Max ran 2 km today, half his usual, and had a bigger meal. An extra evening walk will help him settle.” One observation, one reason, one suggestion." },
             { title: "AI first contact, real vet second", text: "Ask a question or upload a photo. The assistant answers general questions, estimates urgency and hands you over to a real vet when needed — urgent signs go straight to a vet." },
+            { title: "DNA test for your dog or cat", text: "Order a DNA test in the app or upload the result of one you already have. PetPrep shows which breeds are in the mix, what is typical for them and which health problems are more common in those breeds — with sources. Breed percentages are not a diagnosis, and a DNA test does not show allergies." },
+            { title: "A card for the vet", text: "The breed mix and any direct DNA findings on one page or QR code, so your vet knows what is in a mixed breed straight away." },
             { title: "Growth and nutrition", text: "Log weight weekly, see the growth chart and get a reminder when it is time to change food." },
           ],
         },
@@ -522,7 +526,7 @@ const en: Dictionary = {
           items: [
             { title: "Problem", text: "Children promise to care for a pet; parents have no neutral way to test it before committing money and years of care." },
             { title: "Solution", text: "A realistic 12-week simulation with a live parent dashboard and an objective Care Score, ending in a Certificate of Responsibility." },
-            { title: "Expansion", text: "Once the real pet comes home, an AI assistant for it: collar data, AI first contact with vets, growth and nutrition, partner services." },
+            { title: "Expansion", text: "Once the real pet comes home, an AI assistant for it: collar data, AI first contact with vets, growth and nutrition, DNA tests, partner services." },
           ],
         },
         {
@@ -534,6 +538,7 @@ const en: Dictionary = {
             ["12-week PetPrep Challenge", "€49.99 per pet, one-time purchase", "Decided"],
             ["Partner offers", "Commissions from stores, insurers, vets and trainers", "Planned"],
             ["AI assistant for the real pet", "Subscription", "Planned"],
+            ["DNA tests for dogs and cats", "Test sales and partner commission", "Planned"],
           ],
         },
         {

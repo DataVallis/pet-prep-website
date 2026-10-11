@@ -122,7 +122,7 @@ export function llmsFull(): string {
     out.push(`## ${h.realism.title}`, h.realism.text, ...h.realism.items.map((s) => `- **${s.title}:** ${s.text}`), "");
     out.push(`## ${h.parents.title}`, h.parents.text, "");
     out.push(`## ${h.adults.title}`, h.adults.text, ...h.adults.points.map((s) => `- **${s.strong}:** ${s.text}`), h.adults.how, markdownText(locale, h.adults.note, absoluteUrl), "");
-    out.push(`## ${h.after.title}`, h.after.text, ...h.after.features.map((s) => `- **${s.title}:** ${s.text}`), "");
+    out.push(`## ${h.after.title} (${h.after.planned})`, `_${dict.common.plannedNote}_`, h.after.text, ...h.after.features.map((s) => `- **${s.title}:** ${s.text}`), "");
     for (const key of pageKeys) {
       const p = dict.pages[key];
       out.push("---", "", `# ${p.title}`, `URL: ${absoluteUrl(pathFor(locale, key))}`, "", p.lead, "");

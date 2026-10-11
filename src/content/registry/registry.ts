@@ -53,7 +53,8 @@ export type Game = {
 
 /** Breeder checklist (M5-R11-06): what to check before buying; tests = parents' health tests. */
 export type ChecklistLevel = "minimum" | "best_practice" | "other_scheme";
-export type ChecklistItem = { key: string; source_ids: SourceId[] };
+/** `country` (ISO 3166-1 alpha-2) = a national rule, shown only on that country's language pages. */
+export type ChecklistItem = { key: string; source_ids: SourceId[]; country?: string };
 export type BreederChecklist = {
   status: "listed" | "none_recommended" | "not_found" | "not_checked";
   tests: { key: string; level: ChecklistLevel; source_ids: SourceId[] }[];
