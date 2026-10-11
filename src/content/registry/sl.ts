@@ -288,6 +288,8 @@ const sl: RegistryCopy = {
       hcm_negative: "Vzrejne mačke morajo biti HCM negativne (bolezen srca: hipertrofična kardiomiopatija)",
       dna_gsd4: "Test DNK za bolezen kopičenja glikogena tipa IV (GSD IV)",
       dna_pra_b: "Test DNK za progresivno atrofijo mrežnice pri bengalski mački (PRA-b)",
+      dna_jlpp: "Test DNK za juvenilno paralizo grla in polinevropatijo (JLPP)",
+      dna_lemp2: "Test DNK za levkoencefalomielopatijo (LEMP-2)",
     },
   },
   health: {
@@ -324,6 +326,9 @@ const sl: RegistryCopy = {
     dental_weight_care: "PetMD med težavami, na katere je treba paziti, navaja bolezni zob in prekomerno težo, zato lastnikom svetuje redno ščetkanje zob in nadzor teže.",
     gsd_iv: "Pri pasmi se pojavlja dedna bolezen kopičenja glikogena tipa IV (GSD IV), ki prizadene mucke; z DNK-testom staršev se ji vzreditelji lahko izognejo.",
     hip_dysplasia_weight: "Pri pasmi se lahko pojavi displazija kolkov (slabo razvit kolčni sklep); PetMD svetuje, da mačka ohranja zdravo težo, ki varuje sklepe.",
+    laryngeal_paralysis_polyneuropathy: "Pri pasmi se pojavlja juvenilna paraliza grla in polinevropatija (JLPP), dedna bolezen živcev, ki prizadene grlo in zadnje noge; z DNK-testom staršev se ji vzreditelji lahko izognejo.",
+    heart_sas: "Pri pasmi se pojavlja subaortna stenoza, zožitev tik pod srčno zaklopko, ki lahko povzroči srčni šum; psi za vzrejo naj imajo najprej pregledano srce.",
+    inherited_eye_defects: "Pri pasmi se pojavljajo dedne bolezni oči, na primer displazija mrežnice in obstojna zenična membrana; na voljo je pregled oči.",
     pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
   },
   page: {
@@ -523,6 +528,14 @@ const sl: RegistryCopy = {
         "Standard ga opisuje kot prijaznega in nežnega, pozornega in odprtega psa. Britanski viri pravijo, da potrebuje več kot dve uri gibanja na dan, veliko hišo z velikim vrtom ter zelo varno, visoko ograjo, saj haskiji radi pobegnejo; dlaka mu močno izpada, česati ga je treba nekajkrat na teden in sam se ne znajde dobro. PDSA ga priporoča za gospodinjstva z odraslimi ali najstniki, ne za družine z manjšimi otroki, med zdravstvenimi skrbmi pa navaja displazijo kolkov, težave z očmi in epilepsijo.",
       ],
       sources: ["S158", "S160", "S162"],
+    },
+    rottweiler: {
+      aka: "rottweiler, rottie",
+      text: [
+        "Rotvajler je srednje velik do velik, močan delovni pes iz Nemčije. Standard opisuje čvrstega psa, ne pretežkega in ne prelahkega, s kratko, grobo in gladko prilegajočo se dlako, srednje velikimi visečimi uhlji in temno rjavimi mandljastimi očmi. Edina dovoljena barva je črna z jasno omejenimi rjavimi (tan) oznakami na licih, gobcu, grlu, prsih in nogah; bele lise so napaka.",
+        "Standard ga opisuje kot dobrodušnega, mirnega, zelo vdanega, ubogljivega in delavnega psa, The Royal Kennel Club pa pravi, da je dobro vzgojen rotvajler čudovit družinski pes. Britanski viri pravijo, da potrebuje več kot dve uri gibanja na dan, veliko hišo z velikim vrtom in izkušenega lastnika, ker je tako močan; socializirati ga je treba že od malega. PDSA ga družinam z mlajšimi otroki in dojenčki ne priporoča, z drugimi živalmi pa ga nikoli ne puščajte brez nadzora. Dovolj je krtačenje enkrat na teden. Običajno živi manj kot deset let, The Royal Kennel Club pa pri pasmi spremlja obliko zadnjih nog.",
+      ],
+      sources: ["S166", "S168", "S169", "S171"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
