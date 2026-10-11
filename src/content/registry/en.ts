@@ -269,6 +269,7 @@ const en: RegistryCopy = {
       dna_sma: "DNA test for spinal muscular atrophy (SMA)",
       dna_pk_def: "DNA test for pyruvate kinase deficiency (PK def)",
       hcm_negative: "Breeding cats must be HCM negative (heart disease: hypertrophic cardiomyopathy)",
+      dna_gsd4: "DNA test for glycogen storage disease type IV (GSD IV)",
     },
   },
   health: {
@@ -303,6 +304,8 @@ const en: RegistryCopy = {
     heart_hcm: "Hypertrophic cardiomyopathy (HCM), an inherited heart disease in which the heart muscle thickens, occurs in the breed.",
     dental_weight_nail_care: "A large UK study names dental disease, being overweight and overgrown claws among the most common problems in the breed, so owners are advised to keep up dental care, weight control and claw care.",
     dental_weight_care: "PetMD names dental disease and being overweight among the problems to watch for, so owners are advised to brush the cat's teeth regularly and keep its weight in check.",
+    gsd_iv: "Glycogen storage disease type IV (GSD IV), an inherited disorder that affects kittens, occurs in the breed; a DNA test of the parents lets breeders avoid it.",
+    hip_dysplasia_weight: "Hip dysplasia, a poorly developed hip joint, can occur in the breed; PetMD advises keeping the cat at a healthy weight to protect its joints.",
   },
   page: {
     eyebrow: "Animal register",
@@ -525,6 +528,14 @@ const en: RegistryCopy = {
         "The GCCF calls it energetic and fun-loving yet patient — a good choice for families with young children — and says it mixes well with other animals, including dogs. PetMD advises combing at least once a week, with extra effort while it sheds in spring and autumn, and notes that Siberians are not considered hypoallergenic. Pedigree kittens usually go to their new home at 12–13 weeks (PDSA).",
       ],
       sources: ["C13", "C34", "C35"],
+    },
+    norwegian_forest_cat: {
+      aka: "Wegie, Skogkatt",
+      text: [
+        "The GCCF describes the Norwegian Forest Cat as gentle and friendly, a cat that enjoys being part of a family. It is slow to mature and is not considered fully grown until about four to five years; males weigh about 5.4–7.3 kg and females 4.1–5.4 kg, and the GCCF gives a lifespan of 14 to 16 years.",
+        "It has a lot of energy, enjoys interactive games and climbs readily; the GCCF says it is tolerant of respectful children, other cats and cat-friendly dogs. PetMD advises combing and brushing at least once a week, more often while it sheds in spring and autumn, and notes that separation anxiety can be an issue if it is often left alone for long periods. Pedigree kittens usually go to their new home at 12–13 weeks (PDSA).",
+      ],
+      sources: ["C13", "C37", "C38"],
     },
   },
 };
