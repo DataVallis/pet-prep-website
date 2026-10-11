@@ -286,6 +286,7 @@ const sl: RegistryCopy = {
       dna_sma: "Test DNK za spinalno mišično atrofijo (SMA)",
       dna_pk_def: "Test DNK za pomanjkanje piruvat-kinaze (PK def)",
       hcm_negative: "Vzrejne mačke morajo biti HCM negativne (bolezen srca: hipertrofična kardiomiopatija)",
+      dna_gsd4: "Test DNK za bolezen kopičenja glikogena tipa IV (GSD IV)",
     },
   },
   health: {
@@ -320,6 +321,8 @@ const sl: RegistryCopy = {
     heart_hcm: "Pri pasmi se pojavlja hipertrofična kardiomiopatija (HCM), dedna bolezen srca, pri kateri se srčna mišica zadebeli.",
     dental_weight_nail_care: "Velika britanska raziskava med najpogostejšimi težavami pasme navaja bolezni zob, prekomerno težo in predolge kremplje, zato lastnikom svetujejo redno nego zob, nadzor teže in skrajševanje krempljev.",
     dental_weight_care: "PetMD med težavami, na katere je treba paziti, navaja bolezni zob in prekomerno težo, zato lastnikom svetuje redno ščetkanje zob in nadzor teže.",
+    gsd_iv: "Pri pasmi se pojavlja dedna bolezen kopičenja glikogena tipa IV (GSD IV), ki prizadene mucke; z DNK-testom staršev se ji vzreditelji lahko izognejo.",
+    hip_dysplasia_weight: "Pri pasmi se lahko pojavi displazija kolkov (slabo razvit kolčni sklep); PetMD svetuje, da mačka ohranja zdravo težo, ki varuje sklepe.",
   },
   page: {
     eyebrow: "Register živali",
@@ -542,6 +545,14 @@ const sl: RegistryCopy = {
         "GCCF jo opisuje kot energično in igrivo, a potrpežljivo mačko — dobro izbiro za družine z majhnimi otroki —, ki se dobro razume tudi z drugimi živalmi, tudi s psi. PetMD svetuje česanje vsaj enkrat na teden, med spomladanskim in jesenskim linjanjem pa več, in poudarja, da sibirska mačka ne velja za hipoalergeno. Rodovniški mucki gredo v nov dom običajno pri 12–13 tednih (PDSA).",
       ],
       sources: ["C13", "C34", "C35"],
+    },
+    norwegian_forest_cat: {
+      aka: "wegie, skogkatt, Norwegian Forest Cat",
+      text: [
+        "GCCF opisuje norveško gozdno mačko kot nežno in prijazno mačko, ki rada živi v družini. Počasi dozoreva in povsem zraste šele pri približno štirih do petih letih; samci tehtajo približno 5,4–7,3 kg, samice 4,1–5,4 kg, GCCF pa navaja življenjsko dobo 14 do 16 let.",
+        "Ima veliko energije, rada se igra in pleza; po GCCF dobro prenaša otroke, ki jo spoštujejo, druge mačke in pse, ki so navajeni mačk. PetMD svetuje česanje in krtačenje vsaj enkrat na teden, med spomladanskim in jesenskim linjanjem pogosteje, in opozarja, da se lahko pojavi ločitvena tesnoba, če je pogosto in dolgo sama. Rodovniški mucki gredo v nov dom običajno pri 12–13 tednih (PDSA).",
+      ],
+      sources: ["C13", "C37", "C38"],
     },
   },
 };
