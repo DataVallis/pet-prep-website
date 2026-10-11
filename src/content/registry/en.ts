@@ -4,7 +4,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 /** "a Border Collie", "an Akita". */
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
-const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
+const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
 const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland" };
 
 const en: RegistryCopy = {
@@ -316,6 +316,11 @@ const en: RegistryCopy = {
     skin_fold_infections: "The skin folds, especially on the face, can trap moisture and become infected (skin fold pyoderma); the facial wrinkles need daily cleaning.",
     eyelid_eye_problems: "Eyelid problems (eyelids turned in or out), dry eye and cherry eye occur in the breed; eye testing is available.",
     hip_elbow_joint_disease: "Hip and elbow dysplasia, where the joints do not develop correctly, occur in the breed and can lead to joint disease.",
+    hip_dysplasia_arthritis: "Hip dysplasia, a loose, poorly developed hip joint, occurs in the breed and can eventually lead to arthritis.",
+    bleeding_disorder_vwd: "Von Willebrand's disease, an inherited problem with blood clotting that can cause excessive bleeding, occurs in the breed.",
+    heart_muscle_disease: "Cardiomyopathy, an enlarged heart caused by a weakening of the heart muscle, can occur in the breed.",
+    itchy_skin_allergy: "Skin allergies (atopy), which cause itching and sore skin, can occur in the breed.",
+    entropion_cherry_eye: "Eyelids that turn inwards (entropion) and cherry eye, where the third eyelid pops out, can occur in the breed; cherry eye can be corrected surgically.",
     pra_pk_def: "Two inherited conditions occur in the breed: progressive retinal atrophy, an eye disease that can lead to blindness, and pyruvate kinase deficiency, a blood disorder; DNA tests of the parents let breeders avoid them.",
   },
   page: {
@@ -531,6 +536,14 @@ const en: RegistryCopy = {
         "Its standard calls it alert, bold, loyal, dependable and courageous, fierce in appearance but affectionate, and The Royal Kennel Club says it remains hugely popular as a family companion for its character and loyalty. UK sources say it needs up to an hour of exercise a day, never in the heat of the day, and gets on well with other household pets if socialised young; it needs grooming once a week, but its facial wrinkles need daily cleaning. The PDSA describes it as a severely flat-faced breed that is very likely to have serious health problems, such as breathing difficulties, and strongly recommends considering a healthier breed, a crossbreed or a mongrel. It usually lives less than ten years.",
       ],
       sources: ["S175", "S177", "S180"],
+    },
+    german_shorthaired_pointer: {
+      aka: "GSP, German Pointer, Deutsch Kurzhaar",
+      text: [
+        "The German Shorthaired Pointer is a versatile, all-purpose gun dog from Germany, built for work in field and water, with a short, thick coat that feels tough to the hand, broad flat ears set high and dark brown almond-shaped eyes. Its American standard allows solid liver, liver and white (such as ticked), solid black and black and white; red, orange, lemon or tan areas and a solid white dog are disqualified. Its standard describes a docked tail — PetPrep always shows the dog with its natural tail.",
+        "Its standard calls it friendly, intelligent and willing to please. The Royal Kennel Club and the PDSA say it needs more than two hours of exercise a day; the PDSA adds that its instinct to hunt, point and retrieve may kick in on a walk, so it needs good recall training, and that it is fairly easy to train. It needs grooming once or twice a week and sheds moderately. A large UK study puts its median life expectancy at 13.4 years.",
+      ],
+      sources: ["S185", "S186", "S187", "S188", "S189", "S123"],
     },
     british_shorthair: {
       aka: "British Blue",

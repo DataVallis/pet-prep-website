@@ -12,7 +12,7 @@ function form(n: number, one: string, two: string, few: string, many: string): s
 type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
-const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
+const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
 const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica" };
 
 const sl: RegistryCopy = {
@@ -333,6 +333,11 @@ const sl: RegistryCopy = {
     skin_fold_infections: "Kožne gube, zlasti na obrazu, lahko zadržujejo vlago in se okužijo (piodermija kožnih gub); gube na obrazu je treba čistiti vsak dan.",
     eyelid_eye_problems: "Pri pasmi se pojavljajo težave z vekami (navznoter ali navzven obrnjene veke), suho oko in »češnjevo oko«; na voljo je pregled oči.",
     hip_elbow_joint_disease: "Pri pasmi se pojavljata displazija kolkov in komolcev, ko se sklepi ne razvijejo pravilno, kar lahko vodi v bolezen sklepov.",
+    hip_dysplasia_arthritis: "Pri pasmi se pojavlja displazija kolkov — ohlapen, slabo razvit kolčni sklep, ki sčasoma lahko vodi v artritis.",
+    bleeding_disorder_vwd: "Pri pasmi se pojavlja von Willebrandova bolezen, podedovana motnja strjevanja krvi, ki lahko povzroči čezmerno krvavitev.",
+    heart_muscle_disease: "Pri pasmi se lahko pojavi kardiomiopatija — povečano srce zaradi oslabljene srčne mišice.",
+    itchy_skin_allergy: "Pri pasmi se lahko pojavijo kožne alergije (atopija), ki povzročajo srbenje in razdraženo kožo.",
+    entropion_cherry_eye: "Pri pasmi se lahko pojavijo navznoter zavihane veke (entropij) in »češnjevo oko«, ko izstopi tretja veka; češnjevo oko je mogoče kirurško popraviti.",
     pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
   },
   page: {
@@ -548,6 +553,14 @@ const sl: RegistryCopy = {
         "Standard ga opisuje kot pozornega, pogumnega, zvestega, zanesljivega in neustrašnega psa, ki je videti strog, a je ljubeč, The Royal Kennel Club pa pravi, da je zaradi značaja in zvestobe še vedno zelo priljubljen družinski pes. Britanski viri pravijo, da potrebuje do ene ure gibanja na dan, nikoli v vročini dneva, in da se ob socializaciji v mladosti dobro razume z drugimi domačimi živalmi; krtačenje je potrebno enkrat na teden, gube na obrazu pa je treba čistiti vsak dan. PDSA ga opisuje kot pasmo z zelo sploščenim obrazom, ki ima zelo verjetno resne zdravstvene težave, na primer težko dihanje, in močno priporoča razmislek o bolj zdravi pasmi, križancu ali mešančku. Običajno živi manj kot deset let.",
       ],
       sources: ["S175", "S177", "S180"],
+    },
+    german_shorthaired_pointer: {
+      aka: "kratkodlaki ptičar, GSP, german shorthaired pointer, deutsch kurzhaar",
+      text: [
+        "Nemški kratkodlaki ptičar je vsestranski lovski pes iz Nemčije za delo na polju in v vodi, s kratko, gosto dlako, ki je na otip trda, širokimi ploščatimi ušesi, nastavljenimi visoko, ter temno rjavimi mandljastimi očmi. Ameriški standard dovoljuje jetrno rjavo, jetrno rjavo z belim (npr. pikasto), črno in črno z belim; rdeče, oranžne, limonaste ali rumenorjave lise in povsem bel pes so izključujoča napaka. Standard opisuje kupiran rep — PetPrep psa vedno pokaže z naravnim repom.",
+        "Standard ga opisuje kot prijaznega, inteligentnega in voljnega. The Royal Kennel Club in PDSA pravita, da potrebuje več kot dve uri gibanja na dan; PDSA dodaja, da ga na sprehodu lahko odnese nagon za lovom, označevanjem in prinašanjem, zato potrebuje dober odpoklic, in da se razmeroma lahko uči. Česati ga je treba enkrat do dvakrat na teden, dlaka mu zmerno izpada. Velika britanska raziskava navaja mediano pričakovane življenjske dobe 13,4 leta.",
+      ],
+      sources: ["S185", "S186", "S187", "S188", "S189", "S123"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
