@@ -302,6 +302,7 @@ const en: RegistryCopy = {
     dry_eye: "Dry eye, where the eyes do not make enough tears and become dry and painful, can occur in the breed.",
     heart_hcm: "Hypertrophic cardiomyopathy (HCM), an inherited heart disease in which the heart muscle thickens, occurs in the breed.",
     dental_weight_nail_care: "A large UK study names dental disease, being overweight and overgrown claws among the most common problems in the breed, so owners are advised to keep up dental care, weight control and claw care.",
+    dental_weight_care: "PetMD names dental disease and being overweight among the problems to watch for, so owners are advised to brush the cat's teeth regularly and keep its weight in check.",
   },
   page: {
     eyebrow: "Animal register",
@@ -516,6 +517,14 @@ const en: RegistryCopy = {
         "The CFA describes a gentle cat that greets you at the door and follows you from room to room, and usually plays without putting out its claws. PetMD calls it a good choice for families, including those with children, but advises slow, supervised introductions to children and other pets, and says some Ragdolls need combing only once or twice a week, while the CFA advises regular combing. Pedigree kittens usually go to a new home at 12–13 weeks (PDSA).",
       ],
       sources: ["C13", "C30", "C32"],
+    },
+    siberian_cat: {
+      aka: "Siberian Forest Cat",
+      text: [
+        "The GCCF describes the Siberian as a slow-developing cat with a thick, weatherproof coat: a dense, soft undercoat under a coarser topcoat, shed heavily in spring and autumn. Males weigh about 7.7–11.8 kg and females 5.9–7.7 kg, full development can take four to five years, and the GCCF gives a lifespan of 12 to 15 years or more.",
+        "The GCCF calls it energetic and fun-loving yet patient — a good choice for families with young children — and says it mixes well with other animals, including dogs. PetMD advises combing at least once a week, with extra effort while it sheds in spring and autumn, and notes that Siberians are not considered hypoallergenic. Pedigree kittens usually go to their new home at 12–13 weeks (PDSA).",
+      ],
+      sources: ["C13", "C34", "C35"],
     },
   },
 };
