@@ -15,6 +15,7 @@ import {
   type Activity,
   type Availability,
   type Breed,
+  type ChecklistLevel,
   type Portrait,
   type PortraitKind,
   type FactItem,
@@ -206,6 +207,13 @@ export type BreedView = {
     basis: SourceRef[];
   };
   health: FactLine[];
+  checklist: {
+    general: FactLine[];
+    groups: { level: ChecklistLevel; title: string; lines: FactLine[] }[];
+    /** Shown instead of (or, never, next to) the groups when the breed has no listed tests. */
+    status: string | null;
+    statusSources: SourceRef[];
+  };
   sources: Source[];
 };
 
@@ -289,6 +297,28 @@ export function qaText(locale: Locale, a: QaItem): string {
   return t;
 }
 
+const CHECKLIST_LEVELS: ChecklistLevel[] = ["minimum", "best_practice", "other_scheme"];
+
+/** "Before you buy" (M5-R11-06): general items of the species + the parents' tests grouped by level. */
+function checklistView(locale: Locale, b: Breed): BreedView["checklist"] {
+  const c = copies[locale];
+  const sp = getSpecies(b.species);
+  const bc = b.breeder_checklist;
+  if (!bc || !sp.buyer_checklist) throw new Error(`registry: ${b.id} has no breeder checklist — re-export from pet-prep main (M5-R11-06)`);
+  const general = sp.buyer_checklist.map((it) => ({ text: need(c.checklist.items, it.key, "checklist item"), sources: refs(it.source_ids) }));
+  const groups = CHECKLIST_LEVELS.map((level) => ({
+    level,
+    title: c.page.checklistLevels(b.species)[level],
+    lines: bc.tests.filter((t) => t.level === level).map((t) => ({ text: need(c.checklist.tests, t.key, "checklist test"), sources: refs(t.source_ids) })),
+  })).filter((g) => g.lines.length > 0);
+  return {
+    general,
+    groups,
+    status: bc.status === "listed" ? null : need(c.page.checklistStatus, bc.status, "checklist status"),
+    statusSources: bc.status === "listed" ? [] : refs(bc.basis_source_ids),
+  };
+}
+
 export function buildBreedView(locale: Locale, b: Breed): BreedView {
   const c = copies[locale];
   const f = fmt(locale);
@@ -338,6 +368,7 @@ export function buildBreedView(locale: Locale, b: Breed): BreedView {
         }
       : null,
     health: b.health.map((h) => ({ text: need(c.health, h.key, "health item"), sources: refs(h.source_ids) })),
+    checklist: checklistView(locale, b),
     sources: b.source_ids.map(getSource),
   };
 }
@@ -516,6 +547,12 @@ export function breedMarkdown(locale: Locale, b: Breed, url: string): string {
     );
   } else out.push(c.page.simInfoOnly);
   out.push(`## ${c.page.healthTitle}`, `_${c.page.healthNote}_`, v.health.length ? v.health.map(mdLine).join("\n") : c.page.healthNone);
+  out.push(`## ${c.page.checklistTitle}`, c.page.checklistIntro(b.species));
+  if (v.checklist.general.length) out.push(`**${c.page.checklistGeneralTitle}**\n${v.checklist.general.map(mdLine).join("\n")}`);
+  out.push(`**${c.page.checklistTestsTitle}**`);
+  if (v.checklist.status) out.push(v.checklist.statusSources.length ? mdLine({ text: v.checklist.status, sources: v.checklist.statusSources }) : v.checklist.status);
+  for (const g of v.checklist.groups) out.push(`_${g.title}_\n${g.lines.map(mdLine).join("\n")}`);
+  if (v.checklist.groups.length) out.push(`_${c.page.checklistUkNote(b.species)}_`);
   out.push(`## ${c.page.sourcesTitle}`, v.sources.map((s) => `- ${s.id}: ${s.publisher} — ${s.title}. ${s.url}`).join("\n"));
   return out.join("\n\n");
 }

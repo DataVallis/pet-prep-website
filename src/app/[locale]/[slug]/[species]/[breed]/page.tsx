@@ -364,6 +364,36 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
             </div>
           </section>
 
+          <section aria-labelledby="before-you-buy" className="flex flex-col gap-5">
+            <h2 id="before-you-buy" className="h-card text-[28px] leading-tight sm:text-[34px]">{c.page.checklistTitle}</h2>
+            <p className="max-w-3xl text-[17px] leading-relaxed text-muted">{c.page.checklistIntro(species.id)}</p>
+            {v.checklist.general.length ? (
+              <div className="flex max-w-3xl flex-col gap-3">
+                <h3 className="text-[19px] font-bold">{c.page.checklistGeneralTitle}</h3>
+                <FactList lines={v.checklist.general} empty="" sourceLabel={cite} />
+              </div>
+            ) : null}
+            <div className="flex max-w-3xl flex-col gap-3">
+              <h3 className="text-[19px] font-bold">{c.page.checklistTestsTitle}</h3>
+              {v.checklist.status ? (
+                v.checklist.statusSources.length ? (
+                  <FactList lines={[{ text: v.checklist.status, sources: v.checklist.statusSources }]} empty="" sourceLabel={cite} />
+                ) : (
+                  <p className="text-[15px] leading-relaxed">{v.checklist.status}</p>
+                )
+              ) : null}
+              {v.checklist.groups.map((g) => (
+                <div key={g.level} className="flex flex-col gap-2">
+                  <h4 className="text-[15px] font-semibold text-muted">{g.title}</h4>
+                  <FactList lines={g.lines} empty="" sourceLabel={cite} />
+                </div>
+              ))}
+              {v.checklist.groups.length ? (
+                <p className="rounded-[14px] bg-mint-tint px-4 py-3 text-sm leading-relaxed">{c.page.checklistUkNote(species.id)}</p>
+              ) : null}
+            </div>
+          </section>
+
           <section aria-labelledby="sources" className="flex flex-col gap-4">
             <h2 id="sources" className="h-card text-[28px] leading-tight sm:text-[34px]">{c.page.sourcesTitle}</h2>
             <p className="max-w-3xl text-[15px] leading-relaxed text-muted">{c.page.sourcesIntro}</p>
