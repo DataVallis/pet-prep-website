@@ -139,7 +139,7 @@ const sl: RegistryCopy = {
   categories: {
     size: { toy: "zelo majhen", small: "majhen", medium: "srednje velik", medium_large: "srednje velik do velik", large: "velik", giant: "zelo velik" },
     coat: { moderately_long: "zmerno dolga", smooth: "gladka (kratka)", short: "kratka", medium: "srednje dolga", short_long: "kratka ali dolga (dve različici dlake)", long: "dolga" },
-    grooming_frequency: { at_least_once_a_week: "vsaj enkrat na teden", once_a_week: "enkrat na teden", more_than_once_a_week: "večkrat na teden", daily: "vsak dan", every_day: "vsak dan" },
+    grooming_frequency: { at_least_once_a_week: "vsaj enkrat na teden", at_least_once_or_twice_a_week: "vsaj enkrat do dvakrat na teden", once_a_week: "enkrat na teden", more_than_once_a_week: "večkrat na teden", daily: "vsak dan", every_day: "vsak dan" },
     grooming_level: { moderate: "zmerne", high: "velike", low: "majhne" },
     shedding: { yes: "dlaka izpada", no: "dlaka ne izpada (to ne pomeni, da je hipoalergen)", high: "dlaka močno izpada", moderate: "dlaka zmerno izpada", low: "dlaka malo izpada", minimal: "dlaka zelo malo izpada" },
   },
@@ -253,6 +253,8 @@ const sl: RegistryCopy = {
     westie_lung: "Pri pasmi se lahko pojavi bolezen pljuč, imenovana »westie lung« (idiopatska pljučna fibroza), ki otežuje dihanje — največkrat pri starejših psih.",
     jaw_bone_disorder: "Pri pasmi se lahko pojavi dedna bolezen čeljustne kosti.",
     dry_eye: "Pri pasmi se lahko pojavi suho oko, ko oči ne tvorijo dovolj solz ter postanejo suhe in boleče.",
+    heart_hcm: "Pri pasmi se pojavlja hipertrofična kardiomiopatija (HCM), dedna bolezen srca, pri kateri se srčna mišica zadebeli.",
+    dental_weight_nail_care: "Velika britanska raziskava med najpogostejšimi težavami pasme navaja bolezni zob, prekomerno težo in predolge kremplje, zato lastnikom svetujejo redno nego zob, nadzor teže in skrajševanje krempljev.",
   },
   page: {
     eyebrow: "Register živali",
@@ -439,6 +441,14 @@ const sl: RegistryCopy = {
         "CFA jo opisuje kot zelo ljubečo mačko, ki se naveže na svoje ljudi; razume se z vsemi v gospodinjstvu ne glede na starost, a običajno ne mara, da jo nosite naokrog, in živela je že s psi, kunci in pticami. VCA navaja zmerno aktivnost in svetuje, da dlako počešete vsaj enkrat na teden. Rodovniški mucki gredo v nov dom običajno pri 12–13 tednih (PDSA).",
       ],
       sources: ["C13", "C27", "C28"],
+    },
+    ragdoll: {
+      aka: "ragdoll mačka, Rag doll",
+      text: [
+        "CFA opisuje ragdolla kot veliko, umirjeno mačko s poldolgo, gosto in svilnato dlako ter modrimi očmi. Temnejše »točke« ima v več vzorcih — colourpoint brez bele, mitted z belimi tačkami, bicolour z več bele in van. Počasi dozoreva: polno barvo dlake doseže pri dveh letih, polno velikost in težo pa pri približno štirih.",
+        "CFA ga opisuje kot nežno mačko, ki vas pričaka pri vratih in vam sledi iz sobe v sobo; pogosto se igra brez iztegnjenih krempljev. PetMD piše, da je primeren tudi za družine z otroki, a naj bo prvo srečanje z otroki ali drugimi živalmi počasno in pod nadzorom, ter navaja, da nekaterim ragdollom zadošča česanje enkrat do dvakrat na teden; CFA svetuje redno česanje. Rodovniški mucki gredo v nov dom običajno pri 12–13 tednih (PDSA).",
+      ],
+      sources: ["C13", "C30", "C32"],
     },
   },
 };
