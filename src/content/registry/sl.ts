@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -341,6 +341,7 @@ const sl: RegistryCopy = {
     dental_disease_tooth_brushing: "Velika britanska raziskava navaja bolezen zob kot daleč najpogostejšo težavo pasme, pogosti so tudi mlečni zobje, ki ne izpadejo, zato lastnikom svetuje vsakodnevno nego zob, na primer ščetkanje.",
     windpipe_collapse: "Pri pasmi se lahko pojavi kolaps sapnika — sapnik izgubi trdnost, kar lahko povzroči šibkost in kolaps.",
     eye_problems_pra_lens_dry_eye: "Pri pasmi se pojavljajo težave z očmi, na primer progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, izpah očesne leče in suho oko.",
+    eyelid_problems: "Pri pasmi se lahko pojavijo težave z vekami: navznoter (entropij) ali navzven (ektropij) zavihane veke in »češnjevo oko«, ko izstopi tretja veka.",
     pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
   },
   page: {
@@ -584,6 +585,14 @@ const sl: RegistryCopy = {
         "Standard ga opisuje kot pozornega, inteligentnega in živahnega, a uravnovešenega. The Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje vsak dan; PDSA dodaja, da rad teka, prinaša in se igra, da zna biti pri učenju precej trmast in da je zaradi zelo krhkih kosti primernejši za družine s starejšimi otroki. Velika britanska raziskava je kot najpogostejšo težavo pasme ugotovila bolezen zob, svetuje vsakodnevno nego zob, npr. ščetkanje, in navaja mediano starosti ob smrti 13,56 leta.",
       ],
       sources: ["S190", "S192", "S194", "S195", "S196"],
+    },
+    cane_corso: {
+      aka: "italijanski cane corso, Cane Corso Italiano, korzo",
+      text: [
+        "Cane corso je srednje velik do velik italijanski molos, robusten in čvrst pes z nekaj elegance, nekoliko daljši kot visok. Standard opisuje kratko, svetlečo, zelo gosto dlako v črni, sivih odtenkih, plavi ali rdeči barvi s temno masko, temno pšenični ali progasti barvi; velike bele lise niso dovoljene. Po veljavnem standardu FCI so ušesa nekupirana in rep naraven — v Združenem kraljestvu je kupiranje prepovedano —, zato ga PetPrep vedno pokaže z naravnimi ušesi in repom.",
+        "Standard ga opisuje kot čuvaja posesti, družine in živine, zelo okretnega in odzivnega. PDSA pravi, da je družaben in ljubeč do svojih ljudi, da potrebuje okoli dve uri gibanja na dan in zaposlitev, ker sovraži dolgčas, in da je zaradi velikosti primernejši za izkušene lastnike. Ne priporoča ga za dom z majhnimi otroki, ki bi jih lahko po nesreči podrl; primeren je za dom brez otrok ali s starejšimi otroki. Zadošča česanje enkrat na teden, a dlaka mu izpada in se rad slini. PDSA navaja povprečno življenjsko dobo manj kot deset let.",
+      ],
+      sources: ["S197", "S199"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
