@@ -329,6 +329,10 @@ const en: RegistryCopy = {
     wobbler_syndrome: "Wobbler syndrome, where unstable bones in the neck press on the spinal cord and weaken the back legs, can occur in the breed.",
     eye_phpv: "An eye defect that is present from birth (persistent hyperplastic primary vitreous, PHPV) can occur in the breed; breeders are advised to have the parents' eyes tested.",
     certain_cancers: "Certain cancers can occur in the breed.",
+    short_face_breathing: "A moderately short-faced breed: some dogs with shorter faces can have serious breathing problems (brachycephalic obstructive airway syndrome, BOAS).",
+    corneal_ulcers: "Eye problems such as corneal ulcers are more likely because of the skull shape and prominent eyes; eye testing is available.",
+    skin_folds_allergies: "Skin problems such as allergies, warts, skin tags and sore skin folds on the face (skin fold dermatitis) can occur; the face folds should be kept clean and dry.",
+    heart_cardiomyopathy_aortic_stenosis: "Heart problems such as cardiomyopathy and aortic stenosis can occur in the breed.",
     hypothyroidism: "An underactive thyroid (hypothyroidism), which can affect weight, skin and energy levels, can occur in the breed.",
     eyelid_problems: "Eyelid problems can occur in the breed: eyelids that turn inwards (entropion) or outwards (ectropion), and cherry eye, where the third eyelid pops out.",
     pra_pk_def: "Two inherited conditions occur in the breed: progressive retinal atrophy, an eye disease that can lead to blindness, and pyruvate kinase deficiency, a blood disorder; DNA tests of the parents let breeders avoid them.",
@@ -601,6 +605,14 @@ const en: RegistryCopy = {
         "Its standard calls it friendly and calm and very devoted to the family. The Royal Kennel Club says its loyal and obedient nature makes it an excellent family dog, and recommends more than two hours of exercise a day and grooming once a week. The PDSA adds that it is very energetic, needs plenty of mental and physical exercise and early socialisation, and — because of its large size and strong build — is not recommended for families with young children or first-time owners. The Royal Kennel Club gives its lifespan as over 10 years.",
       ],
       sources: ["S207", "S209", "S211"],
+    },
+    boxer: {
+      aka: "German Boxer, Deutscher Boxer",
+      text: [
+        "The Boxer is a German working and companion dog of medium size, with a square build, strong bone and well developed muscles. Its standards describe a short, glossy, smooth coat in fawn or brindle with a black mask; white markings are allowed but should not cover more than a third of the coat. The muzzle should be broad and deep, never short, with wide nostrils. The tail was once customarily docked; the standard also describes the undocked tail, and PetPrep always shows the dog with natural ears and tail.",
+        "Its standard calls it equable, biddable, fearless and self-assured. The Royal Kennel Club calls it much loved as a family companion and recommends more than two hours of exercise a day and grooming once a week. The PDSA describes a very high-energy, playful dog that loves human company and can develop separation anxiety if left alone, has a very high prey drive and — because of its size and boisterous nature — is not recommended for homes with younger children or for first-time owners; some Boxers with shorter faces can have serious breathing problems. The Royal Kennel Club gives its lifespan as over 10 years.",
+      ],
+      sources: ["S215", "S217", "S219"],
     },
     british_shorthair: {
       aka: "British Blue",
