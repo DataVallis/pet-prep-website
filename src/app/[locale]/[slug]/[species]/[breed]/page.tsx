@@ -5,13 +5,15 @@ import { notFound } from "next/navigation";
 import { compareSlug, isLocale, locales, pageSlugs, pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { breedBySlug, breedsOf, registry, speciesBySlug, type Breed, type Species } from "@/content/registry/registry";
-import { breedHref, breedUpdated, buildBreedView, compareHref, formatDay, getRegistryCopy, portraitSrc, qaText, speciesHref } from "@/lib/registry/views";
+import { breedHref, breedUpdated, buildBreedView, compareHref, formatDay, getRegistryCopy, qaText, speciesHref } from "@/lib/registry/views";
 import { buildPathMetadata } from "@/lib/seo";
 import { breadcrumbsLd, breedPageLd, faqLd, graph } from "@/lib/jsonld";
 import { JsonLd } from "@/components/JsonLd";
 import { StoreButtons } from "@/components/Cta";
 import { Cite, FactList, TagChips } from "@/components/registry/Facts";
 import { CompareView } from "@/components/registry/CompareView";
+import { ShareButton } from "@/components/registry/ShareButton";
+import { absoluteUrl } from "@/lib/site";
 
 export const dynamicParams = false;
 
@@ -55,10 +57,8 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[
     });
   }
   const b = r.breed;
-  // Share image: the breed's AI portrait when the export has one, else a generated card with the breed name.
-  const image = b.portrait
-    ? { path: portraitSrc(b, b.portrait), width: b.portrait.width, height: b.portrait.height, alt: c.page.portraitAlt[b.portrait.kind](b.name[r.locale]) }
-    : { path: `/og/${sp.id}/${b.id}.${r.locale}.png`, width: 1200, height: 630, alt: b.name[r.locale] };
+  // Share image: a branded card with the breed's AI portrait (/og/<species>/<breed>.<locale>.png).
+  const image = { path: `/og/${sp.id}/${b.id}.${r.locale}.png`, width: 1200, height: 630, alt: `${b.name[r.locale]} — ${c.page.og.lead}` };
   return buildPathMetadata({
     locale: r.locale,
     paths: each((l) => breedHref(l, b)),
@@ -183,9 +183,25 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
             <p className="max-w-3xl text-[19px] leading-relaxed text-[#2a312d]">{c.page.metaDescription(v.name, species.name[locale].one)}</p>
           )}
           <p className="max-w-3xl rounded-[14px] bg-mint-tint px-4 py-3 text-sm leading-relaxed">{v.availability.text}</p>
-          <p className="text-sm text-muted">
-            {c.page.updated}: <time dateTime={v.updated}>{formatDay(locale, v.updated)}</time>
-          </p>
+          <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+            <ShareButton
+              url={absoluteUrl(v.href)}
+              text={c.page.share.text(v.name)}
+              subject={c.page.share.emailSubject(v.name)}
+              strings={{
+                button: c.page.share.button,
+                title: c.page.share.title,
+                copy: c.page.share.copy,
+                copied: c.page.share.copied,
+                linkLabel: c.page.share.linkLabel,
+                more: c.page.share.more,
+                on: c.page.share.on("{network}"),
+              }}
+            />
+            <p className="text-sm text-muted">
+              {c.page.updated}: <time dateTime={v.updated}>{formatDay(locale, v.updated)}</time>
+            </p>
+          </div>
         </header>
 
         {v.portrait ? (

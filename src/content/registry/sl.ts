@@ -407,6 +407,18 @@ const sl: RegistryCopy = {
     glanceNote: "Ključna dejstva iz virov na dnu strani. Kjer se viri razlikujejo, je navedena vsaka vrednost.",
     portraitAlt: { ai_photo: (name) => `${name} — fotografija (AI)`, ai_illustration: (name) => `${name} — ilustracija (AI)` },
     portraitCaption: { ai_photo: "Fotografija, ustvarjena z AI", ai_illustration: "Ilustracija, ustvarjena z AI" },
+    share: {
+      button: "Deli",
+      title: "Deli to pasmo",
+      copy: "Kopiraj",
+      copied: "Kopirano",
+      linkLabel: "Povezava do te strani",
+      more: "Več možnosti",
+      text: (name) => `${name}: potrebe, viri in kako jo simulira PetPrep`,
+      emailSubject: (name) => `${name} — register živali PetPrep`,
+      on: (network) => `Deli na ${network}`,
+    },
+    og: { lead: "Potrebe, viri in kako jo simulira PetPrep", photoLabel: "AI fotografija" },
     qa: {
       title: "Vprašanja in odgovori",
       intro: "Odgovori temeljijo samo na dejstvih z viri s te strani; vsak odgovor navaja svoje vire.",
