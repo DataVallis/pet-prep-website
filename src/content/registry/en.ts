@@ -321,6 +321,9 @@ const en: RegistryCopy = {
     heart_muscle_disease: "Cardiomyopathy, an enlarged heart caused by a weakening of the heart muscle, can occur in the breed.",
     itchy_skin_allergy: "Skin allergies (atopy), which cause itching and sore skin, can occur in the breed.",
     entropion_cherry_eye: "Eyelids that turn inwards (entropion) and cherry eye, where the third eyelid pops out, can occur in the breed; cherry eye can be corrected surgically.",
+    dental_disease_tooth_brushing: "A large UK study names dental disease as by far the most common problem in the breed, and puppy teeth that do not fall out are also common, so owners are encouraged to care for the dog's teeth every day, for example by brushing them.",
+    windpipe_collapse: "Tracheal collapse, where the windpipe loses its stiffness and can cause weakness and collapse, can occur in the breed.",
+    eye_problems_pra_lens_dry_eye: "Eye problems occur in the breed, such as progressive retinal atrophy, which can slowly lead to blindness, a dislocated lens (lens luxation) and dry eye.",
     pra_pk_def: "Two inherited conditions occur in the breed: progressive retinal atrophy, an eye disease that can lead to blindness, and pyruvate kinase deficiency, a blood disorder; DNA tests of the parents let breeders avoid them.",
   },
   page: {
@@ -544,6 +547,14 @@ const en: RegistryCopy = {
         "Its standard calls it friendly, intelligent and willing to please. The Royal Kennel Club and the PDSA say it needs more than two hours of exercise a day; the PDSA adds that its instinct to hunt, point and retrieve may kick in on a walk, so it needs good recall training, and that it is fairly easy to train. It needs grooming once or twice a week and sheds moderately. A large UK study puts its median life expectancy at 13.4 years.",
       ],
       sources: ["S185", "S186", "S187", "S188", "S189", "S123"],
+    },
+    yorkshire_terrier: {
+      aka: "Yorkie",
+      text: [
+        "The Yorkshire Terrier is a toy terrier from Great Britain that weighs up to 3.2 kg under its breed standard, with a long, perfectly straight, glossy and silky coat hanging evenly down each side from a parting along the back. The standard allows one colour: dark steel blue from the back of the head to the tail, with rich, bright tan on the head, chest and legs; the small V-shaped ears are carried erect. The standard describes both a docked and an undocked tail — PetPrep always shows the dog with its natural tail.",
+        "Its standard calls it alert, intelligent and spirited, with an even disposition. The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming every day; the PDSA adds that it enjoys running, fetching and playing games, can be quite stubborn to train, and is better suited to families with older children because its bones are very fragile. A large UK study found dental disease to be the most common problem in the breed, encourages daily care of the teeth such as tooth brushing, and found a median age at death of 13.56 years.",
+      ],
+      sources: ["S190", "S192", "S194", "S195", "S196"],
     },
     british_shorthair: {
       aka: "British Blue",

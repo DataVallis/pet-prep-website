@@ -338,6 +338,9 @@ const sl: RegistryCopy = {
     heart_muscle_disease: "Pri pasmi se lahko pojavi kardiomiopatija — povečano srce zaradi oslabljene srčne mišice.",
     itchy_skin_allergy: "Pri pasmi se lahko pojavijo kožne alergije (atopija), ki povzročajo srbenje in razdraženo kožo.",
     entropion_cherry_eye: "Pri pasmi se lahko pojavijo navznoter zavihane veke (entropij) in »češnjevo oko«, ko izstopi tretja veka; češnjevo oko je mogoče kirurško popraviti.",
+    dental_disease_tooth_brushing: "Velika britanska raziskava navaja bolezen zob kot daleč najpogostejšo težavo pasme, pogosti so tudi mlečni zobje, ki ne izpadejo, zato lastnikom svetuje vsakodnevno nego zob, na primer ščetkanje.",
+    windpipe_collapse: "Pri pasmi se lahko pojavi kolaps sapnika — sapnik izgubi trdnost, kar lahko povzroči šibkost in kolaps.",
+    eye_problems_pra_lens_dry_eye: "Pri pasmi se pojavljajo težave z očmi, na primer progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, izpah očesne leče in suho oko.",
     pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
   },
   page: {
@@ -561,6 +564,14 @@ const sl: RegistryCopy = {
         "Standard ga opisuje kot prijaznega, inteligentnega in voljnega. The Royal Kennel Club in PDSA pravita, da potrebuje več kot dve uri gibanja na dan; PDSA dodaja, da ga na sprehodu lahko odnese nagon za lovom, označevanjem in prinašanjem, zato potrebuje dober odpoklic, in da se razmeroma lahko uči. Česati ga je treba enkrat do dvakrat na teden, dlaka mu zmerno izpada. Velika britanska raziskava navaja mediano pričakovane življenjske dobe 13,4 leta.",
       ],
       sources: ["S185", "S186", "S187", "S188", "S189", "S123"],
+    },
+    yorkshire_terrier: {
+      aka: "jorkširski terier, yorkie, jorki",
+      text: [
+        "Yorkshirski terier je pritlikavi terier iz Velike Britanije, ki po standardu pasme tehta do 3,2 kg, z dolgo, povsem ravno, svetlečo in svilnato dlako, ki od preče po hrbtu enakomerno pada ob obeh straneh. Standard dovoljuje eno barvo: temno jekleno modro od zatilja do repa ter bogato, svetlo zlatorjavo na glavi, prsih in nogah; majhna ušesa v obliki črke V nosi pokončno. Standard opisuje kupiran in nekupiran rep — PetPrep psa vedno pokaže z naravnim repom.",
+        "Standard ga opisuje kot pozornega, inteligentnega in živahnega, a uravnovešenega. The Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje vsak dan; PDSA dodaja, da rad teka, prinaša in se igra, da zna biti pri učenju precej trmast in da je zaradi zelo krhkih kosti primernejši za družine s starejšimi otroki. Velika britanska raziskava je kot najpogostejšo težavo pasme ugotovila bolezen zob, svetuje vsakodnevno nego zob, npr. ščetkanje, in navaja mediano starosti ob smrti 13,56 leta.",
+      ],
+      sources: ["S190", "S192", "S194", "S195", "S196"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
