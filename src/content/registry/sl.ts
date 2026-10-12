@@ -346,6 +346,10 @@ const sl: RegistryCopy = {
     wobbler_syndrome: "Pri pasmi se lahko pojavi sindrom wobbler: nestabilna vratna vretenca pritiskajo na hrbtenjačo in oslabijo zadnje noge.",
     eye_phpv: "Pri pasmi se lahko pojavi prirojena okvara očesa (persistentni hiperplastični primarni steklovinec, PHPV); vzrediteljem priporočajo pregled oči staršev.",
     certain_cancers: "Pri pasmi se lahko pojavijo nekatere vrste raka.",
+    short_face_breathing: "Zmerno kratkoglava pasma: nekateri psi s krajšim gobčkom imajo lahko resne težave z dihanjem (brahicefalni obstruktivni sindrom dihalnih poti, BOAS).",
+    corneal_ulcers: "Zaradi oblike lobanje in izbočenih oči so pogostejše težave z očmi, kot je razjeda roženice; očesni pregled je na voljo.",
+    skin_folds_allergies: "Pojavijo se lahko kožne težave, kot so alergije, bradavice, kožni izrastki in vnete kožne gube na obrazu (dermatitis kožnih gub); gube na obrazu naj bodo čiste in suhe.",
+    heart_cardiomyopathy_aortic_stenosis: "Pri pasmi se lahko pojavijo bolezni srca, kot sta kardiomiopatija in zožitev aorte (aortna stenoza).",
     hypothyroidism: "Pri pasmi se lahko pojavi premalo delujoča ščitnica (hipotiroza), ki vpliva na težo, kožo in energijo.",
     eyelid_problems: "Pri pasmi se lahko pojavijo težave z vekami: navznoter (entropij) ali navzven (ektropij) zavihane veke in »češnjevo oko«, ko izstopi tretja veka.",
     pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
@@ -618,6 +622,14 @@ const sl: RegistryCopy = {
         "Standard ga opisuje kot prijaznega, mirnega in zelo predanega družini. The Royal Kennel Club pravi, da je zaradi zvestobe in ubogljivosti odličen družinski pes, ter priporoča več kot dve uri gibanja na dan in česanje enkrat na teden. PDSA dodaja, da je zelo energičen, da potrebuje veliko miselnega in telesnega gibanja ter zgodnjo socializacijo in da ga zaradi velikosti in moči ne priporočajo družinam z majhnimi otroki ali začetnikom. The Royal Kennel Club navaja življenjsko dobo več kot 10 let.",
       ],
       sources: ["S207", "S209", "S211"],
+    },
+    boxer: {
+      aka: "nemški boksar, Deutscher Boxer",
+      text: [
+        "Boksar je nemški delovni in družinski pes srednje velikosti, kvadratne postave, z močnimi kostmi in dobro razvitimi mišicami. Standardi opisujejo kratko, svetlečo in gladko dlako v rumeni ali tigrasti barvi s črno masko; bele oznake so dovoljene, a ne smejo pokrivati več kot tretjine dlake. Gobec naj bo širok in globok, nikoli kratek, z odprtimi nosnicami. Rep so nekoč običajno kupirali; standard opisuje tudi nekupiran rep in PetPrep psa vedno pokaže z naravnimi ušesi in repom.",
+        "Standard ga opisuje kot uravnovešenega, vodljivega, neustrašnega in samozavestnega. The Royal Kennel Club pravi, da je zelo priljubljen družinski spremljevalec, ter priporoča več kot dve uri gibanja na dan in česanje enkrat na teden. PDSA ga opisuje kot zelo energičnega in igrivega psa, ki ima rad družbo ljudi in lahko razvije ločitveno tesnobo, če ostaja sam, ima zelo močan lovski nagon, zaradi velikosti in živahnosti pa ga ne priporočajo za dom z mlajšimi otroki ali za začetnike; nekateri boksarji s krajšim gobčkom imajo lahko resne težave z dihanjem. The Royal Kennel Club navaja življenjsko dobo več kot 10 let.",
+      ],
+      sources: ["S215", "S217", "S219"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
