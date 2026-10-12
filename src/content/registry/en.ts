@@ -391,6 +391,18 @@ const en: RegistryCopy = {
     glanceNote: "Key facts from the sources at the bottom of the page. Where sources differ, each value is listed.",
     portraitAlt: { ai_photo: (name) => `${name} — photo (AI)`, ai_illustration: (name) => `${name} — illustration (AI)` },
     portraitCaption: { ai_photo: "AI-generated photo", ai_illustration: "AI-generated illustration" },
+    share: {
+      button: "Share",
+      title: "Share this breed",
+      copy: "Copy",
+      copied: "Copied",
+      linkLabel: "Link to this page",
+      more: "More options",
+      text: (name) => `${name}: needs, sources and how PetPrep simulates it`,
+      emailSubject: (name) => `${name} — PetPrep animal register`,
+      on: (network) => `Share on ${network}`,
+    },
+    og: { lead: "Needs, sources and how PetPrep simulates it", photoLabel: "AI photo" },
     qa: {
       title: "Questions and answers",
       intro: "Answered only from the sourced facts on this page; every answer names its sources.",

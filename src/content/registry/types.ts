@@ -146,6 +146,22 @@ export type RegistryCopy = {
     /** per portrait kind: "ai_photo" (current) or "ai_illustration" (older exports) */
     portraitAlt: Record<PortraitKind, (name: string) => string>;
     portraitCaption: Record<PortraitKind, string>;
+    /** Share button + popover on a breed page. */
+    share: {
+      button: string;
+      title: string;
+      copy: string;
+      copied: string;
+      linkLabel: string;
+      more: string;
+      /** Prefilled text for X / WhatsApp / Telegram / e-mail. */
+      text: (name: string) => string;
+      emailSubject: (name: string) => string;
+      /** aria-label of a network button: "Share on Facebook". */
+      on: (network: string) => string;
+    };
+    /** Share image (og) of a breed page: line under the name and the AI label on the photo. */
+    og: { lead: string; photoLabel: string };
     /** Generated questions and answers (only from sourced facts). */
     qa: {
       title: string;
