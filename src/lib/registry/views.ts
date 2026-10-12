@@ -339,6 +339,29 @@ function visibleSourceIds(locale: Locale, b: Breed): string[] {
   return b.source_ids.filter((id) => !hiddenOnly.has(id));
 }
 
+/** Fields for the search snippet, in this order (the first sourced value of each; statements skipped). */
+const META_FIELDS = ["weight", "exercise", "lifespan"];
+
+/** Page title with search terms; "temperament" only for breeds with a written intro. */
+export function breedMetaTitle(locale: Locale, b: Breed): string {
+  const c = copies[locale];
+  const sp = getSpecies(b.species);
+  return c.page.metaTitle(b.name[locale], sp.name[locale].one, sp.id, Boolean(c.intros[b.id]));
+}
+
+/** Unique search snippet from the breed's own sourced facts; the generic sentence when it has none. */
+export function breedMetaDescription(locale: Locale, b: Breed): string {
+  const c = copies[locale];
+  const facts = META_FIELDS.flatMap((field) => {
+    const f = b.facts.find((x) => x.field === field && x.kind !== "statement");
+    if (!f) return [];
+    // "life expectancy at birth …" already names itself; other values get a short label
+    const label = f.qualifier?.startsWith("expectancy") ? "" : `${need(c.page.metaLabels, field, "meta label")} `;
+    return [`${label}${valueText(locale, f)}`];
+  });
+  return facts.length ? c.page.metaFacts(b.name[locale], facts) : c.page.metaDescription(b.name[locale], getSpecies(b.species).name[locale].one);
+}
+
 export function buildBreedView(locale: Locale, b: Breed): BreedView {
   const c = copies[locale];
   const f = fmt(locale);
