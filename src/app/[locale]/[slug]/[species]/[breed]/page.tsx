@@ -253,15 +253,20 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
             <h2 id="suits" className="h-card text-[28px] leading-tight sm:text-[34px]">{c.page.suitabilityTitle}</h2>
             {v.suits.length || v.consider.length ? (
               <>
-                <div className="grid gap-4 md:grid-cols-2">
-                  <div className="flex flex-col gap-3 rounded-[22px] border border-line bg-white p-6">
-                    <h3 className="text-sm font-semibold">{labels.suits_title}</h3>
-                    <TagChips tags={v.suits} tone="suits" sourceLabel={cite} />
-                  </div>
-                  <div className="flex flex-col gap-3 rounded-[22px] border border-line bg-white p-6">
-                    <h3 className="text-sm font-semibold">{labels.consider_title}</h3>
-                    <TagChips tags={v.consider} tone="consider" sourceLabel={cite} />
-                  </div>
+                {/* Like the app's picker: a group without a sourced tag is not shown (Pembroke Welsh Corgi has no "suits" tag). */}
+                <div className={`grid gap-4 ${v.suits.length && v.consider.length ? "md:grid-cols-2" : ""}`}>
+                  {v.suits.length ? (
+                    <div className="flex flex-col gap-3 rounded-[22px] border border-line bg-white p-6">
+                      <h3 className="text-sm font-semibold">{labels.suits_title}</h3>
+                      <TagChips tags={v.suits} tone="suits" sourceLabel={cite} />
+                    </div>
+                  ) : null}
+                  {v.consider.length ? (
+                    <div className="flex flex-col gap-3 rounded-[22px] border border-line bg-white p-6">
+                      <h3 className="text-sm font-semibold">{labels.consider_title}</h3>
+                      <TagChips tags={v.consider} tone="consider" sourceLabel={cite} />
+                    </div>
+                  ) : null}
                 </div>
                 <p className="max-w-3xl text-sm leading-relaxed text-muted">{c.page.suitabilityNote}</p>
               </>

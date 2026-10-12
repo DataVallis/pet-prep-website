@@ -341,6 +341,7 @@ const sl: RegistryCopy = {
     dental_disease_tooth_brushing: "Velika britanska raziskava navaja bolezen zob kot daleč najpogostejšo težavo pasme, pogosti so tudi mlečni zobje, ki ne izpadejo, zato lastnikom svetuje vsakodnevno nego zob, na primer ščetkanje.",
     windpipe_collapse: "Pri pasmi se lahko pojavi kolaps sapnika — sapnik izgubi trdnost, kar lahko povzroči šibkost in kolaps.",
     eye_problems_pra_lens_dry_eye: "Pri pasmi se pojavljajo težave z očmi, na primer progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, izpah očesne leče in suho oko.",
+    cataracts_lens_luxation: "Pri pasmi se lahko pojavijo težave z očmi, na primer siva mrena, ki zamegli lečo, in izpah leče.",
     eyelid_problems: "Pri pasmi se lahko pojavijo težave z vekami: navznoter (entropij) ali navzven (ektropij) zavihane veke in »češnjevo oko«, ko izstopi tretja veka.",
     pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
   },
@@ -593,6 +594,14 @@ const sl: RegistryCopy = {
         "Standard ga opisuje kot čuvaja posesti, družine in živine, zelo okretnega in odzivnega. PDSA pravi, da je družaben in ljubeč do svojih ljudi, da potrebuje okoli dve uri gibanja na dan in zaposlitev, ker sovraži dolgčas, in da je zaradi velikosti primernejši za izkušene lastnike. Ne priporoča ga za dom z majhnimi otroki, ki bi jih lahko po nesreči podrl; primeren je za dom brez otrok ali s starejšimi otroki. Zadošča česanje enkrat na teden, a dlaka mu izpada in se rad slini. PDSA navaja povprečno življenjsko dobo manj kot deset let.",
       ],
       sources: ["S197", "S199"],
+    },
+    pembroke_welsh_corgi: {
+      aka: "corgi, korgi, Welsh Corgi (Pembroke)",
+      text: [
+        "Welsh corgi pembroke je majhen pastirski pes za govedo iz Walesa, nizek, močan in čvrsto grajen, ki na majhnem prostoru deluje vzdržljivo in krepko. Standard opisuje srednje dolgo, ravno dlako z gosto podlanko v rdeči, soboljevi, plavi ali črni barvi z rjavimi oznakami, z belimi oznakami na nogah, prsih in vratu ali brez, ter pokončna ušesa. Rep so nekoč običajno kupirali; standard opisuje tudi naravni rep in PetPrep psa vedno pokaže z naravnim repom.",
+        "Standard ga opisuje kot pogumnega, delavnega, odprtega in prijaznega. The Royal Kennel Club priporoča do eno uro gibanja na dan in česanje večkrat na teden; PDSA ga opisuje kot prijaznega, veselega in igrivega psa, ki rad ugaja in se razmeroma lahko uči, a lahko grize za pete otrok, ki tečejo, zato pomagata socializacija z otroki in učenje od malega. The Royal Kennel Club navaja življenjsko dobo več kot 12 let in vzrediteljem priporoča pregled kolkov staršev.",
+      ],
+      sources: ["S202", "S204", "S206"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
