@@ -324,6 +324,7 @@ const en: RegistryCopy = {
     dental_disease_tooth_brushing: "A large UK study names dental disease as by far the most common problem in the breed, and puppy teeth that do not fall out are also common, so owners are encouraged to care for the dog's teeth every day, for example by brushing them.",
     windpipe_collapse: "Tracheal collapse, where the windpipe loses its stiffness and can cause weakness and collapse, can occur in the breed.",
     eye_problems_pra_lens_dry_eye: "Eye problems occur in the breed, such as progressive retinal atrophy, which can slowly lead to blindness, a dislocated lens (lens luxation) and dry eye.",
+    cataracts_lens_luxation: "Eye problems can occur in the breed, such as cataracts, which cloud the lens, and a dislocated lens (lens luxation).",
     eyelid_problems: "Eyelid problems can occur in the breed: eyelids that turn inwards (entropion) or outwards (ectropion), and cherry eye, where the third eyelid pops out.",
     pra_pk_def: "Two inherited conditions occur in the breed: progressive retinal atrophy, an eye disease that can lead to blindness, and pyruvate kinase deficiency, a blood disorder; DNA tests of the parents let breeders avoid them.",
   },
@@ -576,6 +577,14 @@ const en: RegistryCopy = {
         "Its standard calls it a guardian of property, family and livestock, extremely agile and responsive. The PDSA says it is sociable and loving with its owners, needs around two hours of exercise a day and things to do, because it hates being bored, and is better suited to experienced owners because of its size. It does not recommend the breed for homes with small children, who could be knocked over; it suits adult-only homes or families with older children. A weekly brush is enough, but it sheds and is known to drool. The PDSA gives its average lifespan as under ten years.",
       ],
       sources: ["S197", "S199"],
+    },
+    pembroke_welsh_corgi: {
+      aka: "Welsh Corgi (Pembroke), Corgi",
+      text: [
+        "The Pembroke Welsh Corgi is a small cattle dog from Wales, low set, strong and sturdily built, giving an impression of substance and stamina in a small space. Its standard describes a medium-length, straight coat with a dense undercoat in red, sable, fawn, or black and tan, with or without white markings on the legs, chest and neck, and pricked ears. The tail was once customarily docked; the standard also describes the natural tail, and PetPrep always shows the dog with its natural tail.",
+        "Its standard calls it bold, workmanlike, outgoing and friendly. The Royal Kennel Club recommends up to an hour of exercise a day and grooming more than once a week; the PDSA describes friendly, happy, fun-loving dogs that are willing to please and fairly easy to train, but says they may nip at the heels of running children, so socialisation with children and training from a young age help. The Royal Kennel Club gives its lifespan as over 12 years and asks breeders to hip-score the parents.",
+      ],
+      sources: ["S202", "S204", "S206"],
     },
     british_shorthair: {
       aka: "British Blue",
