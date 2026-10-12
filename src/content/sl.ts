@@ -211,7 +211,7 @@ const sl: Dictionary = {
         },
       ],
       how: "Kako začnete: ustvarite račun kot starš, dodajte sebe kot profil skrbnika in se prijavite s 6-mestno kodo — na istem ali drugem telefonu.",
-      note: "Danes sta na voljo mešanček (brezplačno) in [border collie](breed:border_collie) (v 12-tedenskem izzivu).",
+      note: "Danes so na voljo brezplačna mešanček in domača mačka ter vse pasme psov in mačk iz [registra živali](page:animals) v 12-tedenskem izzivu.",
       link: "Kako PetPrep uporabljate sami",
     },
     after: {
@@ -230,12 +230,12 @@ const sl: Dictionary = {
       planned: "V razvoju",
     },
     species: {
-      title: "Danes psi. Kmalu še druge živali.",
+      title: "Danes psi in mačke. Kmalu še druge živali.",
       text: "Narejen za družine po vsem svetu, v njihovem jeziku.",
       chips: [
         { label: "Pes · na voljo", active: true, link: "species:dog" },
-        { label: "Border collie · v izzivu", link: "breed:border_collie" },
-        { label: "Mačka · naslednja", link: "species:cat" },
+        { label: "Mačka · na voljo", active: true, link: "species:cat" },
+        { label: "Pasme psov in mačk · v izzivu", link: "page:animals" },
         { label: "Druge vrste · v načrtu", link: "page:animals" },
       ],
     },
@@ -463,7 +463,7 @@ const sl: Dictionary = {
             { q: "Ali si lahko sorojenci delijo ljubljenčka?", a: "Da. Vsak otrok podpiše svojo pogodbo, vsako dejanje se šteje tistemu, ki ga je naredil, in vsak dobi svoj pošten Care Score." },
             { q: "Kaj pa šola in spanje?", a: "Nastavite tihe ure. Ljubljenček se upočasni, obvestil ni, obroke, ki v celoti padejo v tihe ure, pa opravite vi." },
             { q: "Je za otroke strašljivo?", a: "Ne. Posledice so resnične, a nežne: ljubljenček gre k veterinarju ali v zavetišče, nikoli nič grafičnega, in vedno obstaja nov začetek." },
-            { q: "Katere živali so na voljo?", a: "Danes [psi](species:dog): brezplačni mešanček in [border collie](breed:border_collie). Naslednja je [mačka](species:cat), druge vrste so v načrtu. V [registru živali](page:animals) so vse vrste in pasme s potrebami iz virov." },
+            { q: "Katere živali so na voljo?", a: "Danes [psi](species:dog) in [mačke](species:cat): brezplačna mešanček in domača mačka ter v 12-tedenskem izzivu vse pasme iz [registra živali](page:animals), kjer so tudi njihove potrebe iz virov. Druge vrste so v načrtu." },
             { q: "V katerih jezikih?", a: "Danes v angleščini in slovenščini. Več jezikov dodajamo, ko PetPrep prihaja v nove države." },
             { q: "Kaj se zgodi, ko dobimo pravo žival?", a: "PetPrep lahko postane AI asistent za vašo pravo žival. Ta del je v razvoju." },
           ],

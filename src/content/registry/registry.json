@@ -9,11 +9,11 @@
   "inputs": {
     "dog_data": {
       "path": "docs/research/dog-data/data.json",
-      "sha256": "6884188317d62cd21807db13e8cc24681e448717ae847044907c933c21fbeebd"
+      "sha256": "cef0bf4c750ea36861072fd78ad490a168db83de25218adb169ab8400f5790a7"
     },
     "dog_sources": {
       "path": "docs/research/dog-data/sources.md",
-      "sha256": "20857a67ed90c3a8b9ce82e32e083ec788bdf63a22b139e16b879b3b316a8ee8"
+      "sha256": "3022dfa8ebcbc98636021bed7d05701a7d407b057497efb05642e10377ccf476"
     },
     "cat_data": {
       "path": "docs/research/cat-data/data.json",
@@ -25,23 +25,23 @@
     },
     "suitability": {
       "path": "backend/config/breed_suitability.php",
-      "sha256": "e2fdac589a82f75dc402def86ca1cfc8094965bced42d537346a14f9ee19d463"
+      "sha256": "fdcf029021d7cd15e6a3132ec8978c437cfc3636a0927b594457fda342587501"
     },
     "labels_en": {
       "path": "mobile/src/i18n/locales/en/pet.json",
-      "sha256": "047f58995de4d75fd22b0426d8e86b0f1715ad16f21792550ea1f4a3420d3baf"
+      "sha256": "44d2314f86c38b19535e019dd94966380da1a1070d32868e29fa1f4365babc47"
     },
     "labels_sl": {
       "path": "mobile/src/i18n/locales/sl/pet.json",
-      "sha256": "c129b92aaa2ff2d0c9b064eb67cfc9f2f00678f0eb7e4b3eaa6d0c5829546be9"
+      "sha256": "691ae4a71e0131b791a8ca477590fad31172bf61f74db03a562fb757daad34db"
     },
     "family_en": {
       "path": "mobile/src/i18n/locales/en/family.json",
-      "sha256": "a1ada22f45c728cb0e5abddc52c03bccbb9039000d5e6f2f0927cd7be5fd92ea"
+      "sha256": "95156edfbb67718fc27cd5ca6f6873c6c1757595cb61d3e1dd85f05e23a34e1a"
     },
     "family_sl": {
       "path": "mobile/src/i18n/locales/sl/family.json",
-      "sha256": "c78bf8da33a265b59ae6a60688897e1d0b411a87573aa00fd8d7d4ee54fa3a9f"
+      "sha256": "11f366e1eed5fd62e00b825aec21bf109e02b7658f5a8f522911c2410cabb65d"
     },
     "checklist_data": {
       "path": "docs/research/breeder-checklist/data.json",
@@ -61,6 +61,7 @@
     "apartment": "suits",
     "back_spine": "consider",
     "brachycephalic_breathing": "consider",
+    "chases_small_pets": "consider",
     "chews_when_bored": "consider",
     "children": "suits",
     "drools": "consider",
@@ -96,6 +97,7 @@
         "apartment": "apartment living",
         "back_spine": "long back — spine problems, avoid jumping",
         "brachycephalic_breathing": "flat face — breathing and heat problems",
+        "chases_small_pets": "strong prey drive — may chase small pets",
         "chews_when_bored": "chews things when bored",
         "children": "families with children",
         "drools": "drools — keep a cloth at hand",
@@ -131,6 +133,7 @@
         "apartment": "življenje v stanovanju",
         "back_spine": "dolg hrbet — težave s hrbtenico, brez skakanja",
         "brachycephalic_breathing": "kratek gobček — težave z dihanjem in vročino",
+        "chases_small_pets": "močan lovski nagon — lahko lovi manjše živali",
         "chews_when_bored": "ko se dolgočasi, grize stvari",
         "children": "družino z otroki",
         "drools": "se slini — imejte pri roki krpo",
@@ -447,7 +450,7 @@
           "many": "Mačke"
         }
       },
-      "status": "coming_soon",
+      "status": "available",
       "breed_count": 6,
       "fact_groups": [
         "play",
@@ -1395,7 +1398,7 @@
       "id": "labrador_retriever",
       "species": "dog",
       "order": 1,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Labrador Retriever",
         "sl": "Labradorec"
@@ -1919,6 +1922,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 1
+            }
           }
         ],
         "values": [
@@ -1980,6 +1989,13 @@
               "S42"
             ],
             "decision": "potrdil David 2026-10-09: 1.8 — same Coren 'brightest' tier as the Border Collie (2.0), BC stays visibly fastest"
+          },
+          {
+            "ref": "proposed_game_parameters.labrador_retriever.grooming",
+            "basis_source_ids": [
+              "S50"
+            ],
+            "decision": "potrdil David 2026-10-12 (pravilo runbooka (David 2026-10-11/12: »enkrat na teden« → 1, »vsak dan« → 7, razpon A–B → B)): 1× na teden; mehanika česanja psa zgrajena v ROADMAP M5-R13 (David 2026-10-12, »kot pri mački«)"
           }
         ],
         "basis_source_ids": [
@@ -1994,6 +2010,7 @@
           "S35",
           "S42",
           "S45",
+          "S50",
           "S54",
           "S59"
         ]
@@ -2129,7 +2146,7 @@
       "id": "golden_retriever",
       "species": "dog",
       "order": 2,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Golden Retriever",
         "sl": "Zlati prinašalec"
@@ -2692,6 +2709,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 3
+            }
           }
         ],
         "values": [
@@ -2753,6 +2776,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-09: 1.9 (Coren rank 4, S34) — between the Border Collie (2.0) and the Labrador (1.8)"
+          },
+          {
+            "ref": "proposed_game_parameters.golden_retriever.grooming",
+            "basis_source_ids": [
+              "S68"
+            ],
+            "decision": "potrdil David 2026-10-12 (pravilo runbooka (David 2026-10-11/12: »enkrat na teden« → 1, »vsak dan« → 7, razpon A–B → B)): 3× na teden (PDSA »najmanj trikrat na teden«); mehanika česanja psa zgrajena v ROADMAP M5-R13 (David 2026-10-12, »kot pri mački«)"
           }
         ],
         "basis_source_ids": [
@@ -2853,7 +2883,7 @@
       "id": "french_bulldog",
       "species": "dog",
       "order": 3,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "French Bulldog",
         "sl": "Francoski buldog"
@@ -3223,6 +3253,15 @@
               "french_bulldog.health.heat_stroke",
               "french_bulldog.exercise.heat_and_walk_timing"
             ]
+          },
+          {
+            "tag": "chases_small_pets",
+            "source_ids": [
+              "S81"
+            ],
+            "refs": [
+              "french_bulldog.behaviour.other_pets"
+            ]
           }
         ]
       },
@@ -3332,6 +3371,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 1
+            }
           }
         ],
         "values": [
@@ -3394,6 +3439,13 @@
               "S82"
             ],
             "decision": "potrdil David 2026-10-10: 0.7 (Coren rank 58, S35 — 'Fair' tier, one tier below Average)"
+          },
+          {
+            "ref": "proposed_game_parameters.french_bulldog.grooming",
+            "basis_source_ids": [
+              "S78"
+            ],
+            "decision": "potrdil David 2026-10-12 (pravilo runbooka (David 2026-10-11/12: »enkrat na teden« → 1, »vsak dan« → 7, razpon A–B → B)): 1× na teden; mehanika česanja psa zgrajena v ROADMAP M5-R13 (David 2026-10-12, »kot pri mački«)"
           }
         ],
         "basis_source_ids": [
@@ -3500,7 +3552,7 @@
       "id": "german_shepherd",
       "species": "dog",
       "order": 4,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "German Shepherd Dog",
         "sl": "Nemški ovčar"
@@ -3966,6 +4018,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 2
+            }
           }
         ],
         "values": [
@@ -4026,6 +4084,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 1.9 (Coren rank 3, S34 — Brightest tier)"
+          },
+          {
+            "ref": "proposed_game_parameters.german_shepherd.grooming",
+            "basis_source_ids": [
+              "S97"
+            ],
+            "decision": "predlog Claude 2026-10-12: vir pravi »večkrat na teden« brez števila → 2× na teden (najmanj, kar je »več kot enkrat«), M5-R13; čaka Davida"
           }
         ],
         "basis_source_ids": [
@@ -4119,7 +4184,7 @@
       "id": "cavalier_king_charles_spaniel",
       "species": "dog",
       "order": 5,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Cavalier King Charles Spaniel",
         "sl": "Kavalir King Charles španjel"
@@ -4546,6 +4611,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 7
+            }
           }
         ],
         "values": [
@@ -4605,6 +4676,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 1.0 (Coren rank 44, S35 — Average tier)"
+          },
+          {
+            "ref": "proposed_game_parameters.cavalier_king_charles_spaniel.grooming",
+            "basis_source_ids": [
+              "S108"
+            ],
+            "decision": "potrdil David 2026-10-12 (pravilo runbooka (David 2026-10-11/12: »enkrat na teden« → 1, »vsak dan« → 7, razpon A–B → B)): vsak dan (7× na teden, PDSA »morda vsak dan«; alternativa 2 za Davida); mehanika česanja psa zgrajena v ROADMAP M5-R13 (David 2026-10-12, »kot pri mački«)"
           }
         ],
         "basis_source_ids": [
@@ -4618,7 +4696,8 @@
           "S35",
           "S45",
           "S71",
-          "S105"
+          "S105",
+          "S108"
         ]
       },
       "portrait": {
@@ -4706,7 +4785,7 @@
       "id": "beagle",
       "species": "dog",
       "order": 6,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Beagle",
         "sl": "Bigl"
@@ -5065,6 +5144,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 1
+            }
           }
         ],
         "values": [
@@ -5124,6 +5209,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 0.5 (Coren rank 72, S35 — Lowest tier)"
+          },
+          {
+            "ref": "proposed_game_parameters.beagle.grooming",
+            "basis_source_ids": [
+              "S113"
+            ],
+            "decision": "potrdil David 2026-10-12 (pravilo runbooka (David 2026-10-11/12: »enkrat na teden« → 1, »vsak dan« → 7, razpon A–B → B)): 1× na teden; mehanika česanja psa zgrajena v ROADMAP M5-R13 (David 2026-10-12, »kot pri mački«)"
           }
         ],
         "basis_source_ids": [
@@ -5221,7 +5313,7 @@
       "id": "standard_poodle",
       "species": "dog",
       "order": 7,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Poodle (Standard)",
         "sl": "Veliki koder"
@@ -5608,6 +5700,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 7
+            }
           }
         ],
         "values": [
@@ -5667,6 +5765,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 2.0 (Coren rank 2, S35 — Brightest tier)"
+          },
+          {
+            "ref": "proposed_game_parameters.standard_poodle.grooming",
+            "basis_source_ids": [
+              "S120"
+            ],
+            "decision": "potrdil David 2026-10-12 (pravilo runbooka (David 2026-10-11/12: »enkrat na teden« → 1, »vsak dan« → 7, razpon A–B → B)): vsak dan (7× na teden); mehanika česanja psa zgrajena v ROADMAP M5-R13 (David 2026-10-12, »kot pri mački«)"
           }
         ],
         "basis_source_ids": [
@@ -5762,7 +5867,7 @@
       "id": "dachshund",
       "species": "dog",
       "order": 8,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Dachshund",
         "sl": "Jazbečar"
@@ -6001,6 +6106,15 @@
             "refs": [
               "dachshund.behaviour.mental_stimulation"
             ]
+          },
+          {
+            "tag": "chases_small_pets",
+            "source_ids": [
+              "S127"
+            ],
+            "refs": [
+              "dachshund.behaviour.other_pets"
+            ]
           }
         ]
       },
@@ -6110,6 +6224,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 1
+            }
           }
         ],
         "values": [
@@ -6169,6 +6289,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 1.0 (Coren rank 49, S35 — Average tier)"
+          },
+          {
+            "ref": "proposed_game_parameters.dachshund.grooming",
+            "basis_source_ids": [
+              "S125"
+            ],
+            "decision": "potrdil David 2026-10-12 (pravilo runbooka (David 2026-10-11/12: »enkrat na teden« → 1, »vsak dan« → 7, razpon A–B → B)): 1× na teden; mehanika česanja psa zgrajena v ROADMAP M5-R13 (David 2026-10-12, »kot pri mački«)"
           }
         ],
         "basis_source_ids": [
@@ -6252,7 +6379,7 @@
       "id": "australian_shepherd",
       "species": "dog",
       "order": 9,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Australian Shepherd",
         "sl": "Avstralski ovčar"
@@ -6677,6 +6804,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 2
+            }
           }
         ],
         "values": [
@@ -6736,6 +6869,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 1.0 (Coren rank 42, S35 — Average tier)"
+          },
+          {
+            "ref": "proposed_game_parameters.australian_shepherd.grooming",
+            "basis_source_ids": [
+              "S133"
+            ],
+            "decision": "predlog Claude 2026-10-12: vir pravi »večkrat na teden« brez števila → 2× na teden (najmanj, kar je »več kot enkrat«), M5-R13; čaka Davida"
           }
         ],
         "basis_source_ids": [
@@ -6845,7 +6985,7 @@
       "id": "havanese",
       "species": "dog",
       "order": 10,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Havanese",
         "sl": "Havanski bišon"
@@ -7203,6 +7343,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 7
+            }
           }
         ],
         "values": [
@@ -7262,6 +7408,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 1.0 (not ranked by Coren, S35 — unranked rule)"
+          },
+          {
+            "ref": "proposed_game_parameters.havanese.grooming",
+            "basis_source_ids": [
+              "S138"
+            ],
+            "decision": "potrdil David 2026-10-12 (pravilo runbooka (David 2026-10-11/12: »enkrat na teden« → 1, »vsak dan« → 7, razpon A–B → B)): vsak dan (7× na teden); mehanika česanja psa zgrajena v ROADMAP M5-R13 (David 2026-10-12, »kot pri mački«)"
           }
         ],
         "basis_source_ids": [
@@ -7336,7 +7489,7 @@
       "id": "west_highland_white_terrier",
       "species": "dog",
       "order": 11,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "West Highland White Terrier",
         "sl": "Zahodnoškotski beli terier"
@@ -7647,6 +7800,15 @@
             "refs": [
               "west_highland_white_terrier.behaviour.chewing"
             ]
+          },
+          {
+            "tag": "chases_small_pets",
+            "source_ids": [
+              "S147"
+            ],
+            "refs": [
+              "west_highland_white_terrier.behaviour.other_pets"
+            ]
           }
         ]
       },
@@ -7756,6 +7918,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 2
+            }
           }
         ],
         "values": [
@@ -7815,6 +7983,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 1.0 (Coren rank 47, Average tier, S35)"
+          },
+          {
+            "ref": "proposed_game_parameters.west_highland_white_terrier.grooming",
+            "basis_source_ids": [
+              "S144"
+            ],
+            "decision": "predlog Claude 2026-10-12: vir pravi »večkrat na teden« brez števila → 2× na teden (najmanj, kar je »več kot enkrat«), M5-R13; čaka Davida"
           }
         ],
         "basis_source_ids": [
@@ -7877,7 +8052,7 @@
       "id": "bernese_mountain_dog",
       "species": "dog",
       "order": 12,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Bernese Mountain Dog",
         "sl": "Bernski planšarski pes"
@@ -8266,6 +8441,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 2
+            }
           }
         ],
         "values": [
@@ -8325,6 +8506,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 1.5 (Coren rank 22, Excellent tier, S35)"
+          },
+          {
+            "ref": "proposed_game_parameters.bernese_mountain_dog.grooming",
+            "basis_source_ids": [
+              "S152"
+            ],
+            "decision": "predlog Claude 2026-10-12: vir pravi »večkrat na teden« brez števila → 2× na teden (najmanj, kar je »več kot enkrat«), M5-R13; čaka Davida"
           }
         ],
         "basis_source_ids": [
@@ -8403,7 +8591,7 @@
       "id": "siberian_husky",
       "species": "dog",
       "order": 13,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Siberian Husky",
         "sl": "Sibirski haski"
@@ -8698,6 +8886,15 @@
               "siberian_husky.suitability.rkc_grooming",
               "siberian_husky.suitability.pdsa_grooming"
             ]
+          },
+          {
+            "tag": "chases_small_pets",
+            "source_ids": [
+              "S162"
+            ],
+            "refs": [
+              "siberian_husky.behaviour.other_pets"
+            ]
           }
         ]
       },
@@ -8808,6 +9005,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 2
+            }
           }
         ],
         "values": [
@@ -8867,6 +9070,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 1.0 (Coren rank 45, S35 — Average tier)"
+          },
+          {
+            "ref": "proposed_game_parameters.siberian_husky.grooming",
+            "basis_source_ids": [
+              "S160"
+            ],
+            "decision": "predlog Claude 2026-10-12: vir pravi »večkrat na teden« brez števila → 2× na teden (najmanj, kar je »več kot enkrat«), M5-R13; čaka Davida"
           }
         ],
         "basis_source_ids": [
@@ -8948,7 +9158,7 @@
       "id": "rottweiler",
       "species": "dog",
       "order": 14,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Rottweiler",
         "sl": "Rotvajler"
@@ -9394,6 +9604,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 1
+            }
           }
         ],
         "values": [
@@ -9453,6 +9669,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 1.8 (Coren rank 9, S35 — Brightest tier)"
+          },
+          {
+            "ref": "proposed_game_parameters.rottweiler.grooming",
+            "basis_source_ids": [
+              "S168"
+            ],
+            "decision": "potrdil David 2026-10-11 (pravilo runbooka, vsaka potreba z virom): 1× na teden; mehanika česanja psa zgrajena v ROADMAP M5-R13 (David 2026-10-12, »kot pri mački«)"
           }
         ],
         "basis_source_ids": [
@@ -9551,7 +9774,7 @@
       "id": "bulldog",
       "species": "dog",
       "order": 15,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Bulldog",
         "sl": "Angleški buldog"
@@ -9974,6 +10197,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 1
+            }
           }
         ],
         "values": [
@@ -10033,6 +10262,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 0.5 (Coren rank 77, S35 — Lowest tier)"
+          },
+          {
+            "ref": "proposed_game_parameters.bulldog.grooming",
+            "basis_source_ids": [
+              "S177"
+            ],
+            "decision": "potrdil David 2026-10-11 (pravilo runbooka, vsaka potreba z virom): 1× na teden; mehanika česanja psa zgrajena v ROADMAP M5-R13 (David 2026-10-12, »kot pri mački«)"
           }
         ],
         "basis_source_ids": [
@@ -10119,7 +10355,7 @@
       "id": "german_shorthaired_pointer",
       "species": "dog",
       "order": 16,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "German Shorthaired Pointer",
         "sl": "Nemški kratkodlaki ptičar"
@@ -10533,6 +10769,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 2
+            }
           }
         ],
         "values": [
@@ -10592,6 +10834,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 1.5 (Coren rank 17, S35 — Excellent tier)"
+          },
+          {
+            "ref": "proposed_game_parameters.german_shorthaired_pointer.grooming",
+            "basis_source_ids": [
+              "S188"
+            ],
+            "decision": "potrdil David 2026-10-12 (pravilo runbooka (David 2026-10-11/12: »enkrat na teden« → 1, »vsak dan« → 7, razpon A–B → B)): razpon PDSA 1–2 → 2 (prej 1 po RKC); mehanika česanja psa zgrajena v ROADMAP M5-R13 (David 2026-10-12, »kot pri mački«)"
           }
         ],
         "basis_source_ids": [
@@ -10605,7 +10854,8 @@
           "S35",
           "S45",
           "S123",
-          "S187"
+          "S187",
+          "S188"
         ]
       },
       "portrait": {
@@ -10652,7 +10902,7 @@
       "id": "yorkshire_terrier",
       "species": "dog",
       "order": 17,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Yorkshire Terrier",
         "sl": "Yorkshirski terier"
@@ -11042,6 +11292,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 7
+            }
           }
         ],
         "values": [
@@ -11101,6 +11357,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 1.2 (Coren rank 27, Above average tier, S35)"
+          },
+          {
+            "ref": "proposed_game_parameters.yorkshire_terrier.grooming",
+            "basis_source_ids": [
+              "S192"
+            ],
+            "decision": "potrdil David 2026-10-11 (pravilo runbooka, vsaka potreba z virom): vsak dan (7× na teden); mehanika česanja psa zgrajena v ROADMAP M5-R13 (David 2026-10-12, »kot pri mački«)"
           }
         ],
         "basis_source_ids": [
@@ -11163,7 +11426,7 @@
       "id": "cane_corso",
       "species": "dog",
       "order": 18,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Cane Corso",
         "sl": "Cane corso"
@@ -11567,6 +11830,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 1
+            }
           }
         ],
         "values": [
@@ -11626,6 +11895,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 1.0 (not ranked by Coren, S35 — unranked rule)"
+          },
+          {
+            "ref": "proposed_game_parameters.cane_corso.grooming",
+            "basis_source_ids": [
+              "S199"
+            ],
+            "decision": "potrdil David 2026-10-11 (pravilo runbooka, vsaka potreba z virom): 1× na teden; mehanika česanja psa zgrajena v ROADMAP M5-R13 (David 2026-10-12, »kot pri mački«)"
           }
         ],
         "basis_source_ids": [
@@ -11701,7 +11977,7 @@
       "id": "pembroke_welsh_corgi",
       "species": "dog",
       "order": 19,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Pembroke Welsh Corgi",
         "sl": "Welsh corgi pembroke"
@@ -12080,6 +12356,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 3
+            }
           }
         ],
         "values": [
@@ -12139,6 +12421,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 1.5 (Coren rank 11, Excellent tier, S35)"
+          },
+          {
+            "ref": "proposed_game_parameters.pembroke_welsh_corgi.grooming",
+            "basis_source_ids": [
+              "S206"
+            ],
+            "decision": "potrdil David 2026-10-11 (pravilo runbooka, vsaka potreba z virom): 2–3× na teden → 3; mehanika česanja psa zgrajena v ROADMAP M5-R13 (David 2026-10-12, »kot pri mački«)"
           }
         ],
         "basis_source_ids": [
@@ -12151,7 +12440,8 @@
           "S24",
           "S35",
           "S45",
-          "S204"
+          "S204",
+          "S206"
         ]
       },
       "portrait": {
@@ -12206,7 +12496,7 @@
       "id": "dobermann",
       "species": "dog",
       "order": 20,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Dobermann",
         "sl": "Doberman"
@@ -12548,6 +12838,16 @@
             "refs": [
               "dobermann.suitability.rkc_shedding"
             ]
+          },
+          {
+            "tag": "chases_small_pets",
+            "source_ids": [
+              "S211"
+            ],
+            "refs": [
+              "dobermann.behaviour.other_pets",
+              "dobermann.suitability.pdsa_other_pets"
+            ]
           }
         ]
       },
@@ -12658,6 +12958,12 @@
           {
             "key": "walk_sensor",
             "params": {}
+          },
+          {
+            "key": "grooming_rule",
+            "params": {
+              "per_week": 1
+            }
           }
         ],
         "values": [
@@ -12709,7 +13015,7 @@
               "S11",
               "S212"
             ],
-            "decision": "potrdil David 2026-10-10 (pravilo runbooka): young 9, adult 36, senior 83 (0.75 × 9.2 y, VetCompass median S212)"
+            "decision": "potrdil David 2026-10-10 (pravilo runbooka): young 9, adult 36, senior 83 (0.75 × 9.2 y, VetCompass median S212); potrdil David 2026-10-12: ostane 83, dokler ni dostopen McMillan 2024"
           },
           {
             "ref": "proposed_game_parameters.dobermann.learning_multiplier",
@@ -12717,6 +13023,13 @@
               "S35"
             ],
             "decision": "potrdil David 2026-10-10 (pravilo runbooka): 1.9 (Coren rank 5, Brightest tier, S35)"
+          },
+          {
+            "ref": "proposed_game_parameters.dobermann.grooming",
+            "basis_source_ids": [
+              "S209"
+            ],
+            "decision": "potrdil David 2026-10-11 (pravilo runbooka, vsaka potreba z virom): 1× na teden; mehanika česanja psa zgrajena v ROADMAP M5-R13 (David 2026-10-12, »kot pri mački«)"
           }
         ],
         "basis_source_ids": [
@@ -12807,7 +13120,7 @@
       "id": "maine_coon",
       "species": "cat",
       "order": 0,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Maine Coon",
         "sl": "Maine Coon"
@@ -13182,7 +13495,7 @@
       "id": "british_shorthair",
       "species": "cat",
       "order": 1,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "British Shorthair",
         "sl": "Britanska kratkodlaka mačka"
@@ -13536,7 +13849,7 @@
       "id": "ragdoll",
       "species": "cat",
       "order": 2,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Ragdoll",
         "sl": "Ragdoll"
@@ -13913,7 +14226,7 @@
       "id": "siberian_cat",
       "species": "cat",
       "order": 3,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Siberian cat",
         "sl": "Sibirska mačka"
@@ -14283,7 +14596,7 @@
       "id": "norwegian_forest_cat",
       "species": "cat",
       "order": 4,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Norwegian Forest Cat",
         "sl": "Norveška gozdna mačka"
@@ -14674,7 +14987,7 @@
       "id": "bengal",
       "species": "cat",
       "order": 5,
-      "availability": "coming_soon",
+      "availability": "in_app",
       "name": {
         "en": "Bengal",
         "sl": "Bengalska mačka"
