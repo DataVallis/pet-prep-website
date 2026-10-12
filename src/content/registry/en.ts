@@ -274,6 +274,7 @@ const en: RegistryCopy = {
       dna_jlpp: "DNA test for juvenile laryngeal paralysis and polyneuropathy (JLPP)",
       dna_lemp2: "DNA test for leukoencephalomyelopathy (LEMP-2)",
       dna_huu: "DNA test for hyperuricosuria (HUU)",
+      dna_dings2: "DNA test for dancing Dobermann disease (DINGS2), a nerve and muscle disorder",
     },
   },
   health: {
@@ -325,6 +326,10 @@ const en: RegistryCopy = {
     windpipe_collapse: "Tracheal collapse, where the windpipe loses its stiffness and can cause weakness and collapse, can occur in the breed.",
     eye_problems_pra_lens_dry_eye: "Eye problems occur in the breed, such as progressive retinal atrophy, which can slowly lead to blindness, a dislocated lens (lens luxation) and dry eye.",
     cataracts_lens_luxation: "Eye problems can occur in the breed, such as cataracts, which cloud the lens, and a dislocated lens (lens luxation).",
+    wobbler_syndrome: "Wobbler syndrome, where unstable bones in the neck press on the spinal cord and weaken the back legs, can occur in the breed.",
+    eye_phpv: "An eye defect that is present from birth (persistent hyperplastic primary vitreous, PHPV) can occur in the breed; breeders are advised to have the parents' eyes tested.",
+    certain_cancers: "Certain cancers can occur in the breed.",
+    hypothyroidism: "An underactive thyroid (hypothyroidism), which can affect weight, skin and energy levels, can occur in the breed.",
     eyelid_problems: "Eyelid problems can occur in the breed: eyelids that turn inwards (entropion) or outwards (ectropion), and cherry eye, where the third eyelid pops out.",
     pra_pk_def: "Two inherited conditions occur in the breed: progressive retinal atrophy, an eye disease that can lead to blindness, and pyruvate kinase deficiency, a blood disorder; DNA tests of the parents let breeders avoid them.",
   },
@@ -585,6 +590,14 @@ const en: RegistryCopy = {
         "Its standard calls it bold, workmanlike, outgoing and friendly. The Royal Kennel Club recommends up to an hour of exercise a day and grooming more than once a week; the PDSA describes friendly, happy, fun-loving dogs that are willing to please and fairly easy to train, but says they may nip at the heels of running children, so socialisation with children and training from a young age help. The Royal Kennel Club gives its lifespan as over 12 years and asks breeders to hip-score the parents.",
       ],
       sources: ["S202", "S204", "S206"],
+    },
+    dobermann: {
+      aka: "Doberman, Doberman Pinscher",
+      text: [
+        "The Dobermann is a German companion, protection and working dog of medium size, strong and muscularly built, with elegant lines and a proud stature. Its FCI standard describes a short, hard, dense coat that lies tight and smooth, in black or brown with clearly defined rust red tan markings; white spots are not allowed. The ears and the tail are left natural under the FCI standard, and PetPrep always shows the dog with natural ears and tail.",
+        "Its standard calls it friendly and calm and very devoted to the family. The Royal Kennel Club says its loyal and obedient nature makes it an excellent family dog, and recommends more than two hours of exercise a day and grooming once a week. The PDSA adds that it is very energetic, needs plenty of mental and physical exercise and early socialisation, and — because of its large size and strong build — is not recommended for families with young children or first-time owners. The Royal Kennel Club gives its lifespan as over 10 years.",
+      ],
+      sources: ["S207", "S209", "S211"],
     },
     british_shorthair: {
       aka: "British Blue",
