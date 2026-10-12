@@ -21,13 +21,10 @@ export function generateStaticParams() {
 
 async function portraitPng(b: Breed): Promise<string | null> {
   if (!b.portrait) return null;
-  try {
-    const file = join(process.cwd(), "public/animals", getSpecies(b.species).slug.en, b.portrait.file);
-    const png = await sharp(await readFile(file)).resize(856, 856, { fit: "cover" }).png().toBuffer();
-    return png.toString("base64");
-  } catch {
-    return null;
-  }
+  // No try/catch: a broken sharp install must fail the build, not ship cards without photos.
+  const file = join(process.cwd(), "public/animals", getSpecies(b.species).slug.en, b.portrait.file);
+  const png = await sharp(await readFile(file)).resize(880, 880, { fit: "cover" }).png().toBuffer();
+  return png.toString("base64");
 }
 
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
@@ -66,7 +63,7 @@ export async function GET(_req: Request, ctx: RouteContext<"/og/[species]/[file]
   const locale = m[2] as Locale;
   const sp = getSpecies(species);
   const c = getRegistryCopy(locale);
-  return breedOgImage({
+  const card = await breedOgImage({
     eyebrow: `${c.page.eyebrow} · ${sp.name[locale].one}`,
     title: b.name[locale],
     lead: c.page.og.lead,
@@ -76,4 +73,7 @@ export async function GET(_req: Request, ctx: RouteContext<"/og/[species]/[file]
     photoLabel: c.page.og.photoLabel,
     footer: getDictionary(locale).meta.slogan,
   });
+  // Re-encode as a palette PNG: well under 300 KB, which some apps (WhatsApp) need for a preview.
+  const small = await sharp(Buffer.from(await card.arrayBuffer())).png({ palette: true, quality: 90, effort: 8 }).toBuffer();
+  return new Response(new Uint8Array(small), { headers: { "Content-Type": "image/png", "Cache-Control": "public, max-age=86400" } });
 }

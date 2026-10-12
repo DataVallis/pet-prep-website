@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,7 +6,7 @@ import { notFound } from "next/navigation";
 import { compareSlug, isLocale, locales, pageSlugs, pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { breedBySlug, breedsOf, registry, speciesBySlug, type Breed, type Species } from "@/content/registry/registry";
-import { breedHref, breedUpdated, buildBreedView, compareHref, formatDay, getRegistryCopy, qaText, speciesHref } from "@/lib/registry/views";
+import { breedHref, breedUpdated, buildBreedView, compareHref, formatDay, getRegistryCopy, portraitSrc, qaText, speciesHref } from "@/lib/registry/views";
 import { buildPathMetadata } from "@/lib/seo";
 import { breadcrumbsLd, breedPageLd, faqLd, graph } from "@/lib/jsonld";
 import { JsonLd } from "@/components/JsonLd";
@@ -58,7 +59,12 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[
   }
   const b = r.breed;
   // Share image: a branded card with the breed's AI portrait (/og/<species>/<breed>.<locale>.png).
-  const image = { path: `/og/${sp.id}/${b.id}.${r.locale}.png`, width: 1200, height: 630, alt: `${b.name[r.locale]} — ${c.page.og.lead}` };
+  // `?v=` changes with what the card shows, so social networks (which cache by URL) refetch it.
+  const version = createHash("sha256")
+    .update(JSON.stringify([b.name[r.locale], b.availability, b.facets, b.portrait ? portraitSrc(b, b.portrait) : null, breedUpdated(b), c.page.og]))
+    .digest("hex")
+    .slice(0, 10);
+  const image = { path: `/og/${sp.id}/${b.id}.${r.locale}.png?v=${version}`, width: 1200, height: 630, alt: `${b.name[r.locale]} — ${c.page.og.lead}` };
   return buildPathMetadata({
     locale: r.locale,
     paths: each((l) => breedHref(l, b)),

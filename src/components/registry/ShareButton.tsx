@@ -89,6 +89,8 @@ export function ShareButton({ url, text, subject, strings }: { url: string; text
   );
   const root = useRef<HTMLDivElement>(null);
   const input = useRef<HTMLInputElement>(null);
+  const trigger = useRef<HTMLButtonElement>(null);
+  const copyBtn = useRef<HTMLButtonElement>(null);
   const panelId = useId();
 
   useEffect(() => {
@@ -97,8 +99,13 @@ export function ShareButton({ url, text, subject, strings }: { url: string; text
       if (root.current && !root.current.contains(e.target as Node)) setOpen(false);
     };
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") {
+        setOpen(false);
+        trigger.current?.focus();
+      }
     };
+    // Focus moves into the panel (announced as a dialog) on open.
+    copyBtn.current?.focus();
     document.addEventListener("pointerdown", onDown);
     document.addEventListener("keydown", onKey);
     return () => {
@@ -108,12 +115,17 @@ export function ShareButton({ url, text, subject, strings }: { url: string; text
   }, [open]);
 
   async function copy() {
+    let ok = false;
     try {
       await navigator.clipboard.writeText(url);
+      ok = true;
     } catch {
+      // Older / insecure contexts: select the link and try the legacy command; if that fails
+      // too, the selected link stays for a manual copy.
       input.current?.select();
-      document.execCommand?.("copy");
+      ok = typeof document.execCommand === "function" && document.execCommand("copy");
     }
+    if (!ok) return;
     setCopied(true);
     window.setTimeout(() => setCopied(false), 1800);
   }
@@ -129,6 +141,7 @@ export function ShareButton({ url, text, subject, strings }: { url: string; text
   return (
     <div ref={root} className="relative inline-flex">
       <button
+        ref={trigger}
         type="button"
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
@@ -161,13 +174,20 @@ export function ShareButton({ url, text, subject, strings }: { url: string; text
               onFocus={(e) => e.currentTarget.select()}
               className="min-w-0 flex-1 bg-fog/60 px-3 py-2.5 text-[14px] text-graphite outline-none"
             />
-            <button type="button" onClick={copy} className="shrink-0 bg-graphite px-4 text-[14px] font-semibold text-mint transition hover:bg-graphite-3" aria-live="polite">
+            <button ref={copyBtn} type="button" onClick={copy} className="shrink-0 bg-graphite px-4 text-[14px] font-semibold text-mint transition hover:bg-graphite-3">
               {copied ? strings.copied : strings.copy}
             </button>
           </div>
+          <span role="status" className="sr-only">
+            {copied ? strings.copied : ""}
+          </span>
           <div className="mt-4 flex flex-wrap gap-2.5">
             {NETWORKS.map((n) => (
-              <a key={n.name} href={n.href(url, text, subject)} target="_blank" rel="noopener noreferrer" className={tile} aria-label={strings.on.replace("{network}", n.name)} title={n.name}>
+              <a
+                key={n.name}
+                href={n.href(url, text, subject)}
+                {...(n.name === "E-mail" ? {} : { target: "_blank", rel: "noopener noreferrer" })}
+                className={tile} aria-label={strings.on.replace("{network}", n.name)} title={n.name}>
                 {n.icon}
               </a>
             ))}
