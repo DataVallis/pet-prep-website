@@ -282,6 +282,7 @@ const sl: RegistryCopy = {
       dna_fviid: "Test DNK za pomanjkanje faktorja VII (FVIID)",
       dna_mls: "Test DNK za Musladin-Luekejev sindrom (MLS)",
       dna_vwd1: "Test DNK za von Willebrandovo bolezen tipa 1 (vWD1)",
+      dna_dings2: "Test DNK za »plesočo bolezen dobermanov« (DINGS2), bolezen živcev in mišic",
       dna_hcm_mc: "Test DNK za hipertrofično kardiomiopatijo (MC HCM)",
       dna_sma: "Test DNK za spinalno mišično atrofijo (SMA)",
       dna_pk_def: "Test DNK za pomanjkanje piruvat-kinaze (PK def)",
@@ -342,6 +343,10 @@ const sl: RegistryCopy = {
     windpipe_collapse: "Pri pasmi se lahko pojavi kolaps sapnika — sapnik izgubi trdnost, kar lahko povzroči šibkost in kolaps.",
     eye_problems_pra_lens_dry_eye: "Pri pasmi se pojavljajo težave z očmi, na primer progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, izpah očesne leče in suho oko.",
     cataracts_lens_luxation: "Pri pasmi se lahko pojavijo težave z očmi, na primer siva mrena, ki zamegli lečo, in izpah leče.",
+    wobbler_syndrome: "Pri pasmi se lahko pojavi sindrom wobbler: nestabilna vratna vretenca pritiskajo na hrbtenjačo in oslabijo zadnje noge.",
+    eye_phpv: "Pri pasmi se lahko pojavi prirojena okvara očesa (persistentni hiperplastični primarni steklovinec, PHPV); vzrediteljem priporočajo pregled oči staršev.",
+    certain_cancers: "Pri pasmi se lahko pojavijo nekatere vrste raka.",
+    hypothyroidism: "Pri pasmi se lahko pojavi premalo delujoča ščitnica (hipotiroza), ki vpliva na težo, kožo in energijo.",
     eyelid_problems: "Pri pasmi se lahko pojavijo težave z vekami: navznoter (entropij) ali navzven (ektropij) zavihane veke in »češnjevo oko«, ko izstopi tretja veka.",
     pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
   },
@@ -602,6 +607,14 @@ const sl: RegistryCopy = {
         "Standard ga opisuje kot pogumnega, delavnega, odprtega in prijaznega. The Royal Kennel Club priporoča do eno uro gibanja na dan in česanje večkrat na teden; PDSA ga opisuje kot prijaznega, veselega in igrivega psa, ki rad ugaja in se razmeroma lahko uči, a lahko grize za pete otrok, ki tečejo, zato pomagata socializacija z otroki in učenje od malega. The Royal Kennel Club navaja življenjsko dobo več kot 12 let in vzrediteljem priporoča pregled kolkov staršev.",
       ],
       sources: ["S202", "S204", "S206"],
+    },
+    dobermann: {
+      aka: "dobermann, Doberman Pinscher",
+      text: [
+        "Doberman je nemški spremljevalni, zaščitni in delovni pes srednje velikosti, močan in mišičast, z elegantnimi linijami in ponosno držo. Standard FCI opisuje kratko, trdo in gosto dlako, ki se tesno in gladko prilega telesu, v črni ali rjavi barvi z jasno omejenimi rjasto rdečimi oznakami; bele lise niso dovoljene. Ušesa in rep po standardu FCI ostanejo naravni in PetPrep psa vedno pokaže z naravnimi ušesi in repom.",
+        "Standard ga opisuje kot prijaznega, mirnega in zelo predanega družini. The Royal Kennel Club pravi, da je zaradi zvestobe in ubogljivosti odličen družinski pes, ter priporoča več kot dve uri gibanja na dan in česanje enkrat na teden. PDSA dodaja, da je zelo energičen, da potrebuje veliko miselnega in telesnega gibanja ter zgodnjo socializacijo in da ga zaradi velikosti in moči ne priporočajo družinam z majhnimi otroki ali začetnikom. The Royal Kennel Club navaja življenjsko dobo več kot 10 let.",
+      ],
+      sources: ["S207", "S209", "S211"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
