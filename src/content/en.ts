@@ -211,7 +211,7 @@ const en: Dictionary = {
         },
       ],
       how: "How to start: create an account as a parent, add yourself as the carer profile and log in with the 6-digit code — on the same phone or another one.",
-      note: "Available today: the mixed breed (free) and the [Border Collie](breed:border_collie) (in the 12-week challenge).",
+      note: "Available today: the free mixed-breed dog and domestic cat, and every dog and cat breed in the [animal register](page:animals) in the 12-week challenge.",
       link: "How to use PetPrep on your own",
     },
     after: {
@@ -230,12 +230,12 @@ const en: Dictionary = {
       planned: "In development",
     },
     species: {
-      title: "Dogs today. More species to come.",
+      title: "Dogs and cats today. More species to come.",
       text: "Built for families worldwide, in their own language.",
       chips: [
         { label: "Dog · available", active: true, link: "species:dog" },
-        { label: "Border Collie · in the challenge", link: "breed:border_collie" },
-        { label: "Cat · next", link: "species:cat" },
+        { label: "Cat · available", active: true, link: "species:cat" },
+        { label: "Dog and cat breeds · in the challenge", link: "page:animals" },
         { label: "More species · planned", link: "page:animals" },
       ],
     },
@@ -463,7 +463,7 @@ const en: Dictionary = {
             { q: "Can siblings share a pet?", a: "Yes. Each child signs their own contract, every action is credited to whoever did it and each child gets their own fair Care Score." },
             { q: "What about school and bedtime?", a: "Set quiet hours. The pet slows down, nothing is sent and meals that fall entirely in quiet hours are handled by you." },
             { q: "Is it scary for children?", a: "No. Consequences are real but gentle: the pet goes to the vet or the shelter, never anything graphic, and there is always a fresh start." },
-            { q: "Which animals are available?", a: "[Dogs](species:dog) today: a free mixed breed and the [Border Collie](breed:border_collie). [Cats](species:cat) are next, more species are planned. The [animal register](page:animals) lists every species and breed with sourced needs." },
+            { q: "Which animals are available?", a: "[Dogs](species:dog) and [cats](species:cat) today: a free mixed-breed dog and domestic cat, and in the 12-week challenge every breed in the [animal register](page:animals), which also lists their sourced needs. More species are planned." },
             { q: "Which languages?", a: "English and Slovenian today. More languages are coming as PetPrep launches in new countries." },
             { q: "What happens after we get a real pet?", a: "PetPrep can become an AI assistant for your real pet. This part is in development." },
           ],
