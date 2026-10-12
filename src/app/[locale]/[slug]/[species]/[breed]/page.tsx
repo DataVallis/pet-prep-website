@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import { compareSlug, isLocale, locales, pageSlugs, pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { breedBySlug, breedsOf, registry, speciesBySlug, type Breed, type Species } from "@/content/registry/registry";
-import { breedHref, breedUpdated, buildBreedView, compareHref, formatDay, getRegistryCopy, portraitSrc, qaText, speciesHref } from "@/lib/registry/views";
+import { breedHref, breedMetaDescription, breedMetaTitle, breedUpdated, buildBreedView, compareHref, formatDay, getRegistryCopy, portraitSrc, qaText, speciesHref } from "@/lib/registry/views";
 import { buildPathMetadata } from "@/lib/seo";
 import { breadcrumbsLd, breedPageLd, faqLd, graph } from "@/lib/jsonld";
 import { JsonLd } from "@/components/JsonLd";
@@ -68,8 +68,8 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[
   return buildPathMetadata({
     locale: r.locale,
     paths: each((l) => breedHref(l, b)),
-    title: c.page.metaTitle(b.name[r.locale], sp.name[r.locale].one, sp.id),
-    description: c.page.metaDescription(b.name[r.locale], sp.name[r.locale].one),
+    title: breedMetaTitle(r.locale, b),
+    description: breedMetaDescription(r.locale, b),
     image,
   });
 }
@@ -146,8 +146,8 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
     breedPageLd({
       locale,
       path: v.href,
-      title: c.page.metaTitle(v.name, species.name[locale].one, species.id),
-      description: c.page.metaDescription(v.name, species.name[locale].one),
+      title: breedMetaTitle(locale, r.breed),
+      description: breedMetaDescription(locale, r.breed),
       breedName: v.name,
       alternateNames: [r.breed.name[other], ...r.breed.synonyms.en, ...r.breed.synonyms.sl].filter(
         (n, i, all) => n && n.toLowerCase() !== v.name.toLowerCase() && all.findIndex((x) => x.toLowerCase() === n.toLowerCase()) === i,

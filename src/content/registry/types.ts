@@ -102,8 +102,12 @@ export type RegistryCopy = {
   page: {
     eyebrow: string;
     /** Search-intent title per species ("Labrador Retriever: exercise, size, lifespan & care | PetPrep"). */
-    metaTitle: (name: string, speciesOne: string, speciesId: string) => string;
+    metaTitle: (name: string, speciesOne: string, speciesId: string, hasIntro: boolean) => string;
     metaDescription: (name: string, speciesOne: string) => string;
+    /** Search snippet built from the breed's own sourced facts ("teža odrasle živali: …; življenjska doba: …"). */
+    metaFacts: (name: string, facts: string[]) => string;
+    /** Short labels in the search snippet, per fact field. */
+    metaLabels: Record<string, string>;
     suitabilityTitle: string;
     suitabilityNote: string;
     suitabilityNone: string;

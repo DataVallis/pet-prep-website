@@ -352,12 +352,15 @@ const sl: RegistryCopy = {
   },
   page: {
     eyebrow: "Register živali",
-    metaTitle: (name, one, species) =>
+    // Search terms people use ("ragdoll mačka", "značaj"); "značaj" only when the page has an intro about it.
+    metaTitle: (name, one, species, hasIntro) =>
       species === "dog"
-        ? `${name}: gibanje, velikost, življenjska doba in nega | PetPrep`
+        ? `${name}: ${hasIntro ? "značaj, " : ""}gibanje, velikost in nega | PetPrep`
         : species === "cat"
-          ? `${name}: velikost, življenjska doba in nega | PetPrep`
+          ? `${/mačka/i.test(name) ? name : `${name} mačka`}: ${hasIntro ? "značaj, " : ""}nega, velikost in življenjska doba | PetPrep`
           : `${name} (${one.toLowerCase()}): potrebe, življenjska doba in nega | PetPrep`,
+    metaFacts: (name, facts) => `${name}: ${facts.join("; ")}. Viri, zdravje in nasveti za nakup.`,
+    metaLabels: { weight: "teža", exercise: "gibanje", lifespan: "življenjska doba" },
     metaDescription: (name) =>
       `${name}: potrebe pasme iz virov — gibanje, nega, obroki, velikost, življenjska doba in za koga je primerna — ter kako jo simulira PetPrep.`,
     suitabilityTitle: "Za koga je primerna",

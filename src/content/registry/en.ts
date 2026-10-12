@@ -335,12 +335,15 @@ const en: RegistryCopy = {
   },
   page: {
     eyebrow: "Animal register",
-    metaTitle: (name, one, species) =>
+    // Search terms people use ("ragdoll cat", "temperament"); "temperament" only when the page has an intro about it.
+    metaTitle: (name, one, species, hasIntro) =>
       species === "dog"
-        ? `${name}: exercise, size, lifespan & care | PetPrep`
+        ? `${name}: ${hasIntro ? "temperament, " : ""}exercise, size & care | PetPrep`
         : species === "cat"
-          ? `${name}: size, lifespan, grooming & care | PetPrep`
+          ? `${/\bcat\b/i.test(name) ? name : `${name} cat`}: ${hasIntro ? "temperament, " : ""}grooming, size & lifespan | PetPrep`
           : `${name} (${one.toLowerCase()}): needs, lifespan & care | PetPrep`,
+    metaFacts: (name, facts) => `${name}: ${facts.join("; ")}. Sources, health and buying tips.`,
+    metaLabels: { weight: "weight", exercise: "exercise", lifespan: "lifespan" },
     metaDescription: (name, one) =>
       `${name}: sourced needs of this ${one.toLowerCase()} breed — exercise, grooming, meals, size, lifespan, who it suits — and how PetPrep simulates it.`,
     suitabilityTitle: "Who it suits",
