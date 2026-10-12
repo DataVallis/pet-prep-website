@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy" };
 
 const en: RegistryCopy = {
   hub: {
@@ -324,6 +324,7 @@ const en: RegistryCopy = {
     dental_disease_tooth_brushing: "A large UK study names dental disease as by far the most common problem in the breed, and puppy teeth that do not fall out are also common, so owners are encouraged to care for the dog's teeth every day, for example by brushing them.",
     windpipe_collapse: "Tracheal collapse, where the windpipe loses its stiffness and can cause weakness and collapse, can occur in the breed.",
     eye_problems_pra_lens_dry_eye: "Eye problems occur in the breed, such as progressive retinal atrophy, which can slowly lead to blindness, a dislocated lens (lens luxation) and dry eye.",
+    eyelid_problems: "Eyelid problems can occur in the breed: eyelids that turn inwards (entropion) or outwards (ectropion), and cherry eye, where the third eyelid pops out.",
     pra_pk_def: "Two inherited conditions occur in the breed: progressive retinal atrophy, an eye disease that can lead to blindness, and pyruvate kinase deficiency, a blood disorder; DNA tests of the parents let breeders avoid them.",
   },
   page: {
@@ -567,6 +568,14 @@ const en: RegistryCopy = {
         "Its standard calls it alert, intelligent and spirited, with an even disposition. The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming every day; the PDSA adds that it enjoys running, fetching and playing games, can be quite stubborn to train, and is better suited to families with older children because its bones are very fragile. A large UK study found dental disease to be the most common problem in the breed, encourages daily care of the teeth such as tooth brushing, and found a median age at death of 13.56 years.",
       ],
       sources: ["S190", "S192", "S194", "S195", "S196"],
+    },
+    cane_corso: {
+      aka: "Cane Corso Italiano, Italian Corso Dog",
+      text: [
+        "The Cane Corso is a medium to large Italian molosser, a robust and sturdy dog with some elegance that is slightly longer than tall. Its standard describes a short, shiny, very dense coat in black, shades of grey, fawn or red with a dark mask, dark wheat, or brindle; large white patches are not allowed. Under the current FCI standard the ears are left uncropped and the tail is natural — and in the UK cropping and docking are illegal — so PetPrep always shows the dog with natural ears and tail.",
+        "Its standard calls it a guardian of property, family and livestock, extremely agile and responsive. The PDSA says it is sociable and loving with its owners, needs around two hours of exercise a day and things to do, because it hates being bored, and is better suited to experienced owners because of its size. It does not recommend the breed for homes with small children, who could be knocked over; it suits adult-only homes or families with older children. A weekly brush is enough, but it sheds and is known to drool. The PDSA gives its average lifespan as under ten years.",
+      ],
+      sources: ["S197", "S199"],
     },
     british_shorthair: {
       aka: "British Blue",
