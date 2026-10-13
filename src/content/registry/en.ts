@@ -266,6 +266,7 @@ const en: RegistryCopy = {
       dna_mls: "DNA test for Musladin-Lueke syndrome (MLS)",
       dna_vwd1: "DNA test for von Willebrand disease type 1 (vWD1)",
       dna_mac: "DNA test for susceptibility to Mycobacterium avium complex infection (MAC)",
+      dna_imgd: "DNA test for inherited myopathy of Great Danes (IMGD), a muscle-wasting disease",
       dna_hcm_mc: "DNA test for hypertrophic cardiomyopathy (MC HCM)",
       dna_sma: "DNA test for spinal muscular atrophy (SMA)",
       dna_pk_def: "DNA test for pyruvate kinase deficiency (PK def)",
@@ -636,6 +637,14 @@ const en: RegistryCopy = {
         "The FCI describes it as intelligent, active and alert, friendly and independent. The Royal Kennel Club recommends up to an hour of exercise a day and grooming every day, and lists a flat as a suitable home. The PDSA says Shih Tzus can be good-natured family pets if they have had the right socialisation and training, calls them an ideal pet for first-time owners, advises always supervising them with children, and recommends a daily brush plus a clip by a professional groomer every six to eight weeks for most pet dogs. The Royal Kennel Club gives its lifespan as over 10 years.",
       ],
       sources: ["S229", "S231", "S233"],
+    },
+    great_dane: {
+      aka: "Deutsche Dogge",
+      text: [
+        "The Great Dane is a German giant: the FCI standard says it combines a large, powerful, well-constructed body with pride, strength and elegance, with a long, narrow head, ears that hang naturally and a very short, smooth, glossy coat. The standards list fawn and brindle — ideally with a black mask — as well as harlequin, black and blue; PetPrep shows only colours both the FCI and The Royal Kennel Club list, never merle or mantle, and always draws the dog with natural ears and tail and tight eyelids, because The Royal Kennel Club asks judges to watch for eyelids that turn inwards or outwards and for poor hind legs.",
+        "The FCI calls it friendly, loving and devoted to its owners, though it might be reserved towards strangers. The Royal Kennel Club says that despite its size it makes a wonderful family dog, and recommends more than two hours of exercise a day, a large house and garden, and grooming once a week. The PDSA says Great Danes are known for drooling, have a fairly strong prey drive, and are not recommended for homes with younger children because of their size and strength; it advises leaving a gap between eating and exercise to help prevent bloat. The Royal Kennel Club gives its lifespan as under 10 years.",
+      ],
+      sources: ["S239", "S241", "S243"],
     },
     british_shorthair: {
       aka: "British Blue",

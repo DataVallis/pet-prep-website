@@ -283,6 +283,7 @@ const sl: RegistryCopy = {
       dna_mls: "Test DNK za Musladin-Luekejev sindrom (MLS)",
       dna_vwd1: "Test DNK za von Willebrandovo bolezen tipa 1 (vWD1)",
       dna_mac: "Test DNK za dovzetnost za okužbo z bakterijami Mycobacterium avium (MAC)",
+      dna_imgd: "Test DNK za dedno miopatijo nemških dog (IMGD), bolezen, pri kateri mišice slabijo",
       dna_dings2: "Test DNK za »plesočo bolezen dobermanov« (DINGS2), bolezen živcev in mišic",
       dna_hcm_mc: "Test DNK za hipertrofično kardiomiopatijo (MC HCM)",
       dna_sma: "Test DNK za spinalno mišično atrofijo (SMA)",
@@ -653,6 +654,14 @@ const sl: RegistryCopy = {
         "FCI ga opisuje kot inteligentnega, dejavnega in budnega, prijaznega in samostojnega. The Royal Kennel Club priporoča do eno uro gibanja na dan in vsakodnevno česanje ter navaja, da je primeren tudi za stanovanje. PDSA pravi, da je shih tzu lahko dobrodušen družinski pes, če ima pravo socializacijo in šolanje, da je odlična izbira za začetnike in da ga moramo z otroki vedno nadzorovati; svetuje vsakodnevno česanje in pri večini psov striženje pri profesionalnem frizerju na šest do osem tednov. The Royal Kennel Club navaja življenjsko dobo več kot 10 let.",
       ],
       sources: ["S229", "S231", "S233"],
+    },
+    great_dane: {
+      aka: "doga, deutsche dogge",
+      text: [
+        "Nemška doga je nemški velikan: standard FCI pravi, da združuje veliko, močno in skladno grajeno telo s ponosom, močjo in eleganco, z dolgo, ozko glavo, naravno visečimi ušesi in zelo kratko, gladko, svetlečo dlako. Standarda navajata rumeno in tigrasto barvo — najraje s črno masko — ter harlekin, črno in modro; PetPrep pokaže samo barve, ki jih navajata FCI in The Royal Kennel Club, nikoli merle ali mantle, in psa vedno nariše z naravnimi ušesi in repom ter tesno prilegajočimi vekami, ker The Royal Kennel Club sodnikom naroča, naj pazijo na veke, zavihane navznoter ali navzven, in na slabo grajene zadnje noge.",
+        "FCI jo opisuje kot prijazno, ljubečo in vdano lastnikom, do tujcev pa je lahko zadržana. The Royal Kennel Club pravi, da je kljub velikosti čudovit družinski pes, in priporoča več kot dve uri gibanja na dan, veliko hišo z vrtom in česanje enkrat na teden. PDSA pravi, da se nemške doge rade slinijo, da imajo precej močan lovski nagon in da jih zaradi velikosti in moči ne priporoča v domu z mlajšimi otroki; svetuje premor med obrokom in gibanjem, da se prepreči zasuk želodca. The Royal Kennel Club navaja življenjsko dobo manj kot 10 let.",
+      ],
+      sources: ["S239", "S241", "S243"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
