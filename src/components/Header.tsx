@@ -3,6 +3,7 @@ import { pathFor, type Locale, type PageKey } from "@/i18n/config";
 import type { Dictionary } from "@/content/types";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { PrimaryCta } from "./Cta";
+import { MobileMenu } from "./MobileMenu";
 
 const navKeys: PageKey[] = ["howItWorks", "parents", "animals", "afterAdoption", "pricing"];
 
@@ -32,8 +33,9 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           <PrimaryCta locale={locale} dict={dict} className="!min-h-10 !px-4 !text-[15px]" />
         </div>
 
-        {/* Mobile menu: works without JavaScript */}
-        <details className="group relative ml-auto lg:hidden">
+        {/* Mobile menu: opens without JavaScript; with JS it closes on navigation */}
+        <MobileMenu
+          summary={
           <summary className="flex h-11 w-11 cursor-pointer list-none items-center justify-center rounded-xl border border-line bg-white [&::-webkit-details-marker]:hidden" aria-label={dict.nav.menu}>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true" className="group-open:hidden">
               <path d="M4 7h16M4 12h16M4 17h16" />
@@ -42,7 +44,8 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               <path d="M6 6l12 12M18 6 6 18" />
             </svg>
           </summary>
-          <div className="absolute right-0 top-14 w-[min(88vw,340px)] rounded-[22px] border border-line bg-white p-5 shadow-xl">
+          }
+        >
             <nav aria-label="Mobile" className="flex flex-col">
               {(["howItWorks", "parents", "animals", "afterAdoption", "pricing", "faq", "contact"] as PageKey[]).map((k) => (
                 <Link key={k} href={pathFor(locale, k)} className="border-b border-line py-3 text-[17px] font-semibold last:border-0">
@@ -54,8 +57,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               <LanguageSwitcher label={dict.lang.label} />
               <PrimaryCta locale={locale} dict={dict} />
             </div>
-          </div>
-        </details>
+        </MobileMenu>
       </div>
     </header>
   );
