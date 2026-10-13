@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -367,6 +367,11 @@ const sl: RegistryCopy = {
     elbow_dysplasia_arthritis: "Pri pasmi se lahko pojavi displazija komolca, slabo razvit komolčni sklep, ki sčasoma lahko vodi v artritis.",
     cm_sm_screening: "Pri pasmi se lahko pojavita Chiarijeva malformacija in siringomielija, boleča bolezen z votlinicami, polnimi tekočine, v hrbtenjači ob možganih; vzrediteljem svetujejo pregled staršev (v Združenem kraljestvu: shema BVA/KC).",
     prominent_eyes_injury_dry_eye: "Izbuljene oči se lažje poškodujejo, na njih pa lahko nastanejo razjede in izsušenost; pri pasmi se pojavljata tudi suho oko in češnjevo oko (izpad žleze tretje veke).",
+    legg_perthes: "Pri pasmi se lahko pojavi Legg-Perthesova bolezen, boleče stanje, pri katerem kolčni sklep odmre in razpade.",
+    hydrocephalus: "Pri pasmi se lahko pojavi hidrocefalus, kopičenje tekočine okoli možganov.",
+    eye_problems_dry_eye_entropion_lens_luxation: "Pri pasmi se pojavljajo težave z očmi, na primer suho oko, navznoter zavihane veke (entropij) in izpah leče; na voljo je pregled oči.",
+    heart_valve_screening: "Pri pasmi se lahko pojavi bolezen srca; s pregledom srca lahko pred parjenjem preverijo, ali imajo starši težave s srčnimi zaklopkami.",
+    dental_weight_problems: "Velika britanska raziskava navaja bolezni zob in prekomerno težo kot posebej pogosti težavi pri pasmi — lastniki ju lahko preprečujejo; pojavljajo se tudi prenatrpani zobje in mlečni zobje, ki ne izpadejo.",
   },
   page: {
     eyebrow: "Register živali",
@@ -692,6 +697,14 @@ const sl: RegistryCopy = {
         "PetMD pravi, da ima veliko energije in potrebuje vsaj eno uro gibanja na dan, najbolje dve, ter naloge, ki mu zaposlijo glavo, in da ga je treba česati nekajkrat na teden; AKC pravi, da je večji del leta dovolj česanje enkrat na teden, v času menjave dlake pa vsak dan. Po AKC je lahko odličen družinski pes, če je vzgojen in zgodaj socializiran, z otroki se navadno dobro razume, a jih lahko poskuša »pasti«; PetMD dodaja, da ga navezanost na družino lahko pripelje do ločitvene tesnobe, ko ostane sam. PetMD navaja življenjsko dobo 12 do 13 let.",
       ],
       sources: ["S265", "S267", "S269"],
+    },
+    chihuahua: {
+      aka: "chihuahua, civava",
+      text: [
+        "Čivava izvira iz Mehike. Standard The Kennel Club opisuje majhnega, drobnega in čvrstega psa predrznega izraza ter veselega, živahnega in inteligentnega značaja, z zaobljeno lobanjo v obliki jabolka, zmerno kratkim, rahlo koničastim gobčkom, velikimi okroglimi očmi, ki ne izstopajo, velikimi ušesi in srpastim repom; dovoljena je vsaka barva ali kombinacija barv, nikoli pa merle, zaželena teža je 1,8–2,7 kg. The Royal Kennel Club vodi kratkodlako in dolgodlako čivavo kot dve pasmi; PetPrep riše kratkodlako čivavo rumenorjave barve z zmerno glavo.",
+        "The Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje enkrat na teden, primerna je za stanovanje, življenjska doba pa je več kot 12 let. PDSA piše, da so čivave tako majhne in lahke, da jih otroci radi dvigujejo, česar same ne marajo, zato so primernejše za družine z nekoliko starejšimi otroki. PDSA dodaja, da imajo kot psi spremljevalci radi družbo in potrebujejo nekoga doma ves čas, ter da jih je treba že od mladosti socializirati z veliko različnimi ljudmi, izkušnjami in kraji.",
+      ],
+      sources: ["S272", "S274", "S275", "S277"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",

@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico" };
 
 const en: RegistryCopy = {
   hub: {
@@ -350,6 +350,11 @@ const en: RegistryCopy = {
     elbow_dysplasia_arthritis: "Elbow dysplasia, a poorly developed elbow joint that can eventually lead to arthritis, can occur in the breed.",
     cm_sm_screening: "Chiari-like malformation and syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, can occur in the breed; breeders are advised to screen the parents (UK: BVA/KC scheme).",
     prominent_eyes_injury_dry_eye: "Prominent eyes are more easily injured and can develop ulcers and dryness; dry eye and cherry eye also occur in the breed.",
+    legg_perthes: "Legg-Perthes disease, a painful condition in which the hip joint dies and crumbles, can occur in the breed.",
+    hydrocephalus: "Hydrocephalus, a build-up of fluid around the brain, can occur in the breed.",
+    eye_problems_dry_eye_entropion_lens_luxation: "Eye problems occur in the breed, such as dry eye, eyelids that roll inwards (entropion) and a dislocated lens (lens luxation); eye testing is available.",
+    heart_valve_screening: "Heart disease can occur in the breed; heart scans can check the parents for heart valve problems before breeding.",
+    dental_weight_problems: "A large UK study names dental disease and being overweight as particularly common problems in the breed — problems owners can help prevent; crowded teeth and puppy teeth that do not fall out also occur.",
   },
   page: {
     eyebrow: "Animal register",
@@ -675,6 +680,14 @@ const en: RegistryCopy = {
         "PetMD says it has a lot of energy and needs at least one hour of exercise every day, ideally two, along with jobs that keep its mind busy, and that it should be brushed a couple of times a week; the AKC says weekly brushing is enough for most of the year, with daily brushing in the shedding season. The AKC says it can make a great family dog with obedience training and early socialisation, and tends to be good with children but may try to herd them; PetMD adds that its devotion to its family can lead to separation anxiety when it is left alone. PetMD gives its lifespan as 12 to 13 years.",
       ],
       sources: ["S265", "S267", "S269"],
+    },
+    chihuahua: {
+      aka: "Chi, Chihuahueño, Smooth Coat Chihuahua",
+      text: [
+        "The Chihuahua comes from Mexico. The Kennel Club standard describes a small, dainty, compact dog with a saucy expression and a gay, spirited and intelligent temperament, a well-rounded \"apple dome\" skull, a moderately short, slightly pointed muzzle, large round eyes that do not protrude, large ears and a sickle tail; any colour or mixture of colours is allowed, but never merle, and the preferred weight is 1.8–2.7 kg. The Royal Kennel Club lists the smooth-coated and the long-coated Chihuahua as two breeds; PetPrep draws the smooth coat in fawn, with a moderate head.",
+        "The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming once a week, suits it to a flat or apartment and gives its lifespan as over 12 years. The PDSA says Chihuahuas are so small and light that children are tempted to pick them up, which they are unlikely to enjoy, so they are better suited to families with slightly older children. The PDSA adds that, as companion dogs, they love company and need someone around the home all the time, and that they should be socialised from a young age with lots of different people, experiences and places.",
+      ],
+      sources: ["S272", "S274", "S275", "S277"],
     },
     british_shorthair: {
       aka: "British Blue",
