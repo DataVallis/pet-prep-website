@@ -282,6 +282,7 @@ const sl: RegistryCopy = {
       dna_fviid: "Test DNK za pomanjkanje faktorja VII (FVIID)",
       dna_mls: "Test DNK za Musladin-Luekejev sindrom (MLS)",
       dna_vwd1: "Test DNK za von Willebrandovo bolezen tipa 1 (vWD1)",
+      dna_mac: "Test DNK za dovzetnost za okužbo z bakterijami Mycobacterium avium (MAC)",
       dna_dings2: "Test DNK za »plesočo bolezen dobermanov« (DINGS2), bolezen živcev in mišic",
       dna_hcm_mc: "Test DNK za hipertrofično kardiomiopatijo (MC HCM)",
       dna_sma: "Test DNK za spinalno mišično atrofijo (SMA)",
@@ -350,6 +351,10 @@ const sl: RegistryCopy = {
     corneal_ulcers: "Zaradi oblike lobanje in izbočenih oči so pogostejše težave z očmi, kot je razjeda roženice; očesni pregled je na voljo.",
     skin_folds_allergies: "Pojavijo se lahko kožne težave, kot so alergije, bradavice, kožni izrastki in vnete kožne gube na obrazu (dermatitis kožnih gub); gube na obrazu naj bodo čiste in suhe.",
     heart_cardiomyopathy_aortic_stenosis: "Pri pasmi se lahko pojavijo bolezni srca, kot sta kardiomiopatija in zožitev aorte (aortna stenoza).",
+    dental_disease_care: "Velika britanska raziskava navaja bolezen zob kot najpogostejšo težavo pasme, zato lastnikom svetuje, naj negi zob namenijo posebno pozornost.",
+    bladder_stones: "Pri pasmi se lahko pojavijo kamni v mehurju, skupki mineralov, ki nastanejo v mehurju in urinu.",
+    eye_problems_pra_cataracts_dry_eye: "Pri pasmi se pojavljajo težave z očmi, na primer progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, siva mrena in suho oko; očesni pregled je na voljo.",
+    skin_comedo_allergy: "Pojavijo se lahko kožne težave, kot sta komedonski sindrom šnavcerjev (vrsta vnetja dlačnih mešičkov) in kožne alergije (atopija), ki povzročajo srbenje.",
     hypothyroidism: "Pri pasmi se lahko pojavi premalo delujoča ščitnica (hipotiroza), ki vpliva na težo, kožo in energijo.",
     eyelid_problems: "Pri pasmi se lahko pojavijo težave z vekami: navznoter (entropij) ali navzven (ektropij) zavihane veke in »češnjevo oko«, ko izstopi tretja veka.",
     pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
@@ -630,6 +635,14 @@ const sl: RegistryCopy = {
         "Standard ga opisuje kot uravnovešenega, vodljivega, neustrašnega in samozavestnega. The Royal Kennel Club pravi, da je zelo priljubljen družinski spremljevalec, ter priporoča več kot dve uri gibanja na dan in česanje enkrat na teden. PDSA ga opisuje kot zelo energičnega in igrivega psa, ki ima rad družbo ljudi in lahko razvije ločitveno tesnobo, če ostaja sam, ima zelo močan lovski nagon, zaradi velikosti in živahnosti pa ga ne priporočajo za dom z mlajšimi otroki ali za začetnike; nekateri boksarji s krajšim gobčkom imajo lahko resne težave z dihanjem. The Royal Kennel Club navaja življenjsko dobo več kot 10 let.",
       ],
       sources: ["S215", "S217", "S219"],
+    },
+    miniature_schnauzer: {
+      aka: "Zwergschnauzer, mali šnavcer",
+      text: [
+        "Pritlikavi šnavcer je majhen nemški družabni pes: močan, čokat in skoraj kvadraten, z ostro, žimasto in gosto dlako, košatimi obrvmi in brado. Standard FCI dovoljuje barve poper in sol, črno s srebrno, čisto črno in čisto belo; PetPrep pokaže prve tri. Rep so nekoč običajno kupirali, ušesa včasih tudi; standard FCI zahteva naraven rep in viseča ušesa, PetPrep pa psa vedno pokaže z naravnimi ušesi in repom.",
+        "FCI ga uvršča med hišne in družabne pse, The Royal Kennel Club pa pravi, da je kot spremljevalec zelo priljubljen. The Royal Kennel Club priporoča do eno uro gibanja na dan in česanje večkrat na teden ter navaja, da mu dlaka ne izpada. PDSA ga opisuje kot igrivega in radovednega psa, ki se lahko dobro razume z otroki, če jih spozna zgodaj, je pri šolanju lahko trmast, česati pa ga je treba dva- do trikrat na teden in ga občasno dati ostriči ali trimati profesionalnemu frizerju. The Royal Kennel Club navaja življenjsko dobo več kot 10 let.",
+      ],
+      sources: ["S221", "S223", "S226"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
