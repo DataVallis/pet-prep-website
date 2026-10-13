@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)" };
 
 const en: RegistryCopy = {
   hub: {
@@ -338,6 +338,8 @@ const en: RegistryCopy = {
     bladder_stones: "Bladder stones, collections of minerals that form in the bladder and urine, can occur in the breed.",
     eye_problems_pra_cataracts_dry_eye: "Eye problems occur in the breed, such as progressive retinal atrophy, which can slowly lead to blindness, cataracts and dry eye; eye testing is available.",
     skin_comedo_allergy: "Skin problems can occur, such as Schnauzer comedo syndrome (a type of inflamed hair follicles) and skin allergies (atopy) that cause itching.",
+    shorter_face_boas: "A brachycephalic (short-faced) breed: the shorter face can cause serious breathing problems (brachycephalic obstructive airway syndrome, BOAS).",
+    eye_problems_dry_eye_cataracts_pra_retina: "Eye problems occur in the breed, such as dry eye, cataracts, progressive retinal atrophy, which can slowly lead to blindness, and retinal detachment.",
     hypothyroidism: "An underactive thyroid (hypothyroidism), which can affect weight, skin and energy levels, can occur in the breed.",
     eyelid_problems: "Eyelid problems can occur in the breed: eyelids that turn inwards (entropion) or outwards (ectropion), and cherry eye, where the third eyelid pops out.",
     pra_pk_def: "Two inherited conditions occur in the breed: progressive retinal atrophy, an eye disease that can lead to blindness, and pyruvate kinase deficiency, a blood disorder; DNA tests of the parents let breeders avoid them.",
@@ -626,6 +628,14 @@ const en: RegistryCopy = {
         "The FCI lists it as a house and companion dog, and The Royal Kennel Club says it is hugely popular as a companion. The Royal Kennel Club recommends up to an hour of exercise a day and grooming more than once a week and says it does not shed. The PDSA describes a playful, inquisitive dog that can get on well with children if introduced to them at an early age, can be stubborn in training, and needs grooming two to three times a week plus clipping or stripping by a professional groomer from time to time. The Royal Kennel Club gives its lifespan as over 10 years.",
       ],
       sources: ["S221", "S223", "S226"],
+    },
+    shih_tzu: {
+      aka: "Shih-Tzu",
+      text: [
+        "The Shih Tzu is a small companion dog from Tibet; Great Britain looks after its FCI standard. The standards describe a sturdy, abundantly coated dog with a proud carriage and a \"chrysanthemum-like\" face: a long, dense outer coat, large dark round eyes, large drooping ears and a heavily plumed tail carried over the back. The standards allow many colours; PetPrep shows gold and white, black and white, and liver and white, and never merle. The muzzle is short and flat, and the PDSA names breathing problems caused by the shorter face, so PetPrep always draws a moderate face with open nostrils.",
+        "The FCI describes it as intelligent, active and alert, friendly and independent. The Royal Kennel Club recommends up to an hour of exercise a day and grooming every day, and lists a flat as a suitable home. The PDSA says Shih Tzus can be good-natured family pets if they have had the right socialisation and training, calls them an ideal pet for first-time owners, advises always supervising them with children, and recommends a daily brush plus a clip by a professional groomer every six to eight weeks for most pet dogs. The Royal Kennel Club gives its lifespan as over 10 years.",
+      ],
+      sources: ["S229", "S231", "S233"],
     },
     british_shorthair: {
       aka: "British Blue",

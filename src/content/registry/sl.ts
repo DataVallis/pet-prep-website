@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -355,6 +355,8 @@ const sl: RegistryCopy = {
     bladder_stones: "Pri pasmi se lahko pojavijo kamni v mehurju, skupki mineralov, ki nastanejo v mehurju in urinu.",
     eye_problems_pra_cataracts_dry_eye: "Pri pasmi se pojavljajo težave z očmi, na primer progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, siva mrena in suho oko; očesni pregled je na voljo.",
     skin_comedo_allergy: "Pojavijo se lahko kožne težave, kot sta komedonski sindrom šnavcerjev (vrsta vnetja dlačnih mešičkov) in kožne alergije (atopija), ki povzročajo srbenje.",
+    shorter_face_boas: "Brahicefalna pasma s kratkim obrazom: krajši obraz lahko povzroči resne težave z dihanjem (brahicefalni obstruktivni sindrom dihalnih poti, BOAS).",
+    eye_problems_dry_eye_cataracts_pra_retina: "Pri pasmi se pojavljajo težave z očmi, na primer suho oko, siva mrena, progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, in odstop mrežnice.",
     hypothyroidism: "Pri pasmi se lahko pojavi premalo delujoča ščitnica (hipotiroza), ki vpliva na težo, kožo in energijo.",
     eyelid_problems: "Pri pasmi se lahko pojavijo težave z vekami: navznoter (entropij) ali navzven (ektropij) zavihane veke in »češnjevo oko«, ko izstopi tretja veka.",
     pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
@@ -643,6 +645,14 @@ const sl: RegistryCopy = {
         "FCI ga uvršča med hišne in družabne pse, The Royal Kennel Club pa pravi, da je kot spremljevalec zelo priljubljen. The Royal Kennel Club priporoča do eno uro gibanja na dan in česanje večkrat na teden ter navaja, da mu dlaka ne izpada. PDSA ga opisuje kot igrivega in radovednega psa, ki se lahko dobro razume z otroki, če jih spozna zgodaj, je pri šolanju lahko trmast, česati pa ga je treba dva- do trikrat na teden in ga občasno dati ostriči ali trimati profesionalnemu frizerju. The Royal Kennel Club navaja življenjsko dobo več kot 10 let.",
       ],
       sources: ["S221", "S223", "S226"],
+    },
+    shih_tzu: {
+      aka: "ši-cu, šicu, shih-tzu",
+      text: [
+        "Shih tzu je majhen družabni pes iz Tibeta; za njegov standard FCI skrbi Velika Britanija. Standardi ga opisujejo kot čvrstega psa z bogato dlako, ponosno držo in obrazom, ki spominja na krizantemo: z dolgo, gosto krovno dlako, velikimi temnimi okroglimi očmi, velikimi visečimi ušesi in bogato operjenim repom, nošenim čez hrbet. Standardi dovoljujejo veliko barv; PetPrep pokaže zlato-belo, črno-belo in jetrno-belo, nikoli pa merle. Gobček je kratek in ploščat, PDSA pa navaja težave z dihanjem zaradi krajšega obraza, zato PetPrep psa vedno nariše z zmernim obrazom in odprtimi nosnicami.",
+        "FCI ga opisuje kot inteligentnega, dejavnega in budnega, prijaznega in samostojnega. The Royal Kennel Club priporoča do eno uro gibanja na dan in vsakodnevno česanje ter navaja, da je primeren tudi za stanovanje. PDSA pravi, da je shih tzu lahko dobrodušen družinski pes, če ima pravo socializacijo in šolanje, da je odlična izbira za začetnike in da ga moramo z otroki vedno nadzorovati; svetuje vsakodnevno česanje in pri večini psov striženje pri profesionalnem frizerju na šest do osem tednov. The Royal Kennel Club navaja življenjsko dobo več kot 10 let.",
+      ],
+      sources: ["S229", "S231", "S233"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
