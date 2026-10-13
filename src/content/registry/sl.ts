@@ -284,6 +284,7 @@ const sl: RegistryCopy = {
       dna_vwd1: "Test DNK za von Willebrandovo bolezen tipa 1 (vWD1)",
       dna_mac: "Test DNK za dovzetnost za okužbo z bakterijami Mycobacterium avium (MAC)",
       dna_imgd: "Test DNK za dedno miopatijo nemških dog (IMGD), bolezen, pri kateri mišice slabijo",
+      patella_scheme: "Pregled pogačic za zdrsavanje pogačice (luksacijo patele) pred parjenjem",
       dna_dings2: "Test DNK za »plesočo bolezen dobermanov« (DINGS2), bolezen živcev in mišic",
       dna_hcm_mc: "Test DNK za hipertrofično kardiomiopatijo (MC HCM)",
       dna_sma: "Test DNK za spinalno mišično atrofijo (SMA)",
@@ -683,6 +684,14 @@ const sl: RegistryCopy = {
         "Je pasma s sploščenim obrazom (brahicefalna), zato PDSA opozarja, da z njim nikoli ne hodite na sprehod v vročini dneva, ker se hitro pregreje. The Royal Kennel Club priporoča do eno uro gibanja na dan in česanje enkrat na teden, uvršča ga v stanovanje in navaja življenjsko dobo več kot 10 let. PDSA bostonske terierje opisuje kot odlične družinske ljubljenčke, ki se ob dobri socializaciji v mladosti še posebej dobro razumejo z otroki; AKC pravi, da se dobro razumejo z otroki, ki znajo z živalmi ravnati nežno, da ne prenašajo dobro dolgega samovanja, in močno priporoča zgodnjo socializacijo in šolo za mladičke.",
       ],
       sources: ["S254", "S255", "S259", "S260"],
+    },
+    miniature_american_shepherd: {
+      aka: "mini american, miniaturni avstralski ovčar",
+      text: [
+        "Mali ameriški ovčar izvira iz Združenih držav Amerike. Standard FCI opisuje majhnega pastirskega psa z močnim pastirskim in čuvajskim nagonom, inteligentnega in predvsem delovnega psa, nekoliko daljšega kot visokega, s srednje dolgo, ravno do valovito dlako, odporno proti vremenu. Barve so črna, modra merle, rdeča in rdeča merle, z belimi in rjavimi oznakami ali brez njih, oči so lahko rjave, modre, lešnikove ali jantarne. PetPrep ga riše v modri merle barvi z naravnim repom.",
+        "PetMD pravi, da ima veliko energije in potrebuje vsaj eno uro gibanja na dan, najbolje dve, ter naloge, ki mu zaposlijo glavo, in da ga je treba česati nekajkrat na teden; AKC pravi, da je večji del leta dovolj česanje enkrat na teden, v času menjave dlake pa vsak dan. Po AKC je lahko odličen družinski pes, če je vzgojen in zgodaj socializiran, z otroki se navadno dobro razume, a jih lahko poskuša »pasti«; PetMD dodaja, da ga navezanost na družino lahko pripelje do ločitvene tesnobe, ko ostane sam. PetMD navaja življenjsko dobo 12 do 13 let.",
+      ],
+      sources: ["S265", "S267", "S269"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",

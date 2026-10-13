@@ -267,6 +267,7 @@ const en: RegistryCopy = {
       dna_vwd1: "DNA test for von Willebrand disease type 1 (vWD1)",
       dna_mac: "DNA test for susceptibility to Mycobacterium avium complex infection (MAC)",
       dna_imgd: "DNA test for inherited myopathy of Great Danes (IMGD), a muscle-wasting disease",
+      patella_scheme: "Kneecap check for luxating patella before breeding",
       dna_hcm_mc: "DNA test for hypertrophic cardiomyopathy (MC HCM)",
       dna_sma: "DNA test for spinal muscular atrophy (SMA)",
       dna_pk_def: "DNA test for pyruvate kinase deficiency (PK def)",
@@ -666,6 +667,14 @@ const en: RegistryCopy = {
         "It is a flat-faced (brachycephalic) breed, and the PDSA warns that it should never be exercised in the heat of the day because it is prone to overheating. The Royal Kennel Club recommends up to an hour of exercise a day and grooming once a week, suits it to a flat or apartment and gives its lifespan as over 10 years. The PDSA calls Boston Terriers perfect family pets that are especially good with children when well socialised as puppies; the AKC says they do well with children who know how to be gentle with animals, do not fare well when left alone for long periods, and strongly recommends early socialisation and puppy training.",
       ],
       sources: ["S254", "S255", "S259", "S260"],
+    },
+    miniature_american_shepherd: {
+      aka: "Mini American, Miniature Australian Shepherd",
+      text: [
+        "The Miniature American Shepherd comes from the United States. The FCI standard describes a small herding dog with strong herding and guardian instincts, intelligent and primarily a working dog, slightly longer than tall, with a medium-length, straight to wavy, weather-resistant coat. Its colours are black, blue merle, red and red merle, with or without white and tan markings, and its eyes may be brown, blue, hazel or amber. PetPrep draws it in blue merle with a natural tail.",
+        "PetMD says it has a lot of energy and needs at least one hour of exercise every day, ideally two, along with jobs that keep its mind busy, and that it should be brushed a couple of times a week; the AKC says weekly brushing is enough for most of the year, with daily brushing in the shedding season. The AKC says it can make a great family dog with obedience training and early socialisation, and tends to be good with children but may try to herd them; PetMD adds that its devotion to its family can lead to separation anxiety when it is left alone. PetMD gives its lifespan as 12 to 13 years.",
+      ],
+      sources: ["S265", "S267", "S269"],
     },
     british_shorthair: {
       aka: "British Blue",
