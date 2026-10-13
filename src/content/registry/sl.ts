@@ -365,6 +365,7 @@ const sl: RegistryCopy = {
     eye_problems_pra_cataracts_entropion: "Pri pasmi se pojavljajo težave z očmi, na primer progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, siva mrena, ki zamegli lečo, in navznoter zavihane veke (entropij); na voljo so pregledi oči.",
     elbow_dysplasia_arthritis: "Pri pasmi se lahko pojavi displazija komolca, slabo razvit komolčni sklep, ki sčasoma lahko vodi v artritis.",
     cm_sm_screening: "Pri pasmi se lahko pojavita Chiarijeva malformacija in siringomielija, boleča bolezen z votlinicami, polnimi tekočine, v hrbtenjači ob možganih; vzrediteljem svetujejo pregled staršev (v Združenem kraljestvu: shema BVA/KC).",
+    prominent_eyes_injury_dry_eye: "Izbuljene oči se lažje poškodujejo, na njih pa lahko nastanejo razjede in izsušenost; pri pasmi se pojavljata tudi suho oko in češnjevo oko (izpad žleze tretje veke).",
   },
   page: {
     eyebrow: "Register živali",
@@ -674,6 +675,14 @@ const sl: RegistryCopy = {
         "FCI njegov značaj opisuje kot družaben in vesel, standard The Royal Kennel Club pa kot odprt, živahen in inteligenten. The Royal Kennel Club priporoča do 30 minut gibanja na dan in ga uvršča v stanovanje; PDSA pravi, da je treba dvojno dlako česati dva- do trikrat na teden. AKC pravi, da pomeranec bolj ustreza družinam s starejšimi otroki, da se z drugimi živalmi lahko dobro razume, če je zgodaj socializiran, in močno priporoča zgodnjo socializacijo in šolo za mladičke. The Royal Kennel Club navaja življenjsko dobo več kot 12 let.",
       ],
       sources: ["S246", "S247", "S249", "S250", "S251"],
+    },
+    boston_terrier: {
+      aka: "boston, ameriški gentleman",
+      text: [
+        "Bostonski terier izvira iz Združenih držav Amerike. Standard FCI opisuje živahnega, zelo inteligentnega psa z gladko dlako, kratko glavo, kompaktnim telesom, kratkim repom in skladno postavo, tigrastega, črnega z rdečkastim odsevom (»seal«) ali črnega, z enakomernimi belimi oznakami: obvezni so bel pas na gobčku, bela lisa med očmi in bele prsi, prednost ima tigrasta barva. PetPrep ga riše tigrastega z belimi oznakami, z zmernim gobčkom, odprtimi nosnicami ter naravnimi ušesi in repom.",
+        "Je pasma s sploščenim obrazom (brahicefalna), zato PDSA opozarja, da z njim nikoli ne hodite na sprehod v vročini dneva, ker se hitro pregreje. The Royal Kennel Club priporoča do eno uro gibanja na dan in česanje enkrat na teden, uvršča ga v stanovanje in navaja življenjsko dobo več kot 10 let. PDSA bostonske terierje opisuje kot odlične družinske ljubljenčke, ki se ob dobri socializaciji v mladosti še posebej dobro razumejo z otroki; AKC pravi, da se dobro razumejo z otroki, ki znajo z živalmi ravnati nežno, da ne prenašajo dobro dolgega samovanja, in močno priporoča zgodnjo socializacijo in šolo za mladičke.",
+      ],
+      sources: ["S254", "S255", "S259", "S260"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",

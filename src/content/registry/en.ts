@@ -348,6 +348,7 @@ const en: RegistryCopy = {
     eye_problems_pra_cataracts_entropion: "Eye problems occur in the breed, such as progressive retinal atrophy, which can slowly lead to blindness, cataracts, which cloud the lens, and eyelids that turn inwards (entropion); eye testing is available.",
     elbow_dysplasia_arthritis: "Elbow dysplasia, a poorly developed elbow joint that can eventually lead to arthritis, can occur in the breed.",
     cm_sm_screening: "Chiari-like malformation and syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, can occur in the breed; breeders are advised to screen the parents (UK: BVA/KC scheme).",
+    prominent_eyes_injury_dry_eye: "Prominent eyes are more easily injured and can develop ulcers and dryness; dry eye and cherry eye also occur in the breed.",
   },
   page: {
     eyebrow: "Animal register",
@@ -657,6 +658,14 @@ const en: RegistryCopy = {
         "The FCI calls its character companionable and cheerful, and The Royal Kennel Club's standard calls it extrovert, lively and intelligent. The Royal Kennel Club recommends up to 30 minutes of exercise a day and suits it to a flat or apartment; the PDSA says its double coat needs brushing two to three times a week. The AKC says Pomeranians tend to be a better fit for families with older children, can get along well with other animals if socialised early, and highly recommends early socialisation and puppy classes. The Royal Kennel Club gives its lifespan as over 12 years.",
       ],
       sources: ["S246", "S247", "S249", "S250", "S251"],
+    },
+    boston_terrier: {
+      aka: "Boston, American Gentleman",
+      text: [
+        "The Boston Terrier comes from the United States. The FCI standard describes a lively, highly intelligent, smooth-coated, short-headed, compactly built, short-tailed and well-balanced dog, brindle, seal or black and evenly marked with white: a white muzzle band, a white blaze between the eyes and a white forechest are required, and brindle is preferred. PetPrep draws it in brindle and white, with a moderate muzzle, open nostrils and natural ears and tail.",
+        "It is a flat-faced (brachycephalic) breed, and the PDSA warns that it should never be exercised in the heat of the day because it is prone to overheating. The Royal Kennel Club recommends up to an hour of exercise a day and grooming once a week, suits it to a flat or apartment and gives its lifespan as over 10 years. The PDSA calls Boston Terriers perfect family pets that are especially good with children when well socialised as puppies; the AKC says they do well with children who know how to be gentle with animals, do not fare well when left alone for long periods, and strongly recommends early socialisation and puppy training.",
+      ],
+      sources: ["S254", "S255", "S259", "S260"],
     },
     british_shorthair: {
       aka: "British Blue",
