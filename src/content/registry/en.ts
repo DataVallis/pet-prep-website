@@ -344,6 +344,10 @@ const en: RegistryCopy = {
     hypothyroidism: "An underactive thyroid (hypothyroidism), which can affect weight, skin and energy levels, can occur in the breed.",
     eyelid_problems: "Eyelid problems can occur in the breed: eyelids that turn inwards (entropion) or outwards (ectropion), and cherry eye, where the third eyelid pops out.",
     pra_pk_def: "Two inherited conditions occur in the breed: progressive retinal atrophy, an eye disease that can lead to blindness, and pyruvate kinase deficiency, a blood disorder; DNA tests of the parents let breeders avoid them.",
+    windpipe_collapse_breathing: "Tracheal collapse, where the rings of the windpipe collapse and make breathing difficult, can occur in the breed.",
+    eye_problems_pra_cataracts_entropion: "Eye problems occur in the breed, such as progressive retinal atrophy, which can slowly lead to blindness, cataracts, which cloud the lens, and eyelids that turn inwards (entropion); eye testing is available.",
+    elbow_dysplasia_arthritis: "Elbow dysplasia, a poorly developed elbow joint that can eventually lead to arthritis, can occur in the breed.",
+    cm_sm_screening: "Chiari-like malformation and syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, can occur in the breed; breeders are advised to screen the parents (UK: BVA/KC scheme).",
   },
   page: {
     eyebrow: "Animal register",
@@ -645,6 +649,14 @@ const en: RegistryCopy = {
         "The FCI calls it friendly, loving and devoted to its owners, though it might be reserved towards strangers. The Royal Kennel Club says that despite its size it makes a wonderful family dog, and recommends more than two hours of exercise a day, a large house and garden, and grooming once a week. The PDSA says Great Danes are known for drooling, have a fairly strong prey drive, and are not recommended for homes with younger children because of their size and strength; it advises leaving a gap between eating and exercise to help prevent bloat. The Royal Kennel Club gives its lifespan as under 10 years.",
       ],
       sources: ["S239", "S241", "S243"],
+    },
+    pomeranian: {
+      aka: "Pom, German Toy Spitz, Zwergspitz",
+      text: [
+        "The Pomeranian is the smallest spitz: the FCI keeps it as the toy variety of the German Spitz, 21 cm ± 3 cm at the withers, and The Royal Kennel Club's standard describes a compact, short-coupled little dog with a fox-like head, small erect ears and a tail turned over the back. Its double coat has a soft, fluffy undercoat and a long, straight outer coat that forms a frill round the neck. The standard allows many whole colours, such as orange, cream, white, black and brown, but never merle; PetPrep draws a natural, untrimmed coat.",
+        "The FCI calls its character companionable and cheerful, and The Royal Kennel Club's standard calls it extrovert, lively and intelligent. The Royal Kennel Club recommends up to 30 minutes of exercise a day and suits it to a flat or apartment; the PDSA says its double coat needs brushing two to three times a week. The AKC says Pomeranians tend to be a better fit for families with older children, can get along well with other animals if socialised early, and highly recommends early socialisation and puppy classes. The Royal Kennel Club gives its lifespan as over 12 years.",
+      ],
+      sources: ["S246", "S247", "S249", "S250", "S251"],
     },
     british_shorthair: {
       aka: "British Blue",
