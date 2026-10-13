@@ -361,6 +361,10 @@ const sl: RegistryCopy = {
     hypothyroidism: "Pri pasmi se lahko pojavi premalo delujoča ščitnica (hipotiroza), ki vpliva na težo, kožo in energijo.",
     eyelid_problems: "Pri pasmi se lahko pojavijo težave z vekami: navznoter (entropij) ali navzven (ektropij) zavihane veke in »češnjevo oko«, ko izstopi tretja veka.",
     pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
+    windpipe_collapse_breathing: "Pri pasmi se lahko pojavi kolaps sapnika: obročki sapnika se sesedejo in otežijo dihanje.",
+    eye_problems_pra_cataracts_entropion: "Pri pasmi se pojavljajo težave z očmi, na primer progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, siva mrena, ki zamegli lečo, in navznoter zavihane veke (entropij); na voljo so pregledi oči.",
+    elbow_dysplasia_arthritis: "Pri pasmi se lahko pojavi displazija komolca, slabo razvit komolčni sklep, ki sčasoma lahko vodi v artritis.",
+    cm_sm_screening: "Pri pasmi se lahko pojavita Chiarijeva malformacija in siringomielija, boleča bolezen z votlinicami, polnimi tekočine, v hrbtenjači ob možganih; vzrediteljem svetujejo pregled staršev (v Združenem kraljestvu: shema BVA/KC).",
   },
   page: {
     eyebrow: "Register živali",
@@ -662,6 +666,14 @@ const sl: RegistryCopy = {
         "FCI jo opisuje kot prijazno, ljubečo in vdano lastnikom, do tujcev pa je lahko zadržana. The Royal Kennel Club pravi, da je kljub velikosti čudovit družinski pes, in priporoča več kot dve uri gibanja na dan, veliko hišo z vrtom in česanje enkrat na teden. PDSA pravi, da se nemške doge rade slinijo, da imajo precej močan lovski nagon in da jih zaradi velikosti in moči ne priporoča v domu z mlajšimi otroki; svetuje premor med obrokom in gibanjem, da se prepreči zasuk želodca. The Royal Kennel Club navaja življenjsko dobo manj kot 10 let.",
       ],
       sources: ["S239", "S241", "S243"],
+    },
+    pomeranian: {
+      aka: "pom, pritlikavi špic, nemški pritlikavi špic",
+      text: [
+        "Pomeranec je najmanjši špic: FCI ga vodi kot pritlikavo različico nemškega špica z višino 21 cm ± 3 cm, standard The Royal Kennel Club pa opisuje kompaktnega, kratkega psička z lisičjo glavo, majhnimi pokončnimi ušesi in repom, zavihanim čez hrbet. Dvojna dlaka ima mehko, puhasto podlanko in dolgo, ravno krovno dlako, ki okoli vratu oblikuje ovratnik. Standard dovoljuje veliko enobarvnih barv, na primer oranžno, krem, belo, črno in rjavo, nikoli pa merle; PetPrep ga riše z naravno, nepostriženo dlako.",
+        "FCI njegov značaj opisuje kot družaben in vesel, standard The Royal Kennel Club pa kot odprt, živahen in inteligenten. The Royal Kennel Club priporoča do 30 minut gibanja na dan in ga uvršča v stanovanje; PDSA pravi, da je treba dvojno dlako česati dva- do trikrat na teden. AKC pravi, da pomeranec bolj ustreza družinam s starejšimi otroki, da se z drugimi živalmi lahko dobro razume, če je zgodaj socializiran, in močno priporoča zgodnjo socializacijo in šolo za mladičke. The Royal Kennel Club navaja življenjsko dobo več kot 12 let.",
+      ],
+      sources: ["S246", "S247", "S249", "S250", "S251"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
