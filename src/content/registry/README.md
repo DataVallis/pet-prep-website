@@ -6,7 +6,7 @@
 | `registry.ts` | Types + loader (checks `schema_version`; `PETPREP_REGISTRY_FILE` builds from another file, e.g. a large test fixture — never in production). | dev |
 | `en.ts`, `sl.ts` | Every word the register shows: units, qualifiers, field / category / statement words, stage names per species, game-rule sentences, filters, optional hand-written breed intros (`sources` must be in the breed's sources). | copy |
 
-Availability lives in the export (pet-prep), not here: the list of breeds in the register and their app status change together in that repo.
+Availability lives in the export (pet-prep), not here: it is derived from `docs/research/app-release.json` there — "in the app" only for breeds in the last production release (store build or OTA), everything merged but not yet released is "coming soon" (David 2026-10-13). Re-sync this file after every release.
 
 ## Refresh the data
 
