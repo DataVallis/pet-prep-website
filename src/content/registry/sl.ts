@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -371,6 +371,7 @@ const sl: RegistryCopy = {
     eye_problems_dry_eye_cataracts_pra_retina: "Pri pasmi se pojavljajo težave z očmi, na primer suho oko, siva mrena, progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, in odstop mrežnice.",
     hypothyroidism: "Pri pasmi se lahko pojavi premalo delujoča ščitnica (hipotiroza), ki vpliva na težo, kožo in energijo.",
     cataracts: "Pri pasmi se lahko pojavi siva mrena, ki zamegli očesno lečo in lahko vodi v slabši vid.",
+    pra_inherited_blindness: "Pri pasmi se lahko pojavi progresivna atrofija mrežnice, dedna očesna bolezen, ki lahko počasi vodi v slepoto.",
     eyelid_problems: "Pri pasmi se lahko pojavijo težave z vekami: navznoter (entropij) ali navzven (ektropij) zavihane veke in »češnjevo oko«, ko izstopi tretja veka.",
     pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
     windpipe_collapse_breathing: "Pri pasmi se lahko pojavi kolaps sapnika: obročki sapnika se sesedejo in otežijo dihanje.",
@@ -748,6 +749,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča česanje vsak dan in več kot dve uri gibanja na dan, življenjska doba pa je več kot 10 let; American Kennel Club in PetMD pišeta, da ne potrebuje veliko gibanja. PetMD te prijazne pse opisuje kot odlične družinske pse, prijazne do ljudi in drugih živali, in svetuje zgodnjo socializacijo in šolanje; VCA piše, da so z otroki običajno zelo dobri, da se radi zredijo in da jim je treba ušesa pregledati vsak teden.",
       ],
       sources: ["S303", "S305", "S307", "S308", "S309", "S310"],
+    },
+    belgian_malinois: {
+      aka: "malinois, belgijski ovčar (malinois)",
+      text: [
+        "Belgijski ovčar malinois je kratkodlaka različica belgijskega ovčarja, ovčarskega psa iz Belgije. Standard FCI opisuje skladno grajenega psa, ki združuje eleganco in moč, in dovoljuje eno samo barvo: plavo s črnim nadihom in črno masko. Standarda FCI in American Kennel Club opisujeta razmeroma majhna, pokončna, trikotna ušesa, kratko, trdo dlako z gosto podlanko ter pozoren, inteligenten, radoveden in samozavesten značaj.",
+        "The Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje večkrat na teden, življenjska doba pa je več kot 10 let. American Kennel Club piše, da ni dobra izbira za prvega psa, da se najbolje znajde v družini s starejšimi, odgovornimi otroki in da ne sme biti dolgo sam; PetMD omenja močan lovski nagon, da lahko poskuša »pasti« otroke ter da potrebuje vsakodnevno šolanje in zgodnjo socializacijo.",
+      ],
+      sources: ["S312", "S313", "S314", "S315", "S316", "S317"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",

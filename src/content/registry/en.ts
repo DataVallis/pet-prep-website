@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium" };
 
 const en: RegistryCopy = {
   hub: {
@@ -354,6 +354,7 @@ const en: RegistryCopy = {
     eye_problems_dry_eye_cataracts_pra_retina: "Eye problems occur in the breed, such as dry eye, cataracts, progressive retinal atrophy, which can slowly lead to blindness, and retinal detachment.",
     hypothyroidism: "An underactive thyroid (hypothyroidism), which can affect weight, skin and energy levels, can occur in the breed.",
     cataracts: "Cataracts, which cloud the lens of the eye and can lead to vision loss, can occur in the breed.",
+    pra_inherited_blindness: "Progressive retinal atrophy, an inherited eye disease that can slowly lead to blindness, can occur in the breed.",
     eyelid_problems: "Eyelid problems can occur in the breed: eyelids that turn inwards (entropion) or outwards (ectropion), and cherry eye, where the third eyelid pops out.",
     pra_pk_def: "Two inherited conditions occur in the breed: progressive retinal atrophy, an eye disease that can lead to blindness, and pyruvate kinase deficiency, a blood disorder; DNA tests of the parents let breeders avoid them.",
     windpipe_collapse_breathing: "Tracheal collapse, where the rings of the windpipe collapse and make breathing difficult, can occur in the breed.",
@@ -731,6 +732,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends grooming every day and more than 2 hours of exercise a day, and gives its lifespan as over 10 years; the AKC and PetMD write that it does not need a lot of exercise. PetMD calls these sweet-tempered dogs great family dogs, friendly with people and other animals, and advises starting socialisation and training early; VCA writes that they are usually very good with children, tend to become overweight and need their ears checked every week.",
       ],
       sources: ["S303", "S305", "S307", "S308", "S309", "S310"],
+    },
+    belgian_malinois: {
+      aka: "Malinois, Belgian Shepherd Dog (Malinois)",
+      text: [
+        "The Belgian Malinois is the short-haired variety of the Belgian Shepherd Dog, a herding breed from Belgium. The FCI standard describes a harmoniously proportioned dog combining elegance and power, and allows only one colour: fawn with black overlay and a black mask. The FCI and AKC standards describe rather small, erect, triangular ears, a short, hard coat with a dense undercoat and an alert, intelligent, inquisitive and confident temperament.",
+        "The Royal Kennel Club recommends more than 2 hours of exercise a day and grooming more than once a week, and gives its lifespan as over 10 years. The AKC writes that it is not a good choice for first-time dog owners, fares best with older, responsible children and should not be left alone for long; PetMD notes a high prey drive, that it may try to herd children, and that it needs constant daily training and early socialisation.",
+      ],
+      sources: ["S312", "S313", "S314", "S315", "S316", "S317"],
     },
     british_shorthair: {
       aka: "British Blue",
