@@ -724,6 +724,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S296", "S298", "S299", "S301", "S302"],
     },
+    american_cocker_spaniel: {
+      aka: "Cocker Spaniel (USA), American Cocker",
+      text: [
+        "The American Cocker Spaniel — in the United States simply the Cocker Spaniel — is a different breed from the English Cocker Spaniel. The AKC standard calls it the smallest member of the Sporting Group, with long, lobular, well-feathered ears, a rounded skull and a broad, deep muzzle, and a silky coat that is flat or slightly wavy; it comes in black, in any solid colour from lightest cream to darkest red, and in parti-colours with white. The standard asks for an equable temperament with no suggestion of timidity.",
+        "The Royal Kennel Club recommends grooming every day and more than 2 hours of exercise a day, and gives its lifespan as over 10 years; the AKC and PetMD write that it does not need a lot of exercise. PetMD calls these sweet-tempered dogs great family dogs, friendly with people and other animals, and advises starting socialisation and training early; VCA writes that they are usually very good with children, tend to become overweight and need their ears checked every week.",
+      ],
+      sources: ["S303", "S305", "S307", "S308", "S309", "S310"],
+    },
     british_shorthair: {
       aka: "British Blue",
       text: [

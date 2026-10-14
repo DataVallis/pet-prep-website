@@ -741,6 +741,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S296", "S298", "S299", "S301", "S302"],
     },
+    american_cocker_spaniel: {
+      aka: "Cocker Spaniel (ZDA), ameriški koker",
+      text: [
+        "Ameriški koker španjel — v Združenih državah kar Cocker Spaniel — je druga pasma kot angleški koker španjel. Standard American Kennel Club ga opisuje kot najmanjšega psa v skupini lovskih psov, z dolgimi, operjenimi ušesi, zaobljeno lobanjo, širokim in globokim gobcem ter svilnato, ravno ali rahlo valovito dlako; je lahko črn, enobarven od svetlo kremaste do temno rdeče barve ali večbarven z belo. Standard zahteva uravnotežen značaj brez plašnosti.",
+        "The Royal Kennel Club priporoča česanje vsak dan in več kot dve uri gibanja na dan, življenjska doba pa je več kot 10 let; American Kennel Club in PetMD pišeta, da ne potrebuje veliko gibanja. PetMD te prijazne pse opisuje kot odlične družinske pse, prijazne do ljudi in drugih živali, in svetuje zgodnjo socializacijo in šolanje; VCA piše, da so z otroki običajno zelo dobri, da se radi zredijo in da jim je treba ušesa pregledati vsak teden.",
+      ],
+      sources: ["S303", "S305", "S307", "S308", "S309", "S310"],
+    },
     british_shorthair: {
       aka: "britanka, British Blue",
       text: [
