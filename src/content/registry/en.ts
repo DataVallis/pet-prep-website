@@ -283,6 +283,9 @@ const en: RegistryCopy = {
       dna_fuco: "DNA test for fucosidosis, an inherited disease of the nervous system",
       dna_pfk: "DNA test for phosphofructokinase deficiency (PFK), an inherited enzyme disorder of the blood and muscles",
       dna_pra_cord1: "DNA test for progressive retinal atrophy (PRA cord1)",
+      dna_bbs2_pra: "DNA test for progressive retinal atrophy (BBS2-PRA)",
+      dna_cnga1_pra: "DNA test for progressive retinal atrophy (CNGA1-PRA)",
+      dna_vwd3: "DNA test for von Willebrand disease type 3 (vWD3), an inherited bleeding disorder",
     },
   },
   health: {
@@ -293,6 +296,7 @@ const en: RegistryCopy = {
     heat_stroke_risk: "Overheats quickly and is more vulnerable to heatstroke than most dogs, especially in warm weather.",
     skin_fold_ear_problems: "Prone to ear inflammation and skin-fold infections; the skin folds need to be kept clean and dry.",
     ear_infections_long_ears: "Ear infections can occur because of the long ears; bacteria can build up in the ear canal.",
+    collie_eye_pra: "Inherited eye diseases occur in the breed: collie eye anomaly, an abnormality at the back of the eye, and progressive retinal atrophy, which can slowly lead to blindness; eye testing and DNA tests are available.",
     merle_colour_risk: "Merle is not a breed-standard colour; in this breed it carries a higher risk of hearing and sight problems.",
     hind_leg_conformation: "The Royal Kennel Club names the shape of the hind legs and the way the dog moves as a point of concern in this breed; a sound dog has a level back and moderate hind legs.",
     hip_elbow_dysplasia: "Can be prone to hip and elbow dysplasia; breeders are advised to have the parents' hips and elbows tested before breeding.",
@@ -702,6 +706,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends more than 2 hours of exercise a day and grooming more than once a week, and gives its lifespan as over 10 years. The PDSA says Springers make good family dogs that get along well with children and other household pets, are obedient and keen to learn, and need grooming once or twice a week plus clipping every 3 months. The AKC adds that they should not be left alone for long periods and that early socialisation and puppy training courses are key.",
       ],
       sources: ["S281", "S282", "S284", "S285", "S286"],
+    },
+    shetland_sheepdog: {
+      aka: "Sheltie, Shetland Collie (former name)",
+      text: [
+        "The Shetland Sheepdog comes from Great Britain and is a small, long-haired working dog. The FCI standard describes an alert, gentle, intelligent, strong and active dog, affectionate and loyal to its owner and reserved towards strangers, with a head like a long, blunt wedge, small ears carried semi-erect with the tips falling forward and a double coat with a long, harsh outer coat; the colours are sable, tricolour, blue merle, black and white, and black and tan, and the ideal height is 37 cm for males and 35.5 cm for females. PetPrep draws it sable and white.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day and grooming every day, and gives its lifespan as over 10 years. The PDSA says Shelties are very gentle, playful, obedient dogs that often fit well into family life and get along happily with children, and that training and socialisation are very important at a young age. The AKC adds that they need regular mental and physical exercise, would fare best with older children because of their herding instincts, and are known to be very vocal.",
+      ],
+      sources: ["S289", "S290", "S291", "S293", "S294"],
     },
     british_shorthair: {
       aka: "British Blue",
