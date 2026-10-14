@@ -370,6 +370,7 @@ const sl: RegistryCopy = {
     shorter_face_boas: "Brahicefalna pasma s kratkim obrazom: krajši obraz lahko povzroči resne težave z dihanjem (brahicefalni obstruktivni sindrom dihalnih poti, BOAS).",
     eye_problems_dry_eye_cataracts_pra_retina: "Pri pasmi se pojavljajo težave z očmi, na primer suho oko, siva mrena, progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, in odstop mrežnice.",
     hypothyroidism: "Pri pasmi se lahko pojavi premalo delujoča ščitnica (hipotiroza), ki vpliva na težo, kožo in energijo.",
+    cataracts: "Pri pasmi se lahko pojavi siva mrena, ki zamegli očesno lečo in lahko vodi v slabši vid.",
     eyelid_problems: "Pri pasmi se lahko pojavijo težave z vekami: navznoter (entropij) ali navzven (ektropij) zavihane veke in »češnjevo oko«, ko izstopi tretja veka.",
     pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
     windpipe_collapse_breathing: "Pri pasmi se lahko pojavi kolaps sapnika: obročki sapnika se sesedejo in otežijo dihanje.",
@@ -731,6 +732,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča do ene ure gibanja na dan in česanje vsak dan, življenjska doba pa je več kot 10 let. PDSA piše, da so šetlandski ovčarji zelo nežni, igrivi in ubogljivi psi, ki se pogosto dobro vključijo v družinsko življenje in se lepo razumejo z otroki, ter da sta vzgoja in socializacija v mladosti zelo pomembni. American Kennel Club dodaja, da potrebujejo redno telesno in miselno zaposlitev, da se zaradi pastirskega nagona najbolje znajdejo v domu s starejšimi otroki in da so znani kot zelo glasni.",
       ],
       sources: ["S289", "S290", "S291", "S293", "S294"],
+    },
+    brittany: {
+      aka: "epagneul breton, bretonski španjel, Brittany",
+      text: [
+        "Bretonski ptičar je ptičar iz Francije, kjer mu pravijo epagneul breton. The Royal Kennel Club ga opisuje kot zelo energičnega in inteligentnega psa, ki išče, nakaže in prinese divjad, nežnega in ljubečega, a polnega življenja in razigranosti, z gosto, precej fino dlako, visoko nasajenimi trikotnimi ušesi in repom, ki je pogosto naravno kratek; barve standarda so oranžna, jetrna ali črna z belo, roan ali tribarvna, višina je 48–51 cm za psa in 47–50 cm za psico. PetPrep ga riše oranžno-belega.",
+        "The Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje večkrat na teden, življenjska doba pa je več kot 10 let. American Kennel Club piše, da so bretonski ptičarji psi z veliko energije, ki potrebujejo veliko gibanja in miselne zaposlitve, da so nežni in z otroki običajno potrpežljivi ter da jih tedensko krtačenje ohranja lepe. PetMD dodaja, da je zgodnja socializacija mladičkov nujna, da ne marajo biti dolgo sami in da imajo kot psi, vzrejeni za lov na ptice, močan lovski nagon.",
+      ],
+      sources: ["S296", "S298", "S299", "S301", "S302"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
