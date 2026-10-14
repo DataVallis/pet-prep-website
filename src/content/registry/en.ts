@@ -278,6 +278,11 @@ const en: RegistryCopy = {
       dna_lemp2: "DNA test for leukoencephalomyelopathy (LEMP-2)",
       dna_huu: "DNA test for hyperuricosuria (HUU)",
       dna_dings2: "DNA test for dancing Dobermann disease (DINGS2), a nerve and muscle disorder",
+      dna_ams: "DNA test for acral mutilation syndrome (AMS), a nerve disorder that takes away pain feeling in the paws",
+      dna_dams: "DNA test for dyserythropoietic anaemia and myopathy syndrome (DAMS), a blood and muscle disorder",
+      dna_fuco: "DNA test for fucosidosis, an inherited disease of the nervous system",
+      dna_pfk: "DNA test for phosphofructokinase deficiency (PFK), an inherited enzyme disorder of the blood and muscles",
+      dna_pra_cord1: "DNA test for progressive retinal atrophy (PRA cord1)",
     },
   },
   health: {
@@ -287,6 +292,7 @@ const en: RegistryCopy = {
     flat_face_breathing: "Flat-faced (brachycephalic) breed: the short muzzle, narrow nostrils and extra soft tissue in the airway can make breathing harder (brachycephalic obstructive airway syndrome, BOAS).",
     heat_stroke_risk: "Overheats quickly and is more vulnerable to heatstroke than most dogs, especially in warm weather.",
     skin_fold_ear_problems: "Prone to ear inflammation and skin-fold infections; the skin folds need to be kept clean and dry.",
+    ear_infections_long_ears: "Ear infections can occur because of the long ears; bacteria can build up in the ear canal.",
     merle_colour_risk: "Merle is not a breed-standard colour; in this breed it carries a higher risk of hearing and sight problems.",
     hind_leg_conformation: "The Royal Kennel Club names the shape of the hind legs and the way the dog moves as a point of concern in this breed; a sound dog has a level back and moderate hind legs.",
     hip_elbow_dysplasia: "Can be prone to hip and elbow dysplasia; breeders are advised to have the parents' hips and elbows tested before breeding.",
@@ -688,6 +694,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming once a week, suits it to a flat or apartment and gives its lifespan as over 12 years. The PDSA says Chihuahuas are so small and light that children are tempted to pick them up, which they are unlikely to enjoy, so they are better suited to families with slightly older children. The PDSA adds that, as companion dogs, they love company and need someone around the home all the time, and that they should be socialised from a young age with lots of different people, experiences and places.",
       ],
       sources: ["S272", "S274", "S275", "S277"],
+    },
+    english_springer_spaniel: {
+      aka: "Springer Spaniel, Springer, ESS",
+      text: [
+        "The English Springer Spaniel comes from Great Britain, where it was bred to find, flush and retrieve game. The Kennel Club standard describes a symmetrically built, compact, strong, merry and active dog — the highest on the leg of the British land spaniels — with a friendly, happy, biddable temperament, long feathered ears, dark hazel eyes and a close, straight, weather-resisting coat; the colours are liver and white or black and white, either with tan markings, and the approximate height is 51 cm. PetPrep draws it liver and white, with a natural tail.",
+        "The Royal Kennel Club recommends more than 2 hours of exercise a day and grooming more than once a week, and gives its lifespan as over 10 years. The PDSA says Springers make good family dogs that get along well with children and other household pets, are obedient and keen to learn, and need grooming once or twice a week plus clipping every 3 months. The AKC adds that they should not be left alone for long periods and that early socialisation and puppy training courses are key.",
+      ],
+      sources: ["S281", "S282", "S284", "S285", "S286"],
     },
     british_shorthair: {
       aka: "British Blue",
