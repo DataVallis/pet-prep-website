@@ -353,6 +353,7 @@ const en: RegistryCopy = {
     shorter_face_boas: "A brachycephalic (short-faced) breed: the shorter face can cause serious breathing problems (brachycephalic obstructive airway syndrome, BOAS).",
     eye_problems_dry_eye_cataracts_pra_retina: "Eye problems occur in the breed, such as dry eye, cataracts, progressive retinal atrophy, which can slowly lead to blindness, and retinal detachment.",
     hypothyroidism: "An underactive thyroid (hypothyroidism), which can affect weight, skin and energy levels, can occur in the breed.",
+    cataracts: "Cataracts, which cloud the lens of the eye and can lead to vision loss, can occur in the breed.",
     eyelid_problems: "Eyelid problems can occur in the breed: eyelids that turn inwards (entropion) or outwards (ectropion), and cherry eye, where the third eyelid pops out.",
     pra_pk_def: "Two inherited conditions occur in the breed: progressive retinal atrophy, an eye disease that can lead to blindness, and pyruvate kinase deficiency, a blood disorder; DNA tests of the parents let breeders avoid them.",
     windpipe_collapse_breathing: "Tracheal collapse, where the rings of the windpipe collapse and make breathing difficult, can occur in the breed.",
@@ -714,6 +715,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to an hour of exercise a day and grooming every day, and gives its lifespan as over 10 years. The PDSA says Shelties are very gentle, playful, obedient dogs that often fit well into family life and get along happily with children, and that training and socialisation are very important at a young age. The AKC adds that they need regular mental and physical exercise, would fare best with older children because of their herding instincts, and are known to be very vocal.",
       ],
       sources: ["S289", "S290", "S291", "S293", "S294"],
+    },
+    brittany: {
+      aka: "Brittany Spaniel, Epagneul Breton",
+      text: [
+        "The Brittany is a pointing dog from France, where it is called the Epagneul Breton. The Royal Kennel Club describes a very energetic, intelligent dog that hunts, points and retrieves, gentle and affectionate yet full of life and exuberance, with a dense, fairly fine coat, high-set triangular ears and a tail that is often naturally short; the standard colours are orange, liver or black with white, roan or tricolour, and the height is 48–51 cm for dogs and 47–50 cm for bitches. PetPrep draws it orange and white.",
+        "The Royal Kennel Club recommends more than 2 hours of exercise a day and grooming more than once a week, and gives its lifespan as over 10 years. The AKC says Brittanys are high-energy dogs that need plenty of exercise and mental stimulation, are gentle and tend to be patient with children, and that weekly brushing keeps them looking their best. PetMD adds that early socialisation of puppies is a must, that they don't do well when left alone for long periods and that, bred to hunt birds, they have a high prey drive.",
+      ],
+      sources: ["S296", "S298", "S299", "S301", "S302"],
     },
     british_shorthair: {
       aka: "British Blue",
