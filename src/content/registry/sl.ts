@@ -291,6 +291,9 @@ const sl: RegistryCopy = {
       dna_fuco: "Test DNK za fukozidozo, dedno bolezen živčevja",
       dna_pfk: "Test DNK za pomanjkanje fosfofruktokinaze (PFK), dedno encimsko motnjo krvi in mišic",
       dna_pra_cord1: "Test DNK za progresivno atrofijo mrežnice (PRA cord1)",
+      dna_bbs2_pra: "Test DNK za progresivno atrofijo mrežnice (BBS2-PRA)",
+      dna_cnga1_pra: "Test DNK za progresivno atrofijo mrežnice (CNGA1-PRA)",
+      dna_vwd3: "Test DNK za von Willebrandovo bolezen tipa 3 (vWD3), dedno motnjo strjevanja krvi",
       dna_hcm_mc: "Test DNK za hipertrofično kardiomiopatijo (MC HCM)",
       dna_sma: "Test DNK za spinalno mišično atrofijo (SMA)",
       dna_pk_def: "Test DNK za pomanjkanje piruvat-kinaze (PK def)",
@@ -310,6 +313,7 @@ const sl: RegistryCopy = {
     heat_stroke_risk: "Hitro se pregreje in je bolj dovzeten za toplotni udar kot večina psov, zlasti v toplem vremenu.",
     skin_fold_ear_problems: "Nagnjen je k vnetjem ušes in okužbam kožnih gub; kožne gube morajo biti čiste in suhe.",
     ear_infections_long_ears: "Zaradi dolgih ušes se lahko pojavijo vnetja ušes; v sluhovodu se lahko namnožijo bakterije.",
+    collie_eye_pra: "Pri pasmi se pojavljata dedni bolezni oči: anomalija očesa škotskih ovčarjev (collie eye anomaly), nepravilnost v zadnjem delu očesa, in progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto; na voljo so pregledi oči in testi DNK.",
     merle_colour_risk: "Barva merle ni v standardu pasme; pri tej pasmi pomeni večje tveganje za težave s sluhom in vidom.",
     hind_leg_conformation: "The Royal Kennel Club pri tej pasmi opozarja na obliko zadnjih nog in način gibanja; zdrav pes ima raven hrbet in zmerno zakotene zadnje noge.",
     hip_elbow_dysplasia: "Lahko je nagnjen k displaziji kolkov in komolcev; vzrediteljem svetujejo, naj psom pred paritvijo pregledajo kolke in komolce.",
@@ -719,6 +723,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča več kot 2 uri gibanja na dan in česanje večkrat na teden, življenjska doba pa je več kot 10 let. PDSA piše, da so springerji dobri družinski psi, ki se dobro razumejo z otroki in drugimi domačimi ljubljenčki, so ubogljivi in se radi učijo ter jih je treba česati enkrat ali dvakrat na teden in ostriči vsake 3 mesece. American Kennel Club dodaja, da jih ne smete dolgo puščati samih ter da sta zgodnja socializacija in tečaj za mladičke ključna.",
       ],
       sources: ["S281", "S282", "S284", "S285", "S286"],
+    },
+    shetland_sheepdog: {
+      aka: "sheltie, šeltie, Shetland Sheepdog",
+      text: [
+        "Šetlandski ovčar izvira iz Velike Britanije in je majhen dolgodlaki delovni pes. Standard FCI ga opisuje kot pozornega, nežnega, inteligentnega, močnega in dejavnega psa, ki je naklonjen in zvest lastniku ter zadržan do tujcev, z glavo v obliki dolgega, topega klina, majhnimi, napol pokončnimi ušesi s konicami, ki padajo naprej, in dvojno dlako z dolgo, trdo krovno dlako; barve so sable (od svetlo zlate do temno mahagonijeve), tribarvna, modri merle, črno-bela ter črna z žganimi oznakami, idealna višina je 37 cm za psa in 35,5 cm za psico. PetPrep ga riše zlato sable barve z belimi oznakami.",
+        "The Royal Kennel Club priporoča do ene ure gibanja na dan in česanje vsak dan, življenjska doba pa je več kot 10 let. PDSA piše, da so šetlandski ovčarji zelo nežni, igrivi in ubogljivi psi, ki se pogosto dobro vključijo v družinsko življenje in se lepo razumejo z otroki, ter da sta vzgoja in socializacija v mladosti zelo pomembni. American Kennel Club dodaja, da potrebujejo redno telesno in miselno zaposlitev, da se zaradi pastirskega nagona najbolje znajdejo v domu s starejšimi otroki in da so znani kot zelo glasni.",
+      ],
+      sources: ["S289", "S290", "S291", "S293", "S294"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
