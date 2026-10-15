@@ -8,6 +8,12 @@ services:
     image: petprep-website:${WEBSITE_IMAGE_TAG:-production}
     container_name: petprep-website
     restart: unless-stopped
+    # Bounded container logs (disk hygiene, David 2026-10-15): at most 3 × 10 MB.
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '3'
     environment:
       NODE_ENV: production
     # Runtime secrets (Klaviyo), written by the deploy workflow from GitHub secrets.
