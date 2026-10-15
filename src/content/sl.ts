@@ -557,7 +557,7 @@ const sl: Dictionary = {
           heading: "Faza",
           paragraphs: [
             "PetPrep je pred javnim začetkom, načrtovana je zaprta beta. Prvi trg sta Slovenija in regija, sledita DACH in Združeno kraljestvo; izdelek je od prvega dne zgrajen za lokalizacijo po svetu.",
-            "Ustanovitelj: David Tacer, razvijalec programske opreme in podjetnik (DATA VALLIS d.o.o., Maribor). Več [o nas](page:about).",
+            "Ustanovitelj: David Tacer, razvijalec programske opreme in podjetnik (Data Vallis David Tacer s.p., Dravograd). Več [o nas](page:about).",
           ],
         },
         { type: "callout", title: "Zahtevajte predstavitev za vlagatelje.", text: "Predstavitev, prezentacijo in podatkovno sobo pošljemo na zahtevo.", tone: "dark" },
@@ -816,7 +816,7 @@ const sl: Dictionary = {
       meta: {
         title: "O nas — podjetje, ustanovitelj in kako PetPrep preverja dejstva",
         description:
-          "Kdo stoji za PetPrep: DATA VALLIS d.o.o. iz Maribora, ustanovitelj David Tacer, naše poslanstvo in kako register živali zbira in preverja dejstva.",
+          "Kdo stoji za PetPrep: Data Vallis David Tacer s.p. iz Dravograda, ustanovitelj David Tacer, naše poslanstvo in kako register živali zbira in preverja dejstva.",
       },
       navLabel: "O nas",
       eyebrow: "O nas",
@@ -828,7 +828,7 @@ const sl: Dictionary = {
           id: "company",
           heading: "Podjetje",
           paragraphs: [
-            "PetPrep je izdelek podjetja DATA VALLIS d.o.o., podjetja za razvoj programske opreme s sedežem v Mariboru. Isto podjetje upravlja to spletno stran in aplikacijo PetPrep ter je upravljavec osebnih podatkov (glejte [politiko zasebnosti](page:privacy)).",
+            "PetPrep je izdelek podjetja Data Vallis David Tacer s.p., samostojnega podjetnika za razvoj programske opreme s sedežem v Dravogradu. Isto podjetje upravlja to spletno stran in aplikacijo PetPrep ter je upravljavec osebnih podatkov (glejte [politiko zasebnosti](page:privacy)).",
           ],
         },
         { type: "company" },

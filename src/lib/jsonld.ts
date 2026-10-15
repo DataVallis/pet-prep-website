@@ -30,7 +30,7 @@ function postalAddressLd() {
   return { "@type": "PostalAddress", streetAddress: c.street, postalCode: c.postalCode, addressLocality: c.city, addressCountry: c.countryCode };
 }
 
-/** DATA VALLIS d.o.o. — the legal entity behind PetPrep. */
+/** The legal entity behind PetPrep (site.company). */
 function companyLd() {
   const c = site.company;
   return {

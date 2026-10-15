@@ -557,7 +557,7 @@ const en: Dictionary = {
           heading: "Stage",
           paragraphs: [
             "PetPrep is pre-launch, with a closed beta planned. The first market is Slovenia and the region, followed by DACH and the UK; the product is built for global localization from day one.",
-            "Founder: David Tacer, software developer and entrepreneur (DATA VALLIS d.o.o., Maribor, Slovenia). More [about us](page:about).",
+            "Founder: David Tacer, software developer and entrepreneur (Data Vallis David Tacer s.p., Dravograd, Slovenia). More [about us](page:about).",
           ],
         },
         { type: "callout", title: "Request the investor brief.", text: "We share the brief, deck and data room on request.", tone: "dark" },
@@ -816,7 +816,7 @@ const en: Dictionary = {
       meta: {
         title: "About PetPrep — company, founder and how we source pet facts",
         description:
-          "Who makes PetPrep: DATA VALLIS d.o.o. from Maribor, Slovenia, founder David Tacer, our mission, and how the animal register sources and checks its facts.",
+          "Who makes PetPrep: Data Vallis David Tacer s.p. from Dravograd, Slovenia, founder David Tacer, our mission, and how the animal register sources and checks its facts.",
       },
       navLabel: "About us",
       eyebrow: "About us",
@@ -828,7 +828,7 @@ const en: Dictionary = {
           id: "company",
           heading: "The company",
           paragraphs: [
-            "PetPrep is a product of DATA VALLIS d.o.o., a software company with its registered office in Maribor, Slovenia. The same company operates this website and the PetPrep app and is the controller of personal data (see the [privacy policy](page:privacy)).",
+            "PetPrep is a product of Data Vallis David Tacer s.p., a software development business (sole proprietorship) with its registered office in Dravograd, Slovenia. The same business operates this website and the PetPrep app and is the controller of personal data (see the [privacy policy](page:privacy)).",
           ],
         },
         { type: "company" },

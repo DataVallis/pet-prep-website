@@ -11,7 +11,7 @@ export function getDictionary(locale: Locale): Dictionary {
   return dictionaries[locale];
 }
 
-/** "Ulica Šercerjeve brigade 5, 2000 Maribor, Slovenia". */
+/** e.g. "Robindvor 39, 2370 Dravograd, Slovenia". */
 export function companyAddress(locale: Locale): string {
   const c = site.company;
   return `${c.street}, ${c.postalCode} ${c.city}, ${c.country[locale]}`;
@@ -23,7 +23,7 @@ export const companyIdLabels: Record<Locale, { vat: string; vatPayer: string; re
   sl: { vat: "ID za DDV", vatPayer: "zavezanec za DDV", registration: "Matična številka", legalName: "Podjetje", address: "Sedež", web: "Spletna stran" },
 };
 
-/** "VAT ID SI89424999 (registered for VAT), company registration no. 8552967000". */
+/** e.g. "VAT ID SI36130800 (registered for VAT), company registration no. 6560024000". */
 export function companyIds(locale: Locale): string {
   const c = site.company;
   const l = companyIdLabels[locale];
