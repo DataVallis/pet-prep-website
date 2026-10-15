@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -381,6 +381,9 @@ const sl: RegistryCopy = {
     windpipe_collapse_breathing: "Pri pasmi se lahko pojavi kolaps sapnika: obročki sapnika se sesedejo in otežijo dihanje.",
     eye_problems_pra_cataracts_entropion: "Pri pasmi se pojavljajo težave z očmi, na primer progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, siva mrena, ki zamegli lečo, in navznoter zavihane veke (entropij); na voljo so pregledi oči.",
     elbow_dysplasia_arthritis: "Pri pasmi se lahko pojavi displazija komolca, slabo razvit komolčni sklep, ki sčasoma lahko vodi v artritis.",
+    entropion: "Pri pasmi se lahko pojavi entropij — veke, zavihane navznoter, ki dražijo oko; vprašajte za pregledane oči staršev.",
+    autoimmune_conditions: "Pri pasmi se lahko pojavijo avtoimunske bolezni, pri katerih se telo odziva proti samemu sebi.",
+    ear_infections_prone: "Pasma je nagnjena k vnetjem ušes; skrbno pazite na higieno ušes.",
     cm_sm_screening: "Pri pasmi se lahko pojavita Chiarijeva malformacija in siringomielija, boleča bolezen z votlinicami, polnimi tekočine, v hrbtenjači ob možganih; vzrediteljem svetujejo pregled staršev (v Združenem kraljestvu: shema BVA/KC).",
     prominent_eyes_injury_dry_eye: "Izbuljene oči se lažje poškodujejo, na njih pa lahko nastanejo razjede in izsušenost; pri pasmi se pojavljata tudi suho oko in češnjevo oko (izpad žleze tretje veke).",
     legg_perthes: "Pri pasmi se lahko pojavi Legg-Perthesova bolezen, boleče stanje, pri katerem kolčni sklep odmre in razpade.",
@@ -769,6 +772,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča do eno uro gibanja na dan in česanje enkrat na teden, življenjska doba pa je več kot 10 let. PDSA ga opisuje kot potrpežljivega psa, ki se z otroki zelo dobro razume in ima rad družbo, a ima velik apetit, zato je treba paziti na težo; svetuje vsakodnevni pregled kožnih gub in premor med obrokom in gibanjem. American Kennel Club dodaja, da ga nos rad odpelje drugam, zato sta pomembna varen povodec in ograjen prostor.",
       ],
       sources: ["S320", "S321", "S322", "S323", "S324"],
+    },
+    hungarian_vizsla: {
+      aka: "vižla, madžarska vižla, Hungarian Vizsla",
+      text: [
+        "Madžarski kratkodlaki ptičar ali vižla je srednje velik, eleganten lovski pes z Madžarske s kratko rdečkasto zlato dlako. Standard FCI opisuje živahnega, prijaznega in uravnoteženega psa, ki se zlahka uči in pri delu ostaja v tesnem stiku z vodnikom; barve so odtenki rdečkasto zlate in temno peščeno zlate. The Royal Kennel Club v programu Breed Watch za pasmo ne navaja posebnih točk za pozornost sodnikov.",
+        "The Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje enkrat na teden, življenjska doba pa je več kot 12 let. PDSA ga opisuje kot psa, ki je zelo navezan na ljudi, ima rad družbo in lahko trpi zaradi ločitvene tesnobe, ko ostane sam; s starejšimi otroki se dobro razume, za dom z zelo majhnimi otroki in za začetnike pa ga PDSA ne priporoča, zaradi močnega lovskega nagona pa tudi ne skupaj z manjšimi živalmi. PDSA svetuje tudi premor med obrokom in gibanjem.",
+      ],
+      sources: ["S327", "S328", "S329"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
