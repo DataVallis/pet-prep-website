@@ -96,4 +96,7 @@ else
   echo "WARNING: https://petprep.si did not answer through Caddy yet (Caddyfile change deployed? DNS?)."
 fi
 docker image prune -f >/dev/null || true
+# Build cache: always capped (disk hygiene, David 2026-10-15) — the old age filter let it
+# grow to ~20 GB with several builds a day. Keeps the most recently used 1 GB.
+docker builder prune -af --keep-storage 1GB >/dev/null || true
 echo "Deployed ${SHA}."
