@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary" };
 
 const en: RegistryCopy = {
   hub: {
@@ -364,6 +364,9 @@ const en: RegistryCopy = {
     windpipe_collapse_breathing: "Tracheal collapse, where the rings of the windpipe collapse and make breathing difficult, can occur in the breed.",
     eye_problems_pra_cataracts_entropion: "Eye problems occur in the breed, such as progressive retinal atrophy, which can slowly lead to blindness, cataracts, which cloud the lens, and eyelids that turn inwards (entropion); eye testing is available.",
     elbow_dysplasia_arthritis: "Elbow dysplasia, a poorly developed elbow joint that can eventually lead to arthritis, can occur in the breed.",
+    entropion: "Entropion, where the eyelids turn inwards and irritate the eye, can occur in the breed; ask for eye-checked parents.",
+    autoimmune_conditions: "Autoimmune conditions, where the body reacts against itself, can occur in the breed.",
+    ear_infections_prone: "The breed is prone to ear infections; keep a close eye on ear hygiene.",
     cm_sm_screening: "Chiari-like malformation and syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, can occur in the breed; breeders are advised to screen the parents (UK: BVA/KC scheme).",
     prominent_eyes_injury_dry_eye: "Prominent eyes are more easily injured and can develop ulcers and dryness; dry eye and cherry eye also occur in the breed.",
     legg_perthes: "Legg-Perthes disease, a painful condition in which the hip joint dies and crumbles, can occur in the breed.",
@@ -752,6 +755,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to an hour of exercise a day and grooming once a week, and gives its lifespan as over 10 years. PDSA describes a tolerant dog that gets along with children very well and loves company, with a healthy appetite that needs watching; it advises checking the skin folds every day and leaving a gap between eating and exercise. The AKC adds that its nose can lead it astray, so secure leads and fenced areas matter.",
       ],
       sources: ["S320", "S321", "S322", "S323", "S324"],
+    },
+    hungarian_vizsla: {
+      aka: "Vizsla, Magyar Vizsla, Hungarian Pointer",
+      text: [
+        "The Hungarian Vizsla is a medium-sized, elegant gun dog from Hungary with a short russet gold coat. The FCI standard describes a lively, friendly, evenly tempered dog that is easy to train and keeps close contact with its handler; its colours are shades of russet gold and dark sandy gold. The Royal Kennel Club's Breed Watch lists no points of concern specific to the breed.",
+        "The Royal Kennel Club recommends more than two hours of exercise a day and grooming once a week, and gives its lifespan as over 12 years. PDSA describes a very people-oriented dog that loves company and can suffer from separation anxiety when left alone; it gets on well with older children, but PDSA would not recommend it with very young children or for first-time owners, and because of its high prey drive it advises against keeping it with smaller pets. PDSA also advises leaving a gap between eating and exercise.",
+      ],
+      sources: ["S327", "S328", "S329"],
     },
     british_shorthair: {
       aka: "British Blue",
