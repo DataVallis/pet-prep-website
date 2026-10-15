@@ -268,6 +268,8 @@ const en: RegistryCopy = {
       dna_mac: "DNA test for susceptibility to Mycobacterium avium complex infection (MAC)",
       dna_imgd: "DNA test for inherited myopathy of Great Danes (IMGD), a muscle-wasting disease",
       dna_poag: "DNA test for primary open-angle glaucoma (POAG), an inherited eye disease that can lead to blindness",
+      dna_aon: "DNA test for adult-onset neuropathy (AON), an inherited nerve disease",
+      dna_fn: "DNA test for familial nephropathy (FN), an inherited kidney disease",
       patella_scheme: "Kneecap check for luxating patella before breeding",
       dna_hcm_mc: "DNA test for hypertrophic cardiomyopathy (MC HCM)",
       dna_sma: "DNA test for spinal muscular atrophy (SMA)",
@@ -367,6 +369,7 @@ const en: RegistryCopy = {
     entropion: "Entropion, where the eyelids turn inwards and irritate the eye, can occur in the breed; ask for eye-checked parents.",
     autoimmune_conditions: "Autoimmune conditions, where the body reacts against itself, can occur in the breed.",
     ear_infections_prone: "The breed is prone to ear infections; keep a close eye on ear hygiene.",
+    familial_nephropathy: "An inherited kidney disease (familial nephropathy) occurs in the breed; a DNA test of the parents is available.",
     cm_sm_screening: "Chiari-like malformation and syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, can occur in the breed; breeders are advised to screen the parents (UK: BVA/KC scheme).",
     prominent_eyes_injury_dry_eye: "Prominent eyes are more easily injured and can develop ulcers and dryness; dry eye and cherry eye also occur in the breed.",
     legg_perthes: "Legg-Perthes disease, a painful condition in which the hip joint dies and crumbles, can occur in the breed.",
@@ -763,6 +766,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends more than two hours of exercise a day and grooming once a week, and gives its lifespan as over 12 years. PDSA describes a very people-oriented dog that loves company and can suffer from separation anxiety when left alone; it gets on well with older children, but PDSA would not recommend it with very young children or for first-time owners, and because of its high prey drive it advises against keeping it with smaller pets. PDSA also advises leaving a gap between eating and exercise.",
       ],
       sources: ["S327", "S328", "S329"],
+    },
+    english_cocker_spaniel: {
+      aka: "Cocker Spaniel (UK), English Cocker, Merry Cocker",
+      text: [
+        "The English Cocker Spaniel — in Britain simply the Cocker Spaniel — is a different breed from the American Cocker Spaniel. The FCI standard describes a merry, sturdy, sporting dog, well balanced and compact, with low-set lobular ears and a flat, silky coat; the AKC standard calls it merry and affectionate, of equable disposition, and lists solid black, liver and shades of red as well as parti-colours with white. The Royal Kennel Club's Breed Watch lists no points of concern specific to the breed.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day and grooming every day, and gives its lifespan as over 10 years; a VetCompass study of UK English Cocker Spaniels found a median age at death of 11.44 years. PDSA says that thanks to its patient personality it tends to get along well with children, always under supervision, but warns that it is known for separation anxiety and should never be left alone for more than four hours. PDSA also advises a daily brush and leaving a gap between eating and exercise.",
+      ],
+      sources: ["S336", "S337", "S339", "S342", "S343"],
     },
     british_shorthair: {
       aka: "British Blue",

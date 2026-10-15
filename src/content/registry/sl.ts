@@ -285,6 +285,8 @@ const sl: RegistryCopy = {
       dna_mac: "Test DNK za dovzetnost za okužbo z bakterijami Mycobacterium avium (MAC)",
       dna_imgd: "Test DNK za dedno miopatijo nemških dog (IMGD), bolezen, pri kateri mišice slabijo",
       dna_poag: "Test DNK za primarni glavkom odprtega zakota (POAG), dedno očesno bolezen, ki lahko vodi v slepoto",
+      dna_aon: "Test DNK za nevropatijo z začetkom v odrasli dobi (AON), dedno bolezen živcev",
+      dna_fn: "Test DNK za družinsko nefropatijo (FN), dedno bolezen ledvic",
       patella_scheme: "Pregled pogačic za zdrsavanje pogačice (luksacijo patele) pred parjenjem",
       dna_dings2: "Test DNK za »plesočo bolezen dobermanov« (DINGS2), bolezen živcev in mišic",
       dna_ams: "Test DNK za akralni mutilacijski sindrom (AMS), motnjo živcev, zaradi katere pes v tačkah ne čuti bolečine",
@@ -384,6 +386,7 @@ const sl: RegistryCopy = {
     entropion: "Pri pasmi se lahko pojavi entropij — veke, zavihane navznoter, ki dražijo oko; vprašajte za pregledane oči staršev.",
     autoimmune_conditions: "Pri pasmi se lahko pojavijo avtoimunske bolezni, pri katerih se telo odziva proti samemu sebi.",
     ear_infections_prone: "Pasma je nagnjena k vnetjem ušes; skrbno pazite na higieno ušes.",
+    familial_nephropathy: "Pri pasmi se pojavlja dedna bolezen ledvic (družinska nefropatija); za starše je na voljo test DNK.",
     cm_sm_screening: "Pri pasmi se lahko pojavita Chiarijeva malformacija in siringomielija, boleča bolezen z votlinicami, polnimi tekočine, v hrbtenjači ob možganih; vzrediteljem svetujejo pregled staršev (v Združenem kraljestvu: shema BVA/KC).",
     prominent_eyes_injury_dry_eye: "Izbuljene oči se lažje poškodujejo, na njih pa lahko nastanejo razjede in izsušenost; pri pasmi se pojavljata tudi suho oko in češnjevo oko (izpad žleze tretje veke).",
     legg_perthes: "Pri pasmi se lahko pojavi Legg-Perthesova bolezen, boleče stanje, pri katerem kolčni sklep odmre in razpade.",
@@ -780,6 +783,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje enkrat na teden, življenjska doba pa je več kot 12 let. PDSA ga opisuje kot psa, ki je zelo navezan na ljudi, ima rad družbo in lahko trpi zaradi ločitvene tesnobe, ko ostane sam; s starejšimi otroki se dobro razume, za dom z zelo majhnimi otroki in za začetnike pa ga PDSA ne priporoča, zaradi močnega lovskega nagona pa tudi ne skupaj z manjšimi živalmi. PDSA svetuje tudi premor med obrokom in gibanjem.",
       ],
       sources: ["S327", "S328", "S329"],
+    },
+    english_cocker_spaniel: {
+      aka: "koker španjel, angleški koker, English Cocker Spaniel",
+      text: [
+        "Angleški koker španjel — v Veliki Britaniji preprosto koker španjel — je druga pasma kot ameriški koker španjel. Standard FCI opisuje veselega, čvrstega lovskega psa, uravnoteženega in kompaktnega, z nizko nasajenimi uhlji in ploskim, svilnatim kožuhom; standard AKC ga opisuje kot veselega in ljubečega psa uravnotežene narave ter navaja enobarvno črno, čokoladno rjavo in odtenke rdeče ter večbarvne vzorce z belo. The Royal Kennel Club v programu Breed Watch za pasmo ne navaja posebnih točk za pozornost sodnikov.",
+        "The Royal Kennel Club priporoča do eno uro gibanja na dan in česanje vsak dan, življenjska doba pa je več kot 10 let; raziskava VetCompass med britanskimi angleškimi koker španjeli je ugotovila srednjo starost ob smrti 11,44 leta. PDSA piše, da se zaradi potrpežljive narave praviloma dobro razume z otroki, vedno pod nadzorom, a opozarja, da je znan po ločitveni tesnobi in naj nikoli ne ostane sam več kot štiri ure. PDSA svetuje tudi vsakodnevno česanje in premor med obrokom in gibanjem.",
+      ],
+      sources: ["S336", "S337", "S339", "S342", "S343"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
