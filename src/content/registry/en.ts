@@ -267,6 +267,7 @@ const en: RegistryCopy = {
       dna_vwd1: "DNA test for von Willebrand disease type 1 (vWD1)",
       dna_mac: "DNA test for susceptibility to Mycobacterium avium complex infection (MAC)",
       dna_imgd: "DNA test for inherited myopathy of Great Danes (IMGD), a muscle-wasting disease",
+      dna_poag: "DNA test for primary open-angle glaucoma (POAG), an inherited eye disease that can lead to blindness",
       patella_scheme: "Kneecap check for luxating patella before breeding",
       dna_hcm_mc: "DNA test for hypertrophic cardiomyopathy (MC HCM)",
       dna_sma: "DNA test for spinal muscular atrophy (SMA)",
@@ -355,6 +356,9 @@ const en: RegistryCopy = {
     hypothyroidism: "An underactive thyroid (hypothyroidism), which can affect weight, skin and energy levels, can occur in the breed.",
     cataracts: "Cataracts, which cloud the lens of the eye and can lead to vision loss, can occur in the breed.",
     pra_inherited_blindness: "Progressive retinal atrophy, an inherited eye disease that can slowly lead to blindness, can occur in the breed.",
+    eyelids_turned: "Eyelids that turn inwards (entropion) or outwards (ectropion) can occur in the breed; ask for eye-checked parents.",
+    glaucoma_poag: "Primary open-angle glaucoma, where fluid builds up inside the eye and causes pain and possibly blindness, can occur in the breed; a DNA test for the parents exists.",
+    skin_fold_dermatitis: "The loose skin forms folds that can become sore and infected; they need checking every day and keeping clean and dry.",
     eyelid_problems: "Eyelid problems can occur in the breed: eyelids that turn inwards (entropion) or outwards (ectropion), and cherry eye, where the third eyelid pops out.",
     pra_pk_def: "Two inherited conditions occur in the breed: progressive retinal atrophy, an eye disease that can lead to blindness, and pyruvate kinase deficiency, a blood disorder; DNA tests of the parents let breeders avoid them.",
     windpipe_collapse_breathing: "Tracheal collapse, where the rings of the windpipe collapse and make breathing difficult, can occur in the breed.",
@@ -740,6 +744,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends more than 2 hours of exercise a day and grooming more than once a week, and gives its lifespan as over 10 years. The AKC writes that it is not a good choice for first-time dog owners, fares best with older, responsible children and should not be left alone for long; PetMD notes a high prey drive, that it may try to herd children, and that it needs constant daily training and early socialisation.",
       ],
       sources: ["S312", "S313", "S314", "S315", "S316", "S317"],
+    },
+    basset_hound: {
+      aka: "Basset",
+      text: [
+        "The Basset Hound is a short-legged scent hound from Great Britain. The FCI standard describes a hound of considerable substance, well balanced, placid, never aggressive or timid, and affectionate, with low-set, long, velvety ears, a smooth, short coat and the colours black, white and tan or lemon and white. The Royal Kennel Club's Breed Watch asks show judges to watch for eyelids that turn in or out, very long ears, sore skin folds and excess skin.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day and grooming once a week, and gives its lifespan as over 10 years. PDSA describes a tolerant dog that gets along with children very well and loves company, with a healthy appetite that needs watching; it advises checking the skin folds every day and leaving a gap between eating and exercise. The AKC adds that its nose can lead it astray, so secure leads and fenced areas matter.",
+      ],
+      sources: ["S320", "S321", "S322", "S323", "S324"],
     },
     british_shorthair: {
       aka: "British Blue",

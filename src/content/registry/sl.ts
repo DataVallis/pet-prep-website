@@ -284,6 +284,7 @@ const sl: RegistryCopy = {
       dna_vwd1: "Test DNK za von Willebrandovo bolezen tipa 1 (vWD1)",
       dna_mac: "Test DNK za dovzetnost za okužbo z bakterijami Mycobacterium avium (MAC)",
       dna_imgd: "Test DNK za dedno miopatijo nemških dog (IMGD), bolezen, pri kateri mišice slabijo",
+      dna_poag: "Test DNK za primarni glavkom odprtega zakota (POAG), dedno očesno bolezen, ki lahko vodi v slepoto",
       patella_scheme: "Pregled pogačic za zdrsavanje pogačice (luksacijo patele) pred parjenjem",
       dna_dings2: "Test DNK za »plesočo bolezen dobermanov« (DINGS2), bolezen živcev in mišic",
       dna_ams: "Test DNK za akralni mutilacijski sindrom (AMS), motnjo živcev, zaradi katere pes v tačkah ne čuti bolečine",
@@ -372,6 +373,9 @@ const sl: RegistryCopy = {
     hypothyroidism: "Pri pasmi se lahko pojavi premalo delujoča ščitnica (hipotiroza), ki vpliva na težo, kožo in energijo.",
     cataracts: "Pri pasmi se lahko pojavi siva mrena, ki zamegli očesno lečo in lahko vodi v slabši vid.",
     pra_inherited_blindness: "Pri pasmi se lahko pojavi progresivna atrofija mrežnice, dedna očesna bolezen, ki lahko počasi vodi v slepoto.",
+    eyelids_turned: "Pri pasmi se lahko pojavijo veke, zavihane navznoter (entropij) ali navzven (ektropij); vprašajte za pregledane oči staršev.",
+    glaucoma_poag: "Pri pasmi se lahko pojavi primarni glavkom odprtega zakota, ko se v očesu nabira tekočina, kar povzroča bolečino in lahko slepoto; za starše obstaja test DNK.",
+    skin_fold_dermatitis: "Ohlapna koža dela gube, ki se lahko vnamejo in okužijo; vsak dan jih je treba pregledati ter ohranjati čiste in suhe.",
     eyelid_problems: "Pri pasmi se lahko pojavijo težave z vekami: navznoter (entropij) ali navzven (ektropij) zavihane veke in »češnjevo oko«, ko izstopi tretja veka.",
     pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
     windpipe_collapse_breathing: "Pri pasmi se lahko pojavi kolaps sapnika: obročki sapnika se sesedejo in otežijo dihanje.",
@@ -757,6 +761,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje večkrat na teden, življenjska doba pa je več kot 10 let. American Kennel Club piše, da ni dobra izbira za prvega psa, da se najbolje znajde v družini s starejšimi, odgovornimi otroki in da ne sme biti dolgo sam; PetMD omenja močan lovski nagon, da lahko poskuša »pasti« otroke ter da potrebuje vsakodnevno šolanje in zgodnjo socializacijo.",
       ],
       sources: ["S312", "S313", "S314", "S315", "S316", "S317"],
+    },
+    basset_hound: {
+      aka: "basset hound, basset",
+      text: [
+        "Baset je kratkonog goniški pes, ki sledi vonju, iz Velike Britanije. Standard FCI opisuje čvrstega, uravnoteženega goniča, ki je miren, nikoli napadalen ali plašen, in ljubeč, z nizko nastavljenimi, dolgimi, žametnimi ušesi, gladko kratko dlako ter v barvah črno-belo-rjavi ali limonasto-beli. The Royal Kennel Club v programu Breed Watch sodnike na razstavah prosi, naj bodo pozorni na zavihane veke, predolga ušesa, vnete kožne gube in odvečno kožo.",
+        "The Royal Kennel Club priporoča do eno uro gibanja na dan in česanje enkrat na teden, življenjska doba pa je več kot 10 let. PDSA ga opisuje kot potrpežljivega psa, ki se z otroki zelo dobro razume in ima rad družbo, a ima velik apetit, zato je treba paziti na težo; svetuje vsakodnevni pregled kožnih gub in premor med obrokom in gibanjem. American Kennel Club dodaja, da ga nos rad odpelje drugam, zato sta pomembna varen povodec in ograjen prostor.",
+      ],
+      sources: ["S320", "S321", "S322", "S323", "S324"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
