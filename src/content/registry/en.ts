@@ -271,6 +271,8 @@ const en: RegistryCopy = {
       dna_aon: "DNA test for adult-onset neuropathy (AON), an inherited nerve disease",
       dna_fn: "DNA test for familial nephropathy (FN), an inherited kidney disease",
       patella_scheme: "Kneecap check for luxating patella before breeding",
+      breed_health_scheme: "The breed club's health scheme for the parents",
+      hemivertebrae_scheme: "X-ray of the parents' spine for hemivertebrae (malformed spinal bones), after 12 months of age",
       dna_hcm_mc: "DNA test for hypertrophic cardiomyopathy (MC HCM)",
       dna_sma: "DNA test for spinal muscular atrophy (SMA)",
       dna_pk_def: "DNA test for pyruvate kinase deficiency (PK def)",
@@ -378,6 +380,7 @@ const en: RegistryCopy = {
     chiari_malformation: "Chiari-like malformation with syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, can occur in the breed.",
     cataracts_entropion: "Cataracts, which cloud the lens of the eye, and eyelids that turn inwards (entropion) can occur in the breed; ask for parents tested under the eye scheme.",
     periodontal_daily_brushing: "The breed is prone to gum (periodontal) disease, so brushing the teeth every day with a dog toothpaste is advised.",
+    eye_problems_shallow_sockets: "Eye problems occur in the breed, such as dry eye, eye infections and ulcers on the surface of the eye; the shallow eye sockets also make eye injuries more likely.",
     eye_problems_dry_eye_entropion_lens_luxation: "Eye problems occur in the breed, such as dry eye, eyelids that roll inwards (entropion) and a dislocated lens (lens luxation); eye testing is available.",
     heart_valve_screening: "Heart disease can occur in the breed; heart scans can check the parents for heart valve problems before breeding.",
     dental_weight_problems: "A large UK study names dental disease and being overweight as particularly common problems in the breed — problems owners can help prevent; crowded teeth and puppy teeth that do not fall out also occur.",
@@ -786,6 +789,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming every day, says the breed does not shed and gives its lifespan as over 12 years. PDSA describes a bright, friendly and affectionate dog that can be reserved with strangers but, with the right socialisation when young, can learn to be confident and sociable. PetMD warns that it can develop separation anxiety when left alone for too long, says interactions with young children must be supervised and advises brushing its teeth every day.",
       ],
       sources: ["S346", "S347", "S348", "S351"],
+    },
+    pug: {
+      aka: "Carlin, Pug dog",
+      text: [
+        "The Pug is a small companion dog from China, today under British patronage at the FCI. The FCI standard describes a decidedly square and cobby dog — \"multum in parvo\" — with great charm, dignity and intelligence and an even-tempered, happy and lively disposition, an ideal weight of 6.3–8.1 kg, a fine, smooth, short and glossy coat in silver, apricot, fawn or black, and a tail tightly curled over the hip. It asks for fairly large, well-opened nostrils and finds pinched nostrils and a heavy over-nose wrinkle unacceptable. The Royal Kennel Club places the breed in Breed Watch Category 3, with points of concern that include breathing difficulty, protruding eyes, skin-fold dermatitis and being too fat.",
+        "PDSA calls the Pug a severely brachycephalic (flat-faced) breed that can easily become out of breath, advises avoiding exercise in the heat and says its vets would strongly recommend a breed with a normal snout or a Pug cross-breed instead. The Royal Kennel Club recommends up to 1 hour of exercise a day and grooming once a week, says the breed sheds and gives its lifespan as over 10 years. PDSA describes a dog that often gets on well with children and other pets but adores company and does not do well if left alone; PetMD advises cleaning and drying the facial skin folds every day and notes that obesity is common in the breed.",
+      ],
+      sources: ["S354", "S355", "S356", "S357", "S359"],
     },
     british_shorthair: {
       aka: "British Blue",
