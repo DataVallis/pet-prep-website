@@ -288,6 +288,8 @@ const sl: RegistryCopy = {
       dna_aon: "Test DNK za nevropatijo z začetkom v odrasli dobi (AON), dedno bolezen živcev",
       dna_fn: "Test DNK za družinsko nefropatijo (FN), dedno bolezen ledvic",
       patella_scheme: "Pregled pogačic za zdrsavanje pogačice (luksacijo patele) pred parjenjem",
+      breed_health_scheme: "Zdravstveni program pasemskega kluba za starša",
+      hemivertebrae_scheme: "Rentgen hrbtenice staršev za hemivertebre (nepravilno oblikovana vretenca), po 12. mesecu starosti",
       dna_dings2: "Test DNK za »plesočo bolezen dobermanov« (DINGS2), bolezen živcev in mišic",
       dna_ams: "Test DNK za akralni mutilacijski sindrom (AMS), motnjo živcev, zaradi katere pes v tačkah ne čuti bolečine",
       dna_dams: "Test DNK za diseritropoetsko anemijo in miopatijo (DAMS), motnjo krvi in mišic",
@@ -395,6 +397,7 @@ const sl: RegistryCopy = {
     chiari_malformation: "Pri pasmi se lahko pojavi Chiarijeva malformacija s siringomielijo — boleče stanje, pri katerem se v hrbtenjači blizu možganov tvorijo votline s tekočino.",
     cataracts_entropion: "Pri pasmi se lahko pojavita siva mrena, ki zamegli očesno lečo, in navznoter zavihane veke (entropij); vprašajte za starša s pregledanimi očmi.",
     periodontal_daily_brushing: "Pasma je nagnjena k bolezni dlesni (parodontalni bolezni), zato je priporočljivo vsakodnevno ščetkanje zob s pasjo zobno pasto.",
+    eye_problems_shallow_sockets: "Pri pasmi se pojavljajo težave z očmi, na primer suho oko, okužbe oči in razjede na površini očesa; zaradi plitvih očesnih votlin so poškodbe oči tudi verjetnejše.",
     eye_problems_dry_eye_entropion_lens_luxation: "Pri pasmi se pojavljajo težave z očmi, na primer suho oko, navznoter zavihane veke (entropij) in izpah leče; na voljo je pregled oči.",
     heart_valve_screening: "Pri pasmi se lahko pojavi bolezen srca; s pregledom srca lahko pred parjenjem preverijo, ali imajo starši težave s srčnimi zaklopkami.",
     dental_weight_problems: "Velika britanska raziskava navaja bolezni zob in prekomerno težo kot posebej pogosti težavi pri pasmi — lastniki ju lahko preprečujejo; pojavljajo se tudi prenatrpani zobje in mlečni zobje, ki ne izpadejo.",
@@ -803,6 +806,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje vsak dan, navaja, da ne izgublja dlake, življenjska doba pa je več kot 12 let. PDSA ga opisuje kot bistrega, prijaznega in ljubečega psa, ki je lahko do neznancev zadržan, a se s pravo socializacijo v mladosti lahko nauči samozavesti in družabnosti. PetMD opozarja, da lahko razvije ločitveno tesnobo, če je predolgo sam, da morajo biti srečanja z majhnimi otroki pod nadzorom, in svetuje vsakodnevno ščetkanje zob.",
       ],
       sources: ["S346", "S347", "S348", "S351"],
+    },
+    pug: {
+      aka: "mopsek, Pug, Carlin",
+      text: [
+        "Mops je majhen pes družnik s Kitajske, pri FCI pod britanskim pokroviteljstvom. Standard FCI opisuje izrazito kvadratnega in čokatega psa — »multum in parvo« — z velikim šarmom, dostojanstvom in inteligenco ter umirjeno, veselo in živahno naravo, z idealno težo 6,3–8,1 kg, fino, gladko, kratko in svetlečo dlako srebrne, marelične, plave ali črne barve in repom, tesno zavitim čez bok. Zahteva dokaj velike, dobro odprte nosnice, stisnjene nosnice in težka guba nad nosom pa so nesprejemljive. The Royal Kennel Club pasmo uvršča v 3. kategorijo programa Breed Watch, med točkami za pozornost pa so težave z dihanjem, izbuljene oči, dermatitis v kožnih gubah in prekomerna teža.",
+        "PDSA mopsa opisuje kot pasmo z močno sploščenim obrazom (brahicefalno), ki se hitro zadiha, svetuje, naj se ne giba v vročini, njihovi veterinarji pa toplo priporočajo raje pasmo z normalnim gobčkom ali mešanca z mopsom. The Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje enkrat na teden, navaja, da izgublja dlako, življenjska doba pa je več kot 10 let. PDSA ga opisuje kot psa, ki se pogosto dobro razume z otroki in drugimi ljubljenčki, a ima zelo rad družbo in ne prenaša dobro samote; PetMD svetuje vsakodnevno čiščenje in sušenje kožnih gub na obrazu in navaja, da je debelost pri pasmi pogosta.",
+      ],
+      sources: ["S354", "S355", "S356", "S357", "S359"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
