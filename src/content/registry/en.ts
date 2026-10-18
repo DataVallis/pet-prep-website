@@ -374,6 +374,10 @@ const en: RegistryCopy = {
     prominent_eyes_injury_dry_eye: "Prominent eyes are more easily injured and can develop ulcers and dryness; dry eye and cherry eye also occur in the breed.",
     legg_perthes: "Legg-Perthes disease, a painful condition in which the hip joint dies and crumbles, can occur in the breed.",
     hydrocephalus: "Hydrocephalus, a build-up of fluid around the brain, can occur in the breed.",
+    heart_disease_pda: "Heart disease can occur in the breed, including patent ductus arteriosus, a blood vessel near the heart that fails to close after birth; a vet can listen for it at the puppy's first check-up.",
+    chiari_malformation: "Chiari-like malformation with syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, can occur in the breed.",
+    cataracts_entropion: "Cataracts, which cloud the lens of the eye, and eyelids that turn inwards (entropion) can occur in the breed; ask for parents tested under the eye scheme.",
+    periodontal_daily_brushing: "The breed is prone to gum (periodontal) disease, so brushing the teeth every day with a dog toothpaste is advised.",
     eye_problems_dry_eye_entropion_lens_luxation: "Eye problems occur in the breed, such as dry eye, eyelids that roll inwards (entropion) and a dislocated lens (lens luxation); eye testing is available.",
     heart_valve_screening: "Heart disease can occur in the breed; heart scans can check the parents for heart valve problems before breeding.",
     dental_weight_problems: "A large UK study names dental disease and being overweight as particularly common problems in the breed — problems owners can help prevent; crowded teeth and puppy teeth that do not fall out also occur.",
@@ -774,6 +778,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to an hour of exercise a day and grooming every day, and gives its lifespan as over 10 years; a VetCompass study of UK English Cocker Spaniels found a median age at death of 11.44 years. PDSA says that thanks to its patient personality it tends to get along well with children, always under supervision, but warns that it is known for separation anxiety and should never be left alone for more than four hours. PDSA also advises a daily brush and leaving a gap between eating and exercise.",
       ],
       sources: ["S336", "S337", "S339", "S342", "S343"],
+    },
+    maltese: {
+      aka: "Bichon Maltais, Maltese Terrier",
+      text: [
+        "The Maltese is a toy dog from the central Mediterranean, today under Italian patronage at the FCI. The FCI standard describes a small dog with a longish body, lively, affectionate, very calm and very intelligent, weighing 3–4 kg, with very long, dense, silky hair that falls heavily over the whole body. The coat has no undercoat, and pure white is the only colour (a pale ivory tinge is permitted). The Royal Kennel Club's Breed Watch lists no points of concern specific to the breed.",
+        "The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming every day, says the breed does not shed and gives its lifespan as over 12 years. PDSA describes a bright, friendly and affectionate dog that can be reserved with strangers but, with the right socialisation when young, can learn to be confident and sociable. PetMD warns that it can develop separation anxiety when left alone for too long, says interactions with young children must be supervised and advises brushing its teeth every day.",
+      ],
+      sources: ["S346", "S347", "S348", "S351"],
     },
     british_shorthair: {
       aka: "British Blue",
