@@ -298,6 +298,7 @@ const sl: RegistryCopy = {
       dna_pra_cord1: "Test DNK za progresivno atrofijo mrežnice (PRA cord1)",
       dna_bbs2_pra: "Test DNK za progresivno atrofijo mrežnice (BBS2-PRA)",
       dna_cnga1_pra: "Test DNK za progresivno atrofijo mrežnice (CNGA1-PRA)",
+      dna_pra_rcd2: "Test DNK za progresivno atrofijo mrežnice (PRA-rcd2)",
       dna_vwd3: "Test DNK za von Willebrandovo bolezen tipa 3 (vWD3), dedno motnjo strjevanja krvi",
       dna_hcm_mc: "Test DNK za hipertrofično kardiomiopatijo (MC HCM)",
       dna_sma: "Test DNK za spinalno mišično atrofijo (SMA)",
@@ -814,6 +815,14 @@ const sl: RegistryCopy = {
         "PDSA mopsa opisuje kot pasmo z močno sploščenim obrazom (brahicefalno), ki se hitro zadiha, svetuje, naj se ne giba v vročini, njihovi veterinarji pa toplo priporočajo raje pasmo z normalnim gobčkom ali mešanca z mopsom. The Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje enkrat na teden, navaja, da izgublja dlako, življenjska doba pa je več kot 10 let. PDSA ga opisuje kot psa, ki se pogosto dobro razume z otroki in drugimi ljubljenčki, a ima zelo rad družbo in ne prenaša dobro samote; PetMD svetuje vsakodnevno čiščenje in sušenje kožnih gub na obrazu in navaja, da je debelost pri pasmi pogosta.",
       ],
       sources: ["S354", "S355", "S356", "S357", "S359"],
+    },
+    rough_collie: {
+      aka: "škotski ovčar, collie, Rough Collie",
+      text: [
+        "Dolgodlaki škotski ovčar je velik ovčarski pes iz Velike Britanije. Standard FCI opisuje psa izjemne lepote, ki stoji z mirnim dostojanstvom, prijazne narave brez sledu živčnosti ali napadalnosti, z zelo gosto dlako z ravno, trdo krovno dlako in s tremi barvami: soboljo, trobarvno in modri merle. Standard The Royal Kennel Club ga opisuje kot odličnega psa družnika — prijaznega, veselega in dejavnega, dobrega z otroki in drugimi psi — z višino 56–61 cm pri psih in 51–56 cm pri psicah. The Royal Kennel Club pasmo uvršča v 2. kategorijo programa Breed Watch in ne registrira mladičev iz parjenja merle × merle.",
+        "The Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje vsak dan, navaja, da izgublja dlako, življenjska doba pa je več kot 12 let. PetMD piše, da so škotski ovčarji ljubeči, posebej do otrok, in se dobro razumejo z drugimi živalmi, a ne prenašajo dobro dolge samote, ko so razburjeni, pa lahko ščipajo za gležnje in pete. Navaja tudi, da je socializacija mladička ključna in da se pri pasmi pojavlja mutacija MDR1, ki vpliva na to, kako pes presnavlja nekatera zdravila.",
+      ],
+      sources: ["S364", "S365", "S366", "S368"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",

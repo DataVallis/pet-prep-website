@@ -290,6 +290,7 @@ const en: RegistryCopy = {
       dna_pra_cord1: "DNA test for progressive retinal atrophy (PRA cord1)",
       dna_bbs2_pra: "DNA test for progressive retinal atrophy (BBS2-PRA)",
       dna_cnga1_pra: "DNA test for progressive retinal atrophy (CNGA1-PRA)",
+      dna_pra_rcd2: "DNA test for progressive retinal atrophy (PRA-rcd2)",
       dna_vwd3: "DNA test for von Willebrand disease type 3 (vWD3), an inherited bleeding disorder",
     },
   },
@@ -797,6 +798,14 @@ const en: RegistryCopy = {
         "PDSA calls the Pug a severely brachycephalic (flat-faced) breed that can easily become out of breath, advises avoiding exercise in the heat and says its vets would strongly recommend a breed with a normal snout or a Pug cross-breed instead. The Royal Kennel Club recommends up to 1 hour of exercise a day and grooming once a week, says the breed sheds and gives its lifespan as over 10 years. PDSA describes a dog that often gets on well with children and other pets but adores company and does not do well if left alone; PetMD advises cleaning and drying the facial skin folds every day and notes that obesity is common in the breed.",
       ],
       sources: ["S354", "S355", "S356", "S357", "S359"],
+    },
+    rough_collie: {
+      aka: "Collie, Collie (Rough), Long-haired Collie",
+      text: [
+        "The Rough Collie is a large pastoral dog from Great Britain. The FCI standard describes a dog of great beauty, standing with impassive dignity, with a friendly disposition and no trace of nervousness or aggressiveness, a very dense coat with a straight, harsh outer coat, and three colours: sable, tricolour and blue merle. The Royal Kennel Club standard calls it a great companion dog, friendly, happy and active, good with children and other dogs, and puts the height at 56–61 cm for dogs and 51–56 cm for bitches. The Royal Kennel Club places the breed in Breed Watch Category 2 and does not register puppies from merle-to-merle matings.",
+        "The Royal Kennel Club recommends up to 1 hour of exercise a day and grooming every day, says the breed sheds and gives its lifespan as over 12 years. PetMD says Collies are affectionate, especially with children, and good with other animals, but do not do well by themselves for long periods of time and may nip at ankles and heels when excited. It also notes that puppy socialization is crucial and that the MDR1 mutation, which affects how a dog processes certain drugs, occurs in Collies.",
+      ],
+      sources: ["S364", "S365", "S366", "S368"],
     },
     british_shorthair: {
       aka: "British Blue",
