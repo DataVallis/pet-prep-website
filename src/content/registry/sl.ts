@@ -391,6 +391,10 @@ const sl: RegistryCopy = {
     prominent_eyes_injury_dry_eye: "Izbuljene oči se lažje poškodujejo, na njih pa lahko nastanejo razjede in izsušenost; pri pasmi se pojavljata tudi suho oko in češnjevo oko (izpad žleze tretje veke).",
     legg_perthes: "Pri pasmi se lahko pojavi Legg-Perthesova bolezen, boleče stanje, pri katerem kolčni sklep odmre in razpade.",
     hydrocephalus: "Pri pasmi se lahko pojavi hidrocefalus, kopičenje tekočine okoli možganov.",
+    heart_disease_pda: "Pri pasmi se lahko pojavijo bolezni srca, tudi odprt arterijski vod (PDA) — žila ob srcu, ki se po rojstvu ne zapre; veterinar ga lahko zasliši že ob prvem pregledu mladička.",
+    chiari_malformation: "Pri pasmi se lahko pojavi Chiarijeva malformacija s siringomielijo — boleče stanje, pri katerem se v hrbtenjači blizu možganov tvorijo votline s tekočino.",
+    cataracts_entropion: "Pri pasmi se lahko pojavita siva mrena, ki zamegli očesno lečo, in navznoter zavihane veke (entropij); vprašajte za starša s pregledanimi očmi.",
+    periodontal_daily_brushing: "Pasma je nagnjena k bolezni dlesni (parodontalni bolezni), zato je priporočljivo vsakodnevno ščetkanje zob s pasjo zobno pasto.",
     eye_problems_dry_eye_entropion_lens_luxation: "Pri pasmi se pojavljajo težave z očmi, na primer suho oko, navznoter zavihane veke (entropij) in izpah leče; na voljo je pregled oči.",
     heart_valve_screening: "Pri pasmi se lahko pojavi bolezen srca; s pregledom srca lahko pred parjenjem preverijo, ali imajo starši težave s srčnimi zaklopkami.",
     dental_weight_problems: "Velika britanska raziskava navaja bolezni zob in prekomerno težo kot posebej pogosti težavi pri pasmi — lastniki ju lahko preprečujejo; pojavljajo se tudi prenatrpani zobje in mlečni zobje, ki ne izpadejo.",
@@ -791,6 +795,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča do eno uro gibanja na dan in česanje vsak dan, življenjska doba pa je več kot 10 let; raziskava VetCompass med britanskimi angleškimi koker španjeli je ugotovila srednjo starost ob smrti 11,44 leta. PDSA piše, da se zaradi potrpežljive narave praviloma dobro razume z otroki, vedno pod nadzorom, a opozarja, da je znan po ločitveni tesnobi in naj nikoli ne ostane sam več kot štiri ure. PDSA svetuje tudi vsakodnevno česanje in premor med obrokom in gibanjem.",
       ],
       sources: ["S336", "S337", "S339", "S342", "S343"],
+    },
+    maltese: {
+      aka: "malteški bišon, malteški psiček, Maltese",
+      text: [
+        "Maltežan je pritlikavi pes iz osrednjega Sredozemlja, pri FCI pod italijanskim pokroviteljstvom. Standard FCI opisuje majhnega psa s podolgovatim telesom, živahnega, ljubečega, zelo mirnega in zelo inteligentnega, ki tehta 3–4 kg in ima zelo dolgo, gosto, svilnato dlako, ki težko pada po vsem telesu. Kožuh nima podlanke, edina barva pa je čisto bela (dovoljen je bled slonokoščen odtenek). The Royal Kennel Club v programu Breed Watch za pasmo ne navaja posebnih točk za pozornost sodnikov.",
+        "The Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje vsak dan, navaja, da ne izgublja dlake, življenjska doba pa je več kot 12 let. PDSA ga opisuje kot bistrega, prijaznega in ljubečega psa, ki je lahko do neznancev zadržan, a se s pravo socializacijo v mladosti lahko nauči samozavesti in družabnosti. PetMD opozarja, da lahko razvije ločitveno tesnobo, če je predolgo sam, da morajo biti srečanja z majhnimi otroki pod nadzorom, in svetuje vsakodnevno ščetkanje zob.",
+      ],
+      sources: ["S346", "S347", "S348", "S351"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
