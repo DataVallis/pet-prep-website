@@ -365,6 +365,7 @@ const en: RegistryCopy = {
     glaucoma_poag: "Primary open-angle glaucoma, where fluid builds up inside the eye and causes pain and possibly blindness, can occur in the breed; a DNA test for the parents exists.",
     skin_fold_dermatitis: "The loose skin forms folds that can become sore and infected; they need checking every day and keeping clean and dry.",
     eyelid_problems: "Eyelid problems can occur in the breed: eyelids that turn inwards (entropion) or outwards (ectropion), and cherry eye, where the third eyelid pops out.",
+    skin_allergy_face_folds: "Skin allergies (atopy) that cause itching can occur in the breed, and the folds of skin on the face need cleaning every day.",
     pra_pk_def: "Two inherited conditions occur in the breed: progressive retinal atrophy, an eye disease that can lead to blindness, and pyruvate kinase deficiency, a blood disorder; DNA tests of the parents let breeders avoid them.",
     windpipe_collapse_breathing: "Tracheal collapse, where the rings of the windpipe collapse and make breathing difficult, can occur in the breed.",
     eye_problems_pra_cataracts_entropion: "Eye problems occur in the breed, such as progressive retinal atrophy, which can slowly lead to blindness, cataracts, which cloud the lens, and eyelids that turn inwards (entropion); eye testing is available.",
@@ -806,6 +807,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to 1 hour of exercise a day and grooming every day, says the breed sheds and gives its lifespan as over 12 years. PetMD says Collies are affectionate, especially with children, and good with other animals, but do not do well by themselves for long periods of time and may nip at ankles and heels when excited. It also notes that puppy socialization is crucial and that the MDR1 mutation, which affects how a dog processes certain drugs, occurs in Collies.",
       ],
       sources: ["S364", "S365", "S366", "S368"],
+    },
+    mastiff: {
+      aka: "English Mastiff, Old English Mastiff",
+      text: [
+        "The Mastiff is a very large guarding breed from Great Britain. The FCI standard describes a combination of grandeur and courage — calm, affectionate to its owners but capable of guarding — with a square-looking head, a broad, deep and powerful body and a short, close-lying coat in apricot, fawn or brindle. PDSA gives an average height of 71–78 cm and an average weight of 80–85 kg and notes that The Kennel Club classes the Mastiff in Category Three: breeds with visible conformational issues that can cause pain, discomfort or health problems.",
+        "PDSA recommends around an hour of exercise a day for adult dogs — but no over-exercising while a puppy's bones and joints are still developing — grooming once a week with daily cleaning of the facial wrinkles, and gives an average lifespan of under 10 years. PetMD calls Mastiffs great family dogs for homes with children who understand how to interact with pets, though perhaps not with toddlers or babies because of their size; they tend to do well with other pets introduced during puppyhood, drool a lot, and should not exercise for an hour before and after meals because of the risk of bloat.",
+      ],
+      sources: ["S370", "S371", "S374"],
     },
     british_shorthair: {
       aka: "British Blue",

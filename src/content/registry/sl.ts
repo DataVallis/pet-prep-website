@@ -382,6 +382,7 @@ const sl: RegistryCopy = {
     glaucoma_poag: "Pri pasmi se lahko pojavi primarni glavkom odprtega zakota, ko se v očesu nabira tekočina, kar povzroča bolečino in lahko slepoto; za starše obstaja test DNK.",
     skin_fold_dermatitis: "Ohlapna koža dela gube, ki se lahko vnamejo in okužijo; vsak dan jih je treba pregledati ter ohranjati čiste in suhe.",
     eyelid_problems: "Pri pasmi se lahko pojavijo težave z vekami: navznoter (entropij) ali navzven (ektropij) zavihane veke in »češnjevo oko«, ko izstopi tretja veka.",
+    skin_allergy_face_folds: "Pri pasmi se lahko pojavijo kožne alergije (atopija), ki povzročajo srbenje; kožne gube na obrazu je treba čistiti vsak dan.",
     pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
     windpipe_collapse_breathing: "Pri pasmi se lahko pojavi kolaps sapnika: obročki sapnika se sesedejo in otežijo dihanje.",
     eye_problems_pra_cataracts_entropion: "Pri pasmi se pojavljajo težave z očmi, na primer progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, siva mrena, ki zamegli lečo, in navznoter zavihane veke (entropij); na voljo so pregledi oči.",
@@ -823,6 +824,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje vsak dan, navaja, da izgublja dlako, življenjska doba pa je več kot 12 let. PetMD piše, da so škotski ovčarji ljubeči, posebej do otrok, in se dobro razumejo z drugimi živalmi, a ne prenašajo dobro dolge samote, ko so razburjeni, pa lahko ščipajo za gležnje in pete. Navaja tudi, da je socializacija mladička ključna in da se pri pasmi pojavlja mutacija MDR1, ki vpliva na to, kako pes presnavlja nekatera zdravila.",
       ],
       sources: ["S364", "S365", "S366", "S368"],
+    },
+    mastiff: {
+      aka: "mastif, Mastiff, English Mastiff",
+      text: [
+        "Angleški mastif je zelo velik čuvaj iz Velike Britanije. Standard FCI ga opisuje kot spoj veličine in poguma — miren, naklonjen lastnikom, a zmožen varovanja — s kvadratasto glavo, širokim, globokim in močnim telesom ter kratko, tesno prilegajočo se dlako marelične, plave ali tigraste barve. PDSA navaja povprečno višino 71–78 cm in povprečno težo 80–85 kg ter piše, da ga The Kennel Club uvršča v 3. kategorijo: med pasme z vidnimi težavami v zgradbi, ki lahko povzročajo bolečino, nelagodje ali zdravstvene težave.",
+        "PDSA odraslemu psu priporoča okoli uro gibanja na dan — mladička pa ne smemo preobremenjevati, dokler se mu razvijajo kosti in sklepi —, česanje enkrat na teden in vsakodnevno čiščenje gub na obrazu, povprečna življenjska doba pa je manj kot 10 let. PetMD piše, da so mastifi odlični družinski psi za dom z otroki, ki znajo ravnati z živalmi, morda pa ne za dom z malčki ali dojenčki, ker so tako veliki; z drugimi ljubljenčki se navadno dobro razumejo, če jih spoznajo kot mladiči, veliko se slinijo, uro pred obrokom in po njem pa naj ne bodo dejavni zaradi nevarnosti zasuka želodca.",
+      ],
+      sources: ["S370", "S371", "S374"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
