@@ -445,7 +445,7 @@ export type IndexItem = {
   p?: { src: string; w: number; h: number };
 };
 
-const SIZE_ORDER = ["toy", "small", "medium", "medium_large", "large", "giant"];
+const SIZE_ORDER = ["toy", "small", "small_medium", "medium", "medium_large", "large", "giant"];
 export const sizeRank = (size: string | undefined) => (size ? SIZE_ORDER.indexOf(size) : 99);
 
 export function catalogueIndex(locale: Locale, sp: Species): IndexItem[] {

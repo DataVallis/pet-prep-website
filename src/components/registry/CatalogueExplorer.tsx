@@ -46,7 +46,7 @@ export type ExplorerProps = {
 };
 
 const COMPARE_MAX = 3;
-const SIZE_ORDER = ["toy", "small", "medium", "medium_large", "large", "giant"];
+const SIZE_ORDER = ["toy", "small", "small_medium", "medium", "medium_large", "large", "giant"];
 
 const norm = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 const fill = (t: string, v: Record<string, string | number>) => t.replace(/\{(\w+)\}/g, (_, k: string) => String(v[k] ?? ""));
