@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -87,7 +87,7 @@ const sl: RegistryCopy = {
     activityRow: "Dnevni cilj odrasle živali v PetPrep (pravilo igre)",
   },
   facets: {
-    size: { label: "Velikost", values: { toy: "Zelo majhen", small: "Majhen", medium: "Srednje velik", medium_large: "Srednje velik do velik", large: "Velik", giant: "Zelo velik" } },
+    size: { label: "Velikost", values: { toy: "Zelo majhen", small: "Majhen", small_medium: "Majhen do srednje velik", medium: "Srednje velik", medium_large: "Srednje velik do velik", large: "Velik", giant: "Zelo velik" } },
     exercise: { label: "Gibanje na dan", values: { under_1h: "Do 1 ure", h1_2: "1–2 uri", over_2h: "Več kot 2 uri" }, line: (v) => `${v.toLowerCase()} gibanja na dan` },
     grooming: { label: "Krtačenje", values: { weekly: "Enkrat na teden", several_weekly: "Večkrat na teden", daily: "Vsak dan", other: "Drugo" }, line: (v) => `krtačenje ${v.toLowerCase()}` },
   },
@@ -137,7 +137,7 @@ const sl: RegistryCopy = {
     senior: "Starejša žival",
   },
   categories: {
-    size: { toy: "zelo majhen", small: "majhen", medium: "srednje velik", medium_large: "srednje velik do velik", large: "velik", giant: "zelo velik" },
+    size: { toy: "zelo majhen", small: "majhen", small_medium: "majhen do srednje velik", medium: "srednje velik", medium_large: "srednje velik do velik", large: "velik", giant: "zelo velik" },
     coat: { moderately_long: "zmerno dolga", smooth: "gladka (kratka)", short: "kratka", medium: "srednje dolga", short_long: "kratka ali dolga (dve različici dlake)", long: "dolga" },
     grooming_frequency: { at_least_once_a_week: "vsaj enkrat na teden", at_least_once_or_twice_a_week: "vsaj enkrat do dvakrat na teden", once_a_week: "enkrat na teden", more_than_once_a_week: "večkrat na teden", daily: "vsak dan", every_day: "vsak dan" },
     grooming_level: { moderate: "zmerne", high: "velike", low: "majhne" },
@@ -299,6 +299,8 @@ const sl: RegistryCopy = {
       dna_bbs2_pra: "Test DNK za progresivno atrofijo mrežnice (BBS2-PRA)",
       dna_cnga1_pra: "Test DNK za progresivno atrofijo mrežnice (CNGA1-PRA)",
       dna_pra_rcd2: "Test DNK za progresivno atrofijo mrežnice (PRA-rcd2)",
+      dna_gm1: "Test DNK za gangliozidozo GM1 (dedna bolezen živčevja)",
+      dna_gm2: "Test DNK za gangliozidozo GM2 (dedna bolezen živčevja)",
       dna_vwd3: "Test DNK za von Willebrandovo bolezen tipa 3 (vWD3), dedno motnjo strjevanja krvi",
       dna_hcm_mc: "Test DNK za hipertrofično kardiomiopatijo (MC HCM)",
       dna_sma: "Test DNK za spinalno mišično atrofijo (SMA)",
@@ -383,6 +385,8 @@ const sl: RegistryCopy = {
     skin_fold_dermatitis: "Ohlapna koža dela gube, ki se lahko vnamejo in okužijo; vsak dan jih je treba pregledati ter ohranjati čiste in suhe.",
     eyelid_problems: "Pri pasmi se lahko pojavijo težave z vekami: navznoter (entropij) ali navzven (ektropij) zavihane veke in »češnjevo oko«, ko izstopi tretja veka.",
     skin_allergy_face_folds: "Pri pasmi se lahko pojavijo kožne alergije (atopija), ki povzročajo srbenje; kožne gube na obrazu je treba čistiti vsak dan.",
+    skin_ear_allergies: "Pri pasmi se lahko pojavijo alergije na snovi iz okolja, ki lahko vodijo v ponavljajoča se vnetja kože ali ušes; PetMD psu z alergijami svetuje čiščenje ušes enkrat na teden.",
+    gum_disease_daily_brushing: "Pasma je nagnjena k boleznim dlesni (gingivitis in parodontalna bolezen), zato PetMD svetuje vsakodnevno ščetkanje zob in letni pregled zob pri veterinarju.",
     pra_pk_def: "Pri pasmi se pojavljata dve dedni bolezni: progresivna atrofija mrežnice, očesna bolezen, ki lahko vodi v slepoto, in pomanjkanje piruvat-kinaze, bolezen krvi; z DNK-testi staršev se jima vzreditelji lahko izognejo.",
     windpipe_collapse_breathing: "Pri pasmi se lahko pojavi kolaps sapnika: obročki sapnika se sesedejo in otežijo dihanje.",
     eye_problems_pra_cataracts_entropion: "Pri pasmi se pojavljajo težave z očmi, na primer progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, siva mrena, ki zamegli lečo, in navznoter zavihane veke (entropij); na voljo so pregledi oči.",
@@ -832,6 +836,14 @@ const sl: RegistryCopy = {
         "PDSA odraslemu psu priporoča okoli uro gibanja na dan — mladička pa ne smemo preobremenjevati, dokler se mu razvijajo kosti in sklepi —, česanje enkrat na teden in vsakodnevno čiščenje gub na obrazu, povprečna življenjska doba pa je manj kot 10 let. PetMD piše, da so mastifi odlični družinski psi za dom z otroki, ki znajo ravnati z živalmi, morda pa ne za dom z malčki ali dojenčki, ker so tako veliki; z drugimi ljubljenčki se navadno dobro razumejo, če jih spoznajo kot mladiči, veliko se slinijo, uro pred obrokom in po njem pa naj ne bodo dejavni zaradi nevarnosti zasuka želodca.",
       ],
       sources: ["S370", "S371", "S374"],
+    },
+    shiba_inu: {
+      aka: "shiba inu, japonski šiba inu, Shiba Inu",
+      text: [
+        "Šiba inu je majhen špic z Japonske; ime pomeni »majhen pes«, po navedbah The Royal Kennel Club pa so ga vzgojili za lov na manjše ptice. Standard FCI ga opisuje kot majhnega, uravnoteženega psa z močnimi kostmi, zvestega, z ostrimi čuti in zelo pozornega, z ostro zunanjo dlako nad mehko, gosto podlanko, majhnimi pokončnimi trikotnimi ušesi in debelim zavitim repom; barve so rdeča, črna s porjavelimi oznakami in sezamova, vedno z belkastimi oznakami »urajiro« na licih, prsih in spodnji strani telesa. Standard AKC navaja povprečno težo okoli 10 kg za pse in okoli 8 kg za psice.",
+        "The Royal Kennel Club priporoča do ene ure gibanja na dan in česanje enkrat na teden, piše, da linja, življenjsko dobo pa navaja kot več kot 10 let; velika britanska študija je ugotovila mediano 14,6 leta. AKC ga opisuje kot samozavestnega, samostojnega psa, ki je primernejši za izkušenega lastnika, se najbolje počuti s starejšimi otroki in ga zunaj ograjenega prostora nikoli ne smemo spustiti s povodca. PetMD dodaja, da potrebuje veliko miselnih izzivov, da mu koristi socializacija v mladičkovem obdobju in da mu je treba zobe ščetkati vsak dan.",
+      ],
+      sources: ["S376", "S377", "S378", "S380", "S381", "S383"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",

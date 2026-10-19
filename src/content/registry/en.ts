@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan" };
 
 const en: RegistryCopy = {
   hub: {
@@ -79,7 +79,7 @@ const en: RegistryCopy = {
     activityRow: "Adult daily goal in PetPrep (game rule)",
   },
   facets: {
-    size: { label: "Size", values: { toy: "Toy", small: "Small", medium: "Medium", medium_large: "Medium to large", large: "Large", giant: "Giant" } },
+    size: { label: "Size", values: { toy: "Toy", small: "Small", small_medium: "Small to medium", medium: "Medium", medium_large: "Medium to large", large: "Large", giant: "Giant" } },
     exercise: { label: "Daily exercise", values: { under_1h: "Up to 1 hour", h1_2: "1–2 hours", over_2h: "More than 2 hours" }, line: (v) => `${v.toLowerCase()} a day` },
     grooming: { label: "Brushing", values: { weekly: "Once a week", several_weekly: "Several times a week", daily: "Daily", other: "Other" }, line: (v) => `brushing ${v.toLowerCase()}` },
   },
@@ -129,7 +129,7 @@ const en: RegistryCopy = {
     senior: "Senior",
   },
   categories: {
-    size: { toy: "toy", small: "small", medium: "medium", medium_large: "medium to large", large: "large", giant: "giant" },
+    size: { toy: "toy", small: "small", small_medium: "small to medium", medium: "medium", medium_large: "medium to large", large: "large", giant: "giant" },
     coat: { moderately_long: "moderately long", smooth: "smooth (short)", short: "short", medium: "medium length", short_long: "short or long (two coat varieties)", long: "long" },
     grooming_frequency: { at_least_once_a_week: "at least once a week", at_least_once_or_twice_a_week: "at least once or twice a week", once_a_week: "once a week", more_than_once_a_week: "more than once a week", daily: "daily", every_day: "every day" },
     grooming_level: { moderate: "moderate", high: "high", low: "low" },
@@ -291,6 +291,8 @@ const en: RegistryCopy = {
       dna_bbs2_pra: "DNA test for progressive retinal atrophy (BBS2-PRA)",
       dna_cnga1_pra: "DNA test for progressive retinal atrophy (CNGA1-PRA)",
       dna_pra_rcd2: "DNA test for progressive retinal atrophy (PRA-rcd2)",
+      dna_gm1: "DNA test for GM1 gangliosidosis (an inherited disease of the nervous system)",
+      dna_gm2: "DNA test for GM2 gangliosidosis (an inherited disease of the nervous system)",
       dna_vwd3: "DNA test for von Willebrand disease type 3 (vWD3), an inherited bleeding disorder",
     },
   },
@@ -366,6 +368,8 @@ const en: RegistryCopy = {
     skin_fold_dermatitis: "The loose skin forms folds that can become sore and infected; they need checking every day and keeping clean and dry.",
     eyelid_problems: "Eyelid problems can occur in the breed: eyelids that turn inwards (entropion) or outwards (ectropion), and cherry eye, where the third eyelid pops out.",
     skin_allergy_face_folds: "Skin allergies (atopy) that cause itching can occur in the breed, and the folds of skin on the face need cleaning every day.",
+    skin_ear_allergies: "Environmental allergies can occur in the breed and may lead to repeated skin or ear infections; PetMD suggests weekly ear cleaning for a dog with allergies.",
+    gum_disease_daily_brushing: "The breed is prone to gum disease (gingivitis and periodontal disease), so PetMD advises brushing the dog's teeth every day and a yearly dental check at the vet.",
     pra_pk_def: "Two inherited conditions occur in the breed: progressive retinal atrophy, an eye disease that can lead to blindness, and pyruvate kinase deficiency, a blood disorder; DNA tests of the parents let breeders avoid them.",
     windpipe_collapse_breathing: "Tracheal collapse, where the rings of the windpipe collapse and make breathing difficult, can occur in the breed.",
     eye_problems_pra_cataracts_entropion: "Eye problems occur in the breed, such as progressive retinal atrophy, which can slowly lead to blindness, cataracts, which cloud the lens, and eyelids that turn inwards (entropion); eye testing is available.",
@@ -815,6 +819,14 @@ const en: RegistryCopy = {
         "PDSA recommends around an hour of exercise a day for adult dogs — but no over-exercising while a puppy's bones and joints are still developing — grooming once a week with daily cleaning of the facial wrinkles, and gives an average lifespan of under 10 years. PetMD calls Mastiffs great family dogs for homes with children who understand how to interact with pets, though perhaps not with toddlers or babies because of their size; they tend to do well with other pets introduced during puppyhood, drool a lot, and should not exercise for an hour before and after meals because of the risk of bloat.",
       ],
       sources: ["S370", "S371", "S374"],
+    },
+    shiba_inu: {
+      aka: "Japanese Shiba Inu, Shiba",
+      text: [
+        "The Shiba Inu is a small spitz from Japan; its name means “small dog”, and according to The Royal Kennel Club it was developed to hunt small game birds. The FCI standard describes a small, well-balanced and well-boned dog with a faithful temperament, keen senses and high alertness, a harsh outer coat over a soft, dense undercoat, small pricked triangular ears and a thick curled tail; the colours are red, black and tan, and sesame, always with whitish “urajiro” markings on the cheeks, chest and underside. The AKC standard gives an average weight of about 23 pounds (10 kg) for males and 17 pounds (8 kg) for females.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day and grooming once a week, notes that the breed sheds, and gives its lifespan as over 10 years; a large UK study found a median lifespan of 14.6 years. The AKC describes a confident, independent dog that is a better pick for an experienced owner, is happiest with older children and should never be let off the lead outside a fenced or enclosed area. PetMD adds that it needs lots of mental stimulation, benefits from socialisation as a puppy and should have its teeth brushed every day.",
+      ],
+      sources: ["S376", "S377", "S378", "S380", "S381", "S383"],
     },
     british_shorthair: {
       aka: "British Blue",
