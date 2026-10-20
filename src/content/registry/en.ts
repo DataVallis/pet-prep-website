@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal" };
 
 const en: RegistryCopy = {
   hub: {
@@ -263,6 +263,7 @@ const en: RegistryCopy = {
       dna_jme: "DNA test for juvenile myoclonic epilepsy (JME)",
       dna_pap_pra1: "DNA test for progressive retinal atrophy in Papillons (Pap-PRA1)",
       dna_nad: "DNA test for neuroaxonal dystrophy (NAD)",
+      dna_eopra: "DNA test for early-onset progressive retinal atrophy (EOPRA)",
       dna_hsf4: "DNA test for hereditary cataract (HSF4)",
       dna_lafora: "DNA test for Lafora disease",
       dna_nccd: "DNA test for neonatal cerebellar cortical degeneration (NCCD)",
@@ -367,6 +368,8 @@ const en: RegistryCopy = {
     hypothyroidism: "An underactive thyroid (hypothyroidism), which can affect weight, skin and energy levels, can occur in the breed.",
     open_fontanelle: "An open fontanelle, a soft spot on the skull that does not close fully, can occur in the breed.",
     collapsing_trachea: "A collapsing trachea, a weakness of the windpipe that can cause coughing and breathing difficulty, can occur in the breed.",
+    gm1_gangliosidosis: "GM1 gangliosidosis, an inherited disease of the nervous system, can occur in the breed; a DNA test of the parents can rule it out.",
+    addisons_disease: "Addison's disease, a lack of hormones from the adrenal glands, can occur in the breed.",
     dermoid_sinus: "Dermoid sinus, a painful condition in which a tube in the skin of the back connects to the spinal cord, can occur in the breed; breed clubs run a dermoid sinus checking scheme for puppies.",
     cataracts: "Cataracts, which cloud the lens of the eye and can lead to vision loss, can occur in the breed.",
     pra_inherited_blindness: "Progressive retinal atrophy, an inherited eye disease that can slowly lead to blindness, can occur in the breed.",
@@ -850,6 +853,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming more than once a week, notes that the breed sheds and can live in a flat, and gives its lifespan as over 12 years. The PDSA describes gentle, playful, very obedient dogs that get along well with everyone and need training and socialisation at a young age; it suggests grooming two to three times a week. PetMD adds that Papillons need daily mental stimulation, may develop separation anxiety and should have their teeth brushed every day, and that very young children can accidentally injure such a small dog.",
       ],
       sources: ["S396", "S397", "S398", "S400"],
+    },
+    portuguese_water_dog: {
+      aka: "Cão de Água Português, Portie, Algarvian Water Dog",
+      text: [
+        "The Portuguese Water Dog comes from Portugal, where it worked with fishermen. The Royal Kennel Club standard describes a robust, almost square, very strongly muscled dog — very intelligent and tremendously energetic, with great swimming and diving skills — standing 50–57 cm (males) and 43–52 cm (females) and weighing 19–25 kg (males) and 16–22 kg (females). Its profuse single coat has no undercoat and comes in black, white, brown, or black or brown with white; the traditional lion clip leaves the muzzle and hindquarters short.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day and grooming every day, notes that the breed does not shed and suits a large house, and gives its lifespan as over 10 years. The PDSA describes very friendly, loving dogs that get on well with other pets, make excellent family pets and need training and socialisation at a young age; it adds clipping and shaping by a professional groomer during the year.",
+      ],
+      sources: ["S403", "S404", "S405"],
     },
     british_shorthair: {
       aka: "British Blue",
