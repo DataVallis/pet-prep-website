@@ -53,7 +53,7 @@ const sl: Dictionary = {
     groups: [
       { title: "Izdelek", links: ["howItWorks", "parents", "animals", "afterAdoption", "pricing", "faq"] },
       { title: "Podjetje", links: ["about", "partners", "investors", "contact"] },
-      { title: "Zaupanje", links: ["privacy", "terms", "childSafety"] },
+      { title: "Zaupanje", links: ["privacy", "terms", "childSafety", "deleteAccount"] },
     ],
     rights: "Vse pravice pridržane.",
     dataEu: "Podatki so shranjeni v EU.",
@@ -797,6 +797,53 @@ const sl: Dictionary = {
         },
         { type: "callout", title: "Prijavite skrb", text: "Če vas karkoli v PetPrep skrbi, nam pišite — odgovorili bomo prednostno.", tone: "dark" },
         { type: "contact" },
+      ],
+    },
+    deleteAccount: {
+      navLabel: "Izbris računa",
+      meta: {
+        title: "Izbris računa in podatkov PetPrep",
+        description:
+          "Kako izbrišete račun PetPrep (Data Vallis) v aplikaciji ali po e-pošti, kateri podatki se izbrišejo, kaj ostane in kako dolgo.",
+      },
+      eyebrow: "Zaupanje",
+      title: "Izbris računa PetPrep",
+      lead: "PetPrep izdeluje Data Vallis. Račun in podatke družine lahko izbrišete kadar koli — takoj v aplikaciji ali po e-pošti, če aplikacije nimate več.",
+      blocks: [
+        {
+          type: "steps",
+          heading: "Izbris v aplikaciji (takoj)",
+          items: [
+            { title: "Prijavite se kot starš", text: "Odprite PetPrep, tapnite »Sem starš« in se prijavite." },
+            { title: "Odprite račun", text: "Pojdite v Nadzor → Račun. Če želite kopijo, najprej tapnite »Izvozi moje podatke«." },
+            { title: "Izbrišite", text: "Tapnite »Izbriši račun«, potrdite z geslom (ali s prijavo z Googlom / Apple), vpišite IZBRIŠI in tapnite »Izbriši za vedno«." },
+            { title: "Končano", text: "Izbris je takojšen in ga ni mogoče razveljaviti. Vse vaše naprave in naprave otrok se odjavijo." },
+          ],
+        },
+        {
+          type: "prose",
+          heading: "Aplikacije nimate več? Zahtevajte izbris po e-pošti",
+          paragraphs: [
+            "Pišite na [privacy@petprep.si](mailto:privacy@petprep.si) z e-naslova svojega starševskega računa PetPrep, z zadevo »Izbris računa«. Preverimo, da zahteva prihaja od lastnika računa, račun izbrišemo najpozneje v enem mesecu (običajno v nekaj dneh) in izbris potrdimo po e-pošti.",
+            "Če želite izbrisati samo profil enega otroka, se prijavite kot starš in v Nadzor → Otroci odprite otroka → Izbriši profil.",
+          ],
+        },
+        {
+          type: "table",
+          heading: "Kaj se izbriše in kaj ostane",
+          head: ["Podatki", "Kaj se zgodi"],
+          rows: [
+            ["Vaš starševski račun (ime, e-pošta, geslo, povezava prijave z Googlom / Apple)", "Takoj izbrisan"],
+            ["Če ste edini starš v družini: profili otrok (vzdevek, letnica rojstva), ljubljenčki, AI slike in videi, pogodbe in podpisi, dnevnik skrbi, Care Score, certifikati, koraki, tihe ure, kode za prijavo", "Takoj izbrisano"],
+            ["Če v družini ostane drug starš", "Izbriše se samo vaš račun; družina ostane drugemu staršu"],
+            ["Naprave in žetoni za obvestila", "Takoj odjavljeno in izbrisano"],
+            ["Evidenca nakupov (izdelek, datum, številka transakcije trgovine, anonimna oznaka nakupa — brez imena in e-pošte)", "Hranimo, dokler to zahtevajo računovodski in davčni predpisi, brez povezave z vašo družino"],
+            ["Evidenca stroškov AI", "Hranimo za računovodstvo, brez povezave z vami, otroki ali ljubljenčki"],
+            ["Šifrirane varnostne kopije", "Samodejno odstranjene v 35 dneh"],
+          ],
+          note: "Plačila obdelata App Store in Google Play, ki svoje evidence hranita po svojih pravilih. Kupljen, a nedokončan izziv se ob izbrisu računa ne povrne.",
+        },
+        { type: "callout", title: "Vprašanja?", text: "Pišite na privacy@petprep.si. Podrobnosti so v politiki zasebnosti.", tone: "dark" },
       ],
     },
     animals: {

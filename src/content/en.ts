@@ -53,7 +53,7 @@ const en: Dictionary = {
     groups: [
       { title: "Product", links: ["howItWorks", "parents", "animals", "afterAdoption", "pricing", "faq"] },
       { title: "Company", links: ["about", "partners", "investors", "contact"] },
-      { title: "Trust", links: ["privacy", "terms", "childSafety"] },
+      { title: "Trust", links: ["privacy", "terms", "childSafety", "deleteAccount"] },
     ],
     rights: "All rights reserved.",
     dataEu: "Data stored in the EU.",
@@ -797,6 +797,53 @@ const en: Dictionary = {
         },
         { type: "callout", title: "Report a concern", text: "If something in PetPrep worries you, write to us and we will respond with priority.", tone: "dark" },
         { type: "contact" },
+      ],
+    },
+    deleteAccount: {
+      navLabel: "Delete account",
+      meta: {
+        title: "Delete your PetPrep account and data",
+        description:
+          "How to delete your PetPrep account (Data Vallis) in the app or by e-mail, which data is deleted, what is kept and for how long.",
+      },
+      eyebrow: "Trust",
+      title: "Delete your PetPrep account",
+      lead: "PetPrep is made by Data Vallis. You can delete your account and your family's data at any time — in the app, instantly, or by e-mail if you no longer have the app.",
+      blocks: [
+        {
+          type: "steps",
+          heading: "Delete your account in the app (instant)",
+          items: [
+            { title: "Sign in as a parent", text: "Open PetPrep, tap “I'm a parent” and sign in." },
+            { title: "Open your account", text: "Go to Controls → Account. Optional: tap “Export my data” first to keep a copy." },
+            { title: "Delete", text: "Tap “Delete account”, confirm with your password (or your Google / Apple sign-in) and type DELETE, then tap “Delete for good”." },
+            { title: "Done", text: "Deletion is immediate and cannot be undone. All your devices and your children's devices are signed out." },
+          ],
+        },
+        {
+          type: "prose",
+          heading: "No longer have the app? Request deletion by e-mail",
+          paragraphs: [
+            "Write to [privacy@petprep.si](mailto:privacy@petprep.si) from the e-mail address of your PetPrep parent account, with the subject “Delete my account”. We confirm that the request comes from the account owner and delete the account within one month at the latest (usually within a few days), then confirm by e-mail.",
+            "To delete only one child's profile, sign in as a parent and open the child in Controls → Children → Delete profile.",
+          ],
+        },
+        {
+          type: "table",
+          heading: "What is deleted and what is kept",
+          head: ["Data", "What happens"],
+          rows: [
+            ["Your parent account (name, e-mail, password, Google / Apple sign-in link)", "Deleted immediately"],
+            ["If you are the family's only parent: children's profiles (nickname, birth year), pets, AI pictures and videos, contracts and signatures, care log, Care Scores, certificates, step counts, quiet hours, login codes", "Deleted immediately"],
+            ["If another parent remains in the family", "Only your account is deleted; the family stays with the other parent"],
+            ["Devices and notification tokens", "Signed out and deleted immediately"],
+            ["Purchase records (product, date, store transaction ID, an anonymous purchase ID — no name or e-mail)", "Kept for as long as accounting and tax law requires, no longer linked to your family"],
+            ["AI cost records", "Kept for accounting without any link to you, your children or your pets"],
+            ["Encrypted backups", "Removed automatically within 35 days"],
+          ],
+          note: "Purchases themselves are handled by the App Store and Google Play; their records are kept by Apple and Google under their own policies. A challenge that was bought but not finished is not refunded when you delete the account.",
+        },
+        { type: "callout", title: "Questions?", text: "Write to privacy@petprep.si. Details are in our privacy policy.", tone: "dark" },
       ],
     },
     animals: {
