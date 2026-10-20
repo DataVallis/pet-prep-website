@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -280,6 +280,7 @@ const sl: RegistryCopy = {
       dna_jme: "Test DNK za juvenilno mioklonično epilepsijo (JME)",
       dna_pap_pra1: "Test DNK za progresivno atrofijo mrežnice pri papijonih (Pap-PRA1)",
       dna_nad: "Test DNK za nevroaksonsko distrofijo (NAD)",
+      dna_eopra: "Test DNK za zgodaj nastopajočo progresivno atrofijo mrežnice (EOPRA)",
       dna_hsf4: "Test DNK za dedno sivo mreno (HSF4)",
       dna_lafora: "Test DNK za Laforino bolezen",
       dna_nccd: "Test DNK za neonatalno degeneracijo skorje malih možganov (NCCD)",
@@ -384,6 +385,8 @@ const sl: RegistryCopy = {
     hypothyroidism: "Pri pasmi se lahko pojavi premalo delujoča ščitnica (hipotiroza), ki vpliva na težo, kožo in energijo.",
     open_fontanelle: "Pri pasmi se lahko pojavi odprta mečava, mehko mesto na lobanji, ki se ne zapre povsem.",
     collapsing_trachea: "Pri pasmi se lahko pojavi kolaps sapnika, šibkost sapnika, ki lahko povzroča kašelj in težko dihanje.",
+    gm1_gangliosidosis: "Pri pasmi se lahko pojavi gangliozidoza GM1, dedna bolezen živčevja; test DNK staršev jo lahko izključi.",
+    addisons_disease: "Pri pasmi se lahko pojavi Addisonova bolezen, pomanjkanje hormonov nadledvične žleze.",
     dermoid_sinus: "Pri pasmi se lahko pojavi dermoidni sinus, boleča bolezen, pri kateri je koža na hrbtu povezana s hrbtenjačo; klubi pasme imajo shemo za pregled mladičkov.",
     cataracts: "Pri pasmi se lahko pojavi siva mrena, ki zamegli očesno lečo in lahko vodi v slabši vid.",
     pra_inherited_blindness: "Pri pasmi se lahko pojavi progresivna atrofija mrežnice, dedna očesna bolezen, ki lahko počasi vodi v slepoto.",
@@ -867,6 +870,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje večkrat na teden, piše, da linja in da lahko živi v stanovanju, življenjsko dobo pa navaja kot več kot 12 let. PDSA ga opisuje kot nežnega, igrivega in zelo ubogljivega psa, ki se dobro razume z vsemi ter potrebuje šolanje in socializacijo že od malega; svetuje česanje dvakrat do trikrat na teden. PetMD dodaja, da papijon vsak dan potrebuje miselne izzive, da se pri nekaterih lahko razvije stiska ob ločitvi, da mu je treba vsak dan ščetkati zobe in da ga lahko zelo majhni otroci po nesreči poškodujejo.",
       ],
       sources: ["S396", "S397", "S398", "S400"],
+    },
+    portuguese_water_dog: {
+      aka: "Cão de Água Português, Portie, Portuguese Water Dog",
+      text: [
+        "Portugalski vodni pes izvira s Portugalske, kjer je pomagal ribičem. Standard The Royal Kennel Club ga opisuje kot čvrstega, skoraj kvadratnega in zelo mišičastega psa — zelo inteligentnega in neutrudno energičnega, odličnega plavalca in potapljača — visokega 50–57 cm (psi) oziroma 43–52 cm (psice), ki tehta 19–25 kg (psi) oziroma 16–22 kg (psice). Bogata enojna dlaka nima podlanke in je črna, bela, rjava ali črna oziroma rjava z belim; pri tradicionalnem »levjem« striženju sta gobec in zadnji del telesa ostrižena na kratko.",
+        "The Royal Kennel Club priporoča do eno uro gibanja na dan in česanje vsak dan, piše, da ne linja in da mu ustreza velika hiša, življenjsko dobo pa navaja kot več kot 10 let. PDSA ga opisuje kot zelo prijaznega in ljubečega psa, ki se dobro razume z drugimi ljubljenčki, je odličen družinski pes ter potrebuje šolanje in socializacijo že od malega; doda še striženje in oblikovanje dlake pri pasjem frizerju večkrat na leto.",
+      ],
+      sources: ["S403", "S404", "S405"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
