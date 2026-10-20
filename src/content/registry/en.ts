@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France" };
 
 const en: RegistryCopy = {
   hub: {
@@ -261,6 +261,8 @@ const en: RegistryCopy = {
       dna_dm: "DNA test for degenerative myelopathy (DM)",
       dermoid_sinus_scheme: "Puppy check for dermoid sinus (breed club scheme)",
       dna_jme: "DNA test for juvenile myoclonic epilepsy (JME)",
+      dna_pap_pra1: "DNA test for progressive retinal atrophy in Papillons (Pap-PRA1)",
+      dna_nad: "DNA test for neuroaxonal dystrophy (NAD)",
       dna_hsf4: "DNA test for hereditary cataract (HSF4)",
       dna_lafora: "DNA test for Lafora disease",
       dna_nccd: "DNA test for neonatal cerebellar cortical degeneration (NCCD)",
@@ -363,6 +365,8 @@ const en: RegistryCopy = {
     shorter_face_boas: "A brachycephalic (short-faced) breed: the shorter face can cause serious breathing problems (brachycephalic obstructive airway syndrome, BOAS).",
     eye_problems_dry_eye_cataracts_pra_retina: "Eye problems occur in the breed, such as dry eye, cataracts, progressive retinal atrophy, which can slowly lead to blindness, and retinal detachment.",
     hypothyroidism: "An underactive thyroid (hypothyroidism), which can affect weight, skin and energy levels, can occur in the breed.",
+    open_fontanelle: "An open fontanelle, a soft spot on the skull that does not close fully, can occur in the breed.",
+    collapsing_trachea: "A collapsing trachea, a weakness of the windpipe that can cause coughing and breathing difficulty, can occur in the breed.",
     dermoid_sinus: "Dermoid sinus, a painful condition in which a tube in the skin of the back connects to the spinal cord, can occur in the breed; breed clubs run a dermoid sinus checking scheme for puppies.",
     cataracts: "Cataracts, which cloud the lens of the eye and can lead to vision loss, can occur in the breed.",
     pra_inherited_blindness: "Progressive retinal atrophy, an inherited eye disease that can slowly lead to blindness, can occur in the breed.",
@@ -838,6 +842,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends more than two hours of exercise a day and grooming once a week, notes that the breed sheds and suits a large house with a large garden, and gives its lifespan as over 10 years. The PDSA describes playful, powerful and very loyal dogs with a very high prey drive that are not recommended for first-time owners, should never be left alone for more than four hours and need socialising from a young age; it also advises a gap between eating and exercise. Woodgreen adds that they do best with older children.",
       ],
       sources: ["S385", "S387", "S390", "S392"],
+    },
+    papillon: {
+      aka: "Continental Toy Spaniel, Phalène (drop-eared variety), Butterfly Dog",
+      text: [
+        "The Papillon is the erect-eared variety of the Continental Toy Spaniel, a breed from Belgium and France; the drop-eared variety is called the Phalène. The FCI standard describes a small, elegant toy spaniel with long hair and a lively personality, about 28 cm tall and weighing up to 4.5 kg for males and 5 kg for females. Its large ears are carried like the spread wings of a butterfly, and the coat is always white with patches of colour.",
+        "The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming more than once a week, notes that the breed sheds and can live in a flat, and gives its lifespan as over 12 years. The PDSA describes gentle, playful, very obedient dogs that get along well with everyone and need training and socialisation at a young age; it suggests grooming two to three times a week. PetMD adds that Papillons need daily mental stimulation, may develop separation anxiety and should have their teeth brushed every day, and that very young children can accidentally injure such a small dog.",
+      ],
+      sources: ["S396", "S397", "S398", "S400"],
     },
     british_shorthair: {
       aka: "British Blue",
