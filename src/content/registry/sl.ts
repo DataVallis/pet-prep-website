@@ -387,6 +387,8 @@ const sl: RegistryCopy = {
     collapsing_trachea: "Pri pasmi se lahko pojavi kolaps sapnika, šibkost sapnika, ki lahko povzroča kašelj in težko dihanje.",
     gm1_gangliosidosis: "Pri pasmi se lahko pojavi gangliozidoza GM1, dedna bolezen živčevja; test DNK staršev jo lahko izključi.",
     addisons_disease: "Pri pasmi se lahko pojavi Addisonova bolezen, pomanjkanje hormonov nadledvične žleze.",
+    diabetes_mellitus: "Pri pasmi se lahko pojavi sladkorna bolezen (diabetes mellitus), pri kateri telo ne uravnava dobro krvnega sladkorja.",
+    dental_disease_home_brushing: "Kot mnogi majhni psi je pasma nagnjena k boleznim zob, zato je priporočljivo psu doma ščetkati zobe s pasjo zobno ščetko in zobno pasto.",
     dermoid_sinus: "Pri pasmi se lahko pojavi dermoidni sinus, boleča bolezen, pri kateri je koža na hrbtu povezana s hrbtenjačo; klubi pasme imajo shemo za pregled mladičkov.",
     cataracts: "Pri pasmi se lahko pojavi siva mrena, ki zamegli očesno lečo in lahko vodi v slabši vid.",
     pra_inherited_blindness: "Pri pasmi se lahko pojavi progresivna atrofija mrežnice, dedna očesna bolezen, ki lahko počasi vodi v slepoto.",
@@ -878,6 +880,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča do eno uro gibanja na dan in česanje vsak dan, piše, da ne linja in da mu ustreza velika hiša, življenjsko dobo pa navaja kot več kot 10 let. PDSA ga opisuje kot zelo prijaznega in ljubečega psa, ki se dobro razume z drugimi ljubljenčki, je odličen družinski pes ter potrebuje šolanje in socializacijo že od malega; doda še striženje in oblikovanje dlake pri pasjem frizerju večkrat na leto.",
       ],
       sources: ["S403", "S404", "S405"],
+    },
+    bichon_frise: {
+      aka: "Bichon Frise, Bichon à poil frisé, Bichon Tenerife",
+      text: [
+        "Kodrasti bišon je francosko-belgijski pes za družbo. Standard FCI ga opisuje kot veselega malega psa živahnega koraka z zelo ohlapno belo dlako v spiralnih kodrih — pravega psa za družbo, ki ga lahko vzamete povsod, ni živčen in ne laja pogosto — visokega 25–29 cm, ki tehta približno 5 kg. Odrasel pes je vedno čisto bel, z zelo temnimi okroglimi očmi, črnim smrčkom, povešenimi ušesi in košatim repom, nošenim čez hrbet.",
+        "The Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje vsak dan, piše, da ne linja in da mu ustreza stanovanje, življenjsko dobo pa navaja kot več kot 12 let. PDSA ga opisuje kot zelo ljubečega psa, ki se odlično razume z otroki in drugimi ljubljenčki; doda še, da je treba dlako striči na vsakih nekaj mesecev, pogosto pri pasjem frizerju.",
+      ],
+      sources: ["S410", "S411", "S413"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
