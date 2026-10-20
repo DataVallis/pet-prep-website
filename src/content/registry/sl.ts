@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -276,6 +276,8 @@ const sl: RegistryCopy = {
       dna_ggd: "Test DNK za goniodisgenezo in tveganje za glavkom (GGD)",
       dna_raines: "Test DNK za Rainov sindrom",
       dna_dm: "Test DNK za degenerativno mielopatijo (DM)",
+      dermoid_sinus_scheme: "Pregled mladičkov na dermoidni sinus (shema klubov pasme)",
+      dna_jme: "Test DNK za juvenilno mioklonično epilepsijo (JME)",
       dna_hsf4: "Test DNK za dedno sivo mreno (HSF4)",
       dna_lafora: "Test DNK za Laforino bolezen",
       dna_nccd: "Test DNK za neonatalno degeneracijo skorje malih možganov (NCCD)",
@@ -378,6 +380,7 @@ const sl: RegistryCopy = {
     shorter_face_boas: "Brahicefalna pasma s kratkim obrazom: krajši obraz lahko povzroči resne težave z dihanjem (brahicefalni obstruktivni sindrom dihalnih poti, BOAS).",
     eye_problems_dry_eye_cataracts_pra_retina: "Pri pasmi se pojavljajo težave z očmi, na primer suho oko, siva mrena, progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, in odstop mrežnice.",
     hypothyroidism: "Pri pasmi se lahko pojavi premalo delujoča ščitnica (hipotiroza), ki vpliva na težo, kožo in energijo.",
+    dermoid_sinus: "Pri pasmi se lahko pojavi dermoidni sinus, boleča bolezen, pri kateri je koža na hrbtu povezana s hrbtenjačo; klubi pasme imajo shemo za pregled mladičkov.",
     cataracts: "Pri pasmi se lahko pojavi siva mrena, ki zamegli očesno lečo in lahko vodi v slabši vid.",
     pra_inherited_blindness: "Pri pasmi se lahko pojavi progresivna atrofija mrežnice, dedna očesna bolezen, ki lahko počasi vodi v slepoto.",
     eyelids_turned: "Pri pasmi se lahko pojavijo veke, zavihane navznoter (entropij) ali navzven (ektropij); vprašajte za pregledane oči staršev.",
@@ -844,6 +847,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča do ene ure gibanja na dan in česanje enkrat na teden, piše, da linja, življenjsko dobo pa navaja kot več kot 10 let; velika britanska študija je ugotovila mediano 14,6 leta. AKC ga opisuje kot samozavestnega, samostojnega psa, ki je primernejši za izkušenega lastnika, se najbolje počuti s starejšimi otroki in ga zunaj ograjenega prostora nikoli ne smemo spustiti s povodca. PetMD dodaja, da potrebuje veliko miselnih izzivov, da mu koristi socializacija v mladičkovem obdobju in da mu je treba zobe ščetkati vsak dan.",
       ],
       sources: ["S376", "S377", "S378", "S380", "S381", "S383"],
+    },
+    rhodesian_ridgeback: {
+      aka: "ridgeback, Rhodesian Ridgeback, afriški levji pes",
+      text: [
+        "Rodezijski ridgeback izvira iz južne Afrike. Najbolj prepoznaven je po grebenu na hrbtu – pasu dlake, ki raste v nasprotno smer kot preostala dlaka. Standard FCI ga opisuje kot uravnoteženega, močnega, mišičastega, okretnega in dejavnega psa, ki je dostojanstven, inteligenten in do tujcev zadržan, posebej cenjen kot čuvaj in družinski pes. Kratka, gosta dlaka je svetlo do rdeče pšenične barve, standard pa navaja težo okoli 36,5 kg za pse in 32 kg za psice.",
+        "The Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje enkrat na teden, piše, da linja in da sodi v veliko hišo z velikim vrtom, življenjsko dobo pa navaja kot več kot 10 let. PDSA ga opisuje kot igrivega, močnega in zelo zvestega psa z zelo močnim lovskim nagonom, ki ga ne priporoča lastnikom brez izkušenj; nikoli naj ne bo sam več kot štiri ure, socializirati ga je treba že od malega, med obrokom in gibanjem pa svetuje premor. Woodgreen dodaja, da se najbolje znajde s starejšimi otroki.",
+      ],
+      sources: ["S385", "S387", "S390", "S392"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
