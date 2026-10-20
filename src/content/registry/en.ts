@@ -370,6 +370,8 @@ const en: RegistryCopy = {
     collapsing_trachea: "A collapsing trachea, a weakness of the windpipe that can cause coughing and breathing difficulty, can occur in the breed.",
     gm1_gangliosidosis: "GM1 gangliosidosis, an inherited disease of the nervous system, can occur in the breed; a DNA test of the parents can rule it out.",
     addisons_disease: "Addison's disease, a lack of hormones from the adrenal glands, can occur in the breed.",
+    diabetes_mellitus: "Diabetes mellitus, where the body cannot control its blood sugar properly, can occur in the breed.",
+    dental_disease_home_brushing: "Like many small dogs, the breed is prone to dental disease, so brushing the teeth at home with a dog toothbrush and toothpaste is advised.",
     dermoid_sinus: "Dermoid sinus, a painful condition in which a tube in the skin of the back connects to the spinal cord, can occur in the breed; breed clubs run a dermoid sinus checking scheme for puppies.",
     cataracts: "Cataracts, which cloud the lens of the eye and can lead to vision loss, can occur in the breed.",
     pra_inherited_blindness: "Progressive retinal atrophy, an inherited eye disease that can slowly lead to blindness, can occur in the breed.",
@@ -861,6 +863,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to an hour of exercise a day and grooming every day, notes that the breed does not shed and suits a large house, and gives its lifespan as over 10 years. The PDSA describes very friendly, loving dogs that get on well with other pets, make excellent family pets and need training and socialisation at a young age; it adds clipping and shaping by a professional groomer during the year.",
       ],
       sources: ["S403", "S404", "S405"],
+    },
+    bichon_frise: {
+      aka: "Bichon à poil frisé, Bichon Frisé, Bichon Tenerife",
+      text: [
+        "The Bichon Frise is a Franco-Belgian companion dog. The FCI standard describes a cheerful little dog with a lively gait and very loose, white corkscrew-curled hair — a true companion that can be taken anywhere, neither nervous nor a frequent barker — standing 25–29 cm at the withers and weighing about 5 kg. An adult is always pure white, with very dark round eyes, a black nose, drooping ears and a plumed tail carried over the back.",
+        "The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming every day, notes that the breed does not shed and suits a flat, and gives its lifespan as over 12 years. The PDSA describes very affectionate, loving dogs that are excellent with children and other pets, and adds that the coat needs trimming every couple of months, often by a professional groomer.",
+      ],
+      sources: ["S410", "S411", "S413"],
     },
     british_shorthair: {
       aka: "British Blue",
