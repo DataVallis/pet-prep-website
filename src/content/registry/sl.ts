@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -278,6 +278,8 @@ const sl: RegistryCopy = {
       dna_dm: "Test DNK za degenerativno mielopatijo (DM)",
       dermoid_sinus_scheme: "Pregled mladičkov na dermoidni sinus (shema klubov pasme)",
       dna_jme: "Test DNK za juvenilno mioklonično epilepsijo (JME)",
+      dna_pap_pra1: "Test DNK za progresivno atrofijo mrežnice pri papijonih (Pap-PRA1)",
+      dna_nad: "Test DNK za nevroaksonsko distrofijo (NAD)",
       dna_hsf4: "Test DNK za dedno sivo mreno (HSF4)",
       dna_lafora: "Test DNK za Laforino bolezen",
       dna_nccd: "Test DNK za neonatalno degeneracijo skorje malih možganov (NCCD)",
@@ -380,6 +382,8 @@ const sl: RegistryCopy = {
     shorter_face_boas: "Brahicefalna pasma s kratkim obrazom: krajši obraz lahko povzroči resne težave z dihanjem (brahicefalni obstruktivni sindrom dihalnih poti, BOAS).",
     eye_problems_dry_eye_cataracts_pra_retina: "Pri pasmi se pojavljajo težave z očmi, na primer suho oko, siva mrena, progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, in odstop mrežnice.",
     hypothyroidism: "Pri pasmi se lahko pojavi premalo delujoča ščitnica (hipotiroza), ki vpliva na težo, kožo in energijo.",
+    open_fontanelle: "Pri pasmi se lahko pojavi odprta mečava, mehko mesto na lobanji, ki se ne zapre povsem.",
+    collapsing_trachea: "Pri pasmi se lahko pojavi kolaps sapnika, šibkost sapnika, ki lahko povzroča kašelj in težko dihanje.",
     dermoid_sinus: "Pri pasmi se lahko pojavi dermoidni sinus, boleča bolezen, pri kateri je koža na hrbtu povezana s hrbtenjačo; klubi pasme imajo shemo za pregled mladičkov.",
     cataracts: "Pri pasmi se lahko pojavi siva mrena, ki zamegli očesno lečo in lahko vodi v slabši vid.",
     pra_inherited_blindness: "Pri pasmi se lahko pojavi progresivna atrofija mrežnice, dedna očesna bolezen, ki lahko počasi vodi v slepoto.",
@@ -855,6 +859,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje enkrat na teden, piše, da linja in da sodi v veliko hišo z velikim vrtom, življenjsko dobo pa navaja kot več kot 10 let. PDSA ga opisuje kot igrivega, močnega in zelo zvestega psa z zelo močnim lovskim nagonom, ki ga ne priporoča lastnikom brez izkušenj; nikoli naj ne bo sam več kot štiri ure, socializirati ga je treba že od malega, med obrokom in gibanjem pa svetuje premor. Woodgreen dodaja, da se najbolje znajde s starejšimi otroki.",
       ],
       sources: ["S385", "S387", "S390", "S392"],
+    },
+    papillon: {
+      aka: "kontinentalni pritlikavi španjel, falen (različica s povešenimi ušesi), Papillon",
+      text: [
+        "Papijon je različica kontinentalnega pritlikavega španjela s pokončnimi ušesi; pasma izvira iz Belgije in Francije, različico s povešenimi ušesi pa imenujejo falen. Standard FCI ga opisuje kot majhnega, elegantnega pritlikavega španjela z dolgo dlako in živahnim značajem, visokega okoli 28 cm, ki tehta do 4,5 kg (psi) oziroma 5 kg (psice). Velika ušesa nosi kot razprta metuljeva krila, dlaka pa je vedno bela z barvnimi lisami.",
+        "The Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje večkrat na teden, piše, da linja in da lahko živi v stanovanju, življenjsko dobo pa navaja kot več kot 12 let. PDSA ga opisuje kot nežnega, igrivega in zelo ubogljivega psa, ki se dobro razume z vsemi ter potrebuje šolanje in socializacijo že od malega; svetuje česanje dvakrat do trikrat na teden. PetMD dodaja, da papijon vsak dan potrebuje miselne izzive, da se pri nekaterih lahko razvije stiska ob ločitvi, da mu je treba vsak dan ščetkati zobe in da ga lahko zelo majhni otroci po nesreči poškodujejo.",
+      ],
+      sources: ["S396", "S397", "S398", "S400"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
