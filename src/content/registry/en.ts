@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada" };
 
 const en: RegistryCopy = {
   hub: {
@@ -264,6 +264,8 @@ const en: RegistryCopy = {
       dna_pap_pra1: "DNA test for progressive retinal atrophy in Papillons (Pap-PRA1)",
       dna_nad: "DNA test for neuroaxonal dystrophy (NAD)",
       dna_eopra: "DNA test for early-onset progressive retinal atrophy (EOPRA)",
+      dna_cu: "DNA test for cystinuria (CU), an inherited kidney and bladder stone condition",
+      heart_echo_scheme: "Heart screening by colour Doppler ultrasound (breed club scheme)",
       dna_hsf4: "DNA test for hereditary cataract (HSF4)",
       dna_lafora: "DNA test for Lafora disease",
       dna_nccd: "DNA test for neonatal cerebellar cortical degeneration (NCCD)",
@@ -871,6 +873,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming every day, notes that the breed does not shed and suits a flat, and gives its lifespan as over 12 years. The PDSA describes very affectionate, loving dogs that are excellent with children and other pets, and adds that the coat needs trimming every couple of months, often by a professional groomer.",
       ],
       sources: ["S410", "S411", "S413"],
+    },
+    newfoundland: {
+      aka: "Newfie, Newf",
+      text: [
+        "The Newfoundland comes from Canada; the FCI lists it among the mountain-type molossoid dogs and recognises three colours: black, white and black (Landseer) and brown. The PDSA calls Newfies gentle giants and gives an average height of 66–71 cm and an average weight of 50–69 kg; PetMD adds that the breed's history makes them natural swimmers.",
+        "The PDSA recommends at least an hour of exercise a day for adults, but not over-exercising puppies while their bones and joints are still developing; it calls grooming a daily task, notes that Newfies tend to drool and gives the lifespan as under 10 years. PetMD calls the breed an outstanding family pet that gets along well with children, small pets and other dogs, advises supervising small children with any dog, and warns that some may develop separation anxiety when left alone.",
+      ],
+      sources: ["S419", "S423", "S424"],
     },
     british_shorthair: {
       aka: "British Blue",
