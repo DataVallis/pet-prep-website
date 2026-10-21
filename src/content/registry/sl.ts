@@ -12,7 +12,7 @@ function form(n: number, one: string, two: string, few: string, many: string): s
 type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
-const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
+const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi", 10: "hrti" };
 const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija" };
 
 const sl: RegistryCopy = {
@@ -381,6 +381,7 @@ const sl: RegistryCopy = {
     dental_disease_care: "Velika britanska raziskava navaja bolezen zob kot najpogostejšo težavo pasme, zato lastnikom svetuje, naj negi zob namenijo posebno pozornost.",
     bladder_stones: "Pri pasmi se lahko pojavijo kamni v mehurju, skupki mineralov, ki nastanejo v mehurju in urinu.",
     deafness: "Pri pasmi se pojavlja gluhost na eno ali obe ušesi; sluh mladičev je mogoče preveriti s testom BAER.",
+    mitral_valve_disease: "Pri pasmi se pojavlja bolezen mitralne zaklopke — oslabljena srčna zaklopka pušča kri nazaj v srce; veterinar lahko psom pred vzrejo posluša srce.",
     eye_problems_pra_cataracts_dry_eye: "Pri pasmi se pojavljajo težave z očmi, na primer progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, siva mrena in suho oko; očesni pregled je na voljo.",
     skin_comedo_allergy: "Pojavijo se lahko kožne težave, kot sta komedonski sindrom šnavcerjev (vrsta vnetja dlačnih mešičkov) in kožne alergije (atopija), ki povzročajo srbenje.",
     shorter_face_boas: "Brahicefalna pasma s kratkim obrazom: krajši obraz lahko povzroči resne težave z dihanjem (brahicefalni obstruktivni sindrom dihalnih poti, BOAS).",
@@ -915,6 +916,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje enkrat na teden ter navaja, da linja. PDSA ga opisuje kot zelo pametnega in zelo energičnega psa, ki potrebuje veliko telesnega in miselnega dela; zaradi močnega pastirskega nagona lahko otroke, ki tečejo, grize za pete, pomagata pa socializacija in vzgoja že v mladosti.",
       ],
       sources: ["S436", "S437", "S438"],
+    },
+    whippet: {
+      aka: "whippet, vipet",
+      text: [
+        "Mali angleški hrt (whippet) izvira iz Velike Britanije; FCI ga uvršča med kratkodlake hrte. Standard Kennel Cluba opisuje uravnoteženo povezavo mišične moči in elegance, fino, kratko in tesno prilegajočo dlako v kateri koli barvi ali kombinaciji barv razen merle ter nežen, ljubeč in umirjen značaj; navaja višino 47–51 cm za pse in 44–47 cm za psice, PDSA pa povprečno težo 11–18 kg.",
+        "PDSA priporoča vsaj uro gibanja na dan, tudi tek brez povodca na varovanem prostoru, in česanje z mehko krtačo enkrat na teden. Opisuje ga kot priljubljeno izbiro za družine, ker je ob otrocih miren in nežen, a priporoča dom s starejšimi otroki; ne mara biti sam in ima zelo močan lovski nagon, zato ga PDSA ne priporoča v domu z manjšimi živalmi. Pozimi mu lahko pomaga plašček, debelo in mehko ležišče pa varuje izstopajoče kosti.",
+      ],
+      sources: ["S442", "S443", "S444"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
