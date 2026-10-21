@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia" };
 
 const en: RegistryCopy = {
   hub: {
@@ -890,6 +890,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends more than two hours of exercise a day and brushing once a week, and says the breed sheds and suits a large house and garden. The PDSA calls Dalmatians great pets for active households that are better suited to older children, need company and should never be left alone for more than four hours; it lists deafness among the breed's health problems and notes that a BAER hearing test exists.",
       ],
       sources: ["S428", "S429", "S430"],
+    },
+    australian_cattle_dog: {
+      aka: "Blue Heeler, Red Heeler, Queensland Heeler, Cattle Dog",
+      text: [
+        "The Australian Cattle Dog comes from Australia; the FCI lists it among the cattle dogs. The Kennel Club standard describes a strong, compact working dog with a smooth, weather-resistant double coat in blue (mottled or speckled) or an even red speckle, and gives a height of 46–51 cm for males and 43–48 cm for females; the PDSA gives an average weight of 16–20 kg.",
+        "The Royal Kennel Club recommends more than two hours of exercise a day and brushing once a week, and says the breed sheds. The PDSA describes a highly intelligent, high-energy dog that needs a lot of physical and mental activity; because of its strong herding instinct it may nip at the heels of running children, and socialisation and training at a young age help.",
+      ],
+      sources: ["S436", "S437", "S438"],
     },
     british_shorthair: {
       aka: "British Blue",

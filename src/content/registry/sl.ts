@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -907,6 +907,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje enkrat na teden ter navaja, da linja in da potrebuje veliko hišo z vrtom. PDSA ga opisuje kot odličnega psa za aktivna gospodinjstva, ki se bolje znajde ob starejših otrocih, potrebuje družbo in ga nikoli ne smete pustiti samega več kot štiri ure; med zdravstvenimi težavami pasme navaja gluhost in omenja, da obstaja test sluha BAER.",
       ],
       sources: ["S428", "S429", "S430"],
+    },
+    australian_cattle_dog: {
+      aka: "avstralski govedarski pes, Blue Heeler, Queensland Heeler",
+      text: [
+        "Avstralski govedar izvira iz Avstralije; FCI ga uvršča med pse za vodenje goveda. Standard Kennel Cluba opisuje močnega, kompaktnega delovnega psa z gladko, vremensko odporno dvojno dlako v modri (marmorirani ali pegasti) ali enakomerno rdeče pegasti barvi in navaja višino 46–51 cm za pse in 43–48 cm za psice; PDSA navaja povprečno težo 16–20 kg.",
+        "Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje enkrat na teden ter navaja, da linja. PDSA ga opisuje kot zelo pametnega in zelo energičnega psa, ki potrebuje veliko telesnega in miselnega dela; zaradi močnega pastirskega nagona lahko otroke, ki tečejo, grize za pete, pomagata pa socializacija in vzgoja že v mladosti.",
+      ],
+      sources: ["S436", "S437", "S438"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
