@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia" };
 
 const en: RegistryCopy = {
   hub: {
@@ -363,6 +363,7 @@ const en: RegistryCopy = {
     heart_cardiomyopathy_aortic_stenosis: "Heart problems such as cardiomyopathy and aortic stenosis can occur in the breed.",
     dental_disease_care: "A large UK study names dental disease as the most common problem in the breed, and owners are advised to make dental care a priority.",
     bladder_stones: "Bladder stones, collections of minerals that form in the bladder and urine, can occur in the breed.",
+    deafness: "Deafness in one or both ears occurs in the breed; puppies' hearing can be checked with a BAER test.",
     eye_problems_pra_cataracts_dry_eye: "Eye problems occur in the breed, such as progressive retinal atrophy, which can slowly lead to blindness, cataracts and dry eye; eye testing is available.",
     skin_comedo_allergy: "Skin problems can occur, such as Schnauzer comedo syndrome (a type of inflamed hair follicles) and skin allergies (atopy) that cause itching.",
     shorter_face_boas: "A brachycephalic (short-faced) breed: the shorter face can cause serious breathing problems (brachycephalic obstructive airway syndrome, BOAS).",
@@ -881,6 +882,14 @@ const en: RegistryCopy = {
         "The PDSA recommends at least an hour of exercise a day for adults, but not over-exercising puppies while their bones and joints are still developing; it calls grooming a daily task, notes that Newfies tend to drool and gives the lifespan as under 10 years. PetMD calls the breed an outstanding family pet that gets along well with children, small pets and other dogs, advises supervising small children with any dog, and warns that some may develop separation anxiety when left alone.",
       ],
       sources: ["S419", "S423", "S424"],
+    },
+    dalmatian: {
+      aka: "Carriage Dog, Spotted Coach Dog, Firehouse Dog",
+      text: [
+        "The Dalmatian comes from Croatia; the FCI lists it among the breeds related to scent hounds. Its short, shiny coat is pure white with clearly defined black or liver (brown) spots, and the standard asks for spotted ears. The FCI gives a height of 56–62 cm for males and 54–60 cm for females; the PDSA gives an average weight of 18–27 kg.",
+        "The Royal Kennel Club recommends more than two hours of exercise a day and brushing once a week, and says the breed sheds and suits a large house and garden. The PDSA calls Dalmatians great pets for active households that are better suited to older children, need company and should never be left alone for more than four hours; it lists deafness among the breed's health problems and notes that a BAER hearing test exists.",
+      ],
+      sources: ["S428", "S429", "S430"],
     },
     british_shorthair: {
       aka: "British Blue",
