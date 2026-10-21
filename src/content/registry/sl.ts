@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -380,6 +380,7 @@ const sl: RegistryCopy = {
     heart_cardiomyopathy_aortic_stenosis: "Pri pasmi se lahko pojavijo bolezni srca, kot sta kardiomiopatija in zožitev aorte (aortna stenoza).",
     dental_disease_care: "Velika britanska raziskava navaja bolezen zob kot najpogostejšo težavo pasme, zato lastnikom svetuje, naj negi zob namenijo posebno pozornost.",
     bladder_stones: "Pri pasmi se lahko pojavijo kamni v mehurju, skupki mineralov, ki nastanejo v mehurju in urinu.",
+    deafness: "Pri pasmi se pojavlja gluhost na eno ali obe ušesi; sluh mladičev je mogoče preveriti s testom BAER.",
     eye_problems_pra_cataracts_dry_eye: "Pri pasmi se pojavljajo težave z očmi, na primer progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, siva mrena in suho oko; očesni pregled je na voljo.",
     skin_comedo_allergy: "Pojavijo se lahko kožne težave, kot sta komedonski sindrom šnavcerjev (vrsta vnetja dlačnih mešičkov) in kožne alergije (atopija), ki povzročajo srbenje.",
     shorter_face_boas: "Brahicefalna pasma s kratkim obrazom: krajši obraz lahko povzroči resne težave z dihanjem (brahicefalni obstruktivni sindrom dihalnih poti, BOAS).",
@@ -898,6 +899,14 @@ const sl: RegistryCopy = {
         "PDSA za odraslega psa priporoča vsaj eno uro gibanja na dan, mladička pa ne smete preobremeniti, dokler se mu razvijajo kosti in sklepi; česanje opisuje kot vsakodnevno opravilo, piše, da se rad slini, in navaja življenjsko dobo pod 10 let. PetMD ga opisuje kot odličnega družinskega psa, ki se dobro razume z otroki, malimi živalmi in drugimi psi; svetuje, da igro majhnih otrok s psom vedno nadzorujete, in opozarja, da ima lahko kdaj težave, ko ostane sam.",
       ],
       sources: ["S419", "S423", "S424"],
+    },
+    dalmatian: {
+      aka: "dalmatinski pas, Dalmatian, Carriage Dog",
+      text: [
+        "Dalmatinec izvira iz Hrvaške; FCI ga uvršča med pasme, sorodne goničem. Kratka, sijoča dlaka je čisto bela z jasno ločenimi črnimi ali rjavimi pikami, standard pa zahteva tudi pikasta ušesa. FCI navaja višino 56–62 cm za pse in 54–60 cm za psice; PDSA navaja povprečno težo 18–27 kg.",
+        "Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje enkrat na teden ter navaja, da linja in da potrebuje veliko hišo z vrtom. PDSA ga opisuje kot odličnega psa za aktivna gospodinjstva, ki se bolje znajde ob starejših otrocih, potrebuje družbo in ga nikoli ne smete pustiti samega več kot štiri ure; med zdravstvenimi težavami pasme navaja gluhost in omenja, da obstaja test sluha BAER.",
+      ],
+      sources: ["S428", "S429", "S430"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
