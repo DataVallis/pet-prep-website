@@ -207,7 +207,7 @@ const en: RegistryCopy = {
           ? "Learns commands as fast as the mixed breed of the free plan."
           : `Learns commands ${f.num(p.multiplier)}× as fast as the mixed breed of the free plan.`,
     senior_share: (p, f) => `Becomes a senior in month ${p.months} (${f.num(p.months / 12, 1)} years) — the last quarter of the breed's expected lifespan.`,
-    walk_sensor: () => "Walks count real steps from the phone's motion sensor — no GPS.",
+    walk_sensor: () => "Walks count real steps from Apple Health or Health Connect (with permission, read-only) and the phone's motion sensor — no GPS.",
     play_instead_of_steps: (p, f) =>
       `No walks: an adult cat needs ${p.sessions} play sessions a day with a wand toy, at least ${f.num(p.gap_minutes / 60)} hours apart.`,
     litter_rule: (p) =>
