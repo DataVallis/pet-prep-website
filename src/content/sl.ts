@@ -599,26 +599,47 @@ const sl: Dictionary = {
                 "Račun starša: ime (kako vas kliče družina), e-poštni naslov, geslo (shranjeno samo kot varna zgoščena vrednost), časovni pas vaše naprave in čas, ko ste sprejeli pogoje in to politiko.",
                 "Profil skrbnika (otrok ali odrasel, ki skrbi za ljubljenčka): vzdevek do 30 znakov in po želji letnica rojstva — pri odraslem je ne vpišete. Brez e-pošte, gesla, priimka ali datuma rojstva.",
                 "Naprave: model telefona (na primer »iPhone«, nikoli ime, ki ga je telefonu dal uporabnik), za obvestila pa žeton naprave, vrsta sistema in različica aplikacije.",
-                "Dejavnost skrbi: dejanja v simulaciji (hranjenje, voda, čiščenje, sprehodi), dnevno število korakov s senzorja gibanja, ocene in poročila.",
+                "Dejavnost skrbi: dejanja v simulaciji (hranjenje, voda, čiščenje, sprehodi), dnevno število korakov (ali potiskov invalidskega vozička v prilagojenem načinu — glejte točki 3 in 4), ocene in poročila.",
                 "Pogodba o odgovornosti: otrokov podpis s prstom, shranjen kot vektorska črta s časom podpisa.",
                 "Kode: kode za prijavo in povabila so shranjene samo kot zgoščene vrednosti in potečejo.",
                 "Seznam za zgodnji dostop (ta spletna stran): vaš e-poštni naslov, jezik strani in čas prijave.",
               ],
             },
             {
-              heading: "3. Česa ne zbiramo",
+              heading: "3. Koraki, Apple Zdravje in Health Connect",
+              paragraphs: [
+                "Za sprehod aplikacija na otrokovem telefonu šteje korake. Če to dovolite v sistemskem oknu za dovoljenja, jih bere iz aplikacije Apple Zdravje (iPhone) ali Health Connect (Android) — samo za branje in samo korake. Kjer je na voljo, uporabi tudi senzor gibanja v telefonu; brez dovoljenja za Apple Zdravje ali Health Connect šteje samo senzor gibanja.",
+                "Na naš strežnik pošlje samo današnje število korakov, vir (Apple Zdravje, Health Connect ali senzor gibanja) in čas pošiljanja. Drugih podatkov iz Apple Zdravje ali Health Connect (na primer srčnega utripa, spanja ali teže) ne beremo, vanju nikoli ničesar ne zapišemo, podatkov iz njiju pa ne uporabljamo za oglase in jih ne pošiljamo tretjim osebam.",
+                "Dovoljenje lahko kadar koli prekličete v nastavitvah naprave: iPhone → Nastavitve → Zdravje → Dostop do podatkov in naprave → PetPrep; Android → Health Connect → Dovoljenja aplikacij → PetPrep. Dovoljenje za senzor gibanja prekličete v nastavitvah telefona pri aplikaciji PetPrep.",
+              ],
+            },
+            {
+              heading: "4. Prilagojen način (potiski invalidskega vozička)",
+              paragraphs: [
+                "Prilagojen način je namenjen otrokom, ki uporabljajo invalidski voziček: sprehod takrat šteje potiske vozička namesto korakov. V aplikacijo pride z naslednjo posodobitvijo; spodaj opisujemo, katere podatke obdelamo, če ga starš vklopi.",
+                "Če starš prilagojen način pri otroku vklopi, shranimo samo podatek, da je vklopljen. Razloga, diagnoze ali zdravstvenega stanja ne sprašujemo in ne shranjujemo.",
+                "Ko je način vklopljen, aplikacija na otrokovem telefonu namesto korakov bere samo potiske invalidskega vozička — iz Apple Zdravje (zapiše jih Apple Watch) ali Health Connect, z ločenim dovoljenjem samo za branje. Senzorja gibanja takrat ne uporablja. Na strežnik gre samo današnje število potiskov; pri dnevu zapišemo, da gre za potiske.",
+                "Starš lahko za otroka v prilagojenem načinu vpiše minute sprehoda (za danes ali včeraj). Shranimo datum, število minut in kateri starš je sprehod vpisal.",
+                "Ker podatek, da je prilagojen način vklopljen, lahko kaže na zdravstveno stanje otroka, ga obdelujemo samo na podlagi vaše izrecne privolitve (člen 9(2)(a) GDPR), ki jo kot starš ali zakoniti zastopnik daste v imenu otroka (člen 8 GDPR) z vklopom stikala. Način lahko kadar koli izklopite; aplikacija potem spet šteje korake.",
+                "Ti podatki (vklop, dnevi s potiski in vpisani sprehodi) so vključeni v izvoz podatkov družine in se izbrišejo skupaj s profilom otroka ali računom; iz šifriranih varnostnih kopij izginejo najpozneje v 35 dneh, kot vsi drugi podatki.",
+              ],
+            },
+            {
+              heading: "5. Česa ne zbiramo",
               items: [
                 "Lokacije: PetPrep ne uporablja GPS.",
+                "Drugih zdravstvenih podatkov iz Apple Zdravje ali Health Connect razen dnevnega števila korakov oziroma potiskov vozička.",
                 "Oglasov ter oglaševalskih ali sledilnih orodij tretjih oseb v aplikaciji.",
                 "Klepeta med uporabniki.",
                 "Oglaševalskih piškotkov na tej spletni strani. Analitične piškotke nastavimo samo, če jih dovolite (glejte Piškotki spodaj).",
               ],
             },
             {
-              heading: "4. Zakaj obdelujemo podatke (nameni in pravne podlage)",
+              heading: "6. Zakaj obdelujemo podatke (nameni in pravne podlage)",
               items: [
                 "Za storitev, ki ste jo izbrali: računi, simulacija, nadzorna plošča, poročila in obvestila (izvajanje pogodbe).",
                 "Za obdelavo nakupov prek App Store ali Google Play (izvajanje pogodbe).",
+                "Za prilagojen način (podatek, da je vklopljen, potiski vozička in vpisani sprehodi): izrecna privolitev starša z vklopom stikala (člen 9(2)(a) in člen 8 GDPR — glejte točko 4).",
                 "Za varnost storitve, na primer omejevanje ponavljajočih se poskusov prijave (zakoniti interes).",
                 "Za izpolnjevanje zakonskih obveznosti, na primer računovodstvo nakupov (zakonska obveznost).",
                 "Za obveščanje o začetku PetPrep po e-pošti, če ste se prijavili na zgodnji dostop (privolitev — odjava je mogoča v vsakem sporočilu).",
@@ -626,20 +647,20 @@ const sl: Dictionary = {
               ],
             },
             {
-              heading: "5. Otroci",
+              heading: "7. Otroci",
               paragraphs: [
                 "Račun lahko ustvari in otroka doda samo starš ali zakoniti zastopnik. Starš odloča, kaj otrok lahko počne, in lahko otrokov profil kadarkoli izbriše. Otroka nikoli ne vprašamo za kontaktne podatke, mu ne prikazujemo oglasov in ne omogočamo stika s tujci.",
                 "Imetnik računa lahko profil skrbnika ustvari tudi zase ali za drugega odraslega člana družine — na primer, da pred nakupom ali posvojitvijo preizkusi, ali mu pasma ustreza. Za tak profil veljajo enaka pravila in enak najmanjši obseg podatkov; vsa zaščita, ki je namenjena otrokom, velja tudi zanj.",
               ],
             },
             {
-              heading: "6. Slike in videi, ustvarjeni z umetno inteligenco",
+              heading: "8. Slike in videi, ustvarjeni z umetno inteligenco",
               paragraphs: [
                 "Fotografijo in kratke videje vsakega ljubljenčka ustvari AI storitev samo na podlagi opisa ljubljenčka (pasma, dlaka, lise ipd.). Opis nikoli ne vsebuje imen ali kakršnih koli podatkov o vaši družini. Končni mediji so shranjeni na naših strežnikih v EU in prikazani prek kratkotrajnih povezav.",
               ],
             },
             {
-              heading: "7. Ponudniki storitev",
+              heading: "9. Ponudniki storitev",
               items: [
                 "Gostovanje: Hetzner Online (strežniki v EU).",
                 "Ustvarjanje AI slik in videov: fal.ai (prejme samo opis ljubljenčka).",
@@ -651,32 +672,32 @@ const sl: Dictionary = {
               ],
             },
             {
-              heading: "8. Kako dolgo hranimo podatke",
+              heading: "10. Kako dolgo hranimo podatke",
               paragraphs: [
-                "Podatke hranimo, dokler obstaja vaš račun. Ko v aplikaciji izbrišete profil otroka ali svoj račun, se podatki takoj izbrišejo in jih ni mogoče obnoviti. Zapise, ki jih moramo hraniti po zakonu (na primer za nakupe), hranimo toliko časa, kot to zahteva zakon.",
+                "Podatke hranimo, dokler obstaja vaš račun. Ko v aplikaciji izbrišete profil otroka ali svoj račun, se podatki takoj izbrišejo in jih ni mogoče obnoviti; iz šifriranih varnostnih kopij samodejno izginejo najpozneje v 35 dneh. Zapise, ki jih moramo hraniti po zakonu (na primer za nakupe), hranimo toliko časa, kot to zahteva zakon.",
               ],
             },
             {
-              heading: "9. Vaše pravice",
+              heading: "11. Vaše pravice",
               paragraphs: [
                 "Imate pravico do dostopa, popravka, izvoza in izbrisa podatkov, do ugovora in omejitve obdelave ter do pritožbe pri nadzornem organu — v Sloveniji je to Informacijski pooblaščenec. V aplikaciji lahko vse podatke družine izvozite v datoteko (Nadzor → Račun → Izvozi moje podatke) ter izbrišete profil otroka ali celoten račun. Za vse drugo pišite na {privacyEmail}.",
               ],
             },
             {
-              heading: "10. Varnost",
+              heading: "12. Varnost",
               paragraphs: [
                 "Gesla in kode so shranjeni kot zgoščene vrednosti, povezave so šifrirane, posodobitve v živo prejmejo samo člani vaše družine, AI mediji pa so preverjeni, preden pridejo na otrokov zaslon.",
               ],
             },
             {
-              heading: "11. Spremembe",
+              heading: "13. Spremembe",
               paragraphs: ["O pomembnih spremembah vas obvestimo v aplikaciji, preden začnejo veljati. Datum na vrhu kaže zadnjo različico."],
             },
           ],
         },
         {
           type: "cookies",
-          heading: "12. Piškotki",
+          heading: "14. Piškotki",
           paragraphs: [
             "Nujni piškotki skrbijo za delovanje strani in si zapomnijo vašo izbiro glede piškotkov. Analitične piškotke (Google Analytics) nastavimo samo, če jih dovolite v pasici, izbiro pa lahko kadarkoli spremenite.",
             "Spodnja tabela se samodejno ustvari iz zadnjega pregleda te spletne strani, zato vedno prikazuje piškotke, ki jih dejansko uporabljamo.",
