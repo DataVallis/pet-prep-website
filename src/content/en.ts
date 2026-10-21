@@ -599,26 +599,47 @@ const en: Dictionary = {
                 "Parent account: name (how your family calls you), email address, password (stored only as a secure hash), your device's time zone, and the time you accepted the terms and this policy.",
                 "Carer profile (a child or an adult who cares for the pet): a nickname of up to 30 characters and, optionally, a birth year — left empty for an adult. No email, password, surname or date of birth.",
                 "Devices: the phone model (for example “iPhone”, never a name the user gave the phone), and for notifications a push token, platform and app version.",
-                "Care activity: actions in the simulation (feeding, water, cleaning, walks), daily step totals from the phone's motion sensor, scores and reports.",
+                "Care activity: actions in the simulation (feeding, water, cleaning, walks), daily step totals (or wheelchair push totals in adapted mode — see sections 3 and 4), scores and reports.",
                 "The Responsibility Contract: the child's finger signature, stored as a vector line with the time of signing.",
                 "Codes: login and invite codes are stored only as hashes and expire.",
                 "Early access list (this website): your email address, the language of the page and the time you signed up.",
               ],
             },
             {
-              heading: "3. What we do not collect",
+              heading: "3. Steps, Apple Health and Health Connect",
+              paragraphs: [
+                "For walks, the app on the child's phone counts steps. If you allow it in the system permission dialog, it reads them from Apple Health (iPhone) or Health Connect (Android) — read-only and steps only. Where available it also uses the phone's motion sensor; without permission for Apple Health or Health Connect, only the motion sensor counts.",
+                "The app sends our server only today's step count, its source (Apple Health, Health Connect or the motion sensor) and the time it was sent. We do not read any other data from Apple Health or Health Connect (for example heart rate, sleep or weight), we never write anything to them, and we do not use their data for advertising or send it to third parties.",
+                "You can revoke the permission at any time in your device settings: iPhone → Settings → Health → Data Access & Devices → PetPrep; Android → Health Connect → App permissions → PetPrep. The motion sensor permission can be revoked in the phone's settings for the PetPrep app.",
+              ],
+            },
+            {
+              heading: "4. Adapted mode (wheelchair pushes)",
+              paragraphs: [
+                "Adapted mode is for children who use a wheelchair: the walk then counts wheelchair pushes instead of steps. It comes to the app with the next app update; below we describe what data we process if a parent turns it on.",
+                "If a parent turns on adapted mode for a child, we store only the fact that it is on. We do not ask for or store a reason, diagnosis or health condition.",
+                "While it is on, the app on the child's phone reads only wheelchair pushes instead of steps — from Apple Health (recorded by an Apple Watch) or Health Connect, with a separate read-only permission. It does not use the motion sensor then. Only today's push count goes to our server; we note on that day that it counts pushes.",
+                "A parent can log walk minutes for a child in adapted mode (for today or yesterday). We store the date, the number of minutes and which parent logged the walk.",
+                "Because the fact that adapted mode is on may indicate a child's health condition, we process it only on the basis of your explicit consent (GDPR Art. 9(2)(a)), which you give as a parent or legal guardian on the child's behalf (GDPR Art. 8) by turning the switch on. You can turn the mode off at any time; the app then counts steps again.",
+                "This data (the switch, days counted in pushes and logged walks) is included in your family's data export and is deleted together with the child's profile or your account; it leaves our encrypted backups within 35 days at the latest, like all other data.",
+              ],
+            },
+            {
+              heading: "5. What we do not collect",
               items: [
                 "No location: PetPrep does not use GPS.",
+                "No other health data from Apple Health or Health Connect beyond the daily step count or wheelchair push count.",
                 "No advertising and no third-party advertising or tracking SDKs in the app.",
                 "No chat between users.",
                 "No advertising cookies on this website. Analytics cookies are set only if you allow them (see Cookies below).",
               ],
             },
             {
-              heading: "4. Why we process data (purposes and legal bases)",
+              heading: "6. Why we process data (purposes and legal bases)",
               items: [
                 "To provide the service you asked for: accounts, the simulation, the dashboard, reports and notifications (performance of a contract).",
                 "To process purchases through the App Store or Google Play (performance of a contract).",
+                "For adapted mode (the fact that it is on, wheelchair pushes and logged walks): the parent's explicit consent given by turning the switch on (GDPR Art. 9(2)(a) and Art. 8 — see section 4).",
                 "To keep the service secure, for example limiting repeated login attempts (legitimate interest).",
                 "To meet legal obligations, such as accounting for purchases (legal obligation).",
                 "To email you about the PetPrep launch if you joined the early access list (consent — you can unsubscribe in every email).",
@@ -626,20 +647,20 @@ const en: Dictionary = {
               ],
             },
             {
-              heading: "5. Children",
+              heading: "7. Children",
               paragraphs: [
                 "Only a parent or legal guardian can create an account and add a child. The parent decides what the child can do and can delete the child's profile at any time. We never ask a child for contact details, never show ads and never allow contact with strangers.",
                 "The account holder can also create a carer profile for themselves or for another adult in the family — for example to test whether a breed suits them before buying or adopting. The same rules and the same minimal data apply to such a profile; every protection designed for children applies to it too.",
               ],
             },
             {
-              heading: "6. AI-generated images and videos",
+              heading: "8. AI-generated images and videos",
               paragraphs: [
                 "Each pet's photo and short videos are created by an AI service from a description of the pet only (breed, coat, markings and similar). The description never contains names or any information about your family. Finished media are stored on our own servers in the EU and shown through short-lived links.",
               ],
             },
             {
-              heading: "7. Service providers",
+              heading: "9. Service providers",
               items: [
                 "Hosting: Hetzner Online (servers in the EU).",
                 "AI image and video generation: fal.ai (receives only the pet description).",
@@ -651,32 +672,32 @@ const en: Dictionary = {
               ],
             },
             {
-              heading: "8. How long we keep data",
+              heading: "10. How long we keep data",
               paragraphs: [
-                "We keep your data while your account exists. When you delete a child's profile or your account in the app, the data is deleted immediately and cannot be restored. Records we must keep by law (for example for purchases) are kept for the period the law requires.",
+                "We keep your data while your account exists. When you delete a child's profile or your account in the app, the data is deleted immediately and cannot be restored; it leaves our encrypted backups automatically within 35 days at the latest. Records we must keep by law (for example for purchases) are kept for the period the law requires.",
               ],
             },
             {
-              heading: "9. Your rights",
+              heading: "11. Your rights",
               paragraphs: [
                 "You have the right to access, correct, export and delete your data, to object to and restrict processing, and to complain to a supervisory authority — in Slovenia the Information Commissioner (Informacijski pooblaščenec). In the app you can export all your family's data as a file (Control → Account → Export my data) and delete a child's profile or your whole account. For anything else, write to {privacyEmail}.",
               ],
             },
             {
-              heading: "10. Security",
+              heading: "12. Security",
               paragraphs: [
                 "Passwords and codes are stored as hashes, connections are encrypted, live updates are only delivered to members of your family, and AI media are verified before they reach a child's screen.",
               ],
             },
             {
-              heading: "11. Changes",
+              heading: "13. Changes",
               paragraphs: ["We will tell you about important changes in the app before they take effect. The date at the top shows the latest version."],
             },
           ],
         },
         {
           type: "cookies",
-          heading: "12. Cookies",
+          heading: "14. Cookies",
           paragraphs: [
             "Necessary cookies keep the website working and remember your consent choice. Analytics cookies (Google Analytics) are set only if you allow them in the banner, and you can change your choice at any time.",
             "The table below is generated automatically from the latest scan of this website, so it always lists the cookies we actually use.",
