@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -281,6 +281,8 @@ const sl: RegistryCopy = {
       dna_pap_pra1: "Test DNK za progresivno atrofijo mrežnice pri papijonih (Pap-PRA1)",
       dna_nad: "Test DNK za nevroaksonsko distrofijo (NAD)",
       dna_eopra: "Test DNK za zgodaj nastopajočo progresivno atrofijo mrežnice (EOPRA)",
+      dna_cu: "Test DNK za cistinurijo (CU), dedno bolezen s kamni v ledvicah in mehurju",
+      heart_echo_scheme: "Pregled srca z barvnim dopplerskim ultrazvokom (shema pasemskega kluba)",
       dna_hsf4: "Test DNK za dedno sivo mreno (HSF4)",
       dna_lafora: "Test DNK za Laforino bolezen",
       dna_nccd: "Test DNK za neonatalno degeneracijo skorje malih možganov (NCCD)",
@@ -888,6 +890,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje vsak dan, piše, da ne linja in da mu ustreza stanovanje, življenjsko dobo pa navaja kot več kot 12 let. PDSA ga opisuje kot zelo ljubečega psa, ki se odlično razume z otroki in drugimi ljubljenčki; doda še, da je treba dlako striči na vsakih nekaj mesecev, pogosto pri pasjem frizerju.",
       ],
       sources: ["S410", "S411", "S413"],
+    },
+    newfoundland: {
+      aka: "Newfoundland, novofundlandski pes, njufi",
+      text: [
+        "Novofundlandec izvira iz Kanade; FCI ga uvršča med molose gorskega tipa in priznava tri barve: črno, belo-črno (landseer) in rjavo. PDSA ga opisuje kot nežnega velikana in navaja povprečno višino 66–71 cm ter povprečno težo 50–69 kg; PetMD dodaja, da je zaradi svoje zgodovine rojen plavalec.",
+        "PDSA za odraslega psa priporoča vsaj eno uro gibanja na dan, mladička pa ne smete preobremeniti, dokler se mu razvijajo kosti in sklepi; česanje opisuje kot vsakodnevno opravilo, piše, da se rad slini, in navaja življenjsko dobo pod 10 let. PetMD ga opisuje kot odličnega družinskega psa, ki se dobro razume z otroki, malimi živalmi in drugimi psi; svetuje, da igro majhnih otrok s psom vedno nadzorujete, in opozarja, da ima lahko kdaj težave, ko ostane sam.",
+      ],
+      sources: ["S419", "S423", "S424"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
