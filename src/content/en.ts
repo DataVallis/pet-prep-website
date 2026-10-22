@@ -606,11 +606,14 @@ const en: Dictionary = {
               ],
             },
             {
-              heading: "3. Steps, Apple Health and Health Connect",
+              heading: "3. Health and fitness data (steps, Apple Health and Health Connect)",
               paragraphs: [
-                "For walks, the app on the child's phone counts steps. If you allow it in the system permission dialog, it reads them from Apple Health (iPhone) or Health Connect (Android) — read-only and steps only. Where available it also uses the phone's motion sensor; without permission for Apple Health or Health Connect, only the motion sensor counts.",
-                "The app sends our server only today's step count, its source (Apple Health, Health Connect or the motion sensor) and the time it was sent. We do not read any other data from Apple Health or Health Connect (for example heart rate, sleep or weight), we never write anything to them, and we do not use their data for advertising or send it to third parties.",
-                "You can revoke the permission at any time in your device settings: iPhone → Settings → Health → Data Access & Devices → PetPrep; Android → Health Connect → App permissions → PetPrep. The motion sensor permission can be revoked in the phone's settings for the PetPrep app.",
+                "PetPrep accesses and collects one kind of health and fitness data: how many steps the carer walks each day (physical activity). We use it for one feature only — the pet's daily walk in the simulation: the child walks, and their steps count as the pet's walk.",
+                "How we access it: the app on the child's phone counts steps. If you allow it in the system permission dialog, it reads them from Apple Health (iPhone) or Health Connect (Android) — read-only and steps only. Where available it also uses the phone's motion sensor (Android: “Physical activity” permission; iPhone: “Motion & Fitness”); without permission for Apple Health or Health Connect, only the motion sensor counts.",
+                "What we collect: the app sends our server only today's step total, its source (Apple Health, Health Connect or the motion sensor) and the time it was sent. We store one daily total per carer profile — never individual movements, routes, location, heart rate, sleep, weight or any other health data. We never write anything to Apple Health or Health Connect.",
+                "How we use and share it: step totals are used only to run the walk in the simulation and to show it to the parent (dashboard and reports). We do not use them for advertising, profiling, health assessments or training AI models, we do not sell them, and we do not share them with third parties; only our hosting provider (Hetzner, servers in the EU) stores them on our behalf. Our use of data received from Health Connect complies with the Health Connect permissions policy, including its Limited Use requirements.",
+                "Legal basis and retention: reading steps is optional and happens only with the permission you give on the device; we process the daily total to provide the service you chose (performance of a contract). Step totals are included in your family's data export and are deleted together with the carer profile or your account; they leave our encrypted backups within 35 days at the latest.",
+                "You can revoke the permission at any time in your device settings: iPhone → Settings → Health → Data Access & Devices → PetPrep; Android → Health Connect → App permissions → PetPrep. The motion sensor permission can be revoked in the phone's settings for the PetPrep app. The walk then counts no new steps.",
               ],
             },
             {
@@ -619,7 +622,7 @@ const en: Dictionary = {
                 "Adapted mode is for children who use a wheelchair: the walk then counts wheelchair pushes instead of steps. It comes to the app with the next app update; below we describe what data we process if a parent turns it on.",
                 "If a parent turns on adapted mode for a child, we store only the fact that it is on. We do not ask for or store a reason, diagnosis or health condition.",
                 "While it is on, the app on the child's phone reads only wheelchair pushes instead of steps — from Apple Health (recorded by an Apple Watch) or Health Connect, with a separate read-only permission. It does not use the motion sensor then. Only today's push count goes to our server; we note on that day that it counts pushes.",
-                "A parent can log walk minutes for a child in adapted mode (for today or yesterday). We store the date, the number of minutes and which parent logged the walk.",
+                "A parent can log walk minutes for a child in adapted mode (for today only). We store the date, the number of minutes and which parent logged the walk.",
                 "Because the fact that adapted mode is on may indicate a child's health condition, we process it only on the basis of your explicit consent (GDPR Art. 9(2)(a)), which you give as a parent or legal guardian on the child's behalf (GDPR Art. 8) by turning the switch on. You can turn the mode off at any time; the app then counts steps again.",
                 "This data (the switch, days counted in pushes and logged walks) is included in your family's data export and is deleted together with the child's profile or your account; it leaves our encrypted backups within 35 days at the latest, like all other data.",
               ],
@@ -639,6 +642,7 @@ const en: Dictionary = {
               items: [
                 "To provide the service you asked for: accounts, the simulation, the dashboard, reports and notifications (performance of a contract).",
                 "To process purchases through the App Store or Google Play (performance of a contract).",
+                "For the daily walk (daily step totals — health and fitness data, see section 3): performance of a contract; reading from Apple Health, Health Connect or the motion sensor only with the permission you give on the device.",
                 "For adapted mode (the fact that it is on, wheelchair pushes and logged walks): the parent's explicit consent given by turning the switch on (GDPR Art. 9(2)(a) and Art. 8 — see section 4).",
                 "To keep the service secure, for example limiting repeated login attempts (legitimate interest).",
                 "To meet legal obligations, such as accounting for purchases (legal obligation).",
