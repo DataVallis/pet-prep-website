@@ -4,7 +4,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 /** "a Border Collie", "an Akita". */
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
-const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs" };
+const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs", 10: "sighthounds" };
 const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia" };
 
 const en: RegistryCopy = {
@@ -364,6 +364,7 @@ const en: RegistryCopy = {
     dental_disease_care: "A large UK study names dental disease as the most common problem in the breed, and owners are advised to make dental care a priority.",
     bladder_stones: "Bladder stones, collections of minerals that form in the bladder and urine, can occur in the breed.",
     deafness: "Deafness in one or both ears occurs in the breed; puppies' hearing can be checked with a BAER test.",
+    mitral_valve_disease: "Mitral valve disease, a heart condition where a weakened valve lets blood flow back into the heart, occurs in the breed; a vet can listen to breeding dogs' hearts before they are bred.",
     eye_problems_pra_cataracts_dry_eye: "Eye problems occur in the breed, such as progressive retinal atrophy, which can slowly lead to blindness, cataracts and dry eye; eye testing is available.",
     skin_comedo_allergy: "Skin problems can occur, such as Schnauzer comedo syndrome (a type of inflamed hair follicles) and skin allergies (atopy) that cause itching.",
     shorter_face_boas: "A brachycephalic (short-faced) breed: the shorter face can cause serious breathing problems (brachycephalic obstructive airway syndrome, BOAS).",
@@ -898,6 +899,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends more than two hours of exercise a day and brushing once a week, and says the breed sheds. The PDSA describes a highly intelligent, high-energy dog that needs a lot of physical and mental activity; because of its strong herding instinct it may nip at the heels of running children, and socialisation and training at a young age help.",
       ],
       sources: ["S436", "S437", "S438"],
+    },
+    whippet: {
+      aka: "Snap dog",
+      text: [
+        "The Whippet comes from Great Britain; the FCI lists it among the short-haired sighthounds. The Kennel Club standard describes a balanced combination of muscular power and strength with elegance and grace of outline, a fine, short, close coat in any colour or mixture of colours except merle, and a gentle, affectionate, even disposition; it gives a height of 47–51 cm for males and 44–47 cm for females, and the PDSA gives an average weight of 11–18 kg.",
+        "The PDSA recommends at least an hour of exercise every day, with chances to run off-lead in a secure area, and a weekly brush with a soft brush. It calls Whippets a popular choice for families because they are calm and gentle around children, but recommends a home with slightly older children; Whippets dislike being left alone and have a really high prey drive, so the PDSA does not recommend keeping them with smaller pets. A coat may help in winter, and thick, soft bedding protects their prominent bones.",
+      ],
+      sources: ["S442", "S443", "S444"],
     },
     british_shorthair: {
       aka: "British Blue",
