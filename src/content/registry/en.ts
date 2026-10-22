@@ -316,6 +316,7 @@ const en: RegistryCopy = {
     hind_leg_conformation: "The Royal Kennel Club names the shape of the hind legs and the way the dog moves as a point of concern in this breed; a sound dog has a level back and moderate hind legs.",
     hip_elbow_dysplasia: "Can be prone to hip and elbow dysplasia; breeders are advised to have the parents' hips and elbows tested before breeding.",
     degenerative_myelopathy: "Degenerative myelopathy, a disease of the spinal cord that slowly weakens the back legs, occurs in the breed; a DNA test is available.",
+    exercise_induced_collapse: "Exercise-induced collapse, an inherited neuromuscular condition that can make a dog collapse after hard exercise, occurs in the breed.",
     heart_valve_disease: "Heart disease caused by a weakening mitral valve is a big problem in this breed; it is often first noticed as a heart murmur, and breeding dogs should be heart-graded first.",
     chiari_syringomyelia: "Chiari-like malformation and syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, occurs in the breed and is linked to skull shape; it is diagnosed by MRI scan.",
     eye_conditions: "Inherited eye conditions such as cataracts occur in the breed, and protruding or irritated eyes are a point of concern; eye testing and DNA tests are available.",
@@ -915,6 +916,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends more than two hours of exercise a day, a large house and a large garden, and grooming more than once a week. PetMD advises weekly brushing (some dogs also need hand stripping), says Griffs are generally patient and gentle with children when socialised as puppies, and notes that their hunting history can give them a strong prey drive, so smaller animals such as cats and rabbits may look like something to chase.",
       ],
       sources: ["S449", "S450", "S453"],
+    },
+    chesapeake_bay_retriever: {
+      aka: "Chessie, Retriever (Chesapeake Bay)",
+      text: [
+        "The Chesapeake Bay Retriever, often called the Chessie, comes from the United States; the FCI lists it among the retrievers. The FCI standard describes a working retriever that is equally proficient on land and in the water, whose size and substance should not be excessive, with a thick, short coat over a dense, woolly undercoat and clear yellowish or amber eyes; any colour of brown, sedge or deadgrass is acceptable, and a black coat disqualifies. It gives a height of 58–66 cm and a weight of 29.5–36.5 kg for males, and 53–61 cm and 25–32 kg for females.",
+        "The Royal Kennel Club recommends more than two hours of exercise a day, a large house and a large garden, and grooming once a week. PetMD describes a bright, cheerful and extremely affectionate dog that can become destructive if it is not stimulated or is left alone for too long, says that with proper introductions and socialisation Chessies make a great addition to a family, and advises not to let the dog exercise directly before or after eating.",
+      ],
+      sources: ["S458", "S459", "S461"],
     },
     british_shorthair: {
       aka: "British Blue",

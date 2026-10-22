@@ -333,6 +333,7 @@ const sl: RegistryCopy = {
     hind_leg_conformation: "The Royal Kennel Club pri tej pasmi opozarja na obliko zadnjih nog in način gibanja; zdrav pes ima raven hrbet in zmerno zakotene zadnje noge.",
     hip_elbow_dysplasia: "Lahko je nagnjen k displaziji kolkov in komolcev; vzrediteljem svetujejo, naj psom pred paritvijo pregledajo kolke in komolce.",
     degenerative_myelopathy: "Pri pasmi se pojavlja degenerativna mielopatija, bolezen hrbtenjače, ki počasi slabi zadnje noge; na voljo je test DNK.",
+    exercise_induced_collapse: "Pri pasmi se pojavlja kolaps ob naporu (EIC), dedna živčno-mišična bolezen, zaradi katere se pes po močnem naporu lahko zgrudi.",
     heart_valve_disease: "Bolezen srca zaradi oslabljene mitralne zaklopke je pri tej pasmi velika težava; pogosto jo najprej opazijo kot srčni šum, zato naj imajo psi za vzrejo najprej pregledano srce.",
     chiari_syringomyelia: "Pri pasmi se pojavljata Chiarijeva malformacija in siringomielija, boleča bolezen z votlinicami, polnimi tekočine, v hrbtenjači ob možganih; povezana je z obliko lobanje, ugotovijo jo z MRI.",
     eye_conditions: "Pri pasmi se pojavljajo dedne bolezni oči, na primer siva mrena, izbuljene ali razdražene oči pa so opozorilo pri presoji; na voljo so pregledi oči in testi DNK.",
@@ -932,6 +933,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča več kot dve uri gibanja na dan, veliko hišo in velik vrt ter česanje večkrat na teden. PetMD svetuje tedensko česanje (nekateri psi potrebujejo tudi ročno trimanje), pravi, da so grifoni do otrok praviloma potrpežljivi in nežni, če so bili kot mladički socializirani, in da imajo zaradi lovske preteklosti lahko močan lovski nagon, zato lahko lovijo manjše živali, kot so mačke in kunci.",
       ],
       sources: ["S449", "S450", "S453"],
+    },
+    chesapeake_bay_retriever: {
+      aka: "chessie, Chesapeake",
+      text: [
+        "Chesapeake Bay retriver, pogosto imenovan Chessie, izvira iz Združenih držav Amerike; FCI ga uvršča med prinašalce. Standard FCI opisuje delovnega prinašalca, ki je enako spreten na kopnem in v vodi, ne sme biti prevelik ali pretežak, ima gosto, kratko dlako z gosto, volnato podlanko ter jasne rumenkaste ali jantarne oči; dovoljena je vsaka rjava barva, barva »sedge« (rdečkasto zlata) ali barva suhe trave, črna dlaka pa ga izloči. Navaja višino 58–66 cm in težo 29,5–36,5 kg za pse ter 53–61 cm in 25–32 kg za psice.",
+        "Royal Kennel Club priporoča več kot dve uri gibanja na dan, veliko hišo in velik vrt ter česanje enkrat na teden. PetMD ga opisuje kot vedrega, veselega in zelo ljubečega psa, ki lahko postane uničevalen, če nima dovolj spodbud ali je predolgo sam, pravi, da je ob pravilnem uvajanju in socializaciji odličen družinski pes, in svetuje, naj pes ne teče tik pred jedjo ali po njej.",
+      ],
+      sources: ["S458", "S459", "S461"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
