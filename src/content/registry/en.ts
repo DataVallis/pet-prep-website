@@ -908,6 +908,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S442", "S443", "S444"],
     },
+    wirehaired_pointing_griffon: {
+      aka: "Korthals Griffon, Wire-haired Pointing Griffon Korthals, Griff",
+      text: [
+        "The Wirehaired Pointing Griffon, also called the Korthals Griffon, comes from France; the FCI lists it among the continental pointing dogs and calls it essentially a versatile pointing dog. The FCI standard describes a vigorous, rustic dog that is longer than tall, with a harsh, coarse coat that is never curly or woolly, a nose that is always brown, and preferably a steel grey coat with brown (liver) patches; it gives a height of about 55–60 cm for males and 50–55 cm for females and calls the breed gentle, proud and very gentle with children. PetMD gives a weight of 35–70 pounds (about 16–32 kg).",
+        "The Royal Kennel Club recommends more than two hours of exercise a day, a large house and a large garden, and grooming more than once a week. PetMD advises weekly brushing (some dogs also need hand stripping), says Griffs are generally patient and gentle with children when socialised as puppies, and notes that their hunting history can give them a strong prey drive, so smaller animals such as cats and rabbits may look like something to chase.",
+      ],
+      sources: ["S449", "S450", "S453"],
+    },
     british_shorthair: {
       aka: "British Blue",
       text: [
