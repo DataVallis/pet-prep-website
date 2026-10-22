@@ -606,11 +606,14 @@ const sl: Dictionary = {
               ],
             },
             {
-              heading: "3. Koraki, Apple Zdravje in Health Connect",
+              heading: "3. Podatki o zdravju in telesni dejavnosti (koraki, Apple Zdravje in Health Connect)",
               paragraphs: [
-                "Za sprehod aplikacija na otrokovem telefonu šteje korake. Če to dovolite v sistemskem oknu za dovoljenja, jih bere iz aplikacije Apple Zdravje (iPhone) ali Health Connect (Android) — samo za branje in samo korake. Kjer je na voljo, uporabi tudi senzor gibanja v telefonu; brez dovoljenja za Apple Zdravje ali Health Connect šteje samo senzor gibanja.",
-                "Na naš strežnik pošlje samo današnje število korakov, vir (Apple Zdravje, Health Connect ali senzor gibanja) in čas pošiljanja. Drugih podatkov iz Apple Zdravje ali Health Connect (na primer srčnega utripa, spanja ali teže) ne beremo, vanju nikoli ničesar ne zapišemo, podatkov iz njiju pa ne uporabljamo za oglase in jih ne pošiljamo tretjim osebam.",
-                "Dovoljenje lahko kadar koli prekličete v nastavitvah naprave: iPhone → Nastavitve → Zdravje → Dostop do podatkov in naprave → PetPrep; Android → Health Connect → Dovoljenja aplikacij → PetPrep. Dovoljenje za senzor gibanja prekličete v nastavitvah telefona pri aplikaciji PetPrep.",
+                "PetPrep dostopa do ene vrste podatkov o zdravju in telesni dejavnosti in jih zbira: koliko korakov skrbnik prehodi vsak dan (telesna dejavnost). Uporabljamo jih samo za eno funkcijo — dnevni sprehod ljubljenčka v simulaciji: otrok hodi, njegovi koraki pa štejejo kot sprehod ljubljenčka.",
+                "Kako dostopamo: aplikacija na otrokovem telefonu šteje korake. Če to dovolite v sistemskem oknu za dovoljenja, jih bere iz aplikacije Apple Zdravje (iPhone) ali Health Connect (Android) — samo za branje in samo korake. Kjer je na voljo, uporabi tudi senzor gibanja v telefonu (Android: dovoljenje »Telesna dejavnost«; iPhone: »Gibanje in telesna pripravljenost«); brez dovoljenja za Apple Zdravje ali Health Connect šteje samo senzor gibanja.",
+                "Kaj zbiramo: aplikacija na naš strežnik pošlje samo današnje število korakov, vir (Apple Zdravje, Health Connect ali senzor gibanja) in čas pošiljanja. Hranimo en dnevni seštevek na profil skrbnika — nikoli posameznih gibov, poti, lokacije, srčnega utripa, spanja, teže ali drugih zdravstvenih podatkov. V Apple Zdravje ali Health Connect nikoli ničesar ne zapišemo.",
+                "Kako jih uporabljamo in delimo: število korakov uporabljamo samo za sprehod v simulaciji in za prikaz staršu (nadzorna plošča in poročila). Ne uporabljamo ga za oglaševanje, profiliranje, zdravstvene ocene ali učenje modelov umetne inteligence, ga ne prodajamo in ga ne delimo s tretjimi osebami; v našem imenu ga hrani le ponudnik gostovanja (Hetzner, strežniki v EU). Podatke, ki jih prejmemo iz Health Connect, uporabljamo v skladu s pravili o dovoljenjih Health Connect, vključno z zahtevami glede omejene uporabe (Limited Use).",
+                "Pravna podlaga in hramba: branje korakov je neobvezno in poteka samo z dovoljenjem, ki ga date na napravi; dnevni seštevek obdelujemo za storitev, ki ste jo izbrali (izvajanje pogodbe). Število korakov je vključeno v izvoz podatkov družine in se izbriše skupaj s profilom skrbnika ali računom; iz šifriranih varnostnih kopij izgine najpozneje v 35 dneh.",
+                "Dovoljenje lahko kadar koli prekličete v nastavitvah naprave: iPhone → Nastavitve → Zdravje → Dostop do podatkov in naprave → PetPrep; Android → Health Connect → Dovoljenja aplikacij → PetPrep. Dovoljenje za senzor gibanja prekličete v nastavitvah telefona pri aplikaciji PetPrep. Sprehod potem ne šteje novih korakov.",
               ],
             },
             {
@@ -619,7 +622,7 @@ const sl: Dictionary = {
                 "Prilagojen način je namenjen otrokom, ki uporabljajo invalidski voziček: sprehod takrat šteje potiske vozička namesto korakov. V aplikacijo pride z naslednjo posodobitvijo; spodaj opisujemo, katere podatke obdelamo, če ga starš vklopi.",
                 "Če starš prilagojen način pri otroku vklopi, shranimo samo podatek, da je vklopljen. Razloga, diagnoze ali zdravstvenega stanja ne sprašujemo in ne shranjujemo.",
                 "Ko je način vklopljen, aplikacija na otrokovem telefonu namesto korakov bere samo potiske invalidskega vozička — iz Apple Zdravje (zapiše jih Apple Watch) ali Health Connect, z ločenim dovoljenjem samo za branje. Senzorja gibanja takrat ne uporablja. Na strežnik gre samo današnje število potiskov; pri dnevu zapišemo, da gre za potiske.",
-                "Starš lahko za otroka v prilagojenem načinu vpiše minute sprehoda (za danes ali včeraj). Shranimo datum, število minut in kateri starš je sprehod vpisal.",
+                "Starš lahko za otroka v prilagojenem načinu vpiše minute sprehoda (samo za danes). Shranimo datum, število minut in kateri starš je sprehod vpisal.",
                 "Ker podatek, da je prilagojen način vklopljen, lahko kaže na zdravstveno stanje otroka, ga obdelujemo samo na podlagi vaše izrecne privolitve (člen 9(2)(a) GDPR), ki jo kot starš ali zakoniti zastopnik daste v imenu otroka (člen 8 GDPR) z vklopom stikala. Način lahko kadar koli izklopite; aplikacija potem spet šteje korake.",
                 "Ti podatki (vklop, dnevi s potiski in vpisani sprehodi) so vključeni v izvoz podatkov družine in se izbrišejo skupaj s profilom otroka ali računom; iz šifriranih varnostnih kopij izginejo najpozneje v 35 dneh, kot vsi drugi podatki.",
               ],
@@ -639,6 +642,7 @@ const sl: Dictionary = {
               items: [
                 "Za storitev, ki ste jo izbrali: računi, simulacija, nadzorna plošča, poročila in obvestila (izvajanje pogodbe).",
                 "Za obdelavo nakupov prek App Store ali Google Play (izvajanje pogodbe).",
+                "Za dnevni sprehod (dnevno število korakov — podatki o telesni dejavnosti, glejte točko 3): izvajanje pogodbe; branje iz Apple Zdravje, Health Connect ali senzorja gibanja samo z dovoljenjem, ki ga date na napravi.",
                 "Za prilagojen način (podatek, da je vklopljen, potiski vozička in vpisani sprehodi): izrecna privolitev starša z vklopom stikala (člen 9(2)(a) in člen 8 GDPR — glejte točko 4).",
                 "Za varnost storitve, na primer omejevanje ponavljajočih se poskusov prijave (zakoniti interes).",
                 "Za izpolnjevanje zakonskih obveznosti, na primer računovodstvo nakupov (zakonska obveznost).",
