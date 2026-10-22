@@ -925,6 +925,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S442", "S443", "S444"],
     },
+    wirehaired_pointing_griffon: {
+      aka: "korthals, korthalsov grifon, grifon",
+      text: [
+        "Francoski ostrodlaki ptičar (Korthalsov grifon) izvira iz Francije; FCI ga uvršča med celinske ptičarje in ga opisuje kot vsestranskega ptičarja. Standard FCI opisuje krepkega, robustnega psa, ki je daljši kot višji, z ostro, grobo dlako, ki ni nikoli kodrasta ali volnata, z vedno rjavim nosom in najraje jekleno sivo dlako z rjavimi (jetrnimi) lisami; navaja višino približno 55–60 cm za pse in 50–55 cm za psice ter ga opisuje kot nežnega, ponosnega in zelo nežnega do otrok. PetMD navaja težo 35–70 funtov (približno 16–32 kg).",
+        "Royal Kennel Club priporoča več kot dve uri gibanja na dan, veliko hišo in velik vrt ter česanje večkrat na teden. PetMD svetuje tedensko česanje (nekateri psi potrebujejo tudi ročno trimanje), pravi, da so grifoni do otrok praviloma potrpežljivi in nežni, če so bili kot mladički socializirani, in da imajo zaradi lovske preteklosti lahko močan lovski nagon, zato lahko lovijo manjše živali, kot so mačke in kunci.",
+      ],
+      sources: ["S449", "S450", "S453"],
+    },
     british_shorthair: {
       aka: "britanka, British Blue",
       text: [
