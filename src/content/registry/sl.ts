@@ -286,6 +286,7 @@ const sl: RegistryCopy = {
       cardiac_exam: "Pregled srca staršev (priporočilo pasemskega kluba)",
       dna_rd_osd: "Test DNK za displazijo mrežnice / okulo-skeletno displazijo (RD/OSD)",
       dna_xlpra1: "Test DNK za na X vezano progresivno atrofijo mrežnice (XLPRA1)",
+      dna_cmo: "Test za kraniomandibularno osteopatijo (CMO), dedno bolezen kosti čeljusti",
       dna_hsf4: "Test DNK za dedno sivo mreno (HSF4)",
       dna_lafora: "Test DNK za Laforino bolezen",
       dna_nccd: "Test DNK za neonatalno degeneracijo skorje malih možganov (NCCD)",
@@ -416,6 +417,7 @@ const sl: RegistryCopy = {
     ear_infections_prone: "Pasma je nagnjena k vnetjem ušes; skrbno pazite na higieno ušes.",
     familial_nephropathy: "Pri pasmi se pojavlja dedna bolezen ledvic (družinska nefropatija); za starše je na voljo test DNK.",
     hereditary_nephritis: "Pri pasmi se pojavlja dedna bolezen ledvic (dedni nefritis, imenovan tudi samojedska dedna glomerulopatija).",
+    scottie_cramp: "Pri pasmi se pojavlja »škotski krč« — kratki napadi krčenja mišic, navadno ob vznemirjenju; ni boleč.",
     cm_sm_screening: "Pri pasmi se lahko pojavita Chiarijeva malformacija in siringomielija, boleča bolezen z votlinicami, polnimi tekočine, v hrbtenjači ob možganih; vzrediteljem svetujejo pregled staršev (v Združenem kraljestvu: shema BVA/KC).",
     prominent_eyes_injury_dry_eye: "Izbuljene oči se lažje poškodujejo, na njih pa lahko nastanejo razjede in izsušenost; pri pasmi se pojavljata tudi suho oko in češnjevo oko (izpad žleze tretje veke).",
     legg_perthes: "Pri pasmi se lahko pojavi Legg-Perthesova bolezen, boleče stanje, pri katerem kolčni sklep odmre in razpade.",
@@ -953,6 +955,14 @@ const sl: RegistryCopy = {
         "PDSA priporoča vsaj dve uri gibanja vsak dan in vsakodnevno česanje, pravi, da samojedi zelo izgubljajo dlako, da se navadno odlično razumejo z otroki in so zvesti vsej družini, da jih nikoli ne smemo pustiti samih več kot štiri ure, da zaradi spretnega pobegovanja potrebujejo zelo varen vrt in da imajo močan lovski nagon, ter svetuje premor med obrokom in gibanjem. PetMD dodaja, da samojedi slabo prenašajo vročino.",
       ],
       sources: ["S464", "S467", "S469"],
+    },
+    scottish_terrier: {
+      aka: "scottie, škotski terier",
+      text: [
+        "Škotski terier, pogosto imenovan scottie, izvira iz Velike Britanije; FCI ga uvršča med male terierje. Standard Kennel Cluba opisuje čvrstega psa s kratkimi nogami, budne drže, ki v majhnem telesu kaže veliko moči in živahnosti; je zvest in vdan, dostojanstven, samostojen in zadržan, a pogumen in zelo inteligenten — drzen, a nikoli napadalen. Tesno prilegajoča se dvojna dlaka ima trdo, žičnato krovno dlako; barva je črna, pšenično rumena ali tigrasta v katerem koli odtenku. Navaja višino 25–28 cm in težo 8,5–10,5 kg.",
+        "PDSA pravi, da škotski terierji potrebujejo približno uro gibanja na dan in vsakodnevno nego dlake, na dva do tri mesece pa trimanje in striženje pri pasjem frizerju; opisuje jih kot zveste in vdane svoji družini ter pravi, da so lahko trmasti, zato učenje zahteva potrpežljivost in vztrajnost. PetMD piše, da so ob pravem učenju in socializaciji lahko dobri družinski psi, da je socializacija mladička pomembna in da jih ne smemo dolgo puščati samih.",
+      ],
+      sources: ["S473", "S474", "S475"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
