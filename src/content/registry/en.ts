@@ -269,6 +269,7 @@ const en: RegistryCopy = {
       cardiac_exam: "Heart examination of the parents (breed club recommendation)",
       dna_rd_osd: "DNA test for retinal dysplasia / oculoskeletal dysplasia (RD/OSD)",
       dna_xlpra1: "DNA test for X-linked progressive retinal atrophy (XLPRA1)",
+      dna_cmo: "Test for craniomandibular osteopathy (CMO), an inherited bone disorder of the jaw",
       dna_hsf4: "DNA test for hereditary cataract (HSF4)",
       dna_lafora: "DNA test for Lafora disease",
       dna_nccd: "DNA test for neonatal cerebellar cortical degeneration (NCCD)",
@@ -399,6 +400,7 @@ const en: RegistryCopy = {
     ear_infections_prone: "The breed is prone to ear infections; keep a close eye on ear hygiene.",
     familial_nephropathy: "An inherited kidney disease (familial nephropathy) occurs in the breed; a DNA test of the parents is available.",
     hereditary_nephritis: "An inherited kidney disease (hereditary nephritis, also called Samoyed hereditary glomerulopathy) occurs in the breed.",
+    scottie_cramp: "Scottie cramp — short episodes of muscle cramping, usually brought on by excitement — occurs in the breed; it is not painful.",
     cm_sm_screening: "Chiari-like malformation and syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, can occur in the breed; breeders are advised to screen the parents (UK: BVA/KC scheme).",
     prominent_eyes_injury_dry_eye: "Prominent eyes are more easily injured and can develop ulcers and dryness; dry eye and cherry eye also occur in the breed.",
     legg_perthes: "Legg-Perthes disease, a painful condition in which the hip joint dies and crumbles, can occur in the breed.",
@@ -936,6 +938,14 @@ const en: RegistryCopy = {
         "The PDSA recommends a minimum of two hours of exercise every day and grooming on a daily basis, says Samoyeds shed very often, are usually great with children and loyal to the whole family, should never be left alone for more than four hours, need a very secure garden as accomplished escape artists and have a strong prey drive, and advises leaving a gap after eating and before exercising. PetMD adds that Samoyeds do not do well in hot temperatures.",
       ],
       sources: ["S464", "S467", "S469"],
+    },
+    scottish_terrier: {
+      aka: "Scottie, Aberdeen Terrier",
+      text: [
+        "The Scottish Terrier, often called the Scottie, comes from Great Britain; the FCI lists it among the small-sized terriers. The Kennel Club standard describes a thick-set, short-legged dog, alert in carriage and suggestive of great power and activity in small compass, loyal and faithful, dignified, independent and reserved, but courageous and highly intelligent — bold, but never aggressive. Its close-lying double coat has a harsh, wiry outer coat; the colour is black, wheaten or brindle of any shade. It gives a height of 25–28 cm and a weight of 8.5–10.5 kg.",
+        "The PDSA says Scotties need around an hour of exercise daily and daily grooming, with stripping and clipping by a professional groomer every two to three months, describes them as loyal and devoted to their family, and says they can be stubborn, so training needs patience and commitment. PetMD says that with the right training and socialisation they can be good dogs for families, that socialising the puppy is important, and that they should not be left alone for extended periods.",
+      ],
+      sources: ["S473", "S474", "S475"],
     },
     british_shorthair: {
       aka: "British Blue",
