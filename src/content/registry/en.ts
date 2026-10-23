@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs", 10: "sighthounds" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia" };
 
 const en: RegistryCopy = {
   hub: {
@@ -266,6 +266,9 @@ const en: RegistryCopy = {
       dna_eopra: "DNA test for early-onset progressive retinal atrophy (EOPRA)",
       dna_cu: "DNA test for cystinuria (CU), an inherited kidney and bladder stone condition",
       heart_echo_scheme: "Heart screening by colour Doppler ultrasound (breed club scheme)",
+      cardiac_exam: "Heart examination of the parents (breed club recommendation)",
+      dna_rd_osd: "DNA test for retinal dysplasia / oculoskeletal dysplasia (RD/OSD)",
+      dna_xlpra1: "DNA test for X-linked progressive retinal atrophy (XLPRA1)",
       dna_hsf4: "DNA test for hereditary cataract (HSF4)",
       dna_lafora: "DNA test for Lafora disease",
       dna_nccd: "DNA test for neonatal cerebellar cortical degeneration (NCCD)",
@@ -395,6 +398,7 @@ const en: RegistryCopy = {
     autoimmune_conditions: "Autoimmune conditions, where the body reacts against itself, can occur in the breed.",
     ear_infections_prone: "The breed is prone to ear infections; keep a close eye on ear hygiene.",
     familial_nephropathy: "An inherited kidney disease (familial nephropathy) occurs in the breed; a DNA test of the parents is available.",
+    hereditary_nephritis: "An inherited kidney disease (hereditary nephritis, also called Samoyed hereditary glomerulopathy) occurs in the breed.",
     cm_sm_screening: "Chiari-like malformation and syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, can occur in the breed; breeders are advised to screen the parents (UK: BVA/KC scheme).",
     prominent_eyes_injury_dry_eye: "Prominent eyes are more easily injured and can develop ulcers and dryness; dry eye and cherry eye also occur in the breed.",
     legg_perthes: "Legg-Perthes disease, a painful condition in which the hip joint dies and crumbles, can occur in the breed.",
@@ -924,6 +928,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends more than two hours of exercise a day, a large house and a large garden, and grooming once a week. PetMD describes a bright, cheerful and extremely affectionate dog that can become destructive if it is not stimulated or is left alone for too long, says that with proper introductions and socialisation Chessies make a great addition to a family, and advises not to let the dog exercise directly before or after eating.",
       ],
       sources: ["S458", "S459", "S461"],
+    },
+    samoyed: {
+      aka: "Sammy, Samoyede",
+      text: [
+        "The Samoyed comes from northern Russia and Siberia; the FCI lists it among the Nordic sledge dogs. The FCI standard describes a white, elegant Arctic spitz of medium size with an abundant, thick, dense polar coat, dark brown eyes, small, thick, erect ears and lips slightly upturned at the corners in the characteristic \"Samoyed smile\"; the coat is pure white, cream or white and biscuit, and blue or odd-coloured eyes disqualify. It gives an ideal height of 57 cm for males and 53 cm for females, each with a tolerance of 3 cm.",
+        "The PDSA recommends a minimum of two hours of exercise every day and grooming on a daily basis, says Samoyeds shed very often, are usually great with children and loyal to the whole family, should never be left alone for more than four hours, need a very secure garden as accomplished escape artists and have a strong prey drive, and advises leaving a gap after eating and before exercising. PetMD adds that Samoyeds do not do well in hot temperatures.",
+      ],
+      sources: ["S464", "S467", "S469"],
     },
     british_shorthair: {
       aka: "British Blue",

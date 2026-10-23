@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi", 10: "hrti" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -283,6 +283,9 @@ const sl: RegistryCopy = {
       dna_eopra: "Test DNK za zgodaj nastopajočo progresivno atrofijo mrežnice (EOPRA)",
       dna_cu: "Test DNK za cistinurijo (CU), dedno bolezen s kamni v ledvicah in mehurju",
       heart_echo_scheme: "Pregled srca z barvnim dopplerskim ultrazvokom (shema pasemskega kluba)",
+      cardiac_exam: "Pregled srca staršev (priporočilo pasemskega kluba)",
+      dna_rd_osd: "Test DNK za displazijo mrežnice / okulo-skeletno displazijo (RD/OSD)",
+      dna_xlpra1: "Test DNK za na X vezano progresivno atrofijo mrežnice (XLPRA1)",
       dna_hsf4: "Test DNK za dedno sivo mreno (HSF4)",
       dna_lafora: "Test DNK za Laforino bolezen",
       dna_nccd: "Test DNK za neonatalno degeneracijo skorje malih možganov (NCCD)",
@@ -412,6 +415,7 @@ const sl: RegistryCopy = {
     autoimmune_conditions: "Pri pasmi se lahko pojavijo avtoimunske bolezni, pri katerih se telo odziva proti samemu sebi.",
     ear_infections_prone: "Pasma je nagnjena k vnetjem ušes; skrbno pazite na higieno ušes.",
     familial_nephropathy: "Pri pasmi se pojavlja dedna bolezen ledvic (družinska nefropatija); za starše je na voljo test DNK.",
+    hereditary_nephritis: "Pri pasmi se pojavlja dedna bolezen ledvic (dedni nefritis, imenovan tudi samojedska dedna glomerulopatija).",
     cm_sm_screening: "Pri pasmi se lahko pojavita Chiarijeva malformacija in siringomielija, boleča bolezen z votlinicami, polnimi tekočine, v hrbtenjači ob možganih; vzrediteljem svetujejo pregled staršev (v Združenem kraljestvu: shema BVA/KC).",
     prominent_eyes_injury_dry_eye: "Izbuljene oči se lažje poškodujejo, na njih pa lahko nastanejo razjede in izsušenost; pri pasmi se pojavljata tudi suho oko in češnjevo oko (izpad žleze tretje veke).",
     legg_perthes: "Pri pasmi se lahko pojavi Legg-Perthesova bolezen, boleče stanje, pri katerem kolčni sklep odmre in razpade.",
@@ -941,6 +945,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča več kot dve uri gibanja na dan, veliko hišo in velik vrt ter česanje enkrat na teden. PetMD ga opisuje kot vedrega, veselega in zelo ljubečega psa, ki lahko postane uničevalen, če nima dovolj spodbud ali je predolgo sam, pravi, da je ob pravilnem uvajanju in socializaciji odličen družinski pes, in svetuje, naj pes ne teče tik pred jedjo ali po njej.",
       ],
       sources: ["S458", "S459", "S461"],
+    },
+    samoyed: {
+      aka: "sammy, samojedski pes",
+      text: [
+        "Samojed izvira iz severne Rusije in Sibirije; FCI ga uvršča med nordijske vlečne pse. Standard FCI opisuje belega, elegantnega arktičnega špica srednje velikosti z bogato, gosto polarno dlako, temno rjavimi očmi, majhnimi, debelimi, pokončnimi uhlji in rahlo privzdignjenimi kotički ustnic v značilnem »samojedskem nasmešku«; dlaka je čisto bela, krem ali bela s piškotno barvo, modre ali raznobarvne oči pa ga izločijo. Navaja idealno višino 57 cm za pse in 53 cm za psice, z dovoljenim odstopanjem 3 cm.",
+        "PDSA priporoča vsaj dve uri gibanja vsak dan in vsakodnevno česanje, pravi, da samojedi zelo izgubljajo dlako, da se navadno odlično razumejo z otroki in so zvesti vsej družini, da jih nikoli ne smemo pustiti samih več kot štiri ure, da zaradi spretnega pobegovanja potrebujejo zelo varen vrt in da imajo močan lovski nagon, ter svetuje premor med obrokom in gibanjem. PetMD dodaja, da samojedi slabo prenašajo vročino.",
+      ],
+      sources: ["S464", "S467", "S469"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
