@@ -418,6 +418,7 @@ const sl: RegistryCopy = {
     familial_nephropathy: "Pri pasmi se pojavlja dedna bolezen ledvic (družinska nefropatija); za starše je na voljo test DNK.",
     hereditary_nephritis: "Pri pasmi se pojavlja dedna bolezen ledvic (dedni nefritis, imenovan tudi samojedska dedna glomerulopatija).",
     scottie_cramp: "Pri pasmi se pojavlja »škotski krč« — kratki napadi krčenja mišic, navadno ob vznemirjenju; ni boleč.",
+    extra_eyelashes: "Pri pasmi se lahko pojavi distihiaza — dodatne drobne trepalnice na notranji strani ali robu veke, ki lahko drgnejo oko; vprašajte za starše, pregledane po shemi za oči.",
     cm_sm_screening: "Pri pasmi se lahko pojavita Chiarijeva malformacija in siringomielija, boleča bolezen z votlinicami, polnimi tekočine, v hrbtenjači ob možganih; vzrediteljem svetujejo pregled staršev (v Združenem kraljestvu: shema BVA/KC).",
     prominent_eyes_injury_dry_eye: "Izbuljene oči se lažje poškodujejo, na njih pa lahko nastanejo razjede in izsušenost; pri pasmi se pojavljata tudi suho oko in češnjevo oko (izpad žleze tretje veke).",
     legg_perthes: "Pri pasmi se lahko pojavi Legg-Perthesova bolezen, boleče stanje, pri katerem kolčni sklep odmre in razpade.",
@@ -963,6 +964,14 @@ const sl: RegistryCopy = {
         "PDSA pravi, da škotski terierji potrebujejo približno uro gibanja na dan in vsakodnevno nego dlake, na dva do tri mesece pa trimanje in striženje pri pasjem frizerju; opisuje jih kot zveste in vdane svoji družini ter pravi, da so lahko trmasti, zato učenje zahteva potrpežljivost in vztrajnost. PetMD piše, da so ob pravem učenju in socializaciji lahko dobri družinski psi, da je socializacija mladička pomembna in da jih ne smemo dolgo puščati samih.",
       ],
       sources: ["S473", "S474", "S475"],
+    },
+    weimaraner: {
+      aka: "weimarec, vajmarski ptičar, Weimaraner",
+      text: [
+        "Weimarski ptičar izvira iz Nemčije; FCI ga uvršča med celinske ptičarje in priznava kratkodlako in dolgodlako različico. Standard FCI opisuje srednje velikega do velikega lovskega psa delovnega tipa, žilavega in zelo mišičastega, z jantarnimi očmi in širokimi, precej dolgimi uhlji; dlaka je srebrno, srnje ali mišje siva, dovoljene so le majhne bele lise na prsih in prstih, vsaka barva razen sive pa psa izključi. Navaja višino 59–70 cm in težo okoli 30–40 kg za pse ter 57–65 cm in okoli 25–35 kg za psice.",
+        "Royal Kennel Club priporoča več kot dve uri gibanja na dan, veliko hišo in velik vrt ter nego dlake enkrat na teden. PDSA piše, da so weimarski ptičarji v pravih rokah čudoviti družinski psi in da so najboljši pri lastnikih, ki pasmo poznajo, a jih zaradi zelo močnega lovskega nagona ne priporoča za dom z manjšimi otroki ali manjšimi živalmi; pravi, da lahko ob samoti razvijejo ločitveno tesnobo, ter svetuje socializacijo od malega in premor med obrokom in gibanjem. PetMD dodaja čiščenje ušes in kopanje enkrat na mesec.",
+      ],
+      sources: ["S478", "S479", "S480", "S481"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",

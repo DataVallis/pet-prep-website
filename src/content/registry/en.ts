@@ -401,6 +401,7 @@ const en: RegistryCopy = {
     familial_nephropathy: "An inherited kidney disease (familial nephropathy) occurs in the breed; a DNA test of the parents is available.",
     hereditary_nephritis: "An inherited kidney disease (hereditary nephritis, also called Samoyed hereditary glomerulopathy) occurs in the breed.",
     scottie_cramp: "Scottie cramp — short episodes of muscle cramping, usually brought on by excitement — occurs in the breed; it is not painful.",
+    extra_eyelashes: "Distichiasis, where small extra eyelashes grow on the inner surface or the edge of the eyelid and can rub the eye, can occur in the breed; ask for parents tested under the eye scheme.",
     cm_sm_screening: "Chiari-like malformation and syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, can occur in the breed; breeders are advised to screen the parents (UK: BVA/KC scheme).",
     prominent_eyes_injury_dry_eye: "Prominent eyes are more easily injured and can develop ulcers and dryness; dry eye and cherry eye also occur in the breed.",
     legg_perthes: "Legg-Perthes disease, a painful condition in which the hip joint dies and crumbles, can occur in the breed.",
@@ -946,6 +947,14 @@ const en: RegistryCopy = {
         "The PDSA says Scotties need around an hour of exercise daily and daily grooming, with stripping and clipping by a professional groomer every two to three months, describes them as loyal and devoted to their family, and says they can be stubborn, so training needs patience and commitment. PetMD says that with the right training and socialisation they can be good dogs for families, that socialising the puppy is important, and that they should not be left alone for extended periods.",
       ],
       sources: ["S473", "S474", "S475"],
+    },
+    weimaraner: {
+      aka: "Weimaraner Pointer, Weim",
+      text: [
+        "The Weimaraner comes from Germany; the FCI lists it among the continental pointing dogs and recognises a short-haired and a long-haired variety. The FCI standard describes a medium to large hunting dog of functional working type, sinewy and very muscular, with amber eyes and broad, fairly long ears; the coat is silver, roe or mouse grey, only small white markings on the chest and toes are permitted, and any colour other than grey disqualifies. It gives a height of 59–70 cm and a weight of about 30–40 kg for males, and 57–65 cm and about 25–35 kg for females.",
+        "The Royal Kennel Club recommends more than two hours of exercise a day, a large house and a large garden, and grooming once a week. The PDSA says Weimaraners make wonderful family pets in the right hands and do best with owners familiar with the breed, but does not recommend them for homes with smaller children or smaller pets because of their very strong prey drive, says they can develop separation anxiety if left alone, and advises socialising them from a young age and leaving a gap between eating and exercising. PetMD adds monthly ear cleaning and a monthly bath.",
+      ],
+      sources: ["S478", "S479", "S480", "S481"],
     },
     british_shorthair: {
       aka: "British Blue",
