@@ -715,7 +715,8 @@ const sl: Dictionary = {
       navLabel: "Pogoji uporabe",
       meta: {
         title: "Pogoji uporabe — PetPrep",
-        description: "Pogoji uporabe aplikacije in spletne strani PetPrep: računi, brezplačne in plačljive funkcije, poštena raba, vsebine AI, odgovornost in pravo.",
+        description:
+          "Pogoji uporabe aplikacije in spletne strani PetPrep: računi in profili otrok, 12-tedenski izziv in certifikat, nakupi in vračila, vsebine AI, prilagojen način, poštena raba, izbris in pravo.",
       },
       eyebrow: "Pravno",
       title: "Pogoji uporabe",
@@ -727,59 +728,113 @@ const sl: Dictionary = {
             {
               heading: "1. Storitev",
               paragraphs: [
-                "PetPrep zagotavlja podjetje {company}, {address}; {companyIds}. PetPrep je simulacija, ki družinam in posameznikom pomaga ugotoviti, ali so pripravljeni skrbeti za pravo žival — otrokom in odraslim, ki pred nakupom ali posvojitvijo preizkušajo, ali jim pasma ustreza. Je izobraževalno orodje, ne veterinarski nasvet, in ne jamči, kako bo kdo skrbel za pravo žival.",
+                "PetPrep zagotavlja podjetje {company}, {address}; {companyIds} — isto podjetje, ki je upravljavec podatkov po politiki zasebnosti. Ti pogoji veljajo za aplikacijo PetPrep in spletno stran petprep.si.",
+                "PetPrep je simulacija skrbi za ljubljenčka. Družinam in posameznikom pomaga preveriti, ali so pripravljeni skrbeti za pravo žival — otrokom in odraslim, ki pred nakupom ali posvojitvijo preizkušajo, ali jim pasma ustreza. Je izobraževalno orodje, ne veterinarski ali drug strokovni nasvet.",
               ],
             },
             {
-              heading: "2. Računi",
+              heading: "2. Računi, profili in otroci",
               items: [
-                "Račune ustvarijo odrasli (starši, zakoniti zastopniki ali odrasli, ki PetPrep uporabljajo zase). Odgovorni ste za profile, ki jih dodate, in za varnost svojega gesla.",
-                "Za ljubljenčka skrbijo otroci ali odrasli prek profila skrbnika, ki ga ustvari imetnik računa, in se prijavijo s kodo iz tega računa. Imetnik računa lahko profil skrbnika ustvari tudi zase.",
-                "Navajajte točne podatke in kode za prijavo hranite zase.",
+                "Račun ustvari odrasla oseba: starš, zakoniti zastopnik ali odrasel, ki PetPrep uporablja zase. Ob registraciji se strinjate s temi pogoji in s politiko zasebnosti.",
+                "Za ljubljenčka skrbijo skrbniki (otroci ali odrasli) prek profila skrbnika, ki ga ustvari imetnik računa; profil lahko ustvari tudi zase. Za profil vpišete samo vzdevek in po želji letnico rojstva — več podatkov o otroku ne potrebujemo, zato jih ne vpisujte nikjer v aplikaciji.",
+                "Otrok se prijavi s 6-mestno kodo (PIN), ki jo ustvarite v svoji aplikaciji. Koda velja kratek čas in samo enkrat; dajte jo samo otroku, ki mu je namenjena.",
+                "Kot starš ali zakoniti zastopnik ste odgovorni za to, kako otrok uporablja PetPrep: ali je primeren zanj, koliko časa ga uporablja in ali je pri sprehodih varen (na primer v prometu). Igro lahko za vsakega ljubljenčka kadar koli ustavite.",
+                "Drugega starša lahko v družino povabite s kodo povabila; oba vidita vse podatke družine in oba lahko ustavita igro.",
+                "Navajajte točne podatke ter skrbite za varnost svojega gesla, kod in naprav.",
               ],
             },
             {
-              heading: "3. Brezplačne in plačljive funkcije",
+              heading: "3. 12-tedenski izziv, Care Score in certifikat",
               items: [
-                "Mešanček je brezplačen.",
-                "12-tedenski PetPrep izziv stane 49,99 € na žival kot enkratni nakup; 12 tednov začne teči z nakupom. PetPrep najprej preizkusite z brezplačnim mešančkom. Sorojenci s skupnim ljubljenčkom plačajo eno ceno.",
-                "Nakupe in vračila urejata App Store ali Google Play po svojih pogojih.",
+                "Izziv traja 12 tednov (84 dni programa) in se začne z nakupom; vsak skrbnik ima svoj zaključek. Čas, ko igra čaka na plačilo, se v 12 tednov ne šteje.",
+                "Care Score (od 0 do 100) pokaže, kolikšen del pričakovanih rutin (hranjenje, voda, čiščenje, sprehod, vaja v šoli) je skrbnik opravil sam; vsaka bolezen ljubljenčka ga zniža. Čas, ko je igra ustavljena, ko je ljubljenček pri veterinarju, in tihe ure se skrbniku ne štejejo v slabo.",
+                "Po 12 tednih se zapiše končna ocena, ki se pozneje ne spremeni; skrb po koncu izziva nanjo ne vpliva. Pri oceni 70 ali več lahko v aplikaciji ustvarite Certifikat odgovornosti (PDF), pri nižji oceni pa dobite poročilo o izzivu.",
+                "Če je hrana, voda ali čistoča 24 ur na 0 %, ljubljenčka »odpelje zavetišče« (konec igre). Igra s tem ljubljenčkom se konča, certifikata ni, dobite poročilo o izzivu.",
+                "Care Score in certifikat kažeta samo, kako je skrbnik skrbel za simuliranega ljubljenčka v aplikaciji. Nista zagotovilo, da je otrok ali kdor koli drug pripravljen na pravo žival, nista strokovna ocena in ne nadomeščata vaše presoje ali nasveta veterinarja, vzreditelja ali zavetišča. Odločitev o pravi živali je vedno vaša.",
+                "Pravila igre (obroki, sprehodi in nega po pasmi in starosti) so poenostavljena in povzeta po javnih virih. Niso veterinarski nasvet; o zdravju in negi prave živali se posvetujte z veterinarjem.",
               ],
             },
             {
-              heading: "4. Poštena uporaba",
+              heading: "4. Brezplačne in plačljive funkcije, nakupi in vračila",
               items: [
-                "Ne poskušajte goljufati pri štetju korakov, dostopati do podatkov drugih družin, razstavljati programske opreme ali motiti storitve.",
-                "Račune, ki kršijo ta pravila ali ogrožajo otroke, lahko omejimo ali začasno ukinemo.",
+                "Mešanček in domača mačka sta brezplačna za vedno in sta način, da PetPrep preizkusite; brezplačnega preizkusa izziva ni. Brezplačna žival nima 12-tedenskega programa in certifikata, starš vidi zgodovino zadnjih 7 dni, ljubljenček pa ima osnovni nabor slik in videov.",
+                "12-tedenski PetPrep izziv s plačljivo pasmo je enkratni nakup (49,99 € v Sloveniji; trgovina pokaže ceno za vašo državo). En nakup je en izziv za enega ljubljenčka; vsak nov izziv z novim ljubljenčkom je nov nakup. Sorojenci, ki skrbijo za istega ljubljenčka, plačajo enkrat.",
+                "Nakup opravi starš v svoji aplikaciji prek App Store ali Google Play; v otroški aplikaciji nakupov ni. Plačilo obdela trgovina po svojih pogojih.",
+                "Ljubljenčka za izziv lahko ustvarite pred nakupom. Dokler izziv ni plačan, igra stoji: ljubljenček varno čaka, njegove potrebe ne padajo in nič se ne poslabša. Ko kupite, se igra nadaljuje, kjer je obstala.",
+                "Vračila kupnine urejata App Store in Google Play po svojih pravilih; zahtevo oddate pri trgovini, kjer ste kupili. Če trgovina kupnino vrne, preden je izziv končan, se igra tega ljubljenčka spet ustavi. Slike in videi, ustvarjeni po nakupu, ostanejo.",
+                "Po koncu igre (zavetišče) nakup ljubljenčka ne odklene; nov izziv je nov ljubljenček in nov nakup.",
+                "Če izbrišete ljubljenčka, otroka ali račun, pri katerem je kupljen izziv še v teku, ostane nakup porabljen: ne prenese se na drugega ljubljenčka in izbris ne pomeni vračila kupnine. Aplikacija vas na to prej opozori in zahteva potrditev.",
               ],
             },
             {
-              heading: "5. Vsebina, ustvarjena z umetno inteligenco",
+              heading: "5. Slike in videi, ustvarjeni z umetno inteligenco",
+              items: [
+                "Slike in videe ljubljenčkov ustvari umetna inteligenca (AI) samo na podlagi opisa ljubljenčka (pasma, barva, dlaka ipd.), nikoli na podlagi podatkov o vaši družini. So ponazoritve simuliranega ljubljenčka in se morda ne ujemajo povsem z nobeno pravo živaljo ali standardom pasme.",
+                "Kjer jih pokažemo javno, na primer portrete pasem na tej spletni strani, so označeni kot ustvarjeni z AI.",
+                "Videz ni nujno edinstven: ljubljenčki iste plačljive pasme in barve si lahko delijo iste slike in videe, brezplačne živali pa dobijo enega od skupnih videzov svoje pasme. Plačan izziv vključuje večji nabor videov kot brezplačna žival.",
+                "Po podpisu pogodbe ali nakupu lahko priprava slik in videov traja nekaj minut; medtem aplikacija pokaže, da se ljubljenček pripravlja, in označi, kar se še pripravlja.",
+                "Podatki o pasmah v aplikaciji in v registru živali na tej strani so povzeti po javnih virih, ki jih navajamo, in niso veterinarsko preverjeni.",
+              ],
+            },
+            {
+              heading: "6. Koraki, podatki o zdravju in prilagojen način",
+              items: [
+                "Dnevni sprehod šteje skrbnikove prave korake. Če to dovolite, jih aplikacija bere iz Apple Zdravje ali Health Connect samo za branje (vanje nikoli ničesar ne zapiše) ali iz senzorja gibanja v telefonu. Katere podatke obdelujemo, piše v politiki zasebnosti (točka 3).",
+                "Prilagojen način je namenjen otrokom, ki uporabljajo invalidski voziček: sprehod takrat šteje potiske vozička namesto korakov. Uporabite ga lahko, če je funkcija na voljo v vaši različici aplikacije. Vklopi ga starš za posameznega otroka; vklop je vaša privolitev, izklop jo prekliče (politika zasebnosti, točka 4).",
+                "V prilagojenem načinu lahko starš za otroka vpiše minute sprehoda, samo za današnji dan. Za vpise ste odgovorni vi: vpišite samo sprehode, ki so se res zgodili, saj štejejo v Care Score in certifikat.",
+                "PetPrep ne uporablja lokacije in med sprehodom ne opozarja na nevarnosti; za varnost na sprehodu poskrbite sami.",
+              ],
+            },
+            {
+              heading: "7. Obvestila",
               paragraphs: [
-                "Slike in videje ljubljenčkov ustvari umetna inteligenca. So ponazoritve simuliranega ljubljenčka in se morda ne ujemajo povsem z nobeno pravo živaljo ali standardom pasme. Prihodnje funkcije AI asistenta bodo dajale le splošne informacije, nikoli diagnoze, in vedno kazale pot do pravega veterinarja.",
+                "Če jih dovolite na napravi, aplikacija pošilja potisna obvestila: opomnike skrbniku, opozorila staršem, ko ljubljenček nima hrane, vode ali čistoče, ter novice o bolezni, koncu igre in koncu izziva. Obvestila ne vsebujejo imena otroka ali ljubljenčka in jih v tihih urah ni. Dovoljenje lahko kadar koli prekličete v nastavitvah naprave; brez obvestil lahko skrbnik zamudi rutine, kar vpliva na igro in oceno.",
               ],
             },
             {
-              heading: "6. Intelektualna lastnina",
-              paragraphs: ["PetPrep, njegov logotip, oblikovanje, programska oprema in vsebina pripadajo podjetju {company}. Aplikacijo lahko uporabljate za osebno, nekomercialno rabo svoje družine."],
+              heading: "8. Poštena uporaba",
+              items: [
+                "Ne poskušajte goljufati pri štetju korakov ali potiskov, ne vpisujte sprehodov, ki se niso zgodili, ne dostopajte do podatkov drugih družin, ne razstavljajte programske opreme in ne motite storitve.",
+                "Ljubljenčkom ne dajajte žaljivih ali neprimernih imen in v aplikacijo ne vpisujte osebnih podatkov o otroku, ki jih aplikacija ne zahteva.",
+                "Račune, ki kršijo ta pravila ali ogrožajo otroke, lahko omejimo ali začasno ukinemo; neprimerno ime ljubljenčka lahko izbrišemo.",
+              ],
             },
             {
-              heading: "7. Odgovornost",
+              heading: "9. Intelektualna lastnina",
               paragraphs: [
-                "Trudimo se, da je PetPrep dosegljiv in točen, vendar je storitev na voljo takšna, kot je. V obsegu, ki ga dovoljuje zakon, ne odgovarjamo za posredno škodo ali za odločitve o nakupu prave živali. Nič v teh pogojih ne omejuje pravic, ki jih imate kot potrošnik po prisilnih predpisih.",
+                "PetPrep, njegov logotip, oblikovanje, programska oprema in vsebina pripadajo podjetju {company}. Aplikacijo ter slike, videe in certifikat svojega ljubljenčka lahko uporabljate za osebno, nekomercialno rabo svoje družine, na primer jih delite s sorodniki.",
               ],
             },
             {
-              heading: "8. Prenehanje uporabe",
-              paragraphs: ["Račun lahko kadarkoli izbrišete v aplikaciji. Izbris je takojšen in trajen."],
+              heading: "10. Odgovornost",
+              paragraphs: [
+                "Trudimo se, da je PetPrep dosegljiv in točen, vendar je storitev na voljo takšna, kot je; deluje tudi s storitvami drugih (trgovine, Apple Zdravje, Health Connect, potisna obvestila, AI storitev), na katere nimamo vpliva. V obsegu, ki ga dovoljuje zakon, ne odgovarjamo za posredno škodo ali za odločitve o nakupu ali posvojitvi prave živali. Nič v teh pogojih ne omejuje pravic, ki jih imate kot potrošnik po prisilnih predpisih.",
+              ],
             },
             {
-              heading: "9. Pravo in spori",
+              heading: "11. Izbris računa in prenehanje uporabe",
+              paragraphs: [
+                "Profil otroka ali svoj račun lahko kadar koli izbrišete v aplikaciji. Izbris je takojšen in trajen; ko račun izbriše zadnji starš družine, se izbriše vsa družina. Podatke lahko prej izvozite (Nadzor → Račun → Izvozi moje podatke). Kaj se zgodi s podatki, piše v politiki zasebnosti; kaj se zgodi z nakupom, piše v točki 4.",
+              ],
+            },
+            {
+              heading: "12. Spremembe pogojev",
+              paragraphs: [
+                "Pogoje posodobimo, ko se spremeni aplikacija ali zakonodaja. O pomembnih spremembah vas obvestimo v aplikaciji, preden začnejo veljati. Datum na vrhu kaže zadnjo različico. Če se s spremembami ne strinjate, lahko račun kadar koli izbrišete.",
+              ],
+            },
+            {
+              heading: "13. Pravo in spori",
               paragraphs: [
                 "Za te pogoje velja pravo Republike Slovenije. Potrošniki se lahko sklicujejo tudi na prisilne predpise države, v kateri živijo, in uporabijo evropsko platformo za spletno reševanje sporov.",
               ],
             },
-            { heading: "10. Kontakt", paragraphs: ["Vprašanja o teh pogojih: {helloEmail}."] },
+            {
+              heading: "14. Kontakt",
+              paragraphs: [
+                "Vprašanja o teh pogojih: {termsEmail}. Ponudnik storitve: {company}, {address}; {companyIds}. Vprašanja o zasebnosti: {privacyEmail}.",
+              ],
+            },
           ],
         },
       ],

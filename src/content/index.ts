@@ -40,5 +40,6 @@ export function fillPlaceholders(text: string, locale: Locale): string {
     .replaceAll("{city}", site.company.city)
     .replaceAll("{country}", site.company.country[locale])
     .replaceAll("{privacyEmail}", site.email.privacy)
-    .replaceAll("{helloEmail}", site.email.hello);
+    .replaceAll("{helloEmail}", site.email.hello)
+    .replaceAll("{termsEmail}", site.email.terms);
 }

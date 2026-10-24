@@ -715,7 +715,8 @@ const en: Dictionary = {
       navLabel: "Terms of use",
       meta: {
         title: "Terms of Use — PetPrep",
-        description: "The terms for using the PetPrep app and website: accounts, free and paid features, fair use, AI-generated content, liability and governing law.",
+        description:
+          "The terms for using the PetPrep app and website: accounts and child profiles, the 12-week challenge and certificate, purchases and refunds, AI content, adapted mode, fair use, deletion and governing law.",
       },
       eyebrow: "Legal",
       title: "Terms of Use",
@@ -727,59 +728,113 @@ const en: Dictionary = {
             {
               heading: "1. The service",
               paragraphs: [
-                "PetPrep is provided by {company}, {address}; {companyIds}. PetPrep is a simulation that helps families and individuals find out whether they are ready to care for a real pet — children, and adults who want to test whether a breed suits them before buying or adopting. It is an educational tool, not veterinary advice, and it does not guarantee how anyone will care for a real animal.",
+                "PetPrep is provided by {company}, {address}; {companyIds} — the same company that is the data controller under the privacy policy. These terms apply to the PetPrep app and the petprep.si website.",
+                "PetPrep is a pet-care simulation. It helps families and individuals find out whether they are ready to care for a real pet — children, and adults who want to test whether a breed suits them before buying or adopting. It is an educational tool, not veterinary or other professional advice.",
               ],
             },
             {
-              heading: "2. Accounts",
+              heading: "2. Accounts, profiles and children",
               items: [
-                "Accounts are created by adults (parents, legal guardians or adults using PetPrep for themselves). You are responsible for the profiles you add and for keeping your password safe.",
-                "Children or adults care for the pet through a carer profile created by the account holder and log in with a code from that account. The account holder can also create a carer profile for themselves.",
-                "Provide accurate information and keep login codes private.",
+                "Accounts are created by adults: parents, legal guardians or adults using PetPrep for themselves. When you register, you agree to these terms and the privacy policy.",
+                "Carers (children or adults) look after the pet through a carer profile created by the account holder, who can also create one for themselves. A profile needs only a nickname and, optionally, a birth year — we need nothing more about a child, so please do not enter it anywhere in the app.",
+                "A child signs in with a 6-digit code (PIN) that you create in your app. The code is short-lived and works only once; give it only to the child it is meant for.",
+                "As a parent or legal guardian you are responsible for how your child uses PetPrep: whether it suits them, how much time they spend on it and whether they are safe on walks (for example in traffic). You can stop the game for any pet at any time.",
+                "You can invite another parent into the family with an invitation code; both see all of the family's data and both can stop the game.",
+                "Provide accurate information and keep your password, codes and devices secure.",
               ],
             },
             {
-              heading: "3. Free and paid features",
+              heading: "3. The 12-week challenge, Care Score and certificate",
               items: [
-                "The mixed-breed pet is free.",
-                "The 12-week PetPrep Challenge costs €49.99 per pet as a one-time purchase; the 12 weeks start with the purchase. The free mixed-breed pet is the way to try PetPrep first. Siblings sharing one pet pay one price.",
-                "Purchases and refunds are handled by the App Store or Google Play under their terms.",
+                "The challenge lasts 12 weeks (84 programme days) and starts with the purchase; each carer has their own finish. Time while the game is waiting for payment does not count towards the 12 weeks.",
+                "The Care Score (0–100) shows what share of the expected routines (feeding, water, cleaning, the walk, a training session) the carer did themselves; each illness of the pet lowers it. Time while the game is stopped, while the pet is at the vet, and quiet hours never count against the carer.",
+                "After 12 weeks a final score is recorded and does not change later; care after the challenge does not affect it. With a score of 70 or more you can create a Responsibility Certificate (PDF) in the app; below 70 you get a challenge report.",
+                "If food, water or cleanliness stays at 0% for 24 hours, the pet is “taken to the shelter” (game over). The game with that pet ends, there is no certificate, and you get a challenge report.",
+                "The Care Score and the certificate only show how the carer looked after a simulated pet in the app. They are not a guarantee that a child, or anyone else, is ready for a real pet, not a professional assessment, and no substitute for your own judgement or the advice of a vet, breeder or shelter. The decision about a real pet is always yours.",
+                "The game rules (meals, walks and care by breed and age) are simplified and based on public sources. They are not veterinary advice; ask a vet about the health and care of a real animal.",
               ],
             },
             {
-              heading: "4. Fair use",
+              heading: "4. Free and paid features, purchases and refunds",
               items: [
-                "Do not try to cheat the step count, access other families' data, reverse engineer or disrupt the service.",
-                "We may limit or suspend accounts that break these rules or put children at risk.",
+                "The mixed-breed dog and the domestic cat are free forever and are the way to try PetPrep; there is no free trial of the challenge. A free pet has no 12-week programme and no certificate, the parent sees the last 7 days of history, and the pet has a basic set of images and videos.",
+                "The 12-week PetPrep Challenge with a paid breed is a one-time purchase (€49.99 in Slovenia; the store shows the price for your country). One purchase is one challenge for one pet; each new challenge with a new pet is a new purchase. Siblings caring for the same pet pay once.",
+                "A parent buys in their own app through the App Store or Google Play; there are no purchases in the child's app. The store processes the payment under its own terms.",
+                "You can create a challenge pet before buying. Until the challenge is paid, the game is paused: the pet waits safely, its needs do not drop and nothing gets worse. Once you buy, the game continues where it stopped.",
+                "Refunds are handled by the App Store and Google Play under their own rules; request one from the store where you bought. If the store refunds a purchase before the challenge is finished, that pet's game is paused again. Images and videos created after the purchase remain.",
+                "After a game over (shelter), a purchase does not unlock the pet; a new challenge is a new pet and a new purchase.",
+                "If you delete a pet, a child or the account while a purchased challenge is still running, the purchase stays used: it does not move to another pet and deleting is not a refund. The app warns you first and asks you to confirm.",
               ],
             },
             {
-              heading: "5. AI-generated content",
+              heading: "5. AI-generated images and videos",
+              items: [
+                "Pet images and videos are generated by artificial intelligence (AI) only from a description of the pet (breed, colour, coat and so on), never from data about your family. They are illustrations of a simulated pet and may not perfectly match any real animal or breed standard.",
+                "Where we show them publicly, such as the breed portraits on this website, they are labelled as AI-generated.",
+                "A look is not necessarily unique: pets of the same paid breed and colour may share the same images and videos, and free pets get one of their breed's shared looks. A paid challenge includes a larger set of videos than a free pet.",
+                "After the contract is signed or a purchase is made, preparing the images and videos can take a few minutes; meanwhile the app shows that the pet is getting ready and marks whatever is still being prepared.",
+                "Breed facts in the app and in the animal register on this website are summarised from the public sources we cite and are not verified by a vet.",
+              ],
+            },
+            {
+              heading: "6. Steps, health data and adapted mode",
+              items: [
+                "The daily walk counts the carer's real steps. If you allow it, the app reads them from Apple Health or Health Connect, read-only (it never writes anything there), or from the phone's motion sensor. Which data we process is described in the privacy policy (section 3).",
+                "Adapted mode is for children who use a wheelchair: the walk then counts wheelchair pushes instead of steps. You can use it if the feature is available in your version of the app. A parent turns it on for an individual child; turning it on is your consent and turning it off withdraws it (privacy policy, section 4).",
+                "In adapted mode a parent can log walk minutes for the child, for today only. You are responsible for these entries: log only walks that really happened, as they count towards the Care Score and the certificate.",
+                "PetPrep does not use location and does not warn about dangers during a walk; keeping walks safe is up to you.",
+              ],
+            },
+            {
+              heading: "7. Notifications",
               paragraphs: [
-                "Pet images and videos are generated by AI. They are illustrations of a simulated pet and may not perfectly match any real animal or breed standard. Future AI assistant features provide general information only, never a diagnosis, and always point to a real veterinarian.",
+                "If you allow them on the device, the app sends push notifications: reminders to the carer, alerts to parents when a pet has no food, water or cleanliness, and news about illness, game over and the end of the challenge. Notifications never contain the child's or pet's name and are not sent during quiet hours. You can withdraw permission at any time in the device settings; without notifications a carer may miss routines, which affects the game and the score.",
               ],
             },
             {
-              heading: "6. Intellectual property",
-              paragraphs: ["PetPrep, its logo, design, software and content belong to {company}. You may use the app for your family's personal, non-commercial use."],
+              heading: "8. Fair use",
+              items: [
+                "Do not try to cheat the step or push count, log walks that did not happen, access other families' data, reverse engineer or disrupt the service.",
+                "Do not give pets offensive or inappropriate names, and do not enter personal data about a child that the app does not ask for.",
+                "We may limit or suspend accounts that break these rules or put children at risk, and we may remove an inappropriate pet name.",
+              ],
             },
             {
-              heading: "7. Liability",
+              heading: "9. Intellectual property",
               paragraphs: [
-                "We work to keep PetPrep available and accurate, but the service is provided as it is. To the extent permitted by law, we are not liable for indirect damage or for decisions about getting a real pet. Nothing in these terms limits rights you have as a consumer under mandatory law.",
+                "PetPrep, its logo, design, software and content belong to {company}. You may use the app, and your pet's images, videos and certificate, for your family's personal, non-commercial use — for example, sharing them with relatives.",
               ],
             },
             {
-              heading: "8. Ending use",
-              paragraphs: ["You can delete your account at any time in the app. Deletion is immediate and permanent."],
+              heading: "10. Liability",
+              paragraphs: [
+                "We work to keep PetPrep available and accurate, but the service is provided as it is; it also relies on services of others (the app stores, Apple Health, Health Connect, push notifications, the AI service) that we do not control. To the extent permitted by law, we are not liable for indirect damage or for decisions about buying or adopting a real pet. Nothing in these terms limits rights you have as a consumer under mandatory law.",
+              ],
             },
             {
-              heading: "9. Law and disputes",
+              heading: "11. Deleting your account and ending use",
+              paragraphs: [
+                "You can delete a child's profile or your account at any time in the app. Deletion is immediate and permanent; when the last parent of a family deletes their account, the whole family is deleted. You can export your data first (Control → Account → Export my data). What happens to the data is described in the privacy policy; what happens to a purchase is described in section 4.",
+              ],
+            },
+            {
+              heading: "12. Changes to these terms",
+              paragraphs: [
+                "We update these terms when the app or the law changes. We will tell you about important changes in the app before they take effect. The date at the top shows the latest version. If you do not agree with a change, you can delete your account at any time.",
+              ],
+            },
+            {
+              heading: "13. Law and disputes",
               paragraphs: [
                 "These terms are governed by the law of the Republic of Slovenia. Consumers may also rely on the mandatory protections of the country where they live and use the EU online dispute resolution platform.",
               ],
             },
-            { heading: "10. Contact", paragraphs: ["Questions about these terms: {helloEmail}."] },
+            {
+              heading: "14. Contact",
+              paragraphs: [
+                "Questions about these terms: {termsEmail}. Service provider: {company}, {address}; {companyIds}. Privacy questions: {privacyEmail}.",
+              ],
+            },
           ],
         },
       ],
