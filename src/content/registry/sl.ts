@@ -322,6 +322,8 @@ const sl: RegistryCopy = {
       dna_jlpp: "Test DNK za juvenilno paralizo grla in polinevropatijo (JLPP)",
       dna_lemp2: "Test DNK za levkoencefalomielopatijo (LEMP-2)",
       dna_huu: "Test DNK za hiperurikozurijo (HUU)",
+      dna_dcm: "Test DNK za dilatacijsko kardiomiopatijo (DCM), bolezen srčne mišice",
+      dna_pra5: "Test DNK za progresivno atrofijo mrežnice (PRA5)",
     },
   },
   health: {
@@ -417,6 +419,9 @@ const sl: RegistryCopy = {
     ear_infections_prone: "Pasma je nagnjena k vnetjem ušes; skrbno pazite na higieno ušes.",
     familial_nephropathy: "Pri pasmi se pojavlja dedna bolezen ledvic (družinska nefropatija); za starše je na voljo test DNK.",
     hereditary_nephritis: "Pri pasmi se pojavlja dedna bolezen ledvic (dedni nefritis, imenovan tudi samojedska dedna glomerulopatija).",
+    panosteitis: "Pri pasmi se lahko pojavi panosteitis, boleče vnetje dolgih kosti, ki navadno prizadene mlade pse med rastjo.",
+    urinary_incontinence: "Pri pasmi se lahko pojavi inkontinenca, nehotno uhajanje urina.",
+    osteochondritis: "Pri pasmi se lahko pojavi osteohondritis dissecans (OCD), motnja sklepnega hrustanca pri psih med rastjo.",
     scottie_cramp: "Pri pasmi se pojavlja »škotski krč« — kratki napadi krčenja mišic, navadno ob vznemirjenju; ni boleč.",
     periodontal_disease: "Pri pasmi je znana težava bolezen obzobnih tkiv (parodontalna bolezen), okužba in vnetje dlesni in tkiv, ki držijo zobe.",
     extra_eyelashes: "Pri pasmi se lahko pojavi distihiaza — dodatne drobne trepalnice na notranji strani ali robu veke, ki lahko drgnejo oko; vprašajte za starše, pregledane po shemi za oči.",
@@ -981,6 +986,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča do eno uro gibanja na dan, pravi, da je primeren za majhno hišo v mestu ali na podeželju, da potrebuje nego dlake enkrat na teden in da mu dlaka ne izpada. PDSA piše, da so mali italijanski hrti polni energije in naj se gibljejo v ograjenem prostoru, ker jih je težko priklicati, ko zagledajo plen, da so lahko plašni, zato je zgodnja socializacija nujna, in da zaradi krhkih kosti med rastjo morda niso najboljša izbira za dom z majhnimi otroki ali drugimi živalmi. PetMD dodaja, da jih tanka dlaka slabo greje, zato jih hitro zebe.",
       ],
       sources: ["S485", "S486", "S487", "S488"],
+    },
+    giant_schnauzer: {
+      aka: "riesenschnauzer, veliki snavcer, Giant Schnauzer",
+      text: [
+        "Veliki šnavcer izvira iz Nemčije; FCI ga kot »Riesenschnauzer« uvršča med pinčerje in šnavcerje. Standard Royal Kennel Club ga opisuje kot močno grajenega, robustnega in žilavega psa skoraj kvadratne oblike, pogumnega, zanesljivega, dobrodušnega in umirjenega, s trdo, žičasto krovno dlako in dobro podlanko. Navaja višino 65–70 cm za pse in 60–65 cm za psice; standard FCI navaja težo 35–47 kg. Sprejete barve so čisto črna, poper in sol s temno masko na obrazu ter črno-srebrna — druge barve niso.",
+        "Royal Kennel Club priporoča več kot dve uri gibanja na dan, pravi, da je primeren za veliko hišo z velikim vrtom, da potrebuje nego dlake vsak dan in da mu dlaka ne izpada. PDSA piše, da dlaka potrebuje vsakodnevno nego in redno striženje, da so veliki šnavcerji lahko ljubki družinski psi za družine s starejšimi otroki, če so kot mladički dobro socializirani, in da so ti psi z močno voljo primerni za izkušene lastnike. PetMD dodaja, da dlako na nekaj mesecev strokovno trimajo in da pasma ni primerna za dom, kjer ljudi pogosto ni doma.",
+      ],
+      sources: ["S494", "S495", "S496", "S497"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
