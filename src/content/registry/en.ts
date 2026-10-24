@@ -293,6 +293,8 @@ const en: RegistryCopy = {
       dna_jlpp: "DNA test for juvenile laryngeal paralysis and polyneuropathy (JLPP)",
       dna_lemp2: "DNA test for leukoencephalomyelopathy (LEMP-2)",
       dna_huu: "DNA test for hyperuricosuria (HUU)",
+      dna_dcm: "DNA test for dilated cardiomyopathy (DCM), a heart muscle disease",
+      dna_pra5: "DNA test for progressive retinal atrophy (PRA5)",
       dna_dings2: "DNA test for dancing Dobermann disease (DINGS2), a nerve and muscle disorder",
       dna_ams: "DNA test for acral mutilation syndrome (AMS), a nerve disorder that takes away pain feeling in the paws",
       dna_dams: "DNA test for dyserythropoietic anaemia and myopathy syndrome (DAMS), a blood and muscle disorder",
@@ -400,6 +402,9 @@ const en: RegistryCopy = {
     ear_infections_prone: "The breed is prone to ear infections; keep a close eye on ear hygiene.",
     familial_nephropathy: "An inherited kidney disease (familial nephropathy) occurs in the breed; a DNA test of the parents is available.",
     hereditary_nephritis: "An inherited kidney disease (hereditary nephritis, also called Samoyed hereditary glomerulopathy) occurs in the breed.",
+    panosteitis: "Panosteitis, a painful inflammation of the long bones that usually affects young, growing dogs, can occur in the breed.",
+    urinary_incontinence: "Urinary incontinence, an uncontrolled leaking of urine, can occur in the breed.",
+    osteochondritis: "Osteochondritis dissecans (OCD), a disorder of the joint cartilage in growing dogs, can occur in the breed.",
     scottie_cramp: "Scottie cramp — short episodes of muscle cramping, usually brought on by excitement — occurs in the breed; it is not painful.",
     periodontal_disease: "Periodontal disease, an infection and inflammation of the gums and the tissues that hold the teeth, is a known problem in the breed.",
     extra_eyelashes: "Distichiasis, where small extra eyelashes grow on the inner surface or the edge of the eyelid and can rub the eye, can occur in the breed; ask for parents tested under the eye scheme.",
@@ -964,6 +969,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to an hour of exercise a day, says the breed suits a small house and either town or country, needs grooming once a week and does not shed. The PDSA says Italian Greyhounds are full of energy, should exercise in a confined area because they can be hard to call back once they see prey, can be timid so early socialisation is essential, and — because their bones are fragile while they grow — may not be the ideal breed for homes with young children or other pets. PetMD adds that their thin coat does not keep them warm, so they feel the cold easily.",
       ],
       sources: ["S485", "S486", "S487", "S488"],
+    },
+    giant_schnauzer: {
+      aka: "Riesenschnauzer, Munich Schnauzer",
+      text: [
+        "The Giant Schnauzer comes from Germany; the FCI lists it as the Riesenschnauzer among the pinscher and schnauzer types. The Royal Kennel Club standard describes a powerfully built, robust, sinewy dog that appears almost square, bold, reliable, good natured and composed, with a harsh, wiry top coat and a good undercoat. It gives a height of 65–70 cm for dogs and 60–65 cm for bitches; the FCI standard gives a weight of 35–47 kg. Pure black, pepper and salt with a dark facial mask, and black and silver are accepted — any other colour is not.",
+        "The Royal Kennel Club recommends more than two hours of exercise a day, says the breed suits a large house with a large garden, needs grooming every day and does not shed. The PDSA says the coat needs daily grooming and regular trimming, that Giant Schnauzers can be lovable pets for families with older children if they are well socialised as puppies, and that these strong-minded dogs suit experienced owners. PetMD adds that the coat is professionally hand-stripped every few months and that the breed does not do well in homes where people are not home much.",
+      ],
+      sources: ["S494", "S495", "S496", "S497"],
     },
     british_shorthair: {
       aka: "British Blue",
