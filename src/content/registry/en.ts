@@ -401,6 +401,7 @@ const en: RegistryCopy = {
     familial_nephropathy: "An inherited kidney disease (familial nephropathy) occurs in the breed; a DNA test of the parents is available.",
     hereditary_nephritis: "An inherited kidney disease (hereditary nephritis, also called Samoyed hereditary glomerulopathy) occurs in the breed.",
     scottie_cramp: "Scottie cramp — short episodes of muscle cramping, usually brought on by excitement — occurs in the breed; it is not painful.",
+    periodontal_disease: "Periodontal disease, an infection and inflammation of the gums and the tissues that hold the teeth, is a known problem in the breed.",
     extra_eyelashes: "Distichiasis, where small extra eyelashes grow on the inner surface or the edge of the eyelid and can rub the eye, can occur in the breed; ask for parents tested under the eye scheme.",
     cm_sm_screening: "Chiari-like malformation and syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, can occur in the breed; breeders are advised to screen the parents (UK: BVA/KC scheme).",
     prominent_eyes_injury_dry_eye: "Prominent eyes are more easily injured and can develop ulcers and dryness; dry eye and cherry eye also occur in the breed.",
@@ -955,6 +956,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends more than two hours of exercise a day, a large house and a large garden, and grooming once a week. The PDSA says Weimaraners make wonderful family pets in the right hands and do best with owners familiar with the breed, but does not recommend them for homes with smaller children or smaller pets because of their very strong prey drive, says they can develop separation anxiety if left alone, and advises socialising them from a young age and leaving a gap between eating and exercising. PetMD adds monthly ear cleaning and a monthly bath.",
       ],
       sources: ["S478", "S479", "S480", "S481"],
+    },
+    italian_greyhound: {
+      aka: "Italian Sighthound, Piccolo Levriero Italiano, Iggy",
+      text: [
+        "The Italian Greyhound comes from Italy; the FCI lists it as the Piccolo Levriero Italiano among the short-haired sighthounds. The Kennel Club standard describes a Greyhound in miniature, more slender in all proportions, elegant, graceful and quick-moving, intelligent, affectionate and vivacious though it may appear aloof, with a short, fine, glossy coat over fine skin. It gives a height of 32–38 cm and a weight of 3.6–4.5 kg; black, blue, cream, fawn, red and white, or any of these broken with white, are accepted — never merle, brindle or tan markings.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day, says the breed suits a small house and either town or country, needs grooming once a week and does not shed. The PDSA says Italian Greyhounds are full of energy, should exercise in a confined area because they can be hard to call back once they see prey, can be timid so early socialisation is essential, and — because their bones are fragile while they grow — may not be the ideal breed for homes with young children or other pets. PetMD adds that their thin coat does not keep them warm, so they feel the cold easily.",
+      ],
+      sources: ["S485", "S486", "S487", "S488"],
     },
     british_shorthair: {
       aka: "British Blue",
