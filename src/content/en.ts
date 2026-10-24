@@ -602,6 +602,7 @@ const en: Dictionary = {
                 "Care activity: actions in the simulation (feeding, water, cleaning, walks), daily step totals (or wheelchair push totals in adapted mode — see sections 3 and 4), scores and reports.",
                 "The Responsibility Contract: the child's finger signature, stored as a vector line with the time of signing.",
                 "Codes: login and invite codes are stored only as hashes and expire.",
+                "App error reports: if the app freezes or crashes, it may send a short technical report to our EU server (error type and text, code location, app and OS version, screen name, parent/child role). It contains no name, email address, user ID or IP address, is shared with no third party and is deleted after 30 days.",
                 "Early access list (this website): your email address, the language of the page and the time you signed up.",
               ],
             },
@@ -645,6 +646,7 @@ const en: Dictionary = {
                 "For the daily walk (daily step totals — health and fitness data, see section 3): performance of a contract; reading from Apple Health, Health Connect or the motion sensor only with the permission you give on the device.",
                 "For adapted mode (the fact that it is on, wheelchair pushes and logged walks): the parent's explicit consent given by turning the switch on (GDPR Art. 9(2)(a) and Art. 8 — see section 4).",
                 "To keep the service secure, for example limiting repeated login attempts (legitimate interest).",
+                "To operate and secure the service with app error reports that help us fix freezes and crashes (legitimate interest).",
                 "To meet legal obligations, such as accounting for purchases (legal obligation).",
                 "To email you about the PetPrep launch if you joined the early access list (consent — you can unsubscribe in every email).",
                 "To understand how visitors use this website, with Google Analytics, only if you allow analytics cookies (consent — you can change it at any time under Cookie settings).",
@@ -678,7 +680,7 @@ const en: Dictionary = {
             {
               heading: "10. How long we keep data",
               paragraphs: [
-                "We keep your data while your account exists. When you delete a child's profile or your account in the app, the data is deleted immediately and cannot be restored; it leaves our encrypted backups automatically within 35 days at the latest. Records we must keep by law (for example for purchases) are kept for the period the law requires.",
+                "We keep your data while your account exists. When you delete a child's profile or your account in the app, the data is deleted immediately and cannot be restored; it leaves our encrypted backups automatically within 35 days at the latest. Records we must keep by law (for example for purchases) are kept for the period the law requires. App error reports are deleted automatically after 30 days.",
               ],
             },
             {

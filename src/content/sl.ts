@@ -602,6 +602,7 @@ const sl: Dictionary = {
                 "Dejavnost skrbi: dejanja v simulaciji (hranjenje, voda, čiščenje, sprehodi), dnevno število korakov (ali potiskov invalidskega vozička v prilagojenem načinu — glejte točki 3 in 4), ocene in poročila.",
                 "Pogodba o odgovornosti: otrokov podpis s prstom, shranjen kot vektorska črta s časom podpisa.",
                 "Kode: kode za prijavo in povabila so shranjene samo kot zgoščene vrednosti in potečejo.",
+                "Poročila o napakah v aplikaciji: če se aplikacija zatakne ali sesuje, lahko na naš strežnik v EU pošlje kratko tehnično poročilo (vrsta in besedilo napake, mesto v kodi, različica aplikacije in sistema, ime zaslona, vloga starš/otrok). Poročilo ne vsebuje imena, e-naslova, ID-ja uporabnika ali IP-naslova, ne gre nobeni tretji osebi in se izbriše po 30 dneh.",
                 "Seznam za zgodnji dostop (ta spletna stran): vaš e-poštni naslov, jezik strani in čas prijave.",
               ],
             },
@@ -645,6 +646,7 @@ const sl: Dictionary = {
                 "Za dnevni sprehod (dnevno število korakov — podatki o telesni dejavnosti, glejte točko 3): izvajanje pogodbe; branje iz Apple Zdravje, Health Connect ali senzorja gibanja samo z dovoljenjem, ki ga date na napravi.",
                 "Za prilagojen način (podatek, da je vklopljen, potiski vozička in vpisani sprehodi): izrecna privolitev starša z vklopom stikala (člen 9(2)(a) in člen 8 GDPR — glejte točko 4).",
                 "Za varnost storitve, na primer omejevanje ponavljajočih se poskusov prijave (zakoniti interes).",
+                "Za delovanje in varnost storitve s poročili o napakah v aplikaciji, ki nam pomagajo odpraviti zatikanja in sesutja (zakoniti interes).",
                 "Za izpolnjevanje zakonskih obveznosti, na primer računovodstvo nakupov (zakonska obveznost).",
                 "Za obveščanje o začetku PetPrep po e-pošti, če ste se prijavili na zgodnji dostop (privolitev — odjava je mogoča v vsakem sporočilu).",
                 "Da razumemo, kako obiskovalci uporabljajo to spletno stran, z Google Analytics, samo če dovolite analitične piškotke (privolitev — spremenite jo lahko kadarkoli v Nastavitvah piškotkov).",
@@ -678,7 +680,7 @@ const sl: Dictionary = {
             {
               heading: "10. Kako dolgo hranimo podatke",
               paragraphs: [
-                "Podatke hranimo, dokler obstaja vaš račun. Ko v aplikaciji izbrišete profil otroka ali svoj račun, se podatki takoj izbrišejo in jih ni mogoče obnoviti; iz šifriranih varnostnih kopij samodejno izginejo najpozneje v 35 dneh. Zapise, ki jih moramo hraniti po zakonu (na primer za nakupe), hranimo toliko časa, kot to zahteva zakon.",
+                "Podatke hranimo, dokler obstaja vaš račun. Ko v aplikaciji izbrišete profil otroka ali svoj račun, se podatki takoj izbrišejo in jih ni mogoče obnoviti; iz šifriranih varnostnih kopij samodejno izginejo najpozneje v 35 dneh. Zapise, ki jih moramo hraniti po zakonu (na primer za nakupe), hranimo toliko časa, kot to zahteva zakon. Tehnična poročila o napakah v aplikaciji samodejno izbrišemo po 30 dneh.",
               ],
             },
             {
