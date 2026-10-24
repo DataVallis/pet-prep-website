@@ -995,6 +995,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S494", "S495", "S496", "S497"],
     },
+    bloodhound: {
+      aka: "pes svetega Huberta, Chien de Saint-Hubert, St. Hubert Hound",
+      text: [
+        "Bloodhound izvira iz Belgije, kjer ga FCI vodi kot »Chien de Saint-Hubert«, velikega goniča. Standard FCI ga opisuje kot najmočnejšega med vsemi goniči: nežnega, mirnega, prijaznega in družabnega z ljudmi ter posebej navezanega na lastnika, s kratko, gosto dlako, odporno proti vremenu, in mehko, ohlapno kožo. Psi tehtajo približno 46–54 kg, psice približno 40–48 kg; barve so tri: črno-rjava, jetrno-rjava in rdeča.",
+        "Royal Kennel Club priporoča več kot dve uri gibanja na dan, pravi, da je primeren za veliko hišo z velikim vrtom, da potrebuje nego dlake enkrat na teden in da mu dlaka izpada. PDSA piše, da je bloodhound primernejši za izkušene lastnike, da ga zaradi velikosti in zelo močnega lovskega nagona ne priporočajo za dom z manjšimi otroki ali manjšimi živalmi, da se slini in da morajo biti kožne gube čiste in suhe. Svetuje tudi premor med hranjenjem in gibanjem.",
+      ],
+      sources: ["S501", "S502", "S503"],
+    },
     british_shorthair: {
       aka: "britanka, British Blue",
       text: [
