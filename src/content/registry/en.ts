@@ -978,6 +978,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S494", "S495", "S496", "S497"],
     },
+    bloodhound: {
+      aka: "St. Hubert Hound, Chien de Saint-Hubert, Sleuth Hound",
+      text: [
+        "The Bloodhound comes from Belgium, where the FCI lists it as the Chien de Saint-Hubert, a large scent hound. The FCI standard describes the most powerful of all the scent hounds: gentle, placid, kind and sociable with people and particularly attached to its owner, with a short, dense, weatherproof coat and supple, loose skin. Males are about 46–54 kg and females about 40–48 kg; the three colours are black and tan, liver and tan, and red.",
+        "The Royal Kennel Club recommends more than two hours of exercise a day, says the breed suits a large house with a large garden, needs grooming once a week and sheds. The PDSA says Bloodhounds are better suited to experienced owners, are not recommended for homes with smaller children or smaller pets because of their size and very high prey drive, drool, and need their skin folds kept clean and dry. It also advises leaving a gap between eating and exercising.",
+      ],
+      sources: ["S501", "S502", "S503"],
+    },
     british_shorthair: {
       aka: "British Blue",
       text: [
