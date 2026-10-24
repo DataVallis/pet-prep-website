@@ -418,6 +418,7 @@ const sl: RegistryCopy = {
     familial_nephropathy: "Pri pasmi se pojavlja dedna bolezen ledvic (družinska nefropatija); za starše je na voljo test DNK.",
     hereditary_nephritis: "Pri pasmi se pojavlja dedna bolezen ledvic (dedni nefritis, imenovan tudi samojedska dedna glomerulopatija).",
     scottie_cramp: "Pri pasmi se pojavlja »škotski krč« — kratki napadi krčenja mišic, navadno ob vznemirjenju; ni boleč.",
+    periodontal_disease: "Pri pasmi je znana težava bolezen obzobnih tkiv (parodontalna bolezen), okužba in vnetje dlesni in tkiv, ki držijo zobe.",
     extra_eyelashes: "Pri pasmi se lahko pojavi distihiaza — dodatne drobne trepalnice na notranji strani ali robu veke, ki lahko drgnejo oko; vprašajte za starše, pregledane po shemi za oči.",
     cm_sm_screening: "Pri pasmi se lahko pojavita Chiarijeva malformacija in siringomielija, boleča bolezen z votlinicami, polnimi tekočine, v hrbtenjači ob možganih; vzrediteljem svetujejo pregled staršev (v Združenem kraljestvu: shema BVA/KC).",
     prominent_eyes_injury_dry_eye: "Izbuljene oči se lažje poškodujejo, na njih pa lahko nastanejo razjede in izsušenost; pri pasmi se pojavljata tudi suho oko in češnjevo oko (izpad žleze tretje veke).",
@@ -972,6 +973,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča več kot dve uri gibanja na dan, veliko hišo in velik vrt ter nego dlake enkrat na teden. PDSA piše, da so weimarski ptičarji v pravih rokah čudoviti družinski psi in da so najboljši pri lastnikih, ki pasmo poznajo, a jih zaradi zelo močnega lovskega nagona ne priporoča za dom z manjšimi otroki ali manjšimi živalmi; pravi, da lahko ob samoti razvijejo ločitveno tesnobo, ter svetuje socializacijo od malega in premor med obrokom in gibanjem. PetMD dodaja čiščenje ušes in kopanje enkrat na mesec.",
       ],
       sources: ["S478", "S479", "S480", "S481"],
+    },
+    italian_greyhound: {
+      aka: "italijanski hrt, italijanski hrtek, Piccolo Levriero Italiano, Italian Greyhound",
+      text: [
+        "Mali italijanski hrt izvira iz Italije; FCI ga kot »Piccolo Levriero Italiano« uvršča med kratkodlake hrte. Standard Kennel Club ga opisuje kot hrta v malem, v vseh razmerjih bolj vitkega, elegantnega, gracioznega in hitrega v gibanju, inteligentnega, ljubečega in živahnega, čeprav se lahko zdi zadržan, s kratko, fino, svetlečo dlako na tanki koži. Navaja višino 32–38 cm in težo 3,6–4,5 kg; sprejete barve so črna, modra, kremasta, rumenorjava, rdeča in bela ali katera koli od teh z belimi lisami — nikoli merle, tigrasta ali s porjavelimi oznakami.",
+        "Royal Kennel Club priporoča do eno uro gibanja na dan, pravi, da je primeren za majhno hišo v mestu ali na podeželju, da potrebuje nego dlake enkrat na teden in da mu dlaka ne izpada. PDSA piše, da so mali italijanski hrti polni energije in naj se gibljejo v ograjenem prostoru, ker jih je težko priklicati, ko zagledajo plen, da so lahko plašni, zato je zgodnja socializacija nujna, in da zaradi krhkih kosti med rastjo morda niso najboljša izbira za dom z majhnimi otroki ali drugimi živalmi. PetMD dodaja, da jih tanka dlaka slabo greje, zato jih hitro zebe.",
+      ],
+      sources: ["S485", "S486", "S487", "S488"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
