@@ -1036,6 +1036,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S519", "S521", "S522", "S524"],
     },
+    saint_bernard: {
+      aka: "St. Bernard, St. Bernhardshund, Bernhardiner",
+      text: [
+        "The Saint Bernard comes from Switzerland; the FCI lists it as the St. Bernard among the molossoid breeds of the mountain type. The FCI standard describes a dog that is friendly by nature, calm to lively and watchful, and recognises two varieties: short-haired, with a dense, smooth, close-lying coat, and long-haired. Dogs stand at least 70 cm and bitches at least 65 cm, up to 90 and 80 cm; the PDSA gives a weight of 54–81 kg.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day, says the breed suits a large house with a large garden, needs grooming more than once a week, sheds and usually lives under ten years. The PDSA says Saint Bernards love being with a family and are great with people of all ages, including children, should be well socialised as puppies, need brushing at least three times a week, drool, do not do as well in the heat, and need a gap between eating and exercising. PetMD adds that these people-oriented dogs can develop separation anxiety if they are left alone for long periods.",
+      ],
+      sources: ["S527", "S528", "S529", "S532", "S533"],
+    },
     british_shorthair: {
       aka: "British Blue",
       text: [

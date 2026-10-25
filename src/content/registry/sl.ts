@@ -1054,6 +1054,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S519", "S521", "S522", "S524"],
     },
+    saint_bernard: {
+      aka: "St. Bernard, bernhardiner, sveti bernard, pes svetega Bernarda",
+      text: [
+        "Bernardinec izvira iz Švice; FCI ga vodi kot »St. Bernard« med molosi gorskega tipa. Standard FCI opisuje psa, ki je po naravi prijazen, umirjen do živahen in pozoren, ter priznava dve različici: kratkodlako z gosto, gladko, tesno prilegajočo se dlako in dolgodlako. Psi so visoki najmanj 70 cm, psice najmanj 65 cm, do 90 oziroma 80 cm; PDSA navaja težo 54–81 kg.",
+        "Royal Kennel Club priporoča do eno uro gibanja na dan, pravi, da je primeren za veliko hišo z velikim vrtom, da potrebuje nego dlake večkrat na teden, da mu dlaka izpada in da običajno živi manj kot deset let. PDSA piše, da bernardinci najraje preživljajo čas z družino in se odlično razumejo z ljudmi vseh starosti, tudi z otroki, da jih je treba kot mladičke dobro socializirati, da jih je treba počesati vsaj trikrat na teden, da se slinijo, da slabše prenašajo vročino in da morajo po obroku nekaj časa počakati, preden gredo na sprehod. PetMD dodaja, da se lahko pri teh na ljudi navezanih psih razvije ločitvena tesnoba, če jih dolgo puščamo same.",
+      ],
+      sources: ["S527", "S528", "S529", "S532", "S533"],
+    },
     british_shorthair: {
       aka: "britanka, British Blue",
       text: [
