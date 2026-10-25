@@ -29,6 +29,8 @@ export const pageSlugs = {
   accessibility: { en: "accessibility", sl: "dostopnost" },
   animals: { en: "animals", sl: "zivali" },
   about: { en: "about", sl: "o-nas" },
+  /** Mascot page (David 2026-10-25): linked from the footer only. */
+  curio: { en: "meet-curio", sl: "spoznaj-curia" },
 } as const satisfies Record<string, Record<Locale, string>>;
 
 export type PageKey = keyof typeof pageSlugs;

@@ -67,7 +67,8 @@ export default async function SubPage({ params }: PageProps<"/[locale]/[slug]">)
           </ol>
         </nav>
 
-        <header className="mb-14 flex max-w-4xl flex-col gap-5 sm:mb-16">
+        <div className={page.hero ? "mb-14 grid items-center gap-8 sm:mb-16 lg:grid-cols-[1fr_minmax(0,420px)] lg:gap-12" : ""}>
+        <header className={`flex max-w-4xl flex-col gap-5 ${page.hero ? "" : "mb-14 sm:mb-16"}`}>
           <p className="eyebrow flex flex-wrap items-center gap-3">
             {page.eyebrow}
             {page.planned ? (
@@ -86,6 +87,13 @@ export default async function SubPage({ params }: PageProps<"/[locale]/[slug]">)
           ) : null}
           {page.planned ? <p className="max-w-3xl rounded-[14px] bg-mint-tint px-4 py-3 text-sm leading-relaxed">{dict.common.plannedNote}</p> : null}
         </header>
+        {page.hero ? (
+          <div className="mx-auto w-full max-w-[420px] rounded-[30px] bg-mint p-6 sm:p-8">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={page.hero.src} alt={page.hero.alt} width={page.hero.width} height={page.hero.height} fetchPriority="high" className="h-auto w-full" />
+          </div>
+        ) : null}
+        </div>
 
         <Blocks blocks={page.blocks} locale={locale} dict={dict} />
 

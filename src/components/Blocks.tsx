@@ -11,6 +11,7 @@ import { RichText } from "./RichText";
 
 const tagDot: Record<string, string> = { ok: "bg-ok", warn: "bg-warn-fill", danger: "bg-danger" };
 const tagBg: Record<string, string> = { ok: "bg-mint-tint", warn: "bg-warn-tint", danger: "bg-danger-tint" };
+const mediaBg: Record<string, string> = { fog: "bg-fog", mint: "bg-mint", graphite: "bg-graphite" };
 
 function Heading({ children }: { children?: string }) {
   if (!children) return null;
@@ -186,6 +187,86 @@ export function Blocks({ blocks, locale, dict }: { blocks: Block[]; locale: Loca
             );
           case "animalsHub":
             return <AnimalsHub key={i} locale={locale} />;
+          case "gallery":
+            return (
+              <section key={i} id={b.id} className="flex scroll-mt-24 flex-col gap-6">
+                <Heading>{b.heading}</Heading>
+                <Intro locale={locale}>{b.intro}</Intro>
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                  {b.items.map((m) => (
+                    <figure key={m.src} className="flex flex-col gap-2.5">
+                      <div className={`overflow-hidden rounded-[22px] border border-line ${mediaBg[m.bg ?? "fog"]}`}>
+                        {m.video ? (
+                          <video controls preload="none" playsInline poster={m.src} className="aspect-[9/16] w-full object-cover" aria-label={m.alt}>
+                            <source src={m.video} type="video/mp4" />
+                          </video>
+                        ) : (
+                          // eslint-disable-next-line @next/next/no-img-element
+                          <img src={m.src} alt={m.alt} loading="lazy" decoding="async" className="aspect-square w-full object-contain" />
+                        )}
+                      </div>
+                      {m.caption ? <figcaption className="text-[14px] leading-snug text-muted">{m.caption}</figcaption> : null}
+                    </figure>
+                  ))}
+                </div>
+              </section>
+            );
+          case "pair":
+            return (
+              <section key={i} id={b.id} className="flex scroll-mt-24 flex-col gap-6">
+                <Heading>{b.heading}</Heading>
+                <Intro locale={locale}>{b.intro}</Intro>
+                <div className="grid gap-4 md:grid-cols-2">
+                  {b.items.map((p) => (
+                    <div key={p.src} className={`flex flex-col overflow-hidden rounded-[30px] border border-line ${p.tone === "mint" ? "bg-mint-tint" : "bg-white"}`}>
+                      <div className="relative">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img src={p.src} alt={p.alt} loading="lazy" decoding="async" className="aspect-[4/3] w-full bg-fog object-cover" />
+                        {p.label ? (
+                          <span className="absolute left-4 top-4 rounded-full bg-graphite px-3 py-1 text-[12px] font-semibold text-fog">{p.label}</span>
+                        ) : null}
+                      </div>
+                      <div className="flex flex-col gap-2.5 p-6 sm:p-8">
+                        <h3 className="h-card text-2xl">{p.title}</h3>
+                        <p className="text-[16px] leading-relaxed text-[#2a312d]"><RichText text={p.text} locale={locale} /></p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            );
+          case "downloads":
+            return (
+              <section key={i} id={b.id} className="flex scroll-mt-24 flex-col gap-6">
+                <Heading>{b.heading}</Heading>
+                <Intro locale={locale}>{b.intro}</Intro>
+                {b.all ? (
+                  <a href={b.all.href} download className="btn btn-primary w-fit">
+                    {b.all.label} <span className="font-normal opacity-75">· {b.all.meta}</span>
+                  </a>
+                ) : null}
+                <ul className="grid max-w-4xl gap-3 sm:grid-cols-2">
+                  {b.items.map((d) => (
+                    <li key={d.href}>
+                      <a href={d.href} download className="flex items-center justify-between gap-4 rounded-[18px] border border-line bg-white px-5 py-4 hover:border-graphite">
+                        <span className="font-semibold">{d.label}</span>
+                        <span className="shrink-0 text-[13px] text-muted">{d.meta}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                {b.rules?.length ? (
+                  <div className="flex max-w-4xl flex-col gap-4 pt-4">
+                    {b.rulesHeading ? <h3 className="h-card text-xl">{b.rulesHeading}</h3> : null}
+                    <ul className="grid gap-3.5">
+                      {b.rules.map((r) => (
+                        <li key={r} className="flex gap-3 text-[17px] leading-relaxed"><Tick /><span><RichText text={r} locale={locale} /></span></li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
+              </section>
+            );
           case "cookies":
             return (
               <section key={i} className="prose-legal max-w-3xl" aria-labelledby="cookies">

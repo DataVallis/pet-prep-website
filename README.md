@@ -16,7 +16,7 @@ npm run build && npm run lint && npx tsc --noEmit
 | | English (default) | Slovenian |
 |---|---|---|
 | Home | `/` | `/sl` |
-| Pages | `/how-it-works`, `/for-parents`, `/animals`, `/when-it-comes-home`, `/pricing`, `/faq`, `/partners`, `/investors`, `/contact`, `/privacy`, `/terms`, `/child-safety` | `/sl/kako-deluje`, `/sl/za-starse`, `/sl/zivali`, `/sl/ko-pride-domov`, `/sl/cenik`, `/sl/pogosta-vprasanja`, `/sl/partnerji`, `/sl/vlagatelji`, `/sl/kontakt`, `/sl/zasebnost`, `/sl/pogoji`, `/sl/varnost-otrok` |
+| Pages | `/how-it-works`, `/for-parents`, `/animals`, `/when-it-comes-home`, `/pricing`, `/faq`, `/partners`, `/investors`, `/contact`, `/privacy`, `/terms`, `/child-safety`, `/meet-curio` | `/sl/kako-deluje`, `/sl/za-starse`, `/sl/zivali`, `/sl/ko-pride-domov`, `/sl/cenik`, `/sl/pogosta-vprasanja`, `/sl/partnerji`, `/sl/vlagatelji`, `/sl/kontakt`, `/sl/zasebnost`, `/sl/pogoji`, `/sl/varnost-otrok`, `/sl/spoznaj-curia` |
 | Animal register | `/animals/<species>` (`/animals/dogs`), `/animals/<species>/<breed>` (`/animals/dogs/labrador-retriever`), `/animals/<species>/compare?b=a,b,c` | `/sl/zivali/psi`, `/sl/zivali/psi/labradorec`, `/sl/zivali/psi/primerjava?b=…` |
 
 - `src/proxy.ts` serves English from the root (internally `/en/...`) and redirects `/en/...` to the root, so every page has one URL.
@@ -34,6 +34,11 @@ Site-wide settings — domain, e-mail addresses, company details, launch state, 
 ## Animal register (M5-R11)
 
 Hub `/animals` → species catalogue `/animals/<species>` (search, filters, sort, 24 per page, pick up to 3 to compare, URL state `?q=&tag=&size=&exercise=&grooming=&av=&sort=&page=&b=`; without JavaScript a plain A–Z list) → breed page `/animals/<species>/<breed>`; comparison `/animals/<species>/compare?b=…` (noindex). Species, breeds, slugs, availability and facts come from `src/content/registry/registry.json`, a copy of the build-time export in the `pet-prep` repo; layout code is generic and only looks up words in `src/content/registry/{en,sl}.ts`. The client parts load static JSON built from the registry: `/registry/<species>/index.<locale>.json` (slim index) and `/registry/<species>/compare.<locale>.json`. One share image per species; every breed page has its own branded share card `/og/<species>/<breed>.<locale>.png` (AI portrait converted WebP → PNG with `sharp` at build, 2–3 facts, availability badge) and a **Share** button (copy link, X, Facebook, LinkedIn, WhatsApp, Telegram, e-mail, system share sheet; plain links, no third-party scripts). Old preview URLs `/breeds…` and `/sl/pasme…` redirect permanently. Availability changes (a new app release) arrive by themselves: `.github/workflows/registry-sync.yml` copies the pet-prep export hourly, checks it and deploys. How to refresh by hand (new breeds): `src/content/registry/README.md`.
+
+## Mascot page (Curio)
+
+`/meet-curio` · `/sl/spoznaj-curia` (David 2026-10-25), linked from the footer only (group Company), never the header. Curio is the brand mascot, **not** the pet in the app — the page says so next to a real app breed portrait. Content: `pages.curio` in `src/content/{en,sl}.ts`, with the optional page `hero` and the blocks `pair`, `gallery` (images; a tile with `video` becomes a player with a poster, never autoplay) and `downloads` (media kit + usage rules).
+Images: `public/curio/*.webp` (display) and `public/curio/kit/` (download originals), copied from `brand/mascot/` in the `pet-prep` repo; `public/curio/petprep-curio-media-kit.zip` = everything in `kit/` (rebuild it when a kit file changes: `cd public/curio/kit && zip -X ../petprep-curio-media-kit.zip *`). Social profiles (`site.social`, also JSON-LD `sameAs`): TikTok and Instagram `@petprep.si`.
 
 ## App screens
 
