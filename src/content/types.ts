@@ -40,10 +40,42 @@ export type Block =
   | { type: "company"; id?: string; heading?: string; intro?: string }
   /** Animal register hub: species from src/content/registry/registry.json (M5-R11). */
   | { type: "animalsHub" }
+  /**
+   * Pictures in a grid (files under public/). With `video` the tile is a video player and `src`
+   * is its poster; videos never autoplay (accessibility: less motion).
+   */
+  | { type: "gallery"; id?: string; heading?: string; intro?: string; items: MediaItem[] }
+  /** Two pictures side by side, each with a title and text (e.g. the mascot vs. the pet in the app). */
+  | {
+      type: "pair";
+      id?: string;
+      heading?: string;
+      intro?: string;
+      items: [PairItem, PairItem];
+    }
+  /** Files to download (a media kit) and the rules for using them. */
+  | {
+      type: "downloads";
+      id?: string;
+      heading?: string;
+      intro?: string;
+      /** One archive with every file. */
+      all?: { href: string; label: string; meta: string };
+      items: { href: string; label: string; meta: string }[];
+      rulesHeading?: string;
+      rules?: string[];
+    }
   | {
       type: "legal";
       sections: { heading: string; paragraphs?: string[]; items?: string[] }[];
     };
+
+export type MediaItem = { src: string; alt: string; caption?: string; video?: string; bg?: "fog" | "mint" | "graphite" };
+
+export type PairItem = { src: string; alt: string; title: string; text: string; label?: string; tone?: "mint" | "fog" };
+
+/** A large picture beside the page title (e.g. the mascot on /meet-curio). */
+export type PageHero = { src: string; alt: string; width: number; height: number };
 
 export type PageContent = {
   meta: { title: string; description: string };
@@ -54,6 +86,7 @@ export type PageContent = {
   lead: string;
   /** Shown as a badge: the page describes features that are planned, not built yet. */
   planned?: boolean;
+  hero?: PageHero;
   blocks: Block[];
 };
 

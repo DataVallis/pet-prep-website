@@ -61,6 +61,18 @@ function blockMarkdownRaw(b: Block, locale: Locale): string {
       return "";
     case "animalsHub":
       return hubMarkdown(locale, absoluteUrl);
+    case "gallery":
+      return [b.heading ? `### ${b.heading}` : "", b.intro ?? "", b.items.map((m) => `- ${m.caption ?? m.alt}`).join("\n")].filter(Boolean).join("\n\n");
+    case "pair":
+      return [b.heading ? `### ${b.heading}` : "", b.intro ?? "", b.items.map((p) => `- **${p.title}:** ${p.text}`).join("\n")].filter(Boolean).join("\n\n");
+    case "downloads":
+      return [
+        b.heading ? `### ${b.heading}` : "",
+        b.intro ?? "",
+        [...(b.all ? [b.all] : []), ...b.items].map((d) => `- [${d.label}](${d.href}) (${d.meta})`).join("\n"),
+        b.rulesHeading ? `**${b.rulesHeading}**` : "",
+        (b.rules ?? []).map((r) => `- ${r}`).join("\n"),
+      ].filter(Boolean).join("\n\n");
   }
 }
 
