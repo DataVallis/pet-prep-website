@@ -94,6 +94,8 @@ export type Dictionary = {
     languages: string;
     company: string;
     cookieSettings: string;
+    /** Accessibility badge in the footer, links to the accessibility page. */
+    a11yBadge: { title: string; text: string };
   };
   screens: Record<ScreenKey, string>;
   pricingPlans: {

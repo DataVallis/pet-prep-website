@@ -53,13 +53,14 @@ const en: Dictionary = {
     groups: [
       { title: "Product", links: ["howItWorks", "parents", "animals", "afterAdoption", "pricing", "faq"] },
       { title: "Company", links: ["about", "partners", "investors", "contact"] },
-      { title: "Trust", links: ["privacy", "terms", "childSafety", "deleteAccount"] },
+      { title: "Trust", links: ["privacy", "terms", "childSafety", "accessibility", "deleteAccount"] },
     ],
     rights: "All rights reserved.",
     dataEu: "Data stored in the EU.",
     languages: "More languages coming soon.",
     company: "PetPrep is a product of",
     cookieSettings: "Cookie settings",
+    a11yBadge: { title: "Accessible play", text: "Easier gestures · Screen readers · Less motion" },
   },
   screens: {
     pin: "Child login with a 6-digit code from the parent — no email, no password.",
@@ -878,6 +879,39 @@ const en: Dictionary = {
           ],
         },
         { type: "callout", title: "Report a concern", text: "If something in PetPrep worries you, write to us and we will respond with priority.", tone: "dark" },
+        { type: "contact" },
+      ],
+    },
+    accessibility: {
+      navLabel: "Accessibility",
+      meta: {
+        title: "Accessibility — PetPrep for every child",
+        description:
+          "How PetPrep adapts to children who find swipes hard, use VoiceOver or TalkBack, or prefer less motion — with the same rules and points for everyone.",
+      },
+      eyebrow: "Trust",
+      title: "Every child can take care of their pet.",
+      lead: "Some children find swipes hard, use a screen reader or prefer less motion on screen. PetPrep adapts to them — with the same rules, the same points and the same certificate as everyone else.",
+      blocks: [
+        {
+          type: "cards",
+          heading: "In the app",
+          columns: 3,
+          items: [
+            { title: "Easier gestures", text: "Instead of swiping, the child holds a finger down or presses a button — in every swipe game: brushing, the feather wand, changing the litter and throwing the ball. A parent turns it on for each child in the parent area." },
+            { title: "Screen readers", text: "With VoiceOver or TalkBack on, the games switch to holding by themselves. The pet header reads out everything about the pet, and each step in the care games is its own button." },
+            { title: "Less motion", text: "When the phone is set to reduce motion, pulsing buttons and the swaying Curio stand still." },
+          ],
+        },
+        {
+          type: "cards",
+          heading: "Coming with the next app update",
+          items: [
+            { title: "Wheelchair walks", text: "In adapted mode, wheelchair pushes count exactly like steps — one push is one step. A parent can also log today's walk minutes, so the child doesn't have to do anything extra. A parent turns it on for each child, and turning it off removes the marker from the history." },
+          ],
+        },
+        { type: "callout", title: "The same challenge for everyone", text: "Adaptations change how a child plays, never what counts. Scores, timing and the Responsibility Certificate work exactly the same. We never ask why a child needs an adaptation.", tone: "mint" },
+        { type: "callout", title: "Something doesn't work for your child?", text: "Tell us what got in the way and we will look at it.", tone: "dark" },
         { type: "contact" },
       ],
     },

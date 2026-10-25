@@ -26,6 +26,7 @@ export const pageSlugs = {
   terms: { en: "terms", sl: "pogoji" },
   childSafety: { en: "child-safety", sl: "varnost-otrok" },
   deleteAccount: { en: "delete-account", sl: "izbris-racuna" },
+  accessibility: { en: "accessibility", sl: "dostopnost" },
   animals: { en: "animals", sl: "zivali" },
   about: { en: "about", sl: "o-nas" },
 } as const satisfies Record<string, Record<Locale, string>>;
