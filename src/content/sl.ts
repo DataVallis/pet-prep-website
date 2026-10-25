@@ -53,13 +53,14 @@ const sl: Dictionary = {
     groups: [
       { title: "Izdelek", links: ["howItWorks", "parents", "animals", "afterAdoption", "pricing", "faq"] },
       { title: "Podjetje", links: ["about", "partners", "investors", "contact"] },
-      { title: "Zaupanje", links: ["privacy", "terms", "childSafety", "deleteAccount"] },
+      { title: "Zaupanje", links: ["privacy", "terms", "childSafety", "accessibility", "deleteAccount"] },
     ],
     rights: "Vse pravice pridržane.",
     dataEu: "Podatki so shranjeni v EU.",
     languages: "Več jezikov kmalu.",
     company: "PetPrep je izdelek podjetja",
     cookieSettings: "Nastavitve piškotkov",
+    a11yBadge: { title: "Igra za vse otroke", text: "Lažje kretnje · Bralniki zaslona · Manj gibanja" },
   },
   screens: {
     pin: "Otrok se prijavi s 6-mestno kodo staršev — brez e-pošte in gesla.",
@@ -878,6 +879,39 @@ const sl: Dictionary = {
           ],
         },
         { type: "callout", title: "Prijavite skrb", text: "Če vas karkoli v PetPrep skrbi, nam pišite — odgovorili bomo prednostno.", tone: "dark" },
+        { type: "contact" },
+      ],
+    },
+    accessibility: {
+      navLabel: "Dostopnost",
+      meta: {
+        title: "Dostopnost — PetPrep za vsakega otroka",
+        description:
+          "Kako se PetPrep prilagodi otrokom, ki jim potegi s prstom delajo težave, uporabljajo VoiceOver ali TalkBack ali želijo manj gibanja — z enakimi pravili in točkami za vse.",
+      },
+      eyebrow: "Zaupanje",
+      title: "Za svojega ljubljenčka lahko skrbi vsak otrok.",
+      lead: "Nekaterim otrokom potegi s prstom delajo težave, drugi uporabljajo bralnik zaslona ali jim je prijetneje z manj gibanja na zaslonu. PetPrep se jim prilagodi — z enakimi pravili, enakimi točkami in enakim certifikatom kot za vse ostale.",
+      blocks: [
+        {
+          type: "cards",
+          heading: "V aplikaciji",
+          columns: 3,
+          items: [
+            { title: "Lažje kretnje", text: "Namesto potega s prstom otrok drži prst ali pritisne gumb — v vseh igrah s potegom: pri česanju, palici s peresom, menjavi peska in igri z žogo. Vklopi jih starš za vsakega otroka posebej." },
+            { title: "Bralniki zaslona", text: "Ko je vklopljen VoiceOver ali TalkBack, igre same preklopijo na držanje. Glava zaslona prebere vse o ljubljenčku, vsak korak v igrah nege je svoj gumb." },
+            { title: "Manj gibanja", text: "Ko je telefon nastavljen na manj gibanja, utripajoči gumbi in zibajoči se Curio mirujejo." },
+          ],
+        },
+        {
+          type: "cards",
+          heading: "Prihaja z naslednjo posodobitvijo aplikacije",
+          items: [
+            { title: "Sprehodi z invalidskim vozičkom", text: "V prilagojenem načinu se potiski vozička štejejo natanko kot koraki — en potisk je en korak. Starš lahko vpiše tudi današnje minute sprehoda, tako da otroku ni treba narediti ničesar več. Vklopi ga starš za vsakega otroka posebej; z izklopom se oznaka odstrani iz zgodovine." },
+          ],
+        },
+        { type: "callout", title: "Isti izziv za vse", text: "Prilagoditve spremenijo, kako otrok igra, nikoli pa, kaj šteje. Točke, čas in Certifikat odgovornosti delujejo popolnoma enako. Nikoli ne sprašujemo, zakaj otrok prilagoditev potrebuje.", tone: "mint" },
+        { type: "callout", title: "Vašemu otroku kaj ne deluje?", text: "Povejte nam, kaj ga je oviralo, in si bomo ogledali.", tone: "dark" },
         { type: "contact" },
       ],
     },

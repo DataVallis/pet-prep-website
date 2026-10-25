@@ -20,6 +20,22 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               <img src="/brand/petprep-logo-horizontal-inverse.svg" alt="PetPrep" width={128} height={32} className="h-8 w-auto" />
             </Link>
             <p className="text-[15px] leading-relaxed">{dict.footer.tagline}</p>
+            {/* Accessibility badge (David 2026-10-23/25): only facts that are in the app, no "certified". */}
+            <Link
+              href={pathFor(locale, "accessibility")}
+              className="flex w-fit items-center gap-3 rounded-full border border-graphite-3 bg-white/5 py-2.5 pl-2.5 pr-4 hover:border-mint"
+            >
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-mint">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#121614" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="4.5" r="1.8" />
+                  <path d="M5 8.5l7 1.5 7-1.5M12 10v5M9 21l3-6 3 6" />
+                </svg>
+              </span>
+              <span className="flex flex-col">
+                <span className="text-[15px] font-semibold text-fog">{dict.footer.a11yBadge.title}</span>
+                <span className="text-[13px] leading-snug">{dict.footer.a11yBadge.text}</span>
+              </span>
+            </Link>
             <LanguageSwitcher label={dict.lang.label} dark />
           </div>
           <div className="flex flex-wrap gap-12 text-sm">
