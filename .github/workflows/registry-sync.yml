@@ -1,0 +1,114 @@
+name: Registry sync
+
+# The animal register follows the app by itself (David 2026-10-25). The pet-prep repo
+# (public) writes docs/research/breed-registry.json — availability "in the app" / "coming soon"
+# comes from its docs/research/app-release.json, which mobile-ota.yml records after every
+# production OTA (iOS or Android is enough). This job copies that export into
+# src/content/registry/registry.json when it differs, checks it exactly like CI (lint, build,
+# tsc — `next build` fails on missing words or portraits), commits it to main and dispatches
+# "CI & Deploy" (a push by GITHUB_TOKEN starts no workflow; a dispatch does).
+# No secret needed: pet-prep is public and GITHUB_TOKEN can read it.
+# When the check fails (a new breed needs words / a portrait first) it only warns: the website
+# breed PR (pet-prep ADD_BREED_RUNBOOK §9) then carries the registry.
+
+on:
+  schedule:
+    - cron: '17 * * * *'   # hourly; exits within seconds when nothing changed
+  workflow_dispatch:
+
+concurrency:
+  group: registry-sync
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # commit the synced registry to main
+  actions: write    # dispatch ci-deploy.yml
+
+jobs:
+  sync:
+    name: Sync the register from pet-prep
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      SOURCE_REPO: DataVallis/pet-prep
+      SOURCE_PATH: docs/research/breed-registry.json
+      TARGET: src/content/registry/registry.json
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Fetch the export from pet-prep main
+        id: fetch
+        run: |
+          set -euo pipefail
+          sha="$(gh api "repos/${SOURCE_REPO}/commits/main" --jq .sha)"
+          gh api -H 'Accept: application/vnd.github.raw' \
+            "repos/${SOURCE_REPO}/contents/${SOURCE_PATH}?ref=${sha}" > "$RUNNER_TEMP/registry.json"
+          # Never copy an error page or a different schema over the register.
+          node -e 'const r=JSON.parse(require("fs").readFileSync(process.argv[1],"utf8"));if(r.schema_version!==2||!Array.isArray(r.breeds)||r.breeds.length===0)throw new Error("unexpected export: schema "+r.schema_version)' "$RUNNER_TEMP/registry.json"
+          echo "sha=${sha}" >>"$GITHUB_OUTPUT"
+          if cmp -s "$RUNNER_TEMP/registry.json" "$TARGET"; then
+            echo "changed=false" >>"$GITHUB_OUTPUT"
+            echo "Register already matches ${SOURCE_REPO}@${sha:0:8}." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          # The website can be ahead of pet-prep main (a breed page merged from an export of an
+          # unmerged pet-prep branch): never drop a breed the site already shows.
+          missing="$(node -e 'const fs=require("fs");const ids=f=>new Set(JSON.parse(fs.readFileSync(f,"utf8")).breeds.map(b=>b.id));const n=ids(process.argv[1]);console.log([...ids(process.argv[2])].filter(i=>!n.has(i)).join(" "))' "$RUNNER_TEMP/registry.json" "$TARGET")"
+          if [ -n "$missing" ]; then
+            echo "changed=false" >>"$GITHUB_OUTPUT"
+            echo "::warning title=Register not synced::pet-prep main does not have these breeds yet: ${missing} — waiting for the pet-prep merge."
+            echo "- ⏸ Not synced: pet-prep main lacks ${missing}" >>"$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          cp "$RUNNER_TEMP/registry.json" "$TARGET"
+          echo "changed=true" >>"$GITHUB_OUTPUT"
+          node -e '
+            const fs=require("fs");const n=JSON.parse(fs.readFileSync(process.argv[1],"utf8"));
+            const o=JSON.parse(require("child_process").execFileSync("git",["show","HEAD:"+process.argv[2]],{maxBuffer:1<<28}));
+            const before=Object.fromEntries(o.breeds.map(b=>[b.id,b.availability]));
+            const flips=n.breeds.filter(b=>before[b.id]!==b.availability).map(b=>`${b.id}: ${before[b.id]??"new"} → ${b.availability}`);
+            console.log(`- Register differs from ${process.env.SOURCE_REPO}; availability changes: ${flips.length}`);
+            for (const f of flips) console.log(`  - ${f}`);
+          ' "$TARGET" "$TARGET" | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/setup-node@v4
+        if: steps.fetch.outputs.changed == 'true'
+        with:
+          node-version: '22'
+          cache: npm
+
+      # Same checks as the "Lint, types, build" job of ci-deploy.yml.
+      - name: Check the synced register (lint, build, types)
+        id: check
+        if: steps.fetch.outputs.changed == 'true'
+        continue-on-error: true
+        run: |
+          npm ci --no-audit --no-fund
+          npm run lint
+          npm run build
+          npx tsc --noEmit
+
+      - name: Needs a manual sync
+        if: steps.fetch.outputs.changed == 'true' && steps.check.outcome == 'failure'
+        run: |
+          echo "::warning title=Register not synced::The pet-prep export does not build here yet (new words in src/content/registry/{en,sl}.ts or a portrait in public/animals/ are missing). Sync it with the website breed PR — pet-prep docs/engineering/ADD_BREED_RUNBOOK.md §9."
+          echo "- ⚠️ Not synced: the export does not build yet — website breed PR needed (ADD_BREED_RUNBOOK §9)" >>"$GITHUB_STEP_SUMMARY"
+
+      - name: Commit to main and deploy
+        if: steps.fetch.outputs.changed == 'true' && steps.check.outcome == 'success'
+        env:
+          SHA: ${{ steps.fetch.outputs.sha }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$TARGET"
+          git commit -q -m "chore(register): sync breed registry from pet-prep ${SHA:0:8}"
+          # main may have moved during the build (a breed PR merged): replay on top, or retry next hour.
+          git pull -q --rebase origin main
+          git push -q origin HEAD:main
+          gh workflow run ci-deploy.yml --ref main
+          echo "- 🌐 Synced from \`${SOURCE_REPO}@${SHA:0:8}\`, committed to main, \"CI & Deploy\" dispatched" >>"$GITHUB_STEP_SUMMARY"
