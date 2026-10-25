@@ -310,6 +310,7 @@ const sl: RegistryCopy = {
       dna_bbs2_pra: "Test DNK za progresivno atrofijo mrežnice (BBS2-PRA)",
       dna_cnga1_pra: "Test DNK za progresivno atrofijo mrežnice (CNGA1-PRA)",
       dna_pra_rcd2: "Test DNK za progresivno atrofijo mrežnice (PRA-rcd2)",
+      dna_pra_rcd3: "Test DNK za progresivno atrofijo mrežnice (PRA-rcd3)",
       dna_gm1: "Test DNK za gangliozidozo GM1 (dedna bolezen živčevja)",
       dna_gm2: "Test DNK za gangliozidozo GM2 (dedna bolezen živčevja)",
       dna_vwd3: "Test DNK za von Willebrandovo bolezen tipa 3 (vWD3), dedno motnjo strjevanja krvi",
@@ -1002,6 +1003,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča več kot dve uri gibanja na dan, pravi, da je primeren za veliko hišo z velikim vrtom, da potrebuje nego dlake enkrat na teden in da mu dlaka izpada. PDSA piše, da je bloodhound primernejši za izkušene lastnike, da ga zaradi velikosti in zelo močnega lovskega nagona ne priporočajo za dom z manjšimi otroki ali manjšimi živalmi, da se slini in da morajo biti kožne gube čiste in suhe. Svetuje tudi premor med hranjenjem in gibanjem.",
       ],
       sources: ["S501", "S502", "S503"],
+    },
+    cardigan_welsh_corgi: {
+      aka: "Welsh corgi (cardigan), Cardi",
+      text: [
+        "Welsh corgi cardigan izvira iz Velike Britanije (FCI št. 38), kjer ga Royal Kennel Club opisuje kot tradicionalnega valižanskega goniča živine s kratkimi nogami in dolgim telesom; cardiganu rep nikoli niso kupirali. Standard AKC ga opisuje kot uravnovešenega, zvestega, ljubečega in prilagodljivega psa, ki ni nikoli plašen ali napadalen. Psi naj bi tehtali 30–38 funtov (približno 14–17 kg), psice 25–34 funtov (približno 11–15 kg); barve so vsi odtenki rdeče, soboljaste in tigraste, črna z rjavimi ali tigrastimi oznakami ali brez njih ter modro marmorirana (blue merle).",
+        "Royal Kennel Club priporoča do eno uro gibanja na dan, pravi, da je primeren za majhno hišo z majhnim ali srednje velikim vrtom, da potrebuje nego dlake večkrat na teden in da mu dlaka izpada. PDSA na strani za obe pasmi korgijev piše, da lahko otroke, ko tečejo, ščipa za pete, in da pomagata socializacija z otroki in šolanje že v mladosti; česanje dva- do trikrat na teden običajno zadošča.",
+      ],
+      sources: ["S513", "S515", "S517", "S206"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",

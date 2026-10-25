@@ -304,6 +304,7 @@ const en: RegistryCopy = {
       dna_bbs2_pra: "DNA test for progressive retinal atrophy (BBS2-PRA)",
       dna_cnga1_pra: "DNA test for progressive retinal atrophy (CNGA1-PRA)",
       dna_pra_rcd2: "DNA test for progressive retinal atrophy (PRA-rcd2)",
+      dna_pra_rcd3: "DNA test for progressive retinal atrophy (PRA-rcd3)",
       dna_gm1: "DNA test for GM1 gangliosidosis (an inherited disease of the nervous system)",
       dna_gm2: "DNA test for GM2 gangliosidosis (an inherited disease of the nervous system)",
       dna_vwd3: "DNA test for von Willebrand disease type 3 (vWD3), an inherited bleeding disorder",
@@ -985,6 +986,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends more than two hours of exercise a day, says the breed suits a large house with a large garden, needs grooming once a week and sheds. The PDSA says Bloodhounds are better suited to experienced owners, are not recommended for homes with smaller children or smaller pets because of their size and very high prey drive, drool, and need their skin folds kept clean and dry. It also advises leaving a gap between eating and exercising.",
       ],
       sources: ["S501", "S502", "S503"],
+    },
+    cardigan_welsh_corgi: {
+      aka: "Welsh Corgi (Cardigan), Cardi",
+      text: [
+        "The Cardigan Welsh Corgi comes from Great Britain (FCI No. 38), where the Royal Kennel Club calls it the traditional droving dog of Wales, short-legged and long-bodied; the Cardigan has always been undocked. The AKC standard describes an even-tempered, loyal, affectionate and adaptable dog, never shy nor vicious. Males are ideally 30–38 lb and females 25–34 lb; colours are all shades of red, sable and brindle, black with or without tan or brindle points, and blue merle.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day, says the breed suits a small house with a small or medium garden, needs grooming more than once a week and sheds. The PDSA, on its page for both corgi breeds, says they may nip at the heels of running children, and that socialisation with children and training at a young age can help; grooming two to three times a week is usually enough.",
+      ],
+      sources: ["S513", "S515", "S517", "S206"],
     },
     british_shorthair: {
       aka: "British Blue",
