@@ -223,6 +223,31 @@ const sl: RegistryCopy = {
       `Stranišče: odrasla mačka ga uporabi ${p.uses}-krat na dan; vsako uporabo je treba počistiti v ${p.scoop_hours} urah (zunaj tihih ur), ves pesek pa zamenjati vsakih ${p.change_days} dni.`,
     scratching_after_missed_play: () => "Po dnevu brez dovolj igre mačka enkrat nekaj spraska; otrok jo odnese na praskalnik.",
     grooming_rule: (p) => (p.per_week === 1 ? "Česanje enkrat na teden." : p.per_week === 2 ? "Česanje dvakrat na teden." : `Česanje ${p.per_week}-krat na teden.`),
+    no_walk_in_heat: (p) =>
+      `Poleti (junij–avgust; na južni polobli december–februar) otrokov zaslon in zaslon sprehoda med ${p.from} in ${p.to} po času družine mirno opozorita: v vročini brez sprehodov. Brez vremenskih podatkov, brez kazni — koraki se štejejo.`,
+    care_task: (p) => {
+      const q = p as unknown as { task: string; actor: string; times: number; period_days: number };
+      const task: Record<string, string> = {
+        fold_cleaning: "čiščenje kožnih gub",
+        tooth_brushing: "ščetkanje zob",
+        ear_cleaning: "pregled in čiščenje ušes",
+        nail_trim: "striženje krempljev",
+        bath: "kopanje",
+        groomer_visit: "obisk pri pasjem frizerju",
+      };
+      const what = task[q.task] ?? q.task.replace(/_/g, " ");
+      const weeks = q.period_days / 7;
+      const when =
+        q.period_days === 7 && q.times === 7
+          ? "vsak dan"
+          : q.times === 1 && q.period_days % 7 === 0
+            ? q.period_days === 7
+              ? "enkrat na teden"
+              : `${weeks === 2 ? "vsaka" : weeks <= 4 ? "vsake" : "vsakih"} ${weeks} ${form(weeks, "teden", "tedna", "tedne", "tednov")}`
+            : `${q.times}-krat vsakih ${q.period_days} dni`;
+      const who = q.actor === "parent" ? "opomnik za starša" : "naloga za otroka";
+      return `Nega: ${what} ${when} — ${who}.`;
+    },
   },
   checklist: {
     items: {
@@ -313,6 +338,8 @@ const sl: RegistryCopy = {
       dna_gm1: "Test DNK za gangliozidozo GM1 (dedna bolezen živčevja)",
       dna_gm2: "Test DNK za gangliozidozo GM2 (dedna bolezen živčevja)",
       dna_vwd3: "Test DNK za von Willebrandovo bolezen tipa 3 (vWD3), dedno motnjo strjevanja krvi",
+      dna_pra_rcd3: "Test DNK za progresivno atrofijo mrežnice (PRA-rcd3)",
+      dna_vwd2: "Test DNK za von Willebrandovo bolezen tipa 2 (vWD2), dedno motnjo strjevanja krvi",
       dna_hcm_mc: "Test DNK za hipertrofično kardiomiopatijo (MC HCM)",
       dna_sma: "Test DNK za spinalno mišično atrofijo (SMA)",
       dna_pk_def: "Test DNK za pomanjkanje piruvat-kinaze (PK def)",
@@ -1002,6 +1029,30 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča več kot dve uri gibanja na dan, pravi, da je primeren za veliko hišo z velikim vrtom, da potrebuje nego dlake enkrat na teden in da mu dlaka izpada. PDSA piše, da je bloodhound primernejši za izkušene lastnike, da ga zaradi velikosti in zelo močnega lovskega nagona ne priporočajo za dom z manjšimi otroki ali manjšimi živalmi, da se slini in da morajo biti kožne gube čiste in suhe. Svetuje tudi premor med hranjenjem in gibanjem.",
       ],
       sources: ["S501", "S502", "S503"],
+    },
+    akita: {
+      aka: "akita, American Akita, Great Japanese Dog",
+      text: [
+        "Akita v tem registru je ameriški tip: FCI jo vodi kot ameriško akito (»American Akita«), pasmo japonskega izvora, ločeno od japonske akite inu. Standard FCI opisuje velikega, čvrsto grajenega, uravnoteženega psa z močnimi kostmi, majhnimi pokončnimi uhlji in velikim repom, zavitim čez hrbet; psi so v vihru visoki 66–71 cm. Dovoljena je vsaka barva, na primer rdeča, rdečkasto plava, bela, lisasta ali tigrasta. PDSA navaja povprečno težo 31–59 kg.",
+        "PDSA opisuje izjemno zveste družinske pse, ki so samostojni in zelo veliki, zato so najprimernejši za izkušene lastnike; akite ne priporoča za dom z majhnimi otroki in odsvetuje, da bi jo puščali samo, ker mnoge tega ne prenašajo dobro. Priporoča vsaj dve uri gibanja vsak dan, socializacijo od mladih nog, premor med hranjenjem in gibanjem ter vsaj tedensko krtačenje — akiti dlaka močno izpada. Opozarja tudi na močan lovski nagon in na to, da se v zelo vročem vremenu lahko pregreje.",
+      ],
+      sources: ["S506", "S507", "S508"],
+    },
+    cardigan_welsh_corgi: {
+      aka: "Welsh Corgi (Cardigan), cardi, valižanski korgi",
+      text: [
+        "Welsh corgi cardigan izvira iz Velike Britanije; FCI ga uvršča med goniče goveda. Standard ameriškega kinološkega kluba (AKC) navaja višino 10,5–12,5 palca (približno 27–32 cm) v vihru in idealno težo psov 30–38 funtov (približno 14–17 kg). Za razliko od bratranca pembroka ima dolg, košat rep.",
+        "Royal Kennel Club priporoča do eno uro gibanja na dan, kot dovolj navaja majhno hišo z majhnim ali srednjim vrtom, pravi, da potrebuje nego dlake večkrat na teden in da mu dlaka izpada; življenjska doba je po njegovih podatkih več kot 12 let, cardigan pa je na seznamu ogroženih britanskih pasem. PDSA piše, da valižanski korgiji radi ugajajo, zato je šolanje razmeroma lahko, da navadno zadostuje krtačenje dva- do trikrat na teden in da lahko tekajoče otroke ščipnejo v pete — pomagata socializacija z otroki in šolanje v mladosti.",
+      ],
+      sources: ["S206", "S513", "S515", "S517"],
+    },
+    german_wirehaired_pointer: {
+      aka: "Deutsch Drahthaar, drahthaar, GWP",
+      text: [
+        "Nemški ostrodlaki ptičar izvira iz Nemčije; FCI ga vodi kot »Deutsch Drahthaar« med celinskimi ptičarji. Standard Royal Kennel Cluba opisuje srednje velikega lovskega psa z ostro dlako, ki v celoti pokriva kožo — nežnega, ljubečega in umirjenega, pozornega, vodljivega in zelo zvestega. Psi so visoki 60–67 cm in tehtajo 25–34 kg, psice 56–62 cm in 20,5–29 kg. Standardne barve so rjavo-bela, enobarvno rjava in črno-bela.",
+        "Royal Kennel Club priporoča več kot dve uri gibanja na dan, pravi, da je primeren za veliko hišo z velikim vrtom na podeželju, da potrebuje nego dlake večkrat na teden in da mu dlaka izpada. PetMD piše, da potrebuje veliko gibanja in miselnih izzivov, da se tesno naveže na družino in je ob zgodnjem šolanju in socializaciji lahko odličen družinski pes, da se dobro razume z otroki, ki znajo ravnati z živalmi, da ga nikoli ne smemo dolgo puščati samega in da ima močan lovski nagon. Dlako dvakrat na leto ročno trimajo.",
+      ],
+      sources: ["S519", "S521", "S522", "S524"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",

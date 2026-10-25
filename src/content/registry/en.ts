@@ -214,6 +214,30 @@ const en: RegistryCopy = {
       `Litter box: an adult cat uses it ${p.uses} times a day; each use is scooped within ${p.scoop_hours} hours (outside quiet hours), and all the litter is changed every ${p.change_days} days.`,
     scratching_after_missed_play: () => "After a day without enough play the cat scratches something once; the child carries it to the scratching post.",
     grooming_rule: (p) => (p.per_week === 1 ? "Combing once a week." : p.per_week === 2 ? "Combing twice a week." : `Combing ${p.per_week} times a week.`),
+    no_walk_in_heat: (p) =>
+      `In summer (June–August; December–February in the southern hemisphere) the child and walk screens show a calm reminder between ${p.from} and ${p.to} family time: no walks in the heat. No weather data, no penalty — steps still count.`,
+    care_task: (p) => {
+      const q = p as unknown as { task: string; actor: string; times: number; period_days: number };
+      const task: Record<string, string> = {
+        fold_cleaning: "cleaning the skin folds",
+        tooth_brushing: "brushing the teeth",
+        ear_cleaning: "checking and cleaning the ears",
+        nail_trim: "trimming the nails",
+        bath: "a bath",
+        groomer_visit: "a visit to the groomer",
+      };
+      const what = task[q.task] ?? q.task.replace(/_/g, " ");
+      const when =
+        q.period_days === 7 && q.times === 7
+          ? "every day"
+          : q.times === 1 && q.period_days % 7 === 0
+            ? q.period_days === 7
+              ? "once a week"
+              : `every ${q.period_days / 7} weeks`
+            : `${q.times} ${s(q.times, "time", "times")} every ${q.period_days} days`;
+      const who = q.actor === "parent" ? "a reminder for the parent" : "a task for the child";
+      return `Care: ${what} ${when} — ${who}.`;
+    },
   },
   checklist: {
     items: {
@@ -307,6 +331,8 @@ const en: RegistryCopy = {
       dna_gm1: "DNA test for GM1 gangliosidosis (an inherited disease of the nervous system)",
       dna_gm2: "DNA test for GM2 gangliosidosis (an inherited disease of the nervous system)",
       dna_vwd3: "DNA test for von Willebrand disease type 3 (vWD3), an inherited bleeding disorder",
+      dna_pra_rcd3: "DNA test for progressive retinal atrophy (PRA-rcd3)",
+      dna_vwd2: "DNA test for von Willebrand disease type 2 (vWD2), an inherited bleeding disorder",
     },
   },
   health: {
@@ -985,6 +1011,30 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends more than two hours of exercise a day, says the breed suits a large house with a large garden, needs grooming once a week and sheds. The PDSA says Bloodhounds are better suited to experienced owners, are not recommended for homes with smaller children or smaller pets because of their size and very high prey drive, drool, and need their skin folds kept clean and dry. It also advises leaving a gap between eating and exercising.",
       ],
       sources: ["S501", "S502", "S503"],
+    },
+    akita: {
+      aka: "American Akita, Great Japanese Dog",
+      text: [
+        "The Akita in this register is the American type: the FCI lists it as the American Akita, a breed of Japanese origin, separate from the Japanese Akita Inu. The FCI standard describes a large, sturdily built, well-balanced dog with much substance and heavy bone, small erect ears and a large tail carried over the back; males stand 66–71 cm at the withers. Any colour is allowed, such as red, fawn, white, pinto or brindle. The PDSA gives an average weight of 31–59 kg.",
+        "The PDSA describes incredibly loyal family pets that are independent and very large, so they do best with experienced owners; it would not recommend an Akita for a home with young children and advises against leaving them alone, as many do not cope well with it. It recommends at least two hours of exercise every day, socialisation from a young age, a gap between eating and exercising, and at least a weekly brush — Akitas shed a lot. It also notes a high prey drive and that they can overheat in very hot weather.",
+      ],
+      sources: ["S506", "S507", "S508"],
+    },
+    cardigan_welsh_corgi: {
+      aka: "Welsh Corgi (Cardigan), Cardi",
+      text: [
+        "The Cardigan Welsh Corgi comes from Great Britain; the FCI lists it among the cattle dogs. The American Kennel Club standard gives a height of 10.5–12.5 inches (about 27–32 cm) at the withers and an ideal weight of 30–38 pounds (about 14–17 kg) for dogs. Unlike its cousin the Pembroke, it has a long, full tail.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day, lists a small house with a small or medium garden as enough, and says the breed needs grooming more than once a week and sheds; it gives a lifespan of over 12 years and lists the Cardigan as a vulnerable native breed. The PDSA says Welsh Corgis are willing to please, so training should be fairly easy, that two to three brushes a week are usually enough, and that they may nip at the heels of running children — socialisation with children and training at a young age help.",
+      ],
+      sources: ["S206", "S513", "S515", "S517"],
+    },
+    german_wirehaired_pointer: {
+      aka: "Deutsch Drahthaar, GWP",
+      text: [
+        "The German Wirehaired Pointer comes from Germany; the FCI lists it as the Deutsch Drahthaar among the continental pointing dogs. The Royal Kennel Club standard describes a medium-sized hunting dog with wire hair completely covering the skin — gentle, affectionate and even tempered, alert, biddable and very loyal. Dogs stand 60–67 cm and weigh 25–34 kg; bitches stand 56–62 cm and weigh 20.5–29 kg. Liver and white, solid liver and black and white are the standard colours.",
+        "The Royal Kennel Club recommends more than two hours of exercise a day, says it suits a large house with a large garden in the country, needs grooming more than once a week and sheds. PetMD says GWPs need lots of exercise and mental stimulation, form a close bond with their family and can make great family dogs when trained and socialised early, do well with children who have been taught how to behave with animals, should never be left alone for long periods, and have a high prey drive. The coat is hand-stripped twice a year.",
+      ],
+      sources: ["S519", "S521", "S522", "S524"],
     },
     british_shorthair: {
       aka: "British Blue",
