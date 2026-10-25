@@ -10,14 +10,16 @@ import { breedHref, speciesHref } from "@/lib/registry/views";
  *   species:<id>       → species catalogue               e.g. [Dogs](species:dog)
  *   breed:<id>         → breed page                      e.g. [Border Collie](breed:border_collie)
  *   /path or https://… → used as is; any ref may end in #anchor
+ * External links (https://…) open in a new tab; prefix any other ref with "+" to open it in a new
+ * tab too, e.g. [Labrador Retriever](+breed:labrador_retriever) (David 2026-10-25, /meet-curio).
  * An unknown ref fails the build, so a renamed breed or page cannot leave a dead link.
  */
 const LINK = /\[([^\]]+)\]\(([^)\s]+)\)/g;
 
-export type TextPart = string | { label: string; href: string };
+export type TextPart = string | { label: string; href: string; newTab: boolean };
 
 export function resolveRef(locale: Locale, refWithHash: string): string {
-  const [ref, hash] = refWithHash.split("#");
+  const [ref, hash] = refWithHash.replace(/^\+/, "").split("#");
   const path = resolvePath(locale, ref);
   return hash ? `${path}#${hash}` : path;
 }
@@ -40,7 +42,8 @@ export function parseLinks(locale: Locale, text: string): TextPart[] {
   let last = 0;
   for (const m of text.matchAll(LINK)) {
     if (m.index > last) out.push(text.slice(last, m.index));
-    out.push({ label: m[1], href: resolveRef(locale, m[2]) });
+    const href = resolveRef(locale, m[2]);
+    out.push({ label: m[1], href, newTab: m[2].startsWith("+") || href.startsWith("https://") });
     last = m.index + m[0].length;
   }
   if (last < text.length) out.push(text.slice(last));

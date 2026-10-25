@@ -1083,7 +1083,7 @@ const sl: Dictionary = {
               label: "V aplikaciji · slika AI",
               tone: "mint",
               title: "Vaš ljubljenček v PetPrepu",
-              text: "Realistična simulacija prave pasme z umetno inteligenco — na primer [labradorca](breed:labrador_retriever) — z vsakodnevnimi potrebami prave živali: obroki, voda, sprehodi, šteti v pravih korakih, čiščenje in šolanje. Poglejte, [kako deluje](page:howItWorks).",
+              text: "Realistična simulacija prave pasme z umetno inteligenco — na primer [labradorca](+breed:labrador_retriever) — z vsakodnevnimi potrebami prave živali: obroki, voda, sprehodi, šteti v pravih korakih, čiščenje in šolanje. Poglejte, [kako deluje](+page:howItWorks).",
             },
           ],
         },

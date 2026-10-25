@@ -1085,7 +1085,7 @@ const en: Dictionary = {
               label: "In the app · AI image",
               tone: "mint",
               title: "Your pet in PetPrep",
-              text: "A lifelike AI simulation of a real breed — like this [Labrador Retriever](breed:labrador_retriever) — with a real animal's daily needs: meals, water, walks counted in real steps, cleaning and training. See [how it works](page:howItWorks).",
+              text: "A lifelike AI simulation of a real breed — like this [Labrador Retriever](+breed:labrador_retriever) — with a real animal's daily needs: meals, water, walks counted in real steps, cleaning and training. See [how it works](+page:howItWorks).",
             },
           ],
         },
