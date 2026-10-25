@@ -13,8 +13,9 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   return (
     <footer className="on-dark bg-graphite text-muted-dark">
       <div className="container-page flex flex-col gap-10 pb-10 pt-14">
-        <div className="flex flex-wrap justify-between gap-10">
-          <div className="flex max-w-xs flex-col gap-4">
+        {/* Even grid: brand column + one column per link group (David 2026-10-25: no empty middle). */}
+        <div className="grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-[minmax(0,1.5fr)_repeat(3,minmax(0,1fr))] lg:gap-x-10">
+          <div className="col-span-2 flex max-w-sm flex-col gap-5 lg:col-span-1">
             <Link href={pathFor(locale, "home")} aria-label={`PetPrep — ${dict.nav.home}`}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/brand/petprep-logo-horizontal-inverse.svg" alt="PetPrep" width={128} height={32} className="h-8 w-auto" />
@@ -36,9 +37,15 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                 <span className="text-[13px] leading-snug">{dict.footer.a11yBadge.text}</span>
               </span>
             </Link>
-            <LanguageSwitcher label={dict.lang.label} dark />
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+              <LanguageSwitcher label={dict.lang.label} dark />
+              <span className="flex gap-4 text-sm">
+                <a href={site.social.tiktok} target="_blank" rel="noopener noreferrer" className="hover:text-fog">TikTok</a>
+                <a href={site.social.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-fog">Instagram</a>
+              </span>
+            </div>
           </div>
-          <div className="flex flex-wrap gap-12 text-sm">
+          <div className="contents text-sm">
             {dict.footer.groups.map((g) => (
               <nav key={g.title} aria-label={g.title} className="flex flex-col gap-2.5">
                 <h2 className="font-semibold text-fog">{g.title}</h2>
