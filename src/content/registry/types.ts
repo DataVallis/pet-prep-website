@@ -150,6 +150,8 @@ export type RegistryCopy = {
     /** per portrait kind: "ai_photo" (current) or "ai_illustration" (older exports) */
     portraitAlt: Record<PortraitKind, (name: string) => string>;
     portraitCaption: Record<PortraitKind, string>;
+    /** Coat colour selector under the portrait (M5-R11-08): group legend and the alt text per colour. */
+    portraitColours: { legend: string; alt: Record<PortraitKind, (name: string, colour: string) => string> };
     /** Share button + popover on a breed page. */
     share: {
       button: string;

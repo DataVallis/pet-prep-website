@@ -517,6 +517,10 @@ const en: RegistryCopy = {
     glanceNote: "Key facts from the sources at the bottom of the page. Where sources differ, each value is listed.",
     portraitAlt: { ai_photo: (name) => `${name} — photo (AI)`, ai_illustration: (name) => `${name} — illustration (AI)` },
     portraitCaption: { ai_photo: "AI-generated photo", ai_illustration: "AI-generated illustration" },
+    portraitColours: {
+      legend: "Coat colour",
+      alt: { ai_photo: (name, colour) => `${name}, ${colour} — photo (AI)`, ai_illustration: (name, colour) => `${name}, ${colour} — illustration (AI)` },
+    },
     share: {
       button: "Share",
       title: "Share this breed",
