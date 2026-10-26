@@ -340,6 +340,7 @@ const sl: RegistryCopy = {
       dna_vwd3: "Test DNK za von Willebrandovo bolezen tipa 3 (vWD3), dedno motnjo strjevanja krvi",
       dna_pra_rcd3: "Test DNK za progresivno atrofijo mrežnice (PRA-rcd3)",
       dna_vwd2: "Test DNK za von Willebrandovo bolezen tipa 2 (vWD2), dedno motnjo strjevanja krvi",
+      dna_l2hga: "Test DNK za L-2-hidroksiglutarno acidurijo (L-2-HGA), dedno presnovno bolezen živčevja",
       dna_hcm_mc: "Test DNK za hipertrofično kardiomiopatijo (MC HCM)",
       dna_sma: "Test DNK za spinalno mišično atrofijo (SMA)",
       dna_pk_def: "Test DNK za pomanjkanje piruvat-kinaze (PK def)",
@@ -408,6 +409,7 @@ const sl: RegistryCopy = {
     wobbler_syndrome: "Pri pasmi se lahko pojavi sindrom wobbler: nestabilna vratna vretenca pritiskajo na hrbtenjačo in oslabijo zadnje noge.",
     eye_phpv: "Pri pasmi se lahko pojavi prirojena okvara očesa (persistentni hiperplastični primarni steklovinec, PHPV); vzrediteljem priporočajo pregled oči staršev.",
     certain_cancers: "Pri pasmi se lahko pojavijo nekatere vrste raka.",
+    l2hga_nervous_system: "Pri pasmi se lahko pojavi L-2-hidroksiglutarna acidurija (L-2-HGA), dedna presnovna motnja, ki prizadene živčevje; za starše je na voljo test DNK.",
     short_face_breathing: "Zmerno kratkoglava pasma: nekateri psi s krajšim gobčkom imajo lahko resne težave z dihanjem (brahicefalni obstruktivni sindrom dihalnih poti, BOAS).",
     corneal_ulcers: "Zaradi oblike lobanje in izbočenih oči so pogostejše težave z očmi, kot je razjeda roženice; očesni pregled je na voljo.",
     skin_folds_allergies: "Pojavijo se lahko kožne težave, kot so alergije, bradavice, kožni izrastki in vnete kožne gube na obrazu (dermatitis kožnih gub); gube na obrazu naj bodo čiste in suhe.",
@@ -1061,6 +1063,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča do eno uro gibanja na dan, pravi, da je primeren za veliko hišo z velikim vrtom, da potrebuje nego dlake večkrat na teden, da mu dlaka izpada in da običajno živi manj kot deset let. PDSA piše, da bernardinci najraje preživljajo čas z družino in se odlično razumejo z ljudmi vseh starosti, tudi z otroki, da jih je treba kot mladičke dobro socializirati, da jih je treba počesati vsaj trikrat na teden, da se slinijo, da slabše prenašajo vročino in da morajo po obroku nekaj časa počakati, preden gredo na sprehod. PetMD dodaja, da se lahko pri teh na ljudi navezanih psih razvije ločitvena tesnoba, če jih dolgo puščamo same.",
       ],
       sources: ["S527", "S528", "S529", "S532", "S533"],
+    },
+    staffordshire_bull_terrier: {
+      aka: "staffie, staffy, stafford, staffordshirski bulterier",
+      text: [
+        "Stafordširski bulterier izvira iz Velike Britanije; FCI ga uvršča med terierje bulterierskega tipa. Standard FCI opisuje gladkodlakega, uravnoteženega psa, ki je za svojo velikost zelo močan — po tradiciji izjemno pogumen in vztrajen, zelo inteligenten in ljubeč, posebej z otroki. Visok je 35,5–40,5 cm; psi tehtajo 12,7–17 kg, psice 11–15,4 kg. Je tigrast, rdeč, plav, črn, moder ali bel, sam ali z belo.",
+        "Royal Kennel Club ga imenuje čudovit družinski pes in priporoča do eno uro gibanja na dan; potrebuje nego dlake enkrat na teden, dlaka mu izpada in običajno živi več kot 12 let. PDSA piše, da so »staffiji« do otrok potrpežljivi in prijazni, a ker so zelo navezani na ljudi, so znani po ločitveni tesnobi, ko ostanejo sami, znani so tudi po grizenju stvari, in zaradi zelo močnega lovskega nagona manjše živali v njihovi bližini niso dobra ideja.",
+      ],
+      sources: ["S536", "S537", "S538", "S540"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
