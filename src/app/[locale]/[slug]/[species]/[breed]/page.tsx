@@ -14,6 +14,7 @@ import { StoreButtons } from "@/components/Cta";
 import { Cite, FactList, TagChips } from "@/components/registry/Facts";
 import { CompareView } from "@/components/registry/CompareView";
 import { ShareButton } from "@/components/registry/ShareButton";
+import { PortraitColours } from "@/components/registry/PortraitColours";
 import { absoluteUrl } from "@/lib/site";
 
 export const dynamicParams = false;
@@ -73,6 +74,9 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[
     image,
   });
 }
+
+const portraitFigure = "-mt-4 mb-12 flex max-w-xl flex-col gap-2 sm:mb-14";
+const portraitSizes = "(min-width: 640px) 576px, calc(100vw - 40px)";
 
 function Card({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -210,15 +214,26 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
           </div>
         </header>
 
-        {v.portrait ? (
-          <figure className="-mt-4 mb-12 flex max-w-xl flex-col gap-2 sm:mb-14">
+        {v.portrait?.colours ? (
+          <PortraitColours
+            colours={v.portrait.colours.items}
+            defaultKey={v.portrait.colours.defaultKey}
+            legend={v.portrait.colours.legend}
+            caption={v.portrait.caption}
+            width={v.portrait.width}
+            height={v.portrait.height}
+            sizes={portraitSizes}
+            className={portraitFigure}
+          />
+        ) : v.portrait ? (
+          <figure className={portraitFigure}>
             <Image
               src={v.portrait.src}
               width={v.portrait.width}
               height={v.portrait.height}
               alt={v.portrait.alt}
-              priority
-              sizes="(min-width: 640px) 576px, calc(100vw - 40px)"
+              preload
+              sizes={portraitSizes}
               className="h-auto w-full rounded-[22px] bg-white ring-1 ring-line"
             />
             <figcaption className="text-[13px] text-muted">{v.portrait.caption}</figcaption>

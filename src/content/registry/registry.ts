@@ -95,7 +95,16 @@ export type Breed = {
 /** `ai_photo` = realistic AI photo (David 2026-10-10, M5-R11-05); `ai_illustration` = older exports, still read. */
 export type PortraitKind = "ai_photo" | "ai_illustration";
 
-export type Portrait = { file: string; width: number; height: number; kind: PortraitKind };
+/**
+ * One standard coat colour of a breed's portrait (M5-R11-08, David 2026-10-26): `file` is the AI image of that
+ * colour, same size as the portrait, e.g. "dog/border-collie--red-white.webp" (the pet-prep output path) or
+ * "border-collie--red-white.webp"; both resolve to public/animals/<species EN slug>/<file name>. `default` marks
+ * the colour of the main portrait (else the first one).
+ */
+export type PortraitColour = { key: string; label: Localized; file: string; default?: true };
+
+/** `colours` is optional: absent (older exports) or fewer than two → the page shows only the portrait. */
+export type Portrait = { file: string; width: number; height: number; kind: PortraitKind; colours?: PortraitColour[] };
 
 export type Species = {
   id: string;

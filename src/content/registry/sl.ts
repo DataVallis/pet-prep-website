@@ -534,6 +534,10 @@ const sl: RegistryCopy = {
     glanceNote: "Ključna dejstva iz virov na dnu strani. Kjer se viri razlikujejo, je navedena vsaka vrednost.",
     portraitAlt: { ai_photo: (name) => `${name} — fotografija (AI)`, ai_illustration: (name) => `${name} — ilustracija (AI)` },
     portraitCaption: { ai_photo: "Fotografija, ustvarjena z AI", ai_illustration: "Ilustracija, ustvarjena z AI" },
+    portraitColours: {
+      legend: "Barva dlake",
+      alt: { ai_photo: (name, colour) => `${name}, ${colour} — fotografija (AI)`, ai_illustration: (name, colour) => `${name}, ${colour} — ilustracija (AI)` },
+    },
     share: {
       button: "Deli",
       title: "Deli to pasmo",

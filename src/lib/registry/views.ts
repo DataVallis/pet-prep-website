@@ -17,6 +17,7 @@ import {
   type Breed,
   type ChecklistLevel,
   type Portrait,
+  type PortraitColour,
   type PortraitKind,
   type FactItem,
   type Range,
@@ -64,12 +65,27 @@ export function formatDay(locale: Locale, iso: string): string {
 
 const PORTRAIT_KINDS: readonly PortraitKind[] = ["ai_photo", "ai_illustration"];
 
-export type PortraitView = { src: string; width: number; height: number; alt: string; caption: string };
+/** One coat colour of the portrait, ready for the colour selector (M5-R11-08). */
+export type PortraitColourView = { key: string; label: string; src: string; alt: string };
 
-/** Public path of a portrait: public/animals/<species EN slug>/<file>. */
-/** Public path of a portrait file (no query) — used for the build-time existence check. */
-function portraitPath(b: Breed, p: Portrait): string {
-  return `/animals/${getSpecies(b.species).slug.en}/${p.file}`;
+export type PortraitView = {
+  src: string;
+  width: number;
+  height: number;
+  alt: string;
+  caption: string;
+  /** Standard coat colours (two or more) with the default first-selected key; absent → portrait only. */
+  colours?: { items: PortraitColourView[]; defaultKey: string; legend: string };
+};
+
+/**
+ * Public path of a portrait file (no query) — used for the build-time existence check:
+ * public/animals/<species EN slug>/<file name>. A leading "<species id>/" (the pet-prep output path of
+ * colour variants, "dog/border-collie--red-white.webp") is dropped, so both spellings map to the same folder.
+ */
+function portraitPath(b: Breed, file: string): string {
+  const name = file.startsWith(`${b.species}/`) ? file.slice(b.species.length + 1) : file;
+  return `/animals/${getSpecies(b.species).slug.en}/${name}`;
 }
 
 const portraitVersions = new Map<string, string>();
@@ -79,33 +95,74 @@ const portraitVersions = new Map<string, string>();
  * so without it browsers and the image optimizer keep showing the old picture
  * (David 2026-10-10: the Maine Coon photo did not change after the switch to photos).
  */
-export function portraitSrc(b: Breed, p: Portrait): string {
-  const path = portraitPath(b, p);
+function versionedSrc(b: Breed, file: string): string {
+  const path = portraitPath(b, file);
   let v = portraitVersions.get(path);
   if (v === undefined) {
-    const file = join(process.cwd(), "public", path);
-    v = existsSync(file) ? createHash("sha256").update(readFileSync(file)).digest("hex").slice(0, 12) : "";
+    const abs = join(process.cwd(), "public", path);
+    v = existsSync(abs) ? createHash("sha256").update(readFileSync(abs)).digest("hex").slice(0, 12) : "";
     portraitVersions.set(path, v);
   }
   return v ? `${path}?v=${v}` : path;
+}
+
+export function portraitSrc(b: Breed, p: Portrait): string {
+  return versionedSrc(b, p.file);
+}
+
+/** The colours shown by the selector: only when the export lists two or more; the default one first-selected. */
+function colourList(p: Portrait): { list: PortraitColour[]; defaultKey: string } | null {
+  const list = p.colours ?? [];
+  if (list.length < 2) return null;
+  return { list, defaultKey: (list.find((c) => c.default) ?? list[0]).key };
 }
 
 function portraitView(locale: Locale, b: Breed): PortraitView | null {
   const p = b.portrait;
   if (!p) return null;
   const c = copies[locale];
-  return { src: portraitSrc(b, p), width: p.width, height: p.height, alt: c.page.portraitAlt[p.kind](b.name[locale]), caption: c.page.portraitCaption[p.kind] };
+  const name = b.name[locale];
+  const view: PortraitView = { src: portraitSrc(b, p), width: p.width, height: p.height, alt: c.page.portraitAlt[p.kind](name), caption: c.page.portraitCaption[p.kind] };
+  const cl = colourList(p);
+  if (cl) {
+    view.colours = {
+      defaultKey: cl.defaultKey,
+      legend: c.page.portraitColours.legend,
+      items: cl.list.map((col) => ({
+        key: col.key,
+        label: col.label[locale],
+        src: versionedSrc(b, col.file),
+        alt: c.page.portraitColours.alt[p.kind](name, col.label[locale]),
+      })),
+    };
+  }
+  return view;
 }
+
+const PLAIN_IMAGE = /^[\w.-]+\.(webp|avif|png|jpe?g)$/;
 
 /** Fails the build for a portrait that is not a labelled AI photo / illustration or whose file is missing. */
 function checkPortrait(b: Breed) {
   const p = b.portrait;
   if (!p) return;
   if (!PORTRAIT_KINDS.includes(p.kind)) throw new Error(`registry: ${b.id}.portrait.kind must be one of ${PORTRAIT_KINDS.join(", ")}`);
-  if (!/^[\w.-]+\.(webp|avif|png|jpe?g)$/.test(p.file)) throw new Error(`registry: ${b.id}.portrait.file "${p.file}" is not a plain image file name`);
+  if (!PLAIN_IMAGE.test(p.file)) throw new Error(`registry: ${b.id}.portrait.file "${p.file}" is not a plain image file name`);
   if (!(p.width > 0 && p.height > 0)) throw new Error(`registry: ${b.id}.portrait needs width and height`);
-  const file = join(process.cwd(), "public", portraitPath(b, p));
-  if (!existsSync(file)) throw new Error(`registry: ${b.id}.portrait file is missing: public${portraitPath(b, p)}`);
+  const file = join(process.cwd(), "public", portraitPath(b, p.file));
+  if (!existsSync(file)) throw new Error(`registry: ${b.id}.portrait file is missing: public${portraitPath(b, p.file)}`);
+  if (p.colours === undefined) return;
+  if (!Array.isArray(p.colours)) throw new Error(`registry: ${b.id}.portrait.colours must be a list`);
+  const keys = new Set<string>();
+  for (const col of p.colours) {
+    const at = `${b.id}.portrait.colours[${col.key}]`;
+    if (!col.key || keys.has(col.key)) throw new Error(`registry: ${at} needs a unique key`);
+    keys.add(col.key);
+    if (!col.label?.en?.trim() || !col.label?.sl?.trim()) throw new Error(`registry: ${at} needs label.en and label.sl`);
+    const name = col.file.startsWith(`${b.species}/`) ? col.file.slice(b.species.length + 1) : col.file;
+    if (!PLAIN_IMAGE.test(name)) throw new Error(`registry: ${at}.file "${col.file}" is not "<file>" or "${b.species}/<file>"`);
+    if (!existsSync(join(process.cwd(), "public", portraitPath(b, col.file)))) throw new Error(`registry: ${at} file is missing: public${portraitPath(b, col.file)}`);
+  }
+  if (p.colours.filter((col) => col.default).length > 1) throw new Error(`registry: ${b.id}.portrait.colours has more than one default`);
 }
 
 // ─── words for registry values ───────────────────────────────────────────────
