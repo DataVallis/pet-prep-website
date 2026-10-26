@@ -1054,6 +1054,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S536", "S537", "S538", "S540"],
     },
+    airedale_terrier: {
+      aka: "King of Terriers, Waterside Terrier, Bingley Terrier",
+      text: [
+        "The Airedale Terrier comes from Great Britain; the FCI lists it among the large and medium-sized terriers. The FCI standard calls it the largest of the terriers — a muscular, active, fairly cobby dog that is outgoing and confident, friendly, courageous and intelligent, alert at all times, not aggressive but fearless. Males stand about 58–61 cm and females about 56–59 cm. Its hard, dense, wiry coat is tan with a black or grizzle saddle.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day; the coat needs grooming every day, does not shed and the breed usually lives over 10 years. PetMD describes great family dogs that, if trained well, generally get along with children, but should not be left to their own devices for too long; it advises brushing a few times a week, a quick ear clean every week and a professional groomer three or four times a year.",
+      ],
+      sources: ["S545", "S546", "S547", "S549"],
+    },
     british_shorthair: {
       aka: "British Blue",
       text: [

@@ -1072,6 +1072,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S536", "S537", "S538", "S540"],
     },
+    airedale_terrier: {
+      aka: "kralj terierjev, airedale terier, erdelterier",
+      text: [
+        "Airedalski terier izvira iz Velike Britanije; FCI ga uvršča med velike in srednje velike terierje. Standard FCI ga imenuje največji med terierji — mišičast, dejaven, precej čokat pes, ki je odprt in samozavesten, prijazen, pogumen in inteligenten, vedno pozoren, ne napadalen, a neustrašen. Psi so visoki okoli 58–61 cm, psice okoli 56–59 cm. Trda, gosta, žimnata dlaka je rjava s črnim ali sivim sedlom.",
+        "Royal Kennel Club priporoča do eno uro gibanja na dan; dlaka potrebuje nego vsak dan, ne izpada, pasma pa običajno živi več kot 10 let. PetMD ga opisuje kot odličnega družinskega psa, ki se ob dobri vzgoji praviloma razume z otroki, a ga ne smete predolgo pustiti samega sebi; svetuje česanje nekajkrat na teden, hitro čiščenje ušes vsak teden in obisk pasjega frizerja trikrat ali štirikrat na leto.",
+      ],
+      sources: ["S545", "S546", "S547", "S549"],
+    },
     british_shorthair: {
       aka: "britanka, British Blue",
       text: [
