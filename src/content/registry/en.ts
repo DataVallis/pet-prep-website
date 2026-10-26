@@ -333,6 +333,7 @@ const en: RegistryCopy = {
       dna_vwd3: "DNA test for von Willebrand disease type 3 (vWD3), an inherited bleeding disorder",
       dna_pra_rcd3: "DNA test for progressive retinal atrophy (PRA-rcd3)",
       dna_vwd2: "DNA test for von Willebrand disease type 2 (vWD2), an inherited bleeding disorder",
+      dna_l2hga: "DNA test for L-2-hydroxyglutaric aciduria (L-2-HGA), an inherited metabolic disease of the nervous system",
     },
   },
   health: {
@@ -390,6 +391,7 @@ const en: RegistryCopy = {
     wobbler_syndrome: "Wobbler syndrome, where unstable bones in the neck press on the spinal cord and weaken the back legs, can occur in the breed.",
     eye_phpv: "An eye defect that is present from birth (persistent hyperplastic primary vitreous, PHPV) can occur in the breed; breeders are advised to have the parents' eyes tested.",
     certain_cancers: "Certain cancers can occur in the breed.",
+    l2hga_nervous_system: "L-2-hydroxyglutaric aciduria (L-2-HGA), an inherited metabolic disorder that affects the nervous system, can occur in the breed; a DNA test of the parents is available.",
     short_face_breathing: "A moderately short-faced breed: some dogs with shorter faces can have serious breathing problems (brachycephalic obstructive airway syndrome, BOAS).",
     corneal_ulcers: "Eye problems such as corneal ulcers are more likely because of the skull shape and prominent eyes; eye testing is available.",
     skin_folds_allergies: "Skin problems such as allergies, warts, skin tags and sore skin folds on the face (skin fold dermatitis) can occur; the face folds should be kept clean and dry.",
@@ -1043,6 +1045,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to an hour of exercise a day, says the breed suits a large house with a large garden, needs grooming more than once a week, sheds and usually lives under ten years. The PDSA says Saint Bernards love being with a family and are great with people of all ages, including children, should be well socialised as puppies, need brushing at least three times a week, drool, do not do as well in the heat, and need a gap between eating and exercising. PetMD adds that these people-oriented dogs can develop separation anxiety if they are left alone for long periods.",
       ],
       sources: ["S527", "S528", "S529", "S532", "S533"],
+    },
+    staffordshire_bull_terrier: {
+      aka: "Staffie, Staffy, Stafford",
+      text: [
+        "The Staffordshire Bull Terrier comes from Great Britain; the FCI lists it among the bull-type terriers. The FCI standard describes a smooth-coated, well-balanced dog of great strength for its size — traditionally of indomitable courage and tenacity, highly intelligent and affectionate, especially with children. It stands 35.5–40.5 cm; males weigh 12.7–17 kg and females 11–15.4 kg. It comes in brindle, red, fawn, black, blue or white, alone or with white.",
+        "The Royal Kennel Club calls it a wonderful family pet and recommends up to an hour of exercise a day; it needs grooming once a week, sheds and usually lives over 12 years. The PDSA says Staffies are tolerant and sweet-natured towards children, but as people-orientated dogs they are known to suffer with separation anxiety when left alone, they are known chewers, and with their very strong prey drive smaller pets are not a good idea around them.",
+      ],
+      sources: ["S536", "S537", "S538", "S540"],
     },
     british_shorthair: {
       aka: "British Blue",
