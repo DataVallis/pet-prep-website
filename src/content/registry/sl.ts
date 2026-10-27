@@ -13,7 +13,7 @@ type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
 const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi", 10: "hrti" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -412,6 +412,7 @@ const sl: RegistryCopy = {
     wobbler_syndrome: "Pri pasmi se lahko pojavi sindrom wobbler: nestabilna vratna vretenca pritiskajo na hrbtenjačo in oslabijo zadnje noge.",
     eye_phpv: "Pri pasmi se lahko pojavi prirojena okvara očesa (persistentni hiperplastični primarni steklovinec, PHPV); vzrediteljem priporočajo pregled oči staršev.",
     certain_cancers: "Pri pasmi se lahko pojavijo nekatere vrste raka.",
+    bare_skin_sun_cold: "Golo kožo gole različice je treba zaščititi pred soncem in mrazom.",
     l2hga_nervous_system: "Pri pasmi se lahko pojavi L-2-hidroksiglutarna acidurija (L-2-HGA), dedna presnovna motnja, ki prizadene živčevje; za starše je na voljo test DNK.",
     short_face_breathing: "Zmerno kratkoglava pasma: nekateri psi s krajšim gobčkom imajo lahko resne težave z dihanjem (brahicefalni obstruktivni sindrom dihalnih poti, BOAS).",
     corneal_ulcers: "Zaradi oblike lobanje in izbočenih oči so pogostejše težave z očmi, kot je razjeda roženice; očesni pregled je na voljo.",
@@ -1104,6 +1105,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje enkrat na teden, pasma pa običajno živi manj kot 10 let. PDSA ga opisuje kot zelo zvestega psa, ki je zaradi velikosti in moči primernejši za dom samo z odraslimi ali za družine s starejšimi otroki; potrebuje zgodnjo socializacijo, najbolje je, da je nekdo ves čas doma, ima zelo močan lovski nagon, se veliko slini, med hranjenjem in gibanjem pa potrebuje premor.",
       ],
       sources: ["S565", "S566", "S567", "S568"],
+    },
+    chinese_crested: {
+      aka: "kitajski čopasti pes, powder puff",
+      text: [
+        "Kitajski goli pes je majhen, živahen in eleganten družabni pes s Kitajske; FCI ga uvršča med gole pse. Ima dve različici: golo, z gladkim golim telesom in dlako le na glavi (čop), nogah in repu, ter »powder puff«, ki jo v celoti pokriva tančica dolge mehke dlake. Psi so visoki 28–33 cm, psice 23–30 cm; po standardu Royal Kennel Cluba naj ne bi tehtal več kot 5,4 kg. Dovoljena je vsaka barva razen merle, značaj pa je opisan kot vesel in nikoli napadalen.",
+        "Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje enkrat na teden; primeren je za stanovanje, pasma pa običajno živi več kot 12 let. PetMD ga opisuje kot prijaznega psa, ki se vklopi v večino družin, tudi z otroki in drugimi živalmi — vsak stik z otroki naj bo pod nadzorom. Golo kožo je treba zaščititi pred soncem in mrazom, kremplje vsak teden pregledati, mladičke pa zgodaj in dosledno socializirati.",
+      ],
+      sources: ["S570", "S571", "S572", "S573", "S574"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
