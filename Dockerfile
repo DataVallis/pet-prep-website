@@ -26,6 +26,9 @@ COPY --from=build --chown=web:web /app/.next/static ./.next/static
 COPY --from=build --chown=web:web /app/public ./public
 # Fonts and the mark used to render Open Graph images at runtime.
 COPY --from=build --chown=web:web /app/src/og ./src/og
+# Next.js image cache (breed portraits etc.) — a named volume in deploy/compose.yaml keeps it
+# across deploys; created here so the volume starts owned by `web`.
+RUN mkdir -p /app/.next/cache && chown -R web:web /app/.next/cache
 USER web
 EXPOSE 3000
 HEALTHCHECK --interval=15s --timeout=5s --start-period=20s --retries=3 \

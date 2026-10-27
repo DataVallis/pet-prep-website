@@ -42,7 +42,7 @@ Images: `public/curio/*.webp` (display) and `public/curio/kit/` (download origin
 
 ## App screens
 
-`public/screens/<locale>/<screen>.png` (780×1688, i.e. 390×844 @2x): `pin`, `contract`, `hud`, `picker`, `parent`, `report`, `assistant`, `certificate`.
+`public/screens/<locale>/<screen>.png` (780×1688, i.e. 390×844 @2x) are the sources; the site serves the pre-sized `<screen>.webp` next to each (600×1298, quality 82, `unoptimized` — no request-time image optimisation). After replacing a PNG run `python3 -c "from PIL import Image;import glob;[Image.open(p).convert('RGB').resize((600,1298),Image.LANCZOS).save(p[:-4]+'.webp','WEBP',quality=82,method=6) for p in glob.glob('public/screens/*/*.png')]"`: `pin`, `contract`, `hud`, `picker`, `parent`, `report`, `assistant`, `certificate`.
 They are **product previews rendered in the CGP**, not captures from a device. Replace them with real screenshots (same file names and size) when available — `hud.png` shows a PetPrep AI-generated puppy (Nano Banana Pro, 2026-10-08) under the CGP HUD.
 
 ## Early access (Klaviyo)

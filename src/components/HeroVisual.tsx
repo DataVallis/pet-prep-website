@@ -10,11 +10,14 @@ export function HeroVisual({ locale, dict }: { locale: Locale; dict: Dictionary 
       <div aria-hidden="true" className="absolute inset-y-5 left-6 right-0 rounded-[40px] bg-mint sm:left-14" />
       <div className="relative w-[270px] rounded-[44px] bg-[#0b0d0c] p-[9px] shadow-[0_30px_70px_rgba(18,22,20,0.28)] sm:w-[290px]">
         <Image
-          src={`/screens/${locale}/hud.png`}
+          src={`/screens/${locale}/hud.webp`}
           alt={dict.screens.hud}
           width={780}
           height={1688}
           priority
+          // Pre-sized WebP (README »Screens«): served as a static file, never optimised at
+          // request time — a fresh container no longer shows a black phone for seconds.
+          unoptimized
           sizes="290px"
           className="h-auto w-full rounded-[35px]"
         />
