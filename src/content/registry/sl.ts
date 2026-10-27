@@ -341,6 +341,9 @@ const sl: RegistryCopy = {
       dna_pra_rcd3: "Test DNK za progresivno atrofijo mrežnice (PRA-rcd3)",
       dna_vwd2: "Test DNK za von Willebrandovo bolezen tipa 2 (vWD2), dedno motnjo strjevanja krvi",
       dna_l2hga: "Test DNK za L-2-hidroksiglutarno acidurijo (L-2-HGA), dedno presnovno bolezen živčevja",
+      dna_pll: "Test DNK za primarno luksacijo leče (PLL), dedno bolezen oči, pri kateri leča zdrsne s svojega mesta",
+      dna_loa: "Test DNK za pozno nastalo ataksijo (LOA), dedno bolezen, ki prizadene ravnotežje in usklajenost gibov",
+      dna_sca: "Test DNK za spinocerebelarno ataksijo (SCA), dedno bolezen živčevja",
       dna_hcm_mc: "Test DNK za hipertrofično kardiomiopatijo (MC HCM)",
       dna_sma: "Test DNK za spinalno mišično atrofijo (SMA)",
       dna_pk_def: "Test DNK za pomanjkanje piruvat-kinaze (PK def)",
@@ -457,6 +460,8 @@ const sl: RegistryCopy = {
     cm_sm_screening: "Pri pasmi se lahko pojavita Chiarijeva malformacija in siringomielija, boleča bolezen z votlinicami, polnimi tekočine, v hrbtenjači ob možganih; vzrediteljem svetujejo pregled staršev (v Združenem kraljestvu: shema BVA/KC).",
     prominent_eyes_injury_dry_eye: "Izbuljene oči se lažje poškodujejo, na njih pa lahko nastanejo razjede in izsušenost; pri pasmi se pojavljata tudi suho oko in češnjevo oko (izpad žleze tretje veke).",
     legg_perthes: "Pri pasmi se lahko pojavi Legg-Perthesova bolezen, boleče stanje, pri katerem kolčni sklep odmre in razpade.",
+    primary_lens_luxation: "Pri pasmi se pojavlja primarna luksacija leče, boleča dedna bolezen oči, pri kateri leča zdrsne s svojega mesta in lahko povzroči slepoto; za pse v vzreji je na voljo test DNK.",
+    inherited_ataxia: "Pri pasmi se pojavljajo dedne ataksije (pozno nastala in spinocerebelarna ataksija), ki povzročajo izgubo ravnotežja in usklajenosti gibov; za pse v vzreji so na voljo testi DNK.",
     hydrocephalus: "Pri pasmi se lahko pojavi hidrocefalus, kopičenje tekočine okoli možganov.",
     heart_disease_pda: "Pri pasmi se lahko pojavijo bolezni srca, tudi odprt arterijski vod (PDA) — žila ob srcu, ki se po rojstvu ne zapre; veterinar ga lahko zasliši že ob prvem pregledu mladička.",
     chiari_malformation: "Pri pasmi se lahko pojavi Chiarijeva malformacija s siringomielijo — boleče stanje, pri katerem se v hrbtenjači blizu možganov tvorijo votline s tekočino.",
@@ -1083,6 +1088,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča do eno uro gibanja na dan; dlaka potrebuje nego vsak dan, ne izpada, pasma pa običajno živi več kot 10 let. PetMD ga opisuje kot odličnega družinskega psa, ki se ob dobri vzgoji praviloma razume z otroki, a ga ne smete predolgo pustiti samega sebi; svetuje česanje nekajkrat na teden, hitro čiščenje ušes vsak teden in obisk pasjega frizerja trikrat ali štirikrat na leto.",
       ],
       sources: ["S545", "S546", "S547", "S549"],
+    },
+    russell_terrier: {
+      aka: "russell terier (AKC), jack russell, JRT",
+      text: [
+        "Jack Russell terier — ameriški kinološki klub (AKC) ga imenuje russell terier — izvira iz Anglije, razvili pa so ga v Avstraliji; FCI ga uvršča med male terierje. Standard ga opisuje kot močnega, dejavnega in gibčnega delovnega terierja z izrazitim značajem: živahen, pozoren in dejaven, drzen in neustrašen, prijazen, a mirno samozavesten. Visok je 25–30 cm in tehta okoli 5–6 kg. Gladka, lomljena ali groba dlaka je pretežno bela s črnimi in/ali rjavimi lisami.",
+        "Royal Kennel Club priporoča do eno uro gibanja na dan in česanje enkrat na teden; pasmi dlaka izpada, običajno pa živi več kot 10 let. PDSA ga opisuje kot pametnega, živahnega psa, ki je lahko dober družinski pes, če ga od malega vzgajate in socializirate, a se bolje znajde v družinah z malo starejšimi otroki; ima zelo močan lovski nagon, zato manjših živali v domu ne priporočajo, rad pa tudi koplje.",
+      ],
+      sources: ["S557", "S558", "S559", "S560"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
