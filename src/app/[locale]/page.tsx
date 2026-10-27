@@ -93,30 +93,6 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
         <HeroVisual locale={locale} dict={dict} />
       </section>
 
-      {/* Promo video — click to play, never autoplays (less motion); preload none keeps the page light. */}
-      <section className="container-page grid items-center gap-10 pb-24 lg:grid-cols-[1fr_auto]" aria-labelledby="promo-title">
-        <div className="flex max-w-[560px] flex-col gap-4">
-          <p className="eyebrow">{h.promoVideo.eyebrow}</p>
-          <h2 id="promo-title" className="h-section">{h.promoVideo.title}</h2>
-          <p className="text-lg leading-relaxed text-muted">{h.promoVideo.text}</p>
-          <p className="text-sm text-muted">{h.promoVideo.note}</p>
-        </div>
-        <div className="mx-auto w-full max-w-[320px] overflow-hidden rounded-[36px] bg-graphite shadow-[0_24px_60px_rgba(18,22,20,0.22)]">
-          <video
-            controls
-            preload="none"
-            playsInline
-            poster="/video/petprep-promo-poster.webp"
-            aria-label={h.promoVideo.alt}
-            width={720}
-            height={1280}
-            className="aspect-[9/16] w-full object-cover"
-          >
-            <source src="/video/petprep-promo.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </section>
-
       {/* Promise */}
       <section className="on-dark bg-graphite text-fog">
         <div className="container-page flex flex-wrap items-center justify-between gap-10 py-16 sm:py-20">
@@ -124,6 +100,34 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
             {h.promise.quote} <span className="text-mint">{h.promise.highlight}</span>.
           </p>
           <p className="flex-[1_1_320px] text-[17px] leading-relaxed text-muted-dark">{h.promise.text}</p>
+        </div>
+      </section>
+
+      {/* Promo video — click to play, never autoplays (less motion); preload none keeps the page light.
+          Laid out like the hero: text left, the player on a mint slab right (David 2026-10-27). */}
+      <section className="container-page grid items-center gap-12 pt-24 lg:grid-cols-[1fr_1.05fr]" aria-labelledby="promo-title">
+        <div className="flex max-w-[560px] flex-col gap-4">
+          <p className="eyebrow">{h.promoVideo.eyebrow}</p>
+          <h2 id="promo-title" className="h-section">{h.promoVideo.title}</h2>
+          <p className="text-lg leading-relaxed text-muted">{h.promoVideo.text}</p>
+          <p className="text-sm text-muted">{h.promoVideo.note}</p>
+        </div>
+        <div className="relative mx-auto flex w-full max-w-[600px] items-center justify-center py-10">
+          <div aria-hidden="true" className="absolute inset-y-0 left-6 right-0 rounded-[40px] bg-mint sm:left-14" />
+          <div className="relative w-[270px] rounded-[44px] bg-[#0b0d0c] p-[9px] shadow-[0_30px_70px_rgba(18,22,20,0.28)] sm:w-[290px]">
+            <video
+              controls
+              preload="none"
+              playsInline
+              poster="/video/petprep-promo-poster.webp"
+              aria-label={h.promoVideo.alt}
+              width={720}
+              height={1280}
+              className="block aspect-[9/16] w-full rounded-[35px] bg-graphite object-cover"
+            >
+              <source src="/video/petprep-promo.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </section>
 
