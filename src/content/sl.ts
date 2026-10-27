@@ -314,7 +314,7 @@ const sl: Dictionary = {
           type: "callout",
           title: "Tudi neuspeh je rezultat.",
           text: "Če ljubljenček konča v virtualnem zavetišču, ste se naučili nekaj dragocenega — preden je ceno plačala prava žival. Lahko začnete znova, tudi z lažjo pasmo.",
-          tone: "mint",
+          tone: "dark",
         },
       ],
     },

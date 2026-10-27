@@ -314,7 +314,7 @@ const en: Dictionary = {
           type: "callout",
           title: "Failing is a result too.",
           text: "If the pet ends up at the virtual shelter, you have learned something valuable — before a real animal paid the price. You can start again, also with an easier breed.",
-          tone: "mint",
+          tone: "dark",
         },
       ],
     },
