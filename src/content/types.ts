@@ -157,6 +157,8 @@ export type Dictionary = {
     phone: { petName: string; petAge: string; live: string; video: string; actions: [string, string, string, string] };
     parentCard: { child: string; status: string; scoreLabel: string; progress: string };
     notification: { app: string; text: string };
+    /** Promo video under the hero (click to play, never autoplays). `note` = honest status line. */
+    promoVideo: { eyebrow: string; title: string; text: string; alt: string; note: string };
     promise: { quote: string; highlight: string; text: string };
     how: { eyebrow: string; title: string; steps: { title: string; text: string }[]; link: string };
     realism: { title: string; text: string; items: { title: string; text: string }[] };

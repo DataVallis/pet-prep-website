@@ -45,7 +45,7 @@ const nextConfig: NextConfig = {
       },
       {
         // App screens are static pre-sized WebP files; cache them a day, refresh in the background.
-        source: "/screens/:path*",
+        source: "/:dir(screens|video)/:path*",
         headers: [{ key: "Cache-Control", value: "public, max-age=86400, stale-while-revalidate=604800" }],
       },
     ];
