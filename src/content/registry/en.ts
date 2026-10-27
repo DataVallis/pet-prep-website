@@ -1091,10 +1091,10 @@ const en: RegistryCopy = {
     chinese_crested: {
       aka: "Chinese Crested Dog, Powder Puff",
       text: [
-        "The Chinese Crested is a small, active and graceful companion dog from China; the FCI lists it among the hairless dogs. It comes in two varieties: the Hairless, with a smooth bare body and hair only on the head (the crest), the feet and the tail, and the Powder Puff, covered entirely with a veil of long soft hair. Males stand 28–33 cm and females 23–30 cm; the Royal Kennel Club standard says it should not weigh over 5.4 kg. Any colour is allowed except merle, and its temperament is described as happy, never vicious.",
+        "The Chinese Crested is a small, active and graceful companion dog from China; the FCI lists it among the hairless dogs. It comes in two varieties: the Hairless, with a smooth bare body and hair only on the head (the crest), the feet and the tail, and the Powder Puff, covered entirely with a veil of long soft hair. Males stand 28–33 cm and females 23–30 cm; PetMD gives a weight of 8–12 lb (3.6–5.4 kg). Any colour is allowed except merle, and its temperament is described as happy, never vicious.",
         "The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming once a week; it suits a flat, and the breed usually lives over 12 years. PetMD describes a friendly dog that fits in with most families, including those with kids and other pets — every interaction with children should be supervised. The bare skin needs protection from the sun and the cold, the nails should be checked every week, and puppies need early, consistent socialisation.",
       ],
-      sources: ["S570", "S571", "S572", "S573", "S574"],
+      sources: ["S570", "S571", "S572", "S574"],
     },
     british_shorthair: {
       aka: "British Blue",

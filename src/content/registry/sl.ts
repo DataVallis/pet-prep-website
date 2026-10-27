@@ -1109,10 +1109,10 @@ const sl: RegistryCopy = {
     chinese_crested: {
       aka: "kitajski čopasti pes, powder puff",
       text: [
-        "Kitajski goli pes je majhen, živahen in eleganten družabni pes s Kitajske; FCI ga uvršča med gole pse. Ima dve različici: golo, z gladkim golim telesom in dlako le na glavi (čop), nogah in repu, ter »powder puff«, ki jo v celoti pokriva tančica dolge mehke dlake. Psi so visoki 28–33 cm, psice 23–30 cm; po standardu Royal Kennel Cluba naj ne bi tehtal več kot 5,4 kg. Dovoljena je vsaka barva razen merle, značaj pa je opisan kot vesel in nikoli napadalen.",
+        "Kitajski goli pes je majhen, živahen in eleganten družabni pes s Kitajske; FCI ga uvršča med gole pse. Ima dve različici: golo, z gladkim golim telesom in dlako le na glavi (čop), nogah in repu, ter »powder puff«, ki jo v celoti pokriva tančica dolge mehke dlake. Psi so visoki 28–33 cm, psice 23–30 cm; PetMD navaja težo 3,6–5,4 kg. Dovoljena je vsaka barva razen merle, značaj pa je opisan kot vesel in nikoli napadalen.",
         "Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje enkrat na teden; primeren je za stanovanje, pasma pa običajno živi več kot 12 let. PetMD ga opisuje kot prijaznega psa, ki se vklopi v večino družin, tudi z otroki in drugimi živalmi — vsak stik z otroki naj bo pod nadzorom. Golo kožo je treba zaščititi pred soncem in mrazom, kremplje vsak teden pregledati, mladičke pa zgodaj in dosledno socializirati.",
       ],
-      sources: ["S570", "S571", "S572", "S573", "S574"],
+      sources: ["S570", "S571", "S572", "S574"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
