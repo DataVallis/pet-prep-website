@@ -145,6 +145,13 @@ const en: Dictionary = {
     },
     parentCard: { child: "Maya", status: "All good", scoreLabel: "Care Score", progress: "Week 3 of 12 · 31 of 36 routines on time" },
     notification: { app: "PetPrep", text: "Your pet is looking at its food bowl. Breakfast time ends at 9:00." },
+    promoVideo: {
+      eyebrow: "PetPrep in one minute",
+      title: "See how it works.",
+      text: "From choosing the pet and signing the contract to school, walks, grooming and the certificate — everything your child does in 12 weeks, and everything you see on the dashboard. Curio, our mascot, just says hello; the pet in the app is a lifelike AI dog.",
+      alt: "PetPrep promo video: app screens, a child caring for a dog, a parent following the Care Score.",
+      note: "The app is not yet public in the App Store and Google Play — sign up for early access.",
+    },
     promise: {
       quote: "Every family hears “I promise I'll take care of it.” PetPrep turns the promise into",
       highlight: "proof",

@@ -145,6 +145,13 @@ const sl: Dictionary = {
     },
     parentCard: { child: "Maja", status: "Vse v redu", scoreLabel: "Care Score", progress: "Teden 3 od 12 · 31 od 36 rutin pravočasno" },
     notification: { app: "PetPrep", text: "Kuža te milo gleda in kaže na posodo s hrano. Zajtrk je do 9:00." },
+    promoVideo: {
+      eyebrow: "PetPrep v eni minuti",
+      title: "Poglejte, kako poteka.",
+      text: "Od izbire ljubljenčka in pogodbe do šole, sprehodov, nege in certifikata — vse, kar otrok dela v 12 tednih, in vse, kar vi vidite na nadzorni plošči. Curio, naša maskota, vas samo pozdravi; ljubljenček v aplikaciji je realističen AI pes.",
+      alt: "Promocijski video PetPrep: zasloni aplikacije, otrok skrbi za psa, starš spremlja Care Score.",
+      note: "Video je v angleščini. Aplikacija še ni javno v App Store in Google Play — prijavite se za zgodnji dostop.",
+    },
     promise: {
       quote: "Vsaka družina sliši »Obljubim, da bom skrbel zanj.« PetPrep obljubo spremeni v",
       highlight: "dokaz",
