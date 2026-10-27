@@ -430,6 +430,22 @@ const sl: Dictionary = {
       blocks: [
         { type: "pricing" },
         {
+          type: "table",
+          id: "zelje",
+          heading: "»Želje« — stvari za ljubljenčka",
+          intro:
+            "Otrok v aplikaciji prosi za stvari za svojega ljubljenčka, starš odloči in kupi. Otrok cen nikoli ne vidi. Stvari so samo videz: ne vplivajo na potrebe, Care Score ali certifikat. Na voljo tudi pri brezplačnem mešančku in domači mački.",
+          head: ["Stvar", "Cena"],
+          rows: [
+            ["Postelja (muca: košara)", "5,99 €"],
+            ["Skledi za hrano in vodo", "5,99 €"],
+            ["Igrača (pes: vrv ali piskajoča igrača, muca: plišasta miška ali palica s peresi)", "5,99 € na igračo"],
+            ["Priboljški, paket 10", "2,99 €"],
+            ["Paket »Dobrodošlica«: postelja + skledi + igrača", "15,99 € (namesto 17,97 €)"],
+          ],
+          note: "»Želje« prihajajo z naslednjo posodobitvijo aplikacije; kupiti jih bo mogoče, ko bodo stvari na voljo v App Store in Google Play. Cene veljajo v Sloveniji, trgovina pokaže ceno za vašo državo.",
+        },
+        {
           type: "faq",
           heading: "Vprašanja o ceni",
           items: [
@@ -437,6 +453,8 @@ const sl: Dictionary = {
             { q: "Kaj vključuje izziv?", a: "Zahtevne pasme, kot je [border collie](breed:border_collie), razpoloženja ljubljenčka kot AI videje, Certifikat odgovornosti na koncu in dostop za oba starša." },
             { q: "Ali sorojenci plačajo dvakrat?", a: "Ne. Otroci, ki si delijo enega ljubljenčka, plačajo eno ceno. Drugi ljubljenček v družini je ločen izziv." },
             { q: "Kako plačam?", a: "V aplikaciji, prek App Store ali Google Play. Morebitna vračila urejate v svojem računu trgovine." },
+            { q: "Kaj so »Želje« in ali otrok lahko sam kupi?", a: "Otrok lahko prosi za posteljo, sklede, igračo ali priboljške za ljubljenčka — največ tri odprte prošnje naenkrat. Vi dobite obvestilo in prošnjo potrdite z nakupom ali izberete »Ne zdaj«. Otrok ne vidi cen in v otroški aplikaciji ne more kupiti ničesar." },
+            { q: "Ali kupljene stvari olajšajo igro?", a: "Ne. Stvari so samo videz. Na potrebe, Care Score in certifikat ne vplivajo, veterinarja ali zdravil pa v »Željah« ni — nikoli »plačaj, da rešiš ljubljenčka«." },
             { q: "Velja enako tudi za odrasle?", a: "Da. Če PetPrep uporabljate sami, da preizkusite pasmo, velja isto: mešanček je brezplačen za vedno, 12-tedenski izziv stane 49,99 € na žival." },
           ],
         },
@@ -537,6 +555,7 @@ const sl: Dictionary = {
           rows: [
             ["Mešanček", "Brezplačno za vedno (pridobivanje uporabnikov)", "Odločeno"],
             ["12-tedenski PetPrep izziv", "49,99 € na žival, enkratni nakup", "Odločeno"],
+            ["»Želje« — stvari za ljubljenčka (samo videz)", "Nakupi v aplikaciji: 5,99 € na stvar, priboljški 2,99 € za 10, paket 15,99 €; tudi v brezplačni različici", "Zgrajeno, nakup v trgovinah kmalu"],
             ["Partnerske ponudbe", "Provizije trgovin, zavarovalnic, veterinarjev in šol", "V načrtu"],
             ["AI asistent za pravega ljubljenčka", "Naročnina", "V načrtu"],
             ["Genski testi za pse in mačke", "Prodaja testov in partnerska provizija", "V načrtu"],
@@ -766,6 +785,7 @@ const sl: Dictionary = {
                 "Ljubljenčka za izziv lahko ustvarite pred nakupom. Dokler izziv ni plačan, igra stoji: ljubljenček varno čaka, njegove potrebe ne padajo in nič se ne poslabša. Ko kupite, se igra nadaljuje, kjer je obstala.",
                 "Vračila kupnine urejata App Store in Google Play po svojih pravilih; zahtevo oddate pri trgovini, kjer ste kupili. Če trgovina kupnino vrne, preden je izziv končan, se igra tega ljubljenčka spet ustavi. Slike in videi, ustvarjeni po nakupu, ostanejo.",
                 "Po koncu igre (zavetišče) nakup ljubljenčka ne odklene; nov izziv je nov ljubljenček in nov nakup.",
+                "»Želje« (stvari za ljubljenčka, ko so na voljo): otrok lahko prosi, kupi pa samo starš v svoji aplikaciji. Kupljena stvar pripada ljubljenčku, za katerega je kupljena, in je samo videz — ne vpliva na igro, oceno ali certifikat. Ob koncu igre ali izbrisu ljubljenčka nakup ostane porabljen in se ne vrne. Če trgovina kupnino vrne, se stvar (pri priboljških neporabljeni priboljški) odstrani.",
                 "Če izbrišete ljubljenčka, otroka ali račun, pri katerem je kupljen izziv še v teku, ostane nakup porabljen: ne prenese se na drugega ljubljenčka in izbris ne pomeni vračila kupnine. Aplikacija vas na to prej opozori in zahteva potrditev.",
               ],
             },

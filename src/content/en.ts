@@ -430,6 +430,22 @@ const en: Dictionary = {
       blocks: [
         { type: "pricing" },
         {
+          type: "table",
+          id: "wishes",
+          heading: "Wishes — things for your pet",
+          intro:
+            "In the app, your child asks for things for their pet; you decide and buy. Your child never sees a price. Items are looks only: they never change needs, the Care Score or the certificate. Also available for the free mixed-breed dog and domestic cat.",
+          head: ["Item", "Price"],
+          rows: [
+            ["Bed (cat: basket)", "€5.99"],
+            ["Food and water bowls", "€5.99"],
+            ["Toy (dog: rope toy or squeaky toy, cat: plush mouse or feather wand)", "€5.99 per toy"],
+            ["Treats, pack of 10", "€2.99"],
+            ["Welcome bundle: bed + bowls + toy", "€15.99 (instead of €17.97)"],
+          ],
+          note: "Wishes are coming with the next app update; they can be bought once the items are available in the App Store and Google Play. Prices are for Slovenia; the store shows the price for your country.",
+        },
+        {
           type: "faq",
           heading: "Pricing questions",
           items: [
@@ -437,6 +453,8 @@ const en: Dictionary = {
             { q: "What does the challenge include?", a: "Demanding breeds such as the [Border Collie](breed:border_collie), your pet's moods as AI videos, the Certificate of Responsibility at the end and access for both parents." },
             { q: "Do siblings pay twice?", a: "No. Children who share one pet pay one price. A second pet in the family is a separate challenge." },
             { q: "How do I pay?", a: "In the app, through the App Store or Google Play. Refunds are handled by your store account." },
+            { q: "What are Wishes, and can my child buy things alone?", a: "Your child can ask for a bed, bowls, a toy or treats for their pet — up to three open requests at a time. You get a notification and either buy it or choose \u201cNot now\u201d. Your child never sees prices and cannot buy anything in the child app." },
+            { q: "Do bought items make the game easier?", a: "No. Items are looks only. They never change needs, the Care Score or the certificate, and there is no vet or medicine in Wishes — never \u201cpay to save your pet\u201d." },
             { q: "Is it the same for adults?", a: "Yes. If you use PetPrep on your own to try a breed, the same applies: the mixed breed is free forever and the 12-week challenge costs €49.99 per pet." },
           ],
         },
@@ -537,6 +555,7 @@ const en: Dictionary = {
           rows: [
             ["Mixed-breed pet", "Free forever (acquisition)", "Decided"],
             ["12-week PetPrep Challenge", "€49.99 per pet, one-time purchase", "Decided"],
+            ["Wishes — things for the pet (looks only)", "In-app purchases: €5.99 per item, treats €2.99 for 10, bundle €15.99; also in the free version", "Built, store purchase coming soon"],
             ["Partner offers", "Commissions from stores, insurers, vets and trainers", "Planned"],
             ["AI assistant for the real pet", "Subscription", "Planned"],
             ["DNA tests for dogs and cats", "Test sales and partner commission", "Planned"],
@@ -766,6 +785,7 @@ const en: Dictionary = {
                 "You can create a challenge pet before buying. Until the challenge is paid, the game is paused: the pet waits safely, its needs do not drop and nothing gets worse. Once you buy, the game continues where it stopped.",
                 "Refunds are handled by the App Store and Google Play under their own rules; request one from the store where you bought. If the store refunds a purchase before the challenge is finished, that pet's game is paused again. Images and videos created after the purchase remain.",
                 "After a game over (shelter), a purchase does not unlock the pet; a new challenge is a new pet and a new purchase.",
+                "Wishes (things for the pet, once available): a child can ask, but only a parent can buy, in their own app. A bought item belongs to the pet it was bought for and is looks only — it does not affect the game, the score or the certificate. After a game over or when the pet is deleted, the purchase stays used and is not refunded. If the store refunds the purchase, the item (for treats, the unused treats) is removed.",
                 "If you delete a pet, a child or the account while a purchased challenge is still running, the purchase stays used: it does not move to another pet and deleting is not a refund. The app warns you first and asks you to confirm.",
               ],
             },
