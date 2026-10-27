@@ -518,6 +518,7 @@ const en: RegistryCopy = {
     disclaimer: "PetPrep is a simulation for families. This page is not veterinary advice — for a real animal, ask a vet or the breed club.",
     backTo: (many) => `All ${many.toLowerCase()}`,
     compareWith: "Compare with other breeds",
+    related: { title: "Similar breeds", intro: (many) => `Other ${many.toLowerCase()} in the register with similar needs — each with sourced facts.` },
     updated: "Updated",
     glanceTitle: "At a glance",
     glanceNote: "Key facts from the sources at the bottom of the page. Where sources differ, each value is listed.",
@@ -545,7 +546,7 @@ const en: RegistryCopy = {
       questions: {
         exercise: (n) => `How much exercise does ${a(n)} need?`,
         lifespan: (n) => `How long does ${a(n)} live?`,
-        size: (n) => `How big does ${a(n)} get?`,
+        size: (n) => `How big does ${a(n)} get and how much does it weigh?`,
         grooming: (n) => `How much grooming does ${a(n)} need?`,
         suits: (n) => `Who is the ${n} a good fit for?`,
       },
@@ -1119,6 +1120,14 @@ const en: RegistryCopy = {
         "The GCCF calls it energetic and fun-loving yet patient — a good choice for families with young children — and says it mixes well with other animals, including dogs. PetMD advises combing at least once a week, with extra effort while it sheds in spring and autumn, and notes that Siberians are not considered hypoallergenic. Pedigree kittens usually go to their new home at 12–13 weeks (PDSA).",
       ],
       sources: ["C13", "C34", "C35"],
+    },
+    maine_coon: {
+      aka: "Maine Coon cat",
+      text: [
+        "The Maine Coon is widely considered one of the largest domestic cat breeds, with a muscular, rectangular body, a broad chest, large paws and a long, flowing tail. TICA gives an average weight of about 5.9–8.2 kg for mature males and 4.1–5.9 kg for females, and CFA notes that some males weigh more than 9 kg. It grows slowly: according to CFA it often does not reach full development until age three or four, and TICA says full maturity may take three to five years.",
+        "TICA describes it as gentle, friendly and playful, CFA as sociable, loyal and intelligent; it often talks with a chirping trill rather than a meow. Vetstreet writes that Maine Coons get along with everyone, including children, dogs and other cats. Its heavy, semi-longhaired coat is shorter on the shoulders and longer on the ruff, belly and hindquarters. Sources differ on grooming: Vetstreet says weekly combing is enough, CFA advises brushing or combing at least a couple of times a week, and TICA notes that a thicker coat can need daily combing. Pedigree kittens usually go to their new home at 12–13 weeks (PDSA).",
+      ],
+      sources: ["C13", "C17", "C18"],
     },
     bengal: {
       aka: "Bengal cat",
