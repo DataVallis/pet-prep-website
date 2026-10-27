@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs", 10: "sighthounds" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia" };
 
 const en: RegistryCopy = {
   hub: {
@@ -394,6 +394,7 @@ const en: RegistryCopy = {
     wobbler_syndrome: "Wobbler syndrome, where unstable bones in the neck press on the spinal cord and weaken the back legs, can occur in the breed.",
     eye_phpv: "An eye defect that is present from birth (persistent hyperplastic primary vitreous, PHPV) can occur in the breed; breeders are advised to have the parents' eyes tested.",
     certain_cancers: "Certain cancers can occur in the breed.",
+    bare_skin_sun_cold: "The bare skin of the hairless variety needs protection from the sun and from the cold.",
     l2hga_nervous_system: "L-2-hydroxyglutaric aciduria (L-2-HGA), an inherited metabolic disorder that affects the nervous system, can occur in the breed; a DNA test of the parents is available.",
     short_face_breathing: "A moderately short-faced breed: some dogs with shorter faces can have serious breathing problems (brachycephalic obstructive airway syndrome, BOAS).",
     corneal_ulcers: "Eye problems such as corneal ulcers are more likely because of the skull shape and prominent eyes; eye testing is available.",
@@ -1086,6 +1087,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends more than two hours of exercise a day and grooming once a week, and the breed usually lives under 10 years. PDSA describes very loyal dogs whose size and power make them better suited to adult-only homes or families with older children; they need early socialisation, ideally have someone at home all the time, have a very strong prey drive, drool a lot and need a gap between eating and exercise.",
       ],
       sources: ["S565", "S566", "S567", "S568"],
+    },
+    chinese_crested: {
+      aka: "Chinese Crested Dog, Powder Puff",
+      text: [
+        "The Chinese Crested is a small, active and graceful companion dog from China; the FCI lists it among the hairless dogs. It comes in two varieties: the Hairless, with a smooth bare body and hair only on the head (the crest), the feet and the tail, and the Powder Puff, covered entirely with a veil of long soft hair. Males stand 28–33 cm and females 23–30 cm; PetMD gives a weight of 8–12 lb (3.6–5.4 kg). Any colour is allowed except merle, and its temperament is described as happy, never vicious.",
+        "The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming once a week; it suits a flat, and the breed usually lives over 12 years. PetMD describes a friendly dog that fits in with most families, including those with kids and other pets — every interaction with children should be supervised. The bare skin needs protection from the sun and the cold, the nails should be checked every week, and puppies need early, consistent socialisation.",
+      ],
+      sources: ["S570", "S571", "S572", "S574"],
     },
     british_shorthair: {
       aka: "British Blue",
