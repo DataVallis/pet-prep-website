@@ -11,7 +11,10 @@ function form(n: number, one: string, two: string, few: string, many: string): s
 }
 type Fci = { number: number; group: number; origin: string };
 /** Breed names are common nouns in Slovenian: lower case inside a sentence ("labradorec", "zlati prinašalec"). */
-const mid = (name: string) => name.charAt(0).toLocaleLowerCase("sl") + name.slice(1);
+/** Name inside a sentence: "Labradorec" → "labradorec". Names that start with a proper name keep the capital
+ * ("Maine Coon", "Chesapeake Bay retriver", "Jack Russell terier"); "Kavalir King Charles španjel" → "kavalir …". */
+const PROPER_START = /^(Maine Coon|Chesapeake|Jack Russell)\b/;
+const mid = (name: string) => (PROPER_START.test(name) ? name : name.charAt(0).toLocaleLowerCase("sl") + name.slice(1));
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi", 10: "hrti" };
 const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija" };
 
@@ -535,6 +538,7 @@ const sl: RegistryCopy = {
     disclaimer: "PetPrep je simulacija za družine. Ta stran ni veterinarski nasvet — za pravo žival se posvetujte z veterinarjem ali klubom pasme.",
     backTo: (many) => `Vse pasme: ${many.toLowerCase()}`,
     compareWith: "Primerjaj z drugimi pasmami",
+    related: { title: "Podobne pasme", intro: (many) => `Druge pasme (${many.toLowerCase()}) v registru s podobnimi potrebami — vsaka z dejstvi iz virov.` },
     updated: "Posodobljeno",
     glanceTitle: "Na kratko",
     glanceNote: "Ključna dejstva iz virov na dnu strani. Kjer se viri razlikujejo, je navedena vsaka vrednost.",
@@ -562,7 +566,7 @@ const sl: RegistryCopy = {
       questions: {
         exercise: (n) => `Koliko gibanja potrebuje ${mid(n)}?`,
         lifespan: (n) => `Kako dolgo živi ${mid(n)}?`,
-        size: (n) => `Kakšne velikosti je ${mid(n)}?`,
+        size: (n) => `Kakšne velikosti je ${mid(n)} in koliko tehta?`,
         grooming: (n) => `Koliko nege dlake potrebuje ${mid(n)}?`,
         suits: (n) => `Za koga je ${mid(n)} primerna izbira?`,
       },
@@ -1137,6 +1141,14 @@ const sl: RegistryCopy = {
         "GCCF jo opisuje kot energično in igrivo, a potrpežljivo mačko — dobro izbiro za družine z majhnimi otroki —, ki se dobro razume tudi z drugimi živalmi, tudi s psi. PetMD svetuje česanje vsaj enkrat na teden, med spomladanskim in jesenskim linjanjem pa več, in poudarja, da sibirska mačka ne velja za hipoalergeno. Rodovniški mucki gredo v nov dom običajno pri 12–13 tednih (PDSA).",
       ],
       sources: ["C13", "C34", "C35"],
+    },
+    maine_coon: {
+      aka: "maine coon mačka, majkun",
+      text: [
+        "Maine Coon velja za eno največjih pasem domačih mačk: ima mišičasto, pravokotno telo s širokimi prsmi, velike tačke in dolg, košat rep. TICA navaja, da odrasli samci tehtajo v povprečju približno 5,9–8,2 kg, samice 4,1–5,9 kg, CFA pa, da so nekateri samci težji od 9 kg. Raste počasi: po CFA se pogosto povsem razvije šele pri treh ali štirih letih, po TICA lahko popolna zrelost traja tri do pet let.",
+        "TICA ga opisuje kot nežno, prijazno in igrivo mačko, CFA kot družabno, zvesto in inteligentno; namesto mijavkanja se pogosto oglaša s čivkajočim trilčkom. Vetstreet piše, da se razume z vsemi, tudi z otroki, psi in drugimi mačkami. Ima težko, poldolgo dlako, ki je na ramenih krajša, na ovratniku, trebuhu in zadnjem delu pa daljša. Viri se glede nege razlikujejo: Vetstreet navaja, da zadošča česanje enkrat na teden, CFA svetuje krtačenje ali česanje vsaj nekajkrat na teden, TICA pa, da gostejša dlaka lahko potrebuje vsakodnevno česanje. Rodovniški mucki gredo v nov dom običajno pri 12–13 tednih (PDSA).",
+      ],
+      sources: ["C13", "C17", "C18"],
     },
     bengal: {
       aka: "bengalka, Bengal",

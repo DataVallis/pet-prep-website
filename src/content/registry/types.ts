@@ -143,6 +143,8 @@ export type RegistryCopy = {
     disclaimer: string;
     backTo: (many: string) => string;
     compareWith: string;
+    /** "Similar breeds" block above the back links: heading and one line under it. */
+    related: { title: string; intro: (many: string) => string };
     /** "Updated" / "Posodobljeno" before the date of the last content change. */
     updated: string;
     glanceTitle: string;

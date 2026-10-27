@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import { compareSlug, isLocale, locales, pageSlugs, pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { breedBySlug, breedsOf, registry, speciesBySlug, type Breed, type Species } from "@/content/registry/registry";
-import { breedHref, breedMetaDescription, breedMetaTitle, breedUpdated, buildBreedView, compareHref, formatDay, getRegistryCopy, portraitSrc, qaText, speciesHref } from "@/lib/registry/views";
+import { breedHref, breedMetaDescription, breedMetaTitle, breedUpdated, buildBreedView, compareHref, formatDay, getRegistryCopy, portraitSrc, qaText, relatedBreeds, speciesHref } from "@/lib/registry/views";
 import { buildPathMetadata } from "@/lib/seo";
 import { breadcrumbsLd, breedPageLd, faqLd, graph } from "@/lib/jsonld";
 import { JsonLd } from "@/components/JsonLd";
@@ -142,6 +142,7 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
   }
 
   const v = buildBreedView(locale, r.breed);
+  const related = relatedBreeds(r.breed);
   const labels = registry.suitability_labels[locale];
   const cite = c.page.sourceLabel;
 
@@ -463,6 +464,34 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
           </section>
 
           <p className="max-w-3xl text-sm leading-relaxed text-muted">{c.page.disclaimer}</p>
+
+          {related.length ? (
+            <section aria-labelledby="related" className="flex flex-col gap-5">
+              <div className="flex flex-col gap-2">
+                <h2 id="related" className="h-card text-[28px] leading-tight sm:text-[34px]">{c.page.related.title}</h2>
+                <p className="max-w-3xl text-[15px] leading-relaxed text-muted">{c.page.related.intro(many)}</p>
+              </div>
+              <ul className="grid grid-cols-2 gap-4 md:grid-cols-4">
+                {related.map((o) => (
+                  <li key={o.id}>
+                    <Link href={breedHref(locale, o)} className="group flex h-full flex-col gap-3 rounded-[22px] border border-line bg-white p-3 hover:border-graphite">
+                      {o.portrait ? (
+                        <Image
+                          src={portraitSrc(o, o.portrait)}
+                          width={o.portrait.width}
+                          height={o.portrait.height}
+                          alt=""
+                          sizes="(min-width: 768px) 220px, 45vw"
+                          className="aspect-square h-auto w-full rounded-[16px] bg-fog object-cover"
+                        />
+                      ) : null}
+                      <span className="px-1 pb-1 font-display text-[17px] font-bold leading-tight group-hover:underline">{o.name[locale]}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
 
           <nav aria-label={c.page.eyebrow} className="flex flex-wrap gap-3">
             <Link href={catalogue.href} className="btn btn-secondary">

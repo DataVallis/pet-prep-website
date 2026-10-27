@@ -419,6 +419,30 @@ export function breedMetaDescription(locale: Locale, b: Breed): string {
   return facts.length ? c.page.metaFacts(b.name[locale], facts) : c.page.metaDescription(b.name[locale], getSpecies(b.species).name[locale].one);
 }
 
+/**
+ * "Similar breeds" on a breed page: up to `max` other breeds of the same species, those in the app
+ * first, then by similarity — the same FCI group counts 2, each shared facet (size, exercise, grooming)
+ * 1 — then the registry order. Gives every breed page internal links to its neighbours (SEO, 2026-10-27),
+ * not only the link back to the catalogue. Automatic for every breed, also new ones.
+ */
+const fciGroup = (b: Breed): number | undefined => {
+  const v = b.facts.find((f) => f.field === "fci_standard")?.value as { group?: number } | undefined;
+  return v?.group;
+};
+
+export function relatedBreeds(b: Breed, max = 4): Breed[] {
+  const keys = Object.keys(b.facets);
+  const group = fciGroup(b);
+  const score = (o: Breed) =>
+    keys.filter((k) => o.facets[k] === b.facets[k]).length + (group !== undefined && fciGroup(o) === group ? 2 : 0);
+  return breedsOf(b.species)
+    .filter((o) => o.id !== b.id)
+    .map((o, i) => ({ o, i, inApp: o.availability === "in_app" ? 1 : 0, s: score(o) }))
+    .sort((x, y) => y.inApp - x.inApp || y.s - x.s || x.i - y.i)
+    .slice(0, max)
+    .map((x) => x.o);
+}
+
 export function buildBreedView(locale: Locale, b: Breed): BreedView {
   const c = copies[locale];
   const f = fmt(locale);
