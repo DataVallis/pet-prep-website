@@ -1097,6 +1097,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S557", "S558", "S559", "S560"],
     },
+    bullmastiff: {
+      aka: "bull mastif",
+      text: [
+        "Bulmastif je stara angleška čuvajska pasma iz 19. stoletja, ki izvira iz buldoga in starega angleškega mastifa; FCI ga uvršča med molose. Standard ga opisuje kot močnega, sorazmernega psa velike moči, ki pa ni okoren — vzdržljiv, dejaven, zanesljiv, živahen, pozoren in zvest. Psi so visoki 64–69 cm in tehtajo 50–59 kg, psice 61–66 cm in 41–50 kg. Kratka, trda dlaka je katerega koli odtenka plavo rjave, rdeče ali tigraste barve, vedno s črnim gobcem.",
+        "Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje enkrat na teden, pasma pa običajno živi manj kot 10 let. PDSA ga opisuje kot zelo zvestega psa, ki je zaradi velikosti in moči primernejši za dom samo z odraslimi ali za družine s starejšimi otroki; potrebuje zgodnjo socializacijo, najbolje je, da je nekdo ves čas doma, ima zelo močan lovski nagon, se veliko slini, med hranjenjem in gibanjem pa potrebuje premor.",
+      ],
+      sources: ["S565", "S566", "S567", "S568"],
+    },
     british_shorthair: {
       aka: "britanka, British Blue",
       text: [

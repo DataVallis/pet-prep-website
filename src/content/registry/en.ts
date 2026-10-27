@@ -1079,6 +1079,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S557", "S558", "S559", "S560"],
     },
+    bullmastiff: {
+      aka: "Bull Mastiff",
+      text: [
+        "The Bullmastiff is an old English guard breed of the 19th century, descended from the Bulldog and the Old English Mastiff; the FCI lists it among the molossoid breeds. Its standard describes a powerful, symmetrical dog showing great strength but not cumbersome — enduring, active, reliable, high-spirited, alert and faithful. Males stand 64–69 cm and weigh 50–59 kg, females 61–66 cm and 41–50 kg. The short, hard coat is any shade of fawn, red or brindle, always with a black muzzle.",
+        "The Royal Kennel Club recommends more than two hours of exercise a day and grooming once a week, and the breed usually lives under 10 years. PDSA describes very loyal dogs whose size and power make them better suited to adult-only homes or families with older children; they need early socialisation, ideally have someone at home all the time, have a very strong prey drive, drool a lot and need a gap between eating and exercise.",
+      ],
+      sources: ["S565", "S566", "S567", "S568"],
+    },
     british_shorthair: {
       aka: "British Blue",
       text: [
