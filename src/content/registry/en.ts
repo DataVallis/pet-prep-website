@@ -334,6 +334,9 @@ const en: RegistryCopy = {
       dna_pra_rcd3: "DNA test for progressive retinal atrophy (PRA-rcd3)",
       dna_vwd2: "DNA test for von Willebrand disease type 2 (vWD2), an inherited bleeding disorder",
       dna_l2hga: "DNA test for L-2-hydroxyglutaric aciduria (L-2-HGA), an inherited metabolic disease of the nervous system",
+      dna_pll: "DNA test for primary lens luxation (PLL), an inherited eye disease in which the lens slips out of place",
+      dna_loa: "DNA test for late onset ataxia (LOA), an inherited disease that affects balance and coordination",
+      dna_sca: "DNA test for spinocerebellar ataxia (SCA), an inherited disease of the nervous system",
     },
   },
   health: {
@@ -439,6 +442,8 @@ const en: RegistryCopy = {
     cm_sm_screening: "Chiari-like malformation and syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, can occur in the breed; breeders are advised to screen the parents (UK: BVA/KC scheme).",
     prominent_eyes_injury_dry_eye: "Prominent eyes are more easily injured and can develop ulcers and dryness; dry eye and cherry eye also occur in the breed.",
     legg_perthes: "Legg-Perthes disease, a painful condition in which the hip joint dies and crumbles, can occur in the breed.",
+    primary_lens_luxation: "Primary lens luxation, a painful inherited eye condition in which the lens slips out of place and which can cause blindness, occurs in the breed; a DNA test is available for breeding dogs.",
+    inherited_ataxia: "Inherited ataxias (late onset ataxia and spinocerebellar ataxia), which cause loss of balance and coordination, occur in the breed; DNA tests are available for breeding dogs.",
     hydrocephalus: "Hydrocephalus, a build-up of fluid around the brain, can occur in the breed.",
     heart_disease_pda: "Heart disease can occur in the breed, including patent ductus arteriosus, a blood vessel near the heart that fails to close after birth; a vet can listen for it at the puppy's first check-up.",
     chiari_malformation: "Chiari-like malformation with syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, can occur in the breed.",
@@ -1065,6 +1070,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to an hour of exercise a day; the coat needs grooming every day, does not shed and the breed usually lives over 10 years. PetMD describes great family dogs that, if trained well, generally get along with children, but should not be left to their own devices for too long; it advises brushing a few times a week, a quick ear clean every week and a professional groomer three or four times a year.",
       ],
       sources: ["S545", "S546", "S547", "S549"],
+    },
+    russell_terrier: {
+      aka: "Russell Terrier (AKC), Jack Russell, JRT",
+      text: [
+        "The Jack Russell Terrier — the American Kennel Club calls it the Russell Terrier — comes from England and was developed in Australia; the FCI lists it among the small terriers. Its standard describes a strong, active, lithe working terrier of great character: lively, alert and active, bold and fearless, friendly but quietly confident. It stands 25–30 cm and weighs about 5–6 kg. Its smooth, broken or rough coat is mostly white with black and/or tan markings.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day and grooming once a week; the breed sheds and usually lives over 10 years. PDSA describes clever, lively dogs that can make good family pets if trained and socialised from a young age, but are better suited to families with slightly older children; they have a very high prey drive, so smaller pets are not recommended, and they love to dig.",
+      ],
+      sources: ["S557", "S558", "S559", "S560"],
     },
     british_shorthair: {
       aka: "British Blue",
