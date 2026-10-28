@@ -304,6 +304,8 @@ const sl: RegistryCopy = {
       dna_ggd: "Test DNK za goniodisgenezo in tveganje za glavkom (GGD)",
       dna_raines: "Test DNK za Rainov sindrom",
       dna_dm: "Test DNK za degenerativno mielopatijo (DM)",
+      dna_de: "Test DNK za degenerativno encefalopatijo (DE)",
+      dna_jadd: "Test DNK za juvenilno Addisonovo bolezen (JADD)",
       dermoid_sinus_scheme: "Pregled mladičkov na dermoidni sinus (shema klubov pasme)",
       dna_jme: "Test DNK za juvenilno mioklonično epilepsijo (JME)",
       dna_pap_pra1: "Test DNK za progresivno atrofijo mrežnice pri papijonih (Pap-PRA1)",
@@ -1117,6 +1119,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje enkrat na teden; primeren je za stanovanje, pasma pa običajno živi več kot 12 let. PetMD ga opisuje kot prijaznega psa, ki se vklopi v večino družin, tudi z otroki in drugimi živalmi — vsak stik z otroki naj bo pod nadzorom. Golo kožo je treba zaščititi pred soncem in mrazom, kremplje vsak teden pregledati, mladičke pa zgodaj in dosledno socializirati.",
       ],
       sources: ["S570", "S571", "S572", "S574"],
+    },
+    nova_scotia_duck_tolling_retriever: {
+      aka: "toller, novoškotski retriver, novoskotski prinasalec, Nova Scotia Duck Tolling Retriever",
+      text: [
+        "Novoškotski prinašalec — »toller« — je prinašalec iz Kanade; standard FCI opisuje, kako teka in se igra ob obali na očeh rac, da jih privabi bliže, nato pa jih prinese. Standard ga opisuje kot srednje velikega, močnega, kompaktnega in mišičastega psa, ki je zelo inteligenten, se zlahka uči in je izjemno vzdržljiv. FCI navaja za pse 48–51 cm in 20–23 kg, za psice 45–48 cm in 17–20 kg. Vodoodbojna dvojna dlaka je v odtenkih rdeče ali oranžne, običajno z belo na konici repa, tačkah, prsih ali lisi na glavi.",
+        "Royal Kennel Club priporoča do eno uro gibanja na dan in česanje večkrat na teden, pasmi pa izpada dlaka; PetMD svetuje česanje enkrat do dvakrat na teden. Velika britanska raziskava (McMillan 2024, prek Dogs Trust) navaja mediano življenjske dobe 13,2 leta, PetMD 12–14 let; kot drugi srednje veliki psi zraste do približno 12–15 mesecev (PetMD). AKC ga opisuje kot zelo ljubečega psa, ki se običajno dobro razume z otroki, potrebuje veliko gibanja in miselnih izzivov, ima lahko močan lovski nagon do manjših živali in mu koristita zgodnja socializacija ter tečaj za mladičke.",
+      ],
+      sources: ["S576", "S577", "S578", "S579", "S580", "S123", "S10"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",

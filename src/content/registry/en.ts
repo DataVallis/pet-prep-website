@@ -283,6 +283,8 @@ const en: RegistryCopy = {
       dna_ggd: "DNA test for goniodysgenesis and glaucoma risk (GGD)",
       dna_raines: "DNA test for Raine's syndrome",
       dna_dm: "DNA test for degenerative myelopathy (DM)",
+      dna_de: "DNA test for degenerative encephalopathy (DE)",
+      dna_jadd: "DNA test for juvenile Addison's disease (JADD)",
       dermoid_sinus_scheme: "Puppy check for dermoid sinus (breed club scheme)",
       dna_jme: "DNA test for juvenile myoclonic epilepsy (JME)",
       dna_pap_pra1: "DNA test for progressive retinal atrophy in Papillons (Pap-PRA1)",
@@ -1096,6 +1098,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming once a week; it suits a flat, and the breed usually lives over 12 years. PetMD describes a friendly dog that fits in with most families, including those with kids and other pets — every interaction with children should be supervised. The bare skin needs protection from the sun and the cold, the nails should be checked every week, and puppies need early, consistent socialisation.",
       ],
       sources: ["S570", "S571", "S572", "S574"],
+    },
+    nova_scotia_duck_tolling_retriever: {
+      aka: "Toller, Nova Scotia Retriever, Duck Tolling Retriever, NSDTR",
+      text: [
+        "The Nova Scotia Duck Tolling Retriever — the Toller — is a retriever from Canada; its FCI standard describes how it runs and plays along the shoreline in full view of the ducks to lure them in, and is then sent out to retrieve the birds. The standard describes a medium-sized, powerful, compact and well-muscled dog that is highly intelligent, easy to train and has great endurance. The FCI gives males 48–51 cm and 20–23 kg, females 45–48 cm and 17–20 kg. The water-repellent double coat is various shades of red or orange, usually with white on the tail tip, feet, chest or blaze.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day and grooming more than once a week, and the breed sheds; PetMD advises brushing once or twice a week. A large UK study (McMillan 2024, via Dogs Trust) gives a median life expectancy of 13.2 years, PetMD 12–14 years, and like other medium-sized dogs it is fully grown at about 12–15 months (PetMD). The AKC describes highly affectionate dogs that tend to be good with children, need lots of physical exercise and mental stimulation, may have a high prey drive around smaller animals and benefit from early socialisation and puppy classes.",
+      ],
+      sources: ["S576", "S577", "S578", "S579", "S580", "S123", "S10"],
     },
     british_shorthair: {
       aka: "British Blue",
