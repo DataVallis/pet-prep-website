@@ -1149,7 +1149,7 @@ const sl: RegistryCopy = {
       sources: ["C13", "C27", "C28"],
     },
     ragdoll: {
-      aka: "ragdoll mačka, Rag doll",
+      aka: "ragdolka, ragdoll mačka, Rag doll",
       text: [
         "CFA opisuje ragdolla kot veliko, umirjeno mačko s poldolgo, gosto in svilnato dlako ter modrimi očmi. Temnejše »točke« ima v več vzorcih — colourpoint brez bele, mitted z belimi tačkami, bicolour z več bele in van. Počasi dozoreva: polno barvo dlake doseže pri dveh letih, polno velikost in težo pa pri približno štirih.",
         "CFA ga opisuje kot nežno mačko, ki vas pričaka pri vratih in vam sledi iz sobe v sobo; pogosto se igra brez iztegnjenih krempljev. PetMD piše, da je primeren tudi za družine z otroki, a naj bo prvo srečanje z otroki ali drugimi živalmi počasno in pod nadzorom, ter navaja, da nekaterim ragdollom zadošča česanje enkrat do dvakrat na teden; CFA svetuje redno česanje. Rodovniški mucki gredo v nov dom običajno pri 12–13 tednih (PDSA).",
