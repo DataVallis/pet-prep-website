@@ -465,6 +465,13 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
                           className="aspect-square h-auto w-full rounded-[16px] bg-fog object-cover"
                         />
                       ) : null}
+                      <span className="px-1 pb-1 font-display text-[17px] font-bold leading-tight group-hover:underline">{o.name[locale]}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
 
           <section aria-labelledby="sources" className="flex flex-col gap-4">
             <h2 id="sources" className="h-card text-[28px] leading-tight sm:text-[34px]">{c.page.sourcesTitle}</h2>
@@ -485,14 +492,6 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
           </section>
 
           <p className="max-w-3xl text-sm leading-relaxed text-muted">{c.page.disclaimer}</p>
-
-                      <span className="px-1 pb-1 font-display text-[17px] font-bold leading-tight group-hover:underline">{o.name[locale]}</span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ) : null}
 
           <nav aria-label={c.page.eyebrow} className="flex flex-wrap gap-3">
             <Link href={catalogue.href} className="btn btn-secondary">
