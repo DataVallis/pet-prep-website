@@ -308,6 +308,9 @@ const en: RegistryCopy = {
       dna_aon: "DNA test for adult-onset neuropathy (AON), an inherited nerve disease",
       dna_fn: "DNA test for familial nephropathy (FN), an inherited kidney disease",
       patella_scheme: "Kneecap check for luxating patella before breeding",
+      kidney_scheme: "Ultrasound of the kidneys for a missing or malformed kidney (breed club recommendation)",
+      dna_gld: "DNA test for globoid cell leukodystrophy (GLD), an inherited nerve disease",
+      liver_shunt_scheme: "Liver check for a portosystemic shunt or microvascular dysplasia (breed club recommendation)",
       breed_health_scheme: "The breed club's health scheme for the parents",
       hemivertebrae_scheme: "X-ray of the parents' spine for hemivertebrae (malformed spinal bones), after 12 months of age",
       dna_hcm_mc: "DNA test for hypertrophic cardiomyopathy (MC HCM)",
@@ -445,6 +448,7 @@ const en: RegistryCopy = {
     cm_sm_screening: "Chiari-like malformation and syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, can occur in the breed; breeders are advised to screen the parents (UK: BVA/KC scheme).",
     prominent_eyes_injury_dry_eye: "Prominent eyes are more easily injured and can develop ulcers and dryness; dry eye and cherry eye also occur in the breed.",
     legg_perthes: "Legg-Perthes disease, a painful condition in which the hip joint dies and crumbles, can occur in the breed.",
+    glaucoma: "Glaucoma, increased pressure inside the eye that can be painful and lead to blindness, can occur in the breed.",
     primary_lens_luxation: "Primary lens luxation, a painful inherited eye condition in which the lens slips out of place and which can cause blindness, occurs in the breed; a DNA test is available for breeding dogs.",
     inherited_ataxia: "Inherited ataxias (late onset ataxia and spinocerebellar ataxia), which cause loss of balance and coordination, occur in the breed; DNA tests are available for breeding dogs.",
     hydrocephalus: "Hydrocephalus, a build-up of fluid around the brain, can occur in the breed.",
@@ -1106,6 +1110,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to an hour of exercise a day and grooming more than once a week, and the breed sheds; PetMD advises brushing once or twice a week. A large UK study (McMillan 2024, via Dogs Trust) gives a median life expectancy of 13.2 years, PetMD 12–14 years, and like other medium-sized dogs it is fully grown at about 12–15 months (PetMD). The AKC describes highly affectionate dogs that tend to be good with children, need lots of physical exercise and mental stimulation, may have a high prey drive around smaller animals and benefit from early socialisation and puppy classes.",
       ],
       sources: ["S576", "S577", "S578", "S579", "S580", "S123", "S10"],
+    },
+    cairn_terrier: {
+      aka: "Cairn, Cairnie",
+      text: [
+        "The Cairn Terrier comes from Great Britain; the FCI lists it among the small-sized terriers. The Kennel Club standard describes an agile, alert terrier of workmanlike, natural appearance — active, game and hardy, with a fearless and gay disposition, assertive but not aggressive. Its weather-resistant double coat has a profuse, harsh outer coat; the colour is cream, wheaten, red, grey or nearly black, brindling is acceptable and dark ears and muzzle are typical. It gives a height of about 28–31 cm and an ideal weight of 6–7.5 kg.",
+        "The PDSA recommends at least an hour of exercise a day, says Cairns have boundless energy and a strong hunting instinct, so they need socialising early with cats and other small pets and care off the lead, and that once socialised they get on very well with children and make excellent family pets. It advises hand-stripping the coat twice a year and grooming once or twice a week; Dogs Trust says they shed very little. A large UK study (McMillan 2024, via Dogs Trust) gives a median life expectancy of 14.0 years, PetMD 13–15 years, and like other small dogs it is fully grown at about 9–12 months (PetMD). PetMD adds that they need lots of exercise and mental stimulation.",
+      ],
+      sources: ["S583", "S584", "S585", "S586", "S587", "S123", "S10"],
     },
     british_shorthair: {
       aka: "British Blue",
