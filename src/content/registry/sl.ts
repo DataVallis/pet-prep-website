@@ -329,6 +329,9 @@ const sl: RegistryCopy = {
       dna_aon: "Test DNK za nevropatijo z začetkom v odrasli dobi (AON), dedno bolezen živcev",
       dna_fn: "Test DNK za družinsko nefropatijo (FN), dedno bolezen ledvic",
       patella_scheme: "Pregled pogačic za zdrsavanje pogačice (luksacijo patele) pred parjenjem",
+      kidney_scheme: "Ultrazvok ledvic zaradi manjkajoče ali nepravilno razvite ledvice (priporočilo pasemskega kluba)",
+      dna_gld: "Test DNK za globoidnocelično levkodistrofijo (GLD), dedno bolezen živčevja",
+      liver_shunt_scheme: "Pregled jeter za portosistemski šant ali mikrovaskularno displazijo (priporočilo pasemskega kluba)",
       breed_health_scheme: "Zdravstveni program pasemskega kluba za starša",
       hemivertebrae_scheme: "Rentgen hrbtenice staršev za hemivertebre (nepravilno oblikovana vretenca), po 12. mesecu starosti",
       dna_dings2: "Test DNK za »plesočo bolezen dobermanov« (DINGS2), bolezen živcev in mišic",
@@ -466,6 +469,7 @@ const sl: RegistryCopy = {
     cm_sm_screening: "Pri pasmi se lahko pojavita Chiarijeva malformacija in siringomielija, boleča bolezen z votlinicami, polnimi tekočine, v hrbtenjači ob možganih; vzrediteljem svetujejo pregled staršev (v Združenem kraljestvu: shema BVA/KC).",
     prominent_eyes_injury_dry_eye: "Izbuljene oči se lažje poškodujejo, na njih pa lahko nastanejo razjede in izsušenost; pri pasmi se pojavljata tudi suho oko in češnjevo oko (izpad žleze tretje veke).",
     legg_perthes: "Pri pasmi se lahko pojavi Legg-Perthesova bolezen, boleče stanje, pri katerem kolčni sklep odmre in razpade.",
+    glaucoma: "Pri pasmi se lahko pojavi glavkom, povečan pritisk v očesu, ki je lahko boleč in lahko vodi v slepoto.",
     primary_lens_luxation: "Pri pasmi se pojavlja primarna luksacija leče, boleča dedna bolezen oči, pri kateri leča zdrsne s svojega mesta in lahko povzroči slepoto; za pse v vzreji je na voljo test DNK.",
     inherited_ataxia: "Pri pasmi se pojavljajo dedne ataksije (pozno nastala in spinocerebelarna ataksija), ki povzročajo izgubo ravnotežja in usklajenosti gibov; za pse v vzreji so na voljo testi DNK.",
     hydrocephalus: "Pri pasmi se lahko pojavi hidrocefalus, kopičenje tekočine okoli možganov.",
@@ -1127,6 +1131,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča do eno uro gibanja na dan in česanje večkrat na teden, pasmi pa izpada dlaka; PetMD svetuje česanje enkrat do dvakrat na teden. Velika britanska raziskava (McMillan 2024, prek Dogs Trust) navaja mediano življenjske dobe 13,2 leta, PetMD 12–14 let; kot drugi srednje veliki psi zraste do približno 12–15 mesecev (PetMD). AKC ga opisuje kot zelo ljubečega psa, ki se običajno dobro razume z otroki, potrebuje veliko gibanja in miselnih izzivov, ima lahko močan lovski nagon do manjših živali in mu koristita zgodnja socializacija ter tečaj za mladičke.",
       ],
       sources: ["S576", "S577", "S578", "S579", "S580", "S123", "S10"],
+    },
+    cairn_terrier: {
+      aka: "cairn, kern terier, cairnie, Cairn Terrier",
+      text: [
+        "Cairn terier izvira iz Velike Britanije; FCI ga uvršča med male terierje. Standard Kennel Cluba ga opisuje kot okretnega, budnega terierja delovnega, naravnega videza — živahnega, pogumnega in trdoživega, neustrašne in vesele narave, samozavestnega, a ne napadalnega. Vremensko odporna dvojna dlaka ima bogato, ostro krovno dlako; barva je kremasta, pšenično rumena, rdeča, siva ali skoraj črna, dovoljena je tudi tigrasta, značilna pa so temnejša ušesa in gobec. Standard navaja višino približno 28–31 cm in idealno težo 6–7,5 kg.",
+        "PDSA priporoča vsaj eno uro gibanja na dan in pravi, da imajo cairn terierji neskončno energije in močan lovski nagon, zato jih je treba zgodaj socializirati z mačkami in drugimi malimi živalmi ter biti previden brez povodca; ko so socializirani, se zelo dobro razumejo z otroki in so odlični družinski psi. Svetuje ročno trimanje dlake dvakrat na leto in česanje enkrat do dvakrat na teden; po Dogs Trust zelo malo izgubljajo dlako. Velika britanska raziskava (McMillan 2024, prek Dogs Trust) navaja mediano življenjske dobe 14,0 leta, PetMD 13–15 let; kot drugi majhni psi zraste do približno 9–12 mesecev (PetMD). PetMD dodaja, da potrebujejo veliko gibanja in miselnih izzivov.",
+      ],
+      sources: ["S583", "S584", "S585", "S586", "S587", "S123", "S10"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
