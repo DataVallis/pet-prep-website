@@ -330,6 +330,7 @@ const sl: RegistryCopy = {
       dna_fn: "Test DNK za družinsko nefropatijo (FN), dedno bolezen ledvic",
       patella_scheme: "Pregled pogačic za zdrsavanje pogačice (luksacijo patele) pred parjenjem",
       kidney_scheme: "Ultrazvok ledvic zaradi manjkajoče ali nepravilno razvite ledvice (priporočilo pasemskega kluba)",
+      kidney_upc_scheme: "Test urina (razmerje beljakovine : kreatinin) za bolezen ledvic (priporočilo pasemskega kluba)",
       dna_gld: "Test DNK za globoidnocelično levkodistrofijo (GLD), dedno bolezen živčevja",
       liver_shunt_scheme: "Pregled jeter za portosistemski šant ali mikrovaskularno displazijo (priporočilo pasemskega kluba)",
       breed_health_scheme: "Zdravstveni program pasemskega kluba za starša",
@@ -470,6 +471,8 @@ const sl: RegistryCopy = {
     prominent_eyes_injury_dry_eye: "Izbuljene oči se lažje poškodujejo, na njih pa lahko nastanejo razjede in izsušenost; pri pasmi se pojavljata tudi suho oko in češnjevo oko (izpad žleze tretje veke).",
     legg_perthes: "Pri pasmi se lahko pojavi Legg-Perthesova bolezen, boleče stanje, pri katerem kolčni sklep odmre in razpade.",
     glaucoma: "Pri pasmi se lahko pojavi glavkom, povečan pritisk v očesu, ki je lahko boleč in lahko vodi v slepoto.",
+    lethal_acrodermatitis: "Pri pasmi se pojavlja letalni akrodermatitis, dedna bolezen, ki pri mladičih povzroča hude težave s kožo in rastjo.",
+    kidney_disease_urine_screening: "Pri pasmi se pojavljajo težave z ledvicami; s testi urina lahko starše preverijo pred parjenjem.",
     primary_lens_luxation: "Pri pasmi se pojavlja primarna luksacija leče, boleča dedna bolezen oči, pri kateri leča zdrsne s svojega mesta in lahko povzroči slepoto; za pse v vzreji je na voljo test DNK.",
     inherited_ataxia: "Pri pasmi se pojavljajo dedne ataksije (pozno nastala in spinocerebelarna ataksija), ki povzročajo izgubo ravnotežja in usklajenosti gibov; za pse v vzreji so na voljo testi DNK.",
     hydrocephalus: "Pri pasmi se lahko pojavi hidrocefalus, kopičenje tekočine okoli možganov.",
@@ -1139,6 +1142,14 @@ const sl: RegistryCopy = {
         "PDSA priporoča vsaj eno uro gibanja na dan in pravi, da imajo cairn terierji neskončno energije in močan lovski nagon, zato jih je treba zgodaj socializirati z mačkami in drugimi malimi živalmi ter biti previden brez povodca; ko so socializirani, se zelo dobro razumejo z otroki in so odlični družinski psi. Svetuje ročno trimanje dlake dvakrat na leto in česanje enkrat do dvakrat na teden; po Dogs Trust zelo malo izgubljajo dlako. Velika britanska raziskava (McMillan 2024, prek Dogs Trust) navaja mediano življenjske dobe 14,0 leta, PetMD 13–15 let; kot drugi majhni psi zraste do približno 9–12 mesecev (PetMD). PetMD dodaja, da potrebujejo veliko gibanja in miselnih izzivov.",
       ],
       sources: ["S583", "S584", "S585", "S586", "S587", "S123", "S10"],
+    },
+    bull_terrier: {
+      aka: "bulterier, bul terier, Bull Terrier, English Bull Terrier",
+      text: [
+        "Bulterier izvira iz Velike Britanije; FCI ga uvršča med terierje bul tipa (skupina 3). Je srednje velik terier s kratko dlako: PDSA navaja povprečno višino 51–61 cm in povprečno težo 22–31 kg, PetMD pa atletsko postavo, visoko približno 53–56 cm, s težo približno 23–32 kg. PetMD pravi, da je redno gibanje nujno, da so bulterierji ljubeči do družine, tudi do otrok, a niso vedno prijazni do drugih psov ali mačk, ter da sta ključni zgodnja in pogosta socializacija in vzgoja.",
+        "PDSA priporoča vsaj eno uro gibanja na dan, razdeljeno čez dan, in premor po obroku pred gibanjem. Pravi, da se dobro socializiran bulterier razume z ljudmi vseh starosti, a je, ker je nekoliko razburljiv, bolje za družine s starejšimi otroki; rad ima čim več družbe in ima močan lovski nagon, zato je ob mačkah in drugih malih živalih potrebna previdnost. Za dlako zadošča česanje enkrat na teden. PDSA navaja povprečno življenjsko dobo več kot 10 let, PetMD 12–13 let; kot drugi srednje veliki psi zraste do približno 12–15 mesecev (PetMD).",
+      ],
+      sources: ["S589", "S591", "S592", "S10"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",

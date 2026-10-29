@@ -309,6 +309,7 @@ const en: RegistryCopy = {
       dna_fn: "DNA test for familial nephropathy (FN), an inherited kidney disease",
       patella_scheme: "Kneecap check for luxating patella before breeding",
       kidney_scheme: "Ultrasound of the kidneys for a missing or malformed kidney (breed club recommendation)",
+      kidney_upc_scheme: "Urine test (protein to creatinine ratio) for kidney disease (breed club recommendation)",
       dna_gld: "DNA test for globoid cell leukodystrophy (GLD), an inherited nerve disease",
       liver_shunt_scheme: "Liver check for a portosystemic shunt or microvascular dysplasia (breed club recommendation)",
       breed_health_scheme: "The breed club's health scheme for the parents",
@@ -449,6 +450,8 @@ const en: RegistryCopy = {
     prominent_eyes_injury_dry_eye: "Prominent eyes are more easily injured and can develop ulcers and dryness; dry eye and cherry eye also occur in the breed.",
     legg_perthes: "Legg-Perthes disease, a painful condition in which the hip joint dies and crumbles, can occur in the breed.",
     glaucoma: "Glaucoma, increased pressure inside the eye that can be painful and lead to blindness, can occur in the breed.",
+    lethal_acrodermatitis: "Lethal acrodermatitis, an inherited disease that causes severe skin and growth problems in puppies, occurs in the breed.",
+    kidney_disease_urine_screening: "Kidney problems occur in the breed; urine tests can screen the parents before breeding.",
     primary_lens_luxation: "Primary lens luxation, a painful inherited eye condition in which the lens slips out of place and which can cause blindness, occurs in the breed; a DNA test is available for breeding dogs.",
     inherited_ataxia: "Inherited ataxias (late onset ataxia and spinocerebellar ataxia), which cause loss of balance and coordination, occur in the breed; DNA tests are available for breeding dogs.",
     hydrocephalus: "Hydrocephalus, a build-up of fluid around the brain, can occur in the breed.",
@@ -1118,6 +1121,14 @@ const en: RegistryCopy = {
         "The PDSA recommends at least an hour of exercise a day, says Cairns have boundless energy and a strong hunting instinct, so they need socialising early with cats and other small pets and care off the lead, and that once socialised they get on very well with children and make excellent family pets. It advises hand-stripping the coat twice a year and grooming once or twice a week; Dogs Trust says they shed very little. A large UK study (McMillan 2024, via Dogs Trust) gives a median life expectancy of 14.0 years, PetMD 13–15 years, and like other small dogs it is fully grown at about 9–12 months (PetMD). PetMD adds that they need lots of exercise and mental stimulation.",
       ],
       sources: ["S583", "S584", "S585", "S586", "S587", "S123", "S10"],
+    },
+    bull_terrier: {
+      aka: "English Bull Terrier, Bully",
+      text: [
+        "The Bull Terrier comes from Great Britain; the FCI lists it among the bull-type terriers (group 3). It is a medium-sized, short-coated terrier: the PDSA gives an average height of 51–61 cm and an average weight of 22–31 kg, and PetMD describes an athletic build of about 21–22 inches and 50–70 pounds. PetMD calls regular exercise a must and says Bull Terriers are affectionate with family, including children, but not always friendly with other dogs or cats, and that early and frequent socialisation and training are key.",
+        "The PDSA recommends at least an hour of exercise a day, split across the day, and a gap after meals before exercise. It says a well-socialised Bull Terrier gets along with people of all ages but, being a bit excitable, is better with older children; it likes company as much as possible and has a high prey drive, so care is needed around cats and other small animals. A weekly brush is enough for the coat. The PDSA gives an average lifespan of over 10 years and PetMD 12–13 years; like other medium-sized dogs it is fully grown at about 12–15 months (PetMD).",
+      ],
+      sources: ["S589", "S591", "S592", "S10"],
     },
     british_shorthair: {
       aka: "British Blue",
