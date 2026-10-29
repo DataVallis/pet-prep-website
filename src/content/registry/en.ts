@@ -1130,6 +1130,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S589", "S591", "S592", "S10"],
     },
+    miniature_pinscher: {
+      aka: "Min Pin, Zwergpinscher",
+      text: [
+        "The Miniature Pinscher comes from Germany; the FCI lists it among the pinschers and schnauzers (group 2) and describes it as a reduced image of the German Pinscher — lively, spirited, self-assured and even-tempered. Its coat is short, dense, smooth and shiny, either self-coloured deer red to dark red-brown or black and tan, and its tail is natural. The FCI standard gives a height of 25–30 cm and a weight of 4–6 kg for dogs and bitches; like other toy dogs it is fully grown at about 8–12 months (PetMD).",
+        "The PDSA recommends up to half an hour of exercise a day for these energetic, busy little dogs, says a brush once a week is usually enough for the coat, and notes that they can be stubborn and independent, so training needs practice and patience. PetMD says they can make excellent family pets with the right socialisation and training. VCA describes the breed as playful and very good with children, though very young or unruly children may hurt it with rough play, and says its thin coat and small size make it vulnerable to chilling. The PDSA gives an average lifespan of over 12 years and PetMD 12–16 years.",
+      ],
+      sources: ["S594", "S595", "S596", "S597", "S10"],
+    },
     british_shorthair: {
       aka: "British Blue",
       text: [
