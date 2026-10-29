@@ -1151,6 +1151,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S589", "S591", "S592", "S10"],
     },
+    miniature_pinscher: {
+      aka: "pritlikavi pinč, pinč, min pin, Miniature Pinscher, Zwergpinscher",
+      text: [
+        "Pritlikavi pinč izvira iz Nemčije; FCI ga uvršča med pinče in šnavcerje (skupina 2) in ga opisuje kot pomanjšano podobo nemškega pinča — živahnega, ognjevitega, samozavestnega in uravnovešenega. Dlaka je kratka, gosta, gladka in svetleča, enobarvno jelenje rdeča do temno rdečerjava ali črna s porjavelimi oznakami, rep je naraven. Standard FCI za pse in psice navaja višino 25–30 cm in težo 4–6 kg; kot drugi zelo majhni psi zraste do približno 8–12 mesecev (PetMD).",
+        "PDSA za te energične, nemirne male pse priporoča do pol ure gibanja na dan, pravi, da za dlako običajno zadošča česanje enkrat na teden, in opozarja, da so lahko trmasti in samostojni, zato vzgoja zahteva vajo in potrpežljivost. PetMD pravi, da so ob pravi socializaciji in vzgoji lahko odlični družinski psi. VCA pasmo opisuje kot igrivo in zelo dobro z otroki, vendar ga zelo majhni ali neukrotljivi otroci pri grobi igri lahko poškodujejo; zaradi tanke dlake in majhnosti ga hitro zebe. PDSA navaja povprečno življenjsko dobo več kot 12 let, PetMD 12–16 let.",
+      ],
+      sources: ["S594", "S595", "S596", "S597", "S10"],
+    },
     british_shorthair: {
       aka: "britanka, British Blue",
       text: [
