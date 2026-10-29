@@ -1159,6 +1159,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S594", "S595", "S596", "S597", "S10"],
     },
+    pyrenean_mountain_dog: {
+      aka: "pirenejski gorski pes, pirenejski pes, pirenejec, patou, Pyrenean Mountain Dog, Great Pyrenees, Chien de Montagne des Pyrénées",
+      text: [
+        "Pirenejski gorski pes — v ZDA »Great Pyrenees« — izvira iz Francije; FCI ga uvršča med molose gorskega tipa (skupina 2) in opisuje kot psa velike rasti, mogočnega in močne postave, a z določeno eleganco. Dlaka je bela ali bela z jazbečastimi, volčje sivimi, bledo rumenimi ali oranžnimi lisami na glavi in ušesih. Standard FCI navaja višino 70–80 cm za pse in 65–75 cm za psice; PDSA navaja povprečno težo 40–50 kg. Kot drugi zelo veliki psi zraste do približno 18–24 mesecev (PetMD).",
+        "Royal Kennel Club priporoča do eno uro gibanja na dan, pravi, da je primeren za veliko hišo z velikim vrtom, da potrebuje nego dlake večkrat na teden, da mu dlaka izpada in da običajno živi manj kot deset let (PetMD in VCA navajata 10–12 let). PDSA jih opisuje kot nežne velikane — mirne, dobrodušne pse, ki se običajno dobro razumejo z vsemi — in pravi, da vzgoja zahteva potrpežljivost in nagrajevanje. VCA piše, da je vdan družini, posebej otrokom, in da je zgodnja socializacija zelo pomembna; PetMD dodaja, da se dobro razume z drugimi ljubljenčki, a je morda najbolje v domu brez majhnih otrok, ter svetuje, da se okoli obrokov izogibamo napornemu gibanju zaradi nevarnosti napenjanja želodca.",
+      ],
+      sources: ["S599", "S600", "S603", "S604", "S605", "S10"],
+    },
     british_shorthair: {
       aka: "britanka, British Blue",
       text: [

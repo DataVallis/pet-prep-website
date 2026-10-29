@@ -1138,6 +1138,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S594", "S595", "S596", "S597", "S10"],
     },
+    pyrenean_mountain_dog: {
+      aka: "Great Pyrenees, Pyrenees, Patou, Chien de Montagne des Pyrénées",
+      text: [
+        "The Pyrenean Mountain Dog — called the Great Pyrenees in the United States — comes from France; the FCI lists it among the mountain-type molossoids (group 2) and describes a dog of great size, imposing and strongly built, but not without a certain elegance. Its coat is white, or white with patches of badger, wolf-grey, pale yellow or orange on the head and ears. The FCI standard gives a height of 70–80 cm for dogs and 65–75 cm for bitches; the PDSA gives an average weight of 40–50 kg. Like other giant dogs it is fully grown at about 18–24 months (PetMD).",
+        "The Royal Kennel Club recommends up to an hour of exercise a day, says the breed suits a large house with a large garden, needs grooming more than once a week and sheds, and gives a lifespan of under 10 years (PetMD and VCA give 10–12 years). The PDSA calls them gentle giants — calm, good-natured dogs that tend to get on well with everyone — and says training needs patience and reward-based methods. VCA says the Pyr is devoted to its family, especially to children, and that early socialisation is very important; PetMD says it lives well with other pets but may be best in homes without smaller children, and advises avoiding vigorous exercise around mealtimes because of the risk of bloat.",
+      ],
+      sources: ["S599", "S600", "S603", "S604", "S605", "S10"],
+    },
     british_shorthair: {
       aka: "British Blue",
       text: [
