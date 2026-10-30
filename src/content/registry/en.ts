@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs", 10: "sighthounds" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland" };
 
 const en: RegistryCopy = {
   hub: {
@@ -419,6 +419,7 @@ const en: RegistryCopy = {
     collapsing_trachea: "A collapsing trachea, a weakness of the windpipe that can cause coughing and breathing difficulty, can occur in the breed.",
     gm1_gangliosidosis: "GM1 gangliosidosis, an inherited disease of the nervous system, can occur in the breed; a DNA test of the parents can rule it out.",
     addisons_disease: "Addison's disease, a lack of hormones from the adrenal glands, can occur in the breed.",
+    protein_losing_disease: "Protein-losing diseases of the kidneys or the gut, which can cause diarrhoea and weight loss, can occur in the breed.",
     diabetes_mellitus: "Diabetes mellitus, where the body cannot control its blood sugar properly, can occur in the breed.",
     dental_disease_home_brushing: "Like many small dogs, the breed is prone to dental disease, so brushing the teeth at home with a dog toothbrush and toothpaste is advised.",
     dermoid_sinus: "Dermoid sinus, a painful condition in which a tube in the skin of the back connects to the spinal cord, can occur in the breed; breed clubs run a dermoid sinus checking scheme for puppies.",
@@ -1145,6 +1146,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to an hour of exercise a day, says the breed suits a large house with a large garden, needs grooming more than once a week and sheds, and gives a lifespan of under 10 years (PetMD and VCA give 10–12 years). The PDSA calls them gentle giants — calm, good-natured dogs that tend to get on well with everyone — and says training needs patience and reward-based methods. VCA says the Pyr is devoted to its family, especially to children, and that early socialisation is very important; PetMD says it lives well with other pets but may be best in homes without smaller children, and advises avoiding vigorous exercise around mealtimes because of the risk of bloat.",
       ],
       sources: ["S599", "S600", "S603", "S604", "S605", "S10"],
+    },
+    soft_coated_wheaten_terrier: {
+      aka: "Wheaten Terrier, Wheaten, Irish Soft Coated Wheaten Terrier, SCWT",
+      text: [
+        "The Soft Coated Wheaten Terrier comes from Ireland; the FCI lists it as the Irish Soft Coated Wheaten Terrier among the large and medium-sized terriers. The Royal Kennel Club standard describes a medium-sized, compact, upstanding terrier with a soft, silky, wheaten-coloured coat that falls in loose curls or waves — good tempered, spirited and game, full of confidence and humour. The only colour is a good clear wheaten. The PDSA gives an average height of 46–49 cm and an average weight of 16–20.5 kg (the Kennel Club standard gives dogs 16–20.5 kg, bitches somewhat less); like other medium-sized dogs it is fully grown at about 12–15 months (PetMD).",
+        "The Royal Kennel Club recommends up to an hour of exercise a day, says the breed suits a small house, needs grooming every day and does not shed. A large UK study (McMillan 2024, via Dogs Trust) gives a median life expectancy of 13.7 years; PetMD and VCA give 12–14 years. The PDSA calls them friendly, trustworthy dogs that make great family pets, though they can be a little stubborn. VCA says their gentle, playful nature makes them a good match for children; PetMD says interactions with children should be supervised, that they dislike being left alone for long periods, and advises professional grooming every four to six weeks, a bath about monthly and cleaning the ears every one or two weeks.",
+      ],
+      sources: ["S608", "S610", "S612", "S613", "S614", "S123", "S10"],
     },
     british_shorthair: {
       aka: "British Blue",

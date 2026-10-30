@@ -16,7 +16,7 @@ type Fci = { number: number; group: number; origin: string };
 const PROPER_START = /^(Maine Coon|Chesapeake|Jack Russell)\b/;
 const mid = (name: string) => (PROPER_START.test(name) ? name : name.charAt(0).toLocaleLowerCase("sl") + name.slice(1));
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi", 10: "hrti" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -440,6 +440,7 @@ const sl: RegistryCopy = {
     collapsing_trachea: "Pri pasmi se lahko pojavi kolaps sapnika, šibkost sapnika, ki lahko povzroča kašelj in težko dihanje.",
     gm1_gangliosidosis: "Pri pasmi se lahko pojavi gangliozidoza GM1, dedna bolezen živčevja; test DNK staršev jo lahko izključi.",
     addisons_disease: "Pri pasmi se lahko pojavi Addisonova bolezen, pomanjkanje hormonov nadledvične žleze.",
+    protein_losing_disease: "Pri pasmi se lahko pojavijo bolezni, pri katerih telo izgublja beljakovine skozi ledvice ali črevesje, kar lahko povzroči drisko in hujšanje.",
     diabetes_mellitus: "Pri pasmi se lahko pojavi sladkorna bolezen (diabetes mellitus), pri kateri telo ne uravnava dobro krvnega sladkorja.",
     dental_disease_home_brushing: "Kot mnogi majhni psi je pasma nagnjena k boleznim zob, zato je priporočljivo psu doma ščetkati zobe s pasjo zobno ščetko in zobno pasto.",
     dermoid_sinus: "Pri pasmi se lahko pojavi dermoidni sinus, boleča bolezen, pri kateri je koža na hrbtu povezana s hrbtenjačo; klubi pasme imajo shemo za pregled mladičkov.",
@@ -1166,6 +1167,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča do eno uro gibanja na dan, pravi, da je primeren za veliko hišo z velikim vrtom, da potrebuje nego dlake večkrat na teden, da mu dlaka izpada in da običajno živi manj kot deset let (PetMD in VCA navajata 10–12 let). PDSA jih opisuje kot nežne velikane — mirne, dobrodušne pse, ki se običajno dobro razumejo z vsemi — in pravi, da vzgoja zahteva potrpežljivost in nagrajevanje. VCA piše, da je vdan družini, posebej otrokom, in da je zgodnja socializacija zelo pomembna; PetMD dodaja, da se dobro razume z drugimi ljubljenčki, a je morda najbolje v domu brez majhnih otrok, ter svetuje, da se okoli obrokov izogibamo napornemu gibanju zaradi nevarnosti napenjanja želodca.",
       ],
       sources: ["S599", "S600", "S603", "S604", "S605", "S10"],
+    },
+    soft_coated_wheaten_terrier: {
+      aka: "irski mehkodlaki pšenični terier, pšenični terier, irski pšenični terier, wheaten terier, Soft Coated Wheaten Terrier, Wheaten Terrier, SCWT",
+      text: [
+        "Irski mehkodlaki pšenični terier (Soft Coated Wheaten Terrier) izvira z Irske; FCI ga uvršča med velike in srednje terierje. Standard Royal Kennel Cluba opisuje srednje velikega, kompaktnega, pokončnega terierja z mehko, svilnato dlako pšenične barve, ki pada v ohlapnih kodrih ali valovih — dobrovoljnega, živahnega in pogumnega, polnega samozavesti in humorja. Edina barva je čista pšenična. PDSA navaja povprečno višino 46–49 cm in povprečno težo 16–20,5 kg (standard Kennel Cluba navaja za pse 16–20,5 kg, psice so nekoliko lažje); kot drugi srednje veliki psi zraste do približno 12–15 mesecev (PetMD).",
+        "Royal Kennel Club priporoča do eno uro gibanja na dan, pravi, da je primeren za majhno hišo, da potrebuje nego dlake vsak dan in da mu dlaka ne izpada. Velika britanska raziskava (McMillan 2024, prek Dogs Trust) navaja mediano pričakovane življenjske dobe 13,7 leta; PetMD in VCA navajata 12–14 let. PDSA jih opisuje kot prijazne, zanesljive pse, ki so odlični družinski ljubljenčki, a so lahko nekoliko trmasti. VCA piše, da je zaradi nežne in igrive narave dobra izbira za otroke; PetMD dodaja, da naj bo igra z otroki pod nadzorom, da ne mara biti dolgo sam, in svetuje obisk pasjega frizerja vsake štiri do šest tednov, kopanje približno enkrat na mesec in čiščenje ušes vsak teden ali dva.",
+      ],
+      sources: ["S608", "S610", "S612", "S613", "S614", "S123", "S10"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
