@@ -1184,6 +1184,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S615", "S617", "S619", "S620", "S10"],
     },
+    american_staffordshire_terrier: {
+      aka: "ameriški staffordshirski terier, ameriški stafordširski terier, amstaff, ameriski staffordshirski terier, American Staffordshire Terrier, AmStaff",
+      text: [
+        "Ameriški staffordshirski terier (American Staffordshire Terrier) izvira iz ZDA; FCI ga uvršča med terierje bulterierskega tipa. Standard zahteva veliko moč glede na velikost in navaja višino 46–48 cm za samce in 43–46 cm za samice, teže pa ne. PetMD navaja 40–70 funtov (približno 18–32 kg) za oba spola; pes te velikosti zraste do približno 12–15 mesecev (PetMD).",
+        "PetMD priporoča vsaj 60 minut gibanja na dan in pravi, da je potrpežljiv in ljubeč z otroki, da je lahko nagnjen k tesnobi ob ločitvi in da je zaradi močnega lovskega nagona življenje z manjšimi psi ali mačkami lahko težje. Britanska raziskava (McMillan in sod., 2024, v tabeli Dogs Trust) navaja mediano pričakovane življenjske dobe 12,5 leta; PetMD navaja 12–16 let. VCA priporoča česanje enkrat na teden; PetMD svetuje socializacijo mladička, brez gibanja takoj po obroku (zasuk želodca) ter kopanje in čiščenje ušes približno vsakih 4–6 tednov.",
+      ],
+      sources: ["S625", "S626", "S628", "S629", "S123", "S10"],
+    },
     british_shorthair: {
       aka: "britanka, British Blue",
       text: [

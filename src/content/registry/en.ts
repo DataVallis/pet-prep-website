@@ -1163,6 +1163,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S615", "S617", "S619", "S620", "S10"],
     },
+    american_staffordshire_terrier: {
+      aka: "AmStaff, Am Staff, Staffordshire Terrier",
+      text: [
+        "The American Staffordshire Terrier comes from the USA; the FCI lists it among the bull-type terriers. Its standard asks for great strength for its size and gives a height of 46–48 cm for males and 43–46 cm for females, but no weight. PetMD gives 40–70 pounds (about 18–32 kg) for both sexes; a dog of this size is fully grown at about 12–15 months (PetMD).",
+        "PetMD recommends at least 60 minutes of exercise a day, says the breed is patient and loving with children, that it can be prone to separation anxiety and that its strong prey drive can make life with smaller dogs or cats more difficult. A UK study (McMillan et al., 2024, as tabled by Dogs Trust) gives a median life expectancy of 12.5 years; PetMD gives 12–16 years. VCA recommends weekly brushing; PetMD advises socialising the puppy, no exercise right after a meal (bloat), and bathing and ear cleaning about every 4–6 weeks.",
+      ],
+      sources: ["S625", "S626", "S628", "S629", "S123", "S10"],
+    },
     british_shorthair: {
       aka: "British Blue",
       text: [
