@@ -31,6 +31,8 @@ export const pageSlugs = {
   about: { en: "about", sl: "o-nas" },
   /** Mascot page (David 2026-10-25): linked from the footer only. */
   curio: { en: "meet-curio", sl: "spoznaj-curia" },
+  /** #walkyourpet movement (David 2026-10-30): the phrase is never translated, same slug everywhere. */
+  walkyourpet: { en: "walkyourpet", sl: "walkyourpet" },
 } as const satisfies Record<string, Record<Locale, string>>;
 
 export type PageKey = keyof typeof pageSlugs;

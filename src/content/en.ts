@@ -52,7 +52,7 @@ const en: Dictionary = {
     tagline: "Ready for a pet. There for its whole life.",
     groups: [
       { title: "Product", links: ["howItWorks", "parents", "animals", "afterAdoption", "pricing", "faq"] },
-      { title: "Company", links: ["about", "curio", "partners", "investors", "contact"] },
+      { title: "Company", links: ["about", "curio", "walkyourpet", "partners", "investors", "contact"] },
       { title: "Trust", links: ["privacy", "terms", "childSafety", "accessibility", "deleteAccount"] },
     ],
     rights: "All rights reserved.",
@@ -1159,6 +1159,78 @@ const en: Dictionary = {
             { q: "Can my child look after Curio in the app?", a: "No. In the app your family cares for a lifelike pet of a real breed, with the same daily needs as the real animal. Curio only appears in our videos and on the website." },
             { q: "Why doesn't Curio have a mouth?", a: "Because our logo doesn't. Curio says everything with its eyes — and it never begs for treats out loud." },
             { q: "Where can I see new Curio videos?", a: "On TikTok and Instagram, @petprep.si." },
+          ],
+        },
+      ],
+    },
+    walkyourpet: {
+      meta: {
+        title: "#walkyourpet — the movement that started with a real kid",
+        description:
+          "“We could go walk your pet.” A child said it, and now it's a movement: families going outside because a pet needs a walk. How it started, what it means in PetPrep, and how to join.",
+      },
+      navLabel: "#walkyourpet",
+      eyebrow: "#walkyourpet",
+      title: "Walk your pet.",
+      lead: "We didn't invent this phrase. A child did. Now it's an invitation for every family: go outside, because a pet needs its walk — a real one, or the one you're practising with in PetPrep.",
+      hero: { src: "/walkyourpet/story-01.webp", alt: "Story card: “Overheard at the founder's house.” A child says “Lahko bi šli walk your pet” — “We could go walk your pet” — and the title reads “#walkyourpet is a thing now.”", width: 720, height: 1280 },
+      blocks: [
+        {
+          type: "prose",
+          id: "how-it-started",
+          heading: "How it started",
+          paragraphs: [
+            "In October 2026 our founder's kids had a friend over. They were deciding whether to go out, and she said, half in Slovenian and half in English: “Lahko bi šli walk your pet” — “We could go walk your pet.”",
+            "Nobody asked her to. She knew PetPrep, where a dog's walk only counts if you really go outside, and “walk your pet” had simply become a reason to go. We liked it so much that we kept it — in English, for every language.",
+            "Real conversation. Real kids.",
+          ],
+        },
+        {
+          type: "screens",
+          id: "in-the-app",
+          heading: "What it means in PetPrep",
+          intro: "In PetPrep the dog's daily walk is your child's real steps, read from Apple Health or Health Connect if you allow it. Staying on the sofa doesn't count, so “walk your pet” always means going outside. No GPS and no location — just steps.",
+          items: [{ screen: "hud", caption: "" }],
+        },
+        {
+          type: "steps",
+          id: "join",
+          heading: "Join the movement",
+          intro: "You don't need the app for this. Any family that goes outside for a pet — a real one or a practice one — is part of it.",
+          items: [
+            { title: "Go outside", text: "Take the dog for its walk. Or, if you're still deciding about a pet, go for the walk you would take with one." },
+            { title: "Capture the moment", text: "Shoes by the door, a leash, the path, paws on the grass. Not faces, not names." },
+            { title: "Share it", text: "Post it with #walkyourpet and tag @petprep.si on Instagram or TikTok. With your permission, we may share the best moments here and on our profiles." },
+          ],
+        },
+        {
+          type: "list",
+          id: "sharing-safely",
+          heading: "Sharing safely",
+          intro: "#walkyourpet is about children, so these rules apply to everything we share:",
+          items: [
+            "Parents post, not children. Only a parent decides what goes online.",
+            "No children's faces, names, schools or addresses — and never another family's child.",
+            "We only repost with a parent's permission, and we take a post down whenever you ask.",
+            "Quotes from children are always real. We never invent or “improve” what a child said.",
+            "It's an invitation, not a duty. No streaks to keep, no pressure — just a good reason to go out.",
+          ],
+        },
+        {
+          type: "callout",
+          title: "The first moment is ours. The next one could be yours.",
+          text: "Share your family's walk with #walkyourpet and tag @petprep.si. Questions or a story you'd like to tell: hello@petprep.si.",
+          tone: "dark",
+        },
+        {
+          type: "faq",
+          id: "questions",
+          heading: "Questions",
+          items: [
+            { q: "Do I need PetPrep to join?", a: "No. Anyone who goes outside for a pet can use #walkyourpet. PetPrep is where the phrase was born, and where a practice dog's walk only counts in real steps." },
+            { q: "Does it work for cats in PetPrep?", a: "Not as a walk. Cats don't go for walks, so in PetPrep a cat's needs are met with play, not steps. Walking is for dogs." },
+            { q: "Why is the phrase in English?", a: "Because that's how the child said it — in English in the middle of a Slovenian sentence. Kids everywhere mix it in, so it stays the same in every language." },
+            { q: "Will you post my child?", a: "Only what you share yourself and allow us to repost, and never a child's face or name. Ask us at hello@petprep.si and we remove it." },
           ],
         },
       ],
