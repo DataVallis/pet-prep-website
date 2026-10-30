@@ -1155,6 +1155,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S608", "S610", "S612", "S613", "S614", "S123", "S10"],
     },
+    irish_wolfhound: {
+      aka: "Wolfhound, Cú Faoil, Irish Wolf Hound",
+      text: [
+        "The Irish Wolfhound comes from Ireland; the FCI lists it among the rough-haired sighthounds. The PDSA gives an average height of 71–79 cm and an average weight of 40–55 kg; like other giant dogs it is fully grown at about 18–24 months (PetMD). The Royal Kennel Club calls its size extra large and says it suits a large house with a large garden in the country.",
+        "The Royal Kennel Club recommends more than two hours of exercise a day, grooming more than once a week, and says the breed sheds. The Kennel Club and the PDSA give a lifespan of under 10 years; PetMD gives 6–8 years. The PDSA does not recommend the breed for homes with smaller children because of its size and strength, nor with smaller pets because of its high prey drive, and says it should never be left alone for more than four hours. PetMD advises socialising the puppy from the day it comes home, no exercise right before or after eating (bloat) and cleaning the ears every two to four weeks.",
+      ],
+      sources: ["S615", "S617", "S619", "S620", "S10"],
+    },
     british_shorthair: {
       aka: "British Blue",
       text: [
