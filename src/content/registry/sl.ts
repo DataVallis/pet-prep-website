@@ -1176,6 +1176,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S608", "S610", "S612", "S613", "S614", "S123", "S10"],
     },
+    irish_wolfhound: {
+      aka: "irski volčji hrt, volčji hrt, irski hrt, irski volcji hrt, Irish Wolfhound, Wolfhound",
+      text: [
+        "Irski volčji hrt (Irish Wolfhound) izvira z Irske; FCI ga uvršča med hrte z ostro dlako. PDSA navaja povprečno višino 71–79 cm in povprečno težo 40–55 kg; kot drugi zelo veliki psi zraste do približno 18–24 mesecev (PetMD). Royal Kennel Club ga uvršča med zelo velike pse in pravi, da je primeren za veliko hišo z velikim vrtom na podeželju.",
+        "Royal Kennel Club priporoča več kot dve uri gibanja na dan in nego dlake večkrat na teden ter pravi, da mu dlaka izpada. Kennel Club in PDSA navajata življenjsko dobo pod 10 let; PetMD navaja 6–8 let. PDSA ga zaradi velikosti in moči ne priporoča za dom z manjšimi otroki, zaradi močnega lovskega nagona ne z manjšimi živalmi, in pravi, da naj nikoli ne bo sam več kot štiri ure. PetMD svetuje socializacijo mladička od prvega dne doma, brez gibanja tik pred obrokom ali po njem (zasuk želodca) in čiščenje ušes vsaka dva do štiri tedne.",
+      ],
+      sources: ["S615", "S617", "S619", "S620", "S10"],
+    },
     british_shorthair: {
       aka: "britanka, British Blue",
       text: [
