@@ -52,7 +52,7 @@ const sl: Dictionary = {
     tagline: "Pripravljeni na žival. Ob njej vse življenje.",
     groups: [
       { title: "Izdelek", links: ["howItWorks", "parents", "animals", "afterAdoption", "pricing", "faq"] },
-      { title: "Podjetje", links: ["about", "curio", "partners", "investors", "contact"] },
+      { title: "Podjetje", links: ["about", "curio", "walkyourpet", "partners", "investors", "contact"] },
       { title: "Zaupanje", links: ["privacy", "terms", "childSafety", "accessibility", "deleteAccount"] },
     ],
     rights: "Vse pravice pridržane.",
@@ -1157,6 +1157,78 @@ const sl: Dictionary = {
             { q: "Lahko otrok v aplikaciji skrbi za Curia?", a: "Ne. V aplikaciji vaša družina skrbi za realističnega ljubljenčka prave pasme z enakimi vsakodnevnimi potrebami kot prava žival. Curio se pojavlja samo v naših videih in na spletni strani." },
             { q: "Zakaj Curio nima ust?", a: "Ker jih nima niti naš logotip. Curio vse pove z očmi — in nikoli na glas ne prosi za priboljške." },
             { q: "Kje lahko vidim nove videe s Curiem?", a: "Na TikToku in Instagramu, @petprep.si." },
+          ],
+        },
+      ],
+    },
+    walkyourpet: {
+      meta: {
+        title: "#walkyourpet — gibanje, ki ga je začel pravi otrok",
+        description:
+          "»Lahko bi šli walk your pet.« Rekel je otrok, zdaj pa je to gibanje: družine gredo ven, ker ljubljenček potrebuje sprehod. Kako se je začelo, kaj pomeni v PetPrepu in kako se pridružite.",
+      },
+      navLabel: "#walkyourpet",
+      eyebrow: "#walkyourpet",
+      title: "Walk your pet.",
+      lead: "Te fraze nismo izmislili mi. Izmislil si jo je otrok. Zdaj je povabilo vsaki družini: pojdite ven, ker ljubljenček potrebuje sprehod — pravi ali tisti, ki ga vadite v PetPrepu.",
+      hero: { src: "/walkyourpet/story-01.webp", alt: "Kartica: »Overheard at the founder's house.« Otrok reče »Lahko bi šli walk your pet«, naslov pa pravi »#walkyourpet is a thing now.«", width: 720, height: 1280 },
+      blocks: [
+        {
+          type: "prose",
+          id: "kako-se-je-zacelo",
+          heading: "Kako se je začelo",
+          paragraphs: [
+            "Oktobra 2026 so imeli otroci našega ustanovitelja na obisku prijateljico. Odločali so se, ali gredo ven, in rekla je napol po slovensko in napol po angleško: »Lahko bi šli walk your pet.«",
+            "Nihče je ni nagovarjal. Poznala je PetPrep, kjer se pasji sprehod šteje samo, če res greš ven, in »walk your pet« je postal preprosto razlog, da greš. Fraza nam je bila tako všeč, da smo jo obdržali — v angleščini, za vse jezike.",
+            "Resničen pogovor. Resnični otroci.",
+          ],
+        },
+        {
+          type: "screens",
+          id: "v-aplikaciji",
+          heading: "Kaj to pomeni v PetPrepu",
+          intro: "V PetPrepu je pasji dnevni sprehod otrokovi pravi koraki, ki jih aplikacija prebere iz Apple Zdravja ali Health Connect, če to dovolite. Sedenje na kavču ne šteje, zato »walk your pet« vedno pomeni iti ven. Brez GPS in brez lokacije — samo koraki.",
+          items: [{ screen: "hud", caption: "" }],
+        },
+        {
+          type: "steps",
+          id: "pridruzite-se",
+          heading: "Pridružite se gibanju",
+          intro: "Za to ne potrebujete aplikacije. Del gibanja je vsaka družina, ki gre ven zaradi ljubljenčka — pravega ali tistega za vajo.",
+          items: [
+            { title: "Pojdite ven", text: "Peljite psa na sprehod. Ali pa, če se o ljubljenčku še odločate, pojdite na sprehod, kakršnega bi imeli z njim." },
+            { title: "Ujemite trenutek", text: "Čevlji pri vratih, povodec, pot, tačke na travi. Brez obrazov in brez imen." },
+            { title: "Delite ga", text: "Objavite ga z #walkyourpet in označite @petprep.si na Instagramu ali TikToku. Z vašim dovoljenjem lahko najlepše trenutke delimo tukaj in na naših profilih." },
+          ],
+        },
+        {
+          type: "list",
+          id: "varno-deljenje",
+          heading: "Varno deljenje",
+          intro: "#walkyourpet je o otrocih, zato za vse, kar delimo, veljajo ta pravila:",
+          items: [
+            "Objavljajo starši, ne otroci. Kaj gre na splet, odloči samo starš.",
+            "Brez obrazov, imen, šol ali naslovov otrok — in nikoli otroka iz druge družine.",
+            "Ponovno objavimo samo z dovoljenjem starša in objavo umaknemo, kadar koli nas prosite.",
+            "Citati otrok so vedno resnični. Nikoli si ne izmislimo ali »izboljšamo« tega, kar je otrok rekel.",
+            "To je povabilo, ne obveznost. Brez nizov, ki jih je treba ohranjati, brez pritiska — samo dober razlog, da greste ven.",
+          ],
+        },
+        {
+          type: "callout",
+          title: "Prvi trenutek je naš. Naslednji je lahko vaš.",
+          text: "Delite sprehod svoje družine z #walkyourpet in označite @petprep.si. Vprašanja ali zgodba, ki bi jo radi povedali: hello@petprep.si.",
+          tone: "dark",
+        },
+        {
+          type: "faq",
+          id: "vprasanja",
+          heading: "Vprašanja",
+          items: [
+            { q: "Ali za sodelovanje potrebujem PetPrep?", a: "Ne. #walkyourpet lahko uporabi vsak, ki gre ven zaradi ljubljenčka. PetPrep je kraj, kjer se je fraza rodila in kjer se sprehod psa za vajo šteje samo v pravih korakih." },
+            { q: "Ali v PetPrepu deluje tudi za mačke?", a: "Ne kot sprehod. Mačke ne hodijo na sprehode, zato v PetPrepu mačkine potrebe izpolnite z igro, ne s koraki. Sprehodi so za pse." },
+            { q: "Zakaj je fraza v angleščini?", a: "Ker jo je otrok tako rekel — po angleško sredi slovenskega stavka. Otroci jo vpletajo povsod, zato ostane enaka v vseh jezikih." },
+            { q: "Ali boste objavili mojega otroka?", a: "Samo tisto, kar sami delite in nam dovolite ponovno objaviti, in nikoli otrokovega obraza ali imena. Pišite na hello@petprep.si in objavo umaknemo." },
           ],
         },
       ],

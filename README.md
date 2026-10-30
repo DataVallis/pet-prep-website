@@ -16,7 +16,7 @@ npm run build && npm run lint && npx tsc --noEmit
 | | English (default) | Slovenian |
 |---|---|---|
 | Home | `/` | `/sl` |
-| Pages | `/how-it-works`, `/for-parents`, `/animals`, `/when-it-comes-home`, `/pricing`, `/faq`, `/partners`, `/investors`, `/contact`, `/privacy`, `/terms`, `/child-safety`, `/meet-curio` | `/sl/kako-deluje`, `/sl/za-starse`, `/sl/zivali`, `/sl/ko-pride-domov`, `/sl/cenik`, `/sl/pogosta-vprasanja`, `/sl/partnerji`, `/sl/vlagatelji`, `/sl/kontakt`, `/sl/zasebnost`, `/sl/pogoji`, `/sl/varnost-otrok`, `/sl/spoznaj-curia` |
+| Pages | `/how-it-works`, `/for-parents`, `/animals`, `/when-it-comes-home`, `/pricing`, `/faq`, `/partners`, `/investors`, `/contact`, `/privacy`, `/terms`, `/child-safety`, `/meet-curio`, `/walkyourpet` | `/sl/kako-deluje`, `/sl/za-starse`, `/sl/zivali`, `/sl/ko-pride-domov`, `/sl/cenik`, `/sl/pogosta-vprasanja`, `/sl/partnerji`, `/sl/vlagatelji`, `/sl/kontakt`, `/sl/zasebnost`, `/sl/pogoji`, `/sl/varnost-otrok`, `/sl/spoznaj-curia`, `/sl/walkyourpet` |
 | Animal register | `/animals/<species>` (`/animals/dogs`), `/animals/<species>/<breed>` (`/animals/dogs/labrador-retriever`), `/animals/<species>/compare?b=a,b,c` | `/sl/zivali/psi`, `/sl/zivali/psi/labradorec`, `/sl/zivali/psi/primerjava?b=…` |
 
 - `src/proxy.ts` serves English from the root (internally `/en/...`) and redirects `/en/...` to the root, so every page has one URL.
@@ -41,6 +41,10 @@ Hub `/animals` → species catalogue `/animals/<species>` (search, filters, sort
 
 `/meet-curio` · `/sl/spoznaj-curia` (David 2026-10-25), linked from the footer only (group Company), never the header. Curio is the brand mascot, **not** the pet in the app — the page says so next to a real app breed portrait. Content: `pages.curio` in `src/content/{en,sl}.ts`, with the optional page `hero` and the blocks `pair`, `gallery` (images; a tile with `video` becomes a player with a poster, never autoplay) and `downloads` (media kit + usage rules).
 Images: `public/curio/*.webp` (display) and `public/curio/kit/` (download originals), copied from `brand/mascot/` in the `pet-prep` repo; `public/curio/petprep-curio-media-kit.zip` = everything in `kit/` (rebuild it when a kit file changes: `cd public/curio/kit && zip -X ../petprep-curio-media-kit.zip *`). Social profiles (`site.social`, also JSON-LD `sameAs`): TikTok and Instagram `@petprep.si`.
+
+## #walkyourpet page
+
+`/walkyourpet` · `/sl/walkyourpet` (David 2026-10-30) — home of the #walkyourpet movement: how the phrase started (a real child's sentence, story card in `public/walkyourpet/`), what it means in the app (dog walks = real steps; not for cats), how families join (parents post, no children's faces or names, repost only with permission) and FAQ. The phrase is never translated, so the slug is the same in every language. Footer link only (group Company). Add new real moments as they come in — never invented quotes. Rules: `WALKYOURPET.md` (pet-prep docs).
 
 ## App screens
 
