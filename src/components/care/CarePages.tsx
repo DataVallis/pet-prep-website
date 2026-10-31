@@ -15,6 +15,7 @@ import { breadcrumbsLd, collectionLd, faqLd, graph } from "@/lib/jsonld";
 import { absoluteUrl } from "@/lib/site";
 import { JsonLd } from "@/components/JsonLd";
 import { StoreButtons } from "@/components/Cta";
+import { contacts, emergencyCopy, emergencySlug, emergencyUpdated, steps, type Contact } from "@/content/care/emergency";
 
 /* ─── shared ─────────────────────────────────────────────────────────────── */
 
@@ -72,6 +73,10 @@ export function CareHub({ locale }: { locale: Locale }) {
           </Link>
         );
       })}
+      <Link href={emergencyHref(locale)} className="group flex flex-col gap-3 rounded-[26px] bg-danger-tint p-6 sm:col-span-2">
+        <span className="font-display text-[26px] font-extrabold leading-tight text-danger group-hover:underline">{emergencyCopy[locale].title}</span>
+        <span className="leading-relaxed">{emergencyCopy[locale].lead}</span>
+      </Link>
     </section>
   );
 }
@@ -246,6 +251,7 @@ export function CareFoodPage({ locale, species, food: f }: { locale: Locale; spe
           ) : null}
           <Section id="what-to-do" title={c.food.whatToDo}>
             <p className={`rounded-[22px] p-5 text-[17px] leading-relaxed ${f.level === "toxic" || f.level === "dangerous" ? "bg-danger-tint" : "border border-line bg-white"}`}>{f.what_to_do[locale]}</p>
+            {f.level === "toxic" || f.level === "dangerous" ? <EmergencyLink locale={locale} /> : null}
           </Section>
           {f.serving?.[locale] ? <Section id="serving" title={c.food.serving}><p className="text-[17px] leading-relaxed">{f.serving[locale]}</p></Section> : null}
           <aside aria-labelledby="for-kids" className="flex flex-col gap-2 rounded-[22px] bg-mint-tint p-5">
@@ -348,6 +354,7 @@ function Emergency({ locale }: { locale: Locale }) {
     <aside className="flex max-w-3xl flex-col gap-1 rounded-[20px] bg-danger-tint px-5 py-4">
       <p className="font-display text-[18px] font-bold text-danger">{c.species.emergencyTitle}</p>
       <p className="leading-relaxed">{c.species.emergencyText}</p>
+      <EmergencyLink locale={locale} />
     </aside>
   );
 }
@@ -394,3 +401,113 @@ export function careSpeciesMarkdown(locale: Locale, sp: Species): string {
 }
 
 export { careHref };
+
+/* ─── emergency page: /care/emergency (M6-K1) ─────────────────────────────── */
+
+
+const countryOrder: Record<Locale, string[]> = { en: ["US", "GB", "AU", "SI", "HR"], sl: ["SI", "HR", "GB", "US", "AU"] };
+
+export const emergencyHref = (locale: Locale) => `${careHref(locale)}/${emergencySlug[locale]}`;
+export const isEmergencySlug = (locale: Locale, slug: string) => slug === emergencySlug[locale];
+export const emergencyParams = (locale: Locale) => [{ slug: pageSlugs.care[locale], species: emergencySlug[locale] }];
+
+export function emergencyMetadata(locale: Locale): Metadata {
+  const e = emergencyCopy[locale];
+  return buildPathMetadata({
+    locale,
+    paths: Object.fromEntries(locales.map((l) => [l, emergencyHref(l)])) as Record<Locale, string>,
+    title: e.metaTitle,
+    description: e.description,
+  });
+}
+
+export function EmergencyLink({ locale }: { locale: Locale }) {
+  return (
+    <Link href={emergencyHref(locale)} className="w-fit font-semibold text-danger underline">
+      {emergencyCopy[locale].contactsTitle} →
+    </Link>
+  );
+}
+
+export function EmergencyPage({ locale }: { locale: Locale }) {
+  const e = emergencyCopy[locale];
+  const c = getCareCopy(locale);
+  const dict = getDictionary(locale);
+  const path = emergencyHref(locale);
+  const order = countryOrder[locale];
+  const list = [...contacts].sort((a, b) => order.indexOf(a.country) - order.indexOf(b.country));
+  const allSources = [...new Map(steps.flatMap((s) => s.sources).map((s) => [s.url, s])).values()];
+  const ld = graph(
+    {
+      "@type": "HowTo",
+      "@id": `${absoluteUrl(path)}#howto`,
+      name: e.title,
+      description: e.description,
+      inLanguage: locale,
+      dateModified: emergencyUpdated,
+      step: steps.map((s, i) => ({ "@type": "HowToStep", position: i + 1, text: s.text[locale] })),
+      citation: allSources.map((s) => ({ "@type": "CreativeWork", name: s.publisher, url: s.url })),
+    },
+    breadcrumbsLd([
+      { name: dict.common.breadcrumbHome, path: pathFor(locale, "home") },
+      { name: c.breadcrumb, path: careHref(locale) },
+      { name: e.title, path },
+    ]),
+  );
+  return (
+    <>
+      <JsonLd data={ld} />
+      <article className="container-page flex flex-col gap-12 pb-24 pt-10 sm:pt-14">
+        <Crumbs locale={locale} items={[{ name: c.breadcrumb, href: careHref(locale) }, { name: e.crumb }]} />
+        <header className="flex max-w-3xl flex-col gap-5">
+          <p className="eyebrow">{e.eyebrow}</p>
+          <h1 className="h-display text-[clamp(34px,5vw,60px)]">{e.title}</h1>
+          <p className="rounded-[22px] bg-danger-tint p-5 text-[19px] font-medium leading-relaxed">{e.lead}</p>
+          <p className="text-sm text-muted">{c.food.updated}: <time dateTime={emergencyUpdated}>{formatDay(locale, emergencyUpdated)}</time></p>
+        </header>
+
+        <section aria-labelledby="steps" className="flex max-w-3xl flex-col gap-4">
+          <h2 id="steps" className="h-card text-[28px] leading-tight sm:text-[34px]">{e.stepsTitle}</h2>
+          <ol className="grid gap-3">
+            {steps.map((s, i) => (
+              <li key={i} className="flex gap-4 rounded-[20px] border border-line bg-white p-4">
+                <span aria-hidden="true" className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-graphite font-display text-sm font-bold text-mint">{i + 1}</span>
+                <span className="text-[17px] leading-relaxed">{s.text[locale]}</span>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section aria-labelledby="contacts" className="flex flex-col gap-4">
+          <h2 id="contacts" className="h-card text-[28px] leading-tight sm:text-[34px]">{e.contactsTitle}</h2>
+          <p className="max-w-3xl text-muted">{e.contactsIntro}</p>
+          <ul className="grid gap-4 sm:grid-cols-2">
+            {list.map((k: Contact) => (
+              <li key={k.org} className="flex flex-col gap-2 rounded-[22px] border border-line bg-white p-5">
+                <span className="text-sm font-semibold text-muted">{e.countries[k.country] ?? k.country} · {k.kind === "poison_line" ? e.poisonLine : e.emergencyVet}</span>
+                <span className="font-display text-[19px] font-bold leading-snug">{k.org}</span>
+                {k.phone ? (
+                  <a href={`tel:${k.phone.replace(/[^\d+]/g, "")}`} className="w-fit font-display text-[26px] font-extrabold text-danger underline">{k.phone}</a>
+                ) : (
+                  <span className="font-semibold">{e.noPhone}</span>
+                )}
+                <span className="text-[15px] leading-relaxed">{k.hours[locale]}{k.fee ? ` · ${k.fee[locale]}` : ""}</span>
+                {k.note ? <span className="text-[15px] leading-relaxed text-muted">{k.note[locale]}</span> : null}
+                <a href={k.url} rel="noopener" className="w-fit text-sm underline">{e.open}</a>
+              </li>
+            ))}
+          </ul>
+          <p className="max-w-3xl text-[15px] leading-relaxed">{e.elsewhere}</p>
+        </section>
+
+        <section aria-labelledby="sources" className="flex max-w-3xl flex-col gap-3">
+          <h2 id="sources" className="h-card text-[24px] leading-tight">{e.sources}</h2>
+          <ol className="grid list-decimal gap-2 pl-5 text-[15px] leading-relaxed">
+            {allSources.map((s) => <li key={s.url}><a href={s.url} rel="noopener" className="underline">{s.publisher}</a></li>)}
+          </ol>
+          <p className="rounded-[14px] bg-warn-tint px-4 py-3 text-sm leading-relaxed">{c.food.notVetReviewed}</p>
+        </section>
+      </article>
+    </>
+  );
+}

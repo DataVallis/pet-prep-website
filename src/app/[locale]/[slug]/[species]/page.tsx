@@ -11,7 +11,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { CatalogueExplorer } from "@/components/registry/CatalogueExplorer";
 import { PAGE_SIZE, recommendedOrder } from "@/components/registry/catalogue-shared";
 import { RichText } from "@/components/RichText";
-import { CareSpeciesPage, careSpeciesMetadata, careSpeciesParams, resolveCareSpecies } from "@/components/care/CarePages";
+import { CareSpeciesPage, EmergencyPage, careSpeciesMetadata, careSpeciesParams, emergencyMetadata, emergencyParams, isEmergencySlug, resolveCareSpecies } from "@/components/care/CarePages";
 import { isCareSlug } from "@/content/care/care";
 
 export const dynamicParams = false;
@@ -23,6 +23,7 @@ export function generateStaticParams({ params }: { params: { locale: string } })
   return [
     ...registry.species.map((s) => ({ slug: pageSlugs.animals[locale], species: s.slug[locale] })),
     ...careSpeciesParams(locale),
+    ...emergencyParams(locale),
   ];
 }
 
@@ -37,6 +38,7 @@ const paths = (s: Species) => Object.fromEntries(locales.map((l) => [l, speciesH
 export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[species]">): Promise<Metadata> {
   const { locale, slug, species } = await params;
   if (isLocale(locale) && isCareSlug(locale, slug)) {
+    if (isEmergencySlug(locale, species)) return emergencyMetadata(locale);
     const sp = resolveCareSpecies(locale, species);
     return sp ? careSpeciesMetadata(locale, sp) : {};
   }
@@ -50,6 +52,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[
 export default async function SpeciesCatalogue({ params }: PageProps<"/[locale]/[slug]/[species]">) {
   const { locale: l, slug, species: s } = await params;
   if (isLocale(l) && isCareSlug(l, slug)) {
+    if (isEmergencySlug(l, s)) return <EmergencyPage locale={l} />;
     const sp = resolveCareSpecies(l, s);
     if (!sp) notFound();
     return <CareSpeciesPage locale={l} species={sp} />;
