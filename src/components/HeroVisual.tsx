@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { Locale } from "@/i18n/config";
+import { screenLocale, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/content/types";
 
 /** Hero: the child's app screen on a mint slab, with a parent card and a notification. */
@@ -10,7 +10,7 @@ export function HeroVisual({ locale, dict }: { locale: Locale; dict: Dictionary 
       <div aria-hidden="true" className="absolute inset-y-5 left-6 right-0 rounded-[40px] bg-mint sm:left-14" />
       <div className="relative w-[270px] rounded-[44px] bg-[#0b0d0c] p-[9px] shadow-[0_30px_70px_rgba(18,22,20,0.28)] sm:w-[290px]">
         <Image
-          src={`/screens/${locale}/hud.webp`}
+          src={`/screens/${screenLocale(locale)}/hud.webp`}
           alt={dict.screens.hud}
           width={780}
           height={1688}

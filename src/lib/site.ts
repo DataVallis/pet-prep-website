@@ -19,7 +19,7 @@ export const site = {
     street: "Robindvor 39",
     postalCode: "2370",
     city: "Dravograd",
-    country: { en: "Slovenia", sl: "Slovenija" },
+    country: { en: "Slovenia", sl: "Slovenija", de: "Slowenien" },
     countryCode: "SI",
     /** ID za DDV (VAT ID); the business is registered for VAT. */
     vatId: "SI36130800",

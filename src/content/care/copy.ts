@@ -131,7 +131,51 @@ const sl: CareCopy = {
   breadcrumb: "Skrb",
 };
 
-const copies: Record<Locale, CareCopy> = { en, sl };
+const de: CareCopy = {
+  speciesWords: {
+    // `pet` carries its article: the gender differs (einen Hund / eine Katze), accusative after "um".
+    dog: { question: "Was dürfen Hunde fressen?", plural: "Hunde", pet: "einen Hund" },
+    cat: { question: "Was dürfen Katzen fressen?", plural: "Katzen", pet: "eine Katze" },
+  },
+  levels: {
+    toxic: { label: "Giftig – Tierarzt anrufen", heading: "Giftig: niemals geben" },
+    dangerous: { label: "Gefährlich", heading: "Gefährlich" },
+    not_recommended: { label: "Nicht empfohlen", heading: "Lieber nicht" },
+    small_amounts: { label: "In kleinen Mengen in Ordnung", heading: "Als gelegentliches Leckerli in Ordnung" },
+  },
+  hub: {
+    foodsLead: (w) => `Sichere, riskante und giftige Lebensmittel für ${w.plural} – jeweils mit Grund, Anzeichen und Quellen.`,
+    count: (n) => `${n} Lebensmittel`,
+    open: "Zur Liste",
+  },
+  species: {
+    metaTitle: (w) => `${w.question} Sichere und giftige Lebensmittel mit Quellen – PetPrep`,
+    metaDescription: (w, n) => `${n} Lebensmittel für ${w.plural} geprüft: was giftig ist, was riskant ist und was als Leckerli in Ordnung ist. Mit Begründung, Anzeichen und Hinweisen, was zu tun ist – jede Quelle verlinkt.`,
+    eyebrow: "Ratgeber · Ernährung",
+    lead: (w) => `Welche Lebensmittel für ${w.plural} giftig, riskant oder unbedenklich sind – nach Risiko sortiert, einfach erklärt, mit allen Quellen verlinkt.`,
+    emergencyTitle: "Etwas Giftiges gefressen?",
+    emergencyText: "Rufen Sie sofort Ihren Tierarzt oder einen Giftnotruf für Tiere an. Notieren Sie, was und wie viel gefressen wurde – warten Sie nicht auf Anzeichen.",
+  },
+  food: {
+    why: "Warum",
+    signs: "Auf diese Anzeichen sollten Sie achten",
+    whatToDo: "Was tun?",
+    serving: "Richtig füttern",
+    forKids: "Für Kinder",
+    faq: "Fragen und Antworten",
+    related: "Ähnliche Lebensmittel",
+    sources: "Quellen",
+    updated: "Aktualisiert",
+    notVetReviewed: "Allgemeine Informationen aus den unten genannten Quellen – nicht tierärztlich geprüft und kein Ersatz für tierärztlichen Rat. Rufen Sie im Zweifel Ihren Tierarzt an.",
+    otherSpecies: "Andere Tiere",
+    simulates: "So üben Kinder das in PetPrep",
+    simulatesText: (w) => `In PetPrep kümmert sich ein Kind um ${w.pet} – realistisch simuliert: Mahlzeiten zur richtigen Zeit, Wasser, Spaziergänge und Pflege. Zu wissen, was man vom eigenen Essen gefahrlos abgeben darf, gehört dazu, wenn man bereit für ein echtes Haustier sein will.`,
+    backTo: "Alle Lebensmittel",
+  },
+  breadcrumb: "Ratgeber",
+};
+
+const copies: Record<Locale, CareCopy> = { en, sl, de };
 export const getCareCopy = (l: Locale) => copies[l];
 
 export function speciesWords(l: Locale, speciesId: string): SpeciesWords {

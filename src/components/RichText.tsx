@@ -3,7 +3,7 @@ import type { Locale } from "@/i18n/config";
 import { parseLinks } from "@/lib/links";
 
 /** Screen-reader note on links that open in a new tab. */
-const newTabNote: Record<Locale, string> = { en: " (opens in a new tab)", sl: " (odpre se v novem zavihku)" };
+const newTabNote: Record<Locale, string> = { en: " (opens in a new tab)", sl: " (odpre se v novem zavihku)", de: " (öffnet sich in einem neuen Tab)" };
 
 /**
  * A content string with optional `[label](ref)` links (see src/lib/links.ts). External links and

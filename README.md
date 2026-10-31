@@ -21,11 +21,12 @@ npm run build && npm run lint && npx tsc --noEmit
 
 - `src/proxy.ts` serves English from the root (internally `/en/...`) and redirects `/en/...` to the root, so every page has one URL.
 - `/pogoji` and `/zasebnost` (linked from the app's sign-up screen) redirect to the Slovenian legal pages (`next.config.ts`).
-- **Add a language:** add the code to `locales` and a slug per page in `src/i18n/config.ts`, add `src/content/<code>.ts` (typed by `Dictionary`, start from `en.ts`), register it in `src/content/index.ts`, add screens to `public/screens/<code>/`.
+- **Add a language:** add the code to `locales` and a slug per page in `src/i18n/config.ts`, add `src/content/<code>.ts` (typed by `Dictionary`, start from `en.ts`), register it in `src/content/index.ts`; `npx tsc --noEmit` lists every other text (register, care, emergency) — full steps in pet-prep `docs/engineering/LANGUAGE_RUNBOOK.md`. App screens: languages without `public/screens/<code>/` show the English screens (`screenLocale()` in `src/i18n/config.ts`) until the app itself is translated.
+- **Languages live:** English, Slovenian, German (`/de`, since 2026-10-31; legal pages marked „Übersetzung – verbindlich ist die englische Fassung.“).
 
 ## Content
 
-All copy lives in `src/content/en.ts` and `src/content/sl.ts` (same structure, type-checked).
+All copy lives in `src/content/<locale>.ts` — `en.ts`, `sl.ts`, `de.ts` (same structure, type-checked).
 Site-wide settings — domain, e-mail addresses, company details, launch state, store links, legal review flag — are in `src/lib/site.ts`. Values marked `TODO(David)` must be confirmed before launch.
 
 - `launchState: "prelaunch"` → calls to action ask for early access by e-mail. Set `"live"` and fill `stores.ios` / `stores.android` at launch.
