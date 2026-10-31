@@ -51,7 +51,7 @@ const de: Dictionary = {
   footer: {
     tagline: "Bereit für ein Haustier. An seiner Seite – sein ganzes Leben lang.",
     groups: [
-      { title: "Produkt", links: ["howItWorks", "parents", "animals", "care", "coloring", "afterAdoption", "pricing", "faq"] },
+      { title: "Produkt", links: ["howItWorks", "parents", "animals", "care", "kids", "coloring", "afterAdoption", "pricing", "faq"] },
       { title: "Unternehmen", links: ["about", "curio", "walkyourpet", "partners", "investors", "contact"] },
       { title: "Vertrauen", links: ["privacy", "terms", "childSafety", "accessibility", "deleteAccount"] },
     ],
@@ -1188,6 +1188,19 @@ const de: Dictionary = {
       lead:
         "Hunde, Katzen und Curio zum Ausmalen oder Abmalen – drucken Sie ein einzelnes Blatt oder das ganze Malbuch. Auf jedem Blatt steht zum gemeinsamen Lesen ein echter Wissenstipp zur Tierpflege – aus einer tierärztlichen Quelle oder von einem Zuchtverband.",
       blocks: [{ type: "coloringHub" }],
+    },
+    kids: {
+      meta: {
+        title: "Für Kinder, die sich ein Haustier wünschen – Ausmalbilder, Curio und #walkyourpet | PetPrep",
+        description:
+          "Alles, was PetPrep für Kinder hat: kostenlose Ausmalbilder zum Ausdrucken mit echten Wissenstipps zur Tierpflege, das Maskottchen Curio und #walkyourpet – für Kinder und Eltern, die sich gemeinsam auf ein Haustier vorbereiten.",
+      },
+      navLabel: "Für Kinder",
+      eyebrow: "Für Kinder",
+      title: "Für Kinder, die sich ein Haustier wünschen.",
+      lead: "Ausmalbilder zum Ausdrucken, Curio und #walkyourpet – für Kinder und Eltern, die sich gemeinsam auf ein Haustier vorbereiten.",
+      hero: { src: "/curio/curio-waving.webp", alt: "Curio, das PetPrep-Maskottchen: ein weicher grafitfarbener Würfel mit großen weißen Augen, einer kleinen himbeerroten Nase und einem mintgrünen Halsband, winkend.", width: 720, height: 948 },
+      blocks: [{ type: "kidsHub" }],
     },
     walkyourpet: {
       meta: {

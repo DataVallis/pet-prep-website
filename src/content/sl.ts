@@ -51,7 +51,7 @@ const sl: Dictionary = {
   footer: {
     tagline: "Pripravljeni na žival. Ob njej vse življenje.",
     groups: [
-      { title: "Izdelek", links: ["howItWorks", "parents", "animals", "care", "coloring", "afterAdoption", "pricing", "faq"] },
+      { title: "Izdelek", links: ["howItWorks", "parents", "animals", "care", "kids", "coloring", "afterAdoption", "pricing", "faq"] },
       { title: "Podjetje", links: ["about", "curio", "walkyourpet", "partners", "investors", "contact"] },
       { title: "Zaupanje", links: ["privacy", "terms", "childSafety", "accessibility", "deleteAccount"] },
     ],
@@ -1186,6 +1186,19 @@ const sl: Dictionary = {
       lead:
         "Psi, mačke in Curio za barvanje ali prerisovanje — natisnite eno stran ali celo knjižico. Na vsaki strani je resnična zanimivost o skrbi za žival iz vira veterinarjev ali kinoloških zvez, ki jo preberete skupaj.",
       blocks: [{ type: "coloringHub" }],
+    },
+    kids: {
+      meta: {
+        title: "Za otroke, ki si želijo žival — pobarvanke, Curio in #walkyourpet | PetPrep",
+        description:
+          "Vse, kar ima PetPrep za otroke: brezplačne pobarvanke za tiskanje z resničnimi zanimivostmi o skrbi, maskota Curio in #walkyourpet — za otroke in starše, ki se na žival pripravljajo skupaj.",
+      },
+      navLabel: "Za otroke",
+      eyebrow: "Za otroke",
+      title: "Za otroke, ki si želijo žival.",
+      lead: "Pobarvanke za tiskanje, Curio in #walkyourpet — za otroke in starše, ki se na žival pripravljajo skupaj.",
+      hero: { src: "/curio/curio-waving.webp", alt: "Curio, maskota PetPrepa: mehka grafitna kocka z velikima belima očesoma, malinastim nosom in metino ovratnico, ki maha.", width: 720, height: 948 },
+      blocks: [{ type: "kidsHub" }],
     },
     walkyourpet: {
       meta: {

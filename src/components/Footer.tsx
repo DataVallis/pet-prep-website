@@ -38,7 +38,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               </span>
             </Link>
             <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
-              <LanguageSwitcher label={dict.lang.label} dark />
+              <LanguageSwitcher label={dict.lang.label} dark align="left" />
               <span className="flex gap-4 text-sm">
                 <a href={site.social.tiktok} target="_blank" rel="noopener noreferrer" className="hover:text-fog">TikTok</a>
                 <a href={site.social.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-fog">Instagram</a>
