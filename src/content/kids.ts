@@ -49,6 +49,15 @@ export const kidsCopy: Record<Locale, KidsCopy> = {
       { page: "walkyourpet", title: "#walkyourpet", text: "El movimiento que empezó una niña: salir a la calle a pasear.", image: null },
     ],
   },
+  it: {
+    menu: "Per i bambini",
+    all: "Tutto per i bambini",
+    items: [
+      { page: "coloring", title: "Disegni da colorare", text: "12 disegni gratuiti da stampare, ognuno con una curiosità sulla cura degli animali.", image: coloringThumb },
+      { page: "curio", title: "Ti presento Curio", text: "La nostra mascotte e i suoi brevi video.", image: curioThumb },
+      { page: "walkyourpet", title: "#walkyourpet", text: "Il movimento nato da una bambina: uscire a fare una passeggiata.", image: null },
+    ],
+  },
   sl: {
     menu: "Za otroke",
     all: "Vse za otroke",
