@@ -46,7 +46,8 @@ export function MobileMenu({ summary, children }: { summary: ReactNode; children
           // Also covers links to the current page or a #hash, where the path doesn't change.
           if ((e.target as HTMLElement).closest("a") && ref.current) ref.current.open = false;
         }}
-        className="absolute right-0 top-14 w-[min(88vw,340px)] rounded-[22px] border border-line bg-white p-5 shadow-xl"
+        // Fits the screen and scrolls on its own (David 2026-10-31: on a phone the end of the menu was out of reach).
+        className="absolute right-0 top-14 max-h-[calc(100dvh-5.5rem)] w-[min(88vw,340px)] overflow-y-auto overscroll-contain rounded-[22px] border border-line bg-white p-5 shadow-xl"
       >
         {children}
       </div>
