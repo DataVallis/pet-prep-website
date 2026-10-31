@@ -4,8 +4,10 @@ import type { Dictionary } from "@/content/types";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { PrimaryCta } from "./Cta";
 import { MobileMenu } from "./MobileMenu";
+import { KidsMenu, KidsMobile } from "./kids/Kids";
 
-const navKeys: PageKey[] = ["howItWorks", "parents", "animals", "care", "afterAdoption", "pricing"];
+// "When it comes home" moved to the footer to make room for "For kids" (David 2026-10-31).
+const navKeys: PageKey[] = ["howItWorks", "parents", "animals", "care"];
 
 export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const label = (k: PageKey) => dict.pages[k].navLabel ?? dict.pages[k].eyebrow;
@@ -26,6 +28,10 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               {label(k)}
             </Link>
           ))}
+          <KidsMenu locale={locale} />
+          <Link href={pathFor(locale, "pricing")} className="hover:text-mint-text">
+            {label("pricing")}
+          </Link>
         </nav>
 
         <div className="ml-auto hidden items-center gap-3 lg:flex">
@@ -47,14 +53,20 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           }
         >
             <nav aria-label="Mobile" className="flex flex-col">
-              {(["howItWorks", "parents", "animals", "care", "afterAdoption", "pricing", "faq", "contact"] as PageKey[]).map((k) => (
+              {(["howItWorks", "parents", "animals", "care"] as PageKey[]).map((k) => (
+                <Link key={k} href={pathFor(locale, k)} className="border-b border-line py-3 text-[17px] font-semibold">
+                  {label(k)}
+                </Link>
+              ))}
+              <KidsMobile locale={locale} />
+              {(["afterAdoption", "pricing", "faq", "contact"] as PageKey[]).map((k) => (
                 <Link key={k} href={pathFor(locale, k)} className="border-b border-line py-3 text-[17px] font-semibold last:border-0">
                   {label(k)}
                 </Link>
               ))}
             </nav>
             <div className="mt-4 flex flex-col gap-4">
-              <LanguageSwitcher label={dict.lang.label} />
+              <LanguageSwitcher label={dict.lang.label} align="left" />
               <PrimaryCta locale={locale} dict={dict} />
             </div>
         </MobileMenu>

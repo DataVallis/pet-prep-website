@@ -42,6 +42,7 @@ export type Block =
   | { type: "animalsHub" }
   | { type: "careHub" }
   | { type: "coloringHub" }
+  | { type: "kidsHub" }
   /**
    * Pictures in a grid (files under public/). With `video` the tile is a video player and `src`
    * is its poster; videos never autoplay (accessibility: less motion).
