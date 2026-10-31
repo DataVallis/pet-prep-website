@@ -149,11 +149,8 @@ export function CareSpeciesPage({ locale, species }: { locale: Locale; species: 
                 {group.map((f) => (
                   <li key={f.slug}>
                     <Link href={foodHref(locale, f)} className="group flex h-full flex-col gap-2 rounded-[20px] border border-line bg-white p-4 hover:border-graphite">
-                      <span className="flex items-center justify-between gap-3">
-                        <span className="font-display text-[19px] font-bold group-hover:underline">{f.name[locale]}</span>
-                        <LevelBadge locale={locale} level={f.level} />
-                      </span>
-                      <span className="text-[15px] leading-relaxed text-muted">{firstSentence(f.answer[locale]!)}</span>
+                      <span className="font-display text-[19px] font-bold group-hover:underline">{f.name[locale]}</span>
+                      <span className="text-[15px] leading-relaxed text-muted">{summary(f.answer[locale]!)}</span>
                     </Link>
                   </li>
                 ))}
@@ -191,7 +188,8 @@ export function CareFoodPage({ locale, species, food: f }: { locale: Locale; spe
   const dict = getDictionary(locale);
   const w = speciesWords(locale, species.id);
   const path = foodHref(locale, f);
-  const sources = sourcesOf(f);
+  // Two pages of one publisher can share a title (e.g. a VCA article and its hospital copy): show it once.
+  const sources = sourcesOf(f).filter((s, i, all) => all.findIndex((o) => o.title === s.title && o.publisher === s.publisher) === i);
   const related = f.related.map((s) => foodBySpeciesSlug(f.species, s)).filter((x): x is Food => !!x && x.locales.includes(locale));
   const others = allFoods().filter((o) => o.slug === f.slug && o.species !== f.species && o.locales.includes(locale));
   const faq = f.faq.map((q) => ({ q: q.q[locale]!, a: q.a[locale]! }));
@@ -367,9 +365,12 @@ function AppCta({ locale, speciesId }: { locale: Locale; speciesId: string }) {
   );
 }
 
-function firstSentence(t: string): string {
-  const m = t.match(/^.+?[.!?](\s|$)/);
-  return (m ? m[0] : t).trim();
+/** Short card text: the answer without a bare "No." / "Ne." opener, up to the first full sentence. */
+function summary(t: string): string {
+  const sentences = t.match(/[^.!?]+[.!?]+(\s|$)/g)?.map((x) => x.trim()) ?? [t];
+  const words = (x: string) => x.split(/\s+/).length;
+  const first = sentences.find((x) => words(x) >= 4) ?? sentences.join(" ");
+  return first;
 }
 
 /* ─── llms / markdown ────────────────────────────────────────────────────── */
