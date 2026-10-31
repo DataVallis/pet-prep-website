@@ -441,6 +441,42 @@ export function relatedBreeds(b: Breed, max = 4): Breed[] {
     .map((x) => x.o);
 }
 
+/**
+ * "Common owner mistakes" (David 2026-10-31): only from facts the register already has for this breed,
+ * each with its sources — exercise, coat care, weight/treats, heat, growth, health, learning. A breed
+ * without a fact for a point simply has fewer points; nothing is written without a source.
+ */
+export type Mistake = { key: string; title: string; text: string; sources: SourceRef[] };
+
+export function ownerMistakes(locale: Locale, b: Breed): Mistake[] {
+  const c = copies[locale];
+  const m = c.mistakes;
+  const out: Mistake[] = [];
+  const first = (group: string, field: string) => b.facts.find((x) => x.group === group && x.field === field);
+  const all = (group: string, field: string) => b.facts.filter((x) => x.group === group && x.field === field);
+  const ids = (items: { source_ids: string[] }[]) => refs([...new Set(items.flatMap((i) => i.source_ids))]);
+  const ex = first("exercise", "exercise");
+  if (ex) out.push({ key: "exercise", title: m.exercise, text: m.exerciseText(valueText(locale, ex)), sources: ids(all("exercise", "exercise")) });
+  const freq = first("grooming", "grooming_frequency");
+  const shed = all("grooming", "shedding");
+  if (freq) out.push({ key: "coat", title: m.coat, text: m.coatText(valueText(locale, freq), shed[0] ? valueText(locale, shed[shed.length - 1]) : null), sources: ids([freq, ...shed]) });
+  const weight = b.health.find((h) => h.key === "weight_gain");
+  const food = first("feeding", "food_motivated");
+  if (weight || food) {
+    const parts = [weight ? need(c.health, "weight_gain", "health item") : null, food ? factText(locale, food) : null].filter((x): x is string => !!x);
+    out.push({ key: "weight", title: m.weight, text: parts.join(" "), sources: ids([...(weight ? [weight] : []), ...(food ? [food] : [])]) });
+  }
+  const heat = b.health.find((h) => h.key === "heat_stroke_risk");
+  if (heat) out.push({ key: "heat", title: m.heat, text: need(c.health, "heat_stroke_risk", "health item"), sources: ids([heat]) });
+  const growth = first("stages", "growth_end");
+  if (growth) out.push({ key: "growth", title: m.growth, text: m.growthText(valueText(locale, growth)), sources: ids([growth]) });
+  const rank = first("training", "coren_rank");
+  if (rank && typeof rank.value === "number" && rank.value <= 20) out.push({ key: "mind", title: m.mind, text: factText(locale, rank), sources: ids([rank]) });
+  const other = b.health.filter((h) => h.key !== "weight_gain" && h.key !== "heat_stroke_risk");
+  if (other.length) out.push({ key: "health", title: m.health, text: other.map((h) => need(c.health, h.key, "health item")).join(" "), sources: ids(other) });
+  return out;
+}
+
 export function buildBreedView(locale: Locale, b: Breed): BreedView {
   const c = copies[locale];
   const f = fmt(locale);

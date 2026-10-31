@@ -19,6 +19,21 @@ const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: 
 const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika" };
 
 const sl: RegistryCopy = {
+  mistakes: {
+    title: (breed) => `Pogoste napake lastnikov: ${breed}`,
+    intro: "Majhne navade, ki povzročijo večje težave — vsaka točka izhaja iz virov za to pasmo.",
+    exercise: "Premalo vsakodnevnega gibanja",
+    exerciseText: (amount) => `Potrebno gibanje: ${amount}. Načrtujte ga vsak dan, ne samo ob vikendih.`,
+    coat: "Zanemarjena nega dlake",
+    coatText: (brushing, shedding) => `Krtačenje: ${brushing}.${shedding ? ` ${shedding.charAt(0).toUpperCase()}${shedding.slice(1)}.` : ""}`,
+    weight: "Preveč priboljškov in preveliki obroki",
+    heat: "Sprehodi v vročini",
+    growth: "Pozabiti, da mladič še raste",
+    growthText: (growthEnd) => `Odrasla velikost: ${growthEnd}. Do takrat načrtujte gibanje in hrano za mlado žival, ki še raste, in vprašajte veterinarja, kaj je primerno za vašo.`,
+    mind: "Premalo dela za glavo",
+    health: "Spregledati znane zdravstvene posebnosti pasme",
+    practise: "V PetPrepu otrok vadi prav te navade — korake, obroke, nego — preden pride pravi ljubljenček domov.",
+  },
   hub: {
     title: "Spoznajte žival, preden pride domov.",
     intro:

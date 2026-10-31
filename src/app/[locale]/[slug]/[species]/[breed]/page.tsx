@@ -6,7 +6,7 @@ import { notFound } from "next/navigation";
 import { compareSlug, isLocale, locales, pageSlugs, pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { breedBySlug, breedsOf, registry, speciesBySlug, type Breed, type Species } from "@/content/registry/registry";
-import { breedHref, breedMetaDescription, breedMetaTitle, breedUpdated, buildBreedView, compareHref, formatDay, getRegistryCopy, portraitSrc, qaText, relatedBreeds, speciesHref } from "@/lib/registry/views";
+import { ownerMistakes, breedHref, breedMetaDescription, breedMetaTitle, breedUpdated, buildBreedView, compareHref, formatDay, getRegistryCopy, portraitSrc, qaText, relatedBreeds, speciesHref } from "@/lib/registry/views";
 import { buildPathMetadata } from "@/lib/seo";
 import { breadcrumbsLd, breedPageLd, faqLd, graph } from "@/lib/jsonld";
 import { JsonLd } from "@/components/JsonLd";
@@ -158,6 +158,7 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
   const labels = registry.suitability_labels[locale];
   const cite = c.page.sourceLabel;
   const breed = r.breed;
+  const mistakes = ownerMistakes(locale, breed);
 
   const ld = graph(
     breedPageLd({
@@ -410,6 +411,30 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
               </>
             ) : null}
           </section>
+
+          {mistakes.length ? (
+            <section aria-labelledby="mistakes" className="flex flex-col gap-5">
+              <div className="flex flex-col gap-2">
+                <h2 id="mistakes" className="h-card text-[28px] leading-tight sm:text-[34px]">{c.mistakes.title(v.name)}</h2>
+                <p className="max-w-3xl text-[17px] leading-relaxed text-muted">{c.mistakes.intro}</p>
+              </div>
+              <ol className="grid gap-3 sm:grid-cols-2">
+                {mistakes.map((mk, i) => (
+                  <li key={mk.key} className="flex gap-4 rounded-[20px] border border-line bg-white p-5">
+                    <span aria-hidden="true" className="font-display text-[28px] font-extrabold leading-none text-danger">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="flex flex-col gap-1.5">
+                      <span className="font-display text-[19px] font-bold leading-snug">{mk.title}</span>
+                      <span className="text-[16px] leading-relaxed">
+                        {mk.text}
+                        <Cite sources={mk.sources} sourceLabel={cite} />
+                      </span>
+                    </span>
+                  </li>
+                ))}
+              </ol>
+              <p className="max-w-3xl rounded-[14px] bg-mint-tint px-4 py-3 text-[15px] leading-relaxed">{c.mistakes.practise}</p>
+            </section>
+          ) : null}
 
           <CareFoodLink locale={locale} speciesId={species.id} />
 

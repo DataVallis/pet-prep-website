@@ -11,6 +11,22 @@ export type Fmt = {
 };
 
 export type RegistryCopy = {
+  /** "Common owner mistakes" on a breed page (ownerMistakes in src/lib/registry/views.ts). */
+  mistakes: {
+    title: (breed: string) => string;
+    intro: string;
+    exercise: string;
+    exerciseText: (amount: string) => string;
+    coat: string;
+    coatText: (brushing: string, shedding: string | null) => string;
+    weight: string;
+    heat: string;
+    growth: string;
+    growthText: (growthEnd: string) => string;
+    mind: string;
+    health: string;
+    practise: string;
+  };
   hub: {
     title: string;
     intro: string;

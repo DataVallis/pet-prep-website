@@ -8,6 +8,21 @@ const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "
 const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa" };
 
 const en: RegistryCopy = {
+  mistakes: {
+    title: (breed) => `Common ${breed} owner mistakes`,
+    intro: "Small habits that cause bigger problems — each point comes from the sources of this breed.",
+    exercise: "Too little daily exercise",
+    exerciseText: (amount) => `Exercise needed: ${amount}. Plan it into every day, not only at weekends.`,
+    coat: "Skipping coat care",
+    coatText: (brushing, shedding) => `Brushing: ${brushing}.${shedding ? ` ${shedding.charAt(0).toUpperCase()}${shedding.slice(1)}.` : ""}`,
+    weight: "Too many treats and too-big meals",
+    heat: "Walks in the heat",
+    growth: "Forgetting that the puppy is still growing",
+    growthText: (growthEnd) => `Adult size reached at: ${growthEnd}. Until then, plan exercise and food for a young animal that is still growing, and ask your vet what suits yours.`,
+    mind: "Too little to do for the brain",
+    health: "Overlooking the breed's known health issues",
+    practise: "In PetPrep a child practises exactly these habits — steps, meals, care — before the real pet comes home.",
+  },
   hub: {
     title: "Know the animal before it comes home.",
     intro:
