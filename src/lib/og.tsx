@@ -11,13 +11,16 @@ const fontsPromise = Promise.all([
   readFile(join(dir, "mark.png"), "base64"),
 ]);
 
-/** Brand share image: title on fog, mint slab with the mark on the right. */
-export async function ogImage({ eyebrow, title, footer }: { eyebrow: string; title: string; footer: string }) {
+/**
+ * Brand share image: title on fog, mint slab with the mark on the right — or, with `picture`
+ * (base64 PNG, e.g. a colouring page), that picture on a white card on the mint slab.
+ */
+export async function ogImage({ eyebrow, title, footer, picture }: { eyebrow: string; title: string; footer: string; picture?: { png: string; width: number; height: number } }) {
   const [display, text, mark] = await fontsPromise;
   return new ImageResponse(
     (
       <div style={{ width: "100%", height: "100%", display: "flex", background: "#F3F5F2", fontFamily: "Instrument" }}>
-        <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "64px 0 56px 72px", width: 800 }}>
+        <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "64px 0 56px 72px", width: picture ? 740 : 800 }}>
           <div style={{ display: "flex", fontSize: 24, letterSpacing: 3, textTransform: "uppercase", color: "#1A7A55" }}>{eyebrow}</div>
           <div style={{ display: "flex", fontFamily: "Bricolage", fontSize: title.length > 60 ? 58 : 70, lineHeight: 1.02, letterSpacing: -2, color: "#121614" }}>
             {title}
@@ -25,8 +28,15 @@ export async function ogImage({ eyebrow, title, footer }: { eyebrow: string; tit
           <div style={{ display: "flex", fontSize: 26, color: "#5A635D" }}>{footer}</div>
         </div>
         <div style={{ display: "flex", flex: 1, margin: "40px 40px 40px 0", borderRadius: 40, background: "#7FE0B4", alignItems: "center", justifyContent: "center" }}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={`data:image/png;base64,${mark}`} width={250} height={250} alt="" />
+          {picture ? (
+            <div style={{ display: "flex", background: "#FFFFFF", borderRadius: 22, padding: 10 }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={`data:image/png;base64,${picture.png}`} height={510} width={Math.round((510 * picture.width) / picture.height)} alt="" />
+            </div>
+          ) : (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={`data:image/png;base64,${mark}`} width={250} height={250} alt="" />
+          )}
         </div>
       </div>
     ),
