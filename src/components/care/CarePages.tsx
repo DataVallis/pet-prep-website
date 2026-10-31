@@ -291,7 +291,7 @@ export function CareFoodPage({ locale, species, food: f }: { locale: Locale; spe
           <h2 id="sources" className="h-card text-[24px] leading-tight">{c.food.sources}</h2>
           <ol className="grid list-decimal gap-2 pl-5 text-[15px] leading-relaxed">
             {sources.map((s) => (
-              <li key={s.id}><a href={s.url} rel="noopener" className="underline">{s.title}</a> — {s.publisher}</li>
+              <li key={s.id}><a href={s.url} target="_blank" rel="noopener noreferrer" className="underline">{s.title}</a> — {s.publisher}</li>
             ))}
           </ol>
           <p className="rounded-[14px] bg-warn-tint px-4 py-3 text-sm leading-relaxed">{c.food.notVetReviewed}</p>
@@ -493,7 +493,7 @@ export function EmergencyPage({ locale }: { locale: Locale }) {
                 )}
                 <span className="text-[15px] leading-relaxed">{k.hours[locale]}{k.fee ? ` · ${k.fee[locale]}` : ""}</span>
                 {k.note ? <span className="text-[15px] leading-relaxed text-muted">{k.note[locale]}</span> : null}
-                <a href={k.url} rel="noopener" className="w-fit text-sm underline">{e.open}</a>
+                <a href={k.url} target="_blank" rel="noopener noreferrer" className="w-fit text-sm underline">{e.open}</a>
               </li>
             ))}
           </ul>
@@ -503,7 +503,7 @@ export function EmergencyPage({ locale }: { locale: Locale }) {
         <section aria-labelledby="sources" className="flex max-w-3xl flex-col gap-3">
           <h2 id="sources" className="h-card text-[24px] leading-tight">{e.sources}</h2>
           <ol className="grid list-decimal gap-2 pl-5 text-[15px] leading-relaxed">
-            {allSources.map((s) => <li key={s.url}><a href={s.url} rel="noopener" className="underline">{s.publisher}</a></li>)}
+            {allSources.map((s) => <li key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer" className="underline">{s.publisher}</a></li>)}
           </ol>
           <p className="rounded-[14px] bg-warn-tint px-4 py-3 text-sm leading-relaxed">{c.food.notVetReviewed}</p>
         </section>

@@ -496,7 +496,7 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
                   <span className="mr-2 font-mono text-[12px] font-semibold text-mint-text">{s.id}</span>
                   <span className="font-medium">{s.publisher}</span>
                   {" — "}
-                  <a href={s.url} className="break-words text-graphite underline decoration-line underline-offset-2 hover:decoration-graphite" rel="noopener noreferrer">
+                  <a href={s.url} className="break-words text-graphite underline decoration-line underline-offset-2 hover:decoration-graphite" target="_blank" rel="noopener noreferrer">
                     {s.title}
                   </a>
                   <span className="block break-all text-[13px] text-muted">{s.url}</span>

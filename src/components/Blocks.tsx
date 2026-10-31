@@ -37,7 +37,7 @@ export function CompanyDetails({ locale }: { locale: Locale }) {
     [l.address, companyAddress(locale)],
     [l.vat, `${c.vatId}${c.vatRegistered ? ` (${l.vatPayer})` : ""}`],
     [l.registration, c.registrationNumber],
-    [l.web, <a key="w" href={c.url} className="rich-link" rel="noopener">{c.url.replace(/^https:\/\//, "")}</a>],
+    [l.web, <a key="w" href={c.url} className="rich-link" target="_blank" rel="noopener noreferrer">{c.url.replace(/^https:\/\//, "")}</a>],
   ];
   return (
     <dl className="grid max-w-3xl gap-x-6 gap-y-2 rounded-[22px] border border-line bg-white p-6 text-[15px] sm:grid-cols-[max-content_1fr]">
