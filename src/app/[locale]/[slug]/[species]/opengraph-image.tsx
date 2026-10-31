@@ -8,6 +8,9 @@ import { emergencyCopy } from "@/content/care/emergency";
 import { careSpeciesBySlug, isCareSlug } from "@/content/care/care";
 import { getCareCopy, speciesWords } from "@/content/care/copy";
 import { coloringParams, isColoringSlug, resolveColoring } from "@/components/coloring/ColoringPages";
+import { coloringSize } from "@/content/coloring/coloring";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 
 /** One share image per species and locale; breed and comparison pages below inherit it (cheap at 300 breeds). */
 export const size = ogSize;
@@ -25,7 +28,15 @@ export default async function Image({ params }: { params: Promise<{ locale: stri
   const locale = isLocale(l) ? l : "en";
   if (isColoringSlug(locale, slug)) {
     const dict = getDictionary(locale);
-    return ogImage({ eyebrow: dict.pages.coloring.eyebrow, title: resolveColoring(locale, species)?.title[locale] ?? dict.pages.coloring.title, footer: `PetPrep · ${dict.meta.slogan}` });
+    const page = resolveColoring(locale, species);
+    // The colouring page itself on the share card (David 2026-10-31).
+    const png = page ? await readFile(join(process.cwd(), "public/coloring", `${page.id}.png`), "base64") : undefined;
+    return ogImage({
+      eyebrow: dict.pages.coloring.eyebrow,
+      title: page?.title[locale] ?? dict.pages.coloring.title,
+      footer: `PetPrep · ${dict.meta.slogan}`,
+      picture: png ? { png, ...coloringSize } : undefined,
+    });
   }
   if (isCareSlug(locale, slug)) {
     const sp = careSpeciesBySlug(locale, species);
