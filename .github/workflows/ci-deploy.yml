@@ -110,3 +110,19 @@ jobs:
           echo "3. Building and switching the website container"
           $SSH "${SSH_USER}@${SSH_HOST}" \
             "bash /opt/petprep/website/incoming/deploy/deploy.sh /opt/petprep/website/incoming $COMMIT_SHA"
+
+      # IndexNow (David 2026-10-31, M6-K): tell Bing (→ ChatGPT, Copilot) and other IndexNow
+      # engines about every URL in the sitemap after a deploy. Key file: public/f1404c440df09203fa7aeccfaa86137d.txt.
+      # Never fails the deploy.
+      - name: Notify IndexNow
+        continue-on-error: true
+        env:
+          INDEXNOW_KEY: f1404c440df09203fa7aeccfaa86137d
+        run: |
+          set -euo pipefail
+          sleep 20
+          curl -fsS https://petprep.si/sitemap.xml | grep -o '<loc>[^<]*</loc>' | sed 's/<\/\?loc>//g' | sort -u > urls.txt
+          echo "URLs: $(wc -l < urls.txt)"
+          jq -Rn --arg key "$INDEXNOW_KEY" '{host:"petprep.si",key:$key,keyLocation:("https://petprep.si/"+$key+".txt"),urlList:[inputs]}' < urls.txt > body.json
+          curl -sS -o /dev/null -w 'IndexNow HTTP %{http_code}\n' -X POST https://api.indexnow.org/indexnow \
+            -H 'Content-Type: application/json; charset=utf-8' --data @body.json

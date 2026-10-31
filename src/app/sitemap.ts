@@ -4,6 +4,7 @@ import { absoluteUrl } from "@/lib/site";
 import { pageUpdated } from "@/content/updated";
 import { alternatesFor, pathAlternates } from "@/lib/seo";
 import { registry } from "@/content/registry/registry";
+import { careSpecies, careSpeciesHref, careUpdated, foodHref, foodsOf } from "@/content/care/care";
 import { breedHref, breedUpdated, speciesHref, speciesUpdated } from "@/lib/registry/views";
 
 const priority: Partial<Record<RouteKey, number>> = {
@@ -46,5 +47,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: pathAlternates(each((l) => breedHref(l, b))) },
     })),
   ]);
-  return [...pages, ...register];
+  // Care knowledge (M6-K): species food lists and food pages, only locales that publish them.
+  const care = locales.flatMap((locale) => [
+    ...careSpecies(locale).map((sp) => ({
+      url: absoluteUrl(careSpeciesHref(locale, sp)),
+      lastModified: new Date(careUpdated(locale, sp.id)),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+      alternates: { languages: pathAlternates(each((l) => careSpeciesHref(l, sp))) },
+    })),
+    ...careSpecies(locale).flatMap((sp) =>
+      foodsOf(sp.id, locale).map((f) => ({
+        url: absoluteUrl(foodHref(locale, f)),
+        lastModified: new Date(f.updated),
+        changeFrequency: "monthly" as const,
+        priority: 0.6,
+        alternates: { languages: pathAlternates(each((l) => (f.locales.includes(l) ? foodHref(l, f) : careSpeciesHref(l, sp)))) },
+      })),
+    ),
+  ]);
+  return [...pages, ...register, ...care];
 }

@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "generator": "scripts/export-care-knowledge.mjs",
+  "levels": ["toxic", "dangerous", "not_recommended", "small_amounts"],
+  "species": [],
+  "foods": [],
+  "sources": []
+}

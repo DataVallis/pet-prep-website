@@ -51,7 +51,7 @@ const sl: Dictionary = {
   footer: {
     tagline: "Pripravljeni na žival. Ob njej vse življenje.",
     groups: [
-      { title: "Izdelek", links: ["howItWorks", "parents", "animals", "afterAdoption", "pricing", "faq"] },
+      { title: "Izdelek", links: ["howItWorks", "parents", "animals", "care", "afterAdoption", "pricing", "faq"] },
       { title: "Podjetje", links: ["about", "curio", "walkyourpet", "partners", "investors", "contact"] },
       { title: "Zaupanje", links: ["privacy", "terms", "childSafety", "accessibility", "deleteAccount"] },
     ],
@@ -1160,6 +1160,19 @@ const sl: Dictionary = {
           ],
         },
       ],
+    },
+    care: {
+      meta: {
+        title: "Skrb za ljubljenčka — kaj lahko jedo psi in mačke, z viri | PetPrep",
+        description:
+          "Katera hrana je za pse in mačke strupena, tvegana ali v redu — razlog, znaki in kaj storiti, z vsemi viri. Pripravil PetPrep za družine, ki se pripravljajo na žival.",
+      },
+      navLabel: "Skrb",
+      eyebrow: "Znanje o skrbi",
+      title: "Kaj je varno za vašega ljubljenčka?",
+      lead:
+        "Jasni odgovori z viri za družine: katera hrana je strupena, katera tvegana in katera v redu kot poslastica — za pse in mačke, druge vrste sledijo. Vsak odgovor ima povezave do virov.",
+      blocks: [{ type: "careHub" }],
     },
     walkyourpet: {
       meta: {

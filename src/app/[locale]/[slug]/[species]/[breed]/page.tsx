@@ -16,6 +16,8 @@ import { CompareView } from "@/components/registry/CompareView";
 import { ShareButton } from "@/components/registry/ShareButton";
 import { PortraitColours } from "@/components/registry/PortraitColours";
 import { absoluteUrl } from "@/lib/site";
+import { CareFoodPage, careFoodMetadata, careFoodParams, resolveCareFood } from "@/components/care/CarePages";
+import { isCareSlug } from "@/content/care/care";
 
 export const dynamicParams = false;
 
@@ -23,10 +25,11 @@ export const dynamicParams = false;
 export function generateStaticParams({ params }: { params: { locale: string } }) {
   if (!isLocale(params.locale)) return [];
   const locale = params.locale;
-  return registry.species.flatMap((s) => [
+  const register: { slug: string; species: string; breed: string }[] = registry.species.flatMap((s) => [
     ...breedsOf(s.id).map((b) => ({ slug: pageSlugs.animals[locale], species: s.slug[locale], breed: b.slug[locale] })),
     { slug: pageSlugs.animals[locale], species: s.slug[locale], breed: compareSlug[locale] },
   ]);
+  return [...register, ...careFoodParams(locale)];
 }
 
 type Resolved = { locale: Locale; species: Species; breed: Breed | null };
@@ -44,6 +47,10 @@ const each = (fn: (l: Locale) => string) => Object.fromEntries(locales.map((l) =
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[species]/[breed]">): Promise<Metadata> {
   const p = await params;
+  if (isLocale(p.locale) && isCareSlug(p.locale, p.slug)) {
+    const cf = resolveCareFood(p.locale, p.species, p.breed);
+    return cf ? careFoodMetadata(p.locale, cf.food) : {};
+  }
   const r = resolve(p.locale, p.slug, p.species, p.breed);
   if (!r) return {};
   const c = getRegistryCopy(r.locale);
@@ -108,6 +115,11 @@ function Crumbs({ items }: { items: { name: string; href?: string }[] }) {
 
 export default async function BreedOrComparePage({ params }: PageProps<"/[locale]/[slug]/[species]/[breed]">) {
   const p = await params;
+  if (isLocale(p.locale) && isCareSlug(p.locale, p.slug)) {
+    const cf = resolveCareFood(p.locale, p.species, p.breed);
+    if (!cf) notFound();
+    return <CareFoodPage locale={p.locale} species={cf.species} food={cf.food} />;
+  }
   const r = resolve(p.locale, p.slug, p.species, p.breed);
   if (!r) notFound();
   const { locale, species } = r;
