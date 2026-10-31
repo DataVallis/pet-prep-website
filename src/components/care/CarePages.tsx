@@ -412,7 +412,7 @@ function countryNames(locale: Locale, codes: string[]): Record<string, string> {
   return Object.fromEntries([...new Set(codes)].map((c) => [c, dn.of(c) ?? c]));
 }
 
-const countryOrder: Record<Locale, string[]> = { en: ["US", "GB", "AU", "SI", "HR"], sl: ["SI", "HR", "GB", "US", "AU"], de: ["DE", "SI", "HR", "GB", "US", "AU"], fr: ["FR", "SI", "HR", "GB", "US", "AU"], es: ["ES", "SI", "HR", "GB", "US", "AU"] };
+const countryOrder: Record<Locale, string[]> = { en: ["US", "GB", "AU", "SI", "HR"], sl: ["SI", "HR", "GB", "US", "AU"], de: ["DE", "SI", "HR", "GB", "US", "AU"], fr: ["FR", "SI", "HR", "GB", "US", "AU"], es: ["ES", "SI", "HR", "GB", "US", "AU"], it: ["IT", "SI", "HR", "GB", "US", "AU"] };
 
 export const emergencyHref = (locale: Locale) => `${careHref(locale)}/${emergencySlug[locale]}`;
 export const isEmergencySlug = (locale: Locale, slug: string) => slug === emergencySlug[locale];

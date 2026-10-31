@@ -22,7 +22,7 @@ npm run build && npm run lint && npx tsc --noEmit
 - `src/proxy.ts` serves English from the root (internally `/en/...`) and redirects `/en/...` to the root, so every page has one URL.
 - `/pogoji` and `/zasebnost` (linked from the app's sign-up screen) redirect to the Slovenian legal pages (`next.config.ts`).
 - **Add a language:** add the code to `locales` and a slug per page in `src/i18n/config.ts`, add `src/content/<code>.ts` (typed by `Dictionary`, start from `en.ts`), register it in `src/content/index.ts`; `npx tsc --noEmit` lists every other text (register, care, emergency) — full steps in pet-prep `docs/engineering/LANGUAGE_RUNBOOK.md`. App screens: languages without `public/screens/<code>/` show the English screens (`screenLocale()` in `src/i18n/config.ts`) until the app itself is translated.
-- **Languages live:** English, Slovenian, German (`/de`, since 2026-10-31; legal pages marked „Übersetzung – verbindlich ist die englische Fassung.“), French (`/fr`, since 2026-10-31; legal pages marked « Traduction – seule la version anglaise fait foi. »), Spanish (`/es`, since 2026-10-31; legal pages marked «Traducción: la versión en inglés es la única vinculante.»).
+- **Languages live:** English, Slovenian, German (`/de`, since 2026-10-31; legal pages marked „Übersetzung – verbindlich ist die englische Fassung.“), French (`/fr`, since 2026-10-31; legal pages marked « Traduction – seule la version anglaise fait foi. »), Spanish (`/es`, since 2026-10-31; legal pages marked «Traducción: la versión en inglés es la única vinculante.»), Italian (`/it`, since 2026-10-31; legal pages marked «Traduzione: fa fede esclusivamente la versione inglese.»).
 
 ## Content
 
