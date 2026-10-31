@@ -6,6 +6,7 @@ import { compareSlug, localeMeta, locales, pathFor, pathForBreed, pathForSpecies
 import en from "@/content/registry/en";
 import sl from "@/content/registry/sl";
 import de from "@/content/registry/de";
+import fr from "@/content/registry/fr";
 import type { Fmt, RegistryCopy } from "@/content/registry/types";
 import {
   breedsOf,
@@ -27,7 +28,7 @@ import {
   type Species,
 } from "@/content/registry/registry";
 
-const copies: Record<Locale, RegistryCopy> = { en, sl, de };
+const copies: Record<Locale, RegistryCopy> = { en, sl, de, fr };
 export function getRegistryCopy(locale: Locale): RegistryCopy {
   return copies[locale];
 }
