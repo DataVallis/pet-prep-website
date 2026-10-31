@@ -308,6 +308,8 @@ const sl: RegistryCopy = {
       dna_jadd: "Test DNK za juvenilno Addisonovo bolezen (JADD)",
       dermoid_sinus_scheme: "Pregled mladičkov na dermoidni sinus (shema klubov pasme)",
       dna_jme: "Test DNK za juvenilno mioklonično epilepsijo (JME)",
+      dna_je: "Test DNK za juvenilno epilepsijo (JE)",
+      dna_lsd: "Test DNK za lizosomsko bolezen kopičenja (LSD)",
       dna_pap_pra1: "Test DNK za progresivno atrofijo mrežnice pri papijonih (Pap-PRA1)",
       dna_nad: "Test DNK za nevroaksonsko distrofijo (NAD)",
       dna_eopra: "Test DNK za zgodaj nastopajočo progresivno atrofijo mrežnice (EOPRA)",
@@ -384,6 +386,7 @@ const sl: RegistryCopy = {
     chiari_syringomyelia: "Pri pasmi se pojavljata Chiarijeva malformacija in siringomielija, boleča bolezen z votlinicami, polnimi tekočine, v hrbtenjači ob možganih; povezana je z obliko lobanje, ugotovijo jo z MRI.",
     eye_conditions: "Pri pasmi se pojavljajo dedne bolezni oči, na primer siva mrena, izbuljene ali razdražene oči pa so opozorilo pri presoji; na voljo so pregledi oči in testi DNK.",
     epilepsy: "Pri pasmi se pojavlja epilepsija, bolezen možganov, ki lahko povzroči napade.",
+    storage_disease: "Pri mladih psih te pasme se lahko pojavi dedna bolezen kopičenja, ki prizadene živčevje; test DNK staršev vzrediteljem omogoča, da se ji izognejo.",
     back_disc_disease: "Pri pasmi se pojavlja bolezen medvretenčnih ploščic, ki blažijo stik med vretenci hrbtenice.",
     pra_eye_disease: "Pri pasmi se pojavlja progresivna atrofija mrežnice, dedna bolezen oči, ki lahko počasi vodi v slepoto; na voljo so DNK testi in pregledi oči.",
     hip_dysplasia: "Pri pasmi se pojavlja displazija kolkov, slabo razvit kolčni sklep, ki lahko vodi v artrozo; vzrediteljem svetujejo pregled kolkov staršev.",
@@ -1191,6 +1194,14 @@ const sl: RegistryCopy = {
         "PetMD priporoča vsaj 60 minut gibanja na dan in pravi, da je potrpežljiv in ljubeč z otroki, da je lahko nagnjen k tesnobi ob ločitvi in da je zaradi močnega lovskega nagona življenje z manjšimi psi ali mačkami lahko težje. Britanska raziskava (McMillan in sod., 2024, v tabeli Dogs Trust) navaja mediano pričakovane življenjske dobe 12,5 leta; PetMD navaja 12–16 let. VCA priporoča česanje enkrat na teden; PetMD svetuje socializacijo mladička, brez gibanja takoj po obroku (zasuk želodca) ter kopanje in čiščenje ušes približno vsakih 4–6 tednov.",
       ],
       sources: ["S625", "S626", "S628", "S629", "S123", "S10"],
+    },
+    lagotto_romagnolo: {
+      aka: "lagotto, lagotti, romanjski vodni pes, pes za tartufe, Lagotto Romagnolo, Romagna Water Dog",
+      text: [
+        "Lagotto romagnolo (Lagotto Romagnolo) je majhen do srednje velik kodrodlaki vodni pes iz Italije, znan kot pes za iskanje tartufov; FCI ga uvršča med vodne pse. Standard navaja višino 43–48 cm in težo 13–16 kg za samce ter 41–46 cm in 11–14 kg za samice; pes te velikosti zraste do približno 12–15 mesecev (PetMD).",
+        "Royal Kennel Club ga opisuje kot odličnega in pozornega družinskega spremljevalca, priporoča več kot dve uri gibanja na dan in česanje večkrat na teden, pravi, da se ne lisa, in navaja življenjsko dobo več kot 12 let; po PetMD lahko dočaka 15–17 let. PetMD poudarja, da potrebuje stalne miselne in telesne izzive ter veliko socializacije, ker je lahko plašen; Woodgreen pravi, da težko prenaša pogosto samoto, in priporoča obisk frizerja vsakih šest do osem tednov.",
+      ],
+      sources: ["S630", "S631", "S632", "S633", "S635", "S636", "S10"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
