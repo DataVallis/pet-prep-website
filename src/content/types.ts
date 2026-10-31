@@ -41,6 +41,7 @@ export type Block =
   /** Animal register hub: species from src/content/registry/registry.json (M5-R11). */
   | { type: "animalsHub" }
   | { type: "careHub" }
+  | { type: "coloringHub" }
   /**
    * Pictures in a grid (files under public/). With `video` the tile is a video player and `src`
    * is its poster; videos never autoplay (accessibility: less motion).

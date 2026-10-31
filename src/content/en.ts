@@ -51,7 +51,7 @@ const en: Dictionary = {
   footer: {
     tagline: "Ready for a pet. There for its whole life.",
     groups: [
-      { title: "Product", links: ["howItWorks", "parents", "animals", "care", "afterAdoption", "pricing", "faq"] },
+      { title: "Product", links: ["howItWorks", "parents", "animals", "care", "coloring", "afterAdoption", "pricing", "faq"] },
       { title: "Company", links: ["about", "curio", "walkyourpet", "partners", "investors", "contact"] },
       { title: "Trust", links: ["privacy", "terms", "childSafety", "accessibility", "deleteAccount"] },
     ],
@@ -1175,6 +1175,19 @@ const en: Dictionary = {
       lead:
         "Clear, sourced answers for families: which foods are toxic, which are risky and which are fine as a treat — for dogs and cats, with more species to come. Every answer links its sources.",
       blocks: [{ type: "careHub" }],
+    },
+    coloring: {
+      meta: {
+        title: "Free printable dog and cat coloring pages for kids | PetPrep",
+        description:
+          "Free coloring pages to print: golden retriever, labrador, border collie, mixed-breed puppy, kitten and Curio. A4 and US Letter PDFs, each with a real pet-care fact and its source.",
+      },
+      navLabel: "Colouring pages",
+      eyebrow: "Colouring pages",
+      title: "Free colouring pages to print.",
+      lead:
+        "Dogs, cats and Curio to colour or copy — print one page or the whole book. Each page has a real pet-care fact from a vet or kennel-club source to read together.",
+      blocks: [{ type: "coloringHub" }],
     },
     walkyourpet: {
       meta: {

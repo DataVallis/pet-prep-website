@@ -51,7 +51,7 @@ const de: Dictionary = {
   footer: {
     tagline: "Bereit für ein Haustier. An seiner Seite – sein ganzes Leben lang.",
     groups: [
-      { title: "Produkt", links: ["howItWorks", "parents", "animals", "care", "afterAdoption", "pricing", "faq"] },
+      { title: "Produkt", links: ["howItWorks", "parents", "animals", "care", "coloring", "afterAdoption", "pricing", "faq"] },
       { title: "Unternehmen", links: ["about", "curio", "walkyourpet", "partners", "investors", "contact"] },
       { title: "Vertrauen", links: ["privacy", "terms", "childSafety", "accessibility", "deleteAccount"] },
     ],
@@ -1175,6 +1175,19 @@ const de: Dictionary = {
       lead:
         "Klare, belegte Antworten für Familien: welche Lebensmittel giftig sind, welche riskant und welche als Leckerli in Ordnung – für Hunde und Katzen, weitere Tierarten folgen. Jede Antwort verlinkt ihre Quellen.",
       blocks: [{ type: "careHub" }],
+    },
+    coloring: {
+      meta: {
+        title: "Kostenlose Ausmalbilder mit Hunden und Katzen zum Ausdrucken | PetPrep",
+        description:
+          "Kostenlose Ausmalbilder für Kinder zum Ausdrucken: Golden Retriever, Labrador, Border Collie, Mischlingswelpe, Kätzchen und Curio. PDFs in A4 und US Letter, jedes mit einem echten Wissenstipp zur Tierpflege und seiner Quelle.",
+      },
+      navLabel: "Ausmalbilder",
+      eyebrow: "Ausmalbilder",
+      title: "Kostenlose Ausmalbilder zum Ausdrucken.",
+      lead:
+        "Hunde, Katzen und Curio zum Ausmalen oder Abmalen – drucken Sie ein einzelnes Blatt oder das ganze Malbuch. Auf jedem Blatt steht zum gemeinsamen Lesen ein echter Wissenstipp zur Tierpflege – aus einer tierärztlichen Quelle oder von einem Zuchtverband.",
+      blocks: [{ type: "coloringHub" }],
     },
     walkyourpet: {
       meta: {

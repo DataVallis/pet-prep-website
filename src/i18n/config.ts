@@ -53,6 +53,8 @@ export const pageSlugs = {
   walkyourpet: { en: "walkyourpet", sl: "walkyourpet", de: "walkyourpet" },
   /** Care knowledge (M6-K, David 2026-10-31): /care → /care/<species> → /care/<species>/<food>. */
   care: { en: "care", sl: "skrb", de: "ratgeber" },
+  /** Free printable colouring pages (David 2026-10-31): /coloring-pages → /coloring-pages/<page>. */
+  coloring: { en: "coloring-pages", sl: "pobarvanke", de: "ausmalbilder" },
 } as const satisfies Record<string, Record<Locale, string>>;
 
 export type PageKey = keyof typeof pageSlugs;
