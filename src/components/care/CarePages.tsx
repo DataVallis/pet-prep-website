@@ -6,7 +6,7 @@ import { getDictionary } from "@/content";
 import { registry, type Species } from "@/content/registry/registry";
 import {
   careHref, careSpecies, careSpeciesBySlug, careSpeciesHref, careUpdated, foodBySlug, foodBySpeciesSlug, foodHref, foodsOf,
-  levels, sourcesOf, allFoods, type Food, type Level,
+  levels, sourcesOf, allFoods, allVets, type Food, type Level,
 } from "@/content/care/care";
 import { getCareCopy, speciesWords } from "@/content/care/copy";
 import { formatDay } from "@/lib/registry/views";
@@ -15,6 +15,7 @@ import { breadcrumbsLd, collectionLd, faqLd, graph } from "@/lib/jsonld";
 import { absoluteUrl } from "@/lib/site";
 import { JsonLd } from "@/components/JsonLd";
 import { StoreButtons } from "@/components/Cta";
+import { VetDirectory } from "@/components/care/VetDirectory";
 import { contacts, emergencyCopy, emergencySlug, emergencyUpdated, steps, type Contact } from "@/content/care/emergency";
 
 /* ─── shared ─────────────────────────────────────────────────────────────── */
@@ -405,6 +406,12 @@ export { careHref };
 /* ─── emergency page: /care/emergency (M6-K1) ─────────────────────────────── */
 
 
+/** Country names in the page language (any ISO-2 code; new countries need no words). */
+function countryNames(locale: Locale, codes: string[]): Record<string, string> {
+  const dn = new Intl.DisplayNames([locale], { type: "region" });
+  return Object.fromEntries([...new Set(codes)].map((c) => [c, dn.of(c) ?? c]));
+}
+
 const countryOrder: Record<Locale, string[]> = { en: ["US", "GB", "AU", "SI", "HR"], sl: ["SI", "HR", "GB", "US", "AU"] };
 
 export const emergencyHref = (locale: Locale) => `${careHref(locale)}/${emergencySlug[locale]}`;
@@ -437,6 +444,7 @@ export function EmergencyPage({ locale }: { locale: Locale }) {
   const order = countryOrder[locale];
   const list = [...contacts].sort((a, b) => order.indexOf(a.country) - order.indexOf(b.country));
   const allSources = [...new Map(steps.flatMap((s) => s.sources).map((s) => [s.url, s])).values()];
+  const vets = allVets();
   const ld = graph(
     {
       "@type": "HowTo",
@@ -499,6 +507,14 @@ export function EmergencyPage({ locale }: { locale: Locale }) {
           </ul>
           <p className="max-w-3xl text-[15px] leading-relaxed">{e.elsewhere}</p>
         </section>
+
+        {vets.length ? (
+          <section aria-labelledby="vets" className="flex flex-col gap-4">
+            <h2 id="vets" className="h-card text-[28px] leading-tight sm:text-[34px]">{e.vetsTitle}</h2>
+            <p className="max-w-3xl text-muted">{e.vetsIntro}</p>
+            <VetDirectory entries={vets} copy={{ ...e.vets, countries: countryNames(locale, vets.map((v) => v.country)) }} defaultCountry={locale === "sl" ? "SI" : ""} />
+          </section>
+        ) : null}
 
         <section aria-labelledby="sources" className="flex max-w-3xl flex-col gap-3">
           <h2 id="sources" className="h-card text-[24px] leading-tight">{e.sources}</h2>

@@ -33,7 +33,9 @@ export type Food = {
 
 export type CareSource = { species: string; id: string; tier: string; publisher: string; title: string; url: string };
 
-type CareKnowledge = { schema_version: number; levels: Level[]; species: string[]; foods: Food[]; sources: CareSource[] };
+import type { VetEntry } from "@/components/care/VetDirectory";
+
+type CareKnowledge = { schema_version: number; levels: Level[]; species: string[]; foods: Food[]; sources: CareSource[]; vets?: VetEntry[] };
 
 const data = bundled as unknown as CareKnowledge;
 if (data.schema_version !== 1) throw new Error(`care-knowledge.json: schema_version ${data.schema_version}, expected 1`);
@@ -84,3 +86,6 @@ export function careUpdated(locale: Locale, speciesId?: string): string {
 }
 
 export const allFoods = () => data.foods;
+
+/** Vets / duty rotas / poison lines by country (M6-K1); empty until the export has them. */
+export const allVets = (): VetEntry[] => data.vets ?? [];
