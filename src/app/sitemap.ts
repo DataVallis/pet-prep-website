@@ -4,6 +4,8 @@ import { absoluteUrl } from "@/lib/site";
 import { pageUpdated } from "@/content/updated";
 import { alternatesFor, pathAlternates } from "@/lib/seo";
 import { registry } from "@/content/registry/registry";
+import { emergencyHref } from "@/components/care/CarePages";
+import { emergencyUpdated } from "@/content/care/emergency";
 import { careSpecies, careSpeciesHref, careUpdated, foodHref, foodsOf } from "@/content/care/care";
 import { breedHref, breedUpdated, speciesHref, speciesUpdated } from "@/lib/registry/views";
 
@@ -66,5 +68,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       })),
     ),
   ]);
-  return [...pages, ...register, ...care];
+  const emergency = locales.map((locale) => ({
+    url: absoluteUrl(emergencyHref(locale)),
+    lastModified: new Date(emergencyUpdated),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+    alternates: { languages: pathAlternates(each((l) => emergencyHref(l))) },
+  }));
+  return [...pages, ...register, ...care, ...emergency];
 }
