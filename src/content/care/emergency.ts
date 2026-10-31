@@ -1,4 +1,5 @@
 import type { Locale } from "@/i18n/config";
+import type { VetCopy } from "@/components/care/VetDirectory";
 
 /**
  * "Pet ate something toxic?" page (M6-K1, David 2026-10-31). Every step and every number was
@@ -92,6 +93,8 @@ export const emergencyCopy: Record<Locale, {
   crumb: string; title: string; metaTitle: string; description: string; eyebrow: string; lead: string; stepsTitle: string;
   contactsTitle: string; contactsIntro: string; poisonLine: string; emergencyVet: string; noPhone: string;
   elsewhere: string; sources: string; open: string; countries: Record<string, string>;
+  vetsTitle: string; vetsIntro: string;
+  vets: Omit<VetCopy, "countries">;
 }> = {
   en: {
     crumb: "Emergency",
@@ -110,6 +113,14 @@ export const emergencyCopy: Record<Locale, {
     sources: "Sources",
     open: "Official page",
     countries: { SI: "Slovenia", HR: "Croatia", GB: "United Kingdom", US: "United States", AU: "Australia" },
+    vetsTitle: "Vets and emergency clinics by country",
+    vetsIntro: "On holiday or at home: pick the country, filter by region or town, or show only clinics open 24 hours. Every entry links the page we took it from — call ahead, hours can change.",
+    vets: {
+      country: "Country", all: "All countries", region: "Region", allRegions: "All regions", search: "Town or name",
+      searchPlaceholder: "e.g. Split, Málaga, Maribor", only24h: "Only 24 h", results: (n) => `${n} results`,
+      none: "Nothing found — try another town or region.", h24: "24 h", dutyRota: "Duty rota", poisonLine: "Poison line",
+      website: "Website", source: "Source", checked: "checked",
+    },
   },
   sl: {
     crumb: "Nujni primeri",
@@ -128,5 +139,13 @@ export const emergencyCopy: Record<Locale, {
     sources: "Viri",
     open: "Uradna stran",
     countries: { SI: "Slovenija", HR: "Hrvaška", GB: "Združeno kraljestvo", US: "ZDA", AU: "Avstralija" },
+    vetsTitle: "Veterinarji in nujna pomoč po državah",
+    vetsIntro: "Doma ali na dopustu: izberite državo, filtrirajte po regiji ali kraju ali pokažite samo klinike, odprte 24 ur. Vsak vnos ima povezavo do strani, s katere smo ga vzeli — pred obiskom pokličite, ure se lahko spremenijo.",
+    vets: {
+      country: "Država", all: "Vse države", region: "Regija", allRegions: "Vse regije", search: "Kraj ali ime",
+      searchPlaceholder: "npr. Split, Málaga, Maribor", only24h: "Samo 24 ur", results: (n) => `Zadetkov: ${n}`,
+      none: "Ni zadetkov — poskusite drug kraj ali regijo.", h24: "24 ur", dutyRota: "Dežurstva", poisonLine: "Linija za zastrupitve",
+      website: "Spletna stran", source: "Vir", checked: "preverjeno",
+    },
   },
 };
