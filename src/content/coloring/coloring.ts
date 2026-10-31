@@ -3,7 +3,7 @@ import type { Locale, PageKey } from "@/i18n/config";
 /**
  * Free printable colouring pages (David 2026-10-31): line art made from PetPrep's own AI breed
  * portraits and Curio (CGP exception: line art only for colouring pages). Files live in
- * public/coloring/<id>.png (1-bit, 1792×2400) and <id>.a4.pdf / <id>.letter.pdf (scripts/coloring-pdf.mjs).
+ * public/coloring/<id>.png (1-bit, 1792×2620, logo outline in the bottom band) and <id>.a4.pdf / <id>.letter.pdf (scripts/coloring-pdf.mjs).
  * Every page carries one sourced tip that links to a care or breed page — never a new claim.
  */
 export type ColoringTip =
@@ -23,7 +23,7 @@ export type ColoringPage = {
 };
 
 export const coloringUpdated = "2026-10-31";
-export const coloringSize = { width: 1792, height: 2400 };
+export const coloringSize = { width: 1792, height: 2620 };
 
 /** Order = order on the hub and in the printable book (keep scripts/coloring-pdf.mjs in sync). */
 export const coloringPages: ColoringPage[] = [
