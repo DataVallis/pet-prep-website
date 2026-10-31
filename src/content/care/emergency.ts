@@ -117,7 +117,7 @@ export const emergencyCopy: Record<Locale, {
     vetsIntro: "On holiday or at home: pick the country, filter by region or town, or show only clinics open 24 hours. Every entry links the page we took it from — call ahead, hours can change.",
     vets: {
       country: "Country", all: "All countries", region: "Region", allRegions: "All regions", search: "Town or name",
-      searchPlaceholder: "e.g. Split, Málaga, Maribor", only24h: "Only 24 h", results: (n) => `${n} results`,
+      searchPlaceholder: "e.g. Split, Málaga, Maribor", only24h: "Only 24 h", results: "{n} results",
       none: "Nothing found — try another town or region.", h24: "24 h", dutyRota: "Duty rota", poisonLine: "Poison line",
       website: "Website", source: "Source", checked: "checked",
     },
@@ -143,7 +143,7 @@ export const emergencyCopy: Record<Locale, {
     vetsIntro: "Doma ali na dopustu: izberite državo, filtrirajte po regiji ali kraju ali pokažite samo klinike, odprte 24 ur. Vsak vnos ima povezavo do strani, s katere smo ga vzeli — pred obiskom pokličite, ure se lahko spremenijo.",
     vets: {
       country: "Država", all: "Vse države", region: "Regija", allRegions: "Vse regije", search: "Kraj ali ime",
-      searchPlaceholder: "npr. Split, Málaga, Maribor", only24h: "Samo 24 ur", results: (n) => `Zadetkov: ${n}`,
+      searchPlaceholder: "npr. Split, Málaga, Maribor", only24h: "Samo 24 ur", results: "Zadetkov: {n}",
       none: "Ni zadetkov — poskusite drug kraj ali regijo.", h24: "24 ur", dutyRota: "Dežurstva", poisonLine: "Linija za zastrupitve",
       website: "Spletna stran", source: "Vir", checked: "preverjeno",
     },
@@ -169,7 +169,7 @@ export const emergencyCopy: Record<Locale, {
     vetsIntro: "Im Urlaub oder zu Hause: Wählen Sie das Land, filtern Sie nach Region oder Ort, oder lassen Sie sich nur Kliniken anzeigen, die rund um die Uhr geöffnet sind. Jeder Eintrag verweist auf die Seite, von der wir ihn übernommen haben – rufen Sie vorher an, Öffnungszeiten können sich ändern.",
     vets: {
       country: "Land", all: "Alle Länder", region: "Region", allRegions: "Alle Regionen", search: "Ort oder Name",
-      searchPlaceholder: "z.\u00a0B. Split, Málaga, Maribor", only24h: "Nur rund um die Uhr", results: (n) => `${n} Treffer`,
+      searchPlaceholder: "z.\u00a0B. Split, Málaga, Maribor", only24h: "Nur rund um die Uhr", results: "{n} Treffer",
       none: "Nichts gefunden – versuchen Sie einen anderen Ort oder eine andere Region.", h24: "24\u00a0h", dutyRota: "Notdienstplan", poisonLine: "Giftnotruf",
       website: "Website", source: "Quelle", checked: "geprüft",
     },

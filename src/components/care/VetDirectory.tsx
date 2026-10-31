@@ -30,7 +30,8 @@ export type VetCopy = {
   search: string;
   searchPlaceholder: string;
   only24h: string;
-  results: (n: number) => string;
+  /** Result count, "{n}" = the number (a string: functions cannot be passed to this client component). */
+  results: string;
   none: string;
   h24: string;
   dutyRota: string;
@@ -93,7 +94,7 @@ export function VetDirectory({ entries, copy, defaultCountry }: { entries: VetEn
           {copy.only24h}
         </label>
       </div>
-      <p className="text-sm text-muted" aria-live="polite">{copy.results(list.length)}</p>
+      <p className="text-sm text-muted" aria-live="polite">{copy.results.replace("{n}", String(list.length))}</p>
       {list.length ? (
         <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {list.map((e) => (
