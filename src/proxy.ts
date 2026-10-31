@@ -1,9 +1,10 @@
 import { NextResponse, type NextRequest } from "next/server";
+import { defaultLocale, locales } from "@/i18n/config";
 
 /**
  * Locale routing.
  * - English (default) is served from the root: /how-it-works -> internally /en/how-it-works.
- * - Slovenian lives under /sl.
+ * - Every other language lives under its prefix (/sl, /de, …; see src/i18n/config.ts).
  * - /en/... is never a public URL: it redirects to the root path (one canonical URL per page),
  *   except generated Open Graph images, which Next.js addresses by their file route.
  */
@@ -18,7 +19,8 @@ export function proxy(request: NextRequest) {
     return NextResponse.next();
   }
 
-  if (pathname === "/sl" || pathname.startsWith("/sl/")) {
+  const first = pathname.split("/")[1] ?? "";
+  if (first !== defaultLocale && (locales as readonly string[]).includes(first)) {
     return NextResponse.next();
   }
 

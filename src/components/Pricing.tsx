@@ -1,4 +1,4 @@
-import type { Locale } from "@/i18n/config";
+import { localeMeta, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/content/types";
 import { site } from "@/lib/site";
 import { PrimaryCta } from "./Cta";
@@ -13,7 +13,7 @@ function Check({ className = "" }: { className?: string }) {
 }
 
 export function formatPrice(locale: Locale, value: number) {
-  return new Intl.NumberFormat(locale === "sl" ? "sl-SI" : "en-IE", { style: "currency", currency: site.price.currency }).format(value);
+  return new Intl.NumberFormat(localeMeta[locale].intl, { style: "currency", currency: site.price.currency }).format(value);
 }
 
 export function Pricing({ locale, dict, headingLevel = 3 }: { locale: Locale; dict: Dictionary; headingLevel?: 2 | 3 }) {

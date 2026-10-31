@@ -1,4 +1,4 @@
-import { localeMeta, pathFor, type Locale, type RouteKey } from "@/i18n/config";
+import { localeMeta, locales, pathFor, type Locale, type RouteKey } from "@/i18n/config";
 import { absoluteUrl, site } from "@/lib/site";
 import type { Dictionary } from "@/content/types";
 import { pageUpdated } from "@/content/updated";
@@ -54,7 +54,7 @@ export function websiteLd(dict: Dictionary) {
     name: site.name,
     url: absoluteUrl("/"),
     description: dict.meta.siteDescription,
-    inLanguage: ["en", "sl"],
+    inLanguage: [...locales],
     publisher: { "@id": ORG_ID },
   };
 }

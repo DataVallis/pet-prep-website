@@ -157,8 +157,8 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
   const related = relatedBreeds(r.breed);
   const labels = registry.suitability_labels[locale];
   const cite = c.page.sourceLabel;
+  const breed = r.breed;
 
-  const other: Locale = locale === "en" ? "sl" : "en";
   const ld = graph(
     breedPageLd({
       locale,
@@ -166,7 +166,7 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
       title: breedMetaTitle(locale, r.breed),
       description: breedMetaDescription(locale, r.breed),
       breedName: v.name,
-      alternateNames: [r.breed.name[other], ...r.breed.synonyms.en, ...r.breed.synonyms.sl].filter(
+      alternateNames: [...locales.filter((l) => l !== locale).map((l) => breed.name[l]), ...locales.flatMap((l) => breed.synonyms[l] ?? [])].filter(
         (n, i, all) => n && n.toLowerCase() !== v.name.toLowerCase() && all.findIndex((x) => x.toLowerCase() === n.toLowerCase()) === i,
       ),
       sameAs: r.breed.same_as ?? [],

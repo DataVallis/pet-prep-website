@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import en from "@/content/en";
-import sl from "@/content/sl";
-import { pathFor } from "@/i18n/config";
+import { getDictionary } from "@/content";
+import { defaultLocale, localeMeta, locales, pathFor, type Locale } from "@/i18n/config";
 import { site } from "@/lib/site";
 import { fontClasses } from "./fonts";
 import "./globals.css";
@@ -10,14 +10,14 @@ import "./globals.css";
 /**
  * 404 for URLs that match no route (experimental.globalNotFound): the root layout lives under
  * [locale], so without this file Next.js would show its unbranded default page. English first
- * (the default locale), with the Slovenian way back right below. Next.js adds noindex.
+ * (the default locale), with the way back in every other site language below. Next.js adds noindex.
  */
 export const metadata: Metadata = {
   title: `${en.common.notFoundTitle} | PetPrep`,
   description: en.common.notFoundText,
 };
 
-const links = (dict: typeof en, locale: "en" | "sl") => [
+const links = (dict: typeof en, locale: Locale) => [
   { href: pathFor(locale, "home"), label: dict.common.notFoundCta, primary: true },
   { href: pathFor(locale, "animals"), label: dict.pages.animals.navLabel ?? dict.pages.animals.eyebrow },
   { href: pathFor(locale, "howItWorks"), label: dict.pages.howItWorks.eyebrow },
@@ -49,17 +49,23 @@ export default function GlobalNotFound() {
               </Link>
             ))}
           </nav>
-          <section lang="sl" aria-labelledby="nf-sl" className="mt-8 flex flex-col gap-3 border-t border-line pt-8">
-            <h2 id="nf-sl" className="h-card text-2xl">{sl.common.notFoundTitle}</h2>
-            <p className="text-muted">{sl.common.notFoundText}</p>
-            <nav aria-label="Slovenščina" className="flex flex-wrap gap-3">
-              {links(sl, "sl").map((l) => (
-                <Link key={l.href} href={l.href} hrefLang="sl" className={`btn ${l.primary ? "btn-primary" : "btn-secondary"}`}>
-                  {l.label}
-                </Link>
-              ))}
-            </nav>
-          </section>
+          {locales.filter((l) => l !== defaultLocale).map((l) => {
+            const d = getDictionary(l);
+            const lang = localeMeta[l].htmlLang;
+            return (
+              <section key={l} lang={lang} aria-labelledby={`nf-${l}`} className="mt-8 flex flex-col gap-3 border-t border-line pt-8">
+                <h2 id={`nf-${l}`} className="h-card text-2xl">{d.common.notFoundTitle}</h2>
+                <p className="text-muted">{d.common.notFoundText}</p>
+                <nav aria-label={localeMeta[l].label} className="flex flex-wrap gap-3">
+                  {links(d, l).map((x) => (
+                    <Link key={x.href} href={x.href} hrefLang={lang} className={`btn ${x.primary ? "btn-primary" : "btn-secondary"}`}>
+                      {x.label}
+                    </Link>
+                  ))}
+                </nav>
+              </section>
+            );
+          })}
         </main>
         <footer className="on-dark bg-graphite py-6 text-[13px] text-muted-dark">
           <div className="container-page">© PetPrep · {site.company.legalName}, {site.company.city}</div>

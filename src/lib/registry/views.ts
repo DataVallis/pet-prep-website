@@ -2,7 +2,7 @@ import "server-only";
 import { createHash } from "node:crypto";
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { compareSlug, pathFor, pathForBreed, pathForSpecies, type Locale } from "@/i18n/config";
+import { compareSlug, localeMeta, locales, pathFor, pathForBreed, pathForSpecies, type Locale } from "@/i18n/config";
 import en from "@/content/registry/en";
 import sl from "@/content/registry/sl";
 import type { Fmt, RegistryCopy } from "@/content/registry/types";
@@ -31,10 +31,9 @@ export function getRegistryCopy(locale: Locale): RegistryCopy {
   return copies[locale];
 }
 
-const intlLocale: Record<Locale, string> = { en: "en-GB", sl: "sl-SI" };
 export function fmt(locale: Locale): Fmt {
   return {
-    num: (n, digits = 2) => new Intl.NumberFormat(intlLocale[locale], { maximumFractionDigits: digits, useGrouping: "always" }).format(n),
+    num: (n, digits = 2) => new Intl.NumberFormat(localeMeta[locale].intl, { maximumFractionDigits: digits, useGrouping: "always" }).format(n),
   };
 }
 
@@ -52,13 +51,12 @@ export function speciesUpdated(sp: Species): string {
   return breedsOf(sp.id).map(breedUpdated).reduce((a, b) => (b > a ? b : a), registryUpdated);
 }
 
-const intlDate: Record<Locale, string> = { en: "en-GB", sl: "sl-SI" };
 /** "10 October 2026" / "10. 10. 2026". */
 export function formatDay(locale: Locale, iso: string): string {
   const d = new Date(`${iso}T12:00:00Z`);
   return locale === "sl"
     ? `${d.getUTCDate()}. ${d.getUTCMonth() + 1}. ${d.getUTCFullYear()}`
-    : new Intl.DateTimeFormat(intlDate[locale], { dateStyle: "long", timeZone: "UTC" }).format(d);
+    : new Intl.DateTimeFormat(localeMeta[locale].intl, { dateStyle: "long", timeZone: "UTC" }).format(d);
 }
 
 // ─── breed portrait (optional AI photo from the export) ─────────────────────
@@ -531,7 +529,7 @@ export const sizeRank = (size: string | undefined) => (size ? SIZE_ORDER.indexOf
 
 export function catalogueIndex(locale: Locale, sp: Species): IndexItem[] {
   const c = copies[locale];
-  const other: Locale = locale === "en" ? "sl" : "en";
+  const others = locales.filter((l) => l !== locale);
   return breedsOf(sp.id).map((b) => {
     const facetWords = sp.facets
       .filter((k) => b.facets[k])
@@ -543,13 +541,13 @@ export function catalogueIndex(locale: Locale, sp: Species): IndexItem[] {
     const firstCompare = sp.compare_fields.map((k) => b.compare[k]).find((i) => i !== undefined);
     const lineParts = facetWords.length ? facetWords : firstCompare !== undefined ? [factText(locale, b.facts[firstCompare])] : [];
     const seen = new Set([normalize(b.name[locale])]);
-    const shown = [b.name[other], ...b.synonyms[locale]].filter((x) => {
+    const shown = [...others.map((o) => b.name[o]), ...b.synonyms[locale]].filter((x) => {
       const k = normalize(x);
       if (!x || seen.has(k)) return false;
       seen.add(k);
       return true;
     });
-    const searchable = [...new Set([b.name[locale], b.name[other], ...b.synonyms.en, ...b.synonyms.sl].map(normalize))];
+    const searchable = [...new Set([b.name[locale], ...others.map((o) => b.name[o]), ...locales.flatMap((l) => b.synonyms[l] ?? [])].map(normalize))];
     return {
       id: b.id,
       n: b.name[locale],
@@ -608,7 +606,7 @@ export function compareData(locale: Locale, sp: Species): CompareData {
 
 /** Renders every value once in both languages so missing words fail `next build`. */
 function validate() {
-  for (const locale of ["en", "sl"] as Locale[]) {
+  for (const locale of locales) {
     const c = copies[locale];
     for (const sp of registry.species) {
       need(c.stageLabels, sp.id, "species stage labels");

@@ -6,11 +6,19 @@ export function isLocale(value: string): value is Locale {
   return (locales as readonly string[]).includes(value);
 }
 
-/** Open Graph / HTML language tags. */
-export const localeMeta: Record<Locale, { htmlLang: string; og: string; label: string; short: string }> = {
-  en: { htmlLang: "en", og: "en_US", label: "English", short: "EN" },
-  sl: { htmlLang: "sl", og: "sl_SI", label: "Slovenščina", short: "SL" },
+/**
+ * Per language: HTML / Open Graph tags, the language's own name, the Intl locale for dates, numbers and
+ * sorting, and the home country (default country of the vet directory; "" = all countries).
+ * Adding a language (hourly language run, docs/engineering/LANGUAGE_RUNBOOK.md in pet-prep): add it to
+ * `locales` and here — TypeScript then lists every text that still needs a translation.
+ */
+export const localeMeta: Record<Locale, { htmlLang: string; og: string; label: string; short: string; intl: string; country: string }> = {
+  en: { htmlLang: "en", og: "en_US", label: "English", short: "EN", intl: "en-GB", country: "" },
+  sl: { htmlLang: "sl", og: "sl_SI", label: "Slovenščina", short: "SL", intl: "sl-SI", country: "SI" },
 };
+
+/** Regex alternative of all site languages, for file routes like /llms/<x>.<locale>.txt. */
+export const localePattern = locales.join("|");
 
 /** Every page of the site, with its localized slug. "home" has no slug. */
 export const pageSlugs = {

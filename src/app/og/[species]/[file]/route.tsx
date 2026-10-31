@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import sharp from "sharp";
-import { locales, type Locale } from "@/i18n/config";
+import { localePattern, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { breedsOf, getSpecies, registry, type Breed } from "@/content/registry/registry";
 import { buildBreedView, getRegistryCopy } from "@/lib/registry/views";
@@ -57,7 +57,7 @@ function chips(locale: Locale, b: Breed): string[] {
 
 export async function GET(_req: Request, ctx: RouteContext<"/og/[species]/[file]">) {
   const { species, file } = await ctx.params;
-  const m = /^([a-z0-9_]+)\.(en|sl)\.png$/.exec(file);
+  const m = new RegExp(`^([a-z0-9_]+)\\.(${localePattern})\\.png$`).exec(file);
   const b = m ? breedsOf(species).find((x) => x.id === m[1]) : undefined;
   if (!m || !b) return new Response("Not found", { status: 404 });
   const locale = m[2] as Locale;

@@ -1,7 +1,7 @@
 import "server-only";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { locales, pageSlugs, pathFor, type Locale } from "@/i18n/config";
+import { localeMeta, locales, pageSlugs, pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { registry, type Species } from "@/content/registry/registry";
 import {
@@ -512,7 +512,7 @@ export function EmergencyPage({ locale }: { locale: Locale }) {
           <section aria-labelledby="vets" className="flex flex-col gap-4">
             <h2 id="vets" className="h-card text-[28px] leading-tight sm:text-[34px]">{e.vetsTitle}</h2>
             <p className="max-w-3xl text-muted">{e.vetsIntro}</p>
-            <VetDirectory entries={vets} copy={{ ...e.vets, countries: countryNames(locale, vets.map((v) => v.country)) }} defaultCountry={locale === "sl" ? "SI" : ""} />
+            <VetDirectory entries={vets} copy={{ ...e.vets, countries: countryNames(locale, vets.map((v) => v.country)) }} defaultCountry={localeMeta[locale].country} />
           </section>
         ) : null}
 

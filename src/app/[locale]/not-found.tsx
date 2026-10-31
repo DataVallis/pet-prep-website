@@ -1,8 +1,9 @@
 import Link from "next/link";
 import en from "@/content/en";
+import { defaultLocale, localeMeta, locales, pathFor } from "@/i18n/config";
 
-// Rendered for unknown URLs. The proxy routes every non-/sl path to the English tree,
-// so this page is in English; Slovenian 404s are rare and still get a working link home.
+// Rendered for unknown URLs. The proxy routes every path without a language prefix to the English
+// tree, so this page is in English, with a way home in every other site language.
 export default function NotFound() {
   const dict = en;
   return (
@@ -13,7 +14,9 @@ export default function NotFound() {
       <p className="text-lg text-muted">{dict.common.notFoundText}</p>
       <div className="flex flex-wrap gap-3">
         <Link href="/" className="btn btn-primary">{dict.common.notFoundCta}</Link>
-        <Link href="/sl" className="btn btn-secondary" hrefLang="sl" lang="sl">Slovenščina</Link>
+        {locales.filter((l) => l !== defaultLocale).map((l) => (
+          <Link key={l} href={pathFor(l, "home")} className="btn btn-secondary" hrefLang={localeMeta[l].htmlLang} lang={localeMeta[l].htmlLang}>{localeMeta[l].label}</Link>
+        ))}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import sharp from "sharp";
-import { locales, type Locale } from "@/i18n/config";
+import { localePattern, locales, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { allFoods } from "@/content/care/care";
 import { getCareCopy } from "@/content/care/copy";
@@ -18,7 +18,7 @@ export function generateStaticParams() {
 
 export async function GET(_req: Request, ctx: RouteContext<"/og/care/[file]">) {
   const { file } = await ctx.params;
-  const m = /^([a-z0-9_]+)-([a-z0-9-]+)\.(en|sl)\.png$/.exec(file);
+  const m = new RegExp(`^([a-z0-9_]+)-([a-z0-9-]+)\\.(${localePattern})\\.png$`).exec(file);
   const f = m ? allFoods().find((x) => x.species === m[1] && x.slug === m[2] && x.locales.includes(m[3])) : undefined;
   if (!m || !f) return new Response("Not found", { status: 404 });
   const locale = m[3] as Locale;

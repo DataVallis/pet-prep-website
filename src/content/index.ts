@@ -5,6 +5,7 @@ import en from "./en";
 import sl from "./sl";
 import type { Dictionary } from "./types";
 
+/** One dictionary per site language — a new language adds its file here (TypeScript lists missing keys). */
 const dictionaries: Record<Locale, Dictionary> = { en, sl };
 
 export function getDictionary(locale: Locale): Dictionary {
