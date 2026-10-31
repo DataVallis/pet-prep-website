@@ -51,7 +51,7 @@ const fr: Dictionary = {
   footer: {
     tagline: "Prêt pour un animal. À ses côtés toute sa vie.",
     groups: [
-      { title: "Produit", links: ["howItWorks", "parents", "animals", "care", "coloring", "afterAdoption", "pricing", "faq"] },
+      { title: "Produit", links: ["howItWorks", "parents", "animals", "care", "kids", "coloring", "afterAdoption", "pricing", "faq"] },
       { title: "Entreprise", links: ["about", "curio", "walkyourpet", "partners", "investors", "contact"] },
       { title: "Confiance", links: ["privacy", "terms", "childSafety", "accessibility", "deleteAccount"] },
     ],
@@ -1188,6 +1188,19 @@ const fr: Dictionary = {
       lead:
         "Des chiens, des chats et Curio à colorier ou à recopier – imprimez une seule page ou le cahier entier. Chaque page comporte une vraie information sur les soins aux animaux, tirée d’une source vétérinaire ou d’un club de race, à lire ensemble.",
       blocks: [{ type: "coloringHub" }],
+    },
+    kids: {
+      meta: {
+        title: "Pour les enfants qui rêvent d’un animal – coloriages, Curio et #walkyourpet | PetPrep",
+        description:
+          "Tout ce que PetPrep propose aux enfants : des coloriages gratuits à imprimer avec de vraies informations sur les soins aux animaux, Curio, la mascotte de PetPrep, et #walkyourpet – pour les enfants et les parents qui se préparent ensemble à accueillir un animal.",
+      },
+      navLabel: "Pour les enfants",
+      eyebrow: "Pour les enfants",
+      title: "Pour les enfants qui rêvent d’un animal.",
+      lead: "Des coloriages à imprimer, Curio et #walkyourpet – pour les enfants et les parents qui se préparent ensemble à accueillir un animal.",
+      hero: { src: "/curio/curio-waving.webp", alt: "Curio, la mascotte de PetPrep : un cube graphite tout doux, avec de grands yeux blancs, un petit nez framboise et un collier menthe, qui fait coucou de la main.", width: 720, height: 948 },
+      blocks: [{ type: "kidsHub" }],
     },
     walkyourpet: {
       meta: {

@@ -6,6 +6,7 @@ import { ContactCards } from "./ContactCards";
 import { AnimalsHub } from "./registry/AnimalsHub";
 import { CareHub } from "@/components/care/CarePages";
 import { ColoringHub } from "@/components/coloring/ColoringPages";
+import { KidsHub } from "@/components/kids/Kids";
 import { Faq } from "./Faq";
 import { Pricing } from "./Pricing";
 import { Screen } from "./Screen";
@@ -193,6 +194,8 @@ export function Blocks({ blocks, locale, dict }: { blocks: Block[]; locale: Loca
             return <CareHub key={i} locale={locale} />;
           case "coloringHub":
             return <ColoringHub key={i} locale={locale} />;
+          case "kidsHub":
+            return <KidsHub key={i} locale={locale} />;
           case "gallery":
             return (
               <section key={i} id={b.id} className="flex scroll-mt-24 flex-col gap-6">

@@ -51,7 +51,7 @@ const en: Dictionary = {
   footer: {
     tagline: "Ready for a pet. There for its whole life.",
     groups: [
-      { title: "Product", links: ["howItWorks", "parents", "animals", "care", "coloring", "afterAdoption", "pricing", "faq"] },
+      { title: "Product", links: ["howItWorks", "parents", "animals", "care", "kids", "coloring", "afterAdoption", "pricing", "faq"] },
       { title: "Company", links: ["about", "curio", "walkyourpet", "partners", "investors", "contact"] },
       { title: "Trust", links: ["privacy", "terms", "childSafety", "accessibility", "deleteAccount"] },
     ],
@@ -1188,6 +1188,19 @@ const en: Dictionary = {
       lead:
         "Dogs, cats and Curio to colour or copy — print one page or the whole book. Each page has a real pet-care fact from a vet or kennel-club source to read together.",
       blocks: [{ type: "coloringHub" }],
+    },
+    kids: {
+      meta: {
+        title: "For kids who want a pet — colouring pages, Curio and #walkyourpet | PetPrep",
+        description:
+          "Everything PetPrep has for kids: free printable coloring pages with real pet-care facts, Curio the mascot and #walkyourpet — for kids and parents getting ready for a pet together.",
+      },
+      navLabel: "For kids",
+      eyebrow: "For kids",
+      title: "For kids who want a pet.",
+      lead: "Colouring pages to print, Curio and #walkyourpet — for kids and parents getting ready for a pet together.",
+      hero: { src: "/curio/curio-waving.webp", alt: "Curio, the PetPrep mascot: a soft graphite cube with big white eyes, a small raspberry nose and a mint collar, waving.", width: 720, height: 948 },
+      blocks: [{ type: "kidsHub" }],
     },
     walkyourpet: {
       meta: {
