@@ -5,7 +5,7 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 import { PrimaryCta } from "./Cta";
 import { MobileMenu } from "./MobileMenu";
 
-const navKeys: PageKey[] = ["howItWorks", "parents", "animals", "afterAdoption", "pricing"];
+const navKeys: PageKey[] = ["howItWorks", "parents", "animals", "care", "afterAdoption", "pricing"];
 
 export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const label = (k: PageKey) => dict.pages[k].navLabel ?? dict.pages[k].eyebrow;
@@ -47,7 +47,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           }
         >
             <nav aria-label="Mobile" className="flex flex-col">
-              {(["howItWorks", "parents", "animals", "afterAdoption", "pricing", "faq", "contact"] as PageKey[]).map((k) => (
+              {(["howItWorks", "parents", "animals", "care", "afterAdoption", "pricing", "faq", "contact"] as PageKey[]).map((k) => (
                 <Link key={k} href={pathFor(locale, k)} className="border-b border-line py-3 text-[17px] font-semibold last:border-0">
                   {label(k)}
                 </Link>

@@ -180,6 +180,7 @@ export function careFoodMetadata(locale: Locale, f: Food): Metadata {
     paths: foodPaths(f),
     title: `${f.question[locale]} — PetPrep`,
     description: f.answer[locale]!,
+    image: { path: `/og/care/${f.species}-${f.slug}.${locale}.png`, width: 1200, height: 630, alt: f.question[locale]! },
   });
 }
 
@@ -244,7 +245,7 @@ export function CareFoodPage({ locale, species, food: f }: { locale: Locale; spe
             </Section>
           ) : null}
           <Section id="what-to-do" title={c.food.whatToDo}>
-            <p className={`rounded-[16px] px-4 py-3 text-[17px] leading-relaxed ${f.level === "toxic" || f.level === "dangerous" ? "bg-danger-tint" : "bg-fog"}`}>{f.what_to_do[locale]}</p>
+            <p className={`rounded-[22px] p-5 text-[17px] leading-relaxed ${f.level === "toxic" || f.level === "dangerous" ? "bg-danger-tint" : "border border-line bg-white"}`}>{f.what_to_do[locale]}</p>
           </Section>
           {f.serving?.[locale] ? <Section id="serving" title={c.food.serving}><p className="text-[17px] leading-relaxed">{f.serving[locale]}</p></Section> : null}
           <aside aria-labelledby="for-kids" className="flex flex-col gap-2 rounded-[22px] bg-mint-tint p-5">
