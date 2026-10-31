@@ -37,7 +37,7 @@ export function PrimaryCta({
 }) {
   if (site.launchState === "live" && site.stores.ios) {
     return (
-      <a href={site.stores.ios} className={`${variantClass[variant]} ${className}`}>
+      <a href={site.stores.ios} target="_blank" rel="noopener noreferrer" className={`${variantClass[variant]} ${className}`}>
         {label ?? dict.cta.primary}
       </a>
     );
@@ -63,8 +63,8 @@ export function StoreButtons({ locale, dict, tone = "mint" }: { locale: Locale; 
   if (site.launchState === "live" && site.stores.ios && site.stores.android) {
     return (
       <div className="flex flex-wrap gap-3">
-        <a href={site.stores.ios} className="btn btn-primary"><PhoneIcon />{dict.cta.ios}</a>
-        <a href={site.stores.android} className="btn btn-primary"><PhoneIcon />{dict.cta.android}</a>
+        <a href={site.stores.ios} target="_blank" rel="noopener noreferrer" className="btn btn-primary"><PhoneIcon />{dict.cta.ios}</a>
+        <a href={site.stores.android} target="_blank" rel="noopener noreferrer" className="btn btn-primary"><PhoneIcon />{dict.cta.android}</a>
       </div>
     );
   }
