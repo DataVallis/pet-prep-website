@@ -1,4 +1,4 @@
-export const locales = ["en", "sl"] as const;
+export const locales = ["en", "sl", "de"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
 
@@ -15,6 +15,7 @@ export function isLocale(value: string): value is Locale {
 export const localeMeta: Record<Locale, { htmlLang: string; og: string; label: string; short: string; intl: string; country: string }> = {
   en: { htmlLang: "en", og: "en_US", label: "English", short: "EN", intl: "en-GB", country: "" },
   sl: { htmlLang: "sl", og: "sl_SI", label: "Slovenščina", short: "SL", intl: "sl-SI", country: "SI" },
+  de: { htmlLang: "de", og: "de_DE", label: "Deutsch", short: "DE", intl: "de-DE", country: "DE" },
 };
 
 /** Regex alternative of all site languages, for file routes like /llms/<x>.<locale>.txt. */
@@ -22,27 +23,27 @@ export const localePattern = locales.join("|");
 
 /** Every page of the site, with its localized slug. "home" has no slug. */
 export const pageSlugs = {
-  howItWorks: { en: "how-it-works", sl: "kako-deluje" },
-  parents: { en: "for-parents", sl: "za-starse" },
-  afterAdoption: { en: "when-it-comes-home", sl: "ko-pride-domov" },
-  pricing: { en: "pricing", sl: "cenik" },
-  faq: { en: "faq", sl: "pogosta-vprasanja" },
-  partners: { en: "partners", sl: "partnerji" },
-  investors: { en: "investors", sl: "vlagatelji" },
-  contact: { en: "contact", sl: "kontakt" },
-  privacy: { en: "privacy", sl: "zasebnost" },
-  terms: { en: "terms", sl: "pogoji" },
-  childSafety: { en: "child-safety", sl: "varnost-otrok" },
-  deleteAccount: { en: "delete-account", sl: "izbris-racuna" },
-  accessibility: { en: "accessibility", sl: "dostopnost" },
-  animals: { en: "animals", sl: "zivali" },
-  about: { en: "about", sl: "o-nas" },
+  howItWorks: { en: "how-it-works", sl: "kako-deluje", de: "so-funktioniert-es" },
+  parents: { en: "for-parents", sl: "za-starse", de: "fuer-eltern" },
+  afterAdoption: { en: "when-it-comes-home", sl: "ko-pride-domov", de: "wenn-es-einzieht" },
+  pricing: { en: "pricing", sl: "cenik", de: "preise" },
+  faq: { en: "faq", sl: "pogosta-vprasanja", de: "haeufige-fragen" },
+  partners: { en: "partners", sl: "partnerji", de: "partner" },
+  investors: { en: "investors", sl: "vlagatelji", de: "investoren" },
+  contact: { en: "contact", sl: "kontakt", de: "kontakt" },
+  privacy: { en: "privacy", sl: "zasebnost", de: "datenschutz" },
+  terms: { en: "terms", sl: "pogoji", de: "nutzungsbedingungen" },
+  childSafety: { en: "child-safety", sl: "varnost-otrok", de: "kindersicherheit" },
+  deleteAccount: { en: "delete-account", sl: "izbris-racuna", de: "konto-loeschen" },
+  accessibility: { en: "accessibility", sl: "dostopnost", de: "barrierefreiheit" },
+  animals: { en: "animals", sl: "zivali", de: "tiere" },
+  about: { en: "about", sl: "o-nas", de: "ueber-uns" },
   /** Mascot page (David 2026-10-25): linked from the footer only. */
-  curio: { en: "meet-curio", sl: "spoznaj-curia" },
+  curio: { en: "meet-curio", sl: "spoznaj-curia", de: "curio-kennenlernen" },
   /** #walkyourpet movement (David 2026-10-30): the phrase is never translated, same slug everywhere. */
-  walkyourpet: { en: "walkyourpet", sl: "walkyourpet" },
+  walkyourpet: { en: "walkyourpet", sl: "walkyourpet", de: "walkyourpet" },
   /** Care knowledge (M6-K, David 2026-10-31): /care → /care/<species> → /care/<species>/<food>. */
-  care: { en: "care", sl: "skrb" },
+  care: { en: "care", sl: "skrb", de: "ratgeber" },
 } as const satisfies Record<string, Record<Locale, string>>;
 
 export type PageKey = keyof typeof pageSlugs;
@@ -69,7 +70,7 @@ export function pageKeyFromSlug(locale: Locale, slug: string): PageKey | undefin
  * /animals/<species>/<breed> (SL /sl/zivali/…). Species and breed slugs come from the
  * registry (src/content/registry/registry.json); only the comparison page slug is fixed here.
  */
-export const compareSlug: Record<Locale, string> = { en: "compare", sl: "primerjava" };
+export const compareSlug: Record<Locale, string> = { en: "compare", sl: "primerjava", de: "vergleich" };
 
 export function pathForSpecies(locale: Locale, speciesSlug: string): string {
   return `${pathFor(locale, "animals")}/${speciesSlug}`;
