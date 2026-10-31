@@ -33,6 +33,8 @@ export const pageSlugs = {
   curio: { en: "meet-curio", sl: "spoznaj-curia" },
   /** #walkyourpet movement (David 2026-10-30): the phrase is never translated, same slug everywhere. */
   walkyourpet: { en: "walkyourpet", sl: "walkyourpet" },
+  /** Care knowledge (M6-K, David 2026-10-31): /care → /care/<species> → /care/<species>/<food>. */
+  care: { en: "care", sl: "skrb" },
 } as const satisfies Record<string, Record<Locale, string>>;
 
 export type PageKey = keyof typeof pageSlugs;

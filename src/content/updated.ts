@@ -24,4 +24,5 @@ export const pageUpdated: Record<RouteKey, string> = {
   about: "2026-10-10",
   walkyourpet: "2026-10-30",
   curio: "2026-10-25",
+  care: "2026-10-31",
 };

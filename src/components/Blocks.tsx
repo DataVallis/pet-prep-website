@@ -4,6 +4,7 @@ import { companyAddress, companyIdLabels, fillPlaceholders } from "@/content";
 import { site } from "@/lib/site";
 import { ContactCards } from "./ContactCards";
 import { AnimalsHub } from "./registry/AnimalsHub";
+import { CareHub } from "@/components/care/CarePages";
 import { Faq } from "./Faq";
 import { Pricing } from "./Pricing";
 import { Screen } from "./Screen";
@@ -187,6 +188,8 @@ export function Blocks({ blocks, locale, dict }: { blocks: Block[]; locale: Loca
             );
           case "animalsHub":
             return <AnimalsHub key={i} locale={locale} />;
+          case "careHub":
+            return <CareHub key={i} locale={locale} />;
           case "gallery":
             return (
               <section key={i} id={b.id} className="flex scroll-mt-24 flex-col gap-6">

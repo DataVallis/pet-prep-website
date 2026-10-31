@@ -1,0 +1,95 @@
+name: Care sync
+
+# Care knowledge (M6-K, David 2026-10-31) follows the pet-prep repo by itself, like the animal
+# register (registry-sync.yml): pet-prep (public) writes docs/research/care-knowledge.json with
+# scripts/export-care-knowledge.mjs — only foods whose language was independently verified.
+# This job copies it into src/content/care/care-knowledge.json when it differs, checks it like CI
+# (lint, build, tsc), commits it to main and dispatches "CI & Deploy". No secret needed.
+
+on:
+  schedule:
+    - cron: '47 * * * *'   # hourly, offset from registry-sync (:17)
+  workflow_dispatch:
+
+concurrency:
+  group: content-sync
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  sync:
+    name: Sync care knowledge from pet-prep
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GH_TOKEN: ${{ github.token }}
+      SOURCE_REPO: DataVallis/pet-prep
+      SOURCE_PATH: docs/research/care-knowledge.json
+      TARGET: src/content/care/care-knowledge.json
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Fetch the export from pet-prep main
+        id: fetch
+        run: |
+          set -euo pipefail
+          sha="$(gh api "repos/${SOURCE_REPO}/commits/main" --jq .sha)"
+          if ! gh api -H 'Accept: application/vnd.github.raw' \
+            "repos/${SOURCE_REPO}/contents/${SOURCE_PATH}?ref=${sha}" > "$RUNNER_TEMP/care.json"; then
+            echo "changed=false" >>"$GITHUB_OUTPUT"
+            echo "No care export on pet-prep main yet." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          # Never copy an error page or a different schema over the data.
+          node -e 'const r=JSON.parse(require("fs").readFileSync(process.argv[1],"utf8"));if(r.schema_version!==1||!Array.isArray(r.foods))throw new Error("unexpected export: schema "+r.schema_version)' "$RUNNER_TEMP/care.json"
+          echo "sha=${sha}" >>"$GITHUB_OUTPUT"
+          if cmp -s "$RUNNER_TEMP/care.json" "$TARGET"; then
+            echo "changed=false" >>"$GITHUB_OUTPUT"
+            echo "Care knowledge already matches ${SOURCE_REPO}@${sha:0:8}." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          cp "$RUNNER_TEMP/care.json" "$TARGET"
+          echo "changed=true" >>"$GITHUB_OUTPUT"
+          node -e 'const r=JSON.parse(require("fs").readFileSync(process.argv[1],"utf8"));console.log(`- Care knowledge differs: ${r.foods.length} published food entries`)' "$TARGET" | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/setup-node@v4
+        if: steps.fetch.outputs.changed == 'true'
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Check (lint, build, types)
+        id: check
+        if: steps.fetch.outputs.changed == 'true'
+        continue-on-error: true
+        run: |
+          npm ci --no-audit --no-fund
+          npm run lint
+          npm run build
+          npx tsc --noEmit
+
+      - name: Needs a manual sync
+        if: steps.fetch.outputs.changed == 'true' && steps.check.outcome == 'failure'
+        run: |
+          echo "::warning title=Care knowledge not synced::The pet-prep care export does not build here (e.g. a new species without words in src/content/care/copy.ts). Fix it in a website PR."
+          echo "- ⚠️ Not synced: the care export does not build yet" >>"$GITHUB_STEP_SUMMARY"
+
+      - name: Commit to main and deploy
+        if: steps.fetch.outputs.changed == 'true' && steps.check.outcome == 'success'
+        env:
+          SHA: ${{ steps.fetch.outputs.sha }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "$TARGET"
+          git commit -q -m "chore(care): sync care knowledge from pet-prep ${SHA:0:8}"
+          git pull -q --rebase origin main
+          git push -q origin HEAD:main
+          gh workflow run ci-deploy.yml --ref main
+          echo "- 🌐 Synced from \`${SOURCE_REPO}@${SHA:0:8}\`, committed to main, \"CI & Deploy\" dispatched" >>"$GITHUB_STEP_SUMMARY"

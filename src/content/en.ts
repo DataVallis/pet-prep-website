@@ -51,7 +51,7 @@ const en: Dictionary = {
   footer: {
     tagline: "Ready for a pet. There for its whole life.",
     groups: [
-      { title: "Product", links: ["howItWorks", "parents", "animals", "afterAdoption", "pricing", "faq"] },
+      { title: "Product", links: ["howItWorks", "parents", "animals", "care", "afterAdoption", "pricing", "faq"] },
       { title: "Company", links: ["about", "curio", "walkyourpet", "partners", "investors", "contact"] },
       { title: "Trust", links: ["privacy", "terms", "childSafety", "accessibility", "deleteAccount"] },
     ],
@@ -1162,6 +1162,19 @@ const en: Dictionary = {
           ],
         },
       ],
+    },
+    care: {
+      meta: {
+        title: "Pet care knowledge — what dogs and cats can eat, with sources | PetPrep",
+        description:
+          "Which foods are toxic, risky or fine for dogs and cats — the reason, the signs and what to do, with every source linked. Made by PetPrep for families getting ready for a pet.",
+      },
+      navLabel: "Care",
+      eyebrow: "Care knowledge",
+      title: "What is safe for your pet?",
+      lead:
+        "Clear, sourced answers for families: which foods are toxic, which are risky and which are fine as a treat — for dogs and cats, with more species to come. Every answer links its sources.",
+      blocks: [{ type: "careHub" }],
     },
     walkyourpet: {
       meta: {

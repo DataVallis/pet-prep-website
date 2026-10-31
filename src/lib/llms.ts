@@ -6,8 +6,14 @@ import { markdownText } from "@/lib/links";
 import { breedHref, breedMarkdown, getRegistryCopy, hubMarkdown, speciesHref, speciesUpdated } from "@/lib/registry/views";
 import type { Block } from "@/content/types";
 import { absoluteUrl, site } from "@/lib/site";
+import { careHubMarkdown } from "@/components/care/CarePages";
+import { careSpecies } from "@/content/care/care";
+import { speciesWords } from "@/content/care/copy";
 
 /** Per-species, per-language register files: /llms/<species id>.<locale>.txt (keeps /llms-full.txt small at ~300 breeds). */
+/** Care knowledge per species and language: /llms/care-<species id>.<locale>.txt (M6-K). */
+export const llmsCarePath = (speciesId: string, locale: Locale) => `/llms/care-${speciesId}.${locale}.txt`;
+
 export const llmsSpeciesPath = (speciesId: string, locale: Locale) => `/llms/${speciesId}.${locale}.txt`;
 
 function blockToMarkdown(b: Block, locale: Locale): string {
@@ -61,6 +67,8 @@ function blockMarkdownRaw(b: Block, locale: Locale): string {
       return "";
     case "animalsHub":
       return hubMarkdown(locale, absoluteUrl);
+    case "careHub":
+      return careHubMarkdown(locale);
     case "gallery":
       return [b.heading ? `### ${b.heading}` : "", b.intro ?? "", b.items.map((m) => `- ${m.caption ?? m.alt}`).join("\n")].filter(Boolean).join("\n\n");
     case "pair":
@@ -100,6 +108,8 @@ export function llmsIndex(): string {
     "Full text of every page: " + absoluteUrl("/llms-full.txt"),
     "Animal register, full text per species and language (every breed with its sourced facts, Q&A and game rules):",
     ...registry.species.flatMap((sp) => locales.map((l) => `- ${sp.name.en.many} (${localeMeta[l].label}): ${absoluteUrl(llmsSpeciesPath(sp.id, l))}`)),
+    "Care knowledge — what each species can and cannot eat, sorted by risk, every answer with its sources (full text per species and language):",
+    ...locales.flatMap((l) => careSpecies(l).map((sp) => `- ${speciesWords(l, sp.id).question} (${localeMeta[l].label}): ${absoluteUrl(llmsCarePath(sp.id, l))}`)),
     "",
   ];
   for (const locale of locales) {

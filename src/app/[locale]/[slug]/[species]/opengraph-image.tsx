@@ -3,6 +3,9 @@ import { getDictionary } from "@/content";
 import { registry, speciesBySlug } from "@/content/registry/registry";
 import { getRegistryCopy } from "@/lib/registry/views";
 import { ogImage, ogSize } from "@/lib/og";
+import { careSpeciesParams } from "@/components/care/CarePages";
+import { careSpeciesBySlug, isCareSlug } from "@/content/care/care";
+import { getCareCopy, speciesWords } from "@/content/care/copy";
 
 /** One share image per species and locale; breed and comparison pages below inherit it (cheap at 300 breeds). */
 export const size = ogSize;
@@ -12,12 +15,20 @@ export const alt = "PetPrep";
 export function generateStaticParams({ params }: { params: { locale: string } }) {
   if (!isLocale(params.locale)) return [];
   const locale = params.locale;
-  return registry.species.map((s) => ({ slug: pageSlugs.animals[locale], species: s.slug[locale] }));
+  return [...registry.species.map((s) => ({ slug: pageSlugs.animals[locale], species: s.slug[locale] })), ...careSpeciesParams(locale)];
 }
 
-export default async function Image({ params }: { params: Promise<{ locale: string; species: string }> }) {
-  const { locale: l, species } = await params;
+export default async function Image({ params }: { params: Promise<{ locale: string; slug: string; species: string }> }) {
+  const { locale: l, slug, species } = await params;
   const locale = isLocale(l) ? l : "en";
+  if (isCareSlug(locale, slug)) {
+    const sp = careSpeciesBySlug(locale, species);
+    return ogImage({
+      eyebrow: getCareCopy(locale).species.eyebrow,
+      title: sp ? speciesWords(locale, sp.id).question : getCareCopy(locale).breadcrumb,
+      footer: `PetPrep · ${getDictionary(locale).meta.slogan}`,
+    });
+  }
   const sp = speciesBySlug(locale, species);
   const c = getRegistryCopy(locale);
   return ogImage({
