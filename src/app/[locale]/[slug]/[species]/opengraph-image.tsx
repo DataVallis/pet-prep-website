@@ -7,6 +7,7 @@ import { careSpeciesParams, emergencyParams, isEmergencySlug } from "@/component
 import { emergencyCopy } from "@/content/care/emergency";
 import { careSpeciesBySlug, isCareSlug } from "@/content/care/care";
 import { getCareCopy, speciesWords } from "@/content/care/copy";
+import { coloringParams, isColoringSlug, resolveColoring } from "@/components/coloring/ColoringPages";
 
 /** One share image per species and locale; breed and comparison pages below inherit it (cheap at 300 breeds). */
 export const size = ogSize;
@@ -16,12 +17,16 @@ export const alt = "PetPrep";
 export function generateStaticParams({ params }: { params: { locale: string } }) {
   if (!isLocale(params.locale)) return [];
   const locale = params.locale;
-  return [...registry.species.map((s) => ({ slug: pageSlugs.animals[locale], species: s.slug[locale] })), ...careSpeciesParams(locale), ...emergencyParams(locale)];
+  return [...registry.species.map((s) => ({ slug: pageSlugs.animals[locale], species: s.slug[locale] })), ...careSpeciesParams(locale), ...emergencyParams(locale), ...coloringParams(locale)];
 }
 
 export default async function Image({ params }: { params: Promise<{ locale: string; slug: string; species: string }> }) {
   const { locale: l, slug, species } = await params;
   const locale = isLocale(l) ? l : "en";
+  if (isColoringSlug(locale, slug)) {
+    const dict = getDictionary(locale);
+    return ogImage({ eyebrow: dict.pages.coloring.eyebrow, title: resolveColoring(locale, species)?.title[locale] ?? dict.pages.coloring.title, footer: `PetPrep · ${dict.meta.slogan}` });
+  }
   if (isCareSlug(locale, slug)) {
     const sp = careSpeciesBySlug(locale, species);
     const em = isEmergencySlug(locale, species);

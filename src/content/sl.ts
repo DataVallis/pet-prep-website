@@ -51,7 +51,7 @@ const sl: Dictionary = {
   footer: {
     tagline: "Pripravljeni na žival. Ob njej vse življenje.",
     groups: [
-      { title: "Izdelek", links: ["howItWorks", "parents", "animals", "care", "afterAdoption", "pricing", "faq"] },
+      { title: "Izdelek", links: ["howItWorks", "parents", "animals", "care", "coloring", "afterAdoption", "pricing", "faq"] },
       { title: "Podjetje", links: ["about", "curio", "walkyourpet", "partners", "investors", "contact"] },
       { title: "Zaupanje", links: ["privacy", "terms", "childSafety", "accessibility", "deleteAccount"] },
     ],
@@ -1173,6 +1173,19 @@ const sl: Dictionary = {
       lead:
         "Jasni odgovori z viri za družine: katera hrana je strupena, katera tvegana in katera v redu kot poslastica — za pse in mačke, druge vrste sledijo. Vsak odgovor ima povezave do virov.",
       blocks: [{ type: "careHub" }],
+    },
+    coloring: {
+      meta: {
+        title: "Brezplačne pobarvanke za tiskanje: psi in mačke | PetPrep",
+        description:
+          "Brezplačne pobarvanke za tiskanje: zlati prinašalec, labradorec, border collie, mladiček mešanček, mucek in Curio. PDF A4 in US Letter, vsaka z resnično zanimivostjo o skrbi za žival in virom.",
+      },
+      navLabel: "Pobarvanke",
+      eyebrow: "Pobarvanke",
+      title: "Brezplačne pobarvanke za tiskanje.",
+      lead:
+        "Psi, mačke in Curio za barvanje ali prerisovanje — natisnite eno stran ali celo knjižico. Na vsaki strani je resnična zanimivost o skrbi za žival iz vira veterinarjev ali kinoloških zvez, ki jo preberete skupaj.",
+      blocks: [{ type: "coloringHub" }],
     },
     walkyourpet: {
       meta: {

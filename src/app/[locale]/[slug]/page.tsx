@@ -10,6 +10,7 @@ import { site } from "@/lib/site";
 import { JsonLd } from "@/components/JsonLd";
 import { Blocks } from "@/components/Blocks";
 import { StoreButtons } from "@/components/Cta";
+import { coloringHubLd } from "@/components/coloring/ColoringPages";
 
 export const dynamicParams = false;
 
@@ -53,6 +54,7 @@ export default async function SubPage({ params }: PageProps<"/[locale]/[slug]">)
     webPageLd(locale, key, page.meta.title, page.meta.description),
     breadcrumbLd(locale, dict, key, page.navLabel ?? page.eyebrow),
     ...(faqItems.length ? [faqLd(faqItems)] : []),
+    ...(key === "coloring" ? [coloringHubLd(locale, page.meta.title, page.meta.description)] : []),
   );
 
   return (

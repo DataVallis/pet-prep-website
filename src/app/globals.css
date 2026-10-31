@@ -198,3 +198,14 @@
     color: var(--color-mint);
   }
 }
+
+/* Colouring pages (David 2026-10-31): "Print" prints only the sheet, full page, no site chrome. */
+.print-only { display: none; }
+@media print {
+  @page { margin: 10mm; }
+  body *:not(:has(.print-sheet)):not(.print-sheet):not(.print-sheet *) { display: none !important; }
+  body *:has(.print-sheet) { margin: 0 !important; padding: 0 !important; gap: 0 !important; border: 0 !important; }
+  .print-sheet { border: 0 !important; padding: 0 !important; display: flex; flex-direction: column; align-items: center; break-inside: avoid; }
+  .print-sheet img { max-height: 260mm; width: auto !important; max-width: 100%; }
+  .print-sheet .print-only { display: block; }
+}

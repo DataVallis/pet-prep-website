@@ -13,6 +13,7 @@ import { PAGE_SIZE, recommendedOrder } from "@/components/registry/catalogue-sha
 import { RichText } from "@/components/RichText";
 import { CareSpeciesPage, EmergencyPage, careSpeciesMetadata, careSpeciesParams, emergencyMetadata, emergencyParams, isEmergencySlug, resolveCareSpecies } from "@/components/care/CarePages";
 import { isCareSlug } from "@/content/care/care";
+import { ColoringPageView, coloringPageMetadata, coloringParams, isColoringSlug, resolveColoring } from "@/components/coloring/ColoringPages";
 
 export const dynamicParams = false;
 
@@ -24,6 +25,7 @@ export function generateStaticParams({ params }: { params: { locale: string } })
     ...registry.species.map((s) => ({ slug: pageSlugs.animals[locale], species: s.slug[locale] })),
     ...careSpeciesParams(locale),
     ...emergencyParams(locale),
+    ...coloringParams(locale),
   ];
 }
 
@@ -37,6 +39,10 @@ const paths = (s: Species) => Object.fromEntries(locales.map((l) => [l, speciesH
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[species]">): Promise<Metadata> {
   const { locale, slug, species } = await params;
+  if (isLocale(locale) && isColoringSlug(locale, slug)) {
+    const p = resolveColoring(locale, species);
+    return p ? coloringPageMetadata(locale, p) : {};
+  }
   if (isLocale(locale) && isCareSlug(locale, slug)) {
     if (isEmergencySlug(locale, species)) return emergencyMetadata(locale);
     const sp = resolveCareSpecies(locale, species);
@@ -51,6 +57,11 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[
 
 export default async function SpeciesCatalogue({ params }: PageProps<"/[locale]/[slug]/[species]">) {
   const { locale: l, slug, species: s } = await params;
+  if (isLocale(l) && isColoringSlug(l, slug)) {
+    const p = resolveColoring(l, s);
+    if (!p) notFound();
+    return <ColoringPageView locale={l} page={p} />;
+  }
   if (isLocale(l) && isCareSlug(l, slug)) {
     if (isEmergencySlug(l, s)) return <EmergencyPage locale={l} />;
     const sp = resolveCareSpecies(l, s);
