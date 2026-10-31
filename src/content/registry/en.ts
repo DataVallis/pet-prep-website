@@ -287,6 +287,8 @@ const en: RegistryCopy = {
       dna_jadd: "DNA test for juvenile Addison's disease (JADD)",
       dermoid_sinus_scheme: "Puppy check for dermoid sinus (breed club scheme)",
       dna_jme: "DNA test for juvenile myoclonic epilepsy (JME)",
+      dna_je: "DNA test for juvenile epilepsy (JE)",
+      dna_lsd: "DNA test for lysosomal storage disease (LSD)",
       dna_pap_pra1: "DNA test for progressive retinal atrophy in Papillons (Pap-PRA1)",
       dna_nad: "DNA test for neuroaxonal dystrophy (NAD)",
       dna_eopra: "DNA test for early-onset progressive retinal atrophy (EOPRA)",
@@ -363,6 +365,7 @@ const en: RegistryCopy = {
     chiari_syringomyelia: "Chiari-like malformation and syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, occurs in the breed and is linked to skull shape; it is diagnosed by MRI scan.",
     eye_conditions: "Inherited eye conditions such as cataracts occur in the breed, and protruding or irritated eyes are a point of concern; eye testing and DNA tests are available.",
     epilepsy: "Epilepsy, a brain disorder that can cause seizures, occurs in the breed.",
+    storage_disease: "An inherited storage disease of the nervous system can affect young dogs of the breed; a DNA test of the parents lets breeders avoid it.",
     back_disc_disease: "Intervertebral disc disease, a problem with the cushioning discs between the bones of the back, occurs in the breed.",
     pra_eye_disease: "Progressive retinal atrophy, an inherited eye disease that can slowly lead to blindness, occurs in the breed; DNA tests and eye testing are available.",
     hip_dysplasia: "Hip dysplasia, a poorly developed hip joint that can lead to arthritis, occurs in the breed; breeders are advised to have the parents' hips scored.",
@@ -1170,6 +1173,14 @@ const en: RegistryCopy = {
         "PetMD recommends at least 60 minutes of exercise a day, says the breed is patient and loving with children, that it can be prone to separation anxiety and that its strong prey drive can make life with smaller dogs or cats more difficult. A UK study (McMillan et al., 2024, as tabled by Dogs Trust) gives a median life expectancy of 12.5 years; PetMD gives 12–16 years. VCA recommends weekly brushing; PetMD advises socialising the puppy, no exercise right after a meal (bloat), and bathing and ear cleaning about every 4–6 weeks.",
       ],
       sources: ["S625", "S626", "S628", "S629", "S123", "S10"],
+    },
+    lagotto_romagnolo: {
+      aka: "Lagotto, Lagotti, Romagna Water Dog, truffle dog",
+      text: [
+        "The Lagotto Romagnolo is a small to medium-sized curly-coated water dog from Italy, known as the truffle dog; the FCI lists it among the water dogs. Its standard gives a height of 43–48 cm and a weight of 13–16 kg for males, and 41–46 cm and 11–14 kg for females; a dog of this size is fully grown at about 12–15 months (PetMD).",
+        "The Royal Kennel Club calls it an excellent and alert family companion, recommends more than two hours of exercise a day and grooming more than once a week, says it does not shed and gives a lifespan of over 12 years; PetMD says Lagotti can live to 15–17. PetMD notes that it needs constant mental and physical stimulation and extensive socialisation, as it can be shy; Woodgreen says it can struggle when left alone too often and recommends professional grooming every six to eight weeks.",
+      ],
+      sources: ["S630", "S631", "S632", "S633", "S635", "S636", "S10"],
     },
     british_shorthair: {
       aka: "British Blue",
