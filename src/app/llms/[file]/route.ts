@@ -1,4 +1,4 @@
-import { locales, type Locale } from "@/i18n/config";
+import { localePattern, locales, type Locale } from "@/i18n/config";
 import { registry } from "@/content/registry/registry";
 import { llmsSpecies } from "@/lib/llms";
 import { careSpecies } from "@/content/care/care";
@@ -18,13 +18,13 @@ export function generateStaticParams() {
 
 export async function GET(_req: Request, ctx: RouteContext<"/llms/[file]">) {
   const { file } = await ctx.params;
-  const care = /^care-([a-z0-9_]+)\.(en|sl)\.txt$/.exec(file);
+  const care = new RegExp(`^care-([a-z0-9_]+)\\.(${localePattern})\\.txt$`).exec(file);
   if (care) {
     const csp = careSpecies(care[2] as Locale).find((s) => s.id === care[1]);
     if (!csp) return new Response("Not found", { status: 404 });
     return new Response(careSpeciesMarkdown(care[2] as Locale, csp), { headers: { "Content-Type": "text/plain; charset=utf-8" } });
   }
-  const m = /^([a-z0-9_]+)\.(en|sl)\.txt$/.exec(file);
+  const m = new RegExp(`^([a-z0-9_]+)\\.(${localePattern})\\.txt$`).exec(file);
   const sp = m ? registry.species.find((s) => s.id === m[1]) : undefined;
   if (!m || !sp) return new Response("Not found", { status: 404 });
   return new Response(llmsSpecies(sp, m[2] as Locale), { headers: { "Content-Type": "text/plain; charset=utf-8" } });

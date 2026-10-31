@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { isLocale, locales, pageKeyFromSlug, pageKeys, pageSlugs, pathFor, type Locale } from "@/i18n/config";
+import { isLocale, localeMeta, locales, pageKeyFromSlug, pageKeys, pageSlugs, pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import type { Block } from "@/content/types";
 import { buildMetadata } from "@/lib/seo";
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]">
 }
 
 function formatDate(locale: Locale, iso: string) {
-  return new Intl.DateTimeFormat(locale === "sl" ? "sl-SI" : "en-GB", { dateStyle: "long" }).format(new Date(iso));
+  return new Intl.DateTimeFormat(localeMeta[locale].intl, { dateStyle: "long" }).format(new Date(iso));
 }
 
 export default async function SubPage({ params }: PageProps<"/[locale]/[slug]">) {

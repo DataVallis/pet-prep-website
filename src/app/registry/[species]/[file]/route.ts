@@ -1,4 +1,4 @@
-import { locales, type Locale } from "@/i18n/config";
+import { localePattern, locales, type Locale } from "@/i18n/config";
 import { getSpecies, registry } from "@/content/registry/registry";
 import { catalogueIndex, compareData } from "@/lib/registry/views";
 
@@ -17,7 +17,7 @@ export function generateStaticParams() {
 
 export async function GET(_req: Request, ctx: RouteContext<"/registry/[species]/[file]">) {
   const { species, file } = await ctx.params;
-  const m = /^(index|compare)\.(en|sl)\.json$/.exec(file);
+  const m = new RegExp(`^(index|compare)\\.(${localePattern})\\.json$`).exec(file);
   if (!m) return new Response("Not found", { status: 404 });
   const sp = getSpecies(species);
   const locale = m[2] as Locale;

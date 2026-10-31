@@ -4,11 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useState, useSyncExternalStore } from "react";
 import { PAGE_SIZE, recommendedOrder, type Item } from "./catalogue-shared";
+import { localeMeta, type Locale } from "@/i18n/config";
 
 type Option = { value: string; label: string };
 
 export type ExplorerProps = {
-  locale: "en" | "sl";
+  locale: Locale;
   indexUrl: string;
   compareHref: string;
   /** First results page in the default order, rendered on the server (crawlable rows, no layout shift). */
@@ -149,7 +150,7 @@ export function CatalogueExplorer({ locale, indexUrl, compareHref, initial, tota
         Object.entries(state.facets).every(([k, v]) => !v || it.f[k] === v) &&
         (!state.av || it.av === state.av),
     );
-    const collator = new Intl.Collator(locale === "sl" ? "sl" : "en");
+    const collator = new Intl.Collator(localeMeta[locale].intl);
     const byName = (a: Item, b: Item) => collator.compare(a.n, b.n);
     if (state.sort === "az") out.sort(byName);
     else if (state.sort === "size") out.sort((a, b) => (SIZE_ORDER.indexOf(a.f.size ?? "") + 1 || 99) - (SIZE_ORDER.indexOf(b.f.size ?? "") + 1 || 99) || byName(a, b));

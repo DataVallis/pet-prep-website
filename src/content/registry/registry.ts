@@ -1,5 +1,7 @@
 import "server-only";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
+import { join } from "node:path";
+import { locales, type Locale } from "@/i18n/config";
 /**
  * The animal & breed register, exported at build time from the PetPrep monorepo
  * (scripts/export-breed-registry.mjs → docs/research/breed-registry.json, schema 2).
@@ -62,7 +64,12 @@ export type BreederChecklist = {
 };
 
 export type Availability = "in_app" | "coming_soon" | "info_only";
-export type Localized<T = string> = { en: T; sl: T };
+/**
+ * Text per site language. The pet-prep export carries EN + SL; any other site language is filled at load
+ * time from src/content/registry/locales/<locale>.json (written by the hourly language run, L1–L3), and
+ * falls back to English where a translation is still missing (build prints a warning).
+ */
+export type Localized<T = string> = Record<Locale, T>;
 
 export type Breed = {
   id: string;
@@ -133,12 +140,50 @@ export type Registry = {
   sources: Source[];
 };
 
+type LocaleOverrides = {
+  species?: Record<string, { name?: { one: string; many: string }; slug?: string; free_plan?: string }>;
+  breeds?: Record<string, { name?: string; slug?: string; synonyms?: string[]; colours?: Record<string, string> }>;
+  suitability_labels?: { suits_title: string; consider_title: string; tags: Record<string, string> };
+};
+
+function overridesFor(locale: Locale): LocaleOverrides {
+  const f = join(process.cwd(), "src/content/registry/locales", `${locale}.json`);
+  return existsSync(f) ? (JSON.parse(readFileSync(f, "utf8")) as LocaleOverrides) : {};
+}
+
+/** Fills every site language that the export does not carry (see Localized). */
+function fillLocales(r: Registry): Registry {
+  const missing: string[] = [];
+  for (const l of locales as readonly string[]) {
+    if (l === "en" || l === "sl") continue;
+    const locale = l as Locale;
+    const o = overridesFor(locale);
+    const pick = <T,>(v: T | undefined, en: T, what: string): T => { if (v === undefined) missing.push(what); return v ?? en; };
+    for (const sp of r.species) {
+      const so = o.species?.[sp.id];
+      sp.name[locale] = pick(so?.name, sp.name.en, `${locale} species ${sp.id} name`);
+      sp.slug[locale] = pick(so?.slug, sp.slug.en, `${locale} species ${sp.id} slug`);
+      sp.free_plan.name[locale] = pick(so?.free_plan, sp.free_plan.name.en, `${locale} species ${sp.id} free plan`);
+    }
+    for (const b of r.breeds) {
+      const bo = o.breeds?.[b.id];
+      b.name[locale] = pick(bo?.name, b.name.en, `${locale} breed ${b.id} name`);
+      b.slug[locale] = pick(bo?.slug, b.slug.en, `${locale} breed ${b.id} slug`);
+      (b.synonyms as Record<string, string[]>)[locale] = bo?.synonyms ?? [];
+      for (const c of b.portrait?.colours ?? []) c.label[locale] = pick(bo?.colours?.[c.key], c.label.en, `${locale} breed ${b.id} colour ${c.key}`);
+    }
+    r.suitability_labels[locale] = pick(o.suitability_labels, r.suitability_labels.en, `${locale} suitability labels`);
+  }
+  if (missing.length) console.warn(`registry: ${missing.length} translations missing, English used: ${missing.slice(0, 8).join("; ")}${missing.length > 8 ? " …" : ""}`);
+  return r;
+}
+
 function load(): Registry {
   const file = process.env.PETPREP_REGISTRY_FILE;
-  const raw: unknown = file ? JSON.parse(readFileSync(file, "utf8")) : bundled;
+  const raw: unknown = file ? JSON.parse(readFileSync(file, "utf8")) : structuredClone(bundled);
   const r = raw as Registry;
   if (r.schema_version !== 2) throw new Error(`registry: unsupported schema_version ${String(r.schema_version)} — re-export in pet-prep`);
-  return r;
+  return fillLocales(r);
 }
 
 export const registry: Registry = load();
@@ -160,7 +205,7 @@ export function getSpecies(id: string): Species {
   return s;
 }
 
-export function speciesBySlug(locale: "en" | "sl", slug: string): Species | undefined {
+export function speciesBySlug(locale: Locale, slug: string): Species | undefined {
   return registry.species.find((s) => s.slug[locale] === slug);
 }
 
@@ -168,7 +213,7 @@ export function breedsOf(speciesId: string): Breed[] {
   return registry.breeds.filter((b) => b.species === speciesId);
 }
 
-export function breedBySlug(speciesId: string, locale: "en" | "sl", slug: string): Breed | undefined {
+export function breedBySlug(speciesId: string, locale: Locale, slug: string): Breed | undefined {
   return registry.breeds.find((b) => b.species === speciesId && b.slug[locale] === slug);
 }
 
