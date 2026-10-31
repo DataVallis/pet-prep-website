@@ -5,6 +5,8 @@ import { pageUpdated } from "@/content/updated";
 import { alternatesFor, pathAlternates } from "@/lib/seo";
 import { registry } from "@/content/registry/registry";
 import { emergencyHref } from "@/components/care/CarePages";
+import { coloringPageHref } from "@/components/coloring/ColoringPages";
+import { coloringPages, coloringUpdated } from "@/content/coloring/coloring";
 import { emergencyUpdated } from "@/content/care/emergency";
 import { careSpecies, careSpeciesHref, careUpdated, foodHref, foodsOf } from "@/content/care/care";
 import { breedHref, breedUpdated, speciesHref, speciesUpdated } from "@/lib/registry/views";
@@ -75,5 +77,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
     alternates: { languages: pathAlternates(each((l) => emergencyHref(l))) },
   }));
-  return [...pages, ...register, ...care, ...emergency];
+  const coloring = locales.flatMap((locale) =>
+    coloringPages.map((p) => ({
+      url: absoluteUrl(coloringPageHref(locale, p)),
+      lastModified: new Date(coloringUpdated),
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+      alternates: { languages: pathAlternates(each((l) => coloringPageHref(l, p))) },
+    })),
+  );
+  return [...pages, ...register, ...care, ...emergency, ...coloring];
 }

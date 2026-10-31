@@ -7,6 +7,7 @@ import { breedHref, breedMarkdown, getRegistryCopy, hubMarkdown, speciesHref, sp
 import type { Block } from "@/content/types";
 import { absoluteUrl, site } from "@/lib/site";
 import { careHubMarkdown } from "@/components/care/CarePages";
+import { coloringHubMarkdown } from "@/components/coloring/ColoringPages";
 import { careSpecies } from "@/content/care/care";
 import { speciesWords } from "@/content/care/copy";
 
@@ -69,6 +70,8 @@ function blockMarkdownRaw(b: Block, locale: Locale): string {
       return hubMarkdown(locale, absoluteUrl);
     case "careHub":
       return careHubMarkdown(locale);
+    case "coloringHub":
+      return coloringHubMarkdown(locale);
     case "gallery":
       return [b.heading ? `### ${b.heading}` : "", b.intro ?? "", b.items.map((m) => `- ${m.caption ?? m.alt}`).join("\n")].filter(Boolean).join("\n\n");
     case "pair":
