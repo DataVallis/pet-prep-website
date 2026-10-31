@@ -18,6 +18,15 @@ export const localeMeta: Record<Locale, { htmlLang: string; og: string; label: s
   de: { htmlLang: "de", og: "de_DE", label: "Deutsch", short: "DE", intl: "de-DE", country: "DE" },
 };
 
+/**
+ * App screenshots exist only in the app's own languages (public/screens/<locale>/); other site
+ * languages show the English app screens until the app is translated (L4).
+ */
+const screenLocales: readonly Locale[] = ["en", "sl"];
+export function screenLocale(locale: Locale): Locale {
+  return screenLocales.includes(locale) ? locale : "en";
+}
+
 /** Regex alternative of all site languages, for file routes like /llms/<x>.<locale>.txt. */
 export const localePattern = locales.join("|");
 
