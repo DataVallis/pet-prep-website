@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs", 10: "sighthounds" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa" };
 
 const en: RegistryCopy = {
   hub: {
@@ -290,6 +290,9 @@ const en: RegistryCopy = {
       dna_je: "DNA test for juvenile epilepsy (JE)",
       dna_lsd: "DNA test for lysosomal storage disease (LSD)",
       dna_ampn: "DNA test for Alaskan Malamute polyneuropathy (AMPN)",
+      dna_fanconi: "DNA test for Fanconi syndrome (a kidney disease)",
+      dna_pra_bj1: "DNA test for progressive retinal atrophy in Basenjis (PRA-BJ1)",
+      thyroid_scheme: "Thyroid testing of the parents",
       dna_pap_pra1: "DNA test for progressive retinal atrophy in Papillons (Pap-PRA1)",
       dna_nad: "DNA test for neuroaxonal dystrophy (NAD)",
       dna_eopra: "DNA test for early-onset progressive retinal atrophy (EOPRA)",
@@ -369,6 +372,8 @@ const en: RegistryCopy = {
     storage_disease: "An inherited storage disease of the nervous system can affect young dogs of the breed; a DNA test of the parents lets breeders avoid it.",
     chondrodysplasia: "Chondrodysplasia, a disorder of cartilage and bone growth, occurs in the breed; puppies can be checked with an X-ray.",
     polyneuropathy: "An inherited nerve disease (polyneuropathy) occurs in the breed; a DNA test of the parents lets breeders avoid it.",
+    fanconi_syndrome: "Fanconi syndrome, an inherited kidney disease that lets sugar leak into the urine, occurs in the breed; a DNA test of the parents lets breeders avoid it.",
+    pyruvate_kinase_deficiency: "Pyruvate kinase deficiency, an inherited defect of the red blood cells that causes anaemia, can occur in the breed.",
     back_disc_disease: "Intervertebral disc disease, a problem with the cushioning discs between the bones of the back, occurs in the breed.",
     pra_eye_disease: "Progressive retinal atrophy, an inherited eye disease that can slowly lead to blindness, occurs in the breed; DNA tests and eye testing are available.",
     hip_dysplasia: "Hip dysplasia, a poorly developed hip joint that can lead to arthritis, occurs in the breed; breeders are advised to have the parents' hips scored.",
@@ -1192,6 +1197,14 @@ const en: RegistryCopy = {
         "PDSA recommends a minimum of two hours of heavy exercise and daily brushing every day, and says Malamutes shed a lot, have a very strong prey drive, should not be left alone for more than four hours and suit active adults or families with older children; it calls them challenging for first-time owners. PetMD advises checking the ears once a week and a bath every 6–8 weeks, and notes that the thick coat makes hot weather hard for them.",
       ],
       sources: ["S637", "S639", "S640", "S10"],
+    },
+    basenji: {
+      aka: "African Barkless Dog, Congo Dog, barkless dog",
+      text: [
+        "The Basenji is a lightly built, finely boned hunting dog from Central Africa that does not bark but makes its own yodelling sound; the FCI lists it among the primitive types. PDSA gives a height of 40–43 cm and a weight of 9–11 kg. A dog of this size is fully grown at about 9–12 months (PetMD), and PDSA gives a lifespan of over 12 years (WebMD: 13–14 years).",
+        "PDSA recommends at least an hour of exercise a day (around 60–90 minutes), plenty of mental stimulation and brushing once a week; it calls Basenjis aloof but trustworthy, strong-willed and with very poor road sense. WebMD says they will chase anything that looks like prey, need very high fences or constant supervision and are only moderately good with young children, and advises cleaning the ears weekly and brushing the teeth at least twice a week.",
+      ],
+      sources: ["S642", "S644", "S646", "S10"],
     },
     british_shorthair: {
       aka: "British Blue",

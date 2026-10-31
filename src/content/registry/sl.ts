@@ -16,7 +16,7 @@ type Fci = { number: number; group: number; origin: string };
 const PROPER_START = /^(Maine Coon|Chesapeake|Jack Russell)\b/;
 const mid = (name: string) => (PROPER_START.test(name) ? name : name.charAt(0).toLocaleLowerCase("sl") + name.slice(1));
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi", 10: "hrti" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika" };
 
 const sl: RegistryCopy = {
   hub: {
@@ -311,6 +311,9 @@ const sl: RegistryCopy = {
       dna_je: "Test DNK za juvenilno epilepsijo (JE)",
       dna_lsd: "Test DNK za lizosomsko bolezen kopičenja (LSD)",
       dna_ampn: "Test DNK za polinevropatijo aljaškega malamuta (AMPN)",
+      dna_fanconi: "Test DNK za Fanconijev sindrom (bolezen ledvic)",
+      dna_pra_bj1: "Test DNK za progresivno atrofijo mrežnice pri basenjiju (PRA-BJ1)",
+      thyroid_scheme: "Pregled ščitnice staršev",
       dna_pap_pra1: "Test DNK za progresivno atrofijo mrežnice pri papijonih (Pap-PRA1)",
       dna_nad: "Test DNK za nevroaksonsko distrofijo (NAD)",
       dna_eopra: "Test DNK za zgodaj nastopajočo progresivno atrofijo mrežnice (EOPRA)",
@@ -390,6 +393,8 @@ const sl: RegistryCopy = {
     storage_disease: "Pri mladih psih te pasme se lahko pojavi dedna bolezen kopičenja, ki prizadene živčevje; test DNK staršev vzrediteljem omogoča, da se ji izognejo.",
     chondrodysplasia: "Pri pasmi se pojavlja hondrodisplazija, motnja rasti hrustanca in kosti; mladičke je mogoče pregledati z rentgenom.",
     polyneuropathy: "Pri pasmi se pojavlja dedna bolezen živcev (polinevropatija); test DNK staršev vzrediteljem omogoča, da se ji izognejo.",
+    fanconi_syndrome: "Pri pasmi se pojavlja Fanconijev sindrom, dedna bolezen ledvic, pri kateri sladkor uhaja v urin; test DNK staršev vzrediteljem omogoča, da se mu izognejo.",
+    pyruvate_kinase_deficiency: "Pri pasmi se lahko pojavi pomanjkanje piruvat kinaze, dedna okvara rdečih krvnih celic, ki povzroča slabokrvnost.",
     back_disc_disease: "Pri pasmi se pojavlja bolezen medvretenčnih ploščic, ki blažijo stik med vretenci hrbtenice.",
     pra_eye_disease: "Pri pasmi se pojavlja progresivna atrofija mrežnice, dedna bolezen oči, ki lahko počasi vodi v slepoto; na voljo so DNK testi in pregledi oči.",
     hip_dysplasia: "Pri pasmi se pojavlja displazija kolkov, slabo razvit kolčni sklep, ki lahko vodi v artrozo; vzrediteljem svetujejo pregled kolkov staršev.",
@@ -1213,6 +1218,14 @@ const sl: RegistryCopy = {
         "PDSA priporoča najmanj dve uri napornega gibanja in česanje vsak dan ter pravi, da se malamuti močno lisajo, imajo zelo močan lovski nagon, ne smejo biti sami več kot štiri ure in se najbolje znajdejo pri aktivnih odraslih ali v družinah s starejšimi otroki; za začetnike so po PDSA zahtevni. PetMD svetuje pregled ušes enkrat na teden in kopanje vsakih 6–8 tednov ter opozarja, da zaradi goste dlake težko prenašajo vročino.",
       ],
       sources: ["S637", "S639", "S640", "S10"],
+    },
+    basenji: {
+      aka: "basendži, basendzi, pes, ki ne laja, kongovski pes, Basenji, African Barkless Dog",
+      text: [
+        "Basenji je lahek, fino grajen lovski pes iz Srednje Afrike, ki ne laja, ampak se oglaša s svojim »jodlanjem«; FCI ga uvršča med primitivne pasme. PDSA navaja višino 40–43 cm in težo 9–11 kg. Pes te velikosti zraste do približno 9–12 mesecev (PetMD), PDSA pa navaja življenjsko dobo več kot 12 let (WebMD: 13–14 let).",
+        "PDSA priporoča vsaj uro gibanja na dan (približno 60–90 minut), veliko miselnih izzivov in česanje enkrat na teden; basenjije opisuje kot zadržane, a zanesljive, trmaste in brez občutka za promet. WebMD pravi, da lovijo vse, kar je videti kot plen, potrebujejo zelo visoko ograjo ali stalen nadzor in so z majhnimi otroki le zmerno dobri, ter svetuje čiščenje ušes vsak teden in ščetkanje zob vsaj dvakrat na teden.",
+      ],
+      sources: ["S642", "S644", "S646", "S10"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
