@@ -39,7 +39,7 @@ function alternatesFromHead(): Partial<Record<Locale, string>> {
   return out;
 }
 
-export function LanguageSwitcher({ label, dark = false, align = "right" }: { label: string; dark?: boolean; align?: "left" | "right" }) {
+export function LanguageSwitcher({ label, dark = false, align = "right" }: { label: string; dark?: boolean; align?: "left" | "right" | "inline" }) {
   const pathname = usePathname() ?? "/";
   const { locale, key } = currentRoute(pathname);
   const [alternates, setAlternates] = useState<{ path: string; hrefs: Partial<Record<Locale, string>> }>({ path: "", hrefs: {} });
@@ -90,7 +90,7 @@ export function LanguageSwitcher({ label, dark = false, align = "right" }: { lab
           <path d="M6 9l6 6 6-6" />
         </svg>
       </summary>
-      <nav aria-label={label} className={`absolute ${align === "left" ? "left-0" : "right-0"} z-50 mt-2 max-h-[70vh] w-56 overflow-y-auto rounded-[18px] border p-1.5 shadow-[0_12px_32px_rgba(18,22,20,0.16)] ${dark ? "bottom-full mb-2 mt-0" : "top-full"} ${tone.panel}`}>
+      <nav aria-label={label} className={`${align === "inline" ? "relative mt-2 w-56" : `absolute ${align === "left" ? "left-0" : "right-0"} z-50 mt-2 max-h-[70vh] w-56 overflow-y-auto shadow-[0_12px_32px_rgba(18,22,20,0.16)] ${dark ? "bottom-full mb-2 mt-0" : "top-full"}`} rounded-[18px] border p-1.5 ${tone.panel}`}>
         <ul className="flex flex-col">
           {locales.map((l) => {
             const active = l === locale;

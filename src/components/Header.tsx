@@ -4,7 +4,8 @@ import type { Dictionary } from "@/content/types";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { PrimaryCta } from "./Cta";
 import { MobileMenu } from "./MobileMenu";
-import { KidsMenu, KidsMobile } from "./kids/Kids";
+import { KidsMobile } from "./kids/Kids";
+import { KidsMenu } from "./kids/KidsMenu";
 
 // "When it comes home" moved to the footer to make room for "For kids" (David 2026-10-31).
 const navKeys: PageKey[] = ["howItWorks", "parents", "animals", "care"];
@@ -66,7 +67,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               ))}
             </nav>
             <div className="mt-4 flex flex-col gap-4">
-              <LanguageSwitcher label={dict.lang.label} align="left" />
+              <LanguageSwitcher label={dict.lang.label} align="inline" />
               <PrimaryCta locale={locale} dict={dict} />
             </div>
         </MobileMenu>
