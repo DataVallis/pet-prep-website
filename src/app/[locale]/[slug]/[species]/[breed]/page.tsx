@@ -16,7 +16,7 @@ import { CompareView } from "@/components/registry/CompareView";
 import { ShareButton } from "@/components/registry/ShareButton";
 import { PortraitColours } from "@/components/registry/PortraitColours";
 import { absoluteUrl } from "@/lib/site";
-import { CareFoodPage, careFoodMetadata, careFoodParams, resolveCareFood } from "@/components/care/CarePages";
+import { CareFoodLink, CareFoodPage, careFoodMetadata, careFoodParams, resolveCareFood } from "@/components/care/CarePages";
 import { isCareSlug } from "@/content/care/care";
 
 export const dynamicParams = false;
@@ -410,6 +410,8 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
               </>
             ) : null}
           </section>
+
+          <CareFoodLink locale={locale} speciesId={species.id} />
 
           <section aria-labelledby="health" className="flex flex-col gap-4">
             <h2 id="health" className="h-card text-[28px] leading-tight sm:text-[34px]">{c.page.healthTitle}</h2>

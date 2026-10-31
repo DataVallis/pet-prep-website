@@ -298,6 +298,23 @@ export function CareFoodPage({ locale, species, food: f }: { locale: Locale; spe
   );
 }
 
+/* ─── link from a breed page (David 2026-10-31) ──────────────────────────── */
+
+/** "What can dogs eat?" box on every breed page of a species that has published foods. */
+export function CareFoodLink({ locale, speciesId }: { locale: Locale; speciesId: string }) {
+  const sp = careSpecies(locale).find((s) => s.id === speciesId);
+  if (!sp) return null;
+  const c = getCareCopy(locale);
+  const w = speciesWords(locale, sp.id);
+  return (
+    <Link href={careSpeciesHref(locale, sp)} className="group flex max-w-3xl flex-col gap-1 rounded-[22px] border border-line bg-white p-5 hover:border-graphite">
+      <span className="text-sm font-semibold text-muted">{c.hub.count(foodsOf(sp.id, locale).length)}</span>
+      <span className="font-display text-[22px] font-bold group-hover:underline">{w.question}</span>
+      <span className="leading-relaxed text-muted">{c.hub.foodsLead(w)}</span>
+    </Link>
+  );
+}
+
 /* ─── small pieces ───────────────────────────────────────────────────────── */
 
 function Section({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {
