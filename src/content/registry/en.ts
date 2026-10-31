@@ -289,6 +289,7 @@ const en: RegistryCopy = {
       dna_jme: "DNA test for juvenile myoclonic epilepsy (JME)",
       dna_je: "DNA test for juvenile epilepsy (JE)",
       dna_lsd: "DNA test for lysosomal storage disease (LSD)",
+      dna_ampn: "DNA test for Alaskan Malamute polyneuropathy (AMPN)",
       dna_pap_pra1: "DNA test for progressive retinal atrophy in Papillons (Pap-PRA1)",
       dna_nad: "DNA test for neuroaxonal dystrophy (NAD)",
       dna_eopra: "DNA test for early-onset progressive retinal atrophy (EOPRA)",
@@ -366,6 +367,8 @@ const en: RegistryCopy = {
     eye_conditions: "Inherited eye conditions such as cataracts occur in the breed, and protruding or irritated eyes are a point of concern; eye testing and DNA tests are available.",
     epilepsy: "Epilepsy, a brain disorder that can cause seizures, occurs in the breed.",
     storage_disease: "An inherited storage disease of the nervous system can affect young dogs of the breed; a DNA test of the parents lets breeders avoid it.",
+    chondrodysplasia: "Chondrodysplasia, a disorder of cartilage and bone growth, occurs in the breed; puppies can be checked with an X-ray.",
+    polyneuropathy: "An inherited nerve disease (polyneuropathy) occurs in the breed; a DNA test of the parents lets breeders avoid it.",
     back_disc_disease: "Intervertebral disc disease, a problem with the cushioning discs between the bones of the back, occurs in the breed.",
     pra_eye_disease: "Progressive retinal atrophy, an inherited eye disease that can slowly lead to blindness, occurs in the breed; DNA tests and eye testing are available.",
     hip_dysplasia: "Hip dysplasia, a poorly developed hip joint that can lead to arthritis, occurs in the breed; breeders are advised to have the parents' hips scored.",
@@ -1181,6 +1184,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club calls it an excellent and alert family companion, recommends more than two hours of exercise a day and grooming more than once a week, says it does not shed and gives a lifespan of over 12 years; PetMD says Lagotti can live to 15–17. PetMD notes that it needs constant mental and physical stimulation and extensive socialisation, as it can be shy; Woodgreen says it can struggle when left alone too often and recommends professional grooming every six to eight weeks.",
       ],
       sources: ["S630", "S631", "S632", "S633", "S635", "S636", "S10"],
+    },
+    alaskan_malamute: {
+      aka: "Malamute, Mal, Alaskan Mal",
+      text: [
+        "The Alaskan Malamute is one of the oldest Arctic sledge dogs: a powerful, substantially built Nordic sledge dog from the USA with a thick, coarse coat. The FCI standard gives desirable sizes of 63.5 cm and 38 kg for males and 58.5 cm and 34 kg for females; PDSA gives 58–64 cm and 34–39 kg. A dog of this size is fully grown at about 15–18 months (PetMD), and PDSA gives a lifespan of over 10 years (PetMD: 10–14 years).",
+        "PDSA recommends a minimum of two hours of heavy exercise and daily brushing every day, and says Malamutes shed a lot, have a very strong prey drive, should not be left alone for more than four hours and suit active adults or families with older children; it calls them challenging for first-time owners. PetMD advises checking the ears once a week and a bath every 6–8 weeks, and notes that the thick coat makes hot weather hard for them.",
+      ],
+      sources: ["S637", "S639", "S640", "S10"],
     },
     british_shorthair: {
       aka: "British Blue",

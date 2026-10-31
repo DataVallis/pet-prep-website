@@ -310,6 +310,7 @@ const sl: RegistryCopy = {
       dna_jme: "Test DNK za juvenilno mioklonično epilepsijo (JME)",
       dna_je: "Test DNK za juvenilno epilepsijo (JE)",
       dna_lsd: "Test DNK za lizosomsko bolezen kopičenja (LSD)",
+      dna_ampn: "Test DNK za polinevropatijo aljaškega malamuta (AMPN)",
       dna_pap_pra1: "Test DNK za progresivno atrofijo mrežnice pri papijonih (Pap-PRA1)",
       dna_nad: "Test DNK za nevroaksonsko distrofijo (NAD)",
       dna_eopra: "Test DNK za zgodaj nastopajočo progresivno atrofijo mrežnice (EOPRA)",
@@ -387,6 +388,8 @@ const sl: RegistryCopy = {
     eye_conditions: "Pri pasmi se pojavljajo dedne bolezni oči, na primer siva mrena, izbuljene ali razdražene oči pa so opozorilo pri presoji; na voljo so pregledi oči in testi DNK.",
     epilepsy: "Pri pasmi se pojavlja epilepsija, bolezen možganov, ki lahko povzroči napade.",
     storage_disease: "Pri mladih psih te pasme se lahko pojavi dedna bolezen kopičenja, ki prizadene živčevje; test DNK staršev vzrediteljem omogoča, da se ji izognejo.",
+    chondrodysplasia: "Pri pasmi se pojavlja hondrodisplazija, motnja rasti hrustanca in kosti; mladičke je mogoče pregledati z rentgenom.",
+    polyneuropathy: "Pri pasmi se pojavlja dedna bolezen živcev (polinevropatija); test DNK staršev vzrediteljem omogoča, da se ji izognejo.",
     back_disc_disease: "Pri pasmi se pojavlja bolezen medvretenčnih ploščic, ki blažijo stik med vretenci hrbtenice.",
     pra_eye_disease: "Pri pasmi se pojavlja progresivna atrofija mrežnice, dedna bolezen oči, ki lahko počasi vodi v slepoto; na voljo so DNK testi in pregledi oči.",
     hip_dysplasia: "Pri pasmi se pojavlja displazija kolkov, slabo razvit kolčni sklep, ki lahko vodi v artrozo; vzrediteljem svetujejo pregled kolkov staršev.",
@@ -1202,6 +1205,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club ga opisuje kot odličnega in pozornega družinskega spremljevalca, priporoča več kot dve uri gibanja na dan in česanje večkrat na teden, pravi, da se ne lisa, in navaja življenjsko dobo več kot 12 let; po PetMD lahko dočaka 15–17 let. PetMD poudarja, da potrebuje stalne miselne in telesne izzive ter veliko socializacije, ker je lahko plašen; Woodgreen pravi, da težko prenaša pogosto samoto, in priporoča obisk frizerja vsakih šest do osem tednov.",
       ],
       sources: ["S630", "S631", "S632", "S633", "S635", "S636", "S10"],
+    },
+    alaskan_malamute: {
+      aka: "malamut, aljaski malamut, malamute, Alaskan Malamute",
+      text: [
+        "Aljaški malamut (Alaskan Malamute) je eden najstarejših arktičnih vlečnih psov: močan, krepko grajen nordijski vlečni pes iz ZDA z gosto, grobo dlako. Standard FCI navaja želeno velikost 63,5 cm in 38 kg za samce ter 58,5 cm in 34 kg za samice; PDSA navaja 58–64 cm in 34–39 kg. Pes te velikosti zraste do približno 15–18 mesecev (PetMD), PDSA pa navaja življenjsko dobo več kot 10 let (PetMD: 10–14 let).",
+        "PDSA priporoča najmanj dve uri napornega gibanja in česanje vsak dan ter pravi, da se malamuti močno lisajo, imajo zelo močan lovski nagon, ne smejo biti sami več kot štiri ure in se najbolje znajdejo pri aktivnih odraslih ali v družinah s starejšimi otroki; za začetnike so po PDSA zahtevni. PetMD svetuje pregled ušes enkrat na teden in kopanje vsakih 6–8 tednov ter opozarja, da zaradi goste dlake težko prenašajo vročino.",
+      ],
+      sources: ["S637", "S639", "S640", "S10"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",
