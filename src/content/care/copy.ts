@@ -219,7 +219,51 @@ const fr: CareCopy = {
   breadcrumb: "Conseils",
 };
 
-const copies: Record<Locale, CareCopy> = { en, sl, de, fr };
+const es: CareCopy = {
+  speciesWords: {
+    // `plural` without article («para los perros»); `pet` carries its article («un perro»).
+    dog: { question: "¿Qué pueden comer los perros?", plural: "perros", pet: "un perro" },
+    cat: { question: "¿Qué pueden comer los gatos?", plural: "gatos", pet: "un gato" },
+  },
+  levels: {
+    toxic: { label: "Tóxico: llama a tu veterinario", heading: "Tóxico: no se lo des nunca" },
+    dangerous: { label: "Peligroso", heading: "Peligroso" },
+    not_recommended: { label: "No recomendado", heading: "Mejor evitarlo" },
+    small_amounts: { label: "Aceptable en pequeñas cantidades", heading: "Aceptable como premio ocasional" },
+  },
+  hub: {
+    foodsLead: (w) => `Alimentos seguros, arriesgados y tóxicos para los ${w.plural}, cada uno con el motivo, los signos que hay que vigilar y las fuentes.`,
+    count: (n) => (n === 1 ? `${n} alimento` : `${n} alimentos`),
+    open: "Ver la lista",
+  },
+  species: {
+    metaTitle: (w) => `${w.question} Alimentos seguros y tóxicos, con fuentes — PetPrep`,
+    metaDescription: (w, n) => `${n === 1 ? `${n} alimento revisado` : `${n} alimentos revisados`} para los ${w.plural}: qué es tóxico, qué es arriesgado y qué se puede dar como premio. El motivo, los signos y qué hacer, con enlace a cada fuente.`,
+    eyebrow: "Consejos · alimentación",
+    lead: (w) => `Qué alimentos son tóxicos, arriesgados o aceptables para los ${w.plural}: ordenados por nivel de riesgo, explicados de forma sencilla y con enlace a cada fuente.`,
+    emergencyTitle: "¿Ha comido algo tóxico?",
+    emergencyText: "Llama enseguida a tu veterinario o a una línea de información toxicológica para animales. Apunta qué ha comido y cuánto, y no esperes a que aparezcan signos.",
+  },
+  food: {
+    why: "Por qué",
+    signs: "Signos que hay que vigilar",
+    whatToDo: "Qué hacer",
+    serving: "Cómo dárselo",
+    forKids: "Para niños",
+    faq: "Preguntas y respuestas",
+    related: "Alimentos relacionados",
+    sources: "Fuentes",
+    updated: "Actualizado",
+    notVetReviewed: "Información general extraída de las fuentes indicadas abajo: no la ha revisado un veterinario y no sustituye el consejo veterinario. Si tienes dudas, llama a tu veterinario.",
+    otherSpecies: "Otros animales",
+    simulates: "Cómo lo practican los niños en PetPrep",
+    simulatesText: (w) => `En PetPrep, un niño cuida de ${w.pet} simulado de forma realista: comidas a la hora adecuada, agua, paseos y cuidados. Saber qué se puede compartir con él sin riesgo forma parte de estar preparado para una mascota real.`,
+    backTo: "Todos los alimentos",
+  },
+  breadcrumb: "Consejos",
+};
+
+const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es };
 export const getCareCopy = (l: Locale) => copies[l];
 
 export function speciesWords(l: Locale, speciesId: string): SpeciesWords {

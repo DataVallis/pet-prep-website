@@ -1,4 +1,4 @@
-export const locales = ["en", "sl", "de", "fr"] as const;
+export const locales = ["en", "sl", "de", "fr", "es"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
 
@@ -17,6 +17,7 @@ export const localeMeta: Record<Locale, { htmlLang: string; og: string; label: s
   sl: { htmlLang: "sl", og: "sl_SI", label: "Slovenščina", short: "SL", intl: "sl-SI", country: "SI" },
   de: { htmlLang: "de", og: "de_DE", label: "Deutsch", short: "DE", intl: "de-DE", country: "DE" },
   fr: { htmlLang: "fr", og: "fr_FR", label: "Français", short: "FR", intl: "fr-FR", country: "FR" },
+  es: { htmlLang: "es", og: "es_ES", label: "Español", short: "ES", intl: "es-ES", country: "ES" },
 };
 
 /**
@@ -33,31 +34,31 @@ export const localePattern = locales.join("|");
 
 /** Every page of the site, with its localized slug. "home" has no slug. */
 export const pageSlugs = {
-  howItWorks: { en: "how-it-works", sl: "kako-deluje", de: "so-funktioniert-es", fr: "comment-ca-marche" },
-  parents: { en: "for-parents", sl: "za-starse", de: "fuer-eltern", fr: "pour-les-parents" },
-  afterAdoption: { en: "when-it-comes-home", sl: "ko-pride-domov", de: "wenn-es-einzieht", fr: "quand-il-arrive-a-la-maison" },
-  pricing: { en: "pricing", sl: "cenik", de: "preise", fr: "tarifs" },
-  faq: { en: "faq", sl: "pogosta-vprasanja", de: "haeufige-fragen", fr: "questions-frequentes" },
-  partners: { en: "partners", sl: "partnerji", de: "partner", fr: "partenaires" },
-  investors: { en: "investors", sl: "vlagatelji", de: "investoren", fr: "investisseurs" },
-  contact: { en: "contact", sl: "kontakt", de: "kontakt", fr: "contact" },
-  privacy: { en: "privacy", sl: "zasebnost", de: "datenschutz", fr: "confidentialite" },
-  terms: { en: "terms", sl: "pogoji", de: "nutzungsbedingungen", fr: "conditions-d-utilisation" },
-  childSafety: { en: "child-safety", sl: "varnost-otrok", de: "kindersicherheit", fr: "securite-des-enfants" },
-  deleteAccount: { en: "delete-account", sl: "izbris-racuna", de: "konto-loeschen", fr: "supprimer-le-compte" },
-  accessibility: { en: "accessibility", sl: "dostopnost", de: "barrierefreiheit", fr: "accessibilite" },
-  animals: { en: "animals", sl: "zivali", de: "tiere", fr: "animaux" },
-  about: { en: "about", sl: "o-nas", de: "ueber-uns", fr: "a-propos" },
+  howItWorks: { en: "how-it-works", sl: "kako-deluje", de: "so-funktioniert-es", fr: "comment-ca-marche", es: "como-funciona" },
+  parents: { en: "for-parents", sl: "za-starse", de: "fuer-eltern", fr: "pour-les-parents", es: "para-padres" },
+  afterAdoption: { en: "when-it-comes-home", sl: "ko-pride-domov", de: "wenn-es-einzieht", fr: "quand-il-arrive-a-la-maison", es: "cuando-llega-a-casa" },
+  pricing: { en: "pricing", sl: "cenik", de: "preise", fr: "tarifs", es: "precios" },
+  faq: { en: "faq", sl: "pogosta-vprasanja", de: "haeufige-fragen", fr: "questions-frequentes", es: "preguntas-frecuentes" },
+  partners: { en: "partners", sl: "partnerji", de: "partner", fr: "partenaires", es: "socios" },
+  investors: { en: "investors", sl: "vlagatelji", de: "investoren", fr: "investisseurs", es: "inversores" },
+  contact: { en: "contact", sl: "kontakt", de: "kontakt", fr: "contact", es: "contacto" },
+  privacy: { en: "privacy", sl: "zasebnost", de: "datenschutz", fr: "confidentialite", es: "privacidad" },
+  terms: { en: "terms", sl: "pogoji", de: "nutzungsbedingungen", fr: "conditions-d-utilisation", es: "condiciones-de-uso" },
+  childSafety: { en: "child-safety", sl: "varnost-otrok", de: "kindersicherheit", fr: "securite-des-enfants", es: "seguridad-infantil" },
+  deleteAccount: { en: "delete-account", sl: "izbris-racuna", de: "konto-loeschen", fr: "supprimer-le-compte", es: "eliminar-cuenta" },
+  accessibility: { en: "accessibility", sl: "dostopnost", de: "barrierefreiheit", fr: "accessibilite", es: "accesibilidad" },
+  animals: { en: "animals", sl: "zivali", de: "tiere", fr: "animaux", es: "animales" },
+  about: { en: "about", sl: "o-nas", de: "ueber-uns", fr: "a-propos", es: "sobre-nosotros" },
   /** Mascot page (David 2026-10-25): linked from the footer only. */
-  curio: { en: "meet-curio", sl: "spoznaj-curia", de: "curio-kennenlernen", fr: "decouvrir-curio" },
+  curio: { en: "meet-curio", sl: "spoznaj-curia", de: "curio-kennenlernen", fr: "decouvrir-curio", es: "conoce-a-curio" },
   /** #walkyourpet movement (David 2026-10-30): the phrase is never translated, same slug everywhere. */
-  walkyourpet: { en: "walkyourpet", sl: "walkyourpet", de: "walkyourpet", fr: "walkyourpet" },
+  walkyourpet: { en: "walkyourpet", sl: "walkyourpet", de: "walkyourpet", fr: "walkyourpet", es: "walkyourpet" },
   /** Care knowledge (M6-K, David 2026-10-31): /care → /care/<species> → /care/<species>/<food>. */
-  care: { en: "care", sl: "skrb", de: "ratgeber", fr: "conseils" },
+  care: { en: "care", sl: "skrb", de: "ratgeber", fr: "conseils", es: "consejos" },
   /** Free printable colouring pages (David 2026-10-31): /coloring-pages → /coloring-pages/<page>. */
-  coloring: { en: "coloring-pages", sl: "pobarvanke", de: "ausmalbilder", fr: "coloriages" },
+  coloring: { en: "coloring-pages", sl: "pobarvanke", de: "ausmalbilder", fr: "coloriages", es: "dibujos-para-colorear" },
   /** Everything for kids in one section (David 2026-10-31): header dropdown + hub page. */
-  kids: { en: "for-kids", sl: "za-otroke", de: "fuer-kinder", fr: "pour-les-enfants" },
+  kids: { en: "for-kids", sl: "za-otroke", de: "fuer-kinder", fr: "pour-les-enfants", es: "para-ninos" },
 } as const satisfies Record<string, Record<Locale, string>>;
 
 export type PageKey = keyof typeof pageSlugs;
@@ -84,7 +85,7 @@ export function pageKeyFromSlug(locale: Locale, slug: string): PageKey | undefin
  * /animals/<species>/<breed> (SL /sl/zivali/…). Species and breed slugs come from the
  * registry (src/content/registry/registry.json); only the comparison page slug is fixed here.
  */
-export const compareSlug: Record<Locale, string> = { en: "compare", sl: "primerjava", de: "vergleich", fr: "comparer" };
+export const compareSlug: Record<Locale, string> = { en: "compare", sl: "primerjava", de: "vergleich", fr: "comparer", es: "comparar" };
 
 export function pathForSpecies(locale: Locale, speciesSlug: string): string {
   return `${pathFor(locale, "animals")}/${speciesSlug}`;
