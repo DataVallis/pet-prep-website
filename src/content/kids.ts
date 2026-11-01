@@ -85,6 +85,15 @@ export const kidsCopy: Record<Locale, KidsCopy> = {
       { page: "walkyourpet", title: "#walkyourpet", text: "Ruch, który zapoczątkowało dziecko: wyjdź z domu na spacer.", image: null },
     ],
   },
+  cs: {
+    menu: "Pro děti",
+    all: "Vše pro děti",
+    items: [
+      { page: "coloring", title: "Omalovánky", text: "12 omalovánek zdarma k vytištění – každá se zajímavostí o péči o zvířata.", image: coloringThumb },
+      { page: "curio", title: "Seznam se s Curio", text: "Náš maskot a jeho krátká videa.", image: curioThumb },
+      { page: "walkyourpet", title: "#walkyourpet", text: "Hnutí, které založilo dítě: jdi ven na procházku.", image: null },
+    ],
+  },
   sl: {
     menu: "Za otroke",
     all: "Vse za otroke",
