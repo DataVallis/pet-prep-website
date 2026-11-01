@@ -351,7 +351,51 @@ const pt: CareCopy = {
   breadcrumb: "Conselhos",
 };
 
-const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es, it, pt };
+const nl: CareCopy = {
+  speciesWords: {
+    // `plural` without article ("voor honden"); `pet` carries its article ("een hond").
+    dog: { question: "Wat mogen honden eten?", plural: "honden", pet: "een hond" },
+    cat: { question: "Wat mogen katten eten?", plural: "katten", pet: "een kat" },
+  },
+  levels: {
+    toxic: { label: "Giftig – bel je dierenarts", heading: "Giftig: nooit geven" },
+    dangerous: { label: "Gevaarlijk", heading: "Gevaarlijk" },
+    not_recommended: { label: "Niet aanbevolen", heading: "Liever niet" },
+    small_amounts: { label: "Oké in kleine hoeveelheden", heading: "Af en toe oké als snoepje" },
+  },
+  hub: {
+    foodsLead: (w) => `Veilig, riskant en giftig eten voor ${w.plural} – telkens met de reden, de verschijnselen om op te letten en de bronnen.`,
+    count: (n) => `${n} voedingsmiddel${n === 1 ? "" : "en"}`,
+    open: "Bekijk de lijst",
+  },
+  species: {
+    metaTitle: (w) => `${w.question} Veilig en giftig eten, met bronnen – PetPrep`,
+    metaDescription: (w, n) => `${n} voedingsmiddel${n === 1 ? "" : "en"} gecontroleerd voor ${w.plural}: wat giftig is, wat riskant is en wat oké is als snoepje – de reden, de verschijnselen en wat je moet doen, met een link naar elke bron.`,
+    eyebrow: "Verzorging · voeding",
+    lead: (w) => `Welk eten giftig, riskant of oké is voor ${w.plural} – gesorteerd op risico, eenvoudig uitgelegd, met een link naar elke bron.`,
+    emergencyTitle: "Iets giftigs gegeten?",
+    emergencyText: "Bel meteen je dierenarts of een vergiftigingenlijn voor dieren. Schrijf op wat er is gegeten en hoeveel – wacht niet op verschijnselen.",
+  },
+  food: {
+    why: "Waarom",
+    signs: "Verschijnselen om op te letten",
+    whatToDo: "Wat moet je doen?",
+    serving: "Hoe geef je het?",
+    forKids: "Voor kinderen",
+    faq: "Vragen en antwoorden",
+    related: "Vergelijkbaar eten",
+    sources: "Bronnen",
+    updated: "Bijgewerkt",
+    notVetReviewed: "Algemene informatie uit de bronnen hieronder, niet gecontroleerd door een dierenarts en geen vervanging van veterinair advies. Twijfel je? Bel je dierenarts.",
+    otherSpecies: "Andere dieren",
+    simulates: "Zo oefenen kinderen dit in PetPrep",
+    simulatesText: (w) => `In PetPrep zorgt een kind voor ${w.pet} die realistisch is gesimuleerd: maaltijden op het juiste moment, water, wandelingen en verzorging. Weten wat je veilig kunt delen, hoort erbij als je klaar wilt zijn voor een echt huisdier.`,
+    backTo: "Al het eten",
+  },
+  breadcrumb: "Verzorging",
+};
+
+const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es, it, pt, nl };
 export const getCareCopy = (l: Locale) => copies[l];
 
 export function speciesWords(l: Locale, speciesId: string): SpeciesWords {

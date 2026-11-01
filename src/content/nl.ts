@@ -1,0 +1,1280 @@
+import type { Dictionary } from "./types";
+
+const nl: Dictionary = {
+  meta: {
+    siteTitle: "PetPrep – Klaar voor een huisdier. Een leven lang aan zijn zijde.",
+    siteDescription:
+      "PetPrep is een huisdiersimulator van 12 weken die ouders laat zien of hun kind echt klaar is voor een echt huisdier – en daarna een AI-assistent wordt voor het hele leven van het echte dier.",
+    slogan: "Klaar voor een huisdier. Een leven lang aan zijn zijde.",
+    keywords: [
+      "is mijn kind klaar voor een hond",
+      "app over verantwoordelijkheid voor huisdieren voor kinderen",
+      "virtuele huisdiersimulator",
+      "AI-huisdiersimulator",
+      "voordat je een hond neemt",
+      "kinderen en huisdieren",
+      "test klaar voor een huisdier",
+      "ouderdashboard",
+      "hondenras uitproberen voor je koopt",
+      "past dit ras bij mij",
+    ],
+  },
+  nav: { home: "Home", menu: "Menu", close: "Menu sluiten", skip: "Naar de inhoud" },
+  lang: { label: "Taal", switchTo: "Andere taal kiezen" },
+  cta: {
+    primary: "Begin gratis met een kruising",
+    secondary: "Bekijk hoe het werkt",
+    earlyAccess: "Vroege toegang aanvragen",
+    earlyAccessSubject: "PetPrep vroege toegang",
+    ios: "Download voor iPhone",
+    android: "Download voor Android",
+    comingSoon: "Binnenkort op iPhone en Android",
+    readMore: "Lees meer",
+    contactUs: "Neem contact op",
+  },
+  common: {
+    planned: "Gepland",
+    plannedNote:
+      "Deze pagina beschrijft wat we hierna gaan bouwen. Het zit nog niet in de app en details kunnen nog veranderen.",
+    legalDraft:
+      "Deze tekst wordt vóór de publieke lancering samen met onze juridisch adviseurs afgerond. Is iets onduidelijk? Neem contact met ons op.",
+    lastUpdated: "Laatst bijgewerkt",
+    breadcrumbHome: "Home",
+    screensNote: "De appschermen op deze site zijn voorvertoningen; de uiteindelijke app kan er iets anders uitzien.",
+    perPet: "per huisdier",
+    free: "Gratis",
+    forever: "voor altijd",
+    notFoundTitle: "Deze pagina is losgebroken.",
+    notFoundText: "De pagina die je zoekt bestaat niet of is verhuisd.",
+    notFoundCta: "Terug naar de homepage",
+  },
+  footer: {
+    tagline: "Klaar voor een huisdier. Een leven lang aan zijn zijde.",
+    groups: [
+      { title: "Product", links: ["howItWorks", "parents", "animals", "care", "kids", "coloring", "afterAdoption", "pricing", "faq"] },
+      { title: "Bedrijf", links: ["about", "curio", "walkyourpet", "partners", "investors", "contact"] },
+      { title: "Vertrouwen", links: ["privacy", "terms", "childSafety", "accessibility", "deleteAccount"] },
+    ],
+    rights: "Alle rechten voorbehouden.",
+    dataEu: "Gegevens opgeslagen in de EU.",
+    languages: "Binnenkort meer talen.",
+    company: "PetPrep is een product van",
+    cookieSettings: "Cookie-instellingen",
+    a11yBadge: { title: "Toegankelijk spelen", text: "Makkelijkere gebaren · Schermlezers · Minder beweging" },
+  },
+  screens: {
+    pin: "Kinderen loggen in met een 6-cijferige code van hun ouder – geen e-mailadres, geen wachtwoord.",
+    contract: "Het Verantwoordelijkheidscontract, ondertekend met een vinger. Met de handtekening komt het huisdier tot leven.",
+    hud: "Het startscherm van het kind: hoe het huisdier er nu voor staat, vier verzorgingsbehoeften en de verzorgingsknoppen.",
+    picker: "Ouders kiezen het huisdier: ras, herkomst (geadopteerd of van een fokker) en leeftijd bij aankomst.",
+    parent: "Het ouderdashboard: een stoplicht, de Care Score en de routines van vandaag voor elk kind.",
+    report: "Een rapport van een kind over 7, 30 of 84 dagen: routines, wandelingen en gemiste taken, dag voor dag.",
+    assistant: "Als het thuiskomt: de AI-assistent maakt van halsbandgegevens één duidelijke suggestie.",
+    certificate: "Na 12 weken: het Verantwoordelijkheidscertificaat met de Care Score van het kind.",
+  },
+  pricingPlans: {
+    free: {
+      name: "Kruising",
+      text: "De volledige simulatie met een levensecht kruisingshuisdier.",
+      features: [
+        "Simulatie van 12 weken met echte gevolgen",
+        "Echte wandelingen, geteld in echte stappen van de telefoon",
+        "Ouderdashboard, stoplicht en Care Score",
+        "Stille uren en een pauzeknop",
+        "Fotorealistische afbeelding van je huisdier en korte video’s",
+      ],
+      cta: "Begin gratis",
+    },
+    challenge: {
+      name: "De PetPrep Challenge van 12 weken",
+      badge: "12 weken + certificaat",
+      unit: "per huisdier · 12 weken",
+      text: "Voor gezinnen die de volledige ervaring willen, met aan het eind een certificaat.",
+      features: [
+        "Alles uit Kruising",
+        "Veeleisende rassen, zoals de [border collie](breed:border_collie)",
+        "De stemmingen van je huisdier als AI-video’s",
+        "Verantwoordelijkheidscertificaat",
+        "Eén prijs als broers en zussen een huisdier delen",
+        "Toegang voor beide ouders",
+      ],
+      cta: "Kies de challenge",
+    },
+    note:
+      "Aankopen doe je in de app via de App Store of Google Play. Een tweede huisdier in hetzelfde gezin is een aparte challenge. Prijzen zijn inclusief btw waar van toepassing.",
+  },
+  earlyAccess: {
+    title: "Vroege toegang aanvragen",
+    text: "Wees een van de eerste gezinnen die PetPrep uitproberen. We mailen je zodra het klaar is – verder niets.",
+    label: "Je e-mailadres",
+    placeholder: "jij@voorbeeld.nl",
+    button: "Vroege toegang aanvragen",
+    sending: "Versturen…",
+    successTitle: "Je staat op de lijst.",
+    successText: "Bedankt! Zodra PetPrep klaar is, mailen we jou als eerste.",
+    invalid: "Vul een geldig e-mailadres in.",
+    error: "Er ging iets mis. Probeer het zo nog eens.",
+    consent: "Door je aan te melden ga je ermee akkoord dat je e-mails over PetPrep ontvangt. Je kunt je altijd afmelden.",
+    privacyLink: "Privacybeleid",
+  },
+  contactCards: [
+    { title: "Gezinnen", text: "Vragen over de app, je account of de challenge.", email: "hello" },
+    { title: "Privacy", text: "Inzage, export of verwijdering van gegevens, of een andere privacyvraag.", email: "privacy" },
+    { title: "Partners", text: "Dierenwinkels, asielen, dierenartsen, trainers, verzekeraars en scholen.", email: "partners" },
+    { title: "Investeerders", text: "Investeerdersbrief, pitchdeck en dataroom op aanvraag.", email: "investors" },
+  ],
+  home: {
+    meta: {
+      title: "PetPrep – Is je kind klaar voor een huisdier? Ontdek het in 12 weken.",
+      description:
+        "Voordat er een echt huisdier in huis komt, zorgt je kind 12 weken voor een levensecht AI-huisdier: maaltijden, opruimen, echte wandelingen. Jij ziet elke dag of het er echt klaar voor is.",
+    },
+    hero: {
+      eyebrow: "De PetPrep Challenge van 12 weken",
+      title: "Klaar voor een huisdier. Een leven lang aan zijn zijde.",
+      lead:
+        "Voordat er een echt huisdier in huis komt, zorgt je kind 12 weken voor een levensecht AI-huisdier – eten geven, opruimen en echte wandelingen maken. Jij ziet elke dag of het er echt klaar voor is.",
+      trust: ["Kruisingshuisdier voor altijd gratis", "Geen advertenties, geen chat met vreemden", "Kinderen hebben geen e-mailadres nodig"],
+    },
+    phone: {
+      petName: "Luna",
+      petAge: "Pup · 3 maanden",
+      live: "LIVE",
+      video: "Fotorealistische AI-video van het huisdier",
+      actions: ["Eten", "Water", "Wandelen", "Opruimen"],
+    },
+    parentCard: { child: "Maya", status: "Alles goed", scoreLabel: "Care Score", progress: "Week 3 van 12 · 31 van 36 routines op tijd" },
+    notification: { app: "PetPrep", text: "Je huisdier kijkt naar zijn voerbak. Ontbijttijd eindigt om 9.00 uur." },
+    promoVideo: {
+      eyebrow: "PetPrep in één minuut",
+      title: "Bekijk hoe het werkt.",
+      text: "Van het kiezen van het huisdier en het ondertekenen van het contract tot school, wandelingen, vachtverzorging en het certificaat – alles wat je kind in 12 weken doet en alles wat jij op het dashboard ziet. Curio, onze mascotte, zegt alleen even hallo; het huisdier in de app is een levensechte AI-hond.",
+      alt: "Promovideo van PetPrep: appschermen, een kind dat voor een hond zorgt, een ouder die de Care Score volgt.",
+      note: "De app staat nog niet openbaar in de App Store en Google Play – meld je aan voor vroege toegang.",
+    },
+    promise: {
+      quote: "Elk gezin hoort het: “Ik beloof dat ik ervoor zorg.” PetPrep maakt van die belofte",
+      highlight: "bewijs",
+      text:
+        "Falen in de simulatie is een succes voor je gezin: je ontdekt het voordat een echt dier eronder lijdt – en voordat je je vastlegt op jaren van zorg en kosten.",
+    },
+    how: {
+      eyebrow: "Hoe het werkt",
+      title: "Drie stappen van “alsjeblieft” naar “klaar”.",
+      steps: [
+        {
+          title: "Jij kiest het huisdier",
+          text: "Maak een gezinsaccount aan, voeg je kind toe met alleen een bijnaam en kies het huisdier – ras, geadopteerd of van een fokker, pup of senior.",
+        },
+        {
+          title: "Je kind ondertekent de belofte",
+          text: "Met een 6-cijferige code logt je kind in – geen e-mailadres, geen wachtwoord. Het ondertekent het Verantwoordelijkheidscontract met een vinger, en er wordt een uniek huisdier geboren.",
+        },
+        {
+          title: "12 weken echte zorg",
+          text: "Eén echte week is één maand in het leven van het huisdier. Aan het eind: een Verantwoordelijkheidscertificaat met de Care Score – objectief bewijs, of een eerlijk nee.",
+        },
+      ],
+      link: "Hoe het werkt, in detail",
+    },
+    realism: {
+      title: "Zo dicht bij een echt huisdier als een app kan komen.",
+      text: "Voedertijden, wandelingen en groei zijn gebaseerd op bronnen zoals dierenartsenverenigingen en kennelclubs – niet verzonnen voor een spel.",
+      items: [
+        { title: "Echte wandelingen, echte stappen", text: "De dagelijkse wandeling telt de stappen van de telefoon van je kind. Vandaag helemaal niet gewandeld? Morgen merkt het huisdier het." },
+        { title: "Het groeit op", text: "Een pup eet vier keer per dag, dan drie keer, dan twee keer – en krijgt een nieuwe foto terwijl hij groeit." },
+        { title: "Het gedraagt zich ook zo", text: "Pups moeten naar buiten. Verveelde honden kauwen op pantoffels. Ongelukjes gebeuren vóór het avondeten." },
+        { title: "Houdt rekening met school en slaap", text: "Tijdens stille uren zijn er geen herinneringen. Een maaltijd die onder schooltijd valt, is jouw taak, niet die van je kind." },
+        { title: "Echte gevolgen, op een zachte manier", text: "Verwaarlozing betekent een bezoek aan de dierenarts of het asiel – nooit eng, altijd met een nieuwe start." },
+        { title: "Er is er maar één van", text: "Elk huisdier krijgt zijn eigen vacht, aftekening en ogen – fotorealistisch en nooit twee keer hetzelfde." },
+      ],
+    },
+    parents: {
+      eyebrow: "Voor ouders",
+      title: "Jij ziet live hoe het echt gaat.",
+      text: "Een duidelijk stoplicht voor elk kind, een Care Score op basis van routines die op tijd zijn gedaan en een tijdlijn van wie wat deed. Broers en zussen die een huisdier delen, krijgen elk hun eigen eerlijke score.",
+      points: [
+        { strong: "Stille uren en een pauzeknop", text: "jij houdt de regie." },
+        { strong: "Kinderen loggen in met een code", text: "geen e-mailadres, geen achternaam, geen advertenties." },
+        { strong: "Beide ouders, alle kinderen", text: "één gezin, één overzicht." },
+      ],
+      link: "Alles wat ouders zien",
+    },
+    adults: {
+      eyebrow: "Voor volwassenen",
+      title: "Probeer het ras uit voordat je het in huis haalt.",
+      text: "Heb je je zinnen gezet op een bepaald ras? PetPrep is niet alleen voor kinderen. Twaalf weken lang zorg je voor een AI-huisdier van dat ras, met zijn echte dagelijkse behoeften – en ontdek je of het echt bij je past, voordat je koopt of adopteert.",
+      points: [
+        {
+          strong: "De echte behoeften van het ras",
+          text: "maaltijden binnen vaste tijdvakken, water, opruimen en een dagelijks stappendoel op basis van onderbouwde beweegbehoeften: een volwassen border collie heeft 12.000 stappen per dag nodig, een kruising 6.000.",
+        },
+        {
+          strong: "Training en ongelukjes van een pup",
+          text: "elke dag een korte trainingssessie, en een pup die het maar ongeveer één uur per levensmaand kan ophouden voordat hij naar buiten moet – anders ligt er een plas op de vloer.",
+        },
+        {
+          strong: "12 weken laten zien of het in je leven past",
+          text: "je werkdagen, je vrije tijd en het weer. Omdat het een gezinshond wordt, kun je later je partner of kinderen toevoegen.",
+        },
+      ],
+      how: "Zo begin je: maak een account aan als ouder, voeg jezelf toe als verzorgersprofiel en log in met de 6-cijferige code – op dezelfde telefoon of een andere.",
+      note: "Nu beschikbaar: de gratis kruisingshond en huiskat, en in de challenge van 12 weken elk honden- en kattenras uit de [dierenencyclopedie](page:animals).",
+      link: "Zo gebruik je PetPrep in je eentje",
+    },
+    after: {
+      eyebrow: "Als het thuiskomt",
+      title: "Als het echte huisdier komt, blijft PetPrep.",
+      text: "Tik op “We hebben een echt huisdier” en de simulator wordt een AI-assistent voor de jaren die komen – die het ritme van je gezin al kent.",
+      features: [
+        { title: "Slimme halsband", text: "Activiteit en meldingen als er iets niet klopt." },
+        { title: "AI als eerste aanspreekpunt", text: "Antwoordt snel en verwijst dan door naar een echte dierenarts." },
+        { title: "Groei en voeding", text: "Wekelijks gewicht, groeicurve, wanneer je van voer wisselt." },
+        { title: "Vertrouwde partners", text: "Dierenartsen, trainers en verzekeraars bij jou in de buurt – duidelijk gemarkeerd." },
+        { title: "DNA-test", text: "Welke rassen er in je kruising zitten – en waar je op moet letten." },
+        { title: "Kaart voor de dierenarts", text: "Rassenmix en DNA-bevindingen op één plek, klaar voor de dierenarts." },
+      ],
+      link: "Over de AI-assistent",
+      planned: "In ontwikkeling",
+    },
+    species: {
+      title: "Nu honden en katten. Er komen meer diersoorten.",
+      text: "Gemaakt voor gezinnen over de hele wereld, in hun eigen taal.",
+      chips: [
+        { label: "Hond · beschikbaar", active: true, link: "species:dog" },
+        { label: "Kat · beschikbaar", active: true, link: "species:cat" },
+        { label: "Honden- en kattenrassen · in de challenge", link: "page:animals" },
+        { label: "Meer diersoorten · gepland", link: "page:animals" },
+      ],
+    },
+    pricing: { eyebrow: "Prijzen", title: "Eenvoudige, eerlijke prijzen." },
+    faq: { title: "Vragen die ouders stellen", link: "Alle vragen" },
+    final: { title: "Klaar voor een huisdier?", text: "Ontdek het in 12 weken. Begin gratis, op iPhone of Android." },
+  },
+  pages: {
+    howItWorks: {
+      meta: {
+        title: "Hoe PetPrep werkt – een challenge van 12 weken: klaar voor een huisdier?",
+        description:
+          "Hoe de PetPrep-challenge van 12 weken werkt: een huisdier kiezen, het Verantwoordelijkheidscontract, dagelijkse verzorging, echte wandelingen, stille uren en het certificaat.",
+      },
+      eyebrow: "Hoe het werkt",
+      title: "Twaalf weken die laten zien wat een belofte waard is.",
+      lead:
+        "Je kind zorgt voor een fotorealistisch AI-huisdier dat zich zo veel mogelijk gedraagt als een echt dier, voor zover een app dat kan. Eén echte week staat gelijk aan één maand in het leven van het huisdier, dus in 12 weken groeit het op – en zie jij of de zorg standhoudt.",
+      blocks: [
+        {
+          type: "steps",
+          heading: "Van de eerste tik tot het certificaat",
+          items: [
+            { title: "De ouder maakt het gezin aan", text: "Je registreert je met je e-mailadres (inloggen met Apple en Google komt eraan). Voeg elk kind toe met een bijnaam en eventueel een geboortejaar. Meer vragen we niet over je kind." },
+            { title: "Jij kiest het huisdier", text: "Kies het ras (de kruising is gratis), waar het huisdier vandaan komt – geadopteerd uit een asiel of gekocht bij een fokker – en zijn leeftijd bij aankomst: pup, jong, volwassen of senior." },
+            { title: "Je kind logt in met een code", text: "Je krijgt een 6-cijferige code die 15 minuten geldig is. Je kind typt die in op zijn of haar telefoon – geen e-mailadres en geen wachtwoord. Telefoon kwijt? Log je kind met één tik uit op alle apparaten." },
+            { title: "Het Verantwoordelijkheidscontract", text: "Je kind ondertekent een belofte met een vinger. De handtekening is de geboorte van het huisdier: de behoeften tellen vanaf dat moment, dus er gaat niets verloren als je kind later tekent." },
+            { title: "Twaalf weken verzorging", text: "Eten geven binnen de juiste tijdvakken, vers water, opruimen en een dagelijkse wandeling met echte stappen. Naarmate het huisdier groeit, veranderen zijn behoeften." },
+            { title: "Het certificaat", text: "Na 12 weken wordt het huisdier één jaar. Je kind krijgt een Verantwoordelijkheidscertificaat met zijn of haar Care Score – of jullie leren allebei, zonder risico, dat het nu niet het juiste moment is." },
+          ],
+        },
+        {
+          type: "screens",
+          heading: "Wat je kind ziet",
+          items: [
+            { screen: "pin", caption: "" },
+            { screen: "contract", caption: "" },
+            { screen: "hud", caption: "" },
+          ],
+        },
+        {
+          type: "table",
+          heading: "Wat een volwassen kruisingshond elke dag nodig heeft",
+          intro: "De getallen komen uit bronnen van dierenartsen en kennelclubs; waar bronnen alleen een bandbreedte geven, kiest PetPrep een waarde en vermeldt dat erbij.",
+          head: ["Behoefte", "Hoe vaak", "Als het wordt vergeten"],
+          rows: [
+            ["Eten", "’s Ochtends (6–10 uur) en ’s avonds (17–21 uur), één keer per tijdvak", "Na ongeveer 12,5 uur hongerig"],
+            ["Water", "3 keer per dag, minstens 3 uur ertussen", "Na ongeveer 10 uur dorstig"],
+            ["Wandelen", "6.000 echte stappen (pups beginnen bij 2.000)", "Helemaal niet gewandeld → de volgende ochtend ziek"],
+            ["Opruimen", "Als het huisdier een ongelukje heeft – nooit tijdens stille uren", "Geen eten of water tot het schoon is"],
+          ],
+          note: "Pups eten 4, dan 3, dan 2 keer per dag en kunnen het maar ongeveer één uur per levensmaand ophouden. Een [border collie](breed:border_collie) heeft 12.000 stappen nodig en krijgt sneller honger.",
+        },
+        {
+          type: "cards",
+          heading: "Gemaakt voor het echte gezinsleven",
+          columns: 3,
+          items: [
+            { title: "Stille uren", text: "Stel school- en slaaptijden in. Het huisdier doet dan rustiger aan, er worden geen herinneringen gestuurd en er gebeuren geen ongelukjes." },
+            { title: "Maaltijden onder schooltijd", text: "Een voedertijdvak dat helemaal binnen de stille uren valt, is de taak van de ouder – het telt nooit mee tegen je kind." },
+            { title: "Altijd pauzeren", text: "Met één knop pauzeer je het spel, bijvoorbeeld voor een gesprek met het gezin. Tijdens de pauze wordt niets slechter." },
+            { title: "Vriendelijke herinneringen", text: "Het huisdier geeft je kind eerst een seintje, daarna een dringend seintje. Pas als een behoefte een uur op nul staat, krijg jij een alarm." },
+            { title: "Echte gevolgen", text: "Verwaarlozing betekent 12 uur bij de dierenarts. Een hele dag verwaarlozing betekent dat het asiel het huisdier meeneemt – en dan kun je opnieuw beginnen." },
+            { title: "Gedeelde huisdieren", text: "Broers en zussen kunnen één huisdier delen. Elke handeling telt voor het kind dat hem deed, zodat de score eerlijk blijft." },
+          ],
+        },
+        {
+          type: "callout",
+          title: "Falen is ook een uitkomst.",
+          text: "Belandt het huisdier in het virtuele asiel, dan heb je iets waardevols geleerd – voordat een echt dier de prijs betaalt. Je kunt opnieuw beginnen, ook met een makkelijker ras.",
+          tone: "dark",
+        },
+      ],
+    },
+    parents: {
+      meta: {
+        title: "Voor ouders – het PetPrep-dashboard, de Care Score en de instellingen",
+        description:
+          "Wat ouders zien in PetPrep: een dagelijks stoplicht per kind, de Care Score, routines, rapporten, meldingen, stille uren, pauze en privacy vanaf het ontwerp.",
+      },
+      eyebrow: "Voor ouders",
+      title: "Objectief bewijs, geen nieuwe belofte.",
+      lead:
+        "Je hoeft niet te raden of de wandelingen echt zijn gemaakt. PetPrep meet de zorg aan de hand van duidelijke dagelijkse routines en laat je per kind zien hoe het gaat.",
+      blocks: [
+        {
+          type: "cards",
+          heading: "Het stoplicht",
+          intro: "Elk kind en elk huisdier krijgt een kleur voor vandaag, in de lokale tijd van je gezin – altijd met de reden erbij in woorden.",
+          columns: 3,
+          items: [
+            { title: "Groen – alles goed", text: "De routines lopen op schema.", tag: "ok" },
+            { title: "Geel – aandacht nodig", text: "Vandaag zijn er meer dan twee routines gemist.", tag: "warn" },
+            { title: "Rood – dringend", text: "Het huisdier is vandaag ziek geworden, een behoefte staat al meer dan een uur op nul, of het huisdier is naar het asiel gegaan.", tag: "danger" },
+          ],
+        },
+        {
+          type: "prose",
+          heading: "De Care Score",
+          paragraphs: [
+            "Care Score = routines op tijd gedaan ÷ verwachte routines × 100, min 10 punten voor elke ziekte, tussen 0 en 100.",
+            "Een routine is één concrete taak: elk voedertijdvak, elk van de drie keer water bijvullen, elk ongelukje binnen twee uur opruimen (school en slaap tellen niet mee) en het dagelijkse wandeldoel halen.",
+            "Tijd waarin je het spel had gepauzeerd, het huisdier bij de dierenarts was of het contract nog niet was ondertekend, telt nooit mee tegen je kind. Voorbije dagen liggen vast, dus een score kan achteraf niet worden herschreven.",
+            "Broers en zussen die een huisdier delen, verdelen elke routine eerlijk. Alleen de eigen handelingen van een kind tellen – als één kind alles doet, scoort dat kind 100 en het andere 0.",
+          ],
+        },
+        {
+          type: "screens",
+          heading: "Jouw overzicht",
+          items: [
+            { screen: "parent", caption: "" },
+            { screen: "report", caption: "" },
+            { screen: "picker", caption: "" },
+          ],
+        },
+        {
+          type: "list",
+          heading: "Jij houdt de regie",
+          items: [
+            "Stille uren voor school en slaap, in je lokale tijd – ook als de zomer- of wintertijd ingaat.",
+            "Pauzeer het spel voor elk huisdier met één bevestigde tik; het scherm van je kind gaat meteen op slot.",
+            "Nodig de andere ouder uit met een eenmalige code; jullie zien allebei elk kind en elk huisdier.",
+            "Log een kind uit op alle apparaten als een telefoon kwijt is; codes zijn eenmalig en verlopen na 15 minuten.",
+            "Exporteer alle gegevens van je gezin als bestand, of verwijder het profiel van een kind of je hele account meteen in de app.",
+          ],
+        },
+        {
+          type: "list",
+          heading: "Privacy vanaf het ontwerp",
+          items: [
+            "Kinderen loggen in met een code – geen e-mailadres, geen wachtwoord, geen achternaam.",
+            "We bewaren een bijnaam en, als je die invult, een geboortejaar. Verder niets over je kind.",
+            "Meldingen bevatten nooit de naam van je kind of je huisdier, omdat ze op een vergrendelscherm kunnen verschijnen.",
+            "Stappen komen uit Apple Gezondheid (iPhone) of Health Connect (Android) als je dat toestaat (alleen lezen), en uit de bewegingssensor van de telefoon waar die beschikbaar is. PetPrep gebruikt geen gps en volgt geen locatie.",
+            "Geen advertenties, geen chat met vreemden, servers in de EU.",
+          ],
+        },
+      ],
+    },
+    afterAdoption: {
+      meta: {
+        title: "Als het thuiskomt – de AI-assistent van PetPrep voor je echte huisdier",
+        description:
+          "Als je gezin een echt huisdier krijgt, wordt PetPrep een AI-assistent: activiteit van een slimme halsband, meldingen, AI als eerste aanspreekpunt met een echte dierenarts erachter, groei en voeding.",
+      },
+      eyebrow: "Als het thuiskomt",
+      title: "De simulatie stopt. De zorg niet.",
+      lead:
+        "Als je gezin een echt huisdier in huis haalt, verandert PetPrep met één tik in een assistent voor het hele leven van het dier – in realtime, zonder balkjes voor gezondheid en al vertrouwd met de routine van je gezin.",
+      planned: true,
+      blocks: [
+        {
+          type: "cards",
+          heading: "Wat de assistent gaat doen",
+          columns: 2,
+          items: [
+            { title: "Koppeling met een slimme halsband", text: "Koppel populaire gps- en activiteitstrackers – of een PetPrep-halsband – en zie activiteit in samenhang." },
+            { title: "Meldingen die uitleggen", text: "“Max heeft vandaag 2 km gerend, de helft van normaal, en had een grotere maaltijd. Een extra avondwandeling helpt hem tot rust te komen.” Eén observatie, één reden, één suggestie." },
+            { title: "Eerst AI, daarna een echte dierenarts", text: "Stel een vraag of upload een foto. De assistent beantwoordt algemene vragen, schat in hoe dringend iets is en verwijst je door naar een echte dierenarts als dat nodig is – bij dringende verschijnselen verwijst hij je meteen naar een dierenarts." },
+            { title: "DNA-test voor je hond of kat", text: "Bestel een DNA-test in de app of upload de uitslag van een test die je al hebt. PetPrep laat zien welke rassen in de mix zitten, wat typisch is voor die rassen en welke gezondheidsproblemen vaker voorkomen bij die rassen – met bronnen. Rassenpercentages zijn geen diagnose, en een DNA-test laat geen allergieën zien." },
+            { title: "Een kaart voor de dierenarts", text: "De rassenmix en eventuele directe DNA-bevindingen op één pagina of in een QR-code, zodat je dierenarts meteen weet wat er in een kruising zit." },
+            { title: "Groei en voeding", text: "Noteer elke week het gewicht, bekijk de groeicurve en krijg een herinnering als het tijd is om van voer te wisselen." },
+          ],
+        },
+        {
+          type: "screens",
+          heading: "Een voorproefje",
+          items: [{ screen: "assistant", caption: "" }],
+        },
+        {
+          type: "list",
+          heading: "Principes waar we niet aan tornen",
+          items: [
+            "De AI-assistent is geen dierenarts en stelt nooit een diagnose. Bij elk antwoord over gezondheid staat hoe je een echte dierenarts bereikt.",
+            "Aanbiedingen van partners (winkels, verzekeraars, trainers, dierenartsen) zijn altijd gemarkeerd, en we vermelden het als we commissie verdienen.",
+            "Niets wordt zonder jouw toestemming met een partner gedeeld.",
+            "De gegevens van je kind uit de challenge gaan alleen naar de assistent als jij daarmee instemt.",
+          ],
+        },
+      ],
+    },
+    pricing: {
+      meta: {
+        title: "Prijzen – PetPrep is gratis om mee te beginnen, € 49,99 voor de challenge van 12 weken",
+        description:
+          "Het kruisingshuisdier is voor altijd gratis. De PetPrep Challenge van 12 weken kost € 49,99 per huisdier, als eenmalige aankoop. Eén prijs voor broers en zussen die een huisdier delen.",
+      },
+      eyebrow: "Prijzen",
+      title: "Eenvoudige, eerlijke prijzen.",
+      lead: "Begin gratis met een kruisingshuisdier. Koop de volledige challenge van 12 weken als je er klaar voor bent – de 12 weken beginnen bij de aankoop.",
+      blocks: [
+        { type: "pricing" },
+        {
+          type: "table",
+          id: "wishes",
+          heading: "Wensen – spullen voor je huisdier",
+          intro:
+            "In de app vraagt je kind om spullen voor zijn of haar huisdier; jij beslist en koopt. Je kind ziet nooit een prijs. Spullen zijn alleen voor de sier: ze veranderen nooit de behoeften, de Care Score of het certificaat. Ook beschikbaar voor de gratis kruisingshond en huiskat.",
+          head: ["Artikel", "Prijs"],
+          rows: [
+            ["Mand (kat: kattenmand)", "€ 5,99"],
+            ["Voer- en waterbak", "€ 5,99"],
+            ["Speeltje (hond: touwspeeltje of piepspeeltje, kat: pluchen muis of hengel met veren)", "€ 5,99 per speeltje"],
+            ["Snoepjes, pak van 10", "€ 2,99"],
+            ["Welkomstpakket: mand + bakken + speeltje", "€ 15,99 (in plaats van € 17,97)"],
+          ],
+          note: "Wensen komen met de volgende app-update; je kunt ze kopen zodra de artikelen beschikbaar zijn in de App Store en Google Play. De prijzen gelden voor Slovenië; de store toont de prijs voor jouw land.",
+        },
+        {
+          type: "faq",
+          heading: "Vragen over prijzen",
+          items: [
+            { q: "Is de gratis versie echt gratis?", a: "Ja. Het kruisingshuisdier is voor altijd gratis, met de volledige simulatie, echte wandelingen en het ouderdashboard." },
+            { q: "Wat zit er in de challenge?", a: "Veeleisende rassen zoals de [border collie](breed:border_collie), de stemmingen van je huisdier als AI-video’s, aan het eind het Verantwoordelijkheidscertificaat en toegang voor beide ouders." },
+            { q: "Betalen broers en zussen dubbel?", a: "Nee. Kinderen die één huisdier delen, betalen één prijs. Een tweede huisdier in het gezin is een aparte challenge." },
+            { q: "Hoe betaal ik?", a: "In de app, via de App Store of Google Play. Terugbetalingen lopen via je store-account." },
+            { q: "Wat zijn Wensen, en kan mijn kind zelf iets kopen?", a: "Je kind kan om een mand, bakken, een speeltje of snoepjes voor zijn of haar huisdier vragen – tot drie open verzoeken tegelijk. Jij krijgt een melding en koopt het, of kiest “Nu niet”. Je kind ziet nooit prijzen en kan in de kinderapp niets kopen." },
+            { q: "Maken gekochte spullen het spel makkelijker?", a: "Nee. Spullen zijn alleen voor de sier. Ze veranderen nooit de behoeften, de Care Score of het certificaat, en in Wensen zit geen dierenarts of medicijn – nooit “betaal om je huisdier te redden”." },
+            { q: "Is het voor volwassenen hetzelfde?", a: "Ja. Gebruik je PetPrep in je eentje om een ras uit te proberen, dan geldt hetzelfde: de kruising is voor altijd gratis en de challenge van 12 weken kost € 49,99 per huisdier." },
+          ],
+        },
+      ],
+    },
+    faq: {
+      meta: {
+        title: "Veelgestelde vragen – wat ouders vragen over PetPrep",
+        description:
+          "Antwoorden over PetPrep: tijd per dag, gebruik als volwassene, privacy en locatie, stappen, broers en zussen, als een kind faalt, talen, diersoorten, echte huisdieren.",
+      },
+      eyebrow: "Veelgestelde vragen",
+      title: "Vragen die ouders stellen.",
+      lead: "Korte, eerlijke antwoorden. Mis je iets? Schrijf ons.",
+      blocks: [
+        {
+          type: "faq",
+          items: [
+            { q: "Voor welke leeftijd is PetPrep?", a: "Voor kinderen is het bedoeld voor ongeveer 7 tot 12 jaar, en het werkt goed tot 16 jaar. Ook volwassenen gebruiken het, om te testen of een bepaald ras echt bij hen past voordat ze kopen of adopteren." },
+            { q: "Kan ik PetPrep in mijn eentje gebruiken, zonder kinderen?", a: "Ja. Maak een account aan als ouder en voeg jezelf toe als verzorgersprofiel – een bijnaam is genoeg, laat het geboortejaar leeg. Kies het ras, maak een 6-cijferige code aan en kies dan op dezelfde telefoon of een andere “Ik ben een kind” en typ de code in – zo word jij de verzorger. Omdat het een gezinshond wordt, kun je later je partner of kinderen toevoegen, zodat jullie er samen voor zorgen. De prijs is dezelfde als voor gezinnen." },
+            { q: "Hoeveel tijd kost het per dag?", a: "Een paar minuten voor eten, water en opruimen – plus de wandeling die een echte hond toch al nodig zou hebben." },
+            { q: "Volgt de app de locatie van mijn kind?", a: "Nee. Voor wandelingen telt de app alleen stappen. Als je dat toestaat, leest hij ze uit Apple Gezondheid (iPhone) of Health Connect (Android) – alleen lezen en alleen stappen; waar beschikbaar gebruikt hij ook de bewegingssensor van de telefoon. Hij vraagt om toestemming in het wandelscherm. Gps wordt niet gebruikt." },
+            { q: "Heeft mijn kind een e-mailadres nodig?", a: "Nee. Jij maakt het account aan; je kind logt in met een 6-cijferige code die jij aanmaakt. We bewaren alleen een bijnaam en eventueel een geboortejaar." },
+            { q: "Wat gebeurt er als mijn kind het vergeet?", a: "Het huisdier stuurt eerst vriendelijke herinneringen. Blijft een behoefte op nul staan, dan wordt het huisdier ziek en brengt het 12 uur door bij de dierenarts. Na een hele dag zonder zorg neemt het virtuele asiel het mee – en kun je opnieuw beginnen." },
+            { q: "Kunnen broers en zussen een huisdier delen?", a: "Ja. Elk kind ondertekent zijn of haar eigen contract, elke handeling telt voor wie hem deed en elk kind krijgt een eigen eerlijke Care Score." },
+            { q: "En school en bedtijd?", a: "Stel stille uren in. Het huisdier doet dan rustiger aan, er wordt niets gestuurd en maaltijden die helemaal in de stille uren vallen, regel jij." },
+            { q: "Is het eng voor kinderen?", a: "Nee. De gevolgen zijn echt, maar zacht: het huisdier gaat naar de dierenarts of het asiel, nooit iets naars om te zien, en er is altijd een nieuwe start." },
+            { q: "Welke dieren zijn er?", a: "Nu [honden](species:dog) en [katten](species:cat): een gratis kruisingshond en huiskat, en in de challenge van 12 weken elk ras uit de [dierenencyclopedie](page:animals), waarin ook hun onderbouwde behoeften staan. Meer diersoorten zijn gepland." },
+            { q: "Welke talen?", a: "De app is er nu in het Engels en het Sloveens. Er komen meer talen bij naarmate PetPrep in nieuwe landen van start gaat." },
+            { q: "Wat gebeurt er als we een echt huisdier nemen?", a: "PetPrep kan een AI-assistent worden voor je echte huisdier. Dat deel is in ontwikkeling." },
+          ],
+        },
+      ],
+    },
+    partners: {
+      meta: {
+        title: "Partners – samenwerken met PetPrep",
+        description:
+          "PetPrep werkt samen met dierenwinkels, asielen, dierenartsen, trainers, verzekeraars, halsbandmakers en scholen om gezinnen te helpen verantwoord een huisdier te nemen.",
+      },
+      eyebrow: "Partners",
+      title: "Beter voorbereide gezinnen voor iedereen die om dieren geeft.",
+      lead:
+        "Gezinnen die PetPrep afronden, weten wat een huisdier echt vraagt. We bouwen een partnernetwerk dat hen op het juiste moment bereikt – duidelijk gemarkeerd en altijd met toestemming van het gezin.",
+      planned: true,
+      blocks: [
+        {
+          type: "cards",
+          heading: "Met wie we samenwerken",
+          columns: 3,
+          items: [
+            { title: "Dierenwinkels", text: "Bereik gezinnen op het moment dat ze bewijzen dat ze er klaar voor zijn – bijvoorbeeld met een aanbod voor een startpakket bij het certificaat." },
+            { title: "Asielen, opvangorganisaties en fokkers", text: "Raad PetPrep aan vóór adoptie of aankoop, voor minder impulsieve beslissingen en minder dieren die worden teruggebracht." },
+            { title: "Dierenartsen", text: "Zodra het echte huisdier thuis is, beantwoordt de AI-assistent de eerste vragen en verwijst eigenaren naar jou door, met een samenvatting van de casus die alleen met toestemming wordt gedeeld." },
+            { title: "Trainers en hondenscholen", text: "Aanbevelingen en boekingen als een gezin overstapt op een echte hond." },
+            { title: "Dierenverzekeraars", text: "Aanbiedingen afgestemd op het ras als er een echt huisdier wordt geregistreerd – duidelijk gemarkeerd." },
+            { title: "Makers van halsbanden en IoT", text: "Koppeling van activiteitsgegevens voor slimmere meldingen met uitleg." },
+          ],
+        },
+        {
+          type: "list",
+          heading: "Waarom partners ons vertrouwen",
+          items: [
+            "Kinderen loggen in zonder e-mailadres en we houden hun gegevens tot een minimum beperkt, op servers in de EU.",
+            "Alleen gecontroleerde inhoud komt op het scherm van een kind; er zijn geen advertenties.",
+            "Elk aanbod van een partner is gemarkeerd en elke commissie wordt aan het gezin gemeld.",
+          ],
+        },
+        { type: "callout", title: "Laten we praten.", text: "De voorwaarden voor partnerschappen worden voorbereid. Vertel ons wie je bent en wat je in gedachten hebt.", tone: "dark" },
+        { type: "contact" },
+      ],
+    },
+    investors: {
+      meta: {
+        title: "Investeer in PetPrep – van klaar voor een huisdier tot levenslange zorg",
+        description:
+          "PetPrep maakt van de belofte van een kind bewijs voordat een gezin een huisdier neemt, en wordt daarna een AI-assistent voor zijn hele leven. Vóór de lancering; brief op aanvraag.",
+      },
+      eyebrow: "Investeerders",
+      title: "Van een challenge van 12 weken naar een relatie van 10–15 jaar.",
+      lead:
+        "PetPrep geeft ouders objectief bewijs of hun kind klaar is voor een echt huisdier – en blijft daarna bij het gezin, het hele leven van het dier.",
+      blocks: [
+        {
+          type: "cards",
+          heading: "De kans",
+          columns: 3,
+          items: [
+            { title: "Probleem", text: "Kinderen beloven voor een huisdier te zorgen; ouders hebben geen neutrale manier om dat te testen voordat ze geld en jaren van zorg vastleggen." },
+            { title: "Oplossing", text: "Een realistische simulatie van 12 weken met een live ouderdashboard en een objectieve Care Score, die eindigt met een Verantwoordelijkheidscertificaat." },
+            { title: "Uitbreiding", text: "Zodra het echte huisdier thuis is, een AI-assistent ervoor: halsbandgegevens, AI als eerste aanspreekpunt met dierenartsen erachter, groei en voeding, DNA-tests, diensten van partners." },
+          ],
+        },
+        {
+          type: "table",
+          heading: "Verdienmodel",
+          head: ["Inkomstenbron", "Model", "Status"],
+          rows: [
+            ["Kruisingshuisdier", "Voor altijd gratis (acquisitie)", "Besloten"],
+            ["PetPrep Challenge van 12 weken", "€ 49,99 per huisdier, eenmalige aankoop", "Besloten"],
+            ["Wensen – spullen voor het huisdier (alleen voor de sier)", "In-app-aankopen: € 5,99 per artikel, snoepjes € 2,99 voor 10, pakket € 15,99; ook in de gratis versie", "Gebouwd, aankoop in de store volgt binnenkort"],
+            ["Aanbiedingen van partners", "Commissies van winkels, verzekeraars, dierenartsen en trainers", "Gepland"],
+            ["AI-assistent voor het echte huisdier", "Abonnement", "Gepland"],
+            ["DNA-tests voor honden en katten", "Verkoop van tests en commissie van partners", "Gepland"],
+          ],
+        },
+        {
+          type: "list",
+          heading: "Wat er al gebouwd is",
+          items: [
+            "Spelengine aan de serverkant met realtime synchronisatie, getest met simulaties van hele dagen, dagen waarop de zomer- of wintertijd ingaat en randgevallen in gezinnen.",
+            "Gezinnen met meerdere ouders, meerdere kinderen en gedeelde huisdieren, met een eerlijke score per kind.",
+            "Unieke fotorealistische AI-huisdieren met gemeten en begrensde AI-kosten, media opgeslagen op onze eigen servers in de EU.",
+            "Behoeften van huisdieren gebaseerd op geciteerde bronnen van dierenartsen en kennelclubs, waarbij elk getal naar zijn bron te herleiden is.",
+            "Kinderveiligheid vanaf het ontwerp: inloggen met pincode zonder e-mailadres, minimale gegevens, geen advertenties, alleen gecontroleerde media.",
+          ],
+        },
+        {
+          type: "prose",
+          heading: "Fase",
+          paragraphs: [
+            "PetPrep zit in de fase vóór de lancering, met een gesloten bèta gepland. De eerste markt is Slovenië en de regio, daarna volgen de DACH-landen en het Verenigd Koninkrijk; het product is vanaf de eerste dag gebouwd voor wereldwijde lokalisatie.",
+            "Oprichter: David Tacer, softwareontwikkelaar en ondernemer (Data Vallis David Tacer s.p., Dravograd, Slovenië). Meer [over ons](page:about).",
+          ],
+        },
+        { type: "callout", title: "Vraag de investeerdersbrief aan.", text: "We delen de brief, het pitchdeck en de dataroom op aanvraag.", tone: "dark" },
+        { type: "contact" },
+      ],
+    },
+    contact: {
+      meta: {
+        title: "Contact met PetPrep – gezinnen, privacy, partners, investeerders",
+        description: "Neem contact op met PetPrep: vragen van gezinnen, privacyverzoeken, samenwerkingen en vragen van investeerders. We antwoorden in het Engels of het Sloveens.",
+      },
+      eyebrow: "Contact",
+      title: "We lezen elk bericht.",
+      lead: "Schrijf naar de juiste inbox en we antwoorden zo snel mogelijk, in het Engels of het Sloveens.",
+      blocks: [{ type: "contact" }, { type: "company", heading: "Bedrijfsgegevens" }],
+    },
+    privacy: {
+      navLabel: "Privacy",
+      meta: {
+        title: "Privacybeleid – PetPrep",
+        description: "Hoe PetPrep persoonsgegevens van ouders en kinderen verzamelt, gebruikt en beschermt, en hoe je je rechten onder de AVG uitoefent.",
+      },
+      eyebrow: "Juridisch",
+      title: "Privacybeleid",
+      lead: "Vertaling – alleen de Engelse versie is bindend. PetPrep is vooral voor kinderen gemaakt, dus we verzamelen zo weinig mogelijk en leggen precies uit wat we ermee doen.",
+      blocks: [
+        {
+          type: "legal",
+          sections: [
+            {
+              heading: "1. Wie is verantwoordelijk",
+              paragraphs: [
+                "De verwerkingsverantwoordelijke voor persoonsgegevens die via de PetPrep-app en deze website worden verwerkt, is {company}, {address}; {companyIds}. Contact voor privacyvragen: {privacyEmail}.",
+              ],
+            },
+            {
+              heading: "2. Wat we verzamelen",
+              items: [
+                "Ouderaccount: naam (hoe je gezin je noemt), e-mailadres, wachtwoord (alleen opgeslagen als veilige hash), de tijdzone van je apparaat en het moment waarop je de voorwaarden en dit beleid hebt geaccepteerd.",
+                "Verzorgersprofiel (een kind of een volwassene die voor het huisdier zorgt): een bijnaam van maximaal 30 tekens en eventueel een geboortejaar – leeg voor een volwassene. Geen e-mailadres, wachtwoord, achternaam of geboortedatum.",
+                "Apparaten: het telefoonmodel (bijvoorbeeld “iPhone”, nooit een naam die de gebruiker de telefoon heeft gegeven), en voor meldingen een pushtoken, platform en appversie.",
+                "Verzorgingsactiviteit: handelingen in de simulatie (eten geven, water, opruimen, wandelingen), dagelijkse stappentotalen (of totalen van rolstoelduwen in de aangepaste modus – zie de punten 3 en 4), scores en rapporten.",
+                "Het Verantwoordelijkheidscontract: de handtekening van het kind, gezet met een vinger, opgeslagen als vectorlijn met het moment van ondertekenen.",
+                "Codes: inlog- en uitnodigingscodes worden alleen als hash opgeslagen en verlopen.",
+                "Foutrapporten van de app: als de app vastloopt of crasht, kan hij een kort technisch rapport naar onze server in de EU sturen (fouttype en -tekst, plaats in de code, app- en besturingssysteemversie, schermnaam, rol ouder/kind). Het bevat geen naam, e-mailadres, gebruikers-ID of IP-adres, wordt met geen enkele derde partij gedeeld en wordt na 30 dagen verwijderd.",
+                "Lijst voor vroege toegang (deze website): je e-mailadres, de taal van de pagina en het moment waarop je je aanmeldde.",
+              ],
+            },
+            {
+              heading: "3. Gezondheids- en fitnessgegevens (stappen, Apple Gezondheid en Health Connect)",
+              paragraphs: [
+                "PetPrep heeft toegang tot en verzamelt één soort gezondheids- en fitnessgegevens: hoeveel stappen de verzorger per dag zet (lichamelijke activiteit). We gebruiken die voor één functie: de dagelijkse wandeling met het huisdier in de simulatie. Het kind wandelt, en zijn of haar stappen tellen als de wandeling van het huisdier.",
+                "Hoe we er toegang toe krijgen: de app op de telefoon van het kind telt stappen. Als je dat toestaat in het toestemmingsvenster van het systeem, leest hij ze uit Apple Gezondheid (iPhone) of Health Connect (Android) – alleen lezen en alleen stappen. Waar beschikbaar gebruikt hij ook de bewegingssensor van de telefoon (Android: toestemming “Fysieke activiteit”; iPhone: “Beweging en fitness”); zonder toestemming voor Apple Gezondheid of Health Connect telt alleen de bewegingssensor.",
+                "Wat we verzamelen: de app stuurt onze server alleen het stappentotaal van vandaag, de bron ervan (Apple Gezondheid, Health Connect of de bewegingssensor) en het moment van verzenden. We bewaren één dagtotaal per verzorgersprofiel – nooit afzonderlijke bewegingen, routes, locatie, hartslag, slaap, gewicht of andere gezondheidsgegevens. We schrijven nooit iets naar Apple Gezondheid of Health Connect.",
+                "Hoe we ze gebruiken en delen: stappentotalen worden alleen gebruikt om de wandeling in de simulatie te laten werken en om die aan de ouder te tonen (dashboard en rapporten). We gebruiken ze niet voor advertenties, profilering, gezondheidsbeoordelingen of het trainen van AI-modellen, we verkopen ze niet en we delen ze niet met derden; alleen onze hostingprovider (Hetzner, servers in de EU) slaat ze namens ons op. Ons gebruik van gegevens die we van Health Connect ontvangen, voldoet aan het toestemmingsbeleid van Health Connect, inclusief de vereisten voor beperkt gebruik (Limited Use).",
+                "Rechtsgrond en bewaartermijn: het uitlezen van stappen is optioneel en gebeurt alleen met de toestemming die je op het apparaat geeft; we verwerken het dagtotaal om de dienst te leveren die je hebt gekozen (uitvoering van een overeenkomst). Stappentotalen zitten in de gegevensexport van je gezin en worden samen met het verzorgersprofiel of je account verwijderd; uiterlijk binnen 35 dagen verdwijnen ze ook uit onze versleutelde back-ups.",
+                "Je kunt de toestemming op elk moment intrekken in de instellingen van je apparaat: iPhone → Instellingen → Gezondheid → Gegevenstoegang en apparaten → PetPrep; Android → Health Connect → App-rechten → PetPrep. De toestemming voor de bewegingssensor kun je intrekken in de instellingen van de telefoon voor de PetPrep-app. De wandeling telt dan geen nieuwe stappen meer.",
+              ],
+            },
+            {
+              heading: "4. Aangepaste modus (rolstoelduwen)",
+              paragraphs: [
+                "De aangepaste modus is voor kinderen die een rolstoel gebruiken: de wandeling telt dan rolstoelduwen in plaats van stappen. Hij komt in de app met de volgende app-update; hieronder beschrijven we welke gegevens we verwerken als een ouder hem aanzet.",
+                "Als een ouder de aangepaste modus voor een kind aanzet, bewaren we alleen het feit dat hij aanstaat. We vragen of bewaren geen reden, diagnose of gezondheidstoestand.",
+                "Zolang hij aanstaat, leest de app op de telefoon van het kind alleen rolstoelduwen in plaats van stappen – uit Apple Gezondheid (vastgelegd door een Apple Watch) of Health Connect, met een aparte toestemming die alleen lezen toestaat. De bewegingssensor wordt dan niet gebruikt. Alleen het aantal duwen van vandaag gaat naar onze server; we noteren bij die dag dat er duwen worden geteld.",
+                "Een ouder kan voor een kind in de aangepaste modus wandelminuten invoeren (alleen voor vandaag). We bewaren de datum, het aantal minuten en welke ouder de wandeling heeft ingevoerd.",
+                "Omdat het feit dat de aangepaste modus aanstaat, kan wijzen op een gezondheidstoestand van een kind, verwerken we dit alleen op basis van je uitdrukkelijke toestemming (art. 9, lid 2, onder a AVG), die je als ouder of wettelijk vertegenwoordiger namens het kind geeft (art. 8 AVG) door de schakelaar aan te zetten. Je kunt de modus op elk moment uitzetten; de app telt dan weer stappen.",
+                "Deze gegevens (de schakelaar, dagen waarop duwen werden geteld en ingevoerde wandelingen) zitten in de gegevensexport van je gezin en worden samen met het profiel van het kind of je account verwijderd; net als alle andere gegevens verdwijnen ze uiterlijk binnen 35 dagen uit onze versleutelde back-ups.",
+              ],
+            },
+            {
+              heading: "5. Wat we niet verzamelen",
+              items: [
+                "Geen locatie: PetPrep gebruikt geen gps.",
+                "Geen andere gezondheidsgegevens uit Apple Gezondheid of Health Connect dan het dagelijkse aantal stappen of rolstoelduwen.",
+                "Geen advertenties en geen advertentie- of tracking-SDK’s van derden in de app.",
+                "Geen chat tussen gebruikers.",
+                "Geen advertentiecookies op deze website. Analytische cookies worden alleen geplaatst als je dat toestaat (zie Cookies hieronder).",
+              ],
+            },
+            {
+              heading: "6. Waarom we gegevens verwerken (doelen en rechtsgronden)",
+              items: [
+                "Om de dienst te leveren waar je om hebt gevraagd: accounts, de simulatie, het dashboard, rapporten en meldingen (uitvoering van een overeenkomst).",
+                "Om aankopen via de App Store of Google Play te verwerken (uitvoering van een overeenkomst).",
+                "Voor de dagelijkse wandeling (dagelijkse stappentotalen – gezondheids- en fitnessgegevens, zie punt 3): uitvoering van een overeenkomst; uitlezen uit Apple Gezondheid, Health Connect of de bewegingssensor alleen met de toestemming die je op het apparaat geeft.",
+                "Voor de aangepaste modus (het feit dat hij aanstaat, rolstoelduwen en ingevoerde wandelingen): de uitdrukkelijke toestemming van de ouder, gegeven door de schakelaar aan te zetten (art. 9, lid 2, onder a en art. 8 AVG – zie punt 4).",
+                "Om de dienst veilig te houden, bijvoorbeeld door herhaalde inlogpogingen te beperken (gerechtvaardigd belang).",
+                "Om de dienst te laten werken en te beveiligen met foutrapporten van de app, die ons helpen vastlopers en crashes op te lossen (gerechtvaardigd belang).",
+                "Om aan wettelijke verplichtingen te voldoen, zoals de boekhouding van aankopen (wettelijke verplichting).",
+                "Om je te mailen over de lancering van PetPrep als je je hebt aangemeld voor vroege toegang (toestemming – je kunt je in elke e-mail afmelden).",
+                "Om te begrijpen hoe bezoekers deze website gebruiken, met Google Analytics, alleen als je analytische cookies toestaat (toestemming – je kunt dit op elk moment wijzigen onder Cookie-instellingen).",
+              ],
+            },
+            {
+              heading: "7. Kinderen",
+              paragraphs: [
+                "Alleen een ouder of wettelijk vertegenwoordiger kan een account aanmaken en een kind toevoegen. De ouder bepaalt wat het kind kan doen en kan het profiel van het kind op elk moment verwijderen. We vragen een kind nooit om contactgegevens, tonen nooit advertenties en maken nooit contact met vreemden mogelijk.",
+                "De accounthouder kan ook een verzorgersprofiel aanmaken voor zichzelf of voor een andere volwassene in het gezin – bijvoorbeeld om te testen of een ras bij hem of haar past voordat hij of zij koopt of adopteert. Voor zo’n profiel gelden dezelfde regels en dezelfde minimale gegevens; elke bescherming die voor kinderen is ontworpen, geldt er ook voor.",
+              ],
+            },
+            {
+              heading: "8. Door AI gegenereerde afbeeldingen en video’s",
+              paragraphs: [
+                "De foto en korte video’s van elk huisdier worden door een AI-dienst gemaakt, alleen op basis van een beschrijving van het huisdier (ras, vacht, aftekening en dergelijke). De beschrijving bevat nooit namen of andere informatie over je gezin. De afgewerkte media worden op onze eigen servers in de EU opgeslagen en via kortlevende links getoond.",
+              ],
+            },
+            {
+              heading: "9. Dienstverleners",
+              items: [
+                "Hosting: Hetzner Online (servers in de EU).",
+                "Genereren van AI-afbeeldingen en -video’s: fal.ai (ontvangt alleen de beschrijving van het huisdier).",
+                "Pushmeldingen: Apple Push Notification service en Firebase Cloud Messaging via Expo; meldingen bevatten geen namen.",
+                "Aankopen: Apple App Store en Google Play; beheer van aankopen via RevenueCat zodra aankopen live gaan.",
+                "E-mails over vroege toegang: Klaviyo (ontvangt alleen het e-mailadres en de taal die je op deze website invult).",
+                "Cookietoestemming op de website: CookieYes (slaat je toestemmingskeuze op).",
+                "Websiteanalyse: Google Analytics 4 van Google Ireland Ltd., alleen met je toestemming; IP-adressen worden door Google Analytics 4 niet opgeslagen.",
+              ],
+            },
+            {
+              heading: "10. Hoe lang we gegevens bewaren",
+              paragraphs: [
+                "We bewaren je gegevens zolang je account bestaat. Als je het profiel van een kind of je account in de app verwijdert, worden de gegevens meteen verwijderd en kunnen ze niet worden hersteld; uiterlijk binnen 35 dagen verdwijnen ze automatisch uit onze versleutelde back-ups. Gegevens die we wettelijk moeten bewaren (bijvoorbeeld voor aankopen), bewaren we zo lang als de wet voorschrijft. Foutrapporten van de app worden na 30 dagen automatisch verwijderd.",
+              ],
+            },
+            {
+              heading: "11. Je rechten",
+              paragraphs: [
+                "Je hebt het recht op inzage, rectificatie, export en verwijdering van je gegevens, het recht om bezwaar te maken tegen en beperking te vragen van de verwerking, en het recht om een klacht in te dienen bij een toezichthoudende autoriteit – in Slovenië de Informatiecommissaris (Informacijski pooblaščenec). In de app kun je alle gegevens van je gezin als bestand exporteren (Beheer → Account → Mijn gegevens exporteren) en het profiel van een kind of je hele account verwijderen. Voor al het andere schrijf je naar {privacyEmail}.",
+              ],
+            },
+            {
+              heading: "12. Beveiliging",
+              paragraphs: [
+                "Wachtwoorden en codes worden als hash opgeslagen, verbindingen zijn versleuteld, live-updates worden alleen aan leden van je gezin geleverd en AI-media worden gecontroleerd voordat ze op het scherm van een kind komen.",
+              ],
+            },
+            {
+              heading: "13. Wijzigingen",
+              paragraphs: ["Over belangrijke wijzigingen informeren we je in de app voordat ze ingaan. De datum bovenaan geeft de nieuwste versie aan."],
+            },
+          ],
+        },
+        {
+          type: "cookies",
+          heading: "14. Cookies",
+          paragraphs: [
+            "Noodzakelijke cookies zorgen ervoor dat de website werkt en onthouden je toestemmingskeuze. Analytische cookies (Google Analytics) worden alleen geplaatst als je ze in de banner toestaat, en je kunt je keuze op elk moment wijzigen.",
+            "De tabel hieronder wordt automatisch gemaakt op basis van de laatste scan van deze website, dus er staan altijd de cookies in die we echt gebruiken.",
+          ],
+          settings: "Cookie-instellingen wijzigen",
+          fallback: "De lijst met cookies wordt geladen met de toestemmingsbanner. Zie je hem niet, sta dan scripts toe op deze pagina of schrijf naar {privacyEmail}.",
+        },
+      ],
+    },
+    terms: {
+      navLabel: "Gebruiksvoorwaarden",
+      meta: {
+        title: "Gebruiksvoorwaarden – PetPrep",
+        description:
+          "De voorwaarden voor het gebruik van de PetPrep-app en -website: accounts en kinderprofielen, de challenge van 12 weken en het certificaat, aankopen en terugbetalingen, AI-inhoud, aangepaste modus, eerlijk gebruik, verwijdering en toepasselijk recht.",
+      },
+      eyebrow: "Juridisch",
+      title: "Gebruiksvoorwaarden",
+      lead: "Vertaling – alleen de Engelse versie is bindend. De regels voor het gebruik van PetPrep, geschreven om gelezen te worden.",
+      blocks: [
+        {
+          type: "legal",
+          sections: [
+            {
+              heading: "1. De dienst",
+              paragraphs: [
+                "PetPrep wordt aangeboden door {company}, {address}; {companyIds} – hetzelfde bedrijf dat volgens het privacybeleid de verwerkingsverantwoordelijke is. Deze voorwaarden gelden voor de PetPrep-app en de website petprep.si.",
+                "PetPrep is een simulatie van de verzorging van een huisdier. Het helpt gezinnen en individuen ontdekken of ze klaar zijn om voor een echt huisdier te zorgen – kinderen, en volwassenen die willen testen of een ras bij hen past voordat ze kopen of adopteren. Het is een educatief hulpmiddel, geen veterinair of ander professioneel advies.",
+              ],
+            },
+            {
+              heading: "2. Accounts, profielen en kinderen",
+              items: [
+                "Accounts worden aangemaakt door volwassenen: ouders, wettelijk vertegenwoordigers of volwassenen die PetPrep voor zichzelf gebruiken. Als je je registreert, ga je akkoord met deze voorwaarden en het privacybeleid.",
+                "Verzorgers (kinderen of volwassenen) zorgen voor het huisdier via een verzorgersprofiel dat de accounthouder aanmaakt; die kan er ook een voor zichzelf aanmaken. Een profiel heeft alleen een bijnaam nodig en eventueel een geboortejaar – meer hebben we over een kind niet nodig, dus vul dat nergens in de app in.",
+                "Een kind logt in met een 6-cijferige code (pincode) die jij in je app aanmaakt. De code is kort geldig en werkt maar één keer; geef hem alleen aan het kind voor wie hij bedoeld is.",
+                "Als ouder of wettelijk vertegenwoordiger ben je verantwoordelijk voor hoe je kind PetPrep gebruikt: of het bij je kind past, hoeveel tijd je kind eraan besteedt en of je kind veilig is tijdens wandelingen (bijvoorbeeld in het verkeer). Je kunt het spel voor elk huisdier op elk moment stoppen.",
+                "Je kunt een andere ouder met een uitnodigingscode in het gezin uitnodigen; jullie zien allebei alle gegevens van het gezin en kunnen allebei het spel stoppen.",
+                "Geef juiste informatie en houd je wachtwoord, codes en apparaten veilig.",
+              ],
+            },
+            {
+              heading: "3. De challenge van 12 weken, de Care Score en het certificaat",
+              items: [
+                "De challenge duurt 12 weken (84 programmadagen) en begint bij de aankoop; elke verzorger heeft een eigen einddatum. Tijd waarin het spel op betaling wacht, telt niet mee voor de 12 weken.",
+                "De Care Score (0–100) laat zien welk deel van de verwachte routines (eten geven, water, opruimen, de wandeling, een trainingssessie) de verzorger zelf heeft gedaan; elke ziekte van het huisdier verlaagt hem. Tijd waarin het spel is gestopt of het huisdier bij de dierenarts is, en stille uren tellen nooit mee tegen de verzorger.",
+                "Na 12 weken wordt een eindscore vastgelegd die later niet meer verandert; zorg na de challenge heeft er geen invloed op. Met een score van 70 of hoger kun je in de app een Verantwoordelijkheidscertificaat (pdf) maken; onder de 70 krijg je een rapport van de challenge.",
+                "Als eten, water of netheid 24 uur op 0% blijft, wordt het huisdier “naar het asiel gebracht” (game over). Het spel met dat huisdier eindigt, er is geen certificaat en je krijgt een rapport van de challenge.",
+                "De Care Score en het certificaat laten alleen zien hoe de verzorger in de app voor een gesimuleerd huisdier heeft gezorgd. Ze zijn geen garantie dat een kind, of iemand anders, klaar is voor een echt huisdier, geen professionele beoordeling en geen vervanging van je eigen oordeel of het advies van een dierenarts, fokker of asiel. De beslissing over een echt huisdier ligt altijd bij jou.",
+                "De spelregels (maaltijden, wandelingen en verzorging per ras en leeftijd) zijn vereenvoudigd en gebaseerd op openbare bronnen. Ze zijn geen veterinair advies; vraag een dierenarts naar de gezondheid en verzorging van een echt dier.",
+              ],
+            },
+            {
+              heading: "4. Gratis en betaalde functies, aankopen en terugbetalingen",
+              items: [
+                "De kruisingshond en de huiskat zijn voor altijd gratis en zijn de manier om PetPrep uit te proberen; er is geen gratis proefperiode van de challenge. Een gratis huisdier heeft geen programma van 12 weken en geen certificaat, de ouder ziet de geschiedenis van de laatste 7 dagen en het huisdier heeft een basisset afbeeldingen en video’s.",
+                "De PetPrep Challenge van 12 weken met een betaald ras is een eenmalige aankoop (€ 49,99 in Slovenië; de store toont de prijs voor jouw land). Eén aankoop is één challenge voor één huisdier; elke nieuwe challenge met een nieuw huisdier is een nieuwe aankoop. Broers en zussen die voor hetzelfde huisdier zorgen, betalen één keer.",
+                "Een ouder koopt in zijn of haar eigen app via de App Store of Google Play; in de app van het kind zijn geen aankopen mogelijk. De store verwerkt de betaling volgens zijn eigen voorwaarden.",
+                "Je kunt een challenge-huisdier aanmaken voordat je koopt. Zolang de challenge niet is betaald, is het spel gepauzeerd: het huisdier wacht veilig, zijn behoeften dalen niet en er wordt niets slechter. Zodra je koopt, gaat het spel verder waar het was gestopt.",
+                "Terugbetalingen worden door de App Store en Google Play afgehandeld volgens hun eigen regels; vraag een terugbetaling aan bij de store waar je hebt gekocht. Als de store een aankoop terugbetaalt voordat de challenge klaar is, wordt het spel van dat huisdier weer gepauzeerd. Afbeeldingen en video’s die na de aankoop zijn gemaakt, blijven bestaan.",
+                "Na een game over (asiel) maakt een aankoop het huisdier niet meer vrij; een nieuwe challenge is een nieuw huisdier en een nieuwe aankoop.",
+                "Wensen (spullen voor het huisdier, zodra beschikbaar): een kind kan erom vragen, maar alleen een ouder kan ze kopen, in zijn of haar eigen app. Een gekocht artikel hoort bij het huisdier waarvoor het is gekocht en is alleen voor de sier – het heeft geen invloed op het spel, de score of het certificaat. Na een game over of als het huisdier wordt verwijderd, blijft de aankoop verbruikt en wordt die niet terugbetaald. Als de store de aankoop terugbetaalt, wordt het artikel verwijderd (bij snoepjes de ongebruikte snoepjes).",
+                "Als je een huisdier, een kind of het account verwijdert terwijl een gekochte challenge nog loopt, blijft de aankoop verbruikt: hij gaat niet over naar een ander huisdier en verwijderen is geen terugbetaling. De app waarschuwt je eerst en vraagt je om te bevestigen.",
+              ],
+            },
+            {
+              heading: "5. Door AI gegenereerde afbeeldingen en video’s",
+              items: [
+                "Afbeeldingen en video’s van huisdieren worden door kunstmatige intelligentie (AI) gegenereerd, alleen op basis van een beschrijving van het huisdier (ras, kleur, vacht enzovoort), nooit op basis van gegevens over je gezin. Het zijn illustraties van een gesimuleerd huisdier en ze komen mogelijk niet precies overeen met een echt dier of een rasstandaard.",
+                "Waar we ze openbaar tonen, zoals de rasportretten op deze website, zijn ze gemarkeerd als door AI gegenereerd.",
+                "Een uiterlijk is niet per se uniek: huisdieren van hetzelfde betaalde ras en dezelfde kleur kunnen dezelfde afbeeldingen en video’s delen, en gratis huisdieren krijgen een van de gedeelde uiterlijken van hun ras. Een betaalde challenge bevat een grotere set video’s dan een gratis huisdier.",
+                "Nadat het contract is ondertekend of een aankoop is gedaan, kan het maken van de afbeeldingen en video’s een paar minuten duren; intussen laat de app zien dat het huisdier zich klaarmaakt en markeert hij wat nog wordt voorbereid.",
+                "Rasinformatie in de app en in de dierenencyclopedie op deze website is samengevat uit de openbare bronnen die we vermelden en is niet door een dierenarts gecontroleerd.",
+              ],
+            },
+            {
+              heading: "6. Stappen, gezondheidsgegevens en aangepaste modus",
+              items: [
+                "De dagelijkse wandeling telt de echte stappen van de verzorger. Als je dat toestaat, leest de app ze uit Apple Gezondheid of Health Connect, alleen lezen (hij schrijft daar nooit iets naartoe), of uit de bewegingssensor van de telefoon. Welke gegevens we verwerken, staat in het privacybeleid (punt 3).",
+                "De aangepaste modus is voor kinderen die een rolstoel gebruiken: de wandeling telt dan rolstoelduwen in plaats van stappen. Je kunt hem gebruiken als de functie beschikbaar is in jouw versie van de app. Een ouder zet hem aan voor een individueel kind; aanzetten is je toestemming en uitzetten trekt die in (privacybeleid, punt 4).",
+                "In de aangepaste modus kan een ouder wandelminuten voor het kind invoeren, alleen voor vandaag. Jij bent verantwoordelijk voor deze invoer: voer alleen wandelingen in die echt hebben plaatsgevonden, want ze tellen mee voor de Care Score en het certificaat.",
+                "PetPrep gebruikt geen locatie en waarschuwt niet voor gevaren tijdens een wandeling; voor de veiligheid tijdens wandelingen zorg jij.",
+              ],
+            },
+            {
+              heading: "7. Meldingen",
+              paragraphs: [
+                "Als je dat op het apparaat toestaat, stuurt de app pushmeldingen: herinneringen aan de verzorger, waarschuwingen aan ouders als een huisdier geen eten of water heeft of niet schoon is, en berichten over ziekte, game over en het einde van de challenge. Meldingen bevatten nooit de naam van het kind of het huisdier en worden niet tijdens stille uren verstuurd. Je kunt de toestemming op elk moment intrekken in de instellingen van het apparaat; zonder meldingen kan een verzorger routines missen, wat invloed heeft op het spel en de score.",
+              ],
+            },
+            {
+              heading: "8. Eerlijk gebruik",
+              items: [
+                "Probeer niet vals te spelen met het aantal stappen of duwen, voer geen wandelingen in die niet hebben plaatsgevonden, probeer geen toegang te krijgen tot gegevens van andere gezinnen, en ga de dienst niet reverse-engineeren of verstoren.",
+                "Geef huisdieren geen beledigende of ongepaste namen en vul geen persoonsgegevens over een kind in waar de app niet om vraagt.",
+                "We kunnen accounts beperken of opschorten die deze regels overtreden of kinderen in gevaar brengen, en we kunnen een ongepaste naam van een huisdier verwijderen.",
+              ],
+            },
+            {
+              heading: "9. Intellectueel eigendom",
+              paragraphs: [
+                "PetPrep, het logo, het ontwerp, de software en de inhoud zijn eigendom van {company}. Je mag de app en de afbeeldingen, video’s en het certificaat van je huisdier gebruiken voor persoonlijk, niet-commercieel gebruik binnen je gezin – bijvoorbeeld om ze met familie te delen.",
+              ],
+            },
+            {
+              heading: "10. Aansprakelijkheid",
+              paragraphs: [
+                "We doen ons best om PetPrep beschikbaar en juist te houden, maar de dienst wordt geleverd zoals hij is; hij is ook afhankelijk van diensten van anderen (de appstores, Apple Gezondheid, Health Connect, pushmeldingen, de AI-dienst) waar wij geen controle over hebben. Voor zover de wet dat toestaat, zijn we niet aansprakelijk voor indirecte schade of voor beslissingen over het kopen of adopteren van een echt huisdier. Niets in deze voorwaarden beperkt de rechten die je als consument hebt op grond van dwingend recht.",
+              ],
+            },
+            {
+              heading: "11. Je account verwijderen en stoppen met gebruik",
+              paragraphs: [
+                "Je kunt het profiel van een kind of je account op elk moment in de app verwijderen. Verwijderen gebeurt meteen en is definitief; als de laatste ouder van een gezin zijn of haar account verwijdert, wordt het hele gezin verwijderd. Je kunt je gegevens eerst exporteren (Beheer → Account → Mijn gegevens exporteren). Wat er met de gegevens gebeurt, staat in het privacybeleid; wat er met een aankoop gebeurt, staat in punt 4.",
+              ],
+            },
+            {
+              heading: "12. Wijzigingen in deze voorwaarden",
+              paragraphs: [
+                "We werken deze voorwaarden bij als de app of de wet verandert. Over belangrijke wijzigingen informeren we je in de app voordat ze ingaan. De datum bovenaan geeft de nieuwste versie aan. Ben je het niet eens met een wijziging, dan kun je je account op elk moment verwijderen.",
+              ],
+            },
+            {
+              heading: "13. Recht en geschillen",
+              paragraphs: [
+                "Op deze voorwaarden is het recht van de Republiek Slovenië van toepassing. Consumenten kunnen zich ook beroepen op de dwingende bescherming van het land waar ze wonen en gebruikmaken van het EU-platform voor onlinegeschillenbeslechting.",
+              ],
+            },
+            {
+              heading: "14. Contact",
+              paragraphs: [
+                "Vragen over deze voorwaarden: {termsEmail}. Dienstverlener: {company}, {address}; {companyIds}. Privacyvragen: {privacyEmail}.",
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    childSafety: {
+      navLabel: "Kinderveiligheid",
+      meta: {
+        title: "Kinderveiligheid – hoe PetPrep kinderen beschermt",
+        description:
+          "Hoe PetPrep kinderen beschermt: accounts aangemaakt door ouders, inloggen met een code zonder e-mailadres, minimale gegevens, geen advertenties of chat, geen locatievolging, gecontroleerde media.",
+      },
+      eyebrow: "Vertrouwen",
+      title: "Vanaf de eerste regel code gebouwd voor kinderen.",
+      lead: "Vertaling – alleen de Engelse versie is bindend. Een kind is de belangrijkste gebruiker van PetPrep, dus veiligheid en privacy zijn regels van het product, geen instellingen.",
+      blocks: [
+        {
+          type: "cards",
+          heading: "Onze normen",
+          columns: 2,
+          items: [
+            { title: "Ouders maken elk account aan", text: "Kinderen kunnen zich niet zelf aanmelden. Een ouder voegt het kind toe en maakt een eenmalige inlogcode aan die 15 minuten geldig is." },
+            { title: "Geen e-mailadres of wachtwoord voor kinderen", text: "Een kind logt in met de code van de ouder. Verkeerde, verlopen en gebruikte codes krijgen allemaal hetzelfde antwoord, zodat niemand kan raden welke kinderen er bestaan." },
+            { title: "Minimale gegevens", text: "Een bijnaam en eventueel een geboortejaar. Geen achternaam, geen geboortedatum, geen foto’s van het kind." },
+            { title: "Geen advertenties, geen chat, geen vreemden", text: "Er zijn geen advertenties en er is geen manier om contact op te nemen met andere gebruikers." },
+            { title: "Geen locatievolging", text: "Wandelingen tellen alleen stappen – uit Apple Gezondheid of Health Connect (met je toestemming, alleen lezen) of uit de bewegingssensor van de telefoon. Gps wordt niet gebruikt." },
+            { title: "Privé live-updates", text: "Realtime updates bereiken alleen de kinderen die voor dat huisdier zorgen en de ouders van hetzelfde gezin." },
+            { title: "Gecontroleerde media", text: "Alleen afbeeldingen en video’s die voor PetPrep zijn gemaakt en door onze server zijn gecontroleerd, worden getoond, vanuit onze eigen opslag in de EU." },
+            { title: "Meldingen zonder namen", text: "Meldingen bevatten nooit de naam van het kind of het huisdier, omdat ze op een vergrendelscherm kunnen verschijnen." },
+          ],
+        },
+        {
+          type: "list",
+          heading: "Ouders houden de regie",
+          items: [
+            "Stille uren voor school en slaap, zonder meldingen.",
+            "Een pauzeknop die het scherm van het kind meteen op slot zet.",
+            "Een kind in één keer uitloggen op alle apparaten.",
+            "Alle gegevens meteen exporteren of verwijderen in de app.",
+          ],
+        },
+        { type: "callout", title: "Meld een zorg", text: "Maak je je ergens zorgen over in PetPrep? Schrijf ons en we reageren met voorrang.", tone: "dark" },
+        { type: "contact" },
+      ],
+    },
+    accessibility: {
+      navLabel: "Toegankelijkheid",
+      meta: {
+        title: "Toegankelijkheid – PetPrep voor elk kind",
+        description:
+          "Hoe PetPrep zich aanpast aan kinderen voor wie vegen lastig is, die VoiceOver of TalkBack gebruiken of liever minder beweging zien – met dezelfde regels en punten voor iedereen.",
+      },
+      eyebrow: "Vertrouwen",
+      title: "Elk kind kan voor zijn of haar huisdier zorgen.",
+      lead: "Sommige kinderen vinden vegen lastig, gebruiken een schermlezer of zien liever minder beweging op het scherm. PetPrep past zich aan hen aan – met dezelfde regels, dezelfde punten en hetzelfde certificaat als iedereen.",
+      blocks: [
+        {
+          type: "cards",
+          heading: "In de app",
+          columns: 3,
+          items: [
+            { title: "Makkelijkere gebaren", text: "In plaats van te vegen houdt het kind een vinger op het scherm of drukt het op een knop – in elk veegspel: borstelen, de hengel met veren, de kattenbak verschonen en de bal gooien. Een ouder zet het voor elk kind aan in het ouderdeel." },
+            { title: "Schermlezers", text: "Als VoiceOver of TalkBack aanstaat, schakelen de spellen vanzelf over op vasthouden. De kop met het huisdier leest alles over het huisdier voor, en elke stap in de verzorgingsspellen is een eigen knop." },
+            { title: "Minder beweging", text: "Als de telefoon is ingesteld op minder beweging, staan pulserende knoppen en de wiebelende Curio stil." },
+          ],
+        },
+        {
+          type: "cards",
+          heading: "Komt met de volgende app-update",
+          items: [
+            { title: "Wandelen met een rolstoel", text: "In de aangepaste modus tellen rolstoelduwen precies zoals stappen – één duw is één stap. Een ouder kan ook de wandelminuten van vandaag invoeren, zodat het kind niets extra’s hoeft te doen. Een ouder zet het voor elk kind aan, en uitzetten haalt de markering uit de geschiedenis." },
+          ],
+        },
+        { type: "callout", title: "Dezelfde challenge voor iedereen", text: "Aanpassingen veranderen hoe een kind speelt, nooit wat er telt. Scores, tijden en het Verantwoordelijkheidscertificaat werken precies hetzelfde. We vragen nooit waarom een kind een aanpassing nodig heeft.", tone: "mint" },
+        { type: "callout", title: "Werkt iets niet voor je kind?", text: "Vertel ons wat in de weg zat en we kijken ernaar.", tone: "dark" },
+        { type: "contact" },
+      ],
+    },
+    deleteAccount: {
+      navLabel: "Account verwijderen",
+      meta: {
+        title: "Je PetPrep-account en -gegevens verwijderen",
+        description:
+          "Hoe je je PetPrep-account (Data Vallis) verwijdert in de app of per e-mail, welke gegevens worden verwijderd, wat bewaard blijft en hoe lang.",
+      },
+      eyebrow: "Vertrouwen",
+      title: "Je PetPrep-account verwijderen",
+      lead: "Vertaling – alleen de Engelse versie is bindend. PetPrep wordt gemaakt door Data Vallis. Je kunt je account en de gegevens van je gezin op elk moment verwijderen – meteen in de app, of per e-mail als je de app niet meer hebt.",
+      blocks: [
+        {
+          type: "steps",
+          heading: "Je account verwijderen in de app (meteen)",
+          items: [
+            { title: "Log in als ouder", text: "Open PetPrep, tik op “Ik ben een ouder” en log in." },
+            { title: "Open je account", text: "Ga naar Beheer → Account. Optioneel: tik eerst op “Mijn gegevens exporteren” om een kopie te bewaren." },
+            { title: "Verwijderen", text: "Tik op “Account verwijderen”, bevestig met je wachtwoord (of je Google- of Apple-login), typ DELETE en tik dan op “Definitief verwijderen”." },
+            { title: "Klaar", text: "Verwijderen gebeurt meteen en kan niet ongedaan worden gemaakt. Al je apparaten en de apparaten van je kinderen worden uitgelogd." },
+          ],
+        },
+        {
+          type: "prose",
+          heading: "Heb je de app niet meer? Vraag verwijdering aan per e-mail",
+          paragraphs: [
+            "Schrijf naar [privacy@petprep.si](mailto:privacy@petprep.si) vanaf het e-mailadres van je PetPrep-ouderaccount, met als onderwerp “Verwijder mijn account”. We controleren of het verzoek van de accounteigenaar komt en verwijderen het account uiterlijk binnen een maand (meestal binnen een paar dagen), en bevestigen dat daarna per e-mail.",
+            "Wil je alleen het profiel van één kind verwijderen? Log in als ouder en open het kind via Beheer → Kinderen → Profiel verwijderen.",
+          ],
+        },
+        {
+          type: "table",
+          heading: "Wat wordt verwijderd en wat blijft bewaard",
+          head: ["Gegevens", "Wat er gebeurt"],
+          rows: [
+            ["Je ouderaccount (naam, e-mailadres, wachtwoord, koppeling met inloggen via Google / Apple)", "Meteen verwijderd"],
+            ["Als je de enige ouder in het gezin bent: profielen van kinderen (bijnaam, geboortejaar), huisdieren, AI-afbeeldingen en -video’s, contracten en handtekeningen, verzorgingslogboek, Care Scores, certificaten, stappentellingen, stille uren, inlogcodes", "Meteen verwijderd"],
+            ["Als er nog een andere ouder in het gezin is", "Alleen je eigen account wordt verwijderd; het gezin blijft bestaan bij de andere ouder"],
+            ["Apparaten en meldingstokens", "Meteen uitgelogd en verwijderd"],
+            ["Aankoopgegevens (product, datum, transactie-ID van de store, een anonieme aankoop-ID – geen naam of e-mailadres)", "Bewaard zolang de boekhoud- en belastingwetgeving dat vereist, niet meer gekoppeld aan je gezin"],
+            ["Gegevens over AI-kosten", "Bewaard voor de boekhouding, zonder enige koppeling met jou, je kinderen of je huisdieren"],
+            ["Versleutelde back-ups", "Automatisch verwijderd binnen 35 dagen"],
+          ],
+          note: "De aankopen zelf worden afgehandeld door de App Store en Google Play; hun gegevens worden door Apple en Google bewaard volgens hun eigen beleid. Een challenge die is gekocht maar niet afgerond, wordt niet terugbetaald als je het account verwijdert.",
+        },
+        { type: "callout", title: "Vragen?", text: "Schrijf naar privacy@petprep.si. Alle details staan in ons privacybeleid.", tone: "dark" },
+      ],
+    },
+    animals: {
+      meta: {
+        title: "Dierenencyclopedie van PetPrep – diersoorten en rassen, met bronnen",
+        description:
+          "Honden, katten en hun rassen: wat elk dier nodig heeft, bij wie het past en hoe PetPrep het simuleert. Zoek en vergelijk rassen; elk feit linkt naar zijn bron.",
+      },
+      navLabel: "Dieren",
+      eyebrow: "Dierenencyclopedie",
+      title: "Leer het dier kennen voordat het thuiskomt.",
+      lead:
+        "Wat elke diersoort en elk ras in PetPrep echt nodig heeft – van kennelclubs, kattenstamboekorganisaties, dierenwelzijnsorganisaties en onderzoeken, met een link naar elke bron. Plus de regels die PetPrep gebruikt om het te simuleren.",
+      blocks: [{ type: "animalsHub" }],
+    },
+    about: {
+      meta: {
+        title: "Over PetPrep – bedrijf, oprichter en hoe we informatie over huisdieren onderbouwen",
+        description:
+          "Wie PetPrep maakt: Data Vallis David Tacer s.p. uit Dravograd, Slovenië, oprichter David Tacer, onze missie en hoe de dierenencyclopedie haar informatie onderbouwt en controleert.",
+      },
+      navLabel: "Over ons",
+      eyebrow: "Over ons",
+      title: "Wie PetPrep maakt.",
+      lead: "PetPrep wordt gemaakt in Maribor, Slovenië, door een klein softwarebedrijf. Op deze pagina lees je wie we zijn, waarom we PetPrep bouwen en hoe we bepalen wat de app en de dierenencyclopedie over dieren zeggen.",
+      blocks: [
+        {
+          type: "prose",
+          id: "company",
+          heading: "Het bedrijf",
+          paragraphs: [
+            "PetPrep is een product van Data Vallis David Tacer s.p., een softwareontwikkelingsbedrijf (eenmanszaak) met statutaire zetel in Dravograd, Slovenië. Hetzelfde bedrijf beheert deze website en de PetPrep-app en is de verwerkingsverantwoordelijke voor persoonsgegevens (zie het [privacybeleid](page:privacy)).",
+          ],
+        },
+        { type: "company" },
+        {
+          type: "prose",
+          id: "founder",
+          heading: "De oprichter",
+          paragraphs: [
+            "PetPrep is opgericht door David Tacer, softwareontwikkelaar en ondernemer uit Maribor, Slovenië.",
+          ],
+        },
+        {
+          type: "prose",
+          id: "mission",
+          heading: "Onze missie",
+          paragraphs: [
+            "Elk gezin hoort het: “Ik beloof dat ik ervoor zorg.” PetPrep maakt van die belofte bewijs: 12 weken lang zorgt een kind – of een volwassene die een bepaald ras wil – voor een levensecht AI-huisdier met de dagelijkse behoeften van een echt dier, en de ouder ziet elke dag of de zorg standhoudt.",
+            "Falen in de simulatie is ook een goede uitkomst: het gezin ontdekt het voordat een echt dier eronder lijdt, en voordat het zich vastlegt op jaren van zorg en kosten. Als er wel een echt huisdier in huis komt, willen we dat PetPrep nuttig blijft voor het hele leven van het dier.",
+          ],
+        },
+        {
+          type: "list",
+          id: "methodology",
+          heading: "Hoe de dierenencyclopedie tot stand komt",
+          intro: "De [dierenencyclopedie](page:animals) en de app gebruiken dezelfde gegevens. Deze regels bepalen wat erin mag staan:",
+          items: [
+            "Bij elk feit staat de bron, met een link. Bronnen worden ingedeeld naar hoeveel gewicht ze verdienen: A – rasstandaarden, peer-reviewed artikelen en richtlijnen van dierenartsenverenigingen; B – adviespagina’s van dierenklinieken, universiteiten en nationale dierenwelzijnsorganisaties; C – secundaire samenvattingen (encyclopedieën, persartikelen), alleen gebruikt samen met een A- of B-bron.",
+            "Alleen onderbouwde feiten worden als feit getoond. Een waarde die door geen enkele bron wordt ondersteund, publiceren we niet. Waar bronnen het oneens zijn, wordt elke bron met zijn eigen waarde getoond.",
+            "Spelregels zijn geen veterinair advies. Waar het spel een getal nodig heeft dat bronnen niet precies geven (bijvoorbeeld een dagelijks stappendoel), bepaalt PetPrep het op basis van de bronnen en toont het alleen onder “Hoe PetPrep het simuleert”, gemarkeerd als spelregel.",
+            "Gezondheidsinformatie is alleen ter informatie. Die vat samen wat de bronnen over een ras zeggen en is niet door een dierenarts gecontroleerd. Vraag voor een echt dier een dierenarts.",
+            "Rasstandaarden worden in onze eigen woorden samengevat, nooit uitgebreid overgenomen, en een ras wordt nooit “hypoallergeen” genoemd.",
+            "De encyclopedie wordt gemaakt uit de onderzoeksgegevens van PetPrep, dezelfde gegevens die de app gebruikt. Als een bron of een waarde verandert, wordt de encyclopedie opnieuw geëxporteerd en toont elke raspagina de datum van de laatste update. Zie je een fout? Schrijf naar hello@petprep.si.",
+          ],
+        },
+        { type: "callout", title: "Vragen over PetPrep?", text: "Schrijf naar de juiste inbox op de contactpagina – gezinnen, privacy, partners of investeerders.", tone: "mint" },
+        { type: "contact" },
+      ],
+    },
+    curio: {
+      meta: {
+        title: "Maak kennis met Curio – de mascotte van PetPrep",
+        description:
+          "Curio is de mascotte van PetPrep: het nieuwsgierige blokje uit ons logo en de ster van onze korte video’s. Wie het is, hoe het verschilt van het levensechte huisdier in de app, afbeeldingen en een mediakit.",
+      },
+      navLabel: "Maak kennis met Curio",
+      eyebrow: "Onze mascotte",
+      title: "Maak kennis met Curio.",
+      lead: "Curio is het nieuwsgierige blokje uit het logo van PetPrep, tot leven gebracht. Het speelt in onze korte video’s het huisdier dat bij de deur wacht tot iemand zijn belofte nakomt. Het is onze mascotte – niet het huisdier waar je in de app voor zorgt.",
+      hero: { src: "/curio/curio-waving.webp", alt: "Curio, de mascotte van PetPrep: een zacht grafietkleurig blokje met grote witte ogen, een kleine frambozenrode neus en een mintgroene halsband, dat zwaait.", width: 720, height: 948 },
+      blocks: [
+        {
+          type: "prose",
+          id: "who",
+          heading: "Wie is Curio?",
+          paragraphs: [
+            "Curio begon als het beeldmerk in ons logo: een afgerond grafietkleurig vierkant met twee grote ogen die naar rechtsboven kijken, en een kleine frambozenrode neus. In het Sloveens noemen we het Radovednež – “de nieuwsgierige”. In oktober 2026 kreeg het korte armpjes, korte beentjes en een mintgroene halsband met een rond penninkje, en werd het een personage.",
+            "Curio heeft geen mond. Alles wat het voelt, zie je aan zijn ogen: wijd open als iemand “wandelen?” fluistert, twee slaperige streepjes als er nog niemand thuis is gekomen, blije boogjes als de bak vol is.",
+            "Curio is een “het” – geen jongen of meisje, geen hond of kat. Het staat voor elk huisdier dat elke dag wacht tot iemand zijn belofte nakomt.",
+          ],
+        },
+        {
+          type: "cards",
+          id: "facts",
+          heading: "Curio in het kort",
+          columns: 3,
+          items: [
+            { title: "Naam", text: "Curio in het Engels, Radovednež in het Sloveens." },
+            { title: "Gemaakt van", text: "Zacht grafiet, een mintgroene halsband en een frambozenrood penninkje – de kleuren van PetPrep." },
+            { title: "Praat", text: "Nooit. Alleen met zijn ogen." },
+            { title: "Houdt van", text: "Wandelingen, een volle bak en kinderen die op dag 15 nog steeds terugkomen." },
+            { title: "Woont", text: "In onze korte video’s op [TikTok](https://www.tiktok.com/@petprep.si) en [Instagram](https://www.instagram.com/petprep.si/), @petprep.si." },
+            { title: "Taak", text: "Gezinnen met een knipoog eraan herinneren dat een huisdier elke dag zorg nodig heeft." },
+          ],
+        },
+        {
+          type: "pair",
+          id: "not-the-pet",
+          heading: "Curio is niet het huisdier in de app",
+          intro: "In onze video’s speelt Curio een huisdier dat zorg nodig heeft, want dat heeft elk huisdier. In PetPrep zorgen kinderen – en volwassenen die een ras uitproberen – voor iets wat veel dichter bij het echte werk komt.",
+          items: [
+            {
+              src: "/curio/curio-profile-light.webp",
+              alt: "Curio, de getekende mascotte, zwaait op een lichte achtergrond.",
+              label: "Mascotte",
+              title: "Curio – onze mascotte",
+              text: "Een stripfiguurtje voor onze video’s, stickers en deze pagina. Het laat zien waar PetPrep om draait. Je kunt het niet adopteren.",
+            },
+            {
+              src: "/animals/dogs/labrador-retriever.webp",
+              alt: "Een levensecht, door AI gegenereerd portret van een labrador retriever, zoals huisdieren eruitzien in de PetPrep-app.",
+              label: "In de app · AI-afbeelding",
+              tone: "mint",
+              title: "Jouw huisdier in PetPrep",
+              text: "Een levensechte AI-simulatie van een echt ras – zoals deze [labrador retriever](+breed:labrador_retriever) – met de dagelijkse behoeften van een echt dier: maaltijden, water, wandelingen geteld in echte stappen, opruimen en training. Bekijk [hoe het werkt](+page:howItWorks).",
+            },
+          ],
+        },
+        {
+          type: "gallery",
+          id: "gallery",
+          heading: "Curio in beeld",
+          intro: "Curio is een gestileerd 3D-personage, met AI-tools gemaakt op basis van ons eigen ontwerp. Nieuwe scènes verschijnen eerst in onze video’s.",
+          items: [
+            { src: "/curio/curio-profile-mint.webp", alt: "Curio zwaait op een mintgroene achtergrond.", caption: "Hallo! Het klassieke zwaaien.", bg: "mint" },
+            { src: "/curio/curio-shelf.webp", alt: "Curio staat op een witte plank en zwaait.", caption: "Op de plank, wachtend op iemand." },
+            { src: "/curio/curio-character-sheet.webp", alt: "Curio van voren, opzij en van achteren, met vier uitdrukkingen van de ogen.", caption: "Van alle kanten, en hoe zijn ogen gevoelens laten zien." },
+            { src: "/curio/curio-waving.webp", alt: "Curio op een transparante achtergrond.", caption: "Uitgeknipt – klaar voor je post (zie de mediakit).", bg: "graphite" },
+          ],
+        },
+        {
+          type: "downloads",
+          id: "media-kit",
+          heading: "Mediakit",
+          intro: "Voor makers, journalisten en partners die over PetPrep schrijven. Vragen of ideeën voor een samenwerking: hello@petprep.si.",
+          all: { href: "/curio/petprep-curio-media-kit.zip", label: "Alles downloaden", meta: "ZIP, 1,1 MB" },
+          items: [
+            { href: "/curio/kit/curio-transparent.png", label: "Curio, transparante achtergrond", meta: "PNG, 848 × 1117" },
+            { href: "/curio/kit/curio-square-light.png", label: "Curio, vierkant, licht", meta: "PNG, 1080 × 1080" },
+            { href: "/curio/kit/curio-square-mint.png", label: "Curio, vierkant, mint", meta: "PNG, 1080 × 1080" },
+            { href: "/curio/kit/curio-character-sheet.jpg", label: "Personageblad", meta: "JPG, 823 × 1080" },
+            { href: "/curio/kit/petprep-logo-horizontal.svg", label: "Logo van PetPrep", meta: "SVG" },
+            { href: "/curio/kit/petprep-mark.svg", label: "Beeldmerk van PetPrep", meta: "SVG" },
+          ],
+          rulesHeading: "Curio gebruiken",
+          rules: [
+            "Gebruik Curio in posts, artikelen en video’s over PetPrep. Voor advertenties, producten of merchandise vraag je het ons eerst.",
+            "Laat Curio zien zoals het is: grafietkleurig blokje, witte ogen, frambozenrode neus, mintgroene halsband. Voeg geen mond, oren, vacht of wenkbrauwen toe, verander de kleuren niet en rek het niet uit.",
+            "Curio is de mascotte van PetPrep. Presenteer het niet als het huisdier in de app of als een echte hond of kat.",
+            "Gebruik Curio niet op een manier die suggereert dat PetPrep een ander product, doel of persoon steunt.",
+          ],
+        },
+        {
+          type: "faq",
+          id: "questions",
+          heading: "Vragen over Curio",
+          items: [
+            { q: "Is Curio een hond of een kat?", a: "Geen van beide. Curio is een blokje uit ons logo. Het speelt een huisdier in onze video’s, maar het is geen diersoort." },
+            { q: "Kan mijn kind in de app voor Curio zorgen?", a: "Nee. In de app zorgt je gezin voor een levensecht huisdier van een echt ras, met dezelfde dagelijkse behoeften als het echte dier. Curio verschijnt alleen in onze video’s en op de website." },
+            { q: "Waarom heeft Curio geen mond?", a: "Omdat ons logo er ook geen heeft. Curio zegt alles met zijn ogen – en bedelt nooit hardop om snoepjes." },
+            { q: "Waar zie ik nieuwe video’s van Curio?", a: "Op TikTok en Instagram, @petprep.si." },
+          ],
+        },
+      ],
+    },
+    care: {
+      meta: {
+        title: "Kennis over verzorging – wat honden en katten mogen eten, met bronnen | PetPrep",
+        description:
+          "Welk eten giftig, riskant of oké is voor honden en katten – de reden, de verschijnselen en wat je moet doen, met een link naar elke bron. Gemaakt door PetPrep voor gezinnen die zich voorbereiden op een huisdier.",
+      },
+      navLabel: "Verzorging",
+      eyebrow: "Kennis over verzorging",
+      title: "Wat is veilig voor je huisdier?",
+      lead:
+        "Duidelijke, onderbouwde antwoorden voor gezinnen: welk eten giftig is, welk riskant en welk oké als snoepje – voor honden en katten, en later voor meer diersoorten. Bij elk antwoord staan links naar de bronnen.",
+      blocks: [{ type: "careHub" }],
+    },
+    coloring: {
+      meta: {
+        title: "Gratis kleurplaten van honden en katten om te printen | PetPrep",
+        description:
+          "Gratis kleurplaten om te printen: golden retriever, labrador, border collie, kruisingspup, kitten en Curio. Pdf’s in A4 en US Letter, elk met een echt weetje over dierenverzorging en de bron.",
+      },
+      navLabel: "Kleurplaten",
+      eyebrow: "Kleurplaten",
+      title: "Gratis kleurplaten om te printen.",
+      lead:
+        "Honden, katten en Curio om in te kleuren of na te tekenen – print één kleurplaat of het hele kleurboek. Op elke kleurplaat staat een echt weetje over dierenverzorging van een dierenarts of kennelclub, om samen te lezen.",
+      blocks: [{ type: "coloringHub" }],
+    },
+    kids: {
+      meta: {
+        title: "Voor kinderen die een huisdier willen – kleurplaten, Curio en #walkyourpet | PetPrep",
+        description:
+          "Alles wat PetPrep voor kinderen heeft: gratis kleurplaten om te printen met echte weetjes over dierenverzorging, mascotte Curio en #walkyourpet – voor kinderen en ouders die zich samen voorbereiden op een huisdier.",
+      },
+      navLabel: "Voor kinderen",
+      eyebrow: "Voor kinderen",
+      title: "Voor kinderen die een huisdier willen.",
+      lead: "Kleurplaten om te printen, Curio en #walkyourpet – voor kinderen en ouders die zich samen voorbereiden op een huisdier.",
+      hero: { src: "/curio/curio-waving.webp", alt: "Curio, de mascotte van PetPrep: een zacht grafietkleurig blokje met grote witte ogen, een kleine frambozenrode neus en een mintgroene halsband, dat zwaait.", width: 720, height: 948 },
+      blocks: [{ type: "kidsHub" }],
+    },
+    walkyourpet: {
+      meta: {
+        title: "#walkyourpet – de beweging die begon bij een echt kind",
+        description:
+          "“We could go walk your pet.” Een kind zei het, en nu is het een beweging: gezinnen die naar buiten gaan omdat een huisdier een wandeling nodig heeft. Hoe het begon, wat het betekent in PetPrep en hoe je meedoet.",
+      },
+      navLabel: "#walkyourpet",
+      eyebrow: "#walkyourpet",
+      title: "Walk your pet.",
+      lead: "Wij hebben deze zin niet bedacht. Een kind wel. Nu is het een uitnodiging voor elk gezin: ga naar buiten, want een huisdier heeft zijn wandeling nodig – een echt huisdier, of het huisdier waarmee je oefent in PetPrep.",
+      hero: { src: "/walkyourpet/story-01.webp", alt: "Storykaart: “Opgevangen in het huis van de oprichter.” Een kind zegt “Lahko bi šli walk your pet” – “We kunnen gaan walk your pet” – en de titel luidt “#walkyourpet is nu een ding.”", width: 720, height: 1280 },
+      blocks: [
+        {
+          type: "prose",
+          id: "how-it-started",
+          heading: "Hoe het begon",
+          paragraphs: [
+            "In oktober 2026 hadden de kinderen van onze oprichter een vriendinnetje over de vloer. Ze waren aan het overleggen of ze naar buiten zouden gaan, en zij zei, half in het Sloveens en half in het Engels: “Lahko bi šli walk your pet” – “We kunnen gaan walk your pet.”",
+            "Niemand had het haar gevraagd. Ze kende PetPrep, waar de wandeling van een hond alleen telt als je echt naar buiten gaat, en “walk your pet” was gewoon een reden geworden om te gaan. We vonden het zo leuk dat we het hebben gehouden – in het Engels, voor elke taal.",
+            "Een echt gesprek. Echte kinderen.",
+          ],
+        },
+        {
+          type: "screens",
+          id: "in-the-app",
+          heading: "Wat het betekent in PetPrep",
+          intro: "In PetPrep is de dagelijkse wandeling van de hond gelijk aan de echte stappen van je kind, uitgelezen uit Apple Gezondheid of Health Connect als je dat toestaat. Op de bank blijven zitten telt niet, dus “walk your pet” betekent altijd naar buiten gaan. Geen gps en geen locatie – alleen stappen.",
+          items: [{ screen: "hud", caption: "" }],
+        },
+        {
+          type: "steps",
+          id: "join",
+          heading: "Doe mee met de beweging",
+          intro: "Je hebt de app hier niet voor nodig. Elk gezin dat voor een huisdier naar buiten gaat – een echt huisdier of een oefenhuisdier – hoort erbij.",
+          items: [
+            { title: "Ga naar buiten", text: "Laat de hond uit. Of, als je nog twijfelt over een huisdier, maak de wandeling die je met een huisdier zou maken." },
+            { title: "Leg het moment vast", text: "Schoenen bij de deur, een riem, het pad, pootjes in het gras. Geen gezichten, geen namen." },
+            { title: "Deel het", text: "Post het met #walkyourpet en tag @petprep.si op Instagram of TikTok. Met je toestemming delen we de mooiste momenten misschien hier en op onze profielen." },
+          ],
+        },
+        {
+          type: "list",
+          id: "sharing-safely",
+          heading: "Veilig delen",
+          intro: "#walkyourpet gaat over kinderen, dus voor alles wat we delen gelden deze regels:",
+          items: [
+            "Ouders posten, kinderen niet. Alleen een ouder beslist wat er online komt.",
+            "Geen gezichten, namen, scholen of adressen van kinderen – en nooit het kind van een ander gezin.",
+            "We delen alleen opnieuw met toestemming van een ouder, en we halen een post weg wanneer je dat vraagt.",
+            "Uitspraken van kinderen zijn altijd echt. We verzinnen of “verbeteren” nooit wat een kind zei.",
+            "Het is een uitnodiging, geen verplichting. Geen reeksen om vol te houden, geen druk – gewoon een goede reden om naar buiten te gaan.",
+          ],
+        },
+        {
+          type: "callout",
+          title: "Het eerste moment is van ons. Het volgende kan van jou zijn.",
+          text: "Deel de wandeling van je gezin met #walkyourpet en tag @petprep.si. Vragen of een verhaal dat je wilt vertellen: hello@petprep.si.",
+          tone: "dark",
+        },
+        {
+          type: "faq",
+          id: "questions",
+          heading: "Vragen",
+          items: [
+            { q: "Heb ik PetPrep nodig om mee te doen?", a: "Nee. Iedereen die voor een huisdier naar buiten gaat, kan #walkyourpet gebruiken. PetPrep is waar de zin is ontstaan, en waar de wandeling van een oefenhond alleen telt in echte stappen." },
+            { q: "Werkt het voor katten in PetPrep?", a: "Niet als wandeling. Katten gaan niet wandelen, dus in PetPrep worden de behoeften van een kat vervuld met spelen, niet met stappen. Wandelen is voor honden." },
+            { q: "Waarom is de zin in het Engels?", a: "Omdat het kind het zo zei – in het Engels, midden in een Sloveense zin. Kinderen overal ter wereld mengen er Engels doorheen, dus de zin blijft in elke taal hetzelfde." },
+            { q: "Posten jullie mijn kind?", a: "Alleen wat je zelf deelt en ons laat herposten, en nooit het gezicht of de naam van een kind. Vraag het ons via hello@petprep.si en we halen het weg." },
+          ],
+        },
+      ],
+    },
+  },
+};
+
+export default nl;
