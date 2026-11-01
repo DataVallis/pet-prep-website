@@ -67,6 +67,15 @@ export const kidsCopy: Record<Locale, KidsCopy> = {
       { page: "walkyourpet", title: "#walkyourpet", text: "O movimento iniciado por uma criança: sair à rua para passear.", image: null },
     ],
   },
+  nl: {
+    menu: "Voor kinderen",
+    all: "Alles voor kinderen",
+    items: [
+      { page: "coloring", title: "Kleurplaten", text: "12 gratis kleurplaten om te printen, elk met een weetje over dierenverzorging.", image: coloringThumb },
+      { page: "curio", title: "Maak kennis met Curio", text: "Onze mascotte en zijn korte video’s.", image: curioThumb },
+      { page: "walkyourpet", title: "#walkyourpet", text: "De beweging die een kind is begonnen: naar buiten voor de wandeling.", image: null },
+    ],
+  },
   sl: {
     menu: "Za otroke",
     all: "Vse za otroke",
