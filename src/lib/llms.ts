@@ -1,5 +1,5 @@
 import "server-only";
-import { locales, localeMeta, pageKeys, pathFor, type Locale } from "@/i18n/config";
+import { locales, localeMeta, sitePageKeys, pathFor, type Locale } from "@/i18n/config";
 import { companyAddress, companyIds, fillPlaceholders, getDictionary } from "@/content";
 import { breedsOf, registry, type Species } from "@/content/registry/registry";
 import { markdownText } from "@/lib/links";
@@ -122,7 +122,7 @@ export function llmsIndex(): string {
     const dict = getDictionary(locale);
     lines.push(`## Pages (${localeMeta[locale].label})`, "");
     lines.push(`- [${dict.home.meta.title}](${absoluteUrl(pathFor(locale, "home"))}): ${dict.home.meta.description}`);
-    for (const key of pageKeys) {
+    for (const key of sitePageKeys) {
       const p = dict.pages[key];
       lines.push(`- [${p.meta.title}](${absoluteUrl(pathFor(locale, key))}): ${p.meta.description}`);
     }
@@ -151,7 +151,7 @@ export function llmsFull(): string {
     out.push(`## ${h.parents.title}`, h.parents.text, "");
     out.push(`## ${h.adults.title}`, h.adults.text, ...h.adults.points.map((s) => `- **${s.strong}:** ${s.text}`), h.adults.how, markdownText(locale, h.adults.note, absoluteUrl), "");
     out.push(`## ${h.after.title} (${h.after.planned})`, `_${dict.common.plannedNote}_`, h.after.text, ...h.after.features.map((s) => `- **${s.title}:** ${s.text}`), "");
-    for (const key of pageKeys) {
+    for (const key of sitePageKeys) {
       const p = dict.pages[key];
       out.push("---", "", `# ${p.title}`, `URL: ${absoluteUrl(pathFor(locale, key))}`, "", p.lead, "");
       if (p.planned) out.push(`_${dict.common.plannedNote}_`, "");

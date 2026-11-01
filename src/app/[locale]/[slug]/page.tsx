@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { isLocale, localeMeta, locales, pageKeyFromSlug, pageKeys, pageSlugs, pathFor, type Locale } from "@/i18n/config";
+import { isLocale, localeMeta, locales, pageKeyFromSlug, sitePageKeys, pageSlugs, pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import type { Block } from "@/content/types";
 import { buildMetadata } from "@/lib/seo";
@@ -15,7 +15,7 @@ import { coloringHubLd } from "@/components/coloring/ColoringPages";
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return locales.flatMap((locale) => pageKeys.map((key) => ({ locale, slug: pageSlugs[key][locale] })));
+  return locales.flatMap((locale) => sitePageKeys.map((key) => ({ locale, slug: pageSlugs[key][locale] })));
 }
 
 function resolve(localeParam: string, slug: string) {
