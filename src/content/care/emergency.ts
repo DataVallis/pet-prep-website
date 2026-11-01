@@ -30,64 +30,64 @@ const PDSA = { publisher: "PDSA", url: "https://www.pdsa.org.uk/pet-help-and-adv
 const ICC = { publisher: "International Cat Care", url: "https://icatcare.org/articles/cats-and-poisons" };
 
 export const steps: Step[] = [
-  { text: { en: "Stay calm and act straight away.", sl: "Ostanite mirni in ukrepajte takoj.", de: "Bleiben Sie ruhig und handeln Sie sofort.", fr: "Restez calme et agissez immédiatement.", es: "Mantén la calma y actúa de inmediato.", it: "Mantieni la calma e agisci subito." }, sources: [RSPCA, ASPCA] },
-  { text: { en: "Move your pet away from the substance.", sl: "Žival odmaknite od snovi.", de: "Bringen Sie Ihr Tier von der Substanz weg.", fr: "Éloignez votre animal de la substance.", es: "Aleja a tu mascota de la sustancia.", it: "Allontana l’animale dalla sostanza." }, sources: [RSPCA, PPH] },
-  { text: { en: "Check that your pet is breathing and acting normally.", sl: "Preverite, ali žival diha in se vede običajno.", de: "Prüfen Sie, ob Ihr Tier atmet und sich normal verhält.", fr: "Vérifiez que votre animal respire et se comporte normalement.", es: "Comprueba que tu mascota respira y se comporta con normalidad.", it: "Controlla che l’animale respiri e si comporti normalmente." }, sources: [PPH] },
-  { text: { en: "Call your vet or an animal poison line right away. Tell them what happened, when and where.", sl: "Takoj pokličite veterinarja ali linijo za zastrupitve živali. Povejte, kaj se je zgodilo, kdaj in kje.", de: "Rufen Sie sofort Ihren Tierarzt oder einen Giftnotruf für Tiere an. Schildern Sie, was wann und wo passiert ist.", fr: "Appelez immédiatement votre vétérinaire ou un centre antipoison vétérinaire. Expliquez ce qui s’est passé, quand et où.", es: "Llama enseguida a tu veterinario o a una línea de información toxicológica para animales. Explica qué ha pasado, cuándo y dónde.", it: "Chiama subito il veterinario o un centro antiveleni veterinario. Spiega cosa è successo, quando e dove." }, sources: [RSPCA, PDSA, ICC] },
-  { text: { en: "Do not wait for signs of illness — call even if your pet seems fine.", sl: "Ne čakajte na znake bolezni — pokličite, tudi če je žival videti v redu.", de: "Warten Sie nicht auf Krankheitsanzeichen – rufen Sie auch an, wenn Ihr Tier gesund wirkt.", fr: "N’attendez pas l’apparition de signes de maladie – appelez même si votre animal semble bien aller.", es: "No esperes a que aparezcan signos de enfermedad: llama aunque tu mascota parezca estar bien.", it: "Non aspettare che compaiano sintomi di malattia: chiama anche se l’animale sembra stare bene." }, sources: [PDSA, ASPCA] },
-  { text: { en: "Do not make your pet vomit unless a vet tells you to. It can do more harm than good.", sl: "Živali ne silite k bruhanju, razen če vam tako naroči veterinar. Lahko naredi več škode kot koristi.", de: "Bringen Sie Ihr Tier nicht zum Erbrechen, es sei denn, ein Tierarzt fordert Sie dazu auf. Das kann mehr schaden als nützen.", fr: "Ne faites pas vomir votre animal, sauf si un vétérinaire vous le demande. Cela peut faire plus de mal que de bien.", es: "No provoques el vómito a tu mascota salvo que te lo indique un veterinario. Puede hacer más mal que bien.", it: "Non far vomitare l’animale, a meno che non te lo dica un veterinario. Può fare più male che bene." }, sources: [PPH, RSPCA, PDSA] },
-  { text: { en: "Do not give home remedies such as salt water, and don't act on random tips from the internet.", sl: "Ne dajajte domačih pripravkov, kot je slana voda, in ne ravnajte po naključnih nasvetih s spleta.", de: "Geben Sie keine Hausmittel wie Salzwasser und verlassen Sie sich nicht auf irgendwelche Tipps aus dem Internet.", fr: "Ne donnez pas de remède maison comme de l’eau salée, et ne suivez pas de conseils trouvés au hasard sur Internet.", es: "No le des remedios caseros como agua con sal ni sigas cualquier consejo que encuentres en internet.", it: "Non dare rimedi casalinghi come l’acqua salata e non seguire consigli trovati a caso su internet." }, sources: [PPH, RSPCA, ASPCA] },
-  { text: { en: "Note what your pet ate, roughly how much and when.", sl: "Zapišite si, kaj je žival pojedla, približno koliko in kdaj.", de: "Notieren Sie, was Ihr Tier gefressen hat, ungefähr wie viel und wann.", fr: "Notez ce que votre animal a mangé, en quelle quantité approximative et à quel moment.", es: "Apunta qué ha comido tu mascota, más o menos cuánto y cuándo.", it: "Annota cosa ha mangiato l’animale, più o meno quanto e quando." }, sources: [RSPCA, ASPCA] },
-  { text: { en: "If you can do it safely, take the packaging, label, plant or substance with you to the vet.", sl: "Če lahko to storite varno, k veterinarju odnesite embalažo, etiketo, rastlino ali snov.", de: "Wenn es gefahrlos möglich ist, nehmen Sie Verpackung, Etikett, Pflanze oder Substanz mit zum Tierarzt.", fr: "Si vous pouvez le faire sans danger, apportez l’emballage, l’étiquette, la plante ou la substance chez le vétérinaire.", es: "Si puedes hacerlo sin riesgo, lleva al veterinario el envase, la etiqueta, la planta o la sustancia.", it: "Se puoi farlo senza rischi, porta dal veterinario la confezione, l’etichetta, la pianta o la sostanza." }, sources: [RSPCA, ICC] },
+  { text: { en: "Stay calm and act straight away.", sl: "Ostanite mirni in ukrepajte takoj.", de: "Bleiben Sie ruhig und handeln Sie sofort.", fr: "Restez calme et agissez immédiatement.", es: "Mantén la calma y actúa de inmediato.", it: "Mantieni la calma e agisci subito.", pt: "Mantém a calma e age de imediato." }, sources: [RSPCA, ASPCA] },
+  { text: { en: "Move your pet away from the substance.", sl: "Žival odmaknite od snovi.", de: "Bringen Sie Ihr Tier von der Substanz weg.", fr: "Éloignez votre animal de la substance.", es: "Aleja a tu mascota de la sustancia.", it: "Allontana l’animale dalla sostanza.", pt: "Afasta o teu animal da substância." }, sources: [RSPCA, PPH] },
+  { text: { en: "Check that your pet is breathing and acting normally.", sl: "Preverite, ali žival diha in se vede običajno.", de: "Prüfen Sie, ob Ihr Tier atmet und sich normal verhält.", fr: "Vérifiez que votre animal respire et se comporte normalement.", es: "Comprueba que tu mascota respira y se comporta con normalidad.", it: "Controlla che l’animale respiri e si comporti normalmente.", pt: "Verifica se o teu animal está a respirar e a comportar-se normalmente." }, sources: [PPH] },
+  { text: { en: "Call your vet or an animal poison line right away. Tell them what happened, when and where.", sl: "Takoj pokličite veterinarja ali linijo za zastrupitve živali. Povejte, kaj se je zgodilo, kdaj in kje.", de: "Rufen Sie sofort Ihren Tierarzt oder einen Giftnotruf für Tiere an. Schildern Sie, was wann und wo passiert ist.", fr: "Appelez immédiatement votre vétérinaire ou un centre antipoison vétérinaire. Expliquez ce qui s’est passé, quand et où.", es: "Llama enseguida a tu veterinario o a una línea de información toxicológica para animales. Explica qué ha pasado, cuándo y dónde.", it: "Chiama subito il veterinario o un centro antiveleni veterinario. Spiega cosa è successo, quando e dove.", pt: "Liga imediatamente ao teu veterinário ou a uma linha de apoio toxicológico para animais. Explica o que aconteceu, quando e onde." }, sources: [RSPCA, PDSA, ICC] },
+  { text: { en: "Do not wait for signs of illness — call even if your pet seems fine.", sl: "Ne čakajte na znake bolezni — pokličite, tudi če je žival videti v redu.", de: "Warten Sie nicht auf Krankheitsanzeichen – rufen Sie auch an, wenn Ihr Tier gesund wirkt.", fr: "N’attendez pas l’apparition de signes de maladie – appelez même si votre animal semble bien aller.", es: "No esperes a que aparezcan signos de enfermedad: llama aunque tu mascota parezca estar bien.", it: "Non aspettare che compaiano sintomi di malattia: chiama anche se l’animale sembra stare bene.", pt: "Não esperes por sinais de doença – liga mesmo que o teu animal pareça estar bem." }, sources: [PDSA, ASPCA] },
+  { text: { en: "Do not make your pet vomit unless a vet tells you to. It can do more harm than good.", sl: "Živali ne silite k bruhanju, razen če vam tako naroči veterinar. Lahko naredi več škode kot koristi.", de: "Bringen Sie Ihr Tier nicht zum Erbrechen, es sei denn, ein Tierarzt fordert Sie dazu auf. Das kann mehr schaden als nützen.", fr: "Ne faites pas vomir votre animal, sauf si un vétérinaire vous le demande. Cela peut faire plus de mal que de bien.", es: "No provoques el vómito a tu mascota salvo que te lo indique un veterinario. Puede hacer más mal que bien.", it: "Non far vomitare l’animale, a meno che non te lo dica un veterinario. Può fare più male che bene.", pt: "Não faças o teu animal vomitar, a não ser que um veterinário te diga para o fazeres. Pode fazer mais mal do que bem." }, sources: [PPH, RSPCA, PDSA] },
+  { text: { en: "Do not give home remedies such as salt water, and don't act on random tips from the internet.", sl: "Ne dajajte domačih pripravkov, kot je slana voda, in ne ravnajte po naključnih nasvetih s spleta.", de: "Geben Sie keine Hausmittel wie Salzwasser und verlassen Sie sich nicht auf irgendwelche Tipps aus dem Internet.", fr: "Ne donnez pas de remède maison comme de l’eau salée, et ne suivez pas de conseils trouvés au hasard sur Internet.", es: "No le des remedios caseros como agua con sal ni sigas cualquier consejo que encuentres en internet.", it: "Non dare rimedi casalinghi come l’acqua salata e non seguire consigli trovati a caso su internet.", pt: "Não dês remédios caseiros, como água com sal, e não sigas dicas aleatórias da internet." }, sources: [PPH, RSPCA, ASPCA] },
+  { text: { en: "Note what your pet ate, roughly how much and when.", sl: "Zapišite si, kaj je žival pojedla, približno koliko in kdaj.", de: "Notieren Sie, was Ihr Tier gefressen hat, ungefähr wie viel und wann.", fr: "Notez ce que votre animal a mangé, en quelle quantité approximative et à quel moment.", es: "Apunta qué ha comido tu mascota, más o menos cuánto y cuándo.", it: "Annota cosa ha mangiato l’animale, più o meno quanto e quando.", pt: "Anota o que o teu animal comeu, mais ou menos quanto e quando." }, sources: [RSPCA, ASPCA] },
+  { text: { en: "If you can do it safely, take the packaging, label, plant or substance with you to the vet.", sl: "Če lahko to storite varno, k veterinarju odnesite embalažo, etiketo, rastlino ali snov.", de: "Wenn es gefahrlos möglich ist, nehmen Sie Verpackung, Etikett, Pflanze oder Substanz mit zum Tierarzt.", fr: "Si vous pouvez le faire sans danger, apportez l’emballage, l’étiquette, la plante ou la substance chez le vétérinaire.", es: "Si puedes hacerlo sin riesgo, lleva al veterinario el envase, la etiqueta, la planta o la sustancia.", it: "Se puoi farlo senza rischi, porta dal veterinario la confezione, l’etichetta, la pianta o la sostanza.", pt: "Se o puderes fazer em segurança, leva contigo ao veterinário a embalagem, o rótulo, a planta ou a substância." }, sources: [RSPCA, ICC] },
 ];
 
 export const contacts: Contact[] = [
   {
     country: "SI", org: "Univerza v Ljubljani, Veterinarska fakulteta — Klinika za male živali", kind: "emergency_vet",
     phone: "+386 30 716 190",
-    hours: { en: "Emergency number reachable 24 hours a day (dogs and cats)", sl: "Številka za nujne primere je dosegljiva 24 ur na dan (psi in mačke)", de: "Notrufnummer rund um die Uhr erreichbar (Hunde und Katzen)", fr: "Numéro d’urgence joignable 24 h/24 (chiens et chats)", es: "Número de urgencias disponible las 24 horas (perros y gatos)", it: "Numero per le emergenze attivo 24 ore su 24 (cani e gatti)" },
-    fee: { en: "The call is free", sl: "Klic je brezplačen", de: "Der Anruf ist kostenlos", fr: "L’appel est gratuit", es: "La llamada es gratuita", it: "La chiamata è gratuita" }, note: null,
+    hours: { en: "Emergency number reachable 24 hours a day (dogs and cats)", sl: "Številka za nujne primere je dosegljiva 24 ur na dan (psi in mačke)", de: "Notrufnummer rund um die Uhr erreichbar (Hunde und Katzen)", fr: "Numéro d’urgence joignable 24 h/24 (chiens et chats)", es: "Número de urgencias disponible las 24 horas (perros y gatos)", it: "Numero per le emergenze attivo 24 ore su 24 (cani e gatti)", pt: "Número de emergência disponível 24 horas por dia (cães e gatos)" },
+    fee: { en: "The call is free", sl: "Klic je brezplačen", de: "Der Anruf ist kostenlos", fr: "L’appel est gratuit", es: "La llamada es gratuita", it: "La chiamata è gratuita", pt: "A chamada é gratuita" }, note: null,
     url: "https://www.vf.uni-lj.si/klinike/klinika-za-male-zivali",
   },
   {
     country: "HR", org: "Sveučilište u Zagrebu, Veterinarski fakultet — Sveučilišna veterinarska bolnica", kind: "emergency_vet",
     phone: null,
-    hours: { en: "Emergency intake 24 hours a day — come in without calling", sl: "Sprejem nujnih primerov 24 ur na dan — pridite brez klica", de: "Notaufnahme rund um die Uhr – kommen Sie ohne vorherigen Anruf direkt vorbei", fr: "Accueil des urgences 24 h/24 – venez directement, sans appeler", es: "Atención de urgencias las 24 horas: acude directamente, sin llamar", it: "Accettazione delle emergenze 24 ore su 24: vai direttamente, senza chiamare" },
-    fee: null, note: { en: "The emergency desk does not answer phone calls.", sl: "Nujni sprejem ne odgovarja na telefonske klice.", de: "Die Notaufnahme nimmt keine Telefonanrufe entgegen.", fr: "Le service des urgences ne répond pas au téléphone.", es: "El servicio de urgencias no atiende llamadas telefónicas.", it: "Il pronto soccorso non risponde alle chiamate telefoniche." },
+    hours: { en: "Emergency intake 24 hours a day — come in without calling", sl: "Sprejem nujnih primerov 24 ur na dan — pridite brez klica", de: "Notaufnahme rund um die Uhr – kommen Sie ohne vorherigen Anruf direkt vorbei", fr: "Accueil des urgences 24 h/24 – venez directement, sans appeler", es: "Atención de urgencias las 24 horas: acude directamente, sin llamar", it: "Accettazione delle emergenze 24 ore su 24: vai direttamente, senza chiamare", pt: "Atendimento de urgências 24 horas por dia – vai diretamente, sem ligar" },
+    fee: null, note: { en: "The emergency desk does not answer phone calls.", sl: "Nujni sprejem ne odgovarja na telefonske klice.", de: "Die Notaufnahme nimmt keine Telefonanrufe entgegen.", fr: "Le service des urgences ne répond pas au téléphone.", es: "El servicio de urgencias no atiende llamadas telefónicas.", it: "Il pronto soccorso non risponde alle chiamate telefoniche.", pt: "O serviço de urgências não atende chamadas telefónicas." },
     url: "https://www.vef.unizg.hr/usluge/sveucilisna-veterinarska-bolnica/",
   },
   {
     country: "GB", org: "Animal PoisonLine (Veterinary Poisons Information Service)", kind: "poison_line",
     phone: "01202 509 000",
-    hours: { en: "24 hours a day", sl: "24 ur na dan", de: "24\u00a0Stunden am Tag", fr: "24 h/24", es: "Las 24 horas", it: "24 ore su 24" },
-    fee: { en: "£35 per call 8am–8pm Mon–Fri, £45 at other times", sl: "35 £ na klic pon–pet 8–20, sicer 45 £", de: "35\u00a0£ pro Anruf Mo.–Fr. 8–20\u00a0Uhr, sonst 45\u00a0£", fr: "35 £ par appel du lundi au vendredi de 8 h à 20 h, 45 £ le reste du temps", es: "35\u00a0£ por llamada de lunes a viernes, de 8:00 a 20:00, y 45\u00a0£ en otros horarios", it: "35 £ a chiamata dal lunedì al venerdì dalle 8 alle 20, 45 £ negli altri orari" }, note: null,
+    hours: { en: "24 hours a day", sl: "24 ur na dan", de: "24\u00a0Stunden am Tag", fr: "24 h/24", es: "Las 24 horas", it: "24 ore su 24", pt: "24 horas por dia" },
+    fee: { en: "£35 per call 8am–8pm Mon–Fri, £45 at other times", sl: "35 £ na klic pon–pet 8–20, sicer 45 £", de: "35\u00a0£ pro Anruf Mo.–Fr. 8–20\u00a0Uhr, sonst 45\u00a0£", fr: "35 £ par appel du lundi au vendredi de 8 h à 20 h, 45 £ le reste du temps", es: "35\u00a0£ por llamada de lunes a viernes, de 8:00 a 20:00, y 45\u00a0£ en otros horarios", it: "35 £ a chiamata dal lunedì al venerdì dalle 8 alle 20, 45 £ negli altri orari", pt: "35 £ por chamada de segunda a sexta, das 8h às 20h; 45 £ nos restantes horários" }, note: null,
     url: "https://www.animalpoisonline.co.uk/",
   },
   {
     country: "US", org: "ASPCA Animal Poison Control Center", kind: "poison_line",
     phone: "(888) 426-4435",
-    hours: { en: "24 hours a day, 365 days a year", sl: "24 ur na dan, vse dni v letu", de: "24\u00a0Stunden am Tag, 365\u00a0Tage im Jahr", fr: "24 h/24, 365 jours par an", es: "Las 24 horas, los 365 días del año", it: "24 ore su 24, 365 giorni all’anno" },
-    fee: { en: "A consultation fee may apply", sl: "Posvet je lahko plačljiv", de: "Es kann eine Beratungsgebühr anfallen", fr: "La consultation peut être payante", es: "La consulta puede tener un coste", it: "La consulenza può essere a pagamento" }, note: null,
+    hours: { en: "24 hours a day, 365 days a year", sl: "24 ur na dan, vse dni v letu", de: "24\u00a0Stunden am Tag, 365\u00a0Tage im Jahr", fr: "24 h/24, 365 jours par an", es: "Las 24 horas, los 365 días del año", it: "24 ore su 24, 365 giorni all’anno", pt: "24 horas por dia, 365 dias por ano" },
+    fee: { en: "A consultation fee may apply", sl: "Posvet je lahko plačljiv", de: "Es kann eine Beratungsgebühr anfallen", fr: "La consultation peut être payante", es: "La consulta puede tener un coste", it: "La consulenza può essere a pagamento", pt: "A consulta pode ter um custo" }, note: null,
     url: "https://www.aspca.org/pet-care/animal-poison-control",
   },
   {
     country: "US", org: "Pet Poison Helpline", kind: "poison_line",
     phone: "(855) 764-7661",
-    hours: { en: "24/7", sl: "24/7", de: "24/7", fr: "24 h/24, 7 j/7", es: "24/7", it: "24 ore su 24, 7 giorni su 7" },
-    fee: { en: "$99 per incident", sl: "99 $ na primer", de: "99\u00a0$ pro Fall", fr: "99 $ par incident", es: "99\u00a0$ por incidente", it: "99 $ per ogni caso" }, note: null,
+    hours: { en: "24/7", sl: "24/7", de: "24/7", fr: "24 h/24, 7 j/7", es: "24/7", it: "24 ore su 24, 7 giorni su 7", pt: "24 horas por dia, 7 dias por semana" },
+    fee: { en: "$99 per incident", sl: "99 $ na primer", de: "99\u00a0$ pro Fall", fr: "99 $ par incident", es: "99\u00a0$ por incidente", it: "99 $ per ogni caso", pt: "99 $ por ocorrência" }, note: null,
     url: "https://www.petpoisonhelpline.com/",
   },
   {
     country: "AU", org: "Animal Poisons Helpline", kind: "poison_line",
     phone: "1300 869 738",
-    hours: { en: "24/7", sl: "24/7", de: "24/7", fr: "24 h/24, 7 j/7", es: "24/7", it: "24 ore su 24, 7 giorni su 7" },
-    fee: { en: "From AUD 79 (private service)", sl: "Od 79 AUD (zasebna služba)", de: "Ab 79\u00a0AUD (privater Dienst)", fr: "À partir de 79 AUD (service privé)", es: "Desde 79\u00a0AUD (servicio privado)", it: "Da 79 AUD (servizio privato)" },
-    note: { en: "New Zealand: 0800 869 738", sl: "Nova Zelandija: 0800 869 738", de: "Neuseeland: 0800 869 738", fr: "Nouvelle-Zélande : 0800 869 738", es: "Nueva Zelanda: 0800 869 738", it: "Nuova Zelanda: 0800 869 738" },
+    hours: { en: "24/7", sl: "24/7", de: "24/7", fr: "24 h/24, 7 j/7", es: "24/7", it: "24 ore su 24, 7 giorni su 7", pt: "24 horas por dia, 7 dias por semana" },
+    fee: { en: "From AUD 79 (private service)", sl: "Od 79 AUD (zasebna služba)", de: "Ab 79\u00a0AUD (privater Dienst)", fr: "À partir de 79 AUD (service privé)", es: "Desde 79\u00a0AUD (servicio privado)", it: "Da 79 AUD (servizio privato)", pt: "A partir de 79 AUD (serviço privado)" },
+    note: { en: "New Zealand: 0800 869 738", sl: "Nova Zelandija: 0800 869 738", de: "Neuseeland: 0800 869 738", fr: "Nouvelle-Zélande : 0800 869 738", es: "Nueva Zelanda: 0800 869 738", it: "Nuova Zelanda: 0800 869 738", pt: "Nova Zelândia: 0800 869 738" },
     url: "https://www.animalpoisons.com.au/",
   },
 ];
 
-export const emergencySlug: Record<Locale, string> = { en: "emergency", sl: "nujni-primeri", de: "notfall", fr: "urgence", es: "urgencias", it: "emergenza" };
+export const emergencySlug: Record<Locale, string> = { en: "emergency", sl: "nujni-primeri", de: "notfall", fr: "urgence", es: "urgencias", it: "emergenza", pt: "emergencia" };
 
 export const emergencyCopy: Record<Locale, {
   crumb: string; title: string; metaTitle: string; description: string; eyebrow: string; lead: string; stepsTitle: string;
@@ -250,6 +250,32 @@ export const emergencyCopy: Record<Locale, {
       searchPlaceholder: "ad es. Split, Málaga, Maribor", only24h: "Solo 24 h", results: "Risultati: {n}",
       none: "Nessun risultato: prova con un’altra località o un’altra regione.", h24: "24 h", dutyRota: "Turni di guardia", poisonLine: "Centro antiveleni",
       website: "Sito web", source: "Fonte", checked: "verificato il",
+    },
+  },
+  pt: {
+    crumb: "Emergência",
+    title: "O teu animal comeu alguma coisa tóxica? O que fazer agora",
+    metaTitle: "O teu animal comeu alguma coisa tóxica? O que fazer agora – PetPrep",
+    description: "O que fazer de imediato se o teu cão ou o teu gato tiver comido alguma coisa tóxica, e linhas de apoio toxicológico para animais e urgências veterinárias 24 horas por dia, por país. Cada passo e cada número vêm de fontes oficiais.",
+    eyebrow: "Conselhos · emergência",
+    lead: "Liga imediatamente ao teu veterinário ou a uma linha de apoio toxicológico para animais – não esperes pelos sinais. Estes passos vêm de organizações veterinárias e de proteção animal; os números, das suas páginas oficiais.",
+    stepsTitle: "O que fazer, passo a passo",
+    contactsTitle: "Ajuda 24 horas por dia, por país",
+    contactsIntro: "Apenas números que encontrámos numa página oficial. Ligar ao teu veterinário é sempre uma boa primeira opção.",
+    poisonLine: "Linha de apoio toxicológico para animais",
+    emergencyVet: "Urgência veterinária",
+    noPhone: "Sem linha telefónica",
+    elsewhere: "O teu país não está na lista? Liga ao teu veterinário ou à clínica veterinária de urgência mais próxima.",
+    sources: "Fontes",
+    open: "Página oficial",
+    countries: { SI: "Eslovénia", HR: "Croácia", GB: "Reino Unido", US: "Estados Unidos", AU: "Austrália" },
+    vetsTitle: "Veterinários e clínicas de urgência por país",
+    vetsIntro: "Em casa ou de férias: escolhe o país, filtra por região ou localidade, ou mostra apenas as clínicas abertas 24 horas por dia. Cada entrada tem uma ligação para a página de onde a tirámos. Liga antes de ir, porque os horários podem mudar.",
+    vets: {
+      country: "País", all: "Todos os países", region: "Região", allRegions: "Todas as regiões", search: "Localidade ou nome",
+      searchPlaceholder: "p. ex. Split, Málaga, Maribor", only24h: "Só 24 h", results: "Resultados: {n}",
+      none: "Sem resultados – experimenta outra localidade ou outra região.", h24: "24 h", dutyRota: "Escalas de serviço", poisonLine: "Linha toxicológica",
+      website: "Sítio web", source: "Fonte", checked: "verificado a",
     },
   },
 };
