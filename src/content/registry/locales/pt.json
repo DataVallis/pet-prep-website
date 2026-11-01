@@ -1,0 +1,712 @@
+{
+  "species": {
+    "dog": {
+      "name": {
+        "one": "Cão",
+        "many": "Cães"
+      },
+      "slug": "caes",
+      "free_plan": "Cão sem raça definida"
+    },
+    "cat": {
+      "name": {
+        "one": "Gato",
+        "many": "Gatos"
+      },
+      "slug": "gatos",
+      "free_plan": "Gato doméstico"
+    }
+  },
+  "breeds": {
+    "border_collie": {
+      "name": "Border collie",
+      "slug": "border-collie",
+      "colours": {
+        "black-white": "Preto e branco",
+        "tricolour": "Tricolor (preto, branco e fogo)",
+        "red-white": "Vermelho e branco",
+        "blue-white": "Azul e branco",
+        "blue-merle-white": "Azul merle e branco",
+        "red-merle-white": "Vermelho merle e branco",
+        "sable-white": "Zibelina e branco"
+      }
+    },
+    "labrador_retriever": {
+      "name": "Labrador retriever",
+      "slug": "labrador-retriever",
+      "synonyms": [
+        "Labrador"
+      ]
+    },
+    "golden_retriever": {
+      "name": "Golden retriever",
+      "slug": "golden-retriever",
+      "synonyms": [
+        "Golden"
+      ]
+    },
+    "french_bulldog": {
+      "name": "Bulldog francês",
+      "slug": "bulldog-frances",
+      "synonyms": [
+        "Bouledogue français",
+        "French bulldog",
+        "Frenchie"
+      ]
+    },
+    "german_shepherd": {
+      "name": "Pastor alemão",
+      "slug": "pastor-alemao",
+      "synonyms": [
+        "Pastor alsaciano",
+        "Cão-lobo",
+        "German shepherd"
+      ]
+    },
+    "cavalier_king_charles_spaniel": {
+      "name": "Cavalier King Charles spaniel",
+      "slug": "cavalier-king-charles-spaniel",
+      "synonyms": [
+        "Cavalier",
+        "Cavalier King Charles"
+      ]
+    },
+    "beagle": {
+      "name": "Beagle",
+      "slug": "beagle"
+    },
+    "standard_poodle": {
+      "name": "Caniche grande",
+      "slug": "caniche-grande",
+      "synonyms": [
+        "Caniche standard",
+        "Caniche",
+        "Poodle"
+      ]
+    },
+    "dachshund": {
+      "name": "Teckel",
+      "slug": "teckel",
+      "synonyms": [
+        "Dachshund",
+        "Cão salsicha",
+        "Teckel standard de pelo curto"
+      ]
+    },
+    "australian_shepherd": {
+      "name": "Pastor australiano",
+      "slug": "pastor-australiano",
+      "synonyms": [
+        "Aussie",
+        "Australian shepherd"
+      ]
+    },
+    "havanese": {
+      "name": "Bichon havanês",
+      "slug": "bichon-havanes",
+      "synonyms": [
+        "Havanês",
+        "Havanese"
+      ]
+    },
+    "west_highland_white_terrier": {
+      "name": "West Highland white terrier",
+      "slug": "west-highland-white-terrier",
+      "synonyms": [
+        "Westie"
+      ]
+    },
+    "bernese_mountain_dog": {
+      "name": "Boieiro de Berna",
+      "slug": "boieiro-de-berna",
+      "synonyms": [
+        "Bernês",
+        "Boiadeiro bernês",
+        "Berner Sennenhund"
+      ]
+    },
+    "siberian_husky": {
+      "name": "Husky siberiano",
+      "slug": "husky-siberiano",
+      "synonyms": [
+        "Husky",
+        "Siberian husky"
+      ]
+    },
+    "rottweiler": {
+      "name": "Rottweiler",
+      "slug": "rottweiler",
+      "synonyms": [
+        "Rottie"
+      ]
+    },
+    "bulldog": {
+      "name": "Bulldog inglês",
+      "slug": "bulldog-ingles",
+      "synonyms": [
+        "Bulldog",
+        "English bulldog"
+      ]
+    },
+    "german_shorthaired_pointer": {
+      "name": "Braco alemão de pelo curto",
+      "slug": "braco-alemao-de-pelo-curto",
+      "synonyms": [
+        "Braco alemão",
+        "Kurzhaar",
+        "Deutsch Kurzhaar"
+      ]
+    },
+    "yorkshire_terrier": {
+      "name": "Yorkshire terrier",
+      "slug": "yorkshire-terrier",
+      "synonyms": [
+        "Yorkshire",
+        "Yorkie"
+      ]
+    },
+    "cane_corso": {
+      "name": "Cane corso",
+      "slug": "cane-corso",
+      "synonyms": [
+        "Cane corso italiano",
+        "Corso"
+      ]
+    },
+    "pembroke_welsh_corgi": {
+      "name": "Welsh corgi Pembroke",
+      "slug": "welsh-corgi-pembroke",
+      "synonyms": [
+        "Corgi",
+        "Pembroke Welsh corgi"
+      ]
+    },
+    "dobermann": {
+      "name": "Dobermann",
+      "slug": "dobermann",
+      "synonyms": [
+        "Doberman"
+      ]
+    },
+    "boxer": {
+      "name": "Boxer",
+      "slug": "boxer",
+      "synonyms": [
+        "Boxer alemão"
+      ]
+    },
+    "miniature_schnauzer": {
+      "name": "Schnauzer miniatura",
+      "slug": "schnauzer-miniatura",
+      "synonyms": [
+        "Schnauzer anão",
+        "Zwergschnauzer",
+        "Miniature schnauzer"
+      ]
+    },
+    "shih_tzu": {
+      "name": "Shih tzu",
+      "slug": "shih-tzu",
+      "synonyms": [
+        "Shih-tzu"
+      ]
+    },
+    "great_dane": {
+      "name": "Dogue alemão",
+      "slug": "dogue-alemao",
+      "synonyms": [
+        "Grand danois",
+        "Deutsche Dogge",
+        "Great Dane"
+      ]
+    },
+    "pomeranian": {
+      "name": "Pomerânia",
+      "slug": "pomerania",
+      "synonyms": [
+        "Spitz alemão anão",
+        "Lulu da Pomerânia",
+        "Pomeranian"
+      ]
+    },
+    "boston_terrier": {
+      "name": "Boston terrier",
+      "slug": "boston-terrier",
+      "synonyms": [
+        "Boston"
+      ]
+    },
+    "miniature_american_shepherd": {
+      "name": "Pastor americano miniatura",
+      "slug": "pastor-americano-miniatura",
+      "synonyms": [
+        "Mini aussie",
+        "Pastor australiano miniatura",
+        "Miniature American shepherd"
+      ]
+    },
+    "chihuahua": {
+      "name": "Chihuahua",
+      "slug": "chihuahua"
+    },
+    "english_springer_spaniel": {
+      "name": "Springer spaniel inglês",
+      "slug": "springer-spaniel-ingles",
+      "synonyms": [
+        "Springer",
+        "English springer spaniel"
+      ]
+    },
+    "shetland_sheepdog": {
+      "name": "Pastor de Shetland",
+      "slug": "pastor-de-shetland",
+      "synonyms": [
+        "Sheltie",
+        "Shetland sheepdog"
+      ]
+    },
+    "brittany": {
+      "name": "Épagneul bretão",
+      "slug": "epagneul-bretao",
+      "synonyms": [
+        "Epagneul breton",
+        "Bretão"
+      ]
+    },
+    "american_cocker_spaniel": {
+      "name": "Cocker spaniel americano",
+      "slug": "cocker-spaniel-americano",
+      "synonyms": [
+        "Cocker americano",
+        "American cocker spaniel"
+      ]
+    },
+    "belgian_malinois": {
+      "name": "Pastor belga malinois",
+      "slug": "pastor-belga-malinois",
+      "synonyms": [
+        "Malinois",
+        "Pastor belga",
+        "Belgian malinois"
+      ]
+    },
+    "basset_hound": {
+      "name": "Basset hound",
+      "slug": "basset-hound",
+      "synonyms": [
+        "Basset"
+      ]
+    },
+    "hungarian_vizsla": {
+      "name": "Braco húngaro de pelo curto",
+      "slug": "braco-hungaro-de-pelo-curto",
+      "synonyms": [
+        "Vizsla",
+        "Braco húngaro",
+        "Magyar vizsla"
+      ]
+    },
+    "english_cocker_spaniel": {
+      "name": "Cocker spaniel inglês",
+      "slug": "cocker-spaniel-ingles",
+      "synonyms": [
+        "Cocker",
+        "Cocker inglês",
+        "English cocker spaniel"
+      ]
+    },
+    "maltese": {
+      "name": "Bichon maltês",
+      "slug": "bichon-maltes",
+      "synonyms": [
+        "Maltês",
+        "Cão maltês"
+      ]
+    },
+    "pug": {
+      "name": "Pug",
+      "slug": "pug",
+      "synonyms": [
+        "Carlino",
+        "Mops"
+      ]
+    },
+    "rough_collie": {
+      "name": "Collie de pelo comprido",
+      "slug": "collie-de-pelo-comprido",
+      "synonyms": [
+        "Collie",
+        "Rough collie"
+      ]
+    },
+    "mastiff": {
+      "name": "Mastiff",
+      "slug": "mastiff",
+      "synonyms": [
+        "Mastim inglês"
+      ]
+    },
+    "shiba_inu": {
+      "name": "Shiba inu",
+      "slug": "shiba-inu",
+      "synonyms": [
+        "Shiba"
+      ]
+    },
+    "rhodesian_ridgeback": {
+      "name": "Rhodesian ridgeback",
+      "slug": "rhodesian-ridgeback",
+      "synonyms": [
+        "Ridgeback",
+        "Ridgeback da Rodésia"
+      ]
+    },
+    "papillon": {
+      "name": "Papillon",
+      "slug": "papillon",
+      "synonyms": [
+        "Epagneul anão continental",
+        "Spaniel anão continental"
+      ]
+    },
+    "portuguese_water_dog": {
+      "name": "Cão de água português",
+      "slug": "cao-de-agua-portugues",
+      "synonyms": [
+        "Cão d’água",
+        "Cão de água algarvio",
+        "Portuguese water dog"
+      ]
+    },
+    "bichon_frise": {
+      "name": "Bichon frisé",
+      "slug": "bichon-frise",
+      "synonyms": [
+        "Bichon à poil frisé",
+        "Bichon"
+      ]
+    },
+    "newfoundland": {
+      "name": "Terra-nova",
+      "slug": "terra-nova",
+      "synonyms": [
+        "Newfoundland"
+      ]
+    },
+    "dalmatian": {
+      "name": "Dálmata",
+      "slug": "dalmata"
+    },
+    "australian_cattle_dog": {
+      "name": "Boieiro australiano",
+      "slug": "boieiro-australiano",
+      "synonyms": [
+        "Australian cattle dog",
+        "Blue heeler",
+        "Red heeler"
+      ]
+    },
+    "whippet": {
+      "name": "Whippet",
+      "slug": "whippet"
+    },
+    "wirehaired_pointing_griffon": {
+      "name": "Griffon de aponte de pelo duro Korthals",
+      "slug": "griffon-de-aponte-de-pelo-duro-korthals",
+      "synonyms": [
+        "Griffon Korthals",
+        "Korthals"
+      ]
+    },
+    "chesapeake_bay_retriever": {
+      "name": "Chesapeake Bay retriever",
+      "slug": "chesapeake-bay-retriever",
+      "synonyms": [
+        "Chessie"
+      ]
+    },
+    "samoyed": {
+      "name": "Samoiedo",
+      "slug": "samoiedo",
+      "synonyms": [
+        "Samoyed"
+      ]
+    },
+    "scottish_terrier": {
+      "name": "Scottish terrier",
+      "slug": "scottish-terrier",
+      "synonyms": [
+        "Scottie",
+        "Terrier escocês"
+      ]
+    },
+    "weimaraner": {
+      "name": "Braco de Weimar",
+      "slug": "braco-de-weimar",
+      "synonyms": [
+        "Weimaraner"
+      ]
+    },
+    "italian_greyhound": {
+      "name": "Pequeno lebréu italiano",
+      "slug": "pequeno-lebreu-italiano",
+      "synonyms": [
+        "Galgo italiano",
+        "Lebréu italiano",
+        "Piccolo levriero italiano",
+        "Italian greyhound"
+      ]
+    },
+    "giant_schnauzer": {
+      "name": "Schnauzer gigante",
+      "slug": "schnauzer-gigante",
+      "synonyms": [
+        "Riesenschnauzer"
+      ]
+    },
+    "bloodhound": {
+      "name": "Cão de Santo Humberto",
+      "slug": "cao-de-santo-humberto",
+      "synonyms": [
+        "Santo Humberto",
+        "Bloodhound"
+      ]
+    },
+    "akita": {
+      "name": "Akita americano",
+      "slug": "akita-americano",
+      "synonyms": [
+        "Akita",
+        "American akita"
+      ]
+    },
+    "cardigan_welsh_corgi": {
+      "name": "Welsh corgi Cardigan",
+      "slug": "welsh-corgi-cardigan",
+      "synonyms": [
+        "Corgi",
+        "Cardigan Welsh corgi"
+      ]
+    },
+    "german_wirehaired_pointer": {
+      "name": "Braco alemão de pelo duro",
+      "slug": "braco-alemao-de-pelo-duro",
+      "synonyms": [
+        "Drahthaar",
+        "Deutsch Drahthaar"
+      ]
+    },
+    "saint_bernard": {
+      "name": "São Bernardo",
+      "slug": "sao-bernardo",
+      "synonyms": [
+        "Cão de São Bernardo"
+      ]
+    },
+    "staffordshire_bull_terrier": {
+      "name": "Staffordshire bull terrier",
+      "slug": "staffordshire-bull-terrier",
+      "synonyms": [
+        "Staffie",
+        "Staffy"
+      ]
+    },
+    "airedale_terrier": {
+      "name": "Airedale terrier",
+      "slug": "airedale-terrier",
+      "synonyms": [
+        "Airedale"
+      ]
+    },
+    "russell_terrier": {
+      "name": "Jack Russell terrier",
+      "slug": "jack-russell-terrier",
+      "synonyms": [
+        "Jack Russell",
+        "Russell terrier"
+      ]
+    },
+    "bullmastiff": {
+      "name": "Bullmastiff",
+      "slug": "bullmastiff"
+    },
+    "chinese_crested": {
+      "name": "Cão de crista chinês",
+      "slug": "cao-de-crista-chines",
+      "synonyms": [
+        "Crista chinês",
+        "Chinese crested"
+      ]
+    },
+    "nova_scotia_duck_tolling_retriever": {
+      "name": "Retriever da Nova Escócia",
+      "slug": "retriever-da-nova-escocia",
+      "synonyms": [
+        "Toller",
+        "Nova Scotia duck tolling retriever"
+      ]
+    },
+    "cairn_terrier": {
+      "name": "Cairn terrier",
+      "slug": "cairn-terrier",
+      "synonyms": [
+        "Cairn"
+      ]
+    },
+    "bull_terrier": {
+      "name": "Bull terrier",
+      "slug": "bull-terrier"
+    },
+    "miniature_pinscher": {
+      "name": "Pinscher miniatura",
+      "slug": "pinscher-miniatura",
+      "synonyms": [
+        "Pinscher anão",
+        "Zwergpinscher",
+        "Mini pinscher"
+      ]
+    },
+    "pyrenean_mountain_dog": {
+      "name": "Cão de montanha dos Pirenéus",
+      "slug": "cao-de-montanha-dos-pireneus",
+      "synonyms": [
+        "Montanha dos Pirenéus",
+        "Patou",
+        "Great Pyrenees"
+      ]
+    },
+    "soft_coated_wheaten_terrier": {
+      "name": "Irish soft coated wheaten terrier",
+      "slug": "irish-soft-coated-wheaten-terrier",
+      "synonyms": [
+        "Wheaten",
+        "Wheaten terrier",
+        "Terrier irlandês de pelo macio"
+      ]
+    },
+    "irish_wolfhound": {
+      "name": "Lebréu irlandês",
+      "slug": "lebreu-irlandes",
+      "synonyms": [
+        "Irish wolfhound",
+        "Wolfhound"
+      ]
+    },
+    "american_staffordshire_terrier": {
+      "name": "American Staffordshire terrier",
+      "slug": "american-staffordshire-terrier",
+      "synonyms": [
+        "Amstaff"
+      ]
+    },
+    "lagotto_romagnolo": {
+      "name": "Lagotto romagnolo",
+      "slug": "lagotto-romagnolo",
+      "synonyms": [
+        "Lagotto",
+        "Cão de água da Romanha"
+      ]
+    },
+    "alaskan_malamute": {
+      "name": "Malamute do Alasca",
+      "slug": "malamute-do-alasca",
+      "synonyms": [
+        "Malamute",
+        "Alaskan malamute"
+      ]
+    },
+    "basenji": {
+      "name": "Basenji",
+      "slug": "basenji"
+    },
+    "maine_coon": {
+      "name": "Maine coon",
+      "slug": "maine-coon"
+    },
+    "british_shorthair": {
+      "name": "British shorthair",
+      "slug": "british-shorthair",
+      "synonyms": [
+        "Gato britânico",
+        "Britânico de pelo curto",
+        "British"
+      ]
+    },
+    "ragdoll": {
+      "name": "Ragdoll",
+      "slug": "ragdoll"
+    },
+    "siberian_cat": {
+      "name": "Siberiano",
+      "slug": "siberiano",
+      "synonyms": [
+        "Gato siberiano",
+        "Gato da floresta siberiana"
+      ]
+    },
+    "norwegian_forest_cat": {
+      "name": "Norueguês da floresta",
+      "slug": "noruegues-da-floresta",
+      "synonyms": [
+        "Gato da floresta norueguesa",
+        "Gato norueguês da floresta",
+        "Skogkatt",
+        "Norwegian forest cat"
+      ]
+    },
+    "bengal": {
+      "name": "Bengal",
+      "slug": "bengal",
+      "synonyms": [
+        "Gato de Bengala",
+        "Bengala"
+      ]
+    }
+  },
+  "suitability_labels": {
+    "suits_title": "Adequado para:",
+    "consider_title": "Tem em conta:",
+    "tags": {
+      "active_family": "uma família ativa",
+      "apartment": "a vida num apartamento",
+      "back_spine": "costas compridas – problemas de coluna, evitar saltos",
+      "brachycephalic_breathing": "focinho achatado – dificuldade em respirar e sensibilidade ao calor",
+      "chases_small_pets": "forte instinto de caça – pode perseguir animais pequenos",
+      "chews_when_bored": "rói objetos quando se aborrece",
+      "children": "famílias com crianças",
+      "cold_sensitive": "pelo fino – sente o frio",
+      "drools": "baba-se – tem um pano à mão",
+      "experienced_owner": "cão poderoso – precisa de um dono experiente",
+      "eyelid_problems": "pálpebras e olhos – confirma os exames oftalmológicos",
+      "family_pet": "a vida em família",
+      "first_time_owner": "quem tem um animal pela primeira vez",
+      "food_motivated_weight": "muito guloso – vigia o peso",
+      "fragile_older_children": "ossos frágeis – melhor com crianças mais velhas",
+      "frequent_grooming": "precisa de escovagem várias vezes por semana",
+      "heart_and_spine": "coração e coluna – confirma os testes de saúde",
+      "heat_sensitive": "pelagem espessa – sofre com o calor",
+      "hips_hind_legs": "ancas e patas traseiras – confirma a saúde das articulações",
+      "independent_experienced_owner": "independente e teimoso – ideal para um dono experiente",
+      "large_home": "uma casa grande com jardim",
+      "lively_older_children": "cão muito vivo – melhor com crianças mais velhas",
+      "long_daily_exercise": "precisa de muito exercício todos os dias",
+      "low_shedding": "casas onde se prefere menos pelo",
+      "may_herd_children": "durante a brincadeira pode tentar «arrebanhar» as crianças",
+      "needs_company": "adora companhia – ideal se houver alguém em casa durante grande parte do dia",
+      "needs_mental_stimulation": "precisa de estímulo mental",
+      "not_for_small_children": "cão grande – não recomendado em casas com crianças pequenas",
+      "often_alone": "famílias que passam algumas horas fora de casa",
+      "older_children": "cão pequeno – melhor com crianças mais velhas",
+      "older_owners": "donos mais velhos",
+      "other_pets": "casas com outros animais",
+      "secure_fencing": "tem tendência para fugir – precisa de uma vedação alta e segura",
+      "sensitive_older_children": "cão sensível – melhor com crianças mais velhas",
+      "sensitive_skin": "pele sensível – tendência para comichão e inflamações",
+      "sheds": "perde pelo",
+      "short_muzzle_breathing": "focinho mais curto – pode ter dificuldade em respirar",
+      "shorter_lifespan": "esperança de vida mais curta",
+      "small_children": "famílias com crianças pequenas",
+      "sun_protection": "pele sem pelo – precisa de proteção solar"
+    }
+  }
+}
