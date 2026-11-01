@@ -395,7 +395,58 @@ const nl: CareCopy = {
   breadcrumb: "Verzorging",
 };
 
-const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es, it, pt, nl };
+/** Polish plural: 1 / 2–4 (not 12–14) / otherwise. Food counts are always whole numbers. */
+function plForm(n: number, one: string, few: string, many: string): string {
+  if (n === 1) return one;
+  const m10 = n % 10, m100 = n % 100;
+  return m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14) ? few : many;
+}
+
+const pl: CareCopy = {
+  speciesWords: {
+    // `plural` in the genitive ("dla psów"); `pet` in the instrumental ("opiekuje się realistycznym psem").
+    dog: { question: "Co mogą jeść psy?", plural: "psów", pet: "psem" },
+    cat: { question: "Co mogą jeść koty?", plural: "kotów", pet: "kotem" },
+  },
+  levels: {
+    toxic: { label: "Toksyczne – zadzwoń do weterynarza", heading: "Toksyczne: nigdy nie podawaj" },
+    dangerous: { label: "Niebezpieczne", heading: "Niebezpieczne" },
+    not_recommended: { label: "Niezalecane", heading: "Lepiej nie" },
+    small_amounts: { label: "W porządku w małych ilościach", heading: "W porządku jako okazjonalny smakołyk" },
+  },
+  hub: {
+    foodsLead: (w) => `Bezpieczne, ryzykowne i toksyczne produkty dla ${w.plural} – przy każdym powód, objawy, na które trzeba uważać, i źródła.`,
+    count: (n) => `${n} ${plForm(n, "produkt", "produkty", "produktów")}`,
+    open: "Otwórz listę",
+  },
+  species: {
+    metaTitle: (w) => `${w.question} Bezpieczne i toksyczne produkty ze źródłami – PetPrep`,
+    metaDescription: (w, n) => `Sprawdziliśmy ${n} ${plForm(n, "produkt", "produkty", "produktów")} pod kątem bezpieczeństwa dla ${w.plural}: co jest toksyczne, co ryzykowne, a co w porządku jako smakołyk – powód, objawy i co robić, z linkiem do każdego źródła.`,
+    eyebrow: "Opieka · żywienie",
+    lead: (w) => `Które produkty są dla ${w.plural} toksyczne, które ryzykowne, a które w porządku – uporządkowane według ryzyka, prosto wyjaśnione, z linkiem do każdego źródła.`,
+    emergencyTitle: "Zwierzę zjadło coś toksycznego?",
+    emergencyText: "Natychmiast zadzwoń do weterynarza lub na telefon informacji toksykologicznej dla zwierząt. Zapisz, co zostało zjedzone i w jakiej ilości – nie czekaj na objawy.",
+  },
+  food: {
+    why: "Dlaczego",
+    signs: "Objawy, na które trzeba uważać",
+    whatToDo: "Co robić",
+    serving: "Jak podawać",
+    forKids: "Dla dzieci",
+    faq: "Pytania i odpowiedzi",
+    related: "Podobne produkty",
+    sources: "Źródła",
+    updated: "Zaktualizowano",
+    notVetReviewed: "Ogólne informacje z poniższych źródeł – niesprawdzone przez weterynarza i niezastępujące porady weterynaryjnej. W razie wątpliwości zadzwoń do weterynarza.",
+    otherSpecies: "Inne zwierzęta",
+    simulates: "Jak dzieci ćwiczą to w aplikacji PetPrep",
+    simulatesText: (w) => `W aplikacji PetPrep dziecko opiekuje się realistycznym ${w.pet}: posiłki o właściwych porach, woda, spacery i pielęgnacja. Wiedza o tym, czym można się bezpiecznie podzielić, to część gotowości na prawdziwe zwierzę domowe.`,
+    backTo: "Wszystkie produkty",
+  },
+  breadcrumb: "Opieka",
+};
+
+const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es, it, pt, nl, pl };
 export const getCareCopy = (l: Locale) => copies[l];
 
 export function speciesWords(l: Locale, speciesId: string): SpeciesWords {
