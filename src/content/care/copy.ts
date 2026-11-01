@@ -446,7 +446,57 @@ const pl: CareCopy = {
   breadcrumb: "Opieka",
 };
 
-const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es, it, pt, nl, pl };
+/** Czech plural: 1 / 2–4 / 0 and 5+. Food counts are always whole numbers. */
+function csForm(n: number, one: string, few: string, many: string): string {
+  if (n === 1) return one;
+  return n >= 2 && n <= 4 ? few : many;
+}
+
+const cs: CareCopy = {
+  speciesWords: {
+    // `plural` in the accusative ("pro psy"); `pet` in the accusative ("stará se o psa").
+    dog: { question: "Co mohou jíst psi?", plural: "psy", pet: "psa" },
+    cat: { question: "Co mohou jíst kočky?", plural: "kočky", pet: "kočku" },
+  },
+  levels: {
+    toxic: { label: "Jedovaté – zavolejte veterináři", heading: "Jedovaté: nikdy nedávejte" },
+    dangerous: { label: "Nebezpečné", heading: "Nebezpečné" },
+    not_recommended: { label: "Nedoporučuje se", heading: "Raději ne" },
+    small_amounts: { label: "V malém množství v pořádku", heading: "V pořádku jako občasný pamlsek" },
+  },
+  hub: {
+    foodsLead: (w) => `Bezpečné, rizikové a jedovaté potraviny pro ${w.plural} – u každé důvod, příznaky, kterých si všímat, a zdroje.`,
+    count: (n) => `${n} ${csForm(n, "potravina", "potraviny", "potravin")}`,
+    open: "Otevřít seznam",
+  },
+  species: {
+    metaTitle: (w) => `${w.question} Bezpečné a jedovaté potraviny se zdroji – PetPrep`,
+    metaDescription: (w, n) => `Prověřili jsme ${n} ${csForm(n, "potravinu", "potraviny", "potravin")} z hlediska bezpečnosti pro ${w.plural}: co je jedovaté, co rizikové a co je v pořádku jako pamlsek – důvod, příznaky a co dělat, s odkazem na každý zdroj.`,
+    eyebrow: "Péče · krmení",
+    lead: (w) => `Které potraviny jsou pro ${w.plural} jedovaté, které rizikové a které v pořádku – seřazené podle rizika, jednoduše vysvětlené, s odkazem na každý zdroj.`,
+    emergencyTitle: "Snědlo zvíře něco jedovatého?",
+    emergencyText: "Ihned zavolejte veterináři nebo na toxikologickou linku pro zvířata. Poznamenejte si, co a kolik zvíře snědlo – nečekejte na příznaky.",
+  },
+  food: {
+    why: "Proč",
+    signs: "Příznaky, kterých si všímat",
+    whatToDo: "Co dělat",
+    serving: "Jak podávat",
+    forKids: "Pro děti",
+    faq: "Otázky a odpovědi",
+    related: "Související potraviny",
+    sources: "Zdroje",
+    updated: "Aktualizováno",
+    notVetReviewed: "Obecné informace z níže uvedených zdrojů – nezkontroloval je veterinář a nenahrazují veterinární radu. Máte-li pochybnosti, zavolejte veterináři.",
+    otherSpecies: "Další zvířata",
+    simulates: "Jak si to děti procvičují v PetPrepu",
+    simulatesText: (w) => `V PetPrepu se dítě stará o ${w.pet} v realistické simulaci: jídlo ve správný čas, voda, procházky a péče. Vědět, které jídlo můžete se zvířetem bezpečně sdílet, patří k připravenosti na vlastního mazlíčka.`,
+    backTo: "Všechny potraviny",
+  },
+  breadcrumb: "Péče",
+};
+
+const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es, it, pt, nl, pl, cs };
 export const getCareCopy = (l: Locale) => copies[l];
 
 export function speciesWords(l: Locale, speciesId: string): SpeciesWords {
