@@ -545,6 +545,7 @@ const cs: RegistryCopy = {
     familial_nephropathy: "U plemene se vyskytuje dědičné onemocnění ledvin (familiární nefropatie); k dispozici je DNA test rodičů.",
     hereditary_nephritis: "U plemene se vyskytuje dědičné onemocnění ledvin (dědičná nefritida, nazývaná také dědičná glomerulopatie samojedů).",
     panosteitis: "U plemene se může vyskytnout panosteitida, bolestivý zánět dlouhých kostí, který obvykle postihuje mladé, rostoucí psy.",
+    splenic_torsion: "Torze sleziny, která vyžaduje okamžitou veterinární péči, se u tohoto plemene vyskytuje častěji než u jiných velkých plemen.",
     urinary_incontinence: "U plemene se může vyskytnout močová inkontinence, nekontrolovaný únik moči.",
     osteochondritis: "U plemene se může vyskytnout osteochondritis dissecans (OCD), porucha kloubní chrupavky u rostoucích psů.",
     scottie_cramp: "U plemene se vyskytuje „scottie cramp“ – krátké epizody svalových křečí, obvykle vyvolané vzrušením; nejsou bolestivé.",
@@ -1302,6 +1303,14 @@ const cs: RegistryCopy = {
         "PDSA doporučuje nejméně hodinu pohybu denně (přibližně 60–90 minut), hodně duševních podnětů a kartáčování jednou týdně; basenži označuje za odtažité, ale spolehlivé, s pevnou vůlí a s velmi slabým smyslem pro nebezpečí na silnici. WebMD uvádí, že pronásledují vše, co vypadá jako kořist, potřebují velmi vysoké ploty nebo neustálý dohled a s malými dětmi vycházejí jen středně dobře, a radí čistit uši jednou týdně a zuby nejméně dvakrát týdně.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "velký švýcarský salašnický pes, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "Velký švýcarský salašnický pes je robustní, těžce osvalený tažný pes se silnými kostmi ze Švýcarska, trikolorní: černý se symetrickými pálenými a bílými znaky. Standard FCI uvádí kohoutkovou výšku 65–72 cm u psů a 60–68 cm u fen, hmotnost však neuvádí; WebMD uvádí 52–64 kg u psů a 39–50 kg u fen. Pes této velikosti je plně dorostlý přibližně v 18–24 měsících (PetMD) a Royal Kennel Club uvádí délku života přes 10 let (PetMD: 8–11 let).",
+        "Royal Kennel Club doporučuje až hodinu pohybu denně a kartáčování jednou týdně a uvádí, že plemeno líná a potřebuje velký dům s velkou zahradou. PetMD je označuje za skvělé rodinné psy, kteří jsou k dětem jemní (každý kontakt s dětmi je třeba hlídat), a radí čistit uši jednou týdně a nenechat psa běhat těsně před jídlem ani po něm kvůli riziku torze žaludku (GDV); WebMD radí čistit zuby každý den a omezit pamlsky, protože plemeno snadno přibírá.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "britka, britská modrá, British Shorthair",

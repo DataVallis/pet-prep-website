@@ -500,6 +500,7 @@ const it: RegistryCopy = {
     familial_nephropathy: "Nella razza si presenta una malattia renale ereditaria (nefropatia familiare); è disponibile un test del DNA dei genitori.",
     hereditary_nephritis: "Nella razza si presenta una malattia renale ereditaria (nefrite ereditaria, chiamata anche glomerulopatia ereditaria del samoiedo).",
     panosteitis: "Nella razza può presentarsi la panosteite, un’infiammazione dolorosa delle ossa lunghe che di solito colpisce i cani giovani in crescita.",
+    splenic_torsion: "La torsione della milza, che richiede cure veterinarie urgenti, è più frequente in questa razza che in altre razze grandi.",
     urinary_incontinence: "Nella razza può presentarsi l’incontinenza urinaria, una perdita involontaria di urina.",
     osteochondritis: "Nella razza può presentarsi l’osteocondrite dissecante (OCD), un disturbo della cartilagine articolare nei cani in crescita.",
     scottie_cramp: "Nella razza si presenta lo «scottie cramp»: brevi episodi di crampi muscolari, di solito scatenati dall’eccitazione; non è doloroso.",
@@ -1253,6 +1254,14 @@ const it: RegistryCopy = {
         "Il PDSA raccomanda almeno un’ora di movimento al giorno (circa 60–90 minuti), tanti stimoli mentali e una spazzolata alla settimana; definisce i basenji distaccati ma affidabili, testardi e con pochissimo senso del pericolo sulla strada. WebMD dice che inseguono qualsiasi cosa sembri una preda, hanno bisogno di recinzioni molto alte o di una sorveglianza costante e stanno solo discretamente bene con i bambini piccoli, e consiglia di pulire le orecchie ogni settimana e di lavare i denti almeno due volte alla settimana.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "Grande Bovaro Svizzero, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "Il Grande Bovaro Svizzero è un cane da tiro tricolore della Svizzera, robusto, di ossatura pesante e ben muscoloso: nero con focature e marcature bianche simmetriche. Lo standard FCI indica un’altezza di 65–72 cm per i maschi e di 60–68 cm per le femmine, ma nessun peso; WebMD indica 52–64 kg per i maschi e 39–50 kg per le femmine. Un cane di questa taglia raggiunge la taglia adulta verso i 18–24 mesi (PetMD), e il Royal Kennel Club indica un’aspettativa di vita di oltre 10 anni (PetMD: 8–11 anni).",
+        "Il Royal Kennel Club raccomanda fino a un’ora di movimento al giorno e una spazzolata alla settimana, e dice che la razza perde pelo e ha bisogno di una casa grande con un grande giardino. PetMD li definisce ottimi cani da famiglia, delicati con i bambini (ogni interazione va sorvegliata), e consiglia di pulire le orecchie ogni settimana e di non farli muovere subito prima o dopo i pasti per il rischio di torsione gastrica (GDV); WebMD consiglia di lavare i denti ogni giorno e di limitare i premietti, perché la razza tende a ingrassare.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "Gatto britannico a pelo corto, British Shorthair, British Blue",

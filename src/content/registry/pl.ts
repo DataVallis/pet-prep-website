@@ -513,6 +513,7 @@ const pl: RegistryCopy = {
     familial_nephropathy: "W rasie występuje dziedziczna choroba nerek (rodzinna nefropatia); dostępny jest test DNA rodziców.",
     hereditary_nephritis: "W rasie występuje dziedziczna choroba nerek (dziedziczne zapalenie nerek, nazywane też dziedziczną glomerulopatią samojedów).",
     panosteitis: "W rasie może występować panosteitis, bolesne zapalenie kości długich, które dotyka zwykle młode, rosnące psy.",
+    splenic_torsion: "Skręt śledziony, który wymaga pilnej pomocy weterynarza, występuje w tej rasie częściej niż u innych dużych ras.",
     urinary_incontinence: "W rasie może występować nietrzymanie moczu, czyli niekontrolowany wyciek moczu.",
     osteochondritis: "W rasie może występować osteochondroza rozwarstwiająca (OCD), zaburzenie chrząstki stawowej u rosnących psów.",
     scottie_cramp: "W rasie występuje „skurcz scottiego” – krótkie epizody skurczów mięśni, zwykle wywołane podekscytowaniem; nie jest bolesny.",
@@ -1269,6 +1270,14 @@ const pl: RegistryCopy = {
         "PDSA zaleca co najmniej godzinę ruchu dziennie (około 60–90 minut), dużo zajęć dla głowy i szczotkowanie raz w tygodniu; nazywa basenji zdystansowanymi, ale godnymi zaufania, upartymi i bardzo nieostrożnymi na drodze. WebMD mówi, że gonią wszystko, co wygląda jak zdobycz, potrzebują bardzo wysokiego ogrodzenia lub stałego nadzoru i tylko umiarkowanie dobrze czują się z małymi dziećmi, i zaleca czyszczenie uszu co tydzień oraz mycie zębów co najmniej dwa razy w tygodniu.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "duży szwajcarski pies pasterski, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "Duży szwajcarski pies pasterski to mocny, kościsty i dobrze umięśniony trójkolorowy pies pociągowy ze Szwajcarii: czarny z symetrycznymi podpalanymi i białymi znaczeniami. Wzorzec FCI podaje wysokość 65–72 cm dla psów i 60–68 cm dla suk, ale nie podaje masy ciała; WebMD podaje 52–64 kg dla psów i 39–50 kg dla suk. Pies tej wielkości osiąga dorosłe rozmiary w wieku około 18–24 miesięcy (PetMD), a Royal Kennel Club podaje, że żyje ponad 10 lat (PetMD: 8–11 lat).",
+        "Royal Kennel Club zaleca do godziny ruchu dziennie i szczotkowanie raz w tygodniu oraz podaje, że rasa linieje i potrzebuje dużego domu z dużym ogrodem. PetMD nazywa te psy świetnymi psami rodzinnymi, łagodnymi wobec dzieci (każdy kontakt z dziećmi należy nadzorować), i zaleca czyszczenie uszu co tydzień oraz unikanie ruchu tuż przed posiłkiem i po nim ze względu na ryzyko skrętu żołądka (GDV); WebMD zaleca codzienne mycie zębów i ograniczanie smakołyków, bo rasa łatwo tyje.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "brytyjczyk, kot brytyjski, British blue, British shorthair, BSH",

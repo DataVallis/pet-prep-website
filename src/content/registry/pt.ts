@@ -493,6 +493,7 @@ const pt: RegistryCopy = {
     familial_nephropathy: "Na raça ocorre uma doença renal hereditária (nefropatia familiar); existe um teste de ADN dos progenitores.",
     hereditary_nephritis: "Na raça ocorre uma doença renal hereditária (nefrite hereditária, também chamada glomerulopatia hereditária do samoiedo).",
     panosteitis: "Na raça pode ocorrer a panosteíte, uma inflamação dolorosa dos ossos longos que costuma afetar cães jovens em crescimento.",
+    splenic_torsion: "A torção do baço, que exige cuidados veterinários urgentes, é mais frequente nesta raça do que noutras raças grandes.",
     urinary_incontinence: "Na raça pode ocorrer incontinência urinária, uma perda involuntária de urina.",
     osteochondritis: "Na raça pode ocorrer a osteocondrite dissecante (OCD), uma perturbação da cartilagem das articulações em cães em crescimento.",
     scottie_cramp: "Na raça ocorre o «scottie cramp»: episódios curtos de cãibras musculares, normalmente desencadeados pela excitação; não é doloroso.",
@@ -1246,6 +1247,14 @@ const pt: RegistryCopy = {
         "A PDSA recomenda pelo menos uma hora de exercício por dia (cerca de 60–90 minutos), muito estímulo mental e escovagem uma vez por semana; descreve os basenjis como distantes mas de confiança, teimosos e com muito pouca noção do perigo na estrada. A WebMD diz que perseguem tudo o que pareça uma presa, precisam de vedações muito altas ou de vigilância constante e são apenas moderadamente bons com crianças pequenas, e aconselha a limpar as orelhas todas as semanas e a escovar os dentes pelo menos duas vezes por semana.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "Grande Boieiro Suíço, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "O grande boieiro suíço é um cão de tração tricolor da Suíça, robusto, de ossatura forte e bem musculado: preto com marcas fogo e brancas simétricas. O padrão da FCI indica uma altura de 65–72 cm para os machos e de 60–68 cm para as fêmeas, mas nenhum peso; a WebMD indica 52–64 kg para os machos e 39–50 kg para as fêmeas. Um cão deste tamanho atinge o tamanho adulto por volta dos 18–24 meses (PetMD), e o Royal Kennel Club indica uma esperança de vida de mais de 10 anos (PetMD: 8–11 anos).",
+        "O Royal Kennel Club recomenda até uma hora de exercício por dia e escovagem uma vez por semana, e diz que a raça larga pelo e precisa de uma casa grande com um jardim grande. A PetMD descreve-os como ótimos cães de família, meigos com as crianças (todas as interações devem ser supervisionadas), e aconselha a limpar as orelhas todas as semanas e a não os exercitar logo antes ou depois das refeições, pelo risco de torção gástrica (GDV); a WebMD aconselha a escovar os dentes todos os dias e a limitar os biscoitos, porque a raça tende a engordar.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "Gato britânico, British Blue",

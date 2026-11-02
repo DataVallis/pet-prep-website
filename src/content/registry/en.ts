@@ -468,6 +468,7 @@ const en: RegistryCopy = {
     familial_nephropathy: "An inherited kidney disease (familial nephropathy) occurs in the breed; a DNA test of the parents is available.",
     hereditary_nephritis: "An inherited kidney disease (hereditary nephritis, also called Samoyed hereditary glomerulopathy) occurs in the breed.",
     panosteitis: "Panosteitis, a painful inflammation of the long bones that usually affects young, growing dogs, can occur in the breed.",
+    splenic_torsion: "Splenic torsion, a twisting of the spleen that needs urgent veterinary care, is more common in this breed than in other large breeds.",
     urinary_incontinence: "Urinary incontinence, an uncontrolled leaking of urine, can occur in the breed.",
     osteochondritis: "Osteochondritis dissecans (OCD), a disorder of the joint cartilage in growing dogs, can occur in the breed.",
     scottie_cramp: "Scottie cramp — short episodes of muscle cramping, usually brought on by excitement — occurs in the breed; it is not painful.",
@@ -1220,6 +1221,14 @@ const en: RegistryCopy = {
         "PDSA recommends at least an hour of exercise a day (around 60–90 minutes), plenty of mental stimulation and brushing once a week; it calls Basenjis aloof but trustworthy, strong-willed and with very poor road sense. WebMD says they will chase anything that looks like prey, need very high fences or constant supervision and are only moderately good with young children, and advises cleaning the ears weekly and brushing the teeth at least twice a week.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "Great Swiss Mountain Dog, Swissy, Grosser Schweizer Sennenhund",
+      text: [
+        "The Greater Swiss Mountain Dog — called the Great Swiss Mountain Dog by the FCI and in the UK — is a sturdy, heavy-boned, well-muscled tricolour draught dog from Switzerland: black with symmetrical tan and white markings. The FCI standard gives a height of 65–72 cm for males and 60–68 cm for females and no weight; WebMD gives 52–64 kg for males and 39–50 kg for females. A dog of this size is fully grown at about 18–24 months (PetMD), and the Royal Kennel Club gives a lifespan of over 10 years (PetMD: 8–11 years).",
+        "The Royal Kennel Club recommends up to an hour of exercise a day and brushing once a week, and says the breed sheds and suits a large house with a large garden. PetMD calls Swissies great family dogs who are gentle with children (all interactions should be supervised), advises cleaning the ears weekly and not exercising them directly before or after meals because of the risk of bloat (GDV); WebMD advises brushing their teeth daily and keeping treats to a minimum, as the breed has problems with obesity.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "British Blue",

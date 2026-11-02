@@ -470,6 +470,7 @@ const de: RegistryCopy = {
     familial_nephropathy: "In der Rasse kommt eine erbliche Nierenerkrankung (familiäre Nephropathie) vor; ein DNA-Test der Elterntiere ist verfügbar.",
     hereditary_nephritis: "In der Rasse kommt eine erbliche Nierenerkrankung vor (hereditäre Nephritis, auch hereditäre Glomerulopathie des Samojeden genannt).",
     panosteitis: "In der Rasse kann Panostitis auftreten, eine schmerzhafte Entzündung der langen Röhrenknochen, die meist junge, wachsende Hunde betrifft.",
+    splenic_torsion: "Eine Milzdrehung, die sofortige tierärztliche Hilfe braucht, kommt in dieser Rasse häufiger vor als bei anderen großen Rassen.",
     urinary_incontinence: "In der Rasse kann Harninkontinenz auftreten, ein unkontrolliertes Austreten von Urin.",
     osteochondritis: "In der Rasse kann Osteochondrosis dissecans (OCD) auftreten, eine Störung des Gelenkknorpels bei wachsenden Hunden.",
     scottie_cramp: "In der Rasse kommt der Scottie Cramp vor – kurze Episoden von Muskelkrämpfen, meist durch Aufregung ausgelöst; er ist nicht schmerzhaft.",
@@ -1223,6 +1224,14 @@ const de: RegistryCopy = {
         "Die PDSA empfiehlt mindestens eine Stunde Bewegung pro Tag (etwa 60–90 Minuten), viel geistige Anregung und Bürsten einmal pro Woche; sie nennt Basenjis distanziert, aber vertrauenswürdig, eigenwillig und mit sehr schlechtem Gespür für den Straßenverkehr. WebMD sagt, dass sie allem nachjagen, was wie Beute aussieht, sehr hohe Zäune oder ständige Aufsicht brauchen und mit kleinen Kindern nur mäßig gut zurechtkommen, und rät, die Ohren wöchentlich zu reinigen und die Zähne mindestens zweimal pro Woche zu putzen.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "Großer Schweizer Sennenhund, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "Der Große Schweizer Sennenhund ist ein kräftiger, schwerknochiger und gut bemuskelter dreifarbiger Zughund aus der Schweiz: schwarz mit symmetrischen braunen und weißen Abzeichen. Der FCI-Standard gibt eine Widerristhöhe von 65–72 cm für Rüden und 60–68 cm für Hündinnen an, aber kein Gewicht; WebMD nennt 52–64 kg für Rüden und 39–50 kg für Hündinnen. Ein Hund dieser Größe ist mit etwa 18–24 Monaten ausgewachsen (PetMD), und der Royal Kennel Club gibt eine Lebenserwartung von über 10 Jahren an (PetMD: 8–11 Jahre).",
+        "Der Royal Kennel Club empfiehlt bis zu einer Stunde Bewegung pro Tag und Bürsten einmal pro Woche; er sagt, dass die Rasse haart und ein großes Haus mit großem Garten braucht. PetMD nennt die Rasse einen großartigen Familienhund, der sanft mit Kindern umgeht (jeder Kontakt sollte beaufsichtigt werden), rät, die Ohren wöchentlich zu reinigen und den Hund wegen der Gefahr einer Magendrehung (GDV) nicht direkt vor oder nach dem Fressen zu bewegen; WebMD rät, täglich die Zähne zu putzen und Leckerlis knapp zu halten, da die Rasse zu Übergewicht neigt.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "British Shorthair, British Blue",
