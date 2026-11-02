@@ -591,7 +591,51 @@ const sv: CareCopy = {
   breadcrumb: "Skötsel",
 };
 
-const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es, it, pt, nl, pl, cs, hr, sv };
+const da: CareCopy = {
+  speciesWords: {
+    // `plural` without article ("for hunde"); `pet` without article ("en realistisk hund" — both common gender).
+    dog: { question: "Hvad må hunde spise?", plural: "hunde", pet: "hund" },
+    cat: { question: "Hvad må katte spise?", plural: "katte", pet: "kat" },
+  },
+  levels: {
+    toxic: { label: "Giftigt – ring til din dyrlæge", heading: "Giftigt: giv det aldrig" },
+    dangerous: { label: "Farligt", heading: "Farligt" },
+    not_recommended: { label: "Frarådes", heading: "Helst ikke" },
+    small_amounts: { label: "Okay i små mængder", heading: "Okay som godbid en gang imellem" },
+  },
+  hub: {
+    foodsLead: (w) => `Sikre, risikable og giftige fødevarer for ${w.plural} – hver med begrundelsen, symptomerne, du skal holde øje med, og kilderne.`,
+    count: (n) => (n === 1 ? "1 fødevare" : `${n} fødevarer`),
+    open: "Åbn listen",
+  },
+  species: {
+    metaTitle: (w) => `${w.question} Sikre og giftige fødevarer med kilder – PetPrep`,
+    metaDescription: (w, n) => `${n === 1 ? "1 fødevare" : `${n} fødevarer`} gennemgået for ${w.plural}: hvad der er giftigt, hvad der er risikabelt og hvad der er okay som godbid – begrundelsen, symptomerne og hvad du skal gøre, med link til hver kilde.`,
+    eyebrow: "Pleje · mad",
+    lead: (w) => `Hvilke fødevarer der er giftige, risikable eller okay for ${w.plural} – sorteret efter risiko, enkelt forklaret og med link til hver kilde.`,
+    emergencyTitle: "Har dyret spist noget giftigt?",
+    emergencyText: "Ring straks til din dyrlæge eller en giftrådgivning for dyr. Skriv ned hvad dyret har spist og hvor meget – vent ikke på symptomer.",
+  },
+  food: {
+    why: "Hvorfor",
+    signs: "Symptomer, du skal holde øje med",
+    whatToDo: "Hvad du skal gøre",
+    serving: "Sådan giver du det",
+    forKids: "For børn",
+    faq: "Spørgsmål og svar",
+    related: "Lignende fødevarer",
+    sources: "Kilder",
+    updated: "Opdateret",
+    notVetReviewed: "Generel information fra kilderne nedenfor – ikke gennemgået af en dyrlæge og ingen erstatning for en dyrlæges råd. Er du i tvivl, så ring til din dyrlæge.",
+    otherSpecies: "Andre dyr",
+    simulates: "Sådan øver børn det i PetPrep",
+    simulatesText: (w) => `I PetPrep passer et barn en realistisk ${w.pet}: måltider til de rigtige tider, vand, gåture og pleje. At vide hvad det er sikkert at dele med dyret, er en del af at være klar til et rigtigt kæledyr.`,
+    backTo: "Alle fødevarer",
+  },
+  breadcrumb: "Pleje",
+};
+
+const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es, it, pt, nl, pl, cs, hr, sv, da };
 export const getCareCopy = (l: Locale) => copies[l];
 
 export function speciesWords(l: Locale, speciesId: string): SpeciesWords {
