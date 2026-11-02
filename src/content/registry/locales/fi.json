@@ -1,0 +1,824 @@
+{
+  "species": {
+    "dog": {
+      "name": {
+        "one": "Koira",
+        "many": "Koirat"
+      },
+      "slug": "koirat",
+      "free_plan": "Sekarotuinen koira"
+    },
+    "cat": {
+      "name": {
+        "one": "Kissa",
+        "many": "Kissat"
+      },
+      "slug": "kissat",
+      "free_plan": "Kotikissa"
+    }
+  },
+  "breeds": {
+    "border_collie": {
+      "name": "Bordercollie",
+      "slug": "bordercollie",
+      "synonyms": [
+        "Border collie",
+        "Border Collie"
+      ],
+      "colours": {
+        "black-white": "Mustavalkoinen",
+        "tricolour": "Kolmivärinen (musta, valkoinen ja punaruskea)",
+        "red-white": "Punavalkoinen",
+        "blue-white": "Sinivalkoinen",
+        "blue-merle-white": "Sinimerle-valkoinen",
+        "red-merle-white": "Punamerle-valkoinen",
+        "sable-white": "Soopelivalkoinen"
+      }
+    },
+    "labrador_retriever": {
+      "name": "Labradorinnoutaja",
+      "slug": "labradorinnoutaja",
+      "synonyms": [
+        "Labrador",
+        "Labrador retriever",
+        "Lab"
+      ]
+    },
+    "golden_retriever": {
+      "name": "Kultainennoutaja",
+      "slug": "kultainennoutaja",
+      "synonyms": [
+        "Kultsu",
+        "Golden retriever",
+        "Golden"
+      ]
+    },
+    "french_bulldog": {
+      "name": "Ranskanbulldoggi",
+      "slug": "ranskanbulldoggi",
+      "synonyms": [
+        "Ranskis",
+        "French bulldog",
+        "Frenchie"
+      ]
+    },
+    "german_shepherd": {
+      "name": "Saksanpaimenkoira",
+      "slug": "saksanpaimenkoira",
+      "synonyms": [
+        "Schäferkoira",
+        "Schäfer",
+        "German shepherd dog",
+        "Alsatian",
+        "GSD"
+      ]
+    },
+    "cavalier_king_charles_spaniel": {
+      "name": "Cavalier kingcharlesinspanieli",
+      "slug": "cavalier-kingcharlesinspanieli",
+      "synonyms": [
+        "Cavalier",
+        "Cavalier King Charles spaniel",
+        "CKCS"
+      ]
+    },
+    "beagle": {
+      "name": "Beagle",
+      "slug": "beagle",
+      "synonyms": [
+        "Beagle-koira"
+      ]
+    },
+    "standard_poodle": {
+      "name": "Isovillakoira",
+      "slug": "isovillakoira",
+      "synonyms": [
+        "Villakoira",
+        "Puudeli",
+        "Standard poodle",
+        "Poodle"
+      ]
+    },
+    "dachshund": {
+      "name": "Mäyräkoira",
+      "slug": "mayrakoira",
+      "synonyms": [
+        "Mäkkäri",
+        "Lyhytkarvainen mäyräkoira",
+        "Dachshund",
+        "Teckel"
+      ]
+    },
+    "australian_shepherd": {
+      "name": "Australianpaimenkoira",
+      "slug": "australianpaimenkoira",
+      "synonyms": [
+        "Aussie",
+        "Australian shepherd"
+      ]
+    },
+    "havanese": {
+      "name": "Havannankoira",
+      "slug": "havannankoira",
+      "synonyms": [
+        "Havanese",
+        "Bichon havanais"
+      ]
+    },
+    "west_highland_white_terrier": {
+      "name": "Valkoinen länsiylämaanterrieri",
+      "slug": "valkoinen-lansiylamaanterrieri",
+      "synonyms": [
+        "Westie",
+        "Länsiylämaanterrieri",
+        "West highland white terrier"
+      ]
+    },
+    "bernese_mountain_dog": {
+      "name": "Berninpaimenkoira",
+      "slug": "berninpaimenkoira",
+      "synonyms": [
+        "Berni",
+        "Berner sennenhund",
+        "Bernese mountain dog"
+      ]
+    },
+    "siberian_husky": {
+      "name": "Siperianhusky",
+      "slug": "siperianhusky",
+      "synonyms": [
+        "Husky",
+        "Siberian husky"
+      ]
+    },
+    "rottweiler": {
+      "name": "Rottweiler",
+      "slug": "rottweiler",
+      "synonyms": [
+        "Rotikka",
+        "Rottis",
+        "Rottie"
+      ]
+    },
+    "bulldog": {
+      "name": "Englanninbulldoggi",
+      "slug": "englanninbulldoggi",
+      "synonyms": [
+        "Bulldoggi",
+        "English bulldog",
+        "Bulldog"
+      ]
+    },
+    "german_shorthaired_pointer": {
+      "name": "Lyhytkarvainen saksanseisoja",
+      "slug": "lyhytkarvainen-saksanseisoja",
+      "synonyms": [
+        "Saksanseisoja",
+        "Kurzhaar",
+        "Deutsch Kurzhaar",
+        "German shorthaired pointer",
+        "GSP"
+      ]
+    },
+    "yorkshire_terrier": {
+      "name": "Yorkshirenterrieri",
+      "slug": "yorkshirenterrieri",
+      "synonyms": [
+        "Yorkki",
+        "Yorkshire terrier",
+        "Yorkie"
+      ]
+    },
+    "cane_corso": {
+      "name": "Cane corso",
+      "slug": "cane-corso",
+      "synonyms": [
+        "Italiancorsokoira",
+        "Cane corso italiano",
+        "Corso"
+      ]
+    },
+    "pembroke_welsh_corgi": {
+      "name": "Welsh corgi pembroke",
+      "slug": "welsh-corgi-pembroke",
+      "synonyms": [
+        "Corgi",
+        "Pembroke",
+        "Pembroke welsh corgi"
+      ]
+    },
+    "dobermann": {
+      "name": "Dobermanni",
+      "slug": "dobermanni",
+      "synonyms": [
+        "Dobermann",
+        "Doberman",
+        "Dobermanninpinseri"
+      ]
+    },
+    "boxer": {
+      "name": "Bokseri",
+      "slug": "bokseri",
+      "synonyms": [
+        "Boxer",
+        "Deutscher Boxer"
+      ]
+    },
+    "miniature_schnauzer": {
+      "name": "Kääpiösnautseri",
+      "slug": "kaapiosnautseri",
+      "synonyms": [
+        "Minisnautseri",
+        "Zwergschnauzer",
+        "Miniature schnauzer"
+      ]
+    },
+    "shih_tzu": {
+      "name": "Shih tzu",
+      "slug": "shih-tzu",
+      "synonyms": [
+        "Shih-tzu",
+        "Shihtzu"
+      ]
+    },
+    "great_dane": {
+      "name": "Tanskandoggi",
+      "slug": "tanskandoggi",
+      "synonyms": [
+        "Doggi",
+        "Great Dane",
+        "Deutsche Dogge"
+      ]
+    },
+    "pomeranian": {
+      "name": "Kääpiöpystykorva",
+      "slug": "kaapiopystykorva",
+      "synonyms": [
+        "Pomeranian",
+        "Pom",
+        "Saksanpystykorva",
+        "Zwergspitz"
+      ]
+    },
+    "boston_terrier": {
+      "name": "Bostoninterrieri",
+      "slug": "bostoninterrieri",
+      "synonyms": [
+        "Boston terrier",
+        "Boston"
+      ]
+    },
+    "miniature_american_shepherd": {
+      "name": "Miniature american shepherd",
+      "slug": "miniature-american-shepherd",
+      "synonyms": [
+        "Amerikanminipaimenkoira",
+        "Mini aussie",
+        "Miniature Australian shepherd",
+        "MAS"
+      ]
+    },
+    "chihuahua": {
+      "name": "Chihuahua",
+      "slug": "chihuahua",
+      "synonyms": [
+        "Chi",
+        "Lyhytkarvainen chihuahua",
+        "Chihuahueño"
+      ]
+    },
+    "english_springer_spaniel": {
+      "name": "Englanninspringerspanieli",
+      "slug": "englanninspringerspanieli",
+      "synonyms": [
+        "Springerspanieli",
+        "Springer",
+        "English springer spaniel"
+      ]
+    },
+    "shetland_sheepdog": {
+      "name": "Shetlanninlammaskoira",
+      "slug": "shetlanninlammaskoira",
+      "synonyms": [
+        "Sheltti",
+        "Sheltie",
+        "Shetland sheepdog"
+      ]
+    },
+    "brittany": {
+      "name": "Bretoni",
+      "slug": "bretoni",
+      "synonyms": [
+        "Bretoninspanieli",
+        "Brittany",
+        "Epagneul breton",
+        "Brittany spaniel"
+      ]
+    },
+    "american_cocker_spaniel": {
+      "name": "Amerikancockerspanieli",
+      "slug": "amerikancockerspanieli",
+      "synonyms": [
+        "Amerikancockeri",
+        "American cocker spaniel"
+      ]
+    },
+    "belgian_malinois": {
+      "name": "Belgianpaimenkoira malinois",
+      "slug": "belgianpaimenkoira-malinois",
+      "synonyms": [
+        "Malinois",
+        "Belgianpaimenkoira",
+        "Belgian malinois"
+      ]
+    },
+    "basset_hound": {
+      "name": "Basset hound",
+      "slug": "basset-hound",
+      "synonyms": [
+        "Bassethound",
+        "Basset"
+      ]
+    },
+    "hungarian_vizsla": {
+      "name": "Lyhytkarvainen unkarinvizsla",
+      "slug": "lyhytkarvainen-unkarinvizsla",
+      "synonyms": [
+        "Unkarinvizsla",
+        "Vizsla",
+        "Magyar vizsla",
+        "Hungarian vizsla"
+      ]
+    },
+    "english_cocker_spaniel": {
+      "name": "Cockerspanieli",
+      "slug": "cockerspanieli",
+      "synonyms": [
+        "Englanninspanieli",
+        "Englantilainen cockerspanieli",
+        "Cocker",
+        "English cocker spaniel",
+        "Cocker spaniel"
+      ]
+    },
+    "maltese": {
+      "name": "Maltankoira",
+      "slug": "maltankoira",
+      "synonyms": [
+        "Maltese",
+        "Bichon maltais"
+      ]
+    },
+    "pug": {
+      "name": "Mopsi",
+      "slug": "mopsi",
+      "synonyms": [
+        "Pug",
+        "Carlin"
+      ]
+    },
+    "rough_collie": {
+      "name": "Pitkäkarvainen collie",
+      "slug": "pitkakarvainen-collie",
+      "synonyms": [
+        "Pitkäkarvainen skotlanninpaimenkoira",
+        "Collie",
+        "Rough collie"
+      ]
+    },
+    "mastiff": {
+      "name": "Mastiffi",
+      "slug": "mastiffi",
+      "synonyms": [
+        "Englanninmastiffi",
+        "Mastiff",
+        "English mastiff"
+      ]
+    },
+    "shiba_inu": {
+      "name": "Shiba",
+      "slug": "shiba",
+      "synonyms": [
+        "Shiba inu",
+        "Shiba ken"
+      ]
+    },
+    "rhodesian_ridgeback": {
+      "name": "Rhodesiankoira",
+      "slug": "rhodesiankoira",
+      "synonyms": [
+        "Ridgeback",
+        "Rhodesian ridgeback"
+      ]
+    },
+    "papillon": {
+      "name": "Papillon",
+      "slug": "papillon",
+      "synonyms": [
+        "Perhoskoira",
+        "Mannermaankääpiöspanieli",
+        "Phalène"
+      ]
+    },
+    "portuguese_water_dog": {
+      "name": "Portugalinvesikoira",
+      "slug": "portugalinvesikoira",
+      "synonyms": [
+        "Portuguese water dog",
+        "Cão de água português",
+        "PWD"
+      ]
+    },
+    "bichon_frise": {
+      "name": "Bichon frisé",
+      "slug": "bichon-frise",
+      "synonyms": [
+        "Bichon frise",
+        "Bichon",
+        "Bichon à poil frisé"
+      ]
+    },
+    "newfoundland": {
+      "name": "Newfoundlandinkoira",
+      "slug": "newfoundlandinkoira",
+      "synonyms": [
+        "Newfoundland",
+        "Newfie"
+      ]
+    },
+    "dalmatian": {
+      "name": "Dalmatiankoira",
+      "slug": "dalmatiankoira",
+      "synonyms": [
+        "Dalmatialainen",
+        "Dalmatian"
+      ]
+    },
+    "australian_cattle_dog": {
+      "name": "Australiankarjakoira",
+      "slug": "australiankarjakoira",
+      "synonyms": [
+        "Karjakoira",
+        "Heeler",
+        "Blue heeler",
+        "Australian cattle dog"
+      ]
+    },
+    "whippet": {
+      "name": "Whippet",
+      "slug": "whippet",
+      "synonyms": [
+        "Whippet-vinttikoira"
+      ]
+    },
+    "wirehaired_pointing_griffon": {
+      "name": "Korthalsingriffoni",
+      "slug": "korthalsingriffoni",
+      "synonyms": [
+        "Korthalsinseisoja",
+        "Korthals griffon",
+        "Wirehaired pointing griffon",
+        "Griffon korthals"
+      ]
+    },
+    "chesapeake_bay_retriever": {
+      "name": "Chesapeakelahdennoutaja",
+      "slug": "chesapeakelahdennoutaja",
+      "synonyms": [
+        "Chessie",
+        "Chesapeake",
+        "Chesapeake bay retriever"
+      ]
+    },
+    "samoyed": {
+      "name": "Samojedinkoira",
+      "slug": "samojedinkoira",
+      "synonyms": [
+        "Samojedi",
+        "Samoyed",
+        "Sammy"
+      ]
+    },
+    "scottish_terrier": {
+      "name": "Skotlanninterrieri",
+      "slug": "skotlanninterrieri",
+      "synonyms": [
+        "Scottie",
+        "Scottish terrier"
+      ]
+    },
+    "weimaraner": {
+      "name": "Weimarinseisoja",
+      "slug": "weimarinseisoja",
+      "synonyms": [
+        "Weimari",
+        "Weimaraner"
+      ]
+    },
+    "italian_greyhound": {
+      "name": "Italianvinttikoira",
+      "slug": "italianvinttikoira",
+      "synonyms": [
+        "Pieni italianvinttikoira",
+        "Italian greyhound",
+        "Piccolo levriero italiano",
+        "Iggy"
+      ]
+    },
+    "giant_schnauzer": {
+      "name": "Suursnautseri",
+      "slug": "suursnautseri",
+      "synonyms": [
+        "Jättisnautseri",
+        "Riesenschnauzer",
+        "Giant schnauzer"
+      ]
+    },
+    "bloodhound": {
+      "name": "Vihikoira",
+      "slug": "vihikoira",
+      "synonyms": [
+        "Bloodhound",
+        "Chien de Saint-Hubert"
+      ]
+    },
+    "akita": {
+      "name": "Amerikanakita",
+      "slug": "amerikanakita",
+      "synonyms": [
+        "Akita",
+        "American akita"
+      ]
+    },
+    "cardigan_welsh_corgi": {
+      "name": "Welsh corgi cardigan",
+      "slug": "welsh-corgi-cardigan",
+      "synonyms": [
+        "Corgi",
+        "Cardigan",
+        "Cardigan welsh corgi"
+      ]
+    },
+    "german_wirehaired_pointer": {
+      "name": "Karkeakarvainen saksanseisoja",
+      "slug": "karkeakarvainen-saksanseisoja",
+      "synonyms": [
+        "Drahthaar",
+        "Deutsch Drahthaar",
+        "German wirehaired pointer"
+      ]
+    },
+    "saint_bernard": {
+      "name": "Bernhardinkoira",
+      "slug": "bernhardinkoira",
+      "synonyms": [
+        "Bernhardiini",
+        "Saint Bernard",
+        "St. Bernard",
+        "Bernhardiner"
+      ]
+    },
+    "staffordshire_bull_terrier": {
+      "name": "Staffordshirenbullterrieri",
+      "slug": "staffordshirenbullterrieri",
+      "synonyms": [
+        "Staffi",
+        "Staffie",
+        "Staffordshire bull terrier"
+      ]
+    },
+    "airedale_terrier": {
+      "name": "Airedalenterrieri",
+      "slug": "airedalenterrieri",
+      "synonyms": [
+        "Airedale",
+        "Airedale terrier"
+      ]
+    },
+    "russell_terrier": {
+      "name": "Jackrussellinterrieri",
+      "slug": "jackrussellinterrieri",
+      "synonyms": [
+        "Jack russell",
+        "Jack Russell terrier",
+        "Russell terrier",
+        "JRT"
+      ]
+    },
+    "bullmastiff": {
+      "name": "Bullmastiffi",
+      "slug": "bullmastiffi",
+      "synonyms": [
+        "Bullmastiff",
+        "Bull mastiff"
+      ]
+    },
+    "chinese_crested": {
+      "name": "Kiinanharjakoira",
+      "slug": "kiinanharjakoira",
+      "synonyms": [
+        "Harjakoira",
+        "Chinese crested",
+        "Powder puff"
+      ]
+    },
+    "nova_scotia_duck_tolling_retriever": {
+      "name": "Novascotiannoutaja",
+      "slug": "novascotiannoutaja",
+      "synonyms": [
+        "Toller",
+        "Nova Scotia duck tolling retriever",
+        "NSDTR"
+      ]
+    },
+    "cairn_terrier": {
+      "name": "Cairnterrieri",
+      "slug": "cairnterrieri",
+      "synonyms": [
+        "Cairn",
+        "Cairn terrier"
+      ]
+    },
+    "bull_terrier": {
+      "name": "Bullterrieri",
+      "slug": "bullterrieri",
+      "synonyms": [
+        "Bull terrier",
+        "English bull terrier"
+      ]
+    },
+    "miniature_pinscher": {
+      "name": "Kääpiöpinseri",
+      "slug": "kaapiopinseri",
+      "synonyms": [
+        "Pinseri",
+        "Zwergpinscher",
+        "Miniature pinscher",
+        "Min pin"
+      ]
+    },
+    "pyrenean_mountain_dog": {
+      "name": "Pyreneittenkoira",
+      "slug": "pyreneittenkoira",
+      "synonyms": [
+        "Pyreneidenkoira",
+        "Great Pyrenees",
+        "Patou",
+        "Pyrenean mountain dog"
+      ]
+    },
+    "soft_coated_wheaten_terrier": {
+      "name": "Vehnäterrieri",
+      "slug": "vehnaterrieri",
+      "synonyms": [
+        "Irlanninsileäterrieri",
+        "Irlanninsoftcoatedwheatenterrieri",
+        "Wheaten",
+        "Wheaten terrieri",
+        "Soft coated wheaten terrier"
+      ]
+    },
+    "irish_wolfhound": {
+      "name": "Irlanninsusikoira",
+      "slug": "irlanninsusikoira",
+      "synonyms": [
+        "Irish wolfhound",
+        "Wolfhound"
+      ]
+    },
+    "american_staffordshire_terrier": {
+      "name": "Amerikanstaffordshirenterrieri",
+      "slug": "amerikanstaffordshirenterrieri",
+      "synonyms": [
+        "Amstaffi",
+        "AmStaff",
+        "American Staffordshire terrier"
+      ]
+    },
+    "lagotto_romagnolo": {
+      "name": "Lagotto romagnolo",
+      "slug": "lagotto-romagnolo",
+      "synonyms": [
+        "Lagotto",
+        "Romagnanvesikoira",
+        "Tryffelikoira"
+      ]
+    },
+    "alaskan_malamute": {
+      "name": "Alaskanmalamuutti",
+      "slug": "alaskanmalamuutti",
+      "synonyms": [
+        "Malamuutti",
+        "Alaskan malamute",
+        "Malamute"
+      ]
+    },
+    "basenji": {
+      "name": "Basenji",
+      "slug": "basenji",
+      "synonyms": [
+        "Kongonkoira",
+        "Haukkumaton koira"
+      ]
+    },
+    "maine_coon": {
+      "name": "Maine coon",
+      "slug": "maine-coon",
+      "synonyms": [
+        "Mainecoon",
+        "Maine coon cat"
+      ]
+    },
+    "british_shorthair": {
+      "name": "Brittiläinen lyhytkarva",
+      "slug": "brittilainen-lyhytkarva",
+      "synonyms": [
+        "Britti",
+        "Brittiläinen sininen",
+        "British shorthair",
+        "BSH"
+      ]
+    },
+    "ragdoll": {
+      "name": "Ragdoll",
+      "slug": "ragdoll",
+      "synonyms": [
+        "Rag doll"
+      ]
+    },
+    "siberian_cat": {
+      "name": "Siperiankissa",
+      "slug": "siperiankissa",
+      "synonyms": [
+        "Siperialainen kissa",
+        "Siperian metsäkissa",
+        "Siberian cat"
+      ]
+    },
+    "norwegian_forest_cat": {
+      "name": "Norjalainen metsäkissa",
+      "slug": "norjalainen-metsakissa",
+      "synonyms": [
+        "Metsäkissa",
+        "Skogkatt",
+        "Norwegian forest cat",
+        "Wegie"
+      ]
+    },
+    "bengal": {
+      "name": "Bengali",
+      "slug": "bengali",
+      "synonyms": [
+        "Bengalinkissa",
+        "Bengal",
+        "Bengal cat"
+      ]
+    }
+  },
+  "suitability_labels": {
+    "suits_title": "Sopii:",
+    "consider_title": "Huomioi:",
+    "tags": {
+      "active_family": "aktiiviselle perheelle",
+      "apartment": "kerrostaloasumiseen",
+      "back_spine": "pitkä selkä – altis selkäongelmille, vältä hyppimistä",
+      "brachycephalic_breathing": "litteät kasvot – hengitysvaikeuksia ja huono lämmönsieto",
+      "chases_small_pets": "voimakas saalisvietti – voi jahdata pieniä lemmikkejä",
+      "chews_when_bored": "pureskelee tavaroita, kun sillä on tylsää",
+      "children": "lapsiperheille",
+      "cold_sensitive": "ohut turkki – palelee helposti",
+      "drools": "kuolaa – pidä liina käsillä",
+      "experienced_owner": "voimakas koira – tarvitsee kokeneen omistajan",
+      "eyelid_problems": "silmäluomet ja silmät – tarkista silmätutkimukset",
+      "family_pet": "perhe-elämään",
+      "first_time_owner": "ensikertalaisille omistajille",
+      "food_motivated_weight": "rakastaa ruokaa – pidä paino kurissa",
+      "fragile_older_children": "hauraat luut – sopii paremmin isommille lapsille",
+      "frequent_grooming": "tarvitsee harjausta useita kertoja viikossa",
+      "heart_and_spine": "sydän ja selkä – tarkista terveystutkimukset",
+      "heat_sensitive": "paksu turkki – kärsii helteestä",
+      "hips_hind_legs": "lonkat ja takajalat – tarkista nivelterveys",
+      "independent_experienced_owner": "itsenäinen ja itsepäinen – sopii parhaiten kokeneelle omistajalle",
+      "large_home": "isoon taloon, jossa on piha",
+      "lively_older_children": "vilkas koira – sopii paremmin isommille lapsille",
+      "long_daily_exercise": "tarvitsee paljon liikuntaa joka päivä",
+      "low_shedding": "koteihin, joissa toivotaan vähemmän karvanlähtöä",
+      "may_herd_children": "voi ”paimentaa” lapsia leikin aikana",
+      "needs_company": "rakastaa seuraa – sopii parhaiten, jos joku on kotona suurimman osan päivästä",
+      "needs_mental_stimulation": "tarvitsee älyllisiä haasteita",
+      "not_for_small_children": "iso koira – ei koteihin, joissa on pieniä lapsia",
+      "often_alone": "perheille, jotka ovat poissa kotoa muutaman tunnin",
+      "older_children": "pieni koira – sopii paremmin isommille lapsille",
+      "older_owners": "iäkkäämmille omistajille",
+      "other_pets": "koteihin, joissa on muita lemmikkejä",
+      "secure_fencing": "karkailee helposti – tarvitsee tukevan ja korkean aidan",
+      "sensitive_older_children": "herkkä koira – sopii paremmin isommille lapsille",
+      "sensitive_skin": "herkkä iho – altis kutinalle ja tulehduksille",
+      "sheds": "karvaa irtoaa",
+      "short_muzzle_breathing": "lyhyempi kuono – voi olla hengitysvaikeuksia",
+      "shorter_lifespan": "lyhyempi elinikä",
+      "small_children": "perheille, joissa on pieniä lapsia",
+      "sun_protection": "paljas iho – tarvitsee aurinkosuojaa"
+    }
+  }
+}

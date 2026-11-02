@@ -635,7 +635,54 @@ const da: CareCopy = {
   breadcrumb: "Pleje",
 };
 
-const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es, it, pt, nl, pl, cs, hr, sv, da };
+/** Finnish: 1 + nominative singular, otherwise numeral + partitive singular ("1 ruoka-aine", "12 ruoka-ainetta"). */
+const fiFoods = (n: number) => (n === 1 ? "1 ruoka-aine" : `${n} ruoka-ainetta`);
+
+const fi: CareCopy = {
+  speciesWords: {
+    // `plural` in the allative ("koirille": for dogs); `pet` in the partitive ("hoitaa realistista koiraa").
+    dog: { question: "Mitä koira saa syödä?", plural: "koirille", pet: "koiraa" },
+    cat: { question: "Mitä kissa saa syödä?", plural: "kissoille", pet: "kissaa" },
+  },
+  levels: {
+    toxic: { label: "Myrkyllinen – soita eläinlääkärille", heading: "Myrkyllinen: älä anna koskaan" },
+    dangerous: { label: "Vaarallinen", heading: "Vaarallinen" },
+    not_recommended: { label: "Ei suositella", heading: "Mieluummin ei" },
+    small_amounts: { label: "Sopii pieninä määrinä", heading: "Sopii satunnaiseksi herkuksi" },
+  },
+  hub: {
+    foodsLead: (w) => `Turvalliset, riskialttiit ja myrkylliset ruoat ${w.plural} – jokaisen kohdalla syy, seurattavat oireet ja lähteet.`,
+    count: (n) => fiFoods(n),
+    open: "Avaa luettelo",
+  },
+  species: {
+    metaTitle: (w) => `${w.question} Turvalliset ja myrkylliset ruoat lähteineen – PetPrep`,
+    metaDescription: (w, n) => `${fiFoods(n)} käyty läpi: mikä on ${w.plural} myrkyllistä, mikä riskialtista ja mikä sopii herkuksi – syy, oireet ja mitä tehdä, jokainen lähde linkitettynä.`,
+    eyebrow: "Hoito · ruoka",
+    lead: (w) => `Mitkä ruoat ovat ${w.plural} myrkyllisiä, riskialttiita tai sopivia – riskin mukaan järjestettyinä ja selkeästi selitettyinä, jokainen lähde linkitettynä.`,
+    emergencyTitle: "Söikö lemmikkisi jotain myrkyllistä?",
+    emergencyText: "Soita heti eläinlääkärille tai eläinten myrkytysneuvontaan. Kirjaa ylös, mitä lemmikki söi ja kuinka paljon – älä odota oireita.",
+  },
+  food: {
+    why: "Miksi",
+    signs: "Seurattavat oireet",
+    whatToDo: "Mitä tehdä",
+    serving: "Näin annat sitä",
+    forKids: "Lapsille",
+    faq: "Kysymyksiä ja vastauksia",
+    related: "Samankaltaiset ruoat",
+    sources: "Lähteet",
+    updated: "Päivitetty",
+    notVetReviewed: "Yleistä tietoa alla olevista lähteistä. Eläinlääkäri ei ole tarkistanut tietoja, eivätkä ne korvaa eläinlääkärin neuvoja. Jos olet epävarma, soita eläinlääkärille.",
+    otherSpecies: "Muut eläimet",
+    simulates: "Näin lapset harjoittelevat tätä PetPrepissä",
+    simulatesText: (w) => `PetPrepissä lapsi hoitaa realistista ${w.pet}: ateriat oikeaan aikaan, vesi, lenkit ja huolenpito. Tieto siitä, mitä lemmikin kanssa voi turvallisesti jakaa, on osa valmiutta oikeaan lemmikkiin.`,
+    backTo: "Kaikki ruoat",
+  },
+  breadcrumb: "Hoito",
+};
+
+const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es, it, pt, nl, pl, cs, hr, sv, da, fi };
 export const getCareCopy = (l: Locale) => copies[l];
 
 export function speciesWords(l: Locale, speciesId: string): SpeciesWords {

@@ -130,4 +130,13 @@ export const kidsCopy: Record<Locale, KidsCopy> = {
       { page: "walkyourpet", title: "#walkyourpet", text: "Bevægelsen som et barn startede: kom ud og gå en tur.", image: null },
     ],
   },
+  fi: {
+    menu: "Lapsille",
+    all: "Kaikki lapsille",
+    items: [
+      { page: "coloring", title: "Värityskuvat", text: "12 ilmaista tulostettavaa kuvaa – jokaisessa tositieto lemmikin hoidosta.", image: coloringThumb },
+      { page: "curio", title: "Tutustu Curioon", text: "Maskottimme ja sen lyhyet videot.", image: curioThumb },
+      { page: "walkyourpet", title: "#walkyourpet", text: "Liike, jonka lapsi aloitti: lähde ulos lenkille.", image: null },
+    ],
+  },
 };
