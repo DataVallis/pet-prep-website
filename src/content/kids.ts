@@ -121,4 +121,13 @@ export const kidsCopy: Record<Locale, KidsCopy> = {
       { page: "walkyourpet", title: "#walkyourpet", text: "Rörelsen som ett barn startade: gå ut på promenad.", image: null },
     ],
   },
+  da: {
+    menu: "For børn",
+    all: "Alt for børn",
+    items: [
+      { page: "coloring", title: "Tegninger til farvelægning", text: "12 gratis tegninger til at printe ud, hver med en faktaoplysning om dyrepleje.", image: coloringThumb },
+      { page: "curio", title: "Mød Curio", text: "Vores maskot og dens korte videoer.", image: curioThumb },
+      { page: "walkyourpet", title: "#walkyourpet", text: "Bevægelsen som et barn startede: kom ud og gå en tur.", image: null },
+    ],
+  },
 };
