@@ -183,7 +183,19 @@ function load(): Registry {
   const raw: unknown = file ? JSON.parse(readFileSync(file, "utf8")) : structuredClone(bundled);
   const r = raw as Registry;
   if (r.schema_version !== 2) throw new Error(`registry: unsupported schema_version ${String(r.schema_version)} — re-export in pet-prep`);
-  return fillLocales(r);
+  return fillLocales(withPortraitsOnly(r));
+}
+
+/**
+ * A breed never appears on the site without its photo (David 2026-10-19). The hourly registry sync copies the pet-prep
+ * export as soon as a breed is merged there; its AI portrait can follow later (e.g. a portrait run that waits for a
+ * production deploy). Until the export carries `portrait`, the breed is left out of every page, list, index and sitemap;
+ * the breed's website PR (pet-prep ADD_BREED_RUNBOOK §9) brings the portrait file.
+ */
+function withPortraitsOnly(r: Registry): Registry {
+  const hidden = r.breeds.filter((b) => !b.portrait).map((b) => b.id);
+  if (hidden.length) console.warn(`registry: ${hidden.length} breed(s) without a portrait not shown yet: ${hidden.join(", ")}`);
+  return { ...r, breeds: r.breeds.filter((b) => b.portrait) };
 }
 
 export const registry: Registry = load();
