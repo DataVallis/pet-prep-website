@@ -315,7 +315,7 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
       steps: [
         "Choisissez un coloriage et imprimez-le – en A4 ou US Letter, le noir et blanc suffit.",
         "Coloriez-le, ou recopiez le dessin sur une feuille blanche.",
-        "Lisez ensemble l’info de la page : chacune provient d’une source vétérinaire ou d’un club de race.",
+        "Lisez ensemble l’information de la page : chacune provient d’une source vétérinaire ou d’un club de race.",
       ],
     },
     share: {
@@ -325,8 +325,8 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
     licence: "Gratuit pour un usage personnel, familial et en classe. Merci de ne pas vendre ni republier les coloriages.",
     page: {
       metaTitle: (t) => `${t} – coloriage gratuit à imprimer | PetPrep`,
-      metaDescription: (t) => `${t} : un coloriage gratuit à imprimer pour les enfants (PDF A4 et US Letter), avec une vraie info sur les soins aux animaux et sa source. Par PetPrep.`,
-      lead: "Gratuit à imprimer et à colorier. Sur la page : une vraie info sur les soins aux animaux, à lire ensemble.",
+      metaDescription: (t) => `${t} : un coloriage gratuit à imprimer pour les enfants (PDF A4 et US Letter), avec une vraie information sur les soins aux animaux et sa source. Par PetPrep.`,
+      lead: "Gratuit à imprimer et à colorier. Sur la page : une vraie information sur les soins aux animaux, à lire ensemble.",
       print: "Imprimer",
       pdfA4: "PDF (A4)",
       pdfLetter: "PDF (US Letter)",
