@@ -682,7 +682,54 @@ const fi: CareCopy = {
   breadcrumb: "Hoito",
 };
 
-const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es, it, pt, nl, pl, cs, hr, sv, da, fi };
+/** Norwegian Bokmål: 1 matvare / N matvarer. */
+const nbFoods = (n: number) => (n === 1 ? "1 matvare" : `${n} matvarer`);
+
+const nb: CareCopy = {
+  speciesWords: {
+    // `plural` without article ("for hunder"); `pet` without article ("en realistisk hund" — both masculine).
+    dog: { question: "Hva kan hunder spise?", plural: "hunder", pet: "hund" },
+    cat: { question: "Hva kan katter spise?", plural: "katter", pet: "katt" },
+  },
+  levels: {
+    toxic: { label: "Giftig – ring dyrlegen", heading: "Giftig: gi det aldri" },
+    dangerous: { label: "Farlig", heading: "Farlig" },
+    not_recommended: { label: "Frarådes", heading: "Helst ikke" },
+    small_amounts: { label: "Greit i små mengder", heading: "Greit som en godbit av og til" },
+  },
+  hub: {
+    foodsLead: (w) => `Trygge, risikable og giftige matvarer for ${w.plural} – hver med begrunnelsen, symptomene du bør se etter og kildene.`,
+    count: (n) => nbFoods(n),
+    open: "Åpne listen",
+  },
+  species: {
+    metaTitle: (w) => `${w.question} Trygge og giftige matvarer med kilder – PetPrep`,
+    metaDescription: (w, n) => `${nbFoods(n)} gjennomgått for ${w.plural}: hva som er giftig, hva som er risikabelt, og hva som er greit som godbit – begrunnelsen, symptomene og hva du bør gjøre, med lenke til hver kilde.`,
+    eyebrow: "Stell · mat",
+    lead: (w) => `Hvilke matvarer som er giftige, risikable eller greie for ${w.plural} – sortert etter risiko, enkelt forklart og med lenke til hver kilde.`,
+    emergencyTitle: "Har dyret spist noe giftig?",
+    emergencyText: "Kontakt dyrlegen eller giftinformasjon for dyr med en gang. Skriv ned hva dyret har spist og hvor mye – ikke vent på symptomer.",
+  },
+  food: {
+    why: "Hvorfor",
+    signs: "Symptomer du bør se etter",
+    whatToDo: "Hva du bør gjøre",
+    serving: "Slik gir du det",
+    forKids: "For barn",
+    faq: "Spørsmål og svar",
+    related: "Lignende matvarer",
+    sources: "Kilder",
+    updated: "Oppdatert",
+    notVetReviewed: "Generell informasjon fra kildene nedenfor – ikke gjennomgått av en dyrlege og ingen erstatning for råd fra dyrlegen. Er du i tvil, ring dyrlegen.",
+    otherSpecies: "Andre dyr",
+    simulates: "Slik øver barn på dette i PetPrep",
+    simulatesText: (w) => `I PetPrep passer et barn på en realistisk ${w.pet}: måltider til riktig tid, vann, turer og stell. Å vite hva som er trygt å dele med dyret, er en del av å være klar for et ekte kjæledyr.`,
+    backTo: "Alle matvarer",
+  },
+  breadcrumb: "Stell",
+};
+
+const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es, it, pt, nl, pl, cs, hr, sv, da, fi, nb };
 export const getCareCopy = (l: Locale) => copies[l];
 
 export function speciesWords(l: Locale, speciesId: string): SpeciesWords {

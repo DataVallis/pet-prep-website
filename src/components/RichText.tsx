@@ -3,7 +3,7 @@ import type { Locale } from "@/i18n/config";
 import { parseLinks } from "@/lib/links";
 
 /** Screen-reader note on links that open in a new tab. */
-const newTabNote: Record<Locale, string> = { en: " (opens in a new tab)", sl: " (odpre se v novem zavihku)", de: " (öffnet sich in einem neuen Tab)", fr: " (s’ouvre dans un nouvel onglet)", es: " (se abre en una pestaña nueva)", it: " (si apre in una nuova scheda)", pt: " (abre num novo separador)", nl: " (opent in een nieuw tabblad)", pl: " (otwiera się w nowej karcie)", cs: " (otevře se na nové kartě)", hr: " (otvara se u novoj kartici)", sv: " (öppnas i en ny flik)", da: " (åbner i en ny fane)", fi: " (avautuu uuteen välilehteen)" };
+const newTabNote: Record<Locale, string> = { en: " (opens in a new tab)", sl: " (odpre se v novem zavihku)", de: " (öffnet sich in einem neuen Tab)", fr: " (s’ouvre dans un nouvel onglet)", es: " (se abre en una pestaña nueva)", it: " (si apre in una nuova scheda)", pt: " (abre num novo separador)", nl: " (opent in een nieuw tabblad)", pl: " (otwiera się w nowej karcie)", cs: " (otevře se na nové kartě)", hr: " (otvara se u novoj kartici)", sv: " (öppnas i en ny flik)", da: " (åbner i en ny fane)", fi: " (avautuu uuteen välilehteen)", nb: " (åpnes i en ny fane)" };
 
 /**
  * A content string with optional `[label](ref)` links (see src/lib/links.ts). External links and
