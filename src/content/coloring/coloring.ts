@@ -607,13 +607,13 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
     },
     share: {
       title: "Pokaži svoj crtež",
-      text: "Za roditelje: objavi fotografiju gotovog crteža, označi @petprep.si i dodaj #walkyourpet – jako bismo ga voljeli vidjeti. Molimo te, pokaži samo crtež, a ne lice ili ime svog djeteta.",
+      text: "Za roditelje: objavi fotografiju gotovog crteža, označi @petprep.si i dodaj #walkyourpet – rado bismo ga vidjeli. Pokaži samo crtež, a ne i lice ili ime svog djeteta.",
     },
     licence: "Besplatno za osobnu, obiteljsku i školsku upotrebu. Molimo te da bojanke ne prodaješ niti ih objavljuješ drugdje.",
     page: {
       metaTitle: (t) => `${t} – besplatna bojanka za ispis | PetPrep`,
-      metaDescription: (t) => `${t}: besplatna dječja bojanka za ispis (PDF u formatima A4 i US Letter), uz pravu zanimljivost o brizi za životinje i njezin izvor. Pripremio PetPrep.`,
-      lead: "Besplatno za ispis i bojanje. Na stranici je i prava zanimljivost o brizi za životinje – pročitajte je zajedno.",
+      metaDescription: (t) => `${t}: besplatna dječja bojanka za ispis (PDF u formatima A4 i US Letter), uz pravu zanimljivost o brizi za ljubimca i njezin izvor. Pripremio PetPrep.`,
+      lead: "Besplatno za ispis i bojanje. Na stranici je i prava zanimljivost o brizi za ljubimca – pročitajte je zajedno.",
       print: "Ispiši",
       pdfA4: "PDF (A4)",
       pdfLetter: "PDF (US Letter)",
@@ -624,8 +624,8 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
       back: "Sve bojanke",
     },
     pageTip: {
-      curio: { title: "Upoznaj Curija", text: "Curio je mala znatiželjna kocka iz logotipa PetPrepa koja je oživjela: velike oči, nos boje maline i ovratnik boje mente. Oboji ga u njegove prave boje – ili izmisli svoje." },
-      walkyourpet: { title: "#walkyourpet", text: "Pas treba svoju šetnju svaki dan – u PetPrepu se računa samo ako stvarno izađeš van." },
+      curio: { title: "Upoznaj Curija", text: "Curio je mala znatiželjna kocka iz logotipa PetPrepa koja je oživjela: velike oči, nos boje maline i ogrlica boje mente. Oboji ga u njegove prave boje – ili izmisli svoje." },
+      walkyourpet: { title: "#walkyourpet", text: "Pas treba svoju šetnju svaki dan – u PetPrepu se računa samo ona na kojoj stvarno izađeš iz kuće." },
     },
   },
   sv: {
