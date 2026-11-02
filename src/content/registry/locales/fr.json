@@ -636,6 +636,26 @@
       "synonyms": [
         "Chat bengal"
       ]
+    },
+    "rat_terrier": {
+      "name": "Rat Terrier",
+      "slug": "rat-terrier",
+      "synonyms": [
+        "Rattie",
+        "Ratty",
+        "American Rat Terrier"
+      ]
+    },
+    "greater_swiss_mountain_dog": {
+      "name": "Grand bouvier suisse",
+      "slug": "grand-bouvier-suisse",
+      "synonyms": [
+        "Grand Suisse",
+        "Grosser Schweizer Sennenhund",
+        "Großer Schweizer Sennenhund",
+        "Swissy",
+        "Greater Swiss Mountain Dog"
+      ]
     }
   },
   "suitability_labels": {
