@@ -1,4 +1,4 @@
-export const locales = ["en", "sl", "de", "fr", "es", "it", "pt", "nl", "pl", "cs", "hr", "sv", "da"] as const;
+export const locales = ["en", "sl", "de", "fr", "es", "it", "pt", "nl", "pl", "cs", "hr", "sv", "da", "fi"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
 
@@ -26,6 +26,7 @@ export const localeMeta: Record<Locale, { htmlLang: string; og: string; label: s
   hr: { htmlLang: "hr", og: "hr_HR", label: "Hrvatski", short: "HR", intl: "hr-HR", country: "HR" },
   sv: { htmlLang: "sv", og: "sv_SE", label: "Svenska", short: "SV", intl: "sv-SE", country: "SE" },
   da: { htmlLang: "da", og: "da_DK", label: "Dansk", short: "DA", intl: "da-DK", country: "DK" },
+  fi: { htmlLang: "fi", og: "fi_FI", label: "Suomi", short: "FI", intl: "fi-FI", country: "FI" },
 };
 
 /**
@@ -42,31 +43,31 @@ export const localePattern = locales.join("|");
 
 /** Every page of the site, with its localized slug. "home" has no slug. */
 export const pageSlugs = {
-  howItWorks: { en: "how-it-works", sl: "kako-deluje", de: "so-funktioniert-es", fr: "comment-ca-marche", es: "como-funciona", it: "come-funziona", pt: "como-funciona", nl: "zo-werkt-het", pl: "jak-to-dziala", cs: "jak-to-funguje", hr: "kako-funkcionira", sv: "sa-fungerar-det", da: "saadan-virker-det" },
-  parents: { en: "for-parents", sl: "za-starse", de: "fuer-eltern", fr: "pour-les-parents", es: "para-padres", it: "per-i-genitori", pt: "para-pais", nl: "voor-ouders", pl: "dla-rodzicow", cs: "pro-rodice", hr: "za-roditelje", sv: "for-foraldrar", da: "for-foraeldre" },
-  afterAdoption: { en: "when-it-comes-home", sl: "ko-pride-domov", de: "wenn-es-einzieht", fr: "quand-il-arrive-a-la-maison", es: "cuando-llega-a-casa", it: "quando-arriva-a-casa", pt: "quando-chega-a-casa", nl: "als-het-thuiskomt", pl: "gdy-trafi-do-domu", cs: "az-prijde-domu", hr: "kad-stigne-kuci", sv: "nar-den-kommer-hem", da: "naar-den-kommer-hjem" },
-  pricing: { en: "pricing", sl: "cenik", de: "preise", fr: "tarifs", es: "precios", it: "prezzi", pt: "precos", nl: "prijzen", pl: "cennik", cs: "cenik", hr: "cjenik", sv: "priser", da: "priser" },
-  faq: { en: "faq", sl: "pogosta-vprasanja", de: "haeufige-fragen", fr: "questions-frequentes", es: "preguntas-frecuentes", it: "domande-frequenti", pt: "perguntas-frequentes", nl: "veelgestelde-vragen", pl: "najczestsze-pytania", cs: "caste-dotazy", hr: "cesta-pitanja", sv: "vanliga-fragor", da: "ofte-stillede-spoergsmaal" },
-  partners: { en: "partners", sl: "partnerji", de: "partner", fr: "partenaires", es: "socios", it: "partner", pt: "parceiros", nl: "partners", pl: "partnerzy", cs: "partneri", hr: "partneri", sv: "partner", da: "partnere" },
-  investors: { en: "investors", sl: "vlagatelji", de: "investoren", fr: "investisseurs", es: "inversores", it: "investitori", pt: "investidores", nl: "investeerders", pl: "inwestorzy", cs: "investori", hr: "investitori", sv: "investerare", da: "investorer" },
-  contact: { en: "contact", sl: "kontakt", de: "kontakt", fr: "contact", es: "contacto", it: "contatti", pt: "contacto", nl: "contact", pl: "kontakt", cs: "kontakt", hr: "kontakt", sv: "kontakt", da: "kontakt" },
-  privacy: { en: "privacy", sl: "zasebnost", de: "datenschutz", fr: "confidentialite", es: "privacidad", it: "privacy", pt: "privacidade", nl: "privacy", pl: "prywatnosc", cs: "ochrana-soukromi", hr: "privatnost", sv: "integritetspolicy", da: "privatlivspolitik" },
-  terms: { en: "terms", sl: "pogoji", de: "nutzungsbedingungen", fr: "conditions-d-utilisation", es: "condiciones-de-uso", it: "condizioni-d-uso", pt: "termos-de-utilizacao", nl: "gebruiksvoorwaarden", pl: "regulamin", cs: "podminky-uzivani", hr: "uvjeti-koristenja", sv: "anvandarvillkor", da: "brugsvilkaar" },
-  childSafety: { en: "child-safety", sl: "varnost-otrok", de: "kindersicherheit", fr: "securite-des-enfants", es: "seguridad-infantil", it: "sicurezza-dei-bambini", pt: "seguranca-infantil", nl: "kinderveiligheid", pl: "bezpieczenstwo-dzieci", cs: "bezpecnost-deti", hr: "sigurnost-djece", sv: "barnsakerhet", da: "boerns-sikkerhed" },
-  deleteAccount: { en: "delete-account", sl: "izbris-racuna", de: "konto-loeschen", fr: "supprimer-le-compte", es: "eliminar-cuenta", it: "elimina-account", pt: "eliminar-conta", nl: "account-verwijderen", pl: "usuwanie-konta", cs: "smazani-uctu", hr: "brisanje-racuna", sv: "radera-konto", da: "slet-konto" },
-  accessibility: { en: "accessibility", sl: "dostopnost", de: "barrierefreiheit", fr: "accessibilite", es: "accesibilidad", it: "accessibilita", pt: "acessibilidade", nl: "toegankelijkheid", pl: "dostepnosc", cs: "pristupnost", hr: "pristupacnost", sv: "tillganglighet", da: "tilgaengelighed" },
-  animals: { en: "animals", sl: "zivali", de: "tiere", fr: "animaux", es: "animales", it: "animali", pt: "animais", nl: "dieren", pl: "zwierzeta", cs: "zvirata", hr: "zivotinje", sv: "djur", da: "dyr" },
-  about: { en: "about", sl: "o-nas", de: "ueber-uns", fr: "a-propos", es: "sobre-nosotros", it: "chi-siamo", pt: "sobre-nos", nl: "over-ons", pl: "o-nas", cs: "o-nas", hr: "o-nama", sv: "om-oss", da: "om-os" },
+  howItWorks: { en: "how-it-works", sl: "kako-deluje", de: "so-funktioniert-es", fr: "comment-ca-marche", es: "como-funciona", it: "come-funziona", pt: "como-funciona", nl: "zo-werkt-het", pl: "jak-to-dziala", cs: "jak-to-funguje", hr: "kako-funkcionira", sv: "sa-fungerar-det", da: "saadan-virker-det", fi: "nain-se-toimii" },
+  parents: { en: "for-parents", sl: "za-starse", de: "fuer-eltern", fr: "pour-les-parents", es: "para-padres", it: "per-i-genitori", pt: "para-pais", nl: "voor-ouders", pl: "dla-rodzicow", cs: "pro-rodice", hr: "za-roditelje", sv: "for-foraldrar", da: "for-foraeldre", fi: "vanhemmille" },
+  afterAdoption: { en: "when-it-comes-home", sl: "ko-pride-domov", de: "wenn-es-einzieht", fr: "quand-il-arrive-a-la-maison", es: "cuando-llega-a-casa", it: "quando-arriva-a-casa", pt: "quando-chega-a-casa", nl: "als-het-thuiskomt", pl: "gdy-trafi-do-domu", cs: "az-prijde-domu", hr: "kad-stigne-kuci", sv: "nar-den-kommer-hem", da: "naar-den-kommer-hjem", fi: "kun-lemmikki-tulee-kotiin" },
+  pricing: { en: "pricing", sl: "cenik", de: "preise", fr: "tarifs", es: "precios", it: "prezzi", pt: "precos", nl: "prijzen", pl: "cennik", cs: "cenik", hr: "cjenik", sv: "priser", da: "priser", fi: "hinnat" },
+  faq: { en: "faq", sl: "pogosta-vprasanja", de: "haeufige-fragen", fr: "questions-frequentes", es: "preguntas-frecuentes", it: "domande-frequenti", pt: "perguntas-frequentes", nl: "veelgestelde-vragen", pl: "najczestsze-pytania", cs: "caste-dotazy", hr: "cesta-pitanja", sv: "vanliga-fragor", da: "ofte-stillede-spoergsmaal", fi: "usein-kysyttya" },
+  partners: { en: "partners", sl: "partnerji", de: "partner", fr: "partenaires", es: "socios", it: "partner", pt: "parceiros", nl: "partners", pl: "partnerzy", cs: "partneri", hr: "partneri", sv: "partner", da: "partnere", fi: "kumppanit" },
+  investors: { en: "investors", sl: "vlagatelji", de: "investoren", fr: "investisseurs", es: "inversores", it: "investitori", pt: "investidores", nl: "investeerders", pl: "inwestorzy", cs: "investori", hr: "investitori", sv: "investerare", da: "investorer", fi: "sijoittajat" },
+  contact: { en: "contact", sl: "kontakt", de: "kontakt", fr: "contact", es: "contacto", it: "contatti", pt: "contacto", nl: "contact", pl: "kontakt", cs: "kontakt", hr: "kontakt", sv: "kontakt", da: "kontakt", fi: "yhteystiedot" },
+  privacy: { en: "privacy", sl: "zasebnost", de: "datenschutz", fr: "confidentialite", es: "privacidad", it: "privacy", pt: "privacidade", nl: "privacy", pl: "prywatnosc", cs: "ochrana-soukromi", hr: "privatnost", sv: "integritetspolicy", da: "privatlivspolitik", fi: "tietosuoja" },
+  terms: { en: "terms", sl: "pogoji", de: "nutzungsbedingungen", fr: "conditions-d-utilisation", es: "condiciones-de-uso", it: "condizioni-d-uso", pt: "termos-de-utilizacao", nl: "gebruiksvoorwaarden", pl: "regulamin", cs: "podminky-uzivani", hr: "uvjeti-koristenja", sv: "anvandarvillkor", da: "brugsvilkaar", fi: "kayttoehdot" },
+  childSafety: { en: "child-safety", sl: "varnost-otrok", de: "kindersicherheit", fr: "securite-des-enfants", es: "seguridad-infantil", it: "sicurezza-dei-bambini", pt: "seguranca-infantil", nl: "kinderveiligheid", pl: "bezpieczenstwo-dzieci", cs: "bezpecnost-deti", hr: "sigurnost-djece", sv: "barnsakerhet", da: "boerns-sikkerhed", fi: "lasten-turvallisuus" },
+  deleteAccount: { en: "delete-account", sl: "izbris-racuna", de: "konto-loeschen", fr: "supprimer-le-compte", es: "eliminar-cuenta", it: "elimina-account", pt: "eliminar-conta", nl: "account-verwijderen", pl: "usuwanie-konta", cs: "smazani-uctu", hr: "brisanje-racuna", sv: "radera-konto", da: "slet-konto", fi: "tilin-poistaminen" },
+  accessibility: { en: "accessibility", sl: "dostopnost", de: "barrierefreiheit", fr: "accessibilite", es: "accesibilidad", it: "accessibilita", pt: "acessibilidade", nl: "toegankelijkheid", pl: "dostepnosc", cs: "pristupnost", hr: "pristupacnost", sv: "tillganglighet", da: "tilgaengelighed", fi: "saavutettavuus" },
+  animals: { en: "animals", sl: "zivali", de: "tiere", fr: "animaux", es: "animales", it: "animali", pt: "animais", nl: "dieren", pl: "zwierzeta", cs: "zvirata", hr: "zivotinje", sv: "djur", da: "dyr", fi: "elaimet" },
+  about: { en: "about", sl: "o-nas", de: "ueber-uns", fr: "a-propos", es: "sobre-nosotros", it: "chi-siamo", pt: "sobre-nos", nl: "over-ons", pl: "o-nas", cs: "o-nas", hr: "o-nama", sv: "om-oss", da: "om-os", fi: "meista" },
   /** Mascot page (David 2026-10-25): linked from the footer only. */
-  curio: { en: "meet-curio", sl: "spoznaj-curia", de: "curio-kennenlernen", fr: "decouvrir-curio", es: "conoce-a-curio", it: "conosci-curio", pt: "conhece-o-curio", nl: "maak-kennis-met-curio", pl: "poznaj-curio", cs: "poznejte-curio", hr: "upoznaj-curija", sv: "mot-curio", da: "moed-curio" },
+  curio: { en: "meet-curio", sl: "spoznaj-curia", de: "curio-kennenlernen", fr: "decouvrir-curio", es: "conoce-a-curio", it: "conosci-curio", pt: "conhece-o-curio", nl: "maak-kennis-met-curio", pl: "poznaj-curio", cs: "poznejte-curio", hr: "upoznaj-curija", sv: "mot-curio", da: "moed-curio", fi: "tutustu-curioon" },
   /** #walkyourpet movement (David 2026-10-30): the phrase is never translated, same slug everywhere. */
-  walkyourpet: { en: "walkyourpet", sl: "walkyourpet", de: "walkyourpet", fr: "walkyourpet", es: "walkyourpet", it: "walkyourpet", pt: "walkyourpet", nl: "walkyourpet", pl: "walkyourpet", cs: "walkyourpet", hr: "walkyourpet", sv: "walkyourpet", da: "walkyourpet" },
+  walkyourpet: { en: "walkyourpet", sl: "walkyourpet", de: "walkyourpet", fr: "walkyourpet", es: "walkyourpet", it: "walkyourpet", pt: "walkyourpet", nl: "walkyourpet", pl: "walkyourpet", cs: "walkyourpet", hr: "walkyourpet", sv: "walkyourpet", da: "walkyourpet", fi: "walkyourpet" },
   /** Care knowledge (M6-K, David 2026-10-31): /care → /care/<species> → /care/<species>/<food>. */
-  care: { en: "care", sl: "skrb", de: "ratgeber", fr: "conseils", es: "consejos", it: "consigli", pt: "conselhos", nl: "verzorging", pl: "opieka", cs: "pece", hr: "njega", sv: "skotsel", da: "pleje" },
+  care: { en: "care", sl: "skrb", de: "ratgeber", fr: "conseils", es: "consejos", it: "consigli", pt: "conselhos", nl: "verzorging", pl: "opieka", cs: "pece", hr: "njega", sv: "skotsel", da: "pleje", fi: "hoito" },
   /** Free printable colouring pages (David 2026-10-31): /coloring-pages → /coloring-pages/<page>. */
-  coloring: { en: "coloring-pages", sl: "pobarvanke", de: "ausmalbilder", fr: "coloriages", es: "dibujos-para-colorear", it: "disegni-da-colorare", pt: "desenhos-para-colorir", nl: "kleurplaten", pl: "kolorowanki", cs: "omalovanky", hr: "bojanke", sv: "malarbilder", da: "tegninger-til-farvelaegning" },
+  coloring: { en: "coloring-pages", sl: "pobarvanke", de: "ausmalbilder", fr: "coloriages", es: "dibujos-para-colorear", it: "disegni-da-colorare", pt: "desenhos-para-colorir", nl: "kleurplaten", pl: "kolorowanki", cs: "omalovanky", hr: "bojanke", sv: "malarbilder", da: "tegninger-til-farvelaegning", fi: "varityskuvat" },
   /** Everything for kids in one section (David 2026-10-31): header dropdown + hub page. */
-  kids: { en: "for-kids", sl: "za-otroke", de: "fuer-kinder", fr: "pour-les-enfants", es: "para-ninos", it: "per-bambini", pt: "para-criancas", nl: "voor-kinderen", pl: "dla-dzieci", cs: "pro-deti", hr: "za-djecu", sv: "for-barn", da: "for-boern" },
+  kids: { en: "for-kids", sl: "za-otroke", de: "fuer-kinder", fr: "pour-les-enfants", es: "para-ninos", it: "per-bambini", pt: "para-criancas", nl: "voor-kinderen", pl: "dla-dzieci", cs: "pro-deti", hr: "za-djecu", sv: "for-barn", da: "for-boern", fi: "lapsille" },
 } as const satisfies Record<string, Record<Locale, string>>;
 
 export type PageKey = keyof typeof pageSlugs;
@@ -93,7 +94,7 @@ export function pageKeyFromSlug(locale: Locale, slug: string): PageKey | undefin
  * /animals/<species>/<breed> (SL /sl/zivali/…). Species and breed slugs come from the
  * registry (src/content/registry/registry.json); only the comparison page slug is fixed here.
  */
-export const compareSlug: Record<Locale, string> = { en: "compare", sl: "primerjava", de: "vergleich", fr: "comparer", es: "comparar", it: "confronta", pt: "comparar", nl: "vergelijken", pl: "porownanie", cs: "srovnani", hr: "usporedba", sv: "jamfor", da: "sammenlign" };
+export const compareSlug: Record<Locale, string> = { en: "compare", sl: "primerjava", de: "vergleich", fr: "comparer", es: "comparar", it: "confronta", pt: "comparar", nl: "vergelijken", pl: "porownanie", cs: "srovnani", hr: "usporedba", sv: "jamfor", da: "sammenlign", fi: "vertailu" };
 
 export function pathForSpecies(locale: Locale, speciesSlug: string): string {
   return `${pathFor(locale, "animals")}/${speciesSlug}`;
