@@ -86,7 +86,7 @@ export const coloringPages: ColoringPage[] = [
     id: "labrador-puppy-bowls",
     animal: "dog",
     tip: { kind: "food", species: "dog", slug: "grapes" },
-    title: { en: "Labrador puppy and its bowls", sl: "Mladiček labradorca in skledi", de: "Labrador-Welpe mit seinen Näpfen", fr: "Chiot labrador et ses gamelles", es: "Cachorro de labrador y sus cuencos", it: "Cucciolo di labrador e le sue ciotole", pt: "Cachorro labrador e as suas taças", nl: "Labradorpup met zijn bakjes", pl: "Szczeniak labradora i jego miski", cs: "Štěně labradora a jeho misky", hr: "Štene labradora i njegove zdjelice", sv: "Labradorvalp med sina skålar", da: "Labradorhvalp og dens skåle", fi: "Labradorinpentu ja sen kupit", nb: "Labradorvalp med skålene sine" },
+    title: { en: "Labrador puppy and its bowls", sl: "Mladiček labradorca in njegovi skledi", de: "Labrador-Welpe mit seinen Näpfen", fr: "Chiot labrador et ses gamelles", es: "Cachorro de labrador y sus cuencos", it: "Cucciolo di labrador e le sue ciotole", pt: "Cachorro labrador e as suas taças", nl: "Labradorpup met zijn bakjes", pl: "Szczeniak labradora i jego miski", cs: "Štěně labradora a jeho misky", hr: "Štene labradora i njegove zdjelice", sv: "Labradorvalp med sina skålar", da: "Labradorhvalp og dens skåle", fi: "Labradorinpentu ja sen kupit", nb: "Labradorvalp med skålene sine" },
     slug: { en: "labrador-puppy-and-its-bowls", sl: "mladicek-labradorca-in-skledi", de: "labrador-welpe-mit-seinen-naepfen", fr: "chiot-labrador-et-ses-gamelles", es: "cachorro-de-labrador-y-sus-cuencos", it: "cucciolo-di-labrador-e-le-sue-ciotole", pt: "cachorro-labrador-e-as-suas-tacas", nl: "labradorpup-met-zijn-bakjes", pl: "szczeniak-labradora-i-jego-miski", cs: "stene-labradora-a-jeho-misky", hr: "stene-labradora-i-njegove-zdjelice", sv: "labradorvalp-med-sina-skalar", da: "labradorhvalp-og-dens-skaale", fi: "labradorinpentu-ja-sen-kupit", nb: "labradorvalp-med-skalene-sine" },
     alt: { en: "Colouring page: a labrador puppy sitting in a kitchen next to its food and water bowls.", sl: "Pobarvanka: mladiček labradorca sedi v kuhinji poleg sklede za hrano in sklede za vodo.", de: "Ausmalbild: ein Labrador-Welpe sitzt in einer Küche neben seinem Futter- und Wassernapf.", fr: "Coloriage : un chiot labrador assis dans une cuisine, à côté de sa gamelle de nourriture et de sa gamelle d’eau.", es: "Dibujo para colorear: un cachorro de labrador sentado en una cocina junto a su cuenco de comida y su cuenco de agua.", it: "Disegno da colorare: un cucciolo di labrador seduto in cucina accanto alla ciotola del cibo e a quella dell’acqua.", pt: "Desenho para colorir: um cachorro labrador sentado numa cozinha, ao lado da taça da comida e da taça da água.", nl: "Kleurplaat: een labradorpup zit in een keuken naast zijn voerbak en waterbak.", pl: "Kolorowanka: szczeniak labradora siedzi w kuchni obok swojej miski na jedzenie i miski na wodę.", cs: "Omalovánka: štěně labradora sedí v kuchyni vedle misky na krmení a misky na vodu.", hr: "Bojanka: štene labradora sjedi u kuhinji pokraj svoje zdjelice za hranu i zdjelice za vodu.", sv: "Målarbild: en labradorvalp sitter i ett kök bredvid sin matskål och sin vattenskål.", da: "Tegning til farvelægning: en labradorhvalp sidder i et køkken ved siden af sin mad- og vandskål.", fi: "Värityskuva: labradorinpentu istuu keittiössä ruoka- ja vesikuppiensa vieressä.", nb: "Fargeleggingsark: en labradorvalp sitter på et kjøkken ved siden av mat- og vannskålen sin." },
   },
@@ -102,9 +102,9 @@ export const coloringPages: ColoringPage[] = [
     id: "border-collie-puzzle",
     animal: "dog",
     tip: { kind: "breed", breed: "border_collie", key: "mind" },
-    title: { en: "Border collie with a puzzle toy", sl: "Border collie z igračo-uganko", de: "Border Collie mit Intelligenzspielzeug", fr: "Border collie et son jouet d’occupation", es: "Border collie con un juguete de inteligencia", it: "Border collie con un gioco di intelligenza", pt: "Border collie com um brinquedo interativo", nl: "Border collie met een puzzelspeeltje", pl: "Border collie z zabawką logiczną", cs: "Border kolie s interaktivní hračkou", hr: "Border collie s interaktivnom igračkom", sv: "Border collie med en aktiveringsleksak", da: "Border collie med aktivitetslegetøj", fi: "Bordercollie ja aktivointilelu", nb: "Border collie med aktivitetsleke" },
+    title: { en: "Border collie with a puzzle toy", sl: "Border collie z miselno igračo", de: "Border Collie mit Intelligenzspielzeug", fr: "Border collie et son jouet d’occupation", es: "Border collie con un juguete de inteligencia", it: "Border collie con un gioco di intelligenza", pt: "Border collie com um brinquedo interativo", nl: "Border collie met een puzzelspeeltje", pl: "Border collie z zabawką logiczną", cs: "Border kolie s interaktivní hračkou", hr: "Border collie s interaktivnom igračkom", sv: "Border collie med en aktiveringsleksak", da: "Border collie med aktivitetslegetøj", fi: "Bordercollie ja aktivointilelu", nb: "Border collie med aktivitetsleke" },
     slug: { en: "border-collie-with-a-puzzle-toy", sl: "border-collie-z-igraco-uganko", de: "border-collie-mit-intelligenzspielzeug", fr: "border-collie-et-son-jouet-d-occupation", es: "border-collie-con-un-juguete-de-inteligencia", it: "border-collie-con-un-gioco-di-intelligenza", pt: "border-collie-com-um-brinquedo-interativo", nl: "border-collie-met-een-puzzelspeeltje", pl: "border-collie-z-zabawka-logiczna", cs: "border-kolie-s-interaktivni-hrackou", hr: "border-collie-s-interaktivnom-igrackom", sv: "border-collie-med-en-aktiveringsleksak", da: "border-collie-med-aktivitetslegetoej", fi: "bordercollie-ja-aktivointilelu", nb: "border-collie-med-aktivitetsleke" },
-    alt: { en: "Colouring page: a border collie lying on a rug and pawing at a puzzle toy.", sl: "Pobarvanka: border collie leži na preprogi in s tačko odpira igračo-uganko.", de: "Ausmalbild: ein Border Collie liegt auf einem Teppich und macht sich mit der Pfote an einem Intelligenzspielzeug zu schaffen.", fr: "Coloriage : un border collie couché sur un tapis gratte de la patte un jouet d’occupation.", es: "Dibujo para colorear: un border collie tumbado en una alfombra toca con la pata un juguete de inteligencia.", it: "Disegno da colorare: un border collie sdraiato su un tappeto tocca con la zampa un gioco di intelligenza.", pt: "Desenho para colorir: um border collie deitado num tapete a tocar com a pata num brinquedo interativo.", nl: "Kleurplaat: een border collie ligt op een kleed en duwt met zijn poot tegen een puzzelspeeltje.", pl: "Kolorowanka: border collie leży na dywanie i trąca łapą zabawkę logiczną.", cs: "Omalovánka: border kolie leží na koberci a tlapkou zkoumá interaktivní hračku.", hr: "Bojanka: border collie leži na tepihu i šapom gura interaktivnu igračku.", sv: "Målarbild: en border collie ligger på en matta och tassar på en aktiveringsleksak.", da: "Tegning til farvelægning: en border collie ligger på et tæppe og skraber med poten på et aktivitetslegetøj.", fi: "Värityskuva: bordercollie makaa matolla ja tutkii aktivointilelua tassullaan.", nb: "Fargeleggingsark: en border collie ligger på et teppe og prøver seg på en aktivitetsleke med labben." },
+    alt: { en: "Colouring page: a border collie lying on a rug and pawing at a puzzle toy.", sl: "Pobarvanka: border collie leži na preprogi in s tačko tipa miselno igračo.", de: "Ausmalbild: ein Border Collie liegt auf einem Teppich und macht sich mit der Pfote an einem Intelligenzspielzeug zu schaffen.", fr: "Coloriage : un border collie couché sur un tapis gratte de la patte un jouet d’occupation.", es: "Dibujo para colorear: un border collie tumbado en una alfombra toca con la pata un juguete de inteligencia.", it: "Disegno da colorare: un border collie sdraiato su un tappeto tocca con la zampa un gioco di intelligenza.", pt: "Desenho para colorir: um border collie deitado num tapete a tocar com a pata num brinquedo interativo.", nl: "Kleurplaat: een border collie ligt op een kleed en duwt met zijn poot tegen een puzzelspeeltje.", pl: "Kolorowanka: border collie leży na dywanie i trąca łapą zabawkę logiczną.", cs: "Omalovánka: border kolie leží na koberci a tlapkou zkoumá interaktivní hračku.", hr: "Bojanka: border collie leži na tepihu i šapom gura interaktivnu igračku.", sv: "Målarbild: en border collie ligger på en matta och tassar på en aktiveringsleksak.", da: "Tegning til farvelægning: en border collie ligger på et tæppe og skraber med poten på et aktivitetslegetøj.", fi: "Värityskuva: bordercollie makaa matolla ja tutkii aktivointilelua tassullaan.", nb: "Fargeleggingsark: en border collie ligger på et teppe og prøver seg på en aktivitetsleke med labben." },
   },
   {
     id: "mixed-puppy-sleeping",
@@ -216,31 +216,35 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
   },
   sl: {
     animals: { all: "Vse", dog: "Psi", cat: "Mačke", curio: "Curio" },
-    count: (n) => `${n} brezplačnih pobarvank`,
+    count: (n) => {
+      const m = n % 100;
+      const form = m === 1 ? "brezplačna pobarvanka" : m === 2 ? "brezplačni pobarvanki" : m === 3 || m === 4 ? "brezplačne pobarvanke" : "brezplačnih pobarvank";
+      return `${n} ${form}`;
+    },
     open: "Odpri in natisni",
     all: {
       title: "Vse pobarvanke v enem PDF",
-      text: "Vse pobarvanke v eni datoteki — natisnite celo knjižico za deževno popoldne.",
+      text: "Vse pobarvanke v eni datoteki – natisnite celo knjižico za deževno popoldne.",
       a4: "Knjižica PDF (A4)",
       letter: "Knjižica PDF (US Letter)",
     },
     how: {
-      title: "Kako",
+      title: "Kako to poteka",
       steps: [
-        "Izberite pobarvanko in jo natisnite — A4 ali US Letter, dovolj je črno-belo.",
+        "Izberite pobarvanko in jo natisnite – A4 ali US Letter, dovolj je črno-belo.",
         "Pobarvajte jo ali risbo prerišite na prazen list.",
-        "Skupaj preberite zanimivost na strani: vsaka je iz vira veterinarjev ali kinoloških zvez.",
+        "Skupaj preberite zanimivost na strani: vsaka je povzeta po viru veterinarjev ali kinoloških zvez.",
       ],
     },
     share: {
       title: "Delite risbo",
-      text: "Starši: objavite fotografijo dokončane risbe in označite @petprep.si s #walkyourpet — z veseljem jo pogledamo. Prosimo, pokažite samo risbo, ne obraza ali imena otroka.",
+      text: "Starši, objavite fotografijo dokončane risbe s #walkyourpet in označite @petprep.si – z veseljem si jo bomo ogledali. Prosimo, pokažite samo risbo, ne obraza ali imena otroka.",
     },
     licence: "Brezplačno za osebno, družinsko in šolsko uporabo. Prosimo, pobarvank ne prodajajte in ne objavljajte drugje.",
     page: {
-      metaTitle: (t) => `${t} — brezplačna pobarvanka za tiskanje | PetPrep`,
-      metaDescription: (t) => `${t}: brezplačna pobarvanka za otroke za tiskanje (PDF A4 in US Letter), z resnično zanimivostjo o skrbi za žival in njenim virom. Od PetPrepa.`,
-      lead: "Brezplačno za tiskanje in barvanje. Na strani je resnična zanimivost o skrbi za žival, ki jo preberete skupaj.",
+      metaTitle: (t) => `${t} – brezplačna pobarvanka za tiskanje | PetPrep`,
+      metaDescription: (t) => `${t}: brezplačna pobarvanka za otroke za tiskanje (PDF A4 in US Letter), z resnično zanimivostjo o skrbi za ljubljenčka in navedbo vira. Pripravil PetPrep.`,
+      lead: "Brezplačno za tiskanje in barvanje. Na strani je resnična zanimivost o skrbi za ljubljenčka, ki jo preberete skupaj.",
       print: "Natisni",
       pdfA4: "PDF (A4)",
       pdfLetter: "PDF (US Letter)",
@@ -251,8 +255,8 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
       back: "Vse pobarvanke",
     },
     pageTip: {
-      curio: { title: "To je Curio", text: "Curio je radovedna kockica iz logotipa PetPrep, ki je oživela: velike oči, malinast nos in metina ovratnica. Pobarvaj ga v pravih barvah — ali si izmisli svoje." },
-      walkyourpet: { title: "#walkyourpet", text: "Pes potrebuje sprehod vsak dan — v PetPrepu šteje samo, če res greste ven." },
+      curio: { title: "To je Curio", text: "Curio je radovedna kockica iz logotipa PetPrep, ki je oživela: velike oči, malinast nos in metina ovratnica. Pobarvaj ga v pravih barvah – ali si izmisli svoje." },
+      walkyourpet: { title: "#walkyourpet", text: "Pes potrebuje sprehod vsak dan – v PetPrepu šteje samo, če res greš ven." },
     },
   },
   de: {
