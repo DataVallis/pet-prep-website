@@ -43,7 +43,7 @@ export const companyIdLabels: Record<Locale, { vat: string; vatPayer: string; re
   nl: { vat: "Btw-identificatienummer", vatPayer: "btw-plichtig", registration: "Inschrijvingsnummer", legalName: "Bedrijf", address: "Statutaire zetel", web: "Website" },
   pl: { vat: "Numer VAT UE", vatPayer: "czynny podatnik VAT", registration: "Numer rejestrowy", legalName: "Nazwa firmy", address: "Siedziba", web: "Strona internetowa" },
   cs: { vat: "DIČ", vatPayer: "plátce DPH", registration: "IČO", legalName: "Obchodní firma", address: "Sídlo", web: "Webové stránky" },
-  hr: { vat: "PDV ID broj", vatPayer: "obveznik PDV-a", registration: "Matični broj", legalName: "Naziv tvrtke", address: "Sjedište", web: "Web-stranica" },
+  hr: { vat: "PDV ID broj", vatPayer: "obveznik PDV-a", registration: "Matični broj", legalName: "Naziv tvrtke", address: "Sjedište", web: "Mrežna stranica" },
   sv: { vat: "Momsregistreringsnummer", vatPayer: "momsregistrerat", registration: "Organisationsnummer", legalName: "Företagsnamn", address: "Säte", web: "Webbplats" },
   da: { vat: "Momsregistreringsnummer", vatPayer: "momsregistreret", registration: "Registreringsnummer", legalName: "Virksomhedsnavn", address: "Hjemsted", web: "Websted" },
   fi: { vat: "ALV-tunniste", vatPayer: "arvonlisäverovelvollinen", registration: "Rekisterinumero", legalName: "Toiminimi", address: "Osoite", web: "Verkkosivusto" },
