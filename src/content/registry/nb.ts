@@ -347,6 +347,7 @@ const nb: RegistryCopy = {
       kitten_parents_tests: "Spør om noen av foreldrene har hatt helseproblemer som kattungen kan arve.",
     },
     tests: {
+      dna_poag_pll: "DNA-test for primært åpenvinkelglaukom og primær linseluksasjon (POAG/PLL), arvelige øyesykdommer som kan føre til blindhet",
       hip_scheme: "Røntgen av hoftene for hofteleddsdysplasi (UK: BVA/KC-ordningen)",
       elbow_scheme: "Røntgen av albuene for albueleddsdysplasi (UK: BVA/KC-ordningen)",
       eye_scheme: "Øyeundersøkelse hos en dyrlege med spesialkompetanse på øyne (UK: BVA/KC/ISDS-ordningen; for noen raser med gonioskopi)",
@@ -445,6 +446,7 @@ const nb: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "Familiær shar pei-feber kan forekomme i rasen: anfall av høy feber med smertefulle, hovne ledd og et hovent ansikt – kontakt veterinær med en gang.",
     weight_gain: "Legger lett på seg – porsjoner og godbiter må følges med på.",
     hip_elbow_dysplasia_eye_conditions: "Kan være disponert for hofte- og albueleddsdysplasi og for flere arvelige øyesykdommer.",
     cancer_risk: "Kildene beskriver en høyere risiko for kreft hos denne rasen.",
@@ -727,6 +729,14 @@ const nb: RegistryCopy = {
     },
   },
   intros: {
+    shar_pei: {
+      aka: "kinesisk shar pei, Chinese Shar-Pei, Sharpei",
+      text: [
+        "Shar pei (i USA «Chinese Shar-Pei») er en aktiv, kompakt, kvadratisk bygd mellomstor hund fra Kina med kort, hard, bustete pels i én ensfarget farge (alle unntatt hvit), folder på hodet og manken og en bred snute. Standarden til Royal Kennel Club oppgir en mankehøyde på 46–51 cm og PDSA en vekt på 20–27 kg; en hund av denne størrelsen er utvokst ved rundt 12–15 måneder (PetMD). Royal Kennel Club og PDSA oppgir en levealder på over 10 år, men en VetCompass-studie av hunder i Storbritannia fant en median på 7,3 år.",
+        "Royal Kennel Club anbefaler opptil en times mosjon om dagen og børsting én gang i uken og plasserer rasen i kategori 2 i Breed Watch på grunn av problemer med øyelokk og hudfolder. PDSA beskriver shar pei som lojale, hengivne familiehunder som passer best for erfarne eiere og større barn, advarer mot et sterkt jaktinstinkt overfor mindre dyr og råder til å holde hudfoldene rene og tørre og la det gå litt tid mellom måltid og mosjon.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Border collie er en middels stor gjeterhund fra Storbritannia, avlet for utholdenhet og hardt arbeid. Rasestandarden beskriver en ivrig, våken, lydhør og intelligent hund som verken er nervøs eller aggressiv.",

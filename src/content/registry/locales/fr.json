@@ -636,6 +636,14 @@
       "synonyms": [
         "Chat bengal"
       ]
+    },
+    "shar_pei": {
+      "name": "Shar Pei",
+      "slug": "shar-pei",
+      "synonyms": [
+        "Shar-Pei chinois",
+        "Sharpei"
+      ]
     }
   },
   "suitability_labels": {
@@ -681,7 +689,8 @@
       "short_muzzle_breathing": "museau plus court – peut avoir des difficultés respiratoires",
       "shorter_lifespan": "espérance de vie plus courte",
       "small_children": "les familles avec de jeunes enfants",
-      "sun_protection": "peau nue – a besoin d’une protection solaire"
+      "sun_protection": "peau nue – a besoin d’une protection solaire",
+      "independent_older_children": "chien indépendant – mieux avec des enfants plus âgés"
     }
   }
 }

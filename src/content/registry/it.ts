@@ -301,6 +301,7 @@ const it: RegistryCopy = {
       kitten_parents_tests: "Chiedi se uno dei genitori ha avuto problemi di salute che il gattino potrebbe ereditare.",
     },
     tests: {
+      dna_poag_pll: "Test del DNA per il glaucoma primario ad angolo aperto e la lussazione primaria del cristallino (POAG/PLL), malattie oculari ereditarie che possono portare alla cecità",
       hip_scheme: "Screening radiografico delle anche per la displasia dell’anca (Regno Unito: programma BVA/KC)",
       elbow_scheme: "Screening radiografico dei gomiti per la displasia del gomito (Regno Unito: programma BVA/KC)",
       eye_scheme: "Visita oculistica da parte di un veterinario specialista in oftalmologia (Regno Unito: programma BVA/KC/ISDS; per alcune razze con gonioscopia)",
@@ -399,6 +400,7 @@ const it: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "Nella razza può comparire la febbre familiare dello Shar Pei: episodi di febbre alta con articolazioni doloranti e gonfie e muso gonfio — rivolgersi subito al veterinario.",
     weight_gain: "Ingrassa facilmente: bisogna tenere d’occhio porzioni e premi.",
     hip_elbow_dysplasia_eye_conditions: "Può essere predisposto alla displasia dell’anca e del gomito e a diverse malattie ereditarie degli occhi.",
     cancer_risk: "Le fonti descrivono un rischio di tumori più alto in questa razza.",
@@ -632,6 +634,14 @@ const it: RegistryCopy = {
     },
   },
   intros: {
+    shar_pei: {
+      aka: "Shar-Pei cinese, Chinese Shar-Pei, Sharpei",
+      text: [
+        "Lo Shar Pei («Chinese Shar-Pei» negli Stati Uniti) è un cane attivo, compatto, di costruzione quadrata e di taglia media, originario della Cina, con pelo corto, duro e ispido di un solo colore (qualsiasi tranne il bianco), pieghe sulla testa e sul garrese e un muso largo. Lo standard del Royal Kennel Club indica un’altezza di 46–51 cm e la PDSA un peso di 20–27 kg; un cane di questa taglia finisce di crescere verso i 12–15 mesi (PetMD). Il Royal Kennel Club e la PDSA indicano un’aspettativa di vita di oltre 10 anni, ma uno studio VetCompass su cani nel Regno Unito ha rilevato una mediana di 7,3 anni.",
+        "Il Royal Kennel Club consiglia fino a un’ora di movimento al giorno e una spazzolata alla settimana, e inserisce la razza nella categoria 2 di Breed Watch per problemi alle palpebre e alle pieghe della pelle. La PDSA descrive gli Shar Pei come cani di famiglia leali e devoti, più adatti a proprietari esperti e a bambini più grandi, avverte di un forte istinto predatorio verso gli animali più piccoli e consiglia di tenere le pieghe della pelle pulite e asciutte e di lasciare un intervallo tra il pasto e l’attività fisica.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Il border collie è un cane da pastore di taglia media originario della Gran Bretagna, fatto per la resistenza e il lavoro duro. Il suo standard descrive un cane vivace, attento, ricettivo e intelligente, né nervoso né aggressivo.",

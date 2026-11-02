@@ -297,6 +297,7 @@ const nl: RegistryCopy = {
       kitten_parents_tests: "Vraag of een van de ouderdieren gezondheidsproblemen heeft gehad die de kitten kan erven.",
     },
     tests: {
+      dna_poag_pll: "DNA-test op primair openhoekglaucoom en primaire lensluxatie (POAG/PLL), erfelijke oogziekten die tot blindheid kunnen leiden",
       hip_scheme: "Röntgenonderzoek op heupdysplasie (VK: BVA/KC-programma)",
       elbow_scheme: "Röntgenonderzoek op elleboogdysplasie (VK: BVA/KC-programma)",
       eye_scheme: "Oogonderzoek door een veterinaire oogspecialist (VK: BVA/KC/ISDS-programma; bij sommige rassen met gonioscopie)",
@@ -395,6 +396,7 @@ const nl: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "Familiale Shar-Pei-koorts kan bij het ras voorkomen: aanvallen van hoge koorts met pijnlijke, gezwollen gewrichten en een gezwollen gezicht — ga meteen naar de dierenarts.",
     weight_gain: "Komt makkelijk aan – let op de porties en de snoepjes.",
     hip_elbow_dysplasia_eye_conditions: "Kan vatbaar zijn voor heup- en elleboogdysplasie en voor verschillende erfelijke oogaandoeningen.",
     cancer_risk: "Bronnen beschrijven een hoger risico op kanker bij dit ras.",
@@ -628,6 +630,14 @@ const nl: RegistryCopy = {
     },
   },
   intros: {
+    shar_pei: {
+      aka: "Chinese Shar-Pei, Sharpei",
+      text: [
+        "De Shar Pei (in de VS „Chinese Shar-Pei”) is een actieve, compacte, vierkant gebouwde middelgrote hond uit China met een korte, harde, borstelige vacht in één effen kleur (elke kleur behalve wit), plooien op het hoofd en de schoft en een brede snuit. De standaard van de Royal Kennel Club noemt een schofthoogte van 46–51 cm en de PDSA een gewicht van 20–27 kg; een hond van dit formaat is rond 12–15 maanden volgroeid (PetMD). De Royal Kennel Club en de PDSA noemen een levensduur van meer dan 10 jaar, maar een VetCompass-onderzoek bij honden in het Verenigd Koninkrijk vond een mediaan van 7,3 jaar.",
+        "De Royal Kennel Club raadt tot een uur beweging per dag en eenmaal per week borstelen aan, en plaatst het ras in categorie 2 van Breed Watch vanwege problemen met de oogleden en de huidplooien. De PDSA beschrijft Shar Peis als trouwe, toegewijde gezinshonden die het best passen bij ervaren eigenaren en oudere kinderen, waarschuwt voor een sterk jachtinstinct tegenover kleinere dieren en raadt aan de huidplooien schoon en droog te houden en tussen eten en beweging wat tijd te laten.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "De border collie is een middelgrote herdershond uit Groot-Brittannië, gebouwd voor uithoudingsvermogen en hard werk. De rasstandaard beschrijft een gretige, alerte, ontvankelijke en intelligente hond die niet nerveus en niet agressief is.",

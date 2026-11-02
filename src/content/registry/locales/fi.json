@@ -773,6 +773,14 @@
         "Bengal",
         "Bengal cat"
       ]
+    },
+    "shar_pei": {
+      "name": "Shar pei",
+      "slug": "shar-pei",
+      "synonyms": [
+        "Kiinalainen shar pei",
+        "Sharpei"
+      ]
     }
   },
   "suitability_labels": {
@@ -818,7 +826,8 @@
       "short_muzzle_breathing": "lyhyempi kuono – voi olla hengitysvaikeuksia",
       "shorter_lifespan": "lyhyempi elinikä",
       "small_children": "perheille, joissa on pieniä lapsia",
-      "sun_protection": "paljas iho – tarvitsee aurinkosuojaa"
+      "sun_protection": "paljas iho – tarvitsee aurinkosuojaa",
+      "independent_older_children": "itsenäinen koira – sopii paremmin isommille lapsille"
     }
   }
 }

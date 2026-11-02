@@ -346,6 +346,7 @@ const cs: RegistryCopy = {
       kitten_parents_tests: "Zeptejte se, zda některý z rodičů neměl zdravotní problémy, které by kotě mohlo zdědit.",
     },
     tests: {
+      dna_poag_pll: "DNA test na primární glaukom s otevřeným úhlem a primární luxaci čočky (POAG/PLL), dědičná onemocnění očí, která mohou vést ke slepotě",
       hip_scheme: "Rentgenové vyšetření kyčelních kloubů na dysplazii (Velká Británie: program BVA/KC)",
       elbow_scheme: "Rentgenové vyšetření loketních kloubů na dysplazii (Velká Británie: program BVA/KC)",
       eye_scheme: "Vyšetření očí u veterinárního oftalmologa (Velká Británie: program BVA/KC/ISDS; u některých plemen s gonioskopií)",
@@ -444,6 +445,7 @@ const cs: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "U plemene se může vyskytnout familiární horečka šar-pejů: záchvaty vysoké horečky s bolestivými, oteklými klouby a oteklým obličejem — ihned k veterináři.",
     weight_gain: "Snadno přibírá – je třeba hlídat porce a pamlsky.",
     hip_elbow_dysplasia_eye_conditions: "Může mít sklon k dysplazii kyčelních a loketních kloubů a k několika dědičným onemocněním očí.",
     cancer_risk: "Zdroje u tohoto plemene popisují vyšší riziko nádorových onemocnění.",
@@ -680,6 +682,14 @@ const cs: RegistryCopy = {
     },
   },
   intros: {
+    shar_pei: {
+      aka: "Shar Pei, čínský šar-pej, Chinese Shar-Pei",
+      text: [
+        "Šar-pej (v USA „Chinese Shar-Pei“) je aktivní, kompaktní, čtvercově stavěný středně velký pes z Číny s krátkou, tvrdou, štětinatou srstí jedné barvy (jakékoli kromě bílé), vráskami na hlavě a kohoutku a širokou tlamou. Standard Royal Kennel Clubu uvádí výšku 46–51 cm a PDSA hmotnost 20–27 kg; pes této velikosti je dorostlý přibližně ve 12–15 měsících (PetMD). Royal Kennel Club a PDSA uvádějí délku života přes 10 let, studie VetCompass u psů ve Velké Británii však zjistila medián 7,3 roku.",
+        "Royal Kennel Club doporučuje až hodinu pohybu denně a kartáčování jednou týdně a řadí plemeno do kategorie 2 programu Breed Watch kvůli problémům s víčky a kožními záhyby. PDSA popisuje šar-peje jako věrné, oddané rodinné psy, kteří se nejlépe hodí ke zkušeným majitelům a starším dětem, upozorňuje na silný lovecký pud vůči menším zvířatům a radí udržovat kožní záhyby čisté a suché a mezi krmením a pohybem nechat odstup.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Border kolie je středně velký pastevecký pes z Velké Británie, stvořený pro vytrvalost a tvrdou práci. Standard plemene ho popisuje jako horlivého, ostražitého, vnímavého a inteligentního psa, který není ani nervózní, ani agresivní.",

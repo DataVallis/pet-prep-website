@@ -334,6 +334,7 @@ const sv: RegistryCopy = {
       kitten_parents_tests: "Fråga om någon av föräldrarna har haft hälsoproblem som kattungen kan ärva.",
     },
     tests: {
+      dna_poag_pll: "DNA-test för primärt öppenvinkelglaukom och primär linsluxation (POAG/PLL), ärftliga ögonsjukdomar som kan leda till blindhet",
       hip_scheme: "Röntgen av höfterna för höftledsdysplasi (UK: BVA/KC-programmet)",
       elbow_scheme: "Röntgen av armbågarna för armbågsledsdysplasi (UK: BVA/KC-programmet)",
       eye_scheme: "Ögonundersökning hos en veterinär specialiserad på ögon (UK: BVA/KC/ISDS-programmet; för vissa raser med gonioskopi)",
@@ -432,6 +433,7 @@ const sv: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "Familjär shar pei-feber kan förekomma i rasen: attacker av hög feber med smärtsamma, svullna leder och svullet ansikte – kontakta veterinär direkt.",
     weight_gain: "Går lätt upp i vikt – håll koll på portioner och godbitar.",
     hip_elbow_dysplasia_eye_conditions: "Kan vara benägen att få höftledsdysplasi och armbågsledsdysplasi samt flera ärftliga ögonsjukdomar.",
     cancer_risk: "Källorna beskriver en högre risk för cancer hos den här rasen.",
@@ -712,6 +714,14 @@ const sv: RegistryCopy = {
     },
   },
   intros: {
+    shar_pei: {
+      aka: "kinesisk shar pei, Chinese Shar-Pei, Sharpei",
+      text: [
+        "Shar pei (i USA ”Chinese Shar-Pei”) är en aktiv, kompakt, kvadratiskt byggd medelstor hund från Kina med kort, hård, borstig päls i en enda helfärg (vilken som helst utom vitt), veck på huvudet och manken och en bred nos. Royal Kennel Clubs standard anger en mankhöjd på 46–51 cm och PDSA en vikt på 20–27 kg; en hund av den storleken är fullvuxen vid ungefär 12–15 månader (PetMD). Royal Kennel Club och PDSA anger en livslängd på över 10 år, men en VetCompass-studie av hundar i Storbritannien fann en median på 7,3 år.",
+        "Royal Kennel Club rekommenderar upp till en timmes motion om dagen och borstning en gång i veckan och placerar rasen i kategori 2 i Breed Watch på grund av problem med ögonlock och hudveck. PDSA beskriver shar pei som lojala, hängivna familjehundar som passar bäst för erfarna ägare och äldre barn, varnar för en stark jaktinstinkt mot mindre djur och råder att hålla hudvecken rena och torra och låta det gå en stund mellan mat och motion.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Border collie är en medelstor vallhund från Storbritannien, avlad för uthållighet och hårt arbete. Rasstandarden beskriver en ivrig, vaken, lyhörd och intelligent hund som varken är nervös eller aggressiv.",

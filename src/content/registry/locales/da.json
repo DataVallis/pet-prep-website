@@ -753,6 +753,14 @@
         "Bengalkat",
         "Bengal cat"
       ]
+    },
+    "shar_pei": {
+      "name": "Shar pei",
+      "slug": "shar-pei",
+      "synonyms": [
+        "Kinesisk shar pei",
+        "Sharpei"
+      ]
     }
   },
   "suitability_labels": {
@@ -798,7 +806,8 @@
       "short_muzzle_breathing": "kort snude – kan få vejrtrækningsproblemer",
       "shorter_lifespan": "kortere levetid",
       "small_children": "familier med små børn",
-      "sun_protection": "nøgen hud – har brug for solbeskyttelse"
+      "sun_protection": "nøgen hud – har brug for solbeskyttelse",
+      "independent_older_children": "selvstændig hund – bedre med større børn"
     }
   }
 }

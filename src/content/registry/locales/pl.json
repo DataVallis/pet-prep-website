@@ -794,6 +794,14 @@
         "Bengal",
         "Bengal cat"
       ]
+    },
+    "shar_pei": {
+      "name": "Shar pei",
+      "slug": "shar-pei",
+      "synonyms": [
+        "Chiński shar pei",
+        "Sharpei"
+      ]
     }
   },
   "suitability_labels": {
@@ -839,7 +847,8 @@
       "short_muzzle_breathing": "krótszy pysk – może mieć problemy z oddychaniem",
       "shorter_lifespan": "żyje krócej",
       "small_children": "w rodzinie z małymi dziećmi",
-      "sun_protection": "naga skóra – potrzebuje ochrony przed słońcem"
+      "sun_protection": "naga skóra – potrzebuje ochrony przed słońcem",
+      "independent_older_children": "niezależny pies – lepiej ze starszymi dziećmi"
     }
   }
 }

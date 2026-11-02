@@ -269,6 +269,7 @@ const en: RegistryCopy = {
       kitten_parents_tests: "Ask whether either parent has had health problems the kitten could inherit.",
     },
     tests: {
+      dna_poag_pll: "DNA test for primary open-angle glaucoma and primary lens luxation (POAG/PLL), inherited eye diseases that can lead to blindness",
       hip_scheme: "Hip X-ray screening for hip dysplasia (UK: BVA/KC scheme)",
       elbow_scheme: "Elbow X-ray screening for elbow dysplasia (UK: BVA/KC scheme)",
       eye_scheme: "Eye examination by a veterinary eye specialist (UK: BVA/KC/ISDS scheme; for some breeds with gonioscopy)",
@@ -367,6 +368,7 @@ const en: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "Familial Shar Pei fever can occur in the breed: bouts of high temperature with painful, swollen joints and a swollen face — see a vet straight away.",
     weight_gain: "Puts on weight easily — portions and treats need watching.",
     hip_elbow_dysplasia_eye_conditions: "Can be prone to hip and elbow dysplasia and to several inherited eye conditions.",
     cancer_risk: "Sources describe a higher risk of cancer in this breed.",
@@ -599,6 +601,14 @@ const en: RegistryCopy = {
     },
   },
   intros: {
+    shar_pei: {
+      aka: "Chinese Shar-Pei, Shar-Pei, Sharpei",
+      text: [
+        "The Shar Pei — the Chinese Shar-Pei in the US — is an active, compact, square, medium-sized dog from China with a short, harsh, bristly coat in one solid colour (any except white), wrinkles on the head and withers and a broad muzzle. The Royal Kennel Club standard gives a height of 46–51 cm and the PDSA a weight of 20–27 kg; a dog of this size is fully grown at about 12–15 months (PetMD). The Royal Kennel Club and the PDSA give a lifespan of over 10 years, but a VetCompass study of dogs in the UK found a median of 7.3 years.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day and brushing once a week, and lists the breed in Breed Watch Category 2 because of eyelid and skin-fold problems. The PDSA calls Shar Peis loyal, devoted family pets that do best with experienced owners and older children, warns of a high prey drive around smaller pets, and advises keeping the skin folds clean and dry and leaving a gap between eating and exercise.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "The Border Collie is a medium-sized herding dog from Great Britain, built for endurance and hard work. Its breed standard describes a keen, alert, responsive and intelligent dog that is neither nervous nor aggressive.",

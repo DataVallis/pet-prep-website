@@ -290,6 +290,7 @@ const sl: RegistryCopy = {
       zfds_member_si: "Slovenska članica FIFe je Zveza felinoloških društev Slovenije (ZFDS).",
     },
     tests: {
+      dna_poag_pll: "DNK test za primarni glavkom odprtega zakotja in primarno luksacijo leče (POAG/PLL), dedni bolezni oči, ki lahko povzročita slepoto",
       hip_scheme: "Rentgensko slikanje kolkov za displazijo kolkov (VB: shema BVA/KC)",
       elbow_scheme: "Rentgensko slikanje komolcev za displazijo komolcev (VB: shema BVA/KC)",
       eye_scheme: "Pregled oči pri veterinarskem specialistu za oči (VB: shema BVA/KC/ISDS; pri nekaterih pasmah z gonioskopijo)",
@@ -388,6 +389,7 @@ const sl: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "Pri pasmi se lahko pojavi družinska vročica šarpejev: napadi visoke vročine z bolečimi, otečenimi sklepi in otečenim obrazom — takoj k veterinarju.",
     weight_gain: "Hitro se zredi — pazite na velikost obrokov in priboljške.",
     hip_elbow_dysplasia_eye_conditions: "Lahko je nagnjen k displaziji kolkov in komolcev ter k več dednim boleznim oči.",
     cancer_risk: "Viri pri tej pasmi navajajo večje tveganje za raka.",
@@ -619,6 +621,14 @@ const sl: RegistryCopy = {
     },
   },
   intros: {
+    shar_pei: {
+      aka: "šar pej, sharpei, shar pei, kitajski šarpej, Chinese Shar-Pei",
+      text: [
+        "Šarpej (v ZDA »Chinese Shar-Pei«) je dejaven, kompakten, kvadratno grajen srednje velik pes s Kitajske s kratko, trdo, ščetinasto dlako ene barve (katerekoli razen bele), z gubami na glavi in vihru ter širokim gobcem. Standard Royal Kennel Cluba navaja višino 46–51 cm, PDSA pa težo 20–27 kg; pes te velikosti zraste do okoli 12–15 mesecev (PetMD). Royal Kennel Club in PDSA navajata življenjsko dobo več kot 10 let, študija VetCompass pri psih v Veliki Britaniji pa je ugotovila mediano 7,3 leta.",
+        "Royal Kennel Club priporoča do eno uro gibanja na dan in česanje enkrat na teden ter pasmo uvršča v 2. kategorijo programa Breed Watch zaradi težav z vekami in kožnimi gubami. PDSA šarpeje opisuje kot zveste, vdane družinske pse, ki so najboljši z izkušenimi lastniki in starejšimi otroki, opozarja na močan lovski nagon do manjših živali ter svetuje, naj bodo kožne gube čiste in suhe in naj med obrokom in gibanjem mine nekaj časa.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Border collie je srednje velik ovčarski pes iz Velike Britanije, grajen za vzdržljivost in trdo delo. Standard pasme ga opisuje kot vnetega, pozornega, odzivnega in inteligentnega psa, ki ni niti plašen niti napadalen.",

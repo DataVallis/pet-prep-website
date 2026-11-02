@@ -661,6 +661,14 @@
         "Gato de Bengala",
         "Bengala"
       ]
+    },
+    "shar_pei": {
+      "name": "Shar Pei",
+      "slug": "shar-pei",
+      "synonyms": [
+        "Shar-Pei chinês",
+        "Sharpei"
+      ]
     }
   },
   "suitability_labels": {
@@ -706,7 +714,8 @@
       "short_muzzle_breathing": "focinho mais curto – pode ter dificuldade em respirar",
       "shorter_lifespan": "esperança de vida mais curta",
       "small_children": "famílias com crianças pequenas",
-      "sun_protection": "pele sem pelo – precisa de proteção solar"
+      "sun_protection": "pele sem pelo – precisa de proteção solar",
+      "independent_older_children": "cão independente – melhor com crianças mais velhas"
     }
   }
 }

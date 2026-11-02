@@ -314,6 +314,7 @@ const pl: RegistryCopy = {
       kitten_parents_tests: "Zapytaj, czy któreś z rodziców miało problemy zdrowotne, które kocię mogłoby odziedziczyć.",
     },
     tests: {
+      dna_poag_pll: "Test DNA w kierunku jaskry pierwotnej otwartego kąta i pierwotnego zwichnięcia soczewki (POAG/PLL), dziedzicznych chorób oczu, które mogą prowadzić do ślepoty",
       hip_scheme: "Prześwietlenie stawów biodrowych w kierunku dysplazji (Wielka Brytania: program BVA/KC)",
       elbow_scheme: "Prześwietlenie stawów łokciowych w kierunku dysplazji (Wielka Brytania: program BVA/KC)",
       eye_scheme: "Badanie oczu u lekarza weterynarii okulisty (Wielka Brytania: program BVA/KC/ISDS; u niektórych ras z gonioskopią)",
@@ -412,6 +413,7 @@ const pl: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "W rasie może wystąpić rodzinna gorączka shar pei: napady wysokiej gorączki z bolesnymi, obrzękniętymi stawami i obrzękiem pyska — od razu do weterynarza.",
     weight_gain: "Łatwo przybiera na wadze – pilnuj porcji i smakołyków.",
     hip_elbow_dysplasia_eye_conditions: "Może mieć skłonność do dysplazji stawów biodrowych i łokciowych oraz do kilku dziedzicznych chorób oczu.",
     cancer_risk: "Źródła opisują u tej rasy wyższe ryzyko nowotworów.",
@@ -648,6 +650,14 @@ const pl: RegistryCopy = {
     },
   },
   intros: {
+    shar_pei: {
+      aka: "chiński shar pei, Chinese Shar-Pei, Sharpei",
+      text: [
+        "Shar pei (w USA „Chinese Shar-Pei”) to aktywny, zwarty, kwadratowo zbudowany pies średniej wielkości z Chin o krótkiej, szorstkiej, szczeciniastej sierści w jednym jednolitym kolorze (każdym oprócz białego), ze zmarszczkami na głowie i w kłębie oraz szeroką kufą. Wzorzec Royal Kennel Club podaje wysokość 46–51 cm, a PDSA masę 20–27 kg; pies tej wielkości kończy rosnąć w wieku około 12–15 miesięcy (PetMD). Royal Kennel Club i PDSA podają długość życia ponad 10 lat, ale badanie VetCompass psów w Wielkiej Brytanii wykazało medianę 7,3 roku.",
+        "Royal Kennel Club zaleca do godziny ruchu dziennie i szczotkowanie raz w tygodniu, a rasę zalicza do kategorii 2 programu Breed Watch z powodu problemów z powiekami i fałdami skóry. PDSA opisuje shar pei jako wierne, oddane psy rodzinne, które najlepiej pasują do doświadczonych opiekunów i starszych dzieci, ostrzega przed silnym instynktem łowieckim wobec mniejszych zwierząt i radzi utrzymywać fałdy skóry w czystości i suchości oraz robić przerwę między posiłkiem a ruchem.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Border collie to średniej wielkości pies pasterski z Wielkiej Brytanii, stworzony do wytrwałej i ciężkiej pracy. Wzorzec rasy opisuje go jako psa chętnego do pracy, czujnego, wrażliwego na polecenia i inteligentnego, który nie jest ani nerwowy, ani agresywny.",

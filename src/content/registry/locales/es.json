@@ -651,6 +651,14 @@
         "Gato bengalí",
         "Bengal"
       ]
+    },
+    "shar_pei": {
+      "name": "Shar Pei",
+      "slug": "shar-pei",
+      "synonyms": [
+        "Shar-Pei chino",
+        "Sharpei"
+      ]
     }
   },
   "suitability_labels": {
@@ -696,7 +704,8 @@
       "short_muzzle_breathing": "hocico más corto: puede tener dificultades para respirar",
       "shorter_lifespan": "esperanza de vida más corta",
       "small_children": "las familias con niños pequeños",
-      "sun_protection": "piel sin pelo: necesita protección solar"
+      "sun_protection": "piel sin pelo: necesita protección solar",
+      "independent_older_children": "perro independiente – mejor con niños mayores"
     }
   }
 }

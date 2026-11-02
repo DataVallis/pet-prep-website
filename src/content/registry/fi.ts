@@ -387,6 +387,7 @@ const fi: RegistryCopy = {
       kitten_parents_tests: "Kysy, onko kummallakaan vanhemmalla ollut terveysongelmia, jotka voisivat periytyä pennulle.",
     },
     tests: {
+      dna_poag_pll: "DNA-testi: primaarinen avokulmaglaukooma ja primaarinen linssiluksaatio (POAG/PLL) – perinnöllisiä silmäsairauksia, jotka voivat johtaa sokeuteen",
       hip_scheme: "Lonkkien röntgenkuvaus lonkkaniveldysplasian varalta (Iso-Britannia: BVA/KC-ohjelma)",
       elbow_scheme: "Kyynärnivelten röntgenkuvaus kyynärniveldysplasian varalta (Iso-Britannia: BVA/KC-ohjelma)",
       eye_scheme: "Silmätutkimus silmäsairauksiin perehtyneellä eläinlääkärillä (Iso-Britannia: BVA/KC/ISDS-ohjelma; joillakin roduilla myös gonioskopia)",
@@ -485,6 +486,7 @@ const fi: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "Rodulla voi esiintyä shar pein perinnöllistä kuumetta: korkean kuumeen kohtauksia, joihin liittyy kipeitä, turvonneita niveliä ja turvonnut naama – mene heti eläinlääkäriin.",
     weight_gain: "Lihoo helposti – annoksia ja herkkuja on seurattava.",
     hip_elbow_dysplasia_eye_conditions: "Voi olla altis lonkka- ja kyynärniveldysplasialle sekä useille perinnöllisille silmäsairauksille.",
     cancer_risk: "Lähteiden mukaan rodulla on tavallista suurempi syöpäriski.",
@@ -781,6 +783,14 @@ const fi: RegistryCopy = {
     },
   },
   intros: {
+    shar_pei: {
+      aka: "kiinalainen shar pei, Chinese Shar-Pei, Sharpei",
+      text: [
+        "Shar pei (Yhdysvalloissa ”Chinese Shar-Pei”) on aktiivinen, tiivis, neliömäinen keskikokoinen koira Kiinasta. Sillä on lyhyt, karhea ja harjasmainen yksivärinen turkki (mikä tahansa väri paitsi valkoinen), poimuja päässä ja säkässä sekä leveä kuono. Royal Kennel Clubin rotumääritelmä ilmoittaa säkäkorkeudeksi 46–51 cm ja PDSA painoksi 20–27 kg; tämänkokoinen koira on täysikasvuinen noin 12–15 kuukauden iässä (PetMD). Royal Kennel Club ja PDSA ilmoittavat eliniäksi yli 10 vuotta, mutta Isossa-Britanniassa tehty VetCompass-tutkimus totesi mediaaniksi 7,3 vuotta.",
+        "Royal Kennel Club suosittelee enintään tunnin liikuntaa päivässä ja harjausta kerran viikossa ja sijoittaa rodun Breed Watch -ohjelman luokkaan 2 silmäluomien ja ihopoimujen ongelmien vuoksi. PDSA kuvaa shar peitä uskollisiksi, kiintyneiksi perhekoiriksi, jotka sopivat parhaiten kokeneille omistajille ja isommille lapsille, varoittaa vahvasta saalisvietistä pienempiä eläimiä kohtaan ja neuvoo pitämään ihopoimut puhtaina ja kuivina sekä pitämään tauon ruokailun ja liikunnan välillä.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Bordercollie on Isosta-Britanniasta kotoisin oleva keskikokoinen paimenkoira, joka on jalostettu kestävyyteen ja kovaan työhön. Sen rotumääritelmä kuvaa innokkaan, valppaan, herkästi reagoivan ja älykkään koiran, joka ei ole hermostunut eikä aggressiivinen.",

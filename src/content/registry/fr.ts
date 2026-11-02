@@ -293,6 +293,7 @@ const fr: RegistryCopy = {
       kitten_parents_tests: "Demandez si l’un des parents a eu des problèmes de santé dont le chaton pourrait hériter.",
     },
     tests: {
+      dna_poag_pll: "Test ADN du glaucome primaire à angle ouvert et de la luxation primaire du cristallin (POAG/PLL), maladies oculaires héréditaires pouvant mener à la cécité",
       hip_scheme: "Dépistage radiographique de la dysplasie de la hanche (Royaume-Uni : programme BVA/KC)",
       elbow_scheme: "Dépistage radiographique de la dysplasie du coude (Royaume-Uni : programme BVA/KC)",
       eye_scheme: "Examen des yeux par un vétérinaire ophtalmologiste (Royaume-Uni : programme BVA/KC/ISDS ; avec gonioscopie pour certaines races)",
@@ -391,6 +392,7 @@ const fr: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "La fièvre familiale du Shar Pei peut survenir dans la race : des accès de forte fièvre avec des articulations douloureuses et gonflées et un visage enflé — consultez un vétérinaire sans attendre.",
     weight_gain: "Prend facilement du poids – il faut surveiller les portions et les friandises.",
     hip_elbow_dysplasia_eye_conditions: "Peut être sujet à la dysplasie de la hanche et du coude ainsi qu’à plusieurs maladies oculaires héréditaires.",
     cancer_risk: "Les sources décrivent un risque de cancer plus élevé dans cette race.",
@@ -624,6 +626,14 @@ const fr: RegistryCopy = {
     },
   },
   intros: {
+    shar_pei: {
+      aka: "Shar-Pei chinois, Chinese Shar-Pei, Sharpei",
+      text: [
+        "Le Shar Pei (« Chinese Shar-Pei » aux États-Unis) est un chien actif, compact, de construction carrée et de taille moyenne, originaire de Chine, au poil court, dur et hérissé d’une seule couleur (toutes sauf le blanc), avec des plis sur la tête et le garrot et un museau large. Le standard du Royal Kennel Club indique une hauteur de 46 à 51 cm et la PDSA un poids de 20 à 27 kg ; un chien de cette taille a fini sa croissance vers 12 à 15 mois (PetMD). Le Royal Kennel Club et la PDSA indiquent une espérance de vie de plus de 10 ans, mais une étude VetCompass sur des chiens au Royaume-Uni a trouvé une médiane de 7,3 ans.",
+        "Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour et un brossage par semaine, et classe la race en catégorie 2 de Breed Watch en raison de problèmes de paupières et de plis de peau. La PDSA décrit les Shar Peis comme des chiens de famille fidèles et dévoués, qui conviennent le mieux à des maîtres expérimentés et à des enfants plus âgés, met en garde contre un fort instinct de prédation envers les petits animaux et conseille de garder les plis de peau propres et secs et de laisser un intervalle entre le repas et l’exercice.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Le Border Collie est un chien de troupeau de taille moyenne originaire de Grande-Bretagne, bâti pour l’endurance et le travail intense. Son standard décrit un chien vif, alerte, réceptif et intelligent, ni craintif ni agressif.",

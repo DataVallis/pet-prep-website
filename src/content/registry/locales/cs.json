@@ -811,6 +811,14 @@
         "Bengal",
         "Bengal cat"
       ]
+    },
+    "shar_pei": {
+      "name": "Šar-pej",
+      "slug": "sar-pej",
+      "synonyms": [
+        "Shar Pei",
+        "Čínský šar-pej"
+      ]
     }
   },
   "suitability_labels": {
@@ -856,7 +864,8 @@
       "short_muzzle_breathing": "kratší čenich – může mít potíže s dýcháním",
       "shorter_lifespan": "kratší délka života",
       "small_children": "do rodiny s malými dětmi",
-      "sun_protection": "holá kůže – potřebuje ochranu před sluncem"
+      "sun_protection": "holá kůže – potřebuje ochranu před sluncem",
+      "independent_older_children": "samostatný pes – lépe se staršími dětmi"
     }
   }
 }

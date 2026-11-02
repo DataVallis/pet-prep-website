@@ -271,6 +271,7 @@ const de: RegistryCopy = {
       kitten_parents_tests: "Fragen Sie, ob eines der Elterntiere Gesundheitsprobleme hatte, die das Kätzchen erben könnte.",
     },
     tests: {
+      dna_poag_pll: "DNA-Test auf primäres Offenwinkelglaukom und primäre Linsenluxation (POAG/PLL), erbliche Augenerkrankungen, die zur Erblindung führen können",
       hip_scheme: "Röntgenuntersuchung der Hüften auf Hüftdysplasie (UK: BVA/KC-Programm)",
       elbow_scheme: "Röntgenuntersuchung der Ellbogen auf Ellbogendysplasie (UK: BVA/KC-Programm)",
       eye_scheme: "Augenuntersuchung durch einen tierärztlichen Augenspezialisten (UK: BVA/KC/ISDS-Programm; bei manchen Rassen mit Gonioskopie)",
@@ -369,6 +370,7 @@ const de: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "Familiäres Shar-Pei-Fieber kann in der Rasse vorkommen: Schübe mit hohem Fieber, schmerzhaft geschwollenen Gelenken und geschwollenem Gesicht – sofort zum Tierarzt.",
     weight_gain: "Nimmt leicht zu – Portionen und Leckerlis im Blick behalten.",
     hip_elbow_dysplasia_eye_conditions: "Kann zu Hüft- und Ellbogendysplasie sowie zu mehreren erblichen Augenerkrankungen neigen.",
     cancer_risk: "Die Quellen beschreiben bei dieser Rasse ein höheres Krebsrisiko.",
@@ -602,6 +604,14 @@ const de: RegistryCopy = {
     },
   },
   intros: {
+    shar_pei: {
+      aka: "Chinesischer Shar-Pei, Chinese Shar-Pei, Sharpei",
+      text: [
+        "Der Shar Pei (in den USA „Chinese Shar-Pei“) ist ein aktiver, kompakter, quadratisch gebauter mittelgroßer Hund aus China mit kurzem, hartem, borstigem Fell in einer einzigen Farbe (jede außer Weiß), Falten an Kopf und Widerrist und breitem Fang. Der Standard des Royal Kennel Club gibt eine Widerristhöhe von 46–51 cm an, die PDSA ein Gewicht von 20–27 kg; ein Hund dieser Größe ist mit etwa 12–15 Monaten ausgewachsen (PetMD). Royal Kennel Club und PDSA geben eine Lebenserwartung von über 10 Jahren an, eine VetCompass-Studie an Hunden in Großbritannien fand jedoch einen Median von 7,3 Jahren.",
+        "Der Royal Kennel Club empfiehlt bis zu einer Stunde Bewegung pro Tag und Bürsten einmal pro Woche und führt die Rasse wegen Problemen mit Augenlidern und Hautfalten in Kategorie 2 von Breed Watch. Die PDSA beschreibt Shar Peis als treue, ergebene Familienhunde, die am besten zu erfahrenen Haltern und älteren Kindern passen, warnt vor einem hohen Jagdtrieb gegenüber kleineren Tieren und rät, die Hautfalten sauber und trocken zu halten und zwischen Fressen und Bewegung eine Pause einzulegen.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Der Border Collie ist ein mittelgroßer Hütehund aus Großbritannien, gebaut für Ausdauer und harte Arbeit. Sein Rassestandard beschreibt einen eifrigen, aufmerksamen, reaktionsschnellen und intelligenten Hund, der weder nervös noch aggressiv ist.",

@@ -349,6 +349,7 @@ const hr: RegistryCopy = {
       kitten_parents_tests: "Pitaj je li ijedan roditelj imao zdravstvenih problema koje bi mače moglo naslijediti.",
     },
     tests: {
+      dna_poag_pll: "DNK test na primarni glaukom otvorenog kuta i primarnu luksaciju leće (POAG/PLL), nasljedne bolesti očiju koje mogu dovesti do sljepoće",
       hip_scheme: "Rendgenski pregled kukova na displaziju kuka (UK: program BVA/KC)",
       elbow_scheme: "Rendgenski pregled laktova na displaziju lakta (UK: program BVA/KC)",
       eye_scheme: "Pregled očiju kod veterinarskog oftalmologa (UK: program BVA/KC/ISDS; za neke pasmine uz gonioskopiju)",
@@ -447,6 +448,7 @@ const hr: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "U pasmine se može pojaviti obiteljska groznica šarpeja: napadaji visoke temperature s bolnim, natečenim zglobovima i natečenim licem — odmah veterinaru.",
     weight_gain: "Lako se deblja – treba paziti na porcije i poslastice.",
     hip_elbow_dysplasia_eye_conditions: "Može biti sklon displaziji kuka i lakta te nekolicini nasljednih bolesti očiju.",
     cancer_risk: "Izvori opisuju veći rizik od raka u ovoj pasmini.",
@@ -735,6 +737,14 @@ const hr: RegistryCopy = {
     },
   },
   intros: {
+    shar_pei: {
+      aka: "Shar Pei, kineski šarpej, Chinese Shar-Pei",
+      text: [
+        "Šarpej (u SAD-u „Chinese Shar-Pei”) aktivan je, kompaktan, kvadratno građen pas srednje veličine iz Kine s kratkom, oštrom, čekinjastom dlakom jedne boje (bilo koje osim bijele), naborima na glavi i grebenu te širokom njuškom. Standard Royal Kennel Cluba navodi visinu od 46–51 cm, a PDSA težinu od 20–27 kg; pas te veličine prestaje rasti oko 12.–15. mjeseca (PetMD). Royal Kennel Club i PDSA navode životni vijek dulji od 10 godina, no studija VetCompass na psima u Ujedinjenom Kraljevstvu pronašla je medijan od 7,3 godine.",
+        "Royal Kennel Club preporučuje do sat vremena kretanja dnevno i četkanje jednom tjedno te pasminu svrstava u 2. kategoriju programa Breed Watch zbog problema s kapcima i kožnim naborima. PDSA opisuje šarpeje kao odane, privržene obiteljske pse koji najbolje odgovaraju iskusnim vlasnicima i starijoj djeci, upozorava na snažan lovački nagon prema manjim životinjama te savjetuje da kožni nabori budu čisti i suhi i da između obroka i kretanja prođe neko vrijeme.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Border collie srednje je velik ovčarski pas iz Velike Britanije, stvoren za izdržljivost i težak rad. Standard pasmine opisuje ga kao poletnog, budnog, prijemčivog i inteligentnog psa koji nije ni nervozan ni agresivan.",
