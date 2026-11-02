@@ -845,6 +845,14 @@
         "Shar Pei",
         "Kineski šarpej"
       ]
+    },
+    "rat_terrier": {
+      "name": "Rat terijer",
+      "slug": "rat-terijer",
+      "synonyms": [
+        "Rattie",
+        "Američki rat terijer"
+      ]
     }
   },
   "suitability_labels": {

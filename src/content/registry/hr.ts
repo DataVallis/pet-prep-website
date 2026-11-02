@@ -738,6 +738,14 @@ const hr: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, američki rat terijer, Rat Terrier",
+      text: [
+        "Rat terijer malen je američki terijer koji se uzgaja u dvije veličine — minijaturnoj i standardnoj — s kratkom, priljubljenom, glatkom i sjajnom dlakom. Standard pasmine dopušta visinu u grebenu do 18 inča (46 cm), a PetMD za obje veličine navodi težinu od 10–25 funti (oko 4,5–11 kg); pas te veličine prestaje rasti oko 9.–12. mjeseca (PetMD). VCA navodi životni vijek od 12–16 godina, PetMD 12–18 godina.",
+        "Rat Terrier Club of America navodi da se rat terijeri dobro slažu s djecom, osobito ako odrastaju s njima, i snalaze se u stanu, ali trebaju barem 30 minuta kretanja dnevno. PetMD piše da im treba puno tjelesnih i mentalnih izazova, ne vole dugo biti sami i blago linjaju cijele godine; VCA savjetuje četkanje jednom tjedno i upozorava da se možda neće slagati s malim životinjama, osobito glodavcima.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
     shar_pei: {
       aka: "Shar Pei, kineski šarpej, Chinese Shar-Pei",
       text: [

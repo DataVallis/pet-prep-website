@@ -605,6 +605,14 @@ const de: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, Amerikanischer Rat Terrier",
+      text: [
+        "Der Rat Terrier ist ein kleiner amerikanischer Terrier, der in zwei Größen gezüchtet wird – Miniatur und Standard – mit kurzem, eng anliegendem, glattem und glänzendem Fell. Der Rassestandard erlaubt eine Widerristhöhe von bis zu 18 Zoll (46 cm), und PetMD nennt für beide Größen ein Gewicht von 10–25 Pfund (etwa 4,5–11 kg); ein Hund dieser Größe ist mit etwa 9–12 Monaten ausgewachsen (PetMD). VCA gibt eine Lebenserwartung von 12–16 Jahren an, PetMD 12–18 Jahre.",
+        "Der Rat Terrier Club of America sagt, Rat Terrier seien gut mit Kindern, besonders wenn sie mit ihnen aufwachsen, und kämen in einer Wohnung zurecht, bräuchten aber mindestens 30 Minuten Bewegung am Tag. PetMD schreibt, sie bräuchten viel körperliche und geistige Auslastung, seien nicht gern lange allein und haarten das ganze Jahr leicht; VCA empfiehlt, einmal pro Woche zu bürsten, und warnt, dass sie sich mit kleinen Haustieren, besonders Nagetieren, womöglich nicht vertragen.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
     shar_pei: {
       aka: "Chinesischer Shar-Pei, Chinese Shar-Pei, Sharpei",
       text: [

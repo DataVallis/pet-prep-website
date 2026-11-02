@@ -651,6 +651,14 @@ const pl: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, amerykański rat terier, Rat Terrier",
+      text: [
+        "Rat terier to mały amerykański terier hodowany w dwóch odmianach wielkości — miniaturowej i standardowej — o krótkiej, przylegającej, gładkiej i lśniącej sierści. Wzorzec rasy dopuszcza wysokość w kłębie do 18 cali (46 cm), a PetMD podaje dla obu odmian masę 10–25 funtów (około 4,5–11 kg); pies tej wielkości kończy rosnąć w wieku około 9–12 miesięcy (PetMD). VCA podaje długość życia 12–16 lat, PetMD 12–18 lat.",
+        "Rat Terrier Club of America podaje, że rat teriery dobrze dogadują się z dziećmi, zwłaszcza jeśli z nimi dorastają, i radzą sobie w mieszkaniu, ale potrzebują co najmniej 30 minut ruchu dziennie. PetMD pisze, że potrzebują dużo aktywności fizycznej i umysłowej, nie lubią długo zostawać same i przez cały rok lekko linieją; VCA zaleca szczotkowanie raz w tygodniu i ostrzega, że mogą nie dogadywać się z małymi zwierzętami, zwłaszcza gryzoniami.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
     shar_pei: {
       aka: "chiński shar pei, Chinese Shar-Pei, Sharpei",
       text: [

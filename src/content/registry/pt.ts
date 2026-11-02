@@ -628,6 +628,14 @@ const pt: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, Rat Terrier americano",
+      text: [
+        "O Rat Terrier é um pequeno terrier americano criado em dois tamanhos — miniatura e padrão — com pelo curto, rente, liso e brilhante. O padrão da raça admite uma altura na cernelha até 18 polegadas (46 cm), e a PetMD indica um peso de 10–25 libras (cerca de 4,5–11 kg) para ambos os tamanhos; um cão deste porte termina de crescer por volta dos 9–12 meses (PetMD). A VCA indica uma esperança de vida de 12–16 anos, a PetMD de 12–18 anos.",
+        "O Rat Terrier Club of America diz que os Rat Terrier se dão bem com crianças, sobretudo se crescerem com elas, e adaptam-se a um apartamento, mas precisam de pelo menos 30 minutos de exercício por dia. A PetMD refere que precisam de muita estimulação física e mental, não gostam de ficar sozinhos muito tempo e largam um pouco de pelo todo o ano; a VCA aconselha escovar uma vez por semana e avisa que podem não se dar bem com animais pequenos, sobretudo roedores.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
     shar_pei: {
       aka: "Shar-Pei chinês, Chinese Shar-Pei, Sharpei",
       text: [

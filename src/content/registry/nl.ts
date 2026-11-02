@@ -631,6 +631,14 @@ const nl: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, Amerikaanse Rat Terrier",
+      text: [
+        "De Rat Terrier is een kleine Amerikaanse terriër die in twee maten wordt gefokt — miniatuur en standaard — met een korte, nauw aanliggende, gladde en glanzende vacht. De rasstandaard staat een schofthoogte tot 18 inch (46 cm) toe, en PetMD noemt voor beide maten een gewicht van 10–25 pond (ongeveer 4,5–11 kg); een hond van dit formaat is rond 9–12 maanden volgroeid (PetMD). VCA noemt een levensduur van 12–16 jaar, PetMD 12–18 jaar.",
+        "De Rat Terrier Club of America zegt dat Rat Terriers goed met kinderen omgaan, vooral als ze met hen opgroeien, en het in een appartement redden, maar minstens 30 minuten beweging per dag nodig hebben. PetMD schrijft dat ze veel lichamelijke en mentale uitdaging nodig hebben, niet graag lang alleen zijn en het hele jaar licht verharen; VCA raadt eenmaal per week borstelen aan en waarschuwt dat ze misschien niet goed samengaan met kleine huisdieren, vooral knaagdieren.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
     shar_pei: {
       aka: "Chinese Shar-Pei, Sharpei",
       text: [

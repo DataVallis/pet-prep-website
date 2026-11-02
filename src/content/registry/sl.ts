@@ -622,6 +622,14 @@ const sl: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "rattie, ameriški rat terier, terier za podgane, Rat Terrier",
+      text: [
+        "Rat terier je majhen ameriški terier v dveh velikostih — miniaturni in standardni — s kratko, tesno prilegajočo, gladko in svetlečo dlako. Standard pasme dovoljuje višino do 18 palcev (46 cm) v vihru, PetMD pa za obe velikosti navaja težo 10–25 funtov (okoli 4,5–11 kg); pes te velikosti zraste do okoli 9–12 mesecev (PetMD). VCA navaja življenjsko dobo 12–16 let, PetMD 12–18 let.",
+        "Ameriški klub rat terierjev navaja, da so rat terierji dobri z otroki, še posebej če odraščajo z njimi, in da gredo v stanovanje, a potrebujejo vsaj 30 minut gibanja na dan. PetMD piše, da potrebujejo veliko telesnih in miselnih izzivov, ne marajo biti dolgo sami in jim dlaka rahlo izpada vse leto; VCA svetuje česanje enkrat na teden in opozarja, da morda niso primerni za dom z malimi živalmi, še posebej z glodavci.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
     shar_pei: {
       aka: "šar pej, sharpei, shar pei, kitajski šarpej, Chinese Shar-Pei",
       text: [

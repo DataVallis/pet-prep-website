@@ -810,6 +810,14 @@
         "Chiński shar pei",
         "Sharpei"
       ]
+    },
+    "rat_terrier": {
+      "name": "Rat terier",
+      "slug": "rat-terier",
+      "synonyms": [
+        "Rattie",
+        "Amerykański rat terier"
+      ]
     }
   },
   "suitability_labels": {

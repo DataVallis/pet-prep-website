@@ -486,6 +486,7 @@ const fi: RegistryCopy = {
     },
   },
   health: {
+    splenic_torsion: "Pernan kiertymä, joka vaatii kiireellistä eläinlääkärin hoitoa, on tällä rodulla yleisempi kuin muilla suurilla roduilla.",
     shar_pei_fever: "Rodulla voi esiintyä shar pein perinnöllistä kuumetta: korkean kuumeen kohtauksia, joihin liittyy kipeitä, turvonneita niveliä ja turvonnut naama – mene heti eläinlääkäriin.",
     weight_gain: "Lihoo helposti – annoksia ja herkkuja on seurattava.",
     hip_elbow_dysplasia_eye_conditions: "Voi olla altis lonkka- ja kyynärniveldysplasialle sekä useille perinnöllisille silmäsairauksille.",
@@ -783,6 +784,22 @@ const fi: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rat Terrier, Rattie, amerikkalainen rottaterrieri",
+      text: [
+        "Rottaterrieri on pieni amerikkalainen terrieri, jota kasvatetaan kahtena kokona – miniatyyri- ja standardikokoisena. Sillä on lyhyt, tiivis, sileä ja kiiltävä turkki. Rotumääritelmä sallii enintään 18 tuuman (46 cm) säkäkorkeuden, ja PetMD ilmoittaa molempien kokojen painoksi 10–25 paunaa (noin 4,5–11 kg); tämänkokoinen koira on täysikasvuinen noin 9–12 kuukauden iässä (PetMD). VCA ilmoittaa eliniäksi 12–16 vuotta, PetMD 12–18 vuotta.",
+        "Rat Terrier Club of America kertoo, että rottaterrierit tulevat hyvin toimeen lasten kanssa, varsinkin jos ne kasvavat yhdessä, ja pärjäävät kerrostalossa, mutta tarvitsevat vähintään 30 minuuttia liikuntaa päivässä. PetMD:n mukaan ne tarvitsevat paljon fyysistä ja henkistä virikettä, eivät viihdy pitkään yksin ja karvaavat hieman ympäri vuoden; VCA suosittelee harjausta kerran viikossa ja varoittaa, että ne eivät välttämättä tule toimeen pienten lemmikkien, etenkään jyrsijöiden, kanssa.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "Grosser Schweizer Sennenhund, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "Isosveitsinpaimenkoira (FCI:llä ja Isossa-Britanniassa ”Great Swiss Mountain Dog”) on vankka, vahvaluinen ja hyvin lihaksikas kolmivärinen vetokoira Sveitsistä: musta, jossa on symmetriset ruskeat ja valkoiset merkit. FCI:n rotumääritelmä ilmoittaa säkäkorkeudeksi 65–72 cm uroksille ja 60–68 cm nartuille mutta ei painoa; WebMD ilmoittaa 52–64 kg uroksille ja 39–50 kg nartuille. Tämänkokoinen koira on täysikasvuinen noin 18–24 kuukauden iässä (PetMD), ja Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta (PetMD: 8–11 vuotta).",
+        "Royal Kennel Club suosittelee enintään tunnin liikuntaa päivässä ja harjausta kerran viikossa ja kertoo, että rotu karvaa ja sopii isoon taloon, jossa on iso piha. PetMD kuvaa rotua erinomaiseksi perhekoiraksi, joka on lempeä lapsia kohtaan (kaikkea yhdessäoloa tulee valvoa), neuvoo puhdistamaan korvat viikoittain ja välttämään liikuntaa juuri ennen ruokailua tai sen jälkeen mahalaukun kiertymän (GDV) vaaran vuoksi; WebMD neuvoo harjaamaan hampaat päivittäin ja antamaan vähän herkkuja, koska rotu lihoo helposti.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
+    },
     shar_pei: {
       aka: "kiinalainen shar pei, Chinese Shar-Pei, Sharpei",
       text: [

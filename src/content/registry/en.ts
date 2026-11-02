@@ -602,6 +602,14 @@ const en: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, Ratty, American Rat Terrier",
+      text: [
+        "The Rat Terrier is a small American terrier, bred in two sizes — miniature and standard — with a short, close-lying, smooth and shiny coat. The breed standard allows a height of up to 18 inches (46 cm) at the withers, and PetMD gives a weight of 10–25 pounds (about 4.5–11 kg) for both sizes; a dog of this size is fully grown at about 9–12 months (PetMD). VCA gives a lifespan of 12–16 years, PetMD 12–18 years.",
+        "The Rat Terrier Club of America says Rat Terriers are good with children, especially if raised with them, and do fine in an apartment but need at least 30 minutes of exercise a day. PetMD says they need plenty of physical and mental stimulation, don't enjoy being left alone for long periods and shed mildly all year; VCA recommends brushing once a week and warns they may not be good with small pets, especially rodents.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
     shar_pei: {
       aka: "Chinese Shar-Pei, Shar-Pei, Sharpei",
       text: [

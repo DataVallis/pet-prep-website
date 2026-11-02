@@ -828,6 +828,14 @@
         "Shar Pei",
         "Čínský šar-pej"
       ]
+    },
+    "rat_terrier": {
+      "name": "Rat teriér",
+      "slug": "rat-terier",
+      "synonyms": [
+        "Rattie",
+        "Americký rat teriér"
+      ]
     }
   },
   "suitability_labels": {

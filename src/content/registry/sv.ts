@@ -433,6 +433,7 @@ const sv: RegistryCopy = {
     },
   },
   health: {
+    splenic_torsion: "Mjältvridning, som kräver akut veterinärvård, är vanligare hos den här rasen än hos andra stora raser.",
     shar_pei_fever: "Familjär shar pei-feber kan förekomma i rasen: attacker av hög feber med smärtsamma, svullna leder och svullet ansikte – kontakta veterinär direkt.",
     weight_gain: "Går lätt upp i vikt – håll koll på portioner och godbitar.",
     hip_elbow_dysplasia_eye_conditions: "Kan vara benägen att få höftledsdysplasi och armbågsledsdysplasi samt flera ärftliga ögonsjukdomar.",
@@ -714,6 +715,22 @@ const sv: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, amerikansk rat terrier, Rat Terrier",
+      text: [
+        "Rat terrier är en liten amerikansk terrier som avlas i två storlekar – miniatyr och standard – med kort, tätt åtliggande, slät och glansig päls. Rasstandarden tillåter en mankhöjd på upp till 18 tum (46 cm), och PetMD anger en vikt på 10–25 pund (cirka 4,5–11 kg) för båda storlekarna; en hund av den storleken är fullvuxen vid ungefär 9–12 månader (PetMD). VCA anger en livslängd på 12–16 år, PetMD 12–18 år.",
+        "Rat Terrier Club of America säger att rat terrier är bra med barn, särskilt om de växer upp med dem, och klarar sig i en lägenhet men behöver minst 30 minuters motion om dagen. PetMD skriver att de behöver mycket fysisk och mental stimulans, inte trivs med att vara ensamma länge och fäller lite året runt; VCA rekommenderar borstning en gång i veckan och varnar för att de kanske inte fungerar med smådjur, särskilt gnagare.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "Grosser Schweizer Sennenhund, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "Stor schweizisk sennenhund (FCI och i Storbritannien ”Great Swiss Mountain Dog”) är en kraftig, grovbenad och välmusklad trefärgad draghund från Schweiz: svart med symmetriska bruna och vita tecken. FCI-standarden anger en mankhöjd på 65–72 cm för hanar och 60–68 cm för tikar men ingen vikt; WebMD anger 52–64 kg för hanar och 39–50 kg för tikar. En hund av den storleken är fullvuxen vid ungefär 18–24 månader (PetMD), och Royal Kennel Club anger en livslängd på över 10 år (PetMD: 8–11 år).",
+        "Royal Kennel Club rekommenderar upp till en timmes motion om dagen och borstning en gång i veckan, och säger att rasen fäller och passar i ett stort hus med stor trädgård. PetMD kallar rasen en utmärkt familjehund som är varsam med barn (all kontakt bör ske under uppsikt), råder att rengöra öronen varje vecka och att inte motionera hunden direkt före eller efter måltid på grund av risken för magomvridning (GDV); WebMD råder att borsta tänderna dagligen och vara sparsam med godis, eftersom rasen lätt blir överviktig.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
+    },
     shar_pei: {
       aka: "kinesisk shar pei, Chinese Shar-Pei, Sharpei",
       text: [

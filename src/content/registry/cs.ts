@@ -683,6 +683,14 @@ const cs: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, americký rat teriér, Rat Terrier",
+      text: [
+        "Rat teriér je malý americký teriér chovaný ve dvou velikostech — miniaturní a standardní — s krátkou, přiléhavou, hladkou a lesklou srstí. Standard plemene připouští výšku v kohoutku až 18 palců (46 cm) a PetMD uvádí pro obě velikosti hmotnost 10–25 liber (asi 4,5–11 kg); pes této velikosti je dorostlý přibližně v 9–12 měsících (PetMD). VCA uvádí délku života 12–16 let, PetMD 12–18 let.",
+        "Rat Terrier Club of America uvádí, že rat teriéři dobře vycházejí s dětmi, zvlášť pokud s nimi vyrůstají, a zvládnou byt, ale potřebují alespoň 30 minut pohybu denně. PetMD píše, že potřebují hodně fyzické i duševní zátěže, nemají rádi dlouhou samotu a celý rok mírně línají; VCA doporučuje kartáčování jednou týdně a upozorňuje, že nemusí vycházet s malými zvířaty, zvlášť s hlodavci.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
     shar_pei: {
       aka: "Shar Pei, čínský šar-pej, Chinese Shar-Pei",
       text: [
