@@ -2,13 +2,13 @@ import type { Dictionary } from "./types";
 
 const sl: Dictionary = {
   meta: {
-    siteTitle: "PetPrep — Pripravljeni na žival. Ob njej vse življenje.",
+    siteTitle: "PetPrep – Pripravljeni na ljubljenčka. Ob njem vse življenje.",
     siteDescription:
-      "PetPrep je 12-tedenski simulator hišnega ljubljenčka, ki staršem pokaže, ali je otrok res pripravljen na pravo žival — nato pa postane AI asistent za vse življenje prave živali.",
-    slogan: "Pripravljeni na žival. Ob njej vse življenje.",
+      "PetPrep je 12-tedenski simulator hišnega ljubljenčka, ki staršem pokaže, ali je otrok res pripravljen na pravega ljubljenčka – nato pa postane AI asistent, ki ljubljenčka spremlja vse življenje.",
+    slogan: "Pripravljeni na ljubljenčka. Ob njem vse življenje.",
     keywords: [
       "ali je otrok pripravljen na psa",
-      "aplikacija za odgovornost otrok",
+      "aplikacija za učenje odgovornosti otrok",
       "virtualni ljubljenček",
       "simulator psa",
       "pred nakupom psa",
@@ -22,12 +22,12 @@ const sl: Dictionary = {
   nav: { home: "Domov", menu: "Meni", close: "Zapri meni", skip: "Preskoči na vsebino" },
   lang: { label: "Jezik", switchTo: "Zamenjaj jezik" },
   cta: {
-    primary: "Začni brezplačno z mešančkom",
-    secondary: "Poglej, kako deluje",
+    primary: "Začnite brezplačno z mešančkom",
+    secondary: "Poglejte, kako deluje",
     earlyAccess: "Prijava na zgodnji dostop",
     earlyAccessSubject: "PetPrep zgodnji dostop",
-    ios: "Prenesi za iPhone",
-    android: "Prenesi za Android",
+    ios: "Prenesite za iPhone",
+    android: "Prenesite za Android",
     comingSoon: "Kmalu za iPhone in Android",
     readMore: "Več",
     contactUs: "Pišite nam",
@@ -35,13 +35,13 @@ const sl: Dictionary = {
   common: {
     planned: "V razvoju",
     plannedNote:
-      "Ta stran opisuje, kar gradimo naslednje. V aplikaciji še ni na voljo, podrobnosti se lahko še spremenijo.",
+      "Ta stran opisuje, kaj gradimo naslednje. V aplikaciji še ni na voljo, podrobnosti se lahko še spremenijo.",
     legalDraft:
       "Besedilo pred javnim začetkom dokončujemo s pravnimi svetovalci. Če vam karkoli ni jasno, nam pišite.",
     lastUpdated: "Zadnja posodobitev",
     breadcrumbHome: "Domov",
-    screensNote: "Zasloni aplikacije na tej strani so predogled izdelka; končna aplikacija je lahko videti nekoliko drugače.",
-    perPet: "na žival",
+    screensNote: "Zasloni aplikacije na tej strani so predogled; končna aplikacija se lahko nekoliko razlikuje.",
+    perPet: "na ljubljenčka",
     free: "Brezplačno",
     forever: "za vedno",
     notFoundTitle: "Ta stran je ušla s povodca.",
@@ -49,7 +49,7 @@ const sl: Dictionary = {
     notFoundCta: "Nazaj na domačo stran",
   },
   footer: {
-    tagline: "Pripravljeni na žival. Ob njej vse življenje.",
+    tagline: "Pripravljeni na ljubljenčka. Ob njem vse življenje.",
     groups: [
       { title: "Izdelek", links: ["howItWorks", "parents", "animals", "care", "kids", "coloring", "afterAdoption", "pricing", "faq"] },
       { title: "Podjetje", links: ["about", "curio", "walkyourpet", "partners", "investors", "contact"] },
@@ -60,36 +60,36 @@ const sl: Dictionary = {
     languages: "Več jezikov kmalu.",
     company: "PetPrep je izdelek podjetja",
     cookieSettings: "Nastavitve piškotkov",
-    a11yBadge: { title: "Igra za vse otroke", text: "Lažje kretnje · Bralniki zaslona · Manj gibanja" },
+    a11yBadge: { title: "Dostopna igra", text: "Preprostejše kretnje · Bralniki zaslona · Manj gibanja" },
   },
   screens: {
-    pin: "Otrok se prijavi s 6-mestno kodo staršev — brez e-pošte in gesla.",
+    pin: "Otrok se prijavi s 6-mestno kodo staršev – brez e-pošte in gesla.",
     contract: "Pogodba o odgovornosti, podpisana s prstom. Ob podpisu se ljubljenček rodi.",
-    hud: "Otrokov glavni zaslon: stanje ljubljenčka v živo, štiri potrebe in gumbi za skrb.",
+    hud: "Otrokov glavni zaslon: stanje ljubljenčka v živo, štiri potrebe in gumbi za oskrbo.",
     picker: "Starši izberejo ljubljenčka: pasmo, izvor (posvojen ali od vzreditelja) in starost ob prihodu.",
     parent: "Nadzorna plošča za starše: semafor, Care Score in današnje rutine za vsakega otroka.",
     report: "Poročilo otroka za 7, 30 ali 84 dni: rutine, sprehodi in zamujene naloge po dnevih.",
-    assistant: "Ko pride domov: AI asistent podatke z ovratnice prevede v en jasen predlog.",
+    assistant: "Ko pride domov: AI asistent podatke z ovratnice pretvori v jasen predlog.",
     certificate: "Po 12 tednih: Certifikat odgovornosti z otrokovim Care Score.",
   },
   pricingPlans: {
     free: {
       name: "Mešanček",
-      text: "Celotna simulacija z življenjskim mešančkom.",
+      text: "Celotna simulacija z realističnim mešančkom.",
       features: [
         "12-tedenska simulacija z resničnimi posledicami",
-        "Pravi sprehodi s pravimi koraki iz telefona",
+        "Pravi sprehodi, pravi koraki iz telefona",
         "Nadzorna plošča za starše, semafor in Care Score",
         "Tihe ure in gumb za premor",
         "Fotorealistična slika ljubljenčka in kratki videi",
       ],
-      cta: "Začni brezplačno",
+      cta: "Začnite brezplačno",
     },
     challenge: {
       name: "12-tedenski PetPrep izziv",
       badge: "12 tednov + certifikat",
-      unit: "na žival · 12 tednov",
-      text: "Za družine, ki želijo celotno izkušnjo in certifikat na koncu.",
+      unit: "na ljubljenčka · 12 tednov",
+      text: "Za družine, ki želijo celotno izkušnjo s certifikatom na koncu.",
       features: [
         "Vse iz paketa Mešanček",
         "Zahtevne pasme, na primer [border collie](breed:border_collie)",
@@ -98,42 +98,42 @@ const sl: Dictionary = {
         "Ena cena, ko si sorojenci delijo ljubljenčka",
         "Dostop za oba starša",
       ],
-      cta: "Izberi izziv",
+      cta: "Izberite izziv",
     },
     note:
       "Nakup poteka v aplikaciji prek App Store ali Google Play. Drugi ljubljenček v isti družini je ločen izziv. Cene vključujejo DDV, kjer se obračuna.",
   },
   earlyAccess: {
     title: "Prijava na zgodnji dostop",
-    text: "Bodite med prvimi družinami, ki preizkusijo PetPrep. Pisali vam bomo, ko bo pripravljen — nič drugega.",
+    text: "Bodite med prvimi družinami, ki preizkusijo PetPrep. Pisali vam bomo, ko bo pripravljen – nič drugega.",
     label: "Vaš e-poštni naslov",
     placeholder: "vi@primer.si",
     button: "Prijava na zgodnji dostop",
     sending: "Pošiljam …",
     successTitle: "Ste na seznamu.",
-    successText: "Hvala! Ko bo PetPrep pripravljen, vam pišemo med prvimi.",
+    successText: "Hvala! Ko bo PetPrep pripravljen, vam bomo pisali med prvimi.",
     invalid: "Vpišite veljaven e-poštni naslov.",
     error: "Nekaj je šlo narobe. Poskusite znova čez trenutek.",
-    consent: "S prijavo se strinjate, da vam pošiljamo e-pošto o PetPrep. Odjava je mogoča kadarkoli.",
+    consent: "S prijavo se strinjate, da vam pošiljamo e-pošto o aplikaciji PetPrep. Odjava je mogoča kadar koli.",
     privacyLink: "Politika zasebnosti",
   },
   contactCards: [
     { title: "Družine", text: "Vprašanja o aplikaciji, računu ali izzivu.", email: "hello" },
     { title: "Zasebnost", text: "Dostop do podatkov, izvoz, izbris ali drugo vprašanje o zasebnosti.", email: "privacy" },
     { title: "Partnerji", text: "Trgovine, zavetišča, veterinarji, šole za pse, zavarovalnice in šole.", email: "partners" },
-    { title: "Vlagatelji", text: "Predstavitev za vlagatelje, prezentacija in podatkovna soba na zahtevo.", email: "investors" },
+    { title: "Vlagatelji", text: "Povzetek za vlagatelje, predstavitev in podatkovna soba na zahtevo.", email: "investors" },
   ],
   home: {
     meta: {
-      title: "PetPrep — Je vaš otrok pripravljen na žival? Ugotovite v 12 tednih.",
+      title: "PetPrep – Je vaš otrok pripravljen na ljubljenčka? Ugotovite v 12 tednih.",
       description:
-        "Preden pride prava žival domov, otrok 12 tednov skrbi za AI ljubljenčka: hrana, čiščenje, pravi sprehodi. Vsak dan vidite, ali je res pripravljen.",
+        "Preden domov pride pravi ljubljenček, otrok 12 tednov skrbi za AI ljubljenčka: hranjenje, čiščenje, pravi sprehodi. Vsak dan vidite, ali je res pripravljen.",
     },
     hero: {
       eyebrow: "12-tedenski PetPrep izziv",
-      title: "Pripravljeni na žival. Ob njej vse življenje.",
+      title: "Pripravljeni na ljubljenčka. Ob njem vse življenje.",
       lead:
-        "Preden pride domov prava žival, otrok 12 tednov skrbi za življenjskega AI ljubljenčka — ga hrani, čisti za njim in z njim zares hodi na sprehode. Vi vsak dan vidite, ali je res pripravljen.",
+        "Preden domov pride pravi ljubljenček, otrok 12 tednov skrbi za realističnega AI ljubljenčka – ga hrani, čisti za njim in z njim zares hodi na sprehode. Vi vsak dan vidite, ali je res pripravljen.",
       trust: ["Mešanček brezplačno za vedno", "Brez oglasov in klepeta s tujci", "Otrok ne potrebuje e-pošte"],
     },
     phone: {
@@ -148,45 +148,45 @@ const sl: Dictionary = {
     promoVideo: {
       eyebrow: "PetPrep v eni minuti",
       title: "Poglejte, kako poteka.",
-      text: "Od izbire ljubljenčka in pogodbe do šole, sprehodov, nege in certifikata — vse, kar otrok dela v 12 tednih, in vse, kar vi vidite na nadzorni plošči. Curio, naša maskota, vas samo pozdravi; ljubljenček v aplikaciji je realističen AI pes.",
-      alt: "Promocijski video PetPrep: zasloni aplikacije, otrok skrbi za psa, starš spremlja Care Score.",
-      note: "Video je v angleščini. Aplikacija še ni javno v App Store in Google Play — prijavite se za zgodnji dostop.",
+      text: "Od izbire ljubljenčka in pogodbe do šole, sprehodov, nege in certifikata – vse, kar otrok dela v 12 tednih, in vse, kar vi vidite na nadzorni plošči. Curio, naša maskota, vas le pozdravi; ljubljenček v aplikaciji je realističen AI pes.",
+      alt: "Promocijski video aplikacije PetPrep: zasloni aplikacije, otrok skrbi za psa, starš spremlja Care Score.",
+      note: "Video je v angleščini. Aplikacija še ni javno dostopna v trgovinah App Store in Google Play – prijavite se za zgodnji dostop.",
     },
     promise: {
-      quote: "Vsaka družina sliši »Obljubim, da bom skrbel zanj.« PetPrep obljubo spremeni v",
+      quote: "Vsaka družina sliši „Obljubim, da bom skrbel zanj.“ PetPrep obljubo spremeni v",
       highlight: "dokaz",
       text:
-        "Neuspeh v simulaciji je uspeh za vašo družino: izveste, preden bi trpela prava žival — in preden se zavežete letom skrbi in stroškov.",
+        "Neuspeh v simulaciji je uspeh za vašo družino: to izveste, preden bi trpel pravi ljubljenček – in preden se zavežete za leta skrbi in stroškov.",
     },
     how: {
       eyebrow: "Kako deluje",
-      title: "Trije koraki od »prosim« do »pripravljen«.",
+      title: "Trije koraki od „prosim“ do „pripravljen“.",
       steps: [
         {
           title: "Vi izberete ljubljenčka",
-          text: "Ustvarite družinski račun, dodate otroka samo z vzdevkom in izberete ljubljenčka — pasmo, posvojen ali od vzreditelja, mladiček ali starejši.",
+          text: "Ustvarite družinski račun, otroka dodate le z vzdevkom in izberete ljubljenčka: pasmo, izvor (posvojen ali od vzreditelja) in starost (mladiček ali starejši).",
         },
         {
           title: "Otrok podpiše obljubo",
-          text: "Otrok se prijavi s 6-mestno kodo — brez e-pošte in gesla. S prstom podpiše Pogodbo o odgovornosti in njegov edinstveni ljubljenček se rodi.",
+          text: "Otrok se prijavi s 6-mestno kodo – brez e-pošte in gesla. S prstom podpiše Pogodbo o odgovornosti in rodi se njegov edinstveni ljubljenček.",
         },
         {
           title: "12 tednov prave skrbi",
-          text: "En pravi teden je en mesec ljubljenčkovega življenja. Na koncu: Certifikat odgovornosti s Care Score — objektiven dokaz ali pošten ne.",
+          text: "En pravi teden je en mesec ljubljenčkovega življenja. Na koncu sledi Certifikat odgovornosti s Care Score – objektiven dokaz ali pošten „še ne“.",
         },
       ],
-      link: "Kako deluje podrobno",
+      link: "Podrobneje o delovanju",
     },
     realism: {
       title: "Tako blizu pravemu ljubljenčku, kot zmore aplikacija.",
-      text: "Časi hranjenja, sprehodi in odraščanje temeljijo na virih, kot so veterinarska združenja in kinološke zveze — niso izmišljeni za igro.",
+      text: "Časi hranjenja, sprehodi in odraščanje temeljijo na virih, kot so veterinarska združenja in kinološke zveze – niso izmišljeni zgolj za igro.",
       items: [
-        { title: "Pravi sprehodi, pravi koraki", text: "Dnevni sprehod šteje korake z otrokovega telefona. Danes nobenega sprehoda? Ljubljenček bo to čutil jutri." },
-        { title: "Odrašča", text: "Mladiček je štirikrat na dan, nato trikrat, nato dvakrat — in ko zraste, dobi novo fotografijo." },
-        { title: "Obnaša se kot pravi", text: "Mladiček mora ven. Pes, ki se dolgočasi, pregrize copat. Nered je treba počistiti pred večerjo." },
-        { title: "Spoštuje šolo in spanje", text: "Tihe ure ustavijo opomnike. Obrok med poukom je vaš, ne otrokov." },
-        { title: "Resnične, a nežne posledice", text: "Zanemarjanje pomeni obisk pri veterinarju ali zavetišče — nikoli strašljivo, vedno z novim začetkom." },
-        { title: "Edinstven", text: "Vsak ljubljenček ima svojo dlako, lise in oči — fotorealističen in nikoli dvakrat enak." },
+        { title: "Pravi sprehodi, pravi koraki", text: "Dnevni sprehod šteje korake z otrokovega telefona. Danes brez sprehoda? Ljubljenček bo to jutri začutil." },
+        { title: "Odrašča", text: "Mladiček poje štirikrat na dan, nato trikrat, nato dvakrat – in ko zraste, dobi novo fotografijo." },
+        { title: "Obnaša se kot pravi", text: "Mladiček mora ven. Pes, ki se dolgočasi, pregrizne copat. Nered je treba počistiti pred večerjo." },
+        { title: "Spoštuje šolo in spanje", text: "Tihe ure ustavijo opomnike. Obrok med poukom je vaša naloga, ne otrokova." },
+        { title: "Resnične, a nežne posledice", text: "Zanemarjanje pomeni obisk pri veterinarju ali selitev v zavetišče – nikoli strašljivo in vedno z možnostjo novega začetka." },
+        { title: "Edinstven", text: "Vsak ljubljenček ima svojo dlako, svoje lise in oči – fotorealističen in nikoli dvakrat enak." },
       ],
     },
     parents: {
@@ -203,36 +203,36 @@ const sl: Dictionary = {
     adults: {
       eyebrow: "Za odrasle",
       title: "Preizkusite pasmo, preden jo pripeljete domov.",
-      text: "Si želite točno določeno pasmo? PetPrep ni samo za otroke. 12 tednov skrbite za AI ljubljenčka te pasme z njenimi resničnimi dnevnimi potrebami in vidite, ali je res za vas — preden jo kupite ali posvojite.",
+      text: "Želite določeno pasmo? PetPrep ni samo za otroke. 12 tednov skrbite za AI ljubljenčka te pasme z njenimi resničnimi dnevnimi potrebami in vidite, ali je res za vas – preden jo kupite ali posvojite.",
       points: [
         {
           strong: "Resnične potrebe pasme",
-          text: "obroki v časovnih oknih, voda, čiščenje in dnevni cilj korakov iz virov o potrebnem gibanju: odrasel border collie 12.000 korakov na dan, mešanček 6.000.",
+          text: "obroki v časovnih oknih, voda, čiščenje in dnevni cilj korakov glede na vire o potrebnem gibanju: odrasel border collie 12.000 korakov na dan, mešanček 6.000.",
         },
         {
           strong: "Šolanje in nezgode mladička",
-          text: "vsak dan kratka vaja ukazov, mladiček pa zdrži le približno eno uro na mesec starosti, nato mora ven — sicer je na tleh luža.",
+          text: "vsak dan kratka vaja ukazov; mladiček zdrži le približno eno uro na mesec starosti, nato mora ven – sicer je na tleh luža.",
         },
         {
-          strong: "12 tednov pokaže, ali gre skupaj z vašim življenjem",
-          text: "z delovnikom, prostim časom in vremenom. Ker bo pes družinski, lahko kasneje dodate partnerja ali otroke.",
+          strong: "12 tednov pokaže, ali se pasma ujema z vašim življenjem",
+          text: "z delovnikom, prostim časom in vremenom. Ker bo to družinski pes, lahko kasneje dodate partnerja ali otroke.",
         },
       ],
-      how: "Kako začnete: ustvarite račun kot starš, dodajte sebe kot profil skrbnika in se prijavite s 6-mestno kodo — na istem ali drugem telefonu.",
-      note: "Danes so na voljo brezplačna mešanček in domača mačka ter vse pasme psov in mačk iz [registra živali](page:animals) v 12-tedenskem izzivu.",
+      how: "Kako začnete: ustvarite račun kot starš, sebe dodajte kot skrbnika in se prijavite s 6-mestno kodo – na istem ali drugem telefonu.",
+      note: "Danes sta brezplačno na voljo mešanček in domača mačka, vse pasme psov in mačk iz [registra živali](page:animals) pa v 12-tedenskem izzivu.",
       link: "Kako PetPrep uporabljate sami",
     },
     after: {
       eyebrow: "Ko pride domov",
-      title: "Ko pride prava žival, PetPrep ostane.",
-      text: "Tapnite »Dobili smo pravo žival« in simulator postane AI asistent za leta, ki prihajajo — in že pozna ritem vaše družine.",
+      title: "Ko pride pravi ljubljenček, PetPrep ostane.",
+      text: "Tapnite „Dobili smo pravega ljubljenčka“ in simulator postane AI asistent za prihodnja leta – ki že pozna ritem vaše družine.",
       features: [
         { title: "Pametna ovratnica", text: "Aktivnost in opozorila, ko nekaj ni v redu." },
-        { title: "AI prvi stik", text: "Hiter odgovor, nato predaja pravemu veterinarju." },
+        { title: "Prvi stik z AI", text: "Hiter odgovor, nato napotitev k pravemu veterinarju." },
         { title: "Rast in prehrana", text: "Tedenska teža, krivulja rasti, čas za menjavo hrane." },
-        { title: "Zaupanja vredni partnerji", text: "Veterinarji, šole za pse in zavarovalnice v bližini — jasno označeni." },
-        { title: "Genski test", text: "Katere pasme so v vašem mešančku — in na kaj biti pozorni." },
-        { title: "Kartica za veterinarja", text: "Sestava pasem in genske najdbe na enem mestu, pripravljene za veterinarja." },
+        { title: "Zaupanja vredni partnerji", text: "Veterinarji, šole za pse in zavarovalnice v bližini – jasno označeni." },
+        { title: "Genski test", text: "Katere pasme so v vašem mešančku – in na kaj morate biti pozorni." },
+        { title: "Kartica za veterinarja", text: "Sestava pasem in izsledki genskega testa na enem mestu, pripravljeni za veterinarja." },
       ],
       link: "O AI asistentu",
       planned: "V razvoju",
@@ -249,30 +249,30 @@ const sl: Dictionary = {
     },
     pricing: { eyebrow: "Cenik", title: "Preprosto in pošteno." },
     faq: { title: "Vprašanja staršev", link: "Vsa vprašanja" },
-    final: { title: "Pripravljeni na žival?", text: "Ugotovite v 12 tednih. Začnite brezplačno, na iPhonu ali Androidu." },
+    final: { title: "Pripravljeni na ljubljenčka?", text: "Ugotovite v 12 tednih. Začnite brezplačno, na iPhonu ali Androidu." },
   },
   pages: {
     howItWorks: {
       meta: {
-        title: "Kako deluje PetPrep — 12-tedenski izziv pripravljenosti na žival",
+        title: "Kako deluje PetPrep – 12-tedenski izziv pripravljenosti na ljubljenčka",
         description:
           "Kako poteka PetPrep izziv: izbira ljubljenčka, Pogodba o odgovornosti, vsakodnevna skrb, pravi sprehodi, tihe ure, posledice in Certifikat odgovornosti.",
       },
       eyebrow: "Kako deluje",
       title: "Dvanajst tednov, ki pokažejo, koliko je vredna obljuba.",
       lead:
-        "Otrok skrbi za fotorealističnega AI ljubljenčka, ki se obnaša čim bolj kot pravi. En pravi teden je en mesec ljubljenčkovega življenja, zato v 12 tednih odraste — vi pa vidite, ali skrb zdrži.",
+        "Otrok skrbi za fotorealističnega AI ljubljenčka, ki se obnaša čim bolj kot pravi. En pravi teden je en mesec ljubljenčkovega življenja, zato v 12 tednih odraste – vi pa vidite, ali skrb zdrži.",
       blocks: [
         {
           type: "steps",
           heading: "Od prvega dotika do certifikata",
           items: [
-            { title: "Starš ustvari družino", text: "Registrirate se z e-pošto (prijava z Apple in Google prihaja). Vsakega otroka dodate z vzdevkom in po želji z letnico rojstva. To je vse, kar vprašamo o otroku." },
-            { title: "Izberete ljubljenčka", text: "Izberete pasmo (mešanček je brezplačen), od kod pride — posvojen iz zavetišča ali kupljen pri vzreditelju — in starost ob prihodu: mladiček, mlad, odrasel ali starejši." },
-            { title: "Otrok se prijavi s kodo", text: "Dobite 6-mestno kodo, ki velja 15 minut. Otrok jo vtipka na svojem telefonu — brez e-pošte in gesla. Izgubljen telefon? Z enim dotikom ga odjavite z vseh naprav." },
-            { title: "Pogodba o odgovornosti", text: "Otrok s prstom podpiše obljubo. Podpis je rojstvo ljubljenčka: potrebe začnejo teči šele takrat, zato otrok ne izgubi ničesar, če podpiše kasneje." },
+            { title: "Starš ustvari družino", text: "Registrirate se z e-pošto (prijava z Apple in Google prihaja). Vsakega otroka dodate z vzdevkom in po želji z letnico rojstva. To je vse, kar o otroku sprašujemo." },
+            { title: "Izberete ljubljenčka", text: "Izberete pasmo (mešanček je brezplačen), izvor (posvojen iz zavetišča ali od vzreditelja) in starost ob prihodu: mladiček, mlad, odrasel ali starejši." },
+            { title: "Otrok se prijavi s kodo", text: "Dobite 6-mestno kodo, ki velja 15 minut. Otrok jo vtipka na svojem telefonu – brez e-pošte in gesla. Izgubljen telefon? Z enim dotikom ga odjavite z vseh naprav." },
+            { title: "Pogodba o odgovornosti", text: "Otrok s prstom podpiše obljubo. Z podpisom se ljubljenček rodi: potrebe začnejo teči šele takrat, zato otrok ničesar ne izgubi, če podpiše kasneje." },
             { title: "Dvanajst tednov skrbi", text: "Hranjenje v pravih časovnih oknih, sveža voda, čiščenje in vsakodnevni sprehod s pravimi koraki. Ko ljubljenček raste, se njegove potrebe spreminjajo." },
-            { title: "Certifikat", text: "Po 12 tednih ljubljenček dopolni eno leto. Otrok prejme Certifikat odgovornosti s svojim Care Score — ali pa oba varno ugotovita, da zdaj še ni pravi čas." },
+            { title: "Certifikat", text: "Po 12 tednih ljubljenček dopolni eno leto. Otrok prejme Certifikat odgovornosti s svojim Care Score – ali pa oba varno ugotovita, da zdaj še ni pravi čas." },
           ],
         },
         {
@@ -287,40 +287,40 @@ const sl: Dictionary = {
         {
           type: "table",
           heading: "Kaj odrasel mešanček potrebuje vsak dan",
-          intro: "Številke izhajajo iz veterinarskih in kinoloških virov; kjer viri podajo le razpon, vrednost postavi PetPrep in to tudi pove.",
+          intro: "Številke izhajajo iz veterinarskih in kinoloških virov; kjer viri podajo le razpon, vrednost določi PetPrep in to tudi izrecno navede.",
           head: ["Potreba", "Kako pogosto", "Če otrok pozabi"],
           rows: [
             ["Hrana", "Zjutraj (6–10) in zvečer (17–21), enkrat v vsakem oknu", "Lačen po približno 12,5 ure"],
             ["Voda", "3-krat na dan, vsaj 3 ure narazen", "Žejen po približno 10 urah"],
             ["Sprehod", "6.000 pravih korakov (mladiček začne pri 2.000)", "Brez sprehoda → naslednje jutro zboli"],
-            ["Čiščenje", "Ko naredi nered — nikoli med tihimi urami", "Hrane in vode ni, dokler ni čisto"],
+            ["Čiščenje", "Ko naredi nered – nikoli med tihimi urami", "Hrane in vode ni, dokler ni počiščeno"],
           ],
-          note: "Mladiček je 4-, nato 3- in 2-krat na dan in zdrži le približno eno uro na mesec starosti, nato mora ven. [Border collie](breed:border_collie) potrebuje 12.000 korakov in hitreje postane lačen.",
+          note: "Mladiček poje 4-krat na dan, nato 3-krat in 2-krat ter zdrži le približno eno uro na mesec starosti, nato mora ven. [Border collie](breed:border_collie) potrebuje 12.000 korakov in hitreje postane lačen.",
         },
         {
           type: "cards",
           heading: "Prilagojeno resničnemu družinskemu življenju",
           columns: 3,
           items: [
-            { title: "Tihe ure", text: "Nastavite čas šole in spanja. Ljubljenček se upočasni, opomnikov ni in nered se takrat nikoli ne zgodi." },
-            { title: "Obroki med poukom", text: "Okno hranjenja, ki v celoti pade v tihe ure, je naloga starša — otroku se nikoli ne šteje v slabo." },
-            { title: "Premor kadarkoli", text: "En gumb ustavi igro, na primer za družinski pogovor. Med premorom se nič ne poslabša." },
-            { title: "Nežni opomniki", text: "Ljubljenček otroka najprej opomni, nato nujno. Šele če potreba ostane na ničli eno uro, dobite alarm vi." },
-            { title: "Resnične posledice", text: "Zanemarjanje pomeni 12 ur pri veterinarju. Cel dan brez skrbi pomeni, da ljubljenčka odpelje zavetišče — in lahko začnete znova." },
+            { title: "Tihe ure", text: "Nastavite čas šole in spanja. Ljubljenček se upočasni, opomnikov ni in nereda v tem času ni." },
+            { title: "Obroki med poukom", text: "Časovno okno hranjenja, ki v celoti pade v tihe ure, je naloga starša – otroku se nikoli ne zapiše kot napaka." },
+            { title: "Premor kadar koli", text: "En gumb ustavi igro, na primer za družinski pogovor. Med premorom se nič ne poslabša." },
+            { title: "Nežni opomniki", text: "Ljubljenček otroka najprej nežno opomni, nato nujneje. Šele ko potreba eno uro ostane na ničli, alarm dobite vi." },
+            { title: "Resnične posledice", text: "Zanemarjanje pomeni 12 ur pri veterinarju. Cel dan brez oskrbe pomeni, da ljubljenčka prevzame zavetišče – nato lahko začnete znova." },
             { title: "Skupni ljubljenček", text: "Sorojenci si lahko delijo ljubljenčka. Vsako dejanje se šteje otroku, ki ga je naredil, zato je ocena poštena." },
           ],
         },
         {
           type: "callout",
           title: "Tudi neuspeh je rezultat.",
-          text: "Če ljubljenček konča v virtualnem zavetišču, ste se naučili nekaj dragocenega — preden je ceno plačala prava žival. Lahko začnete znova, tudi z lažjo pasmo.",
+          text: "Če ljubljenček konča v virtualnem zavetišču, ste se naučili nekaj dragocenega – preden je ceno plačal pravi ljubljenček. Lahko začnete znova, tudi z lažjo pasmo.",
           tone: "dark",
         },
       ],
     },
     parents: {
       meta: {
-        title: "Za starše — PetPrep nadzorna plošča, Care Score in nadzor",
+        title: "Za starše – PetPrep nadzorna plošča, Care Score in nadzor",
         description:
           "Kaj vidijo starši v PetPrep: dnevni semafor za vsakega otroka, Care Score, rutine, poročila, obvestila, tihe ure, premor in zasebnost po zasnovi.",
       },
@@ -332,12 +332,12 @@ const sl: Dictionary = {
         {
           type: "cards",
           heading: "Semafor",
-          intro: "Vsak otrok in vsak ljubljenček dobi barvo za današnji dan po lokalnem času vaše družine — vedno z razlogom v besedah.",
+          intro: "Vsak otrok in vsak ljubljenček dobi barvo za današnji dan po lokalnem času vaše družine – vedno s pojasnilom z besedami.",
           columns: 3,
           items: [
-            { title: "Zelena — vse v redu", text: "Rutine potekajo po načrtu.", tag: "ok" },
-            { title: "Rumena — potrebna pozornost", text: "Danes sta bili zamujeni več kot dve rutini.", tag: "warn" },
-            { title: "Rdeča — nujno", text: "Ljubljenček je danes zbolel, potreba je več kot uro na ničli ali pa ga je odpeljalo zavetišče.", tag: "danger" },
+            { title: "Zelena – vse v redu", text: "Rutine potekajo po načrtu.", tag: "ok" },
+            { title: "Rumena – potrebna pozornost", text: "Danes so bile zamujene več kot dve rutini.", tag: "warn" },
+            { title: "Rdeča – nujno", text: "Ljubljenček je danes zbolel, ena od potreb je že več kot uro na ničli ali pa ga je prevzelo zavetišče.", tag: "danger" },
           ],
         },
         {
@@ -346,8 +346,8 @@ const sl: Dictionary = {
           paragraphs: [
             "Care Score = pravočasno opravljene rutine ÷ pričakovane rutine × 100, minus 10 točk za vsako bolezen, med 0 in 100.",
             "Rutina je ena konkretna naloga: vsako okno hranjenja, vsako od treh dolivanj vode, čiščenje vsakega nereda v dveh urah (šola in spanje se ne štejeta) in dosežen dnevni cilj sprehoda.",
-            "Čas, ko ste igro ustavili, ko je bil ljubljenček pri veterinarju, ali pred podpisom pogodbe, se otroku nikoli ne šteje v slabo. Pretekli dnevi so zaklenjeni, zato ocene ni mogoče kasneje spremeniti.",
-            "Sorojenci s skupnim ljubljenčkom si vsako rutino pošteno razdelijo. Šteje le, kar je otrok naredil sam — če eden naredi vse, ima 100, drugi 0.",
+            "Čas, ko ste igro ustavili, ko je bil ljubljenček pri veterinarju ali pred podpisom pogodbe, nikoli ne vpliva negativno na otrokovo oceno. Pretekli dnevi so zaklenjeni, zato se ocena naknadno ne more spremeniti.",
+            "Sorojenci s skupnim ljubljenčkom si vsako rutino pošteno razdelijo. Šteje le, kar je otrok naredil sam – če eden naredi vse, ima 100, drugi 0.",
           ],
         },
         {
@@ -363,19 +363,19 @@ const sl: Dictionary = {
           type: "list",
           heading: "Nadzor ostane pri vas",
           items: [
-            "Tihe ure za šolo in spanje po vašem lokalnem času — tudi ob prestopu na poletni ali zimski čas.",
-            "Premor za kateregakoli ljubljenčka z enim potrjenim dotikom; otrokov zaslon se zaklene v živo.",
+            "Tihe ure za šolo in spanje po vašem lokalnem času – tudi ob prestopu na poletni ali zimski čas.",
+            "Premor za kateregakoli ljubljenčka z enim potrjenim dotikom; otrokov zaslon se zaklene takoj.",
             "Drugega starša povabite z enkratno kodo; oba vidita vse otroke in vse ljubljenčke.",
             "Otroka ob izgubi telefona odjavite z vseh naprav; kode so enkratne in potečejo v 15 minutah.",
-            "Vse podatke družine izvozite v datoteko ali takoj izbrišite profil otroka ali celoten račun kar v aplikaciji.",
+            "Vse podatke družine lahko kar v aplikaciji izvozite v datoteko ali takoj izbrišete otrokov profil oziroma celoten račun.",
           ],
         },
         {
           type: "list",
           heading: "Zasebnost po zasnovi",
           items: [
-            "Otroci se prijavijo s kodo — brez e-pošte, gesla in priimka.",
-            "Shranimo vzdevek in, če ga vpišete, letnico rojstva. O otroku nič drugega.",
+            "Otroci se prijavijo s kodo – brez e-pošte, gesla in priimka.",
+            "Shranimo vzdevek in, če ga vpišete, letnico rojstva. Drugega o otroku ne zbiramo.",
             "Obvestila nikoli ne vsebujejo imena otroka ali ljubljenčka, saj se lahko pokažejo na zaklenjenem zaslonu.",
             "Koraki prihajajo iz aplikacije Apple Zdravje (iPhone) ali Health Connect (Android), če to dovolite (samo za branje), in s senzorja gibanja v telefonu, kjer je na voljo. PetPrep ne uporablja GPS in ne sledi lokaciji.",
             "Brez oglasov, brez klepeta s tujci, strežniki v EU.",
@@ -385,14 +385,14 @@ const sl: Dictionary = {
     },
     afterAdoption: {
       meta: {
-        title: "Ko pride domov — PetPrep AI asistent za vašo pravo žival",
+        title: "Ko pride domov – PetPrep AI asistent za vašega pravega ljubljenčka",
         description:
-          "Ko družina dobi pravo žival, PetPrep postane AI asistent: aktivnost z ovratnice, opozorila, AI prvi stik s pravim veterinarjem, rast in prehrana.",
+          "Ko družina dobi pravega ljubljenčka, PetPrep postane AI asistent: aktivnost z ovratnice, opozorila, prvi stik z AI in nato pravi veterinar, rast in prehrana.",
       },
       eyebrow: "Ko pride domov",
       title: "Simulacija se konča. Skrb ne.",
       lead:
-        "Ko družina domov pripelje pravo žival, en dotik PetPrep spremeni v asistenta za vse njeno življenje — v realnem času, brez virtualnih metrik in z že znanim ritmom vaše družine.",
+        "Ko družina domov pripelje pravega ljubljenčka, en dotik spremeni PetPrep v asistenta za vse njegovo življenje – v realnem času, brez igralnih merilnikov zdravja in z že znanim ritmom vaše družine.",
       planned: true,
       blocks: [
         {
@@ -400,11 +400,11 @@ const sl: Dictionary = {
           heading: "Kaj bo asistent znal",
           columns: 2,
           items: [
-            { title: "Povezava s pametno ovratnico", text: "Povežite priljubljene GPS in sledilnike aktivnosti — ali PetPrep ovratnico — in aktivnost vidite v kontekstu." },
-            { title: "Opozorila, ki pojasnijo", text: "»Max je danes pretekel 2 km, polovico manj kot običajno, in dobil večji obrok. Dodaten večerni sprehod mu bo pomagal, da se umiri.« Eno opažanje, en razlog, en predlog." },
-            { title: "Najprej AI, nato pravi veterinar", text: "Postavite vprašanje ali naložite fotografijo. Asistent odgovori na splošna vprašanja, oceni nujnost in vas po potrebi preda pravemu veterinarju — nujni znaki gredo naravnost k veterinarju." },
-            { title: "Genski test za psa ali mačko", text: "Genski test naročite v aplikaciji ali naložite izvid testa, ki ga že imate. PetPrep pokaže, katere pasme so v mešančku, kaj je zanje značilno in katere zdravstvene težave so pri njih pogostejše — z viri. Odstotek pasme ni diagnoza in genski test ne pokaže alergij." },
-            { title: "Kartica za veterinarja", text: "Sestava pasem in neposredne genske najdbe na eni strani ali v kodi QR, da veterinar takoj ve, kaj je v mešančku." },
+            { title: "Povezava s pametno ovratnico", text: "Povežite priljubljene GPS-sledilnike in sledilnike aktivnosti – ali ovratnico PetPrep – in aktivnost boste videli v kontekstu." },
+            { title: "Opozorila, ki pojasnijo", text: "„Max je danes pretekel 2 km, polovico manj kot običajno, in dobil večji obrok. Dodaten večerni sprehod mu bo pomagal, da se umiri.“ Eno opažanje, en razlog, en predlog." },
+            { title: "Najprej AI, nato pravi veterinar", text: "Postavite vprašanje ali naložite fotografijo. Asistent odgovori na splošna vprašanja, oceni nujnost in vas po potrebi napoti k pravemu veterinarju – ob nujnih znakih takoj." },
+            { title: "Genski test za psa ali mačko", text: "Genski test naročite v aplikaciji ali naložite izvid testa, ki ga že imate. PetPrep pokaže, katere pasme so v mešančku, kaj je zanje značilno in katere zdravstvene težave so pri njih pogostejše – z navedbo virov. Odstotek pasme ni diagnoza in genski test ne pokaže alergij." },
+            { title: "Kartica za veterinarja", text: "Sestava pasem in neposredni izsledki genskega testa na eni strani ali v kodi QR, da veterinar takoj ve, kaj je v mešančku." },
             { title: "Rast in prehrana", text: "Tedensko vpišete težo, vidite krivuljo rasti in dobite opomnik, ko je čas za drugo hrano." },
           ],
         },
@@ -417,7 +417,7 @@ const sl: Dictionary = {
           type: "list",
           heading: "Načela, pri katerih ne popuščamo",
           items: [
-            "AI asistent ni veterinar in nikoli ne postavi diagnoze. Vsak zdravstveni odgovor vsebuje pot do pravega veterinarja.",
+            "AI asistent ni veterinar in nikoli ne postavi diagnoze. Vsak zdravstveni odgovor vsebuje napotek k pravemu veterinarju.",
             "Ponudbe partnerjev (trgovine, zavarovalnice, šole za pse, veterinarji) so vedno označene, provizijo pa razkrijemo.",
             "Brez vašega soglasja partnerju ne posredujemo ničesar.",
             "Otrokovi podatki iz izziva se prenesejo k asistentu le, če se strinjate.",
@@ -427,49 +427,49 @@ const sl: Dictionary = {
     },
     pricing: {
       meta: {
-        title: "Cenik — PetPrep je brezplačen za začetek, 12-tedenski izziv 49,99 €",
+        title: "Cenik – PetPrep je brezplačen za začetek, 12-tedenski izziv 49,99 €",
         description:
-          "Mešanček je brezplačen za vedno. 12-tedenski PetPrep izziv stane 49,99 € na žival kot enkratni nakup. Ena cena za sorojence s skupnim ljubljenčkom.",
+          "Mešanček je brezplačen za vedno. 12-tedenski PetPrep izziv stane 49,99 € na ljubljenčka kot enkratni nakup. Ena cena za sorojence s skupnim ljubljenčkom.",
       },
       eyebrow: "Cenik",
       title: "Preprosto in pošteno.",
-      lead: "Začnite brezplačno z mešančkom. Celoten 12-tedenski izziv kupite, ko ste pripravljeni — 12 tednov začne teči z nakupom.",
+      lead: "Začnite brezplačno z mešančkom. Celoten 12-tedenski izziv kupite, ko ste pripravljeni – 12 tednov začne teči z nakupom.",
       blocks: [
         { type: "pricing" },
         {
           type: "table",
           id: "zelje",
-          heading: "»Želje« — stvari za ljubljenčka",
+          heading: "„Želje“ – stvari za ljubljenčka",
           intro:
-            "Otrok v aplikaciji prosi za stvari za svojega ljubljenčka, starš odloči in kupi. Otrok cen nikoli ne vidi. Stvari so samo videz: ne vplivajo na potrebe, Care Score ali certifikat. Na voljo tudi pri brezplačnem mešančku in domači mački.",
+            "Otrok v aplikaciji prosi za stvari za svojega ljubljenčka, starš odloči in kupi. Otrok cen nikoli ne vidi. Stvari so zgolj videz: ne vplivajo na potrebe, Care Score ali certifikat. Na voljo tudi pri brezplačnem mešančku in domači mački.",
           head: ["Stvar", "Cena"],
           rows: [
             ["Postelja (muca: košara)", "5,99 €"],
             ["Skledi za hrano in vodo", "5,99 €"],
             ["Igrača (pes: vrv ali piskajoča igrača, muca: plišasta miška ali palica s peresi)", "5,99 € na igračo"],
-            ["Priboljški, paket 10", "2,99 €"],
-            ["Paket »Dobrodošlica«: postelja + skledi + igrača", "15,99 € (namesto 17,97 €)"],
+            ["Priboljški, paket po 10", "2,99 €"],
+            ["Paket „Dobrodošlica“: postelja + skledi + igrača", "15,99 € (namesto 17,97 €)"],
           ],
-          note: "»Želje« prihajajo z naslednjo posodobitvijo aplikacije; kupiti jih bo mogoče, ko bodo stvari na voljo v App Store in Google Play. Cene veljajo v Sloveniji, trgovina pokaže ceno za vašo državo.",
+          note: "„Želje“ prihajajo z naslednjo posodobitvijo aplikacije; kupiti jih bo mogoče, ko bodo stvari na voljo v App Store in Google Play. Cene veljajo v Sloveniji, trgovina pokaže ceno za vašo državo.",
         },
         {
           type: "faq",
           heading: "Vprašanja o ceni",
           items: [
             { q: "Je brezplačna različica res brezplačna?", a: "Da. Mešanček je brezplačen za vedno, s celotno simulacijo, pravimi sprehodi in nadzorno ploščo za starše." },
-            { q: "Kaj vključuje izziv?", a: "Zahtevne pasme, kot je [border collie](breed:border_collie), razpoloženja ljubljenčka kot AI videje, Certifikat odgovornosti na koncu in dostop za oba starša." },
+            { q: "Kaj vključuje izziv?", a: "Zahtevne pasme, kot je [border collie](breed:border_collie), razpoloženja ljubljenčka v obliki AI videov, Certifikat odgovornosti na koncu in dostop za oba starša." },
             { q: "Ali sorojenci plačajo dvakrat?", a: "Ne. Otroci, ki si delijo enega ljubljenčka, plačajo eno ceno. Drugi ljubljenček v družini je ločen izziv." },
             { q: "Kako plačam?", a: "V aplikaciji, prek App Store ali Google Play. Morebitna vračila urejate v svojem računu trgovine." },
-            { q: "Kaj so »Želje« in ali otrok lahko sam kupi?", a: "Otrok lahko prosi za posteljo, sklede, igračo ali priboljške za ljubljenčka — največ tri odprte prošnje naenkrat. Vi dobite obvestilo in prošnjo potrdite z nakupom ali izberete »Ne zdaj«. Otrok ne vidi cen in v otroški aplikaciji ne more kupiti ničesar." },
-            { q: "Ali kupljene stvari olajšajo igro?", a: "Ne. Stvari so samo videz. Na potrebe, Care Score in certifikat ne vplivajo, veterinarja ali zdravil pa v »Željah« ni — nikoli »plačaj, da rešiš ljubljenčka«." },
-            { q: "Velja enako tudi za odrasle?", a: "Da. Če PetPrep uporabljate sami, da preizkusite pasmo, velja isto: mešanček je brezplačen za vedno, 12-tedenski izziv stane 49,99 € na žival." },
+            { q: "Kaj so „Želje“ in ali otrok lahko sam kupi?", a: "Otrok lahko prosi za posteljo, sklede, igračo ali priboljške za ljubljenčka – največ tri odprte prošnje naenkrat. Vi dobite obvestilo in prošnjo potrdite z nakupom ali izberete „Ne zdaj“. Otrok ne vidi cen in v otroški aplikaciji ne more kupiti ničesar." },
+            { q: "Ali kupljene stvari olajšajo igro?", a: "Ne. Stvari so samo videz. Na potrebe, Care Score in certifikat ne vplivajo, veterinarja ali zdravil pa v „Željah“ ni – nikoli „plačaj, da rešiš ljubljenčka“." },
+            { q: "Velja enako tudi za odrasle?", a: "Da. Če PetPrep uporabljate sami, da preizkusite pasmo, velja isto: mešanček je brezplačen za vedno, 12-tedenski izziv stane 49,99 € na ljubljenčka." },
           ],
         },
       ],
     },
     faq: {
       meta: {
-        title: "Pogosta vprašanja — kaj starši sprašujejo o PetPrep",
+        title: "Pogosta vprašanja – kaj starši sprašujejo o PetPrep",
         description:
           "Odgovori o PetPrep: koliko časa vzame, uporaba za odrasle, zasebnost, lokacija, koraki, sorojenci, kaj če otrok ne uspe, jeziki in vrste živali.",
       },
@@ -480,32 +480,32 @@ const sl: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "Za katero starost je PetPrep?", a: "Za otroke je namenjen od približno 7 do 12 let in dobro deluje do 16. Uporabljajo ga tudi odrasli, ki želijo pred nakupom ali posvojitvijo preizkusiti, ali je določena pasma res zanje." },
-            { q: "Lahko PetPrep uporabljam sam, brez otrok?", a: "Da. Ustvarite račun kot starš in dodajte sebe kot profil skrbnika — dovolj je vzdevek, letnice rojstva ne vpišete. Izberete pasmo, ustvarite 6-mestno kodo, nato na istem ali drugem telefonu izberete »Sem otrok« in vtipkate kodo — tako skrbite vi. Ker bo pes družinski, lahko kasneje dodate partnerja ali otroke, da skrbite skupaj. Cena je enaka kot za družine." },
-            { q: "Koliko časa vzame na dan?", a: "Nekaj minut za hrano, vodo in čiščenje — in sprehod, ki bi ga pravi pes tako ali tako potreboval." },
-            { q: "Ali aplikacija sledi lokaciji otroka?", a: "Ne. Za sprehod šteje samo korake. Če to dovolite, jih bere iz aplikacije Apple Zdravje (iPhone) ali Health Connect (Android) — samo za branje in samo korake; kjer je na voljo, uporabi tudi senzor gibanja v telefonu. Za dovoljenje vpraša v oknu sprehoda. GPS se ne uporablja." },
-            { q: "Ali otrok potrebuje e-poštni naslov?", a: "Ne. Račun ustvarite vi; otrok se prijavi s 6-mestno kodo, ki jo ustvarite. Shranimo le vzdevek in po želji letnico rojstva." },
-            { q: "Kaj se zgodi, če otrok pozabi?", a: "Ljubljenček najprej pošlje nežne opomnike. Če potreba ostane na ničli, zboli in 12 ur preživi pri veterinarju. Po celem dnevu brez skrbi ga odpelje virtualno zavetišče — in lahko začnete znova." },
+            { q: "Za katero starost je PetPrep?", a: "Za otroke je namenjen približno od 7 do 12 let, dobro pa deluje do 16. leta. Uporabljajo ga tudi odrasli, ki želijo pred nakupom ali posvojitvijo preizkusiti, ali je določena pasma res zanje." },
+            { q: "Ali lahko PetPrep uporabljam sam, brez otrok?", a: "Da. Ustvarite račun kot starš in sebe dodajte kot skrbnika – dovolj je vzdevek, letnice rojstva ne vpišete. Izberete pasmo, ustvarite 6-mestno kodo, nato na istem ali drugem telefonu izberete „Sem otrok“ in vtipkate kodo – tako postanete skrbnik. Ker bo to družinski pes, lahko kasneje dodate partnerja ali otroke, da skrbite skupaj. Cena je enaka kot za družine." },
+            { q: "Koliko časa vzame na dan?", a: "Nekaj minut za hrano, vodo in čiščenje – in sprehod, ki bi ga pravi pes tako ali tako potreboval." },
+            { q: "Ali aplikacija sledi lokaciji otroka?", a: "Ne. Aplikacija za sprehod samo šteje korake. Če to dovolite, jih bere iz aplikacije Apple Zdravje (iPhone) ali Health Connect (Android) – samo za branje in samo korake; kjer je na voljo, uporabi tudi senzor gibanja v telefonu. Za dovoljenje vpraša v oknu sprehoda. GPS se ne uporablja." },
+            { q: "Ali otrok potrebuje e-poštni naslov?", a: "Ne. Račun ustvarite vi; otrok se prijavi s 6-mestno kodo, ki jo ustvarite vi. Shranimo le vzdevek in po želji letnico rojstva." },
+            { q: "Kaj se zgodi, če otrok pozabi?", a: "Ljubljenček najprej pošlje nežne opomnike. Če potreba ostane na ničli, zboli in 12 ur preživi pri veterinarju. Po celem dnevu brez oskrbe ga prevzame virtualno zavetišče – in lahko začnete znova." },
             { q: "Ali si lahko sorojenci delijo ljubljenčka?", a: "Da. Vsak otrok podpiše svojo pogodbo, vsako dejanje se šteje tistemu, ki ga je naredil, in vsak dobi svoj pošten Care Score." },
             { q: "Kaj pa šola in spanje?", a: "Nastavite tihe ure. Ljubljenček se upočasni, obvestil ni, obroke, ki v celoti padejo v tihe ure, pa opravite vi." },
             { q: "Je za otroke strašljivo?", a: "Ne. Posledice so resnične, a nežne: ljubljenček gre k veterinarju ali v zavetišče, nikoli nič grafičnega, in vedno obstaja nov začetek." },
-            { q: "Katere živali so na voljo?", a: "Danes [psi](species:dog) in [mačke](species:cat): brezplačna mešanček in domača mačka ter v 12-tedenskem izzivu vse pasme iz [registra živali](page:animals), kjer so tudi njihove potrebe iz virov. Druge vrste so v načrtu." },
+            { q: "Katere živali so na voljo?", a: "Danes [psi](species:dog) in [mačke](species:cat): brezplačni mešanček in domača mačka ter v 12-tedenskem izzivu vse pasme iz [registra živali](page:animals), kjer so navedene tudi njihove potrebe z viri. Druge vrste so v načrtu." },
             { q: "V katerih jezikih?", a: "Danes v angleščini in slovenščini. Več jezikov dodajamo, ko PetPrep prihaja v nove države." },
-            { q: "Kaj se zgodi, ko dobimo pravo žival?", a: "PetPrep lahko postane AI asistent za vašo pravo žival. Ta del je v razvoju." },
+            { q: "Kaj se zgodi, ko dobimo pravega ljubljenčka?", a: "PetPrep lahko postane AI asistent za vašega pravega ljubljenčka. Ta del je v razvoju." },
           ],
         },
       ],
     },
     partners: {
       meta: {
-        title: "Partnerji — sodelujte s PetPrep",
+        title: "Partnerji – sodelujte s PetPrep",
         description:
           "PetPrep sodeluje s trgovinami za male živali, zavetišči, veterinarji, šolami za pse, zavarovalnicami in šolami za odgovorno pridobivanje živali.",
       },
       eyebrow: "Partnerji",
       title: "Bolje pripravljene družine za vse, ki jim je mar za živali.",
       lead:
-        "Družine, ki končajo PetPrep, vedo, kaj žival zares zahteva. Gradimo partnersko mrežo, ki jih doseže v pravem trenutku — jasno označeno in vedno s soglasjem družine.",
+        "Družine, ki končajo PetPrep, vedo, kaj skrb za ljubljenčka zares zahteva. Gradimo partnersko mrežo, ki jih doseže v pravem trenutku – jasno označeno in vedno s soglasjem družine.",
       planned: true,
       blocks: [
         {
@@ -513,11 +513,11 @@ const sl: Dictionary = {
           heading: "S kom sodelujemo",
           columns: 3,
           items: [
-            { title: "Trgovine za male živali", text: "Dosezite družine v trenutku, ko dokažejo, da so pripravljene — na primer s ponudbo začetnega paketa ob certifikatu." },
-            { title: "Zavetišča, društva in vzreditelji", text: "Priporočite PetPrep pred posvojitvijo ali nakupom za manj impulzivnih odločitev in vračil." },
-            { title: "Veterinarji", text: "Ko pride prava žival domov, AI asistent odgovori na prva vprašanja in lastnike napoti k vam, s povzetkom primera le ob soglasju." },
+            { title: "Trgovine za male živali", text: "Dosežite družine v trenutku, ko dokažejo, da so pripravljene – na primer s ponudbo začetnega paketa ob certifikatu." },
+            { title: "Zavetišča, društva in vzreditelji", text: "Priporočite PetPrep pred posvojitvijo ali nakupom za manj impulzivnih odločitev in vračanj." },
+            { title: "Veterinarji", text: "Ko pride pravi ljubljenček domov, AI asistent odgovori na prva vprašanja in lastnike napoti k vam; povzetek primera prejmete le ob njihovem soglasju." },
             { title: "Šole za pse", text: "Priporočila in rezervacije, ko družina dobi pravega psa." },
-            { title: "Zavarovalnice za male živali", text: "Ponudbe glede na pasmo ob registraciji prave živali — jasno označene." },
+            { title: "Zavarovalnice za male živali", text: "Ponudbe glede na pasmo ob registraciji pravega ljubljenčka – jasno označene." },
             { title: "Proizvajalci ovratnic in IoT", text: "Povezava podatkov o aktivnosti za pametnejša, pojasnjena opozorila." },
           ],
         },
@@ -525,7 +525,7 @@ const sl: Dictionary = {
           type: "list",
           heading: "Zakaj nam partnerji zaupajo",
           items: [
-            "Otroci se prijavijo brez e-pošte, podatke hranimo minimalno in na strežnikih v EU.",
+            "Otroci se prijavijo brez e-pošte, podatke zbiramo minimalno in jih hranimo na strežnikih v EU.",
             "Na otrokov zaslon pride samo preverjena vsebina; oglasov ni.",
             "Vsaka partnerska ponudba je označena, vsaka provizija razkrita družini.",
           ],
@@ -536,23 +536,23 @@ const sl: Dictionary = {
     },
     investors: {
       meta: {
-        title: "Vlagatelji — PetPrep, od preizkusa pripravljenosti do skrbi za žival",
+        title: "Vlagatelji – PetPrep, od preizkusa pripravljenosti do skrbi za ljubljenčka",
         description:
-          "PetPrep otrokovo obljubo spremeni v dokaz, preden družina dobi žival, nato pa postane AI asistent za vse njeno življenje. Predstavitev na zahtevo.",
+          "PetPrep otrokovo obljubo spremeni v dokaz, preden družina dobi ljubljenčka, nato pa postane AI asistent za vse njegovo življenje. Pred javnim zagonom; povzetek na zahtevo.",
       },
       eyebrow: "Vlagatelji",
       title: "Od 12-tedenskega izziva do 10–15-letnega odnosa.",
       lead:
-        "PetPrep staršem da objektiven dokaz, ali je otrok pripravljen na pravo žival — nato pa ostane z družino vse življenje živali.",
+        "PetPrep staršem da objektiven dokaz, ali je otrok pripravljen na pravega ljubljenčka – nato pa ostane z družino vse njegovo življenje.",
       blocks: [
         {
           type: "cards",
           heading: "Priložnost",
           columns: 3,
           items: [
-            { title: "Problem", text: "Otroci obljubijo skrb za žival; starši je nimajo s čim nevtralno preveriti, preden vložijo denar in leta skrbi." },
+            { title: "Problem", text: "Otroci obljubijo, da bodo skrbeli za ljubljenčka; starši pa tega ne morejo nevtralno preveriti, preden vložijo denar in leta skrbi." },
             { title: "Rešitev", text: "Realistična 12-tedenska simulacija z nadzorno ploščo za starše v živo in objektivnim Care Score, ki se konča s Certifikatom odgovornosti." },
-            { title: "Širitev", text: "Ko pride prava žival domov, AI asistent zanjo: podatki z ovratnice, AI prvi stik z veterinarji, rast in prehrana, genski testi, partnerske storitve." },
+            { title: "Širitev", text: "Ko pride domov pravi ljubljenček, AI asistent zanj: podatki z ovratnice, prvi stik z AI in napotitev k veterinarjem, rast in prehrana, genski testi, partnerske storitve." },
           ],
         },
         {
@@ -561,8 +561,8 @@ const sl: Dictionary = {
           head: ["Vir", "Model", "Stanje"],
           rows: [
             ["Mešanček", "Brezplačno za vedno (pridobivanje uporabnikov)", "Odločeno"],
-            ["12-tedenski PetPrep izziv", "49,99 € na žival, enkratni nakup", "Odločeno"],
-            ["»Želje« — stvari za ljubljenčka (samo videz)", "Nakupi v aplikaciji: 5,99 € na stvar, priboljški 2,99 € za 10, paket 15,99 €; tudi v brezplačni različici", "Zgrajeno, nakup v trgovinah kmalu"],
+            ["12-tedenski PetPrep izziv", "49,99 € na ljubljenčka, enkratni nakup", "Odločeno"],
+            ["„Želje“ – stvari za ljubljenčka (samo videz)", "Nakupi v aplikaciji: 5,99 € na stvar, priboljški 2,99 € za 10, paket 15,99 €; tudi v brezplačni različici", "Zgrajeno, nakup v trgovinah kmalu"],
             ["Partnerske ponudbe", "Provizije trgovin, zavarovalnic, veterinarjev in šol", "V načrtu"],
             ["AI asistent za pravega ljubljenčka", "Naročnina", "V načrtu"],
             ["Genski testi za pse in mačke", "Prodaja testov in partnerska provizija", "V načrtu"],
@@ -572,7 +572,7 @@ const sl: Dictionary = {
           type: "list",
           heading: "Kaj je že zgrajeno",
           items: [
-            "Strežniški igralni pogon s sinhronizacijo v živo, preizkušen na simulacijah celih dni, dnevih prestopa ure in robnih primerih družin.",
+            "Strežniški igralni pogon s sinhronizacijo v živo, preizkušen na simulacijah celih dni, dnevih prehoda na drug čas in robnih primerih družin.",
             "Družine z več starši, več otroki in skupnimi ljubljenčki ter pošteno oceno za vsakega otroka.",
             "Edinstveni fotorealistični AI ljubljenčki z merjenimi in omejenimi stroški AI, mediji na lastnih strežnikih v EU.",
             "Potrebe živali na podlagi navedenih veterinarskih in kinoloških virov, vsaka številka sledljiva do vira.",
@@ -587,13 +587,13 @@ const sl: Dictionary = {
             "Ustanovitelj: David Tacer, razvijalec programske opreme in podjetnik (Data Vallis David Tacer s.p., Dravograd). Več [o nas](page:about).",
           ],
         },
-        { type: "callout", title: "Zahtevajte predstavitev za vlagatelje.", text: "Predstavitev, prezentacijo in podatkovno sobo pošljemo na zahtevo.", tone: "dark" },
+        { type: "callout", title: "Zahtevajte povzetek za vlagatelje.", text: "Povzetek, predstavitev in podatkovno sobo pošljemo na zahtevo.", tone: "dark" },
         { type: "contact" },
       ],
     },
     contact: {
       meta: {
-        title: "Kontakt PetPrep — družine, zasebnost, partnerji, vlagatelji",
+        title: "Kontakt PetPrep – družine, zasebnost, partnerji, vlagatelji",
         description: "Kontakt PetPrep: vprašanja družin, zahteve glede zasebnosti, partnerstva in vprašanja vlagateljev. Odgovorimo v slovenščini ali angleščini.",
       },
       eyebrow: "Kontakt",
@@ -604,7 +604,7 @@ const sl: Dictionary = {
     privacy: {
       navLabel: "Zasebnost",
       meta: {
-        title: "Politika zasebnosti — PetPrep",
+        title: "Politika zasebnosti – PetPrep",
         description: "Kako PetPrep zbira, uporablja in varuje osebne podatke staršev in otrok ter kako uveljavljate pravice po GDPR.",
       },
       eyebrow: "Pravno",
@@ -624,21 +624,21 @@ const sl: Dictionary = {
               heading: "2. Kaj zbiramo",
               items: [
                 "Račun starša: ime (kako vas kliče družina), e-poštni naslov, geslo (shranjeno samo kot varna zgoščena vrednost), časovni pas vaše naprave in čas, ko ste sprejeli pogoje in to politiko.",
-                "Profil skrbnika (otrok ali odrasel, ki skrbi za ljubljenčka): vzdevek do 30 znakov in po želji letnica rojstva — pri odraslem je ne vpišete. Brez e-pošte, gesla, priimka ali datuma rojstva.",
-                "Naprave: model telefona (na primer »iPhone«, nikoli ime, ki ga je telefonu dal uporabnik), za obvestila pa žeton naprave, vrsta sistema in različica aplikacije.",
-                "Dejavnost skrbi: dejanja v simulaciji (hranjenje, voda, čiščenje, sprehodi), dnevno število korakov (ali potiskov invalidskega vozička v prilagojenem načinu — glejte točki 3 in 4), ocene in poročila.",
+                "Profil skrbnika (otrok ali odrasel, ki skrbi za ljubljenčka): vzdevek do 30 znakov in po želji letnica rojstva – pri odraslem je ne vpišete. Brez e-pošte, gesla, priimka ali datuma rojstva.",
+                "Naprave: model telefona (na primer „iPhone“, nikoli ime, ki ga je telefonu dal uporabnik), za obvestila pa žeton naprave, vrsta sistema in različica aplikacije.",
+                "Oskrba ljubljenčka: dejanja v simulaciji (hranjenje, voda, čiščenje, sprehodi), dnevno število korakov (ali potiskov invalidskega vozička v prilagojenem načinu – glejte točki 3 in 4), ocene in poročila.",
                 "Pogodba o odgovornosti: otrokov podpis s prstom, shranjen kot vektorska črta s časom podpisa.",
                 "Kode: kode za prijavo in povabila so shranjene samo kot zgoščene vrednosti in potečejo.",
-                "Poročila o napakah v aplikaciji: če se aplikacija zatakne ali sesuje, lahko na naš strežnik v EU pošlje kratko tehnično poročilo (vrsta in besedilo napake, mesto v kodi, različica aplikacije in sistema, ime zaslona, vloga starš/otrok). Poročilo ne vsebuje imena, e-naslova, ID-ja uporabnika ali IP-naslova, ne gre nobeni tretji osebi in se izbriše po 30 dneh.",
+                "Poročila o napakah v aplikaciji: če se aplikacija zatakne ali sesuje, lahko na naš strežnik v EU pošlje kratko tehnično poročilo (vrsta in besedilo napake, mesto v kodi, različica aplikacije in sistema, ime zaslona, vloga starš/otrok). Poročilo ne vsebuje imena, e-naslova, ID-ja uporabnika ali IP-naslova, se ne deli z nobeno tretjo osebo in se izbriše po 30 dneh.",
                 "Seznam za zgodnji dostop (ta spletna stran): vaš e-poštni naslov, jezik strani in čas prijave.",
               ],
             },
             {
               heading: "3. Podatki o zdravju in telesni dejavnosti (koraki, Apple Zdravje in Health Connect)",
               paragraphs: [
-                "PetPrep dostopa do ene vrste podatkov o zdravju in telesni dejavnosti in jih zbira: koliko korakov skrbnik prehodi vsak dan (telesna dejavnost). Uporabljamo jih samo za eno funkcijo — dnevni sprehod ljubljenčka v simulaciji: otrok hodi, njegovi koraki pa štejejo kot sprehod ljubljenčka.",
-                "Kako dostopamo: aplikacija na otrokovem telefonu šteje korake. Če to dovolite v sistemskem oknu za dovoljenja, jih bere iz aplikacije Apple Zdravje (iPhone) ali Health Connect (Android) — samo za branje in samo korake. Kjer je na voljo, uporabi tudi senzor gibanja v telefonu (Android: dovoljenje »Telesna dejavnost«; iPhone: »Gibanje in telesna pripravljenost«); brez dovoljenja za Apple Zdravje ali Health Connect šteje samo senzor gibanja.",
-                "Kaj zbiramo: aplikacija na naš strežnik pošlje samo današnje število korakov, vir (Apple Zdravje, Health Connect ali senzor gibanja) in čas pošiljanja. Hranimo en dnevni seštevek na profil skrbnika — nikoli posameznih gibov, poti, lokacije, srčnega utripa, spanja, teže ali drugih zdravstvenih podatkov. V Apple Zdravje ali Health Connect nikoli ničesar ne zapišemo.",
+                "PetPrep dostopa do ene vrste podatkov o zdravju in telesni dejavnosti in jih zbira: koliko korakov skrbnik prehodi vsak dan (telesna dejavnost). Uporabljamo jih samo za eno funkcijo – dnevni sprehod ljubljenčka v simulaciji: otrok hodi, njegovi koraki pa štejejo kot sprehod ljubljenčka.",
+                "Kako dostopamo: aplikacija na otrokovem telefonu šteje korake. Če to dovolite v sistemskem oknu za dovoljenja, jih bere iz aplikacije Apple Zdravje (iPhone) ali Health Connect (Android) – samo za branje in samo korake. Kjer je na voljo, uporabi tudi senzor gibanja v telefonu (Android: dovoljenje „Telesna dejavnost“; iPhone: „Gibanje in telesna pripravljenost“); brez dovoljenja za Apple Zdravje ali Health Connect šteje samo senzor gibanja.",
+                "Kaj zbiramo: aplikacija na naš strežnik pošlje samo današnje število korakov, vir (Apple Zdravje, Health Connect ali senzor gibanja) in čas pošiljanja. Hranimo en dnevni seštevek na profil skrbnika – nikoli posameznih gibov, poti, lokacije, srčnega utripa, spanja, teže ali drugih zdravstvenih podatkov. V Apple Zdravje ali Health Connect nikoli ničesar ne zapišemo.",
                 "Kako jih uporabljamo in delimo: število korakov uporabljamo samo za sprehod v simulaciji in za prikaz staršu (nadzorna plošča in poročila). Ne uporabljamo ga za oglaševanje, profiliranje, zdravstvene ocene ali učenje modelov umetne inteligence, ga ne prodajamo in ga ne delimo s tretjimi osebami; v našem imenu ga hrani le ponudnik gostovanja (Hetzner, strežniki v EU). Podatke, ki jih prejmemo iz Health Connect, uporabljamo v skladu s pravili o dovoljenjih Health Connect, vključno z zahtevami glede omejene uporabe (Limited Use).",
                 "Pravna podlaga in hramba: branje korakov je neobvezno in poteka samo z dovoljenjem, ki ga date na napravi; dnevni seštevek obdelujemo za storitev, ki ste jo izbrali (izvajanje pogodbe). Število korakov je vključeno v izvoz podatkov družine in se izbriše skupaj s profilom skrbnika ali računom; iz šifriranih varnostnih kopij izgine najpozneje v 35 dneh.",
                 "Dovoljenje lahko kadar koli prekličete v nastavitvah naprave: iPhone → Nastavitve → Zdravje → Dostop do podatkov in naprave → PetPrep; Android → Health Connect → Dovoljenja aplikacij → PetPrep. Dovoljenje za senzor gibanja prekličete v nastavitvah telefona pri aplikaciji PetPrep. Sprehod potem ne šteje novih korakov.",
@@ -649,7 +649,7 @@ const sl: Dictionary = {
               paragraphs: [
                 "Prilagojen način je namenjen otrokom, ki uporabljajo invalidski voziček: sprehod takrat šteje potiske vozička namesto korakov. V aplikacijo pride z naslednjo posodobitvijo; spodaj opisujemo, katere podatke obdelamo, če ga starš vklopi.",
                 "Če starš prilagojen način pri otroku vklopi, shranimo samo podatek, da je vklopljen. Razloga, diagnoze ali zdravstvenega stanja ne sprašujemo in ne shranjujemo.",
-                "Ko je način vklopljen, aplikacija na otrokovem telefonu namesto korakov bere samo potiske invalidskega vozička — iz Apple Zdravje (zapiše jih Apple Watch), z ločenim dovoljenjem samo za branje. Na Androidu aplikacija potiskov ne bere; namesto tega minute sprehoda vpiše starš. Senzorja gibanja takrat ne uporablja. Na strežnik gre samo današnje število potiskov; pri dnevu zapišemo, da gre za potiske.",
+                "Ko je način vklopljen, aplikacija na otrokovem telefonu namesto korakov bere samo potiske invalidskega vozička – iz aplikacije Apple Zdravje (zapiše jih Apple Watch), z ločenim dovoljenjem samo za branje. Na Androidu aplikacija potiskov ne bere; namesto tega minute sprehoda vpiše starš. Senzorja gibanja takrat ne uporablja. Na strežnik gre samo današnje število potiskov; pri dnevu zapišemo, da gre za potiske.",
                 "Starš lahko za otroka v prilagojenem načinu vpiše minute sprehoda (samo za danes). Shranimo datum, število minut in kateri starš je sprehod vpisal.",
                 "Ker podatek, da je prilagojen način vklopljen, lahko kaže na zdravstveno stanje otroka, ga obdelujemo samo na podlagi vaše izrecne privolitve (člen 9(2)(a) GDPR), ki jo kot starš ali zakoniti zastopnik daste v imenu otroka (člen 8 GDPR) z vklopom stikala. Način lahko kadar koli izklopite; aplikacija potem spet šteje korake.",
                 "Ti podatki (vklop, dnevi s potiski in vpisani sprehodi) so vključeni v izvoz podatkov družine in se izbrišejo skupaj s profilom otroka ali računom; iz šifriranih varnostnih kopij izginejo najpozneje v 35 dneh, kot vsi drugi podatki.",
@@ -659,7 +659,7 @@ const sl: Dictionary = {
               heading: "5. Česa ne zbiramo",
               items: [
                 "Lokacije: PetPrep ne uporablja GPS.",
-                "Drugih zdravstvenih podatkov iz Apple Zdravje ali Health Connect razen dnevnega števila korakov oziroma potiskov vozička.",
+                "Drugih zdravstvenih podatkov iz aplikacije Apple Zdravje ali Health Connect razen dnevnega števila korakov oziroma potiskov vozička.",
                 "Oglasov ter oglaševalskih ali sledilnih orodij tretjih oseb v aplikaciji.",
                 "Klepeta med uporabniki.",
                 "Oglaševalskih piškotkov na tej spletni strani. Analitične piškotke nastavimo samo, če jih dovolite (glejte Piškotki spodaj).",
@@ -670,26 +670,26 @@ const sl: Dictionary = {
               items: [
                 "Za storitev, ki ste jo izbrali: računi, simulacija, nadzorna plošča, poročila in obvestila (izvajanje pogodbe).",
                 "Za obdelavo nakupov prek App Store ali Google Play (izvajanje pogodbe).",
-                "Za dnevni sprehod (dnevno število korakov — podatki o telesni dejavnosti, glejte točko 3): izvajanje pogodbe; branje iz Apple Zdravje, Health Connect ali senzorja gibanja samo z dovoljenjem, ki ga date na napravi.",
-                "Za prilagojen način (podatek, da je vklopljen, potiski vozička in vpisani sprehodi): izrecna privolitev starša z vklopom stikala (člen 9(2)(a) in člen 8 GDPR — glejte točko 4).",
+                "Za dnevni sprehod (dnevno število korakov – podatki o telesni dejavnosti, glejte točko 3): izvajanje pogodbe; branje iz aplikacije Apple Zdravje, Health Connect ali senzorja gibanja samo z dovoljenjem, ki ga date na napravi.",
+                "Za prilagojen način (podatek, da je vklopljen, potiski vozička in vpisani sprehodi): izrecna privolitev starša z vklopom stikala (člen 9(2)(a) in člen 8 GDPR – glejte točko 4).",
                 "Za varnost storitve, na primer omejevanje ponavljajočih se poskusov prijave (zakoniti interes).",
                 "Za delovanje in varnost storitve s poročili o napakah v aplikaciji, ki nam pomagajo odpraviti zatikanja in sesutja (zakoniti interes).",
                 "Za izpolnjevanje zakonskih obveznosti, na primer računovodstvo nakupov (zakonska obveznost).",
-                "Za obveščanje o začetku PetPrep po e-pošti, če ste se prijavili na zgodnji dostop (privolitev — odjava je mogoča v vsakem sporočilu).",
-                "Da razumemo, kako obiskovalci uporabljajo to spletno stran, z Google Analytics, samo če dovolite analitične piškotke (privolitev — spremenite jo lahko kadarkoli v Nastavitvah piškotkov).",
+                "Za obveščanje o začetku PetPrep po e-pošti, če ste se prijavili na zgodnji dostop (privolitev – odjava je mogoča v vsakem sporočilu).",
+                "Da razumemo, kako obiskovalci uporabljajo to spletno stran, z Google Analytics, samo če dovolite analitične piškotke (privolitev – spremenite jo lahko kadar koli v Nastavitvah piškotkov).",
               ],
             },
             {
               heading: "7. Otroci",
               paragraphs: [
-                "Račun lahko ustvari in otroka doda samo starš ali zakoniti zastopnik. Starš odloča, kaj otrok lahko počne, in lahko otrokov profil kadarkoli izbriše. Otroka nikoli ne vprašamo za kontaktne podatke, mu ne prikazujemo oglasov in ne omogočamo stika s tujci.",
-                "Imetnik računa lahko profil skrbnika ustvari tudi zase ali za drugega odraslega člana družine — na primer, da pred nakupom ali posvojitvijo preizkusi, ali mu pasma ustreza. Za tak profil veljajo enaka pravila in enak najmanjši obseg podatkov; vsa zaščita, ki je namenjena otrokom, velja tudi zanj.",
+                "Račun lahko ustvari in otroka doda samo starš ali zakoniti zastopnik. Starš odloča, kaj otrok lahko počne, in lahko otrokov profil kadar koli izbriše. Otroka nikoli ne vprašamo za kontaktne podatke, mu ne prikazujemo oglasov in ne omogočamo stika s tujci.",
+                "Imetnik računa lahko profil skrbnika ustvari tudi zase ali za drugega odraslega člana družine – na primer, da pred nakupom ali posvojitvijo preizkusi, ali mu pasma ustreza. Za tak profil veljajo enaka pravila in enak najmanjši obseg podatkov; vsa zaščita, ki je namenjena otrokom, velja tudi zanj.",
               ],
             },
             {
               heading: "8. Slike in videi, ustvarjeni z umetno inteligenco",
               paragraphs: [
-                "Fotografijo in kratke videje vsakega ljubljenčka ustvari AI storitev samo na podlagi opisa ljubljenčka (pasma, dlaka, lise ipd.). Opis nikoli ne vsebuje imen ali kakršnih koli podatkov o vaši družini. Končni mediji so shranjeni na naših strežnikih v EU in prikazani prek kratkotrajnih povezav.",
+                "Fotografijo in kratke videe vsakega ljubljenčka ustvari AI storitev samo na podlagi opisa ljubljenčka (pasma, dlaka, lise ipd.). Opis nikoli ne vsebuje imen ali kakršnih koli podatkov o vaši družini. Končni mediji so shranjeni na naših strežnikih v EU in prikazani prek kratkotrajnih povezav.",
               ],
             },
             {
@@ -713,7 +713,7 @@ const sl: Dictionary = {
             {
               heading: "11. Vaše pravice",
               paragraphs: [
-                "Imate pravico do dostopa, popravka, izvoza in izbrisa podatkov, do ugovora in omejitve obdelave ter do pritožbe pri nadzornem organu — v Sloveniji je to Informacijski pooblaščenec. V aplikaciji lahko vse podatke družine izvozite v datoteko (Nadzor → Račun → Izvozi moje podatke) ter izbrišete profil otroka ali celoten račun. Za vse drugo pišite na {privacyEmail}.",
+                "Imate pravico do dostopa, popravka, izvoza in izbrisa podatkov, do ugovora in omejitve obdelave ter do pritožbe pri nadzornem organu – v Sloveniji je to Informacijski pooblaščenec. V aplikaciji lahko vse podatke družine izvozite v datoteko (Nadzor → Račun → Izvozi moje podatke) ter izbrišete profil otroka ali celoten račun. Za vse drugo pišite na {privacyEmail}.",
               ],
             },
             {
@@ -732,7 +732,7 @@ const sl: Dictionary = {
           type: "cookies",
           heading: "14. Piškotki",
           paragraphs: [
-            "Nujni piškotki skrbijo za delovanje strani in si zapomnijo vašo izbiro glede piškotkov. Analitične piškotke (Google Analytics) nastavimo samo, če jih dovolite v pasici, izbiro pa lahko kadarkoli spremenite.",
+            "Nujni piškotki skrbijo za delovanje strani in si zapomnijo vašo izbiro glede piškotkov. Analitične piškotke (Google Analytics) nastavimo samo, če jih dovolite v pasici, izbiro pa lahko kadar koli spremenite.",
             "Spodnja tabela se samodejno ustvari iz zadnjega pregleda te spletne strani, zato vedno prikazuje piškotke, ki jih dejansko uporabljamo.",
           ],
           settings: "Spremeni nastavitve piškotkov",
@@ -743,13 +743,13 @@ const sl: Dictionary = {
     terms: {
       navLabel: "Pogoji uporabe",
       meta: {
-        title: "Pogoji uporabe — PetPrep",
+        title: "Pogoji uporabe – PetPrep",
         description:
           "Pogoji uporabe aplikacije in spletne strani PetPrep: računi in profili otrok, 12-tedenski izziv in certifikat, nakupi in vračila, vsebine AI, prilagojen način, poštena raba, izbris in pravo.",
       },
       eyebrow: "Pravno",
       title: "Pogoji uporabe",
-      lead: "Pravila za uporabo PetPrep, napisana tako, da se jih da prebrati.",
+      lead: "Pravila za uporabo PetPrep, napisana tako, da jih je mogoče zares prebrati.",
       blocks: [
         {
           type: "legal",
@@ -757,15 +757,15 @@ const sl: Dictionary = {
             {
               heading: "1. Storitev",
               paragraphs: [
-                "PetPrep zagotavlja podjetje {company}, {address}; {companyIds} — isto podjetje, ki je upravljavec podatkov po politiki zasebnosti. Ti pogoji veljajo za aplikacijo PetPrep in spletno stran petprep.si.",
-                "PetPrep je simulacija skrbi za ljubljenčka. Družinam in posameznikom pomaga preveriti, ali so pripravljeni skrbeti za pravo žival — otrokom in odraslim, ki pred nakupom ali posvojitvijo preizkušajo, ali jim pasma ustreza. Je izobraževalno orodje, ne veterinarski ali drug strokovni nasvet.",
+                "PetPrep zagotavlja podjetje {company}, {address}; {companyIds} – isto podjetje, ki je upravljavec podatkov po politiki zasebnosti. Ti pogoji veljajo za aplikacijo PetPrep in spletno stran petprep.si.",
+                "PetPrep je simulacija skrbi za ljubljenčka. Družinam in posameznikom pomaga preveriti, ali so pripravljeni skrbeti za pravega ljubljenčka – otrokom in odraslim, ki pred nakupom ali posvojitvijo preizkušajo, ali jim pasma ustreza. Je izobraževalno orodje, ne veterinarski ali drug strokovni nasvet.",
               ],
             },
             {
               heading: "2. Računi, profili in otroci",
               items: [
                 "Račun ustvari odrasla oseba: starš, zakoniti zastopnik ali odrasel, ki PetPrep uporablja zase. Ob registraciji se strinjate s temi pogoji in s politiko zasebnosti.",
-                "Za ljubljenčka skrbijo skrbniki (otroci ali odrasli) prek profila skrbnika, ki ga ustvari imetnik računa; profil lahko ustvari tudi zase. Za profil vpišete samo vzdevek in po želji letnico rojstva — več podatkov o otroku ne potrebujemo, zato jih ne vpisujte nikjer v aplikaciji.",
+                "Za ljubljenčka skrbijo skrbniki (otroci ali odrasli) prek profila skrbnika, ki ga ustvari imetnik računa; profil lahko ustvari tudi zase. Za profil vpišete samo vzdevek in po želji letnico rojstva – več podatkov o otroku ne potrebujemo, zato jih ne vpisujte nikjer v aplikaciji.",
                 "Otrok se prijavi s 6-mestno kodo (PIN), ki jo ustvarite v svoji aplikaciji. Koda velja kratek čas in samo enkrat; dajte jo samo otroku, ki mu je namenjena.",
                 "Kot starš ali zakoniti zastopnik ste odgovorni za to, kako otrok uporablja PetPrep: ali je primeren zanj, koliko časa ga uporablja in ali je pri sprehodih varen (na primer v prometu). Igro lahko za vsakega ljubljenčka kadar koli ustavite.",
                 "Drugega starša lahko v družino povabite s kodo povabila; oba vidita vse podatke družine in oba lahko ustavita igro.",
@@ -776,23 +776,23 @@ const sl: Dictionary = {
               heading: "3. 12-tedenski izziv, Care Score in certifikat",
               items: [
                 "Izziv traja 12 tednov (84 dni programa) in se začne z nakupom; vsak skrbnik ima svoj zaključek. Čas, ko igra čaka na plačilo, se v 12 tednov ne šteje.",
-                "Care Score (od 0 do 100) pokaže, kolikšen del pričakovanih rutin (hranjenje, voda, čiščenje, sprehod, vaja v šoli) je skrbnik opravil sam; vsaka bolezen ljubljenčka ga zniža. Čas, ko je igra ustavljena, ko je ljubljenček pri veterinarju, in tihe ure se skrbniku ne štejejo v slabo.",
+                "Care Score (od 0 do 100) pokaže, kolikšen del pričakovanih rutin (hranjenje, voda, čiščenje, sprehod, vaja ukazov) je skrbnik opravil sam; vsaka bolezen ljubljenčka ga zniža. Čas, ko je igra ustavljena, ko je ljubljenček pri veterinarju, in tihe ure ne vplivajo negativno na skrbnikovo oceno.",
                 "Po 12 tednih se zapiše končna ocena, ki se pozneje ne spremeni; skrb po koncu izziva nanjo ne vpliva. Pri oceni 70 ali več lahko v aplikaciji ustvarite Certifikat odgovornosti (PDF), pri nižji oceni pa dobite poročilo o izzivu.",
-                "Če je hrana, voda ali čistoča 24 ur na 0 %, ljubljenčka »odpelje zavetišče« (konec igre). Igra s tem ljubljenčkom se konča, certifikata ni, dobite poročilo o izzivu.",
-                "Care Score in certifikat kažeta samo, kako je skrbnik skrbel za simuliranega ljubljenčka v aplikaciji. Nista zagotovilo, da je otrok ali kdor koli drug pripravljen na pravo žival, nista strokovna ocena in ne nadomeščata vaše presoje ali nasveta veterinarja, vzreditelja ali zavetišča. Odločitev o pravi živali je vedno vaša.",
+                "Če je hrana, voda ali čistoča 24 ur na 0 %, ljubljenčka „prevzame zavetišče“ (konec igre). Igra s tem ljubljenčkom se konča, certifikata ni, dobite poročilo o izzivu.",
+                "Care Score in certifikat kažeta samo, kako je skrbnik skrbel za simuliranega ljubljenčka v aplikaciji. Nista zagotovilo, da je otrok ali kdor koli drug pripravljen na pravega ljubljenčka, nista strokovna ocena in ne nadomeščata vaše presoje ali nasveta veterinarja, vzreditelja ali zavetišča. Odločitev o pravem ljubljenčku je vedno vaša.",
                 "Pravila igre (obroki, sprehodi in nega po pasmi in starosti) so poenostavljena in povzeta po javnih virih. Niso veterinarski nasvet; o zdravju in negi prave živali se posvetujte z veterinarjem.",
               ],
             },
             {
               heading: "4. Brezplačne in plačljive funkcije, nakupi in vračila",
               items: [
-                "Mešanček in domača mačka sta brezplačna za vedno in sta način, da PetPrep preizkusite; brezplačnega preizkusa izziva ni. Brezplačna žival nima 12-tedenskega programa in certifikata, starš vidi zgodovino zadnjih 7 dni, ljubljenček pa ima osnovni nabor slik in videov.",
+                "Mešanček in domača mačka sta brezplačna za vedno in sta način, da PetPrep preizkusite; brezplačnega preizkusa izziva ni. Brezplačni ljubljenček nima 12-tedenskega programa in certifikata, starš vidi zgodovino zadnjih 7 dni, ljubljenček pa ima osnovni nabor slik in videov.",
                 "12-tedenski PetPrep izziv s plačljivo pasmo je enkratni nakup (49,99 € v Sloveniji; trgovina pokaže ceno za vašo državo). En nakup je en izziv za enega ljubljenčka; vsak nov izziv z novim ljubljenčkom je nov nakup. Sorojenci, ki skrbijo za istega ljubljenčka, plačajo enkrat.",
                 "Nakup opravi starš v svoji aplikaciji prek App Store ali Google Play; v otroški aplikaciji nakupov ni. Plačilo obdela trgovina po svojih pogojih.",
                 "Ljubljenčka za izziv lahko ustvarite pred nakupom. Dokler izziv ni plačan, igra stoji: ljubljenček varno čaka, njegove potrebe ne padajo in nič se ne poslabša. Ko kupite, se igra nadaljuje, kjer je obstala.",
                 "Vračila kupnine urejata App Store in Google Play po svojih pravilih; zahtevo oddate pri trgovini, kjer ste kupili. Če trgovina kupnino vrne, preden je izziv končan, se igra tega ljubljenčka spet ustavi. Slike in videi, ustvarjeni po nakupu, ostanejo.",
                 "Po koncu igre (zavetišče) nakup ljubljenčka ne odklene; nov izziv je nov ljubljenček in nov nakup.",
-                "»Želje« (stvari za ljubljenčka, ko so na voljo): otrok lahko prosi, kupi pa samo starš v svoji aplikaciji. Kupljena stvar pripada ljubljenčku, za katerega je kupljena, in je samo videz — ne vpliva na igro, oceno ali certifikat. Ob koncu igre ali izbrisu ljubljenčka nakup ostane porabljen in se ne vrne. Če trgovina kupnino vrne, se stvar (pri priboljških neporabljeni priboljški) odstrani.",
+                "„Želje“ (stvari za ljubljenčka, ko so na voljo): otrok lahko prosi, kupi pa samo starš v svoji aplikaciji. Kupljena stvar pripada ljubljenčku, za katerega je kupljena, in je samo videz – ne vpliva na igro, oceno ali certifikat. Ob koncu igre ali izbrisu ljubljenčka nakup ostane porabljen in se ne vrne. Če trgovina kupnino vrne, se stvar (pri priboljških neporabljeni priboljški) odstrani.",
                 "Če izbrišete ljubljenčka, otroka ali račun, pri katerem je kupljen izziv še v teku, ostane nakup porabljen: ne prenese se na drugega ljubljenčka in izbris ne pomeni vračila kupnine. Aplikacija vas na to prej opozori in zahteva potrditev.",
               ],
             },
@@ -801,7 +801,7 @@ const sl: Dictionary = {
               items: [
                 "Slike in videe ljubljenčkov ustvari umetna inteligenca (AI) samo na podlagi opisa ljubljenčka (pasma, barva, dlaka ipd.), nikoli na podlagi podatkov o vaši družini. So ponazoritve simuliranega ljubljenčka in se morda ne ujemajo povsem z nobeno pravo živaljo ali standardom pasme.",
                 "Kjer jih pokažemo javno, na primer portrete pasem na tej spletni strani, so označeni kot ustvarjeni z AI.",
-                "Videz ni nujno edinstven: ljubljenčki iste plačljive pasme in barve si lahko delijo iste slike in videe, brezplačne živali pa dobijo enega od skupnih videzov svoje pasme. Plačan izziv vključuje večji nabor videov kot brezplačna žival.",
+                "Videz ni nujno edinstven: ljubljenčki iste plačljive pasme in barve si lahko delijo iste slike in videe, brezplačni ljubljenčki pa dobijo enega od skupnih videzov svoje pasme. Plačan izziv vključuje večji nabor videov kot brezplačen ljubljenček.",
                 "Po podpisu pogodbe ali nakupu lahko priprava slik in videov traja nekaj minut; medtem aplikacija pokaže, da se ljubljenček pripravlja, in označi, kar se še pripravlja.",
                 "Podatki o pasmah v aplikaciji in v registru živali na tej strani so povzeti po javnih virih, ki jih navajamo, in niso veterinarsko preverjeni.",
               ],
@@ -809,7 +809,7 @@ const sl: Dictionary = {
             {
               heading: "6. Koraki, podatki o zdravju in prilagojen način",
               items: [
-                "Dnevni sprehod šteje skrbnikove prave korake. Če to dovolite, jih aplikacija bere iz Apple Zdravje ali Health Connect samo za branje (vanje nikoli ničesar ne zapiše) ali iz senzorja gibanja v telefonu. Katere podatke obdelujemo, piše v politiki zasebnosti (točka 3).",
+                "Dnevni sprehod šteje skrbnikove prave korake. Če to dovolite, jih aplikacija bere iz aplikacije Apple Zdravje ali Health Connect samo za branje (vanje nikoli ničesar ne zapiše) ali iz senzorja gibanja v telefonu. Katere podatke obdelujemo, piše v politiki zasebnosti (točka 3).",
                 "Prilagojen način je namenjen otrokom, ki uporabljajo invalidski voziček: sprehod takrat šteje potiske vozička namesto korakov. Uporabite ga lahko, če je funkcija na voljo v vaši različici aplikacije. Vklopi ga starš za posameznega otroka; vklop je vaša privolitev, izklop jo prekliče (politika zasebnosti, točka 4).",
                 "V prilagojenem načinu lahko starš za otroka vpiše minute sprehoda, samo za današnji dan. Za vpise ste odgovorni vi: vpišite samo sprehode, ki so se res zgodili, saj štejejo v Care Score in certifikat.",
                 "PetPrep ne uporablja lokacije in med sprehodom ne opozarja na nevarnosti; za varnost na sprehodu poskrbite sami.",
@@ -818,7 +818,7 @@ const sl: Dictionary = {
             {
               heading: "7. Obvestila",
               paragraphs: [
-                "Če jih dovolite na napravi, aplikacija pošilja potisna obvestila: opomnike skrbniku, opozorila staršem, ko ljubljenček nima hrane, vode ali čistoče, ter novice o bolezni, koncu igre in koncu izziva. Obvestila ne vsebujejo imena otroka ali ljubljenčka in jih v tihih urah ni. Dovoljenje lahko kadar koli prekličete v nastavitvah naprave; brez obvestil lahko skrbnik zamudi rutine, kar vpliva na igro in oceno.",
+                "Če jih dovolite na napravi, aplikacija pošilja potisna obvestila: opomnike skrbniku, opozorila staršem, ko ljubljenček nima hrane, vode ali čistoče, ter obvestila o bolezni, koncu igre in koncu izziva. Obvestila ne vsebujejo imena otroka ali ljubljenčka in jih v tihih urah ni. Dovoljenje lahko kadar koli prekličete v nastavitvah naprave; brez obvestil lahko skrbnik zamudi rutine, kar vpliva na igro in oceno.",
               ],
             },
             {
@@ -838,7 +838,7 @@ const sl: Dictionary = {
             {
               heading: "10. Odgovornost",
               paragraphs: [
-                "Trudimo se, da je PetPrep dosegljiv in točen, vendar je storitev na voljo takšna, kot je; deluje tudi s storitvami drugih (trgovine, Apple Zdravje, Health Connect, potisna obvestila, AI storitev), na katere nimamo vpliva. V obsegu, ki ga dovoljuje zakon, ne odgovarjamo za posredno škodo ali za odločitve o nakupu ali posvojitvi prave živali. Nič v teh pogojih ne omejuje pravic, ki jih imate kot potrošnik po prisilnih predpisih.",
+                "Trudimo se, da je PetPrep dosegljiv in točen, vendar je storitev na voljo takšna, kot je; opira se tudi na storitve drugih (trgovine, Apple Zdravje, Health Connect, potisna obvestila, AI storitev), na katere nimamo vpliva. V obsegu, ki ga dovoljuje zakon, ne odgovarjamo za posredno škodo ali za odločitve o nakupu ali posvojitvi pravega ljubljenčka. Nič v teh pogojih ne omejuje pravic, ki jih imate kot potrošnik po prisilnih predpisih.",
               ],
             },
             {
@@ -872,7 +872,7 @@ const sl: Dictionary = {
     childSafety: {
       navLabel: "Varnost otrok",
       meta: {
-        title: "Varnost otrok — kako PetPrep varuje otroke",
+        title: "Varnost otrok – kako PetPrep varuje otroke",
         description:
           "Kako PetPrep varuje otroke: račune ustvarijo starši, prijava s kodo brez e-pošte, malo podatkov, brez oglasov, klepeta in lokacije, preverjeni mediji.",
       },
@@ -889,7 +889,7 @@ const sl: Dictionary = {
             { title: "Otroci brez e-pošte in gesla", text: "Otrok se prijavi s kodo starša. Napačna, potekla in porabljena koda dobijo enak odgovor, zato nihče ne more ugotoviti, kateri otroci obstajajo." },
             { title: "Minimalni podatki", text: "Vzdevek in po želji letnica rojstva. Brez priimka, datuma rojstva in fotografij otroka." },
             { title: "Brez oglasov, klepeta in tujcev", text: "Oglasov ni in z drugimi uporabniki ni mogoče stopiti v stik." },
-            { title: "Brez sledenja lokaciji", text: "Sprehod šteje samo korake — iz Apple Zdravje ali Health Connect (z vašim dovoljenjem, samo za branje) ali s senzorja gibanja v telefonu. GPS se ne uporablja." },
+            { title: "Brez sledenja lokaciji", text: "Sprehod šteje samo korake – iz aplikacije Apple Zdravje ali Health Connect (z vašim dovoljenjem, samo za branje) ali s senzorja gibanja v telefonu. GPS se ne uporablja." },
             { title: "Zasebne posodobitve v živo", text: "Posodobitve v realnem času prejmejo samo otroci, ki skrbijo za tega ljubljenčka, in starši iste družine." },
             { title: "Preverjeni mediji", text: "Prikazane so samo slike in videi, ustvarjeni za PetPrep in preverjeni na našem strežniku, iz naše hrambe v EU." },
             { title: "Obvestila brez imen", text: "Obvestila nikoli ne vsebujejo imena otroka ali ljubljenčka, saj se lahko pokažejo na zaklenjenem zaslonu." },
@@ -900,33 +900,33 @@ const sl: Dictionary = {
           heading: "Nadzor ostane pri starših",
           items: [
             "Tihe ure za šolo in spanje, brez obvestil.",
-            "Gumb za premor, ki otrokov zaslon zaklene v živo.",
+            "Gumb za premor, ki otrokov zaslon takoj zaklene.",
             "Odjava otroka z vseh naprav hkrati.",
             "Takojšen izvoz ali izbris vseh podatkov kar v aplikaciji.",
           ],
         },
-        { type: "callout", title: "Prijavite skrb", text: "Če vas karkoli v PetPrep skrbi, nam pišite — odgovorili bomo prednostno.", tone: "dark" },
+        { type: "callout", title: "Sporočite pomislek", text: "Če vas karkoli pri PetPrep skrbi, nam pišite – odgovorimo prednostno.", tone: "dark" },
         { type: "contact" },
       ],
     },
     accessibility: {
       navLabel: "Dostopnost",
       meta: {
-        title: "Dostopnost — PetPrep za vsakega otroka",
+        title: "Dostopnost – PetPrep za vsakega otroka",
         description:
-          "Kako se PetPrep prilagodi otrokom, ki jim potegi s prstom delajo težave, uporabljajo VoiceOver ali TalkBack ali želijo manj gibanja — z enakimi pravili in točkami za vse.",
+          "Kako se PetPrep prilagodi otrokom, ki jim potegi s prstom delajo težave, uporabljajo VoiceOver ali TalkBack ali želijo manj gibanja – z enakimi pravili in točkami za vse.",
       },
       eyebrow: "Zaupanje",
       title: "Za svojega ljubljenčka lahko skrbi vsak otrok.",
-      lead: "Nekaterim otrokom potegi s prstom delajo težave, drugi uporabljajo bralnik zaslona ali jim je prijetneje z manj gibanja na zaslonu. PetPrep se jim prilagodi — z enakimi pravili, enakimi točkami in enakim certifikatom kot za vse ostale.",
+      lead: "Nekaterim otrokom potegi s prstom delajo težave, drugi uporabljajo bralnik zaslona ali jim je ljubše, če je na zaslonu manj gibanja. PetPrep se jim prilagodi – z enakimi pravili, enakimi točkami in enakim certifikatom kot za vse ostale.",
       blocks: [
         {
           type: "cards",
           heading: "V aplikaciji",
           columns: 3,
           items: [
-            { title: "Lažje kretnje", text: "Namesto potega s prstom otrok drži prst ali pritisne gumb — v vseh igrah s potegom: pri česanju, palici s peresom, menjavi peska in igri z žogo. Vklopi jih starš za vsakega otroka posebej." },
-            { title: "Bralniki zaslona", text: "Ko je vklopljen VoiceOver ali TalkBack, igre same preklopijo na držanje. Glava zaslona prebere vse o ljubljenčku, vsak korak v igrah nege je svoj gumb." },
+            { title: "Preprostejše kretnje", text: "Namesto potega s prstom otrok drži prst ali pritisne gumb – v vseh igrah s potegom: pri česanju, palici s peresom, menjavi peska in igri z žogo. Vklopi jih starš za vsakega otroka posebej." },
+            { title: "Bralniki zaslona", text: "Ko je vklopljen VoiceOver ali TalkBack, igre same preklopijo na držanje. Glava zaslona prebere vse o ljubljenčku, vsak korak v negovalnih igrah je svoj gumb." },
             { title: "Manj gibanja", text: "Ko je telefon nastavljen na manj gibanja, utripajoči gumbi in zibajoči se Curio mirujejo." },
           ],
         },
@@ -934,11 +934,11 @@ const sl: Dictionary = {
           type: "cards",
           heading: "Prihaja z naslednjo posodobitvijo aplikacije",
           items: [
-            { title: "Sprehodi z invalidskim vozičkom", text: "V prilagojenem načinu se potiski vozička štejejo natanko kot koraki — en potisk je en korak. Starš lahko vpiše tudi današnje minute sprehoda, tako da otroku ni treba narediti ničesar več. Vklopi ga starš za vsakega otroka posebej; z izklopom se oznaka odstrani iz zgodovine." },
+            { title: "Sprehodi z invalidskim vozičkom", text: "V prilagojenem načinu se potiski vozička štejejo natanko kot koraki – en potisk je en korak. Starš lahko vpiše tudi današnje minute sprehoda, tako da otroku ni treba narediti ničesar več. Vklopi ga starš za vsakega otroka posebej; z izklopom se oznaka odstrani iz zgodovine." },
           ],
         },
         { type: "callout", title: "Isti izziv za vse", text: "Prilagoditve spremenijo, kako otrok igra, nikoli pa, kaj šteje. Točke, čas in Certifikat odgovornosti delujejo popolnoma enako. Nikoli ne sprašujemo, zakaj otrok prilagoditev potrebuje.", tone: "mint" },
-        { type: "callout", title: "Vašemu otroku kaj ne deluje?", text: "Povejte nam, kaj ga je oviralo, in si bomo ogledali.", tone: "dark" },
+        { type: "callout", title: "Vašemu otroku kaj ne ustreza?", text: "Povejte nam, kaj ga je oviralo, in si bomo to ogledali.", tone: "dark" },
         { type: "contact" },
       ],
     },
@@ -951,15 +951,15 @@ const sl: Dictionary = {
       },
       eyebrow: "Zaupanje",
       title: "Izbris računa PetPrep",
-      lead: "PetPrep izdeluje Data Vallis. Račun in podatke družine lahko izbrišete kadar koli — takoj v aplikaciji ali po e-pošti, če aplikacije nimate več.",
+      lead: "PetPrep izdeluje Data Vallis. Račun in podatke družine lahko izbrišete kadar koli – takoj v aplikaciji ali po e-pošti, če aplikacije nimate več.",
       blocks: [
         {
           type: "steps",
           heading: "Izbris v aplikaciji (takoj)",
           items: [
-            { title: "Prijavite se kot starš", text: "Odprite PetPrep, tapnite »Sem starš« in se prijavite." },
-            { title: "Odprite račun", text: "Pojdite v Nadzor → Račun. Če želite kopijo, najprej tapnite »Izvozi moje podatke«." },
-            { title: "Izbrišite", text: "Tapnite »Izbriši račun«, potrdite z geslom (ali s prijavo z Googlom / Apple), vpišite IZBRIŠI in tapnite »Izbriši za vedno«." },
+            { title: "Prijavite se kot starš", text: "Odprite PetPrep, tapnite „Sem starš“ in se prijavite." },
+            { title: "Odprite račun", text: "Pojdite v Nadzor → Račun. Če želite kopijo, najprej tapnite „Izvozi moje podatke“." },
+            { title: "Izbrišite", text: "Tapnite „Izbriši račun“, potrdite z geslom (ali s prijavo z Google / Apple), vpišite IZBRIŠI in tapnite „Izbriši za vedno“." },
             { title: "Končano", text: "Izbris je takojšen in ga ni mogoče razveljaviti. Vse vaše naprave in naprave otrok se odjavijo." },
           ],
         },
@@ -967,7 +967,7 @@ const sl: Dictionary = {
           type: "prose",
           heading: "Aplikacije nimate več? Zahtevajte izbris po e-pošti",
           paragraphs: [
-            "Pišite na [privacy@petprep.si](mailto:privacy@petprep.si) z e-naslova svojega starševskega računa PetPrep, z zadevo »Izbris računa«. Preverimo, da zahteva prihaja od lastnika računa, račun izbrišemo najpozneje v enem mesecu (običajno v nekaj dneh) in izbris potrdimo po e-pošti.",
+            "Pišite na [privacy@petprep.si](mailto:privacy@petprep.si) z e-naslova svojega starševskega računa PetPrep, z zadevo „Izbris računa“. Preverimo, da zahteva prihaja od lastnika računa, račun izbrišemo najpozneje v enem mesecu (običajno v nekaj dneh) in izbris potrdimo po e-pošti.",
             "Če želite izbrisati samo profil enega otroka, se prijavite kot starš in v Nadzor → Otroci odprite otroka → Izbriši profil.",
           ],
         },
@@ -977,21 +977,21 @@ const sl: Dictionary = {
           head: ["Podatki", "Kaj se zgodi"],
           rows: [
             ["Vaš starševski račun (ime, e-pošta, geslo, povezava prijave z Googlom / Apple)", "Takoj izbrisan"],
-            ["Če ste edini starš v družini: profili otrok (vzdevek, letnica rojstva), ljubljenčki, AI slike in videi, pogodbe in podpisi, dnevnik skrbi, Care Score, certifikati, koraki, tihe ure, kode za prijavo", "Takoj izbrisano"],
+            ["Če ste edini starš v družini: profili otrok (vzdevek, letnica rojstva), ljubljenčki, AI slike in videi, pogodbe in podpisi, dnevnik oskrbe, Care Score, certifikati, koraki, tihe ure, kode za prijavo", "Takoj izbrisano"],
             ["Če v družini ostane drug starš", "Izbriše se samo vaš račun; družina ostane drugemu staršu"],
             ["Naprave in žetoni za obvestila", "Takoj odjavljeno in izbrisano"],
-            ["Evidenca nakupov (izdelek, datum, številka transakcije trgovine, anonimna oznaka nakupa — brez imena in e-pošte)", "Hranimo, dokler to zahtevajo računovodski in davčni predpisi, brez povezave z vašo družino"],
+            ["Evidenca nakupov (izdelek, datum, številka transakcije trgovine, anonimna oznaka nakupa – brez imena in e-pošte)", "Hranimo, dokler to zahtevajo računovodski in davčni predpisi, brez povezave z vašo družino"],
             ["Evidenca stroškov AI", "Hranimo za računovodstvo, brez povezave z vami, otroki ali ljubljenčki"],
             ["Šifrirane varnostne kopije", "Samodejno odstranjene v 35 dneh"],
           ],
-          note: "Plačila obdelata App Store in Google Play, ki svoje evidence hranita po svojih pravilih. Kupljen, a nedokončan izziv se ob izbrisu računa ne povrne.",
+          note: "Plačila obdelata App Store in Google Play, ki svoje evidence hranita po svojih pravilih. Za kupljen, a nedokončan izziv ob izbrisu računa ni vračila.",
         },
         { type: "callout", title: "Vprašanja?", text: "Pišite na privacy@petprep.si. Podrobnosti so v politiki zasebnosti.", tone: "dark" },
       ],
     },
     animals: {
       meta: {
-        title: "PetPrep register živali — vrste in pasme z viri",
+        title: "PetPrep register živali – vrste in pasme z viri",
         description:
           "Psi, mačke in pasme: kaj potrebujejo, za koga so primerne in kako jih simulira PetPrep. Iščite in primerjajte pasme; vsako dejstvo ima vir.",
       },
@@ -999,12 +999,12 @@ const sl: Dictionary = {
       eyebrow: "Register živali",
       title: "Spoznajte žival, preden pride domov.",
       lead:
-        "Kaj vsaka vrsta in pasma v PetPrep res potrebuje — iz kinoloških zvez, mačjih zvez, veterinarskih dobrodelnih organizacij in raziskav, z vsemi viri. In pravila, po katerih jo PetPrep simulira.",
+        "Kaj vsaka vrsta in pasma v PetPrep res potrebuje – iz kinoloških zvez, mačjih zvez, veterinarskih dobrodelnih organizacij in raziskav, z vsemi viri. In pravila, po katerih jo PetPrep simulira.",
       blocks: [{ type: "animalsHub" }],
     },
     about: {
       meta: {
-        title: "O nas — podjetje, ustanovitelj in kako PetPrep preverja dejstva",
+        title: "O nas – podjetje, ustanovitelj in viri naših dejstev",
         description:
           "Kdo stoji za PetPrep: Data Vallis David Tacer s.p. iz Dravograda, ustanovitelj David Tacer, naše poslanstvo in kako register živali zbira in preverja dejstva.",
       },
@@ -1033,8 +1033,8 @@ const sl: Dictionary = {
           id: "mission",
           heading: "Naše poslanstvo",
           paragraphs: [
-            "Vsaka družina sliši »Obljubim, da bom skrbel zanj.« PetPrep obljubo spremeni v dokaz: 12 tednov otrok — ali odrasel, ki si želi točno določeno pasmo — skrbi za realističnega AI ljubljenčka z vsakodnevnimi potrebami prave živali, starš pa vsak dan vidi, ali skrb zdrži.",
-            "Tudi neuspeh v simulaciji je dober rezultat: družina izve, preden bi trpela prava žival, in preden se zaveže letom skrbi in stroškov. Ko pa prava žival pride domov, želimo, da je PetPrep v pomoč vse njeno življenje.",
+            "Vsaka družina sliši „Obljubim, da bom skrbel zanj.“ PetPrep obljubo spremeni v dokaz: 12 tednov otrok – ali odrasel, ki si želi točno določeno pasmo – skrbi za realističnega AI ljubljenčka z vsakodnevnimi potrebami prave živali, starš pa vsak dan vidi, ali skrb zdrži.",
+            "Tudi neuspeh v simulaciji je dober rezultat: družina to izve, preden bi trpel pravi ljubljenček, in preden se zaveže za leta skrbi in stroškov. Ko pa pravi ljubljenček pride domov, želimo, da je PetPrep v pomoč vse njegovo življenje.",
           ],
         },
         {
@@ -1043,28 +1043,28 @@ const sl: Dictionary = {
           heading: "Kako nastaja register živali",
           intro: "[Register živali](page:animals) in aplikacija uporabljata iste podatke. O tem, kaj sme register povedati, odločajo ta pravila:",
           items: [
-            "Vsako dejstvo navaja svoj vir in povezavo nanj. Vire razvrščamo po teži: A — standardi pasem, recenzirani znanstveni članki in smernice veterinarskih združenj; B — svetovalne strani veterinarskih bolnišnic, univerz in nacionalnih organizacij za zaščito živali; C — sekundarni povzetki (enciklopedije, časopisni članki), ki jih uporabimo samo skupaj z virom A ali B.",
+            "Vsako dejstvo navaja svoj vir in povezavo nanj. Vire razvrščamo po zanesljivosti: A – standardi pasem, recenzirani znanstveni članki in smernice veterinarskih združenj; B – svetovalne strani veterinarskih bolnišnic, univerz in nacionalnih organizacij za zaščito živali; C – sekundarni povzetki (enciklopedije, časopisni članki), ki jih uporabimo samo skupaj z virom A ali B.",
             "Kot dejstvo objavimo samo podatek z virom. Vrednosti, ki je noben vir ne podpira, ne objavimo. Kjer se viri razlikujejo, navedemo vsakega z njegovo vrednostjo.",
-            "Pravila igre niso veterinarski nasvet. Kjer igra potrebuje število, ki ga viri ne podajo natančno (na primer dnevni cilj korakov), ga PetPrep določi na podlagi virov in ga prikaže samo v razdelku »Kako to simulira PetPrep«, označenega kot pravilo igre.",
+            "Pravila igre niso veterinarski nasvet. Kjer igra potrebuje število, ki ga viri ne podajo natančno (na primer dnevni cilj korakov), ga PetPrep določi na podlagi virov in ga prikaže samo v razdelku „Kako to simulira PetPrep“, označenem kot pravilo igre.",
             "Podatki o zdravju so samo informativni. Povzemajo, kaj o pasmi pravijo viri, in jih ni pregledal veterinar. Za pravo žival se posvetujte z veterinarjem.",
-            "Standarde pasem povzemamo s svojimi besedami in jih ne prepisujemo, nobene pasme pa ne označimo kot »hipoalergene«.",
-            "Register nastane iz raziskovalnih podatkov PetPrep, istih, ki jih uporablja aplikacija. Ko se vir ali vrednost spremeni, register znova izvozimo, na strani vsake pasme pa je datum zadnje posodobitve. Če opazite napako, nam pišite na hello@petprep.si.",
+            "Standarde pasem povzemamo s svojimi besedami in jih ne prepisujemo, nobene pasme pa ne označimo kot „hipoalergene“.",
+            "Register nastane iz raziskovalnih podatkov PetPrep, ki jih uporablja tudi aplikacija. Ko se vir ali vrednost spremeni, register znova izvozimo, na strani vsake pasme pa je datum zadnje posodobitve. Če opazite napako, nam pišite na hello@petprep.si.",
           ],
         },
-        { type: "callout", title: "Vprašanja o PetPrep?", text: "Na strani s kontakti izberite pravi naslov — za družine, zasebnost, partnerje ali vlagatelje.", tone: "mint" },
+        { type: "callout", title: "Vprašanja o PetPrep?", text: "Na strani s kontakti izberite pravi naslov – za družine, zasebnost, partnerje ali vlagatelje.", tone: "mint" },
         { type: "contact" },
       ],
     },
     curio: {
       meta: {
-        title: "Spoznajte Curia — maskoto PetPrepa",
+        title: "Spoznajte Curia – maskoto PetPrepa",
         description:
           "Curio je maskota PetPrepa: radovedna kockica iz našega logotipa in zvezda naših kratkih videov. Kdo je, v čem se razlikuje od realističnega ljubljenčka v aplikaciji, slike in medijski paket.",
       },
       navLabel: "Spoznajte Curia",
       eyebrow: "Naša maskota",
       title: "Spoznajte Curia.",
-      lead: "Curio je radovedna kockica iz logotipa PetPrep, ki je oživela. V naših kratkih videih igra ljubljenčka, ki pri vratih čaka, da bo nekdo izpolnil obljubo. Je naša maskota — ne ljubljenček, za katerega skrbite v aplikaciji.",
+      lead: "Curio je radovedna kockica iz logotipa PetPrep, ki je oživela. V naših kratkih videih igra ljubljenčka, ki pri vratih čaka, da bo nekdo izpolnil obljubo. Je naša maskota – ne ljubljenček, za katerega skrbite v aplikaciji.",
       hero: { src: "/curio/curio-waving.webp", alt: "Curio, maskota PetPrepa: mehka grafitna kocka z velikima belima očesoma, malinastim nosom in metino ovratnico, ki maha.", width: 720, height: 948 },
       blocks: [
         {
@@ -1072,8 +1072,8 @@ const sl: Dictionary = {
           id: "kdo",
           heading: "Kdo je Curio?",
           paragraphs: [
-            "Curio se je rodil kot znak v našem logotipu: zaobljen grafitni kvadrat z velikima očesoma, ki gledata gor in desno, ter z majhnim malinastim nosom. Po slovensko mu rečemo Radovednež. Oktobra 2026 je dobil kratke roke, čokate nožice in metino ovratnico z okroglo ploščico — in postal lik.",
-            "Curio nima ust. Vse, kar čuti, pokaže z očmi: na široko jih odpre, ko nekdo zašepeta »sprehod?«, ko še nihče ni prišel domov, sta to dve zaspani črti, ko je skleda polna, pa vesela loka.",
+            "Curio se je rodil kot znak v našem logotipu: zaobljen grafitni kvadrat z velikima očesoma, ki gledata gor in desno, ter z majhnim malinastim nosom. Po slovensko mu rečemo Radovednež. Oktobra 2026 je dobil kratke roke, čokate nožice in metino ovratnico z okroglo ploščico – in postal lik.",
+            "Curio nima ust. Vse, kar čuti, pokaže z očmi: široko odprte, ko nekdo zašepeta „sprehod?“; dve zaspani črti, ko še nihče ni prišel domov; veseli loki, ko je skleda polna.",
             "Curio ni ne fant ne punca, ne pes ne mačka. Predstavlja vsakega ljubljenčka, ki vsak dan čaka, da bo nekdo izpolnil obljubo.",
           ],
         },
@@ -1084,7 +1084,7 @@ const sl: Dictionary = {
           columns: 3,
           items: [
             { title: "Ime", text: "Po angleško Curio, po slovensko Radovednež." },
-            { title: "Iz česa je", text: "Mehak grafit, metina ovratnica in malinasta ploščica — barve PetPrepa." },
+            { title: "Iz česa je", text: "Mehak grafit, metina ovratnica in malinasta ploščica – barve PetPrepa." },
             { title: "Govori", text: "Nikoli. Samo z očmi." },
             { title: "Ima rad", text: "Sprehode, polno skledo in otroke, ki se vrnejo tudi 15. dan." },
             { title: "Kje živi", text: "V naših kratkih videih na [TikToku](https://www.tiktok.com/@petprep.si) in [Instagramu](https://www.instagram.com/petprep.si/), @petprep.si." },
@@ -1095,13 +1095,13 @@ const sl: Dictionary = {
           type: "pair",
           id: "ni-ljubljencek",
           heading: "Curio ni ljubljenček v aplikaciji",
-          intro: "V videih Curio igra ljubljenčka, ki potrebuje skrb, ker jo potrebuje vsak ljubljenček. V PetPrepu otroci — in odrasli, ki preizkušajo pasmo — skrbijo za nekaj, kar je resničnemu veliko bližje.",
+          intro: "V videih Curio igra ljubljenčka, ki potrebuje skrb, ker jo potrebuje vsak ljubljenček. V PetPrepu otroci – in odrasli, ki preizkušajo pasmo – skrbijo za ljubljenčka, ki je pravemu veliko bolj podoben.",
           items: [
             {
               src: "/curio/curio-profile-light.webp",
               alt: "Curio, risana maskota, maha na svetlem ozadju.",
               label: "Maskota",
-              title: "Curio — naša maskota",
+              title: "Curio – naša maskota",
               text: "Risani lik za naše videe, nalepke in to stran. Pokaže, za kaj gre v PetPrepu. Posvojiti ga ne morete.",
             },
             {
@@ -1110,7 +1110,7 @@ const sl: Dictionary = {
               label: "V aplikaciji · slika AI",
               tone: "mint",
               title: "Vaš ljubljenček v PetPrepu",
-              text: "Realistična simulacija prave pasme z umetno inteligenco — na primer [labradorca](+breed:labrador_retriever) — z vsakodnevnimi potrebami prave živali: obroki, voda, sprehodi, šteti v pravih korakih, čiščenje in šolanje. Poglejte, [kako deluje](+page:howItWorks).",
+              text: "Realistična simulacija prave pasme, ustvarjena z umetno inteligenco – na primer [labradorca](+breed:labrador_retriever) – z vsakodnevnimi potrebami prave živali: obroki, voda, sprehodi, ki se štejejo v pravih korakih, čiščenje in šolanje. Poglejte, [kako deluje](+page:howItWorks).",
             },
           ],
         },
@@ -1118,12 +1118,12 @@ const sl: Dictionary = {
           type: "gallery",
           id: "galerija",
           heading: "Curio v slikah",
-          intro: "Curio je stiliziran 3D lik, ustvarjen z orodji umetne inteligence po našem lastnem dizajnu. Novi prizori najprej izidejo v naših videih.",
+          intro: "Curio je stiliziran 3D lik, ustvarjen z orodji umetne inteligence po naši lastni zasnovi. Novi prizori najprej izidejo v naših videih.",
           items: [
             { src: "/curio/curio-profile-mint.webp", alt: "Curio maha na metinem ozadju.", caption: "Živijo! Klasično mahanje.", bg: "mint" },
             { src: "/curio/curio-shelf.webp", alt: "Curio stoji na beli polici in maha.", caption: "Na polici, ko na nekoga čaka." },
-            { src: "/curio/curio-character-sheet.webp", alt: "Curio od spredaj, s strani in od zadaj ter štirje izrazi oči.", caption: "Z vseh strani — in kako z očmi pokaže čustva." },
-            { src: "/curio/curio-waving.webp", alt: "Curio na prosojnem ozadju.", caption: "Izrezan — pripravljen za vašo objavo (v medijskem paketu).", bg: "graphite" },
+            { src: "/curio/curio-character-sheet.webp", alt: "Curio od spredaj, s strani in od zadaj ter štirje izrazi oči.", caption: "Z vseh strani – in kako z očmi pokaže čustva." },
+            { src: "/curio/curio-waving.webp", alt: "Curio na prosojnem ozadju.", caption: "Izrezan – pripravljen za vašo objavo (v medijskem paketu).", bg: "graphite" },
           ],
         },
         {
@@ -1145,7 +1145,7 @@ const sl: Dictionary = {
             "Curia uporabite v objavah, člankih in videih o PetPrepu. Za oglase, izdelke ali promocijske predmete nas najprej vprašajte.",
             "Curia pokažite takšnega, kot je: grafitna kocka, beli očesi, malinast nos, metina ovratnica. Ne dodajajte ust, ušes, dlake ali obrvi in mu ne spreminjajte barv ali razmerij.",
             "Curio je maskota PetPrepa. Ne predstavljajte ga kot ljubljenčka v aplikaciji ali kot pravega psa ali mačko.",
-            "Curia ne uporabljajte tako, da bi bilo videti, kot da PetPrep podpira drug izdelek, namen ali osebo.",
+            "Curia ne uporabljajte tako, da bi se zdelo, da PetPrep podpira drug izdelek, namen ali osebo.",
           ],
         },
         {
@@ -1154,8 +1154,8 @@ const sl: Dictionary = {
           heading: "Vprašanja o Curiu",
           items: [
             { q: "Je Curio pes ali mačka?", a: "Ne eno ne drugo. Curio je kockica iz našega logotipa. V videih igra ljubljenčka, a ni nobena živalska vrsta." },
-            { q: "Lahko otrok v aplikaciji skrbi za Curia?", a: "Ne. V aplikaciji vaša družina skrbi za realističnega ljubljenčka prave pasme z enakimi vsakodnevnimi potrebami kot prava žival. Curio se pojavlja samo v naših videih in na spletni strani." },
-            { q: "Zakaj Curio nima ust?", a: "Ker jih nima niti naš logotip. Curio vse pove z očmi — in nikoli na glas ne prosi za priboljške." },
+            { q: "Ali lahko otrok v aplikaciji skrbi za Curia?", a: "Ne. V aplikaciji vaša družina skrbi za realističnega ljubljenčka prave pasme z enakimi vsakodnevnimi potrebami kot prava žival. Curio se pojavlja samo v naših videih in na spletni strani." },
+            { q: "Zakaj Curio nima ust?", a: "Ker jih nima niti naš logotip. Curio vse pove z očmi – in nikoli na glas ne prosi za priboljške." },
             { q: "Kje lahko vidim nove videe s Curiem?", a: "Na TikToku in Instagramu, @petprep.si." },
           ],
         },
@@ -1163,62 +1163,62 @@ const sl: Dictionary = {
     },
     care: {
       meta: {
-        title: "Skrb za ljubljenčka — kaj lahko jedo psi in mačke, z viri | PetPrep",
+        title: "Skrb za ljubljenčka – kaj lahko jedo psi in mačke, z viri | PetPrep",
         description:
-          "Katera hrana je za pse in mačke strupena, tvegana ali v redu — razlog, znaki in kaj storiti, z vsemi viri. Pripravil PetPrep za družine, ki se pripravljajo na žival.",
+          "Katera hrana je za pse in mačke strupena, tvegana ali v redu – razlog, znaki in kaj storiti, z vsemi viri. Pripravil PetPrep za družine, ki se pripravljajo na ljubljenčka.",
       },
       navLabel: "Skrb",
       eyebrow: "Znanje o skrbi",
       title: "Kaj je varno za vašega ljubljenčka?",
       lead:
-        "Jasni odgovori z viri za družine: katera hrana je strupena, katera tvegana in katera v redu kot poslastica — za pse in mačke, druge vrste sledijo. Vsak odgovor ima povezave do virov.",
+        "Jasni odgovori z viri za družine: katera hrana je strupena, katera tvegana in katera v redu kot priboljšek – za pse in mačke, druge vrste sledijo. Vsak odgovor ima povezave do virov.",
       blocks: [{ type: "careHub" }],
     },
     coloring: {
       meta: {
         title: "Brezplačne pobarvanke za tiskanje: psi in mačke | PetPrep",
         description:
-          "Brezplačne pobarvanke za tiskanje: zlati prinašalec, labradorec, border collie, mladiček mešanček, mucek in Curio. PDF A4 in US Letter, vsaka z resnično zanimivostjo o skrbi za žival in virom.",
+          "Brezplačne pobarvanke za tiskanje: zlati prinašalec, labradorec, border collie, mladiček mešanček, mucek in Curio. PDF A4 in US Letter, vsaka z resnično zanimivostjo o skrbi za ljubljenčka in virom.",
       },
       navLabel: "Pobarvanke",
       eyebrow: "Pobarvanke",
       title: "Brezplačne pobarvanke za tiskanje.",
       lead:
-        "Psi, mačke in Curio za barvanje ali prerisovanje — natisnite eno stran ali celo knjižico. Na vsaki strani je resnična zanimivost o skrbi za žival iz vira veterinarjev ali kinoloških zvez, ki jo preberete skupaj.",
+        "Psi, mačke in Curio za barvanje ali prerisovanje – natisnite eno stran ali celo knjižico. Na vsaki strani je resnična zanimivost o skrbi za ljubljenčka, povzeta po virih veterinarjev ali kinoloških zvez – preberite jo skupaj.",
       blocks: [{ type: "coloringHub" }],
     },
     kids: {
       meta: {
-        title: "Za otroke, ki si želijo hišnega ljubljenčka — pobarvanke, Curio in #walkyourpet | PetPrep",
+        title: "Za otroke, ki si želijo hišnega ljubljenčka – pobarvanke, Curio in #walkyourpet | PetPrep",
         description:
-          "Vse, kar ima PetPrep za otroke: brezplačne pobarvanke za tiskanje z resničnimi zanimivostmi o skrbi, maskota Curio in #walkyourpet — za otroke in starše, ki se skupaj pripravljajo na hišnega ljubljenčka.",
+          "Vse, kar ima PetPrep za otroke: brezplačne pobarvanke za tiskanje z resničnimi zanimivostmi o skrbi, maskota Curio in #walkyourpet – za otroke in starše, ki se skupaj pripravljajo na hišnega ljubljenčka.",
       },
       navLabel: "Za otroke",
       eyebrow: "Za otroke",
       title: "Za otroke, ki si želijo hišnega ljubljenčka.",
-      lead: "Pobarvanke za tiskanje, Curio in #walkyourpet — za otroke in starše, ki se skupaj pripravljajo na hišnega ljubljenčka.",
+      lead: "Pobarvanke za tiskanje, Curio in #walkyourpet – za otroke in starše, ki se skupaj pripravljajo na hišnega ljubljenčka.",
       hero: { src: "/curio/curio-waving.webp", alt: "Curio, maskota PetPrepa: mehka grafitna kocka z velikima belima očesoma, malinastim nosom in metino ovratnico, ki maha.", width: 720, height: 948 },
       blocks: [{ type: "kidsHub" }],
     },
     walkyourpet: {
       meta: {
-        title: "#walkyourpet — gibanje, ki ga je sprožil otrok",
+        title: "#walkyourpet – gibanje, ki ga je sprožil otrok",
         description:
-          "»Lahko bi šli walk your pet.« To je rekel otrok, zdaj pa je iz tega nastalo gibanje: družine gredo ven, ker ljubljenček potrebuje sprehod. Kako se je začelo, kaj pomeni v PetPrepu in kako se pridružite.",
+          "„Lahko bi šli walk your pet.“ To je rekel otrok, zdaj pa je iz tega nastalo gibanje: družine gredo ven, ker ljubljenček potrebuje sprehod. Kako se je začelo, kaj pomeni v PetPrepu in kako se pridružite.",
       },
       navLabel: "#walkyourpet",
       eyebrow: "#walkyourpet",
       title: "Walk your pet.",
-      lead: "Te fraze si nismo izmislili mi, ampak otrok. Zdaj je povabilo vsaki družini: pojdite ven, ker ljubljenček potrebuje sprehod — pa naj bo to pravi ljubljenček ali tisti, za katerega skrbite v PetPrepu.",
-      hero: { src: "/walkyourpet/story-01.webp", alt: "Kartica z napisom »Overheard at the founder's house.« Otrok reče »Lahko bi šli walk your pet«, spodaj pa piše »#walkyourpet is a thing now.«", width: 720, height: 1280 },
+      lead: "Te fraze si nismo izmislili mi, ampak otrok. Zdaj je povabilo vsaki družini: pojdite ven, ker ljubljenček potrebuje sprehod – pa naj bo to pravi ljubljenček ali tisti, za katerega skrbite v PetPrepu.",
+      hero: { src: "/walkyourpet/story-01.webp", alt: "Kartica z napisom „Overheard at the founder's house.“ Otrok reče „Lahko bi šli walk your pet“, spodaj pa piše „#walkyourpet is a thing now.“", width: 720, height: 1280 },
       blocks: [
         {
           type: "prose",
           id: "kako-se-je-zacelo",
           heading: "Kako se je začelo",
           paragraphs: [
-            "Oktobra 2026 je bila pri otrocih našega ustanovitelja na obisku prijateljica. Odločali so se, ali bi šli ven, in rekla je, pol po slovensko in pol po angleško: »Lahko bi šli walk your pet.«",
-            "Nihče je ni nagovarjal. Poznala je PetPrep, kjer sprehod s psom šteje le, če otrok res gre ven, in fraza »walk your pet« je zanjo preprosto postala razlog za odhod ven. Tako nam je bila všeč, da smo jo obdržali — v angleščini in za vse jezike.",
+            "Oktobra 2026 je bila pri otrocih našega ustanovitelja na obisku prijateljica. Odločali so se, ali bi šli ven, in rekla je, pol po slovensko in pol po angleško: „Lahko bi šli walk your pet.“",
+            "Nihče ji tega ni narekoval. Poznala je PetPrep, kjer sprehod s psom šteje le, če otrok res gre ven, in fraza „walk your pet“ je zanjo preprosto pomenila razlog za odhod ven. Tako nam je ugajala, da smo jo obdržali – v angleščini, v vseh jezikih.",
             "Resničen pogovor. Resnični otroci.",
           ],
         },
@@ -1226,16 +1226,16 @@ const sl: Dictionary = {
           type: "screens",
           id: "v-aplikaciji",
           heading: "Kaj to pomeni v PetPrepu",
-          intro: "V PetPrepu dnevni sprehod psa sestavljajo otrokovi pravi koraki, ki jih aplikacija z vašim dovoljenjem prebere iz Apple Zdravja ali Health Connect. Sedenje na kavču ne šteje, zato »walk your pet« vedno pomeni odhod ven. Brez GPS-a in brez lokacije — samo koraki.",
+          intro: "V PetPrepu dnevni sprehod psa sestavljajo otrokovi pravi koraki, ki jih aplikacija z vašim dovoljenjem prebere iz aplikacije Apple Zdravje ali Health Connect. Sedenje na kavču ne šteje, zato „walk your pet“ vedno pomeni odhod ven. Brez GPS-a in brez lokacije – samo koraki.",
           items: [{ screen: "hud", caption: "" }],
         },
         {
           type: "steps",
           id: "pridruzite-se",
           heading: "Pridružite se gibanju",
-          intro: "Za to ne potrebujete aplikacije. Del gibanja je vsaka družina, ki gre ven zaradi ljubljenčka — pravega ali tistega, s katerim vadi v aplikaciji.",
+          intro: "Za to ne potrebujete aplikacije. Del gibanja je vsaka družina, ki gre ven zaradi ljubljenčka – pravega ali tistega, s katerim vadi v aplikaciji.",
           items: [
-            { title: "Pojdite ven", text: "Peljite psa na sprehod. Če se o ljubljenčku še odločate, pa pojdite na takšen sprehod, kakršnega bi imeli z njim." },
+            { title: "Pojdite ven", text: "Peljite psa na sprehod. Če se o ljubljenčku še odločate, pojdite na takšen sprehod, kakršnega bi imeli z njim." },
             { title: "Fotografirajte trenutek", text: "Čevlji pri vratih, povodec, pot, tačke na travi. Brez obrazov in brez imen." },
             { title: "Delite ga", text: "Objavite ga s #walkyourpet in na Instagramu ali TikToku označite @petprep.si. Z vašim dovoljenjem bomo najlepše trenutke delili tudi tukaj in na naših profilih." },
           ],
@@ -1249,8 +1249,8 @@ const sl: Dictionary = {
             "Objavljajo starši, ne otroci. Kaj bo objavljeno na spletu, odloči samo starš.",
             "Nikoli ne objavljamo obrazov, imen, šol ali naslovov otrok, prav tako ne otrok iz drugih družin.",
             "Ponovno objavimo samo z dovoljenjem starša, objavo pa umaknemo, kadar koli nas za to prosite.",
-            "Citati otrok so vedno resnični. Ničesar si ne izmislimo in ne »izboljšujemo« tega, kar je otrok rekel.",
-            "To je povabilo, ne obveznost. Brez štetja zaporednih dni in brez pritiska — samo dober razlog za odhod ven.",
+            "Citati otrok so vedno resnični. Ničesar si ne izmislimo in ne „izboljšujemo“ tega, kar je otrok rekel.",
+            "To je povabilo, ne obveznost. Brez štetja zaporednih dni in brez pritiska – samo dober razlog za odhod ven.",
           ],
         },
         {
@@ -1266,8 +1266,8 @@ const sl: Dictionary = {
           items: [
             { q: "Ali za sodelovanje potrebujem PetPrep?", a: "Ne. #walkyourpet lahko uporablja vsak, ki gre ven zaradi ljubljenčka. Fraza se je rodila ob PetPrepu, kjer sprehod psa v simulaciji šteje samo v pravih korakih." },
             { q: "Ali to v PetPrepu velja tudi za mačke?", a: "Ne v obliki sprehoda. Mačke ne hodijo na sprehode, zato v PetPrepu za mačko skrbite z igro, ne s koraki. Sprehodi so namenjeni psom." },
-            { q: "Zakaj je fraza v angleščini?", a: "Ker jo je otrok tako izrekel — v angleščini, sredi slovenskega stavka. Zato jo puščamo enako v vseh jezikih." },
-            { q: "Ali boste objavili fotografije mojega otroka?", a: "Objavimo samo tisto, kar delite sami in nam dovolite ponovno objaviti — nikoli pa otrokovega obraza ali imena. Če želite, da kaj umaknemo, nam pišite na hello@petprep.si." },
+            { q: "Zakaj je fraza v angleščini?", a: "Ker jo je otrok tako izrekel – v angleščini, sredi slovenskega stavka. Otroci povsod radi vmešajo angleške besede, zato jo puščamo enako v vseh jezikih." },
+            { q: "Ali boste objavili fotografije mojega otroka?", a: "Objavimo samo tisto, kar delite sami in nam dovolite ponovno objaviti – nikoli pa otrokovega obraza ali imena. Če želite, da kaj umaknemo, nam pišite na hello@petprep.si." },
           ],
         },
       ],
