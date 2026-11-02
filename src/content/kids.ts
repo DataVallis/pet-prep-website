@@ -112,4 +112,13 @@ export const kidsCopy: Record<Locale, KidsCopy> = {
       { page: "walkyourpet", title: "#walkyourpet", text: "Gibanje, ki ga je začel otrok: ven na sprehod.", image: null },
     ],
   },
+  sv: {
+    menu: "För barn",
+    all: "Allt för barn",
+    items: [
+      { page: "coloring", title: "Målarbilder", text: "12 gratis målarbilder att skriva ut, var och en med en faktauppgift om djurskötsel.", image: coloringThumb },
+      { page: "curio", title: "Möt Curio", text: "Vår maskot och dess korta videor.", image: curioThumb },
+      { page: "walkyourpet", title: "#walkyourpet", text: "Rörelsen som ett barn startade: gå ut på promenad.", image: null },
+    ],
+  },
 };
