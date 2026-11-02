@@ -496,7 +496,58 @@ const cs: CareCopy = {
   breadcrumb: "Péče",
 };
 
-const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es, it, pt, nl, pl, cs };
+/** Croatian plural: 1, 21, 31… (not 11) / 2–4, 22–24… (not 12–14) / otherwise. Food counts are always whole numbers. */
+function hrForm(n: number, one: string, few: string, many: string): string {
+  const m10 = n % 10, m100 = n % 100;
+  if (m10 === 1 && m100 !== 11) return one;
+  return m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14) ? few : many;
+}
+
+const hr: CareCopy = {
+  speciesWords: {
+    // `plural` in the accusative ("za pse"); `pet` in the locative ("brine se o psu").
+    dog: { question: "Što smiju jesti psi?", plural: "pse", pet: "psu" },
+    cat: { question: "Što smiju jesti mačke?", plural: "mačke", pet: "mački" },
+  },
+  levels: {
+    toxic: { label: "Otrovno – nazovi veterinara", heading: "Otrovno: nikad ne davati" },
+    dangerous: { label: "Opasno", heading: "Opasno" },
+    not_recommended: { label: "Ne preporučuje se", heading: "Bolje ne" },
+    small_amounts: { label: "U malim količinama u redu", heading: "U redu kao povremena poslastica" },
+  },
+  hub: {
+    foodsLead: (w) => `Sigurne, rizične i otrovne namirnice za ${w.plural} – za svaku su navedeni razlog, znakovi na koje treba paziti i izvori.`,
+    count: (n) => `${n} ${hrForm(n, "namirnica", "namirnice", "namirnica")}`,
+    open: "Otvori popis",
+  },
+  species: {
+    metaTitle: (w) => `${w.question} Sigurne i otrovne namirnice s izvorima – PetPrep`,
+    metaDescription: (w, n) => `Provjerili smo ${n} ${hrForm(n, "namirnicu", "namirnice", "namirnica")} za ${w.plural}: što je otrovno, što rizično, a što u redu kao poslastica – razlog, znakovi i što učiniti, s poveznicom na svaki izvor.`,
+    eyebrow: "Njega · hrana",
+    lead: (w) => `Koje su namirnice za ${w.plural} otrovne, koje rizične, a koje u redu – razvrstane prema riziku, jednostavno objašnjene, s poveznicom na svaki izvor.`,
+    emergencyTitle: "Je li ljubimac pojeo nešto otrovno?",
+    emergencyText: "Odmah se obrati veterinaru ili telefonskoj liniji za otrovanja životinja. Zapiši što je ljubimac pojeo i koliko – ne čekaj da se pojave znakovi.",
+  },
+  food: {
+    why: "Zašto",
+    signs: "Znakovi na koje treba paziti",
+    whatToDo: "Što učiniti",
+    serving: "Kako ponuditi",
+    forKids: "Za djecu",
+    faq: "Pitanja i odgovori",
+    related: "Srodne namirnice",
+    sources: "Izvori",
+    updated: "Ažurirano",
+    notVetReviewed: "Opće informacije iz izvora navedenih u nastavku – nije ih pregledao veterinar i ne zamjenjuju veterinarski savjet. U nedoumici nazovi veterinara.",
+    otherSpecies: "Druge životinje",
+    simulates: "Kako djeca to vježbaju u PetPrepu",
+    simulatesText: (w) => `U PetPrepu se dijete brine o ${w.pet} u realističnoj simulaciji: obroci u pravo vrijeme, voda, šetnje i njega. Znati koja se hrana smije bez opasnosti podijeliti sa životinjom dio je spremnosti za pravog kućnog ljubimca.`,
+    backTo: "Sve namirnice",
+  },
+  breadcrumb: "Njega",
+};
+
+const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es, it, pt, nl, pl, cs, hr };
 export const getCareCopy = (l: Locale) => copies[l];
 
 export function speciesWords(l: Locale, speciesId: string): SpeciesWords {

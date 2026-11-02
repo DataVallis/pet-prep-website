@@ -1,0 +1,880 @@
+{
+  "species": {
+    "dog": {
+      "name": {
+        "one": "Pas",
+        "many": "Psi"
+      },
+      "slug": "psi",
+      "free_plan": "Mješanac"
+    },
+    "cat": {
+      "name": {
+        "one": "Mačka",
+        "many": "Mačke"
+      },
+      "slug": "macke",
+      "free_plan": "Domaća mačka"
+    }
+  },
+  "breeds": {
+    "border_collie": {
+      "name": "Border collie",
+      "slug": "border-collie",
+      "synonyms": [
+        "Border koli",
+        "Bordercollie",
+        "Koli"
+      ],
+      "colours": {
+        "black-white": "Crno-bijela",
+        "tricolour": "Trobojna (crna, bijela i palež)",
+        "red-white": "Crveno-bijela",
+        "blue-white": "Plavo-bijela",
+        "blue-merle-white": "Plavi merle s bijelim",
+        "red-merle-white": "Crveni merle s bijelim",
+        "sable-white": "Sobolj s bijelim"
+      }
+    },
+    "labrador_retriever": {
+      "name": "Labrador retriver",
+      "slug": "labrador-retriver",
+      "synonyms": [
+        "Labrador",
+        "Labrador retriever",
+        "Labradorac",
+        "Lab"
+      ]
+    },
+    "golden_retriever": {
+      "name": "Zlatni retriver",
+      "slug": "zlatni-retriver",
+      "synonyms": [
+        "Golden retriver",
+        "Golden retriever",
+        "Golden",
+        "Zlatni retriever"
+      ]
+    },
+    "french_bulldog": {
+      "name": "Francuski buldog",
+      "slug": "francuski-buldog",
+      "synonyms": [
+        "Francuski buldožić",
+        "Frenchie",
+        "French bulldog",
+        "Bouledogue français"
+      ]
+    },
+    "german_shepherd": {
+      "name": "Njemački ovčar",
+      "slug": "njemacki-ovcar",
+      "synonyms": [
+        "Vučjak",
+        "Ovčar",
+        "Deutscher Schäferhund",
+        "German shepherd"
+      ]
+    },
+    "cavalier_king_charles_spaniel": {
+      "name": "Cavalier King Charles španijel",
+      "slug": "cavalier-king-charles-spanijel",
+      "synonyms": [
+        "Kavalir King Charles španijel",
+        "Cavalier",
+        "Cavalier King Charles spaniel",
+        "CKCS"
+      ]
+    },
+    "beagle": {
+      "name": "Bigl",
+      "slug": "bigl",
+      "synonyms": [
+        "Beagle",
+        "Bigl gonič"
+      ]
+    },
+    "standard_poodle": {
+      "name": "Velika pudla",
+      "slug": "velika-pudla",
+      "synonyms": [
+        "Pudla",
+        "Kraljevska pudla",
+        "Standardna pudla",
+        "Standard poodle",
+        "Caniche"
+      ]
+    },
+    "dachshund": {
+      "name": "Jazavčar",
+      "slug": "jazavcar",
+      "synonyms": [
+        "Standardni jazavčar",
+        "Kratkodlaki jazavčar",
+        "Dachshund",
+        "Dackel",
+        "Teckel"
+      ]
+    },
+    "australian_shepherd": {
+      "name": "Australski ovčar",
+      "slug": "australski-ovcar",
+      "synonyms": [
+        "Aussie",
+        "Australian shepherd"
+      ]
+    },
+    "havanese": {
+      "name": "Havanski bišon",
+      "slug": "havanski-bison",
+      "synonyms": [
+        "Havanez",
+        "Havanski psić",
+        "Havanese",
+        "Bichon havanais"
+      ]
+    },
+    "west_highland_white_terrier": {
+      "name": "West Highland white terijer",
+      "slug": "west-highland-white-terijer",
+      "synonyms": [
+        "Westie",
+        "Vesti",
+        "West Highland terijer",
+        "West highland white terrier"
+      ]
+    },
+    "bernese_mountain_dog": {
+      "name": "Bernski planinski pas",
+      "slug": "bernski-planinski-pas",
+      "synonyms": [
+        "Bernski pastirski pas",
+        "Berner",
+        "Berner Sennenhund",
+        "Bernese mountain dog"
+      ]
+    },
+    "siberian_husky": {
+      "name": "Sibirski haski",
+      "slug": "sibirski-haski",
+      "synonyms": [
+        "Haski",
+        "Husky",
+        "Sibirski husky",
+        "Siberian husky"
+      ]
+    },
+    "rottweiler": {
+      "name": "Rotvajler",
+      "slug": "rotvajler",
+      "synonyms": [
+        "Rottweiler",
+        "Rotvailer",
+        "Roti"
+      ]
+    },
+    "bulldog": {
+      "name": "Engleski buldog",
+      "slug": "engleski-buldog",
+      "synonyms": [
+        "Buldog",
+        "English bulldog",
+        "British bulldog"
+      ]
+    },
+    "german_shorthaired_pointer": {
+      "name": "Njemački kratkodlaki ptičar",
+      "slug": "njemacki-kratkodlaki-pticar",
+      "synonyms": [
+        "Kratkodlaki ptičar",
+        "Kurzhaar",
+        "Deutsch Kurzhaar",
+        "German shorthaired pointer"
+      ]
+    },
+    "yorkshire_terrier": {
+      "name": "Jorkširski terijer",
+      "slug": "jorksirski-terijer",
+      "synonyms": [
+        "Jorki",
+        "Jork",
+        "Yorkshire terijer",
+        "Yorkie",
+        "Yorkshire terrier"
+      ]
+    },
+    "cane_corso": {
+      "name": "Cane corso",
+      "slug": "cane-corso",
+      "synonyms": [
+        "Cane corso italiano",
+        "Talijanski korso pas",
+        "Korso",
+        "Corso"
+      ]
+    },
+    "pembroke_welsh_corgi": {
+      "name": "Welsh corgi pembroke",
+      "slug": "welsh-corgi-pembroke",
+      "synonyms": [
+        "Korgi",
+        "Corgi",
+        "Velški korgi pembroke",
+        "Pembroke Welsh corgi"
+      ]
+    },
+    "dobermann": {
+      "name": "Doberman",
+      "slug": "doberman",
+      "synonyms": [
+        "Dobermann",
+        "Dobermanov pinč",
+        "Doberman pinscher"
+      ]
+    },
+    "boxer": {
+      "name": "Njemački bokser",
+      "slug": "njemacki-bokser",
+      "synonyms": [
+        "Bokser",
+        "Boxer",
+        "Deutscher Boxer"
+      ]
+    },
+    "miniature_schnauzer": {
+      "name": "Patuljasti šnaucer",
+      "slug": "patuljasti-snaucer",
+      "synonyms": [
+        "Šnaucer",
+        "Mini šnaucer",
+        "Zwergschnauzer",
+        "Miniature schnauzer"
+      ]
+    },
+    "shih_tzu": {
+      "name": "Shih tzu",
+      "slug": "shih-tzu",
+      "synonyms": [
+        "Ši cu",
+        "Šicu",
+        "Shih-tzu",
+        "Shitzu"
+      ]
+    },
+    "great_dane": {
+      "name": "Njemačka doga",
+      "slug": "njemacka-doga",
+      "synonyms": [
+        "Doga",
+        "Deutsche Dogge",
+        "Great Dane"
+      ]
+    },
+    "pomeranian": {
+      "name": "Pomeranac",
+      "slug": "pomeranac",
+      "synonyms": [
+        "Patuljasti špic",
+        "Njemački patuljasti špic",
+        "Pomeranian",
+        "Zwergspitz",
+        "Pom"
+      ]
+    },
+    "boston_terrier": {
+      "name": "Bostonski terijer",
+      "slug": "bostonski-terijer",
+      "synonyms": [
+        "Boston",
+        "Boston terijer",
+        "Boston terrier"
+      ]
+    },
+    "miniature_american_shepherd": {
+      "name": "Minijaturni američki ovčar",
+      "slug": "minijaturni-americki-ovcar",
+      "synonyms": [
+        "Mini aussie",
+        "Minijaturni australski ovčar",
+        "Miniature American shepherd"
+      ]
+    },
+    "chihuahua": {
+      "name": "Čivava",
+      "slug": "civava",
+      "synonyms": [
+        "Chihuahua",
+        "Kratkodlaka čivava",
+        "Chihuahueño"
+      ]
+    },
+    "english_springer_spaniel": {
+      "name": "Engleski springer španijel",
+      "slug": "engleski-springer-spanijel",
+      "synonyms": [
+        "Springer španijel",
+        "Springer",
+        "Springer spaniel",
+        "English springer spaniel"
+      ]
+    },
+    "shetland_sheepdog": {
+      "name": "Šetlandski ovčar",
+      "slug": "setlandski-ovcar",
+      "synonyms": [
+        "Šelti",
+        "Sheltie",
+        "Shetland sheepdog"
+      ]
+    },
+    "brittany": {
+      "name": "Bretonski španijel",
+      "slug": "bretonski-spanijel",
+      "synonyms": [
+        "Bretonski ptičar",
+        "Épagneul breton",
+        "Epagneul breton",
+        "Brittany"
+      ]
+    },
+    "american_cocker_spaniel": {
+      "name": "Američki koker španijel",
+      "slug": "americki-koker-spanijel",
+      "synonyms": [
+        "Američki koker",
+        "American cocker spaniel"
+      ]
+    },
+    "belgian_malinois": {
+      "name": "Belgijski ovčar malinois",
+      "slug": "belgijski-ovcar-malinois",
+      "synonyms": [
+        "Malinois",
+        "Malinoa",
+        "Belgijski ovčar",
+        "Belgian malinois"
+      ]
+    },
+    "basset_hound": {
+      "name": "Baset",
+      "slug": "baset",
+      "synonyms": [
+        "Basset hound",
+        "Baset haund",
+        "Basset"
+      ]
+    },
+    "hungarian_vizsla": {
+      "name": "Mađarska vižla",
+      "slug": "madarska-vizla",
+      "synonyms": [
+        "Mađarski kratkodlaki ptičar",
+        "Vižla",
+        "Vizsla",
+        "Magyar vizsla"
+      ]
+    },
+    "english_cocker_spaniel": {
+      "name": "Engleski koker španijel",
+      "slug": "engleski-koker-spanijel",
+      "synonyms": [
+        "Koker španijel",
+        "Koker",
+        "Cocker spaniel",
+        "English cocker spaniel"
+      ]
+    },
+    "maltese": {
+      "name": "Maltezer",
+      "slug": "maltezer",
+      "synonyms": [
+        "Malteški bišon",
+        "Maltezer bišon",
+        "Maltese",
+        "Bichon maltais"
+      ]
+    },
+    "pug": {
+      "name": "Mops",
+      "slug": "mops",
+      "synonyms": [
+        "Mopsić",
+        "Pug",
+        "Carlin"
+      ]
+    },
+    "rough_collie": {
+      "name": "Dugodlaki škotski ovčar",
+      "slug": "dugodlaki-skotski-ovcar",
+      "synonyms": [
+        "Škotski ovčar",
+        "Koli",
+        "Collie",
+        "Lassie",
+        "Rough collie"
+      ]
+    },
+    "mastiff": {
+      "name": "Mastif",
+      "slug": "mastif",
+      "synonyms": [
+        "Engleski mastif",
+        "Mastiff",
+        "English mastiff"
+      ]
+    },
+    "shiba_inu": {
+      "name": "Shiba inu",
+      "slug": "shiba-inu",
+      "synonyms": [
+        "Šiba inu",
+        "Šiba",
+        "Shiba"
+      ]
+    },
+    "rhodesian_ridgeback": {
+      "name": "Rodezijski ridgeback",
+      "slug": "rodezijski-ridgeback",
+      "synonyms": [
+        "Ridgeback",
+        "Ridžbek",
+        "Rhodesian ridgeback",
+        "Afrički lavlji pas"
+      ]
+    },
+    "papillon": {
+      "name": "Papillon",
+      "slug": "papillon",
+      "synonyms": [
+        "Kontinentalni patuljasti španijel",
+        "Papijon",
+        "Phalène",
+        "Continental toy spaniel"
+      ]
+    },
+    "portuguese_water_dog": {
+      "name": "Portugalski vodeni pas",
+      "slug": "portugalski-vodeni-pas",
+      "synonyms": [
+        "Cão de água português",
+        "Portuguese water dog",
+        "PWD"
+      ]
+    },
+    "bichon_frise": {
+      "name": "Kovrčavi bišon",
+      "slug": "kovrcavi-bison",
+      "synonyms": [
+        "Bišon",
+        "Bichon frisé",
+        "Bichon frise",
+        "Bichon"
+      ]
+    },
+    "newfoundland": {
+      "name": "Novofundlandski pas",
+      "slug": "novofundlandski-pas",
+      "synonyms": [
+        "Njufaundlender",
+        "Newfoundland",
+        "Newfie"
+      ]
+    },
+    "dalmatian": {
+      "name": "Dalmatinski pas",
+      "slug": "dalmatinski-pas",
+      "synonyms": [
+        "Dalmatiner",
+        "Dalmatinac",
+        "Dalmatian"
+      ]
+    },
+    "australian_cattle_dog": {
+      "name": "Australski govedarski pas",
+      "slug": "australski-govedarski-pas",
+      "synonyms": [
+        "Blue heeler",
+        "Red heeler",
+        "Heeler",
+        "Australian cattle dog"
+      ]
+    },
+    "whippet": {
+      "name": "Whippet",
+      "slug": "whippet",
+      "synonyms": [
+        "Vipet",
+        "Engleski mali hrt",
+        "Snap dog"
+      ]
+    },
+    "wirehaired_pointing_griffon": {
+      "name": "Francuski oštrodlaki ptičar Korthals",
+      "slug": "francuski-ostrodlaki-pticar-korthals",
+      "synonyms": [
+        "Korthals",
+        "Korthalsov grifon",
+        "Griffon korthals",
+        "Wirehaired pointing griffon"
+      ]
+    },
+    "chesapeake_bay_retriever": {
+      "name": "Chesapeake Bay retriver",
+      "slug": "chesapeake-bay-retriver",
+      "synonyms": [
+        "Chessie",
+        "Chesapeake",
+        "Chesapeake Bay retriever"
+      ]
+    },
+    "samoyed": {
+      "name": "Samojed",
+      "slug": "samojed",
+      "synonyms": [
+        "Samojedski pas",
+        "Samoyed",
+        "Sammy"
+      ]
+    },
+    "scottish_terrier": {
+      "name": "Škotski terijer",
+      "slug": "skotski-terijer",
+      "synonyms": [
+        "Scottie",
+        "Scottish terrier",
+        "Aberdeenski terijer"
+      ]
+    },
+    "weimaraner": {
+      "name": "Vajmarski ptičar",
+      "slug": "vajmarski-pticar",
+      "synonyms": [
+        "Vajmaraner",
+        "Weimaraner",
+        "Weimarski ptičar",
+        "Weim"
+      ]
+    },
+    "italian_greyhound": {
+      "name": "Talijanski hrtić",
+      "slug": "talijanski-hrtic",
+      "synonyms": [
+        "Hrtić",
+        "Piccolo levriero italiano",
+        "Italian greyhound",
+        "Iggy"
+      ]
+    },
+    "giant_schnauzer": {
+      "name": "Veliki šnaucer",
+      "slug": "veliki-snaucer",
+      "synonyms": [
+        "Divovski šnaucer",
+        "Riesenschnauzer",
+        "Giant schnauzer"
+      ]
+    },
+    "bloodhound": {
+      "name": "Pas svetog Huberta",
+      "slug": "pas-svetog-huberta",
+      "synonyms": [
+        "Bloodhound",
+        "Bladhaund",
+        "Chien de Saint-Hubert"
+      ]
+    },
+    "akita": {
+      "name": "Američka akita",
+      "slug": "americka-akita",
+      "synonyms": [
+        "Akita",
+        "American akita"
+      ]
+    },
+    "cardigan_welsh_corgi": {
+      "name": "Welsh corgi cardigan",
+      "slug": "welsh-corgi-cardigan",
+      "synonyms": [
+        "Korgi",
+        "Corgi",
+        "Velški korgi cardigan",
+        "Cardigan Welsh corgi"
+      ]
+    },
+    "german_wirehaired_pointer": {
+      "name": "Njemački oštrodlaki ptičar",
+      "slug": "njemacki-ostrodlaki-pticar",
+      "synonyms": [
+        "Oštrodlaki ptičar",
+        "Drahthaar",
+        "Deutsch Drahthaar",
+        "German wirehaired pointer"
+      ]
+    },
+    "saint_bernard": {
+      "name": "Bernardinac",
+      "slug": "bernardinac",
+      "synonyms": [
+        "Pas svetog Bernarda",
+        "St. Bernard",
+        "Bernhardiner",
+        "Saint Bernard"
+      ]
+    },
+    "staffordshire_bull_terrier": {
+      "name": "Stafordski bulterijer",
+      "slug": "stafordski-bulterijer",
+      "synonyms": [
+        "Staford",
+        "Staffordshire bull terijer",
+        "Staffie",
+        "Staffordshire bull terrier"
+      ]
+    },
+    "airedale_terrier": {
+      "name": "Airedale terijer",
+      "slug": "airedale-terijer",
+      "synonyms": [
+        "Erdel terijer",
+        "Airedale terrier",
+        "Airedale",
+        "Kralj terijera"
+      ]
+    },
+    "russell_terrier": {
+      "name": "Jack Russell terijer",
+      "slug": "jack-russell-terijer",
+      "synonyms": [
+        "Jack russell",
+        "Jack russel",
+        "Džek rasel terijer",
+        "JRT"
+      ]
+    },
+    "bullmastiff": {
+      "name": "Bulmastif",
+      "slug": "bulmastif",
+      "synonyms": [
+        "Bullmastiff",
+        "Bull mastiff"
+      ]
+    },
+    "chinese_crested": {
+      "name": "Kineski kukmasti pas",
+      "slug": "kineski-kukmasti-pas",
+      "synonyms": [
+        "Kineski goli pas",
+        "Kukmasti pas",
+        "Powder puff",
+        "Chinese crested"
+      ]
+    },
+    "nova_scotia_duck_tolling_retriever": {
+      "name": "Novoškotski retriver",
+      "slug": "novoskotski-retriver",
+      "synonyms": [
+        "Toller",
+        "Novoškotski patkarski retriver",
+        "Nova Scotia duck tolling retriever",
+        "NSDTR"
+      ]
+    },
+    "cairn_terrier": {
+      "name": "Cairn terijer",
+      "slug": "cairn-terijer",
+      "synonyms": [
+        "Cairn",
+        "Kern terijer",
+        "Cairn terrier"
+      ]
+    },
+    "bull_terrier": {
+      "name": "Bulterijer",
+      "slug": "bulterijer",
+      "synonyms": [
+        "Engleski bulterijer",
+        "Bull terrier",
+        "Bully"
+      ]
+    },
+    "miniature_pinscher": {
+      "name": "Patuljasti pinč",
+      "slug": "patuljasti-pinc",
+      "synonyms": [
+        "Mini pinč",
+        "Pinč",
+        "Min pin",
+        "Zwergpinscher"
+      ]
+    },
+    "pyrenean_mountain_dog": {
+      "name": "Pirinejski planinski pas",
+      "slug": "pirinejski-planinski-pas",
+      "synonyms": [
+        "Pirinejski pas",
+        "Patou",
+        "Great Pyrenees",
+        "Chien de montagne des Pyrénées"
+      ]
+    },
+    "soft_coated_wheaten_terrier": {
+      "name": "Irski mekodlaki pšenični terijer",
+      "slug": "irski-mekodlaki-psenicni-terijer",
+      "synonyms": [
+        "Pšenični terijer",
+        "Wheaten terijer",
+        "Wheaten",
+        "Soft coated wheaten terrier"
+      ]
+    },
+    "irish_wolfhound": {
+      "name": "Irski vučji hrt",
+      "slug": "irski-vucji-hrt",
+      "synonyms": [
+        "Vučji hrt",
+        "Irish wolfhound",
+        "Cú faoil"
+      ]
+    },
+    "american_staffordshire_terrier": {
+      "name": "Američki stafordski terijer",
+      "slug": "americki-stafordski-terijer",
+      "synonyms": [
+        "Amstaf",
+        "Amstaff",
+        "Am staff",
+        "American staffordshire terrier"
+      ]
+    },
+    "lagotto_romagnolo": {
+      "name": "Lagotto romagnolo",
+      "slug": "lagotto-romagnolo",
+      "synonyms": [
+        "Lagotto",
+        "Romanjski vodeni pas",
+        "Pas za tartufe",
+        "Tartufar"
+      ]
+    },
+    "alaskan_malamute": {
+      "name": "Aljaški malamut",
+      "slug": "aljaski-malamut",
+      "synonyms": [
+        "Malamut",
+        "Malamute",
+        "Alaskan malamute"
+      ]
+    },
+    "basenji": {
+      "name": "Basenji",
+      "slug": "basenji",
+      "synonyms": [
+        "Basendži",
+        "Pas koji ne laje",
+        "Kongoanski terijer"
+      ]
+    },
+    "maine_coon": {
+      "name": "Maine coon",
+      "slug": "maine-coon",
+      "synonyms": [
+        "Mejn kun",
+        "Main coon",
+        "Mačka maine coon",
+        "Rakunska mačka"
+      ]
+    },
+    "british_shorthair": {
+      "name": "Britanska kratkodlaka mačka",
+      "slug": "britanska-kratkodlaka-macka",
+      "synonyms": [
+        "Britanska mačka",
+        "Britanka",
+        "British shorthair",
+        "British blue"
+      ]
+    },
+    "ragdoll": {
+      "name": "Ragdoll",
+      "slug": "ragdoll",
+      "synonyms": [
+        "Mačka ragdoll",
+        "Regdol",
+        "Rag doll"
+      ]
+    },
+    "siberian_cat": {
+      "name": "Sibirska mačka",
+      "slug": "sibirska-macka",
+      "synonyms": [
+        "Sibirka",
+        "Sibirska šumska mačka",
+        "Siberian cat"
+      ]
+    },
+    "norwegian_forest_cat": {
+      "name": "Norveška šumska mačka",
+      "slug": "norveska-sumska-macka",
+      "synonyms": [
+        "Norveška mačka",
+        "Skogkatt",
+        "Norwegian forest cat"
+      ]
+    },
+    "bengal": {
+      "name": "Bengalska mačka",
+      "slug": "bengalska-macka",
+      "synonyms": [
+        "Bengalka",
+        "Bengal",
+        "Bengal cat"
+      ]
+    }
+  },
+  "suitability_labels": {
+    "suits_title": "Dobar izbor:",
+    "consider_title": "Imaj na umu:",
+    "tags": {
+      "active_family": "za aktivnu obitelj",
+      "apartment": "za život u stanu",
+      "back_spine": "dugačka leđa – problemi s kralježnicom, izbjegavaj skakanje",
+      "brachycephalic_breathing": "plosnato lice – teže diše i loše podnosi vrućinu",
+      "chases_small_pets": "jak lovački nagon – može juriti manje životinje",
+      "chews_when_bored": "kad mu je dosadno, grize stvari",
+      "children": "za obitelj s djecom",
+      "cold_sensitive": "tanka dlaka – lako mu je hladno",
+      "drools": "slini – imaj krpicu pri ruci",
+      "experienced_owner": "snažan pas – treba iskusnog vlasnika",
+      "eyelid_problems": "kapci i oči – pitaj za pregled očiju",
+      "family_pet": "za obiteljski život",
+      "first_time_owner": "za vlasnike početnike",
+      "food_motivated_weight": "obožava hranu – pazi na težinu",
+      "fragile_older_children": "krhke kosti – bolje uz stariju djecu",
+      "frequent_grooming": "potrebno je četkanje nekoliko puta tjedno",
+      "heart_and_spine": "srce i kralježnica – pitaj za zdravstvene testove",
+      "heat_sensitive": "gusta dlaka – loše podnosi vrućinu",
+      "hips_hind_legs": "kukovi i stražnje noge – pitaj za zdravlje zglobova",
+      "independent_experienced_owner": "samostalan i tvrdoglav – najbolje uz iskusnog vlasnika",
+      "large_home": "za veliku kuću s vrtom",
+      "lively_older_children": "živahan pas – bolje uz stariju djecu",
+      "long_daily_exercise": "svaki dan treba puno kretanja",
+      "low_shedding": "za dom u kojem želiš manje dlaka",
+      "may_herd_children": "u igri može „tjerati“ djecu kao stado",
+      "needs_company": "voli društvo – najbolje ako je netko kod kuće veći dio dana",
+      "needs_mental_stimulation": "treba zadatke za glavu",
+      "not_for_small_children": "velik pas – nije za dom s malom djecom",
+      "often_alone": "za obitelj koja je nekoliko sati izvan kuće",
+      "older_children": "malen pas – bolje uz stariju djecu",
+      "older_owners": "za starije vlasnike",
+      "other_pets": "za dom s drugim životinjama",
+      "secure_fencing": "lako pobjegne – treba čvrstu i visoku ogradu",
+      "sensitive_older_children": "osjetljiv pas – bolje uz stariju djecu",
+      "sensitive_skin": "osjetljiva koža – sklona svrbežu i upalama",
+      "sheds": "linja se",
+      "short_muzzle_breathing": "kraća njuška – može teže disati",
+      "shorter_lifespan": "kraći životni vijek",
+      "small_children": "za obitelj s malom djecom",
+      "sun_protection": "gola koža – treba zaštitu od sunca"
+    }
+  }
+}
