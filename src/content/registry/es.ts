@@ -31,14 +31,14 @@ const es: RegistryCopy = {
     practise: "En PetPrep, un niño practica precisamente estos hábitos (pasos, comidas, cuidados) antes de que llegue a casa la mascota real.",
   },
   hub: {
-    title: "Conoce al animal antes de que llegue a casa.",
+    title: "Conoce a tu mascota antes de que llegue a casa.",
     intro:
       "Lo que de verdad necesita cada especie y cada raza de PetPrep, según clubes caninos, registros felinos, organizaciones veterinarias y estudios, con enlace a cada fuente. Y además, las reglas que usa PetPrep para simularlo.",
     breedCount: (n) => `${n} ${s(n, "raza", "razas")} en el registro`,
     open: "Ver razas",
     openA11y: (many) => `Ver razas: ${lc(many)}`,
     freePlan: (name, activity) => `Plan gratuito: ${lc(name)} (${activity} en la edad adulta). No tiene página de raza.`,
-    otherSpecies: "Hay más animales previstos.",
+    otherSpecies: "Hay más especies previstas.",
     methodTitle: "Cómo construimos este registro",
     method: [
       "Cada dato procede de una fuente con nombre (clubes caninos, registros felinos, organizaciones y asociaciones veterinarias y estudios revisados por pares) y enlaza a ella. Los estándares de raza los resumimos con nuestras propias palabras.",
@@ -237,7 +237,7 @@ const es: RegistryCopy = {
           ? "Aprende las órdenes tan rápido como el perro mestizo del plan gratuito."
           : `Aprende las órdenes ${f.num(p.multiplier)} veces más rápido que el perro mestizo del plan gratuito.`,
     senior_share: (p, f) => `Pasa a ser sénior en el mes ${p.months} (${f.num(p.months / 12, 1)} ${s(p.months / 12, "año", "años")}): el último cuarto de la esperanza de vida prevista de la raza.`,
-    walk_sensor: () => "Los paseos cuentan pasos reales de Apple Health o Health Connect (con permiso, solo lectura) y del sensor de movimiento del móvil, sin GPS.",
+    walk_sensor: () => "Los paseos cuentan pasos reales de Apple Salud o Health Connect (con permiso, solo lectura) y del sensor de movimiento del móvil, sin GPS.",
     play_instead_of_steps: (p, f) =>
       `Sin paseos: un gato adulto necesita ${p.sessions} ${s(p.sessions, "sesión", "sesiones")} de juego al día con una caña de juego, con al menos ${f.num(p.gap_minutes / 60)} ${s(p.gap_minutes / 60, "hora", "horas")} entre una y otra.`,
     litter_rule: (p) =>
@@ -536,7 +536,7 @@ const es: RegistryCopy = {
     simTitle: "Cómo lo simula PetPrep",
     simBadge: "Reglas del juego, no consejo veterinario",
     simIntro:
-      "En PetPrep, una semana real equivale a un mes de la vida de la mascota. Estas son las reglas que usa el juego para esta raza. PetPrep las eligió a partir de las fuentes de esta página; no son instrucciones de cuidado para un animal real.",
+      "En PetPrep, una semana real equivale a un mes de la vida de la mascota. Estas son las reglas que usa el juego para esta raza. PetPrep las eligió a partir de las fuentes de esta página; no son instrucciones de cuidado para una mascota real.",
     simInfoOnly: "Esta raza está en el registro solo a título informativo; la app todavía no la simula.",
     simTable: { stage: "Etapa de la vida", starts: "Empieza", meals: "Comidas al día", activity: { steps: "Objetivo diario de pasos", play_sessions: "Juego al día" } },
     arrives: (m) => `llega con ${m} meses`,
@@ -544,7 +544,7 @@ const es: RegistryCopy = {
     meals: (steps) => steps.map((x) => (x.from === null ? String(x.meals) : `a partir del mes ${x.from}: ${x.meals}`)).join("; "),
     simDecisions: "Cada cifra del juego es una decisión de PetPrep registrada con sus fuentes.",
     healthTitle: "Salud",
-    healthNote: "Solo a título informativo, sin revisión veterinaria. Pregunta a tu veterinario por tu propio animal.",
+    healthNote: "Solo a título informativo, sin revisión veterinaria. Consulta a tu veterinario sobre tu propia mascota.",
     healthNone: "Nuestras fuentes todavía no incluyen información de salud específica de esta raza.",
     checklistTitle: "Antes de comprar: qué comprobar con el criador",
     checklistIntro: (speciesId) =>
@@ -570,7 +570,7 @@ const es: RegistryCopy = {
     sourcesTitle: "Fuentes",
     sourcesIntro: "Cada dato de esta página cita una de estas fuentes.",
     sourceLabel: (id, publisher) => `Fuente ${id}: ${publisher}`,
-    disclaimer: "PetPrep es una simulación para familias. Esta página no es un consejo veterinario: para un animal real, consulta a un veterinario o al club de la raza.",
+    disclaimer: "PetPrep es una simulación para familias. Esta página no es un consejo veterinario: para una mascota real, consulta a un veterinario o al club de la raza.",
     backTo: (many) => `Todos los ${lc(many)}`,
     compareWith: "Comparar con otras razas",
     related: { title: "Razas parecidas", intro: (many) => `Otros ${lc(many)} del registro con necesidades parecidas, todos con datos respaldados por fuentes.` },
@@ -638,7 +638,7 @@ const es: RegistryCopy = {
       aka: "Golden",
       text: [
         "El golden retriever es un perro de caza grande originario de Gran Bretaña, con el pelo liso u ondulado en tonos dorados o crema. Su estándar describe un perro dócil e inteligente, amable, simpático y seguro de sí mismo.",
-        "Las organizaciones benéficas británicas lo consideran un gran perro para una familia activa, y que puede ser una buena opción como primer perro. Las fuentes dejan claras las contrapartidas: al menos dos horas de ejercicio al día, cepillado varias veces por semana y un pelaje que suelta mucho pelo.",
+        "Las organizaciones benéficas británicas lo consideran un gran perro para una familia activa y que puede ser una buena opción como primer perro. Las fuentes dejan claras las contrapartidas: al menos dos horas de ejercicio al día, cepillado varias veces por semana y un pelaje que suelta mucho pelo.",
       ],
       sources: ["S63", "S64", "S65", "S66", "S68", "S69"],
     },
@@ -662,7 +662,7 @@ const es: RegistryCopy = {
       aka: "Cavalier, CKCS",
       text: [
         "El cavalier King Charles spaniel es un spaniel toy pequeño originario de Gran Bretaña, con orejas largas y con flecos y un pelaje largo y sedoso en cuatro colores: blenheim, rubí, negro y fuego, y tricolor. Su estándar describe un perro activo y elegante, de expresión dulce: deportivo, cariñoso, simpático y sin miedo.",
-        "Necesita alrededor de una hora de ejercicio al día, puede vivir en un piso y se le conoce por llevarse bien con los niños, aunque el juego debe estar supervisado y no le gusta quedarse solo. Hay que cepillarle el pelo más de una vez por semana. Las fuentes británicas señalan como principales problemas de salud la enfermedad de las válvulas del corazón y una dolorosa afección de la médula espinal relacionada con la forma del cráneo, por lo que se pide a los criadores que hagan pruebas cardíacas y resonancias magnéticas a sus perros.",
+        "Necesita alrededor de una hora de ejercicio al día, puede vivir en un piso y se le conoce por llevarse bien con los niños, aunque el juego debe estar supervisado y no le gusta quedarse solo. Hay que cepillarle el pelo más de una vez por semana. Las fuentes británicas señalan como principales problemas de salud la enfermedad de las válvulas del corazón y una dolorosa afección de la médula espinal relacionada con la forma del cráneo, por lo que se pide a los criadores que hagan pruebas cardiacas y resonancias magnéticas a sus perros.",
       ],
       sources: ["S103", "S105", "S106", "S108", "S110"],
     },
