@@ -88,8 +88,9 @@ Local test: `KLAVIYO_PRIVATE_API_KEY=pk_… KLAVIYO_LIST_ID=… npm run dev`.
 Same server as the API (`api.petprep.si`, Hetzner, Docker). Push to `main` → GitHub Actions (`.github/workflows/ci-deploy.yml`):
 
 1. **checks** — lint, build, types, shellcheck; **image** — Docker build + smoke test.
-2. **deploy** — rsync to `/opt/petprep/website/incoming` as `deploy@<host>`, then `deploy/deploy.sh`:
-   builds `petprep-website:next`, smoke-tests it, promotes `:production` → `:previous` and `:next` → `:production`,
+2. **deploy** — builds the production image **on the GitHub runner** (reusing the `image` job's cache), `docker save | gzip` →
+   `/opt/petprep/website/website-image.tar.gz`, rsyncs the source to `/opt/petprep/website/incoming` as `deploy@<host>`, then
+   `IMAGE_TAR=… deploy/deploy.sh`: loads `petprep-website:next` (checks its revision label = the commit), smoke-tests it, promotes `:production` → `:previous` and `:next` → `:production`,
    recreates the `petprep-website` container (`deploy/compose.yaml`) on the API's Docker network `backend_petprep-network`
    (alias `website`), waits for the health check and rolls back to `:previous` on failure.
 
@@ -110,5 +111,7 @@ Caddy (in the API stack, `deployment/Caddyfile` of the `pet-prep` repo) terminat
 The two Klaviyo values are written to `/opt/petprep/website/.env` (mode 600) on every deploy and read by the container at start.
 Without them the early-access form answers “not configured” (HTTP 503).
 
-Manual deploy on the server: `bash /opt/petprep/website/incoming/deploy/deploy.sh /opt/petprep/website/incoming manual`.
+**Why not build on the server (2026-11-02):** with 15 languages `next build` prerenders ~7,000 pages, takes ~10 min and peaks at ~2 GB RAM; on the 4 GB API server the build was killed mid-way (deploy step ended with ssh exit 255, no error message). Building on the runner keeps the API's memory untouched.
+
+Manual deploy on the server (fallback, builds there — needs ~2 GB free RAM): `bash /opt/petprep/website/incoming/deploy/deploy.sh /opt/petprep/website/incoming manual`.
 Rollback: `docker tag petprep-website:previous petprep-website:production && docker compose -f /opt/petprep/website/incoming/deploy/compose.yaml up -d --force-recreate`.
