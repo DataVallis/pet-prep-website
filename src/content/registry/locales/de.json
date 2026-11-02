@@ -624,6 +624,23 @@
       "synonyms": [
         "Bengalkatze"
       ]
+    },
+    "rat_terrier": {
+      "name": "Rat Terrier",
+      "slug": "rat-terrier",
+      "synonyms": [
+        "Rattie",
+        "American Rat Terrier"
+      ]
+    },
+    "greater_swiss_mountain_dog": {
+      "name": "Großer Schweizer Sennenhund",
+      "slug": "grosser-schweizer-sennenhund",
+      "synonyms": [
+        "Grosser Schweizer Sennenhund",
+        "Swissy",
+        "Greater Swiss Mountain Dog"
+      ]
     }
   },
   "suitability_labels": {
