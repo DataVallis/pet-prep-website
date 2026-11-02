@@ -547,7 +547,51 @@ const hr: CareCopy = {
   breadcrumb: "Njega",
 };
 
-const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es, it, pt, nl, pl, cs, hr };
+const sv: CareCopy = {
+  speciesWords: {
+    // `plural` without article ("för hundar"); `pet` without article ("en realistisk hund" — both common gender).
+    dog: { question: "Vad får hundar äta?", plural: "hundar", pet: "hund" },
+    cat: { question: "Vad får katter äta?", plural: "katter", pet: "katt" },
+  },
+  levels: {
+    toxic: { label: "Giftigt – ring din veterinär", heading: "Giftigt: ge aldrig" },
+    dangerous: { label: "Farligt", heading: "Farligt" },
+    not_recommended: { label: "Rekommenderas inte", heading: "Helst inte" },
+    small_amounts: { label: "Okej i små mängder", heading: "Okej som godbit ibland" },
+  },
+  hub: {
+    foodsLead: (w) => `Säkra, riskabla och giftiga livsmedel för ${w.plural} – vart och ett med orsaken, symtomen att hålla utkik efter och källorna.`,
+    count: (n) => `${n} livsmedel`,
+    open: "Öppna listan",
+  },
+  species: {
+    metaTitle: (w) => `${w.question} Säkra och giftiga livsmedel, med källor – PetPrep`,
+    metaDescription: (w, n) => `${n} livsmedel granskade för ${w.plural}: vad som är giftigt, vad som är riskabelt och vad som är okej som godbit – orsaken, symtomen och vad du ska göra, med länk till varje källa.`,
+    eyebrow: "Skötsel · mat",
+    lead: (w) => `Vilka livsmedel som är giftiga, riskabla eller okej för ${w.plural} – sorterade efter risk, enkelt förklarade, med länk till varje källa.`,
+    emergencyTitle: "Har djuret ätit något giftigt?",
+    emergencyText: "Ring din veterinär eller en giftrådgivning för djur direkt. Skriv upp vad djuret har ätit och hur mycket – vänta inte på symtom.",
+  },
+  food: {
+    why: "Varför",
+    signs: "Symtom att hålla utkik efter",
+    whatToDo: "Vad du ska göra",
+    serving: "Så ger du det",
+    forKids: "För barn",
+    faq: "Frågor och svar",
+    related: "Liknande livsmedel",
+    sources: "Källor",
+    updated: "Uppdaterad",
+    notVetReviewed: "Allmän information från källorna nedan, inte granskad av en veterinär och ingen ersättning för veterinärens råd. Ring din veterinär om du är osäker.",
+    otherSpecies: "Andra djur",
+    simulates: "Så övar barn på det här i PetPrep",
+    simulatesText: (w) => `I PetPrep tar ett barn hand om en realistisk ${w.pet}: måltider vid rätt tid, vatten, promenader och skötsel. Att veta vad som är säkert att dela med sig av är en del av att vara redo för ett riktigt husdjur.`,
+    backTo: "Alla livsmedel",
+  },
+  breadcrumb: "Skötsel",
+};
+
+const copies: Record<Locale, CareCopy> = { en, sl, de, fr, es, it, pt, nl, pl, cs, hr, sv };
 export const getCareCopy = (l: Locale) => copies[l];
 
 export function speciesWords(l: Locale, speciesId: string): SpeciesWords {
