@@ -1189,14 +1189,14 @@ const sl: Dictionary = {
     },
     kids: {
       meta: {
-        title: "Za otroke, ki si želijo žival — pobarvanke, Curio in #walkyourpet | PetPrep",
+        title: "Za otroke, ki si želijo hišnega ljubljenčka — pobarvanke, Curio in #walkyourpet | PetPrep",
         description:
-          "Vse, kar ima PetPrep za otroke: brezplačne pobarvanke za tiskanje z resničnimi zanimivostmi o skrbi, maskota Curio in #walkyourpet — za otroke in starše, ki se na žival pripravljajo skupaj.",
+          "Vse, kar ima PetPrep za otroke: brezplačne pobarvanke za tiskanje z resničnimi zanimivostmi o skrbi, maskota Curio in #walkyourpet — za otroke in starše, ki se skupaj pripravljajo na hišnega ljubljenčka.",
       },
       navLabel: "Za otroke",
       eyebrow: "Za otroke",
-      title: "Za otroke, ki si želijo žival.",
-      lead: "Pobarvanke za tiskanje, Curio in #walkyourpet — za otroke in starše, ki se na žival pripravljajo skupaj.",
+      title: "Za otroke, ki si želijo hišnega ljubljenčka.",
+      lead: "Pobarvanke za tiskanje, Curio in #walkyourpet — za otroke in starše, ki se skupaj pripravljajo na hišnega ljubljenčka.",
       hero: { src: "/curio/curio-waving.webp", alt: "Curio, maskota PetPrepa: mehka grafitna kocka z velikima belima očesoma, malinastim nosom in metino ovratnico, ki maha.", width: 720, height: 948 },
       blocks: [{ type: "kidsHub" }],
     },
