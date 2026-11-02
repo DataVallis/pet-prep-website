@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { locales, pageKeys, pathFor, type Locale, type RouteKey } from "@/i18n/config";
+import { locales, sitePageKeys, pathFor, type Locale, type RouteKey } from "@/i18n/config";
 import { absoluteUrl } from "@/lib/site";
 import { pageUpdated } from "@/content/updated";
 import { alternatesFor, pathAlternates } from "@/lib/seo";
@@ -23,7 +23,8 @@ const priority: Partial<Record<RouteKey, number>> = {
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const keys: RouteKey[] = ["home", ...pageKeys];
+  // /investors is noindex and English only (David 2026-11-01) — not in the sitemap, so not in IndexNow either.
+  const keys: RouteKey[] = ["home", ...sitePageKeys];
   const pages = locales.flatMap((locale) =>
     keys.map((key) => ({
       url: absoluteUrl(pathFor(locale, key)),

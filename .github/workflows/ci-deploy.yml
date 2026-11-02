@@ -22,6 +22,7 @@ jobs:
           cache: npm
       - run: npm ci --no-audit --no-fund
       - run: npm run lint
+      - run: npm test
       - run: npm run build
       - run: npx tsc --noEmit
       - name: Shellcheck deploy script
@@ -82,6 +83,8 @@ jobs:
           COMMIT_SHA: ${{ github.sha }}
           KLAVIYO_PRIVATE_API_KEY: ${{ secrets.KLAVIYO_PRIVATE_API_KEY }}
           KLAVIYO_LIST_ID: ${{ secrets.KLAVIYO_LIST_ID }}
+          # /investors: "12 Weeks" episodes and views (YouTube Data API v3, read-only key). Optional.
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
           if [ -z "$SSH_PRIVATE_KEY" ]; then
             echo "ERROR: the PRODUCTION_SSH_PRIVATE_KEY secret is not set for this repository."
@@ -99,12 +102,20 @@ jobs:
             -e "$SSH" ./ "${SSH_USER}@${SSH_HOST}:/opt/petprep/website/incoming/"
 
           echo "2. Runtime secrets"
+          ENV_FILE=""
           if [ -n "$KLAVIYO_PRIVATE_API_KEY" ] && [ -n "$KLAVIYO_LIST_ID" ]; then
-            printf 'KLAVIYO_PRIVATE_API_KEY=%s\nKLAVIYO_LIST_ID=%s\n' "$KLAVIYO_PRIVATE_API_KEY" "$KLAVIYO_LIST_ID" \
-              | $SSH "${SSH_USER}@${SSH_HOST}" "umask 077 && cat > /opt/petprep/website/.env"
-            echo "Klaviyo settings written to /opt/petprep/website/.env"
+            ENV_FILE="$(printf 'KLAVIYO_PRIVATE_API_KEY=%s\nKLAVIYO_LIST_ID=%s\n' "$KLAVIYO_PRIVATE_API_KEY" "$KLAVIYO_LIST_ID")"
           else
             echo "WARNING: KLAVIYO_PRIVATE_API_KEY / KLAVIYO_LIST_ID not set — the early-access form will answer 503 until they are."
+          fi
+          if [ -n "$YOUTUBE_API_KEY" ]; then
+            ENV_FILE="$(printf '%s\nYOUTUBE_API_KEY=%s\n' "$ENV_FILE" "$YOUTUBE_API_KEY")"
+          else
+            echo "NOTE: YOUTUBE_API_KEY not set — /investors hides the \"12 Weeks\" episode and view counts."
+          fi
+          if [ -n "$ENV_FILE" ]; then
+            printf '%s\n' "$ENV_FILE" | $SSH "${SSH_USER}@${SSH_HOST}" "umask 077 && cat > /opt/petprep/website/.env"
+            echo "Runtime settings written to /opt/petprep/website/.env"
           fi
 
           echo "3. Building and switching the website container"

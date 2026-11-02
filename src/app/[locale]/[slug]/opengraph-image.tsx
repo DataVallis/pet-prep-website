@@ -1,4 +1,4 @@
-import { isLocale, locales, pageKeyFromSlug, pageKeys, pageSlugs } from "@/i18n/config";
+import { isLocale, locales, pageKeyFromSlug, pageSlugs, sitePageKeys } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { ogImage, ogSize } from "@/lib/og";
 
@@ -7,7 +7,7 @@ export const contentType = "image/png";
 export const alt = "PetPrep";
 
 export function generateStaticParams() {
-  return locales.flatMap((locale) => pageKeys.map((key) => ({ locale, slug: pageSlugs[key][locale] })));
+  return locales.flatMap((locale) => sitePageKeys.map((key) => ({ locale, slug: pageSlugs[key][locale] })));
 }
 
 export default async function Image({ params }: { params: Promise<{ locale: string; slug: string }> }) {

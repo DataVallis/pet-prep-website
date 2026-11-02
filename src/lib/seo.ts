@@ -43,7 +43,7 @@ export function buildPathMetadata(opts: {
   return { ...m, openGraph: { ...m.openGraph, images: [image] }, twitter: { ...m.twitter, images: [image.url] } };
 }
 
-function buildMetadataFor(opts: {
+export function buildMetadataFor(opts: {
   locale: Locale;
   path: string;
   languages: Record<string, string>;
