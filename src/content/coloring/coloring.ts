@@ -296,7 +296,7 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
       back: "Alle Ausmalbilder",
     },
     pageTip: {
-      curio: { title: "Das ist Curio", text: "Curio ist der neugierige kleine Würfel aus dem PetPrep-Logo, der lebendig geworden ist: große Augen, eine himbeerrote Nase und ein mintgrünes Halsband. Mal ihn in seinen echten Farben aus – oder erfinde deine eigenen." },
+      curio: { title: "Das ist Curio", text: "Curio ist der neugierige kleine Würfel aus dem PetPrep-Logo, der lebendig geworden ist: große Augen, eine himbeerrote Nase und ein mintgrünes Halsband. Male ihn in seinen echten Farben aus – oder erfinde deine eigenen." },
       walkyourpet: { title: "#walkyourpet", text: "Ein Hund braucht jeden Tag seinen Spaziergang – in PetPrep zählt er nur, wenn ihr wirklich nach draußen geht." },
     },
   },

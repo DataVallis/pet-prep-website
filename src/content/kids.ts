@@ -26,7 +26,7 @@ export const kidsCopy: Record<Locale, KidsCopy> = {
     menu: "Für Kinder",
     all: "Alles für Kinder",
     items: [
-      { page: "coloring", title: "Ausmalbilder", text: "12 kostenlose Blätter zum Ausdrucken, jedes mit einem Wissenstipp zur Tierpflege.", image: coloringThumb },
+      { page: "coloring", title: "Ausmalbilder", text: "12 kostenlose Ausmalbilder zum Ausdrucken, jedes mit einem Wissenstipp zur Haustierpflege.", image: coloringThumb },
       { page: "curio", title: "Curio kennenlernen", text: "Unser Maskottchen und seine kurzen Videos.", image: curioThumb },
       { page: "walkyourpet", title: "#walkyourpet", text: "Die Bewegung, die ein Kind gestartet hat: raus zum Spaziergang.", image: null },
     ],
