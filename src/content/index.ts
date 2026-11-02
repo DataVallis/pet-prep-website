@@ -11,10 +11,11 @@ import pt from "./pt";
 import nl from "./nl";
 import pl from "./pl";
 import cs from "./cs";
+import hr from "./hr";
 import type { Dictionary } from "./types";
 
 /** One dictionary per site language — a new language adds its file here (TypeScript lists missing keys). */
-const dictionaries: Record<Locale, Dictionary> = { en, sl, de, fr, es, it, pt, nl, pl, cs };
+const dictionaries: Record<Locale, Dictionary> = { en, sl, de, fr, es, it, pt, nl, pl, cs, hr };
 
 export function getDictionary(locale: Locale): Dictionary {
   return dictionaries[locale];
@@ -38,6 +39,7 @@ export const companyIdLabels: Record<Locale, { vat: string; vatPayer: string; re
   nl: { vat: "Btw-identificatienummer", vatPayer: "btw-plichtig", registration: "Inschrijvingsnummer", legalName: "Bedrijf", address: "Statutaire zetel", web: "Website" },
   pl: { vat: "Numer VAT UE", vatPayer: "czynny podatnik VAT", registration: "Numer rejestrowy", legalName: "Nazwa firmy", address: "Siedziba", web: "Strona internetowa" },
   cs: { vat: "DIČ", vatPayer: "plátce DPH", registration: "IČO", legalName: "Obchodní firma", address: "Sídlo", web: "Webové stránky" },
+  hr: { vat: "PDV ID broj", vatPayer: "obveznik PDV-a", registration: "Matični broj", legalName: "Naziv tvrtke", address: "Sjedište", web: "Web-stranica" },
 };
 
 /** e.g. "VAT ID SI36130800 (registered for VAT), company registration no. 6560024000". */

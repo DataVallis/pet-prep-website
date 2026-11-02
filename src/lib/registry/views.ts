@@ -13,6 +13,7 @@ import pt from "@/content/registry/pt";
 import nl from "@/content/registry/nl";
 import pl from "@/content/registry/pl";
 import cs from "@/content/registry/cs";
+import hr from "@/content/registry/hr";
 import type { Fmt, RegistryCopy } from "@/content/registry/types";
 import {
   breedsOf,
@@ -34,7 +35,7 @@ import {
   type Species,
 } from "@/content/registry/registry";
 
-const copies: Record<Locale, RegistryCopy> = { en, sl, de, fr, es, it, pt, nl, pl, cs };
+const copies: Record<Locale, RegistryCopy> = { en, sl, de, fr, es, it, pt, nl, pl, cs, hr };
 export function getRegistryCopy(locale: Locale): RegistryCopy {
   return copies[locale];
 }
