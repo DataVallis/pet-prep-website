@@ -498,6 +498,7 @@ const nl: RegistryCopy = {
     familial_nephropathy: "Een erfelijke nierziekte (familiaire nefropathie) komt bij het ras voor; er is een DNA-test voor de ouderdieren beschikbaar.",
     hereditary_nephritis: "Een erfelijke nierziekte (erfelijke nefritis, ook wel erfelijke glomerulopathie van de samojeed genoemd) komt bij het ras voor.",
     panosteitis: "Panosteïtis, een pijnlijke ontsteking van de lange pijpbeenderen die meestal jonge, groeiende honden treft, kan bij het ras voorkomen.",
+    splenic_torsion: "Een draaiing van de milt, die dringend dierenartsenzorg nodig heeft, komt bij dit ras vaker voor dan bij andere grote rassen.",
     urinary_incontinence: "Urine-incontinentie, het onbedoeld verliezen van urine, kan bij het ras voorkomen.",
     osteochondritis: "Osteochondritis dissecans (OCD), een aandoening van het gewrichtskraakbeen bij groeiende honden, kan bij het ras voorkomen.",
     scottie_cramp: "Scottie cramp – korte aanvallen van spierkrampen, meestal door opwinding – komt bij het ras voor; het doet geen pijn.",
@@ -1259,6 +1260,14 @@ const nl: RegistryCopy = {
         "De PDSA raadt minstens een uur beweging per dag aan (ongeveer 60–90 minuten), veel mentale uitdaging en één keer per week borstelen; ze noemt basenji’s afstandelijk maar betrouwbaar, eigenwijs en met heel weinig verkeersinzicht. WebMD zegt dat ze alles achternazitten wat op een prooi lijkt, heel hoge hekken of voortdurend toezicht nodig hebben en maar matig goed met jonge kinderen omgaan, en adviseert de oren elke week schoon te maken en de tanden minstens twee keer per week te poetsen.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "Grote Zwitserse Sennenhond, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "De Grote Zwitserse Sennenhond is een stevige, zwaar gebouwde en goed gespierde driekleurige trekhond uit Zwitserland: zwart met symmetrische bruine en witte aftekeningen. De FCI-standaard noemt een schofthoogte van 65–72 cm voor reuen en 60–68 cm voor teven, maar geen gewicht; WebMD noemt 52–64 kg voor reuen en 39–50 kg voor teven. Een hond van dit formaat is volgroeid op ongeveer 18–24 maanden (PetMD), en de Royal Kennel Club noemt een levensduur van meer dan 10 jaar (PetMD: 8–11 jaar).",
+        "De Royal Kennel Club raadt tot een uur beweging per dag aan en één keer per week borstelen, en zegt dat het ras verhaart en een groot huis met een grote tuin nodig heeft. PetMD noemt ze geweldige gezinshonden die zachtaardig zijn met kinderen (elk contact moet onder toezicht), en adviseert de oren elke week schoon te maken en de hond vlak voor of na het eten niet te laten bewegen vanwege het risico op een maagkanteling (GDV); WebMD adviseert de tanden dagelijks te poetsen en weinig snoepjes te geven, omdat het ras snel te zwaar wordt.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "British shorthair, British blue",

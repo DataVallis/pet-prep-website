@@ -489,6 +489,7 @@ const es: RegistryCopy = {
     familial_nephropathy: "En la raza se da una enfermedad renal hereditaria (nefropatía familiar); existe una prueba de ADN para los progenitores.",
     hereditary_nephritis: "En la raza se da una enfermedad renal hereditaria (nefritis hereditaria, también llamada glomerulopatía hereditaria del samoyedo).",
     panosteitis: "En la raza puede darse la panosteítis, una inflamación dolorosa de los huesos largos que suele afectar a perros jóvenes en crecimiento.",
+    splenic_torsion: "La torsión del bazo, que requiere atención veterinaria urgente, es más frecuente en esta raza que en otras razas grandes.",
     urinary_incontinence: "En la raza puede darse la incontinencia urinaria, una pérdida de orina involuntaria.",
     osteochondritis: "En la raza puede darse la osteocondritis disecante (OCD), un trastorno del cartílago articular en perros en crecimiento.",
     scottie_cramp: "En la raza se da el calambre del scottie: episodios cortos de calambres musculares, normalmente provocados por la excitación; no es doloroso.",
@@ -1250,6 +1251,14 @@ const es: RegistryCopy = {
         "La PDSA recomienda al menos una hora de ejercicio al día (unos 60 a 90 minutos), mucha estimulación mental y un cepillado semanal; describe a los basenjis como distantes pero de confianza, de voluntad firme y con muy poca noción del peligro del tráfico. WebMD dice que persiguen todo lo que parezca una presa, necesitan vallas muy altas o vigilancia constante y solo se llevan moderadamente bien con los niños pequeños, y aconseja limpiarles los oídos cada semana y cepillarles los dientes al menos dos veces por semana.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "Gran Boyero Suizo, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "El gran boyero suizo es un perro de tiro tricolor de Suiza, robusto, de huesos fuertes y bien musculado: negro con marcas fuego y blancas simétricas. El estándar de la FCI da una altura de 65 a 72 cm para los machos y de 60 a 68 cm para las hembras, pero no un peso; WebMD da de 52 a 64 kg para los machos y de 39 a 50 kg para las hembras. Un perro de esta talla alcanza su tamaño adulto aproximadamente entre los 18 y los 24 meses (PetMD), y el Royal Kennel Club cifra su esperanza de vida en más de 10 años (PetMD: de 8 a 11 años).",
+        "El Royal Kennel Club recomienda hasta una hora de ejercicio al día y un cepillado semanal, y dice que la raza suelta pelo y necesita una casa grande con un jardín grande. PetMD los describe como excelentes perros de familia, cariñosos con los niños (toda interacción debe supervisarse), y aconseja limpiarles los oídos cada semana y no hacerles hacer ejercicio justo antes o después de comer por el riesgo de torsión gástrica (GDV); WebMD aconseja cepillarles los dientes a diario y limitar los premios, porque la raza tiende a engordar.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "Gato británico de pelo corto, gato británico, British Shorthair, British Blue",

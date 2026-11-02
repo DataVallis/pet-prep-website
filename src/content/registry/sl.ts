@@ -491,6 +491,7 @@ const sl: RegistryCopy = {
     familial_nephropathy: "Pri pasmi se pojavlja dedna bolezen ledvic (družinska nefropatija); za starše je na voljo test DNK.",
     hereditary_nephritis: "Pri pasmi se pojavlja dedna bolezen ledvic (dedni nefritis, imenovan tudi samojedska dedna glomerulopatija).",
     panosteitis: "Pri pasmi se lahko pojavi panosteitis, boleče vnetje dolgih kosti, ki navadno prizadene mlade pse med rastjo.",
+    splenic_torsion: "Pri pasmi je zasuk vranice, ki zahteva nujno pomoč veterinarja, pogostejši kot pri drugih velikih pasmah.",
     urinary_incontinence: "Pri pasmi se lahko pojavi inkontinenca, nehotno uhajanje urina.",
     osteochondritis: "Pri pasmi se lahko pojavi osteohondritis dissecans (OCD), motnja sklepnega hrustanca pri psih med rastjo.",
     scottie_cramp: "Pri pasmi se pojavlja »škotski krč« — kratki napadi krčenja mišic, navadno ob vznemirjenju; ni boleč.",
@@ -1251,6 +1252,14 @@ const sl: RegistryCopy = {
         "PDSA priporoča vsaj uro gibanja na dan (približno 60–90 minut), veliko miselnih izzivov in česanje enkrat na teden; basenjije opisuje kot zadržane, a zanesljive, trmaste in brez občutka za promet. WebMD pravi, da lovijo vse, kar je videti kot plen, potrebujejo zelo visoko ograjo ali stalen nadzor in so z majhnimi otroki le zmerno dobri, ter svetuje čiščenje ušes vsak teden in ščetkanje zob vsaj dvakrat na teden.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "veliki švicarski planšar, švicarski planšar, Swissy, Greater Swiss Mountain Dog, Grosser Schweizer Sennenhund",
+      text: [
+        "Veliki švicarski planšarski pes (pri FCI in v Veliki Britaniji »Great Swiss Mountain Dog«) je čvrst, mišičast vlečni pes močnih kosti iz Švice, trobarven: črn s somernimi rjavkastimi in belimi oznakami. Standard FCI navaja višino 65–72 cm za samce in 60–68 cm za samice, teže pa ne; WebMD navaja 52–64 kg za samce in 39–50 kg za samice. Pes te velikosti zraste do okoli 18–24 mesecev (PetMD), Royal Kennel Club pa navaja življenjsko dobo več kot 10 let (PetMD: 8–11 let).",
+        "Royal Kennel Club priporoča do eno uro gibanja na dan in česanje enkrat na teden ter navaja, da mu izpada dlaka in da potrebuje veliko hišo z velikim vrtom. PetMD ga opisuje kot odličnega družinskega psa, ki je nežen z otroki (igro z otroki je vedno treba nadzorovati), svetuje tedensko čiščenje ušes in naj se pes ne giba tik pred obrokom ali po njem zaradi nevarnosti napenjanja želodca (GDV); WebMD svetuje vsakodnevno ščetkanje zob in čim manj priboljškov, ker se pasma rada zredi.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",

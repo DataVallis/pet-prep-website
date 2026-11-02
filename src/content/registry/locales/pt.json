@@ -619,6 +619,14 @@
       "name": "Basenji",
       "slug": "basenji"
     },
+    "greater_swiss_mountain_dog": {
+      "name": "Grande Boieiro Suíço",
+      "slug": "grande-boieiro-suico",
+      "synonyms": [
+        "Grosser Schweizer Sennenhund",
+        "Greater Swiss Mountain Dog"
+      ]
+    },
     "maine_coon": {
       "name": "Maine coon",
       "slug": "maine-coon"

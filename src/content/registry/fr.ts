@@ -494,6 +494,7 @@ const fr: RegistryCopy = {
     familial_nephropathy: "Une maladie rénale héréditaire (néphropathie familiale) s’observe dans la race ; un test ADN des parents existe.",
     hereditary_nephritis: "Une maladie rénale héréditaire (néphrite héréditaire, aussi appelée glomérulopathie héréditaire du samoyède) s’observe dans la race.",
     panosteitis: "La panostéite, une inflammation douloureuse des os longs qui touche généralement les jeunes chiens en croissance, peut survenir dans la race.",
+    splenic_torsion: "La torsion de la rate, qui exige des soins vétérinaires urgents, est plus fréquente dans cette race que chez les autres grandes races.",
     urinary_incontinence: "L’incontinence urinaire, une fuite d’urine incontrôlée, peut survenir dans la race.",
     osteochondritis: "L’ostéochondrite disséquante (OCD), un trouble du cartilage articulaire chez les chiens en croissance, peut survenir dans la race.",
     scottie_cramp: "La « crampe du scottie » – de courts épisodes de crampes musculaires, généralement déclenchés par l’excitation – s’observe dans la race ; elle n’est pas douloureuse.",
@@ -1255,6 +1256,14 @@ const fr: RegistryCopy = {
         "La PDSA recommande au moins une heure d’exercice par jour (environ 60 à 90 minutes), beaucoup de stimulation mentale et un brossage hebdomadaire ; elle décrit les Basenjis comme distants mais fiables, volontaires et très peu conscients des dangers de la route. Selon WebMD, ils poursuivent tout ce qui ressemble à une proie, ont besoin de clôtures très hautes ou d’une surveillance constante et ne sont que moyennement adaptés aux jeunes enfants ; il conseille de nettoyer les oreilles chaque semaine et de brosser les dents au moins deux fois par semaine.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "Grand Bouvier Suisse, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "Le Grand Bouvier Suisse est un chien de trait tricolore de Suisse, robuste, à forte ossature et bien musclé : noir avec des marques feu et blanches symétriques. Le standard FCI indique une hauteur de 65 à 72 cm pour les mâles et de 60 à 68 cm pour les femelles, sans poids ; WebMD indique 52 à 64 kg pour les mâles et 39 à 50 kg pour les femelles. Un chien de cette taille atteint sa taille adulte vers 18 à 24 mois (PetMD), et le Royal Kennel Club indique une espérance de vie de plus de 10 ans (PetMD : 8 à 11 ans).",
+        "Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour et un brossage hebdomadaire, et indique que la race perd ses poils et convient à une grande maison avec un grand jardin. Selon PetMD, ce sont d’excellents chiens de famille, doux avec les enfants (toute interaction doit être surveillée) ; il conseille de nettoyer les oreilles chaque semaine et de ne pas faire faire d’exercice juste avant ou après les repas, à cause du risque de dilatation-torsion de l’estomac (GDV). WebMD conseille de brosser les dents chaque jour et de limiter les friandises, car la race a tendance à prendre du poids.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "British Blue, British à poil court",

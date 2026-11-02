@@ -587,6 +587,7 @@ const hr: RegistryCopy = {
     familial_nephropathy: "U pasmini se javlja nasljedna bolest bubrega (obiteljska nefropatija); dostupan je DNK test roditelja.",
     hereditary_nephritis: "U pasmini se javlja nasljedna bolest bubrega (nasljedni nefritis, poznat i kao nasljedna glomerulopatija samojeda).",
     panosteitis: "U pasmini se može pojaviti panosteitis, bolna upala dugih kostiju koja obično pogađa mlade pse u rastu.",
+    splenic_torsion: "Torzija slezene, koja zahtijeva hitnu veterinarsku pomoć, u ovoj se pasmini javlja češće nego kod drugih velikih pasmina.",
     urinary_incontinence: "U pasmini se može pojaviti urinarna inkontinencija, nekontrolirano curenje mokraće.",
     osteochondritis: "U pasmini se može pojaviti osteohondritis disekans (OCD), poremećaj zglobne hrskavice kod pasa u rastu.",
     scottie_cramp: "U pasmini se javlja „Scottie cramp“ – kratke epizode grčenja mišića, obično izazvane uzbuđenjem; nije bolno.",
@@ -1367,6 +1368,14 @@ const hr: RegistryCopy = {
         "PDSA preporučuje najmanje sat vremena kretanja dnevno (oko 60–90 minuta), mnogo misaonih poticaja i četkanje jednom tjedno; basenjije naziva suzdržanima, ali pouzdanima, snažne volje i s vrlo slabim osjećajem za promet. WebMD kaže da će juriti za svime što izgleda kao plijen, da trebaju vrlo visoke ograde ili stalan nadzor i da su s malom djecom tek umjereno dobri te savjetuje čišćenje ušiju jednom tjedno i pranje zubi najmanje dvaput tjedno.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "veliki švicarski planinski pas, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "Veliki švicarski planinski pas snažan je, mišićav vučni pas jakih kostiju iz Švicarske, trobojan: crn sa simetričnim smeđim i bijelim oznakama. Standard FCI navodi visinu od 65–72 cm za mužjake i 60–68 cm za ženke, ali ne navodi težinu; WebMD navodi 52–64 kg za mužjake i 39–50 kg za ženke. Pas te veličine potpuno naraste s oko 18–24 mjeseca (PetMD), a Royal Kennel Club navodi životni vijek dulji od 10 godina (PetMD: 8–11 godina).",
+        "Royal Kennel Club preporučuje do sat vremena kretanja dnevno i četkanje jednom tjedno te navodi da pasmina linja i treba veliku kuću s velikim vrtom. PetMD ih opisuje kao izvrsne obiteljske pse koji su nježni s djecom (svaki kontakt s djecom treba nadzirati) i savjetuje čišćenje ušiju jednom tjedno te da pas ne trči neposredno prije ni poslije obroka zbog opasnosti od torzije želuca (GDV); WebMD savjetuje svakodnevno pranje zubi i što manje poslastica jer pasmina lako dobiva na težini.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "British Blue, britanska plava",
