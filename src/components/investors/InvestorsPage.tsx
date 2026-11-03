@@ -129,7 +129,10 @@ export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStat
         <p className="-mt-3 text-[13px] text-muted">{c.engine.updated}</p>
 
         <div className="flex flex-col gap-4">
-          <h3 className="font-display text-[22px] font-bold">{m.playlist}</h3>
+          <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+            <h3 className="font-display text-[22px] font-bold">{m.playlist}</h3>
+            <a href={youtube.channel} target="_blank" rel="noopener noreferrer" className="rich-link text-[15px] font-semibold">{m.channel}</a>
+          </div>
           <ul className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6">
             <li>
               <ClickToPlay

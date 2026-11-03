@@ -574,7 +574,7 @@ const pt: Dictionary = {
           items: [
             "Motor de jogo no servidor com sincronização em tempo real, testado com simulações de dias inteiros, dias de mudança da hora e casos-limite familiares.",
             "Famílias com vários pais, vários filhos e animais partilhados, com uma pontuação justa por criança.",
-            "Animais de IA fotorrealistas e únicos, com custos de IA medidos e limitados, e ficheiros multimédia guardados nos nossos próprios servidores na UE.",
+            "Animais de IA fotorrealistas e únicos, com custos de IA medidos e limitados, e ficheiros multimédia guardados em servidores alugados na Alemanha (Hetzner, UE).",
             "Necessidades dos animais baseadas em fontes veterinárias e de clubes de canicultura citadas, com cada número rastreável até à sua fonte.",
             "Segurança infantil desde a conceção: acesso por PIN sem e-mail, dados mínimos, sem anúncios, só conteúdos multimédia verificados.",
           ],
@@ -689,7 +689,7 @@ const pt: Dictionary = {
             {
               heading: "8. Imagens e vídeos gerados por IA",
               paragraphs: [
-                "A fotografia e os vídeos curtos de cada animal são criados por um serviço de IA apenas a partir de uma descrição do animal (raça, pelagem, manchas e afins). A descrição nunca contém nomes nem qualquer informação sobre a tua família. Os ficheiros finais são guardados nos nossos próprios servidores na UE e mostrados através de ligações de curta duração.",
+                "A fotografia e os vídeos curtos de cada animal são criados por um serviço de IA apenas a partir de uma descrição do animal (raça, pelagem, manchas e afins). A descrição nunca contém nomes nem qualquer informação sobre a tua família. Os ficheiros finais são guardados em servidores alugados na Alemanha (Hetzner, UE) e mostrados através de ligações de curta duração.",
               ],
             },
             {
@@ -891,7 +891,7 @@ const pt: Dictionary = {
             { title: "Sem anúncios, sem conversas, sem desconhecidos", text: "Não há publicidade nem forma de contactar outros utilizadores." },
             { title: "Sem rastreio da localização", text: "Os passeios contam apenas passos – do Apple Health ou do Health Connect (com a tua autorização, só leitura) ou do sensor de movimento do telemóvel. Não se usa GPS." },
             { title: "Atualizações em direto privadas", text: "As atualizações em tempo real só chegam às crianças que cuidam desse animal e aos pais da mesma família." },
-            { title: "Conteúdos verificados", text: "Só são mostradas imagens e vídeos produzidos para o PetPrep e verificados pelo nosso servidor, a partir do nosso próprio armazenamento na UE." },
+            { title: "Conteúdos verificados", text: "Só são mostradas imagens e vídeos produzidos para o PetPrep e verificados pelo nosso servidor, a partir do nosso armazenamento na UE." },
             { title: "Notificações sem nomes", text: "As notificações nunca incluem o nome da criança nem do animal, porque podem aparecer no ecrã de bloqueio." },
           ],
         },

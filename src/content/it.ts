@@ -574,7 +574,7 @@ const it: Dictionary = {
           items: [
             "Motore di gioco lato server con sincronizzazione in tempo reale, testato su simulazioni di giornate intere, giorni di cambio dell’ora legale e casi limite delle famiglie.",
             "Famiglie con più genitori, più figli e animali condivisi, con un punteggio equo per ogni bambino.",
-            "Animali IA fotorealistici e unici, con costi dell’IA misurati e limitati e contenuti multimediali conservati sui nostri server nell’UE.",
+            "Animali IA fotorealistici e unici, con costi dell’IA misurati e limitati e contenuti multimediali conservati su server in affitto in Germania (Hetzner, UE).",
             "Bisogni degli animali basati su fonti veterinarie e cinofile citate, con ogni numero riconducibile alla sua fonte.",
             "Sicurezza dei bambini fin dalla progettazione: accesso con PIN senza email, dati minimi, niente pubblicità, solo contenuti multimediali verificati.",
           ],
@@ -689,7 +689,7 @@ const it: Dictionary = {
             {
               heading: "8. Immagini e video generati dall’IA",
               paragraphs: [
-                "La foto e i brevi video di ogni animale vengono creati da un servizio di IA soltanto a partire da una descrizione dell’animale (razza, mantello, macchie e simili). La descrizione non contiene mai nomi né informazioni sulla tua famiglia. I contenuti multimediali finiti vengono conservati sui nostri server nell’UE e mostrati tramite link di breve durata.",
+                "La foto e i brevi video di ogni animale vengono creati da un servizio di IA soltanto a partire da una descrizione dell’animale (razza, mantello, macchie e simili). La descrizione non contiene mai nomi né informazioni sulla tua famiglia. I contenuti multimediali finiti vengono conservati su server in affitto in Germania (Hetzner, UE) e mostrati tramite link di breve durata.",
               ],
             },
             {

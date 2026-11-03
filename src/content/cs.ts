@@ -574,7 +574,7 @@ const cs: Dictionary = {
           items: [
             "Herní jádro na serveru se synchronizací v reálném čase, otestované na simulacích celých dnů, na dnech změny času a na hraničních situacích v rodinách.",
             "Rodiny s více rodiči, více dětmi a společnými mazlíčky, se spravedlivým skóre pro každé dítě.",
-            "Jedineční fotorealističtí AI mazlíčci s měřenými a omezenými náklady na AI; média jsou uložená na našich vlastních serverech v EU.",
+            "Jedineční fotorealističtí AI mazlíčci s měřenými a omezenými náklady na AI; média jsou uložená na pronajatých serverech v Německu (Hetzner, EU).",
             "Potřeby zvířat podle veterinárních a kynologických zdrojů, které citujeme – u každého čísla lze dohledat jeho zdroj.",
             "Bezpečnost dětí už od návrhu: přihlášení PINem bez e-mailu, minimum dat, žádné reklamy, jen ověřená média.",
           ],
@@ -689,7 +689,7 @@ const cs: Dictionary = {
             {
               heading: "8. Obrázky a videa vytvořené AI",
               paragraphs: [
-                "Fotku a krátká videa každého zvířete vytváří AI služba jen z popisu zvířete (plemeno, srst, kresba a podobně). Popis nikdy neobsahuje jména ani žádné informace o vaší rodině. Hotová média ukládáme na vlastních serverech v EU a zobrazujeme přes krátkodobě platné odkazy.",
+                "Fotku a krátká videa každého zvířete vytváří AI služba jen z popisu zvířete (plemeno, srst, kresba a podobně). Popis nikdy neobsahuje jména ani žádné informace o vaší rodině. Hotová média ukládáme na pronajatých serverech v Německu (Hetzner, EU) a zobrazujeme přes krátkodobě platné odkazy.",
               ],
             },
             {
@@ -891,7 +891,7 @@ const cs: Dictionary = {
             { title: "Žádné reklamy, žádný chat, žádní cizí lidé", text: "Nejsou tu žádné reklamy ani způsob, jak kontaktovat jiné uživatele." },
             { title: "Žádné sledování polohy", text: "Procházky počítají jen kroky – z Apple Health nebo Health Connect (s vaším povolením, jen pro čtení) nebo z pohybového senzoru telefonu. GPS se nepoužívá." },
             { title: "Soukromé živé aktualizace", text: "Aktualizace v reálném čase se dostanou jen k dětem, které se o daného mazlíčka starají, a k rodičům ze stejné rodiny." },
-            { title: "Ověřená média", text: "Zobrazují se jen obrázky a videa vytvořené pro PetPrep a zkontrolované naším serverem, z našeho vlastního úložiště v EU." },
+            { title: "Ověřená média", text: "Zobrazují se jen obrázky a videa vytvořené pro PetPrep a zkontrolované naším serverem, z našeho úložiště v EU." },
             { title: "Oznámení bez jmen", text: "Oznámení nikdy neobsahují jméno dítěte ani mazlíčka, protože se mohou zobrazit na zamčené obrazovce." },
           ],
         },

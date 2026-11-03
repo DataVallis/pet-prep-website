@@ -50,9 +50,10 @@ export const site = {
   },
   social: {
     // Add profile URLs when they exist; they are used in structured data (sameAs).
-    links: ["https://www.tiktok.com/@petprep.si", "https://www.instagram.com/petprep.si/"] as string[],
+    links: ["https://www.tiktok.com/@petprep.si", "https://www.instagram.com/petprep.si/", "https://www.youtube.com/@petprep-si"] as string[],
     tiktok: "https://www.tiktok.com/@petprep.si",
     instagram: "https://www.instagram.com/petprep.si/",
+    youtube: "https://www.youtube.com/@petprep-si",
     handle: "@petprep.si",
   },
   /** Legal texts are drafts until reviewed by a lawyer; a notice is shown while false. */

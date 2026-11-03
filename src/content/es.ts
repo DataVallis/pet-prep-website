@@ -574,7 +574,7 @@ const es: Dictionary = {
           items: [
             "Motor de juego en el servidor con sincronización en tiempo real, probado con simulaciones de días completos, días de cambio de horario y casos límite familiares.",
             "Familias con varios padres, varios hijos y mascotas compartidas, con una puntuación justa para cada niño.",
-            "Mascotas fotorrealistas únicas creadas con IA, con costes de IA medidos y limitados, y archivos multimedia almacenados en nuestros propios servidores de la UE.",
+            "Mascotas fotorrealistas únicas creadas con IA, con costes de IA medidos y limitados, y archivos multimedia almacenados en servidores alquilados en Alemania (Hetzner, UE).",
             "Necesidades de las mascotas basadas en fuentes veterinarias y de clubes caninos citadas, con cada cifra trazable hasta su fuente.",
             "Seguridad infantil desde el diseño: acceso con PIN sin correo electrónico, datos mínimos, sin anuncios y solo contenido multimedia verificado.",
           ],
@@ -689,7 +689,7 @@ const es: Dictionary = {
             {
               heading: "8. Imágenes y vídeos generados por IA",
               paragraphs: [
-                "La foto y los vídeos cortos de cada mascota los crea un servicio de IA únicamente a partir de una descripción de la mascota (raza, pelaje, manchas y similares). La descripción nunca contiene nombres ni ninguna información sobre tu familia. Los archivos terminados se almacenan en nuestros propios servidores en la UE y se muestran mediante enlaces de corta duración.",
+                "La foto y los vídeos cortos de cada mascota los crea un servicio de IA únicamente a partir de una descripción de la mascota (raza, pelaje, manchas y similares). La descripción nunca contiene nombres ni ninguna información sobre tu familia. Los archivos terminados se almacenan en servidores alquilados en Alemania (Hetzner, UE) y se muestran mediante enlaces de corta duración.",
               ],
             },
             {
@@ -891,7 +891,7 @@ const es: Dictionary = {
             { title: "Sin anuncios, sin chat, sin desconocidos", text: "No hay publicidad ni ninguna forma de contactar con otros usuarios." },
             { title: "Sin seguimiento de la ubicación", text: "Los paseos solo cuentan pasos, de Apple Salud o Health Connect (con tu permiso y solo en modo lectura) o del sensor de movimiento del teléfono. No se utiliza el GPS." },
             { title: "Actualizaciones en directo privadas", text: "Las actualizaciones en tiempo real solo llegan a los niños que cuidan de esa mascota y a los padres de la misma familia." },
-            { title: "Archivos verificados", text: "Solo se muestran imágenes y vídeos creados para PetPrep y comprobados por nuestro servidor, desde nuestro propio almacenamiento en la UE." },
+            { title: "Archivos verificados", text: "Solo se muestran imágenes y vídeos creados para PetPrep y comprobados por nuestro servidor, desde nuestro almacenamiento en la UE." },
             { title: "Notificaciones sin nombres", text: "Las notificaciones nunca incluyen el nombre del niño ni el de la mascota, porque pueden aparecer en la pantalla de bloqueo." },
           ],
         },
