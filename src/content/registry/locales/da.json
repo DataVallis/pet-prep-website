@@ -778,6 +778,14 @@
         "Rattie",
         "Amerikansk rat terrier"
       ]
+    },
+    "brussels_griffon": {
+      "name": "Griffon bruxellois",
+      "slug": "griffon-bruxellois",
+      "synonyms": [
+        "Brusselsk griffon",
+        "Brussels Griffon"
+      ]
     }
   },
   "suitability_labels": {

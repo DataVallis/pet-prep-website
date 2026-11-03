@@ -622,6 +622,14 @@ const sl: RegistryCopy = {
     },
   },
   intros: {
+    brussels_griffon: {
+      aka: "Brussels Griffon, Griffon Bruxellois, grifon",
+      text: [
+        "Bruseljski grifon (Griffon Bruxellois) je majhen pes družnik iz Belgije s kratkim, ploščatim obrazom. Standard FCI opisuje rdečo, naravno trdo, rahlo valovito dlako in težo 3,5–6 kg; britanski The Royal Kennel Club, ki vodi grobodlako in gladkodlako različico, ga opisuje kot pametnega malega psa s terierskim značajem. Pes te velikosti doraste pri približno 8–12 mesecih (PetMD), The Royal Kennel Club pa navaja življenjsko dobo več kot 12 let (PetMD: 12–15 let).",
+        "The Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da je primeren za stanovanje, ter ga uvršča v 2. kategorijo programa Breed Watch. PetMD ga opisuje kot ploskoobraznega (brahicefalnega) psa, ki slabo prenaša vroče in vlažno vreme, svetuje čiščenje kožnih gub na obrazu približno enkrat na teden in vsakodnevno ščetkanje zob ter piše, da se bruseljski grifoni ob nadzoru dobro razumejo z otroki in drugimi živalmi, ne marajo pa dolgo ostajati sami.",
+      ],
+      sources: ["S669", "S670", "S672", "S10"],
+    },
     rat_terrier: {
       aka: "rattie, ameriški rat terier, terier za podgane, Rat Terrier",
       text: [

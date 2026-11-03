@@ -602,6 +602,14 @@ const en: RegistryCopy = {
     },
   },
   intros: {
+    brussels_griffon: {
+      aka: "Griffon Bruxellois, Griffon, Belgium Griffon",
+      text: [
+        "The Brussels Griffon (Griffon Bruxellois) is a small companion dog from Belgium with a short, flat face. The FCI standard describes a red, naturally harsh, slightly wavy coat and a weight of 3.5–6 kg; the Royal Kennel Club, which keeps a rough and a smooth coat, calls it a smart little dog with a terrier-like personality. A dog of this size is fully grown at about 8–12 months (PetMD), and the Royal Kennel Club gives a lifespan of over 12 years (PetMD: 12–15 years).",
+        "The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming more than once a week, says the breed sheds and suits a flat, and lists it in Breed Watch Category 2. PetMD describes a flat-faced (brachycephalic) dog that is sensitive to hot, humid weather, advises cleaning the face folds about once a week and brushing the teeth daily, and says Brussels Griffons do well with children and other pets under supervision but do not like being left alone for long.",
+      ],
+      sources: ["S669", "S670", "S672", "S10"],
+    },
     rat_terrier: {
       aka: "Rattie, Ratty, American Rat Terrier",
       text: [

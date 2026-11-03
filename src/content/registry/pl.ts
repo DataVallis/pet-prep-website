@@ -651,6 +651,14 @@ const pl: RegistryCopy = {
     },
   },
   intros: {
+    brussels_griffon: {
+      aka: "Griffon Bruxellois, Brussels Griffon",
+      text: [
+        "Gryfonik brukselski (Griffon Bruxellois) to mały pies do towarzystwa z Belgii o krótkim, płaskim pysku. Wzorzec FCI opisuje rudą, naturalnie szorstką, lekko falistą sierść i masę ciała 3,5–6 kg; brytyjski Royal Kennel Club, który uznaje odmianę szorstkowłosą i gładkowłosą, opisuje go jako bystrego małego psa o usposobieniu teriera. Pies tej wielkości kończy rosnąć w wieku około 8–12 miesięcy (PetMD), a Royal Kennel Club podaje długość życia powyżej 12 lat (PetMD: 12–15 lat).",
+        "Royal Kennel Club zaleca do 30 minut ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu, podaje, że linieje i nadaje się do mieszkania, oraz zalicza rasę do kategorii 2 programu Breed Watch. PetMD opisuje psa o płaskim pysku (brachycefalicznego), który źle znosi gorącą, wilgotną pogodę, radzi czyścić fałdy skórne na pysku mniej więcej raz w tygodniu i codziennie myć zęby oraz pisze, że gryfoniki brukselskie pod nadzorem dobrze dogadują się z dziećmi i innymi zwierzętami, ale nie lubią długo zostawać same.",
+      ],
+      sources: ["S669", "S670", "S672", "S10"],
+    },
     rat_terrier: {
       aka: "Rattie, amerykański rat terier, Rat Terrier",
       text: [

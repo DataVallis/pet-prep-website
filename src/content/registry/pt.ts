@@ -628,6 +628,14 @@ const pt: RegistryCopy = {
     },
   },
   intros: {
+    brussels_griffon: {
+      aka: "Griffon Bruxellois, Brussels Griffon",
+      text: [
+        "O grifo de Bruxelas (Griffon Bruxellois) é um pequeno cão de companhia da Bélgica, de face curta e achatada. O padrão da FCI descreve um pelo vermelho, naturalmente duro e ligeiramente ondulado, e um peso de 3,5 a 6 kg; o Royal Kennel Club britânico, que reconhece uma variedade de pelo duro e outra de pelo curto, descreve-o como um cão pequeno e esperto com temperamento de terrier. Um cão deste tamanho termina o crescimento por volta dos 8–12 meses (PetMD), e o Royal Kennel Club indica uma esperança de vida de mais de 12 anos (PetMD: 12–15 anos).",
+        "O Royal Kennel Club recomenda até 30 minutos de exercício por dia e cuidados com o pelo mais de uma vez por semana, indica que larga pelo e que é adequado para um apartamento, e coloca a raça na categoria 2 do programa Breed Watch. A PetMD descreve um cão de focinho achatado (braquicéfalo) que tolera mal o tempo quente e húmido, aconselha limpar as pregas da face cerca de uma vez por semana e escovar os dentes todos os dias, e escreve que os grifos de Bruxelas se dão bem com crianças e outros animais sob supervisão, mas não gostam de ficar sozinhos durante muito tempo.",
+      ],
+      sources: ["S669", "S670", "S672", "S10"],
+    },
     rat_terrier: {
       aka: "Rattie, Rat Terrier americano",
       text: [

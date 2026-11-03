@@ -635,6 +635,14 @@ const it: RegistryCopy = {
     },
   },
   intros: {
+    brussels_griffon: {
+      aka: "Grifone di Bruxelles, Brussels Griffon",
+      text: [
+        "Il griffon bruxellois è un piccolo cane da compagnia originario del Belgio, con il muso corto e piatto. Lo standard FCI descrive un pelo rosso, naturalmente duro e leggermente ondulato, e un peso di 3,5–6 kg; il Royal Kennel Club britannico, che riconosce una varietà a pelo duro e una a pelo liscio, lo descrive come un piccolo cane intelligente dal carattere da terrier. Un cane di questa taglia completa la crescita verso gli 8–12 mesi (PetMD) e il Royal Kennel Club indica un'aspettativa di vita di oltre 12 anni (PetMD: 12–15 anni).",
+        "Il Royal Kennel Club raccomanda fino a 30 minuti di movimento al giorno e la toelettatura più di una volta alla settimana, indica che perde pelo e che è adatto alla vita in appartamento, e lo inserisce nella categoria 2 del programma Breed Watch. PetMD lo descrive come un cane dal muso schiacciato (brachicefalo), sensibile al caldo umido, consiglia di pulire le pieghe del muso circa una volta alla settimana e di lavare i denti ogni giorno, e scrive che i griffon bruxellois vanno d'accordo con bambini e altri animali sotto supervisione, ma non amano restare soli a lungo.",
+      ],
+      sources: ["S669", "S670", "S672", "S10"],
+    },
     rat_terrier: {
       aka: "Rattie, Rat Terrier americano",
       text: [

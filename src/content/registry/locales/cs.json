@@ -836,6 +836,14 @@
         "Rattie",
         "Americký rat teriér"
       ]
+    },
+    "brussels_griffon": {
+      "name": "Bruselský grifonek",
+      "slug": "bruselsky-grifonek",
+      "synonyms": [
+        "Griffon Bruxellois",
+        "Brussels Griffon"
+      ]
     }
   },
   "suitability_labels": {

@@ -853,6 +853,14 @@
         "Rattie",
         "Američki rat terijer"
       ]
+    },
+    "brussels_griffon": {
+      "name": "Briselski grifon",
+      "slug": "briselski-grifon",
+      "synonyms": [
+        "Griffon Bruxellois",
+        "Brussels Griffon"
+      ]
     }
   },
   "suitability_labels": {

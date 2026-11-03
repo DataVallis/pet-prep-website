@@ -710,6 +710,14 @@
         "Rattie",
         "Amerikaanse Rat Terrier"
       ]
+    },
+    "brussels_griffon": {
+      "name": "Brusselse griffon",
+      "slug": "brusselse-griffon",
+      "synonyms": [
+        "Griffon Bruxellois",
+        "Brussels Griffon"
+      ]
     }
   },
   "suitability_labels": {

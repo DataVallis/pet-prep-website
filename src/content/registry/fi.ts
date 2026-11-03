@@ -784,6 +784,14 @@ const fi: RegistryCopy = {
     },
   },
   intros: {
+    brussels_griffon: {
+      aka: "Griffon Bruxellois, Brussels Griffon",
+      text: [
+        "Brysselingriffoni (Griffon Bruxellois) on Belgiasta kotoisin oleva pieni seurakoira, jolla on lyhyet, litteät kasvot. FCI:n rotumääritelmä kuvaa punaisen, luonnostaan karkean, hieman laineikkaan turkin ja 3,5–6 kg:n painon; brittiläinen Royal Kennel Club, jolla on karkeakarvainen ja sileäkarvainen muunnos, kuvaa sitä fiksuksi pieneksi koiraksi, jolla on terrierimäinen luonne. Tämän kokoinen koira on täysikasvuinen noin 8–12 kuukauden iässä (PetMD), ja Royal Kennel Club ilmoittaa eliniäksi yli 12 vuotta (PetMD: 12–15 vuotta).",
+        "The Royal Kennel Club suosittelee liikuntaa enintään 30 minuuttia päivässä ja turkinhoitoa useammin kuin kerran viikossa, kertoo, että rodusta lähtee karvaa ja että se sopii kerrostaloasuntoon, ja sijoittaa rodun Breed Watchin luokkaan 2. PetMD kuvaa lyhytkuonoisen (brakykefaalisen) koiran, joka sietää huonosti kuumaa ja kosteaa säätä, neuvoo puhdistamaan kasvojen ihopoimut noin kerran viikossa ja harjaamaan hampaat päivittäin ja kertoo, että brysselingriffonit tulevat valvottuina hyvin toimeen lasten ja muiden lemmikkien kanssa mutta eivät viihdy pitkään yksin.",
+      ],
+      sources: ["S669", "S670", "S672", "S10"],
+    },
     rat_terrier: {
       aka: "Rat Terrier, Rattie, amerikkalainen rottaterrieri",
       text: [
