@@ -5,7 +5,9 @@
 #
 # Called by GitHub Actions after it uploaded the commit to <source-dir>
 # (/opt/petprep/website/incoming). Steps:
-#   1. build petprep-website:next from the source (the live site keeps serving)
+#   1. load petprep-website:next from $IMAGE_TAR (built by GitHub Actions — the normal path since
+#      2026-11-02, the server has too little RAM for `next build`), or build it from the source
+#      when IMAGE_TAR is not given (manual fallback; the live site keeps serving either way)
 #   2. smoke-test the new image in a throwaway container on the API network
 #   3. promote: :production -> :previous, :next -> :production
 #   4. recreate the `website` container and wait until it is healthy
@@ -29,11 +31,24 @@ fail() { printf '\nERROR: %s\n' "$*" >&2; exit 1; }
 docker network inspect "$NETWORK" >/dev/null 2>&1 \
   || fail "Docker network ${NETWORK} not found — is the API stack (project 'backend') running?"
 
-log "1/5 Building ${IMAGE}:next (commit ${SHA})"
-docker build --pull \
-  --build-arg NEXT_PUBLIC_SITE_URL="${SITE_URL}" \
-  --label "org.opencontainers.image.revision=${SHA}" \
-  -t "${IMAGE}:next" "${SRC}"
+IMAGE_TAR="${IMAGE_TAR:-}"
+if [ -n "$IMAGE_TAR" ]; then
+  log "1/5 Loading ${IMAGE}:next from ${IMAGE_TAR} (commit ${SHA})"
+  [ -f "$IMAGE_TAR" ] || fail "image archive ${IMAGE_TAR} not found"
+  docker rmi "${IMAGE}:next" >/dev/null 2>&1 || true
+  gunzip -c "$IMAGE_TAR" | docker load
+  rm -f "$IMAGE_TAR"
+  rev="$(docker image inspect -f '{{index .Config.Labels "org.opencontainers.image.revision"}}' "${IMAGE}:next" 2>/dev/null || true)"
+  if [ "$SHA" != "unknown" ] && [ "$rev" != "$SHA" ]; then
+    fail "loaded image is commit '${rev}', expected ${SHA} — nothing changed, the old site keeps running"
+  fi
+else
+  log "1/5 Building ${IMAGE}:next (commit ${SHA}) — needs ~2 GB free RAM"
+  docker build --pull \
+    --build-arg NEXT_PUBLIC_SITE_URL="${SITE_URL}" \
+    --label "org.opencontainers.image.revision=${SHA}" \
+    -t "${IMAGE}:next" "${SRC}"
+fi
 
 log "2/5 Smoke test"
 docker rm -f "$SMOKE" >/dev/null 2>&1 || true

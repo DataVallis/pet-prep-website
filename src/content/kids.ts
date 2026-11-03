@@ -26,7 +26,7 @@ export const kidsCopy: Record<Locale, KidsCopy> = {
     menu: "Für Kinder",
     all: "Alles für Kinder",
     items: [
-      { page: "coloring", title: "Ausmalbilder", text: "12 kostenlose Blätter zum Ausdrucken, jedes mit einem Wissenstipp zur Tierpflege.", image: coloringThumb },
+      { page: "coloring", title: "Ausmalbilder", text: "12 kostenlose Ausmalbilder zum Ausdrucken, jedes mit einem Wissenstipp zur Haustierpflege.", image: coloringThumb },
       { page: "curio", title: "Curio kennenlernen", text: "Unser Maskottchen und seine kurzen Videos.", image: curioThumb },
       { page: "walkyourpet", title: "#walkyourpet", text: "Die Bewegung, die ein Kind gestartet hat: raus zum Spaziergang.", image: null },
     ],
@@ -98,7 +98,7 @@ export const kidsCopy: Record<Locale, KidsCopy> = {
     menu: "Za djecu",
     all: "Sve za djecu",
     items: [
-      { page: "coloring", title: "Bojanke", text: "12\u00a0besplatnih bojanki za ispis – svaka sa zanimljivošću o brizi za životinje.", image: coloringThumb },
+      { page: "coloring", title: "Bojanke", text: "12\u00a0besplatnih bojanki za ispis – svaka sa zanimljivošću o brizi za ljubimca.", image: coloringThumb },
       { page: "curio", title: "Upoznaj Curija", text: "Curio, naša maskota, i njegovi kratki videozapisi.", image: curioThumb },
       { page: "walkyourpet", title: "#walkyourpet", text: "Pokret koji je započelo jedno dijete: izađi u šetnju.", image: null },
     ],
@@ -107,8 +107,8 @@ export const kidsCopy: Record<Locale, KidsCopy> = {
     menu: "Za otroke",
     all: "Vse za otroke",
     items: [
-      { page: "coloring", title: "Pobarvanke", text: "12 brezplačnih strani za tiskanje, vsaka z zanimivostjo o skrbi.", image: coloringThumb },
-      { page: "curio", title: "Spoznajte Curia", text: "Naša maskota in njeni kratki videi.", image: curioThumb },
+      { page: "coloring", title: "Pobarvanke", text: "12 brezplačnih pobarvank za tiskanje, vsaka z zanimivostjo o skrbi za ljubljenčka.", image: coloringThumb },
+      { page: "curio", title: "Spoznaj Curia", text: "Curio, naša maskota, in njegovi kratki videi.", image: curioThumb },
       { page: "walkyourpet", title: "#walkyourpet", text: "Gibanje, ki ga je začel otrok: ven na sprehod.", image: null },
     ],
   },

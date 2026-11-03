@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { pathFor, type Locale } from "@/i18n/config";
+import { englishOnlyPages, pathFor, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/content/types";
 import { site } from "@/lib/site";
 import { companyAddress, companyIdLabels } from "@/content";
@@ -50,7 +50,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
               <nav key={g.title} aria-label={g.title} className="flex flex-col gap-2.5">
                 <h2 className="font-semibold text-fog">{g.title}</h2>
                 {g.links.flatMap((k) => [
-                  <Link key={k} href={pathFor(locale, k)} className="hover:text-fog">
+                  <Link key={k} href={englishOnlyPages.includes(k) ? pathFor("en", k) : pathFor(locale, k)} hrefLang={englishOnlyPages.includes(k) ? "en" : undefined} className="hover:text-fog">
                     {dict.pages[k].navLabel ?? dict.pages[k].eyebrow}
                   </Link>,
                   // Species catalogues of the animal register, indented under "Animals".

@@ -43,6 +43,10 @@ Hub `/animals` → species catalogue `/animals/<species>` (search, filters, sort
 `/meet-curio` · `/sl/spoznaj-curia` (David 2026-10-25), linked from the footer only (group Company), never the header. Curio is the brand mascot, **not** the pet in the app — the page says so next to a real app breed portrait. Content: `pages.curio` in `src/content/{en,sl}.ts`, with the optional page `hero` and the blocks `pair`, `gallery` (images; a tile with `video` becomes a player with a poster, never autoplay) and `downloads` (media kit + usage rules).
 Images: `public/curio/*.webp` (display) and `public/curio/kit/` (download originals), copied from `brand/mascot/` in the `pet-prep` repo; `public/curio/petprep-curio-media-kit.zip` = everything in `kit/` (rebuild it when a kit file changes: `cd public/curio/kit && zip -X ../petprep-curio-media-kit.zip *`). Social profiles (`site.social`, also JSON-LD `sameAs`): TikTok and Instagram `@petprep.si`.
 
+## Investors page
+
+`/investors` (David 2026-11-01, design `docs/design/investors-design.html`) — **English only**, its own route `src/app/[locale]/investors/` (not built under `[slug]`); every other language's investor URL redirects 308 to it (`englishOnlyPages` in `src/i18n/config.ts` → `next.config.ts`). Linked from the footer only, `noindex, follow`, not in `sitemap.xml`, `llms*.txt` or IndexNow. Copy: `src/content/investors.ts`. **Every number is computed** (`src/lib/investorStats.ts` → pure `investorStatsCore.ts`, unit test `npm test`): breeds (registry), unique sources (registry + care, deduplicated by URL), verified foods, live languages, vet-directory countries, colouring pages, and "12 Weeks" episodes + views from the YouTube Data API v3 (env `YOUTUBE_API_KEY`, server `.env` via the deploy secret, cached a day). A value that cannot be computed hides its card — never 0 or a placeholder. The page revalidates hourly; the Web Summit card hides itself after 12 November 2026. YouTube embeds load only after a click (youtube-nocookie.com).
+
 ## #walkyourpet page
 
 `/walkyourpet` · `/sl/walkyourpet` (David 2026-10-30) — home of the #walkyourpet movement: how the phrase started (a real child's sentence, story card in `public/walkyourpet/`), what it means in the app (dog walks = real steps; not for cats), how families join (parents post, no children's faces or names, repost only with permission) and FAQ. The phrase is never translated, so the slug is the same in every language. Footer link only (group Company). Add new real moments as they come in — never invented quotes. Rules: `WALKYOURPET.md` (pet-prep docs).
@@ -84,8 +88,9 @@ Local test: `KLAVIYO_PRIVATE_API_KEY=pk_… KLAVIYO_LIST_ID=… npm run dev`.
 Same server as the API (`api.petprep.si`, Hetzner, Docker). Push to `main` → GitHub Actions (`.github/workflows/ci-deploy.yml`):
 
 1. **checks** — lint, build, types, shellcheck; **image** — Docker build + smoke test.
-2. **deploy** — rsync to `/opt/petprep/website/incoming` as `deploy@<host>`, then `deploy/deploy.sh`:
-   builds `petprep-website:next`, smoke-tests it, promotes `:production` → `:previous` and `:next` → `:production`,
+2. **deploy** — builds the production image **on the GitHub runner** (reusing the `image` job's cache), `docker save | gzip` →
+   `/opt/petprep/website/website-image.tar.gz`, rsyncs the source to `/opt/petprep/website/incoming` as `deploy@<host>`, then
+   `IMAGE_TAR=… deploy/deploy.sh`: loads `petprep-website:next` (checks its revision label = the commit), smoke-tests it, promotes `:production` → `:previous` and `:next` → `:production`,
    recreates the `petprep-website` container (`deploy/compose.yaml`) on the API's Docker network `backend_petprep-network`
    (alias `website`), waits for the health check and rolls back to `:previous` on failure.
 
@@ -106,5 +111,7 @@ Caddy (in the API stack, `deployment/Caddyfile` of the `pet-prep` repo) terminat
 The two Klaviyo values are written to `/opt/petprep/website/.env` (mode 600) on every deploy and read by the container at start.
 Without them the early-access form answers “not configured” (HTTP 503).
 
-Manual deploy on the server: `bash /opt/petprep/website/incoming/deploy/deploy.sh /opt/petprep/website/incoming manual`.
+**Why not build on the server (2026-11-02):** with 15 languages `next build` prerenders ~7,000 pages, takes ~10 min and peaks at ~2 GB RAM; on the 4 GB API server the build was killed mid-way (deploy step ended with ssh exit 255, no error message). Building on the runner keeps the API's memory untouched.
+
+Manual deploy on the server (fallback, builds there — needs ~2 GB free RAM): `bash /opt/petprep/website/incoming/deploy/deploy.sh /opt/petprep/website/incoming manual`.
 Rollback: `docker tag petprep-website:previous petprep-website:production && docker compose -f /opt/petprep/website/incoming/deploy/compose.yaml up -d --force-recreate`.

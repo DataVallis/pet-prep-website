@@ -598,14 +598,6 @@
       "name": "Basenji",
       "slug": "basenji"
     },
-    "greater_swiss_mountain_dog": {
-      "name": "Grand Bouvier Suisse",
-      "slug": "grand-bouvier-suisse",
-      "synonyms": [
-        "Grosser Schweizer Sennenhund",
-        "Greater Swiss Mountain Dog"
-      ]
-    },
     "maine_coon": {
       "name": "Maine Coon",
       "slug": "maine-coon"
@@ -645,20 +637,32 @@
         "Chat bengal"
       ]
     },
+    "rat_terrier": {
+      "name": "Rat Terrier",
+      "slug": "rat-terrier",
+      "synonyms": [
+        "Rattie",
+        "Ratty",
+        "American Rat Terrier"
+      ]
+    },
+    "greater_swiss_mountain_dog": {
+      "name": "Grand bouvier suisse",
+      "slug": "grand-bouvier-suisse",
+      "synonyms": [
+        "Grand Suisse",
+        "Grosser Schweizer Sennenhund",
+        "Großer Schweizer Sennenhund",
+        "Swissy",
+        "Greater Swiss Mountain Dog"
+      ]
+    },
     "shar_pei": {
       "name": "Shar Pei",
       "slug": "shar-pei",
       "synonyms": [
         "Shar-Pei chinois",
         "Sharpei"
-      ]
-    },
-    "rat_terrier": {
-      "name": "Rat Terrier",
-      "slug": "rat-terrier",
-      "synonyms": [
-        "Rattie",
-        "Rat Terrier américain"
       ]
     }
   },
@@ -689,12 +693,12 @@
       "large_home": "une grande maison avec jardin",
       "lively_older_children": "chien vif – plutôt pour des enfants plus grands",
       "long_daily_exercise": "a besoin de beaucoup d’exercice chaque jour",
-      "low_shedding": "les foyers qui préfèrent moins de poils",
+      "low_shedding": "les foyers qui veulent limiter les poils à la maison",
       "may_herd_children": "peut « rassembler » les enfants pendant le jeu",
       "needs_company": "aime la compagnie – idéal si quelqu’un est présent la majeure partie de la journée",
       "needs_mental_stimulation": "a besoin de stimulation mentale",
       "not_for_small_children": "grand chien – déconseillé aux foyers avec de jeunes enfants",
-      "often_alone": "les familles absentes quelques heures",
+      "often_alone": "les familles qui s’absentent quelques heures par jour",
       "older_children": "petit chien – plutôt pour des enfants plus grands",
       "older_owners": "les propriétaires plus âgés",
       "other_pets": "les foyers avec d’autres animaux",

@@ -610,14 +610,6 @@
       "name": "Basenji",
       "slug": "basenji"
     },
-    "greater_swiss_mountain_dog": {
-      "name": "Gran Boyero Suizo",
-      "slug": "gran-boyero-suizo",
-      "synonyms": [
-        "Grosser Schweizer Sennenhund",
-        "Greater Swiss Mountain Dog"
-      ]
-    },
     "maine_coon": {
       "name": "Maine coon",
       "slug": "maine-coon"
@@ -660,20 +652,32 @@
         "Bengal"
       ]
     },
-    "shar_pei": {
-      "name": "Shar Pei",
-      "slug": "shar-pei",
-      "synonyms": [
-        "Shar-Pei chino",
-        "Sharpei"
-      ]
-    },
     "rat_terrier": {
-      "name": "Rat Terrier",
+      "name": "Rat terrier",
       "slug": "rat-terrier",
       "synonyms": [
         "Rattie",
-        "Rat Terrier americano"
+        "Ratty",
+        "American rat terrier"
+      ]
+    },
+    "greater_swiss_mountain_dog": {
+      "name": "Gran boyero suizo",
+      "slug": "gran-boyero-suizo",
+      "synonyms": [
+        "Großer Schweizer Sennenhund",
+        "Grosser Schweizer Sennenhund",
+        "Swissy",
+        "Greater Swiss mountain dog"
+      ]
+    },
+    "shar_pei": {
+      "name": "Shar pei",
+      "slug": "shar-pei",
+      "synonyms": [
+        "Shar-pei",
+        "Sharpei",
+        "Chinese shar-pei"
       ]
     }
   },
@@ -685,7 +689,7 @@
       "apartment": "la vida en un piso",
       "back_spine": "espalda larga: columna delicada, conviene evitar los saltos",
       "brachycephalic_breathing": "cara chata: dificultades para respirar y sensibilidad al calor",
-      "chases_small_pets": "fuerte instinto de caza: puede perseguir a animales pequeños",
+      "chases_small_pets": "fuerte instinto de caza: puede perseguir a mascotas pequeñas",
       "chews_when_bored": "muerde objetos cuando se aburre",
       "children": "las familias con niños",
       "cold_sensitive": "pelo fino: sufre con el frío",
@@ -694,17 +698,17 @@
       "eyelid_problems": "párpados y ojos: comprueba las revisiones oculares",
       "family_pet": "la vida en familia",
       "first_time_owner": "quienes tienen mascota por primera vez",
-      "food_motivated_weight": "muy glotón: vigila su peso",
+      "food_motivated_weight": "muy motivado por la comida: vigila su peso",
       "fragile_older_children": "huesos frágiles: mejor con niños mayores",
       "frequent_grooming": "hay que cepillarlo varias veces por semana",
       "heart_and_spine": "corazón y columna: comprueba las pruebas de salud",
       "heat_sensitive": "pelaje denso: lleva mal el calor",
       "hips_hind_legs": "caderas y patas traseras: comprueba la salud de las articulaciones",
-      "independent_experienced_owner": "independiente y testarudo: ideal con un dueño con experiencia",
+      "independent_experienced_owner": "independiente y testarudo: ideal para un dueño con experiencia",
       "large_home": "una casa grande con jardín",
       "lively_older_children": "perro muy vivo: mejor con niños mayores",
       "long_daily_exercise": "necesita mucho ejercicio cada día",
-      "low_shedding": "los hogares que prefieren menos pelo",
+      "low_shedding": "los hogares que prefieren que suelte poco pelo",
       "may_herd_children": "puede intentar «reunir» a los niños mientras juegan",
       "needs_company": "le gusta la compañía: ideal si hay alguien en casa la mayor parte del día",
       "needs_mental_stimulation": "necesita estimulación mental",
@@ -712,7 +716,7 @@
       "often_alone": "las familias que pasan algunas horas fuera de casa",
       "older_children": "perro pequeño: mejor con niños mayores",
       "older_owners": "los dueños de más edad",
-      "other_pets": "los hogares con otros animales",
+      "other_pets": "los hogares con otras mascotas",
       "secure_fencing": "tiende a escaparse: necesita una valla alta y segura",
       "sensitive_older_children": "perro sensible: mejor con niños mayores",
       "sensitive_skin": "piel sensible: propenso a picores e inflamaciones",
@@ -721,7 +725,7 @@
       "shorter_lifespan": "esperanza de vida más corta",
       "small_children": "las familias con niños pequeños",
       "sun_protection": "piel sin pelo: necesita protección solar",
-      "independent_older_children": "perro independiente – mejor con niños mayores"
+      "independent_older_children": "perro independiente: mejor con niños mayores"
     }
   }
 }

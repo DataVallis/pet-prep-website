@@ -22,6 +22,7 @@ jobs:
           cache: npm
       - run: npm ci --no-audit --no-fund
       - run: npm run lint
+      - run: npm test
       - run: npm run build
       - run: npx tsc --noEmit
       - name: Shellcheck deploy script
@@ -74,6 +75,24 @@ jobs:
       url: https://petprep.si
     steps:
       - uses: actions/checkout@v4
+      # The image is built here, not on the server (2026-11-02): with 15 languages `next build`
+      # prerenders ~7,000 pages and peaks at ~2 GB RAM, which the 4 GB API server cannot spare
+      # (the build was killed mid-way, ssh exit 255). The runner reuses the `image` job's cache.
+      - uses: docker/setup-buildx-action@v3
+      - name: Build the production image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          push: false
+          load: true
+          tags: petprep-website:next
+          build-args: NEXT_PUBLIC_SITE_URL=https://petprep.si
+          labels: org.opencontainers.image.revision=${{ github.sha }}
+          cache-from: type=gha,scope=petprep-website
+      - name: Export the image
+        run: |
+          docker save petprep-website:next | gzip -1 > website-image.tar.gz
+          ls -lh website-image.tar.gz
       - name: Upload and deploy
         env:
           SSH_PRIVATE_KEY: ${{ secrets.PRODUCTION_SSH_PRIVATE_KEY }}
@@ -82,6 +101,8 @@ jobs:
           COMMIT_SHA: ${{ github.sha }}
           KLAVIYO_PRIVATE_API_KEY: ${{ secrets.KLAVIYO_PRIVATE_API_KEY }}
           KLAVIYO_LIST_ID: ${{ secrets.KLAVIYO_LIST_ID }}
+          # /investors: "12 Weeks" episodes and views (YouTube Data API v3, read-only key). Optional.
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
         run: |
           if [ -z "$SSH_PRIVATE_KEY" ]; then
             echo "ERROR: the PRODUCTION_SSH_PRIVATE_KEY secret is not set for this repository."
@@ -95,21 +116,31 @@ jobs:
 
           echo "1. Uploading commit $COMMIT_SHA to /opt/petprep/website/incoming"
           $SSH "${SSH_USER}@${SSH_HOST}" "mkdir -p /opt/petprep/website/incoming"
-          rsync -az --delete --exclude '.git' --exclude 'node_modules' --exclude '.next' \
+          rsync -az --delete --exclude '.git' --exclude 'node_modules' --exclude '.next' --exclude 'website-image.tar.gz' \
             -e "$SSH" ./ "${SSH_USER}@${SSH_HOST}:/opt/petprep/website/incoming/"
+          echo "   and the image built on the runner"
+          rsync -a --partial -e "$SSH" website-image.tar.gz "${SSH_USER}@${SSH_HOST}:/opt/petprep/website/website-image.tar.gz"
 
           echo "2. Runtime secrets"
+          ENV_FILE=""
           if [ -n "$KLAVIYO_PRIVATE_API_KEY" ] && [ -n "$KLAVIYO_LIST_ID" ]; then
-            printf 'KLAVIYO_PRIVATE_API_KEY=%s\nKLAVIYO_LIST_ID=%s\n' "$KLAVIYO_PRIVATE_API_KEY" "$KLAVIYO_LIST_ID" \
-              | $SSH "${SSH_USER}@${SSH_HOST}" "umask 077 && cat > /opt/petprep/website/.env"
-            echo "Klaviyo settings written to /opt/petprep/website/.env"
+            ENV_FILE="$(printf 'KLAVIYO_PRIVATE_API_KEY=%s\nKLAVIYO_LIST_ID=%s\n' "$KLAVIYO_PRIVATE_API_KEY" "$KLAVIYO_LIST_ID")"
           else
             echo "WARNING: KLAVIYO_PRIVATE_API_KEY / KLAVIYO_LIST_ID not set — the early-access form will answer 503 until they are."
           fi
+          if [ -n "$YOUTUBE_API_KEY" ]; then
+            ENV_FILE="$(printf '%s\nYOUTUBE_API_KEY=%s\n' "$ENV_FILE" "$YOUTUBE_API_KEY")"
+          else
+            echo "NOTE: YOUTUBE_API_KEY not set — /investors hides the \"12 Weeks\" episode and view counts."
+          fi
+          if [ -n "$ENV_FILE" ]; then
+            printf '%s\n' "$ENV_FILE" | $SSH "${SSH_USER}@${SSH_HOST}" "umask 077 && cat > /opt/petprep/website/.env"
+            echo "Runtime settings written to /opt/petprep/website/.env"
+          fi
 
-          echo "3. Building and switching the website container"
+          echo "3. Loading the image and switching the website container"
           $SSH "${SSH_USER}@${SSH_HOST}" \
-            "bash /opt/petprep/website/incoming/deploy/deploy.sh /opt/petprep/website/incoming $COMMIT_SHA"
+            "IMAGE_TAR=/opt/petprep/website/website-image.tar.gz bash /opt/petprep/website/incoming/deploy/deploy.sh /opt/petprep/website/incoming $COMMIT_SHA"
 
       # IndexNow (David 2026-10-31, M6-K): tell Bing (→ ChatGPT, Copilot) and other IndexNow
       # engines about every URL in the sitemap after a deploy. Key file: public/f1404c440df09203fa7aeccfaa86137d.txt.

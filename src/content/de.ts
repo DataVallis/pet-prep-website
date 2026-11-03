@@ -26,8 +26,8 @@ const de: Dictionary = {
     secondary: "So funktioniert es",
     earlyAccess: "Frühen Zugang sichern",
     earlyAccessSubject: "PetPrep – früher Zugang",
-    ios: "Für iPhone laden",
-    android: "Für Android laden",
+    ios: "Für iPhone herunterladen",
+    android: "Für Android herunterladen",
     comingSoon: "Bald für iPhone und Android",
     readMore: "Weiterlesen",
     contactUs: "Kontakt aufnehmen",
@@ -133,7 +133,7 @@ const de: Dictionary = {
       eyebrow: "Die 12-wöchige PetPrep Challenge",
       title: "Bereit für ein Haustier. An seiner Seite – sein ganzes Leben lang.",
       lead:
-        "Bevor ein echtes Haustier einzieht, kümmert sich Ihr Kind 12 Wochen lang um ein lebensechtes KI-Haustier – füttern, saubermachen und echte Spaziergänge. Sie sehen jeden Tag, ob es wirklich bereit ist.",
+        "Bevor ein echtes Haustier einzieht, kümmert sich Ihr Kind 12 Wochen lang um ein lebensechtes KI-Haustier – mit Füttern, Saubermachen und echten Spaziergängen. Sie sehen jeden Tag, ob es wirklich bereit ist.",
       trust: ["Mischling für immer kostenlos", "Keine Werbung, kein Chat mit Fremden", "Kinder brauchen keine E-Mail"],
     },
     phone: {
@@ -153,7 +153,7 @@ const de: Dictionary = {
       note: "Das Video ist auf Englisch. Die App ist noch nicht öffentlich im App Store und bei Google Play erhältlich – melden Sie sich für den frühen Zugang an.",
     },
     promise: {
-      quote: "Jede Familie hört „Ich verspreche, ich kümmere mich darum.“ PetPrep macht aus dem Versprechen einen",
+      quote: "Jede Familie kennt den Satz „Ich verspreche, ich kümmere mich darum.“ PetPrep macht aus dem Versprechen einen",
       highlight: "Beweis",
       text:
         "Scheitern in der Simulation ist ein Erfolg für Ihre Familie: Sie erfahren es, bevor ein echtes Tier leidet – und bevor Sie sich auf Jahre voller Pflege und Kosten festlegen.",
@@ -186,13 +186,13 @@ const de: Dictionary = {
         { title: "Es verhält sich wie ein echtes Tier", text: "Welpen müssen raus. Gelangweilte Hunde zerkauen Hausschuhe. Erst wird saubergemacht, dann gibt es Abendessen." },
         { title: "Schule und Schlaf haben Vorrang", text: "In den Ruhezeiten pausieren die Erinnerungen. Eine Mahlzeit während der Schulzeit übernehmen Sie, nicht Ihr Kind." },
         { title: "Echte Konsequenzen, behutsam", text: "Vernachlässigung bedeutet einen Tierarztbesuch oder das Tierheim – nie beängstigend, immer mit einem Neuanfang." },
-        { title: "Einzigartig", text: "Jedes Haustier bekommt sein eigenes Fell, eigene Abzeichen und Augen – fotorealistisch und nie zweimal gleich." },
+        { title: "Einzigartig", text: "Jedes Haustier bekommt sein eigenes Fell, eigene Abzeichen, eigene Augen – fotorealistisch und nie zweimal gleich." },
       ],
     },
     parents: {
       eyebrow: "Für Eltern",
       title: "Sie sehen die Wahrheit, live.",
-      text: "Eine klare Ampel für jedes Kind, ein Care Score aus pünktlich erledigten Routinen und eine Zeitleiste, wer was getan hat. Geschwister, die sich ein Haustier teilen, bekommen jeweils ihren eigenen fairen Score.",
+      text: "Eine klare Ampel für jedes Kind, ein Care Score aus pünktlich erledigten Routinen und eine Zeitleiste, die zeigt, wer was getan hat. Geschwister, die sich ein Haustier teilen, bekommen jeweils ihren eigenen fairen Score.",
       points: [
         { strong: "Ruhezeiten und eine Pause-Taste", text: "Sie behalten die Kontrolle." },
         { strong: "Kinder melden sich mit einem Code an", text: "keine E-Mail, kein Nachname, keine Werbung." },
@@ -392,7 +392,7 @@ const de: Dictionary = {
       eyebrow: "Wenn es einzieht",
       title: "Die Simulation endet. Die Fürsorge nicht.",
       lead:
-        "Wenn Ihre Familie ein echtes Haustier nach Hause holt, macht ein Tippen aus PetPrep einen Assistenten für das ganze Leben des Tieres – in Echtzeit, ohne Statusbalken und mit dem Alltag Ihrer Familie schon vertraut.",
+        "Wenn Ihre Familie ein echtes Haustier nach Hause holt, macht ein Tippen aus PetPrep einen Assistenten für das ganze Leben des Tieres – in Echtzeit, ohne Statusbalken und bereits vertraut mit dem Alltag Ihrer Familie.",
       planned: true,
       blocks: [
         {
@@ -404,7 +404,7 @@ const de: Dictionary = {
             { title: "Hinweise, die erklären", text: "„Max ist heute 2 km gelaufen, halb so viel wie sonst, und hatte eine größere Mahlzeit. Ein zusätzlicher Abendspaziergang hilft ihm, zur Ruhe zu kommen.“ Eine Beobachtung, ein Grund, ein Vorschlag." },
             { title: "Zuerst die KI, dann der echte Tierarzt", text: "Stellen Sie eine Frage oder laden Sie ein Foto hoch. Der Assistent beantwortet allgemeine Fragen, schätzt die Dringlichkeit ein und übergibt bei Bedarf an einen echten Tierarzt – dringende Anzeichen gehen direkt an eine Tierarztpraxis." },
             { title: "DNA-Test für Ihren Hund oder Ihre Katze", text: "Bestellen Sie einen DNA-Test in der App oder laden Sie das Ergebnis eines vorhandenen Tests hoch. PetPrep zeigt, welche Rassen im Mix stecken, was für sie typisch ist und welche Gesundheitsprobleme bei diesen Rassen häufiger vorkommen – mit Quellen. Rassenanteile sind keine Diagnose, und ein DNA-Test zeigt keine Allergien." },
-            { title: "Eine Karte für den Tierarzt", text: "Der Rassemix und direkte DNA-Befunde auf einer Seite oder als QR-Code, damit Ihr Tierarzt sofort weiß, was in einem Mischling steckt." },
+            { title: "Eine Karte für den Tierarzt", text: "Der Rassemix und etwaige direkte DNA-Befunde auf einer Seite oder als QR-Code, damit Ihr Tierarzt sofort weiß, was in einem Mischling steckt." },
             { title: "Wachstum und Ernährung", text: "Tragen Sie wöchentlich das Gewicht ein, sehen Sie die Wachstumskurve und erhalten Sie eine Erinnerung, wenn es Zeit für ein anderes Futter ist." },
           ],
         },
@@ -480,7 +480,7 @@ const de: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "Für welches Alter ist PetPrep gedacht?", a: "Für Kinder ist es auf etwa 7 bis 12 Jahre ausgelegt und funktioniert gut bis 16. Auch Erwachsene nutzen es, um zu prüfen, ob eine bestimmte Rasse wirklich zu ihnen passt, bevor sie kaufen oder adoptieren." },
+            { q: "Für welches Alter ist PetPrep gedacht?", a: "PetPrep ist für Kinder von etwa 7 bis 12 Jahren gedacht und funktioniert auch bis 16 gut. Auch Erwachsene nutzen es, um zu prüfen, ob eine bestimmte Rasse wirklich zu ihnen passt, bevor sie kaufen oder adoptieren." },
             { q: "Kann ich PetPrep allein nutzen, ohne Kinder?", a: "Ja. Legen Sie ein Konto als Elternteil an und fügen Sie sich selbst als Betreuerprofil hinzu – ein Spitzname genügt, lassen Sie das Geburtsjahr leer. Wählen Sie die Rasse, erstellen Sie einen 6-stelligen Code und wählen Sie dann auf demselben oder einem anderen Handy „I'm a kid“ („Ich bin ein Kind“) und geben Sie den Code ein – so werden Sie zur betreuenden Person. Weil es ein Familienhund wird, können Sie später Ihren Partner oder Ihre Kinder hinzufügen und sich gemeinsam kümmern. Der Preis ist derselbe wie für Familien." },
             { q: "Wie viel Zeit kostet es pro Tag?", a: "Ein paar Minuten für Futter, Wasser und Saubermachen – plus den Spaziergang, den ein echter Hund ohnehin bräuchte." },
             { q: "Verfolgt die App den Standort meines Kindes?", a: "Nein. Für Spaziergänge zählt sie nur Schritte. Wenn Sie es erlauben, liest sie diese aus Apple Health (iPhone) oder Health Connect (Android) – nur lesend und nur Schritte; wo verfügbar, nutzt sie auch den Bewegungssensor des Handys. Die Berechtigung wird auf dem Spaziergang-Bildschirm abgefragt. GPS wird nicht genutzt." },
@@ -649,7 +649,7 @@ const de: Dictionary = {
               paragraphs: [
                 "Der angepasste Modus ist für Kinder, die einen Rollstuhl nutzen: Der Spaziergang zählt dann Rollstuhlschübe statt Schritte. Er kommt mit dem nächsten App-Update in die App; im Folgenden beschreiben wir, welche Daten wir verarbeiten, wenn ein Elternteil ihn einschaltet.",
                 "Schaltet ein Elternteil den angepassten Modus für ein Kind ein, speichern wir nur die Tatsache, dass er eingeschaltet ist. Wir fragen nicht nach einem Grund, einer Diagnose oder einem Gesundheitszustand und speichern nichts davon.",
-                "Solange er eingeschaltet ist, liest die App auf dem Handy des Kindes statt Schritten nur Rollstuhlschübe – aus Apple Health (von einer Apple Watch erfasst) oder Health Connect, mit einer eigenen Berechtigung nur zum Lesen. Den Bewegungssensor nutzt sie dann nicht. Nur die heutige Zahl der Schübe geht an unseren Server; wir vermerken für diesen Tag, dass Schübe gezählt werden.",
+                "Solange er eingeschaltet ist, liest die App auf dem Handy des Kindes statt Schritten nur Rollstuhlschübe – aus Apple Health (von einer Apple Watch erfasst), mit einer eigenen Berechtigung nur zum Lesen. Auf Android liest die App keine Schübe; stattdessen trägt ein Elternteil die Spaziergangsminuten ein. Den Bewegungssensor nutzt sie dann nicht. Nur die heutige Zahl der Schübe geht an unseren Server; wir vermerken für diesen Tag, dass Schübe gezählt werden.",
                 "Ein Elternteil kann für ein Kind im angepassten Modus Spaziergangsminuten eintragen (nur für heute). Wir speichern das Datum, die Zahl der Minuten und welcher Elternteil den Spaziergang eingetragen hat.",
                 "Da die Tatsache, dass der angepasste Modus eingeschaltet ist, auf einen Gesundheitszustand des Kindes hindeuten kann, verarbeiten wir sie nur auf Grundlage Ihrer ausdrücklichen Einwilligung (Art. 9 Abs. 2 lit. a DSGVO), die Sie als Elternteil oder gesetzlicher Vertreter im Namen des Kindes (Art. 8 DSGVO) durch Einschalten des Schalters erteilen. Sie können den Modus jederzeit ausschalten; die App zählt dann wieder Schritte.",
                 "Diese Daten (der Schalter, in Schüben gezählte Tage und eingetragene Spaziergänge) sind im Datenexport Ihrer Familie enthalten und werden zusammen mit dem Profil des Kindes oder Ihrem Konto gelöscht; aus unseren verschlüsselten Backups verschwinden sie wie alle anderen Daten spätestens nach 35 Tagen.",
@@ -775,7 +775,7 @@ const de: Dictionary = {
             {
               heading: "3. Die 12-wöchige Challenge, der Care Score und das Zertifikat",
               items: [
-                "Die Challenge dauert 12 Wochen (84 Programmtage) und beginnt mit dem Kauf; jede betreuende Person hat ihr eigenes Ende. Zeit, in der das Spiel auf die Zahlung wartet, zählt nicht zu den 12 Wochen.",
+                "Die Challenge dauert 12 Wochen (84 Programmtage) und beginnt mit dem Kauf; jede betreuende Person hat ihr eigenes Enddatum. Zeit, in der das Spiel auf die Zahlung wartet, zählt nicht zu den 12 Wochen.",
                 "Der Care Score (0–100) zeigt, welchen Anteil der erwarteten Routinen (Füttern, Wasser, Saubermachen, Spaziergang, eine Trainingseinheit) die betreuende Person selbst erledigt hat; jede Krankheit des Haustiers senkt ihn. Zeiten, in denen das Spiel angehalten ist oder das Haustier beim Tierarzt ist, sowie Ruhezeiten zählen nie gegen die betreuende Person.",
                 "Nach 12 Wochen wird ein Endergebnis festgehalten, das sich später nicht mehr ändert; Pflege nach der Challenge wirkt sich nicht darauf aus. Mit einem Score von 70 oder mehr können Sie in der App ein Verantwortungszertifikat (PDF) erstellen; unter 70 erhalten Sie einen Challenge-Bericht.",
                 "Bleibt Futter, Wasser oder Sauberkeit 24 Stunden lang bei 0 %, wird das Haustier „ins Tierheim gebracht“ (Spielende). Das Spiel mit diesem Haustier endet, es gibt kein Zertifikat, und Sie erhalten einen Challenge-Bericht.",
@@ -967,7 +967,7 @@ const de: Dictionary = {
           type: "prose",
           heading: "Keine App mehr? Löschung per E-Mail beantragen",
           paragraphs: [
-            "Schreiben Sie von der E-Mail-Adresse Ihres PetPrep-Elternkontos an [privacy@petprep.si](mailto:privacy@petprep.si), Betreff „Delete my account“ (Konto löschen). Wir prüfen, ob die Anfrage vom Kontoinhaber stammt, löschen das Konto spätestens innerhalb eines Monats (meist innerhalb weniger Tage) und bestätigen es per E-Mail.",
+            "Schreiben Sie von der E-Mail-Adresse Ihres PetPrep-Elternkontos an [privacy@petprep.si](mailto:privacy@petprep.si), Betreff „Delete my account“ (Konto löschen). Wir prüfen, ob die Anfrage vom Kontoinhaber stammt, löschen das Konto spätestens binnen eines Monats (meist innerhalb weniger Tage) und bestätigen es per E-Mail.",
             "Um nur das Profil eines Kindes zu löschen, melden Sie sich als Elternteil an und öffnen das Kind unter Controls → Children → Delete profile.",
           ],
         },
@@ -1035,7 +1035,7 @@ const de: Dictionary = {
           id: "mission",
           heading: "Unsere Mission",
           paragraphs: [
-            "Jede Familie hört „Ich verspreche, ich kümmere mich darum.“ PetPrep macht aus diesem Versprechen einen Beweis: 12 Wochen lang kümmert sich ein Kind – oder ein Erwachsener, der sich eine bestimmte Rasse wünscht – um ein lebensechtes KI-Haustier mit den täglichen Bedürfnissen eines echten Tieres, und die Eltern sehen jeden Tag, ob die Pflege durchhält.",
+            "Jede Familie kennt den Satz „Ich verspreche, ich kümmere mich darum.“ PetPrep macht aus diesem Versprechen einen Beweis: 12 Wochen lang kümmert sich ein Kind – oder ein Erwachsener, der sich eine bestimmte Rasse wünscht – um ein lebensechtes KI-Haustier mit den täglichen Bedürfnissen eines echten Tieres, und die Eltern sehen jeden Tag, ob die Pflege durchhält.",
             "Auch Scheitern in der Simulation ist ein gutes Ergebnis: Die Familie erfährt es, bevor ein echtes Tier leidet und bevor sie sich auf Jahre voller Pflege und Kosten festlegt. Wenn dann ein echtes Haustier einzieht, soll PetPrep für das ganze Leben des Tieres nützlich bleiben.",
           ],
         },
@@ -1074,7 +1074,7 @@ const de: Dictionary = {
           id: "who",
           heading: "Wer ist Curio?",
           paragraphs: [
-            "Curio begann als Zeichen in unserem Logo: ein abgerundetes grafitfarbenes Quadrat mit zwei großen Augen, die nach rechts oben schauen, und einer kleinen himbeerroten Nase. Auf Slowenisch nennen wir es Radovednež – „der Neugierige“. Im Oktober 2026 bekam es kurze Arme, stämmige Beinchen und ein mintgrünes Halsband mit runder Marke und wurde zu einer Figur.",
+            "Curio begann als Bildmarke in unserem Logo: ein abgerundetes grafitfarbenes Quadrat mit zwei großen Augen, die nach rechts oben schauen, und einer kleinen himbeerroten Nase. Auf Slowenisch nennen wir es Radovednež – „der Neugierige“. Im Oktober 2026 bekam es kurze Arme, stämmige Beinchen und ein mintgrünes Halsband mit runder Hundemarke und wurde zu einer Figur.",
             "Curio hat keinen Mund. Alles, was es fühlt, zeigt sich in seinen Augen: weit offen, wenn jemand „Gassi?“ flüstert, zwei müde Striche, wenn noch niemand nach Hause gekommen ist, fröhliche Bögen, wenn der Napf voll ist.",
             "Curio ist ein „Es“ – weder Junge noch Mädchen, weder Hund noch Katze. Es steht für jedes Haustier, das jeden Tag darauf wartet, dass jemand sein Versprechen hält.",
           ],
@@ -1086,7 +1086,7 @@ const de: Dictionary = {
           columns: 3,
           items: [
             { title: "Name", text: "Curio auf Englisch, Radovednež auf Slowenisch." },
-            { title: "Gemacht aus", text: "Weichem Grafit, einem mintgrünen Halsband und einer himbeerroten Marke – den PetPrep-Farben." },
+            { title: "Gemacht aus", text: "Weichem Grafit, einem mintgrünen Halsband und einer himbeerroten Hundemarke – den PetPrep-Farben." },
             { title: "Spricht", text: "Nie. Nur mit den Augen." },
             { title: "Liebt", text: "Spaziergänge, einen vollen Napf und Kinder, die auch am 15. Tag wiederkommen." },
             { title: "Lebt", text: "In unseren kurzen Videos auf [TikTok](https://www.tiktok.com/@petprep.si) und [Instagram](https://www.instagram.com/petprep.si/), @petprep.si." },
@@ -1250,7 +1250,7 @@ const de: Dictionary = {
           items: [
             "Eltern posten, nicht Kinder. Nur Eltern entscheiden, was online geht.",
             "Keine Gesichter, Namen, Schulen oder Adressen von Kindern – und nie das Kind einer anderen Familie.",
-            "Wir teilen nur mit Erlaubnis der Eltern erneut, und wir nehmen einen Beitrag jederzeit herunter, wenn Sie darum bitten.",
+            "Wir teilen Beiträge nur mit Erlaubnis der Eltern weiter, und wir nehmen einen Beitrag jederzeit herunter, wenn Sie darum bitten.",
             "Zitate von Kindern sind immer echt. Wir erfinden oder „verbessern“ nie, was ein Kind gesagt hat.",
             "Es ist eine Einladung, keine Pflicht. Keine Serien, die man halten muss, kein Druck – nur ein guter Grund, rauszugehen.",
           ],
@@ -1269,7 +1269,7 @@ const de: Dictionary = {
             { q: "Brauche ich PetPrep, um mitzumachen?", a: "Nein. Jeder, der für ein Haustier nach draußen geht, kann #walkyourpet verwenden. PetPrep ist der Ort, an dem der Satz entstanden ist und an dem der Spaziergang eines Übungshundes nur in echten Schritten zählt." },
             { q: "Funktioniert es in PetPrep auch für Katzen?", a: "Nicht als Spaziergang. Katzen gehen nicht spazieren, deshalb werden die Bedürfnisse einer Katze in PetPrep mit Spielen erfüllt, nicht mit Schritten. Spaziergänge sind für Hunde." },
             { q: "Warum ist der Satz auf Englisch?", a: "Weil das Kind ihn so gesagt hat – auf Englisch, mitten in einem slowenischen Satz. Kinder überall mischen Englisch in ihre Sätze, deshalb bleibt er in jeder Sprache gleich." },
-            { q: "Zeigen Sie mein Kind in Ihren Beiträgen?", a: "Nur, was Sie selbst teilen und uns erneut zu teilen erlauben, und nie das Gesicht oder den Namen eines Kindes. Schreiben Sie uns an hello@petprep.si, und wir entfernen es." },
+            { q: "Zeigen Sie mein Kind in Ihren Beiträgen?", a: "Nur, was Sie selbst teilen und wir mit Ihrer Erlaubnis weiterteilen dürfen, und nie das Gesicht oder den Namen eines Kindes. Schreiben Sie uns an hello@petprep.si, und wir entfernen es." },
           ],
         },
       ],

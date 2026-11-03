@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { englishOnlyPages, locales, pageSlugs } from "./src/i18n/config";
 
 const nextConfig: NextConfig = {
   // Self-contained server for the Docker image (Dockerfile).
@@ -15,6 +16,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // English-only pages (David 2026-11-01: /investors): every other language's URL → the English one.
+      ...englishOnlyPages.flatMap((key) =>
+        locales
+          .filter((l) => l !== "en")
+          .map((l) => ({ source: `/${l}/${pageSlugs[key][l]}`, destination: `/${pageSlugs[key].en}`, permanent: true })),
+      ),
       // The app's sign-up screen links to these short Slovenian paths.
       { source: "/pogoji", destination: "/sl/pogoji", permanent: true },
       { source: "/zasebnost", destination: "/sl/zasebnost", permanent: true },

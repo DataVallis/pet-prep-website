@@ -30,7 +30,7 @@ const fr: RegistryCopy = {
     heat: "Des promenades par forte chaleur",
     growth: "Oublier que le chiot grandit encore",
     growthText: (growthEnd) => `Taille adulte atteinte : ${growthEnd}. D’ici là, adaptez l’exercice et l’alimentation à un jeune animal encore en croissance, et demandez à votre vétérinaire ce qui convient au vôtre.`,
-    mind: "Trop peu d’occupation pour l’esprit",
+    mind: "Trop peu de stimulation mentale",
     health: "Ignorer les problèmes de santé connus de la race",
     practise: "Dans PetPrep, un enfant s’exerce précisément à ces habitudes – pas, repas, soins – avant l’arrivée du vrai animal.",
   },
@@ -42,7 +42,7 @@ const fr: RegistryCopy = {
     open: "Voir les races",
     openA11y: (many) => `Voir les races : ${lc(many)}`,
     freePlan: (name, activity) => `Formule gratuite : ${lc(name)} (${activity} à l’âge adulte). Il n’a pas de page de race.`,
-    otherSpecies: "D’autres animaux sont prévus.",
+    otherSpecies: "D’autres espèces sont prévues.",
     methodTitle: "Comment nous construisons ce registre",
     method: [
       "Chaque information provient d’une source nommée – sociétés canines, registres félins, associations et organisations vétérinaires, études évaluées par des pairs – et renvoie vers elle. Nous résumons les standards de race avec nos propres mots.",
@@ -61,7 +61,7 @@ const fr: RegistryCopy = {
     eyebrow: "Registre des animaux",
     title: (many) => `${many} : les races du registre`,
     lead: (many, count) =>
-      `${count} ${s(count, "race", "races")} ${de(lc(many))} avec des besoins sourcés, le profil des foyers qui leur conviennent et la façon dont PetPrep les simule. Recherchez, filtrez et comparez-en jusqu’à trois.`,
+      `${count} ${s(count, "race", "races")} ${de(lc(many))} avec des besoins documentés par des sources, le profil des foyers qui leur conviennent et la façon dont PetPrep les simule. Recherchez, filtrez et comparez-en jusqu’à trois.`,
     metaTitle: (many) => `${many} – registre des races avec sources | PetPrep`,
     metaDescription: (many) =>
       `Recherchez et comparez les races ${de(lc(many))} selon leurs besoins, leur taille et les foyers qui leur conviennent. Chaque information renvoie à sa source, avec en prime les règles qu’utilise PetPrep pour simuler chaque race.`,
@@ -113,7 +113,7 @@ const fr: RegistryCopy = {
     exercise: "Exercice",
     play: "Jeu",
     litter: "Litière",
-    scratching: "Griffades",
+    scratching: "Griffoir",
     grooming: "Pelage et toilettage",
     feeding: "Repas",
     water: "Eau",
@@ -224,7 +224,7 @@ const fr: RegistryCopy = {
   notes: { size_class_guidance: "recommandation pour sa catégorie de taille" },
   stageLabels: {
     dog: { puppy: "Chiot", young: "Jeune chien", adult: "Adulte", senior: "Senior" },
-    cat: { puppy: "Chaton", young: "Jeune chat", adult: "Chat d’âge mûr", senior: "Senior" },
+    cat: { puppy: "Chaton", young: "Jeune chat", adult: "Chat adulte", senior: "Senior" },
   },
   activity: {
     steps: (n) => `${n} pas`,
@@ -242,12 +242,12 @@ const fr: RegistryCopy = {
           ? "Apprend les ordres aussi vite que le chien croisé de la formule gratuite."
           : `Apprend les ordres ${f.num(p.multiplier)} fois plus vite que le chien croisé de la formule gratuite.`,
     senior_share: (p, f) => `Devient senior au ${ord(p.months)} mois (${f.num(p.months / 12, 1)} ${s(p.months / 12, "an", "ans")}) – le dernier quart de l’espérance de vie attendue de la race.`,
-    walk_sensor: () => "Les promenades comptent de vrais pas, issus d’Apple Health ou de Health Connect (avec autorisation, en lecture seule) et du capteur de mouvement du téléphone – sans GPS.",
+    walk_sensor: () => "Les promenades comptent de vrais pas, issus d’Apple Santé ou de Health Connect (avec autorisation, en lecture seule) et du capteur de mouvement du téléphone – sans GPS.",
     play_instead_of_steps: (p, f) =>
       `Pas de promenades : un chat adulte a besoin de ${p.sessions} ${s(p.sessions, "séance", "séances")} de jeu par jour avec une canne à pêche pour chat, ${s(p.sessions, "espacée", "espacées")} d’au moins ${f.num(p.gap_minutes / 60)} ${s(p.gap_minutes / 60, "heure", "heures")}.`,
     litter_rule: (p) =>
       `Litière : un chat adulte l’utilise ${p.uses} fois par jour ; chaque passage est ramassé ${p.scoop_hours === 1 ? "dans l’heure" : `dans les ${p.scoop_hours} heures`} (en dehors des heures calmes), et toute la litière est changée ${p.change_days === 1 ? "chaque jour" : `tous les ${p.change_days} jours`}.`,
-    scratching_after_missed_play: () => "Après une journée sans assez de jeu, le chat fait une fois ses griffes sur quelque chose ; l’enfant porte le chat jusqu’au griffoir.",
+    scratching_after_missed_play: () => "Après une journée sans assez de jeu, le chat se fait une fois les griffes sur quelque chose ; l’enfant porte le chat jusqu’au griffoir.",
     grooming_rule: (p) => (p.per_week === 1 ? "Peignage une fois par semaine." : p.per_week === 2 ? "Peignage deux fois par semaine." : `Peignage ${p.per_week} fois par semaine.`),
     no_walk_in_heat: (p) =>
       `En été (juin à août ; décembre à février dans l’hémisphère Sud), les écrans enfant et promenade affichent un rappel bienveillant entre ${hhmm(p.from)} et ${hhmm(p.to)} (heure de la famille) : pas de promenade par forte chaleur. Aucune donnée météo, aucune pénalité – les pas comptent quand même.`,
@@ -286,7 +286,7 @@ const fr: RegistryCopy = {
       parents_health_tests: "Demandez à voir les résultats des tests de santé des deux parents. Les tests importants dépendent de la race.",
       breed_club_rules: "Les sociétés canines nationales peuvent fixer des règles d’élevage qui vont au-delà de celles de la FCI – demandez au club de race quels tests les parents doivent passer.",
       written_contract: "Demandez un contrat de vente écrit qui précise l’origine et l’état de santé du chiot.",
-      kitten_see_mother: "Voyez le chaton avec sa mère, là où vivent les chatons.",
+      kitten_see_mother: "Voyez le chaton avec sa mère, là où les chatons sont élevés.",
       kitten_min_age: "Selon les règles de pedigree de la FIFe, un chaton ne rejoint pas un nouveau foyer avant l’âge de 14 semaines.",
       kitten_vaccination: "Le chaton est entièrement vacciné (panleucopénie, calicivirus, herpèsvirus) et arrive avec son carnet de vaccination.",
       kitten_pedigree: "Un chaton de race arrive avec un certificat de pedigree couvrant au moins trois générations.",
@@ -530,10 +530,10 @@ const fr: RegistryCopy = {
     metaFacts: (name, facts) => `${name} : ${facts.join(" ; ")}. Sources, santé et conseils d’achat.`,
     metaLabels: { weight: "poids", exercise: "exercice", lifespan: "espérance de vie" },
     metaDescription: (name, one) =>
-      `${name} : les besoins sourcés de cette race ${de(lc(one))} – exercice, toilettage, repas, taille, espérance de vie, foyers qui lui conviennent – et la façon dont PetPrep la simule.`,
+      `${name} : les besoins documentés de cette race ${de(lc(one))} – exercice, toilettage, repas, taille, espérance de vie, foyers qui lui conviennent – et la façon dont PetPrep la simule.`,
     suitabilityTitle: "À qui elle convient",
     suitabilityNote: "Les mêmes étiquettes que dans l’application. Chaque étiquette s’appuie sur les sources listées en bas de page.",
-    suitabilityNone: "Pas encore d’étiquette d’adéquation sourcée pour cette race.",
+    suitabilityNone: "Pas encore d’étiquette d’adéquation fondée sur des sources pour cette race.",
     needsTitle: "Ce dont elle a besoin",
     needsIntro: (species) =>
       species === "cat"
@@ -581,7 +581,7 @@ const fr: RegistryCopy = {
     disclaimer: "PetPrep est une simulation pour les familles. Cette page ne remplace pas l’avis d’un vétérinaire – pour un vrai animal, demandez à un vétérinaire ou au club de race.",
     backTo: (many) => `Tous les ${lc(many)}`,
     compareWith: "Comparer avec d’autres races",
-    related: { title: "Races similaires", intro: (many) => `D’autres ${lc(many)} du registre aux besoins similaires – chacun avec des informations sourcées.` },
+    related: { title: "Races similaires", intro: (many) => `D’autres ${lc(many)} du registre aux besoins similaires – chacun avec ses informations et ses sources.` },
     updated: "Mis à jour le",
     glanceTitle: "En un coup d’œil",
     glanceNote: "Les informations clés issues des sources en bas de page. Lorsque les sources divergent, chaque valeur est indiquée.",
@@ -605,7 +605,7 @@ const fr: RegistryCopy = {
     og: { lead: "Besoins, sources et simulation dans PetPrep", photoLabel: "Photo IA" },
     qa: {
       title: "Questions et réponses",
-      intro: "Réponses fondées uniquement sur les informations sourcées de cette page ; chaque réponse cite ses sources.",
+      intro: "Réponses fondées uniquement sur les informations de cette page ; chaque réponse cite ses sources.",
       // « cette race » constructions keep breed names free of article and gender (le/la differs per name).
       questions: {
         exercise: (n) => `${n} : de combien d’exercice cette race a-t-elle besoin ?`,
@@ -646,7 +646,7 @@ const fr: RegistryCopy = {
     border_collie: {
       text: [
         "Le Border Collie est un chien de troupeau de taille moyenne originaire de Grande-Bretagne, bâti pour l’endurance et le travail intense. Son standard décrit un chien vif, alerte, réceptif et intelligent, ni craintif ni agressif.",
-        "Sociétés canines et vétérinaires s’accordent avant tout sur un point : c’est une race extrêmement énergique. Il lui faut plus de deux heures d’exercice chaque jour et beaucoup de stimulation mentale. S’il s’ennuie ou manque d’exercice, il s’invente ses propres tâches – mâchonner tout ce qui est à sa portée ou tenter de rassembler les enfants qui jouent.",
+        "Les sociétés canines et les vétérinaires s’accordent avant tout sur un point : c’est une race extrêmement énergique. Il lui faut plus de deux heures d’exercice chaque jour et beaucoup de stimulation mentale. S’il s’ennuie ou manque d’exercice, il s’invente ses propres tâches – mâchonner tout ce qui est à sa portée ou tenter de rassembler les enfants qui jouent.",
       ],
       sources: ["S1", "S2", "S4", "S5", "S7"],
     },
@@ -669,7 +669,7 @@ const fr: RegistryCopy = {
     french_bulldog: {
       aka: "Bouledogue, Frenchie",
       text: [
-        "Le bouledogue français est un petit chien de compagnie robuste originaire de France, au poil court et lisse et aux « oreilles de chauve-souris » dressées. Son standard décrit un chien sociable, vif et joueur ; les associations britanniques le disent décontracté et adaptable, et indiquent qu’il s’entend généralement bien avec les enfants, ce qui en a fait un animal de famille très apprécié.",
+        "Le bouledogue français est un petit chien de compagnie robuste originaire de France, au poil court et lisse et aux « oreilles de chauve-souris » dressées. Son standard décrit un chien sociable, vif et joueur ; les associations britanniques le décrivent comme décontracté et adaptable, et indiquent qu’il s’entend généralement bien avec les enfants, ce qui en a fait un animal de famille très apprécié.",
         "Il demande jusqu’à une heure d’exercice par jour et convient à un appartement. Le point que soulèvent toutes les sources est la face plate : elle peut gêner la respiration, et les bouledogues français surchauffent vite, surtout par temps chaud – l’ombre, l’eau et des promenades calmes sont donc essentielles. La PDSA suggère aussi aux familles d’envisager l’adoption d’un bouledogue français adulte.",
       ],
       sources: ["S76", "S78", "S79", "S81", "S82"],
@@ -725,7 +725,7 @@ const fr: RegistryCopy = {
       aka: "Bichon havanais, Havanese",
       text: [
         "Le bichon havanais est un petit membre de la famille des bichons et le chien national de Cuba. Son standard décrit un petit chien robuste, bas sur pattes, au poil très long, doux, plat ou ondulé, jamais coupé, et à la queue portée haut sur le dos. Il existe en fauve, noir, havane, tabac, brun rougeâtre et, plus rarement, blanc, avec ou sans taches et marques feu.",
-        "Son standard le dit affectueux, joueur, voire un peu clown, et indique qu’il adore les enfants et joue sans fin avec eux ; les sources britanniques le décrivent comme un excellent animal de famille s’il est bien socialisé, et facile à éduquer. Il a besoin d’environ 30 minutes d’exercice par jour, peut vivre en appartement et ne perd pas ses poils – mais son long pelage doit être entretenu chaque jour pour éviter les nœuds.",
+        "Son standard le décrit comme affectueux, joueur, voire un peu clown, et indique qu’il adore les enfants et joue sans fin avec eux ; les sources britanniques le décrivent comme un excellent animal de famille s’il est bien socialisé, et facile à éduquer. Il a besoin d’environ 30 minutes d’exercice par jour, peut vivre en appartement et ne perd pas ses poils – mais son long pelage doit être entretenu chaque jour pour éviter les nœuds.",
       ],
       sources: ["S136", "S138", "S140"],
     },
@@ -733,7 +733,7 @@ const fr: RegistryCopy = {
       aka: "Westie",
       text: [
         "Le West Highland White Terrier, ou Westie, est un petit terrier originaire de Grande-Bretagne. Son standard décrit un petit chien solidement bâti, à la poitrine profonde et au dos droit, avec un double pelage dur d’environ 5 cm, de petites oreilles pointues dressées et des yeux foncés sous d’épais sourcils. Le blanc est la seule couleur admise par le standard.",
-        "Son standard le dit alerte, gai, courageux et sûr de lui, mais amical. Les sources britanniques le présentent comme un animal de famille affectueux et joueur, adapté aux enfants de tout âge, avec un jeu toujours surveillé ; il a besoin d’environ une heure d’exercice par jour, peut vivre en appartement, perd ses poils et doit être brossé quelques fois par semaine. En raison de son instinct de prédation, il ne devrait pas vivre avec de plus petits animaux, et il n’aime pas rester seul. La peau est un point de vigilance connu : le Royal Kennel Club demande aux juges de rechercher des signes d’inflammation cutanée dans la race.",
+        "Son standard le décrit comme alerte, gai, courageux et sûr de lui, mais amical. Les sources britanniques le présentent comme un animal de famille affectueux et joueur, adapté aux enfants de tout âge, avec un jeu toujours surveillé ; il a besoin d’environ une heure d’exercice par jour, peut vivre en appartement, perd ses poils et doit être brossé quelques fois par semaine. En raison de son instinct de prédation, il ne devrait pas vivre avec de plus petits animaux, et il n’aime pas rester seul. La peau est un point de vigilance connu : le Royal Kennel Club demande aux juges de rechercher des signes d’inflammation cutanée dans la race.",
       ],
       sources: ["S142", "S144", "S146", "S147"],
     },
@@ -741,7 +741,7 @@ const fr: RegistryCopy = {
       aka: "Bernois, Berner Sennenhund",
       text: [
         "Le bouvier bernois est un grand chien de ferme suisse, utilisé à l’origine comme chien de garde, de trait et de bouvier dans le canton de Berne. Son standard décrit un chien de travail à poil long, fort et agile, aux membres robustes, au poil long, brillant, droit ou légèrement ondulé. La seule couleur admise par le standard est le tricolore : noir de jais avec un feu intense sur les joues, au-dessus des yeux, sur les pattes et la poitrine, et des marques blanches sur la tête et la poitrine.",
-        "Son standard le dit sûr de lui, d’un bon naturel et amical, « un chien de famille gentil et dévoué », lent à atteindre la maturité. Selon les sources britanniques, il demande jusqu’à une heure d’exercice par jour, a sa place dans une grande maison avec un grand jardin, perd beaucoup de poils et doit être brossé plus d’une fois par semaine ; il ne devrait pas rester seul longtemps. Il vit généralement moins de dix ans, et les sources britanniques citent la dysplasie de la hanche et du coude, la dilatation-torsion de l’estomac et certains cancers parmi ses problèmes de santé.",
+        "Son standard le décrit comme sûr de lui, d’un bon naturel et amical, « un chien de famille gentil et dévoué », lent à atteindre la maturité. Selon les sources britanniques, il demande jusqu’à une heure d’exercice par jour, a sa place dans une grande maison avec un grand jardin, perd beaucoup de poils et doit être brossé plus d’une fois par semaine ; il ne devrait pas rester seul longtemps. Il vit généralement moins de dix ans, et les sources britanniques citent la dysplasie de la hanche et du coude, la dilatation-torsion de l’estomac et certains cancers parmi ses problèmes de santé.",
       ],
       sources: ["S150", "S152", "S153", "S154"],
     },
@@ -749,7 +749,7 @@ const fr: RegistryCopy = {
       aka: "Husky",
       text: [
         "Le husky sibérien est un chien de traîneau de taille moyenne, reconnu par la FCI comme une race américaine et décrit par le Royal Kennel Club comme le plus léger et le plus rapide des chiens de traîneau. Son standard demande un chien rapide et léger dans ses mouvements, au double pelage mi-long, aux oreilles épaisses et dressées, aux yeux marron ou bleus (un œil de chaque couleur est admis) et à la queue en panache bien fournie. Les couleurs vont du noir au blanc pur ; le merle et le bringé ne sont pas admis.",
-        "Son standard le dit amical et doux, alerte et sociable. Selon les sources britanniques, il a besoin de plus de deux heures d’exercice par jour, d’une grande maison avec un grand jardin et d’une clôture haute et très sûre, car les huskies sont réputés fugueurs ; il perd beaucoup de poils, doit être brossé quelques fois par semaine et supporte mal la solitude. La PDSA le recommande pour des foyers d’adultes ou avec des adolescents plutôt que pour des familles avec de jeunes enfants, et cite la dysplasie de la hanche, des problèmes oculaires et l’épilepsie parmi ses problèmes de santé.",
+        "Son standard le décrit comme amical et doux, alerte et sociable. Selon les sources britanniques, il a besoin de plus de deux heures d’exercice par jour, d’une grande maison avec un grand jardin et d’une clôture haute et très sûre, car les huskies sont réputés fugueurs ; il perd beaucoup de poils, doit être brossé quelques fois par semaine et supporte mal la solitude. La PDSA le recommande pour des foyers d’adultes ou avec des adolescents plutôt que pour des familles avec de jeunes enfants, et cite la dysplasie de la hanche, des problèmes oculaires et l’épilepsie parmi ses problèmes de santé.",
       ],
       sources: ["S158", "S160", "S162"],
     },
@@ -757,7 +757,7 @@ const fr: RegistryCopy = {
       aka: "Rottie",
       text: [
         "Le Rottweiler est un chien de travail puissant, de taille moyenne à grande, originaire d’Allemagne. Son standard décrit un chien vigoureux, ni lourd ni léger, au poil court, rude et couché, aux oreilles tombantes de taille moyenne et aux yeux en amande brun foncé. La seule couleur admise est le noir avec des marques feu intenses et bien délimitées sur les joues, le museau, la gorge, la poitrine et les pattes ; les marques blanches sont un défaut.",
-        "Son standard le dit d’un bon naturel, placide, très dévoué, obéissant et travailleur, et le Royal Kennel Club affirme qu’un Rottweiler bien éduqué est un merveilleux compagnon de famille. Selon les sources britanniques, il a besoin de plus de deux heures d’exercice par jour, d’une grande maison avec un grand jardin et d’un propriétaire expérimenté, en raison de sa grande puissance ; il doit être socialisé dès son plus jeune âge. La PDSA le déconseille aux familles avec de jeunes enfants et des bébés, et il ne doit jamais rester sans surveillance avec d’autres animaux. Un brossage hebdomadaire suffit. Il vit généralement moins de dix ans, et le Royal Kennel Club surveille la forme de ses membres postérieurs.",
+        "D’après son standard, c’est un chien d’un bon naturel, placide, très dévoué, obéissant et travailleur, et le Royal Kennel Club affirme qu’un Rottweiler bien éduqué est un merveilleux compagnon de famille. Selon les sources britanniques, il a besoin de plus de deux heures d’exercice par jour, d’une grande maison avec un grand jardin et d’un propriétaire expérimenté, en raison de sa grande puissance ; il doit être socialisé dès son plus jeune âge. La PDSA le déconseille aux familles avec de jeunes enfants et des bébés, et il ne doit jamais rester sans surveillance avec d’autres animaux. Un brossage hebdomadaire suffit. Il vit généralement moins de dix ans, et le Royal Kennel Club surveille la forme de ses membres postérieurs.",
       ],
       sources: ["S166", "S168", "S169", "S171"],
     },
@@ -765,7 +765,7 @@ const fr: RegistryCopy = {
       aka: "Bulldog anglais, English Bulldog",
       text: [
         "Le bulldog anglais est un chien de taille moyenne à poil ras originaire de Grande-Bretagne : assez trapu, bas, large, puissant et compact, avec une face relativement courte, de petites oreilles fines « en rose » et des yeux ronds très foncés. Son standard admet les couleurs unies comme le rouge, le fauve, le sable et le blanc, ainsi que le bringé et le pie ; le noir et le noir et feu sont très indésirables. Il demande des narines larges et bien ouvertes et précise que les chiens présentant une détresse respiratoire sont très indésirables.",
-        "Son standard le dit alerte, hardi, loyal, fiable et courageux, d’apparence féroce mais affectueux, et le Royal Kennel Club indique qu’il reste très apprécié comme compagnon de famille pour son caractère et sa loyauté. Selon les sources britanniques, il demande jusqu’à une heure d’exercice par jour, jamais aux heures chaudes, et s’entend bien avec les autres animaux du foyer s’il est socialisé jeune ; un toilettage hebdomadaire suffit, mais les rides de la face doivent être nettoyées chaque jour. La PDSA le décrit comme une race à face très plate, très susceptible d’avoir de graves problèmes de santé, comme des difficultés respiratoires, et recommande vivement d’envisager une race en meilleure santé, un croisement ou un chien croisé. Il vit généralement moins de dix ans.",
+        "Son standard le décrit comme alerte, hardi, loyal, fiable et courageux, d’apparence féroce mais affectueux, et le Royal Kennel Club indique qu’il reste très apprécié comme compagnon de famille pour son caractère et sa loyauté. Selon les sources britanniques, il demande jusqu’à une heure d’exercice par jour, jamais aux heures chaudes, et s’entend bien avec les autres animaux du foyer s’il est socialisé jeune ; un toilettage hebdomadaire suffit, mais les rides de la face doivent être nettoyées chaque jour. La PDSA le décrit comme une race à face très plate, très susceptible d’avoir de graves problèmes de santé, comme des difficultés respiratoires, et recommande vivement d’envisager une race en meilleure santé, un croisement ou un chien croisé. Il vit généralement moins de dix ans.",
       ],
       sources: ["S175", "S177", "S180"],
     },
@@ -773,7 +773,7 @@ const fr: RegistryCopy = {
       aka: "Braque allemand, GSP, Deutsch Kurzhaar",
       text: [
         "Le braque allemand à poil court est un chien d’arrêt polyvalent originaire d’Allemagne, bâti pour le travail en plaine et dans l’eau, au poil court et épais, rude au toucher, aux larges oreilles plates attachées haut et aux yeux en amande brun foncé. Son standard américain admet le marron uni, le marron et blanc (moucheté par exemple), le noir uni et le noir et blanc ; les zones rouges, orange, citron ou feu ainsi qu’un chien entièrement blanc sont éliminatoires. Son standard décrit une queue écourtée – PetPrep montre toujours le chien avec sa queue naturelle.",
-        "Son standard le dit amical, intelligent et désireux de bien faire. Le Royal Kennel Club et la PDSA indiquent qu’il a besoin de plus de deux heures d’exercice par jour ; la PDSA ajoute que son instinct de chasse, d’arrêt et de rapport peut se réveiller en promenade, qu’il lui faut donc un bon rappel, et qu’il est assez facile à éduquer. Il doit être brossé une à deux fois par semaine et perd modérément ses poils. Une vaste étude britannique situe son espérance de vie médiane à 13,4 ans.",
+        "Son standard le décrit comme amical, intelligent et désireux de bien faire. Le Royal Kennel Club et la PDSA indiquent qu’il a besoin de plus de deux heures d’exercice par jour ; la PDSA ajoute que son instinct de chasse, d’arrêt et de rapport peut se réveiller en promenade, qu’il lui faut donc un bon rappel, et qu’il est assez facile à éduquer. Il doit être brossé une à deux fois par semaine et perd modérément ses poils. Une vaste étude britannique situe son espérance de vie médiane à 13,4 ans.",
       ],
       sources: ["S185", "S186", "S187", "S188", "S189", "S123"],
     },
@@ -781,7 +781,7 @@ const fr: RegistryCopy = {
       aka: "Yorkie",
       text: [
         "Le Yorkshire Terrier est un terrier d’agrément originaire de Grande-Bretagne qui pèse au maximum 3,2 kg selon son standard, au poil long, parfaitement raide, brillant et soyeux, qui tombe de façon égale de chaque côté à partir d’une raie le long du dos. Le standard admet une seule couleur : bleu acier foncé de l’arrière de la tête à la queue, avec un feu vif et intense sur la tête, la poitrine et les pattes ; les petites oreilles en V sont portées dressées. Le standard décrit une queue écourtée ou non – PetPrep montre toujours le chien avec sa queue naturelle.",
-        "Son standard le dit alerte, intelligent et plein d’entrain, d’un tempérament égal. Le Royal Kennel Club recommande jusqu’à 30 minutes d’exercice par jour et un toilettage quotidien ; la PDSA ajoute qu’il aime courir, rapporter et jouer, qu’il peut être assez têtu à éduquer et qu’il convient mieux aux familles avec des enfants plus âgés, car ses os sont très fragiles. Une vaste étude britannique a montré que les maladies dentaires sont le problème le plus fréquent de la race, encourage des soins dentaires quotidiens comme le brossage des dents, et a relevé un âge médian au décès de 13,56 ans.",
+        "Son standard le décrit comme alerte, intelligent et plein d’entrain, d’un tempérament égal. Le Royal Kennel Club recommande jusqu’à 30 minutes d’exercice par jour et un toilettage quotidien ; la PDSA ajoute qu’il aime courir, rapporter et jouer, qu’il peut être assez têtu à éduquer et qu’il convient mieux aux familles avec des enfants plus âgés, car ses os sont très fragiles. Une vaste étude britannique a montré que les maladies dentaires sont le problème le plus fréquent de la race, encourage des soins dentaires quotidiens comme le brossage des dents, et a relevé un âge médian au décès de 13,56 ans.",
       ],
       sources: ["S190", "S192", "S194", "S195", "S196"],
     },
@@ -789,7 +789,7 @@ const fr: RegistryCopy = {
       aka: "Cane Corso Italiano, chien de cour italien",
       text: [
         "Le Cane Corso est un molosse italien de taille moyenne à grande, un chien robuste et solide non dénué d’élégance, un peu plus long que haut. Son standard décrit un poil court, brillant et très dense, noir, dans des nuances de gris, fauve ou rouge avec un masque foncé, froment foncé ou bringé ; les grandes taches blanches ne sont pas admises. Selon le standard FCI actuel, les oreilles ne sont pas coupées et la queue reste naturelle – et au Royaume-Uni, la coupe des oreilles et de la queue est illégale ; PetPrep montre donc toujours le chien avec ses oreilles et sa queue naturelles.",
-        "Son standard en fait un gardien de la propriété, de la famille et du bétail, extrêmement agile et réactif. Selon la PDSA, il est sociable et affectueux avec ses propriétaires, a besoin d’environ deux heures d’exercice par jour et d’occupations, car il déteste s’ennuyer, et convient mieux à des propriétaires expérimentés en raison de sa taille. Elle déconseille la race dans les foyers avec de jeunes enfants, qui pourraient être renversés ; elle convient aux foyers d’adultes ou aux familles avec des enfants plus âgés. Un brossage hebdomadaire suffit, mais il perd ses poils et est réputé baver. La PDSA indique une espérance de vie moyenne inférieure à dix ans.",
+        "Son standard en fait un gardien de la propriété, de la famille et du bétail, extrêmement agile et réactif. Selon la PDSA, il est sociable et affectueux avec ses propriétaires, a besoin d’environ deux heures d’exercice par jour et d’occupations, car il déteste s’ennuyer, et convient mieux à des propriétaires expérimentés en raison de sa taille. Elle déconseille la race dans les foyers avec de jeunes enfants, qui pourraient être renversés ; le Cane Corso convient mieux aux foyers d’adultes ou aux familles avec des enfants plus âgés. Un brossage hebdomadaire suffit, mais il perd ses poils et est réputé baver. La PDSA indique une espérance de vie moyenne inférieure à dix ans.",
       ],
       sources: ["S197", "S199"],
     },
@@ -797,7 +797,7 @@ const fr: RegistryCopy = {
       aka: "Welsh Corgi (Pembroke), Corgi",
       text: [
         "Le Welsh Corgi Pembroke est un petit chien de bouvier originaire du pays de Galles, bas, fort et solidement bâti, qui donne une impression de substance et d’endurance dans un petit gabarit. Son standard décrit un poil mi-long et droit avec un sous-poil dense, rouge, zibeline, fauve, ou noir et feu, avec ou sans marques blanches sur les pattes, la poitrine et le cou, et des oreilles dressées. La queue était autrefois habituellement écourtée ; le standard décrit aussi la queue naturelle, et PetPrep montre toujours le chien avec sa queue naturelle.",
-        "Son standard le dit hardi, travailleur, sociable et amical. Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour et un toilettage plus d’une fois par semaine ; la PDSA décrit des chiens amicaux, joyeux et joueurs, désireux de faire plaisir et assez faciles à éduquer, mais précise qu’ils peuvent pincer les talons des enfants qui courent ; la socialisation avec les enfants et l’éducation dès le plus jeune âge sont donc utiles. Le Royal Kennel Club indique une espérance de vie de plus de 12 ans et demande aux éleveurs de faire évaluer les hanches des parents.",
+        "Son standard le décrit comme hardi, travailleur, sociable et amical. Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour et un toilettage plus d’une fois par semaine ; la PDSA décrit des chiens amicaux, joyeux et joueurs, désireux de faire plaisir et assez faciles à éduquer, mais précise qu’ils peuvent pincer les talons des enfants qui courent ; la socialisation avec les enfants et l’éducation dès le plus jeune âge sont donc utiles. Le Royal Kennel Club indique une espérance de vie de plus de 12 ans et demande aux éleveurs de faire évaluer les hanches des parents.",
       ],
       sources: ["S202", "S204", "S206"],
     },
@@ -805,7 +805,7 @@ const fr: RegistryCopy = {
       aka: "Doberman, Doberman Pinscher",
       text: [
         "Le Dobermann est un chien allemand de compagnie, de protection et de travail de taille moyenne, fort et musclé, aux lignes élégantes et au port fier. Son standard FCI décrit un poil court, dur et dense, bien couché et lisse, noir ou marron avec des marques feu rouille bien délimitées ; les taches blanches ne sont pas admises. Selon le standard FCI, les oreilles et la queue restent naturelles, et PetPrep montre toujours le chien avec ses oreilles et sa queue naturelles.",
-        "Son standard le dit amical et calme, et très attaché à sa famille. Le Royal Kennel Club affirme que sa nature loyale et obéissante en fait un excellent chien de famille, et recommande plus de deux heures d’exercice par jour et un toilettage hebdomadaire. La PDSA ajoute qu’il est très énergique, qu’il a besoin de beaucoup d’exercice mental et physique et d’une socialisation précoce, et que – en raison de sa grande taille et de sa forte carrure – il est déconseillé aux familles avec de jeunes enfants et aux propriétaires débutants. Le Royal Kennel Club indique une espérance de vie de plus de 10 ans.",
+        "Son standard le décrit comme amical et calme, et très attaché à sa famille. Le Royal Kennel Club affirme que sa nature loyale et obéissante en fait un excellent chien de famille, et recommande plus de deux heures d’exercice par jour et un toilettage hebdomadaire. La PDSA ajoute qu’il est très énergique, qu’il a besoin de beaucoup d’exercice mental et physique et d’une socialisation précoce, et que – en raison de sa grande taille et de sa forte carrure – il est déconseillé aux familles avec de jeunes enfants et aux propriétaires débutants. Le Royal Kennel Club indique une espérance de vie de plus de 10 ans.",
       ],
       sources: ["S207", "S209", "S211"],
     },
@@ -813,7 +813,7 @@ const fr: RegistryCopy = {
       aka: "Boxer allemand, Deutscher Boxer",
       text: [
         "Le Boxer est un chien allemand de travail et de compagnie de taille moyenne, de construction carrée, à l’ossature forte et à la musculature bien développée. Ses standards décrivent un poil court, brillant et lisse, fauve ou bringé avec un masque noir ; les marques blanches sont admises mais ne devraient pas couvrir plus d’un tiers de la robe. Le museau doit être large et profond, jamais trop court, avec des narines bien ouvertes. La queue était autrefois habituellement écourtée ; le standard décrit aussi la queue non écourtée, et PetPrep montre toujours le chien avec ses oreilles et sa queue naturelles.",
-        "Son standard le dit équilibré, docile, intrépide et sûr de lui. Le Royal Kennel Club le dit très apprécié comme compagnon de famille et recommande plus de deux heures d’exercice par jour et un toilettage hebdomadaire. La PDSA décrit un chien très énergique et joueur qui adore la compagnie humaine et peut développer une anxiété de séparation s’il reste seul, avec un très fort instinct de prédation ; en raison de sa taille et de sa nature exubérante, il est déconseillé aux foyers avec de jeunes enfants et aux propriétaires débutants ; certains Boxers à la face plus courte peuvent avoir de graves problèmes respiratoires. Le Royal Kennel Club indique une espérance de vie de plus de 10 ans.",
+        "Son standard le décrit comme équilibré, docile, intrépide et sûr de lui. Le Royal Kennel Club le présente comme un compagnon de famille très apprécié et recommande plus de deux heures d’exercice par jour et un toilettage hebdomadaire. La PDSA décrit un chien très énergique et joueur qui adore la compagnie humaine et peut développer une anxiété de séparation s’il reste seul, avec un très fort instinct de prédation ; en raison de sa taille et de sa nature exubérante, il est déconseillé aux foyers avec de jeunes enfants et aux propriétaires débutants ; certains Boxers à la face plus courte peuvent avoir de graves problèmes respiratoires. Le Royal Kennel Club indique une espérance de vie de plus de 10 ans.",
       ],
       sources: ["S215", "S217", "S219"],
     },
@@ -821,7 +821,7 @@ const fr: RegistryCopy = {
       aka: "Schnauzer nain, Zwergschnauzer",
       text: [
         "Le schnauzer nain est un petit chien de compagnie allemand : fort, trapu et presque carré, au poil dur, rêche et dense, avec des sourcils broussailleux et une barbe. Son standard FCI admet le poivre et sel, le noir et argent, le noir pur et le blanc pur ; PetPrep montre les trois premiers. La queue était autrefois habituellement écourtée et les oreilles parfois coupées ; le standard FCI demande une queue naturelle et des oreilles tombantes, et PetPrep montre toujours le chien avec ses oreilles et sa queue naturelles.",
-        "La FCI le classe parmi les chiens de garde et de compagnie, et le Royal Kennel Club le dit très apprécié comme compagnon. Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour et un toilettage plus d’une fois par semaine, et indique qu’il ne perd pas ses poils. La PDSA décrit un chien joueur et curieux qui peut bien s’entendre avec les enfants s’il les côtoie tôt, peut se montrer têtu à l’éducation et doit être toiletté deux à trois fois par semaine, avec de temps en temps une tonte ou un épilage par un toiletteur professionnel. Le Royal Kennel Club indique une espérance de vie de plus de 10 ans.",
+        "La FCI le classe parmi les chiens de garde et de compagnie, et le Royal Kennel Club le présente comme un compagnon très apprécié. Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour et un toilettage plus d’une fois par semaine, et indique qu’il ne perd pas ses poils. La PDSA décrit un chien joueur et curieux qui peut bien s’entendre avec les enfants s’il les côtoie tôt, peut se montrer têtu à l’éducation et doit être toiletté deux à trois fois par semaine, avec de temps en temps une tonte ou un épilage par un toiletteur professionnel. Le Royal Kennel Club indique une espérance de vie de plus de 10 ans.",
       ],
       sources: ["S221", "S223", "S226"],
     },
@@ -837,7 +837,7 @@ const fr: RegistryCopy = {
       aka: "Dogue allemand, Deutsche Dogge",
       text: [
         "Le dogue allemand est un géant originaire d’Allemagne : le standard FCI indique qu’il allie un corps grand, puissant et bien construit à la fierté, la force et l’élégance, avec une tête longue et étroite, des oreilles naturellement tombantes et un poil très court, lisse et brillant. Les standards citent le fauve et le bringé – idéalement avec un masque noir –, ainsi que l’arlequin, le noir et le bleu ; PetPrep ne montre que des couleurs reconnues à la fois par la FCI et par le Royal Kennel Club, jamais le merle ni le manteau, et dessine toujours le chien avec ses oreilles et sa queue naturelles et des paupières bien ajustées, car le Royal Kennel Club demande aux juges de surveiller les paupières enroulées vers l’intérieur ou l’extérieur et les membres postérieurs déficients.",
-        "La FCI le dit amical, affectueux et dévoué à ses propriétaires, même s’il peut se montrer réservé envers les inconnus. Le Royal Kennel Club affirme que, malgré sa taille, c’est un merveilleux chien de famille, et recommande plus de deux heures d’exercice par jour, une grande maison avec jardin et un toilettage hebdomadaire. Selon la PDSA, les dogues allemands sont réputés baver, ont un instinct de prédation assez fort et sont déconseillés dans les foyers avec de jeunes enfants en raison de leur taille et de leur force ; elle conseille de laisser un intervalle entre le repas et l’exercice pour aider à prévenir la dilatation-torsion de l’estomac. Le Royal Kennel Club indique une espérance de vie de moins de 10 ans.",
+        "La FCI le décrit comme amical, affectueux et dévoué à ses propriétaires, même s’il peut se montrer réservé envers les inconnus. Le Royal Kennel Club affirme que, malgré sa taille, c’est un merveilleux chien de famille, et recommande plus de deux heures d’exercice par jour, une grande maison avec jardin et un toilettage hebdomadaire. Selon la PDSA, les dogues allemands sont réputés baver, ont un instinct de prédation assez fort et sont déconseillés dans les foyers avec de jeunes enfants en raison de leur taille et de leur force ; elle conseille de laisser un intervalle entre le repas et l’exercice pour aider à prévenir la dilatation-torsion de l’estomac. Le Royal Kennel Club indique une espérance de vie de moins de 10 ans.",
       ],
       sources: ["S239", "S241", "S243"],
     },
@@ -845,7 +845,7 @@ const fr: RegistryCopy = {
       aka: "Poméranien, Loulou de Poméranie, Zwergspitz",
       text: [
         "Le loulou de Poméranie (spitz nain) est le plus petit des spitz : la FCI le classe comme la variété naine du spitz allemand, avec 21 cm ± 3 cm au garrot, et le standard du Royal Kennel Club décrit un petit chien compact et court, à la tête de renard, aux petites oreilles dressées et à la queue enroulée sur le dos. Son double pelage associe un sous-poil doux et duveteux à un long poil de couverture droit qui forme une collerette autour du cou. Le standard admet de nombreuses couleurs unies, comme l’orange, le crème, le blanc, le noir et le marron, mais jamais le merle ; PetPrep dessine un pelage naturel, non taillé.",
-        "La FCI le dit sociable et joyeux, et le standard du Royal Kennel Club le dit extraverti, vif et intelligent. Le Royal Kennel Club recommande jusqu’à 30 minutes d’exercice par jour et le juge adapté à un appartement ; selon la PDSA, son double pelage doit être brossé deux à trois fois par semaine. L’AKC indique que les Poméraniens conviennent plutôt aux familles avec des enfants plus âgés, qu’ils peuvent bien s’entendre avec les autres animaux s’ils sont socialisés tôt, et recommande vivement une socialisation précoce et des cours pour chiots. Le Royal Kennel Club indique une espérance de vie de plus de 12 ans.",
+        "La FCI le décrit comme sociable et joyeux, et le standard du Royal Kennel Club le décrit comme extraverti, vif et intelligent. Le Royal Kennel Club recommande jusqu’à 30 minutes d’exercice par jour et le juge adapté à un appartement ; selon la PDSA, son double pelage doit être brossé deux à trois fois par semaine. L’AKC indique que les Poméraniens conviennent plutôt aux familles avec des enfants plus âgés, qu’ils peuvent bien s’entendre avec les autres animaux s’ils sont socialisés tôt, et recommande vivement une socialisation précoce et des cours pour chiots. Le Royal Kennel Club indique une espérance de vie de plus de 12 ans.",
       ],
       sources: ["S246", "S247", "S249", "S250", "S251"],
     },
@@ -932,7 +932,7 @@ const fr: RegistryCopy = {
     english_cocker_spaniel: {
       aka: "Cocker anglais, English Cocker, Merry Cocker",
       text: [
-        "Le cocker anglais – appelé simplement Cocker Spaniel en Grande-Bretagne – est une race distincte de l’American Cocker Spaniel. Le standard FCI décrit un chien de chasse joyeux, robuste et sportif, bien équilibré et compact, aux oreilles en lobe attachées bas et au poil plat et soyeux ; le standard de l’AKC le dit joyeux et affectueux, d’un tempérament égal, et cite le noir uni, le foie et les nuances de rouge ainsi que les robes panachées avec du blanc. Le Breed Watch du Royal Kennel Club ne signale aucun point de vigilance propre à la race.",
+        "Le cocker anglais – appelé simplement Cocker Spaniel en Grande-Bretagne – est une race distincte de l’American Cocker Spaniel. Le standard FCI décrit un chien de chasse joyeux, robuste et sportif, bien équilibré et compact, aux oreilles en lobe attachées bas et au poil plat et soyeux ; le standard de l’AKC le décrit comme joyeux et affectueux, d’un tempérament égal, et cite le noir uni, le foie et les nuances de rouge ainsi que les robes panachées avec du blanc. Le Breed Watch du Royal Kennel Club ne signale aucun point de vigilance propre à la race.",
         "Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour et un toilettage quotidien, et indique une espérance de vie de plus de 10 ans ; une étude VetCompass portant sur des cockers anglais au Royaume-Uni a relevé un âge médian au décès de 11,44 ans. Selon la PDSA, grâce à sa patience, il s’entend généralement bien avec les enfants, toujours sous surveillance, mais il est réputé sujet à l’anxiété de séparation et ne devrait jamais rester seul plus de quatre heures. La PDSA conseille aussi un brossage quotidien et un intervalle entre le repas et l’exercice.",
       ],
       sources: ["S336", "S337", "S339", "S342", "S343"],
@@ -1292,8 +1292,8 @@ const fr: RegistryCopy = {
     siberian_cat: {
       aka: "Sibérien, chat des forêts sibériennes",
       text: [
-        "Le GCCF décrit le Sibérien comme un chat à développement lent au pelage épais et résistant aux intempéries : un sous-poil dense et doux sous un poil de couverture plus grossier ; il mue abondamment au printemps et à l’automne. Les mâles pèsent environ 7,7 à 11,8 kg et les femelles 5,9 à 7,7 kg ; le développement complet peut prendre quatre à cinq ans, et le GCCF indique une espérance de vie de 12 à 15 ans ou plus.",
-        "Le GCCF le dit énergique et joueur, mais patient – un bon choix pour les familles avec de jeunes enfants – et indique qu’il s’entend bien avec les autres animaux, y compris les chiens. PetMD conseille de le peigner au moins une fois par semaine, en redoublant d’efforts pendant la mue du printemps et de l’automne, et note que les Sibériens ne sont pas considérés comme hypoallergéniques. Les chatons de race rejoignent généralement leur nouveau foyer à 12 ou 13 semaines (PDSA).",
+        "Le GCCF décrit le Sibérien comme un chat à développement lent au pelage épais et résistant aux intempéries : un sous-poil dense et doux sous un poil de couverture plus grossier ; il mue abondamment au printemps et à l’automne. Les mâles pèsent environ 7,7 à 11,8 kg et les femelles 5,9 à 7,7 kg ; le développement complet peut prendre quatre à cinq ans, et le GCCF indique une espérance de vie de 12 à 15 ans ou plus.",
+        "Le GCCF le décrit comme énergique et joueur, mais patient – un bon choix pour les familles avec de jeunes enfants – et indique qu’il s’entend bien avec les autres animaux, y compris les chiens. PetMD conseille de le peigner au moins une fois par semaine, en redoublant d’efforts pendant la mue du printemps et de l’automne, et note que les Sibériens ne sont pas considérés comme hypoallergéniques. Les chatons de race rejoignent généralement leur nouveau foyer à 12 ou 13 semaines (PDSA).",
       ],
       sources: ["C13", "C34", "C35"],
     },

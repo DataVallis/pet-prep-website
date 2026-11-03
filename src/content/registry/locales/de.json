@@ -23,7 +23,7 @@
       "slug": "border-collie",
       "colours": {
         "black-white": "Schwarz-Weiß",
-        "tricolour": "Tricolor (Schwarz, Weiß, Lohfarben)",
+        "tricolour": "Tricolour (Schwarz, Weiß, Lohfarben)",
         "red-white": "Rot-Weiß",
         "blue-white": "Blau-Weiß",
         "blue-merle-white": "Blue Merle mit Weiß",
@@ -537,10 +537,10 @@
       ]
     },
     "pyrenean_mountain_dog": {
-      "name": "Pyrenäen-Berghund",
+      "name": "Pyrenäenberghund",
       "slug": "pyrenaeen-berghund",
       "synonyms": [
-        "Pyrenäenberghund",
+        "Pyrenäen-Berghund",
         "Patou",
         "Pyrenean Mountain Dog"
       ]
@@ -586,14 +586,6 @@
       "name": "Basenji",
       "slug": "basenji"
     },
-    "greater_swiss_mountain_dog": {
-      "name": "Großer Schweizer Sennenhund",
-      "slug": "grosser-schweizer-sennenhund",
-      "synonyms": [
-        "Swissy",
-        "Greater Swiss Mountain Dog"
-      ]
-    },
     "maine_coon": {
       "name": "Maine Coon",
       "slug": "maine-coon"
@@ -633,20 +625,29 @@
         "Bengalkatze"
       ]
     },
+    "rat_terrier": {
+      "name": "Rat Terrier",
+      "slug": "rat-terrier",
+      "synonyms": [
+        "Rattie",
+        "American Rat Terrier"
+      ]
+    },
+    "greater_swiss_mountain_dog": {
+      "name": "Großer Schweizer Sennenhund",
+      "slug": "grosser-schweizer-sennenhund",
+      "synonyms": [
+        "Grosser Schweizer Sennenhund",
+        "Swissy",
+        "Greater Swiss Mountain Dog"
+      ]
+    },
     "shar_pei": {
       "name": "Shar Pei",
       "slug": "shar-pei",
       "synonyms": [
         "Chinesischer Shar-Pei",
         "Sharpei"
-      ]
-    },
-    "rat_terrier": {
-      "name": "Rat Terrier",
-      "slug": "rat-terrier",
-      "synonyms": [
-        "Rattie",
-        "Amerikanischer Rat Terrier"
       ]
     }
   },
@@ -656,8 +657,8 @@
     "tags": {
       "active_family": "aktive Familien",
       "apartment": "das Leben in einer Wohnung",
-      "back_spine": "langer Rücken – Probleme mit der Wirbelsäule, Springen vermeiden",
-      "brachycephalic_breathing": "flaches Gesicht – Probleme mit Atmung und Hitze",
+      "back_spine": "langer Rücken – anfällig für Wirbelsäulenprobleme, nicht springen lassen",
+      "brachycephalic_breathing": "flaches Gesicht – Atem- und Hitzeprobleme möglich",
       "chases_small_pets": "starker Jagdtrieb – jagt womöglich kleine Haustiere",
       "chews_when_bored": "kaut aus Langeweile Dinge an",
       "children": "Familien mit Kindern",

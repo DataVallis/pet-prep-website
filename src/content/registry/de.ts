@@ -20,9 +20,9 @@ const de: RegistryCopy = {
     weight: "Zu viele Leckerlis und zu große Portionen",
     heat: "Spaziergänge bei Hitze",
     growth: "Vergessen, dass der Welpe noch wächst",
-    growthText: (growthEnd) => `Ausgewachsen: ${growthEnd}. Planen Sie bis dahin Bewegung und Futter für ein junges Tier, das noch wächst, und fragen Sie Ihren Tierarzt, was zu Ihrem Tier passt.`,
-    mind: "Zu wenig Beschäftigung für den Kopf",
-    health: "Die bekannten Gesundheitsprobleme der Rasse übersehen",
+    growthText: (growthEnd) => `Ausgewachsen: ${growthEnd}. Richten Sie Bewegung und Futter bis dahin auf ein noch wachsendes Tier aus, und fragen Sie Ihren Tierarzt, was für Ihr Haustier passt.`,
+    mind: "Zu wenig geistige Auslastung",
+    health: "Rassetypische Gesundheitsprobleme übersehen",
     practise: "In PetPrep übt ein Kind genau diese Gewohnheiten – Schritte, Mahlzeiten, Pflege –, bevor das echte Haustier einzieht.",
   },
   hub: {
@@ -45,15 +45,15 @@ const de: RegistryCopy = {
   speciesStatus: { available: "In der App", coming_soon: "Bald in der App", info_only: "Nur zur Information" },
   availability: {
     in_app: { label: "In der App", text: "Verfügbar in der 12-wöchigen PetPrep Challenge (kostenpflichtige Rasse)." },
-    coming_soon: { label: "Bald in der App", text: "Fertig und getestet; sie kommt mit einer der nächsten App-Versionen." },
-    info_only: { label: "Nur zur Information", text: "Zur Information im Register; in der App können Sie sie noch nicht aufnehmen." },
+    coming_soon: { label: "Bald in der App", text: "Fertig und getestet; sie kommt mit einem der nächsten App-Updates." },
+    info_only: { label: "Nur zur Information", text: "Zur Information im Register; in der App lässt sie sich noch nicht als Haustier wählen." },
   },
   catalogue: {
     eyebrow: "Tierregister",
     title: (many) => `${many}: Rassen im Register`,
     lead: (many, count) =>
-      `${many}: ${count} ${s(count, "Rasse", "Rassen")} mit belegten Bedürfnissen, Angaben dazu, zu wem sie passen, und den Regeln, nach denen PetPrep sie simuliert. Suchen, filtern und vergleichen Sie bis zu drei.`,
-    metaTitle: (many) => `${many} – Rasseregister mit Quellen | PetPrep`,
+      `${many}: ${count} ${s(count, "Rasse", "Rassen")} mit belegten Bedürfnissen, Angaben dazu, zu wem sie passen, und den Regeln, nach denen PetPrep sie simuliert. Sie können suchen, filtern und bis zu drei Rassen vergleichen.`,
+    metaTitle: (many) => `${many} – Rassenregister mit Quellen | PetPrep`,
     metaDescription: (many) =>
       `${many}: Rassen nach Bedürfnissen, Größe und Eignung suchen und vergleichen. Jeder Fakt ist mit seiner Quelle verlinkt; dazu die Regeln, nach denen PetPrep jede Rasse simuliert.`,
     searchLabel: "Rassen suchen",
@@ -80,7 +80,7 @@ const de: RegistryCopy = {
     guideTitle: "Wie Sie eine Rasse auswählen",
     guide: () => [
       "Beginnen Sie mit dem, was Ihr Haushalt jeden Tag geben kann: Zeit für Bewegung, Fellpflege und Platz. Jede Rassenseite zeigt diese Bedürfnisse auf einen Blick, mit der genannten Quelle jedes Werts; wo Quellen voneinander abweichen, werden alle Werte gezeigt.",
-      "Wo eine Rasse eine Größenklasse hat (bei Hunden: sehr klein, klein, mittel, mittel bis groß, groß oder sehr groß), ist es die Klasse, die die genannte Quelle angibt – meist ein Zuchtverband –, und Gewichte sind die Spannen aus den Quellen, keine Schätzungen von uns.",
+      "Hat eine Rasse eine Größenklasse (bei Hunden: sehr klein, klein, mittel, mittel bis groß, groß oder sehr groß), stammt sie aus der genannten Quelle – meist einem Zuchtverband –, und Gewichte sind die Spannen aus den Quellen, keine eigenen Schätzungen.",
       "Merkmale wie „Gut geeignet für: aktive Familien“ sind dieselben wie in der App, und jedes ist durch Quellen belegt. Die Zahlen unter „So simuliert PetPrep die Rasse“ sind Spielregeln von PetPrep, keine Pflegeanleitung. [Wie wir das Register erstellen](page:about#methodik)",
     ],
   },
@@ -123,7 +123,7 @@ const de: RegistryCopy = {
     coat: "Fell",
     grooming_frequency: "Bürsten",
     grooming_level: "Pflegeaufwand",
-    shedding: "Haaren",
+    shedding: "Haarwechsel",
     litter_scoop: "Katzenklo säubern",
     litter_full_change: "Streu komplett wechseln",
     litter_pee: "Urinabsatz (erwachsen)",
@@ -232,7 +232,7 @@ const de: RegistryCopy = {
     scratching_after_missed_play: () => "Nach einem Tag mit zu wenig Spiel kratzt die Katze einmal an etwas; das Kind trägt sie zum Kratzbaum.",
     grooming_rule: (p) => (p.per_week === 1 ? "Kämmen einmal pro Woche." : p.per_week === 2 ? "Kämmen zweimal pro Woche." : `Kämmen ${p.per_week}-mal pro Woche.`),
     no_walk_in_heat: (p) =>
-      `Im Sommer (Juni–August; auf der Südhalbkugel Dezember–Februar) zeigen der Kinder- und der Spaziergangsbildschirm zwischen ${p.from} und ${p.to} Uhr (Ortszeit der Familie) eine ruhige Erinnerung: keine Spaziergänge bei Hitze. Keine Wetterdaten, keine Strafe – Schritte zählen trotzdem.`,
+      `Im Sommer (Juni–August; auf der Südhalbkugel Dezember–Februar) zeigen die Bildschirme für Kind und Spaziergang zwischen ${p.from} und ${p.to} Uhr (Ortszeit der Familie) eine ruhige Erinnerung: keine Spaziergänge bei Hitze. Keine Wetterdaten, keine Strafe – Schritte zählen trotzdem.`,
     care_task: (p) => {
       const q = p as unknown as { task: string; actor: string; times: number; period_days: number };
       const task: Record<string, string> = {
@@ -399,7 +399,7 @@ const de: RegistryCopy = {
     bloat_gdv: "In der Rasse kann eine Magendrehung (Magendilatation-Volvulus) auftreten, bei der sich der Magen verdreht – ein Notfall: Der Hund muss sofort zum Tierarzt.",
     inherited_eye_disease: "In der Rasse kommen erbliche Augenerkrankungen vor, etwa Collie-Eye-Anomalie, Katarakt (grauer Star) und progressive Retinaatrophie.",
     drug_sensitivity_mdr1: "Manche Hunde der Rasse haben eine erbliche Überempfindlichkeit gegen bestimmte Medikamente (Multi-Drug-Sensitivity, MDR1) – wenn Ihr Hund betroffen ist, sagen Sie es Ihrem Tierarzt.",
-    merle_to_merle_breeding: "Merle ist bei dieser Rasse eine Standardfarbe; zwei Merle-Hunde sollten nicht miteinander verpaart werden, weil solchen Welpen Seh- und Hörschäden drohen – der Royal Kennel Club registriert sie nicht.",
+    merle_to_merle_breeding: "Merle ist bei dieser Rasse eine anerkannte Farbe; zwei Merle-Hunde sollten nicht miteinander verpaart werden, weil solchen Welpen Seh- und Hörschäden drohen – der Royal Kennel Club registriert sie nicht.",
     kneecap_luxation: "In der Rasse kommt Patellaluxation vor, bei der die Kniescheibe zeitweise aus ihrer Position springt.",
     pra_and_eyelashes: "In der Rasse kommen Augenprobleme vor: die progressive Retinaatrophie, die langsam zur Erblindung führen kann, und zusätzliche Wimpern, die am Auge reiben (Distichiasis); Züchtern wird geraten, die Augen der Elterntiere untersuchen zu lassen.",
     liver_shunt: "In der Rasse kann ein portosystemischer Shunt (Lebershunt) auftreten, bei dem das Blut an der Leber vorbeifließt.",
@@ -522,7 +522,7 @@ const de: RegistryCopy = {
     simTitle: "So simuliert PetPrep die Rasse",
     simBadge: "Spielregeln, keine tierärztliche Beratung",
     simIntro:
-      "In PetPrep entspricht eine echte Woche einem Monat im Leben des Haustiers. Dies sind die Regeln, die das Spiel für diese Rasse verwendet. PetPrep hat sie anhand der Quellen auf dieser Seite festgelegt; sie sind keine Pflegeanleitung für ein echtes Tier.",
+      "In PetPrep entspricht eine echte Woche einem Monat im Leben des Haustiers. Dies sind die Regeln, die das Spiel für diese Rasse verwendet. PetPrep hat sie anhand der Quellen auf dieser Seite festgelegt; sie sind keine Pflegeanleitung für ein echtes Haustier.",
     simInfoOnly: "Diese Rasse ist nur zur Information im Register; die App simuliert sie noch nicht.",
     simTable: { stage: "Lebensphase", starts: "Beginnt", meals: "Mahlzeiten pro Tag", activity: { steps: "Tägliches Schrittziel", play_sessions: "Spiel pro Tag" } },
     arrives: (m) => `zieht mit ${m} ${s(m, "Monat", "Monaten")} ein`,
@@ -530,7 +530,7 @@ const de: RegistryCopy = {
     meals: (steps) => steps.map((x) => (x.from === null ? String(x.meals) : `ab dem ${x.from}. Monat: ${x.meals}`)).join("; "),
     simDecisions: "Jede Zahl im Spiel ist eine dokumentierte Entscheidung von PetPrep mit ihren Quellen.",
     healthTitle: "Gesundheit",
-    healthNote: "Nur zur Information, nicht tierärztlich geprüft. Fragen Sie Ihren Tierarzt nach Ihrem eigenen Tier.",
+    healthNote: "Nur zur Information, nicht tierärztlich geprüft. Fragen Sie Ihren Tierarzt nach Ihrem eigenen Haustier.",
     healthNone: "Unsere Quellen enthalten für diese Rasse noch keine rassespezifischen Gesundheitsangaben.",
     checklistTitle: "Vor dem Kauf: was Sie beim Züchter prüfen sollten",
     checklistIntro: (speciesId) =>
@@ -556,7 +556,7 @@ const de: RegistryCopy = {
     sourcesTitle: "Quellen",
     sourcesIntro: "Jeder Fakt auf dieser Seite nennt eine dieser Quellen.",
     sourceLabel: (id, publisher) => `Quelle ${id}: ${publisher}`,
-    disclaimer: "PetPrep ist eine Simulation für Familien. Diese Seite ist keine tierärztliche Beratung – fragen Sie bei einem echten Tier einen Tierarzt oder den Rassezuchtverein.",
+    disclaimer: "PetPrep ist eine Simulation für Familien. Diese Seite ist keine tierärztliche Beratung – fragen Sie bei einem echten Haustier einen Tierarzt oder den Rassezuchtverein.",
     backTo: (many) => `Alle ${many}`,
     compareWith: "Mit anderen Rassen vergleichen",
     related: { title: "Ähnliche Rassen", intro: (many) => `Weitere ${many} im Register mit ähnlichen Bedürfnissen – jeweils mit belegten Fakten.` },
@@ -624,7 +624,7 @@ const de: RegistryCopy = {
     border_collie: {
       text: [
         "Der Border Collie ist ein mittelgroßer Hütehund aus Großbritannien, gebaut für Ausdauer und harte Arbeit. Sein Rassestandard beschreibt einen eifrigen, aufmerksamen, reaktionsschnellen und intelligenten Hund, der weder nervös noch aggressiv ist.",
-        "Zuchtverbände und Tierärzte sind sich vor allem in einem einig: Diese Rasse hat sehr viel Energie. Sie braucht jeden Tag mehr als zwei Stunden Bewegung und viel Beschäftigung für den Kopf. Langweilt sich der Hund oder bewegt er sich zu wenig, sucht er sich eigene Aufgaben – er kaut auf allem herum, was er erreicht, oder versucht, spielende Kinder zu hüten.",
+        "Zuchtverbände und Tierärzte sind sich vor allem in einem einig: Diese Rasse hat sehr viel Energie. Sie braucht jeden Tag mehr als zwei Stunden Bewegung und viel geistige Beschäftigung. Langweilt sich der Hund oder bewegt er sich zu wenig, sucht er sich eigene Aufgaben – er kaut auf allem herum, was er erreicht, oder versucht, spielende Kinder zu hüten.",
       ],
       sources: ["S1", "S2", "S4", "S5", "S7"],
     },
@@ -648,7 +648,7 @@ const de: RegistryCopy = {
       aka: "French Bulldog, Frenchie",
       text: [
         "Die Französische Bulldogge ist ein kleiner, stämmiger Begleithund aus Frankreich mit kurzem, glattem Fell und aufrechten „Fledermausohren“. Ihr Standard beschreibt einen geselligen, lebhaften und verspielten Hund; britische Tierschutzorganisationen nennen sie gelassen und anpassungsfähig und sagen, dass sie meist gut mit Kindern auskommt – das hat sie zu einem beliebten Familienhund gemacht.",
-        "Sie braucht bis zu eine Stunde Bewegung pro Tag und passt in eine Wohnung. Die Kehrseite, die jede Quelle nennt, ist das flache Gesicht: Es kann das Atmen erschweren, und Französische Bulldoggen überhitzen schnell, besonders bei warmem Wetter – Schatten, Wasser und ruhige Spaziergänge sind deshalb wichtig. Die PDSA schlägt Familien vor, auch die Adoption einer erwachsenen Französischen Bulldogge in Betracht zu ziehen.",
+        "Sie braucht bis zu eine Stunde Bewegung pro Tag und passt in eine Wohnung. Die Kehrseite, die jede Quelle nennt, ist das flache Gesicht: Es kann das Atmen erschweren, und Französische Bulldoggen überhitzen schnell, besonders bei warmem Wetter – Schatten, Wasser und ruhige Spaziergänge sind deshalb wichtig. Die PDSA legt Familien nahe, auch die Aufnahme einer erwachsenen Französischen Bulldogge in Betracht zu ziehen.",
       ],
       sources: ["S76", "S78", "S79", "S81", "S82"],
     },
@@ -664,7 +664,7 @@ const de: RegistryCopy = {
       aka: "Cavalier, CKCS",
       text: [
         "Der Cavalier King Charles Spaniel ist ein Zwergspaniel aus Großbritannien mit langen, befederten Ohren und langem, seidigem Fell in vier Farben: Blenheim, Ruby, Black and Tan und Tricolour. Sein Standard beschreibt einen aktiven, anmutigen Hund mit sanftem Ausdruck – sportlich, anhänglich, freundlich und furchtlos.",
-        "Er braucht etwa eine Stunde Bewegung pro Tag, kann in einer Wohnung leben und gilt als gut im Umgang mit Kindern, wobei das Spiel beaufsichtigt werden sollte; allein bleibt er nicht gern. Sein Fell muss mehr als einmal pro Woche gebürstet werden. Britische Quellen nennen eine Herzklappenerkrankung und eine schmerzhafte Erkrankung der Wirbelsäule, die mit der Schädelform zusammenhängt, als wichtigste Gesundheitsthemen; Züchter werden deshalb gebeten, ihre Hunde auf das Herz untersuchen und per MRT scannen zu lassen.",
+        "Er braucht etwa eine Stunde Bewegung pro Tag, kann in einer Wohnung leben und gilt als kinderfreundlich, wobei das Spiel beaufsichtigt werden sollte; allein bleibt er nicht gern. Sein Fell muss mehr als einmal pro Woche gebürstet werden. Britische Quellen nennen eine Herzklappenerkrankung und eine schmerzhafte Erkrankung der Wirbelsäule, die mit der Schädelform zusammenhängt, als wichtigste Gesundheitsthemen; Züchter werden deshalb gebeten, das Herz ihrer Hunde untersuchen und eine MRT-Aufnahme machen zu lassen.",
       ],
       sources: ["S103", "S105", "S106", "S108", "S110"],
     },
@@ -686,7 +686,7 @@ const de: RegistryCopy = {
     dachshund: {
       aka: "Teckel, Dachshund",
       text: [
-        "Der Dackel ist ein deutscher Jagdhund für Dachs und Kaninchen, in seiner Heimat auch Teckel genannt, den es in mehreren Größen und drei Haararten gibt; diese Seite behandelt die Normalgröße mit Kurzhaar. Sein Standard beschreibt einen im Verhältnis zu seiner Höhe mäßig langen Hund ohne Übertreibungen – treu, vielseitig und gutmütig, intelligent, lebhaft und mutig – mit dichtem, kurzem, glattem Fell in Rot oder in Schwarz oder Schokolade mit lohfarbenen Abzeichen.",
+        "Der Dackel, auch Teckel genannt, ist ein deutscher Jagdhund für die Jagd auf Dachs und Kaninchen, den es in mehreren Größen und drei Haararten gibt; diese Seite behandelt die Normalgröße mit Kurzhaar. Sein Standard beschreibt einen im Verhältnis zu seiner Höhe mäßig langen Hund ohne Übertreibungen – treu, vielseitig und gutmütig, intelligent, lebhaft und mutig – mit dichtem, kurzem, glattem Fell in Rot oder in Schwarz oder Schokolade mit lohfarbenen Abzeichen.",
         "Er braucht bis zu etwa eine Stunde Bewegung pro Tag, verteilt auf ein paar Spaziergänge mit Zeit zum Schnüffeln, und passt in ein kleines Haus. Er liebt Menschen und kommt im Allgemeinen gut mit Kindern jeden Alters aus, immer unter Aufsicht; wegen seines starken Jagdtriebs wird er aber nicht mit kleineren Haustieren empfohlen, und allein bleibt er nicht gern. Wegen seines langen Rückens und der kurzen Beine neigt er zu Bandscheibenvorfällen und sollte deshalb nicht springen; Züchter werden gebeten, die Wirbelsäule vor der Zucht untersuchen zu lassen.",
       ],
       sources: ["S124", "S125", "S126", "S127", "S129"],
@@ -807,7 +807,7 @@ const de: RegistryCopy = {
       aka: "Shih-Tzu",
       text: [
         "Der Shih Tzu ist ein kleiner Begleithund aus Tibet; Großbritannien betreut seinen FCI-Standard. Die Standards beschreiben einen robusten Hund mit üppigem Fell, stolzer Haltung und einem „chrysanthemenartigen“ Gesicht: langes, dichtes Deckhaar, große, dunkle, runde Augen, große Hängeohren und eine reich befederte, über dem Rücken getragene Rute. Die Standards erlauben viele Farben; PetPrep zeigt Gold-Weiß, Schwarz-Weiß und Leberbraun-Weiß und nie Merle. Der Fang ist kurz und flach, und die PDSA nennt Atemprobleme durch das kürzere Gesicht; deshalb zeichnet PetPrep immer ein gemäßigtes Gesicht mit offenen Nasenlöchern.",
-        "Die FCI beschreibt ihn als intelligent, aktiv und aufmerksam, freundlich und unabhängig. Der Royal Kennel Club empfiehlt bis zu eine Stunde Bewegung pro Tag und tägliche Fellpflege und nennt eine Wohnung als geeignetes Zuhause. Die PDSA sagt, dass Shih Tzus bei richtiger Sozialisierung und Erziehung gutmütige Familienhunde sein können, nennt sie ideal für Ersthalter, rät, sie bei Kindern immer zu beaufsichtigen, und empfiehlt für die meisten Familienhunde tägliches Bürsten und alle sechs bis acht Wochen einen Schnitt bei einem professionellen Hundefriseur. Der Royal Kennel Club gibt seine Lebenserwartung mit über 10 Jahren an.",
+        "Die FCI beschreibt ihn als intelligent, aktiv und aufmerksam, freundlich und unabhängig. Der Royal Kennel Club empfiehlt bis zu eine Stunde Bewegung pro Tag und tägliche Fellpflege und nennt eine Wohnung als geeignetes Zuhause. Die PDSA sagt, dass Shih Tzus bei richtiger Sozialisierung und Erziehung gutmütige Familienhunde sein können, nennt sie ideal für Ersthalter, rät, sie bei Kindern immer zu beaufsichtigen, und empfiehlt für die meisten Hunde tägliches Bürsten und alle sechs bis acht Wochen einen Schnitt bei einem professionellen Hundefriseur. Der Royal Kennel Club gibt seine Lebenserwartung mit über 10 Jahren an.",
       ],
       sources: ["S229", "S231", "S233"],
     },
@@ -1166,7 +1166,7 @@ const de: RegistryCopy = {
     cairn_terrier: {
       aka: "Cairn, Cairnie",
       text: [
-        "Der Cairn Terrier stammt aus Großbritannien; die FCI führt ihn bei den kleinen Terriern. Der Standard des Kennel Club beschreibt einen wendigen, aufmerksamen Terrier von arbeitstüchtigem, natürlichem Aussehen – aktiv, schneidig und robust, mit furchtlosem und fröhlichem Wesen, selbstbewusst, aber nicht aggressiv. Sein wetterfestes doppeltes Fell hat ein üppiges, hartes Deckhaar; die Farbe ist Creme, Weizenfarben, Rot, Grau oder fast Schwarz, Stromung ist zulässig, und dunkle Ohren und Fang sind typisch. Er gibt eine Höhe von etwa 28–31 cm und ein Idealgewicht von 6–7,5 kg an.",
+        "Der Cairn Terrier stammt aus Großbritannien; die FCI führt ihn bei den kleinen Terriern. Der Standard des Kennel Club beschreibt einen wendigen, aufmerksamen Terrier von arbeitstüchtigem, natürlichem Aussehen – aktiv, schneidig und robust, mit furchtlosem und fröhlichem Wesen, selbstbewusst, aber nicht aggressiv. Sein wetterfestes doppeltes Fell hat ein üppiges, hartes Deckhaar; die Farbe ist Creme, Weizenfarben, Rot, Grau oder fast Schwarz, Gestromung ist zulässig, und dunkle Ohren und Fang sind typisch. Er gibt eine Höhe von etwa 28–31 cm und ein Idealgewicht von 6–7,5 kg an.",
         "Die PDSA empfiehlt mindestens eine Stunde Bewegung pro Tag und sagt, dass Cairns grenzenlose Energie und einen starken Jagdinstinkt haben, sodass sie früh mit Katzen und anderen kleinen Haustieren sozialisiert werden müssen und ohne Leine Vorsicht geboten ist, und dass sie, einmal sozialisiert, sehr gut mit Kindern auskommen und ausgezeichnete Familienhunde sind. Sie rät, das Fell zweimal im Jahr von Hand zu trimmen und es ein- bis zweimal pro Woche zu pflegen; Dogs Trust sagt, dass sie sehr wenig haaren. Eine große britische Studie (McMillan 2024, über Dogs Trust) gibt eine mediane Lebenserwartung von 14,0 Jahren an, PetMD 13–15 Jahre, und wie andere kleine Hunde ist er mit etwa 9–12 Monaten ausgewachsen (PetMD). PetMD ergänzt, dass sie viel Bewegung und geistige Anregung brauchen.",
       ],
       sources: ["S583", "S584", "S585", "S586", "S587", "S123", "S10"],
