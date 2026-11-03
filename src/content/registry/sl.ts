@@ -575,6 +575,8 @@ const sl: RegistryCopy = {
     },
     sourcesTitle: "Viri",
     sourcesIntro: "Vsako dejstvo na tej strani navaja enega od teh virov.",
+    sourcesAll: "Prikaži vse vire",
+    sourcesFewer: "Prikaži manj",
     sourceLabel: (id, publisher) => `Vir ${id}: ${publisher}`,
     disclaimer: "PetPrep je simulacija za družine. Ta stran ni veterinarski nasvet – za pravega ljubljenčka se posvetujte z veterinarjem ali klubom pasme.",
     backTo: (many) => `Vse pasme: ${many.toLowerCase()}`,

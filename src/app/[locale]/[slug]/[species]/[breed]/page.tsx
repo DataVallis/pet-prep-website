@@ -1,4 +1,5 @@
 import { createHash } from "node:crypto";
+import { SourceList } from "@/components/registry/SourceList";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -515,19 +516,7 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
           <section aria-labelledby="sources" className="flex flex-col gap-4">
             <h2 id="sources" className="h-card text-[28px] leading-tight sm:text-[34px]">{c.page.sourcesTitle}</h2>
             <p className="max-w-3xl text-[15px] leading-relaxed text-muted">{c.page.sourcesIntro}</p>
-            <ol className="grid gap-3">
-              {v.sources.map((s) => (
-                <li key={s.id} id={`source-${s.id}`} className="scroll-mt-24 rounded-[14px] border border-line bg-white px-4 py-3 text-[15px] leading-relaxed target:ring-2 target:ring-mint">
-                  <span className="mr-2 font-mono text-[12px] font-semibold text-mint-text">{s.id}</span>
-                  <span className="font-medium">{s.publisher}</span>
-                  {" — "}
-                  <a href={s.url} className="break-words text-graphite underline decoration-line underline-offset-2 hover:decoration-graphite" target="_blank" rel="noopener noreferrer">
-                    {s.title}
-                  </a>
-                  <span className="block break-all text-[13px] text-muted">{s.url}</span>
-                </li>
-              ))}
-            </ol>
+            <SourceList sources={v.sources.map((s) => ({ id: s.id, publisher: s.publisher, title: s.title, url: s.url }))} showAll={c.page.sourcesAll} showFewer={c.page.sourcesFewer} />
           </section>
 
           <p className="max-w-3xl text-sm leading-relaxed text-muted">{c.page.disclaimer}</p>

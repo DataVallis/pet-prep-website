@@ -587,6 +587,8 @@ const it: RegistryCopy = {
     },
     sourcesTitle: "Fonti",
     sourcesIntro: "Ogni dato di questa pagina cita una di queste fonti.",
+    sourcesAll: "Mostra tutte le fonti",
+    sourcesFewer: "Mostra meno",
     sourceLabel: (id, publisher) => `Fonte ${id}: ${publisher}`,
     disclaimer: "PetPrep è una simulazione per famiglie. Questa pagina non è un consiglio veterinario: per un animale vero, chiedi a un veterinario o al club di razza.",
     backTo: (many) => `Tutti i ${lc(many)}`,

@@ -155,6 +155,9 @@ export type RegistryCopy = {
     checklistStatus: Record<"none_recommended" | "not_found" | "not_checked", string>;
     sourcesTitle: string;
     sourcesIntro: string;
+    /** Collapsed source list (David 2026-11-03): button that shows the rest, and the one that hides it again. */
+    sourcesAll: string;
+    sourcesFewer: string;
     sourceLabel: (id: string, publisher: string) => string;
     disclaimer: string;
     backTo: (many: string) => string;

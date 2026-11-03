@@ -634,6 +634,8 @@ const cs: RegistryCopy = {
     },
     sourcesTitle: "Zdroje",
     sourcesIntro: "Každý fakt na této stránce odkazuje na jeden z těchto zdrojů.",
+    sourcesAll: "Zobrazit všechny zdroje",
+    sourcesFewer: "Zobrazit méně",
     sourceLabel: (id, publisher) => `Zdroj ${id}: ${publisher}`,
     disclaimer: "PetPrep je simulace pro rodiny. Tato stránka není veterinární rada – v otázkách péče o skutečné zvíře se poraďte s veterinářem nebo s chovatelským klubem plemene.",
     backTo: (many) => `Všechna plemena ${gen(many)}`,
