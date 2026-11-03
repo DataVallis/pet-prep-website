@@ -569,7 +569,7 @@ const sv: CareCopy = {
     metaDescription: (w, n) => `${n} livsmedel granskade för ${w.plural}: vad som är giftigt, vad som är riskabelt och vad som är okej som godbit – orsaken, symtomen och vad du ska göra, med länk till varje källa.`,
     eyebrow: "Skötsel · mat",
     lead: (w) => `Vilka livsmedel som är giftiga, riskabla eller okej för ${w.plural} – sorterade efter risk, enkelt förklarade, med länk till varje källa.`,
-    emergencyTitle: "Har djuret ätit något giftigt?",
+    emergencyTitle: "Har ditt husdjur ätit något giftigt?",
     emergencyText: "Ring din veterinär eller en giftrådgivning för djur direkt. Skriv upp vad djuret har ätit och hur mycket – vänta inte på symtom.",
   },
   food: {
@@ -585,7 +585,7 @@ const sv: CareCopy = {
     notVetReviewed: "Allmän information från källorna nedan, inte granskad av en veterinär och ingen ersättning för veterinärens råd. Ring din veterinär om du är osäker.",
     otherSpecies: "Andra djur",
     simulates: "Så övar barn på det här i PetPrep",
-    simulatesText: (w) => `I PetPrep tar ett barn hand om en realistisk ${w.pet}: måltider vid rätt tid, vatten, promenader och skötsel. Att veta vad som är säkert att dela med sig av är en del av att vara redo för ett riktigt husdjur.`,
+    simulatesText: (w) => `I PetPrep tar ett barn hand om en realistisk ${w.pet}: måltider vid rätt tid, vatten, promenader och skötsel. Att veta vad man säkert kan dela med djuret är en del av att vara redo för ett riktigt husdjur.`,
     backTo: "Alla livsmedel",
   },
   breadcrumb: "Skötsel",
