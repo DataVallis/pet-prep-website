@@ -16,17 +16,35 @@ export function SourceList({ sources, visible = 2, showAll, showFewer }: { sourc
 
   useEffect(() => {
     if (hidden <= 0) return;
-    const reveal = () => {
-      const id = decodeURIComponent(window.location.hash.slice(1));
-      if (!id.startsWith("source-")) return;
+    const show = (id: string) => {
       const index = sources.findIndex((s) => `source-${s.id}` === id);
-      if (index < visible) return;
+      if (index < visible) return false;
       setOpen(true);
-      requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ block: "center" }));
+      // Wait for React to un-hide the item, then scroll to it.
+      window.setTimeout(() => document.getElementById(id)?.scrollIntoView({ block: "center" }), 50);
+      return true;
     };
-    reveal();
-    window.addEventListener("hashchange", reveal);
-    return () => window.removeEventListener("hashchange", reveal);
+    const fromHash = () => {
+      const id = decodeURIComponent(window.location.hash.slice(1));
+      if (id.startsWith("source-")) show(id);
+    };
+    // A click on a citation chip (S7): open the list before the browser tries to scroll to a hidden item.
+    const onClick = (e: MouseEvent) => {
+      const a = (e.target as Element | null)?.closest?.('a[href^="#source-"]');
+      if (!a) return;
+      const id = decodeURIComponent(a.getAttribute("href")!.slice(1));
+      if (show(id)) {
+        e.preventDefault();
+        history.pushState(null, "", `#${id}`);
+      }
+    };
+    fromHash();
+    window.addEventListener("hashchange", fromHash);
+    document.addEventListener("click", onClick, true);
+    return () => {
+      window.removeEventListener("hashchange", fromHash);
+      document.removeEventListener("click", onClick, true);
+    };
   }, [sources, visible, hidden]);
 
   return (
