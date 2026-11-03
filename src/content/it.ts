@@ -68,7 +68,7 @@ const it: Dictionary = {
     hud: "La schermata principale del bambino: lo stato dell’animale in tempo reale, quattro bisogni e i pulsanti per prendersene cura.",
     picker: "I genitori scelgono l’animale: razza, provenienza (adottato o da un allevatore) ed età all’arrivo.",
     parent: "Il pannello per i genitori: un semaforo, il Care Score e le routine di oggi per ogni bambino.",
-    report: "Il resoconto di un bambino per 7, 30 o 84 giorni: routine, passeggiate e compiti saltati, giorno per giorno.",
+    report: "Il resoconto di un bambino per 7, 30 o 84 giorni: routine, passeggiate e compiti saltati, giorno per giorno.",
     assistant: "Quando arriva a casa: l’assistente IA trasforma i dati del collare in un unico suggerimento chiaro.",
     certificate: "Dopo 12 settimane: il Certificato di responsabilità con il Care Score del bambino.",
   },
@@ -138,7 +138,7 @@ const it: Dictionary = {
     },
     phone: {
       petName: "Luna",
-      petAge: "Cucciola · 3 mesi",
+      petAge: "Cucciola · 3 mesi",
       live: "LIVE",
       video: "Video fotorealistico dell’animale creato con l’IA",
       actions: ["Cibo", "Acqua", "Passeggiata", "Pulisci"],
@@ -183,7 +183,7 @@ const it: Dictionary = {
       items: [
         { title: "Passeggiate vere, passi veri", text: "La passeggiata quotidiana conta i passi dal telefono di tuo figlio. Oggi nessuna passeggiata? L’animale ne risente domani." },
         { title: "Cresce", text: "Un cucciolo mangia quattro volte al giorno, poi tre, poi due, e crescendo riceve una nuova foto." },
-        { title: "Si comporta come un animale vero", text: "I cuccioli devono uscire. I cani annoiati masticano le pantofole. I bisogni arrivano prima della cena." },
+        { title: "Si comporta come un animale vero", text: "I cuccioli devono uscire. I cani annoiati masticano le pantofole. Gli incidenti capitano proprio prima di cena." },
         { title: "Rispetta scuola e sonno", text: "Le ore di silenzio sospendono i promemoria. Un pasto che cade durante la scuola spetta a te, non a tuo figlio." },
         { title: "Conseguenze vere, con delicatezza", text: "La trascuratezza porta a una visita dal veterinario o al rifugio: mai niente che faccia paura, sempre con un nuovo inizio." },
         { title: "Unico al mondo", text: "Ogni animale ha il suo mantello, le sue macchie e i suoi occhi: fotorealistico e mai uguale a un altro." },
@@ -203,11 +203,11 @@ const it: Dictionary = {
     adults: {
       eyebrow: "Per gli adulti",
       title: "Prova la razza prima di portarla a casa.",
-      text: "Ti sei innamorato di una razza in particolare? PetPrep non è solo per i bambini. Per 12 settimane ti prendi cura di un animale IA di quella razza, con i suoi veri bisogni quotidiani, e scopri se fa davvero per te, prima di comprarlo o adottarlo.",
+      text: "Hai in mente una razza in particolare? PetPrep non è solo per i bambini. Per 12 settimane ti prendi cura di un animale IA di quella razza, con i suoi veri bisogni quotidiani, e scopri se fa davvero per te, prima di comprarlo o adottarlo.",
       points: [
         {
           strong: "I veri bisogni della razza",
-          text: "pasti in fasce orarie, acqua, pulizia e un obiettivo quotidiano di passi basato sul fabbisogno di movimento documentato dalle fonti: un border collie adulto ha bisogno di 12.000 passi al giorno, un meticcio di 6.000.",
+          text: "pasti in fasce orarie, acqua, pulizia e un obiettivo quotidiano di passi basato sul fabbisogno di movimento documentato dalle fonti: un border collie adulto ha bisogno di 12.000 passi al giorno, un meticcio di 6.000.",
         },
         {
           strong: "Addestramento e incidenti da cucciolo",
@@ -269,7 +269,7 @@ const it: Dictionary = {
           items: [
             { title: "Il genitore crea la famiglia", text: "Ti registri con la tua email (l’accesso con Apple e Google è in arrivo). Aggiungi ogni figlio con un soprannome e, se vuoi, l’anno di nascita. È tutto ciò che chiediamo su tuo figlio." },
             { title: "Tu scegli l’animale", text: "Scegli la razza (il meticcio è gratis), la provenienza dell’animale – adottato da un rifugio o comprato da un allevatore – e la sua età all’arrivo: cucciolo, giovane, adulto o anziano." },
-            { title: "Tuo figlio accede con un codice", text: "Ricevi un codice di 6 cifre valido per 15 minuti. Tuo figlio lo digita sul suo telefono: niente email e niente password. Telefono perso? Lo disconnetti da tutti i dispositivi con un tocco." },
+            { title: "Tuo figlio accede con un codice", text: "Ricevi un codice di 6 cifre valido per 15 minuti. Tuo figlio lo digita sul suo telefono: niente email e niente password. Telefono perso? Lo disconnetti da tutti i dispositivi con un tocco." },
             { title: "Il Contratto di responsabilità", text: "Tuo figlio firma una promessa con un dito. La firma è la nascita dell’animale: i bisogni iniziano a contare da quel momento, quindi non si perde nulla se firma più tardi." },
             { title: "Dodici settimane di cure", text: "Pasti nelle giuste fasce orarie, acqua fresca, pulizia e una passeggiata quotidiana con passi veri. Man mano che l’animale cresce, i suoi bisogni cambiano." },
             { title: "Il certificato", text: "Dopo 12 settimane l’animale compie un anno. Tuo figlio riceve un Certificato di responsabilità con il suo Care Score, oppure scoprite insieme, senza rischi, che non è ancora il momento." },
@@ -288,14 +288,14 @@ const it: Dictionary = {
           type: "table",
           heading: "Di cosa ha bisogno ogni giorno un cane meticcio adulto",
           intro: "I numeri provengono da fonti veterinarie e cinofile; dove le fonti indicano solo un intervallo, PetPrep fissa il valore e lo dichiara.",
-          head: ["Bisogno", "Quanto spesso", "Se viene dimenticato"],
+          head: ["Bisogno", "Con che frequenza", "Se viene dimenticato"],
           rows: [
-            ["Cibo", "Mattina (6–10) e sera (17–21), una volta per fascia", "Ha fame dopo circa 12,5 ore"],
-            ["Acqua", "3 volte al giorno, ad almeno 3 ore di distanza", "Ha sete dopo circa 10 ore"],
-            ["Passeggiata", "6.000 passi veri (i cuccioli partono da 2.000)", "Nessuna passeggiata → malato la mattina dopo"],
+            ["Cibo", "Mattina (6–10) e sera (17–21), una volta per fascia", "Ha fame dopo circa 12,5 ore"],
+            ["Acqua", "3 volte al giorno, ad almeno 3 ore di distanza", "Ha sete dopo circa 10 ore"],
+            ["Passeggiata", "6.000 passi veri (i cuccioli partono da 2.000)", "Nessuna passeggiata → la mattina dopo sta male"],
             ["Pulizia", "Quando l’animale fa i bisogni, mai durante le ore di silenzio", "Niente cibo né acqua finché non è pulito"],
           ],
-          note: "I cuccioli mangiano 4, poi 3, poi 2 volte al giorno e riescono a trattenersi solo per circa un’ora per ogni mese di età. Un [border collie](breed:border_collie) ha bisogno di 12.000 passi e ha fame prima.",
+          note: "I cuccioli mangiano 4, poi 3, poi 2 volte al giorno e riescono a trattenersi solo per circa un’ora per ogni mese di età. Un [border collie](breed:border_collie) ha bisogno di 12.000 passi e ha fame prima.",
         },
         {
           type: "cards",
@@ -306,7 +306,7 @@ const it: Dictionary = {
             { title: "Pasti durante la scuola", text: "Una fascia dei pasti che cade interamente nelle ore di silenzio spetta al genitore: non conta mai contro tuo figlio." },
             { title: "Pausa in qualsiasi momento", text: "Un pulsante mette in pausa il gioco, per esempio per una chiacchierata in famiglia. Durante la pausa non peggiora nulla." },
             { title: "Promemoria gentili", text: "L’animale prima richiama tuo figlio con dolcezza, poi con urgenza. Solo se un bisogno resta a zero per un’ora ricevi un allarme." },
-            { title: "Conseguenze vere", text: "La trascuratezza significa 12 ore dal veterinario. Un giorno intero di trascuratezza significa che il rifugio si prende l’animale, e puoi ricominciare." },
+            { title: "Conseguenze vere", text: "Se un bisogno viene trascurato, l’animale passa 12 ore dal veterinario. Dopo un giorno intero senza cure se lo prende il rifugio, e puoi ricominciare." },
             { title: "Animali condivisi", text: "I fratelli possono condividere un animale. Ogni azione viene attribuita al bambino che l’ha fatta, così il punteggio resta equo." },
           ],
         },
@@ -366,7 +366,7 @@ const it: Dictionary = {
             "Ore di silenzio per scuola e sonno, nella tua ora locale, anche con il passaggio all’ora legale e all’ora solare.",
             "Metti in pausa il gioco di qualsiasi animale con un solo tocco confermato; lo schermo di tuo figlio si blocca in tempo reale.",
             "Invita l’altro genitore con un codice monouso: vedrete entrambi ogni figlio e ogni animale.",
-            "Disconnetti un bambino da tutti i dispositivi se perde il telefono; i codici sono monouso e scadono dopo 15 minuti.",
+            "Disconnetti un bambino da tutti i dispositivi se perde il telefono; i codici sono monouso e scadono dopo 15 minuti.",
             "Esporta tutti i dati della tua famiglia in un file, oppure elimina all’istante dall’app il profilo di un bambino o l’intero account.",
           ],
         },
@@ -401,7 +401,7 @@ const it: Dictionary = {
           columns: 2,
           items: [
             { title: "Integrazione con i collari smart", text: "Collega i più diffusi localizzatori GPS e di attività, oppure un collare PetPrep, e vedi l’attività nel suo contesto." },
-            { title: "Avvisi che spiegano", text: "«Oggi Max ha corso 2 km, la metà del solito, e ha mangiato un pasto più abbondante. Una passeggiata in più stasera lo aiuterà a calmarsi». Un’osservazione, un motivo, un suggerimento." },
+            { title: "Avvisi che spiegano", text: "«Oggi Max ha corso 2 km, la metà del solito, e ha mangiato un pasto più abbondante. Una passeggiata in più stasera lo aiuterà a calmarsi». Un’osservazione, un motivo, un suggerimento." },
             { title: "Prima l’IA, poi un veterinario vero", text: "Fai una domanda o carica una foto. L’assistente risponde alle domande generali, valuta l’urgenza e, quando serve, ti indirizza a un veterinario vero; con sintomi urgenti si va direttamente dal veterinario." },
             { title: "Test del DNA per il tuo cane o gatto", text: "Ordina un test del DNA nell’app o carica il risultato di uno che hai già. PetPrep mostra quali razze ci sono nel mix, cosa è tipico per loro e quali problemi di salute sono più comuni in quelle razze, con le fonti. Le percentuali di razza non sono una diagnosi e un test del DNA non rivela le allergie." },
             { title: "Una scheda per il veterinario", text: "Il mix di razze ed eventuali risultati diretti del DNA su un’unica pagina o in un codice QR, così il tuo veterinario sa subito cosa c’è in un meticcio." },
@@ -433,7 +433,7 @@ const it: Dictionary = {
       },
       eyebrow: "Prezzi",
       title: "Prezzi semplici ed equi.",
-      lead: "Inizia gratis con un cane meticcio. Acquista la sfida completa di 12 settimane quando sei pronto: le 12 settimane iniziano con l’acquisto.",
+      lead: "Inizia gratis con un cane meticcio. Acquista la sfida completa di 12 settimane quando vuoi: le 12 settimane iniziano con l’acquisto.",
       blocks: [
         { type: "pricing" },
         {
@@ -480,17 +480,17 @@ const it: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "Per che età è PetPrep?", a: "È pensato per bambini di circa 7–12 anni e funziona bene fino ai 16. Lo usano anche gli adulti, per capire se una certa razza fa davvero per loro prima di comprarla o adottarla." },
+            { q: "Per che età è PetPrep?", a: "È pensato per bambini di circa 7–12 anni e funziona bene fino ai 16. Lo usano anche gli adulti, per capire se una certa razza fa davvero per loro prima di comprarla o adottarla." },
             { q: "Posso usare PetPrep da solo, senza bambini?", a: "Sì. Crea un account come genitore e aggiungi te stesso come profilo di chi si prende cura dell’animale: basta un soprannome, lascia vuoto l’anno di nascita. Scegli la razza, crea un codice di 6 cifre, poi sullo stesso telefono o su un altro scegli «Sono un bambino» e digita il codice: così diventi tu chi se ne prende cura. Visto che sarà il cane di famiglia, puoi aggiungere in seguito il partner o i figli, così ve ne occupate insieme. Il prezzo è lo stesso delle famiglie." },
             { q: "Quanto tempo richiede ogni giorno?", a: "Pochi minuti per cibo, acqua e pulizia, più la passeggiata di cui avrebbe comunque bisogno un cane vero." },
             { q: "L’app traccia la posizione di mio figlio?", a: "No. Per le passeggiate conta solo i passi. Se lo consenti, li legge da Apple Salute (iPhone) o Health Connect (Android), in sola lettura e solo i passi; dove disponibile usa anche il sensore di movimento del telefono. Chiede il permesso nella schermata della passeggiata. Il GPS non viene usato." },
             { q: "Mio figlio ha bisogno di un indirizzo email?", a: "No. Sei tu a creare l’account; tuo figlio accede con un codice di 6 cifre che generi tu. Conserviamo solo un soprannome e, se vuoi, l’anno di nascita." },
-            { q: "Cosa succede se mio figlio si dimentica?", a: "L’animale prima invia promemoria gentili. Se un bisogno resta a zero, l’animale si ammala e passa 12 ore dal veterinario. Dopo un giorno intero senza cure, il rifugio virtuale se lo prende, e potete ricominciare." },
+            { q: "Cosa succede se mio figlio si dimentica?", a: "L’animale prima invia promemoria gentili. Se un bisogno resta a zero, l’animale si ammala e passa 12 ore dal veterinario. Dopo un giorno intero senza cure, il rifugio virtuale se lo prende, e potete ricominciare." },
             { q: "I fratelli possono condividere un animale?", a: "Sì. Ogni bambino firma il proprio contratto, ogni azione viene attribuita a chi l’ha fatta e ciascuno ottiene il proprio Care Score equo." },
             { q: "E la scuola e l’ora di andare a letto?", a: "Imposta le ore di silenzio. L’animale rallenta, non viene inviato nulla e i pasti che cadono interamente nelle ore di silenzio spettano a te." },
             { q: "Fa paura ai bambini?", a: "No. Le conseguenze sono vere ma delicate: l’animale va dal veterinario o al rifugio, mai niente di cruento, e c’è sempre un nuovo inizio." },
             { q: "Quali animali sono disponibili?", a: "Oggi [cani](species:dog) e [gatti](species:cat): un cane meticcio e un gatto domestico gratuiti e, nella sfida di 12 settimane, tutte le razze del [registro degli animali](page:animals), che riporta anche i loro bisogni con le fonti. Sono in programma altre specie." },
-            { q: "In quali lingue?", a: "Oggi l’app è in inglese e sloveno. Arriveranno altre lingue man mano che PetPrep verrà lanciata in nuovi Paesi." },
+            { q: "In quali lingue è disponibile?", a: "Oggi l’app è in inglese e sloveno. Arriveranno altre lingue man mano che PetPrep verrà lanciata in nuovi Paesi." },
             { q: "Cosa succede quando prendiamo un animale vero?", a: "PetPrep può diventare un assistente IA per il tuo animale vero. Questa parte è in sviluppo." },
           ],
         },
@@ -541,7 +541,7 @@ const it: Dictionary = {
           "PetPrep trasforma la promessa di un bambino in una prova prima che la famiglia prenda un animale, poi diventa un assistente IA per tutta la sua vita. Pre-lancio; presentazione su richiesta.",
       },
       eyebrow: "Investitori",
-      title: "Da una sfida di 12 settimane a un rapporto di 10–15 anni.",
+      title: "Da una sfida di 12 settimane a un rapporto di 10–15 anni.",
       lead:
         "PetPrep offre ai genitori una prova oggettiva del fatto che il loro figlio sia pronto o meno per un animale vero, e poi resta accanto alla famiglia per tutta la vita dell’animale.",
       blocks: [
@@ -583,7 +583,7 @@ const it: Dictionary = {
           type: "prose",
           heading: "Fase",
           paragraphs: [
-            "PetPrep è in fase di pre-lancio, con una beta chiusa in programma. Il primo mercato è la Slovenia con i Paesi vicini, seguita da DACH e Regno Unito; il prodotto è pensato fin dal primo giorno per la localizzazione globale.",
+            "PetPrep è in fase di pre-lancio, con una beta chiusa in programma. Si parte dalla Slovenia e dai Paesi vicini, poi toccherà ai mercati DACH e al Regno Unito; il prodotto è pensato fin dal primo giorno per la localizzazione globale.",
             "Fondatore: David Tacer, sviluppatore software e imprenditore (Data Vallis David Tacer s.p., Dravograd, Slovenia). Scopri di più [su di noi](page:about).",
           ],
         },
@@ -624,13 +624,13 @@ const it: Dictionary = {
               heading: "2. Cosa raccogliamo",
               items: [
                 "Account del genitore: nome (come ti chiama la tua famiglia), indirizzo email, password (conservata solo come hash sicuro), il fuso orario del tuo dispositivo e il momento in cui hai accettato i termini e questa informativa.",
-                "Profilo di chi si prende cura dell’animale (un bambino o un adulto): un soprannome di massimo 30 caratteri e, facoltativamente, l’anno di nascita, lasciato vuoto per un adulto. Niente email, password, cognome o data di nascita.",
+                "Profilo di chi si prende cura dell’animale (un bambino o un adulto): un soprannome di massimo 30 caratteri e, facoltativamente, l’anno di nascita, lasciato vuoto per un adulto. Niente email, password, cognome o data di nascita.",
                 "Dispositivi: il modello del telefono (per esempio «iPhone», mai un nome che l’utente ha dato al telefono) e, per le notifiche, un token push, la piattaforma e la versione dell’app.",
                 "Attività di cura: le azioni nella simulazione (cibo, acqua, pulizia, passeggiate), i totali giornalieri dei passi (o delle spinte della sedia a rotelle in modalità adattata, vedi le sezioni 3 e 4), i punteggi e i resoconti.",
                 "Il Contratto di responsabilità: la firma del bambino fatta con il dito, conservata come linea vettoriale con il momento della firma.",
                 "Codici: i codici di accesso e di invito sono conservati solo come hash e scadono.",
-                "Segnalazioni di errore dell’app: se l’app si blocca o si chiude in modo anomalo, può inviare un breve resoconto tecnico al nostro server nell’UE (tipo e testo dell’errore, posizione nel codice, versione dell’app e del sistema operativo, nome della schermata, ruolo genitore/bambino). Non contiene nomi, indirizzi email, ID utente né indirizzi IP, non viene condiviso con terzi e viene eliminato dopo 30 giorni.",
-                "Lista per l’accesso anticipato (questo sito web): il tuo indirizzo email, la lingua della pagina e il momento dell’iscrizione.",
+                "Segnalazioni di errore dell’app: se l’app si blocca o si chiude in modo anomalo, può inviare un breve resoconto tecnico al nostro server nell’UE (tipo e testo dell’errore, posizione nel codice, versione dell’app e del sistema operativo, nome della schermata, ruolo genitore/bambino). Non contiene nomi, indirizzi email, ID utente né indirizzi IP, non viene condiviso con terzi e viene eliminato dopo 30 giorni.",
+                "Lista d’attesa per l’accesso anticipato (questo sito web): il tuo indirizzo email, la lingua della pagina e il momento dell’iscrizione.",
               ],
             },
             {
@@ -640,7 +640,7 @@ const it: Dictionary = {
                 "Come vi accediamo: l’app sul telefono del bambino conta i passi. Se lo consenti nella finestra di autorizzazione del sistema, li legge da Apple Salute (iPhone) o Health Connect (Android), in sola lettura e solo i passi. Dove disponibile usa anche il sensore di movimento del telefono (Android: autorizzazione «Attività fisica»; iPhone: «Movimento e fitness»); senza l’autorizzazione per Apple Salute o Health Connect, conta solo il sensore di movimento.",
                 "Cosa raccogliamo: l’app invia al nostro server solo il totale dei passi di oggi, la sua fonte (Apple Salute, Health Connect o il sensore di movimento) e il momento dell’invio. Conserviamo un totale giornaliero per ogni profilo di chi si prende cura dell’animale, mai singoli movimenti, percorsi, posizione, frequenza cardiaca, sonno, peso o altri dati sulla salute. Non scriviamo mai nulla in Apple Salute o Health Connect.",
                 "Come li usiamo e li condividiamo: i totali dei passi servono solo a far funzionare la passeggiata nella simulazione e a mostrarla al genitore (pannello e resoconti). Non li usiamo per pubblicità, profilazione, valutazioni sanitarie o per addestrare modelli di IA, non li vendiamo e non li condividiamo con terzi; solo il nostro fornitore di hosting (Hetzner, server nell’UE) li conserva per nostro conto. L’uso che facciamo dei dati ricevuti da Health Connect rispetta le norme sulle autorizzazioni di Health Connect, compresi i requisiti di uso limitato (Limited Use).",
-                "Base giuridica e conservazione: la lettura dei passi è facoltativa e avviene solo con l’autorizzazione che concedi sul dispositivo; trattiamo il totale giornaliero per fornire il servizio che hai scelto (esecuzione di un contratto). I totali dei passi sono inclusi nell’esportazione dei dati della tua famiglia e vengono eliminati insieme al profilo di chi si prende cura dell’animale o al tuo account; escono dai nostri backup crittografati entro 35 giorni al massimo.",
+                "Base giuridica e conservazione: la lettura dei passi è facoltativa e avviene solo con l’autorizzazione che concedi sul dispositivo; trattiamo il totale giornaliero per fornire il servizio che hai scelto (esecuzione di un contratto). I totali dei passi sono inclusi nell’esportazione dei dati della tua famiglia e vengono eliminati insieme al profilo di chi si prende cura dell’animale o al tuo account; escono dai nostri backup crittografati entro 35 giorni al massimo.",
                 "Puoi revocare l’autorizzazione in qualsiasi momento nelle impostazioni del dispositivo: iPhone → Impostazioni → Salute → Accesso ai dati e dispositivi → PetPrep; Android → Health Connect → Autorizzazioni app → PetPrep. L’autorizzazione per il sensore di movimento si può revocare nelle impostazioni del telefono per l’app PetPrep. Da quel momento la passeggiata non conta più nuovi passi.",
               ],
             },
@@ -652,7 +652,7 @@ const it: Dictionary = {
                 "Finché è attiva, l’app sul telefono del bambino legge solo le spinte della sedia a rotelle invece dei passi, da Apple Salute (registrate da un Apple Watch), con un’autorizzazione separata in sola lettura. Su Android l’app non legge le spinte; al loro posto un genitore registra i minuti di passeggiata. In quel caso non usa il sensore di movimento. Al nostro server arriva solo il numero di spinte di oggi; per quel giorno annotiamo che conta le spinte.",
                 "Un genitore può registrare i minuti di passeggiata per un bambino in modalità adattata (solo per oggi). Conserviamo la data, il numero di minuti e quale genitore ha registrato la passeggiata.",
                 "Poiché il fatto che la modalità adattata sia attiva può indicare una condizione di salute del bambino, lo trattiamo solo sulla base del tuo consenso esplicito (art. 9, par. 2, lett. a) del GDPR), che dai come genitore o tutore legale per conto del bambino (art. 8 del GDPR) attivando l’interruttore. Puoi disattivare la modalità in qualsiasi momento; l’app torna allora a contare i passi.",
-                "Questi dati (l’interruttore, i giorni contati in spinte e le passeggiate registrate) sono inclusi nell’esportazione dei dati della tua famiglia e vengono eliminati insieme al profilo del bambino o al tuo account; escono dai nostri backup crittografati entro 35 giorni al massimo, come tutti gli altri dati.",
+                "Questi dati (l’interruttore, i giorni contati in spinte e le passeggiate registrate) sono inclusi nell’esportazione dei dati della tua famiglia e vengono eliminati insieme al profilo del bambino o al tuo account; escono dai nostri backup crittografati entro 35 giorni al massimo, come tutti gli altri dati.",
               ],
             },
             {
@@ -707,7 +707,7 @@ const it: Dictionary = {
             {
               heading: "10. Per quanto tempo conserviamo i dati",
               paragraphs: [
-                "Conserviamo i tuoi dati finché il tuo account esiste. Quando elimini il profilo di un bambino o il tuo account nell’app, i dati vengono eliminati immediatamente e non possono essere recuperati; escono automaticamente dai nostri backup crittografati entro 35 giorni al massimo. I dati che dobbiamo conservare per legge (per esempio per gli acquisti) vengono conservati per il periodo previsto dalla legge. Le segnalazioni di errore dell’app vengono eliminate automaticamente dopo 30 giorni.",
+                "Conserviamo i tuoi dati finché il tuo account esiste. Quando elimini il profilo di un bambino o il tuo account nell’app, i dati vengono eliminati immediatamente e non possono essere recuperati; escono automaticamente dai nostri backup crittografati entro 35 giorni al massimo. I dati che dobbiamo conservare per legge (per esempio per gli acquisti) vengono conservati per il periodo previsto dalla legge. Le segnalazioni di errore dell’app vengono eliminate automaticamente dopo 30 giorni.",
               ],
             },
             {
@@ -775,10 +775,10 @@ const it: Dictionary = {
             {
               heading: "3. La sfida di 12 settimane, il Care Score e il certificato",
               items: [
-                "La sfida dura 12 settimane (84 giorni di programma) e inizia con l’acquisto; ogni persona che si prende cura dell’animale ha il proprio traguardo. Il tempo in cui il gioco è in attesa del pagamento non conta ai fini delle 12 settimane.",
+                "La sfida dura 12 settimane (84 giorni di programma) e inizia con l’acquisto; ogni persona che si prende cura dell’animale ha il proprio traguardo. Il tempo in cui il gioco è in attesa del pagamento non conta ai fini delle 12 settimane.",
                 "Il Care Score (0–100) indica quale quota delle routine previste (cibo, acqua, pulizia, passeggiata, una sessione di addestramento) è stata svolta personalmente da chi si prende cura dell’animale; ogni malattia dell’animale lo abbassa. Il tempo in cui il gioco è fermo, l’animale è dal veterinario e le ore di silenzio non contano mai contro chi se ne prende cura.",
                 "Dopo 12 settimane viene registrato un punteggio finale, che in seguito non cambia; le cure dopo la sfida non lo influenzano. Con un punteggio di 70 o più puoi creare nell’app un Certificato di responsabilità (PDF); sotto 70 ricevi un resoconto della sfida.",
-                "Se cibo, acqua o pulizia restano allo 0% per 24 ore, l’animale viene «portato al rifugio» (fine del gioco). Il gioco con quell’animale termina, non c’è nessun certificato e ricevi un resoconto della sfida.",
+                "Se cibo, acqua o pulizia restano allo 0% per 24 ore, l’animale viene «portato al rifugio» (fine del gioco). Il gioco con quell’animale termina, non c’è nessun certificato e ricevi un resoconto della sfida.",
                 "Il Care Score e il certificato mostrano solo come chi si prende cura dell’animale ha accudito un animale simulato nell’app. Non sono una garanzia che un bambino, o chiunque altro, sia pronto per un animale vero, non sono una valutazione professionale e non sostituiscono il tuo giudizio o il consiglio di un veterinario, di un allevatore o di un rifugio. La decisione su un animale vero spetta sempre a te.",
                 "Le regole del gioco (pasti, passeggiate e cure in base a razza ed età) sono semplificate e basate su fonti pubbliche. Non sono consigli veterinari; per la salute e la cura di un animale vero chiedi a un veterinario.",
               ],
@@ -786,7 +786,7 @@ const it: Dictionary = {
             {
               heading: "4. Funzioni gratuite e a pagamento, acquisti e rimborsi",
               items: [
-                "Il cane meticcio e il gatto domestico sono gratis per sempre e sono il modo per provare PetPrep; non esiste una prova gratuita della sfida. Un animale gratuito non ha il programma di 12 settimane né il certificato, il genitore vede la cronologia degli ultimi 7 giorni e l’animale ha un set di base di immagini e video.",
+                "Il cane meticcio e il gatto domestico sono gratis per sempre e sono il modo per provare PetPrep; non esiste una prova gratuita della sfida. Un animale gratuito non ha il programma di 12 settimane né il certificato; il genitore vede la cronologia degli ultimi 7 giorni e l’animale ha un set di base di immagini e video.",
                 "La sfida PetPrep di 12 settimane con una razza a pagamento è un acquisto una tantum (49,99 € in Slovenia; lo store mostra il prezzo per il tuo Paese). Un acquisto corrisponde a una sfida per un animale; ogni nuova sfida con un nuovo animale è un nuovo acquisto. I fratelli che si prendono cura dello stesso animale pagano una sola volta.",
                 "Il genitore acquista nella propria app tramite App Store o Google Play; nell’app del bambino non ci sono acquisti. Lo store elabora il pagamento secondo le proprie condizioni.",
                 "Puoi creare un animale per la sfida prima di acquistarla. Finché la sfida non è pagata, il gioco è in pausa: l’animale aspetta al sicuro, i suoi bisogni non calano e non peggiora nulla. Una volta effettuato l’acquisto, il gioco riprende da dove si era fermato.",
@@ -885,7 +885,7 @@ const it: Dictionary = {
           heading: "I nostri standard",
           columns: 2,
           items: [
-            { title: "Ogni account lo creano i genitori", text: "I bambini non possono registrarsi da soli. Un genitore aggiunge il bambino e genera un codice di accesso monouso valido per 15 minuti." },
+            { title: "Ogni account lo creano i genitori", text: "I bambini non possono registrarsi da soli. Un genitore aggiunge il bambino e genera un codice di accesso monouso valido per 15 minuti." },
             { title: "Niente email né password per i bambini", text: "Un bambino accede con il codice del genitore. I codici sbagliati, scaduti o già usati ricevono tutti la stessa risposta, così nessuno può indovinare quali bambini esistono." },
             { title: "Dati minimi", text: "Un soprannome e, facoltativamente, l’anno di nascita. Niente cognome, niente data di nascita, niente foto del bambino." },
             { title: "Niente pubblicità, niente chat, niente sconosciuti", text: "Non c’è pubblicità e non c’è modo di contattare altri utenti." },
@@ -982,7 +982,7 @@ const it: Dictionary = {
             ["Dispositivi e token per le notifiche", "Disconnessi ed eliminati immediatamente"],
             ["Dati degli acquisti (prodotto, data, ID della transazione nello store, un ID di acquisto anonimo, senza nome né email)", "Conservati per il tempo richiesto dalla normativa contabile e fiscale, non più collegati alla tua famiglia"],
             ["Dati sui costi dell’IA", "Conservati a fini contabili senza alcun collegamento a te, ai tuoi figli o ai tuoi animali"],
-            ["Backup crittografati", "Rimossi automaticamente entro 35 giorni"],
+            ["Backup crittografati", "Rimossi automaticamente entro 35 giorni"],
           ],
           note: "Gli acquisti in sé sono gestiti da App Store e Google Play; i relativi dati sono conservati da Apple e Google secondo le loro politiche. Una sfida acquistata ma non terminata non viene rimborsata quando elimini l’account.",
         },
@@ -1090,7 +1090,7 @@ const it: Dictionary = {
             { title: "Parla", text: "Mai. Solo con gli occhi." },
             { title: "Ama", text: "Le passeggiate, la ciotola piena e i bambini che tornano anche il 15° giorno." },
             { title: "Vive", text: "Nei nostri brevi video su [TikTok](https://www.tiktok.com/@petprep.si) e [Instagram](https://www.instagram.com/petprep.si/), @petprep.si." },
-            { title: "Lavoro", text: "Ricordare alle famiglie, con un occhiolino, che un animale ha bisogno di cure ogni singolo giorno." },
+            { title: "Mestiere", text: "Ricordare alle famiglie, con un occhiolino, che un animale ha bisogno di cure ogni singolo giorno." },
           ],
         },
         {
@@ -1133,7 +1133,7 @@ const it: Dictionary = {
           id: "media-kit",
           heading: "Media kit",
           intro: "Per creator, giornalisti e partner che scrivono di PetPrep. Domande o idee per una collaborazione: hello@petprep.si.",
-          all: { href: "/curio/petprep-curio-media-kit.zip", label: "Scarica tutto", meta: "ZIP, 1,1 MB" },
+          all: { href: "/curio/petprep-curio-media-kit.zip", label: "Scarica tutto", meta: "ZIP, 1,1 MB" },
           items: [
             { href: "/curio/kit/curio-transparent.png", label: "Curio, sfondo trasparente", meta: "PNG, 848 × 1117" },
             { href: "/curio/kit/curio-square-light.png", label: "Curio, quadrato, chiaro", meta: "PNG, 1080 × 1080" },
@@ -1157,7 +1157,7 @@ const it: Dictionary = {
           items: [
             { q: "Curio è un cane o un gatto?", a: "Né l’uno né l’altro. Curio è un piccolo cubo del nostro logo. Nei nostri video interpreta un animale, ma non appartiene a nessuna specie." },
             { q: "Mio figlio può prendersi cura di Curio nell’app?", a: "No. Nell’app la tua famiglia si prende cura di un animale realistico di una razza vera, con gli stessi bisogni quotidiani dell’animale reale. Curio compare solo nei nostri video e sul sito web." },
-            { q: "Perché Curio non ha la bocca?", a: "Perché non ce l’ha nemmeno il nostro logo. Curio dice tutto con gli occhi, e non chiede mai premi ad alta voce." },
+            { q: "Perché Curio non ha la bocca?", a: "Perché non ce l’ha nemmeno il nostro logo. Curio dice tutto con gli occhi, e non chiede mai premietti ad alta voce." },
             { q: "Dove posso vedere i nuovi video di Curio?", a: "Su TikTok e Instagram, @petprep.si." },
           ],
         },
@@ -1235,7 +1235,7 @@ const it: Dictionary = {
           type: "steps",
           id: "join",
           heading: "Unisciti al movimento",
-          intro: "Per questo non ti serve l’app. Ogni famiglia che esce per un animale – vero o quello con cui si allena – ne fa parte.",
+          intro: "Per partecipare non ti serve l’app. Ogni famiglia che esce per un animale – vero o quello con cui si allena – ne fa parte.",
           items: [
             { title: "Esci", text: "Porta il cane a fare la sua passeggiata. Oppure, se state ancora decidendo se prendere un animale, fate la passeggiata che fareste con lui." },
             { title: "Cattura il momento", text: "Le scarpe vicino alla porta, un guinzaglio, il sentiero, le zampe sull’erba. Niente volti, niente nomi." },
@@ -1268,7 +1268,7 @@ const it: Dictionary = {
           items: [
             { q: "Mi serve PetPrep per partecipare?", a: "No. Chiunque esca per un animale può usare #walkyourpet. PetPrep è il luogo in cui è nata la frase, e dove la passeggiata del cane con cui ti alleni conta solo in passi veri." },
             { q: "Funziona anche per i gatti in PetPrep?", a: "Non come passeggiata. I gatti non vanno a passeggio, quindi in PetPrep i bisogni di un gatto si soddisfano con il gioco, non con i passi. Le passeggiate sono per i cani." },
-            { q: "Perché la frase è in inglese?", a: "Perché è così che l’ha detta la bambina: in inglese, nel mezzo di una frase in sloveno. I bambini di tutto il mondo mescolano le lingue, quindi resta uguale in ogni lingua." },
+            { q: "Perché la frase è in inglese?", a: "Perché è così che l’ha detta la bambina: in inglese, in mezzo a una frase in sloveno. I bambini di tutto il mondo mescolano le lingue, quindi resta uguale in ogni lingua." },
             { q: "Pubblicherete mio figlio?", a: "Solo ciò che condividi tu stesso e ci permetti di ripubblicare, e mai il volto o il nome di un bambino. Scrivici a hello@petprep.si e lo rimuoveremo." },
           ],
         },
