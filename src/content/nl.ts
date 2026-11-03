@@ -404,7 +404,7 @@ const nl: Dictionary = {
             { title: "Meldingen die uitleggen", text: "“Max is vandaag 2 km gerend, de helft van normaal, en heeft een grotere maaltijd gegeten. Een extra avondwandeling helpt hem tot rust te komen.” Eén observatie, één reden, één tip." },
             { title: "Eerst AI, daarna een echte dierenarts", text: "Stel een vraag of upload een foto. De assistent beantwoordt algemene vragen, schat in hoe dringend iets is en verwijst je door naar een echte dierenarts als dat nodig is. Bij dringende verschijnselen word je meteen naar een dierenarts verwezen." },
             { title: "DNA-test voor je hond of kat", text: "Bestel een DNA-test in de app of upload de uitslag van een test die je al hebt. PetPrep laat zien welke rassen in de mix zitten, wat kenmerkend is voor die rassen en welke gezondheidsproblemen daarbij vaker voorkomen – met bronnen. Rassenpercentages zijn geen diagnose en een DNA-test toont geen allergieën." },
-            { title: "Een kaart voor de dierenarts", text: "De rassenmix en eventuele directe DNA-bevindingen op één pagina of in een QR-code, zodat je dierenarts meteen weet wat er in je kruising zit." },
+            { title: "Een kaart voor de dierenarts", text: "De rassenmix en eventuele directe DNA-bevindingen op één pagina of in een QR-code, zodat je dierenarts meteen weet wat er in een kruising zit." },
             { title: "Groei en voeding", text: "Noteer elke week het gewicht, bekijk de groeicurve en krijg een herinnering als het tijd is om op ander voer over te stappen." },
           ],
         },
@@ -926,7 +926,7 @@ const nl: Dictionary = {
           columns: 3,
           items: [
             { title: "Eenvoudigere gebaren", text: "Een kind houdt een vinger op het scherm of drukt op een knop in plaats van te vegen – in elk spel waarin je veegt: borstelen, spelen met de hengel met veren, de kattenbak verschonen en de bal gooien. Een ouder zet dit voor elk kind aan in het ouderdeel van de app." },
-            { title: "Schermlezers", text: "Als VoiceOver of TalkBack aanstaat, schakelen de spellen vanzelf over op vasthouden. De balk met het huisdier bovenaan het scherm leest alles over het huisdier voor, en elke stap in de verzorgingsspellen is een eigen knop." },
+            { title: "Schermlezers", text: "Als VoiceOver of TalkBack aanstaat, schakelen de spellen vanzelf over op vasthouden. De balk met het huisdier leest alles over het huisdier voor, en elke stap in de verzorgingsspellen is een eigen knop." },
             { title: "Minder beweging", text: "Als de telefoon is ingesteld op minder beweging, staan pulserende knoppen en de wiebelende Curio stil." },
           ],
         },
@@ -1074,7 +1074,7 @@ const nl: Dictionary = {
           id: "who",
           heading: "Wie is Curio?",
           paragraphs: [
-            "Curio begon als het beeldmerk in ons logo: een afgerond grafietkleurig vierkant met twee grote ogen die naar rechtsboven kijken, en een kleine frambozenrode neus. In het Sloveens noemen we het Radovednež – “de nieuwsgierige”. In oktober 2026 kreeg het korte armpjes, stompe beentjes en een mintgroene halsband met een ronde penning, en werd het een echt personage.",
+            "Curio begon als het beeldmerk in ons logo: een afgerond grafietkleurig vierkant met twee grote ogen die naar rechtsboven kijken, en een kleine frambozenrode neus. In het Sloveens noemen we het Radovednež – “de nieuwsgierige”. In oktober 2026 kreeg het korte armpjes, stompe beentjes en een mintgroene halsband met een ronde penning, en werd het een personage.",
             "Curio heeft geen mond. Alles wat Curio voelt, zie je aan de ogen: wijd open als iemand “wandelen?” fluistert, twee slaperige streepjes als er nog niemand thuis is, blije boogjes als de bak vol is.",
             "Curio is een “het” – geen jongen of meisje, geen hond of kat. Het staat voor elk huisdier dat elke dag wacht tot iemand een belofte nakomt.",
           ],
