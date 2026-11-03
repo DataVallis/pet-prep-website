@@ -4,7 +4,7 @@ const nb: Dictionary = {
   meta: {
     siteTitle: "PetPrep – Klar for et kjæledyr. Der for hele livet.",
     siteDescription:
-      "PetPrep er en kjæledyrsimulator over 12 uker som viser foreldre om barnet virkelig er klart for et ekte kjæledyr – og som deretter blir en AI-assistent gjennom hele det ekte dyrets liv.",
+      "PetPrep er en kjæledyrsimulator på 12 uker som viser foreldre om barnet virkelig er klart for et ekte kjæledyr – og som siden blir en AI-assistent gjennom hele dyrets liv.",
     slogan: "Klar for et kjæledyr. Der for hele livet.",
     keywords: [
       "er barnet mitt klart for hund",
@@ -63,22 +63,22 @@ const nb: Dictionary = {
     a11yBadge: { title: "Tilgjengelig lek", text: "Enklere bevegelser · Skjermlesere · Mindre bevegelse" },
   },
   screens: {
-    pin: "Barnet logger inn med en sekssifret kode fra forelderen – ingen e-post, intet passord.",
+    pin: "Barnet logger inn med en sekssifret kode fra forelderen – ingen e-post, ikke noe passord.",
     contract: "Ansvarskontrakten, signert med en finger. Signaturen gir kjæledyret liv.",
     hud: "Barnets startskjerm: kjæledyrets tilstand i sanntid, fire behov og knappene for stell.",
     picker: "Foreldrene velger kjæledyret: rase, opprinnelse (adoptert eller fra oppdretter) og alder ved ankomst.",
     parent: "Foreldreoversikten: et trafikklys, Care Score og dagens rutiner for hvert barn.",
     report: "Barnets rapport for 7, 30 eller 84 dager: rutiner, turer og glemte oppgaver dag for dag.",
-    assistant: "Når det kommer hjem: AI-assistenten gjør data fra halsbåndet om til ett tydelig forslag.",
+    assistant: "Når kjæledyret er kommet hjem: AI-assistenten gjør data fra halsbåndet om til ett tydelig forslag.",
     certificate: "Etter 12 uker: Ansvarsdiplomet med barnets Care Score.",
   },
   pricingPlans: {
     free: {
       name: "Blandingshund",
-      text: "Hele simuleringen med et livaktig kjæledyr av blandingsrase.",
+      text: "Hele simuleringen med et naturtro kjæledyr av blandingsrase.",
       features: [
-        "Simulering over 12 uker med ekte konsekvenser",
-        "Ekte turer, telt i ekte skritt fra telefonen",
+        "12 ukers simulering med ekte konsekvenser",
+        "Ekte turer, målt i ekte skritt fra telefonen",
         "Foreldreoversikt, trafikklys og Care Score",
         "Stille timer og en pauseknapp",
         "Fotorealistisk bilde av kjæledyret og korte videoer",
@@ -93,7 +93,7 @@ const nb: Dictionary = {
       features: [
         "Alt i Blandingshund",
         "Krevende raser, som [border collie](breed:border_collie)",
-        "Kjæledyrets humør som AI-videoer",
+        "Kjæledyrets humør i AI-videoer",
         "Ansvarsdiplom",
         "Én pris når søsken deler et kjæledyr",
         "Tilgang for begge foreldrene",
@@ -101,7 +101,7 @@ const nb: Dictionary = {
       cta: "Velg utfordringen",
     },
     note:
-      "Kjøp gjøres i appen via App Store eller Google Play. Et kjæledyr nummer to i samme familie er en egen utfordring. Prisene inkluderer mva. der det gjelder.",
+      "Kjøp gjøres i appen via App Store eller Google Play. Et ekstra kjæledyr i samme familie er en egen utfordring. Prisene inkluderer mva. der det gjelder.",
   },
   earlyAccess: {
     title: "Få tidlig tilgang",
@@ -111,7 +111,7 @@ const nb: Dictionary = {
     button: "Få tidlig tilgang",
     sending: "Sender …",
     successTitle: "Du står på listen.",
-    successText: "Takk! Du får en e-post fra oss som en av de første når PetPrep er klar.",
+    successText: "Takk! Du hører fra oss blant de første når PetPrep er klar.",
     invalid: "Skriv inn en gyldig e-postadresse.",
     error: "Noe gikk galt. Prøv igjen om et øyeblikk.",
     consent: "Når du melder deg på, godtar du å få e-post om PetPrep. Du kan melde deg av når som helst.",
@@ -121,19 +121,19 @@ const nb: Dictionary = {
     { title: "Familier", text: "Spørsmål om appen, kontoen din eller utfordringen.", email: "hello" },
     { title: "Personvern", text: "Innsyn, eksport, sletting eller andre spørsmål om personvern.", email: "privacy" },
     { title: "Partnere", text: "Dyrebutikker, dyrehjem, dyrleger, trenere, forsikringsselskaper og skoler.", email: "partners" },
-    { title: "Investorer", text: "Investorbrief, presentasjon og datarom på forespørsel.", email: "investors" },
+    { title: "Investorer", text: "Investornotat, presentasjon og datarom på forespørsel.", email: "investors" },
   ],
   home: {
     meta: {
       title: "PetPrep – Er barnet ditt klart for et kjæledyr? Finn det ut på 12 uker.",
       description:
-        "Før et ekte kjæledyr flytter inn, steller barnet ditt et livaktig AI-kjæledyr i 12 uker: måltider, rydding og ekte turer. Du ser hver dag om barnet virkelig er klart.",
+        "Før et ekte kjæledyr flytter inn, steller barnet ditt et naturtro AI-kjæledyr i 12 uker – med måltider, rydding og ekte turer. Du ser hver dag om barnet virkelig er klart.",
     },
     hero: {
       eyebrow: "12-ukersutfordringen fra PetPrep",
       title: "Klar for et kjæledyr. Der for hele livet.",
       lead:
-        "Før et ekte kjæledyr flytter inn, steller barnet ditt et livaktig AI-kjæledyr i 12 uker – gir mat, rydder opp og går ekte turer. Du ser hver dag om barnet virkelig er klart.",
+        "Før et ekte kjæledyr flytter inn, steller barnet ditt et naturtro AI-kjæledyr i 12 uker – gir mat, rydder opp og går ekte turer. Du ser hver dag om barnet virkelig er klart.",
       trust: ["Blandingshund gratis for alltid", "Ingen reklame, ingen chat med fremmede", "Barn trenger ingen e-post"],
     },
     phone: {
@@ -144,16 +144,16 @@ const nb: Dictionary = {
       actions: ["Mat", "Vann", "Tur", "Rydd"],
     },
     parentCard: { child: "Maja", status: "Alt i orden", scoreLabel: "Care Score", progress: "Uke 3 av 12 · 31 av 36 rutiner i tide" },
-    notification: { app: "PetPrep", text: "Kjæledyret ditt ser på matskålen. Frokosttiden slutter kl. 09.00." },
+    notification: { app: "PetPrep", text: "Kjæledyret ditt ser på matskålen. Frokosttiden slutter kl. 09.00." },
     promoVideo: {
       eyebrow: "PetPrep på ett minutt",
       title: "Se hvordan det fungerer.",
-      text: "Fra valg av kjæledyr og signering av kontrakten til skole, turer, pelsstell og diplom – alt barnet ditt gjør i løpet av 12 uker, og alt du ser i foreldreoversikten. Curio, maskoten vår, sier bare hei; kjæledyret i appen er en livaktig AI-hund.",
+      text: "Fra valg av kjæledyr og signering av kontrakten til skole, turer, pelsstell og diplom – alt barnet ditt gjør i løpet av 12 uker, og alt du ser i foreldreoversikten. Curio, maskoten vår, sier bare hei; kjæledyret i appen er en naturtro AI-hund.",
       alt: "Reklamevideo for PetPrep: skjermbilder fra appen, et barn som steller en hund, og en forelder som følger med på Care Score.",
       note: "Appen er ennå ikke tilgjengelig i App Store og Google Play – meld deg på for tidlig tilgang.",
     },
     promise: {
-      quote: "Alle familier hører «Jeg lover å ta vare på den.» PetPrep gjør løftet om til",
+      quote: "Alle familier får høre «Jeg lover å ta vare på den.» PetPrep gjør løftet om til",
       highlight: "bevis",
       text:
         "Å mislykkes i simuleringen er en suksess for familien: Dere finner det ut før et ekte dyr lider – og før dere binder dere til mange år med stell og utgifter.",
@@ -168,7 +168,7 @@ const nb: Dictionary = {
         },
         {
           title: "Barnet ditt signerer løftet",
-          text: "En sekssifret kode logger barnet inn – ingen e-post, intet passord. Barnet signerer Ansvarskontrakten med en finger, og det helt unike kjæledyret blir født.",
+          text: "En sekssifret kode logger barnet inn – ingen e-post, ikke noe passord. Barnet signerer Ansvarskontrakten med en finger, og det helt unike kjæledyret blir født.",
         },
         {
           title: "12 uker med ekte stell",
@@ -179,23 +179,23 @@ const nb: Dictionary = {
     },
     realism: {
       title: "Så nær et ekte kjæledyr som en app kan komme.",
-      text: "Matetider, turer og vekst bygger på kilder som veterinærforeninger og kennelklubber – ikke på noe som er funnet på til et spill.",
+      text: "Matetider, turer og vekst bygger på kilder som veterinærforeninger og kennelklubber – ikke på noe vi har funnet på for spillets skyld.",
       items: [
         { title: "Ekte turer, ekte skritt", text: "Den daglige turen teller skritt fra barnets telefon. Ingen tur i det hele tatt i dag? Det merker kjæledyret i morgen." },
         { title: "Det vokser opp", text: "En valp spiser fire ganger om dagen, så tre, så to – og får et nytt bilde etter hvert som den vokser." },
-        { title: "Det oppfører seg som et ekte dyr", text: "Valper må ut. Hunder som kjeder seg, tygger på tøfler. Uhell skjer før middag." },
+        { title: "Det oppfører seg som et ekte dyr", text: "Valper må ut. Hunder som kjeder seg, tygger på tøfler. Og uhellene kommer før middag." },
         { title: "Tar hensyn til skole og søvn", text: "Stille timer setter påminnelsene på pause. Et måltid som faller i skoletiden, er ditt ansvar, ikke barnets." },
         { title: "Ekte konsekvenser, på en skånsom måte", text: "Forsømmelse betyr et besøk hos dyrlegen eller på dyrehjemmet – aldri skummelt, alltid med en ny start." },
-        { title: "Helt unikt", text: "Hvert kjæledyr får sin egen pels, sine egne tegninger og øyne – fotorealistisk og aldri likt to ganger." },
+        { title: "Helt unikt", text: "Hvert kjæledyr får sin egen pels, sine egne tegninger og øyne – fotorealistisk og aldri det samme to ganger." },
       ],
     },
     parents: {
       eyebrow: "For foreldre",
-      title: "Du ser sannheten, i sanntid.",
+      title: "Du ser hvordan det virkelig går, i sanntid.",
       text: "Et tydelig trafikklys for hvert barn, en Care Score som bygger på rutiner gjort i tide, og en tidslinje over hvem som gjorde hva. Søsken som deler et kjæledyr, får hver sin rettferdige score.",
       points: [
         { strong: "Stille timer og en pauseknapp", text: "du har kontrollen." },
-        { strong: "Barn logger inn med en kode", text: "ingen e-post, intet etternavn, ingen reklame." },
+        { strong: "Barn logger inn med en kode", text: "ingen e-post, ikke noe etternavn, ingen reklame." },
         { strong: "Begge foreldrene, alle barna", text: "én familie, én oversikt." },
       ],
       link: "Alt foreldre ser",
@@ -203,15 +203,15 @@ const nb: Dictionary = {
     adults: {
       eyebrow: "For voksne",
       title: "Prøv rasen før du tar den med hjem.",
-      text: "Har du bestemt deg for en bestemt rase? PetPrep er ikke bare for barn. I 12 uker steller du et AI-kjæledyr av den rasen med dens ekte daglige behov – og finner ut om den virkelig passer for deg, før du kjøper eller adopterer.",
+      text: "Har du allerede en bestemt rase i tankene? PetPrep er ikke bare for barn. I 12 uker steller du et AI-kjæledyr av den rasen, med rasens ekte daglige behov – og finner ut om den virkelig passer for deg, før du kjøper eller adopterer.",
       points: [
         {
           strong: "Rasens ekte behov",
-          text: "måltider innenfor faste tidsvinduer, vann, rydding og et daglig skrittmål basert på kildebelagte aktivitetsbehov: En voksen border collie trenger 12 000 skritt om dagen, en blandingshund 6 000.",
+          text: "måltider innenfor faste tidsvinduer, vann, rydding og et daglig skrittmål som bygger på dokumenterte aktivitetsbehov. En voksen border collie trenger 12 000 skritt om dagen, en blandingshund 6 000.",
         },
         {
           strong: "Trening og valpeuhell",
-          text: "en kort treningsøkt hver dag, og en valp som bare kan holde seg i omtrent én time per måned av alderen før den må ut – ellers blir det en dam på gulvet.",
+          text: "en kort treningsøkt hver dag, og en valp som bare kan holde seg i omtrent én time for hver måned den er gammel før den må ut – ellers blir det en dam på gulvet.",
         },
         {
           strong: "12 uker viser om det passer inn i livet ditt",
@@ -229,7 +229,7 @@ const nb: Dictionary = {
       features: [
         { title: "Smart halsbånd", text: "Aktivitet og varsler når noe ikke stemmer." },
         { title: "AI som første kontakt", text: "Svarer raskt og sender deg videre til en ekte dyrlege." },
-        { title: "Vekst og fôr", text: "Ukentlig vekt, vekstkurve, når det er tid for å bytte fôr." },
+        { title: "Vekst og fôr", text: "Ukentlig veiing, vekstkurve og beskjed når det er på tide å bytte fôr." },
         { title: "Pålitelige partnere", text: "Dyrleger, trenere og forsikringsselskaper i nærheten – tydelig merket." },
         { title: "DNA-test", text: "Hvilke raser som finnes i blandingshunden din – og hva du bør følge med på." },
         { title: "Kort til dyrlegen", text: "Rasesammensetning og DNA-funn samlet på ett sted, klart for dyrlegen." },
@@ -248,7 +248,7 @@ const nb: Dictionary = {
       ],
     },
     pricing: { eyebrow: "Priser", title: "Enkle, rettferdige priser." },
-    faq: { title: "Spørsmål foreldre stiller", link: "Alle spørsmål" },
+    faq: { title: "Det foreldre lurer på", link: "Alle spørsmål" },
     final: { title: "Klar for et kjæledyr?", text: "Finn det ut på 12 uker. Start gratis, på iPhone eller Android." },
   },
   pages: {
@@ -261,7 +261,7 @@ const nb: Dictionary = {
       eyebrow: "Slik fungerer det",
       title: "Tolv uker som viser hva et løfte er verdt.",
       lead:
-        "Barnet ditt steller et fotorealistisk AI-kjæledyr som oppfører seg så likt et ekte dyr som en app kan få til. Én ekte uke tilsvarer én måned av kjæledyrets liv, så i løpet av 12 uker vokser kjæledyret opp – og du ser om stellet holder.",
+        "Barnet ditt steller et fotorealistisk AI-kjæledyr som oppfører seg så likt et ekte dyr som det går an i en app. Én ekte uke tilsvarer én måned av kjæledyrets liv, så i løpet av 12 uker vokser kjæledyret opp – og du ser om stellet holder.",
       blocks: [
         {
           type: "steps",
@@ -269,10 +269,10 @@ const nb: Dictionary = {
           items: [
             { title: "Forelderen oppretter familien", text: "Du registrerer deg med e-postadressen din (innlogging med Apple og Google kommer). Legg til hvert barn med et kallenavn og eventuelt fødselsår. Det er alt vi spør om barnet ditt." },
             { title: "Du velger kjæledyret", text: "Velg rasen (blandingshunden er gratis), hvor kjæledyret kommer fra – adoptert fra et dyrehjem eller kjøpt fra en oppdretter – og alderen ved ankomst: valp, ung, voksen eller senior." },
-            { title: "Barnet ditt logger inn med en kode", text: "Du får en sekssifret kode som gjelder i 15 minutter. Barnet skriver den inn på telefonen sin – ingen e-post og intet passord. Mistet telefonen? Logg barnet ut av alle enheter med ett trykk." },
+            { title: "Barnet ditt logger inn med en kode", text: "Du får en sekssifret kode som gjelder i 15 minutter. Barnet skriver den inn på telefonen sin – verken e-post eller passord. Har barnet mistet telefonen? Logg barnet ut av alle enheter med ett trykk." },
             { title: "Ansvarskontrakten", text: "Barnet ditt signerer et løfte med en finger. Signaturen er kjæledyrets fødsel: Behovene begynner å telle fra det øyeblikket, så ingenting går tapt om barnet signerer senere." },
-            { title: "Tolv uker med stell", text: "Mat i de riktige tidsvinduene, friskt vann, rydding og en daglig tur med ekte skritt. Etter hvert som kjæledyret vokser, endrer behovene seg." },
-            { title: "Diplomet", text: "Etter 12 uker fyller kjæledyret ett år. Barnet ditt får et Ansvarsdiplom med sin Care Score – eller dere lærer begge, på en trygg måte, at tiden ikke er inne ennå." },
+            { title: "Tolv uker med stell", text: "Mat innenfor de riktige tidsvinduene, friskt vann, rydding og en daglig tur med ekte skritt. Etter hvert som kjæledyret vokser, endrer behovene seg." },
+            { title: "Diplomet", text: "Etter 12 uker fyller kjæledyret ett år. Barnet ditt får et Ansvarsdiplom med sin Care Score – eller dere lærer begge to, på en trygg måte, at tiden ikke er inne ennå." },
           ],
         },
         {
@@ -287,27 +287,27 @@ const nb: Dictionary = {
         {
           type: "table",
           heading: "Dette trenger en voksen blandingshund hver dag",
-          intro: "Tallene kommer fra veterinærmedisinske kilder og kennelklubber; der kildene bare oppgir et spenn, fastsetter PetPrep verdien og sier det tydelig.",
+          intro: "Tallene kommer fra veterinærmedisinske kilder og kennelklubber; der kildene bare oppgir et intervall, setter PetPrep verdien selv og sier det åpent.",
           head: ["Behov", "Hvor ofte", "Hvis det blir glemt"],
           rows: [
-            ["Mat", "Morgen (6–10) og kveld (17–21), én gang per tidsvindu", "Sulten etter ca. 12,5 timer"],
-            ["Vann", "3 ganger om dagen, minst 3 timer imellom", "Tørst etter ca. 10 timer"],
+            ["Mat", "Morgen (6–10) og kveld (17–21), én gang per tidsvindu", "Sulten etter ca. 12,5 timer"],
+            ["Vann", "3 ganger om dagen, minst 3 timer imellom", "Tørst etter ca. 10 timer"],
             ["Tur", "6 000 ekte skritt (valper begynner på 2 000)", "Ingen tur i det hele tatt → syk neste morgen"],
             ["Rydding", "Når kjæledyret har hatt et uhell – aldri i stille timer", "Ingen mat eller vann før det er rent"],
           ],
-          note: "Valper spiser 4, så 3, så 2 ganger om dagen og kan bare holde seg i omtrent én time per måned av alderen. En [border collie](breed:border_collie) trenger 12 000 skritt og blir fortere sulten.",
+          note: "Valper spiser 4, så 3, så 2 ganger om dagen og kan bare holde seg i omtrent én time per måned av alderen. En [border collie](breed:border_collie) trenger 12 000 skritt og blir fortere sulten.",
         },
         {
           type: "cards",
           heading: "Bygget rundt ekte familieliv",
           columns: 3,
           items: [
-            { title: "Stille timer", text: "Angi skoletid og leggetid. Da roer kjæledyret seg, det sendes ingen påminnelser, og det skjer aldri uhell." },
+            { title: "Stille timer", text: "Angi skoletid og leggetid. Da blir kjæledyret rolig, det sendes ingen påminnelser, og det skjer aldri uhell." },
             { title: "Måltider i skoletiden", text: "Et tidsvindu for mat som faller helt innenfor stille timer, er forelderens oppgave – det teller aldri mot barnet ditt." },
             { title: "Pause når som helst", text: "Én knapp setter spillet på pause, for eksempel for en familiesamtale. Ingenting blir verre under pausen." },
-            { title: "Skånsomme påminnelser", text: "Kjæledyret dytter først forsiktig på barnet ditt, så mer innstendig. Bare hvis et behov står på null i en time, får du en alarm." },
+            { title: "Skånsomme påminnelser", text: "Kjæledyret minner først barnet ditt forsiktig på det, så mer insisterende. Du får bare en alarm hvis et behov står på null i en time." },
             { title: "Ekte konsekvenser", text: "Forsømmelse betyr 12 timer hos dyrlegen. Et helt døgn med forsømmelse betyr at dyrehjemmet tar kjæledyret – og dere kan begynne på nytt." },
-            { title: "Delte kjæledyr", text: "Søsken kan dele ett kjæledyr. Hver handling godskrives barnet som gjorde den, så scoren forblir rettferdig." },
+            { title: "Delte kjæledyr", text: "Søsken kan dele ett kjæledyr. Hver handling føres på kontoen til barnet som gjorde den, så scoren blir rettferdig." },
           ],
         },
         {
@@ -344,7 +344,7 @@ const nb: Dictionary = {
           type: "prose",
           heading: "Care Score",
           paragraphs: [
-            "Care Score = rutiner gjort i tide ÷ forventede rutiner × 100, minus 10 poeng for hver sykdom, mellom 0 og 100.",
+            "Care Score = rutiner gjort i tide ÷ forventede rutiner × 100, minus 10 poeng for hver sykdom, mellom 0 og 100.",
             "En rutine er én konkret oppgave: hvert tidsvindu for mat, hver av de tre vannpåfyllingene, opprydding etter hvert uhell innen to timer (skole og søvn teller ikke) og at det daglige turmålet nås.",
             "Tid da du hadde satt spillet på pause, kjæledyret var hos dyrlegen, eller før kontrakten ble signert, teller aldri mot barnet ditt. Tidligere dager fryses, så en score kan ikke skrives om i ettertid.",
             "Søsken som deler et kjæledyr, deler hver rutine rettferdig. Bare barnets egne handlinger teller – hvis ett barn gjør alt, får det 100 og det andre 0.",
@@ -374,7 +374,7 @@ const nb: Dictionary = {
           type: "list",
           heading: "Innebygd personvern",
           items: [
-            "Barn logger inn med en kode – ingen e-post, intet passord, intet etternavn.",
+            "Barn logger inn med en kode – ingen e-post, ikke noe passord, ikke noe etternavn.",
             "Vi lagrer et kallenavn og, hvis du legger det til, et fødselsår. Ikke noe annet om barnet ditt.",
             "Varsler inneholder aldri navnet på barnet eller kjæledyret, fordi de kan vises på låseskjermen.",
             "Skrittene kommer fra Apple Helse (iPhone) eller Health Connect (Android) hvis du tillater det (bare lesing), og fra telefonens bevegelsessensor der den finnes. PetPrep bruker ikke GPS og sporer ikke posisjon.",
@@ -441,12 +441,12 @@ const nb: Dictionary = {
           id: "wishes",
           heading: "Ønsker – ting til kjæledyret",
           intro:
-            "I appen ønsker barnet seg ting til kjæledyret sitt; du bestemmer og kjøper. Barnet ser aldri en pris. Tingene er bare utseende: De endrer aldri behov, Care Score eller diplomet. Også tilgjengelig for den gratis blandingshunden og huskatten.",
+            "I appen ønsker barnet seg ting til kjæledyret sitt; du bestemmer og kjøper. Barnet ser aldri en pris. Tingene påvirker bare utseendet: De endrer aldri behov, Care Score eller diplomet. Også tilgjengelig for den gratis blandingshunden og huskatten.",
           head: ["Ting", "Pris"],
           rows: [
             ["Seng (katt: kurv)", "5,99 €"],
             ["Mat- og vannskåler", "5,99 €"],
-            ["Leke (hund: taulek eller pipeleke, katt: plysjmus eller fjærstav)", "5,99 € per leke"],
+            ["Leke (hund: taulek eller pipeleke, katt: plysjmus eller lekestang)", "5,99 € per leke"],
             ["Godbiter, pakke med 10", "2,99 €"],
             ["Velkomstpakke: seng + skåler + leke", "15,99 € (i stedet for 17,97 €)"],
           ],
@@ -457,11 +457,11 @@ const nb: Dictionary = {
           heading: "Spørsmål om priser",
           items: [
             { q: "Er gratisversjonen virkelig gratis?", a: "Ja. Blandingshunden er gratis for alltid, med hele simuleringen, ekte turer og foreldreoversikten." },
-            { q: "Hva inneholder utfordringen?", a: "Krevende raser som [border collie](breed:border_collie), kjæledyrets humør som AI-videoer, Ansvarsdiplomet til slutt og tilgang for begge foreldrene." },
-            { q: "Betaler søsken to ganger?", a: "Nei. Barn som deler ett kjæledyr, betaler én pris. Et kjæledyr nummer to i familien er en egen utfordring." },
+            { q: "Hva inneholder utfordringen?", a: "Krevende raser som [border collie](breed:border_collie), kjæledyrets humør i AI-videoer, Ansvarsdiplomet til slutt og tilgang for begge foreldrene." },
+            { q: "Betaler søsken to ganger?", a: "Nei. Barn som deler ett kjæledyr, betaler én pris. Et ekstra kjæledyr i familien er en egen utfordring." },
             { q: "Hvordan betaler jeg?", a: "I appen, via App Store eller Google Play. Refusjoner håndteres via kontoen din i butikken." },
             { q: "Hva er Ønsker, og kan barnet mitt kjøpe ting alene?", a: "Barnet ditt kan ønske seg en seng, skåler, en leke eller godbiter til kjæledyret – opptil tre åpne ønsker om gangen. Du får et varsel og kjøper enten tingen eller velger «Ikke nå». Barnet ser aldri priser og kan ikke kjøpe noe i barneappen." },
-            { q: "Gjør kjøpte ting spillet enklere?", a: "Nei. Tingene er bare utseende. De endrer aldri behov, Care Score eller diplomet, og det finnes ingen dyrlege eller medisin i Ønsker – aldri «betal for å redde kjæledyret ditt»." },
+            { q: "Gjør kjøpte ting spillet enklere?", a: "Nei. Tingene påvirker bare utseendet. De endrer aldri behov, Care Score eller diplomet, og det finnes ingen dyrlege eller medisin i Ønsker – aldri «betal for å redde kjæledyret ditt»." },
             { q: "Er det likt for voksne?", a: "Ja. Hvis du bruker PetPrep på egen hånd for å prøve en rase, gjelder det samme: Blandingshunden er gratis for alltid, og 12-ukersutfordringen koster 49,99 € per kjæledyr." },
           ],
         },
@@ -474,13 +474,13 @@ const nb: Dictionary = {
           "Svar om PetPrep: tid per dag, bruk som voksen, personvern og posisjon, skritt, søsken, hva om barnet ikke klarer det, språk, arter og ekte kjæledyr.",
       },
       eyebrow: "Ofte stilte spørsmål",
-      title: "Spørsmål foreldre stiller.",
+      title: "Det foreldre lurer på.",
       lead: "Korte, ærlige svar. Savner du noe? Skriv til oss.",
       blocks: [
         {
           type: "faq",
           items: [
-            { q: "Hvilken alder er PetPrep for?", a: "For barn er appen laget for alderen ca. 7 til 12 år, og den fungerer godt opp til 16. Voksne bruker den også, for å teste om en bestemt rase virkelig passer for dem før de kjøper eller adopterer." },
+            { q: "Hvilken alder er PetPrep for?", a: "Appen er laget for barn på ca. 7 til 12 år, men fungerer godt helt opp til 16 år. Voksne bruker den også, for å teste om en bestemt rase virkelig passer for dem før de kjøper eller adopterer." },
             { q: "Kan jeg bruke PetPrep på egen hånd, uten barn?", a: "Ja. Opprett en konto som forelder og legg til deg selv som passerprofil – et kallenavn er nok, la fødselsåret stå tomt. Velg rasen, lag en sekssifret kode, og velg så «I'm a kid» («Jeg er et barn») på samme telefon eller en annen og skriv inn koden – slik blir du passeren. Fordi det blir familiens hund, kan du senere legge til partneren din eller barna, så dere steller den sammen. Prisen er den samme som for familier." },
             { q: "Hvor mye tid tar det hver dag?", a: "Noen minutter til mat, vann og rydding – pluss turen en ekte hund uansett ville trengt." },
             { q: "Sporer appen hvor barnet mitt er?", a: "Nei. Til turene teller den bare skritt. Hvis du tillater det, leser den dem fra Apple Helse (iPhone) eller Health Connect (Android) – bare lesing og bare skritt; der det er mulig, bruker den også telefonens bevegelsessensor. Den ber om tillatelse på turskjermen. GPS brukes ikke." },
@@ -489,7 +489,7 @@ const nb: Dictionary = {
             { q: "Kan søsken dele et kjæledyr?", a: "Ja. Hvert barn signerer sin egen kontrakt, hver handling godskrives den som gjorde den, og hvert barn får sin egen rettferdige Care Score." },
             { q: "Hva med skole og leggetid?", a: "Angi stille timer. Da roer kjæledyret seg, ingenting sendes, og måltider som faller helt innenfor stille timer, tar du deg av." },
             { q: "Er det skummelt for barn?", a: "Nei. Konsekvensene er ekte, men skånsomme: Kjæledyret kommer til dyrlegen eller på dyrehjem, aldri noe grafisk, og det er alltid mulig å starte på nytt." },
-            { q: "Hvilke dyr er tilgjengelige?", a: "[Hunder](species:dog) og [katter](species:cat) i dag: en gratis blandingshund og huskatt, og i 12-ukersutfordringen alle rasene i [dyreleksikonet](page:animals), som også viser deres kildebelagte behov. Flere arter er planlagt." },
+            { q: "Hvilke dyr er tilgjengelige?", a: "[Hunder](species:dog) og [katter](species:cat) i dag: en gratis blandingshund og huskatt, og i 12-ukersutfordringen alle rasene i [dyreleksikonet](page:animals), som også viser hva hver rase trenger, med kilder. Flere arter er planlagt." },
             { q: "Hvilke språk?", a: "Engelsk og slovensk i dag. Flere språk kommer etter hvert som PetPrep lanseres i nye land." },
             { q: "Hva skjer når vi får et ekte kjæledyr?", a: "PetPrep kan bli en AI-assistent for det ekte kjæledyret deres. Denne delen er under utvikling." },
           ],
@@ -514,7 +514,7 @@ const nb: Dictionary = {
           columns: 3,
           items: [
             { title: "Dyrebutikker", text: "Nå familier i det øyeblikket de viser at de er klare – for eksempel med et tilbud på en startpakke ved diplomet." },
-            { title: "Dyrehjem, omplasseringsorganisasjoner og oppdrettere", text: "Anbefal PetPrep før adopsjon eller kjøp for færre impulsive beslutninger og færre dyr som leveres tilbake." },
+            { title: "Dyrehjem, omplasseringsorganisasjoner og oppdrettere", text: "Anbefal PetPrep før adopsjon eller kjøp, så færre tar impulsive avgjørelser og færre dyr leveres tilbake." },
             { title: "Dyrleger", text: "Når det ekte kjæledyret kommer hjem, svarer AI-assistenten på de første spørsmålene og henviser eierne til deg, med et sammendrag av saken som bare deles med samtykke." },
             { title: "Trenere og hundeskoler", text: "Anbefalinger og bestilling når en familie går over til en ekte hund." },
             { title: "Dyreforsikringsselskaper", text: "Tilbud tilpasset rasen når et ekte kjæledyr registreres – tydelig merket." },
@@ -526,7 +526,7 @@ const nb: Dictionary = {
           heading: "Hvorfor partnere stoler på oss",
           items: [
             "Barn logger inn uten e-post, og vi holder dataene deres på et minimum, på servere i EU.",
-            "Bare kontrollert innhold når barnets skjerm; det finnes ingen reklame.",
+            "Bare kontrollert innhold når fram til barnets skjerm; det finnes ingen reklame.",
             "Hvert partnertilbud er merket, og hver provisjon opplyses til familien.",
           ],
         },
@@ -538,7 +538,7 @@ const nb: Dictionary = {
       meta: {
         title: "Invester i PetPrep – fra forberedelse til livslangt stell av kjæledyr",
         description:
-          "PetPrep gjør barnets løfte om til bevis før familien skaffer et kjæledyr, og blir deretter en AI-assistent gjennom hele dyrets liv. Før lansering; brief på forespørsel.",
+          "PetPrep gjør barnets løfte om til bevis før familien skaffer et kjæledyr, og blir deretter en AI-assistent gjennom hele dyrets liv. Før lansering; investornotat på forespørsel.",
       },
       eyebrow: "Investorer",
       title: "Fra en 12-ukersutfordring til et forhold på 10–15 år.",
@@ -552,7 +552,7 @@ const nb: Dictionary = {
           items: [
             { title: "Problem", text: "Barn lover å ta vare på et kjæledyr; foreldre har ingen nøytral måte å teste det på før de binder seg til utgifter og mange år med stell." },
             { title: "Løsning", text: "En realistisk simulering over 12 uker med foreldreoversikt i sanntid og en objektiv Care Score, som avsluttes med et Ansvarsdiplom." },
-            { title: "Utvidelse", text: "Når det ekte kjæledyret kommer hjem, en AI-assistent for det: data fra halsbåndet, AI som første kontakt med dyrleger, vekst og ernæring, DNA-tester og partnertjenester." },
+            { title: "Utvidelse", text: "Når det ekte kjæledyret flytter inn: en AI-assistent med data fra halsbåndet, AI som første kontakt med dyrlege, vekst og ernæring, DNA-tester og partnertjenester." },
           ],
         },
         {
@@ -562,7 +562,7 @@ const nb: Dictionary = {
           rows: [
             ["Blandingshund", "Gratis for alltid (kundeanskaffelse)", "Besluttet"],
             ["12-ukersutfordringen fra PetPrep", "49,99 € per kjæledyr, engangskjøp", "Besluttet"],
-            ["Ønsker – ting til kjæledyret (bare utseende)", "Kjøp i appen: 5,99 € per ting, godbiter 2,99 € for 10, pakke 15,99 €; også i gratisversjonen", "Bygget, kjøp i butikken kommer snart"],
+            ["Ønsker – ting til kjæledyret (bare kosmetisk)", "Kjøp i appen: 5,99 € per ting, godbiter 2,99 € for 10, pakke 15,99 €; også i gratisversjonen", "Bygget, kjøp i butikken kommer snart"],
             ["Partnertilbud", "Provisjon fra butikker, forsikringsselskaper, dyrleger og trenere", "Planlagt"],
             ["AI-assistent for det ekte kjæledyret", "Abonnement", "Planlagt"],
             ["DNA-tester for hunder og katter", "Salg av tester og partnerprovisjon", "Planlagt"],
@@ -572,7 +572,7 @@ const nb: Dictionary = {
           type: "list",
           heading: "Bygget så langt",
           items: [
-            "Spillmotor på serveren med synkronisering i sanntid, testet med simuleringer av hele døgn, dager med overgang til og fra sommertid og spesialtilfeller i familier.",
+            "Spillmotor på serveren med synkronisering i sanntid, testet med simuleringer av hele døgn, overgangen til og fra sommertid og uvanlige familiesituasjoner.",
             "Familier med flere foreldre, flere barn og delte kjæledyr, med rettferdig score per barn.",
             "Unike fotorealistiske AI-kjæledyr med målte og begrensede AI-kostnader; mediene lagres på våre egne servere i EU.",
             "Kjæledyrenes behov bygger på siterte veterinærmedisinske kilder og kennelklubber, og hvert tall kan spores til kilden.",
@@ -587,7 +587,7 @@ const nb: Dictionary = {
             "Grunnlegger: David Tacer, programvareutvikler og gründer (Data Vallis David Tacer s.p., Dravograd, Slovenia). Mer [om oss](page:about).",
           ],
         },
-        { type: "callout", title: "Be om investorbriefen.", text: "Vi deler brief, presentasjon og datarom på forespørsel.", tone: "dark" },
+        { type: "callout", title: "Be om investornotatet.", text: "Vi deler notat, presentasjon og datarom på forespørsel.", tone: "dark" },
         { type: "contact" },
       ],
     },
@@ -624,7 +624,7 @@ const nb: Dictionary = {
               heading: "2. Hva vi samler inn",
               items: [
                 "Foreldrekonto: navn (det familien kaller deg), e-postadresse, passord (lagres bare som en sikker hash), enhetens tidssone og tidspunktet da du godtok vilkårene og denne erklæringen.",
-                "Passerprofil (et barn eller en voksen som steller kjæledyret): et kallenavn på opptil 30 tegn og eventuelt et fødselsår – står tomt for en voksen. Ingen e-post, intet passord, intet etternavn og ingen fødselsdato.",
+                "Passerprofil (et barn eller en voksen som steller kjæledyret): et kallenavn på opptil 30 tegn og eventuelt et fødselsår – står tomt for en voksen. Ingen e-post, ikke noe passord, ikke noe etternavn og ingen fødselsdato.",
                 "Enheter: telefonmodellen (for eksempel «iPhone», aldri et navn brukeren har gitt telefonen) og, for varsler, et push-token, plattform og appversjon.",
                 "Stellaktivitet: handlinger i simuleringen (mat, vann, rydding, turer), daglig antall skritt (eller antall rulletak med rullestol i tilpasset modus – se punkt 3 og 4), score og rapporter.",
                 "Ansvarskontrakten: barnets signatur med fingeren, lagret som en vektorlinje sammen med tidspunktet for signeringen.",
@@ -639,7 +639,7 @@ const nb: Dictionary = {
                 "PetPrep får tilgang til og samler inn én type helse- og treningsdata: hvor mange skritt passeren går hver dag (fysisk aktivitet). Vi bruker dem bare til én funksjon – kjæledyrets daglige tur i simuleringen: Barnet går, og skrittene teller som kjæledyrets tur.",
                 "Slik får vi tilgang: Appen på barnets telefon teller skritt. Hvis du tillater det i systemets dialogboks for tillatelser, leser den dem fra Apple Helse (iPhone) eller Health Connect (Android) – bare lesing og bare skritt. Der det er mulig, bruker den også telefonens bevegelsessensor (Android: tillatelsen «Fysisk aktivitet»; iPhone: «Bevegelse og trening»); uten tillatelse til Apple Helse eller Health Connect er det bare bevegelsessensoren som teller.",
                 "Hva vi samler inn: Appen sender bare dagens totale antall skritt til serveren vår, kilden (Apple Helse, Health Connect eller bevegelsessensoren) og tidspunktet da det ble sendt. Vi lagrer én daglig sum per passerprofil – aldri enkeltbevegelser, ruter, posisjon, puls, søvn, vekt eller andre helsedata. Vi skriver aldri noe til Apple Helse eller Health Connect.",
-                "Slik bruker og deler vi dem: Antall skritt brukes bare til å kjøre turen i simuleringen og til å vise den for forelderen (foreldreoversikt og rapporter). Vi bruker dem ikke til reklame, profilering, helsevurderinger eller trening av AI-modeller, vi selger dem ikke, og vi deler dem ikke med tredjeparter; bare vår hostingleverandør (Hetzner, servere i EU) lagrer dem på våre vegne. Vår bruk av data mottatt fra Health Connect følger retningslinjene for tillatelser i Health Connect, inkludert kravene om begrenset bruk (Limited Use).",
+                "Slik bruker og deler vi dem: Antall skritt brukes bare til å gjennomføre turen i simuleringen og til å vise den for forelderen (foreldreoversikt og rapporter). Vi bruker dem ikke til reklame, profilering, helsevurderinger eller trening av AI-modeller, vi selger dem ikke, og vi deler dem ikke med tredjeparter; bare vår hostingleverandør (Hetzner, servere i EU) lagrer dem på våre vegne. Vår bruk av data mottatt fra Health Connect følger retningslinjene for tillatelser i Health Connect, inkludert kravene om begrenset bruk (Limited Use).",
                 "Rettslig grunnlag og lagringstid: Lesing av skritt er valgfritt og skjer bare med tillatelsen du gir på enheten; vi behandler den daglige summen for å levere tjenesten du har valgt (oppfyllelse av en avtale). Antall skritt er med i familiens dataeksport og slettes sammen med passerprofilen eller kontoen din; det forsvinner fra de krypterte sikkerhetskopiene våre innen 35 dager.",
                 "Du kan når som helst trekke tilbake tillatelsen i innstillingene på enheten: iPhone → Innstillinger → Helse → Datatilgang og enheter → PetPrep; Android → Health Connect → Apptillatelser → PetPrep. Tillatelsen til bevegelsessensoren kan trekkes tilbake i telefonens innstillinger for PetPrep-appen. Turen teller da ingen nye skritt.",
               ],
@@ -651,7 +651,7 @@ const nb: Dictionary = {
                 "Hvis en forelder slår på tilpasset modus for et barn, lagrer vi bare at den er slått på. Vi spør ikke om og lagrer ikke noen grunn, diagnose eller helsetilstand.",
                 "Mens modusen er på, leser appen på barnets telefon bare rulletak i stedet for skritt – fra Apple Helse (registrert av en Apple Watch), med en egen tillatelse som bare gir lesetilgang. På Android leser ikke appen rulletak; i stedet registrerer en forelder turminuttene. Den bruker da ikke bevegelsessensoren. Bare dagens antall rulletak sendes til serveren vår; vi noterer for den dagen at det telles rulletak.",
                 "En forelder kan registrere turminutter for et barn i tilpasset modus (bare for i dag). Vi lagrer datoen, antall minutter og hvilken forelder som registrerte turen.",
-                "Fordi det at tilpasset modus er slått på, kan tyde på en helsetilstand hos barnet, behandler vi det bare på grunnlag av ditt uttrykkelige samtykke (GDPR art. 9 nr. 2 bokstav a), som du gir som forelder eller verge på barnets vegne (GDPR art. 8) ved å slå på bryteren. Du kan når som helst slå av modusen; appen teller da skritt igjen.",
+                "Fordi en påslått tilpasset modus kan tyde på en helsetilstand hos barnet, behandler vi det bare på grunnlag av ditt uttrykkelige samtykke (GDPR art. 9 nr. 2 bokstav a), som du gir som forelder eller verge på barnets vegne (GDPR art. 8) ved å slå på bryteren. Du kan når som helst slå av modusen; appen teller da skritt igjen.",
                 "Disse dataene (bryteren, dager som telles i rulletak, og registrerte turer) er med i familiens dataeksport og slettes sammen med barnets profil eller kontoen din; de forsvinner fra de krypterte sikkerhetskopiene våre innen 35 dager, som alle andre data.",
               ],
             },
@@ -792,7 +792,7 @@ const nb: Dictionary = {
                 "Du kan opprette et kjæledyr for utfordringen før du kjøper. Til utfordringen er betalt, står spillet på pause: Kjæledyret venter trygt, behovene synker ikke, og ingenting blir verre. Når du kjøper, fortsetter spillet der det stoppet.",
                 "Refusjoner håndteres av App Store og Google Play etter deres egne regler; be om refusjon i butikken der du kjøpte. Hvis butikken refunderer et kjøp før utfordringen er fullført, settes spillet med det kjæledyret på pause igjen. Bilder og videoer som er laget etter kjøpet, blir værende.",
                 "Etter game over (dyrehjem) låser ikke et kjøp opp kjæledyret; en ny utfordring er et nytt kjæledyr og et nytt kjøp.",
-                "Ønsker (ting til kjæledyret, når de er tilgjengelige): Et barn kan ønske seg noe, men bare en forelder kan kjøpe, i sin egen app. En kjøpt ting tilhører kjæledyret den ble kjøpt til, og er bare utseende – den påvirker ikke spillet, scoren eller diplomet. Etter game over eller når kjæledyret slettes, regnes kjøpet som brukt og refunderes ikke. Hvis butikken refunderer kjøpet, fjernes tingen (for godbiter: de ubrukte godbitene).",
+                "Ønsker (ting til kjæledyret, når de er tilgjengelige): Et barn kan ønske seg noe, men bare en forelder kan kjøpe, i sin egen app. En kjøpt ting tilhører kjæledyret den ble kjøpt til, og er bare kosmetisk – den påvirker ikke spillet, scoren eller diplomet. Etter game over eller når kjæledyret slettes, regnes kjøpet som brukt og refunderes ikke. Hvis butikken refunderer kjøpet, fjernes tingen (for godbiter: de ubrukte godbitene).",
                 "Hvis du sletter et kjæledyr, et barn eller kontoen mens en kjøpt utfordring fortsatt pågår, regnes kjøpet som brukt: Det flyttes ikke til et annet kjæledyr, og sletting er ingen refusjon. Appen advarer deg først og ber deg bekrefte.",
               ],
             },
@@ -887,7 +887,7 @@ const nb: Dictionary = {
           items: [
             { title: "Foreldre oppretter alle kontoer", text: "Barn kan ikke registrere seg på egen hånd. En forelder legger til barnet og lager en innloggingskode til engangsbruk som gjelder i 15 minutter." },
             { title: "Ingen e-post eller passord for barn", text: "Et barn logger inn med koden fra forelderen. Feil, utløpte og brukte koder får alle det samme svaret, så ingen kan gjette hvilke barn som finnes." },
-            { title: "Minimalt med data", text: "Et kallenavn og eventuelt et fødselsår. Intet etternavn, ingen fødselsdato, ingen bilder av barnet." },
+            { title: "Minimalt med data", text: "Et kallenavn og eventuelt et fødselsår. Ikke noe etternavn, ingen fødselsdato, ingen bilder av barnet." },
             { title: "Ingen reklame, ingen chat, ingen fremmede", text: "Det finnes ingen reklame og ingen mulighet til å kontakte andre brukere." },
             { title: "Ingen posisjonssporing", text: "Turer teller bare skritt – fra Apple Helse eller Health Connect (med din tillatelse, bare lesing) eller fra telefonens bevegelsessensor. GPS brukes ikke." },
             { title: "Private oppdateringer i sanntid", text: "Oppdateringer i sanntid når bare barna som steller det kjæledyret, og foreldrene i samme familie." },
@@ -925,7 +925,7 @@ const nb: Dictionary = {
           heading: "I appen",
           columns: 3,
           items: [
-            { title: "Enklere bevegelser", text: "I stedet for å sveipe holder barnet fingeren nede eller trykker på en knapp – i alle sveipespill: børsting, fjærstaven, bytte av kattesand og ballkasting. En forelder slår det på for hvert barn i foreldredelen." },
+            { title: "Enklere bevegelser", text: "I stedet for å sveipe holder barnet fingeren nede eller trykker på en knapp – i alle spill med sveip: børsting, lekestangen, skifte av kattesand og ballkasting. En forelder slår det på for hvert barn i foreldredelen." },
             { title: "Skjermlesere", text: "Når VoiceOver eller TalkBack er slått på, bytter spillene av seg selv til å holde inne. Toppfeltet med kjæledyret leser opp alt om kjæledyret, og hvert steg i stellespillene er en egen knapp." },
             { title: "Mindre bevegelse", text: "Når telefonen er innstilt på redusert bevegelse, står pulserende knapper og den vuggende Curio stille." },
           ],
@@ -1035,7 +1035,7 @@ const nb: Dictionary = {
           id: "mission",
           heading: "Vårt oppdrag",
           paragraphs: [
-            "Alle familier hører «Jeg lover å ta vare på den.» PetPrep gjør det løftet om til bevis: I 12 uker steller et barn – eller en voksen som ønsker seg en bestemt rase – et livaktig AI-kjæledyr med et ekte dyrs daglige behov, og forelderen ser hver dag hvordan stellet holder.",
+            "Alle familier får høre «Jeg lover å ta vare på den.» PetPrep gjør det løftet om til bevis: I 12 uker steller et barn – eller en voksen som ønsker seg en bestemt rase – et naturtro AI-kjæledyr med et ekte dyrs daglige behov, og forelderen ser hver dag hvordan stellet holder.",
             "Å mislykkes i simuleringen er også et godt resultat: Familien finner det ut før et ekte dyr lider, og før de binder seg til mange år med stell og utgifter. Når et ekte kjæledyr faktisk kommer hjem, vil vi at PetPrep skal være nyttig gjennom hele dyrets liv.",
           ],
         },
@@ -1061,7 +1061,7 @@ const nb: Dictionary = {
       meta: {
         title: "Møt Curio – maskoten til PetPrep",
         description:
-          "Curio er maskoten til PetPrep: den nysgjerrige lille kuben fra logoen vår og stjernen i de korte videoene våre. Hvem den er, hvordan den skiller seg fra det livaktige kjæledyret i appen, bilder og et mediesett.",
+          "Curio er maskoten til PetPrep: den nysgjerrige lille kuben fra logoen vår og stjernen i de korte videoene våre. Hvem den er, hvordan den skiller seg fra det naturtro kjæledyret i appen, bilder og et mediesett.",
       },
       navLabel: "Møt Curio",
       eyebrow: "Maskoten vår",
@@ -1108,11 +1108,11 @@ const nb: Dictionary = {
             },
             {
               src: "/animals/dogs/labrador-retriever.webp",
-              alt: "Et livaktig AI-generert portrett av en labrador retriever, slik kjæledyrene ser ut i PetPrep-appen.",
+              alt: "Et naturtro AI-generert portrett av en labrador retriever, slik kjæledyrene ser ut i PetPrep-appen.",
               label: "I appen · AI-bilde",
               tone: "mint",
               title: "Kjæledyret ditt i PetPrep",
-              text: "En livaktig AI-simulering av en ekte rase – som denne [labrador retrieveren](+breed:labrador_retriever) – med et ekte dyrs daglige behov: måltider, vann, turer telt i ekte skritt, rydding og trening. Se [slik fungerer det](+page:howItWorks).",
+              text: "En naturtro AI-simulering av en ekte rase – som denne [labrador retrieveren](+breed:labrador_retriever) – med et ekte dyrs daglige behov: måltider, vann, turer telt i ekte skritt, rydding og trening. Se [slik fungerer det](+page:howItWorks).",
             },
           ],
         },
@@ -1145,7 +1145,7 @@ const nb: Dictionary = {
           rulesHeading: "Slik bruker du Curio",
           rules: [
             "Bruk Curio i innlegg, artikler og videoer om PetPrep. Til reklame, produkter eller merchandise må du spørre oss først.",
-            "Vis Curio slik den er: grafittgrå kube, hvite øyne, bringebærrød nese, mintgrønt halsbånd. Ikke legg til munn, ører, pels eller øyenbryn, og ikke endre fargene eller strekk figuren.",
+            "Vis Curio slik den er: grafittgrå kube, hvite øyne, bringebærrød nese, mintgrønt halsbånd. Ikke legg til munn, ører, pels eller øyenbryn, ikke endre fargene og ikke strekk ut figuren.",
             "Curio er maskoten til PetPrep. Ikke fremstill den som kjæledyret i appen eller som en ekte hund eller katt.",
             "Ikke bruk Curio på en måte som antyder at PetPrep støtter et annet produkt, en annen sak eller en annen person.",
           ],
@@ -1156,8 +1156,8 @@ const nb: Dictionary = {
           heading: "Spørsmål om Curio",
           items: [
             { q: "Er Curio en hund eller en katt?", a: "Ingen av delene. Curio er en liten kube fra logoen vår. Den spiller et kjæledyr i videoene våre, men den tilhører ingen art." },
-            { q: "Kan barnet mitt ta vare på Curio i appen?", a: "Nei. I appen steller familien et livaktig kjæledyr av en ekte rase, med de samme daglige behovene som det ekte dyret. Curio finnes bare i videoene våre og på nettstedet." },
-            { q: "Hvorfor har ikke Curio munn?", a: "Fordi logoen vår ikke har det. Curio sier alt med øynene – og den tigger aldri høylytt om godbiter." },
+            { q: "Kan barnet mitt ta vare på Curio i appen?", a: "Nei. I appen steller familien et naturtro kjæledyr av en ekte rase, med de samme daglige behovene som det ekte dyret. Curio finnes bare i videoene våre og på nettstedet." },
+            { q: "Hvorfor har ikke Curio munn?", a: "Fordi logoen vår ikke har noen. Curio sier alt med øynene – og den tigger aldri høylytt om godbiter." },
             { q: "Hvor kan jeg se nye videoer med Curio?", a: "På TikTok og Instagram, @petprep.si." },
           ],
         },
