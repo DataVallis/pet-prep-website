@@ -1,3 +1,4 @@
+import { site } from "@/lib/site";
 /**
  * /investors page (David 2026-11-01, design "PetPrep for investors", pet-prep-website docs/design/investors-design.html).
  * English only. Copy lives here; every number on the page comes from src/lib/investorStats.ts.
@@ -5,7 +6,7 @@
  */
 
 export const youtube = {
-  channel: "https://www.youtube.com/@petprep-si",
+  channel: site.social.youtube,
   /** "12 Weeks" playlist (YouTube Data API v3 + nocookie embed). */
   playlistId: "PLKZQ_Dl4SmTg",
   /** "12 Weeks" episodes in order (Shorts, 9:16). */
