@@ -12,7 +12,7 @@ const rn = (name: string) =>
 type Fci = { number: number; group: number; origin: string };
 /** Official Spanish FCI group names (FCI nomenclature), in running-text form. */
 const fciGroups: Record<number, string> = { 1: "perros de pastor y perros boyeros (excepto boyeros suizos)", 2: "perros tipo pinscher y schnauzer – molosoides – perros tipo montaña y boyeros suizos", 3: "terriers", 4: "teckels", 5: "perros tipo spitz y tipo primitivo", 6: "perros tipo sabueso, de rastro y razas semejantes", 7: "perros de muestra", 8: "perros cobradores de caza – levantadores de caza – perros de agua", 9: "perros de compañía", 10: "lebreles" };
-const origins: Record<string, string> = { GB: "Gran Bretaña", FR: "Francia", DE: "Alemania", US: "Estados Unidos", CU: "Cuba", CH: "Suiza", IT: "Italia", "CN-XZ": "Tíbet (China)", CN: "China", MX: "México", BE: "Bélgica", HU: "Hungría", JP: "Japón", ZA: "Sudáfrica", "BE-FR": "Bélgica / Francia", PT: "Portugal", CA: "Canadá", HR: "Croacia", AU: "Australia", RU: "Rusia", IE: "Irlanda", "AF-C": "África central" };
+const origins: Record<string, string> = { GB: "Gran Bretaña", FR: "Francia", DE: "Alemania", US: "Estados Unidos", CU: "Cuba", CH: "Suiza", IT: "Italia", "CN-XZ": "Tíbet (China)", CN: "China", MX: "México", BE: "Bélgica", HU: "Hungría", JP: "Japón", ZA: "Sudáfrica", "BE-FR": "Bélgica / Francia", PT: "Portugal", CA: "Canadá", HR: "Croacia", AU: "Australia", RU: "Rusia", IE: "Irlanda", "AF-C": "África central", TR: "Turquía" };
 
 const es: RegistryCopy = {
   mistakes: {
@@ -624,6 +624,14 @@ const es: RegistryCopy = {
     },
   },
   intros: {
+    anatolian_shepherd_dog: {
+      aka: "Kangal, Anatolian Shepherd Dog, Karabash",
+      text: [
+        "El pastor de Anatolia es un perro guardián de ganado grande y robusto originario de Turquía; la FCI describe al perro pastor turco como kangal (Kangal Shepherd Dog): de un solo color, del leonado al gris lobo, con máscara negra, y una altura de 72–78 cm en los machos y 65–73 cm en las hembras. El estándar estadounidense de la raza indica 110–150 libras (unos 50–68 kg) para los machos y 80–120 libras (unos 36–54 kg) para las hembras. Un perro de este tamaño termina de crecer hacia los 18–24 meses (PetMD); The Royal Kennel Club indica una esperanza de vida de más de 10 años y WebMD, de 11 a 13 años de media.",
+        "The Royal Kennel Club recomienda más de 2 horas de ejercicio al día y cuidado del pelo más de una vez por semana, indica que muda pelo y que necesita una casa grande con un jardín grande en el campo, y lo incluye en la categoría 1 de Breed Watch. PetMD escribe que el pastor de Anatolia quizá esté mejor en hogares sin niños pequeños, que los cachorros presentados pronto a otros animales suelen llevarse bien con ellos, que la socialización temprana es clave, que fuera de las dos mudas anuales basta con cepillarlo una vez por semana y que conviene evitar el ejercicio alrededor de las comidas.",
+      ],
+      sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
+    },
     irish_setter: {
       aka: "Setter irlandés rojo, Irish Setter",
       text: [

@@ -704,6 +704,14 @@
         "Setter irlandese rosso",
         "Irish Setter"
       ]
+    },
+    "anatolian_shepherd_dog": {
+      "name": "Pastore dell'Anatolia",
+      "slug": "pastore-dell-anatolia",
+      "synonyms": [
+        "Kangal",
+        "Anatolian Shepherd Dog"
+      ]
     }
   },
   "suitability_labels": {

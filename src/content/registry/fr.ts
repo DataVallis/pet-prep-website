@@ -16,7 +16,7 @@ const hhmm = (t: unknown) => {
 type Fci = { number: number; group: number; origin: string };
 /** Official French FCI group names. */
 const fciGroups: Record<number, string> = { 1: "Chiens de berger et de bouvier (sauf chiens de bouvier suisses)", 2: "Chiens de type pinscher et schnauzer – molossoïdes – chiens de montagne et de bouvier suisses", 3: "Terriers", 4: "Teckels", 5: "Chiens de type spitz et de type primitif", 6: "Chiens courants, chiens de recherche au sang et races apparentées", 7: "Chiens d’arrêt", 8: "Chiens rapporteurs de gibier – chiens leveurs de gibier – chiens d’eau", 9: "Chiens d’agrément et de compagnie", 10: "Lévriers" };
-const origins: Record<string, string> = { GB: "Grande-Bretagne", FR: "France", DE: "Allemagne", US: "États-Unis", CU: "Cuba", CH: "Suisse", IT: "Italie", "CN-XZ": "Tibet (Chine)", CN: "Chine", MX: "Mexique", BE: "Belgique", HU: "Hongrie", JP: "Japon", ZA: "Afrique du Sud", "BE-FR": "Belgique / France", PT: "Portugal", CA: "Canada", HR: "Croatie", AU: "Australie", RU: "Russie", IE: "Irlande", "AF-C": "Afrique centrale" };
+const origins: Record<string, string> = { GB: "Grande-Bretagne", FR: "France", DE: "Allemagne", US: "États-Unis", CU: "Cuba", CH: "Suisse", IT: "Italie", "CN-XZ": "Tibet (Chine)", CN: "Chine", MX: "Mexique", BE: "Belgique", HU: "Hongrie", JP: "Japon", ZA: "Afrique du Sud", "BE-FR": "Belgique / France", PT: "Portugal", CA: "Canada", HR: "Croatie", AU: "Australie", RU: "Russie", IE: "Irlande", "AF-C": "Afrique centrale", TR: "Turquie" };
 
 const fr: RegistryCopy = {
   mistakes: {
@@ -629,6 +629,14 @@ const fr: RegistryCopy = {
     },
   },
   intros: {
+    anatolian_shepherd_dog: {
+      aka: "Kangal, Anatolian Shepherd Dog, Karabash",
+      text: [
+        "Le berger d'Anatolie est un grand chien de protection des troupeaux, puissamment bâti, originaire de Turquie ; la FCI décrit le chien de berger turc sous le nom de Kangal (Kangal Shepherd Dog) : unicolore, du fauve au gris loup, avec un masque noir, d'une taille de 72–78 cm pour les mâles et 65–73 cm pour les femelles. Le standard américain de la race indique 110–150 livres (environ 50–68 kg) pour les mâles et 80–120 livres (environ 36–54 kg) pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 18–24 mois (PetMD) ; le Royal Kennel Club indique une espérance de vie de plus de 10 ans et WebMD de 11 à 13 ans en moyenne.",
+        "Le Royal Kennel Club recommande plus de 2 heures d'exercice par jour et un entretien du pelage plus d'une fois par semaine, indique qu'il perd ses poils et convient à une grande maison avec un grand jardin à la campagne, et le classe en catégorie 1 du programme Breed Watch. PetMD écrit que le berger d'Anatolie conviendrait sans doute mieux à un foyer sans jeunes enfants, que les chiots présentés tôt à d'autres animaux s'entendent généralement bien avec eux, qu'une socialisation précoce est essentielle, qu'en dehors des deux mues annuelles un brossage hebdomadaire suffit et qu'il faut éviter l'exercice autour des repas.",
+      ],
+      sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
+    },
     irish_setter: {
       aka: "Setter irlandais, Irish Setter",
       text: [

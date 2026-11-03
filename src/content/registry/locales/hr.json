@@ -869,6 +869,14 @@
         "Irski seter",
         "Irish Setter"
       ]
+    },
+    "anatolian_shepherd_dog": {
+      "name": "Anatolski ovčar",
+      "slug": "anatolski-ovcar",
+      "synonyms": [
+        "Kangal",
+        "Anatolian Shepherd Dog"
+      ]
     }
   },
   "suitability_labels": {

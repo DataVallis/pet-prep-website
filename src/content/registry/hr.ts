@@ -62,7 +62,7 @@ const fciGroups: Record<number, string> = {
   9: "psi za društvo i patuljasti psi",
   10: "hrtovi",
 };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francuska", DE: "Njemačka", US: "SAD", CU: "Kuba", CH: "Švicarska", IT: "Italija", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Meksiko", BE: "Belgija", HU: "Mađarska", JP: "Japan", ZA: "Južnoafrička Republika", "BE-FR": "Belgija / Francuska", PT: "Portugal", CA: "Kanada", HR: "Hrvatska", AU: "Australija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francuska", DE: "Njemačka", US: "SAD", CU: "Kuba", CH: "Švicarska", IT: "Italija", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Meksiko", BE: "Belgija", HU: "Mađarska", JP: "Japan", ZA: "Južnoafrička Republika", "BE-FR": "Belgija / Francuska", PT: "Portugal", CA: "Kanada", HR: "Hrvatska", AU: "Australija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turska" };
 /** "sat" in the nominative after a number: 1 sat, 2 sata, 5 sati, 1,5 sata. */
 const hours = (n: number) => form(n, "sat", "sata", "sati");
 /** "sat" in the genitive after "od" / "u roku od": od 1 sata, od 2 sata, od 5 sati. */
@@ -740,6 +740,14 @@ const hr: RegistryCopy = {
     },
   },
   intros: {
+    anatolian_shepherd_dog: {
+      aka: "Kangal, Anatolian Shepherd Dog, Karabash",
+      text: [
+        "Anatolski ovčar velik je, snažno građen pas čuvar stada iz Turske; FCI turskog ovčarskog psa opisuje kao kangala (Kangal Shepherd Dog) – jednobojnog, od žućkaste do vučje sive boje s crnom maskom, visine 72–78 cm za mužjake i 65–73 cm za ženke. Američki standard pasmine navodi 110–150 funti (oko 50–68 kg) za mužjake i 80–120 funti (oko 36–54 kg) za ženke. Pas te veličine odraste s otprilike 18–24 mjeseca (PetMD); The Royal Kennel Club navodi životni vijek od preko 10 godina, a WebMD prosječno 11 do 13 godina.",
+        "The Royal Kennel Club preporučuje više od 2 sata kretanja dnevno i njegu dlake više puta tjedno, navodi da linja i da mu odgovara velika kuća s velikim vrtom na selu te ga svrstava u 1. kategoriju programa Breed Watch. PetMD piše da je anatolski ovčar vjerojatno najprikladniji za dom bez male djece, da se štenci koje rano upoznamo s drugim životinjama s njima obično dobro slažu, da je rana socijalizacija ključna, da se dlaka izvan dvaju godišnjih linjanja češlja jednom tjedno te da treba izbjegavati kretanje oko obroka.",
+      ],
+      sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
+    },
     irish_setter: {
       aka: "Irski seter, Irish Setter",
       text: [

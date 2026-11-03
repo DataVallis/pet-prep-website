@@ -802,6 +802,14 @@
         "Irsk rød setter",
         "Irish Setter"
       ]
+    },
+    "anatolian_shepherd_dog": {
+      "name": "Anatolsk gjeterhund",
+      "slug": "anatolsk-gjeterhund",
+      "synonyms": [
+        "Kangal",
+        "Anatolian Shepherd Dog"
+      ]
     }
   },
   "suitability_labels": {

@@ -16,7 +16,7 @@ const um = (name: string) => `um ${rn(name)}`;
 type Fci = { number: number; group: number; origin: string };
 /** Portuguese FCI group names (CPC nomenclature), in running-text form. */
 const fciGroups: Record<number, string> = { 1: "cães de pastor e boieiros (exceto boieiros suíços)", 2: "cães do tipo pinscher e schnauzer – molossoides – cães de montanha e boieiros suíços", 3: "terriers", 4: "teckels", 5: "cães do tipo spitz e do tipo primitivo", 6: "sabujos, cães de pista de sangue e raças semelhantes", 7: "cães de parar", 8: "cães levantadores e cobradores de caça – cães de água", 9: "cães de companhia", 10: "lebréus" };
-const origins: Record<string, string> = { GB: "Grã-Bretanha", FR: "França", DE: "Alemanha", US: "Estados Unidos", CU: "Cuba", CH: "Suíça", IT: "Itália", "CN-XZ": "Tibete (China)", CN: "China", MX: "México", BE: "Bélgica", HU: "Hungria", JP: "Japão", ZA: "África do Sul", "BE-FR": "Bélgica / França", PT: "Portugal", CA: "Canadá", HR: "Croácia", AU: "Austrália", RU: "Rússia", IE: "Irlanda", "AF-C": "África Central" };
+const origins: Record<string, string> = { GB: "Grã-Bretanha", FR: "França", DE: "Alemanha", US: "Estados Unidos", CU: "Cuba", CH: "Suíça", IT: "Itália", "CN-XZ": "Tibete (China)", CN: "China", MX: "México", BE: "Bélgica", HU: "Hungria", JP: "Japão", ZA: "África do Sul", "BE-FR": "Bélgica / França", PT: "Portugal", CA: "Canadá", HR: "Croácia", AU: "Austrália", RU: "Rússia", IE: "Irlanda", "AF-C": "África Central", TR: "Turquia" };
 /** Age-like value after a preposition: «até aos 12 meses», «até ao 1 ano», «a partir dos 10 anos». */
 const art = (t: string, sing: string, pl: string) => (/^1[\s  ]/.test(t) ? sing : pl);
 
@@ -630,6 +630,14 @@ const pt: RegistryCopy = {
     },
   },
   intros: {
+    anatolian_shepherd_dog: {
+      aka: "Kangal, Anatolian Shepherd Dog, Karabash",
+      text: [
+        "O pastor-da-anatólia é um cão de guarda de rebanhos grande e robusto, originário da Turquia; a FCI descreve o cão pastor turco como kangal (Kangal Shepherd Dog) — de uma só cor, do fulvo ao cinzento-lobo, com máscara preta, e uma altura de 72–78 cm nos machos e 65–73 cm nas fêmeas. O padrão americano da raça indica 110–150 libras (cerca de 50–68 kg) para os machos e 80–120 libras (cerca de 36–54 kg) para as fêmeas. Um cão deste porte atinge o tamanho adulto por volta dos 18–24 meses (PetMD); o Royal Kennel Club indica uma esperança de vida de mais de 10 anos e a WebMD de 11 a 13 anos em média.",
+        "O Royal Kennel Club recomenda mais de 2 horas de exercício por dia e cuidados com o pelo mais de uma vez por semana, indica que perde pelo e que precisa de uma casa grande com um jardim grande no campo, e inclui-o na categoria 1 do programa Breed Watch. A PetMD escreve que o pastor-da-anatólia talvez seja mais indicado para casas sem crianças pequenas, que os cachorros apresentados cedo a outros animais costumam dar-se bem com eles, que a socialização precoce é essencial, que fora das duas mudas anuais basta escová-lo uma vez por semana e que se deve evitar o exercício perto das refeições.",
+      ],
+      sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
+    },
     irish_setter: {
       aka: "Setter irlandês vermelho, Irish Setter",
       text: [

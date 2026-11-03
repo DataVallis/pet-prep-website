@@ -666,6 +666,14 @@
         "Irischer Roter Setter",
         "Irish Setter"
       ]
+    },
+    "anatolian_shepherd_dog": {
+      "name": "Anatolischer Hirtenhund",
+      "slug": "anatolischer-hirtenhund",
+      "synonyms": [
+        "Kangal",
+        "Anatolian Shepherd Dog"
+      ]
     }
   },
   "suitability_labels": {

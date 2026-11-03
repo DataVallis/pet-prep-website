@@ -834,6 +834,14 @@
         "Seter irlandzki",
         "Irish Setter"
       ]
+    },
+    "anatolian_shepherd_dog": {
+      "name": "Owczarek anatolijski",
+      "slug": "owczarek-anatolijski",
+      "synonyms": [
+        "Kangal",
+        "Anatolian Shepherd Dog"
+      ]
     }
   },
   "suitability_labels": {

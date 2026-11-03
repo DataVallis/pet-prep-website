@@ -56,7 +56,7 @@ const fciGroups: Record<number, string> = {
   9: "sällskapshundar",
   10: "vinthundar",
 };
-const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrike", DE: "Tyskland", US: "USA", CU: "Kuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexiko", BE: "Belgien", HU: "Ungern", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien / Frankrike", PT: "Portugal", CA: "Kanada", HR: "Kroatien", AU: "Australien", RU: "Ryssland", IE: "Irland", "AF-C": "Centralafrika" };
+const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrike", DE: "Tyskland", US: "USA", CU: "Kuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexiko", BE: "Belgien", HU: "Ungern", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien / Frankrike", PT: "Portugal", CA: "Kanada", HR: "Kroatien", AU: "Australien", RU: "Ryssland", IE: "Irland", "AF-C": "Centralafrika", TR: "Turkiet" };
 const hours = (n: number) => s(n, "timme", "timmar");
 
 const sv: RegistryCopy = {
@@ -717,6 +717,14 @@ const sv: RegistryCopy = {
     },
   },
   intros: {
+    anatolian_shepherd_dog: {
+      aka: "Kangal, Anatolian Shepherd Dog, Karabash",
+      text: [
+        "Anatolisk herdehund är en stor, kraftigt byggd boskapsvaktare från Turkiet; FCI beskriver den turkiska herdehunden som kangal (Kangal Shepherd Dog) – enfärgad från fawn till vargsobel med svart mask, 72–78 cm hög för hanar och 65–73 cm för tikar. Den amerikanska rasstandarden anger 110–150 pund (cirka 50–68 kg) för hanar och 80–120 pund (cirka 36–54 kg) för tikar. En hund av den här storleken är fullvuxen vid omkring 18–24 månader (PetMD); The Royal Kennel Club anger en livslängd på över 10 år och WebMD i genomsnitt 11 till 13 år.",
+        "The Royal Kennel Club rekommenderar mer än 2 timmars motion om dagen och pälsvård mer än en gång i veckan, uppger att den fäller och passar i ett stort hus med stor trädgård på landet, och placerar den i Breed Watch-kategori 1. PetMD skriver att anatoliska herdehundar troligen passar bäst i hem utan små barn, att valpar som tidigt får möta andra djur oftast kommer bra överens med dem, att tidig socialisering är avgörande, att pälsen utanför de två årliga fällningsperioderna borstas en gång i veckan och att motion kring måltiderna bör undvikas.",
+      ],
+      sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
+    },
     irish_setter: {
       aka: "Irländsk setter, Irish Setter",
       text: [

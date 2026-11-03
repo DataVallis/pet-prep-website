@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs", 10: "sighthounds" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa", TR: "Turkey" };
 
 const en: RegistryCopy = {
   mistakes: {
@@ -604,6 +604,14 @@ const en: RegistryCopy = {
     },
   },
   intros: {
+    anatolian_shepherd_dog: {
+      aka: "Anatolian Shepherd, Kangal Shepherd Dog, Karabash",
+      text: [
+        "The Anatolian Shepherd Dog is a large, powerfully built livestock-guarding dog from Turkey; the FCI describes the Turkish shepherd dog as the Kangal Shepherd Dog — one colour from fawn to wolf sable with a black mask, 72–78 cm tall for males and 65–73 cm for females. The American breed standard gives 110–150 pounds (about 50–68 kg) for males and 80–120 pounds (about 36–54 kg) for females. A dog of this size is fully grown at about 18–24 months (PetMD); the Royal Kennel Club gives a lifespan of over 10 years and WebMD 11 to 13 years on average.",
+        "The Royal Kennel Club recommends more than 2 hours of exercise a day and grooming more than once a week, says the breed sheds and suits a large house with a large garden in the country, and lists it in Breed Watch Category 1. PetMD writes that Anatolian Shepherds might be best in homes without smaller children, that puppies introduced young usually get along with other pets, that early socialisation is key, that the coat needs weekly brushing outside its twice-yearly moult, and that exercise around mealtimes should be avoided.",
+      ],
+      sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
+    },
     irish_setter: {
       aka: "Irish Red Setter, Red Setter",
       text: [
