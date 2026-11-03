@@ -7,7 +7,7 @@ const lc = (t: string) => t.charAt(0).toLocaleLowerCase("de") + t.slice(1);
 type Fci = { number: number; group: number; origin: string };
 /** Official German FCI group names (FCI / VDH). */
 const fciGroups: Record<number, string> = { 1: "Hüte- und Treibhunde (ausgenommen Schweizer Sennenhunde)", 2: "Pinscher und Schnauzer – Molosser – Schweizer Sennenhunde und andere Rassen", 3: "Terrier", 4: "Dachshunde", 5: "Spitze und Hunde vom Urtyp", 6: "Laufhunde, Schweißhunde und verwandte Rassen", 7: "Vorstehhunde", 8: "Apportierhunde – Stöberhunde – Wasserhunde", 9: "Gesellschafts- und Begleithunde", 10: "Windhunde" };
-const origins: Record<string, string> = { GB: "Großbritannien", FR: "Frankreich", DE: "Deutschland", US: "USA", CU: "Kuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexiko", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Südafrika", "BE-FR": "Belgien / Frankreich", PT: "Portugal", CA: "Kanada", HR: "Kroatien", AU: "Australien", RU: "Russland", IE: "Irland", "AF-C": "Zentralafrika" };
+const origins: Record<string, string> = { GB: "Großbritannien", FR: "Frankreich", DE: "Deutschland", US: "USA", CU: "Kuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexiko", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Südafrika", "BE-FR": "Belgien / Frankreich", PT: "Portugal", CA: "Kanada", HR: "Kroatien", AU: "Australien", RU: "Russland", IE: "Irland", "AF-C": "Zentralafrika", TR: "Türkei" };
 
 const de: RegistryCopy = {
   mistakes: {
@@ -607,6 +607,14 @@ const de: RegistryCopy = {
     },
   },
   intros: {
+    anatolian_shepherd_dog: {
+      aka: "Kangal, Anatolischer Hirtenhund, Anatolian Shepherd Dog, Karabash",
+      text: [
+        "Der Anatolische Hirtenhund ist ein großer, kräftig gebauter Herdenschutzhund aus der Türkei; die FCI beschreibt den türkischen Hirtenhund als Kangal (Kangal Shepherd Dog) — einfarbig von Falbfarben bis Wolfsgrau mit schwarzer Maske, 72–78 cm groß bei Rüden und 65–73 cm bei Hündinnen. Der amerikanische Rassestandard nennt 110–150 Pfund (etwa 50–68 kg) für Rüden und 80–120 Pfund (etwa 36–54 kg) für Hündinnen. Ein Hund dieser Größe ist mit etwa 18–24 Monaten ausgewachsen (PetMD); der Royal Kennel Club gibt eine Lebenserwartung von über 10 Jahren an, WebMD durchschnittlich 11 bis 13 Jahre.",
+        "Der Royal Kennel Club empfiehlt mehr als 2 Stunden Bewegung am Tag und mehr als einmal pro Woche Fellpflege, gibt an, dass er haart und zu einem großen Haus mit großem Garten auf dem Land passt, und führt ihn in Breed-Watch-Kategorie 1. PetMD schreibt, dass Anatolische Hirtenhunde wohl am besten in Haushalte ohne kleinere Kinder passen, dass Welpen, die früh andere Tiere kennenlernen, meist gut mit ihnen auskommen, dass frühe Sozialisierung entscheidend ist, dass das Fell außerhalb des zweimal jährlichen Fellwechsels wöchentlich gebürstet werden sollte und dass Bewegung rund um die Mahlzeiten vermieden werden sollte.",
+      ],
+      sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
+    },
     irish_setter: {
       aka: "Irischer Setter, Irischer Roter Setter, Irish Setter",
       text: [

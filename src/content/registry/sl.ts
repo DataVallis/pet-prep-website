@@ -16,7 +16,7 @@ type Fci = { number: number; group: number; origin: string };
 const PROPER_START = /^(Maine Coon|Chesapeake|Jack Russell)\b/;
 const mid = (name: string) => (PROPER_START.test(name) ? name : name.charAt(0).toLocaleLowerCase("sl") + name.slice(1));
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi", 10: "hrti" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turčija" };
 
 const sl: RegistryCopy = {
   mistakes: {
@@ -624,6 +624,14 @@ const sl: RegistryCopy = {
     },
   },
   intros: {
+    anatolian_shepherd_dog: {
+      aka: "Anatolian Shepherd Dog, anatolski pastirski pes, kangal, kangalski ovčar",
+      text: [
+        "Anatolski ovčar je velik, močno grajen pes čuvaj čred iz Turčije; FCI turškega pastirskega psa opisuje kot kangala (Kangal Shepherd Dog) — enobarvnega, od plave do volčje sive barve s črno masko, visokega 72–78 cm (psi) in 65–73 cm (psice). Ameriški standard pasme navaja 110–150 funtov (približno 50–68 kg) za pse in 80–120 funtov (približno 36–54 kg) za psice. Pes te velikosti doraste pri približno 18–24 mesecih (PetMD); The Royal Kennel Club navaja življenjsko dobo več kot 10 let, WebMD pa povprečno 11 do 13 let.",
+        "The Royal Kennel Club priporoča več kot 2 uri gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da potrebuje veliko hišo z velikim vrtom na podeželju, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da je anatolski ovčar morda najbolj primeren za dom brez majhnih otrok, da se mladički, ki jih zgodaj seznanimo z drugimi živalmi, z njimi običajno razumejo, da je zgodnja socializacija ključna, da dlako zunaj menjave dvakrat na leto češemo enkrat na teden in da se je okoli obrokov treba izogibati gibanju.",
+      ],
+      sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
+    },
     irish_setter: {
       aka: "Irish Setter, irski rdeči seter, rdeči seter, seter",
       text: [

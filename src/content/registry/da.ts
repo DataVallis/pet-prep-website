@@ -57,7 +57,7 @@ const fciGroups: Record<number, string> = {
   9: "selskabshunde",
   10: "mynder",
 };
-const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrig", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien/Frankrig", PT: "Portugal", CA: "Canada", HR: "Kroatien", AU: "Australien", RU: "Rusland", IE: "Irland", "AF-C": "Centralafrika" };
+const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrig", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien/Frankrig", PT: "Portugal", CA: "Canada", HR: "Kroatien", AU: "Australien", RU: "Rusland", IE: "Irland", "AF-C": "Centralafrika", TR: "Tyrkiet" };
 const hours = (n: number) => s(n, "time", "timer");
 const times = (n: number) => (n === 1 ? "én gang" : `${n} gange`);
 
@@ -719,6 +719,14 @@ const da: RegistryCopy = {
     },
   },
   intros: {
+    anatolian_shepherd_dog: {
+      aka: "Kangal, Anatolian Shepherd Dog, Karabash",
+      text: [
+        "Anatolsk hyrdehund er en stor, kraftigt bygget husdyrvogter fra Tyrkiet; FCI beskriver den tyrkiske hyrdehund som kangal (Kangal Shepherd Dog) — ensfarvet fra fawn til ulvegrå med sort maske, 72–78 cm høj for hanner og 65–73 cm for tæver. Den amerikanske racestandard angiver 110–150 pund (ca. 50–68 kg) for hanner og 80–120 pund (ca. 36–54 kg) for tæver. En hund af denne størrelse er udvokset ved cirka 18–24 måneder (PetMD); The Royal Kennel Club angiver en levealder på over 10 år og WebMD i gennemsnit 11 til 13 år.",
+        "The Royal Kennel Club anbefaler mere end 2 timers motion om dagen og pelspleje mere end én gang om ugen, oplyser, at den fælder og passer til et stort hus med en stor have på landet, og placerer den i Breed Watch-kategori 1. PetMD skriver, at anatolske hyrdehunde nok passer bedst i hjem uden små børn, at hvalpe, der tidligt møder andre dyr, som regel kommer godt ud af det med dem, at tidlig socialisering er afgørende, at pelsen uden for de to årlige fældeperioder skal børstes ugentligt, og at motion omkring måltiderne bør undgås.",
+      ],
+      sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
+    },
     irish_setter: {
       aka: "Irsk rød setter, Irish Setter",
       text: [

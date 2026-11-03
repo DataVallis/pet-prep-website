@@ -43,7 +43,7 @@ const fciGroups: Record<number, string> = {
   9: "psy do towarzystwa",
   10: "charty",
 };
-const origins: Record<string, string> = { GB: "Wielka Brytania", FR: "Francja", DE: "Niemcy", US: "USA", CU: "Kuba", CH: "Szwajcaria", IT: "Włochy", "CN-XZ": "Tybet (Chiny)", CN: "Chiny", MX: "Meksyk", BE: "Belgia", HU: "Węgry", JP: "Japonia", ZA: "Republika Południowej Afryki", "BE-FR": "Belgia / Francja", PT: "Portugalia", CA: "Kanada", HR: "Chorwacja", AU: "Australia", RU: "Rosja", IE: "Irlandia", "AF-C": "Afryka Środkowa" };
+const origins: Record<string, string> = { GB: "Wielka Brytania", FR: "Francja", DE: "Niemcy", US: "USA", CU: "Kuba", CH: "Szwajcaria", IT: "Włochy", "CN-XZ": "Tybet (Chiny)", CN: "Chiny", MX: "Meksyk", BE: "Belgia", HU: "Węgry", JP: "Japonia", ZA: "Republika Południowej Afryki", "BE-FR": "Belgia / Francja", PT: "Portugalia", CA: "Kanada", HR: "Chorwacja", AU: "Australia", RU: "Rosja", IE: "Irlandia", "AF-C": "Afryka Środkowa", TR: "Turcja" };
 /** "godzina" in the nominative after a number: 1 godzina, 2 godziny, 5 godzin, 1,5 godziny. */
 const hours = (n: number) => form(n, "godzina", "godziny", "godzin", "godziny");
 
@@ -653,6 +653,14 @@ const pl: RegistryCopy = {
     },
   },
   intros: {
+    anatolian_shepherd_dog: {
+      aka: "Kangal, Anatolian Shepherd Dog, Karabash",
+      text: [
+        "Owczarek anatolijski to duży, mocno zbudowany pies stróżujący stada, pochodzący z Turcji; FCI opisuje tureckiego psa pasterskiego jako kangala (Kangal Shepherd Dog) – jednobarwnego, od płowego po wilczasto-sobolowego, z czarną maską, o wysokości 72–78 cm u psów i 65–73 cm u suk. Amerykański wzorzec rasy podaje 110–150 funtów (ok. 50–68 kg) dla psów i 80–120 funtów (ok. 36–54 kg) dla suk. Pies tej wielkości kończy rosnąć w wieku około 18–24 miesięcy (PetMD); The Royal Kennel Club podaje długość życia ponad 10 lat, a WebMD średnio od 11 do 13 lat.",
+        "The Royal Kennel Club zaleca ponad 2 godziny ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu, podaje, że linieje i pasuje do dużego domu z dużym ogrodem na wsi, oraz zalicza go do kategorii 1 programu Breed Watch. PetMD pisze, że owczarek anatolijski najlepiej sprawdzi się prawdopodobnie w domu bez małych dzieci, że szczenięta wcześnie zapoznane z innymi zwierzętami zwykle dobrze się z nimi dogadują, że kluczowa jest wczesna socjalizacja, że poza dwoma corocznymi linieniami sierść szczotkuje się raz w tygodniu i że należy unikać ruchu w okolicach posiłków.",
+      ],
+      sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
+    },
     irish_setter: {
       aka: "Seter irlandzki, Irish Setter",
       text: [

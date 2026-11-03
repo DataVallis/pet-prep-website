@@ -73,7 +73,7 @@ const fciGroups: Record<number, string> = {
   9: "Seura- ja kääpiökoirat",
   10: "Vinttikoirat",
 };
-const origins: Record<string, string> = { GB: "Iso-Britannia", FR: "Ranska", DE: "Saksa", US: "Yhdysvallat", CU: "Kuuba", CH: "Sveitsi", IT: "Italia", "CN-XZ": "Tiibet (Kiina)", CN: "Kiina", MX: "Meksiko", BE: "Belgia", HU: "Unkari", JP: "Japani", ZA: "Etelä-Afrikka", "BE-FR": "Belgia / Ranska", PT: "Portugali", CA: "Kanada", HR: "Kroatia", AU: "Australia", RU: "Venäjä", IE: "Irlanti", "AF-C": "Keski-Afrikka" };
+const origins: Record<string, string> = { GB: "Iso-Britannia", FR: "Ranska", DE: "Saksa", US: "Yhdysvallat", CU: "Kuuba", CH: "Sveitsi", IT: "Italia", "CN-XZ": "Tiibet (Kiina)", CN: "Kiina", MX: "Meksiko", BE: "Belgia", HU: "Unkari", JP: "Japani", ZA: "Etelä-Afrikka", "BE-FR": "Belgia / Ranska", PT: "Portugali", CA: "Kanada", HR: "Kroatia", AU: "Australia", RU: "Venäjä", IE: "Irlanti", "AF-C": "Keski-Afrikka", TR: "Turkki" };
 const hours = (n: number) => s(n, "tunti", "tuntia");
 /** "kerran", "2 kertaa" (adverbial: kerran päivässä, 3 kertaa viikossa). */
 const times = (n: number) => (n === 1 ? "kerran" : `${n}${NB}kertaa`);
@@ -786,6 +786,14 @@ const fi: RegistryCopy = {
     },
   },
   intros: {
+    anatolian_shepherd_dog: {
+      aka: "Kangal, Anatolian Shepherd Dog, Karabash",
+      text: [
+        "Anatolianpaimenkoira on suuri ja voimakasrakenteinen karjanvartija Turkista; FCI kuvaa turkkilaisen paimenkoiran kangalina (Kangal Shepherd Dog) – yksivärisenä kellanruskeasta sudenharmaaseen ja mustalla maskilla, urokset 72–78 cm ja nartut 65–73 cm korkeita. Amerikkalainen rotumääritelmä antaa uroksille 110–150 paunaa (noin 50–68 kg) ja nartuille 80–120 paunaa (noin 36–54 kg). Tämän kokoinen koira on täysikasvuinen noin 18–24 kuukauden iässä (PetMD); The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta ja WebMD keskimäärin 11–13 vuotta.",
+        "The Royal Kennel Club suosittelee yli 2 tuntia liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa, kertoo rodun karvaavan ja sopivan suureen taloon, jossa on iso piha maaseudulla, ja luokittelee sen Breed Watch -luokkaan 1. PetMD kirjoittaa, että anatolianpaimenkoira sopii todennäköisesti parhaiten kotiin, jossa ei ole pieniä lapsia, että varhain muihin eläimiin tutustuneet pennut tulevat yleensä toimeen niiden kanssa, että varhainen sosiaalistaminen on tärkeää, että turkki harjataan kahden vuosittaisen karvanvaihdon ulkopuolella kerran viikossa ja että liikuntaa ruokailun aikoihin tulee välttää.",
+      ],
+      sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
+    },
     irish_setter: {
       aka: "Irish Setter, punainen setteri",
       text: [

@@ -680,6 +680,14 @@
         "Setter irlandais",
         "Irish Setter"
       ]
+    },
+    "anatolian_shepherd_dog": {
+      "name": "Berger d'Anatolie",
+      "slug": "berger-d-anatolie",
+      "synonyms": [
+        "Kangal",
+        "Anatolian Shepherd Dog"
+      ]
     }
   },
   "suitability_labels": {

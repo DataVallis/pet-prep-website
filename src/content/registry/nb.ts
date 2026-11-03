@@ -65,7 +65,7 @@ const fciGroups: Record<number, string> = {
   9: "selskapshunder",
   10: "mynder",
 };
-const origins: Record<string, string> = { GB: "Storbritannia", FR: "Frankrike", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Sveits", IT: "Italia", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgia", HU: "Ungarn", JP: "Japan", ZA: "Sør-Afrika", "BE-FR": "Belgia/Frankrike", PT: "Portugal", CA: "Canada", HR: "Kroatia", AU: "Australia", RU: "Russland", IE: "Irland", "AF-C": "Sentral-Afrika" };
+const origins: Record<string, string> = { GB: "Storbritannia", FR: "Frankrike", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Sveits", IT: "Italia", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgia", HU: "Ungarn", JP: "Japan", ZA: "Sør-Afrika", "BE-FR": "Belgia/Frankrike", PT: "Portugal", CA: "Canada", HR: "Kroatia", AU: "Australia", RU: "Russland", IE: "Irland", "AF-C": "Sentral-Afrika", TR: "Tyrkia" };
 const hours = (n: number) => s(n, "time", "timer");
 const times = (n: number) => (n === 1 ? "én gang" : `${n} ganger`);
 /** "every N days" for the litter and care rules. */
@@ -732,6 +732,14 @@ const nb: RegistryCopy = {
     },
   },
   intros: {
+    anatolian_shepherd_dog: {
+      aka: "Kangal, Anatolian Shepherd Dog, Karabash",
+      text: [
+        "Anatolsk gjeterhund er en stor, kraftig bygget buskapsvokter fra Tyrkia; FCI beskriver den tyrkiske gjeterhunden som kangal (Kangal Shepherd Dog) – ensfarget fra fawn til ulvegrå med svart maske, 72–78 cm høy for hannhunder og 65–73 cm for tisper. Den amerikanske rasestandarden oppgir 110–150 pund (ca. 50–68 kg) for hannhunder og 80–120 pund (ca. 36–54 kg) for tisper. En hund av denne størrelsen er utvokst ved rundt 18–24 måneder (PetMD); The Royal Kennel Club oppgir en levealder på over 10 år og WebMD i snitt 11 til 13 år.",
+        "The Royal Kennel Club anbefaler mer enn 2 timer mosjon om dagen og pelsstell mer enn én gang i uken, opplyser at den røyter og passer i et stort hus med stor hage på landet, og plasserer den i Breed Watch-kategori 1. PetMD skriver at anatolske gjeterhunder trolig passer best i hjem uten små barn, at valper som tidlig blir kjent med andre dyr, som regel kommer godt overens med dem, at tidlig sosialisering er avgjørende, at pelsen utenom de to årlige røyteperiodene børstes ukentlig, og at mosjon rundt måltidene bør unngås.",
+      ],
+      sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
+    },
     irish_setter: {
       aka: "Irsk rød setter, Irish Setter",
       text: [

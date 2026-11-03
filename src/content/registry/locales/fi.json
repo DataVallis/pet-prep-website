@@ -814,6 +814,14 @@
         "Irish Setter",
         "Punainen setteri"
       ]
+    },
+    "anatolian_shepherd_dog": {
+      "name": "Anatolianpaimenkoira",
+      "slug": "anatolianpaimenkoira",
+      "synonyms": [
+        "Kangal",
+        "Anatolian Shepherd Dog"
+      ]
     }
   },
   "suitability_labels": {

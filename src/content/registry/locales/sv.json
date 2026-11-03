@@ -798,6 +798,14 @@
         "Irländsk setter",
         "Irish Setter"
       ]
+    },
+    "anatolian_shepherd_dog": {
+      "name": "Anatolisk herdehund",
+      "slug": "anatolisk-herdehund",
+      "synonyms": [
+        "Kangal",
+        "Anatolian Shepherd Dog"
+      ]
     }
   },
   "suitability_labels": {

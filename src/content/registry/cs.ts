@@ -68,7 +68,7 @@ const fciGroups: Record<number, string> = {
   9: "společenská plemena",
   10: "chrti",
 };
-const origins: Record<string, string> = { GB: "Velká Británie", FR: "Francie", DE: "Německo", US: "USA", CU: "Kuba", CH: "Švýcarsko", IT: "Itálie", "CN-XZ": "Tibet (Čína)", CN: "Čína", MX: "Mexiko", BE: "Belgie", HU: "Maďarsko", JP: "Japonsko", ZA: "Jihoafrická republika", "BE-FR": "Belgie / Francie", PT: "Portugalsko", CA: "Kanada", HR: "Chorvatsko", AU: "Austrálie", RU: "Rusko", IE: "Irsko", "AF-C": "Střední Afrika" };
+const origins: Record<string, string> = { GB: "Velká Británie", FR: "Francie", DE: "Německo", US: "USA", CU: "Kuba", CH: "Švýcarsko", IT: "Itálie", "CN-XZ": "Tibet (Čína)", CN: "Čína", MX: "Mexiko", BE: "Belgie", HU: "Maďarsko", JP: "Japonsko", ZA: "Jihoafrická republika", "BE-FR": "Belgie / Francie", PT: "Portugalsko", CA: "Kanada", HR: "Chorvatsko", AU: "Austrálie", RU: "Rusko", IE: "Irsko", "AF-C": "Střední Afrika", TR: "Turecko" };
 /** "hodina" in the nominative after a number: 1 hodina, 2 hodiny, 5 hodin, 1,5 hodiny. */
 const hours = (n: number) => form(n, "hodina", "hodiny", "hodin", "hodiny");
 /** "hodina" in the genitive after "do": do 1 hodiny, do 2 hodin, do 5 hodin, do 1,5 hodiny. */
@@ -685,6 +685,14 @@ const cs: RegistryCopy = {
     },
   },
   intros: {
+    anatolian_shepherd_dog: {
+      aka: "Kangal, Anatolian Shepherd Dog, Karabash",
+      text: [
+        "Anatolský pastevecký pes je velký, mohutně stavěný pes k ochraně stád z Turecka; FCI popisuje tureckého pasteveckého psa jako kangala (Kangal Shepherd Dog) — jednobarevného, od plavé po vlčí sobolí s černou maskou, s kohoutkovou výškou 72–78 cm u psů a 65–73 cm u fen. Americký standard plemene uvádí 110–150 liber (asi 50–68 kg) u psů a 80–120 liber (asi 36–54 kg) u fen. Pes této velikosti dorůstá zhruba v 18–24 měsících (PetMD); The Royal Kennel Club uvádí délku života přes 10 let a WebMD v průměru 11 až 13 let.",
+        "The Royal Kennel Club doporučuje více než 2 hodiny pohybu denně a péči o srst víckrát týdně, uvádí, že pelichá a hodí se do velkého domu s velkou zahradou na venkově, a řadí ho do kategorie 1 programu Breed Watch. PetMD píše, že anatolský pastevecký pes se nejspíš nejlépe hodí do domácnosti bez malých dětí, že štěňata seznámená s jinými zvířaty včas s nimi obvykle vycházejí, že klíčová je časná socializace, že srst mimo línání dvakrát ročně stačí kartáčovat jednou týdně a že kolem krmení je třeba se vyhnout pohybu.",
+      ],
+      sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
+    },
     irish_setter: {
       aka: "Irský červený setr, Irish Setter",
       text: [

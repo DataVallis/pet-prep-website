@@ -725,6 +725,14 @@
         "Ierse rode setter",
         "Irish Setter"
       ]
+    },
+    "anatolian_shepherd_dog": {
+      "name": "Anatolische herder",
+      "slug": "anatolische-herder",
+      "synonyms": [
+        "Kangal",
+        "Anatolian Shepherd Dog"
+      ]
     }
   },
   "suitability_labels": {

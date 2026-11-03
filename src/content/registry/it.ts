@@ -25,7 +25,7 @@ const un = (name: string) => {
 type Fci = { number: number; group: number; origin: string };
 /** Italian FCI group names (ENCI nomenclature), in running-text form. */
 const fciGroups: Record<number, string> = { 1: "cani da pastore e bovari (esclusi i bovari svizzeri)", 2: "cani di tipo pinscher e schnauzer – molossoidi – cani bovari svizzeri", 3: "terrier", 4: "bassotti", 5: "cani di tipo spitz e di tipo primitivo", 6: "segugi e cani per pista di sangue", 7: "cani da ferma", 8: "cani da riporto – cani da cerca – cani da acqua", 9: "cani da compagnia", 10: "levrieri" };
-const origins: Record<string, string> = { GB: "Gran Bretagna", FR: "Francia", DE: "Germania", US: "Stati Uniti", CU: "Cuba", CH: "Svizzera", IT: "Italia", "CN-XZ": "Tibet (Cina)", CN: "Cina", MX: "Messico", BE: "Belgio", HU: "Ungheria", JP: "Giappone", ZA: "Sudafrica", "BE-FR": "Belgio / Francia", PT: "Portogallo", CA: "Canada", HR: "Croazia", AU: "Australia", RU: "Russia", IE: "Irlanda", "AF-C": "Africa centrale" };
+const origins: Record<string, string> = { GB: "Gran Bretagna", FR: "Francia", DE: "Germania", US: "Stati Uniti", CU: "Cuba", CH: "Svizzera", IT: "Italia", "CN-XZ": "Tibet (Cina)", CN: "Cina", MX: "Messico", BE: "Belgio", HU: "Ungheria", JP: "Giappone", ZA: "Sudafrica", "BE-FR": "Belgio / Francia", PT: "Portogallo", CA: "Canada", HR: "Croazia", AU: "Australia", RU: "Russia", IE: "Irlanda", "AF-C": "Africa centrale", TR: "Turchia" };
 
 const it: RegistryCopy = {
   mistakes: {
@@ -637,6 +637,14 @@ const it: RegistryCopy = {
     },
   },
   intros: {
+    anatolian_shepherd_dog: {
+      aka: "Kangal, Anatolian Shepherd Dog, Karabash",
+      text: [
+        "Il pastore dell'Anatolia è un grande cane da guardiania del bestiame, di costruzione possente, originario della Turchia; la FCI descrive il cane da pastore turco come Kangal (Kangal Shepherd Dog): unicolore dal fulvo al grigio lupo con maschera nera, alto 72–78 cm nei maschi e 65–73 cm nelle femmine. Lo standard americano della razza indica 110–150 libbre (circa 50–68 kg) per i maschi e 80–120 libbre (circa 36–54 kg) per le femmine. Un cane di questa taglia completa la crescita verso i 18–24 mesi (PetMD); il Royal Kennel Club indica una durata della vita di oltre 10 anni e WebMD in media da 11 a 13 anni.",
+        "Il Royal Kennel Club raccomanda più di 2 ore di movimento al giorno e la cura del mantello più di una volta alla settimana, indica che perde pelo e che è adatto a una casa grande con un grande giardino in campagna, e lo inserisce nella categoria 1 del programma Breed Watch. PetMD scrive che il pastore dell'Anatolia potrebbe stare meglio in famiglie senza bambini piccoli, che i cuccioli presentati presto ad altri animali di solito vanno d'accordo con loro, che la socializzazione precoce è fondamentale, che al di fuori delle due mute annuali basta spazzolarlo una volta alla settimana e che va evitato il movimento intorno ai pasti.",
+      ],
+      sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
+    },
     irish_setter: {
       aka: "Setter irlandese rosso, Irish Setter",
       text: [

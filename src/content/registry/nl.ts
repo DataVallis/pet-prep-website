@@ -29,7 +29,7 @@ const hm = (t: unknown) => String(t).replace(/^0(\d)/, "$1").replace(":", ".");
 type Fci = { number: number; group: number; origin: string };
 /** Dutch FCI group names (Raad van Beheer), in running-text form. */
 const fciGroups: Record<number, string> = { 1: "herdershonden en veedrijvers, behalve Zwitserse sennenhonden", 2: "pinschers en schnauzers – molossers – Zwitserse sennenhonden en verwante rassen", 3: "terriërs", 4: "teckels", 5: "keeshonden en oertypen", 6: "lopende honden, zweethonden en verwante rassen", 7: "staande honden", 8: "retrievers, spaniëls en waterhonden", 9: "gezelschapshonden", 10: "windhonden" };
-const origins: Record<string, string> = { GB: "Groot-Brittannië", FR: "Frankrijk", DE: "Duitsland", US: "Verenigde Staten", CU: "Cuba", CH: "Zwitserland", IT: "Italië", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "België", HU: "Hongarije", JP: "Japan", ZA: "Zuid-Afrika", "BE-FR": "België / Frankrijk", PT: "Portugal", CA: "Canada", HR: "Kroatië", AU: "Australië", RU: "Rusland", IE: "Ierland", "AF-C": "Centraal-Afrika" };
+const origins: Record<string, string> = { GB: "Groot-Brittannië", FR: "Frankrijk", DE: "Duitsland", US: "Verenigde Staten", CU: "Cuba", CH: "Zwitserland", IT: "Italië", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "België", HU: "Hongarije", JP: "Japan", ZA: "Zuid-Afrika", "BE-FR": "België / Frankrijk", PT: "Portugal", CA: "Canada", HR: "Kroatië", AU: "Australië", RU: "Rusland", IE: "Ierland", "AF-C": "Centraal-Afrika", TR: "Turkije" };
 
 const nl: RegistryCopy = {
   mistakes: {
@@ -633,6 +633,14 @@ const nl: RegistryCopy = {
     },
   },
   intros: {
+    anatolian_shepherd_dog: {
+      aka: "Kangal, Anatolian Shepherd Dog, Karabash",
+      text: [
+        "De Anatolische herder is een grote, krachtig gebouwde kuddebewaker uit Turkije; de FCI beschrijft de Turkse herdershond als kangal (Kangal Shepherd Dog) – eenkleurig van vaalgeel tot wolfsgrijs met een zwart masker, 72–78 cm hoog bij reuen en 65–73 cm bij teven. De Amerikaanse rasstandaard noemt 110–150 pond (ongeveer 50–68 kg) voor reuen en 80–120 pond (ongeveer 36–54 kg) voor teven. Een hond van dit formaat is volgroeid rond 18–24 maanden (PetMD); de Royal Kennel Club geeft een levensverwachting van meer dan 10 jaar en WebMD gemiddeld 11 tot 13 jaar.",
+        "De Royal Kennel Club raadt meer dan 2 uur beweging per dag aan en vachtverzorging vaker dan eens per week, meldt dat hij verhaart en past bij een groot huis met een grote tuin op het platteland, en deelt hem in bij Breed Watch-categorie 1. PetMD schrijft dat Anatolische herders waarschijnlijk het best passen in een huis zonder jonge kinderen, dat pups die vroeg andere dieren leren kennen meestal goed met hen opschieten, dat vroege socialisatie essentieel is, dat de vacht buiten de twee jaarlijkse ruiperiodes wekelijks geborsteld moet worden en dat beweging rond de maaltijden vermeden moet worden.",
+      ],
+      sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
+    },
     irish_setter: {
       aka: "Ierse rode setter, Irish Setter",
       text: [
