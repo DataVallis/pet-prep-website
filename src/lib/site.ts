@@ -28,7 +28,7 @@ export const site = {
     vatRegistered: true,
     /** Matična številka (business registration number). */
     registrationNumber: "6560024000",
-    url: "https://datavallis.com",
+    url: "https://www.davidtacer.com",
   },
   // TODO(David): create these mailboxes (or change the addresses).
   email: {
