@@ -103,7 +103,7 @@
       "name": "Mäyräkoira",
       "slug": "mayrakoira",
       "synonyms": [
-        "Mäkkäri",
+        "Makkarakoira",
         "Lyhytkarvainen mäyräkoira",
         "Dachshund",
         "Teckel"
@@ -863,8 +863,8 @@
       "secure_fencing": "karkailee helposti – tarvitsee tukevan ja korkean aidan",
       "sensitive_older_children": "herkkä koira – sopii paremmin isommille lapsille",
       "sensitive_skin": "herkkä iho – altis kutinalle ja tulehduksille",
-      "sheds": "karvaa irtoaa",
-      "short_muzzle_breathing": "lyhyempi kuono – voi olla hengitysvaikeuksia",
+      "sheds": "karvaa lähtee",
+      "short_muzzle_breathing": "lyhyempi kuono – mahdollisia hengitysvaikeuksia",
       "shorter_lifespan": "lyhyempi elinikä",
       "small_children": "perheille, joissa on pieniä lapsia",
       "sun_protection": "paljas iho – tarvitsee aurinkosuojaa",

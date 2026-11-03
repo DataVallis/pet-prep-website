@@ -725,7 +725,7 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
       steps: [
         "Valitse kuva ja tulosta se – A4 tai US Letter, mustavalkoinen tulostus riittää.",
         "Väritä kuva tai piirrä se uudelleen tyhjälle paperille.",
-        "Lukekaa sivulla oleva tieto yhdessä: jokainen tieto on peräisin eläinlääkärien tai kennelliittojen lähteistä.",
+        "Lukekaa sivun tieto yhdessä: se on peräisin eläinlääkäreiden tai kennelliittojen lähteistä.",
       ],
     },
     share: {
@@ -735,8 +735,8 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
     licence: "Maksutta henkilökohtaiseen, perheen ja koululuokan käyttöön. Älä myy kuvia äläkä julkaise niitä uudelleen.",
     page: {
       metaTitle: (t) => `${t} – ilmainen tulostettava värityskuva | PetPrep`,
-      metaDescription: (t) => `${t}: ilmainen tulostettava värityskuva lapsille (PDF, A4 ja US Letter) ja tositieto lemmikin hoidosta lähteineen. PetPrepiltä.`,
-      lead: "Tulosta ja väritä maksutta. Sivulla on tositieto lemmikin hoidosta – lukekaa se yhdessä.",
+      metaDescription: (t) => `${t}: ilmainen tulostettava värityskuva lapsille (PDF, A4 ja US Letter) ja oikea tieto lemmikin hoidosta lähteineen. PetPrepiltä.`,
+      lead: "Tulosta ja väritä maksutta. Sivulla on oikea tieto lemmikin hoidosta – lukekaa se yhdessä.",
       print: "Tulosta",
       pdfA4: "PDF (A4)",
       pdfLetter: "PDF (US Letter)",
