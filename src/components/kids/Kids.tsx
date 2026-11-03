@@ -2,6 +2,7 @@ import Link from "next/link";
 import { pathFor, type Locale } from "@/i18n/config";
 import { kidsCopy } from "@/content/kids";
 import { Thumb } from "./Thumb";
+import { NavLink } from "../NavLink";
 import { absoluteUrl } from "@/lib/site";
 
 /** Mobile menu: the section with its items indented under it. */
@@ -9,13 +10,13 @@ export function KidsMobile({ locale }: { locale: Locale }) {
   const c = kidsCopy[locale];
   return (
     <div className="flex flex-col border-b border-line py-3">
-      <Link href={pathFor(locale, "kids")} className="text-[17px] font-semibold">{c.menu}</Link>
+      <NavLink href={pathFor(locale, "kids")} alsoActiveFor={c.items.map((it) => pathFor(locale, it.page))} className="text-[17px] font-semibold" activeClassName="border-l-4 border-mint pl-3 text-mint-text">{c.menu}</NavLink>
       <div className="mt-2 flex flex-col gap-1 pl-3">
         {c.items.map((it) => (
-          <Link key={it.page} href={pathFor(locale, it.page)} className="flex items-center gap-3 rounded-[14px] py-1.5 text-[16px]">
+          <NavLink key={it.page} href={pathFor(locale, it.page)} className="flex items-center gap-3 rounded-[14px] py-1.5 text-[16px]" activeClassName="bg-mint-tint font-semibold ring-2 ring-mint">
             <Thumb item={it} size="xs" />
             <span className="font-medium">{it.title}</span>
-          </Link>
+          </NavLink>
         ))}
       </div>
     </div>

@@ -4,10 +4,14 @@ import type { Dictionary } from "@/content/types";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { PrimaryCta } from "./Cta";
 import { MobileMenu } from "./MobileMenu";
+import { NavLink, DESKTOP_ITEM, DESKTOP_ACTIVE } from "./NavLink";
 import { KidsMobile } from "./kids/Kids";
 import { KidsMenu } from "./kids/KidsMenu";
 
 // "When it comes home" moved to the footer to make room for "For kids" (David 2026-10-31).
+/** Active item in the mobile menu: mint bar on the left + mint-text colour. */
+const MOBILE_ACTIVE = "border-l-4 !border-l-mint pl-3 text-mint-text";
+
 const navKeys: PageKey[] = ["howItWorks", "parents", "animals", "care"];
 
 export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
@@ -25,14 +29,14 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
 
         <nav aria-label="Main" className="hidden flex-1 items-center gap-7 text-[15px] font-medium lg:flex">
           {navKeys.map((k) => (
-            <Link key={k} href={pathFor(locale, k)} className="hover:text-mint-text">
+            <NavLink key={k} href={pathFor(locale, k)} className={DESKTOP_ITEM} activeClassName={DESKTOP_ACTIVE}>
               {label(k)}
-            </Link>
+            </NavLink>
           ))}
           <KidsMenu locale={locale} />
-          <Link href={pathFor(locale, "pricing")} className="hover:text-mint-text">
+          <NavLink href={pathFor(locale, "pricing")} className={DESKTOP_ITEM} activeClassName={DESKTOP_ACTIVE}>
             {label("pricing")}
-          </Link>
+          </NavLink>
         </nav>
 
         <div className="ml-auto hidden items-center gap-3 lg:flex">
@@ -55,15 +59,15 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
         >
             <nav aria-label="Mobile" className="flex flex-col">
               {(["howItWorks", "parents", "animals", "care"] as PageKey[]).map((k) => (
-                <Link key={k} href={pathFor(locale, k)} className="border-b border-line py-3 text-[17px] font-semibold">
+                <NavLink key={k} href={pathFor(locale, k)} className="border-b border-line py-3 text-[17px] font-semibold" activeClassName={MOBILE_ACTIVE}>
                   {label(k)}
-                </Link>
+                </NavLink>
               ))}
               <KidsMobile locale={locale} />
               {(["afterAdoption", "pricing", "faq", "contact"] as PageKey[]).map((k) => (
-                <Link key={k} href={pathFor(locale, k)} className="border-b border-line py-3 text-[17px] font-semibold last:border-0">
+                <NavLink key={k} href={pathFor(locale, k)} className="border-b border-line py-3 text-[17px] font-semibold last:border-0" activeClassName={MOBILE_ACTIVE}>
                   {label(k)}
-                </Link>
+                </NavLink>
               ))}
             </nav>
             <div className="mt-4 flex flex-col gap-4">
