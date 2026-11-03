@@ -157,6 +157,44 @@ export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStat
           <p className="text-[13px] text-muted">{m.consent}</p>
         </div>
 
+        <div className="flex flex-col gap-4">
+          <h3 className="font-display text-[22px] font-bold">{m.more}</h3>
+          <ul className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6">
+            <li>
+              <ClickToPlay
+                src={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(youtube.curio.pilot)}`}
+                title={m.curioPilot.title}
+                label={`${m.play}: ${m.curioPilot.title}`}
+                className="aspect-[9/16] w-full overflow-hidden rounded-[22px] bg-graphite p-4 text-fog"
+              >
+                <span className="font-semibold">{m.curioPilot.title}</span>
+                <span className="text-[13px] leading-[18px] text-muted-dark">{m.curioPilot.text}</span>
+              </ClickToPlay>
+            </li>
+            <li>
+              <ClickToPlay
+                src={`https://www.youtube-nocookie.com/embed/videoseries?list=${encodeURIComponent(youtube.curio.playlistId)}`}
+                title={m.curioAll}
+                label={`${m.play}: ${m.curioAll}`}
+                className="aspect-[9/16] w-full overflow-hidden rounded-[22px] bg-graphite-2 p-4 text-fog"
+              >
+                <span className="font-semibold">{m.curioAll}</span>
+              </ClickToPlay>
+            </li>
+            <li>
+              <ClickToPlay
+                src={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(youtube.promo)}`}
+                title={m.promo.title}
+                label={`${m.play}: ${m.promo.title}`}
+                className="aspect-[9/16] w-full overflow-hidden rounded-[22px] bg-mint p-4 text-graphite"
+              >
+                <span className="font-semibold">{m.promo.title}</span>
+                <span className="text-[13px] leading-[18px]">{m.promo.text}</span>
+              </ClickToPlay>
+            </li>
+          </ul>
+        </div>
+
         <div className="grid gap-4 md:grid-cols-3">
           <Link href={pathFor("en", "curio")} className="group flex min-h-40 flex-col justify-end gap-1 rounded-[22px] bg-graphite p-5 text-fog hover:opacity-95">
             <span className="font-display text-[20px] font-bold group-hover:underline">{m.curio.title}</span>

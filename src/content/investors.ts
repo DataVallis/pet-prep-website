@@ -10,6 +10,10 @@ export const youtube = {
   playlistId: "PLKZQ_Dl4SmTg",
   /** "12 Weeks" episodes in order (Shorts, 9:16). */
   episodes: ["XRjZrBaCEnU", "PM4UgH2-2Gs", "yJZ3I7JxF9A", "zDAXgIi5Gos", "yrokI1Z4Mzs", "amgDs9QDwkE", "-NG1WviHu_g", "pJx4E5TQlhw", "iiGvrKzbPzA", "g2T5ZROUapA", "HdrcUB-17L4", "fdWL1hSAjHA"],
+  /** Curio — a silent family comedy (animated series). */
+  curio: { playlistId: "PLViBkz320w9c", pilot: "BYeoqcbqhl0" },
+  /** "PetPrep in 60 seconds" (playlist "How PetPrep works"). */
+  promo: "CaixLs_X9GA",
 };
 
 export const investorEmail = "mailto:investors@petprep.si";
@@ -67,7 +71,7 @@ export const investorsCopy = {
       sources: { label: "Sources", note: "Vets, kennel clubs and studies, quoted" },
       episodes: { label: "“12 Weeks” episodes", note: (views: string | null) => (views ? `${views} views on YouTube` : "On YouTube") },
       coloring: { label: "Free colouring pages", note: "Printable, A4 and US Letter" },
-      curio: { value: "Pilot", label: "Curio animated series", note: "Pilot episode out on TikTok" },
+      curio: { value: "Pilot", label: "Curio animated series", note: "Pilot episode out on YouTube and TikTok" },
       foods: { label: "Foods explained", note: "Care library, new foods every night" },
       languages: { label: "Languages", note: "Site and care library" },
       vets: { label: "Countries with vet directory", note: "Emergency vets by country" },
@@ -79,6 +83,10 @@ export const investorsCopy = {
       all: "All episodes (playlist)",
       episode: (n: number) => `Episode ${n}`,
       consent: "Plays from YouTube (youtube-nocookie.com) — nothing loads until you click.",
+      more: "More to watch",
+      curioPilot: { title: "Curio — Rock, Paper, Leash", text: "Pilot of our silent family comedy" },
+      curioAll: "Curio — all episodes",
+      promo: { title: "PetPrep in 60 seconds", text: "Is your kid ready for a real pet?" },
       curio: { title: "Meet Curio", text: "Our mascot and its short videos" },
       coloring: { title: "Colouring pages", text: "Free to print, each with a sourced pet-care fact" },
       walkthrough: { title: "How the app works", text: "The 12-week challenge, step by step" },
@@ -125,7 +133,7 @@ export const investorsCopy = {
         tag: "Brand",
         name: "Curio and the series",
         items: [
-          { name: "Curio animated series", price: "Season sponsors", status: "building" as Status, label: "In development" },
+          { name: "Curio animated series", price: "Season sponsors", status: "live" as Status, label: "Pilot out" },
           { name: "#walkyourpet", price: "Movement that feeds every channel", status: "live" as Status, label: "Live" },
         ],
       },
