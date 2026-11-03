@@ -343,7 +343,7 @@ const pt: CareCopy = {
     sources: "Fontes",
     updated: "Atualizado",
     notVetReviewed: "Informação geral retirada das fontes indicadas abaixo: não foi revista por um veterinário e não substitui o aconselhamento veterinário. Em caso de dúvida, liga ao teu veterinário.",
-    otherSpecies: "Outros animais",
+    otherSpecies: "Outras espécies",
     simulates: "Como as crianças praticam isto no PetPrep",
     simulatesText: (w) => `No PetPrep, uma criança cuida de ${w.pet} simulado de forma realista: refeições à hora certa, água, passeios e cuidados. Saber o que se pode partilhar com ele sem riscos faz parte de estar preparado para um animal de estimação a sério.`,
     backTo: "Todos os alimentos",

@@ -32,24 +32,24 @@ const pt: RegistryCopy = {
     heat: "Passeios com calor",
     growth: "Esquecer que o cachorro ainda está a crescer",
     growthText: (growthEnd) => `Atinge o tamanho adulto: ${growthEnd}. Até lá, planeia o exercício e a alimentação a pensar num animal jovem que ainda está a crescer, e pergunta ao teu veterinário o que é adequado para o teu.`,
-    mind: "Pouco para fazer com a cabeça",
+    mind: "Pouca estimulação mental",
     health: "Ignorar os problemas de saúde conhecidos da raça",
-    practise: "No PetPrep, uma criança pratica exatamente estes hábitos – passos, refeições, cuidados – antes de o animal verdadeiro chegar a casa.",
+    practise: "No PetPrep, uma criança pratica exatamente estes hábitos – passos, refeições, cuidados – antes de o animal de estimação verdadeiro chegar a casa.",
   },
   hub: {
-    title: "Conhece o animal antes de ele chegar a casa.",
+    title: "Conhece o animal de estimação antes de ele chegar a casa.",
     intro:
       "Do que cada espécie e cada raça do PetPrep precisa realmente – segundo clubes de canicultura, registos felinos, organizações veterinárias e estudos, com a ligação para cada fonte. E ainda as regras que o PetPrep usa para os simular.",
     breedCount: (n) => `${n} ${s(n, "raça", "raças")} no registo`,
     open: "Ver raças",
     openA11y: (many) => `Ver raças: ${lc(many)}`,
     freePlan: (name, activity) => `Plano gratuito: ${lc(name)} (${activity} em adulto). Não tem página de raça.`,
-    otherSpecies: "Estão previstos mais animais.",
+    otherSpecies: "Estão previstas mais espécies.",
     methodTitle: "Como construímos este registo",
     method: [
-      "Cada dado vem de uma fonte identificada – clubes de canicultura, registos felinos, organizações e associações veterinárias e estudos revistos por pares – e tem ligação para ela. Os estalões das raças são resumidos por palavras nossas.",
+      "Cada dado vem de uma fonte identificada – clubes de canicultura, registos felinos, organizações e associações veterinárias e estudos revistos por pares – e tem ligação para ela. Os estalões das raças são resumidos com palavras nossas.",
       "Valores que nenhuma fonte confirma nunca são apresentados como factos. Quando o PetPrep tem de escolher um número para o jogo, ele aparece apenas em «Como o PetPrep o simula», identificado como regra do jogo.",
-      "Os mesmos dados fazem funcionar a aplicação: as etiquetas, o número de refeições, os objetivos de passos e as sessões de brincadeira destas páginas são os que o animal usa na aplicação.",
+      "Os mesmos dados fazem funcionar a aplicação: as etiquetas, o número de refeições, os objetivos de passos e as sessões de brincadeira destas páginas são os que o animal de estimação do jogo usa na aplicação.",
       "Este registo não é aconselhamento veterinário. A informação de saúde serve apenas de orientação e não foi revista por um veterinário.",
     ],
   },
@@ -207,8 +207,8 @@ const pt: RegistryCopy = {
     smaller_meals: (t) => `${t}, em porções mais pequenas`,
   },
   units: {
-    cm: (t) => `${t} cm`,
-    kg: (t) => `${t} kg`,
+    cm: (t) => `${t} cm`,
+    kg: (t) => `${t} kg`,
     years: (t, n) => `${t} ${s(n, "ano", "anos")}`,
     months: (t, n) => `${t} ${s(n, "mês", "meses")}`,
     days: (t, n) => `${t} ${s(n, "dia", "dias")}`,
@@ -216,7 +216,7 @@ const pt: RegistryCopy = {
     meals_per_day: (t, n) => `${t} ${s(n, "refeição", "refeições")} por dia`,
     times_per_day: (t, n) => `${t} ${s(n, "vez", "vezes")} por dia`,
     hours_per_day: (t, n) => `${t} ${s(n, "hora", "horas")} por dia`,
-    ml_per_kg_day: (t) => `${t} ml por kg de peso corporal por dia`,
+    ml_per_kg_day: (t) => `${t} ml por kg de peso corporal por dia`,
     share_of_lifespan: (_t, n, f) => `${f.num(n * 100, 0)}% da esperança de vida prevista`,
   },
   males: "machos",
@@ -393,7 +393,7 @@ const pt: RegistryCopy = {
     },
   },
   health: {
-    shar_pei_fever: "Na raça pode ocorrer a febre familiar do Shar Pei: crises de febre alta com articulações dolorosas e inchadas e a face inchada — procure logo um veterinário.",
+    shar_pei_fever: "Na raça pode ocorrer a febre familiar do shar pei: crises de febre alta com articulações dolorosas e inchadas e a face inchada; procura logo um veterinário.",
     weight_gain: "Engorda com facilidade: é preciso vigiar as porções e as guloseimas.",
     hip_elbow_dysplasia_eye_conditions: "Pode ter predisposição para displasia da anca e do cotovelo e para várias doenças hereditárias dos olhos.",
     cancer_risk: "As fontes descrevem um risco de cancro mais elevado nesta raça.",
@@ -545,7 +545,7 @@ const pt: RegistryCopy = {
     simTitle: "Como o PetPrep o simula",
     simBadge: "Regras do jogo, não aconselhamento veterinário",
     simIntro:
-      "No PetPrep, uma semana real corresponde a um mês de vida do animal. Estas são as regras que o jogo usa para esta raça. O PetPrep escolheu-as com base nas fontes desta página; não são instruções de cuidados para um animal verdadeiro.",
+      "No PetPrep, uma semana real corresponde a um mês de vida do animal de estimação. Estas são as regras que o jogo usa para esta raça. O PetPrep escolheu-as com base nas fontes desta página; não são instruções de cuidados para um animal de estimação verdadeiro.",
     simInfoOnly: "Esta raça está no registo apenas a título informativo; a aplicação ainda não a simula.",
     simTable: { stage: "Fase da vida", starts: "Começa", meals: "Refeições por dia", activity: { steps: "Objetivo diário de passos", play_sessions: "Brincadeira por dia" } },
     arrives: (m) => `chega aos ${m} meses`,
@@ -553,7 +553,7 @@ const pt: RegistryCopy = {
     meals: (steps) => steps.map((x) => (x.from === null ? String(x.meals) : `a partir do ${x.from}.º mês: ${x.meals}`)).join("; "),
     simDecisions: "Cada número do jogo é uma decisão do PetPrep registada com as suas fontes.",
     healthTitle: "Saúde",
-    healthNote: "Apenas informativo, sem revisão veterinária. Sobre o teu animal, pergunta ao teu veterinário.",
+    healthNote: "Apenas informativo, sem revisão veterinária. Sobre o teu animal de estimação, pergunta ao teu veterinário.",
     healthNone: "As nossas fontes ainda não incluem informação de saúde específica desta raça.",
     checklistTitle: "Antes de comprar: o que verificar com o criador",
     checklistIntro: (speciesId) =>
@@ -579,7 +579,7 @@ const pt: RegistryCopy = {
     sourcesTitle: "Fontes",
     sourcesIntro: "Cada dado desta página cita uma destas fontes.",
     sourceLabel: (id, publisher) => `Fonte ${id}: ${publisher}`,
-    disclaimer: "O PetPrep é uma simulação para famílias. Esta página não é aconselhamento veterinário: para um animal verdadeiro, pergunta a um veterinário ou ao clube da raça.",
+    disclaimer: "O PetPrep é uma simulação para famílias. Esta página não é aconselhamento veterinário: para um animal de estimação verdadeiro, pergunta a um veterinário ou ao clube da raça.",
     backTo: (many) => `Todos os ${lc(many)}`,
     compareWith: "Comparar com outras raças",
     related: { title: "Raças semelhantes", intro: (many) => `Outros ${lc(many)} do registo com necessidades semelhantes, cada um com dados confirmados por fontes.` },
@@ -631,16 +631,16 @@ const pt: RegistryCopy = {
     rat_terrier: {
       aka: "Rattie, Rat Terrier americano",
       text: [
-        "O Rat Terrier é um pequeno terrier americano criado em dois tamanhos — miniatura e padrão — com pelo curto, rente, liso e brilhante. O padrão da raça admite uma altura na cernelha até 18 polegadas (46 cm), e a PetMD indica um peso de 10–25 libras (cerca de 4,5–11 kg) para ambos os tamanhos; um cão deste porte termina de crescer por volta dos 9–12 meses (PetMD). A VCA indica uma esperança de vida de 12–16 anos, a PetMD de 12–18 anos.",
-        "O Rat Terrier Club of America diz que os Rat Terrier se dão bem com crianças, sobretudo se crescerem com elas, e adaptam-se a um apartamento, mas precisam de pelo menos 30 minutos de exercício por dia. A PetMD refere que precisam de muita estimulação física e mental, não gostam de ficar sozinhos muito tempo e largam um pouco de pelo todo o ano; a VCA aconselha escovar uma vez por semana e avisa que podem não se dar bem com animais pequenos, sobretudo roedores.",
+        "O rat terrier é um pequeno terrier americano criado em dois tamanhos – miniatura e padrão – com pelo curto, rente, liso e brilhante. O padrão da raça admite uma altura na cernelha até 18 polegadas (46 cm), e a PetMD indica um peso de 10–25 libras (cerca de 4,5–11 kg) para ambos os tamanhos; um cão deste porte termina de crescer por volta dos 9–12 meses (PetMD). A VCA indica uma esperança de vida de 12–16 anos, a PetMD de 12–18 anos.",
+        "O Rat Terrier Club of America diz que os rat terriers se dão bem com crianças, sobretudo se crescerem com elas, e adaptam-se a um apartamento, mas precisam de pelo menos 30 minutos de exercício por dia. A PetMD refere que precisam de muita estimulação física e mental, não gostam de ficar sozinhos muito tempo e largam um pouco de pelo todo o ano; a VCA aconselha escovar uma vez por semana e avisa que podem não se dar bem com animais pequenos, sobretudo roedores.",
       ],
       sources: ["S650", "S648", "S10", "S647"],
     },
     shar_pei: {
       aka: "Shar-Pei chinês, Chinese Shar-Pei, Sharpei",
       text: [
-        "O Shar Pei («Chinese Shar-Pei» nos EUA) é um cão ativo, compacto, de construção quadrada e porte médio, originário da China, com pelo curto, áspero e eriçado de uma só cor (qualquer uma exceto o branco), rugas na cabeça e na cernelha e um focinho largo. O padrão do Royal Kennel Club indica uma altura de 46–51 cm e a PDSA um peso de 20–27 kg; um cão deste porte termina de crescer por volta dos 12–15 meses (PetMD). O Royal Kennel Club e a PDSA indicam uma esperança de vida de mais de 10 anos, mas um estudo da VetCompass com cães do Reino Unido encontrou uma mediana de 7,3 anos.",
-        "O Royal Kennel Club recomenda até uma hora de exercício por dia e uma escovagem por semana, e coloca a raça na categoria 2 do Breed Watch devido a problemas nas pálpebras e nas pregas da pele. A PDSA descreve os Shar Pei como cães de família leais e dedicados, mais indicados para donos experientes e crianças mais velhas, alerta para um forte instinto de presa perante animais mais pequenos e aconselha manter as pregas da pele limpas e secas e deixar um intervalo entre a refeição e o exercício.",
+        "O Shar Pei («Chinese Shar-Pei» nos EUA) é um cão ativo, compacto, de construção quadrada e porte médio, originário da China, com pelo curto, áspero e eriçado de uma só cor (qualquer uma exceto o branco), rugas na cabeça e na cernelha e um focinho largo. O padrão do Royal Kennel Club indica uma altura de 46–51 cm e a PDSA um peso de 20–27 kg; um cão deste porte termina de crescer por volta dos 12–15 meses (PetMD). O Royal Kennel Club e a PDSA indicam uma esperança de vida de mais de 10 anos, mas um estudo da VetCompass com cães do Reino Unido encontrou uma mediana de 7,3 anos.",
+        "O Royal Kennel Club recomenda até uma hora de exercício por dia e uma escovagem por semana, e coloca a raça na categoria 2 do Breed Watch devido a problemas nas pálpebras e nas pregas da pele. A PDSA descreve os shar pei como cães de família leais e dedicados, mais indicados para donos experientes e crianças mais velhas, alerta para um forte instinto de presa perante animais mais pequenos e aconselha manter as pregas da pele limpas e secas e deixar um intervalo entre a refeição e o exercício.",
       ],
       sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
     },
@@ -670,7 +670,7 @@ const pt: RegistryCopy = {
     french_bulldog: {
       aka: "Bouledogue français, Frenchie, French Bulldog",
       text: [
-        "O bulldog francês é um cão de companhia pequeno e robusto originário de França, com pelo curto e liso e as características orelhas erguidas «de morcego». O seu estalão descreve um cão sociável, vivo e brincalhão; as associações britânicas dizem que é tranquilo e adaptável e que costuma dar-se bem com crianças, o que fez dele um animal de família muito popular.",
+        "O bulldog francês é um cão de companhia pequeno e robusto originário de França, com pelo curto e liso e as características orelhas erguidas «de morcego». O seu estalão descreve um cão sociável, vivo e brincalhão; as associações britânicas dizem que é tranquilo e adaptável e que costuma dar-se bem com crianças, o que fez dele um cão de família muito popular.",
         "Precisa de até uma hora de exercício por dia e adapta-se a um apartamento. A contrapartida que todas as fontes referem é o focinho achatado: pode dificultar a respiração, e os bulldogs franceses aquecem depressa, sobretudo quando está calor, por isso sombra, água e passeios calmos são importantes. A PDSA sugere às famílias que considerem também adotar um bulldog francês adulto.",
       ],
       sources: ["S76", "S78", "S79", "S81", "S82"],
@@ -726,15 +726,15 @@ const pt: RegistryCopy = {
       aka: "Havanês, Bichon Havanais, Havanese",
       text: [
         "O bichon havanês é um membro pequeno da família dos bichons e o cão nacional de Cuba. O seu estalão descreve um cãozinho robusto, de patas curtas, com um pelo muito comprido, macio, liso ou ondulado, que nunca é aparado, e a cauda levantada sobre o dorso. Existe em fulvo, preto, castanho havana, tabaco, castanho-avermelhado e, raramente, branco, com ou sem manchas e marcas fogo.",
-        "O seu estalão descreve-o como afetuoso, brincalhão e até um pouco palhaço, e diz que adora crianças e brinca com elas sem parar; as fontes britânicas consideram-no um excelente animal de família com a socialização certa, e fácil de treinar. Precisa de cerca de 30 minutos de exercício por dia, pode viver num apartamento e não perde pelo – mas o pelo comprido precisa de cuidados todos os dias para evitar nós e emaranhados.",
+        "O seu estalão descreve-o como afetuoso, brincalhão e até um pouco palhaço, e diz que adora crianças e brinca com elas sem parar; as fontes britânicas consideram-no um excelente cão de família com a socialização certa, e fácil de treinar. Precisa de cerca de 30 minutos de exercício por dia, pode viver num apartamento e não perde pelo – mas o pelo comprido precisa de cuidados todos os dias para evitar nós e emaranhados.",
       ],
       sources: ["S136", "S138", "S140"],
     },
     west_highland_white_terrier: {
       aka: "Westie",
       text: [
-        "O West Highland white terrier, ou westie, é um pequeno terrier originário da Grã-Bretanha. O seu estalão descreve um cãozinho de constituição robusta, com peito profundo, dorso nivelado, uma pelagem dupla e áspera de cerca de 5 cm, orelhas pequenas, erguidas e pontiagudas e olhos escuros sob sobrancelhas espessas. O branco é a única cor que o estalão admite.",
-        "O seu estalão descreve-o como atento, alegre, corajoso e independente, mas simpático. As fontes britânicas consideram-no um animal de família afetuoso e brincalhão para crianças de qualquer idade, sempre com as brincadeiras vigiadas; precisa de cerca de uma hora de exercício por dia, pode viver num apartamento, perde pelo e precisa de escovagem algumas vezes por semana. Por causa do instinto de caça não deve viver com animais mais pequenos, e não gosta de ficar sozinho. A pele é um ponto de preocupação conhecido: o Royal Kennel Club pede aos juízes que procurem sinais de inflamação da pele na raça.",
+        "O West Highland white terrier, ou westie, é um pequeno terrier originário da Grã-Bretanha. O seu estalão descreve um cãozinho de constituição robusta, com peito profundo, dorso nivelado, uma pelagem dupla e áspera de cerca de 5 cm, orelhas pequenas, erguidas e pontiagudas e olhos escuros sob sobrancelhas espessas. O branco é a única cor que o estalão admite.",
+        "O seu estalão descreve-o como atento, alegre, corajoso e independente, mas simpático. As fontes britânicas consideram-no um cão de família afetuoso e brincalhão para crianças de qualquer idade, sempre com as brincadeiras vigiadas; precisa de cerca de uma hora de exercício por dia, pode viver num apartamento, perde pelo e precisa de escovagem algumas vezes por semana. Por causa do instinto de caça não deve viver com animais mais pequenos, e não gosta de ficar sozinho. A pele é um ponto de preocupação conhecido: o Royal Kennel Club pede aos juízes que procurem sinais de inflamação da pele na raça.",
       ],
       sources: ["S142", "S144", "S146", "S147"],
     },
@@ -781,7 +781,7 @@ const pt: RegistryCopy = {
     yorkshire_terrier: {
       aka: "Yorkie, Yorkshire",
       text: [
-        "O Yorkshire terrier é um terrier toy originário da Grã-Bretanha que, segundo o estalão, pesa até 3,2 kg, com um pelo comprido, perfeitamente liso, brilhante e sedoso, que cai de forma uniforme de cada lado a partir de uma risca ao longo do dorso. O estalão admite uma só cor: azul-aço escuro da nuca até à cauda, com fogo intenso e vivo na cabeça, no peito e nas patas; as pequenas orelhas em forma de V são erguidas. O estalão descreve tanto a cauda cortada como a não cortada – o PetPrep mostra sempre o cão com a cauda natural.",
+        "O Yorkshire terrier é um terrier toy originário da Grã-Bretanha que, segundo o estalão, pesa até 3,2 kg, com um pelo comprido, perfeitamente liso, brilhante e sedoso, que cai de forma uniforme de cada lado a partir de uma risca ao longo do dorso. O estalão admite uma só cor: azul-aço escuro da nuca até à cauda, com fogo intenso e vivo na cabeça, no peito e nas patas; as pequenas orelhas em forma de V são erguidas. O estalão descreve tanto a cauda cortada como a não cortada – o PetPrep mostra sempre o cão com a cauda natural.",
         "O seu estalão descreve-o como atento, inteligente e cheio de vida, de temperamento equilibrado. O Royal Kennel Club recomenda até 30 minutos de exercício por dia e cuidados com a pelagem todos os dias; a PDSA acrescenta que gosta de correr, ir buscar coisas e brincar, que pode ser bastante teimoso no treino e que é mais adequado a famílias com crianças mais velhas, porque tem os ossos muito frágeis. Um grande estudo britânico concluiu que as doenças dentárias são o problema mais comum da raça, recomenda cuidar dos dentes todos os dias, por exemplo escovando-os, e encontrou uma idade mediana à morte de 13,56 anos.",
       ],
       sources: ["S190", "S192", "S194", "S195", "S196"],
@@ -830,7 +830,7 @@ const pt: RegistryCopy = {
       aka: "Shih-tzu",
       text: [
         "O shih tzu é um pequeno cão de companhia originário do Tibete; a Grã-Bretanha é responsável pelo seu estalão FCI. Os estalões descrevem um cão robusto, de pelagem abundante e porte orgulhoso, com uma cara «semelhante a um crisântemo»: pelo de cobertura comprido e denso, olhos grandes, escuros e redondos, orelhas grandes e caídas e uma cauda com muita franja levantada sobre o dorso. Os estalões admitem muitas cores; o PetPrep mostra dourado e branco, preto e branco e fígado e branco, e nunca merle. O focinho é curto e achatado, e a PDSA refere problemas respiratórios causados pelo focinho mais curto, por isso o PetPrep desenha sempre um focinho moderado com narinas abertas.",
-        "A FCI descreve-o como inteligente, ativo e atento, simpático e independente. O Royal Kennel Club recomenda até uma hora de exercício por dia e cuidados com a pelagem todos os dias, e indica um apartamento como casa adequada. A PDSA diz que os shih tzus podem ser animais de família de bom temperamento se tiverem a socialização e o treino certos, considera-os um animal ideal para quem tem cão pela primeira vez, aconselha a vigiá-los sempre com crianças e recomenda uma escovagem diária e uma tosquia por um tosquiador profissional a cada seis a oito semanas para a maioria dos cães de companhia. O Royal Kennel Club indica uma esperança de vida de mais de 10 anos.",
+        "A FCI descreve-o como inteligente, ativo e atento, simpático e independente. O Royal Kennel Club recomenda até uma hora de exercício por dia e cuidados com a pelagem todos os dias, e indica um apartamento como casa adequada. A PDSA diz que os shih tzus podem ser cães de família de bom temperamento se tiverem a socialização e o treino certos, considera-os um cão ideal para quem tem cão pela primeira vez, aconselha a vigiá-los sempre com crianças e recomenda uma escovagem diária e uma tosquia por um tosquiador profissional a cada seis a oito semanas para a maioria dos cães de companhia. O Royal Kennel Club indica uma esperança de vida de mais de 10 anos.",
       ],
       sources: ["S229", "S231", "S233"],
     },
@@ -845,7 +845,7 @@ const pt: RegistryCopy = {
     pomeranian: {
       aka: "Spitz alemão anão, Lulu da Pomerânia, Pom, Pomeranian, Zwergspitz",
       text: [
-        "O pomerânia é o mais pequeno dos spitz: a FCI considera-o a variedade anã do spitz alemão, com 21 cm ± 3 cm ao garrote, e o estalão do Royal Kennel Club descreve um cãozinho compacto e de dorso curto, com cabeça de raposa, orelhas pequenas e erguidas e a cauda virada sobre o dorso. A pelagem dupla tem um subpelo macio e fofo e um pelo de cobertura comprido e liso que forma uma gola à volta do pescoço. O estalão admite muitas cores uniformes, como laranja, creme, branco, preto e castanho, mas nunca merle; o PetPrep desenha uma pelagem natural, sem tosquia.",
+        "O pomerânia é o mais pequeno dos spitz: a FCI considera-o a variedade anã do spitz alemão, com 21 cm ± 3 cm ao garrote, e o estalão do Royal Kennel Club descreve um cãozinho compacto e de dorso curto, com cabeça de raposa, orelhas pequenas e erguidas e a cauda virada sobre o dorso. A pelagem dupla tem um subpelo macio e fofo e um pelo de cobertura comprido e liso que forma uma gola à volta do pescoço. O estalão admite muitas cores uniformes, como laranja, creme, branco, preto e castanho, mas nunca merle; o PetPrep desenha uma pelagem natural, sem tosquia.",
         "A FCI descreve o seu caráter como sociável e alegre, e o estalão do Royal Kennel Club como extrovertido, vivo e inteligente. O Royal Kennel Club recomenda até 30 minutos de exercício por dia e considera-o adequado a um apartamento; a PDSA diz que a pelagem dupla precisa de escovagem duas a três vezes por semana. O AKC diz que os pomerânias costumam ser mais adequados a famílias com crianças mais velhas, que se podem dar bem com outros animais se forem socializados cedo, e recomenda vivamente a socialização precoce e aulas para cachorros. O Royal Kennel Club indica uma esperança de vida de mais de 12 anos.",
       ],
       sources: ["S246", "S247", "S249", "S250", "S251"],
@@ -854,7 +854,7 @@ const pt: RegistryCopy = {
       aka: "Boston, American Gentleman",
       text: [
         "O Boston terrier é originário dos Estados Unidos. O estalão FCI descreve um cão vivo, muito inteligente, de pelo liso, cabeça curta, constituição compacta, cauda curta e bem equilibrado, tigrado, foca ou preto e uniformemente marcado com branco: são obrigatórios uma faixa branca no focinho, uma lista branca entre os olhos e o antepeito branco, e o tigrado é preferido. O PetPrep desenha-o tigrado e branco, com focinho moderado, narinas abertas e orelhas e cauda naturais.",
-        "É uma raça de focinho achatado (braquicéfala), e a PDSA avisa que nunca deve fazer exercício nas horas de calor, porque tem tendência para sobreaquecer. O Royal Kennel Club recomenda até uma hora de exercício por dia e cuidados com a pelagem uma vez por semana, considera-o adequado a um apartamento e indica uma esperança de vida de mais de 10 anos. A PDSA considera os Boston terriers animais de família perfeitos, especialmente bons com crianças quando bem socializados em cachorros; o AKC diz que se dão bem com crianças que sabem ser meigas com os animais, que não lidam bem com longos períodos sozinhos, e recomenda vivamente a socialização precoce e o treino de cachorros.",
+        "É uma raça de focinho achatado (braquicéfala), e a PDSA avisa que nunca deve fazer exercício nas horas de calor, porque tem tendência para sobreaquecer. O Royal Kennel Club recomenda até uma hora de exercício por dia e cuidados com a pelagem uma vez por semana, considera-o adequado a um apartamento e indica uma esperança de vida de mais de 10 anos. A PDSA considera os Boston terriers cães de família perfeitos, especialmente bons com crianças quando bem socializados em cachorros; o AKC diz que se dão bem com crianças que sabem ser meigas com os animais, que não lidam bem com longos períodos sozinhos, e recomenda vivamente a socialização precoce e o treino de cachorros.",
       ],
       sources: ["S254", "S255", "S259", "S260"],
     },
@@ -869,7 +869,7 @@ const pt: RegistryCopy = {
     chihuahua: {
       aka: "Chi, Chihuahueño, Chihuahua de pelo curto",
       text: [
-        "O chihuahua é originário do México. O estalão do Kennel Club descreve um cão pequeno, delicado e compacto, de expressão atrevida e temperamento alegre, cheio de vida e inteligente, com um crânio bem arredondado «em forma de maçã», um focinho moderadamente curto e ligeiramente pontiagudo, olhos grandes e redondos que não são salientes, orelhas grandes e cauda em forma de foice; é admitida qualquer cor ou mistura de cores, mas nunca merle, e o peso preferido é de 1,8–2,7 kg. O Royal Kennel Club considera o chihuahua de pelo curto e o de pelo comprido duas raças; o PetPrep desenha o de pelo curto, em fulvo, com uma cabeça moderada.",
+        "O chihuahua é originário do México. O estalão do Kennel Club descreve um cão pequeno, delicado e compacto, de expressão atrevida e temperamento alegre, cheio de vida e inteligente, com um crânio bem arredondado «em forma de maçã», um focinho moderadamente curto e ligeiramente pontiagudo, olhos grandes e redondos que não são salientes, orelhas grandes e cauda em forma de foice; é admitida qualquer cor ou mistura de cores, mas nunca merle, e o peso preferido é de 1,8–2,7 kg. O Royal Kennel Club considera o chihuahua de pelo curto e o de pelo comprido duas raças; o PetPrep desenha o de pelo curto, em fulvo, com uma cabeça moderada.",
         "O Royal Kennel Club recomenda até 30 minutos de exercício por dia e cuidados com a pelagem uma vez por semana, considera-o adequado a um apartamento e indica uma esperança de vida de mais de 12 anos. A PDSA diz que os chihuahuas são tão pequenos e leves que as crianças têm vontade de lhes pegar ao colo, o que provavelmente não lhes agrada, por isso são mais adequados a famílias com crianças um pouco mais velhas. A PDSA acrescenta que, como cães de companhia, adoram companhia e precisam de alguém em casa a toda a hora, e que devem ser socializados desde cedo com muitas pessoas, experiências e lugares diferentes.",
       ],
       sources: ["S272", "S274", "S275", "S277"],
@@ -877,7 +877,7 @@ const pt: RegistryCopy = {
     english_springer_spaniel: {
       aka: "Springer, English Springer Spaniel, ESS",
       text: [
-        "O springer spaniel inglês é originário da Grã-Bretanha, onde foi criado para encontrar, levantar e cobrar a caça. O estalão do Kennel Club descreve um cão de construção simétrica, compacto, forte, alegre e ativo – o mais alto dos spaniels de terra britânicos – de temperamento simpático, feliz e dócil, com orelhas compridas e franjadas, olhos cor de avelã escura e um pelo cerrado, liso e resistente às intempéries; as cores são fígado e branco ou preto e branco, ambas com ou sem marcas fogo, e a altura aproximada é de 51 cm. O PetPrep desenha-o fígado e branco, com a cauda natural.",
+        "O springer spaniel inglês é originário da Grã-Bretanha, onde foi criado para encontrar, levantar e cobrar a caça. O estalão do Kennel Club descreve um cão de construção simétrica, compacto, forte, alegre e ativo – o mais alto dos spaniels de terra britânicos – de temperamento simpático, feliz e dócil, com orelhas compridas e franjadas, olhos cor de avelã escura e um pelo cerrado, liso e resistente às intempéries; as cores são fígado e branco ou preto e branco, ambas com ou sem marcas fogo, e a altura aproximada é de 51 cm. O PetPrep desenha-o fígado e branco, com a cauda natural.",
         "O Royal Kennel Club recomenda mais de 2 horas de exercício por dia e cuidados com a pelagem mais de uma vez por semana, e indica uma esperança de vida de mais de 10 anos. A PDSA diz que os springers são bons cães de família, que se dão bem com crianças e com os outros animais da casa, são obedientes e gostam de aprender, e precisam de escovagem uma ou duas vezes por semana e de tosquia a cada 3 meses. O AKC acrescenta que não devem ficar sozinhos durante longos períodos e que a socialização precoce e as aulas para cachorros são essenciais.",
       ],
       sources: ["S281", "S282", "S284", "S285", "S286"],
@@ -885,7 +885,7 @@ const pt: RegistryCopy = {
     shetland_sheepdog: {
       aka: "Sheltie, Shetland Sheepdog, Collie das Shetland (antigo nome)",
       text: [
-        "O pastor de Shetland é originário da Grã-Bretanha e é um pequeno cão de trabalho de pelo comprido. O estalão FCI descreve um cão atento, meigo, inteligente, forte e ativo, afetuoso e leal ao dono e reservado com estranhos, com a cabeça em forma de cunha comprida e romba, orelhas pequenas semieretas com as pontas caídas para a frente e uma pelagem dupla com pelo de cobertura comprido e áspero; as cores são zibelina, tricolor, azul merle, preto e branco e preto e fogo, e a altura ideal é de 37 cm nos machos e 35,5 cm nas fêmeas. O PetPrep desenha-o zibelina e branco.",
+        "O pastor de Shetland é originário da Grã-Bretanha e é um pequeno cão de trabalho de pelo comprido. O estalão FCI descreve um cão atento, meigo, inteligente, forte e ativo, afetuoso e leal ao dono e reservado com estranhos, com a cabeça em forma de cunha comprida e romba, orelhas pequenas semieretas com as pontas caídas para a frente e uma pelagem dupla com pelo de cobertura comprido e áspero; as cores são zibelina, tricolor, azul merle, preto e branco e preto e fogo, e a altura ideal é de 37 cm nos machos e 35,5 cm nas fêmeas. O PetPrep desenha-o zibelina e branco.",
         "O Royal Kennel Club recomenda até uma hora de exercício por dia e cuidados com a pelagem todos os dias, e indica uma esperança de vida de mais de 10 anos. A PDSA diz que os shelties são cães muito meigos, brincalhões e obedientes, que muitas vezes se adaptam bem à vida em família e se dão alegremente com crianças, e que o treino e a socialização são muito importantes em idade jovem. O AKC acrescenta que precisam de exercício mental e físico regular, que ficam melhor com crianças mais velhas por causa do instinto de pastoreio e que são conhecidos por serem muito vocais.",
       ],
       sources: ["S289", "S290", "S291", "S293", "S294"],
@@ -893,7 +893,7 @@ const pt: RegistryCopy = {
     brittany: {
       aka: "Epagneul breton, Bretão, Brittany Spaniel",
       text: [
-        "O épagneul bretão é um cão de parar originário de França, onde se chama Epagneul Breton. O Royal Kennel Club descreve um cão muito enérgico e inteligente que caça, para e cobra, meigo e afetuoso mas cheio de vida e entusiasmo, com pelo denso e bastante fino, orelhas triangulares inseridas no alto e uma cauda muitas vezes naturalmente curta; as cores do estalão são laranja, fígado ou preto com branco, ruão ou tricolor, e a altura é de 48–51 cm nos machos e 47–50 cm nas fêmeas. O PetPrep desenha-o laranja e branco.",
+        "O épagneul bretão é um cão de parar originário de França, onde se chama Epagneul Breton. O Royal Kennel Club descreve um cão muito enérgico e inteligente que caça, para e cobra, meigo e afetuoso mas cheio de vida e entusiasmo, com pelo denso e bastante fino, orelhas triangulares inseridas no alto e uma cauda muitas vezes naturalmente curta; as cores do estalão são laranja, fígado ou preto com branco, ruão ou tricolor, e a altura é de 48–51 cm nos machos e 47–50 cm nas fêmeas. O PetPrep desenha-o laranja e branco.",
         "O Royal Kennel Club recomenda mais de 2 horas de exercício por dia e cuidados com a pelagem mais de uma vez por semana, e indica uma esperança de vida de mais de 10 anos. O AKC diz que os bretões são cães com muita energia, que precisam de muito exercício e estímulo mental, que são meigos e costumam ser pacientes com crianças, e que uma escovagem semanal os mantém com o melhor aspeto. A PetMD acrescenta que a socialização precoce dos cachorros é obrigatória, que não lidam bem com longos períodos sozinhos e que, criados para caçar aves, têm um forte instinto de caça.",
       ],
       sources: ["S296", "S298", "S299", "S301", "S302"],
@@ -941,7 +941,7 @@ const pt: RegistryCopy = {
     maltese: {
       aka: "Maltês, Bichon Maltais, Maltese",
       text: [
-        "O bichon maltês é um cão toy da região central do Mediterrâneo, hoje sob patrocínio italiano na FCI. O estalão FCI descreve um cão pequeno, de corpo alongado, vivo, afetuoso, muito calmo e muito inteligente, com 3–4 kg, e um pelo muito comprido, denso e sedoso que cai pesadamente sobre todo o corpo. A pelagem não tem subpelo, e o branco puro é a única cor (é permitido um ligeiro tom marfim pálido). O Breed Watch do Royal Kennel Club não indica pontos de preocupação específicos da raça.",
+        "O bichon maltês é um cão toy da região central do Mediterrâneo, hoje sob patrocínio italiano na FCI. O estalão FCI descreve um cão pequeno, de corpo alongado, vivo, afetuoso, muito calmo e muito inteligente, com 3–4 kg, e um pelo muito comprido, denso e sedoso que cai pesadamente sobre todo o corpo. A pelagem não tem subpelo, e o branco puro é a única cor (é permitido um ligeiro tom marfim pálido). O Breed Watch do Royal Kennel Club não indica pontos de preocupação específicos da raça.",
         "O Royal Kennel Club recomenda até 30 minutos de exercício por dia e cuidados com a pelagem todos os dias, diz que a raça não perde pelo e indica uma esperança de vida de mais de 12 anos. A PDSA descreve um cão esperto, simpático e afetuoso, que pode ser reservado com estranhos mas que, com a socialização certa em jovem, aprende a ser confiante e sociável. A PetMD avisa que pode desenvolver ansiedade de separação quando fica sozinho demasiado tempo, diz que a interação com crianças pequenas deve ser vigiada e aconselha a escovar-lhe os dentes todos os dias.",
       ],
       sources: ["S346", "S347", "S348", "S351"],
@@ -949,7 +949,7 @@ const pt: RegistryCopy = {
     pug: {
       aka: "Carlino, Mops, Carlin",
       text: [
-        "O pug é um pequeno cão de companhia originário da China, hoje sob patrocínio britânico na FCI. O estalão FCI descreve um cão claramente quadrado e atarracado – «multum in parvo» – com muito encanto, dignidade e inteligência e um temperamento equilibrado, alegre e vivo, um peso ideal de 6,3–8,1 kg, um pelo fino, liso, curto e brilhante, prateado, damasco, fulvo ou preto, e uma cauda bem enrolada sobre a anca. Pede narinas bastante grandes e bem abertas e considera inaceitáveis narinas apertadas e uma prega pesada por cima do nariz. O Royal Kennel Club coloca a raça na categoria 3 do Breed Watch, com pontos de preocupação que incluem dificuldade respiratória, olhos salientes, dermatite das pregas cutâneas e excesso de peso.",
+        "O pug é um pequeno cão de companhia originário da China, hoje sob patrocínio britânico na FCI. O estalão FCI descreve um cão claramente quadrado e atarracado – «multum in parvo» – com muito encanto, dignidade e inteligência e um temperamento equilibrado, alegre e vivo, um peso ideal de 6,3–8,1 kg, um pelo fino, liso, curto e brilhante, prateado, damasco, fulvo ou preto, e uma cauda bem enrolada sobre a anca. Pede narinas bastante grandes e bem abertas e considera inaceitáveis narinas apertadas e uma prega pesada por cima do nariz. O Royal Kennel Club coloca a raça na categoria 3 do Breed Watch, com pontos de preocupação que incluem dificuldade respiratória, olhos salientes, dermatite das pregas cutâneas e excesso de peso.",
         "A PDSA considera o pug uma raça muito braquicéfala (de focinho achatado), que pode ficar facilmente sem fôlego, aconselha a evitar o exercício com calor e diz que os seus veterinários recomendariam vivamente, em vez dele, uma raça com focinho normal ou um cruzamento de pug. O Royal Kennel Club recomenda até 1 hora de exercício por dia e cuidados com a pelagem uma vez por semana, diz que a raça perde pelo e indica uma esperança de vida de mais de 10 anos. A PDSA descreve um cão que muitas vezes se dá bem com crianças e outros animais, mas que adora companhia e não lida bem com a solidão; a PetMD aconselha a limpar e secar as pregas da pele do focinho todos os dias e refere que a obesidade é comum na raça.",
       ],
       sources: ["S354", "S355", "S356", "S357", "S359"],
@@ -957,7 +957,7 @@ const pt: RegistryCopy = {
     rough_collie: {
       aka: "Collie, Rough Collie",
       text: [
-        "O collie de pelo comprido é um grande cão de pastor originário da Grã-Bretanha. O estalão FCI descreve um cão de grande beleza, de dignidade impassível, de temperamento simpático e sem qualquer traço de nervosismo ou agressividade, com uma pelagem muito densa de pelo de cobertura liso e áspero, e três cores: zibelina, tricolor e azul merle. O estalão do Royal Kennel Club considera-o um ótimo cão de companhia, simpático, alegre e ativo, bom com crianças e com outros cães, e indica uma altura de 56–61 cm nos machos e 51–56 cm nas fêmeas. O Royal Kennel Club coloca a raça na categoria 2 do Breed Watch e não regista cachorros de cruzamentos merle com merle.",
+        "O collie de pelo comprido é um grande cão de pastor originário da Grã-Bretanha. O estalão FCI descreve um cão de grande beleza, de dignidade impassível, de temperamento simpático e sem qualquer traço de nervosismo ou agressividade, com uma pelagem muito densa de pelo de cobertura liso e áspero, e três cores: zibelina, tricolor e azul merle. O estalão do Royal Kennel Club considera-o um ótimo cão de companhia, simpático, alegre e ativo, bom com crianças e com outros cães, e indica uma altura de 56–61 cm nos machos e 51–56 cm nas fêmeas. O Royal Kennel Club coloca a raça na categoria 2 do Breed Watch e não regista cachorros de cruzamentos merle com merle.",
         "O Royal Kennel Club recomenda até 1 hora de exercício por dia e cuidados com a pelagem todos os dias, diz que a raça perde pelo e indica uma esperança de vida de mais de 12 anos. A PetMD diz que os collies são afetuosos, sobretudo com crianças, e bons com outros animais, mas que não lidam bem com longos períodos sozinhos e podem mordiscar tornozelos e calcanhares quando estão excitados. Refere também que a socialização do cachorro é crucial e que nos collies ocorre a mutação MDR1, que afeta a forma como um cão processa certos medicamentos.",
       ],
       sources: ["S364", "S365", "S366", "S368"],
@@ -965,7 +965,7 @@ const pt: RegistryCopy = {
     mastiff: {
       aka: "Mastim inglês, English Mastiff, Old English Mastiff",
       text: [
-        "O mastiff é uma raça de guarda muito grande originária da Grã-Bretanha. O estalão FCI descreve uma combinação de grandeza e coragem – calmo, afetuoso com os donos mas capaz de guardar – com uma cabeça de aspeto quadrado, um corpo largo, profundo e poderoso e um pelo curto e bem assente, damasco, fulvo ou tigrado. A PDSA indica uma altura média de 71–78 cm e um peso médio de 80–85 kg e refere que o Kennel Club classifica o mastiff na categoria três: raças com problemas de conformação visíveis que podem causar dor, desconforto ou problemas de saúde.",
+        "O mastiff é uma raça de guarda muito grande originária da Grã-Bretanha. O estalão FCI descreve uma combinação de grandeza e coragem – calmo, afetuoso com os donos mas capaz de guardar – com uma cabeça de aspeto quadrado, um corpo largo, profundo e poderoso e um pelo curto e bem assente, damasco, fulvo ou tigrado. A PDSA indica uma altura média de 71–78 cm e um peso médio de 80–85 kg e refere que o Kennel Club classifica o mastiff na categoria três: raças com problemas de conformação visíveis que podem causar dor, desconforto ou problemas de saúde.",
         "A PDSA recomenda cerca de uma hora de exercício por dia para cães adultos – mas sem exercício excessivo enquanto os ossos e as articulações do cachorro ainda se estão a desenvolver – cuidados com a pelagem uma vez por semana com limpeza diária das rugas do focinho, e indica uma esperança de vida média de menos de 10 anos. A PetMD considera os mastiffs ótimos cães de família para casas com crianças que sabem interagir com animais, embora talvez não com crianças muito pequenas ou bebés, por causa do tamanho; costumam dar-se bem com outros animais apresentados quando são cachorros, babam-se muito e não devem fazer exercício durante uma hora antes e depois das refeições, por causa do risco de dilatação-torção gástrica.",
       ],
       sources: ["S370", "S371", "S374"],
@@ -973,7 +973,7 @@ const pt: RegistryCopy = {
     shiba_inu: {
       aka: "Shiba, Shiba japonês",
       text: [
-        "O shiba inu é um pequeno spitz originário do Japão; o nome significa «cão pequeno» e, segundo o Royal Kennel Club, foi desenvolvido para caçar pequenas aves de caça. O estalão FCI descreve um cão pequeno, bem equilibrado e de boa ossatura, de temperamento fiel, sentidos apurados e muito atento, com pelo de cobertura áspero sobre um subpelo macio e denso, orelhas pequenas, triangulares e erguidas e uma cauda grossa e enrolada; as cores são vermelho, preto e fogo e sésamo, sempre com marcas esbranquiçadas «urajiro» nas bochechas, no peito e na parte de baixo do corpo. O estalão do AKC indica um peso médio de cerca de 23 libras (10 kg) nos machos e 17 libras (8 kg) nas fêmeas.",
+        "O shiba inu é um pequeno spitz originário do Japão; o nome significa «cão pequeno» e, segundo o Royal Kennel Club, foi desenvolvido para caçar pequenas aves de caça. O estalão FCI descreve um cão pequeno, bem equilibrado e de boa ossatura, de temperamento fiel, sentidos apurados e muito atento, com pelo de cobertura áspero sobre um subpelo macio e denso, orelhas pequenas, triangulares e erguidas e uma cauda grossa e enrolada; as cores são vermelho, preto e fogo e sésamo, sempre com marcas esbranquiçadas «urajiro» nas bochechas, no peito e na parte de baixo do corpo. O estalão do AKC indica um peso médio de cerca de 23 libras (10 kg) nos machos e 17 libras (8 kg) nas fêmeas.",
         "O Royal Kennel Club recomenda até uma hora de exercício por dia e cuidados com a pelagem uma vez por semana, refere que a raça perde pelo e indica uma esperança de vida de mais de 10 anos; um grande estudo britânico encontrou uma esperança de vida mediana de 14,6 anos. O AKC descreve um cão confiante e independente, que é uma escolha melhor para um dono experiente, que fica mais feliz com crianças mais velhas e que nunca deve andar sem trela fora de uma zona vedada ou fechada. A PetMD acrescenta que precisa de muito estímulo mental, que beneficia da socialização em cachorro e que deve ter os dentes escovados todos os dias.",
       ],
       sources: ["S376", "S377", "S378", "S380", "S381", "S383"],
@@ -981,7 +981,7 @@ const pt: RegistryCopy = {
     rhodesian_ridgeback: {
       aka: "Ridgeback, cão-leão africano",
       text: [
-        "O Rhodesian ridgeback é originário da África Austral. A sua característica mais conhecida é a crista no dorso, uma faixa de pelo que cresce no sentido contrário ao resto da pelagem. O estalão FCI descreve um cão bem equilibrado, forte, musculado, ágil e ativo, digno, inteligente e distante com estranhos, especialmente apreciado como cão de guarda e animal de família. O pelo curto e denso vai do trigo claro ao trigo avermelhado, e o estalão indica um peso de cerca de 36,5 kg nos machos e 32 kg nas fêmeas.",
+        "O Rhodesian ridgeback é originário da África Austral. A sua característica mais conhecida é a crista no dorso, uma faixa de pelo que cresce no sentido contrário ao resto da pelagem. O estalão FCI descreve um cão bem equilibrado, forte, musculado, ágil e ativo, digno, inteligente e distante com estranhos, especialmente apreciado como cão de guarda e de família. O pelo curto e denso vai do trigo claro ao trigo avermelhado, e o estalão indica um peso de cerca de 36,5 kg nos machos e 32 kg nas fêmeas.",
         "O Royal Kennel Club recomenda mais de duas horas de exercício por dia e cuidados com a pelagem uma vez por semana, refere que a raça perde pelo e se adapta a uma casa grande com um jardim grande, e indica uma esperança de vida de mais de 10 anos. A PDSA descreve cães brincalhões, poderosos e muito leais, com um instinto de caça muito forte, que não são recomendados para quem tem cão pela primeira vez, que nunca devem ficar sozinhos mais de quatro horas e que precisam de socialização desde cedo; aconselha também um intervalo entre a refeição e o exercício. A Woodgreen acrescenta que ficam melhor com crianças mais velhas.",
       ],
       sources: ["S385", "S387", "S390", "S392"],
@@ -989,7 +989,7 @@ const pt: RegistryCopy = {
     papillon: {
       aka: "Epagneul anão continental, Phalène (variedade de orelhas caídas), cão-borboleta",
       text: [
-        "O papillon é a variedade de orelhas erguidas do epagneul anão continental, uma raça originária da Bélgica e de França; a variedade de orelhas caídas chama-se phalène. O estalão FCI descreve um pequeno spaniel toy elegante, de pelo comprido e personalidade viva, com cerca de 28 cm de altura e um peso de até 4,5 kg nos machos e 5 kg nas fêmeas. As orelhas grandes lembram as asas abertas de uma borboleta, e a pelagem é sempre branca com manchas de cor.",
+        "O papillon é a variedade de orelhas erguidas do epagneul anão continental, uma raça originária da Bélgica e de França; a variedade de orelhas caídas chama-se phalène. O estalão FCI descreve um pequeno spaniel toy elegante, de pelo comprido e personalidade viva, com cerca de 28 cm de altura e um peso de até 4,5 kg nos machos e 5 kg nas fêmeas. As orelhas grandes lembram as asas abertas de uma borboleta, e a pelagem é sempre branca com manchas de cor.",
         "O Royal Kennel Club recomenda até 30 minutos de exercício por dia e cuidados com a pelagem mais de uma vez por semana, refere que a raça perde pelo e pode viver num apartamento, e indica uma esperança de vida de mais de 12 anos. A PDSA descreve cães meigos, brincalhões e muito obedientes, que se dão bem com toda a gente e precisam de treino e socialização desde cedo; sugere cuidados com a pelagem duas a três vezes por semana. A PetMD acrescenta que os papillons precisam de estímulo mental diário, podem desenvolver ansiedade de separação e devem ter os dentes escovados todos os dias, e que crianças muito pequenas podem magoar sem querer um cão tão pequeno.",
       ],
       sources: ["S396", "S397", "S398", "S400"],
@@ -997,15 +997,15 @@ const pt: RegistryCopy = {
     portuguese_water_dog: {
       aka: "Cão d’água, Cão de água algarvio, Portuguese Water Dog, Portie",
       text: [
-        "O cão de água português é originário de Portugal, onde trabalhava com os pescadores. O estalão do Royal Kennel Club descreve um cão robusto, quase quadrado e muito musculado – muito inteligente e com uma energia enorme, com grandes capacidades de natação e mergulho – com 50–57 cm (machos) e 43–52 cm (fêmeas) de altura e 19–25 kg (machos) e 16–22 kg (fêmeas) de peso. A pelagem abundante, sem subpelo, é preta, branca, castanha, ou preta ou castanha com branco; a tradicional tosquia «à leão» deixa curtos o focinho e os quartos traseiros.",
-        "O Royal Kennel Club recomenda até uma hora de exercício por dia e cuidados com a pelagem todos os dias, refere que a raça não perde pelo e se adapta a uma casa grande, e indica uma esperança de vida de mais de 10 anos. A PDSA descreve cães muito simpáticos e carinhosos, que se dão bem com outros animais, são excelentes animais de família e precisam de treino e socialização desde cedo; acrescenta tosquia e modelação por um tosquiador profissional ao longo do ano.",
+        "O cão de água português é originário de Portugal, onde trabalhava com os pescadores. O estalão do Royal Kennel Club descreve um cão robusto, quase quadrado e muito musculado – muito inteligente e com uma energia enorme, com grandes capacidades de natação e mergulho – com 50–57 cm (machos) e 43–52 cm (fêmeas) de altura e 19–25 kg (machos) e 16–22 kg (fêmeas) de peso. A pelagem abundante, sem subpelo, é preta, branca, castanha, ou preta ou castanha com branco; a tradicional tosquia «à leão» deixa curtos o focinho e os quartos traseiros.",
+        "O Royal Kennel Club recomenda até uma hora de exercício por dia e cuidados com a pelagem todos os dias, refere que a raça não perde pelo e se adapta a uma casa grande, e indica uma esperança de vida de mais de 10 anos. A PDSA descreve cães muito simpáticos e carinhosos, que se dão bem com outros animais, são excelentes cães de família e precisam de treino e socialização desde cedo; acrescenta tosquia e modelação por um tosquiador profissional ao longo do ano.",
       ],
       sources: ["S403", "S404", "S405"],
     },
     bichon_frise: {
       aka: "Bichon à poil frisé, Bichon, Bichon Tenerife",
       text: [
-        "O bichon frisé é um cão de companhia franco-belga. O estalão FCI descreve um cãozinho alegre, de andar vivo, com um pelo branco muito solto e encaracolado em saca-rolhas – um verdadeiro companheiro que pode ir a todo o lado, nem nervoso nem dado a ladrar muito – com 25–29 cm ao garrote e cerca de 5 kg. Um adulto é sempre branco puro, com olhos redondos muito escuros, nariz preto, orelhas caídas e uma cauda com franja levantada sobre o dorso.",
+        "O bichon frisé é um cão de companhia franco-belga. O estalão FCI descreve um cãozinho alegre, de andar vivo, com um pelo branco muito solto e encaracolado em saca-rolhas – um verdadeiro companheiro que pode ir a todo o lado, nem nervoso nem dado a ladrar muito – com 25–29 cm ao garrote e cerca de 5 kg. Um adulto é sempre branco puro, com olhos redondos muito escuros, nariz preto, orelhas caídas e uma cauda com franja levantada sobre o dorso.",
         "O Royal Kennel Club recomenda até 30 minutos de exercício por dia e cuidados com a pelagem todos os dias, refere que a raça não perde pelo e se adapta a um apartamento, e indica uma esperança de vida de mais de 12 anos. A PDSA descreve cães muito afetuosos e carinhosos, excelentes com crianças e com outros animais, e acrescenta que a pelagem precisa de ser aparada de dois em dois meses, muitas vezes por um tosquiador profissional.",
       ],
       sources: ["S410", "S411", "S413"],
@@ -1013,23 +1013,23 @@ const pt: RegistryCopy = {
     newfoundland: {
       aka: "Newfoundland, Newfie",
       text: [
-        "O terra-nova é originário do Canadá; a FCI classifica-o entre os molossoides do tipo montanha e reconhece três cores: preto, branco e preto (Landseer) e castanho. A PDSA chama aos terra-novas gigantes meigos e indica uma altura média de 66–71 cm e um peso médio de 50–69 kg; a PetMD acrescenta que a história da raça faz deles nadadores naturais.",
-        "A PDSA recomenda pelo menos uma hora de exercício por dia para adultos, mas sem exercício excessivo nos cachorros enquanto os ossos e as articulações ainda se estão a desenvolver; considera os cuidados com a pelagem uma tarefa diária, refere que os terra-novas costumam babar-se e indica uma esperança de vida de menos de 10 anos. A PetMD considera a raça um animal de família excelente, que se dá bem com crianças, animais pequenos e outros cães, aconselha a vigiar as crianças pequenas com qualquer cão e avisa que alguns podem desenvolver ansiedade de separação quando ficam sozinhos.",
+        "O terra-nova é originário do Canadá; a FCI classifica-o entre os molossoides do tipo montanha e reconhece três cores: preto, branco e preto (Landseer) e castanho. A PDSA chama aos terra-novas gigantes meigos e indica uma altura média de 66–71 cm e um peso médio de 50–69 kg; a PetMD acrescenta que a história da raça faz deles nadadores naturais.",
+        "A PDSA recomenda pelo menos uma hora de exercício por dia para adultos, mas sem exercício excessivo nos cachorros enquanto os ossos e as articulações ainda se estão a desenvolver; considera os cuidados com a pelagem uma tarefa diária, refere que os terra-novas costumam babar-se e indica uma esperança de vida de menos de 10 anos. A PetMD considera a raça um cão de família excelente, que se dá bem com crianças, animais pequenos e outros cães, aconselha a vigiar as crianças pequenas com qualquer cão e avisa que alguns podem desenvolver ansiedade de separação quando ficam sozinhos.",
       ],
       sources: ["S419", "S423", "S424"],
     },
     dalmatian: {
       aka: "Cão de carruagem, Dalmatian",
       text: [
-        "O dálmata é originário da Croácia; a FCI classifica-o entre as raças aparentadas com os sabujos. O pelo curto e brilhante é branco puro com manchas pretas ou fígado (castanhas) bem definidas, e o estalão pede orelhas manchadas. A FCI indica uma altura de 56–62 cm nos machos e 54–60 cm nas fêmeas; a PDSA indica um peso médio de 18–27 kg.",
-        "O Royal Kennel Club recomenda mais de duas horas de exercício por dia e escovagem uma vez por semana, e diz que a raça perde pelo e se adapta a uma casa e um jardim grandes. A PDSA considera os dálmatas ótimos animais para famílias ativas, mais adequados a crianças mais velhas, que precisam de companhia e nunca devem ficar sozinhos mais de quatro horas; aponta a surdez entre os problemas de saúde da raça e refere que existe um teste de audição BAER.",
+        "O dálmata é originário da Croácia; a FCI classifica-o entre as raças aparentadas com os sabujos. O pelo curto e brilhante é branco puro com manchas pretas ou fígado (castanhas) bem definidas, e o estalão pede orelhas manchadas. A FCI indica uma altura de 56–62 cm nos machos e 54–60 cm nas fêmeas; a PDSA indica um peso médio de 18–27 kg.",
+        "O Royal Kennel Club recomenda mais de duas horas de exercício por dia e escovagem uma vez por semana, e diz que a raça perde pelo e se adapta a uma casa e um jardim grandes. A PDSA considera os dálmatas ótimos cães para famílias ativas, mais adequados a crianças mais velhas, que precisam de companhia e nunca devem ficar sozinhos mais de quatro horas; aponta a surdez entre os problemas de saúde da raça e refere que existe um teste de audição BAER.",
       ],
       sources: ["S428", "S429", "S430"],
     },
     australian_cattle_dog: {
       aka: "Australian Cattle Dog, Blue Heeler, Red Heeler, Queensland Heeler",
       text: [
-        "O boieiro australiano é originário da Austrália; a FCI classifica-o entre os boieiros. O estalão do Kennel Club descreve um cão de trabalho forte e compacto, com uma pelagem dupla lisa e resistente às intempéries, azul (mosqueado ou salpicado) ou vermelho salpicado uniforme, e indica uma altura de 46–51 cm nos machos e 43–48 cm nas fêmeas; a PDSA indica um peso médio de 16–20 kg.",
+        "O boieiro australiano é originário da Austrália; a FCI classifica-o entre os boieiros. O estalão do Kennel Club descreve um cão de trabalho forte e compacto, com uma pelagem dupla lisa e resistente às intempéries, azul (mosqueado ou salpicado) ou vermelho salpicado uniforme, e indica uma altura de 46–51 cm nos machos e 43–48 cm nas fêmeas; a PDSA indica um peso médio de 16–20 kg.",
         "O Royal Kennel Club recomenda mais de duas horas de exercício por dia e escovagem uma vez por semana, e diz que a raça perde pelo. A PDSA descreve um cão muito inteligente e com muita energia, que precisa de muita atividade física e mental; por causa do forte instinto de pastoreio pode mordiscar os calcanhares das crianças que correm, e a socialização e o treino desde cedo ajudam.",
       ],
       sources: ["S436", "S437", "S438"],
@@ -1037,7 +1037,7 @@ const pt: RegistryCopy = {
     whippet: {
       aka: "Snap dog",
       text: [
-        "O whippet é originário da Grã-Bretanha; a FCI classifica-o entre os lebréus de pelo curto. O estalão do Kennel Club descreve uma combinação equilibrada de força e potência muscular com elegância e graça de linhas, um pelo fino, curto e cerrado de qualquer cor ou mistura de cores exceto merle, e um temperamento meigo, afetuoso e equilibrado; indica uma altura de 47–51 cm nos machos e 44–47 cm nas fêmeas, e a PDSA indica um peso médio de 11–18 kg.",
+        "O whippet é originário da Grã-Bretanha; a FCI classifica-o entre os lebréus de pelo curto. O estalão do Kennel Club descreve uma combinação equilibrada de força e potência muscular com elegância e graça de linhas, um pelo fino, curto e cerrado de qualquer cor ou mistura de cores exceto merle, e um temperamento meigo, afetuoso e equilibrado; indica uma altura de 47–51 cm nos machos e 44–47 cm nas fêmeas, e a PDSA indica um peso médio de 11–18 kg.",
         "A PDSA recomenda pelo menos uma hora de exercício todos os dias, com oportunidades para correr sem trela numa zona segura, e uma escovagem semanal com uma escova macia. Diz que os whippets são uma escolha popular para famílias, porque são calmos e meigos com crianças, mas recomenda uma casa com crianças um pouco mais velhas; os whippets não gostam de ficar sozinhos e têm um instinto de caça mesmo muito forte, por isso a PDSA não recomenda tê-los com animais mais pequenos. Um casaco pode ajudar no inverno, e uma cama grossa e macia protege os ossos salientes.",
       ],
       sources: ["S442", "S443", "S444"],
@@ -1045,7 +1045,7 @@ const pt: RegistryCopy = {
     wirehaired_pointing_griffon: {
       aka: "Griffon Korthals, Korthals, Griff",
       text: [
-        "O griffon de aponte de pelo duro Korthals, também chamado griffon Korthals, é originário de França; a FCI classifica-o entre os cães de parar continentais e descreve-o essencialmente como um cão de parar versátil. O estalão FCI descreve um cão vigoroso e rústico, mais comprido do que alto, com pelo duro e áspero, nunca encaracolado nem lanoso, nariz sempre castanho e, de preferência, uma pelagem cinzento-aço com manchas castanhas (fígado); indica uma altura de cerca de 55–60 cm nos machos e 50–55 cm nas fêmeas e descreve a raça como meiga, orgulhosa e muito meiga com crianças. A PetMD indica um peso de 35–70 libras (cerca de 16–32 kg).",
+        "O griffon de aponte de pelo duro Korthals, também chamado griffon Korthals, é originário de França; a FCI classifica-o entre os cães de parar continentais e descreve-o essencialmente como um cão de parar versátil. O estalão FCI descreve um cão vigoroso e rústico, mais comprido do que alto, com pelo duro e áspero, nunca encaracolado nem lanoso, nariz sempre castanho e, de preferência, uma pelagem cinzento-aço com manchas castanhas (fígado); indica uma altura de cerca de 55–60 cm nos machos e 50–55 cm nas fêmeas e descreve a raça como meiga, orgulhosa e muito meiga com crianças. A PetMD indica um peso de 35–70 libras (cerca de 16–32 kg).",
         "O Royal Kennel Club recomenda mais de duas horas de exercício por dia, uma casa grande e um jardim grande, e cuidados com a pelagem mais de uma vez por semana. A PetMD aconselha uma escovagem semanal (alguns cães precisam também de trimming à mão), diz que os griffons costumam ser pacientes e meigos com crianças quando socializados em cachorros, e refere que o seu passado de caça lhes pode dar um forte instinto de caça, por isso animais mais pequenos, como gatos e coelhos, podem parecer algo para perseguir.",
       ],
       sources: ["S449", "S450", "S453"],
@@ -1053,7 +1053,7 @@ const pt: RegistryCopy = {
     chesapeake_bay_retriever: {
       aka: "Chessie",
       text: [
-        "O Chesapeake Bay retriever, muitas vezes chamado chessie, é originário dos Estados Unidos; a FCI classifica-o entre os retrievers. O estalão FCI descreve um retriever de trabalho igualmente competente em terra e na água, cujo tamanho e substância não devem ser excessivos, com um pelo grosso e curto sobre um subpelo denso e lanoso e olhos claros amarelados ou âmbar; é aceite qualquer tom de castanho, junça ou erva seca, e uma pelagem preta é desqualificante. Indica uma altura de 58–66 cm e um peso de 29,5–36,5 kg nos machos, e 53–61 cm e 25–32 kg nas fêmeas.",
+        "O Chesapeake Bay retriever, muitas vezes chamado chessie, é originário dos Estados Unidos; a FCI classifica-o entre os retrievers. O estalão FCI descreve um retriever de trabalho igualmente competente em terra e na água, cujo tamanho e substância não devem ser excessivos, com um pelo grosso e curto sobre um subpelo denso e lanoso e olhos claros amarelados ou âmbar; é aceite qualquer tom de castanho, junça ou erva seca, e uma pelagem preta é desqualificante. Indica uma altura de 58–66 cm e um peso de 29,5–36,5 kg nos machos, e 53–61 cm e 25–32 kg nas fêmeas.",
         "O Royal Kennel Club recomenda mais de duas horas de exercício por dia, uma casa grande e um jardim grande, e cuidados com a pelagem uma vez por semana. A PetMD descreve um cão esperto, alegre e extremamente afetuoso, que pode tornar-se destrutivo se não for estimulado ou ficar sozinho demasiado tempo, diz que, com as apresentações e a socialização certas, os chessies são um ótimo acréscimo a uma família, e aconselha a não deixar o cão fazer exercício imediatamente antes ou depois de comer.",
       ],
       sources: ["S458", "S459", "S461"],
@@ -1061,7 +1061,7 @@ const pt: RegistryCopy = {
     samoyed: {
       aka: "Samoyed, Sammy",
       text: [
-        "O samoiedo é originário do norte da Rússia e da Sibéria; a FCI classifica-o entre os cães nórdicos de trenó. O estalão FCI descreve um spitz ártico branco e elegante de tamanho médio, com uma pelagem polar abundante, grossa e densa, olhos castanho-escuros, orelhas pequenas, grossas e erguidas e lábios ligeiramente virados para cima nos cantos, no característico «sorriso do samoiedo»; a pelagem é branco puro, creme ou branco e biscoito, e olhos azuis ou de cores diferentes são desqualificantes. Indica uma altura ideal de 57 cm nos machos e 53 cm nas fêmeas, cada uma com uma tolerância de 3 cm.",
+        "O samoiedo é originário do norte da Rússia e da Sibéria; a FCI classifica-o entre os cães nórdicos de trenó. O estalão FCI descreve um spitz ártico branco e elegante de tamanho médio, com uma pelagem polar abundante, grossa e densa, olhos castanho-escuros, orelhas pequenas, grossas e erguidas e lábios ligeiramente virados para cima nos cantos, no característico «sorriso do samoiedo»; a pelagem é branco puro, creme ou branco e biscoito, e olhos azuis ou de cores diferentes são desqualificantes. Indica uma altura ideal de 57 cm nos machos e 53 cm nas fêmeas, cada uma com uma tolerância de 3 cm.",
         "A PDSA recomenda um mínimo de duas horas de exercício todos os dias e cuidados com a pelagem diários, diz que os samoiedos perdem pelo com muita frequência, costumam ser ótimos com crianças e leais a toda a família, nunca devem ficar sozinhos mais de quatro horas, precisam de um jardim muito seguro por serem exímios fugitivos e têm um forte instinto de caça, e aconselha a deixar um intervalo depois de comer e antes do exercício. A PetMD acrescenta que os samoiedos não lidam bem com temperaturas altas.",
       ],
       sources: ["S464", "S467", "S469"],
@@ -1069,7 +1069,7 @@ const pt: RegistryCopy = {
     scottish_terrier: {
       aka: "Scottie, Terrier escocês, Aberdeen Terrier",
       text: [
-        "O Scottish terrier, muitas vezes chamado scottie, é originário da Grã-Bretanha; a FCI classifica-o entre os terriers de pequeno porte. O estalão do Kennel Club descreve um cão atarracado e de patas curtas, de porte atento, que sugere grande força e atividade num tamanho pequeno, leal e fiel, digno, independente e reservado, mas corajoso e muito inteligente – ousado, mas nunca agressivo. A pelagem dupla, bem assente, tem um pelo de cobertura áspero e duro; a cor é preto, trigo ou tigrado de qualquer tom. Indica uma altura de 25–28 cm e um peso de 8,5–10,5 kg.",
+        "O Scottish terrier, muitas vezes chamado scottie, é originário da Grã-Bretanha; a FCI classifica-o entre os terriers de pequeno porte. O estalão do Kennel Club descreve um cão atarracado e de patas curtas, de porte atento, que sugere grande força e atividade num tamanho pequeno, leal e fiel, digno, independente e reservado, mas corajoso e muito inteligente – ousado, mas nunca agressivo. A pelagem dupla, bem assente, tem um pelo de cobertura áspero e duro; a cor é preto, trigo ou tigrado de qualquer tom. Indica uma altura de 25–28 cm e um peso de 8,5–10,5 kg.",
         "A PDSA diz que os scotties precisam de cerca de uma hora de exercício diário e de cuidados com a pelagem diários, com trimming e tosquia por um tosquiador profissional a cada dois a três meses, descreve-os como leais e dedicados à família e diz que podem ser teimosos, por isso o treino exige paciência e empenho. A PetMD diz que, com o treino e a socialização certos, podem ser bons cães de família, que socializar o cachorro é importante e que não devem ficar sozinhos durante longos períodos.",
       ],
       sources: ["S473", "S474", "S475"],
@@ -1077,15 +1077,15 @@ const pt: RegistryCopy = {
     weimaraner: {
       aka: "Weimaraner, Weim",
       text: [
-        "O braco de Weimar é originário da Alemanha; a FCI classifica-o entre os cães de parar continentais e reconhece uma variedade de pelo curto e outra de pelo comprido. O estalão FCI descreve um cão de caça de tamanho médio a grande, de tipo funcional de trabalho, nervudo e muito musculado, com olhos cor de âmbar e orelhas largas e bastante compridas; a pelagem é cinzento-prateado, cinzento-corço ou cinzento-rato, só são admitidas pequenas marcas brancas no peito e nos dedos, e qualquer cor que não seja cinzento é desqualificante. Indica uma altura de 59–70 cm e um peso de cerca de 30–40 kg nos machos, e 57–65 cm e cerca de 25–35 kg nas fêmeas.",
-        "O Royal Kennel Club recomenda mais de duas horas de exercício por dia, uma casa grande e um jardim grande, e cuidados com a pelagem uma vez por semana. A PDSA diz que os bracos de Weimar são maravilhosos animais de família nas mãos certas e ficam melhor com donos que conhecem a raça, mas não os recomenda para casas com crianças mais pequenas ou animais mais pequenos, por causa do instinto de caça muito forte, diz que podem desenvolver ansiedade de separação se ficarem sozinhos e aconselha a socializá-los desde cedo e a deixar um intervalo entre a refeição e o exercício. A PetMD acrescenta limpeza mensal das orelhas e um banho mensal.",
+        "O braco de Weimar é originário da Alemanha; a FCI classifica-o entre os cães de parar continentais e reconhece uma variedade de pelo curto e outra de pelo comprido. O estalão FCI descreve um cão de caça de tamanho médio a grande, de tipo funcional de trabalho, nervudo e muito musculado, com olhos cor de âmbar e orelhas largas e bastante compridas; a pelagem é cinzento-prateado, cinzento-corço ou cinzento-rato, só são admitidas pequenas marcas brancas no peito e nos dedos, e qualquer cor que não seja cinzento é desqualificante. Indica uma altura de 59–70 cm e um peso de cerca de 30–40 kg nos machos, e 57–65 cm e cerca de 25–35 kg nas fêmeas.",
+        "O Royal Kennel Club recomenda mais de duas horas de exercício por dia, uma casa grande e um jardim grande, e cuidados com a pelagem uma vez por semana. A PDSA diz que os bracos de Weimar são maravilhosos cães de família nas mãos certas e ficam melhor com donos que conhecem a raça, mas não os recomenda para casas com crianças mais pequenas ou animais mais pequenos, por causa do instinto de caça muito forte, diz que podem desenvolver ansiedade de separação se ficarem sozinhos e aconselha a socializá-los desde cedo e a deixar um intervalo entre a refeição e o exercício. A PetMD acrescenta limpeza mensal das orelhas e um banho mensal.",
       ],
       sources: ["S478", "S479", "S480", "S481"],
     },
     italian_greyhound: {
       aka: "Galgo italiano, Piccolo Levriero Italiano, Italian Greyhound, Iggy",
       text: [
-        "O pequeno lebréu italiano é originário de Itália; a FCI classifica-o, como Piccolo Levriero Italiano, entre os lebréus de pelo curto. O estalão do Kennel Club descreve um greyhound em miniatura, mais esguio em todas as proporções, elegante, gracioso e de movimentos rápidos, inteligente, afetuoso e vivo, embora possa parecer distante, com um pelo curto, fino e brilhante sobre uma pele fina. Indica uma altura de 32–38 cm e um peso de 3,6–4,5 kg; são aceites preto, azul, creme, fulvo, vermelho e branco, ou qualquer destas cores com branco – nunca merle, tigrado ou marcas fogo.",
+        "O pequeno lebréu italiano é originário de Itália; a FCI classifica-o, como Piccolo Levriero Italiano, entre os lebréus de pelo curto. O estalão do Kennel Club descreve um greyhound em miniatura, mais esguio em todas as proporções, elegante, gracioso e de movimentos rápidos, inteligente, afetuoso e vivo, embora possa parecer distante, com um pelo curto, fino e brilhante sobre uma pele fina. Indica uma altura de 32–38 cm e um peso de 3,6–4,5 kg; são aceites preto, azul, creme, fulvo, vermelho e branco, ou qualquer destas cores com branco – nunca merle, tigrado ou marcas fogo.",
         "O Royal Kennel Club recomenda até uma hora de exercício por dia, diz que a raça se adapta a uma casa pequena e tanto à cidade como ao campo, precisa de cuidados com a pelagem uma vez por semana e não perde pelo. A PDSA diz que os pequenos lebréus italianos são cheios de energia, devem fazer exercício numa zona fechada, porque pode ser difícil chamá-los depois de verem uma presa, podem ser tímidos, por isso a socialização precoce é essencial, e – porque os ossos são frágeis enquanto crescem – podem não ser a raça ideal para casas com crianças pequenas ou outros animais. A PetMD acrescenta que o pelo fino não os aquece, por isso sentem facilmente o frio.",
       ],
       sources: ["S485", "S486", "S487", "S488"],
@@ -1093,15 +1093,15 @@ const pt: RegistryCopy = {
     giant_schnauzer: {
       aka: "Riesenschnauzer, Schnauzer de Munique",
       text: [
-        "O schnauzer gigante é originário da Alemanha; a FCI classifica-o, como Riesenschnauzer, entre os cães do tipo pinscher e schnauzer. O estalão do Royal Kennel Club descreve um cão de constituição poderosa, robusto e nervudo, de aspeto quase quadrado, ousado, fiável, de bom temperamento e sereno, com um pelo de cobertura áspero e duro e um bom subpelo. Indica uma altura de 65–70 cm nos machos e 60–65 cm nas fêmeas; o estalão FCI indica um peso de 35–47 kg. São aceites preto puro, sal e pimenta com máscara escura e preto e prateado – nenhuma outra cor.",
-        "O Royal Kennel Club recomenda mais de duas horas de exercício por dia, diz que a raça se adapta a uma casa grande com um jardim grande, precisa de cuidados com a pelagem todos os dias e não perde pelo. A PDSA diz que a pelagem precisa de cuidados diários e de ser aparada regularmente, que os schnauzers gigantes podem ser animais adoráveis para famílias com crianças mais velhas se forem bem socializados em cachorros, e que estes cães de personalidade forte são adequados a donos experientes. A PetMD acrescenta que a pelagem é tratada com trimming à mão por um profissional de poucos em poucos meses e que a raça não se dá bem em casas onde as pessoas passam pouco tempo.",
+        "O schnauzer gigante é originário da Alemanha; a FCI classifica-o, como Riesenschnauzer, entre os cães do tipo pinscher e schnauzer. O estalão do Royal Kennel Club descreve um cão de constituição poderosa, robusto e nervudo, de aspeto quase quadrado, ousado, fiável, de bom temperamento e sereno, com um pelo de cobertura áspero e duro e um bom subpelo. Indica uma altura de 65–70 cm nos machos e 60–65 cm nas fêmeas; o estalão FCI indica um peso de 35–47 kg. São aceites preto puro, sal e pimenta com máscara escura e preto e prateado – nenhuma outra cor.",
+        "O Royal Kennel Club recomenda mais de duas horas de exercício por dia, diz que a raça se adapta a uma casa grande com um jardim grande, precisa de cuidados com a pelagem todos os dias e não perde pelo. A PDSA diz que a pelagem precisa de cuidados diários e de ser aparada regularmente, que os schnauzers gigantes podem ser cães adoráveis para famílias com crianças mais velhas se forem bem socializados em cachorros, e que estes cães de personalidade forte são adequados a donos experientes. A PetMD acrescenta que a pelagem é tratada com trimming à mão por um profissional de poucos em poucos meses e que a raça não se dá bem em casas onde as pessoas passam pouco tempo.",
       ],
       sources: ["S494", "S495", "S496", "S497"],
     },
     bloodhound: {
       aka: "Santo Humberto, Chien de Saint-Hubert, Bloodhound",
       text: [
-        "O cão de Santo Humberto é originário da Bélgica, onde a FCI o regista como Chien de Saint-Hubert, um grande sabujo. O estalão FCI descreve o mais poderoso de todos os sabujos: meigo, plácido, bondoso e sociável com as pessoas e particularmente apegado ao dono, com um pelo curto, denso e resistente às intempéries e uma pele flexível e solta. Os machos pesam cerca de 46–54 kg e as fêmeas cerca de 40–48 kg; as três cores são preto e fogo, fígado e fogo, e vermelho.",
+        "O cão de Santo Humberto é originário da Bélgica, onde a FCI o regista como Chien de Saint-Hubert, um grande sabujo. O estalão FCI descreve o mais poderoso de todos os sabujos: meigo, plácido, bondoso e sociável com as pessoas e particularmente apegado ao dono, com um pelo curto, denso e resistente às intempéries e uma pele flexível e solta. Os machos pesam cerca de 46–54 kg e as fêmeas cerca de 40–48 kg; as três cores são preto e fogo, fígado e fogo, e vermelho.",
         "O Royal Kennel Club recomenda mais de duas horas de exercício por dia, diz que a raça se adapta a uma casa grande com um jardim grande, precisa de cuidados com a pelagem uma vez por semana e perde pelo. A PDSA diz que os cães de Santo Humberto são mais adequados a donos experientes, não são recomendados para casas com crianças mais pequenas ou animais mais pequenos, por causa do tamanho e do instinto de caça muito forte, babam-se e precisam de ter as pregas da pele limpas e secas. Aconselha também a deixar um intervalo entre a refeição e o exercício.",
       ],
       sources: ["S501", "S502", "S503"],
@@ -1109,7 +1109,7 @@ const pt: RegistryCopy = {
     akita: {
       aka: "Akita, American Akita, Grande cão japonês",
       text: [
-        "O akita deste registo é o tipo americano: a FCI regista-o como akita americano, uma raça de origem japonesa, distinta do akita inu japonês. O estalão FCI descreve um cão grande, de constituição sólida, bem equilibrado, com muita substância e ossatura pesada, orelhas pequenas e erguidas e uma cauda grande levantada sobre o dorso; os machos medem 66–71 cm ao garrote. É admitida qualquer cor, como vermelho, fulvo, branco, malhado ou tigrado. A PDSA indica um peso médio de 31–59 kg.",
+        "O akita deste registo é o tipo americano: a FCI regista-o como akita americano, uma raça de origem japonesa, distinta do akita inu japonês. O estalão FCI descreve um cão grande, de constituição sólida, bem equilibrado, com muita substância e ossatura pesada, orelhas pequenas e erguidas e uma cauda grande levantada sobre o dorso; os machos medem 66–71 cm ao garrote. É admitida qualquer cor, como vermelho, fulvo, branco, malhado ou tigrado. A PDSA indica um peso médio de 31–59 kg.",
         "A PDSA descreve animais de família incrivelmente leais, independentes e muito grandes, por isso ficam melhor com donos experientes; não recomendaria um akita para uma casa com crianças pequenas e desaconselha deixá-los sozinhos, porque muitos não lidam bem com isso. Recomenda pelo menos duas horas de exercício todos os dias, socialização desde cedo, um intervalo entre a refeição e o exercício e pelo menos uma escovagem semanal – os akitas perdem muito pelo. Refere ainda um forte instinto de caça e que podem sobreaquecer com muito calor.",
       ],
       sources: ["S506", "S507", "S508"],
@@ -1117,7 +1117,7 @@ const pt: RegistryCopy = {
     cardigan_welsh_corgi: {
       aka: "Corgi, Cardigan Welsh Corgi, Cardi",
       text: [
-        "O Welsh corgi Cardigan é originário da Grã-Bretanha; a FCI classifica-o entre os boieiros. O estalão do American Kennel Club indica uma altura de 10,5–12,5 polegadas (cerca de 27–32 cm) ao garrote e um peso ideal de 30–38 libras (cerca de 14–17 kg) nos machos. Ao contrário do seu primo Pembroke, tem uma cauda comprida e farta.",
+        "O Welsh corgi Cardigan é originário da Grã-Bretanha; a FCI classifica-o entre os boieiros. O estalão do American Kennel Club indica uma altura de 10,5–12,5 polegadas (cerca de 27–32 cm) ao garrote e um peso ideal de 30–38 libras (cerca de 14–17 kg) nos machos. Ao contrário do seu primo Pembroke, tem uma cauda comprida e farta.",
         "O Royal Kennel Club recomenda até uma hora de exercício por dia, considera suficiente uma casa pequena com um jardim pequeno ou médio, e diz que a raça precisa de cuidados com a pelagem mais de uma vez por semana e perde pelo; indica uma esperança de vida de mais de 12 anos e classifica o Cardigan como raça autóctone vulnerável. A PDSA diz que os welsh corgis estão dispostos a agradar, por isso o treino deve ser bastante fácil, que duas a três escovagens por semana costumam chegar e que podem mordiscar os calcanhares das crianças que correm – a socialização com crianças e o treino desde cedo ajudam.",
       ],
       sources: ["S206", "S513", "S515", "S517"],
@@ -1125,7 +1125,7 @@ const pt: RegistryCopy = {
     german_wirehaired_pointer: {
       aka: "Drahthaar, Deutsch Drahthaar, GWP",
       text: [
-        "O braco alemão de pelo duro é originário da Alemanha; a FCI classifica-o, como Deutsch Drahthaar, entre os cães de parar continentais. O estalão do Royal Kennel Club descreve um cão de caça de tamanho médio, com pelo duro que cobre completamente a pele – meigo, afetuoso e de temperamento equilibrado, atento, dócil e muito leal. Os machos medem 60–67 cm e pesam 25–34 kg; as fêmeas medem 56–62 cm e pesam 20,5–29 kg. Fígado e branco, fígado uniforme e preto e branco são as cores do estalão.",
+        "O braco alemão de pelo duro é originário da Alemanha; a FCI classifica-o, como Deutsch Drahthaar, entre os cães de parar continentais. O estalão do Royal Kennel Club descreve um cão de caça de tamanho médio, com pelo duro que cobre completamente a pele – meigo, afetuoso e de temperamento equilibrado, atento, dócil e muito leal. Os machos medem 60–67 cm e pesam 25–34 kg; as fêmeas medem 56–62 cm e pesam 20,5–29 kg. Fígado e branco, fígado uniforme e preto e branco são as cores do estalão.",
         "O Royal Kennel Club recomenda mais de duas horas de exercício por dia, diz que se adapta a uma casa grande com um jardim grande no campo, precisa de cuidados com a pelagem mais de uma vez por semana e perde pelo. A PetMD diz que estes bracos precisam de muito exercício e estímulo mental, criam um laço forte com a família e podem ser ótimos cães de família quando treinados e socializados cedo, dão-se bem com crianças que aprenderam a comportar-se com animais, nunca devem ficar sozinhos durante longos períodos e têm um forte instinto de caça. A pelagem é tratada com trimming à mão duas vezes por ano.",
       ],
       sources: ["S519", "S521", "S522", "S524"],
@@ -1133,7 +1133,7 @@ const pt: RegistryCopy = {
     saint_bernard: {
       aka: "Cão de São Bernardo, St. Bernhardshund, Bernhardiner",
       text: [
-        "O São Bernardo é originário da Suíça; a FCI classifica-o entre os molossoides do tipo montanha. O estalão FCI descreve um cão simpático por natureza, de calmo a vivo e vigilante, e reconhece duas variedades: de pelo curto, com pelo denso, liso e bem assente, e de pelo comprido. Os machos medem pelo menos 70 cm e as fêmeas pelo menos 65 cm, até 90 e 80 cm; a PDSA indica um peso de 54–81 kg.",
+        "O São Bernardo é originário da Suíça; a FCI classifica-o entre os molossoides do tipo montanha. O estalão FCI descreve um cão simpático por natureza, de calmo a vivo e vigilante, e reconhece duas variedades: de pelo curto, com pelo denso, liso e bem assente, e de pelo comprido. Os machos medem pelo menos 70 cm e as fêmeas pelo menos 65 cm, até 90 e 80 cm; a PDSA indica um peso de 54–81 kg.",
         "O Royal Kennel Club recomenda até uma hora de exercício por dia, diz que a raça se adapta a uma casa grande com um jardim grande, precisa de cuidados com a pelagem mais de uma vez por semana, perde pelo e costuma viver menos de dez anos. A PDSA diz que os São Bernardos adoram estar com a família e são ótimos com pessoas de todas as idades, incluindo crianças, que devem ser bem socializados em cachorros, precisam de escovagem pelo menos três vezes por semana, babam-se, não lidam tão bem com o calor e precisam de um intervalo entre a refeição e o exercício. A PetMD acrescenta que estes cães muito ligados às pessoas podem desenvolver ansiedade de separação se ficarem sozinhos durante longos períodos.",
       ],
       sources: ["S527", "S528", "S529", "S532", "S533"],
@@ -1141,15 +1141,15 @@ const pt: RegistryCopy = {
     staffordshire_bull_terrier: {
       aka: "Staffie, Staffy, Stafford",
       text: [
-        "O Staffordshire bull terrier é originário da Grã-Bretanha; a FCI classifica-o entre os terriers de tipo bull. O estalão FCI descreve um cão de pelo liso, bem equilibrado e de grande força para o seu tamanho – tradicionalmente de coragem e tenacidade indomáveis, muito inteligente e afetuoso, sobretudo com crianças. Mede 35,5–40,5 cm; os machos pesam 12,7–17 kg e as fêmeas 11–15,4 kg. Existe em tigrado, vermelho, fulvo, preto, azul ou branco, uniformes ou com branco.",
-        "O Royal Kennel Club considera-o um maravilhoso animal de família e recomenda até uma hora de exercício por dia; precisa de cuidados com a pelagem uma vez por semana, perde pelo e costuma viver mais de 12 anos. A PDSA diz que os staffies são tolerantes e meigos com crianças, mas, como cães muito ligados às pessoas, são conhecidos por sofrer de ansiedade de separação quando ficam sozinhos, são conhecidos por roer coisas e, com o seu instinto de caça muito forte, não é boa ideia terem animais mais pequenos por perto.",
+        "O Staffordshire bull terrier é originário da Grã-Bretanha; a FCI classifica-o entre os terriers de tipo bull. O estalão FCI descreve um cão de pelo liso, bem equilibrado e de grande força para o seu tamanho – tradicionalmente de coragem e tenacidade indomáveis, muito inteligente e afetuoso, sobretudo com crianças. Mede 35,5–40,5 cm; os machos pesam 12,7–17 kg e as fêmeas 11–15,4 kg. Existe em tigrado, vermelho, fulvo, preto, azul ou branco, uniformes ou com branco.",
+        "O Royal Kennel Club considera-o um maravilhoso cão de família e recomenda até uma hora de exercício por dia; precisa de cuidados com a pelagem uma vez por semana, perde pelo e costuma viver mais de 12 anos. A PDSA diz que os staffies são tolerantes e meigos com crianças, mas, como cães muito ligados às pessoas, são conhecidos por sofrer de ansiedade de separação quando ficam sozinhos, são conhecidos por roer coisas e, com o seu instinto de caça muito forte, não é boa ideia terem animais mais pequenos por perto.",
       ],
       sources: ["S536", "S537", "S538", "S540"],
     },
     airedale_terrier: {
       aka: "Airedale, Rei dos terriers",
       text: [
-        "O Airedale terrier é originário da Grã-Bretanha; a FCI classifica-o entre os terriers de grande e médio porte. O estalão FCI diz que é o maior dos terriers – um cão musculado, ativo e bastante compacto, extrovertido e confiante, simpático, corajoso e inteligente, sempre atento, não agressivo mas destemido. Os machos medem cerca de 58–61 cm e as fêmeas cerca de 56–59 cm. O pelo duro, denso e áspero é fogo com uma sela preta ou grisalha.",
+        "O Airedale terrier é originário da Grã-Bretanha; a FCI classifica-o entre os terriers de grande e médio porte. O estalão FCI diz que é o maior dos terriers – um cão musculado, ativo e bastante compacto, extrovertido e confiante, simpático, corajoso e inteligente, sempre atento, não agressivo mas destemido. Os machos medem cerca de 58–61 cm e as fêmeas cerca de 56–59 cm. O pelo duro, denso e áspero é fogo com uma sela preta ou grisalha.",
         "O Royal Kennel Club recomenda até uma hora de exercício por dia; a pelagem precisa de cuidados todos os dias, a raça não perde pelo e costuma viver mais de 10 anos. A PetMD descreve ótimos cães de família que, se bem treinados, costumam dar-se bem com crianças, mas que não devem ficar entregues a si próprios durante muito tempo; aconselha escovagem algumas vezes por semana, uma limpeza rápida das orelhas todas as semanas e um tosquiador profissional três ou quatro vezes por ano.",
       ],
       sources: ["S545", "S546", "S547", "S549"],
@@ -1157,15 +1157,15 @@ const pt: RegistryCopy = {
     russell_terrier: {
       aka: "Jack Russell, Russell Terrier (AKC), JRT",
       text: [
-        "O Jack Russell terrier – o American Kennel Club chama-lhe Russell Terrier – é originário de Inglaterra e foi desenvolvido na Austrália; a FCI classifica-o entre os terriers pequenos. O seu estalão descreve um terrier de trabalho forte, ativo e ágil, de grande caráter: vivo, atento e ativo, ousado e destemido, simpático mas tranquilamente confiante. Mede 25–30 cm e pesa cerca de 5–6 kg. O pelo liso, quebrado ou áspero é sobretudo branco, com marcas pretas e/ou fogo.",
-        "O Royal Kennel Club recomenda até uma hora de exercício por dia e cuidados com a pelagem uma vez por semana; a raça perde pelo e costuma viver mais de 10 anos. A PDSA descreve cães espertos e vivos, que podem ser bons animais de família se forem treinados e socializados desde cedo, mas que são mais adequados a famílias com crianças um pouco mais velhas; têm um instinto de caça muito forte, por isso não se recomendam animais mais pequenos, e adoram escavar.",
+        "O Jack Russell terrier – o American Kennel Club chama-lhe Russell Terrier – é originário de Inglaterra e foi desenvolvido na Austrália; a FCI classifica-o entre os terriers pequenos. O seu estalão descreve um terrier de trabalho forte, ativo e ágil, de grande caráter: vivo, atento e ativo, ousado e destemido, simpático mas tranquilamente confiante. Mede 25–30 cm e pesa cerca de 5–6 kg. O pelo liso, quebrado ou áspero é sobretudo branco, com marcas pretas e/ou fogo.",
+        "O Royal Kennel Club recomenda até uma hora de exercício por dia e cuidados com a pelagem uma vez por semana; a raça perde pelo e costuma viver mais de 10 anos. A PDSA descreve cães espertos e vivos, que podem ser bons cães de família se forem treinados e socializados desde cedo, mas que são mais adequados a famílias com crianças um pouco mais velhas; têm um instinto de caça muito forte, por isso não se recomendam animais mais pequenos, e adoram escavar.",
       ],
       sources: ["S557", "S558", "S559", "S560"],
     },
     bullmastiff: {
       aka: "Bull Mastiff",
       text: [
-        "O bullmastiff é uma antiga raça inglesa de guarda do século XIX, descendente do bulldog e do antigo mastiff inglês; a FCI classifica-o entre os molossoides. O seu estalão descreve um cão poderoso e simétrico, que mostra grande força sem ser pesadão – resistente, ativo, fiável, cheio de vida, atento e fiel. Os machos medem 64–69 cm e pesam 50–59 kg, as fêmeas 61–66 cm e 41–50 kg. O pelo curto e duro é de qualquer tom de fulvo, vermelho ou tigrado, sempre com o focinho preto.",
+        "O bullmastiff é uma antiga raça inglesa de guarda do século XIX, descendente do bulldog e do antigo mastiff inglês; a FCI classifica-o entre os molossoides. O seu estalão descreve um cão poderoso e simétrico, que mostra grande força sem ser pesadão – resistente, ativo, fiável, cheio de vida, atento e fiel. Os machos medem 64–69 cm e pesam 50–59 kg, as fêmeas 61–66 cm e 41–50 kg. O pelo curto e duro é de qualquer tom de fulvo, vermelho ou tigrado, sempre com o focinho preto.",
         "O Royal Kennel Club recomenda mais de duas horas de exercício por dia e cuidados com a pelagem uma vez por semana, e a raça costuma viver menos de 10 anos. A PDSA descreve cães muito leais cujo tamanho e força os tornam mais adequados a casas só de adultos ou a famílias com crianças mais velhas; precisam de socialização precoce, idealmente de alguém em casa a toda a hora, têm um instinto de caça muito forte, babam-se muito e precisam de um intervalo entre a refeição e o exercício.",
       ],
       sources: ["S565", "S566", "S567", "S568"],
@@ -1173,7 +1173,7 @@ const pt: RegistryCopy = {
     chinese_crested: {
       aka: "Crista chinês, Chinese Crested, Powder Puff",
       text: [
-        "O cão de crista chinês é um cão de companhia pequeno, ativo e gracioso originário da China; a FCI classifica-o entre os cães sem pelo. Existe em duas variedades: a sem pelo (Hairless), com o corpo liso e nu e pelo apenas na cabeça (a crista), nas patas e na cauda, e a Powder Puff, coberta inteiramente por um véu de pelo comprido e macio. Os machos medem 28–33 cm e as fêmeas 23–30 cm; a PetMD indica um peso de 8–12 libras (3,6–5,4 kg). É admitida qualquer cor exceto merle, e o temperamento é descrito como alegre, nunca agressivo.",
+        "O cão de crista chinês é um cão de companhia pequeno, ativo e gracioso originário da China; a FCI classifica-o entre os cães sem pelo. Existe em duas variedades: a sem pelo (Hairless), com o corpo liso e nu e pelo apenas na cabeça (a crista), nas patas e na cauda, e a Powder Puff, coberta inteiramente por um véu de pelo comprido e macio. Os machos medem 28–33 cm e as fêmeas 23–30 cm; a PetMD indica um peso de 8–12 libras (3,6–5,4 kg). É admitida qualquer cor exceto merle, e o temperamento é descrito como alegre, nunca agressivo.",
         "O Royal Kennel Club recomenda até 30 minutos de exercício por dia e cuidados com a pelagem uma vez por semana; adapta-se a um apartamento, e a raça costuma viver mais de 12 anos. A PetMD descreve um cão simpático que se adapta à maioria das famílias, incluindo as que têm crianças e outros animais – qualquer interação com crianças deve ser vigiada. A pele nua precisa de proteção contra o sol e o frio, as unhas devem ser verificadas todas as semanas e os cachorros precisam de uma socialização precoce e consistente.",
       ],
       sources: ["S570", "S571", "S572", "S574"],
@@ -1181,7 +1181,7 @@ const pt: RegistryCopy = {
     nova_scotia_duck_tolling_retriever: {
       aka: "Toller, Nova Scotia Duck Tolling Retriever, NSDTR",
       text: [
-        "O retriever da Nova Escócia – o toller – é um retriever originário do Canadá; o seu estalão FCI descreve como corre e brinca ao longo da margem, bem à vista dos patos, para os atrair, e depois é enviado para cobrar as aves. O estalão descreve um cão de tamanho médio, poderoso, compacto e bem musculado, muito inteligente, fácil de treinar e com grande resistência. A FCI indica para os machos 48–51 cm e 20–23 kg e para as fêmeas 45–48 cm e 17–20 kg. A pelagem dupla, repelente à água, tem vários tons de vermelho ou laranja, normalmente com branco na ponta da cauda, nas patas, no peito ou numa lista na cara.",
+        "O retriever da Nova Escócia – o toller – é um retriever originário do Canadá; o seu estalão FCI descreve como corre e brinca ao longo da margem, bem à vista dos patos, para os atrair, e depois é enviado para cobrar as aves. O estalão descreve um cão de tamanho médio, poderoso, compacto e bem musculado, muito inteligente, fácil de treinar e com grande resistência. A FCI indica para os machos 48–51 cm e 20–23 kg e para as fêmeas 45–48 cm e 17–20 kg. A pelagem dupla, repelente à água, tem vários tons de vermelho ou laranja, normalmente com branco na ponta da cauda, nas patas, no peito ou numa lista na cara.",
         "O Royal Kennel Club recomenda até uma hora de exercício por dia e cuidados com a pelagem mais de uma vez por semana, e a raça perde pelo; a PetMD aconselha escovagem uma ou duas vezes por semana. Um grande estudo britânico (McMillan 2024, via Dogs Trust) indica uma esperança de vida mediana de 13,2 anos, a PetMD 12–14 anos, e, como outros cães de tamanho médio, atinge o tamanho adulto por volta dos 12–15 meses (PetMD). O AKC descreve cães muito afetuosos que costumam ser bons com crianças, precisam de muito exercício físico e estímulo mental, podem ter um forte instinto de caça perto de animais mais pequenos e beneficiam da socialização precoce e de aulas para cachorros.",
       ],
       sources: ["S576", "S577", "S578", "S579", "S580", "S123", "S10"],
@@ -1189,15 +1189,15 @@ const pt: RegistryCopy = {
     cairn_terrier: {
       aka: "Cairn",
       text: [
-        "O cairn terrier é originário da Grã-Bretanha; a FCI classifica-o entre os terriers de pequeno porte. O estalão do Kennel Club descreve um terrier ágil e atento, de aspeto natural e trabalhador – ativo, aguerrido e resistente, de temperamento destemido e alegre, assertivo mas não agressivo. A pelagem dupla, resistente às intempéries, tem um pelo de cobertura abundante e áspero; a cor é creme, trigo, vermelho, cinzento ou quase preto, o tigrado é aceite e as orelhas e o focinho escuros são típicos. Indica uma altura de cerca de 28–31 cm e um peso ideal de 6–7,5 kg.",
-        "A PDSA recomenda pelo menos uma hora de exercício por dia, diz que os cairns têm uma energia sem limites e um forte instinto de caça, por isso precisam de ser socializados cedo com gatos e outros animais pequenos e de cuidado quando andam sem trela, e que, uma vez socializados, se dão muito bem com crianças e são excelentes animais de família. Aconselha trimming à mão da pelagem duas vezes por ano e cuidados com a pelagem uma ou duas vezes por semana; o Dogs Trust diz que perdem muito pouco pelo. Um grande estudo britânico (McMillan 2024, via Dogs Trust) indica uma esperança de vida mediana de 14,0 anos, a PetMD 13–15 anos, e, como outros cães pequenos, atinge o tamanho adulto por volta dos 9–12 meses (PetMD). A PetMD acrescenta que precisam de muito exercício e estímulo mental.",
+        "O cairn terrier é originário da Grã-Bretanha; a FCI classifica-o entre os terriers de pequeno porte. O estalão do Kennel Club descreve um terrier ágil e atento, de aspeto natural e trabalhador – ativo, aguerrido e resistente, de temperamento destemido e alegre, assertivo mas não agressivo. A pelagem dupla, resistente às intempéries, tem um pelo de cobertura abundante e áspero; a cor é creme, trigo, vermelho, cinzento ou quase preto, o tigrado é aceite e as orelhas e o focinho escuros são típicos. Indica uma altura de cerca de 28–31 cm e um peso ideal de 6–7,5 kg.",
+        "A PDSA recomenda pelo menos uma hora de exercício por dia, diz que os cairns têm uma energia sem limites e um forte instinto de caça, por isso precisam de ser socializados cedo com gatos e outros animais pequenos e de cuidado quando andam sem trela, e que, uma vez socializados, se dão muito bem com crianças e são excelentes cães de família. Aconselha trimming à mão da pelagem duas vezes por ano e cuidados com a pelagem uma ou duas vezes por semana; o Dogs Trust diz que perdem muito pouco pelo. Um grande estudo britânico (McMillan 2024, via Dogs Trust) indica uma esperança de vida mediana de 14,0 anos, a PetMD 13–15 anos, e, como outros cães pequenos, atinge o tamanho adulto por volta dos 9–12 meses (PetMD). A PetMD acrescenta que precisam de muito exercício e estímulo mental.",
       ],
       sources: ["S583", "S584", "S585", "S586", "S587", "S123", "S10"],
     },
     bull_terrier: {
       aka: "Bull terrier inglês, English Bull Terrier",
       text: [
-        "O bull terrier é originário da Grã-Bretanha; a FCI classifica-o entre os terriers de tipo bull (grupo 3). É um terrier de tamanho médio e pelo curto: a PDSA indica uma altura média de 51–61 cm e um peso médio de 22–31 kg, e a PetMD descreve uma constituição atlética de cerca de 21–22 polegadas e 50–70 libras. A PetMD diz que o exercício regular é obrigatório e que os bull terriers são afetuosos com a família, incluindo as crianças, mas nem sempre simpáticos com outros cães ou gatos, e que a socialização e o treino precoces e frequentes são essenciais.",
+        "O bull terrier é originário da Grã-Bretanha; a FCI classifica-o entre os terriers de tipo bull (grupo 3). É um terrier de tamanho médio e pelo curto: a PDSA indica uma altura média de 51–61 cm e um peso médio de 22–31 kg, e a PetMD descreve uma constituição atlética de cerca de 21–22 polegadas e 50–70 libras. A PetMD diz que o exercício regular é obrigatório e que os bull terriers são afetuosos com a família, incluindo as crianças, mas nem sempre simpáticos com outros cães ou gatos, e que a socialização e o treino precoces e frequentes são essenciais.",
         "A PDSA recomenda pelo menos uma hora de exercício por dia, dividida ao longo do dia, e um intervalo depois das refeições antes do exercício. Diz que um bull terrier bem socializado se dá bem com pessoas de todas as idades, mas, por ser um pouco excitável, fica melhor com crianças mais velhas; gosta de companhia tanto quanto possível e tem um forte instinto de caça, por isso é preciso cuidado perto de gatos e outros animais pequenos. Uma escovagem semanal chega para a pelagem. A PDSA indica uma esperança de vida média de mais de 10 anos e a PetMD 12–13 anos; como outros cães de tamanho médio, atinge o tamanho adulto por volta dos 12–15 meses (PetMD).",
       ],
       sources: ["S589", "S591", "S592", "S10"],
@@ -1205,15 +1205,15 @@ const pt: RegistryCopy = {
     miniature_pinscher: {
       aka: "Pinscher anão, Zwergpinscher, Min Pin",
       text: [
-        "O pinscher miniatura é originário da Alemanha; a FCI classifica-o entre os pinschers e schnauzers (grupo 2) e descreve-o como uma imagem reduzida do pinscher alemão – vivo, cheio de energia, seguro de si e equilibrado. O pelo é curto, denso, liso e brilhante, de uma só cor, do vermelho-veado ao castanho-avermelhado escuro, ou preto e fogo, e a cauda é natural. O estalão FCI indica uma altura de 25–30 cm e um peso de 4–6 kg para machos e fêmeas; como outros cães toy, atinge o tamanho adulto por volta dos 8–12 meses (PetMD).",
-        "A PDSA recomenda até meia hora de exercício por dia para estes cãezinhos enérgicos e irrequietos, diz que uma escovagem por semana costuma chegar para a pelagem e refere que podem ser teimosos e independentes, por isso o treino exige prática e paciência. A PetMD diz que podem ser excelentes animais de família com a socialização e o treino certos. A VCA descreve a raça como brincalhona e muito boa com crianças, embora crianças muito pequenas ou irrequietas o possam magoar com brincadeiras bruscas, e diz que o pelo fino e o tamanho pequeno o tornam sensível ao frio. A PDSA indica uma esperança de vida média de mais de 12 anos e a PetMD 12–16 anos.",
+        "O pinscher miniatura é originário da Alemanha; a FCI classifica-o entre os pinschers e schnauzers (grupo 2) e descreve-o como uma imagem reduzida do pinscher alemão – vivo, cheio de energia, seguro de si e equilibrado. O pelo é curto, denso, liso e brilhante, de uma só cor, do vermelho-veado ao castanho-avermelhado escuro, ou preto e fogo, e a cauda é natural. O estalão FCI indica uma altura de 25–30 cm e um peso de 4–6 kg para machos e fêmeas; como outros cães toy, atinge o tamanho adulto por volta dos 8–12 meses (PetMD).",
+        "A PDSA recomenda até meia hora de exercício por dia para estes cãezinhos enérgicos e irrequietos, diz que uma escovagem por semana costuma chegar para a pelagem e refere que podem ser teimosos e independentes, por isso o treino exige prática e paciência. A PetMD diz que podem ser excelentes cães de família com a socialização e o treino certos. A VCA descreve a raça como brincalhona e muito boa com crianças, embora crianças muito pequenas ou irrequietas o possam magoar com brincadeiras bruscas, e diz que o pelo fino e o tamanho pequeno o tornam sensível ao frio. A PDSA indica uma esperança de vida média de mais de 12 anos e a PetMD 12–16 anos.",
       ],
       sources: ["S594", "S595", "S596", "S597", "S10"],
     },
     pyrenean_mountain_dog: {
       aka: "Montanha dos Pirenéus, Patou, Great Pyrenees, Chien de Montagne des Pyrénées",
       text: [
-        "O cão de montanha dos Pirenéus – nos Estados Unidos chamado Great Pyrenees – é originário de França; a FCI classifica-o entre os molossoides do tipo montanha (grupo 2) e descreve um cão de grande tamanho, imponente e de constituição forte, mas não sem uma certa elegância. A pelagem é branca, ou branca com manchas cor de texugo, cinzento-lobo, amarelo-pálido ou laranja na cabeça e nas orelhas. O estalão FCI indica uma altura de 70–80 cm nos machos e 65–75 cm nas fêmeas; a PDSA indica um peso médio de 40–50 kg. Como outros cães gigantes, atinge o tamanho adulto por volta dos 18–24 meses (PetMD).",
+        "O cão de montanha dos Pirenéus – nos Estados Unidos chamado Great Pyrenees – é originário de França; a FCI classifica-o entre os molossoides do tipo montanha (grupo 2) e descreve um cão de grande tamanho, imponente e de constituição forte, mas não sem uma certa elegância. A pelagem é branca, ou branca com manchas cor de texugo, cinzento-lobo, amarelo-pálido ou laranja na cabeça e nas orelhas. O estalão FCI indica uma altura de 70–80 cm nos machos e 65–75 cm nas fêmeas; a PDSA indica um peso médio de 40–50 kg. Como outros cães gigantes, atinge o tamanho adulto por volta dos 18–24 meses (PetMD).",
         "O Royal Kennel Club recomenda até uma hora de exercício por dia, diz que a raça se adapta a uma casa grande com um jardim grande, precisa de cuidados com a pelagem mais de uma vez por semana e perde pelo, e indica uma esperança de vida de menos de 10 anos (a PetMD e a VCA indicam 10–12 anos). A PDSA chama-lhes gigantes meigos – cães calmos e de bom temperamento que costumam dar-se bem com toda a gente – e diz que o treino exige paciência e métodos baseados em recompensas. A VCA diz que o cão dos Pirenéus é dedicado à família, sobretudo às crianças, e que a socialização precoce é muito importante; a PetMD diz que convive bem com outros animais, mas que pode ser melhor em casas sem crianças mais pequenas, e aconselha a evitar exercício intenso à volta das refeições, por causa do risco de dilatação-torção gástrica.",
       ],
       sources: ["S599", "S600", "S603", "S604", "S605", "S10"],
@@ -1221,15 +1221,15 @@ const pt: RegistryCopy = {
     soft_coated_wheaten_terrier: {
       aka: "Wheaten, Wheaten terrier, Soft Coated Wheaten Terrier, SCWT",
       text: [
-        "O Irish soft coated wheaten terrier é originário da Irlanda; a FCI classifica-o entre os terriers de grande e médio porte. O estalão do Royal Kennel Club descreve um terrier de tamanho médio, compacto e de porte erguido, com um pelo macio e sedoso, cor de trigo, que cai em caracóis soltos ou ondas – de bom temperamento, cheio de vida e aguerrido, cheio de confiança e de humor. A única cor é um trigo puro e bem definido. A PDSA indica uma altura média de 46–49 cm e um peso médio de 16–20,5 kg (o estalão do Kennel Club indica 16–20,5 kg nos machos e um pouco menos nas fêmeas); como outros cães de tamanho médio, atinge o tamanho adulto por volta dos 12–15 meses (PetMD).",
-        "O Royal Kennel Club recomenda até uma hora de exercício por dia, diz que a raça se adapta a uma casa pequena, precisa de cuidados com a pelagem todos os dias e não perde pelo. Um grande estudo britânico (McMillan 2024, via Dogs Trust) indica uma esperança de vida mediana de 13,7 anos; a PetMD e a VCA indicam 12–14 anos. A PDSA descreve cães simpáticos e de confiança, que são ótimos animais de família, embora possam ser um pouco teimosos. A VCA diz que a sua natureza meiga e brincalhona faz deles uma boa companhia para crianças; a PetMD diz que a interação com crianças deve ser vigiada, que não gostam de ficar sozinhos durante longos períodos, e aconselha cuidados profissionais com a pelagem a cada quatro a seis semanas, um banho mais ou menos mensal e limpeza das orelhas a cada uma ou duas semanas.",
+        "O Irish soft coated wheaten terrier é originário da Irlanda; a FCI classifica-o entre os terriers de grande e médio porte. O estalão do Royal Kennel Club descreve um terrier de tamanho médio, compacto e de porte erguido, com um pelo macio e sedoso, cor de trigo, que cai em caracóis soltos ou ondas – de bom temperamento, cheio de vida e aguerrido, cheio de confiança e de humor. A única cor é um trigo puro e bem definido. A PDSA indica uma altura média de 46–49 cm e um peso médio de 16–20,5 kg (o estalão do Kennel Club indica 16–20,5 kg nos machos e um pouco menos nas fêmeas); como outros cães de tamanho médio, atinge o tamanho adulto por volta dos 12–15 meses (PetMD).",
+        "O Royal Kennel Club recomenda até uma hora de exercício por dia, diz que a raça se adapta a uma casa pequena, precisa de cuidados com a pelagem todos os dias e não perde pelo. Um grande estudo britânico (McMillan 2024, via Dogs Trust) indica uma esperança de vida mediana de 13,7 anos; a PetMD e a VCA indicam 12–14 anos. A PDSA descreve cães simpáticos e de confiança, que são ótimos cães de família, embora possam ser um pouco teimosos. A VCA diz que a sua natureza meiga e brincalhona faz deles uma boa companhia para crianças; a PetMD diz que a interação com crianças deve ser vigiada, que não gostam de ficar sozinhos durante longos períodos, e aconselha cuidados profissionais com a pelagem a cada quatro a seis semanas, um banho mais ou menos mensal e limpeza das orelhas a cada uma ou duas semanas.",
       ],
       sources: ["S608", "S610", "S612", "S613", "S614", "S123", "S10"],
     },
     irish_wolfhound: {
       aka: "Irish Wolfhound, Wolfhound, Cú Faoil",
       text: [
-        "O lebréu irlandês é originário da Irlanda; a FCI classifica-o entre os lebréus de pelo duro. A PDSA indica uma altura média de 71–79 cm e um peso médio de 40–55 kg; como outros cães gigantes, atinge o tamanho adulto por volta dos 18–24 meses (PetMD). O Royal Kennel Club classifica o seu tamanho como extragrande e diz que se adapta a uma casa grande com um jardim grande no campo.",
+        "O lebréu irlandês é originário da Irlanda; a FCI classifica-o entre os lebréus de pelo duro. A PDSA indica uma altura média de 71–79 cm e um peso médio de 40–55 kg; como outros cães gigantes, atinge o tamanho adulto por volta dos 18–24 meses (PetMD). O Royal Kennel Club classifica o seu tamanho como extragrande e diz que se adapta a uma casa grande com um jardim grande no campo.",
         "O Royal Kennel Club recomenda mais de duas horas de exercício por dia e cuidados com a pelagem mais de uma vez por semana, e diz que a raça perde pelo. O Kennel Club e a PDSA indicam uma esperança de vida de menos de 10 anos; a PetMD indica 6–8 anos. A PDSA não recomenda a raça para casas com crianças mais pequenas, por causa do tamanho e da força, nem com animais mais pequenos, por causa do forte instinto de caça, e diz que nunca deve ficar sozinho mais de quatro horas. A PetMD aconselha a socializar o cachorro desde o dia em que chega a casa, a evitar o exercício imediatamente antes ou depois de comer (dilatação-torção gástrica) e a limpar as orelhas a cada duas a quatro semanas.",
       ],
       sources: ["S615", "S617", "S619", "S620", "S10"],
@@ -1237,7 +1237,7 @@ const pt: RegistryCopy = {
     american_staffordshire_terrier: {
       aka: "Amstaff, Am Staff, Staffordshire Terrier",
       text: [
-        "O American Staffordshire terrier é originário dos Estados Unidos; a FCI classifica-o entre os terriers de tipo bull. O seu estalão pede grande força para o seu tamanho e indica uma altura de 46–48 cm nos machos e 43–46 cm nas fêmeas, mas nenhum peso. A PetMD indica 40–70 libras (cerca de 18–32 kg) para ambos os sexos; um cão deste tamanho atinge o tamanho adulto por volta dos 12–15 meses (PetMD).",
+        "O American Staffordshire terrier é originário dos Estados Unidos; a FCI classifica-o entre os terriers de tipo bull. O seu estalão pede grande força para o seu tamanho e indica uma altura de 46–48 cm nos machos e 43–46 cm nas fêmeas, mas nenhum peso. A PetMD indica 40–70 libras (cerca de 18–32 kg) para ambos os sexos; um cão deste tamanho atinge o tamanho adulto por volta dos 12–15 meses (PetMD).",
         "A PetMD recomenda pelo menos 60 minutos de exercício por dia, diz que a raça é paciente e carinhosa com crianças, que pode ter tendência para a ansiedade de separação e que o seu forte instinto de caça pode dificultar a vida com cães mais pequenos ou gatos. Um estudo britânico (McMillan et al., 2024, conforme tabela do Dogs Trust) indica uma esperança de vida mediana de 12,5 anos; a PetMD indica 12–16 anos. A VCA recomenda escovagem semanal; a PetMD aconselha a socializar o cachorro, a evitar o exercício logo a seguir a uma refeição (dilatação-torção gástrica) e a dar banho e limpar as orelhas a cada 4–6 semanas, mais ou menos.",
       ],
       sources: ["S625", "S626", "S628", "S629", "S123", "S10"],
@@ -1245,7 +1245,7 @@ const pt: RegistryCopy = {
     lagotto_romagnolo: {
       aka: "Lagotto, Lagotti, Cão de água da Romanha, cão trufeiro",
       text: [
-        "O lagotto romagnolo é um cão de água de pelo encaracolado, de tamanho pequeno a médio, originário de Itália, conhecido como cão trufeiro; a FCI classifica-o entre os cães de água. O seu estalão indica uma altura de 43–48 cm e um peso de 13–16 kg nos machos, e 41–46 cm e 11–14 kg nas fêmeas; um cão deste tamanho atinge o tamanho adulto por volta dos 12–15 meses (PetMD).",
+        "O lagotto romagnolo é um cão de água de pelo encaracolado, de tamanho pequeno a médio, originário de Itália, conhecido como cão trufeiro; a FCI classifica-o entre os cães de água. O seu estalão indica uma altura de 43–48 cm e um peso de 13–16 kg nos machos, e 41–46 cm e 11–14 kg nas fêmeas; um cão deste tamanho atinge o tamanho adulto por volta dos 12–15 meses (PetMD).",
         "O Royal Kennel Club considera-o um companheiro de família excelente e atento, recomenda mais de duas horas de exercício por dia e cuidados com a pelagem mais de uma vez por semana, diz que não perde pelo e indica uma esperança de vida de mais de 12 anos; a PetMD diz que os lagotti podem viver até aos 15–17 anos. A PetMD refere que precisa de estímulo mental e físico constante e de muita socialização, porque pode ser tímido; a Woodgreen diz que pode ter dificuldades quando fica sozinho com demasiada frequência e recomenda cuidados profissionais com a pelagem a cada seis a oito semanas.",
       ],
       sources: ["S630", "S631", "S632", "S633", "S635", "S636", "S10"],
@@ -1253,7 +1253,7 @@ const pt: RegistryCopy = {
     alaskan_malamute: {
       aka: "Malamute, Alaskan Malamute, Mal",
       text: [
-        "O malamute do Alasca é um dos mais antigos cães de trenó árticos: um cão nórdico de trenó poderoso e de constituição sólida, originário dos Estados Unidos, com uma pelagem grossa e áspera. O estalão FCI indica como tamanhos desejáveis 63,5 cm e 38 kg nos machos e 58,5 cm e 34 kg nas fêmeas; a PDSA indica 58–64 cm e 34–39 kg. Um cão deste tamanho atinge o tamanho adulto por volta dos 15–18 meses (PetMD), e a PDSA indica uma esperança de vida de mais de 10 anos (PetMD: 10–14 anos).",
+        "O malamute do Alasca é um dos mais antigos cães de trenó árticos: um cão nórdico de trenó poderoso e de constituição sólida, originário dos Estados Unidos, com uma pelagem grossa e áspera. O estalão FCI indica como tamanhos desejáveis 63,5 cm e 38 kg nos machos e 58,5 cm e 34 kg nas fêmeas; a PDSA indica 58–64 cm e 34–39 kg. Um cão deste tamanho atinge o tamanho adulto por volta dos 15–18 meses (PetMD), e a PDSA indica uma esperança de vida de mais de 10 anos (PetMD: 10–14 anos).",
         "A PDSA recomenda um mínimo de duas horas de exercício intenso e escovagem todos os dias, e diz que os malamutes perdem muito pelo, têm um instinto de caça muito forte, não devem ficar sozinhos mais de quatro horas e são adequados a adultos ativos ou a famílias com crianças mais velhas; considera-os exigentes para quem tem cão pela primeira vez. A PetMD aconselha a verificar as orelhas uma vez por semana e a dar banho a cada 6–8 semanas, e refere que a pelagem grossa torna o tempo quente difícil para eles.",
       ],
       sources: ["S637", "S639", "S640", "S10"],
@@ -1261,7 +1261,7 @@ const pt: RegistryCopy = {
     basenji: {
       aka: "Cão do Congo, cão que não ladra",
       text: [
-        "O basenji é um cão de caça de constituição leve e ossatura fina originário da África Central que não ladra, mas faz um som próprio, parecido com um iodel; a FCI classifica-o entre os cães do tipo primitivo. A PDSA indica uma altura de 40–43 cm e um peso de 9–11 kg. Um cão deste tamanho atinge o tamanho adulto por volta dos 9–12 meses (PetMD), e a PDSA indica uma esperança de vida de mais de 12 anos (WebMD: 13–14 anos).",
+        "O basenji é um cão de caça de constituição leve e ossatura fina originário da África Central que não ladra, mas faz um som próprio, parecido com um iodel; a FCI classifica-o entre os cães do tipo primitivo. A PDSA indica uma altura de 40–43 cm e um peso de 9–11 kg. Um cão deste tamanho atinge o tamanho adulto por volta dos 9–12 meses (PetMD), e a PDSA indica uma esperança de vida de mais de 12 anos (WebMD: 13–14 anos).",
         "A PDSA recomenda pelo menos uma hora de exercício por dia (cerca de 60–90 minutos), muito estímulo mental e escovagem uma vez por semana; descreve os basenjis como distantes mas de confiança, teimosos e com muito pouca noção do perigo na estrada. A WebMD diz que perseguem tudo o que pareça uma presa, precisam de vedações muito altas ou de vigilância constante e são apenas moderadamente bons com crianças pequenas, e aconselha a limpar as orelhas todas as semanas e a escovar os dentes pelo menos duas vezes por semana.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
@@ -1269,7 +1269,7 @@ const pt: RegistryCopy = {
     greater_swiss_mountain_dog: {
       aka: "Grande Boieiro Suíço, Greater Swiss Mountain Dog, Swissy",
       text: [
-        "O grande boieiro suíço é um cão de tração tricolor da Suíça, robusto, de ossatura forte e bem musculado: preto com marcas fogo e brancas simétricas. O padrão da FCI indica uma altura de 65–72 cm para os machos e de 60–68 cm para as fêmeas, mas nenhum peso; a WebMD indica 52–64 kg para os machos e 39–50 kg para as fêmeas. Um cão deste tamanho atinge o tamanho adulto por volta dos 18–24 meses (PetMD), e o Royal Kennel Club indica uma esperança de vida de mais de 10 anos (PetMD: 8–11 anos).",
+        "O grande boieiro suíço é um cão de tração tricolor da Suíça, robusto, de ossatura forte e bem musculado: preto com marcas fogo e brancas simétricas. O padrão da FCI indica uma altura de 65–72 cm para os machos e de 60–68 cm para as fêmeas, mas nenhum peso; a WebMD indica 52–64 kg para os machos e 39–50 kg para as fêmeas. Um cão deste tamanho atinge o tamanho adulto por volta dos 18–24 meses (PetMD), e o Royal Kennel Club indica uma esperança de vida de mais de 10 anos (PetMD: 8–11 anos).",
         "O Royal Kennel Club recomenda até uma hora de exercício por dia e escovagem uma vez por semana, e diz que a raça larga pelo e precisa de uma casa grande com um jardim grande. A PetMD descreve-os como ótimos cães de família, meigos com as crianças (todas as interações devem ser supervisionadas), e aconselha a limpar as orelhas todas as semanas e a não os exercitar logo antes ou depois das refeições, pelo risco de torção gástrica (GDV); a WebMD aconselha a escovar os dentes todos os dias e a limitar os biscoitos, porque a raça tende a engordar.",
       ],
       sources: ["S653", "S654", "S656", "S658", "S10"],
@@ -1293,7 +1293,7 @@ const pt: RegistryCopy = {
     siberian_cat: {
       aka: "Gato siberiano, Gato da floresta siberiana",
       text: [
-        "O GCCF descreve o siberiano como um gato de desenvolvimento lento, com uma pelagem espessa e resistente às intempéries: um subpelo denso e macio sob um pelo de cobertura mais grosso, que muda abundantemente na primavera e no outono. Os machos pesam cerca de 7,7–11,8 kg e as fêmeas 5,9–7,7 kg, o desenvolvimento completo pode demorar quatro a cinco anos, e o GCCF indica uma esperança de vida de 12 a 15 anos ou mais.",
+        "O GCCF descreve o siberiano como um gato de desenvolvimento lento, com uma pelagem espessa e resistente às intempéries: um subpelo denso e macio sob um pelo de cobertura mais grosso, que muda abundantemente na primavera e no outono. Os machos pesam cerca de 7,7–11,8 kg e as fêmeas 5,9–7,7 kg, o desenvolvimento completo pode demorar quatro a cinco anos, e o GCCF indica uma esperança de vida de 12 a 15 anos ou mais.",
         "O GCCF descreve-o como enérgico e brincalhão, mas paciente – uma boa escolha para famílias com crianças pequenas – e diz que se dá bem com outros animais, incluindo cães. A PetMD aconselha a penteá-lo pelo menos uma vez por semana, com mais cuidado durante a muda da primavera e do outono, e refere que os siberianos não são considerados hipoalergénicos. Os gatinhos de raça costumam ir para a nova casa às 12–13 semanas (PDSA).",
       ],
       sources: ["C13", "C34", "C35"],
@@ -1301,7 +1301,7 @@ const pt: RegistryCopy = {
     maine_coon: {
       aka: "Gato Maine coon",
       text: [
-        "O Maine coon é amplamente considerado uma das maiores raças de gato doméstico, com um corpo musculado e retangular, peito largo, patas grandes e uma cauda comprida e farta. A TICA indica um peso médio de cerca de 5,9–8,2 kg nos machos adultos e 4,1–5,9 kg nas fêmeas, e a CFA refere que alguns machos pesam mais de 9 kg. Cresce devagar: segundo a CFA, muitas vezes só atinge o desenvolvimento completo aos três ou quatro anos, e a TICA diz que a maturidade completa pode demorar três a cinco anos.",
+        "O Maine coon é amplamente considerado uma das maiores raças de gato doméstico, com um corpo musculado e retangular, peito largo, patas grandes e uma cauda comprida e farta. A TICA indica um peso médio de cerca de 5,9–8,2 kg nos machos adultos e 4,1–5,9 kg nas fêmeas, e a CFA refere que alguns machos pesam mais de 9 kg. Cresce devagar: segundo a CFA, muitas vezes só atinge o desenvolvimento completo aos três ou quatro anos, e a TICA diz que a maturidade completa pode demorar três a cinco anos.",
         "A TICA descreve-o como meigo, simpático e brincalhão, a CFA como sociável, leal e inteligente; muitas vezes «fala» com um trinado em vez de um miado. A Vetstreet escreve que os Maine coons se dão bem com toda a gente, incluindo crianças, cães e outros gatos. A sua pelagem pesada e semilonga é mais curta nos ombros e mais comprida na gola, na barriga e nos quartos traseiros. As fontes divergem quanto à escovagem: a Vetstreet diz que pentear uma vez por semana chega, a CFA aconselha escovar ou pentear pelo menos duas vezes por semana e a TICA refere que uma pelagem mais espessa pode precisar de ser penteada todos os dias. Os gatinhos de raça costumam ir para a nova casa às 12–13 semanas (PDSA).",
       ],
       sources: ["C13", "C17", "C18"],
@@ -1317,7 +1317,7 @@ const pt: RegistryCopy = {
     norwegian_forest_cat: {
       aka: "Gato da floresta norueguesa, Skogkatt, Wegie",
       text: [
-        "O GCCF descreve o norueguês da floresta como meigo e simpático, um gato que gosta de fazer parte de uma família. Amadurece devagar e só é considerado completamente adulto por volta dos quatro a cinco anos; os machos pesam cerca de 5,4–7,3 kg e as fêmeas 4,1–5,4 kg, e o GCCF indica uma esperança de vida de 14 a 16 anos.",
+        "O GCCF descreve o norueguês da floresta como meigo e simpático, um gato que gosta de fazer parte de uma família. Amadurece devagar e só é considerado completamente adulto por volta dos quatro a cinco anos; os machos pesam cerca de 5,4–7,3 kg e as fêmeas 4,1–5,4 kg, e o GCCF indica uma esperança de vida de 14 a 16 anos.",
         "Tem muita energia, gosta de jogos interativos e trepa com facilidade; o GCCF diz que tolera crianças respeitadoras, outros gatos e cães que se dão bem com gatos. A PetMD aconselha a pentear e escovar pelo menos uma vez por semana, mais vezes durante a muda da primavera e do outono, e refere que a ansiedade de separação pode ser um problema se ficar muitas vezes sozinho durante longos períodos. Os gatinhos de raça costumam ir para a nova casa às 12–13 semanas (PDSA).",
       ],
       sources: ["C13", "C37", "C38"],

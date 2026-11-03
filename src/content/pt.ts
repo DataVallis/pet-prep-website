@@ -2,18 +2,18 @@ import type { Dictionary } from "./types";
 
 const pt: Dictionary = {
   meta: {
-    siteTitle: "PetPrep – Prontos para um animal. Ao seu lado a vida inteira.",
+    siteTitle: "PetPrep – Prontos para um animal de estimação. Presentes durante toda a vida dele.",
     siteDescription:
-      "O PetPrep é um simulador de animal de estimação de 12 semanas que mostra aos pais se o filho está mesmo preparado para um animal a sério – e depois torna-se um assistente de IA para toda a vida do animal verdadeiro.",
-    slogan: "Prontos para um animal. Ao seu lado a vida inteira.",
+      "O PetPrep é um simulador de animal de estimação com 12 semanas de duração que mostra aos pais se o filho está mesmo preparado para ter um animal a sério – e que depois passa a ser um assistente de IA para toda a vida do animal.",
+    slogan: "Prontos para um animal de estimação. Presentes durante toda a vida dele.",
     keywords: [
       "o meu filho está preparado para um cão",
-      "aplicação de responsabilidade com animais para crianças",
+      "aplicação de responsabilidade com animais de estimação para crianças",
       "simulador de animal de estimação virtual",
       "simulador de animal de estimação com IA",
       "antes de ter um cão",
       "crianças e animais de estimação",
-      "teste de preparação para ter um animal",
+      "teste de preparação para ter um animal de estimação",
       "painel dos pais",
       "experimentar uma raça de cão antes de comprar",
       "esta raça é indicada para mim",
@@ -49,7 +49,7 @@ const pt: Dictionary = {
     notFoundCta: "Voltar à página inicial",
   },
   footer: {
-    tagline: "Prontos para um animal. Ao seu lado a vida inteira.",
+    tagline: "Prontos para um animal de estimação. Presentes durante toda a vida dele.",
     groups: [
       { title: "Produto", links: ["howItWorks", "parents", "animals", "care", "kids", "coloring", "afterAdoption", "pricing", "faq"] },
       { title: "Empresa", links: ["about", "curio", "walkyourpet", "partners", "investors", "contact"] },
@@ -91,7 +91,7 @@ const pt: Dictionary = {
       unit: "por animal · 12 semanas",
       text: "Para as famílias que querem a experiência completa e um certificado no fim.",
       features: [
-        "Tudo o que inclui o Cão sem raça definida",
+        "Tudo o que está incluído no Cão sem raça definida",
         "Raças exigentes, como o [border collie](breed:border_collie)",
         "Os estados de espírito do teu animal em vídeos de IA",
         "Certificado de responsabilidade",
@@ -113,7 +113,7 @@ const pt: Dictionary = {
     successTitle: "Já estás na lista.",
     successText: "Obrigado! Serás dos primeiros a receber um e-mail quando o PetPrep estiver pronto.",
     invalid: "Introduz um endereço de e-mail válido.",
-    error: "Algo correu mal. Tenta novamente daqui a pouco.",
+    error: "Algo correu mal. Tenta de novo daqui a instantes.",
     consent: "Ao subscrever, aceitas receber e-mails sobre o PetPrep. Podes cancelar a subscrição a qualquer momento.",
     privacyLink: "Política de privacidade",
   },
@@ -127,13 +127,13 @@ const pt: Dictionary = {
     meta: {
       title: "PetPrep – O teu filho está preparado para um animal? Descobre em 12 semanas.",
       description:
-        "Antes de um animal verdadeiro chegar a casa, o teu filho cuida durante 12 semanas de um animal de IA realista: refeições, limpeza, passeios reais. Vês todos os dias se está mesmo preparado.",
+        "Antes de um animal a sério chegar a casa, o teu filho cuida durante 12 semanas de um animal de IA realista: refeições, limpeza, passeios reais. Vês todos os dias se está mesmo preparado.",
     },
     hero: {
       eyebrow: "O Desafio PetPrep de 12 semanas",
-      title: "Prontos para um animal. Ao seu lado a vida inteira.",
+      title: "Prontos para um animal de estimação. Presentes durante toda a vida dele.",
       lead:
-        "Antes de um animal verdadeiro chegar a casa, o teu filho cuida durante 12 semanas de um animal de IA realista – dá-lhe de comer, limpa o que ele suja e leva-o a passeios reais. Vês todos os dias se está mesmo preparado.",
+        "Antes de um animal a sério chegar a casa, o teu filho cuida durante 12 semanas de um animal de IA realista – dá-lhe de comer, limpa o que ele suja e leva-o a passeios reais. Vês todos os dias se está mesmo preparado.",
       trust: ["Cão sem raça definida gratuito para sempre", "Sem anúncios nem conversas com desconhecidos", "As crianças não precisam de e-mail"],
     },
     phone: {
@@ -144,19 +144,19 @@ const pt: Dictionary = {
       actions: ["Comida", "Água", "Passeio", "Limpar"],
     },
     parentCard: { child: "Inês", status: "Tudo bem", scoreLabel: "Care Score", progress: "Semana 3 de 12 · 31 de 36 rotinas a horas" },
-    notification: { app: "PetPrep", text: "O teu animal está a olhar para a tigela da comida. A hora do pequeno-almoço termina às 9:00." },
+    notification: { app: "PetPrep", text: "O teu animal está a olhar para a tigela da comida. A hora do pequeno-almoço termina às 9h00." },
     promoVideo: {
       eyebrow: "O PetPrep num minuto",
       title: "Vê como funciona.",
-      text: "Desde escolher o animal e assinar o contrato até à escola, aos passeios, à escovagem e ao certificado – tudo o que o teu filho faz em 12 semanas e tudo o que vês no painel. O Curio, a nossa mascote, só vem dizer olá; o animal da aplicação é um cão de IA realista.",
+      text: "Da escolha do animal e da assinatura do contrato até à escola, aos passeios, à escovagem e ao certificado – tudo o que o teu filho faz em 12 semanas e tudo o que vês no painel. O Curio, a nossa mascote, só vem dizer olá; o animal da aplicação é um cão de IA realista.",
       alt: "Vídeo promocional do PetPrep: ecrãs da aplicação, uma criança a cuidar de um cão, um pai a acompanhar o Care Score.",
-      note: "O vídeo está em inglês. A aplicação ainda não está disponível ao público na App Store e no Google Play – inscreve-te para teres acesso antecipado.",
+      note: "O vídeo está em inglês. A aplicação ainda não está disponível ao público na App Store nem no Google Play – inscreve-te para teres acesso antecipado.",
     },
     promise: {
       quote: "Todas as famílias já ouviram «Prometo que tomo conta dele». O PetPrep transforma a promessa numa",
       highlight: "prova",
       text:
-        "Falhar na simulação é um sucesso para a tua família: descobres antes de um animal verdadeiro sofrer – e antes de te comprometeres com anos de cuidados e despesas.",
+        "Falhar na simulação é um sucesso para a tua família: descobres-o antes de um animal a sério sofrer – e antes de assumires anos de cuidados e despesas.",
     },
     how: {
       eyebrow: "Como funciona",
@@ -164,7 +164,7 @@ const pt: Dictionary = {
       steps: [
         {
           title: "Tu escolhes o animal",
-          text: "Cria uma conta familiar, adiciona o teu filho apenas com uma alcunha e escolhe o animal – a raça, se é adotado ou de um criador, cachorro ou sénior.",
+          text: "Cria uma conta familiar, adiciona o teu filho só com uma alcunha e escolhe o animal – a raça, se é adotado ou de um criador, cachorro ou sénior.",
         },
         {
           title: "O teu filho assina a promessa",
@@ -178,14 +178,14 @@ const pt: Dictionary = {
       link: "Como funciona em pormenor",
     },
     realism: {
-      title: "Tão perto de um animal verdadeiro quanto uma aplicação consegue.",
+      title: "Tão perto de um animal a sério quanto uma aplicação consegue.",
       text: "Os horários das refeições, os passeios e o crescimento baseiam-se em fontes como associações veterinárias e clubes de canicultura – não foram inventados para um jogo.",
       items: [
         { title: "Passeios reais, passos reais", text: "O passeio diário conta os passos no telemóvel do teu filho. Hoje não houve passeio nenhum? O animal sente-o amanhã." },
         { title: "Cresce", text: "Um cachorro come quatro vezes por dia, depois três, depois duas – e ganha uma fotografia nova à medida que cresce." },
-        { title: "Porta-se como um animal a sério", text: "Os cachorros precisam de ir à rua. Os cães aborrecidos roem chinelos. As asneiras vêm antes do jantar." },
+        { title: "Porta-se como um animal a sério", text: "Os cachorros precisam de ir à rua. Os cães aborrecidos roem chinelos. E as poças vêm antes do jantar." },
         { title: "Respeita a escola e o sono", text: "As horas de silêncio suspendem os lembretes. Uma refeição que calha durante a escola é tarefa tua, não do teu filho." },
-        { title: "Consequências reais, com cuidado", text: "O descuido significa uma ida ao veterinário ou ao abrigo – nunca assustador, sempre com um novo começo." },
+        { title: "Consequências reais, com cuidado", text: "Se houver descuido, o animal vai ao veterinário ou ao abrigo – nunca de forma assustadora e sempre com um novo começo." },
         { title: "Único no mundo", text: "Cada animal tem a sua pelagem, as suas manchas e os seus olhos – fotorrealista e nunca igual a outro." },
       ],
     },
@@ -203,32 +203,32 @@ const pt: Dictionary = {
     adults: {
       eyebrow: "Para adultos",
       title: "Experimenta a raça antes de a levares para casa.",
-      text: "Estás apaixonado por uma raça em particular? O PetPrep não é só para crianças. Durante 12 semanas cuidas de um animal de IA dessa raça, com as suas necessidades diárias reais – e descobres se é mesmo para ti, antes de comprares ou adotares.",
+      text: "Apaixonaste-te por uma raça em particular? O PetPrep não é só para crianças. Durante 12 semanas cuidas de um animal de IA dessa raça, com as suas necessidades diárias reais – e descobres se é mesmo para ti, antes de comprares ou adotares.",
       points: [
         {
           strong: "As necessidades reais da raça",
-          text: "refeições em janelas horárias, água, limpeza e uma meta diária de passos baseada em necessidades de exercício documentadas: um border collie adulto precisa de 12 000 passos por dia, um cão sem raça definida de 6000.",
+          text: "refeições em janelas horárias, água, limpeza e uma meta diária de passos baseada em necessidades de exercício documentadas: um border collie adulto precisa de 12\u00a0000 passos por dia, um cão sem raça definida de 6000.",
         },
         {
           strong: "Treino e acidentes de cachorro",
           text: "uma pequena sessão de treino todos os dias e um cachorro que só se aguenta cerca de uma hora por cada mês de idade antes de ter de ir à rua – senão, há uma poça no chão.",
         },
         {
-          strong: "12 semanas mostram se encaixa na tua vida",
-          text: "nos teus dias de trabalho, no teu tempo livre e com o tempo que faz lá fora. Como vai ser o cão da família, podes acrescentar o teu companheiro ou os teus filhos mais tarde.",
+          strong: "12 semanas mostram se a raça se encaixa na tua vida",
+          text: "nos teus dias de trabalho, no teu tempo livre e com o tempo que faz lá fora. Como vai ser o cão da família, podes juntar mais tarde o teu companheiro ou a tua companheira, ou os teus filhos.",
         },
       ],
-      how: "Como começar: cria uma conta como pai ou mãe, adiciona-te a ti próprio como perfil de cuidador e entra com o código de 6 dígitos – no mesmo telemóvel ou noutro.",
+      how: "Como começar: cria uma conta como pai ou mãe, adiciona-te como perfil de cuidador e entra com o código de 6 dígitos – no mesmo telemóvel ou noutro.",
       note: "Disponível hoje: o cão sem raça definida e o gato doméstico gratuitos, e todas as raças de cães e gatos do [registo de animais](page:animals) no desafio de 12 semanas.",
-      link: "Como usar o PetPrep sozinho",
+      link: "Como usar o PetPrep só para ti",
     },
     after: {
       eyebrow: "Quando ele chega a casa",
-      title: "Quando chega o animal verdadeiro, o PetPrep fica.",
+      title: "Quando chega o animal a sério, o PetPrep fica.",
       text: "Toca em «Já temos um animal a sério» e o simulador transforma-se num assistente de IA para os anos que aí vêm – já a conhecer o ritmo da tua família.",
       features: [
         { title: "Coleira inteligente", text: "Atividade e alertas quando algo não está bem." },
-        { title: "Primeiro contacto com IA", text: "Responde depressa e depois passa a um veterinário a sério." },
+        { title: "Primeiro contacto com IA", text: "Responde depressa e depois encaminha-te para um veterinário a sério." },
         { title: "Crescimento e alimentação", text: "Peso semanal, curva de crescimento, quando mudar de ração." },
         { title: "Parceiros de confiança", text: "Veterinários, treinadores e seguradoras perto de ti – claramente identificados." },
         { title: "Teste de ADN", text: "Que raças há no teu cão sem raça definida – e a que deves estar atento." },
@@ -249,30 +249,30 @@ const pt: Dictionary = {
     },
     pricing: { eyebrow: "Preços", title: "Preços simples e justos." },
     faq: { title: "Perguntas que os pais fazem", link: "Todas as perguntas" },
-    final: { title: "Prontos para um animal?", text: "Descobre em 12 semanas. Começa grátis, no iPhone ou no Android." },
+    final: { title: "Prontos para um animal de estimação?", text: "Descobre em 12 semanas. Começa grátis, no iPhone ou no Android." },
   },
   pages: {
     howItWorks: {
       meta: {
-        title: "Como funciona o PetPrep – um desafio de 12 semanas para ver se estão prontos para um animal",
+        title: "Como funciona o PetPrep – o desafio de 12 semanas para saber se estão prontos para um animal de estimação",
         description:
           "Como funciona o desafio PetPrep de 12 semanas: escolher o animal, o Contrato de responsabilidade, os cuidados diários, passeios reais, horas de silêncio e o certificado.",
       },
       eyebrow: "Como funciona",
       title: "Doze semanas que mostram quanto vale uma promessa.",
       lead:
-        "O teu filho cuida de um animal de IA fotorrealista que se porta como um animal verdadeiro, tanto quanto uma aplicação o permite. Uma semana real equivale a um mês da vida do animal, por isso em 12 semanas o animal cresce – e vês se os cuidados se mantêm.",
+        "O teu filho cuida de um animal de IA fotorrealista que se comporta como um animal a sério, tanto quanto uma aplicação o permite. Uma semana real equivale a um mês da vida do animal, por isso em 12 semanas o animal cresce – e vês se os cuidados se mantêm.",
       blocks: [
         {
           type: "steps",
           heading: "Do primeiro toque ao certificado",
           items: [
-            { title: "O pai ou a mãe cria a família", text: "Registas-te com o teu e-mail (o início de sessão com Apple e Google vem a caminho). Adicionas cada filho com uma alcunha e, se quiseres, o ano de nascimento. É tudo o que perguntamos sobre o teu filho." },
-            { title: "Tu escolhes o animal", text: "Escolhe a raça (o cão sem raça definida é gratuito), de onde vem o animal – adotado num abrigo ou comprado a um criador – e a idade à chegada: cachorro, jovem, adulto ou sénior." },
-            { title: "O teu filho entra com um código", text: "Recebes um código de 6 dígitos válido durante 15 minutos. O teu filho escreve-o no telemóvel dele – sem e-mail nem palavra-passe. Perdeu o telemóvel? Termina a sessão em todos os dispositivos com um toque." },
+            { title: "O pai ou a mãe cria a família", text: "Registas-te com o teu e-mail (o início de sessão com a Apple e a Google está a caminho). Adicionas cada filho com uma alcunha e, se quiseres, o ano de nascimento. É tudo o que perguntamos sobre o teu filho." },
+            { title: "Tu escolhes o animal", text: "Escolhes a raça (o cão sem raça definida é gratuito), a origem do animal – adotado num abrigo ou comprado a um criador – e a idade à chegada: cachorro, jovem, adulto ou sénior." },
+            { title: "O teu filho entra com um código", text: "Recebes um código de 6 dígitos válido durante 15 minutos. O teu filho escreve-o no telemóvel dele – sem e-mail nem palavra-passe. Se o telemóvel se perder, termina a sessão em todos os dispositivos com um toque." },
             { title: "O Contrato de responsabilidade", text: "O teu filho assina uma promessa com o dedo. A assinatura é o nascimento do animal: as necessidades começam a contar a partir desse momento, por isso não se perde nada se assinar mais tarde." },
             { title: "Doze semanas de cuidados", text: "Alimentação nas janelas horárias certas, água fresca, limpeza e um passeio diário com passos reais. À medida que o animal cresce, as necessidades mudam." },
-            { title: "O certificado", text: "Ao fim de 12 semanas o animal faz um ano. O teu filho recebe um Certificado de responsabilidade com o seu Care Score – ou ficam os dois a saber, em segurança, que ainda não é a altura certa." },
+            { title: "O certificado", text: "Ao fim de 12 semanas o animal faz um ano. O teu filho recebe um Certificado de responsabilidade com o seu Care Score – ou descobrem os dois, em segurança, que ainda não é a altura certa." },
           ],
         },
         {
@@ -293,19 +293,19 @@ const pt: Dictionary = {
             ["Comida", "Manhã (6–10) e noite (17–21), uma vez por janela", "Fome ao fim de cerca de 12,5 horas"],
             ["Água", "3 vezes por dia, com pelo menos 3 horas de intervalo", "Sede ao fim de cerca de 10 horas"],
             ["Passeio", "6000 passos reais (os cachorros começam com 2000)", "Nenhum passeio → doente na manhã seguinte"],
-            ["Limpeza", "Quando o animal faz asneira – nunca durante as horas de silêncio", "Sem comida nem água até estar limpo"],
+            ["Limpeza", "Quando o animal suja – nunca durante as horas de silêncio", "Sem comida nem água até a sujidade ser limpa"],
           ],
-          note: "Os cachorros comem 4, depois 3, depois 2 vezes por dia e só se aguentam cerca de uma hora por cada mês de idade. Um [border collie](breed:border_collie) precisa de 12 000 passos e fica com fome mais depressa.",
+          note: "Os cachorros comem 4, depois 3, depois 2 vezes por dia e só se aguentam cerca de uma hora por cada mês de idade. Um [border collie](breed:border_collie) precisa de 12\u00a0000 passos e fica com fome mais depressa.",
         },
         {
           type: "cards",
           heading: "Pensado para a vida real em família",
           columns: 3,
           items: [
-            { title: "Horas de silêncio", text: "Define os horários da escola e do sono. O animal abranda, não são enviados lembretes e nunca há asneiras nessas horas." },
+            { title: "Horas de silêncio", text: "Define os horários da escola e do sono. O animal abranda, não são enviados lembretes e nunca aparece sujidade nessas horas." },
             { title: "Refeições durante a escola", text: "Uma janela de alimentação que calha toda dentro das horas de silêncio fica a cargo dos pais – nunca conta contra o teu filho." },
             { title: "Pausa a qualquer momento", text: "Um botão põe o jogo em pausa, por exemplo para uma conversa em família. Nada piora durante a pausa." },
-            { title: "Lembretes gentis", text: "Primeiro o animal dá um toque ao teu filho, depois com urgência. Só se uma necessidade ficar a zero durante uma hora é que recebes um alarme." },
+            { title: "Lembretes gentis", text: "Primeiro, o animal chama suavemente a atenção do teu filho; depois, com mais urgência. Só recebes um alarme se uma necessidade ficar a zero durante uma hora." },
             { title: "Consequências reais", text: "O descuido significa 12 horas no veterinário. Um dia inteiro de descuido significa que o abrigo fica com o animal – e podem recomeçar." },
             { title: "Animais partilhados", text: "Os irmãos podem partilhar um animal. Cada ação é atribuída à criança que a fez, por isso a pontuação continua justa." },
           ],
@@ -313,7 +313,7 @@ const pt: Dictionary = {
         {
           type: "callout",
           title: "Falhar também é um resultado.",
-          text: "Se o animal acabar no abrigo virtual, aprenderam algo valioso – antes de um animal verdadeiro pagar o preço. Podem recomeçar, também com uma raça mais fácil.",
+          text: "Se o animal acabar no abrigo virtual, aprenderam algo valioso – antes de um animal a sério pagar o preço. Podem recomeçar, também com uma raça mais fácil.",
           tone: "dark",
         },
       ],
@@ -344,8 +344,8 @@ const pt: Dictionary = {
           type: "prose",
           heading: "O Care Score",
           paragraphs: [
-            "Care Score = rotinas cumpridas a horas ÷ rotinas previstas × 100, menos 10 pontos por cada doença, entre 0 e 100.",
-            "Uma rotina é uma tarefa concreta: cada janela de alimentação, cada uma das três vezes que se muda a água, limpar cada asneira no prazo de duas horas (a escola e o sono não contam) e atingir a meta diária do passeio.",
+            "Care Score = rotinas cumpridas a horas ÷ rotinas previstas × 100, menos 10 pontos por cada doença, e o resultado fica sempre entre 0 e 100.",
+            "Uma rotina é uma tarefa concreta: cada janela de alimentação, cada uma das três mudanças de água, limpar cada sujidade no prazo de duas horas (a escola e o sono não contam) e atingir a meta diária do passeio.",
             "O tempo em que puseste o jogo em pausa, em que o animal esteve no veterinário ou antes de o contrato ser assinado nunca conta contra o teu filho. Os dias passados ficam fechados, por isso uma pontuação não pode ser reescrita mais tarde.",
             "Os irmãos que partilham um animal dividem cada rotina de forma justa. Só contam as ações de cada criança – se uma fizer tudo, fica com 100 e a outra com 0.",
           ],
@@ -385,14 +385,14 @@ const pt: Dictionary = {
     },
     afterAdoption: {
       meta: {
-        title: "Quando ele chega a casa – o assistente de IA do PetPrep para o teu animal verdadeiro",
+        title: "Quando ele chega a casa – o assistente de IA do PetPrep para o teu animal a sério",
         description:
-          "Quando a tua família tem um animal verdadeiro, o PetPrep torna-se um assistente de IA: atividade da coleira inteligente, alertas, primeiro contacto com IA e com um veterinário a sério, crescimento e alimentação.",
+          "Quando a tua família tem um animal a sério, o PetPrep torna-se um assistente de IA: atividade da coleira inteligente, alertas, primeiro contacto com IA e com um veterinário a sério, crescimento e alimentação.",
       },
       eyebrow: "Quando ele chega a casa",
       title: "A simulação acaba. Os cuidados não.",
       lead:
-        "Quando a tua família leva um animal verdadeiro para casa, um toque transforma o PetPrep num assistente para toda a vida do animal – em tempo real, sem barras de saúde e já a conhecer a rotina da tua família.",
+        "Quando a tua família leva um animal a sério para casa, um toque transforma o PetPrep num assistente para toda a vida do animal – em tempo real, sem barras de saúde e já a conhecer a rotina da tua família.",
       planned: true,
       blocks: [
         {
@@ -401,7 +401,7 @@ const pt: Dictionary = {
           columns: 2,
           items: [
             { title: "Integração com coleiras inteligentes", text: "Liga localizadores GPS e monitores de atividade populares – ou uma coleira PetPrep – e vê a atividade em contexto." },
-            { title: "Alertas que explicam", text: "«O Max correu hoje 2 km, metade do habitual, e comeu uma refeição maior. Um passeio extra à noite vai ajudá-lo a acalmar.» Uma observação, um motivo, uma sugestão." },
+            { title: "Alertas que explicam", text: "«O Max correu hoje 2\u00a0km, metade do habitual, e comeu uma refeição maior. Um passeio extra à noite vai ajudá-lo a acalmar.» Uma observação, um motivo, uma sugestão." },
             { title: "Primeiro a IA, depois um veterinário a sério", text: "Faz uma pergunta ou envia uma fotografia. O assistente responde a perguntas gerais, avalia a urgência e encaminha-te para um veterinário a sério quando é preciso – os sinais urgentes vão diretamente para um veterinário." },
             { title: "Teste de ADN para o teu cão ou gato", text: "Encomenda um teste de ADN na aplicação ou carrega o resultado de um que já tenhas. O PetPrep mostra que raças há na mistura, o que é típico delas e que problemas de saúde são mais comuns nessas raças – com fontes. As percentagens de raça não são um diagnóstico e um teste de ADN não mostra alergias." },
             { title: "Uma ficha para o veterinário", text: "A mistura de raças e eventuais resultados diretos do ADN numa só página ou código QR, para o teu veterinário saber logo o que há num cão ou gato sem raça definida." },
@@ -427,13 +427,13 @@ const pt: Dictionary = {
     },
     pricing: {
       meta: {
-        title: "Preços – o PetPrep é gratuito para começar, 49,99 € pelo desafio de 12 semanas",
+        title: "Preços – o PetPrep é gratuito para começar, 49,99\u00a0€ pelo desafio de 12 semanas",
         description:
-          "O cão sem raça definida é gratuito para sempre. O Desafio PetPrep de 12 semanas custa 49,99 € por animal, numa compra única. Um só preço para os irmãos que partilham um animal.",
+          "O cão sem raça definida é gratuito para sempre. O Desafio PetPrep de 12 semanas custa 49,99\u00a0€ por animal, numa compra única. Um só preço para os irmãos que partilham um animal.",
       },
       eyebrow: "Preços",
       title: "Preços simples e justos.",
-      lead: "Começa grátis com um cão sem raça definida. Compra o desafio completo de 12 semanas quando estiveres pronto – as 12 semanas começam com a compra.",
+      lead: "Começa grátis com um cão sem raça definida. Compra o desafio completo de 12 semanas quando for o momento certo – as 12 semanas começam com a compra.",
       blocks: [
         { type: "pricing" },
         {
@@ -444,11 +444,11 @@ const pt: Dictionary = {
             "Na aplicação, o teu filho pede coisas para o animal; tu decides e compras. O teu filho nunca vê preços. Os artigos são só estéticos: nunca alteram as necessidades, o Care Score nem o certificado. Também disponíveis para o cão sem raça definida e o gato doméstico gratuitos.",
           head: ["Artigo", "Preço"],
           rows: [
-            ["Cama (gato: cesto)", "5,99 €"],
-            ["Tigelas para comida e água", "5,99 €"],
-            ["Brinquedo (cão: corda ou brinquedo que chia; gato: rato de peluche ou cana com penas)", "5,99 € por brinquedo"],
-            ["Guloseimas, pacote de 10", "2,99 €"],
-            ["Pack de boas-vindas: cama + tigelas + brinquedo", "15,99 € (em vez de 17,97 €)"],
+            ["Cama (gato: cesto)", "5,99\u00a0€"],
+            ["Tigelas para comida e água", "5,99\u00a0€"],
+            ["Brinquedo (cão: corda ou brinquedo que chia; gato: rato de peluche ou cana com penas)", "5,99\u00a0€ por brinquedo"],
+            ["Guloseimas, pacote de 10", "2,99\u00a0€"],
+            ["Pacote de boas-vindas: cama + tigelas + brinquedo", "15,99\u00a0€ (em vez de 17,97\u00a0€)"],
           ],
           note: "Os Desejos chegam com a próxima atualização da aplicação; podem ser comprados assim que os artigos estiverem disponíveis na App Store e no Google Play. Os preços são os da Eslovénia; a loja mostra o preço do teu país.",
         },
@@ -462,7 +462,7 @@ const pt: Dictionary = {
             { q: "Como pago?", a: "Na aplicação, através da App Store ou do Google Play. Os reembolsos são tratados pela tua conta da loja." },
             { q: "O que são os Desejos, e o meu filho pode comprar coisas sozinho?", a: "O teu filho pode pedir uma cama, tigelas, um brinquedo ou guloseimas para o animal – até três pedidos abertos de cada vez. Recebes uma notificação e compras ou escolhes «Agora não». O teu filho nunca vê preços e não pode comprar nada na aplicação da criança." },
             { q: "Os artigos comprados tornam o jogo mais fácil?", a: "Não. Os artigos são só estéticos. Nunca alteram as necessidades, o Care Score nem o certificado, e nos Desejos não há veterinário nem medicamentos – nunca «paga para salvar o teu animal»." },
-            { q: "É igual para adultos?", a: "Sim. Se usares o PetPrep sozinho para experimentar uma raça, aplica-se o mesmo: o cão sem raça definida é gratuito para sempre e o desafio de 12 semanas custa 49,99 € por animal." },
+            { q: "É igual para adultos?", a: "Sim. Se usares o PetPrep sozinho para experimentar uma raça, aplica-se o mesmo: o cão sem raça definida é gratuito para sempre e o desafio de 12 semanas custa 49,99\u00a0€ por animal." },
           ],
         },
       ],
@@ -471,7 +471,7 @@ const pt: Dictionary = {
       meta: {
         title: "Perguntas frequentes – o que os pais perguntam sobre o PetPrep",
         description:
-          "Respostas sobre o PetPrep: tempo diário, uso por adultos, privacidade e localização, passos, irmãos, o que acontece se a criança falhar, idiomas, espécies, animais verdadeiros.",
+          "Respostas sobre o PetPrep: tempo diário, uso por adultos, privacidade e localização, passos, irmãos, o que acontece se a criança falhar, idiomas, espécies, animais a sério.",
       },
       eyebrow: "Perguntas frequentes",
       title: "Perguntas que os pais fazem.",
@@ -480,9 +480,9 @@ const pt: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "Para que idades é o PetPrep?", a: "Para crianças, foi pensado para idades entre os 7 e os 12 anos, aproximadamente, e funciona bem até aos 16. Os adultos também o usam, para testar se uma raça em particular é mesmo para eles antes de comprarem ou adotarem." },
-            { q: "Posso usar o PetPrep sozinho, sem crianças?", a: "Sim. Cria uma conta como pai ou mãe e adiciona-te a ti próprio como perfil de cuidador – basta uma alcunha; deixa o ano de nascimento em branco. Escolhe a raça, cria um código de 6 dígitos e depois, no mesmo telemóvel ou noutro, escolhe «I’m a kid» («Sou criança») e escreve o código – é assim que passas a ser o cuidador. Como vai ser o cão da família, podes acrescentar o teu companheiro ou os teus filhos mais tarde, para cuidarem dele juntos. O preço é o mesmo que para as famílias." },
-            { q: "Quanto tempo leva por dia?", a: "Alguns minutos para a comida, a água e a limpeza – mais o passeio de que um cão verdadeiro precisaria de qualquer forma." },
+            { q: "Para que idades é o PetPrep?", a: "Foi pensado para crianças dos 7 aos 12 anos, aproximadamente, e funciona bem até aos 16. Os adultos também o usam, para testar se uma raça em particular é mesmo para eles antes de comprarem ou adotarem." },
+            { q: "Posso usar o PetPrep sem crianças?", a: "Sim. Cria uma conta como pai ou mãe e adiciona-te como perfil de cuidador – basta uma alcunha; deixa o ano de nascimento em branco. Escolhe a raça, cria um código de 6 dígitos e depois, no mesmo telemóvel ou noutro, escolhe «I’m a kid» («Sou criança») e escreve o código – é assim que passas a ser o cuidador. Como vai ser o cão da família, podes juntar mais tarde o teu companheiro ou a tua companheira, ou os teus filhos, para cuidarem dele juntos. O preço é o mesmo das famílias." },
+            { q: "Quanto tempo exige por dia?", a: "Alguns minutos para a comida, a água e a limpeza – mais o passeio de que um cão a sério precisaria de qualquer forma." },
             { q: "A aplicação segue a localização do meu filho?", a: "Não. Para os passeios, só conta passos. Se o permitires, lê-os do Apple Health (iPhone) ou do Health Connect (Android) – só leitura e só passos; quando disponível, usa também o sensor de movimento do telemóvel. Pede autorização no ecrã do passeio. Não usa GPS." },
             { q: "O meu filho precisa de um endereço de e-mail?", a: "Não. Tu crias a conta; o teu filho entra com um código de 6 dígitos que tu geras. Só guardamos uma alcunha e, se quiseres, o ano de nascimento." },
             { q: "O que acontece se o meu filho se esquecer?", a: "Primeiro o animal envia lembretes gentis. Se uma necessidade ficar a zero, o animal adoece e passa 12 horas no veterinário. Depois de um dia inteiro sem cuidados, o abrigo virtual fica com ele – e podem recomeçar." },
@@ -491,7 +491,7 @@ const pt: Dictionary = {
             { q: "É assustador para as crianças?", a: "Não. As consequências são reais, mas suaves: o animal vai ao veterinário ou para o abrigo, nunca há nada chocante e há sempre um novo começo." },
             { q: "Que animais estão disponíveis?", a: "[Cães](species:dog) e [gatos](species:cat) hoje: um cão sem raça definida e um gato doméstico gratuitos e, no desafio de 12 semanas, todas as raças do [registo de animais](page:animals), que indica também as suas necessidades com fontes. Estão planeadas mais espécies." },
             { q: "Em que idiomas?", a: "Hoje a aplicação está em inglês e em esloveno. Vão chegar mais idiomas à medida que o PetPrep for lançado em novos países." },
-            { q: "O que acontece depois de termos um animal verdadeiro?", a: "O PetPrep pode tornar-se um assistente de IA para o teu animal verdadeiro. Esta parte está em desenvolvimento." },
+            { q: "O que acontece depois de termos um animal a sério?", a: "O PetPrep pode tornar-se um assistente de IA para o teu animal a sério. Esta parte está em desenvolvimento." },
           ],
         },
       ],
@@ -505,7 +505,7 @@ const pt: Dictionary = {
       eyebrow: "Parceiros",
       title: "Famílias mais bem preparadas para todos os que gostam de animais.",
       lead:
-        "As famílias que terminam o PetPrep sabem o que um animal exige de verdade. Estamos a construir uma rede de parceiros que vai ao encontro delas no momento certo – com identificação clara e sempre com o consentimento da família.",
+        "As famílias que terminam o PetPrep sabem o que um animal exige a sério. Estamos a construir uma rede de parceiros que vai ao encontro delas no momento certo – com identificação clara e sempre com o consentimento da família.",
       planned: true,
       blocks: [
         {
@@ -515,9 +515,9 @@ const pt: Dictionary = {
           items: [
             { title: "Lojas de animais", text: "Chega às famílias no momento em que provam que estão prontas – por exemplo, com uma oferta de kit inicial junto ao certificado." },
             { title: "Abrigos, associações de resgate e criadores", text: "Recomenda o PetPrep antes da adoção ou da compra, para haver menos decisões impulsivas e menos devoluções." },
-            { title: "Veterinários", text: "Quando o animal verdadeiro chega a casa, o assistente de IA responde às primeiras perguntas e encaminha os donos para ti, com um resumo do caso partilhado apenas com consentimento." },
-            { title: "Treinadores e escolas de treino canino", text: "Recomendações e marcações quando uma família passa para um cão verdadeiro." },
-            { title: "Seguradoras de animais", text: "Ofertas adequadas à raça quando um animal verdadeiro é registado – claramente identificadas." },
+            { title: "Veterinários", text: "Quando o animal a sério chega a casa, o assistente de IA responde às primeiras perguntas e encaminha os donos para ti, com um resumo do caso partilhado apenas com consentimento." },
+            { title: "Treinadores e escolas de treino canino", text: "Recomendações e marcações quando uma família passa para um cão a sério." },
+            { title: "Seguradoras de animais", text: "Ofertas adequadas à raça quando um animal a sério é registado – claramente identificadas." },
             { title: "Fabricantes de coleiras e IoT", text: "Integração dos dados de atividade para alertas mais inteligentes e explicados." },
           ],
         },
@@ -543,7 +543,7 @@ const pt: Dictionary = {
       eyebrow: "Investidores",
       title: "De um desafio de 12 semanas a uma relação de 10–15 anos.",
       lead:
-        "O PetPrep dá aos pais uma prova objetiva de que o filho está ou não preparado para um animal verdadeiro – e depois fica com a família durante toda a vida do animal.",
+        "O PetPrep dá aos pais uma prova objetiva de que o filho está ou não preparado para um animal a sério – e depois fica com a família durante toda a vida do animal.",
       blocks: [
         {
           type: "cards",
@@ -552,7 +552,7 @@ const pt: Dictionary = {
           items: [
             { title: "Problema", text: "As crianças prometem cuidar de um animal; os pais não têm uma forma neutra de o testar antes de investirem dinheiro e anos de cuidados." },
             { title: "Solução", text: "Uma simulação realista de 12 semanas com um painel dos pais em direto e um Care Score objetivo, que termina com um Certificado de responsabilidade." },
-            { title: "Expansão", text: "Quando o animal verdadeiro chega a casa, um assistente de IA para ele: dados da coleira, primeiro contacto com IA e veterinários, crescimento e nutrição, testes de ADN, serviços de parceiros." },
+            { title: "Expansão", text: "Quando o animal a sério chega a casa, um assistente de IA para ele: dados da coleira, primeiro contacto com IA e veterinários, crescimento e nutrição, testes de ADN, serviços de parceiros." },
           ],
         },
         {
@@ -561,10 +561,10 @@ const pt: Dictionary = {
           head: ["Fonte de receita", "Modelo", "Estado"],
           rows: [
             ["Cão sem raça definida", "Gratuito para sempre (aquisição)", "Decidido"],
-            ["Desafio PetPrep de 12 semanas", "49,99 € por animal, compra única", "Decidido"],
-            ["Desejos – coisas para o animal (só estéticas)", "Compras na aplicação: 5,99 € por artigo, guloseimas a 2,99 € por 10, pack a 15,99 €; também na versão gratuita", "Desenvolvido; compra na loja em breve"],
+            ["Desafio PetPrep de 12 semanas", "49,99\u00a0€ por animal, compra única", "Decidido"],
+            ["Desejos – coisas para o animal (só estéticas)", "Compras na aplicação: 5,99\u00a0€ por artigo, guloseimas a 2,99\u00a0€ por 10, pack a 15,99\u00a0€; também na versão gratuita", "Desenvolvido; compra na loja em breve"],
             ["Ofertas de parceiros", "Comissões de lojas, seguradoras, veterinários e treinadores", "Planeado"],
-            ["Assistente de IA para o animal verdadeiro", "Subscrição", "Planeado"],
+            ["Assistente de IA para o animal a sério", "Subscrição", "Planeado"],
             ["Testes de ADN para cães e gatos", "Venda de testes e comissão de parceiros", "Planeado"],
           ],
         },
@@ -574,16 +574,16 @@ const pt: Dictionary = {
           items: [
             "Motor de jogo no servidor com sincronização em tempo real, testado com simulações de dias inteiros, dias de mudança da hora e casos-limite familiares.",
             "Famílias com vários pais, vários filhos e animais partilhados, com uma pontuação justa por criança.",
-            "Animais de IA fotorrealistas e únicos, com custos de IA medidos e limitados, e media guardados nos nossos próprios servidores na UE.",
+            "Animais de IA fotorrealistas e únicos, com custos de IA medidos e limitados, e ficheiros multimédia guardados nos nossos próprios servidores na UE.",
             "Necessidades dos animais baseadas em fontes veterinárias e de clubes de canicultura citadas, com cada número rastreável até à sua fonte.",
-            "Segurança infantil desde a conceção: acesso por PIN sem e-mail, dados mínimos, sem anúncios, só media verificados.",
+            "Segurança infantil desde a conceção: acesso por PIN sem e-mail, dados mínimos, sem anúncios, só conteúdos multimédia verificados.",
           ],
         },
         {
           type: "prose",
           heading: "Fase",
           paragraphs: [
-            "O PetPrep está em pré-lançamento, com uma beta fechada planeada. O primeiro mercado é a Eslovénia e a região, seguidos da região DACH e do Reino Unido; o produto foi construído para localização global desde o primeiro dia.",
+            "O PetPrep está em pré-lançamento, com uma beta fechada planeada. O primeiro mercado é a Eslovénia e a região, seguindo-se a região DACH e o Reino Unido; o produto foi pensado desde o primeiro dia para ser localizado em qualquer país.",
             "Fundador: David Tacer, programador de software e empreendedor (Data Vallis David Tacer s.p., Dravograd, Eslovénia). Mais [sobre nós](page:about).",
           ],
         },
@@ -758,7 +758,7 @@ const pt: Dictionary = {
               heading: "1. O serviço",
               paragraphs: [
                 "O PetPrep é disponibilizado por {company}, {address}; {companyIds} – a mesma empresa que é responsável pelo tratamento de dados nos termos da política de privacidade. Estes termos aplicam-se à aplicação PetPrep e ao site petprep.si.",
-                "O PetPrep é uma simulação de cuidados com animais de estimação. Ajuda famílias e pessoas a descobrir se estão preparadas para cuidar de um animal verdadeiro – crianças e adultos que querem testar se uma raça lhes convém antes de comprar ou adotar. É uma ferramenta educativa, não aconselhamento veterinário nem outro aconselhamento profissional.",
+                "O PetPrep é uma simulação de cuidados com animais de estimação. Ajuda famílias e pessoas a descobrir se estão preparadas para cuidar de um animal a sério – crianças e adultos que querem testar se uma raça lhes convém antes de comprar ou adotar. É uma ferramenta educativa, não aconselhamento veterinário nem outro aconselhamento profissional.",
               ],
             },
             {
@@ -779,15 +779,15 @@ const pt: Dictionary = {
                 "O Care Score (0–100) mostra que parte das rotinas previstas (alimentação, água, limpeza, o passeio, uma sessão de treino) o cuidador cumpriu sozinho; cada doença do animal fá-lo descer. O tempo em que o jogo está parado, em que o animal está no veterinário e as horas de silêncio nunca contam contra o cuidador.",
                 "Ao fim de 12 semanas é registada uma pontuação final que não muda depois; os cuidados após o desafio não a afetam. Com uma pontuação de 70 ou mais, podes criar na aplicação um Certificado de responsabilidade (PDF); abaixo de 70 recebes um relatório do desafio.",
                 "Se a comida, a água ou a limpeza ficarem a 0% durante 24 horas, o animal é «levado para o abrigo» (fim do jogo). O jogo com esse animal termina, não há certificado e recebes um relatório do desafio.",
-                "O Care Score e o certificado mostram apenas como o cuidador tratou de um animal simulado na aplicação. Não são uma garantia de que uma criança, ou qualquer outra pessoa, está preparada para um animal verdadeiro, não são uma avaliação profissional e não substituem o teu próprio juízo nem o conselho de um veterinário, criador ou abrigo. A decisão sobre um animal verdadeiro é sempre tua.",
-                "As regras do jogo (refeições, passeios e cuidados por raça e idade) são simplificadas e baseiam-se em fontes públicas. Não são aconselhamento veterinário; pergunta a um veterinário sobre a saúde e os cuidados de um animal verdadeiro.",
+                "O Care Score e o certificado mostram apenas como o cuidador tratou de um animal simulado na aplicação. Não são uma garantia de que uma criança, ou qualquer outra pessoa, está preparada para um animal a sério, não são uma avaliação profissional e não substituem o teu próprio juízo nem o conselho de um veterinário, criador ou abrigo. A decisão sobre um animal a sério é sempre tua.",
+                "As regras do jogo (refeições, passeios e cuidados por raça e idade) são simplificadas e baseiam-se em fontes públicas. Não são aconselhamento veterinário; pergunta a um veterinário sobre a saúde e os cuidados de um animal a sério.",
               ],
             },
             {
               heading: "4. Funcionalidades gratuitas e pagas, compras e reembolsos",
               items: [
                 "O cão sem raça definida e o gato doméstico são gratuitos para sempre e são a forma de experimentar o PetPrep; não há período experimental gratuito do desafio. Um animal gratuito não tem programa de 12 semanas nem certificado, os pais veem o histórico dos últimos 7 dias e o animal tem um conjunto básico de imagens e vídeos.",
-                "O Desafio PetPrep de 12 semanas com uma raça paga é uma compra única (49,99 € na Eslovénia; a loja mostra o preço do teu país). Uma compra é um desafio para um animal; cada novo desafio com um novo animal é uma nova compra. Os irmãos que cuidam do mesmo animal pagam uma só vez.",
+                "O Desafio PetPrep de 12 semanas com uma raça paga é uma compra única (49,99\u00a0€ na Eslovénia; a loja mostra o preço do teu país). Uma compra é um desafio para um animal; cada novo desafio com um novo animal é uma nova compra. Os irmãos que cuidam do mesmo animal pagam uma só vez.",
                 "O pai ou a mãe compra na sua própria aplicação através da App Store ou do Google Play; não há compras na aplicação da criança. A loja processa o pagamento segundo os seus próprios termos.",
                 "Podes criar um animal do desafio antes de comprar. Até o desafio estar pago, o jogo está em pausa: o animal espera em segurança, as suas necessidades não descem e nada piora. Depois de comprares, o jogo continua onde parou.",
                 "Os reembolsos são tratados pela App Store e pelo Google Play segundo as suas próprias regras; pede-o à loja onde compraste. Se a loja reembolsar uma compra antes de o desafio terminar, o jogo desse animal volta a ficar em pausa. As imagens e os vídeos criados depois da compra mantêm-se.",
@@ -838,7 +838,7 @@ const pt: Dictionary = {
             {
               heading: "10. Responsabilidade",
               paragraphs: [
-                "Trabalhamos para manter o PetPrep disponível e correto, mas o serviço é prestado tal como está; depende também de serviços de terceiros (as lojas de aplicações, o Apple Health, o Health Connect, as notificações push, o serviço de IA) que não controlamos. Na medida em que a lei o permite, não somos responsáveis por danos indiretos nem por decisões sobre comprar ou adotar um animal verdadeiro. Nada nestes termos limita os direitos que tens enquanto consumidor ao abrigo de legislação imperativa.",
+                "Trabalhamos para manter o PetPrep disponível e correto, mas o serviço é prestado tal como está; depende também de serviços de terceiros (as lojas de aplicações, o Apple Health, o Health Connect, as notificações push, o serviço de IA) que não controlamos. Na medida em que a lei o permite, não somos responsáveis por danos indiretos nem por decisões sobre comprar ou adotar um animal a sério. Nada nestes termos limita os direitos que tens enquanto consumidor ao abrigo de legislação imperativa.",
               ],
             },
             {
@@ -874,7 +874,7 @@ const pt: Dictionary = {
       meta: {
         title: "Segurança infantil – como o PetPrep protege as crianças",
         description:
-          "Como o PetPrep protege as crianças: contas criadas pelos pais, acesso por código sem e-mail, dados mínimos, sem anúncios nem conversas, sem seguimento da localização, conteúdos verificados.",
+          "Como o PetPrep protege as crianças: contas criadas pelos pais, acesso por código sem e-mail, dados mínimos, sem anúncios nem conversas, sem rastreio da localização, conteúdos verificados.",
       },
       eyebrow: "Confiança",
       title: "Feito para crianças desde a primeira linha de código.",
@@ -889,7 +889,7 @@ const pt: Dictionary = {
             { title: "Sem e-mail nem palavra-passe para as crianças", text: "A criança entra com o código dado pelos pais. Os códigos errados, expirados e já usados recebem todos a mesma resposta, para que ninguém consiga adivinhar que crianças existem." },
             { title: "Dados mínimos", text: "Uma alcunha e, opcionalmente, o ano de nascimento. Sem apelido, sem data de nascimento, sem fotografias da criança." },
             { title: "Sem anúncios, sem conversas, sem desconhecidos", text: "Não há publicidade nem forma de contactar outros utilizadores." },
-            { title: "Sem seguimento da localização", text: "Os passeios contam apenas passos – do Apple Health ou do Health Connect (com a tua autorização, só leitura) ou do sensor de movimento do telemóvel. Não se usa GPS." },
+            { title: "Sem rastreio da localização", text: "Os passeios contam apenas passos – do Apple Health ou do Health Connect (com a tua autorização, só leitura) ou do sensor de movimento do telemóvel. Não se usa GPS." },
             { title: "Atualizações em direto privadas", text: "As atualizações em tempo real só chegam às crianças que cuidam desse animal e aos pais da mesma família." },
             { title: "Conteúdos verificados", text: "Só são mostradas imagens e vídeos produzidos para o PetPrep e verificados pelo nosso servidor, a partir do nosso próprio armazenamento na UE." },
             { title: "Notificações sem nomes", text: "As notificações nunca incluem o nome da criança nem do animal, porque podem aparecer no ecrã de bloqueio." },
@@ -1035,8 +1035,8 @@ const pt: Dictionary = {
           id: "mission",
           heading: "A nossa missão",
           paragraphs: [
-            "Todas as famílias já ouviram «Prometo que tomo conta dele». O PetPrep transforma essa promessa numa prova: durante 12 semanas, uma criança – ou um adulto que quer uma raça em particular – cuida de um animal de IA realista com as necessidades diárias de um animal verdadeiro, e os pais veem todos os dias se os cuidados se mantêm.",
-            "Falhar na simulação também é um bom resultado: a família descobre antes de um animal verdadeiro sofrer e antes de se comprometer com anos de cuidados e despesas. Quando um animal verdadeiro chega mesmo a casa, queremos que o PetPrep continue útil durante toda a vida do animal.",
+            "Todas as famílias já ouviram «Prometo que tomo conta dele». O PetPrep transforma essa promessa numa prova: durante 12 semanas, uma criança – ou um adulto que quer uma raça em particular – cuida de um animal de IA realista com as necessidades diárias de um animal a sério, e os pais veem todos os dias se os cuidados se mantêm.",
+            "Falhar na simulação também é um bom resultado: a família descobre antes de um animal a sério sofrer e antes de se comprometer com anos de cuidados e despesas. Quando um animal a sério chega mesmo a casa, queremos que o PetPrep continue útil durante toda a vida do animal.",
           ],
         },
         {
@@ -1048,7 +1048,7 @@ const pt: Dictionary = {
             "Cada facto indica a sua fonte e tem ligação a ela. As fontes são classificadas consoante o peso que merecem: A – padrões de raça, artigos com revisão por pares e diretrizes de associações veterinárias; B – páginas de conselhos de hospitais veterinários, universidades e instituições nacionais de proteção animal; C – resumos secundários (enciclopédias, artigos de imprensa), usados apenas em conjunto com uma fonte A ou B.",
             "Só os factos com fonte são apresentados como factos. Um valor que nenhuma fonte sustente não é publicado. Quando as fontes discordam, cada uma é apresentada com o seu próprio valor.",
             "As regras do jogo não são aconselhamento veterinário. Quando o jogo precisa de um número que as fontes não dão com exatidão (por exemplo, uma meta diária de passos), o PetPrep decide-o a partir das fontes e mostra-o apenas em «Como o PetPrep o simula», identificado como regra do jogo.",
-            "As notas de saúde são meramente informativas. Resumem o que as fontes dizem sobre uma raça e não foram revistas por um veterinário. Para um animal verdadeiro, pergunta a um veterinário.",
+            "As notas de saúde são meramente informativas. Resumem o que as fontes dizem sobre uma raça e não foram revistas por um veterinário. Para um animal a sério, pergunta a um veterinário.",
             "Os padrões de raça são resumidos por palavras nossas, nunca copiados extensamente, e nunca chamamos «hipoalergénica» a nenhuma raça.",
             "O registo é gerado a partir dos dados de investigação do PetPrep, os mesmos que a aplicação usa. Quando uma fonte ou um valor muda, o registo é exportado de novo e cada página de raça mostra a data da sua última atualização. Se encontrares um erro, escreve para hello@petprep.si.",
           ],
@@ -1074,7 +1074,7 @@ const pt: Dictionary = {
           id: "who",
           heading: "Quem é o Curio?",
           paragraphs: [
-            "O Curio começou por ser o símbolo do nosso logótipo: um quadrado cor de grafite com cantos arredondados, dois olhos grandes a olhar para cima e para a direita e um pequeno nariz cor de framboesa. Em esloveno chamamos-lhe Radovednež – «o curioso». Em outubro de 2026 ganhou uns bracinhos, umas perninhas curtas e uma coleira verde-menta com uma chapa redonda, e tornou-se uma personagem.",
+            "O Curio começou por ser o símbolo do nosso logótipo: um quadrado cor de grafite com cantos arredondados, dois olhos grandes a olhar para cima e para a direita e um pequeno nariz cor de framboesa. Em esloveno chamamos-lhe Radovednež – «o curioso». Em outubro de 2026 ganhou uns bracinhos, umas perninhas curtas e uma coleira verde-menta com uma medalha redonda, e tornou-se uma personagem.",
             "O Curio não tem boca. Tudo o que sente vê-se nos olhos: muito abertos quando alguém sussurra «passeio?», duas linhas sonolentas quando ainda ninguém chegou a casa, arcos felizes quando a tigela está cheia.",
             "O Curio não é menino nem menina, nem cão nem gato. Representa todos os animais que esperam, todos os dias, que alguém cumpra uma promessa.",
           ],
@@ -1086,7 +1086,7 @@ const pt: Dictionary = {
           columns: 3,
           items: [
             { title: "Nome", text: "Curio em inglês, Radovednež em esloveno." },
-            { title: "Feito de", text: "Grafite macia, uma coleira verde-menta e uma chapa cor de framboesa – as cores do PetPrep." },
+            { title: "Feito de", text: "Grafite macia, uma coleira verde-menta e uma medalha cor de framboesa – as cores do PetPrep." },
             { title: "Fala", text: "Nunca. Só com os olhos." },
             { title: "Adora", text: "Passeios, uma tigela cheia e crianças que voltam ao 15.º dia." },
             { title: "Vive", text: "Nos nossos vídeos curtos no [TikTok](https://www.tiktok.com/@petprep.si) e no [Instagram](https://www.instagram.com/petprep.si/), @petprep.si." },
@@ -1112,7 +1112,7 @@ const pt: Dictionary = {
               label: "Na aplicação · imagem de IA",
               tone: "mint",
               title: "O teu animal no PetPrep",
-              text: "Uma simulação realista com IA de uma raça verdadeira – como este [labrador retriever](+breed:labrador_retriever) – com as necessidades diárias de um animal verdadeiro: refeições, água, passeios contados em passos reais, limpeza e treino. Vê [como funciona](+page:howItWorks).",
+              text: "Uma simulação realista com IA de uma raça real – como este [labrador retriever](+breed:labrador_retriever) – com as necessidades diárias de um animal a sério: refeições, água, passeios contados em passos reais, limpeza e treino. Vê [como funciona](+page:howItWorks).",
             },
           ],
         },
@@ -1133,7 +1133,7 @@ const pt: Dictionary = {
           id: "media-kit",
           heading: "Kit de imprensa",
           intro: "Para criadores de conteúdos, jornalistas e parceiros que escrevem sobre o PetPrep. Dúvidas ou ideias de colaboração: hello@petprep.si.",
-          all: { href: "/curio/petprep-curio-media-kit.zip", label: "Descarregar tudo", meta: "ZIP, 1,1 MB" },
+          all: { href: "/curio/petprep-curio-media-kit.zip", label: "Descarregar tudo", meta: "ZIP, 1,1\u00a0MB" },
           items: [
             { href: "/curio/kit/curio-transparent.png", label: "Curio, fundo transparente", meta: "PNG, 848 × 1117" },
             { href: "/curio/kit/curio-square-light.png", label: "Curio, quadrado, claro", meta: "PNG, 1080 × 1080" },
@@ -1145,8 +1145,8 @@ const pt: Dictionary = {
           rulesHeading: "Como usar o Curio",
           rules: [
             "Usa o Curio em publicações, artigos e vídeos sobre o PetPrep. Para anúncios, produtos ou merchandising, pergunta-nos primeiro.",
-            "Mostra o Curio tal como é: cubo cor de grafite, olhos brancos, nariz cor de framboesa, coleira verde-menta. Não lhe acrescentes boca, orelhas, pelo ou sobrancelhas, e não lhe mudes as cores nem o estiques.",
-            "O Curio é a mascote do PetPrep. Não o apresentes como o animal da aplicação nem como um cão ou gato verdadeiro.",
+            "Mostra o Curio tal como é: cubo cor de grafite, olhos brancos, nariz cor de framboesa, coleira verde-menta. Não lhe acrescentes boca, orelhas, pelo ou sobrancelhas, e não lhe mudes as cores nem o deformes.",
+            "O Curio é a mascote do PetPrep. Não o apresentes como o animal da aplicação nem como um cão ou gato a sério.",
             "Não uses o Curio de forma a sugerir que o PetPrep apoia outro produto, causa ou pessoa.",
           ],
         },
@@ -1156,7 +1156,7 @@ const pt: Dictionary = {
           heading: "Perguntas sobre o Curio",
           items: [
             { q: "O Curio é um cão ou um gato?", a: "Nem uma coisa nem outra. O Curio é um pequeno cubo do nosso logótipo. Faz de animal nos nossos vídeos, mas não pertence a nenhuma espécie." },
-            { q: "O meu filho pode cuidar do Curio na aplicação?", a: "Não. Na aplicação, a tua família cuida de um animal realista de uma raça verdadeira, com as mesmas necessidades diárias do animal verdadeiro. O Curio só aparece nos nossos vídeos e no site." },
+            { q: "O meu filho pode cuidar do Curio na aplicação?", a: "Não. Na aplicação, a tua família cuida de um animal realista de uma raça real, com as mesmas necessidades diárias do animal a sério. O Curio só aparece nos nossos vídeos e no site." },
             { q: "Porque é que o Curio não tem boca?", a: "Porque o nosso logótipo também não tem. O Curio diz tudo com os olhos – e nunca pede guloseimas em voz alta." },
             { q: "Onde posso ver os novos vídeos do Curio?", a: "No TikTok e no Instagram, @petprep.si." },
           ],
@@ -1173,45 +1173,45 @@ const pt: Dictionary = {
       eyebrow: "Conselhos",
       title: "O que é seguro para o teu animal?",
       lead:
-        "Respostas claras e com fontes para as famílias: que alimentos são tóxicos, quais são arriscados e quais estão bem como guloseima – para cães e gatos, e mais espécies a caminho. Cada resposta tem ligação às suas fontes.",
+        "Respostas claras e com fontes para as famílias: que alimentos são tóxicos, quais são arriscados e quais se podem dar como guloseima – para cães e gatos, e mais espécies a caminho. Cada resposta tem ligação às suas fontes.",
       blocks: [{ type: "careHub" }],
     },
     coloring: {
       meta: {
         title: "Desenhos para colorir de cães e gatos, grátis para imprimir | PetPrep",
         description:
-          "Desenhos para colorir grátis para imprimir: golden retriever, labrador, border collie, cachorro sem raça definida, gatinho e Curio. PDF em A4 e US Letter, cada um com um facto real sobre cuidados com animais e a sua fonte.",
+          "Desenhos para colorir grátis para imprimir: golden retriever, labrador, border collie, cachorro sem raça definida, gatinho e Curio. PDF em A4 e US Letter, cada um com uma curiosidade real sobre cuidados com animais e a respetiva fonte.",
       },
       navLabel: "Desenhos para colorir",
       eyebrow: "Desenhos para colorir",
       title: "Desenhos para colorir grátis, para imprimir.",
       lead:
-        "Cães, gatos e o Curio para colorir ou copiar – imprime uma página ou o livro inteiro. Cada página tem um facto real sobre cuidados com animais, de uma fonte veterinária ou de um clube de canicultura, para lerem juntos.",
+        "Cães, gatos e o Curio para colorir ou copiar – imprime uma página ou o livro inteiro. Cada página tem uma curiosidade real sobre cuidados com animais, de uma fonte veterinária ou de um clube de canicultura, para lerem juntos.",
       blocks: [{ type: "coloringHub" }],
     },
     kids: {
       meta: {
-        title: "Para crianças que querem um animal – desenhos para colorir, Curio e #walkyourpet | PetPrep",
+        title: "Para crianças que querem um animal de estimação – desenhos para colorir, Curio e #walkyourpet | PetPrep",
         description:
-          "Tudo o que o PetPrep tem para crianças: desenhos para colorir grátis para imprimir, com factos reais sobre cuidados com animais, o Curio, a nossa mascote, e o #walkyourpet – para crianças e pais que se preparam juntos para ter um animal.",
+          "Tudo o que o PetPrep tem para crianças: desenhos para colorir grátis para imprimir, com curiosidades reais sobre cuidados com animais, o Curio, a nossa mascote, e o #walkyourpet – para crianças e pais que se preparam juntos para ter um animal de estimação.",
       },
       navLabel: "Para crianças",
       eyebrow: "Para crianças",
-      title: "Para crianças que querem um animal.",
-      lead: "Desenhos para colorir e imprimir, o Curio e o #walkyourpet – para crianças e pais que se preparam juntos para ter um animal.",
+      title: "Para crianças que querem um animal de estimação.",
+      lead: "Desenhos para colorir e imprimir, o Curio e o #walkyourpet – para crianças e pais que se preparam juntos para ter um animal de estimação.",
       hero: { src: "/curio/curio-waving.webp", alt: "O Curio, a mascote do PetPrep: um cubo cor de grafite, macio, com grandes olhos brancos, um pequeno nariz cor de framboesa e uma coleira verde-menta, a acenar.", width: 720, height: 948 },
       blocks: [{ type: "kidsHub" }],
     },
     walkyourpet: {
       meta: {
-        title: "#walkyourpet – o movimento que começou com uma criança de verdade",
+        title: "#walkyourpet – o movimento que começou com uma criança real",
         description:
           "«We could go walk your pet.» Foi uma criança que o disse e agora é um movimento: famílias que saem à rua porque um animal precisa de passear. Como começou, o que significa no PetPrep e como participar.",
       },
       navLabel: "#walkyourpet",
       eyebrow: "#walkyourpet",
       title: "Walk your pet.",
-      lead: "Não fomos nós que inventámos esta frase. Foi uma criança. Agora é um convite para todas as famílias: saiam à rua, porque um animal precisa do seu passeio – seja um animal verdadeiro, seja aquele com que estão a treinar no PetPrep.",
+      lead: "Não fomos nós que inventámos esta frase. Foi uma criança. Agora é um convite para todas as famílias: saiam à rua, porque um animal precisa do seu passeio – seja um animal a sério, seja aquele com que estão a treinar no PetPrep.",
       hero: { src: "/walkyourpet/story-01.webp", alt: "Cartão de história: «Overheard at the founder’s house» («Ouvido em casa do fundador»). Uma criança diz «Lahko bi šli walk your pet» («Podíamos ir walk your pet») e o título diz «#walkyourpet is a thing now» («O #walkyourpet já é uma realidade»).", width: 720, height: 1280 },
       blocks: [
         {
@@ -1235,7 +1235,7 @@ const pt: Dictionary = {
           type: "steps",
           id: "join",
           heading: "Junta-te ao movimento",
-          intro: "Não precisas da aplicação para isto. Todas as famílias que saem à rua por um animal – verdadeiro ou de treino – fazem parte dele.",
+          intro: "Não precisas da aplicação para isto. Todas as famílias que saem à rua por um animal – a sério ou de treino – fazem parte dele.",
           items: [
             { title: "Sai à rua", text: "Leva o cão a passear. Ou, se ainda estás a decidir se vais ter um animal, dá o passeio que darias com ele." },
             { title: "Capta o momento", text: "Sapatos junto à porta, uma trela, o caminho, patas na relva. Sem caras, sem nomes." },
@@ -1269,7 +1269,7 @@ const pt: Dictionary = {
             { q: "Preciso do PetPrep para participar?", a: "Não. Qualquer pessoa que saia à rua por um animal pode usar #walkyourpet. Foi no PetPrep que a frase nasceu, e é lá que o passeio de um cão de treino só conta em passos reais." },
             { q: "Funciona para gatos no PetPrep?", a: "Não como passeio. Os gatos não vão passear, por isso no PetPrep as necessidades de um gato satisfazem-se com brincadeira, não com passos. Os passeios são para os cães." },
             { q: "Porque é que a frase está em inglês?", a: "Porque foi assim que a criança a disse – em inglês, no meio de uma frase em esloveno. As crianças de todo o mundo misturam línguas, por isso a frase fica igual em todos os idiomas." },
-            { q: "Vão publicar o meu filho?", a: "Só o que tu próprio partilhares e nos autorizares a voltar a publicar, e nunca a cara ou o nome de uma criança. Pede-nos em hello@petprep.si e removemos." },
+            { q: "O meu filho vai aparecer nas vossas publicações?", a: "Só o que partilhares tu e nos autorizares a voltar a publicar, e nunca a cara ou o nome de uma criança. Pede-nos em hello@petprep.si e removemos." },
           ],
         },
       ],
