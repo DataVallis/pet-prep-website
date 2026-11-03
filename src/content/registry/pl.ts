@@ -602,6 +602,8 @@ const pl: RegistryCopy = {
     },
     sourcesTitle: "Źródła",
     sourcesIntro: "Każdy fakt na tej stronie powołuje się na jedno z tych źródeł.",
+    sourcesAll: "Pokaż wszystkie źródła",
+    sourcesFewer: "Pokaż mniej",
     sourceLabel: (id, publisher) => `Źródło ${id}: ${publisher}`,
     disclaimer: "PetPrep to symulacja dla rodzin. Ta strona nie jest poradą weterynaryjną – w sprawie prawdziwego zwierzęcia zapytaj weterynarza lub klub rasy.",
     backTo: (many) => `Wszystkie rasy ${gen(many)}`,

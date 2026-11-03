@@ -730,6 +730,8 @@ const fi: RegistryCopy = {
     },
     sourcesTitle: "Lähteet",
     sourcesIntro: "Jokainen tämän sivun tieto viittaa johonkin näistä lähteistä.",
+    sourcesAll: "Näytä kaikki lähteet",
+    sourcesFewer: "Näytä vähemmän",
     sourceLabel: (id, publisher) => `Lähde ${id}: ${publisher}`,
     disclaimer: "PetPrep on simulaatio perheille. Tämä sivu ei ole eläinlääkärin neuvontaa – kysy oikeasta eläimestä eläinlääkäriltä tai rotujärjestöltä.",
     backTo: (many) => `Kaikki ${breedsOf(many, "nomPl")}`,

@@ -666,6 +666,8 @@ const da: RegistryCopy = {
     },
     sourcesTitle: "Kilder",
     sourcesIntro: "Hver oplysning på denne side henviser til en af disse kilder.",
+    sourcesAll: "Vis alle kilder",
+    sourcesFewer: "Vis færre",
     sourceLabel: (id, publisher) => `Kilde ${id}: ${publisher}`,
     disclaimer: "PetPrep er en simulering for familier. Denne side er ikke dyrlægerådgivning – spørg en dyrlæge eller raceklubben når det gælder et rigtigt dyr.",
     backTo: (many) => `Alle ${breedsOf(many, 2)}`,
