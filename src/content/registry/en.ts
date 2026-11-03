@@ -555,6 +555,8 @@ const en: RegistryCopy = {
     },
     sourcesTitle: "Sources",
     sourcesIntro: "Every fact on this page cites one of these sources.",
+    sourcesAll: "Show all sources",
+    sourcesFewer: "Show fewer",
     sourceLabel: (id, publisher) => `Source ${id}: ${publisher}`,
     disclaimer: "PetPrep is a simulation for families. This page is not veterinary advice — for a real animal, ask a vet or the breed club.",
     backTo: (many) => `All ${many.toLowerCase()}`,

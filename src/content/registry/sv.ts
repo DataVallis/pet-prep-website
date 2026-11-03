@@ -664,6 +664,8 @@ const sv: RegistryCopy = {
     },
     sourcesTitle: "Källor",
     sourcesIntro: "Varje uppgift på den här sidan hänvisar till en av de här källorna.",
+    sourcesAll: "Visa alla källor",
+    sourcesFewer: "Visa färre",
     sourceLabel: (id, publisher) => `Källa ${id}: ${publisher}`,
     disclaimer: "PetPrep är en simulering för familjer. Den här sidan är inte veterinärrådgivning – för ett riktigt djur, fråga en veterinär eller rasklubben.",
     backTo: (many) => `Alla ${breedsOf(many, 2)}`,

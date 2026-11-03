@@ -583,6 +583,8 @@ const nl: RegistryCopy = {
     },
     sourcesTitle: "Bronnen",
     sourcesIntro: "Bij elk feit op deze pagina staat een van deze bronnen.",
+    sourcesAll: "Alle bronnen tonen",
+    sourcesFewer: "Minder tonen",
     sourceLabel: (id, publisher) => `Bron ${id}: ${publisher}`,
     disclaimer: "PetPrep is een simulatie voor gezinnen. Deze pagina is geen veterinair advies – vraag voor een echt huisdier een dierenarts of de rasvereniging.",
     backTo: (many) => `Alle ${lc(many)}`,

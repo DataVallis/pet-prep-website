@@ -686,6 +686,8 @@ const hr: RegistryCopy = {
     },
     sourcesTitle: "Izvori",
     sourcesIntro: "Svaka činjenica na ovoj stranici navodi jedan od ovih izvora.",
+    sourcesAll: "Prikaži sve izvore",
+    sourcesFewer: "Prikaži manje",
     sourceLabel: (id, publisher) => `Izvor ${id}: ${publisher}`,
     disclaimer: "PetPrep je simulacija za obitelji. Ova stranica nije veterinarski savjet – za stvarnog ljubimca pitaj veterinara ili klub pasmine.",
     backTo: (many) => `Sve pasmine ${gen(many)}`,

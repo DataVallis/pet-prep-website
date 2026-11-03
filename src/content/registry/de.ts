@@ -557,6 +557,8 @@ const de: RegistryCopy = {
     },
     sourcesTitle: "Quellen",
     sourcesIntro: "Jeder Fakt auf dieser Seite nennt eine dieser Quellen.",
+    sourcesAll: "Alle Quellen anzeigen",
+    sourcesFewer: "Weniger anzeigen",
     sourceLabel: (id, publisher) => `Quelle ${id}: ${publisher}`,
     disclaimer: "PetPrep ist eine Simulation für Familien. Diese Seite ist keine tierärztliche Beratung – fragen Sie bei einem echten Haustier einen Tierarzt oder den Rassezuchtverein.",
     backTo: (many) => `Alle ${many}`,
