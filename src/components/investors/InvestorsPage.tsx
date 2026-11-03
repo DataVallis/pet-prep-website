@@ -136,7 +136,7 @@ export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStat
           <ul className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6">
             <li>
               <ClickToPlay
-                src={`https://www.youtube-nocookie.com/embed/videoseries?list=${encodeURIComponent(youtube.playlistId)}`}
+                src={`https://www.youtube-nocookie.com/embed/videoseries?list=${encodeURIComponent(youtube.playlistId)}`} poster={`/api/yt-thumb/${encodeURIComponent(youtube.episodes[0])}`}
                 title={m.playlist}
                 label={`${m.play}: ${m.all}`}
                 className="aspect-[9/16] w-full overflow-hidden rounded-[22px] bg-graphite p-4 text-fog"
@@ -147,7 +147,7 @@ export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStat
             {youtube.episodes.map((id, i) => (
               <li key={id}>
                 <ClickToPlay
-                  src={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}`}
+                  src={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}`} poster={`/api/yt-thumb/${encodeURIComponent(id)}`}
                   title={`“12 Weeks” — ${m.episode(i + 1)}`}
                   label={`${m.play}: ${m.episode(i + 1)}`}
                   className="aspect-[9/16] w-full overflow-hidden rounded-[22px] bg-mint-tint p-4"
@@ -165,7 +165,7 @@ export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStat
           <ul className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-6">
             <li>
               <ClickToPlay
-                src={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(youtube.curio.pilot)}`}
+                src={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(youtube.curio.pilot)}`} poster={`/api/yt-thumb/${encodeURIComponent(youtube.curio.pilot)}`}
                 title={m.curioPilot.title}
                 label={`${m.play}: ${m.curioPilot.title}`}
                 className="aspect-[9/16] w-full overflow-hidden rounded-[22px] bg-graphite p-4 text-fog"
@@ -176,7 +176,7 @@ export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStat
             </li>
             <li>
               <ClickToPlay
-                src={`https://www.youtube-nocookie.com/embed/videoseries?list=${encodeURIComponent(youtube.curio.playlistId)}`}
+                src={`https://www.youtube-nocookie.com/embed/videoseries?list=${encodeURIComponent(youtube.curio.playlistId)}`} poster={`/api/yt-thumb/${encodeURIComponent(youtube.curio.pilot)}`}
                 title={m.curioAll}
                 label={`${m.play}: ${m.curioAll}`}
                 className="aspect-[9/16] w-full overflow-hidden rounded-[22px] bg-graphite-2 p-4 text-fog"
@@ -186,7 +186,7 @@ export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStat
             </li>
             <li>
               <ClickToPlay
-                src={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(youtube.promo)}`}
+                src={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(youtube.promo)}`} poster={`/api/yt-thumb/${encodeURIComponent(youtube.promo)}`}
                 title={m.promo.title}
                 label={`${m.play}: ${m.promo.title}`}
                 className="aspect-[9/16] w-full overflow-hidden rounded-[22px] bg-mint p-4 text-graphite"
