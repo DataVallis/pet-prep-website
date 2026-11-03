@@ -730,6 +730,14 @@ const nb: RegistryCopy = {
     },
   },
   intros: {
+    brussels_griffon: {
+      aka: "Brusselsk griffon, Brussels Griffon",
+      text: [
+        "Griffon bruxellois er en liten selskapshund fra Belgia med et kort, flatt ansikt. FCI-standarden beskriver en rød, naturlig hard, lett bølget pels og en vekt på 3,5–6 kg; britiske Royal Kennel Club, som har en strihåret og en glatthåret variant, beskriver den som en smart liten hund med et terrierlignende gemytt. En hund av denne størrelsen er utvokst ved omtrent 8–12 måneder (PetMD), og Royal Kennel Club oppgir en levealder på over 12 år (PetMD: 12–15 år).",
+        "Royal Kennel Club anbefaler opptil 30 minutter mosjon om dagen og pelsstell mer enn én gang i uken, opplyser at den røyter og passer i leilighet, og plasserer rasen i Breed Watch-kategori 2. PetMD beskriver en flatnese (brakycefal) hund som tåler varmt, fuktig vær dårlig, råder til å rengjøre ansiktsfoldene omtrent én gang i uken og pusse tennene daglig, og skriver at griffon bruxellois under tilsyn kommer godt overens med barn og andre kjæledyr, men ikke liker å være alene lenge.",
+      ],
+      sources: ["S669", "S670", "S672", "S10"],
+    },
     rat_terrier: {
       aka: "Rattie, amerikansk rat terrier, Rat Terrier",
       text: [

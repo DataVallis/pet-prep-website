@@ -627,6 +627,14 @@ const fr: RegistryCopy = {
     },
   },
   intros: {
+    brussels_griffon: {
+      aka: "Griffon de Bruxelles, Brussels Griffon",
+      text: [
+        "Le griffon bruxellois est un petit chien de compagnie originaire de Belgique, au visage court et plat. Le standard FCI décrit un poil rouge, naturellement dur et légèrement ondulé, et un poids de 3,5 à 6 kg ; le Royal Kennel Club britannique, qui reconnaît une variété à poil dur et une à poil lisse, le décrit comme un petit chien intelligent au caractère de terrier. Un chien de cette taille atteint sa taille adulte vers 8 à 12 mois (PetMD), et le Royal Kennel Club indique une espérance de vie de plus de 12 ans (PetMD : 12 à 15 ans).",
+        "Le Royal Kennel Club recommande jusqu'à 30 minutes d'exercice par jour et un toilettage plus d'une fois par semaine, indique qu'il perd ses poils et convient à un appartement, et le classe en catégorie 2 du programme Breed Watch. PetMD décrit un chien au museau écrasé (brachycéphale), sensible à la chaleur humide, conseille de nettoyer les plis du visage environ une fois par semaine et de brosser les dents chaque jour, et précise que les griffons bruxellois s'entendent bien avec les enfants et les autres animaux sous surveillance, mais n'aiment pas rester seuls longtemps.",
+      ],
+      sources: ["S669", "S670", "S672", "S10"],
+    },
     rat_terrier: {
       aka: "Rattie, Rat Terrier américain",
       text: [

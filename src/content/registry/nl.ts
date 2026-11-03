@@ -631,6 +631,14 @@ const nl: RegistryCopy = {
     },
   },
   intros: {
+    brussels_griffon: {
+      aka: "Griffon Bruxellois, Brussels Griffon",
+      text: [
+        "De Brusselse griffon (Griffon Bruxellois) is een kleine gezelschapshond uit België met een kort, plat gezicht. De FCI-standaard beschrijft een rode, van nature harde, licht golvende vacht en een gewicht van 3,5–6 kg; de Britse Royal Kennel Club, die een ruwharige en een gladharige variant kent, noemt hem een slim hondje met een terrierachtig karakter. Een hond van dit formaat is met ongeveer 8–12 maanden volgroeid (PetMD), en de Royal Kennel Club noemt een levensverwachting van meer dan 12 jaar (PetMD: 12–15 jaar).",
+        "De Royal Kennel Club raadt tot 30 minuten beweging per dag aan en vachtverzorging vaker dan eens per week, vermeldt dat hij verhaart en geschikt is voor een appartement, en plaatst het ras in Breed Watch-categorie 2. PetMD beschrijft een kortsnuitige (brachycefale) hond die slecht tegen warm, vochtig weer kan, raadt aan de gezichtsplooien ongeveer eens per week schoon te maken en dagelijks de tanden te poetsen, en schrijft dat Brusselse griffons onder toezicht goed overweg kunnen met kinderen en andere huisdieren, maar niet graag lang alleen zijn.",
+      ],
+      sources: ["S669", "S670", "S672", "S10"],
+    },
     rat_terrier: {
       aka: "Rattie, Amerikaanse Rat Terrier",
       text: [

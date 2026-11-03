@@ -818,6 +818,14 @@
         "Rattie",
         "Amerykański rat terier"
       ]
+    },
+    "brussels_griffon": {
+      "name": "Gryfonik brukselski",
+      "slug": "gryfonik-brukselski",
+      "synonyms": [
+        "Griffon Bruxellois",
+        "Brussels Griffon"
+      ]
     }
   },
   "suitability_labels": {

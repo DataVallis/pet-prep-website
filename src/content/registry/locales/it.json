@@ -688,6 +688,14 @@
         "Shar pei cinese",
         "Chinese shar-pei"
       ]
+    },
+    "brussels_griffon": {
+      "name": "Griffon bruxellois",
+      "slug": "griffon-bruxellois",
+      "synonyms": [
+        "Grifone di Bruxelles",
+        "Brussels Griffon"
+      ]
     }
   },
   "suitability_labels": {
@@ -734,8 +742,7 @@
       "short_muzzle_breathing": "muso più corto – può avere difficoltà respiratorie",
       "shorter_lifespan": "aspettativa di vita più breve",
       "small_children": "le famiglie con bambini piccoli",
-      "sun_protection": "pelle senza pelo – ha bisogno di protezione solare",
-      "independent_older_children": "cane indipendente – meglio con bambini più grandi"
+      "sun_protection": "pelle senza pelo – ha bisogno di protezione solare"
     }
   }
 }

@@ -685,6 +685,14 @@
         "Rattie",
         "Rat Terrier americano"
       ]
+    },
+    "brussels_griffon": {
+      "name": "Grifo de Bruxelas",
+      "slug": "grifo-de-bruxelas",
+      "synonyms": [
+        "Griffon Bruxellois",
+        "Brussels Griffon"
+      ]
     }
   },
   "suitability_labels": {

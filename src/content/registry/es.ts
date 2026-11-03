@@ -622,6 +622,14 @@ const es: RegistryCopy = {
     },
   },
   intros: {
+    brussels_griffon: {
+      aka: "Griffon Bruxellois, Brussels Griffon",
+      text: [
+        "El grifón de Bruselas (Griffon Bruxellois) es un perro de compañía pequeño originario de Bélgica, con la cara corta y plana. El estándar de la FCI describe un pelo rojo, duro por naturaleza y ligeramente ondulado, y un peso de 3,5 a 6 kg; el Royal Kennel Club británico, que reconoce una variedad de pelo duro y otra de pelo liso, lo describe como un perro pequeño e inteligente con carácter de terrier. Un perro de este tamaño alcanza su tamaño adulto hacia los 8-12 meses (PetMD), y el Royal Kennel Club indica una esperanza de vida de más de 12 años (PetMD: 12-15 años).",
+        "El Royal Kennel Club recomienda hasta 30 minutos de ejercicio al día y cepillarlo más de una vez por semana, indica que suelta pelo y que es adecuado para un piso, y lo incluye en la categoría 2 del programa Breed Watch. PetMD lo describe como un perro de cara chata (braquicéfalo) sensible al calor y la humedad, aconseja limpiar los pliegues de la cara aproximadamente una vez por semana y cepillarle los dientes a diario, y explica que los grifones de Bruselas se llevan bien con niños y otras mascotas bajo supervisión, pero no les gusta quedarse solos mucho tiempo.",
+      ],
+      sources: ["S669", "S670", "S672", "S10"],
+    },
     rat_terrier: {
       aka: "Rattie, Rat Terrier americano",
       text: [

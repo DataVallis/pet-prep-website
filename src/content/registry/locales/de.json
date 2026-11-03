@@ -649,6 +649,14 @@
         "Chinesischer Shar-Pei",
         "Sharpei"
       ]
+    },
+    "brussels_griffon": {
+      "name": "Griffon Bruxellois",
+      "slug": "griffon-bruxellois",
+      "synonyms": [
+        "Brüsseler Griffon",
+        "Brussels Griffon"
+      ]
     }
   },
   "suitability_labels": {

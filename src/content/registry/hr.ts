@@ -738,6 +738,14 @@ const hr: RegistryCopy = {
     },
   },
   intros: {
+    brussels_griffon: {
+      aka: "Griffon Bruxellois, Brussels Griffon",
+      text: [
+        "Briselski grifon (Griffon Bruxellois) malen je pas za društvo iz Belgije, kratkog i plosnatog lica. Standard FCI opisuje crvenu, prirodno oštru, blago valovitu dlaku i težinu od 3,5 do 6 kg; britanski Royal Kennel Club, koji vodi oštrodlaku i kratkodlaku varijantu, opisuje ga kao pametnog malog psa terijerskog karaktera. Pas ove veličine odraste s otprilike 8–12 mjeseci (PetMD), a Royal Kennel Club navodi životni vijek dulji od 12 godina (PetMD: 12–15 godina).",
+        "Royal Kennel Club preporučuje do 30 minuta kretanja dnevno i češljanje više puta tjedno, navodi da linja i da je prikladan za stan te ga svrstava u 2. kategoriju programa Breed Watch. PetMD ga opisuje kao psa plosnatog lica (brahicefalnog) koji teško podnosi vruće i vlažno vrijeme, savjetuje čišćenje kožnih nabora na licu otprilike jednom tjedno i svakodnevno četkanje zubi te piše da se briselski grifoni uz nadzor dobro slažu s djecom i drugim ljubimcima, ali ne vole dugo ostajati sami.",
+      ],
+      sources: ["S669", "S670", "S672", "S10"],
+    },
     rat_terrier: {
       aka: "Rattie, američki rat terijer, Rat Terrier",
       text: [

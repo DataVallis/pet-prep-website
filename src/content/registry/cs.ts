@@ -683,6 +683,14 @@ const cs: RegistryCopy = {
     },
   },
   intros: {
+    brussels_griffon: {
+      aka: "Griffon Bruxellois, Brussels Griffon",
+      text: [
+        "Bruselský grifonek (Griffon Bruxellois) je malý společenský pes z Belgie s krátkým, plochým obličejem. Standard FCI popisuje červenou, přirozeně tvrdou, mírně zvlněnou srst a hmotnost 3,5–6 kg; britský Royal Kennel Club, který uznává drsnosrstou i hladkosrstou varietu, ho popisuje jako chytrého malého psa s povahou teriéra. Pes této velikosti dorůstá zhruba v 8–12 měsících (PetMD) a Royal Kennel Club uvádí délku života přes 12 let (PetMD: 12–15 let).",
+        "Royal Kennel Club doporučuje až 30 minut pohybu denně a péči o srst víckrát týdně, uvádí, že pes líná a hodí se do bytu, a řadí plemeno do kategorie 2 programu Breed Watch. PetMD ho popisuje jako psa s plochým obličejem (brachycefalického), který špatně snáší horké a vlhké počasí, radí čistit kožní záhyby na obličeji zhruba jednou týdně a denně čistit zuby a píše, že bruselští grifonci pod dohledem dobře vycházejí s dětmi a jinými zvířaty, ale neradi zůstávají dlouho sami.",
+      ],
+      sources: ["S669", "S670", "S672", "S10"],
+    },
     rat_terrier: {
       aka: "Rattie, americký rat teriér, Rat Terrier",
       text: [

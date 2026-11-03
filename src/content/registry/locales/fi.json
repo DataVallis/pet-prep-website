@@ -798,6 +798,14 @@
         "Rat Terrier",
         "Rattie"
       ]
+    },
+    "brussels_griffon": {
+      "name": "Brysselingriffoni",
+      "slug": "brysselingriffoni",
+      "synonyms": [
+        "Griffon Bruxellois",
+        "Brussels Griffon"
+      ]
     }
   },
   "suitability_labels": {

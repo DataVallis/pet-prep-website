@@ -605,6 +605,14 @@ const de: RegistryCopy = {
     },
   },
   intros: {
+    brussels_griffon: {
+      aka: "Brüsseler Griffon, Brussels Griffon",
+      text: [
+        "Der Griffon Bruxellois (Brüsseler Griffon) ist ein kleiner Begleithund aus Belgien mit kurzem, flachem Gesicht. Der FCI-Standard beschreibt ein rotes, von Natur aus hartes, leicht gewelltes Haar und ein Gewicht von 3,5–6 kg; der britische Royal Kennel Club, der eine rauhaarige und eine glatthaarige Variante führt, nennt ihn einen klugen kleinen Hund mit terrierähnlichem Wesen. Ein Hund dieser Größe ist mit etwa 8–12 Monaten ausgewachsen (PetMD), und der Royal Kennel Club gibt eine Lebenserwartung von über 12 Jahren an (PetMD: 12–15 Jahre).",
+        "Der Royal Kennel Club empfiehlt bis zu 30 Minuten Bewegung am Tag und mehr als einmal pro Woche Fellpflege, gibt an, dass er haart und sich für eine Wohnung eignet, und führt ihn in Breed-Watch-Kategorie 2. PetMD beschreibt einen kurzköpfigen (brachyzephalen) Hund, der heißes, feuchtes Wetter schlecht verträgt, rät, die Gesichtsfalten etwa einmal pro Woche zu reinigen und täglich die Zähne zu putzen, und schreibt, dass Brüsseler Griffons unter Aufsicht gut mit Kindern und anderen Haustieren zurechtkommen, aber nicht gern lange allein bleiben.",
+      ],
+      sources: ["S669", "S670", "S672", "S10"],
+    },
     rat_terrier: {
       aka: "Rattie, Amerikanischer Rat Terrier",
       text: [
