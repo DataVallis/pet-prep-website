@@ -574,7 +574,7 @@ const nl: Dictionary = {
           items: [
             "Spelengine op de server met realtime synchronisatie, getest met simulaties van hele dagen, dagen met de overgang naar zomer- of wintertijd en bijzondere gezinssituaties.",
             "Gezinnen met meerdere ouders, meerdere kinderen en gedeelde huisdieren, met een eerlijke score per kind.",
-            "Unieke fotorealistische AI-huisdieren met gemeten en begrensde AI-kosten, media opgeslagen op onze eigen servers in de EU.",
+            "Unieke fotorealistische AI-huisdieren met gemeten en begrensde AI-kosten, media opgeslagen op gehuurde servers in Duitsland (Hetzner, EU).",
             "Behoeften van huisdieren gebaseerd op geciteerde bronnen van dierenartsen en kennelclubs, waarbij elk getal tot de bron te herleiden is.",
             "Kinderveiligheid by design: inloggen met een pincode, zonder e-mailadres, minimale gegevens, geen advertenties, alleen gecontroleerde media.",
           ],
@@ -689,7 +689,7 @@ const nl: Dictionary = {
             {
               heading: "8. Door AI gegenereerde afbeeldingen en video’s",
               paragraphs: [
-                "De foto en de korte video’s van elk huisdier worden door een AI-dienst gemaakt, uitsluitend op basis van een beschrijving van het huisdier (ras, vacht, aftekening en dergelijke). De beschrijving bevat nooit namen of andere informatie over je gezin. De voltooide media worden op onze eigen servers in de EU opgeslagen en via links met een korte geldigheid getoond.",
+                "De foto en de korte video’s van elk huisdier worden door een AI-dienst gemaakt, uitsluitend op basis van een beschrijving van het huisdier (ras, vacht, aftekening en dergelijke). De beschrijving bevat nooit namen of andere informatie over je gezin. De voltooide media worden op gehuurde servers in Duitsland (Hetzner, EU) opgeslagen en via links met een korte geldigheid getoond.",
               ],
             },
             {
@@ -891,7 +891,7 @@ const nl: Dictionary = {
             { title: "Geen advertenties, geen chat, geen vreemden", text: "Er zijn geen advertenties en er is geen manier om contact op te nemen met andere gebruikers." },
             { title: "Geen locatievolging", text: "Wandelingen tellen alleen stappen – uit Apple Gezondheid of Health Connect (met je toestemming, alleen lezen) of uit de bewegingssensor van de telefoon. Gps wordt niet gebruikt." },
             { title: "Besloten live-updates", text: "Realtime updates bereiken alleen de kinderen die voor dat huisdier zorgen en de ouders van hetzelfde gezin." },
-            { title: "Gecontroleerde media", text: "Alleen afbeeldingen en video’s die voor PetPrep zijn gemaakt en door onze server zijn gecontroleerd, worden getoond, vanuit onze eigen opslag in de EU." },
+            { title: "Gecontroleerde media", text: "Alleen afbeeldingen en video’s die voor PetPrep zijn gemaakt en door onze server zijn gecontroleerd, worden getoond, vanuit onze opslag in de EU." },
             { title: "Meldingen zonder namen", text: "Meldingen bevatten nooit de naam van het kind of het huisdier, omdat ze op het vergrendelscherm kunnen verschijnen." },
           ],
         },

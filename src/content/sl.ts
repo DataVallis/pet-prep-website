@@ -574,7 +574,7 @@ const sl: Dictionary = {
           items: [
             "Strežniški igralni pogon s sinhronizacijo v živo, preizkušen na simulacijah celih dni, dnevih prehoda na drug čas in robnih primerih družin.",
             "Družine z več starši, več otroki in skupnimi ljubljenčki ter pošteno oceno za vsakega otroka.",
-            "Edinstveni fotorealistični AI ljubljenčki z merjenimi in omejenimi stroški AI, mediji na lastnih strežnikih v EU.",
+            "Edinstveni fotorealistični AI ljubljenčki z merjenimi in omejenimi stroški AI, mediji na najetih strežnikih v Nemčiji (Hetzner, EU).",
             "Potrebe živali na podlagi navedenih veterinarskih in kinoloških virov, vsaka številka sledljiva do vira.",
             "Varnost otrok po zasnovi: prijava s kodo brez e-pošte, minimalni podatki, brez oglasov, samo preverjeni mediji.",
           ],
@@ -689,7 +689,7 @@ const sl: Dictionary = {
             {
               heading: "8. Slike in videi, ustvarjeni z umetno inteligenco",
               paragraphs: [
-                "Fotografijo in kratke videe vsakega ljubljenčka ustvari AI storitev samo na podlagi opisa ljubljenčka (pasma, dlaka, lise ipd.). Opis nikoli ne vsebuje imen ali kakršnih koli podatkov o vaši družini. Končni mediji so shranjeni na naših strežnikih v EU in prikazani prek kratkotrajnih povezav.",
+                "Fotografijo in kratke videe vsakega ljubljenčka ustvari AI storitev samo na podlagi opisa ljubljenčka (pasma, dlaka, lise ipd.). Opis nikoli ne vsebuje imen ali kakršnih koli podatkov o vaši družini. Končni mediji so shranjeni na najetih strežnikih v Nemčiji (Hetzner, EU) in prikazani prek kratkotrajnih povezav.",
               ],
             },
             {

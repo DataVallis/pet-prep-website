@@ -79,6 +79,7 @@ export const investorsCopy = {
     status: { live: "Live", building: "Building", planned: "Planned" } as Record<Status, string>,
     media: {
       playlist: "“12 Weeks” — the series",
+      channel: "YouTube channel @petprep-si →",
       play: "Play",
       all: "All episodes (playlist)",
       episode: (n: number) => `Episode ${n}`,
@@ -99,7 +100,7 @@ export const investorsCopy = {
     items: [
       "Server-side game engine with real-time sync, tested on whole-day simulations, daylight saving days and family edge cases.",
       "Families with several parents, several children and shared pets, with fair per-child scoring.",
-      "Photorealistic AI pets with measured and capped AI costs, media stored on our own EU servers.",
+      "Photorealistic AI pets with measured and capped AI costs, media stored on rented servers in Germany (Hetzner, EU).",
       "Pet needs based on cited veterinary and kennel-club sources, with every number traceable to its source.",
       "Child safety by design: PIN login without email, minimal data, no ads, verified media only.",
       "Accessible play: easier gestures, screen readers, wheelchair pushes counted as walks.",

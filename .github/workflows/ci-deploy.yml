@@ -40,6 +40,10 @@ jobs:
           push: false
           load: true
           tags: petprep-website:ci
+          # Same secret as the deploy build: BuildKit does not key the cache on secret values, so the
+          # deploy reuses this build stage — it must already contain the "12 Weeks" counts.
+          secrets: |
+            youtube_api_key=${{ secrets.YOUTUBE_API_KEY }}
           cache-from: type=gha,scope=petprep-website
           cache-to: type=gha,mode=max,scope=petprep-website
       - name: Smoke test
@@ -87,6 +91,9 @@ jobs:
           load: true
           tags: petprep-website:next
           build-args: NEXT_PUBLIC_SITE_URL=https://petprep.si
+          # /investors: "12 Weeks" counts are prerendered at build time (BuildKit secret, not in the image).
+          secrets: |
+            youtube_api_key=${{ secrets.YOUTUBE_API_KEY }}
           labels: org.opencontainers.image.revision=${{ github.sha }}
           cache-from: type=gha,scope=petprep-website
       - name: Export the image

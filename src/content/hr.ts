@@ -574,7 +574,7 @@ const hr: Dictionary = {
           items: [
             "Pokretač igre na poslužitelju sa sinkronizacijom u stvarnom vremenu, testiran na simulacijama cijelih dana, danima promjene na ljetno ili zimsko vrijeme i rubnim slučajevima u obiteljima.",
             "Obitelji s više roditelja, više djece i zajedničkim ljubimcima, s pravednim bodovanjem za svako dijete.",
-            "Jedinstveni fotorealistični AI ljubimci s izmjerenim i ograničenim troškovima AI-ja, a mediji se pohranjuju na našim vlastitim poslužiteljima u EU-u.",
+            "Jedinstveni fotorealistični AI ljubimci s izmjerenim i ograničenim troškovima AI-ja, a mediji se pohranjuju na unajmljenim poslužiteljima u Njemačkoj (Hetzner, EU).",
             "Potrebe ljubimaca temeljene na navedenim veterinarskim i kinološkim izvorima, pri čemu se svaka brojka može pratiti do svog izvora.",
             "Sigurnost djece od samog početka: prijava PIN-om bez e-pošte, minimalni podaci, bez oglasa, samo provjereni mediji.",
           ],
@@ -689,7 +689,7 @@ const hr: Dictionary = {
             {
               heading: "8. Slike i videozapisi koje generira umjetna inteligencija",
               paragraphs: [
-                "Fotografiju i kratke videozapise svakog ljubimca izrađuje AI usluga isključivo na temelju opisa ljubimca (pasmina, dlaka, šare i slično). Opis nikad ne sadrži imena ni bilo kakve podatke o tvojoj obitelji. Gotovi mediji pohranjuju se na našim vlastitim poslužiteljima u EU-u i prikazuju putem kratkotrajnih poveznica.",
+                "Fotografiju i kratke videozapise svakog ljubimca izrađuje AI usluga isključivo na temelju opisa ljubimca (pasmina, dlaka, šare i slično). Opis nikad ne sadrži imena ni bilo kakve podatke o tvojoj obitelji. Gotovi mediji pohranjuju se na unajmljenim poslužiteljima u Njemačkoj (Hetzner, EU) i prikazuju putem kratkotrajnih poveznica.",
               ],
             },
             {
@@ -891,7 +891,7 @@ const hr: Dictionary = {
             { title: "Bez oglasa, bez dopisivanja, bez nepoznatih", text: "Nema oglašavanja i nema načina da se kontaktiraju drugi korisnici." },
             { title: "Bez praćenja lokacije", text: "Šetnje broje samo korake – iz aplikacije Apple Health ili Health Connect (uz tvoje dopuštenje, samo čitanje) ili iz senzora pokreta na mobitelu. GPS se ne koristi." },
             { title: "Privatna ažuriranja uživo", text: "Ažuriranja u stvarnom vremenu stižu samo djeci koja se brinu o tom ljubimcu i roditeljima iz iste obitelji." },
-            { title: "Provjereni mediji", text: "Prikazuju se samo slike i videozapisi izrađeni za PetPrep i provjereni na našem poslužitelju, iz naše vlastite pohrane u EU-u." },
+            { title: "Provjereni mediji", text: "Prikazuju se samo slike i videozapisi izrađeni za PetPrep i provjereni na našem poslužitelju, iz naše pohrane u EU-u." },
             { title: "Obavijesti bez imena", text: "Obavijesti nikad ne sadrže ime djeteta ni ljubimca jer se mogu pojaviti na zaključanom zaslonu." },
           ],
         },

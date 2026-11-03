@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1
 # PetPrep website — production image (Next.js standalone server on port 3000).
 FROM node:22-alpine AS deps
 WORKDIR /app
@@ -11,7 +12,10 @@ ARG NEXT_PUBLIC_SITE_URL=https://petprep.si
 ENV NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL}
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN npm run build
+# /investors prerenders the "12 Weeks" episode and view counts at build time; the read-only YouTube key
+# comes in as a BuildKit secret (never stored in a layer). Without it the cards stay hidden until the
+# hourly revalidation, which reads YOUTUBE_API_KEY from the runtime .env.
+RUN --mount=type=secret,id=youtube_api_key,env=YOUTUBE_API_KEY npm run build
 
 FROM node:22-alpine AS runner
 WORKDIR /app

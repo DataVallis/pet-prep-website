@@ -574,7 +574,7 @@ const nb: Dictionary = {
           items: [
             "Spillmotor på serveren med synkronisering i sanntid, testet med simuleringer av hele døgn, overgangen til og fra sommertid og uvanlige familiesituasjoner.",
             "Familier med flere foreldre, flere barn og delte kjæledyr, med rettferdig score per barn.",
-            "Unike fotorealistiske AI-kjæledyr med målte og begrensede AI-kostnader; mediene lagres på våre egne servere i EU.",
+            "Unike fotorealistiske AI-kjæledyr med målte og begrensede AI-kostnader; mediene lagres på leide servere i Tyskland (Hetzner, EU).",
             "Kjæledyrenes behov bygger på siterte veterinærmedisinske kilder og kennelklubber, og hvert tall kan spores til kilden.",
             "Innebygd barnesikkerhet: innlogging med PIN uten e-post, minimalt med data, ingen reklame, bare kontrollerte medier.",
           ],
@@ -689,7 +689,7 @@ const nb: Dictionary = {
             {
               heading: "8. AI-genererte bilder og videoer",
               paragraphs: [
-                "Bildet og de korte videoene av hvert kjæledyr lages av en AI-tjeneste bare ut fra en beskrivelse av kjæledyret (rase, pels, tegninger og lignende). Beskrivelsen inneholder aldri navn eller opplysninger om familien din. Ferdige medier lagres på våre egne servere i EU og vises via kortvarige lenker.",
+                "Bildet og de korte videoene av hvert kjæledyr lages av en AI-tjeneste bare ut fra en beskrivelse av kjæledyret (rase, pels, tegninger og lignende). Beskrivelsen inneholder aldri navn eller opplysninger om familien din. Ferdige medier lagres på leide servere i Tyskland (Hetzner, EU) og vises via kortvarige lenker.",
               ],
             },
             {
@@ -891,7 +891,7 @@ const nb: Dictionary = {
             { title: "Ingen reklame, ingen chat, ingen fremmede", text: "Det finnes ingen reklame og ingen mulighet til å kontakte andre brukere." },
             { title: "Ingen posisjonssporing", text: "Turer teller bare skritt – fra Apple Helse eller Health Connect (med din tillatelse, bare lesing) eller fra telefonens bevegelsessensor. GPS brukes ikke." },
             { title: "Private oppdateringer i sanntid", text: "Oppdateringer i sanntid når bare barna som steller det kjæledyret, og foreldrene i samme familie." },
-            { title: "Kontrollerte medier", text: "Bare bilder og videoer som er laget for PetPrep og kontrollert av serveren vår, vises – fra vår egen lagring i EU." },
+            { title: "Kontrollerte medier", text: "Bare bilder og videoer som er laget for PetPrep og kontrollert av serveren vår, vises – fra vår lagring i EU." },
             { title: "Varsler uten navn", text: "Varsler inneholder aldri navnet på barnet eller kjæledyret, fordi de kan vises på låseskjermen." },
           ],
         },

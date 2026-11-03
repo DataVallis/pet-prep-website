@@ -574,7 +574,7 @@ const en: Dictionary = {
           items: [
             "Server-side game engine with real-time sync, tested on whole-day simulations, daylight saving days and family edge cases.",
             "Families with several parents, several children and shared pets, with fair per-child scoring.",
-            "Unique photorealistic AI pets with measured and capped AI costs, media stored on our own EU servers.",
+            "Unique photorealistic AI pets with measured and capped AI costs, media stored on rented servers in Germany (Hetzner, EU).",
             "Pet needs based on cited veterinary and kennel-club sources, with every number traceable to its source.",
             "Child safety by design: PIN login without email, minimal data, no ads, verified media only.",
           ],
@@ -689,7 +689,7 @@ const en: Dictionary = {
             {
               heading: "8. AI-generated images and videos",
               paragraphs: [
-                "Each pet's photo and short videos are created by an AI service from a description of the pet only (breed, coat, markings and similar). The description never contains names or any information about your family. Finished media are stored on our own servers in the EU and shown through short-lived links.",
+                "Each pet's photo and short videos are created by an AI service from a description of the pet only (breed, coat, markings and similar). The description never contains names or any information about your family. Finished media are stored on servers we rent in Germany (Hetzner, EU) and shown through short-lived links.",
               ],
             },
             {
@@ -891,7 +891,7 @@ const en: Dictionary = {
             { title: "No ads, no chat, no strangers", text: "There is no advertising and no way to contact other users." },
             { title: "No location tracking", text: "Walks count steps only — from Apple Health or Health Connect (with your permission, read-only) or from the phone's motion sensor. GPS is not used." },
             { title: "Private live updates", text: "Real-time updates reach only the children who care for that pet and the parents of the same family." },
-            { title: "Verified media", text: "Only images and videos produced for PetPrep and checked by our server are shown, from our own EU storage." },
+            { title: "Verified media", text: "Only images and videos produced for PetPrep and checked by our server are shown, from our storage in the EU." },
             { title: "Name-free notifications", text: "Notifications never include the child's or pet's name, because they can appear on a lock screen." },
           ],
         },
