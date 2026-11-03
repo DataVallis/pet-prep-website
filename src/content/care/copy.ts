@@ -361,7 +361,7 @@ const nl: CareCopy = {
     toxic: { label: "Giftig – bel je dierenarts", heading: "Giftig: nooit geven" },
     dangerous: { label: "Gevaarlijk", heading: "Gevaarlijk" },
     not_recommended: { label: "Niet aanbevolen", heading: "Liever niet" },
-    small_amounts: { label: "Oké in kleine hoeveelheden", heading: "Af en toe oké als snoepje" },
+    small_amounts: { label: "Oké in kleine hoeveelheden", heading: "Af en toe een snoepje is oké" },
   },
   hub: {
     foodsLead: (w) => `Veilig, riskant en giftig eten voor ${w.plural} – telkens met de reden, de verschijnselen om op te letten en de bronnen.`,
@@ -387,10 +387,10 @@ const nl: CareCopy = {
     sources: "Bronnen",
     updated: "Bijgewerkt",
     notVetReviewed: "Algemene informatie uit de bronnen hieronder, niet gecontroleerd door een dierenarts en geen vervanging van veterinair advies. Twijfel je? Bel je dierenarts.",
-    otherSpecies: "Andere dieren",
+    otherSpecies: "Andere diersoorten",
     simulates: "Zo oefenen kinderen dit in PetPrep",
-    simulatesText: (w) => `In PetPrep zorgt een kind voor ${w.pet} die realistisch is gesimuleerd: maaltijden op het juiste moment, water, wandelingen en verzorging. Weten wat je veilig kunt delen, hoort erbij als je klaar wilt zijn voor een echt huisdier.`,
-    backTo: "Al het eten",
+    simulatesText: (w) => `In PetPrep zorgt een kind voor ${w.pet} die levensecht is nagebootst: maaltijden op het juiste moment, water, wandelingen en verzorging. Weten wat je veilig kunt delen, hoort erbij als je klaar wilt zijn voor een echt huisdier.`,
+    backTo: "Alle voedingsmiddelen",
   },
   breadcrumb: "Verzorging",
 };
