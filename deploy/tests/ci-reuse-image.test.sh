@@ -30,6 +30,7 @@ if [ -n "${GH_FAIL_MATCH:-}" ] && [[ "$path" =~ $GH_FAIL_MATCH ]]; then exit 1; 
 case "$path" in
   https://zip/*) cat "$FIX/${path##*/}.zip"; exit 0 ;;
   */actions/artifacts\?name=*) file="$FIX/artifacts.json" ;;
+  orgs/*/packages/container/petprep-website/versions*) file="$FIX/versions.json" ;;
   */actions/runs/*) file="$FIX/run-${path##*/}.json"; [ -f "$file" ] || exit 1 ;;
   *) exit 64 ;;
 esac
@@ -44,6 +45,7 @@ reset() {
   rm -rf "${FIX:?}"/*; : > "$FIX/gh.log"
   jq -n '{artifacts:[{expired:false,archive_download_url:"https://zip/m77",workflow_run:{id:77,repository_id:1,head_repository_id:1}}]}' > "$FIX/artifacts.json"
   run 77 pull_request success
+  jq -n --arg d "sha256:$(printf 'c%.0s' $(seq 64))" '[{name:"sha256:0000"},{name:$d}]' > "$FIX/versions.json"
   marker m77 "$TREE 77
 image=$IMG
 "
@@ -100,6 +102,9 @@ reset; check "run API error → build" "||0" "$(GH_FAIL_MATCH='runs/77' reuse pu
 reset; check "download error → build" "||0" "$(GH_FAIL_MATCH='^https://zip/' reuse push refs/heads/main)"
 reset; jq '.artifacts = [{expired:false,archive_download_url:"https://zip/m78",workflow_run:{id:78,repository_id:1,head_repository_id:1}}] + .artifacts' "$FIX/artifacts.json" > "$FIX/a" && mv "$FIX/a" "$FIX/artifacts.json"
 run 78 push failure; check "first marker from a failed run, second green → the green one" "$IMG|77|0" "$(reuse push refs/heads/main)"
+reset; echo '[{"name":"sha256:0000"}]' > "$FIX/versions.json"
+check "digest pruned from GHCR → build" "||0" "$(reuse push refs/heads/main)"
+reset; check "packages API error → build" "||0" "$(GH_FAIL_MATCH='packages' reuse push refs/heads/main)"
 reset; jq '.artifacts[0].workflow_run.id = "77;id"' "$FIX/artifacts.json" > "$FIX/a" && mv "$FIX/a" "$FIX/artifacts.json"
 check "non-numeric run id → build" "||0" "$(reuse push refs/heads/main)"
 

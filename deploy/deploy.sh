@@ -6,8 +6,9 @@
 # Called by GitHub Actions after it uploaded the commit to <source-dir>
 # (/opt/petprep/website/incoming). Steps:
 #   1. pull petprep-website:next from $IMAGE_REF — the digest CI pushed to GHCR after its checks
-#      (the normal path since 2026-11-03; CI logs the server in over ssh stdin, this script logs
-#      out right after the pull; with $EXPECT_TREE the image's org.petprep.tree label must match),
+#      (the normal path since 2026-11-03; CI logs in over ssh stdin into a PRIVATE docker config dir
+#      $PULL_DOCKER_CONFIG — never ~/.docker, shared with the API deploy — that this script deletes
+#      right after the pull; with $EXPECT_TREE the image's org.petprep.tree label must match),
 #      or load it from $IMAGE_TAR (2026-11-02 path), or build it from the source when neither is
 #      given (manual fallback — needs ~2 GB free RAM; the live site keeps serving either way)
 #   2. smoke-test the new image in a throwaway container on the API network
@@ -39,8 +40,12 @@ if [ -n "$IMAGE_REF" ]; then
   [[ "$IMAGE_REF" =~ ^[a-z0-9.-]+(/[a-z0-9._-]+)+@sha256:[0-9a-f]{64}$ ]] || fail "IMAGE_REF must be a digest reference (…@sha256:<64 hex>)"
   log "1/5 Pulling ${IMAGE_REF} (commit ${SHA})"
   pulled=true
-  docker pull -q "$IMAGE_REF" >/dev/null || pulled=false
-  docker logout "${IMAGE_REF%%/*}" >/dev/null 2>&1 || true # the login was only for this pull
+  if [ -n "${PULL_DOCKER_CONFIG:-}" ]; then
+    DOCKER_CONFIG="$PULL_DOCKER_CONFIG" docker pull -q "$IMAGE_REF" >/dev/null || pulled=false
+    rm -rf "$PULL_DOCKER_CONFIG" # the login was only for this pull
+  else
+    docker pull -q "$IMAGE_REF" >/dev/null || pulled=false
+  fi
   $pulled || fail "could not pull ${IMAGE_REF} — nothing changed, the old site keeps running"
   docker tag "$IMAGE_REF" "${IMAGE}:next"
   if [ -n "${EXPECT_TREE:-}" ]; then

@@ -28,6 +28,7 @@ concurrency:
 permissions:
   contents: read
   actions: read # plan: marker artifacts + runs of this repository
+  packages: read # plan: is the marker's digest still in GHCR?
 
 jobs:
   plan:
@@ -294,10 +295,12 @@ jobs:
           fi
 
           echo "3. Pulling ${IMAGE_REF} on the server and switching the website container"
-          # The token goes over stdin (never on a command line); deploy.sh logs out right after the pull.
+          # The token goes over stdin (never on a command line) into a private docker config dir (never
+          # the deploy user's ~/.docker, which the API deploy uses at the same time); deploy.sh deletes it
+          # right after the pull, this command again at the end (QA #210 M3).
           # shellcheck disable=SC2029 # expanded here on purpose (validated above)
           printf '%s\n' "$REGISTRY_TOKEN" | $SSH "${SSH_USER}@${SSH_HOST}" \
-            "docker login ghcr.io -u '${REGISTRY_USER}' --password-stdin > /dev/null 2>&1 || echo 'WARNING: ghcr.io login failed'; IMAGE_REF=${IMAGE_REF} EXPECT_TREE=${TREE} bash /opt/petprep/website/incoming/deploy/deploy.sh /opt/petprep/website/incoming ${COMMIT_SHA} < /dev/null; rc=\$?; docker logout ghcr.io > /dev/null 2>&1; exit \$rc"
+            "D=\$(mktemp -d) && chmod 700 \"\$D\" && { DOCKER_CONFIG=\"\$D\" docker login ghcr.io -u '${REGISTRY_USER}' --password-stdin > /dev/null 2>&1 || echo 'WARNING: ghcr.io login failed'; }; IMAGE_REF=${IMAGE_REF} EXPECT_TREE=${TREE} PULL_DOCKER_CONFIG=\"\$D\" bash /opt/petprep/website/incoming/deploy/deploy.sh /opt/petprep/website/incoming ${COMMIT_SHA} < /dev/null; rc=\$?; rm -rf \"\$D\"; exit \$rc"
 
       # IndexNow (David 2026-10-31, M6-K): tell Bing (→ ChatGPT, Copilot) and other IndexNow
       # engines about every URL in the sitemap after a deploy. Key file: public/f1404c440df09203fa7aeccfaa86137d.txt.

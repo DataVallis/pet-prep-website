@@ -8,7 +8,8 @@
 # marker from a SUCCESSFUL run of this workflow in this repository (a PR run when the PR was up
 # to date with main, or an earlier main run) deploys that digest without building again.
 # Anything else — no marker, a failed / other-workflow / fork run, a malformed marker, an API or
-# download error, a re-run, a PR — prints image= (empty): the run builds and tests as usual.
+# download error, a re-run, a PR, a digest no longer in GHCR (pruned) — prints image= (empty): the
+# run builds and tests as usual.
 #
 # Env: EVENT_NAME, GIT_REF, RUN_ATTEMPT, REPO (owner/name), TREE (40 hex), WORKFLOW_FILE,
 #      GH_TOKEN; GITHUB_OUTPUT. Test hook: CI_REUSE_GH (gh binary).
@@ -49,6 +50,11 @@ while read -r id url; do
   image="$(sed -n 's/^image=//p' "${dir}/web-green.txt" | head -n1)"
   [ "$mtree" = "$TREE" ] || { log "marker of run ${id} names tree ${mtree}"; continue; }
   [[ "$image" =~ $REF_RE ]] || { log "marker of run ${id} has no valid image digest"; continue; }
+  # QA #210 m4: the version may have been pruned (newest 40 kept) while the marker lives 14 days.
+  if ! "$GH" api "orgs/${REPO%%/*}/packages/container/petprep-website/versions?per_page=100" --jq '.[].name' 2>/dev/null \
+       | grep -qx "${image#*@}"; then
+    log "digest of run ${id} is no longer in GHCR (or the lookup failed)"; continue
+  fi
   log "tree ${TREE} already built and tested in run ${id}: deploying ${image}"
   emit "$image" "$id"
 done <<< "$ids"
