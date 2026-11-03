@@ -42,19 +42,19 @@ const nl: RegistryCopy = {
     weight: "Te veel snoepjes en te grote maaltijden",
     heat: "Wandelen in de hitte",
     growth: "Vergeten dat de pup nog groeit",
-    growthText: (growthEnd) => `Volgroeid: ${growthEnd}. Plan tot die tijd beweging en voer voor een jong dier dat nog groeit, en vraag je dierenarts wat bij het jouwe past.`,
+    growthText: (growthEnd) => `Volgroeid: ${growthEnd}. Plan tot die tijd beweging en voer die passen bij een jong huisdier dat nog groeit, en vraag je dierenarts wat bij het jouwe past.`,
     mind: "Te weinig uitdaging voor de hersenen",
     health: "De bekende gezondheidsproblemen van het ras over het hoofd zien",
     practise: "In PetPrep oefent een kind precies deze gewoontes – stappen, maaltijden, verzorging – voordat het echte huisdier thuiskomt.",
   },
   hub: {
-    title: "Leer het dier kennen voordat het thuiskomt.",
+    title: "Leer je toekomstige huisdier kennen voordat het thuiskomt.",
     intro:
       "Wat elke diersoort en elk ras in PetPrep echt nodig heeft – volgens kennelclubs, kattenstamboekorganisaties, veterinaire organisaties en onderzoeken, met een link naar elke bron. Plus de regels waarmee PetPrep het dier simuleert.",
     breedCount: (n) => `${n} ${s(n, "ras", "rassen")} in het register`,
     open: "Bekijk de rassen",
     openA11y: (many) => `Bekijk de rassen: ${lc(many)}`,
-    freePlan: (name, activity) => `Gratis plan: ${lc(name)} (${activity} als volwassen dier). Hiervoor is er geen raspagina.`,
+    freePlan: (name, activity) => `Gratis plan: ${lc(name)} (${activity} voor een volwassen huisdier). Hiervoor is geen raspagina.`,
     otherSpecies: "Meer diersoorten staan gepland.",
     methodTitle: "Zo bouwen we dit register",
     method: [
@@ -115,7 +115,7 @@ const nl: RegistryCopy = {
     remove: "{name} verwijderen",
     note: "Waarden staan zoals de genoemde bron ze geeft. Waar bronnen verschillen, noemt de raspagina ze allemaal.",
     availabilityRow: "In PetPrep",
-    activityRow: "Dagdoel van een volwassen dier in PetPrep (spelregel)",
+    activityRow: "Dagdoel van een volwassen huisdier in PetPrep (spelregel)",
   },
   facets: {
     size: { label: "Grootte", values: { toy: "Dwerg", small: "Klein", small_medium: "Klein tot middelgroot", medium: "Middelgroot", medium_large: "Middelgroot tot groot", large: "Groot", giant: "Zeer groot" } },
@@ -138,7 +138,7 @@ const nl: RegistryCopy = {
   fields: {
     size: "Grootte",
     height: "Schofthoogte",
-    weight: "Gewicht als volwassen dier",
+    weight: "Gewicht (volwassen)",
     growth_end: "Volgroeid op een leeftijd van",
     lifespan: "Levensduur",
     exercise: "Dagelijkse beweging",
@@ -148,10 +148,10 @@ const nl: RegistryCopy = {
     shedding: "Verharen",
     litter_scoop: "Kattenbak uitscheppen",
     litter_full_change: "Alle kattenbakvulling verversen",
-    litter_pee: "Plast (volwassen dier)",
-    litter_poo: "Ontlasting (volwassen dier)",
+    litter_pee: "Plassen (volwassen kat)",
+    litter_poo: "Ontlasting (volwassen kat)",
     water_need: "Waterbehoefte",
-    sleep: "Slaap (volwassen dier)",
+    sleep: "Slaap (volwassen)",
   },
   contexts: {
     puppy_8_12_weeks: "8–12 weken",
@@ -238,7 +238,7 @@ const nl: RegistryCopy = {
   },
   rules: {
     steps_rule: (p, f) =>
-      `Stappendoel = minuten dagelijkse beweging × ${p.per_minute} stappen: een volwassen dier krijgt ${p.minutes % 60 === 0 ? `${f.num(p.minutes / 60)} uur` : `${p.minutes} ${s(p.minutes, "minuut", "minuten")}`}, dus ${f.num(p.steps)} stappen per dag.`,
+      `Stappendoel = minuten dagelijkse beweging × ${p.per_minute} stappen: een volwassen huisdier krijgt ${p.minutes % 60 === 0 ? `${f.num(p.minutes / 60)} uur` : `${p.minutes} ${s(p.minutes, "minuut", "minuten")}`}, dus ${f.num(p.steps)} stappen per dag.`,
     learning: (p, f) =>
       p.multiplier < 1
         ? `Leert commando’s langzamer dan de kruising uit het gratis plan (${f.num(p.multiplier)}× zo snel).`
@@ -396,7 +396,7 @@ const nl: RegistryCopy = {
     },
   },
   health: {
-    shar_pei_fever: "Familiale Shar-Pei-koorts kan bij het ras voorkomen: aanvallen van hoge koorts met pijnlijke, gezwollen gewrichten en een gezwollen gezicht — ga meteen naar de dierenarts.",
+    shar_pei_fever: "Familiale shar-peikoorts kan bij het ras voorkomen: aanvallen van hoge koorts met pijnlijke, gezwollen gewrichten en een gezwollen gezicht – ga meteen naar de dierenarts.",
     weight_gain: "Komt makkelijk aan – let op de porties en de snoepjes.",
     hip_elbow_dysplasia_eye_conditions: "Kan vatbaar zijn voor heup- en elleboogdysplasie en voor verschillende erfelijke oogaandoeningen.",
     cancer_risk: "Bronnen beschrijven een hoger risico op kanker bij dit ras.",
@@ -410,7 +410,7 @@ const nl: RegistryCopy = {
     hip_elbow_dysplasia: "Kan vatbaar zijn voor heup- en elleboogdysplasie; fokkers wordt aangeraden de heupen en ellebogen van de ouderdieren te laten testen vóór het fokken.",
     degenerative_myelopathy: "Degeneratieve myelopathie, een ziekte van het ruggenmerg die de achterbenen langzaam verzwakt, komt bij het ras voor; er is een DNA-test beschikbaar.",
     exercise_induced_collapse: "Inspanningsgeïnduceerde collaps, een erfelijke neuromusculaire aandoening waardoor een hond na zware inspanning kan instorten, komt bij het ras voor.",
-    heart_valve_disease: "Hartziekte door een verzwakkende mitralisklep is een groot probleem bij dit ras; vaak valt die eerst op als hartruis, en fokhonden horen eerst op hun hart te worden onderzocht.",
+    heart_valve_disease: "Hartziekte door een verzwakkende mitralisklep is een groot probleem bij dit ras; vaak valt die het eerst op als hartruis, en fokhonden moeten eerst op hun hart worden onderzocht.",
     chiari_syringomyelia: "Chiari-achtige malformatie en syringomyelie, een pijnlijke aandoening met holtes vol vocht in het ruggenmerg vlak bij de hersenen, komt bij het ras voor en hangt samen met de schedelvorm; de diagnose wordt gesteld met een MRI-scan.",
     eye_conditions: "Erfelijke oogaandoeningen zoals staar komen bij het ras voor, en uitpuilende of geïrriteerde ogen zijn een aandachtspunt; er zijn oogonderzoeken en DNA-tests beschikbaar.",
     epilepsy: "Epilepsie, een hersenaandoening die toevallen kan veroorzaken, komt bij het ras voor.",
@@ -498,7 +498,7 @@ const nl: RegistryCopy = {
     familial_nephropathy: "Een erfelijke nierziekte (familiaire nefropathie) komt bij het ras voor; er is een DNA-test voor de ouderdieren beschikbaar.",
     hereditary_nephritis: "Een erfelijke nierziekte (erfelijke nefritis, ook wel erfelijke glomerulopathie van de samojeed genoemd) komt bij het ras voor.",
     panosteitis: "Panosteïtis, een pijnlijke ontsteking van de lange pijpbeenderen die meestal jonge, groeiende honden treft, kan bij het ras voorkomen.",
-    splenic_torsion: "Een draaiing van de milt, die dringend dierenartsenzorg nodig heeft, komt bij dit ras vaker voor dan bij andere grote rassen.",
+    splenic_torsion: "Een draaiing van de milt, waarvoor je dringend naar de dierenarts moet, komt bij dit ras vaker voor dan bij andere grote rassen.",
     urinary_incontinence: "Urine-incontinentie, het onbedoeld verliezen van urine, kan bij het ras voorkomen.",
     osteochondritis: "Osteochondritis dissecans (OCD), een aandoening van het gewrichtskraakbeen bij groeiende honden, kan bij het ras voorkomen.",
     scottie_cramp: "Scottie cramp – korte aanvallen van spierkrampen, meestal door opwinding – komt bij het ras voor; het doet geen pijn.",
@@ -537,7 +537,7 @@ const nl: RegistryCopy = {
       `${name}: de onderbouwde behoeften van dit ras (${lc(one)}) – beweging, verzorging, maaltijden, grootte, levensduur, voor wie het geschikt is – en hoe PetPrep het simuleert.`,
     suitabilityTitle: "Voor wie het geschikt is",
     suitabilityNote: "Dezelfde labels als in de app. Elk label wordt onderbouwd door de bronnen onderaan de pagina.",
-    suitabilityNone: "Voor dit ras zijn er nog geen onderbouwde geschiktheidslabels.",
+    suitabilityNone: "Voor dit ras zijn nog geen onderbouwde geschiktheidslabels.",
     needsTitle: "Wat het nodig heeft",
     needsIntro: (species) =>
       species === "cat"
@@ -548,7 +548,7 @@ const nl: RegistryCopy = {
     simTitle: "Zo simuleert PetPrep het",
     simBadge: "Spelregels, geen veterinair advies",
     simIntro:
-      "In PetPrep is één echte week één maand in het leven van het huisdier. Dit zijn de regels die het spel voor dit ras gebruikt. PetPrep heeft ze gekozen op basis van de bronnen op deze pagina; het zijn geen verzorgingsinstructies voor een echt dier.",
+      "In PetPrep is één echte week één maand in het leven van het huisdier. Dit zijn de regels die het spel voor dit ras gebruikt. PetPrep heeft ze gekozen op basis van de bronnen op deze pagina; het zijn geen verzorgingsinstructies voor een echt huisdier.",
     simInfoOnly: "Dit ras staat alleen ter informatie in het register; de app simuleert het nog niet.",
     simTable: { stage: "Levensfase", starts: "Begint", meals: "Maaltijden per dag", activity: { steps: "Dagelijks stappendoel", play_sessions: "Spelen per dag" } },
     arrives: (m) => `komt met ${m} maanden`,
@@ -556,7 +556,7 @@ const nl: RegistryCopy = {
     meals: (steps) => steps.map((x) => (x.from === null ? String(x.meals) : `vanaf maand ${x.from}: ${x.meals}`)).join("; "),
     simDecisions: "Elk getal in het spel is een beslissing van PetPrep die met de bronnen is vastgelegd.",
     healthTitle: "Gezondheid",
-    healthNote: "Alleen ter informatie, niet gecontroleerd door een dierenarts. Vraag je dierenarts naar je eigen dier.",
+    healthNote: "Alleen ter informatie, niet gecontroleerd door een dierenarts. Vraag je dierenarts naar je eigen huisdier.",
     healthNone: "Onze bronnen bevatten nog geen rasspecifieke gezondheidsinformatie voor dit ras.",
     checklistTitle: "Voordat je koopt: wat je bij de fokker controleert",
     checklistIntro: (speciesId) =>
@@ -582,7 +582,7 @@ const nl: RegistryCopy = {
     sourcesTitle: "Bronnen",
     sourcesIntro: "Bij elk feit op deze pagina staat een van deze bronnen.",
     sourceLabel: (id, publisher) => `Bron ${id}: ${publisher}`,
-    disclaimer: "PetPrep is een simulatie voor gezinnen. Deze pagina is geen veterinair advies – vraag voor een echt dier een dierenarts of de rasvereniging.",
+    disclaimer: "PetPrep is een simulatie voor gezinnen. Deze pagina is geen veterinair advies – vraag voor een echt huisdier een dierenarts of de rasvereniging.",
     backTo: (many) => `Alle ${lc(many)}`,
     compareWith: "Vergelijk met andere rassen",
     related: { title: "Vergelijkbare rassen", intro: (many) => `Andere ${lc(many)} in het register met vergelijkbare behoeften – elk met onderbouwde feiten.` },
@@ -640,18 +640,18 @@ const nl: RegistryCopy = {
       sources: ["S669", "S670", "S672", "S10"],
     },
     rat_terrier: {
-      aka: "Rattie, Amerikaanse Rat Terrier",
+      aka: "Rattie, Amerikaanse rat terrier",
       text: [
-        "De Rat Terrier is een kleine Amerikaanse terriër die in twee maten wordt gefokt — miniatuur en standaard — met een korte, nauw aanliggende, gladde en glanzende vacht. De rasstandaard staat een schofthoogte tot 18 inch (46 cm) toe, en PetMD noemt voor beide maten een gewicht van 10–25 pond (ongeveer 4,5–11 kg); een hond van dit formaat is rond 9–12 maanden volgroeid (PetMD). VCA noemt een levensduur van 12–16 jaar, PetMD 12–18 jaar.",
-        "De Rat Terrier Club of America zegt dat Rat Terriers goed met kinderen omgaan, vooral als ze met hen opgroeien, en het in een appartement redden, maar minstens 30 minuten beweging per dag nodig hebben. PetMD schrijft dat ze veel lichamelijke en mentale uitdaging nodig hebben, niet graag lang alleen zijn en het hele jaar licht verharen; VCA raadt eenmaal per week borstelen aan en waarschuwt dat ze misschien niet goed samengaan met kleine huisdieren, vooral knaagdieren.",
+        "De rat terrier is een kleine Amerikaanse terriër die in twee maten wordt gefokt – miniatuur en standaard – met een korte, nauw aanliggende, gladde en glanzende vacht. De rasstandaard staat een schofthoogte tot 18 inch (46 cm) toe, en PetMD noemt voor beide maten een gewicht van 10–25 pond (ongeveer 4,5–11 kg); een hond van dit formaat is rond 9–12 maanden volgroeid (PetMD). VCA noemt een levensduur van 12–16 jaar, PetMD 12–18 jaar.",
+        "De Rat Terrier Club of America zegt dat rat terriers goed met kinderen omgaan, vooral als ze met hen opgroeien, en het in een appartement redden, maar minstens 30 minuten beweging per dag nodig hebben. PetMD schrijft dat ze veel lichamelijke en mentale uitdaging nodig hebben, niet graag lang alleen zijn en het hele jaar licht verharen; VCA raadt eenmaal per week borstelen aan en waarschuwt dat ze misschien niet goed samengaan met kleine huisdieren, vooral knaagdieren.",
       ],
       sources: ["S650", "S648", "S10", "S647"],
     },
     shar_pei: {
-      aka: "Chinese Shar-Pei, Sharpei",
+      aka: "Chinese shar-pei, Sharpei",
       text: [
-        "De Shar Pei (in de VS „Chinese Shar-Pei”) is een actieve, compacte, vierkant gebouwde middelgrote hond uit China met een korte, harde, borstelige vacht in één effen kleur (elke kleur behalve wit), plooien op het hoofd en de schoft en een brede snuit. De standaard van de Royal Kennel Club noemt een schofthoogte van 46–51 cm en de PDSA een gewicht van 20–27 kg; een hond van dit formaat is rond 12–15 maanden volgroeid (PetMD). De Royal Kennel Club en de PDSA noemen een levensduur van meer dan 10 jaar, maar een VetCompass-onderzoek bij honden in het Verenigd Koninkrijk vond een mediaan van 7,3 jaar.",
-        "De Royal Kennel Club raadt tot een uur beweging per dag en eenmaal per week borstelen aan, en plaatst het ras in categorie 2 van Breed Watch vanwege problemen met de oogleden en de huidplooien. De PDSA beschrijft Shar Peis als trouwe, toegewijde gezinshonden die het best passen bij ervaren eigenaren en oudere kinderen, waarschuwt voor een sterk jachtinstinct tegenover kleinere dieren en raadt aan de huidplooien schoon en droog te houden en tussen eten en beweging wat tijd te laten.",
+        "De shar-pei (in de VS “Chinese Shar-Pei”) is een actieve, compacte, vierkant gebouwde middelgrote hond uit China met een korte, harde, borstelige vacht in één effen kleur (elke kleur behalve wit), plooien op het hoofd en de schoft en een brede snuit. De standaard van de Royal Kennel Club noemt een schofthoogte van 46–51 cm en de PDSA een gewicht van 20–27 kg; een hond van dit formaat is rond 12–15 maanden volgroeid (PetMD). De Royal Kennel Club en de PDSA noemen een levensduur van meer dan 10 jaar, maar een VetCompass-onderzoek bij honden in het Verenigd Koninkrijk vond een mediaan van 7,3 jaar.",
+        "De Royal Kennel Club raadt tot een uur beweging per dag en eenmaal per week borstelen aan, en plaatst het ras in categorie 2 van Breed Watch vanwege problemen met de oogleden en de huidplooien. De PDSA beschrijft shar-pei’s als trouwe, toegewijde gezinshonden die het best passen bij ervaren eigenaren en oudere kinderen, waarschuwt voor een sterk jachtinstinct tegenover kleinere dieren en raadt aan de huidplooien schoon en droog te houden en tussen eten en beweging wat tijd te laten.",
       ],
       sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
     },
@@ -776,8 +776,8 @@ const nl: RegistryCopy = {
     bulldog: {
       aka: "Bulldog, English bulldog",
       text: [
-        "De Engelse bulldog is een middelgrote, gladharige hond uit Groot-Brittannië: vrij gedrongen, laag, breed, krachtig en compact, met een relatief korte snuit, kleine dunne rozenoren en ronde, heel donkere ogen. De standaard staat effen kleuren toe zoals rood, fawn, vaal en wit, gestroomd en bont; zwart en zwart met tan zijn zeer ongewenst. Hij vraagt om grote, wijd open neusgaten en zegt dat honden met ademnood zeer ongewenst zijn.",
-        "De standaard noemt hem alert, moedig, trouw, betrouwbaar en dapper, woest van uiterlijk maar aanhankelijk, en de Royal Kennel Club zegt dat hij door zijn karakter en trouw enorm populair blijft als gezinshond. Britse bronnen zeggen dat hij tot een uur beweging per dag nodig heeft, nooit op het heetst van de dag, en goed met andere huisdieren overweg kan als hij jong is gesocialiseerd; hij moet één keer per week worden verzorgd, maar de rimpels in zijn gezicht moeten elke dag worden schoongemaakt. De PDSA beschrijft hem als een ras met een extreem platte snuit dat heel waarschijnlijk ernstige gezondheidsproblemen krijgt, zoals ademhalingsproblemen, en raadt sterk aan een gezonder ras, een kruising of een vuilnisbakkie te overwegen. Hij wordt meestal minder dan tien jaar oud.",
+        "De Engelse bulldog is een middelgrote, gladharige hond uit Groot-Brittannië: vrij gedrongen, laag, breed, krachtig en compact, met een relatief korte snuit, kleine dunne rozenoren en ronde, heel donkere ogen. De standaard staat effen kleuren toe zoals rood, fawn, vaal en wit, gestroomd en bont; zwart en zwart met tan zijn zeer ongewenst. De standaard vraagt om grote, wijd open neusgaten en zegt dat honden met ademnood zeer ongewenst zijn.",
+        "De standaard noemt hem alert, moedig, trouw, betrouwbaar en dapper, woest van uiterlijk maar aanhankelijk, en de Royal Kennel Club zegt dat hij door zijn karakter en trouw enorm populair blijft als gezinshond. Britse bronnen zeggen dat hij tot een uur beweging per dag nodig heeft, nooit op het heetst van de dag, en goed met andere huisdieren overweg kan als hij jong is gesocialiseerd; hij moet één keer per week worden verzorgd, maar de rimpels in zijn gezicht moeten elke dag worden schoongemaakt. De PDSA beschrijft hem als een ras met een extreem platte snuit dat heel waarschijnlijk ernstige gezondheidsproblemen krijgt, zoals ademhalingsproblemen, en raadt sterk aan een gezonder ras, een kruising of een hond zonder stamboom te overwegen. Hij wordt meestal minder dan tien jaar oud.",
       ],
       sources: ["S175", "S177", "S180"],
     },
@@ -841,7 +841,7 @@ const nl: RegistryCopy = {
       aka: "Shih-tzu",
       text: [
         "De shih tzu is een kleine gezelschapshond uit Tibet; Groot-Brittannië beheert de FCI-standaard. De standaarden beschrijven een stevige hond met een overvloedige vacht, een fiere houding en een gezicht “als een chrysant”: een lange, dichte bovenvacht, grote donkere ronde ogen, grote hangende oren en een rijk bevederde staart die over de rug wordt gedragen. De standaarden staan veel kleuren toe; PetPrep toont goud met wit, zwart met wit en lever met wit, en nooit merle. De snuit is kort en plat, en de PDSA noemt ademhalingsproblemen door de kortere snuit, dus PetPrep tekent altijd een gematigde snuit met open neusgaten.",
-        "De FCI beschrijft hem als intelligent, actief en alert, vriendelijk en zelfstandig. De Royal Kennel Club raadt tot een uur beweging per dag aan en dagelijkse verzorging, en noemt een appartement een geschikt thuis. De PDSA zegt dat shih tzu’s goedaardige gezinshonden kunnen zijn als ze de juiste socialisatie en training hebben gehad, noemt ze een ideaal huisdier voor beginnende eigenaren, raadt aan ze bij kinderen altijd onder toezicht te houden, en adviseert voor de meeste huishonden dagelijks borstelen plus om de zes à acht weken een knipbeurt door een professionele trimmer. De Royal Kennel Club noemt een levensduur van meer dan 10 jaar.",
+        "De FCI beschrijft hem als intelligent, actief en alert, vriendelijk en zelfstandig. De Royal Kennel Club raadt tot een uur beweging per dag aan en dagelijkse verzorging, en noemt een appartement een geschikt thuis. De PDSA zegt dat shih tzu’s goedaardige gezinshonden kunnen zijn als ze de juiste socialisatie en training hebben gehad, noemt ze een ideaal huisdier voor beginnende eigenaren, raadt aan ze bij kinderen altijd onder toezicht te houden, en adviseert voor de meeste honden in huis dagelijks borstelen plus om de zes à acht weken een knipbeurt door een professionele trimmer. De Royal Kennel Club noemt een levensduur van meer dan 10 jaar.",
       ],
       sources: ["S229", "S231", "S233"],
     },
@@ -1016,7 +1016,7 @@ const nl: RegistryCopy = {
     bichon_frise: {
       aka: "Bichon à poil frisé, Bichon, Bichon tenerife",
       text: [
-        "De bichon frisé is een Frans-Belgische gezelschapshond. De FCI-standaard beschrijft een opgewekt hondje met een levendige gang en heel los, wit haar met kurkentrekkerkrullen – een echte metgezel die je overal mee naartoe kunt nemen, niet nerveus en geen vaste blaffer – met een schofthoogte van 25–29 cm en een gewicht van ongeveer 5 kg. Een volwassen dier is altijd zuiver wit, met heel donkere ronde ogen, een zwarte neus, hangende oren en een gepluimde staart die over de rug wordt gedragen.",
+        "De bichon frisé is een Frans-Belgische gezelschapshond. De FCI-standaard beschrijft een opgewekt hondje met een levendige gang en heel los, wit haar met kurkentrekkerkrullen – een echte metgezel die je overal mee naartoe kunt nemen, niet nerveus en geen vaste blaffer – met een schofthoogte van 25–29 cm en een gewicht van ongeveer 5 kg. Een volwassen bichon is altijd zuiver wit, met heel donkere ronde ogen, een zwarte neus, hangende oren en een gepluimde staart die over de rug wordt gedragen.",
         "De Royal Kennel Club raadt tot 30 minuten beweging per dag aan en dagelijkse verzorging, merkt op dat het ras niet verhaart en in een appartement past, en noemt een levensduur van meer dan 12 jaar. De PDSA beschrijft heel aanhankelijke, liefdevolle honden die uitstekend met kinderen en andere huisdieren omgaan, en voegt eraan toe dat de vacht om de paar maanden moet worden geknipt, vaak door een professionele trimmer.",
       ],
       sources: ["S410", "S411", "S413"],
@@ -1145,7 +1145,7 @@ const nl: RegistryCopy = {
       aka: "Sint Bernard, Bernhardiner, Saint Bernard",
       text: [
         "De sint-bernard komt uit Zwitserland; de FCI voert hem als St. Bernhardshund bij de molossers van het berghondtype. De FCI-standaard beschrijft een hond die van nature vriendelijk is, rustig tot levendig en waakzaam, en erkent twee varianten: kortharig, met een dichte, gladde, dicht aanliggende vacht, en langharig. Reuen hebben een schofthoogte van minstens 70 cm en teven van minstens 65 cm, tot 90 en 80 cm; de PDSA noemt een gewicht van 54–81 kg.",
-        "De Royal Kennel Club raadt tot een uur beweging per dag aan en zegt dat het ras past bij een groot huis met een grote tuin, vaker dan één keer per week verzorging nodig heeft, verhaart en meestal minder dan tien jaar oud wordt. De PDSA zegt dat sint-bernards graag bij een gezin zijn en geweldig omgaan met mensen van alle leeftijden, ook kinderen, als pup goed gesocialiseerd moeten worden, minstens drie keer per week moeten worden geborsteld, kwijlen, minder goed tegen hitte kunnen en tijd nodig hebben tussen eten en bewegen. PetMD voegt eraan toe dat deze mensgerichte honden verlatingsangst kunnen ontwikkelen als ze lang alleen worden gelaten.",
+        "De Royal Kennel Club raadt tot een uur beweging per dag aan en zegt dat het ras past bij een groot huis met een grote tuin, vaker dan één keer per week verzorging nodig heeft, verhaart en meestal minder dan tien jaar oud wordt. De PDSA zegt dat sint-bernards graag bij een gezin zijn, geweldig omgaan met mensen van alle leeftijden (ook kinderen), als pup goed gesocialiseerd moeten worden, minstens drie keer per week moeten worden geborsteld, kwijlen, minder goed tegen hitte kunnen en tijd nodig hebben tussen eten en bewegen. PetMD voegt eraan toe dat deze mensgerichte honden verlatingsangst kunnen ontwikkelen als ze lang alleen worden gelaten.",
       ],
       sources: ["S527", "S528", "S529", "S532", "S533"],
     },
@@ -1153,7 +1153,7 @@ const nl: RegistryCopy = {
       aka: "Staffie, Staffy, Stafford",
       text: [
         "De Staffordshire bull terrier komt uit Groot-Brittannië; de FCI rekent hem tot de terriërs van het bulltype. De FCI-standaard beschrijft een gladharige, evenwichtige hond met veel kracht voor zijn formaat – van oudsher met onverzettelijke moed en vasthoudendheid, zeer intelligent en aanhankelijk, vooral met kinderen. Hij heeft een schofthoogte van 35,5–40,5 cm; reuen wegen 12,7–17 kg en teven 11–15,4 kg. Hij komt voor in gestroomd, rood, fawn, zwart, blauw of wit, effen of met wit.",
-        "De Royal Kennel Club noemt hem een geweldige gezinshond en raadt tot een uur beweging per dag aan; hij heeft één keer per week verzorging nodig, verhaart en wordt meestal ouder dan 12 jaar. De PDSA zegt dat staffies verdraagzaam en lief zijn voor kinderen, maar als mensgerichte honden staan ze erom bekend dat ze last hebben van verlatingsangst als ze alleen worden gelaten, ze zijn bekende knagers, en door hun heel sterke jachtinstinct zijn kleinere huisdieren in hun buurt geen goed idee.",
+        "De Royal Kennel Club noemt hem een geweldige gezinshond en raadt tot een uur beweging per dag aan; hij heeft één keer per week verzorging nodig, verhaart en wordt meestal ouder dan 12 jaar. De PDSA zegt dat staffies verdraagzaam en lief zijn voor kinderen, maar dat ze als mensgerichte honden bekendstaan om verlatingsangst als ze alleen worden gelaten, graag knagen, en dat kleinere huisdieren in hun buurt door hun heel sterke jachtinstinct geen goed idee zijn.",
       ],
       sources: ["S536", "S537", "S538", "S540"],
     },
@@ -1161,7 +1161,7 @@ const nl: RegistryCopy = {
       aka: "Airedale, Koning der terriërs",
       text: [
         "De Airedale terrier komt uit Groot-Brittannië; de FCI rekent hem tot de grote en middelgrote terriërs. De FCI-standaard noemt hem de grootste van de terriërs – een gespierde, actieve, vrij gedrongen hond die extravert en zelfverzekerd is, vriendelijk, moedig en intelligent, altijd alert, niet agressief maar onbevreesd. Reuen hebben een schofthoogte van ongeveer 58–61 cm en teven van ongeveer 56–59 cm. Zijn harde, dichte, draadachtige vacht is tan met een zwart of grijs gemêleerd zadel.",
-        "De Royal Kennel Club raadt tot een uur beweging per dag aan; de vacht heeft dagelijkse verzorging nodig en verhaart niet, en het ras wordt meestal ouder dan 10 jaar. PetMD beschrijft geweldige gezinshonden die, als ze goed getraind zijn, meestal goed met kinderen overweg kunnen, maar niet te lang aan hun lot mogen worden overgelaten; het adviseert een paar keer per week borstelen, elke week even de oren schoonmaken en drie à vier keer per jaar een trimbeurt bij een professionele trimmer.",
+        "De Royal Kennel Club raadt tot een uur beweging per dag aan; de vacht heeft dagelijkse verzorging nodig en verhaart niet, en het ras wordt meestal ouder dan 10 jaar. PetMD beschrijft geweldige gezinshonden die, als ze goed getraind zijn, meestal goed met kinderen overweg kunnen, maar niet te lang aan hun lot mogen worden overgelaten; PetMD adviseert een paar keer per week borstelen, elke week even de oren schoonmaken en drie à vier keer per jaar een trimbeurt bij een professionele trimmer.",
       ],
       sources: ["S545", "S546", "S547", "S549"],
     },
@@ -1169,7 +1169,7 @@ const nl: RegistryCopy = {
       aka: "Jack Russell, Russell terrier",
       text: [
         "De Jack Russell terrier – de American Kennel Club noemt hem Russell Terrier – komt uit Engeland en werd in Australië verder ontwikkeld; de FCI rekent hem tot de kleine terriërs. De standaard beschrijft een sterke, actieve, lenige werkterriër met veel karakter: levendig, alert en actief, moedig en onbevreesd, vriendelijk maar rustig zelfverzekerd. Hij heeft een schofthoogte van 25–30 cm en weegt ongeveer 5–6 kg. Zijn gladde, gebroken of ruwe vacht is overwegend wit met zwarte en/of tan aftekeningen.",
-        "De Royal Kennel Club raadt tot een uur beweging per dag aan en één keer per week verzorging; het ras verhaart en wordt meestal ouder dan 10 jaar. De PDSA beschrijft slimme, levendige honden die goede gezinshonden kunnen zijn als ze van jongs af aan getraind en gesocialiseerd worden, maar beter passen bij gezinnen met wat oudere kinderen; ze hebben een heel sterk jachtinstinct, dus kleinere huisdieren worden niet aangeraden, en ze graven dol graag.",
+        "De Royal Kennel Club raadt tot een uur beweging per dag aan en één keer per week verzorging; het ras verhaart en wordt meestal ouder dan 10 jaar. De PDSA beschrijft slimme, levendige honden die goede gezinshonden kunnen zijn als ze van jongs af aan getraind en gesocialiseerd worden, maar beter passen bij gezinnen met wat oudere kinderen; ze hebben een heel sterk jachtinstinct, dus kleinere huisdieren worden niet aangeraden, en ze graven dolgraag.",
       ],
       sources: ["S557", "S558", "S559", "S560"],
     },
@@ -1177,7 +1177,7 @@ const nl: RegistryCopy = {
       aka: "Bull mastiff",
       text: [
         "De bullmastiff is een oud Engels waakhondenras uit de 19e eeuw, afkomstig van de bulldog en de Old English mastiff; de FCI rekent hem tot de molossers. De standaard beschrijft een krachtige, symmetrische hond die veel kracht laat zien maar niet log is – met uithoudingsvermogen, actief, betrouwbaar, levenslustig, alert en trouw. Reuen hebben een schofthoogte van 64–69 cm en wegen 50–59 kg, teven 61–66 cm en 41–50 kg. De korte, harde vacht is fawn, rood of gestroomd in elke tint, altijd met een zwarte snuit.",
-        "De Royal Kennel Club raadt meer dan twee uur beweging per dag aan en één keer per week verzorging, en het ras wordt meestal minder dan 10 jaar oud. De PDSA beschrijft heel trouwe honden die door hun grootte en kracht beter passen bij huishoudens met alleen volwassenen of gezinnen met oudere kinderen; ze hebben vroege socialisatie nodig, hebben het liefst altijd iemand thuis, een heel sterk jachtinstinct, kwijlen veel en hebben tijd nodig tussen eten en bewegen.",
+        "De Royal Kennel Club raadt meer dan twee uur beweging per dag aan en één keer per week verzorging, en het ras wordt meestal minder dan 10 jaar oud. De PDSA beschrijft heel trouwe honden die door hun grootte en kracht beter passen bij huishoudens met alleen volwassenen of gezinnen met oudere kinderen; ze hebben vroege socialisatie nodig, willen het liefst altijd iemand thuis hebben, hebben een heel sterk jachtinstinct, kwijlen veel en hebben tijd nodig tussen eten en bewegen.",
       ],
       sources: ["S565", "S566", "S567", "S568"],
     },
@@ -1209,7 +1209,7 @@ const nl: RegistryCopy = {
       aka: "Bullterriër, Engelse bull terrier, Bully",
       text: [
         "De bull terrier komt uit Groot-Brittannië; de FCI rekent hem tot de terriërs van het bulltype (groep 3). Het is een middelgrote, kortharige terriër: de PDSA noemt een gemiddelde schofthoogte van 51–61 cm en een gemiddeld gewicht van 22–31 kg, en PetMD beschrijft een atletische bouw van ongeveer 21–22 inch en 50–70 pond. PetMD noemt regelmatige beweging een must en zegt dat bull terriers aanhankelijk zijn tegenover hun gezin, ook tegenover kinderen, maar niet altijd vriendelijk tegenover andere honden of katten, en dat vroege en frequente socialisatie en training essentieel zijn.",
-        "De PDSA raadt minstens een uur beweging per dag aan, verdeeld over de dag, en tijd na de maaltijd voordat hij beweegt. Ze zegt dat een goed gesocialiseerde bull terrier met mensen van alle leeftijden overweg kan, maar omdat hij wat snel opgewonden raakt beter past bij oudere kinderen; hij heeft zoveel mogelijk gezelschap graag en een sterk jachtinstinct, dus voorzichtigheid is nodig bij katten en andere kleine dieren. Eén keer per week borstelen is genoeg voor de vacht. De PDSA noemt een gemiddelde levensduur van meer dan 10 jaar en PetMD 12–13 jaar; zoals andere middelgrote honden is hij volgroeid op ongeveer 12–15 maanden (PetMD).",
+        "De PDSA raadt minstens een uur beweging per dag aan, verdeeld over de dag, en tijd na de maaltijd voordat hij beweegt. Ze zegt dat een goed gesocialiseerde bull terrier met mensen van alle leeftijden overweg kan, maar omdat hij wat snel opgewonden raakt beter past bij oudere kinderen; hij houdt van zoveel mogelijk gezelschap en heeft een sterk jachtinstinct, dus voorzichtigheid is nodig bij katten en andere kleine dieren. Eén keer per week borstelen is genoeg voor de vacht. De PDSA noemt een gemiddelde levensduur van meer dan 10 jaar en PetMD 12–13 jaar; zoals andere middelgrote honden is hij volgroeid op ongeveer 12–15 maanden (PetMD).",
       ],
       sources: ["S589", "S591", "S592", "S10"],
     },
@@ -1281,7 +1281,7 @@ const nl: RegistryCopy = {
       aka: "Grote Zwitserse Sennenhond, Greater Swiss Mountain Dog, Swissy",
       text: [
         "De Grote Zwitserse Sennenhond is een stevige, zwaar gebouwde en goed gespierde driekleurige trekhond uit Zwitserland: zwart met symmetrische bruine en witte aftekeningen. De FCI-standaard noemt een schofthoogte van 65–72 cm voor reuen en 60–68 cm voor teven, maar geen gewicht; WebMD noemt 52–64 kg voor reuen en 39–50 kg voor teven. Een hond van dit formaat is volgroeid op ongeveer 18–24 maanden (PetMD), en de Royal Kennel Club noemt een levensduur van meer dan 10 jaar (PetMD: 8–11 jaar).",
-        "De Royal Kennel Club raadt tot een uur beweging per dag aan en één keer per week borstelen, en zegt dat het ras verhaart en een groot huis met een grote tuin nodig heeft. PetMD noemt ze geweldige gezinshonden die zachtaardig zijn met kinderen (elk contact moet onder toezicht), en adviseert de oren elke week schoon te maken en de hond vlak voor of na het eten niet te laten bewegen vanwege het risico op een maagkanteling (GDV); WebMD adviseert de tanden dagelijks te poetsen en weinig snoepjes te geven, omdat het ras snel te zwaar wordt.",
+        "De Royal Kennel Club raadt tot een uur beweging per dag aan en één keer per week borstelen, en zegt dat het ras verhaart en een groot huis met een grote tuin nodig heeft. PetMD noemt ze geweldige gezinshonden die zachtaardig zijn met kinderen (elk contact moet onder toezicht), en adviseert de oren elke week schoon te maken en de hond vlak voor of na het eten niet te laten bewegen vanwege het risico op maagtorsie (GDV); WebMD adviseert de tanden dagelijks te poetsen en weinig snoepjes te geven, omdat het ras snel te zwaar wordt.",
       ],
       sources: ["S653", "S654", "S656", "S658", "S10"],
     },
@@ -1296,7 +1296,7 @@ const nl: RegistryCopy = {
     ragdoll: {
       aka: "Rag doll",
       text: [
-        "De CFA beschrijft de ragdoll als een grote, relaxte kat met een halflange, pluchezachte en zijdeachtige vacht en blauwe ogen. Zijn donkerdere “points” komen in verschillende patronen voor – colourpoint zonder wit, mitted met witte voetjes, bicolour met meer wit, en van. Hij wordt langzaam volwassen: met twee jaar heeft hij zijn volledige vachtkleur en rond zijn vierde zijn volle grootte en gewicht.",
+        "De CFA beschrijft de ragdoll als een grote, relaxte kat met een halflange, pluchezachte en zijdeachtige vacht en blauwe ogen. Zijn donkerdere “points” komen in verschillende patronen voor – colourpoint zonder wit, mitted met witte voetjes, bicolour met meer wit, en het van-patroon. Hij wordt langzaam volwassen: met twee jaar heeft hij zijn volledige vachtkleur en rond zijn vierde zijn volle grootte en gewicht.",
         "De CFA beschrijft een zachtaardige kat die je bij de deur begroet en je van kamer naar kamer volgt, en meestal speelt zonder zijn nagels uit te steken. PetMD noemt hem een goede keus voor gezinnen, ook met kinderen, maar raadt aan hem rustig en onder toezicht kennis te laten maken met kinderen en andere huisdieren, en zegt dat sommige ragdolls maar één à twee keer per week gekamd hoeven te worden, terwijl de CFA regelmatig kammen aanraadt. Raskittens gaan meestal met 12–13 weken naar een nieuw thuis (PDSA).",
       ],
       sources: ["C13", "C30", "C32"],

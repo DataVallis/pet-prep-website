@@ -479,7 +479,7 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
       steps: [
         "Kies een kleurplaat en print hem – A4 of US Letter, zwart-wit is genoeg.",
         "Kleur hem in, of teken de tekening na op een leeg vel.",
-        "Lees samen het weetje op de kleurplaat: elk weetje komt van een dierenarts of een kennelclub.",
+        "Lees samen het weetje op de kleurplaat: elk weetje komt uit een bron van dierenartsen of een kennelclub.",
       ],
     },
     share: {
@@ -489,8 +489,8 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
     licence: "Gratis voor persoonlijk gebruik, in het gezin en in de klas. Verkoop de kleurplaten niet en publiceer ze nergens anders.",
     page: {
       metaTitle: (t) => `${t} – gratis kleurplaat om te printen | PetPrep`,
-      metaDescription: (t) => `${t}: een gratis kleurplaat voor kinderen om te printen (pdf in A4 en US Letter), met een echt weetje over dierenverzorging en de bron. Van PetPrep.`,
-      lead: "Gratis om te printen en in te kleuren. Op de kleurplaat: een echt weetje over dierenverzorging om samen te lezen.",
+      metaDescription: (t) => `${t}: een gratis kleurplaat voor kinderen om te printen (pdf in A4 en US Letter), met een echt weetje over de verzorging van huisdieren en de bron. Van PetPrep.`,
+      lead: "Gratis om te printen en in te kleuren. Op de kleurplaat: een echt weetje over de verzorging van huisdieren om samen te lezen.",
       print: "Printen",
       pdfA4: "Pdf (A4)",
       pdfLetter: "Pdf (US Letter)",
@@ -501,7 +501,7 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
       back: "Alle kleurplaten",
     },
     pageTip: {
-      curio: { title: "Dit is Curio", text: "Curio is het nieuwsgierige blokje uit het logo van PetPrep, dat tot leven is gekomen: grote ogen, een frambozenrode neus en een mintgroene halsband. Geef Curio zijn echte kleuren – of verzin je eigen kleuren." },
+      curio: { title: "Dit is Curio", text: "Curio is het nieuwsgierige blokje uit het logo van PetPrep, dat tot leven is gekomen: grote ogen, een frambozenrode neus en een mintgroene halsband. Kleur Curio in de echte kleuren – of verzin je eigen kleuren." },
       walkyourpet: { title: "#walkyourpet", text: "Een hond heeft elke dag zijn wandeling nodig – in PetPrep telt die alleen als je echt naar buiten gaat." },
     },
   },

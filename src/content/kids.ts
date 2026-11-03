@@ -71,9 +71,9 @@ export const kidsCopy: Record<Locale, KidsCopy> = {
     menu: "Voor kinderen",
     all: "Alles voor kinderen",
     items: [
-      { page: "coloring", title: "Kleurplaten", text: "12 gratis kleurplaten om te printen, elk met een weetje over dierenverzorging.", image: coloringThumb },
-      { page: "curio", title: "Maak kennis met Curio", text: "Onze mascotte en zijn korte video’s.", image: curioThumb },
-      { page: "walkyourpet", title: "#walkyourpet", text: "De beweging die een kind is begonnen: naar buiten voor de wandeling.", image: null },
+      { page: "coloring", title: "Kleurplaten", text: "12 gratis kleurplaten om te printen, elk met een weetje over het verzorgen van huisdieren.", image: coloringThumb },
+      { page: "curio", title: "Maak kennis met Curio", text: "Onze mascotte en de korte video’s.", image: curioThumb },
+      { page: "walkyourpet", title: "#walkyourpet", text: "De beweging die een kind begon: ga naar buiten voor de wandeling.", image: null },
     ],
   },
   pl: {

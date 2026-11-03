@@ -696,19 +696,19 @@
       ]
     },
     "shar_pei": {
-      "name": "Shar Pei",
+      "name": "Shar-pei",
       "slug": "shar-pei",
       "synonyms": [
-        "Chinese Shar-Pei",
+        "Chinese shar-pei",
         "Sharpei"
       ]
     },
     "rat_terrier": {
-      "name": "Rat Terrier",
+      "name": "Rat terrier",
       "slug": "rat-terrier",
       "synonyms": [
         "Rattie",
-        "Amerikaanse Rat Terrier"
+        "Amerikaanse rat terrier"
       ]
     },
     "brussels_griffon": {
@@ -726,30 +726,30 @@
     "tags": {
       "active_family": "een actief gezin",
       "apartment": "wonen in een appartement",
-      "back_spine": "lange rug – rugproblemen, laat hem niet springen",
-      "brachycephalic_breathing": "platte snuit – moeite met ademen en met warmte",
+      "back_spine": "lange rug – gevoelig voor rugklachten, laat hem niet springen",
+      "brachycephalic_breathing": "platte snuit – kan moeite hebben met ademhalen en met warmte",
       "chases_small_pets": "sterk jachtinstinct – kan kleine huisdieren achternazitten",
       "chews_when_bored": "knaagt dingen kapot als hij zich verveelt",
       "children": "gezinnen met kinderen",
       "cold_sensitive": "dunne vacht – heeft snel last van kou",
       "drools": "kwijlt – houd een doekje bij de hand",
       "experienced_owner": "krachtige hond – heeft een ervaren eigenaar nodig",
-      "eyelid_problems": "oogleden en ogen – vraag naar de oogonderzoeken",
+      "eyelid_problems": "oogleden en ogen – vraag naar de uitslagen van oogonderzoek",
       "family_pet": "het gezinsleven",
       "first_time_owner": "beginnende eigenaren",
       "food_motivated_weight": "dol op eten – let op het gewicht",
       "fragile_older_children": "breekbare botten – beter bij oudere kinderen",
       "frequent_grooming": "moet meerdere keren per week worden geborsteld",
-      "heart_and_spine": "hart en rug – vraag naar de gezondheidstests",
+      "heart_and_spine": "hart en rug – vraag naar de uitslagen van de gezondheidstests",
       "heat_sensitive": "dikke vacht – heeft het zwaar bij warm weer",
-      "hips_hind_legs": "heupen en achterbenen – vraag naar de gezondheid van de gewrichten",
-      "independent_experienced_owner": "zelfstandig en koppig – het best bij een ervaren eigenaar",
+      "hips_hind_legs": "heupen en achterpoten – let op de gezondheid van de gewrichten",
+      "independent_experienced_owner": "zelfstandig en koppig – past het best bij een ervaren eigenaar",
       "large_home": "een groot huis met tuin",
       "lively_older_children": "levendige hond – beter bij oudere kinderen",
       "long_daily_exercise": "heeft elke dag veel beweging nodig",
       "low_shedding": "huishoudens die liever minder haren in huis hebben",
       "may_herd_children": "kan kinderen tijdens het spelen proberen te “hoeden”",
-      "needs_company": "houdt van gezelschap – het best als er het grootste deel van de dag iemand thuis is",
+      "needs_company": "houdt van gezelschap – past het best bij een huis waar overdag meestal iemand is",
       "needs_mental_stimulation": "heeft mentale uitdaging nodig",
       "not_for_small_children": "grote hond – niet voor gezinnen met kleine kinderen",
       "often_alone": "gezinnen die een paar uur van huis zijn",
@@ -764,7 +764,7 @@
       "shorter_lifespan": "kortere levensduur",
       "small_children": "gezinnen met jonge kinderen",
       "sun_protection": "kale huid – heeft bescherming tegen de zon nodig",
-      "independent_older_children": "zelfstandige hond – beter met oudere kinderen"
+      "independent_older_children": "zelfstandige hond – beter bij oudere kinderen"
     }
   }
 }
