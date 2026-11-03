@@ -410,8 +410,8 @@ export const emergencyCopy: Record<Locale, {
   },
   da: {
     crumb: "Akut",
-    title: "Har dyret spist noget giftigt? Det skal du gøre nu",
-    metaTitle: "Har dyret spist noget giftigt? Det skal du gøre nu – PetPrep",
+    title: "Har dit kæledyr spist noget giftigt? Det skal du gøre nu",
+    metaTitle: "Har dit kæledyr spist noget giftigt? Det skal du gøre nu – PetPrep",
     description: "Hvad du skal gøre med det samme hvis din hund eller kat har spist noget giftigt – plus giftrådgivning for dyr og dyrehospitaler med døgnvagt, land for land. Hvert trin og hvert nummer kommer fra officielle kilder.",
     eyebrow: "Pleje · akut",
     lead: "Ring straks til din dyrlæge eller en giftrådgivning for dyr – vent ikke på symptomer. Trinene kommer fra dyrlæge- og dyreværnsorganisationer, numrene fra deres officielle sider.",

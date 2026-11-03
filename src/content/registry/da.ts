@@ -91,14 +91,14 @@ const da: RegistryCopy = {
     method: [
       "Hver oplysning kommer fra en navngiven kilde – kennelklubber, katteforbund, dyrevelfærdsorganisationer, dyrlægeforeninger og fagfællebedømte studier – og linker til den. Racestandarder gengiver vi med vores egne ord.",
       "Værdier som ingen kilde understøtter, vises aldrig som fakta. Når PetPrep skal vælge et tal til spillet, står det kun under »Sådan simulerer PetPrep racen«, markeret som en spilleregel.",
-      "De samme data styrer appen: mærkerne, antallet af måltider, skridtmålene og legestunderne på disse sider er præcis dem kæledyret i appen bruger.",
+      "De samme data styrer appen: etiketterne, antallet af måltider, skridtmålene og legestunderne på disse sider er præcis dem kæledyret i appen bruger.",
       "Leksikonet er ikke dyrlægerådgivning. Sundhedsoplysningerne er kun vejledende og er ikke gennemgået af en dyrlæge.",
     ],
   },
   speciesStatus: { available: "I appen", coming_soon: "Snart i appen", info_only: "Kun til information" },
   availability: {
     in_app: { label: "I appen", text: "Findes i PetPreps 12-ugers-udfordring (betalt race)." },
-    coming_soon: { label: "Snart i appen", text: "Færdigbygget og testet; kommer med en af de næste versioner af appen." },
+    coming_soon: { label: "Snart i appen", text: "Færdigbygget og testet; kommer med en af de kommende appopdateringer." },
     info_only: { label: "Kun til information", text: "Står i leksikonet til information; du kan ikke adoptere den i appen endnu." },
   },
   catalogue: {
@@ -116,7 +116,7 @@ const da: RegistryCopy = {
     availabilityLabel: "I PetPrep",
     sortLabel: "Sortér",
     sort: { recommended: "I appen først", az: "A–Å", size: "Størrelse (lille til stor)" },
-    clear: "Ryd alle",
+    clear: "Ryd alle filtre",
     results: (total) => `{n} af ${total} ${s(total, "race", "racer")}`,
     none: "Ingen racer passer. Prøv med færre filtre.",
     loading: "Søgningen indlæses …",
@@ -130,11 +130,11 @@ const da: RegistryCopy = {
     azTitle: "Alle racer A–Å",
     azIntro: "Alle racer i leksikonet i alfabetisk rækkefølge.",
     freePlanTitle: "Gratisplan",
-    guideTitle: "Sådan vælger du race",
+    guideTitle: "Sådan vælger du den rette race",
     guide: () => [
       "Begynd med det din husstand kan give hver dag: tid til motion, pelspleje og plads. Hver raceside viser disse behov i overblik med den navngivne kilde til hver værdi; hvor kilderne er uenige, vises alle værdier.",
       "Når en race har en størrelsesklasse (for hunde: meget lille, lille, mellemstor, mellemstor til stor, stor eller kæmpestor), er det den klasse den navngivne kilde angiver – som regel en kennelklub – og vægtene er de intervaller kilderne angiver, ikke vores skøn.",
-      "Mærker som »Passer godt til: en aktiv familie« er de samme som i appen, og hvert af dem understøttes af kilder. Tallene under »Sådan simulerer PetPrep racen« er PetPreps spilleregler, ikke plejeråd. [Sådan bygger vi leksikonet](page:about#methodology)",
+      "Etiketter som »Passer godt til: en aktiv familie« er de samme som i appen, og hvert af dem understøttes af kilder. Tallene under »Sådan simulerer PetPrep racen« er PetPreps spilleregler, ikke plejeråd. [Sådan bygger vi leksikonet](page:about#methodology)",
     ],
   },
   compare: {
@@ -447,12 +447,12 @@ const da: RegistryCopy = {
       "Fladnæset (brachycefal) race: den korte snude, de smalle næsebor og ekstra blødt væv i luftvejene kan gøre det sværere at trække vejret (brachycefalt obstruktivt luftvejssyndrom, BOAS).",
     heat_stroke_risk: "Bliver hurtigt overophedet og er mere udsat for hedeslag end de fleste hunde, især i varmt vejr.",
     skin_fold_ear_problems: "Disponeret for ørebetændelse og infektioner i hudfolderne; hudfolderne skal holdes rene og tørre.",
-    ear_infections_long_ears: "Øreinfektioner kan opstå på grund af de lange ører; bakterier kan samle sig i øregangen.",
+    ear_infections_long_ears: "Ørebetændelse kan opstå på grund af de lange ører; bakterier kan samle sig i øregangen.",
     collie_eye_pra:
       "Arvelige øjensygdomme forekommer i racen: collie eye anomaly, en misdannelse bagest i øjet, og progressiv retinal atrofi som langsomt kan føre til blindhed; der findes øjenundersøgelser og DNA-test.",
     merle_colour_risk: "Merle er ikke en farve i racestandarden; hos denne race giver den en højere risiko for problemer med hørelse og syn.",
     hind_leg_conformation:
-      "The Royal Kennel Club nævner bagbenenes form og hundens bevægelser som et opmærksomhedspunkt i racen; en sund hund har en lige ryg og moderat vinklede bagben.",
+      "Royal Kennel Club nævner bagbenenes form og hundens bevægelser som et opmærksomhedspunkt i racen; en sund hund har en lige ryg og moderat vinklede bagben.",
     hip_elbow_dysplasia: "Kan være disponeret for hofte- og albueledsdysplasi; opdrættere rådes til at få forældrenes hofter og albuer undersøgt før avl.",
     degenerative_myelopathy: "Degenerativ myelopati, en sygdom i rygmarven der langsomt svækker bagbenene, forekommer i racen; der findes en DNA-test.",
     exercise_induced_collapse: "Motionsudløst kollaps, en arvelig neuromuskulær sygdom der kan få en hund til at falde om efter hård motion, forekommer i racen.",
@@ -475,13 +475,13 @@ const da: RegistryCopy = {
     inherited_eye_disease: "Arvelige øjensygdomme forekommer i racen, fx collie eye anomaly, grå stær og progressiv retinal atrofi.",
     drug_sensitivity_mdr1: "Nogle hunde af racen har en arvelig overfølsomhed over for visse lægemidler (MDR1) – hvis din hund er ramt, så fortæl det til din dyrlæge.",
     merle_to_merle_breeding:
-      "Merle er en standardfarve i denne race; to merlehunde bør ikke parres med hinanden fordi hvalpene risikerer nedsat syn og hørelse – The Royal Kennel Club registrerer dem ikke.",
+      "Merle er en standardfarve i denne race; to merlehunde bør ikke parres med hinanden fordi hvalpene risikerer nedsat syn og hørelse – Royal Kennel Club registrerer dem ikke.",
     kneecap_luxation: "Patellaluksation, hvor knæskallen midlertidigt glider ud af sin plads, forekommer i racen.",
     pra_and_eyelashes:
       "Øjenproblemer forekommer i racen: progressiv retinal atrofi som langsomt kan føre til blindhed, og ekstra øjenhår der gnider mod øjet (distichiasis); opdrættere rådes til at få forældrenes øjne undersøgt.",
     liver_shunt: "En portosystemisk shunt (levershunt), hvor blodet løber uden om leveren, kan forekomme i racen.",
     skin_allergies:
-      "Hudallergi er et kendt problem i racen; The Royal Kennel Club beder dommere om at se efter tegn på hudbetændelse, og ejere rådes til at spørge dyrlægen før de vælger en shampoo.",
+      "Hudallergi er et kendt problem i racen; Royal Kennel Club beder dommere om at se efter tegn på hudbetændelse, og ejere rådes til at spørge dyrlægen før de vælger en shampoo.",
     westie_lung: "En lungesygdom kendt som »Westie lung« (idiopatisk lungefibrose), som gør det sværere at trække vejret, kan forekomme i racen, mest hos ældre hunde.",
     jaw_bone_disorder: "En arvelig knoglesygdom i kæben kan forekomme i racen.",
     dry_eye: "Tørre øjne, hvor øjnene ikke danner nok tårer og bliver tørre og ømme, kan forekomme i racen.",
@@ -617,8 +617,8 @@ const da: RegistryCopy = {
     metaDescription: (name, one) =>
       `${name}: behovene for denne ${breedsOf(one, 1)} ifølge kilderne – motion, pelspleje, måltider, størrelse, levetid, hvem den passer til – og hvordan PetPrep simulerer den.`,
     suitabilityTitle: "Passer til",
-    suitabilityNote: "De samme mærker som i appen. Hvert mærke understøttes af kilderne nederst på siden.",
-    suitabilityNone: "Endnu ingen mærker med kilder for denne race.",
+    suitabilityNote: "De samme etiketter som i appen. Hver etiket understøttes af kilderne nederst på siden.",
+    suitabilityNone: "Endnu ingen etiketter med kilder for denne race.",
     needsTitle: "Det har den brug for",
     needsIntro: (species) =>
       species === "cat"
@@ -649,17 +649,17 @@ const da: RegistryCopy = {
     checklistGeneralTitle: "For alle racer",
     checklistTestsTitle: "Forældrenes sundhedstest for denne race",
     checklistLevels: (speciesId) => ({
-      minimum: speciesId === "cat" ? "Test som et katteforbund kræver før en kat bruges i avl" : "Test som The Royal Kennel Club anbefaler som minimum",
+      minimum: speciesId === "cat" ? "Test som et katteforbund kræver før en kat bruges i avl" : "Test som Royal Kennel Club anbefaler som minimum",
       best_practice: "Yderligere test efter bedste praksis",
       other_scheme: "Andre sundhedsordninger for denne race",
     }),
     checklistUkNote: (speciesId) =>
       speciesId === "cat"
         ? "Listen stammer fra et udenlandsk katteforbunds avlsregler (se kilden) og er vejledende. Spørg opdrætteren hvilke test forældrene har fået lavet."
-        : "Listerne stammer fra The Royal Kennel Club i Storbritannien og er vejledende; nationale kennelklubber kan have deres egne, strengere regler. Spørg raceklubben og opdrætteren hvilke test forældrene har fået lavet.",
+        : "Listerne stammer fra Royal Kennel Club i Storbritannien og er vejledende; nationale kennelklubber kan have deres egne, strengere regler. Spørg raceklubben og opdrætteren hvilke test forældrene har fået lavet.",
     checklistStatus: {
       none_recommended:
-        "The Royal Kennel Club angiver i øjeblikket ingen anbefalede sundhedsundersøgelser før avl for denne race. Spørg alligevel opdrætteren om forældrenes helbred.",
+        "Royal Kennel Club angiver i øjeblikket ingen anbefalede sundhedsundersøgelser før avl for denne race. Spørg alligevel opdrætteren om forældrenes helbred.",
       not_found:
         "Vi har endnu ikke fundet en pålidelig kilde der angiver sundhedstest for forældrene til denne race. Spørg raceklubben og opdrætteren hvilke test forældrene har fået lavet.",
       not_checked: "Vi har endnu ikke gennemgået sundhedstestene for forældrene til denne race. Spørg raceklubben og opdrætteren hvilke test forældrene har fået lavet.",
@@ -722,8 +722,8 @@ const da: RegistryCopy = {
     irish_setter: {
       aka: "Irsk rød setter, Irish Setter",
       text: [
-        "Irsk setter (irsk rød setter) er en elegant, atletisk hønsehund fra Irland, avlet til at søge vidt i terrænet. FCI-standarden beskriver én farve — dyb kastanjerød uden spor af sort — og en højde på 58–67 cm for hanner og 55–62 cm for tæver; den amerikanske racestandard angiver omkring 70 pund (ca. 32 kg) som ideelt for en han og 60 pund (ca. 27 kg) for en tæve. En hund af denne størrelse er udvokset ved omkring 15–18 måneder (PetMD), og The Royal Kennel Club angiver en levetid på over 10 år.",
-        "The Royal Kennel Club anbefaler mere end 2 timers motion om dagen og pelspleje mere end én gang om ugen, oplyser, at racen fælder og passer til et stort hus med stor have, og placerer den i Breed Watch-kategori 1. PDSA beskriver meget venlige, kærlige hunde, der kommer godt ud af det med børn og andre kæledyr, og anbefaler pelspleje 2-3 gange om ugen; PetMD anbefaler ugentlig kontrol og rengøring af ørerne og skriver, at irske settere har brug for meget menneskeligt selskab.",
+        "Irsk setter (irsk rød setter) er en elegant, atletisk hønsehund fra Irland, avlet til at søge vidt i terrænet. FCI-standarden beskriver én farve — dyb kastanjerød uden spor af sort — og en højde på 58–67 cm for hanner og 55–62 cm for tæver; den amerikanske racestandard angiver omkring 70 pund (ca. 32 kg) som ideelt for en han og 60 pund (ca. 27 kg) for en tæve. En hund af denne størrelse er udvokset ved omkring 15–18 måneder (PetMD), og Royal Kennel Club angiver en levetid på over 10 år.",
+        "Royal Kennel Club anbefaler mere end 2 timers motion om dagen og pelspleje mere end én gang om ugen, oplyser, at racen fælder og passer til et stort hus med stor have, og placerer den i Breed Watch-kategori 1. PDSA beskriver meget venlige, kærlige hunde, der kommer godt ud af det med børn og andre kæledyr, og anbefaler pelspleje 2-3 gange om ugen; PetMD anbefaler ugentlig kontrol og rengøring af ørerne og skriver, at irske settere har brug for meget menneskeligt selskab.",
       ],
       sources: ["S675", "S676", "S678", "S680", "S10"],
     },
@@ -793,15 +793,15 @@ const da: RegistryCopy = {
     german_shepherd: {
       aka: "schæfer, tysk schæferhund, German Shepherd Dog, Alsatian, GSD",
       text: [
-        "Schæferhund er en stor, kraftfuld hyrdehund fra Tyskland med opretstående ører og en tæt dobbeltpels der kan være kort eller lang. Standarden beskriver en velafbalanceret, selvsikker hund med stærke nerver, og The Royal Kennel Club kalder den en alsidig brugs- og tjenestehund, kendt for mod og intelligens.",
-        "Den har brug for mindst to timers motion om dagen, egner sig til et stort hus med have og fælder meget. Britiske dyreværnsorganisationer skriver at nogle kan være fremragende familiehunde, men altid bør være under opsyn sammen med små børn. The Royal Kennel Club beder opdrættere om at få forældredyrenes hofter og albuer undersøgt og nævner bagbenenes form som et opmærksomhedspunkt i racen.",
+        "Schæferhund er en stor, kraftfuld hyrdehund fra Tyskland med opretstående ører og en tæt dobbeltpels der kan være kort eller lang. Standarden beskriver en velafbalanceret, selvsikker hund med stærke nerver, og Royal Kennel Club kalder den en alsidig brugs- og tjenestehund, kendt for mod og intelligens.",
+        "Den har brug for mindst to timers motion om dagen, egner sig til et stort hus med have og fælder meget. Britiske dyreværnsorganisationer skriver at nogle kan være fremragende familiehunde, men altid bør være under opsyn sammen med små børn. Royal Kennel Club beder opdrættere om at få forældredyrenes hofter og albuer undersøgt og nævner bagbenenes form som et opmærksomhedspunkt i racen.",
       ],
       sources: ["S95", "S97", "S99", "S100"],
     },
     cavalier_king_charles_spaniel: {
       aka: "cavalier, CKCS",
       text: [
-        "Cavalier king charles spaniel er en lille dværgspaniel fra Storbritannien med lange, fjerede ører og en lang, silkeagtig pels i fire farver: blenheim, ruby, black and tan og trefarvet. Standarden beskriver en aktiv, yndefuld hund med et blidt udtryk – jagtlysten, kærlig, venlig og frygtløs.",
+        "Cavalier king charles spaniel er en lille dværgspaniel fra Storbritannien med lange, fjerede ører og en lang, silkeagtig pels i fire farver: blenheim, ruby, black and tan og trefarvet. Standarden beskriver en aktiv, yndefuld hund med et blidt udtryk – sportslig, kærlig, venlig og frygtløs.",
         "Den har brug for omkring en times motion om dagen, kan bo i lejlighed og er kendt for at være god sammen med børn, men legen bør foregå under opsyn, og den bryder sig ikke om at være alene. Pelsen skal børstes mere end én gang om ugen. Britiske kilder nævner hjerteklapsygdom og en smertefuld lidelse i rygmarven der hænger sammen med kraniets form, som de vigtigste helbredsproblemer, og derfor bedes opdrættere hjerteundersøge og MR-scanne deres hunde.",
       ],
       sources: ["S103", "S105", "S106", "S108", "S110"],
@@ -849,7 +849,7 @@ const da: RegistryCopy = {
       aka: "westie",
       text: [
         "West highland white terrier, eller westie, er en lille terrier fra Storbritannien. Standarden beskriver en kraftigt bygget lille hund med dyb brystkasse, lige ryglinje og en hård dobbeltpels på omkring 5 cm, små, opretstående, spidse ører og mørke øjne under kraftige øjenbryn. Hvid er den eneste farve, standarden tillader.",
-        "Standarden kalder den opmærksom, munter, modig og selvstændig, men venlig. Britiske kilder kalder den en kærlig og legesyg familiehund til børn i alle aldre når legen altid foregår under opsyn; den har brug for omkring en times motion om dagen, kan bo i lejlighed, fælder og skal børstes et par gange om ugen. På grund af sit jagtinstinkt bør den ikke bo sammen med mindre kæledyr, og den bryder sig ikke om at være alene. Huden er et kendt opmærksomhedspunkt: The Royal Kennel Club beder dommere om at se efter tegn på hudbetændelse i racen.",
+        "Standarden kalder den opmærksom, munter, modig og selvstændig, men venlig. Britiske kilder kalder den en kærlig og legesyg familiehund til børn i alle aldre når legen altid foregår under opsyn; den har brug for omkring en times motion om dagen, kan bo i lejlighed, fælder og skal børstes et par gange om ugen. På grund af sit jagtinstinkt bør den ikke bo sammen med mindre kæledyr, og den bryder sig ikke om at være alene. Huden er et kendt opmærksomhedspunkt: Royal Kennel Club beder dommere om at se efter tegn på hudbetændelse i racen.",
       ],
       sources: ["S142", "S144", "S146", "S147"],
     },
@@ -864,7 +864,7 @@ const da: RegistryCopy = {
     siberian_husky: {
       aka: "husky",
       text: [
-        "Siberian husky er en mellemstor slædehund som FCI anerkender som en amerikansk race, og som The Royal Kennel Club beskriver som den letteste og hurtigste af slædehundene. Standarden ønsker en hund der er hurtig og let på fødderne, med en mellemlang dobbeltpels, tykke, opretstående ører, brune eller blå øjne (ét af hver er tilladt) og en godt pelsklædt hale. Farverne spænder fra sort til helt hvid; merle og tigret er ikke tilladt.",
+        "Siberian husky er en mellemstor slædehund som FCI anerkender som en amerikansk race, og som Royal Kennel Club beskriver som den letteste og hurtigste af slædehundene. Standarden ønsker en hund der er hurtig og let på fødderne, med en mellemlang dobbeltpels, tykke, opretstående ører, brune eller blå øjne (ét af hver er tilladt) og en godt pelsklædt hale. Farverne spænder fra sort til helt hvid; merle og tigret er ikke tilladt.",
         "Standarden kalder den venlig og blid, opmærksom og udadvendt. Britiske kilder skriver at den har brug for mere end to timers motion om dagen, et stort hus med stor have og et meget sikkert, højt hegn fordi huskyer er kendt for at stikke af; den fælder meget, skal børstes et par gange om ugen og har svært ved at være alene. PDSA foreslår den til hjem med kun voksne eller med teenagere frem for familier med mindre børn og nævner hofteledsdysplasi, øjenproblemer og epilepsi blandt racens helbredsproblemer.",
       ],
       sources: ["S158", "S160", "S162"],
@@ -873,7 +873,7 @@ const da: RegistryCopy = {
       aka: "Rottie",
       text: [
         "Rottweiler er en mellemstor til stor, kraftfuld brugshund fra Tyskland. Standarden beskriver en robust hund, hverken tung eller let, med en kort, grov, tætliggende pels, mellemstore hængende ører og mørkebrune, mandelformede øjne. Den eneste tilladte farve er sort med klart afgrænsede, dybt tanfarvede aftegninger på kinder, snude, strube, bryst og ben; hvide aftegninger er en fejl.",
-        "Standarden kalder den godmodig, rolig, meget hengiven, lydig og arbejdsivrig, og The Royal Kennel Club skriver at en veltrænet rottweiler er en vidunderlig familiehund. Britiske kilder skriver at den har brug for mere end to timers motion om dagen, et stort hus med stor have og en erfaren ejer fordi den er så kraftfuld; den bør socialiseres fra ung. PDSA anbefaler den ikke til familier med mindre børn og babyer, og den bør aldrig være alene uden opsyn sammen med andre kæledyr. Det er nok at børste den én gang om ugen. Den lever som regel mindre end ti år, og The Royal Kennel Club holder øje med bagbenenes form.",
+        "Standarden kalder den godmodig, rolig, meget hengiven, lydig og arbejdsivrig, og Royal Kennel Club skriver at en veltrænet rottweiler er en vidunderlig familiehund. Britiske kilder skriver at den har brug for mere end to timers motion om dagen, et stort hus med stor have og en erfaren ejer fordi den er så kraftfuld; den bør socialiseres fra ung. PDSA anbefaler den ikke til familier med mindre børn og babyer, og den bør aldrig være alene uden opsyn sammen med andre kæledyr. Det er nok at børste den én gang om ugen. Den lever som regel mindre end ti år, og Royal Kennel Club holder øje med bagbenenes form.",
       ],
       sources: ["S166", "S168", "S169", "S171"],
     },
@@ -881,7 +881,7 @@ const da: RegistryCopy = {
       aka: "engelsk bulldog, English Bulldog, British Bulldog",
       text: [
         "Bulldog er en mellemstor, glathåret hund fra Storbritannien: temmelig undersætsig, lav, bred, kraftfuld og kompakt, med et relativt kort ansigt, små, tynde roseører og runde, meget mørke øjne. Standarden tillader helfarver som rød, gul, lysebrun og hvid samt tigret og broget; sort og sort med tan er meget uønsket. Den kræver store, vidt åbne næsebor og skriver at hunde med åndedrætsbesvær er meget uønskede.",
-        "Standarden kalder den opmærksom, modig, loyal, pålidelig og frygtløs, barsk af udseende, men kærlig, og The Royal Kennel Club skriver at den stadig er meget populær som familiehund på grund af sit væsen og sin loyalitet. Britiske kilder skriver at den har brug for op til en times motion om dagen, aldrig på dagens varmeste tidspunkt, og at den kommer godt ud af det med husstandens andre kæledyr hvis den socialiseres som ung; pelsen skal plejes én gang om ugen, men rynkerne i ansigtet skal rengøres dagligt. PDSA beskriver den som en race med et meget fladt ansigt der med stor sandsynlighed får alvorlige helbredsproblemer som vejrtrækningsbesvær, og anbefaler kraftigt at overveje en sundere race, en krydsning eller en blandingshund. Den lever som regel mindre end ti år.",
+        "Standarden kalder den opmærksom, modig, loyal, pålidelig og frygtløs, barsk af udseende, men kærlig, og Royal Kennel Club skriver at den stadig er meget populær som familiehund på grund af sit væsen og sin loyalitet. Britiske kilder skriver at den har brug for op til en times motion om dagen, aldrig på dagens varmeste tidspunkt, og at den kommer godt ud af det med husstandens andre kæledyr hvis den socialiseres som ung; pelsen skal plejes én gang om ugen, men rynkerne i ansigtet skal rengøres dagligt. PDSA beskriver den som en race med et meget fladt ansigt der med stor sandsynlighed får alvorlige helbredsproblemer som vejrtrækningsbesvær, og anbefaler kraftigt at overveje en sundere race, en krydsning eller en blandingshund. Den lever som regel mindre end ti år.",
       ],
       sources: ["S175", "S177", "S180"],
     },
@@ -889,7 +889,7 @@ const da: RegistryCopy = {
       aka: "hønsehund, GSP, German Shorthaired Pointer, Deutsch Kurzhaar",
       text: [
         "Korthåret hønsehund er en alsidig jagthund fra Tyskland, bygget til arbejde i mark og vand, med en kort, tyk pels der føles ru, brede, flade og højt ansatte ører og mørkebrune, mandelformede øjne. Den amerikanske standard tillader ensfarvet leverbrun, leverbrun og hvid (fx stænket), ensfarvet sort og sort og hvid; røde, orange, citrongule eller tanfarvede partier og en helt hvid hund diskvalificerer. Standarden beskriver en kuperet hale – PetPrep viser altid hunden med naturlig hale.",
-        "Standarden kalder den venlig, intelligent og villig til at samarbejde. The Royal Kennel Club og PDSA skriver at den har brug for mere end to timers motion om dagen; PDSA tilføjer at dens instinkt for at jage, stå for og apportere vildt kan tage over på gåturen, så den har brug for et godt indkald, og at den er forholdsvis let at træne. Pelsen skal plejes en eller to gange om ugen, og den fælder moderat. En stor britisk undersøgelse angiver dens mediane forventede levetid til 13,4 år.",
+        "Standarden kalder den venlig, intelligent og villig til at samarbejde. Royal Kennel Club og PDSA skriver at den har brug for mere end to timers motion om dagen; PDSA tilføjer at dens instinkt for at jage, stå for og apportere vildt kan tage over på gåturen, så den har brug for et godt indkald, og at den er forholdsvis let at træne. Pelsen skal plejes en eller to gange om ugen, og den fælder moderat. En stor britisk undersøgelse angiver dens mediane forventede levetid til 13,4 år.",
       ],
       sources: ["S185", "S186", "S187", "S188", "S189", "S123"],
     },
@@ -897,7 +897,7 @@ const da: RegistryCopy = {
       aka: "yorkie",
       text: [
         "Yorkshire terrier er en lille dværgterrier fra Storbritannien der ifølge racestandarden vejer op til 3,2 kg, med en lang, helt glat, skinnende og silkeagtig pels som hænger jævnt ned på begge sider fra en skilning langs ryggen. Standarden tillader én farve: mørk stålblå fra baghovedet til halen og en dyb, klar tan på hoved, bryst og ben; de små, V-formede ører bæres opretstående. Standarden beskriver både kuperet og ukuperet hale – PetPrep viser altid hunden med naturlig hale.",
-        "Standarden kalder den opmærksom, intelligent og livlig med et ligevægtigt temperament. The Royal Kennel Club anbefaler op til 30 minutters motion om dagen og daglig pelspleje; PDSA tilføjer at den elsker at løbe, apportere og lege, kan være ret stædig at træne og passer bedre til familier med større børn fordi dens knogler er meget skrøbelige. En stor britisk undersøgelse fandt at tandsygdom er det hyppigste problem i racen, opfordrer til daglig tandpleje som tandbørstning og fandt en median dødsalder på 13,56 år.",
+        "Standarden kalder den opmærksom, intelligent og livlig med et ligevægtigt temperament. Royal Kennel Club anbefaler op til 30 minutters motion om dagen og daglig pelspleje; PDSA tilføjer at den elsker at løbe, apportere og lege, kan være ret stædig at træne og passer bedre til familier med større børn fordi dens knogler er meget skrøbelige. En stor britisk undersøgelse fandt at tandsygdom er det hyppigste problem i racen, opfordrer til daglig tandpleje som tandbørstning og fandt en median dødsalder på 13,56 år.",
       ],
       sources: ["S190", "S192", "S194", "S195", "S196"],
     },
@@ -913,7 +913,7 @@ const da: RegistryCopy = {
       aka: "corgi, Pembroke Welsh Corgi",
       text: [
         "Welsh corgi pembroke er en lille kvæghund fra Wales, lavstillet, stærk og kraftigt bygget, så den giver et indtryk af substans og udholdenhed på lidt plads. Standarden beskriver en mellemlang, glat pels med tæt underuld i rød, zobel, gul eller sort med tan, med eller uden hvide aftegninger på ben, bryst og hals, og opretstående ører. Halen blev tidligere traditionelt kuperet; standarden beskriver også den naturlige hale, og PetPrep viser altid hunden med naturlig hale.",
-        "Standarden kalder den modig, arbejdsom, udadvendt og venlig. The Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje mere end én gang om ugen; PDSA beskriver venlige, glade og legelystne hunde der gerne vil samarbejde og er forholdsvis lette at træne, men skriver at de kan finde på at nappe børn i hælene når de løber, så socialisering med børn og træning fra ung hjælper. The Royal Kennel Club angiver dens levetid til over 12 år og beder opdrættere om at få forældredyrenes hofter undersøgt.",
+        "Standarden kalder den modig, arbejdsom, udadvendt og venlig. Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje mere end én gang om ugen; PDSA beskriver venlige, glade og legelystne hunde der gerne vil samarbejde og er forholdsvis lette at træne, men skriver at de kan finde på at nappe børn i hælene når de løber, så socialisering med børn og træning fra ung hjælper. Royal Kennel Club angiver dens levetid til over 12 år og beder opdrættere om at få forældredyrenes hofter undersøgt.",
       ],
       sources: ["S202", "S204", "S206"],
     },
@@ -921,7 +921,7 @@ const da: RegistryCopy = {
       aka: "Doberman, Doberman Pinscher",
       text: [
         "Dobermann er en tysk selskabs-, beskyttelses- og brugshund af mellemstørrelse, stærk og muskuløst bygget, med elegante linjer og en stolt holdning. FCI-standarden beskriver en kort, hård og tæt pels der ligger tæt og glat, i sort eller brun med klart afgrænsede rustrøde aftegninger; hvide pletter er ikke tilladt. Efter FCI-standarden er ører og hale naturlige, og PetPrep viser altid hunden med naturlige ører og hale.",
-        "Standarden kalder den venlig og rolig og meget hengiven over for familien. The Royal Kennel Club skriver at dens loyale og lydige væsen gør den til en fremragende familiehund, og anbefaler mere end to timers motion om dagen og pelspleje én gang om ugen. PDSA tilføjer at den er meget energisk, har brug for masser af mental og fysisk aktivitet og tidlig socialisering og – på grund af sin store størrelse og kraftige bygning – ikke anbefales til familier med små børn eller til førstegangsejere. The Royal Kennel Club angiver dens levetid til over 10 år.",
+        "Standarden kalder den venlig og rolig og meget hengiven over for familien. Royal Kennel Club skriver at dens loyale og lydige væsen gør den til en fremragende familiehund, og anbefaler mere end to timers motion om dagen og pelspleje én gang om ugen. PDSA tilføjer at den er meget energisk, har brug for masser af mental og fysisk aktivitet og tidlig socialisering og – på grund af sin store størrelse og kraftige bygning – ikke anbefales til familier med små børn eller til førstegangsejere. Royal Kennel Club angiver dens levetid til over 10 år.",
       ],
       sources: ["S207", "S209", "S211"],
     },
@@ -929,7 +929,7 @@ const da: RegistryCopy = {
       aka: "tysk boxer, German Boxer, Deutscher Boxer",
       text: [
         "Boxer er en tysk brugs- og selskabshund af mellemstørrelse med kvadratisk bygning, kraftige knogler og veludviklede muskler. Standarderne beskriver en kort, skinnende og glat pels i gul eller tigret med sort maske; hvide aftegninger er tilladt, men bør ikke dække mere end en tredjedel af pelsen. Snuden skal være bred og dyb, aldrig kort, med store næsebor. Halen blev tidligere traditionelt kuperet; standarden beskriver også den ukuperede hale, og PetPrep viser altid hunden med naturlige ører og hale.",
-        "Standarden kalder den ligevægtig, lydig, frygtløs og selvsikker. The Royal Kennel Club kalder den meget elsket som familiehund og anbefaler mere end to timers motion om dagen og pelspleje én gang om ugen. PDSA beskriver en meget energisk, legesyg hund der elsker menneskers selskab og kan udvikle separationsangst hvis den lades alene, har et meget stærkt jagtinstinkt og – på grund af sin størrelse og sit vilde temperament – ikke anbefales til hjem med mindre børn eller til førstegangsejere; nogle boxere med kortere ansigt kan få alvorlige vejrtrækningsproblemer. The Royal Kennel Club angiver dens levetid til over 10 år.",
+        "Standarden kalder den ligevægtig, lydig, frygtløs og selvsikker. Royal Kennel Club kalder den meget elsket som familiehund og anbefaler mere end to timers motion om dagen og pelspleje én gang om ugen. PDSA beskriver en meget energisk, legesyg hund der elsker menneskers selskab og kan udvikle separationsangst hvis den lades alene, har et meget stærkt jagtinstinkt og – på grund af sin størrelse og sit vilde temperament – ikke anbefales til hjem med mindre børn eller til førstegangsejere; nogle boxere med kortere ansigt kan få alvorlige vejrtrækningsproblemer. Royal Kennel Club angiver dens levetid til over 10 år.",
       ],
       sources: ["S215", "S217", "S219"],
     },
@@ -937,7 +937,7 @@ const da: RegistryCopy = {
       aka: "Zwergschnauzer, Miniature Schnauzer",
       text: [
         "Dværgschnauzer er en lille tysk selskabshund: stærk, undersætsig og næsten kvadratisk, med en hård, strid og tæt pels, buskede øjenbryn og skæg. FCI-standarden tillader peber og salt, sort med sølv, helt sort og helt hvid; PetPrep viser de tre første. Halen blev tidligere traditionelt kuperet og ørerne undertiden også; FCI-standarden kræver naturlig hale og hængende ører, og PetPrep viser altid hunden med naturlige ører og hale.",
-        "FCI regner den som familie- og selskabshund, og The Royal Kennel Club skriver at den er meget populær som selskabshund. The Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje mere end én gang om ugen og skriver at den ikke fælder. PDSA beskriver en legesyg og nysgerrig hund der kan komme godt ud af det med børn hvis den møder dem tidligt, kan være stædig i træningen og skal børstes to til tre gange om ugen og ind imellem klippes eller trimmes af en professionel hundefrisør. The Royal Kennel Club angiver dens levetid til over 10 år.",
+        "FCI regner den som familie- og selskabshund, og Royal Kennel Club skriver at den er meget populær som selskabshund. Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje mere end én gang om ugen og skriver at den ikke fælder. PDSA beskriver en legesyg og nysgerrig hund der kan komme godt ud af det med børn hvis den møder dem tidligt, kan være stædig i træningen og skal børstes to til tre gange om ugen og ind imellem klippes eller trimmes af en professionel hundefrisør. Royal Kennel Club angiver dens levetid til over 10 år.",
       ],
       sources: ["S221", "S223", "S226"],
     },
@@ -945,23 +945,23 @@ const da: RegistryCopy = {
       aka: "Shih-Tzu",
       text: [
         "Shih tzu er en lille selskabshund fra Tibet; Storbritannien varetager dens FCI-standard. Standarderne beskriver en robust hund med rigelig pels, stolt holdning og et ansigt der minder om en »krysantemum«: lang, tæt dækpels, store, mørke, runde øjne, store hængende ører og en hale med rig fane der bæres over ryggen. Standarderne tillader mange farver; PetPrep viser guld og hvid, sort og hvid samt leverbrun og hvid og aldrig merle. Snuden er kort og flad, og PDSA nævner vejrtrækningsproblemer på grund af det kortere ansigt, så PetPrep tegner altid et moderat ansigt med åbne næsebor.",
-        "FCI beskriver den som intelligent, aktiv og opmærksom, venlig og selvstændig. The Royal Kennel Club anbefaler op til en times motion om dagen og daglig pelspleje og nævner en lejlighed som et passende hjem. PDSA skriver at shih tzu kan være en godmodig familiehund hvis den har fået den rette socialisering og træning, kalder den et ideelt kæledyr for førstegangsejere, råder til altid at holde opsyn med den sammen med børn og anbefaler for de fleste familiehunde daglig børstning og en klipning hos en professionel hundefrisør hver sjette til ottende uge. The Royal Kennel Club angiver dens levetid til over 10 år.",
+        "FCI beskriver den som intelligent, aktiv og opmærksom, venlig og selvstændig. Royal Kennel Club anbefaler op til en times motion om dagen og daglig pelspleje og nævner en lejlighed som et passende hjem. PDSA skriver at shih tzu kan være en godmodig familiehund hvis den har fået den rette socialisering og træning, kalder den et ideelt kæledyr for førstegangsejere, råder til altid at holde opsyn med den sammen med børn og anbefaler for de fleste familiehunde daglig børstning og en klipning hos en professionel hundefrisør hver sjette til ottende uge. Royal Kennel Club angiver dens levetid til over 10 år.",
       ],
       sources: ["S229", "S231", "S233"],
     },
     great_dane: {
       aka: "Deutsche Dogge, Great Dane",
       text: [
-        "Grand danois er en tysk kæmpe: FCI-standarden skriver at den forener en stor, kraftfuld og velbygget krop med stolthed, styrke og elegance, med et langt, smalt hoved, naturligt hængende ører og en meget kort, glat og skinnende pels. Standarderne nævner gul og tigret – helst med sort maske – samt harlekin, sort og blå; PetPrep viser kun farver som både FCI og The Royal Kennel Club anerkender, aldrig merle eller mantel, og tegner altid hunden med naturlige ører og hale og tætsluttende øjenlåg fordi The Royal Kennel Club beder dommere om at holde øje med øjenlåg der vender ind- eller udad, og med dårlige bagben.",
-        "FCI kalder den venlig, kærlig og hengiven over for sine ejere, men muligvis reserveret over for fremmede. The Royal Kennel Club skriver at den trods sin størrelse er en vidunderlig familiehund, og anbefaler mere end to timers motion om dagen, et stort hus med have og pelspleje én gang om ugen. PDSA skriver at grand danois er kendt for at savle, har et ret stærkt jagtinstinkt og ikke anbefales til hjem med mindre børn på grund af sin størrelse og styrke; PDSA råder til at holde en pause mellem måltid og motion for at hjælpe med at forebygge mavedrejning. The Royal Kennel Club angiver dens levetid til under 10 år.",
+        "Grand danois er en tysk kæmpe: FCI-standarden skriver at den forener en stor, kraftfuld og velbygget krop med stolthed, styrke og elegance, med et langt, smalt hoved, naturligt hængende ører og en meget kort, glat og skinnende pels. Standarderne nævner gul og tigret – helst med sort maske – samt harlekin, sort og blå; PetPrep viser kun farver som både FCI og Royal Kennel Club anerkender, aldrig merle eller mantel, og tegner altid hunden med naturlige ører og hale og tætsluttende øjenlåg fordi Royal Kennel Club beder dommere om at holde øje med øjenlåg der vender ind- eller udad, og med dårlige bagben.",
+        "FCI kalder den venlig, kærlig og hengiven over for sine ejere, men muligvis reserveret over for fremmede. Royal Kennel Club skriver at den trods sin størrelse er en vidunderlig familiehund, og anbefaler mere end to timers motion om dagen, et stort hus med have og pelspleje én gang om ugen. PDSA skriver at grand danois er kendt for at savle, har et ret stærkt jagtinstinkt og ikke anbefales til hjem med mindre børn på grund af sin størrelse og styrke; PDSA råder til at holde en pause mellem måltid og motion for at hjælpe med at forebygge mavedrejning. Royal Kennel Club angiver dens levetid til under 10 år.",
       ],
       sources: ["S239", "S241", "S243"],
     },
     pomeranian: {
       aka: "pom, dværgspids, Zwergspitz",
       text: [
-        "Pomeranian er den mindste spids: FCI fører den som dværgvarianten af tysk spids, 21 cm ± 3 cm i skulderhøjde, og The Royal Kennel Clubs standard beskriver en kompakt, kortkoblet lille hund med rævelignende hoved, små, opretstående ører og en hale der bæres over ryggen. Dobbeltpelsen har en blød, luftig underuld og en lang, glat dækpels der danner en krave om halsen. Standarden tillader mange helfarver som orange, creme, hvid, sort og brun, men aldrig merle; PetPrep tegner en naturlig, utrimmet pels.",
-        "FCI kalder dens væsen selskabeligt og muntert, og The Royal Kennel Clubs standard kalder den udadvendt, livlig og intelligent. The Royal Kennel Club anbefaler op til 30 minutters motion om dagen og finder den egnet til en lejlighed; PDSA skriver at dobbeltpelsen skal børstes to til tre gange om ugen. AKC skriver at pomeranian som regel passer bedre til familier med større børn, kan komme godt ud af det med andre dyr hvis den socialiseres tidligt, og anbefaler stærkt tidlig socialisering og hvalpehold. The Royal Kennel Club angiver dens levetid til over 12 år.",
+        "Pomeranian er den mindste spids: FCI fører den som dværgvarianten af tysk spids, 21 cm ± 3 cm i skulderhøjde, og Royal Kennel Clubs standard beskriver en kompakt, kortkoblet lille hund med rævelignende hoved, små, opretstående ører og en hale der bæres over ryggen. Dobbeltpelsen har en blød, luftig underuld og en lang, glat dækpels der danner en krave om halsen. Standarden tillader mange helfarver som orange, creme, hvid, sort og brun, men aldrig merle; PetPrep tegner en naturlig, utrimmet pels.",
+        "FCI kalder dens væsen selskabeligt og muntert, og Royal Kennel Clubs standard kalder den udadvendt, livlig og intelligent. Royal Kennel Club anbefaler op til 30 minutters motion om dagen og finder den egnet til en lejlighed; PDSA skriver at dobbeltpelsen skal børstes to til tre gange om ugen. AKC skriver at pomeranian som regel passer bedre til familier med større børn, kan komme godt ud af det med andre dyr hvis den socialiseres tidligt, og anbefaler stærkt tidlig socialisering og hvalpehold. Royal Kennel Club angiver dens levetid til over 12 år.",
       ],
       sources: ["S246", "S247", "S249", "S250", "S251"],
     },
@@ -969,7 +969,7 @@ const da: RegistryCopy = {
       aka: "boston, American Gentleman",
       text: [
         "Boston terrier kommer fra USA. FCI-standarden beskriver en livlig, meget intelligent, glathåret og korthovedet hund, kompakt bygget, med kort hale og velafbalanceret, tigret, seal eller sort og jævnt tegnet med hvidt: Et hvidt bånd om snuden, en hvid blis mellem øjnene og et hvidt forbryst er påkrævet, og tigret foretrækkes. PetPrep tegner den tigret og hvid med moderat snude, åbne næsebor og naturlige ører og hale.",
-        "Det er en race med fladt ansigt (brachycefal), og PDSA advarer om at den aldrig bør motioneres på dagens varmeste tidspunkt fordi den let bliver overophedet. The Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje én gang om ugen, finder den egnet til en lejlighed og angiver dens levetid til over 10 år. PDSA kalder boston terrieren en perfekt familiehund der er særlig god med børn når den er godt socialiseret som hvalp; AKC skriver at den trives med børn der ved hvordan man er blid over for dyr, og at den ikke har det godt med at være alene i lange perioder, og anbefaler kraftigt tidlig socialisering og hvalpetræning.",
+        "Det er en race med fladt ansigt (brachycefal), og PDSA advarer om at den aldrig bør motioneres på dagens varmeste tidspunkt fordi den let bliver overophedet. Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje én gang om ugen, finder den egnet til en lejlighed og angiver dens levetid til over 10 år. PDSA kalder boston terrieren en perfekt familiehund der er særlig god med børn når den er godt socialiseret som hvalp; AKC skriver at den trives med børn der ved hvordan man er blid over for dyr, og at den ikke har det godt med at være alene i lange perioder, og anbefaler kraftigt tidlig socialisering og hvalpetræning.",
       ],
       sources: ["S254", "S255", "S259", "S260"],
     },
@@ -984,8 +984,8 @@ const da: RegistryCopy = {
     chihuahua: {
       aka: "chi, Chihuahueño, korthåret chihuahua",
       text: [
-        "Chihuahua kommer fra Mexico. Kennel Club-standarden beskriver en lille, nydelig og kompakt hund med et kækt udtryk og et muntert, livligt og intelligent temperament, et velafrundet, »æbleformet« kranium, en moderat kort, let spids snude, store, runde øjne der ikke er fremstående, store ører og en seglformet hale; alle farver og farvekombinationer er tilladt, men aldrig merle, og den foretrukne vægt er 1,8–2,7 kg. The Royal Kennel Club regner den korthårede og den langhårede chihuahua som to racer; PetPrep tegner den korthårede i gul med et moderat hoved.",
-        "The Royal Kennel Club anbefaler op til 30 minutters motion om dagen og pelspleje én gang om ugen, finder den egnet til en lejlighed og angiver dens levetid til over 12 år. PDSA skriver at chihuahuaen er så lille og let at børn fristes til at løfte den op, hvilket den næppe bryder sig om, så den passer bedre til familier med lidt større børn. PDSA tilføjer at den som selskabshund elsker selskab og har brug for at der altid er nogen hjemme, og at den bør socialiseres fra ung med mange forskellige mennesker, oplevelser og steder.",
+        "Chihuahua kommer fra Mexico. Kennel Club-standarden beskriver en lille, nydelig og kompakt hund med et kækt udtryk og et muntert, livligt og intelligent temperament, et velafrundet, »æbleformet« kranium, en moderat kort, let spids snude, store, runde øjne der ikke er fremstående, store ører og en seglformet hale; alle farver og farvekombinationer er tilladt, men aldrig merle, og den foretrukne vægt er 1,8–2,7 kg. Royal Kennel Club regner den korthårede og den langhårede chihuahua som to racer; PetPrep tegner den korthårede i gul med et moderat hoved.",
+        "Royal Kennel Club anbefaler op til 30 minutters motion om dagen og pelspleje én gang om ugen, finder den egnet til en lejlighed og angiver dens levetid til over 12 år. PDSA skriver at chihuahuaen er så lille og let at børn fristes til at løfte den op, hvilket den næppe bryder sig om, så den passer bedre til familier med lidt større børn. PDSA tilføjer at den som selskabshund elsker selskab og har brug for at der altid er nogen hjemme, og at den bør socialiseres fra ung med mange forskellige mennesker, oplevelser og steder.",
       ],
       sources: ["S272", "S274", "S275", "S277"],
     },
@@ -993,7 +993,7 @@ const da: RegistryCopy = {
       aka: "springer, ESS",
       text: [
         "Engelsk springer spaniel kommer fra Storbritannien, hvor den blev avlet til at finde, opjage og apportere vildt. Kennel Club-standarden beskriver en symmetrisk bygget, kompakt, stærk, munter og aktiv hund – den mest højbenede af de britiske landspaniels – med et venligt, glad og lydigt temperament, lange, fjerede ører, mørke nøddebrune øjne og en tætliggende, glat og vejrbestandig pels; farverne er leverbrun og hvid eller sort og hvid, begge evt. med tan aftegninger, og skulderhøjden er omkring 51 cm. PetPrep tegner den leverbrun og hvid med naturlig hale.",
-        "The Royal Kennel Club anbefaler mere end to timers motion om dagen og pelspleje mere end én gang om ugen og angiver dens levetid til over 10 år. PDSA skriver at springere er gode familiehunde der kommer godt ud af det med børn og husstandens andre kæledyr, er lydige og lærevillige og skal plejes en eller to gange om ugen og klippes hver 3. måned. AKC tilføjer at de ikke bør være alene i lange perioder, og at tidlig socialisering og hvalpetræning er afgørende.",
+        "Royal Kennel Club anbefaler mere end to timers motion om dagen og pelspleje mere end én gang om ugen og angiver dens levetid til over 10 år. PDSA skriver at springere er gode familiehunde der kommer godt ud af det med børn og husstandens andre kæledyr, er lydige og lærevillige og skal plejes en eller to gange om ugen og klippes hver 3. måned. AKC tilføjer at de ikke bør være alene i lange perioder, og at tidlig socialisering og hvalpetræning er afgørende.",
       ],
       sources: ["S281", "S282", "S284", "S285", "S286"],
     },
@@ -1001,15 +1001,15 @@ const da: RegistryCopy = {
       aka: "sheltie, Shetland Collie (tidligere navn)",
       text: [
         "Shetland sheepdog kommer fra Storbritannien og er en lille, langhåret brugshund. FCI-standarden beskriver en opmærksom, blid, intelligent, stærk og aktiv hund, kærlig og loyal over for sin ejer og reserveret over for fremmede, med et hoved som en lang, stump kile, små, halvt opretstående ører med fremadfaldende spidser og en dobbeltpels med lang, hård dækpels; farverne er zobel, trefarvet, blue merle, sort og hvid samt sort og tan, og den ideelle skulderhøjde er 37 cm for hanner og 35,5 cm for tæver. PetPrep tegner den zobel og hvid.",
-        "The Royal Kennel Club anbefaler op til en times motion om dagen og daglig pelspleje og angiver dens levetid til over 10 år. PDSA skriver at shelties er meget blide, legesyge og lydige hunde der ofte passer godt ind i familielivet og kommer fint ud af det med børn, og at træning og socialisering er meget vigtige i en ung alder. AKC tilføjer at de har brug for regelmæssig mental og fysisk aktivitet, på grund af deres hyrdeinstinkt trives bedst med større børn og er kendt for at være meget glade for at bruge stemmen.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og daglig pelspleje og angiver dens levetid til over 10 år. PDSA skriver at shelties er meget blide, legesyge og lydige hunde der ofte passer godt ind i familielivet og kommer fint ud af det med børn, og at træning og socialisering er meget vigtige i en ung alder. AKC tilføjer at de har brug for regelmæssig mental og fysisk aktivitet, på grund af deres hyrdeinstinkt trives bedst med større børn og er kendt for at være meget glade for at bruge stemmen.",
       ],
       sources: ["S289", "S290", "S291", "S293", "S294"],
     },
     brittany: {
       aka: "Brittany, Brittany Spaniel",
       text: [
-        "Epagneul breton – på engelsk brittany – er en stående jagthund fra Frankrig. The Royal Kennel Club beskriver en meget energisk, intelligent hund der søger, står for og apporterer vildt, blid og kærlig, men fuld af liv og livsglæde, med en tæt, temmelig fin pels, højt ansatte, trekantede ører og en hale der ofte er naturligt kort; standardfarverne er orange, leverbrun eller sort med hvidt, skimmel eller trefarvet, og skulderhøjden er 48–51 cm for hanner og 47–50 cm for tæver. PetPrep tegner den orange og hvid.",
-        "The Royal Kennel Club anbefaler mere end to timers motion om dagen og pelspleje mere end én gang om ugen og angiver dens levetid til over 10 år. AKC skriver at epagneul breton er en meget energisk hund der har brug for masser af motion og mental stimulering, er blid og som regel tålmodig med børn, og at ugentlig børstning holder den flot. PetMD tilføjer at tidlig socialisering af hvalpe er et must, at den ikke har det godt med at være alene i lange perioder, og at den som avlet til fuglejagt har et stærkt jagtinstinkt.",
+        "Epagneul breton – på engelsk brittany – er en stående jagthund fra Frankrig. Royal Kennel Club beskriver en meget energisk, intelligent hund der søger, står for og apporterer vildt, blid og kærlig, men fuld af liv og livsglæde, med en tæt, temmelig fin pels, højt ansatte, trekantede ører og en hale der ofte er naturligt kort; standardfarverne er orange, leverbrun eller sort med hvidt, skimmel eller trefarvet, og skulderhøjden er 48–51 cm for hanner og 47–50 cm for tæver. PetPrep tegner den orange og hvid.",
+        "Royal Kennel Club anbefaler mere end to timers motion om dagen og pelspleje mere end én gang om ugen og angiver dens levetid til over 10 år. AKC skriver at epagneul breton er en meget energisk hund der har brug for masser af motion og mental stimulering, er blid og som regel tålmodig med børn, og at ugentlig børstning holder den flot. PetMD tilføjer at tidlig socialisering af hvalpe er et must, at den ikke har det godt med at være alene i lange perioder, og at den som avlet til fuglejagt har et stærkt jagtinstinkt.",
       ],
       sources: ["S296", "S298", "S299", "S301", "S302"],
     },
@@ -1017,7 +1017,7 @@ const da: RegistryCopy = {
       aka: "Cocker Spaniel (USA), American Cocker",
       text: [
         "Amerikansk cocker spaniel – i USA blot cocker spaniel – er en anden race end engelsk cocker spaniel. AKC-standarden kalder den det mindste medlem af jagthundegruppen (Sporting Group), med lange, lapformede, rigt fjerede ører, et afrundet kranium, en bred, dyb snude og en silkeagtig pels der er glat eller let bølget; den findes i sort, i alle ensfarvede nuancer fra den lyseste creme til den mørkeste røde og i flerfarvet med hvidt. Standarden kræver et ligevægtigt temperament uden antydning af frygtsomhed.",
-        "The Royal Kennel Club anbefaler daglig pelspleje og mere end to timers motion om dagen og angiver dens levetid til over 10 år; AKC og PetMD skriver at den ikke har brug for meget motion. PetMD kalder disse søde hunde fremragende familiehunde, venlige over for mennesker og andre dyr, og råder til at begynde socialisering og træning tidligt; VCA skriver at de som regel er meget gode med børn, har tendens til overvægt og skal have ørerne tjekket hver uge.",
+        "Royal Kennel Club anbefaler daglig pelspleje og mere end to timers motion om dagen og angiver dens levetid til over 10 år; AKC og PetMD skriver at den ikke har brug for meget motion. PetMD kalder disse søde hunde fremragende familiehunde, venlige over for mennesker og andre dyr, og råder til at begynde socialisering og træning tidligt; VCA skriver at de som regel er meget gode med børn, har tendens til overvægt og skal have ørerne tjekket hver uge.",
       ],
       sources: ["S303", "S305", "S307", "S308", "S309", "S310"],
     },
@@ -1025,62 +1025,62 @@ const da: RegistryCopy = {
       aka: "malinois, Belgian Shepherd Dog (Malinois)",
       text: [
         "Belgisk hyrdehund malinois er den korthårede variant af belgisk hyrdehund, en hyrderace fra Belgien. FCI-standarden beskriver en harmonisk proportioneret hund der forener elegance og kraft, og tillader kun én farve: gul med sort overdækning og sort maske. FCI- og AKC-standarderne beskriver temmelig små, opretstående, trekantede ører, en kort, hård pels med tæt underuld og et opmærksomt, intelligent, nysgerrigt og selvsikkert temperament.",
-        "The Royal Kennel Club anbefaler mere end to timers motion om dagen og pelspleje mere end én gang om ugen og angiver dens levetid til over 10 år. AKC skriver at den ikke er et godt valg for førstegangshundeejere, trives bedst med større, ansvarlige børn og ikke bør være alene længe ad gangen; PetMD nævner et stærkt jagtinstinkt, at den kan prøve at hyrde børn, og at den har brug for vedvarende daglig træning og tidlig socialisering.",
+        "Royal Kennel Club anbefaler mere end to timers motion om dagen og pelspleje mere end én gang om ugen og angiver dens levetid til over 10 år. AKC skriver at den ikke er et godt valg for førstegangshundeejere, trives bedst med større, ansvarlige børn og ikke bør være alene længe ad gangen; PetMD nævner et stærkt jagtinstinkt, at den kan prøve at hyrde børn, og at den har brug for vedvarende daglig træning og tidlig socialisering.",
       ],
       sources: ["S312", "S313", "S314", "S315", "S316", "S317"],
     },
     basset_hound: {
       aka: "basset",
       text: [
-        "Basset hound er en kortbenet sporhund fra Storbritannien. FCI-standarden beskriver en hund med betydelig substans, velafbalanceret, rolig, aldrig aggressiv eller frygtsom og kærlig, med lavt ansatte, lange, fløjlsbløde ører, en glat, kort pels og farverne sort, hvid og tan eller citrongul og hvid. The Royal Kennel Clubs Breed Watch beder udstillingsdommere om at holde øje med øjenlåg der vender ind- eller udad, meget lange ører, ømme hudfolder og overskydende hud.",
-        "The Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje én gang om ugen og angiver dens levetid til over 10 år. PDSA beskriver en tolerant hund der kommer rigtig godt ud af det med børn og elsker selskab, og som har en sund appetit, man skal holde øje med; PDSA råder til at tjekke hudfolderne hver dag og holde en pause mellem måltid og motion. AKC tilføjer at næsen kan lokke den på afveje, så en sikker line og indhegnede områder er vigtige.",
+        "Basset hound er en kortbenet sporhund fra Storbritannien. FCI-standarden beskriver en hund med betydelig substans, velafbalanceret, rolig, aldrig aggressiv eller frygtsom og kærlig, med lavt ansatte, lange, fløjlsbløde ører, en glat, kort pels og farverne sort, hvid og tan eller citrongul og hvid. Royal Kennel Clubs Breed Watch beder udstillingsdommere om at holde øje med øjenlåg der vender ind- eller udad, meget lange ører, ømme hudfolder og overskydende hud.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje én gang om ugen og angiver dens levetid til over 10 år. PDSA beskriver en tolerant hund der kommer rigtig godt ud af det med børn og elsker selskab, og som har en sund appetit, man skal holde øje med; PDSA råder til at tjekke hudfolderne hver dag og holde en pause mellem måltid og motion. AKC tilføjer at næsen kan lokke den på afveje, så en sikker line og indhegnede områder er vigtige.",
       ],
       sources: ["S320", "S321", "S322", "S323", "S324"],
     },
     hungarian_vizsla: {
       aka: "vizsla, magyar vizsla, Hungarian Vizsla",
       text: [
-        "Korthåret vizsla er en mellemstor, elegant jagthund fra Ungarn med kort, rustrød-gylden pels. FCI-standarden beskriver en livlig, venlig hund med et ligevægtigt temperament der er let at træne og holder tæt kontakt med sin fører; farverne er nuancer af rustrød-gylden og mørk sandgylden. The Royal Kennel Clubs Breed Watch nævner ingen opmærksomhedspunkter der er specifikke for racen.",
-        "The Royal Kennel Club anbefaler mere end to timers motion om dagen og pelspleje én gang om ugen og angiver dens levetid til over 12 år. PDSA beskriver en meget menneskeorienteret hund der elsker selskab og kan lide af separationsangst når den er alene; den kommer godt ud af det med større børn, men PDSA vil ikke anbefale den sammen med meget små børn eller til førstegangsejere, og på grund af det stærke jagtinstinkt fraråder PDSA at holde den sammen med mindre kæledyr. PDSA råder også til at holde en pause mellem måltid og motion.",
+        "Korthåret vizsla er en mellemstor, elegant jagthund fra Ungarn med kort, rustrød-gylden pels. FCI-standarden beskriver en livlig, venlig hund med et ligevægtigt temperament der er let at træne og holder tæt kontakt med sin fører; farverne er nuancer af rustrød-gylden og mørk sandgylden. Royal Kennel Clubs Breed Watch nævner ingen opmærksomhedspunkter der er specifikke for racen.",
+        "Royal Kennel Club anbefaler mere end to timers motion om dagen og pelspleje én gang om ugen og angiver dens levetid til over 12 år. PDSA beskriver en meget menneskeorienteret hund der elsker selskab og kan lide af separationsangst når den er alene; den kommer godt ud af det med større børn, men PDSA vil ikke anbefale den sammen med meget små børn eller til førstegangsejere, og på grund af det stærke jagtinstinkt fraråder PDSA at holde den sammen med mindre kæledyr. PDSA råder også til at holde en pause mellem måltid og motion.",
       ],
       sources: ["S327", "S328", "S329"],
     },
     english_cocker_spaniel: {
       aka: "cocker, Cocker Spaniel (UK), English Cocker, Merry Cocker",
       text: [
-        "Engelsk cocker spaniel – i Storbritannien blot cocker spaniel – er en anden race end amerikansk cocker spaniel. FCI-standarden beskriver en munter, robust jagthund, velafbalanceret og kompakt, med lavt ansatte, lapformede ører og en glat, silkeagtig pels; AKC-standarden kalder den munter og kærlig med et ligevægtigt sind og nævner ensfarvet sort, leverbrun og røde nuancer samt flerfarvet med hvidt. The Royal Kennel Clubs Breed Watch nævner ingen opmærksomhedspunkter der er specifikke for racen.",
-        "The Royal Kennel Club anbefaler op til en times motion om dagen og daglig pelspleje og angiver dens levetid til over 10 år; en VetCompass-undersøgelse af engelske cocker spaniels i Storbritannien fandt en median dødsalder på 11,44 år. PDSA skriver at den takket være sit tålmodige væsen som regel kommer godt ud af det med børn, altid under opsyn, men advarer om at den er kendt for separationsangst og aldrig bør være alene i mere end fire timer. PDSA råder også til daglig børstning og en pause mellem måltid og motion.",
+        "Engelsk cocker spaniel – i Storbritannien blot cocker spaniel – er en anden race end amerikansk cocker spaniel. FCI-standarden beskriver en munter, robust jagthund, velafbalanceret og kompakt, med lavt ansatte, lapformede ører og en glat, silkeagtig pels; AKC-standarden kalder den munter og kærlig med et ligevægtigt sind og nævner ensfarvet sort, leverbrun og røde nuancer samt flerfarvet med hvidt. Royal Kennel Clubs Breed Watch nævner ingen opmærksomhedspunkter der er specifikke for racen.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og daglig pelspleje og angiver dens levetid til over 10 år; en VetCompass-undersøgelse af engelske cocker spaniels i Storbritannien fandt en median dødsalder på 11,44 år. PDSA skriver at den takket være sit tålmodige væsen som regel kommer godt ud af det med børn, altid under opsyn, men advarer om at den er kendt for separationsangst og aldrig bør være alene i mere end fire timer. PDSA råder også til daglig børstning og en pause mellem måltid og motion.",
       ],
       sources: ["S336", "S337", "S339", "S342", "S343"],
     },
     maltese: {
       aka: "maltesisk hund, Bichon Maltais, Maltese Terrier",
       text: [
-        "Malteser er en lille selskabshund fra det centrale Middelhavsområde, som i dag hører under Italien i FCI. FCI-standarden beskriver en lille hund med en lidt langstrakt krop, livlig, kærlig, meget rolig og meget intelligent, med en vægt på 3–4 kg og meget langt, tæt og silkeagtigt hår der falder tungt ned over hele kroppen. Pelsen har ingen underuld, og helt hvid er den eneste farve (et lyst elfenbensskær er tilladt). The Royal Kennel Clubs Breed Watch nævner ingen opmærksomhedspunkter der er specifikke for racen.",
-        "The Royal Kennel Club anbefaler op til 30 minutters motion om dagen og daglig pelspleje, skriver at racen ikke fælder, og angiver dens levetid til over 12 år. PDSA beskriver en kvik, venlig og kærlig hund der kan være reserveret over for fremmede, men med den rette socialisering som ung kan lære at blive selvsikker og social. PetMD advarer om at den kan udvikle separationsangst hvis den er alene for længe, skriver at samvær med små børn skal foregå under opsyn, og råder til at børste dens tænder hver dag.",
+        "Malteser er en lille selskabshund fra det centrale Middelhavsområde, som i dag hører under Italien i FCI. FCI-standarden beskriver en lille hund med en lidt langstrakt krop, livlig, kærlig, meget rolig og meget intelligent, med en vægt på 3–4 kg og meget langt, tæt og silkeagtigt hår der falder tungt ned over hele kroppen. Pelsen har ingen underuld, og helt hvid er den eneste farve (et lyst elfenbensskær er tilladt). Royal Kennel Clubs Breed Watch nævner ingen opmærksomhedspunkter der er specifikke for racen.",
+        "Royal Kennel Club anbefaler op til 30 minutters motion om dagen og daglig pelspleje, skriver at racen ikke fælder, og angiver dens levetid til over 12 år. PDSA beskriver en kvik, venlig og kærlig hund der kan være reserveret over for fremmede, men med den rette socialisering som ung kan lære at blive selvsikker og social. PetMD advarer om at den kan udvikle separationsangst hvis den er alene for længe, skriver at samvær med små børn skal foregå under opsyn, og råder til at børste dens tænder hver dag.",
       ],
       sources: ["S346", "S347", "S348", "S351"],
     },
     pug: {
       aka: "Pug, Carlin",
       text: [
-        "Mops er en lille selskabshund fra Kina, som i dag hører under Storbritannien i FCI. FCI-standarden beskriver en udpræget kvadratisk og kompakt hund – »multum in parvo« – med stor charme, værdighed og intelligens og et ligevægtigt, glad og livligt sind, en idealvægt på 6,3–8,1 kg, en fin, glat, kort og skinnende pels i sølv, abrikos, gul eller sort og en hale der er tæt krøllet over hoften. Den kræver temmelig store, godt åbne næsebor og finder sammenklemte næsebor og en kraftig rynke over næsen uacceptable. The Royal Kennel Club placerer racen i Breed Watch kategori 3 med opmærksomhedspunkter der blandt andet omfatter vejrtrækningsbesvær, fremstående øjne, betændelse i hudfolderne og overvægt.",
-        "PDSA kalder mopsen en race med et meget fladt ansigt (stærkt brachycefal), der let bliver forpustet, råder til at undgå motion i varme og skriver at deres dyrlæger kraftigt vil anbefale en race med normal snude eller en mopskrydsning i stedet. The Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje én gang om ugen, skriver at racen fælder, og angiver dens levetid til over 10 år. PDSA beskriver en hund der ofte kommer godt ud af det med børn og andre kæledyr, men elsker selskab og ikke trives med at være alene; PetMD råder til at rengøre og tørre hudfolderne i ansigtet hver dag og nævner at overvægt er almindelig i racen.",
+        "Mops er en lille selskabshund fra Kina, som i dag hører under Storbritannien i FCI. FCI-standarden beskriver en udpræget kvadratisk og kompakt hund – »multum in parvo« – med stor charme, værdighed og intelligens og et ligevægtigt, glad og livligt sind, en idealvægt på 6,3–8,1 kg, en fin, glat, kort og skinnende pels i sølv, abrikos, gul eller sort og en hale der er tæt krøllet over hoften. Den kræver temmelig store, godt åbne næsebor og finder sammenklemte næsebor og en kraftig rynke over næsen uacceptable. Royal Kennel Club placerer racen i Breed Watch kategori 3 med opmærksomhedspunkter der blandt andet omfatter vejrtrækningsbesvær, fremstående øjne, betændelse i hudfolderne og overvægt.",
+        "PDSA kalder mopsen en race med et meget fladt ansigt (stærkt brachycefal), der let bliver forpustet, råder til at undgå motion i varme og skriver at deres dyrlæger kraftigt vil anbefale en race med normal snude eller en mopskrydsning i stedet. Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje én gang om ugen, skriver at racen fælder, og angiver dens levetid til over 10 år. PDSA beskriver en hund der ofte kommer godt ud af det med børn og andre kæledyr, men elsker selskab og ikke trives med at være alene; PetMD råder til at rengøre og tørre hudfolderne i ansigtet hver dag og nævner at overvægt er almindelig i racen.",
       ],
       sources: ["S354", "S355", "S356", "S357", "S359"],
     },
     rough_collie: {
       aka: "collie, Rough Collie, Long-haired Collie",
       text: [
-        "Langhåret collie er en stor hyrdehund fra Storbritannien. FCI-standarden beskriver en hund af stor skønhed der står med upåvirket værdighed, har et venligt sind uden spor af nervøsitet eller aggressivitet, en meget tæt pels med glat, hård dækpels og tre farver: zobel, trefarvet og blue merle. The Royal Kennel Clubs standard kalder den en fremragende selskabshund, venlig, glad og aktiv, god med børn og andre hunde, og angiver skulderhøjden til 56–61 cm for hanner og 51–56 cm for tæver. The Royal Kennel Club placerer racen i Breed Watch kategori 2 og registrerer ikke hvalpe fra parringer mellem to merlehunde.",
-        "The Royal Kennel Club anbefaler op til en times motion om dagen og daglig pelspleje, skriver at racen fælder, og angiver dens levetid til over 12 år. PetMD skriver at collier er kærlige, især over for børn, og gode med andre dyr, men ikke har det godt med at være alene i længere tid og kan finde på at nappe i ankler og hæle når de bliver ophidsede. PetMD nævner også at socialisering af hvalpen er afgørende, og at MDR1-mutationen, som påvirker hvordan en hund omsætter visse lægemidler, forekommer hos collier.",
+        "Langhåret collie er en stor hyrdehund fra Storbritannien. FCI-standarden beskriver en hund af stor skønhed der står med upåvirket værdighed, har et venligt sind uden spor af nervøsitet eller aggressivitet, en meget tæt pels med glat, hård dækpels og tre farver: zobel, trefarvet og blue merle. Royal Kennel Clubs standard kalder den en fremragende selskabshund, venlig, glad og aktiv, god med børn og andre hunde, og angiver skulderhøjden til 56–61 cm for hanner og 51–56 cm for tæver. Royal Kennel Club placerer racen i Breed Watch kategori 2 og registrerer ikke hvalpe fra parringer mellem to merlehunde.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og daglig pelspleje, skriver at racen fælder, og angiver dens levetid til over 12 år. PetMD skriver at collier er kærlige, især over for børn, og gode med andre dyr, men ikke har det godt med at være alene i længere tid og kan finde på at nappe i ankler og hæle når de bliver ophidsede. PetMD nævner også at socialisering af hvalpen er afgørende, og at MDR1-mutationen, som påvirker hvordan en hund omsætter visse lægemidler, forekommer hos collier.",
       ],
       sources: ["S364", "S365", "S366", "S368"],
     },
     mastiff: {
       aka: "engelsk mastiff, English Mastiff, Old English Mastiff",
       text: [
-        "Mastiff er en meget stor vogterrace fra Storbritannien. FCI-standarden beskriver en kombination af storhed og mod – rolig, kærlig over for sine ejere, men i stand til at vogte – med et hoved der ser kvadratisk ud, en bred, dyb og kraftfuld krop og en kort, tætliggende pels i abrikos, gul eller tigret. PDSA angiver en gennemsnitlig skulderhøjde på 71–78 cm og en gennemsnitlig vægt på 80–85 kg og nævner at The Kennel Club placerer mastiffen i kategori 3: racer med synlige problemer i bygningen som kan give smerter, ubehag eller helbredsproblemer.",
+        "Mastiff er en meget stor vogterrace fra Storbritannien. FCI-standarden beskriver en kombination af storhed og mod – rolig, kærlig over for sine ejere, men i stand til at vogte – med et hoved der ser kvadratisk ud, en bred, dyb og kraftfuld krop og en kort, tætliggende pels i abrikos, gul eller tigret. PDSA angiver en gennemsnitlig skulderhøjde på 71–78 cm og en gennemsnitlig vægt på 80–85 kg og nævner at Kennel Club placerer mastiffen i kategori 3: racer med synlige problemer i bygningen som kan give smerter, ubehag eller helbredsproblemer.",
         "PDSA anbefaler omkring en times motion om dagen for voksne hunde – men ikke for meget motion mens hvalpens knogler og led stadig udvikler sig – pelspleje én gang om ugen med daglig rengøring af rynkerne i ansigtet og angiver en gennemsnitlig levetid på under 10 år. PetMD kalder mastiffer fremragende familiehunde til hjem med børn der forstår at omgås dyr, men måske ikke sammen med tumlinger eller babyer på grund af deres størrelse; de trives som regel med andre kæledyr som de har mødt som hvalpe, savler meget og bør ikke motioneres en time før og efter måltider på grund af risikoen for mavedrejning.",
       ],
       sources: ["S370", "S371", "S374"],
@@ -1088,8 +1088,8 @@ const da: RegistryCopy = {
     shiba_inu: {
       aka: "shiba inu, Japanese Shiba Inu",
       text: [
-        "Shiba er en lille spids fra Japan; navnet betyder »lille hund«, og ifølge The Royal Kennel Club blev den udviklet til jagt på små vildtfugle. FCI-standarden beskriver en lille, velafbalanceret hund med gode knogler, et trofast temperament, skarpe sanser og stor årvågenhed, en hård dækpels over en blød, tæt underuld, små, opretstående, trekantede ører og en tyk, krøllet hale; farverne er rød, sort og tan samt sesam, altid med hvidlige »urajiro«-aftegninger på kinderne, brystet og undersiden. AKC-standarden angiver en gennemsnitsvægt på omkring 23 pund (10 kg) for hanner og 17 pund (8 kg) for tæver.",
-        "The Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje én gang om ugen, nævner at racen fælder, og angiver dens levetid til over 10 år; en stor britisk undersøgelse fandt en median levetid på 14,6 år. AKC beskriver en selvsikker, selvstændig hund der er et bedre valg for en erfaren ejer, trives bedst med større børn og aldrig bør slippes løs uden for et indhegnet eller lukket område. PetMD tilføjer at den har brug for masser af mental stimulering, har gavn af socialisering som hvalp og bør have børstet tænder hver dag.",
+        "Shiba er en lille spids fra Japan; navnet betyder »lille hund«, og ifølge Royal Kennel Club blev den udviklet til jagt på små vildtfugle. FCI-standarden beskriver en lille, velafbalanceret hund med gode knogler, et trofast temperament, skarpe sanser og stor årvågenhed, en hård dækpels over en blød, tæt underuld, små, opretstående, trekantede ører og en tyk, krøllet hale; farverne er rød, sort og tan samt sesam, altid med hvidlige »urajiro«-aftegninger på kinderne, brystet og undersiden. AKC-standarden angiver en gennemsnitsvægt på omkring 23 pund (10 kg) for hanner og 17 pund (8 kg) for tæver.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje én gang om ugen, nævner at racen fælder, og angiver dens levetid til over 10 år; en stor britisk undersøgelse fandt en median levetid på 14,6 år. AKC beskriver en selvsikker, selvstændig hund der er et bedre valg for en erfaren ejer, trives bedst med større børn og aldrig bør slippes løs uden for et indhegnet eller lukket område. PetMD tilføjer at den har brug for masser af mental stimulering, har gavn af socialisering som hvalp og bør have børstet tænder hver dag.",
       ],
       sources: ["S376", "S377", "S378", "S380", "S381", "S383"],
     },
@@ -1097,7 +1097,7 @@ const da: RegistryCopy = {
       aka: "ridgeback, African Lion Dog",
       text: [
         "Rhodesian ridgeback kommer fra det sydlige Afrika. Dens mest kendte kendetegn er ryggens »ridge«, en stribe hår der vokser i modsat retning af resten af pelsen. FCI-standarden beskriver en velafbalanceret, stærk, muskuløs, adræt og aktiv hund der er værdig, intelligent og reserveret over for fremmede og særlig værdsat som vagthund og familiehund. Den korte, tætte pels er lys hvedefarvet til rød hvedefarvet, og standarden angiver en vægt på omkring 36,5 kg for hanner og 32 kg for tæver.",
-        "The Royal Kennel Club anbefaler mere end to timers motion om dagen og pelspleje én gang om ugen, nævner at racen fælder og egner sig til et stort hus med stor have, og angiver dens levetid til over 10 år. PDSA beskriver legesyge, kraftfulde og meget loyale hunde med et meget stærkt jagtinstinkt, som ikke anbefales til førstegangsejere, aldrig bør være alene i mere end fire timer og skal socialiseres fra ung; PDSA råder også til en pause mellem måltid og motion. Woodgreen tilføjer at de trives bedst med større børn.",
+        "Royal Kennel Club anbefaler mere end to timers motion om dagen og pelspleje én gang om ugen, nævner at racen fælder og egner sig til et stort hus med stor have, og angiver dens levetid til over 10 år. PDSA beskriver legesyge, kraftfulde og meget loyale hunde med et meget stærkt jagtinstinkt, som ikke anbefales til førstegangsejere, aldrig bør være alene i mere end fire timer og skal socialiseres fra ung; PDSA råder også til en pause mellem måltid og motion. Woodgreen tilføjer at de trives bedst med større børn.",
       ],
       sources: ["S385", "S387", "S390", "S392"],
     },
@@ -1105,15 +1105,15 @@ const da: RegistryCopy = {
       aka: "Continental Toy Spaniel, Phalène (variant med hængende ører), sommerfuglehund",
       text: [
         "Papillon er varianten med opretstående ører af continental toy spaniel, en race fra Belgien og Frankrig; varianten med hængende ører hedder phalène. FCI-standarden beskriver en lille, elegant dværgspaniel med langt hår og et livligt væsen, omkring 28 cm høj og med en vægt på op til 4,5 kg for hanner og 5 kg for tæver. De store ører bæres som en sommerfugls udbredte vinger, og pelsen er altid hvid med farvede pletter.",
-        "The Royal Kennel Club anbefaler op til 30 minutters motion om dagen og pelspleje mere end én gang om ugen, nævner at racen fælder og kan bo i lejlighed, og angiver dens levetid til over 12 år. PDSA beskriver blide, legesyge og meget lydige hunde der kommer godt ud af det med alle og har brug for træning og socialisering i en ung alder; PDSA foreslår pelspleje to til tre gange om ugen. PetMD tilføjer at papilloner har brug for daglig mental stimulering, kan udvikle separationsangst og bør have børstet tænder hver dag, og at meget små børn ved et uheld kan komme til at skade så lille en hund.",
+        "Royal Kennel Club anbefaler op til 30 minutters motion om dagen og pelspleje mere end én gang om ugen, nævner at racen fælder og kan bo i lejlighed, og angiver dens levetid til over 12 år. PDSA beskriver blide, legesyge og meget lydige hunde der kommer godt ud af det med alle og har brug for træning og socialisering i en ung alder; PDSA foreslår pelspleje to til tre gange om ugen. PetMD tilføjer at papilloner har brug for daglig mental stimulering, kan udvikle separationsangst og bør have børstet tænder hver dag, og at meget små børn ved et uheld kan komme til at skade så lille en hund.",
       ],
       sources: ["S396", "S397", "S398", "S400"],
     },
     portuguese_water_dog: {
       aka: "Cão de Água Português, Portie, Algarvian Water Dog",
       text: [
-        "Portugisisk vandhund kommer fra Portugal, hvor den arbejdede sammen med fiskere. The Royal Kennel Clubs standard beskriver en robust, næsten kvadratisk og meget muskuløs hund – meget intelligent og enormt energisk, med store evner til at svømme og dykke – med en skulderhøjde på 50–57 cm (hanner) og 43–52 cm (tæver) og en vægt på 19–25 kg (hanner) og 16–22 kg (tæver). Den rigelige, enkeltlagede pels har ingen underuld og findes i sort, hvid, brun eller sort eller brun med hvidt; den traditionelle løveklipning efterlader snuden og bagparten kortklippet.",
-        "The Royal Kennel Club anbefaler op til en times motion om dagen og daglig pelspleje, nævner at racen ikke fælder og egner sig til et stort hus, og angiver dens levetid til over 10 år. PDSA beskriver meget venlige og kærlige hunde der kommer godt ud af det med andre kæledyr, er fremragende familiehunde og har brug for træning og socialisering i en ung alder; PDSA tilføjer klipning og formning hos en professionel hundefrisør i løbet af året.",
+        "Portugisisk vandhund kommer fra Portugal, hvor den arbejdede sammen med fiskere. Royal Kennel Clubs standard beskriver en robust, næsten kvadratisk og meget muskuløs hund – meget intelligent og enormt energisk, med store evner til at svømme og dykke – med en skulderhøjde på 50–57 cm (hanner) og 43–52 cm (tæver) og en vægt på 19–25 kg (hanner) og 16–22 kg (tæver). Den rigelige, enkeltlagede pels har ingen underuld og findes i sort, hvid, brun eller sort eller brun med hvidt; den traditionelle løveklipning efterlader snuden og bagparten kortklippet.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og daglig pelspleje, nævner at racen ikke fælder og egner sig til et stort hus, og angiver dens levetid til over 10 år. PDSA beskriver meget venlige og kærlige hunde der kommer godt ud af det med andre kæledyr, er fremragende familiehunde og har brug for træning og socialisering i en ung alder; PDSA tilføjer klipning og formning hos en professionel hundefrisør i løbet af året.",
       ],
       sources: ["S403", "S404", "S405"],
     },
@@ -1121,7 +1121,7 @@ const da: RegistryCopy = {
       aka: "bichon, Bichon à poil frisé, Bichon Tenerife",
       text: [
         "Bichon frisé er en fransk-belgisk selskabshund. FCI-standarden beskriver en munter lille hund med livlige bevægelser og meget løst, hvidt hår i proptrækkerkrøller – en ægte selskabshund der kan tages med overalt, hverken nervøs eller tilbøjelig til at gø meget – med en skulderhøjde på 25–29 cm og en vægt på omkring 5 kg. En voksen hund er altid helt hvid med meget mørke, runde øjne, sort næse, hængende ører og en hale med fane der bæres over ryggen.",
-        "The Royal Kennel Club anbefaler op til 30 minutters motion om dagen og daglig pelspleje, nævner at racen ikke fælder og egner sig til en lejlighed, og angiver dens levetid til over 12 år. PDSA beskriver meget hengivne og kærlige hunde der er fremragende med børn og andre kæledyr, og tilføjer at pelsen skal klippes med et par måneders mellemrum, ofte af en professionel hundefrisør.",
+        "Royal Kennel Club anbefaler op til 30 minutters motion om dagen og daglig pelspleje, nævner at racen ikke fælder og egner sig til en lejlighed, og angiver dens levetid til over 12 år. PDSA beskriver meget hengivne og kærlige hunde der er fremragende med børn og andre kæledyr, og tilføjer at pelsen skal klippes med et par måneders mellemrum, ofte af en professionel hundefrisør.",
       ],
       sources: ["S410", "S411", "S413"],
     },
@@ -1137,7 +1137,7 @@ const da: RegistryCopy = {
       aka: "Carriage Dog, Spotted Coach Dog, Firehouse Dog",
       text: [
         "Dalmatiner kommer fra Kroatien; FCI regner den blandt racerne beslægtet med sporhundene. Den korte, skinnende pels er helt hvid med klart afgrænsede sorte eller leverbrune (brune) pletter, og standarden kræver plettede ører. FCI angiver en skulderhøjde på 56–62 cm for hanner og 54–60 cm for tæver; PDSA angiver en gennemsnitlig vægt på 18–27 kg.",
-        "The Royal Kennel Club anbefaler mere end to timers motion om dagen og børstning én gang om ugen og skriver at racen fælder og egner sig til et stort hus med have. PDSA kalder dalmatinere fremragende kæledyr til aktive husstande, som passer bedre til større børn, har brug for selskab og aldrig bør være alene i mere end fire timer; PDSA nævner døvhed blandt racens helbredsproblemer og skriver at der findes en BAER-høretest.",
+        "Royal Kennel Club anbefaler mere end to timers motion om dagen og børstning én gang om ugen og skriver at racen fælder og egner sig til et stort hus med have. PDSA kalder dalmatinere fremragende kæledyr til aktive husstande, som passer bedre til større børn, har brug for selskab og aldrig bør være alene i mere end fire timer; PDSA nævner døvhed blandt racens helbredsproblemer og skriver at der findes en BAER-høretest.",
       ],
       sources: ["S428", "S429", "S430"],
     },
@@ -1145,7 +1145,7 @@ const da: RegistryCopy = {
       aka: "Blue Heeler, Red Heeler, Queensland Heeler, Cattle Dog",
       text: [
         "Australian cattle dog kommer fra Australien; FCI regner den blandt kvæghundene. Kennel Club-standarden beskriver en stærk, kompakt brugshund med en glat, vejrbestandig dobbeltpels i blå (marmoreret eller prikket) eller jævnt rødprikket og angiver en skulderhøjde på 46–51 cm for hanner og 43–48 cm for tæver; PDSA angiver en gennemsnitlig vægt på 16–20 kg.",
-        "The Royal Kennel Club anbefaler mere end to timers motion om dagen og børstning én gang om ugen og skriver at racen fælder. PDSA beskriver en meget intelligent og energisk hund der har brug for masser af fysisk og mental aktivitet; på grund af sit stærke hyrdeinstinkt kan den finde på at nappe børn i hælene når de løber, og socialisering og træning i en ung alder hjælper.",
+        "Royal Kennel Club anbefaler mere end to timers motion om dagen og børstning én gang om ugen og skriver at racen fælder. PDSA beskriver en meget intelligent og energisk hund der har brug for masser af fysisk og mental aktivitet; på grund af sit stærke hyrdeinstinkt kan den finde på at nappe børn i hælene når de løber, og socialisering og træning i en ung alder hjælper.",
       ],
       sources: ["S436", "S437", "S438"],
     },
@@ -1160,8 +1160,8 @@ const da: RegistryCopy = {
     wirehaired_pointing_griffon: {
       aka: "Korthals Griffon, Wirehaired Pointing Griffon, Griff",
       text: [
-        "Griffon korthals kommer fra Frankrig; FCI regner den blandt de kontinentale stående jagthunde og kalder den først og fremmest en alsidig stående jagthund. FCI-standarden beskriver en kraftfuld, rustik hund der er længere end høj, med en hård, grov pels der aldrig er krøllet eller uldagtig, en næse der altid er brun, og helst en stålgrå pels med brune (leverbrune) pletter; den angiver en skulderhøjde på omkring 55–60 cm for hanner og 50–55 cm for tæver og kalder racen blid, stolt og meget blid over for børn. PetMD angiver en vægt på 35–70 pund (ca. 16–32 kg).",
-        "The Royal Kennel Club anbefaler mere end to timers motion om dagen, et stort hus med stor have og pelspleje mere end én gang om ugen. PetMD råder til ugentlig børstning (nogle hunde skal også håndtrimmes), skriver at racen som regel er tålmodig og blid med børn når den er socialiseret som hvalp, og nævner at dens jagthistorie kan give den et stærkt jagtinstinkt, så mindre dyr som katte og kaniner kan ligne noget der skal jagtes.",
+        "Griffon korthals kommer fra Frankrig; FCI regner den blandt de kontinentale stående jagthunde og kalder den først og fremmest en alsidig stående jagthund. FCI-standarden beskriver en kraftfuld, rustik hund der er længere end høj, med en hård, grov pels der aldrig er krøllet eller uldagtig, en næse der altid er brun, og helst en stålgrå pels med brune (leverbrune) pletter; den angiver en skulderhøjde på omkring 55–60 cm for hanner og 50–55 cm for tæver og kalder racen mild, stolt og meget kærlig over for børn. PetMD angiver en vægt på 35–70 pund (ca. 16–32 kg).",
+        "Royal Kennel Club anbefaler mere end to timers motion om dagen, et stort hus med stor have og pelspleje mere end én gang om ugen. PetMD råder til ugentlig børstning (nogle hunde skal også håndtrimmes), skriver at racen som regel er tålmodig og blid med børn når den er socialiseret som hvalp, og nævner at dens jagthistorie kan give den et stærkt jagtinstinkt, så mindre dyr som katte og kaniner kan ligne noget der skal jagtes.",
       ],
       sources: ["S449", "S450", "S453"],
     },
@@ -1169,7 +1169,7 @@ const da: RegistryCopy = {
       aka: "Chessie, Retriever (Chesapeake Bay)",
       text: [
         "Chesapeake bay retriever, ofte kaldet chessie, kommer fra USA; FCI regner den blandt retrieverne. FCI-standarden beskriver en apporterende brugshund der er lige dygtig på land og i vand, og hvis størrelse og substans ikke bør være overdreven, med en tyk, kort pels over en tæt, uldagtig underuld og klare gullige eller ravfarvede øjne; alle brune nuancer samt sedge og deadgrass er tilladt, og en sort pels diskvalificerer. Den angiver en skulderhøjde på 58–66 cm og en vægt på 29,5–36,5 kg for hanner og 53–61 cm og 25–32 kg for tæver.",
-        "The Royal Kennel Club anbefaler mere end to timers motion om dagen, et stort hus med stor have og pelspleje én gang om ugen. PetMD beskriver en kvik, munter og yderst kærlig hund der kan blive destruktiv hvis den ikke stimuleres eller er alene for længe, skriver at chessien med den rette introduktion og socialisering er en fin tilføjelse til familien, og råder til ikke at lade hunden motionere lige før eller efter et måltid.",
+        "Royal Kennel Club anbefaler mere end to timers motion om dagen, et stort hus med stor have og pelspleje én gang om ugen. PetMD beskriver en kvik, munter og yderst kærlig hund der kan blive destruktiv hvis den ikke stimuleres eller er alene for længe, skriver at chessien med den rette introduktion og socialisering er en fin tilføjelse til familien, og råder til ikke at lade hunden motionere lige før eller efter et måltid.",
       ],
       sources: ["S458", "S459", "S461"],
     },
@@ -1193,7 +1193,7 @@ const da: RegistryCopy = {
       aka: "Weimaraner Pointer, Weim",
       text: [
         "Weimaraner kommer fra Tyskland; FCI regner den blandt de kontinentale stående jagthunde og anerkender en korthåret og en langhåret variant. FCI-standarden beskriver en mellemstor til stor jagthund af funktionel brugstype, senet og meget muskuløs, med ravfarvede øjne og brede, temmelig lange ører; pelsen er sølvgrå, rågrå eller musegrå, kun små hvide aftegninger på bryst og tæer er tilladt, og enhver anden farve end grå diskvalificerer. Den angiver en skulderhøjde på 59–70 cm og en vægt på ca. 30–40 kg for hanner og 57–65 cm og ca. 25–35 kg for tæver.",
-        "The Royal Kennel Club anbefaler mere end to timers motion om dagen, et stort hus med stor have og pelspleje én gang om ugen. PDSA skriver at weimaranere er vidunderlige familiehunde i de rette hænder og trives bedst hos ejere der kender racen, men anbefaler dem ikke til hjem med mindre børn eller mindre kæledyr på grund af deres meget stærke jagtinstinkt, skriver at de kan udvikle separationsangst hvis de er alene, og råder til at socialisere dem fra ung og holde en pause mellem måltid og motion. PetMD anbefaler desuden ørerens og bad én gang om måneden.",
+        "Royal Kennel Club anbefaler mere end to timers motion om dagen, et stort hus med stor have og pelspleje én gang om ugen. PDSA skriver at weimaranere er vidunderlige familiehunde i de rette hænder og trives bedst hos ejere der kender racen, men anbefaler dem ikke til hjem med mindre børn eller mindre kæledyr på grund af deres meget stærke jagtinstinkt, skriver at de kan udvikle separationsangst hvis de er alene, og råder til at socialisere dem fra ung og holde en pause mellem måltid og motion. PetMD anbefaler desuden ørerensning og bad én gang om måneden.",
       ],
       sources: ["S478", "S479", "S480", "S481"],
     },
@@ -1201,15 +1201,15 @@ const da: RegistryCopy = {
       aka: "Piccolo Levriero Italiano, Italian Greyhound, Iggy",
       text: [
         "Italiensk mynde kommer fra Italien; FCI fører den som piccolo levriero italiano blandt de korthårede mynder. Kennel Club-standarden beskriver en greyhound i miniature, slankere i alle proportioner, elegant, yndefuld og hurtig, intelligent, kærlig og livlig, selv om den kan virke reserveret, med en kort, fin og skinnende pels over tynd hud. Den angiver en skulderhøjde på 32–38 cm og en vægt på 3,6–4,5 kg; sort, blå, creme, gul, rød og hvid eller en af disse farver brudt med hvidt er tilladt – aldrig merle, tigret eller tan aftegninger.",
-        "The Royal Kennel Club anbefaler op til en times motion om dagen og skriver at racen egner sig til et lille hus både i byen og på landet, skal plejes én gang om ugen og ikke fælder. PDSA skriver at italienske mynder er fulde af energi, bør motioneres i et indhegnet område fordi de kan være svære at kalde tilbage når de har fået øje på bytte, kan være frygtsomme, så tidlig socialisering er afgørende, og – fordi deres knogler er skrøbelige mens de vokser – måske ikke er den ideelle race til hjem med små børn eller andre kæledyr. PetMD tilføjer at den tynde pels ikke holder dem varme, så de fryser let.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og skriver at racen egner sig til et lille hus både i byen og på landet, skal plejes én gang om ugen og ikke fælder. PDSA skriver at italienske mynder er fulde af energi, bør motioneres i et indhegnet område fordi de kan være svære at kalde tilbage når de har fået øje på bytte, kan være frygtsomme, så tidlig socialisering er afgørende, og – fordi deres knogler er skrøbelige mens de vokser – måske ikke er den ideelle race til hjem med små børn eller andre kæledyr. PetMD tilføjer at den tynde pels ikke holder dem varme, så de fryser let.",
       ],
       sources: ["S485", "S486", "S487", "S488"],
     },
     giant_schnauzer: {
       aka: "Riesenschnauzer, Giant Schnauzer, Munich Schnauzer",
       text: [
-        "Riesenschnauzer kommer fra Tyskland; FCI regner den blandt pinschere og schnauzere. The Royal Kennel Clubs standard beskriver en kraftigt bygget, robust og senet hund der virker næsten kvadratisk, modig, pålidelig, godmodig og afbalanceret, med en hård, strid dækpels og god underuld. Den angiver en skulderhøjde på 65–70 cm for hanner og 60–65 cm for tæver; FCI-standarden angiver en vægt på 35–47 kg. Helt sort, peber og salt med mørk ansigtsmaske samt sort med sølv er tilladt – ingen andre farver.",
-        "The Royal Kennel Club anbefaler mere end to timers motion om dagen og skriver at racen egner sig til et stort hus med stor have, skal plejes hver dag og ikke fælder. PDSA skriver at pelsen kræver daglig pleje og jævnlig trimning, at riesenschnauzere kan være elskelige familiehunde for familier med større børn hvis de er godt socialiseret som hvalpe, og at disse viljestærke hunde passer til erfarne ejere. PetMD tilføjer at pelsen trimmes i hånden af en professionel med få måneders mellemrum, og at racen ikke trives i hjem hvor folk sjældent er hjemme.",
+        "Riesenschnauzer kommer fra Tyskland; FCI regner den blandt pinschere og schnauzere. Royal Kennel Clubs standard beskriver en kraftigt bygget, robust og senet hund der virker næsten kvadratisk, modig, pålidelig, godmodig og afbalanceret, med en hård, strid dækpels og god underuld. Den angiver en skulderhøjde på 65–70 cm for hanner og 60–65 cm for tæver; FCI-standarden angiver en vægt på 35–47 kg. Helt sort, peber og salt med mørk ansigtsmaske samt sort med sølv er tilladt – ingen andre farver.",
+        "Royal Kennel Club anbefaler mere end to timers motion om dagen og skriver at racen egner sig til et stort hus med stor have, skal plejes hver dag og ikke fælder. PDSA skriver at pelsen kræver daglig pleje og jævnlig trimning, at riesenschnauzere kan være elskelige familiehunde for familier med større børn hvis de er godt socialiseret som hvalpe, og at disse viljestærke hunde passer til erfarne ejere. PetMD tilføjer at pelsen trimmes i hånden af en professionel med få måneders mellemrum, og at racen ikke trives i hjem hvor folk sjældent er hjemme.",
       ],
       sources: ["S494", "S495", "S496", "S497"],
     },
@@ -1217,14 +1217,14 @@ const da: RegistryCopy = {
       aka: "blodhund, St. Hubert Hound, Chien de Saint-Hubert, Sleuth Hound",
       text: [
         "Bloodhound kommer fra Belgien, hvor FCI fører den som chien de Saint-Hubert, en stor sporhund. FCI-standarden beskriver den kraftigste af alle sporhunde: blid, rolig, venlig og social over for mennesker og særlig knyttet til sin ejer, med en kort, tæt og vejrbestandig pels og smidig, løs hud. Hanner vejer omkring 46–54 kg og tæver omkring 40–48 kg; de tre farver er sort og tan, leverbrun og tan samt rød.",
-        "The Royal Kennel Club anbefaler mere end to timers motion om dagen og skriver at racen egner sig til et stort hus med stor have, skal plejes én gang om ugen og fælder. PDSA skriver at bloodhounds passer bedre til erfarne ejere, ikke anbefales til hjem med mindre børn eller mindre kæledyr på grund af deres størrelse og meget stærke jagtinstinkt, savler og skal have hudfolderne holdt rene og tørre. PDSA råder også til en pause mellem måltid og motion.",
+        "Royal Kennel Club anbefaler mere end to timers motion om dagen og skriver at racen egner sig til et stort hus med stor have, skal plejes én gang om ugen og fælder. PDSA skriver at bloodhounds passer bedre til erfarne ejere, ikke anbefales til hjem med mindre børn eller mindre kæledyr på grund af deres størrelse og meget stærke jagtinstinkt, savler og skal have hudfolderne holdt rene og tørre. PDSA råder også til en pause mellem måltid og motion.",
       ],
       sources: ["S501", "S502", "S503"],
     },
     akita: {
       aka: "akita, American Akita, Great Japanese Dog",
       text: [
-        "Akitaen i dyreleksikonnet er den amerikanske type: FCI fører den som amerikansk akita, en race af japansk oprindelse, adskilt fra den japanske akita inu. FCI-standarden beskriver en stor, kraftigt bygget og velafbalanceret hund med megen substans og kraftige knogler, små, opretstående ører og en stor hale der bæres over ryggen; hanner har en skulderhøjde på 66–71 cm. Alle farver er tilladt, fx rød, gul, hvid, pinto og tigret. PDSA angiver en gennemsnitlig vægt på 31–59 kg.",
+        "Akitaen i dyreleksikonet er den amerikanske type: FCI fører den som amerikansk akita, en race af japansk oprindelse, adskilt fra den japanske akita inu. FCI-standarden beskriver en stor, kraftigt bygget og velafbalanceret hund med megen substans og kraftige knogler, små, opretstående ører og en stor hale der bæres over ryggen; hanner har en skulderhøjde på 66–71 cm. Alle farver er tilladt, fx rød, gul, hvid, pinto og tigret. PDSA angiver en gennemsnitlig vægt på 31–59 kg.",
         "PDSA beskriver utroligt loyale familiehunde der er selvstændige og meget store og derfor trives bedst hos erfarne ejere; PDSA vil ikke anbefale en akita til et hjem med små børn og fraråder at lade dem være alene fordi mange har svært ved det. PDSA anbefaler mindst to timers motion hver dag, socialisering fra ung, en pause mellem måltid og motion og børstning mindst én gang om ugen – akitaer fælder meget. PDSA nævner også et stærkt jagtinstinkt, og at de kan blive overophedede i meget varmt vejr.",
       ],
       sources: ["S506", "S507", "S508"],
@@ -1233,15 +1233,15 @@ const da: RegistryCopy = {
       aka: "corgi, Cardigan Welsh Corgi, Cardi",
       text: [
         "Welsh corgi cardigan kommer fra Storbritannien; FCI regner den blandt kvæghundene. Standarden fra American Kennel Club angiver en skulderhøjde på 10,5–12,5 tommer (ca. 27–32 cm) og en idealvægt på 30–38 pund (ca. 14–17 kg) for hanner. I modsætning til sin fætter pembroke har den en lang, fyldig hale.",
-        "The Royal Kennel Club anbefaler op til en times motion om dagen, finder et lille hus med en lille eller mellemstor have tilstrækkeligt og skriver at racen skal plejes mere end én gang om ugen og fælder; den angiver en levetid på over 12 år og fører cardigan som en sårbar britisk race. PDSA skriver at welsh corgier gerne vil samarbejde, så træningen burde være forholdsvis let, at to til tre børstninger om ugen som regel er nok, og at de kan finde på at nappe børn i hælene når de løber – socialisering med børn og træning i en ung alder hjælper.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen, finder et lille hus med en lille eller mellemstor have tilstrækkeligt og skriver at racen skal plejes mere end én gang om ugen og fælder; den angiver en levetid på over 12 år og fører cardigan som en sårbar britisk race. PDSA skriver at welsh corgier gerne vil samarbejde, så træningen burde være forholdsvis let, at to til tre børstninger om ugen som regel er nok, og at de kan finde på at nappe børn i hælene når de løber – socialisering med børn og træning i en ung alder hjælper.",
       ],
       sources: ["S206", "S513", "S515", "S517"],
     },
     german_wirehaired_pointer: {
       aka: "Deutsch Drahthaar, German Wirehaired Pointer, GWP",
       text: [
-        "Ruhåret hønsehund kommer fra Tyskland; FCI fører den som deutsch drahthaar blandt de kontinentale stående jagthunde. The Royal Kennel Clubs standard beskriver en mellemstor jagthund med strid pels der dækker huden helt – blid, kærlig og ligevægtig, opmærksom, lydig og meget loyal. Hanner har en skulderhøjde på 60–67 cm og vejer 25–34 kg; tæver har en skulderhøjde på 56–62 cm og vejer 20,5–29 kg. Leverbrun og hvid, ensfarvet leverbrun og sort og hvid er standardfarverne.",
-        "The Royal Kennel Club anbefaler mere end to timers motion om dagen og skriver at den egner sig til et stort hus med stor have på landet, skal plejes mere end én gang om ugen og fælder. PetMD skriver at ruhårede hønsehunde har brug for masser af motion og mental stimulering, knytter sig tæt til familien og kan blive fremragende familiehunde når de trænes og socialiseres tidligt, trives med børn der har lært at omgås dyr, aldrig bør være alene i lange perioder og har et stærkt jagtinstinkt. Pelsen håndtrimmes to gange om året.",
+        "Ruhåret hønsehund kommer fra Tyskland; FCI fører den som deutsch drahthaar blandt de kontinentale stående jagthunde. Royal Kennel Clubs standard beskriver en mellemstor jagthund med strid pels der dækker huden helt – blid, kærlig og ligevægtig, opmærksom, lydig og meget loyal. Hanner har en skulderhøjde på 60–67 cm og vejer 25–34 kg; tæver har en skulderhøjde på 56–62 cm og vejer 20,5–29 kg. Leverbrun og hvid, ensfarvet leverbrun og sort og hvid er standardfarverne.",
+        "Royal Kennel Club anbefaler mere end to timers motion om dagen og skriver at den egner sig til et stort hus med stor have på landet, skal plejes mere end én gang om ugen og fælder. PetMD skriver at ruhårede hønsehunde har brug for masser af motion og mental stimulering, knytter sig tæt til familien og kan blive fremragende familiehunde når de trænes og socialiseres tidligt, trives med børn der har lært at omgås dyr, aldrig bør være alene i lange perioder og har et stærkt jagtinstinkt. Pelsen håndtrimmes to gange om året.",
       ],
       sources: ["S519", "S521", "S522", "S524"],
     },
@@ -1249,7 +1249,7 @@ const da: RegistryCopy = {
       aka: "sankt bernhard, St. Bernard, St. Bernhardshund, Bernhardiner",
       text: [
         "Sankt bernhardshund kommer fra Schweiz; FCI regner den blandt molosserne af bjergtypen. FCI-standarden beskriver en hund der er venlig af natur, rolig til livlig og årvågen, og anerkender to varianter: korthåret med tæt, glat og tætliggende pels og langhåret. Hanner har en skulderhøjde på mindst 70 cm og tæver mindst 65 cm, op til 90 og 80 cm; PDSA angiver en vægt på 54–81 kg.",
-        "The Royal Kennel Club anbefaler op til en times motion om dagen og skriver at racen egner sig til et stort hus med stor have, skal plejes mere end én gang om ugen, fælder og som regel lever mindre end ti år. PDSA skriver at sankt bernhardshunde elsker at være sammen med en familie og er fremragende med mennesker i alle aldre, også børn, bør socialiseres godt som hvalpe, skal børstes mindst tre gange om ugen, savler, ikke har det så godt i varme og har brug for en pause mellem måltid og motion. PetMD tilføjer at disse menneskeorienterede hunde kan udvikle separationsangst hvis de er alene i lange perioder.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og skriver at racen egner sig til et stort hus med stor have, skal plejes mere end én gang om ugen, fælder og som regel lever mindre end ti år. PDSA skriver at sankt bernhardshunde elsker at være sammen med en familie og er fremragende med mennesker i alle aldre, også børn, bør socialiseres godt som hvalpe, skal børstes mindst tre gange om ugen, savler, ikke har det så godt i varme og har brug for en pause mellem måltid og motion. PetMD tilføjer at disse menneskeorienterede hunde kan udvikle separationsangst hvis de er alene i lange perioder.",
       ],
       sources: ["S527", "S528", "S529", "S532", "S533"],
     },
@@ -1257,7 +1257,7 @@ const da: RegistryCopy = {
       aka: "staffe, Staffie, Staffy, Stafford",
       text: [
         "Staffordshire bullterrier kommer fra Storbritannien; FCI regner den blandt bullterrierne. FCI-standarden beskriver en glathåret, velafbalanceret hund med stor styrke i forhold til sin størrelse – traditionelt med ukueligt mod og vedholdenhed, meget intelligent og kærlig, især over for børn. Skulderhøjden er 35,5–40,5 cm; hanner vejer 12,7–17 kg og tæver 11–15,4 kg. Den findes i tigret, rød, gul, sort, blå eller hvid, alene eller med hvidt.",
-        "The Royal Kennel Club kalder den en vidunderlig familiehund og anbefaler op til en times motion om dagen; den skal plejes én gang om ugen, fælder og lever som regel over 12 år. PDSA skriver at staffordshire bullterriere er tolerante og søde over for børn, men som menneskeorienterede hunde er kendt for at lide af separationsangst når de er alene, at de er kendt for at tygge på ting, og at mindre kæledyr ikke er en god idé omkring dem på grund af deres meget stærke jagtinstinkt.",
+        "Royal Kennel Club kalder den en vidunderlig familiehund og anbefaler op til en times motion om dagen; den skal plejes én gang om ugen, fælder og lever som regel over 12 år. PDSA skriver at staffordshire bullterriere er tolerante og søde over for børn, men som menneskeorienterede hunde er kendt for at lide af separationsangst når de er alene, at de er kendt for at tygge på ting, og at mindre kæledyr ikke er en god idé omkring dem på grund af deres meget stærke jagtinstinkt.",
       ],
       sources: ["S536", "S537", "S538", "S540"],
     },
@@ -1265,7 +1265,7 @@ const da: RegistryCopy = {
       aka: "airedale, King of Terriers, Waterside Terrier, Bingley Terrier",
       text: [
         "Airedale terrier kommer fra Storbritannien; FCI regner den blandt de store og mellemstore terriere. FCI-standarden kalder den den største af terrierne – en muskuløs, aktiv og temmelig kompakt hund der er udadvendt og selvsikker, venlig, modig og intelligent, altid opmærksom, ikke aggressiv, men frygtløs. Hanner har en skulderhøjde på omkring 58–61 cm og tæver omkring 56–59 cm. Den hårde, tætte og strie pels er tan med sort eller grizzle sadel.",
-        "The Royal Kennel Club anbefaler op til en times motion om dagen; pelsen skal plejes hver dag og fælder ikke, og racen lever som regel over 10 år. PetMD beskriver fremragende familiehunde der, hvis de er godt trænet, som regel kommer godt ud af det med børn, men ikke bør overlades til sig selv for længe; PetMD råder til børstning et par gange om ugen, en hurtig ørerens hver uge og en tur hos en professionel hundefrisør tre eller fire gange om året.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen; pelsen skal plejes hver dag og fælder ikke, og racen lever som regel over 10 år. PetMD beskriver fremragende familiehunde der, hvis de er godt trænet, som regel kommer godt ud af det med børn, men ikke bør overlades til sig selv for længe; PetMD råder til børstning et par gange om ugen, en hurtig ørerensning hver uge og en tur hos en professionel hundefrisør tre eller fire gange om året.",
       ],
       sources: ["S545", "S546", "S547", "S549"],
     },
@@ -1273,7 +1273,7 @@ const da: RegistryCopy = {
       aka: "jack russell, Russell Terrier (AKC), JRT",
       text: [
         "Jack russell terrier – American Kennel Club kalder den russell terrier – stammer fra England og blev udviklet i Australien; FCI regner den blandt de små terriere. Standarden beskriver en stærk, aktiv og smidig brugsterrier med stor personlighed: livlig, opmærksom og aktiv, modig og frygtløs, venlig, men stille selvsikker. Skulderhøjden er 25–30 cm, og vægten er omkring 5–6 kg. Den glatte, brudte eller ruhårede pels er overvejende hvid med sorte og/eller tan aftegninger.",
-        "The Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje én gang om ugen; racen fælder og lever som regel over 10 år. PDSA beskriver kloge, livlige hunde der kan være gode familiehunde hvis de trænes og socialiseres fra ung, men passer bedre til familier med lidt større børn; de har et meget stærkt jagtinstinkt, så mindre kæledyr anbefales ikke, og de elsker at grave.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje én gang om ugen; racen fælder og lever som regel over 10 år. PDSA beskriver kloge, livlige hunde der kan være gode familiehunde hvis de trænes og socialiseres fra ung, men passer bedre til familier med lidt større børn; de har et meget stærkt jagtinstinkt, så mindre kæledyr anbefales ikke, og de elsker at grave.",
       ],
       sources: ["S557", "S558", "S559", "S560"],
     },
@@ -1281,7 +1281,7 @@ const da: RegistryCopy = {
       aka: "Bull Mastiff",
       text: [
         "Bullmastiff er en gammel engelsk vogterrace fra 1800-tallet der nedstammer fra bulldog og old english mastiff; FCI regner den blandt molosserne. Standarden beskriver en kraftfuld, symmetrisk hund der udstråler stor styrke uden at være klodset – udholdende, aktiv, pålidelig, livlig, opmærksom og trofast. Hanner har en skulderhøjde på 64–69 cm og vejer 50–59 kg, tæver 61–66 cm og 41–50 kg. Den korte, hårde pels er i enhver nuance af gul, rød eller tigret, altid med sort snude.",
-        "The Royal Kennel Club anbefaler mere end to timers motion om dagen og pelspleje én gang om ugen, og racen lever som regel under 10 år. PDSA beskriver meget loyale hunde hvis størrelse og kraft gør at de passer bedre til hjem med kun voksne eller familier med større børn; de har brug for tidlig socialisering, helst nogen hjemme hele tiden, har et meget stærkt jagtinstinkt, savler meget og har brug for en pause mellem måltid og motion.",
+        "Royal Kennel Club anbefaler mere end to timers motion om dagen og pelspleje én gang om ugen, og racen lever som regel under 10 år. PDSA beskriver meget loyale hunde hvis størrelse og kraft gør at de passer bedre til hjem med kun voksne eller familier med større børn; de har brug for tidlig socialisering, helst nogen hjemme hele tiden, har et meget stærkt jagtinstinkt, savler meget og har brug for en pause mellem måltid og motion.",
       ],
       sources: ["S565", "S566", "S567", "S568"],
     },
@@ -1289,7 +1289,7 @@ const da: RegistryCopy = {
       aka: "Chinese Crested, kinesisk nøgenhund, Powder Puff",
       text: [
         "Chinese crested dog er en lille, aktiv og yndefuld selskabshund fra Kina; FCI regner den blandt de hårløse hunde. Den findes i to varianter: den hårløse med glat, nøgen krop og hår kun på hovedet (toppen), fødderne og halen, og powder puff, der er helt dækket af et slør af langt, blødt hår. Hanner har en skulderhøjde på 28–33 cm og tæver 23–30 cm; PetMD angiver en vægt på 8–12 pund (3,6–5,4 kg). Alle farver er tilladt undtagen merle, og dens temperament beskrives som glad, aldrig ondsindet.",
-        "The Royal Kennel Club anbefaler op til 30 minutters motion om dagen og pelspleje én gang om ugen; den egner sig til en lejlighed, og racen lever som regel over 12 år. PetMD beskriver en venlig hund der passer ind i de fleste familier, også dem med børn og andre kæledyr – alt samvær med børn bør foregå under opsyn. Den nøgne hud skal beskyttes mod sol og kulde, kløerne bør tjekkes hver uge, og hvalpe har brug for tidlig, konsekvent socialisering.",
+        "Royal Kennel Club anbefaler op til 30 minutters motion om dagen og pelspleje én gang om ugen; den egner sig til en lejlighed, og racen lever som regel over 12 år. PetMD beskriver en venlig hund der passer ind i de fleste familier, også dem med børn og andre kæledyr – alt samvær med børn bør foregå under opsyn. Den nøgne hud skal beskyttes mod sol og kulde, kløerne bør tjekkes hver uge, og hvalpe har brug for tidlig, konsekvent socialisering.",
       ],
       sources: ["S570", "S571", "S572", "S574"],
     },
@@ -1297,7 +1297,7 @@ const da: RegistryCopy = {
       aka: "toller, Nova Scotia Retriever, Duck Tolling Retriever, NSDTR",
       text: [
         "Nova scotia duck tolling retriever – tolleren – er en retriever fra Canada; FCI-standarden beskriver hvordan den løber og leger langs strandkanten i fuldt syn for ænderne for at lokke dem til og derefter sendes ud for at apportere fuglene. Standarden beskriver en mellemstor, kraftfuld, kompakt og velmusklet hund der er meget intelligent, let at træne og har stor udholdenhed. FCI angiver 48–51 cm og 20–23 kg for hanner og 45–48 cm og 17–20 kg for tæver. Den vandafvisende dobbeltpels er i forskellige nuancer af rød eller orange, som regel med hvidt på halespidsen, fødderne, brystet eller som blis.",
-        "The Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje mere end én gang om ugen, og racen fælder; PetMD råder til børstning en eller to gange om ugen. En stor britisk undersøgelse (McMillan 2024, via Dogs Trust) angiver en median forventet levetid på 13,2 år, PetMD 12–14 år, og som andre mellemstore hunde er den udvokset ved omkring 12–15 måneder (PetMD). AKC beskriver meget kærlige hunde der som regel er gode med børn, har brug for masser af fysisk motion og mental stimulering, kan have et stærkt jagtinstinkt over for mindre dyr og har gavn af tidlig socialisering og hvalpehold.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje mere end én gang om ugen, og racen fælder; PetMD råder til børstning en eller to gange om ugen. En stor britisk undersøgelse (McMillan 2024, via Dogs Trust) angiver en median forventet levetid på 13,2 år, PetMD 12–14 år, og som andre mellemstore hunde er den udvokset ved omkring 12–15 måneder (PetMD). AKC beskriver meget kærlige hunde der som regel er gode med børn, har brug for masser af fysisk motion og mental stimulering, kan have et stærkt jagtinstinkt over for mindre dyr og har gavn af tidlig socialisering og hvalpehold.",
       ],
       sources: ["S576", "S577", "S578", "S579", "S580", "S123", "S10"],
     },
@@ -1329,23 +1329,23 @@ const da: RegistryCopy = {
       aka: "Great Pyrenees, Pyrenees, Patou, Chien de Montagne des Pyrénées",
       text: [
         "Pyrenæerhund – i USA kaldet great pyrenees – kommer fra Frankrig; FCI regner den blandt molosserne af bjergtypen (gruppe 2) og beskriver en hund af stor størrelse, imponerende og kraftigt bygget, men ikke uden en vis elegance. Pelsen er hvid eller hvid med pletter i grævlingefarvet, ulvegrå, lysegul eller orange på hoved og ører. FCI-standarden angiver en skulderhøjde på 70–80 cm for hanner og 65–75 cm for tæver; PDSA angiver en gennemsnitlig vægt på 40–50 kg. Som andre kæmpehunde er den udvokset ved omkring 18–24 måneder (PetMD).",
-        "The Royal Kennel Club anbefaler op til en times motion om dagen og skriver at racen egner sig til et stort hus med stor have, skal plejes mere end én gang om ugen og fælder, og angiver en levetid på under 10 år (PetMD og VCA angiver 10–12 år). PDSA kalder dem blide kæmper – rolige, godmodige hunde der som regel kommer godt ud af det med alle – og skriver at træningen kræver tålmodighed og belønningsbaserede metoder. VCA skriver at pyrenæerhunden er hengiven over for sin familie, især børnene, og at tidlig socialisering er meget vigtig; PetMD skriver at den lever godt sammen med andre kæledyr, men måske er bedst i hjem uden mindre børn, og råder til at undgå hård motion omkring måltiderne på grund af risikoen for mavedrejning.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og skriver at racen egner sig til et stort hus med stor have, skal plejes mere end én gang om ugen og fælder, og angiver en levetid på under 10 år (PetMD og VCA angiver 10–12 år). PDSA kalder dem blide kæmper – rolige, godmodige hunde der som regel kommer godt ud af det med alle – og skriver at træningen kræver tålmodighed og belønningsbaserede metoder. VCA skriver at pyrenæerhunden er hengiven over for sin familie, især børnene, og at tidlig socialisering er meget vigtig; PetMD skriver at den lever godt sammen med andre kæledyr, men måske er bedst i hjem uden mindre børn, og råder til at undgå hård motion omkring måltiderne på grund af risikoen for mavedrejning.",
       ],
       sources: ["S599", "S600", "S603", "S604", "S605", "S10"],
     },
     soft_coated_wheaten_terrier: {
       aka: "wheaten terrier, wheaten, Soft Coated Wheaten Terrier, SCWT",
       text: [
-        "Irish soft coated wheaten terrier kommer fra Irland; FCI regner den blandt de store og mellemstore terriere. The Royal Kennel Clubs standard beskriver en mellemstor, kompakt og højstillet terrier med en blød, silkeagtig, hvedefarvet pels der falder i løse krøller eller bølger – godmodig, livlig og ivrig, fuld af selvtillid og humor. Den eneste farve er en god, klar hvedefarve. PDSA angiver en gennemsnitlig skulderhøjde på 46–49 cm og en gennemsnitlig vægt på 16–20,5 kg (Kennel Club-standarden angiver 16–20,5 kg for hanner og noget mindre for tæver); som andre mellemstore hunde er den udvokset ved omkring 12–15 måneder (PetMD).",
-        "The Royal Kennel Club anbefaler op til en times motion om dagen og skriver at racen egner sig til et lille hus, skal plejes hver dag og ikke fælder. En stor britisk undersøgelse (McMillan 2024, via Dogs Trust) angiver en median forventet levetid på 13,7 år; PetMD og VCA angiver 12–14 år. PDSA kalder dem venlige, pålidelige hunde der er fremragende familiehunde, selv om de kan være en smule stædige. VCA skriver at deres blide, legesyge væsen gør dem til et godt match for børn; PetMD skriver at samvær med børn bør foregå under opsyn, at de ikke bryder sig om at være alene i lange perioder, og råder til professionel pelspleje hver fjerde til sjette uge, et bad omkring én gang om måneden og ørerens hver eller hver anden uge.",
+        "Irish soft coated wheaten terrier kommer fra Irland; FCI regner den blandt de store og mellemstore terriere. Royal Kennel Clubs standard beskriver en mellemstor, kompakt og højstillet terrier med en blød, silkeagtig, hvedefarvet pels der falder i løse krøller eller bølger – godmodig, livlig og ivrig, fuld af selvtillid og humor. Den eneste farve er en god, klar hvedefarve. PDSA angiver en gennemsnitlig skulderhøjde på 46–49 cm og en gennemsnitlig vægt på 16–20,5 kg (Kennel Club-standarden angiver 16–20,5 kg for hanner og noget mindre for tæver); som andre mellemstore hunde er den udvokset ved omkring 12–15 måneder (PetMD).",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og skriver at racen egner sig til et lille hus, skal plejes hver dag og ikke fælder. En stor britisk undersøgelse (McMillan 2024, via Dogs Trust) angiver en median forventet levetid på 13,7 år; PetMD og VCA angiver 12–14 år. PDSA kalder dem venlige, pålidelige hunde der er fremragende familiehunde, selv om de kan være en smule stædige. VCA skriver at deres blide, legesyge væsen gør dem til et godt match for børn; PetMD skriver at samvær med børn bør foregå under opsyn, at de ikke bryder sig om at være alene i lange perioder, og råder til professionel pelspleje hver fjerde til sjette uge, et bad omkring én gang om måneden og ørerensning hver eller hver anden uge.",
       ],
       sources: ["S608", "S610", "S612", "S613", "S614", "S123", "S10"],
     },
     irish_wolfhound: {
       aka: "ulvehund, Irish Wolfhound, Cú Faoil",
       text: [
-        "Irsk ulvehund kommer fra Irland; FCI regner den blandt de ruhårede mynder. PDSA angiver en gennemsnitlig skulderhøjde på 71–79 cm og en gennemsnitlig vægt på 40–55 kg; som andre kæmpehunde er den udvokset ved omkring 18–24 måneder (PetMD). The Royal Kennel Club kalder dens størrelse ekstra stor og skriver at den egner sig til et stort hus med stor have på landet.",
-        "The Royal Kennel Club anbefaler mere end to timers motion om dagen og pelspleje mere end én gang om ugen og skriver at racen fælder. The Kennel Club og PDSA angiver en levetid på under 10 år; PetMD angiver 6–8 år. PDSA anbefaler ikke racen til hjem med mindre børn på grund af dens størrelse og styrke og heller ikke sammen med mindre kæledyr på grund af dens stærke jagtinstinkt og skriver at den aldrig bør være alene i mere end fire timer. PetMD råder til at socialisere hvalpen fra den dag, den kommer hjem, ingen motion lige før eller efter måltider (mavedrejning) og ørerens hver anden til fjerde uge.",
+        "Irsk ulvehund kommer fra Irland; FCI regner den blandt de ruhårede mynder. PDSA angiver en gennemsnitlig skulderhøjde på 71–79 cm og en gennemsnitlig vægt på 40–55 kg; som andre kæmpehunde er den udvokset ved omkring 18–24 måneder (PetMD). Royal Kennel Club kalder dens størrelse ekstra stor og skriver at den egner sig til et stort hus med stor have på landet.",
+        "Royal Kennel Club anbefaler mere end to timers motion om dagen og pelspleje mere end én gang om ugen og skriver at racen fælder. Kennel Club og PDSA angiver en levetid på under 10 år; PetMD angiver 6–8 år. PDSA anbefaler ikke racen til hjem med mindre børn på grund af dens størrelse og styrke og heller ikke sammen med mindre kæledyr på grund af dens stærke jagtinstinkt og skriver at den aldrig bør være alene i mere end fire timer. PetMD råder til at socialisere hvalpen fra den dag, den kommer hjem, ingen motion lige før eller efter måltider (mavedrejning) og ørerensning hver anden til fjerde uge.",
       ],
       sources: ["S615", "S617", "S619", "S620", "S10"],
     },
@@ -1353,7 +1353,7 @@ const da: RegistryCopy = {
       aka: "amstaff, Am Staff, American Staffordshire Terrier",
       text: [
         "Amerikansk staffordshire terrier kommer fra USA; FCI regner den blandt bullterrierne. Standarden kræver stor styrke i forhold til størrelsen og angiver en skulderhøjde på 46–48 cm for hanner og 43–46 cm for tæver, men ingen vægt. PetMD angiver 40–70 pund (ca. 18–32 kg) for begge køn; en hund af denne størrelse er udvokset ved omkring 12–15 måneder (PetMD).",
-        "PetMD anbefaler mindst 60 minutters motion om dagen og skriver at racen er tålmodig og kærlig over for børn, at den kan være tilbøjelig til separationsangst, og at dens stærke jagtinstinkt kan gøre livet med mindre hunde eller katte sværere. En britisk undersøgelse (McMillan et al., 2024, som opstillet af Dogs Trust) angiver en median forventet levetid på 12,5 år; PetMD angiver 12–16 år. VCA anbefaler ugentlig børstning; PetMD råder til at socialisere hvalpen, ingen motion lige efter et måltid (mavedrejning) og bad og ørerens omkring hver 4.–6. uge.",
+        "PetMD anbefaler mindst 60 minutters motion om dagen og skriver at racen er tålmodig og kærlig over for børn, at den kan være tilbøjelig til separationsangst, og at dens stærke jagtinstinkt kan gøre livet med mindre hunde eller katte sværere. En britisk undersøgelse (McMillan et al., 2024, som opstillet af Dogs Trust) angiver en median forventet levetid på 12,5 år; PetMD angiver 12–16 år. VCA anbefaler ugentlig børstning; PetMD råder til at socialisere hvalpen, ingen motion lige efter et måltid (mavedrejning) og bad og ørerensning omkring hver 4.–6. uge.",
       ],
       sources: ["S625", "S626", "S628", "S629", "S123", "S10"],
     },
@@ -1361,7 +1361,7 @@ const da: RegistryCopy = {
       aka: "lagotto, Lagotti, Romagna Water Dog, trøffelhund",
       text: [
         "Lagotto romagnolo er en lille til mellemstor krølhåret vandhund fra Italien, kendt som trøffelhunden; FCI regner den blandt vandhundene. Standarden angiver en skulderhøjde på 43–48 cm og en vægt på 13–16 kg for hanner og 41–46 cm og 11–14 kg for tæver; en hund af denne størrelse er udvokset ved omkring 12–15 måneder (PetMD).",
-        "The Royal Kennel Club kalder den en fremragende og opmærksom familiehund, anbefaler mere end to timers motion om dagen og pelspleje mere end én gang om ugen, skriver at den ikke fælder, og angiver en levetid på over 12 år; PetMD skriver at lagottoer kan blive 15–17 år. PetMD nævner at den har brug for konstant mental og fysisk stimulering og grundig socialisering da den kan være genert; Woodgreen skriver at den kan få det svært hvis den ofte er alene, og anbefaler professionel pelspleje hver sjette til ottende uge.",
+        "Royal Kennel Club kalder den en fremragende og opmærksom familiehund, anbefaler mere end to timers motion om dagen og pelspleje mere end én gang om ugen, skriver at den ikke fælder, og angiver en levetid på over 12 år; PetMD skriver at lagottoer kan blive 15–17 år. PetMD nævner at den har brug for konstant mental og fysisk stimulering og grundig socialisering da den kan være genert; Woodgreen skriver at den kan få det svært hvis den ofte er alene, og anbefaler professionel pelspleje hver sjette til ottende uge.",
       ],
       sources: ["S630", "S631", "S632", "S633", "S635", "S636", "S10"],
     },
