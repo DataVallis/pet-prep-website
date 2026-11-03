@@ -62,7 +62,7 @@ export const kidsCopy: Record<Locale, KidsCopy> = {
     menu: "Para crianças",
     all: "Tudo para crianças",
     items: [
-      { page: "coloring", title: "Desenhos para colorir", text: "12 desenhos gratuitos para imprimir, cada um com uma curiosidade sobre o cuidado dos animais.", image: coloringThumb },
+      { page: "coloring", title: "Desenhos para colorir", text: "12 desenhos gratuitos para imprimir, cada um com uma curiosidade sobre cuidados a animais de estimação.", image: coloringThumb },
       { page: "curio", title: "Conhece o Curio", text: "A nossa mascote e os seus vídeos curtos.", image: curioThumb },
       { page: "walkyourpet", title: "#walkyourpet", text: "O movimento iniciado por uma criança: sair à rua para passear.", image: null },
     ],

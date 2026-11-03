@@ -121,7 +121,7 @@
       "slug": "boieiro-de-berna",
       "synonyms": [
         "Bernês",
-        "Boiadeiro bernês",
+        "Boieiro bernês",
         "Berner Sennenhund"
       ]
     },
@@ -620,7 +620,7 @@
       "slug": "basenji"
     },
     "greater_swiss_mountain_dog": {
-      "name": "Grande Boieiro Suíço",
+      "name": "Grande boieiro suíço",
       "slug": "grande-boieiro-suico",
       "synonyms": [
         "Grosser Schweizer Sennenhund",
@@ -671,7 +671,7 @@
       ]
     },
     "shar_pei": {
-      "name": "Shar Pei",
+      "name": "Shar pei",
       "slug": "shar-pei",
       "synonyms": [
         "Shar-Pei chinês",
@@ -679,7 +679,7 @@
       ]
     },
     "rat_terrier": {
-      "name": "Rat Terrier",
+      "name": "Rat terrier",
       "slug": "rat-terrier",
       "synonyms": [
         "Rattie",
@@ -703,7 +703,7 @@
       "apartment": "a vida num apartamento",
       "back_spine": "costas compridas – problemas de coluna, evitar saltos",
       "brachycephalic_breathing": "focinho achatado – dificuldade em respirar e sensibilidade ao calor",
-      "chases_small_pets": "forte instinto de caça – pode perseguir animais pequenos",
+      "chases_small_pets": "forte instinto de caça – pode perseguir pequenos animais de estimação",
       "chews_when_bored": "rói objetos quando se aborrece",
       "children": "famílias com crianças",
       "cold_sensitive": "pelo fino – sente o frio",
@@ -711,7 +711,7 @@
       "experienced_owner": "cão poderoso – precisa de um dono experiente",
       "eyelid_problems": "pálpebras e olhos – confirma os exames oftalmológicos",
       "family_pet": "a vida em família",
-      "first_time_owner": "quem tem um animal pela primeira vez",
+      "first_time_owner": "quem tem um animal de estimação pela primeira vez",
       "food_motivated_weight": "muito guloso – vigia o peso",
       "fragile_older_children": "ossos frágeis – melhor com crianças mais velhas",
       "frequent_grooming": "precisa de escovagem várias vezes por semana",
@@ -730,7 +730,7 @@
       "often_alone": "famílias que passam algumas horas fora de casa",
       "older_children": "cão pequeno – melhor com crianças mais velhas",
       "older_owners": "donos mais velhos",
-      "other_pets": "casas com outros animais",
+      "other_pets": "casas com outros animais de estimação",
       "secure_fencing": "tem tendência para fugir – precisa de uma vedação alta e segura",
       "sensitive_older_children": "cão sensível – melhor com crianças mais velhas",
       "sensitive_skin": "pele sensível – tendência para comichão e inflamações",
