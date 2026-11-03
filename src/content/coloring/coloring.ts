@@ -757,7 +757,7 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
     open: "Åpne og skriv ut",
     all: {
       title: "Alle arkene i én PDF",
-      text: "Alle fargeleggingsarkene i én fil – skriv ut hele boken til en regnværsettermiddag.",
+      text: "Alle fargeleggingsarkene i én fil – skriv ut hele boken en regnværsdag.",
       a4: "Bok som PDF (A4)",
       letter: "Bok som PDF (US Letter)",
     },
@@ -766,7 +766,7 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
       steps: [
         "Velg et ark, og skriv det ut – A4 eller US Letter, svart-hvitt holder.",
         "Fargelegg det, eller tegn det av på et blankt ark.",
-        "Les faktaopplysningen på arket sammen: Hver av dem er hentet fra en dyrlegekilde eller en kennelklubb.",
+        "Les faktumet på arket sammen: Hvert faktum er hentet fra en veterinærmedisinsk kilde eller en kennelklubb.",
       ],
     },
     share: {
@@ -776,8 +776,8 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
     licence: "Gratis til privat bruk, i familien og i klasserommet. Ikke selg arkene, og ikke publiser dem andre steder.",
     page: {
       metaTitle: (t) => `${t} – gratis fargeleggingsark til utskrift | PetPrep`,
-      metaDescription: (t) => `${t}: et gratis fargeleggingsark til utskrift for barn (PDF i A4 og US Letter), med en ekte faktaopplysning om stell av kjæledyr og kilden til den. Fra PetPrep.`,
-      lead: "Gratis å skrive ut og fargelegge. På arket står en ekte faktaopplysning om stell av kjæledyr som dere kan lese sammen.",
+      metaDescription: (t) => `${t}: et gratis fargeleggingsark til utskrift for barn (PDF i A4 og US Letter), med et ekte faktum om stell av kjæledyr og kilden til det. Fra PetPrep.`,
+      lead: "Gratis å skrive ut og fargelegge. På arket står et ekte faktum om stell av kjæledyr som dere kan lese sammen.",
       print: "Skriv ut",
       pdfA4: "PDF (A4)",
       pdfLetter: "PDF (US Letter)",
@@ -788,7 +788,7 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
       back: "Alle fargeleggingsark",
     },
     pageTip: {
-      curio: { title: "Bli kjent med Curio", text: "Curio er den nysgjerrige lille kuben fra PetPrep-logoen, som nå har fått liv: store øyne, bringebærrød nese og mintgrønt halsbånd. Fargelegg den i de ekte fargene – eller finn på dine egne." },
+      curio: { title: "Møt Curio", text: "Curio er den nysgjerrige lille kuben fra PetPrep-logoen, som nå har fått liv: store øyne, bringebærrød nese og mintgrønt halsbånd. Fargelegg den i de ekte fargene – eller finn på dine egne." },
       walkyourpet: { title: "#walkyourpet", text: "En hund trenger turen sin hver dag – i PetPrep teller turen bare hvis du virkelig går ut." },
     },
   },
