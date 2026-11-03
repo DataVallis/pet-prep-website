@@ -69,6 +69,8 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - run: npm run lint
       - run: npm test
+      # Route types (PageProps, LayoutProps, RouteContext) without a build — the build job has it.
+      - run: npx next typegen
       - run: npx tsc --noEmit
       - name: Shellcheck deploy scripts
         run: shellcheck deploy/deploy.sh deploy/ci-reuse-image.sh deploy/tests/ci-reuse-image.test.sh
