@@ -444,7 +444,8 @@ export function EmergencyPage({ locale }: { locale: Locale }) {
   const order = countryOrder[locale];
   const list = [...contacts].sort((a, b) => order.indexOf(a.country) - order.indexOf(b.country));
   const allSources = [...new Map(steps.flatMap((s) => s.sources).map((s) => [s.url, s])).values()];
-  const vets = allVets();
+  // Show the visitor's language when the daily vet translation run has it, else the English `duty`.
+  const vets = allVets().map((v) => ({ ...v, duty: v.duty_i18n?.[locale] ?? v.duty, duty_i18n: undefined }));
   const ld = graph(
     {
       "@type": "HowTo",

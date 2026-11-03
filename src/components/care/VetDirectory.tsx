@@ -17,6 +17,8 @@ export type VetEntry = {
   phone: string | null;
   emergency_24h: boolean;
   duty: string | null;
+  /** Translations of `duty` (daily vet translation run, pet-prep VET_TRANSLATION_RUNBOOK.md). */
+  duty_i18n?: Partial<Record<string, string>> | null;
   url: string | null;
   source_url: string;
   checked: string;
