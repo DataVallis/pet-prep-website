@@ -58,7 +58,7 @@ const fi: Dictionary = {
     rights: "Kaikki oikeudet pidätetään.",
     dataEu: "Tiedot säilytetään EU:ssa.",
     languages: "Lisää kieliä tulossa pian.",
-    company: "PetPrepin tarjoaa",
+    company: "PetPrepin takana on",
     cookieSettings: "Evästeasetukset",
     a11yBadge: { title: "Esteetöntä leikkiä", text: "Helpommat eleet · Ruudunlukijat · Vähemmän liikettä" },
   },
@@ -114,7 +114,7 @@ const fi: Dictionary = {
     successText: "Kiitos! Kerromme sinulle sähköpostilla ensimmäisenä, kun PetPrep on valmis.",
     invalid: "Anna kelvollinen sähköpostiosoite.",
     error: "Jokin meni vikaan. Yritä hetken kuluttua uudelleen.",
-    consent: "Tilaamalla hyväksyt, että saat PetPrepiä koskevia sähköposteja. Voit perua tilauksen milloin tahansa.",
+    consent: "Ilmoittautumalla hyväksyt, että saat PetPrepiä koskevia sähköposteja. Voit perua tilauksen milloin tahansa.",
     privacyLink: "Tietosuojaseloste",
   },
   contactCards: [
@@ -183,7 +183,7 @@ const fi: Dictionary = {
       items: [
         { title: "Oikeat lenkit, oikeat askeleet", text: "Päivän lenkki laskee askeleet lapsesi puhelimesta. Eikö tänään lenkkeilty lainkaan? Lemmikki tuntee sen huomenna." },
         { title: "Se kasvaa", text: "Pentu syö neljä kertaa päivässä, sitten kolme ja sitten kaksi – ja saa kasvaessaan uuden kuvan." },
-        { title: "Se käyttäytyy kuin oikea", text: "Pentujen pitää päästä ulos. Tylsistynyt koira pureskelee tossuja. Sotkut tulevat ennen päivällistä." },
+        { title: "Se käyttäytyy kuin oikea lemmikki", text: "Pentujen pitää päästä ulos. Tylsistynyt koira pureskelee tossuja. Sotkut tulevat ennen päivällistä." },
         { title: "Ottaa koulun ja unen huomioon", text: "Hiljaisten tuntien aikana muistutukset tauotetaan. Koulupäivän aikaan osuva ateria on sinun tehtäväsi, ei lapsesi." },
         { title: "Todelliset seuraukset, lempeästi", text: "Laiminlyönti tarkoittaa käyntiä eläinlääkärillä tai joutumista löytöeläinkotiin – ei koskaan pelottavasti, ja aina voi aloittaa alusta." },
         { title: "Ainutlaatuinen", text: "Jokainen lemmikki saa oman turkin, merkit ja silmät – fotorealistisesti eikä koskaan kahta samanlaista." },
@@ -207,7 +207,7 @@ const fi: Dictionary = {
       points: [
         {
           strong: "Rodun todelliset tarpeet",
-          text: "ateriat tiettyinä aikaikkunoina, vesi, siivous ja päivittäinen askeltavoite, joka perustuu lähteistettyyn liikuntatarpeeseen: aikuinen bordercollie tarvitsee 12 000 askelta päivässä, sekarotuinen 6 000.",
+          text: "ateriat tiettyinä aikaikkunoina, vesi, siivous ja päivittäinen askeltavoite, joka perustuu lähteillä perusteltuun liikuntatarpeeseen: aikuinen bordercollie tarvitsee 12 000 askelta päivässä, sekarotuinen 6 000.",
         },
         {
           strong: "Koulutus ja pennun vahingot",
@@ -269,7 +269,7 @@ const fi: Dictionary = {
           items: [
             { title: "Vanhempi luo perheen", text: "Rekisteröidyt sähköpostiosoitteellasi (Apple- ja Google-kirjautuminen ovat tulossa). Lisää jokainen lapsi lempinimellä ja halutessasi syntymävuodella. Muuta emme kysy lapsestasi." },
             { title: "Sinä valitset lemmikin", text: "Valitse rotu (sekarotuinen on maksuton), lemmikin alkuperä – adoptoitu löytöeläinkodista tai ostettu kasvattajalta – ja sen ikä saapumishetkellä: pentu, nuori, aikuinen tai seniori." },
-            { title: "Lapsesi kirjautuu koodilla", text: "Saat 6-numeroisen koodin, joka on voimassa 15 minuuttia. Lapsesi kirjoittaa sen omaan puhelimeensa – ilman sähköpostia ja salasanaa. Hukkuiko puhelin? Kirjaa lapsi ulos kaikilta laitteilta yhdellä napautuksella." },
+            { title: "Lapsesi kirjautuu koodilla", text: "Saat 6-numeroisen koodin, joka on voimassa 15 minuuttia. Lapsesi kirjoittaa sen omaan puhelimeensa – ilman sähköpostia ja salasanaa. Katosiko puhelin? Kirjaa lapsi ulos kaikilta laitteilta yhdellä napautuksella." },
             { title: "Vastuusopimus", text: "Lapsesi allekirjoittaa lupauksen sormella. Allekirjoitus on lemmikin syntymä: tarpeet alkavat laskea vasta siitä hetkestä, joten mitään ei menetetä, vaikka hän allekirjoittaisi myöhemmin." },
             { title: "Kaksitoista viikkoa hoitoa", text: "Ruokinta oikeissa aikaikkunoissa, raikas vesi, siivoaminen ja päivittäinen lenkki oikeilla askelilla. Lemmikin kasvaessa sen tarpeet muuttuvat." },
             { title: "Todistus", text: "12 viikon jälkeen lemmikki täyttää vuoden. Lapsesi saa Vastuutodistuksen ja Care Scoren – tai saatte molemmat turvallisesti tietää, ettei nyt ole oikea aika." },
@@ -427,7 +427,7 @@ const fi: Dictionary = {
     },
     pricing: {
       meta: {
-        title: "Hinnat – PetPrepin voi aloittaa maksutta, 12 viikon haaste 49,99 €",
+        title: "Hinnat – PetPrepin aloitus on maksuton, 12 viikon haaste 49,99 €",
         description:
           "Sekarotuinen lemmikki on aina maksuton. PetPrepin 12 viikon haaste maksaa 49,99 € lemmikkiä kohden kertaostoksena. Yksi hinta lemmikin jakaville sisaruksille.",
       },
@@ -489,7 +489,7 @@ const fi: Dictionary = {
             { q: "Voivatko sisarukset jakaa lemmikin?", a: "Voivat. Jokainen lapsi allekirjoittaa oman sopimuksensa, jokainen teko kirjataan sen tekijälle ja jokainen lapsi saa oman, reilun Care Scorensa." },
             { q: "Entä koulu ja nukkumaanmeno?", a: "Aseta hiljaiset tunnit. Lemmikin tahti hidastuu, mitään ei lähetetä, ja kokonaan hiljaisiin tunteihin osuvat ateriat hoidat sinä." },
             { q: "Onko se lapsille pelottavaa?", a: "Ei. Seuraukset ovat todellisia mutta lempeitä: lemmikki joutuu eläinlääkäriin tai löytöeläinkotiin, mitään järkyttävää ei näytetä, ja aina voi aloittaa alusta." },
-            { q: "Mitä eläimiä on saatavilla?", a: "Nyt [koirat](species:dog) ja [kissat](species:cat): maksuton sekarotuinen koira ja kotikissa sekä 12 viikon haasteessa jokainen [eläinhakemiston](page:animals) rotu – hakemistossa on myös niiden lähteistetyt tarpeet. Lisää lajeja on suunnitteilla." },
+            { q: "Mitä eläimiä on saatavilla?", a: "Nyt [koirat](species:dog) ja [kissat](species:cat): maksuton sekarotuinen koira ja kotikissa sekä 12 viikon haasteessa jokainen [eläinhakemiston](page:animals) rotu – hakemistossa on myös niiden tarpeet lähteineen. Lisää lajeja on suunnitteilla." },
             { q: "Millä kielillä?", a: "Nyt englanniksi ja sloveniaksi. Lisää kieliä tulee, kun PetPrep julkaistaan uusissa maissa." },
             { q: "Mitä tapahtuu, kun saamme oikean lemmikin?", a: "PetPrepistä voi tulla tekoälyavustaja oikealle lemmikillesi. Tämä osa on kehitteillä." },
           ],
@@ -525,7 +525,7 @@ const fi: Dictionary = {
           type: "list",
           heading: "Miksi kumppanit luottavat meihin",
           items: [
-            "Lapset kirjautuvat ilman sähköpostia, ja keräämme heistä mahdollisimman vähän tietoja, ja ne säilytetään EU:n palvelimilla.",
+            "Lapset kirjautuvat ilman sähköpostia, keräämme heistä mahdollisimman vähän tietoja ja säilytämme ne EU:n palvelimilla.",
             "Lapsen näytölle pääsee vain tarkistettua sisältöä; mainoksia ei ole.",
             "Jokainen kumppanitarjous on merkitty, ja jokainen palkkio kerrotaan perheelle.",
           ],
@@ -636,11 +636,11 @@ const fi: Dictionary = {
             {
               heading: "3. Terveys- ja kuntoilutiedot (askeleet, Apple Terveys ja Health Connect)",
               paragraphs: [
-                "PetPrep käyttää ja kerää yhdenlaisia terveys- ja kuntoilutietoja: kuinka monta askelta hoitaja kävelee päivässä (liikunta). Käytämme niitä vain yhteen toimintoon – lemmikin päivittäiseen lenkkiin simulaatiossa: lapsi kävelee, ja hänen askeleensa lasketaan lemmikin lenkiksi.",
+                "PetPrep kerää ja käyttää vain yhdenlaisia terveys- ja kuntoilutietoja: kuinka monta askelta hoitaja kävelee päivässä (liikunta). Käytämme niitä vain yhteen toimintoon – lemmikin päivittäiseen lenkkiin simulaatiossa: lapsi kävelee, ja hänen askeleensa lasketaan lemmikin lenkiksi.",
                 "Miten saamme tiedot: lapsen puhelimen sovellus laskee askeleet. Jos sallit sen järjestelmän lupaikkunassa, sovellus lukee ne Apple Terveydestä (iPhone) tai Health Connectista (Android) – vain lukuoikeudella ja vain askeleet. Jos puhelimen liikeanturi on käytettävissä, sovellus käyttää myös sitä (Android: ”Fyysinen aktiivisuus” -lupa; iPhone: ”Liike ja kunto”); ilman Apple Terveyden tai Health Connectin lupaa askeleet laskee vain liikeanturi.",
                 "Mitä keräämme: sovellus lähettää palvelimellemme vain kuluvan päivän askelmäärän, sen lähteen (Apple Terveys, Health Connect tai liikeanturi) ja lähetysajan. Tallennamme yhden päiväsumman hoitajaprofiilia kohden – emme koskaan yksittäisiä liikkeitä, reittejä, sijaintia, sykettä, unta, painoa tai muita terveystietoja. Emme koskaan kirjoita mitään Apple Terveyteen tai Health Connectiin.",
                 "Miten käytämme ja jaamme tietoja: askelmääriä käytetään vain lenkin toteuttamiseen simulaatiossa ja sen näyttämiseen vanhemmalle (vanhemman näkymä ja raportit). Emme käytä niitä mainontaan, profilointiin, terveysarviointeihin tai tekoälymallien kouluttamiseen, emme myy niitä emmekä jaa niitä kolmansille osapuolille; vain palvelintarjoajamme (Hetzner, palvelimet EU:ssa) säilyttää niitä puolestamme. Health Connectista saatujen tietojen käyttömme noudattaa Health Connectin lupakäytäntöä, mukaan lukien sen rajoitettua käyttöä koskevat vaatimukset (Limited Use).",
-                "Oikeusperuste ja säilytys: askelten lukeminen on vapaaehtoista ja tapahtuu vain laitteella antamallasi luvalla; käsittelemme päiväsummaa tarjotaksemme valitsemasi palvelun (sopimuksen täytäntöönpano). Askelmäärät sisältyvät perheesi tietojen vientiin, ja ne poistetaan hoitajaprofiilin tai tilisi mukana; salatuista varmuuskopioistamme ne poistuvat viimeistään 35 päivässä.",
+                "Oikeusperuste ja säilytys: askelten lukeminen on vapaaehtoista ja tapahtuu vain laitteella antamallasi luvalla; käsittelemme päiväsummaa tarjotaksemme valitsemasi palvelun (sopimuksen täytäntöönpano). Askelmäärät sisältyvät perheesi tietojen vientiin, ja ne poistetaan hoitajaprofiilin tai tilisi mukana; salatuista varmuuskopioistamme ne poistuvat viimeistään 35 päivän kuluessa.",
                 "Voit perua luvan milloin tahansa laitteesi asetuksista: iPhone → Asetukset → Terveys → Datan käyttö ja laitteet → PetPrep; Android → Health Connect → Sovellusten luvat → PetPrep. Liikeanturin luvan voi perua puhelimen asetuksista PetPrep-sovelluksen kohdalta. Sen jälkeen lenkki ei laske uusia askelia.",
               ],
             },
@@ -652,7 +652,7 @@ const fi: Dictionary = {
                 "Kun tila on käytössä, lapsen puhelimen sovellus lukee askelten sijaan vain pyörätuolin työnnöt – Apple Terveydestä (Apple Watchin tallentamina) erillisellä lukuluvalla. Androidilla sovellus ei lue työntöjä; sen sijaan vanhempi kirjaa lenkkiminuutit. Liikeanturia ei silloin käytetä. Palvelimellemme lähetetään vain kuluvan päivän työntöjen määrä; merkitsemme kyseiselle päivälle, että se lasketaan työntöinä.",
                 "Vanhempi voi kirjata mukautetussa tilassa olevalle lapselle lenkkiminuutteja (vain kuluvalle päivälle). Tallennamme päivämäärän, minuuttimäärän ja sen, kuka vanhempi lenkin kirjasi.",
                 "Koska tieto mukautetun tilan käytöstä voi viitata lapsen terveydentilaan, käsittelemme sitä vain nimenomaisen suostumuksesi perusteella (tietosuoja-asetuksen 9 artiklan 2 kohdan a alakohta), jonka annat vanhempana tai huoltajana lapsen puolesta (tietosuoja-asetuksen 8 artikla) kääntämällä kytkimen päälle. Voit poistaa tilan käytöstä milloin tahansa; sovellus laskee sen jälkeen taas askeleita.",
-                "Nämä tiedot (kytkin, työntöinä lasketut päivät ja kirjatut lenkit) sisältyvät perheesi tietojen vientiin, ja ne poistetaan lapsen profiilin tai tilisi mukana; salatuista varmuuskopioistamme ne poistuvat viimeistään 35 päivässä, kuten kaikki muutkin tiedot.",
+                "Nämä tiedot (kytkin, työntöinä lasketut päivät ja kirjatut lenkit) sisältyvät perheesi tietojen vientiin, ja ne poistetaan lapsen profiilin tai tilisi mukana; salatuista varmuuskopioistamme ne poistuvat viimeistään 35 päivän kuluessa, kuten kaikki muutkin tiedot.",
               ],
             },
             {
@@ -695,7 +695,7 @@ const fi: Dictionary = {
             {
               heading: "9. Palveluntarjoajat",
               items: [
-                "Palvelintila: Hetzner Online (palvelimet EU:ssa).",
+                "Palvelinpalvelu: Hetzner Online (palvelimet EU:ssa).",
                 "Tekoälykuvien ja -videoiden luonti: fal.ai (saa vain lemmikin kuvauksen).",
                 "Push-ilmoitukset: Apple Push Notification service ja Firebase Cloud Messaging Expon kautta; ilmoituksissa ei ole nimiä.",
                 "Ostot: Apple App Store ja Google Play; ostojen hallinta RevenueCatin kautta, kun ostot otetaan käyttöön.",
@@ -707,7 +707,7 @@ const fi: Dictionary = {
             {
               heading: "10. Kuinka kauan säilytämme tietoja",
               paragraphs: [
-                "Säilytämme tietojasi niin kauan kuin tilisi on olemassa. Kun poistat lapsen profiilin tai tilisi sovelluksessa, tiedot poistetaan välittömästi, eikä niitä voi palauttaa; salatuista varmuuskopioistamme ne poistuvat automaattisesti viimeistään 35 päivässä. Tietoja, jotka meidän on lain mukaan säilytettävä (esimerkiksi ostoihin liittyvät), säilytetään lain edellyttämän ajan. Sovelluksen virheraportit poistetaan automaattisesti 30 päivän kuluttua.",
+                "Säilytämme tietojasi niin kauan kuin tilisi on olemassa. Kun poistat lapsen profiilin tai tilisi sovelluksessa, tiedot poistetaan välittömästi, eikä niitä voi palauttaa; salatuista varmuuskopioistamme ne poistuvat automaattisesti viimeistään 35 päivän kuluessa. Tietoja, jotka meidän on lain mukaan säilytettävä (esimerkiksi ostoihin liittyvät), säilytetään lain edellyttämän ajan. Sovelluksen virheraportit poistetaan automaattisesti 30 päivän kuluttua.",
               ],
             },
             {
@@ -757,7 +757,7 @@ const fi: Dictionary = {
             {
               heading: "1. Palvelu",
               paragraphs: [
-                "PetPrepin tarjoaa {company}, {address}; {companyIds} – sama yritys, joka on tietosuojaselosteen mukainen rekisterinpitäjä. Nämä ehdot koskevat PetPrep-sovellusta ja petprep.si-verkkosivustoa.",
+                "PetPrepiä tarjoaa {company}, {address}; {companyIds} – sama yritys, joka on tietosuojaselosteen mukainen rekisterinpitäjä. Nämä ehdot koskevat PetPrep-sovellusta ja petprep.si-verkkosivustoa.",
                 "PetPrep on lemmikinhoitosimulaatio. Se auttaa perheitä ja yksittäisiä ihmisiä selvittämään, ovatko he valmiita hoitamaan oikeaa lemmikkiä – lapsia sekä aikuisia, jotka haluavat testata ennen ostoa tai adoptiota, sopiiko rotu heille. Se on opetuksellinen työkalu, ei eläinlääkärin tai muun asiantuntijan neuvontaa.",
               ],
             },
@@ -776,7 +776,7 @@ const fi: Dictionary = {
               heading: "3. 12 viikon haaste, Care Score ja todistus",
               items: [
                 "Haaste kestää 12 viikkoa (84 ohjelmapäivää) ja alkaa ostohetkestä; jokaisella hoitajalla on oma päättymispäivänsä. Aikaa, jonka peli odottaa maksua, ei lasketa 12 viikkoon.",
-                "Care Score (0–100) näyttää, kuinka suuren osan odotetuista rutiineista (ruokinta, vesi, siivous, lenkki, koulutushetki) hoitaja teki itse; jokainen lemmikin sairastuminen laskee sitä. Aikaa, jonka peli on pysäytetty tai lemmikki on eläinlääkärissä, eikä hiljaisia tunteja koskaan lueta hoitajan tappioksi.",
+                "Care Score (0–100) näyttää, kuinka suuren osan odotetuista rutiineista (ruokinta, vesi, siivous, lenkki, koulutushetki) hoitaja teki itse; jokainen lemmikin sairastuminen laskee sitä. Aikaa, jonka peli on pysäytettynä tai lemmikki eläinlääkärissä, ja hiljaisia tunteja ei lueta koskaan hoitajan tappioksi.",
                 "12 viikon jälkeen lopullinen tulos kirjataan, eikä se muutu myöhemmin; haasteen jälkeinen hoito ei vaikuta siihen. Jos tulos on vähintään 70, voit luoda sovelluksessa Vastuutodistuksen (PDF); alle 70 pisteellä saat haasteraportin.",
                 "Jos ruoka, vesi tai siisteys pysyy 0 %:ssa 24 tuntia, lemmikki ”viedään löytöeläinkotiin” (peli päättyy). Peli kyseisen lemmikin kanssa loppuu, todistusta ei tule, ja saat haasteraportin.",
                 "Care Score ja todistus kertovat vain, miten hoitaja huolehti simuloidusta lemmikistä sovelluksessa. Ne eivät takaa, että lapsi tai kukaan muu on valmis oikeaan lemmikkiin, eivät ole asiantuntija-arvio eivätkä korvaa omaa harkintaasi tai eläinlääkärin, kasvattajan tai löytöeläinkodin neuvoja. Päätös oikeasta lemmikistä on aina sinun.",
@@ -960,7 +960,7 @@ const fi: Dictionary = {
             { title: "Kirjaudu sisään vanhempana", text: "Avaa PetPrep, napauta ”I’m a parent” (”Olen vanhempi”) ja kirjaudu sisään." },
             { title: "Avaa tilisi", text: "Siirry kohtaan Controls → Account (Hallinta → Tili). Halutessasi napauta ensin ”Export my data” (”Vie tietoni”), niin saat itsellesi kopion." },
             { title: "Poista", text: "Napauta ”Delete account” (”Poista tili”), vahvista salasanallasi (tai Google- tai Apple-kirjautumisellasi) ja kirjoita DELETE. Napauta sitten ”Delete for good” (”Poista pysyvästi”)." },
-            { title: "Valmista", text: "Poistaminen tapahtuu heti, eikä sitä voi perua. Kaikki sinun ja lastesi laitteet kirjataan ulos." },
+            { title: "Valmis", text: "Poistaminen tapahtuu heti, eikä sitä voi perua. Kaikki sinun ja lastesi laitteet kirjataan ulos." },
           ],
         },
         {
@@ -1018,7 +1018,7 @@ const fi: Dictionary = {
           id: "company",
           heading: "Yritys",
           paragraphs: [
-            "PetPrepin tarjoaa Data Vallis David Tacer s.p., ohjelmistokehitysyritys (toiminimi), jonka kotipaikka on Dravograd Sloveniassa. Sama yritys ylläpitää tätä verkkosivustoa ja PetPrep-sovellusta ja on henkilötietojen rekisterinpitäjä (ks. [tietosuojaseloste](page:privacy)).",
+            "PetPrepiä tarjoaa Data Vallis David Tacer s.p., ohjelmistokehitysyritys (toiminimi), jonka kotipaikka on Dravograd Sloveniassa. Sama yritys ylläpitää tätä verkkosivustoa ja PetPrep-sovellusta ja on henkilötietojen rekisterinpitäjä (ks. [tietosuojaseloste](page:privacy)).",
           ],
         },
         { type: "company" },
@@ -1046,7 +1046,7 @@ const fi: Dictionary = {
           intro: "[Eläinhakemisto](page:animals) ja sovellus käyttävät samoja tietoja. Nämä säännöt ratkaisevat, mitä se saa sanoa:",
           items: [
             "Jokainen tieto mainitsee lähteensä ja linkittää siihen. Lähteet luokitellaan sen mukaan, kuinka paljon painoa ne ansaitsevat: A – rotumääritelmät, vertaisarvioidut tutkimukset ja eläinlääkäriyhdistysten ohjeet; B – eläinsairaaloiden, yliopistojen ja kansallisten eläinsuojelujärjestöjen neuvontasivut; C – toissijaiset yhteenvedot (tietosanakirjat, lehtiartikkelit), joita käytetään vain yhdessä A- tai B-lähteen kanssa.",
-            "Tosiasioina näytetään vain lähteistettyjä tietoja. Arvoa, jota mikään lähde ei tue, ei julkaista. Kun lähteet ovat eri mieltä, kukin näytetään omalla arvollaan.",
+            "Faktoina näytetään vain lähteillä tuettuja tietoja. Arvoa, jota mikään lähde ei tue, ei julkaista. Kun lähteet ovat eri mieltä, kukin näytetään omalla arvollaan.",
             "Pelin säännöt eivät ole eläinlääkärin neuvoja. Kun peli tarvitsee luvun, jota lähteet eivät anna tarkasti (esimerkiksi päivittäinen askeltavoite), PetPrep päättää sen lähteiden pohjalta ja näyttää sen vain kohdassa ”Näin PetPrep simuloi sitä” pelisäännöksi merkittynä.",
             "Terveystiedot ovat vain tiedoksi. Ne tiivistävät, mitä lähteet sanovat rodusta, eikä eläinlääkäri ole tarkistanut niitä. Kysy oikeasta eläimestä eläinlääkäriltä.",
             "Rotumääritelmät tiivistetään omin sanoin, niitä ei koskaan kopioida laajasti, eikä mitään rotua koskaan kutsuta ”allergiaystävälliseksi”.",
@@ -1125,7 +1125,7 @@ const fi: Dictionary = {
             { src: "/curio/curio-profile-mint.webp", alt: "Curio vilkuttaa mintunvihreällä taustalla.", caption: "Hei! Klassinen vilkutus.", bg: "mint" },
             { src: "/curio/curio-shelf.webp", alt: "Curio seisoo valkoisella hyllyllä ja vilkuttaa.", caption: "Hyllyllä odottamassa jotakuta." },
             { src: "/curio/curio-character-sheet.webp", alt: "Curio edestä, sivulta ja takaa sekä neljä silmien ilmettä.", caption: "Joka puolelta – ja miten sen silmät näyttävät tunteet." },
-            { src: "/curio/curio-waving.webp", alt: "Curio läpinäkyvällä taustalla.", caption: "Rajattu – valmiina julkaisuusi (ks. mediapaketti).", bg: "graphite" },
+            { src: "/curio/curio-waving.webp", alt: "Curio läpinäkyvällä taustalla.", caption: "Rajattu ja valmis käytettäväksi (ks. mediapaketti).", bg: "graphite" },
           ],
         },
         {
@@ -1173,27 +1173,27 @@ const fi: Dictionary = {
       eyebrow: "Hoitotietoa",
       title: "Mikä on turvallista lemmikillesi?",
       lead:
-        "Selkeitä, lähteistettyjä vastauksia perheille: mitkä ruoat ovat myrkyllisiä, mitkä riskialttiita ja mitkä sopivat herkuksi – koirille ja kissoille, ja lisää lajeja on tulossa. Jokaisessa vastauksessa on linkit lähteisiin.",
+        "Selkeitä, lähteillä tuettuja vastauksia perheille: mitkä ruoat ovat myrkyllisiä, mitkä riskialttiita ja mitkä sopivat herkuksi – koirille ja kissoille, ja lisää lajeja on tulossa. Jokaisessa vastauksessa on linkit lähteisiin.",
       blocks: [{ type: "careHub" }],
     },
     coloring: {
       meta: {
         title: "Ilmaiset tulostettavat koira- ja kissavärityskuvat lapsille | PetPrep",
         description:
-          "Ilmaisia värityskuvia tulostettavaksi: kultainennoutaja, labradorinnoutaja, bordercollie, sekarotuinen koiranpentu, kissanpentu ja Curio. PDF-tiedostot A4- ja US Letter -koossa, jokaisessa oikea lemmikinhoitotieto lähteineen.",
+          "Ilmaisia värityskuvia tulostettavaksi: kultainennoutaja, labradorinnoutaja, bordercollie, sekarotuinen koiranpentu, kissanpentu ja Curio. PDF-tiedostot A4- ja US Letter -koossa, jokaisessa oikea tieto lemmikin hoidosta lähteineen.",
       },
       navLabel: "Värityskuvat",
       eyebrow: "Värityskuvat",
       title: "Ilmaisia värityskuvia tulostettavaksi.",
       lead:
-        "Koiria, kissoja ja Curio väritettäväksi tai piirrettäväksi mallista – tulosta yksi sivu tai koko kirja. Jokaisella sivulla on eläinlääkäri- tai kennelliittolähteestä peräisin oleva oikea lemmikinhoitotieto, jonka voitte lukea yhdessä.",
+        "Koiria, kissoja ja Curio väritettäväksi tai piirrettäväksi mallista – tulosta yksi sivu tai koko kirja. Jokaisella sivulla on eläinlääkäri- tai kennelliittolähteestä peräisin oleva oikea tieto lemmikin hoidosta, jonka voitte lukea yhdessä.",
       blocks: [{ type: "coloringHub" }],
     },
     kids: {
       meta: {
         title: "Lapsille, jotka haluavat lemmikin – värityskuvat, Curio ja #walkyourpet | PetPrep",
         description:
-          "Kaikki, mitä PetPrepillä on lapsille: ilmaiset tulostettavat värityskuvat oikeine lemmikinhoitotietoineen, maskotti Curio ja #walkyourpet – lapsille ja vanhemmille, jotka valmistautuvat lemmikkiin yhdessä.",
+          "Kaikki, mitä PetPrepillä on lapsille: ilmaiset tulostettavat värityskuvat oikeine hoitotietoineen, maskotti Curio ja #walkyourpet – lapsille ja vanhemmille, jotka valmistautuvat lemmikkiin yhdessä.",
       },
       navLabel: "Lapsille",
       eyebrow: "Lapsille",
@@ -1252,7 +1252,7 @@ const fi: Dictionary = {
             "Ei lasten kasvoja, nimiä, kouluja tai osoitteita – eikä koskaan toisen perheen lasta.",
             "Jaamme julkaisuja uudelleen vain vanhemman luvalla, ja poistamme julkaisun aina, kun pyydät.",
             "Lasten lainaukset ovat aina aitoja. Emme koskaan keksi tai ”paranna” sitä, mitä lapsi sanoi.",
-            "Se on kutsu, ei velvollisuus. Ei putkia ylläpidettäväksi, ei painetta – vain hyvä syy lähteä ulos.",
+            "Se on kutsu, ei velvollisuus. Ei päiväputkia ylläpidettäväksi, ei painetta – vain hyvä syy lähteä ulos.",
           ],
         },
         {

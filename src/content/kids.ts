@@ -134,7 +134,7 @@ export const kidsCopy: Record<Locale, KidsCopy> = {
     menu: "Lapsille",
     all: "Kaikki lapsille",
     items: [
-      { page: "coloring", title: "Värityskuvat", text: "12 ilmaista tulostettavaa kuvaa – jokaisessa tositieto lemmikin hoidosta.", image: coloringThumb },
+      { page: "coloring", title: "Värityskuvat", text: "12 ilmaista tulostettavaa värityskuvaa, ja jokaisessa on tietoa lemmikin hoidosta.", image: coloringThumb },
       { page: "curio", title: "Tutustu Curioon", text: "Maskottimme ja sen lyhyet videot.", image: curioThumb },
       { page: "walkyourpet", title: "#walkyourpet", text: "Liike, jonka lapsi aloitti: lähde ulos lenkille.", image: null },
     ],

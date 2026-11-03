@@ -5,7 +5,7 @@ import type { RegistryCopy } from "./types";
  * only exactly 1 takes the nominative singular ("1 rotu", "1 tunti").
  */
 const s = (n: number, one: string, other: string) => (n === 1 ? one : other);
-/** Non-breaking space between a number and its unit ("5 kg", "15 %"). */
+/** Non-breaking space between a number and its unit ("5 kg", "15 %"). */
 const NB = " ";
 /** Lower case for values that continue a phrase ("Koirat" → "koirat", "Yli 2 tuntia" → "yli 2 tuntia"). */
 const lc = (t: string) => t.toLocaleLowerCase("fi");
@@ -107,7 +107,7 @@ const fi: RegistryCopy = {
     methodTitle: "Näin kokoamme hakemiston",
     method: [
       "Jokainen tieto on peräisin nimetystä lähteestä – kennelliitoilta, kissajärjestöiltä, eläinten hyvinvointijärjestöiltä, eläinlääkäriyhdistyksiltä ja vertaisarvioiduista tutkimuksista – ja siihen on linkki. Rotumääritelmät kerromme omin sanoin.",
-      "Arvoja, joita mikään lähde ei tue, ei koskaan näytetä tosiasioina. Kun PetPrepin on valittava luku peliä varten, se näkyy vain kohdassa ”Näin PetPrep sitä simuloi” ja on merkitty pelisäännöksi.",
+      "Arvoja, joita mikään lähde ei tue, ei koskaan näytetä faktoina. Kun PetPrepin on valittava luku peliä varten, se näkyy vain kohdassa ”Näin PetPrep sitä simuloi” ja on merkitty pelisäännöksi.",
       "Samat tiedot ohjaavat sovellusta: näiden sivujen tunnisteet, aterioiden määrät, askeltavoitteet ja leikkihetket ovat juuri ne, joita sovelluksen lemmikki käyttää.",
       "Tämä hakemisto ei ole eläinlääkärin neuvontaa. Terveystiedot ovat vain suuntaa antavia, eikä eläinlääkäri ole tarkistanut niitä.",
     ],
@@ -789,7 +789,7 @@ const fi: RegistryCopy = {
     anatolian_shepherd_dog: {
       aka: "Kangal, Anatolian Shepherd Dog, Karabash",
       text: [
-        "Anatolianpaimenkoira on suuri ja voimakasrakenteinen karjanvartija Turkista; FCI kuvaa turkkilaisen paimenkoiran kangalina (Kangal Shepherd Dog) – yksivärisenä kellanruskeasta sudenharmaaseen ja mustalla maskilla, urokset 72–78 cm ja nartut 65–73 cm korkeita. Amerikkalainen rotumääritelmä antaa uroksille 110–150 paunaa (noin 50–68 kg) ja nartuille 80–120 paunaa (noin 36–54 kg). Tämän kokoinen koira on täysikasvuinen noin 18–24 kuukauden iässä (PetMD); The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta ja WebMD keskimäärin 11–13 vuotta.",
+        "Anatolianpaimenkoira on suuri ja voimakasrakenteinen karjanvartija Turkista; FCI kuvaa turkkilaisen paimenkoiran kangalina (Kangal Shepherd Dog) – yksivärisenä kellanruskeasta sudenharmaaseen ja mustalla maskilla, urokset 72–78 cm ja nartut 65–73 cm korkeita. Amerikkalainen rotumääritelmä antaa uroksille 110–150 paunaa (noin 50–68 kg) ja nartuille 80–120 paunaa (noin 36–54 kg). Tämän kokoinen koira on täysikasvuinen noin 18–24 kuukauden iässä (PetMD); The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta ja WebMD keskimäärin 11–13 vuotta.",
         "The Royal Kennel Club suosittelee yli 2 tuntia liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa, kertoo rodun karvaavan ja sopivan suureen taloon, jossa on iso piha maaseudulla, ja luokittelee sen Breed Watch -luokkaan 1. PetMD kirjoittaa, että anatolianpaimenkoira sopii todennäköisesti parhaiten kotiin, jossa ei ole pieniä lapsia, että varhain muihin eläimiin tutustuneet pennut tulevat yleensä toimeen niiden kanssa, että varhainen sosiaalistaminen on tärkeää, että turkki harjataan kahden vuosittaisen karvanvaihdon ulkopuolella kerran viikossa ja että liikuntaa ruokailun aikoihin tulee välttää.",
       ],
       sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
@@ -797,7 +797,7 @@ const fi: RegistryCopy = {
     irish_setter: {
       aka: "Irish Setter, punainen setteri",
       text: [
-        "Irlanninsetteri (Irish Red Setter) on hoikka, urheilullinen kanakoira Irlannista, jalostettu etsimään riistaa laajalta alueelta. FCI:n rotumääritelmä kuvaa vain yhden värin — syvän kastanjanpunaisen ilman mustaa — ja säkäkorkeudeksi uroksilla 58–67 cm ja nartuilla 55–62 cm; amerikkalainen rotumääritelmä pitää ihanteena noin 70 paunaa (noin 32 kg) urokselle ja 60 paunaa (noin 27 kg) nartulle. Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD), ja The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta.",
+        "Irlanninsetteri (Irish Red Setter) on hoikka, urheilullinen kanakoira Irlannista, jalostettu etsimään riistaa laajalta alueelta. FCI:n rotumääritelmä kuvaa vain yhden värin – syvän kastanjanpunaisen ilman mustaa – ja säkäkorkeudeksi uroksilla 58–67 cm ja nartuilla 55–62 cm; amerikkalainen rotumääritelmä pitää ihanteena noin 70 paunaa (noin 32 kg) urokselle ja 60 paunaa (noin 27 kg) nartulle. Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD), ja The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta.",
         "The Royal Kennel Club suosittelee yli 2 tuntia liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa, kertoo rodun karvaavan ja sopivan isoon taloon, jossa on iso piha, ja sijoittaa sen Breed Watch -luokkaan 1. PDSA kuvaa erittäin ystävällisiä, kiintyviä koiria, jotka tulevat hyvin toimeen lasten ja muiden lemmikkien kanssa, ja neuvoo hoitamaan turkkia 2–3 kertaa viikossa; PetMD suosittelee korvien tarkistamista ja puhdistamista viikoittain ja kirjoittaa, että irlanninsetterit tarvitsevat paljon ihmisten seuraa.",
       ],
       sources: ["S675", "S676", "S678", "S680", "S10"],
@@ -805,7 +805,7 @@ const fi: RegistryCopy = {
     brussels_griffon: {
       aka: "Griffon Bruxellois, Brussels Griffon",
       text: [
-        "Brysselingriffoni (Griffon Bruxellois) on Belgiasta kotoisin oleva pieni seurakoira, jolla on lyhyet, litteät kasvot. FCI:n rotumääritelmä kuvaa punaisen, luonnostaan karkean, hieman laineikkaan turkin ja 3,5–6 kg:n painon; brittiläinen Royal Kennel Club, jolla on karkeakarvainen ja sileäkarvainen muunnos, kuvaa sitä fiksuksi pieneksi koiraksi, jolla on terrierimäinen luonne. Tämän kokoinen koira on täysikasvuinen noin 8–12 kuukauden iässä (PetMD), ja Royal Kennel Club ilmoittaa eliniäksi yli 12 vuotta (PetMD: 12–15 vuotta).",
+        "Brysselingriffoni (Griffon Bruxellois) on Belgiasta kotoisin oleva pieni seurakoira, jolla on lyhyet, litteät kasvot. FCI:n rotumääritelmä kuvaa punaisen, luonnostaan karkean, hieman laineikkaan turkin ja 3,5–6 kg:n painon; brittiläinen Royal Kennel Club, jolla on karkeakarvainen ja sileäkarvainen muunnos, kuvaa sitä fiksuksi pieneksi koiraksi, jolla on terrierimäinen luonne. Tämän kokoinen koira on täysikasvuinen noin 8–12 kuukauden iässä (PetMD), ja Royal Kennel Club ilmoittaa eliniäksi yli 12 vuotta (PetMD: 12–15 vuotta).",
         "The Royal Kennel Club suosittelee liikuntaa enintään 30 minuuttia päivässä ja turkinhoitoa useammin kuin kerran viikossa, kertoo, että rodusta lähtee karvaa ja että se sopii kerrostaloasuntoon, ja sijoittaa rodun Breed Watchin luokkaan 2. PetMD kuvaa lyhytkuonoisen (brakykefaalisen) koiran, joka sietää huonosti kuumaa ja kosteaa säätä, neuvoo puhdistamaan kasvojen ihopoimut noin kerran viikossa ja harjaamaan hampaat päivittäin ja kertoo, että brysselingriffonit tulevat valvottuina hyvin toimeen lasten ja muiden lemmikkien kanssa mutta eivät viihdy pitkään yksin.",
       ],
       sources: ["S669", "S670", "S672", "S10"],
@@ -813,7 +813,7 @@ const fi: RegistryCopy = {
     rat_terrier: {
       aka: "Rat Terrier, Rattie, amerikkalainen rottaterrieri",
       text: [
-        "Rottaterrieri on pieni amerikkalainen terrieri, jota kasvatetaan kahtena kokona – miniatyyri- ja standardikokoisena. Sillä on lyhyt, tiivis, sileä ja kiiltävä turkki. Rotumääritelmä sallii enintään 18 tuuman (46 cm) säkäkorkeuden, ja PetMD ilmoittaa molempien kokojen painoksi 10–25 paunaa (noin 4,5–11 kg); tämänkokoinen koira on täysikasvuinen noin 9–12 kuukauden iässä (PetMD). VCA ilmoittaa eliniäksi 12–16 vuotta, PetMD 12–18 vuotta.",
+        "Rottaterrieri on pieni amerikkalainen terrieri, jota kasvatetaan kahtena kokona – miniatyyri- ja standardikokoisena. Sillä on lyhyt, tiivis, sileä ja kiiltävä turkki. Rotumääritelmä sallii enintään 18 tuuman (46 cm) säkäkorkeuden, ja PetMD ilmoittaa molempien kokojen painoksi 10–25 paunaa (noin 4,5–11 kg); tämänkokoinen koira on täysikasvuinen noin 9–12 kuukauden iässä (PetMD). VCA ilmoittaa eliniäksi 12–16 vuotta, PetMD 12–18 vuotta.",
         "Rat Terrier Club of America kertoo, että rottaterrierit tulevat hyvin toimeen lasten kanssa, varsinkin jos ne kasvavat yhdessä, ja pärjäävät kerrostalossa, mutta tarvitsevat vähintään 30 minuuttia liikuntaa päivässä. PetMD:n mukaan ne tarvitsevat paljon fyysistä ja henkistä virikettä, eivät viihdy pitkään yksin ja karvaavat hieman ympäri vuoden; VCA suosittelee harjausta kerran viikossa ja varoittaa, että ne eivät välttämättä tule toimeen pienten lemmikkien, etenkään jyrsijöiden, kanssa.",
       ],
       sources: ["S650", "S648", "S10", "S647"],
@@ -821,7 +821,7 @@ const fi: RegistryCopy = {
     greater_swiss_mountain_dog: {
       aka: "Grosser Schweizer Sennenhund, Greater Swiss Mountain Dog, Swissy",
       text: [
-        "Isosveitsinpaimenkoira (FCI:llä ja Isossa-Britanniassa ”Great Swiss Mountain Dog”) on vankka, vahvaluinen ja hyvin lihaksikas kolmivärinen vetokoira Sveitsistä: musta, jossa on symmetriset ruskeat ja valkoiset merkit. FCI:n rotumääritelmä ilmoittaa säkäkorkeudeksi 65–72 cm uroksille ja 60–68 cm nartuille mutta ei painoa; WebMD ilmoittaa 52–64 kg uroksille ja 39–50 kg nartuille. Tämänkokoinen koira on täysikasvuinen noin 18–24 kuukauden iässä (PetMD), ja Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta (PetMD: 8–11 vuotta).",
+        "Isosveitsinpaimenkoira (FCI:llä ja Isossa-Britanniassa ”Great Swiss Mountain Dog”) on vankka, vahvaluinen ja hyvin lihaksikas kolmivärinen vetokoira Sveitsistä: musta, jossa on symmetriset ruskeat ja valkoiset merkit. FCI:n rotumääritelmä ilmoittaa säkäkorkeudeksi 65–72 cm uroksille ja 60–68 cm nartuille mutta ei painoa; WebMD ilmoittaa 52–64 kg uroksille ja 39–50 kg nartuille. Tämänkokoinen koira on täysikasvuinen noin 18–24 kuukauden iässä (PetMD), ja Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta (PetMD: 8–11 vuotta).",
         "Royal Kennel Club suosittelee enintään tunnin liikuntaa päivässä ja harjausta kerran viikossa ja kertoo, että rotu karvaa ja sopii isoon taloon, jossa on iso piha. PetMD kuvaa rotua erinomaiseksi perhekoiraksi, joka on lempeä lapsia kohtaan (kaikkea yhdessäoloa tulee valvoa), neuvoo puhdistamaan korvat viikoittain ja välttämään liikuntaa juuri ennen ruokailua tai sen jälkeen mahalaukun kiertymän (GDV) vaaran vuoksi; WebMD neuvoo harjaamaan hampaat päivittäin ja antamaan vähän herkkuja, koska rotu lihoo helposti.",
       ],
       sources: ["S653", "S654", "S656", "S658", "S10"],
@@ -829,7 +829,7 @@ const fi: RegistryCopy = {
     shar_pei: {
       aka: "kiinalainen shar pei, Chinese Shar-Pei, Sharpei",
       text: [
-        "Shar pei (Yhdysvalloissa ”Chinese Shar-Pei”) on aktiivinen, tiivis, neliömäinen keskikokoinen koira Kiinasta. Sillä on lyhyt, karhea ja harjasmainen yksivärinen turkki (mikä tahansa väri paitsi valkoinen), poimuja päässä ja säkässä sekä leveä kuono. Royal Kennel Clubin rotumääritelmä ilmoittaa säkäkorkeudeksi 46–51 cm ja PDSA painoksi 20–27 kg; tämänkokoinen koira on täysikasvuinen noin 12–15 kuukauden iässä (PetMD). Royal Kennel Club ja PDSA ilmoittavat eliniäksi yli 10 vuotta, mutta Isossa-Britanniassa tehty VetCompass-tutkimus totesi mediaaniksi 7,3 vuotta.",
+        "Shar pei (Yhdysvalloissa ”Chinese Shar-Pei”) on aktiivinen, tiivis, neliömäinen keskikokoinen koira Kiinasta. Sillä on lyhyt, karhea ja harjasmainen yksivärinen turkki (mikä tahansa väri paitsi valkoinen), poimuja päässä ja säkässä sekä leveä kuono. Royal Kennel Clubin rotumääritelmä ilmoittaa säkäkorkeudeksi 46–51 cm ja PDSA painoksi 20–27 kg; tämänkokoinen koira on täysikasvuinen noin 12–15 kuukauden iässä (PetMD). Royal Kennel Club ja PDSA ilmoittavat eliniäksi yli 10 vuotta, mutta Isossa-Britanniassa tehty VetCompass-tutkimus totesi mediaaniksi 7,3 vuotta.",
         "Royal Kennel Club suosittelee enintään tunnin liikuntaa päivässä ja harjausta kerran viikossa ja sijoittaa rodun Breed Watch -ohjelman luokkaan 2 silmäluomien ja ihopoimujen ongelmien vuoksi. PDSA kuvaa shar peitä uskollisiksi, kiintyneiksi perhekoiriksi, jotka sopivat parhaiten kokeneille omistajille ja isommille lapsille, varoittaa vahvasta saalisvietistä pienempiä eläimiä kohtaan ja neuvoo pitämään ihopoimut puhtaina ja kuivina sekä pitämään tauon ruokailun ja liikunnan välillä.",
       ],
       sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
@@ -1139,7 +1139,7 @@ const fi: RegistryCopy = {
     pug: {
       aka: "Pug, Carlin, Mops",
       text: [
-        "Mopsi on Kiinasta kotoisin oleva pieni seurakoira, jonka rotumääritelmästä FCI:ssä vastaa nykyään Iso-Britannia. FCI:n rotumääritelmä kuvaa selvästi neliömäisen ja tanakan koiran – ”multum in parvo” – jossa on paljon charmia, arvokkuutta ja älykkyyttä ja jonka luonne on tasainen, iloinen ja eloisa; ihannepaino on 6,3–8,1 kg, turkki on hieno, sileä, lyhyt ja kiiltävä, väriltään hopea, aprikoosi, fawn tai musta, ja häntä on kiertynyt tiukasti lonkan päälle. Se edellyttää melko suuria, hyvin avoimia sieraimia eikä hyväksy ahtaita sieraimia eikä raskasta kuonon yläpuolista ihopoimua. The Royal Kennel Club sijoittaa rodun Breed Watchin luokkaan 3, ja sen huolenaiheisiin kuuluvat hengitysvaikeudet, ulkonevat silmät, ihopoimujen tulehdus ja liikalihavuus.",
+        "Mopsi on Kiinasta kotoisin oleva pieni seurakoira, jonka rotumääritelmästä FCI:ssä vastaa nykyään Iso-Britannia. FCI:n rotumääritelmä kuvaa selvästi neliömäisen ja tanakan koiran – ”multum in parvo” – jossa on paljon viehätysvoimaa, arvokkuutta ja älykkyyttä ja jonka luonne on tasainen, iloinen ja eloisa; ihannepaino on 6,3–8,1 kg, turkki on hieno, sileä, lyhyt ja kiiltävä, väriltään hopea, aprikoosi, fawn tai musta, ja häntä on kiertynyt tiukasti lonkan päälle. Se edellyttää melko suuria, hyvin avoimia sieraimia eikä hyväksy ahtaita sieraimia eikä raskasta kuonon yläpuolista ihopoimua. The Royal Kennel Club sijoittaa rodun Breed Watchin luokkaan 3, ja sen huolenaiheisiin kuuluvat hengitysvaikeudet, ulkonevat silmät, ihopoimujen tulehdus ja liikalihavuus.",
         "PDSA kutsuu mopsia voimakkaasti lyhytkuonoiseksi (brakykefaaliseksi) roduksi, joka hengästyy helposti, neuvoo välttämään liikuntaa helteellä ja kertoo, että sen eläinlääkärit suosittelisivat painokkaasti mieluummin rotua, jolla on normaali kuono, tai mopsiristeytystä. The Royal Kennel Club suosittelee liikuntaa enintään 1 tunnin päivässä ja turkinhoitoa kerran viikossa, kertoo, että rodusta lähtee karvaa, ja ilmoittaa sen eliniäksi yli 10 vuotta. PDSA kuvaa koiran, joka tulee usein hyvin toimeen lasten ja muiden lemmikkien kanssa mutta jumaloi seuraa eikä pärjää hyvin yksin; PetMD neuvoo puhdistamaan ja kuivaamaan kasvojen ihopoimut joka päivä ja toteaa, että lihavuus on rodussa yleistä.",
       ],
       sources: ["S354", "S355", "S356", "S357", "S359"],
