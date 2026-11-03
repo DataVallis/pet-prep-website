@@ -337,6 +337,7 @@ const da: RegistryCopy = {
       kitten_parents_tests: "Spørg om en af forældrene har haft sundhedsproblemer som killingen kan arve.",
     },
     tests: {
+      dna_poag_pll: "DNA-test for primær åbenvinklet glaukom og primær linseluksation (POAG/PLL), arvelige øjensygdomme, der kan føre til blindhed",
       hip_scheme: "Røntgen af hofterne for hofteledsdysplasi (UK: BVA/KC-ordningen)",
       elbow_scheme: "Røntgen af albuerne for albueledsdysplasi (UK: BVA/KC-ordningen)",
       eye_scheme: "Øjenundersøgelse hos en dyrlæge med speciale i øjne (UK: BVA/KC/ISDS-ordningen; for nogle racer med gonioskopi)",
@@ -435,6 +436,8 @@ const da: RegistryCopy = {
     },
   },
   health: {
+    splenic_torsion: "Miltdrejning, som kræver akut dyrlægehjælp, er hyppigere hos denne race end hos andre store racer.",
+    shar_pei_fever: "Familiær shar pei-feber kan forekomme i racen: anfald af høj feber med smertefulde, hævede led og et hævet ansigt – kontakt straks en dyrlæge.",
     weight_gain: "Tager let på i vægt – hold øje med portioner og godbidder.",
     hip_elbow_dysplasia_eye_conditions: "Kan være disponeret for hofte- og albueledsdysplasi og for flere arvelige øjensygdomme.",
     cancer_risk: "Kilderne beskriver en højere risiko for kræft hos denne race.",
@@ -714,6 +717,30 @@ const da: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, amerikansk rat terrier, Rat Terrier",
+      text: [
+        "Rat terrier er en lille amerikansk terrier, der avles i to størrelser – miniature og standard – med kort, tætsiddende, glat og blank pels. Racestandarden tillader en skulderhøjde på op til 18 tommer (46 cm), og PetMD angiver en vægt på 10–25 pund (omkring 4,5–11 kg) for begge størrelser; en hund af denne størrelse er udvokset ved omkring 9–12 måneder (PetMD). VCA angiver en levetid på 12–16 år, PetMD 12–18 år.",
+        "Rat Terrier Club of America siger, at rat terriere er gode med børn, især hvis de vokser op med dem, og klarer sig i en lejlighed, men har brug for mindst 30 minutters motion om dagen. PetMD skriver, at de har brug for meget fysisk og mental stimulering, ikke kan lide at være alene længe og fælder lidt hele året; VCA anbefaler børstning en gang om ugen og advarer om, at de måske ikke passer sammen med små kæledyr, især gnavere.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "Grosser Schweizer Sennenhund, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "Stor schweizisk sennenhund (hos FCI og i Storbritannien »Great Swiss Mountain Dog«) er en kraftig, grovknoglet og velmusklet trefarvet trækhund fra Schweiz: sort med symmetriske brune og hvide aftegninger. FCI-standarden angiver en skulderhøjde på 65–72 cm for hanner og 60–68 cm for tæver, men ingen vægt; WebMD angiver 52–64 kg for hanner og 39–50 kg for tæver. En hund af denne størrelse er udvokset ved omkring 18–24 måneder (PetMD), og Royal Kennel Club angiver en levetid på over 10 år (PetMD: 8–11 år).",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og børstning en gang om ugen og siger, at racen fælder og passer til et stort hus med stor have. PetMD kalder racen en fremragende familiehund, der er blid over for børn (al kontakt bør ske under opsyn), råder til at rense ørerne hver uge og ikke at motionere hunden lige før eller efter måltider på grund af risikoen for mavedrejning (GDV); WebMD råder til at børste tænderne dagligt og være sparsom med godbidder, da racen let bliver overvægtig.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
+    },
+    shar_pei: {
+      aka: "kinesisk shar pei, Chinese Shar-Pei, Sharpei",
+      text: [
+        "Shar pei (i USA »Chinese Shar-Pei«) er en aktiv, kompakt, kvadratisk bygget mellemstor hund fra Kina med kort, hård, børsteagtig pels i én ensfarvet farve (alle undtagen hvid), folder på hovedet og manken og en bred snude. Royal Kennel Clubs standard angiver en skulderhøjde på 46–51 cm og PDSA en vægt på 20–27 kg; en hund af denne størrelse er udvokset ved omkring 12–15 måneder (PetMD). Royal Kennel Club og PDSA angiver en levetid på over 10 år, men en VetCompass-undersøgelse af hunde i Storbritannien fandt en median på 7,3 år.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og børstning en gang om ugen og placerer racen i kategori 2 i Breed Watch på grund af problemer med øjenlåg og hudfolder. PDSA beskriver shar pei som loyale, hengivne familiehunde, der passer bedst til erfarne ejere og større børn, advarer om et stærkt jagtinstinkt over for mindre dyr og råder til at holde hudfolderne rene og tørre og lade der gå lidt tid mellem måltid og motion.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Border collie er en mellemstor hyrdehund fra Storbritannien, avlet til udholdenhed og hårdt arbejde. Racestandarden beskriver en ivrig, opmærksom, lydhør og intelligent hund der hverken er nervøs eller aggressiv.",

@@ -301,6 +301,7 @@ const it: RegistryCopy = {
       kitten_parents_tests: "Chiedi se uno dei genitori ha avuto problemi di salute che il gattino potrebbe ereditare.",
     },
     tests: {
+      dna_poag_pll: "Test del DNA per il glaucoma primario ad angolo aperto e la lussazione primaria del cristallino (POAG/PLL), malattie oculari ereditarie che possono portare alla cecità",
       hip_scheme: "Screening radiografico delle anche per la displasia dell’anca (Regno Unito: programma BVA/KC)",
       elbow_scheme: "Screening radiografico dei gomiti per la displasia del gomito (Regno Unito: programma BVA/KC)",
       eye_scheme: "Visita oculistica da parte di un veterinario specialista in oftalmologia (Regno Unito: programma BVA/KC/ISDS; per alcune razze con gonioscopia)",
@@ -399,6 +400,7 @@ const it: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "Nella razza può comparire la febbre familiare dello Shar Pei: episodi di febbre alta con articolazioni doloranti e gonfie e muso gonfio — rivolgersi subito al veterinario.",
     weight_gain: "Ingrassa facilmente: bisogna tenere d’occhio porzioni e premi.",
     hip_elbow_dysplasia_eye_conditions: "Può essere predisposto alla displasia dell’anca e del gomito e a diverse malattie ereditarie degli occhi.",
     cancer_risk: "Le fonti descrivono un rischio di tumori più alto in questa razza.",
@@ -500,6 +502,7 @@ const it: RegistryCopy = {
     familial_nephropathy: "Nella razza si riscontra una malattia renale ereditaria (nefropatia familiare); è disponibile un test del DNA dei genitori.",
     hereditary_nephritis: "Nella razza si riscontra una malattia renale ereditaria (nefrite ereditaria, chiamata anche glomerulopatia ereditaria del samoiedo).",
     panosteitis: "Nella razza può presentarsi la panosteite, un’infiammazione dolorosa delle ossa lunghe che di solito colpisce i cani giovani in crescita.",
+    splenic_torsion: "La torsione della milza, che richiede cure veterinarie urgenti, è più frequente in questa razza che in altre razze grandi.",
     urinary_incontinence: "Nella razza può presentarsi l’incontinenza urinaria, una perdita involontaria di urina.",
     osteochondritis: "Nella razza può presentarsi l’osteocondrite dissecante (OCD), un disturbo della cartilagine articolare nei cani in crescita.",
     scottie_cramp: "Nella razza si riscontra lo «scottie cramp»: brevi episodi di crampi muscolari, di solito scatenati dall’eccitazione; non è doloroso.",
@@ -632,6 +635,22 @@ const it: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, Rat Terrier americano",
+      text: [
+        "Il Rat Terrier è un piccolo terrier americano allevato in due taglie — miniatura e standard — con pelo corto, aderente, liscio e lucido. Lo standard di razza ammette un’altezza al garrese fino a 18 pollici (46 cm), e PetMD indica un peso di 10–25 libbre (circa 4,5–11 kg) per entrambe le taglie; un cane di questa taglia finisce di crescere verso i 9–12 mesi (PetMD). VCA indica un’aspettativa di vita di 12–16 anni, PetMD di 12–18 anni.",
+        "Il Rat Terrier Club of America afferma che i Rat Terrier vanno d’accordo con i bambini, soprattutto se crescono con loro, e si adattano a un appartamento, ma hanno bisogno di almeno 30 minuti di movimento al giorno. PetMD scrive che hanno bisogno di molta stimolazione fisica e mentale, non amano restare soli a lungo e perdono un po’ di pelo tutto l’anno; VCA consiglia una spazzolata alla settimana e avverte che potrebbero non andare d’accordo con i piccoli animali, soprattutto i roditori.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
+    shar_pei: {
+      aka: "Shar-Pei cinese, Chinese Shar-Pei, Sharpei",
+      text: [
+        "Lo Shar Pei («Chinese Shar-Pei» negli Stati Uniti) è un cane attivo, compatto, di costruzione quadrata e di taglia media, originario della Cina, con pelo corto, duro e ispido di un solo colore (qualsiasi tranne il bianco), pieghe sulla testa e sul garrese e un muso largo. Lo standard del Royal Kennel Club indica un’altezza di 46–51 cm e la PDSA un peso di 20–27 kg; un cane di questa taglia finisce di crescere verso i 12–15 mesi (PetMD). Il Royal Kennel Club e la PDSA indicano un’aspettativa di vita di oltre 10 anni, ma uno studio VetCompass su cani nel Regno Unito ha rilevato una mediana di 7,3 anni.",
+        "Il Royal Kennel Club consiglia fino a un’ora di movimento al giorno e una spazzolata alla settimana, e inserisce la razza nella categoria 2 di Breed Watch per problemi alle palpebre e alle pieghe della pelle. La PDSA descrive gli Shar Pei come cani di famiglia leali e devoti, più adatti a proprietari esperti e a bambini più grandi, avverte di un forte istinto predatorio verso gli animali più piccoli e consiglia di tenere le pieghe della pelle pulite e asciutte e di lasciare un intervallo tra il pasto e l’attività fisica.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Il border collie è un cane da pastore di taglia media originario della Gran Bretagna, fatto per la resistenza e il lavoro duro. Il suo standard descrive un cane vivace, attento, ricettivo e intelligente, né nervoso né aggressivo.",
@@ -1253,6 +1272,14 @@ const it: RegistryCopy = {
         "Il PDSA raccomanda almeno un’ora di movimento al giorno (circa 60–90 minuti), tanti stimoli mentali e una spazzolata alla settimana; definisce i basenji distaccati ma affidabili, testardi e con pochissimo senso del pericolo sulla strada. WebMD dice che inseguono qualsiasi cosa sembri una preda, hanno bisogno di recinzioni molto alte o di una sorveglianza costante e stanno solo discretamente bene con i bambini piccoli, e consiglia di pulire le orecchie ogni settimana e di lavare i denti almeno due volte alla settimana.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "Grande Bovaro Svizzero, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "Il Grande Bovaro Svizzero è un cane da tiro tricolore della Svizzera, robusto, di ossatura pesante e ben muscoloso: nero con focature e marcature bianche simmetriche. Lo standard FCI indica un’altezza di 65–72 cm per i maschi e di 60–68 cm per le femmine, ma nessun peso; WebMD indica 52–64 kg per i maschi e 39–50 kg per le femmine. Un cane di questa taglia raggiunge la taglia adulta verso i 18–24 mesi (PetMD), e il Royal Kennel Club indica un’aspettativa di vita di oltre 10 anni (PetMD: 8–11 anni).",
+        "Il Royal Kennel Club raccomanda fino a un’ora di movimento al giorno e una spazzolata alla settimana, e dice che la razza perde pelo e ha bisogno di una casa grande con un grande giardino. PetMD li definisce ottimi cani da famiglia, delicati con i bambini (ogni interazione va sorvegliata), e consiglia di pulire le orecchie ogni settimana e di non farli muovere subito prima o dopo i pasti per il rischio di torsione gastrica (GDV); WebMD consiglia di lavare i denti ogni giorno e di limitare i premietti, perché la razza tende a ingrassare.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "Gatto britannico a pelo corto, British Shorthair, British Blue",

@@ -346,6 +346,7 @@ const cs: RegistryCopy = {
       kitten_parents_tests: "Zeptejte se, zda některý z rodičů neměl zdravotní problémy, které by kotě mohlo zdědit.",
     },
     tests: {
+      dna_poag_pll: "DNA test na primární glaukom s otevřeným úhlem a primární luxaci čočky (POAG/PLL), dědičná onemocnění očí, která mohou vést ke slepotě",
       hip_scheme: "Rentgenové vyšetření kyčelních kloubů na dysplazii (Velká Británie: program BVA/KC)",
       elbow_scheme: "Rentgenové vyšetření loketních kloubů na dysplazii (Velká Británie: program BVA/KC)",
       eye_scheme: "Vyšetření očí u veterinárního oftalmologa (Velká Británie: program BVA/KC/ISDS; u některých plemen s gonioskopií)",
@@ -444,6 +445,7 @@ const cs: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "U plemene se může vyskytnout familiární horečka šar-pejů: záchvaty vysoké horečky s bolestivými, oteklými klouby a oteklým obličejem — ihned k veterináři.",
     weight_gain: "Snadno přibírá – je třeba hlídat porce a pamlsky.",
     hip_elbow_dysplasia_eye_conditions: "Může mít sklon k dysplazii kyčelních a loketních kloubů a k několika dědičným onemocněním očí.",
     cancer_risk: "Zdroje u tohoto plemene popisují vyšší riziko nádorových onemocnění.",
@@ -545,6 +547,7 @@ const cs: RegistryCopy = {
     familial_nephropathy: "U plemene se vyskytuje dědičné onemocnění ledvin (familiární nefropatie); k dispozici je DNA test rodičů.",
     hereditary_nephritis: "U plemene se vyskytuje dědičné onemocnění ledvin (dědičná nefritida, nazývaná také dědičná glomerulopatie samojedů).",
     panosteitis: "U plemene se může vyskytnout panosteitida, bolestivý zánět dlouhých kostí, který obvykle postihuje mladé, rostoucí psy.",
+    splenic_torsion: "Torze sleziny, která vyžaduje okamžitou veterinární péči, se u tohoto plemene vyskytuje častěji než u jiných velkých plemen.",
     urinary_incontinence: "U plemene se může vyskytnout močová inkontinence, nekontrolovaný únik moči.",
     osteochondritis: "U plemene se může vyskytnout osteochondritis dissecans (OCD), porucha kloubní chrupavky u rostoucích psů.",
     scottie_cramp: "U plemene se vyskytuje „scottie cramp“ – krátké epizody svalových křečí, obvykle vyvolané vzrušením; nejsou bolestivé.",
@@ -680,6 +683,22 @@ const cs: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, americký rat teriér, Rat Terrier",
+      text: [
+        "Rat teriér je malý americký teriér chovaný ve dvou velikostech — miniaturní a standardní — s krátkou, přiléhavou, hladkou a lesklou srstí. Standard plemene připouští výšku v kohoutku až 18 palců (46 cm) a PetMD uvádí pro obě velikosti hmotnost 10–25 liber (asi 4,5–11 kg); pes této velikosti je dorostlý přibližně v 9–12 měsících (PetMD). VCA uvádí délku života 12–16 let, PetMD 12–18 let.",
+        "Rat Terrier Club of America uvádí, že rat teriéři dobře vycházejí s dětmi, zvlášť pokud s nimi vyrůstají, a zvládnou byt, ale potřebují alespoň 30 minut pohybu denně. PetMD píše, že potřebují hodně fyzické i duševní zátěže, nemají rádi dlouhou samotu a celý rok mírně línají; VCA doporučuje kartáčování jednou týdně a upozorňuje, že nemusí vycházet s malými zvířaty, zvlášť s hlodavci.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
+    shar_pei: {
+      aka: "Shar Pei, čínský šar-pej, Chinese Shar-Pei",
+      text: [
+        "Šar-pej (v USA „Chinese Shar-Pei“) je aktivní, kompaktní, čtvercově stavěný středně velký pes z Číny s krátkou, tvrdou, štětinatou srstí jedné barvy (jakékoli kromě bílé), vráskami na hlavě a kohoutku a širokou tlamou. Standard Royal Kennel Clubu uvádí výšku 46–51 cm a PDSA hmotnost 20–27 kg; pes této velikosti je dorostlý přibližně ve 12–15 měsících (PetMD). Royal Kennel Club a PDSA uvádějí délku života přes 10 let, studie VetCompass u psů ve Velké Británii však zjistila medián 7,3 roku.",
+        "Royal Kennel Club doporučuje až hodinu pohybu denně a kartáčování jednou týdně a řadí plemeno do kategorie 2 programu Breed Watch kvůli problémům s víčky a kožními záhyby. PDSA popisuje šar-peje jako věrné, oddané rodinné psy, kteří se nejlépe hodí ke zkušeným majitelům a starším dětem, upozorňuje na silný lovecký pud vůči menším zvířatům a radí udržovat kožní záhyby čisté a suché a mezi krmením a pohybem nechat odstup.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Border kolie je středně velký pastevecký pes z Velké Británie, stvořený pro vytrvalost a tvrdou práci. Standard plemene ho popisuje jako horlivého, ostražitého, vnímavého a inteligentního psa, který není ani nervózní, ani agresivní.",
@@ -1302,6 +1321,14 @@ const cs: RegistryCopy = {
         "PDSA doporučuje nejméně hodinu pohybu denně (přibližně 60–90 minut), hodně duševních podnětů a kartáčování jednou týdně; basenži označuje za odtažité, ale spolehlivé, s pevnou vůlí a s velmi slabým smyslem pro nebezpečí na silnici. WebMD uvádí, že pronásledují vše, co vypadá jako kořist, potřebují velmi vysoké ploty nebo neustálý dohled a s malými dětmi vycházejí jen středně dobře, a radí čistit uši jednou týdně a zuby nejméně dvakrát týdně.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "velký švýcarský salašnický pes, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "Velký švýcarský salašnický pes je robustní, těžce osvalený tažný pes se silnými kostmi ze Švýcarska, trikolorní: černý se symetrickými pálenými a bílými znaky. Standard FCI uvádí kohoutkovou výšku 65–72 cm u psů a 60–68 cm u fen, hmotnost však neuvádí; WebMD uvádí 52–64 kg u psů a 39–50 kg u fen. Pes této velikosti je plně dorostlý přibližně v 18–24 měsících (PetMD) a Royal Kennel Club uvádí délku života přes 10 let (PetMD: 8–11 let).",
+        "Royal Kennel Club doporučuje až hodinu pohybu denně a kartáčování jednou týdně a uvádí, že plemeno líná a potřebuje velký dům s velkou zahradou. PetMD je označuje za skvělé rodinné psy, kteří jsou k dětem jemní (každý kontakt s dětmi je třeba hlídat), a radí čistit uši jednou týdně a nenechat psa běhat těsně před jídlem ani po něm kvůli riziku torze žaludku (GDV); WebMD radí čistit zuby každý den a omezit pamlsky, protože plemeno snadno přibírá.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "britka, britská modrá, British Shorthair",

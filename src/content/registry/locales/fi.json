@@ -773,6 +773,31 @@
         "Bengal",
         "Bengal cat"
       ]
+    },
+    "shar_pei": {
+      "name": "Shar pei",
+      "slug": "shar-pei",
+      "synonyms": [
+        "Kiinalainen shar pei",
+        "Sharpei"
+      ]
+    },
+    "greater_swiss_mountain_dog": {
+      "name": "Isosveitsinpaimenkoira",
+      "slug": "isosveitsinpaimenkoira",
+      "synonyms": [
+        "Grosser Schweizer Sennenhund",
+        "Greater Swiss Mountain Dog",
+        "Swissy"
+      ]
+    },
+    "rat_terrier": {
+      "name": "Rottaterrieri",
+      "slug": "rottaterrieri",
+      "synonyms": [
+        "Rat Terrier",
+        "Rattie"
+      ]
     }
   },
   "suitability_labels": {
@@ -818,7 +843,8 @@
       "short_muzzle_breathing": "lyhyempi kuono – voi olla hengitysvaikeuksia",
       "shorter_lifespan": "lyhyempi elinikä",
       "small_children": "perheille, joissa on pieniä lapsia",
-      "sun_protection": "paljas iho – tarvitsee aurinkosuojaa"
+      "sun_protection": "paljas iho – tarvitsee aurinkosuojaa",
+      "independent_older_children": "itsenäinen koira – sopii paremmin isommille lapsille"
     }
   }
 }

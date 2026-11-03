@@ -314,6 +314,7 @@ const pl: RegistryCopy = {
       kitten_parents_tests: "Zapytaj, czy któreś z rodziców miało problemy zdrowotne, które kocię mogłoby odziedziczyć.",
     },
     tests: {
+      dna_poag_pll: "Test DNA w kierunku jaskry pierwotnej otwartego kąta i pierwotnego zwichnięcia soczewki (POAG/PLL), dziedzicznych chorób oczu, które mogą prowadzić do ślepoty",
       hip_scheme: "Prześwietlenie stawów biodrowych w kierunku dysplazji (Wielka Brytania: program BVA/KC)",
       elbow_scheme: "Prześwietlenie stawów łokciowych w kierunku dysplazji (Wielka Brytania: program BVA/KC)",
       eye_scheme: "Badanie oczu u lekarza weterynarii okulisty (Wielka Brytania: program BVA/KC/ISDS; u niektórych ras z gonioskopią)",
@@ -412,6 +413,7 @@ const pl: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "W rasie może wystąpić rodzinna gorączka shar pei: napady wysokiej gorączki z bolesnymi, obrzękniętymi stawami i obrzękiem pyska — od razu do weterynarza.",
     weight_gain: "Łatwo przybiera na wadze – pilnuj porcji i smakołyków.",
     hip_elbow_dysplasia_eye_conditions: "Może mieć skłonność do dysplazji stawów biodrowych i łokciowych oraz do kilku dziedzicznych chorób oczu.",
     cancer_risk: "Źródła opisują u tej rasy wyższe ryzyko nowotworów.",
@@ -513,6 +515,7 @@ const pl: RegistryCopy = {
     familial_nephropathy: "W rasie występuje dziedziczna choroba nerek (rodzinna nefropatia); dostępny jest test DNA rodziców.",
     hereditary_nephritis: "W rasie występuje dziedziczna choroba nerek (dziedziczne zapalenie nerek, nazywane też dziedziczną glomerulopatią samojedów).",
     panosteitis: "W rasie może występować panosteitis, bolesne zapalenie kości długich, które dotyka zwykle młode, rosnące psy.",
+    splenic_torsion: "Skręt śledziony, który wymaga pilnej pomocy weterynarza, występuje w tej rasie częściej niż u innych dużych ras.",
     urinary_incontinence: "W rasie może występować nietrzymanie moczu, czyli niekontrolowany wyciek moczu.",
     osteochondritis: "W rasie może występować osteochondroza rozwarstwiająca (OCD), zaburzenie chrząstki stawowej u rosnących psów.",
     scottie_cramp: "W rasie występuje „skurcz scottiego” – krótkie epizody skurczów mięśni, zwykle wywołane podekscytowaniem; nie jest bolesny.",
@@ -648,6 +651,22 @@ const pl: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, amerykański rat terier, Rat Terrier",
+      text: [
+        "Rat terier to mały amerykański terier hodowany w dwóch odmianach wielkości — miniaturowej i standardowej — o krótkiej, przylegającej, gładkiej i lśniącej sierści. Wzorzec rasy dopuszcza wysokość w kłębie do 18 cali (46 cm), a PetMD podaje dla obu odmian masę 10–25 funtów (około 4,5–11 kg); pies tej wielkości kończy rosnąć w wieku około 9–12 miesięcy (PetMD). VCA podaje długość życia 12–16 lat, PetMD 12–18 lat.",
+        "Rat Terrier Club of America podaje, że rat teriery dobrze dogadują się z dziećmi, zwłaszcza jeśli z nimi dorastają, i radzą sobie w mieszkaniu, ale potrzebują co najmniej 30 minut ruchu dziennie. PetMD pisze, że potrzebują dużo aktywności fizycznej i umysłowej, nie lubią długo zostawać same i przez cały rok lekko linieją; VCA zaleca szczotkowanie raz w tygodniu i ostrzega, że mogą nie dogadywać się z małymi zwierzętami, zwłaszcza gryzoniami.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
+    shar_pei: {
+      aka: "chiński shar pei, Chinese Shar-Pei, Sharpei",
+      text: [
+        "Shar pei (w USA „Chinese Shar-Pei”) to aktywny, zwarty, kwadratowo zbudowany pies średniej wielkości z Chin o krótkiej, szorstkiej, szczeciniastej sierści w jednym jednolitym kolorze (każdym oprócz białego), ze zmarszczkami na głowie i w kłębie oraz szeroką kufą. Wzorzec Royal Kennel Club podaje wysokość 46–51 cm, a PDSA masę 20–27 kg; pies tej wielkości kończy rosnąć w wieku około 12–15 miesięcy (PetMD). Royal Kennel Club i PDSA podają długość życia ponad 10 lat, ale badanie VetCompass psów w Wielkiej Brytanii wykazało medianę 7,3 roku.",
+        "Royal Kennel Club zaleca do godziny ruchu dziennie i szczotkowanie raz w tygodniu, a rasę zalicza do kategorii 2 programu Breed Watch z powodu problemów z powiekami i fałdami skóry. PDSA opisuje shar pei jako wierne, oddane psy rodzinne, które najlepiej pasują do doświadczonych opiekunów i starszych dzieci, ostrzega przed silnym instynktem łowieckim wobec mniejszych zwierząt i radzi utrzymywać fałdy skóry w czystości i suchości oraz robić przerwę między posiłkiem a ruchem.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Border collie to średniej wielkości pies pasterski z Wielkiej Brytanii, stworzony do wytrwałej i ciężkiej pracy. Wzorzec rasy opisuje go jako psa chętnego do pracy, czujnego, wrażliwego na polecenia i inteligentnego, który nie jest ani nerwowy, ani agresywny.",
@@ -1269,6 +1288,14 @@ const pl: RegistryCopy = {
         "PDSA zaleca co najmniej godzinę ruchu dziennie (około 60–90 minut), dużo zajęć dla głowy i szczotkowanie raz w tygodniu; nazywa basenji zdystansowanymi, ale godnymi zaufania, upartymi i bardzo nieostrożnymi na drodze. WebMD mówi, że gonią wszystko, co wygląda jak zdobycz, potrzebują bardzo wysokiego ogrodzenia lub stałego nadzoru i tylko umiarkowanie dobrze czują się z małymi dziećmi, i zaleca czyszczenie uszu co tydzień oraz mycie zębów co najmniej dwa razy w tygodniu.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "duży szwajcarski pies pasterski, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "Duży szwajcarski pies pasterski to mocny, kościsty i dobrze umięśniony trójkolorowy pies pociągowy ze Szwajcarii: czarny z symetrycznymi podpalanymi i białymi znaczeniami. Wzorzec FCI podaje wysokość 65–72 cm dla psów i 60–68 cm dla suk, ale nie podaje masy ciała; WebMD podaje 52–64 kg dla psów i 39–50 kg dla suk. Pies tej wielkości osiąga dorosłe rozmiary w wieku około 18–24 miesięcy (PetMD), a Royal Kennel Club podaje, że żyje ponad 10 lat (PetMD: 8–11 lat).",
+        "Royal Kennel Club zaleca do godziny ruchu dziennie i szczotkowanie raz w tygodniu oraz podaje, że rasa linieje i potrzebuje dużego domu z dużym ogrodem. PetMD nazywa te psy świetnymi psami rodzinnymi, łagodnymi wobec dzieci (każdy kontakt z dziećmi należy nadzorować), i zaleca czyszczenie uszu co tydzień oraz unikanie ruchu tuż przed posiłkiem i po nim ze względu na ryzyko skrętu żołądka (GDV); WebMD zaleca codzienne mycie zębów i ograniczanie smakołyków, bo rasa łatwo tyje.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "brytyjczyk, kot brytyjski, British blue, British shorthair, BSH",

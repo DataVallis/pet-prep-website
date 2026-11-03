@@ -641,6 +641,14 @@
         "Swissy",
         "Greater Swiss Mountain Dog"
       ]
+    },
+    "shar_pei": {
+      "name": "Shar Pei",
+      "slug": "shar-pei",
+      "synonyms": [
+        "Chinesischer Shar-Pei",
+        "Sharpei"
+      ]
     }
   },
   "suitability_labels": {
@@ -686,7 +694,8 @@
       "short_muzzle_breathing": "kürzere Schnauze – kann Atemprobleme haben",
       "shorter_lifespan": "kürzere Lebenserwartung",
       "small_children": "Familien mit kleinen Kindern",
-      "sun_protection": "nackte Haut – braucht Sonnenschutz"
+      "sun_protection": "nackte Haut – braucht Sonnenschutz",
+      "independent_older_children": "eigenständiger Hund – besser mit älteren Kindern"
     }
   }
 }

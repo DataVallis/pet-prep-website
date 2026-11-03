@@ -269,6 +269,7 @@ const en: RegistryCopy = {
       kitten_parents_tests: "Ask whether either parent has had health problems the kitten could inherit.",
     },
     tests: {
+      dna_poag_pll: "DNA test for primary open-angle glaucoma and primary lens luxation (POAG/PLL), inherited eye diseases that can lead to blindness",
       hip_scheme: "Hip X-ray screening for hip dysplasia (UK: BVA/KC scheme)",
       elbow_scheme: "Elbow X-ray screening for elbow dysplasia (UK: BVA/KC scheme)",
       eye_scheme: "Eye examination by a veterinary eye specialist (UK: BVA/KC/ISDS scheme; for some breeds with gonioscopy)",
@@ -367,6 +368,7 @@ const en: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "Familial Shar Pei fever can occur in the breed: bouts of high temperature with painful, swollen joints and a swollen face — see a vet straight away.",
     weight_gain: "Puts on weight easily — portions and treats need watching.",
     hip_elbow_dysplasia_eye_conditions: "Can be prone to hip and elbow dysplasia and to several inherited eye conditions.",
     cancer_risk: "Sources describe a higher risk of cancer in this breed.",
@@ -468,6 +470,7 @@ const en: RegistryCopy = {
     familial_nephropathy: "An inherited kidney disease (familial nephropathy) occurs in the breed; a DNA test of the parents is available.",
     hereditary_nephritis: "An inherited kidney disease (hereditary nephritis, also called Samoyed hereditary glomerulopathy) occurs in the breed.",
     panosteitis: "Panosteitis, a painful inflammation of the long bones that usually affects young, growing dogs, can occur in the breed.",
+    splenic_torsion: "Splenic torsion, a twisting of the spleen that needs urgent veterinary care, is more common in this breed than in other large breeds.",
     urinary_incontinence: "Urinary incontinence, an uncontrolled leaking of urine, can occur in the breed.",
     osteochondritis: "Osteochondritis dissecans (OCD), a disorder of the joint cartilage in growing dogs, can occur in the breed.",
     scottie_cramp: "Scottie cramp — short episodes of muscle cramping, usually brought on by excitement — occurs in the breed; it is not painful.",
@@ -599,6 +602,22 @@ const en: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, Ratty, American Rat Terrier",
+      text: [
+        "The Rat Terrier is a small American terrier, bred in two sizes — miniature and standard — with a short, close-lying, smooth and shiny coat. The breed standard allows a height of up to 18 inches (46 cm) at the withers, and PetMD gives a weight of 10–25 pounds (about 4.5–11 kg) for both sizes; a dog of this size is fully grown at about 9–12 months (PetMD). VCA gives a lifespan of 12–16 years, PetMD 12–18 years.",
+        "The Rat Terrier Club of America says Rat Terriers are good with children, especially if raised with them, and do fine in an apartment but need at least 30 minutes of exercise a day. PetMD says they need plenty of physical and mental stimulation, don't enjoy being left alone for long periods and shed mildly all year; VCA recommends brushing once a week and warns they may not be good with small pets, especially rodents.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
+    shar_pei: {
+      aka: "Chinese Shar-Pei, Shar-Pei, Sharpei",
+      text: [
+        "The Shar Pei — the Chinese Shar-Pei in the US — is an active, compact, square, medium-sized dog from China with a short, harsh, bristly coat in one solid colour (any except white), wrinkles on the head and withers and a broad muzzle. The Royal Kennel Club standard gives a height of 46–51 cm and the PDSA a weight of 20–27 kg; a dog of this size is fully grown at about 12–15 months (PetMD). The Royal Kennel Club and the PDSA give a lifespan of over 10 years, but a VetCompass study of dogs in the UK found a median of 7.3 years.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day and brushing once a week, and lists the breed in Breed Watch Category 2 because of eyelid and skin-fold problems. The PDSA calls Shar Peis loyal, devoted family pets that do best with experienced owners and older children, warns of a high prey drive around smaller pets, and advises keeping the skin folds clean and dry and leaving a gap between eating and exercise.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "The Border Collie is a medium-sized herding dog from Great Britain, built for endurance and hard work. Its breed standard describes a keen, alert, responsive and intelligent dog that is neither nervous nor aggressive.",
@@ -1220,6 +1239,14 @@ const en: RegistryCopy = {
         "PDSA recommends at least an hour of exercise a day (around 60–90 minutes), plenty of mental stimulation and brushing once a week; it calls Basenjis aloof but trustworthy, strong-willed and with very poor road sense. WebMD says they will chase anything that looks like prey, need very high fences or constant supervision and are only moderately good with young children, and advises cleaning the ears weekly and brushing the teeth at least twice a week.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "Great Swiss Mountain Dog, Swissy, Grosser Schweizer Sennenhund",
+      text: [
+        "The Greater Swiss Mountain Dog — called the Great Swiss Mountain Dog by the FCI and in the UK — is a sturdy, heavy-boned, well-muscled tricolour draught dog from Switzerland: black with symmetrical tan and white markings. The FCI standard gives a height of 65–72 cm for males and 60–68 cm for females and no weight; WebMD gives 52–64 kg for males and 39–50 kg for females. A dog of this size is fully grown at about 18–24 months (PetMD), and the Royal Kennel Club gives a lifespan of over 10 years (PetMD: 8–11 years).",
+        "The Royal Kennel Club recommends up to an hour of exercise a day and brushing once a week, and says the breed sheds and suits a large house with a large garden. PetMD calls Swissies great family dogs who are gentle with children (all interactions should be supervised), advises cleaning the ears weekly and not exercising them directly before or after meals because of the risk of bloat (GDV); WebMD advises brushing their teeth daily and keeping treats to a minimum, as the breed has problems with obesity.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "British Blue",

@@ -290,6 +290,7 @@ const sl: RegistryCopy = {
       zfds_member_si: "Slovenska članica FIFe je Zveza felinoloških društev Slovenije (ZFDS).",
     },
     tests: {
+      dna_poag_pll: "DNK test za primarni glavkom odprtega zakotja in primarno luksacijo leče (POAG/PLL), dedni bolezni oči, ki lahko povzročita slepoto",
       hip_scheme: "Rentgensko slikanje kolkov za displazijo kolkov (VB: shema BVA/KC)",
       elbow_scheme: "Rentgensko slikanje komolcev za displazijo komolcev (VB: shema BVA/KC)",
       eye_scheme: "Pregled oči pri veterinarskem specialistu za oči (VB: shema BVA/KC/ISDS; pri nekaterih pasmah z gonioskopijo)",
@@ -388,6 +389,7 @@ const sl: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "Pri pasmi se lahko pojavi družinska vročica šarpejev: napadi visoke vročine z bolečimi, otečenimi sklepi in otečenim obrazom — takoj k veterinarju.",
     weight_gain: "Hitro se zredi – pazite na velikost obrokov in priboljške.",
     hip_elbow_dysplasia_eye_conditions: "Lahko je nagnjen k displaziji kolkov in komolcev ter k več dednim boleznim oči.",
     cancer_risk: "Viri pri tej pasmi navajajo večje tveganje za raka.",
@@ -489,6 +491,7 @@ const sl: RegistryCopy = {
     familial_nephropathy: "Pri pasmi se pojavlja dedna bolezen ledvic (družinska nefropatija); za starše je na voljo test DNK.",
     hereditary_nephritis: "Pri pasmi se pojavlja dedna bolezen ledvic (dedni nefritis, imenovan tudi samojedska dedna glomerulopatija).",
     panosteitis: "Pri pasmi se lahko pojavi panosteitis, boleče vnetje dolgih kosti, ki navadno prizadene mlade pse med rastjo.",
+    splenic_torsion: "Pri pasmi je zasuk vranice, ki zahteva nujno pomoč veterinarja, pogostejši kot pri drugih velikih pasmah.",
     urinary_incontinence: "Pri pasmi se lahko pojavi inkontinenca, nehotno uhajanje urina.",
     osteochondritis: "Pri pasmi se lahko pojavi osteohondritis dissecans (OCD), motnja sklepnega hrustanca pri psih med rastjo.",
     scottie_cramp: "Pri pasmi se pojavlja „škotski krč“ – kratki napadi krčenja mišic, navadno ob vznemirjenju; ni boleč.",
@@ -619,6 +622,22 @@ const sl: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "rattie, ameriški rat terier, terier za podgane, Rat Terrier",
+      text: [
+        "Rat terier je majhen ameriški terier v dveh velikostih — miniaturni in standardni — s kratko, tesno prilegajočo, gladko in svetlečo dlako. Standard pasme dovoljuje višino do 18 palcev (46 cm) v vihru, PetMD pa za obe velikosti navaja težo 10–25 funtov (okoli 4,5–11 kg); pes te velikosti zraste do okoli 9–12 mesecev (PetMD). VCA navaja življenjsko dobo 12–16 let, PetMD 12–18 let.",
+        "Ameriški klub rat terierjev navaja, da so rat terierji dobri z otroki, še posebej če odraščajo z njimi, in da gredo v stanovanje, a potrebujejo vsaj 30 minut gibanja na dan. PetMD piše, da potrebujejo veliko telesnih in miselnih izzivov, ne marajo biti dolgo sami in jim dlaka rahlo izpada vse leto; VCA svetuje česanje enkrat na teden in opozarja, da morda niso primerni za dom z malimi živalmi, še posebej z glodavci.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
+    shar_pei: {
+      aka: "šar pej, sharpei, shar pei, kitajski šarpej, Chinese Shar-Pei",
+      text: [
+        "Šarpej (v ZDA »Chinese Shar-Pei«) je dejaven, kompakten, kvadratno grajen srednje velik pes s Kitajske s kratko, trdo, ščetinasto dlako ene barve (katerekoli razen bele), z gubami na glavi in vihru ter širokim gobcem. Standard Royal Kennel Cluba navaja višino 46–51 cm, PDSA pa težo 20–27 kg; pes te velikosti zraste do okoli 12–15 mesecev (PetMD). Royal Kennel Club in PDSA navajata življenjsko dobo več kot 10 let, študija VetCompass pri psih v Veliki Britaniji pa je ugotovila mediano 7,3 leta.",
+        "Royal Kennel Club priporoča do eno uro gibanja na dan in česanje enkrat na teden ter pasmo uvršča v 2. kategorijo programa Breed Watch zaradi težav z vekami in kožnimi gubami. PDSA šarpeje opisuje kot zveste, vdane družinske pse, ki so najboljši z izkušenimi lastniki in starejšimi otroki, opozarja na močan lovski nagon do manjših živali ter svetuje, naj bodo kožne gube čiste in suhe in naj med obrokom in gibanjem mine nekaj časa.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Border collie je srednje velik ovčarski pes iz Velike Britanije, grajen za vzdržljivost in trdo delo. Standard pasme ga opisuje kot vnetega, pozornega, odzivnega in inteligentnega psa, ki ni niti plašen niti napadalen.",
@@ -1241,6 +1260,14 @@ const sl: RegistryCopy = {
         "PDSA priporoča vsaj uro gibanja na dan (približno 60–90 minut), veliko miselnih izzivov in česanje enkrat na teden; basenjije opisuje kot zadržane, a zanesljive, trmaste in brez občutka za promet. WebMD pravi, da lovijo vse, kar je videti kot plen, potrebujejo zelo visoko ograjo ali stalen nadzor in so z majhnimi otroki le zmerno dobri, ter svetuje čiščenje ušes vsak teden in ščetkanje zob vsaj dvakrat na teden.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "veliki švicarski planšar, švicarski planšar, Swissy, Greater Swiss Mountain Dog, Grosser Schweizer Sennenhund",
+      text: [
+        "Veliki švicarski planšarski pes (pri FCI in v Veliki Britaniji »Great Swiss Mountain Dog«) je čvrst, mišičast vlečni pes močnih kosti iz Švice, trobarven: črn s somernimi rjavkastimi in belimi oznakami. Standard FCI navaja višino 65–72 cm za samce in 60–68 cm za samice, teže pa ne; WebMD navaja 52–64 kg za samce in 39–50 kg za samice. Pes te velikosti zraste do okoli 18–24 mesecev (PetMD), Royal Kennel Club pa navaja življenjsko dobo več kot 10 let (PetMD: 8–11 let).",
+        "Royal Kennel Club priporoča do eno uro gibanja na dan in česanje enkrat na teden ter navaja, da mu izpada dlaka in da potrebuje veliko hišo z velikim vrtom. PetMD ga opisuje kot odličnega družinskega psa, ki je nežen z otroki (igro z otroki je vedno treba nadzorovati), svetuje tedensko čiščenje ušes in naj se pes ne giba tik pred obrokom ali po njem zaradi nevarnosti napenjanja želodca (GDV); WebMD svetuje vsakodnevno ščetkanje zob in čim manj priboljškov, ker se pasma rada zredi.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "britanka, British Blue",

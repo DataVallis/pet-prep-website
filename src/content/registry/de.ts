@@ -271,6 +271,7 @@ const de: RegistryCopy = {
       kitten_parents_tests: "Fragen Sie, ob eines der Elterntiere Gesundheitsprobleme hatte, die das Kätzchen erben könnte.",
     },
     tests: {
+      dna_poag_pll: "DNA-Test auf primäres Offenwinkelglaukom und primäre Linsenluxation (POAG/PLL), erbliche Augenerkrankungen, die zur Erblindung führen können",
       hip_scheme: "Röntgenuntersuchung der Hüften auf Hüftdysplasie (UK: BVA/KC-Programm)",
       elbow_scheme: "Röntgenuntersuchung der Ellbogen auf Ellbogendysplasie (UK: BVA/KC-Programm)",
       eye_scheme: "Augenuntersuchung durch einen tierärztlichen Augenspezialisten (UK: BVA/KC/ISDS-Programm; bei manchen Rassen mit Gonioskopie)",
@@ -369,6 +370,7 @@ const de: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "Familiäres Shar-Pei-Fieber kann in der Rasse vorkommen: Schübe mit hohem Fieber, schmerzhaft geschwollenen Gelenken und geschwollenem Gesicht – sofort zum Tierarzt.",
     weight_gain: "Nimmt leicht zu – Portionen und Leckerlis im Blick behalten.",
     hip_elbow_dysplasia_eye_conditions: "Kann zu Hüft- und Ellbogendysplasie sowie zu mehreren erblichen Augenerkrankungen neigen.",
     cancer_risk: "Die Quellen beschreiben bei dieser Rasse ein höheres Krebsrisiko.",
@@ -470,6 +472,7 @@ const de: RegistryCopy = {
     familial_nephropathy: "In der Rasse kommt eine erbliche Nierenerkrankung (familiäre Nephropathie) vor; ein DNA-Test der Elterntiere ist verfügbar.",
     hereditary_nephritis: "In der Rasse kommt eine erbliche Nierenerkrankung vor (hereditäre Nephritis, auch hereditäre Glomerulopathie des Samojeden genannt).",
     panosteitis: "In der Rasse kann Panostitis auftreten, eine schmerzhafte Entzündung der langen Röhrenknochen, die meist junge, wachsende Hunde betrifft.",
+    splenic_torsion: "Eine Milzdrehung, die sofortige tierärztliche Hilfe braucht, kommt in dieser Rasse häufiger vor als bei anderen großen Rassen.",
     urinary_incontinence: "In der Rasse kann Harninkontinenz auftreten, ein unkontrolliertes Austreten von Urin.",
     osteochondritis: "In der Rasse kann Osteochondrosis dissecans (OCD) auftreten, eine Störung des Gelenkknorpels bei wachsenden Hunden.",
     scottie_cramp: "In der Rasse kommt der Scottie Cramp vor – kurze Episoden von Muskelkrämpfen, meist durch Aufregung ausgelöst; er ist nicht schmerzhaft.",
@@ -602,6 +605,22 @@ const de: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, Amerikanischer Rat Terrier",
+      text: [
+        "Der Rat Terrier ist ein kleiner amerikanischer Terrier, der in zwei Größen gezüchtet wird – Miniatur und Standard – mit kurzem, eng anliegendem, glattem und glänzendem Fell. Der Rassestandard erlaubt eine Widerristhöhe von bis zu 18 Zoll (46 cm), und PetMD nennt für beide Größen ein Gewicht von 10–25 Pfund (etwa 4,5–11 kg); ein Hund dieser Größe ist mit etwa 9–12 Monaten ausgewachsen (PetMD). VCA gibt eine Lebenserwartung von 12–16 Jahren an, PetMD 12–18 Jahre.",
+        "Der Rat Terrier Club of America sagt, Rat Terrier seien gut mit Kindern, besonders wenn sie mit ihnen aufwachsen, und kämen in einer Wohnung zurecht, bräuchten aber mindestens 30 Minuten Bewegung am Tag. PetMD schreibt, sie bräuchten viel körperliche und geistige Auslastung, seien nicht gern lange allein und haarten das ganze Jahr leicht; VCA empfiehlt, einmal pro Woche zu bürsten, und warnt, dass sie sich mit kleinen Haustieren, besonders Nagetieren, womöglich nicht vertragen.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
+    shar_pei: {
+      aka: "Chinesischer Shar-Pei, Chinese Shar-Pei, Sharpei",
+      text: [
+        "Der Shar Pei (in den USA „Chinese Shar-Pei“) ist ein aktiver, kompakter, quadratisch gebauter mittelgroßer Hund aus China mit kurzem, hartem, borstigem Fell in einer einzigen Farbe (jede außer Weiß), Falten an Kopf und Widerrist und breitem Fang. Der Standard des Royal Kennel Club gibt eine Widerristhöhe von 46–51 cm an, die PDSA ein Gewicht von 20–27 kg; ein Hund dieser Größe ist mit etwa 12–15 Monaten ausgewachsen (PetMD). Royal Kennel Club und PDSA geben eine Lebenserwartung von über 10 Jahren an, eine VetCompass-Studie an Hunden in Großbritannien fand jedoch einen Median von 7,3 Jahren.",
+        "Der Royal Kennel Club empfiehlt bis zu einer Stunde Bewegung pro Tag und Bürsten einmal pro Woche und führt die Rasse wegen Problemen mit Augenlidern und Hautfalten in Kategorie 2 von Breed Watch. Die PDSA beschreibt Shar Peis als treue, ergebene Familienhunde, die am besten zu erfahrenen Haltern und älteren Kindern passen, warnt vor einem hohen Jagdtrieb gegenüber kleineren Tieren und rät, die Hautfalten sauber und trocken zu halten und zwischen Fressen und Bewegung eine Pause einzulegen.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Der Border Collie ist ein mittelgroßer Hütehund aus Großbritannien, gebaut für Ausdauer und harte Arbeit. Sein Rassestandard beschreibt einen eifrigen, aufmerksamen, reaktionsschnellen und intelligenten Hund, der weder nervös noch aggressiv ist.",
@@ -1223,6 +1242,14 @@ const de: RegistryCopy = {
         "Die PDSA empfiehlt mindestens eine Stunde Bewegung pro Tag (etwa 60–90 Minuten), viel geistige Anregung und Bürsten einmal pro Woche; sie nennt Basenjis distanziert, aber vertrauenswürdig, eigenwillig und mit sehr schlechtem Gespür für den Straßenverkehr. WebMD sagt, dass sie allem nachjagen, was wie Beute aussieht, sehr hohe Zäune oder ständige Aufsicht brauchen und mit kleinen Kindern nur mäßig gut zurechtkommen, und rät, die Ohren wöchentlich zu reinigen und die Zähne mindestens zweimal pro Woche zu putzen.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "Großer Schweizer Sennenhund, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "Der Große Schweizer Sennenhund ist ein kräftiger, schwerknochiger und gut bemuskelter dreifarbiger Zughund aus der Schweiz: schwarz mit symmetrischen braunen und weißen Abzeichen. Der FCI-Standard gibt eine Widerristhöhe von 65–72 cm für Rüden und 60–68 cm für Hündinnen an, aber kein Gewicht; WebMD nennt 52–64 kg für Rüden und 39–50 kg für Hündinnen. Ein Hund dieser Größe ist mit etwa 18–24 Monaten ausgewachsen (PetMD), und der Royal Kennel Club gibt eine Lebenserwartung von über 10 Jahren an (PetMD: 8–11 Jahre).",
+        "Der Royal Kennel Club empfiehlt bis zu einer Stunde Bewegung pro Tag und Bürsten einmal pro Woche; er sagt, dass die Rasse haart und ein großes Haus mit großem Garten braucht. PetMD nennt die Rasse einen großartigen Familienhund, der sanft mit Kindern umgeht (jeder Kontakt sollte beaufsichtigt werden), rät, die Ohren wöchentlich zu reinigen und den Hund wegen der Gefahr einer Magendrehung (GDV) nicht direkt vor oder nach dem Fressen zu bewegen; WebMD rät, täglich die Zähne zu putzen und Leckerlis knapp zu halten, da die Rasse zu Übergewicht neigt.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "British Shorthair, British Blue",

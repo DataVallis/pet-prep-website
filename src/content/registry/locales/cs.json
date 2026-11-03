@@ -756,6 +756,15 @@
         "Konžský teriér"
       ]
     },
+    "greater_swiss_mountain_dog": {
+      "name": "Velký švýcarský salašnický pes",
+      "slug": "velky-svycarsky-salasnicky-pes",
+      "synonyms": [
+        "Velký švýcarský salašník",
+        "Grosser Schweizer Sennenhund",
+        "Greater Swiss Mountain Dog"
+      ]
+    },
     "maine_coon": {
       "name": "Mainská mývalí kočka",
       "slug": "mainska-myvali-kocka",
@@ -811,6 +820,22 @@
         "Bengal",
         "Bengal cat"
       ]
+    },
+    "shar_pei": {
+      "name": "Šar-pej",
+      "slug": "sar-pej",
+      "synonyms": [
+        "Shar Pei",
+        "Čínský šar-pej"
+      ]
+    },
+    "rat_terrier": {
+      "name": "Rat teriér",
+      "slug": "rat-terier",
+      "synonyms": [
+        "Rattie",
+        "Americký rat teriér"
+      ]
     }
   },
   "suitability_labels": {
@@ -856,7 +881,8 @@
       "short_muzzle_breathing": "kratší čenich – může mít potíže s dýcháním",
       "shorter_lifespan": "kratší délka života",
       "small_children": "do rodiny s malými dětmi",
-      "sun_protection": "holá kůže – potřebuje ochranu před sluncem"
+      "sun_protection": "holá kůže – potřebuje ochranu před sluncem",
+      "independent_older_children": "samostatný pes – lépe se staršími dětmi"
     }
   }
 }

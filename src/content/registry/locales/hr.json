@@ -774,6 +774,14 @@
         "Kongoanski terijer"
       ]
     },
+    "greater_swiss_mountain_dog": {
+      "name": "Veliki švicarski planinski pas",
+      "slug": "veliki-svicarski-planinski-pas",
+      "synonyms": [
+        "Grosser Schweizer Sennenhund",
+        "Greater Swiss Mountain Dog"
+      ]
+    },
     "maine_coon": {
       "name": "Maine coon",
       "slug": "maine-coon",
@@ -829,6 +837,22 @@
         "Bengal",
         "Bengal cat"
       ]
+    },
+    "shar_pei": {
+      "name": "Šarpej",
+      "slug": "sarpej",
+      "synonyms": [
+        "Shar Pei",
+        "Kineski šarpej"
+      ]
+    },
+    "rat_terrier": {
+      "name": "Rat terijer",
+      "slug": "rat-terijer",
+      "synonyms": [
+        "Rattie",
+        "Američki rat terijer"
+      ]
     }
   },
   "suitability_labels": {
@@ -874,7 +898,8 @@
       "short_muzzle_breathing": "kraća njuška – može teže disati",
       "shorter_lifespan": "kraći životni vijek",
       "small_children": "za obitelj s malom djecom",
-      "sun_protection": "gola koža – treba zaštitu od sunca"
+      "sun_protection": "gola koža – treba zaštitu od sunca",
+      "independent_older_children": "samostalan pas – bolji sa starijom djecom"
     }
   }
 }

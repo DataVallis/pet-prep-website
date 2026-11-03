@@ -647,6 +647,14 @@
       "name": "Basenji",
       "slug": "basenji"
     },
+    "greater_swiss_mountain_dog": {
+      "name": "Grote Zwitserse sennenhond",
+      "slug": "grote-zwitserse-sennenhond",
+      "synonyms": [
+        "Grosser Schweizer Sennenhund",
+        "Greater Swiss Mountain Dog"
+      ]
+    },
     "maine_coon": {
       "name": "Maine coon",
       "slug": "maine-coon"
@@ -685,6 +693,22 @@
       "synonyms": [
         "Bengal",
         "Bengaalse kat"
+      ]
+    },
+    "shar_pei": {
+      "name": "Shar Pei",
+      "slug": "shar-pei",
+      "synonyms": [
+        "Chinese Shar-Pei",
+        "Sharpei"
+      ]
+    },
+    "rat_terrier": {
+      "name": "Rat Terrier",
+      "slug": "rat-terrier",
+      "synonyms": [
+        "Rattie",
+        "Amerikaanse Rat Terrier"
       ]
     }
   },
@@ -731,7 +755,8 @@
       "short_muzzle_breathing": "kortere snuit – kan ademhalingsproblemen hebben",
       "shorter_lifespan": "kortere levensduur",
       "small_children": "gezinnen met jonge kinderen",
-      "sun_protection": "kale huid – heeft bescherming tegen de zon nodig"
+      "sun_protection": "kale huid – heeft bescherming tegen de zon nodig",
+      "independent_older_children": "zelfstandige hond – beter met oudere kinderen"
     }
   }
 }

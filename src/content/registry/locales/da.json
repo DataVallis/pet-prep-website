@@ -753,6 +753,31 @@
         "Bengalkat",
         "Bengal cat"
       ]
+    },
+    "shar_pei": {
+      "name": "Shar pei",
+      "slug": "shar-pei",
+      "synonyms": [
+        "Kinesisk shar pei",
+        "Sharpei"
+      ]
+    },
+    "greater_swiss_mountain_dog": {
+      "name": "Stor schweizisk sennenhund",
+      "slug": "stor-schweizisk-sennenhund",
+      "synonyms": [
+        "Grosser Schweizer Sennenhund",
+        "Greater Swiss Mountain Dog",
+        "Swissy"
+      ]
+    },
+    "rat_terrier": {
+      "name": "Rat terrier",
+      "slug": "rat-terrier",
+      "synonyms": [
+        "Rattie",
+        "Amerikansk rat terrier"
+      ]
     }
   },
   "suitability_labels": {
@@ -798,7 +823,8 @@
       "short_muzzle_breathing": "kort snude – kan få vejrtrækningsproblemer",
       "shorter_lifespan": "kortere levetid",
       "small_children": "familier med små børn",
-      "sun_protection": "nøgen hud – har brug for solbeskyttelse"
+      "sun_protection": "nøgen hud – har brug for solbeskyttelse",
+      "independent_older_children": "selvstændig hund – bedre med større børn"
     }
   }
 }

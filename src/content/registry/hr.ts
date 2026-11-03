@@ -349,6 +349,7 @@ const hr: RegistryCopy = {
       kitten_parents_tests: "Pitaj je li ijedan roditelj imao zdravstvenih problema koje bi mače moglo naslijediti.",
     },
     tests: {
+      dna_poag_pll: "DNK test na primarni glaukom otvorenog kuta i primarnu luksaciju leće (POAG/PLL), nasljedne bolesti očiju koje mogu dovesti do sljepoće",
       hip_scheme: "Rendgenski pregled kukova na displaziju kuka (UK: program BVA/KC)",
       elbow_scheme: "Rendgenski pregled laktova na displaziju lakta (UK: program BVA/KC)",
       eye_scheme: "Pregled očiju kod veterinarskog oftalmologa (UK: program BVA/KC/ISDS; za neke pasmine uz gonioskopiju)",
@@ -447,6 +448,7 @@ const hr: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "U pasmine se može pojaviti obiteljska groznica šarpeja: napadaji visoke temperature s bolnim, natečenim zglobovima i natečenim licem — odmah veterinaru.",
     weight_gain: "Lako se deblja – treba paziti na porcije i poslastice.",
     hip_elbow_dysplasia_eye_conditions: "Može biti sklon displaziji kuka i lakta te nekolicini nasljednih bolesti očiju.",
     cancer_risk: "Izvori opisuju veći rizik od raka u ovoj pasmini.",
@@ -585,6 +587,7 @@ const hr: RegistryCopy = {
     familial_nephropathy: "U pasmini se javlja nasljedna bolest bubrega (obiteljska nefropatija); dostupan je DNK test roditelja.",
     hereditary_nephritis: "U pasmini se javlja nasljedna bolest bubrega (nasljedni nefritis, poznat i kao nasljedna glomerulopatija samojeda).",
     panosteitis: "U pasmini se može pojaviti panosteitis, bolna upala dugih kostiju koja obično pogađa mlade pse u rastu.",
+    splenic_torsion: "Torzija slezene, koja zahtijeva hitnu veterinarsku pomoć, u ovoj se pasmini javlja češće nego kod drugih velikih pasmina.",
     urinary_incontinence: "U pasmini se može pojaviti urinarna inkontinencija, nekontrolirano curenje mokraće.",
     osteochondritis: "U pasmini se može pojaviti osteohondritis disekans (OCD), poremećaj zglobne hrskavice kod pasa u rastu.",
     scottie_cramp: "U pasmini se javlja „Scottie cramp“ – kratke epizode grčenja mišića, obično izazvane uzbuđenjem; nije bolno.",
@@ -735,6 +738,22 @@ const hr: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, američki rat terijer, Rat Terrier",
+      text: [
+        "Rat terijer malen je američki terijer koji se uzgaja u dvije veličine — minijaturnoj i standardnoj — s kratkom, priljubljenom, glatkom i sjajnom dlakom. Standard pasmine dopušta visinu u grebenu do 18 inča (46 cm), a PetMD za obje veličine navodi težinu od 10–25 funti (oko 4,5–11 kg); pas te veličine prestaje rasti oko 9.–12. mjeseca (PetMD). VCA navodi životni vijek od 12–16 godina, PetMD 12–18 godina.",
+        "Rat Terrier Club of America navodi da se rat terijeri dobro slažu s djecom, osobito ako odrastaju s njima, i snalaze se u stanu, ali trebaju barem 30 minuta kretanja dnevno. PetMD piše da im treba puno tjelesnih i mentalnih izazova, ne vole dugo biti sami i blago linjaju cijele godine; VCA savjetuje četkanje jednom tjedno i upozorava da se možda neće slagati s malim životinjama, osobito glodavcima.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
+    shar_pei: {
+      aka: "Shar Pei, kineski šarpej, Chinese Shar-Pei",
+      text: [
+        "Šarpej (u SAD-u „Chinese Shar-Pei”) aktivan je, kompaktan, kvadratno građen pas srednje veličine iz Kine s kratkom, oštrom, čekinjastom dlakom jedne boje (bilo koje osim bijele), naborima na glavi i grebenu te širokom njuškom. Standard Royal Kennel Cluba navodi visinu od 46–51 cm, a PDSA težinu od 20–27 kg; pas te veličine prestaje rasti oko 12.–15. mjeseca (PetMD). Royal Kennel Club i PDSA navode životni vijek dulji od 10 godina, no studija VetCompass na psima u Ujedinjenom Kraljevstvu pronašla je medijan od 7,3 godine.",
+        "Royal Kennel Club preporučuje do sat vremena kretanja dnevno i četkanje jednom tjedno te pasminu svrstava u 2. kategoriju programa Breed Watch zbog problema s kapcima i kožnim naborima. PDSA opisuje šarpeje kao odane, privržene obiteljske pse koji najbolje odgovaraju iskusnim vlasnicima i starijoj djeci, upozorava na snažan lovački nagon prema manjim životinjama te savjetuje da kožni nabori budu čisti i suhi i da između obroka i kretanja prođe neko vrijeme.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Border collie srednje je velik ovčarski pas iz Velike Britanije, stvoren za izdržljivost i težak rad. Standard pasmine opisuje ga kao poletnog, budnog, prijemčivog i inteligentnog psa koji nije ni nervozan ni agresivan.",
@@ -1357,6 +1376,14 @@ const hr: RegistryCopy = {
         "PDSA preporučuje najmanje sat vremena kretanja dnevno (oko 60–90 minuta), mnogo misaonih poticaja i četkanje jednom tjedno; basenjije naziva suzdržanima, ali pouzdanima, snažne volje i s vrlo slabim osjećajem za promet. WebMD kaže da će juriti za svime što izgleda kao plijen, da trebaju vrlo visoke ograde ili stalan nadzor i da su s malom djecom tek umjereno dobri te savjetuje čišćenje ušiju jednom tjedno i pranje zubi najmanje dvaput tjedno.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "veliki švicarski planinski pas, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "Veliki švicarski planinski pas snažan je, mišićav vučni pas jakih kostiju iz Švicarske, trobojan: crn sa simetričnim smeđim i bijelim oznakama. Standard FCI navodi visinu od 65–72 cm za mužjake i 60–68 cm za ženke, ali ne navodi težinu; WebMD navodi 52–64 kg za mužjake i 39–50 kg za ženke. Pas te veličine potpuno naraste s oko 18–24 mjeseca (PetMD), a Royal Kennel Club navodi životni vijek dulji od 10 godina (PetMD: 8–11 godina).",
+        "Royal Kennel Club preporučuje do sat vremena kretanja dnevno i četkanje jednom tjedno te navodi da pasmina linja i treba veliku kuću s velikim vrtom. PetMD ih opisuje kao izvrsne obiteljske pse koji su nježni s djecom (svaki kontakt s djecom treba nadzirati) i savjetuje čišćenje ušiju jednom tjedno te da pas ne trči neposredno prije ni poslije obroka zbog opasnosti od torzije želuca (GDV); WebMD savjetuje svakodnevno pranje zubi i što manje poslastica jer pasmina lako dobiva na težini.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "British Blue, britanska plava",

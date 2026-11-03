@@ -293,6 +293,7 @@ const fr: RegistryCopy = {
       kitten_parents_tests: "Demandez si l’un des parents a eu des problèmes de santé dont le chaton pourrait hériter.",
     },
     tests: {
+      dna_poag_pll: "Test ADN du glaucome primaire à angle ouvert et de la luxation primaire du cristallin (POAG/PLL), maladies oculaires héréditaires pouvant mener à la cécité",
       hip_scheme: "Dépistage radiographique de la dysplasie de la hanche (Royaume-Uni : programme BVA/KC)",
       elbow_scheme: "Dépistage radiographique de la dysplasie du coude (Royaume-Uni : programme BVA/KC)",
       eye_scheme: "Examen des yeux par un vétérinaire ophtalmologiste (Royaume-Uni : programme BVA/KC/ISDS ; avec gonioscopie pour certaines races)",
@@ -391,6 +392,7 @@ const fr: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "La fièvre familiale du Shar Pei peut survenir dans la race : des accès de forte fièvre avec des articulations douloureuses et gonflées et un visage enflé — consultez un vétérinaire sans attendre.",
     weight_gain: "Prend facilement du poids – il faut surveiller les portions et les friandises.",
     hip_elbow_dysplasia_eye_conditions: "Peut être sujet à la dysplasie de la hanche et du coude ainsi qu’à plusieurs maladies oculaires héréditaires.",
     cancer_risk: "Les sources décrivent un risque de cancer plus élevé dans cette race.",
@@ -492,6 +494,7 @@ const fr: RegistryCopy = {
     familial_nephropathy: "Une maladie rénale héréditaire (néphropathie familiale) s’observe dans la race ; un test ADN des parents existe.",
     hereditary_nephritis: "Une maladie rénale héréditaire (néphrite héréditaire, aussi appelée glomérulopathie héréditaire du samoyède) s’observe dans la race.",
     panosteitis: "La panostéite, une inflammation douloureuse des os longs qui touche généralement les jeunes chiens en croissance, peut survenir dans la race.",
+    splenic_torsion: "La torsion de la rate, qui exige des soins vétérinaires urgents, est plus fréquente dans cette race que chez les autres grandes races.",
     urinary_incontinence: "L’incontinence urinaire, une fuite d’urine incontrôlée, peut survenir dans la race.",
     osteochondritis: "L’ostéochondrite disséquante (OCD), un trouble du cartilage articulaire chez les chiens en croissance, peut survenir dans la race.",
     scottie_cramp: "La « crampe du scottie » – de courts épisodes de crampes musculaires, généralement déclenchés par l’excitation – s’observe dans la race ; elle n’est pas douloureuse.",
@@ -624,6 +627,22 @@ const fr: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, Rat Terrier américain",
+      text: [
+        "Le Rat Terrier est un petit terrier américain élevé en deux tailles — miniature et standard — au poil court, bien couché, lisse et brillant. Le standard de la race admet une hauteur au garrot allant jusqu’à 18 pouces (46 cm), et PetMD indique un poids de 10 à 25 livres (environ 4,5 à 11 kg) pour les deux tailles ; un chien de cette taille a fini sa croissance vers 9 à 12 mois (PetMD). VCA indique une espérance de vie de 12 à 16 ans, PetMD de 12 à 18 ans.",
+        "Le Rat Terrier Club of America indique que les Rat Terriers s’entendent bien avec les enfants, surtout s’ils grandissent avec eux, et s’adaptent à un appartement, mais ont besoin d’au moins 30 minutes d’exercice par jour. PetMD précise qu’ils ont besoin de beaucoup de stimulation physique et mentale, n’aiment pas rester longtemps seuls et perdent un peu de poils toute l’année ; VCA conseille un brossage par semaine et prévient qu’ils ne s’entendent pas forcément avec les petits animaux, surtout les rongeurs.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
+    shar_pei: {
+      aka: "Shar-Pei chinois, Chinese Shar-Pei, Sharpei",
+      text: [
+        "Le Shar Pei (« Chinese Shar-Pei » aux États-Unis) est un chien actif, compact, de construction carrée et de taille moyenne, originaire de Chine, au poil court, dur et hérissé d’une seule couleur (toutes sauf le blanc), avec des plis sur la tête et le garrot et un museau large. Le standard du Royal Kennel Club indique une hauteur de 46 à 51 cm et la PDSA un poids de 20 à 27 kg ; un chien de cette taille a fini sa croissance vers 12 à 15 mois (PetMD). Le Royal Kennel Club et la PDSA indiquent une espérance de vie de plus de 10 ans, mais une étude VetCompass sur des chiens au Royaume-Uni a trouvé une médiane de 7,3 ans.",
+        "Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour et un brossage par semaine, et classe la race en catégorie 2 de Breed Watch en raison de problèmes de paupières et de plis de peau. La PDSA décrit les Shar Peis comme des chiens de famille fidèles et dévoués, qui conviennent le mieux à des maîtres expérimentés et à des enfants plus âgés, met en garde contre un fort instinct de prédation envers les petits animaux et conseille de garder les plis de peau propres et secs et de laisser un intervalle entre le repas et l’exercice.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "Le Border Collie est un chien de troupeau de taille moyenne originaire de Grande-Bretagne, bâti pour l’endurance et le travail intense. Son standard décrit un chien vif, alerte, réceptif et intelligent, ni craintif ni agressif.",
@@ -1245,6 +1264,14 @@ const fr: RegistryCopy = {
         "La PDSA recommande au moins une heure d’exercice par jour (environ 60 à 90 minutes), beaucoup de stimulation mentale et un brossage hebdomadaire ; elle décrit les Basenjis comme distants mais fiables, volontaires et très peu conscients des dangers de la route. Selon WebMD, ils poursuivent tout ce qui ressemble à une proie, ont besoin de clôtures très hautes ou d’une surveillance constante et ne sont que moyennement adaptés aux jeunes enfants ; il conseille de nettoyer les oreilles chaque semaine et de brosser les dents au moins deux fois par semaine.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "Grand Bouvier Suisse, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "Le Grand Bouvier Suisse est un chien de trait tricolore de Suisse, robuste, à forte ossature et bien musclé : noir avec des marques feu et blanches symétriques. Le standard FCI indique une hauteur de 65 à 72 cm pour les mâles et de 60 à 68 cm pour les femelles, sans poids ; WebMD indique 52 à 64 kg pour les mâles et 39 à 50 kg pour les femelles. Un chien de cette taille atteint sa taille adulte vers 18 à 24 mois (PetMD), et le Royal Kennel Club indique une espérance de vie de plus de 10 ans (PetMD : 8 à 11 ans).",
+        "Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour et un brossage hebdomadaire, et indique que la race perd ses poils et convient à une grande maison avec un grand jardin. Selon PetMD, ce sont d’excellents chiens de famille, doux avec les enfants (toute interaction doit être surveillée) ; il conseille de nettoyer les oreilles chaque semaine et de ne pas faire faire d’exercice juste avant ou après les repas, à cause du risque de dilatation-torsion de l’estomac (GDV). WebMD conseille de brosser les dents chaque jour et de limiter les friandises, car la race a tendance à prendre du poids.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "British Blue, British à poil court",

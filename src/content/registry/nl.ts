@@ -297,6 +297,7 @@ const nl: RegistryCopy = {
       kitten_parents_tests: "Vraag of een van de ouderdieren gezondheidsproblemen heeft gehad die de kitten kan erven.",
     },
     tests: {
+      dna_poag_pll: "DNA-test op primair openhoekglaucoom en primaire lensluxatie (POAG/PLL), erfelijke oogziekten die tot blindheid kunnen leiden",
       hip_scheme: "Röntgenonderzoek op heupdysplasie (VK: BVA/KC-programma)",
       elbow_scheme: "Röntgenonderzoek op elleboogdysplasie (VK: BVA/KC-programma)",
       eye_scheme: "Oogonderzoek door een veterinaire oogspecialist (VK: BVA/KC/ISDS-programma; bij sommige rassen met gonioscopie)",
@@ -395,6 +396,7 @@ const nl: RegistryCopy = {
     },
   },
   health: {
+    shar_pei_fever: "Familiale Shar-Pei-koorts kan bij het ras voorkomen: aanvallen van hoge koorts met pijnlijke, gezwollen gewrichten en een gezwollen gezicht — ga meteen naar de dierenarts.",
     weight_gain: "Komt makkelijk aan – let op de porties en de snoepjes.",
     hip_elbow_dysplasia_eye_conditions: "Kan vatbaar zijn voor heup- en elleboogdysplasie en voor verschillende erfelijke oogaandoeningen.",
     cancer_risk: "Bronnen beschrijven een hoger risico op kanker bij dit ras.",
@@ -496,6 +498,7 @@ const nl: RegistryCopy = {
     familial_nephropathy: "Een erfelijke nierziekte (familiaire nefropathie) komt bij het ras voor; er is een DNA-test voor de ouderdieren beschikbaar.",
     hereditary_nephritis: "Een erfelijke nierziekte (erfelijke nefritis, ook wel erfelijke glomerulopathie van de samojeed genoemd) komt bij het ras voor.",
     panosteitis: "Panosteïtis, een pijnlijke ontsteking van de lange pijpbeenderen die meestal jonge, groeiende honden treft, kan bij het ras voorkomen.",
+    splenic_torsion: "Een draaiing van de milt, die dringend dierenartsenzorg nodig heeft, komt bij dit ras vaker voor dan bij andere grote rassen.",
     urinary_incontinence: "Urine-incontinentie, het onbedoeld verliezen van urine, kan bij het ras voorkomen.",
     osteochondritis: "Osteochondritis dissecans (OCD), een aandoening van het gewrichtskraakbeen bij groeiende honden, kan bij het ras voorkomen.",
     scottie_cramp: "Scottie cramp – korte aanvallen van spierkrampen, meestal door opwinding – komt bij het ras voor; het doet geen pijn.",
@@ -628,6 +631,22 @@ const nl: RegistryCopy = {
     },
   },
   intros: {
+    rat_terrier: {
+      aka: "Rattie, Amerikaanse Rat Terrier",
+      text: [
+        "De Rat Terrier is een kleine Amerikaanse terriër die in twee maten wordt gefokt — miniatuur en standaard — met een korte, nauw aanliggende, gladde en glanzende vacht. De rasstandaard staat een schofthoogte tot 18 inch (46 cm) toe, en PetMD noemt voor beide maten een gewicht van 10–25 pond (ongeveer 4,5–11 kg); een hond van dit formaat is rond 9–12 maanden volgroeid (PetMD). VCA noemt een levensduur van 12–16 jaar, PetMD 12–18 jaar.",
+        "De Rat Terrier Club of America zegt dat Rat Terriers goed met kinderen omgaan, vooral als ze met hen opgroeien, en het in een appartement redden, maar minstens 30 minuten beweging per dag nodig hebben. PetMD schrijft dat ze veel lichamelijke en mentale uitdaging nodig hebben, niet graag lang alleen zijn en het hele jaar licht verharen; VCA raadt eenmaal per week borstelen aan en waarschuwt dat ze misschien niet goed samengaan met kleine huisdieren, vooral knaagdieren.",
+      ],
+      sources: ["S650", "S648", "S10", "S647"],
+    },
+    shar_pei: {
+      aka: "Chinese Shar-Pei, Sharpei",
+      text: [
+        "De Shar Pei (in de VS „Chinese Shar-Pei”) is een actieve, compacte, vierkant gebouwde middelgrote hond uit China met een korte, harde, borstelige vacht in één effen kleur (elke kleur behalve wit), plooien op het hoofd en de schoft en een brede snuit. De standaard van de Royal Kennel Club noemt een schofthoogte van 46–51 cm en de PDSA een gewicht van 20–27 kg; een hond van dit formaat is rond 12–15 maanden volgroeid (PetMD). De Royal Kennel Club en de PDSA noemen een levensduur van meer dan 10 jaar, maar een VetCompass-onderzoek bij honden in het Verenigd Koninkrijk vond een mediaan van 7,3 jaar.",
+        "De Royal Kennel Club raadt tot een uur beweging per dag en eenmaal per week borstelen aan, en plaatst het ras in categorie 2 van Breed Watch vanwege problemen met de oogleden en de huidplooien. De PDSA beschrijft Shar Peis als trouwe, toegewijde gezinshonden die het best passen bij ervaren eigenaren en oudere kinderen, waarschuwt voor een sterk jachtinstinct tegenover kleinere dieren en raadt aan de huidplooien schoon en droog te houden en tussen eten en beweging wat tijd te laten.",
+      ],
+      sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
+    },
     border_collie: {
       text: [
         "De border collie is een middelgrote herdershond uit Groot-Brittannië, gebouwd voor uithoudingsvermogen en hard werk. De rasstandaard beschrijft een gretige, alerte, ontvankelijke en intelligente hond die niet nerveus en niet agressief is.",
@@ -1249,6 +1268,14 @@ const nl: RegistryCopy = {
         "De PDSA raadt minstens een uur beweging per dag aan (ongeveer 60–90 minuten), veel mentale uitdaging en één keer per week borstelen; ze noemt basenji’s afstandelijk maar betrouwbaar, eigenwijs en met heel weinig verkeersinzicht. WebMD zegt dat ze alles achternazitten wat op een prooi lijkt, heel hoge hekken of voortdurend toezicht nodig hebben en maar matig goed met jonge kinderen omgaan, en adviseert de oren elke week schoon te maken en de tanden minstens twee keer per week te poetsen.",
       ],
       sources: ["S642", "S644", "S646", "S10"],
+    },
+    greater_swiss_mountain_dog: {
+      aka: "Grote Zwitserse Sennenhond, Greater Swiss Mountain Dog, Swissy",
+      text: [
+        "De Grote Zwitserse Sennenhond is een stevige, zwaar gebouwde en goed gespierde driekleurige trekhond uit Zwitserland: zwart met symmetrische bruine en witte aftekeningen. De FCI-standaard noemt een schofthoogte van 65–72 cm voor reuen en 60–68 cm voor teven, maar geen gewicht; WebMD noemt 52–64 kg voor reuen en 39–50 kg voor teven. Een hond van dit formaat is volgroeid op ongeveer 18–24 maanden (PetMD), en de Royal Kennel Club noemt een levensduur van meer dan 10 jaar (PetMD: 8–11 jaar).",
+        "De Royal Kennel Club raadt tot een uur beweging per dag aan en één keer per week borstelen, en zegt dat het ras verhaart en een groot huis met een grote tuin nodig heeft. PetMD noemt ze geweldige gezinshonden die zachtaardig zijn met kinderen (elk contact moet onder toezicht), en adviseert de oren elke week schoon te maken en de hond vlak voor of na het eten niet te laten bewegen vanwege het risico op een maagkanteling (GDV); WebMD adviseert de tanden dagelijks te poetsen en weinig snoepjes te geven, omdat het ras snel te zwaar wordt.",
+      ],
+      sources: ["S653", "S654", "S656", "S658", "S10"],
     },
     british_shorthair: {
       aka: "British shorthair, British blue",
