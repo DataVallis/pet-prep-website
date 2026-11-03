@@ -362,6 +362,8 @@ const de: RegistryCopy = {
       dna_gm2: "DNA-Test auf GM2-Gangliosidose (eine erbliche Erkrankung des Nervensystems)",
       dna_vwd3: "DNA-Test auf Von-Willebrand-Krankheit Typ 3 (vWD3), eine erbliche Blutgerinnungsstörung",
       dna_pra_rcd3: "DNA-Test auf progressive Retinaatrophie (PRA-rcd3)",
+      dna_clad: "DNA-Test auf Canine Leukozyten-Adhäsionsdefizienz (CLAD), eine erbliche Störung des Immunsystems",
+      dna_pra_rcd1: "DNA-Test auf progressive Retinaatrophie (rcd1)",
       dna_vwd2: "DNA-Test auf Von-Willebrand-Krankheit Typ 2 (vWD2), eine erbliche Blutgerinnungsstörung",
       dna_l2hga: "DNA-Test auf L-2-Hydroxyglutarazidurie (L-2-HGA), eine erbliche Stoffwechselerkrankung des Nervensystems",
       dna_pll: "DNA-Test auf primäre Linsenluxation (PLL), eine erbliche Augenerkrankung, bei der sich die Linse verschiebt",
@@ -605,6 +607,14 @@ const de: RegistryCopy = {
     },
   },
   intros: {
+    irish_setter: {
+      aka: "Irischer Setter, Irischer Roter Setter, Irish Setter",
+      text: [
+        "Der Irish Red Setter (Irischer Setter) ist ein eleganter, athletischer Vorstehhund aus Irland, gezüchtet für die weiträumige Suche. Der FCI-Standard beschreibt nur eine Farbe — sattes Kastanienrot ohne jede Spur von Schwarz — und eine Widerristhöhe von 58–67 cm für Rüden und 55–62 cm für Hündinnen; der amerikanische Rassestandard nennt etwa 70 Pfund (rund 32 kg) als ideal für Rüden und 60 Pfund (rund 27 kg) für Hündinnen. Ein Hund dieser Größe ist mit etwa 15–18 Monaten ausgewachsen (PetMD), und der Royal Kennel Club gibt eine Lebenserwartung von über 10 Jahren an.",
+        "Der Royal Kennel Club empfiehlt mehr als 2 Stunden Bewegung am Tag und mehr als einmal pro Woche Fellpflege, gibt an, dass er haart und ein großes Haus mit großem Garten braucht, und führt ihn in Breed-Watch-Kategorie 1. Die PDSA beschreibt sehr freundliche, anhängliche Hunde, die gut mit Kindern und anderen Haustieren auskommen, und rät zu Fellpflege 2- bis 3-mal pro Woche; PetMD empfiehlt, die Ohren wöchentlich zu kontrollieren und zu reinigen, und schreibt, dass Irish Setter viel menschliche Gesellschaft brauchen.",
+      ],
+      sources: ["S675", "S676", "S678", "S680", "S10"],
+    },
     brussels_griffon: {
       aka: "Brüsseler Griffon, Brussels Griffon",
       text: [

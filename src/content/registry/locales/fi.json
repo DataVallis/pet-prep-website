@@ -806,6 +806,14 @@
         "Griffon Bruxellois",
         "Brussels Griffon"
       ]
+    },
+    "irish_setter": {
+      "name": "Irlanninsetteri",
+      "slug": "irlanninsetteri",
+      "synonyms": [
+        "Irish Setter",
+        "Punainen setteri"
+      ]
     }
   },
   "suitability_labels": {

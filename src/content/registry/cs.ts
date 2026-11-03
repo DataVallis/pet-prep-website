@@ -437,6 +437,8 @@ const cs: RegistryCopy = {
       dna_gm2: "DNA test na gangliosidózu GM2 (dědičné onemocnění nervové soustavy)",
       dna_vwd3: "DNA test na von Willebrandovu chorobu typu 3 (vWD3), dědičnou poruchu srážlivosti krve",
       dna_pra_rcd3: "DNA test na progresivní atrofii sítnice (PRA-rcd3)",
+      dna_clad: "DNA test na deficit adheze leukocytů (CLAD), dědičnou poruchu imunity",
+      dna_pra_rcd1: "DNA test na progresivní atrofii sítnice (rcd1)",
       dna_vwd2: "DNA test na von Willebrandovu chorobu typu 2 (vWD2), dědičnou poruchu srážlivosti krve",
       dna_l2hga: "DNA test na L-2-hydroxyglutarovou acidurii (L-2-HGA), dědičné metabolické onemocnění nervové soustavy",
       dna_pll: "DNA test na primární luxaci čočky (PLL), dědičné onemocnění očí, při kterém se čočka posune ze svého místa",
@@ -683,6 +685,14 @@ const cs: RegistryCopy = {
     },
   },
   intros: {
+    irish_setter: {
+      aka: "Irský červený setr, Irish Setter",
+      text: [
+        "Irský setr (irský červený setr) je štíhlý, atletický ohař z Irska, vyšlechtěný k hledání zvěře na rozlehlém terénu. Standard FCI popisuje jedinou barvu — sytě kaštanovou bez stopy černé — a výšku 58–67 cm u psů a 55–62 cm u fen; americký standard plemene uvádí jako ideál asi 70 liber (přibližně 32 kg) u psa a 60 liber (přibližně 27 kg) u feny. Pes této velikosti dorůstá zhruba v 15–18 měsících (PetMD) a The Royal Kennel Club uvádí délku života přes 10 let.",
+        "The Royal Kennel Club doporučuje více než 2 hodiny pohybu denně a péči o srst víckrát týdně, uvádí, že pelichá a potřebuje velký dům s velkou zahradou, a řadí ho do kategorie 1 programu Breed Watch. PDSA ho popisuje jako velmi přátelského a mazlivého psa, který dobře vychází s dětmi i jinými zvířaty, a radí péči o srst 2–3krát týdně; PetMD doporučuje každý týden kontrolovat a čistit uši a píše, že irští setři potřebují hodně lidské společnosti.",
+      ],
+      sources: ["S675", "S676", "S678", "S680", "S10"],
+    },
     brussels_griffon: {
       aka: "Griffon Bruxellois, Brussels Griffon",
       text: [

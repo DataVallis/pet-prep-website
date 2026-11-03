@@ -478,6 +478,8 @@ const fi: RegistryCopy = {
       dna_gm2: "DNA-testi: GM2-gangliosidoosi (perinnöllinen hermoston sairaus)",
       dna_vwd3: "DNA-testi: von Willebrandin tauti, tyyppi 3 (vWD3) – perinnöllinen verenvuotohäiriö",
       dna_pra_rcd3: "DNA-testi: etenevä verkkokalvon surkastuma (PRA-rcd3)",
+      dna_clad: "DNA-testi: koiran leukosyyttien adheesiovaje (CLAD), perinnöllinen immuunipuutos",
+      dna_pra_rcd1: "DNA-testi: etenevä verkkokalvon surkastuma (rcd1)",
       dna_vwd2: "DNA-testi: von Willebrandin tauti, tyyppi 2 (vWD2) – perinnöllinen verenvuotohäiriö",
       dna_l2hga: "DNA-testi: L-2-hydroksiglutaariasiduria (L-2-HGA) – perinnöllinen hermoston aineenvaihduntasairaus",
       dna_pll: "DNA-testi: primaarinen linssiluksaatio (PLL) – perinnöllinen silmäsairaus, jossa mykiö siirtyy paikaltaan",
@@ -784,6 +786,14 @@ const fi: RegistryCopy = {
     },
   },
   intros: {
+    irish_setter: {
+      aka: "Irish Setter, punainen setteri",
+      text: [
+        "Irlanninsetteri (Irish Red Setter) on hoikka, urheilullinen kanakoira Irlannista, jalostettu etsimään riistaa laajalta alueelta. FCI:n rotumääritelmä kuvaa vain yhden värin — syvän kastanjanpunaisen ilman mustaa — ja säkäkorkeudeksi uroksilla 58–67 cm ja nartuilla 55–62 cm; amerikkalainen rotumääritelmä pitää ihanteena noin 70 paunaa (noin 32 kg) urokselle ja 60 paunaa (noin 27 kg) nartulle. Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD), ja The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta.",
+        "The Royal Kennel Club suosittelee yli 2 tuntia liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa, kertoo rodun karvaavan ja sopivan isoon taloon, jossa on iso piha, ja sijoittaa sen Breed Watch -luokkaan 1. PDSA kuvaa erittäin ystävällisiä, kiintyviä koiria, jotka tulevat hyvin toimeen lasten ja muiden lemmikkien kanssa, ja neuvoo hoitamaan turkkia 2–3 kertaa viikossa; PetMD suosittelee korvien tarkistamista ja puhdistamista viikoittain ja kirjoittaa, että irlanninsetterit tarvitsevat paljon ihmisten seuraa.",
+      ],
+      sources: ["S675", "S676", "S678", "S680", "S10"],
+    },
     brussels_griffon: {
       aka: "Griffon Bruxellois, Brussels Griffon",
       text: [

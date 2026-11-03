@@ -388,6 +388,8 @@ const nl: RegistryCopy = {
       dna_gm2: "DNA-test op GM2-gangliosidose (een erfelijke ziekte van het zenuwstelsel)",
       dna_vwd3: "DNA-test op de ziekte van Von Willebrand type 3 (vWD3), een erfelijke bloedingsstoornis",
       dna_pra_rcd3: "DNA-test op progressieve retina-atrofie (PRA-rcd3)",
+      dna_clad: "DNA-test op canine leukocytenadhesiedeficiëntie (CLAD), een erfelijke afweerstoornis",
+      dna_pra_rcd1: "DNA-test op progressieve retina-atrofie (rcd1)",
       dna_vwd2: "DNA-test op de ziekte van Von Willebrand type 2 (vWD2), een erfelijke bloedingsstoornis",
       dna_l2hga: "DNA-test op L-2-hydroxyglutaarzuuracidurie (L-2-HGA), een erfelijke stofwisselingsziekte van het zenuwstelsel",
       dna_pll: "DNA-test op primaire lensluxatie (PLL), een erfelijke oogziekte waarbij de lens verschuift",
@@ -631,6 +633,14 @@ const nl: RegistryCopy = {
     },
   },
   intros: {
+    irish_setter: {
+      aka: "Ierse rode setter, Irish Setter",
+      text: [
+        "De Ierse setter (Ierse rode setter) is een slanke, atletische staande hond uit Ierland, gefokt om ruim te zoeken. De FCI-standaard beschrijft één kleur — diep kastanjerood zonder spoor van zwart — en een schofthoogte van 58–67 cm voor reuen en 55–62 cm voor teven; de Amerikaanse rasstandaard noemt ongeveer 70 pond (circa 32 kg) ideaal voor een reu en 60 pond (circa 27 kg) voor een teef. Een hond van dit formaat is volgroeid rond 15–18 maanden (PetMD), en The Royal Kennel Club noemt een levensduur van meer dan 10 jaar.",
+        "The Royal Kennel Club raadt meer dan 2 uur beweging per dag aan en vachtverzorging vaker dan eens per week, zegt dat het ras verhaart en past bij een groot huis met een grote tuin, en plaatst het in Breed Watch-categorie 1. De PDSA beschrijft zeer vriendelijke, aanhankelijke honden die goed overweg kunnen met kinderen en andere huisdieren en raadt vachtverzorging 2 tot 3 keer per week aan; PetMD raadt aan de oren wekelijks te controleren en schoon te maken en schrijft dat Ierse setters veel menselijk gezelschap nodig hebben.",
+      ],
+      sources: ["S675", "S676", "S678", "S680", "S10"],
+    },
     brussels_griffon: {
       aka: "Griffon Bruxellois, Brussels Griffon",
       text: [

@@ -392,6 +392,8 @@ const it: RegistryCopy = {
       dna_gm2: "Test del DNA per la gangliosidosi GM2 (una malattia ereditaria del sistema nervoso)",
       dna_vwd3: "Test del DNA per la malattia di von Willebrand di tipo 3 (vWD3), un disturbo ereditario della coagulazione",
       dna_pra_rcd3: "Test del DNA per l’atrofia progressiva della retina (PRA-rcd3)",
+      dna_clad: "Test del DNA per il deficit di adesione leucocitaria canina (CLAD), un disturbo immunitario ereditario",
+      dna_pra_rcd1: "Test del DNA per l’atrofia progressiva della retina (rcd1)",
       dna_vwd2: "Test del DNA per la malattia di von Willebrand di tipo 2 (vWD2), un disturbo ereditario della coagulazione",
       dna_l2hga: "Test del DNA per l’aciduria L-2-idrossiglutarica (L-2-HGA), una malattia metabolica ereditaria del sistema nervoso",
       dna_pll: "Test del DNA per la lussazione primaria del cristallino (PLL), una malattia ereditaria degli occhi in cui il cristallino si sposta dalla sua sede",
@@ -635,6 +637,14 @@ const it: RegistryCopy = {
     },
   },
   intros: {
+    irish_setter: {
+      aka: "Setter irlandese rosso, Irish Setter",
+      text: [
+        "Il setter irlandese (setter irlandese rosso) è un cane da ferma slanciato e atletico originario dell’Irlanda, selezionato per cercare la selvaggina su ampi terreni. Lo standard FCI descrive un solo colore — castano intenso senza traccia di nero — e un’altezza di 58–67 cm per i maschi e 55–62 cm per le femmine; lo standard americano della razza considera ideali circa 70 libbre (circa 32 kg) per un maschio e 60 libbre (circa 27 kg) per una femmina. Un cane di questa taglia completa la crescita verso i 15–18 mesi (PetMD), e il Royal Kennel Club indica un’aspettativa di vita di oltre 10 anni.",
+        "Il Royal Kennel Club raccomanda più di 2 ore di movimento al giorno e la cura del mantello più di una volta alla settimana, indica che la razza perde il pelo e ha bisogno di una casa grande con un grande giardino, e la colloca nella categoria 1 di Breed Watch. La PDSA descrive cani molto cordiali e affettuosi che vanno d’accordo con i bambini e con gli altri animali e consiglia la cura del mantello 2 o 3 volte alla settimana; PetMD raccomanda di controllare e pulire le orecchie ogni settimana e scrive che i setter irlandesi hanno bisogno di molta compagnia umana.",
+      ],
+      sources: ["S675", "S676", "S678", "S680", "S10"],
+    },
     brussels_griffon: {
       aka: "Grifone di Bruxelles, Brussels Griffon",
       text: [

@@ -844,6 +844,14 @@
         "Griffon Bruxellois",
         "Brussels Griffon"
       ]
+    },
+    "irish_setter": {
+      "name": "Irský setr",
+      "slug": "irsky-setr",
+      "synonyms": [
+        "Irský červený setr",
+        "Irish Setter"
+      ]
     }
   },
   "suitability_labels": {

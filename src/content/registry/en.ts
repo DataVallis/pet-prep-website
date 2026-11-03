@@ -360,6 +360,8 @@ const en: RegistryCopy = {
       dna_gm2: "DNA test for GM2 gangliosidosis (an inherited disease of the nervous system)",
       dna_vwd3: "DNA test for von Willebrand disease type 3 (vWD3), an inherited bleeding disorder",
       dna_pra_rcd3: "DNA test for progressive retinal atrophy (PRA-rcd3)",
+      dna_clad: "DNA test for canine leukocyte adhesion deficiency (CLAD), an inherited immune disorder",
+      dna_pra_rcd1: "DNA test for progressive retinal atrophy (rcd1)",
       dna_vwd2: "DNA test for von Willebrand disease type 2 (vWD2), an inherited bleeding disorder",
       dna_l2hga: "DNA test for L-2-hydroxyglutaric aciduria (L-2-HGA), an inherited metabolic disease of the nervous system",
       dna_pll: "DNA test for primary lens luxation (PLL), an inherited eye disease in which the lens slips out of place",
@@ -602,6 +604,14 @@ const en: RegistryCopy = {
     },
   },
   intros: {
+    irish_setter: {
+      aka: "Irish Red Setter, Red Setter",
+      text: [
+        "The Irish Setter (Irish Red Setter) is a racy, athletic gundog from Ireland, bred to range and hunt. The FCI standard describes one colour — rich chestnut with no trace of black — and a height of 58–67 cm for males and 55–62 cm for females; the American breed standard calls about 70 pounds (about 32 kg) ideal for a male and 60 pounds (about 27 kg) for a female. A dog of this size is fully grown at about 15–18 months (PetMD), and the Royal Kennel Club gives a lifespan of over 10 years.",
+        "The Royal Kennel Club recommends more than 2 hours of exercise a day and grooming more than once a week, says the breed sheds and suits a large house with a large garden, and lists it in Breed Watch Category 1. The PDSA describes very friendly, affectionate dogs that get on well with children and other pets and advises grooming 2 or 3 times a week; PetMD recommends weekly ear checks and cleaning and says Irish Setters need plenty of human company.",
+      ],
+      sources: ["S675", "S676", "S678", "S680", "S10"],
+    },
     brussels_griffon: {
       aka: "Griffon Bruxellois, Griffon, Belgium Griffon",
       text: [

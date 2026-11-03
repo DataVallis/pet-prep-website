@@ -718,6 +718,14 @@
         "Griffon Bruxellois",
         "Brussels Griffon"
       ]
+    },
+    "irish_setter": {
+      "name": "Ierse setter",
+      "slug": "ierse-setter",
+      "synonyms": [
+        "Ierse rode setter",
+        "Irish Setter"
+      ]
     }
   },
   "suitability_labels": {
