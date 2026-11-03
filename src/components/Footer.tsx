@@ -67,6 +67,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                 {g.links.flatMap((k) => [
                   <Link key={k} href={englishOnlyPages.includes(k) ? pathFor("en", k) : pathFor(locale, k)} hrefLang={englishOnlyPages.includes(k) ? "en" : undefined} className="hover:text-fog">
                     {dict.pages[k].navLabel ?? dict.pages[k].eyebrow}
+                    {englishOnlyPages.includes(k) && locale !== "en" ? <span className="ml-1 text-xs font-semibold opacity-70">(EN)</span> : null}
                   </Link>,
                   // Species catalogues of the animal register, indented under "Animals".
                   ...(k === "animals"

@@ -26,12 +26,12 @@ export type Status = "live" | "building" | "planned";
 
 export const investorsCopy = {
   meta: {
-    title: "PetPrep for investors — one founder, a content engine, a 15-year product",
+    title: "PetPrep for investors: one founder and a content engine, building a 15-year product",
     description:
       "PetPrep lets a child prove they're ready for a pet in a 12-week realistic simulation and stays with the family for the pet's whole life. Live numbers, revenue map and how to request the investor brief.",
   },
   eyebrow: "For investors",
-  title: "One founder. A content engine. A product families keep for 15 years.",
+  title: "One founder and a content engine, building a product families keep for 15 years.",
   lead: "PetPrep lets a child prove they're ready for a pet in a 12-week realistic simulation — and stays with the family for the pet's whole life. Everything around it, from our series to a pet-care library where every fact has a source, exists to bring families in at near-zero cost.",
   watch: "Watch “12 Weeks” on YouTube",
   brief: "Request the investor brief",

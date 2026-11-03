@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import { defaultLocale, isLocale, locales, localeMeta, pageKeyFromSlug, pathFor, type Locale, type RouteKey } from "@/i18n/config";
+import { defaultLocale, englishOnlyPages, isLocale, locales, localeMeta, pageKeyFromSlug, pathFor, type Locale, type RouteKey } from "@/i18n/config";
 
 /** Works out which page the visitor is on from the public URL. */
 function currentRoute(pathname: string): { locale: Locale; key: RouteKey } {
@@ -49,6 +49,9 @@ export function LanguageSwitcher({ label, dark = false, align = "right" }: { lab
     return () => window.clearTimeout(id);
   }, [pathname]);
   const hrefs = alternates.path === pathname ? alternates.hrefs : {};
+  // English-only pages (/investors, David 2026-11-03): say so in the list, and send other languages to
+  // their home page instead of silently landing back on the English page (which looked like a bug).
+  const englishOnly = key !== "home" && (englishOnlyPages as readonly string[]).includes(key);
   // Dropdown (David 2026-10-31: 13+ languages would not fit in a row). <details> opens without JavaScript;
   // with it, the list closes on navigation, on Escape and on a click outside.
   const ref = useRef<HTMLDetailsElement>(null);
@@ -91,13 +94,18 @@ export function LanguageSwitcher({ label, dark = false, align = "right" }: { lab
         </svg>
       </summary>
       <nav aria-label={label} className={`${align === "inline" ? "relative mt-2 w-56" : `absolute ${align === "left" ? "left-0" : "right-0"} z-50 mt-2 max-h-[70vh] w-56 overflow-y-auto shadow-[0_12px_32px_rgba(18,22,20,0.16)] ${dark ? "bottom-full mb-2 mt-0" : "top-full"}`} rounded-[18px] border p-1.5 ${tone.panel}`}>
+        {englishOnly ? (
+          <p className={`px-3 pb-2 pt-1.5 text-[13px] leading-snug ${dark ? "text-muted-dark" : "text-muted"}`}>
+            This page is available in English only. Other languages open their home page.
+          </p>
+        ) : null}
         <ul className="flex flex-col">
           {locales.map((l) => {
             const active = l === locale;
             return (
               <li key={l}>
                 <Link
-                  href={hrefs[l] ?? pathFor(l, key)}
+                  href={englishOnly && l !== "en" ? pathFor(l, "home") : (hrefs[l] ?? pathFor(l, key))}
                   hrefLang={localeMeta[l].htmlLang}
                   lang={localeMeta[l].htmlLang}
                   aria-current={active ? "true" : undefined}
