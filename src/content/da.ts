@@ -2,10 +2,10 @@ import type { Dictionary } from "./types";
 
 const da: Dictionary = {
   meta: {
-    siteTitle: "PetPrep – Klar til et kæledyr. Med hele livet igennem.",
+    siteTitle: "PetPrep – Klar til et kæledyr. Til stede hele dets liv.",
     siteDescription:
       "PetPrep er en kæledyrssimulator over 12 uger der viser forældre om barnet virkelig er klar til et rigtigt kæledyr – og som derefter bliver en AI-assistent gennem hele det rigtige dyrs liv.",
-    slogan: "Klar til et kæledyr. Med hele livet igennem.",
+    slogan: "Klar til et kæledyr. Til stede hele dets liv.",
     keywords: [
       "er mit barn klar til en hund",
       "app der lærer børn ansvar for kæledyr",
@@ -40,7 +40,7 @@ const da: Dictionary = {
       "Teksten bliver gjort færdig sammen med vores juridiske rådgivere før den offentlige lancering. Kontakt os hvis noget er uklart.",
     lastUpdated: "Senest opdateret",
     breadcrumbHome: "Forside",
-    screensNote: "Skærmbillederne fra appen på denne side er forhåndsvisninger; den færdige app kan se lidt anderledes ud.",
+    screensNote: "Skærmbillederne på denne side er forhåndsvisninger – den færdige app kan se lidt anderledes ud.",
     perPet: "pr. kæledyr",
     free: "Gratis",
     forever: "for altid",
@@ -49,7 +49,7 @@ const da: Dictionary = {
     notFoundCta: "Tilbage til forsiden",
   },
   footer: {
-    tagline: "Klar til et kæledyr. Med hele livet igennem.",
+    tagline: "Klar til et kæledyr. Til stede hele dets liv.",
     groups: [
       { title: "Produkt", links: ["howItWorks", "parents", "animals", "care", "kids", "coloring", "afterAdoption", "pricing", "faq"] },
       { title: "Virksomhed", links: ["about", "curio", "walkyourpet", "partners", "investors", "contact"] },
@@ -75,7 +75,7 @@ const da: Dictionary = {
   pricingPlans: {
     free: {
       name: "Blandingshund",
-      text: "Hele simulationen med en livagtig blandingshund.",
+      text: "Hele simulationen med en naturtro blandingshund.",
       features: [
         "Simulation over 12 uger med rigtige konsekvenser",
         "Rigtige gåture talt i rigtige skridt fra telefonen",
@@ -127,13 +127,13 @@ const da: Dictionary = {
     meta: {
       title: "PetPrep – Er dit barn klar til et kæledyr? Find ud af det på 12 uger.",
       description:
-        "Før et rigtigt kæledyr flytter ind, passer dit barn et livagtigt AI-kæledyr i 12 uger: måltider, oprydning og rigtige gåture. Du ser hver dag om barnet virkelig er klar.",
+        "Før et rigtigt kæledyr flytter ind, passer dit barn et naturtro AI-kæledyr i 12 uger: måltider, oprydning og rigtige gåture. Du ser hver dag om barnet virkelig er klar.",
     },
     hero: {
       eyebrow: "12-ugers-udfordringen",
-      title: "Klar til et kæledyr. Med hele livet igennem.",
+      title: "Klar til et kæledyr. Til stede hele dets liv.",
       lead:
-        "Før et rigtigt kæledyr flytter ind, passer dit barn et livagtigt AI-kæledyr i 12 uger – giver mad, rydder op og går rigtige ture. Du ser hver dag om barnet virkelig er klar.",
+        "Før et rigtigt kæledyr flytter ind, passer dit barn et naturtro AI-kæledyr i 12 uger – giver mad, rydder op og går rigtige ture. Du ser hver dag om barnet virkelig er klar.",
       trust: ["Blandingshund gratis for altid", "Ingen reklamer, ingen chat med fremmede", "Børn skal ikke bruge e-mail"],
     },
     phone: {
@@ -148,7 +148,7 @@ const da: Dictionary = {
     promoVideo: {
       eyebrow: "PetPrep på ét minut",
       title: "Se hvordan det virker.",
-      text: "Fra valget af kæledyr og underskriften på kontrakten til skole, gåture, pelspleje og diplomet – alt hvad dit barn gør på 12 uger, og alt hvad du ser i oversigten. Curio, vores maskot, siger bare hej; kæledyret i appen er en livagtig AI-hund.",
+      text: "Fra valget af kæledyr og underskriften på kontrakten til skole, gåture, pelspleje og diplomet – alt hvad dit barn gør på 12 uger, og alt hvad du ser i oversigten. Curio, vores maskot, siger bare hej; kæledyret i appen er en naturtro AI-hund.",
       alt: "PetPreps promovideo: skærmbilleder fra appen, et barn der passer en hund, og en forælder der følger med i Care Score.",
       note: "Appen er endnu ikke offentligt tilgængelig i App Store og Google Play – tilmeld dig tidlig adgang.",
     },
@@ -164,7 +164,7 @@ const da: Dictionary = {
       steps: [
         {
           title: "Du vælger kæledyret",
-          text: "Opret en familiekonto, tilføj dit barn med bare et kaldenavn, og vælg kæledyret – race, adopteret eller fra en opdrætter, hvalp eller senior.",
+          text: "Opret en familiekonto, tilføj dit barn med kun et kaldenavn, og vælg kæledyret – race, adopteret eller fra en opdrætter, hvalp eller senior.",
         },
         {
           title: "Dit barn skriver under på løftet",
@@ -185,7 +185,7 @@ const da: Dictionary = {
         { title: "Det vokser op", text: "En hvalp spiser fire gange om dagen, siden tre og så to – og får et nyt billede efterhånden som den vokser." },
         { title: "Det opfører sig som et rigtigt dyr", text: "Hvalpe skal ud. Hunde der keder sig, tygger i hjemmesko. Uheld sker før aftensmaden." },
         { title: "Respekterer skole og søvn", text: "I de stille timer holder påmindelserne pause. Et måltid der falder i skoletiden, er dit ansvar, ikke dit barns." },
-        { title: "Rigtige konsekvenser, blidt", text: "Forsømmelse betyder et besøg hos dyrlægen eller på internatet – aldrig uhyggeligt og altid med en ny start." },
+        { title: "Rigtige konsekvenser – men på en blid måde", text: "Forsømmelse betyder et besøg hos dyrlægen eller på internatet – aldrig uhyggeligt og altid med en ny start." },
         { title: "Helt unikt", text: "Hvert kæledyr får sin egen pels, sine egne aftegninger og øjne – fotorealistisk og aldrig ens to gange." },
       ],
     },
@@ -215,16 +215,16 @@ const da: Dictionary = {
         },
         {
           strong: "12 uger viser om den passer ind i dit liv",
-          text: "dine arbejdsdage, din fritid og vejret. Da det bliver familiens hund, kan du senere tilføje din partner eller dine børn.",
+          text: "dine arbejdsdage, din fritid og vejret. Når det bliver familiens hund, kan du senere tilføje din partner eller dine børn.",
         },
       ],
       how: "Sådan kommer du i gang: Opret en konto som forælder, tilføj dig selv som den profil der passer dyret, og log ind med den sekscifrede kode – på samme telefon eller en anden.",
-      note: "Tilgængeligt i dag: den gratis blandingshund og huskat og alle hunde- og katteracer i [dyreleksikonet](page:animals) i 12-ugers-udfordringen.",
+      note: "Tilgængeligt i dag: den gratis blandingshund og huskat – og i 12-ugers-udfordringen alle hunde- og katteracer i [dyreleksikonet](page:animals).",
       link: "Sådan bruger du PetPrep på egen hånd",
     },
     after: {
       eyebrow: "Når det kommer hjem",
-      title: "Når det rigtige kæledyr flytter ind, bliver PetPrep.",
+      title: "Når det rigtige kæledyr flytter ind, bliver PetPrep hos jer.",
       text: "Tryk på »Vi har fået et rigtigt kæledyr«, og simulatoren bliver en AI-assistent i årene fremover – som allerede kender jeres families rytme.",
       features: [
         { title: "Smart halsbånd", text: "Aktivitet og advarsler når noget er galt." },
@@ -261,18 +261,18 @@ const da: Dictionary = {
       eyebrow: "Sådan virker det",
       title: "Tolv uger der viser hvad et løfte er værd.",
       lead:
-        "Dit barn passer et fotorealistisk AI-kæledyr der opfører sig så meget som et rigtigt dyr, som en app kan. Én rigtig uge svarer til én måned af dyrets liv, så på 12 uger vokser dyret op – og du ser om pasningen holder.",
+        "Dit barn passer et fotorealistisk AI-kæledyr der opfører sig så tæt på et rigtigt dyr, som en app overhovedet kan. Én rigtig uge svarer til én måned af dyrets liv, så på 12 uger vokser dyret op – og du ser om pasningen holder.",
       blocks: [
         {
           type: "steps",
           heading: "Fra første tryk til diplom",
           items: [
-            { title: "Forælderen opretter familien", text: "Du registrerer dig med din e-mail (login med Apple og Google kommer snart). Tilføj hvert barn med et kaldenavn og eventuelt et fødselsår. Mere spørger vi ikke om dit barn." },
+            { title: "Forælderen opretter familien", text: "Du registrerer dig med din e-mail (login med Apple og Google kommer snart). Tilføj hvert barn med et kaldenavn og eventuelt et fødselsår. Mere vil vi ikke vide om dit barn." },
             { title: "Du vælger kæledyret", text: "Vælg racen (blandingshunden er gratis), hvor dyret kommer fra – adopteret fra et internat eller købt hos en opdrætter – og dets alder ved ankomst: hvalp, ung, voksen eller senior." },
             { title: "Dit barn logger ind med en kode", text: "Du får en sekscifret kode der gælder i 15 minutter. Dit barn skriver den på sin telefon – ingen e-mail og ingen adgangskode. Er telefonen blevet væk? Log barnet ud af alle enheder med ét tryk." },
             { title: "Ansvarskontrakten", text: "Dit barn underskriver et løfte med fingeren. Underskriften er dyrets fødsel: Behovene begynder først at tælle fra det øjeblik, så intet går tabt hvis barnet skriver under senere." },
             { title: "Tolv ugers pasning", text: "Mad inden for de rigtige tidsrum, frisk vand, oprydning og en daglig gåtur med rigtige skridt. Efterhånden som dyret vokser, ændrer dets behov sig." },
-            { title: "Diplomet", text: "Efter 12 uger fylder dyret et år. Dit barn får Ansvarsdiplomet med sin Care Score – eller I lærer begge, uden at nogen tager skade, at tiden ikke er inde endnu." },
+            { title: "Diplomet", text: "Efter 12 uger fylder dyret et år. Dit barn får Ansvarsdiplomet med sin Care Score – eller I opdager begge to, helt uden skade, at tiden ikke er inde endnu." },
           ],
         },
         {
@@ -327,7 +327,7 @@ const da: Dictionary = {
       eyebrow: "For forældre",
       title: "Et objektivt bevis, ikke endnu et løfte.",
       lead:
-        "Du skal ikke gætte om gåturene nu også blev til noget. PetPrep måler pasningen ud fra klare daglige rutiner og viser dig barn for barn hvordan det går.",
+        "Du behøver ikke at gætte på, om gåturene nu også blev til noget. PetPrep måler pasningen ud fra klare daglige rutiner og viser dig barn for barn hvordan det går.",
       blocks: [
         {
           type: "cards",
@@ -364,10 +364,10 @@ const da: Dictionary = {
           heading: "Du bevarer kontrollen",
           items: [
             "Stille timer til skole og søvn i jeres lokale tid – også når der skiftes mellem sommer- og vintertid.",
-            "Sæt spillet på pause for et hvilket som helst kæledyr med ét bekræftet tryk; dit barns skærm låses med det samme.",
+            "Sæt spillet på pause for ethvert kæledyr med ét bekræftet tryk; dit barns skærm låses med det samme.",
             "Invitér den anden forælder med en engangskode; I ser begge alle børn og alle kæledyr.",
             "Log et barn ud af alle enheder hvis en telefon bliver væk; koderne kan kun bruges én gang og udløber efter 15 minutter.",
-            "Eksportér alle jeres families data som en fil, eller slet et barns profil eller hele din konto med det samme direkte fra appen.",
+            "Eksportér hele jeres families data som én fil, eller slet et barns profil eller hele din konto med det samme direkte fra appen.",
           ],
         },
         {
@@ -392,7 +392,7 @@ const da: Dictionary = {
       eyebrow: "Når det kommer hjem",
       title: "Simulationen slutter. Omsorgen fortsætter.",
       lead:
-        "Når jeres familie tager et rigtigt kæledyr med hjem, gør ét tryk PetPrep til en assistent gennem hele dyrets liv – i realtid, uden statusbjælker og allerede fortrolig med jeres families hverdag.",
+        "Når jeres familie tager et rigtigt kæledyr med hjem, gør ét tryk PetPrep til en assistent gennem hele dyrets liv – i realtid, uden energibjælker og allerede fortrolig med jeres families hverdag.",
       planned: true,
       blocks: [
         {
@@ -459,7 +459,7 @@ const da: Dictionary = {
             { q: "Er gratisversionen virkelig gratis?", a: "Ja. Blandingshunden er gratis for altid, med hele simulationen, rigtige gåture og forældreoversigten." },
             { q: "Hvad indeholder udfordringen?", a: "Krævende racer som [border collie](breed:border_collie), dit kæledyrs humør som AI-videoer, Ansvarsdiplomet til sidst og adgang for begge forældre." },
             { q: "Betaler søskende to gange?", a: "Nej. Børn der deler ét kæledyr, betaler én pris. Et kæledyr nummer to i familien er en særskilt udfordring." },
-            { q: "Hvordan betaler jeg?", a: "I appen via App Store eller Google Play. Refusioner håndteres via din butikskonto." },
+            { q: "Hvordan betaler jeg?", a: "I appen via App Store eller Google Play. Refusion sker via din konto i butikken." },
             { q: "Hvad er Ønsker, og kan mit barn selv købe ting?", a: "Dit barn kan ønske sig en seng, skåle, legetøj eller godbidder til sit kæledyr – op til tre åbne ønsker ad gangen. Du får en notifikation og køber enten tingen eller vælger »Ikke nu«. Dit barn ser aldrig priser og kan ikke købe noget i børneappen." },
             { q: "Gør købte ting spillet lettere?", a: "Nej. Tingene er kun til pynt. De ændrer aldrig behovene, Care Score eller diplomet, og der findes ingen dyrlæge eller medicin blandt Ønsker – aldrig »betal for at redde dit kæledyr«." },
             { q: "Gælder det samme for voksne?", a: "Ja. Bruger du PetPrep på egen hånd til at prøve en race, gælder det samme: Blandingshunden er gratis for altid, og 12-ugers-udfordringen koster 49,99 € pr. kæledyr." },
@@ -480,8 +480,8 @@ const da: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "Hvilken alder er PetPrep til?", a: "Til børn er den lavet til cirka 7–12 år og fungerer fint op til 16. Voksne bruger den også til at afprøve om en bestemt race virkelig er noget for dem før de køber eller adopterer." },
-            { q: "Kan jeg bruge PetPrep alene, uden børn?", a: "Ja. Opret en konto som forælder, og tilføj dig selv som den profil der passer dyret – et kaldenavn er nok, lad fødselsåret stå tomt. Vælg racen, opret en sekscifret kode, og vælg så »Jeg er et barn« på samme telefon eller en anden, og skriv koden – sådan bliver du den der passer dyret. Da det bliver familiens hund, kan du senere tilføje din partner eller dine børn, så I passer den sammen. Prisen er den samme som for familier." },
+            { q: "Hvilken alder er PetPrep beregnet til?", a: "Til børn er den lavet til cirka 7–12 år og fungerer fint op til 16. Voksne bruger den også til at afprøve om en bestemt race virkelig er noget for dem før de køber eller adopterer." },
+            { q: "Kan jeg bruge PetPrep alene, uden børn?", a: "Ja. Opret en konto som forælder, og tilføj dig selv som den profil der passer dyret – et kaldenavn er nok, lad fødselsåret stå tomt. Vælg racen, opret en sekscifret kode, og vælg derefter »Jeg er et barn« på samme telefon eller en anden og skriv koden – så er du den, der passer dyret. Når det bliver familiens hund, kan du senere tilføje din partner eller dine børn, så I passer den sammen. Prisen er den samme som for familier." },
             { q: "Hvor lang tid tager det hver dag?", a: "Et par minutter til mad, vand og oprydning – plus den gåtur en rigtig hund alligevel ville have brug for." },
             { q: "Sporer appen mit barns placering?", a: "Nej. Til gåture tæller den kun skridt. Hvis du giver lov, læser den dem fra Apple Sundhed (iPhone) eller Health Connect (Android) – kun læseadgang og kun skridt; hvor det er muligt, bruger den også telefonens bevægelsessensor. Den beder om tilladelse på gåturskærmen. GPS bruges ikke." },
             { q: "Skal mit barn have en e-mailadresse?", a: "Nej. Du opretter kontoen; dit barn logger ind med en sekscifret kode som du laver. Vi gemmer kun et kaldenavn og eventuelt et fødselsår." },
@@ -713,7 +713,7 @@ const da: Dictionary = {
             {
               heading: "11. Dine rettigheder",
               paragraphs: [
-                "Du har ret til indsigt i dine data og til at få dem berigtiget, eksporteret og slettet, til at gøre indsigelse mod og begrænse behandlingen og til at klage til en tilsynsmyndighed – i Slovenien informationskommissæren (Informacijski pooblaščenec). I appen kan du eksportere alle din families data som en fil (Control → Account → Export my data) og slette et barns profil eller hele din konto. Skriv til {privacyEmail} om alt andet.",
+                "Du har ret til indsigt i dine data og til at få dem berigtiget, eksporteret og slettet, til at gøre indsigelse mod og begrænse behandlingen og til at klage til en tilsynsmyndighed – i Slovenien informationskommissæren (Informacijski pooblaščenec). I appen kan du eksportere hele din families data som én fil (Control → Account → Export my data) og slette et barns profil eller hele din konto. Skriv til {privacyEmail} om alt andet.",
               ],
             },
             {
@@ -767,7 +767,7 @@ const da: Dictionary = {
                 "Konti oprettes af voksne: forældre, værger eller voksne der bruger PetPrep til sig selv. Når du registrerer dig, accepterer du disse vilkår og privatlivspolitikken.",
                 "Passere (børn eller voksne) tager sig af kæledyret via en passerprofil som kontoindehaveren opretter; kontoindehaveren kan også oprette en til sig selv. En profil kræver kun et kaldenavn og eventuelt et fødselsår – vi har ikke brug for mere om et barn, så indtast det ikke nogen steder i appen.",
                 "Et barn logger ind med en sekscifret kode (pinkode) som du opretter i din app. Koden er kortlivet og virker kun én gang; giv den kun til det barn den er beregnet til.",
-                "Som forælder eller værge er du ansvarlig for dit barns brug af PetPrep: om appen passer til barnet, hvor meget tid barnet bruger på den, og om barnet er i sikkerhed på gåture (f.eks. i trafikken). Du kan til enhver tid stoppe spillet for et hvilket som helst kæledyr.",
+                "Som forælder eller værge er du ansvarlig for dit barns brug af PetPrep: om appen passer til barnet, hvor meget tid barnet bruger på den, og om barnet er i sikkerhed på gåture (f.eks. i trafikken). Du kan til enhver tid stoppe spillet for ethvert kæledyr.",
                 "Du kan invitere en anden forælder ind i familien med en invitationskode; begge ser alle familiens data, og begge kan stoppe spillet.",
                 "Giv korrekte oplysninger, og pas godt på din adgangskode, dine koder og dine enheder.",
               ],
@@ -832,7 +832,7 @@ const da: Dictionary = {
             {
               heading: "9. Immaterielle rettigheder",
               paragraphs: [
-                "PetPrep og PetPreps logo, design, software og indhold tilhører {company}. Du må bruge appen samt dit kæledyrs billeder, videoer og diplom til din families personlige, ikkekommercielle brug – f.eks. ved at dele dem med slægtninge.",
+                "PetPrep og PetPreps logo, design, software og indhold tilhører {company}. Du må bruge appen samt dit kæledyrs billeder, videoer og diplom til din families personlige, ikke-kommercielle brug – f.eks. ved at dele dem med slægtninge.",
               ],
             },
             {
@@ -967,7 +967,7 @@ const da: Dictionary = {
           type: "prose",
           heading: "Har du ikke appen længere? Bed om sletning via e-mail",
           paragraphs: [
-            "Skriv til [privacy@petprep.si](mailto:privacy@petprep.si) fra e-mailadressen på din forældrekonto i PetPrep med emnet »Delete my account« (Slet min konto). Vi kontrollerer at anmodningen kommer fra kontoens ejer, sletter kontoen senest inden for en måned (som regel inden for få dage) og bekræfter derefter via e-mail.",
+            "Skriv til [privacy@petprep.si](mailto:privacy@petprep.si) fra e-mailadressen på din forældrekonto i PetPrep med emnet »Delete my account« (Slet min konto). Vi kontrollerer at anmodningen kommer fra kontoens ejer, sletter kontoen inden for en måned (som regel inden for få dage) og bekræfter derefter via e-mail.",
             "Hvis du kun vil slette ét barns profil, så log ind som forælder og åbn barnet under Controls → Children → Delete profile.",
           ],
         },
@@ -1035,7 +1035,7 @@ const da: Dictionary = {
           id: "mission",
           heading: "Vores mission",
           paragraphs: [
-            "Alle familier har hørt »Jeg lover at passe den.« PetPrep gør det løfte til et bevis: i 12 uger passer et barn – eller en voksen der gerne vil have en bestemt race – et livagtigt AI-kæledyr med et rigtigt dyrs daglige behov, og forælderen ser hver dag hvordan pasningen holder.",
+            "Alle familier har hørt »Jeg lover at passe den.« PetPrep gør det løfte til et bevis: i 12 uger passer et barn – eller en voksen der gerne vil have en bestemt race – et naturtro AI-kæledyr med et rigtigt dyrs daglige behov, og forælderen ser hver dag hvordan pasningen holder.",
             "At fejle i simulationen er også et godt resultat: familien finder ud af det før et rigtigt dyr kommer til at lide, og før den binder sig til mange års pasning og udgifter. Når et rigtigt kæledyr så kommer hjem, vil vi gerne have at PetPrep fortsat er nyttig i hele dyrets liv.",
           ],
         },
@@ -1061,7 +1061,7 @@ const da: Dictionary = {
       meta: {
         title: "Mød Curio – PetPreps maskot",
         description:
-          "Curio er PetPreps maskot: den nysgerrige lille terning fra vores logo og stjernen i vores korte videoer. Hvem den er, hvordan den adskiller sig fra det livagtige kæledyr i appen, billeder og et mediekit.",
+          "Curio er PetPreps maskot: den nysgerrige lille terning fra vores logo og stjernen i vores korte videoer. Hvem den er, hvordan den adskiller sig fra det naturtro kæledyr i appen, billeder og et mediekit.",
       },
       navLabel: "Mød Curio",
       eyebrow: "Vores maskot",
@@ -1108,11 +1108,11 @@ const da: Dictionary = {
             },
             {
               src: "/animals/dogs/labrador-retriever.webp",
-              alt: "Et livagtigt AI-genereret portræt af en labrador retriever, sådan som kæledyrene ser ud i PetPrep-appen.",
+              alt: "Et naturtro AI-genereret portræt af en labrador retriever, sådan som kæledyrene ser ud i PetPrep-appen.",
               label: "I appen · AI-billede",
               tone: "mint",
               title: "Dit kæledyr i PetPrep",
-              text: "En livagtig AI-simulation af en rigtig race – som denne [labrador retriever](+breed:labrador_retriever) – med et rigtigt dyrs daglige behov: måltider, vand, gåture talt i rigtige skridt, oprydning og træning. Se [sådan virker det](+page:howItWorks).",
+              text: "En naturtro AI-simulation af en rigtig race – som denne [labrador retriever](+breed:labrador_retriever) – med et rigtigt dyrs daglige behov: måltider, vand, gåture talt i rigtige skridt, oprydning og træning. Se [sådan virker det](+page:howItWorks).",
             },
           ],
         },
@@ -1156,7 +1156,7 @@ const da: Dictionary = {
           heading: "Spørgsmål om Curio",
           items: [
             { q: "Er Curio en hund eller en kat?", a: "Ingen af delene. Curio er en lille terning fra vores logo. Den spiller et kæledyr i vores videoer, men den tilhører ikke nogen art." },
-            { q: "Kan mit barn passe Curio i appen?", a: "Nej. I appen passer familien et livagtigt kæledyr af en rigtig race med de samme daglige behov som det rigtige dyr. Curio optræder kun i vores videoer og på webstedet." },
+            { q: "Kan mit barn passe Curio i appen?", a: "Nej. I appen passer familien et naturtro kæledyr af en rigtig race med de samme daglige behov som det rigtige dyr. Curio optræder kun i vores videoer og på webstedet." },
             { q: "Hvorfor har Curio ingen mund?", a: "Fordi vores logo ikke har nogen. Curio siger alt med øjnene – og tigger aldrig højlydt om godbidder." },
             { q: "Hvor kan jeg se nye videoer med Curio?", a: "På TikTok og Instagram, @petprep.si." },
           ],
@@ -1180,20 +1180,20 @@ const da: Dictionary = {
       meta: {
         title: "Gratis tegninger til farvelægning med hunde og katte til børn | PetPrep",
         description:
-          "Gratis tegninger til farvelægning som du kan printe: golden retriever, labrador, border collie, blandingshundehvalp, killing og Curio. PDF i A4 og US Letter, hver med et ægte faktum om pasning af kæledyr og dets kilde.",
+          "Gratis tegninger til farvelægning som du kan printe: golden retriever, labrador, border collie, blandingshundehvalp, killing og Curio. PDF i A4 og US Letter, hver med et faktum om pasning af kæledyr og kilden til det.",
       },
       navLabel: "Tegninger til farvelægning",
       eyebrow: "Tegninger til farvelægning",
       title: "Gratis tegninger til farvelægning – klar til print.",
       lead:
-        "Hunde, katte og Curio, som du kan farvelægge eller tegne efter – print én side eller hele hæftet. Hver side har et ægte faktum om pasning af kæledyr fra en dyrlæge eller en kennelklub, som I kan læse sammen.",
+        "Hunde, katte og Curio, som du kan farvelægge eller tegne efter – print én side eller hele hæftet. Hver side har et faktum om pasning af kæledyr fra dyrlæger eller kennelklubber, som I kan læse sammen.",
       blocks: [{ type: "coloringHub" }],
     },
     kids: {
       meta: {
         title: "For børn der gerne vil have et kæledyr – tegninger, Curio og #walkyourpet | PetPrep",
         description:
-          "Alt hvad PetPrep har til børn: gratis tegninger til farvelægning som du kan printe, med ægte fakta om pasning af kæledyr, maskotten Curio og #walkyourpet – til børn og forældre der gør sig klar til et kæledyr sammen.",
+          "Alt hvad PetPrep har til børn: gratis tegninger til farvelægning som du kan printe, med fakta om pasning af kæledyr, maskotten Curio og #walkyourpet – til børn og forældre der gør sig klar til et kæledyr sammen.",
       },
       navLabel: "For børn",
       eyebrow: "For børn",
