@@ -80,7 +80,7 @@ jobs:
           node-version: '22'
           cache: npm
 
-      # Same checks as the "Lint, types, build" job of ci-deploy.yml.
+      # Same checks as ci-deploy.yml (lint, the build, types) — a register that does not build is not committed.
       - name: Check the synced register (lint, build, types)
         id: check
         if: steps.fetch.outputs.changed == 'true'
