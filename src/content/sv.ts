@@ -574,7 +574,7 @@ const sv: Dictionary = {
           items: [
             "Serverbaserad spelmotor med synkronisering i realtid, testad med simuleringar av hela dygn, dagar då klockan ställs om till sommar- eller vintertid och specialfall i familjekonstellationer.",
             "Familjer med flera föräldrar, flera barn och delade djur, med rättvis poängsättning per barn.",
-            "Unika fotorealistiska AI-djur med uppmätta och begränsade AI-kostnader, media lagrade på våra egna servrar inom EU.",
+            "Unika fotorealistiska AI-djur med uppmätta och begränsade AI-kostnader, media lagrade på hyrda servrar i Tyskland (Hetzner, EU).",
             "Djurens behov bygger på uppgivna källor från veterinärer och kennelklubbar, och varje siffra går att spåra till sin källa.",
             "Inbyggd barnsäkerhet: inloggning med PIN utan e-post, minimalt med data, ingen reklam, bara granskade media.",
           ],
@@ -689,7 +689,7 @@ const sv: Dictionary = {
             {
               heading: "8. AI-genererade bilder och videor",
               paragraphs: [
-                "Varje djurs foto och korta videor skapas av en AI-tjänst enbart utifrån en beskrivning av djuret (ras, päls, teckningar och liknande). Beskrivningen innehåller aldrig namn eller någon information om din familj. Färdiga media lagras på våra egna servrar inom EU och visas via kortlivade länkar.",
+                "Varje djurs foto och korta videor skapas av en AI-tjänst enbart utifrån en beskrivning av djuret (ras, päls, teckningar och liknande). Beskrivningen innehåller aldrig namn eller någon information om din familj. Färdiga media lagras på hyrda servrar i Tyskland (Hetzner, EU) och visas via kortlivade länkar.",
               ],
             },
             {
@@ -891,7 +891,7 @@ const sv: Dictionary = {
             { title: "Ingen reklam, ingen chatt, inga främlingar", text: "Det finns ingen reklam och inget sätt att kontakta andra användare." },
             { title: "Ingen platsspårning", text: "Promenader räknar bara steg – från Apple Hälsa eller Health Connect (med ditt tillstånd, bara läsning) eller från mobilens rörelsesensor. GPS används inte." },
             { title: "Privata uppdateringar i realtid", text: "Uppdateringar i realtid når bara barnen som tar hand om djuret och föräldrarna i samma familj." },
-            { title: "Granskade media", text: "Bara bilder och videor som har tagits fram för PetPrep och kontrollerats av vår server visas, från vår egen lagring inom EU." },
+            { title: "Granskade media", text: "Bara bilder och videor som har tagits fram för PetPrep och kontrollerats av vår server visas, från vår lagring inom EU." },
             { title: "Aviseringar utan namn", text: "Aviseringar innehåller aldrig barnets eller djurets namn, eftersom de kan synas på låsskärmen." },
           ],
         },

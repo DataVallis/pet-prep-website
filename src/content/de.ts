@@ -574,7 +574,7 @@ const de: Dictionary = {
           items: [
             "Serverseitige Spiel-Engine mit Echtzeit-Synchronisierung, getestet mit Simulationen ganzer Tage, Tagen der Zeitumstellung und Sonderfällen in Familien.",
             "Familien mit mehreren Elternteilen, mehreren Kindern und geteilten Haustieren, mit fairer Bewertung pro Kind.",
-            "Einzigartige fotorealistische KI-Haustiere mit gemessenen und gedeckelten KI-Kosten, Medien auf unseren eigenen Servern in der EU.",
+            "Einzigartige fotorealistische KI-Haustiere mit gemessenen und gedeckelten KI-Kosten, Medien auf angemieteten Servern in Deutschland (Hetzner, EU).",
             "Bedürfnisse der Haustiere auf Basis zitierter tierärztlicher Quellen und Zuchtverbände, jede Zahl bis zu ihrer Quelle nachvollziehbar.",
             "Kindersicherheit von Anfang an: PIN-Anmeldung ohne E-Mail, minimale Daten, keine Werbung, nur geprüfte Medien.",
           ],
@@ -689,7 +689,7 @@ const de: Dictionary = {
             {
               heading: "8. KI-generierte Bilder und Videos",
               paragraphs: [
-                "Foto und kurze Videos jedes Haustiers werden von einem KI-Dienst ausschließlich aus einer Beschreibung des Haustiers erstellt (Rasse, Fell, Abzeichen und Ähnliches). Die Beschreibung enthält nie Namen oder Informationen über Ihre Familie. Fertige Medien werden auf unseren eigenen Servern in der EU gespeichert und über kurzlebige Links angezeigt.",
+                "Foto und kurze Videos jedes Haustiers werden von einem KI-Dienst ausschließlich aus einer Beschreibung des Haustiers erstellt (Rasse, Fell, Abzeichen und Ähnliches). Die Beschreibung enthält nie Namen oder Informationen über Ihre Familie. Fertige Medien werden auf angemieteten Servern in Deutschland (Hetzner, EU) gespeichert und über kurzlebige Links angezeigt.",
               ],
             },
             {
@@ -891,7 +891,7 @@ const de: Dictionary = {
             { title: "Keine Werbung, kein Chat, keine Fremden", text: "Es gibt keine Werbung und keine Möglichkeit, andere Nutzer zu kontaktieren." },
             { title: "Keine Standortverfolgung", text: "Spaziergänge zählen nur Schritte – aus Apple Health oder Health Connect (mit Ihrer Erlaubnis, nur lesend) oder vom Bewegungssensor des Handys. GPS wird nicht genutzt." },
             { title: "Private Live-Updates", text: "Echtzeit-Updates erreichen nur die Kinder, die sich um dieses Haustier kümmern, und die Eltern derselben Familie." },
-            { title: "Geprüfte Medien", text: "Gezeigt werden nur Bilder und Videos, die für PetPrep erstellt und von unserem Server geprüft wurden, aus unserem eigenen Speicher in der EU." },
+            { title: "Geprüfte Medien", text: "Gezeigt werden nur Bilder und Videos, die für PetPrep erstellt und von unserem Server geprüft wurden, aus unserem Speicher in der EU." },
             { title: "Benachrichtigungen ohne Namen", text: "Benachrichtigungen enthalten nie den Namen des Kindes oder des Haustiers, weil sie auf dem Sperrbildschirm erscheinen können." },
           ],
         },

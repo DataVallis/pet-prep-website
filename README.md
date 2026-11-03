@@ -45,7 +45,7 @@ Images: `public/curio/*.webp` (display) and `public/curio/kit/` (download origin
 
 ## Investors page
 
-`/investors` (David 2026-11-01, design `docs/design/investors-design.html`) — **English only**, its own route `src/app/[locale]/investors/` (not built under `[slug]`); every other language's investor URL redirects 308 to it (`englishOnlyPages` in `src/i18n/config.ts` → `next.config.ts`). Linked from the footer only, `noindex, follow`, not in `sitemap.xml`, `llms*.txt` or IndexNow. Copy: `src/content/investors.ts`. **Every number is computed** (`src/lib/investorStats.ts` → pure `investorStatsCore.ts`, unit test `npm test`): breeds (registry), unique sources (registry + care, deduplicated by URL), verified foods, live languages, vet-directory countries, colouring pages, and "12 Weeks" episodes + views from the YouTube Data API v3 (env `YOUTUBE_API_KEY`, server `.env` via the deploy secret, cached a day). A value that cannot be computed hides its card — never 0 or a placeholder. The page revalidates hourly; the Web Summit card hides itself after 12 November 2026. YouTube embeds load only after a click (youtube-nocookie.com).
+`/investors` (David 2026-11-01, design `docs/design/investors-design.html`) — **English only**, its own route `src/app/[locale]/investors/` (not built under `[slug]`); every other language's investor URL redirects 308 to it (`englishOnlyPages` in `src/i18n/config.ts` → `next.config.ts`). Linked from the footer only, `noindex, follow`, not in `sitemap.xml`, `llms*.txt` or IndexNow. Copy: `src/content/investors.ts`. **Every number is computed** (`src/lib/investorStats.ts` → pure `investorStatsCore.ts`, unit test `npm test`): breeds (registry), unique sources (registry + care, deduplicated by URL), verified foods, live languages, vet-directory countries, colouring pages, and "12 Weeks" episodes + views from the YouTube Data API v3 (env `YOUTUBE_API_KEY`: passed to the CI build so the prerendered page already has the counts — a BuildKit secret in the manual full-build `Dockerfile` — and the server `.env` via the deploy secret for the hourly revalidation; cached a day). A link to the YouTube channel sits next to the "12 Weeks" playlist. A value that cannot be computed hides its card — never 0 or a placeholder. The page revalidates hourly; the Web Summit card hides itself after 12 November 2026. YouTube embeds load only after a click (youtube-nocookie.com).
 
 ## #walkyourpet page
 
@@ -85,14 +85,15 @@ Local test: `KLAVIYO_PRIVATE_API_KEY=pk_… KLAVIYO_LIST_ID=… npm run dev`.
 
 ## Deployment (production)
 
-Same server as the API (`api.petprep.si`, Hetzner, Docker). Push to `main` → GitHub Actions (`.github/workflows/ci-deploy.yml`):
+Same server as the API (`api.petprep.si`, Hetzner, Docker). Every PR and push to `main` → GitHub Actions (`.github/workflows/ci-deploy.yml`, since 2026-11-03 — David: faster deploys):
 
-1. **checks** — lint, build, types, shellcheck; **image** — Docker build + smoke test.
-2. **deploy** — builds the production image **on the GitHub runner** (reusing the `image` job's cache), `docker save | gzip` →
-   `/opt/petprep/website/website-image.tar.gz`, rsyncs the source to `/opt/petprep/website/incoming` as `deploy@<host>`, then
-   `IMAGE_TAR=… deploy/deploy.sh`: loads `petprep-website:next` (checks its revision label = the commit), smoke-tests it, promotes `:production` → `:previous` and `:next` → `:production`,
-   recreates the `petprep-website` container (`deploy/compose.yaml`) on the API's Docker network `backend_petprep-network`
-   (alias `website`), waits for the health check and rolls back to `:previous` on failure.
+1. **plan** — on a push / Run workflow on `main` (first attempt), `deploy/ci-reuse-image.sh` looks for the marker `web-green-<git tree>` of a successful run of this workflow on the **same tree** (an up-to-date PR, or an earlier main run) whose digest is still in GHCR. Found → **checks and build are skipped** and the deploy uses that run's image digest. Otherwise (and always on PRs) the run builds.
+2. **checks** — lint, `npm test`, `next typegen` + `tsc`, shellcheck + `deploy/tests/ci-reuse-image.test.sh`.
+3. **build** — the run's **only** `next build` (~7,600 prerendered pages, ~5 min; `YOUTUBE_API_KEY` passed in for the prerendered /investors counts, never stored in the image), inside `node:22-alpine` (the runtime's libc, so sharp's native binary matches); `deploy/Dockerfile.prebuilt` packages the output (traced `node_modules` in their own layer, every mtime fixed so unchanged files give an unchanged layer); the smoke test (`/`, `/sl`, sitemap, register pages, share card with the AI portrait, uid 1001, health check); **after** it, same-repo runs push to `ghcr.io/datavallis/petprep-website` (per-run tag; newest 40 versions kept on main).
+4. **Website CI OK** — green only when checks **and** build passed; uploads the marker (tree + image digest). This is the one check PRs and the breed / language automations wait for. Fork PRs build and test but do not push, so this check is skipped there (no forks in use).
+5. **deploy** (main only) — rsyncs the source (deploy scripts) to `/opt/petprep/website/incoming`, writes the runtime secrets, logs the server in to ghcr.io with the job's token over ssh stdin — into a private `mktemp` docker config, never the `deploy` user's `~/.docker`, which the API deploy uses at the same time — and runs `IMAGE_REF=<digest> EXPECT_TREE=<tree> deploy/deploy.sh`: pulls exactly that digest (and deletes the private config), checks the image's `org.petprep.tree` label, smoke-tests it, promotes `:production` → `:previous` and `:next` → `:production`, recreates the `petprep-website` container (`deploy/compose.yaml`) on the API's Docker network `backend_petprep-network` (alias `website`), waits for the health check and rolls back to `:previous` on failure. A failed pull changes nothing (the server never builds by itself). Then IndexNow.
+
+**Before (2026-11-02 … 11-03):** the site was built twice per run (the »Lint, types, build« job and again in the Docker image job, which also exported ~500 MB of build cache), `main` repeated the whole PR pipeline and the deploy shipped a 450 MB `docker save` tarball — PR ~13 min, merge → live 17–20 min.
 
 **Registry sync** (`.github/workflows/registry-sync.yml`, hourly + Run workflow, 2026-10-25): when pet-prep's `docs/research/breed-registry.json` differs from `src/content/registry/registry.json` and builds, the job commits it to `main` as `github-actions[bot]` and dispatches this workflow (a `GITHUB_TOKEN` push starts no run by itself). It needs no secret (pet-prep is public).
 
@@ -111,7 +112,7 @@ Caddy (in the API stack, `deployment/Caddyfile` of the `pet-prep` repo) terminat
 The two Klaviyo values are written to `/opt/petprep/website/.env` (mode 600) on every deploy and read by the container at start.
 Without them the early-access form answers “not configured” (HTTP 503).
 
-**Why not build on the server (2026-11-02):** with 15 languages `next build` prerenders ~7,000 pages, takes ~10 min and peaks at ~2 GB RAM; on the 4 GB API server the build was killed mid-way (deploy step ended with ssh exit 255, no error message). Building on the runner keeps the API's memory untouched.
+**Why not build on the server (2026-11-02):** with 15 languages `next build` prerenders ~7,600 pages, takes ~10 min and peaks at ~2 GB RAM; on the 4 GB API server the build was killed mid-way (deploy step ended with ssh exit 255, no error message). Building in CI keeps the API's memory untouched.
 
-Manual deploy on the server (fallback, builds there — needs ~2 GB free RAM): `bash /opt/petprep/website/incoming/deploy/deploy.sh /opt/petprep/website/incoming manual`.
+Manual deploy on the server (fallback, builds there with the full-build `Dockerfile` — needs ~2 GB free RAM): `bash /opt/petprep/website/incoming/deploy/deploy.sh /opt/petprep/website/incoming manual`. A specific CI image instead: `IMAGE_REF=ghcr.io/datavallis/petprep-website@sha256:… bash …/deploy.sh …` (log in to ghcr.io first).
 Rollback: `docker tag petprep-website:previous petprep-website:production && docker compose -f /opt/petprep/website/incoming/deploy/compose.yaml up -d --force-recreate`.

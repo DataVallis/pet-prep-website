@@ -574,7 +574,7 @@ const da: Dictionary = {
           items: [
             "Spilmotor på serveren med synkronisering i realtid, testet på simuleringer af hele døgn, dage med skift til og fra sommertid og særtilfælde i familier.",
             "Familier med flere forældre, flere børn og fælles kæledyr, med retfærdig score for hvert barn.",
-            "Unikke fotorealistiske AI-kæledyr med målte og loftbegrænsede AI-omkostninger; medier gemmes på vores egne servere i EU.",
+            "Unikke fotorealistiske AI-kæledyr med målte og loftbegrænsede AI-omkostninger; medier gemmes på lejede servere i Tyskland (Hetzner, EU).",
             "Dyrenes behov bygger på angivne kilder fra dyrlæger og kennelklubber, og hvert tal kan spores tilbage til sin kilde.",
             "Børnesikkerhed indbygget fra starten: login med pinkode uden e-mail, minimale data, ingen reklamer, kun verificerede medier.",
           ],
@@ -689,7 +689,7 @@ const da: Dictionary = {
             {
               heading: "8. AI-genererede billeder og videoer",
               paragraphs: [
-                "Hvert kæledyrs foto og korte videoer skabes af en AI-tjeneste udelukkende ud fra en beskrivelse af kæledyret (race, pels, aftegninger og lignende). Beskrivelsen indeholder aldrig navne eller oplysninger om din familie. Færdige medier opbevares på vores egne servere i EU og vises via kortlivede links.",
+                "Hvert kæledyrs foto og korte videoer skabes af en AI-tjeneste udelukkende ud fra en beskrivelse af kæledyret (race, pels, aftegninger og lignende). Beskrivelsen indeholder aldrig navne eller oplysninger om din familie. Færdige medier opbevares på lejede servere i Tyskland (Hetzner, EU) og vises via kortlivede links.",
               ],
             },
             {
@@ -891,7 +891,7 @@ const da: Dictionary = {
             { title: "Ingen reklamer, ingen chat, ingen fremmede", text: "Der er ingen annoncering og ingen mulighed for at kontakte andre brugere." },
             { title: "Ingen sporing af placering", text: "Gåture tæller kun skridt – fra Apple Sundhed eller Health Connect (med din tilladelse, kun læseadgang) eller fra telefonens bevægelsessensor. GPS bruges ikke." },
             { title: "Private liveopdateringer", text: "Opdateringer i realtid når kun frem til de børn der passer det pågældende kæledyr, og til forældrene i samme familie." },
-            { title: "Kontrollerede medier", text: "Kun billeder og videoer der er lavet til PetPrep og kontrolleret af vores server, bliver vist – fra vores egen lagring i EU." },
+            { title: "Kontrollerede medier", text: "Kun billeder og videoer der er lavet til PetPrep og kontrolleret af vores server, bliver vist – fra vores lagring i EU." },
             { title: "Notifikationer uden navne", text: "Notifikationer indeholder aldrig barnets eller kæledyrets navn fordi de kan blive vist på en låseskærm." },
           ],
         },

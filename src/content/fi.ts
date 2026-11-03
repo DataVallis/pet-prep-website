@@ -574,7 +574,7 @@ const fi: Dictionary = {
           items: [
             "Palvelinpuolen pelimoottori reaaliaikaisella synkronoinnilla, testattu kokonaisten päivien simulaatioilla, kesäaikaan siirtymisen päivillä ja perheiden erikoistapauksilla.",
             "Perheet, joissa on useita vanhempia, useita lapsia ja yhteisiä lemmikkejä, sekä reilu lapsikohtainen pisteytys.",
-            "Ainutlaatuiset fotorealistiset tekoälylemmikit mitatuin ja rajatuin tekoälykuluin; media tallennetaan omille palvelimillemme EU:ssa.",
+            "Ainutlaatuiset fotorealistiset tekoälylemmikit mitatuin ja rajatuin tekoälykuluin; media tallennetaan vuokrapalvelimille Saksaan (Hetzner, EU).",
             "Lemmikkien tarpeet perustuvat nimettyihin eläinlääkäri- ja kennelliittolähteisiin, ja jokainen luku on jäljitettävissä lähteeseensä.",
             "Sisäänrakennettu lasten turvallisuus: PIN-kirjautuminen ilman sähköpostia, minimaaliset tiedot, ei mainoksia, vain tarkistettua mediaa.",
           ],
@@ -689,7 +689,7 @@ const fi: Dictionary = {
             {
               heading: "8. Tekoälyllä luodut kuvat ja videot",
               paragraphs: [
-                "Jokaisen lemmikin kuvan ja lyhyet videot luo tekoälypalvelu pelkästään lemmikin kuvauksen perusteella (rotu, turkki, merkit ja vastaavat). Kuvauksessa ei koskaan ole nimiä tai mitään tietoja perheestäsi. Valmis media tallennetaan omille palvelimillemme EU:ssa ja näytetään lyhytikäisten linkkien kautta.",
+                "Jokaisen lemmikin kuvan ja lyhyet videot luo tekoälypalvelu pelkästään lemmikin kuvauksen perusteella (rotu, turkki, merkit ja vastaavat). Kuvauksessa ei koskaan ole nimiä tai mitään tietoja perheestäsi. Valmis media tallennetaan vuokrapalvelimille Saksaan (Hetzner, EU) ja näytetään lyhytikäisten linkkien kautta.",
               ],
             },
             {
@@ -891,7 +891,7 @@ const fi: Dictionary = {
             { title: "Ei mainoksia, ei keskustelua, ei vieraita", text: "Mainontaa ei ole, eikä muihin käyttäjiin voi ottaa yhteyttä." },
             { title: "Ei sijainnin seurantaa", text: "Lenkit laskevat vain askeleita – Apple Terveydestä tai Health Connectista (luvallasi, vain lukuoikeudella) tai puhelimen liikeanturista. GPS:ää ei käytetä." },
             { title: "Yksityiset reaaliaikaiset päivitykset", text: "Reaaliaikaiset päivitykset tavoittavat vain lemmikkiä hoitavat lapset ja saman perheen vanhemmat." },
-            { title: "Tarkistettu media", text: "Näytämme vain PetPrepille tuotettuja ja palvelimemme tarkistamia kuvia ja videoita omasta EU:ssa sijaitsevasta tallennustilastamme." },
+            { title: "Tarkistettu media", text: "Näytämme vain PetPrepille tuotettuja ja palvelimemme tarkistamia kuvia ja videoita EU:ssa sijaitsevasta tallennustilastamme." },
             { title: "Ilmoitukset ilman nimiä", text: "Ilmoituksissa ei koskaan ole lapsen tai lemmikin nimeä, koska ne voivat näkyä lukitusnäytöllä." },
           ],
         },
