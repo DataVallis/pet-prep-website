@@ -9,7 +9,7 @@ export const youtube = {
   /** "12 Weeks" playlist (YouTube Data API v3 + nocookie embed). */
   playlistId: "PLKZQ_Dl4SmTg",
   /** "12 Weeks" episodes in order (Shorts, 9:16). */
-  episodes: ["XRjZrBaCEnU", "PM4UgH2-2Gs", "yJZ3I7JxF9A", "zDAXgIi5Gos", "yrokI1Z4Mzs", "amgDs9QDwkE", "-NG1WviHu_g", "pJx4E5TQlhw", "iiGvrKzbPzA", "g2T5ZROUapA"],
+  episodes: ["XRjZrBaCEnU", "PM4UgH2-2Gs", "yJZ3I7JxF9A", "zDAXgIi5Gos", "yrokI1Z4Mzs", "amgDs9QDwkE", "-NG1WviHu_g", "pJx4E5TQlhw", "iiGvrKzbPzA", "g2T5ZROUapA", "HdrcUB-17L4", "fdWL1hSAjHA"],
 };
 
 export const investorEmail = "mailto:investors@petprep.si";
