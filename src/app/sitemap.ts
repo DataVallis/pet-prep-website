@@ -23,7 +23,7 @@ const priority: Partial<Record<RouteKey, number>> = {
 };
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // /investors is noindex and English only (David 2026-11-01) — not in the sitemap, so not in IndexNow either.
+  // /investors is noindex (David 2026-11-01) — unlistedPages are not in sitemap.sitePageKeys, so not in IndexNow either.
   const keys: RouteKey[] = ["home", ...sitePageKeys];
   const pages = locales.flatMap((locale) =>
     keys.map((key) => ({

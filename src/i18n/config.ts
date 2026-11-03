@@ -75,13 +75,12 @@ export type PageKey = keyof typeof pageSlugs;
 export type RouteKey = PageKey | "home";
 export const pageKeys = Object.keys(pageSlugs) as PageKey[];
 /**
- * Pages with their own English-only route (David 2026-11-01): /investors. They are not built under
- * [slug], not in the sitemap or llms files, and their other-language slugs redirect to the English URL
- * (next.config.ts).
+ * Pages that exist in every language but stay out of the public site listings (David 2026-11-01/03: /investors):
+ * noindex, not in the sitemap, llms files or IndexNow. The [slug] route still builds them (localized slug).
  */
-export const englishOnlyPages: readonly PageKey[] = ["investors"];
-/** Pages built by the [slug] route in every language. */
-export const sitePageKeys = pageKeys.filter((k) => !englishOnlyPages.includes(k));
+export const unlistedPages: readonly PageKey[] = ["investors"];
+/** Pages that are listed: sitemap, llms.txt, IndexNow. */
+export const sitePageKeys = pageKeys.filter((k) => !unlistedPages.includes(k));
 
 /** Public path of a page. English lives at the root, Slovenian under /sl. */
 export function pathFor(locale: Locale, key: RouteKey): string {

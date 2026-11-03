@@ -1,13 +1,10 @@
 import Link from "next/link";
-import { pathFor } from "@/i18n/config";
+import { localeMeta, pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
-import { investorEmail, investorsCopy as c, webSummitUntil, youtube, type Status } from "@/content/investors";
+import { investorEmail, investorsCopy, webSummitUntil, youtube, type Status } from "@/content/investors";
 import type { InvestorStats } from "@/lib/investorStatsCore";
 import { ContactCards } from "@/components/ContactCards";
 import { ClickToPlay } from "./ClickToPlay";
-
-const fmt = new Intl.NumberFormat("en-GB");
-const n = (x: number) => fmt.format(x);
 
 const chip: Record<Status, string> = {
   live: "bg-mint-tint text-mint-text",
@@ -23,7 +20,7 @@ function Head({ id, eyebrow, title, lead, dark = false }: { id: string; eyebrow:
   return (
     <div className="flex max-w-3xl flex-col gap-3">
       <p className={`eyebrow ${dark ? "!text-mint" : ""}`}>{eyebrow}</p>
-      <h2 id={id} className="font-display text-[clamp(28px,3.4vw,40px)] font-bold leading-[1.1] tracking-[-0.6px]">{title}</h2>
+      <h2 id={id} className="hyphens-manual font-display text-[clamp(28px,3.4vw,40px)] font-bold leading-[1.1] tracking-[-0.6px]">{title}</h2>
       {lead ? <p className={dark ? "text-muted-dark" : "text-muted"}>{lead}</p> : null}
     </div>
   );
@@ -33,8 +30,11 @@ const btnDark = "inline-flex min-h-12 items-center rounded-xl bg-graphite px-5 t
 const btnLine = "inline-flex min-h-12 items-center rounded-xl border-[1.5px] border-graphite px-5 text-[15px] font-semibold text-graphite hover:bg-white";
 const card = "rounded-[22px] bg-white shadow-[0_1px_2px_rgba(18,22,20,0.04),0_10px_30px_rgba(18,22,20,0.06)]";
 
-export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStats; now?: Date }) {
-  const dict = getDictionary("en");
+export function InvestorsPage({ locale, stats, now = new Date() }: { locale: Locale; stats: InvestorStats; now?: Date }) {
+  const dict = getDictionary(locale);
+  const c = investorsCopy[locale];
+  const fmt = new Intl.NumberFormat(localeMeta[locale].intl);
+  const n = (x: number) => fmt.format(x);
   const showWebSummit = now.getTime() <= new Date(webSummitUntil).getTime();
 
   const hero = [
@@ -45,7 +45,7 @@ export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStat
 
   const k = c.engine.cards;
   const counters = [
-    stats.breeds ? { status: "live" as Status, value: n(stats.breeds.total), label: k.breeds.label, note: k.breeds.note(stats.breeds.perSpecies.dog ?? 0, stats.breeds.perSpecies.cat ?? 0) } : null,
+    stats.breeds ? { status: "live" as Status, value: n(stats.breeds.total), label: k.breeds.label, note: k.breeds.note(n(stats.breeds.perSpecies.dog ?? 0), n(stats.breeds.perSpecies.cat ?? 0)) } : null,
     stats.sources ? { status: "live" as Status, value: n(stats.sources), label: k.sources.label, note: k.sources.note } : null,
     stats.episodes ? { status: "live" as Status, value: n(stats.episodes), label: k.episodes.label, note: k.episodes.note(stats.views ? n(stats.views) : null) } : null,
     stats.coloringPages ? { status: "live" as Status, value: n(stats.coloringPages), label: k.coloring.label, note: k.coloring.note } : null,
@@ -57,14 +57,14 @@ export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStat
 
   const m = c.engine.media;
   return (
-    <div className="bg-fog text-graphite">
+    <div className="bg-fog text-graphite hyphens-auto">
       {/* 1. Hero */}
       <section aria-labelledby="inv-hero" className="container-page flex flex-col gap-8 pb-16 pt-12 sm:pb-20 sm:pt-20">
         <div className="flex items-center gap-3">
           <svg width="40" height="40" viewBox="0 0 100 100" aria-hidden="true"><rect x="6" y="10" width="88" height="80" rx="30" fill="#121614" /><circle cx="35" cy="47" r="15" fill="#FFFFFF" /><circle cx="65" cy="47" r="15" fill="#FFFFFF" /><circle cx="40" cy="42" r="6.5" fill="#121614" /><circle cx="70" cy="42" r="6.5" fill="#121614" /><rect x="43" y="69" width="14" height="8" rx="4" fill="#FF6B8B" /></svg>
           <p className="eyebrow">{c.eyebrow}</p>
         </div>
-        <h1 id="inv-hero" className="h-display max-w-[920px] text-[clamp(36px,5vw,64px)] leading-[1.04]">{c.title}</h1>
+        <h1 id="inv-hero" className="h-display hyphens-manual max-w-[920px] text-[clamp(36px,5vw,64px)] leading-[1.04]">{c.title}</h1>
         <p className="max-w-[720px] text-[18px] leading-7 text-muted">{c.lead}</p>
         <div className="flex flex-wrap gap-3">
           <a href={youtube.channel} target="_blank" rel="noopener noreferrer" className={btnDark}>{c.watch}</a>
@@ -148,7 +148,7 @@ export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStat
               <li key={id}>
                 <ClickToPlay
                   src={`https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}`}
-                  title={`“12 Weeks” — ${m.episode(i + 1)}`}
+                  title={`${c.seriesTitle} — ${m.episode(i + 1)}`}
                   label={`${m.play}: ${m.episode(i + 1)}`}
                   className="aspect-[9/16] w-full overflow-hidden rounded-[22px] bg-mint-tint p-4"
                 >
@@ -199,11 +199,11 @@ export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStat
         </div>
 
         <div className="grid gap-4 md:grid-cols-3">
-          <Link href={pathFor("en", "curio")} className="group flex min-h-40 flex-col justify-end gap-1 rounded-[22px] bg-graphite p-5 text-fog hover:opacity-95">
+          <Link href={pathFor(locale, "curio")} className="group flex min-h-40 flex-col justify-end gap-1 rounded-[22px] bg-graphite p-5 text-fog hover:opacity-95">
             <span className="font-display text-[20px] font-bold group-hover:underline">{m.curio.title}</span>
             <span className="text-muted-dark">{m.curio.text}</span>
           </Link>
-          <Link href={pathFor("en", "coloring")} className="group flex min-h-40 items-end gap-4 rounded-[22px] border border-line bg-white p-5 hover:border-graphite">
+          <Link href={pathFor(locale, "coloring")} className="group flex min-h-40 items-end gap-4 rounded-[22px] border border-line bg-white p-5 hover:border-graphite">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/coloring/curio-hello.png" alt="" width={1792} height={2620} loading="lazy" className="h-28 w-auto rounded-[10px] border border-line" />
             <span className="flex flex-col gap-1">
@@ -211,7 +211,7 @@ export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStat
               <span className="text-muted">{m.coloring.text}</span>
             </span>
           </Link>
-          <Link href={pathFor("en", "howItWorks")} className="group flex min-h-40 flex-col justify-end gap-1 rounded-[22px] border border-line bg-white p-5 hover:border-graphite">
+          <Link href={pathFor(locale, "howItWorks")} className="group flex min-h-40 flex-col justify-end gap-1 rounded-[22px] border border-line bg-white p-5 hover:border-graphite">
             <span className="font-display text-[20px] font-bold group-hover:underline">{m.walkthrough.title}</span>
             <span className="text-muted">{m.walkthrough.text}</span>
           </Link>
@@ -237,7 +237,7 @@ export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStat
           <Head id="inv-revenue" eyebrow={c.revenue.eyebrow} title={c.revenue.title} />
           <div className="grid gap-4 lg:grid-cols-3">
             {c.revenue.phases.map((p) => (
-              <div key={p.tag} className="flex flex-col gap-4 rounded-[22px] bg-fog p-6">
+              <div key={p.tag} className="flex min-w-0 flex-col gap-4 rounded-[22px] bg-fog p-6">
                 <div>
                   <p className="text-[12px] font-semibold uppercase tracking-[1.4px] text-muted">{p.tag}</p>
                   <h3 className="mt-1.5 font-display text-[24px] font-bold leading-7">{p.name}</h3>
@@ -245,7 +245,7 @@ export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStat
                 <ul className="flex flex-col gap-3">
                   {p.items.map((it) => (
                     <li key={it.name} className="flex items-start justify-between gap-3 border-t border-line pt-3">
-                      <span>
+                      <span className="min-w-0 break-words">
                         <span className="block font-semibold">{it.name}</span>
                         <span className="block text-[13px] leading-[18px] text-muted">{it.price}</span>
                       </span>
@@ -268,7 +268,7 @@ export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStat
       <section aria-labelledby="inv-team" className="container-page grid items-start gap-6 py-20 lg:grid-cols-2">
         <div className="flex flex-col gap-4">
           <p className="eyebrow">{c.team.eyebrow}</p>
-          <h2 id="inv-team" className="font-display text-[clamp(28px,3.4vw,40px)] font-bold leading-[1.1] tracking-[-0.6px]">{c.team.title}</h2>
+          <h2 id="inv-team" className="hyphens-manual font-display text-[clamp(28px,3.4vw,40px)] font-bold leading-[1.1] tracking-[-0.6px]">{c.team.title}</h2>
           <p className="text-muted"><strong className="text-graphite">{c.team.founderName}</strong> {c.team.founder}</p>
           <ul className="flex flex-col gap-2.5">
             {c.team.points.map((t) => (

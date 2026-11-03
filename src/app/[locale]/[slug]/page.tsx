@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { isLocale, localeMeta, locales, pageKeyFromSlug, sitePageKeys, pageSlugs, pathFor, type Locale } from "@/i18n/config";
+import { isLocale, localeMeta, locales, pageKeyFromSlug, pageKeys, pageSlugs, pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
+import { investorsCopy } from "@/content/investors";
 import type { Block } from "@/content/types";
 import { buildMetadata } from "@/lib/seo";
 import { breadcrumbLd, faqLd, graph, webPageLd } from "@/lib/jsonld";
@@ -11,11 +12,18 @@ import { JsonLd } from "@/components/JsonLd";
 import { Blocks } from "@/components/Blocks";
 import { StoreButtons } from "@/components/Cta";
 import { coloringHubLd } from "@/components/coloring/ColoringPages";
+import { InvestorsPage } from "@/components/investors/InvestorsPage";
+import { getInvestorStats } from "@/lib/investorStats";
 
 export const dynamicParams = false;
+/**
+ * Hourly revalidation (David 2026-11-01): the /investors page shows live numbers (YouTube data is cached a day)
+ * and hides its Web Summit card after the event; every other page here is static content and renders the same.
+ */
+export const revalidate = 3600;
 
 export function generateStaticParams() {
-  return locales.flatMap((locale) => sitePageKeys.map((key) => ({ locale, slug: pageSlugs[key][locale] })));
+  return locales.flatMap((locale) => pageKeys.map((key) => ({ locale, slug: pageSlugs[key][locale] })));
 }
 
 function resolve(localeParam: string, slug: string) {
@@ -31,6 +39,12 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]">
   const { locale, slug } = await params;
   const r = resolve(locale, slug);
   if (!r) return {};
+  if (r.key === "investors") {
+    // noindex, but language alternates stay (hreflang between the versions).
+    const { meta } = investorsCopy[r.locale];
+    const m = buildMetadata({ locale: r.locale, key: r.key, title: meta.title, description: meta.description });
+    return { ...m, robots: { index: false, follow: true } };
+  }
   const page = getDictionary(r.locale).pages[r.key];
   return buildMetadata({ locale: r.locale, key: r.key, title: page.meta.title, description: page.meta.description });
 }
@@ -46,6 +60,16 @@ export default async function SubPage({ params }: PageProps<"/[locale]/[slug]">)
   const { locale, key } = r;
   const dict = getDictionary(locale);
   const page = dict.pages[key];
+  if (key === "investors") {
+    const copy = investorsCopy[locale];
+    const ld = graph(webPageLd(locale, key, copy.meta.title, copy.meta.description), breadcrumbLd(locale, dict, key, copy.eyebrow));
+    return (
+      <>
+        <JsonLd data={ld} />
+        <InvestorsPage locale={locale} stats={await getInvestorStats()} />
+      </>
+    );
+  }
   const isLegal = legalKeys.has(key);
 
   const faqBlocks = page.blocks.filter((b): b is Extract<Block, { type: "faq" }> => b.type === "faq");

@@ -1,37 +1,14 @@
-import { site } from "@/lib/site";
-/**
- * /investors page (David 2026-11-01, design "PetPrep for investors", pet-prep-website docs/design/investors-design.html).
- * English only. Copy lives here; every number on the page comes from src/lib/investorStats.ts.
- * Phase 2 wording stays family-safe: partners are offers parents choose to see — never leads, never data sharing.
- */
+import type { InvestorsCopy } from "./types";
 
-export const youtube = {
-  channel: site.social.youtube,
-  /** "12 Weeks" playlist (YouTube Data API v3 + nocookie embed). */
-  playlistId: "PLKZQ_Dl4SmTg",
-  /** "12 Weeks" episodes in order (Shorts, 9:16). */
-  episodes: ["XRjZrBaCEnU", "PM4UgH2-2Gs", "yJZ3I7JxF9A", "zDAXgIi5Gos", "yrokI1Z4Mzs", "amgDs9QDwkE", "-NG1WviHu_g", "pJx4E5TQlhw", "iiGvrKzbPzA", "g2T5ZROUapA", "HdrcUB-17L4", "fdWL1hSAjHA"],
-  /** Curio — a silent family comedy (animated series). */
-  curio: { playlistId: "PLViBkz320w9c", pilot: "BYeoqcbqhl0" },
-  /** "PetPrep in 60 seconds" (playlist "How PetPrep works"). */
-  promo: "CaixLs_X9GA",
-};
-
-export const investorEmail = "mailto:investors@petprep.si";
-
-/** Web Summit card shows until the end of this day (Lisbon). */
-export const webSummitUntil = "2026-11-12T23:59:59+00:00";
-
-export type Status = "live" | "building" | "planned";
-
-export const investorsCopy = {
+const en: InvestorsCopy = {
   meta: {
-    title: "PetPrep for investors — one founder, a content engine, a 15-year product",
+    title: "PetPrep for investors: one founder and a content engine, building a 15-year product",
     description:
       "PetPrep lets a child prove they're ready for a pet in a 12-week realistic simulation and stays with the family for the pet's whole life. Live numbers, revenue map and how to request the investor brief.",
   },
   eyebrow: "For investors",
-  title: "One founder. A content engine. A product families keep for 15 years.",
+  title: "One founder and a content engine, building a product families keep for 15 years.",
+  seriesTitle: "“12 Weeks”",
   lead: "PetPrep lets a child prove they're ready for a pet in a 12-week realistic simulation — and stays with the family for the pet's whole life. Everything around it, from our series to a pet-care library where every fact has a source, exists to bring families in at near-zero cost.",
   watch: "Watch “12 Weeks” on YouTube",
   brief: "Request the investor brief",
@@ -68,22 +45,22 @@ export const investorsCopy = {
     lead: "Every number below updates itself from our registry, knowledge base and channels.",
     updated: "Updated automatically from our registry, knowledge base and channels.",
     cards: {
-      breeds: { label: "Breeds in the register", note: (dogs: number, cats: number) => `${dogs} dogs and ${cats} cats, new ones added nightly` },
+      breeds: { label: "Breeds in the register", note: (dogs, cats) => `${dogs} dogs and ${cats} cats, new ones added nightly` },
       sources: { label: "Sources", note: "Vets, kennel clubs and studies, quoted" },
-      episodes: { label: "“12 Weeks” episodes", note: (views: string | null) => (views ? `${views} views on YouTube` : "On YouTube") },
+      episodes: { label: "“12 Weeks” episodes", note: (views) => (views ? `${views} views on YouTube` : "On YouTube") },
       coloring: { label: "Free colouring pages", note: "Printable, A4 and US Letter" },
       curio: { value: "Pilot", label: "Curio animated series", note: "Pilot episode out on YouTube and TikTok" },
       foods: { label: "Foods explained", note: "Care library, new foods every night" },
       languages: { label: "Languages", note: "Site and care library" },
       vets: { label: "Countries with vet directory", note: "Emergency vets by country" },
     },
-    status: { live: "Live", building: "Building", planned: "Planned" } as Record<Status, string>,
+    status: { live: "Live", building: "Building", planned: "Planned" },
     media: {
       playlist: "“12 Weeks” — the series",
       channel: "YouTube channel @petprep-si →",
       play: "Play",
       all: "All episodes (playlist)",
-      episode: (n: number) => `Episode ${n}`,
+      episode: (n) => `Episode ${n}`,
       consent: "Plays from YouTube (youtube-nocookie.com) — nothing loads until you click.",
       more: "More to watch",
       curioPilot: { title: "Curio — Rock, Paper, Leash", text: "Pilot of our silent family comedy" },
@@ -115,28 +92,28 @@ export const investorsCopy = {
         tag: "Phase 1 · Before the pet",
         name: "Pays for acquisition",
         items: [
-          { name: "12-week challenge", price: "€49.99 per pet, one-time", status: "live" as Status, label: "Built" },
-          { name: "Wishes (items for the pet)", price: "€2.99–€15.99, looks only", status: "live" as Status, label: "Built" },
-          { name: "Series sponsorship", price: "Season packages", status: "building" as Status, label: "In progress" },
-          { name: "Shop: colouring books, Curio plush, puzzles", price: "Physical and digital", status: "planned" as Status, label: "Planned" },
+          { name: "12-week challenge", price: "€49.99 per pet, one-time", status: "live", label: "Built" },
+          { name: "Wishes (items for the pet)", price: "€2.99–€15.99, looks only", status: "live", label: "Built" },
+          { name: "Series sponsorship", price: "Season packages", status: "building", label: "In progress" },
+          { name: "Shop: colouring books, Curio plush, puzzles", price: "Physical and digital", status: "planned", label: "Planned" },
         ],
       },
       {
         tag: "Phase 2 · With a real pet",
         name: "The business",
         items: [
-          { name: "AI pet-care assistant", price: "Subscription from €3.99 / month + top-ups", status: "planned" as Status, label: "Planned" },
-          { name: "Pet insurance partners", price: "Offers parents choose to see, per referral", status: "planned" as Status, label: "Planned" },
-          { name: "Vet partner network", price: "Bookings and tele-consults", status: "planned" as Status, label: "Planned" },
-          { name: "DNA tests and pet-store partners", price: "Affiliate, later own kit", status: "planned" as Status, label: "Planned" },
+          { name: "AI pet-care assistant", price: "Subscription from €3.99 / month + top-ups", status: "planned", label: "Planned" },
+          { name: "Pet insurance partners", price: "Offers parents choose to see, per referral", status: "planned", label: "Planned" },
+          { name: "Vet partner network", price: "Bookings and tele-consults", status: "planned", label: "Planned" },
+          { name: "DNA tests and pet-store partners", price: "Affiliate, later own kit", status: "planned", label: "Planned" },
         ],
       },
       {
         tag: "Brand",
         name: "Curio and the series",
         items: [
-          { name: "Curio animated series", price: "Season sponsors", status: "live" as Status, label: "Pilot out" },
-          { name: "#walkyourpet", price: "Movement that feeds every channel", status: "live" as Status, label: "Live" },
+          { name: "Curio animated series", price: "Season sponsors", status: "live", label: "Pilot out" },
+          { name: "#walkyourpet", price: "Movement that feeds every channel", status: "live", label: "Live" },
         ],
       },
     ],
@@ -162,3 +139,5 @@ export const investorsCopy = {
   },
   contactTitle: "Get in touch",
 };
+
+export default en;

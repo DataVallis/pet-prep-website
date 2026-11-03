@@ -1,5 +1,6 @@
-import { isLocale, locales, pageKeyFromSlug, pageSlugs, sitePageKeys } from "@/i18n/config";
+import { isLocale, locales, pageKeyFromSlug, pageKeys, pageSlugs } from "@/i18n/config";
 import { getDictionary } from "@/content";
+import { investorsCopy } from "@/content/investors";
 import { ogImage, ogSize } from "@/lib/og";
 
 export const size = ogSize;
@@ -7,7 +8,7 @@ export const contentType = "image/png";
 export const alt = "PetPrep";
 
 export function generateStaticParams() {
-  return locales.flatMap((locale) => sitePageKeys.map((key) => ({ locale, slug: pageSlugs[key][locale] })));
+  return locales.flatMap((locale) => pageKeys.map((key) => ({ locale, slug: pageSlugs[key][locale] })));
 }
 
 export default async function Image({ params }: { params: Promise<{ locale: string; slug: string }> }) {
@@ -15,6 +16,10 @@ export default async function Image({ params }: { params: Promise<{ locale: stri
   const locale = isLocale(l) ? l : "en";
   const dict = getDictionary(locale);
   const key = pageKeyFromSlug(locale, slug);
+  if (key === "investors") {
+    const c = investorsCopy[locale];
+    return ogImage({ eyebrow: c.eyebrow, title: c.title, footer: `PetPrep · ${dict.meta.slogan}` });
+  }
   const page = key ? dict.pages[key] : undefined;
   return ogImage({
     eyebrow: page?.eyebrow ?? "PetPrep",
