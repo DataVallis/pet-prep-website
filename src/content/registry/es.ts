@@ -379,6 +379,8 @@ const es: RegistryCopy = {
       dna_gm2: "Prueba de ADN de gangliosidosis GM2 (una enfermedad hereditaria del sistema nervioso)",
       dna_vwd3: "Prueba de ADN de enfermedad de von Willebrand tipo 3 (vWD3), un trastorno hemorrágico hereditario",
       dna_pra_rcd3: "Prueba de ADN de atrofia progresiva de retina (PRA-rcd3)",
+      dna_clad: "Prueba de ADN de la deficiencia de adhesión leucocitaria canina (CLAD), un trastorno inmunitario hereditario",
+      dna_pra_rcd1: "Prueba de ADN de atrofia progresiva de retina (rcd1)",
       dna_vwd2: "Prueba de ADN de enfermedad de von Willebrand tipo 2 (vWD2), un trastorno hemorrágico hereditario",
       dna_l2hga: "Prueba de ADN de aciduria L-2-hidroxiglutárica (L-2-HGA), una enfermedad metabólica hereditaria del sistema nervioso",
       dna_pll: "Prueba de ADN de luxación primaria del cristalino (PLL), una enfermedad ocular hereditaria en la que el cristalino se desplaza de su sitio",
@@ -622,6 +624,14 @@ const es: RegistryCopy = {
     },
   },
   intros: {
+    irish_setter: {
+      aka: "Setter irlandés rojo, Irish Setter",
+      text: [
+        "El setter irlandés (setter irlandés rojo) es un perro de muestra esbelto y atlético de Irlanda, criado para buscar en amplios terrenos. El estándar de la FCI describe un único color —castaño intenso sin rastro de negro— y una altura de 58–67 cm en machos y 55–62 cm en hembras; el estándar estadounidense de la raza considera ideal unas 70 libras (unos 32 kg) para un macho y 60 libras (unos 27 kg) para una hembra. Un perro de este tamaño termina de crecer hacia los 15–18 meses (PetMD), y The Royal Kennel Club indica una esperanza de vida de más de 10 años.",
+        "The Royal Kennel Club recomienda más de 2 horas de ejercicio al día y cuidado del pelo más de una vez por semana, indica que la raza muda el pelo y necesita una casa grande con un jardín grande, y la incluye en la categoría 1 de Breed Watch. La PDSA describe perros muy amables y cariñosos que se llevan bien con los niños y otras mascotas, y aconseja cuidar el pelo 2 o 3 veces por semana; PetMD recomienda revisar y limpiar las orejas cada semana y escribe que los setters irlandeses necesitan mucha compañía humana.",
+      ],
+      sources: ["S675", "S676", "S678", "S680", "S10"],
+    },
     brussels_griffon: {
       aka: "Griffon Bruxellois, Brussels Griffon",
       text: [

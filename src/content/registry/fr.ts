@@ -384,6 +384,8 @@ const fr: RegistryCopy = {
       dna_gm2: "Test ADN de la gangliosidose GM2 (une maladie héréditaire du système nerveux)",
       dna_vwd3: "Test ADN de la maladie de von Willebrand de type 3 (vWD3), un trouble héréditaire de la coagulation",
       dna_pra_rcd3: "Test ADN de l’atrophie progressive de la rétine (PRA-rcd3)",
+      dna_clad: "Test ADN de la déficience d’adhésion leucocytaire canine (CLAD), un trouble immunitaire héréditaire",
+      dna_pra_rcd1: "Test ADN de l’atrophie progressive de la rétine (rcd1)",
       dna_vwd2: "Test ADN de la maladie de von Willebrand de type 2 (vWD2), un trouble héréditaire de la coagulation",
       dna_l2hga: "Test ADN de l’acidurie L-2-hydroxyglutarique (L-2-HGA), une maladie métabolique héréditaire du système nerveux",
       dna_pll: "Test ADN de la luxation primaire du cristallin (PLL), une maladie oculaire héréditaire dans laquelle le cristallin se déplace",
@@ -627,6 +629,14 @@ const fr: RegistryCopy = {
     },
   },
   intros: {
+    irish_setter: {
+      aka: "Setter irlandais, Irish Setter",
+      text: [
+        "Le setter irlandais rouge (Irish Setter) est un chien d’arrêt élancé et athlétique originaire d’Irlande, sélectionné pour quêter largement. Le standard FCI décrit une seule couleur — un châtain riche sans trace de noir — et une hauteur de 58 à 67 cm pour les mâles et de 55 à 62 cm pour les femelles ; le standard américain de la race juge idéal environ 70 livres (environ 32 kg) pour un mâle et 60 livres (environ 27 kg) pour une femelle. Un chien de cette taille atteint sa taille adulte vers 15 à 18 mois (PetMD), et le Royal Kennel Club indique une espérance de vie de plus de 10 ans.",
+        "Le Royal Kennel Club recommande plus de 2 heures d’exercice par jour et un entretien du pelage plus d’une fois par semaine, indique que la race perd ses poils et convient à une grande maison avec un grand jardin, et la classe dans la catégorie 1 de Breed Watch. La PDSA décrit des chiens très amicaux et affectueux qui s’entendent bien avec les enfants et les autres animaux, et conseille un entretien du pelage 2 à 3 fois par semaine ; PetMD recommande de contrôler et nettoyer les oreilles chaque semaine et écrit que les setters irlandais ont besoin de beaucoup de compagnie humaine.",
+      ],
+      sources: ["S675", "S676", "S678", "S680", "S10"],
+    },
     brussels_griffon: {
       aka: "Griffon de Bruxelles, Brussels Griffon",
       text: [

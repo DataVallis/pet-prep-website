@@ -687,6 +687,14 @@
         "Griffon Bruxellois",
         "Brussels Griffon"
       ]
+    },
+    "irish_setter": {
+      "name": "Setter irlandés",
+      "slug": "setter-irlandes",
+      "synonyms": [
+        "Setter irlandés rojo",
+        "Irish Setter"
+      ]
     }
   },
   "suitability_labels": {

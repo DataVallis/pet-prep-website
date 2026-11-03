@@ -370,6 +370,8 @@ const sl: RegistryCopy = {
       dna_gm2: "Test DNK za gangliozidozo GM2 (dedna bolezen živčevja)",
       dna_vwd3: "Test DNK za von Willebrandovo bolezen tipa 3 (vWD3), dedno motnjo strjevanja krvi",
       dna_pra_rcd3: "Test DNK za progresivno atrofijo mrežnice (PRA-rcd3)",
+      dna_clad: "Test DNK za pomanjkanje adhezije levkocitov (CLAD), dedno motnjo imunskega sistema",
+      dna_pra_rcd1: "Test DNK za progresivno atrofijo mrežnice (rcd1)",
       dna_vwd2: "Test DNK za von Willebrandovo bolezen tipa 2 (vWD2), dedno motnjo strjevanja krvi",
       dna_l2hga: "Test DNK za L-2-hidroksiglutarno acidurijo (L-2-HGA), dedno presnovno bolezen živčevja",
       dna_pll: "Test DNK za primarno luksacijo leče (PLL), dedno bolezen oči, pri kateri leča zdrsne s svojega mesta",
@@ -622,6 +624,14 @@ const sl: RegistryCopy = {
     },
   },
   intros: {
+    irish_setter: {
+      aka: "Irish Setter, irski rdeči seter, rdeči seter, seter",
+      text: [
+        "Irski seter (Irish Red Setter) je vitek, atletski ptičar iz Irske, vzrejen za iskanje divjadi na prostranem terenu. Standard FCI opisuje eno samo barvo — bogato kostanjevo brez sledi črne — in višino 58–67 cm za pse ter 55–62 cm za psice; ameriški standard pasme kot idealno navaja okoli 70 funtov (približno 32 kg) za psa in 60 funtov (približno 27 kg) za psico. Pes te velikosti doraste pri približno 15–18 mesecih (PetMD), The Royal Kennel Club pa navaja življenjsko dobo več kot 10 let.",
+        "The Royal Kennel Club priporoča več kot 2 uri gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da potrebuje veliko hišo z velikim vrtom, ter ga uvršča v 1. kategorijo programa Breed Watch. PDSA ga opisuje kot zelo prijaznega in ljubečega psa, ki se dobro razume z otroki in drugimi živalmi, in svetuje česanje 2- do 3-krat na teden; PetMD priporoča tedenski pregled in čiščenje ušes ter piše, da irski setri potrebujejo veliko človeške družbe.",
+      ],
+      sources: ["S675", "S676", "S678", "S680", "S10"],
+    },
     brussels_griffon: {
       aka: "Brussels Griffon, Griffon Bruxellois, grifon",
       text: [

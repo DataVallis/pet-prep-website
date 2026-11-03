@@ -425,6 +425,8 @@ const sv: RegistryCopy = {
       dna_gm2: "DNA-test för GM2-gangliosidos (en ärftlig sjukdom i nervsystemet)",
       dna_vwd3: "DNA-test för von Willebrands sjukdom typ 3 (vWD3), en ärftlig blödningsrubbning",
       dna_pra_rcd3: "DNA-test för progressiv retinal atrofi (PRA-rcd3)",
+      dna_clad: "DNA-test för canin leukocytadhesionsdefekt (CLAD), en ärftlig immunsjukdom",
+      dna_pra_rcd1: "DNA-test för progressiv retinal atrofi (rcd1)",
       dna_vwd2: "DNA-test för von Willebrands sjukdom typ 2 (vWD2), en ärftlig blödningsrubbning",
       dna_l2hga: "DNA-test för L-2-hydroxiglutarsyrauri (L-2-HGA), en ärftlig ämnesomsättningssjukdom i nervsystemet",
       dna_pll: "DNA-test för primär linsluxation (PLL), en ärftlig ögonsjukdom där linsen glider ur sitt läge",
@@ -715,6 +717,14 @@ const sv: RegistryCopy = {
     },
   },
   intros: {
+    irish_setter: {
+      aka: "Irländsk setter, Irish Setter",
+      text: [
+        "Irländsk röd setter (irländsk setter) är en elegant, atletisk fågelhund från Irland, framavlad för att söka vida i terrängen. FCI-standarden beskriver en enda färg — mättat kastanjeröd utan spår av svart — och en mankhöjd på 58–67 cm för hanar och 55–62 cm för tikar; den amerikanska rasstandarden anger omkring 70 pund (cirka 32 kg) som idealt för en hane och 60 pund (cirka 27 kg) för en tik. En hund av den här storleken är fullvuxen vid ungefär 15–18 månader (PetMD), och The Royal Kennel Club anger en livslängd på över 10 år.",
+        "The Royal Kennel Club rekommenderar mer än 2 timmars motion om dagen och pälsvård mer än en gång i veckan, anger att rasen fäller och passar ett stort hus med stor trädgård, och placerar den i Breed Watch-kategori 1. PDSA beskriver mycket vänliga, tillgivna hundar som kommer bra överens med barn och andra husdjur och råder till pälsvård 2–3 gånger i veckan; PetMD rekommenderar att öronen kontrolleras och rengörs varje vecka och skriver att irländska settrar behöver mycket mänskligt sällskap.",
+      ],
+      sources: ["S675", "S676", "S678", "S680", "S10"],
+    },
     brussels_griffon: {
       aka: "Brysselgriffon, Brussels Griffon",
       text: [

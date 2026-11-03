@@ -405,6 +405,8 @@ const pl: RegistryCopy = {
       dna_gm2: "Test DNA w kierunku gangliozydozy GM2 (dziedzicznej choroby układu nerwowego)",
       dna_vwd3: "Test DNA w kierunku choroby von Willebranda typu 3 (vWD3), dziedzicznego zaburzenia krzepnięcia krwi",
       dna_pra_rcd3: "Test DNA w kierunku postępującego zaniku siatkówki (PRA-rcd3)",
+      dna_clad: "Test DNA w kierunku niedoboru adhezji leukocytów (CLAD), dziedzicznego zaburzenia odporności",
+      dna_pra_rcd1: "Test DNA w kierunku postępującego zaniku siatkówki (rcd1)",
       dna_vwd2: "Test DNA w kierunku choroby von Willebranda typu 2 (vWD2), dziedzicznego zaburzenia krzepnięcia krwi",
       dna_l2hga: "Test DNA w kierunku kwasicy L-2-hydroksyglutarowej (L-2-HGA), dziedzicznej choroby metabolicznej układu nerwowego",
       dna_pll: "Test DNA w kierunku pierwotnego zwichnięcia soczewki (PLL), dziedzicznej choroby oczu, w której soczewka przesuwa się ze swojego miejsca",
@@ -651,6 +653,14 @@ const pl: RegistryCopy = {
     },
   },
   intros: {
+    irish_setter: {
+      aka: "Seter irlandzki, Irish Setter",
+      text: [
+        "Seter irlandzki czerwony (Irish Setter) to smukły, atletyczny wyżeł z Irlandii, wyhodowany do szerokiego szukania zwierzyny. Wzorzec FCI opisuje tylko jedną maść — głęboki kasztan bez śladu czerni — oraz wysokość 58–67 cm u psów i 55–62 cm u suk; amerykański wzorzec rasy za idealne uznaje około 70 funtów (około 32 kg) u psa i 60 funtów (około 27 kg) u suki. Pies tej wielkości kończy rosnąć w wieku około 15–18 miesięcy (PetMD), a The Royal Kennel Club podaje długość życia ponad 10 lat.",
+        "The Royal Kennel Club zaleca ponad 2 godziny ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu, podaje, że rasa linieje i potrzebuje dużego domu z dużym ogrodem, oraz umieszcza ją w kategorii 1 programu Breed Watch. PDSA opisuje bardzo przyjazne, czułe psy, które dobrze dogadują się z dziećmi i innymi zwierzętami, i radzi pielęgnować sierść 2–3 razy w tygodniu; PetMD zaleca cotygodniowe sprawdzanie i czyszczenie uszu i pisze, że setery irlandzkie potrzebują dużo ludzkiego towarzystwa.",
+      ],
+      sources: ["S675", "S676", "S678", "S680", "S10"],
+    },
     brussels_griffon: {
       aka: "Griffon Bruxellois, Brussels Griffon",
       text: [

@@ -790,6 +790,14 @@
         "Brysselgriffon",
         "Brussels Griffon"
       ]
+    },
+    "irish_setter": {
+      "name": "Irländsk röd setter",
+      "slug": "irlandsk-rod-setter",
+      "synonyms": [
+        "Irländsk setter",
+        "Irish Setter"
+      ]
     }
   },
   "suitability_labels": {

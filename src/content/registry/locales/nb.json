@@ -794,6 +794,14 @@
         "Brusselsk griffon",
         "Brussels Griffon"
       ]
+    },
+    "irish_setter": {
+      "name": "Irsk setter",
+      "slug": "irsk-setter",
+      "synonyms": [
+        "Irsk rød setter",
+        "Irish Setter"
+      ]
     }
   },
   "suitability_labels": {

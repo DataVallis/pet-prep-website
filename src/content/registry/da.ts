@@ -428,6 +428,8 @@ const da: RegistryCopy = {
       dna_gm2: "DNA-test for GM2-gangliosidose (en arvelig sygdom i nervesystemet)",
       dna_vwd3: "DNA-test for von Willebrands sygdom type 3 (vWD3), en arvelig blødersygdom",
       dna_pra_rcd3: "DNA-test for progressiv retinal atrofi (PRA-rcd3)",
+      dna_clad: "DNA-test for canin leukocyt-adhæsionsdefekt (CLAD), en arvelig immunsygdom",
+      dna_pra_rcd1: "DNA-test for progressiv retinal atrofi (rcd1)",
       dna_vwd2: "DNA-test for von Willebrands sygdom type 2 (vWD2), en arvelig blødersygdom",
       dna_l2hga: "DNA-test for L-2-hydroxyglutarsyreuri (L-2-HGA), en arvelig stofskiftesygdom i nervesystemet",
       dna_pll: "DNA-test for primær linseluksation (PLL), en arvelig øjensygdom hvor linsen glider ud af sin plads",
@@ -717,6 +719,14 @@ const da: RegistryCopy = {
     },
   },
   intros: {
+    irish_setter: {
+      aka: "Irsk rød setter, Irish Setter",
+      text: [
+        "Irsk setter (irsk rød setter) er en elegant, atletisk hønsehund fra Irland, avlet til at søge vidt i terrænet. FCI-standarden beskriver én farve — dyb kastanjerød uden spor af sort — og en højde på 58–67 cm for hanner og 55–62 cm for tæver; den amerikanske racestandard angiver omkring 70 pund (ca. 32 kg) som ideelt for en han og 60 pund (ca. 27 kg) for en tæve. En hund af denne størrelse er udvokset ved omkring 15–18 måneder (PetMD), og The Royal Kennel Club angiver en levetid på over 10 år.",
+        "The Royal Kennel Club anbefaler mere end 2 timers motion om dagen og pelspleje mere end én gang om ugen, oplyser, at racen fælder og passer til et stort hus med stor have, og placerer den i Breed Watch-kategori 1. PDSA beskriver meget venlige, kærlige hunde, der kommer godt ud af det med børn og andre kæledyr, og anbefaler pelspleje 2-3 gange om ugen; PetMD anbefaler ugentlig kontrol og rengøring af ørerne og skriver, at irske settere har brug for meget menneskeligt selskab.",
+      ],
+      sources: ["S675", "S676", "S678", "S680", "S10"],
+    },
     brussels_griffon: {
       aka: "Brusselsk griffon, Brussels Griffon",
       text: [

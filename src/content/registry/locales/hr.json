@@ -861,6 +861,14 @@
         "Griffon Bruxellois",
         "Brussels Griffon"
       ]
+    },
+    "irish_setter": {
+      "name": "Irski crveni seter",
+      "slug": "irski-crveni-seter",
+      "synonyms": [
+        "Irski seter",
+        "Irish Setter"
+      ]
     }
   },
   "suitability_labels": {
