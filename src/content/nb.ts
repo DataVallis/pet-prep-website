@@ -700,7 +700,7 @@ const nb: Dictionary = {
                 "Push-varsler: Apple Push Notification service og Firebase Cloud Messaging via Expo; varslene inneholder ingen navn.",
                 "Kjøp: Apple App Store og Google Play; administrasjon av kjøp via RevenueCat når kjøp blir tilgjengelige.",
                 "E-post om tidlig tilgang: Klaviyo (mottar bare e-postadressen og språket du sender inn på dette nettstedet).",
-                "Samtykke til informasjonskapsler på nettstedet: CookieYes (lagrer samtykkevalget ditt).",
+                "Samtykke til informasjonskapsler på nettstedet: Kockica (lagrer samtykkevalget ditt).",
                 "Analyse av nettstedet: Google Analytics 4 fra Google Ireland Ltd., bare med ditt samtykke; IP-adresser lagres ikke av Google Analytics 4.",
               ],
             },
@@ -733,7 +733,7 @@ const nb: Dictionary = {
           heading: "14. Informasjonskapsler",
           paragraphs: [
             "Nødvendige informasjonskapsler holder nettstedet i gang og husker samtykkevalget ditt. Informasjonskapsler for analyse (Google Analytics) settes bare hvis du tillater dem i banneret, og du kan når som helst endre valget ditt.",
-            "Tabellen nedenfor genereres automatisk fra den siste skanningen av dette nettstedet, så den viser alltid informasjonskapslene vi faktisk bruker.",
+            "Tabellen nedenfor lages automatisk av samtykkebanneret ut fra det det finner på dette nettstedet, så den viser informasjonskapslene vi faktisk bruker.",
           ],
           settings: "Endre innstillinger for informasjonskapsler",
           fallback: "Listen over informasjonskapsler lastes sammen med samtykkebanneret. Hvis du ikke ser den, må du tillate skript på denne siden eller skrive til {privacyEmail}.",

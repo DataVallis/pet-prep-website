@@ -1,4 +1,5 @@
 import type { Locale } from "@/i18n/config";
+import { KockicaCookieTable } from "@/components/KockicaCookieTable";
 import type { Block, Dictionary } from "@/content/types";
 import { companyAddress, companyIdLabels, fillPlaceholders } from "@/content";
 import { site } from "@/lib/site";
@@ -282,12 +283,12 @@ export function Blocks({ blocks, locale, dict }: { blocks: Block[]; locale: Loca
                 <h2 id="cookies">{b.heading}</h2>
                 {b.paragraphs.map((p) => <p key={p}>{fillPlaceholders(p, locale)}</p>)}
                 <p>
-                  <button type="button" className="cky-banner-element btn btn-secondary mt-2">
+                  <a href="#" data-kockica-preferences className="btn btn-secondary mt-2">
                     {b.settings}
-                  </button>
+                  </a>
                 </p>
-                {/* CookieYes fills this element with the live cookie table from its latest scan. */}
-                <div className="cky-audit-table-element cookie-table mt-6" />
+                {/* Kockica fills this element with the cookie table (what it detects + its own consent cookie). */}
+                <KockicaCookieTable className="cookie-table mt-6" />
                 <noscript>
                   <p>{fillPlaceholders(b.fallback, locale)}</p>
                 </noscript>

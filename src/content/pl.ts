@@ -700,7 +700,7 @@ const pl: Dictionary = {
                 "Powiadomienia push: Apple Push Notification service i Firebase Cloud Messaging za pośrednictwem Expo; powiadomienia nie zawierają imion.",
                 "Zakupy: Apple App Store i Google Play; zarządzanie zakupami przez RevenueCat, gdy zakupy zostaną uruchomione.",
                 "E-maile o wczesnym dostępie: Klaviyo (otrzymuje wyłącznie adres e-mail i język, które podajesz na tej stronie).",
-                "Zgoda na pliki cookie na stronie: CookieYes (przechowuje twój wybór dotyczący zgody).",
+                "Zgoda na pliki cookie na stronie: Kockica (przechowuje twój wybór dotyczący zgody).",
                 "Analityka strony: Google Analytics 4 od Google Ireland Ltd., wyłącznie za twoją zgodą; Google Analytics 4 nie przechowuje adresów IP.",
               ],
             },
@@ -733,7 +733,7 @@ const pl: Dictionary = {
           heading: "14. Pliki cookie",
           paragraphs: [
             "Niezbędne pliki cookie zapewniają działanie strony i zapamiętują twój wybór dotyczący zgody. Analityczne pliki cookie (Google Analytics) są ustawiane tylko wtedy, gdy pozwolisz na to w banerze, a swój wybór możesz zmienić w każdej chwili.",
-            "Poniższa tabela jest generowana automatycznie na podstawie ostatniego skanu tej strony, więc zawsze pokazuje pliki cookie, których faktycznie używamy.",
+            "Poniższą tabelę automatycznie tworzy baner zgody na podstawie tego, co wykrywa na tej stronie, więc pokazuje pliki cookie, których faktycznie używamy.",
           ],
           settings: "Zmień ustawienia plików cookie",
           fallback: "Lista plików cookie wczytuje się razem z banerem zgody. Jeśli jej nie widzisz, zezwól na skrypty na tej stronie albo napisz na {privacyEmail}.",

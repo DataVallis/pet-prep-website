@@ -60,8 +60,7 @@ export const site = {
   legalReviewed: false,
   /** Last change of the privacy policy and terms (shown on those pages only). */
   legalUpdated: "2026-11-02",
-  /** Consent banner (CookieYes) and Google Analytics 4. Analytics only runs after consent (Consent Mode v2). */
-  cookieyesScript: "https://cdn-cookieyes.com/client_data/62f2cbd0a9ac6653c320370d143f369f/script.js",
+  /** Google Analytics 4 (consent banner: Kockica, src/components/Kockica.tsx). Analytics only runs after consent (Consent Mode v2). */
   gaMeasurementId: "G-CGSBN9N46F",
   price: { challenge: 49.99, currency: "EUR", weeks: 12 },
 } as const;

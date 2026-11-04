@@ -700,7 +700,7 @@ const cs: Dictionary = {
                 "Push oznámení: Apple Push Notification service a Firebase Cloud Messaging přes Expo; oznámení neobsahují jména.",
                 "Nákupy: Apple App Store a Google Play; správa nákupů přes RevenueCat, až budou nákupy spuštěny.",
                 "E-maily k předběžnému přístupu: Klaviyo (dostává jen e-mailovou adresu a jazyk, které na tomto webu zadáte).",
-                "Souhlas s cookies na webu: CookieYes (ukládá vaši volbu souhlasu).",
+                "Souhlas s cookies na webu: Kockica (ukládá vaši volbu souhlasu).",
                 "Analytika webu: Google Analytics 4 od Google Ireland Ltd., jen s vaším souhlasem; Google Analytics 4 IP adresy neukládá.",
               ],
             },
@@ -733,7 +733,7 @@ const cs: Dictionary = {
           heading: "14. Cookies",
           paragraphs: [
             "Nezbytné cookies zajišťují fungování webu a pamatují si vaši volbu souhlasu. Analytické cookies (Google Analytics) se nastavují jen tehdy, když je povolíte v liště, a svou volbu můžete kdykoli změnit.",
-            "Tabulka níže se generuje automaticky z posledního skenu tohoto webu, takže vždy uvádí cookies, které skutečně používáme.",
+            "Tabulku níže automaticky vytváří lišta souhlasu podle toho, co na tomto webu zjistí, takže uvádí cookies, které skutečně používáme.",
           ],
           settings: "Změnit nastavení cookies",
           fallback: "Seznam cookies se načte s lištou souhlasu. Pokud ho nevidíte, povolte na této stránce skripty nebo napište na {privacyEmail}.",

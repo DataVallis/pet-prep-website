@@ -700,7 +700,7 @@ const de: Dictionary = {
                 "Push-Benachrichtigungen: Apple Push Notification service und Firebase Cloud Messaging über Expo; Benachrichtigungen enthalten keine Namen.",
                 "Käufe: Apple App Store und Google Play; Kaufverwaltung über RevenueCat, sobald Käufe freigeschaltet sind.",
                 "E-Mails zum frühen Zugang: Klaviyo (erhält nur die E-Mail-Adresse und die Sprache, die Sie auf dieser Website angeben).",
-                "Cookie-Einwilligung auf der Website: CookieYes (speichert Ihre Einwilligungsentscheidung).",
+                "Cookie-Einwilligung auf der Website: Kockica (speichert Ihre Einwilligungsentscheidung).",
                 "Website-Analyse: Google Analytics 4 von Google Ireland Ltd., nur mit Ihrer Einwilligung; IP-Adressen werden von Google Analytics 4 nicht gespeichert.",
               ],
             },
@@ -733,7 +733,7 @@ const de: Dictionary = {
           heading: "14. Cookies",
           paragraphs: [
             "Notwendige Cookies halten die Website funktionsfähig und speichern Ihre Einwilligungsentscheidung. Analyse-Cookies (Google Analytics) werden nur gesetzt, wenn Sie sie im Banner erlauben, und Sie können Ihre Entscheidung jederzeit ändern.",
-            "Die folgende Tabelle wird automatisch aus dem letzten Scan dieser Website erstellt und listet daher immer die Cookies, die wir tatsächlich verwenden.",
+            "Die folgende Tabelle erstellt das Einwilligungsbanner automatisch aus dem, was es auf dieser Website erkennt; sie listet daher die Cookies, die wir tatsächlich verwenden.",
           ],
           settings: "Cookie-Einstellungen ändern",
           fallback: "Die Cookie-Liste wird mit dem Einwilligungsbanner geladen. Wenn Sie sie nicht sehen, erlauben Sie Skripte auf dieser Seite oder schreiben Sie an {privacyEmail}.",

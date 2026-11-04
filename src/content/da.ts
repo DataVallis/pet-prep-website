@@ -700,7 +700,7 @@ const da: Dictionary = {
                 "Push-notifikationer: Apple Push Notification service og Firebase Cloud Messaging via Expo; notifikationerne indeholder ingen navne.",
                 "Køb: Apple App Store og Google Play; administration af køb via RevenueCat når købsfunktionen bliver aktiveret.",
                 "E-mails om tidlig adgang: Klaviyo (modtager kun den e-mailadresse og det sprog du indsender på dette websted).",
-                "Cookiesamtykke på webstedet: CookieYes (gemmer dit samtykkevalg).",
+                "Cookiesamtykke på webstedet: Kockica (gemmer dit samtykkevalg).",
                 "Analyse af webstedet: Google Analytics 4 fra Google Ireland Ltd., kun med dit samtykke; Google Analytics 4 gemmer ikke IP-adresser.",
               ],
             },
@@ -733,7 +733,7 @@ const da: Dictionary = {
           heading: "14. Cookies",
           paragraphs: [
             "Nødvendige cookies får webstedet til at fungere og husker dit samtykkevalg. Analysecookies (Google Analytics) sættes kun hvis du tillader dem i banneret, og du kan til enhver tid ændre dit valg.",
-            "Tabellen nedenfor genereres automatisk ud fra den seneste scanning af dette websted, så den altid viser de cookies vi faktisk bruger.",
+            "Tabellen nedenfor genereres automatisk af samtykkebanneret ud fra det, det finder på dette websted, så den viser de cookies, vi faktisk bruger.",
           ],
           settings: "Skift cookieindstillinger",
           fallback: "Cookielisten indlæses sammen med samtykkebanneret. Hvis du ikke kan se den, så tillad scripts på denne side eller skriv til {privacyEmail}.",

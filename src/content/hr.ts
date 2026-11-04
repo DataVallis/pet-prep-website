@@ -700,7 +700,7 @@ const hr: Dictionary = {
                 "Push obavijesti: Apple Push Notification service i Firebase Cloud Messaging putem servisa Expo; obavijesti ne sadrže imena.",
                 "Kupnje: Apple App Store i Google Play; upravljanje kupnjama putem servisa RevenueCat kad kupnje budu pokrenute.",
                 "E-pošta za rani pristup: Klaviyo (prima samo adresu e-pošte i jezik koje uneseš na ovoj mrežnoj stranici).",
-                "Privola za kolačiće na mrežnoj stranici: CookieYes (pohranjuje tvoj izbor u vezi s privolom).",
+                "Privola za kolačiće na mrežnoj stranici: Kockica (pohranjuje tvoj izbor u vezi s privolom).",
                 "Analitika mrežne stranice: Google Analytics 4 tvrtke Google Ireland Ltd., samo uz tvoju privolu; Google Analytics 4 ne pohranjuje IP adrese.",
               ],
             },
@@ -733,7 +733,7 @@ const hr: Dictionary = {
           heading: "14. Kolačići",
           paragraphs: [
             "Nužni kolačići omogućuju rad mrežne stranice i pamte tvoj izbor u vezi s privolom. Analitički kolačići (Google Analytics) postavljaju se samo ako ih dopustiš u prozoru za privolu, a izbor možeš promijeniti u svakom trenutku.",
-            "Tablica u nastavku automatski se generira iz posljednjeg skeniranja ove mrežne stranice, pa uvijek navodi kolačiće koje stvarno koristimo.",
+            "Tablicu u nastavku automatski izrađuje traka za privolu prema onome što pronađe na ovoj mrežnoj stranici, pa navodi kolačiće koje stvarno koristimo.",
           ],
           settings: "Promijeni postavke kolačića",
           fallback: "Popis kolačića učitava se zajedno s prozorom za privolu. Ako ga ne vidiš, dopusti skripte na ovoj stranici ili piši na {privacyEmail}.",

@@ -70,9 +70,11 @@ Local test: `KLAVIYO_PRIVATE_API_KEY=pk_… KLAVIYO_LIST_ID=… npm run dev`.
 
 ## Cookies and analytics
 
-- `src/components/ConsentAndAnalytics.tsx` (in `<head>` of every page): Google Consent Mode v2 defaults (all denied) → CookieYes banner → Google Analytics 4 (`G-CGSBN9N46F`). IDs live in `src/lib/site.ts`.
-- GA sets cookies only after the visitor allows **Analytics** in the banner. In the CookieYes dashboard, **Google Consent Mode (GCM)** must be enabled, otherwise consent never reaches GA.
-- Privacy page section “Cookies” contains `<div class="cky-audit-table-element">` — CookieYes fills it with the live cookie list from its latest scan. Any element with class `cky-banner-element` (footer “Cookie settings”) reopens the preferences.
+- Cookie banner: **Kockica** (`@datavallis/consent`, replaced CookieYes 2026-11-04) — `src/components/Kockica.tsx`, initialised at module top level (before next/script). Controller = `site.company.legalName, city`; cookie policy = the "Cookies" section of each language's privacy page (`/<privacy slug>#cookies`). Built-in texts for 12 of our languages; **sv, fi and nb show English** until Kockica ships those packs. Branding credit off.
+- `src/components/ConsentAndAnalytics.tsx`: `<ConsentDefaults />` in `<head>` (Kockica's Consent Mode v2 defaults, all denied, + GA4 config `G-CGSBN9N46F`), `<GoogleAnalytics />` loads gtag.js via next/script `afterInteractive`. GA runs cookieless until the visitor allows **Analytics** (Consent Mode "advanced"); `services: ["ga4"]` is declared because gtag.js loads after Kockica starts.
+- Privacy page "Cookies": `KockicaCookieTable` mounts `<div data-kockica-cookie-table>` after hydration (filling it before hydration made React re-render the document and drop the banner). `data-kockica-preferences` on the footer "Cookie settings" link and the privacy-page button reopens the settings; a small corner button does too.
+- `/investors` YouTube players are gated (`data-kockica-category="marketing"` + `data-src`): after the click they load only with consent to advertising cookies, else Kockica shows "Allow and show".
+- Testing in headless Chromium: Kockica hides the banner from bots (`hideFromBots`) — launch with `--disable-blink-features=AutomationControlled` and a normal user agent.
 
 ## SEO and AI search
 

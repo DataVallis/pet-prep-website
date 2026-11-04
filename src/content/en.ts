@@ -700,7 +700,7 @@ const en: Dictionary = {
                 "Push notifications: Apple Push Notification service and Firebase Cloud Messaging via Expo; notifications contain no names.",
                 "Purchases: Apple App Store and Google Play; purchase management through RevenueCat when purchases go live.",
                 "Early access emails: Klaviyo (receives only the email address and language you submit on this website).",
-                "Website cookie consent: CookieYes (stores your consent choice).",
+                "Website cookie consent: Kockica (stores your consent choice).",
                 "Website analytics: Google Analytics 4 by Google Ireland Ltd., only with your consent; IP addresses are not stored by Google Analytics 4.",
               ],
             },
@@ -733,7 +733,7 @@ const en: Dictionary = {
           heading: "14. Cookies",
           paragraphs: [
             "Necessary cookies keep the website working and remember your consent choice. Analytics cookies (Google Analytics) are set only if you allow them in the banner, and you can change your choice at any time.",
-            "The table below is generated automatically from the latest scan of this website, so it always lists the cookies we actually use.",
+            "The table below is generated automatically by the consent banner from what it finds on this website, so it lists the cookies we actually use.",
           ],
           settings: "Change cookie settings",
           fallback: "The cookie list loads with the consent banner. If you do not see it, allow scripts on this page or write to {privacyEmail}.",

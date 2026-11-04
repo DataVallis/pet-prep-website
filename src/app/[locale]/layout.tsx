@@ -7,7 +7,8 @@ import { graph, organizationLd, websiteLd } from "@/lib/jsonld";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
-import { ConsentAndAnalytics } from "@/components/ConsentAndAnalytics";
+import { ConsentDefaults, GoogleAnalytics } from "@/components/ConsentAndAnalytics";
+import { Kockica } from "@/components/Kockica";
 import { fontClasses } from "../fonts";
 import "../globals.css";
 
@@ -49,15 +50,17 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
   return (
     <html lang={localeMeta[locale].htmlLang} className={fontClasses}>
       <head>
-        <ConsentAndAnalytics />
+        <ConsentDefaults />
       </head>
       <body className="flex min-h-screen flex-col">
+        <Kockica />
         <JsonLd data={graph(organizationLd(dict), websiteLd(dict))} />
         <Header locale={locale} dict={dict} />
         <main id="main" className="flex-1">
           {children}
         </main>
         <Footer locale={locale} dict={dict} />
+        <GoogleAnalytics />
       </body>
     </html>
   );

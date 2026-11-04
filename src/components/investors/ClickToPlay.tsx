@@ -6,6 +6,7 @@ import { useState } from "react";
  * YouTube embed behind a click (youtube-nocookie.com): no request to YouTube and no cookies before the
  * visitor presses play — fast and consent-clean. `src` is the embed URL without autoplay. `poster` is a
  * thumbnail from our own server (/api/yt-thumb/<id>); if it fails the tile falls back to its colour.
+ * After the click the player still needs the visitor's consent to "Advertising cookies" (Kockica).
  */
 export function ClickToPlay({ src, title, label, className, children, poster }: { src: string; title: string; label: string; className: string; children: React.ReactNode; poster?: string }) {
   const [on, setOn] = useState(false);
@@ -13,8 +14,10 @@ export function ClickToPlay({ src, title, label, className, children, poster }: 
   if (on) {
     return (
       <div className={className}>
+        {/* Gated by Kockica (YouTube = "marketing"): it sets src only with consent, else shows "Allow and show". */}
         <iframe
-          src={`${src}${src.includes("?") ? "&" : "?"}autoplay=1&rel=0`}
+          data-kockica-category="marketing"
+          data-src={`${src}${src.includes("?") ? "&" : "?"}autoplay=1&rel=0`}
           title={title}
           className="h-full w-full rounded-[inherit] border-0"
           allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
