@@ -712,6 +712,14 @@
         "Kangal",
         "Anatolian Shepherd Dog"
       ]
+    },
+    "pekingese": {
+      "name": "Pechinese",
+      "slug": "pechinese",
+      "synonyms": [
+        "Pekingese",
+        "Peke"
+      ]
     }
   },
   "suitability_labels": {

@@ -877,6 +877,14 @@
         "Kangal",
         "Anatolian Shepherd Dog"
       ]
+    },
+    "pekingese": {
+      "name": "Pekinezer",
+      "slug": "pekinezer",
+      "synonyms": [
+        "Pekingese",
+        "pekinški pas"
+      ]
     }
   },
   "suitability_labels": {

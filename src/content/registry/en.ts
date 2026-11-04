@@ -606,6 +606,14 @@ const en: RegistryCopy = {
     },
   },
   intros: {
+    pekingese: {
+      aka: "Peke, Pekinese, Lion Dog",
+      text: [
+        "The Pekingese is a small, lion-like toy dog from China with a moderately long, straight coat and a mane around the neck. The FCI breed standard gives an ideal weight of no more than 5 kg for males and 5.4 kg for females; PDSA gives an average weight of 5 kg and a height of 15–22 cm. A dog of this size is fully grown at about 8–12 months (PetMD); PDSA gives a lifespan of over 12 years and PetMD 12–14 years.",
+        "PDSA recommends at least half an hour of exercise a day without overdoing it, because the flat face can make breathing hard, and no exercise on hotter days. It writes that the long coat needs a daily brush, that the breed sheds a lot, especially in spring and autumn, that the facial wrinkles can lead to skin fold infections, that Pekes tend to do better with adults or older children, can suffer from separation anxiety when left alone and should be socialised from a young age. PetMD advises daily tooth brushing, cleaning the ears every week or two and professional grooming every six to eight weeks for a long coat.",
+      ],
+      sources: ["S690", "S693", "S694", "S10"],
+    },
     anatolian_shepherd_dog: {
       aka: "Anatolian Shepherd, Kangal Shepherd Dog, Karabash",
       text: [

@@ -626,6 +626,14 @@ const sl: RegistryCopy = {
     },
   },
   intros: {
+    pekingese: {
+      aka: "Pekingese, pekinez, pekinški pes, peke",
+      text: [
+        "Pekinezer je majhen pes za družbo s Kitajske, levjega videza, z zmerno dolgo, ravno dlako in grivo okoli vratu. Standard FCI navaja idealno težo največ 5 kg za pse in 5,4 kg za psice; PDSA navaja povprečno težo 5 kg in višino 15–22 cm. Pes te velikosti doraste pri približno 8–12 mesecih (PetMD); PDSA navaja življenjsko dobo več kot 12 let, PetMD pa 12–14 let.",
+        "PDSA priporoča vsaj pol ure gibanja na dan, a brez pretiravanja, ker mu kratek gobček lahko otežuje dihanje, ob vročih dneh pa naj se ne giblje. Piše, da dolgo dlako češemo vsak dan, da mu dlaka močno izpada, zlasti spomladi in jeseni, da gube na obrazu lahko vodijo v vnetje kožnih gub, da se bolje znajde z odraslimi ali starejšimi otroki, da lahko trpi zaradi ločitvene tesnobe, če ostane sam, in da ga moramo socializirati že od malega. PetMD svetuje ščetkanje zob vsak dan, čiščenje ušes na teden ali dva in obisk pasjega frizerja vsakih šest do osem tednov za dolgo dlako.",
+      ],
+      sources: ["S690", "S693", "S694", "S10"],
+    },
     anatolian_shepherd_dog: {
       aka: "Anatolian Shepherd Dog, anatolski pastirski pes, kangal, kangalski ovčar",
       text: [
