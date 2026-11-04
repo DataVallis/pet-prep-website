@@ -1,0 +1,47 @@
+name: Daily website deploy
+
+# Incident 2026-11-04 + David (»načeloma ni treba deployat tako pogosto«): a push to main runs CI
+# only; petprep.si is deployed once a day at 03:47 Europe/Ljubljana — when main has commits the
+# site does not run yet AND CI on the main head is green — by starting exactly the manual path:
+# CI & Deploy → Run workflow on main, target production. Logic: deploy/daily-deploy.sh (harness
+# deploy/tests/daily-deploy.test.sh). Same approach as the API (pet-prep daily-deploy.yml, 03:17).
+# GitHub cron is UTC only: 01:47 UTC = 03:47 CEST, 02:47 UTC = 03:47 CET; the script lets only the
+# matching one through (judged by the cron string, so a late start still counts). Scheduled runs
+# are best effort — GitHub may start them late. Turn it off: Actions → Daily website deploy →
+# Disable workflow. Deploy now: Actions → CI & Deploy → Run workflow, target production.
+
+on:
+  schedule:
+    - cron: '47 1 * * *'
+    - cron: '47 2 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Only print the decision, dispatch nothing (false = deploy now if main is new and its CI is green)'
+        type: boolean
+        default: true
+
+concurrency:
+  group: daily-website-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  deployments: read # what petprep.si runs (environment production)
+  actions: write    # gh workflow run ci-deploy.yml (workflow_dispatch)
+
+jobs:
+  daily-deploy:
+    name: Deploy main if new and CI green
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decide and dispatch the production deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          EVENT_NAME: ${{ github.event_name }}
+          SCHEDULE: ${{ github.event.schedule }}
+          DRY_RUN: ${{ inputs.dry_run == true }}
+        run: bash deploy/daily-deploy.sh

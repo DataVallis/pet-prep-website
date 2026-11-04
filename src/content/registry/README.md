@@ -8,7 +8,7 @@
 
 Availability lives in the export (pet-prep), not here: it is derived from `docs/research/app-release.json` there — "in the app" only for breeds in the last production release (store build or OTA), everything merged but not yet released is "coming soon" (David 2026-10-13). A release counts when at least one platform (iOS or Android) has it on production (David 2026-10-25).
 
-**Automatic sync (2026-10-25):** `.github/workflows/registry-sync.yml` runs hourly (and on Run workflow). It fetches `docs/research/breed-registry.json` from pet-prep `main` (public repo, no secret), and when it differs: lint + build + tsc → commit `chore(register): sync breed registry from pet-prep <sha>` to `main` → dispatches "CI & Deploy" (deploys petprep.si). It skips with a warning when the export does not build here yet (new words / portraits — the breed PR below carries it) or when pet-prep `main` lacks a breed the site already has. Manual refresh below is only needed for new breeds.
+**Automatic sync (2026-10-25):** `.github/workflows/registry-sync.yml` runs hourly (and on Run workflow). It fetches `docs/research/breed-registry.json` from pet-prep `main` (public repo, no secret), and when it differs: lint + build + tsc → commit `chore(register): sync breed registry from pet-prep <sha>` to `main` → dispatches "CI & Deploy" with target `none` (CI only; since 2026-11-04 petprep.si picks it up with the next daily deploy at 03:47 Europe/Ljubljana — up to ~1 day later, `DEPLOY.md`). It skips with a warning when the export does not build here yet (new words / portraits — the breed PR below carries it) or when pet-prep `main` lacks a breed the site already has. Manual refresh below is only needed for new breeds.
 
 ## Refresh the data
 
