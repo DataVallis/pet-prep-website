@@ -9,8 +9,7 @@ import { site } from "@/lib/site";
  * Cookie banner: Kockica (@datavallis/consent), replacing CookieYes (David 2026-11-04). It blocks known
  * trackers until consent, runs Google Consent Mode v2 (Google Analytics loads cookieless until the visitor
  * allows "Analytics") and fills the cookie table on the privacy page. The cookie policy is the "Cookies"
- * section of each language's privacy page. English first = fallback language. Kockica has no built-in
- * Swedish, Finnish or Norwegian texts yet, so on /sv, /fi and /nb the banner speaks English.
+ * section of each language's privacy page. English first = fallback language. All 15 site languages have built-in texts since Kockica 0.4.0.
  */
 const COOKIE_POLICY = Object.fromEntries(locales.map((l) => [l, `${pathFor(l as Locale, "privacy")}#cookies`])) as Record<string, string>;
 
