@@ -810,6 +810,14 @@
         "Kangal",
         "Anatolian Shepherd Dog"
       ]
+    },
+    "old_english_sheepdog": {
+      "name": "Bobtail",
+      "slug": "bobtail",
+      "synonyms": [
+        "Old English Sheepdog",
+        "Gammel engelsk fårehund"
+      ]
     }
   },
   "suitability_labels": {

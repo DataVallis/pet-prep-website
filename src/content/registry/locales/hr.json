@@ -877,6 +877,14 @@
         "Kangal",
         "Anatolian Shepherd Dog"
       ]
+    },
+    "old_english_sheepdog": {
+      "name": "Staroengleski ovčar",
+      "slug": "staroengleski-ovcar",
+      "synonyms": [
+        "Bobtail",
+        "Old English Sheepdog"
+      ]
     }
   },
   "suitability_labels": {

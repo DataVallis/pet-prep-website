@@ -626,6 +626,14 @@ const sl: RegistryCopy = {
     },
   },
   intros: {
+    old_english_sheepdog: {
+      aka: "Old English Sheepdog, bobtail, bobtejl",
+      text: [
+        "Staroangleški ovčar (bobtail) je velik, močan ovčarski pes iz Velike Britanije kvadratne postave, z bogato, grobo in kosmato dlako: telo je sivo, prošarano ali modro, glava, vrat in prednji del pa beli (standard FCI). Standard FCI navaja višino od 61 cm naprej za pse in od 56 cm naprej za psice; PDSA navaja povprečno višino 56–61 cm in povprečno težo 27–30 kg. Pes te velikosti doraste pri približno 15–18 mesecih (PetMD); PDSA navaja življenjsko dobo več kot 10 let, PetMD pa 10–12 let.",
+        "PDSA piše, da potrebuje vsaj dve uri gibanja na dan, razdeljeni na več sprehodov, da dolgo dlako češemo vsak dan, pri pasjem frizerju pa jo skrajšamo približno vsakih šest tednov. Opiše ga kot sproščenega družinskega psa, ki se bolje znajde v družinah s starejšimi otroki, lahko trpi zaradi ločitvene tesnobe, če ostane sam, ima močan pastirski in lovski nagon, med obrokom in gibanjem pa svetuje premor.",
+      ],
+      sources: ["S703", "S705", "S706", "S10"],
+    },
     anatolian_shepherd_dog: {
       aka: "Anatolian Shepherd Dog, anatolski pastirski pes, kangal, kangalski ovčar",
       text: [

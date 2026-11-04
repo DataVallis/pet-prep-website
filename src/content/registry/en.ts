@@ -606,6 +606,14 @@ const en: RegistryCopy = {
     },
   },
   intros: {
+    old_english_sheepdog: {
+      aka: "Bobtail, Bob-tail, OES, Shepherd's Dog",
+      text: [
+        "The Old English Sheepdog is a large, strong, square-looking sheepdog from Great Britain with a profuse, harsh, shaggy coat: any shade of grey, grizzle or blue on the body, with a white head, neck and forequarters (FCI breed standard). The FCI standard gives a height of 61 cm and upwards for males and 56 cm and upwards for females; PDSA gives an average height of 56–61 cm and an average weight of 27–30 kg. A dog of this size is fully grown at about 15–18 months (PetMD); PDSA gives a lifespan of over 10 years and PetMD 10–12 years.",
+        "PDSA writes that the breed needs at least two hours of exercise a day, split into several walks, and that the long coat needs a daily brush and a trim at a professional groomer every six weeks or so. It describes easy-going family pets that are better suited to families with older children, can suffer from separation anxiety when left alone, have a strong herding and prey drive, and advises leaving a gap between eating and exercise.",
+      ],
+      sources: ["S703", "S705", "S706", "S10"],
+    },
     anatolian_shepherd_dog: {
       aka: "Anatolian Shepherd, Kangal Shepherd Dog, Karabash",
       text: [
