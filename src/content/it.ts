@@ -700,7 +700,7 @@ const it: Dictionary = {
                 "Notifiche push: Apple Push Notification service e Firebase Cloud Messaging tramite Expo; le notifiche non contengono nomi.",
                 "Acquisti: Apple App Store e Google Play; gestione degli acquisti tramite RevenueCat quando gli acquisti saranno attivi.",
                 "Email per l’accesso anticipato: Klaviyo (riceve solo l’indirizzo email e la lingua che invii su questo sito web).",
-                "Consenso ai cookie del sito web: CookieYes (conserva la tua scelta di consenso).",
+                "Consenso ai cookie del sito web: Kockica (conserva la tua scelta di consenso).",
                 "Analisi del sito web: Google Analytics 4 di Google Ireland Ltd., solo con il tuo consenso; Google Analytics 4 non conserva gli indirizzi IP.",
               ],
             },
@@ -733,7 +733,7 @@ const it: Dictionary = {
           heading: "14. Cookie",
           paragraphs: [
             "I cookie necessari fanno funzionare il sito web e ricordano la tua scelta di consenso. I cookie analitici (Google Analytics) vengono impostati solo se li consenti nel banner, e puoi modificare la tua scelta in qualsiasi momento.",
-            "La tabella qui sotto viene generata automaticamente dall’ultima scansione di questo sito web, quindi elenca sempre i cookie che usiamo davvero.",
+            "La tabella qui sotto viene generata automaticamente dal banner del consenso in base a ciò che rileva su questo sito web, quindi elenca i cookie che usiamo davvero.",
           ],
           settings: "Modifica le impostazioni dei cookie",
           fallback: "L’elenco dei cookie si carica insieme al banner del consenso. Se non lo vedi, consenti gli script su questa pagina o scrivi a {privacyEmail}.",

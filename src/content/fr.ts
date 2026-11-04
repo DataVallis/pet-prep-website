@@ -700,7 +700,7 @@ const fr: Dictionary = {
                 "Notifications push : Apple Push Notification service et Firebase Cloud Messaging via Expo ; les notifications ne contiennent aucun nom.",
                 "Achats : Apple App Store et Google Play ; gestion des achats via RevenueCat lorsque les achats seront activés.",
                 "E-mails d’accès anticipé : Klaviyo (ne reçoit que l’adresse e-mail et la langue que vous indiquez sur ce site web).",
-                "Consentement aux cookies du site web : CookieYes (enregistre votre choix de consentement).",
+                "Consentement aux cookies du site web : Kockica (enregistre votre choix de consentement).",
                 "Mesure d’audience du site web : Google Analytics 4 de Google Ireland Ltd., uniquement avec votre consentement ; Google Analytics 4 n’enregistre pas les adresses IP.",
               ],
             },
@@ -733,7 +733,7 @@ const fr: Dictionary = {
           heading: "14. Cookies",
           paragraphs: [
             "Les cookies nécessaires assurent le fonctionnement du site web et mémorisent votre choix de consentement. Les cookies analytiques (Google Analytics) ne sont déposés que si vous les autorisez dans le bandeau, et vous pouvez modifier votre choix à tout moment.",
-            "Le tableau ci-dessous est généré automatiquement à partir de la dernière analyse de ce site web : il indique donc toujours les cookies que nous utilisons réellement.",
+            "Le tableau ci-dessous est généré automatiquement par le bandeau de consentement à partir de ce qu’il détecte sur ce site web : il indique donc les cookies que nous utilisons réellement.",
           ],
           settings: "Modifier les paramètres des cookies",
           fallback: "La liste des cookies se charge avec le bandeau de consentement. Si vous ne la voyez pas, autorisez les scripts sur cette page ou écrivez à {privacyEmail}.",

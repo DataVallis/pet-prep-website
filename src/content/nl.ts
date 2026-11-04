@@ -700,7 +700,7 @@ const nl: Dictionary = {
                 "Pushmeldingen: Apple Push Notification service en Firebase Cloud Messaging via Expo; meldingen bevatten geen namen.",
                 "Aankopen: Apple App Store en Google Play; beheer van aankopen via RevenueCat zodra aankopen beschikbaar worden.",
                 "E-mails over vroege toegang: Klaviyo (ontvangt alleen het e-mailadres en de taal die je op deze website invult).",
-                "Cookietoestemming op de website: CookieYes (slaat je toestemmingskeuze op).",
+                "Cookietoestemming op de website: Kockica (slaat je toestemmingskeuze op).",
                 "Websiteanalyse: Google Analytics 4 van Google Ireland Ltd., alleen met je toestemming; IP-adressen worden door Google Analytics 4 niet opgeslagen.",
               ],
             },
@@ -733,7 +733,7 @@ const nl: Dictionary = {
           heading: "14. Cookies",
           paragraphs: [
             "Noodzakelijke cookies zorgen ervoor dat de website werkt en onthouden je toestemmingskeuze. Analytische cookies (Google Analytics) worden alleen geplaatst als je ze in de banner toestaat, en je kunt je keuze op elk moment wijzigen.",
-            "De tabel hieronder wordt automatisch opgesteld aan de hand van de laatste scan van deze website; je ziet hier dus altijd de cookies die we echt gebruiken.",
+            "De toestemmingsbanner stelt de tabel hieronder automatisch op aan de hand van wat hij op deze website vindt; je ziet hier dus de cookies die we echt gebruiken.",
           ],
           settings: "Cookie-instellingen wijzigen",
           fallback: "De lijst met cookies wordt geladen met de toestemmingsbanner. Zie je de banner niet, sta dan scripts toe op deze pagina of mail naar {privacyEmail}.",

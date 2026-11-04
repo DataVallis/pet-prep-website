@@ -700,7 +700,7 @@ const fi: Dictionary = {
                 "Push-ilmoitukset: Apple Push Notification service ja Firebase Cloud Messaging Expon kautta; ilmoituksissa ei ole nimiä.",
                 "Ostot: Apple App Store ja Google Play; ostojen hallinta RevenueCatin kautta, kun ostot otetaan käyttöön.",
                 "Varhaisen käyttöoikeuden sähköpostit: Klaviyo (saa vain sähköpostiosoitteen ja kielen, jotka annat tällä verkkosivustolla).",
-                "Verkkosivuston evästesuostumus: CookieYes (tallentaa suostumusvalintasi).",
+                "Verkkosivuston evästesuostumus: Kockica (tallentaa suostumusvalintasi).",
                 "Verkkosivuston analytiikka: Google Analytics 4, tarjoajana Google Ireland Ltd., vain suostumuksellasi; Google Analytics 4 ei tallenna IP-osoitteita.",
               ],
             },
@@ -733,7 +733,7 @@ const fi: Dictionary = {
           heading: "14. Evästeet",
           paragraphs: [
             "Välttämättömät evästeet pitävät verkkosivuston toiminnassa ja muistavat suostumusvalintasi. Analytiikkaevästeet (Google Analytics) asetetaan vain, jos sallit ne bannerissa, ja voit muuttaa valintaasi milloin tahansa.",
-            "Alla oleva taulukko luodaan automaattisesti tämän verkkosivuston viimeisimmästä skannauksesta, joten siinä ovat aina ne evästeet, joita todella käytämme.",
+            "Suostumusbanneri luo alla olevan taulukon automaattisesti sen perusteella, mitä se löytää tältä sivustolta, joten siinä ovat ne evästeet, joita todella käytämme.",
           ],
           settings: "Muuta evästeasetuksia",
           fallback: "Evästeluettelo latautuu suostumusbannerin mukana. Jos et näe sitä, salli skriptit tällä sivulla tai kirjoita osoitteeseen {privacyEmail}.",

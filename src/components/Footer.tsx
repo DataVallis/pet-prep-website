@@ -87,10 +87,10 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             © {year} {site.name}. {dict.footer.rights} {dict.footer.dataEu}
           </span>
           <span>{dict.footer.languages}</span>
-          {/* CookieYes opens its preference centre on any element with this class. */}
-          <button type="button" className="cky-banner-element underline-offset-2 hover:text-fog hover:underline">
+          {/* Kockica opens its cookie settings from any element with data-kockica-preferences. */}
+          <a href="#" data-kockica-preferences className="underline-offset-2 hover:text-fog hover:underline">
             {dict.footer.cookieSettings}
-          </button>
+          </a>
           {/* Operator identity (ZEPT / GDPR): legal name, registered address and identifiers. */}
           <p className="w-full text-[12px] leading-relaxed">
             {dict.footer.company} {site.company.legalName}, {companyAddress(locale)} · {ids.vat} {site.company.vatId} · {ids.registration} {site.company.registrationNumber}

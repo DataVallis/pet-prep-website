@@ -33,7 +33,7 @@ export type Block =
   | { type: "faq"; id?: string; heading?: string; items: { q: string; a: string }[] }
   | { type: "callout"; title: string; text: string; tone?: "mint" | "dark" }
   | { type: "pricing" }
-  /** Live cookie list rendered by CookieYes from the site's latest cookie scan. */
+  /** Cookie table rendered by the Kockica consent banner from what it detects on the page. */
   | { type: "cookies"; heading: string; paragraphs: string[]; settings: string; fallback: string }
   | { type: "contact" }
   /** The operator's legal identity (src/lib/site.ts company). */

@@ -700,7 +700,7 @@ const sl: Dictionary = {
                 "Potisna obvestila: Apple Push Notification service in Firebase Cloud Messaging prek Expo; obvestila ne vsebujejo imen.",
                 "Nakupi: Apple App Store in Google Play; upravljanje nakupov prek RevenueCat, ko bodo nakupi na voljo.",
                 "E-pošta za zgodnji dostop: Klaviyo (prejme samo e-poštni naslov in jezik, ki ju oddate na tej spletni strani).",
-                "Privolitev za piškotke na spletni strani: CookieYes (shrani vašo izbiro).",
+                "Privolitev za piškotke na spletni strani: Kockica (shrani vašo izbiro).",
                 "Analitika spletne strani: Google Analytics 4 podjetja Google Ireland Ltd., samo z vašo privolitvijo; Google Analytics 4 ne shranjuje naslovov IP.",
               ],
             },
@@ -733,7 +733,7 @@ const sl: Dictionary = {
           heading: "14. Piškotki",
           paragraphs: [
             "Nujni piškotki skrbijo za delovanje strani in si zapomnijo vašo izbiro glede piškotkov. Analitične piškotke (Google Analytics) nastavimo samo, če jih dovolite v pasici, izbiro pa lahko kadar koli spremenite.",
-            "Spodnja tabela se samodejno ustvari iz zadnjega pregleda te spletne strani, zato vedno prikazuje piškotke, ki jih dejansko uporabljamo.",
+            "Spodnjo tabelo samodejno ustvari pasica za privolitev glede na to, kar zazna na tej spletni strani, zato prikazuje piškotke, ki jih dejansko uporabljamo.",
           ],
           settings: "Spremeni nastavitve piškotkov",
           fallback: "Seznam piškotkov se naloži skupaj s pasico za piškotke. Če ga ne vidite, dovolite skripte na tej strani ali pišite na {privacyEmail}.",
