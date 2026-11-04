@@ -709,6 +709,31 @@
         "Kangal",
         "Anatolian Shepherd Dog"
       ]
+    },
+    "chow_chow": {
+      "name": "Chow chow",
+      "slug": "chow-chow",
+      "synonyms": [
+        "Chow-chow",
+        "Chow"
+      ]
+    },
+    "old_english_sheepdog": {
+      "name": "Bobtail",
+      "slug": "bobtail",
+      "synonyms": [
+        "Antigo cão pastor inglês",
+        "Old English Sheepdog"
+      ]
+    },
+    "pekingese": {
+      "name": "Pequinês",
+      "slug": "pequines",
+      "synonyms": [
+        "Cão de Pequim",
+        "Pekinês",
+        "Pekingese"
+      ]
     }
   },
   "suitability_labels": {
