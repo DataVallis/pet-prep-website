@@ -4,7 +4,9 @@ name: Care sync
 # register (registry-sync.yml): pet-prep (public) writes docs/research/care-knowledge.json with
 # scripts/export-care-knowledge.mjs — only foods whose language was independently verified.
 # This job copies it into src/content/care/care-knowledge.json when it differs, checks it like CI
-# (lint, build, tsc), commits it to main and dispatches "CI & Deploy". No secret needed.
+# (lint, build, tsc), commits it to main and dispatches "CI & Deploy" with target none = CI only
+# (2026-11-04, DEPLOY.md): the change goes live with the next daily deploy (03:47 Europe/Ljubljana,
+# daily-deploy.yml), i.e. up to ~1 day later. No secret needed.
 
 on:
   schedule:
@@ -79,7 +81,7 @@ jobs:
           echo "::warning title=Care knowledge not synced::The pet-prep care export does not build here (e.g. a new species without words in src/content/care/copy.ts). Fix it in a website PR."
           echo "- ⚠️ Not synced: the care export does not build yet" >>"$GITHUB_STEP_SUMMARY"
 
-      - name: Commit to main and deploy
+      - name: Commit to main and run CI (deploys with the daily deploy)
         if: steps.fetch.outputs.changed == 'true' && steps.check.outcome == 'success'
         env:
           SHA: ${{ steps.fetch.outputs.sha }}
@@ -91,5 +93,5 @@ jobs:
           git commit -q -m "chore(care): sync care knowledge from pet-prep ${SHA:0:8}"
           git pull -q --rebase origin main
           git push -q origin HEAD:main
-          gh workflow run ci-deploy.yml --ref main
-          echo "- 🌐 Synced from \`${SOURCE_REPO}@${SHA:0:8}\`, committed to main, \"CI & Deploy\" dispatched" >>"$GITHUB_STEP_SUMMARY"
+          gh workflow run ci-deploy.yml --ref main -f target=none
+          echo "- 🌐 Synced from \`${SOURCE_REPO}@${SHA:0:8}\`, committed to main, CI dispatched — live with the next daily deploy (03:47 Europe/Ljubljana)" >>"$GITHUB_STEP_SUMMARY"

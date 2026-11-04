@@ -6,7 +6,9 @@ name: Registry sync
 # production OTA (iOS or Android is enough). This job copies that export into
 # src/content/registry/registry.json when it differs, checks it exactly like CI (lint, build,
 # tsc — `next build` fails on missing words or portraits), commits it to main and dispatches
-# "CI & Deploy" (a push by GITHUB_TOKEN starts no workflow; a dispatch does).
+# "CI & Deploy" with target none = CI only (a push by GITHUB_TOKEN starts no workflow; a dispatch
+# does). Since 2026-11-04 (DEPLOY.md) the change goes live with the next daily deploy (03:47
+# Europe/Ljubljana, daily-deploy.yml) — an availability flip reaches petprep.si up to ~1 day later.
 # No secret needed: pet-prep is public and GITHUB_TOKEN can read it.
 # When the check fails (a new breed needs words / a portrait first) it only warns: the website
 # breed PR (pet-prep ADD_BREED_RUNBOOK §9) then carries the registry.
@@ -97,7 +99,7 @@ jobs:
           echo "::warning title=Register not synced::The pet-prep export does not build here yet (new words in src/content/registry/{en,sl}.ts or a portrait in public/animals/ are missing). Sync it with the website breed PR — pet-prep docs/engineering/ADD_BREED_RUNBOOK.md §9."
           echo "- ⚠️ Not synced: the export does not build yet — website breed PR needed (ADD_BREED_RUNBOOK §9)" >>"$GITHUB_STEP_SUMMARY"
 
-      - name: Commit to main and deploy
+      - name: Commit to main and run CI (deploys with the daily deploy)
         if: steps.fetch.outputs.changed == 'true' && steps.check.outcome == 'success'
         env:
           SHA: ${{ steps.fetch.outputs.sha }}
@@ -110,5 +112,5 @@ jobs:
           # main may have moved during the build (a breed PR merged): replay on top, or retry next hour.
           git pull -q --rebase origin main
           git push -q origin HEAD:main
-          gh workflow run ci-deploy.yml --ref main
-          echo "- 🌐 Synced from \`${SOURCE_REPO}@${SHA:0:8}\`, committed to main, \"CI & Deploy\" dispatched" >>"$GITHUB_STEP_SUMMARY"
+          gh workflow run ci-deploy.yml --ref main -f target=none
+          echo "- 🌐 Synced from \`${SOURCE_REPO}@${SHA:0:8}\`, committed to main, CI dispatched — live with the next daily deploy (03:47 Europe/Ljubljana)" >>"$GITHUB_STEP_SUMMARY"

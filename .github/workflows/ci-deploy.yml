@@ -13,16 +13,34 @@ name: CI & Deploy
 #    matches); deploy/Dockerfile.prebuilt only packages it. After the smoke test same-repo runs push
 #    ghcr.io/<owner>/petprep-website (per-run tag) and the deploy pulls exactly that DIGEST.
 # B: a push / Run workflow on main whose git tree already has a green marker (an up-to-date PR, or an
-#    earlier main run) skips checks + build and deploys that digest (deploy/ci-reuse-image.sh).
+#    earlier main run) skips checks + build and reuses that digest (deploy/ci-reuse-image.sh).
+#
+# Deploy cadence (incident 2026-11-04 + David: »načeloma ni treba deployat tako pogosto«):
+# a push to main — merges, the hourly registry / care sync commits (they dispatch this workflow
+# with target none) and agents' content commits — runs CI only and deploys NOTHING. Production
+# (petprep.si) is deployed only by a Run workflow on main with target `production`: once a day by
+# .github/workflows/daily-deploy.yml (03:47 Europe/Ljubljana, only when main has commits the site
+# does not run yet and their CI is green — deploy/daily-deploy.sh) or by hand. That run reuses the
+# image CI already built and tested for the tree (B) and deploys it; IndexNow follows the deploy.
+# Before: every push deployed (~7 website deploys in 8 h on 2026-11-04, each pulling a ~2.85 GB
+# image that nothing removed → the shared disk hit 100 % and the API went down). DEPLOY.md.
 
 on:
   push:
     branches: [main]
   pull_request:
   workflow_dispatch:
+    inputs:
+      target:
+        description: 'none = CI only (build + tests); production = also deploy petprep.si (main only)'
+        type: choice
+        options: [none, production]
+        default: none
 
 concurrency:
-  group: website-${{ github.ref }}
+  # A production run gets its own group, so a later CI-only run on main (a sync commit) never
+  # replaces a pending deploy. The deploy job itself is serialised by "website-production".
+  group: website-${{ github.ref }}-${{ inputs.target == 'production' && 'production' || 'ci' }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 permissions:
@@ -74,9 +92,13 @@ jobs:
       - run: npx next typegen
       - run: npx tsc --noEmit
       - name: Shellcheck deploy scripts
-        run: shellcheck deploy/deploy.sh deploy/ci-reuse-image.sh deploy/tests/ci-reuse-image.test.sh
+        run: shellcheck deploy/*.sh deploy/tests/*.sh
       - name: Harness (ci-reuse-image.sh)
         run: bash deploy/tests/ci-reuse-image.test.sh
+      - name: Harness (deploy.sh disk preflight + image prune)
+        run: bash deploy/tests/deploy.test.sh
+      - name: Harness (daily-deploy.sh)
+        run: bash deploy/tests/daily-deploy.test.sh
 
   build:
     name: Build, package, smoke test, push
@@ -220,10 +242,12 @@ jobs:
   deploy:
     name: Deploy to production (petprep.si)
     needs: [plan, checks, build, green]
-    # Either the plan reused a tested image, or this run's checks + build + marker all passed.
+    # Only a Run workflow on main with target production (daily-deploy.yml or by hand) — a push
+    # never deploys (cadence above). Either the plan reused a tested image, or this run's
+    # checks + build + marker all passed.
     if: >-
       !cancelled() && needs.plan.result == 'success' &&
-      github.ref == 'refs/heads/main' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch') &&
+      github.ref == 'refs/heads/main' && github.event_name == 'workflow_dispatch' && inputs.target == 'production' &&
       (needs.plan.outputs.image != '' ||
        (needs.checks.result == 'success' && needs.build.result == 'success' && needs.green.result == 'success'))
     concurrency:

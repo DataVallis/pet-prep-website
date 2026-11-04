@@ -4,7 +4,9 @@
 #   deploy.sh <source-dir> [commit-sha]
 #
 # Called by GitHub Actions after it uploaded the commit to <source-dir>
-# (/opt/petprep/website/incoming). Steps:
+# (/opt/petprep/website/incoming) — only for a Run workflow on main with target production (the
+# daily deploy or by hand; a push to main deploys nothing since 2026-11-04, DEPLOY.md). Steps:
+#   0. disk preflight: prune old website images, refuse to pull with < DEPLOY_MIN_FREE_GB free (DISK)
 #   1. pull petprep-website:next from $IMAGE_REF — the digest CI pushed to GHCR after its checks
 #      (the normal path since 2026-11-03; CI logs in over ssh stdin into a PRIVATE docker config dir
 #      $PULL_DOCKER_CONFIG — never ~/.docker, shared with the API deploy — that this script deletes
@@ -16,6 +18,28 @@
 #   4. recreate the `website` container and wait until it is healthy
 #   5. on failure after step 3: put :previous back and restart it
 # Caddy (API stack) proxies petprep.si to website:3000 on the shared network.
+#
+# DISK (incident 2026-11-04, ~11:00–12:35 Europe/Ljubljana: the shared root disk reached 100 %,
+#   postgres went unhealthy and the PetPrep API was down). Every deploy pulls
+#   ghcr.io/datavallis/petprep-website@sha256:… (~2.85 GB); a digest-pulled image keeps that
+#   name, so it is never "dangling" and `docker image prune -f` never removed it — 9 website
+#   images ≈ 25 GB had piled up. Same rule as the API (pet-prep scripts/deploy-production.sh
+#   prune_release_images, DEPLOYMENT.md D31):
+#   prune_release_images removes every name (local tag or ghcr.io digest ref) of a
+#   petprep-website image whose image id is NOT kept. KEPT: the ids tagged
+#   petprep-website:production (live) and :previous (the rollback pair) and every image any
+#   container uses (running or stopped). Fail safe: containers or images cannot be listed →
+#   nothing is removed. Never touched: other repositories (petprep-app, petprep-web,
+#   petprep-backend, postgres, redis, caddy, …) and volumes (website-next-cache, the API's);
+#   no `docker system prune`. It runs (a) in the disk preflight (step 0, before anything is
+#   pulled / built) and (b) after a successful deploy, followed by `docker image prune -f`
+#   (dangling) and `docker builder prune -af --keep-storage 1GB` — all warn-only.
+#   Preflight: after that prune the Docker disk needs >= DEPLOY_MIN_FREE_GB (default 5) GB
+#   free; below it the whole build cache is dropped once more, and if it is still below, the
+#   deploy stops BEFORE pulling (nothing changed, the live site keeps running).
+#   DEPLOY_MIN_FREE_GB=0 skips the check (the prune still runs).
+#
+# Test harness (stubbed docker / df / curl, no server): deploy/tests/deploy.test.sh
 set -Eeuo pipefail
 
 SRC="${1:?usage: deploy.sh <source-dir> [commit-sha]}"
@@ -26,13 +50,107 @@ NETWORK="${API_NETWORK:-backend_petprep-network}"
 SITE_URL="${NEXT_PUBLIC_SITE_URL:-https://petprep.si}"
 COMPOSE=(docker compose -f "${SRC}/deploy/compose.yaml")
 SMOKE="petprep-website-smoke"
+# Release images (DISK above): petprep-website, local or ghcr.io/<owner>/… names.
+RELEASE_IMAGE_RE='(^|/)petprep-website$'
+KEEP_TAG_RE='^(production|previous)$'
+MIN_FREE_GB="${DEPLOY_MIN_FREE_GB:-5}"
 
 log() { printf '\n==> %s\n' "$*"; }
 fail() { printf '\nERROR: %s\n' "$*" >&2; exit 1; }
+warn() { printf 'WARNING: %s\n' "$*" >&2; }
+
+# ---- Disk (DISK above) -----------------------------------------------------------------
+# prune_release_images: remove every name of a petprep-website image whose id is not kept
+# (:production, :previous, or used by any container). Returns 1 (prunes nothing) when the
+# containers or images cannot be listed — never guess what is in use.
+prune_release_images() {
+  local containers keep="" listing repo tag digest id ref removed=0 failed=0
+  if ! containers="$(docker ps -aq)"; then
+    warn "cannot list containers — old website images not pruned."
+    return 1
+  fi
+  if [ -n "$containers" ]; then
+    # shellcheck disable=SC2086 # one container id per word
+    if ! keep="$(docker inspect --format '{{.Image}}' $containers)"; then
+      warn "cannot read the containers' images — old website images not pruned."
+      return 1
+    fi
+  fi
+  if ! listing="$(docker image ls --no-trunc --format '{{.Repository}}\t{{.Tag}}\t{{.Digest}}\t{{.ID}}')"; then
+    warn "cannot list images — old website images not pruned."
+    return 1
+  fi
+  while IFS=$'\t' read -r repo tag digest id; do
+    if [[ "$repo" =~ $RELEASE_IMAGE_RE ]] && [[ "$tag" =~ $KEEP_TAG_RE ]]; then
+      keep+=$'\n'"$id"
+    fi
+  done <<< "$listing"
+  while IFS=$'\t' read -r repo tag digest id; do
+    [ -n "$id" ] || continue
+    [[ "$repo" =~ $RELEASE_IMAGE_RE ]] || continue
+    if grep -qxF -- "$id" <<< "$keep"; then continue; fi
+    if [ -n "$tag" ] && [ "$tag" != "<none>" ]; then
+      ref="${repo}:${tag}"
+    elif [ -n "$digest" ] && [ "$digest" != "<none>" ]; then
+      ref="${repo}@${digest}"
+    else
+      continue # dangling: `docker image prune -f` removes it
+    fi
+    if docker image rm "$ref" >/dev/null; then
+      removed=$((removed + 1))
+    else
+      failed=$((failed + 1))
+    fi
+  done <<< "$listing"
+  echo "Old website images: removed ${removed} name(s) (kept: petprep-website:production + :previous and every image a container uses)."
+  if [ "$failed" -gt 0 ]; then warn "${failed} old website image name(s) could not be removed (docker image ls)."; fi
+  return 0
+}
+
+prune_disk() {
+  prune_release_images || true
+  docker image prune -f >/dev/null || warn "docker image prune failed."
+  # Build cache: always capped (disk hygiene, David 2026-10-15) — the old age filter let it grow
+  # to ~20 GB with several builds a day. Keeps the most recently used 1 GB.
+  docker builder prune -af --keep-storage 1GB >/dev/null || warn "docker builder prune failed."
+}
+
+# Free KiB on the file system of Docker's data root (falls back to /); empty = unknown.
+disk_free_kb() {
+  local dir
+  dir="$(docker info --format '{{.DockerRootDir}}' 2>/dev/null || true)"
+  if [ -z "$dir" ] || [ ! -e "$dir" ]; then dir=/; fi
+  df -Pk "$dir" 2>/dev/null | awk 'NR==2 {print $4}' || true
+}
 
 [ -f "${SRC}/Dockerfile" ] || fail "no Dockerfile in ${SRC}"
 docker network inspect "$NETWORK" >/dev/null 2>&1 \
   || fail "Docker network ${NETWORK} not found — is the API stack (project 'backend') running?"
+
+[[ "$MIN_FREE_GB" =~ ^[0-9]+$ ]] || fail "DEPLOY_MIN_FREE_GB must be a whole number of GB (found '${MIN_FREE_GB}') — nothing changed"
+
+# ---- 0. Disk preflight (DISK above) — nothing changed yet ------------------------------
+log "0/5 Disk preflight: pruning old website images and the build cache"
+prune_disk
+if [ "$MIN_FREE_GB" -gt 0 ]; then
+  need_kb=$((MIN_FREE_GB * 1024 * 1024))
+  free_kb="$(disk_free_kb)"
+  if [[ "$free_kb" =~ ^[0-9]+$ ]] && [ "$free_kb" -lt "$need_kb" ]; then
+    warn "only $((free_kb / 1024 / 1024)) GB free — dropping the whole build cache too."
+    docker builder prune -af >/dev/null || warn "docker builder prune failed."
+    free_kb="$(disk_free_kb)"
+  fi
+  if ! [[ "$free_kb" =~ ^[0-9]+$ ]]; then
+    warn "could not measure the free disk space — continuing without the disk check."
+  elif [ "$free_kb" -lt "$need_kb" ]; then
+    fail "only $((free_kb / 1024 / 1024)) GB free on the Docker disk after pruning old website images and the build cache;
+       a website deploy needs at least ${MIN_FREE_GB} GB (DEPLOY_MIN_FREE_GB; the image is ~3 GB). Nothing was changed,
+       the old site keeps running. The disk is shared with the PetPrep API — check on the server:
+       df -h /; docker system df; docker image ls (DEPLOY.md »Disk«; pet-prep DEPLOYMENT.md D31)."
+  else
+    echo "Disk preflight OK ($((free_kb / 1024 / 1024)) GB free, need ${MIN_FREE_GB} GB)."
+  fi
+fi
 
 IMAGE_REF="${IMAGE_REF:-}"
 IMAGE_TAR="${IMAGE_TAR:-}"
@@ -130,8 +248,8 @@ if curl -fsS -o /dev/null --max-time 10 --resolve "petprep.si:443:127.0.0.1" htt
 else
   echo "WARNING: https://petprep.si did not answer through Caddy yet (Caddyfile change deployed? DNS?)."
 fi
-docker image prune -f >/dev/null || true
-# Build cache: always capped (disk hygiene, David 2026-10-15) — the old age filter let it
-# grow to ~20 GB with several builds a day. Keeps the most recently used 1 GB.
-docker builder prune -af --keep-storage 1GB >/dev/null || true
+# Old releases (DISK above): every petprep-website image except :production (this release),
+# :previous (the rollback) and images a container uses; then dangling images and the build
+# cache (capped at 1 GB).
+prune_disk
 echo "Deployed ${SHA}."
