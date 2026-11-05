@@ -614,6 +614,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S246", "S709", "S710", "S10"],
     },
+    standard_schnauzer: {
+      aka: "Schnauzer, Mittelschnauzer, Wire-Haired Pinscher",
+      text: [
+        "The Standard Schnauzer comes from Germany; the FCI lists it simply as the Schnauzer among the pinscher and schnauzer types. The FCI standard describes a medium-sized, strong dog, stocky rather than slim, with a wiry, harsh and dense coat, drop ears and a natural tail. It gives a height of 45–50 cm and a weight of 14–20 kg for dogs and bitches; the colours are pepper and salt and pure black. A dog of this size is fully grown at about 12–15 months (PetMD); the Royal Kennel Club gives a lifespan of over 10 years, VCA 12–14 years.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day and says the breed suits a small house with a small or medium garden in town or country, and needs grooming more than once a week. The PDSA says Schnauzers are gentle, patient dogs that get on well with children if they are introduced at an early age, and that the coat needs grooming two to three times a week. VCA notes that the breed learns quickly but also bores quickly, so games and tricks give it needed mental exercise; PetMD recommends monthly baths, nail trims and ear cleaning every one to two weeks, and a professional groomer every quarter.",
+      ],
+      sources: ["S10", "S711", "S712", "S714", "S715", "S716", "S717"],
+    },
     chow_chow: {
       aka: "Chow, Chow-Chow",
       text: [

@@ -634,6 +634,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S246", "S709", "S710", "S10"],
     },
+    standard_schnauzer: {
+      aka: "šnavcer, mittelschnauzer, Standard Schnauzer, Schnauzer",
+      text: [
+        "Srednji šnavcer izvira iz Nemčije; FCI ga vodi preprosto kot šnavcerja med pinči in šnavcerji. Standard FCI ga opisuje kot srednje velikega, močnega psa, bolj čokatega kot vitkega, z žimasto, trdo in gosto dlako, povešenimi ušesi in naravnim repom. Za pse in psice navaja višino 45–50 cm in težo 14–20 kg; barvi sta poper in sol ter čisto črna. Pes te velikosti doraste pri približno 12–15 mesecih (PetMD); Royal Kennel Club navaja življenjsko dobo več kot 10 let, VCA pa 12–14 let.",
+        "Royal Kennel Club priporoča do eno uro gibanja na dan in navaja, da mu ustreza manjša hiša z majhnim ali srednjim vrtom v mestu ali na podeželju ter da potrebuje česanje večkrat na teden. PDSA navaja, da so šnavcerji nežni, potrpežljivi psi, ki se dobro razumejo z otroki, če se z njimi seznanijo že zgodaj, in da je dlako treba česati dva- do trikrat na teden. VCA dodaja, da se hitro uči, a se tudi hitro naveliča, zato mu igre in triki dajo potrebno miselno delo; PetMD priporoča kopanje enkrat na mesec, striženje krempljev in čiščenje ušes na en do dva tedna ter obisk strokovnega frizerja vsake tri mesece.",
+      ],
+      sources: ["S10", "S711", "S712", "S714", "S715", "S716", "S717"],
+    },
     chow_chow: {
       aka: "Chow chow, čau-čau, čau, Chow-Chow",
       text: [
