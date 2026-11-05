@@ -734,6 +734,29 @@
         "Pekinês",
         "Pekingese"
       ]
+    },
+    "keeshond": {
+      "name": "Spitz-lobo",
+      "slug": "spitz-lobo",
+      "synonyms": [
+        "Keeshond",
+        "Wolfspitz"
+      ]
+    },
+    "standard_schnauzer": {
+      "name": "Schnauzer médio",
+      "slug": "schnauzer-medio",
+      "synonyms": [
+        "Mittelschnauzer",
+        "Standard Schnauzer"
+      ]
+    },
+    "coton_de_tulear": {
+      "name": "Coton de Tuléar",
+      "slug": "coton-de-tulear",
+      "synonyms": [
+        "Coton de Tulear"
+      ]
     }
   },
   "suitability_labels": {
