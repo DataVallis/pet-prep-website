@@ -702,6 +702,8 @@ const sl: Dictionary = {
                 "E-pošta za zgodnji dostop: Klaviyo (prejme samo e-poštni naslov in jezik, ki ju oddate na tej spletni strani).",
                 "Privolitev za piškotke na spletni strani: Kockica (shrani vašo izbiro).",
                 "Analitika spletne strani: Google Analytics 4 podjetja Google Ireland Ltd., samo z vašo privolitvijo; Google Analytics 4 ne shranjuje naslovov IP.",
+                "Upravljanje oznak na spletni strani: Google Tag Manager podjetja Google Ireland Ltd.; sam ne nastavlja piškotkov, oznake, ki jih naloži, pa upoštevajo vašo privolitev.",
+                "Vdelani videi: YouTube podjetja Google Ireland Ltd. (youtube-nocookie.com), naložijo se šele, ko kliknete predvajanje in dovolite oglaševalske piškotke.",
               ],
             },
             {
@@ -732,7 +734,7 @@ const sl: Dictionary = {
           type: "cookies",
           heading: "14. Piškotki",
           paragraphs: [
-            "Nujni piškotki skrbijo za delovanje strani in si zapomnijo vašo izbiro glede piškotkov. Analitične piškotke (Google Analytics) nastavimo samo, če jih dovolite v pasici, izbiro pa lahko kadar koli spremenite.",
+            "Nujni piškotki skrbijo za delovanje strani in si zapomnijo vašo izbiro glede piškotkov. Vse druge piškotke nastavimo samo, če jih dovolite v pasici, po kategorijah: funkcionalni (dodatne funkcije), analitični (Google Analytics: katere strani obiskovalci odpirajo) in oglaševalski (videi z YouTuba, vdelani na nekaterih straneh; oglasov na tej spletni strani ne prikazujemo). Google Tag Manager sam ne nastavlja piškotkov, vsaka oznaka, ki jo naloži, pa upošteva vašo izbiro. Izbiro lahko kadar koli spremenite ali prekličete.",
             "Spodnjo tabelo samodejno ustvari pasica za privolitev glede na to, kar zazna na tej spletni strani, zato prikazuje piškotke, ki jih dejansko uporabljamo.",
           ],
           settings: "Spremeni nastavitve piškotkov",

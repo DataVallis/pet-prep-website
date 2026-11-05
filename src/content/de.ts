@@ -702,6 +702,8 @@ const de: Dictionary = {
                 "E-Mails zum frühen Zugang: Klaviyo (erhält nur die E-Mail-Adresse und die Sprache, die Sie auf dieser Website angeben).",
                 "Cookie-Einwilligung auf der Website: Kockica (speichert Ihre Einwilligungsentscheidung).",
                 "Website-Analyse: Google Analytics 4 von Google Ireland Ltd., nur mit Ihrer Einwilligung; IP-Adressen werden von Google Analytics 4 nicht gespeichert.",
+                "Tag-Verwaltung der Website: Google Tag Manager von Google Ireland Ltd.; setzt selbst keine Cookies, die geladenen Tags richten sich nach Ihrer Einwilligung.",
+                "Eingebettete Videos: YouTube von Google Ireland Ltd. (youtube-nocookie.com), werden erst geladen, wenn Sie auf Abspielen tippen und Werbe-Cookies erlauben.",
               ],
             },
             {
@@ -732,7 +734,7 @@ const de: Dictionary = {
           type: "cookies",
           heading: "14. Cookies",
           paragraphs: [
-            "Notwendige Cookies halten die Website funktionsfähig und speichern Ihre Einwilligungsentscheidung. Analyse-Cookies (Google Analytics) werden nur gesetzt, wenn Sie sie im Banner erlauben, und Sie können Ihre Entscheidung jederzeit ändern.",
+            "Notwendige Cookies halten die Website funktionsfähig und speichern Ihre Einwilligungsentscheidung. Alle anderen Cookies werden nur gesetzt, wenn Sie sie im Banner erlauben, nach Kategorie: Funktion (zusätzliche Funktionen), Analyse (Google Analytics: welche Seiten besucht werden) und Werbung (auf einigen Seiten eingebettete YouTube-Videos; auf dieser Website schalten wir keine Werbung). Google Tag Manager selbst setzt keine Cookies, und jedes Tag, das er lädt, richtet sich nach Ihrer Entscheidung. Sie können Ihre Entscheidung jederzeit ändern oder widerrufen.",
             "Die folgende Tabelle erstellt das Einwilligungsbanner automatisch aus dem, was es auf dieser Website erkennt; sie listet daher die Cookies, die wir tatsächlich verwenden.",
           ],
           settings: "Cookie-Einstellungen ändern",

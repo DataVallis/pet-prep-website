@@ -702,6 +702,8 @@ const sv: Dictionary = {
                 "Mejl om tidig tillgång: Klaviyo (får bara e-postadressen och språket som du anger på den här webbplatsen).",
                 "Cookiesamtycke på webbplatsen: Kockica (sparar ditt val om samtycke).",
                 "Webbanalys: Google Analytics 4 från Google Ireland Ltd., bara med ditt samtycke; IP-adresser sparas inte av Google Analytics 4.",
+                "Tagghantering på webbplatsen: Google Tag Manager från Google Ireland Ltd.; sätter själv inga cookies, och taggarna den laddar följer ditt samtycke.",
+                "Inbäddade videor: YouTube från Google Ireland Ltd. (youtube-nocookie.com), laddas först när du trycker på spela upp och tillåter marknadsföringscookies.",
               ],
             },
             {
@@ -732,7 +734,7 @@ const sv: Dictionary = {
           type: "cookies",
           heading: "14. Cookies",
           paragraphs: [
-            "Nödvändiga cookies håller webbplatsen igång och kommer ihåg ditt val om samtycke. Analyscookies (Google Analytics) sätts bara om du tillåter dem i bannern, och du kan när som helst ändra ditt val.",
+            "Nödvändiga cookies håller webbplatsen igång och kommer ihåg ditt val om samtycke. Alla andra cookies sätts bara om du tillåter dem i bannern, per kategori: funktionella (extra funktioner), analys (Google Analytics: vilka sidor som besöks) och marknadsföring (YouTube-videor inbäddade på vissa sidor; vi visar inga annonser på den här webbplatsen). Google Tag Manager sätter själv inga cookies, och varje tagg som den laddar följer ditt val. Du kan när som helst ändra eller återkalla ditt val.",
             "Tabellen nedan skapas automatiskt av samtyckesbannern utifrån vad den hittar på den här webbplatsen, så den visar de cookies vi faktiskt använder.",
           ],
           settings: "Ändra cookieinställningar",

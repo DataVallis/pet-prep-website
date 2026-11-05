@@ -702,6 +702,8 @@ const fr: Dictionary = {
                 "E-mails d’accès anticipé : Klaviyo (ne reçoit que l’adresse e-mail et la langue que vous indiquez sur ce site web).",
                 "Consentement aux cookies du site web : Kockica (enregistre votre choix de consentement).",
                 "Mesure d’audience du site web : Google Analytics 4 de Google Ireland Ltd., uniquement avec votre consentement ; Google Analytics 4 n’enregistre pas les adresses IP.",
+                "Gestion des balises du site web : Google Tag Manager de Google Ireland Ltd. ; ne dépose lui-même aucun cookie, et les balises qu’il charge respectent votre consentement.",
+                "Vidéos intégrées : YouTube de Google Ireland Ltd. (youtube-nocookie.com), chargées seulement après que vous avez lancé la lecture et autorisé les cookies publicitaires.",
               ],
             },
             {
@@ -732,7 +734,7 @@ const fr: Dictionary = {
           type: "cookies",
           heading: "14. Cookies",
           paragraphs: [
-            "Les cookies nécessaires assurent le fonctionnement du site web et mémorisent votre choix de consentement. Les cookies analytiques (Google Analytics) ne sont déposés que si vous les autorisez dans le bandeau, et vous pouvez modifier votre choix à tout moment.",
+            "Les cookies nécessaires assurent le fonctionnement du site web et mémorisent votre choix de consentement. Tous les autres cookies ne sont déposés que si vous les autorisez dans le bandeau, par catégorie : fonctionnels (fonctions supplémentaires), analytiques (Google Analytics : pages consultées) et publicitaires (vidéos YouTube intégrées sur certaines pages ; nous ne diffusons pas de publicité sur ce site web). Google Tag Manager ne dépose lui-même aucun cookie, et chaque balise qu’il charge respecte votre choix. Vous pouvez modifier ou retirer votre choix à tout moment.",
             "Le tableau ci-dessous est généré automatiquement par le bandeau de consentement à partir de ce qu’il détecte sur ce site web : il indique donc les cookies que nous utilisons réellement.",
           ],
           settings: "Modifier les paramètres des cookies",

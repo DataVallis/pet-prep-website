@@ -702,6 +702,8 @@ const nl: Dictionary = {
                 "E-mails over vroege toegang: Klaviyo (ontvangt alleen het e-mailadres en de taal die je op deze website invult).",
                 "Cookietoestemming op de website: Kockica (slaat je toestemmingskeuze op).",
                 "Websiteanalyse: Google Analytics 4 van Google Ireland Ltd., alleen met je toestemming; IP-adressen worden door Google Analytics 4 niet opgeslagen.",
+                "Tagbeheer van de website: Google Tag Manager van Google Ireland Ltd.; plaatst zelf geen cookies, en de tags die hij laadt volgen je toestemming.",
+                "Ingesloten video’s: YouTube van Google Ireland Ltd. (youtube-nocookie.com), pas geladen als je op afspelen drukt en advertentiecookies toestaat.",
               ],
             },
             {
@@ -732,7 +734,7 @@ const nl: Dictionary = {
           type: "cookies",
           heading: "14. Cookies",
           paragraphs: [
-            "Noodzakelijke cookies zorgen ervoor dat de website werkt en onthouden je toestemmingskeuze. Analytische cookies (Google Analytics) worden alleen geplaatst als je ze in de banner toestaat, en je kunt je keuze op elk moment wijzigen.",
+            "Noodzakelijke cookies zorgen ervoor dat de website werkt en onthouden je toestemmingskeuze. Alle andere cookies worden alleen geplaatst als je ze in de banner toestaat, per categorie: functioneel (extra functies), analytisch (Google Analytics: welke pagina’s bezocht worden) en advertenties (YouTube-video’s die op sommige pagina’s zijn ingesloten; op deze website tonen we geen advertenties). Google Tag Manager plaatst zelf geen cookies, en elke tag die hij laadt volgt jouw keuze. Je kunt je keuze op elk moment wijzigen of intrekken.",
             "De toestemmingsbanner stelt de tabel hieronder automatisch op aan de hand van wat hij op deze website vindt; je ziet hier dus de cookies die we echt gebruiken.",
           ],
           settings: "Cookie-instellingen wijzigen",

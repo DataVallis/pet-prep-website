@@ -702,6 +702,8 @@ const es: Dictionary = {
                 "Correos de acceso anticipado: Klaviyo (solo recibe la dirección de correo electrónico y el idioma que indicas en este sitio web).",
                 "Consentimiento de cookies del sitio web: Kockica (almacena tu elección de consentimiento).",
                 "Analítica del sitio web: Google Analytics 4, de Google Ireland Ltd., solo con tu consentimiento; Google Analytics 4 no almacena las direcciones IP.",
+                "Gestión de etiquetas del sitio web: Google Tag Manager, de Google Ireland Ltd.; no instala cookies por sí mismo y las etiquetas que carga respetan tu consentimiento.",
+                "Vídeos insertados: YouTube, de Google Ireland Ltd. (youtube-nocookie.com); solo se cargan cuando pulsas reproducir y permites las cookies publicitarias.",
               ],
             },
             {
@@ -732,7 +734,7 @@ const es: Dictionary = {
           type: "cookies",
           heading: "14. Cookies",
           paragraphs: [
-            "Las cookies necesarias hacen que el sitio web funcione y recuerdan tu elección de consentimiento. Las cookies analíticas (Google Analytics) solo se instalan si las permites en el banner, y puedes cambiar tu elección en cualquier momento.",
+            "Las cookies necesarias hacen que el sitio web funcione y recuerdan tu elección de consentimiento. Todas las demás cookies solo se instalan si las permites en el banner, por categoría: funcionales (funciones adicionales), analíticas (Google Analytics: qué páginas se visitan) y publicitarias (vídeos de YouTube insertados en algunas páginas; en este sitio web no mostramos anuncios). Google Tag Manager no instala cookies por sí mismo, y cada etiqueta que carga respeta tu elección. Puedes cambiar o retirar tu elección en cualquier momento.",
             "El banner de consentimiento genera automáticamente la tabla siguiente a partir de lo que detecta en este sitio web, por lo que muestra las cookies que utilizamos realmente.",
           ],
           settings: "Cambiar la configuración de cookies",

@@ -702,6 +702,8 @@ const pt: Dictionary = {
                 "E-mails de acesso antecipado: Klaviyo (recebe apenas o endereço de e-mail e o idioma que indicas neste site).",
                 "Consentimento de cookies do site: Kockica (guarda a tua escolha de consentimento).",
                 "Análise do site: Google Analytics 4, da Google Ireland Ltd., apenas com o teu consentimento; o Google Analytics 4 não guarda endereços IP.",
+                "Gestão de etiquetas do site: Google Tag Manager, da Google Ireland Ltd.; não instala cookies por si só, e as etiquetas que carrega respeitam o teu consentimento.",
+                "Vídeos incorporados: YouTube, da Google Ireland Ltd. (youtube-nocookie.com), só carregados depois de carregares em reproduzir e permitires os cookies de publicidade.",
               ],
             },
             {
@@ -732,7 +734,7 @@ const pt: Dictionary = {
           type: "cookies",
           heading: "14. Cookies",
           paragraphs: [
-            "Os cookies necessários mantêm o site a funcionar e memorizam a tua escolha de consentimento. Os cookies analíticos (Google Analytics) só são instalados se os permitires no banner e podes alterar a tua escolha a qualquer momento.",
+            "Os cookies necessários mantêm o site a funcionar e memorizam a tua escolha de consentimento. Todos os outros cookies só são instalados se os permitires no banner, por categoria: funcionais (funções adicionais), analíticos (Google Analytics: que páginas são visitadas) e de publicidade (vídeos do YouTube incorporados em algumas páginas; não mostramos anúncios neste site). O Google Tag Manager não instala cookies por si só, e cada etiqueta que carrega respeita a tua escolha. Podes alterar ou retirar a tua escolha a qualquer momento.",
             "A tabela abaixo é gerada automaticamente pelo banner de consentimento a partir do que deteta neste site, por isso indica os cookies que usamos de facto.",
           ],
           settings: "Alterar definições de cookies",
