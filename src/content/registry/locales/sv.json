@@ -831,6 +831,31 @@
         "Peke",
         "Pekinese"
       ]
+    },
+    "keeshond": {
+      "name": "Keeshond",
+      "slug": "keeshond",
+      "synonyms": [
+        "Wolfsspitz",
+        "Wolfspitz"
+      ]
+    },
+    "standard_schnauzer": {
+      "name": "Mellanschnauzer",
+      "slug": "mellanschnauzer",
+      "synonyms": [
+        "Schnauzer",
+        "Mittelschnauzer",
+        "Standard schnauzer"
+      ]
+    },
+    "coton_de_tulear": {
+      "name": "Coton de Tuléar",
+      "slug": "coton-de-tulear",
+      "synonyms": [
+        "Coton",
+        "Coton de Tulear"
+      ]
     }
   },
   "suitability_labels": {
