@@ -626,6 +626,30 @@ const sl: RegistryCopy = {
     },
   },
   intros: {
+    chow_chow: {
+      aka: "Chow chow, čau-čau, čau, Chow-Chow",
+      text: [
+        "Čau čau je kompakten špic levjega videza s Kitajske z gosto, štrlečo dlako ene same barve: črne, rdeče, modre, plave, kremaste ali bele (standard FCI). Standard FCI navaja višino 48–56 cm za pse in 46–51 cm za psice; PDSA navaja povprečno težo 20–30 kg. Pes te velikosti doraste pri približno 15–18 mesecih (PetMD); PDSA navaja življenjsko dobo manj kot 10 let, PetMD pa osem do 12 let.",
+        "PDSA piše, da potrebuje vsaj eno uro gibanja na dan, česanje vsak dan in premor med hranjenjem in gibanjem. Opisuje zveste pse, ki so v pravem domu lahko odlični družinski psi, najbolje pri izkušenih lastnikih; z majhnimi otroki pasme ne priporoča, opozarja pa tudi na močan lovski nagon, na to, da težko prenaša samoto, in na socializacijo že od malega. PetMD dodaja, da se zaradi goste dlake in kratkega gobčka hitreje pregreje.",
+      ],
+      sources: ["S696", "S700", "S701", "S10"],
+    },
+    old_english_sheepdog: {
+      aka: "Old English Sheepdog, bobtail, bobtejl",
+      text: [
+        "Staroangleški ovčar (bobtail) je velik, močan ovčarski pes iz Velike Britanije kvadratne postave, z bogato, grobo in kosmato dlako: telo je sivo, prošarano ali modro, glava, vrat in prednji del pa beli (standard FCI). Standard FCI navaja višino od 61 cm naprej za pse in od 56 cm naprej za psice; PDSA navaja povprečno višino 56–61 cm in povprečno težo 27–30 kg. Pes te velikosti doraste pri približno 15–18 mesecih (PetMD); PDSA navaja življenjsko dobo več kot 10 let, PetMD pa 10–12 let.",
+        "PDSA piše, da potrebuje vsaj dve uri gibanja na dan, razdeljeni na več sprehodov, da dolgo dlako češemo vsak dan, pri pasjem frizerju pa jo skrajšamo približno vsakih šest tednov. Opiše ga kot sproščenega družinskega psa, ki se bolje znajde v družinah s starejšimi otroki, lahko trpi zaradi ločitvene tesnobe, če ostane sam, ima močan pastirski in lovski nagon, med obrokom in gibanjem pa svetuje premor.",
+      ],
+      sources: ["S704", "S705", "S706", "S10"],
+    },
+    pekingese: {
+      aka: "Pekingese, pekinez, pekinški pes, peke",
+      text: [
+        "Pekinezer je majhen pes za družbo s Kitajske, levjega videza, z zmerno dolgo, ravno dlako in grivo okoli vratu. Standard FCI navaja idealno težo največ 5 kg za pse in 5,4 kg za psice; PDSA navaja povprečno težo 5 kg in višino 15–22 cm. Pes te velikosti doraste pri približno 8–12 mesecih (PetMD); PDSA navaja življenjsko dobo več kot 12 let, PetMD pa 12–14 let.",
+        "PDSA priporoča vsaj pol ure gibanja na dan, a brez pretiravanja, ker mu kratek gobček lahko otežuje dihanje, ob vročih dneh pa naj se ne giblje. Piše, da dolgo dlako češemo vsak dan, da mu dlaka močno izpada, zlasti spomladi in jeseni, da gube na obrazu lahko vodijo v vnetje kožnih gub, da se bolje znajde z odraslimi ali starejšimi otroki, da lahko trpi zaradi ločitvene tesnobe, če ostane sam, in da ga moramo socializirati že od malega. PetMD svetuje ščetkanje zob vsak dan, čiščenje ušes na teden ali dva in obisk pasjega frizerja vsakih šest do osem tednov za dolgo dlako.",
+      ],
+      sources: ["S690", "S693", "S694", "S10"],
+    },
     anatolian_shepherd_dog: {
       aka: "Anatolian Shepherd Dog, anatolski pastirski pes, kangal, kangalski ovčar",
       text: [
