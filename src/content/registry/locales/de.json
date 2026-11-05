@@ -699,6 +699,30 @@
         "Peke",
         "Löwenhund"
       ]
+    },
+    "keeshond": {
+      "name": "Wolfsspitz",
+      "slug": "wolfsspitz",
+      "synonyms": [
+        "Keeshond",
+        "Deutscher Wolfsspitz"
+      ]
+    },
+    "standard_schnauzer": {
+      "name": "Mittelschnauzer",
+      "slug": "mittelschnauzer",
+      "synonyms": [
+        "Standard Schnauzer",
+        "Standardschnauzer"
+      ]
+    },
+    "coton_de_tulear": {
+      "name": "Coton de Tuléar",
+      "slug": "coton-de-tulear",
+      "synonyms": [
+        "Coton",
+        "Coton de Tulear"
+      ]
     }
   },
   "suitability_labels": {
