@@ -901,6 +901,30 @@
       "synonyms": [
         "Pekingese"
       ]
+    },
+    "keeshond": {
+      "name": "Vučji špic",
+      "slug": "vucji-spic",
+      "synonyms": [
+        "Keeshond",
+        "Wolfsspitz"
+      ]
+    },
+    "standard_schnauzer": {
+      "name": "Srednji šnaucer",
+      "slug": "srednji-snaucer",
+      "synonyms": [
+        "Mittelschnauzer",
+        "Standard schnauzer"
+      ]
+    },
+    "coton_de_tulear": {
+      "name": "Coton de Tuléar",
+      "slug": "coton-de-tulear",
+      "synonyms": [
+        "Coton",
+        "Coton de Tulear"
+      ]
     }
   },
   "suitability_labels": {
