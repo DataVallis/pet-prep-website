@@ -884,6 +884,32 @@
         "Pekingský palácový psík",
         "Pekingese"
       ]
+    },
+    "keeshond": {
+      "name": "Německý špic vlčí",
+      "slug": "nemecky-spic-vlci",
+      "synonyms": [
+        "Keeshond",
+        "Wolfsspitz",
+        "Vlčí špic"
+      ]
+    },
+    "standard_schnauzer": {
+      "name": "Knírač střední",
+      "slug": "knirac-stredni",
+      "synonyms": [
+        "Střední knírač",
+        "Mittelschnauzer",
+        "Standard schnauzer"
+      ]
+    },
+    "coton_de_tulear": {
+      "name": "Coton de Tuléar",
+      "slug": "coton-de-tulear",
+      "synonyms": [
+        "Coton",
+        "Coton de Tulear"
+      ]
     }
   },
   "suitability_labels": {
