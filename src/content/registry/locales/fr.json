@@ -710,6 +710,30 @@
       "synonyms": [
         "Pekingese"
       ]
+    },
+    "keeshond": {
+      "name": "Spitz-loup",
+      "slug": "spitz-loup",
+      "synonyms": [
+        "Keeshond",
+        "Wolfsspitz"
+      ]
+    },
+    "standard_schnauzer": {
+      "name": "Schnauzer moyen",
+      "slug": "schnauzer-moyen",
+      "synonyms": [
+        "Mittelschnauzer",
+        "Standard Schnauzer"
+      ]
+    },
+    "coton_de_tulear": {
+      "name": "Coton de Tuléar",
+      "slug": "coton-de-tulear",
+      "synonyms": [
+        "Coton",
+        "Chien royal de Madagascar"
+      ]
     }
   },
   "suitability_labels": {
