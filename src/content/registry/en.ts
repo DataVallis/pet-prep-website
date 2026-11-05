@@ -606,6 +606,30 @@ const en: RegistryCopy = {
     },
   },
   intros: {
+    chow_chow: {
+      aka: "Chow, Chow-Chow",
+      text: [
+        "The Chow Chow is a compact, lion-like Spitz from China with a dense stand-off coat in one solid colour: black, red, blue, fawn, cream or white (FCI breed standard). The FCI standard gives a height of 48–56 cm for males and 46–51 cm for females; PDSA gives an average weight of 20–30 kg. A dog of this size is fully grown at about 15–18 months (PetMD); PDSA gives a lifespan of under 10 years and PetMD eight to 12 years.",
+        "PDSA writes that the breed needs at least one hour of exercise a day, brushing every day, and a gap between eating and exercise. It describes loyal dogs that can be ideal pets in the right household, ideally with experienced owners, does not recommend the breed with small children, and notes a high prey drive, that they may not tolerate being alone and should be well socialised from a young age. PetMD adds that the thick coat and short snout make them more likely to overheat.",
+      ],
+      sources: ["S696", "S700", "S701", "S10"],
+    },
+    old_english_sheepdog: {
+      aka: "Bobtail, Bob-tail, OES, Shepherd's Dog",
+      text: [
+        "The Old English Sheepdog is a large, strong, square-looking sheepdog from Great Britain with a profuse, harsh, shaggy coat: any shade of grey, grizzle or blue on the body, with a white head, neck and forequarters (FCI breed standard). The FCI standard gives a height of 61 cm and upwards for males and 56 cm and upwards for females; PDSA gives an average height of 56–61 cm and an average weight of 27–30 kg. A dog of this size is fully grown at about 15–18 months (PetMD); PDSA gives a lifespan of over 10 years and PetMD 10–12 years.",
+        "PDSA writes that the breed needs at least two hours of exercise a day, split into several walks, and that the long coat needs a daily brush and a trim at a professional groomer every six weeks or so. It describes easy-going family pets that are better suited to families with older children, can suffer from separation anxiety when left alone, have a strong herding and prey drive, and advises leaving a gap between eating and exercise.",
+      ],
+      sources: ["S704", "S705", "S706", "S10"],
+    },
+    pekingese: {
+      aka: "Peke, Pekinese, Lion Dog",
+      text: [
+        "The Pekingese is a small, lion-like toy dog from China with a moderately long, straight coat and a mane around the neck. The FCI breed standard gives an ideal weight of no more than 5 kg for males and 5.4 kg for females; PDSA gives an average weight of 5 kg and a height of 15–22 cm. A dog of this size is fully grown at about 8–12 months (PetMD); PDSA gives a lifespan of over 12 years and PetMD 12–14 years.",
+        "PDSA recommends at least half an hour of exercise a day without overdoing it, because the flat face can make breathing hard, and no exercise on hotter days. It writes that the long coat needs a daily brush, that the breed sheds a lot, especially in spring and autumn, that the facial wrinkles can lead to skin fold infections, that Pekes tend to do better with adults or older children, can suffer from separation anxiety when left alone and should be socialised from a young age. PetMD advises daily tooth brushing, cleaning the ears every week or two and professional grooming every six to eight weeks for a long coat.",
+      ],
+      sources: ["S690", "S693", "S694", "S10"],
+    },
     anatolian_shepherd_dog: {
       aka: "Anatolian Shepherd, Kangal Shepherd Dog, Karabash",
       text: [
