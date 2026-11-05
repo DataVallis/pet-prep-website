@@ -780,7 +780,7 @@ const sl: Dictionary = {
                 "Po 12 tednih se zapiše končna ocena, ki se pozneje ne spremeni; skrb po koncu izziva nanjo ne vpliva. Pri oceni 70 ali več lahko v aplikaciji ustvarite Certifikat odgovornosti (PDF), pri nižji oceni pa dobite poročilo o izzivu.",
                 "Če je hrana, voda ali čistoča 24 ur na 0 %, ljubljenčka „prevzame zavetišče“ (konec igre). Igra s tem ljubljenčkom se konča, certifikata ni, dobite poročilo o izzivu.",
                 "Care Score in certifikat kažeta samo, kako je skrbnik skrbel za simuliranega ljubljenčka v aplikaciji. Nista zagotovilo, da je otrok ali kdor koli drug pripravljen na pravega ljubljenčka, nista strokovna ocena in ne nadomeščata vaše presoje ali nasveta veterinarja, vzreditelja ali zavetišča. Odločitev o pravem ljubljenčku je vedno vaša.",
-                "Pravila igre (obroki, sprehodi in nega po pasmi in starosti) so poenostavljena in povzeta po javnih virih. Niso veterinarski nasvet; o zdravju in negi prave živali se posvetujte z veterinarjem.",
+                "Pravila igre (obroki, sprehodi in nega po pasmi in starosti) so poenostavljena in povzeta po javnih virih. Niso veterinarski nasvet; o zdravju in negi pravega ljubljenčka se posvetujte z veterinarjem.",
               ],
             },
             {
@@ -799,7 +799,7 @@ const sl: Dictionary = {
             {
               heading: "5. Slike in videi, ustvarjeni z umetno inteligenco",
               items: [
-                "Slike in videe ljubljenčkov ustvari umetna inteligenca (AI) samo na podlagi opisa ljubljenčka (pasma, barva, dlaka ipd.), nikoli na podlagi podatkov o vaši družini. So ponazoritve simuliranega ljubljenčka in se morda ne ujemajo povsem z nobeno pravo živaljo ali standardom pasme.",
+                "Slike in videe ljubljenčkov ustvari umetna inteligenca (AI) samo na podlagi opisa ljubljenčka (pasma, barva, dlaka ipd.), nikoli na podlagi podatkov o vaši družini. So ponazoritve simuliranega ljubljenčka in se morda ne ujemajo povsem z nobenim pravim ljubljenčkom ali standardom pasme.",
                 "Kjer jih pokažemo javno, na primer portrete pasem na tej spletni strani, so označeni kot ustvarjeni z AI.",
                 "Videz ni nujno edinstven: ljubljenčki iste plačljive pasme in barve si lahko delijo iste slike in videe, brezplačni ljubljenčki pa dobijo enega od skupnih videzov svoje pasme. Plačan izziv vključuje večji nabor videov kot brezplačen ljubljenček.",
                 "Po podpisu pogodbe ali nakupu lahko priprava slik in videov traja nekaj minut; medtem aplikacija pokaže, da se ljubljenček pripravlja, in označi, kar se še pripravlja.",
@@ -997,7 +997,7 @@ const sl: Dictionary = {
       },
       navLabel: "Živali",
       eyebrow: "Register živali",
-      title: "Spoznajte žival, preden pride domov.",
+      title: "Spoznajte ljubljenčka, preden pride domov.",
       lead:
         "Kaj vsaka vrsta in pasma v PetPrep res potrebuje – iz kinoloških zvez, mačjih zvez, veterinarskih dobrodelnih organizacij in raziskav, z vsemi viri. In pravila, po katerih jo PetPrep simulira.",
       blocks: [{ type: "animalsHub" }],
@@ -1033,7 +1033,7 @@ const sl: Dictionary = {
           id: "mission",
           heading: "Naše poslanstvo",
           paragraphs: [
-            "Vsaka družina sliši „Obljubim, da bom skrbel zanj.“ PetPrep obljubo spremeni v dokaz: 12 tednov otrok – ali odrasel, ki si želi točno določeno pasmo – skrbi za realističnega AI ljubljenčka z vsakodnevnimi potrebami prave živali, starš pa vsak dan vidi, ali skrb zdrži.",
+            "Vsaka družina sliši „Obljubim, da bom skrbel zanj.“ PetPrep obljubo spremeni v dokaz: 12 tednov otrok – ali odrasel, ki si želi točno določeno pasmo – skrbi za realističnega AI ljubljenčka z vsakodnevnimi potrebami pravega ljubljenčka, starš pa vsak dan vidi, ali skrb zdrži.",
             "Tudi neuspeh v simulaciji je dober rezultat: družina to izve, preden bi trpel pravi ljubljenček, in preden se zaveže za leta skrbi in stroškov. Ko pa pravi ljubljenček pride domov, želimo, da je PetPrep v pomoč vse njegovo življenje.",
           ],
         },
@@ -1046,7 +1046,7 @@ const sl: Dictionary = {
             "Vsako dejstvo navaja svoj vir in povezavo nanj. Vire razvrščamo po zanesljivosti: A – standardi pasem, recenzirani znanstveni članki in smernice veterinarskih združenj; B – svetovalne strani veterinarskih bolnišnic, univerz in nacionalnih organizacij za zaščito živali; C – sekundarni povzetki (enciklopedije, časopisni članki), ki jih uporabimo samo skupaj z virom A ali B.",
             "Kot dejstvo objavimo samo podatek z virom. Vrednosti, ki je noben vir ne podpira, ne objavimo. Kjer se viri razlikujejo, navedemo vsakega z njegovo vrednostjo.",
             "Pravila igre niso veterinarski nasvet. Kjer igra potrebuje število, ki ga viri ne podajo natančno (na primer dnevni cilj korakov), ga PetPrep določi na podlagi virov in ga prikaže samo v razdelku „Kako to simulira PetPrep“, označenem kot pravilo igre.",
-            "Podatki o zdravju so samo informativni. Povzemajo, kaj o pasmi pravijo viri, in jih ni pregledal veterinar. Za pravo žival se posvetujte z veterinarjem.",
+            "Podatki o zdravju so samo informativni. Povzemajo, kaj o pasmi pravijo viri, in jih ni pregledal veterinar. Za pravega ljubljenčka se posvetujte z veterinarjem.",
             "Standarde pasem povzemamo s svojimi besedami in jih ne prepisujemo, nobene pasme pa ne označimo kot „hipoalergene“.",
             "Register nastane iz raziskovalnih podatkov PetPrep, ki jih uporablja tudi aplikacija. Ko se vir ali vrednost spremeni, register znova izvozimo, na strani vsake pasme pa je datum zadnje posodobitve. Če opazite napako, nam pišite na hello@petprep.si.",
           ],
@@ -1110,7 +1110,7 @@ const sl: Dictionary = {
               label: "V aplikaciji · slika AI",
               tone: "mint",
               title: "Vaš ljubljenček v PetPrepu",
-              text: "Realistična simulacija prave pasme, ustvarjena z umetno inteligenco – na primer [labradorca](+breed:labrador_retriever) – z vsakodnevnimi potrebami prave živali: obroki, voda, sprehodi, ki se štejejo v pravih korakih, čiščenje in šolanje. Poglejte, [kako deluje](+page:howItWorks).",
+              text: "Realistična simulacija prave pasme, ustvarjena z umetno inteligenco – na primer [labradorca](+breed:labrador_retriever) – z vsakodnevnimi potrebami pravega ljubljenčka: obroki, voda, sprehodi, ki se štejejo v pravih korakih, čiščenje in šolanje. Poglejte, [kako deluje](+page:howItWorks).",
             },
           ],
         },
@@ -1131,12 +1131,12 @@ const sl: Dictionary = {
           id: "medijski-paket",
           heading: "Medijski paket",
           intro: "Za ustvarjalce, novinarje in partnerje, ki pišejo o PetPrepu. Vprašanja ali ideje za sodelovanje: hello@petprep.si.",
-          all: { href: "/curio/petprep-curio-media-kit.zip", label: "Prenesi vse", meta: "ZIP, 1,1 MB" },
+          all: { href: "/curio/petprep-curio-media-kit.zip", label: "Prenesite vse", meta: "ZIP, 1,1 MB" },
           items: [
             { href: "/curio/kit/curio-transparent.png", label: "Curio, prosojno ozadje", meta: "PNG, 848 × 1117" },
             { href: "/curio/kit/curio-square-light.png", label: "Curio, kvadrat, svetlo", meta: "PNG, 1080 × 1080" },
             { href: "/curio/kit/curio-square-mint.png", label: "Curio, kvadrat, meta", meta: "PNG, 1080 × 1080" },
-            { href: "/curio/kit/curio-character-sheet.jpg", label: "List lika", meta: "JPG, 823 × 1080" },
+            { href: "/curio/kit/curio-character-sheet.jpg", label: "Pregled lika", meta: "JPG, 823 × 1080" },
             { href: "/curio/kit/petprep-logo-horizontal.svg", label: "Logotip PetPrep", meta: "SVG" },
             { href: "/curio/kit/petprep-mark.svg", label: "Znak PetPrep", meta: "SVG" },
           ],
@@ -1154,7 +1154,7 @@ const sl: Dictionary = {
           heading: "Vprašanja o Curiu",
           items: [
             { q: "Je Curio pes ali mačka?", a: "Ne eno ne drugo. Curio je kockica iz našega logotipa. V videih igra ljubljenčka, a ni nobena živalska vrsta." },
-            { q: "Ali lahko otrok v aplikaciji skrbi za Curia?", a: "Ne. V aplikaciji vaša družina skrbi za realističnega ljubljenčka prave pasme z enakimi vsakodnevnimi potrebami kot prava žival. Curio se pojavlja samo v naših videih in na spletni strani." },
+            { q: "Ali lahko otrok v aplikaciji skrbi za Curia?", a: "Ne. V aplikaciji vaša družina skrbi za realističnega ljubljenčka prave pasme z enakimi vsakodnevnimi potrebami kot pravi ljubljenček. Curio se pojavlja samo v naših videih in na spletni strani." },
             { q: "Zakaj Curio nima ust?", a: "Ker jih nima niti naš logotip. Curio vse pove z očmi – in nikoli na glas ne prosi za priboljške." },
             { q: "Kje lahko vidim nove videe s Curiem?", a: "Na TikToku in Instagramu, @petprep.si." },
           ],
