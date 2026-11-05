@@ -62,6 +62,8 @@ export const site = {
   legalUpdated: "2026-11-02",
   /** Google Analytics 4 (consent banner: Kockica, src/components/Kockica.tsx). Analytics only runs after consent (Consent Mode v2). */
   gaMeasurementId: "G-CGSBN9N46F",
+  /** Google Tag Manager container (David 2026-11-05). */
+  gtmId: "GTM-5JBNQD93",
   price: { challenge: 49.99, currency: "EUR", weeks: 12 },
 } as const;
 

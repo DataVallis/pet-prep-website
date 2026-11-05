@@ -7,7 +7,7 @@ import { graph, organizationLd, websiteLd } from "@/lib/jsonld";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
-import { ConsentDefaults, GoogleAnalytics } from "@/components/ConsentAndAnalytics";
+import { ConsentDefaults, GoogleAnalytics, GoogleTagManager } from "@/components/ConsentAndAnalytics";
 import { Kockica } from "@/components/Kockica";
 import { fontClasses } from "../fonts";
 import "../globals.css";
@@ -61,6 +61,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
         </main>
         <Footer locale={locale} dict={dict} />
         <GoogleAnalytics />
+        <GoogleTagManager />
       </body>
     </html>
   );

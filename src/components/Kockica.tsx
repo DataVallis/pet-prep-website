@@ -21,9 +21,8 @@ if (typeof window !== "undefined") {
     controller: { name: `${site.company.legalName}, ${site.company.city}` },
     policyUrl: COOKIE_POLICY[lang] ?? COOKIE_POLICY.en!,
     languages: [...locales],
-    branding: false,
-    // gtag.js loads after this (next/script), so Kockica cannot see it on load — declare it.
-    services: ["ga4"],
+    // gtag.js and gtm.js load after this (next/script), so Kockica cannot see them on load — declare them.
+    services: ["ga4", "gtm"],
   });
 }
 
