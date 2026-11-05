@@ -16,7 +16,7 @@ const hhmm = (t: unknown) => {
 type Fci = { number: number; group: number; origin: string };
 /** Official French FCI group names. */
 const fciGroups: Record<number, string> = { 1: "Chiens de berger et de bouvier (sauf chiens de bouvier suisses)", 2: "Chiens de type pinscher et schnauzer – molossoïdes – chiens de montagne et de bouvier suisses", 3: "Terriers", 4: "Teckels", 5: "Chiens de type spitz et de type primitif", 6: "Chiens courants, chiens de recherche au sang et races apparentées", 7: "Chiens d’arrêt", 8: "Chiens rapporteurs de gibier – chiens leveurs de gibier – chiens d’eau", 9: "Chiens d’agrément et de compagnie", 10: "Lévriers" };
-const origins: Record<string, string> = { GB: "Grande-Bretagne", FR: "France", DE: "Allemagne", US: "États-Unis", CU: "Cuba", CH: "Suisse", IT: "Italie", "CN-XZ": "Tibet (Chine)", CN: "Chine", MX: "Mexique", BE: "Belgique", HU: "Hongrie", JP: "Japon", ZA: "Afrique du Sud", "BE-FR": "Belgique / France", PT: "Portugal", CA: "Canada", HR: "Croatie", AU: "Australie", RU: "Russie", IE: "Irlande", "AF-C": "Afrique centrale", TR: "Turquie" };
+const origins: Record<string, string> = { GB: "Grande-Bretagne", FR: "France", DE: "Allemagne", US: "États-Unis", CU: "Cuba", CH: "Suisse", IT: "Italie", "CN-XZ": "Tibet (Chine)", CN: "Chine", MX: "Mexique", BE: "Belgique", HU: "Hongrie", JP: "Japon", ZA: "Afrique du Sud", "BE-FR": "Belgique / France", PT: "Portugal", CA: "Canada", HR: "Croatie", AU: "Australie", RU: "Russie", IE: "Irlande", "AF-C": "Afrique centrale", TR: "Turquie", MG: "Madagascar" };
 
 const fr: RegistryCopy = {
   mistakes: {

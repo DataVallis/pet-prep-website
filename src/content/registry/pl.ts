@@ -43,7 +43,7 @@ const fciGroups: Record<number, string> = {
   9: "psy do towarzystwa",
   10: "charty",
 };
-const origins: Record<string, string> = { GB: "Wielka Brytania", FR: "Francja", DE: "Niemcy", US: "USA", CU: "Kuba", CH: "Szwajcaria", IT: "Włochy", "CN-XZ": "Tybet (Chiny)", CN: "Chiny", MX: "Meksyk", BE: "Belgia", HU: "Węgry", JP: "Japonia", ZA: "Republika Południowej Afryki", "BE-FR": "Belgia / Francja", PT: "Portugalia", CA: "Kanada", HR: "Chorwacja", AU: "Australia", RU: "Rosja", IE: "Irlandia", "AF-C": "Afryka Środkowa", TR: "Turcja" };
+const origins: Record<string, string> = { GB: "Wielka Brytania", FR: "Francja", DE: "Niemcy", US: "USA", CU: "Kuba", CH: "Szwajcaria", IT: "Włochy", "CN-XZ": "Tybet (Chiny)", CN: "Chiny", MX: "Meksyk", BE: "Belgia", HU: "Węgry", JP: "Japonia", ZA: "Republika Południowej Afryki", "BE-FR": "Belgia / Francja", PT: "Portugalia", CA: "Kanada", HR: "Chorwacja", AU: "Australia", RU: "Rosja", IE: "Irlandia", "AF-C": "Afryka Środkowa", TR: "Turcja", MG: "Madagaskar" };
 /** "godzina" in the nominative after a number: 1 godzina, 2 godziny, 5 godzin, 1,5 godziny. */
 const hours = (n: number) => form(n, "godzina", "godziny", "godzin", "godziny");
 

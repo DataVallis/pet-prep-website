@@ -25,7 +25,7 @@ const un = (name: string) => {
 type Fci = { number: number; group: number; origin: string };
 /** Italian FCI group names (ENCI nomenclature), in running-text form. */
 const fciGroups: Record<number, string> = { 1: "cani da pastore e bovari (esclusi i bovari svizzeri)", 2: "cani di tipo pinscher e schnauzer – molossoidi – cani bovari svizzeri", 3: "terrier", 4: "bassotti", 5: "cani di tipo spitz e di tipo primitivo", 6: "segugi e cani per pista di sangue", 7: "cani da ferma", 8: "cani da riporto – cani da cerca – cani da acqua", 9: "cani da compagnia", 10: "levrieri" };
-const origins: Record<string, string> = { GB: "Gran Bretagna", FR: "Francia", DE: "Germania", US: "Stati Uniti", CU: "Cuba", CH: "Svizzera", IT: "Italia", "CN-XZ": "Tibet (Cina)", CN: "Cina", MX: "Messico", BE: "Belgio", HU: "Ungheria", JP: "Giappone", ZA: "Sudafrica", "BE-FR": "Belgio / Francia", PT: "Portogallo", CA: "Canada", HR: "Croazia", AU: "Australia", RU: "Russia", IE: "Irlanda", "AF-C": "Africa centrale", TR: "Turchia" };
+const origins: Record<string, string> = { GB: "Gran Bretagna", FR: "Francia", DE: "Germania", US: "Stati Uniti", CU: "Cuba", CH: "Svizzera", IT: "Italia", "CN-XZ": "Tibet (Cina)", CN: "Cina", MX: "Messico", BE: "Belgio", HU: "Ungheria", JP: "Giappone", ZA: "Sudafrica", "BE-FR": "Belgio / Francia", PT: "Portogallo", CA: "Canada", HR: "Croazia", AU: "Australia", RU: "Russia", IE: "Irlanda", "AF-C": "Africa centrale", TR: "Turchia", MG: "Madagascar" };
 
 const it: RegistryCopy = {
   mistakes: {

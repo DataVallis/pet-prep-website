@@ -12,7 +12,7 @@ const rn = (name: string) =>
 type Fci = { number: number; group: number; origin: string };
 /** Official Spanish FCI group names (FCI nomenclature), in running-text form. */
 const fciGroups: Record<number, string> = { 1: "perros de pastor y perros boyeros (excepto boyeros suizos)", 2: "perros tipo pinscher y schnauzer – molosoides – perros tipo montaña y boyeros suizos", 3: "terriers", 4: "teckels", 5: "perros tipo spitz y tipo primitivo", 6: "perros tipo sabueso, de rastro y razas semejantes", 7: "perros de muestra", 8: "perros cobradores de caza – levantadores de caza – perros de agua", 9: "perros de compañía", 10: "lebreles" };
-const origins: Record<string, string> = { GB: "Gran Bretaña", FR: "Francia", DE: "Alemania", US: "Estados Unidos", CU: "Cuba", CH: "Suiza", IT: "Italia", "CN-XZ": "Tíbet (China)", CN: "China", MX: "México", BE: "Bélgica", HU: "Hungría", JP: "Japón", ZA: "Sudáfrica", "BE-FR": "Bélgica / Francia", PT: "Portugal", CA: "Canadá", HR: "Croacia", AU: "Australia", RU: "Rusia", IE: "Irlanda", "AF-C": "África central", TR: "Turquía" };
+const origins: Record<string, string> = { GB: "Gran Bretaña", FR: "Francia", DE: "Alemania", US: "Estados Unidos", CU: "Cuba", CH: "Suiza", IT: "Italia", "CN-XZ": "Tíbet (China)", CN: "China", MX: "México", BE: "Bélgica", HU: "Hungría", JP: "Japón", ZA: "Sudáfrica", "BE-FR": "Bélgica / Francia", PT: "Portugal", CA: "Canadá", HR: "Croacia", AU: "Australia", RU: "Rusia", IE: "Irlanda", "AF-C": "África central", TR: "Turquía", MG: "Madagascar" };
 
 const es: RegistryCopy = {
   mistakes: {

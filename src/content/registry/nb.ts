@@ -65,7 +65,7 @@ const fciGroups: Record<number, string> = {
   9: "selskapshunder",
   10: "mynder",
 };
-const origins: Record<string, string> = { GB: "Storbritannia", FR: "Frankrike", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Sveits", IT: "Italia", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgia", HU: "Ungarn", JP: "Japan", ZA: "Sør-Afrika", "BE-FR": "Belgia/Frankrike", PT: "Portugal", CA: "Canada", HR: "Kroatia", AU: "Australia", RU: "Russland", IE: "Irland", "AF-C": "Sentral-Afrika", TR: "Tyrkia" };
+const origins: Record<string, string> = { GB: "Storbritannia", FR: "Frankrike", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Sveits", IT: "Italia", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgia", HU: "Ungarn", JP: "Japan", ZA: "Sør-Afrika", "BE-FR": "Belgia/Frankrike", PT: "Portugal", CA: "Canada", HR: "Kroatia", AU: "Australia", RU: "Russland", IE: "Irland", "AF-C": "Sentral-Afrika", TR: "Tyrkia", MG: "Madagaskar" };
 const hours = (n: number) => s(n, "time", "timer");
 const times = (n: number) => (n === 1 ? "én gang" : `${n} ganger`);
 /** "every N days" for the litter and care rules. */

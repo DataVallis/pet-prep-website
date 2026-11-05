@@ -57,7 +57,7 @@ const fciGroups: Record<number, string> = {
   9: "selskabshunde",
   10: "mynder",
 };
-const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrig", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien/Frankrig", PT: "Portugal", CA: "Canada", HR: "Kroatien", AU: "Australien", RU: "Rusland", IE: "Irland", "AF-C": "Centralafrika", TR: "Tyrkiet" };
+const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrig", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien/Frankrig", PT: "Portugal", CA: "Canada", HR: "Kroatien", AU: "Australien", RU: "Rusland", IE: "Irland", "AF-C": "Centralafrika", TR: "Tyrkiet", MG: "Madagaskar" };
 const hours = (n: number) => s(n, "time", "timer");
 const times = (n: number) => (n === 1 ? "én gang" : `${n} gange`);
 

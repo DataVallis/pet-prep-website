@@ -16,7 +16,7 @@ type Fci = { number: number; group: number; origin: string };
 const PROPER_START = /^(Maine Coon|Chesapeake|Jack Russell)\b/;
 const mid = (name: string) => (PROPER_START.test(name) ? name : name.charAt(0).toLocaleLowerCase("sl") + name.slice(1));
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi", 10: "hrti" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turčija" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turčija", MG: "Madagaskar" };
 
 const sl: RegistryCopy = {
   mistakes: {
@@ -641,6 +641,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča do eno uro gibanja na dan in navaja, da mu ustreza manjša hiša z majhnim ali srednjim vrtom v mestu ali na podeželju ter da potrebuje česanje večkrat na teden. PDSA navaja, da so šnavcerji nežni, potrpežljivi psi, ki se dobro razumejo z otroki, če se z njimi seznanijo že zgodaj, in da je dlako treba česati dva- do trikrat na teden. VCA dodaja, da se hitro uči, a se tudi hitro naveliča, zato mu igre in triki dajo potrebno miselno delo; PetMD priporoča kopanje enkrat na mesec, striženje krempljev in čiščenje ušes na en do dva tedna ter obisk strokovnega frizerja vsake tri mesece.",
       ],
       sources: ["S10", "S711", "S712", "S714", "S715", "S716", "S717"],
+    },
+    coton_de_tulear: {
+      aka: "coton, cotonček, coton de tuléar, Coton de Tulear, kraljevi pes",
+      text: [
+        "Coton de tulear izvira z Madagaskarja, pokroviteljica pasme je Francija; FCI ga uvršča med bišone in sorodne pasme. Standard FCI ga opisuje kot majhnega dolgodlakega psa za družbo z belo dlako, mehko kot bombaž, okroglimi temnimi očmi in živahnim, bistrim izrazom, veselega in stabilnega značaja ter zelo družabnega z ljudmi in drugimi psi. Za samce navaja višino 26–28 cm in težo 4–6 kg, za samice 23–25 cm in 3,5–5 kg; osnovna barva je bela. Pes te velikosti doraste pri približno 8–12 mesecih (PetMD); Royal Kennel Club navaja življenjsko dobo več kot 12 let.",
+        "Royal Kennel Club priporoča do 30 minut gibanja na dan in navaja, da mu ustreza stanovanje, da mu dlaka skoraj ne izpada in da potrebuje česanje vsak dan. PDSA ga opisuje kot zvestega in ljubečega psa, ki uživa v družinskem življenju in je odličen družinski pes. PetMD navaja, da se ob pravilnem uvajanju dobro razume z otroki in drugimi ljubljenčki, da lahko razvije ločitveno tesnobo, če ostane sam več kot nekaj ur, ter priporoča pregled ušes vsaj enkrat na teden in kopanje približno enkrat na mesec.",
+      ],
+      sources: ["S10", "S721", "S722", "S724", "S725", "S726"],
     },
     chow_chow: {
       aka: "Chow chow, čau-čau, čau, Chow-Chow",

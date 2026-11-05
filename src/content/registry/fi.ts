@@ -73,7 +73,7 @@ const fciGroups: Record<number, string> = {
   9: "Seura- ja kääpiökoirat",
   10: "Vinttikoirat",
 };
-const origins: Record<string, string> = { GB: "Iso-Britannia", FR: "Ranska", DE: "Saksa", US: "Yhdysvallat", CU: "Kuuba", CH: "Sveitsi", IT: "Italia", "CN-XZ": "Tiibet (Kiina)", CN: "Kiina", MX: "Meksiko", BE: "Belgia", HU: "Unkari", JP: "Japani", ZA: "Etelä-Afrikka", "BE-FR": "Belgia / Ranska", PT: "Portugali", CA: "Kanada", HR: "Kroatia", AU: "Australia", RU: "Venäjä", IE: "Irlanti", "AF-C": "Keski-Afrikka", TR: "Turkki" };
+const origins: Record<string, string> = { GB: "Iso-Britannia", FR: "Ranska", DE: "Saksa", US: "Yhdysvallat", CU: "Kuuba", CH: "Sveitsi", IT: "Italia", "CN-XZ": "Tiibet (Kiina)", CN: "Kiina", MX: "Meksiko", BE: "Belgia", HU: "Unkari", JP: "Japani", ZA: "Etelä-Afrikka", "BE-FR": "Belgia / Ranska", PT: "Portugali", CA: "Kanada", HR: "Kroatia", AU: "Australia", RU: "Venäjä", IE: "Irlanti", "AF-C": "Keski-Afrikka", TR: "Turkki", MG: "Madagaskar" };
 const hours = (n: number) => s(n, "tunti", "tuntia");
 /** "kerran", "2 kertaa" (adverbial: kerran päivässä, 3 kertaa viikossa). */
 const times = (n: number) => (n === 1 ? "kerran" : `${n}${NB}kertaa`);

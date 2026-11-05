@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs", 10: "sighthounds" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa", TR: "Turkey" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa", TR: "Turkey", MG: "Madagascar" };
 
 const en: RegistryCopy = {
   mistakes: {
@@ -621,6 +621,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to an hour of exercise a day and says the breed suits a small house with a small or medium garden in town or country, and needs grooming more than once a week. The PDSA says Schnauzers are gentle, patient dogs that get on well with children if they are introduced at an early age, and that the coat needs grooming two to three times a week. VCA notes that the breed learns quickly but also bores quickly, so games and tricks give it needed mental exercise; PetMD recommends monthly baths, nail trims and ear cleaning every one to two weeks, and a professional groomer every quarter.",
       ],
       sources: ["S10", "S711", "S712", "S714", "S715", "S716", "S717"],
+    },
+    coton_de_tulear: {
+      aka: "Coton, Coton de Tuléar, Royal Dog of Madagascar",
+      text: [
+        "The Coton de Tulear comes from Madagascar, under the patronage of France; the FCI lists it among the bichons and related breeds. The FCI standard describes a small, long-haired companion dog with a white, cotton-textured coat, round dark eyes and a lively, intelligent expression, of a happy, stable temperament and very sociable with people and other dogs. It gives a height of 26–28 cm for males and 23–25 cm for females and a weight of 4–6 kg for males and 3.5–5 kg for females; the ground colour is white. A dog of this size is fully grown at about 8–12 months (PetMD); the Royal Kennel Club gives a lifespan of over 12 years.",
+        "The Royal Kennel Club recommends up to 30 minutes of exercise a day, says the breed suits a flat or apartment, sheds little and needs grooming every day. The PDSA calls Cotons loyal and loving dogs that thrive on family life and make excellent family pets. PetMD says they generally get along with children and other pets when introductions are done properly, can develop separation anxiety if left alone for more than a few hours, and recommends checking the ears at least once a week and a bath about once a month.",
+      ],
+      sources: ["S10", "S721", "S722", "S724", "S725", "S726"],
     },
     chow_chow: {
       aka: "Chow, Chow-Chow",

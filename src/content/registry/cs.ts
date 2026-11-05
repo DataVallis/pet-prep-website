@@ -68,7 +68,7 @@ const fciGroups: Record<number, string> = {
   9: "společenská plemena",
   10: "chrti",
 };
-const origins: Record<string, string> = { GB: "Velká Británie", FR: "Francie", DE: "Německo", US: "USA", CU: "Kuba", CH: "Švýcarsko", IT: "Itálie", "CN-XZ": "Tibet (Čína)", CN: "Čína", MX: "Mexiko", BE: "Belgie", HU: "Maďarsko", JP: "Japonsko", ZA: "Jihoafrická republika", "BE-FR": "Belgie / Francie", PT: "Portugalsko", CA: "Kanada", HR: "Chorvatsko", AU: "Austrálie", RU: "Rusko", IE: "Irsko", "AF-C": "Střední Afrika", TR: "Turecko" };
+const origins: Record<string, string> = { GB: "Velká Británie", FR: "Francie", DE: "Německo", US: "USA", CU: "Kuba", CH: "Švýcarsko", IT: "Itálie", "CN-XZ": "Tibet (Čína)", CN: "Čína", MX: "Mexiko", BE: "Belgie", HU: "Maďarsko", JP: "Japonsko", ZA: "Jihoafrická republika", "BE-FR": "Belgie / Francie", PT: "Portugalsko", CA: "Kanada", HR: "Chorvatsko", AU: "Austrálie", RU: "Rusko", IE: "Irsko", "AF-C": "Střední Afrika", TR: "Turecko", MG: "Madagaskar" };
 /** "hodina" in the nominative after a number: 1 hodina, 2 hodiny, 5 hodin, 1,5 hodiny. */
 const hours = (n: number) => form(n, "hodina", "hodiny", "hodin", "hodiny");
 /** "hodina" in the genitive after "do": do 1 hodiny, do 2 hodin, do 5 hodin, do 1,5 hodiny. */
