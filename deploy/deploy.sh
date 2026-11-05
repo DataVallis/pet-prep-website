@@ -25,11 +25,15 @@
 #   name, so it is never "dangling" and `docker image prune -f` never removed it — 9 website
 #   images ≈ 25 GB had piled up. Same rule as the API (pet-prep scripts/deploy-production.sh
 #   prune_release_images, DEPLOYMENT.md D31):
-#   prune_release_images removes every name (local tag or ghcr.io digest ref) of a
-#   petprep-website image whose image id is NOT kept. KEPT: the ids tagged
-#   petprep-website:production (live) and :previous (the rollback pair) and every image any
-#   container uses (running or stopped). Fail safe: containers or images cannot be listed →
-#   nothing is removed. Never touched: other repositories (petprep-app, petprep-web,
+#   prune_release_images removes, BY IMAGE ID (`docker image rm <id>`, never -f), every
+#   petprep-website / ghcr.io/datavallis/petprep-website image that is NOT kept. By id because
+#   with the containerd image store a digest-pulled image is listed with tag <none> — the first,
+#   name-based version (2026-11-04) removed 0 images and the disk reached 89 % (2026-11-05).
+#   KEPT: the ids of petprep-website:production (live), :previous (rollback), :next, every image
+#   any container uses (running or stopped; `docker ps -a` name or id resolved via
+#   `docker image inspect`) and any id that also has a name in another repository. Fail safe:
+#   images or containers cannot be listed / resolved → nothing is removed; a refused rm only
+#   warns. Never touched: other repositories (petprep-app, petprep-web,
 #   petprep-backend, postgres, redis, caddy, …) and volumes (website-next-cache, the API's);
 #   no `docker system prune`. It runs (a) in the disk preflight (step 0, before anything is
 #   pulled / built) and (b) after a successful deploy, followed by `docker image prune -f`
@@ -50,9 +54,8 @@ NETWORK="${API_NETWORK:-backend_petprep-network}"
 SITE_URL="${NEXT_PUBLIC_SITE_URL:-https://petprep.si}"
 COMPOSE=(docker compose -f "${SRC}/deploy/compose.yaml")
 SMOKE="petprep-website-smoke"
-# Release images (DISK above): petprep-website, local or ghcr.io/<owner>/… names.
-RELEASE_IMAGE_RE='(^|/)petprep-website$'
-KEEP_TAG_RE='^(production|previous)$'
+# Release images (DISK above): the local tags and the GHCR digest-pulled images — nothing else.
+RELEASE_REPO_RE='^(petprep-website|ghcr\.io/datavallis/petprep-website)$'
 MIN_FREE_GB="${DEPLOY_MIN_FREE_GB:-5}"
 
 log() { printf '\n==> %s\n' "$*"; }
@@ -60,50 +63,59 @@ fail() { printf '\nERROR: %s\n' "$*" >&2; exit 1; }
 warn() { printf 'WARNING: %s\n' "$*" >&2; }
 
 # ---- Disk (DISK above) -----------------------------------------------------------------
-# prune_release_images: remove every name of a petprep-website image whose id is not kept
-# (:production, :previous, or used by any container). Returns 1 (prunes nothing) when the
-# containers or images cannot be listed — never guess what is in use.
+# short_id: sha256:<64 hex> / <64 hex> / <12 hex> → the 12-hex short id (how ids are compared).
+short_id() { local i="${1#sha256:}"; printf '%s\n' "${i:0:12}"; }
+
+# prune_release_images: remove (by IMAGE ID) every petprep-website image that is not kept
+# (:production, :previous, :next, or used by any container). Works on ids because on the server
+# (Docker with the containerd image store) a digest-pulled image is listed as
+# `ghcr.io/datavallis/petprep-website:<none>` — the old name-based prune matched nothing and
+# removed 0 images (2026-11-05, disk at 89 %). Returns 1 (prunes nothing) when the containers
+# or images cannot be listed or resolved — never guess what is in use.
 prune_release_images() {
-  local containers keep="" listing repo tag digest id ref removed=0 failed=0
-  if ! containers="$(docker ps -aq)"; then
-    warn "cannot list containers — old website images not pruned."
-    return 1
-  fi
-  if [ -n "$containers" ]; then
-    # shellcheck disable=SC2086 # one container id per word
-    if ! keep="$(docker inspect --format '{{.Image}}' $containers)"; then
-      warn "cannot read the containers' images — old website images not pruned."
-      return 1
-    fi
-  fi
-  if ! listing="$(docker image ls --no-trunc --format '{{.Repository}}\t{{.Tag}}\t{{.Digest}}\t{{.ID}}')"; then
+  local listing used ref rid keep="" foreign="" id repo tag removed=0 failed=0 seen=""
+  if ! listing="$(docker image ls --no-trunc --format '{{.ID}}\t{{.Repository}}\t{{.Tag}}\t{{.Digest}}')"; then
     warn "cannot list images — old website images not pruned."
     return 1
   fi
-  while IFS=$'\t' read -r repo tag digest id; do
-    if [[ "$repo" =~ $RELEASE_IMAGE_RE ]] && [[ "$tag" =~ $KEEP_TAG_RE ]]; then
-      keep+=$'\n'"$id"
+  # Keep: what the release tags point at (a missing tag is fine — e.g. no :previous yet).
+  for tag in production previous next; do
+    if rid="$(docker image inspect --format '{{.Id}}' "${IMAGE}:${tag}" 2>/dev/null)"; then
+      keep+="$(short_id "$rid")"$'\n'
     fi
-  done <<< "$listing"
-  while IFS=$'\t' read -r repo tag digest id; do
+  done
+  # Keep: every image a container (running or stopped) uses. `docker ps` prints a name or an id.
+  if ! used="$(docker ps -a --format '{{.Image}}')"; then
+    warn "cannot list containers — old website images not pruned."
+    return 1
+  fi
+  while IFS= read -r ref; do
+    [ -n "$ref" ] || continue
+    if ! rid="$(docker image inspect --format '{{.Id}}' "$ref")" || [ -z "$rid" ]; then
+      warn "cannot resolve the image '${ref}' of a container — old website images not pruned."
+      return 1
+    fi
+    keep+="$(short_id "$rid")"$'\n'
+  done <<< "$(sort -u <<< "$used")"
+  # Never touch an id that also has a name outside the website repositories.
+  while IFS=$'\t' read -r id repo tag _; do
     [ -n "$id" ] || continue
-    [[ "$repo" =~ $RELEASE_IMAGE_RE ]] || continue
-    if grep -qxF -- "$id" <<< "$keep"; then continue; fi
-    if [ -n "$tag" ] && [ "$tag" != "<none>" ]; then
-      ref="${repo}:${tag}"
-    elif [ -n "$digest" ] && [ "$digest" != "<none>" ]; then
-      ref="${repo}@${digest}"
-    else
-      continue # dangling: `docker image prune -f` removes it
-    fi
-    if docker image rm "$ref" >/dev/null; then
+    [[ "$repo" =~ $RELEASE_REPO_RE ]] || foreign+="$(short_id "$id")"$'\n'
+  done <<< "$listing"
+  while IFS=$'\t' read -r id repo tag _; do
+    [ -n "$id" ] || continue
+    [[ "$repo" =~ $RELEASE_REPO_RE ]] || continue
+    rid="$(short_id "$id")"
+    if grep -qxF -- "$rid" <<< "${keep}${foreign}${seen}"; then continue; fi
+    seen+="${rid}"$'\n'
+    if docker image rm "$id" >/dev/null; then
       removed=$((removed + 1))
     else
       failed=$((failed + 1))
     fi
   done <<< "$listing"
-  echo "Old website images: removed ${removed} name(s) (kept: petprep-website:production + :previous and every image a container uses)."
-  if [ "$failed" -gt 0 ]; then warn "${failed} old website image name(s) could not be removed (docker image ls)."; fi
+  echo "Old website images: removed ${removed} image(s) (kept: petprep-website:production, :previous, :next and every image a container uses)."
+  if [ "$failed" -gt 0 ]; then warn "${failed} old website image(s) could not be removed (docker image ls; docker refuses images that are in use or have several names)."; fi
   return 0
 }
 
@@ -248,8 +260,8 @@ if curl -fsS -o /dev/null --max-time 10 --resolve "petprep.si:443:127.0.0.1" htt
 else
   echo "WARNING: https://petprep.si did not answer through Caddy yet (Caddyfile change deployed? DNS?)."
 fi
-# Old releases (DISK above): every petprep-website image except :production (this release),
-# :previous (the rollback) and images a container uses; then dangling images and the build
+# Old releases (DISK above): every petprep-website image (by id) except :production (this
+# release), :previous (the rollback), :next and images a container uses; then dangling images and the build
 # cache (capped at 1 GB).
 prune_disk
 echo "Deployed ${SHA}."

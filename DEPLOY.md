@@ -57,15 +57,21 @@ Need it live now (a launch, a fix)? Run workflow → target `production`.
    read on the server, so it applies to manual runs; for CI deploys change the default in `deploy.sh`.
 2. **After a successful deploy:** the same prune again.
 
-**Pruned:** every name (local tag such as `petprep-website:next`, or `ghcr.io/datavallis/petprep-website@sha256:…`)
-of a `petprep-website` image whose image id is **not kept**.
-**Kept:** the ids tagged `petprep-website:production` (live) and `petprep-website:previous` (the
-rollback pair) and every image any container uses (running or stopped). Older releases come back by
-deploying them again (GHCR keeps the newest 40 versions).
+**Pruned — by image id** (`docker image rm <id>`, never `-f`): every image of
+`ghcr.io/datavallis/petprep-website` or `petprep-website` whose id is **not kept**. By id because on the
+server (Docker with the containerd image store) a digest-pulled image is listed as
+`ghcr.io/datavallis/petprep-website:<none>` — its only reference is `…@sha256:<digest>`; the first,
+name-based version (2026-11-04) therefore removed **0** images and the disk climbed to 89 % (2026-11-05).
+**Kept:** the ids of `petprep-website:production` (live), `:previous` (rollback) and `:next`, every image
+any container uses (running or stopped — `docker ps -a` prints a name or an id, resolved with
+`docker image inspect`) and any id that also has a name in another repository. Older releases come back
+by deploying them again (GHCR keeps the newest 40 versions).
 **Never touched:** other repositories (`petprep-app`, `petprep-web`, `petprep-backend`, postgres,
 redis, caddy …), any volume (`website-next-cache`, the API's), no `docker system prune`.
-**Fail safe:** when the containers or images cannot be listed, nothing is removed (warning only); a
-failed `docker image rm` only warns. The API deploy prunes only its own images, so the two deploys can
+**Fail safe:** when the images or containers cannot be listed, or a container's image cannot be
+resolved, nothing is removed (warning only); a refused `docker image rm` (in use, several names) only
+warns, and a prune problem never fails the deploy. The log line says how many were removed
+(`Old website images: removed N image(s)`). The API deploy prunes only its own images, so the two deploys can
 run at the same time.
 
 Tests (no server, stubbed docker / df / curl): `bash deploy/tests/deploy.test.sh`; daily decision:
