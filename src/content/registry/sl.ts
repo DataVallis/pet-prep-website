@@ -626,6 +626,14 @@ const sl: RegistryCopy = {
     },
   },
   intros: {
+    keeshond: {
+      aka: "volčji špic, nemški volčji špic, Wolfsspitz, Keeshond",
+      text: [
+        "Keeshond je srednje velik špic iz Nemčije — različica nemškega špica, imenovana volčji špic — z dolgo, štrlečo volčje sivo dlako, gosto grivo in temnimi »očali« okoli oči (standard FCI). Standard FCI navaja višino 49 ± 6 cm; PDSA navaja povprečno težo 16–20 kg. Pes te velikosti doraste pri približno 12–15 mesecih (PetMD); PDSA navaja življenjsko dobo več kot 10 let, VCA pa 12–14 let.",
+        "PDSA piše, da potrebuje do ene ure gibanja na dan, da je treba gosto dvojno dlako česati vsak dan, da je keeshond odličen družinski pes, da se razume z drugimi živalmi v domu in da se ob potrpežljivosti dobro uči. VCA ga opiše kot igrivega in previdnega z otroki, svetuje kopanje približno enkrat na mesec in opozarja, da mu dlaka močno izpada in da se zaradi goste dlake lahko pregreje.",
+      ],
+      sources: ["S246", "S709", "S710", "S10"],
+    },
     chow_chow: {
       aka: "Chow chow, čau-čau, čau, Chow-Chow",
       text: [
