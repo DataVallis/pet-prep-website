@@ -7,8 +7,9 @@ import { site } from "@/lib/site";
  * run before any Google tag. gtag.js itself loads through next/script (afterInteractive), i.e. after the
  * Kockica banner (src/components/Kockica.tsx) has initialised; until the visitor allows "Analytics" GA runs
  * cookieless (Consent Mode "advanced"). CookieYes was replaced by Kockica on 2026-11-04.
+ * Google Tag Manager (GTM-5JBNQD93, David 2026-11-05) loads the same way; its tags follow Consent Mode.
  */
-const consentDefault = `${consentModeDefaultsSnippet()}gtag("js",new Date());gtag("config","${site.gaMeasurementId}");`;
+const consentDefault = `${consentModeDefaultsSnippet()}gtag("js",new Date());gtag("config","${site.gaMeasurementId}");dataLayer.push({"gtm.start":new Date().getTime(),event:"gtm.js"});`;
 
 export function ConsentDefaults() {
   return <script id="consent-default" dangerouslySetInnerHTML={{ __html: consentDefault }} />;
@@ -16,4 +17,8 @@ export function ConsentDefaults() {
 
 export function GoogleAnalytics() {
   return <Script id="gtag-js" src={`https://www.googletagmanager.com/gtag/js?id=${site.gaMeasurementId}`} strategy="afterInteractive" />;
+}
+
+export function GoogleTagManager() {
+  return <Script id="gtm-js" src={`https://www.googletagmanager.com/gtm.js?id=${site.gtmId}`} strategy="afterInteractive" />;
 }
