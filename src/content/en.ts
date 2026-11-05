@@ -702,6 +702,8 @@ const en: Dictionary = {
                 "Early access emails: Klaviyo (receives only the email address and language you submit on this website).",
                 "Website cookie consent: Kockica (stores your consent choice).",
                 "Website analytics: Google Analytics 4 by Google Ireland Ltd., only with your consent; IP addresses are not stored by Google Analytics 4.",
+                "Website tag management: Google Tag Manager by Google Ireland Ltd.; sets no cookies itself, and the tags it loads follow your consent choice.",
+                "Embedded videos: YouTube by Google Ireland Ltd. (youtube-nocookie.com), loaded only after you press play and allow advertising cookies.",
               ],
             },
             {
@@ -732,7 +734,7 @@ const en: Dictionary = {
           type: "cookies",
           heading: "14. Cookies",
           paragraphs: [
-            "Necessary cookies keep the website working and remember your consent choice. Analytics cookies (Google Analytics) are set only if you allow them in the banner, and you can change your choice at any time.",
+            "Necessary cookies keep the website working and remember your consent choice. All other cookies are set only if you allow them in the banner, by category: functional (extra features), analytics (Google Analytics: which pages are visited) and advertising (YouTube videos embedded on some pages; we do not run ads on this website). Google Tag Manager itself sets no cookies, and every tag it loads follows your choice. You can change or withdraw your choice at any time.",
             "The table below is generated automatically by the consent banner from what it finds on this website, so it lists the cookies we actually use.",
           ],
           settings: "Change cookie settings",

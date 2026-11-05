@@ -702,6 +702,8 @@ const da: Dictionary = {
                 "E-mails om tidlig adgang: Klaviyo (modtager kun den e-mailadresse og det sprog du indsender på dette websted).",
                 "Cookiesamtykke på webstedet: Kockica (gemmer dit samtykkevalg).",
                 "Analyse af webstedet: Google Analytics 4 fra Google Ireland Ltd., kun med dit samtykke; Google Analytics 4 gemmer ikke IP-adresser.",
+                "Tagstyring på webstedet: Google Tag Manager fra Google Ireland Ltd.; sætter ikke selv cookies, og de tags, den indlæser, følger dit samtykke.",
+                "Indlejrede videoer: YouTube fra Google Ireland Ltd. (youtube-nocookie.com), indlæses først, når du trykker afspil og tillader markedsføringscookies.",
               ],
             },
             {
@@ -732,7 +734,7 @@ const da: Dictionary = {
           type: "cookies",
           heading: "14. Cookies",
           paragraphs: [
-            "Nødvendige cookies får webstedet til at fungere og husker dit samtykkevalg. Analysecookies (Google Analytics) sættes kun hvis du tillader dem i banneret, og du kan til enhver tid ændre dit valg.",
+            "Nødvendige cookies får webstedet til at fungere og husker dit samtykkevalg. Alle andre cookies sættes kun, hvis du tillader dem i banneret, efter kategori: funktionelle (ekstra funktioner), analyse (Google Analytics: hvilke sider der besøges) og markedsføring (YouTube-videoer indlejret på nogle sider; vi viser ikke annoncer på dette websted). Google Tag Manager sætter ikke selv cookies, og hvert tag, den indlæser, følger dit valg. Du kan til enhver tid ændre eller trække dit valg tilbage.",
             "Tabellen nedenfor genereres automatisk af samtykkebanneret ud fra det, det finder på dette websted, så den viser de cookies, vi faktisk bruger.",
           ],
           settings: "Skift cookieindstillinger",

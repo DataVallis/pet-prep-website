@@ -702,6 +702,8 @@ const cs: Dictionary = {
                 "E-maily k předběžnému přístupu: Klaviyo (dostává jen e-mailovou adresu a jazyk, které na tomto webu zadáte).",
                 "Souhlas s cookies na webu: Kockica (ukládá vaši volbu souhlasu).",
                 "Analytika webu: Google Analytics 4 od Google Ireland Ltd., jen s vaším souhlasem; Google Analytics 4 IP adresy neukládá.",
+                "Správa značek webu: Google Tag Manager od Google Ireland Ltd.; sám cookies nenastavuje a značky, které načítá, se řídí vaším souhlasem.",
+                "Vložená videa: YouTube od Google Ireland Ltd. (youtube-nocookie.com), načtou se až po spuštění přehrávání a povolení reklamních cookies.",
               ],
             },
             {
@@ -732,7 +734,7 @@ const cs: Dictionary = {
           type: "cookies",
           heading: "14. Cookies",
           paragraphs: [
-            "Nezbytné cookies zajišťují fungování webu a pamatují si vaši volbu souhlasu. Analytické cookies (Google Analytics) se nastavují jen tehdy, když je povolíte v liště, a svou volbu můžete kdykoli změnit.",
+            "Nezbytné cookies zajišťují fungování webu a pamatují si vaši volbu souhlasu. Všechny ostatní cookies se nastavují jen tehdy, když je povolíte v liště, podle kategorií: funkční (další funkce), analytické (Google Analytics: které stránky lidé navštěvují) a reklamní (videa z YouTube vložená na některých stránkách; na tomto webu reklamy nezobrazujeme). Google Tag Manager sám cookies nenastavuje a každý tag, který načte, se řídí vaší volbou. Svou volbu můžete kdykoli změnit nebo odvolat.",
             "Tabulku níže automaticky vytváří lišta souhlasu podle toho, co na tomto webu zjistí, takže uvádí cookies, které skutečně používáme.",
           ],
           settings: "Změnit nastavení cookies",

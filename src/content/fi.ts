@@ -702,6 +702,8 @@ const fi: Dictionary = {
                 "Varhaisen käyttöoikeuden sähköpostit: Klaviyo (saa vain sähköpostiosoitteen ja kielen, jotka annat tällä verkkosivustolla).",
                 "Verkkosivuston evästesuostumus: Kockica (tallentaa suostumusvalintasi).",
                 "Verkkosivuston analytiikka: Google Analytics 4, tarjoajana Google Ireland Ltd., vain suostumuksellasi; Google Analytics 4 ei tallenna IP-osoitteita.",
+                "Sivuston tagien hallinta: Google Tag Manager, tarjoajana Google Ireland Ltd.; ei itse aseta evästeitä, ja sen lataamat tagit noudattavat suostumustasi.",
+                "Upotetut videot: YouTube, tarjoajana Google Ireland Ltd. (youtube-nocookie.com), latautuvat vasta, kun painat toistoa ja sallit markkinointievästeet.",
               ],
             },
             {
@@ -732,7 +734,7 @@ const fi: Dictionary = {
           type: "cookies",
           heading: "14. Evästeet",
           paragraphs: [
-            "Välttämättömät evästeet pitävät verkkosivuston toiminnassa ja muistavat suostumusvalintasi. Analytiikkaevästeet (Google Analytics) asetetaan vain, jos sallit ne bannerissa, ja voit muuttaa valintaasi milloin tahansa.",
+            "Välttämättömät evästeet pitävät verkkosivuston toiminnassa ja muistavat suostumusvalintasi. Kaikki muut evästeet asetetaan vain, jos sallit ne bannerissa, luokittain: toiminnalliset (lisätoiminnot), analytiikka (Google Analytics: mitä sivuja vieraillaan) ja markkinointi (joillekin sivuille upotetut YouTube-videot; emme näytä mainoksia tällä sivustolla). Google Tag Manager ei itse aseta evästeitä, ja jokainen sen lataama tagi noudattaa valintaasi. Voit muuttaa tai perua valintasi milloin tahansa.",
             "Suostumusbanneri luo alla olevan taulukon automaattisesti sen perusteella, mitä se löytää tältä sivustolta, joten siinä ovat ne evästeet, joita todella käytämme.",
           ],
           settings: "Muuta evästeasetuksia",

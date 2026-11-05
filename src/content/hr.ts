@@ -702,6 +702,8 @@ const hr: Dictionary = {
                 "E-pošta za rani pristup: Klaviyo (prima samo adresu e-pošte i jezik koje uneseš na ovoj mrežnoj stranici).",
                 "Privola za kolačiće na mrežnoj stranici: Kockica (pohranjuje tvoj izbor u vezi s privolom).",
                 "Analitika mrežne stranice: Google Analytics 4 tvrtke Google Ireland Ltd., samo uz tvoju privolu; Google Analytics 4 ne pohranjuje IP adrese.",
+                "Upravljanje oznakama na mrežnoj stranici: Google Tag Manager tvrtke Google Ireland Ltd.; sam ne postavlja kolačiće, a oznake koje učitava poštuju tvoju privolu.",
+                "Ugrađeni videozapisi: YouTube tvrtke Google Ireland Ltd. (youtube-nocookie.com), učitavaju se tek kad pokreneš reprodukciju i dopustiš oglašivačke kolačiće.",
               ],
             },
             {
@@ -732,7 +734,7 @@ const hr: Dictionary = {
           type: "cookies",
           heading: "14. Kolačići",
           paragraphs: [
-            "Nužni kolačići omogućuju rad mrežne stranice i pamte tvoj izbor u vezi s privolom. Analitički kolačići (Google Analytics) postavljaju se samo ako ih dopustiš u prozoru za privolu, a izbor možeš promijeniti u svakom trenutku.",
+            "Nužni kolačići omogućuju rad mrežne stranice i pamte tvoj izbor u vezi s privolom. Sve ostale kolačiće postavljamo samo ako ih dopustiš u prozoru za privolu, prema kategorijama: funkcionalni (dodatne funkcije), analitički (Google Analytics: koje se stranice posjećuju) i oglašivački (videozapisi s YouTubea ugrađeni na nekim stranicama; na ovoj mrežnoj stranici ne prikazujemo oglase). Google Tag Manager sam ne postavlja kolačiće, a svaka oznaka koju učita poštuje tvoj izbor. Izbor možeš promijeniti ili povući u svakom trenutku.",
             "Tablicu u nastavku automatski izrađuje traka za privolu prema onome što pronađe na ovoj mrežnoj stranici, pa navodi kolačiće koje stvarno koristimo.",
           ],
           settings: "Promijeni postavke kolačića",

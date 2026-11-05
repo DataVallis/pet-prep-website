@@ -702,6 +702,8 @@ const pl: Dictionary = {
                 "E-maile o wczesnym dostępie: Klaviyo (otrzymuje wyłącznie adres e-mail i język, które podajesz na tej stronie).",
                 "Zgoda na pliki cookie na stronie: Kockica (przechowuje twój wybór dotyczący zgody).",
                 "Analityka strony: Google Analytics 4 od Google Ireland Ltd., wyłącznie za twoją zgodą; Google Analytics 4 nie przechowuje adresów IP.",
+                "Zarządzanie tagami na stronie: Google Tag Manager od Google Ireland Ltd.; sam nie ustawia plików cookie, a ładowane przez niego tagi respektują twoją zgodę.",
+                "Osadzone filmy: YouTube od Google Ireland Ltd. (youtube-nocookie.com), ładowane dopiero po naciśnięciu odtwarzania i zgodzie na reklamowe pliki cookie.",
               ],
             },
             {
@@ -732,7 +734,7 @@ const pl: Dictionary = {
           type: "cookies",
           heading: "14. Pliki cookie",
           paragraphs: [
-            "Niezbędne pliki cookie zapewniają działanie strony i zapamiętują twój wybór dotyczący zgody. Analityczne pliki cookie (Google Analytics) są ustawiane tylko wtedy, gdy pozwolisz na to w banerze, a swój wybór możesz zmienić w każdej chwili.",
+            "Niezbędne pliki cookie zapewniają działanie strony i zapamiętują twój wybór dotyczący zgody. Wszystkie inne pliki cookie są ustawiane tylko wtedy, gdy pozwolisz na to w banerze, według kategorii: funkcjonalne (dodatkowe funkcje), analityczne (Google Analytics: które strony są odwiedzane) i reklamowe (filmy z YouTube osadzone na niektórych stronach; na tej stronie nie wyświetlamy reklam). Sam Google Tag Manager nie ustawia plików cookie, a każdy tag, który ładuje, respektuje twój wybór. Swój wybór możesz w każdej chwili zmienić lub wycofać.",
             "Poniższą tabelę automatycznie tworzy baner zgody na podstawie tego, co wykrywa na tej stronie, więc pokazuje pliki cookie, których faktycznie używamy.",
           ],
           settings: "Zmień ustawienia plików cookie",

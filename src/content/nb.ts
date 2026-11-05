@@ -702,6 +702,8 @@ const nb: Dictionary = {
                 "E-post om tidlig tilgang: Klaviyo (mottar bare e-postadressen og språket du sender inn på dette nettstedet).",
                 "Samtykke til informasjonskapsler på nettstedet: Kockica (lagrer samtykkevalget ditt).",
                 "Analyse av nettstedet: Google Analytics 4 fra Google Ireland Ltd., bare med ditt samtykke; IP-adresser lagres ikke av Google Analytics 4.",
+                "Taggstyring på nettstedet: Google Tag Manager fra Google Ireland Ltd.; setter ikke selv informasjonskapsler, og taggene den laster inn, følger samtykket ditt.",
+                "Innebygde videoer: YouTube fra Google Ireland Ltd. (youtube-nocookie.com), lastes først når du trykker på spill av og tillater informasjonskapsler for markedsføring.",
               ],
             },
             {
@@ -732,7 +734,7 @@ const nb: Dictionary = {
           type: "cookies",
           heading: "14. Informasjonskapsler",
           paragraphs: [
-            "Nødvendige informasjonskapsler holder nettstedet i gang og husker samtykkevalget ditt. Informasjonskapsler for analyse (Google Analytics) settes bare hvis du tillater dem i banneret, og du kan når som helst endre valget ditt.",
+            "Nødvendige informasjonskapsler holder nettstedet i gang og husker samtykkevalget ditt. Alle andre informasjonskapsler settes bare hvis du tillater dem i banneret, etter kategori: funksjonelle (ekstra funksjoner), analyse (Google Analytics: hvilke sider som besøkes) og markedsføring (YouTube-videoer innebygd på noen sider; vi viser ikke annonser på dette nettstedet). Google Tag Manager setter ikke selv informasjonskapsler, og hver tagg den laster inn, følger valget ditt. Du kan når som helst endre eller trekke tilbake valget ditt.",
             "Tabellen nedenfor lages automatisk av samtykkebanneret ut fra det det finner på dette nettstedet, så den viser informasjonskapslene vi faktisk bruker.",
           ],
           settings: "Endre innstillinger for informasjonskapsler",
