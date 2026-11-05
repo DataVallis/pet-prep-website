@@ -606,6 +606,14 @@ const en: RegistryCopy = {
     },
   },
   intros: {
+    keeshond: {
+      aka: "Wolfsspitz, German Wolfspitz, Keeshonden",
+      text: [
+        "The Keeshond is a medium-sized Spitz from Germany — the Wolfsspitz variety of the German Spitz — with a long, stand-off grey-shaded coat, a thick mane and dark 'spectacles' around the eyes (FCI breed standard). The FCI standard gives a height of 49 ± 6 cm; PDSA gives an average weight of 16–20 kg. A dog of this size is fully grown at about 12–15 months (PetMD); PDSA gives a lifespan of over 10 years and VCA 12–14 years.",
+        "PDSA writes that the breed needs up to an hour of exercise a day, that grooming is a daily requirement for the thick double coat, that Keeshonds make excellent family pets, get along with other pets in the household and respond well to training given time and patience. VCA describes them as playful and careful with children, advises a bath every month or so and notes above-average shedding and a thick coat that may make them prone to overheating.",
+      ],
+      sources: ["S246", "S709", "S710", "S10"],
+    },
     chow_chow: {
       aka: "Chow, Chow-Chow",
       text: [
