@@ -441,6 +441,7 @@ const hr: RegistryCopy = {
       dna_vwd3: "DNK test na von Willebrandovu bolest tipa 3 (vWD3), nasljedni poremećaj zgrušavanja krvi",
       dna_pra_rcd3: "DNK test na progresivnu atrofiju mrežnice (PRA-rcd3)",
       dna_clad: "DNK test na nedostatak adhezije leukocita (CLAD), nasljedni poremećaj imuniteta",
+      dna_ncl8: "DNK test na neuronsku ceroidnu lipofuscinozu (NCL8), nasljednu bolest živčanog sustava",
       dna_pra_rcd1: "DNK test na progresivnu atrofiju mrežnice (rcd1)",
       dna_vwd2: "DNK test na von Willebrandovu bolest tipa 2 (vWD2), nasljedni poremećaj zgrušavanja krvi",
       dna_l2hga: "DNK test na L-2-hidroksiglutarnu aciduriju (L-2-HGA), nasljednu metaboličku bolest živčanog sustava",

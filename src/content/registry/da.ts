@@ -429,6 +429,7 @@ const da: RegistryCopy = {
       dna_vwd3: "DNA-test for von Willebrands sygdom type 3 (vWD3), en arvelig blødersygdom",
       dna_pra_rcd3: "DNA-test for progressiv retinal atrofi (PRA-rcd3)",
       dna_clad: "DNA-test for canin leukocyt-adhæsionsdefekt (CLAD), en arvelig immunsygdom",
+      dna_ncl8: "DNA-test for neuronal ceroid lipofuscinose (NCL8), en arvelig sygdom i nervesystemet",
       dna_pra_rcd1: "DNA-test for progressiv retinal atrofi (rcd1)",
       dna_vwd2: "DNA-test for von Willebrands sygdom type 2 (vWD2), en arvelig blødersygdom",
       dna_l2hga: "DNA-test for L-2-hydroxyglutarsyreuri (L-2-HGA), en arvelig stofskiftesygdom i nervesystemet",

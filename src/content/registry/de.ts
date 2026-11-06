@@ -363,6 +363,7 @@ const de: RegistryCopy = {
       dna_vwd3: "DNA-Test auf Von-Willebrand-Krankheit Typ 3 (vWD3), eine erbliche Blutgerinnungsstörung",
       dna_pra_rcd3: "DNA-Test auf progressive Retinaatrophie (PRA-rcd3)",
       dna_clad: "DNA-Test auf Canine Leukozyten-Adhäsionsdefizienz (CLAD), eine erbliche Störung des Immunsystems",
+      dna_ncl8: "DNA-Test auf neuronale Ceroid-Lipofuszinose (NCL8), eine erbliche Erkrankung des Nervensystems",
       dna_pra_rcd1: "DNA-Test auf progressive Retinaatrophie (rcd1)",
       dna_vwd2: "DNA-Test auf Von-Willebrand-Krankheit Typ 2 (vWD2), eine erbliche Blutgerinnungsstörung",
       dna_l2hga: "DNA-Test auf L-2-Hydroxyglutarazidurie (L-2-HGA), eine erbliche Stoffwechselerkrankung des Nervensystems",

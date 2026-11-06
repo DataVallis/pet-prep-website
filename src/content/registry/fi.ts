@@ -479,6 +479,7 @@ const fi: RegistryCopy = {
       dna_vwd3: "DNA-testi: von Willebrandin tauti, tyyppi 3 (vWD3) – perinnöllinen verenvuotohäiriö",
       dna_pra_rcd3: "DNA-testi: etenevä verkkokalvon surkastuma (PRA-rcd3)",
       dna_clad: "DNA-testi: koiran leukosyyttien adheesiovaje (CLAD), perinnöllinen immuunipuutos",
+      dna_ncl8: "DNA-testi neuronaalisen seroidilipofuskinoosin (NCL8) varalta – perinnöllinen hermoston sairaus",
       dna_pra_rcd1: "DNA-testi: etenevä verkkokalvon surkastuma (rcd1)",
       dna_vwd2: "DNA-testi: von Willebrandin tauti, tyyppi 2 (vWD2) – perinnöllinen verenvuotohäiriö",
       dna_l2hga: "DNA-testi: L-2-hydroksiglutaariasiduria (L-2-HGA) – perinnöllinen hermoston aineenvaihduntasairaus",

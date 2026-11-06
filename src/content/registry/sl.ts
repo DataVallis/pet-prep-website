@@ -371,6 +371,7 @@ const sl: RegistryCopy = {
       dna_vwd3: "Test DNK za von Willebrandovo bolezen tipa 3 (vWD3), dedno motnjo strjevanja krvi",
       dna_pra_rcd3: "Test DNK za progresivno atrofijo mrežnice (PRA-rcd3)",
       dna_clad: "Test DNK za pomanjkanje adhezije levkocitov (CLAD), dedno motnjo imunskega sistema",
+      dna_ncl8: "Test DNK za nevronsko ceroidno lipofuscinozo (NCL8), dedno bolezen živčevja",
       dna_pra_rcd1: "Test DNK za progresivno atrofijo mrežnice (rcd1)",
       dna_vwd2: "Test DNK za von Willebrandovo bolezen tipa 2 (vWD2), dedno motnjo strjevanja krvi",
       dna_l2hga: "Test DNK za L-2-hidroksiglutarno acidurijo (L-2-HGA), dedno presnovno bolezen živčevja",
@@ -641,6 +642,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča do eno uro gibanja na dan in navaja, da mu ustreza manjša hiša z majhnim ali srednjim vrtom v mestu ali na podeželju ter da potrebuje česanje večkrat na teden. PDSA navaja, da so šnavcerji nežni, potrpežljivi psi, ki se dobro razumejo z otroki, če se z njimi seznanijo že zgodaj, in da je dlako treba česati dva- do trikrat na teden. VCA dodaja, da se hitro uči, a se tudi hitro naveliča, zato mu igre in triki dajo potrebno miselno delo; PetMD priporoča kopanje enkrat na mesec, striženje krempljev in čiščenje ušes na en do dva tedna ter obisk strokovnega frizerja vsake tri mesece.",
       ],
       sources: ["S10", "S711", "S712", "S714", "S715", "S716", "S717"],
+    },
+    english_setter: {
+      aka: "English Setter, angleski seter, seter, Laverack",
+      text: [
+        "Angleški seter je eleganten ptičar iz Velike Britanije, vzrejen za iskanje pernate divjadi. Standard FCI opisuje psa srednje višine, čistih obrisov in elegantnega gibanja z belo dlako, posuto z barvnimi pikicami — modri, oranžni, limonin ali jetrni »belton« ali tribarven — in višino 65–68 cm za pse ter 61–65 cm za psice; PDSA navaja povprečno težo 22–29 kg. Pes te velikosti doraste pri približno 15–18 mesecih (PetMD), The Royal Kennel Club pa navaja življenjsko dobo več kot 10 let.",
+        "The Royal Kennel Club priporoča več kot 2 uri gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da potrebuje veliko hišo z velikim vrtom, ter ga uvršča v 1. kategorijo programa Breed Watch. PDSA piše, da angleški setri obožujejo otroke in druge živali in so zato odlični za družine, ter svetuje česanje 2- do 3-krat na teden; PetMD svetuje kopanje vsakih šest do osem tednov in piše, da ne marajo biti dolgo sami, VCA pa omenja nekaj striženja in urejanja dlake vsak mesec.",
+      ],
+      sources: ["S730", "S731", "S732", "S733", "S734", "S10"],
     },
     coton_de_tulear: {
       aka: "coton, cotonček, coton de tuléar, Coton de Tulear, kraljevi pes",
