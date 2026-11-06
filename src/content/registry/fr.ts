@@ -385,6 +385,7 @@ const fr: RegistryCopy = {
       dna_vwd3: "Test ADN de la maladie de von Willebrand de type 3 (vWD3), un trouble héréditaire de la coagulation",
       dna_pra_rcd3: "Test ADN de l’atrophie progressive de la rétine (PRA-rcd3)",
       dna_clad: "Test ADN de la déficience d’adhésion leucocytaire canine (CLAD), un trouble immunitaire héréditaire",
+      dna_ncl8: "Test ADN de la céroïde-lipofuscinose neuronale (NCL8), une maladie héréditaire du système nerveux",
       dna_pra_rcd1: "Test ADN de l’atrophie progressive de la rétine (rcd1)",
       dna_vwd2: "Test ADN de la maladie de von Willebrand de type 2 (vWD2), un trouble héréditaire de la coagulation",
       dna_l2hga: "Test ADN de l’acidurie L-2-hydroxyglutarique (L-2-HGA), une maladie métabolique héréditaire du système nerveux",

@@ -361,6 +361,7 @@ const en: RegistryCopy = {
       dna_vwd3: "DNA test for von Willebrand disease type 3 (vWD3), an inherited bleeding disorder",
       dna_pra_rcd3: "DNA test for progressive retinal atrophy (PRA-rcd3)",
       dna_clad: "DNA test for canine leukocyte adhesion deficiency (CLAD), an inherited immune disorder",
+      dna_ncl8: "DNA test for neuronal ceroid lipofuscinosis (NCL8), an inherited disease of the nervous system",
       dna_pra_rcd1: "DNA test for progressive retinal atrophy (rcd1)",
       dna_vwd2: "DNA test for von Willebrand disease type 2 (vWD2), an inherited bleeding disorder",
       dna_l2hga: "DNA test for L-2-hydroxyglutaric aciduria (L-2-HGA), an inherited metabolic disease of the nervous system",
@@ -621,6 +622,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to an hour of exercise a day and says the breed suits a small house with a small or medium garden in town or country, and needs grooming more than once a week. The PDSA says Schnauzers are gentle, patient dogs that get on well with children if they are introduced at an early age, and that the coat needs grooming two to three times a week. VCA notes that the breed learns quickly but also bores quickly, so games and tricks give it needed mental exercise; PetMD recommends monthly baths, nail trims and ear cleaning every one to two weeks, and a professional groomer every quarter.",
       ],
       sources: ["S10", "S711", "S712", "S714", "S715", "S716", "S717"],
+    },
+    english_setter: {
+      aka: "Laverack Setter, Llewellin Setter, Setter",
+      text: [
+        "The English Setter is an elegant gundog from Great Britain, bred to find game birds. The FCI standard describes a dog of medium height, clean in outline and elegant in movement, with a white coat flecked with colour — blue, orange, lemon or liver \"belton\", or tricolour — and a height of 65–68 cm for males and 61–65 cm for females; the PDSA gives an average weight of 22–29 kg. A dog of this size is fully grown at about 15–18 months (PetMD), and the Royal Kennel Club gives a lifespan of over 10 years.",
+        "The Royal Kennel Club recommends more than 2 hours of exercise a day and grooming more than once a week, says the breed sheds and suits a large house with a large garden, and lists it in Breed Watch Category 1. The PDSA says English Setters love children and other pets, making them perfect for families, and advises grooming 2–3 times a week; PetMD suggests a bath every six to eight weeks and says they don't like being left alone for long, and VCA mentions some clipping and trimming every month.",
+      ],
+      sources: ["S730", "S731", "S732", "S733", "S734", "S10"],
     },
     coton_de_tulear: {
       aka: "Coton, Coton de Tuléar, Royal Dog of Madagascar",

@@ -406,6 +406,7 @@ const pl: RegistryCopy = {
       dna_vwd3: "Test DNA w kierunku choroby von Willebranda typu 3 (vWD3), dziedzicznego zaburzenia krzepnięcia krwi",
       dna_pra_rcd3: "Test DNA w kierunku postępującego zaniku siatkówki (PRA-rcd3)",
       dna_clad: "Test DNA w kierunku niedoboru adhezji leukocytów (CLAD), dziedzicznego zaburzenia odporności",
+      dna_ncl8: "Test DNA w kierunku neuronalnej ceroidolipofuscynozy (NCL8), dziedzicznej choroby układu nerwowego",
       dna_pra_rcd1: "Test DNA w kierunku postępującego zaniku siatkówki (rcd1)",
       dna_vwd2: "Test DNA w kierunku choroby von Willebranda typu 2 (vWD2), dziedzicznego zaburzenia krzepnięcia krwi",
       dna_l2hga: "Test DNA w kierunku kwasicy L-2-hydroksyglutarowej (L-2-HGA), dziedzicznej choroby metabolicznej układu nerwowego",
