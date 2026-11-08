@@ -195,6 +195,17 @@ export function InvestorsPage({ stats, now = new Date() }: { stats: InvestorStat
                 <span className="text-[13px] leading-[18px]">{m.promo.text}</span>
               </ClickToPlay>
             </li>
+            <li>
+              <ClickToPlay
+                src={`https://www.youtube-nocookie.com/embed/videoseries?list=${encodeURIComponent(youtube.reels.playlistId)}`} poster={`/api/yt-thumb/${encodeURIComponent(youtube.reels.first)}`}
+                title={m.reels.title}
+                label={`${m.play}: ${m.reels.title}`}
+                className="aspect-[9/16] w-full overflow-hidden rounded-[22px] bg-graphite p-4 text-fog"
+              >
+                <span className="font-semibold">{m.reels.title}</span>
+                <span className="text-[13px] leading-[18px] text-muted-dark">{m.reels.text}</span>
+              </ClickToPlay>
+            </li>
           </ul>
         </div>
 

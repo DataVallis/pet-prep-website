@@ -15,6 +15,8 @@ export const youtube = {
   curio: { playlistId: "PLViBkz320w9c", pilot: "BYeoqcbqhl0" },
   /** "PetPrep in 60 seconds" (playlist "How PetPrep works"). */
   promo: "CaixLs_X9GA",
+  /** "PetPrep Reels" playlist (David 2026-11-06); `first` gives the tile its thumbnail. */
+  reels: { playlistId: "PLdqHvNSCSYT0", first: "WF-T_c9ogh4" },
 };
 
 export const investorEmail = "mailto:investors@petprep.si";
@@ -89,6 +91,7 @@ export const investorsCopy = {
       curioPilot: { title: "Curio — Rock, Paper, Leash", text: "Pilot of our silent family comedy" },
       curioAll: "Curio — all episodes",
       promo: { title: "PetPrep in 60 seconds", text: "Is your kid ready for a real pet?" },
+      reels: { title: "PetPrep Reels", text: "Short reels with our AI pets" },
       curio: { title: "Meet Curio", text: "Our mascot and its short videos" },
       coloring: { title: "Colouring pages", text: "Free to print, each with a sourced pet-care fact" },
       walkthrough: { title: "How the app works", text: "The 12-week challenge, step by step" },

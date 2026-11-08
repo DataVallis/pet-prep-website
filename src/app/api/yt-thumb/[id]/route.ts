@@ -6,7 +6,7 @@ import { youtube } from "@/content/investors";
  * still makes no request to YouTube before they press play. Only our own video ids are allowed
  * (no open proxy); cached a day in memory and by the browser.
  */
-const allowed = new Set<string>([...youtube.episodes, youtube.curio.pilot, youtube.promo]);
+const allowed = new Set<string>([...youtube.episodes, youtube.curio.pilot, youtube.promo, youtube.reels.first]);
 const DAY = 86400;
 const cache = new Map<string, { body: ArrayBuffer; type: string; at: number }>();
 
