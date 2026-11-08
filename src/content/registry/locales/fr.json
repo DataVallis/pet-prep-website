@@ -734,6 +734,13 @@
         "Coton",
         "Chien royal de Madagascar"
       ]
+    },
+    "english_setter": {
+      "name": "Setter anglais",
+      "slug": "setter-anglais",
+      "synonyms": [
+        "English Setter"
+      ]
     }
   },
   "suitability_labels": {
