@@ -40,9 +40,11 @@ jobs:
         id: fetch
         run: |
           set -euo pipefail
-          sha="$(gh api "repos/${SOURCE_REPO}/commits/main" --jq .sha)"
-          if ! gh api -H 'Accept: application/vnd.github.raw' \
-            "repos/${SOURCE_REPO}/contents/${SOURCE_PATH}?ref=${sha}" > "$RUNNER_TEMP/care.json"; then
+          # Read the public repo anonymously (git + raw.githubusercontent.com): since 2026-11-05 this
+          # repo's GITHUB_TOKEN gets 404 from the API for DataVallis/pet-prep, while anonymous reads work.
+          sha="$(git ls-remote "https://github.com/${SOURCE_REPO}.git" refs/heads/main | cut -f1)"
+          [ -n "$sha" ] || { echo "::error::could not read ${SOURCE_REPO} main"; exit 1; }
+          if ! curl -fsSL --retry 3 "https://raw.githubusercontent.com/${SOURCE_REPO}/${sha}/${SOURCE_PATH}" > "$RUNNER_TEMP/care.json"; then
             echo "changed=false" >>"$GITHUB_OUTPUT"
             echo "No care export on pet-prep main yet." | tee -a "$GITHUB_STEP_SUMMARY"
             exit 0

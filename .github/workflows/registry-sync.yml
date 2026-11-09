@@ -9,7 +9,7 @@ name: Registry sync
 # "CI & Deploy" with target none = CI only (a push by GITHUB_TOKEN starts no workflow; a dispatch
 # does). Since 2026-11-04 (DEPLOY.md) the change goes live with the next daily deploy (03:47
 # Europe/Ljubljana, daily-deploy.yml) — an availability flip reaches petprep.si up to ~1 day later.
-# No secret needed: pet-prep is public and GITHUB_TOKEN can read it.
+# No secret needed: pet-prep is public and is read anonymously (git ls-remote + raw.githubusercontent.com).
 # When the check fails (a new breed needs words / a portrait first) it only warns: the website
 # breed PR (pet-prep ADD_BREED_RUNBOOK §9) then carries the registry.
 
@@ -45,9 +45,11 @@ jobs:
         id: fetch
         run: |
           set -euo pipefail
-          sha="$(gh api "repos/${SOURCE_REPO}/commits/main" --jq .sha)"
-          gh api -H 'Accept: application/vnd.github.raw' \
-            "repos/${SOURCE_REPO}/contents/${SOURCE_PATH}?ref=${sha}" > "$RUNNER_TEMP/registry.json"
+          # Read the public repo anonymously (git + raw.githubusercontent.com): since 2026-11-05 this
+          # repo's GITHUB_TOKEN gets 404 from the API for DataVallis/pet-prep, while anonymous reads work.
+          sha="$(git ls-remote "https://github.com/${SOURCE_REPO}.git" refs/heads/main | cut -f1)"
+          [ -n "$sha" ] || { echo "::error::could not read ${SOURCE_REPO} main"; exit 1; }
+          curl -fsSL --retry 3 "https://raw.githubusercontent.com/${SOURCE_REPO}/${sha}/${SOURCE_PATH}" > "$RUNNER_TEMP/registry.json"
           # Never copy an error page or a different schema over the register.
           node -e 'const r=JSON.parse(require("fs").readFileSync(process.argv[1],"utf8"));if(r.schema_version!==2||!Array.isArray(r.breeds)||r.breeds.length===0)throw new Error("unexpected export: schema "+r.schema_version)' "$RUNNER_TEMP/registry.json"
           echo "sha=${sha}" >>"$GITHUB_OUTPUT"
