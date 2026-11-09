@@ -379,7 +379,7 @@ export const emergencyCopy: Record<Locale, {
       country: "Država", all: "Sve države", region: "Regija", allRegions: "Sve regije", search: "Mjesto ili naziv",
       searchPlaceholder: "npr. Split, Málaga, Maribor", only24h: "Samo 24\u00a0h", results: "Rezultati: {n}",
       none: "Nema rezultata – pokušaj s drugim mjestom ili regijom.", h24: "24\u00a0h", dutyRota: "Raspored dežurstava", poisonLine: "Linija za otrovanja",
-      website: "Web-stranica", source: "Izvor", checked: "provjereno",
+      website: "Mrežna stranica", source: "Izvor", checked: "provjereno",
     },
   },
   sv: {

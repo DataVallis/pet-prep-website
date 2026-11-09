@@ -299,7 +299,7 @@ const hr: RegistryCopy = {
           : `Naredbe uči ${f.num(p.multiplier)}× brže od mješanca iz besplatnog plana.`,
     senior_share: (p, f) =>
       `U seniorsku dob ulazi u ${p.months}. mjesecu (${f.num(p.months / 12, 1)}${NB}${form(Number((p.months / 12).toFixed(1)), "godina", "godine", "godina")}) – u posljednjoj četvrtini očekivanog životnog vijeka pasmine.`,
-    walk_sensor: () => "Šetnje broje stvarne korake iz aplikacije Apple Zdravlje ili Health Connect (uz dopuštenje, samo čitanje) i iz senzora pokreta u telefonu – bez GPS-a.",
+    walk_sensor: () => "Šetnje broje stvarne korake iz aplikacije Apple Health ili Health Connect (uz dopuštenje, samo čitanje) i iz senzora pokreta u telefonu – bez GPS-a.",
     play_instead_of_steps: (p, f) =>
       `Bez šetnji: odrasla mačka treba ${p.sessions} ${form(p.sessions, "termin", "termina", "termina")} za igru dnevno sa štapom s igračkom, s razmakom od najmanje ${f.num(p.gap_minutes / 60)}${NB}${hoursGen(p.gap_minutes / 60)}.`,
     litter_rule: (p) =>
@@ -451,7 +451,7 @@ const hr: RegistryCopy = {
     },
   },
   health: {
-    shar_pei_fever: "U pasmine se može pojaviti obiteljska groznica šarpeja: napadaji visoke temperature s bolnim, natečenim zglobovima i natečenim licem — odmah veterinaru.",
+    shar_pei_fever: "U pasmine se može pojaviti obiteljska groznica šarpeja: napadaji visoke temperature s bolnim, natečenim zglobovima i natečenim licem – odmah veterinaru.",
     weight_gain: "Lako se deblja – treba paziti na porcije i poslastice.",
     hip_elbow_dysplasia_eye_conditions: "Može biti sklon displaziji kuka i lakta te nekolicini nasljednih bolesti očiju.",
     cancer_risk: "Izvori opisuju veći rizik od raka u ovoj pasmini.",
@@ -754,7 +754,7 @@ const hr: RegistryCopy = {
     irish_setter: {
       aka: "Irski seter, Irish Setter",
       text: [
-        "Irski crveni seter (Irish Setter) vitak je, atletski ptičar iz Irske, uzgojen za traženje divljači na prostranom terenu. Standard FCI opisuje samo jednu boju — zasićeno kestenjastu bez traga crne — i visinu od 58–67 cm za mužjake te 55–62 cm za ženke; američki standard pasmine idealnim smatra oko 70 funti (oko 32 kg) za mužjaka i 60 funti (oko 27 kg) za ženku. Pas ove veličine odraste s otprilike 15–18 mjeseci (PetMD), a The Royal Kennel Club navodi životni vijek dulji od 10 godina.",
+        "Irski crveni seter (Irish Setter) vitak je, atletski ptičar iz Irske, uzgojen za traženje divljači na prostranom terenu. Standard FCI opisuje samo jednu boju – zasićeno kestenjastu bez traga crne – i visinu od 58–67 cm za mužjake te 55–62 cm za ženke; američki standard pasmine idealnim smatra oko 70 funti (oko 32 kg) za mužjaka i 60 funti (oko 27 kg) za ženku. Pas ove veličine odraste s otprilike 15–18 mjeseci (PetMD), a The Royal Kennel Club navodi životni vijek dulji od 10 godina.",
         "The Royal Kennel Club preporučuje više od 2 sata kretanja dnevno i njegu dlake više puta tjedno, navodi da linja i da treba veliku kuću s velikim vrtom te ga svrstava u 1. kategoriju programa Breed Watch. PDSA ga opisuje kao vrlo prijateljskog i privrženog psa koji se dobro slaže s djecom i drugim ljubimcima te savjetuje njegu dlake 2 do 3 puta tjedno; PetMD preporučuje tjedni pregled i čišćenje ušiju i piše da irski seteri trebaju puno ljudskog društva.",
       ],
       sources: ["S675", "S676", "S678", "S680", "S10"],
@@ -770,7 +770,7 @@ const hr: RegistryCopy = {
     rat_terrier: {
       aka: "Rattie, američki rat terijer, Rat Terrier",
       text: [
-        "Rat terijer malen je američki terijer koji se uzgaja u dvije veličine — minijaturnoj i standardnoj — s kratkom, priljubljenom, glatkom i sjajnom dlakom. Standard pasmine dopušta visinu u grebenu do 18 inča (46 cm), a PetMD za obje veličine navodi težinu od 10–25 funti (oko 4,5–11 kg); pas te veličine prestaje rasti oko 9.–12. mjeseca (PetMD). VCA navodi životni vijek od 12–16 godina, PetMD 12–18 godina.",
+        "Rat terijer malen je američki terijer koji se uzgaja u dvije veličine – minijaturnoj i standardnoj – s kratkom, priljubljenom, glatkom i sjajnom dlakom. Standard pasmine dopušta visinu u grebenu do 18 inča (46 cm), a PetMD za obje veličine navodi težinu od 10–25 funti (oko 4,5–11 kg); pas te veličine prestaje rasti oko 9.–12. mjeseca (PetMD). VCA navodi životni vijek od 12–16 godina, PetMD 12–18 godina.",
         "Rat Terrier Club of America navodi da se rat terijeri dobro slažu s djecom, osobito ako odrastaju s njima, i snalaze se u stanu, ali trebaju barem 30 minuta kretanja dnevno. PetMD piše da im treba puno tjelesnih i mentalnih izazova, ne vole dugo biti sami i blago linjaju cijele godine; VCA savjetuje četkanje jednom tjedno i upozorava da se možda neće slagati s malim životinjama, osobito glodavcima.",
       ],
       sources: ["S650", "S648", "S10", "S647"],
@@ -778,7 +778,7 @@ const hr: RegistryCopy = {
     shar_pei: {
       aka: "Shar Pei, kineski šarpej, Chinese Shar-Pei",
       text: [
-        "Šarpej (u SAD-u „Chinese Shar-Pei”) aktivan je, kompaktan, kvadratno građen pas srednje veličine iz Kine s kratkom, oštrom, čekinjastom dlakom jedne boje (bilo koje osim bijele), naborima na glavi i grebenu te širokom njuškom. Standard Royal Kennel Cluba navodi visinu od 46–51 cm, a PDSA težinu od 20–27 kg; pas te veličine prestaje rasti oko 12.–15. mjeseca (PetMD). Royal Kennel Club i PDSA navode životni vijek dulji od 10 godina, no studija VetCompass na psima u Ujedinjenom Kraljevstvu pronašla je medijan od 7,3 godine.",
+        "Šarpej (u SAD-u „Chinese Shar-Pei“) aktivan je, kompaktan, kvadratno građen pas srednje veličine iz Kine s kratkom, oštrom, čekinjastom dlakom jedne boje (bilo koje osim bijele), naborima na glavi i grebenu te širokom njuškom. Standard Royal Kennel Cluba navodi visinu od 46–51 cm, a PDSA težinu od 20–27 kg; pas te veličine prestaje rasti oko 12.–15. mjeseca (PetMD). Royal Kennel Club i PDSA navode životni vijek dulji od 10 godina, no studija VetCompass na psima u Ujedinjenom Kraljevstvu pronašla je medijan od 7,3 godine.",
         "Royal Kennel Club preporučuje do sat vremena kretanja dnevno i četkanje jednom tjedno te pasminu svrstava u 2. kategoriju programa Breed Watch zbog problema s kapcima i kožnim naborima. PDSA opisuje šarpeje kao odane, privržene obiteljske pse koji najbolje odgovaraju iskusnim vlasnicima i starijoj djeci, upozorava na snažan lovački nagon prema manjim životinjama te savjetuje da kožni nabori budu čisti i suhi i da između obroka i kretanja prođe neko vrijeme.",
       ],
       sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
@@ -914,7 +914,7 @@ const hr: RegistryCopy = {
       aka: "kratkodlaki ptičar, GSP, Deutsch Kurzhaar",
       text: [
         "Njemački kratkodlaki ptičar svestran je lovački pas iz Njemačke, građen za rad u polju i vodi, s kratkom, gustom dlakom koja je pod rukom tvrda, širokim plosnatim ušima postavljenima visoko i tamnosmeđim bademastim očima. Njegov američki standard dopušta jednobojnu smeđu, smeđu s bijelim (npr. s pjegama), jednobojnu crnu te crnu s bijelim; crvena, narančasta, limun ili podpaline i potpuno bijeli pas isključuju se. Standard opisuje kupiran rep – PetPrep psa uvijek prikazuje s prirodnim repom.",
-        "Standard ga naziva ljubaznim, inteligentnim i spremnim udovoljiti. Royal Kennel Club i PDSA kažu da treba više od dva sata kretanja dnevno; PDSA dodaje da se u šetnji može probuditi njegov nagon za lov, markiranje i donošenje, pa treba dobro uvježbati dozivanje, te da ga je prilično lako dresirati. Njegu dlake treba jednom do dvaput tjedno i umjereno se linja. Velika britanska studija navodi medijan očekivanog životnog vijeka od 13,4 godine.",
+        "Standard ga naziva ljubaznim, inteligentnim i spremnim udovoljiti. Royal Kennel Club i PDSA kažu da treba više od dva sata kretanja dnevno; PDSA dodaje da se u šetnji može probuditi njegov nagon za lov, markiranje i donošenje, pa treba dobro uvježbati dozivanje, te da ga je prilično lako dresirati. Dlaku treba njegovati jednom do dvaput tjedno, a umjereno se linja. Velika britanska studija navodi medijan očekivanog životnog vijeka od 13,4 godine.",
       ],
       sources: ["S185", "S186", "S187", "S188", "S189", "S123"],
     },
