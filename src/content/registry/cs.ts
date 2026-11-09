@@ -440,6 +440,7 @@ const cs: RegistryCopy = {
       dna_clad: "DNA test na deficit adheze leukocytů (CLAD), dědičnou poruchu imunity",
       dna_ncl8: "DNA test na neuronální ceroidní lipofuscinózu (NCL8), dědičné onemocnění nervové soustavy",
       dna_pra_rcd1: "DNA test na progresivní atrofii sítnice (rcd1)",
+      dna_pra4: "DNA test na progresivní atrofii sítnice (PRA4)",
       dna_vwd2: "DNA test na von Willebrandovu chorobu typu 2 (vWD2), dědičnou poruchu srážlivosti krve",
       dna_l2hga: "DNA test na L-2-hydroxyglutarovou acidurii (L-2-HGA), dědičné metabolické onemocnění nervové soustavy",
       dna_pll: "DNA test na primární luxaci čočky (PLL), dědičné onemocnění očí, při kterém se čočka posune ze svého místa",

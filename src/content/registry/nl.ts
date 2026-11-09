@@ -391,6 +391,7 @@ const nl: RegistryCopy = {
       dna_clad: "DNA-test op canine leukocytenadhesiedeficiëntie (CLAD), een erfelijke afweerstoornis",
       dna_ncl8: "DNA-test op neuronale ceroïdlipofuscinose (NCL8), een erfelijke aandoening van het zenuwstelsel",
       dna_pra_rcd1: "DNA-test op progressieve retina-atrofie (rcd1)",
+      dna_pra4: "DNA-test op progressieve retina-atrofie (PRA4)",
       dna_vwd2: "DNA-test op de ziekte van Von Willebrand type 2 (vWD2), een erfelijke bloedingsstoornis",
       dna_l2hga: "DNA-test op L-2-hydroxyglutaarzuuracidurie (L-2-HGA), een erfelijke stofwisselingsziekte van het zenuwstelsel",
       dna_pll: "DNA-test op primaire lensluxatie (PLL), een erfelijke oogziekte waarbij de lens verschuift",

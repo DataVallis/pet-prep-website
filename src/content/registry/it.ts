@@ -395,6 +395,7 @@ const it: RegistryCopy = {
       dna_clad: "Test del DNA per il deficit di adesione leucocitaria canina (CLAD), un disturbo immunitario ereditario",
       dna_ncl8: "Test del DNA per la lipofuscinosi ceroide neuronale (NCL8), una malattia ereditaria del sistema nervoso",
       dna_pra_rcd1: "Test del DNA per l’atrofia progressiva della retina (rcd1)",
+      dna_pra4: "Test del DNA per l’atrofia progressiva della retina (PRA4)",
       dna_vwd2: "Test del DNA per la malattia di von Willebrand di tipo 2 (vWD2), un disturbo ereditario della coagulazione",
       dna_l2hga: "Test del DNA per l’aciduria L-2-idrossiglutarica (L-2-HGA), una malattia metabolica ereditaria del sistema nervoso",
       dna_pll: "Test del DNA per la lussazione primaria del cristallino (PLL), una malattia ereditaria degli occhi in cui il cristallino si sposta dalla sua sede",

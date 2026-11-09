@@ -388,6 +388,7 @@ const pt: RegistryCopy = {
       dna_clad: "Teste de ADN da deficiência de adesão leucocitária canina (CLAD), uma doença imunitária hereditária",
       dna_ncl8: "Teste de ADN para lipofuscinose ceroide neuronal (NCL8), uma doença hereditária do sistema nervoso",
       dna_pra_rcd1: "Teste de ADN da atrofia progressiva da retina (rcd1)",
+      dna_pra4: "Teste de ADN da atrofia progressiva da retina (PRA4)",
       dna_vwd2: "Teste de ADN da doença de von Willebrand tipo 2 (vWD2), uma doença hereditária da coagulação",
       dna_l2hga: "Teste de ADN da acidúria L-2-hidroxiglutárica (L-2-HGA), uma doença metabólica hereditária do sistema nervoso",
       dna_pll: "Teste de ADN da luxação primária do cristalino (PLL), uma doença hereditária dos olhos em que o cristalino sai do lugar",

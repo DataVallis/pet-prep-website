@@ -365,6 +365,7 @@ const de: RegistryCopy = {
       dna_clad: "DNA-Test auf Canine Leukozyten-Adhäsionsdefizienz (CLAD), eine erbliche Störung des Immunsystems",
       dna_ncl8: "DNA-Test auf neuronale Ceroid-Lipofuszinose (NCL8), eine erbliche Erkrankung des Nervensystems",
       dna_pra_rcd1: "DNA-Test auf progressive Retinaatrophie (rcd1)",
+      dna_pra4: "DNA-Test auf progressive Retinaatrophie (PRA4)",
       dna_vwd2: "DNA-Test auf Von-Willebrand-Krankheit Typ 2 (vWD2), eine erbliche Blutgerinnungsstörung",
       dna_l2hga: "DNA-Test auf L-2-Hydroxyglutarazidurie (L-2-HGA), eine erbliche Stoffwechselerkrankung des Nervensystems",
       dna_pll: "DNA-Test auf primäre Linsenluxation (PLL), eine erbliche Augenerkrankung, bei der sich die Linse verschiebt",

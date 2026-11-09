@@ -441,6 +441,7 @@ const nb: RegistryCopy = {
       dna_clad: "DNA-test for canin leukocytt-adhesjonsdefekt (CLAD), en arvelig immunsykdom",
       dna_ncl8: "DNA-test for nevronal ceroid lipofuscinose (NCL8), en arvelig sykdom i nervesystemet",
       dna_pra_rcd1: "DNA-test for progressiv retinal atrofi (rcd1)",
+      dna_pra4: "DNA-test for progressiv retinal atrofi (PRA4)",
       dna_vwd2: "DNA-test for von Willebrands sykdom type 2 (vWD2), en arvelig blødersykdom",
       dna_l2hga: "DNA-test for L-2-hydroksyglutarsyreuri (L-2-HGA), en arvelig stoffskiftesykdom i nervesystemet",
       dna_pll: "DNA-test for primær linseluksasjon (PLL), en arvelig øyesykdom der linsen glir ut av stilling",
