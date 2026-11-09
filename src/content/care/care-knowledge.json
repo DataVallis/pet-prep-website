@@ -2576,50 +2576,61 @@
       "level": "small_amounts",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Brussels sprouts",
-        "sl": "Brstični ohrovt"
+        "sl": "Brstični ohrovt",
+        "nl": "Spruitjes"
       },
       "question": {
         "en": "Can cats eat Brussels sprouts?",
-        "sl": "Ali lahko mačke jedo brstični ohrovt?"
+        "sl": "Ali lahko mačke jedo brstični ohrovt?",
+        "nl": "Mogen katten spruitjes eten?"
       },
       "url_slug": {
         "en": "brussels-sprouts",
-        "sl": "brsticni-ohrovt"
+        "sl": "brsticni-ohrovt",
+        "nl": "spruitjes"
       },
       "answer": {
         "en": "Yes, a small piece of plain Brussels sprout, cooked until soft, is fine as an occasional treat. The RSPCA lists Brussels sprouts among foods suitable for cats in moderation. Cats don't need vegetables, so keep it a tiny extra.",
-        "sl": "Da, majhen košček navadnega brstičnega ohrovta, kuhanega do mehkega, je v redu kot občasen priboljšek. RSPCA brstični ohrovt navaja med hrano, primerno za mačke v zmernih količinah. Mačke zelenjave ne potrebujejo, zato naj bo le majhen dodatek."
+        "sl": "Da, majhen košček navadnega brstičnega ohrovta, kuhanega do mehkega, je v redu kot občasen priboljšek. RSPCA brstični ohrovt navaja med hrano, primerno za mačke v zmernih količinah. Mačke zelenjave ne potrebujejo, zato naj bo le majhen dodatek.",
+        "nl": "Ja, af en toe een klein stukje naturel spruitje, gaar tot het zacht is, is prima als traktatie. Volgens de RSPCA kunnen katten met mate spruitjes eten. Katten hebben geen groente nodig, dus houd het bij een klein extraatje."
       },
       "why": {
         "en": "The RSPCA lists Brussels sprouts, cooked until soft, among pet-safe Christmas foods suitable for cats and dogs in moderation. Cats don't need fruit or vegetables in their diet, treats should be few, and the ASPCA notes that any plant material may cause vomiting and stomach upset in cats.",
-        "sl": "RSPCA brstični ohrovt, kuhan do mehkega, navaja med božično hrano, ki je v zmernih količinah primerna za mačke in pse. Mačke sadja in zelenjave v prehrani ne potrebujejo, priboljškov naj bo malo, ASPCA pa opozarja, da lahko vsaka rastlinska hrana pri mačkah povzroči bruhanje in želodčne težave."
+        "sl": "RSPCA brstični ohrovt, kuhan do mehkega, navaja med božično hrano, ki je v zmernih količinah primerna za mačke in pse. Mačke sadja in zelenjave v prehrani ne potrebujejo, priboljškov naj bo malo, ASPCA pa opozarja, da lahko vsaka rastlinska hrana pri mačkah povzroči bruhanje in želodčne težave.",
+        "nl": "De RSPCA noemt spruitjes, gaar tot ze zacht zijn, onder het eten voor de kerstdagen dat veilig is voor huisdieren en met mate geschikt voor katten en honden. Katten hebben geen fruit of groente nodig in hun voeding en traktaties geef je spaarzaam. Volgens de ASPCA kan elk plantaardig materiaal bij katten braken en maagklachten veroorzaken."
       },
       "signs": null,
       "what_to_do": {
         "en": "Start with a small piece. If your cat vomits or gets an upset stomach afterwards, stop and ask your vet.",
-        "sl": "Začnite z majhnim koščkom. Če mačka po tem bruha ali ima prebavne težave, prenehajte in se posvetujte z veterinarjem."
+        "sl": "Začnite z majhnim koščkom. Če mačka po tem bruha ali ima prebavne težave, prenehajte in se posvetujte z veterinarjem.",
+        "nl": "Geef eerst een klein stukje. Als je kat daarna braakt of maagklachten krijgt, stop dan en vraag je dierenarts om advies."
       },
       "serving": {
         "en": "A small piece, cooked until soft, with no butter, salt or seasoning.",
-        "sl": "Majhen košček, kuhan do mehkega, brez masla, soli in začimb."
+        "sl": "Majhen košček, kuhan do mehkega, brez masla, soli in začimb.",
+        "nl": "Een klein stukje, gaar tot het zacht is, zonder boter, zout of kruiden."
       },
       "child": {
         "en": "A soft cooked sprout piece can be a cat treat now and then. Cats mostly need meat, so veggies are just a tiny extra.",
-        "sl": "Majhen košček mehkega kuhanega brstičnega ohrovta je lahko občasno priboljšek za muco. Muce potrebujejo predvsem meso, zato je zelenjava le majhen dodatek."
+        "sl": "Majhen košček mehkega kuhanega brstičnega ohrovta je lahko občasno priboljšek za muco. Muce potrebujejo predvsem meso, zato je zelenjava le majhen dodatek.",
+        "nl": "Een zacht gekookt stukje spruitje kan af en toe een traktatie voor je kat zijn. Katten hebben vooral vlees nodig, dus groente is maar een klein extraatje."
       },
       "faq": [
         {
           "q": {
             "en": "Do cats need vegetables?",
-            "sl": "Ali mačke potrebujejo zelenjavo?"
+            "sl": "Ali mačke potrebujejo zelenjavo?",
+            "nl": "Hebben katten groente nodig?"
           },
           "a": {
             "en": "No. Cats Protection says cats rarely eat vegetables naturally and there is no need to add them to their diet. A vegetable can only ever be a small extra.",
-            "sl": "Ne. Cats Protection navaja, da mačke v naravi redko jedo zelenjavo in da je ni treba dodajati v njihovo prehrano. Zelenjava je lahko le majhen dodatek."
+            "sl": "Ne. Cats Protection navaja, da mačke v naravi redko jedo zelenjavo in da je ni treba dodajati v njihovo prehrano. Zelenjava je lahko le majhen dodatek.",
+            "nl": "Nee. Cats Protection geeft aan dat katten van nature zelden groente eten en dat je het niet aan hun voeding hoeft toe te voegen. Groente is hooguit een klein extraatje."
           }
         }
       ],
@@ -2883,50 +2894,61 @@
       "level": "small_amounts",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Cabbage",
-        "sl": "Zelje"
+        "sl": "Zelje",
+        "nl": "Kool"
       },
       "question": {
         "en": "Can cats eat cabbage?",
-        "sl": "Ali lahko mačke jedo zelje?"
+        "sl": "Ali lahko mačke jedo zelje?",
+        "nl": "Mogen katten kool eten?"
       },
       "url_slug": {
         "en": "cabbage",
-        "sl": "zelje"
+        "sl": "zelje",
+        "nl": "kool"
       },
       "answer": {
         "en": "Yes, a small piece of plain cooked cabbage is fine as an occasional treat. The RSPCA lists cooked red or green cabbage among foods suitable for cats in moderation. Cats don't need vegetables, so keep it a tiny extra.",
-        "sl": "Da, majhen košček navadnega kuhanega zelja je v redu kot občasen priboljšek. RSPCA kuhano rdeče ali zeleno zelje navaja med hrano, primerno za mačke v zmernih količinah. Mačke zelenjave ne potrebujejo, zato naj bo le majhen dodatek."
+        "sl": "Da, majhen košček navadnega kuhanega zelja je v redu kot občasen priboljšek. RSPCA kuhano rdeče ali zeleno zelje navaja med hrano, primerno za mačke v zmernih količinah. Mačke zelenjave ne potrebujejo, zato naj bo le majhen dodatek.",
+        "nl": "Ja, een klein stukje naturel gare kool is af en toe prima als traktatie. Volgens de RSPCA kunnen katten met mate gare rode of groene kool eten. Katten hebben geen groente nodig, dus houd het bij een klein extraatje."
       },
       "why": {
         "en": "The RSPCA lists cooked cabbage, red or green, among pet-safe Christmas foods suitable for cats and dogs in moderation. Cats don't need fruit or vegetables in their diet, treats should be few, and the ASPCA notes that any plant material may cause vomiting and stomach upset in cats.",
-        "sl": "RSPCA kuhano zelje, rdeče ali zeleno, navaja med božično hrano, ki je v zmernih količinah primerna za mačke in pse. Mačke sadja in zelenjave v prehrani ne potrebujejo, priboljškov naj bo malo, ASPCA pa opozarja, da lahko vsaka rastlinska hrana pri mačkah povzroči bruhanje in želodčne težave."
+        "sl": "RSPCA kuhano zelje, rdeče ali zeleno, navaja med božično hrano, ki je v zmernih količinah primerna za mačke in pse. Mačke sadja in zelenjave v prehrani ne potrebujejo, priboljškov naj bo malo, ASPCA pa opozarja, da lahko vsaka rastlinska hrana pri mačkah povzroči bruhanje in želodčne težave.",
+        "nl": "De RSPCA noemt gare kool, rood of groen, onder het eten voor de kerstdagen dat veilig is voor huisdieren en met mate geschikt voor katten en honden. Katten hebben geen fruit of groente nodig in hun voeding en traktaties geef je spaarzaam. Volgens de ASPCA kan elk plantaardig materiaal bij katten braken en maagklachten veroorzaken."
       },
       "signs": null,
       "what_to_do": {
         "en": "Start with a small piece. If your cat vomits or gets an upset stomach afterwards, stop and ask your vet.",
-        "sl": "Začnite z majhnim koščkom. Če mačka po tem bruha ali ima prebavne težave, prenehajte in se posvetujte z veterinarjem."
+        "sl": "Začnite z majhnim koščkom. Če mačka po tem bruha ali ima prebavne težave, prenehajte in se posvetujte z veterinarjem.",
+        "nl": "Geef eerst een klein stukje. Als je kat daarna braakt of maagklachten krijgt, stop dan en vraag je dierenarts om advies."
       },
       "serving": {
         "en": "A small piece of cooked red or green cabbage, with no butter, salt or seasoning.",
-        "sl": "Majhen košček kuhanega rdečega ali zelenega zelja, brez masla, soli in začimb."
+        "sl": "Majhen košček kuhanega rdečega ali zelenega zelja, brez masla, soli in začimb.",
+        "nl": "Een klein stukje gare rode of groene kool, zonder boter, zout of kruiden."
       },
       "child": {
         "en": "A little piece of cooked cabbage can be a cat treat now and then. Cats mostly need meat, so veggies are just a tiny extra.",
-        "sl": "Majhen košček kuhanega zelja je lahko občasno priboljšek za muco. Muce potrebujejo predvsem meso, zato je zelenjava le majhen dodatek."
+        "sl": "Majhen košček kuhanega zelja je lahko občasno priboljšek za muco. Muce potrebujejo predvsem meso, zato je zelenjava le majhen dodatek.",
+        "nl": "Een klein stukje gare kool kan af en toe een traktatie voor je kat zijn. Katten hebben vooral vlees nodig, dus groente is maar een klein extraatje."
       },
       "faq": [
         {
           "q": {
             "en": "Do cats need vegetables?",
-            "sl": "Ali mačke potrebujejo zelenjavo?"
+            "sl": "Ali mačke potrebujejo zelenjavo?",
+            "nl": "Hebben katten groente nodig?"
           },
           "a": {
             "en": "No. Cats Protection says cats rarely eat vegetables naturally and there is no need to add them to their diet. A vegetable can only ever be a small extra.",
-            "sl": "Ne. Cats Protection navaja, da mačke v naravi redko jedo zelenjavo in da je ni treba dodajati v njihovo prehrano. Zelenjava je lahko le majhen dodatek."
+            "sl": "Ne. Cats Protection navaja, da mačke v naravi redko jedo zelenjavo in da je ni treba dodajati v njihovo prehrano. Zelenjava je lahko le majhen dodatek.",
+            "nl": "Nee. Cats Protection geeft aan dat katten van nature zelden groente eten en dat je het niet aan hun voeding hoeft toe te voegen. Groente is hooguit een klein extraatje."
           }
         }
       ],
@@ -3635,27 +3657,33 @@
       "level": "not_recommended",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Celery",
-        "sl": "Zelena"
+        "sl": "Zelena",
+        "nl": "Bleekselderij"
       },
       "question": {
         "en": "Can cats eat celery?",
-        "sl": "Ali lahko mačke jedo zeleno?"
+        "sl": "Ali lahko mačke jedo zeleno?",
+        "nl": "Mogen katten bleekselderij eten?"
       },
       "url_slug": {
         "en": "celery",
-        "sl": "zelena"
+        "sl": "zelena",
+        "nl": "bleekselderij"
       },
       "answer": {
         "en": "It's best not to offer celery. International Cat Care warns that contact with the leaves of food plants such as celery may cause blistering or itching of a cat's mouth and gums, and any plant can upset a cat's stomach. Cats don't need vegetables.",
-        "sl": "Zelene je bolje ne ponujati. International Cat Care opozarja, da lahko stik z listi užitnih rastlin, kot je zelena, mački povzroči mehurje ali srbenje v ustih in na dlesnih, vsaka rastlina pa ji lahko razdraži želodec. Mačke zelenjave ne potrebujejo."
+        "sl": "Zelene je bolje ne ponujati. International Cat Care opozarja, da lahko stik z listi užitnih rastlin, kot je zelena, mački povzroči mehurje ali srbenje v ustih in na dlesnih, vsaka rastlina pa ji lahko razdraži želodec. Mačke zelenjave ne potrebujejo.",
+        "nl": "Geef je kat liever geen bleekselderij. International Cat Care waarschuwt dat de bladeren van eetbare planten als bleekselderij blaren of jeuk in de mond en op het tandvlees van een kat kunnen veroorzaken, en elke plant kan de maag van een kat van streek maken. Katten hebben geen groente nodig."
       },
       "why": {
         "en": "International Cat Care names celery among food plants whose leaves can cause blistering or itching of a cat's mouth and gums, sneezing and eye problems, and says all plants, even grass, can irritate a cat's stomach and intestines and cause vomiting. An ASPCA garden article lists celery among snacks for pets in moderation, but we follow the stricter cat-specific advice. Cats don't need fruit or vegetables in their diet.",
-        "sl": "International Cat Care zeleno navaja med užitnimi rastlinami, katerih listi lahko mački povzročijo mehurje ali srbenje v ustih in na dlesnih, kihanje in težave z očmi, ter pravi, da lahko vse rastline, celo trava, razdražijo mačji želodec in črevesje ter povzročijo bruhanje. Članek ASPCA o vrtovih zeleno navaja med zmernimi prigrizki za hišne živali, vendar sledimo strožjemu nasvetu, ki velja posebej za mačke. Mačke sadja in zelenjave v prehrani ne potrebujejo."
+        "sl": "International Cat Care zeleno navaja med užitnimi rastlinami, katerih listi lahko mački povzročijo mehurje ali srbenje v ustih in na dlesnih, kihanje in težave z očmi, ter pravi, da lahko vse rastline, celo trava, razdražijo mačji želodec in črevesje ter povzročijo bruhanje. Članek ASPCA o vrtovih zeleno navaja med zmernimi prigrizki za hišne živali, vendar sledimo strožjemu nasvetu, ki velja posebej za mačke. Mačke sadja in zelenjave v prehrani ne potrebujejo.",
+        "nl": "International Cat Care rekent bleekselderij tot de eetbare planten waarvan de bladeren bij een kat blaren of jeuk in de mond en op het tandvlees, niezen en oogklachten kunnen geven. Volgens dezelfde organisatie kunnen alle planten, zelfs gras, de maag en darmen van een kat irriteren en braken veroorzaken. In een artikel van de ASPCA over tuinieren staat bleekselderij tussen de tussendoortjes die met mate geschikt zijn voor huisdieren, maar wij volgen het strengere advies dat specifiek voor katten geldt. Katten hebben geen fruit of groente nodig in hun voeding."
       },
       "signs": {
         "en": [
@@ -3669,26 +3697,36 @@
           "Srbenje ali mehurji v ustih in na dlesnih",
           "Kihanje",
           "Težave z očmi"
+        ],
+        "nl": [
+          "Braken",
+          "Jeuk of blaren in de mond en op het tandvlees",
+          "Niezen",
+          "Oogklachten"
         ]
       },
       "what_to_do": {
         "en": "If your cat chewed celery and seems unwell, for example vomits or has an itchy mouth, call your vet for advice. Don't try to make your cat sick at home.",
-        "sl": "Če je mačka grizljala zeleno in se ne počuti dobro, na primer bruha ali jo srbijo usta, pokličite veterinarja za nasvet. Mački ne poskušajte sami izzvati bruhanja."
+        "sl": "Če je mačka grizljala zeleno in se ne počuti dobro, na primer bruha ali jo srbijo usta, pokličite veterinarja za nasvet. Mački ne poskušajte sami izzvati bruhanja.",
+        "nl": "Heeft je kat op bleekselderij gekauwd en voelt hij zich niet lekker, bijvoorbeeld omdat hij braakt of jeuk in zijn mond lijkt te hebben, bel dan je dierenarts voor advies. Probeer je kat thuis niet zelf te laten braken."
       },
       "serving": null,
       "child": {
         "en": "Celery is not a cat snack. Its leaves can make a cat's mouth itchy, so celery is better for people.",
-        "sl": "Zelena ni prigrizek za muce. Njeni listi lahko muci povzročijo srbenje v ustih, zato je zelena raje za ljudi."
+        "sl": "Zelena ni prigrizek za muce. Njeni listi lahko muci povzročijo srbenje v ustih, zato je zelena raje za ljudi.",
+        "nl": "Bleekselderij is niets voor katten. De bladeren kunnen jeuk in de mond geven, dus bewaar de bleekselderij maar voor mensen."
       },
       "faq": [
         {
           "q": {
             "en": "Do cats need vegetables?",
-            "sl": "Ali mačke potrebujejo zelenjavo?"
+            "sl": "Ali mačke potrebujejo zelenjavo?",
+            "nl": "Hebben katten groente nodig?"
           },
           "a": {
             "en": "No. Cats Protection says cats rarely eat vegetables naturally and there is no need to add them to their diet. A vegetable can only ever be a small extra.",
-            "sl": "Ne. Cats Protection navaja, da mačke v naravi redko jedo zelenjavo in da je ni treba dodajati v njihovo prehrano. Zelenjava je lahko le majhen dodatek."
+            "sl": "Ne. Cats Protection navaja, da mačke v naravi redko jedo zelenjavo in da je ni treba dodajati v njihovo prehrano. Zelenjava je lahko le majhen dodatek.",
+            "nl": "Nee. Cats Protection geeft aan dat katten van nature zelden groente eten en dat je het niet aan hun voeding hoeft toe te voegen. Groente is hooguit een klein extraatje."
           }
         }
       ],
@@ -14371,27 +14409,33 @@
       "level": "not_recommended",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Raw potatoes",
-        "sl": "Surov krompir"
+        "sl": "Surov krompir",
+        "nl": "Rauwe aardappelen"
       },
       "question": {
         "en": "Can cats eat raw potatoes?",
-        "sl": "Ali lahko mačke jedo surov krompir?"
+        "sl": "Ali lahko mačke jedo surov krompir?",
+        "nl": "Mogen katten rauwe aardappelen eten?"
       },
       "url_slug": {
         "en": "raw-potatoes",
-        "sl": "surov-krompir"
+        "sl": "surov-krompir",
+        "nl": "rauwe-aardappelen"
       },
       "answer": {
         "en": "No, don't give your cat raw potato. The RSPCA lists potato as suitable for cats only when mashed or boiled with no butter or cheese, and the ASPCA says raw potatoes may be problematic for pets. If your cat eats raw potato, contact your vet.",
-        "sl": "Ne, mački ne dajajte surovega krompirja. RSPCA krompir navaja kot primeren za mačke le, če je pretlačen ali kuhan v vodi ter brez masla in sira, ASPCA pa navaja, da je surov krompir za hišne živali lahko problematičen. Če mačka poje surov krompir, se obrnite na veterinarja."
+        "sl": "Ne, mački ne dajajte surovega krompirja. RSPCA krompir navaja kot primeren za mačke le, če je pretlačen ali kuhan v vodi ter brez masla in sira, ASPCA pa navaja, da je surov krompir za hišne živali lahko problematičen. Če mačka poje surov krompir, se obrnite na veterinarja.",
+        "nl": "Nee, geef je kat geen rauwe aardappel. Volgens de RSPCA is aardappel alleen geschikt voor katten als die gepureerd of gekookt is, zonder boter of kaas, en volgens de ASPCA kunnen rauwe aardappelen problematisch zijn voor huisdieren. Heeft je kat rauwe aardappel gegeten, neem dan contact op met je dierenarts."
       },
       "why": {
         "en": "The RSPCA and Cats Protection only suggest potato for cats when it is boiled or plain mashed, and the ASPCA says raw potatoes may be problematic for pets, while cooked potatoes are fine in moderation. A vet-written PetMD article goes further: it calls raw potatoes, green potatoes and the potato plant toxic to cats and says potato skins contain the toxin solanine.",
-        "sl": "RSPCA in Cats Protection krompir za mačke predlagata le kuhan v vodi ali kot navaden pire, ASPCA pa navaja, da je surov krompir za hišne živali lahko problematičen, kuhan pa je v zmernih količinah v redu. Članek veterinarke za PetMD gre še dlje: surov krompir, zelen krompir in krompirjevo rastlino označuje kot strupene za mačke in navaja, da krompirjevi olupki vsebujejo strup solanin."
+        "sl": "RSPCA in Cats Protection krompir za mačke predlagata le kuhan v vodi ali kot navaden pire, ASPCA pa navaja, da je surov krompir za hišne živali lahko problematičen, kuhan pa je v zmernih količinah v redu. Članek veterinarke za PetMD gre še dlje: surov krompir, zelen krompir in krompirjevo rastlino označuje kot strupene za mačke in navaja, da krompirjevi olupki vsebujejo strup solanin.",
+        "nl": "De RSPCA en Cats Protection raden aardappel voor katten alleen aan als die gekookt of naturel gepureerd is. Volgens de ASPCA kunnen rauwe aardappelen problematisch zijn voor huisdieren, terwijl gare aardappelen met mate prima zijn. Een artikel van PetMD, geschreven door een dierenarts, gaat verder: rauwe en groene aardappelen en de aardappelplant zijn daarin giftig voor katten, en aardappelschillen bevatten de gifstof solanine."
       },
       "signs": {
         "en": [
@@ -14403,26 +14447,35 @@
           "Slabost",
           "Bruhanje",
           "Driska"
+        ],
+        "nl": [
+          "Misselijkheid",
+          "Braken",
+          "Diarree"
         ]
       },
       "what_to_do": {
         "en": "If your cat has eaten raw potato or potato skin, contact your vet for advice right away. Note what was eaten and when. Don't try to make your cat sick at home.",
-        "sl": "Če je mačka pojedla surov krompir ali krompirjeve olupke, takoj pokličite veterinarja za nasvet. Zapišite si, kaj je pojedla in kdaj. Mački ne poskušajte sami izzvati bruhanja."
+        "sl": "Če je mačka pojedla surov krompir ali krompirjeve olupke, takoj pokličite veterinarja za nasvet. Zapišite si, kaj je pojedla in kdaj. Mački ne poskušajte sami izzvati bruhanja.",
+        "nl": "Heeft je kat rauwe aardappel of aardappelschil gegeten, neem dan meteen contact op met je dierenarts voor advies. Noteer wat er is gegeten en wanneer. Probeer je kat thuis niet te laten braken."
       },
       "serving": null,
       "child": {
         "en": "Raw potatoes are not for cats. If kitty nibbles one, tell a grown-up so they can call the vet.",
-        "sl": "Surov krompir ni za muce. Če ga muca pogrizlja, povej odraslemu, da lahko pokliče veterinarja."
+        "sl": "Surov krompir ni za muce. Če ga muca pogrizlja, povej odraslemu, da lahko pokliče veterinarja.",
+        "nl": "Rauwe aardappelen zijn niets voor katten. Knabbelt je kat aan een rauwe aardappel, vertel het dan aan een volwassene, zodat die de dierenarts kan bellen."
       },
       "faq": [
         {
           "q": {
             "en": "Can cats eat cooked potato?",
-            "sl": "Ali lahko mačke jedo kuhan krompir?"
+            "sl": "Ali lahko mačke jedo kuhan krompir?",
+            "nl": "Mogen katten gare aardappel eten?"
           },
           "a": {
             "en": "The RSPCA lists potatoes for cats only if they are mashed or boiled with no butter or cheese, and Cats Protection suggests plain mashed potato with no butter, cream or garlic. Leave out the skin.",
-            "sl": "RSPCA krompir za mačke navaja le, če je pretlačen ali kuhan v vodi ter brez masla in sira, Cats Protection pa predlaga navaden krompirjev pire brez masla, smetane in česna. Olupke izpustite."
+            "sl": "RSPCA krompir za mačke navaja le, če je pretlačen ali kuhan v vodi ter brez masla in sira, Cats Protection pa predlaga navaden krompirjev pire brez masla, smetane in česna. Olupke izpustite.",
+            "nl": "Volgens de RSPCA is aardappel voor katten alleen geschikt als die gepureerd of gekookt is, zonder boter of kaas, en Cats Protection stelt naturel aardappelpuree voor, zonder boter, room of knoflook. Laat de schil weg."
           }
         }
       ],
@@ -14452,60 +14505,73 @@
       "level": "small_amounts",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Pumpkin",
-        "sl": "Buča"
+        "sl": "Buča",
+        "nl": "Pompoen"
       },
       "question": {
         "en": "Can cats eat pumpkin?",
-        "sl": "Ali lahko mačke jedo bučo?"
+        "sl": "Ali lahko mačke jedo bučo?",
+        "nl": "Mogen katten pompoen eten?"
       },
       "url_slug": {
         "en": "pumpkin",
-        "sl": "buca"
+        "sl": "buca",
+        "nl": "pompoen"
       },
       "answer": {
         "en": "Yes, a little plain cooked pumpkin is fine as an occasional treat. Pet Poison Helpline calls pumpkin safe for dogs and cats, but VCA notes that pumpkin and its seeds can upset a cat's stomach in large amounts, so skip the seeds and rind.",
-        "sl": "Da, malo navadne kuhane buče je v redu kot občasen priboljšek. Pet Poison Helpline bučo označuje kot varno za pse in mačke, VCA pa opozarja, da lahko buča in njena semena v velikih količinah mački razdražijo želodec, zato semena in lupino izpustite."
+        "sl": "Da, malo navadne kuhane buče je v redu kot občasen priboljšek. Pet Poison Helpline bučo označuje kot varno za pse in mačke, VCA pa opozarja, da lahko buča in njena semena v velikih količinah mački razdražijo želodec, zato semena in lupino izpustite.",
+        "nl": "Ja, een beetje naturel gare pompoen is af en toe prima als traktatie. Volgens Pet Poison Helpline is pompoen veilig voor honden en katten, maar VCA waarschuwt dat pompoen en pompoenpitten in grote hoeveelheden de maag van een kat van streek kunnen maken. Laat de pitten en de schil dus weg."
       },
       "why": {
         "en": "Pet Poison Helpline says pumpkin is safe for dogs and cats, and that cooked or processed pumpkin is much easier to digest than raw. VCA adds that, while non-toxic, pumpkin and pumpkin seeds can upset a cat's stomach, especially in large quantities. Cats don't need fruit or vegetables in their diet, and treats should be few.",
-        "sl": "Pet Poison Helpline navaja, da je buča varna za pse in mačke ter da je kuhana ali predelana buča veliko lažje prebavljiva od surove. VCA dodaja, da lahko buča in bučna semena kljub nestrupenosti mački razdražijo želodec, zlasti v velikih količinah. Mačke sadja in zelenjave v prehrani ne potrebujejo, priboljškov pa naj bo malo."
+        "sl": "Pet Poison Helpline navaja, da je buča varna za pse in mačke ter da je kuhana ali predelana buča veliko lažje prebavljiva od surove. VCA dodaja, da lahko buča in bučna semena kljub nestrupenosti mački razdražijo želodec, zlasti v velikih količinah. Mačke sadja in zelenjave v prehrani ne potrebujejo, priboljškov pa naj bo malo.",
+        "nl": "Pet Poison Helpline zegt dat pompoen veilig is voor honden en katten, en dat gekookte of bewerkte pompoen veel makkelijker te verteren is dan rauwe. VCA voegt daaraan toe dat pompoen en pompoenpitten weliswaar niet giftig zijn, maar de maag van een kat van streek kunnen maken, vooral in grote hoeveelheden. Katten hebben geen fruit of groente nodig in hun voeding en traktaties geef je spaarzaam."
       },
       "signs": null,
       "what_to_do": {
         "en": "Start with a small piece. If your cat vomits or gets an upset stomach afterwards, stop and ask your vet.",
-        "sl": "Začnite z majhnim koščkom. Če mačka po tem bruha ali ima prebavne težave, prenehajte in se posvetujte z veterinarjem."
+        "sl": "Začnite z majhnim koščkom. Če mačka po tem bruha ali ima prebavne težave, prenehajte in se posvetujte z veterinarjem.",
+        "nl": "Geef eerst een klein stukje. Als je kat daarna braakt of maagklachten krijgt, stop dan en vraag je dierenarts om advies."
       },
       "serving": {
         "en": "A small piece of plain cooked pumpkin, or plain canned pumpkin puree with pumpkin as the only ingredient. No seeds, no rind, no salt or seasoning.",
-        "sl": "Majhen košček navadne kuhane buče ali navaden bučni pire iz pločevinke, v katerem je buča edina sestavina. Brez semen, lupine, soli in začimb."
+        "sl": "Majhen košček navadne kuhane buče ali navaden bučni pire iz pločevinke, v katerem je buča edina sestavina. Brez semen, lupine, soli in začimb.",
+        "nl": "Een klein stukje naturel gare pompoen, of naturel pompoenpuree uit blik waarin pompoen het enige ingrediënt is. Geen pitten, geen schil, geen zout of kruiden."
       },
       "child": {
         "en": "A little bit of cooked pumpkin can be a cat treat now and then. No seeds or skin, and cats mostly need meat.",
-        "sl": "Malo kuhane buče je lahko občasno priboljšek za muco. Brez semen in lupine. Muce pa potrebujejo predvsem meso."
+        "sl": "Malo kuhane buče je lahko občasno priboljšek za muco. Brez semen in lupine. Muce pa potrebujejo predvsem meso.",
+        "nl": "Een klein beetje gare pompoen kan af en toe een traktatie voor je kat zijn. Geef geen pitten of schil, en denk eraan: katten hebben vooral vlees nodig."
       },
       "faq": [
         {
           "q": {
             "en": "What about Halloween pumpkins?",
-            "sl": "Kaj pa buče za noč čarovnic?"
+            "sl": "Kaj pa buče za noč čarovnic?",
+            "nl": "Hoe zit het met pompoenen voor Halloween?"
           },
           "a": {
             "en": "Fresh pumpkins are not harmful, but Blue Cross says rotten ones can upset a cat's tummy, so keep carved pumpkins out of reach or remove them once they are no longer fresh.",
-            "sl": "Sveže buče niso škodljive, Blue Cross pa opozarja, da lahko gnile buče mački razdražijo trebušček, zato izrezljane buče hranite izven njenega dosega ali jih odstranite, ko niso več sveže."
+            "sl": "Sveže buče niso škodljive, Blue Cross pa opozarja, da lahko gnile buče mački razdražijo trebušček, zato izrezljane buče hranite izven njenega dosega ali jih odstranite, ko niso več sveže.",
+            "nl": "Verse pompoenen zijn niet schadelijk, maar volgens Blue Cross kunnen verrotte pompoenen de maag van een kat van streek maken. Houd uitgesneden pompoenen daarom buiten het bereik van je kat en ruim ze op zodra ze niet meer vers zijn."
           }
         },
         {
           "q": {
             "en": "Do cats need vegetables?",
-            "sl": "Ali mačke potrebujejo zelenjavo?"
+            "sl": "Ali mačke potrebujejo zelenjavo?",
+            "nl": "Hebben katten groente nodig?"
           },
           "a": {
             "en": "No. Cats Protection says cats rarely eat vegetables naturally and there is no need to add them to their diet. A vegetable can only ever be a small extra.",
-            "sl": "Ne. Cats Protection navaja, da mačke v naravi redko jedo zelenjavo in da je ni treba dodajati v njihovo prehrano. Zelenjava je lahko le majhen dodatek."
+            "sl": "Ne. Cats Protection navaja, da mačke v naravi redko jedo zelenjavo in da je ni treba dodajati v njihovo prehrano. Zelenjava je lahko le majhen dodatek.",
+            "nl": "Nee. Cats Protection geeft aan dat katten van nature zelden groente eten en dat je het niet aan hun voeding hoeft toe te voegen. Groente is hooguit een klein extraatje."
           }
         }
       ],
@@ -17316,50 +17382,61 @@
       "level": "small_amounts",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Spinach",
-        "sl": "Špinača"
+        "sl": "Špinača",
+        "nl": "Spinazie"
       },
       "question": {
         "en": "Can cats eat spinach?",
-        "sl": "Ali lahko mačke jedo špinačo?"
+        "sl": "Ali lahko mačke jedo špinačo?",
+        "nl": "Mogen katten spinazie eten?"
       },
       "url_slug": {
         "en": "spinach",
-        "sl": "spinaca"
+        "sl": "spinaca",
+        "nl": "spinazie"
       },
       "answer": {
         "en": "Yes, a small bit of plain spinach is fine as an occasional treat. Cats Protection lists spinach among the few vegetables you can feed your cat, if they're keen. Cats don't need vegetables, so keep it a tiny extra.",
-        "sl": "Da, malo navadne špinače je v redu kot občasen priboljšek. Cats Protection špinačo navaja med redke vrste zelenjave, ki jih lahko daste mački, če ji je všeč. Mačke zelenjave ne potrebujejo, zato naj bo le majhen dodatek."
+        "sl": "Da, malo navadne špinače je v redu kot občasen priboljšek. Cats Protection špinačo navaja med redke vrste zelenjave, ki jih lahko daste mački, če ji je všeč. Mačke zelenjave ne potrebujejo, zato naj bo le majhen dodatek.",
+        "nl": "Ja, een klein beetje naturel spinazie is af en toe prima als traktatie. Volgens Cats Protection is spinazie een van de weinige groenten die je je kat kunt geven, als hij het lekker vindt. Katten hebben geen groente nodig, dus houd het bij een klein extraatje."
       },
       "why": {
         "en": "Cats Protection names spinach among the few vegetables you can feed a cat, if they're keen, and suggests steamed or boiled vegetables with no butter, salt or seasoning. Cats don't need fruit or vegetables in their diet, treats should be few, and the ASPCA notes that any plant material may cause vomiting and stomach upset in cats.",
-        "sl": "Cats Protection špinačo uvršča med redke vrste zelenjave, ki jih lahko daste mački, če ji je všeč, in predlaga zelenjavo, kuhano na pari ali v vodi, brez masla, soli in začimb. Mačke sadja in zelenjave v prehrani ne potrebujejo, priboljškov naj bo malo, ASPCA pa opozarja, da lahko vsaka rastlinska hrana pri mačkah povzroči bruhanje in želodčne težave."
+        "sl": "Cats Protection špinačo uvršča med redke vrste zelenjave, ki jih lahko daste mački, če ji je všeč, in predlaga zelenjavo, kuhano na pari ali v vodi, brez masla, soli in začimb. Mačke sadja in zelenjave v prehrani ne potrebujejo, priboljškov naj bo malo, ASPCA pa opozarja, da lahko vsaka rastlinska hrana pri mačkah povzroči bruhanje in želodčne težave.",
+        "nl": "Volgens Cats Protection is spinazie een van de weinige groenten die je een kat kunt geven, als die het lekker vindt. De organisatie stelt gestoomde of gekookte groente voor, zonder boter, zout of kruiden. Katten hebben geen fruit of groente nodig in hun voeding en traktaties geef je spaarzaam. Volgens de ASPCA kan elk plantaardig materiaal bij katten braken en maagklachten veroorzaken."
       },
       "signs": null,
       "what_to_do": {
         "en": "Start with a small piece. If your cat vomits or gets an upset stomach afterwards, stop and ask your vet.",
-        "sl": "Začnite z majhnim koščkom. Če mačka po tem bruha ali ima prebavne težave, prenehajte in se posvetujte z veterinarjem."
+        "sl": "Začnite z majhnim koščkom. Če mačka po tem bruha ali ima prebavne težave, prenehajte in se posvetujte z veterinarjem.",
+        "nl": "Geef eerst een klein stukje. Als je kat daarna braakt of maagklachten krijgt, stop dan en vraag je dierenarts om advies."
       },
       "serving": {
         "en": "A small bit, steamed or boiled, with no butter, salt or seasoning.",
-        "sl": "Malo špinače, kuhane na pari ali v vodi, brez masla, soli in začimb."
+        "sl": "Malo špinače, kuhane na pari ali v vodi, brez masla, soli in začimb.",
+        "nl": "Een klein beetje, gestoomd of gekookt, zonder boter, zout of kruiden."
       },
       "child": {
         "en": "A tiny bit of spinach can be a cat treat now and then. Cats mostly need meat, so veggies are just a tiny extra.",
-        "sl": "Malo špinače je lahko občasno priboljšek za muco. Muce potrebujejo predvsem meso, zato je zelenjava le majhen dodatek."
+        "sl": "Malo špinače je lahko občasno priboljšek za muco. Muce potrebujejo predvsem meso, zato je zelenjava le majhen dodatek.",
+        "nl": "Een heel klein beetje spinazie kan af en toe een traktatie voor je kat zijn. Katten hebben vooral vlees nodig, dus groente is maar een klein extraatje."
       },
       "faq": [
         {
           "q": {
             "en": "Do cats need vegetables?",
-            "sl": "Ali mačke potrebujejo zelenjavo?"
+            "sl": "Ali mačke potrebujejo zelenjavo?",
+            "nl": "Hebben katten groente nodig?"
           },
           "a": {
             "en": "No. Cats Protection says cats rarely eat vegetables naturally and there is no need to add them to their diet. A vegetable can only ever be a small extra.",
-            "sl": "Ne. Cats Protection navaja, da mačke v naravi redko jedo zelenjavo in da je ni treba dodajati v njihovo prehrano. Zelenjava je lahko le majhen dodatek."
+            "sl": "Ne. Cats Protection navaja, da mačke v naravi redko jedo zelenjavo in da je ni treba dodajati v njihovo prehrano. Zelenjava je lahko le majhen dodatek.",
+            "nl": "Nee. Cats Protection geeft aan dat katten van nature zelden groente eten en dat je het niet aan hun voeding hoeft toe te voegen. Groente is hooguit een klein extraatje."
           }
         }
       ],
@@ -17604,60 +17681,73 @@
       "level": "small_amounts",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Sweet potato",
-        "sl": "Sladki krompir"
+        "sl": "Sladki krompir",
+        "nl": "Zoete aardappel"
       },
       "question": {
         "en": "Can cats eat sweet potato?",
-        "sl": "Ali lahko mačke jedo sladki krompir?"
+        "sl": "Ali lahko mačke jedo sladki krompir?",
+        "nl": "Mogen katten zoete aardappel eten?"
       },
       "url_slug": {
         "en": "sweet-potato",
-        "sl": "sladki-krompir"
+        "sl": "sladki-krompir",
+        "nl": "zoete-aardappel"
       },
       "answer": {
         "en": "Sweet potato is not toxic to cats: the ASPCA lists the sweet potato plant as non-toxic to them. Cats don't need vegetables, though, and any plant material can cause vomiting or stomach upset, so keep it a tiny, occasional extra.",
-        "sl": "Sladki krompir za mačke ni strupen: ASPCA rastlino sladkega krompirja navaja kot nestrupeno za mačke. Vendar mačke zelenjave ne potrebujejo, vsaka rastlinska hrana pa lahko povzroči bruhanje ali želodčne težave, zato naj bo le majhen, občasen dodatek."
+        "sl": "Sladki krompir za mačke ni strupen: ASPCA rastlino sladkega krompirja navaja kot nestrupeno za mačke. Vendar mačke zelenjave ne potrebujejo, vsaka rastlinska hrana pa lahko povzroči bruhanje ali želodčne težave, zato naj bo le majhen, občasen dodatek.",
+        "nl": "Zoete aardappel is niet giftig voor katten: volgens de ASPCA is de zoete-aardappelplant niet giftig voor katten. Katten hebben echter geen groente nodig en van elk plantaardig materiaal kunnen ze gaan braken of maagklachten krijgen, dus houd het bij een klein extraatje, en alleen af en toe."
       },
       "why": {
         "en": "The ASPCA lists the sweet potato plant (Ipomoea batatas) as non-toxic to cats. Cats don't need fruit or vegetables in their diet, treats should be few, and the ASPCA notes that any plant material may cause vomiting and stomach upset in cats.",
-        "sl": "ASPCA rastlino sladkega krompirja (Ipomoea batatas) navaja kot nestrupeno za mačke. Mačke sadja in zelenjave v prehrani ne potrebujejo, priboljškov naj bo malo, ASPCA pa opozarja, da lahko vsaka rastlinska hrana pri mačkah povzroči bruhanje in želodčne težave."
+        "sl": "ASPCA rastlino sladkega krompirja (Ipomoea batatas) navaja kot nestrupeno za mačke. Mačke sadja in zelenjave v prehrani ne potrebujejo, priboljškov naj bo malo, ASPCA pa opozarja, da lahko vsaka rastlinska hrana pri mačkah povzroči bruhanje in želodčne težave.",
+        "nl": "De ASPCA noemt de zoete-aardappelplant (Ipomoea batatas) niet giftig voor katten. Katten hebben geen fruit of groente nodig in hun voeding en traktaties geef je spaarzaam. Volgens de ASPCA kan elk plantaardig materiaal bij katten braken en maagklachten veroorzaken."
       },
       "signs": null,
       "what_to_do": {
         "en": "Start with a small piece. If your cat vomits or gets an upset stomach afterwards, stop and ask your vet.",
-        "sl": "Začnite z majhnim koščkom. Če mačka po tem bruha ali ima prebavne težave, prenehajte in se posvetujte z veterinarjem."
+        "sl": "Začnite z majhnim koščkom. Če mačka po tem bruha ali ima prebavne težave, prenehajte in se posvetujte z veterinarjem.",
+        "nl": "Geef eerst een klein stukje. Als je kat daarna braakt of maagklachten krijgt, stop dan en vraag je dierenarts om advies."
       },
       "serving": {
         "en": "A small plain piece now and then, with no butter, salt or seasoning.",
-        "sl": "Občasno majhen navaden košček, brez masla, soli in začimb."
+        "sl": "Občasno majhen navaden košček, brez masla, soli in začimb.",
+        "nl": "Af en toe een klein naturel stukje, zonder boter, zout of kruiden."
       },
       "child": {
         "en": "Sweet potato is not poisonous for cats. Cats mostly need meat, so veggies are just a tiny extra.",
-        "sl": "Sladki krompir za muce ni strupen. Muce potrebujejo predvsem meso, zato je zelenjava le majhen dodatek."
+        "sl": "Sladki krompir za muce ni strupen. Muce potrebujejo predvsem meso, zato je zelenjava le majhen dodatek.",
+        "nl": "Zoete aardappel is niet giftig voor katten. Katten hebben vooral vlees nodig, dus groente is maar een klein extraatje."
       },
       "faq": [
         {
           "q": {
             "en": "Is sweet potato the same as a normal potato?",
-            "sl": "Ali je sladki krompir enak navadnemu krompirju?"
+            "sl": "Ali je sladki krompir enak navadnemu krompirju?",
+            "nl": "Is zoete aardappel hetzelfde als gewone aardappel?"
           },
           "a": {
             "en": "No. The ASPCA lists the sweet potato as a different plant (Ipomoea batatas, family Convolvulaceae). Raw normal potatoes are a different matter: the ASPCA says they may be problematic for pets.",
-            "sl": "Ne. ASPCA sladki krompir navaja kot drugo rastlino (Ipomoea batatas, družina slakovk). Surov navaden krompir je nekaj drugega: ASPCA navaja, da je za hišne živali lahko problematičen."
+            "sl": "Ne. ASPCA sladki krompir navaja kot drugo rastlino (Ipomoea batatas, družina slakovk). Surov navaden krompir je nekaj drugega: ASPCA navaja, da je za hišne živali lahko problematičen.",
+            "nl": "Nee. Volgens de ASPCA is de zoete aardappel een andere plant (Ipomoea batatas, familie Convolvulaceae). Met rauwe gewone aardappelen ligt dat anders: die kunnen volgens de ASPCA problematisch zijn voor huisdieren."
           }
         },
         {
           "q": {
             "en": "Do cats need vegetables?",
-            "sl": "Ali mačke potrebujejo zelenjavo?"
+            "sl": "Ali mačke potrebujejo zelenjavo?",
+            "nl": "Hebben katten groente nodig?"
           },
           "a": {
             "en": "No. Cats Protection says cats rarely eat vegetables naturally and there is no need to add them to their diet. A vegetable can only ever be a small extra.",
-            "sl": "Ne. Cats Protection navaja, da mačke v naravi redko jedo zelenjavo in da je ni treba dodajati v njihovo prehrano. Zelenjava je lahko le majhen dodatek."
+            "sl": "Ne. Cats Protection navaja, da mačke v naravi redko jedo zelenjavo in da je ni treba dodajati v njihovo prehrano. Zelenjava je lahko le majhen dodatek.",
+            "nl": "Nee. Cats Protection geeft aan dat katten van nature zelden groente eten en dat je het niet aan hun voeding hoeft toe te voegen. Groente is hooguit een klein extraatje."
           }
         }
       ],
@@ -19252,50 +19342,61 @@
       "level": "small_amounts",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Zucchini",
-        "sl": "Bučke"
+        "sl": "Bučke",
+        "nl": "Courgette"
       },
       "question": {
         "en": "Can cats eat zucchini?",
-        "sl": "Ali lahko mačke jedo bučke?"
+        "sl": "Ali lahko mačke jedo bučke?",
+        "nl": "Mogen katten courgette eten?"
       },
       "url_slug": {
         "en": "zucchini",
-        "sl": "bucke"
+        "sl": "bucke",
+        "nl": "courgette"
       },
       "answer": {
         "en": "Yes, a small plain piece of zucchini is fine as an occasional treat. The ASPCA lists zucchini squash as non-toxic to cats. Keep the plant's leaves away, though: International Cat Care says contact with them can irritate a cat's mouth.",
-        "sl": "Da, majhen navaden košček bučke je v redu kot občasen priboljšek. ASPCA bučke navaja kot nestrupene za mačke. Listov rastline pa mački ne dajajte: International Cat Care opozarja, da lahko stik z njimi razdraži mačja usta."
+        "sl": "Da, majhen navaden košček bučke je v redu kot občasen priboljšek. ASPCA bučke navaja kot nestrupene za mačke. Listov rastline pa mački ne dajajte: International Cat Care opozarja, da lahko stik z njimi razdraži mačja usta.",
+        "nl": "Ja, een klein naturel stukje courgette is af en toe prima als traktatie. De ASPCA noemt courgette niet giftig voor katten. Houd de bladeren van de plant wel uit de buurt van je kat: volgens International Cat Care kan aanraking ervan de mond van een kat irriteren."
       },
       "why": {
         "en": "The ASPCA lists zucchini squash as non-toxic to cats. International Cat Care warns that contact with the leaves of food plants, including zucchini, can cause blistering or itching of a cat's mouth and gums, sneezing and eye problems. Cats don't need fruit or vegetables in their diet, treats should be few, and the ASPCA notes that any plant material may cause vomiting and stomach upset in cats.",
-        "sl": "ASPCA bučke navaja kot nestrupene za mačke. International Cat Care opozarja, da lahko stik z listi užitnih rastlin, tudi bučk, mački povzroči mehurje ali srbenje v ustih in na dlesnih, kihanje in težave z očmi. Mačke sadja in zelenjave v prehrani ne potrebujejo, priboljškov naj bo malo, ASPCA pa opozarja, da lahko vsaka rastlinska hrana pri mačkah povzroči bruhanje in želodčne težave."
+        "sl": "ASPCA bučke navaja kot nestrupene za mačke. International Cat Care opozarja, da lahko stik z listi užitnih rastlin, tudi bučk, mački povzroči mehurje ali srbenje v ustih in na dlesnih, kihanje in težave z očmi. Mačke sadja in zelenjave v prehrani ne potrebujejo, priboljškov naj bo malo, ASPCA pa opozarja, da lahko vsaka rastlinska hrana pri mačkah povzroči bruhanje in želodčne težave.",
+        "nl": "De ASPCA noemt courgette niet giftig voor katten. International Cat Care waarschuwt dat de bladeren van eetbare planten, courgette inbegrepen, bij een kat blaren of jeuk in de mond en op het tandvlees, niezen en oogklachten kunnen veroorzaken. Katten hebben geen fruit of groente nodig in hun voeding en traktaties geef je spaarzaam. Volgens de ASPCA kan elk plantaardig materiaal bij katten braken en maagklachten veroorzaken."
       },
       "signs": null,
       "what_to_do": {
         "en": "Start with a small piece. If your cat vomits or gets an upset stomach afterwards, stop and ask your vet.",
-        "sl": "Začnite z majhnim koščkom. Če mačka po tem bruha ali ima prebavne težave, prenehajte in se posvetujte z veterinarjem."
+        "sl": "Začnite z majhnim koščkom. Če mačka po tem bruha ali ima prebavne težave, prenehajte in se posvetujte z veterinarjem.",
+        "nl": "Geef eerst een klein stukje. Als je kat daarna braakt of maagklachten krijgt, stop dan en vraag je dierenarts om advies."
       },
       "serving": {
         "en": "A small plain piece of the zucchini itself, with no butter, salt or seasoning. Keep the plant's leaves away from your cat.",
-        "sl": "Majhen navaden košček same bučke, brez masla, soli in začimb. Listov rastline mački ne dajajte."
+        "sl": "Majhen navaden košček same bučke, brez masla, soli in začimb. Listov rastline mački ne dajajte.",
+        "nl": "Een klein naturel stukje van de courgette zelf, zonder boter, zout of kruiden. Houd de bladeren van de plant uit de buurt van je kat."
       },
       "child": {
         "en": "A little piece of zucchini can be a cat treat now and then. Cats mostly need meat, so veggies are just a tiny extra.",
-        "sl": "Majhen košček bučke je lahko občasno priboljšek za muco. Muce potrebujejo predvsem meso, zato je zelenjava le majhen dodatek."
+        "sl": "Majhen košček bučke je lahko občasno priboljšek za muco. Muce potrebujejo predvsem meso, zato je zelenjava le majhen dodatek.",
+        "nl": "Een klein stukje courgette kan af en toe een traktatie voor je kat zijn. Katten hebben vooral vlees nodig, dus groente is maar een klein extraatje."
       },
       "faq": [
         {
           "q": {
             "en": "Do cats need vegetables?",
-            "sl": "Ali mačke potrebujejo zelenjavo?"
+            "sl": "Ali mačke potrebujejo zelenjavo?",
+            "nl": "Hebben katten groente nodig?"
           },
           "a": {
             "en": "No. Cats Protection says cats rarely eat vegetables naturally and there is no need to add them to their diet. A vegetable can only ever be a small extra.",
-            "sl": "Ne. Cats Protection navaja, da mačke v naravi redko jedo zelenjavo in da je ni treba dodajati v njihovo prehrano. Zelenjava je lahko le majhen dodatek."
+            "sl": "Ne. Cats Protection navaja, da mačke v naravi redko jedo zelenjavo in da je ni treba dodajati v njihovo prehrano. Zelenjava je lahko le majhen dodatek.",
+            "nl": "Nee. Cats Protection geeft aan dat katten van nature zelden groente eten en dat je het niet aan hun voeding hoeft toe te voegen. Groente is hooguit een klein extraatje."
           }
         }
       ],
@@ -22616,50 +22717,61 @@
       "level": "small_amounts",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Brussels sprouts",
-        "sl": "Brstični ohrovt"
+        "sl": "Brstični ohrovt",
+        "nl": "Spruitjes"
       },
       "question": {
         "en": "Can dogs eat Brussels sprouts?",
-        "sl": "Ali lahko psi jedo brstični ohrovt?"
+        "sl": "Ali lahko psi jedo brstični ohrovt?",
+        "nl": "Mogen honden spruitjes eten?"
       },
       "url_slug": {
         "en": "brussels-sprouts",
-        "sl": "brsticni-ohrovt"
+        "sl": "brsticni-ohrovt",
+        "nl": "spruitjes"
       },
       "answer": {
         "en": "Yes, with a few precautions. Plain cooked Brussels sprouts are fine for dogs in small amounts, but too many can cause lots of gas, stomach upset and diarrhoea. Don't serve them raw: they are too hard for dogs to digest.",
-        "sl": "Da, z nekaj previdnosti. Navaden kuhan brstični ohrovt je za pse v majhnih količinah v redu, preveč pa lahko povzroči močne vetrove, želodčne težave in drisko. Ne ponudite ga surovega: psi ga težko prebavijo."
+        "sl": "Da, z nekaj previdnosti. Navaden kuhan brstični ohrovt je za pse v majhnih količinah v redu, preveč pa lahko povzroči močne vetrove, želodčne težave in drisko. Ne ponudite ga surovega: psi ga težko prebavijo.",
+        "nl": "Ja, als je een paar dingen in acht neemt. Naturel gaar gemaakte spruitjes zijn in kleine hoeveelheden prima voor honden, maar van te veel kan een hond veel gasvorming, maagklachten en diarree krijgen. Geef ze niet rauw: dan zijn ze te hard om goed te verteren."
       },
       "why": {
         "en": "Brussels sprouts are full of nutrients and antioxidants and contain no toxins or poisons. They do contain a high level of a substance called isothiocyanate, and too many can lead to lots of gas, stomach upset and diarrhoea, so don't overfeed them.",
-        "sl": "Brstični ohrovt je poln hranil in antioksidantov ter ne vsebuje strupov. Vsebuje pa veliko snovi, imenovane izotiocianat, in preveč ga lahko povzroči močne vetrove, želodčne težave in drisko, zato ga psu ne dajajte preveč."
+        "sl": "Brstični ohrovt je poln hranil in antioksidantov ter ne vsebuje strupov. Vsebuje pa veliko snovi, imenovane izotiocianat, in preveč ga lahko povzroči močne vetrove, želodčne težave in drisko, zato ga psu ne dajajte preveč.",
+        "nl": "Spruitjes zitten vol voedingsstoffen en antioxidanten en bevatten geen gifstoffen. Ze bevatten wel veel isothiocyanaten, en van te veel spruitjes kan een hond veel gasvorming, maagklachten en diarree krijgen. Geef dus niet te veel."
       },
       "signs": null,
       "what_to_do": {
         "en": "Give only a little and don't overfeed. If your dog has dietary issues or allergies, talk to your vet first before offering Brussels sprouts.",
-        "sl": "Ponudite le malo in ne pretiravajte. Če ima pes težave s prehrano ali alergije, se pred tem posvetujte z veterinarjem."
+        "sl": "Ponudite le malo in ne pretiravajte. Če ima pes težave s prehrano ali alergije, se pred tem posvetujte z veterinarjem.",
+        "nl": "Geef maar een klein beetje en niet te veel. Heeft je hond problemen met bepaalde voeding of allergieën, overleg dan eerst met je dierenarts voordat je spruitjes geeft."
       },
       "serving": {
         "en": "Washed, with most of the stem cut off and the leaves left on, and cooked (steaming keeps the most nutrients). Plain, without herbs or spices, in small amounts.",
-        "sl": "Opran, z odrezanim večjim delom peclja in ohranjenimi listi, kuhan (kuhanje na pari ohrani največ hranil). Navaden, brez zelišč in začimb, v majhnih količinah."
+        "sl": "Opran, z odrezanim večjim delom peclja in ohranjenimi listi, kuhan (kuhanje na pari ohrani največ hranil). Navaden, brez zelišč in začimb, v majhnih količinah.",
+        "nl": "Gewassen, met het grootste deel van de stronk eraf gesneden (de blaadjes blijven eraan) en gaar gemaakt; stomen behoudt de meeste voedingsstoffen. Naturel, zonder kruiden en in kleine hoeveelheden."
       },
       "child": {
         "en": "Dogs can have a little cooked Brussels sprout as a treat. Too many give them a very windy tummy!",
-        "sl": "Psi lahko za priboljšek dobijo malo kuhanega brstičnega ohrovta. Če ga pojedo preveč, imajo poln trebušček vetrov!"
+        "sl": "Psi lahko za priboljšek dobijo malo kuhanega brstičnega ohrovta. Če ga pojedo preveč, imajo poln trebušček vetrov!",
+        "nl": "Honden mogen af en toe een beetje gaar spruitje als traktatie. Van te veel krijgen ze een heel winderige buik!"
       },
       "faq": [
         {
           "q": {
             "en": "Can dogs eat raw Brussels sprouts?",
-            "sl": "Ali lahko psi jedo surov brstični ohrovt?"
+            "sl": "Ali lahko psi jedo surov brstični ohrovt?",
+            "nl": "Mogen honden rauwe spruitjes eten?"
           },
           "a": {
             "en": "It's better not to: raw sprouts are too hard for dogs to digest. Cook them first; steaming keeps the most nutrients.",
-            "sl": "Raje ne: surov ohrovt psi težko prebavijo. Najprej ga skuhajte; kuhanje na pari ohrani največ hranil."
+            "sl": "Raje ne: surov ohrovt psi težko prebavijo. Najprej ga skuhajte; kuhanje na pari ohrani največ hranil.",
+            "nl": "Liever niet: rauwe spruitjes zijn te hard voor honden om goed te verteren. Maak ze eerst gaar; stomen behoudt de meeste voedingsstoffen."
           }
         }
       ],
@@ -22979,50 +23091,61 @@
       "level": "small_amounts",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Cabbage",
-        "sl": "Zelje"
+        "sl": "Zelje",
+        "nl": "Kool"
       },
       "question": {
         "en": "Can dogs eat cabbage?",
-        "sl": "Ali lahko psi jedo zelje?"
+        "sl": "Ali lahko psi jedo zelje?",
+        "nl": "Mogen honden kool eten?"
       },
       "url_slug": {
         "en": "cabbage",
-        "sl": "zelje"
+        "sl": "zelje",
+        "nl": "kool"
       },
       "answer": {
         "en": "Yes, in small amounts. All kinds of cabbage are fine for dogs, but cabbage makes a lot of gas, so introduce it slowly. Boiled or steamed cabbage is less likely to upset the stomach than raw cabbage.",
-        "sl": "Da, v majhnih količinah. Vse vrste zelja so za pse v redu, vendar zelje povzroča veliko vetrov, zato ga uvajajte postopoma. Kuhano ali na pari pripravljeno zelje manj verjetno razdraži prebavo kot surovo."
+        "sl": "Da, v majhnih količinah. Vse vrste zelja so za pse v redu, vendar zelje povzroča veliko vetrov, zato ga uvajajte postopoma. Kuhano ali na pari pripravljeno zelje manj verjetno razdraži prebavo kot surovo.",
+        "nl": "Ja, in kleine hoeveelheden. Alle soorten kool zijn prima voor honden, maar kool geeft veel gasvorming, dus laat je hond er rustig aan wennen. Van gekookte of gestoomde kool krijgt een hond minder snel maagklachten dan van rauwe kool."
       },
       "why": {
         "en": "Cabbage is healthy for dogs, but it produces a large amount of gas, and many dogs may not handle that well. Seasonings are the bigger problem: butter and other fatty foods can lead to pancreatitis, and onions and garlic are toxic to dogs.",
-        "sl": "Zelje je za pse zdravo, vendar povzroča veliko vetrov, česar mnogi psi ne prenašajo dobro. Večja težava so dodatki: maslo in druga mastna hrana lahko povzročita vnetje trebušne slinavke, čebula in česen pa sta za pse strupena."
+        "sl": "Zelje je za pse zdravo, vendar povzroča veliko vetrov, česar mnogi psi ne prenašajo dobro. Večja težava so dodatki: maslo in druga mastna hrana lahko povzročita vnetje trebušne slinavke, čebula in česen pa sta za pse strupena.",
+        "nl": "Kool is gezond voor honden, maar geeft veel gasvorming, en daar hebben veel honden last van. Kruiden en andere toevoegingen zijn een groter probleem: boter en andere vette producten kunnen een alvleesklierontsteking veroorzaken, en ui en knoflook zijn giftig voor honden."
       },
       "signs": null,
       "what_to_do": {
         "en": "Watch your dog closely after the first taste of cabbage. If your dog tends to have a lot of gas or is prone to bloat, ask your vet before giving cabbage.",
-        "sl": "Po prvem okušanju zelja psa pozorno opazujte. Če ima pes pogosto veliko vetrov ali je nagnjen k napihnjenosti, se pred tem posvetujte z veterinarjem."
+        "sl": "Po prvem okušanju zelja psa pozorno opazujte. Če ima pes pogosto veliko vetrov ali je nagnjen k napihnjenosti, se pred tem posvetujte z veterinarjem.",
+        "nl": "Let goed op je hond na de eerste hap kool. Heeft je hond vaak last van gasvorming of loopt hij een verhoogd risico op maagtorsie, vraag het dan eerst aan je dierenarts voordat je kool geeft."
       },
       "serving": {
         "en": "Washed, with the stem and core removed, boiled or steamed, and diced into small pieces. Unseasoned: no butter, onion or garlic. Small amounts only.",
-        "sl": "Oprano, brez stebla in kocena, kuhano ali pripravljeno na pari in narezano na majhne koščke. Brez dodatkov: brez masla, čebule in česna. Le v majhnih količinah."
+        "sl": "Oprano, brez stebla in kocena, kuhano ali pripravljeno na pari in narezano na majhne koščke. Brez dodatkov: brez masla, čebule in česna. Le v majhnih količinah.",
+        "nl": "Gewassen, zonder stronk en kern, gekookt of gestoomd en in kleine stukjes gesneden. Ongekruid, dus geen boter, ui of knoflook. Alleen in kleine hoeveelheden."
       },
       "child": {
         "en": "Dogs can try a little plain cooked cabbage. It can make them windy, so just a small piece!",
-        "sl": "Psi lahko poskusijo malo navadnega kuhanega zelja. Lahko jim povzroči vetrove, zato le majhen košček!"
+        "sl": "Psi lahko poskusijo malo navadnega kuhanega zelja. Lahko jim povzroči vetrove, zato le majhen košček!",
+        "nl": "Honden mogen een beetje naturel gare kool proberen. Het kan winderigheid geven, dus geef maar een klein stukje!"
       },
       "faq": [
         {
           "q": {
             "en": "Can dogs eat raw cabbage?",
-            "sl": "Ali lahko psi jedo surovo zelje?"
+            "sl": "Ali lahko psi jedo surovo zelje?",
+            "nl": "Mogen honden rauwe kool eten?"
           },
           "a": {
             "en": "They can, but boiled or steamed cabbage is less likely to upset a dog's digestion. Dice it into small pieces either way.",
-            "sl": "Lahko, vendar kuhano ali na pari pripravljeno zelje manj verjetno razdraži pasjo prebavo. V vsakem primeru ga narežite na majhne koščke."
+            "sl": "Lahko, vendar kuhano ali na pari pripravljeno zelje manj verjetno razdraži pasjo prebavo. V vsakem primeru ga narežite na majhne koščke.",
+            "nl": "Dat kan, maar van gekookte of gestoomde kool krijgt een hond minder snel last van zijn spijsvertering. Snijd de kool hoe dan ook in kleine stukjes."
           }
         }
       ],
@@ -23932,50 +24055,61 @@
       "level": "small_amounts",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Celery",
-        "sl": "Zelena"
+        "sl": "Zelena",
+        "nl": "Bleekselderij"
       },
       "question": {
         "en": "Can dogs eat celery?",
-        "sl": "Ali lahko psi jedo zeleno?"
+        "sl": "Ali lahko psi jedo zeleno?",
+        "nl": "Mogen honden bleekselderij eten?"
       },
       "url_slug": {
         "en": "celery",
-        "sl": "zelena"
+        "sl": "zelena",
+        "nl": "bleekselderij"
       },
       "answer": {
         "en": "Yes, celery is generally safe for dogs as an occasional treat. Wash it and always cut it into bite-size pieces, because celery can be a choking hazard, especially for small dogs.",
-        "sl": "Da, stebelna zelena je za pse kot občasen priboljšek praviloma varna. Operite jo in vedno narežite na koščke za en grižljaj, saj se lahko pes z njo zaduši, zlasti majhen pes."
+        "sl": "Da, stebelna zelena je za pse kot občasen priboljšek praviloma varna. Operite jo in vedno narežite na koščke za en grižljaj, saj se lahko pes z njo zaduši, zlasti majhen pes.",
+        "nl": "Ja, bleekselderij is over het algemeen veilig voor honden, als af en toe een traktatie. Was de bleekselderij en snijd hem altijd in hapklare stukjes, want bleekselderij kan een verstikkingsgevaar zijn, vooral voor kleine honden."
       },
       "why": {
         "en": "Celery is safe for most dogs and is even known to freshen doggy breath. The main risk is choking on large pieces, especially in small dogs. It is a treat, not a staple, and should never replace a complete and balanced meal.",
-        "sl": "Zelena je varna za večino psov, znano pa je tudi, da osveži pasji dah. Glavna nevarnost je dušenje z večjimi kosi, zlasti pri majhnih psih. Je priboljšek, ne osnovna hrana, in nikoli ne sme nadomestiti popolnega in uravnoteženega obroka."
+        "sl": "Zelena je varna za večino psov, znano pa je tudi, da osveži pasji dah. Glavna nevarnost je dušenje z večjimi kosi, zlasti pri majhnih psih. Je priboljšek, ne osnovna hrana, in nikoli ne sme nadomestiti popolnega in uravnoteženega obroka.",
+        "nl": "Bleekselderij is veilig voor de meeste honden en kan zelfs de adem van je hond frisser maken. Het grootste risico is verstikking door grote stukken, vooral bij kleine honden. Het is een traktatie en geen basisvoedsel, en het mag nooit een complete, evenwichtige maaltijd vervangen."
       },
       "signs": null,
       "what_to_do": {
         "en": "Introduce celery slowly and watch your dog for digestive upset or other changes after the first taste.",
-        "sl": "Zeleno uvajajte postopoma in po prvem okušanju opazujte, ali ima pes prebavne težave ali druge spremembe."
+        "sl": "Zeleno uvajajte postopoma in po prvem okušanju opazujte, ali ima pes prebavne težave ali druge spremembe.",
+        "nl": "Laat je hond rustig aan wennen aan bleekselderij en let na de eerste hap op spijsverteringsklachten of andere veranderingen bij je hond."
       },
       "serving": {
         "en": "Washed, raw is fine, always cut into bite-size pieces. A small treat, not a meal.",
-        "sl": "Oprana, lahko surova, vedno narezana na koščke za en grižljaj. Majhen priboljšek, ne obrok."
+        "sl": "Oprana, lahko surova, vedno narezana na koščke za en grižljaj. Majhen priboljšek, ne obrok.",
+        "nl": "Gewassen en altijd in hapklare stukjes gesneden; rauw is prima. Een kleine traktatie, geen maaltijd."
       },
       "child": {
         "en": "Dogs can crunch a little celery! A grown-up washes it and cuts it into tiny pieces first.",
-        "sl": "Psi lahko pohrustajo malo zelene! Odrasli jo najprej opere in nareže na drobne koščke."
+        "sl": "Psi lahko pohrustajo malo zelene! Odrasli jo najprej opere in nareže na drobne koščke.",
+        "nl": "Honden mogen best een beetje bleekselderij knabbelen! Een volwassene wast de bleekselderij eerst en snijdt hem in piepkleine stukjes."
       },
       "faq": [
         {
           "q": {
             "en": "Can puppies eat celery?",
-            "sl": "Ali lahko mladički jedo zeleno?"
+            "sl": "Ali lahko mladički jedo zeleno?",
+            "nl": "Mogen pups bleekselderij eten?"
           },
           "a": {
             "en": "Puppies can eat small amounts of celery if it is cut into appropriately sized pieces.",
-            "sl": "Mladički lahko jedo majhne količine zelene, če je narezana na primerno velike koščke."
+            "sl": "Mladički lahko jedo majhne količine zelene, če je narezana na primerno velike koščke.",
+            "nl": "Pups mogen kleine hoeveelheden bleekselderij eten, mits die in passende stukjes is gesneden."
           }
         }
       ],
@@ -32689,27 +32823,33 @@
       "level": "not_recommended",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Kale",
-        "sl": "Listnati ohrovt"
+        "sl": "Listnati ohrovt",
+        "nl": "Boerenkool"
       },
       "question": {
         "en": "Can dogs eat kale?",
-        "sl": "Ali lahko psi jedo listnati ohrovt?"
+        "sl": "Ali lahko psi jedo listnati ohrovt?",
+        "nl": "Mogen honden boerenkool eten?"
       },
       "url_slug": {
         "en": "kale",
-        "sl": "listnati-ohrovt"
+        "sl": "listnati-ohrovt",
+        "nl": "boerenkool"
       },
       "answer": {
         "en": "Better not as a regular treat. A little kale now and then is unlikely to harm most dogs, but some vets caution against it: kale contains calcium oxalate, linked to kidney and bladder stones, and isothiocyanates, which can irritate the stomach.",
-        "sl": "Raje ne kot reden priboljšek. Malo listnatega ohrovta občasno večini psov verjetno ne škodi, nekateri veterinarji pa odsvetujejo: vsebuje kalcijev oksalat, povezan z ledvičnimi in mehurnimi kamni, ter izotiocianate, ki lahko dražijo želodec."
+        "sl": "Raje ne kot reden priboljšek. Malo listnatega ohrovta občasno večini psov verjetno ne škodi, nekateri veterinarji pa odsvetujejo: vsebuje kalcijev oksalat, povezan z ledvičnimi in mehurnimi kamni, ter izotiocianate, ki lahko dražijo želodec.",
+        "nl": "Liever niet als vaste traktatie. Af en toe een beetje boerenkool is voor de meeste honden waarschijnlijk niet schadelijk, maar sommige dierenartsen raden het af: boerenkool bevat calciumoxalaat, dat in verband wordt gebracht met nierstenen en blaasstenen, en isothiocyanaten, die de maag kunnen irriteren."
       },
       "why": {
         "en": "Kale contains calcium oxalate, which can cause kidney and bladder stones, and isothiocyanates, which can cause mild to potentially severe stomach irritation in dogs. Fed regularly, it can also interfere with thyroid function, especially in dogs with hypothyroidism. Small amounts may be fine, but because some vets caution against kale, we follow the stricter advice.",
-        "sl": "Listnati ohrovt vsebuje kalcijev oksalat, ki lahko povzroči ledvične in mehurne kamne, ter izotiocianate, ki lahko pri psih povzročijo blago do potencialno hudo draženje želodca. Če ga pes dobiva redno, lahko vpliva tudi na delovanje ščitnice, zlasti pri psih s hipotiroidizmom. Majhne količine so morda v redu, ker pa ga nekateri veterinarji odsvetujejo, sledimo strožjemu nasvetu."
+        "sl": "Listnati ohrovt vsebuje kalcijev oksalat, ki lahko povzroči ledvične in mehurne kamne, ter izotiocianate, ki lahko pri psih povzročijo blago do potencialno hudo draženje želodca. Če ga pes dobiva redno, lahko vpliva tudi na delovanje ščitnice, zlasti pri psih s hipotiroidizmom. Majhne količine so morda v redu, ker pa ga nekateri veterinarji odsvetujejo, sledimo strožjemu nasvetu.",
+        "nl": "Boerenkool bevat calciumoxalaat, dat nierstenen en blaasstenen kan veroorzaken, en isothiocyanaten, die bij honden maagirritatie kunnen geven, van licht tot mogelijk ernstig. Krijgt een hond boerenkool regelmatig, dan kan het ook de werking van de schildklier verstoren, vooral bij honden met hypothyreoïdie. Kleine hoeveelheden zijn mogelijk prima, maar omdat sommige dierenartsen boerenkool afraden, volgen wij het strengere advies."
       },
       "signs": {
         "en": [
@@ -32723,36 +32863,48 @@
           "Driska",
           "Težave z uriniranjem",
           "Kakršna koli sprememba pri uriniranju"
+        ],
+        "nl": [
+          "Braken",
+          "Diarree",
+          "Moeite met plassen",
+          "Veranderingen in het plasgedrag"
         ]
       },
       "what_to_do": {
         "en": "If your dog ate kale, watch closely for tummy upset or signs of kidney and bladder stones. Contact your vet if you notice vomiting, diarrhoea, difficulty urinating or any change in urination habits.",
-        "sl": "Če je pes pojedel listnati ohrovt, ga pozorno opazujte, ali ima prebavne težave ali znake ledvičnih in mehurnih kamnov. Če opazite bruhanje, drisko, težave z uriniranjem ali kakršno koli spremembo pri uriniranju, se obrnite na veterinarja."
+        "sl": "Če je pes pojedel listnati ohrovt, ga pozorno opazujte, ali ima prebavne težave ali znake ledvičnih in mehurnih kamnov. Če opazite bruhanje, drisko, težave z uriniranjem ali kakršno koli spremembo pri uriniranju, se obrnite na veterinarja.",
+        "nl": "Heeft je hond boerenkool gegeten, let dan goed op maagklachten of tekenen van nierstenen en blaasstenen. Neem contact op met je dierenarts als je braken, diarree, moeite met plassen of een verandering in het plasgedrag opmerkt."
       },
       "serving": null,
       "child": {
         "en": "Kale is not a good snack for dogs. Green beans or cucumber are better treats to share, with a grown-up's help.",
-        "sl": "Listnati ohrovt ni dober prigrizek za pse. Stročji fižol ali kumara sta boljša priboljška, ki ju ponudite s pomočjo odraslega."
+        "sl": "Listnati ohrovt ni dober prigrizek za pse. Stročji fižol ali kumara sta boljša priboljška, ki ju ponudite s pomočjo odraslega.",
+        "nl": "Boerenkool is geen goed tussendoortje voor honden. Sperziebonen of komkommer zijn betere traktaties om te delen, met hulp van een volwassene."
       },
       "faq": [
         {
           "q": {
             "en": "Which dogs should avoid kale?",
-            "sl": "Kateri psi naj se izogibajo listnatemu ohrovtu?"
+            "sl": "Kateri psi naj se izogibajo listnatemu ohrovtu?",
+            "nl": "Welke honden moeten boerenkool vermijden?"
           },
           "a": {
             "en": "Dogs prone to kidney or bladder stones should avoid foods high in calcium oxalate, including kale. Kale can also interfere with thyroid function, especially in dogs with hypothyroidism.",
-            "sl": "Psi, nagnjeni k ledvičnim ali mehurnim kamnom, naj se izogibajo hrani z veliko kalcijevega oksalata, tudi listnatemu ohrovtu. Ta lahko vpliva tudi na delovanje ščitnice, zlasti pri psih s hipotiroidizmom."
+            "sl": "Psi, nagnjeni k ledvičnim ali mehurnim kamnom, naj se izogibajo hrani z veliko kalcijevega oksalata, tudi listnatemu ohrovtu. Ta lahko vpliva tudi na delovanje ščitnice, zlasti pri psih s hipotiroidizmom.",
+            "nl": "Honden die vatbaar zijn voor nierstenen of blaasstenen moeten voeding met veel calciumoxalaat vermijden, boerenkool inbegrepen. Boerenkool kan ook de werking van de schildklier verstoren, vooral bij honden met hypothyreoïdie."
           }
         },
         {
           "q": {
             "en": "What can I give my dog instead of kale?",
-            "sl": "Kaj lahko psu ponudim namesto listnatega ohrovta?"
+            "sl": "Kaj lahko psu ponudim namesto listnatega ohrovta?",
+            "nl": "Wat kan ik mijn hond geven in plaats van boerenkool?"
           },
           "a": {
             "en": "Green beans and cucumbers are safe for most dogs.",
-            "sl": "Stročji fižol in kumare so za večino psov varni."
+            "sl": "Stročji fižol in kumare so za večino psov varni.",
+            "nl": "Sperziebonen en komkommer zijn voor de meeste honden veilig."
           }
         }
       ],
@@ -33840,50 +33992,61 @@
       "level": "small_amounts",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Lettuce",
-        "sl": "Zelena solata"
+        "sl": "Zelena solata",
+        "nl": "Sla"
       },
       "question": {
         "en": "Can dogs eat lettuce?",
-        "sl": "Ali lahko psi jedo zeleno solato?"
+        "sl": "Ali lahko psi jedo zeleno solato?",
+        "nl": "Mogen honden sla eten?"
       },
       "url_slug": {
         "en": "lettuce",
-        "sl": "zelena-solata"
+        "sl": "zelena-solata",
+        "nl": "sla"
       },
       "answer": {
         "en": "Yes, plain lettuce is generally safe for dogs in moderation. Romaine, iceberg and arugula are non-toxic. Wash it well and chop it up, and don't share your leftover salad, which often contains onions.",
-        "sl": "Da, navadna zelena solata je za pse v zmernih količinah praviloma varna. Rimska solata, ledenka in rukola niso strupene. Dobro jo operite in narežite, ne delite pa s psom ostankov svoje solate, ki pogosto vsebuje čebulo."
+        "sl": "Da, navadna zelena solata je za pse v zmernih količinah praviloma varna. Rimska solata, ledenka in rukola niso strupene. Dobro jo operite in narežite, ne delite pa s psom ostankov svoje solate, ki pogosto vsebuje čebulo.",
+        "nl": "Ja, naturel sla is over het algemeen met mate veilig voor honden. Romaine, ijsbergsla en rucola zijn niet giftig. Was de sla goed en snijd hem fijn, en geef je hond geen restjes van je salade, want die bevatten vaak ui."
       },
       "why": {
         "en": "Lettuce is generally safe for dogs, but it is very fibrous and hard to digest in big pieces, and too much can cause diarrhoea. Salads often include ingredients that are toxic to dogs, such as onions. Lettuce has also been recalled for E. coli or listeria contamination, so wash it well and buy carefully.",
-        "sl": "Zelena solata je za pse praviloma varna, vendar ima veliko vlaknin in jo v velikih kosih težko prebavijo, preveč pa lahko povzroči drisko. Solate pogosto vsebujejo sestavine, ki so za pse strupene, na primer čebulo. Zaradi odpoklicev solate, okužene z E. coli ali listerijo, jo dobro operite in skrbno izbirajte."
+        "sl": "Zelena solata je za pse praviloma varna, vendar ima veliko vlaknin in jo v velikih kosih težko prebavijo, preveč pa lahko povzroči drisko. Solate pogosto vsebujejo sestavine, ki so za pse strupene, na primer čebulo. Zaradi odpoklicev solate, okužene z E. coli ali listerijo, jo dobro operite in skrbno izbirajte.",
+        "nl": "Sla is over het algemeen veilig voor honden, maar zit vol vezels en is in grote stukken moeilijk te verteren, en te veel kan diarree veroorzaken. In salades zitten vaak ingrediënten die giftig zijn voor honden, zoals ui. Sla is ook weleens teruggeroepen vanwege besmetting met E. coli of listeria, dus was de sla goed en let bij het kopen op."
       },
       "signs": null,
       "what_to_do": {
         "en": "Keep it to a plain piece now and then: too much can cause diarrhoea. Don't share leftover salad, as salads often include onions, which are toxic to dogs.",
-        "sl": "Ponudite le občasen košček navadne solate: preveč lahko povzroči drisko. Ne delite ostankov solate, saj ta pogosto vsebuje čebulo, ki je za pse strupena."
+        "sl": "Ponudite le občasen košček navadne solate: preveč lahko povzroči drisko. Ne delite ostankov solate, saj ta pogosto vsebuje čebulo, ki je za pse strupena.",
+        "nl": "Geef alleen af en toe een naturel stukje: te veel kan diarree geven. Geef geen saladerestjes, want salades bevatten vaak ui, en die is giftig voor honden."
       },
       "serving": {
         "en": "A plain, thoroughly washed piece from time to time, chopped up rather than as a whole leaf. Never from a mixed salad.",
-        "sl": "Občasen košček navadne, temeljito oprane solate, narezan in ne cel list. Nikoli iz mešane solate."
+        "sl": "Občasen košček navadne, temeljito oprane solate, narezan in ne cel list. Nikoli iz mešane solate.",
+        "nl": "Af en toe een naturel, grondig gewassen stukje, fijngesneden en niet als heel blad. Nooit uit een gemengde salade."
       },
       "child": {
         "en": "Dogs can munch a little plain lettuce. A grown-up washes it and chops it small. No salad leftovers, please!",
-        "sl": "Psi lahko pohrustajo malo navadne zelene solate. Odrasli jo opere in nareže na majhne koščke. Ostanki solate pa ne!"
+        "sl": "Psi lahko pohrustajo malo navadne zelene solate. Odrasli jo opere in nareže na majhne koščke. Ostanki solate pa ne!",
+        "nl": "Honden mogen een beetje naturel sla knabbelen. Een volwassene wast de sla en snijdt hem klein. Geen saladerestjes, alsjeblieft!"
       },
       "faq": [
         {
           "q": {
             "en": "Can dogs eat salad?",
-            "sl": "Ali lahko psi jedo solato z dodatki?"
+            "sl": "Ali lahko psi jedo solato z dodatki?",
+            "nl": "Mogen honden salade eten?"
           },
           "a": {
             "en": "Not your leftover salad: salads often include ingredients that are toxic to dogs, such as onions. A plain piece of lettuce now and then is fine.",
-            "sl": "Ostankov vaše solate ne: solate pogosto vsebujejo sestavine, ki so za pse strupene, na primer čebulo. Občasen košček navadne zelene solate je v redu."
+            "sl": "Ostankov vaše solate ne: solate pogosto vsebujejo sestavine, ki so za pse strupene, na primer čebulo. Občasen košček navadne zelene solate je v redu.",
+            "nl": "Niet je eigen saladerestjes: in salades zitten vaak ingrediënten die giftig zijn voor honden, zoals ui. Af en toe een naturel stukje sla is prima."
           }
         }
       ],
@@ -39916,27 +40079,33 @@
       "level": "dangerous",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Raw potatoes",
-        "sl": "Surov krompir"
+        "sl": "Surov krompir",
+        "nl": "Rauwe aardappelen"
       },
       "question": {
         "en": "Can dogs eat raw potatoes?",
-        "sl": "Ali lahko psi jedo surov krompir?"
+        "sl": "Ali lahko psi jedo surov krompir?",
+        "nl": "Mogen honden rauwe aardappelen eten?"
       },
       "url_slug": {
         "en": "raw-potatoes",
-        "sl": "surov-krompir"
+        "sl": "surov-krompir",
+        "nl": "rauwe-aardappelen"
       },
       "answer": {
         "en": "No, don't give your dog raw potatoes. Raw and green potatoes are unsafe and potentially toxic because they contain solanine, a natural toxin. Plain, well-cooked potato is different and is fine in moderation.",
-        "sl": "Ne, psu ne dajajte surovega krompirja. Surov in zelen krompir je nevaren in potencialno strupen, ker vsebuje solanin, naravni strup. Navaden, dobro kuhan krompir je nekaj drugega in je v zmernih količinah v redu."
+        "sl": "Ne, psu ne dajajte surovega krompirja. Surov in zelen krompir je nevaren in potencialno strupen, ker vsebuje solanin, naravni strup. Navaden, dobro kuhan krompir je nekaj drugega in je v zmernih količinah v redu.",
+        "nl": "Nee, geef je hond geen rauwe aardappelen. Rauwe en groene aardappelen zijn onveilig en mogelijk giftig, omdat ze solanine bevatten, een natuurlijke gifstof. Naturel, goed gare aardappel is iets anders en is met mate prima."
       },
       "why": {
         "en": "Raw potatoes, and potatoes with green skin or green spots, contain solanine, a naturally occurring toxin found in plants of the nightshade family. Green spots appear when some potatoes are exposed to light and show that solanine has increased. Pieces of raw or half-cooked potato can also be a choking risk.",
-        "sl": "Surov krompir ter krompir z zeleno lupino ali zelenimi lisami vsebuje solanin, naravni strup, ki ga najdemo v rastlinah iz družine razhudnikovk. Zelene lise se pri nekaterih sortah pojavijo na svetlobi in kažejo, da se je količina solanina povečala. Koščki surovega ali napol kuhanega krompirja lahko povzročijo tudi dušenje."
+        "sl": "Surov krompir ter krompir z zeleno lupino ali zelenimi lisami vsebuje solanin, naravni strup, ki ga najdemo v rastlinah iz družine razhudnikovk. Zelene lise se pri nekaterih sortah pojavijo na svetlobi in kažejo, da se je količina solanina povečala. Koščki surovega ali napol kuhanega krompirja lahko povzročijo tudi dušenje.",
+        "nl": "Rauwe aardappelen, en aardappelen met een groene schil of groene plekken, bevatten solanine, een van nature voorkomende gifstof in planten uit de nachtschadefamilie. Groene plekken ontstaan wanneer sommige aardappelen aan licht worden blootgesteld en wijzen erop dat het solaninegehalte is gestegen. Stukjes rauwe of halfgare aardappel kunnen ook een verstikkingsgevaar zijn."
       },
       "signs": {
         "en": [
@@ -39950,36 +40119,48 @@
           "Driska",
           "Zaspanost in brezvoljnost",
           "Mišična šibkost"
+        ],
+        "nl": [
+          "Braken",
+          "Diarree",
+          "Lusteloosheid",
+          "Spierzwakte"
         ]
       },
       "what_to_do": {
         "en": "If your dog ate raw or green potato, contact your vet or a pet poison helpline. What to do next depends on your dog's size, how much was eaten and whether there are symptoms. If your dog is vomiting, has diarrhoea, seems lethargic or weak, see a vet immediately.",
-        "sl": "Če je pes pojedel surov ali zelen krompir, se obrnite na veterinarja ali na center za zastrupitve živali. Nadaljnji koraki so odvisni od velikosti psa, pojedene količine in znakov. Če pes bruha, ima drisko, je zaspan ali šibek, takoj poiščite veterinarja."
+        "sl": "Če je pes pojedel surov ali zelen krompir, se obrnite na veterinarja ali na center za zastrupitve živali. Nadaljnji koraki so odvisni od velikosti psa, pojedene količine in znakov. Če pes bruha, ima drisko, je zaspan ali šibek, takoj poiščite veterinarja.",
+        "nl": "Heeft je hond rauwe of groene aardappel gegeten, neem dan contact op met je dierenarts of een vergiftigingenlijn voor dieren. Wat je daarna moet doen, hangt af van de grootte van je hond, hoeveel hij heeft gegeten en of er verschijnselen zijn. Braakt je hond, heeft hij diarree of lijkt hij lusteloos of zwak, ga dan meteen naar een dierenarts."
       },
       "serving": null,
       "child": {
         "en": "Raw potatoes are not for dogs. If a dog grabs one, tell a grown-up straight away.",
-        "sl": "Surov krompir ni za pse. Če ga pes zgrabi, takoj povej odraslemu."
+        "sl": "Surov krompir ni za pse. Če ga pes zgrabi, takoj povej odraslemu.",
+        "nl": "Rauwe aardappelen zijn niet voor honden. Pakt een hond er een, vertel het dan meteen aan een volwassene."
       },
       "faq": [
         {
           "q": {
             "en": "Are cooked potatoes okay for dogs?",
-            "sl": "Je kuhan krompir za pse v redu?"
+            "sl": "Je kuhan krompir za pse v redu?",
+            "nl": "Mogen honden gare aardappelen eten?"
           },
           "a": {
             "en": "Yes, plain cooked potatoes are fine in moderation, cooked enough to be mashed so the dog doesn't choke. Make sure they are not green.",
-            "sl": "Da, navaden kuhan krompir je v zmernih količinah v redu, kuhan toliko, da se ga da pretlačiti, da se pes ne zaduši. Prepričajte se, da ni zelen."
+            "sl": "Da, navaden kuhan krompir je v zmernih količinah v redu, kuhan toliko, da se ga da pretlačiti, da se pes ne zaduši. Prepričajte se, da ni zelen.",
+            "nl": "Ja, naturel gare aardappelen zijn met mate prima. Maak ze zo gaar dat je ze kunt prakken, zodat je hond zich er niet in verslikt. Zorg dat ze niet groen zijn."
           }
         },
         {
           "q": {
             "en": "Can dogs eat potato skins?",
-            "sl": "Ali lahko psi jedo krompirjeve olupke?"
+            "sl": "Ali lahko psi jedo krompirjeve olupke?",
+            "nl": "Mogen honden aardappelschillen eten?"
           },
           "a": {
             "en": "Potato skins are okay, but not if they are green.",
-            "sl": "Krompirjevi olupki so v redu, vendar ne, če so zeleni."
+            "sl": "Krompirjevi olupki so v redu, vendar ne, če so zeleni.",
+            "nl": "Aardappelschillen zijn prima, maar niet als ze groen zijn."
           }
         }
       ],
@@ -40012,60 +40193,73 @@
       "level": "small_amounts",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Pumpkin",
-        "sl": "Buča"
+        "sl": "Buča",
+        "nl": "Pompoen"
       },
       "question": {
         "en": "Can dogs eat pumpkin?",
-        "sl": "Ali lahko psi jedo bučo?"
+        "sl": "Ali lahko psi jedo bučo?",
+        "nl": "Mogen honden pompoen eten?"
       },
       "url_slug": {
         "en": "pumpkin",
-        "sl": "buca"
+        "sl": "buca",
+        "nl": "pompoen"
       },
       "answer": {
         "en": "Yes, plain cooked pumpkin is a healthy food for dogs. Choose fresh cooked pumpkin or plain canned pumpkin puree, never pumpkin pie filling, and don't share uncooked rinds.",
-        "sl": "Da, navadna kuhana buča je za pse zdrava hrana. Izberite svežo kuhano bučo ali navaden bučni pire iz pločevinke, nikoli nadeva za bučno pito, in psu ne dajajte surove lupine."
+        "sl": "Da, navadna kuhana buča je za pse zdrava hrana. Izberite svežo kuhano bučo ali navaden bučni pire iz pločevinke, nikoli nadeva za bučno pito, in psu ne dajajte surove lupine.",
+        "nl": "Ja, naturel gare pompoen is gezond voor honden. Kies verse, gare pompoen of naturel pompoenpuree uit blik, nooit vulling voor pompoentaart, en geef geen ongekookte schil."
       },
       "why": {
         "en": "Pure pumpkin is full of antioxidants and can help with both diarrhoea and constipation in dogs. Pumpkin pie filling may contain xylitol, which is toxic, plus other spices and additives that could be harmful. Uncooked rinds are tough and fibrous: they pose a choking risk, are hard to digest and can cause a blockage in the gut.",
-        "sl": "Čista buča je polna antioksidantov in psom lahko pomaga tako pri driski kot pri zaprtju. Nadev za bučno pito lahko vsebuje strupeni ksilitol ter druge začimbe in dodatke, ki bi lahko škodili. Surove lupine so trde in vlaknate: pes se z njimi lahko zaduši, težko jih prebavi in lahko povzročijo zamašitev prebavil."
+        "sl": "Čista buča je polna antioksidantov in psom lahko pomaga tako pri driski kot pri zaprtju. Nadev za bučno pito lahko vsebuje strupeni ksilitol ter druge začimbe in dodatke, ki bi lahko škodili. Surove lupine so trde in vlaknate: pes se z njimi lahko zaduši, težko jih prebavi in lahko povzročijo zamašitev prebavil.",
+        "nl": "Naturel pompoen zit vol antioxidanten en kan bij honden helpen bij zowel diarree als verstopping. Vulling voor pompoentaart kan xylitol bevatten, dat giftig is, en daarnaast kruiden en andere toevoegingen die schadelijk kunnen zijn. Ongekookte schillen zijn taai en vezelig: ze vormen een verstikkingsgevaar, zijn moeilijk te verteren en kunnen een verstopping in de darmen veroorzaken."
       },
       "signs": null,
       "what_to_do": {
         "en": "As with any new food, ask your vet before adding pumpkin to your dog's routine.",
-        "sl": "Kot pri vsaki novi hrani se tudi pred uvedbo buče v pasji jedilnik posvetujte z veterinarjem."
+        "sl": "Kot pri vsaki novi hrani se tudi pred uvedbo buče v pasji jedilnik posvetujte z veterinarjem.",
+        "nl": "Zoals bij elk nieuw voedsel: vraag je dierenarts om advies voordat je pompoen aan de voeding van je hond toevoegt."
       },
       "serving": {
         "en": "Fresh, cooked, plain and peeled, or plain canned pumpkin puree, without added sugar, spices or artificial flavours. No pie filling and no raw rind.",
-        "sl": "Sveža, kuhana, navadna in olupljena ali navaden bučni pire iz pločevinke, brez dodanega sladkorja, začimb in umetnih arom. Brez nadeva za pito in brez surove lupine."
+        "sl": "Sveža, kuhana, navadna in olupljena ali navaden bučni pire iz pločevinke, brez dodanega sladkorja, začimb in umetnih arom. Brez nadeva za pito in brez surove lupine.",
+        "nl": "Verse pompoen, gaar gemaakt en geschild, of naturel pompoenpuree uit blik, zonder toegevoegde suiker, kruiden of kunstmatige smaakstoffen. Geen taartvulling en geen rauwe schil."
       },
       "child": {
         "en": "Dogs can enjoy a little plain cooked pumpkin. A grown-up makes sure it isn't sweet pie filling!",
-        "sl": "Psi se lahko posladkajo z malo navadne kuhane buče. Odrasli poskrbi, da to ni sladek nadev za pito!"
+        "sl": "Psi se lahko posladkajo z malo navadne kuhane buče. Odrasli poskrbi, da to ni sladek nadev za pito!",
+        "nl": "Honden mogen genieten van een beetje naturel gare pompoen. Een volwassene let erop dat het geen zoete taartvulling is!"
       },
       "faq": [
         {
           "q": {
             "en": "Can dogs eat pumpkin pie filling?",
-            "sl": "Ali lahko psi jedo nadev za bučno pito?"
+            "sl": "Ali lahko psi jedo nadev za bučno pito?",
+            "nl": "Mogen honden vulling voor pompoentaart eten?"
           },
           "a": {
             "en": "No. Pumpkin pie filling may contain xylitol, a sweetener that is toxic to dogs, and other spices and additives that could be harmful.",
-            "sl": "Ne. Nadev za bučno pito lahko vsebuje ksilitol, sladilo, ki je za pse strupeno, ter druge začimbe in dodatke, ki bi lahko škodili."
+            "sl": "Ne. Nadev za bučno pito lahko vsebuje ksilitol, sladilo, ki je za pse strupeno, ter druge začimbe in dodatke, ki bi lahko škodili.",
+            "nl": "Nee. Vulling voor pompoentaart kan xylitol bevatten, een zoetstof die giftig is voor honden, en daarnaast kruiden en andere toevoegingen die schadelijk kunnen zijn."
           }
         },
         {
           "q": {
             "en": "Can dogs eat raw pumpkin rind?",
-            "sl": "Ali lahko psi jedo surovo bučno lupino?"
+            "sl": "Ali lahko psi jedo surovo bučno lupino?",
+            "nl": "Mogen honden rauwe pompoenschil eten?"
           },
           "a": {
             "en": "No. Uncooked rinds are tough, dense and fibrous: they pose a choking risk, are difficult to digest and can cause a blockage in the gut.",
-            "sl": "Ne. Surove lupine so trde, goste in vlaknate: pes se z njimi lahko zaduši, težko jih prebavi in lahko povzročijo zamašitev prebavil."
+            "sl": "Ne. Surove lupine so trde, goste in vlaknate: pes se z njimi lahko zaduši, težko jih prebavi in lahko povzročijo zamašitev prebavil.",
+            "nl": "Nee. Ongekookte schillen zijn taai, stevig en vezelig: ze vormen een verstikkingsgevaar, zijn moeilijk te verteren en kunnen een verstopping in de darmen veroorzaken."
           }
         }
       ],
@@ -44047,27 +44241,33 @@
       "level": "not_recommended",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Spinach",
-        "sl": "Špinača"
+        "sl": "Špinača",
+        "nl": "Spinazie"
       },
       "question": {
         "en": "Can dogs eat spinach?",
-        "sl": "Ali lahko psi jedo špinačo?"
+        "sl": "Ali lahko psi jedo špinačo?",
+        "nl": "Mogen honden spinazie eten?"
       },
       "url_slug": {
         "en": "spinach",
-        "sl": "spinaca"
+        "sl": "spinaca",
+        "nl": "spinazie"
       },
       "answer": {
         "en": "Dogs can eat spinach, but it isn't one of the best vegetables to share with them. It is high in oxalic acid, which blocks calcium absorption and can lead to kidney damage. A dog would have to eat a lot to be harmed, but another vegetable is a better choice.",
-        "sl": "Psi lahko jedo špinačo, vendar ni med najboljšo zelenjavo, ki bi jo delili z njimi. Vsebuje veliko oksalne kisline, ki zavira vsrkavanje kalcija in lahko škodi ledvicam. Pes bi jo moral pojesti veliko, da bi mu škodila, a druga zelenjava je boljša izbira."
+        "sl": "Psi lahko jedo špinačo, vendar ni med najboljšo zelenjavo, ki bi jo delili z njimi. Vsebuje veliko oksalne kisline, ki zavira vsrkavanje kalcija in lahko škodi ledvicam. Pes bi jo moral pojesti veliko, da bi mu škodila, a druga zelenjava je boljša izbira.",
+        "nl": "Honden mogen spinazie eten, maar het is niet een van de beste groenten om aan ze te geven. Spinazie bevat veel oxaalzuur, dat de opname van calcium blokkeert en tot nierschade kan leiden. Een hond moet er veel van eten om er schade van te krijgen, maar een andere groente is een betere keuze."
       },
       "why": {
         "en": "Spinach is high in oxalic acid, which blocks the body's ability to absorb calcium and can lead to kidney damage. Dogs with healthy kidneys can process small amounts, and a dog would have to eat very large quantities to be harmed, but eating it over a long time can stress the kidneys. Because sources advise choosing another vegetable, we rate it not recommended.",
-        "sl": "Špinača vsebuje veliko oksalne kisline, ki telesu zavira vsrkavanje kalcija in lahko škodi ledvicam. Psi z zdravimi ledvicami majhne količine predelajo, pes pa bi je moral pojesti zelo veliko, da bi mu škodila, vendar lahko dolgotrajno uživanje obremeni ledvice. Ker viri svetujejo drugo zelenjavo, je ne priporočamo."
+        "sl": "Špinača vsebuje veliko oksalne kisline, ki telesu zavira vsrkavanje kalcija in lahko škodi ledvicam. Psi z zdravimi ledvicami majhne količine predelajo, pes pa bi je moral pojesti zelo veliko, da bi mu škodila, vendar lahko dolgotrajno uživanje obremeni ledvice. Ker viri svetujejo drugo zelenjavo, je ne priporočamo.",
+        "nl": "Spinazie bevat veel oxaalzuur, dat het vermogen van het lichaam om calcium op te nemen blokkeert en tot nierschade kan leiden. Honden met gezonde nieren kunnen kleine hoeveelheden aan en een hond zou erg veel moeten eten om er schade van te krijgen, maar krijgt een hond lange tijd spinazie, dan kan dat de nieren belasten. Omdat bronnen aanraden een andere groente te kiezen, beoordelen wij spinazie als niet aanbevolen."
       },
       "signs": {
         "en": [
@@ -44077,29 +44277,38 @@
         "sl": [
           "Mišična šibkost (po dolgotrajnem uživanju špinače)",
           "Nenormalen srčni ritem (po dolgotrajnem uživanju špinače)"
+        ],
+        "nl": [
+          "Spierzwakte (na langdurig spinazie eten)",
+          "Afwijkend hartritme (na langdurig spinazie eten)"
         ]
       },
       "what_to_do": {
         "en": "Always ask your vet before adding spinach to your dog's diet, even as a snack. If your dog is prone to kidney or bladder stones, avoid spinach.",
-        "sl": "Preden psu v prehrano dodate špinačo, tudi kot prigrizek, se vedno posvetujte z veterinarjem. Če je pes nagnjen k ledvičnim ali mehurnim kamnom, se špinači izogibajte."
+        "sl": "Preden psu v prehrano dodate špinačo, tudi kot prigrizek, se vedno posvetujte z veterinarjem. Če je pes nagnjen k ledvičnim ali mehurnim kamnom, se špinači izogibajte.",
+        "nl": "Vraag altijd je dierenarts om advies voordat je spinazie aan de voeding van je hond toevoegt, ook als tussendoortje. Is je hond vatbaar voor nierstenen of blaasstenen, geef dan geen spinazie."
       },
       "serving": {
         "en": "Only if your vet agrees and your dog's kidneys are healthy: small amounts, infrequently, steamed, with no spices, herbs, salt, oil, onion or garlic.",
-        "sl": "Le če veterinar soglaša in ima pes zdrave ledvice: majhne količine, poredko, pripravljeno na pari, brez začimb, zelišč, soli, olja, čebule in česna."
+        "sl": "Le če veterinar soglaša in ima pes zdrave ledvice: majhne količine, poredko, pripravljeno na pari, brez začimb, zelišč, soli, olja, čebule in česna.",
+        "nl": "Alleen als je dierenarts het goedvindt en de nieren van je hond gezond zijn: zelden en in kleine hoeveelheden, gestoomd, zonder kruiden, zout, olie, ui of knoflook."
       },
       "child": {
         "en": "Spinach isn't a great snack for dogs. Ask a grown-up to pick a different vegetable for your dog.",
-        "sl": "Špinača ni dober prigrizek za pse. Prosi odraslega, naj za psa izbere drugo zelenjavo."
+        "sl": "Špinača ni dober prigrizek za pse. Prosi odraslega, naj za psa izbere drugo zelenjavo.",
+        "nl": "Spinazie is geen goed tussendoortje voor honden. Vraag een volwassene om een andere groente voor je hond uit te zoeken."
       },
       "faq": [
         {
           "q": {
             "en": "Is raw or cooked spinach better for dogs?",
-            "sl": "Je za pse boljša surova ali kuhana špinača?"
+            "sl": "Je za pse boljša surova ali kuhana špinača?",
+            "nl": "Is rauwe of gare spinazie beter voor honden?"
           },
           "a": {
             "en": "If you give any, steam it: raw spinach is difficult for a dog to digest, and boiled spinach loses most of its nutrients.",
-            "sl": "Če jo že ponudite, jo pripravite na pari: surovo špinačo psi težko prebavijo, kuhana v vodi pa izgubi večino hranil."
+            "sl": "Če jo že ponudite, jo pripravite na pari: surovo špinačo psi težko prebavijo, kuhana v vodi pa izgubi večino hranil.",
+            "nl": "Als je er toch wat van geeft, stoom de spinazie dan: rauwe spinazie is moeilijk te verteren voor een hond, en gekookte spinazie verliest het grootste deel van haar voedingsstoffen."
           }
         }
       ],
@@ -44710,60 +44919,73 @@
       "level": "small_amounts",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Sweet potato",
-        "sl": "Sladki krompir"
+        "sl": "Sladki krompir",
+        "nl": "Zoete aardappel"
       },
       "question": {
         "en": "Can dogs eat sweet potato?",
-        "sl": "Ali lahko psi jedo sladki krompir?"
+        "sl": "Ali lahko psi jedo sladki krompir?",
+        "nl": "Mogen honden zoete aardappel eten?"
       },
       "url_slug": {
         "en": "sweet-potato",
-        "sl": "sladki-krompir"
+        "sl": "sladki-krompir",
+        "nl": "zoete-aardappel"
       },
       "answer": {
         "en": "Yes, in small amounts, cooked and peeled. Soft boiled or steamed sweet potato is fine as a treat, but never give raw sweet potato: it is hard to chew, can upset the stomach and may cause an intestinal blockage.",
-        "sl": "Da, v majhnih količinah, kuhan in olupljen. Mehak sladki krompir, kuhan v vodi ali na pari, je v redu kot priboljšek, nikoli pa ne ponudite surovega: težko se žveči, lahko razdraži želodec in povzroči zamašitev črevesja."
+        "sl": "Da, v majhnih količinah, kuhan in olupljen. Mehak sladki krompir, kuhan v vodi ali na pari, je v redu kot priboljšek, nikoli pa ne ponudite surovega: težko se žveči, lahko razdraži želodec in povzroči zamašitev črevesja.",
+        "nl": "Ja, in kleine hoeveelheden, gaar en geschild. Zachtgekookte of gestoomde zoete aardappel is prima als traktatie, maar geef nooit rauwe zoete aardappel: die is moeilijk te kauwen, kan maagklachten geven en kan een darmverstopping veroorzaken."
       },
       "why": {
         "en": "Sweet potatoes are not poisonous, but raw ones are hard to chew and can cause an intestinal blockage, and the skin makes them harder to digest. Too much can cause bone and muscle weakness from excess vitamin A, and their high glycemic index means diabetic dogs need care. Recent research suggests they may not suit a dog's diet, and they should never be the main source of nutrition.",
-        "sl": "Sladki krompir ni strupen, vendar se surov težko žveči in lahko povzroči zamašitev črevesja, lupina pa otežuje prebavo. Preveč ga lahko zaradi prevelike količine vitamina A povzroči šibkost kosti in mišic, zaradi visokega glikemičnega indeksa pa je pri psih s sladkorno boleznijo potrebna previdnost. Nedavne raziskave nakazujejo, da morda ni primeren za pasjo prehrano, in nikoli ne sme biti glavni vir hrane."
+        "sl": "Sladki krompir ni strupen, vendar se surov težko žveči in lahko povzroči zamašitev črevesja, lupina pa otežuje prebavo. Preveč ga lahko zaradi prevelike količine vitamina A povzroči šibkost kosti in mišic, zaradi visokega glikemičnega indeksa pa je pri psih s sladkorno boleznijo potrebna previdnost. Nedavne raziskave nakazujejo, da morda ni primeren za pasjo prehrano, in nikoli ne sme biti glavni vir hrane.",
+        "nl": "Zoete aardappelen zijn niet giftig, maar rauwe zijn moeilijk te kauwen en kunnen een darmverstopping veroorzaken, en met schil zijn ze moeilijker te verteren. Te veel zoete aardappel kan door een overschot aan vitamine A botten en spieren verzwakken, en vanwege de hoge glykemische index is voorzichtigheid geboden bij honden met diabetes. Recent onderzoek suggereert dat ze mogelijk niet geschikt zijn voor de voeding van een hond, en ze mogen nooit de belangrijkste voedingsbron zijn."
       },
       "signs": null,
       "what_to_do": {
         "en": "Ask your vet before changing your dog's diet, then start with a small amount to see how your dog reacts.",
-        "sl": "Pred spremembo pasje prehrane se posvetujte z veterinarjem, nato začnite z majhno količino in opazujte, kako se pes odzove."
+        "sl": "Pred spremembo pasje prehrane se posvetujte z veterinarjem, nato začnite z majhno količino in opazujte, kako se pes odzove.",
+        "nl": "Vraag je dierenarts om advies voordat je de voeding van je hond aanpast, en begin dan met een klein beetje om te zien hoe je hond reageert."
       },
       "serving": {
         "en": "Boiled or steamed until soft, with the skin removed, in small amounts. Never raw, and never the main part of the diet.",
-        "sl": "Kuhan v vodi ali na pari, dokler ni mehak, olupljen, v majhnih količinah. Nikoli surov in nikoli kot glavni del prehrane."
+        "sl": "Kuhan v vodi ali na pari, dokler ni mehak, olupljen, v majhnih količinah. Nikoli surov in nikoli kot glavni del prehrane.",
+        "nl": "Gekookt of gestoomd tot het zacht is, zonder schil, in kleine hoeveelheden. Nooit rauw, en nooit als hoofdbestanddeel van het voer."
       },
       "child": {
         "en": "Dogs can have a little soft, cooked sweet potato. A grown-up peels and cooks it first.",
-        "sl": "Psi lahko dobijo malo mehkega kuhanega sladkega krompirja. Odrasli ga najprej olupi in skuha."
+        "sl": "Psi lahko dobijo malo mehkega kuhanega sladkega krompirja. Odrasli ga najprej olupi in skuha.",
+        "nl": "Honden mogen een beetje zachte, gare zoete aardappel eten. Een volwassene schilt en kookt hem eerst."
       },
       "faq": [
         {
           "q": {
             "en": "Can dogs eat sweet potato skin?",
-            "sl": "Ali lahko psi jedo lupino sladkega krompirja?"
+            "sl": "Ali lahko psi jedo lupino sladkega krompirja?",
+            "nl": "Mogen honden de schil van zoete aardappel eten?"
           },
           "a": {
             "en": "It's best to remove it: leaving the skin on makes sweet potato harder for your dog to digest.",
-            "sl": "Najbolje jo je odstraniti: z lupino pes sladki krompir težje prebavi."
+            "sl": "Najbolje jo je odstraniti: z lupino pes sladki krompir težje prebavi.",
+            "nl": "Schil de zoete aardappel het liefst: met schil is hij moeilijker te verteren voor je hond."
           }
         },
         {
           "q": {
             "en": "Can dogs eat raw sweet potato?",
-            "sl": "Ali lahko psi jedo surov sladki krompir?"
+            "sl": "Ali lahko psi jedo surov sladki krompir?",
+            "nl": "Mogen honden rauwe zoete aardappel eten?"
           },
           "a": {
             "en": "No. Raw sweet potato is difficult to chew, can upset your dog's stomach and may cause an intestinal blockage. Cook it until soft.",
-            "sl": "Ne. Surov sladki krompir se težko žveči, lahko razdraži pasji želodec in povzroči zamašitev črevesja. Skuhajte ga, da se zmehča."
+            "sl": "Ne. Surov sladki krompir se težko žveči, lahko razdraži pasji želodec in povzroči zamašitev črevesja. Skuhajte ga, da se zmehča.",
+            "nl": "Nee. Rauwe zoete aardappel is moeilijk te kauwen, kan de maag van je hond van streek maken en kan een darmverstopping veroorzaken. Maak hem gaar tot hij zacht is."
           }
         }
       ],
@@ -46790,50 +47012,61 @@
       "level": "small_amounts",
       "locales": [
         "en",
-        "sl"
+        "sl",
+        "nl"
       ],
       "name": {
         "en": "Zucchini",
-        "sl": "Bučke"
+        "sl": "Bučke",
+        "nl": "Courgette"
       },
       "question": {
         "en": "Can dogs eat zucchini?",
-        "sl": "Ali lahko psi jedo bučke?"
+        "sl": "Ali lahko psi jedo bučke?",
+        "nl": "Mogen honden courgette eten?"
       },
       "url_slug": {
         "en": "zucchini",
-        "sl": "bucke"
+        "sl": "bucke",
+        "nl": "courgette"
       },
       "answer": {
         "en": "Yes, zucchini is perfectly safe for dogs. Plain raw, steamed or cooked zucchini is fine in moderation. Chop it into small pieces, as large pieces can be a choking hazard, and skip oil, salt and seasonings.",
-        "sl": "Da, bučke so za pse povsem varne. Navadne surove, na pari ali kuhane bučke so v zmernih količinah v redu. Narežite jih na majhne koščke, saj se lahko pes z večjimi kosi zaduši, in ne dodajajte olja, soli ali začimb."
+        "sl": "Da, bučke so za pse povsem varne. Navadne surove, na pari ali kuhane bučke so v zmernih količinah v redu. Narežite jih na majhne koščke, saj se lahko pes z večjimi kosi zaduši, in ne dodajajte olja, soli ali začimb.",
+        "nl": "Ja, courgette is voor honden volkomen veilig. Naturel, rauw, gestoomd of gaar is courgette met mate prima. Snijd hem in kleine stukjes, want grote stukken kunnen een verstikkingsgevaar zijn, en laat olie, zout en kruiden weg."
       },
       "why": {
         "en": "All parts of the zucchini plant are non-toxic. The risks come from how it is served: large pieces can cause choking, a large amount can upset digestion, and oils, salt, seasonings, garlic and onions are harmful to dogs.",
-        "sl": "Noben del rastline bučke ni strupen. Nevarnosti izvirajo iz načina priprave: večji kosi lahko povzročijo dušenje, velika količina lahko razdraži prebavo, olja, sol, začimbe, česen in čebula pa psom škodijo."
+        "sl": "Noben del rastline bučke ni strupen. Nevarnosti izvirajo iz načina priprave: večji kosi lahko povzročijo dušenje, velika količina lahko razdraži prebavo, olja, sol, začimbe, česen in čebula pa psom škodijo.",
+        "nl": "Geen enkel deel van de courgetteplant is giftig. De risico’s zitten in de manier waarop je de courgette geeft: grote stukken kunnen verstikking veroorzaken, een grote hoeveelheid kan de spijsvertering van streek maken, en olie, zout, kruiden, knoflook en ui zijn schadelijk voor honden."
       },
       "signs": null,
       "what_to_do": {
         "en": "Keep zucchini to small amounts: feeding a dog a large amount of anything can lead to digestive upset. Never give a whole zucchini.",
-        "sl": "Bučke ponudite le v majhnih količinah: velika količina katere koli hrane lahko psu razdraži prebavo. Nikoli mu ne dajte cele bučke."
+        "sl": "Bučke ponudite le v majhnih količinah: velika količina katere koli hrane lahko psu razdraži prebavo. Nikoli mu ne dajte cele bučke.",
+        "nl": "Houd het bij kleine hoeveelheden: van een grote hoeveelheid van wat dan ook kan een hond spijsverteringsklachten krijgen. Geef nooit een hele courgette."
       },
       "serving": {
         "en": "Plain, raw, steamed or cooked, chopped into small pieces; steam it for dogs that have difficulty chewing. No oil, salt, seasonings, garlic or onion.",
-        "sl": "Navadne, surove, na pari ali kuhane, narezane na majhne koščke; psom, ki težko žvečijo, jih pripravite na pari. Brez olja, soli, začimb, česna in čebule."
+        "sl": "Navadne, surove, na pari ali kuhane, narezane na majhne koščke; psom, ki težko žvečijo, jih pripravite na pari. Brez olja, soli, začimb, česna in čebule.",
+        "nl": "Naturel, rauw, gestoomd of gaar, in kleine stukjes gesneden; stoom hem voor honden die moeite hebben met kauwen. Geen olie, zout, kruiden, knoflook of ui."
       },
       "child": {
         "en": "Dogs can nibble a little plain zucchini. A grown-up chops it into small pieces first.",
-        "sl": "Psi lahko pogrizljajo malo navadnih bučk. Odrasli jih najprej nareže na majhne koščke."
+        "sl": "Psi lahko pogrizljajo malo navadnih bučk. Odrasli jih najprej nareže na majhne koščke.",
+        "nl": "Honden mogen een beetje naturel courgette knabbelen. Een volwassene snijdt hem eerst in kleine stukjes."
       },
       "faq": [
         {
           "q": {
             "en": "Can dogs eat zucchini bread?",
-            "sl": "Ali lahko psi jedo kruh ali pecivo z bučkami?"
+            "sl": "Ali lahko psi jedo kruh ali pecivo z bučkami?",
+            "nl": "Mogen honden courgettebrood eten?"
           },
           "a": {
             "en": "No. Zucchini bread and other baked goods with zucchini are problematic. Watch out especially for xylitol, a sweetener that is toxic to dogs.",
-            "sl": "Ne. Kruh in drugo pecivo z bučkami ni primerno. Posebej pazite na ksilitol, sladilo, ki je za pse strupeno."
+            "sl": "Ne. Kruh in drugo pecivo z bučkami ni primerno. Posebej pazite na ksilitol, sladilo, ki je za pse strupeno.",
+            "nl": "Nee. Courgettebrood en ander gebak met courgette zijn problematisch. Pas vooral op voor xylitol, een zoetstof die giftig is voor honden."
           }
         }
       ],
@@ -52340,6 +52573,1491 @@
       "url": "https://ultimatevet.com.au/emergency-vet/",
       "source_url": "https://ultimatevet.com.au/emergency-vet/",
       "checked": "2026-11-08"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "SASH Sunshine Coast",
+      "city": "Sippy Downs",
+      "region": "Queensland",
+      "address": "5/30 Chancellor Village Blvd, Sippy Downs QLD 4556",
+      "phone": "+61 7 5453 7555",
+      "emergency_24h": true,
+      "duty": "Open 24 hours, 365 days a year. Emergency cases do not need a booking.",
+      "duty_i18n": null,
+      "url": "https://sashvets.com/locations/sunshine-coast/",
+      "source_url": "https://sashvets.com/locations/sunshine-coast/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "SASH Gold Coast",
+      "city": "Robina",
+      "region": "Queensland",
+      "address": "Shop 6/20 Scottsdale Dr, Robina QLD 4226",
+      "phone": "+61 7 5584 7300",
+      "emergency_24h": true,
+      "duty": "Open 24 hours, 365 days a year. Emergency cases do not need a booking.",
+      "duty_i18n": null,
+      "url": "https://sashvets.com/locations/gold-coast/",
+      "source_url": "https://sashvets.com/locations/gold-coast/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Animal Emergency Service Tanawha",
+      "city": "Tanawha",
+      "region": "Queensland",
+      "address": "431 Tanawha Tourist Dr, Tanawha QLD 4556",
+      "phone": "+61 7 5445 1333",
+      "emergency_24h": true,
+      "duty": "Open 24 hours a day, 7 days a week, 365 days a year. No appointment needed.",
+      "duty_i18n": null,
+      "url": "https://animalemergencyservice.com.au/?p=17458",
+      "source_url": "https://animalemergencyservice.com.au/?p=17458",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Animal Emergency Centre (AEC) Woolloongabba",
+      "city": "Stones Corner",
+      "region": "Queensland",
+      "address": "14 Cleveland Street, Stones Corner QLD 4120",
+      "phone": "+61 7 3456 0500",
+      "emergency_24h": true,
+      "duty": "Open 24 hours, 7 days a week, including public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.emergencyvet.com.au/our-network/aec-home/aec-woolloongabba.html",
+      "source_url": "https://www.emergencyvet.com.au/our-network/aec-home/aec-woolloongabba.html",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Animal Referral Hospital (ARH) Brisbane",
+      "city": "Sinnamon Park",
+      "region": "Queensland",
+      "address": "532 Seventeen Mile Rocks Rd, Sinnamon Park QLD 4073",
+      "phone": "+61 7 3172 0593",
+      "emergency_24h": true,
+      "duty": "Emergency care open 24 hours a day, 365 days a year. Specialist consultations by referral, Monday to Friday 8 am to 6 pm.",
+      "duty_i18n": null,
+      "url": "https://www.emergencyvet.com.au/our-network/arh-home/arh-brisbane.html",
+      "source_url": "https://www.emergencyvet.com.au/our-network/arh-home/arh-brisbane.html",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Animal Emergency Centre (AEC) Gold Coast",
+      "city": "Varsity Lakes",
+      "region": "Queensland",
+      "address": "4/492 Scottsdale Drive, Varsity Lakes QLD 4227",
+      "phone": "+61 7 5593 4544",
+      "emergency_24h": true,
+      "duty": "Open 24 hours, 7 days a week, including public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.emergencyvet.com.au/our-network/aec-home/aec-gold-coast.html",
+      "source_url": "https://www.emergencyvet.com.au/our-network/aec-home/aec-gold-coast.html",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "JCU Vet Emergency and Critical Care Service",
+      "city": "Townsville",
+      "region": "Queensland",
+      "address": "Building 104, 1 Solander Road, James Cook University, Townsville QLD 4814",
+      "phone": "+61 1300 528 838",
+      "emergency_24h": true,
+      "duty": "Emergency and critical care open 24 hours a day, 7 days a week. General practice and referral by appointment on weekdays.",
+      "duty_i18n": null,
+      "url": "https://jcuvet.com.au/emergency-and-critical-care/",
+      "source_url": "https://jcuvet.com.au/contact-us/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Emergency Vets 24/7 Cairns",
+      "city": "Manunda",
+      "region": "Queensland",
+      "address": "124a Anderson Street, Manunda, Cairns QLD 4870",
+      "phone": "+61 7 4015 3459",
+      "emergency_24h": true,
+      "duty": "Open 24 hours a day, 7 days a week. Walk-ins welcome.",
+      "duty_i18n": null,
+      "url": "https://www.emergencyvets247.com.au/",
+      "source_url": "https://www.emergencyvets247.com.au/contact",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Animal Emergency Service Jindalee",
+      "city": "Jindalee",
+      "region": "Queensland",
+      "address": "34 Goggs Rd, Jindalee QLD 4074",
+      "phone": "+61 7 3715 9999",
+      "emergency_24h": false,
+      "duty": "After-hours emergency hospital: Monday to Friday overnight (midnight to 8 am) and from 6 pm; open 24 hours on weekends and public holidays.",
+      "duty_i18n": null,
+      "url": "https://animalemergencyservice.com.au/info/jindalee-emergency-vet/",
+      "source_url": "https://animalemergencyservice.com.au/info/jindalee-emergency-vet/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Animal Emergency Service Underwood",
+      "city": "Underwood",
+      "region": "Queensland",
+      "address": "1 Lexington Road, Underwood QLD 4119",
+      "phone": "+61 7 3423 1888",
+      "emergency_24h": false,
+      "duty": "After-hours emergency hospital: weekdays overnight and from 6 pm; open 24 hours on weekends and public holidays.",
+      "duty_i18n": null,
+      "url": "https://animalemergencyservice.com.au/?p=24",
+      "source_url": "https://animalemergencyservice.com.au/?p=24",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Animal Emergency Service Carrara",
+      "city": "Carrara",
+      "region": "Queensland",
+      "address": "104 Eastlake St, Carrara QLD 4211",
+      "phone": "+61 7 5559 1599",
+      "emergency_24h": false,
+      "duty": "After-hours emergency hospital: weekdays overnight and from 6 pm; open 24 hours on weekends and public holidays.",
+      "duty_i18n": null,
+      "url": "https://animalemergencyservice.com.au/info/carrara-gold-coast/",
+      "source_url": "https://animalemergencyservice.com.au/info/carrara-gold-coast/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Brisbane Veterinary Emergency & Critical Care Service (BVECCS)",
+      "city": "Albany Creek",
+      "region": "Queensland",
+      "address": "53 Old Northern Road, Albany Creek QLD 4035",
+      "phone": "+61 7 3264 9400",
+      "emergency_24h": false,
+      "duty": "After-hours emergency service: Monday to Friday nights 6 pm to 8 am; open 24 hours on weekends and public holidays.",
+      "duty_i18n": null,
+      "url": "https://bveccs.ntg.co",
+      "source_url": "https://bveccs.ntg.co",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "UQ VETS Small Animal Hospital (Gatton)",
+      "city": "Gatton",
+      "region": "Queensland",
+      "address": "University of Queensland Gatton Campus, Gatton QLD 4343",
+      "phone": "+61 7 5460 1788",
+      "emergency_24h": false,
+      "duty": "University small-animal hospital with an emergency service for Ipswich to Toowoomba; call ahead for current hours.",
+      "duty_i18n": null,
+      "url": "https://small-animal.hospital.uq.edu.au",
+      "source_url": "https://small-animal.hospital.uq.edu.au",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Toowoomba Vet",
+      "city": "Toowoomba",
+      "region": "Queensland",
+      "address": "191 Hume Street (cnr Gore St), Toowoomba City QLD 4350",
+      "phone": "+61 7 4632 8333",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm, Saturday 8 am to 1 pm; closed Sundays and public holidays. After hours it refers emergencies to REDVets Toowoomba.",
+      "duty_i18n": null,
+      "url": "https://www.toowoombavet.com.au/",
+      "source_url": "https://www.toowoombavet.com.au/24hr-emergency-vet/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Alma Street Veterinary Hospital",
+      "city": "Rockhampton",
+      "region": "Queensland",
+      "address": "67 Alma Street, Rockhampton QLD 4700",
+      "phone": "+61 7 4922 8138",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm, Saturday 8 am to noon, Sunday 9 to 11 am. After-hours emergencies 24/7 by phone (additional charges apply); no after-hours house calls.",
+      "duty_i18n": null,
+      "url": "https://almastreetvet.com.au/",
+      "source_url": "https://almastreetvet.com.au/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Rockhampton Veterinary Clinic",
+      "city": "Frenchville",
+      "region": "Queensland",
+      "address": "384 Dean Street, Frenchville QLD 4701",
+      "phone": "+61 7 4928 4266",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 5 pm, Saturday 8 am to noon; closed Sundays and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.rockyvet.com.au/",
+      "source_url": "https://rockyvet.com.au/contact-us/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Hervey Bay Veterinary Surgery",
+      "city": "Pialba",
+      "region": "Queensland",
+      "address": "3/162 Boat Harbour Drive, Pialba QLD 4655",
+      "phone": "+61 7 4124 4679",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 7 am to 5 pm, Saturday 8 am to 1 pm; closed Sundays and public holidays. After-hours emergency on-call cover every day of the year, shared with other Hervey Bay clinics.",
+      "duty_i18n": null,
+      "url": "https://www.herveybayvet.com/",
+      "source_url": "https://www.herveybayvet.com/contact-us/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Nissen Street Veterinary Surgery",
+      "city": "Urraween",
+      "region": "Queensland",
+      "address": "137 Nissen Street, Urraween QLD 4655",
+      "phone": "+61 7 4184 9466",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm, Saturday 8 am to 1 pm; closed Sunday. Call reception about emergencies.",
+      "duty_i18n": null,
+      "url": "https://nissenstreetvet.com.au/",
+      "source_url": "https://nissenstreetvet.com.au/index.php/contact-us/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Sarina Veterinary Surgery",
+      "city": "Sarina",
+      "region": "Queensland",
+      "address": "83 Broad St, Sarina QLD 4737",
+      "phone": "+61 7 4956 1897",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 9 am to 6 pm, Saturday 9 to 11 am; closed Sunday. Lists 24/7 emergency vet care; call the clinic.",
+      "duty_i18n": null,
+      "url": "https://www.sarinavet.com.au/",
+      "source_url": "https://www.sarinavet.com.au/locations/vet-clinic-mackay",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Valley Vet Surgery Mackay",
+      "city": "Mackay",
+      "region": "Queensland",
+      "address": "36 Brisbane Street, Mackay QLD 4740",
+      "phone": "+61 7 4951 3799",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm, Saturday 8 am to noon; closed Sunday.",
+      "duty_i18n": null,
+      "url": "https://www.valleyvet.com.au/",
+      "source_url": "https://www.valleyvet.com.au/contact",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Harbour City Veterinary Surgery",
+      "city": "Gladstone",
+      "region": "Queensland",
+      "address": "23 Dawson Highway, Gladstone Central QLD 4680",
+      "phone": "+61 7 4972 5100",
+      "emergency_24h": false,
+      "duty": "Weekday and Saturday opening hours; call for current times.",
+      "duty_i18n": null,
+      "url": "https://harbourcityvet.com.au/",
+      "source_url": "https://harbourcityvet.com.au/?p=7878",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Cairns Veterinary Clinic",
+      "city": "Manoora",
+      "region": "Queensland",
+      "address": "76 Pease St, Manoora, Cairns QLD 4870",
+      "phone": "+61 7 4032 9999",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 7:30 am to 6:30 pm; Saturday, Sunday and public holidays 8:30 am to 1 pm.",
+      "duty_i18n": null,
+      "url": "https://cairnsvet.com.au/",
+      "source_url": "https://cairnsvet.com.au/contact/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Gordonvale Veterinary Surgery",
+      "city": "Gordonvale",
+      "region": "Queensland",
+      "address": "28 Norman St, Gordonvale QLD 4865",
+      "phone": "+61 7 4032 9988",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 9 am to 5 pm, Saturday 8:30 am to noon.",
+      "duty_i18n": null,
+      "url": "https://cairnsvet.com.au/",
+      "source_url": "https://cairnsvet.com.au/contact/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Edmonton Veterinary Clinic",
+      "city": "Edmonton",
+      "region": "Queensland",
+      "address": "179 Bruce Highway, Edmonton QLD 4869",
+      "phone": "+61 7 4045 5555",
+      "emergency_24h": false,
+      "duty": "Open Monday to Friday until 6 pm and Saturday until midday; closed Sunday. After-hours emergencies are referred to Emergency Vets 24/7 in Manunda.",
+      "duty_i18n": null,
+      "url": "https://www.edmontonvetclinic.com.au/",
+      "source_url": "https://www.edmontonvetclinic.com.au/vet-emergencies-in-cairns-weve-got-your-back.html",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Northern Beaches Veterinary Clinic",
+      "city": "Smithfield",
+      "region": "Queensland",
+      "address": "Shop 39/5-21 Faculty Close, Smithfield QLD 4878",
+      "phone": "+61 7 4225 3238",
+      "emergency_24h": false,
+      "duty": "Monday to Friday about 8 am to 5:30 pm, Saturday 8 am to 2 pm (page lists slightly different times in places); closed Sunday. Call to confirm.",
+      "duty_i18n": null,
+      "url": "https://nbvc.com.au/",
+      "source_url": "https://nbvc.com.au/vet-cairns/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Kuranda Veterinary Surgery",
+      "city": "Kuranda",
+      "region": "Queensland",
+      "address": "Cnr Warril Drive & Kennedy Highway, Kuranda QLD 4881",
+      "phone": "+61 7 4093 7283",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8:30 am to 6 pm, Saturday 8:30 am to noon. After-hours emergency calls to the clinic; also serves the Port Douglas area.",
+      "duty_i18n": null,
+      "url": "https://kmvs.com.au/",
+      "source_url": "https://kmvs.com.au/?p=11777",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Mareeba Veterinary Surgery",
+      "city": "Mareeba",
+      "region": "Queensland",
+      "address": "149 Walsh St, Mareeba QLD 4880",
+      "phone": "+61 7 4092 4260",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8:30 am to 5 pm; Saturday services at Kuranda. After-hours emergency calls to the clinic.",
+      "duty_i18n": null,
+      "url": "https://kmvs.com.au/",
+      "source_url": "https://kmvs.com.au/?p=11777",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Westcourt-Cairns",
+      "city": "Westcourt",
+      "region": "Queensland",
+      "address": "270 Mulgrave Road, Westcourt QLD 4870",
+      "phone": "+61 7 4054 1755",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm; closed weekends and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/westcourt-cairns/",
+      "source_url": "https://www.greencrossvets.com.au/vets/westcourt-cairns/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Smithfield",
+      "city": "Smithfield",
+      "region": "Queensland",
+      "address": "Smithfield Shopping Centre, cnr Captain Cook & Kennedy Highway, Smithfield QLD 4878",
+      "phone": "+61 7 4019 7211",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm, Saturday 8 am to 4 pm; closed Sundays and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/smithfield/",
+      "source_url": "https://www.greencrossvets.com.au/vets/smithfield/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Aitkenvale/Central",
+      "city": "Aitkenvale",
+      "region": "Queensland",
+      "address": "251-255 Ross River Road, Aitkenvale QLD 4814",
+      "phone": "+61 7 4779 2500",
+      "emergency_24h": false,
+      "duty": "Monday to Saturday 8 am to 6 pm; closed Sunday. For emergencies call JCU Vet.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/aitkenvale-central/",
+      "source_url": "https://www.greencrossvets.com.au/vets/aitkenvale-central/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Willows/Kirwan",
+      "city": "Kirwan",
+      "region": "Queensland",
+      "address": "68 Thuringowa Drive, Kirwan QLD 4817",
+      "phone": "+61 7 4773 3744",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm; Saturday alternating 8 am to 3 pm / 6 pm (call to confirm); closed Sunday.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/willows-kirwan/",
+      "source_url": "https://www.greencrossvets.com.au/vets/willows-kirwan/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets South Toowoomba",
+      "city": "Toowoomba",
+      "region": "Queensland",
+      "address": "366 Stenner Street, Toowoomba City QLD 4350",
+      "phone": "+61 7 4635 3616",
+      "emergency_24h": false,
+      "duty": "Monday to Thursday 7 am to 7 pm, Friday 7 am to 6 pm, Saturday 8 am to 5 pm; closed Sunday. After hours the clinic refers to UQ VETS Small Animal Hospital.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/south-toowoomba/",
+      "source_url": "https://www.greencrossvets.com.au/vets/south-toowoomba/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Wilsonton",
+      "city": "Wilsonton",
+      "region": "Queensland",
+      "address": "Shop c.01, Wilsonton Shopping Centre, 407 Bridge St, Wilsonton QLD 4350",
+      "phone": "+61 7 4633 1999",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm, Saturday 8 am to 5 pm; closed Sunday. After hours the clinic refers to UQ VETS Small Animal Hospital.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/wilsonton/",
+      "source_url": "https://www.greencrossvets.com.au/vets/wilsonton/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Barolin",
+      "city": "Bundaberg",
+      "region": "Queensland",
+      "address": "180 Barolin St, Bundaberg QLD 4670",
+      "phone": "+61 7 4153 1677",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm, Saturday 8 am to 1 pm; closed Sunday and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/barolin/",
+      "source_url": "https://www.greencrossvets.com.au/vets/barolin/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Bundaberg (Kensington)",
+      "city": "Bundaberg",
+      "region": "Queensland",
+      "address": "21 Johanna Boulevard, Kensington QLD 4670",
+      "phone": "+61 7 3084 6004",
+      "emergency_24h": false,
+      "duty": "Weekdays 9 am to 5 pm (page announces five days a week from 9 November 2026); call to confirm.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/bundaberg/",
+      "source_url": "https://www.greencrossvets.com.au/vets/bundaberg/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Maroochydore",
+      "city": "Maroochydore",
+      "region": "Queensland",
+      "address": "68A Wises Road, Maroochydore QLD 4558",
+      "phone": "+61 7 5443 3803",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm, Saturday 8 am to 4 pm; closed Sunday and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/maroochydore/",
+      "source_url": "https://www.greencrossvets.com.au/vets/maroochydore/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Caloundra",
+      "city": "Caloundra",
+      "region": "Queensland",
+      "address": "Bowman Road & West Terrace, Caloundra QLD 4551",
+      "phone": "+61 7 5491 5368",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm; Saturdays by appointment; closed Sunday and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/caloundra/",
+      "source_url": "https://www.greencrossvets.com.au/vets/caloundra/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Noosa GP + Urgent Care",
+      "city": "Noosaville",
+      "region": "Queensland",
+      "address": "28 Eenie Creek Road, Noosaville QLD 4566",
+      "phone": "+61 7 5353 7005",
+      "emergency_24h": false,
+      "duty": "Urgent care Monday to Friday 5 pm to 11 pm and weekends 8 am to 6 pm; GP clinic Monday to Friday 8 am to 6 pm, Saturday 8 am to 12:30 pm. Not a 24-hour hospital.",
+      "duty_i18n": null,
+      "url": "https://www.emergencyvet.com.au/our-network/aec-home/aec-noosa.html",
+      "source_url": "https://www.emergencyvet.com.au/our-network/aec-home/aec-noosa.html",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Ipswich",
+      "city": "North Ipswich",
+      "region": "Queensland",
+      "address": "Shop BG2, Ipswich Riverlink Shopping Centre, cnr Pine St & The Terrace, North Ipswich QLD 4305",
+      "phone": "+61 7 3073 6709",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm, Saturday 7:30 am to 12:30 pm; closed Sunday and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/ipswich/",
+      "source_url": "https://www.greencrossvets.com.au/vets/ipswich/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Robina",
+      "city": "Robina",
+      "region": "Queensland",
+      "address": "Markeri St, cnr Robina Pkwy, Robina QLD 4226",
+      "phone": "+61 7 5593 0300",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm, Saturday 8 am to 2 pm; closed Sunday and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/robina/",
+      "source_url": "https://www.greencrossvets.com.au/vets/robina/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Southport",
+      "city": "Southport",
+      "region": "Queensland",
+      "address": "Queen Street Village, Shop 27, 129 Queen Street, Southport QLD 4215",
+      "phone": "+61 7 5531 2573",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm, Saturday 8 am to 5 pm; closed Sunday and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/gold-coast-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/gold-coast-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Burleigh Waters",
+      "city": "Burleigh Waters",
+      "region": "Queensland",
+      "address": "9 Classic Way, Burleigh Waters QLD 4220",
+      "phone": "+61 7 5688 5000",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm; closed weekends and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/gold-coast-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/gold-coast-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Palm Beach",
+      "city": "Palm Beach",
+      "region": "Queensland",
+      "address": "46-48 Sixth Ave, Palm Beach QLD 4221",
+      "phone": "+61 7 5534 4688",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm; closed weekends and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/gold-coast-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/gold-coast-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Helensvale Square",
+      "city": "Helensvale",
+      "region": "Queensland",
+      "address": "7/13 Sir John Overall Drive, Helensvale QLD 4212",
+      "phone": "+61 7 5529 8011",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm, Saturday 8 am to 5 pm; closed Sunday and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/gold-coast-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/gold-coast-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Woolloongabba",
+      "city": "Stones Corner",
+      "region": "Queensland",
+      "address": "14 Cleveland Street, Stones Corner QLD 4120",
+      "phone": "+61 7 3456 0555",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 7 am to 8 pm, Saturday 8 am to 6 pm; closed public holidays. Emergencies: AEC Woolloongabba 07 3456 0500.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/brisbane-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/brisbane-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Kedron",
+      "city": "Kedron",
+      "region": "Queensland",
+      "address": "561 Gympie Rd (inside Petbarn), Kedron QLD 4031",
+      "phone": "+61 7 3350 1333",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 7:30 am to 6 pm, Saturday 8 am to 1 pm.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/brisbane-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/brisbane-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Jindalee",
+      "city": "Mount Ommaney",
+      "region": "Queensland",
+      "address": "111 Dandenong Road, Mt Ommaney QLD 4074",
+      "phone": "+61 7 3279 2311",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 7:30 am to 6:30 pm, Saturday 8 am to 3 pm.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/brisbane-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/brisbane-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Capalaba",
+      "city": "Capalaba",
+      "region": "Queensland",
+      "address": "227-229 Old Cleveland Road, Capalaba QLD 4157",
+      "phone": "+61 7 3390 3555",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 7 am to 6 pm, Saturday 8 am to 5 pm.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/brisbane-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/brisbane-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Silkstone-Booval",
+      "city": "Booval",
+      "region": "Queensland",
+      "address": "Shop C, Booval Fair Shopping Centre, Booval QLD 4304",
+      "phone": "+61 7 3281 9622",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 7:30 am to 8 pm, Saturday 7:30 am to 5 pm.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/brisbane-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/brisbane-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Kippa-Ring",
+      "city": "Kippa-Ring",
+      "region": "Queensland",
+      "address": "381 Anzac Ave, Kippa-Ring",
+      "phone": "+61 7 3284 4998",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 7:30 am to 7 pm, Saturday 8:30 am to 4 pm.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/brisbane-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/brisbane-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Cleveland",
+      "city": "Cleveland",
+      "region": "Queensland",
+      "address": "Inside Petbarn, corner 42 Shore Street West & Wellington Street, Cleveland",
+      "phone": "+61 7 3472 1980",
+      "emergency_24h": false,
+      "duty": "Monday to Friday 8 am to 6 pm, Saturday 8 am to noon.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/brisbane-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/brisbane-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Adelaide Veterinary Specialist & Referral Centre / Greencross Vet Centre Norwood (emergency)",
+      "city": "Norwood",
+      "region": "South Australia",
+      "address": "102-104 Magill Road, Norwood SA 5067",
+      "phone": "+61 8 8132 0533",
+      "emergency_24h": true,
+      "duty": "Emergency open 24 hours, 7 days a week. GP clinic Mon-Fri 8 am-6 pm, Sat 8 am-1 pm.",
+      "duty_i18n": null,
+      "url": "https://www.emergencyvet.com.au/our-network/avsarc.html",
+      "source_url": "https://www.greencrossvets.com.au/vets/greencross-vet-centre/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "SASH Adelaide",
+      "city": "Kent Town",
+      "region": "South Australia",
+      "address": "99 Rundle St, Kent Town SA 5067",
+      "phone": "+61 8 8133 5300",
+      "emergency_24h": true,
+      "duty": "Open 24 hours, 365 days a year. Emergencies need no appointment.",
+      "duty_i18n": null,
+      "url": "https://sashvets.com/locations/adelaide/",
+      "source_url": "https://sashvets.com/locations/adelaide/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Roseworthy Veterinary Hospital - Small Animal Hospital (Adelaide University)",
+      "city": "Roseworthy",
+      "region": "South Australia",
+      "address": "1454 Mudla Wirra Road, Roseworthy SA 5371",
+      "phone": "+61 8 8313 1999",
+      "emergency_24h": true,
+      "duty": "Small animal emergencies 24 hours a day, 7 days a week. Please phone before travelling.",
+      "duty_i18n": null,
+      "url": "https://adelaide.edu.au/partners-and-community/community-engagement/clinics-facilities/roseworthy-veterinary-hospital/emergencies/",
+      "source_url": "https://adelaide.edu.au/partners-and-community/community-engagement/clinics-facilities/roseworthy-veterinary-hospital/emergencies/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Murdoch University Animal Hospital",
+      "city": "Murdoch",
+      "region": "Western Australia",
+      "address": "Nyarrie Drive, Murdoch WA 6150",
+      "phone": "+61 1300 652 494",
+      "emergency_24h": true,
+      "duty": "Emergency open 24 hours, every day. Primary care and referrals weekdays 8 am-6 pm.",
+      "duty_i18n": null,
+      "url": "https://murdoch.edu.au/theanimalhospital/emergency",
+      "source_url": "https://murdoch.edu.au/theanimalhospital/emergency",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Animal Emergency Service Cannington (formerly Perth Vet Emergency)",
+      "city": "Cannington",
+      "region": "Western Australia",
+      "address": "T26 Primewest Cannington, 1490 Albany Highway, Cannington WA 6107",
+      "phone": "+61 8 9207 5207",
+      "emergency_24h": true,
+      "duty": "Open 24 hours, 7 days a week, 365 days a year. No appointment required.",
+      "duty_i18n": null,
+      "url": "https://animalemergencyservice.com.au/aes_location/cannington/",
+      "source_url": "https://animalemergencyservice.com.au/contact-us/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Animal Emergency Service Osborne Park (formerly Perth Vet Emergency)",
+      "city": "Osborne Park",
+      "region": "Western Australia",
+      "address": "305 Selby Street North, Osborne Park WA",
+      "phone": "+61 8 9207 5200",
+      "emergency_24h": true,
+      "duty": "Open 24 hours, 7 days a week, 365 days a year. No appointment required.",
+      "duty_i18n": null,
+      "url": "https://animalemergencyservice.com.au/aes_location/osborne-park/",
+      "source_url": "https://animalemergencyservice.com.au/aes_location/osborne-park/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "SASH Perth",
+      "city": "East Perth",
+      "region": "Western Australia",
+      "address": "52-62 Lord St, East Perth WA 6004",
+      "phone": "+61 8 6216 7100",
+      "emergency_24h": true,
+      "duty": "Open 24 hours, 365 days a year. Emergencies need no appointment.",
+      "duty_i18n": null,
+      "url": "https://sashvets.com/locations/perth/",
+      "source_url": "https://sashvets.com/locations/perth/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Albany Veterinary Hospital",
+      "city": "Albany",
+      "region": "Western Australia",
+      "address": "312 Albany Highway, Albany WA 6330",
+      "phone": "+61 8 9841 1788",
+      "emergency_24h": true,
+      "duty": "24-hour emergency service; call immediately. Consults Mon-Fri 8 am-6 pm, Sat 9 am-12 noon.",
+      "duty_i18n": null,
+      "url": "https://albanyvet.com.au/",
+      "source_url": "https://albanyvet.com.au/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "ARH Canberra (Animal Referral Hospital)",
+      "city": "Pialligo",
+      "region": "Australian Capital Territory",
+      "address": "364 Fairbairn Avenue, Pialligo ACT 2609",
+      "phone": "+61 2 6280 6344",
+      "emergency_24h": true,
+      "duty": "Emergency open 24 hours, 7 days a week, every day of the year, including public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.emergencyvet.com.au/our-network/arh-home/arh-canberra.html",
+      "source_url": "https://www.emergencyvet.com.au/our-network/arh-home/arh-canberra.html",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Animal Emergency Service Hobart",
+      "city": "Moonah",
+      "region": "Tasmania",
+      "address": "37 Derwent Park Road, Moonah TAS 7009",
+      "phone": "+61 1300 302 912",
+      "emergency_24h": false,
+      "duty": "Open after hours on weekdays and 24 hours on weekends. Currently closed to the public Mon-Fri 7 am-4 pm; call ahead.",
+      "duty_i18n": null,
+      "url": "https://animalemergencyservice.com.au/?p=19002",
+      "source_url": "https://animalemergencyservice.com.au/contact-us/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Animal Emergency Service Canberra",
+      "city": "Lyneham",
+      "region": "Australian Capital Territory",
+      "address": "2 Barton Highway, Lyneham ACT 2602",
+      "phone": "+61 2 6225 7257",
+      "emergency_24h": false,
+      "duty": "Open after hours on weekdays (midnight-8 am and 6 pm-midnight) and 24 hours on weekends and public holidays. No appointment needed.",
+      "duty_i18n": null,
+      "url": "https://animalemergencyservice.com.au/aes_location/canberra/",
+      "source_url": "https://animalemergencyservice.com.au/aes_location/canberra/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Animal Emergency Hospital Launceston",
+      "city": "Kings Meadows",
+      "region": "Tasmania",
+      "address": "Kings Meadows, Launceston TAS (street address not given on pages opened)",
+      "phone": "+61 3 6310 8499",
+      "emergency_24h": false,
+      "duty": "Weekend and public holiday emergency care, open Friday 5 pm to Monday 8 am. Call first.",
+      "duty_i18n": null,
+      "url": "https://www.launcestonvetclinic.com.au/pet-advice/updates-to-our-out-of-hours-services",
+      "source_url": "https://www.launcestonvetclinic.com.au/pet-advice/updates-to-our-out-of-hours-services",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Capital Veterinary Hospital",
+      "city": "Phillip",
+      "region": "Australian Capital Territory",
+      "address": "67 Townshend Street, Phillip ACT 2606",
+      "phone": "+61 2 6282 5522",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 7 am-7 pm, Sat-Sun 8 am-1 pm. After-hours emergency care for existing clients; open 24 hours on public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.capitalvet.com.au/",
+      "source_url": "https://www.capitalvet.com.au/contact/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Alice Veterinary Centre",
+      "city": "Alice Springs",
+      "region": "Northern Territory",
+      "address": "1/74 Elder Street, Alice Springs NT",
+      "phone": "+61 8 8952 4353",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-5:30 pm, Sat 9 am-12 noon. 24-hour emergency service by phone on the same number.",
+      "duty_i18n": null,
+      "url": "https://ntvet.com.au/alice-veterinary-centre",
+      "source_url": "https://ntvet.com.au/alice-veterinary-centre",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Katherine Veterinary Clinic",
+      "city": "Katherine",
+      "region": "Northern Territory",
+      "address": "32 Second Street, Katherine NT",
+      "phone": "+61 8 8972 3599",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-5:30 pm, Sat 9 am-12 noon, Sun emergencies only. 24-hour emergency service on the same number.",
+      "duty_i18n": null,
+      "url": "https://www.ntvet.com.au/katherine-veterinary-clinic.html",
+      "source_url": "https://www.ntvet.com.au/katherine-veterinary-clinic.html",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Howard Springs Vets",
+      "city": "Howard Springs",
+      "region": "Northern Territory",
+      "address": "43 Smyth Road, Howard Springs NT 0835",
+      "phone": "+61 8 8983 1458",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-6 pm, Sat 8 am-4 pm, Sun and public holidays emergency only. Full after-hours emergency service: 0428 810 596.",
+      "duty_i18n": null,
+      "url": "https://howardspringsvets.com.au/",
+      "source_url": "https://howardspringsvets.com.au/contact-howard-springs-vet-clinic/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Humpty Doo Vet Hospital",
+      "city": "Humpty Doo",
+      "region": "Northern Territory",
+      "address": "12 Vereker St, Humpty Doo NT 0836",
+      "phone": "+61 8 8988 3340",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-6 pm, Sat 9 am-2 pm, Sun closed. After hours: call the clinic and you are put through to the on-call clinic.",
+      "duty_i18n": null,
+      "url": "https://humptydoovet.com.au/",
+      "source_url": "https://humptydoovet.com.au/contact/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Darwin Vet Hospital",
+      "city": "Wanguri",
+      "region": "Northern Territory",
+      "address": "65 Vanderlin Drive, Wanguri NT 0810",
+      "phone": "+61 8 8927 9033",
+      "emergency_24h": false,
+      "duty": "Mon-Fri about 8 am-6:30 pm, Sat 8 am-2 pm. Emergency service available; call (phone listed as all hours).",
+      "duty_i18n": null,
+      "url": "https://www.darwinvet.com.au/",
+      "source_url": "https://www.darwinvet.com.au/contact-us-1",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Walkerville Vet",
+      "city": "Walkerville",
+      "region": "South Australia",
+      "address": "142 North East Road, Walkerville SA",
+      "phone": "+61 8 8344 2000",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-7 pm, Sat 9 am-1 pm. No after-hours cover; use an emergency hospital.",
+      "duty_i18n": null,
+      "url": "https://www.walkervillevet.com.au/",
+      "source_url": "https://www.walkervillevet.com.au/contact/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "AdelaideVet Goodwood",
+      "city": "Westbourne Park",
+      "region": "South Australia",
+      "address": "421 Goodwood Road, Westbourne Park SA 5041",
+      "phone": "+61 8 8169 9755",
+      "emergency_24h": false,
+      "duty": "Call the clinic for consult hours.",
+      "duty_i18n": null,
+      "url": "https://www.adelaidevet.com.au/contact-us",
+      "source_url": "https://www.adelaidevet.com.au/contact-us",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "AdelaideVet Prospect",
+      "city": "Prospect",
+      "region": "South Australia",
+      "address": "318 Prospect Road, Prospect SA 5082",
+      "phone": "+61 8 8169 9733",
+      "emergency_24h": false,
+      "duty": "Call the clinic for consult hours.",
+      "duty_i18n": null,
+      "url": "https://www.adelaidevet.com.au/contact-us",
+      "source_url": "https://www.adelaidevet.com.au/contact-us",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "AdelaideVet Stirling",
+      "city": "Stirling",
+      "region": "South Australia",
+      "address": "77 Mt Barker Road, Stirling SA 5152",
+      "phone": "+61 8 8169 9766",
+      "emergency_24h": false,
+      "duty": "Call the clinic for consult hours.",
+      "duty_i18n": null,
+      "url": "https://www.adelaidevet.com.au/contact-us",
+      "source_url": "https://www.adelaidevet.com.au/contact-us",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "AdelaideVet Trinity Gardens",
+      "city": "Trinity Gardens",
+      "region": "South Australia",
+      "address": "301 Magill Road, Trinity Gardens SA 5068",
+      "phone": "+61 8 8169 9777",
+      "emergency_24h": false,
+      "duty": "Call the clinic for consult hours.",
+      "duty_i18n": null,
+      "url": "https://www.adelaidevet.com.au/contact-us",
+      "source_url": "https://www.adelaidevet.com.au/contact-us",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "South East Vets",
+      "city": "Mount Gambier",
+      "region": "South Australia",
+      "address": "314 Commercial Street West, Mount Gambier SA 5290",
+      "phone": "+61 8 8725 5855",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8:30 am-5:30 pm, Sat 8:30-11:30 am. Emergency services outside hours; please call before you come in.",
+      "duty_i18n": null,
+      "url": "https://southeastvets.com.au/",
+      "source_url": "https://southeastvets.com.au/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Holden Hill",
+      "city": "Holden Hill",
+      "region": "South Australia",
+      "address": "Shop 1, 578 North East Road, Holden Hill SA 5088",
+      "phone": "+61 8 7070 0107",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-6 pm, Sat 8 am-5 pm.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/adelaide-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/adelaide-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Noarlunga",
+      "city": "Noarlunga Centre",
+      "region": "South Australia",
+      "address": "84 Dyson Road, Noarlunga Centre SA 5168",
+      "phone": "+61 8 8185 8000",
+      "emergency_24h": false,
+      "duty": "Mon-Wed and Fri 8:30 am-5:30 pm, Thu 8:30 am-7 pm, Sat 8:30 am-2:30 pm.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/noarlunga/",
+      "source_url": "https://www.greencrossvets.com.au/vets/adelaide-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Para Vista",
+      "city": "Para Vista",
+      "region": "South Australia",
+      "address": "2/400 Montague Road, Para Vista SA 5093",
+      "phone": "+61 8 8264 5441",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-7 pm, Sat 9 am-12 noon.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/para-vista/",
+      "source_url": "https://www.greencrossvets.com.au/vets/adelaide-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Paradise",
+      "city": "Paradise",
+      "region": "South Australia",
+      "address": "655 Lower North East Road, Paradise SA 5075",
+      "phone": "+61 8 8337 4922",
+      "emergency_24h": false,
+      "duty": "Mon-Wed and Fri 8 am-6:30 pm, Thu 8 am-5:30 pm, Sat 8 am-3 pm.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/paradise/",
+      "source_url": "https://www.greencrossvets.com.au/vets/adelaide-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Bunbury Animal Hospital (Apiam)",
+      "city": "Bunbury",
+      "region": "Western Australia",
+      "address": "Lot 12 Bussell Highway, Bunbury WA",
+      "phone": "+61 8 9796 5800",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-6 pm, Sat 8:30 am-12 noon, Sun closed.",
+      "duty_i18n": null,
+      "url": "https://www.apiam.com.au/locations/bunbury-animal-hospital/",
+      "source_url": "https://www.apiam.com.au/locations/bunbury-animal-hospital/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Animal Emergency Centre Midland",
+      "city": "Midland",
+      "region": "Western Australia",
+      "address": "227 Great Eastern Highway, Midland WA 6056",
+      "phone": "+61 8 6500 3010",
+      "emergency_24h": false,
+      "duty": "Open after hours and weekends; call ahead as hours may change at short notice.",
+      "duty_i18n": null,
+      "url": "https://www.emergencyvet.com.au/our-network/aec-home/aec-midland.html",
+      "source_url": "https://www.emergencyvet.com.au/our-network/aec-home/aec-midland.html",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Subiaco",
+      "city": "Subiaco",
+      "region": "Western Australia",
+      "address": "410 Roberts Road, Subiaco WA 6008",
+      "phone": "+61 8 6500 3013",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-6 pm; closed weekends and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/perth-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/perth-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Cannington",
+      "city": "Cannington",
+      "region": "Western Australia",
+      "address": "1375 Albany Highway, Cannington WA 6107",
+      "phone": "+61 8 6500 3015",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-6 pm; closed weekends and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/perth-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/perth-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Nedlands",
+      "city": "Nedlands",
+      "region": "Western Australia",
+      "address": "109 Stirling Highway, Nedlands WA 6009",
+      "phone": "+61 8 9386 3456",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 7:30 am-6 pm, Sat 8:30 am-1 pm; closed Sun and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/perth-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/perth-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Joondalup",
+      "city": "Joondalup",
+      "region": "Western Australia",
+      "address": "7 Honeybush Drive (inside Petbarn), Joondalup WA 6027",
+      "phone": "+61 8 6500 3011",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-6 pm, Sat 8 am-5 pm; closed Sun and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/perth-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/perth-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Midland",
+      "city": "Midland",
+      "region": "Western Australia",
+      "address": "227 Great Eastern Highway, Midland WA 6056",
+      "phone": "+61 8 6500 3012",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-6 pm; closed weekends and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/perth-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/perth-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets O'Connor",
+      "city": "O'Connor",
+      "region": "Western Australia",
+      "address": "5/320 South Street, O'Connor WA 6163",
+      "phone": "+61 8 9337 5833",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-6 pm, Sat 8 am-12 noon; closed Sun and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/perth-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/perth-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Bedford",
+      "city": "Bedford",
+      "region": "Western Australia",
+      "address": "87 Rosebery Street, Bedford WA",
+      "phone": "+61 8 9371 2456",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-6 pm, Sat 8 am-4:30 pm; closed Sun and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/perth-vets/",
+      "source_url": "https://www.greencrossvets.com.au/vets/perth-vets/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Mandurah",
+      "city": "Mandurah",
+      "region": "Western Australia",
+      "address": "Shop 1, 2-16 Lakes Road, Mandurah WA 6210",
+      "phone": "+61 8 6500 3013",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-6 pm, Sat 8 am-5 pm; closed Sun and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/mandurah/",
+      "source_url": "https://www.greencrossvets.com.au/vets/mandurah/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Launceston Veterinary Clinic",
+      "city": "Launceston",
+      "region": "Tasmania",
+      "address": "78-96 Wellington Street, Launceston TAS 7250",
+      "phone": "+61 3 6344 4566",
+      "emergency_24h": false,
+      "duty": "Mon-Fri about 8:30 am-6:30 pm (Tue varies); closed weekends and public holidays. No after-hours service; use an emergency hospital.",
+      "duty_i18n": null,
+      "url": "https://launcestonvetclinic.com.au/",
+      "source_url": "https://www.launcestonvetclinic.com.au/emergency-vet",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Mowbray Veterinary Clinic",
+      "city": "Launceston",
+      "region": "Tasmania",
+      "address": "9 Pleasant Street, Mowbray, Launceston TAS 7248",
+      "phone": "+61 3 6326 4900",
+      "emergency_24h": false,
+      "duty": "Call for opening hours. Weekdays Mon-Thu call the clinic for triage; Friday evening to Monday morning use Animal Emergency Hospital Launceston (03 6310 8499).",
+      "duty_i18n": null,
+      "url": "https://mowbrayvet.com.au/",
+      "source_url": "https://mowbrayvet.com.au/faq/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Hobart Animal Hospital",
+      "city": "Hobart",
+      "region": "Tasmania",
+      "address": "198 Murray Street, Hobart TAS 7000",
+      "phone": "+61 3 6236 9787",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-6 pm, Sat 9 am-2 pm. After hours: Animal Emergency Service Hobart 1300 302 912.",
+      "duty_i18n": null,
+      "url": "https://hobartanimalhospital.com.au/",
+      "source_url": "https://hobartanimalhospital.com.au/contact/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Kingston Animal Hospital",
+      "city": "Kingston",
+      "region": "Tasmania",
+      "address": "1 Freeman Street, Kingston TAS 7050",
+      "phone": "+61 3 6229 5900",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-6 pm, Sat 8:30 am-12:30 pm, Sun closed. After-hours emergencies: 1300 302 912.",
+      "duty_i18n": null,
+      "url": "https://www.kingstonanimalhospital.com.au/",
+      "source_url": "https://www.kingstonanimalhospital.com.au/our-team/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Lindisfarne Veterinary Clinic",
+      "city": "Lindisfarne",
+      "region": "Tasmania",
+      "address": "27 Lincoln Street, Lindisfarne TAS 7015",
+      "phone": "+61 3 6243 0083",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-6:30 pm, Sat 9 am-1 pm.",
+      "duty_i18n": null,
+      "url": "https://lindisfarnevet.com.au/",
+      "source_url": "https://lindisfarnevet.com.au/vet-bellerive/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "VetCentre Montrose",
+      "city": "Montrose",
+      "region": "Tasmania",
+      "address": "488 Main Road, Montrose TAS 7010",
+      "phone": "+61 3 6272 3599",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-6 pm, Sat 9 am-1 pm; closed Sun and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.vetcentre.net.au/",
+      "source_url": "https://www.vetcentre.net.au/petassist-safetynet/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "VetCentre New Norfolk",
+      "city": "New Norfolk",
+      "region": "Tasmania",
+      "address": "57 Burnett Street, New Norfolk TAS 7140",
+      "phone": "+61 3 6261 1573",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-6 pm; closed weekends and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.vetcentre.net.au/",
+      "source_url": "https://www.vetcentre.net.au/petassist-safetynet/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Burnie Veterinary Centre",
+      "city": "Upper Burnie",
+      "region": "Tasmania",
+      "address": "250 Mount Street, Upper Burnie TAS 7320",
+      "phone": "+61 3 6431 5875",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 9 am-5 pm; closed weekends and public holidays.",
+      "duty_i18n": null,
+      "url": "https://burnievetcentre.com.au/",
+      "source_url": "https://burnievetcentre.com.au/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Gungahlin Veterinary Hospital",
+      "city": "Gungahlin",
+      "region": "Australian Capital Territory",
+      "address": "21 Crinigan Circle, Gungahlin ACT",
+      "phone": "+61 2 6242 7276",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8 am-7 pm, Sat 8 am-2 pm. No after-hours service at the hospital.",
+      "duty_i18n": null,
+      "url": "https://gungahlinvet.com.au/",
+      "source_url": "https://gungahlinvet.com.au/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "AU",
+      "kind": "clinic",
+      "name": "Greencross Vets Tuggeranong - All Creatures",
+      "city": "Calwell",
+      "region": "Australian Capital Territory",
+      "address": "Cnr Duggan Street and Tharwa Drive, Calwell ACT 2905",
+      "phone": "+61 2 6292 1900",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8:30 am-6 pm; closed weekends and public holidays.",
+      "duty_i18n": null,
+      "url": "https://www.greencrossvets.com.au/vets/tuggeranong-all-creatures/",
+      "source_url": "https://www.greencrossvets.com.au/vets/tuggeranong-all-creatures/",
+      "checked": "2026-11-09"
     },
     {
       "country": "BA",
@@ -97142,6 +98860,246 @@
       "url": "https://www.anicura.no/klinikker/",
       "source_url": "https://www.anicura.no/akuttkliniker/",
       "checked": "2026-11-03"
+    },
+    {
+      "country": "NZ",
+      "kind": "clinic",
+      "name": "Massey University Pet Emergency Centre (Te Pokapu Ohotata)",
+      "city": "Palmerston North",
+      "region": "Manawatu-Whanganui",
+      "address": "Massey University Veterinary Teaching Hospital, University Avenue, Palmerston North 4474",
+      "phone": "+64 800 738 363",
+      "emergency_24h": true,
+      "duty": "Open 24 hours from Monday 8am to Saturday 8am. Weekend emergency care (Saturday 8am to Monday 8am) is for Community Practice clients only; other weekend callers are directed to Totally Vets Fielding, +64 6 324 0812. Consultation fee on arrival; 50% deposit if the pet is hospitalised.",
+      "duty_i18n": null,
+      "url": "https://vethospital.massey.ac.nz",
+      "source_url": "https://massey.ac.nz/about/clinics-and-services-for-the-public/massey-vets/companion-animal-hospital/pet-emergency-centre",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "NZ",
+      "kind": "clinic",
+      "name": "VSA Sylvia Park - Animal Emergency",
+      "city": "Auckland",
+      "region": "Auckland",
+      "address": "1 Te Apunga Place, Mt Wellington (Sylvia Park), Auckland 1060",
+      "phone": "+64 9 849 2121",
+      "emergency_24h": true,
+      "duty": "Accident and emergency vets 24 hours a day. Walk-ins are taken; calling ahead is advised.",
+      "duty_i18n": null,
+      "url": "https://www.vsahospital.co.nz/services/vsa-sylvia-park/",
+      "source_url": "https://vsahospital.co.nz/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "NZ",
+      "kind": "clinic",
+      "name": "VSA Auckland West - Animal Emergency",
+      "city": "Henderson, Auckland",
+      "region": "Auckland",
+      "address": "1/133 Central Park Drive, Henderson, Auckland 0610",
+      "phone": "+64 9 849 2121",
+      "emergency_24h": true,
+      "duty": "Accident and emergency vets 24 hours a day.",
+      "duty_i18n": null,
+      "url": "https://vsahospital.co.nz/",
+      "source_url": "https://vsahospital.co.nz/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "NZ",
+      "kind": "clinic",
+      "name": "ARC After Hours (North Shore)",
+      "city": "Schnapper Rock, Auckland",
+      "region": "Auckland",
+      "address": "224 Albany Highway, Schnapper Rock, Auckland 0632",
+      "phone": "+64 9 281 5815",
+      "emergency_24h": false,
+      "duty": "After-hours emergency clinic. Call before you go.",
+      "duty_i18n": null,
+      "url": "https://www.theskinvet.co.nz/contact-the-skin-vet/",
+      "source_url": "https://www.theskinvet.co.nz/contact-the-skin-vet/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "NZ",
+      "kind": "clinic",
+      "name": "ARC After Hours (Central Auckland)",
+      "city": "Freemans Bay, Auckland",
+      "region": "Auckland",
+      "address": "8 Hereford Street, Freemans Bay, Auckland 1011",
+      "phone": "+64 9 281 5815",
+      "emergency_24h": false,
+      "duty": "After-hours emergency clinic. Call before you go.",
+      "duty_i18n": null,
+      "url": "https://www.theskinvet.co.nz/contact-the-skin-vet/",
+      "source_url": "https://www.theskinvet.co.nz/contact-the-skin-vet/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "NZ",
+      "kind": "clinic",
+      "name": "Manukau After Hours Veterinary Clinic",
+      "city": "Manukau, Auckland",
+      "region": "Auckland",
+      "address": "15 Jack Conway Avenue, Manukau 1204",
+      "phone": "+64 9 277 8383",
+      "emergency_24h": false,
+      "duty": "After-hours emergency clinic, not open 24 hours: weekdays from 6pm to 8am; weekends from midday Saturday to 8am Monday.",
+      "duty_i18n": null,
+      "url": "https://jobs.vettimes.co.uk/employer/53563/manukau-after-hours-veterinary-clinic/",
+      "source_url": "https://www.theskinvet.co.nz/contact-the-skin-vet/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "NZ",
+      "kind": "clinic",
+      "name": "The Referral Centre (24/7 emergency and critical care)",
+      "city": "Hamilton",
+      "region": "Waikato",
+      "address": "574 Anglesea Street, Hamilton",
+      "phone": "+64 800 83 83 97",
+      "emergency_24h": false,
+      "duty": "Specialist referral and emergency hospital. Contact page lists business hours Mon-Fri 8am-6pm; call to ask about emergency care.",
+      "duty_i18n": null,
+      "url": "https://thereferralcentre.co.nz/contact-us/",
+      "source_url": "https://thereferralcentre.co.nz/contact-us/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "NZ",
+      "kind": "clinic",
+      "name": "Wellington After Hours Vet Clinic",
+      "city": "Ngauranga, Wellington",
+      "region": "Wellington",
+      "address": "5 McCormack Place, Ngauranga, Wellington 6035",
+      "phone": "+64 4 473 7545",
+      "emergency_24h": false,
+      "duty": "Regional after-hours emergency clinic for Wellington. Call first so staff expect you.",
+      "duty_i18n": null,
+      "url": "http://www.wellingtonafterhoursvetclinic.co.nz",
+      "source_url": "https://croftondownsvet.co.nz/emergency-vet",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "NZ",
+      "kind": "clinic",
+      "name": "Crofton Downs Veterinary Clinic",
+      "city": "Wellington",
+      "region": "Wellington",
+      "address": "4 Thatcher Crescent, Crofton Downs, Wellington",
+      "phone": "+64 4 479 0570",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 7:30am-7pm, Sat 9am-4pm, closed Sundays and public holidays. After hours, emergencies go to Wellington After Hours Vet Clinic, +64 4 473 7545.",
+      "duty_i18n": null,
+      "url": "https://croftondownsvet.co.nz/emergency-vet",
+      "source_url": "https://croftondownsvet.co.nz/emergency-vet",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "NZ",
+      "kind": "clinic",
+      "name": "Christchurch Afterhours Veterinary Clinic",
+      "city": "Christchurch",
+      "region": "Canterbury",
+      "address": "146 Antigua Street, Addington, Christchurch",
+      "phone": "+64 3 366 1052",
+      "emergency_24h": false,
+      "duty": "After-hours emergency clinic: Mon-Thu 7pm-8am; Fri 7pm to Mon 8am; open all public holidays. Not open 24 hours on weekdays.",
+      "duty_i18n": null,
+      "url": "https://www.afterhoursvet.co.nz/",
+      "source_url": "https://www.afterhoursvet.co.nz/",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "NZ",
+      "kind": "clinic",
+      "name": "Hornby Veterinary Centre",
+      "city": "Christchurch",
+      "region": "Canterbury",
+      "address": "7 Tower Street, Hornby, Christchurch 8042",
+      "phone": "+64 3 349 5311",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8am-7pm, Sat 8am-2pm, closed Sunday. After hours, call Christchurch Afterhours Veterinary Clinic, +64 3 366 1052.",
+      "duty_i18n": null,
+      "url": "https://web6q.lifelearn.com/hornbyvc/?p=214",
+      "source_url": "https://web6q.lifelearn.com/hornbyvc/?p=214",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "NZ",
+      "kind": "clinic",
+      "name": "Rangiora Vet Centre",
+      "city": "Rangiora",
+      "region": "Canterbury",
+      "address": "181 Lehmans Road, Rangiora",
+      "phone": "+64 3 313 7438",
+      "emergency_24h": false,
+      "duty": "See the clinic's After Hours page for out-of-hours arrangements.",
+      "duty_i18n": null,
+      "url": "https://rangioravetcentre.squarespace.com/sa-team-rangiora",
+      "source_url": "https://rangioravetcentre.squarespace.com/sa-team-rangiora",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "NZ",
+      "kind": "clinic",
+      "name": "VetSouth Invercargill",
+      "city": "Invercargill",
+      "region": "Southland",
+      "address": "29 Findlay Road, Ascot, Invercargill",
+      "phone": "+64 3 217 6688",
+      "emergency_24h": false,
+      "duty": "Mon, Tue, Thu, Fri 8am-5:30pm; Wed 8am-8pm; Sat 9am-1pm. 24-hour on-call service for small animals: call the clinic number.",
+      "duty_i18n": null,
+      "url": "https://vetsouth.co.nz/clinic-invercargill",
+      "source_url": "https://vetsouth.co.nz/clinic-invercargill",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "NZ",
+      "kind": "clinic",
+      "name": "Remarkable Vet Queenstown (SPCA Queenstown Vet Partnership)",
+      "city": "Queenstown",
+      "region": "Otago",
+      "address": "18 Glenda Drive, Frankton, Queenstown 9300",
+      "phone": "+64 3 473 8252",
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8:30am-5:30pm, Sat 9am-1pm, closed Sunday; hours may differ on public holidays. Call for advice in an emergency.",
+      "duty_i18n": null,
+      "url": "https://www.spca.nz/centre/queenstown-vet-partnership",
+      "source_url": "https://www.spca.nz/centre/queenstown-vet-partnership",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "NZ",
+      "kind": "clinic",
+      "name": "Petfirst Queenstown",
+      "city": "Queenstown",
+      "region": "Otago",
+      "address": "1092 Frankton Road, Queenstown 9300",
+      "phone": null,
+      "emergency_24h": false,
+      "duty": "Mon-Fri 8am-6pm, Sat 9am-2pm, closed Sunday. After-hours emergencies: see the clinic locator on the website.",
+      "duty_i18n": null,
+      "url": "https://www.vetent.co.nz/store-locator/vetent-queenstown",
+      "source_url": "https://www.vetent.co.nz/store-locator/vetent-queenstown",
+      "checked": "2026-11-09"
+    },
+    {
+      "country": "NZ",
+      "kind": "poison_line",
+      "name": "NZ Animal Poisons Helpline",
+      "city": "New Zealand-wide",
+      "region": "Nationwide",
+      "address": null,
+      "phone": "+64 800 869 738",
+      "emergency_24h": false,
+      "duty": "Poisons advice line for New Zealand pet owners and vet clinics. Charges apply. For a poisoned animal also call your vet; the human National Poisons Centre refers animal cases here.",
+      "duty_i18n": null,
+      "url": "https://poisons.co.nz/animal-helpline",
+      "source_url": "https://poisons.co.nz/animal-helpline",
+      "checked": "2026-11-09"
     },
     {
       "country": "PL",
