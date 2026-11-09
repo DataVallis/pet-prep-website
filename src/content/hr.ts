@@ -1253,7 +1253,7 @@ const hr: Dictionary = {
             "Objavljuju roditelji, ne djeca. Samo roditelj odlučuje što ide na internet.",
             "Bez dječjih lica, imena, škola ili adresa – i nikad dijete iz druge obitelji.",
             "Ponovno objavljujemo samo uz dopuštenje roditelja i uklanjamo objavu kad god to zatražiš.",
-            "Dječje izjave uvijek su stvarne. Nikad ne izmišljamo niti „uljepšavamo“ ono što je dijete reklo.",
+            "Dječje izjave uvijek su stvarne. Nikad ne izmišljamo ni „uljepšavamo“ ono što je dijete reklo.",
             "To je poziv, a ne obveza. Nema niza dana koji moraš održati, nema pritiska – samo dobar razlog da izađeš van.",
           ],
         },
