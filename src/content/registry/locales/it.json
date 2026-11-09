@@ -761,6 +761,13 @@
       "synonyms": [
         "Coton de Tulear"
       ]
+    },
+    "english_setter": {
+      "name": "Setter inglese",
+      "slug": "setter-inglese",
+      "synonyms": [
+        "English Setter"
+      ]
     }
   },
   "suitability_labels": {
