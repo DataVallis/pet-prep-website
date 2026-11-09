@@ -890,6 +890,13 @@
         "Coton",
         "Coton de Tulear"
       ]
+    },
+    "english_setter": {
+      "name": "Seter angielski",
+      "slug": "seter-angielski",
+      "synonyms": [
+        "English Setter"
+      ]
     }
   },
   "suitability_labels": {
