@@ -481,6 +481,7 @@ const fi: RegistryCopy = {
       dna_clad: "DNA-testi: koiran leukosyyttien adheesiovaje (CLAD), perinnöllinen immuunipuutos",
       dna_ncl8: "DNA-testi neuronaalisen seroidilipofuskinoosin (NCL8) varalta – perinnöllinen hermoston sairaus",
       dna_pra_rcd1: "DNA-testi: etenevä verkkokalvon surkastuma (rcd1)",
+      dna_pra4: "DNA-testi: etenevä verkkokalvon surkastuma (PRA4)",
       dna_vwd2: "DNA-testi: von Willebrandin tauti, tyyppi 2 (vWD2) – perinnöllinen verenvuotohäiriö",
       dna_l2hga: "DNA-testi: L-2-hydroksiglutaariasiduria (L-2-HGA) – perinnöllinen hermoston aineenvaihduntasairaus",
       dna_pll: "DNA-testi: primaarinen linssiluksaatio (PLL) – perinnöllinen silmäsairaus, jossa mykiö siirtyy paikaltaan",

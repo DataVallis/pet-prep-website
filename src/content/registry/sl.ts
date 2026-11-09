@@ -373,6 +373,7 @@ const sl: RegistryCopy = {
       dna_clad: "Test DNK za pomanjkanje adhezije levkocitov (CLAD), dedno motnjo imunskega sistema",
       dna_ncl8: "Test DNK za nevronsko ceroidno lipofuscinozo (NCL8), dedno bolezen živčevja",
       dna_pra_rcd1: "Test DNK za progresivno atrofijo mrežnice (rcd1)",
+      dna_pra4: "Test DNK za progresivno atrofijo mrežnice (PRA4)",
       dna_vwd2: "Test DNK za von Willebrandovo bolezen tipa 2 (vWD2), dedno motnjo strjevanja krvi",
       dna_l2hga: "Test DNK za L-2-hidroksiglutarno acidurijo (L-2-HGA), dedno presnovno bolezen živčevja",
       dna_pll: "Test DNK za primarno luksacijo leče (PLL), dedno bolezen oči, pri kateri leča zdrsne s svojega mesta",
@@ -650,6 +651,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča več kot 2 uri gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da potrebuje veliko hišo z velikim vrtom, ter ga uvršča v 1. kategorijo programa Breed Watch. PDSA piše, da angleški setri obožujejo otroke in druge živali in so zato odlični za družine, ter svetuje česanje 2- do 3-krat na teden; PetMD svetuje kopanje vsakih šest do osem tednov in piše, da ne marajo biti dolgo sami, VCA pa omenja nekaj striženja in urejanja dlake vsak mesec.",
       ],
       sources: ["S730", "S731", "S732", "S733", "S734", "S10"],
+    },
+    lhasa_apso: {
+      aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
+      text: [
+        "Lhasa apso je majhen spremljevalni pes iz Tibeta; The Royal Kennel Club piše, da so ga sprva imeli tibetanski menihi kot spremljevalca in čuvaja. Je majhen pes z dolgo dlako; VCA navaja višino 10–11 palcev (približno 25–28 cm) in težo 13–15 funtov (približno 6–7 kg); pes te velikosti doraste pri približno 9–12 mesecih (PetMD), The Royal Kennel Club pa navaja življenjsko dobo več kot 12 let.",
+        "The Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje vsak dan, navaja, da mu dlaka ne izpada in da je primeren za stanovanje, ter ga uvršča v 1. kategorijo programa Breed Watch. PDSA piše, da se lhasa apsi ob pravi socializaciji v mladičkovi dobi dobro razumejo z otroki in drugimi živalmi v gospodinjstvu ter da so do tujcev nekoliko bolj zadržani; WebMD svetuje kopanje vsaj enkrat na dva tedna, striženje krempljev vsake 3 do 4 tedne in čim bolj redno ščetkanje zob.",
+      ],
+      sources: ["S740", "S741", "S742", "S743", "S10"],
     },
     coton_de_tulear: {
       aka: "coton, cotonček, coton de tuléar, Coton de Tulear, kraljevi pes",

@@ -363,6 +363,7 @@ const en: RegistryCopy = {
       dna_clad: "DNA test for canine leukocyte adhesion deficiency (CLAD), an inherited immune disorder",
       dna_ncl8: "DNA test for neuronal ceroid lipofuscinosis (NCL8), an inherited disease of the nervous system",
       dna_pra_rcd1: "DNA test for progressive retinal atrophy (rcd1)",
+      dna_pra4: "DNA test for progressive retinal atrophy (PRA4)",
       dna_vwd2: "DNA test for von Willebrand disease type 2 (vWD2), an inherited bleeding disorder",
       dna_l2hga: "DNA test for L-2-hydroxyglutaric aciduria (L-2-HGA), an inherited metabolic disease of the nervous system",
       dna_pll: "DNA test for primary lens luxation (PLL), an inherited eye disease in which the lens slips out of place",
@@ -630,6 +631,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends more than 2 hours of exercise a day and grooming more than once a week, says the breed sheds and suits a large house with a large garden, and lists it in Breed Watch Category 1. The PDSA says English Setters love children and other pets, making them perfect for families, and advises grooming 2–3 times a week; PetMD suggests a bath every six to eight weeks and says they don't like being left alone for long, and VCA mentions some clipping and trimming every month.",
       ],
       sources: ["S730", "S731", "S732", "S733", "S734", "S10"],
+    },
+    lhasa_apso: {
+      aka: "Lhasa, Apso, Lasa Apso",
+      text: [
+        "The Lhasa Apso is a small companion dog from Tibet; the Royal Kennel Club says it was originally kept by Tibetan monks as a companion and watchdog. It is a small dog with a long coat; VCA gives a height of 10–11 inches (about 25–28 cm) and a weight of 13–15 pounds (about 6–7 kg); a dog of this size is fully grown at about 9–12 months (PetMD), and the Royal Kennel Club gives a lifespan of over 12 years.",
+        "The Royal Kennel Club recommends up to 1 hour of exercise a day and grooming every day, says the breed does not shed and suits a flat or apartment, and lists it in Breed Watch Category 1. The PDSA says Lhasa Apsos get along well with children and other pets in the household, given the right socialisation as puppies, and can be a little warier of strangers; WebMD suggests a bath at least once every two weeks, clipping the nails every 3 to 4 weeks and brushing the teeth as regularly as possible.",
+      ],
+      sources: ["S740", "S741", "S742", "S743", "S10"],
     },
     coton_de_tulear: {
       aka: "Coton, Coton de Tuléar, Royal Dog of Madagascar",
