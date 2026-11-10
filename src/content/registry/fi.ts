@@ -613,6 +613,7 @@ const fi: RegistryCopy = {
     glaucoma_poag:
       "Rodulla voi esiintyä primaarista avokulmaglaukoomaa, jossa silmän sisään kertyy nestettä, mikä aiheuttaa kipua ja mahdollisesti sokeutta; vanhemmille on olemassa DNA-testi.",
     skin_fold_dermatitis: "Löysä iho muodostaa poimuja, jotka voivat arastua ja tulehtua; ne on tarkistettava joka päivä ja pidettävä puhtaina ja kuivina.",
+    skin_fold_care: "Kasvojen ihopoimut voivat arastua ja tulehtua (poimudermatiitti); ne on puhdistettava ja kuivattava säännöllisesti.",
     eyelid_problems:
       "Rodulla voi esiintyä luomiongelmia: sisäänpäin (entropium) tai ulospäin (ektropium) kääntyneitä luomia ja kirsikkasilmää, jossa vilkkuluomi pullahtaa esiin.",
     skin_allergy_face_folds: "Rodulla voi esiintyä kutinaa aiheuttavia ihoallergioita (atopiaa), ja kasvojen ihopoimut on puhdistettava joka päivä.",

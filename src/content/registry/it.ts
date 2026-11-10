@@ -492,6 +492,7 @@ const it: RegistryCopy = {
     eyelids_turned: "Nella razza possono presentarsi palpebre rivolte verso l’interno (entropion) o verso l’esterno (ectropion); chiedi se gli occhi dei genitori sono stati controllati.",
     glaucoma_poag: "Nella razza può presentarsi il glaucoma primario ad angolo aperto, in cui il liquido si accumula all’interno dell’occhio e causa dolore e, a volte, cecità; esiste un test del DNA per i genitori.",
     skin_fold_dermatitis: "La pelle abbondante forma pieghe che possono irritarsi e infettarsi; vanno controllate ogni giorno e tenute pulite e asciutte.",
+    skin_fold_care: "Le pieghe della pelle sul muso possono irritarsi e infettarsi (dermatite delle pieghe); vanno pulite e asciugate regolarmente.",
     eyelid_problems: "Nella razza possono presentarsi problemi alle palpebre: palpebre rivolte verso l’interno (entropion) o verso l’esterno (ectropion) e «cherry eye», in cui la terza palpebra fuoriesce.",
     skin_allergy_face_folds: "Nella razza possono presentarsi allergie cutanee (atopia) che causano prurito, e le pieghe della pelle sul muso vanno pulite ogni giorno.",
     skin_ear_allergies: "Nella razza possono presentarsi allergie ambientali, che possono portare a infezioni ricorrenti della pelle o delle orecchie; PetMD suggerisce di pulire le orecchie una volta alla settimana nei cani con allergie.",

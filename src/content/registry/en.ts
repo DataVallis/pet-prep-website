@@ -460,6 +460,7 @@ const en: RegistryCopy = {
     eyelids_turned: "Eyelids that turn inwards (entropion) or outwards (ectropion) can occur in the breed; ask for eye-checked parents.",
     glaucoma_poag: "Primary open-angle glaucoma, where fluid builds up inside the eye and causes pain and possibly blindness, can occur in the breed; a DNA test for the parents exists.",
     skin_fold_dermatitis: "The loose skin forms folds that can become sore and infected; they need checking every day and keeping clean and dry.",
+    skin_fold_care: "The folds of skin on the face can become sore and infected (skin-fold dermatitis); they need cleaning and drying regularly.",
     eyelid_problems: "Eyelid problems can occur in the breed: eyelids that turn inwards (entropion) or outwards (ectropion), and cherry eye, where the third eyelid pops out.",
     skin_allergy_face_folds: "Skin allergies (atopy) that cause itching can occur in the breed, and the folds of skin on the face need cleaning every day.",
     skin_ear_allergies: "Environmental allergies can occur in the breed and may lead to repeated skin or ear infections; PetMD suggests weekly ear cleaning for a dog with allergies.",
@@ -631,6 +632,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends more than 2 hours of exercise a day and grooming more than once a week, says the breed sheds and suits a large house with a large garden, and lists it in Breed Watch Category 1. The PDSA says English Setters love children and other pets, making them perfect for families, and advises grooming 2–3 times a week; PetMD suggests a bath every six to eight weeks and says they don't like being left alone for long, and VCA mentions some clipping and trimming every month.",
       ],
       sources: ["S730", "S731", "S732", "S733", "S734", "S10"],
+    },
+    dogue_de_bordeaux: {
+      aka: "Bordeaux Mastiff, French Mastiff, Bordeauxdogge, DDB",
+      text: [
+        "The Dogue de Bordeaux is a powerful molossoid dog from France. The FCI standard describes a stocky, athletic and imposing dog that is calm, balanced and very attached to its owner, with a fine, short coat in all shades of fawn, from mahogany to isabella. It gives a height of 60–68 cm for males and 58–66 cm for females and a weight of at least 50 kg for males and at least 45 kg for females; PetMD gives 110–145 pounds (about 50–66 kg) for males and 99–120 pounds (about 45–54 kg) for females. A dog of this size is fully grown at about 18–24 months (PetMD). The sources disagree on lifespan: PetMD says these dogs typically live only 5–8 years, while the Royal Kennel Club gives over 10 years.",
+        "The Royal Kennel Club recommends up to 1 hour of exercise a day and grooming once a week, says the breed sheds and suits a large house with a large garden, and lists it in Breed Watch Category 3. The PDSA says Dogues generally get along well with older children but does not recommend them with smaller children or for first-time owners, warns of a lot of drool and a very high prey drive, and advises cleaning the face folds regularly and leaving a gap after eating before exercise. PetMD says their short muzzle can make breathing harder in hot weather.",
+      ],
+      sources: ["S755", "S756", "S757", "S759", "S10"],
     },
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",

@@ -479,6 +479,7 @@ const es: RegistryCopy = {
     eyelids_turned: "En la raza pueden darse párpados vueltos hacia dentro (entropión) o hacia fuera (ectropión); pide progenitores con revisión ocular.",
     glaucoma_poag: "En la raza puede darse el glaucoma primario de ángulo abierto, en el que se acumula líquido dentro del ojo, lo que causa dolor y puede llevar a la ceguera; existe una prueba de ADN para los progenitores.",
     skin_fold_dermatitis: "La piel suelta forma pliegues que pueden irritarse e infectarse; hay que revisarlos cada día y mantenerlos limpios y secos.",
+    skin_fold_care: "Los pliegues de la piel de la cara pueden irritarse e infectarse (dermatitis de los pliegues); hay que limpiarlos y secarlos con regularidad.",
     eyelid_problems: "En la raza pueden darse problemas de párpados: párpados vueltos hacia dentro (entropión) o hacia fuera (ectropión) y el ojo de cereza, en el que sobresale el tercer párpado.",
     skin_allergy_face_folds: "En la raza pueden darse alergias de la piel (atopia) que causan picor, y los pliegues de la cara necesitan limpieza diaria.",
     skin_ear_allergies: "En la raza pueden darse alergias ambientales, que pueden provocar infecciones repetidas de piel o de oído; PetMD sugiere limpiar las orejas cada semana a un perro con alergias.",

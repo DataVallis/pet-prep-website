@@ -505,6 +505,7 @@ const pl: RegistryCopy = {
     eyelids_turned: "W rasie mogą występować powieki podwinięte do środka (entropium) lub odwinięte na zewnątrz (ektropium); pytaj o rodziców z przebadanymi oczami.",
     glaucoma_poag: "W rasie może występować jaskra pierwotna otwartego kąta – płyn gromadzi się w oku i powoduje ból, a czasem ślepotę; istnieje test DNA dla rodziców.",
     skin_fold_dermatitis: "Luźna skóra tworzy fałdy, które mogą się podrażniać i ulegać zakażeniu; trzeba je codziennie sprawdzać i utrzymywać w czystości i suchości.",
+    skin_fold_care: "Fałdy skóry na pysku mogą się podrażniać i ulegać zakażeniu (zapalenie fałdów skórnych); trzeba je regularnie czyścić i osuszać.",
     eyelid_problems: "W rasie mogą występować problemy z powiekami: powieki podwinięte do środka (entropium) lub odwinięte na zewnątrz (ektropium) oraz cherry eye, czyli wypadnięcie gruczołu trzeciej powieki.",
     skin_allergy_face_folds: "W rasie mogą występować alergie skórne (atopia), które powodują swędzenie, a fałdy skóry na pysku trzeba codziennie czyścić.",
     skin_ear_allergies: "W rasie mogą występować alergie środowiskowe, które mogą prowadzić do nawracających zakażeń skóry lub uszu; PetMD sugeruje cotygodniowe czyszczenie uszu psa z alergią.",

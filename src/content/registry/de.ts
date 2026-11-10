@@ -462,6 +462,7 @@ const de: RegistryCopy = {
     eyelids_turned: "In der Rasse können nach innen (Entropium) oder nach außen (Ektropium) gerollte Lider auftreten; fragen Sie nach augenuntersuchten Elterntieren.",
     glaucoma_poag: "In der Rasse kann das primäre Offenwinkelglaukom auftreten, bei dem sich Flüssigkeit im Auge staut und Schmerzen und möglicherweise Erblindung verursacht; es gibt einen DNA-Test für die Elterntiere.",
     skin_fold_dermatitis: "Die lose Haut bildet Falten, die wund werden und sich entzünden können; sie müssen jeden Tag kontrolliert und sauber und trocken gehalten werden.",
+    skin_fold_care: "Die Hautfalten im Gesicht können wund werden und sich entzünden (Hautfaltendermatitis); sie müssen regelmäßig gereinigt und getrocknet werden.",
     eyelid_problems: "In der Rasse können Lidprobleme auftreten: nach innen (Entropium) oder nach außen (Ektropium) gerollte Lider und Kirschauge, bei dem das dritte Augenlid hervortritt.",
     skin_allergy_face_folds: "In der Rasse können Hautallergien (Atopie) mit Juckreiz auftreten, und die Hautfalten im Gesicht müssen jeden Tag gereinigt werden.",
     skin_ear_allergies: "In der Rasse können Umweltallergien auftreten, die zu wiederholten Haut- oder Ohrinfektionen führen können; PetMD empfiehlt bei einem Hund mit Allergien, die Ohren wöchentlich zu reinigen.",

@@ -537,6 +537,7 @@ const cs: RegistryCopy = {
     eyelids_turned: "U plemene se mohou vyskytnout víčka stočená dovnitř (entropium) nebo ven (ektropium); zeptejte se, zda mají rodiče vyšetřené oči.",
     glaucoma_poag: "U plemene se může vyskytnout primární glaukom s otevřeným úhlem, kdy se v oku hromadí tekutina, což způsobuje bolest a případně slepotu; pro rodiče existuje DNA test.",
     skin_fold_dermatitis: "Volná kůže tvoří záhyby, které se mohou podráždit a zanítit; je třeba je každý den kontrolovat a udržovat čisté a suché.",
+    skin_fold_care: "Kožní záhyby na obličeji se mohou podráždit a zanítit (dermatitida kožních záhybů); je třeba je pravidelně čistit a vysoušet.",
     eyelid_problems: "U plemene se mohou vyskytnout problémy s víčky: víčka stočená dovnitř (entropium) nebo ven (ektropium) a vyhřezlá žláza třetího víčka („cherry eye“).",
     skin_allergy_face_folds: "U plemene se mohou vyskytnout kožní alergie (atopie), které způsobují svědění, a kožní záhyby na obličeji je třeba každý den čistit.",
     skin_ear_allergies: "U plemene se mohou vyskytnout alergie na prostředí, které mohou vést k opakovaným infekcím kůže nebo uší; PetMD u psa s alergiemi doporučuje čistit uši jednou týdně.",

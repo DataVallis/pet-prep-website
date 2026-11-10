@@ -481,6 +481,7 @@ const sl: RegistryCopy = {
     eyelids_turned: "Pri pasmi se lahko pojavijo veke, zavihane navznoter (entropij) ali navzven (ektropij); vprašajte za pregledane oči staršev.",
     glaucoma_poag: "Pri pasmi se lahko pojavi primarni glavkom odprtega zakota, ko se v očesu nabira tekočina, kar povzroča bolečino in lahko slepoto; za starše obstaja test DNK.",
     skin_fold_dermatitis: "Ohlapna koža dela gube, ki se lahko vnamejo in okužijo; vsak dan jih je treba pregledati ter ohranjati čiste in suhe.",
+    skin_fold_care: "Kožne gube na obrazu se lahko vnamejo in okužijo (dermatitis kožnih gub); redno jih je treba očistiti in osušiti.",
     eyelid_problems: "Pri pasmi se lahko pojavijo težave z vekami: navznoter (entropij) ali navzven (ektropij) zavihane veke in „češnjevo oko“, ko izstopi tretja veka.",
     skin_allergy_face_folds: "Pri pasmi se lahko pojavijo kožne alergije (atopija), ki povzročajo srbenje; kožne gube na obrazu je treba čistiti vsak dan.",
     skin_ear_allergies: "Pri pasmi se lahko pojavijo alergije na snovi iz okolja, ki lahko vodijo v ponavljajoča se vnetja kože ali ušes; PetMD psu z alergijami svetuje čiščenje ušes enkrat na teden.",
@@ -651,6 +652,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča več kot 2 uri gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da potrebuje veliko hišo z velikim vrtom, ter ga uvršča v 1. kategorijo programa Breed Watch. PDSA piše, da angleški setri obožujejo otroke in druge živali in so zato odlični za družine, ter svetuje česanje 2- do 3-krat na teden; PetMD svetuje kopanje vsakih šest do osem tednov in piše, da ne marajo biti dolgo sami, VCA pa omenja nekaj striženja in urejanja dlake vsak mesec.",
       ],
       sources: ["S730", "S731", "S732", "S733", "S734", "S10"],
+    },
+    dogue_de_bordeaux: {
+      aka: "Dogue de Bordeaux, bordoška doga, francoski mastif, Bordeaux Mastiff",
+      text: [
+        "Bordojska doga je močan francoski molos. Standard FCI jo opisuje kot čokatega, atletskega in impozantnega psa, mirnega, uravnoteženega in zelo navezanega na lastnika, s tanko, kratko dlako v vseh odtenkih plave (fawn) barve, od mahagonija do izabele. Za samce navaja višino 60–68 cm, za samice 58–66 cm, težo pa vsaj 50 kg za samce in vsaj 45 kg za samice; PetMD navaja 110–145 funtov (približno 50–66 kg) za samce in 99–120 funtov (približno 45–54 kg) za samice. Pes te velikosti doraste pri približno 18–24 mesecih (PetMD). Viri si o življenjski dobi nasprotujejo: PetMD piše, da ti psi običajno živijo le 5–8 let, The Royal Kennel Club pa navaja več kot 10 let.",
+        "The Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje enkrat na teden, navaja, da ji izpada dlaka in da potrebuje veliko hišo z velikim vrtom, ter jo uvršča v 3. kategorijo programa Breed Watch. PDSA piše, da se doge običajno dobro razumejo s starejšimi otroki, ne priporoča pa jih družinam z manjšimi otroki in prvim lastnikom, opozarja na veliko slinjenja in zelo močan lovski nagon ter svetuje redno čiščenje gub na obrazu in premor po obroku pred gibanjem. PetMD piše, da ji kratek gobček v vročini lahko otežuje dihanje.",
+      ],
+      sources: ["S755", "S756", "S757", "S759", "S10"],
     },
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",

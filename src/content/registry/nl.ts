@@ -488,6 +488,7 @@ const nl: RegistryCopy = {
     eyelids_turned: "Naar binnen (entropion) of naar buiten (ectropion) gedraaide oogleden kunnen bij het ras voorkomen; vraag naar ouderdieren met een oogonderzoek.",
     glaucoma_poag: "Primair openhoekglaucoom, waarbij vocht zich in het oog ophoopt en pijn en mogelijk blindheid veroorzaakt, kan bij het ras voorkomen; er bestaat een DNA-test voor de ouderdieren.",
     skin_fold_dermatitis: "De losse huid vormt plooien die geïrriteerd en ontstoken kunnen raken; ze moeten elke dag worden gecontroleerd en schoon en droog worden gehouden.",
+    skin_fold_care: "De huidplooien in het gezicht kunnen geïrriteerd en ontstoken raken (huidplooidermatitis); ze moeten regelmatig worden schoongemaakt en gedroogd.",
     eyelid_problems: "Bij het ras kunnen ooglidproblemen voorkomen: naar binnen (entropion) of naar buiten (ectropion) gedraaide oogleden, en cherry eye, waarbij het derde ooglid naar voren komt.",
     skin_allergy_face_folds: "Huidallergieën (atopie) die jeuk veroorzaken kunnen bij het ras voorkomen, en de huidplooien in het gezicht moeten elke dag worden schoongemaakt.",
     skin_ear_allergies: "Omgevingsallergieën kunnen bij het ras voorkomen en tot steeds terugkerende huid- of oorontstekingen leiden; PetMD raadt aan de oren van een hond met allergieën elke week schoon te maken.",

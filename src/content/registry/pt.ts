@@ -485,6 +485,7 @@ const pt: RegistryCopy = {
     eyelids_turned: "Na raça podem ocorrer pálpebras viradas para dentro (entrópion) ou para fora (ectrópion); pergunta se os olhos dos progenitores foram examinados.",
     glaucoma_poag: "Na raça pode ocorrer o glaucoma primário de ângulo aberto, em que o líquido se acumula dentro do olho e provoca dor e, possivelmente, cegueira; existe um teste de ADN para os progenitores.",
     skin_fold_dermatitis: "A pele abundante forma pregas que podem ficar irritadas e infetar; devem ser verificadas todos os dias e mantidas limpas e secas.",
+    skin_fold_care: "As pregas da pele do focinho podem ficar irritadas e infetar (dermatite das pregas); devem ser limpas e secas regularmente.",
     eyelid_problems: "Na raça podem ocorrer problemas nas pálpebras: pálpebras viradas para dentro (entrópion) ou para fora (ectrópion) e «olho de cereja», em que a terceira pálpebra fica saliente.",
     skin_allergy_face_folds: "Na raça podem ocorrer alergias de pele (atopia) que provocam comichão, e as pregas da pele do focinho devem ser limpas todos os dias.",
     skin_ear_allergies: "Na raça podem ocorrer alergias ambientais, que podem levar a infeções repetidas da pele ou dos ouvidos; a PetMD sugere limpar as orelhas uma vez por semana nos cães com alergias.",

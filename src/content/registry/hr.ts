@@ -572,6 +572,7 @@ const hr: RegistryCopy = {
     glaucoma_poag:
       "U pasmini se može pojaviti primarni glaukom otvorenog kuta, pri kojem se u oku nakuplja tekućina, što uzrokuje bol i moguću sljepoću; postoji DNK test za roditelje.",
     skin_fold_dermatitis: "Labava koža stvara nabore koji mogu postati bolni i inficirani; treba ih svaki dan pregledati i održavati čistima i suhima.",
+    skin_fold_care: "Kožni nabori na licu mogu postati bolni i inficirani (dermatitis kožnih nabora); treba ih redovito čistiti i sušiti.",
     eyelid_problems:
       "U pasmini se mogu pojaviti problemi s kapcima: kapci okrenuti prema unutra (entropion) ili prema van (ektropion) i „cherry eye“, pri kojem iskoči treći kapak.",
     skin_allergy_face_folds: "U pasmini se mogu pojaviti kožne alergije (atopija) koje uzrokuju svrbež, a kožne nabore na licu treba čistiti svaki dan.",

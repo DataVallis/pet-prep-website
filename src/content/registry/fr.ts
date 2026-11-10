@@ -484,6 +484,7 @@ const fr: RegistryCopy = {
     eyelids_turned: "Des paupières enroulées vers l’intérieur (entropion) ou vers l’extérieur (ectropion) peuvent survenir dans la race ; demandez des parents dont les yeux ont été examinés.",
     glaucoma_poag: "Le glaucome primaire à angle ouvert, où du liquide s’accumule dans l’œil et provoque douleur et parfois cécité, peut survenir dans la race ; un test ADN des parents existe.",
     skin_fold_dermatitis: "La peau lâche forme des plis qui peuvent s’irriter et s’infecter ; il faut les vérifier chaque jour et les garder propres et secs.",
+    skin_fold_care: "Les plis de peau du visage peuvent s’irriter et s’infecter (dermatite des plis) ; il faut les nettoyer et les sécher régulièrement.",
     eyelid_problems: "Des problèmes de paupières peuvent survenir dans la race : paupières enroulées vers l’intérieur (entropion) ou vers l’extérieur (ectropion), et « cherry eye », où la troisième paupière ressort.",
     skin_allergy_face_folds: "Des allergies cutanées (atopie) qui provoquent des démangeaisons peuvent survenir dans la race, et les plis de la face doivent être nettoyés chaque jour.",
     skin_ear_allergies: "Des allergies environnementales peuvent survenir dans la race et entraîner des infections répétées de la peau ou des oreilles ; PetMD suggère de nettoyer les oreilles chaque semaine chez un chien allergique.",
