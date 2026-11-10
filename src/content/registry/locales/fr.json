@@ -741,6 +741,27 @@
       "synonyms": [
         "English Setter"
       ]
+    },
+    "dogue_de_bordeaux": {
+      "name": "Dogue de Bordeaux",
+      "slug": "dogue-de-bordeaux"
+    },
+    "flat_coated_retriever": {
+      "name": "Retriever à poil plat",
+      "slug": "retriever-a-poil-plat",
+      "synonyms": [
+        "Flat Coated Retriever",
+        "Flat-Coated Retriever",
+        "Flat coat"
+      ]
+    },
+    "lhasa_apso": {
+      "name": "Lhassa Apso",
+      "slug": "lhassa-apso",
+      "synonyms": [
+        "Lhasa Apso",
+        "Lhasa"
+      ]
     }
   },
   "suitability_labels": {
