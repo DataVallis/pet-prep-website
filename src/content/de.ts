@@ -156,7 +156,7 @@ const de: Dictionary = {
       quote: "Jede Familie kennt den Satz „Ich verspreche, ich kümmere mich darum.“ PetPrep macht aus dem Versprechen einen",
       highlight: "Beweis",
       text:
-        "Scheitern in der Simulation ist ein Erfolg für Ihre Familie: Sie erfahren es, bevor ein echtes Tier leidet – und bevor Sie sich auf Jahre voller Pflege und Kosten festlegen.",
+        "Scheitern in der Simulation ist ein Erfolg für Ihre Familie: Sie erfahren es, bevor ein echtes Haustier leidet – und bevor Sie sich auf Jahre voller Pflege und Kosten festlegen.",
     },
     how: {
       eyebrow: "So funktioniert es",
@@ -183,7 +183,7 @@ const de: Dictionary = {
       items: [
         { title: "Echte Spaziergänge, echte Schritte", text: "Der tägliche Spaziergang zählt die Schritte vom Handy Ihres Kindes. Heute gar kein Spaziergang? Das Haustier spürt es morgen." },
         { title: "Es wird erwachsen", text: "Ein Welpe frisst viermal am Tag, dann dreimal, dann zweimal – und bekommt beim Wachsen ein neues Foto." },
-        { title: "Es verhält sich wie ein echtes Tier", text: "Welpen müssen raus. Gelangweilte Hunde zerkauen Hausschuhe. Erst wird saubergemacht, dann gibt es Abendessen." },
+        { title: "Es verhält sich wie ein echtes Haustier", text: "Welpen müssen raus. Gelangweilte Hunde zerkauen Hausschuhe. Erst wird saubergemacht, dann gibt es Abendessen." },
         { title: "Schule und Schlaf haben Vorrang", text: "In den Ruhezeiten pausieren die Erinnerungen. Eine Mahlzeit während der Schulzeit übernehmen Sie, nicht Ihr Kind." },
         { title: "Echte Konsequenzen, behutsam", text: "Vernachlässigung bedeutet einen Tierarztbesuch oder das Tierheim – nie beängstigend, immer mit einem Neuanfang." },
         { title: "Einzigartig", text: "Jedes Haustier bekommt sein eigenes Fell, eigene Abzeichen, eigene Augen – fotorealistisch und nie zweimal gleich." },
@@ -232,7 +232,7 @@ const de: Dictionary = {
         { title: "Wachstum und Futter", text: "Wöchentliches Gewicht, Wachstumskurve, wann das Futter gewechselt wird." },
         { title: "Vertrauenswürdige Partner", text: "Tierärzte, Trainer und Versicherer in Ihrer Nähe – klar gekennzeichnet." },
         { title: "DNA-Test", text: "Welche Rassen in Ihrem Mischling stecken – und worauf Sie achten sollten." },
-        { title: "Karte für den Tierarzt", text: "Rassemix und DNA-Befunde an einem Ort, bereit für die Tierarztpraxis." },
+        { title: "Karte für den Tierarzt", text: "Rassenmix und DNA-Befunde an einem Ort, bereit für die Tierarztpraxis." },
       ],
       link: "Über den KI-Assistenten",
       planned: "In Entwicklung",
@@ -313,7 +313,7 @@ const de: Dictionary = {
         {
           type: "callout",
           title: "Auch Scheitern ist ein Ergebnis.",
-          text: "Landet das Haustier im virtuellen Tierheim, haben Sie etwas Wertvolles gelernt – bevor ein echtes Tier den Preis dafür gezahlt hat. Sie können neu beginnen, auch mit einer einfacheren Rasse.",
+          text: "Landet das Haustier im virtuellen Tierheim, haben Sie etwas Wertvolles gelernt – bevor ein echtes Haustier den Preis dafür gezahlt hat. Sie können neu beginnen, auch mit einer einfacheren Rasse.",
           tone: "dark",
         },
       ],
@@ -392,7 +392,7 @@ const de: Dictionary = {
       eyebrow: "Wenn es einzieht",
       title: "Die Simulation endet. Die Fürsorge nicht.",
       lead:
-        "Wenn Ihre Familie ein echtes Haustier nach Hause holt, macht ein Tippen aus PetPrep einen Assistenten für das ganze Leben des Tieres – in Echtzeit, ohne Statusbalken und bereits vertraut mit dem Alltag Ihrer Familie.",
+        "Wenn Ihre Familie ein echtes Haustier nach Hause holt, macht ein Tippen aus PetPrep einen Assistenten für das ganze Leben Ihres Haustiers – in Echtzeit, ohne Statusbalken und bereits vertraut mit dem Alltag Ihrer Familie.",
       planned: true,
       blocks: [
         {
@@ -404,7 +404,7 @@ const de: Dictionary = {
             { title: "Hinweise, die erklären", text: "„Max ist heute 2 km gelaufen, halb so viel wie sonst, und hatte eine größere Mahlzeit. Ein zusätzlicher Abendspaziergang hilft ihm, zur Ruhe zu kommen.“ Eine Beobachtung, ein Grund, ein Vorschlag." },
             { title: "Zuerst die KI, dann der echte Tierarzt", text: "Stellen Sie eine Frage oder laden Sie ein Foto hoch. Der Assistent beantwortet allgemeine Fragen, schätzt die Dringlichkeit ein und übergibt bei Bedarf an einen echten Tierarzt – dringende Anzeichen gehen direkt an eine Tierarztpraxis." },
             { title: "DNA-Test für Ihren Hund oder Ihre Katze", text: "Bestellen Sie einen DNA-Test in der App oder laden Sie das Ergebnis eines vorhandenen Tests hoch. PetPrep zeigt, welche Rassen im Mix stecken, was für sie typisch ist und welche Gesundheitsprobleme bei diesen Rassen häufiger vorkommen – mit Quellen. Rassenanteile sind keine Diagnose, und ein DNA-Test zeigt keine Allergien." },
-            { title: "Eine Karte für den Tierarzt", text: "Der Rassemix und etwaige direkte DNA-Befunde auf einer Seite oder als QR-Code, damit Ihr Tierarzt sofort weiß, was in einem Mischling steckt." },
+            { title: "Eine Karte für den Tierarzt", text: "Der Rassenmix und etwaige direkte DNA-Befunde auf einer Seite oder als QR-Code, damit Ihr Tierarzt sofort weiß, was in einem Mischling steckt." },
             { title: "Wachstum und Ernährung", text: "Tragen Sie wöchentlich das Gewicht ein, sehen Sie die Wachstumskurve und erhalten Sie eine Erinnerung, wenn es Zeit für ein anderes Futter ist." },
           ],
         },
@@ -689,7 +689,7 @@ const de: Dictionary = {
             {
               heading: "8. KI-generierte Bilder und Videos",
               paragraphs: [
-                "Foto und kurze Videos jedes Haustiers werden von einem KI-Dienst ausschließlich aus einer Beschreibung des Haustiers erstellt (Rasse, Fell, Abzeichen und Ähnliches). Die Beschreibung enthält nie Namen oder Informationen über Ihre Familie. Fertige Medien werden auf angemieteten Servern in Deutschland (Hetzner, EU) gespeichert und über kurzlebige Links angezeigt.",
+                "Das Foto und die kurzen Videos jedes Haustiers werden von einem KI-Dienst ausschließlich aus einer Beschreibung des Haustiers erstellt (Rasse, Fell, Abzeichen und Ähnliches). Die Beschreibung enthält nie Namen oder Informationen über Ihre Familie. Fertige Medien werden auf angemieteten Servern in Deutschland (Hetzner, EU) gespeichert und über kurzlebige Links angezeigt.",
               ],
             },
             {
@@ -999,7 +999,7 @@ const de: Dictionary = {
       },
       navLabel: "Tiere",
       eyebrow: "Tierregister",
-      title: "Lernen Sie das Tier kennen, bevor es einzieht.",
+      title: "Lernen Sie das Haustier kennen, bevor es einzieht.",
       lead:
         "Was jede Tierart und Rasse in PetPrep wirklich braucht – von Zuchtverbänden, Katzenzuchtverbänden, tierärztlichen Hilfsorganisationen und Studien, jede Quelle verlinkt. Dazu die Regeln, nach denen PetPrep sie simuliert.",
       blocks: [{ type: "animalsHub" }],
@@ -1037,8 +1037,8 @@ const de: Dictionary = {
           id: "mission",
           heading: "Unsere Mission",
           paragraphs: [
-            "Jede Familie kennt den Satz „Ich verspreche, ich kümmere mich darum.“ PetPrep macht aus diesem Versprechen einen Beweis: 12 Wochen lang kümmert sich ein Kind – oder ein Erwachsener, der sich eine bestimmte Rasse wünscht – um ein lebensechtes KI-Haustier mit den täglichen Bedürfnissen eines echten Tieres, und die Eltern sehen jeden Tag, ob die Pflege durchhält.",
-            "Auch Scheitern in der Simulation ist ein gutes Ergebnis: Die Familie erfährt es, bevor ein echtes Tier leidet und bevor sie sich auf Jahre voller Pflege und Kosten festlegt. Wenn dann ein echtes Haustier einzieht, soll PetPrep für das ganze Leben des Tieres nützlich bleiben.",
+            "Jede Familie kennt den Satz „Ich verspreche, ich kümmere mich darum.“ PetPrep macht aus diesem Versprechen einen Beweis: 12 Wochen lang kümmert sich ein Kind – oder ein Erwachsener, der sich eine bestimmte Rasse wünscht – um ein lebensechtes KI-Haustier mit den täglichen Bedürfnissen eines echten Haustiers, und die Eltern sehen jeden Tag, ob die Pflege durchhält.",
+            "Auch Scheitern in der Simulation ist ein gutes Ergebnis: Die Familie erfährt es, bevor ein echtes Haustier leidet und bevor sie sich auf Jahre voller Pflege und Kosten festlegt. Wenn dann ein echtes Haustier einzieht, soll PetPrep für das ganze Leben Ihres Haustiers nützlich bleiben.",
           ],
         },
         {
@@ -1114,7 +1114,7 @@ const de: Dictionary = {
               label: "In der App · KI-Bild",
               tone: "mint",
               title: "Ihr Haustier in PetPrep",
-              text: "Eine lebensechte KI-Simulation einer echten Rasse – wie dieser [Labrador Retriever](+breed:labrador_retriever) – mit den täglichen Bedürfnissen eines echten Tieres: Mahlzeiten, Wasser, Spaziergänge in echten Schritten, Saubermachen und Training. Sehen Sie, [wie es funktioniert](+page:howItWorks).",
+              text: "Eine lebensechte KI-Simulation einer echten Rasse – wie dieser [Labrador Retriever](+breed:labrador_retriever) – mit den täglichen Bedürfnissen eines echten Haustiers: Mahlzeiten, Wasser, Spaziergänge in echten Schritten, Saubermachen und Training. Sehen Sie, [wie es funktioniert](+page:howItWorks).",
             },
           ],
         },
@@ -1140,7 +1140,7 @@ const de: Dictionary = {
             { href: "/curio/kit/curio-transparent.png", label: "Curio, transparenter Hintergrund", meta: "PNG, 848 × 1117" },
             { href: "/curio/kit/curio-square-light.png", label: "Curio, quadratisch, hell", meta: "PNG, 1080 × 1080" },
             { href: "/curio/kit/curio-square-mint.png", label: "Curio, quadratisch, mintgrün", meta: "PNG, 1080 × 1080" },
-            { href: "/curio/kit/curio-character-sheet.jpg", label: "Character Sheet", meta: "JPG, 823 × 1080" },
+            { href: "/curio/kit/curio-character-sheet.jpg", label: "Charakterbogen", meta: "JPG, 823 × 1080" },
             { href: "/curio/kit/petprep-logo-horizontal.svg", label: "PetPrep-Logo", meta: "SVG" },
             { href: "/curio/kit/petprep-mark.svg", label: "PetPrep-Bildmarke", meta: "SVG" },
           ],
@@ -1158,7 +1158,7 @@ const de: Dictionary = {
           heading: "Fragen zu Curio",
           items: [
             { q: "Ist Curio ein Hund oder eine Katze?", a: "Weder noch. Curio ist ein kleiner Würfel aus unserem Logo. In unseren Videos spielt es ein Haustier, gehört aber zu keiner Tierart." },
-            { q: "Kann mein Kind sich in der App um Curio kümmern?", a: "Nein. In der App kümmert sich Ihre Familie um ein lebensechtes Haustier einer echten Rasse, mit denselben täglichen Bedürfnissen wie das echte Tier. Curio erscheint nur in unseren Videos und auf der Website." },
+            { q: "Kann mein Kind sich in der App um Curio kümmern?", a: "Nein. In der App kümmert sich Ihre Familie um ein lebensechtes Haustier einer echten Rasse, mit denselben täglichen Bedürfnissen wie ein echtes Haustier. Curio erscheint nur in unseren Videos und auf der Website." },
             { q: "Warum hat Curio keinen Mund?", a: "Weil unser Logo keinen hat. Curio sagt alles mit den Augen – und bettelt nie laut um Leckerlis." },
             { q: "Wo sehe ich neue Curio-Videos?", a: "Auf TikTok und Instagram, @petprep.si." },
           ],
