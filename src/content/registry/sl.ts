@@ -661,6 +661,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S755", "S756", "S757", "S759", "S10"],
     },
+    flat_coated_retriever: {
+      aka: "Flat-Coated Retriever, flat coated retriever, flatcoat, ravnodlaki prinasalec",
+      text: [
+        "Ravnodlaki prinašalec je bister, živahen lovski pes iz Velike Britanije, vzrejen za prinašanje divjadi. Standard FCI opisuje gosto, čim bolj gladko ležečo dlako z dobro poraslimi nogami in repom, samo v črni ali jetrno rjavi barvi, ter optimističen, prijazen, samozavesten in dobrodušen značaj. Za samce navaja zaželeno višino 59–61,5 cm, za samice 56,5–59 cm, zaželeno težo pa 27–36 kg za samce in 25–32 kg za samice. Pes te velikosti doraste pri približno 15–18 mesecih (PetMD). The Royal Kennel Club navaja življenjsko dobo manj kot 10 let, britanska raziskava iz leta 2024 v preglednici Dogs Trust pa mediano 11,7 leta.",
+        "The Royal Kennel Club priporoča več kot 2 uri gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da potrebuje veliko hišo z velikim vrtom, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD ravnodlake prinašalce opisuje kot čudovite družinske pse, ki se običajno dobro razumejo z otroki in drugimi živalmi, še posebej ob pravilnem seznanjanju in socializaciji; svetuje česanje dvakrat na teden, čiščenje ušes vsak teden ali dva, kopanje in striženje krempljev vsak mesec ali dva, odsvetuje pa gibanje tik pred obrokom ali po njem.",
+      ],
+      sources: ["S761", "S762", "S763", "S123", "S10"],
+    },
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
       text: [
