@@ -876,6 +876,28 @@
         "English Setter",
         "Laverack-setteri"
       ]
+    },
+    "dogue_de_bordeaux": {
+      "name": "Bordeauxindoggi",
+      "slug": "bordeauxindoggi",
+      "synonyms": [
+        "Dogue de Bordeaux"
+      ]
+    },
+    "flat_coated_retriever": {
+      "name": "Sileäkarvainen noutaja",
+      "slug": "sileakarvainen-noutaja",
+      "synonyms": [
+        "Flat coated retriever",
+        "Flat-coated retriever"
+      ]
+    },
+    "lhasa_apso": {
+      "name": "Lhasa apso",
+      "slug": "lhasa-apso",
+      "synonyms": [
+        "Lhasa-apso"
+      ]
     }
   },
   "suitability_labels": {
