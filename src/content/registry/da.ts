@@ -554,6 +554,7 @@ const da: RegistryCopy = {
     glaucoma_poag:
       "Primær åbenvinklet glaukom, hvor der hober sig væske op i øjet, som giver smerter og muligvis blindhed, kan forekomme i racen; der findes en DNA-test til forældrene.",
     skin_fold_dermatitis: "Den løse hud danner folder der kan blive ømme og betændte; de skal tjekkes hver dag og holdes rene og tørre.",
+    skin_fold_care: "Hudfolderne i ansigtet kan blive ømme og betændte (hudfoldsdermatitis); de skal jævnligt renses og tørres.",
     eyelid_problems:
       "Problemer med øjenlågene kan forekomme i racen: øjenlåg der ruller indad (entropion) eller udad (ektropion), og cherry eye, hvor det tredje øjenlåg springer frem.",
     skin_allergy_face_folds: "Hudallergi (atopi) der giver kløe, kan forekomme i racen, og hudfolderne i ansigtet skal renses hver dag.",

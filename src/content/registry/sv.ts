@@ -552,6 +552,7 @@ const sv: RegistryCopy = {
     glaucoma_poag:
       "Primärt öppenvinkelglaukom, där vätska samlas i ögat och orsakar smärta och möjligen blindhet, kan förekomma i rasen; det finns ett DNA-test för föräldrarna.",
     skin_fold_dermatitis: "Den lösa huden bildar veck som kan bli ömma och infekterade; de behöver kontrolleras varje dag och hållas rena och torra.",
+    skin_fold_care: "Hudvecken i ansiktet kan bli ömma och infekterade (hudveckseksem); de behöver rengöras och torkas regelbundet.",
     eyelid_problems:
       "Ögonlocksproblem kan förekomma i rasen: inåtvända (entropion) eller utåtvända (ektropion) ögonlock och cherry eye, där det tredje ögonlockets körtel buktar fram.",
     skin_allergy_face_folds: "Hudallergier (atopi) som ger klåda kan förekomma i rasen, och hudvecken i ansiktet behöver rengöras varje dag.",
