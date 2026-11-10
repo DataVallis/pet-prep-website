@@ -932,6 +932,33 @@
       "synonyms": [
         "English Setter"
       ]
+    },
+    "dogue_de_bordeaux": {
+      "name": "Bordoška doga",
+      "slug": "bordoska-doga",
+      "synonyms": [
+        "Dogue de Bordeaux",
+        "Francuski mastif"
+      ]
+    },
+    "flat_coated_retriever": {
+      "name": "Flat coated retriver",
+      "slug": "flat-coated-retriver",
+      "synonyms": [
+        "Flat-coated retriever",
+        "Flat coated retriever",
+        "Flat-coated retriver",
+        "Flatcoat"
+      ]
+    },
+    "lhasa_apso": {
+      "name": "Lhasa apso",
+      "slug": "lhasa-apso",
+      "synonyms": [
+        "Lhasa",
+        "Apso",
+        "Lhasa-apso"
+      ]
     }
   },
   "suitability_labels": {
