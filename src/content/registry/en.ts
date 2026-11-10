@@ -641,6 +641,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S755", "S756", "S757", "S759", "S10"],
     },
+    flat_coated_retriever: {
+      aka: "Flatcoat, Flattie, Flat-coat, Flat Coated Retriever",
+      text: [
+        "The Flat-Coated Retriever is a bright, active gundog from Great Britain, bred to retrieve game. The FCI standard describes a dense, flat-lying coat with well-feathered legs and tail, in black or liver only, and an optimistic, friendly, confident and kindly temperament. It gives a preferred height of 59–61.5 cm for males and 56.5–59 cm for females and a preferred weight of 27–36 kg for males and 25–32 kg for females. A dog of this size is fully grown at about 15–18 months (PetMD). The Royal Kennel Club gives a lifespan of under 10 years, while a 2024 UK study tabled by Dogs Trust found a median of 11.7 years.",
+        "The Royal Kennel Club recommends more than 2 hours of exercise a day and grooming more than once a week, says the breed sheds and suits a large house with a large garden, and lists it in Breed Watch Category 1. PetMD calls Flat-Coated Retrievers wonderful family dogs that generally do well with children and other pets, especially with proper introductions and socialisation; it suggests brushing twice a week, cleaning the ears every week or two, a bath and nail trim every month or two, and avoiding exercise right before or after eating.",
+      ],
+      sources: ["S761", "S762", "S763", "S123", "S10"],
+    },
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
       text: [
