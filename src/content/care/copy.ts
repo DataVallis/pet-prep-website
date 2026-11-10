@@ -167,7 +167,7 @@ const de: CareCopy = {
     sources: "Quellen",
     updated: "Aktualisiert",
     notVetReviewed: "Allgemeine Informationen aus den unten genannten Quellen – nicht tierärztlich geprüft und kein Ersatz für tierärztlichen Rat. Rufen Sie im Zweifel Ihren Tierarzt an.",
-    otherSpecies: "Andere Tiere",
+    otherSpecies: "Andere Tierarten",
     simulates: "So üben Kinder das in PetPrep",
     simulatesText: (w) => `In PetPrep kümmert sich ein Kind um ${w.pet} – realistisch simuliert: Mahlzeiten zur richtigen Zeit, Wasser, Spaziergänge und Pflege. Zu wissen, was man vom eigenen Essen gefahrlos abgeben darf, gehört dazu, wenn man bereit für ein echtes Haustier sein will.`,
     backTo: "Alle Lebensmittel",
