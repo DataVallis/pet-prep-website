@@ -428,6 +428,7 @@ const hr: RegistryCopy = {
       dna_dcm: "DNK test na dilatacijsku kardiomiopatiju (DCM), bolest srčanog mišića",
       dna_pra5: "DNK test na progresivnu atrofiju mrežnice (PRA5)",
       dna_dings2: "DNK test na bolest „plešućeg dobermana“ (DINGS2), poremećaj živaca i mišića",
+      dna_slem: "DNK test na spongiformnu leukoencefalomijelopatiju (SLEM, „sindrom drhtavog šteneta“), bolest mozga i leđne moždine kod mladih štenaca",
       dna_ams: "DNK test na sindrom akralne mutilacije (AMS), poremećaj živaca zbog kojeg šape gube osjet boli",
       dna_dams: "DNK test na sindrom diseritropoetske anemije i miopatije (DAMS), poremećaj krvi i mišića",
       dna_fuco: "DNK test na fukozidozu, nasljednu bolest živčanog sustava",
@@ -596,6 +597,9 @@ const hr: RegistryCopy = {
     urinary_incontinence: "U pasmini se može pojaviti urinarna inkontinencija, nekontrolirano curenje mokraće.",
     osteochondritis: "U pasmini se može pojaviti osteohondritis disekans (OCD), poremećaj zglobne hrskavice kod pasa u rastu.",
     scottie_cramp: "U pasmini se javlja „Scottie cramp“ – kratke epizode grčenja mišića, obično izazvane uzbuđenjem; nije bolno.",
+    slem_shaking_puppy: "Kod pasmine se može pojaviti spongiformna leukoencefalomijelopatija (SLEM), zvana i sindrom drhtavog šteneta; DNK test pomaže uzgajivačima da je izbjegnu.",
+    cecs_cramping: "Kod pasmine se javlja epileptoidni sindrom grčeva u pasa (CECS) – napadaji drhtanja i mišićnih grčeva.",
+    gallbladder_mucocele: "Kod pasmine se može pojaviti mukokela žučnog mjehura – mjehur se ispuni gustom sluzi i ne može se pravilno prazniti; ponekad je potrebna operacija.",
     periodontal_disease: "Parodontna bolest, infekcija i upala desni i tkiva koja drže zube, poznat je problem u pasmini.",
     extra_eyelashes:
       "U pasmini se može pojaviti distihijaza, pri kojoj sitne dodatne trepavice rastu na unutarnjoj površini ili rubu kapka i mogu trljati oko; traži roditelje pregledane u programu za oči.",

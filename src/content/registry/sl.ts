@@ -358,6 +358,7 @@ const sl: RegistryCopy = {
       breed_health_scheme: "Zdravstveni program pasemskega kluba za starša",
       hemivertebrae_scheme: "Rentgen hrbtenice staršev za hemivertebre (nepravilno oblikovana vretenca), po 12. mesecu starosti",
       dna_dings2: "Test DNK za „plesočo bolezen dobermanov“ (DINGS2), bolezen živcev in mišic",
+      dna_slem: "Test DNK za spongiformno levkoencefalomielopatijo (SLEM, „sindrom tresočega mladička“), motnjo možganov in hrbtenjače pri mladih mladičkih",
       dna_ams: "Test DNK za akralni mutilacijski sindrom (AMS), motnjo živcev, zaradi katere pes v tačkah ne čuti bolečine",
       dna_dams: "Test DNK za diseritropoetsko anemijo in miopatijo (DAMS), motnjo krvi in mišic",
       dna_fuco: "Test DNK za fukozidozo, dedno bolezen živčevja",
@@ -500,6 +501,9 @@ const sl: RegistryCopy = {
     urinary_incontinence: "Pri pasmi se lahko pojavi inkontinenca, nehotno uhajanje urina.",
     osteochondritis: "Pri pasmi se lahko pojavi osteohondritis dissecans (OCD), motnja sklepnega hrustanca pri psih med rastjo.",
     scottie_cramp: "Pri pasmi se pojavlja „škotski krč“ – kratki napadi krčenja mišic, navadno ob vznemirjenju; ni boleč.",
+    slem_shaking_puppy: "Pri pasmi se lahko pojavi spongiformna levkoencefalomielopatija (SLEM), imenovana tudi sindrom tresočega mladička; s testom DNK se ji vzreditelji lahko izognejo.",
+    cecs_cramping: "Pri pasmi se pojavlja epileptoidni sindrom krčev (CECS) – napadi tresenja in mišičnih krčev.",
+    gallbladder_mucocele: "Pri pasmi se lahko pojavi mukokela žolčnika – žolčnik se napolni z gosto sluzjo in se ne more pravilno prazniti; včasih je potrebna operacija.",
     periodontal_disease: "Pri pasmi je znana težava bolezen obzobnih tkiv (parodontalna bolezen), okužba in vnetje dlesni in tkiv, ki držijo zobe.",
     extra_eyelashes: "Pri pasmi se lahko pojavi distihiaza – dodatne drobne trepalnice na notranji strani ali robu veke, ki lahko drgnejo oko; vprašajte za starše, pregledane po shemi za oči.",
     cm_sm_screening: "Pri pasmi se lahko pojavita Chiarijeva malformacija in siringomielija, boleča bolezen z votlinicami, polnimi tekočine, v hrbtenjači ob možganih; vzrediteljem svetujejo pregled staršev (v Združenem kraljestvu: shema BVA/KC).",
@@ -668,6 +672,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča več kot 2 uri gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da potrebuje veliko hišo z velikim vrtom, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD ravnodlake prinašalce opisuje kot čudovite družinske pse, ki se običajno dobro razumejo z otroki in drugimi živalmi, še posebej ob pravilnem seznanjanju in socializaciji; svetuje česanje dvakrat na teden, čiščenje ušes vsak teden ali dva, kopanje in striženje krempljev vsak mesec ali dva, odsvetuje pa gibanje tik pred obrokom ali po njem.",
       ],
       sources: ["S761", "S762", "S763", "S123", "S10"],
+    },
+    border_terrier: {
+      aka: "Border Terrier, border terier, borderski terier",
+      text: [
+        "Borderski terier je majhen delovni terier iz Velike Britanije; standard FCI ga opisuje kot pravega delovnega terierja, ki zmore slediti konju, ter kot psa, ki združuje živahnost in pogum. Opisuje trdo, gosto dlako z gosto podlanko, temne oči z budnim izrazom in majhna, V-oblikovana uhlja, v rdeči, pšenični, sivkasti z rjavimi oznakami (grizzle and tan) ali modri z rjavimi oznakami (blue and tan) barvi, ter navaja težo 5,9–7,1 kg za samce in 5,1–6,4 kg za samice. Pes te velikosti doraste pri približno 9–12 mesecih (PetMD). The Royal Kennel Club navaja življenjsko dobo več kot 12 let, britanska raziskava iz leta 2024 (McMillan in sod.) pa mediano 14,2 leta.",
+        "The Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da je primeren za stanovanje, ter ga uvršča v 1. kategorijo programa Breed Watch. PDSA piše, da bo borderski terier ob pravi socializaciji rad preživljal čas z otroki vseh starosti, a svetuje nadzor; opozarja, da lahko razvije ločitveno tesnobo, če ostane sam, da ima močan lovski nagon in naj ne živi s kunci, morskimi prašički ali podganami, ter svetuje česanje nekajkrat na teden in premor med obrokom in gibanjem. Woodgreen svetuje dom z nekoliko starejšimi otroki.",
+      ],
+      sources: ["S768", "S769", "S770", "S771", "S773", "S10"],
     },
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",

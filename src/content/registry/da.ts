@@ -416,6 +416,7 @@ const da: RegistryCopy = {
       dna_dcm: "DNA-test for dilateret kardiomyopati (DCM), en sygdom i hjertemusklen",
       dna_pra5: "DNA-test for progressiv retinal atrofi (PRA5)",
       dna_dings2: "DNA-test for dancing Dobermann disease (DINGS2), en nerve- og muskelsygdom",
+      dna_slem: "DNA-test for spongiform leukoencefalomyelopati (SLEM, „shaking puppy syndrome“), en lidelse i hjerne og rygmarv hos unge hvalpe",
       dna_ams: "DNA-test for akralt mutilationssyndrom (AMS), en nervesygdom der fjerner smertefølelsen i poterne",
       dna_dams: "DNA-test for dyserytropoietisk anæmi og myopatisyndrom (DAMS), en blod- og muskelsygdom",
       dna_fuco: "DNA-test for fukosidose, en arvelig sygdom i nervesystemet",
@@ -577,6 +578,9 @@ const da: RegistryCopy = {
     urinary_incontinence: "Urininkontinens, ufrivillig lækage af urin, kan forekomme i racen.",
     osteochondritis: "Osteochondritis dissecans (OCD), en forstyrrelse i ledbrusken hos hunde i vækst, kan forekomme i racen.",
     scottie_cramp: "Scottie cramp – korte anfald af muskelkramper, som regel udløst af ophidselse – forekommer i racen; det gør ikke ondt.",
+    slem_shaking_puppy: "Spongiform leukoencefalomyelopati (SLEM), også kaldet shaking puppy syndrome, kan forekomme i racen; en DNA-test hjælper opdrættere med at undgå den.",
+    cecs_cramping: "Canine epileptoid cramping syndrome (CECS) – anfald af rysten og muskelkramper – forekommer i racen.",
+    gallbladder_mucocele: "Mucocele i galdeblæren, hvor galdeblæren fyldes med tykt slim og ikke kan tømmes ordentligt, kan forekomme i racen; nogle gange kræves en operation.",
     periodontal_disease: "Paradentose, en infektion og betændelse i tandkødet og det væv der holder tænderne fast, er et kendt problem i racen.",
     extra_eyelashes:
       "Distichiasis, hvor små ekstra øjenhår vokser på indersiden eller kanten af øjenlåget og kan gnide mod øjet, kan forekomme i racen; spørg efter forældre der er undersøgt i øjenordningen.",
