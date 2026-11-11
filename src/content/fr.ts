@@ -121,7 +121,7 @@ const fr: Dictionary = {
     { title: "Familles", text: "Questions sur l’application, votre compte ou le Challenge.", email: "hello" },
     { title: "Confidentialité", text: "Accès, export ou suppression de données, et toute question de confidentialité.", email: "privacy" },
     { title: "Partenaires", text: "Animaleries, refuges, vétérinaires, éducateurs, assureurs et écoles.", email: "partners" },
-    { title: "Investisseurs", text: "Note investisseurs, présentation et data room sur demande.", email: "investors" },
+    { title: "Investisseurs", text: "Note aux investisseurs, présentation et data room sur demande.", email: "investors" },
   ],
   home: {
     meta: {
@@ -513,7 +513,7 @@ const fr: Dictionary = {
           heading: "Avec qui nous travaillons",
           columns: 3,
           items: [
-            { title: "Animaleries", text: "Rejoignez les familles au moment où elles prouvent qu’elles sont prêtes – par exemple avec une offre de kit de démarrage au moment du certificat." },
+            { title: "Animaleries", text: "Touchez les familles au moment précis où elles prouvent qu’elles sont prêtes – par exemple avec une offre de kit de démarrage à la remise du certificat." },
             { title: "Refuges, associations et éleveurs", text: "Recommandez PetPrep avant une adoption ou un achat, pour moins de décisions impulsives et moins d’animaux rendus." },
             { title: "Vétérinaires", text: "Quand le vrai animal arrive à la maison, l’assistant IA répond aux premières questions et oriente les propriétaires vers vous, avec un résumé du cas partagé uniquement avec leur consentement." },
             { title: "Éducateurs canins et écoles du chiot", text: "Recommandations et réservation quand une famille passe à un vrai chien." },
@@ -702,8 +702,8 @@ const fr: Dictionary = {
                 "E-mails d’accès anticipé : Klaviyo (ne reçoit que l’adresse e-mail et la langue que vous indiquez sur ce site web).",
                 "Consentement aux cookies du site web : Kockica (enregistre votre choix de consentement).",
                 "Mesure d’audience du site web : Google Analytics 4 de Google Ireland Ltd., uniquement avec votre consentement ; Google Analytics 4 n’enregistre pas les adresses IP.",
-                "Gestion des balises du site web : Google Tag Manager de Google Ireland Ltd. ; ne dépose lui-même aucun cookie, et les balises qu’il charge respectent votre consentement.",
-                "Vidéos intégrées : YouTube de Google Ireland Ltd. (youtube-nocookie.com), chargées seulement après que vous avez lancé la lecture et autorisé les cookies publicitaires.",
+                "Gestion des balises du site web : Google Tag Manager de Google Ireland Ltd. ; ne dépose lui-même aucun cookie, et les balises qu’il charge respectent votre consentement.",
+                "Vidéos intégrées : YouTube de Google Ireland Ltd. (youtube-nocookie.com), chargées seulement après que vous avez lancé la lecture et autorisé les cookies publicitaires.",
               ],
             },
             {
@@ -734,7 +734,7 @@ const fr: Dictionary = {
           type: "cookies",
           heading: "14. Cookies",
           paragraphs: [
-            "Les cookies nécessaires assurent le fonctionnement du site web et mémorisent votre choix de consentement. Tous les autres cookies ne sont déposés que si vous les autorisez dans le bandeau, par catégorie : fonctionnels (fonctions supplémentaires), analytiques (Google Analytics : pages consultées) et publicitaires (vidéos YouTube intégrées sur certaines pages ; nous ne diffusons pas de publicité sur ce site web). Google Tag Manager ne dépose lui-même aucun cookie, et chaque balise qu’il charge respecte votre choix. Vous pouvez modifier ou retirer votre choix à tout moment.",
+            "Les cookies nécessaires assurent le fonctionnement du site web et mémorisent votre choix de consentement. Tous les autres cookies ne sont déposés que si vous les autorisez dans le bandeau, par catégorie : fonctionnels (fonctions supplémentaires), analytiques (Google Analytics : pages consultées) et publicitaires (vidéos YouTube intégrées sur certaines pages ; nous ne diffusons pas de publicité sur ce site web). Google Tag Manager ne dépose lui-même aucun cookie, et chaque balise qu’il charge respecte votre choix. Vous pouvez modifier ou retirer votre choix à tout moment.",
             "Le tableau ci-dessous est généré automatiquement par le bandeau de consentement à partir de ce qu’il détecte sur ce site web : il indique donc les cookies que nous utilisons réellement.",
           ],
           settings: "Modifier les paramètres des cookies",
@@ -961,7 +961,7 @@ const fr: Dictionary = {
           items: [
             { title: "Connectez-vous en tant que parent", text: "Ouvrez PetPrep, appuyez sur « I’m a parent » (« Je suis un parent ») et connectez-vous." },
             { title: "Ouvrez votre compte", text: "Allez dans Controls → Account. Facultatif : appuyez d’abord sur « Export my data » (« Exporter mes données ») pour en garder une copie." },
-            { title: "Supprimez", text: "Appuyez sur « Delete account » (« Supprimer le compte »), confirmez avec votre mot de passe (ou votre connexion Google / Apple) et saisissez DELETE, puis sur « Delete for good » (« Supprimer définitivement »)." },
+            { title: "Supprimez", text: "Appuyez sur « Delete account » (« Supprimer le compte »), confirmez avec votre mot de passe (ou votre connexion Google / Apple) et saisissez DELETE, puis appuyez sur « Delete for good » (« Supprimer définitivement »)." },
             { title: "C’est fait", text: "La suppression est immédiate et irréversible. Tous vos appareils et ceux de vos enfants sont déconnectés." },
           ],
         },
@@ -1090,7 +1090,7 @@ const fr: Dictionary = {
             { title: "Nom", text: "Curio en anglais, Radovednež en slovène." },
             { title: "Fait de", text: "Graphite tout doux, un collier menthe et une médaille framboise – les couleurs de PetPrep." },
             { title: "Parle", text: "Jamais. Seulement avec ses yeux." },
-            { title: "Adore", text: "Les promenades, une gamelle pleine et les enfants qui reviennent le 15e jour." },
+            { title: "Adore", text: "Les promenades, une gamelle pleine et les enfants qui sont toujours là au 15ᵉ jour." },
             { title: "Habite", text: "Dans nos courtes vidéos sur [TikTok](https://www.tiktok.com/@petprep.si) et [Instagram](https://www.instagram.com/petprep.si/), @petprep.si." },
             { title: "Mission", text: "Rappeler aux familles, avec un clin d’œil, qu’un animal a besoin de soins chaque jour, sans exception." },
           ],

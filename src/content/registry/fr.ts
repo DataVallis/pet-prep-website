@@ -179,13 +179,13 @@ const fr: RegistryCopy = {
   },
   qualifiers: {
     exact: (t) => t,
-    median: (t) => `médiane : ${t}`,
+    median: (t) => `${t} (médiane)`,
     more_than: (t) => `plus ${de(t)}`,
     less_than: (t) => `moins ${de(t)}`,
     at_least: (t) => `au moins ${t}`,
     up_to: (t) => `jusqu’à ${t}`,
-    ideal: (t) => `idéal (standard de la race) : ${t}`,
-    mean: (t) => `moyenne mesurée : ${t}`,
+    ideal: (t) => `${t} (idéal selon le standard de la race)`,
+    mean: (t) => `${t} (moyenne mesurée)`,
     about: (t) => `environ ${t}`,
     until: (t) => `jusqu’à ${t}`,
     until_about: (t) => `jusqu’à environ ${t}`,
@@ -202,7 +202,7 @@ const fr: RegistryCopy = {
       return `les ${m[1]} ${fem ? "dernières" : "derniers"} ${m[2]}`;
     },
     every: (t) => (/^1\san$/.test(t) ? "chaque année" : /^1\s/.test(t) ? `chaque ${t.replace(/^1\s/, "")}` : `${/heure|semaine|minute/.test(t) ? "toutes" : "tous"} les ${t}`),
-    expectancy: (t) => `espérance de vie à la naissance : ${t}`,
+    expectancy: (t) => `${t} (à la naissance)`,
     smaller_meals: (t) => `${t}, en plus petites portions`,
   },
   units: {
@@ -396,7 +396,7 @@ const fr: RegistryCopy = {
     },
   },
   health: {
-    shar_pei_fever: "La fièvre familiale du Shar Pei peut survenir dans la race : des accès de forte fièvre avec des articulations douloureuses et gonflées et un visage enflé — consultez un vétérinaire sans attendre.",
+    shar_pei_fever: "La fièvre familiale du Shar Pei peut survenir dans la race : des accès de forte fièvre avec des articulations douloureuses et gonflées et un visage enflé – consultez un vétérinaire sans attendre.",
     weight_gain: "Prend facilement du poids – il faut surveiller les portions et les friandises.",
     hip_elbow_dysplasia_eye_conditions: "Peut être sujet à la dysplasie de la hanche et du coude ainsi qu’à plusieurs maladies oculaires héréditaires.",
     cancer_risk: "Les sources décrivent un risque de cancer plus élevé dans cette race.",
@@ -484,7 +484,7 @@ const fr: RegistryCopy = {
     eyelids_turned: "Des paupières enroulées vers l’intérieur (entropion) ou vers l’extérieur (ectropion) peuvent survenir dans la race ; demandez des parents dont les yeux ont été examinés.",
     glaucoma_poag: "Le glaucome primaire à angle ouvert, où du liquide s’accumule dans l’œil et provoque douleur et parfois cécité, peut survenir dans la race ; un test ADN des parents existe.",
     skin_fold_dermatitis: "La peau lâche forme des plis qui peuvent s’irriter et s’infecter ; il faut les vérifier chaque jour et les garder propres et secs.",
-    skin_fold_care: "Les plis de peau du visage peuvent s’irriter et s’infecter (dermatite des plis) ; il faut les nettoyer et les sécher régulièrement.",
+    skin_fold_care: "Les plis de peau du visage peuvent s’irriter et s’infecter (dermatite des plis) ; il faut les nettoyer et les sécher régulièrement.",
     eyelid_problems: "Des problèmes de paupières peuvent survenir dans la race : paupières enroulées vers l’intérieur (entropion) ou vers l’extérieur (ectropion), et « cherry eye », où la troisième paupière ressort.",
     skin_allergy_face_folds: "Des allergies cutanées (atopie) qui provoquent des démangeaisons peuvent survenir dans la race, et les plis de la face doivent être nettoyés chaque jour.",
     skin_ear_allergies: "Des allergies environnementales peuvent survenir dans la race et entraîner des infections répétées de la peau ou des oreilles ; PetMD suggère de nettoyer les oreilles chaque semaine chez un chien allergique.",
@@ -637,39 +637,39 @@ const fr: RegistryCopy = {
     anatolian_shepherd_dog: {
       aka: "Kangal, Anatolian Shepherd Dog, Karabash",
       text: [
-        "Le berger d'Anatolie est un grand chien de protection des troupeaux, puissamment bâti, originaire de Turquie ; la FCI décrit le chien de berger turc sous le nom de Kangal (Kangal Shepherd Dog) : unicolore, du fauve au gris loup, avec un masque noir, d'une taille de 72–78 cm pour les mâles et 65–73 cm pour les femelles. Le standard américain de la race indique 110–150 livres (environ 50–68 kg) pour les mâles et 80–120 livres (environ 36–54 kg) pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 18–24 mois (PetMD) ; le Royal Kennel Club indique une espérance de vie de plus de 10 ans et WebMD de 11 à 13 ans en moyenne.",
-        "Le Royal Kennel Club recommande plus de 2 heures d'exercice par jour et un entretien du pelage plus d'une fois par semaine, indique qu'il perd ses poils et convient à une grande maison avec un grand jardin à la campagne, et le classe en catégorie 1 du programme Breed Watch. PetMD écrit que le berger d'Anatolie conviendrait sans doute mieux à un foyer sans jeunes enfants, que les chiots présentés tôt à d'autres animaux s'entendent généralement bien avec eux, qu'une socialisation précoce est essentielle, qu'en dehors des deux mues annuelles un brossage hebdomadaire suffit et qu'il faut éviter l'exercice autour des repas.",
+        "Le berger d’Anatolie est un grand chien de protection des troupeaux, puissamment bâti, originaire de Turquie ; la FCI décrit le chien de berger turc sous le nom de Kangal (Kangal Shepherd Dog) : unicolore, du fauve au gris loup, avec un masque noir, d’une taille de 72–78 cm pour les mâles et 65–73 cm pour les femelles. Le standard américain de la race indique 110–150 livres (environ 50–68 kg) pour les mâles et 80–120 livres (environ 36–54 kg) pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 18–24 mois (PetMD) ; le Royal Kennel Club indique une espérance de vie de plus de 10 ans et WebMD de 11 à 13 ans en moyenne.",
+        "Le Royal Kennel Club recommande plus de 2 heures d’exercice par jour et un entretien du pelage plus d’une fois par semaine, indique qu’il perd ses poils et convient à une grande maison avec un grand jardin à la campagne, et le classe en catégorie 1 du programme Breed Watch. PetMD écrit que le berger d’Anatolie conviendrait sans doute mieux à un foyer sans jeunes enfants, que les chiots présentés tôt à d’autres animaux s’entendent généralement bien avec eux, qu’une socialisation précoce est essentielle, qu’en dehors des deux mues annuelles un brossage hebdomadaire suffit et qu’il faut éviter l’exercice autour des repas.",
       ],
       sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
     },
     irish_setter: {
       aka: "Setter irlandais, Irish Setter",
       text: [
-        "Le setter irlandais rouge (Irish Setter) est un chien d’arrêt élancé et athlétique originaire d’Irlande, sélectionné pour quêter largement. Le standard FCI décrit une seule couleur — un châtain riche sans trace de noir — et une hauteur de 58 à 67 cm pour les mâles et de 55 à 62 cm pour les femelles ; le standard américain de la race juge idéal environ 70 livres (environ 32 kg) pour un mâle et 60 livres (environ 27 kg) pour une femelle. Un chien de cette taille atteint sa taille adulte vers 15 à 18 mois (PetMD), et le Royal Kennel Club indique une espérance de vie de plus de 10 ans.",
-        "Le Royal Kennel Club recommande plus de 2 heures d’exercice par jour et un entretien du pelage plus d’une fois par semaine, indique que la race perd ses poils et convient à une grande maison avec un grand jardin, et la classe dans la catégorie 1 de Breed Watch. La PDSA décrit des chiens très amicaux et affectueux qui s’entendent bien avec les enfants et les autres animaux, et conseille un entretien du pelage 2 à 3 fois par semaine ; PetMD recommande de contrôler et nettoyer les oreilles chaque semaine et écrit que les setters irlandais ont besoin de beaucoup de compagnie humaine.",
+        "Le setter irlandais rouge (Irish Setter) est un chien d’arrêt élancé et athlétique originaire d’Irlande, sélectionné pour quêter largement. Le standard FCI décrit une seule couleur – un châtain riche sans trace de noir – et une hauteur de 58 à 67 cm pour les mâles et de 55 à 62 cm pour les femelles ; le standard américain de la race juge idéal environ 70 livres (environ 32 kg) pour un mâle et 60 livres (environ 27 kg) pour une femelle. Un chien de cette taille atteint sa taille adulte vers 15 à 18 mois (PetMD), et le Royal Kennel Club indique une espérance de vie de plus de 10 ans.",
+        "Le Royal Kennel Club recommande plus de 2 heures d’exercice par jour et un entretien du pelage plus d’une fois par semaine, indique que la race perd ses poils et convient à une grande maison avec un grand jardin, et la classe dans la catégorie 1 de Breed Watch. La PDSA décrit des chiens très amicaux et affectueux qui s’entendent bien avec les enfants et les autres animaux, et conseille un entretien du pelage 2 à 3 fois par semaine ; PetMD recommande de contrôler et nettoyer les oreilles chaque semaine et écrit que les setters irlandais ont besoin de beaucoup de compagnie humaine.",
       ],
       sources: ["S675", "S676", "S678", "S680", "S10"],
     },
     brussels_griffon: {
       aka: "Griffon de Bruxelles, Brussels Griffon",
       text: [
-        "Le griffon bruxellois est un petit chien de compagnie originaire de Belgique, au visage court et plat. Le standard FCI décrit un poil rouge, naturellement dur et légèrement ondulé, et un poids de 3,5 à 6 kg ; le Royal Kennel Club britannique, qui reconnaît une variété à poil dur et une à poil lisse, le décrit comme un petit chien intelligent au caractère de terrier. Un chien de cette taille atteint sa taille adulte vers 8 à 12 mois (PetMD), et le Royal Kennel Club indique une espérance de vie de plus de 12 ans (PetMD : 12 à 15 ans).",
-        "Le Royal Kennel Club recommande jusqu'à 30 minutes d'exercice par jour et un toilettage plus d'une fois par semaine, indique qu'il perd ses poils et convient à un appartement, et le classe en catégorie 2 du programme Breed Watch. PetMD décrit un chien au museau écrasé (brachycéphale), sensible à la chaleur humide, conseille de nettoyer les plis du visage environ une fois par semaine et de brosser les dents chaque jour, et précise que les griffons bruxellois s'entendent bien avec les enfants et les autres animaux sous surveillance, mais n'aiment pas rester seuls longtemps.",
+        "Le griffon bruxellois est un petit chien de compagnie originaire de Belgique, au visage court et plat. Le standard FCI décrit un poil rouge, naturellement dur et légèrement ondulé, et un poids de 3,5 à 6 kg ; le Royal Kennel Club britannique, qui reconnaît une variété à poil dur et une à poil lisse, le décrit comme un petit chien intelligent au caractère de terrier. Un chien de cette taille atteint sa taille adulte vers 8 à 12 mois (PetMD), et le Royal Kennel Club indique une espérance de vie de plus de 12 ans (PetMD : 12 à 15 ans).",
+        "Le Royal Kennel Club recommande jusqu’à 30 minutes d’exercice par jour et un toilettage plus d’une fois par semaine, indique qu’il perd ses poils et convient à un appartement, et le classe en catégorie 2 du programme Breed Watch. PetMD décrit un chien au museau écrasé (brachycéphale), sensible à la chaleur humide, conseille de nettoyer les plis du visage environ une fois par semaine et de brosser les dents chaque jour, et précise que les griffons bruxellois s’entendent bien avec les enfants et les autres animaux sous surveillance, mais n’aiment pas rester seuls longtemps.",
       ],
       sources: ["S669", "S670", "S672", "S10"],
     },
     rat_terrier: {
       aka: "Rattie, Rat Terrier américain",
       text: [
-        "Le Rat Terrier est un petit terrier américain élevé en deux tailles — miniature et standard — au poil court, bien couché, lisse et brillant. Le standard de la race admet une hauteur au garrot allant jusqu’à 18 pouces (46 cm), et PetMD indique un poids de 10 à 25 livres (environ 4,5 à 11 kg) pour les deux tailles ; un chien de cette taille a fini sa croissance vers 9 à 12 mois (PetMD). VCA indique une espérance de vie de 12 à 16 ans, PetMD de 12 à 18 ans.",
-        "Le Rat Terrier Club of America indique que les Rat Terriers s’entendent bien avec les enfants, surtout s’ils grandissent avec eux, et s’adaptent à un appartement, mais ont besoin d’au moins 30 minutes d’exercice par jour. PetMD précise qu’ils ont besoin de beaucoup de stimulation physique et mentale, n’aiment pas rester longtemps seuls et perdent un peu de poils toute l’année ; VCA conseille un brossage par semaine et prévient qu’ils ne s’entendent pas forcément avec les petits animaux, surtout les rongeurs.",
+        "Le Rat Terrier est un petit terrier américain élevé en deux tailles – miniature et standard – au poil court, bien couché, lisse et brillant. Le standard de la race admet une hauteur au garrot allant jusqu’à 18 pouces (46 cm), et PetMD indique un poids de 10 à 25 livres (environ 4,5 à 11 kg) pour les deux tailles ; un chien de cette taille a fini sa croissance vers 9 à 12 mois (PetMD). VCA indique une espérance de vie de 12 à 16 ans, PetMD de 12 à 18 ans.",
+        "Le Rat Terrier Club of America indique que les Rat Terriers s’entendent bien avec les enfants, surtout s’ils grandissent avec eux, et s’adaptent à un appartement, mais ont besoin d’au moins 30 minutes d’exercice par jour. PetMD précise qu’ils ont besoin de beaucoup de stimulation physique et mentale, n’aiment pas rester longtemps seuls et perdent un peu de poils toute l’année ; VCA conseille un brossage par semaine et prévient qu’ils ne s’entendent pas forcément avec les petits animaux, surtout les rongeurs.",
       ],
       sources: ["S650", "S648", "S10", "S647"],
     },
     shar_pei: {
       aka: "Shar-Pei chinois, Chinese Shar-Pei, Sharpei",
       text: [
-        "Le Shar Pei (« Chinese Shar-Pei » aux États-Unis) est un chien actif, compact, de construction carrée et de taille moyenne, originaire de Chine, au poil court, dur et hérissé d’une seule couleur (toutes sauf le blanc), avec des plis sur la tête et le garrot et un museau large. Le standard du Royal Kennel Club indique une hauteur de 46 à 51 cm et la PDSA un poids de 20 à 27 kg ; un chien de cette taille a fini sa croissance vers 12 à 15 mois (PetMD). Le Royal Kennel Club et la PDSA indiquent une espérance de vie de plus de 10 ans, mais une étude VetCompass sur des chiens au Royaume-Uni a trouvé une médiane de 7,3 ans.",
+        "Le Shar Pei (« Chinese Shar-Pei » aux États-Unis) est un chien actif, compact, de construction carrée et de taille moyenne, originaire de Chine, au poil court, dur et hérissé d’une seule couleur (toutes sauf le blanc), avec des plis sur la tête et le garrot et un museau large. Le standard du Royal Kennel Club indique une hauteur de 46 à 51 cm et la PDSA un poids de 20 à 27 kg ; un chien de cette taille a fini sa croissance vers 12 à 15 mois (PetMD). Le Royal Kennel Club et la PDSA indiquent une espérance de vie de plus de 10 ans, mais une étude VetCompass sur des chiens au Royaume-Uni a trouvé une médiane de 7,3 ans.",
         "Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour et un brossage par semaine, et classe la race en catégorie 2 de Breed Watch en raison de problèmes de paupières et de plis de peau. La PDSA décrit les Shar Peis comme des chiens de famille fidèles et dévoués, qui conviennent le mieux à des maîtres expérimentés et à des enfants plus âgés, met en garde contre un fort instinct de prédation envers les petits animaux et conseille de garder les plis de peau propres et secs et de laisser un intervalle entre le repas et l’exercice.",
       ],
       sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
@@ -1299,8 +1299,8 @@ const fr: RegistryCopy = {
     greater_swiss_mountain_dog: {
       aka: "Grand Bouvier Suisse, Greater Swiss Mountain Dog, Swissy",
       text: [
-        "Le Grand Bouvier Suisse est un chien de trait tricolore de Suisse, robuste, à forte ossature et bien musclé : noir avec des marques feu et blanches symétriques. Le standard FCI indique une hauteur de 65 à 72 cm pour les mâles et de 60 à 68 cm pour les femelles, sans poids ; WebMD indique 52 à 64 kg pour les mâles et 39 à 50 kg pour les femelles. Un chien de cette taille atteint sa taille adulte vers 18 à 24 mois (PetMD), et le Royal Kennel Club indique une espérance de vie de plus de 10 ans (PetMD : 8 à 11 ans).",
-        "Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour et un brossage hebdomadaire, et indique que la race perd ses poils et convient à une grande maison avec un grand jardin. Selon PetMD, ce sont d’excellents chiens de famille, doux avec les enfants (toute interaction doit être surveillée) ; il conseille de nettoyer les oreilles chaque semaine et de ne pas faire faire d’exercice juste avant ou après les repas, à cause du risque de dilatation-torsion de l’estomac (GDV). WebMD conseille de brosser les dents chaque jour et de limiter les friandises, car la race a tendance à prendre du poids.",
+        "Le Grand Bouvier Suisse est un chien de trait tricolore de Suisse, robuste, à forte ossature et bien musclé : noir avec des marques feu et blanches symétriques. Le standard FCI indique une hauteur de 65 à 72 cm pour les mâles et de 60 à 68 cm pour les femelles, sans poids ; WebMD indique 52 à 64 kg pour les mâles et 39 à 50 kg pour les femelles. Un chien de cette taille atteint sa taille adulte vers 18 à 24 mois (PetMD), et le Royal Kennel Club indique une espérance de vie de plus de 10 ans (PetMD : 8 à 11 ans).",
+        "Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour et un brossage hebdomadaire, et indique que la race perd ses poils et convient à une grande maison avec un grand jardin. Selon PetMD, ce sont d’excellents chiens de famille, doux avec les enfants (toute interaction doit être surveillée) ; il conseille de nettoyer les oreilles chaque semaine et de ne pas faire faire d’exercice juste avant ou après les repas, à cause du risque de dilatation-torsion de l’estomac (GDV). WebMD conseille de brosser les dents chaque jour et de limiter les friandises, car la race a tendance à prendre du poids.",
       ],
       sources: ["S653", "S654", "S656", "S658", "S10"],
     },
