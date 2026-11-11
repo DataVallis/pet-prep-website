@@ -693,6 +693,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S783", "S781", "S10", "S780", "S784", "S123"],
     },
+    beauceron: {
+      aka: "Beauceron, berger de beauce, beauce sheepdog, bas rouge",
+      text: [
+        "Beauceron ali berger de beauce je velik francoski ovčar; standard FCI ga opisuje kot velikega, čvrstega, vzdržljivega, močnega in mišičastega psa brez okornosti, s kratko, gosto dlako, repom z rahlim kavljem v obliki črke J in dvojnimi krempeljčki na zadnjih nogah, črno-rjavkaste ali harlekinske barve, ter navaja višino 65–70 cm pri psih in 61–68 cm pri psicah. Tabela teže AKC navaja 70–110 funtov (približno 32–50 kg) za pse in psice; pes te velikosti doraste pri približno 15–18 mesecih (velikostni razred PetMD). The Royal Kennel Club navaja življenjsko dobo več kot 10 let, PetMD pa 10–12 let.",
+        "The Royal Kennel Club beaucerona opisuje kot mirnega in samozavestnega, zvestega spremljevalca in čuvaja, priporoča več kot 2 uri gibanja na dan in česanje večkrat na teden, veliko hišo z velikim vrtom ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da se lahko dobro razume z majhnimi otroki in drugimi psi, če so prvi stiki pod nadzorom, da je do novih ljudi lahko zadržan, zato naj mladiček nove ljudi spozna zgodaj, da je najraje čim več z družino, ter svetuje česanje vsaj enkrat na teden in nobenega gibanja eno uro pred obrokom in eno uro po njem.",
+      ],
+      sources: ["S790", "S268", "S10", "S787", "S791"],
+    },
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
       text: [

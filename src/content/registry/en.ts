@@ -673,6 +673,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S783", "S781", "S10", "S780", "S784", "S123"],
     },
+    beauceron: {
+      aka: "Berger de Beauce, Beauce Sheepdog, Bas Rouge",
+      text: [
+        "The Beauceron, or Berger de Beauce, is a large French sheepdog; the FCI standard describes a big, solid, hardy, powerful and muscular dog without lumber, with a short, thick coat, a tail with a slight J-shaped hook and double dewclaws on the hind legs, in black and tan or harlequin, and gives a height of 65–70 cm for males and 61–68 cm for females. The AKC breed weight chart gives 70–110 pounds (about 32–50 kg) for males and females; a dog of this size is fully grown at about 15–18 months (PetMD size class). The Royal Kennel Club gives a lifespan of over 10 years and PetMD 10–12 years.",
+        "The Royal Kennel Club calls the Beauceron quiet and confident, a loyal companion and guard dog, recommends more than 2 hours of exercise a day and grooming more than once a week, a large house with a large garden, and lists it in Breed Watch Category 1. PetMD says they can be good with young children and other dogs when introductions are supervised, can be wary of new people, so puppies should meet new people early, enjoy being with their family as much as possible, and recommends brushing at least once a week and no exercise one hour before and one hour after eating.",
+      ],
+      sources: ["S790", "S268", "S10", "S787", "S791"],
+    },
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
       text: [
