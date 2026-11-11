@@ -48,7 +48,7 @@ export const fr: KitCopy = {
   },
   talk: {
     title: "Discussion en famille",
-    intro: "Asseyez-vous ensemble, au même endroit, en prenant le temps. Tout le monde répond, les adultes aussi. Notez ce sur quoi vous vous accordez ; la Promesse de la page suivante sera plus facile à remplir.",
+    intro: "Asseyez-vous ensemble, au même endroit, en prenant le temps. Tout le monde répond, les adultes aussi. Notez ce dont vous convenez ; la Promesse de la page suivante sera plus facile à remplir.",
     questions: [
       "Qui se lève en premier un matin ordinaire, et qui donne à manger à l’animal ? Que se passe-t-il les matins où cette personne est fatiguée ?",
       "Qu’est-ce qui change le week-end, les jours d’école et quand les projets tombent à l’eau ?",
@@ -76,7 +76,7 @@ export const fr: KitCopy = {
       { label: "Nettoyer derrière l’animal", blank: "quoi et quand" },
     ],
     ownTask: "Notre propre tâche",
-    childOutro: "Quand je n’en ai pas envie, je le dis à voix haute et je demande de l’aide. Je ne laisse pas tomber la tâche comme ça.",
+    childOutro: "Quand je n’en ai pas envie, je le dis à voix haute et je demande de l’aide. Je ne la laisse pas tomber en silence.",
     adultsHeading: "Notre promesse",
     adultsText: "Nous t’aidons à apprendre, nous te le rappelons gentiment et nous ne faisons pas tes tâches à ta place, sauf si tu nous le demandes. Nous savons aussi que le bien-être d’un animal relève, au bout du compte, de la responsabilité d’un adulte, et nous interviendrons dès que l’animal en aura besoin. Notre part de l’accord :",
     adultsBlank: "notre part",
@@ -106,7 +106,7 @@ export const fr: KitCopy = {
   },
   cost: {
     title: "Combien coûte un animal ?",
-    intro: "Les prix dépendent du pays, de l’animal et de vos choix : nous vous laissons donc les chiffres. Cherchez les vrais prix dans les magasins, les refuges et chez les vétérinaires près de chez vous, inscrivez-les et additionnez-les en bas.",
+    intro: "Les prix dépendent du pays, de l’animal et de vos choix : nous vous laissons donc les chiffres. Cherchez les vrais prix dans les magasins, dans les refuges et chez les vétérinaires près de chez vous, inscrivez-les et additionnez-les en bas.",
     head: ["Catégorie", "Une fois", "Par mois", "D’où vient le chiffre"],
     rows: [
       "Achat ou adoption",
@@ -148,26 +148,26 @@ export const fr: KitCopy = {
   },
   award: {
     title: "Diplôme du premier mois",
-    lead: "Ce diplôme revient à celui ou celle qui a tenu la Promesse de l’animal pendant un mois.",
+    lead: "Ce diplôme récompense la personne qui a tenu la Promesse de l’animal pendant un mois.",
     forLabel: "Décerné à",
     better: "Ce que je sais mieux faire maintenant",
     moment: "Mon moment préféré",
     colour: "Colorie-moi",
     signed: "Signé par les adultes",
-    parents: "Ne signez que si les coches et vos propres yeux sont d’accord. Si le mois ne s’est pas passé comme prévu, gardez cette page, parlez-en, ajustez la promesse et recommencez. C’est ainsi que le kit joue son rôle.",
+    parents: "Ne signez que si les cases cochées et vos propres yeux concordent. Si le mois ne s’est pas passé comme prévu, gardez cette page, parlez-en, ajustez la promesse et recommencez. C’est ainsi que le kit joue son rôle.",
   },
   next: {
     title: "Et maintenant ?",
     lead: "Le papier est un bon début. Mais ce n’est pas la même chose qu’un animal vivant à la maison, et l’étape suivante est un moyen d’en apprendre davantage.",
     steps: [
-      { title: "Imprimer et discuter", text: "Avec la discussion en famille et la Promesse, tout le monde se met d’accord sur la même base." },
+      { title: "Imprimer et discuter", text: "La discussion en famille et la Promesse mettent tout le monde sur la même longueur d’onde." },
       { title: "Essayer un mois", text: "Remplissez honnêtement les quatre tableaux hebdomadaires, pendant tout le mois." },
       { title: "Décider ensemble", text: "Servez-vous de la fiche des coûts et de la liste de vérification, et prenez la décision en famille." },
     ],
     appHeading: "Le PetPrep Challenge de 12 semaines",
     appText: "Dans l’application PetPrep, votre enfant s’occupe pendant douze semaines d’un animal généré par IA, plus vrai que nature : repas, eau, promenades et nettoyage. Vous suivez le déroulement dans votre propre tableau de bord parent. C’est un entraînement, pas la promesse qu’un animal vous convient.",
     cta: "En savoir plus sur petprep.si",
-    slogan: "Prêt pour un animal. Présent toute sa vie.",
+    slogan: "Prêt pour un animal. À ses côtés toute sa vie.",
     mascotLine: "Bonne chance de la part de Curio.",
   },
 };

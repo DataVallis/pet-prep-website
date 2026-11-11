@@ -8,7 +8,7 @@ export const fi: GiftCopy = {
   breadcrumb: "Lahjakortti",
   eyebrow: "Lahjakortti",
   title: "Älä lahjoita pentua. Lahjoita kokeilu.",
-  lead: "Lahjakortti PetPrepin 12 viikon haasteeseen: kaksitoista viikkoa huolenpitoa aidonnäköisestä simuloidusta eläimestä, ennen kuin perhe päättää, haluaako se oikean. Lapselle, joka toivoo lemmikkiä yhä uudestaan, ja vanhemmille, jotka haluaisivat vastauksen.",
+  lead: "Lahjakortti PetPrepin 12 viikon haasteeseen: kaksitoista viikkoa aidonnäköisen simuloidun eläimen hoitoa, ennen kuin perhe päättää, haluaako se oikean. Lapselle, joka toivoo lemmikkiä yhä uudestaan, ja vanhemmille, jotka haluaisivat vastauksen.",
   buy: {
     button: "Osta lahjakortti",
     soon: "Tulossa pian",
@@ -37,10 +37,10 @@ export const fi: GiftCopy = {
   included: {
     heading: "Mitä mukana tulee",
     items: [
-      "Yksi PetPrepin 12 viikon haaste yhdelle eläimelle, samoin kuin jos ostaisit sen sovelluksessa",
+      "Yksi PetPrepin 12 viikon haaste yhdelle eläimelle, aivan kuin ostaisit sen sovelluksessa",
       "Mikä tahansa laji ja rotu, joka on sovelluksessa valittavissa valintahetkellä",
       "Kaikki videot, koko hoitohistoria ja Vastuutodistus",
-      "Tulostettava lahjakortti, jossa on tilaa omalle omistuskirjoitukselle (täytä ”Kenelle” ja ”Keneltä” käsin)",
+      "Tulostettava lahjakortti, jossa on tilaa omalle tervehdykselle (täytä ”Kenelle” ja ”Keneltä” käsin)",
     ],
   },
   audience: {
@@ -48,14 +48,14 @@ export const fi: GiftCopy = {
     forTitle: "Lahjakortti sopii sinulle, jos",
     forItems: [
       "perheesi lapsi on jo pitkään toivonut eläintä ja haluat hänen kokeilevan ensin,",
-      "etsit lahjaa lapsenlapselle, veljen- tai siskontyttärelle tai kummilapselle, joka ei ole elävä eläin eikä lupaus,",
+      "etsit lapsenlapselle, veljen- tai sisarentyttärelle tai kummilapselle lahjaa, joka ei ole elävä eläin eikä lupaus,",
       "haluat, että kokemus eläimestä huolehtimisesta syntyy lapsen omista teoista eikä sinun sanoistasi.",
     ],
     notTitle: "Lahjakortti ei sovi sinulle, jos",
     notItems: [
       "haluat lahjoittaa oikean eläimen: PetPrep on simulaatio, eikä lahjakortti sisällä oikeaa eläintä eikä lupaa sellaista,",
       "perheessä ei ole vanhempaa, jolla on tili sovelluksessa: lunastus tehdään vanhemman tilin kautta,",
-      "etsit nopeaa peliä ilman vanhempien mukanaoloa: PetPrep on rakennettu niin, että vanhempi seuraa ja päättää.",
+      "etsit nopeaa peliä, johon vanhempi ei osallistu: PetPrep on rakennettu niin, että vanhempi seuraa ja päättää.",
     ],
   },
   faq: {
@@ -66,7 +66,7 @@ export const fi: GiftCopy = {
       { q: "Millä laitteilla tämä toimii?", a: "PetPrep-sovellus on saatavilla iPhonelle ja Android-puhelimille. Lahjakortin lunastat tällä verkkosivulla millä tahansa selaimella." },
       { q: "Tarvitsenko tilin?", a: "Et lahjakortin ostamiseen tai tulostamiseen. Lunastamiseen perheellä on oltava vanhemman tili sovelluksessa: syötät koodin yhdessä tämän tilin sähköpostiosoitteen kanssa. Jos kirjaudut sovellukseen Googlella tai Applella, syötä sovelluksessa näkyvä sähköpostiosoite (”Controls → Account”)." },
       { q: "Käykö lahjakortti kissalle?", a: "Kyllä. Sovelluksessa on nyt koiria ja kissoja, ja lahjakortti käy mihin tahansa lajiin ja rotuun, joka on sovelluksessa valittavissa valintahetkellä." },
-      { q: "Saako lapsi eläimen haasteen jälkeen?", a: "Sitä lahjakortti ei lupaa eikä sisällä. Haaste auttaa perhettä vastaamaan rehellisesti siihen, onko se valmis. Päätös oikeasta eläimestä jää teille." },
+      { q: "Saako lapsi eläimen haasteen jälkeen?", a: "Sitä lahjakortti ei lupaa eikä sisällä. Haaste auttaa perhettä vastaamaan rehellisesti siihen, onko perhe valmis. Päätös oikeasta eläimestä jää teille." },
       { q: "Mitä koodille tapahtuu, kun kirjoitan sen?", a: "Lahjakortin tulostussivulla koodia ei tallenneta eikä lähetetä minnekään: lahjakortti piirretään selaimessasi. Koodi tarkistetaan vasta lunastettaessa." },
     ],
   },
@@ -86,7 +86,7 @@ export const fi: GiftCopy = {
     lead: "Lemon Squeezy lähetti sinulle lahjakortin koodin sähköpostitse. Liitä se alle, niin lahjakortti piirtyy tähän selaimessasi.",
     codeLabel: "Lemon Squeezyn sähköpostissa oleva koodi",
     codeHint: "Liitä koodi täsmälleen sellaisena kuin se on sähköpostissa.",
-    codeInvalid: "Koodi ei näytä oikealta. Se koostuu 8–64 kirjaimesta, numerosta ja yhdysviivasta.",
+    codeInvalid: "Koodi ei näytä oikealta. Se koostuu 8–64 merkistä: kirjaimista, numeroista ja yhdysviivoista.",
     print: "Tulosta lahjakortti",
     privacy: "Koodi pysyy selaimessasi. Emme tallenna sitä, emme lähetä sitä palvelimelle emmekä laita sitä sivun osoitteeseen. Kun suljet sivun, se on poissa.",
     previewHeading: "Lahjakortin esikatselu",
@@ -132,11 +132,11 @@ export const fi: GiftCopy = {
     invalid_code: "Emme tunnista tätä koodia. Tarkista, että se vastaa täsmälleen kortissa olevaa koodia, ja yritä uudelleen.",
     expired: "Tämä lahjakortti on vanhentunut. Lahjakortit ovat voimassa 12 kuukautta ostosta.",
     refunded: "Tämä lahjakortti ei ole enää voimassa, koska se on palautettu tai peruutettu.",
-    already_redeemed: "Tämä lahjakortti on jo lunastettu toiselle perhetilille. Jos luulet, että kyse on virheestä, kirjoita meille osoitteeseen david@petprep.si.",
+    already_redeemed: "Tämä lahjakortti on jo lunastettu toiselle perhetilille. Jos epäilet virhettä, kirjoita meille osoitteeseen david@petprep.si.",
     no_account: "Tällä sähköpostiosoitteella ei ole vanhemman tiliä. Luo ensin sovelluksessa vanhemman tili ja palaa sitten tänne. Koodiasi ei ole käytetty.",
     unavailable: "Lahjakorttien lunastus ei ole tällä hetkellä käytettävissä. Yritä myöhemmin uudelleen.",
     rate_limited: "Liian monta yritystä. Odota muutama minuutti ja yritä uudelleen.",
     upstream_error: "Emme voi tällä hetkellä tarkistaa lahjakorttia. Yritä muutaman minuutin kuluttua uudelleen. Mitään ei ole käytetty.",
-    timeout: "Emme saaneet vastausta ajoissa. Jos lahjakortti on voitu jo lunastaa, syötä se uudelleen: sivu näyttää, että se on jo lunastettu tilillesi. Muuten yritä uudelleen muutaman minuutin kuluttua.",
+    timeout: "Emme saaneet vastausta ajoissa. Jos lahjakortti on voinut jo tulla lunastetuksi, syötä se uudelleen: sivu näyttää, että se on jo lunastettu tilillesi. Muuten yritä uudelleen muutaman minuutin kuluttua.",
   },
 };

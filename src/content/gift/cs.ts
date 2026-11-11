@@ -115,7 +115,7 @@ export const cs: GiftCopy = {
     meta: { title: "Uplatnění dárkového poukazu", description: "Zadejte kód dárkového poukazu a e-mail rodičovského účtu v aplikaci PetPrep." },
     eyebrow: "Dárkový poukaz",
     title: "Uplatnění dárkového poukazu",
-    lead: "Zadejte kód z poukazu a e-mail, s nímž jste přihlášeni v aplikaci PetPrep. Výzva se přidá k účtu rodiny a zvíře vyberete v aplikaci.",
+    lead: "Zadejte kód z poukazu a e-mail, kterým se přihlašujete do aplikace PetPrep. Výzva se přidá k účtu rodiny a zvíře vyberete v aplikaci.",
     codeLabel: "Kód poukazu",
     codeHint: "Kód je na poukazu. Mezery nevadí.",
     emailLabel: "E-mail rodičovského účtu",

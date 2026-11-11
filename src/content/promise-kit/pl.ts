@@ -12,7 +12,7 @@ export const pl: KitCopy = {
     { id: "cost", title: "Ile kosztuje zwierzak?", text: "Arkusz z pustymi polami. Prawdziwe ceny sprawdzacie i wpisujecie sami." },
     { id: "ready", title: "Czy jesteśmy gotowi?", text: "Lista kontrolna dla rodziców z wyjaśnieniem, jak czytać odpowiedzi. Bez punktacji." },
     { id: "award", title: "Dyplom za pierwszy miesiąc", text: "Strona do pokolorowania i podpisania po pierwszym miesiącu." },
-    { id: "next", title: "Co dalej?", text: "Ostatnia strona: dokąd iść po papierze." },
+    { id: "next", title: "Co dalej?", text: "Ostatnia strona: co po papierowym etapie." },
   ],
   common: {
     kitName: "Obietnica dla zwierzaka",
@@ -48,7 +48,7 @@ export const pl: KitCopy = {
   },
   talk: {
     title: "Rozmowa w rodzinie",
-    intro: "Usiądźcie razem, w jednym miejscu, mając czas. Odpowiadają wszyscy, także dorośli. Zapiszcie, w czym się zgadzacie; Obietnicę na następnej stronie łatwiej będzie wypełnić.",
+    intro: "Usiądźcie razem, w jednym miejscu, mając czas. Odpowiadają wszyscy, także dorośli. Zapiszcie, w czym się zgadzacie: dzięki temu łatwiej wypełnić Obietnicę na następnej stronie.",
     questions: [
       "Kto wstaje pierwszy w zwykły poranek i kto karmi zwierzaka? Co się dzieje w poranki, gdy ta osoba jest zmęczona?",
       "Co zmienia się w weekendy, w dni szkolne i gdy plany się sypią?",
@@ -61,7 +61,7 @@ export const pl: KitCopy = {
       "Co o tym myślą wszyscy, którzy mieszkają w domu, także ci, którzy nie są zachwyceni?",
       "Jak długo trwa „na zawsze”? Wyobraźcie sobie, że zwierzak jest z wami jeszcze za wiele lat. Jak wygląda wtedy wasza rodzina i co musi się utrzymać, żebyście nadal się cieszyli?",
     ],
-    outro: "Nie ma dobrych odpowiedzi. Jeśli jakieś pytanie sprawia, że wszyscy milkną, to właśnie jemu warto poświęcić najwięcej czasu.",
+    outro: "Nie ma właściwych odpowiedzi. Jeśli jakieś pytanie sprawia, że wszyscy milkną, to właśnie jemu warto poświęcić najwięcej czasu.",
   },
   promise: {
     title: "Moja obietnica dla zwierzaka",
@@ -132,7 +132,7 @@ export const pl: KitCopy = {
       { topic: "Miejsce", text: "Czy jest miejsce, w którym zwierzak może spać, jeść i odpoczywać, i czy odpowiada to wszystkim, którzy tam mieszkają lub często bywają (oraz właścicielowi mieszkania, jeśli je wynajmujecie)?" },
       { topic: "Alergie", text: "Czy ktoś z domowników lub stałych gości kiedykolwiek wspominał o alergii? Jeśli nie macie pewności, to pytanie do lekarza, nie do tej kartki." },
       { topic: "Wakacje", text: "Czy wiecie, kto zajmie się zwierzakiem, gdy wyjedziecie, i ile to kosztuje?" },
-      { topic: "Długi termin", text: "Czy potraficie wyobrazić sobie waszą rodzinę zobowiązaną na całe życie zwierzaka, nawet jeśli dziecko straci zainteresowanie albo dorośnie i wyprowadzi się z domu?" },
+      { topic: "Długi termin", text: "Czy potraficie sobie wyobrazić, że rodzina dotrzymuje zobowiązania przez całe życie zwierzaka, nawet gdy dziecko straci zainteresowanie albo dorośnie i się wyprowadzi?" },
       { topic: "Pieniądze", text: "Czy wypełniliście arkusz kosztów i czy suma wydaje się wam do przyjęcia?" },
       { topic: "Wszyscy", text: "Czy wszyscy w domu się zgadzają, także ci, którzy nie wykonywaliby codziennych zadań?" },
     ],
@@ -149,7 +149,7 @@ export const pl: KitCopy = {
   award: {
     title: "Dyplom za pierwszy miesiąc",
     lead: "Ten dyplom należy się osobie, która przez miesiąc dotrzymywała obietnicy dla zwierzaka.",
-    forLabel: "Przyznany dla",
+    forLabel: "Dyplom dla",
     better: "Co teraz wychodzi mi lepiej",
     moment: "Mój ulubiony moment",
     colour: "Pokoloruj mnie",
@@ -158,10 +158,10 @@ export const pl: KitCopy = {
   },
   next: {
     title: "Co dalej?",
-    lead: "Papier to dobry początek. Ale to nie to samo co żywe zwierzę w domu, a następny krok to sposób, żeby dowiedzieć się więcej.",
+    lead: "Papier to dobry początek, ale to nie to samo co żywe zwierzę w domu. Kolejny krok pomaga dowiedzieć się więcej.",
     steps: [
       { title: "Wydrukujcie i porozmawiajcie", text: "Dzięki rozmowie w rodzinie i Obietnicy wszyscy będą na tej samej stronie." },
-      { title: "Wypróbujcie przez miesiąc", text: "Szczerze wypełniajcie cztery tygodniowe tabele przez cały miesiąc." },
+      { title: "Wypróbujcie przez miesiąc", text: "Przez cały miesiąc szczerze wypełniajcie tygodniowe tabele." },
       { title: "Zdecydujcie razem", text: "Skorzystajcie z arkusza kosztów i listy kontrolnej i podejmijcie decyzję jako rodzina." },
     ],
     appHeading: "12-tygodniowe wyzwanie PetPrep",
@@ -184,7 +184,7 @@ export const plSales: KitSales = {
   buy: "Kup zestaw",
   sample: "Pobierz bezpłatną stronę próbną",
   sampleHeading: "Najpierw wypróbuj stronę z Obietnicą",
-  sampleText: "Sama Obietnica dla zwierzaka jako bezpłatna strona A4: umowa między dzieckiem a dorosłymi z codziennymi zadaniami, waszymi zasadami i miejscem na podpisy wszystkich. Podajesz adres e-mail i zgadzasz się na kontakt z naszej strony; PDF przychodzi z kasy.",
+  sampleText: "Sama Obietnica dla zwierzaka jako bezpłatna strona A4: umowa między dzieckiem a dorosłymi z codziennymi zadaniami, waszymi zasadami i miejscem na podpisy wszystkich. Podajesz adres e-mail i zgadzasz się na kontakt z naszej strony; PDF dostajesz przy kasie.",
   sampleNote: "Twojego adresu e-mail używamy tylko do tego, na co zgodzisz się w kasie.",
   insideHeading: "Co jest w środku",
   insideIntro: "Drukuj tyle egzemplarzy, ile potrzebujesz. Wszystko wypełnia się ręcznie, więc nic o twoim dziecku nie jest wpisywane do formularza ani nigdzie wysyłane.",
@@ -199,7 +199,7 @@ export const plSales: KitSales = {
   notHeading: "Czym to nie jest",
   notItems: [
     "To nie jest test i nie daje punktów. Nie powie, czy twoje dziecko jest gotowe.",
-    "Nie zawiera porad zdrowotnych ani zasad dotyczących ras. Po to zapytaj weterynarza lub schronisko.",
+    "Nie zawiera porad zdrowotnych ani zasad dotyczących ras. W tych sprawach zapytaj weterynarza lub schronisko.",
     "Nie obiecuje, że zwierzak to dobra decyzja. „Jeszcze nie” to też dobra odpowiedź.",
   ],
   giftText: "Szukasz raczej prezentu? 12-tygodniowe wyzwanie PetPrep można podarować w formie bonu.",
@@ -209,7 +209,7 @@ export const plSales: KitSales = {
     { q: "Czy to dla psów, czy dla kotów?", a: "Dla każdego zwierzaka. Zestaw jest ogólny: pyta o czas, pieniądze, miejsce i perspektywę na lata, a nie o jeden gatunek czy rasę." },
     { q: "Czy potrzebuję aplikacji PetPrep?", a: "Nie. Zestaw jest wyłącznie papierowy i działa samodzielnie. Ostatnia strona wspomina o aplikacji jako jednym z możliwych kolejnych kroków." },
     { q: "Jak go wydrukować?", a: "To standardowy plik PDF w formacie A4. Wydrukuj cały zestaw albo tylko potrzebne strony. Strony z tygodniowymi tabelami możesz wydrukować ponownie, jeśli chcesz kolejny miesiąc." },
-    { q: "Co dostaję po zakupie?", a: "Plik do pobrania z zestawem w PDF w piętnastu językach, po jedenaście stron A4 każdy. Wydrukuj ten w swoim języku." },
+    { q: "Co dostaję po zakupie?", a: "Plik do pobrania z zestawem w formacie PDF w piętnastu wersjach językowych, po jedenaście stron A4 każda. Wydrukuj wersję w swoim języku." },
     { q: "Czy zbierane są jakieś dane o mojej rodzinie?", a: "Sam zestaw nie zbiera niczego: to PDF, który wypełniasz długopisem. Przy zakupie sklep przetwarza twoje dane płatnicze i adres e-mail." },
     { q: "Czy mogę udostępnić plik?", a: "Wydrukuj tyle egzemplarzy, ile potrzebuje twoja rodzina, ale nie udostępniaj pliku ani go nie odsprzedawaj." },
   ],

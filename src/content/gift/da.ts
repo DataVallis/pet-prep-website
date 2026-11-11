@@ -28,14 +28,14 @@ export const da: GiftCopy = {
   how: {
     heading: "Sådan virker gavekortet",
     steps: [
-      { title: "Køb", text: "Du køber gavekortet på denne side. Koden kommer på e-mail." },
+      { title: "Køb", text: "Du køber gavekortet på denne side. Koden får du på e-mail." },
       { title: "Print", text: "Efter købet sætter du koden ind på tak-siden og printer gavekortet på et A4-ark. Der er plads til to gavekort på et ark, som du kan folde eller klippe ud." },
-      { title: "En forælder indløser", text: "På hjemmesiden skriver en forælder koden og e-mailadressen til sin konto i appen. Udfordringen bliver føjet til familien." },
+      { title: "En forælder indløser", text: "På hjemmesiden skriver en forælder koden og e-mailadressen til sin konto i appen. Udfordringen bliver tilføjet til familien." },
       { title: "Barnet går i gang", text: "I appen vælger forælderen, hvilket dyr udfordringen gælder for, og de tolv uger begynder." },
     ],
   },
   included: {
-    heading: "Det er med",
+    heading: "Det er inkluderet",
     items: [
       "Én 12-ugers-udfordring i PetPrep til ét dyr, helt som hvis du købte den i appen",
       "Alle arter og racer, der er tilgængelige i appen, når dyret vælges",
@@ -65,9 +65,9 @@ export const da: GiftCopy = {
       { q: "Kan jeg få pengene tilbage?", a: "Et gavekort, der ikke er indløst, kan refunderes inden for 14 dage fra købet. Et indløst gavekort kan ikke refunderes. Refusioner håndteres via Lemon Squeezy, hvor du har købt gavekortet, og dine lovbestemte forbrugerrettigheder berøres ikke." },
       { q: "På hvilke enheder virker det?", a: "PetPrep-appen findes til iPhone og til Android-telefoner. Gavekortet indløser du på denne hjemmeside, i en hvilken som helst browser." },
       { q: "Skal jeg have en konto?", a: "Ikke for at købe eller printe gavekortet. For at indløse det skal familien have en forældrekonto i appen: du skriver koden sammen med e-mailadressen til den konto. Hvis du logger ind i appen med Google eller Apple, skal du skrive den e-mailadresse, der vises i appen (“Controls → Account”)." },
-      { q: "Gælder gavekortet også til en kat?", a: "Ja. I dag har appen hunde og katte, og gavekortet gælder til alle arter og racer, der er tilgængelige i appen, når dyret vælges." },
+      { q: "Gælder gavekortet også for en kat?", a: "Ja. I dag har appen hunde og katte, og gavekortet gælder for alle arter og racer, der er tilgængelige i appen, når dyret vælges." },
       { q: "Får barnet et dyr efter udfordringen?", a: "Det lover gavekortet ikke og indeholder det heller ikke. Udfordringen hjælper en familie med ærligt at svare på, om den er klar. Beslutningen om et rigtigt dyr er stadig jeres." },
-      { q: "Hvad sker der med koden, når jeg skriver den?", a: "På siden, hvor gavekortet printes, bliver koden hverken gemt eller sendt nogen steder hen: gavekortet bliver tegnet i din browser. Koden bliver først kontrolleret, når den indløses." },
+      { q: "Hvad sker der med koden, når jeg skriver den ind?", a: "På siden, hvor gavekortet printes, bliver koden hverken gemt eller sendt nogen steder hen: gavekortet bliver tegnet i din browser. Koden bliver først kontrolleret, når den indløses." },
     ],
   },
   redeemLink: {
@@ -76,7 +76,7 @@ export const da: GiftCopy = {
     button: "Indløs gavekort",
   },
   kit: {
-    text: "Til hvert gavekort hører det printbare sæt “Kæledyrsløftet”.",
+    text: "Til hvert gavekort følger det printbare sæt “Kæledyrsløftet”.",
     button: "Se sættet",
   },
   thanks: {
@@ -115,7 +115,7 @@ export const da: GiftCopy = {
     meta: { title: "Indløs et gavekort", description: "Skriv gavekortets kode og e-mailadressen til forældrekontoen i PetPrep-appen." },
     eyebrow: "Gavekort",
     title: "Indløs et gavekort",
-    lead: "Skriv koden fra gavekortet og den e-mailadresse, du er logget ind med i PetPrep-appen. Udfordringen bliver føjet til familiekontoen, og dyret vælger du i appen.",
+    lead: "Skriv koden fra gavekortet og den e-mailadresse, du er logget ind med i PetPrep-appen. Udfordringen bliver tilføjet til familiekontoen, og dyret vælger du i appen.",
     codeLabel: "Gavekortets kode",
     codeHint: "Koden står på gavekortet. Mellemrum gør ikke noget.",
     emailLabel: "E-mailadresse til forældrekontoen",
@@ -126,7 +126,7 @@ export const da: GiftCopy = {
     giftLink: "Har du ikke et gavekort endnu? Se gavekortet.",
   },
   messages: {
-    redeemed: "Udfordringen er føjet til. Åbn appen, og vælg det dyr, den gælder for.",
+    redeemed: "Udfordringen er tilføjet. Åbn appen, og vælg det dyr, den gælder for.",
     redeemed_already: "Dette gavekort er allerede indløst på din familiekonto. Udfordringen venter på dig i appen.",
     invalid_request: "Skriv gavekortets kode og en gyldig e-mailadresse.",
     invalid_code: "Vi genkender ikke denne kode. Tjek, at den passer præcis til koden på gavekortet, og prøv igen.",
@@ -136,7 +136,7 @@ export const da: GiftCopy = {
     no_account: "Der findes ingen forældrekonto med denne e-mailadresse. Opret først en forældrekonto i appen, og kom så tilbage hertil. Din kode er ikke brugt.",
     unavailable: "Indløsning af gavekort er ikke tilgængelig lige nu. Prøv igen senere.",
     rate_limited: "For mange forsøg. Vent et par minutter, og prøv igen.",
-    upstream_error: "Vi kan ikke kontrollere gavekortet lige nu. Prøv igen om nogle minutter. Intet er brugt.",
+    upstream_error: "Vi kan ikke kontrollere gavekortet lige nu. Prøv igen om nogle minutter. Intet er blevet brugt.",
     timeout: "Vi fik ikke svar i tide. Hvis gavekortet allerede kan være indløst, så skriv det ind igen: siden viser så, at det allerede er indløst på din konto. Ellers prøv igen om nogle minutter.",
   },
 };

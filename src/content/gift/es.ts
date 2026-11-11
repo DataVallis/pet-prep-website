@@ -8,7 +8,7 @@ export const es: GiftCopy = {
   breadcrumb: "Vale regalo",
   eyebrow: "Vale regalo",
   title: "No regales un cachorro. Regala una prueba.",
-  lead: "Un vale regalo para el Reto PetPrep de 12 semanas: doce semanas cuidando de un animal simulado que parece de verdad, antes de que la familia decida si quiere uno real. Para el niño que no deja de pedir una mascota y para los padres que quieren una respuesta.",
+  lead: "Un vale regalo para el Reto PetPrep de 12 semanas: doce semanas cuidando de un animal simulado que parece de verdad, antes de que la familia decida si quiere uno real. Para quien no deja de pedir una mascota y para los padres que quieren una respuesta.",
   buy: {
     button: "Comprar un vale regalo",
     soon: "Próximamente",
@@ -31,7 +31,7 @@ export const es: GiftCopy = {
       { title: "Compra", text: "Compras el vale en esta página. El código te llega por correo electrónico." },
       { title: "Imprime", text: "Tras la compra, pega el código en la página de agradecimiento e imprime el vale en una hoja A4. En cada hoja caben dos vales, que puedes doblar o recortar." },
       { title: "Un progenitor lo canjea", text: "En la web, un padre o una madre introduce el código y el correo electrónico de su cuenta de la app. El reto se añade a la familia." },
-      { title: "El niño empieza", text: "En la app, el progenitor elige el animal al que se aplica el reto y comienzan las doce semanas." },
+      { title: "Empieza el reto", text: "En la app, el progenitor elige el animal al que se aplica el reto y comienzan las doce semanas." },
     ],
   },
   included: {
@@ -49,7 +49,7 @@ export const es: GiftCopy = {
     forItems: [
       "un niño de tu familia lleva tiempo pidiendo una mascota y quieres que lo pruebe antes de decidir,",
       "buscas un regalo para un nieto, una sobrina o un ahijado que no sea un animal vivo ni una promesa,",
-      "quieres que la experiencia de cuidar de un animal nazca de lo que hace el niño y no de tus palabras.",
+      "quieres que la experiencia de cuidar de un animal nazca de lo que hace el niño o la niña y no de tus palabras.",
     ],
     notTitle: "El vale no es para ti si",
     notItems: [
@@ -66,7 +66,7 @@ export const es: GiftCopy = {
       { q: "¿En qué dispositivos funciona?", a: "La app PetPrep es para iPhone y para móviles Android. El vale se canjea en esta web, desde cualquier navegador." },
       { q: "¿Necesito una cuenta?", a: "Para comprar e imprimir el vale, no. Para canjearlo, la familia necesita una cuenta de padres en la app: introduces el código junto con el correo electrónico de esa cuenta. Si inicias sesión en la app con Google o Apple, introduce el correo que aparece en la app («Controls → Account»)." },
       { q: "¿Sirve el vale para un gato?", a: "Sí. Hoy la app tiene perros y gatos, y el vale sirve para cualquier especie y raza disponible en la app en el momento de elegir." },
-      { q: "¿Tendrá el niño un animal después del reto?", a: "El vale no lo promete ni lo incluye. El reto ayuda a una familia a responder con sinceridad si está preparada. La decisión sobre un animal de verdad sigue siendo vuestra." },
+      { q: "¿Habrá un animal de verdad después del reto?", a: "El vale no lo promete ni lo incluye. El reto ayuda a una familia a responder con sinceridad si está preparada. La decisión sobre un animal de verdad sigue siendo vuestra." },
       { q: "¿Qué pasa con el código cuando lo escribo?", a: "En la página donde se imprime el vale, el código no se guarda ni se envía a ningún sitio: el vale se dibuja en tu navegador. El código solo se comprueba al canjearlo." },
     ],
   },

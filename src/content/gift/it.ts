@@ -8,7 +8,7 @@ export const it: GiftCopy = {
   breadcrumb: "Buono regalo",
   eyebrow: "Buono regalo",
   title: "Non regalare un cucciolo. Regala una prova.",
-  lead: "Un buono regalo per la sfida PetPrep di 12 settimane: dodici settimane per prendersi cura di un animale simulato realistico, prima che la famiglia decida se accoglierne uno vero. Per il bambino che continua a chiedere un animale e per i genitori che vorrebbero una risposta.",
+  lead: "Un buono regalo per la sfida PetPrep di 12 settimane: dodici settimane per prendersi cura di un animale simulato realistico, prima che la famiglia decida se accoglierne uno vero. Per chi continua a chiedere un animale e per i genitori che vorrebbero una risposta.",
   buy: {
     button: "Acquista un buono regalo",
     soon: "In arrivo",
@@ -31,7 +31,7 @@ export const it: GiftCopy = {
       { title: "Acquista", text: "Acquisti il buono su questa pagina. Il codice arriva via e-mail." },
       { title: "Stampa", text: "Dopo l’acquisto incolla il codice nella pagina di ringraziamento e stampa il buono su un foglio A4. Su ogni foglio ci sono due buoni, da piegare o ritagliare." },
       { title: "Un genitore lo riscatta", text: "Sul sito un genitore inserisce il codice e l’indirizzo e-mail del proprio account nell’app. La sfida viene aggiunta alla famiglia." },
-      { title: "Il bambino comincia", text: "Nell’app il genitore sceglie l’animale a cui si riferisce la sfida e iniziano le dodici settimane." },
+      { title: "Si comincia", text: "Nell’app il genitore sceglie l’animale a cui si riferisce la sfida e iniziano le dodici settimane." },
     ],
   },
   included: {
@@ -47,7 +47,7 @@ export const it: GiftCopy = {
     heading: "Per chi è e per chi no",
     forTitle: "Il buono fa per te se",
     forItems: [
-      "un bambino della tua famiglia chiede da tempo un animale e vuoi che prima si metta alla prova,",
+      "un bambino o una bambina della tua famiglia chiede da tempo un animale e vuoi che prima si metta alla prova,",
       "cerchi un regalo per un nipotino, una nipote o un figlioccio che non sia un animale vivo e non sia una promessa,",
       "vuoi che l’esperienza di prendersi cura di un animale nasca da ciò che fa il bambino, non dalle tue parole.",
     ],
@@ -66,7 +66,7 @@ export const it: GiftCopy = {
       { q: "Su quali dispositivi funziona?", a: "L’app PetPrep è disponibile per iPhone e per gli smartphone Android. Il buono si riscatta su questo sito, con qualsiasi browser." },
       { q: "Mi serve un account?", a: "Non per acquistare e stampare il buono. Per riscattarlo la famiglia ha bisogno di un account genitore nell’app: inserisci il codice insieme all’indirizzo e-mail di quell’account. Se accedi all’app con Google o Apple, inserisci l’indirizzo e-mail che vedi nell’app (« Controls → Account »)." },
       { q: "Il buono vale anche per un gatto?", a: "Sì. Oggi l’app ha cani e gatti e il buono vale per qualsiasi specie e razza disponibile nell’app al momento della scelta." },
-      { q: "Dopo la sfida il bambino avrà un animale?", a: "Il buono non lo promette e non lo include. La sfida aiuta la famiglia a rispondere onestamente alla domanda se è pronta. La decisione su un animale vero resta vostra." },
+      { q: "Dopo la sfida arriverà un animale vero?", a: "Il buono non lo promette e non lo include. La sfida aiuta la famiglia a rispondere onestamente alla domanda se è pronta. La decisione su un animale vero resta vostra." },
       { q: "Che cosa succede al codice quando lo digito?", a: "Nella pagina di stampa del buono il codice non viene salvato né inviato da nessuna parte: il buono viene disegnato nel tuo browser. Il codice viene verificato solo al momento del riscatto." },
     ],
   },
@@ -86,7 +86,7 @@ export const it: GiftCopy = {
     lead: "Lemon Squeezy ti ha inviato il codice del buono via e-mail. Incollalo qui sotto e il buono viene disegnato qui, nel tuo browser.",
     codeLabel: "Codice dell’e-mail di Lemon Squeezy",
     codeHint: "Incolla il codice esattamente come appare nell’e-mail.",
-    codeInvalid: "Questo codice non sembra corretto. È composto da 8 a 64 lettere, cifre e trattini.",
+    codeInvalid: "Questo codice non sembra corretto. È composto tra 8 e 64 lettere, cifre e trattini.",
     print: "Stampa il buono",
     privacy: "Il codice resta nel tuo browser. Non lo salviamo, non lo inviamo a un server e non lo mettiamo nell’indirizzo della pagina. Quando chiudi la pagina, sparisce.",
     previewHeading: "Anteprima del buono",
@@ -137,6 +137,6 @@ export const it: GiftCopy = {
     unavailable: "Il riscatto dei buoni al momento non è disponibile. Riprova più tardi.",
     rate_limited: "Troppi tentativi. Attendi qualche minuto e riprova.",
     upstream_error: "In questo momento non riusciamo a verificare il buono. Riprova tra qualche minuto. Non è stato usato nulla.",
-    timeout: "Non abbiamo ricevuto una risposta in tempo. Se il buono potrebbe essere già stato riscattato, inseriscilo di nuovo: la pagina mostrerà che è già riscattato nel tuo account. Altrimenti riprova tra qualche minuto.",
+    timeout: "Non abbiamo ricevuto una risposta in tempo. Se è possibile che il buono sia già stato riscattato, inseriscilo di nuovo: la pagina mostrerà che è già riscattato nel tuo account. Altrimenti riprova tra qualche minuto.",
   },
 };

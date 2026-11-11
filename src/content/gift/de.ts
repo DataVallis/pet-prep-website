@@ -29,7 +29,7 @@ export const de: GiftCopy = {
     heading: "So funktioniert der Gutschein",
     steps: [
       { title: "Kaufen", text: "Sie kaufen den Gutschein auf dieser Seite. Den Code erhalten Sie per E-Mail." },
-      { title: "Ausdrucken", text: "Nach dem Kauf fügen Sie den Code auf der Dankeseite ein und drucken den Gutschein auf einem A4-Blatt aus. Zwei Gutscheine passen auf ein Blatt; Sie falten oder schneiden es." },
+      { title: "Ausdrucken", text: "Nach dem Kauf fügen Sie den Code auf der Dankeseite ein und drucken den Gutschein auf einem A4-Blatt aus. Zwei Gutscheine passen auf ein Blatt; zum Falten oder Schneiden." },
       { title: "Ein Elternteil löst ein", text: "Auf der Website gibt ein Elternteil den Code und die E-Mail-Adresse seines Kontos in der App ein. Die Challenge wird der Familie hinzugefügt." },
       { title: "Das Kind legt los", text: "In der App wählt das Elternteil das Tier aus, für das die Challenge gilt, und die zwölf Wochen beginnen." },
     ],
@@ -62,7 +62,7 @@ export const de: GiftCopy = {
     heading: "Häufige Fragen",
     items: [
       { q: "Wie lange ist der Gutschein gültig?", a: "Der Gutschein ist ab Kauf 12 Monate gültig. Sobald ein Elternteil ihn eingelöst hat, bleibt die Challenge im Familienkonto und läuft nicht ab. Die zwölf Wochen beginnen, wenn das Elternteil die Challenge in der App einem Tier zuweist, nicht schon beim Einlösen." },
-      { q: "Kann ich den Gutschein zurückgeben?", a: "Ein nicht eingelöster Gutschein kann innerhalb von 14 Tagen nach dem Kauf erstattet werden. Ein eingelöster Gutschein kann nicht erstattet werden. Erstattungen laufen über Lemon Squeezy, wo Sie gekauft haben; Ihre gesetzlichen Verbraucherrechte bleiben unberührt." },
+      { q: "Bekomme ich mein Geld zurück?", a: "Ein nicht eingelöster Gutschein kann innerhalb von 14 Tagen nach dem Kauf erstattet werden. Ein eingelöster Gutschein kann nicht erstattet werden. Erstattungen laufen über Lemon Squeezy, wo Sie gekauft haben; Ihre gesetzlichen Verbraucherrechte bleiben unberührt." },
       { q: "Auf welchen Geräten funktioniert das?", a: "Die PetPrep-App gibt es für das iPhone und für Android-Handys. Den Gutschein lösen Sie auf dieser Website ein, in jedem Browser." },
       { q: "Brauche ich ein Konto?", a: "Zum Kaufen und Ausdrucken des Gutscheins nicht. Zum Einlösen braucht die Familie ein Elternkonto in der App: Sie geben den Code zusammen mit der E-Mail-Adresse dieses Kontos ein. Wenn Sie sich in der App mit Google oder Apple anmelden, geben Sie die E-Mail-Adresse ein, die in der App angezeigt wird („Controls → Account“)." },
       { q: "Gilt der Gutschein auch für eine Katze?", a: "Ja. Die App kennt heute Hunde und Katzen, und der Gutschein gilt für jede Tierart und Rasse, die bei der Auswahl in der App verfügbar ist." },
@@ -132,7 +132,7 @@ export const de: GiftCopy = {
     invalid_code: "Diesen Code kennen wir nicht. Prüfen Sie, ob er genau mit dem Code auf dem Gutschein übereinstimmt, und versuchen Sie es erneut.",
     expired: "Dieser Gutschein ist abgelaufen. Gutscheine sind ab Kauf 12 Monate gültig.",
     refunded: "Dieser Gutschein ist nicht mehr gültig, weil er erstattet oder storniert wurde.",
-    already_redeemed: "Dieser Gutschein wurde bereits in einem anderen Familienkonto eingelöst. Wenn Sie glauben, dass es sich um einen Fehler handelt, schreiben Sie uns an david@petprep.si.",
+    already_redeemed: "Dieser Gutschein wurde bereits in einem anderen Familienkonto eingelöst. Wenn Sie glauben, dass es sich um einen Fehler handelt, schreiben Sie an david@petprep.si.",
     no_account: "Mit dieser E-Mail-Adresse gibt es kein Elternkonto. Legen Sie zuerst in der App ein Elternkonto an und kommen Sie dann hierher zurück. Ihr Code wurde nicht verbraucht.",
     unavailable: "Das Einlösen von Gutscheinen ist im Moment nicht verfügbar. Bitte versuchen Sie es später erneut.",
     rate_limited: "Zu viele Versuche. Bitte warten Sie ein paar Minuten und versuchen Sie es dann erneut.",
