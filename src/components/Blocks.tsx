@@ -1,4 +1,4 @@
-import type { Locale } from "@/i18n/config";
+import { pathFor, type Locale } from "@/i18n/config";
 import { KockicaCookieTable } from "@/components/KockicaCookieTable";
 import type { Block, Dictionary } from "@/content/types";
 import { companyAddress, companyIdLabels, fillPlaceholders } from "@/content";
@@ -12,6 +12,9 @@ import { Faq } from "./Faq";
 import { Pricing } from "./Pricing";
 import { Screen } from "./Screen";
 import { RichText } from "./RichText";
+import { partnerCopy } from "@/content/partners";
+import { PartnerInquiryForm } from "./PartnerInquiryForm";
+import { PartnerStatsBlock } from "./PartnerStatsBlock";
 
 const tagDot: Record<string, string> = { ok: "bg-ok", warn: "bg-warn-fill", danger: "bg-danger" };
 const tagBg: Record<string, string> = { ok: "bg-mint-tint", warn: "bg-warn-tint", danger: "bg-danger-tint" };
@@ -181,6 +184,16 @@ export function Blocks({ blocks, locale, dict }: { blocks: Block[]; locale: Loca
             return <Pricing key={i} locale={locale} dict={dict} headingLevel={i === 0 ? 2 : 3} />;
           case "contact":
             return <ContactCards key={i} dict={dict} />;
+          case "partnerStats":
+            return locale === "sl" || locale === "en" ? <PartnerStatsBlock key={i} lang={locale} /> : null;
+          case "partnerForm":
+            return locale === "sl" || locale === "en" ? (
+              <section key={i} id="povprasevanje" className="flex scroll-mt-24 flex-col gap-5">
+                <Heading>{partnerCopy[locale].form.heading}</Heading>
+                <Intro locale={locale}>{partnerCopy[locale].form.intro}</Intro>
+                <PartnerInquiryForm lang={locale} privacyHref={pathFor(locale, "privacy")} />
+              </section>
+            ) : null;
           case "company":
             return (
               <section key={i} id={b.id} className="flex scroll-mt-24 flex-col gap-5">

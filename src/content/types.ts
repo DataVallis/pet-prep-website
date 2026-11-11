@@ -36,6 +36,9 @@ export type Block =
   /** Cookie table rendered by the Kockica consent banner from what it detects on the page. */
   | { type: "cookies"; heading: string; paragraphs: string[]; settings: string; fallback: string }
   | { type: "contact" }
+  /** Partner page (M6-S03): measured numbers with a date, and the inquiry form (Slovenian and English only). */
+  | { type: "partnerStats" }
+  | { type: "partnerForm" }
   /** The operator's legal identity (src/lib/site.ts company). */
   | { type: "company"; id?: string; heading?: string; intro?: string }
   /** Animal register hub: species from src/content/registry/registry.json (M5-R11). */
