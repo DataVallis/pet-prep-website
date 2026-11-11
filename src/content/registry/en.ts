@@ -344,6 +344,10 @@ const en: RegistryCopy = {
       dna_pra_b: "DNA test for progressive retinal atrophy in the Bengal (PRA-b)",
       dna_jlpp: "DNA test for juvenile laryngeal paralysis and polyneuropathy (JLPP)",
       dna_lemp2: "DNA test for leukoencephalomyelopathy (LEMP-2)",
+      dna_lemp: "DNA test for leukoencephalomyelopathy (LEMP)",
+      dna_lpn1: "DNA test for Leonberger polyneuropathy (LPN1)",
+      dna_lpn2: "DNA test for Leonberger polyneuropathy (LPN2)",
+      dna_lppn3: "DNA test for laryngeal paralysis and polyneuropathy (LPPN3)",
       dna_huu: "DNA test for hyperuricosuria (HUU)",
       dna_dcm: "DNA test for dilated cardiomyopathy (DCM), a heart muscle disease",
       dna_pra5: "DNA test for progressive retinal atrophy (PRA5)",
@@ -660,6 +664,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to 1 hour of exercise a day and grooming more than once a week, says the breed sheds and suits a flat or apartment, and lists it in Breed Watch Category 1. The PDSA says that, given the right socialisation, Border Terriers will love spending time with children of all ages, but recommends supervision; it warns that they can develop separation anxiety if left alone, have a high prey drive and should not live with rabbits, guinea pigs or rats, and advises brushing a couple of times a week and leaving a gap after eating before exercise. Woodgreen suggests a home with slightly older children.",
       ],
       sources: ["S768", "S769", "S770", "S771", "S773", "S10"],
+    },
+    leonberger: {
+      aka: "Leonberg, Leonberger dog",
+      text: [
+        "The Leonberger is a large dog from Germany; the FCI standard describes a large, strong, muscular yet elegant dog with a long, close-fitting coat, pendant ears and a well-furnished tail, in lion yellow, red, reddish brown or sandy, always with a black mask, and gives a height of 72–80 cm for males and 65–75 cm for bitches. The PDSA gives an average weight of 30–50 kg for males and females and a lifespan of under 10 years; as a giant breed it is fully grown at about 18–24 months (PetMD size class).",
+        "The Royal Kennel Club recommends more than 2 hours of exercise a day and a large house with a large garden; the PDSA calls Leonbergers gentle giants and excellent family pets. Woodgreen recommends brushing two to three times a week, says early training and socialisation is essential because of their size, and that they struggle being on their own for long periods. A 2024 UK study (McMillan et al., tabled by Dogs Trust) gives a median life expectancy of 10.0 years.",
+      ],
+      sources: ["S783", "S781", "S10", "S780", "S784", "S123"],
     },
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",

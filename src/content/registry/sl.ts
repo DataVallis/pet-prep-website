@@ -388,6 +388,10 @@ const sl: RegistryCopy = {
       dna_pra_b: "Test DNK za progresivno atrofijo mrežnice pri bengalski mački (PRA-b)",
       dna_jlpp: "Test DNK za juvenilno paralizo grla in polinevropatijo (JLPP)",
       dna_lemp2: "Test DNK za levkoencefalomielopatijo (LEMP-2)",
+      dna_lemp: "Test DNK za levkoencefalomielopatijo (LEMP)",
+      dna_lpn1: "Test DNK za polinevropatijo leonbergerja (LPN1)",
+      dna_lpn2: "Test DNK za polinevropatijo leonbergerja (LPN2)",
+      dna_lppn3: "Test DNK za paralizo grla in polinevropatijo (LPPN3)",
       dna_huu: "Test DNK za hiperurikozurijo (HUU)",
       dna_dcm: "Test DNK za dilatacijsko kardiomiopatijo (DCM), bolezen srčne mišice",
       dna_pra5: "Test DNK za progresivno atrofijo mrežnice (PRA5)",
@@ -680,6 +684,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da je primeren za stanovanje, ter ga uvršča v 1. kategorijo programa Breed Watch. PDSA piše, da bo borderski terier ob pravi socializaciji rad preživljal čas z otroki vseh starosti, a svetuje nadzor; opozarja, da lahko razvije ločitveno tesnobo, če ostane sam, da ima močan lovski nagon in naj ne živi s kunci, morskimi prašički ali podganami, ter svetuje česanje nekajkrat na teden in premor med obrokom in gibanjem. Woodgreen svetuje dom z nekoliko starejšimi otroki.",
       ],
       sources: ["S768", "S769", "S770", "S771", "S773", "S10"],
+    },
+    leonberger: {
+      aka: "Leonberger, leonberški pes, leonberg",
+      text: [
+        "Leonberger je velik pes iz Nemčije; standard FCI ga opisuje kot velikega, močnega, mišičastega, a elegantnega psa z dolgo, prilegajočo se dlako, visečimi uhlji in bogato poraščenim repom, levje rumene, rdeče, rdečkasto rjave ali peščene barve, vedno s črno masko, ter navaja višino 72–80 cm pri psih in 65–75 cm pri psicah. PDSA navaja povprečno težo 30–50 kg za pse in psice ter življenjsko dobo pod 10 let; kot zelo velika pasma doraste pri približno 18–24 mesecih (velikostni razred PetMD).",
+        "The Royal Kennel Club priporoča več kot 2 uri gibanja na dan ter veliko hišo z velikim vrtom; PDSA leonbergerje imenuje nežne velikane in odlične družinske pse. Woodgreen svetuje česanje dva- do trikrat na teden, poudarja, da sta zaradi velikosti nujni zgodnja vzgoja in socializacija, ter da težko prenašajo dolgo samoto. Britanska raziskava iz leta 2024 (McMillan in sod., tabela Dogs Trust) navaja mediano pričakovane življenjske dobe 10,0 leta.",
+      ],
+      sources: ["S783", "S781", "S10", "S780", "S784", "S123"],
     },
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
