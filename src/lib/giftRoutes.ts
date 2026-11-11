@@ -1,38 +1,28 @@
 /**
- * Routing of the gift voucher pages (M6-S01, contract §8): SL + EN only, everything behind
- * NEXT_PUBLIC_FEATURE_GIFT. Pure (no alias imports) so next.config.ts, the sitemap and the unit tests
- * share it. Switch off → no static params, no redirects, no sitemap entry: the URLs answer the branded 404.
+ * Routing of the gift voucher pages (M6-S01, contract §8), in all 15 site languages, everything behind
+ * NEXT_PUBLIC_FEATURE_GIFT. Pure (no alias imports) so the sitemap, the route files and the unit tests share it.
+ * Switch off → no static params and no sitemap entry: the URLs answer the branded 404.
+ * The pages are served by the `[locale]/[slug]` routes (sales page, redeem) and `[locale]/[slug]/[species]`
+ * (thank-you, a child of the sales page), like every other localized page.
  */
-import { locales } from "../i18n/config.ts";
-import { giftBuyUrl, giftPaths, isGiftEnabled, type GiftPageKey } from "./gift.ts";
+import { locales, salesSlugs, type Locale } from "../i18n/config.ts";
+import { giftBuyUrl, giftPathsOf, isGiftEnabled } from "./gift.ts";
 
-const pageKeys: GiftPageKey[] = ["gift", "thanks", "redeem"];
-
-/** Locales that get a static page for one key: English for the EN route, Slovenian for the SL route. */
-export function giftStaticLocale(lang: "en" | "sl", enabled: boolean = isGiftEnabled()): { locale: string }[] {
-  return enabled ? [{ locale: lang }] : [];
+/** Static params `{ locale, slug }` of the top-level gift pages (sales page and redeem): none while the switch is off. */
+export function giftSlugParams(enabled: boolean = isGiftEnabled()): { locale: Locale; slug: string }[] {
+  return enabled ? locales.flatMap((locale) => [{ locale, slug: salesSlugs.gift[locale] }, { locale, slug: salesSlugs.redeem[locale] }]) : [];
 }
 
-/**
- * The 13 other site languages (D8): their prefixed URL 308-redirects to the English page. They use the
- * English slug, e.g. /de/gift → /gift. Not emitted while the switch is off.
- */
-export function giftRedirects(enabled: boolean = isGiftEnabled()): { source: string; destination: string; permanent: true }[] {
-  if (!enabled) return [];
-  const others = pageKeys.flatMap((key) =>
-    locales
-      .filter((l) => l !== "en" && l !== "sl")
-      .map((l) => ({ source: `/${l}${giftPaths[key].en}`, destination: giftPaths[key].en, permanent: true as const })),
-  );
-  // Slovenian visitors who type the English slug land on their own page instead of a 404.
-  const sl = pageKeys.map((key) => ({ source: `/sl${giftPaths[key].en}`, destination: giftPaths[key].sl, permanent: true as const }));
-  return [...others, ...sl];
+/** Static params of the thank-you page, which lives one level below the sales page. */
+export function giftThanksParams(locale: Locale, enabled: boolean = isGiftEnabled()): { slug: string; species: string }[] {
+  return enabled ? [{ slug: salesSlugs.gift[locale], species: salesSlugs.giftThanks[locale] }] : [];
 }
 
 /**
  * Only the sales page is indexable; thanks and redeem never reach the sitemap. While the checkout URL is
  * missing the page has a dead buy button, so it stays out of the sitemap (and is noindex) until the URL is set.
+ * Returns the sales-page path of every language, or null.
  */
-export function giftSitemapPaths(enabled: boolean = isGiftEnabled(), hasBuyUrl: boolean = giftBuyUrl() !== null): { en: string; sl: string } | null {
-  return enabled && hasBuyUrl ? { en: giftPaths.gift.en, sl: giftPaths.gift.sl } : null;
+export function giftSitemapPaths(enabled: boolean = isGiftEnabled(), hasBuyUrl: boolean = giftBuyUrl() !== null): Record<Locale, string> | null {
+  return enabled && hasBuyUrl ? giftPathsOf("gift") : null;
 }

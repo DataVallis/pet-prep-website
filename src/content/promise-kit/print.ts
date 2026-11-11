@@ -103,15 +103,15 @@ h1.t { font-size: 27pt; margin-bottom: 2.5mm; }
 .ct tr.total td { border-bottom: 0.5mm solid #121614; background: #ddf6ea; font-family: "PetPrep Bricolage", sans-serif; font-weight: 800; }
 
 /* ready */
-.rd { display: grid; grid-template-columns: 1fr auto; gap: 1.5mm 6mm; padding: 3mm 0; border-bottom: 0.3mm solid #dde3de; }
+.rd { display: grid; grid-template-columns: 1fr auto; gap: 1mm 6mm; padding: 1.8mm 0; border-bottom: 0.3mm solid #dde3de; }
 .rd .tx b { font-family: "PetPrep Bricolage", sans-serif; font-weight: 800; font-size: 10.5pt; display: block; }
 .rd .tx { font-size: 9pt; }
 .rd .ans { display: flex; gap: 3.5mm; align-items: center; font-size: 8pt; font-weight: 600; }
 .rd .ans span { display: flex; flex-direction: column; align-items: center; gap: 1mm; }
-.rd .notes { grid-column: 1 / 3; border-bottom: 0.3mm dotted #5a635d; height: 5mm; }
-.read { margin-top: 5mm; }
+.rd .notes { grid-column: 1 / 3; border-bottom: 0.3mm dotted #5a635d; height: 3.5mm; }
+.read { margin-top: 3mm; padding: 4mm 6mm; font-size: 9pt; }
 .read ul { margin: 2mm 0 0; padding-left: 4.5mm; }
-.read li { margin-bottom: 1.2mm; }
+.read li { margin-bottom: 0.8mm; }
 
 /* award */
 .award { border: 1.6mm solid #7fe0b4; border-radius: 8mm; padding: 9mm 10mm 7mm; flex: 1; display: flex; flex-direction: column; }

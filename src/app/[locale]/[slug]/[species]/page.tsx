@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { isLocale, locales, pageSlugs, pathFor, type Locale } from "@/i18n/config";
+import { isLocale, locales, pageSlugs, pathFor, salesSlugs, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { breedsOf, registry, speciesBySlug, type Species } from "@/content/registry/registry";
 import { activityText, breedHref, catalogueIndex, compareHref, formatDay, getRegistryCopy, speciesHref, speciesUpdated } from "@/lib/registry/views";
@@ -13,6 +13,8 @@ import { PAGE_SIZE, recommendedOrder } from "@/components/registry/catalogue-sha
 import { RichText } from "@/components/RichText";
 import { CareSpeciesPage, EmergencyPage, careSpeciesMetadata, careSpeciesParams, emergencyMetadata, emergencyParams, isEmergencySlug, resolveCareSpecies } from "@/components/care/CarePages";
 import { isCareSlug } from "@/content/care/care";
+import { assertGift, giftMetadata, ThanksPage } from "@/components/gift/GiftPages";
+import { giftThanksParams } from "@/lib/giftRoutes";
 import { ColoringPageView, coloringPageMetadata, coloringParams, isColoringSlug, resolveColoring } from "@/components/coloring/ColoringPages";
 
 export const dynamicParams = false;
@@ -26,8 +28,12 @@ export function generateStaticParams({ params }: { params: { locale: string } })
     ...careSpeciesParams(locale),
     ...emergencyParams(locale),
     ...coloringParams(locale),
+    // Gift voucher thank-you page (M6-S01): a child of the sales page, only while the switch is on.
+    ...giftThanksParams(locale),
   ];
 }
+
+const isGiftThanks = (locale: Locale, slug: string, species: string) => slug === salesSlugs.gift[locale] && species === salesSlugs.giftThanks[locale];
 
 function resolve(localeParam: string, slug: string, speciesSlug: string): { locale: Locale; species: Species } | undefined {
   if (!isLocale(localeParam) || slug !== pageSlugs.animals[localeParam]) return undefined;
@@ -39,6 +45,7 @@ const paths = (s: Species) => Object.fromEntries(locales.map((l) => [l, speciesH
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[species]">): Promise<Metadata> {
   const { locale, slug, species } = await params;
+  if (isLocale(locale) && isGiftThanks(locale, slug, species)) return giftMetadata("thanks", locale);
   if (isLocale(locale) && isColoringSlug(locale, slug)) {
     const p = resolveColoring(locale, species);
     return p ? coloringPageMetadata(locale, p) : {};
@@ -57,6 +64,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[
 
 export default async function SpeciesCatalogue({ params }: PageProps<"/[locale]/[slug]/[species]">) {
   const { locale: l, slug, species: s } = await params;
+  if (isLocale(l) && isGiftThanks(l, slug, s)) return <ThanksPage lang={assertGift(l)} />;
   if (isLocale(l) && isColoringSlug(l, slug)) {
     const p = resolveColoring(l, s);
     if (!p) notFound();

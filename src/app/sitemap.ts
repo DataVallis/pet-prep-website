@@ -5,7 +5,7 @@ import { pageUpdated } from "@/content/updated";
 import { alternatesFor, pathAlternates } from "@/lib/seo";
 import { giftSitemapPaths } from "@/lib/giftRoutes";
 import { giftUpdated } from "@/lib/gift";
-import { promiseKitConfig, promiseKitSitemapEntries } from "@/lib/promiseKit";
+import { promiseKitAlternatePaths, promiseKitConfig, promiseKitSitemapEntries } from "@/lib/promiseKit";
 import { registry } from "@/content/registry/registry";
 import { emergencyHref } from "@/components/care/CarePages";
 import { coloringPageHref } from "@/components/coloring/ColoringPages";
@@ -90,24 +90,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: pathAlternates(each((l) => coloringPageHref(l, p))) },
     })),
   );
-  // Gift voucher sales page (M6-S01): only while NEXT_PUBLIC_FEATURE_GIFT=1; the other gift pages are never listed.
+  // Gift voucher sales page (M6-S01, all 15 languages): only while NEXT_PUBLIC_FEATURE_GIFT=1 and the checkout URL is set;
+  // thanks and redeem are never listed.
   const giftPaths = giftSitemapPaths();
   const gift = giftPaths
-    ? (["en", "sl"] as const).map((locale) => ({
+    ? locales.map((locale) => ({
         url: absoluteUrl(giftPaths[locale]),
         lastModified: new Date(giftUpdated),
         changeFrequency: "monthly" as const,
         priority: 0.6,
-        alternates: { languages: { en: absoluteUrl(giftPaths.en), sl: absoluteUrl(giftPaths.sl), "x-default": absoluteUrl(giftPaths.en) } },
+        alternates: { languages: pathAlternates(giftPaths) },
       }))
     : [];
-  // Pet Promise Kit (M6-S02): English and Slovenian only, and only while NEXT_PUBLIC_FEATURE_PROMISE_KIT=1.
+  // Pet Promise Kit (M6-S02, all 15 languages): only while NEXT_PUBLIC_FEATURE_PROMISE_KIT=1.
   const promiseKit = promiseKitSitemapEntries(promiseKitConfig().enabled).map((e) => ({
     url: absoluteUrl(e.path),
     lastModified: new Date(e.lastModified),
     changeFrequency: "monthly" as const,
     priority: 0.6,
-    alternates: { languages: Object.fromEntries(Object.entries(e.languages).map(([k, v]) => [k, absoluteUrl(v)])) },
+    alternates: { languages: pathAlternates(promiseKitAlternatePaths()) },
   }));
   return [...pages, ...register, ...care, ...emergency, ...coloring, ...gift, ...promiseKit];
 }

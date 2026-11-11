@@ -138,8 +138,8 @@ export function llmsIndex(): string {
         lines.push(`  - [${b.name[locale]}](${absoluteUrl(breedHref(locale, b))}) — ${rc.availability[b.availability].label}`);
       }
     }
-    // Pet Promise Kit (M6-S02): only English and Slovenian, only while the switch is on.
-    if (promiseKitConfig().enabled && (locale === "en" || locale === "sl")) {
+    // Pet Promise Kit (M6-S02): every language, only while the switch is on.
+    if (promiseKitConfig().enabled) {
       lines.push(`- [${sales[locale].metaTitle}](${absoluteUrl(promiseKitPath(locale))}): ${sales[locale].metaDescription}`);
     }
     lines.push("");

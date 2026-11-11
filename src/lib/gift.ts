@@ -1,12 +1,15 @@
 /**
- * Gift voucher (M6-S01): pure helpers shared by the gift, thanks and redeem pages. No imports, so the
+ * Gift voucher (M6-S01): pure helpers shared by the gift, thanks and redeem pages. Relative imports only, so the
  * unit tests (`npm test`, node:test) run them directly. Contract: CONTRACT.md §5.1, §7.2, §8.
  *
  * Privacy rule: a voucher code is never put in a URL, localStorage, sessionStorage or an analytics event.
  * Nothing in this file stores anything.
  */
 
-export type GiftLocale = "sl" | "en";
+import { isLocale, localeMeta, locales, salesSlugs, type Locale } from "../i18n/config.ts";
+
+/** Gift pages exist in every site language (David 2026-11-11). */
+export type GiftLocale = Locale;
 
 /** One constant for price and validity (contract §8.1). Defaults from spec §7. */
 export const GIFT_PRICE_EUR = 49.99;
@@ -18,18 +21,41 @@ export const giftUpdated = "2026-11-11";
 /** Support address shown on "already redeemed" (contract §8.5). TODO(David): confirm or replace. */
 export const GIFT_SUPPORT_EMAIL = "david@petprep.si";
 
-/** Public paths. English at the root, Slovenian under /sl (same rule as pathFor). */
-export const giftPaths = {
-  gift: { en: "/gift", sl: "/sl/darilni-bon" },
-  thanks: { en: "/gift/thanks", sl: "/sl/darilni-bon/hvala" },
-  redeem: { en: "/redeem", sl: "/sl/unovci" },
-  /** Promise kit page (M6-S02, fixed by the spec); linked only while its own switch is on. */
-  promiseKit: { en: "/promise-kit", sl: "/sl/obljuba-o-ljubljencku" },
-} as const satisfies Record<string, Record<GiftLocale, string>>;
+const prefixOf = (locale: Locale) => (locale === "en" ? "" : `/${locale}`);
+
+/** Public path of a gift page in a language: `/gift`, `/gift/thanks`, `/redeem` (en); `/sl/darilni-bon/hvala` (sl); `/de/einloesen` (de) … */
+export function giftPath(locale: Locale, page: GiftPageKey): string {
+  const p = prefixOf(locale);
+  if (page === "gift") return `${p}/${salesSlugs.gift[locale]}`;
+  if (page === "thanks") return `${p}/${salesSlugs.gift[locale]}/${salesSlugs.giftThanks[locale]}`;
+  return `${p}/${salesSlugs.redeem[locale]}`;
+}
 export type GiftPageKey = "gift" | "thanks" | "redeem";
 
+/** The same page in every language (hreflang, language switcher). */
+export function giftPathsOf(page: GiftPageKey): Record<Locale, string> {
+  return Object.fromEntries(locales.map((l) => [l, giftPath(l, page)])) as Record<Locale, string>;
+}
+
+/** Promise kit page (M6-S02); linked from the gift pages only while its own switch is on. */
+export function promiseKitHref(locale: Locale): string {
+  return `${prefixOf(locale)}/${salesSlugs.promiseKit[locale]}`;
+}
+
 /** Redeem page without the leading slash, as shown on the printed voucher. */
-export const redeemDisplayUrl: Record<GiftLocale, string> = { en: "petprep.si/redeem", sl: "petprep.si/sl/unovci" };
+export function redeemDisplayUrl(locale: Locale): string {
+  return `petprep.si${giftPath(locale, "redeem")}`;
+}
+
+/** Language to send to the API (it knows sl and en only, contract §2.4); every other language is sent as en. */
+export function apiLocale(locale: Locale): "sl" | "en" {
+  return locale === "sl" ? "sl" : "en";
+}
+
+/** Reads the language marker the buy button stored: any of the 15 site languages, otherwise null. */
+export function storedGiftLocale(raw: string | null | undefined): Locale | null {
+  return raw && isLocale(raw) ? raw : null;
+}
 
 /** localStorage key that carries the language (and nothing else) from the gift page to the thanks page. */
 export const GIFT_LANG_KEY = "petprep.giftLang";
@@ -108,16 +134,21 @@ export function validUntil(purchaseIso: string, months: number = GIFT_VALID_MONT
   return `${ny}-${p(nm + 1)}-${p(Math.min(d, last))}`;
 }
 
-/** "11. 11. 2027" (sl) or "11 November 2027" (en); the date is formatted as a calendar date, no time zone shift. */
+/** "11. november 2027" (sl), "11 November 2027" (en), … in the language's own format; a calendar date, no time zone shift. */
 export function formatGiftDate(iso: string, locale: GiftLocale): string {
   const parts = parseIso(iso);
   if (!parts) return "";
   const [y, mo, d] = parts;
-  return new Intl.DateTimeFormat(locale === "sl" ? "sl-SI" : "en-GB", { dateStyle: "long", timeZone: "UTC" }).format(new Date(Date.UTC(y, mo - 1, d)));
+  return new Intl.DateTimeFormat(localeMeta[locale].intl, { dateStyle: "long", timeZone: "UTC" }).format(new Date(Date.UTC(y, mo - 1, d)));
+}
+
+/** Euro amount in the language's own format (Intl): "49,99 €" (sl, de, fr, …), "€49.99" (en). */
+export function formatEuro(amount: number, locale: Locale): string {
+  return new Intl.NumberFormat(localeMeta[locale].intl, { style: "currency", currency: "EUR" }).format(amount);
 }
 
 export function formatGiftPrice(locale: GiftLocale): string {
-  return `${GIFT_PRICE_EUR.toFixed(2).replace(".", locale === "sl" ? "," : ".")} €`;
+  return formatEuro(GIFT_PRICE_EUR, locale);
 }
 
 /** Message keys of the redeem form (contract §8.5). */
@@ -142,13 +173,15 @@ export const clientOnlyKeys: readonly MessageKey[] = ["timeout"];
 
 /**
  * Pages whose content must never reach third-party scripts (analytics, tag managers): the thanks page shows the
- * code and the redeem page takes code and e-mail. Matches the public paths, with or without the internal /en prefix.
+ * code and the redeem page takes code and e-mail. Matches the public paths of all 15 languages, with or without the internal /en prefix.
  */
 export function isGiftPrivatePath(pathname: string | null | undefined): boolean {
   if (!pathname) return false;
   const p = pathname.length > 1 ? pathname.replace(/\/+$/, "") : pathname;
-  return /^(\/en)?\/(gift\/thanks|redeem)$/.test(p) || /^\/sl\/(darilni-bon\/hvala|unovci)$/.test(p);
+  const bare = p.replace(/^\/en(?=\/)/, "");
+  return privatePaths.has(bare);
 }
+const privatePaths: ReadonlySet<string> = new Set(locales.flatMap((l) => [giftPath(l, "thanks"), giftPath(l, "redeem")]));
 
 /**
  * Maps an API answer (HTTP status + parsed body) to a message key. A body that did not parse (null), a

@@ -4,7 +4,10 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import {
   giftBuyUrl,
-  giftPaths,
+  giftPath,
+  giftPathsOf,
+  apiLocale,
+  storedGiftLocale,
   isGiftEnabled,
   isPlausibleCode,
   isPromiseKitEnabled,
@@ -17,9 +20,9 @@ import {
   apiBase,
   formatGiftPrice,
 } from "./gift.ts";
-import { giftRedirects, giftSitemapPaths, giftStaticLocale } from "./giftRoutes.ts";
-import { giftCopy } from "../content/gift.ts";
-import { locales } from "../i18n/config.ts";
+import { giftSitemapPaths, giftSlugParams, giftThanksParams } from "./giftRoutes.ts";
+import { giftCopy } from "../content/gift/index.ts";
+import { locales, salesSlugs, pageSlugs } from "../i18n/config.ts";
 
 const src = (rel: string) => readFileSync(new URL(rel, import.meta.url), "utf8");
 
@@ -83,7 +86,7 @@ test("redeemOutcome: unknown, unparsable and network answers are upstream_error"
 
 // W4
 test("every message key has an SL and an EN text; SL uses the formal address", () => {
-  for (const lang of ["sl", "en"] as const) {
+  for (const lang of locales) {
     for (const key of messageKeys) assert.ok(giftCopy[lang].messages[key]?.trim().length > 5, `${lang}.${key}`);
   }
   assert.equal(giftCopy.sl.messages.redeemed, "Izziv je dodan. Odprite aplikacijo in izberite ljubljenčka.");
@@ -99,12 +102,17 @@ test("copy has no child ages, no 'Data Vallis' and no invented promise of a pet"
   const all = JSON.stringify(giftCopy);
   assert.doesNotMatch(all, /Data Vallis/i);
   assert.doesNotMatch(all, /\b\d{1,2}[- ]?(year|let|leta|leti)\b/i);
+  for (const l of locales) assert.doesNotMatch(JSON.stringify(giftCopy[l]), /Data Vallis/i, l);
   assert.equal(giftCopy.sl.title, "Ne podarite kužka. Podarite preizkus.");
 });
 
-test("price and validity come from one constant", () => {
-  assert.equal(formatGiftPrice("sl"), "49,99 €");
-  assert.equal(formatGiftPrice("en"), "49.99 €");
+test("price is formatted per language with Intl", () => {
+  const nb = (s: string) => s.replace(/[\u00a0\u202f]/g, " ");
+  assert.equal(nb(formatGiftPrice("sl")), "49,99 €");
+  assert.equal(nb(formatGiftPrice("de")), "49,99 €");
+  assert.equal(nb(formatGiftPrice("fr")), "49,99 €");
+  assert.equal(nb(formatGiftPrice("en")), "€49.99");
+  for (const l of locales) assert.match(formatGiftPrice(l), /49[.,]99/, l);
 });
 
 // W5
@@ -115,43 +123,59 @@ test("switch: only the exact value 1 turns the feature on", () => {
   assert.equal(isPromiseKitEnabled(undefined), false);
 });
 
-test("switch off: no static params, no redirects, no sitemap entry", () => {
-  assert.deepEqual(giftStaticLocale("en", false), []);
-  assert.deepEqual(giftStaticLocale("sl", false), []);
-  assert.deepEqual(giftRedirects(false), []);
+test("switch off: no static params and no sitemap entry", () => {
+  assert.deepEqual(giftSlugParams(false), []);
+  for (const l of locales) assert.deepEqual(giftThanksParams(l, false), []);
   assert.equal(giftSitemapPaths(false), null);
 });
 
-test("switch on: static params for EN and SL only; sitemap has the sales page only", () => {
-  assert.deepEqual(giftStaticLocale("en", true), [{ locale: "en" }]);
-  assert.deepEqual(giftStaticLocale("sl", true), [{ locale: "sl" }]);
-  assert.deepEqual(giftSitemapPaths(true, true), { en: "/gift", sl: "/sl/darilni-bon" });
+test("switch on: static params for all 15 languages; sitemap has the sales page only", () => {
+  const params = giftSlugParams(true);
+  assert.equal(params.length, locales.length * 2);
+  for (const l of locales) {
+    assert.ok(params.some((p) => p.locale === l && p.slug === salesSlugs.gift[l]), l);
+    assert.ok(params.some((p) => p.locale === l && p.slug === salesSlugs.redeem[l]), l);
+    assert.deepEqual(giftThanksParams(l, true), [{ slug: salesSlugs.gift[l], species: salesSlugs.giftThanks[l] }]);
+  }
+  const paths = giftSitemapPaths(true, true);
+  assert.deepEqual(Object.keys(paths ?? {}).sort(), [...locales].sort());
+  assert.equal(paths?.en, "/gift");
+  assert.equal(paths?.sl, "/sl/darilni-bon");
+  assert.equal(paths?.de, "/de/geschenkgutschein");
   const sitemap = src("../app/sitemap.ts");
-  assert.doesNotMatch(sitemap, /thanks|hvala|redeem|unovci/);
+  assert.doesNotMatch(sitemap.replace(/\/\/.*$/gm, ""), /thanks|hvala|redeem|unovci|giftPath\(/);
 });
 
-// W8
-test("other locales redirect to the English URL (308) when on", () => {
-  const r = giftRedirects(true);
-  const others = locales.filter((l) => l !== "en" && l !== "sl");
-  assert.equal(r.length, others.length * 3 + 3);
-  assert.ok(r.every((x) => x.permanent && x.destination.startsWith("/")));
-  assert.ok(r.filter((x) => !x.source.startsWith("/sl/")).every((x) => !x.destination.startsWith("/sl")));
-  // m7: the English slug under /sl goes to the Slovenian page
-  assert.deepEqual(r.filter((x) => x.source.startsWith("/sl/")).map((x) => [x.source, x.destination]), [["/sl/gift", "/sl/darilni-bon"], ["/sl/gift/thanks", "/sl/darilni-bon/hvala"], ["/sl/redeem", "/sl/unovci"]]);
-  assert.deepEqual(r.find((x) => x.source === "/de/gift"), { source: "/de/gift", destination: "/gift", permanent: true });
-  assert.deepEqual(r.find((x) => x.source === "/nb/gift/thanks"), { source: "/nb/gift/thanks", destination: "/gift/thanks", permanent: true });
-  assert.deepEqual(r.find((x) => x.source === "/fr/redeem"), { source: "/fr/redeem", destination: "/redeem", permanent: true });
-  assert.ok(!r.some((x) => x.source.startsWith("/en/")));
+test("no redirects: every language has its own page", () => {
+  assert.doesNotMatch(src("../../next.config.ts"), /giftRedirects|darilni-bon|promise-kit/);
 });
 
-test("public paths are the contract's", () => {
-  assert.equal(giftPaths.gift.en, "/gift");
-  assert.equal(giftPaths.gift.sl, "/sl/darilni-bon");
-  assert.equal(giftPaths.thanks.en, "/gift/thanks");
-  assert.equal(giftPaths.thanks.sl, "/sl/darilni-bon/hvala");
-  assert.equal(giftPaths.redeem.en, "/redeem");
-  assert.equal(giftPaths.redeem.sl, "/sl/unovci");
+test("public paths: localized slugs, English at the root", () => {
+  assert.equal(giftPath("en", "gift"), "/gift");
+  assert.equal(giftPath("sl", "gift"), "/sl/darilni-bon");
+  assert.equal(giftPath("en", "thanks"), "/gift/thanks");
+  assert.equal(giftPath("sl", "thanks"), "/sl/darilni-bon/hvala");
+  assert.equal(giftPath("en", "redeem"), "/redeem");
+  assert.equal(giftPath("sl", "redeem"), "/sl/unovci");
+  assert.equal(giftPath("de", "thanks"), "/de/geschenkgutschein/danke");
+  assert.equal(giftPath("nb", "redeem"), "/nb/los-inn");
+  for (const page of ["gift", "thanks", "redeem"] as const) {
+    const all = giftPathsOf(page);
+    assert.equal(new Set(Object.values(all)).size, locales.length, page);
+  }
+  // slugs never collide with another page slug of the same language
+  for (const l of locales) {
+    const taken = new Set(Object.values(pageSlugs).map((m) => (m as Record<string, string>)[l]));
+    for (const k of ["gift", "redeem", "promiseKit"] as const) assert.ok(!taken.has(salesSlugs[k][l]), `${l} ${k}`);
+  }
+});
+
+test("API language: sl and en only, everything else is sent as en; stored language is any of the 15", () => {
+  assert.equal(apiLocale("sl"), "sl");
+  for (const l of locales.filter((x) => x !== "sl")) assert.equal(apiLocale(l), "en", l);
+  for (const l of locales) assert.equal(storedGiftLocale(l), l);
+  assert.equal(storedGiftLocale("xx"), null);
+  assert.equal(storedGiftLocale(null), null);
 });
 
 test("buy URL: https only, unset or bad → null (button disabled)", () => {
@@ -200,7 +224,7 @@ test("the code never reaches a URL, storage, a request or analytics", () => {
   assert.match(redeem, /method: "POST"/);
   // the buy button only ever stores the language
   const buy = src("../components/gift/BuyButton.tsx");
-  assert.deepEqual(buy.match(/localStorage\.\w+\([^)]*\)/g), ['localStorage.setItem(GIFT_LANG_KEY, "sl")', "localStorage.removeItem(GIFT_LANG_KEY)"].map((s) => s.replace("localStorage", "window.localStorage").replace("window.", "")));
+  assert.deepEqual(buy.match(/localStorage\.\w+\([^)]*\)/g), ["localStorage.setItem(GIFT_LANG_KEY, locale)", "localStorage.removeItem(GIFT_LANG_KEY)"]);
 });
 
 test("thanks and redeem pages are noindex and never in the sitemap or llms files", () => {
@@ -228,12 +252,13 @@ test("the printed voucher never shows a computed date", () => {
   assert.doesNotMatch(t, /type="date"|validUntil|todayIso|formatGiftDate/);
   assert.equal(giftCopy.sl.thanks.voucher.validity, "Velja 12 mesecev od nakupa");
   assert.equal(giftCopy.en.thanks.voucher.validity, "Valid for 12 months from purchase");
+  for (const l of locales) assert.ok(giftCopy[l].thanks.voucher.validity.includes("12"), l);
 });
 
 // MA3
 test("no third-party script on the thanks and redeem pages", () => {
-  for (const p of ["/gift/thanks", "/en/gift/thanks", "/sl/darilni-bon/hvala", "/redeem", "/en/redeem", "/sl/unovci", "/sl/unovci/", "/redeem/"]) assert.ok(isGiftPrivatePath(p), p);
-  for (const p of ["/", "/gift", "/sl/darilni-bon", "/sl", "/privacy", "/sl/pogoji", "/redeemx", null, undefined]) assert.ok(!isGiftPrivatePath(p as string), String(p));
+  for (const p of ["/gift/thanks", "/en/gift/thanks", "/sl/darilni-bon/hvala", "/redeem", "/en/redeem", "/sl/unovci", "/sl/unovci/", "/redeem/", ...locales.flatMap((l) => [giftPath(l, "thanks"), giftPath(l, "redeem")])]) assert.ok(isGiftPrivatePath(p), p);
+  for (const p of ["/", "/gift", "/sl/darilni-bon", "/de/geschenkgutschein", "/sl", "/privacy", "/sl/pogoji", "/redeemx", null, undefined]) assert.ok(!isGiftPrivatePath(p as string), String(p));
   const layout = src("../app/[locale]/layout.tsx");
   assert.match(layout, /<PrivatePageGate>\s*<GoogleAnalytics \/>\s*<GoogleTagManager \/>\s*<\/PrivatePageGate>/);
   assert.match(src("../components/gift/PrivatePageGate.tsx"), /isGiftPrivatePath\(usePathname\(\)\)/);
@@ -244,7 +269,7 @@ test("no third-party script on the thanks and redeem pages", () => {
 // m3
 test("switch on but no checkout URL: the sales page is out of the sitemap and noindex", () => {
   assert.equal(giftSitemapPaths(true, false), null);
-  assert.deepEqual(giftSitemapPaths(true, true), { en: "/gift", sl: "/sl/darilni-bon" });
+  assert.deepEqual(giftSitemapPaths(true, true), giftPathsOf("gift"));
   assert.match(src("../components/gift/GiftPages.tsx"), /noIndex = page !== "gift" \|\| giftBuyUrl\(\) === null/);
 });
 
@@ -254,8 +279,8 @@ test("manual build reads .env.production; refund text marked; SL copy; timeout m
   assert.match(ignore, /^\.env\*$/m);
   assert.match(ignore, /^!\.env\.production$/m);
   assert.doesNotMatch(src("../../Dockerfile"), /ARG NEXT_PUBLIC_(FEATURE_GIFT|LS_GIFT_URL|PETPREP_API_URL)/);
-  assert.match(src("../content/gift.ts"), /TODO\(David\): the refund wording/);
+  assert.match(src("../content/gift/index.ts"), /TODO\(David\): the refund wording/);
   assert.doesNotMatch(JSON.stringify(giftCopy.sl), /botr/i);
-  for (const l of ["sl", "en"] as const) assert.ok(giftCopy[l].messages.timeout.length > 20);
+  for (const l of locales) assert.ok(giftCopy[l].messages.timeout.length > 20, l);
   assert.match(src("../components/gift/RedeemForm.tsx"), /AbortError" \? "timeout"/);
 });

@@ -52,7 +52,7 @@ function OneVoucher({ locale, code }: { locale: GiftLocale; code: string }) {
             </div>
             <p className="voucher-meta">
               <span>
-                {v.redeemAt} <strong>{redeemDisplayUrl[locale]}</strong>
+                {v.redeemAt} <strong>{redeemDisplayUrl(locale)}</strong>
               </span>
               <span>
                 <strong>{v.validity}</strong>

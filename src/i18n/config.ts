@@ -99,6 +99,27 @@ export function pageKeyFromSlug(locale: Locale, slug: string): PageKey | undefin
 }
 
 /**
+ * Gift voucher and Pet Promise Kit (M6-S01 / M6-S02, David 2026-11-11: all 15 languages). Their pages are not
+ * in `pageSlugs` (they exist only while their build switch is on, so they are not part of the site-wide page
+ * list), but follow the same rules: one ASCII slug per language, English at the root, the others under /<locale>.
+ * Paths: sales page `/<gift>`, thank-you `/<gift>/<thanks>`, redeem `/<redeem>`, kit `/<promiseKit>`.
+ * English keeps `/gift`, `/gift/thanks`, `/redeem` and `/promise-kit` (Lemon Squeezy redirects every buyer to
+ * the English thank-you address; the page then forwards the buyer to their own language).
+ */
+export const salesSlugs = {
+  gift: { en: "gift", sl: "darilni-bon", de: "geschenkgutschein", fr: "bon-cadeau", es: "vale-regalo", it: "buono-regalo", pt: "vale-de-oferta", nl: "cadeaubon", pl: "bon-podarunkowy", cs: "darkovy-poukaz", hr: "poklon-bon", sv: "presentkort", da: "gavekort", fi: "lahjakortti", nb: "gavekort" },
+  giftThanks: { en: "thanks", sl: "hvala", de: "danke", fr: "merci", es: "gracias", it: "grazie", pt: "obrigado", nl: "bedankt", pl: "dziekujemy", cs: "dekujeme", hr: "hvala", sv: "tack", da: "tak", fi: "kiitos", nb: "takk" },
+  redeem: { en: "redeem", sl: "unovci", de: "einloesen", fr: "utiliser-le-bon", es: "canjear", it: "riscatta", pt: "resgatar", nl: "inwisselen", pl: "zrealizuj", cs: "uplatnit", hr: "iskoristi", sv: "los-in", da: "indloes", fi: "lunasta", nb: "los-inn" },
+  promiseKit: { en: "promise-kit", sl: "obljuba-o-ljubljencku", de: "haustier-versprechen", fr: "promesse-animal", es: "promesa-mascota", it: "promessa-animale", pt: "promessa-animal", nl: "huisdierbelofte", pl: "obietnica-dla-zwierzaka", cs: "slib-pro-mazlicka", hr: "obecanje-za-ljubimca", sv: "husdjursloftet", da: "kaeledyrsloeftet", fi: "lemmikkilupaus", nb: "kjaeledyrloftet" },
+} as const satisfies Record<string, Record<Locale, string>>;
+export type SalesPageKey = "gift" | "redeem" | "promiseKit";
+
+/** Top-level sales slugs (the thank-you page is a child of the gift page). */
+export function salesPageFromSlug(locale: Locale, slug: string): SalesPageKey | undefined {
+  return (["gift", "redeem", "promiseKit"] as const).find((k) => salesSlugs[k][locale] === slug);
+}
+
+/**
  * Animal & breed register (M5-R11, David 2026-10-10): /animals → /animals/<species> →
  * /animals/<species>/<breed> (SL /sl/zivali/…). Species and breed slugs come from the
  * registry (src/content/registry/registry.json); only the comparison page slug is fixed here.

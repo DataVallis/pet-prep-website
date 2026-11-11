@@ -80,9 +80,9 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                       ))
                     : []),
                 ]),
-                // Pet Promise Kit (M6-S02): only with the switch on and only in English and Slovenian.
+                // Pet Promise Kit (M6-S02): only with the switch on, in every language.
                 ...(g.links.includes("pricing") && promiseKitFooterHref(promiseKitConfig().enabled, locale)
-                  ? [<Link key="promiseKit" href={promiseKitFooterHref(promiseKitConfig().enabled, locale)!} className="hover:text-fog">{sales[locale as "en" | "sl"].breadcrumb}</Link>]
+                  ? [<Link key="promiseKit" href={promiseKitFooterHref(promiseKitConfig().enabled, locale)!} className="hover:text-fog">{sales[locale].breadcrumb}</Link>]
                   : []),
               ]}
               </nav>
