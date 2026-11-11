@@ -47,11 +47,6 @@ export function redeemDisplayUrl(locale: Locale): string {
   return `petprep.si${giftPath(locale, "redeem")}`;
 }
 
-/** Language to send to the API (it knows sl and en only, contract §2.4); every other language is sent as en. */
-export function apiLocale(locale: Locale): "sl" | "en" {
-  return locale === "sl" ? "sl" : "en";
-}
-
 /** Reads the language marker the buy button stored: any of the 15 site languages, otherwise null. */
 export function storedGiftLocale(raw: string | null | undefined): Locale | null {
   return raw && isLocale(raw) ? raw : null;
@@ -96,6 +91,7 @@ export function isPlausibleCode(raw: string): boolean {
   return /^[A-Za-z0-9-]{8,64}$/.test(normalizeCode(raw));
 }
 
+/** Sign-in e-mail field: a format check only (the server decides). */
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 export function isPlausibleEmail(raw: string): boolean {
   const v = raw.trim();
@@ -160,20 +156,43 @@ export const messageKeys = [
   "expired",
   "refunded",
   "already_redeemed",
-  "no_account",
   "unavailable",
   "rate_limited",
   "upstream_error",
   "timeout",
+  // Sign-in (M6-S01b, CONTRACT_WEB_SIGNIN §5.5): produced by src/lib/webSignin.ts and by a 401/403 from redeem.
+  "signin_invalid_credentials",
+  "signin_invalid_token",
+  "signin_account_not_found",
+  "signin_not_parent",
+  "signin_rate_limited",
+  "signin_unavailable",
+  "signin_cancelled",
+  "signin_failed",
+  "session_expired",
 ] as const;
 export type MessageKey = (typeof messageKeys)[number];
+
+/** Keys that mean "the sign-in is over, go back to step 1". */
+export const signInKeys: readonly MessageKey[] = [
+  "signin_invalid_credentials",
+  "signin_invalid_token",
+  "signin_account_not_found",
+  "signin_not_parent",
+  "signin_rate_limited",
+  "signin_unavailable",
+  "signin_cancelled",
+  "signin_failed",
+  "session_expired",
+];
 
 /** Key only the browser can produce (the request was aborted after the client timeout); the API never sends it. */
 export const clientOnlyKeys: readonly MessageKey[] = ["timeout"];
 
 /**
  * Pages whose content must never reach third-party scripts (analytics, tag managers): the thanks page shows the
- * code and the redeem page takes code and e-mail. Matches the public paths of all 15 languages, with or without the internal /en prefix.
+ * code, the redeem page takes code, e-mail and password, and /auth/return briefly holds the ID token in the address.
+ * Matches the public paths of all 15 languages, with or without the internal /en prefix.
  */
 export function isGiftPrivatePath(pathname: string | null | undefined): boolean {
   if (!pathname) return false;
@@ -181,7 +200,9 @@ export function isGiftPrivatePath(pathname: string | null | undefined): boolean 
   const bare = p.replace(/^\/en(?=\/)/, "");
   return privatePaths.has(bare);
 }
-const privatePaths: ReadonlySet<string> = new Set(locales.flatMap((l) => [giftPath(l, "thanks"), giftPath(l, "redeem")]));
+/** Return page of the Google / Apple full-page sign-in redirect (one URL for all languages, M6-S01b). */
+export const AUTH_RETURN_PATH = "/auth/return";
+const privatePaths: ReadonlySet<string> = new Set([AUTH_RETURN_PATH, ...locales.flatMap((l) => [giftPath(l, "thanks"), giftPath(l, "redeem")])]);
 
 /**
  * Maps an API answer (HTTP status + parsed body) to a message key. A body that did not parse (null), a
@@ -195,6 +216,9 @@ export function redeemOutcome(status: number, body: unknown): MessageKey {
     return "upstream_error";
   }
   const error = typeof b?.error === "string" ? b.error : null;
+  // M6-S01b: the web sign-in token is the only credential. Missing/expired → sign in again; not a parent → say so.
+  if (status === 401 && error === "unauthenticated") return "session_expired";
+  if (status === 403 && error === "not_parent") return "signin_not_parent";
   switch (`${status}:${error}`) {
     case "422:invalid_request":
       return "invalid_request";
@@ -204,8 +228,6 @@ export function redeemOutcome(status: number, body: unknown): MessageKey {
       return "expired";
     case "422:refunded":
       return "refunded";
-    case "422:no_account":
-      return "no_account";
     case "409:already_redeemed":
       return "already_redeemed";
     case "429:rate_limited":

@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useEffect, useId, useState } from "react";
 import { GIFT_LANG_KEY, giftPath, isPlausibleCode, normalizeCode, storedGiftLocale, type GiftLocale } from "@/lib/gift";
 import { giftCopy } from "@/content/gift";
@@ -14,7 +13,6 @@ import { Voucher } from "./Voucher";
  */
 export function ThanksClient({ locale, promiseKitHref }: { locale: GiftLocale; promiseKitHref: string | null }) {
   const c = giftCopy[locale];
-  const router = useRouter();
   const codeId = useId();
   const [code, setCode] = useState("");
   const [touched, setTouched] = useState(false);
@@ -26,12 +24,13 @@ export function ThanksClient({ locale, promiseKitHref }: { locale: GiftLocale; p
       const stored = storedGiftLocale(window.localStorage.getItem(GIFT_LANG_KEY));
       if (stored && stored !== "en") {
         window.localStorage.removeItem(GIFT_LANG_KEY);
-        router.replace(giftPath(stored, "thanks"));
+        // Hard navigation (not router.replace): the page never shares a document with a tag-manager container.
+        window.location.replace(giftPath(stored, "thanks"));
       }
     } catch {
       // Storage blocked: stay on the English page, which has a language link.
     }
-  }, [locale, router]);
+  }, [locale]);
 
   const plausible = isPlausibleCode(code);
   const ready = plausible;
@@ -92,7 +91,7 @@ export function ThanksClient({ locale, promiseKitHref }: { locale: GiftLocale; p
           ))}
         </ol>
         <div className="flex flex-wrap items-center gap-4">
-          <Link href={giftPath(locale, "redeem")} className="btn btn-secondary">{giftCopy[locale].redeemLink.button}</Link>
+          <a href={giftPath(locale, "redeem")} className="btn btn-secondary">{giftCopy[locale].redeemLink.button}</a>
           {promiseKitHref ? <Link href={promiseKitHref} className="rich-link">{giftCopy[locale].kit.button}</Link> : null}
           {/* TODO(David): link the promise kit PDF here once M6-S02 ships (the kit page link above shows while its switch is on). */}
         </div>
