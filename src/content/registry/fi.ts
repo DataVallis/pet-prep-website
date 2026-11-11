@@ -466,6 +466,7 @@ const fi: RegistryCopy = {
       dna_dcm: "DNA-testi: dilatoiva kardiomyopatia (DCM) – sydänlihaksen sairaus",
       dna_pra5: "DNA-testi: etenevä verkkokalvon surkastuma (PRA5)",
       dna_dings2: "DNA-testi: dobermannien ”tanssiva tauti” (DINGS2) – hermojen ja lihasten sairaus",
+      dna_slem: "DNA-testi spongiformiselle leukoenkefalomyelopatialle (SLEM, ”vapisevan pennun oireyhtymä”), joka on nuorten pentujen aivojen ja selkäytimen sairaus",
       dna_ams: "DNA-testi: akraalinen mutilaatio-oireyhtymä (AMS) – hermosairaus, joka vie tassuista kivuntunnon",
       dna_dams: "DNA-testi: dyserytropoieettinen anemia ja myopatia -oireyhtymä (DAMS) – veren ja lihasten sairaus",
       dna_fuco: "DNA-testi: fukosidoosi – perinnöllinen hermoston sairaus",
@@ -636,6 +637,9 @@ const fi: RegistryCopy = {
     urinary_incontinence: "Rodulla voi esiintyä virtsankarkailua, hallitsematonta virtsan vuotamista.",
     osteochondritis: "Rodulla voi esiintyä osteokondroosia (osteochondritis dissecans, OCD), kasvavien koirien nivelruston häiriötä.",
     scottie_cramp: "Rodulla esiintyy ”scottie crampia” – lyhyitä lihaskramppikohtauksia, jotka yleensä laukaisee innostus; se ei ole kivulias.",
+    slem_shaking_puppy: "Rodussa voi esiintyä spongiformista leukoenkefalomyelopatiaa (SLEM), jota kutsutaan myös vapisevan pennun oireyhtymäksi; DNA-testin avulla kasvattajat voivat välttää sen.",
+    cecs_cramping: "Rodussa esiintyy koiran epileptoidista kouristusoireyhtymää (CECS) – vapina- ja lihaskouristuskohtauksia.",
+    gallbladder_mucocele: "Rodussa voi esiintyä sappirakon mukoseleä, jossa sappirakko täyttyy sitkeällä limalla eikä tyhjene kunnolla; joskus tarvitaan leikkaus.",
     periodontal_disease: "Parodontiitti, ikenien ja hampaita tukevien kudosten infektio ja tulehdus, on rodun tunnettu ongelma.",
     extra_eyelashes:
       "Rodulla voi esiintyä distikiaasia, jossa luomen sisäpintaan tai reunaan kasvaa pieniä ylimääräisiä ripsiä, jotka voivat hangata silmää; kysy vanhemmista, jotka on tutkittu silmätutkimusohjelmassa.",

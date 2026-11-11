@@ -348,6 +348,7 @@ const en: RegistryCopy = {
       dna_dcm: "DNA test for dilated cardiomyopathy (DCM), a heart muscle disease",
       dna_pra5: "DNA test for progressive retinal atrophy (PRA5)",
       dna_dings2: "DNA test for dancing Dobermann disease (DINGS2), a nerve and muscle disorder",
+      dna_slem: "DNA test for spongiform leucoencephalomyelopathy (SLEM, \"shaking puppy syndrome\"), a disorder of the brain and spinal cord in young puppies",
       dna_ams: "DNA test for acral mutilation syndrome (AMS), a nerve disorder that takes away pain feeling in the paws",
       dna_dams: "DNA test for dyserythropoietic anaemia and myopathy syndrome (DAMS), a blood and muscle disorder",
       dna_fuco: "DNA test for fucosidosis, an inherited disease of the nervous system",
@@ -479,6 +480,9 @@ const en: RegistryCopy = {
     urinary_incontinence: "Urinary incontinence, an uncontrolled leaking of urine, can occur in the breed.",
     osteochondritis: "Osteochondritis dissecans (OCD), a disorder of the joint cartilage in growing dogs, can occur in the breed.",
     scottie_cramp: "Scottie cramp — short episodes of muscle cramping, usually brought on by excitement — occurs in the breed; it is not painful.",
+    slem_shaking_puppy: "Spongiform leucoencephalomyelopathy (SLEM), also called shaking puppy syndrome, can occur in the breed; a DNA test lets breeders avoid it.",
+    cecs_cramping: "Canine epileptoid cramping syndrome (CECS) — episodes of tremors and muscle spasms — occurs in the breed.",
+    gallbladder_mucocele: "Gallbladder mucocoele, where the gallbladder fills with thick mucus and cannot empty properly, can occur in the breed; it may need surgery.",
     periodontal_disease: "Periodontal disease, an infection and inflammation of the gums and the tissues that hold the teeth, is a known problem in the breed.",
     extra_eyelashes: "Distichiasis, where small extra eyelashes grow on the inner surface or the edge of the eyelid and can rub the eye, can occur in the breed; ask for parents tested under the eye scheme.",
     cm_sm_screening: "Chiari-like malformation and syringomyelia, a painful condition with fluid-filled cavities in the spinal cord near the brain, can occur in the breed; breeders are advised to screen the parents (UK: BVA/KC scheme).",
@@ -648,6 +652,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends more than 2 hours of exercise a day and grooming more than once a week, says the breed sheds and suits a large house with a large garden, and lists it in Breed Watch Category 1. PetMD calls Flat-Coated Retrievers wonderful family dogs that generally do well with children and other pets, especially with proper introductions and socialisation; it suggests brushing twice a week, cleaning the ears every week or two, a bath and nail trim every month or two, and avoiding exercise right before or after eating.",
       ],
       sources: ["S761", "S762", "S763", "S123", "S10"],
+    },
+    border_terrier: {
+      aka: "Border Terrier dog",
+      text: [
+        "The Border Terrier is a small working terrier from Great Britain; the FCI standard calls it essentially a working terrier, capable of following a horse, combining activity with gameness. It describes a harsh, dense coat with a close undercoat, dark eyes with a keen expression and small V-shaped ears, in red, wheaten, grizzle and tan, or blue and tan, and gives a weight of 5.9–7.1 kg for males and 5.1–6.4 kg for females. A dog of this size is fully grown at about 9–12 months (PetMD). The Royal Kennel Club gives a lifespan of over 12 years, and a 2024 UK study (McMillan et al.) found a median of 14.2 years.",
+        "The Royal Kennel Club recommends up to 1 hour of exercise a day and grooming more than once a week, says the breed sheds and suits a flat or apartment, and lists it in Breed Watch Category 1. The PDSA says that, given the right socialisation, Border Terriers will love spending time with children of all ages, but recommends supervision; it warns that they can develop separation anxiety if left alone, have a high prey drive and should not live with rabbits, guinea pigs or rats, and advises brushing a couple of times a week and leaving a gap after eating before exercise. Woodgreen suggests a home with slightly older children.",
+      ],
+      sources: ["S768", "S769", "S770", "S771", "S773", "S10"],
     },
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
