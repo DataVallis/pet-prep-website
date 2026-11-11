@@ -502,40 +502,58 @@ const en: Dictionary = {
     },
     partners: {
       meta: {
-        title: "Partners — work with PetPrep",
+        title: "Partners and sponsors — work with PetPrep",
         description:
-          "PetPrep partners with pet stores, shelters, veterinarians, trainers, insurers, collar makers and schools to help families get pets responsibly.",
+          "Sponsor the “12 Weeks” series, sponsored content, insurers, founding directory partners, shelters and associations. Labelled, with no influence on content or sources.",
       },
-      eyebrow: "Partners",
-      title: "Better-prepared families for everyone who cares about animals.",
+      eyebrow: "Partners and sponsors",
+      title: "Reach families right before they decide on a pet.",
       lead:
-        "Families who finish PetPrep know what a pet really takes. We are building a partner network that meets them at the right moment — clearly labelled and always with the family's consent.",
-      planned: true,
+        "PetPrep is an app and breed register where a family prepares before bringing a dog or a cat home. We look for partners who care about responsible pet ownership and are happy to say so openly, with the cooperation clearly labelled.",
       blocks: [
         {
+          type: "prose",
+          heading: "Who PetPrep is for",
+          paragraphs: [
+            "PetPrep speaks to families just before they decide on a pet, and to adults testing whether a breed really suits them. Our reader is not searching blindly: they already know which species and breed they are studying, and in the [animal register](page:animals) they read what that animal needs, with cited sources.",
+            "For a partner this is a rare moment: the decision is not yet made, but the interest is concrete. That is why every cooperation is clearly labelled and never changes what families read.",
+          ],
+        },
+        {
           type: "cards",
-          heading: "Who we work with",
+          heading: "Ways to work together",
           columns: 3,
           items: [
-            { title: "Pet stores", text: "Reach families at the moment they prove they are ready — for example with a starter-kit offer at the certificate." },
-            { title: "Shelters, rescues and breeders", text: "Recommend PetPrep before adoption or purchase for fewer impulsive decisions and returns." },
-            { title: "Veterinarians", text: "Once the real pet comes home, the AI assistant answers first questions and refers owners to you, with a case summary shared only with consent." },
-            { title: "Trainers and dog schools", text: "Recommendations and booking when a family moves to a real dog." },
-            { title: "Pet insurers", text: "Breed-aware offers when a real pet is registered — clearly labelled." },
-            { title: "Collar and IoT makers", text: "Integration of activity data for smarter, explained alerts." },
+            { title: "Sponsoring the “12 Weeks” series", text: "The series follows 12 weeks of caring for a pet. The sponsor is mentioned in the episode and its description; the sponsor does not edit the series." },
+            { title: "Sponsored content on petprep.si", text: "A piece beside a breed page or in the knowledge base. It is always labelled as sponsored, and the sponsor has no influence on the page or its cited sources." },
+            { title: "Insurers", text: "Payment per referred contact, or a fixed sponsorship. We pass on a contact only with a parent’s explicit consent and never a child’s data. Lead referral is in preparation and not available yet." },
+            { title: "Founding directory partner", text: "For vets, dog schools, groomers and breeders: a highlighted listing with logo, description and link. 190 € per year; the price is locked for founding partners. Places are limited per country." },
+            { title: "Shelters and associations", text: "A listing is free. You can recommend PetPrep to adopters so they are better prepared for the animal’s arrival." },
           ],
         },
         {
           type: "list",
-          heading: "Why partners trust us",
+          heading: "What we do not do",
           items: [
-            "Children log in without email and we keep their data to a minimum, on EU servers.",
-            "Only verified content reaches a child's screen; there are no ads.",
-            "Every partner offer is labelled and every commission disclosed to the family.",
+            "We do not show ads in the children’s app.",
+            "We do not sell data.",
+            "We do not make health promises.",
+            "We do not promote breeds that veterinary associations advise against advertising.",
+            "We do not let a sponsor influence content or sources.",
           ],
         },
-        { type: "callout", title: "Let's talk.", text: "Partnership terms are being prepared. Tell us who you are and what you have in mind.", tone: "dark" },
-        { type: "contact" },
+        { type: "partnerStats" },
+        {
+          type: "downloads",
+          id: "media-kit",
+          heading: "Media kit",
+          intro: "A short overview of PetPrep for partners and media: what PetPrep is, who it is for, forms of cooperation and content examples.",
+          items: [
+            { href: "/media/petprep-media-kit-en.pdf", label: "Media kit (English)", meta: "PDF" },
+            { href: "/media/petprep-media-kit-sl.pdf", label: "Media kit (Slovenian)", meta: "PDF" },
+          ],
+        },
+        { type: "partnerForm" },
       ],
     },
     investors: {
@@ -635,6 +653,7 @@ const en: Dictionary = {
                 "Codes: login and invite codes are stored only as hashes and expire.",
                 "App error reports: if the app freezes or crashes, it may send a short technical report to our EU server (error type and text, code location, app and OS version, screen name, parent/child role). It contains no name, email address, user ID or IP address, is shared with no third party and is deleted after 30 days.",
                 "Early access list (this website): your email address, the language of the page and the time you signed up.",
+                "Partner form (this website): company name, contact name, email address and message. We use them only to reply to your enquiry, keep them for 12 months and then delete them. The legal basis is your consent, given by ticking the box before sending.",
               ],
             },
             {
@@ -680,6 +699,7 @@ const en: Dictionary = {
                 "To operate and secure the service with app error reports that help us fix freezes and crashes (legitimate interest).",
                 "To meet legal obligations, such as accounting for purchases (legal obligation).",
                 "To email you about the PetPrep launch if you joined the early access list (consent — you can unsubscribe in every email).",
+                "To reply to an enquiry sent through the partner form (consent; we keep the data for 12 months).",
                 "To understand how visitors use this website, with Google Analytics, only if you allow analytics cookies (consent — you can change it at any time under Cookie settings).",
               ],
             },

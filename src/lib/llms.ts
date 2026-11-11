@@ -68,6 +68,8 @@ function blockMarkdownRaw(b: Block, locale: Locale): string {
     case "cookies":
       return [`### ${b.heading}`, ...b.paragraphs.map((p) => fillPlaceholders(p, locale))].join("\n\n");
     case "screens":
+    case "partnerStats":
+    case "partnerForm":
       return "";
     case "animalsHub":
       return hubMarkdown(locale, absoluteUrl);

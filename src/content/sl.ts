@@ -502,40 +502,58 @@ const sl: Dictionary = {
     },
     partners: {
       meta: {
-        title: "Partnerji – sodelujte s PetPrep",
+        title: "Partnerji in sponzorji – sodelujte s PetPrep",
         description:
-          "PetPrep sodeluje s trgovinami za male živali, zavetišči, veterinarji, šolami za pse, zavarovalnicami in šolami za odgovorno pridobivanje živali.",
+          "Sponzorstvo serije »12 Weeks«, sponzorirane vsebine, zavarovalnice, ustanovni partnerji v imenikih ter zavetišča in društva. Označeno, brez vpliva na vsebino in vire.",
       },
-      eyebrow: "Partnerji",
-      title: "Bolje pripravljene družine za vse, ki jim je mar za živali.",
+      eyebrow: "Partnerji in sponzorji",
+      title: "Do družin pridete tik pred odločitvijo za žival.",
       lead:
-        "Družine, ki končajo PetPrep, vedo, kaj skrb za ljubljenčka zares zahteva. Gradimo partnersko mrežo, ki jih doseže v pravem trenutku – jasno označeno in vedno s soglasjem družine.",
-      planned: true,
+        "PetPrep je aplikacija in register pasem, v katerem se družina pripravi, še preden domov pripelje psa ali mačko. Iščemo partnerje, ki jim je mar za odgovorno pridobitev živali in ki to znajo povedati odkrito, z jasno oznako sodelovanja.",
       blocks: [
         {
+          type: "prose",
+          heading: "Komu je PetPrep namenjen",
+          paragraphs: [
+            "PetPrep nagovarja družine tik pred odločitvijo o ljubljenčku in odrasle, ki preizkušajo, ali jim določena pasma res ustreza. Bralec pri nas ne išče na slepo: že ve, katero vrsto in pasmo preučuje, in v [registru živali](page:animals) prebere, kaj ta žival potrebuje, z navedenimi viri.",
+            "Za partnerja je to redek trenutek. Odločitev še ni sprejeta, zanimanje pa je konkretno. Zato je za nas pomembno, da je vsako sodelovanje jasno označeno in da ne vpliva na to, kar beremo družine.",
+          ],
+        },
+        {
           type: "cards",
-          heading: "S kom sodelujemo",
+          heading: "Oblike sodelovanja",
           columns: 3,
           items: [
-            { title: "Trgovine za male živali", text: "Dosežite družine v trenutku, ko dokažejo, da so pripravljene – na primer s ponudbo začetnega paketa ob certifikatu." },
-            { title: "Zavetišča, društva in vzreditelji", text: "Priporočite PetPrep pred posvojitvijo ali nakupom za manj impulzivnih odločitev in vračanj." },
-            { title: "Veterinarji", text: "Ko pride pravi ljubljenček domov, AI asistent odgovori na prva vprašanja in lastnike napoti k vam; povzetek primera prejmete le ob njihovem soglasju." },
-            { title: "Šole za pse", text: "Priporočila in rezervacije, ko družina dobi pravega psa." },
-            { title: "Zavarovalnice za male živali", text: "Ponudbe glede na pasmo ob registraciji pravega ljubljenčka – jasno označene." },
-            { title: "Proizvajalci ovratnic in IoT", text: "Povezava podatkov o aktivnosti za pametnejša, pojasnjena opozorila." },
+            { title: "Sponzorstvo serije »12 Weeks«", text: "Serija spremlja 12 tednov skrbi za ljubljenčka. Sponzor je omenjen v epizodi in v njenem opisu; vsebine serije sponzor ne ureja." },
+            { title: "Sponzorirane vsebine na petprep.si", text: "Prispevek ob strani pasme ali v bazi znanja. Vedno je označen kot sponzoriran, sponzor pa ne vpliva na vsebino strani in na navedene vire." },
+            { title: "Zavarovalnice", text: "Plačilo za posredovan stik ali fiksno sponzorstvo. Stik posredujemo samo z izrecno privolitvijo starša, podatkov otroka ne posredujemo nikoli. Posredovanje stikov je v pripravi in še ni na voljo." },
+            { title: "Ustanovni partner v imenikih", text: "Za veterinarje, pasje šole, frizerje in vzreditelje: izpostavljen vpis z logotipom, opisom in povezavo. 190 € na leto; cena je za ustanovne partnerje zaklenjena. Število mest je omejeno na državo." },
+            { title: "Zavetišča in društva", text: "Vpis je brezplačen. Posvojiteljem lahko priporočite PetPrep, da se bolje pripravijo na prihod živali." },
           ],
         },
         {
           type: "list",
-          heading: "Zakaj nam partnerji zaupajo",
+          heading: "Česa ne delamo",
           items: [
-            "Otroci se prijavijo brez e-pošte, podatke zbiramo minimalno in jih hranimo na strežnikih v EU.",
-            "Na otrokov zaslon pride samo preverjena vsebina; oglasov ni.",
-            "Vsaka partnerska ponudba je označena, vsaka provizija razkrita družini.",
+            "V otroški aplikaciji ne prikazujemo oglasov.",
+            "Podatkov ne prodajamo.",
+            "Ne dajemo zdravstvenih obljub.",
+            "Ne promoviramo pasem, ki jih veterinarska združenja odsvetujejo v oglaševanju.",
+            "Sponzorju ne dovolimo vpliva na vsebino in vire.",
           ],
         },
-        { type: "callout", title: "Pogovorimo se.", text: "Pogoje sodelovanja pripravljamo. Povejte nam, kdo ste in kaj imate v mislih.", tone: "dark" },
-        { type: "contact" },
+        { type: "partnerStats" },
+        {
+          type: "downloads",
+          id: "medijski-komplet",
+          heading: "Medijski komplet",
+          intro: "Kratek pregled PetPrep za partnerje in medije: kaj je PetPrep, komu je namenjen, oblike sodelovanja in primeri vsebin.",
+          items: [
+            { href: "/media/petprep-media-kit-sl.pdf", label: "Medijski komplet (slovenščina)", meta: "PDF" },
+            { href: "/media/petprep-media-kit-en.pdf", label: "Medijski komplet (angleščina)", meta: "PDF" },
+          ],
+        },
+        { type: "partnerForm" },
       ],
     },
     investors: {
@@ -635,6 +653,7 @@ const sl: Dictionary = {
                 "Kode: kode za prijavo in povabila so shranjene samo kot zgoščene vrednosti in potečejo.",
                 "Poročila o napakah v aplikaciji: če se aplikacija zatakne ali sesuje, lahko na naš strežnik v EU pošlje kratko tehnično poročilo (vrsta in besedilo napake, mesto v kodi, različica aplikacije in sistema, ime zaslona, vloga starš/otrok). Poročilo ne vsebuje imena, e-naslova, ID-ja uporabnika ali IP-naslova, se ne deli z nobeno tretjo osebo in se izbriše po 30 dneh.",
                 "Seznam za zgodnji dostop (ta spletna stran): vaš e-poštni naslov, jezik strani in čas prijave.",
+                "Obrazec za partnerje (ta spletna stran): ime podjetja, ime kontaktne osebe, e-poštni naslov in sporočilo. Podatke uporabimo samo za odgovor na povpraševanje, hranimo jih 12 mesecev, nato jih izbrišemo. Pravna podlaga je vaša privolitev, ki jo date s kljukico pred pošiljanjem.",
               ],
             },
             {
@@ -680,6 +699,7 @@ const sl: Dictionary = {
                 "Za delovanje in varnost storitve s poročili o napakah v aplikaciji, ki nam pomagajo odpraviti zatikanja in sesutja (zakoniti interes).",
                 "Za izpolnjevanje zakonskih obveznosti, na primer računovodstvo nakupov (zakonska obveznost).",
                 "Za obveščanje o začetku PetPrep po e-pošti, če ste se prijavili na zgodnji dostop (privolitev – odjava je mogoča v vsakem sporočilu).",
+                "Za odgovor na povpraševanje, poslano prek partnerskega obrazca (privolitev; podatke hranimo 12 mesecev).",
                 "Da razumemo, kako obiskovalci uporabljajo to spletno stran, z Google Analytics, samo če dovolite analitične piškotke (privolitev – spremenite jo lahko kadar koli v Nastavitvah piškotkov).",
               ],
             },
