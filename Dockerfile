@@ -10,6 +10,13 @@ WORKDIR /app
 ENV NEXT_TELEMETRY_DISABLED=1
 ARG NEXT_PUBLIC_SITE_URL=https://petprep.si
 ENV NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL}
+# Gift voucher (M6-S01): inlined at build time. Empty = off / defaults (README → Gift voucher).
+ARG NEXT_PUBLIC_FEATURE_GIFT=
+ENV NEXT_PUBLIC_FEATURE_GIFT=${NEXT_PUBLIC_FEATURE_GIFT}
+ARG NEXT_PUBLIC_LS_GIFT_URL=
+ENV NEXT_PUBLIC_LS_GIFT_URL=${NEXT_PUBLIC_LS_GIFT_URL}
+ARG NEXT_PUBLIC_PETPREP_API_URL=
+ENV NEXT_PUBLIC_PETPREP_API_URL=${NEXT_PUBLIC_PETPREP_API_URL}
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 # /investors prerenders the "12 Weeks" episode and view counts at build time; the read-only YouTube key

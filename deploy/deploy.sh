@@ -52,6 +52,10 @@ ROOT="${WEBSITE_ROOT:-/opt/petprep/website}"
 IMAGE="petprep-website"
 NETWORK="${API_NETWORK:-backend_petprep-network}"
 SITE_URL="${NEXT_PUBLIC_SITE_URL:-https://petprep.si}"
+# Gift voucher build-time switches (M6-S01): empty = off / defaults.
+FEATURE_GIFT="${NEXT_PUBLIC_FEATURE_GIFT:-}"
+LS_GIFT_URL="${NEXT_PUBLIC_LS_GIFT_URL:-}"
+API_URL="${NEXT_PUBLIC_PETPREP_API_URL:-}"
 COMPOSE=(docker compose -f "${SRC}/deploy/compose.yaml")
 SMOKE="petprep-website-smoke"
 # Release images (DISK above): the local tags and the GHCR digest-pulled images — nothing else.
@@ -196,6 +200,9 @@ else
   log "1/5 Building ${IMAGE}:next (commit ${SHA}) — needs ~2 GB free RAM"
   docker build --pull \
     --build-arg NEXT_PUBLIC_SITE_URL="${SITE_URL}" \
+    --build-arg NEXT_PUBLIC_FEATURE_GIFT="${FEATURE_GIFT}" \
+    --build-arg NEXT_PUBLIC_LS_GIFT_URL="${LS_GIFT_URL}" \
+    --build-arg NEXT_PUBLIC_PETPREP_API_URL="${API_URL}" \
     --label "org.opencontainers.image.revision=${SHA}" \
     -t "${IMAGE}:next" "${SRC}"
 fi

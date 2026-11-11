@@ -1,0 +1,163 @@
+/*
+ * Printable gift voucher (M6-S01). Everything inside .voucher-wrap is sized in container-width units (cqw),
+ * so the same markup is the on-screen preview and the A4 print: in print the wrapper is 190 mm wide.
+ * Print: A4 portrait on a named page without margins, two vouchers (148.5 mm each) with a dashed fold line.
+ */
+.voucher-wrap {
+  container-type: inline-size;
+  width: 100%;
+}
+.voucher {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  aspect-ratio: 190 / 130.5;
+  overflow: hidden;
+  border: 0.35cqw solid #121614;
+  border-radius: 3cqw;
+  background: #fff;
+  color: #121614;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.voucher-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #7fe0b4;
+  padding: 2cqw;
+}
+.voucher-art img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+.voucher-body {
+  display: flex;
+  flex-direction: column;
+  padding: 3.4cqw 4cqw 3.2cqw;
+  min-width: 0;
+}
+.voucher-logo {
+  height: 4.6cqw;
+  width: auto;
+  align-self: flex-start;
+}
+.voucher-kind {
+  margin-top: 2.2cqw;
+  font-size: 1.9cqw;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #1a7a55;
+}
+.voucher-title {
+  margin-top: 0.4cqw;
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  font-size: 5.4cqw;
+}
+.voucher-line {
+  margin-top: 1cqw;
+  font-size: 2cqw;
+  color: #5a635d;
+}
+.voucher-code-box {
+  margin-top: 2.4cqw;
+  border: 0.3cqw solid #121614;
+  border-radius: 1.6cqw;
+  background: #ddf6ea;
+  padding: 1.2cqw 2cqw 1.4cqw;
+}
+.voucher-code-label {
+  font-size: 1.7cqw;
+  font-weight: 600;
+  color: #1a7a55;
+}
+.voucher-code {
+  margin-top: 0.3cqw;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+}
+.voucher-meta {
+  margin-top: 2cqw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4cqw 3cqw;
+  font-size: 2cqw;
+}
+.voucher-note {
+  margin-top: 0.8cqw;
+  font-size: 1.7cqw;
+  color: #5a635d;
+}
+.voucher-fields {
+  margin-top: auto;
+  display: flex;
+  gap: 3cqw;
+  padding-top: 2cqw;
+}
+.voucher-fields p {
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  gap: 1.2cqw;
+  font-size: 2.1cqw;
+  font-weight: 600;
+}
+.voucher-fields i {
+  flex: 1;
+  border-bottom: 0.25cqw solid #121614;
+  height: 3.6cqw;
+}
+
+/* Sheet: one voucher on screen, two in print. */
+.voucher-sheet {
+  display: block;
+}
+.voucher-slot + .voucher-slot {
+  display: none;
+}
+
+@page voucher {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+  .voucher-sheet.print-sheet {
+    page: voucher;
+    display: block !important;
+    width: 210mm !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    break-inside: avoid;
+  }
+  .voucher-slot {
+    display: block !important;
+    box-sizing: border-box;
+    width: 210mm;
+    height: 148.5mm;
+    padding: 9mm 10mm;
+    break-inside: avoid;
+  }
+  .voucher-slot + .voucher-slot {
+    border-top: 0.3mm dashed #777;
+  }
+  .voucher-sheet .voucher-art img {
+    max-height: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .voucher-sheet .voucher-logo {
+    height: 4.6cqw !important;
+    width: auto !important;
+    max-height: none !important;
+  }
+}
