@@ -1,10 +1,13 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { SearchSelect } from "./SearchSelect";
 
 /**
  * Vets by country (M6-K1, David 2026-10-31): every country for every language (a Slovenian family on
  * holiday in Spain needs Spain), filters by country, region and "24 h only", search by town or name.
+ * Country first (David 2026-11-11): nothing is listed until a country is chosen (the page's own country is
+ * preselected, none on English); country and region are searchable selects.
  * Data: care-knowledge.json → vets (pet-prep docs/research/care/vets/<CC>.json), each entry sourced.
  */
 export type VetEntry = {
@@ -27,6 +30,10 @@ export type VetEntry = {
 export type VetCopy = {
   country: string;
   all: string;
+  chooseCountry: string;
+  choosePrompt: string;
+  typeToSearch: string;
+  noMatch: string;
   region: string;
   allRegions: string;
   search: string;
@@ -58,13 +65,13 @@ export function VetDirectory({ entries, copy, defaultCountry }: { entries: VetEn
   const [only24, setOnly24] = useState(false);
 
   const regions = useMemo(
-    () => [...new Set(entries.filter((e) => !country || e.country === country).map((e) => e.region).filter((r): r is string => !!r))].sort((a, b) => a.localeCompare(b)),
+    () => [...new Set(entries.filter((e) => e.country === country).map((e) => e.region).filter((r): r is string => !!r))].sort((a, b) => a.localeCompare(b)),
     [entries, country],
   );
   const list = useMemo(() => {
     const nq = norm(q.trim());
     return entries
-      .filter((e) => (!country || e.country === country) && (!region || e.region === region) && (!only24 || e.emergency_24h || e.kind !== "clinic"))
+      .filter((e) => !!country && e.country === country && (!region || e.region === region) && (!only24 || e.emergency_24h || e.kind !== "clinic"))
       .filter((e) => !nq || norm([e.name, e.city, e.region, e.address].filter(Boolean).join(" ")).includes(nq))
       .sort((a, b) => Number(b.kind !== "clinic") - Number(a.kind !== "clinic") || Number(b.emergency_24h) - Number(a.emergency_24h) || (a.city ?? "").localeCompare(b.city ?? "") || a.name.localeCompare(b.name));
   }, [entries, country, region, q, only24]);
@@ -73,29 +80,38 @@ export function VetDirectory({ entries, copy, defaultCountry }: { entries: VetEn
   return (
     <div className="flex flex-col gap-5">
       <div className="grid gap-3 sm:grid-cols-[1fr_1fr_1.4fr_auto] sm:items-end">
-        <label className="flex flex-col gap-1 text-sm font-semibold">
-          {copy.country}
-          <select className={field} value={country} onChange={(e) => { setCountry(e.target.value); setRegion(""); }}>
-            <option value="">{copy.all} ({entries.length})</option>
-            {countries.map(([c, n]) => <option key={c} value={c}>{copy.countries[c] ?? c} ({n})</option>)}
-          </select>
-        </label>
-        <label className="flex flex-col gap-1 text-sm font-semibold">
-          {copy.region}
-          <select className={field} value={region} onChange={(e) => setRegion(e.target.value)} disabled={!regions.length}>
-            <option value="">{copy.allRegions}</option>
-            {regions.map((r) => <option key={r} value={r}>{r}</option>)}
-          </select>
-        </label>
+        <SearchSelect
+          label={copy.country}
+          value={country}
+          onChange={(c) => { setCountry(c); setRegion(""); }}
+          placeholder={copy.chooseCountry}
+          searchPlaceholder={copy.typeToSearch}
+          noMatch={copy.noMatch}
+          options={countries.map(([c, n]) => ({ value: c, label: copy.countries[c] ?? c, hint: String(n) }))}
+        />
+        <SearchSelect
+          label={copy.region}
+          value={region}
+          onChange={setRegion}
+          placeholder={copy.allRegions}
+          searchPlaceholder={copy.typeToSearch}
+          noMatch={copy.noMatch}
+          disabled={!country || !regions.length}
+          options={[{ value: "", label: copy.allRegions }, ...regions.map((r) => ({ value: r, label: r }))]}
+        />
         <label className="flex flex-col gap-1 text-sm font-semibold">
           {copy.search}
-          <input className={field} type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder={copy.searchPlaceholder} />
+          <input className={`${field} disabled:opacity-50`} type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder={copy.searchPlaceholder} disabled={!country} />
         </label>
-        <label className="flex h-12 items-center gap-2 rounded-xl border border-line bg-white px-3 text-[15px] font-semibold">
-          <input type="checkbox" checked={only24} onChange={(e) => setOnly24(e.target.checked)} className="h-5 w-5 accent-graphite" />
+        <label className="flex h-12 items-center gap-2 rounded-xl border border-line bg-white px-3 text-[15px] font-semibold has-[:disabled]:opacity-50">
+          <input type="checkbox" checked={only24} onChange={(e) => setOnly24(e.target.checked)} className="h-5 w-5 accent-graphite" disabled={!country} />
           {copy.only24h}
         </label>
       </div>
+      {!country ? (
+        <p className="rounded-[18px] bg-white p-5">{copy.choosePrompt}</p>
+      ) : (
+      <>
       <p className="text-sm text-muted" aria-live="polite">{copy.results.replace("{n}", String(list.length))}</p>
       {list.length ? (
         <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -120,6 +136,8 @@ export function VetDirectory({ entries, copy, defaultCountry }: { entries: VetEn
         </ul>
       ) : (
         <p className="rounded-[18px] bg-white p-5">{copy.none}</p>
+      )}
+      </>
       )}
     </div>
   );
