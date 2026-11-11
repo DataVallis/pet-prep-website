@@ -35,6 +35,8 @@ export const site = {
     hello: "hello@petprep.si",
     privacy: "privacy@petprep.si",
     partners: "partners@petprep.si",
+    /** Partner inquiry form fallback (M6-S03) when the API is unreachable. */
+    david: "david@petprep.si",
     investors: "investors@petprep.si",
     /** Contact for questions about the terms of use (David, 2026-10-24). */
     terms: "david@petprep.si",
