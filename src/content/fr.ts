@@ -377,7 +377,7 @@ const fr: Dictionary = {
           items: [
             "Les enfants se connectent avec un code – sans e-mail, sans mot de passe, sans nom de famille.",
             "Nous enregistrons un surnom et, si vous l’ajoutez, une année de naissance. Rien d’autre sur votre enfant.",
-            "Les notifications ne contiennent jamais le nom de votre enfant ni celui de l’animal, car elles peuvent s’afficher sur l’écran verrouillé.",
+            "Les notifications ne contiennent jamais le nom de votre enfant, car elles peuvent s’afficher sur l’écran verrouillé ; leur titre peut être le nom de l’animal, si vous lui en avez donné un.",
             "Les pas proviennent d’Apple Santé (iPhone) ou de Health Connect (Android) si vous l’autorisez (en lecture seule), et du capteur de mouvement du téléphone lorsqu’il est disponible. PetPrep n’utilise pas le GPS et ne suit pas la localisation.",
             "Pas de publicité, pas d’échanges avec des inconnus, des serveurs dans l’UE.",
           ],
@@ -701,7 +701,7 @@ const fr: Dictionary = {
               items: [
                 "Hébergement : Hetzner Online (serveurs dans l’UE).",
                 "Génération d’images et de vidéos par IA : fal.ai (ne reçoit que la description de l’animal).",
-                "Notifications push : Apple Push Notification service et Firebase Cloud Messaging via Expo ; les notifications ne contiennent aucun nom.",
+                "Notifications push : Apple Push Notification service et Firebase Cloud Messaging via Expo ; le titre d’une notification peut être le nom de l’animal, si vous lui en avez donné un, mais les notifications ne contiennent jamais le nom de l’enfant.",
                 "Achats : Apple App Store et Google Play ; gestion des achats via RevenueCat lorsque les achats seront activés.",
                 "E-mails d’accès anticipé : Klaviyo (ne reçoit que l’adresse e-mail et la langue que vous indiquez sur ce site web).",
                 "Consentement aux cookies du site web : Kockica (enregistre votre choix de consentement).",
@@ -825,7 +825,7 @@ const fr: Dictionary = {
             {
               heading: "7. Notifications",
               paragraphs: [
-                "Si vous les autorisez sur l’appareil, l’application envoie des notifications push : des rappels à la personne qui s’occupe de l’animal, des alertes aux parents quand la nourriture, l’eau ou la propreté d’un animal tombe à zéro, et des informations sur une maladie, une fin de partie et la fin du Challenge. Les notifications ne contiennent jamais le nom de l’enfant ni celui de l’animal et ne sont pas envoyées pendant les heures calmes. Vous pouvez retirer l’autorisation à tout moment dans les réglages de l’appareil ; sans notifications, on risque de manquer des routines, ce qui affecte le jeu et le score. Les parents reçoivent en outre, au plus une fois par animal gratuit, un rappel au sujet du Challenge lorsque quelqu’un s’en est occupé au moins 5 de ses 7 premiers jours.",
+                "Si vous les autorisez sur l’appareil, l’application envoie des notifications push : des rappels à la personne qui s’occupe de l’animal, des alertes aux parents quand la nourriture, l’eau ou la propreté d’un animal tombe à zéro, et des informations sur une maladie, une fin de partie et la fin du Challenge. Le titre d’une notification peut être le nom de l’animal, si vous lui en avez donné un ; les notifications ne contiennent jamais le nom de l’enfant et ne sont pas envoyées pendant les heures calmes. Vous pouvez retirer l’autorisation à tout moment dans les réglages de l’appareil ; sans notifications, on risque de manquer des routines, ce qui affecte le jeu et le score. Les parents reçoivent en outre, au plus une fois par animal gratuit, un rappel au sujet du Challenge lorsque quelqu’un s’en est occupé au moins 5 de ses 7 premiers jours.",
               ],
             },
             {
@@ -899,7 +899,7 @@ const fr: Dictionary = {
             { title: "Aucun suivi de localisation", text: "Les promenades comptent uniquement les pas – depuis Apple Santé ou Health Connect (avec votre autorisation, en lecture seule) ou depuis le capteur de mouvement du téléphone. Le GPS n’est pas utilisé." },
             { title: "Mises à jour en direct privées", text: "Les mises à jour en temps réel n’atteignent que les enfants qui s’occupent de cet animal et les parents de la même famille." },
             { title: "Médias vérifiés", text: "Seules les images et vidéos produites pour PetPrep et vérifiées par notre serveur sont affichées, depuis notre stockage dans l’UE." },
-            { title: "Notifications sans nom", text: "Les notifications n’incluent jamais le nom de l’enfant ni celui de l’animal, car elles peuvent s’afficher sur l’écran verrouillé." },
+            { title: "Pas de nom d’enfant dans les notifications", text: "Les notifications n’incluent jamais le nom de l’enfant, car elles peuvent s’afficher sur l’écran verrouillé. Seul le nom de l’animal, si vous lui en avez donné un, peut apparaître comme titre." },
           ],
         },
         {

@@ -377,7 +377,7 @@ const da: Dictionary = {
           items: [
             "Børn logger ind med en kode – ingen e-mail, ingen adgangskode, intet efternavn.",
             "Vi gemmer et kaldenavn og, hvis du tilføjer det, et fødselsår. Intet andet om dit barn.",
-            "Notifikationer indeholder aldrig dit barns eller kæledyrets navn fordi de kan blive vist på låseskærmen.",
+            "Notifikationer indeholder aldrig dit barns navn fordi de kan blive vist på låseskærmen; titlen kan være kæledyrets navn, hvis du har givet det et.",
             "Skridtene kommer fra Apple Sundhed (iPhone) eller Health Connect (Android) hvis du giver lov (kun læseadgang), og fra telefonens bevægelsessensor hvor den findes. PetPrep bruger ikke GPS og sporer ikke placering.",
             "Ingen reklamer, ingen chat med fremmede, servere i EU.",
           ],
@@ -701,7 +701,7 @@ const da: Dictionary = {
               items: [
                 "Hosting: Hetzner Online (servere i EU).",
                 "AI-generering af billeder og video: fal.ai (modtager kun beskrivelsen af kæledyret).",
-                "Push-notifikationer: Apple Push Notification service og Firebase Cloud Messaging via Expo; notifikationerne indeholder ingen navne.",
+                "Push-notifikationer: Apple Push Notification service og Firebase Cloud Messaging via Expo; en notifikations titel kan være kæledyrets navn, hvis du har givet det et, men notifikationerne indeholder aldrig barnets navn.",
                 "Køb: Apple App Store og Google Play; administration af køb via RevenueCat når købsfunktionen bliver aktiveret.",
                 "E-mails om tidlig adgang: Klaviyo (modtager kun den e-mailadresse og det sprog du indsender på dette websted).",
                 "Cookiesamtykke på webstedet: Kockica (gemmer dit samtykkevalg).",
@@ -825,7 +825,7 @@ const da: Dictionary = {
             {
               heading: "7. Notifikationer",
               paragraphs: [
-                "Hvis du tillader det på enheden, sender appen push-notifikationer: påmindelser til passeren, advarsler til forældre når et kæledyr mangler mad, vand eller renlighed, og besked om sygdom, game over og udfordringens afslutning. Notifikationer indeholder aldrig barnets eller kæledyrets navn og sendes ikke i de stille timer. Du kan til enhver tid trække tilladelsen tilbage i enhedens indstillinger; uden notifikationer kan en passer gå glip af rutiner, hvilket påvirker spillet og scoren. Forældre får desuden højst én gang pr. gratis kæledyr en påmindelse om udfordringen, når nogen har passet det på mindst 5 af dets første 7 dage.",
+                "Hvis du tillader det på enheden, sender appen push-notifikationer: påmindelser til passeren, advarsler til forældre når et kæledyr mangler mad, vand eller renlighed, og besked om sygdom, game over og udfordringens afslutning. En notifikations titel kan være kæledyrets navn, hvis du har givet det et; notifikationer indeholder aldrig barnets navn og sendes ikke i de stille timer. Du kan til enhver tid trække tilladelsen tilbage i enhedens indstillinger; uden notifikationer kan en passer gå glip af rutiner, hvilket påvirker spillet og scoren. Forældre får desuden højst én gang pr. gratis kæledyr en påmindelse om udfordringen, når nogen har passet det på mindst 5 af dets første 7 dage.",
               ],
             },
             {
@@ -899,7 +899,7 @@ const da: Dictionary = {
             { title: "Ingen sporing af placering", text: "Gåture tæller kun skridt – fra Apple Sundhed eller Health Connect (med din tilladelse, kun læseadgang) eller fra telefonens bevægelsessensor. GPS bruges ikke." },
             { title: "Private liveopdateringer", text: "Opdateringer i realtid når kun frem til de børn der passer det pågældende kæledyr, og til forældrene i samme familie." },
             { title: "Kontrollerede medier", text: "Kun billeder og videoer der er lavet til PetPrep og kontrolleret af vores server, bliver vist – fra vores lagring i EU." },
-            { title: "Notifikationer uden navne", text: "Notifikationer indeholder aldrig barnets eller kæledyrets navn fordi de kan blive vist på en låseskærm." },
+            { title: "Notifikationer uden barnets navn", text: "Notifikationer indeholder aldrig barnets navn fordi de kan blive vist på en låseskærm. Kun kæledyrets navn kan blive vist som titel, hvis du har givet det et." },
           ],
         },
         {

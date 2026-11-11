@@ -377,7 +377,7 @@ const nb: Dictionary = {
           items: [
             "Barn logger inn med en kode – ingen e-post, ikke noe passord, ikke noe etternavn.",
             "Vi lagrer et kallenavn og, hvis du legger det til, et fødselsår. Ikke noe annet om barnet ditt.",
-            "Varsler inneholder aldri navnet på barnet eller kjæledyret, fordi de kan vises på låseskjermen.",
+            "Varsler inneholder aldri navnet på barnet, fordi de kan vises på låseskjermen; tittelen kan være kjæledyrets navn, hvis du har gitt det et.",
             "Skrittene kommer fra Apple Helse (iPhone) eller Health Connect (Android) hvis du tillater det (bare lesing), og fra telefonens bevegelsessensor der den finnes. PetPrep bruker ikke GPS og sporer ikke posisjon.",
             "Ingen reklame, ingen chat med fremmede, servere i EU.",
           ],
@@ -701,7 +701,7 @@ const nb: Dictionary = {
               items: [
                 "Hosting: Hetzner Online (servere i EU).",
                 "Generering av AI-bilder og -videoer: fal.ai (mottar bare beskrivelsen av kjæledyret).",
-                "Push-varsler: Apple Push Notification service og Firebase Cloud Messaging via Expo; varslene inneholder ingen navn.",
+                "Push-varsler: Apple Push Notification service og Firebase Cloud Messaging via Expo; tittelen på et varsel kan være kjæledyrets navn, hvis du har gitt det et, men varslene inneholder aldri navnet på barnet.",
                 "Kjøp: Apple App Store og Google Play; administrasjon av kjøp via RevenueCat når kjøp blir tilgjengelige.",
                 "E-post om tidlig tilgang: Klaviyo (mottar bare e-postadressen og språket du sender inn på dette nettstedet).",
                 "Samtykke til informasjonskapsler på nettstedet: Kockica (lagrer samtykkevalget ditt).",
@@ -825,7 +825,7 @@ const nb: Dictionary = {
             {
               heading: "7. Varsler",
               paragraphs: [
-                "Hvis du tillater det på enheten, sender appen push-varsler: påminnelser til passeren, varsler til foreldre når et kjæledyr mangler mat, vann eller renslighet, og beskjeder om sykdom, game over og slutten på utfordringen. Varsler inneholder aldri navnet på barnet eller kjæledyret og sendes ikke i stille timer. Du kan når som helst trekke tilbake tillatelsen i innstillingene på enheten; uten varsler kan en passer gå glipp av rutiner, noe som påvirker spillet og scoren. Foreldre får dessuten høyst én gang per gratis kjæledyr en påminnelse om utfordringen når noen har stelt det minst 5 av de første 7 dagene.",
+                "Hvis du tillater det på enheten, sender appen push-varsler: påminnelser til passeren, varsler til foreldre når et kjæledyr mangler mat, vann eller renslighet, og beskjeder om sykdom, game over og slutten på utfordringen. Tittelen på et varsel kan være kjæledyrets navn, hvis du har gitt det et; varsler inneholder aldri navnet på barnet og sendes ikke i stille timer. Du kan når som helst trekke tilbake tillatelsen i innstillingene på enheten; uten varsler kan en passer gå glipp av rutiner, noe som påvirker spillet og scoren. Foreldre får dessuten høyst én gang per gratis kjæledyr en påminnelse om utfordringen når noen har stelt det minst 5 av de første 7 dagene.",
               ],
             },
             {
@@ -899,7 +899,7 @@ const nb: Dictionary = {
             { title: "Ingen posisjonssporing", text: "Turer teller bare skritt – fra Apple Helse eller Health Connect (med din tillatelse, bare lesing) eller fra telefonens bevegelsessensor. GPS brukes ikke." },
             { title: "Private oppdateringer i sanntid", text: "Oppdateringer i sanntid når bare barna som steller det kjæledyret, og foreldrene i samme familie." },
             { title: "Kontrollerte medier", text: "Bare bilder og videoer som er laget for PetPrep og kontrollert av serveren vår, vises – fra vår lagring i EU." },
-            { title: "Varsler uten navn", text: "Varsler inneholder aldri navnet på barnet eller kjæledyret, fordi de kan vises på låseskjermen." },
+            { title: "Varsler uten barnets navn", text: "Varsler inneholder aldri navnet på barnet, fordi de kan vises på låseskjermen. Bare kjæledyrets navn kan vises som tittel, hvis du har gitt det et." },
           ],
         },
         {

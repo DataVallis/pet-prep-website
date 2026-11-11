@@ -377,7 +377,7 @@ const nl: Dictionary = {
           items: [
             "Kinderen loggen in met een code – geen e-mailadres, geen wachtwoord, geen achternaam.",
             "We bewaren een bijnaam en, als je die invult, een geboortejaar. Verder niets over je kind.",
-            "Meldingen bevatten nooit de naam van je kind of je huisdier, omdat ze op het vergrendelscherm kunnen verschijnen.",
+            "Meldingen bevatten nooit de naam van je kind, omdat ze op het vergrendelscherm kunnen verschijnen; als titel kan de naam van je huisdier staan, als je het een naam hebt gegeven.",
             "Stappen komen – met jouw toestemming en alleen-lezen – uit Apple Gezondheid (iPhone) of Health Connect (Android), en uit de bewegingssensor van de telefoon, waar die beschikbaar is. PetPrep gebruikt geen gps en volgt geen locatie.",
             "Geen advertenties, geen chat met vreemden, servers in de EU.",
           ],
@@ -701,7 +701,7 @@ const nl: Dictionary = {
               items: [
                 "Hosting: Hetzner Online (servers in de EU).",
                 "Genereren van AI-afbeeldingen en -video’s: fal.ai (ontvangt alleen de beschrijving van het huisdier).",
-                "Pushmeldingen: Apple Push Notification service en Firebase Cloud Messaging via Expo; meldingen bevatten geen namen.",
+                "Pushmeldingen: Apple Push Notification service en Firebase Cloud Messaging via Expo; de titel van een melding kan de naam van het huisdier zijn, als je het een naam hebt gegeven, maar meldingen bevatten nooit de naam van het kind.",
                 "Aankopen: Apple App Store en Google Play; beheer van aankopen via RevenueCat zodra aankopen beschikbaar worden.",
                 "E-mails over vroege toegang: Klaviyo (ontvangt alleen het e-mailadres en de taal die je op deze website invult).",
                 "Cookietoestemming op de website: Kockica (slaat je toestemmingskeuze op).",
@@ -825,7 +825,7 @@ const nl: Dictionary = {
             {
               heading: "7. Meldingen",
               paragraphs: [
-                "Als je dat op het apparaat toestaat, stuurt de app pushmeldingen: herinneringen aan de verzorger, waarschuwingen aan ouders als een huisdier geen eten of water heeft of niet schoon is, en berichten over ziekte, game over en het einde van de challenge. Meldingen bevatten nooit de naam van het kind of het huisdier en worden niet tijdens stille uren verstuurd. Je kunt de toestemming op elk moment intrekken in de instellingen van het apparaat; zonder meldingen kan een verzorger routines missen, en dat heeft invloed op het spel en de score. Ouders krijgen daarnaast hoogstens één keer per gratis huisdier een herinnering over de challenge, wanneer iemand er in minstens 5 van de eerste 7 dagen voor heeft gezorgd.",
+                "Als je dat op het apparaat toestaat, stuurt de app pushmeldingen: herinneringen aan de verzorger, waarschuwingen aan ouders als een huisdier geen eten of water heeft of niet schoon is, en berichten over ziekte, game over en het einde van de challenge. De titel van een melding kan de naam van het huisdier zijn, als je het een naam hebt gegeven; meldingen bevatten nooit de naam van het kind en worden niet tijdens stille uren verstuurd. Je kunt de toestemming op elk moment intrekken in de instellingen van het apparaat; zonder meldingen kan een verzorger routines missen, en dat heeft invloed op het spel en de score. Ouders krijgen daarnaast hoogstens één keer per gratis huisdier een herinnering over de challenge, wanneer iemand er in minstens 5 van de eerste 7 dagen voor heeft gezorgd.",
               ],
             },
             {
@@ -899,7 +899,7 @@ const nl: Dictionary = {
             { title: "Geen locatievolging", text: "Wandelingen tellen alleen stappen – uit Apple Gezondheid of Health Connect (met je toestemming, alleen lezen) of uit de bewegingssensor van de telefoon. Gps wordt niet gebruikt." },
             { title: "Besloten live-updates", text: "Realtime updates bereiken alleen de kinderen die voor dat huisdier zorgen en de ouders van hetzelfde gezin." },
             { title: "Gecontroleerde media", text: "Alleen afbeeldingen en video’s die voor PetPrep zijn gemaakt en door onze server zijn gecontroleerd, worden getoond, vanuit onze opslag in de EU." },
-            { title: "Meldingen zonder namen", text: "Meldingen bevatten nooit de naam van het kind of het huisdier, omdat ze op het vergrendelscherm kunnen verschijnen." },
+            { title: "Geen kindernamen in meldingen", text: "Meldingen bevatten nooit de naam van het kind, omdat ze op het vergrendelscherm kunnen verschijnen. Alleen de naam van het huisdier kan als titel verschijnen, als je het een naam hebt gegeven." },
           ],
         },
         {

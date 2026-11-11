@@ -377,7 +377,7 @@ const en: Dictionary = {
           items: [
             "Children log in with a code — no email, no password, no surname.",
             "We store a nickname and, if you add it, a birth year. Nothing else about your child.",
-            "Notifications never contain your child's or pet's name, because they can appear on a lock screen.",
+            "Notifications never contain your child's name, because they can appear on a lock screen; their title may be your pet's name, if you gave it one.",
             "Steps come from Apple Health (iPhone) or Health Connect (Android) if you allow it (read-only), and from the phone's motion sensor where available. PetPrep does not use GPS or track location.",
             "No ads, no chat with strangers, servers in the EU.",
           ],
@@ -701,7 +701,7 @@ const en: Dictionary = {
               items: [
                 "Hosting: Hetzner Online (servers in the EU).",
                 "AI image and video generation: fal.ai (receives only the pet description).",
-                "Push notifications: Apple Push Notification service and Firebase Cloud Messaging via Expo; notifications contain no names.",
+                "Push notifications: Apple Push Notification service and Firebase Cloud Messaging via Expo; a notification's title may be the pet's name, if you gave it one, but notifications never contain the child's name.",
                 "Purchases: Apple App Store and Google Play; purchase management through RevenueCat when purchases go live.",
                 "Early access emails: Klaviyo (receives only the email address and language you submit on this website).",
                 "Website cookie consent: Kockica (stores your consent choice).",
@@ -825,7 +825,7 @@ const en: Dictionary = {
             {
               heading: "7. Notifications",
               paragraphs: [
-                "If you allow them on the device, the app sends push notifications: reminders to the carer, alerts to parents when a pet has no food, water or cleanliness, and news about illness, game over and the end of the challenge. Notifications never contain the child's or pet's name and are not sent during quiet hours. You can withdraw permission at any time in the device settings; without notifications a carer may miss routines, which affects the game and the score. Parents also get, at most once per free pet, a reminder about the challenge when someone has looked after it on at least 5 of its first 7 days.",
+                "If you allow them on the device, the app sends push notifications: reminders to the carer, alerts to parents when a pet has no food, water or cleanliness, and news about illness, game over and the end of the challenge. A notification's title may be the pet's name, if you gave it one; notifications never contain the child's name and are not sent during quiet hours. You can withdraw permission at any time in the device settings; without notifications a carer may miss routines, which affects the game and the score. Parents also get, at most once per free pet, a reminder about the challenge when someone has looked after it on at least 5 of its first 7 days.",
               ],
             },
             {
@@ -899,7 +899,7 @@ const en: Dictionary = {
             { title: "No location tracking", text: "Walks count steps only — from Apple Health or Health Connect (with your permission, read-only) or from the phone's motion sensor. GPS is not used." },
             { title: "Private live updates", text: "Real-time updates reach only the children who care for that pet and the parents of the same family." },
             { title: "Verified media", text: "Only images and videos produced for PetPrep and checked by our server are shown, from our storage in the EU." },
-            { title: "Name-free notifications", text: "Notifications never include the child's or pet's name, because they can appear on a lock screen." },
+            { title: "No child names in notifications", text: "Notifications never include the child's name, because they can appear on a lock screen. Only the pet's name, if you gave it one, may appear as the title." },
           ],
         },
         {

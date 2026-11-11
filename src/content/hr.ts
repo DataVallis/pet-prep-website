@@ -377,7 +377,7 @@ const hr: Dictionary = {
           items: [
             "Djeca se prijavljuju kodom – bez e-pošte, bez lozinke, bez prezimena.",
             "Pohranjujemo nadimak i, ako je dodaš, godinu rođenja. Ništa drugo o tvom djetetu.",
-            "Obavijesti nikad ne sadrže ime tvog djeteta ni ljubimca jer se mogu pojaviti na zaključanom zaslonu.",
+            "Obavijesti nikad ne sadrže ime tvog djeteta jer se mogu pojaviti na zaključanom zaslonu; u naslovu može biti ime ljubimca, ako ga ima.",
             "Koraci dolaze iz aplikacije Apple Health (iPhone) ili Health Connect (Android) ako to dopustiš (samo čitanje) te iz senzora pokreta na mobitelu, gdje je dostupan. PetPrep ne koristi GPS i ne prati lokaciju.",
             "Bez oglasa, bez dopisivanja s nepoznatima, poslužitelji u EU-u.",
           ],
@@ -701,7 +701,7 @@ const hr: Dictionary = {
               items: [
                 "Smještaj (hosting): Hetzner Online (poslužitelji u EU-u).",
                 "Generiranje slika i videozapisa s pomoću AI-ja: fal.ai (prima samo opis ljubimca).",
-                "Push obavijesti: Apple Push Notification service i Firebase Cloud Messaging putem servisa Expo; obavijesti ne sadrže imena.",
+                "Push obavijesti: Apple Push Notification service i Firebase Cloud Messaging putem servisa Expo; naslov obavijesti može biti ime ljubimca, ako ga ima, ali obavijesti nikad ne sadrže ime djeteta.",
                 "Kupnje: Apple App Store i Google Play; upravljanje kupnjama putem servisa RevenueCat kad kupnje budu pokrenute.",
                 "E-pošta za rani pristup: Klaviyo (prima samo adresu e-pošte i jezik koje uneseš na ovoj mrežnoj stranici).",
                 "Privola za kolačiće na mrežnoj stranici: Kockica (pohranjuje tvoj izbor u vezi s privolom).",
@@ -825,7 +825,7 @@ const hr: Dictionary = {
             {
               heading: "7. Obavijesti",
               paragraphs: [
-                "Ako ih dopustiš na uređaju, aplikacija šalje push obavijesti: podsjetnike njegovatelju, upozorenja roditeljima kad ljubimac nema hrane, vode ili čistoće te vijesti o bolesti, kraju igre i završetku izazova. Obavijesti nikad ne sadrže ime djeteta ni ljubimca i ne šalju se tijekom tihih sati. Dopuštenje možeš u svakom trenutku povući u postavkama uređaja; bez obavijesti njegovatelj može propustiti rutine, što utječe na igru i ocjenu. Roditelji osim toga najviše jednom po besplatnom ljubimcu dobivaju podsjetnik o izazovu kada se netko o njemu brinuo barem 5 od njegovih prvih 7 dana.",
+                "Ako ih dopustiš na uređaju, aplikacija šalje push obavijesti: podsjetnike njegovatelju, upozorenja roditeljima kad ljubimac nema hrane, vode ili čistoće te vijesti o bolesti, kraju igre i završetku izazova. Naslov obavijesti može biti ime ljubimca, ako ga ima; obavijesti nikad ne sadrže ime djeteta i ne šalju se tijekom tihih sati. Dopuštenje možeš u svakom trenutku povući u postavkama uređaja; bez obavijesti njegovatelj može propustiti rutine, što utječe na igru i ocjenu. Roditelji osim toga najviše jednom po besplatnom ljubimcu dobivaju podsjetnik o izazovu kada se netko o njemu brinuo barem 5 od njegovih prvih 7 dana.",
               ],
             },
             {
@@ -899,7 +899,7 @@ const hr: Dictionary = {
             { title: "Bez praćenja lokacije", text: "Šetnje broje samo korake – iz aplikacije Apple Health ili Health Connect (uz tvoje dopuštenje, samo čitanje) ili iz senzora pokreta na mobitelu. GPS se ne koristi." },
             { title: "Privatna ažuriranja uživo", text: "Ažuriranja u stvarnom vremenu stižu samo djeci koja se brinu o tom ljubimcu i roditeljima iz iste obitelji." },
             { title: "Provjereni mediji", text: "Prikazuju se samo slike i videozapisi izrađeni za PetPrep i provjereni na našem poslužitelju, iz naše pohrane u EU-u." },
-            { title: "Obavijesti bez imena", text: "Obavijesti nikad ne sadrže ime djeteta ni ljubimca jer se mogu pojaviti na zaključanom zaslonu." },
+            { title: "Obavijesti bez imena djeteta", text: "Obavijesti nikad ne sadrže ime djeteta jer se mogu pojaviti na zaključanom zaslonu. Kao naslov može se prikazati samo ime ljubimca, ako ga ima." },
           ],
         },
         {
