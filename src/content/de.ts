@@ -77,11 +77,12 @@ const de: Dictionary = {
       name: "Mischling",
       text: "Die vollständige Simulation mit einem lebensechten Mischling.",
       features: [
-        "12-wöchige Simulation mit echten Konsequenzen",
+        "Tägliche Pflege mit echten Konsequenzen",
         "Echte Spaziergänge, gezählt in echten Schritten vom Handy",
         "Eltern-Dashboard, Ampel und Care Score",
         "Ruhezeiten und eine Pause-Taste",
         "Fotorealistisches Bild Ihres Haustiers und kurze Videos",
+        "Die 12-wöchige Challenge später hinzufügen – mit demselben Haustier",
       ],
       cta: "Kostenlos starten",
     },
@@ -92,7 +93,7 @@ const de: Dictionary = {
       text: "Für Familien, die das volle Erlebnis und am Ende ein Zertifikat möchten.",
       features: [
         "Alles aus dem Mischling-Tarif",
-        "Anspruchsvolle Rassen wie der [Border Collie](breed:border_collie)",
+        "Jede Rasse wie der [Border Collie](breed:border_collie) – oder der Mischling und die Hauskatze",
         "Die Stimmungen Ihres Haustiers als KI-Videos",
         "Verantwortungszertifikat",
         "Ein Preis, wenn Geschwister sich ein Haustier teilen",
@@ -219,7 +220,7 @@ const de: Dictionary = {
         },
       ],
       how: "So starten Sie: Legen Sie ein Konto als Elternteil an, fügen Sie sich selbst als Betreuerprofil hinzu und melden Sie sich mit dem 6-stelligen Code an – auf demselben oder einem anderen Handy.",
-      note: "Heute verfügbar: der kostenlose Mischling und die Hauskatze sowie in der 12-wöchigen Challenge jede Hunde- und Katzenrasse aus dem [Tierregister](page:animals).",
+      note: "Heute verfügbar: der kostenlose Mischling und die Hauskatze sowie die 12-wöchige Challenge mit einem der beiden oder mit jeder Hunde- und Katzenrasse aus dem [Tierregister](page:animals).",
       link: "So nutzen Sie PetPrep allein",
     },
     after: {
@@ -429,11 +430,11 @@ const de: Dictionary = {
       meta: {
         title: "Preise – PetPrep kostenlos starten, 49,99 € für die 12-wöchige Challenge",
         description:
-          "Der Mischling ist für immer kostenlos. Die 12-wöchige PetPrep Challenge kostet 49,99 € pro Haustier als Einmalkauf. Ein Preis für Geschwister, die sich ein Haustier teilen.",
+          "Der Mischling ist für immer kostenlos. Die 12-wöchige PetPrep Challenge kostet 49,99 € pro Haustier als Einmalkauf. Ein Preis für Geschwister, die sich ein Haustier teilen. Auch als Upgrade Ihres kostenlosen Haustiers.",
       },
       eyebrow: "Preise",
       title: "Einfache, faire Preise.",
-      lead: "Starten Sie kostenlos mit einem Mischling. Kaufen Sie die vollständige 12-wöchige Challenge, wenn Sie bereit sind – die 12 Wochen beginnen mit dem Kauf.",
+      lead: "Starten Sie kostenlos mit einem Mischling. Kaufen Sie die vollständige 12-wöchige Challenge, wenn Sie bereit sind – die 12 Wochen beginnen mit dem Kauf. Das geht auch mit dem kostenlosen Haustier, um das sich Ihr Kind schon kümmert.",
       blocks: [
         { type: "pricing" },
         {
@@ -457,7 +458,10 @@ const de: Dictionary = {
           heading: "Fragen zu den Preisen",
           items: [
             { q: "Ist die kostenlose Version wirklich kostenlos?", a: "Ja. Der Mischling ist für immer kostenlos, mit der vollständigen Simulation, echten Spaziergängen und dem Eltern-Dashboard." },
-            { q: "Was ist in der Challenge enthalten?", a: "Anspruchsvolle Rassen wie der [Border Collie](breed:border_collie), die Stimmungen Ihres Haustiers als KI-Videos, das Verantwortungszertifikat am Ende und Zugang für beide Elternteile." },
+            { q: "Was ist in der Challenge enthalten?", a: "Anspruchsvolle Rassen wie der [Border Collie](breed:border_collie), die Stimmungen Ihres Haustiers als KI-Videos, das Verantwortungszertifikat am Ende und Zugang für beide Elternteile. Sie können sie auch mit dem Mischling oder der Hauskatze wählen." },
+            { q: "Können wir das kostenlose Haustier, das mein Kind schon hat, upgraden?", a: "Ja, solange der kostenlose Mischling oder die Hauskatze noch im Spiel ist. Starten Sie die Challenge in der Eltern-App auf der Karte Ihres Kindes. Das Haustier bleibt dasselbe: Name, Aussehen, Alter und gelernte Kommandos. Die 12 Wochen, der Care Score und das Zertifikat zählen ab dem Kauf; frühere Tage bleiben im Verlauf, als Tage vor der Challenge markiert, und zählen nicht. Der Preis ist derselbe: 49,99 € einmalig, kein Abo. Mischlinge, die in einer frühen App-Version angelegt wurden, lassen sich nicht upgraden; die App sagt Ihnen, ob das auf Ihren zutrifft." },
+            { q: "Kann ein Challenge-Haustier zurück in den kostenlosen Plan?", a: "Nicht auf Wunsch. Ein Mischling oder eine Hauskatze kehrt nur dann in den kostenlosen Plan zurück, wenn der Store den Kauf erstattet; die Challenge endet dann ohne Zertifikat. Kaufen Sie die Challenge später erneut, beginnen neue 12 Wochen." },
+            { q: "Drängt mich die App zum Kauf?", a: "Nein. Hat sich Ihr Kind an mindestens 5 der ersten 7 Tage um ein kostenloses Haustier gekümmert, erhalten Sie eine Benachrichtigung und eine Karte in Ihrer Übersicht zur Challenge – einmal pro Haustier, nie während der Ruhezeiten. Ihr Kind sieht weder Preise noch diese Erinnerung." },
             { q: "Zahlen Geschwister doppelt?", a: "Nein. Kinder, die sich ein Haustier teilen, zahlen einen Preis. Ein zweites Haustier in der Familie ist eine eigene Challenge." },
             { q: "Wie bezahle ich?", a: "In der App, über den App Store oder Google Play. Erstattungen laufen über Ihr Store-Konto." },
             { q: "Was sind Wünsche, und kann mein Kind allein etwas kaufen?", a: "Ihr Kind kann sich ein Bett, Näpfe, ein Spielzeug oder Leckerlis für sein Haustier wünschen – bis zu drei offene Wünsche gleichzeitig. Sie bekommen eine Benachrichtigung und kaufen den Artikel oder wählen „Jetzt nicht“. Ihr Kind sieht nie Preise und kann in der Kinder-App nichts kaufen." },
@@ -489,7 +493,7 @@ const de: Dictionary = {
             { q: "Können Geschwister sich ein Haustier teilen?", a: "Ja. Jedes Kind unterschreibt seinen eigenen Vertrag, jede Handlung wird dem Kind gutgeschrieben, das sie erledigt hat, und jedes Kind bekommt seinen eigenen fairen Care Score." },
             { q: "Was ist mit Schule und Schlafenszeit?", a: "Legen Sie Ruhezeiten fest. Das Haustier wird ruhiger, es wird nichts gesendet, und Mahlzeiten, die ganz in die Ruhezeiten fallen, übernehmen Sie." },
             { q: "Macht es Kindern Angst?", a: "Nein. Die Konsequenzen sind echt, aber behutsam: Das Haustier kommt zum Tierarzt oder ins Tierheim, nie etwas Drastisches, und es gibt immer einen Neuanfang." },
-            { q: "Welche Tiere gibt es?", a: "Heute [Hunde](species:dog) und [Katzen](species:cat): einen kostenlosen Mischling und eine Hauskatze sowie in der 12-wöchigen Challenge jede Rasse aus dem [Tierregister](page:animals), in dem auch ihre belegten Bedürfnisse stehen. Weitere Tierarten sind geplant." },
+            { q: "Welche Tiere gibt es?", a: "Heute [Hunde](species:dog) und [Katzen](species:cat): einen kostenlosen Mischling und eine Hauskatze sowie die 12-wöchige Challenge mit einem der beiden oder mit jeder Rasse aus dem [Tierregister](page:animals), in dem auch ihre belegten Bedürfnisse stehen. Weitere Tierarten sind geplant." },
             { q: "In welchen Sprachen?", a: "Die App gibt es heute auf Englisch und Slowenisch. Weitere Sprachen kommen hinzu, wenn PetPrep in neuen Ländern startet." },
             { q: "Was passiert, wenn wir ein echtes Haustier bekommen?", a: "PetPrep kann zum KI-Assistenten für Ihr echtes Haustier werden. Dieser Teil ist in Entwicklung." },
           ],
@@ -777,7 +781,7 @@ const de: Dictionary = {
             {
               heading: "3. Die 12-wöchige Challenge, der Care Score und das Zertifikat",
               items: [
-                "Die Challenge dauert 12 Wochen (84 Programmtage) und beginnt mit dem Kauf; jede betreuende Person hat ihr eigenes Enddatum. Zeit, in der das Spiel auf die Zahlung wartet, zählt nicht zu den 12 Wochen.",
+                "Die Challenge dauert 12 Wochen (84 Programmtage) und beginnt mit dem Kauf; jede betreuende Person hat ihr eigenes Enddatum. Zeit, in der das Spiel auf die Zahlung wartet, zählt nicht zu den 12 Wochen. Wenn Sie ein kostenloses Haustier auf die Challenge upgraden, beginnen die 12 Wochen ebenfalls mit dem Kauf; das Alter des Haustiers wird nicht zurückgesetzt, und die Tage vor dem Kauf bleiben im Verlauf sichtbar, als Tage vor der Challenge markiert, zählen aber weder zu den 12 Wochen noch zum Care Score oder Zertifikat.",
                 "Der Care Score (0–100) zeigt, welchen Anteil der erwarteten Routinen (Füttern, Wasser, Saubermachen, Spaziergang, eine Trainingseinheit) die betreuende Person selbst erledigt hat; jede Krankheit des Haustiers senkt ihn. Zeiten, in denen das Spiel angehalten ist oder das Haustier beim Tierarzt ist, sowie Ruhezeiten zählen nie gegen die betreuende Person.",
                 "Nach 12 Wochen wird ein Endergebnis festgehalten, das sich später nicht mehr ändert; Pflege nach der Challenge wirkt sich nicht darauf aus. Mit einem Score von 70 oder mehr können Sie in der App ein Verantwortungszertifikat (PDF) erstellen; unter 70 erhalten Sie einen Challenge-Bericht.",
                 "Bleibt Futter, Wasser oder Sauberkeit 24 Stunden lang bei 0 %, wird das Haustier „ins Tierheim gebracht“ (Spielende). Das Spiel mit diesem Haustier endet, es gibt kein Zertifikat, und Sie erhalten einen Challenge-Bericht.",
@@ -789,10 +793,11 @@ const de: Dictionary = {
               heading: "4. Kostenlose und kostenpflichtige Funktionen, Käufe und Erstattungen",
               items: [
                 "Der Mischling und die Hauskatze sind für immer kostenlos und der Weg, PetPrep auszuprobieren; eine kostenlose Testphase der Challenge gibt es nicht. Ein kostenloses Haustier hat kein 12-wöchiges Programm und kein Zertifikat, die Eltern sehen den Verlauf der letzten 7 Tage, und das Haustier hat einen Grundbestand an Bildern und Videos.",
-                "Die 12-wöchige PetPrep Challenge mit einer kostenpflichtigen Rasse ist ein Einmalkauf (49,99 € in Slowenien; der Store zeigt den Preis für Ihr Land). Ein Kauf ist eine Challenge für ein Haustier; jede neue Challenge mit einem neuen Haustier ist ein neuer Kauf. Geschwister, die sich um dasselbe Haustier kümmern, zahlen einmal.",
+                "Die 12-wöchige PetPrep Challenge ist ein Einmalkauf, kein Abonnement (49,99 € in Slowenien; der Store zeigt den Preis für Ihr Land). In der aktuellen App-Version können Sie sie mit jeder Rasse wählen, auch mit dem Mischling und der Hauskatze. Ein Kauf ist eine Challenge für ein Haustier; jede neue Challenge mit einem neuen Haustier ist ein neuer Kauf. Geschwister, die sich um dasselbe Haustier kümmern, zahlen einmal.",
+                "Ein Elternteil kann einen kostenlosen Mischling oder eine kostenlose Hauskatze, um die sich bereits jemand kümmert, zum selben Preis und mit demselben Haustier auf die Challenge upgraden. Nach einem Spielende und bei Mischlingen, die in einer frühen App-Version angelegt wurden, ist kein Upgrade möglich; die App zeigt an, wenn das zutrifft. Ein Haustier in der Challenge (auch ein upgegradetes Haustier sowie ein für die Challenge gewählter Mischling oder eine Hauskatze) kann nicht in den kostenlosen Plan zurückgestellt werden; nur eine Erstattung bringt einen Mischling oder eine Hauskatze dorthin zurück (siehe unten).",
                 "Ein Elternteil kauft in der eigenen App über den App Store oder Google Play; in der App des Kindes gibt es keine Käufe. Der Store wickelt die Zahlung nach seinen eigenen Bedingungen ab.",
                 "Sie können ein Challenge-Haustier vor dem Kauf anlegen. Bis die Challenge bezahlt ist, ist das Spiel pausiert: Das Haustier wartet sicher, seine Bedürfnisse sinken nicht und nichts wird schlechter. Nach dem Kauf geht das Spiel dort weiter, wo es angehalten hat.",
-                "Erstattungen wickeln der App Store und Google Play nach ihren eigenen Regeln ab; beantragen Sie sie in dem Store, in dem Sie gekauft haben. Erstattet der Store einen Kauf, bevor die Challenge abgeschlossen ist, wird das Spiel dieses Haustiers wieder pausiert. Bilder und Videos, die nach dem Kauf erstellt wurden, bleiben erhalten.",
+                "Erstattungen wickeln der App Store und Google Play nach ihren eigenen Regeln ab; beantragen Sie sie in dem Store, in dem Sie gekauft haben. Erstattet der Store einen Kauf, bevor die Challenge abgeschlossen ist, wird das Spiel dieses Haustiers wieder pausiert. Bilder und Videos, die nach dem Kauf erstellt wurden, bleiben erhalten. Ein Mischling oder eine Hauskatze wird dabei nicht pausiert, sondern kehrt in den kostenlosen Plan zurück: Die Challenge endet ohne Zertifikat, es gelten wieder die Regeln des kostenlosen Plans, und das Haustier zeigt wieder den Grundbestand an Bildern und Videos. Kaufen Sie die Challenge für dieses Haustier später erneut, beginnen neue 12 Wochen ab dem neuen Kauf.",
                 "Nach einem Spielende (Tierheim) schaltet ein Kauf das Haustier nicht frei; eine neue Challenge ist ein neues Haustier und ein neuer Kauf.",
                 "Wünsche (Dinge für das Haustier, sobald verfügbar): Ein Kind kann sich etwas wünschen, aber nur ein Elternteil kann es kaufen, in der eigenen App. Ein gekaufter Artikel gehört zu dem Haustier, für das er gekauft wurde, und ist rein optisch – er beeinflusst weder das Spiel noch den Score oder das Zertifikat. Nach einem Spielende oder wenn das Haustier gelöscht wird, bleibt der Kauf verbraucht und wird nicht erstattet. Erstattet der Store den Kauf, wird der Artikel entfernt (bei Leckerlis die nicht verbrauchten Leckerlis).",
                 "Wenn Sie ein Haustier, ein Kind oder das Konto löschen, während eine gekaufte Challenge noch läuft, bleibt der Kauf verbraucht: Er geht nicht auf ein anderes Haustier über, und Löschen ist keine Erstattung. Die App warnt Sie vorher und bittet um Bestätigung.",
@@ -820,7 +825,7 @@ const de: Dictionary = {
             {
               heading: "7. Benachrichtigungen",
               paragraphs: [
-                "Wenn Sie es auf dem Gerät erlauben, sendet die App Push-Benachrichtigungen: Erinnerungen an die betreuende Person, Hinweise an die Eltern, wenn ein Haustier kein Futter, kein Wasser oder keine Sauberkeit hat, sowie Nachrichten über Krankheit, Spielende und das Ende der Challenge. Benachrichtigungen enthalten nie den Namen des Kindes oder des Haustiers und werden während der Ruhezeiten nicht gesendet. Sie können die Berechtigung jederzeit in den Geräteeinstellungen widerrufen; ohne Benachrichtigungen verpasst eine betreuende Person möglicherweise Routinen, was sich auf das Spiel und den Score auswirkt.",
+                "Wenn Sie es auf dem Gerät erlauben, sendet die App Push-Benachrichtigungen: Erinnerungen an die betreuende Person, Hinweise an die Eltern, wenn ein Haustier kein Futter, kein Wasser oder keine Sauberkeit hat, sowie Nachrichten über Krankheit, Spielende und das Ende der Challenge. Benachrichtigungen enthalten nie den Namen des Kindes oder des Haustiers und werden während der Ruhezeiten nicht gesendet. Sie können die Berechtigung jederzeit in den Geräteeinstellungen widerrufen; ohne Benachrichtigungen verpasst eine betreuende Person möglicherweise Routinen, was sich auf das Spiel und den Score auswirkt. Eltern erhalten außerdem für ein kostenloses Haustier höchstens einmal eine Erinnerung an die Challenge, wenn sich jemand an mindestens 5 seiner ersten 7 Tage darum gekümmert hat.",
               ],
             },
             {

@@ -93,7 +93,7 @@ const hr: RegistryCopy = {
     breedCount: (n) => `${n} ${form(n, "pasmina", "pasmine", "pasmina")} u enciklopediji`,
     open: "Pogledaj pasmine",
     openA11y: (many) => `Pogledaj pasmine ${gen(many)}`,
-    freePlan: (name, activity) => `Besplatni plan: ${lc(name)} (odrasla životinja: ${activity}). Nema vlastitu stranicu u enciklopediji.`,
+    freePlan: (name, activity) => `Besplatni plan: ${lc(name)} (odrasla životinja: ${activity}); 12-tjedni izazov možeš dodati kasnije. Nema vlastitu stranicu u enciklopediji.`,
     otherSpecies: "Planiramo još životinja.",
     methodTitle: "Kako gradimo ovu enciklopediju",
     method: [
@@ -105,7 +105,7 @@ const hr: RegistryCopy = {
   },
   speciesStatus: { available: "U aplikaciji", coming_soon: "Uskoro u aplikaciji", info_only: "Samo informativno" },
   availability: {
-    in_app: { label: "U aplikaciji", text: "Dostupna u PetPrepovu 12-tjednom izazovu (plaćena pasmina)." },
+    in_app: { label: "U aplikaciji", text: "Dostupna u PetPrepovu 12-tjednom izazovu." },
     coming_soon: { label: "Uskoro u aplikaciji", text: "Izrađena je i testirana; stiže s jednim od sljedećih izdanja aplikacije." },
     info_only: { label: "Samo informativno", text: "U enciklopediji je informativno; u aplikaciji je još ne možeš udomiti." },
   },

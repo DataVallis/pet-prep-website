@@ -77,11 +77,12 @@ const it: Dictionary = {
       name: "Cane meticcio",
       text: "La simulazione completa con un cane meticcio realistico.",
       features: [
-        "Simulazione di 12 settimane con conseguenze reali",
+        "Cura quotidiana con conseguenze reali",
         "Passeggiate vere, contate in passi veri dal telefono",
         "Pannello per i genitori, semaforo e Care Score",
         "Ore di silenzio e pulsante di pausa",
         "Immagine fotorealistica del tuo animale e brevi video",
+        "Aggiungi la sfida di 12 settimane più avanti, con lo stesso animale",
       ],
       cta: "Inizia gratis",
     },
@@ -92,7 +93,7 @@ const it: Dictionary = {
       text: "Per le famiglie che vogliono l’esperienza completa e un certificato alla fine.",
       features: [
         "Tutto ciò che include Cane meticcio",
-        "Razze impegnative, come il [border collie](breed:border_collie)",
+        "Qualsiasi razza, come il [border collie](breed:border_collie), o il cane meticcio e il gatto domestico",
         "Gli stati d’animo del tuo animale in video creati con l’IA",
         "Certificato di responsabilità",
         "Un solo prezzo quando i fratelli condividono un animale",
@@ -219,7 +220,7 @@ const it: Dictionary = {
         },
       ],
       how: "Come iniziare: crea un account come genitore, aggiungi te stesso come profilo di chi si prende cura dell’animale e accedi con il codice di 6 cifre, sullo stesso telefono o su un altro.",
-      note: "Già disponibili: il cane meticcio e il gatto domestico gratuiti, e tutte le razze di cani e gatti del [registro degli animali](page:animals) nella sfida di 12 settimane.",
+      note: "Già disponibili: il cane meticcio e il gatto domestico gratuiti, e la sfida di 12 settimane con uno dei due o con qualsiasi razza di cani e gatti del [registro degli animali](page:animals).",
       link: "Come usare PetPrep da solo",
     },
     after: {
@@ -429,11 +430,11 @@ const it: Dictionary = {
       meta: {
         title: "Prezzi — PetPrep è gratis per iniziare, 49,99 € per la sfida di 12 settimane",
         description:
-          "Il cane meticcio è gratis per sempre. La sfida PetPrep di 12 settimane costa 49,99 € per animale, con un acquisto una tantum. Un solo prezzo per i fratelli che condividono un animale.",
+          "Il cane meticcio è gratis per sempre. La sfida PetPrep di 12 settimane costa 49,99 € per animale, con un acquisto una tantum. Un solo prezzo per i fratelli che condividono un animale. Anche come upgrade del tuo animale gratuito.",
       },
       eyebrow: "Prezzi",
       title: "Prezzi semplici ed equi.",
-      lead: "Inizia gratis con un cane meticcio. Acquista la sfida completa di 12 settimane quando vuoi: le 12 settimane iniziano con l’acquisto.",
+      lead: "Inizia gratis con un cane meticcio. Acquista la sfida completa di 12 settimane quando vuoi: le 12 settimane iniziano con l’acquisto. Vale anche per l’animale gratuito di cui tuo figlio si prende già cura.",
       blocks: [
         { type: "pricing" },
         {
@@ -457,7 +458,10 @@ const it: Dictionary = {
           heading: "Domande sui prezzi",
           items: [
             { q: "La versione gratuita è davvero gratuita?", a: "Sì. Il cane meticcio è gratis per sempre, con la simulazione completa, le passeggiate vere e il pannello per i genitori." },
-            { q: "Cosa include la sfida?", a: "Razze impegnative come il [border collie](breed:border_collie), gli stati d’animo del tuo animale in video creati con l’IA, il Certificato di responsabilità alla fine e l’accesso per entrambi i genitori." },
+            { q: "Cosa include la sfida?", a: "Razze impegnative come il [border collie](breed:border_collie), gli stati d’animo del tuo animale in video creati con l’IA, il Certificato di responsabilità alla fine e l’accesso per entrambi i genitori. Puoi sceglierla anche con il cane meticcio o il gatto domestico." },
+            { q: "Possiamo passare alla sfida con l’animale gratuito che mio figlio ha già?", a: "Sì, se il cane meticcio o il gatto domestico gratuito è ancora in gioco. Nell’app dei genitori, avvia la sfida dalla scheda di tuo figlio. L’animale resta lo stesso: nome, aspetto, età e comandi imparati. Le 12 settimane, il Care Score e il certificato contano dall’acquisto; i giorni precedenti restano nello storico, segnati come precedenti alla sfida, e non contano. Il prezzo è lo stesso: 49,99 € una tantum, senza abbonamento. I cani meticci creati in una prima versione dell’app non possono passare alla sfida; l’app ti dice se è il tuo caso." },
+            { q: "Un animale della sfida può tornare al piano gratuito?", a: "Non a scelta. Un cane meticcio o un gatto domestico torna al piano gratuito solo se lo store rimborsa l’acquisto; la sfida allora termina, senza certificato. Se in seguito acquisti di nuovo la sfida, iniziano 12 nuove settimane." },
+            { q: "L’app mi spingerà a comprare?", a: "No. Se tuo figlio si è preso cura di un animale gratuito in almeno 5 dei suoi primi 7 giorni, ricevi una notifica e una scheda nel tuo pannello sulla sfida: una sola volta per animale, mai durante le ore di silenzio. Tuo figlio non vede né i prezzi né questo promemoria." },
             { q: "I fratelli pagano due volte?", a: "No. I bambini che condividono un animale pagano un solo prezzo. Un secondo animale in famiglia è una sfida a parte." },
             { q: "Come si paga?", a: "Nell’app, tramite App Store o Google Play. I rimborsi sono gestiti dal tuo account dello store." },
             { q: "Cosa sono i Desideri? Mio figlio può comprare qualcosa da solo?", a: "Tuo figlio può chiedere una cuccia, le ciotole, un gioco o dei premi per il suo animale, con al massimo tre richieste aperte alla volta. Ricevi una notifica e decidi se comprarlo o scegliere «Non ora». Tuo figlio non vede mai i prezzi e non può comprare nulla nell’app per bambini." },
@@ -489,7 +493,7 @@ const it: Dictionary = {
             { q: "I fratelli possono condividere un animale?", a: "Sì. Ogni bambino firma il proprio contratto, ogni azione viene attribuita a chi l’ha fatta e ciascuno ottiene il proprio Care Score equo." },
             { q: "E la scuola e l’ora di andare a letto?", a: "Imposta le ore di silenzio. L’animale rallenta, non viene inviato nulla e i pasti che cadono interamente nelle ore di silenzio spettano a te." },
             { q: "Fa paura ai bambini?", a: "No. Le conseguenze sono vere ma delicate: l’animale va dal veterinario o al rifugio, mai niente di cruento, e c’è sempre un nuovo inizio." },
-            { q: "Quali animali sono disponibili?", a: "Oggi [cani](species:dog) e [gatti](species:cat): un cane meticcio e un gatto domestico gratuiti e, nella sfida di 12 settimane, tutte le razze del [registro degli animali](page:animals), che riporta anche i loro bisogni con le fonti. Sono in programma altre specie." },
+            { q: "Quali animali sono disponibili?", a: "Oggi [cani](species:dog) e [gatti](species:cat): un cane meticcio e un gatto domestico gratuiti e la sfida di 12 settimane con uno dei due o con tutte le razze del [registro degli animali](page:animals), che riporta anche i loro bisogni con le fonti. Sono in programma altre specie." },
             { q: "In quali lingue è disponibile?", a: "Oggi l’app è in inglese e sloveno. Arriveranno altre lingue man mano che PetPrep verrà lanciata in nuovi Paesi." },
             { q: "Cosa succede quando prendiamo un animale vero?", a: "PetPrep può diventare un assistente IA per il tuo animale vero. Questa parte è in sviluppo." },
           ],
@@ -777,7 +781,7 @@ const it: Dictionary = {
             {
               heading: "3. La sfida di 12 settimane, il Care Score e il certificato",
               items: [
-                "La sfida dura 12 settimane (84 giorni di programma) e inizia con l’acquisto; ogni persona che si prende cura dell’animale ha il proprio traguardo. Il tempo in cui il gioco è in attesa del pagamento non conta ai fini delle 12 settimane.",
+                "La sfida dura 12 settimane (84 giorni di programma) e inizia con l’acquisto; ogni persona che si prende cura dell’animale ha il proprio traguardo. Il tempo in cui il gioco è in attesa del pagamento non conta ai fini delle 12 settimane. Se passi un animale gratuito alla sfida, anche in questo caso le 12 settimane iniziano con l’acquisto; l’età dell’animale non si azzera e i giorni prima dell’acquisto restano visibili nello storico, segnati come precedenti alla sfida, ma non contano né per le 12 settimane né per il Care Score o il certificato.",
                 "Il Care Score (0–100) indica quale quota delle routine previste (cibo, acqua, pulizia, passeggiata, una sessione di addestramento) è stata svolta personalmente da chi si prende cura dell’animale; ogni malattia dell’animale lo abbassa. Il tempo in cui il gioco è fermo, l’animale è dal veterinario e le ore di silenzio non contano mai contro chi se ne prende cura.",
                 "Dopo 12 settimane viene registrato un punteggio finale, che in seguito non cambia; le cure dopo la sfida non lo influenzano. Con un punteggio di 70 o più puoi creare nell’app un Certificato di responsabilità (PDF); sotto 70 ricevi un resoconto della sfida.",
                 "Se cibo, acqua o pulizia restano allo 0% per 24 ore, l’animale viene «portato al rifugio» (fine del gioco). Il gioco con quell’animale termina, non c’è nessun certificato e ricevi un resoconto della sfida.",
@@ -789,10 +793,11 @@ const it: Dictionary = {
               heading: "4. Funzioni gratuite e a pagamento, acquisti e rimborsi",
               items: [
                 "Il cane meticcio e il gatto domestico sono gratis per sempre e sono il modo per provare PetPrep; non esiste una prova gratuita della sfida. Un animale gratuito non ha il programma di 12 settimane né il certificato; il genitore vede la cronologia degli ultimi 7 giorni e l’animale ha un set di base di immagini e video.",
-                "La sfida PetPrep di 12 settimane con una razza a pagamento è un acquisto una tantum (49,99 € in Slovenia; lo store mostra il prezzo per il tuo Paese). Un acquisto corrisponde a una sfida per un animale; ogni nuova sfida con un nuovo animale è un nuovo acquisto. I fratelli che si prendono cura dello stesso animale pagano una sola volta.",
+                "La sfida PetPrep di 12 settimane è un acquisto una tantum, non un abbonamento (49,99 € in Slovenia; lo store mostra il prezzo per il tuo Paese). Nella versione attuale dell’app puoi sceglierla con qualsiasi razza, anche con il cane meticcio e il gatto domestico. Un acquisto corrisponde a una sfida per un animale; ogni nuova sfida con un nuovo animale è un nuovo acquisto. I fratelli che si prendono cura dello stesso animale pagano una sola volta.",
+                "Un genitore può passare alla sfida un cane meticcio o un gatto domestico gratuito di cui qualcuno si prende già cura, allo stesso prezzo e con lo stesso animale. Non è possibile dopo la fine del gioco né per i cani meticci creati in una prima versione dell’app; l’app lo indica quando è il caso. Un animale della sfida (anche uno passato alla sfida e un cane meticcio o gatto domestico scelto per la sfida) non può tornare al piano gratuito; solo un rimborso riporta lì un cane meticcio o un gatto domestico (vedi sotto).",
                 "Il genitore acquista nella propria app tramite App Store o Google Play; nell’app del bambino non ci sono acquisti. Lo store elabora il pagamento secondo le proprie condizioni.",
                 "Puoi creare un animale per la sfida prima di acquistarla. Finché la sfida non è pagata, il gioco è in pausa: l’animale aspetta al sicuro, i suoi bisogni non calano e non peggiora nulla. Una volta effettuato l’acquisto, il gioco riprende da dove si era fermato.",
-                "I rimborsi sono gestiti da App Store e Google Play secondo le loro regole; chiedi il rimborso allo store in cui hai acquistato. Se lo store rimborsa un acquisto prima che la sfida sia terminata, il gioco di quell’animale torna in pausa. Le immagini e i video creati dopo l’acquisto restano.",
+                "I rimborsi sono gestiti da App Store e Google Play secondo le loro regole; chiedi il rimborso allo store in cui hai acquistato. Se lo store rimborsa un acquisto prima che la sfida sia terminata, il gioco di quell’animale torna in pausa. Le immagini e i video creati dopo l’acquisto restano. Un cane meticcio o un gatto domestico non viene messo in pausa, ma torna al piano gratuito: la sfida termina senza certificato, tornano a valere le regole del piano gratuito e l’animale mostra di nuovo il set di base di immagini e video. Se in seguito acquisti di nuovo la sfida per quell’animale, iniziano 12 nuove settimane dal nuovo acquisto.",
                 "Dopo la fine del gioco (rifugio), un acquisto non sblocca l’animale; una nuova sfida è un nuovo animale e un nuovo acquisto.",
                 "Desideri (oggetti per l’animale, quando disponibili): un bambino può chiederli, ma solo un genitore può acquistarli, nella propria app. Un oggetto acquistato appartiene all’animale per cui è stato comprato ed è solo estetico: non influisce sul gioco, sul punteggio o sul certificato. Dopo la fine del gioco o quando l’animale viene eliminato, l’acquisto resta utilizzato e non viene rimborsato. Se lo store rimborsa l’acquisto, l’oggetto (per i premi, quelli non utilizzati) viene rimosso.",
                 "Se elimini un animale, un bambino o l’account mentre una sfida acquistata è ancora in corso, l’acquisto resta utilizzato: non passa a un altro animale e l’eliminazione non è un rimborso. L’app ti avvisa prima e ti chiede di confermare.",
@@ -820,7 +825,7 @@ const it: Dictionary = {
             {
               heading: "7. Notifiche",
               paragraphs: [
-                "Se le consenti sul dispositivo, l’app invia notifiche push: promemoria a chi si prende cura dell’animale, avvisi ai genitori quando un animale è senza cibo, acqua o pulizia, e aggiornamenti su malattie, fine del gioco e fine della sfida. Le notifiche non contengono mai il nome del bambino o dell’animale e non vengono inviate durante le ore di silenzio. Puoi revocare l’autorizzazione in qualsiasi momento nelle impostazioni del dispositivo; senza notifiche chi si prende cura dell’animale potrebbe perdere delle routine, e questo influisce sul gioco e sul punteggio.",
+                "Se le consenti sul dispositivo, l’app invia notifiche push: promemoria a chi si prende cura dell’animale, avvisi ai genitori quando un animale è senza cibo, acqua o pulizia, e aggiornamenti su malattie, fine del gioco e fine della sfida. Le notifiche non contengono mai il nome del bambino o dell’animale e non vengono inviate durante le ore di silenzio. Puoi revocare l’autorizzazione in qualsiasi momento nelle impostazioni del dispositivo; senza notifiche chi si prende cura dell’animale potrebbe perdere delle routine, e questo influisce sul gioco e sul punteggio. Inoltre i genitori ricevono, al massimo una volta per animale gratuito, un promemoria sulla sfida quando qualcuno se ne è preso cura in almeno 5 dei suoi primi 7 giorni.",
               ],
             },
             {

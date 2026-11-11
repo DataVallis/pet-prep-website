@@ -77,11 +77,12 @@ const hr: Dictionary = {
       name: "Mješanac",
       text: "Cijela simulacija s mješancem koji izgleda kao pravi.",
       features: [
-        "12-tjedna simulacija sa stvarnim posljedicama",
+        "Svakodnevna briga sa stvarnim posljedicama",
         "Prave šetnje, izmjerene stvarnim koracima s mobitela",
         "Roditeljska nadzorna ploča, semafor i Care Score",
         "Tihi sati i gumb za pauzu",
         "Fotorealistična slika tvog ljubimca i kratki videozapisi",
+        "12-tjedni izazov možeš dodati kasnije, s istim ljubimcem",
       ],
       cta: "Počni besplatno",
     },
@@ -92,7 +93,7 @@ const hr: Dictionary = {
       text: "Za obitelji koje žele cjelovito iskustvo i certifikat na kraju.",
       features: [
         "Sve što nudi Mješanac",
-        "Zahtjevne pasmine, poput [border collieja](breed:border_collie)",
+        "Bilo koja pasmina, poput [border collieja](breed:border_collie), ili mješanac i domaća mačka",
         "Raspoloženja tvog ljubimca u AI videozapisima",
         "Certifikat o odgovornosti",
         "Jedna cijena kad braća i sestre dijele ljubimca",
@@ -219,7 +220,7 @@ const hr: Dictionary = {
         },
       ],
       how: "Kako početi: otvori račun kao roditelj, dodaj sebe kao profil njegovatelja i prijavi se šesteroznamenkastim kodom – na istom ili na drugom mobitelu.",
-      note: "Već danas dostupno: besplatni mješanac i domaća mačka te u 12-tjednom izazovu svaka pasmina pasa i mačaka iz [enciklopedije životinja](page:animals).",
+      note: "Već danas dostupno: besplatni mješanac i domaća mačka te 12-tjedni izazov s jednim od njih ili sa svakom pasminom pasa i mačaka iz [enciklopedije životinja](page:animals).",
       link: "Kako PetPrep koristiti za sebe",
     },
     after: {
@@ -429,11 +430,11 @@ const hr: Dictionary = {
       meta: {
         title: "Cijene – s PetPrepom možeš početi besplatno, 12-tjedni izazov stoji 49,99 €",
         description:
-          "Mješanac je zauvijek besplatan. 12-tjedni izazov PetPrep stoji 49,99 € po ljubimcu kao jednokratna kupnja. Jedna cijena za braću i sestre koji dijele ljubimca.",
+          "Mješanac je zauvijek besplatan. 12-tjedni izazov PetPrep stoji 49,99 € po ljubimcu kao jednokratna kupnja. Jedna cijena za braću i sestre koji dijele ljubimca. Može i kao nadogradnja tvog besplatnog ljubimca.",
       },
       eyebrow: "Cijene",
       title: "Jednostavne, poštene cijene.",
-      lead: "Počni besplatno s mješancem. Cijeli 12-tjedni izazov kupi kad budeš spreman – 12 tjedana počinje kupnjom.",
+      lead: "Počni besplatno s mješancem. Cijeli 12-tjedni izazov kupi kad budeš spreman – 12 tjedana počinje kupnjom. To vrijedi i za besplatnog ljubimca o kojem se tvoje dijete već brine.",
       blocks: [
         { type: "pricing" },
         {
@@ -457,7 +458,10 @@ const hr: Dictionary = {
           heading: "Pitanja o cijenama",
           items: [
             { q: "Je li besplatna verzija stvarno besplatna?", a: "Da. Mješanac je zauvijek besplatan, s cijelom simulacijom, pravim šetnjama i roditeljskom nadzornom pločom." },
-            { q: "Što uključuje izazov?", a: "Zahtjevne pasmine poput [border collieja](breed:border_collie), raspoloženja tvog ljubimca u AI videozapisima, Certifikat o odgovornosti na kraju i pristup za oba roditelja." },
+            { q: "Što uključuje izazov?", a: "Zahtjevne pasmine poput [border collieja](breed:border_collie), raspoloženja tvog ljubimca u AI videozapisima, Certifikat o odgovornosti na kraju i pristup za oba roditelja. Možeš ga odabrati i s mješancem ili domaćom mačkom." },
+            { q: "Možemo li besplatnog ljubimca kojeg moje dijete već ima nadograditi u izazov?", a: "Da, ako je besplatni mješanac ili domaća mačka još u igri. U roditeljskoj aplikaciji pokreni izazov s kartice djeteta. Ljubimac ostaje isti: ime, izgled, dob i naučene naredbe. 12 tjedana, Care Score i certifikat broje se od kupnje; raniji dani ostaju u povijesti, označeni kao dani prije izazova, i ne broje se. Cijena je ista: 49,99 € jednokratno, bez pretplate. Mješance stvorene u ranoj verziji aplikacije nije moguće nadograditi; aplikacija će ti reći odnosi li se to na tvog." },
+            { q: "Može li se ljubimac s izazova vratiti na besplatni plan?", a: "Ne na zahtjev. Mješanac ili domaća mačka vraća se na besplatni plan samo ako trgovina vrati novac za kupnju; izazov tada završava bez certifikata. Ako izazov kasnije ponovno kupiš, počinje novih 12 tjedana." },
+            { q: "Hoće li me aplikacija nagovarati na kupnju?", a: "Neće. Ako se tvoje dijete brinulo o besplatnom ljubimcu barem 5 od njegovih prvih 7 dana, dobit ćeš jednu obavijest i karticu na nadzornoj ploči o izazovu – jednom po ljubimcu i nikad u tihim satima. Dijete ne vidi ni cijene ni ovaj podsjetnik." },
             { q: "Plaćaju li braća i sestre dvaput?", a: "Ne. Djeca koja dijele jednog ljubimca plaćaju jednu cijenu. Drugi ljubimac u obitelji zaseban je izazov." },
             { q: "Kako plaćam?", a: "U aplikaciji, putem trgovine App Store ili Google Play. Povrat novca rješava se preko tvog računa u trgovini." },
             { q: "Što su Želje i može li dijete samo nešto kupiti?", a: "Dijete može zatražiti ležaljku, zdjelice, igračku ili poslastice za svog ljubimca – najviše tri otvorena zahtjeva istodobno. Ti dobiješ obavijest i kupiš predmet ili odabereš „Ne sada“. Dijete nikad ne vidi cijene i u dječjoj aplikaciji ne može ništa kupiti." },
@@ -489,7 +493,7 @@ const hr: Dictionary = {
             { q: "Mogu li braća i sestre dijeliti ljubimca?", a: "Da. Svako dijete potpisuje vlastiti ugovor, svaka se radnja pripisuje onome tko ju je obavio i svako dijete dobiva svoj pravedni Care Score." },
             { q: "A škola i vrijeme za spavanje?", a: "Postavi tihe sate. Ljubimac usporava, ništa se ne šalje, a obroke koji u cijelosti padaju u tihe sate preuzimaš ti." },
             { q: "Je li djeci strašno?", a: "Nije. Posljedice su stvarne, ali nježne: ljubimac ide veterinaru ili u sklonište, nikad ništa uznemirujuće, i uvijek postoji novi početak." },
-            { q: "Koje su životinje dostupne?", a: "Danas [psi](species:dog) i [mačke](species:cat): besplatni mješanac i domaća mačka te u 12-tjednom izazovu svaka pasmina iz [enciklopedije životinja](page:animals), u kojoj su navedene i njihove potrebe s izvorima. Druge vrste su u planu." },
+            { q: "Koje su životinje dostupne?", a: "Danas [psi](species:dog) i [mačke](species:cat): besplatni mješanac i domaća mačka te 12-tjedni izazov s jednim od njih ili sa svakom pasminom iz [enciklopedije životinja](page:animals), u kojoj su navedene i njihove potrebe s izvorima. Druge vrste su u planu." },
             { q: "Na kojim jezicima?", a: "Danas na engleskom i slovenskom. Nove jezike dodajemo kako PetPrep stiže u nove zemlje." },
             { q: "Što se događa kad dobijemo pravog ljubimca?", a: "PetPrep može postati AI asistent za tvog pravog ljubimca. Taj je dio u razvoju." },
           ],
@@ -777,7 +781,7 @@ const hr: Dictionary = {
             {
               heading: "3. 12-tjedni izazov, Care Score i certifikat",
               items: [
-                "Izazov traje 12 tjedana (84 dana programa) i počinje kupnjom; svaki njegovatelj ima vlastiti završetak. Vrijeme dok igra čeka na plaćanje ne ubraja se u 12 tjedana.",
+                "Izazov traje 12 tjedana (84 dana programa) i počinje kupnjom; svaki njegovatelj ima vlastiti završetak. Vrijeme dok igra čeka na plaćanje ne ubraja se u 12 tjedana. Ako besplatnog ljubimca nadogradiš u izazov, 12 tjedana također počinje kupnjom; dob ljubimca se ne poništava, a dani prije kupnje ostaju vidljivi u povijesti, označeni kao dani prije izazova, ali se ne broje ni u 12 tjedana ni u Care Score ni za certifikat.",
                 "Care Score (0–100) pokazuje koji je udio očekivanih rutina (hranjenje, voda, čišćenje, šetnja, vježba dresure) njegovatelj obavio sam; svaka bolest ljubimca snižava ga. Vrijeme dok je igra zaustavljena, dok je ljubimac kod veterinara te tihi sati nikad ne idu na štetu njegovatelja.",
                 "Nakon 12 tjedana bilježi se konačna ocjena koja se kasnije ne mijenja; briga nakon izazova na nju ne utječe. S ocjenom 70 ili višom u aplikaciji možeš izraditi Certifikat o odgovornosti (PDF); ispod 70 dobivaš izvješće o izazovu.",
                 "Ako hrana, voda ili čistoća 24 sata ostanu na 0 %, ljubimac se „odvodi u sklonište“ (kraj igre). Igra s tim ljubimcem završava, certifikata nema, a dobivaš izvješće o izazovu.",
@@ -789,10 +793,11 @@ const hr: Dictionary = {
               heading: "4. Besplatne i plaćene funkcije, kupnje i povrati novca",
               items: [
                 "Mješanac i domaća mačka zauvijek su besplatni i način su da isprobaš PetPrep; besplatnog probnog razdoblja izazova nema. Besplatni ljubimac nema 12-tjedni program ni certifikat, roditelj vidi povijest posljednjih 7 dana, a ljubimac ima osnovni skup slika i videozapisa.",
-                "12-tjedni izazov PetPrep s plaćenom pasminom jednokratna je kupnja (49,99 € u Sloveniji; trgovina prikazuje cijenu za tvoju zemlju). Jedna kupnja je jedan izazov za jednog ljubimca; svaki novi izazov s novim ljubimcem nova je kupnja. Braća i sestre koji se brinu o istom ljubimcu plaćaju jednom.",
+                "12-tjedni izazov PetPrep jednokratna je kupnja, a ne pretplata (49,99 € u Sloveniji; trgovina prikazuje cijenu za tvoju zemlju). U trenutačnoj verziji aplikacije možeš ga odabrati s bilo kojom pasminom, i s mješancem i domaćom mačkom. Jedna kupnja je jedan izazov za jednog ljubimca; svaki novi izazov s novim ljubimcem nova je kupnja. Braća i sestre koji se brinu o istom ljubimcu plaćaju jednom.",
+                "Roditelj može besplatnog mješanca ili domaću mačku o kojima se netko već brine nadograditi u izazov po istoj cijeni i s istim ljubimcem. Nadogradnja nije moguća nakon kraja igre ni za mješance stvorene u ranoj verziji aplikacije; aplikacija pokazuje kada to vrijedi. Ljubimac na izazovu (i nadograđeni ljubimac te mješanac ili domaća mačka odabrani za izazov) ne može se prebaciti natrag na besplatni plan; mješanca ili domaću mačku na njega vraća samo povrat novca (vidi niže).",
                 "Roditelj kupuje u vlastitoj aplikaciji putem trgovine App Store ili Google Play; u djetetovoj aplikaciji nema kupnji. Trgovina obrađuje plaćanje prema vlastitim uvjetima.",
                 "Ljubimca za izazov možeš izraditi i prije kupnje. Dok izazov nije plaćen, igra je pauzirana: ljubimac sigurno čeka, njegove potrebe ne padaju i ništa se ne pogoršava. Čim kupiš, igra se nastavlja ondje gdje je stala.",
-                "Povrate novca rješavaju App Store i Google Play prema vlastitim pravilima; povrat zatraži u trgovini u kojoj je kupnja obavljena. Ako trgovina vrati novac za kupnju prije nego što je izazov završen, igra s tim ljubimcem ponovno se pauzira. Slike i videozapisi izrađeni nakon kupnje ostaju.",
+                "Povrate novca rješavaju App Store i Google Play prema vlastitim pravilima; povrat zatraži u trgovini u kojoj je kupnja obavljena. Ako trgovina vrati novac za kupnju prije nego što je izazov završen, igra s tim ljubimcem ponovno se pauzira. Slike i videozapisi izrađeni nakon kupnje ostaju. Mješanac ili domaća mačka pritom se ne pauzira, nego se vraća na besplatni plan: izazov završava bez certifikata, ponovno vrijede pravila besplatnog plana, a ljubimac opet ima osnovni skup slika i videozapisa. Ako za tog ljubimca kasnije ponovno kupiš izazov, novih 12 tjedana počinje od nove kupnje.",
                 "Nakon kraja igre (sklonište) kupnja ne otključava ljubimca; novi izazov znači novog ljubimca i novu kupnju.",
                 "Želje (stvari za ljubimca, kad budu dostupne): dijete može tražiti, ali kupiti može samo roditelj, u vlastitoj aplikaciji. Kupljeni predmet pripada ljubimcu za kojeg je kupljen i služi samo za izgled – ne utječe na igru, ocjenu ni certifikat. Nakon kraja igre ili brisanja ljubimca kupnja ostaje iskorištena i novac se ne vraća. Ako trgovina vrati novac za kupnju, predmet se uklanja (kod poslastica – neiskorištene poslastice).",
                 "Ako izbrišeš ljubimca, dijete ili račun dok kupljeni izazov još traje, kupnja ostaje iskorištena: ne prenosi se na drugog ljubimca, a brisanje nije povrat novca. Aplikacija te najprije upozori i zatraži potvrdu.",
@@ -820,7 +825,7 @@ const hr: Dictionary = {
             {
               heading: "7. Obavijesti",
               paragraphs: [
-                "Ako ih dopustiš na uređaju, aplikacija šalje push obavijesti: podsjetnike njegovatelju, upozorenja roditeljima kad ljubimac nema hrane, vode ili čistoće te vijesti o bolesti, kraju igre i završetku izazova. Obavijesti nikad ne sadrže ime djeteta ni ljubimca i ne šalju se tijekom tihih sati. Dopuštenje možeš u svakom trenutku povući u postavkama uređaja; bez obavijesti njegovatelj može propustiti rutine, što utječe na igru i ocjenu.",
+                "Ako ih dopustiš na uređaju, aplikacija šalje push obavijesti: podsjetnike njegovatelju, upozorenja roditeljima kad ljubimac nema hrane, vode ili čistoće te vijesti o bolesti, kraju igre i završetku izazova. Obavijesti nikad ne sadrže ime djeteta ni ljubimca i ne šalju se tijekom tihih sati. Dopuštenje možeš u svakom trenutku povući u postavkama uređaja; bez obavijesti njegovatelj može propustiti rutine, što utječe na igru i ocjenu. Roditelji osim toga najviše jednom po besplatnom ljubimcu dobivaju podsjetnik o izazovu kada se netko o njemu brinuo barem 5 od njegovih prvih 7 dana.",
               ],
             },
             {

@@ -77,11 +77,12 @@ const fr: Dictionary = {
       name: "Chien croisé",
       text: "La simulation complète avec un chien croisé plus vrai que nature.",
       features: [
-        "Simulation de 12 semaines avec de vraies conséquences",
+        "Des soins quotidiens aux vraies conséquences",
         "De vraies promenades, avec les pas comptés par le téléphone",
         "Tableau de bord parent, feu tricolore et Care Score",
         "Heures calmes et bouton pause",
         "Une image photoréaliste de votre animal et de courtes vidéos",
+        "Le Challenge de 12 semaines à ajouter plus tard, avec le même animal",
       ],
       cta: "Commencer gratuitement",
     },
@@ -92,7 +93,7 @@ const fr: Dictionary = {
       text: "Pour les familles qui veulent l’expérience complète et un certificat à la fin.",
       features: [
         "Tout ce qu’offre la formule Chien croisé",
-        "Des races exigeantes, comme le [Border Collie](breed:border_collie)",
+        "Toutes les races, comme le [Border Collie](breed:border_collie), ou le chien croisé et le chat domestique",
         "Les humeurs de votre animal en vidéos générées par IA",
         "Certificat de responsabilité",
         "Un seul prix quand des frères et sœurs partagent un animal",
@@ -219,7 +220,7 @@ const fr: Dictionary = {
         },
       ],
       how: "Pour commencer : créez un compte en tant que parent, ajoutez-vous comme personne qui s’occupe de l’animal et connectez-vous avec le code à 6 chiffres – sur le même téléphone ou sur un autre.",
-      note: "Disponible dès aujourd’hui : le chien croisé et le chat domestique gratuits, ainsi que toutes les races de chiens et de chats du [registre des animaux](page:animals) dans le Challenge de 12 semaines.",
+      note: "Disponible dès aujourd’hui : le chien croisé et le chat domestique gratuits, ainsi que le Challenge de 12 semaines avec l’un d’eux ou avec n’importe quelle race de chien ou de chat du [registre des animaux](page:animals).",
       link: "Utiliser PetPrep seul",
     },
     after: {
@@ -429,11 +430,11 @@ const fr: Dictionary = {
       meta: {
         title: "Tarifs – PetPrep est gratuit pour commencer, 49,99 € pour le Challenge de 12 semaines",
         description:
-          "Le chien croisé est gratuit pour toujours. Le PetPrep Challenge de 12 semaines coûte 49,99 € par animal, en achat unique. Un seul prix pour les frères et sœurs qui partagent un animal.",
+          "Le chien croisé est gratuit pour toujours. Le PetPrep Challenge de 12 semaines coûte 49,99 € par animal, en achat unique. Un seul prix pour les frères et sœurs qui partagent un animal. Possible aussi pour votre animal gratuit.",
       },
       eyebrow: "Tarifs",
       title: "Des tarifs simples et justes.",
-      lead: "Commencez gratuitement avec un chien croisé. Achetez le Challenge complet de 12 semaines quand vous êtes prêt – les 12 semaines commencent à l’achat.",
+      lead: "Commencez gratuitement avec un chien croisé. Achetez le Challenge complet de 12 semaines quand vous êtes prêt – les 12 semaines commencent à l’achat. C’est aussi possible avec l’animal gratuit dont votre enfant s’occupe déjà.",
       blocks: [
         { type: "pricing" },
         {
@@ -457,7 +458,10 @@ const fr: Dictionary = {
           heading: "Questions sur les tarifs",
           items: [
             { q: "La formule gratuite est-elle vraiment gratuite ?", a: "Oui. Le chien croisé est gratuit pour toujours, avec la simulation complète, les vraies promenades et le tableau de bord parent." },
-            { q: "Que comprend le Challenge ?", a: "Des races exigeantes comme le [Border Collie](breed:border_collie), les humeurs de votre animal en vidéos générées par IA, le certificat de responsabilité à la fin et l’accès pour les deux parents." },
+            { q: "Que comprend le Challenge ?", a: "Des races exigeantes comme le [Border Collie](breed:border_collie), les humeurs de votre animal en vidéos générées par IA, le certificat de responsabilité à la fin et l’accès pour les deux parents. Vous pouvez aussi le choisir avec le chien croisé ou le chat domestique." },
+            { q: "Peut-on passer au Challenge avec l’animal gratuit que mon enfant a déjà ?", a: "Oui, tant que le chien croisé ou le chat domestique gratuit est encore en jeu. Dans l’application parent, lancez le Challenge depuis la fiche de votre enfant. L’animal reste le même : nom, apparence, âge et ordres appris. Les 12 semaines, le Care Score et le certificat comptent à partir de l’achat ; les jours précédents restent dans l’historique, marqués comme antérieurs au Challenge, et ne comptent pas. Le prix est le même : 49,99 € en achat unique, sans abonnement. Les chiens croisés créés dans une première version de l’application ne peuvent pas passer au Challenge ; l’application vous indique si c’est le cas du vôtre." },
+            { q: "Un animal du Challenge peut-il revenir à la formule gratuite ?", a: "Pas à votre demande. Un chien croisé ou un chat domestique ne revient à la formule gratuite que si la boutique rembourse l’achat ; le Challenge s’arrête alors, sans certificat. Si vous rachetez le Challenge plus tard, 12 nouvelles semaines commencent." },
+            { q: "L’application va-t-elle me pousser à acheter ?", a: "Non. Si votre enfant s’est occupé d’un animal gratuit au moins 5 de ses 7 premiers jours, vous recevez une notification et une carte dans votre tableau de bord au sujet du Challenge – une seule fois par animal, jamais pendant les heures calmes. Votre enfant ne voit ni les prix ni ce rappel." },
             { q: "Les frères et sœurs paient-ils deux fois ?", a: "Non. Les enfants qui partagent un même animal paient un seul prix. Un deuxième animal dans la famille constitue un Challenge distinct." },
             { q: "Comment payer ?", a: "Dans l’application, via l’App Store ou Google Play. Les remboursements passent par votre compte de la boutique." },
             { q: "Que sont les Souhaits, et mon enfant peut-il acheter seul ?", a: "Votre enfant peut demander un panier, des gamelles, un jouet ou des friandises pour son animal – jusqu’à trois demandes en cours à la fois. Vous recevez une notification et vous l’achetez ou choisissez « Not now » (« Pas maintenant »). Votre enfant ne voit jamais les prix et ne peut rien acheter dans l’application enfant." },
@@ -489,7 +493,7 @@ const fr: Dictionary = {
             { q: "Des frères et sœurs peuvent-ils partager un animal ?", a: "Oui. Chaque enfant signe son propre contrat, chaque action est attribuée à celui qui l’a faite et chaque enfant obtient son propre Care Score, calculé équitablement." },
             { q: "Et l’école, et l’heure du coucher ?", a: "Définissez des heures calmes. L’animal ralentit, rien n’est envoyé, et c’est vous qui vous chargez des repas qui tombent entièrement pendant les heures calmes." },
             { q: "Est-ce effrayant pour les enfants ?", a: "Non. Les conséquences sont réelles mais douces : l’animal va chez le vétérinaire ou au refuge, jamais rien de choquant, et il y a toujours un nouveau départ." },
-            { q: "Quels animaux sont disponibles ?", a: "Les [chiens](species:dog) et les [chats](species:cat) aujourd’hui : un chien croisé et un chat domestique gratuits et, dans le Challenge de 12 semaines, toutes les races du [registre des animaux](page:animals), qui présente aussi leurs besoins, avec les sources. D’autres espèces sont prévues." },
+            { q: "Quels animaux sont disponibles ?", a: "Les [chiens](species:dog) et les [chats](species:cat) aujourd’hui : un chien croisé et un chat domestique gratuits, et le Challenge de 12 semaines avec l’un d’eux ou avec toutes les races du [registre des animaux](page:animals), qui présente aussi leurs besoins, avec les sources. D’autres espèces sont prévues." },
             { q: "Dans quelles langues ?", a: "L’application existe aujourd’hui en anglais et en slovène. D’autres langues arriveront à mesure que PetPrep sera lancé dans de nouveaux pays." },
             { q: "Que se passe-t-il quand nous avons un vrai animal ?", a: "PetPrep peut devenir un assistant IA pour votre vrai animal. Cette partie est en cours de développement." },
           ],
@@ -777,7 +781,7 @@ const fr: Dictionary = {
             {
               heading: "3. Le Challenge de 12 semaines, le Care Score et le certificat",
               items: [
-                "Le Challenge dure 12 semaines (84 jours de programme) et commence à l’achat ; chaque enfant ou adulte a sa propre date de fin. Le temps pendant lequel le jeu attend le paiement ne compte pas dans les 12 semaines.",
+                "Le Challenge dure 12 semaines (84 jours de programme) et commence à l’achat ; chaque enfant ou adulte a sa propre date de fin. Le temps pendant lequel le jeu attend le paiement ne compte pas dans les 12 semaines. Si vous faites passer un animal gratuit au Challenge, les 12 semaines commencent elles aussi à l’achat ; l’âge de l’animal n’est pas remis à zéro, et les jours précédant l’achat restent visibles dans l’historique, marqués comme antérieurs au Challenge, mais ne comptent ni dans les 12 semaines, ni dans le Care Score, ni pour le certificat.",
                 "Le Care Score (0–100) indique la part des routines attendues (nourriture, eau, nettoyage, promenade, séance d’éducation) que la personne qui s’occupe de l’animal a effectuées elle-même ; chaque maladie de l’animal le fait baisser. Le temps pendant lequel le jeu est arrêté ou l’animal est chez le vétérinaire, ainsi que les heures calmes, ne comptent jamais contre elle.",
                 "Après 12 semaines, un score final est enregistré et ne change plus ; les soins prodigués après le Challenge ne l’affectent pas. Avec un score de 70 ou plus, vous pouvez créer un certificat de responsabilité (PDF) dans l’application ; en dessous de 70, vous recevez un bilan du Challenge.",
                 "Si la nourriture, l’eau ou la propreté reste à 0 % pendant 24 heures, l’animal est « confié au refuge » (fin de partie). La partie avec cet animal se termine, il n’y a pas de certificat et vous recevez un bilan du Challenge.",
@@ -789,10 +793,11 @@ const fr: Dictionary = {
               heading: "4. Fonctionnalités gratuites et payantes, achats et remboursements",
               items: [
                 "Le chien croisé et le chat domestique sont gratuits pour toujours et permettent d’essayer PetPrep ; il n’existe pas d’essai gratuit du Challenge. Un animal gratuit n’a ni programme de 12 semaines ni certificat ; le parent voit l’historique des 7 derniers jours, et l’animal dispose d’un ensemble de base d’images et de vidéos.",
-                "Le PetPrep Challenge de 12 semaines avec une race payante est un achat unique (49,99 € en Slovénie ; la boutique affiche le prix de votre pays). Un achat correspond à un Challenge pour un animal ; chaque nouveau Challenge avec un nouvel animal est un nouvel achat. Les frères et sœurs qui s’occupent du même animal paient une seule fois.",
+                "Le PetPrep Challenge de 12 semaines est un achat unique, pas un abonnement (49,99 € en Slovénie ; la boutique affiche le prix de votre pays). Dans la version actuelle de l’application, vous pouvez le choisir avec n’importe quelle race, y compris le chien croisé et le chat domestique. Un achat correspond à un Challenge pour un animal ; chaque nouveau Challenge avec un nouvel animal est un nouvel achat. Les frères et sœurs qui s’occupent du même animal paient une seule fois.",
+                "Un parent peut faire passer au Challenge un chien croisé ou un chat domestique gratuit dont quelqu’un s’occupe déjà, au même prix et avec le même animal. Ce n’est pas possible après une fin de partie, ni pour les chiens croisés créés dans une première version de l’application ; l’application l’indique le cas échéant. Un animal du Challenge (y compris un animal passé au Challenge et un chien croisé ou un chat domestique choisi pour le Challenge) ne peut pas être remis dans la formule gratuite ; seul un remboursement y ramène un chien croisé ou un chat domestique (voir ci-dessous).",
                 "Un parent achète dans sa propre application via l’App Store ou Google Play ; il n’y a aucun achat dans l’application de l’enfant. La boutique traite le paiement selon ses propres conditions.",
                 "Vous pouvez créer un animal de Challenge avant de l’acheter. Tant que le Challenge n’est pas payé, le jeu est en pause : l’animal attend en sécurité, ses besoins ne baissent pas et rien ne se dégrade. Une fois l’achat effectué, le jeu reprend là où il s’était arrêté.",
-                "Les remboursements sont gérés par l’App Store et Google Play selon leurs propres règles ; adressez votre demande à la boutique où vous avez effectué l’achat. Si la boutique rembourse un achat avant la fin du Challenge, la partie avec cet animal est de nouveau mise en pause. Les images et vidéos créées après l’achat sont conservées.",
+                "Les remboursements sont gérés par l’App Store et Google Play selon leurs propres règles ; adressez votre demande à la boutique où vous avez effectué l’achat. Si la boutique rembourse un achat avant la fin du Challenge, la partie avec cet animal est de nouveau mise en pause. Les images et vidéos créées après l’achat sont conservées. Un chien croisé ou un chat domestique n’est pas mis en pause : il revient à la formule gratuite. Le Challenge s’arrête sans certificat, les règles de la formule gratuite s’appliquent de nouveau et l’animal affiche de nouveau l’ensemble de base d’images et de vidéos. Si vous rachetez ensuite le Challenge pour cet animal, 12 nouvelles semaines commencent avec le nouvel achat.",
                 "Après une fin de partie (refuge), un achat ne débloque pas l’animal ; un nouveau Challenge signifie un nouvel animal et un nouvel achat.",
                 "Souhaits (objets pour l’animal, lorsqu’ils seront disponibles) : un enfant peut en demander, mais seul un parent peut les acheter, dans sa propre application. Un objet acheté appartient à l’animal pour lequel il a été acheté et est purement esthétique – il n’a aucun effet sur le jeu, le score ou le certificat. Après une fin de partie ou la suppression de l’animal, l’achat reste consommé et n’est pas remboursé. Si la boutique rembourse l’achat, l’objet (pour les friandises, les friandises non utilisées) est retiré.",
                 "Si vous supprimez un animal, un enfant ou le compte alors qu’un Challenge acheté est encore en cours, l’achat reste consommé : il n’est pas transféré à un autre animal et la suppression ne vaut pas remboursement. L’application vous prévient d’abord et vous demande de confirmer.",
@@ -820,7 +825,7 @@ const fr: Dictionary = {
             {
               heading: "7. Notifications",
               paragraphs: [
-                "Si vous les autorisez sur l’appareil, l’application envoie des notifications push : des rappels à la personne qui s’occupe de l’animal, des alertes aux parents quand la nourriture, l’eau ou la propreté d’un animal tombe à zéro, et des informations sur une maladie, une fin de partie et la fin du Challenge. Les notifications ne contiennent jamais le nom de l’enfant ni celui de l’animal et ne sont pas envoyées pendant les heures calmes. Vous pouvez retirer l’autorisation à tout moment dans les réglages de l’appareil ; sans notifications, on risque de manquer des routines, ce qui affecte le jeu et le score.",
+                "Si vous les autorisez sur l’appareil, l’application envoie des notifications push : des rappels à la personne qui s’occupe de l’animal, des alertes aux parents quand la nourriture, l’eau ou la propreté d’un animal tombe à zéro, et des informations sur une maladie, une fin de partie et la fin du Challenge. Les notifications ne contiennent jamais le nom de l’enfant ni celui de l’animal et ne sont pas envoyées pendant les heures calmes. Vous pouvez retirer l’autorisation à tout moment dans les réglages de l’appareil ; sans notifications, on risque de manquer des routines, ce qui affecte le jeu et le score. Les parents reçoivent en outre, au plus une fois par animal gratuit, un rappel au sujet du Challenge lorsque quelqu’un s’en est occupé au moins 5 de ses 7 premiers jours.",
               ],
             },
             {

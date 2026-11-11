@@ -77,11 +77,12 @@ const pt: Dictionary = {
       name: "Cão sem raça definida",
       text: "A simulação completa com um cão sem raça definida realista.",
       features: [
-        "Simulação de 12 semanas com consequências reais",
+        "Cuidados diários com consequências reais",
         "Passeios reais, contados em passos reais pelo telemóvel",
         "Painel dos pais, semáforo e Care Score",
         "Horas de silêncio e botão de pausa",
         "Imagem fotorrealista do teu animal e vídeos curtos",
+        "Junta o desafio de 12 semanas mais tarde, com o mesmo animal",
       ],
       cta: "Começa grátis",
     },
@@ -92,7 +93,7 @@ const pt: Dictionary = {
       text: "Para as famílias que querem a experiência completa e um certificado no fim.",
       features: [
         "Tudo o que está incluído no Cão sem raça definida",
-        "Raças exigentes, como o [border collie](breed:border_collie)",
+        "Qualquer raça, como o [border collie](breed:border_collie), ou o cão sem raça definida e o gato doméstico",
         "Os estados de espírito do teu animal em vídeos de IA",
         "Certificado de responsabilidade",
         "Um só preço quando os irmãos partilham um animal",
@@ -219,7 +220,7 @@ const pt: Dictionary = {
         },
       ],
       how: "Como começar: cria uma conta como pai ou mãe, adiciona-te como perfil de cuidador e entra com o código de 6 dígitos – no mesmo telemóvel ou noutro.",
-      note: "Disponível hoje: o cão sem raça definida e o gato doméstico gratuitos, e todas as raças de cães e gatos do [registo de animais](page:animals) no desafio de 12 semanas.",
+      note: "Disponível hoje: o cão sem raça definida e o gato doméstico gratuitos, e o desafio de 12 semanas com qualquer um deles ou com qualquer raça de cães e gatos do [registo de animais](page:animals).",
       link: "Como usar o PetPrep só para ti",
     },
     after: {
@@ -429,11 +430,11 @@ const pt: Dictionary = {
       meta: {
         title: "Preços – o PetPrep é gratuito para começar, 49,99\u00a0€ pelo desafio de 12 semanas",
         description:
-          "O cão sem raça definida é gratuito para sempre. O Desafio PetPrep de 12 semanas custa 49,99\u00a0€ por animal, numa compra única. Um só preço para os irmãos que partilham um animal.",
+          "O cão sem raça definida é gratuito para sempre. O Desafio PetPrep de 12 semanas custa 49,99\u00a0€ por animal, numa compra única. Um só preço para os irmãos que partilham um animal. Também como upgrade do teu animal gratuito.",
       },
       eyebrow: "Preços",
       title: "Preços simples e justos.",
-      lead: "Começa grátis com um cão sem raça definida. Compra o desafio completo de 12 semanas quando for o momento certo – as 12 semanas começam com a compra.",
+      lead: "Começa grátis com um cão sem raça definida. Compra o desafio completo de 12 semanas quando for o momento certo – as 12 semanas começam com a compra. Também funciona com o animal gratuito de que o teu filho já cuida.",
       blocks: [
         { type: "pricing" },
         {
@@ -457,7 +458,10 @@ const pt: Dictionary = {
           heading: "Perguntas sobre preços",
           items: [
             { q: "A versão gratuita é mesmo gratuita?", a: "Sim. O cão sem raça definida é gratuito para sempre, com a simulação completa, passeios reais e o painel dos pais." },
-            { q: "O que inclui o desafio?", a: "Raças exigentes como o [border collie](breed:border_collie), os estados de espírito do teu animal em vídeos de IA, o Certificado de responsabilidade no fim e acesso para o pai e para a mãe." },
+            { q: "O que inclui o desafio?", a: "Raças exigentes como o [border collie](breed:border_collie), os estados de espírito do teu animal em vídeos de IA, o Certificado de responsabilidade no fim e acesso para o pai e para a mãe. Também o podes escolher com o cão sem raça definida ou o gato doméstico." },
+            { q: "Podemos passar ao desafio com o animal gratuito que o meu filho já tem?", a: "Sim, desde que o cão sem raça definida ou o gato doméstico gratuito ainda esteja em jogo. Na aplicação dos pais, inicia o desafio a partir do cartão do teu filho. O animal continua o mesmo: nome, aspeto, idade e comandos aprendidos. As 12 semanas, o Care Score e o certificado contam a partir da compra; os dias anteriores ficam no histórico, marcados como anteriores ao desafio, e não contam. O preço é o mesmo: 49,99\u00a0€ numa compra única, sem subscrição. Os cães sem raça definida criados numa primeira versão da aplicação não podem passar ao desafio; a aplicação diz-te se é o teu caso." },
+            { q: "Um animal do desafio pode voltar ao plano gratuito?", a: "Não por escolha. Um cão sem raça definida ou um gato doméstico só volta ao plano gratuito se a loja reembolsar a compra; o desafio termina então, sem certificado. Se voltares a comprar o desafio mais tarde, começam 12 semanas novas." },
+            { q: "A aplicação vai pressionar-me a comprar?", a: "Não. Se o teu filho cuidou de um animal gratuito em pelo menos 5 dos seus primeiros 7 dias, recebes uma notificação e um cartão no teu painel sobre o desafio – uma só vez por animal e nunca nas horas de silêncio. O teu filho não vê preços nem este lembrete." },
             { q: "Os irmãos pagam duas vezes?", a: "Não. As crianças que partilham um animal pagam um só preço. Um segundo animal na família é um desafio à parte." },
             { q: "Como pago?", a: "Na aplicação, através da App Store ou do Google Play. Os reembolsos são tratados pela tua conta da loja." },
             { q: "O que são os Desejos, e o meu filho pode comprar coisas sozinho?", a: "O teu filho pode pedir uma cama, tigelas, um brinquedo ou guloseimas para o animal – até três pedidos abertos de cada vez. Recebes uma notificação e compras ou escolhes «Agora não». O teu filho nunca vê preços e não pode comprar nada na aplicação da criança." },
@@ -489,7 +493,7 @@ const pt: Dictionary = {
             { q: "Os irmãos podem partilhar um animal?", a: "Sim. Cada criança assina o seu próprio contrato, cada ação é atribuída a quem a fez e cada criança tem o seu próprio Care Score, justo." },
             { q: "E a escola e a hora de dormir?", a: "Define horas de silêncio. O animal abranda, não é enviado nada e as refeições que calham totalmente nas horas de silêncio ficam a teu cargo." },
             { q: "É assustador para as crianças?", a: "Não. As consequências são reais, mas suaves: o animal vai ao veterinário ou para o abrigo, nunca há nada chocante e há sempre um novo começo." },
-            { q: "Que animais estão disponíveis?", a: "[Cães](species:dog) e [gatos](species:cat) hoje: um cão sem raça definida e um gato doméstico gratuitos e, no desafio de 12 semanas, todas as raças do [registo de animais](page:animals), que indica também as suas necessidades com fontes. Estão planeadas mais espécies." },
+            { q: "Que animais estão disponíveis?", a: "[Cães](species:dog) e [gatos](species:cat) hoje: um cão sem raça definida e um gato doméstico gratuitos e o desafio de 12 semanas com qualquer um deles ou com todas as raças do [registo de animais](page:animals), que indica também as suas necessidades com fontes. Estão planeadas mais espécies." },
             { q: "Em que idiomas?", a: "Hoje a aplicação está em inglês e em esloveno. Vão chegar mais idiomas à medida que o PetPrep for lançado em novos países." },
             { q: "O que acontece depois de termos um animal a sério?", a: "O PetPrep pode tornar-se um assistente de IA para o teu animal a sério. Esta parte está em desenvolvimento." },
           ],
@@ -777,7 +781,7 @@ const pt: Dictionary = {
             {
               heading: "3. O desafio de 12 semanas, o Care Score e o certificado",
               items: [
-                "O desafio dura 12 semanas (84 dias de programa) e começa com a compra; cada cuidador tem o seu próprio fim. O tempo em que o jogo está à espera de pagamento não conta para as 12 semanas.",
+                "O desafio dura 12 semanas (84 dias de programa) e começa com a compra; cada cuidador tem o seu próprio fim. O tempo em que o jogo está à espera de pagamento não conta para as 12 semanas. Se passares um animal gratuito ao desafio, as 12 semanas também começam com a compra; a idade do animal não é reposta, e os dias anteriores à compra ficam visíveis no histórico, marcados como anteriores ao desafio, mas não contam para as 12 semanas, para o Care Score nem para o certificado.",
                 "O Care Score (0–100) mostra que parte das rotinas previstas (alimentação, água, limpeza, o passeio, uma sessão de treino) o cuidador cumpriu sozinho; cada doença do animal fá-lo descer. O tempo em que o jogo está parado, em que o animal está no veterinário e as horas de silêncio nunca contam contra o cuidador.",
                 "Ao fim de 12 semanas é registada uma pontuação final que não muda depois; os cuidados após o desafio não a afetam. Com uma pontuação de 70 ou mais, podes criar na aplicação um Certificado de responsabilidade (PDF); abaixo de 70 recebes um relatório do desafio.",
                 "Se a comida, a água ou a limpeza ficarem a 0% durante 24 horas, o animal é «levado para o abrigo» (fim do jogo). O jogo com esse animal termina, não há certificado e recebes um relatório do desafio.",
@@ -789,10 +793,11 @@ const pt: Dictionary = {
               heading: "4. Funcionalidades gratuitas e pagas, compras e reembolsos",
               items: [
                 "O cão sem raça definida e o gato doméstico são gratuitos para sempre e são a forma de experimentar o PetPrep; não há período experimental gratuito do desafio. Um animal gratuito não tem programa de 12 semanas nem certificado, os pais veem o histórico dos últimos 7 dias e o animal tem um conjunto básico de imagens e vídeos.",
-                "O Desafio PetPrep de 12 semanas com uma raça paga é uma compra única (49,99\u00a0€ na Eslovénia; a loja mostra o preço do teu país). Uma compra é um desafio para um animal; cada novo desafio com um novo animal é uma nova compra. Os irmãos que cuidam do mesmo animal pagam uma só vez.",
+                "O Desafio PetPrep de 12 semanas é uma compra única, não uma subscrição (49,99\u00a0€ na Eslovénia; a loja mostra o preço do teu país). Na versão atual da aplicação, podes escolhê-lo com qualquer raça, incluindo o cão sem raça definida e o gato doméstico. Uma compra é um desafio para um animal; cada novo desafio com um novo animal é uma nova compra. Os irmãos que cuidam do mesmo animal pagam uma só vez.",
+                "Um pai ou uma mãe pode passar ao desafio um cão sem raça definida ou um gato doméstico gratuito de que alguém já cuida, pelo mesmo preço e com o mesmo animal. Não é possível depois de um fim de jogo nem com cães sem raça definida criados numa primeira versão da aplicação; a aplicação indica-o quando for o caso. Um animal do desafio (incluindo um que passou ao desafio e um cão sem raça definida ou gato doméstico escolhido para o desafio) não pode voltar ao plano gratuito; só um reembolso faz um cão sem raça definida ou um gato doméstico regressar a ele (ver abaixo).",
                 "O pai ou a mãe compra na sua própria aplicação através da App Store ou do Google Play; não há compras na aplicação da criança. A loja processa o pagamento segundo os seus próprios termos.",
                 "Podes criar um animal do desafio antes de comprar. Até o desafio estar pago, o jogo está em pausa: o animal espera em segurança, as suas necessidades não descem e nada piora. Depois de comprares, o jogo continua onde parou.",
-                "Os reembolsos são tratados pela App Store e pelo Google Play segundo as suas próprias regras; pede-o à loja onde compraste. Se a loja reembolsar uma compra antes de o desafio terminar, o jogo desse animal volta a ficar em pausa. As imagens e os vídeos criados depois da compra mantêm-se.",
+                "Os reembolsos são tratados pela App Store e pelo Google Play segundo as suas próprias regras; pede-o à loja onde compraste. Se a loja reembolsar uma compra antes de o desafio terminar, o jogo desse animal volta a ficar em pausa. As imagens e os vídeos criados depois da compra mantêm-se. Um cão sem raça definida ou um gato doméstico não é posto em pausa, mas volta ao plano gratuito: o desafio termina sem certificado, voltam a aplicar-se as regras do plano gratuito e o animal volta a mostrar o conjunto básico de imagens e vídeos. Se mais tarde voltares a comprar o desafio para esse animal, começam 12 semanas novas a partir da nova compra.",
                 "Depois de um fim de jogo (abrigo), uma compra não desbloqueia o animal; um novo desafio é um novo animal e uma nova compra.",
                 "Desejos (coisas para o animal, quando estiverem disponíveis): uma criança pode pedir, mas só um pai ou uma mãe pode comprar, na sua própria aplicação. Um artigo comprado pertence ao animal para o qual foi comprado e é só estético – não afeta o jogo, a pontuação nem o certificado. Depois de um fim de jogo ou quando o animal é eliminado, a compra fica usada e não é reembolsada. Se a loja reembolsar a compra, o artigo (no caso das guloseimas, as guloseimas não usadas) é removido.",
                 "Se eliminares um animal, um filho ou a conta enquanto um desafio comprado ainda está a decorrer, a compra fica usada: não passa para outro animal e eliminar não é um reembolso. A aplicação avisa-te primeiro e pede-te confirmação.",
@@ -820,7 +825,7 @@ const pt: Dictionary = {
             {
               heading: "7. Notificações",
               paragraphs: [
-                "Se as permitires no dispositivo, a aplicação envia notificações push: lembretes ao cuidador, alertas aos pais quando um animal não tem comida, água ou limpeza, e avisos sobre doença, fim do jogo e fim do desafio. As notificações nunca contêm o nome da criança nem do animal e não são enviadas durante as horas de silêncio. Podes retirar a autorização a qualquer momento nas definições do dispositivo; sem notificações, um cuidador pode falhar rotinas, o que afeta o jogo e a pontuação.",
+                "Se as permitires no dispositivo, a aplicação envia notificações push: lembretes ao cuidador, alertas aos pais quando um animal não tem comida, água ou limpeza, e avisos sobre doença, fim do jogo e fim do desafio. As notificações nunca contêm o nome da criança nem do animal e não são enviadas durante as horas de silêncio. Podes retirar a autorização a qualquer momento nas definições do dispositivo; sem notificações, um cuidador pode falhar rotinas, o que afeta o jogo e a pontuação. Além disso, os pais recebem, no máximo uma vez por animal gratuito, um lembrete sobre o desafio quando alguém cuidou dele em pelo menos 5 dos seus primeiros 7 dias.",
               ],
             },
             {

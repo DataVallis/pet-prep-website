@@ -77,11 +77,12 @@ const nl: Dictionary = {
       name: "Kruising",
       text: "De volledige simulatie met een levensechte kruising.",
       features: [
-        "Simulatie van 12 weken met echte gevolgen",
+        "Dagelijkse zorg met echte gevolgen",
         "Echte wandelingen, geteld aan de hand van de stappen op de telefoon",
         "Ouderdashboard, stoplicht en Care Score",
         "Stille uren en een pauzeknop",
         "Fotorealistische beelden van je huisdier en korte video’s",
+        "Voeg later de challenge van 12 weken toe, met hetzelfde huisdier",
       ],
       cta: "Begin gratis",
     },
@@ -92,7 +93,7 @@ const nl: Dictionary = {
       text: "Voor gezinnen die de volledige ervaring willen, met een certificaat aan het eind.",
       features: [
         "Alles uit Kruising",
-        "Veeleisende rassen, zoals de [border collie](breed:border_collie)",
+        "Elk ras, zoals de [border collie](breed:border_collie), of de kruisingshond en huiskat",
         "De stemmingen van je huisdier als AI-video’s",
         "Verantwoordelijkheidscertificaat",
         "Eén prijs als broers en zussen een huisdier delen",
@@ -219,7 +220,7 @@ const nl: Dictionary = {
         },
       ],
       how: "Zo begin je: maak een account aan als ouder, voeg jezelf toe als verzorger en log in met de 6-cijferige code – op dezelfde telefoon of een andere.",
-      note: "Nu beschikbaar: de gratis kruisingshond en huiskat, en in de challenge van 12 weken elk honden- en kattenras uit de [dierenencyclopedie](page:animals).",
+      note: "Nu beschikbaar: de gratis kruisingshond en huiskat, en de challenge van 12 weken met een van beide of met elk honden- en kattenras uit de [dierenencyclopedie](page:animals).",
       link: "Zo gebruik je PetPrep in je eentje",
     },
     after: {
@@ -429,11 +430,11 @@ const nl: Dictionary = {
       meta: {
         title: "Prijzen – PetPrep is gratis om mee te beginnen, € 49,99 voor de challenge van 12 weken",
         description:
-          "De kruising is voor altijd gratis. De PetPrep Challenge van 12 weken kost € 49,99 per huisdier, als eenmalige aankoop. Eén prijs voor broers en zussen die een huisdier delen.",
+          "De kruising is voor altijd gratis. De PetPrep Challenge van 12 weken kost € 49,99 per huisdier, als eenmalige aankoop. Eén prijs voor broers en zussen die een huisdier delen. Ook als upgrade van je gratis huisdier.",
       },
       eyebrow: "Prijzen",
       title: "Eenvoudige, eerlijke prijzen.",
-      lead: "Begin gratis met een kruising. Koop de volledige challenge van 12 weken wanneer je eraan toe bent – de 12 weken gaan in bij de aankoop.",
+      lead: "Begin gratis met een kruising. Koop de volledige challenge van 12 weken wanneer je eraan toe bent – de 12 weken gaan in bij de aankoop. Dat kan ook met het gratis huisdier waar je kind al voor zorgt.",
       blocks: [
         { type: "pricing" },
         {
@@ -457,7 +458,10 @@ const nl: Dictionary = {
           heading: "Vragen over prijzen",
           items: [
             { q: "Is de gratis versie echt gratis?", a: "Ja. De kruising is voor altijd gratis, met de volledige simulatie, echte wandelingen en het ouderdashboard." },
-            { q: "Wat zit er in de challenge?", a: "Veeleisende rassen zoals de [border collie](breed:border_collie), de stemmingen van je huisdier als AI-video’s, aan het eind het Verantwoordelijkheidscertificaat en toegang voor beide ouders." },
+            { q: "Wat zit er in de challenge?", a: "Veeleisende rassen zoals de [border collie](breed:border_collie), de stemmingen van je huisdier als AI-video’s, aan het eind het Verantwoordelijkheidscertificaat en toegang voor beide ouders. Je kunt de challenge ook kiezen met de kruisingshond of huiskat." },
+            { q: "Kunnen we het gratis huisdier dat mijn kind al heeft upgraden naar de challenge?", a: "Ja, zolang de gratis kruisingshond of huiskat nog in het spel is. Start de challenge in de ouder-app vanaf de kaart van je kind. Het huisdier blijft hetzelfde: naam, uiterlijk, leeftijd en geleerde commando’s. De 12 weken, de Care Score en het certificaat tellen vanaf de aankoop; eerdere dagen blijven in de geschiedenis staan, gemarkeerd als vóór de challenge, en tellen niet mee. De prijs is dezelfde: € 49,99 eenmalig, geen abonnement. Kruisingshonden die in een vroege versie van de app zijn aangemaakt, kunnen niet worden geüpgraded; de app laat je weten of dat voor jouw hond geldt." },
+            { q: "Kan een challenge-huisdier terug naar het gratis plan?", a: "Niet op verzoek. Een kruisingshond of huiskat gaat alleen terug naar het gratis plan als de store de aankoop terugbetaalt; de challenge stopt dan, zonder certificaat. Koop je de challenge later opnieuw, dan beginnen er 12 nieuwe weken." },
+            { q: "Zet de app me onder druk om te kopen?", a: "Nee. Als je kind in minstens 5 van de eerste 7 dagen voor een gratis huisdier heeft gezorgd, krijg je één melding en een kaart op je dashboard over de challenge – één keer per huisdier, nooit tijdens de stille uren. Je kind ziet geen prijzen en ook deze herinnering niet." },
             { q: "Betalen broers en zussen dubbel?", a: "Nee. Kinderen die één huisdier delen, betalen één prijs. Een tweede huisdier in het gezin is een aparte challenge." },
             { q: "Hoe betaal ik?", a: "In de app, via de App Store of Google Play. Terugbetalingen verlopen via je account bij de App Store of Google Play." },
             { q: "Wat zijn Wensen, en kan mijn kind zelf iets kopen?", a: "Je kind kan om een mand, bakken, een speeltje of snoepjes voor het eigen huisdier vragen – tot drie open verzoeken tegelijk. Jij krijgt een melding en koopt het, of kiest “Nu niet”. Je kind ziet nooit prijzen en kan in de kinderapp niets kopen." },
@@ -489,7 +493,7 @@ const nl: Dictionary = {
             { q: "Kunnen broers en zussen een huisdier delen?", a: "Ja. Elk kind tekent een eigen contract, wat een kind doet telt voor dat kind en ieder kind krijgt een eigen, eerlijke Care Score." },
             { q: "En school en bedtijd?", a: "Stel stille uren in. Het huisdier doet dan rustiger aan, er wordt niets gestuurd en maaltijden die helemaal in de stille uren vallen, regel jij." },
             { q: "Is het eng voor kinderen?", a: "Nee. De gevolgen zijn echt, maar zacht: het huisdier gaat naar de dierenarts of het asiel, nooit iets naars om te zien, en er is altijd een nieuwe start." },
-            { q: "Welke dieren zijn er?", a: "Nu [honden](species:dog) en [katten](species:cat): een gratis kruisingshond en huiskat, en in de challenge van 12 weken elk ras uit de [dierenencyclopedie](page:animals), waarin ook hun onderbouwde behoeften staan. Meer diersoorten zijn gepland." },
+            { q: "Welke dieren zijn er?", a: "Nu [honden](species:dog) en [katten](species:cat): een gratis kruisingshond en huiskat, en de challenge van 12 weken met een van beide of met elk ras uit de [dierenencyclopedie](page:animals), waarin ook hun onderbouwde behoeften staan. Meer diersoorten zijn gepland." },
             { q: "Welke talen?", a: "Voorlopig is de app er in het Engels en het Sloveens. Er komen meer talen bij naarmate PetPrep in nieuwe landen van start gaat." },
             { q: "Wat gebeurt er als we een echt huisdier nemen?", a: "PetPrep kan een AI-assistent worden voor je echte huisdier. Dat deel is in ontwikkeling." },
           ],
@@ -777,7 +781,7 @@ const nl: Dictionary = {
             {
               heading: "3. De challenge van 12 weken, de Care Score en het certificaat",
               items: [
-                "De challenge duurt 12 weken (84 programmadagen) en begint bij de aankoop; elke verzorger heeft een eigen einddatum. Tijd waarin het spel op betaling wacht, telt niet mee voor de 12 weken.",
+                "De challenge duurt 12 weken (84 programmadagen) en begint bij de aankoop; elke verzorger heeft een eigen einddatum. Tijd waarin het spel op betaling wacht, telt niet mee voor de 12 weken. Upgrade je een gratis huisdier naar de challenge, dan beginnen de 12 weken ook bij de aankoop; de leeftijd van het huisdier wordt niet gereset, en de dagen vóór de aankoop blijven zichtbaar in de geschiedenis, gemarkeerd als vóór de challenge, maar tellen niet mee voor de 12 weken, de Care Score of het certificaat.",
                 "De Care Score (0–100) laat zien welk deel van de verwachte routines (eten geven, water, opruimen, de wandeling, een trainingssessie) de verzorger zelf heeft gedaan; elke ziekte van het huisdier verlaagt de score. Tijd waarin het spel is gestopt of het huisdier bij de dierenarts is, en stille uren tellen nooit mee tegen de verzorger.",
                 "Na 12 weken wordt een eindscore vastgelegd die later niet meer verandert; zorg na de challenge heeft hier geen invloed op. Met een score van 70 of hoger kun je in de app een Verantwoordelijkheidscertificaat (pdf) maken; onder de 70 krijg je een rapport van de challenge.",
                 "Als eten, water of netheid 24 uur op 0% blijft, wordt het huisdier “naar het asiel gebracht” (game over). Het spel met dat huisdier eindigt, er is geen certificaat en je krijgt een rapport van de challenge.",
@@ -789,10 +793,11 @@ const nl: Dictionary = {
               heading: "4. Gratis en betaalde functies, aankopen en terugbetalingen",
               items: [
                 "De kruisingshond en de huiskat zijn voor altijd gratis en daarmee probeer je PetPrep uit; er is geen gratis proefperiode van de challenge. Een gratis huisdier heeft geen programma van 12 weken en geen certificaat; de ouder ziet de geschiedenis van de afgelopen 7 dagen en het huisdier heeft een basisset aan afbeeldingen en video’s.",
-                "De PetPrep Challenge van 12 weken met een betaald ras is een eenmalige aankoop (€ 49,99 in Slovenië; de store toont de prijs voor jouw land). Eén aankoop is één challenge voor één huisdier; elke nieuwe challenge met een nieuw huisdier is een nieuwe aankoop. Broers en zussen die voor hetzelfde huisdier zorgen, betalen één keer.",
+                "De PetPrep Challenge van 12 weken is een eenmalige aankoop, geen abonnement (€ 49,99 in Slovenië; de store toont de prijs voor jouw land). In de huidige versie van de app kun je de challenge met elk ras kiezen, ook met de kruisingshond en de huiskat. Eén aankoop is één challenge voor één huisdier; elke nieuwe challenge met een nieuw huisdier is een nieuwe aankoop. Broers en zussen die voor hetzelfde huisdier zorgen, betalen één keer.",
+                "Een ouder kan een gratis kruisingshond of huiskat waar al iemand voor zorgt, voor dezelfde prijs en met hetzelfde huisdier upgraden naar de challenge. Na een game over en voor kruisingshonden die in een vroege versie van de app zijn aangemaakt, is een upgrade niet mogelijk; de app laat zien wanneer dat geldt. Een huisdier in de challenge (ook een geüpgraded huisdier en een kruisingshond of huiskat die voor de challenge is gekozen) kan niet terug naar het gratis plan; alleen een terugbetaling brengt een kruisingshond of huiskat daar terug (zie hieronder).",
                 "Een ouder koopt in de eigen app via de App Store of Google Play; in de app van het kind zijn geen aankopen mogelijk. De store verwerkt de betaling volgens de eigen voorwaarden.",
                 "Je kunt een challenge-huisdier aanmaken voordat je koopt. Zolang de challenge niet is betaald, is het spel gepauzeerd: het huisdier wacht veilig, zijn behoeften dalen niet en er gaat niets achteruit. Zodra je koopt, gaat het spel verder waar het was gestopt.",
-                "Terugbetalingen worden door de App Store en Google Play afgehandeld volgens hun eigen regels; vraag een terugbetaling aan bij de store waar je hebt gekocht. Als de store een aankoop terugbetaalt voordat de challenge klaar is, wordt het spel van dat huisdier weer gepauzeerd. Afbeeldingen en video’s die na de aankoop zijn gemaakt, blijven bestaan.",
+                "Terugbetalingen worden door de App Store en Google Play afgehandeld volgens hun eigen regels; vraag een terugbetaling aan bij de store waar je hebt gekocht. Als de store een aankoop terugbetaalt voordat de challenge klaar is, wordt het spel van dat huisdier weer gepauzeerd. Afbeeldingen en video’s die na de aankoop zijn gemaakt, blijven bestaan. Een kruisingshond of huiskat wordt dan niet gepauzeerd, maar gaat terug naar het gratis plan: de challenge stopt zonder certificaat, de regels van het gratis plan gelden weer en het huisdier toont weer de basisset beelden en video’s. Koop je de challenge later opnieuw voor dat huisdier, dan beginnen er 12 nieuwe weken vanaf de nieuwe aankoop.",
                 "Na een game over (asiel) ontgrendelt een aankoop het huisdier niet meer; een nieuwe challenge is een nieuw huisdier en een nieuwe aankoop.",
                 "Wensen (spullen voor het huisdier, zodra beschikbaar): een kind kan erom vragen, maar alleen een ouder kan ze kopen, in de eigen app. Een gekocht artikel hoort bij het huisdier waarvoor het is gekocht en is alleen voor de sier – het heeft geen invloed op het spel, de score of het certificaat. Na een game over of als het huisdier wordt verwijderd, geldt de aankoop als gebruikt en wordt die niet terugbetaald. Als de store de aankoop terugbetaalt, wordt het artikel verwijderd (bij snoepjes de ongebruikte snoepjes).",
                 "Als je een huisdier, een kind of het account verwijdert terwijl een gekochte challenge nog loopt, geldt de aankoop als gebruikt: die gaat niet over naar een ander huisdier en verwijderen is geen terugbetaling. De app waarschuwt je vooraf en vraagt om bevestiging.",
@@ -820,7 +825,7 @@ const nl: Dictionary = {
             {
               heading: "7. Meldingen",
               paragraphs: [
-                "Als je dat op het apparaat toestaat, stuurt de app pushmeldingen: herinneringen aan de verzorger, waarschuwingen aan ouders als een huisdier geen eten of water heeft of niet schoon is, en berichten over ziekte, game over en het einde van de challenge. Meldingen bevatten nooit de naam van het kind of het huisdier en worden niet tijdens stille uren verstuurd. Je kunt de toestemming op elk moment intrekken in de instellingen van het apparaat; zonder meldingen kan een verzorger routines missen, en dat heeft invloed op het spel en de score.",
+                "Als je dat op het apparaat toestaat, stuurt de app pushmeldingen: herinneringen aan de verzorger, waarschuwingen aan ouders als een huisdier geen eten of water heeft of niet schoon is, en berichten over ziekte, game over en het einde van de challenge. Meldingen bevatten nooit de naam van het kind of het huisdier en worden niet tijdens stille uren verstuurd. Je kunt de toestemming op elk moment intrekken in de instellingen van het apparaat; zonder meldingen kan een verzorger routines missen, en dat heeft invloed op het spel en de score. Ouders krijgen daarnaast hoogstens één keer per gratis huisdier een herinnering over de challenge, wanneer iemand er in minstens 5 van de eerste 7 dagen voor heeft gezorgd.",
               ],
             },
             {

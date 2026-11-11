@@ -98,7 +98,7 @@ const cs: RegistryCopy = {
     breedCount: (n) => `${n}${NB}${form(n, "plemeno", "plemena", "plemen")} v encyklopedii`,
     open: "Zobrazit plemena",
     openA11y: (many) => `Zobrazit plemena ${gen(many)}`,
-    freePlan: (name, activity) => `Bezplatný plán: ${lc(name)} (dospělé zvíře: ${activity}). Nemá vlastní stránku v encyklopedii.`,
+    freePlan: (name, activity) => `Bezplatný plán: ${lc(name)} (dospělé zvíře: ${activity}); 12týdenní výzvu lze přidat později. Nemá vlastní stránku v encyklopedii.`,
     otherSpecies: "Další druhy zvířat plánujeme.",
     methodTitle: "Jak tuto encyklopedii tvoříme",
     method: [
@@ -110,7 +110,7 @@ const cs: RegistryCopy = {
   },
   speciesStatus: { available: "V aplikaci", coming_soon: "Brzy v aplikaci", info_only: "Jen pro informaci" },
   availability: {
-    in_app: { label: "V aplikaci", text: "K dispozici ve 12týdenní výzvě PetPrep (placené plemeno)." },
+    in_app: { label: "V aplikaci", text: "K dispozici ve 12týdenní výzvě PetPrep." },
     coming_soon: { label: "Brzy v aplikaci", text: "Plemeno je hotové a otestované; přibude s některou z příštích verzí aplikace." },
     info_only: { label: "Jen pro informaci", text: "Plemeno je v encyklopedii pro informaci; v aplikaci si ho zatím vybrat nemůžete." },
   },

@@ -77,11 +77,12 @@ const en: Dictionary = {
       name: "Mixed breed",
       text: "The full simulation with a lifelike mixed-breed pet.",
       features: [
-        "12-week simulation with real consequences",
+        "Daily care with real consequences",
         "Real walks counted in real steps from the phone",
         "Parent dashboard, traffic light and Care Score",
         "Quiet hours and a pause button",
         "Photorealistic image of your pet and short videos",
+        "Add the 12-week challenge later, with the same pet",
       ],
       cta: "Start free",
     },
@@ -92,7 +93,7 @@ const en: Dictionary = {
       text: "For families who want the full experience and a certificate at the end.",
       features: [
         "Everything in Mixed breed",
-        "Demanding breeds, such as the [Border Collie](breed:border_collie)",
+        "Any breed, such as the [Border Collie](breed:border_collie), or the mixed breed and domestic cat",
         "Your pet's moods as AI videos",
         "Certificate of Responsibility",
         "One price when siblings share a pet",
@@ -219,7 +220,7 @@ const en: Dictionary = {
         },
       ],
       how: "How to start: create an account as a parent, add yourself as the carer profile and log in with the 6-digit code — on the same phone or another one.",
-      note: "Available today: the free mixed-breed dog and domestic cat, and every dog and cat breed in the [animal register](page:animals) in the 12-week challenge.",
+      note: "Available today: the free mixed-breed dog and domestic cat, and the 12-week challenge with either of them or with any dog or cat breed in the [animal register](page:animals).",
       link: "How to use PetPrep on your own",
     },
     after: {
@@ -429,11 +430,11 @@ const en: Dictionary = {
       meta: {
         title: "Pricing — PetPrep is free to start, €49.99 for the 12-week challenge",
         description:
-          "The mixed-breed pet is free forever. The 12-week PetPrep Challenge costs €49.99 per pet as a one-time purchase. One price for siblings sharing a pet.",
+          "The mixed-breed pet is free forever. The 12-week PetPrep Challenge costs €49.99 per pet as a one-time purchase. One price for siblings sharing a pet. You can also upgrade your free pet.",
       },
       eyebrow: "Pricing",
       title: "Simple, fair pricing.",
-      lead: "Start free with a mixed-breed pet. Buy the full 12-week challenge when you are ready — the 12 weeks start with the purchase.",
+      lead: "Start free with a mixed-breed pet. Buy the full 12-week challenge when you are ready — the 12 weeks start with the purchase. It also works with the free pet your child already looks after.",
       blocks: [
         { type: "pricing" },
         {
@@ -457,7 +458,10 @@ const en: Dictionary = {
           heading: "Pricing questions",
           items: [
             { q: "Is the free version really free?", a: "Yes. The mixed-breed pet is free forever, with the full simulation, real walks and the parent dashboard." },
-            { q: "What does the challenge include?", a: "Demanding breeds such as the [Border Collie](breed:border_collie), your pet's moods as AI videos, the Certificate of Responsibility at the end and access for both parents." },
+            { q: "What does the challenge include?", a: "Demanding breeds such as the [Border Collie](breed:border_collie), your pet's moods as AI videos, the Certificate of Responsibility at the end and access for both parents. You can choose it with the mixed-breed dog or domestic cat too." },
+            { q: "Can we upgrade the free pet my child already has?", a: "Yes, as long as the free mixed-breed dog or domestic cat is still in the game. In the parent app, start the 12-week challenge from your child's card. The pet stays the same: name, look, age and learned commands. The 12 weeks, the Care Score and the certificate count from the purchase; earlier days stay in the history, marked “before the challenge”, and do not count. The price is the same: €49.99, one-time, no subscription. Mixed-breed dogs created in an early version of the app cannot be upgraded; the app tells you if this applies to yours." },
+            { q: "Can a challenge pet go back to the free plan?", a: "Not by choice. A mixed-breed dog or domestic cat returns to the free plan only if the store refunds the purchase; the challenge then ends without a certificate. If you buy the challenge again later, a new 12 weeks start." },
+            { q: "Will the app push me to buy?", a: "No. If your child cared for a free pet on at least 5 of its first 7 days, you get one notification and a card on your dashboard about the challenge — once per pet, never during quiet hours. Your child never sees prices or this reminder." },
             { q: "Do siblings pay twice?", a: "No. Children who share one pet pay one price. A second pet in the family is a separate challenge." },
             { q: "How do I pay?", a: "In the app, through the App Store or Google Play. Refunds are handled by your store account." },
             { q: "What are Wishes, and can my child buy things alone?", a: "Your child can ask for a bed, bowls, a toy or treats for their pet — up to three open requests at a time. You get a notification and either buy it or choose \u201cNot now\u201d. Your child never sees prices and cannot buy anything in the child app." },
@@ -489,7 +493,7 @@ const en: Dictionary = {
             { q: "Can siblings share a pet?", a: "Yes. Each child signs their own contract, every action is credited to whoever did it and each child gets their own fair Care Score." },
             { q: "What about school and bedtime?", a: "Set quiet hours. The pet slows down, nothing is sent and meals that fall entirely in quiet hours are handled by you." },
             { q: "Is it scary for children?", a: "No. Consequences are real but gentle: the pet goes to the vet or the shelter, never anything graphic, and there is always a fresh start." },
-            { q: "Which animals are available?", a: "[Dogs](species:dog) and [cats](species:cat) today: a free mixed-breed dog and domestic cat, and in the 12-week challenge every breed in the [animal register](page:animals), which also lists their sourced needs. More species are planned." },
+            { q: "Which animals are available?", a: "[Dogs](species:dog) and [cats](species:cat) today: a free mixed-breed dog and domestic cat, and the 12-week challenge with either of them or with any breed in the [animal register](page:animals), which also lists their sourced needs. More species are planned." },
             { q: "Which languages?", a: "English and Slovenian today. More languages are coming as PetPrep launches in new countries." },
             { q: "What happens after we get a real pet?", a: "PetPrep can become an AI assistant for your real pet. This part is in development." },
           ],
@@ -777,7 +781,7 @@ const en: Dictionary = {
             {
               heading: "3. The 12-week challenge, Care Score and certificate",
               items: [
-                "The challenge lasts 12 weeks (84 programme days) and starts with the purchase; each carer has their own finish. Time while the game is waiting for payment does not count towards the 12 weeks.",
+                "The challenge lasts 12 weeks (84 programme days) and starts with the purchase; each carer has their own finish. Time while the game is waiting for payment does not count towards the 12 weeks. If you upgrade a free pet to the challenge, the 12 weeks also start with the purchase; the pet's age does not reset, and the days before the purchase stay visible in the history, marked “before the challenge”, but count neither towards the 12 weeks nor towards the Care Score or the certificate.",
                 "The Care Score (0–100) shows what share of the expected routines (feeding, water, cleaning, the walk, a training session) the carer did themselves; each illness of the pet lowers it. Time while the game is stopped, while the pet is at the vet, and quiet hours never count against the carer.",
                 "After 12 weeks a final score is recorded and does not change later; care after the challenge does not affect it. With a score of 70 or more you can create a Responsibility Certificate (PDF) in the app; below 70 you get a challenge report.",
                 "If food, water or cleanliness stays at 0% for 24 hours, the pet is “taken to the shelter” (game over). The game with that pet ends, there is no certificate, and you get a challenge report.",
@@ -789,10 +793,11 @@ const en: Dictionary = {
               heading: "4. Free and paid features, purchases and refunds",
               items: [
                 "The mixed-breed dog and the domestic cat are free forever and are the way to try PetPrep; there is no free trial of the challenge. A free pet has no 12-week programme and no certificate, the parent sees the last 7 days of history, and the pet has a basic set of images and videos.",
-                "The 12-week PetPrep Challenge with a paid breed is a one-time purchase (€49.99 in Slovenia; the store shows the price for your country). One purchase is one challenge for one pet; each new challenge with a new pet is a new purchase. Siblings caring for the same pet pay once.",
+                "The 12-week PetPrep Challenge is a one-time purchase, not a subscription (€49.99 in Slovenia; the store shows the price for your country). In the current version of the app you can choose it with any breed, including the mixed-breed dog and the domestic cat. One purchase is one challenge for one pet; each new challenge with a new pet is a new purchase. Siblings caring for the same pet pay once.",
+                "A parent can upgrade a free mixed-breed dog or domestic cat that someone already looks after to the challenge, at the same price and with the same pet. An upgrade is not possible after a game over or for mixed-breed dogs created in an early version of the app; the app shows when this applies. A pet on the challenge (including an upgraded pet and a mixed-breed dog or domestic cat chosen for the challenge) cannot be switched back to the free plan; only a refund returns a mixed-breed dog or domestic cat to it (see below).",
                 "A parent buys in their own app through the App Store or Google Play; there are no purchases in the child's app. The store processes the payment under its own terms.",
                 "You can create a challenge pet before buying. Until the challenge is paid, the game is paused: the pet waits safely, its needs do not drop and nothing gets worse. Once you buy, the game continues where it stopped.",
-                "Refunds are handled by the App Store and Google Play under their own rules; request one from the store where you bought. If the store refunds a purchase before the challenge is finished, that pet's game is paused again. Images and videos created after the purchase remain.",
+                "Refunds are handled by the App Store and Google Play under their own rules; request one from the store where you bought. If the store refunds a purchase before the challenge is finished, that pet's game is paused again. Images and videos created after the purchase remain. A mixed-breed dog or domestic cat is not paused but returns to the free plan: the challenge ends without a certificate, the free-plan rules apply again and the pet shows its basic set of images and videos again. If you later buy the challenge again for that pet, a new 12 weeks start with the new purchase.",
                 "After a game over (shelter), a purchase does not unlock the pet; a new challenge is a new pet and a new purchase.",
                 "Wishes (things for the pet, once available): a child can ask, but only a parent can buy, in their own app. A bought item belongs to the pet it was bought for and is looks only — it does not affect the game, the score or the certificate. After a game over or when the pet is deleted, the purchase stays used and is not refunded. If the store refunds the purchase, the item (for treats, the unused treats) is removed.",
                 "If you delete a pet, a child or the account while a purchased challenge is still running, the purchase stays used: it does not move to another pet and deleting is not a refund. The app warns you first and asks you to confirm.",
@@ -820,7 +825,7 @@ const en: Dictionary = {
             {
               heading: "7. Notifications",
               paragraphs: [
-                "If you allow them on the device, the app sends push notifications: reminders to the carer, alerts to parents when a pet has no food, water or cleanliness, and news about illness, game over and the end of the challenge. Notifications never contain the child's or pet's name and are not sent during quiet hours. You can withdraw permission at any time in the device settings; without notifications a carer may miss routines, which affects the game and the score.",
+                "If you allow them on the device, the app sends push notifications: reminders to the carer, alerts to parents when a pet has no food, water or cleanliness, and news about illness, game over and the end of the challenge. Notifications never contain the child's or pet's name and are not sent during quiet hours. You can withdraw permission at any time in the device settings; without notifications a carer may miss routines, which affects the game and the score. Parents also get, at most once per free pet, a reminder about the challenge when someone has looked after it on at least 5 of its first 7 days.",
               ],
             },
             {

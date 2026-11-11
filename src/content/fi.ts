@@ -77,11 +77,12 @@ const fi: Dictionary = {
       name: "Sekarotuinen",
       text: "Koko simulaatio aidonnäköisen sekarotuisen lemmikin kanssa.",
       features: [
-        "12 viikon simulaatio todellisine seurauksineen",
+        "Päivittäinen hoito todellisine seurauksineen",
         "Oikeat lenkit, jotka lasketaan puhelimen oikeina askelina",
         "Vanhemman näkymä, liikennevalo ja Care Score",
         "Hiljaiset tunnit ja taukopainike",
         "Fotorealistinen kuva lemmikistäsi ja lyhyitä videoita",
+        "Lisää 12 viikon haaste myöhemmin, samalle lemmikille",
       ],
       cta: "Aloita maksutta",
     },
@@ -92,7 +93,7 @@ const fi: Dictionary = {
       text: "Perheille, jotka haluavat koko kokemuksen ja lopuksi todistuksen.",
       features: [
         "Kaikki, mitä Sekarotuinen sisältää",
-        "Vaativat rodut, kuten [bordercollie](breed:border_collie)",
+        "Mikä tahansa rotu, kuten [bordercollie](breed:border_collie), tai sekarotuinen koira ja kotikissa",
         "Lemmikkisi tunnetilat tekoälyvideoina",
         "Vastuutodistus",
         "Yksi hinta, kun sisarukset jakavat lemmikin",
@@ -219,7 +220,7 @@ const fi: Dictionary = {
         },
       ],
       how: "Näin aloitat: luo tili vanhempana, lisää itsesi hoitajaprofiiliksi ja kirjaudu 6-numeroisella koodilla – samalla tai toisella puhelimella.",
-      note: "Saatavilla jo nyt: maksuton sekarotuinen koira ja kotikissa sekä 12 viikon haasteessa jokainen [eläinhakemiston](page:animals) koira- ja kissarotu.",
+      note: "Saatavilla jo nyt: maksuton sekarotuinen koira ja kotikissa sekä 12 viikon haaste jommankumman tai minkä tahansa [eläinhakemiston](page:animals) koira- ja kissarodun kanssa.",
       link: "Näin käytät PetPrepiä yksin",
     },
     after: {
@@ -429,11 +430,11 @@ const fi: Dictionary = {
       meta: {
         title: "Hinnat – PetPrepin aloitus on maksuton, 12 viikon haaste 49,99 €",
         description:
-          "Sekarotuinen lemmikki on aina maksuton. PetPrepin 12 viikon haaste maksaa 49,99 € lemmikkiä kohden kertaostoksena. Yksi hinta lemmikin jakaville sisaruksille.",
+          "Sekarotuinen lemmikki on aina maksuton. PetPrepin 12 viikon haaste maksaa 49,99 € lemmikkiä kohden kertaostoksena. Yksi hinta lemmikin jakaville sisaruksille. Myös maksuttoman lemmikkisi päivityksenä.",
       },
       eyebrow: "Hinnat",
       title: "Yksinkertainen ja reilu hinnoittelu.",
-      lead: "Aloita maksutta sekarotuisella lemmikillä. Osta koko 12 viikon haaste, kun olet valmis – 12 viikkoa alkaa ostohetkestä.",
+      lead: "Aloita maksutta sekarotuisella lemmikillä. Osta koko 12 viikon haaste, kun olet valmis – 12 viikkoa alkaa ostohetkestä. Se onnistuu myös sille maksuttomalle lemmikille, jota lapsesi jo hoitaa.",
       blocks: [
         { type: "pricing" },
         {
@@ -457,7 +458,10 @@ const fi: Dictionary = {
           heading: "Kysymyksiä hinnoista",
           items: [
             { q: "Onko maksuton versio todella maksuton?", a: "On. Sekarotuinen lemmikki on aina maksuton, ja siinä on koko simulaatio, oikeat lenkit ja vanhemman näkymä." },
-            { q: "Mitä haaste sisältää?", a: "Vaativat rodut, kuten [bordercollien](breed:border_collie), lemmikkisi tunnetilat tekoälyvideoina, Vastuutodistuksen lopuksi ja käyttöoikeuden molemmille vanhemmille." },
+            { q: "Mitä haaste sisältää?", a: "Vaativat rodut, kuten [bordercollien](breed:border_collie), lemmikkisi tunnetilat tekoälyvideoina, Vastuutodistuksen lopuksi ja käyttöoikeuden molemmille vanhemmille. Voit valita sen myös sekarotuiselle koiralle tai kotikissalle." },
+            { q: "Voimmeko päivittää lapseni nykyisen maksuttoman lemmikin haasteeseen?", a: "Kyllä, kunhan maksuton sekarotuinen koira tai kotikissa on vielä pelissä. Aloita haaste vanhemman sovelluksessa lapsesi kortilta. Lemmikki pysyy samana: nimi, ulkonäkö, ikä ja opitut käskyt. 12 viikkoa, Care Score ja todistus lasketaan ostosta; aiemmat päivät jäävät historiaan haastetta edeltävinä päivinä merkittyinä, eikä niitä lasketa. Hinta on sama: 49,99 € kertaostona, ei tilausta. Sovelluksen varhaisessa versiossa luotuja sekarotuisia koiria ei voi päivittää; sovellus kertoo, koskeeko tämä sinun koiraasi." },
+            { q: "Voiko haasteen lemmikki palata ilmaisversioon?", a: "Ei pyynnöstä. Sekarotuinen koira tai kotikissa palaa ilmaisversioon vain, jos kauppa hyvittää oston; haaste päättyy silloin ilman todistusta. Jos ostat haasteen myöhemmin uudelleen, alkaa uusi 12 viikon jakso." },
+            { q: "Painostaako sovellus ostamaan?", a: "Ei. Jos lapsesi on hoitanut maksutonta lemmikkiä vähintään 5:nä sen ensimmäisistä 7 päivästä, saat yhden ilmoituksen ja kortin näkymääsi haasteesta – kerran lemmikkiä kohden, ei koskaan hiljaisina tunteina. Lapsesi ei näe hintoja eikä tätä muistutusta." },
             { q: "Maksavatko sisarukset kahdesti?", a: "Eivät. Yhden lemmikin jakavat lapset maksavat yhden hinnan. Perheen toinen lemmikki on erillinen haaste." },
             { q: "Miten maksan?", a: "Sovelluksessa App Storen tai Google Playn kautta. Hyvitykset hoidetaan kauppatilisi kautta." },
             { q: "Mitä Toiveet ovat ja voiko lapseni ostaa jotain yksin?", a: "Lapsesi voi toivoa lemmikilleen petiä, kuppeja, lelua tai herkkuja – enintään kolme avointa toivetta kerrallaan. Saat ilmoituksen ja joko ostat tavaran tai valitset ”Ei nyt”. Lapsesi ei koskaan näe hintoja eikä voi ostaa mitään lapsen sovelluksessa." },
@@ -489,7 +493,7 @@ const fi: Dictionary = {
             { q: "Voivatko sisarukset jakaa lemmikin?", a: "Voivat. Jokainen lapsi allekirjoittaa oman sopimuksensa, jokainen teko kirjataan sen tekijälle ja jokainen lapsi saa oman, reilun Care Scorensa." },
             { q: "Entä koulu ja nukkumaanmeno?", a: "Aseta hiljaiset tunnit. Lemmikin tahti hidastuu, mitään ei lähetetä, ja kokonaan hiljaisiin tunteihin osuvat ateriat hoidat sinä." },
             { q: "Onko se lapsille pelottavaa?", a: "Ei. Seuraukset ovat todellisia mutta lempeitä: lemmikki joutuu eläinlääkäriin tai löytöeläinkotiin, mitään järkyttävää ei näytetä, ja aina voi aloittaa alusta." },
-            { q: "Mitä eläimiä on saatavilla?", a: "Nyt [koirat](species:dog) ja [kissat](species:cat): maksuton sekarotuinen koira ja kotikissa sekä 12 viikon haasteessa jokainen [eläinhakemiston](page:animals) rotu – hakemistossa on myös niiden tarpeet lähteineen. Lisää lajeja on suunnitteilla." },
+            { q: "Mitä eläimiä on saatavilla?", a: "Nyt [koirat](species:dog) ja [kissat](species:cat): maksuton sekarotuinen koira ja kotikissa sekä 12 viikon haaste jommankumman tai minkä tahansa [eläinhakemiston](page:animals) rodun kanssa – hakemistossa on myös niiden tarpeet lähteineen. Lisää lajeja on suunnitteilla." },
             { q: "Millä kielillä?", a: "Nyt englanniksi ja sloveniaksi. Lisää kieliä tulee, kun PetPrep julkaistaan uusissa maissa." },
             { q: "Mitä tapahtuu, kun saamme oikean lemmikin?", a: "PetPrepistä voi tulla tekoälyavustaja oikealle lemmikillesi. Tämä osa on kehitteillä." },
           ],
@@ -777,7 +781,7 @@ const fi: Dictionary = {
             {
               heading: "3. 12 viikon haaste, Care Score ja todistus",
               items: [
-                "Haaste kestää 12 viikkoa (84 ohjelmapäivää) ja alkaa ostohetkestä; jokaisella hoitajalla on oma päättymispäivänsä. Aikaa, jonka peli odottaa maksua, ei lasketa 12 viikkoon.",
+                "Haaste kestää 12 viikkoa (84 ohjelmapäivää) ja alkaa ostohetkestä; jokaisella hoitajalla on oma päättymispäivänsä. Aikaa, jonka peli odottaa maksua, ei lasketa 12 viikkoon. Jos päivität maksuttoman lemmikin haasteeseen, myös silloin 12 viikkoa alkaa ostohetkestä; lemmikin ikä ei nollaudu, ja ostoa edeltävät päivät näkyvät historiassa haastetta edeltävinä päivinä merkittyinä, mutta niitä ei lasketa 12 viikkoon, Care Scoreen eikä todistukseen.",
                 "Care Score (0–100) näyttää, kuinka suuren osan odotetuista rutiineista (ruokinta, vesi, siivous, lenkki, koulutushetki) hoitaja teki itse; jokainen lemmikin sairastuminen laskee sitä. Aikaa, jonka peli on pysäytettynä tai lemmikki eläinlääkärissä, ja hiljaisia tunteja ei lueta koskaan hoitajan tappioksi.",
                 "12 viikon jälkeen lopullinen tulos kirjataan, eikä se muutu myöhemmin; haasteen jälkeinen hoito ei vaikuta siihen. Jos tulos on vähintään 70, voit luoda sovelluksessa Vastuutodistuksen (PDF); alle 70 pisteellä saat haasteraportin.",
                 "Jos ruoka, vesi tai siisteys pysyy 0 %:ssa 24 tuntia, lemmikki ”viedään löytöeläinkotiin” (peli päättyy). Peli kyseisen lemmikin kanssa loppuu, todistusta ei tule, ja saat haasteraportin.",
@@ -789,10 +793,11 @@ const fi: Dictionary = {
               heading: "4. Maksuttomat ja maksulliset ominaisuudet, ostot ja hyvitykset",
               items: [
                 "Sekarotuinen koira ja kotikissa ovat aina maksuttomia, ja niiden avulla PetPrepiä voi kokeilla; haasteesta ei ole maksutonta kokeilujaksoa. Maksuttomalla lemmikillä ei ole 12 viikon ohjelmaa eikä todistusta, vanhempi näkee viimeisten 7 päivän historian, ja lemmikillä on peruskokoelma kuvia ja videoita.",
-                "PetPrepin 12 viikon haaste maksullisella rodulla on kertaosto (49,99 € Sloveniassa; kauppa näyttää maasi hinnan). Yksi osto on yksi haaste yhdelle lemmikille; jokainen uusi haaste uudella lemmikillä on uusi osto. Samaa lemmikkiä hoitavat sisarukset maksavat kerran.",
+                "PetPrepin 12 viikon haaste on kertaosto, ei tilaus (49,99 € Sloveniassa; kauppa näyttää maasi hinnan). Sovelluksen nykyisessä versiossa voit valita sen mille tahansa rodulle, myös sekarotuiselle koiralle ja kotikissalle. Yksi osto on yksi haaste yhdelle lemmikille; jokainen uusi haaste uudella lemmikillä on uusi osto. Samaa lemmikkiä hoitavat sisarukset maksavat kerran.",
+                "Vanhempi voi päivittää maksuttoman sekarotuisen koiran tai kotikissan, jota joku jo hoitaa, haasteeseen samaan hintaan ja saman lemmikin kanssa. Se ei ole mahdollista pelin päätyttyä eikä sovelluksen varhaisessa versiossa luoduille sekarotuisille koirille; sovellus näyttää, milloin näin on. Haasteessa olevaa lemmikkiä (myös päivitettyä lemmikkiä ja haasteeseen valittua sekarotuista koiraa tai kotikissaa) ei voi vaihtaa takaisin ilmaisversioon; vain hyvitys palauttaa sekarotuisen koiran tai kotikissan sinne (ks. alla).",
                 "Vanhempi ostaa omassa sovelluksessaan App Storen tai Google Playn kautta; lapsen sovelluksessa ei ole ostoja. Kauppa käsittelee maksun omien ehtojensa mukaisesti.",
                 "Voit luoda haastelemmikin ennen ostoa. Kunnes haaste on maksettu, peli on tauolla: lemmikki odottaa turvassa, sen tarpeet eivät laske eikä mikään huonone. Kun ostat, peli jatkuu siitä, mihin se jäi.",
-                "Hyvitykset hoitavat App Store ja Google Play omien sääntöjensä mukaisesti; pyydä hyvitystä siitä kaupasta, josta ostit. Jos kauppa hyvittää oston ennen kuin haaste on päättynyt, kyseisen lemmikin peli asetetaan taas tauolle. Oston jälkeen luodut kuvat ja videot säilyvät.",
+                "Hyvitykset hoitavat App Store ja Google Play omien sääntöjensä mukaisesti; pyydä hyvitystä siitä kaupasta, josta ostit. Jos kauppa hyvittää oston ennen kuin haaste on päättynyt, kyseisen lemmikin peli asetetaan taas tauolle. Oston jälkeen luodut kuvat ja videot säilyvät. Sekarotuinen koira tai kotikissa ei siirry tauolle, vaan palaa ilmaisversioon: haaste päättyy ilman todistusta, ilmaisversion säännöt ovat taas voimassa ja lemmikillä on taas kuvien ja videoiden perusvalikoima. Jos ostat haasteen myöhemmin uudelleen samalle lemmikille, uusi 12 viikon jakso alkaa uudesta ostosta.",
                 "Pelin päätyttyä (löytöeläinkoti) osto ei avaa lemmikkiä uudelleen; uusi haaste on uusi lemmikki ja uusi osto.",
                 "Toiveet (tavaroita lemmikille, kun ne ovat saatavilla): lapsi voi toivoa, mutta vain vanhempi voi ostaa, omassa sovelluksessaan. Ostettu tavara kuuluu sille lemmikille, jolle se ostettiin, ja vaikuttaa vain ulkonäköön – se ei vaikuta peliin, tulokseen tai todistukseen. Kun peli päättyy tai lemmikki poistetaan, osto katsotaan käytetyksi eikä sitä hyvitetä. Jos kauppa hyvittää oston, tavara (herkkujen kohdalla käyttämättömät herkut) poistetaan.",
                 "Jos poistat lemmikin, lapsen tai tilin, kun ostettu haaste on vielä käynnissä, osto katsotaan käytetyksi: se ei siirry toiselle lemmikille, eikä poistaminen ole hyvitys. Sovellus varoittaa sinua ensin ja pyytää vahvistuksen.",
@@ -820,7 +825,7 @@ const fi: Dictionary = {
             {
               heading: "7. Ilmoitukset",
               paragraphs: [
-                "Jos sallit ne laitteella, sovellus lähettää push-ilmoituksia: muistutuksia hoitajalle, hälytyksiä vanhemmille, kun lemmikiltä puuttuu ruoka, vesi tai siisteys, sekä tietoja sairastumisesta, pelin päättymisestä ja haasteen loppumisesta. Ilmoituksissa ei koskaan ole lapsen tai lemmikin nimeä, eikä niitä lähetetä hiljaisten tuntien aikana. Voit perua luvan milloin tahansa laitteen asetuksista; ilman ilmoituksia hoitajalta voi jäädä rutiineja väliin, mikä vaikuttaa peliin ja tulokseen.",
+                "Jos sallit ne laitteella, sovellus lähettää push-ilmoituksia: muistutuksia hoitajalle, hälytyksiä vanhemmille, kun lemmikiltä puuttuu ruoka, vesi tai siisteys, sekä tietoja sairastumisesta, pelin päättymisestä ja haasteen loppumisesta. Ilmoituksissa ei koskaan ole lapsen tai lemmikin nimeä, eikä niitä lähetetä hiljaisten tuntien aikana. Voit perua luvan milloin tahansa laitteen asetuksista; ilman ilmoituksia hoitajalta voi jäädä rutiineja väliin, mikä vaikuttaa peliin ja tulokseen. Vanhemmat saavat lisäksi enintään kerran maksutonta lemmikkiä kohden muistutuksen haasteesta, kun joku on hoitanut sitä vähintään 5:nä sen ensimmäisistä 7 päivästä.",
               ],
             },
             {

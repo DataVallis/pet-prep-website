@@ -43,7 +43,7 @@ const pt: RegistryCopy = {
     breedCount: (n) => `${n} ${s(n, "raça", "raças")} no registo`,
     open: "Ver raças",
     openA11y: (many) => `Ver raças: ${lc(many)}`,
-    freePlan: (name, activity) => `Plano gratuito: ${lc(name)} (${activity} em adulto). Não tem página de raça.`,
+    freePlan: (name, activity) => `Plano gratuito: ${lc(name)} (${activity} em adulto); podes juntar-lhe o desafio de 12 semanas mais tarde. Não tem página de raça.`,
     otherSpecies: "Estão previstas mais espécies.",
     methodTitle: "Como construímos este registo",
     method: [
@@ -55,7 +55,7 @@ const pt: RegistryCopy = {
   },
   speciesStatus: { available: "Na aplicação", coming_soon: "Em breve na aplicação", info_only: "Apenas informativo" },
   availability: {
-    in_app: { label: "Na aplicação", text: "Disponível no Desafio PetPrep de 12 semanas (raça paga)." },
+    in_app: { label: "Na aplicação", text: "Disponível no Desafio PetPrep de 12 semanas." },
     coming_soon: { label: "Em breve na aplicação", text: "Criada e testada; chega com uma próxima versão da aplicação." },
     info_only: { label: "Apenas informativo", text: "Está no registo a título informativo; por agora não a podes adotar na aplicação." },
   },
