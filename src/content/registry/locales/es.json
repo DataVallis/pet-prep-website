@@ -781,6 +781,25 @@
       "synonyms": [
         "Lhasa"
       ]
+    },
+    "border_terrier": {
+      "name": "Border terrier",
+      "slug": "border-terrier"
+    },
+    "leonberger": {
+      "name": "Leonberger",
+      "slug": "leonberger",
+      "synonyms": [
+        "Leonberg"
+      ]
+    },
+    "beauceron": {
+      "name": "Pastor de Beauce",
+      "slug": "pastor-de-beauce",
+      "synonyms": [
+        "Beauceron",
+        "Pastor Beauceron"
+      ]
     }
   },
   "suitability_labels": {
