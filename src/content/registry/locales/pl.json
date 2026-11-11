@@ -924,6 +924,21 @@
         "Apso",
         "Lhasa-apso"
       ]
+    },
+    "border_terrier": {
+      "name": "Border terrier",
+      "slug": "border-terrier"
+    },
+    "leonberger": {
+      "name": "Leonberger",
+      "slug": "leonberger"
+    },
+    "beauceron": {
+      "name": "Beauceron",
+      "slug": "beauceron",
+      "synonyms": [
+        "Owczarek z Beauce"
+      ]
     }
   },
   "suitability_labels": {
