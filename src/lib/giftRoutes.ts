@@ -4,7 +4,7 @@
  * share it. Switch off → no static params, no redirects, no sitemap entry: the URLs answer the branded 404.
  */
 import { locales } from "../i18n/config.ts";
-import { giftPaths, isGiftEnabled, type GiftPageKey } from "./gift.ts";
+import { giftBuyUrl, giftPaths, isGiftEnabled, type GiftPageKey } from "./gift.ts";
 
 const pageKeys: GiftPageKey[] = ["gift", "thanks", "redeem"];
 
@@ -19,14 +19,20 @@ export function giftStaticLocale(lang: "en" | "sl", enabled: boolean = isGiftEna
  */
 export function giftRedirects(enabled: boolean = isGiftEnabled()): { source: string; destination: string; permanent: true }[] {
   if (!enabled) return [];
-  return pageKeys.flatMap((key) =>
+  const others = pageKeys.flatMap((key) =>
     locales
       .filter((l) => l !== "en" && l !== "sl")
       .map((l) => ({ source: `/${l}${giftPaths[key].en}`, destination: giftPaths[key].en, permanent: true as const })),
   );
+  // Slovenian visitors who type the English slug land on their own page instead of a 404.
+  const sl = pageKeys.map((key) => ({ source: `/sl${giftPaths[key].en}`, destination: giftPaths[key].sl, permanent: true as const }));
+  return [...others, ...sl];
 }
 
-/** Only the sales page is indexable; thanks and redeem never reach the sitemap. */
-export function giftSitemapPaths(enabled: boolean = isGiftEnabled()): { en: string; sl: string } | null {
-  return enabled ? { en: giftPaths.gift.en, sl: giftPaths.gift.sl } : null;
+/**
+ * Only the sales page is indexable; thanks and redeem never reach the sitemap. While the checkout URL is
+ * missing the page has a dead buy button, so it stays out of the sitemap (and is noindex) until the URL is set.
+ */
+export function giftSitemapPaths(enabled: boolean = isGiftEnabled(), hasBuyUrl: boolean = giftBuyUrl() !== null): { en: string; sl: string } | null {
+  return enabled && hasBuyUrl ? { en: giftPaths.gift.en, sl: giftPaths.gift.sl } : null;
 }

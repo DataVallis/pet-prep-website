@@ -22,7 +22,8 @@ export function giftMetadata(page: GiftPageKey, lang: GiftLocale, locale: string
   if (!isGiftEnabled() || locale !== lang) return {};
   const copy = giftCopy[lang];
   const meta = page === "gift" ? copy.meta : page === "thanks" ? copy.thanks.meta : copy.redeem.meta;
-  const noIndex = page !== "gift";
+  // Thanks and redeem are never indexed; the sales page is not either while its checkout URL is missing (dead buy button).
+  const noIndex = page !== "gift" || giftBuyUrl() === null;
   const base = buildMetadataFor({
     locale: lang,
     path: giftPaths[page][lang],

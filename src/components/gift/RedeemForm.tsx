@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useId, useRef, useState, type FormEvent } from "react";
+import { useId, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
 import { apiBase, giftPaths, isPlausibleCode, isPlausibleEmail, isSuccess, normalizeCode, redeemOutcome, type GiftLocale, type MessageKey } from "@/lib/gift";
 import { giftCopy } from "@/content/gift";
+
+const subscribeNever = () => () => {};
 
 /**
  * Redeem form (M6-S01, contract §8.3–§8.4). The browser posts straight to the PetPrep API so the per-IP rate
@@ -19,6 +21,8 @@ export function RedeemForm({ locale }: { locale: GiftLocale }) {
   const [pending, setPending] = useState(false);
   const [result, setResult] = useState<MessageKey | null>(null);
   const busy = useRef(false);
+  // Disabled until hydrated: a submit before the script runs must not do a native form submission.
+  const mounted = useSyncExternalStore(subscribeNever, () => true, () => false);
 
   async function submit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -34,13 +38,17 @@ export function RedeemForm({ locale }: { locale: GiftLocale }) {
     try {
       const controller = new AbortController();
       const timer = window.setTimeout(() => controller.abort(), 20000);
-      const res = await fetch(`${apiBase()}/api/gift/redeem`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({ code: normalizeCode(code), email: email.trim(), locale }),
-        signal: controller.signal,
+      let res: Response;
+      try {
+          res = await fetch(`${apiBase()}/api/gift/redeem`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify({ code: normalizeCode(code), email: email.trim(), locale }),
+          signal: controller.signal,
       });
-      window.clearTimeout(timer);
+      } finally {
+        window.clearTimeout(timer);
+      }
       let body: unknown = null;
       try {
         body = await res.json();
@@ -48,8 +56,9 @@ export function RedeemForm({ locale }: { locale: GiftLocale }) {
         body = null;
       }
       key = redeemOutcome(res.status, body);
-    } catch {
-      key = "upstream_error";
+    } catch (err) {
+      // A request that ran into our own timeout may still have been processed: say so, instead of "nothing was used".
+      key = err instanceof DOMException && err.name === "AbortError" ? "timeout" : "upstream_error";
     }
     busy.current = false;
     setPending(false);
@@ -60,12 +69,11 @@ export function RedeemForm({ locale }: { locale: GiftLocale }) {
   const ok = result !== null && isSuccess(result);
   return (
     <div className="mx-auto flex w-full max-w-xl flex-col gap-6">
-      <form onSubmit={submit} noValidate className="flex flex-col gap-6 rounded-[22px] border border-line bg-white p-6 sm:p-8">
+      <form method="post" onSubmit={submit} noValidate className="flex flex-col gap-6 rounded-[22px] border border-line bg-white p-6 sm:p-8">
         <div className="flex flex-col gap-2">
           <label htmlFor={codeId} className="font-semibold">{c.redeem.codeLabel}</label>
           <input
             id={codeId}
-            name="voucher-code"
             type="text"
             value={code}
             onChange={(e) => setCode(e.target.value)}
@@ -83,7 +91,6 @@ export function RedeemForm({ locale }: { locale: GiftLocale }) {
           <label htmlFor={emailId} className="font-semibold">{c.redeem.emailLabel}</label>
           <input
             id={emailId}
-            name="email"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -94,7 +101,7 @@ export function RedeemForm({ locale }: { locale: GiftLocale }) {
           />
           <p id={`${emailId}-hint`} className="text-sm text-muted">{c.redeem.emailHint}</p>
         </div>
-        <button type="submit" disabled={pending} className="btn btn-primary disabled:cursor-wait disabled:opacity-60">
+        <button type="submit" disabled={pending || !mounted} className="btn btn-primary disabled:cursor-wait disabled:opacity-60">
           {pending ? c.redeem.pending : c.redeem.button}
         </button>
         <div aria-live="polite" className="min-h-0">

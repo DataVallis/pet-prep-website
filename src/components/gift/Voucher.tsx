@@ -1,4 +1,4 @@
-import { formatGiftDate, redeemDisplayUrl, type GiftLocale } from "@/lib/gift";
+import { redeemDisplayUrl, type GiftLocale } from "@/lib/gift";
 import { giftCopy } from "@/content/gift";
 import "./voucher.css";
 
@@ -28,7 +28,7 @@ function CodeText({ code }: { code: string }) {
   );
 }
 
-function OneVoucher({ locale, code, validUntilIso }: { locale: GiftLocale; code: string; validUntilIso: string }) {
+function OneVoucher({ locale, code }: { locale: GiftLocale; code: string }) {
   const v = giftCopy[locale].thanks.voucher;
   return (
     <div className="voucher-slot">
@@ -55,7 +55,7 @@ function OneVoucher({ locale, code, validUntilIso }: { locale: GiftLocale; code:
                 {v.redeemAt} <strong>{redeemDisplayUrl[locale]}</strong>
               </span>
               <span>
-                {v.validUntil} <strong>{formatGiftDate(validUntilIso, locale)}</strong>
+                <strong>{v.validity}</strong>
               </span>
             </p>
             <p className="voucher-note">{v.parentNote}</p>
@@ -81,11 +81,11 @@ function OneVoucher({ locale, code, validUntilIso }: { locale: GiftLocale; code:
  * dashed fold line between them. On screen only one is shown. Drawn entirely in the browser from the code
  * the buyer typed; nothing is stored or sent.
  */
-export function Voucher({ locale, code, validUntilIso }: { locale: GiftLocale; code: string; validUntilIso: string }) {
+export function Voucher({ locale, code }: { locale: GiftLocale; code: string }) {
   return (
     <div className="voucher-sheet print-sheet">
-      <OneVoucher locale={locale} code={code} validUntilIso={validUntilIso} />
-      <OneVoucher locale={locale} code={code} validUntilIso={validUntilIso} />
+      <OneVoucher locale={locale} code={code} />
+      <OneVoucher locale={locale} code={code} />
     </div>
   );
 }

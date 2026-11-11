@@ -2,12 +2,10 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useId, useState, useSyncExternalStore } from "react";
-import { GIFT_LANG_KEY, formatGiftDate, giftPaths, isPlausibleCode, normalizeCode, todayIso, validUntil, type GiftLocale } from "@/lib/gift";
+import { useEffect, useId, useState } from "react";
+import { GIFT_LANG_KEY, giftPaths, isPlausibleCode, normalizeCode, type GiftLocale } from "@/lib/gift";
 import { giftCopy } from "@/content/gift";
 import { Voucher } from "./Voucher";
-
-const subscribeNever = () => () => {};
 
 /**
  * Thank-you page body (M6-S01, contract §8.2): paste the code from the Lemon Squeezy e-mail, get a printable
@@ -18,14 +16,8 @@ export function ThanksClient({ locale, promiseKitHref }: { locale: GiftLocale; p
   const c = giftCopy[locale];
   const router = useRouter();
   const codeId = useId();
-  const dateId = useId();
   const [code, setCode] = useState("");
-  const [pickedDate, setPickedDate] = useState<string | null>(null);
   const [touched, setTouched] = useState(false);
-
-  // Default purchase date = today, read on the client only so the prerendered HTML does not depend on the clock.
-  const today = useSyncExternalStore(subscribeNever, () => todayIso(), () => "");
-  const date = pickedDate ?? today;
 
   // Lemon Squeezy redirects every buyer to the English URL: a buyer who started on the Slovenian page goes on in Slovenian.
   useEffect(() => {
@@ -41,8 +33,7 @@ export function ThanksClient({ locale, promiseKitHref }: { locale: GiftLocale; p
   }, [locale, router]);
 
   const plausible = isPlausibleCode(code);
-  const until = validUntil(date);
-  const ready = plausible && until !== null;
+  const ready = plausible;
   const showError = touched && code.trim() !== "" && !plausible;
   const other: GiftLocale = locale === "sl" ? "en" : "sl";
 
@@ -71,18 +62,6 @@ export function ThanksClient({ locale, promiseKitHref }: { locale: GiftLocale; p
               {showError ? c.thanks.codeInvalid : c.thanks.codeHint}
             </p>
           </div>
-          <div className="flex flex-col gap-2">
-            <label htmlFor={dateId} className="font-semibold">{c.thanks.dateLabel}</label>
-            <input
-              id={dateId}
-              type="date"
-              value={date}
-              onChange={(e) => setPickedDate(e.target.value)}
-              className="min-h-12 rounded-[12px] border border-line bg-fog px-4 text-[16px] outline-none focus:border-graphite"
-              aria-describedby={`${dateId}-hint`}
-            />
-            <p id={`${dateId}-hint`} className="text-sm text-muted">{c.thanks.dateHint}</p>
-          </div>
           <button type="button" onClick={() => window.print()} disabled={!ready} className="btn btn-primary disabled:cursor-not-allowed disabled:opacity-50">
             {c.thanks.print}
           </button>
@@ -93,10 +72,7 @@ export function ThanksClient({ locale, promiseKitHref }: { locale: GiftLocale; p
           <h2 className="h-card text-[22px]">{c.thanks.previewHeading}</h2>
           {ready ? (
             <div className="rounded-[22px] bg-fog p-0">
-              <Voucher locale={locale} code={normalizeCode(code)} validUntilIso={until} />
-              <p className="mt-3 text-sm text-muted" aria-live="polite">
-                {c.thanks.voucher.validUntil}: {formatGiftDate(until, locale)}
-              </p>
+              <Voucher locale={locale} code={normalizeCode(code)} />
             </div>
           ) : (
             <div className="flex min-h-48 items-center justify-center rounded-[22px] border border-dashed border-line bg-white p-8 text-center text-muted">{c.thanks.previewEmpty}</div>

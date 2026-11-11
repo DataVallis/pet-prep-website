@@ -133,8 +133,22 @@ export const messageKeys = [
   "unavailable",
   "rate_limited",
   "upstream_error",
+  "timeout",
 ] as const;
 export type MessageKey = (typeof messageKeys)[number];
+
+/** Key only the browser can produce (the request was aborted after the client timeout); the API never sends it. */
+export const clientOnlyKeys: readonly MessageKey[] = ["timeout"];
+
+/**
+ * Pages whose content must never reach third-party scripts (analytics, tag managers): the thanks page shows the
+ * code and the redeem page takes code and e-mail. Matches the public paths, with or without the internal /en prefix.
+ */
+export function isGiftPrivatePath(pathname: string | null | undefined): boolean {
+  if (!pathname) return false;
+  const p = pathname.length > 1 ? pathname.replace(/\/+$/, "") : pathname;
+  return /^(\/en)?\/(gift\/thanks|redeem)$/.test(p) || /^\/sl\/(darilni-bon\/hvala|unovci)$/.test(p);
+}
 
 /**
  * Maps an API answer (HTTP status + parsed body) to a message key. A body that did not parse (null), a

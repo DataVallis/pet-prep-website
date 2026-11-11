@@ -9,6 +9,8 @@ import {
   isPlausibleCode,
   isPromiseKitEnabled,
   messageKeys,
+  clientOnlyKeys,
+  isGiftPrivatePath,
   normalizeCode,
   redeemOutcome,
   validUntil,
@@ -64,7 +66,7 @@ test("redeemOutcome maps every contract answer to its message key", () => {
   ];
   for (const [status, body, key] of cases) assert.equal(redeemOutcome(status, { ...(body as object), message: "x" }), key, `${status} ${JSON.stringify(body)}`);
   // every message key is reachable from some answer
-  assert.deepEqual(new Set(cases.map((c) => c[2])), new Set(messageKeys));
+  assert.deepEqual(new Set([...cases.map((c) => c[2]), ...clientOnlyKeys]), new Set(messageKeys));
 });
 
 test("redeemOutcome: unknown, unparsable and network answers are upstream_error", () => {
@@ -123,7 +125,7 @@ test("switch off: no static params, no redirects, no sitemap entry", () => {
 test("switch on: static params for EN and SL only; sitemap has the sales page only", () => {
   assert.deepEqual(giftStaticLocale("en", true), [{ locale: "en" }]);
   assert.deepEqual(giftStaticLocale("sl", true), [{ locale: "sl" }]);
-  assert.deepEqual(giftSitemapPaths(true), { en: "/gift", sl: "/sl/darilni-bon" });
+  assert.deepEqual(giftSitemapPaths(true, true), { en: "/gift", sl: "/sl/darilni-bon" });
   const sitemap = src("../app/sitemap.ts");
   assert.doesNotMatch(sitemap, /thanks|hvala|redeem|unovci/);
 });
@@ -132,12 +134,15 @@ test("switch on: static params for EN and SL only; sitemap has the sales page on
 test("other locales redirect to the English URL (308) when on", () => {
   const r = giftRedirects(true);
   const others = locales.filter((l) => l !== "en" && l !== "sl");
-  assert.equal(r.length, others.length * 3);
-  assert.ok(r.every((x) => x.permanent && x.destination.startsWith("/") && !x.destination.startsWith("/sl")));
+  assert.equal(r.length, others.length * 3 + 3);
+  assert.ok(r.every((x) => x.permanent && x.destination.startsWith("/")));
+  assert.ok(r.filter((x) => !x.source.startsWith("/sl/")).every((x) => !x.destination.startsWith("/sl")));
+  // m7: the English slug under /sl goes to the Slovenian page
+  assert.deepEqual(r.filter((x) => x.source.startsWith("/sl/")).map((x) => [x.source, x.destination]), [["/sl/gift", "/sl/darilni-bon"], ["/sl/gift/thanks", "/sl/darilni-bon/hvala"], ["/sl/redeem", "/sl/unovci"]]);
   assert.deepEqual(r.find((x) => x.source === "/de/gift"), { source: "/de/gift", destination: "/gift", permanent: true });
   assert.deepEqual(r.find((x) => x.source === "/nb/gift/thanks"), { source: "/nb/gift/thanks", destination: "/gift/thanks", permanent: true });
   assert.deepEqual(r.find((x) => x.source === "/fr/redeem"), { source: "/fr/redeem", destination: "/redeem", permanent: true });
-  assert.ok(!r.some((x) => x.source.startsWith("/sl/") || x.source.startsWith("/en/")));
+  assert.ok(!r.some((x) => x.source.startsWith("/en/")));
 });
 
 test("public paths are the contract's", () => {
@@ -203,4 +208,54 @@ test("thanks and redeem pages are noindex and never in the sitemap or llms files
   assert.match(pages, /noIndex = page !== "gift"/);
   assert.match(pages, /robots: \{ index: false, follow: false \}/);
   assert.doesNotMatch(src("./llms.ts"), /gift|darilni-bon/i);
+});
+
+// MA1
+test("redeem form: no field names, method post, button disabled until hydrated, never a GET", () => {
+  const f = src("../components/gift/RedeemForm.tsx");
+  assert.doesNotMatch(f, /\bname=/);
+  assert.match(f, /<form method="post"/);
+  assert.doesNotMatch(f, /method="get"/i);
+  assert.match(f, /disabled=\{pending \|\| !mounted\}/);
+  assert.doesNotMatch(src("../components/gift/ThanksClient.tsx"), /\bname=/);
+});
+
+// MA2
+test("the printed voucher never shows a computed date", () => {
+  const v = src("../components/gift/Voucher.tsx");
+  const t = src("../components/gift/ThanksClient.tsx");
+  assert.doesNotMatch(v, /formatGiftDate|validUntil|todayIso/);
+  assert.doesNotMatch(t, /type="date"|validUntil|todayIso|formatGiftDate/);
+  assert.equal(giftCopy.sl.thanks.voucher.validity, "Velja 12 mesecev od nakupa");
+  assert.equal(giftCopy.en.thanks.voucher.validity, "Valid for 12 months from purchase");
+});
+
+// MA3
+test("no third-party script on the thanks and redeem pages", () => {
+  for (const p of ["/gift/thanks", "/en/gift/thanks", "/sl/darilni-bon/hvala", "/redeem", "/en/redeem", "/sl/unovci", "/sl/unovci/", "/redeem/"]) assert.ok(isGiftPrivatePath(p), p);
+  for (const p of ["/", "/gift", "/sl/darilni-bon", "/sl", "/privacy", "/sl/pogoji", "/redeemx", null, undefined]) assert.ok(!isGiftPrivatePath(p as string), String(p));
+  const layout = src("../app/[locale]/layout.tsx");
+  assert.match(layout, /<PrivatePageGate>\s*<GoogleAnalytics \/>\s*<GoogleTagManager \/>\s*<\/PrivatePageGate>/);
+  assert.match(src("../components/gift/PrivatePageGate.tsx"), /isGiftPrivatePath\(usePathname\(\)\)/);
+  // the gift components load no script of their own
+  for (const f of ["ThanksClient", "RedeemForm", "Voucher", "GiftPages"]) assert.doesNotMatch(src(`../components/gift/${f}.tsx`), /next\/script|<script|createElement\("script"/);
+});
+
+// m3
+test("switch on but no checkout URL: the sales page is out of the sitemap and noindex", () => {
+  assert.equal(giftSitemapPaths(true, false), null);
+  assert.deepEqual(giftSitemapPaths(true, true), { en: "/gift", sl: "/sl/darilni-bon" });
+  assert.match(src("../components/gift/GiftPages.tsx"), /noIndex = page !== "gift" \|\| giftBuyUrl\(\) === null/);
+});
+
+// m1 / m4 / m5 / m6
+test("manual build reads .env.production; refund text marked; SL copy; timeout message", () => {
+  const ignore = src("../../.dockerignore");
+  assert.match(ignore, /^\.env\*$/m);
+  assert.match(ignore, /^!\.env\.production$/m);
+  assert.doesNotMatch(src("../../Dockerfile"), /ARG NEXT_PUBLIC_(FEATURE_GIFT|LS_GIFT_URL|PETPREP_API_URL)/);
+  assert.match(src("../content/gift.ts"), /TODO\(David\): the refund wording/);
+  assert.doesNotMatch(JSON.stringify(giftCopy.sl), /botr/i);
+  for (const l of ["sl", "en"] as const) assert.ok(giftCopy[l].messages.timeout.length > 20);
+  assert.match(src("../components/gift/RedeemForm.tsx"), /AbortError" \? "timeout"/);
 });

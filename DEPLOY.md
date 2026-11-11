@@ -55,7 +55,7 @@ Need it live now (a launch, a fix)? Run workflow → target `production`.
 | `NEXT_PUBLIC_PETPREP_API_URL` | API for the redeem form, default `https://api.petprep.si` |
 
 - **Flip = a pull request** that edits `.env.production`. Do not use a repository variable: CI reuses the image of a green run per git tree (`plan` job), so an unchanged tree would ship the old image.
-- The manual full build takes the same names as `docker build --build-arg` (`Dockerfile`) and as environment of `deploy/deploy.sh`; `.dockerignore` keeps `.env*` out of that build context on purpose.
+- The manual full build (`Dockerfile`, `deploy/deploy.sh`) reads the same `.env.production` (`.dockerignore` lets that one file through); there are no build args for these values.
 - Order for go-live (David): app in the stores → Lemon Squeezy product + webhook + server env → server switch "Gift vouchers" on → this switch. Then check `/gift`, `/redeem` and that `sitemap.xml` lists `/gift` and `/sl/darilni-bon` only.
 
 ## Disk (every deploy)

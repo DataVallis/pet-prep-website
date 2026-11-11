@@ -1,5 +1,7 @@
 import type { GiftLocale, MessageKey } from "../lib/gift.ts";
 
+// TODO(David): the refund wording below (14 days if unredeemed, none once redeemed) is Claude's proposal from spec §3.1; needs the legal review (M5-06) before the switch goes on.
+
 /**
  * Gift voucher copy (M6-S01), Slovenian and English only. Original text in the PetPrep voice: Slovenian
  * addresses parents formally (vikanje); no ages, no promise of a real pet, no invented numbers.
@@ -28,8 +30,6 @@ export type GiftCopy = {
     codeLabel: string;
     codeHint: string;
     codeInvalid: string;
-    dateLabel: string;
-    dateHint: string;
     print: string;
     privacy: string;
     previewHeading: string;
@@ -37,7 +37,7 @@ export type GiftCopy = {
     stepsHeading: string;
     steps: string[];
     notChecked: string;
-    voucher: { kind: string; title: string; line: string; code: string; redeemAt: string; validUntil: string; forLabel: string; fromLabel: string; parentNote: string };
+    voucher: { kind: string; title: string; line: string; code: string; redeemAt: string; validity: string; forLabel: string; fromLabel: string; parentNote: string };
   };
   redeem: {
     meta: { title: string; description: string };
@@ -105,7 +105,7 @@ export const giftCopy: Record<GiftLocale, GiftCopy> = {
       forTitle: "Bon je za vas, če",
       forItems: [
         "otrok v vaši družini že dolgo prosi za žival in si želite, da to preizkusi, preden se odločite,",
-        "iščete darilo za vnuka, nečakinjo ali botra, ki ni živa žival in ni obljuba,",
+        "iščete darilo za vnuka, nečakinjo ali krščenca, ki ni živa žival in ni obljuba,",
         "želite, da izkušnja skrbi za žival izhaja iz otrokovih dejanj, ne iz vaših besed.",
       ],
       notTitle: "Bon ni za vas, če",
@@ -144,8 +144,6 @@ export const giftCopy: Record<GiftLocale, GiftCopy> = {
       codeLabel: "Koda iz e-pošte Lemon Squeezy",
       codeHint: "Kodo prilepite tako, kot je v e-pošti.",
       codeInvalid: "Koda ni videti pravilno. Sestavljena je iz 8 do 64 črk, številk in vezajev.",
-      dateLabel: "Datum nakupa",
-      dateHint: "Privzeto je današnji datum. Bon velja 12 mesecev od tega datuma.",
       print: "Natisnite bon",
       privacy: "Koda ostane v vašem brskalniku. Ne shranjujemo je, ne pošiljamo je na strežnik in ni v naslovu strani. Ko zaprete stran, je ni več.",
       previewHeading: "Predogled bona",
@@ -164,7 +162,7 @@ export const giftCopy: Record<GiftLocale, GiftCopy> = {
         line: "En izziv za enega ljubljenčka v aplikaciji PetPrep.",
         code: "Koda",
         redeemAt: "Unovčite na",
-        validUntil: "Velja do",
+        validity: "Velja 12 mesecev od nakupa",
         forLabel: "Za",
         fromLabel: "Od",
         parentNote: "Kodo unovči starš, z e-naslovom svojega računa v aplikaciji.",
@@ -196,6 +194,7 @@ export const giftCopy: Record<GiftLocale, GiftCopy> = {
       unavailable: "Unovčitev bonov trenutno ni na voljo. Poskusite znova pozneje.",
       rate_limited: "Preveč poskusov. Počakajte nekaj minut in poskusite znova.",
       upstream_error: "Bona trenutno ne moremo preveriti. Poskusite znova čez nekaj minut, nič ni bilo porabljeno.",
+      timeout: "Odgovora nismo prejeli pravočasno. Če ste bon morda že unovčili, ga vnesite znova: stran bo pokazala, da je že unovčen v vašem računu. Sicer poskusite znova čez nekaj minut.",
     },
   },
   en: {
@@ -285,8 +284,6 @@ export const giftCopy: Record<GiftLocale, GiftCopy> = {
       codeLabel: "Code from the Lemon Squeezy e-mail",
       codeHint: "Paste the code exactly as it appears in the e-mail.",
       codeInvalid: "This code does not look right. It is 8 to 64 letters, digits and hyphens.",
-      dateLabel: "Date of purchase",
-      dateHint: "Today's date by default. The voucher is valid for 12 months from this date.",
       print: "Print the voucher",
       privacy: "The code stays in your browser. We do not store it, send it to a server or put it in the page address. When you close the page it is gone.",
       previewHeading: "Voucher preview",
@@ -305,7 +302,7 @@ export const giftCopy: Record<GiftLocale, GiftCopy> = {
         line: "One challenge for one pet in the PetPrep app.",
         code: "Code",
         redeemAt: "Redeem at",
-        validUntil: "Valid until",
+        validity: "Valid for 12 months from purchase",
         forLabel: "For",
         fromLabel: "From",
         parentNote: "A parent redeems the code, with the e-mail address of their account in the app.",
@@ -337,6 +334,7 @@ export const giftCopy: Record<GiftLocale, GiftCopy> = {
       unavailable: "Voucher redemption is not available right now. Please try again later.",
       rate_limited: "Too many attempts. Please wait a few minutes and try again.",
       upstream_error: "We can't check the voucher right now. Please try again in a few minutes. Nothing has been used.",
+      timeout: "We did not get an answer in time. If the voucher may already have been redeemed, enter it again: the page will show that it is already redeemed in your account. Otherwise try again in a few minutes.",
     },
   },
 };
