@@ -58,7 +58,7 @@ const nl: Dictionary = {
     rights: "Alle rechten voorbehouden.",
     dataEu: "Gegevens worden opgeslagen in de EU.",
     languages: "Binnenkort meer talen.",
-    company: "PetPrep is een product van",
+    company: "Exploitant:",
     cookieSettings: "Cookie-instellingen",
     a11yBadge: { title: "Toegankelijk spelen", text: "Eenvoudigere gebaren · Schermlezers · Minder beweging" },
   },
@@ -588,7 +588,7 @@ const nl: Dictionary = {
           heading: "Fase",
           paragraphs: [
             "PetPrep bevindt zich nog vóór de lancering; een gesloten bèta staat gepland. De eerste markt is Slovenië en de regio, daarna volgen Duitsland, Oostenrijk en Zwitserland (DACH) en het Verenigd Koninkrijk; het product is vanaf dag één gebouwd voor lokalisatie wereldwijd.",
-            "Oprichter: David Tacer, softwareontwikkelaar en ondernemer (Data Vallis David Tacer s.p., Dravograd, Slovenië). Meer [over ons](page:about).",
+            "Oprichter: David Tacer, softwareontwikkelaar en ondernemer. Meer [over ons](page:about).",
           ],
         },
         { type: "callout", title: "Vraag de investeerdersbrief aan.", text: "We delen de brief, het pitchdeck en de dataroom op aanvraag.", tone: "dark" },
@@ -954,11 +954,11 @@ const nl: Dictionary = {
       meta: {
         title: "Je PetPrep-account en -gegevens verwijderen",
         description:
-          "Hoe je je PetPrep-account (Data Vallis) verwijdert in de app of per e-mail, welke gegevens worden verwijderd, wat bewaard blijft en hoe lang.",
+          "Hoe je je PetPrep-account verwijdert in de app of per e-mail, welke gegevens worden verwijderd, wat bewaard blijft en hoe lang.",
       },
       eyebrow: "Vertrouwen",
       title: "Je PetPrep-account verwijderen",
-      lead: "Vertaling – alleen de Engelse versie is bindend. PetPrep wordt gemaakt door Data Vallis. Je kunt je account en de gegevens van je gezin op elk moment verwijderen – meteen in de app, of per e-mail als je de app niet meer hebt.",
+      lead: "Vertaling – alleen de Engelse versie is bindend. Je kunt je account en de gegevens van je gezin op elk moment verwijderen – meteen in de app, of per e-mail als je de app niet meer hebt.",
       blocks: [
         {
           type: "steps",
@@ -1013,7 +1013,7 @@ const nl: Dictionary = {
       meta: {
         title: "Over PetPrep – bedrijf, oprichter en hoe we informatie over huisdieren onderbouwen",
         description:
-          "Wie PetPrep maakt: Data Vallis David Tacer s.p. uit Dravograd, Slovenië, oprichter David Tacer, onze missie en hoe de dierenencyclopedie haar informatie onderbouwt en controleert.",
+          "Wie PetPrep maakt: oprichter David Tacer, onze missie en hoe de dierenencyclopedie haar informatie onderbouwt en controleert.",
       },
       navLabel: "Over ons",
       eyebrow: "Over ons",
@@ -1025,7 +1025,7 @@ const nl: Dictionary = {
           id: "company",
           heading: "Het bedrijf",
           paragraphs: [
-            "PetPrep is een product van Data Vallis David Tacer s.p., een softwareontwikkelingsbedrijf (eenmanszaak) met statutaire zetel in Dravograd, Slovenië. Hetzelfde bedrijf beheert deze website en de PetPrep-app en is de verwerkingsverantwoordelijke voor persoonsgegevens (zie het [privacybeleid](page:privacy)).",
+            "PetPrep wordt aangeboden door Data Vallis David Tacer s.p., een softwareontwikkelingsbedrijf (eenmanszaak) met statutaire zetel in Dravograd, Slovenië. Hetzelfde bedrijf beheert deze website en de PetPrep-app en is de verwerkingsverantwoordelijke voor persoonsgegevens (zie het [privacybeleid](page:privacy)).",
           ],
         },
         { type: "company" },

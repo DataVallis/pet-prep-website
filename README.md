@@ -27,7 +27,7 @@ npm run build && npm run lint && npx tsc --noEmit
 ## Content
 
 All copy lives in `src/content/<locale>.ts` — `en.ts`, `sl.ts`, `de.ts` (same structure, type-checked).
-Site-wide settings — domain, e-mail addresses, company details, launch state, store links, legal review flag — are in `src/lib/site.ts`. Values marked `TODO(David)` must be confirmed before launch.
+Site-wide settings — domain, e-mail addresses, company details, launch state, store links, legal review flag — are in `src/lib/site.ts`. Values marked `TODO(David)` must be confirmed before launch. **Branding:** PetPrep is the only brand (meta author/creator/publisher, JSON-LD names, marketing copy, llms.txt). `site.company` is the *legal operator* (Data Vallis David Tacer s.p. until PetPrep d.o.o. exists) and is shown only where the law requires naming it: footer identity line, privacy policy, terms, about-page imprint, cookie-banner controller, llms.txt operator line. Never write "a product of / made by" the operator; when the d.o.o. is founded, change `site.company` only.
 
 - `launchState: "prelaunch"` → calls to action ask for early access by e-mail. Set `"live"` and fill `stores.ios` / `stores.android` at launch.
 - `legalReviewed: false` → privacy policy and terms show a “being finalised with legal advisors” notice.
@@ -87,7 +87,7 @@ Local test: `KLAVIYO_PRIVATE_API_KEY=pk_… KLAVIYO_LIST_ID=… npm run dev`.
 
 - Per-page `title`, `description`, canonical URL, `hreflang` (en, sl, x-default), Open Graph and Twitter cards (`src/lib/seo.ts`).
 - Generated share images per page (`opengraph-image.tsx`, fonts in `src/og/`).
-- JSON-LD: Organization, WebSite, MobileApplication with offers, WebPage, BreadcrumbList, FAQPage (`src/lib/jsonld.ts`).
+- JSON-LD (all names "PetPrep", no parent organization): Organization, WebSite, MobileApplication with offers, WebPage, BreadcrumbList, FAQPage (`src/lib/jsonld.ts`).
 - `sitemap.xml` with language alternates, `robots.txt` that explicitly allows search and AI crawlers, `manifest.webmanifest`.
 - `/llms.txt` (summary + page index) and `/llms-full.txt` (all pages as Markdown) for AI assistants (`src/lib/llms.ts`).
 - Static HTML, semantic headings, one `h1` per page, real links, `lang` per page, works without JavaScript.

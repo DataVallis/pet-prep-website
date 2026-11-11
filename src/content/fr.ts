@@ -58,7 +58,7 @@ const fr: Dictionary = {
     rights: "Tous droits réservés.",
     dataEu: "Données hébergées dans l’UE.",
     languages: "D’autres langues arrivent bientôt.",
-    company: "PetPrep est un produit de",
+    company: "Exploitant :",
     cookieSettings: "Paramètres des cookies",
     a11yBadge: { title: "Jeu accessible", text: "Gestes simplifiés · Lecteurs d’écran · Moins d’animations" },
   },
@@ -588,7 +588,7 @@ const fr: Dictionary = {
           heading: "Stade",
           paragraphs: [
             "PetPrep est en phase de prélancement, avec une bêta fermée prévue. Le premier marché est la Slovénie et la région, suivi de la zone DACH et du Royaume-Uni ; le produit est conçu dès le premier jour pour être localisé dans le monde entier.",
-            "Fondateur : David Tacer, développeur de logiciels et entrepreneur (Data Vallis David Tacer s.p., Dravograd, Slovénie). Pour en savoir plus : [à propos de nous](page:about).",
+            "Fondateur : David Tacer, développeur de logiciels et entrepreneur. Pour en savoir plus : [à propos de nous](page:about).",
           ],
         },
         { type: "callout", title: "Demandez la note investisseurs.", text: "Nous communiquons la note, la présentation et la data room sur demande.", tone: "dark" },
@@ -954,11 +954,11 @@ const fr: Dictionary = {
       meta: {
         title: "Supprimer votre compte PetPrep et vos données",
         description:
-          "Comment supprimer votre compte PetPrep (Data Vallis) dans l’application ou par e-mail, quelles données sont supprimées, ce qui est conservé et pendant combien de temps.",
+          "Comment supprimer votre compte PetPrep dans l’application ou par e-mail, quelles données sont supprimées, ce qui est conservé et pendant combien de temps.",
       },
       eyebrow: "Confiance",
       title: "Supprimer votre compte PetPrep",
-      lead: "Traduction – seule la version anglaise fait foi. PetPrep est développé par Data Vallis. Vous pouvez supprimer votre compte et les données de votre famille à tout moment – instantanément dans l’application, ou par e-mail si vous n’avez plus l’application.",
+      lead: "Traduction – seule la version anglaise fait foi. Vous pouvez supprimer votre compte et les données de votre famille à tout moment – instantanément dans l’application, ou par e-mail si vous n’avez plus l’application.",
       blocks: [
         {
           type: "steps",
@@ -1013,7 +1013,7 @@ const fr: Dictionary = {
       meta: {
         title: "À propos de PetPrep – l’entreprise, le fondateur et l’origine de nos informations sur les animaux",
         description:
-          "Qui fait PetPrep : Data Vallis David Tacer s.p., à Dravograd (Slovénie), son fondateur David Tacer, notre mission, et la façon dont le registre des animaux source et vérifie ses informations.",
+          "Qui fait PetPrep : son fondateur David Tacer, notre mission, et la façon dont le registre des animaux source et vérifie ses informations.",
       },
       navLabel: "À propos",
       eyebrow: "À propos",
@@ -1025,7 +1025,7 @@ const fr: Dictionary = {
           id: "company",
           heading: "L’entreprise",
           paragraphs: [
-            "PetPrep est un produit de Data Vallis David Tacer s.p., une entreprise de développement de logiciels (entreprise individuelle) dont le siège est à Dravograd, en Slovénie. Cette même entreprise exploite ce site web et l’application PetPrep, et elle est responsable du traitement des données personnelles (voir la [politique de confidentialité](page:privacy)).",
+            "PetPrep est fourni par Data Vallis David Tacer s.p., une entreprise de développement de logiciels (entreprise individuelle) dont le siège est à Dravograd, en Slovénie. Cette même entreprise exploite ce site web et l’application PetPrep, et elle est responsable du traitement des données personnelles (voir la [politique de confidentialité](page:privacy)).",
           ],
         },
         { type: "company" },

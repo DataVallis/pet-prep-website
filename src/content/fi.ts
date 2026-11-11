@@ -58,7 +58,7 @@ const fi: Dictionary = {
     rights: "Kaikki oikeudet pidätetään.",
     dataEu: "Tiedot säilytetään EU:ssa.",
     languages: "Lisää kieliä tulossa pian.",
-    company: "PetPrepin takana on",
+    company: "Ylläpitäjä:",
     cookieSettings: "Evästeasetukset",
     a11yBadge: { title: "Esteetöntä leikkiä", text: "Helpommat eleet · Ruudunlukijat · Vähemmän liikettä" },
   },
@@ -588,7 +588,7 @@ const fi: Dictionary = {
           heading: "Vaihe",
           paragraphs: [
             "PetPrep on julkaisua edeltävässä vaiheessa, ja suljettu beta on suunnitteilla. Ensimmäinen markkina on Slovenia ja sen lähialue, sen jälkeen DACH-maat ja Iso-Britannia; tuote on alusta asti rakennettu maailmanlaajuista lokalisointia varten.",
-            "Perustaja: David Tacer, ohjelmistokehittäjä ja yrittäjä (Data Vallis David Tacer s.p., Dravograd, Slovenia). Lisää [meistä](page:about).",
+            "Perustaja: David Tacer, ohjelmistokehittäjä ja yrittäjä. Lisää [meistä](page:about).",
           ],
         },
         { type: "callout", title: "Pyydä sijoittajakatsaus.", text: "Jaamme katsauksen, esityksen ja datahuoneen pyynnöstä.", tone: "dark" },
@@ -954,11 +954,11 @@ const fi: Dictionary = {
       meta: {
         title: "Poista PetPrep-tilisi ja tietosi",
         description:
-          "Näin poistat PetPrep-tilisi (Data Vallis) sovelluksessa tai sähköpostitse: mitkä tiedot poistetaan, mitä säilytetään ja kuinka kauan.",
+          "Näin poistat PetPrep-tilisi sovelluksessa tai sähköpostitse: mitkä tiedot poistetaan, mitä säilytetään ja kuinka kauan.",
       },
       eyebrow: "Luottamus",
       title: "Poista PetPrep-tilisi",
-      lead: "Käännös – vain englanninkielinen versio on sitova. PetPrepin tekee Data Vallis. Voit poistaa tilisi ja perheesi tiedot milloin tahansa – sovelluksessa heti tai sähköpostitse, jos sinulla ei enää ole sovellusta.",
+      lead: "Käännös – vain englanninkielinen versio on sitova. Voit poistaa tilisi ja perheesi tiedot milloin tahansa – sovelluksessa heti tai sähköpostitse, jos sinulla ei enää ole sovellusta.",
       blocks: [
         {
           type: "steps",
@@ -1013,7 +1013,7 @@ const fi: Dictionary = {
       meta: {
         title: "Tietoa PetPrepistä – yritys, perustaja ja lemmikkitietojen lähteet",
         description:
-          "Kuka tekee PetPrepin: Data Vallis David Tacer s.p. Dravogradista Sloveniasta, perustaja David Tacer, missiomme ja se, miten eläinhakemisto hankkii ja tarkistaa tietonsa.",
+          "Kuka tekee PetPrepin: perustaja David Tacer, missiomme ja se, miten eläinhakemisto hankkii ja tarkistaa tietonsa.",
       },
       navLabel: "Meistä",
       eyebrow: "Meistä",

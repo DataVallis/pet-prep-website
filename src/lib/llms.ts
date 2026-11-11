@@ -100,7 +100,7 @@ export function llmsIndex(): string {
     "",
     `> ${en.meta.siteDescription}`,
     "",
-    `${site.name} is a product of ${site.company.legalName}, ${companyAddress("en")}; ${companyIds("en")}; ${site.company.url}. Founder: ${site.company.founder}. Tagline: "${en.meta.slogan}"`,
+    `Operator: ${site.company.legalName}, ${companyAddress("en")}; ${companyIds("en")}; ${site.company.url}. Founder: ${site.company.founder}. Tagline: "${en.meta.slogan}"`,
     "",
     "Key facts:",
     "- 12-week pet readiness challenge for families; children aged about 7–12 (up to 16) care for a photorealistic AI pet; parents see a live dashboard with a daily traffic light and a Care Score.",
