@@ -5,7 +5,9 @@
  * fields only), no child data beyond what the family writes by hand on paper, Curio is the mascot,
  * Slovenian addresses parents formally and child pages are gender-neutral (no l-participles).
  */
-export type KitLang = "en" | "sl";
+import type { Locale } from "../../i18n/config.ts";
+
+export type KitLang = Locale;
 
 export type KitSection = { id: string; title: string; text: string };
 
@@ -112,4 +114,32 @@ export type KitCopy = {
     slogan: string;
     mascotLine: string;
   };
+};
+
+/** Sales-page copy of the Pet Promise Kit (the price is not here: src/lib/promiseKit.ts formats it per language). */
+export type KitSales = {
+  eyebrow: string;
+  title: string;
+  lead: string;
+  metaTitle: string;
+  metaDescription: string;
+  breadcrumb: string;
+  priceNote: string;
+  buy: string;
+  sample: string;
+  sampleHeading: string;
+  sampleText: string;
+  sampleNote: string;
+  insideHeading: string;
+  insideIntro: string;
+  previewHeading: string;
+  previewAlt: { cover: string; promise: string; cost: string };
+  forHeading: string;
+  forItems: string[];
+  notHeading: string;
+  notItems: string[];
+  giftText: string;
+  giftLink: string;
+  faqHeading: string;
+  faq: { q: string; a: string }[];
 };

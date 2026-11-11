@@ -1,4 +1,4 @@
-import type { KitCopy } from "./types.ts";
+import type { KitCopy, KitSales } from "./types.ts";
 
 export const en: KitCopy = {
   lang: "en",
@@ -169,4 +169,47 @@ export const en: KitCopy = {
     slogan: "Ready for a pet. There for its whole life.",
     mascotLine: "Good luck from Curio.",
   },
+};
+
+/** Sales-page copy of the Pet Promise Kit (original text; the kit's own text is above). */
+export const enSales: KitSales = {
+  eyebrow: "Printable kit",
+  title: "The Pet Promise Kit",
+  lead: "Before a pet comes home, put the promise on paper. Eleven A4 pages for your family: a conversation to have, an agreement to sign, a four-week trial to tick off and a cost sheet to fill in.",
+  metaTitle: "Pet Promise Kit: a printable family agreement before you get a pet | PetPrep",
+  metaDescription: "A printable A4 kit for families who are thinking about a pet: ten questions to talk through, a Pet Promise to sign, a four-week task chart, a cost sheet and a checklist for parents.",
+  breadcrumb: "Pet Promise Kit",
+  priceNote: "One-off purchase, PDF download in 15 languages. Payment and invoice are handled by Lemon Squeezy.",
+  buy: "Buy the kit",
+  sample: "Get the free sample page",
+  sampleHeading: "Try the Promise page first",
+  sampleText: "The Pet Promise itself, as a free A4 page: the agreement between a child and the grown-ups, with daily tasks, your own rules and room for everyone's signature. You enter your e-mail address and agree to hear from us; the PDF arrives from the checkout.",
+  sampleNote: "Your e-mail address is used only for what you agree to at checkout.",
+  insideHeading: "What is inside",
+  insideIntro: "Print as many copies as you need. Everything is filled in by hand, so nothing about your child is typed into a form or sent anywhere.",
+  previewHeading: "A look at three pages",
+  previewAlt: { cover: "Cover page of the Pet Promise Kit with the Curio mascot", promise: "The Pet Promise page with task boxes, rules and signature lines", cost: "The cost worksheet with empty fields" },
+  forHeading: "Who it is for",
+  forItems: [
+    "Parents whose child keeps asking for a pet and who want the conversation to be about facts and daily routine, not only about wishes.",
+    "Families that have not decided yet and would like a calm, structured way to find out whether a pet fits their life.",
+    "Grandparents, aunts and uncles who want to give a child something real to work toward, without handing over an animal.",
+  ],
+  notHeading: "What it is not",
+  notItems: [
+    "It is not a test and it gives no score. It cannot tell you whether your child is ready.",
+    "It contains no health advice and no breed rules. For those, ask a vet or a shelter.",
+    "It does not promise that a pet is the right decision. “Not yet” is a good answer too.",
+  ],
+  giftText: "Looking for a gift instead? The 12-week PetPrep challenge can be given as a voucher.",
+  giftLink: "See the gift voucher",
+  faqHeading: "Questions",
+  faq: [
+    { q: "Is it for dogs or for cats?", a: "For any pet. The kit is general: it asks about time, money, space and the long term, not about one species or breed." },
+    { q: "Do I need the PetPrep app?", a: "No. The kit is paper only and works on its own. The last page mentions the app as one possible next step." },
+    { q: "How do I print it?", a: "It is a standard A4 PDF. Print the whole kit, or only the pages you need. Weekly chart pages can be printed again if you want another month." },
+    { q: "What do I get when I buy?", a: "A download with the kit as a PDF in fifteen languages, eleven A4 pages each. Print the one in your own language." },
+    { q: "Is any data collected from my family?", a: "The kit itself collects nothing: it is a PDF you fill in with a pen. At checkout the shop handles your payment details and e-mail address." },
+    { q: "Can I share the file?", a: "Please print as many copies as your own family needs, but do not share or resell the file." },
+  ],
 };

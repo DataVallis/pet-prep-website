@@ -1,12 +1,13 @@
 #!/usr/bin/env node
 /**
- * Pet Promise Kit (M6-S02): builds the sold PDFs from src/content/promise-kit/{en,sl}.ts.
- *   out/promise-kit/petprep-promise-kit-{sl,en}.pdf     the full kit (11 A4 pages)
- *   out/promise-kit/petprep-promise-sample-{sl,en}.pdf  the free sample (the Promise page only)
+ * Pet Promise Kit (M6-S02): builds the sold PDFs from src/content/promise-kit/<lang>.ts, for all 15 site languages
+ * (David 2026-11-11: en, sl, de, fr, es, it, pt, nl, pl, cs, hr, sv, da, fi, nb).
+ *   out/promise-kit/petprep-promise-kit-<lang>.pdf     the full kit (11 A4 pages)
+ *   out/promise-kit/petprep-promise-sample-<lang>.pdf  the free sample (the Promise page only)
  * The PDFs are NOT committed and NOT served from public/ (they are sold; /out is git-ignored).
  * `--previews` also renders page PNGs (out/promise-kit/png/) and refreshes the sales-page previews in
  * public/promise-kit/ (WebP, safe to commit: one page each, shown on the sales page).
- * Usage: npm run kit:build [-- --previews]    Needs google-chrome (or CHROME_BIN) and, for previews, pdftoppm.
+ * Usage: npm run kit:build [-- --previews] [--lang=de,pl]    (default: every language) Needs google-chrome (or CHROME_BIN) and, for previews, pdftoppm.
  */
 import { execFileSync } from "node:child_process";
 import { mkdirSync, mkdtempSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
@@ -16,8 +17,7 @@ import { pathToFileURL } from "node:url";
 import sharp from "sharp";
 
 const root = resolve(import.meta.dirname, "..");
-const { en } = await import(pathToFileURL(join(root, "src/content/promise-kit/en.ts")).href);
-const { sl } = await import(pathToFileURL(join(root, "src/content/promise-kit/sl.ts")).href);
+const { kitCopy, kitLangs } = await import(pathToFileURL(join(root, "src/content/promise-kit/index.ts")).href);
 const { renderKitHtml, fullPages, samplePages } = await import(pathToFileURL(join(root, "src/content/promise-kit/print.ts")).href);
 
 const outDir = join(root, "out/promise-kit");
@@ -25,6 +25,8 @@ const pngDir = join(outDir, "png");
 const previewDir = join(root, "public/promise-kit");
 const chromeBin = process.env.CHROME_BIN || "google-chrome";
 const wantPreviews = process.argv.includes("--previews");
+const only = process.argv.find((a) => a.startsWith("--lang="))?.slice(7).split(",");
+const langs = kitLangs.filter((l) => !only || only.includes(l));
 mkdirSync(outDir, { recursive: true });
 
 const dataUri = (file, type) => `data:${type};base64,${readFileSync(join(root, file)).toString("base64")}`;
@@ -51,20 +53,42 @@ function toPdf(html, name) {
   return pdf;
 }
 
+// Overflow guard: pages are fixed A4 with overflow hidden, so a long translation would be clipped silently.
+// Chrome renders a copy of the HTML with a script that writes any clipped page into <body data-overflow>.
+const overflowScript = `<script>window.addEventListener("load",()=>{const bad=[];document.querySelectorAll(".page").forEach((pg,i)=>{const r=pg.getBoundingClientRect();const limit=r.bottom-parseFloat(getComputedStyle(pg).paddingBottom)+2;let max=0;pg.querySelectorAll("*").forEach((el)=>{const b=el.getBoundingClientRect();if(b.height>0&&!el.closest(".hero,.foot,.sample-foot")&&b.bottom>max)max=b.bottom;if(b.right>r.right+1)bad.push((i+1)+":x");});if(pg.scrollHeight>pg.clientHeight+1||max>limit)bad.push((i+1)+":y"+Math.round(max-limit));});document.body.setAttribute("data-overflow",bad.join(","));});</script>`;
+function overflowOf(html, name) {
+  const f = join(tmp, `${name}-check.html`);
+  writeFileSync(f, html.replace("</body>", `${overflowScript}</body>`));
+  const dom = execFileSync(chromeBin, ["--headless=new", "--no-sandbox", "--disable-gpu", "--virtual-time-budget=5000", "--dump-dom", pathToFileURL(f).href], { maxBuffer: 64 * 1024 * 1024 }).toString();
+  return /data-overflow="([^"]*)"/.exec(dom)?.[1] ?? "";
+}
+const clipped = [];
+
 const built = [];
-for (const [lang, copy] of [["sl", sl], ["en", en]]) {
-  built.push(toPdf(renderKitHtml(copy, { pages: fullPages, assets }), `petprep-promise-kit-${lang}`));
-  built.push(toPdf(renderKitHtml(copy, { pages: samplePages, assets, sample: true }), `petprep-promise-sample-${lang}`));
+for (const lang of langs) {
+  const copy = kitCopy[lang];
+  const fullHtml = renderKitHtml(copy, { pages: fullPages, assets });
+  const sampleHtml = renderKitHtml(copy, { pages: samplePages, assets, sample: true });
+  for (const [html, name] of [[fullHtml, `petprep-promise-kit-${lang}`], [sampleHtml, `petprep-promise-sample-${lang}`]]) {
+    built.push(toPdf(html, name));
+    const bad = overflowOf(html, name);
+    if (bad) clipped.push(`${name}: page:axis+px ${bad}`);
+  }
 }
 for (const f of built) {
   const pages = /Pages:\s+(\d+)/.exec(execFileSync("pdfinfo", [f]).toString())?.[1];
   console.log(`${f.replace(root + "/", "")}  ${pages} pages`);
 }
 
+if (clipped.length) {
+  console.error(`OVERFLOW (text runs past the page or is clipped):\n  ${clipped.join("\n  ")}`);
+  process.exitCode = 1;
+} else console.log("overflow check: no page is clipped");
+
 if (wantPreviews) {
   mkdirSync(pngDir, { recursive: true });
   mkdirSync(previewDir, { recursive: true });
-  for (const lang of ["sl", "en"]) {
+  for (const lang of langs) {
     execFileSync("pdftoppm", ["-r", "110", "-png", join(outDir, `petprep-promise-kit-${lang}.pdf`), join(pngDir, `kit-${lang}`)]);
     execFileSync("pdftoppm", ["-r", "110", "-png", join(outDir, `petprep-promise-sample-${lang}.pdf`), join(pngDir, `sample-${lang}`)]);
     // Sales-page previews: cover (1), the Promise (3) and the cost sheet (8).

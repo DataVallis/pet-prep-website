@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import type { Locale } from "@/i18n/config";
+import { pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { kitCopy } from "@/content/promise-kit/index.ts";
 import { sales } from "@/content/promise-kit/sales.ts";
-import { buildMetadataFor } from "@/lib/seo";
+import { buildMetadataFor, pathAlternates } from "@/lib/seo";
 import { breadcrumbsLd, faqLd, graph } from "@/lib/jsonld";
 import { absoluteUrl, site } from "@/lib/site";
-import { giftPath, isKitLocale, promiseKitAlternatePaths, promiseKitConfig, promiseKitPath, promiseKitUpdated, type KitLocale } from "@/lib/promiseKit";
+import { formatKitPrice, giftPageOf, isKitLocale, promiseKitAlternatePaths, promiseKitConfig, promiseKitPath, promiseKitUpdated, type KitLocale } from "@/lib/promiseKit";
 import { JsonLd } from "@/components/JsonLd";
 import { Faq } from "@/components/Faq";
 
@@ -20,7 +20,7 @@ export function promiseKitMetadata(locale: string): Metadata {
   return buildMetadataFor({
     locale,
     path: promiseKitPath(locale),
-    languages: { en: absoluteUrl(paths.en), sl: absoluteUrl(paths.sl), "x-default": absoluteUrl(paths.en) },
+    languages: pathAlternates(paths),
     title: s.metaTitle,
     description: s.metaDescription,
   });
@@ -35,7 +35,8 @@ export function PromiseKitPage({ locale: localeParam }: { locale: string }) {
   const s = sales[locale];
   const kit = kitCopy[locale];
   const dict = getDictionary(locale as Locale);
-  const home = locale === "en" ? "/" : "/sl";
+  const home = pathFor(locale as Locale, "home");
+  const price = formatKitPrice(locale);
   const ld = graph(
     {
       "@type": "WebPage",
@@ -53,7 +54,7 @@ export function PromiseKitPage({ locale: localeParam }: { locale: string }) {
     <div className="flex flex-wrap items-center gap-3">
       {cfg.buyUrl ? (
         <a href={cfg.buyUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-          {s.buy} · {s.price}
+          {s.buy} · {price}
         </a>
       ) : null}
       {cfg.sampleUrl ? (
@@ -80,7 +81,7 @@ export function PromiseKitPage({ locale: localeParam }: { locale: string }) {
             <p className="eyebrow">{s.eyebrow}</p>
             <h1 className="h-display text-[clamp(38px,5.4vw,68px)]">{s.title}</h1>
             <p className="text-[19px] leading-relaxed text-muted">{s.lead}</p>
-            <p className="font-display text-[34px] font-extrabold leading-none tracking-[-0.02em]">{s.price}</p>
+            <p className="font-display text-[34px] font-extrabold leading-none tracking-[-0.02em]">{price}</p>
             <p className="max-w-xl text-sm text-muted">{s.priceNote}</p>
             {buttons}
           </header>
@@ -150,7 +151,7 @@ export function PromiseKitPage({ locale: localeParam }: { locale: string }) {
         {cfg.gift ? (
           <p className="mt-10 text-[16px]">
             {s.giftText}{" "}
-            <Link href={giftPath[locale]} className="rich-link">{s.giftLink}</Link>
+            <Link href={giftPageOf(locale)} className="rich-link">{s.giftLink}</Link>
           </p>
         ) : null}
         <p className="mt-6 text-sm text-muted">{site.name} · petprep.si</p>

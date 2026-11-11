@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useId, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
-import { apiBase, giftPaths, isPlausibleCode, isPlausibleEmail, isSuccess, normalizeCode, redeemOutcome, type GiftLocale, type MessageKey } from "@/lib/gift";
+import { apiBase, apiLocale, giftPath, isPlausibleCode, isPlausibleEmail, isSuccess, normalizeCode, redeemOutcome, type GiftLocale, type MessageKey } from "@/lib/gift";
 import { giftCopy } from "@/content/gift";
 
 const subscribeNever = () => () => {};
@@ -43,7 +43,7 @@ export function RedeemForm({ locale }: { locale: GiftLocale }) {
           res = await fetch(`${apiBase()}/api/gift/redeem`, {
           method: "POST",
           headers: { "Content-Type": "application/json", Accept: "application/json" },
-          body: JSON.stringify({ code: normalizeCode(code), email: email.trim(), locale }),
+          body: JSON.stringify({ code: normalizeCode(code), email: email.trim(), locale: apiLocale(locale) }),
           signal: controller.signal,
       });
       } finally {
@@ -115,7 +115,7 @@ export function RedeemForm({ locale }: { locale: GiftLocale }) {
       <div className="flex flex-col gap-2 text-sm text-muted">
         <p>{c.redeem.noAccountHelp}</p>
         <p>
-          <Link href={giftPaths.gift[locale]} className="rich-link">{c.redeem.giftLink}</Link>
+          <Link href={giftPath(locale, "gift")} className="rich-link">{c.redeem.giftLink}</Link>
         </p>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { isLocale, localeMeta, locales, pageKeyFromSlug, sitePageKeys, pageSlugs, pathFor, type Locale } from "@/i18n/config";
+import { isLocale, localeMeta, locales, pageKeyFromSlug, salesPageFromSlug, sitePageKeys, pageSlugs, pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import type { Block } from "@/content/types";
 import { buildMetadata } from "@/lib/seo";
@@ -11,11 +11,20 @@ import { JsonLd } from "@/components/JsonLd";
 import { Blocks } from "@/components/Blocks";
 import { StoreButtons } from "@/components/Cta";
 import { coloringHubLd } from "@/components/coloring/ColoringPages";
+import { assertGift, giftMetadata, GiftPage, RedeemPage } from "@/components/gift/GiftPages";
+import { PromiseKitPage, promiseKitMetadata } from "@/components/promise-kit/PromiseKitPage";
+import { giftSlugParams } from "@/lib/giftRoutes";
+import { promiseKitConfig, promiseKitSlugParams } from "@/lib/promiseKit";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return locales.flatMap((locale) => sitePageKeys.map((key) => ({ locale, slug: pageSlugs[key][locale] })));
+  return [
+    ...locales.flatMap((locale) => sitePageKeys.map((key) => ({ locale, slug: pageSlugs[key][locale] }))),
+    // Gift voucher (M6-S01) and Pet Promise Kit (M6-S02) sales pages, in every language, each only while its switch is on.
+    ...giftSlugParams(),
+    ...promiseKitSlugParams(promiseKitConfig().enabled),
+  ];
 }
 
 function resolve(localeParam: string, slug: string) {
@@ -29,6 +38,8 @@ const legalKeys = new Set(["privacy", "terms"]);
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]">): Promise<Metadata> {
   const { locale, slug } = await params;
+  const sales = isLocale(locale) ? salesPageFromSlug(locale, slug) : undefined;
+  if (sales) return sales === "promiseKit" ? promiseKitMetadata(locale) : giftMetadata(sales, locale);
   const r = resolve(locale, slug);
   if (!r) return {};
   const page = getDictionary(r.locale).pages[r.key];
@@ -41,6 +52,12 @@ function formatDate(locale: Locale, iso: string) {
 
 export default async function SubPage({ params }: PageProps<"/[locale]/[slug]">) {
   const { locale: localeParam, slug } = await params;
+  const sales = isLocale(localeParam) ? salesPageFromSlug(localeParam, slug) : undefined;
+  if (sales === "promiseKit") return <PromiseKitPage locale={localeParam} />;
+  if (sales) {
+    const lang = assertGift(localeParam);
+    return sales === "gift" ? <GiftPage lang={lang} /> : <RedeemPage lang={lang} />;
+  }
   const r = resolve(localeParam, slug);
   if (!r) notFound();
   const { locale, key } = r;

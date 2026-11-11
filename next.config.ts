@@ -1,6 +1,5 @@
 import type { NextConfig } from "next";
 import { englishOnlyPages, locales, pageSlugs } from "./src/i18n/config";
-import { giftRedirects } from "./src/lib/giftRoutes.ts";
 
 const nextConfig: NextConfig = {
   // Self-contained server for the Docker image (Dockerfile).
@@ -23,8 +22,6 @@ const nextConfig: NextConfig = {
           .filter((l) => l !== "en")
           .map((l) => ({ source: `/${l}/${pageSlugs[key][l]}`, destination: `/${pageSlugs[key].en}`, permanent: true })),
       ),
-      // Gift voucher pages (M6-S01): SL + EN only; the other 13 languages go to the English URL. Empty while the switch is off.
-      ...giftRedirects(),
       // The app's sign-up screen links to these short Slovenian paths.
       { source: "/pogoji", destination: "/sl/pogoji", permanent: true },
       { source: "/zasebnost", destination: "/sl/zasebnost", permanent: true },

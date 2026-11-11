@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useId, useState } from "react";
-import { GIFT_LANG_KEY, giftPaths, isPlausibleCode, normalizeCode, type GiftLocale } from "@/lib/gift";
+import { GIFT_LANG_KEY, giftPath, isPlausibleCode, normalizeCode, storedGiftLocale, type GiftLocale } from "@/lib/gift";
 import { giftCopy } from "@/content/gift";
 import { Voucher } from "./Voucher";
 
@@ -19,13 +19,14 @@ export function ThanksClient({ locale, promiseKitHref }: { locale: GiftLocale; p
   const [code, setCode] = useState("");
   const [touched, setTouched] = useState(false);
 
-  // Lemon Squeezy redirects every buyer to the English URL: a buyer who started on the Slovenian page goes on in Slovenian.
+  // Lemon Squeezy redirects every buyer to the English URL: a buyer who started on a page in another language goes on in that language.
   useEffect(() => {
     if (locale !== "en") return;
     try {
-      if (window.localStorage.getItem(GIFT_LANG_KEY) === "sl") {
+      const stored = storedGiftLocale(window.localStorage.getItem(GIFT_LANG_KEY));
+      if (stored && stored !== "en") {
         window.localStorage.removeItem(GIFT_LANG_KEY);
-        router.replace(giftPaths.thanks.sl);
+        router.replace(giftPath(stored, "thanks"));
       }
     } catch {
       // Storage blocked: stay on the English page, which has a language link.
@@ -35,7 +36,6 @@ export function ThanksClient({ locale, promiseKitHref }: { locale: GiftLocale; p
   const plausible = isPlausibleCode(code);
   const ready = plausible;
   const showError = touched && code.trim() !== "" && !plausible;
-  const other: GiftLocale = locale === "sl" ? "en" : "sl";
 
   return (
     <div className="flex flex-col gap-12">
@@ -92,15 +92,11 @@ export function ThanksClient({ locale, promiseKitHref }: { locale: GiftLocale; p
           ))}
         </ol>
         <div className="flex flex-wrap items-center gap-4">
-          <Link href={giftPaths.redeem[locale]} className="btn btn-secondary">{giftCopy[locale].redeemLink.button}</Link>
+          <Link href={giftPath(locale, "redeem")} className="btn btn-secondary">{giftCopy[locale].redeemLink.button}</Link>
           {promiseKitHref ? <Link href={promiseKitHref} className="rich-link">{giftCopy[locale].kit.button}</Link> : null}
           {/* TODO(David): link the promise kit PDF here once M6-S02 ships (the kit page link above shows while its switch is on). */}
         </div>
       </section>
-
-      <p className="text-sm text-muted">
-        <Link href={giftPaths.thanks[other]} hrefLang={other} lang={other} className="rich-link">{giftCopy[locale].langName}</Link>
-      </p>
     </div>
   );
 }
