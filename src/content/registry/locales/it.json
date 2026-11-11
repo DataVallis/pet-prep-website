@@ -768,6 +768,50 @@
       "synonyms": [
         "English Setter"
       ]
+    },
+    "lhasa_apso": {
+      "name": "Lhasa apso",
+      "slug": "lhasa-apso",
+      "synonyms": [
+        "Lhasa"
+      ]
+    },
+    "dogue_de_bordeaux": {
+      "name": "Dogue de Bordeaux",
+      "slug": "dogue-de-bordeaux",
+      "synonyms": [
+        "Alano di Bordeaux",
+        "Mastino francese"
+      ]
+    },
+    "flat_coated_retriever": {
+      "name": "Flat coated retriever",
+      "slug": "flat-coated-retriever",
+      "synonyms": [
+        "Flat-coated retriever",
+        "Flatcoat",
+        "Retriever a pelo liscio"
+      ]
+    },
+    "border_terrier": {
+      "name": "Border terrier",
+      "slug": "border-terrier"
+    },
+    "leonberger": {
+      "name": "Leonberger",
+      "slug": "leonberger",
+      "synonyms": [
+        "Leonberg"
+      ]
+    },
+    "beauceron": {
+      "name": "Beauceron",
+      "slug": "beauceron",
+      "synonyms": [
+        "Pastore di Beauce",
+        "Berger de Beauce",
+        "Bas rouge"
+      ]
     }
   },
   "suitability_labels": {
