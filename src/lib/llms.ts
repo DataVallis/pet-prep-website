@@ -11,6 +11,8 @@ import { coloringHubMarkdown } from "@/components/coloring/ColoringPages";
 import { kidsHubMarkdown } from "@/components/kids/Kids";
 import { careSpecies } from "@/content/care/care";
 import { speciesWords } from "@/content/care/copy";
+import { promiseKitConfig, promiseKitPath } from "@/lib/promiseKit";
+import { sales } from "@/content/promise-kit/sales.ts";
 
 /** Per-species, per-language register files: /llms/<species id>.<locale>.txt (keeps /llms-full.txt small at ~300 breeds). */
 /** Care knowledge per species and language: /llms/care-<species id>.<locale>.txt (M6-K). */
@@ -135,6 +137,10 @@ export function llmsIndex(): string {
       for (const b of registry.breeds.filter((x) => x.species === sp.id)) {
         lines.push(`  - [${b.name[locale]}](${absoluteUrl(breedHref(locale, b))}) — ${rc.availability[b.availability].label}`);
       }
+    }
+    // Pet Promise Kit (M6-S02): only English and Slovenian, only while the switch is on.
+    if (promiseKitConfig().enabled && (locale === "en" || locale === "sl")) {
+      lines.push(`- [${sales[locale].metaTitle}](${absoluteUrl(promiseKitPath(locale))}): ${sales[locale].metaDescription}`);
     }
     lines.push("");
   }

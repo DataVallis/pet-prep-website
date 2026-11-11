@@ -6,6 +6,8 @@ import { companyAddress, companyIdLabels } from "@/content";
 import { registry } from "@/content/registry/registry";
 import { speciesHref } from "@/lib/registry/views";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { promiseKitConfig, promiseKitFooterHref } from "@/lib/promiseKit";
+import { sales } from "@/content/promise-kit/sales.ts";
 
 export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const year = new Date().getFullYear();
@@ -64,7 +66,7 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
             {dict.footer.groups.map((g) => (
               <nav key={g.title} aria-label={g.title} className="flex flex-col gap-2.5">
                 <h2 className="font-semibold text-fog">{g.title}</h2>
-                {g.links.flatMap((k) => [
+                {[...g.links.flatMap((k) => [
                   <Link key={k} href={englishOnlyPages.includes(k) ? pathFor("en", k) : pathFor(locale, k)} hrefLang={englishOnlyPages.includes(k) ? "en" : undefined} className="hover:text-fog">
                     {dict.pages[k].navLabel ?? dict.pages[k].eyebrow}
                     {englishOnlyPages.includes(k) && locale !== "en" ? <span className="ml-1 text-xs font-semibold opacity-70">(EN)</span> : null}
@@ -77,7 +79,12 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                         </Link>
                       ))
                     : []),
-                ])}
+                ]),
+                // Pet Promise Kit (M6-S02): only with the switch on and only in English and Slovenian.
+                ...(g.links.includes("pricing") && promiseKitFooterHref(promiseKitConfig().enabled, locale)
+                  ? [<Link key="promiseKit" href={promiseKitFooterHref(promiseKitConfig().enabled, locale)!} className="hover:text-fog">{sales[locale as "en" | "sl"].breadcrumb}</Link>]
+                  : []),
+              ]}
               </nav>
             ))}
           </div>

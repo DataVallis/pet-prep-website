@@ -3,6 +3,7 @@ import { locales, sitePageKeys, pathFor, type Locale, type RouteKey } from "@/i1
 import { absoluteUrl } from "@/lib/site";
 import { pageUpdated } from "@/content/updated";
 import { alternatesFor, pathAlternates } from "@/lib/seo";
+import { promiseKitConfig, promiseKitSitemapEntries } from "@/lib/promiseKit";
 import { registry } from "@/content/registry/registry";
 import { emergencyHref } from "@/components/care/CarePages";
 import { coloringPageHref } from "@/components/coloring/ColoringPages";
@@ -87,5 +88,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: pathAlternates(each((l) => coloringPageHref(l, p))) },
     })),
   );
-  return [...pages, ...register, ...care, ...emergency, ...coloring];
+  // Pet Promise Kit (M6-S02): English and Slovenian only, and only while NEXT_PUBLIC_FEATURE_PROMISE_KIT=1.
+  const promiseKit = promiseKitSitemapEntries(promiseKitConfig().enabled).map((e) => ({
+    url: absoluteUrl(e.path),
+    lastModified: new Date(e.lastModified),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+    alternates: { languages: Object.fromEntries(Object.entries(e.languages).map(([k, v]) => [k, absoluteUrl(v)])) },
+  }));
+  return [...pages, ...register, ...care, ...emergency, ...coloring, ...promiseKit];
 }
