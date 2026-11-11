@@ -20,7 +20,7 @@ export const fr: GiftCopy = {
   what: {
     heading: "Ce qu’est PetPrep",
     paragraphs: [
-      "PetPrep est une application dans laquelle l’enfant s’occupe chaque jour d’un animal simulé plus vrai que nature : le nourrir, lui donner à boire, le promener, l’éduquer et nettoyer. Si les soins sont oubliés, l’animal le montre, exactement comme un vrai.",
+      "PetPrep est une application dans laquelle l’enfant s’occupe chaque jour d’un animal simulé plus vrai que nature : le nourrir, lui donner à boire, le promener, l’éduquer et nettoyer derrière lui. Si les soins sont oubliés, l’animal le montre, exactement comme un vrai.",
       "En tant que parent, vous disposez d’un tableau de bord avec un feu tricolore et un Care Score. Vous voyez où en est l’enfant sans avoir à surveiller chaque geste.",
       "Au bout de douze semaines, la famille reçoit un certificat de responsabilité et, surtout, une réponse honnête à la question : sommes-nous prêts pour un vrai animal ?",
     ],
@@ -44,10 +44,10 @@ export const fr: GiftCopy = {
     ],
   },
   audience: {
-    heading: "Pour qui, et pour qui ce n’est pas fait",
+    heading: "À qui il s’adresse, et à qui il ne s’adresse pas",
     forTitle: "Ce bon est pour vous si",
     forItems: [
-      "un enfant de votre famille demande depuis longtemps un animal et que vous voulez qu’il s’essaie d’abord à en prendre soin,",
+      "un enfant de votre famille demande depuis longtemps un animal et que vous voulez qu’il en fasse d’abord l’essai,",
       "vous cherchez un cadeau pour un petit-enfant, une nièce ou un filleul qui ne soit ni un animal vivant ni une promesse,",
       "vous souhaitez que l’expérience des soins vienne des gestes de l’enfant, et non de vos paroles.",
     ],

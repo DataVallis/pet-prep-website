@@ -8,7 +8,7 @@ export const pt: GiftCopy = {
   breadcrumb: "Vale-oferta",
   eyebrow: "Vale-oferta",
   title: "Não ofereças um cachorro. Oferece uma experiência.",
-  lead: "Um vale-oferta para o Desafio PetPrep de 12 semanas: doze semanas a cuidar de um animal simulado realista, antes de a família decidir se quer um de verdade. Para a criança que não pára de pedir um animal e para os pais que gostariam de uma resposta.",
+  lead: "Um vale-oferta para o Desafio PetPrep de 12 semanas: doze semanas a cuidar de um animal simulado realista, antes de a família decidir se quer um de verdade. Para a criança que não para de pedir um animal e para os pais que gostariam de uma resposta.",
   buy: {
     button: "Comprar um vale-oferta",
     soon: "Em breve",
@@ -62,11 +62,11 @@ export const pt: GiftCopy = {
     heading: "Perguntas frequentes",
     items: [
       { q: "Durante quanto tempo é válido o vale?", a: "O vale é válido durante 12 meses a partir da compra. Depois de um dos pais o resgatar, o desafio fica na conta da família e não expira. As doze semanas começam quando o pai ou a mãe atribui o desafio a um animal na aplicação, e não no momento do resgate." },
-      { q: "Posso pedir o reembolso?", a: "Um vale por resgatar pode ser reembolsado nos 14 dias seguintes à compra. Um vale já resgatado não pode ser reembolsado. Os reembolsos são tratados através do Lemon Squeezy, onde fizeste a compra, e os teus direitos legais enquanto consumidor mantêm-se inalterados." },
+      { q: "Posso pedir o reembolso?", a: "Um vale por resgatar pode ser reembolsado nos 14 dias seguintes à compra. Um vale já resgatado não pode ser reembolsado. Os reembolsos são tratados através do Lemon Squeezy, onde fizeste a compra, e os teus direitos legais como consumidor mantêm-se inalterados." },
       { q: "Em que dispositivos funciona?", a: "A aplicação PetPrep existe para iPhone e para telemóveis Android. O vale resgata-se neste site, em qualquer navegador." },
       { q: "Preciso de uma conta?", a: "Para comprar e imprimir o vale, não. Para o resgatar, a família precisa de uma conta de pais na aplicação: introduzes o código juntamente com o e-mail dessa conta. Se iniciares sessão na aplicação com a Google ou a Apple, introduz o e-mail que aparece na aplicação («Controls → Account»)." },
       { q: "O vale serve para um gato?", a: "Sim. Hoje a aplicação tem cães e gatos, e o vale serve para qualquer espécie e raça disponível na aplicação no momento da escolha." },
-      { q: "A criança vai ter um animal depois do desafio?", a: "O vale não o promete nem o inclui. O desafio ajuda a família a responder com honestidade se está preparada. A decisão sobre um animal de verdade continua a ser vossa." },
+      { q: "Vai haver um animal de verdade depois do desafio?", a: "O vale não o promete nem o inclui. O desafio ajuda a família a responder com honestidade se está preparada. A decisão sobre um animal de verdade continua a ser vossa." },
       { q: "O que acontece ao código quando o escrevo?", a: "Na página de impressão do vale, o código não é guardado nem enviado para lado nenhum: o vale é desenhado no teu navegador. O código só é verificado no momento do resgate." },
     ],
   },

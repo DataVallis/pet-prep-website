@@ -115,7 +115,7 @@ export const pl: GiftCopy = {
     meta: { title: "Zrealizuj bon podarunkowy", description: "Wpisz kod bonu podarunkowego i adres e-mail konta rodzica w aplikacji PetPrep." },
     eyebrow: "Bon podarunkowy",
     title: "Zrealizuj bon podarunkowy",
-    lead: "Wpisz kod z bonu i adres e-mail, na który jesteś zalogowany w aplikacji PetPrep. Wyzwanie zostanie dodane do konta rodziny, a zwierzaka wybierzesz w aplikacji.",
+    lead: "Wpisz kod z bonu i adres e-mail, którego używasz do logowania w aplikacji PetPrep. Wyzwanie zostanie dodane do konta rodziny, a zwierzaka wybierzesz w aplikacji.",
     codeLabel: "Kod bonu",
     codeHint: "Kod jest na bonie. Spacje nie przeszkadzają.",
     emailLabel: "Adres e-mail konta rodzica",
