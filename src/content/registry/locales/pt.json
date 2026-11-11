@@ -791,6 +791,25 @@
         "Lhasa-apso",
         "Apso"
       ]
+    },
+    "border_terrier": {
+      "name": "Border terrier",
+      "slug": "border-terrier"
+    },
+    "leonberger": {
+      "name": "Leonberger",
+      "slug": "leonberger",
+      "synonyms": [
+        "Leonberg"
+      ]
+    },
+    "beauceron": {
+      "name": "Pastor de Beauce",
+      "slug": "pastor-de-beauce",
+      "synonyms": [
+        "Beauceron",
+        "Berger de Beauce"
+      ]
     }
   },
   "suitability_labels": {
