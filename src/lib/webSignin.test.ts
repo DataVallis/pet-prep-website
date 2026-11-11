@@ -133,10 +133,10 @@ test("buttons are hidden without client ids: empty, whitespace or unset → no p
   assert.equal(googleClientId(" x.apps.googleusercontent.com "), "x.apps.googleusercontent.com");
   assert.equal(googleClientId(""), null);
   assert.equal(appleServicesId(undefined), null);
-  // wired: the production env has both ids, empty, so both buttons are off until David pastes them
+  // wired: the production env carries both (public) ids, so both buttons are on; they must be well-formed
   const env = src("../../.env.production");
-  assert.match(env, /^NEXT_PUBLIC_GOOGLE_WEB_CLIENT_ID=$/m);
-  assert.match(env, /^NEXT_PUBLIC_APPLE_SERVICES_ID=$/m);
+  assert.match(env, /^NEXT_PUBLIC_GOOGLE_WEB_CLIENT_ID=\d+-[a-z0-9]+\.apps\.googleusercontent\.com$/m);
+  assert.match(env, /^NEXT_PUBLIC_APPLE_SERVICES_ID=com\.datavallis\.petprep\.web$/m);
   const flow = src("../components/gift/RedeemFlow.tsx");
   assert.match(flow, /googleClientId\(\) \?[\s\S]*continueWithGoogle/);
   assert.match(flow, /appleServicesId\(\) \?[\s\S]*continueWithApple/);

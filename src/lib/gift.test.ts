@@ -6,7 +6,6 @@ import {
   giftBuyUrl,
   giftPath,
   giftPathsOf,
-  apiLocale,
   storedGiftLocale,
   isGiftEnabled,
   isPlausibleCode,
@@ -176,9 +175,8 @@ test("public paths: localized slugs, English at the root", () => {
   }
 });
 
-test("API language: sl and en only, everything else is sent as en; stored language is any of the 15", () => {
-  assert.equal(apiLocale("sl"), "sl");
-  for (const l of locales.filter((x) => x !== "sl")) assert.equal(apiLocale(l), "en", l);
+test("stored language is any of the 15; the redeem request sends the real website language", () => {
+  assert.match(src("../components/gift/RedeemFlow.tsx"), /JSON\.stringify\(\{ code: normalizeCode\(code\), locale \}\)/);
   for (const l of locales) assert.equal(storedGiftLocale(l), l);
   assert.equal(storedGiftLocale("xx"), null);
   assert.equal(storedGiftLocale(null), null);

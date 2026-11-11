@@ -53,8 +53,8 @@ Need it live now (a launch, a fix)? Run workflow → target `production`.
 | `NEXT_PUBLIC_FEATURE_GIFT` | exactly `1` = gift, thank-you and redeem pages on; anything else = off (404, no sitemap entry) |
 | `NEXT_PUBLIC_LS_GIFT_URL` | Lemon Squeezy checkout URL of the gift product |
 | `NEXT_PUBLIC_PETPREP_API_URL` | API for the redeem and sign-in requests, default `https://api.petprep.si` |
-| `NEXT_PUBLIC_GOOGLE_WEB_CLIENT_ID` | Client ID of the Google *Web application* client "PetPrep website" (public). Empty = no "Continue with Google" button (M6-S01b) |
-| `NEXT_PUBLIC_APPLE_SERVICES_ID` | Apple Services ID, planned `com.datavallis.petprep.web` (public). Empty = no "Continue with Apple" button (M6-S01b) |
+| `NEXT_PUBLIC_GOOGLE_WEB_CLIENT_ID` | Client ID of the Google *Web application* client "PetPrep website" (public, set). Emptying it removes the "Continue with Google" button (M6-S01b) |
+| `NEXT_PUBLIC_APPLE_SERVICES_ID` | Apple Services ID, `com.datavallis.petprep.web` (public, set). Emptying it removes the "Continue with Apple" button (M6-S01b) |
 
 - **Flip = a pull request** that edits `.env.production`. Do not use a repository variable: CI reuses the image of a green run per git tree (`plan` job), so an unchanged tree would ship the old image.
 - The manual full build (`Dockerfile`, `deploy/deploy.sh`) reads the same `.env.production` (`.dockerignore` lets that one file through); there are no build args for these values (so the two sign-in ids above are set in that file too, not as `--build-arg`).

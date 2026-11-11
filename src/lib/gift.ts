@@ -47,11 +47,6 @@ export function redeemDisplayUrl(locale: Locale): string {
   return `petprep.si${giftPath(locale, "redeem")}`;
 }
 
-/** Language to send to the API (it knows sl and en only, contract §2.4); every other language is sent as en. */
-export function apiLocale(locale: Locale): "sl" | "en" {
-  return locale === "sl" ? "sl" : "en";
-}
-
 /** Reads the language marker the buy button stored: any of the 15 site languages, otherwise null. */
 export function storedGiftLocale(raw: string | null | undefined): Locale | null {
   return raw && isLocale(raw) ? raw : null;

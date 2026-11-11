@@ -51,6 +51,18 @@ export function RedeemFlow({ locale }: { locale: GiftLocale }) {
     }
   }, []);
 
+  // Back from Google/Apple can restore this page from the back/forward cache with the "opening" state still set.
+  useEffect(() => {
+    const onShow = (e: PageTransitionEvent) => {
+      if (!e.persisted) return;
+      busy.current = false;
+      setRedirecting(false);
+      setNotice(null);
+    };
+    window.addEventListener("pageshow", onShow);
+    return () => window.removeEventListener("pageshow", onShow);
+  }, []);
+
   const endSession = useCallback((key: MessageKey | null) => {
     setSession(null);
     setCode("");
@@ -71,9 +83,19 @@ export function RedeemFlow({ locale }: { locale: GiftLocale }) {
   useEffect(() => {
     if (!session) return;
     const token = session.token;
-    const onHide = () => void closeWebSession(token, { keepalive: true });
-    window.addEventListener("pagehide", onHide);
-    return () => window.removeEventListener("pagehide", onHide);
+    let closed = false;
+    const close = () => {
+      if (closed) return;
+      closed = true;
+      void closeWebSession(token, { keepalive: true });
+    };
+    window.addEventListener("pagehide", close);
+    return () => {
+      window.removeEventListener("pagehide", close);
+      // Also on unmount: a client-side navigation away (header, footer) fires no pagehide. A repeated DELETE after a sign-out is harmless
+      // (the endpoint is idempotent).
+      close();
+    };
   }, [session]);
 
   async function signInWithPassword(e: FormEvent<HTMLFormElement>) {
