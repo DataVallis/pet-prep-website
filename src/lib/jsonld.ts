@@ -18,7 +18,6 @@ export function organizationLd(dict: Dictionary) {
     slogan: dict.meta.slogan,
     description: dict.meta.siteDescription,
     email: site.email.hello,
-    parentOrganization: companyLd(),
     founder: { "@type": "Person", name: site.company.founder },
     address: postalAddressLd(),
     ...(site.social.links.length ? { sameAs: site.social.links } : {}),
@@ -28,23 +27,6 @@ export function organizationLd(dict: Dictionary) {
 function postalAddressLd() {
   const c = site.company;
   return { "@type": "PostalAddress", streetAddress: c.street, postalCode: c.postalCode, addressLocality: c.city, addressCountry: c.countryCode };
-}
-
-/** The legal entity behind PetPrep (site.company). */
-function companyLd() {
-  const c = site.company;
-  return {
-    "@type": "Organization",
-    "@id": `${c.url}/#organization`,
-    name: c.name,
-    legalName: c.legalName,
-    url: c.url,
-    address: postalAddressLd(),
-    vatID: c.vatId,
-    taxID: c.taxNumber,
-    identifier: { "@type": "PropertyValue", propertyID: "SI-MS", name: "Matična številka", value: c.registrationNumber },
-    founder: { "@type": "Person", name: c.founder },
-  };
 }
 
 export function websiteLd(dict: Dictionary) {

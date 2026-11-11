@@ -58,7 +58,7 @@ const en: Dictionary = {
     rights: "All rights reserved.",
     dataEu: "Data stored in the EU.",
     languages: "More languages coming soon.",
-    company: "PetPrep is a product of",
+    company: "Operator:",
     cookieSettings: "Cookie settings",
     a11yBadge: { title: "Accessible play", text: "Easier gestures · Screen readers · Less motion" },
   },
@@ -606,7 +606,7 @@ const en: Dictionary = {
           heading: "Stage",
           paragraphs: [
             "PetPrep is pre-launch, with a closed beta planned. The first market is Slovenia and the region, followed by DACH and the UK; the product is built for global localization from day one.",
-            "Founder: David Tacer, software developer and entrepreneur (Data Vallis David Tacer s.p., Dravograd, Slovenia). More [about us](page:about).",
+            "Founder: David Tacer, software developer and entrepreneur. More [about us](page:about).",
           ],
         },
         { type: "callout", title: "Request the investor brief.", text: "We share the brief, deck and data room on request.", tone: "dark" },
@@ -974,11 +974,11 @@ const en: Dictionary = {
       meta: {
         title: "Delete your PetPrep account and data",
         description:
-          "How to delete your PetPrep account (Data Vallis) in the app or by e-mail, which data is deleted, what is kept and for how long.",
+          "How to delete your PetPrep account in the app or by e-mail, which data is deleted, what is kept and for how long.",
       },
       eyebrow: "Trust",
       title: "Delete your PetPrep account",
-      lead: "PetPrep is made by Data Vallis. You can delete your account and your family's data at any time — in the app, instantly, or by e-mail if you no longer have the app.",
+      lead: "You can delete your account and your family's data at any time — in the app, instantly, or by e-mail if you no longer have the app.",
       blocks: [
         {
           type: "steps",
@@ -1033,7 +1033,7 @@ const en: Dictionary = {
       meta: {
         title: "About PetPrep — company, founder and how we source pet facts",
         description:
-          "Who makes PetPrep: Data Vallis David Tacer s.p. from Dravograd, Slovenia, founder David Tacer, our mission, and how the animal register sources and checks its facts.",
+          "Who makes PetPrep: founder David Tacer, our mission, and how the animal register sources and checks its facts.",
       },
       navLabel: "About us",
       eyebrow: "About us",
@@ -1045,7 +1045,7 @@ const en: Dictionary = {
           id: "company",
           heading: "The company",
           paragraphs: [
-            "PetPrep is a product of Data Vallis David Tacer s.p., a software development business (sole proprietorship) with its registered office in Dravograd, Slovenia. The same business operates this website and the PetPrep app and is the controller of personal data (see the [privacy policy](page:privacy)).",
+            "PetPrep is provided by Data Vallis David Tacer s.p., a software development business (sole proprietorship) with its registered office in Dravograd, Slovenia. The same business operates this website and the PetPrep app and is the controller of personal data (see the [privacy policy](page:privacy)).",
           ],
         },
         { type: "company" },

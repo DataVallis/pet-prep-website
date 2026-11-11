@@ -58,7 +58,7 @@ const hr: Dictionary = {
     rights: "Sva prava pridržana.",
     dataEu: "Podaci se pohranjuju u EU-u.",
     languages: "Uskoro još jezika.",
-    company: "PetPrep je proizvod tvrtke",
+    company: "Operator:",
     cookieSettings: "Postavke kolačića",
     a11yBadge: { title: "Pristupačna igra", text: "Lakše geste · Čitači zaslona · Manje pokreta" },
   },
@@ -588,7 +588,7 @@ const hr: Dictionary = {
           heading: "Faza",
           paragraphs: [
             "PetPrep je u fazi prije lansiranja, a planirana je zatvorena beta. Prvo tržište je Slovenija s regijom, zatim slijede zemlje DACH-a i Ujedinjeno Kraljevstvo; proizvod je od prvog dana građen za lokalizaciju diljem svijeta.",
-            "Osnivač: David Tacer, programer i poduzetnik (Data Vallis David Tacer s.p., Dravograd, Slovenija). Više [o nama](page:about).",
+            "Osnivač: David Tacer, programer i poduzetnik. Više [o nama](page:about).",
           ],
         },
         { type: "callout", title: "Zatraži sažetak za investitore.", text: "Sažetak, prezentaciju i podatkovnu sobu dijelimo na zahtjev.", tone: "dark" },
@@ -954,11 +954,11 @@ const hr: Dictionary = {
       meta: {
         title: "Izbriši svoj račun i podatke u PetPrepu",
         description:
-          "Kako izbrisati račun u PetPrepu (Data Vallis) u aplikaciji ili e-poštom, koji se podaci brišu, što se čuva i koliko dugo.",
+          "Kako izbrisati račun u PetPrepu u aplikaciji ili e-poštom, koji se podaci brišu, što se čuva i koliko dugo.",
       },
       eyebrow: "Povjerenje",
       title: "Izbriši svoj račun u PetPrepu",
-      lead: "Prijevod – obvezujuća je samo engleska verzija. PetPrep izrađuje Data Vallis. Svoj račun i podatke svoje obitelji možeš izbrisati u svakom trenutku – odmah u aplikaciji ili e-poštom ako aplikaciju više nemaš.",
+      lead: "Prijevod – obvezujuća je samo engleska verzija. Svoj račun i podatke svoje obitelji možeš izbrisati u svakom trenutku – odmah u aplikaciji ili e-poštom ako aplikaciju više nemaš.",
       blocks: [
         {
           type: "steps",
@@ -1013,7 +1013,7 @@ const hr: Dictionary = {
       meta: {
         title: "O PetPrepu – tvrtka, osnivač i kako biramo izvore za podatke o životinjama",
         description:
-          "Tko izrađuje PetPrep: Data Vallis David Tacer s.p. iz Dravograda u Sloveniji, osnivač David Tacer, naša misija i kako enciklopedija životinja bira i provjerava izvore svojih podataka.",
+          "Tko izrađuje PetPrep: osnivač David Tacer, naša misija i kako enciklopedija životinja bira i provjerava izvore svojih podataka.",
       },
       navLabel: "O nama",
       eyebrow: "O nama",
@@ -1025,7 +1025,7 @@ const hr: Dictionary = {
           id: "company",
           heading: "Tvrtka",
           paragraphs: [
-            "PetPrep je proizvod tvrtke Data Vallis David Tacer s.p., obrta za razvoj softvera (samostalni poduzetnik) sa sjedištem u Dravogradu u Sloveniji. Isti obrt vodi ovu mrežnu stranicu i aplikaciju PetPrep te je voditelj obrade osobnih podataka (vidi [pravila privatnosti](page:privacy)).",
+            "PetPrep pruža Data Vallis David Tacer s.p., obrt za razvoj softvera (samostalni poduzetnik) sa sjedištem u Dravogradu u Sloveniji. Isti obrt vodi ovu mrežnu stranicu i aplikaciju PetPrep te je voditelj obrade osobnih podataka (vidi [pravila privatnosti](page:privacy)).",
           ],
         },
         { type: "company" },

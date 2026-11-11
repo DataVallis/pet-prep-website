@@ -58,7 +58,7 @@ const nb: Dictionary = {
     rights: "Alle rettigheter forbeholdt.",
     dataEu: "Data lagres i EU.",
     languages: "Flere språk kommer snart.",
-    company: "PetPrep er et produkt fra",
+    company: "Drives av:",
     cookieSettings: "Innstillinger for informasjonskapsler",
     a11yBadge: { title: "Tilgjengelig lek", text: "Enklere bevegelser · Skjermlesere · Mindre bevegelse" },
   },
@@ -588,7 +588,7 @@ const nb: Dictionary = {
           heading: "Fase",
           paragraphs: [
             "PetPrep er i fasen før lansering, og en lukket beta er planlagt. Det første markedet er Slovenia og regionen, deretter DACH og Storbritannia; produktet er bygget for global lokalisering fra første dag.",
-            "Grunnlegger: David Tacer, programvareutvikler og gründer (Data Vallis David Tacer s.p., Dravograd, Slovenia). Mer [om oss](page:about).",
+            "Grunnlegger: David Tacer, programvareutvikler og gründer. Mer [om oss](page:about).",
           ],
         },
         { type: "callout", title: "Be om investornotatet.", text: "Vi deler notat, presentasjon og datarom på forespørsel.", tone: "dark" },
@@ -954,11 +954,11 @@ const nb: Dictionary = {
       meta: {
         title: "Slett PetPrep-kontoen og dataene dine",
         description:
-          "Slik sletter du PetPrep-kontoen din (Data Vallis) i appen eller via e-post, hvilke data som slettes, hva som oppbevares og hvor lenge.",
+          "Slik sletter du PetPrep-kontoen din i appen eller via e-post, hvilke data som slettes, hva som oppbevares og hvor lenge.",
       },
       eyebrow: "Tillit",
       title: "Slett PetPrep-kontoen din",
-      lead: "Oversettelse – kun den engelske versjonen er juridisk bindende. PetPrep er laget av Data Vallis. Du kan når som helst slette kontoen din og familiens data – i appen, umiddelbart, eller via e-post hvis du ikke lenger har appen.",
+      lead: "Oversettelse – kun den engelske versjonen er juridisk bindende. Du kan når som helst slette kontoen din og familiens data – i appen, umiddelbart, eller via e-post hvis du ikke lenger har appen.",
       blocks: [
         {
           type: "steps",
@@ -1013,7 +1013,7 @@ const nb: Dictionary = {
       meta: {
         title: "Om PetPrep – selskapet, grunnleggeren og hvordan vi henter fakta om dyr",
         description:
-          "Hvem som lager PetPrep: Data Vallis David Tacer s.p. fra Dravograd i Slovenia, grunnlegger David Tacer, vårt oppdrag og hvordan dyreleksikonet henter og kontrollerer fakta.",
+          "Hvem som lager PetPrep: grunnlegger David Tacer, vårt oppdrag og hvordan dyreleksikonet henter og kontrollerer fakta.",
       },
       navLabel: "Om oss",
       eyebrow: "Om oss",
@@ -1025,7 +1025,7 @@ const nb: Dictionary = {
           id: "company",
           heading: "Selskapet",
           paragraphs: [
-            "PetPrep er et produkt fra Data Vallis David Tacer s.p., et programvareselskap (enkeltpersonforetak) med forretningsadresse i Dravograd i Slovenia. Det samme foretaket driver dette nettstedet og PetPrep-appen og er behandlingsansvarlig for personopplysninger (se [personvernerklæringen](page:privacy)).",
+            "PetPrep tilbys av Data Vallis David Tacer s.p., et programvareselskap (enkeltpersonforetak) med forretningsadresse i Dravograd i Slovenia. Det samme foretaket driver dette nettstedet og PetPrep-appen og er behandlingsansvarlig for personopplysninger (se [personvernerklæringen](page:privacy)).",
           ],
         },
         { type: "company" },

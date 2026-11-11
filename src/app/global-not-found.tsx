@@ -3,7 +3,6 @@ import Link from "next/link";
 import en from "@/content/en";
 import { getDictionary } from "@/content";
 import { defaultLocale, localeMeta, locales, pathFor, type Locale } from "@/i18n/config";
-import { site } from "@/lib/site";
 import { fontClasses } from "./fonts";
 import "./globals.css";
 
@@ -68,7 +67,7 @@ export default function GlobalNotFound() {
           })}
         </main>
         <footer className="on-dark bg-graphite py-6 text-[13px] text-muted-dark">
-          <div className="container-page">© PetPrep · {site.company.legalName}, {site.company.city}</div>
+          <div className="container-page">© PetPrep</div>
         </footer>
       </body>
     </html>

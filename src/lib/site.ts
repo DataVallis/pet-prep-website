@@ -6,13 +6,13 @@ export const site = {
   /** Canonical origin, no trailing slash. Override with NEXT_PUBLIC_SITE_URL. */
   url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://petprep.si").replace(/\/$/, ""),
   /**
-   * Company operating the service (legal identity confirmed by David, 2026-10-15).
+   * Legal operator of the service (identity confirmed by David, 2026-10-15). Shown only where the law requires
+   * naming the operator (privacy policy, terms, about-page imprint, footer identity line, accessibility, cookie
+   * banner controller); never used as a brand, meta author/publisher or JSON-LD name.
    * Currently David's sole proprietorship (s.p.); will switch to a new d.o.o. later —
    * change these values plus the hard-coded company mentions in content/en.ts + sl.ts (grep "s.p.").
    */
   company: {
-    /** Short trading name used in running text. */
-    name: "Data Vallis",
     /** Registered legal name (AJPES). */
     legalName: "Data Vallis David Tacer s.p.",
     founder: "David Tacer",
