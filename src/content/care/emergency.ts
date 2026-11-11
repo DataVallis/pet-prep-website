@@ -94,6 +94,8 @@ export const emergencyCopy: Record<Locale, {
   contactsTitle: string; contactsIntro: string; poisonLine: string; emergencyVet: string; noPhone: string;
   elsewhere: string; sources: string; open: string; countries: Record<string, string>;
   vetsTitle: string; vetsIntro: string;
+  /** Directory totals, labels for: vets, duty rotas, poison lines, countries (David 2026-11-11). */
+  vetsStats: [string, string, string, string];
   vets: Omit<VetCopy, "countries">;
 }> = {
   en: {
@@ -115,6 +117,7 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Slovenia", HR: "Croatia", GB: "United Kingdom", US: "United States", AU: "Australia" },
     vetsTitle: "Vets and emergency clinics by country",
     vetsIntro: "On holiday or at home: pick the country, filter by region or town, or show only clinics open 24 hours. Every entry links the page we took it from — call ahead, hours can change.",
+    vetsStats: ["Vets","Duty rotas","Poison lines","Countries"],
     vets: {
       chooseCountry: "Choose a country", choosePrompt: "Choose a country above to see its vets, duty rotas and poison lines.", typeToSearch: "Type to search…", noMatch: "No match",
       country: "Country", all: "All countries", region: "Region", allRegions: "All regions", search: "Town or name",
@@ -142,6 +145,7 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Slovenija", HR: "Hrvaška", GB: "Združeno kraljestvo", US: "ZDA", AU: "Avstralija" },
     vetsTitle: "Veterinarji in nujna pomoč po državah",
     vetsIntro: "Doma ali na dopustu: izberite državo, filtrirajte po regiji ali kraju ali prikažite samo klinike, ki so odprte 24\u00a0ur na dan. Vsak vnos vodi na stran, iz katere smo ga povzeli – pred obiskom pokličite, saj se delovni čas lahko spremeni.",
+    vetsStats: ["Veterinarji","Dežurstva","Linije za zastrupitve","Države"],
     vets: {
       chooseCountry: "Izberite državo", choosePrompt: "Zgoraj izberite državo, da vidite njene veterinarje, dežurstva in linije za zastrupitve.", typeToSearch: "Vpišite za iskanje …", noMatch: "Ni zadetkov",
       country: "Država", all: "Vse države", region: "Regija", allRegions: "Vse regije", search: "Kraj ali ime",
@@ -169,6 +173,7 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Slowenien", HR: "Kroatien", GB: "Vereinigtes Königreich", US: "Vereinigte Staaten", AU: "Australien" },
     vetsTitle: "Tierärzte und Notfallkliniken nach Ländern",
     vetsIntro: "Im Urlaub oder zu Hause: Wählen Sie das Land, filtern Sie nach Region oder Ort, oder lassen Sie sich nur Kliniken anzeigen, die rund um die Uhr geöffnet sind. Jeder Eintrag verweist auf die Seite, von der wir ihn übernommen haben – rufen Sie vorher an, Öffnungszeiten können sich ändern.",
+    vetsStats: ["Tierärzte","Notdienstpläne","Giftnotrufe","Länder"],
     vets: {
       chooseCountry: "Land wählen", choosePrompt: "Wählen Sie oben ein Land, um seine Tierärzte, Notdienste und Giftnotrufe zu sehen.", typeToSearch: "Zum Suchen tippen …", noMatch: "Kein Treffer",
       country: "Land", all: "Alle Länder", region: "Region", allRegions: "Alle Regionen", search: "Ort oder Name",
@@ -196,6 +201,7 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Slovénie", HR: "Croatie", GB: "Royaume-Uni", US: "États-Unis", AU: "Australie" },
     vetsTitle: "Vétérinaires et cliniques d’urgence par pays",
     vetsIntro: "En vacances ou chez vous : choisissez le pays, filtrez par région ou par ville, ou n’affichez que les cliniques ouvertes 24 h/24. Chaque fiche renvoie à la page d’où nous l’avons tirée – appelez avant de vous déplacer, les horaires peuvent changer.",
+    vetsStats: ["Vétérinaires","Gardes","Lignes antipoison","Pays"],
     vets: {
       chooseCountry: "Choisissez un pays", choosePrompt: "Choisissez un pays ci-dessus pour voir ses vétérinaires, ses services de garde et ses lignes antipoison.", typeToSearch: "Tapez pour chercher…", noMatch: "Aucun résultat",
       country: "Pays", all: "Tous les pays", region: "Région", allRegions: "Toutes les régions", search: "Ville ou nom",
@@ -223,6 +229,7 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Eslovenia", HR: "Croacia", GB: "Reino Unido", US: "Estados Unidos", AU: "Australia" },
     vetsTitle: "Veterinarios y clínicas de urgencias por países",
     vetsIntro: "En casa o de vacaciones: elige el país, filtra por región o localidad, o muestra solo las clínicas abiertas las 24 horas. Cada ficha enlaza a la página de la que procede. Llama antes de ir, porque los horarios pueden cambiar.",
+    vetsStats: ["Veterinarios","Guardias","Líneas de intoxicación","Países"],
     vets: {
       chooseCountry: "Elige un país", choosePrompt: "Elige un país arriba para ver sus veterinarios, servicios de guardia y líneas de intoxicaciones.", typeToSearch: "Escribe para buscar…", noMatch: "Sin resultados",
       country: "País", all: "Todos los países", region: "Región", allRegions: "Todas las regiones", search: "Localidad o nombre",
@@ -250,6 +257,7 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Slovenia", HR: "Croazia", GB: "Regno Unito", US: "Stati Uniti", AU: "Australia" },
     vetsTitle: "Veterinari e cliniche di pronto soccorso, Paese per Paese",
     vetsIntro: "A casa o in vacanza: scegli il Paese, filtra per regione o località, oppure mostra solo le cliniche aperte 24 ore su 24. Ogni scheda rimanda alla pagina da cui l’abbiamo presa. Chiama prima di andare, perché gli orari possono cambiare.",
+    vetsStats: ["Veterinari","Turni di guardia","Linee antiveleni","Paesi"],
     vets: {
       chooseCountry: "Scegli un paese", choosePrompt: "Scegli un paese qui sopra per vedere i suoi veterinari, i turni di guardia e le linee antiveleni.", typeToSearch: "Scrivi per cercare…", noMatch: "Nessun risultato",
       country: "Paese", all: "Tutti i Paesi", region: "Regione", allRegions: "Tutte le regioni", search: "Località o nome",
@@ -277,6 +285,7 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Eslovénia", HR: "Croácia", GB: "Reino Unido", US: "Estados Unidos", AU: "Austrália" },
     vetsTitle: "Veterinários e clínicas de urgência por país",
     vetsIntro: "Em casa ou de férias: escolhe o país, filtra por região ou localidade, ou mostra apenas as clínicas abertas 24 horas por dia. Cada entrada tem uma ligação para a página de onde a tirámos. Liga antes de ir, porque os horários podem mudar.",
+    vetsStats: ["Veterinários","Escalas de urgência","Linhas antivenenos","Países"],
     vets: {
       chooseCountry: "Escolhe um país", choosePrompt: "Escolhe um país acima para veres os veterinários, os serviços de urgência e as linhas antivenenos.", typeToSearch: "Escreve para pesquisar…", noMatch: "Sem resultados",
       country: "País", all: "Todos os países", region: "Região", allRegions: "Todas as regiões", search: "Localidade ou nome",
@@ -304,6 +313,7 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Slovenië", HR: "Kroatië", GB: "Verenigd Koninkrijk", US: "Verenigde Staten", AU: "Australië" },
     vetsTitle: "Dierenartsen en spoedklinieken per land",
     vetsIntro: "Thuis of op vakantie: kies het land, filter op regio of plaats, of laat alleen klinieken zien die 24 uur per dag open zijn. Bij elke vermelding staat een link naar de pagina waar we die vandaan hebben – bel even van tevoren, openingstijden kunnen veranderen.",
+    vetsStats: ["Dierenartsen","Dienstroosters","Gifinformatielijnen","Landen"],
     vets: {
       chooseCountry: "Kies een land", choosePrompt: "Kies hierboven een land om de dierenartsen, dienstroosters en vergiftigingslijnen te zien.", typeToSearch: "Typ om te zoeken…", noMatch: "Geen resultaat",
       country: "Land", all: "Alle landen", region: "Regio", allRegions: "Alle regio’s", search: "Plaats of naam",
@@ -331,6 +341,7 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Słowenia", HR: "Chorwacja", GB: "Wielka Brytania", US: "Stany Zjednoczone", AU: "Australia" },
     vetsTitle: "Weterynarze i przychodnie z dyżurem w poszczególnych krajach",
     vetsIntro: "W domu czy na wakacjach: wybierz kraj, filtruj według regionu lub miejscowości albo pokaż tylko przychodnie czynne całą dobę. Każdy wpis prowadzi do strony, z której go wzięliśmy – zadzwoń przed wizytą, godziny otwarcia mogą się zmienić.",
+    vetsStats: ["Weterynarze","Dyżury","Linie ds. zatruć","Kraje"],
     vets: {
       chooseCountry: "Wybierz kraj", choosePrompt: "Wybierz kraj powyżej, aby zobaczyć weterynarzy, dyżury i telefony w sprawie zatruć.", typeToSearch: "Wpisz, aby wyszukać…", noMatch: "Brak wyników",
       country: "Kraj", all: "Wszystkie kraje", region: "Region", allRegions: "Wszystkie regiony", search: "Miejscowość lub nazwa",
@@ -358,6 +369,7 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Slovinsko", HR: "Chorvatsko", GB: "Spojené království", US: "Spojené státy", AU: "Austrálie" },
     vetsTitle: "Veterináři a pohotovostní kliniky podle zemí",
     vetsIntro: "Doma i na dovolené: vyberte zemi, filtrujte podle regionu nebo města, nebo zobrazte jen kliniky otevřené 24 hodin denně. U každé položky je odkaz na stránku, ze které jsme ji převzali – před návštěvou zavolejte, otevírací doba se může změnit.",
+    vetsStats: ["Veterináři","Pohotovosti","Toxikologické linky","Země"],
     vets: {
       chooseCountry: "Vyberte zemi", choosePrompt: "Nahoře vyberte zemi a uvidíte její veterináře, pohotovosti a linky pro otravy.", typeToSearch: "Pište pro hledání…", noMatch: "Nic nenalezeno",
       country: "Země", all: "Všechny země", region: "Region", allRegions: "Všechny regiony", search: "Město nebo název",
@@ -385,6 +397,7 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Slovenija", HR: "Hrvatska", GB: "Ujedinjeno Kraljevstvo", US: "Sjedinjene Američke Države", AU: "Australija" },
     vetsTitle: "Veterinari i dežurne ambulante po državama",
     vetsIntro: "Kod kuće ili na odmoru: odaberi državu, filtriraj po regiji ili mjestu ili prikaži samo ambulante otvorene 24\u00a0sata. Svaki unos ima poveznicu na stranicu s koje smo ga preuzeli – nazovi prije dolaska jer se radno vrijeme može promijeniti.",
+    vetsStats: ["Veterinari","Dežurstva","Linije za otrovanja","Države"],
     vets: {
       chooseCountry: "Odaberi državu", choosePrompt: "Gore odaberi državu da vidiš njezine veterinare, dežurstva i linije za otrovanja.", typeToSearch: "Upiši za pretraživanje…", noMatch: "Nema rezultata",
       country: "Država", all: "Sve države", region: "Regija", allRegions: "Sve regije", search: "Mjesto ili naziv",
@@ -412,6 +425,7 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Slovenien", HR: "Kroatien", GB: "Storbritannien", US: "USA", AU: "Australien" },
     vetsTitle: "Veterinärer och akutkliniker i olika länder",
     vetsIntro: "Hemma eller på semester: välj land, filtrera på region eller ort, eller visa bara kliniker som har öppet dygnet runt. Varje klinik länkar till sidan där vi hittade den – ring innan du åker, öppettiderna kan ändras.",
+    vetsStats: ["Veterinärer","Jourscheman","Giftlinjer","Länder"],
     vets: {
       chooseCountry: "Välj ett land", choosePrompt: "Välj ett land ovan för att se veterinärer, jourer och giftlinjer där.", typeToSearch: "Skriv för att söka …", noMatch: "Inga träffar",
       country: "Land", all: "Alla länder", region: "Region", allRegions: "Alla regioner", search: "Ort eller namn",
@@ -439,6 +453,7 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Slovenien", HR: "Kroatien", GB: "Storbritannien", US: "USA", AU: "Australien" },
     vetsTitle: "Dyrlæger og akutte dyreklinikker, land for land",
     vetsIntro: "Hjemme eller på ferie: Vælg land, filtrér efter region eller by, eller vis kun klinikker med åbent døgnet rundt. Hver post linker til den side vi har oplysningerne fra – ring før du tager derhen, for åbningstiderne kan ændre sig.",
+    vetsStats: ["Dyrlæger","Vagtplaner","Giftlinjer","Lande"],
     vets: {
       chooseCountry: "Vælg et land", choosePrompt: "Vælg et land ovenfor for at se dets dyrlæger, vagtordninger og giftlinjer.", typeToSearch: "Skriv for at søge …", noMatch: "Ingen resultater",
       country: "Land", all: "Alle lande", region: "Region", allRegions: "Alle regioner", search: "By eller navn",
@@ -466,6 +481,7 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Slovenia", HR: "Kroatia", GB: "Yhdistynyt kuningaskunta", US: "Yhdysvallat", AU: "Australia" },
     vetsTitle: "Eläinlääkärit ja päivystävät klinikat maittain",
     vetsIntro: "Kotona tai lomalla: valitse maa, rajaa hakua alueen tai paikkakunnan mukaan tai näytä vain ympäri vuorokauden avoinna olevat klinikat. Jokaisessa kohteessa on linkki sivulle, jolta tieto on peräisin – soita etukäteen, sillä aukioloajat voivat muuttua.",
+    vetsStats: ["Eläinlääkärit","Päivystysvuorot","Myrkytyslinjat","Maat"],
     vets: {
       chooseCountry: "Valitse maa", choosePrompt: "Valitse maa yläpuolelta, niin näet sen eläinlääkärit, päivystykset ja myrkytysneuvonnat.", typeToSearch: "Kirjoita hakeaksesi …", noMatch: "Ei osumia",
       country: "Maa", all: "Kaikki maat", region: "Alue", allRegions: "Kaikki alueet", search: "Paikkakunta tai nimi",
@@ -493,6 +509,7 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Slovenia", HR: "Kroatia", GB: "Storbritannia", US: "USA", AU: "Australia" },
     vetsTitle: "Dyrleger og dyrlegevakter, land for land",
     vetsIntro: "Hjemme eller på ferie: velg land, filtrer etter region eller sted, eller vis bare klinikker som har åpent hele døgnet. Hver oppføring lenker til siden vi hentet opplysningene fra – ring før du drar dit, for åpningstidene kan endre seg.",
+    vetsStats: ["Veterinærer","Vaktordninger","Giftlinjer","Land"],
     vets: {
       chooseCountry: "Velg et land", choosePrompt: "Velg et land ovenfor for å se veterinærer, vaktordninger og giftlinjer der.", typeToSearch: "Skriv for å søke …", noMatch: "Ingen treff",
       country: "Land", all: "Alle land", region: "Region", allRegions: "Alle regioner", search: "Sted eller navn",

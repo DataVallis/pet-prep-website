@@ -513,6 +513,20 @@ export function EmergencyPage({ locale }: { locale: Locale }) {
           <section aria-labelledby="vets" className="flex flex-col gap-4">
             <h2 id="vets" className="h-card text-[28px] leading-tight sm:text-[34px]">{e.vetsTitle}</h2>
             <p className="max-w-3xl text-muted">{e.vetsIntro}</p>
+            {/* Totals computed from the data (David 2026-11-11), so they stay right as the nightly run adds entries. */}
+            <dl className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+              {[
+                vets.filter((v) => v.kind === "clinic").length,
+                vets.filter((v) => v.kind === "duty_rota").length,
+                vets.filter((v) => v.kind === "poison_line").length,
+                new Set(vets.map((v) => v.country)).size,
+              ].map((n, i) => (
+                <div key={e.vetsStats[i]} className="flex flex-col-reverse gap-0.5 rounded-[18px] bg-white p-4">
+                  <dt className="text-sm text-muted">{e.vetsStats[i]}</dt>
+                  <dd className="h-card text-[28px] leading-none">{new Intl.NumberFormat(localeMeta[locale].intl).format(n)}</dd>
+                </div>
+              ))}
+            </dl>
             <VetDirectory entries={vets} copy={{ ...e.vets, countries: countryNames(locale, vets.map((v) => v.country)) }} defaultCountry={localeMeta[locale].country} />
           </section>
         ) : null}
