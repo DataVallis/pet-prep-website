@@ -377,7 +377,7 @@ const sv: Dictionary = {
           items: [
             "Barn loggar in med en kod – ingen e-post, inget lösenord, inget efternamn.",
             "Vi sparar ett smeknamn och, om du anger det, ett födelseår. Inget annat om ditt barn.",
-            "Aviseringar innehåller aldrig barnets eller djurets namn, eftersom de kan synas på låsskärmen.",
+            "Aviseringar innehåller aldrig barnets namn, eftersom de kan synas på låsskärmen; rubriken kan vara djurets namn, om du har gett det ett.",
             "Stegen hämtas från Apple Hälsa (iPhone) eller Health Connect (Android) om du tillåter det (bara läsning), och från mobilens rörelsesensor där den finns. PetPrep använder inte GPS och spårar inte platsen.",
             "Ingen reklam, ingen chatt med främlingar, servrar inom EU.",
           ],
@@ -701,7 +701,7 @@ const sv: Dictionary = {
               items: [
                 "Drift: Hetzner Online (servrar inom EU).",
                 "AI-generering av bilder och videor: fal.ai (får bara beskrivningen av djuret).",
-                "Push-aviseringar: Apple Push Notification service och Firebase Cloud Messaging via Expo; aviseringarna innehåller inga namn.",
+                "Push-aviseringar: Apple Push Notification service och Firebase Cloud Messaging via Expo; en aviserings rubrik kan vara djurets namn, om du har gett det ett, men aviseringarna innehåller aldrig barnets namn.",
                 "Köp: Apple App Store och Google Play; hantering av köp via RevenueCat när köpen blir tillgängliga.",
                 "Mejl om tidig tillgång: Klaviyo (får bara e-postadressen och språket som du anger på den här webbplatsen).",
                 "Cookiesamtycke på webbplatsen: Kockica (sparar ditt val om samtycke).",
@@ -825,7 +825,7 @@ const sv: Dictionary = {
             {
               heading: "7. Aviseringar",
               paragraphs: [
-                "Om du tillåter dem på enheten skickar appen push-aviseringar: påminnelser till skötaren, larm till föräldrar när ett djur saknar mat, vatten eller renlighet, samt besked om sjukdom, att spelet är slut och att utmaningen är avslutad. Aviseringar innehåller aldrig barnets eller djurets namn och skickas inte under tysta timmar. Du kan när som helst återkalla behörigheten i enhetens inställningar; utan aviseringar kan en skötare missa rutiner, vilket påverkar spelet och poängen. Föräldrar får dessutom högst en gång per kostnadsfritt djur en påminnelse om utmaningen när någon har tagit hand om det minst 5 av dess första 7 dagar.",
+                "Om du tillåter dem på enheten skickar appen push-aviseringar: påminnelser till skötaren, larm till föräldrar när ett djur saknar mat, vatten eller renlighet, samt besked om sjukdom, att spelet är slut och att utmaningen är avslutad. En aviserings rubrik kan vara djurets namn, om du har gett det ett; aviseringar innehåller aldrig barnets namn och skickas inte under tysta timmar. Du kan när som helst återkalla behörigheten i enhetens inställningar; utan aviseringar kan en skötare missa rutiner, vilket påverkar spelet och poängen. Föräldrar får dessutom högst en gång per kostnadsfritt djur en påminnelse om utmaningen när någon har tagit hand om det minst 5 av dess första 7 dagar.",
               ],
             },
             {
@@ -899,7 +899,7 @@ const sv: Dictionary = {
             { title: "Ingen platsspårning", text: "Promenader räknar bara steg – från Apple Hälsa eller Health Connect (med ditt tillstånd, bara läsning) eller från mobilens rörelsesensor. GPS används inte." },
             { title: "Privata uppdateringar i realtid", text: "Uppdateringar i realtid når bara barnen som tar hand om djuret och föräldrarna i samma familj." },
             { title: "Granskade media", text: "Bara bilder och videor som har tagits fram för PetPrep och kontrollerats av vår server visas, från vår lagring inom EU." },
-            { title: "Aviseringar utan namn", text: "Aviseringar innehåller aldrig barnets eller djurets namn, eftersom de kan synas på låsskärmen." },
+            { title: "Aviseringar utan barnets namn", text: "Aviseringar innehåller aldrig barnets namn, eftersom de kan synas på låsskärmen. Bara djurets namn kan visas som rubrik, om du har gett det ett." },
           ],
         },
         {

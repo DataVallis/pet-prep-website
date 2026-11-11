@@ -377,7 +377,7 @@ const sl: Dictionary = {
           items: [
             "Otroci se prijavijo s kodo – brez e-pošte, gesla in priimka.",
             "Shranimo vzdevek in, če ga vpišete, letnico rojstva. Drugega o otroku ne zbiramo.",
-            "Obvestila nikoli ne vsebujejo imena otroka ali ljubljenčka, saj se lahko pokažejo na zaklenjenem zaslonu.",
+            "Obvestila nikoli ne vsebujejo imena otroka, saj se lahko pokažejo na zaklenjenem zaslonu; v naslovu je lahko ime ljubljenčka, če ste mu ga dali.",
             "Koraki prihajajo iz aplikacije Apple Zdravje (iPhone) ali Health Connect (Android), če to dovolite (samo za branje), in s senzorja gibanja v telefonu, kjer je na voljo. PetPrep ne uporablja GPS in ne sledi lokaciji.",
             "Brez oglasov, brez klepeta s tujci, strežniki v EU.",
           ],
@@ -701,7 +701,7 @@ const sl: Dictionary = {
               items: [
                 "Gostovanje: Hetzner Online (strežniki v EU).",
                 "Ustvarjanje AI slik in videov: fal.ai (prejme samo opis ljubljenčka).",
-                "Potisna obvestila: Apple Push Notification service in Firebase Cloud Messaging prek Expo; obvestila ne vsebujejo imen.",
+                "Potisna obvestila: Apple Push Notification service in Firebase Cloud Messaging prek Expo; naslov obvestila je lahko ime ljubljenčka, če ste mu ga dali, imena otroka pa obvestila nikoli ne vsebujejo.",
                 "Nakupi: Apple App Store in Google Play; upravljanje nakupov prek RevenueCat, ko bodo nakupi na voljo.",
                 "E-pošta za zgodnji dostop: Klaviyo (prejme samo e-poštni naslov in jezik, ki ju oddate na tej spletni strani).",
                 "Privolitev za piškotke na spletni strani: Kockica (shrani vašo izbiro).",
@@ -825,7 +825,7 @@ const sl: Dictionary = {
             {
               heading: "7. Obvestila",
               paragraphs: [
-                "Če jih dovolite na napravi, aplikacija pošilja potisna obvestila: opomnike skrbniku, opozorila staršem, ko ljubljenček nima hrane, vode ali čistoče, ter obvestila o bolezni, koncu igre in koncu izziva. Obvestila ne vsebujejo imena otroka ali ljubljenčka in jih v tihih urah ni. Dovoljenje lahko kadar koli prekličete v nastavitvah naprave; brez obvestil lahko skrbnik zamudi rutine, kar vpliva na igro in oceno. Starši poleg tega za brezplačnega ljubljenčka največ enkrat dobijo opomnik o izzivu, ko je nekdo zanj skrbel vsaj 5 od prvih 7 dni.",
+                "Če jih dovolite na napravi, aplikacija pošilja potisna obvestila: opomnike skrbniku, opozorila staršem, ko ljubljenček nima hrane, vode ali čistoče, ter obvestila o bolezni, koncu igre in koncu izziva. Naslov obvestila je lahko ime ljubljenčka, če ste mu ga dali; imena otroka obvestila nikoli ne vsebujejo, v tihih urah pa jih ni. Dovoljenje lahko kadar koli prekličete v nastavitvah naprave; brez obvestil lahko skrbnik zamudi rutine, kar vpliva na igro in oceno. Starši poleg tega za brezplačnega ljubljenčka največ enkrat dobijo opomnik o izzivu, ko je nekdo zanj skrbel vsaj 5 od prvih 7 dni.",
               ],
             },
             {
@@ -899,7 +899,7 @@ const sl: Dictionary = {
             { title: "Brez sledenja lokaciji", text: "Sprehod šteje samo korake – iz aplikacije Apple Zdravje ali Health Connect (z vašim dovoljenjem, samo za branje) ali s senzorja gibanja v telefonu. GPS se ne uporablja." },
             { title: "Zasebne posodobitve v živo", text: "Posodobitve v realnem času prejmejo samo otroci, ki skrbijo za tega ljubljenčka, in starši iste družine." },
             { title: "Preverjeni mediji", text: "Prikazane so samo slike in videi, ustvarjeni za PetPrep in preverjeni na našem strežniku, iz naše hrambe v EU." },
-            { title: "Obvestila brez imen", text: "Obvestila nikoli ne vsebujejo imena otroka ali ljubljenčka, saj se lahko pokažejo na zaklenjenem zaslonu." },
+            { title: "Obvestila brez imena otroka", text: "Obvestila nikoli ne vsebujejo imena otroka, saj se lahko pokažejo na zaklenjenem zaslonu. Kot naslov je lahko prikazano le ime ljubljenčka, če ste mu ga dali." },
           ],
         },
         {

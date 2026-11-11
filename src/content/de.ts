@@ -377,7 +377,7 @@ const de: Dictionary = {
           items: [
             "Kinder melden sich mit einem Code an – keine E-Mail, kein Passwort, kein Nachname.",
             "Wir speichern einen Spitznamen und, wenn Sie es angeben, ein Geburtsjahr. Sonst nichts über Ihr Kind.",
-            "Benachrichtigungen enthalten nie den Namen Ihres Kindes oder des Haustiers, weil sie auf dem Sperrbildschirm erscheinen können.",
+            "Benachrichtigungen enthalten nie den Namen Ihres Kindes, weil sie auf dem Sperrbildschirm erscheinen können; als Titel kann der Name des Haustiers erscheinen, wenn Sie ihm einen gegeben haben.",
             "Schritte kommen aus Apple Health (iPhone) oder Health Connect (Android), wenn Sie es erlauben (nur Lesezugriff), und, wo verfügbar, vom Bewegungssensor des Handys. PetPrep nutzt kein GPS und verfolgt keinen Standort.",
             "Keine Werbung, kein Chat mit Fremden, Server in der EU.",
           ],
@@ -701,7 +701,7 @@ const de: Dictionary = {
               items: [
                 "Hosting: Hetzner Online (Server in der EU).",
                 "Erstellung von KI-Bildern und -Videos: fal.ai (erhält nur die Beschreibung des Haustiers).",
-                "Push-Benachrichtigungen: Apple Push Notification service und Firebase Cloud Messaging über Expo; Benachrichtigungen enthalten keine Namen.",
+                "Push-Benachrichtigungen: Apple Push Notification service und Firebase Cloud Messaging über Expo; der Titel einer Benachrichtigung kann der Name des Haustiers sein, wenn Sie ihm einen gegeben haben, der Name des Kindes ist jedoch nie enthalten.",
                 "Käufe: Apple App Store und Google Play; Kaufverwaltung über RevenueCat, sobald Käufe freigeschaltet sind.",
                 "E-Mails zum frühen Zugang: Klaviyo (erhält nur die E-Mail-Adresse und die Sprache, die Sie auf dieser Website angeben).",
                 "Cookie-Einwilligung auf der Website: Kockica (speichert Ihre Einwilligungsentscheidung).",
@@ -825,7 +825,7 @@ const de: Dictionary = {
             {
               heading: "7. Benachrichtigungen",
               paragraphs: [
-                "Wenn Sie es auf dem Gerät erlauben, sendet die App Push-Benachrichtigungen: Erinnerungen an die betreuende Person, Hinweise an die Eltern, wenn ein Haustier kein Futter, kein Wasser oder keine Sauberkeit hat, sowie Nachrichten über Krankheit, Spielende und das Ende der Challenge. Benachrichtigungen enthalten nie den Namen des Kindes oder des Haustiers und werden während der Ruhezeiten nicht gesendet. Sie können die Berechtigung jederzeit in den Geräteeinstellungen widerrufen; ohne Benachrichtigungen verpasst eine betreuende Person möglicherweise Routinen, was sich auf das Spiel und den Score auswirkt. Eltern erhalten außerdem für ein kostenloses Haustier höchstens einmal eine Erinnerung an die Challenge, wenn sich jemand an mindestens 5 seiner ersten 7 Tage darum gekümmert hat.",
+                "Wenn Sie es auf dem Gerät erlauben, sendet die App Push-Benachrichtigungen: Erinnerungen an die betreuende Person, Hinweise an die Eltern, wenn ein Haustier kein Futter, kein Wasser oder keine Sauberkeit hat, sowie Nachrichten über Krankheit, Spielende und das Ende der Challenge. Der Titel einer Benachrichtigung kann der Name des Haustiers sein, wenn Sie ihm einen gegeben haben; Benachrichtigungen enthalten nie den Namen des Kindes und werden während der Ruhezeiten nicht gesendet. Sie können die Berechtigung jederzeit in den Geräteeinstellungen widerrufen; ohne Benachrichtigungen verpasst eine betreuende Person möglicherweise Routinen, was sich auf das Spiel und den Score auswirkt. Eltern erhalten außerdem für ein kostenloses Haustier höchstens einmal eine Erinnerung an die Challenge, wenn sich jemand an mindestens 5 seiner ersten 7 Tage darum gekümmert hat.",
               ],
             },
             {
@@ -899,7 +899,7 @@ const de: Dictionary = {
             { title: "Keine Standortverfolgung", text: "Spaziergänge zählen nur Schritte – aus Apple Health oder Health Connect (mit Ihrer Erlaubnis, nur lesend) oder vom Bewegungssensor des Handys. GPS wird nicht genutzt." },
             { title: "Private Live-Updates", text: "Echtzeit-Updates erreichen nur die Kinder, die sich um dieses Haustier kümmern, und die Eltern derselben Familie." },
             { title: "Geprüfte Medien", text: "Gezeigt werden nur Bilder und Videos, die für PetPrep erstellt und von unserem Server geprüft wurden, aus unserem Speicher in der EU." },
-            { title: "Benachrichtigungen ohne Namen", text: "Benachrichtigungen enthalten nie den Namen des Kindes oder des Haustiers, weil sie auf dem Sperrbildschirm erscheinen können." },
+            { title: "Keine Kindernamen in Benachrichtigungen", text: "Benachrichtigungen enthalten nie den Namen des Kindes, weil sie auf dem Sperrbildschirm erscheinen können. Nur der Name des Haustiers kann als Titel erscheinen, wenn Sie ihm einen gegeben haben." },
           ],
         },
         {

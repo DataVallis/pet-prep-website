@@ -377,7 +377,7 @@ const cs: Dictionary = {
           items: [
             "Děti se přihlašují kódem – bez e-mailu, bez hesla, bez příjmení.",
             "Ukládáme přezdívku a rok narození, pokud ho zadáte. Nic dalšího o vašem dítěti neukládáme.",
-            "Oznámení nikdy neobsahují jméno dítěte ani mazlíčka, protože se mohou zobrazit na zamčené obrazovce.",
+            "Oznámení nikdy neobsahují jméno dítěte, protože se mohou zobrazit na zamčené obrazovce; v názvu může být jméno mazlíčka, pokud jste mu ho dali.",
             "Kroky se berou z Apple Health (iPhone) nebo Health Connect (Android), pokud to povolíte (jen ke čtení), a kde to jde, z pohybového senzoru telefonu. PetPrep nepoužívá GPS a nesleduje polohu.",
             "Žádné reklamy, žádný chat s cizími lidmi, servery v EU.",
           ],
@@ -701,7 +701,7 @@ const cs: Dictionary = {
               items: [
                 "Hosting: Hetzner Online (servery v EU).",
                 "Generování obrázků a videí AI: fal.ai (dostává jen popis zvířete).",
-                "Push oznámení: Apple Push Notification service a Firebase Cloud Messaging přes Expo; oznámení neobsahují jména.",
+                "Push oznámení: Apple Push Notification service a Firebase Cloud Messaging přes Expo; názvem oznámení může být jméno mazlíčka, pokud jste mu ho dali, jméno dítěte však oznámení nikdy neobsahují.",
                 "Nákupy: Apple App Store a Google Play; správa nákupů přes RevenueCat, až budou nákupy spuštěny.",
                 "E-maily k předběžnému přístupu: Klaviyo (dostává jen e-mailovou adresu a jazyk, které na tomto webu zadáte).",
                 "Souhlas s cookies na webu: Kockica (ukládá vaši volbu souhlasu).",
@@ -825,7 +825,7 @@ const cs: Dictionary = {
             {
               heading: "7. Oznámení",
               paragraphs: [
-                "Pokud je v zařízení povolíte, aplikace posílá push oznámení: připomínky pečovateli, upozornění rodičům, když zvíře nemá jídlo, vodu nebo čistotu, a zprávy o nemoci, konci hry a konci výzvy. Oznámení nikdy neobsahují jméno dítěte ani zvířete a během klidových hodin se neposílají. Povolení můžete kdykoli odvolat v nastavení zařízení; bez oznámení může pečovatel zmeškat povinnosti, což ovlivní hru i skóre. Rodiče navíc dostanou nejvýše jednou na bezplatné zvíře připomínku výzvy, když se o ně někdo staral alespoň 5 z jeho prvních 7 dnů.",
+                "Pokud je v zařízení povolíte, aplikace posílá push oznámení: připomínky pečovateli, upozornění rodičům, když zvíře nemá jídlo, vodu nebo čistotu, a zprávy o nemoci, konci hry a konci výzvy. Názvem oznámení může být jméno zvířete, pokud jste mu ho dali; jméno dítěte oznámení nikdy neobsahují a během klidových hodin se neposílají. Povolení můžete kdykoli odvolat v nastavení zařízení; bez oznámení může pečovatel zmeškat povinnosti, což ovlivní hru i skóre. Rodiče navíc dostanou nejvýše jednou na bezplatné zvíře připomínku výzvy, když se o ně někdo staral alespoň 5 z jeho prvních 7 dnů.",
               ],
             },
             {
@@ -899,7 +899,7 @@ const cs: Dictionary = {
             { title: "Žádné sledování polohy", text: "Procházky počítají jen kroky – z Apple Health nebo Health Connect (s vaším povolením, jen pro čtení) nebo z pohybového senzoru telefonu. GPS se nepoužívá." },
             { title: "Soukromé živé aktualizace", text: "Aktualizace v reálném čase se dostanou jen k dětem, které se o daného mazlíčka starají, a k rodičům ze stejné rodiny." },
             { title: "Ověřená média", text: "Zobrazují se jen obrázky a videa vytvořené pro PetPrep a zkontrolované naším serverem, z našeho úložiště v EU." },
-            { title: "Oznámení bez jmen", text: "Oznámení nikdy neobsahují jméno dítěte ani mazlíčka, protože se mohou zobrazit na zamčené obrazovce." },
+            { title: "Oznámení bez jména dítěte", text: "Oznámení nikdy neobsahují jméno dítěte, protože se mohou zobrazit na zamčené obrazovce. Jako název se může zobrazit jen jméno mazlíčka, pokud jste mu ho dali." },
           ],
         },
         {

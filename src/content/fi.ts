@@ -377,7 +377,7 @@ const fi: Dictionary = {
           items: [
             "Lapset kirjautuvat koodilla – ei sähköpostia, ei salasanaa, ei sukunimeä.",
             "Tallennamme lempinimen ja, jos lisäät sen, syntymävuoden. Muuta emme lapsestasi tallenna.",
-            "Ilmoituksissa ei koskaan ole lapsesi tai lemmikin nimeä, koska ne voivat näkyä lukitusnäytöllä.",
+            "Ilmoituksissa ei koskaan ole lapsesi nimeä, koska ne voivat näkyä lukitusnäytöllä; otsikkona voi olla lemmikin nimi, jos olet antanut sille nimen.",
             "Askeleet tulevat Apple Terveydestä (iPhone) tai Health Connectista (Android), jos sallit sen (vain luku), ja puhelimen liikeanturista, jos se on käytettävissä. PetPrep ei käytä GPS:ää eikä seuraa sijaintia.",
             "Ei mainoksia, ei keskustelua vieraiden kanssa, palvelimet EU:ssa.",
           ],
@@ -701,7 +701,7 @@ const fi: Dictionary = {
               items: [
                 "Palvelinpalvelu: Hetzner Online (palvelimet EU:ssa).",
                 "Tekoälykuvien ja -videoiden luonti: fal.ai (saa vain lemmikin kuvauksen).",
-                "Push-ilmoitukset: Apple Push Notification service ja Firebase Cloud Messaging Expon kautta; ilmoituksissa ei ole nimiä.",
+                "Push-ilmoitukset: Apple Push Notification service ja Firebase Cloud Messaging Expon kautta; ilmoituksen otsikkona voi olla lemmikin nimi, jos olet antanut sille nimen, mutta lapsen nimeä ilmoituksissa ei koskaan ole.",
                 "Ostot: Apple App Store ja Google Play; ostojen hallinta RevenueCatin kautta, kun ostot otetaan käyttöön.",
                 "Varhaisen käyttöoikeuden sähköpostit: Klaviyo (saa vain sähköpostiosoitteen ja kielen, jotka annat tällä verkkosivustolla).",
                 "Verkkosivuston evästesuostumus: Kockica (tallentaa suostumusvalintasi).",
@@ -825,7 +825,7 @@ const fi: Dictionary = {
             {
               heading: "7. Ilmoitukset",
               paragraphs: [
-                "Jos sallit ne laitteella, sovellus lähettää push-ilmoituksia: muistutuksia hoitajalle, hälytyksiä vanhemmille, kun lemmikiltä puuttuu ruoka, vesi tai siisteys, sekä tietoja sairastumisesta, pelin päättymisestä ja haasteen loppumisesta. Ilmoituksissa ei koskaan ole lapsen tai lemmikin nimeä, eikä niitä lähetetä hiljaisten tuntien aikana. Voit perua luvan milloin tahansa laitteen asetuksista; ilman ilmoituksia hoitajalta voi jäädä rutiineja väliin, mikä vaikuttaa peliin ja tulokseen. Vanhemmat saavat lisäksi enintään kerran maksutonta lemmikkiä kohden muistutuksen haasteesta, kun joku on hoitanut sitä vähintään 5:nä sen ensimmäisistä 7 päivästä.",
+                "Jos sallit ne laitteella, sovellus lähettää push-ilmoituksia: muistutuksia hoitajalle, hälytyksiä vanhemmille, kun lemmikiltä puuttuu ruoka, vesi tai siisteys, sekä tietoja sairastumisesta, pelin päättymisestä ja haasteen loppumisesta. Ilmoituksen otsikkona voi olla lemmikin nimi, jos olet antanut sille nimen; lapsen nimeä ilmoituksissa ei koskaan ole, eikä niitä lähetetä hiljaisten tuntien aikana. Voit perua luvan milloin tahansa laitteen asetuksista; ilman ilmoituksia hoitajalta voi jäädä rutiineja väliin, mikä vaikuttaa peliin ja tulokseen. Vanhemmat saavat lisäksi enintään kerran maksutonta lemmikkiä kohden muistutuksen haasteesta, kun joku on hoitanut sitä vähintään 5:nä sen ensimmäisistä 7 päivästä.",
               ],
             },
             {
@@ -899,7 +899,7 @@ const fi: Dictionary = {
             { title: "Ei sijainnin seurantaa", text: "Lenkit laskevat vain askeleita – Apple Terveydestä tai Health Connectista (luvallasi, vain lukuoikeudella) tai puhelimen liikeanturista. GPS:ää ei käytetä." },
             { title: "Yksityiset reaaliaikaiset päivitykset", text: "Reaaliaikaiset päivitykset tavoittavat vain lemmikkiä hoitavat lapset ja saman perheen vanhemmat." },
             { title: "Tarkistettu media", text: "Näytämme vain PetPrepille tuotettuja ja palvelimemme tarkistamia kuvia ja videoita EU:ssa sijaitsevasta tallennustilastamme." },
-            { title: "Ilmoitukset ilman nimiä", text: "Ilmoituksissa ei koskaan ole lapsen tai lemmikin nimeä, koska ne voivat näkyä lukitusnäytöllä." },
+            { title: "Ilmoitukset ilman lapsen nimeä", text: "Ilmoituksissa ei koskaan ole lapsen nimeä, koska ne voivat näkyä lukitusnäytöllä. Otsikkona voi näkyä vain lemmikin nimi, jos olet antanut sille nimen." },
           ],
         },
         {

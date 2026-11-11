@@ -377,7 +377,7 @@ const es: Dictionary = {
           items: [
             "Los niños entran con un código: sin correo electrónico, sin contraseña, sin apellidos.",
             "Guardamos un apodo y, si lo añades, el año de nacimiento. Nada más sobre tu hijo.",
-            "Las notificaciones nunca incluyen el nombre de tu hijo ni el de la mascota, porque pueden aparecer en la pantalla de bloqueo.",
+            "Las notificaciones nunca incluyen el nombre de tu hijo, porque pueden aparecer en la pantalla de bloqueo; su título puede ser el nombre de la mascota, si le has puesto uno.",
             "Los pasos se obtienen de Apple Salud (iPhone) o Health Connect (Android) si lo permites (solo lectura), y del sensor de movimiento del móvil cuando lo hay. PetPrep no usa GPS ni rastrea la ubicación.",
             "Sin anuncios, sin chats con desconocidos y con servidores en la UE.",
           ],
@@ -701,7 +701,7 @@ const es: Dictionary = {
               items: [
                 "Alojamiento: Hetzner Online (servidores en la UE).",
                 "Generación de imágenes y vídeos con IA: fal.ai (solo recibe la descripción de la mascota).",
-                "Notificaciones push: Apple Push Notification service y Firebase Cloud Messaging a través de Expo; las notificaciones no contienen nombres.",
+                "Notificaciones push: Apple Push Notification service y Firebase Cloud Messaging a través de Expo; el título de una notificación puede ser el nombre de la mascota, si le has puesto uno, pero las notificaciones nunca contienen el nombre del niño.",
                 "Compras: Apple App Store y Google Play; gestión de compras a través de RevenueCat cuando las compras estén activas.",
                 "Correos de acceso anticipado: Klaviyo (solo recibe la dirección de correo electrónico y el idioma que indicas en este sitio web).",
                 "Consentimiento de cookies del sitio web: Kockica (almacena tu elección de consentimiento).",
@@ -825,7 +825,7 @@ const es: Dictionary = {
             {
               heading: "7. Notificaciones",
               paragraphs: [
-                "Si lo permites en el dispositivo, la aplicación envía notificaciones push: recordatorios al cuidador, avisos a los padres cuando una mascota se queda sin comida, agua o limpieza, y noticias sobre enfermedades, el fin del juego y el final del reto. Las notificaciones nunca contienen el nombre del niño ni el de la mascota y no se envían durante las horas de silencio. Puedes retirar el permiso en cualquier momento en los ajustes del dispositivo; sin notificaciones, un cuidador puede saltarse rutinas, lo que afecta al juego y a la puntuación. Además, los padres reciben como máximo una vez por mascota gratuita un recordatorio sobre el reto cuando alguien la ha cuidado al menos 5 de sus primeros 7 días.",
+                "Si lo permites en el dispositivo, la aplicación envía notificaciones push: recordatorios al cuidador, avisos a los padres cuando una mascota se queda sin comida, agua o limpieza, y noticias sobre enfermedades, el fin del juego y el final del reto. El título de una notificación puede ser el nombre de la mascota, si le has puesto uno; las notificaciones nunca contienen el nombre del niño y no se envían durante las horas de silencio. Puedes retirar el permiso en cualquier momento en los ajustes del dispositivo; sin notificaciones, un cuidador puede saltarse rutinas, lo que afecta al juego y a la puntuación. Además, los padres reciben como máximo una vez por mascota gratuita un recordatorio sobre el reto cuando alguien la ha cuidado al menos 5 de sus primeros 7 días.",
               ],
             },
             {
@@ -899,7 +899,7 @@ const es: Dictionary = {
             { title: "Sin seguimiento de la ubicación", text: "Los paseos solo cuentan pasos, de Apple Salud o Health Connect (con tu permiso y solo en modo lectura) o del sensor de movimiento del teléfono. No se utiliza el GPS." },
             { title: "Actualizaciones en directo privadas", text: "Las actualizaciones en tiempo real solo llegan a los niños que cuidan de esa mascota y a los padres de la misma familia." },
             { title: "Archivos verificados", text: "Solo se muestran imágenes y vídeos creados para PetPrep y comprobados por nuestro servidor, desde nuestro almacenamiento en la UE." },
-            { title: "Notificaciones sin nombres", text: "Las notificaciones nunca incluyen el nombre del niño ni el de la mascota, porque pueden aparecer en la pantalla de bloqueo." },
+            { title: "Notificaciones sin el nombre del niño", text: "Las notificaciones nunca incluyen el nombre del niño, porque pueden aparecer en la pantalla de bloqueo. Solo el nombre de la mascota, si le has puesto uno, puede aparecer como título." },
           ],
         },
         {

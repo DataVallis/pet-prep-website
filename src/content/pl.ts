@@ -377,7 +377,7 @@ const pl: Dictionary = {
           items: [
             "Dzieci logują się kodem – bez e-maila, bez hasła, bez nazwiska.",
             "Przechowujemy pseudonim i – jeśli go dodasz – rok urodzenia. Nic więcej o twoim dziecku.",
-            "Powiadomienia nigdy nie zawierają imienia dziecka ani zwierzęcia, bo mogą się pojawić na ekranie blokady.",
+            "Powiadomienia nigdy nie zawierają imienia dziecka, bo mogą się pojawić na ekranie blokady; ich tytułem może być imię zwierzęcia, jeśli zostało mu nadane.",
             "Kroki pochodzą z Apple Health (iPhone) lub Health Connect (Android), jeśli na to pozwolisz (tylko odczyt), oraz z czujnika ruchu telefonu, jeśli jest dostępny. PetPrep nie korzysta z GPS i nie śledzi lokalizacji.",
             "Bez reklam, bez czatu z obcymi, serwery w UE.",
           ],
@@ -701,7 +701,7 @@ const pl: Dictionary = {
               items: [
                 "Hosting: Hetzner Online (serwery w UE).",
                 "Generowanie obrazów i filmów AI: fal.ai (otrzymuje wyłącznie opis zwierzęcia).",
-                "Powiadomienia push: Apple Push Notification service i Firebase Cloud Messaging za pośrednictwem Expo; powiadomienia nie zawierają imion.",
+                "Powiadomienia push: Apple Push Notification service i Firebase Cloud Messaging za pośrednictwem Expo; tytułem powiadomienia może być imię zwierzęcia, jeśli zostało mu nadane, ale powiadomienia nigdy nie zawierają imienia dziecka.",
                 "Zakupy: Apple App Store i Google Play; zarządzanie zakupami przez RevenueCat, gdy zakupy zostaną uruchomione.",
                 "E-maile o wczesnym dostępie: Klaviyo (otrzymuje wyłącznie adres e-mail i język, które podajesz na tej stronie).",
                 "Zgoda na pliki cookie na stronie: Kockica (przechowuje twój wybór dotyczący zgody).",
@@ -825,7 +825,7 @@ const pl: Dictionary = {
             {
               heading: "7. Powiadomienia",
               paragraphs: [
-                "Jeśli pozwolisz na to na urządzeniu, aplikacja wysyła powiadomienia push: przypomnienia dla opiekuna, alerty dla rodziców, gdy zwierzę nie ma jedzenia, wody lub czystości, oraz informacje o chorobie, końcu gry i zakończeniu wyzwania. Powiadomienia nigdy nie zawierają imienia dziecka ani zwierzęcia i nie są wysyłane w godzinach ciszy. Zgodę możesz w każdej chwili cofnąć w ustawieniach urządzenia; bez powiadomień opiekun może przegapić obowiązki, co wpływa na grę i wynik. Rodzice dostają też, najwyżej raz na darmowe zwierzę, przypomnienie o wyzwaniu, gdy ktoś opiekował się nim w co najmniej 5 z jego pierwszych 7 dni.",
+                "Jeśli pozwolisz na to na urządzeniu, aplikacja wysyła powiadomienia push: przypomnienia dla opiekuna, alerty dla rodziców, gdy zwierzę nie ma jedzenia, wody lub czystości, oraz informacje o chorobie, końcu gry i zakończeniu wyzwania. Tytułem powiadomienia może być imię zwierzęcia, jeśli zostało mu nadane; powiadomienia nigdy nie zawierają imienia dziecka i nie są wysyłane w godzinach ciszy. Zgodę możesz w każdej chwili cofnąć w ustawieniach urządzenia; bez powiadomień opiekun może przegapić obowiązki, co wpływa na grę i wynik. Rodzice dostają też, najwyżej raz na darmowe zwierzę, przypomnienie o wyzwaniu, gdy ktoś opiekował się nim w co najmniej 5 z jego pierwszych 7 dni.",
               ],
             },
             {
@@ -899,7 +899,7 @@ const pl: Dictionary = {
             { title: "Bez śledzenia lokalizacji", text: "Spacery liczą wyłącznie kroki – z Apple Health lub Health Connect (za twoją zgodą, tylko odczyt) albo z czujnika ruchu telefonu. GPS nie jest używany." },
             { title: "Prywatne aktualizacje na żywo", text: "Aktualizacje w czasie rzeczywistym trafiają wyłącznie do dzieci, które opiekują się danym zwierzęciem, i do rodziców z tej samej rodziny." },
             { title: "Zweryfikowane media", text: "Wyświetlamy tylko obrazy i filmy stworzone dla PetPrep i sprawdzone przez nasz serwer, z naszego magazynu w UE." },
-            { title: "Powiadomienia bez imion", text: "Powiadomienia nigdy nie zawierają imienia dziecka ani zwierzęcia, bo mogą się pojawić na ekranie blokady." },
+            { title: "Powiadomienia bez imienia dziecka", text: "Powiadomienia nigdy nie zawierają imienia dziecka, bo mogą się pojawić na ekranie blokady. Jako tytuł może się pojawić tylko imię zwierzęcia, jeśli zostało mu nadane." },
           ],
         },
         {
