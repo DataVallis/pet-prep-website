@@ -635,6 +635,7 @@ const fi: Dictionary = {
                 "Koodit: kirjautumis- ja kutsukoodit tallennetaan vain tiivisteinä, ja ne vanhenevat.",
                 "Sovelluksen virheraportit: jos sovellus jumiutuu tai kaatuu, se voi lähettää lyhyen teknisen raportin EU:ssa sijaitsevalle palvelimellemme (virheen tyyppi ja teksti, kohta koodissa, sovelluksen ja käyttöjärjestelmän versio, näkymän nimi, vanhemman tai lapsen rooli). Raportissa ei ole nimeä, sähköpostiosoitetta, käyttäjätunnusta eikä IP-osoitetta, sitä ei jaeta kolmansille osapuolille, ja se poistetaan 30 päivän kuluttua.",
                 "Varhaisen käyttöoikeuden lista (tämä verkkosivusto): sähköpostiosoitteesi, sivun kieli ja ilmoittautumisaika.",
+                "Lahjakortin lunastaminen (tämä verkkosivusto): vanhempi kirjautuu Googlella, Applella tai sähköpostiosoitteella ja salasanalla. Saamme vain vahvistuksen siitä, mistä olemassa olevasta PetPrepin vanhemman tilistä on kyse; Googlelta tai Applelta saamme tilin tunnisteen, emmekä tallenna heiltä muita tietoja. Lyhytikäinen kirjautumistunniste säilytetään selaimen muistissa enintään 15 minuuttia. Kun vanhempi palaa Googlesta tai Applesta, selaimen istuntotallennustilassa (session storage) on enintään 60 sekunnin ajan kaksi tietuetta (petprep.signin ja petprep.webSession.handoff), jotka poistetaan heti luettuaan. Uloskirjautumisen tai välilehden sulkemisen jälkeen mitään ei jää tallennettuna.",
               ],
             },
             {

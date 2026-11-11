@@ -635,6 +635,7 @@ const hr: Dictionary = {
                 "Kodovi: kodovi za prijavu i pozivni kodovi pohranjuju se samo kao sažeci (hash) i istječu.",
                 "Izvješća o pogreškama aplikacije: ako se aplikacija zamrzne ili sruši, može poslati kratko tehničko izvješće na naš poslužitelj u EU-u (vrsta i tekst pogreške, mjesto u kodu, verzija aplikacije i operacijskog sustava, naziv zaslona, uloga roditelj/dijete). Ne sadrži ime, adresu e-pošte, korisnički ID ni IP adresu, ne dijeli se ni s kojom trećom stranom i briše se nakon 30 dana.",
                 "Popis za rani pristup (ova mrežna stranica): tvoja adresa e-pošte, jezik stranice i vrijeme prijave.",
+                "Iskorištavanje poklon bona (ova web-stranica): roditelj se prijavljuje putem Googlea, Applea ili e-adresom i lozinkom. Primamo samo potvrdu o tome o kojem je postojećem roditeljskom računu PetPrep riječ; od Googlea ili Applea to je identifikator računa, a druge njihove podatke ne pohranjujemo. Kratkotrajni token za prijavu čuva se u memoriji preglednika najviše 15 minuta. Tijekom povratka s Googlea ili Applea u pohrani sesije preglednika (session storage) najviše 60 sekundi postoje dva zapisa (petprep.signin i petprep.webSession.handoff) koji se brišu čim se pročitaju. Nakon odjave ili zatvaranja kartice ništa ne ostaje pohranjeno.",
               ],
             },
             {

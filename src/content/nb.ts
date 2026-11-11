@@ -635,6 +635,7 @@ const nb: Dictionary = {
                 "Koder: innloggings- og invitasjonskoder lagres bare som hasher og utløper.",
                 "Feilrapporter fra appen: Hvis appen fryser eller krasjer, kan den sende en kort teknisk rapport til serveren vår i EU (feiltype og feiltekst, sted i koden, app- og OS-versjon, skjermnavn, rolle som forelder/barn). Den inneholder ikke navn, e-postadresse, bruker-ID eller IP-adresse, deles ikke med noen tredjepart og slettes etter 30 dager.",
                 "Listen for tidlig tilgang (dette nettstedet): e-postadressen din, språket på siden og tidspunktet da du meldte deg på.",
+                "Innløsning av gavekort (denne nettsiden): forelderen logger inn med Google, Apple eller med e-postadresse og passord. Vi får bare bekreftelsen på hvilken eksisterende PetPrep-foreldrekonto det gjelder; fra Google eller Apple er det kontoens identifikator, og vi lagrer ingen andre opplysninger fra dem. Et kortvarig innloggingstoken holdes i nettleserens minne i høyst 15 minutter. Mens forelderen sendes tilbake fra Google eller Apple, finnes det i høyst 60 sekunder to oppføringer (petprep.signin og petprep.webSession.handoff) i nettleserens øktlagring, og de slettes så snart de er lest. Etter utlogging eller når fanen lukkes, er ingenting lagret.",
               ],
             },
             {

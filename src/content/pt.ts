@@ -635,6 +635,7 @@ const pt: Dictionary = {
                 "Códigos: os códigos de acesso e de convite são guardados apenas como hashes e expiram.",
                 "Relatórios de erros da aplicação: se a aplicação bloquear ou falhar, pode enviar um breve relatório técnico para o nosso servidor na UE (tipo e texto do erro, localização no código, versão da aplicação e do sistema operativo, nome do ecrã, papel de pai/mãe ou criança). Não contém nome, endereço de e-mail, ID de utilizador nem endereço IP, não é partilhado com terceiros e é eliminado ao fim de 30 dias.",
                 "Lista de acesso antecipado (este site): o teu endereço de e-mail, o idioma da página e o momento em que te inscreveste.",
+                "Resgate de um vale-oferta (este site): um dos pais inicia sessão com a Google, a Apple ou com e-mail e palavra-passe. Recebemos apenas a confirmação de qual é a conta de pais PetPrep existente; da Google ou da Apple é o identificador da conta, e não guardamos quaisquer outros dados vindos delas. Um token de início de sessão de curta duração é mantido na memória do navegador durante no máximo 15 minutos. Durante o regresso da Google ou da Apple, existem duas entradas (petprep.signin e petprep.webSession.handoff) no armazenamento de sessão do navegador durante no máximo 60 segundos, e são eliminadas assim que são lidas. Depois de terminar a sessão ou fechar o separador, não fica nada guardado.",
               ],
             },
             {

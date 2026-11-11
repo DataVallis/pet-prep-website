@@ -654,6 +654,7 @@ const sl: Dictionary = {
                 "Poročila o napakah v aplikaciji: če se aplikacija zatakne ali sesuje, lahko na naš strežnik v EU pošlje kratko tehnično poročilo (vrsta in besedilo napake, mesto v kodi, različica aplikacije in sistema, ime zaslona, vloga starš/otrok). Poročilo ne vsebuje imena, e-naslova, ID-ja uporabnika ali IP-naslova, se ne deli z nobeno tretjo osebo in se izbriše po 30 dneh.",
                 "Seznam za zgodnji dostop (ta spletna stran): vaš e-poštni naslov, jezik strani in čas prijave.",
                 "Obrazec za partnerje (ta spletna stran): ime podjetja, ime kontaktne osebe, e-poštni naslov in sporočilo. Podatke uporabimo samo za odgovor na povpraševanje, hranimo jih 12 mesecev, nato jih izbrišemo. Pravna podlaga je vaša privolitev, ki jo date s kljukico pred pošiljanjem.",
+                "Unovčitev darilnega bona (ta spletna stran): starš se prijavi z Googlom, Applom ali z e-naslovom in geslom. Prejmemo le potrditev, za kateri obstoječi starševski račun PetPrep gre; od Googla ali Appla je to identifikator računa, drugih podatkov od njiju ne shranjujemo. Kratkotrajni prijavni žeton se hrani v pomnilniku brskalnika največ 15 minut. Med vrnitvijo z Googla ali Appla sta v seji brskalnika (sessionStorage) največ 60 sekund dva vnosa (petprep.signin in petprep.webSession.handoff), ki se izbrišeta, takoj ko se prebereta. Po odjavi ali zaprtju zavihka ne ostane shranjeno nič.",
               ],
             },
             {

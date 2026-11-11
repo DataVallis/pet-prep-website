@@ -635,6 +635,7 @@ const it: Dictionary = {
                 "Codici: i codici di accesso e di invito sono conservati solo come hash e scadono.",
                 "Segnalazioni di errore dell’app: se l’app si blocca o si chiude in modo anomalo, può inviare un breve resoconto tecnico al nostro server nell’UE (tipo e testo dell’errore, posizione nel codice, versione dell’app e del sistema operativo, nome della schermata, ruolo genitore/bambino). Non contiene nomi, indirizzi email, ID utente né indirizzi IP, non viene condiviso con terzi e viene eliminato dopo 30 giorni.",
                 "Lista d’attesa per l’accesso anticipato (questo sito web): il tuo indirizzo email, la lingua della pagina e il momento dell’iscrizione.",
+                "Riscatto di un buono regalo (questo sito): il genitore accede con Google, Apple oppure con e-mail e password. Riceviamo solo la conferma di quale account genitore PetPrep esistente si tratta; da Google o Apple è l’identificativo dell’account e non conserviamo altri loro dati. Un token di accesso di breve durata resta nella memoria del browser per al massimo 15 minuti. Durante il ritorno da Google o Apple, due voci (petprep.signin e petprep.webSession.handoff) esistono nello storage di sessione del browser per al massimo 60 secondi e vengono eliminate non appena lette. Dopo la disconnessione o la chiusura della scheda non resta memorizzato nulla.",
               ],
             },
             {

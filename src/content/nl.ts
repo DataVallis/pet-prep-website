@@ -635,6 +635,7 @@ const nl: Dictionary = {
                 "Codes: inlog- en uitnodigingscodes worden alleen als hash opgeslagen en verlopen.",
                 "Foutrapporten van de app: als de app vastloopt of crasht, kan de app een kort technisch rapport naar onze server in de EU sturen (soort fout en foutmelding, locatie in de code, app- en besturingssysteemversie, schermnaam, rol ouder/kind). Het bevat geen naam, e-mailadres, gebruikers-ID of IP-adres, wordt niet met derden gedeeld en wordt na 30 dagen verwijderd.",
                 "Lijst voor vroege toegang (deze website): je e-mailadres, de taal van de pagina en het moment waarop je je aanmeldde.",
+                "Een cadeaubon inwisselen (deze website): de ouder logt in met Google, Apple of met e-mailadres en wachtwoord. We ontvangen alleen de bevestiging om welk bestaand PetPrep-ouderaccount het gaat; van Google of Apple is dat de accountidentificatie, andere gegevens van hen bewaren we niet. Een kortlevend inlogtoken wordt maximaal 15 minuten in het geheugen van de browser bewaard. Tijdens de terugkeer van Google of Apple staan er maximaal 60 seconden twee items (petprep.signin en petprep.webSession.handoff) in de sessieopslag van de browser; ze worden verwijderd zodra ze zijn gelezen. Na uitloggen of het sluiten van het tabblad blijft er niets bewaard.",
               ],
             },
             {

@@ -635,6 +635,7 @@ const de: Dictionary = {
                 "Codes: Anmelde- und Einladungscodes werden nur als Hashes gespeichert und laufen ab.",
                 "Fehlerberichte der App: Wenn die App hängt oder abstürzt, kann sie einen kurzen technischen Bericht an unseren Server in der EU senden (Fehlertyp und -text, Stelle im Code, App- und Betriebssystemversion, Name des Bildschirms, Rolle Eltern/Kind). Er enthält keinen Namen, keine E-Mail-Adresse, keine Nutzer-ID und keine IP-Adresse, wird an keine Dritten weitergegeben und nach 30 Tagen gelöscht.",
                 "Liste für den frühen Zugang (diese Website): Ihre E-Mail-Adresse, die Sprache der Seite und der Zeitpunkt Ihrer Anmeldung.",
+                "Gutschein einlösen (diese Website): Das Elternteil meldet sich mit Google, Apple oder mit E-Mail-Adresse und Passwort an. Wir erhalten nur die Bestätigung, um welches bestehende PetPrep-Elternkonto es sich handelt; von Google oder Apple ist das die Kontokennung, weitere Daten von ihnen speichern wir nicht. Ein kurzlebiges Anmelde-Token wird höchstens 15 Minuten im Arbeitsspeicher des Browsers gehalten. Während der Rückkehr von Google oder Apple liegen höchstens 60 Sekunden lang zwei Einträge (petprep.signin und petprep.webSession.handoff) im Session Storage des Browsers; sie werden gelöscht, sobald sie gelesen wurden. Nach dem Abmelden oder Schließen des Tabs bleibt nichts gespeichert.",
               ],
             },
             {

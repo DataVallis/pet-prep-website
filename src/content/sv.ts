@@ -635,6 +635,7 @@ const sv: Dictionary = {
                 "Koder: inloggnings- och inbjudningskoder sparas bara som hashvärden och upphör att gälla.",
                 "Felrapporter från appen: om appen fryser eller kraschar kan den skicka en kort teknisk rapport till vår server inom EU (feltyp och feltext, plats i koden, app- och OS-version, skärmens namn, roll (förälder eller barn)). Den innehåller inget namn, ingen e-postadress, inget användar-ID och ingen IP-adress, delas inte med någon tredje part och raderas efter 30 dagar.",
                 "Listan för tidig tillgång (den här webbplatsen): din e-postadress, sidans språk och tidpunkten då du anmälde dig.",
+                "Inlösen av presentkort (den här webbplatsen): föräldern loggar in med Google, Apple eller med e-postadress och lösenord. Vi får bara en bekräftelse på vilket befintligt PetPrep-föräldrakonto det gäller; från Google eller Apple är det kontots identifierare, och vi sparar inga andra uppgifter från dem. En kortlivad inloggningstoken hålls i webbläsarens minne i högst 15 minuter. Medan föräldern återvänder från Google eller Apple finns två poster (petprep.signin och petprep.webSession.handoff) i webbläsarens sessionslagring i högst 60 sekunder, och de raderas så fort de har lästs. Efter utloggning eller när fliken stängs finns ingenting kvar.",
               ],
             },
             {
