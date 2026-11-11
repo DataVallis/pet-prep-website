@@ -102,7 +102,7 @@ const fi: RegistryCopy = {
     breedCount: (n) => `${n}${NB}${s(n, "rotu", "rotua")} hakemistossa`,
     open: "Katso rodut",
     openA11y: (many) => `Katso rodut: ${lc(many)}`,
-    freePlan: (name, activity) => `Ilmaisversio: ${lc(name)} (aikuisena ${activity}). Sillä ei ole omaa rotusivua.`,
+    freePlan: (name, activity) => `Ilmaisversio: ${lc(name)} (aikuisena ${activity}); 12 viikon haasteen voi lisätä myöhemmin. Sillä ei ole omaa rotusivua.`,
     otherSpecies: "Lisää eläimiä on suunnitteilla.",
     methodTitle: "Näin kokoamme hakemiston",
     method: [
@@ -114,7 +114,7 @@ const fi: RegistryCopy = {
   },
   speciesStatus: { available: "Sovelluksessa", coming_soon: "Tulossa sovellukseen", info_only: "Vain tietoa" },
   availability: {
-    in_app: { label: "Sovelluksessa", text: "Mukana PetPrepin 12 viikon haasteessa (maksullinen rotu)." },
+    in_app: { label: "Sovelluksessa", text: "Mukana PetPrepin 12 viikon haasteessa." },
     coming_soon: { label: "Tulossa sovellukseen", text: "Valmis ja testattu; tulee sovellukseen jonkin tulevan version mukana." },
     info_only: { label: "Vain tietoa", text: "Hakemistossa tiedoksi; sitä ei voi vielä adoptoida sovelluksessa." },
   },

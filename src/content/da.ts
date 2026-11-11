@@ -77,11 +77,12 @@ const da: Dictionary = {
       name: "Blandingshund",
       text: "Hele simulationen med en naturtro blandingshund.",
       features: [
-        "Simulation over 12 uger med rigtige konsekvenser",
+        "Daglig pasning med rigtige konsekvenser",
         "Rigtige gåture talt i rigtige skridt fra telefonen",
         "Forældreoversigt, trafiklys og Care Score",
         "Stille timer og en pauseknap",
         "Fotorealistisk billede af dit kæledyr og korte videoer",
+        "Tilføj 12-ugers-udfordringen senere, med det samme kæledyr",
       ],
       cta: "Start gratis",
     },
@@ -92,7 +93,7 @@ const da: Dictionary = {
       text: "Til familier der vil have hele oplevelsen og et diplom til sidst.",
       features: [
         "Alt i Blandingshund",
-        "Krævende racer som [border collie](breed:border_collie)",
+        "Alle racer, som [border collie](breed:border_collie), eller blandingshunden og huskatten",
         "Dit kæledyrs humør som AI-videoer",
         "Ansvarsdiplom",
         "Én pris når søskende deler et kæledyr",
@@ -219,7 +220,7 @@ const da: Dictionary = {
         },
       ],
       how: "Sådan kommer du i gang: Opret en konto som forælder, tilføj dig selv som den profil der passer dyret, og log ind med den sekscifrede kode – på samme telefon eller en anden.",
-      note: "Tilgængeligt i dag: den gratis blandingshund og huskat – og i 12-ugers-udfordringen alle hunde- og katteracer i [dyreleksikonet](page:animals).",
+      note: "Tilgængeligt i dag: den gratis blandingshund og huskat – og 12-ugers-udfordringen med en af dem eller med alle hunde- og katteracer i [dyreleksikonet](page:animals).",
       link: "Sådan bruger du PetPrep på egen hånd",
     },
     after: {
@@ -429,11 +430,11 @@ const da: Dictionary = {
       meta: {
         title: "Priser – PetPrep er gratis at starte med, 49,99 € for 12-ugers-udfordringen",
         description:
-          "Blandingshunden er gratis for altid. 12-ugers-udfordringen koster 49,99 € pr. kæledyr som et engangskøb. Én pris for søskende der deler et kæledyr.",
+          "Blandingshunden er gratis for altid. 12-ugers-udfordringen koster 49,99 € pr. kæledyr som et engangskøb. Én pris for søskende der deler et kæledyr. Også som opgradering af dit gratis kæledyr.",
       },
       eyebrow: "Priser",
       title: "Enkle, fair priser.",
-      lead: "Start gratis med en blandingshund. Køb hele 12-ugers-udfordringen når du er klar – de 12 uger begynder ved købet.",
+      lead: "Start gratis med en blandingshund. Køb hele 12-ugers-udfordringen når du er klar – de 12 uger begynder ved købet. Det gælder også det gratis kæledyr, dit barn allerede passer.",
       blocks: [
         { type: "pricing" },
         {
@@ -457,7 +458,10 @@ const da: Dictionary = {
           heading: "Spørgsmål om priser",
           items: [
             { q: "Er gratisversionen virkelig gratis?", a: "Ja. Blandingshunden er gratis for altid, med hele simulationen, rigtige gåture og forældreoversigten." },
-            { q: "Hvad indeholder udfordringen?", a: "Krævende racer som [border collie](breed:border_collie), dit kæledyrs humør som AI-videoer, Ansvarsdiplomet til sidst og adgang for begge forældre." },
+            { q: "Hvad indeholder udfordringen?", a: "Krævende racer som [border collie](breed:border_collie), dit kæledyrs humør som AI-videoer, Ansvarsdiplomet til sidst og adgang for begge forældre. Du kan også vælge den med blandingshunden eller huskatten." },
+            { q: "Kan vi opgradere det gratis kæledyr, mit barn allerede har?", a: "Ja, så længe den gratis blandingshund eller huskat stadig er med i spillet. Start udfordringen fra dit barns kort i forældreappen. Kæledyret forbliver det samme: navn, udseende, alder og lærte kommandoer. De 12 uger, Care Score og diplomet tæller fra købet; tidligere dage bliver i historikken, markeret som dage før udfordringen, og tæller ikke med. Prisen er den samme: 49,99 € som engangskøb, uden abonnement. Blandingshunde, der blev oprettet i en tidlig version af appen, kan ikke opgraderes; appen fortæller dig, om det gælder din." },
+            { q: "Kan et kæledyr i udfordringen komme tilbage til gratisplanen?", a: "Ikke efter ønske. En blandingshund eller huskat kommer kun tilbage til gratisplanen, hvis butikken refunderer købet; udfordringen slutter så uden diplom. Køber du udfordringen igen senere, starter 12 nye uger." },
+            { q: "Presser appen mig til at købe?", a: "Nej. Har dit barn passet et gratis kæledyr på mindst 5 af dets første 7 dage, får du én notifikation og et kort i din oversigt om udfordringen – én gang pr. kæledyr og aldrig i de stille timer. Dit barn ser hverken priser eller denne påmindelse." },
             { q: "Betaler søskende to gange?", a: "Nej. Børn der deler ét kæledyr, betaler én pris. Et kæledyr nummer to i familien er en særskilt udfordring." },
             { q: "Hvordan betaler jeg?", a: "I appen via App Store eller Google Play. Refusion sker via din konto i butikken." },
             { q: "Hvad er Ønsker, og kan mit barn selv købe ting?", a: "Dit barn kan ønske sig en seng, skåle, legetøj eller godbidder til sit kæledyr – op til tre åbne ønsker ad gangen. Du får en notifikation og køber enten tingen eller vælger »Ikke nu«. Dit barn ser aldrig priser og kan ikke købe noget i børneappen." },
@@ -489,7 +493,7 @@ const da: Dictionary = {
             { q: "Kan søskende dele et kæledyr?", a: "Ja. Hvert barn underskriver sin egen kontrakt, hver handling tilskrives den der udførte den, og hvert barn får sin egen retfærdige Care Score." },
             { q: "Hvad med skole og sengetid?", a: "Indstil stille timer. Dyret sætter tempoet ned, der sendes intet, og måltider der falder helt inden for de stille timer, klarer du." },
             { q: "Er det uhyggeligt for børn?", a: "Nej. Konsekvenserne er rigtige, men blide: Dyret kommer til dyrlægen eller på internat, aldrig noget voldsomt, og der er altid en ny start." },
-            { q: "Hvilke dyr kan man vælge?", a: "[Hunde](species:dog) og [katte](species:cat) i dag: en gratis blandingshund og huskat og i 12-ugers-udfordringen alle racer i [dyreleksikonet](page:animals), hvor deres kildebelagte behov også står. Flere dyrearter er planlagt." },
+            { q: "Hvilke dyr kan man vælge?", a: "[Hunde](species:dog) og [katte](species:cat) i dag: en gratis blandingshund og huskat og 12-ugers-udfordringen med en af dem eller med alle racer i [dyreleksikonet](page:animals), hvor deres kildebelagte behov også står. Flere dyrearter er planlagt." },
             { q: "Hvilke sprog?", a: "Engelsk og slovensk i dag. Flere sprog kommer efterhånden som PetPrep lanceres i nye lande." },
             { q: "Hvad sker der når vi har fået et rigtigt kæledyr?", a: "PetPrep kan blive en AI-assistent til dit rigtige kæledyr. Den del er under udvikling." },
           ],
@@ -777,7 +781,7 @@ const da: Dictionary = {
             {
               heading: "3. 12-ugers-udfordringen, Care Score og diplomet",
               items: [
-                "Udfordringen varer 12 uger (84 programdage) og starter med købet; hver passer har sin egen afslutning. Tid hvor spillet venter på betaling, tæller ikke med i de 12 uger.",
+                "Udfordringen varer 12 uger (84 programdage) og starter med købet; hver passer har sin egen afslutning. Tid hvor spillet venter på betaling, tæller ikke med i de 12 uger. Opgraderer du et gratis kæledyr til udfordringen, starter de 12 uger også med købet; kæledyrets alder nulstilles ikke, og dagene før købet forbliver synlige i historikken, markeret som dage før udfordringen, men tæller hverken med i de 12 uger, i Care Score eller til diplomet.",
                 "Care Score (0–100) viser hvor stor en del af de forventede rutiner (fodring, vand, oprydning, gåturen, et træningspas) passeren selv har udført; hver sygdom hos kæledyret trækker den ned. Tid hvor spillet er stoppet, tid hvor kæledyret er hos dyrlægen, og stille timer tæller aldrig imod passeren.",
                 "Efter 12 uger registreres en endelig score som ikke ændres senere; pasning efter udfordringen påvirker den ikke. Med en score på 70 eller mere kan du oprette et Ansvarsdiplom (PDF) i appen; under 70 får du en rapport om udfordringen.",
                 "Hvis mad, vand eller renlighed står på 0 % i 24 timer, bliver kæledyret »bragt på internat« (game over). Spillet med det kæledyr slutter, der er intet diplom, og du får en rapport om udfordringen.",
@@ -789,10 +793,11 @@ const da: Dictionary = {
               heading: "4. Gratis og betalte funktioner, køb og refusion",
               items: [
                 "Blandingshunden og huskatten er gratis for altid og er måden at prøve PetPrep på; der er ingen gratis prøveperiode for udfordringen. Et gratis kæledyr har intet 12-ugers-program og intet diplom, forælderen ser historikken for de seneste 7 dage, og kæledyret har et grundlæggende sæt billeder og videoer.",
-                "12-ugers-udfordringen med en betalt race er et engangskøb (49,99 € i Slovenien; butikken viser prisen for dit land). Ét køb er én udfordring for ét kæledyr; hver ny udfordring med et nyt kæledyr er et nyt køb. Søskende der passer det samme kæledyr, betaler én gang.",
+                "12-ugers-udfordringen er et engangskøb, ikke et abonnement (49,99 € i Slovenien; butikken viser prisen for dit land). I den nuværende version af appen kan du vælge den med alle racer, også blandingshunden og huskatten. Ét køb er én udfordring for ét kæledyr; hver ny udfordring med et nyt kæledyr er et nyt køb. Søskende der passer det samme kæledyr, betaler én gang.",
+                "En forælder kan opgradere en gratis blandingshund eller huskat, som nogen allerede passer, til udfordringen til samme pris og med det samme kæledyr. Det er ikke muligt efter game over eller for blandingshunde, der blev oprettet i en tidlig version af appen; appen viser, når det gælder. Et kæledyr i udfordringen (også et opgraderet kæledyr og en blandingshund eller huskat valgt til udfordringen) kan ikke skiftes tilbage til gratisplanen; kun en refusion bringer en blandingshund eller huskat tilbage dertil (se nedenfor).",
                 "En forælder køber i sin egen app via App Store eller Google Play; der er ingen køb i barnets app. Butikken behandler betalingen efter sine egne vilkår.",
                 "Du kan oprette et udfordringskæledyr før du køber. Indtil udfordringen er betalt, er spillet sat på pause: kæledyret venter trygt, dets behov falder ikke, og intet bliver værre. Når du køber, fortsætter spillet hvor det slap.",
-                "Refusion håndteres af App Store og Google Play efter deres egne regler; anmod om den i den butik hvor du købte. Hvis butikken refunderer et køb før udfordringen er afsluttet, sættes spillet med det kæledyr på pause igen. Billeder og videoer der er skabt efter købet, bevares.",
+                "Refusion håndteres af App Store og Google Play efter deres egne regler; anmod om den i den butik hvor du købte. Hvis butikken refunderer et køb før udfordringen er afsluttet, sættes spillet med det kæledyr på pause igen. Billeder og videoer der er skabt efter købet, bevares. En blandingshund eller huskat bliver ikke sat på pause, men vender tilbage til gratisplanen: udfordringen slutter uden diplom, gratisplanens regler gælder igen, og kæledyret viser igen det grundlæggende sæt billeder og videoer. Køber du senere udfordringen igen til det kæledyr, starter 12 nye uger fra det nye køb.",
                 "Efter game over (internat) låser et køb ikke kæledyret op; en ny udfordring er et nyt kæledyr og et nyt køb.",
                 "Ønsker (ting til kæledyret når funktionen bliver tilgængelig): et barn kan ønske sig noget, men kun en forælder kan købe – i sin egen app. En købt ting hører til det kæledyr den blev købt til, og er kun til pynt – den påvirker ikke spillet, scoren eller diplomet. Efter game over, eller når kæledyret slettes, forbliver købet brugt og refunderes ikke. Hvis butikken refunderer købet, fjernes tingen (for godbidder: de ubrugte godbidder).",
                 "Hvis du sletter et kæledyr, et barn eller kontoen mens en købt udfordring stadig er i gang, forbliver købet brugt: det overføres ikke til et andet kæledyr, og sletning er ikke en refusion. Appen advarer dig først og beder dig bekræfte.",
@@ -820,7 +825,7 @@ const da: Dictionary = {
             {
               heading: "7. Notifikationer",
               paragraphs: [
-                "Hvis du tillader det på enheden, sender appen push-notifikationer: påmindelser til passeren, advarsler til forældre når et kæledyr mangler mad, vand eller renlighed, og besked om sygdom, game over og udfordringens afslutning. Notifikationer indeholder aldrig barnets eller kæledyrets navn og sendes ikke i de stille timer. Du kan til enhver tid trække tilladelsen tilbage i enhedens indstillinger; uden notifikationer kan en passer gå glip af rutiner, hvilket påvirker spillet og scoren.",
+                "Hvis du tillader det på enheden, sender appen push-notifikationer: påmindelser til passeren, advarsler til forældre når et kæledyr mangler mad, vand eller renlighed, og besked om sygdom, game over og udfordringens afslutning. Notifikationer indeholder aldrig barnets eller kæledyrets navn og sendes ikke i de stille timer. Du kan til enhver tid trække tilladelsen tilbage i enhedens indstillinger; uden notifikationer kan en passer gå glip af rutiner, hvilket påvirker spillet og scoren. Forældre får desuden højst én gang pr. gratis kæledyr en påmindelse om udfordringen, når nogen har passet det på mindst 5 af dets første 7 dage.",
               ],
             },
             {

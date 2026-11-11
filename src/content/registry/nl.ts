@@ -54,7 +54,7 @@ const nl: RegistryCopy = {
     breedCount: (n) => `${n} ${s(n, "ras", "rassen")} in het register`,
     open: "Bekijk de rassen",
     openA11y: (many) => `Bekijk de rassen: ${lc(many)}`,
-    freePlan: (name, activity) => `Gratis plan: ${lc(name)} (${activity} voor een volwassen huisdier). Hiervoor is geen raspagina.`,
+    freePlan: (name, activity) => `Gratis plan: ${lc(name)} (${activity} voor een volwassen huisdier); de challenge van 12 weken kun je later toevoegen. Hiervoor is geen raspagina.`,
     otherSpecies: "Meer diersoorten staan gepland.",
     methodTitle: "Zo bouwen we dit register",
     method: [
@@ -66,7 +66,7 @@ const nl: RegistryCopy = {
   },
   speciesStatus: { available: "In de app", coming_soon: "Binnenkort in de app", info_only: "Alleen ter informatie" },
   availability: {
-    in_app: { label: "In de app", text: "Beschikbaar in de PetPrep Challenge van 12 weken (betaald ras)." },
+    in_app: { label: "In de app", text: "Beschikbaar in de PetPrep Challenge van 12 weken." },
     coming_soon: { label: "Binnenkort in de app", text: "Gebouwd en getest; komt met een van de volgende app-updates." },
     info_only: { label: "Alleen ter informatie", text: "Staat ter informatie in het register; je kunt het nog niet adopteren in de app." },
   },

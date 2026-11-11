@@ -37,7 +37,7 @@ const es: RegistryCopy = {
     breedCount: (n) => `${n} ${s(n, "raza", "razas")} en el registro`,
     open: "Ver razas",
     openA11y: (many) => `Ver razas: ${lc(many)}`,
-    freePlan: (name, activity) => `Plan gratuito: ${lc(name)} (${activity} en la edad adulta). No tiene página de raza.`,
+    freePlan: (name, activity) => `Plan gratuito: ${lc(name)} (${activity} en la edad adulta); puedes añadirle el reto de 12 semanas más adelante. No tiene página de raza.`,
     otherSpecies: "Hay más especies previstas.",
     methodTitle: "Cómo construimos este registro",
     method: [
@@ -49,7 +49,7 @@ const es: RegistryCopy = {
   },
   speciesStatus: { available: "En la app", coming_soon: "Pronto en la app", info_only: "Solo información" },
   availability: {
-    in_app: { label: "En la app", text: "Disponible en el Reto PetPrep de 12 semanas (raza de pago)." },
+    in_app: { label: "En la app", text: "Disponible en el Reto PetPrep de 12 semanas." },
     coming_soon: { label: "Pronto en la app", text: "Creada y probada; llegará con una próxima versión de la app." },
     info_only: { label: "Solo información", text: "Está en el registro a título informativo; todavía no puedes adoptarla en la app." },
   },

@@ -70,7 +70,7 @@ const pl: RegistryCopy = {
     breedCount: (n) => `${n} ${form(n, "rasa", "rasy", "ras")} w encyklopedii`,
     open: "Zobacz rasy",
     openA11y: (many) => `Zobacz rasy ${gen(many)}`,
-    freePlan: (name, activity) => `Plan bezpłatny: ${lc(name)} (dorosłe zwierzę: ${activity}). Nie ma osobnej strony w encyklopedii.`,
+    freePlan: (name, activity) => `Plan bezpłatny: ${lc(name)} (dorosłe zwierzę: ${activity}); 12-tygodniowe wyzwanie można dodać później. Nie ma osobnej strony w encyklopedii.`,
     otherSpecies: "Kolejne zwierzęta są w planach.",
     methodTitle: "Jak powstaje ta encyklopedia",
     method: [
@@ -82,7 +82,7 @@ const pl: RegistryCopy = {
   },
   speciesStatus: { available: "W aplikacji", coming_soon: "Wkrótce w aplikacji", info_only: "Tylko informacyjnie" },
   availability: {
-    in_app: { label: "W aplikacji", text: "Dostępna w 12-tygodniowym wyzwaniu PetPrep (rasa płatna)." },
+    in_app: { label: "W aplikacji", text: "Dostępna w 12-tygodniowym wyzwaniu PetPrep." },
     coming_soon: { label: "Wkrótce w aplikacji", text: "Rasa jest gotowa i przetestowana; pojawi się w jednej z najbliższych wersji aplikacji." },
     info_only: { label: "Tylko informacyjnie", text: "Rasa jest w encyklopedii w celach informacyjnych; w aplikacji nie możesz jej jeszcze wybrać." },
   },

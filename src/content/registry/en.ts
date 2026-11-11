@@ -30,7 +30,7 @@ const en: RegistryCopy = {
     breedCount: (n) => `${n} ${s(n, "breed", "breeds")} in the register`,
     open: "See breeds",
     openA11y: (many) => `See breeds: ${many.toLowerCase()}`,
-    freePlan: (name, activity) => `Free plan: ${name.toLowerCase()} (${activity} as an adult). It has no breed page.`,
+    freePlan: (name, activity) => `Free plan: ${name.toLowerCase()} (${activity} as an adult); you can add the 12-week challenge later. It has no breed page.`,
     otherSpecies: "More animals are planned.",
     methodTitle: "How we build this register",
     method: [
@@ -42,7 +42,7 @@ const en: RegistryCopy = {
   },
   speciesStatus: { available: "In the app", coming_soon: "Coming soon to the app", info_only: "Information only" },
   availability: {
-    in_app: { label: "In the app", text: "Available in the 12-week PetPrep Challenge (paid breed)." },
+    in_app: { label: "In the app", text: "Available in the 12-week PetPrep Challenge." },
     coming_soon: { label: "Coming soon to the app", text: "Built and tested; it arrives with a coming app release." },
     info_only: { label: "Information only", text: "In the register for information; you can't adopt it in the app yet." },
   },

@@ -77,11 +77,12 @@ const pl: Dictionary = {
       name: "Mieszaniec",
       text: "Pełna symulacja z realistycznym mieszańcem.",
       features: [
-        "12-tygodniowa symulacja z prawdziwymi konsekwencjami",
+        "Codzienna opieka z prawdziwymi konsekwencjami",
         "Prawdziwe spacery liczone w prawdziwych krokach z telefonu",
         "Panel rodzica, sygnalizator i Care Score",
         "Godziny ciszy i przycisk pauzy",
         "Fotorealistyczne zdjęcie twojego zwierzaka i krótkie filmy",
+        "12-tygodniowe wyzwanie możesz dodać później, z tym samym zwierzęciem",
       ],
       cta: "Zacznij za darmo",
     },
@@ -92,7 +93,7 @@ const pl: Dictionary = {
       text: "Dla rodzin, które chcą pełnego doświadczenia i certyfikatu na końcu.",
       features: [
         "Wszystko, co w planie Mieszaniec",
-        "Wymagające rasy, takie jak [border collie](breed:border_collie)",
+        "Każda rasa, np. [border collie](breed:border_collie), albo pies mieszaniec i kot domowy",
         "Nastroje twojego zwierzęcia jako filmy AI",
         "Certyfikat odpowiedzialności",
         "Jedna cena, gdy rodzeństwo dzieli jedno zwierzę",
@@ -219,7 +220,7 @@ const pl: Dictionary = {
         },
       ],
       how: "Jak zacząć: załóż konto jako rodzic, dodaj siebie jako profil opiekuna i zaloguj się 6-cyfrowym kodem – na tym samym telefonie albo na innym.",
-      note: "Dostępne już dziś: darmowy pies mieszaniec i kot domowy, a w 12-tygodniowym wyzwaniu każda rasa psa i kota z [encyklopedii zwierząt](page:animals).",
+      note: "Dostępne już dziś: darmowy pies mieszaniec i kot domowy, a także 12-tygodniowe wyzwanie z jednym z nich lub z każdą rasą psa i kota z [encyklopedii zwierząt](page:animals).",
       link: "Jak korzystać z PetPrep samodzielnie",
     },
     after: {
@@ -429,11 +430,11 @@ const pl: Dictionary = {
       meta: {
         title: "Cennik – PetPrep na start za darmo, 49,99 € za 12-tygodniowe wyzwanie",
         description:
-          "Mieszaniec jest za darmo na zawsze. 12-tygodniowe wyzwanie PetPrep kosztuje 49,99 € za zwierzę, w jednorazowym zakupie. Jedna cena dla rodzeństwa, które dzieli zwierzę.",
+          "Mieszaniec jest za darmo na zawsze. 12-tygodniowe wyzwanie PetPrep kosztuje 49,99 € za zwierzę, w jednorazowym zakupie. Jedna cena dla rodzeństwa, które dzieli zwierzę. Także jako ulepszenie twojego darmowego zwierzęcia.",
       },
       eyebrow: "Cennik",
       title: "Proste, uczciwe ceny.",
-      lead: "Zacznij za darmo z mieszańcem. Pełne 12-tygodniowe wyzwanie kupisz, kiedy zechcesz – 12 tygodni liczy się od chwili zakupu.",
+      lead: "Zacznij za darmo z mieszańcem. Pełne 12-tygodniowe wyzwanie kupisz, kiedy zechcesz – 12 tygodni liczy się od chwili zakupu. Możesz je też dodać do darmowego zwierzęcia, którym twoje dziecko już się opiekuje.",
       blocks: [
         { type: "pricing" },
         {
@@ -457,7 +458,10 @@ const pl: Dictionary = {
           heading: "Pytania o ceny",
           items: [
             { q: "Czy wersja darmowa jest naprawdę darmowa?", a: "Tak. Zwierzę mieszaniec jest za darmo na zawsze – z pełną symulacją, prawdziwymi spacerami i panelem rodzica." },
-            { q: "Co obejmuje wyzwanie?", a: "Wymagające rasy, takie jak [border collie](breed:border_collie), nastroje twojego zwierzęcia jako filmy AI, Certyfikat odpowiedzialności na końcu i dostęp dla obojga rodziców." },
+            { q: "Co obejmuje wyzwanie?", a: "Wymagające rasy, takie jak [border collie](breed:border_collie), nastroje twojego zwierzęcia jako filmy AI, Certyfikat odpowiedzialności na końcu i dostęp dla obojga rodziców. Możesz je wybrać także z psem mieszańcem lub kotem domowym." },
+            { q: "Czy możemy przejść na wyzwanie z darmowym zwierzęciem, które moje dziecko już ma?", a: "Tak, jeśli darmowy pies mieszaniec lub kot domowy jest nadal w grze. W aplikacji rodzica rozpocznij wyzwanie z karty dziecka. Zwierzę pozostaje to samo: imię, wygląd, wiek i nauczone komendy. 12 tygodni, Care Score i certyfikat liczą się od zakupu; wcześniejsze dni zostają w historii, oznaczone jako dni przed wyzwaniem, i się nie liczą. Cena jest taka sama: 49,99 € jednorazowo, bez subskrypcji. Psów mieszańców utworzonych we wczesnej wersji aplikacji nie można przenieść do wyzwania; aplikacja powie ci, czy dotyczy to twojego psa." },
+            { q: "Czy zwierzę z wyzwania może wrócić do planu bezpłatnego?", a: "Nie na życzenie. Pies mieszaniec lub kot domowy wraca do planu bezpłatnego tylko wtedy, gdy sklep zwróci pieniądze za zakup; wyzwanie kończy się wtedy bez certyfikatu. Jeśli później kupisz wyzwanie ponownie, zacznie się nowe 12 tygodni." },
+            { q: "Czy aplikacja będzie mnie namawiać do zakupu?", a: "Nie. Jeśli twoje dziecko opiekowało się darmowym zwierzęciem w co najmniej 5 z jego pierwszych 7 dni, dostaniesz jedno powiadomienie i kartę w panelu z informacją o wyzwaniu – raz na zwierzę i nigdy w godzinach ciszy. Dziecko nie widzi cen ani tego przypomnienia." },
             { q: "Czy rodzeństwo płaci podwójnie?", a: "Nie. Dzieci, które dzielą jedno zwierzę, płacą jedną cenę. Drugie zwierzę w rodzinie to osobne wyzwanie." },
             { q: "Jak zapłacić?", a: "W aplikacji, przez App Store lub Google Play. Zwrotami zajmuje się sklep, w którym masz konto." },
             { q: "Czym są Życzenia i czy moje dziecko może samo coś kupić?", a: "Twoje dziecko może poprosić o legowisko, miski, zabawkę lub smakołyki dla swojego zwierzęcia – maksymalnie trzy otwarte prośby naraz. Dostajesz powiadomienie i albo kupujesz, albo wybierasz „Nie teraz”. Dziecko nigdy nie widzi cen i w aplikacji dla dzieci nie może niczego kupić." },
@@ -489,7 +493,7 @@ const pl: Dictionary = {
             { q: "Czy rodzeństwo może dzielić jedno zwierzę?", a: "Tak. Każde dziecko podpisuje własną umowę, każda czynność jest przypisywana temu, kto ją wykonał, a każde dziecko dostaje własny, sprawiedliwy Care Score." },
             { q: "A co ze szkołą i porą snu?", a: "Ustaw godziny ciszy. Zwierzę zwalnia, nic nie jest wysyłane, a posiłkami, które w całości wypadają w godzinach ciszy, zajmujesz się ty." },
             { q: "Czy to nie jest straszne dla dzieci?", a: "Nie. Konsekwencje są prawdziwe, ale łagodne: zwierzę trafia do weterynarza albo do schroniska, nigdy nie ma drastycznych scen i zawsze można zacząć od nowa." },
-            { q: "Jakie zwierzęta są dostępne?", a: "Dziś [psy](species:dog) i [koty](species:cat): darmowy pies mieszaniec i kot domowy, a w 12-tygodniowym wyzwaniu każda rasa z [encyklopedii zwierząt](page:animals), która podaje też ich potrzeby ze źródłami. Kolejne gatunki są planowane." },
+            { q: "Jakie zwierzęta są dostępne?", a: "Dziś [psy](species:dog) i [koty](species:cat): darmowy pies mieszaniec i kot domowy, a także 12-tygodniowe wyzwanie z jednym z nich lub z każdą rasą z [encyklopedii zwierząt](page:animals), która podaje też ich potrzeby ze źródłami. Kolejne gatunki są planowane." },
             { q: "W jakich językach?", a: "Dziś po angielsku i słoweńsku. Kolejne języki pojawią się, gdy PetPrep będzie startować w nowych krajach." },
             { q: "Co się dzieje, gdy już mamy prawdziwe zwierzę?", a: "PetPrep może stać się asystentem AI dla twojego prawdziwego zwierzęcia. Ta część jest w przygotowaniu." },
           ],
@@ -777,7 +781,7 @@ const pl: Dictionary = {
             {
               heading: "3. 12-tygodniowe wyzwanie, Care Score i certyfikat",
               items: [
-                "Wyzwanie trwa 12 tygodni (84 dni programu) i zaczyna się z chwilą zakupu; każdy opiekun ma własny termin zakończenia. Czas, w którym gra czeka na płatność, nie wlicza się do 12 tygodni.",
+                "Wyzwanie trwa 12 tygodni (84 dni programu) i zaczyna się z chwilą zakupu; każdy opiekun ma własny termin zakończenia. Czas, w którym gra czeka na płatność, nie wlicza się do 12 tygodni. Jeśli przeniesiesz darmowe zwierzę do wyzwania, 12 tygodni również liczy się od zakupu; wiek zwierzęcia się nie zeruje, a dni przed zakupem pozostają widoczne w historii, oznaczone jako dni przed wyzwaniem, ale nie liczą się ani do 12 tygodni, ani do Care Score, ani do certyfikatu.",
                 "Care Score (0–100) pokazuje, jaką część oczekiwanych obowiązków (karmienie, woda, sprzątanie, spacer, sesja treningowa) opiekun wykonał sam; każda choroba zwierzęcia go obniża. Czas, w którym gra jest zatrzymana, zwierzę jest u weterynarza, oraz godziny ciszy nigdy nie liczą się na niekorzyść opiekuna.",
                 "Po 12 tygodniach zapisywany jest wynik końcowy, który później się nie zmienia; opieka po zakończeniu wyzwania na niego nie wpływa. Przy wyniku 70 lub wyższym możesz utworzyć w aplikacji Certyfikat odpowiedzialności (PDF); poniżej 70 otrzymujesz raport z wyzwania.",
                 "Jeśli jedzenie, woda lub czystość pozostają na poziomie 0% przez 24 godziny, zwierzę zostaje „oddane do schroniska” (koniec gry). Gra z tym zwierzęciem się kończy, nie ma certyfikatu, a ty otrzymujesz raport z wyzwania.",
@@ -789,10 +793,11 @@ const pl: Dictionary = {
               heading: "4. Funkcje darmowe i płatne, zakupy i zwroty",
               items: [
                 "Pies mieszaniec i kot domowy są za darmo na zawsze i są sposobem na wypróbowanie PetPrep; nie ma darmowego okresu próbnego wyzwania. Darmowe zwierzę nie ma 12-tygodniowego programu ani certyfikatu, rodzic widzi historię z ostatnich 7 dni, a zwierzę ma podstawowy zestaw obrazów i filmów.",
-                "12-tygodniowe wyzwanie PetPrep z płatną rasą to jednorazowy zakup (49,99 € w Słowenii; sklep pokazuje cenę dla twojego kraju). Jeden zakup to jedno wyzwanie dla jednego zwierzęcia; każde nowe wyzwanie z nowym zwierzęciem to nowy zakup. Rodzeństwo opiekujące się tym samym zwierzęciem płaci raz.",
+                "12-tygodniowe wyzwanie PetPrep to jednorazowy zakup, a nie subskrypcja (49,99 € w Słowenii; sklep pokazuje cenę dla twojego kraju). W aktualnej wersji aplikacji możesz je wybrać z każdą rasą, także z psem mieszańcem i kotem domowym. Jeden zakup to jedno wyzwanie dla jednego zwierzęcia; każde nowe wyzwanie z nowym zwierzęciem to nowy zakup. Rodzeństwo opiekujące się tym samym zwierzęciem płaci raz.",
+                "Rodzic może przenieść do wyzwania darmowego psa mieszańca lub kota domowego, którym ktoś już się opiekuje – za tę samą cenę i z tym samym zwierzęciem. Nie jest to możliwe po zakończeniu gry ani w przypadku psów mieszańców utworzonych we wczesnej wersji aplikacji; aplikacja pokazuje, kiedy tak jest. Zwierzęcia w wyzwaniu (także przeniesionego do wyzwania oraz psa mieszańca lub kota domowego wybranego do wyzwania) nie można przełączyć z powrotem na plan bezpłatny; psa mieszańca lub kota domowego przywraca do niego tylko zwrot pieniędzy (poniżej).",
                 "Rodzic kupuje we własnej aplikacji przez App Store lub Google Play; w aplikacji dziecka nie ma zakupów. Płatność obsługuje sklep na własnych warunkach.",
                 "Zwierzę do wyzwania możesz utworzyć przed zakupem. Dopóki wyzwanie nie zostanie opłacone, gra jest wstrzymana: zwierzę bezpiecznie czeka, jego potrzeby nie spadają i nic się nie pogarsza. Po zakupie gra toczy się dalej tam, gdzie się zatrzymała.",
-                "Zwrotami zajmują się App Store i Google Play według własnych zasad; o zwrot poproś w sklepie, w którym dokonano zakupu. Jeśli sklep zwróci pieniądze za zakup przed zakończeniem wyzwania, gra z tym zwierzęciem zostaje ponownie wstrzymana. Obrazy i filmy utworzone po zakupie pozostają.",
+                "Zwrotami zajmują się App Store i Google Play według własnych zasad; o zwrot poproś w sklepie, w którym dokonano zakupu. Jeśli sklep zwróci pieniądze za zakup przed zakończeniem wyzwania, gra z tym zwierzęciem zostaje ponownie wstrzymana. Obrazy i filmy utworzone po zakupie pozostają. Pies mieszaniec lub kot domowy nie zostaje wstrzymany, tylko wraca do planu bezpłatnego: wyzwanie kończy się bez certyfikatu, znów obowiązują zasady planu bezpłatnego, a zwierzę znów ma podstawowy zestaw zdjęć i filmów. Jeśli później ponownie kupisz wyzwanie dla tego zwierzęcia, nowe 12 tygodni zacznie się od nowego zakupu.",
                 "Po zakończeniu gry (schronisko) zakup nie odblokowuje zwierzęcia; nowe wyzwanie to nowe zwierzę i nowy zakup.",
                 "Życzenia (rzeczy dla zwierzęcia, gdy będą dostępne): dziecko może poprosić, ale kupić może tylko rodzic, we własnej aplikacji. Kupiony przedmiot należy do zwierzęcia, dla którego go kupiono, i jest wyłącznie ozdobny – nie wpływa na grę, wynik ani certyfikat. Po zakończeniu gry lub usunięciu zwierzęcia zakup pozostaje wykorzystany i nie podlega zwrotowi. Jeśli sklep zwróci pieniądze za zakup, przedmiot (w przypadku smakołyków – niewykorzystane smakołyki) zostaje usunięty.",
                 "Jeśli usuniesz zwierzę, dziecko lub konto, gdy kupione wyzwanie wciąż trwa, zakup pozostaje wykorzystany: nie przechodzi na inne zwierzę, a usunięcie nie jest zwrotem. Aplikacja najpierw cię ostrzega i prosi o potwierdzenie.",
@@ -820,7 +825,7 @@ const pl: Dictionary = {
             {
               heading: "7. Powiadomienia",
               paragraphs: [
-                "Jeśli pozwolisz na to na urządzeniu, aplikacja wysyła powiadomienia push: przypomnienia dla opiekuna, alerty dla rodziców, gdy zwierzę nie ma jedzenia, wody lub czystości, oraz informacje o chorobie, końcu gry i zakończeniu wyzwania. Powiadomienia nigdy nie zawierają imienia dziecka ani zwierzęcia i nie są wysyłane w godzinach ciszy. Zgodę możesz w każdej chwili cofnąć w ustawieniach urządzenia; bez powiadomień opiekun może przegapić obowiązki, co wpływa na grę i wynik.",
+                "Jeśli pozwolisz na to na urządzeniu, aplikacja wysyła powiadomienia push: przypomnienia dla opiekuna, alerty dla rodziców, gdy zwierzę nie ma jedzenia, wody lub czystości, oraz informacje o chorobie, końcu gry i zakończeniu wyzwania. Powiadomienia nigdy nie zawierają imienia dziecka ani zwierzęcia i nie są wysyłane w godzinach ciszy. Zgodę możesz w każdej chwili cofnąć w ustawieniach urządzenia; bez powiadomień opiekun może przegapić obowiązki, co wpływa na grę i wynik. Rodzice dostają też, najwyżej raz na darmowe zwierzę, przypomnienie o wyzwaniu, gdy ktoś opiekował się nim w co najmniej 5 z jego pierwszych 7 dni.",
               ],
             },
             {

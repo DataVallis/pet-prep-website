@@ -77,11 +77,12 @@ const cs: Dictionary = {
       name: "Kříženec",
       text: "Celá simulace s realistickým mazlíčkem – křížencem.",
       features: [
-        "12týdenní simulace se skutečnými důsledky",
+        "Každodenní péče se skutečnými důsledky",
         "Skutečné procházky, které se měří skutečnými kroky z telefonu",
         "Rodičovský přehled, semafor a Care Score",
         "Klidové hodiny a tlačítko pauzy",
         "Fotorealistický obrázek vašeho mazlíčka a krátká videa",
+        "12týdenní výzvu můžete přidat později, se stejným zvířetem",
       ],
       cta: "Začít zdarma",
     },
@@ -92,7 +93,7 @@ const cs: Dictionary = {
       text: "Pro rodiny, které chtějí celý zážitek a na konci certifikát.",
       features: [
         "Vše z plánu Kříženec",
-        "Náročná plemena, jako je [border kolie](breed:border_collie)",
+        "Jakékoli plemeno, například [border kolie](breed:border_collie), nebo kříženec a domácí kočka",
         "Nálady vašeho mazlíčka v podobě AI videí",
         "Certifikát odpovědnosti",
         "Jedna cena, když se o mazlíčka dělí sourozenci",
@@ -219,7 +220,7 @@ const cs: Dictionary = {
         },
       ],
       how: "Jak na to: založte si účet rodiče, přidejte sebe jako profil pečovatele a přihlaste se šestimístným kódem – na stejném nebo jiném telefonu.",
-      note: "Už dnes si můžete vybrat křížence a domácí kočku zdarma a ve 12týdenní výzvě kterékoli plemeno psa nebo kočky z [encyklopedie zvířat](page:animals).",
+      note: "Už dnes si můžete vybrat křížence a domácí kočku zdarma a 12týdenní výzvu s jedním z nich nebo s kterýmkoli plemenem psa či kočky z [encyklopedie zvířat](page:animals).",
       link: "Jak používat PetPrep sami",
     },
     after: {
@@ -429,11 +430,11 @@ const cs: Dictionary = {
       meta: {
         title: "Ceník – PetPrep začíná zdarma, 12týdenní výzva za 49,99 €",
         description:
-          "Kříženec je zdarma navždy. 12týdenní výzva PetPrep stojí 49,99 € za mazlíčka jako jednorázový nákup. Sourozenci, kteří se o mazlíčka dělí, platí jednu cenu.",
+          "Kříženec je zdarma navždy. 12týdenní výzva PetPrep stojí 49,99 € za mazlíčka jako jednorázový nákup. Sourozenci, kteří se o mazlíčka dělí, platí jednu cenu. Také jako upgrade vašeho bezplatného zvířete.",
       },
       eyebrow: "Ceník",
       title: "Jednoduché, férové ceny.",
-      lead: "Začněte zdarma s křížencem. Celou 12týdenní výzvu si kupte, až budete chtít – 12 týdnů začne běžet až nákupem.",
+      lead: "Začněte zdarma s křížencem. Celou 12týdenní výzvu si kupte, až budete chtít – 12 týdnů začne běžet až nákupem. Funguje to i se zvířetem zdarma, o které se vaše dítě už stará.",
       blocks: [
         { type: "pricing" },
         {
@@ -457,7 +458,10 @@ const cs: Dictionary = {
           heading: "Otázky o cenách",
           items: [
             { q: "Je verze zdarma opravdu zdarma?", a: "Ano. Kříženec je zdarma navždy, a to s celou simulací, skutečnými procházkami i rodičovským přehledem." },
-            { q: "Co výzva zahrnuje?", a: "Náročná plemena, jako je [border kolie](breed:border_collie), nálady vašeho mazlíčka v podobě AI videí, na konci Certifikát odpovědnosti a přístup pro oba rodiče." },
+            { q: "Co výzva zahrnuje?", a: "Náročná plemena, jako je [border kolie](breed:border_collie), nálady vašeho mazlíčka v podobě AI videí, na konci Certifikát odpovědnosti a přístup pro oba rodiče. Vybrat si ji můžete i s křížencem nebo domácí kočkou." },
+            { q: "Můžeme převést na výzvu bezplatné zvíře, které už naše dítě má?", a: "Ano, pokud je bezplatný kříženec nebo domácí kočka ještě ve hře. V rodičovské aplikaci spusťte výzvu z karty dítěte. Zvíře zůstává stejné: jméno, vzhled, věk i naučené povely. 12 týdnů, Care Score i certifikát se počítají od nákupu; dřívější dny zůstávají v historii, označené jako dny před výzvou, a nepočítají se. Cena je stejná: 49,99 € jednorázově, bez předplatného. Křížence vytvořené v rané verzi aplikace převést nelze; aplikace vám řekne, jestli se to týká toho vašeho." },
+            { q: "Může se zvíře z výzvy vrátit do bezplatného plánu?", a: "Ne na přání. Kříženec nebo domácí kočka se do bezplatného plánu vrátí jen tehdy, když obchod vrátí peníze za nákup; výzva pak skončí bez certifikátu. Když si výzvu později koupíte znovu, začne nových 12 týdnů." },
+            { q: "Bude mě aplikace tlačit do nákupu?", a: "Ne. Pokud se vaše dítě staralo o bezplatné zvíře alespoň 5 z jeho prvních 7 dnů, dostanete jedno oznámení a kartu v přehledu s informací o výzvě – jednou na zvíře a nikdy v klidových hodinách. Dítě nevidí ceny ani tuto připomínku." },
             { q: "Platí sourozenci dvakrát?", a: "Ne. Děti, které se dělí o jednoho mazlíčka, platí jednu cenu. Druhý mazlíček v rodině je samostatná výzva." },
             { q: "Jak zaplatím?", a: "Přímo v aplikaci přes App Store nebo Google Play. Vrácení peněz vyřizuje obchod, ve kterém jste nakupovali." },
             { q: "Co jsou Přání a může dítě něco koupit samo?", a: "Dítě může pro svého mazlíčka požádat o pelíšek, misky, hračku nebo pamlsky – najednou může mít otevřené až tři žádosti. Dostanete oznámení a věc buď koupíte, nebo zvolíte „Teď ne“. Dítě ceny nikdy nevidí a v dětské aplikaci nemůže nic koupit." },
@@ -489,7 +493,7 @@ const cs: Dictionary = {
             { q: "Mohou se sourozenci o mazlíčka dělit?", a: "Ano. Každé dítě podepíše vlastní smlouvu, každý úkon se připíše tomu, kdo ho udělal, a každé dítě dostane vlastní spravedlivé Care Score." },
             { q: "A co škola a večerka?", a: "Nastavte si klidové hodiny. Mazlíček zvolní, nic se neposílá a krmení, které celé vyjde na klidové hodiny, zajistíte vy." },
             { q: "Není to pro děti strašidelné?", a: "Ne. Důsledky jsou skutečné, ale šetrné: mazlíček jde k veterináři nebo do útulku, nikdy se neděje nic drastického a vždy je možné začít znovu." },
-            { q: "Která zvířata jsou k dispozici?", a: "Dnes [psi](species:dog) a [kočky](species:cat): kříženec a domácí kočka jsou zdarma a ve 12týdenní výzvě si můžete vybrat kterékoli plemeno z [encyklopedie zvířat](page:animals), kde najdete i jeho doložené potřeby. Další druhy plánujeme." },
+            { q: "Která zvířata jsou k dispozici?", a: "Dnes [psi](species:dog) a [kočky](species:cat): kříženec a domácí kočka jsou zdarma a 12týdenní výzvu si můžete vybrat s jedním z nich nebo s kterýmkoli plemenem z [encyklopedie zvířat](page:animals), kde najdete i jeho doložené potřeby. Další druhy plánujeme." },
             { q: "V jakých jazycích?", a: "Dnes v angličtině a slovinštině. Další jazyky přibudou postupně, jak PetPrep vstoupí do dalších zemí." },
             { q: "Co se stane, až si pořídíme skutečného mazlíčka?", a: "PetPrep se může stát AI asistentem pro vašeho skutečného mazlíčka. Tato část je ve vývoji." },
           ],
@@ -777,7 +781,7 @@ const cs: Dictionary = {
             {
               heading: "3. 12týdenní výzva, Care Score a certifikát",
               items: [
-                "Výzva trvá 12 týdnů (84 dnů programu) a začíná nákupem; každý pečovatel má svůj vlastní konec. Doba, kdy hra čeká na platbu, se do 12 týdnů nezapočítává.",
+                "Výzva trvá 12 týdnů (84 dnů programu) a začíná nákupem; každý pečovatel má svůj vlastní konec. Doba, kdy hra čeká na platbu, se do 12 týdnů nezapočítává. Pokud bezplatné zvíře převedete na výzvu, začne 12 týdnů rovněž nákupem; věk zvířete se nevynuluje a dny před nákupem zůstávají viditelné v historii, označené jako dny před výzvou, ale nepočítají se do 12 týdnů, do Care Score ani do certifikátu.",
                 "Care Score (0–100) ukazuje, jaký podíl očekávaných povinností (krmení, voda, úklid, procházka, výcvik) pečovatel splnil sám; každé onemocnění zvířete ho snižuje. Doba, kdy je hra zastavená nebo je zvíře u veterináře, i klidové hodiny se pečovateli nikdy nepočítají.",
                 "Po 12 týdnech se zapíše konečné skóre, které se už nemění; péče po skončení výzvy ho neovlivní. Při skóre 70 a více můžete v aplikaci vytvořit Certifikát odpovědnosti (PDF); při nižším skóre dostanete přehled výzvy.",
                 "Pokud jídlo, voda nebo čistota zůstanou 24 hodin na 0 %, zvíře je „odvezeno do útulku“ (konec hry). Hra s tímto zvířetem končí, certifikát se nevydává a dostanete přehled výzvy.",
@@ -789,10 +793,11 @@ const cs: Dictionary = {
               heading: "4. Funkce zdarma a placené, nákupy a vrácení peněz",
               items: [
                 "Pes kříženec a domácí kočka jsou zdarma navždy a slouží k vyzkoušení PetPrepu; bezplatná zkušební verze výzvy neexistuje. Bezplatné zvíře nemá 12týdenní program ani certifikát, rodič vidí historii posledních 7 dnů a zvíře má základní sadu obrázků a videí.",
-                "12týdenní výzva PetPrep s placeným plemenem je jednorázový nákup (49,99 € ve Slovinsku; obchod ukazuje cenu pro vaši zemi). Jeden nákup je jedna výzva pro jedno zvíře; každá nová výzva s novým zvířetem je nový nákup. Sourozenci, kteří se starají o stejné zvíře, platí jednou.",
+                "12týdenní výzva PetPrep je jednorázový nákup, ne předplatné (49,99 € ve Slovinsku; obchod ukazuje cenu pro vaši zemi). V aktuální verzi aplikace si ji můžete vybrat s jakýmkoli plemenem, také s křížencem a domácí kočkou. Jeden nákup je jedna výzva pro jedno zvíře; každá nová výzva s novým zvířetem je nový nákup. Sourozenci, kteří se starají o stejné zvíře, platí jednou.",
+                "Rodič může bezplatného křížence nebo domácí kočku, o které se už někdo stará, převést na výzvu za stejnou cenu a se stejným zvířetem. Po konci hry a u kříženců vytvořených v rané verzi aplikace to možné není; aplikace ukáže, kdy to platí. Zvíře ve výzvě (také převedené zvíře a kříženec nebo domácí kočka vybraní pro výzvu) nelze přepnout zpět do bezplatného plánu; křížence nebo domácí kočku tam vrátí jen vrácení peněz (viz níže).",
                 "Rodič nakupuje ve své aplikaci přes App Store nebo Google Play; v aplikaci dítěte se nakupovat nedá. Platbu zpracuje obchod podle svých vlastních podmínek.",
                 "Zvíře pro výzvu můžete vytvořit ještě před nákupem. Dokud výzva není zaplacená, je hra pozastavená: zvíře bezpečně čeká, jeho potřeby neklesají a nic se nezhoršuje. Po nákupu hra pokračuje tam, kde se zastavila.",
-                "Vrácení peněz řeší App Store a Google Play podle svých vlastních pravidel; požádejte o ně v obchodě, kde jste nakoupili. Pokud obchod vrátí peníze za nákup dřív, než výzva skončí, hra s tímto zvířetem se znovu pozastaví. Obrázky a videa vytvořené po nákupu zůstávají.",
+                "Vrácení peněz řeší App Store a Google Play podle svých vlastních pravidel; požádejte o ně v obchodě, kde jste nakoupili. Pokud obchod vrátí peníze za nákup dřív, než výzva skončí, hra s tímto zvířetem se znovu pozastaví. Obrázky a videa vytvořené po nákupu zůstávají. Kříženec nebo domácí kočka se přitom nepozastaví, ale vrátí se do bezplatného plánu: výzva skončí bez certifikátu, znovu platí pravidla bezplatného plánu a zvíře má opět základní sadu obrázků a videí. Pokud si pro toto zvíře výzvu později koupíte znovu, začne nových 12 týdnů od nového nákupu.",
                 "Po konci hry (útulek) nákup zvíře neodemkne; nová výzva znamená nové zvíře a nový nákup.",
                 "Přání (věci pro zvíře, až budou k dispozici): dítě může požádat, ale koupit může jen rodič, ve své aplikaci. Koupený předmět patří zvířeti, pro které byl koupen, a mění jen vzhled – neovlivňuje hru, skóre ani certifikát. Po konci hry nebo smazání zvířete zůstává nákup využitý a peníze se nevracejí. Pokud obchod peníze za nákup vrátí, předmět (u pamlsků nevyužité pamlsky) se odebere.",
                 "Pokud smažete zvíře, dítě nebo účet, zatímco koupená výzva ještě běží, nákup zůstává využitý: nepřesouvá se na jiné zvíře a smazání neznamená vrácení peněz. Aplikace vás nejprve upozorní a požádá o potvrzení.",
@@ -820,7 +825,7 @@ const cs: Dictionary = {
             {
               heading: "7. Oznámení",
               paragraphs: [
-                "Pokud je v zařízení povolíte, aplikace posílá push oznámení: připomínky pečovateli, upozornění rodičům, když zvíře nemá jídlo, vodu nebo čistotu, a zprávy o nemoci, konci hry a konci výzvy. Oznámení nikdy neobsahují jméno dítěte ani zvířete a během klidových hodin se neposílají. Povolení můžete kdykoli odvolat v nastavení zařízení; bez oznámení může pečovatel zmeškat povinnosti, což ovlivní hru i skóre.",
+                "Pokud je v zařízení povolíte, aplikace posílá push oznámení: připomínky pečovateli, upozornění rodičům, když zvíře nemá jídlo, vodu nebo čistotu, a zprávy o nemoci, konci hry a konci výzvy. Oznámení nikdy neobsahují jméno dítěte ani zvířete a během klidových hodin se neposílají. Povolení můžete kdykoli odvolat v nastavení zařízení; bez oznámení může pečovatel zmeškat povinnosti, což ovlivní hru i skóre. Rodiče navíc dostanou nejvýše jednou na bezplatné zvíře připomínku výzvy, když se o ně někdo staral alespoň 5 z jeho prvních 7 dnů.",
               ],
             },
             {

@@ -77,11 +77,12 @@ const sl: Dictionary = {
       name: "Mešanček",
       text: "Celotna simulacija z realističnim mešančkom.",
       features: [
-        "12-tedenska simulacija z resničnimi posledicami",
+        "Vsakodnevna skrb z resničnimi posledicami",
         "Pravi sprehodi, pravi koraki iz telefona",
         "Nadzorna plošča za starše, semafor in Care Score",
         "Tihe ure in gumb za premor",
         "Fotorealistična slika ljubljenčka in kratki videi",
+        "12-tedenski izziv lahko dodate pozneje – z istim ljubljenčkom",
       ],
       cta: "Začnite brezplačno",
     },
@@ -92,7 +93,7 @@ const sl: Dictionary = {
       text: "Za družine, ki želijo celotno izkušnjo s certifikatom na koncu.",
       features: [
         "Vse iz paketa Mešanček",
-        "Zahtevne pasme, na primer [border collie](breed:border_collie)",
+        "Katera koli pasma, na primer [border collie](breed:border_collie), ali mešanček in domača mačka",
         "Razpoloženja ljubljenčka kot AI videi",
         "Certifikat odgovornosti",
         "Ena cena, ko si sorojenci delijo ljubljenčka",
@@ -219,7 +220,7 @@ const sl: Dictionary = {
         },
       ],
       how: "Kako začnete: ustvarite račun kot starš, sebe dodajte kot skrbnika in se prijavite s 6-mestno kodo – na istem ali drugem telefonu.",
-      note: "Danes sta brezplačno na voljo mešanček in domača mačka, vse pasme psov in mačk iz [registra živali](page:animals) pa v 12-tedenskem izzivu.",
+      note: "Danes sta brezplačno na voljo mešanček in domača mačka, 12-tedenski izziv pa z njima ali s katero koli pasmo psov in mačk iz [registra živali](page:animals).",
       link: "Kako PetPrep uporabljate sami",
     },
     after: {
@@ -429,11 +430,11 @@ const sl: Dictionary = {
       meta: {
         title: "Cenik – PetPrep je brezplačen za začetek, 12-tedenski izziv 49,99 €",
         description:
-          "Mešanček je brezplačen za vedno. 12-tedenski PetPrep izziv stane 49,99 € na ljubljenčka kot enkratni nakup. Ena cena za sorojence s skupnim ljubljenčkom.",
+          "Mešanček je brezplačen za vedno. 12-tedenski PetPrep izziv stane 49,99 € na ljubljenčka kot enkratni nakup. Ena cena za sorojence s skupnim ljubljenčkom. Izziv lahko dodate tudi brezplačnemu ljubljenčku.",
       },
       eyebrow: "Cenik",
       title: "Preprosto in pošteno.",
-      lead: "Začnite brezplačno z mešančkom. Celoten 12-tedenski izziv kupite, ko ste pripravljeni – 12 tednov začne teči z nakupom.",
+      lead: "Začnite brezplačno z mešančkom. Celoten 12-tedenski izziv kupite, ko ste pripravljeni – 12 tednov začne teči z nakupom. Velja tudi za brezplačnega ljubljenčka, za katerega vaš otrok že skrbi.",
       blocks: [
         { type: "pricing" },
         {
@@ -457,7 +458,10 @@ const sl: Dictionary = {
           heading: "Vprašanja o ceni",
           items: [
             { q: "Je brezplačna različica res brezplačna?", a: "Da. Mešanček je brezplačen za vedno, s celotno simulacijo, pravimi sprehodi in nadzorno ploščo za starše." },
-            { q: "Kaj vključuje izziv?", a: "Zahtevne pasme, kot je [border collie](breed:border_collie), razpoloženja ljubljenčka v obliki AI videov, Certifikat odgovornosti na koncu in dostop za oba starša." },
+            { q: "Kaj vključuje izziv?", a: "Zahtevne pasme, kot je [border collie](breed:border_collie), razpoloženja ljubljenčka v obliki AI videov, Certifikat odgovornosti na koncu in dostop za oba starša. Izberete ga lahko tudi z mešančkom ali domačo mačko." },
+            { q: "Ali lahko brezplačnega ljubljenčka, ki ga otrok že ima, nadgradimo v izziv?", a: "Da, če je brezplačni mešanček ali domača mačka še v igri. V starševski aplikaciji izziv začnete na kartici otroka. Ljubljenček ostane isti: ime, videz, starost in naučeni ukazi. 12 tednov, Care Score in certifikat štejejo od nakupa; dnevi prej ostanejo v zgodovini z oznako „pred izzivom“ in ne štejejo. Cena je enaka: 49,99 € enkratno, brez naročnine. Mešančkov, ustvarjenih v zgodnji različici aplikacije, ni mogoče nadgraditi; aplikacija vam pove, če to velja za vašega." },
+            { q: "Se lahko ljubljenček z izziva vrne na brezplačni načrt?", a: "Sami ga ne morete preklopiti nazaj. Mešanček ali domača mačka se vrne na brezplačni načrt samo, če trgovina vrne kupnino; izziv se takrat konča brez certifikata. Če izziv pozneje kupite znova, začne teči novih 12 tednov." },
+            { q: "Me bo aplikacija silila v nakup?", a: "Ne. Če je otrok za brezplačnega ljubljenčka skrbel vsaj 5 od prvih 7 dni, dobite eno obvestilo in kartico na pregledu, ki vas spomni na izziv – enkrat na ljubljenčka, nikoli v tihih urah. Otrok ne vidi ne cen ne tega opomnika." },
             { q: "Ali sorojenci plačajo dvakrat?", a: "Ne. Otroci, ki si delijo enega ljubljenčka, plačajo eno ceno. Drugi ljubljenček v družini je ločen izziv." },
             { q: "Kako plačam?", a: "V aplikaciji, prek App Store ali Google Play. Morebitna vračila urejate v svojem računu trgovine." },
             { q: "Kaj so „Želje“ in ali otrok lahko sam kupi?", a: "Otrok lahko prosi za posteljo, sklede, igračo ali priboljške za ljubljenčka – največ tri odprte prošnje naenkrat. Vi dobite obvestilo in prošnjo potrdite z nakupom ali izberete „Ne zdaj“. Otrok ne vidi cen in v otroški aplikaciji ne more kupiti ničesar." },
@@ -489,7 +493,7 @@ const sl: Dictionary = {
             { q: "Ali si lahko sorojenci delijo ljubljenčka?", a: "Da. Vsak otrok podpiše svojo pogodbo, vsako dejanje se šteje tistemu, ki ga je naredil, in vsak dobi svoj pošten Care Score." },
             { q: "Kaj pa šola in spanje?", a: "Nastavite tihe ure. Ljubljenček se upočasni, obvestil ni, obroke, ki v celoti padejo v tihe ure, pa opravite vi." },
             { q: "Je za otroke strašljivo?", a: "Ne. Posledice so resnične, a nežne: ljubljenček gre k veterinarju ali v zavetišče, nikoli nič grafičnega, in vedno obstaja nov začetek." },
-            { q: "Katere živali so na voljo?", a: "Danes [psi](species:dog) in [mačke](species:cat): brezplačni mešanček in domača mačka ter v 12-tedenskem izzivu vse pasme iz [registra živali](page:animals), kjer so navedene tudi njihove potrebe z viri. Druge vrste so v načrtu." },
+            { q: "Katere živali so na voljo?", a: "Danes [psi](species:dog) in [mačke](species:cat): brezplačni mešanček in domača mačka ter 12-tedenski izziv z njima ali s katero koli pasmo iz [registra živali](page:animals), kjer so navedene tudi njihove potrebe z viri. Druge vrste so v načrtu." },
             { q: "V katerih jezikih?", a: "Danes v angleščini in slovenščini. Več jezikov dodajamo, ko PetPrep prihaja v nove države." },
             { q: "Kaj se zgodi, ko dobimo pravega ljubljenčka?", a: "PetPrep lahko postane AI asistent za vašega pravega ljubljenčka. Ta del je v razvoju." },
           ],
@@ -777,7 +781,7 @@ const sl: Dictionary = {
             {
               heading: "3. 12-tedenski izziv, Care Score in certifikat",
               items: [
-                "Izziv traja 12 tednov (84 dni programa) in se začne z nakupom; vsak skrbnik ima svoj zaključek. Čas, ko igra čaka na plačilo, se v 12 tednov ne šteje.",
+                "Izziv traja 12 tednov (84 dni programa) in se začne z nakupom; vsak skrbnik ima svoj zaključek. Čas, ko igra čaka na plačilo, se v 12 tednov ne šteje. Če brezplačnega ljubljenčka nadgradite v izziv, začne 12 tednov prav tako teči z nakupom; starost ljubljenčka se ne ponastavi, dnevi pred nakupom pa ostanejo vidni v zgodovini z oznako „pred izzivom“, vendar se ne štejejo ne v 12 tednov ne v Care Score ali certifikat.",
                 "Care Score (od 0 do 100) pokaže, kolikšen del pričakovanih rutin (hranjenje, voda, čiščenje, sprehod, vaja ukazov) je skrbnik opravil sam; vsaka bolezen ljubljenčka ga zniža. Čas, ko je igra ustavljena, ko je ljubljenček pri veterinarju, in tihe ure ne vplivajo negativno na skrbnikovo oceno.",
                 "Po 12 tednih se zapiše končna ocena, ki se pozneje ne spremeni; skrb po koncu izziva nanjo ne vpliva. Pri oceni 70 ali več lahko v aplikaciji ustvarite Certifikat odgovornosti (PDF), pri nižji oceni pa dobite poročilo o izzivu.",
                 "Če je hrana, voda ali čistoča 24 ur na 0 %, ljubljenčka „prevzame zavetišče“ (konec igre). Igra s tem ljubljenčkom se konča, certifikata ni, dobite poročilo o izzivu.",
@@ -789,10 +793,11 @@ const sl: Dictionary = {
               heading: "4. Brezplačne in plačljive funkcije, nakupi in vračila",
               items: [
                 "Mešanček in domača mačka sta brezplačna za vedno in sta način, da PetPrep preizkusite; brezplačnega preizkusa izziva ni. Brezplačni ljubljenček nima 12-tedenskega programa in certifikata, starš vidi zgodovino zadnjih 7 dni, ljubljenček pa ima osnovni nabor slik in videov.",
-                "12-tedenski PetPrep izziv s plačljivo pasmo je enkratni nakup (49,99 € v Sloveniji; trgovina pokaže ceno za vašo državo). En nakup je en izziv za enega ljubljenčka; vsak nov izziv z novim ljubljenčkom je nov nakup. Sorojenci, ki skrbijo za istega ljubljenčka, plačajo enkrat.",
+                "12-tedenski PetPrep izziv je enkratni nakup, ne naročnina (49,99 € v Sloveniji; trgovina pokaže ceno za vašo državo). V trenutni različici aplikacije ga lahko izberete s katero koli pasmo, tudi z mešančkom in domačo mačko. En nakup je en izziv za enega ljubljenčka; vsak nov izziv z novim ljubljenčkom je nov nakup. Sorojenci, ki skrbijo za istega ljubljenčka, plačajo enkrat.",
+                "Starš lahko brezplačnega mešančka ali domačo mačko, za katerega nekdo že skrbi, nadgradi v izziv po isti ceni in z istim ljubljenčkom. Nadgradnja ni mogoča po koncu igre in pri mešančkih, ustvarjenih v zgodnji različici aplikacije; aplikacija pokaže, kdaj to velja. Ljubljenčka na izzivu (tudi nadgrajenega ter mešančka ali domače mačke, izbranih za izziv) ni mogoče preklopiti nazaj na brezplačni načrt; mešančka ali domačo mačko nanj vrne samo vračilo kupnine (spodaj).",
                 "Nakup opravi starš v svoji aplikaciji prek App Store ali Google Play; v otroški aplikaciji nakupov ni. Plačilo obdela trgovina po svojih pogojih.",
                 "Ljubljenčka za izziv lahko ustvarite pred nakupom. Dokler izziv ni plačan, igra stoji: ljubljenček varno čaka, njegove potrebe ne padajo in nič se ne poslabša. Ko kupite, se igra nadaljuje, kjer je obstala.",
-                "Vračila kupnine urejata App Store in Google Play po svojih pravilih; zahtevo oddate pri trgovini, kjer ste kupili. Če trgovina kupnino vrne, preden je izziv končan, se igra tega ljubljenčka spet ustavi. Slike in videi, ustvarjeni po nakupu, ostanejo.",
+                "Vračila kupnine urejata App Store in Google Play po svojih pravilih; zahtevo oddate pri trgovini, kjer ste kupili. Če trgovina kupnino vrne, preden je izziv končan, se igra tega ljubljenčka spet ustavi. Slike in videi, ustvarjeni po nakupu, ostanejo. Mešanček ali domača mačka se pri tem ne ustavi, ampak se vrne na brezplačni načrt: izziv se konča brez certifikata, spet veljajo pravila brezplačnega načrta in ljubljenček ima spet osnovni nabor slik in videov. Če izziv za tega ljubljenčka pozneje kupite znova, začne teči novih 12 tednov od novega nakupa.",
                 "Po koncu igre (zavetišče) nakup ljubljenčka ne odklene; nov izziv je nov ljubljenček in nov nakup.",
                 "„Želje“ (stvari za ljubljenčka, ko so na voljo): otrok lahko prosi, kupi pa samo starš v svoji aplikaciji. Kupljena stvar pripada ljubljenčku, za katerega je kupljena, in je samo videz – ne vpliva na igro, oceno ali certifikat. Ob koncu igre ali izbrisu ljubljenčka nakup ostane porabljen in se ne vrne. Če trgovina kupnino vrne, se stvar (pri priboljških neporabljeni priboljški) odstrani.",
                 "Če izbrišete ljubljenčka, otroka ali račun, pri katerem je kupljen izziv še v teku, ostane nakup porabljen: ne prenese se na drugega ljubljenčka in izbris ne pomeni vračila kupnine. Aplikacija vas na to prej opozori in zahteva potrditev.",
@@ -820,7 +825,7 @@ const sl: Dictionary = {
             {
               heading: "7. Obvestila",
               paragraphs: [
-                "Če jih dovolite na napravi, aplikacija pošilja potisna obvestila: opomnike skrbniku, opozorila staršem, ko ljubljenček nima hrane, vode ali čistoče, ter obvestila o bolezni, koncu igre in koncu izziva. Obvestila ne vsebujejo imena otroka ali ljubljenčka in jih v tihih urah ni. Dovoljenje lahko kadar koli prekličete v nastavitvah naprave; brez obvestil lahko skrbnik zamudi rutine, kar vpliva na igro in oceno.",
+                "Če jih dovolite na napravi, aplikacija pošilja potisna obvestila: opomnike skrbniku, opozorila staršem, ko ljubljenček nima hrane, vode ali čistoče, ter obvestila o bolezni, koncu igre in koncu izziva. Obvestila ne vsebujejo imena otroka ali ljubljenčka in jih v tihih urah ni. Dovoljenje lahko kadar koli prekličete v nastavitvah naprave; brez obvestil lahko skrbnik zamudi rutine, kar vpliva na igro in oceno. Starši poleg tega za brezplačnega ljubljenčka največ enkrat dobijo opomnik o izzivu, ko je nekdo zanj skrbel vsaj 5 od prvih 7 dni.",
               ],
             },
             {

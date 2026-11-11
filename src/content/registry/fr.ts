@@ -41,7 +41,7 @@ const fr: RegistryCopy = {
     breedCount: (n) => `${n} ${s(n, "race", "races")} dans le registre`,
     open: "Voir les races",
     openA11y: (many) => `Voir les races : ${lc(many)}`,
-    freePlan: (name, activity) => `Formule gratuite : ${lc(name)} (${activity} à l’âge adulte). Il n’a pas de page de race.`,
+    freePlan: (name, activity) => `Formule gratuite : ${lc(name)} (${activity} à l’âge adulte) ; le Challenge de 12 semaines peut être ajouté plus tard. Il n’a pas de page de race.`,
     otherSpecies: "D’autres espèces sont prévues.",
     methodTitle: "Comment nous construisons ce registre",
     method: [
@@ -53,7 +53,7 @@ const fr: RegistryCopy = {
   },
   speciesStatus: { available: "Dans l’application", coming_soon: "Bientôt dans l’application", info_only: "À titre d’information" },
   availability: {
-    in_app: { label: "Dans l’application", text: "Disponible dans le PetPrep Challenge de 12 semaines (race payante)." },
+    in_app: { label: "Dans l’application", text: "Disponible dans le PetPrep Challenge de 12 semaines." },
     coming_soon: { label: "Bientôt dans l’application", text: "Prête et testée ; elle arrivera avec une prochaine version de l’application." },
     info_only: { label: "À titre d’information", text: "Présente dans le registre à titre d’information ; vous ne pouvez pas encore l’adopter dans l’application." },
   },

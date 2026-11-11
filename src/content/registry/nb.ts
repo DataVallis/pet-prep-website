@@ -95,7 +95,7 @@ const nb: RegistryCopy = {
     breedCount: (n) => `${n} ${s(n, "rase", "raser")} i leksikonet`,
     open: "Se rasene",
     openA11y: (many) => `Se rasene: ${lc(many)}`,
-    freePlan: (name, activity) => `Gratisplan: ${lc(name)} (${activity} som voksen). Den har ingen egen raseside.`,
+    freePlan: (name, activity) => `Gratisplan: ${lc(name)} (${activity} som voksen); 12-ukersutfordringen kan legges til senere. Den har ingen egen raseside.`,
     otherSpecies: "Flere dyr er planlagt.",
     methodTitle: "Slik bygger vi leksikonet",
     method: [
@@ -107,7 +107,7 @@ const nb: RegistryCopy = {
   },
   speciesStatus: { available: "I appen", coming_soon: "Snart i appen", info_only: "Bare til informasjon" },
   availability: {
-    in_app: { label: "I appen", text: "Finnes i PetPreps 12-ukersutfordring (betalt rase)." },
+    in_app: { label: "I appen", text: "Finnes i PetPreps 12-ukersutfordring." },
     coming_soon: { label: "Snart i appen", text: "Ferdig bygget og testet; kommer med en av de neste versjonene av appen." },
     info_only: { label: "Bare til informasjon", text: "Står i leksikonet til informasjon; du kan ikke adoptere den i appen ennå." },
   },

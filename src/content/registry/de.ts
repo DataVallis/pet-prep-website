@@ -32,7 +32,7 @@ const de: RegistryCopy = {
     breedCount: (n) => `${n} ${s(n, "Rasse", "Rassen")} im Register`,
     open: "Rassen ansehen",
     openA11y: (many) => `Rassen ansehen: ${many}`,
-    freePlan: (name, activity) => `Kostenloser Plan: ${name} (erwachsen: ${activity}). Dafür gibt es keine eigene Rassenseite.`,
+    freePlan: (name, activity) => `Kostenloser Plan: ${name} (erwachsen: ${activity}); die 12-wöchige Challenge können Sie später hinzufügen. Dafür gibt es keine eigene Rassenseite.`,
     otherSpecies: "Weitere Tierarten sind geplant.",
     methodTitle: "Wie wir dieses Register erstellen",
     method: [
@@ -44,7 +44,7 @@ const de: RegistryCopy = {
   },
   speciesStatus: { available: "In der App", coming_soon: "Bald in der App", info_only: "Nur zur Information" },
   availability: {
-    in_app: { label: "In der App", text: "Verfügbar in der 12-wöchigen PetPrep Challenge (kostenpflichtige Rasse)." },
+    in_app: { label: "In der App", text: "Verfügbar in der 12-wöchigen PetPrep Challenge." },
     coming_soon: { label: "Bald in der App", text: "Fertig und getestet; sie kommt mit einem der nächsten App-Updates." },
     info_only: { label: "Nur zur Information", text: "Zur Information im Register; in der App lässt sie sich noch nicht als Haustier wählen." },
   },

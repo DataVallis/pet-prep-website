@@ -77,11 +77,12 @@ const sv: Dictionary = {
       name: "Blandras",
       text: "Hela simuleringen med en verklighetstrogen blandras.",
       features: [
-        "12 veckors simulering med verkliga konsekvenser",
+        "Daglig skötsel med verkliga konsekvenser",
         "Riktiga promenader, mätta i riktiga steg från mobilen",
         "Föräldravy, trafikljus och Care Score",
         "Tysta timmar och en pausknapp",
         "Fotorealistisk bild av ditt djur och korta videor",
+        "Lägg till 12-veckorsutmaningen senare, med samma djur",
       ],
       cta: "Börja gratis",
     },
@@ -92,7 +93,7 @@ const sv: Dictionary = {
       text: "För familjer som vill ha hela upplevelsen och ett diplom på slutet.",
       features: [
         "Allt som ingår i Blandras",
-        "Krävande raser, till exempel [border collie](breed:border_collie)",
+        "Alla raser, till exempel [border collie](breed:border_collie), eller blandrashunden och huskatten",
         "Ditt djurs humör som AI-videor",
         "Ansvarsdiplom",
         "Ett pris för syskon som delar på ett djur",
@@ -219,7 +220,7 @@ const sv: Dictionary = {
         },
       ],
       how: "Så börjar du: skapa ett konto som förälder, lägg till dig själv som skötarprofil och logga in med den sexsiffriga koden – på samma mobil eller en annan.",
-      note: "Tillgängligt i dag: den kostnadsfria blandrashunden och huskatten, samt alla hund- och kattraser i [djurregistret](page:animals) med 12-veckorsutmaningen.",
+      note: "Tillgängligt i dag: den kostnadsfria blandrashunden och huskatten, samt 12-veckorsutmaningen med någon av dem eller med alla hund- och kattraser i [djurregistret](page:animals).",
       link: "Så använder du PetPrep på egen hand",
     },
     after: {
@@ -429,11 +430,11 @@ const sv: Dictionary = {
       meta: {
         title: "Priser – PetPrep är gratis att börja med, 49,99 € för 12-veckorsutmaningen",
         description:
-          "Blandrasen är gratis för alltid. 12-veckorsutmaningen PetPrep kostar 49,99 € per djur som engångsköp. Syskon som delar på ett djur betalar ett pris.",
+          "Blandrasen är gratis för alltid. 12-veckorsutmaningen PetPrep kostar 49,99 € per djur som engångsköp. Syskon som delar på ett djur betalar ett pris. Även som uppgradering av ditt kostnadsfria djur.",
       },
       eyebrow: "Priser",
       title: "Enkla, rättvisa priser.",
-      lead: "Börja gratis med en blandras. Köp hela 12-veckorsutmaningen när du är redo – de 12 veckorna börjar räknas när du köper.",
+      lead: "Börja gratis med en blandras. Köp hela 12-veckorsutmaningen när du är redo – de 12 veckorna börjar räknas när du köper. Det gäller också det kostnadsfria djur som ditt barn redan tar hand om.",
       blocks: [
         { type: "pricing" },
         {
@@ -457,7 +458,10 @@ const sv: Dictionary = {
           heading: "Frågor om priser",
           items: [
             { q: "Är gratisversionen verkligen gratis?", a: "Ja. Blandrasen är gratis för alltid, med hela simuleringen, riktiga promenader och föräldravyn." },
-            { q: "Vad ingår i utmaningen?", a: "Krävande raser som [border collie](breed:border_collie), ditt djurs humör som AI-videor, Ansvarsdiplomet på slutet och tillgång för båda föräldrarna." },
+            { q: "Vad ingår i utmaningen?", a: "Krävande raser som [border collie](breed:border_collie), ditt djurs humör som AI-videor, Ansvarsdiplomet på slutet och tillgång för båda föräldrarna. Du kan också välja den med blandrashunden eller huskatten." },
+            { q: "Kan vi uppgradera det kostnadsfria djur som mitt barn redan har?", a: "Ja, så länge den kostnadsfria blandrashunden eller huskatten fortfarande är med i spelet. Starta utmaningen från ditt barns kort i föräldraappen. Djuret förblir detsamma: namn, utseende, ålder och inlärda kommandon. De 12 veckorna, Care Score och diplomet räknas från köpet; tidigare dagar finns kvar i historiken, markerade som dagar före utmaningen, och räknas inte. Priset är detsamma: 49,99 € som engångsköp, utan prenumeration. Blandrashundar som skapades i en tidig version av appen kan inte uppgraderas; appen talar om ifall det gäller din." },
+            { q: "Kan ett djur i utmaningen gå tillbaka till gratisversionen?", a: "Inte på begäran. En blandrashund eller huskatt går bara tillbaka till gratisversionen om butiken återbetalar köpet; utmaningen avslutas då utan diplom. Köper du utmaningen igen senare börjar 12 nya veckor." },
+            { q: "Pressar appen mig att köpa?", a: "Nej. Om ditt barn har tagit hand om ett kostnadsfritt djur minst 5 av dess första 7 dagar får du en avisering och ett kort i din översikt om utmaningen – en gång per djur och aldrig under tysta timmar. Ditt barn ser varken priser eller den här påminnelsen." },
             { q: "Betalar syskon två gånger?", a: "Nej. Barn som delar på ett djur betalar ett pris. Ett andra djur i familjen är en separat utmaning." },
             { q: "Hur betalar jag?", a: "I appen, via App Store eller Google Play. Återbetalning sker via App Store eller Google Play." },
             { q: "Vad är Önskningar, och kan mitt barn köpa saker själv?", a: "Ditt barn kan önska sig en bädd, skålar, en leksak eller godbitar till sitt djur – upp till tre öppna önskningar åt gången. Du får en avisering och köper antingen saken eller väljer ”Inte nu”. Barnet ser aldrig priser och kan inte köpa något i barnappen." },
@@ -489,7 +493,7 @@ const sv: Dictionary = {
             { q: "Kan syskon dela på ett djur?", a: "Ja. Varje barn signerar sitt eget kontrakt, varje handling räknas till den som gjorde den och varje barn får sin egen rättvisa Care Score." },
             { q: "Hur blir det med skola och läggdags?", a: "Ställ in tysta timmar. Djuret saktar ner, inga påminnelser skickas och måltider som helt infaller under tysta timmar sköter du." },
             { q: "Är det läskigt för barn?", a: "Nej. Konsekvenserna är verkliga men varsamma: djuret hamnar hos veterinären eller på djurhemmet, aldrig något otäckt, och det finns alltid en ny start." },
-            { q: "Vilka djur finns?", a: "[Hundar](species:dog) och [katter](species:cat) i dag: en kostnadsfri blandrashund och huskatt, och i 12-veckorsutmaningen alla raser i [djurregistret](page:animals), där även rasernas källbelagda behov redovisas. Fler arter är planerade." },
+            { q: "Vilka djur finns?", a: "[Hundar](species:dog) och [katter](species:cat) i dag: en kostnadsfri blandrashund och huskatt, och 12-veckorsutmaningen med någon av dem eller med alla raser i [djurregistret](page:animals), där även rasernas källbelagda behov redovisas. Fler arter är planerade." },
             { q: "Vilka språk finns?", a: "Engelska och slovenska i dag. Fler språk kommer när PetPrep lanseras i nya länder." },
             { q: "Vad händer när vi har skaffat ett riktigt husdjur?", a: "PetPrep kan bli en AI-assistent för ditt riktiga husdjur. Den delen är under utveckling." },
           ],
@@ -777,7 +781,7 @@ const sv: Dictionary = {
             {
               heading: "3. 12-veckorsutmaningen, Care Score och diplomet",
               items: [
-                "Utmaningen pågår i 12 veckor (84 programdagar) och börjar med köpet; varje skötare har sitt eget slutdatum. Tid då spelet väntar på betalning räknas inte in i de 12 veckorna.",
+                "Utmaningen pågår i 12 veckor (84 programdagar) och börjar med köpet; varje skötare har sitt eget slutdatum. Tid då spelet väntar på betalning räknas inte in i de 12 veckorna. Om du uppgraderar ett kostnadsfritt djur till utmaningen börjar de 12 veckorna också med köpet; djurets ålder nollställs inte, och dagarna före köpet syns kvar i historiken, markerade som dagar före utmaningen, men räknas varken in i de 12 veckorna, i Care Score eller för diplomet.",
                 "Care Score (0–100) visar hur stor andel av de förväntade rutinerna (mat, vatten, städning, promenaden, ett träningspass) som skötaren har gjort själv; varje sjukdom hos djuret sänker den. Tid då spelet är stoppat, då djuret är hos veterinären och tysta timmar räknas aldrig mot skötaren.",
                 "Efter 12 veckor registreras en slutpoäng som inte ändras senare; skötsel efter utmaningen påverkar den inte. Med 70 poäng eller mer kan du skapa ett Ansvarsdiplom (PDF) i appen; under 70 får du en rapport om utmaningen.",
                 "Om mat, vatten eller renlighet står på 0 % i 24 timmar ”tas djuret till djurhemmet” (spelet är slut). Spelet med det djuret avslutas, det blir inget diplom och du får en rapport om utmaningen.",
@@ -789,10 +793,11 @@ const sv: Dictionary = {
               heading: "4. Kostnadsfria och betalda funktioner, köp och återbetalningar",
               items: [
                 "Blandrashunden och huskatten är gratis för alltid och är det sätt på vilket du provar PetPrep; det finns ingen kostnadsfri provperiod för utmaningen. Ett kostnadsfritt djur har inget 12-veckorsprogram och inget diplom, föräldern ser historiken för de senaste 7 dagarna och djuret har en grunduppsättning bilder och videor.",
-                "12-veckorsutmaningen PetPrep med en betald ras är ett engångsköp (49,99 € i Slovenien; butiken visar priset för ditt land). Ett köp är en utmaning för ett djur; varje ny utmaning med ett nytt djur är ett nytt köp. Syskon som tar hand om samma djur betalar en gång.",
+                "12-veckorsutmaningen PetPrep är ett engångsköp, inte en prenumeration (49,99 € i Slovenien; butiken visar priset för ditt land). I den aktuella versionen av appen kan du välja den med alla raser, även blandrashunden och huskatten. Ett köp är en utmaning för ett djur; varje ny utmaning med ett nytt djur är ett nytt köp. Syskon som tar hand om samma djur betalar en gång.",
+                "En förälder kan uppgradera en kostnadsfri blandrashund eller huskatt som någon redan tar hand om till utmaningen, till samma pris och med samma djur. Det går inte efter att spelet är slut eller för blandrashundar som skapades i en tidig version av appen; appen visar när det gäller. Ett djur i utmaningen (även ett uppgraderat djur och en blandrashund eller huskatt som valts för utmaningen) kan inte bytas tillbaka till gratisversionen; bara en återbetalning för tillbaka en blandrashund eller huskatt dit (se nedan).",
                 "En förälder köper i sin egen app via App Store eller Google Play; det finns inga köp i barnets app. Butiken hanterar betalningen enligt sina egna villkor.",
                 "Du kan skapa ett utmaningsdjur innan du köper. Tills utmaningen är betald är spelet pausat: djuret väntar tryggt, dess behov sjunker inte och inget blir sämre. När du köper fortsätter spelet där det stannade.",
-                "Återbetalningar hanteras av App Store och Google Play enligt deras egna regler; begär återbetalning i butiken där du köpte. Om butiken återbetalar ett köp innan utmaningen är klar pausas spelet med det djuret igen. Bilder och videor som skapats efter köpet finns kvar.",
+                "Återbetalningar hanteras av App Store och Google Play enligt deras egna regler; begär återbetalning i butiken där du köpte. Om butiken återbetalar ett köp innan utmaningen är klar pausas spelet med det djuret igen. Bilder och videor som skapats efter köpet finns kvar. En blandrashund eller huskatt pausas inte, utan går tillbaka till gratisversionen: utmaningen avslutas utan diplom, gratisversionens regler gäller igen och djuret visar åter grunduppsättningen bilder och videor. Köper du utmaningen igen senare för det djuret börjar 12 nya veckor från det nya köpet.",
                 "När spelet är slut (djurhemmet) låser ett köp inte upp djuret; en ny utmaning är ett nytt djur och ett nytt köp.",
                 "Önskningar (saker till djuret, när de finns tillgängliga): ett barn kan önska, men bara en förälder kan köpa, i sin egen app. En köpt sak hör till djuret den köptes till och påverkar bara utseendet – den påverkar inte spelet, poängen eller diplomet. När spelet är slut eller djuret raderas förblir köpet förbrukat och återbetalas inte. Om butiken återbetalar köpet tas saken bort (för godbitar: de oanvända godbitarna).",
                 "Om du raderar ett djur, ett barn eller kontot medan en köpt utmaning fortfarande pågår förblir köpet förbrukat: det flyttas inte till ett annat djur och radering är ingen återbetalning. Appen varnar dig först och ber dig bekräfta.",
@@ -820,7 +825,7 @@ const sv: Dictionary = {
             {
               heading: "7. Aviseringar",
               paragraphs: [
-                "Om du tillåter dem på enheten skickar appen push-aviseringar: påminnelser till skötaren, larm till föräldrar när ett djur saknar mat, vatten eller renlighet, samt besked om sjukdom, att spelet är slut och att utmaningen är avslutad. Aviseringar innehåller aldrig barnets eller djurets namn och skickas inte under tysta timmar. Du kan när som helst återkalla behörigheten i enhetens inställningar; utan aviseringar kan en skötare missa rutiner, vilket påverkar spelet och poängen.",
+                "Om du tillåter dem på enheten skickar appen push-aviseringar: påminnelser till skötaren, larm till föräldrar när ett djur saknar mat, vatten eller renlighet, samt besked om sjukdom, att spelet är slut och att utmaningen är avslutad. Aviseringar innehåller aldrig barnets eller djurets namn och skickas inte under tysta timmar. Du kan när som helst återkalla behörigheten i enhetens inställningar; utan aviseringar kan en skötare missa rutiner, vilket påverkar spelet och poängen. Föräldrar får dessutom högst en gång per kostnadsfritt djur en påminnelse om utmaningen när någon har tagit hand om det minst 5 av dess första 7 dagar.",
               ],
             },
             {

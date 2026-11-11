@@ -41,7 +41,7 @@ const sl: RegistryCopy = {
     breedCount: (n) => `${n} ${form(n, "pasma", "pasmi", "pasme", "pasem")} v registru`,
     open: "Oglejte si pasme",
     openA11y: (many) => `Oglejte si pasme: ${many.toLowerCase()}`,
-    freePlan: (name, activity) => `Brezplačna različica: ${name.toLowerCase()} (pri odraslem: ${activity}). Nima strani v registru.`,
+    freePlan: (name, activity) => `Brezplačna različica: ${name.toLowerCase()} (pri odraslem: ${activity}); 12-tedenski izziv lahko dodate pozneje. Nima strani v registru.`,
     otherSpecies: "Druge živali so v načrtu.",
     methodTitle: "Kako nastaja ta register",
     method: [
@@ -53,7 +53,7 @@ const sl: RegistryCopy = {
   },
   speciesStatus: { available: "V aplikaciji", coming_soon: "Kmalu v aplikaciji", info_only: "Samo informativno" },
   availability: {
-    in_app: { label: "V aplikaciji", text: "Na voljo v 12-tedenskem izzivu PetPrep (plačljiva pasma)." },
+    in_app: { label: "V aplikaciji", text: "Na voljo v 12-tedenskem izzivu PetPrep." },
     coming_soon: { label: "Kmalu v aplikaciji", text: "Pasma je izdelana in preizkušena; v aplikaciji bo na voljo s katero od prihodnjih različic." },
     info_only: { label: "Samo informativno", text: "Pasma je v registru zaradi informacij; v aplikaciji je še ni mogoče izbrati." },
   },

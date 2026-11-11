@@ -77,11 +77,12 @@ const es: Dictionary = {
       name: "Perro mestizo",
       text: "La simulación completa con un perro mestizo que parece de verdad.",
       features: [
-        "Simulación de 12 semanas con consecuencias reales",
+        "Cuidado diario con consecuencias reales",
         "Paseos reales, contados en pasos reales con el móvil",
         "Panel para padres, semáforo y Care Score",
         "Horas de silencio y botón de pausa",
         "Imagen fotorrealista de tu mascota y vídeos cortos",
+        "Añade el reto de 12 semanas más adelante, con la misma mascota",
       ],
       cta: "Empieza gratis",
     },
@@ -92,7 +93,7 @@ const es: Dictionary = {
       text: "Para las familias que quieren la experiencia completa y un certificado al final.",
       features: [
         "Todo lo incluido en Perro mestizo",
-        "Razas exigentes, como el [border collie](breed:border_collie)",
+        "Cualquier raza, como el [border collie](breed:border_collie), o el perro mestizo y el gato doméstico",
         "Los estados de ánimo de tu mascota en vídeos con IA",
         "Certificado de responsabilidad",
         "Un solo precio cuando los hermanos comparten mascota",
@@ -219,7 +220,7 @@ const es: Dictionary = {
         },
       ],
       how: "Cómo empezar: crea una cuenta como padre o madre, añádete como perfil de cuidador y entra con el código de 6 dígitos, en el mismo móvil o en otro.",
-      note: "Ya disponibles: el perro mestizo y el gato doméstico gratuitos, y todas las razas de perro y de gato del [registro de animales](page:animals) en el reto de 12 semanas.",
+      note: "Ya disponibles: el perro mestizo y el gato doméstico gratuitos, y el reto de 12 semanas con cualquiera de los dos o con cualquier raza de perro o de gato del [registro de animales](page:animals).",
       link: "Cómo usar PetPrep por tu cuenta",
     },
     after: {
@@ -429,11 +430,11 @@ const es: Dictionary = {
       meta: {
         title: "Precios: PetPrep es gratis para empezar; el reto de 12 semanas cuesta 49,99 €",
         description:
-          "La mascota mestiza es gratis para siempre. El Reto PetPrep de 12 semanas cuesta 49,99 € por mascota, en un único pago. Un solo precio para los hermanos que comparten mascota.",
+          "La mascota mestiza es gratis para siempre. El Reto PetPrep de 12 semanas cuesta 49,99 € por mascota, en un único pago. Un solo precio para los hermanos que comparten mascota. También como mejora de tu mascota gratuita.",
       },
       eyebrow: "Precios",
       title: "Precios sencillos y justos.",
-      lead: "Empieza gratis con una mascota mestiza. Compra el reto completo de 12 semanas cuando quieras: las 12 semanas empiezan con la compra.",
+      lead: "Empieza gratis con una mascota mestiza. Compra el reto completo de 12 semanas cuando quieras: las 12 semanas empiezan con la compra. También sirve para la mascota gratuita que tu hijo ya cuida.",
       blocks: [
         { type: "pricing" },
         {
@@ -457,7 +458,10 @@ const es: Dictionary = {
           heading: "Preguntas sobre precios",
           items: [
             { q: "¿La versión gratuita es gratis de verdad?", a: "Sí. La mascota mestiza es gratis para siempre, con la simulación completa, paseos reales y el panel para padres." },
-            { q: "¿Qué incluye el reto?", a: "Razas exigentes como el [border collie](breed:border_collie), los estados de ánimo de tu mascota en vídeos con IA, el Certificado de responsabilidad al final y acceso para ambos padres." },
+            { q: "¿Qué incluye el reto?", a: "Razas exigentes como el [border collie](breed:border_collie), los estados de ánimo de tu mascota en vídeos con IA, el Certificado de responsabilidad al final y acceso para ambos padres. También puedes elegirlo con el perro mestizo o el gato doméstico." },
+            { q: "¿Podemos pasar al reto con la mascota gratuita que ya tiene mi hijo?", a: "Sí, mientras el perro mestizo o el gato doméstico gratuito siga en el juego. En la app de padres, empieza el reto desde la tarjeta de tu hijo. La mascota sigue siendo la misma: nombre, aspecto, edad y órdenes aprendidas. Las 12 semanas, el Care Score y el certificado cuentan desde la compra; los días anteriores siguen en el historial, marcados como anteriores al reto, y no cuentan. El precio es el mismo: 49,99 € en un solo pago, sin suscripción. Los perros mestizos creados en una primera versión de la app no se pueden pasar al reto; la app te avisa si es tu caso." },
+            { q: "¿Puede una mascota del reto volver al plan gratuito?", a: "No por decisión propia. Un perro mestizo o un gato doméstico solo vuelve al plan gratuito si la tienda reembolsa la compra; entonces el reto termina, sin certificado. Si vuelves a comprar el reto más adelante, empiezan 12 semanas nuevas." },
+            { q: "¿La app me presionará para comprar?", a: "No. Si tu hijo ha cuidado de una mascota gratuita al menos 5 de sus primeros 7 días, recibes una notificación y una tarjeta en tu panel sobre el reto: una sola vez por mascota y nunca en las horas de silencio. Tu hijo no ve ni precios ni este recordatorio." },
             { q: "¿Los hermanos pagan dos veces?", a: "No. Los niños que comparten una mascota pagan un solo precio. Una segunda mascota en la familia es un reto aparte." },
             { q: "¿Cómo se paga?", a: "En la app, a través de App Store o Google Play. Los reembolsos se gestionan desde la cuenta de tu tienda." },
             { q: "¿Qué son los Deseos? ¿Puede mi hijo comprar cosas por su cuenta?", a: "Tu hijo puede pedir una cama, comedero y bebedero, un juguete o premios para su mascota, con un máximo de tres peticiones abiertas a la vez. Recibes una notificación y lo compras o eliges «Not now» («Ahora no»). Tu hijo nunca ve los precios y no puede comprar nada en la app infantil." },
@@ -489,7 +493,7 @@ const es: Dictionary = {
             { q: "¿Pueden los hermanos compartir una mascota?", a: "Sí. Cada niño firma su propio contrato, cada acción se atribuye a quien la hizo y cada niño recibe su propio Care Score justo." },
             { q: "¿Y el colegio y la hora de dormir?", a: "Configura las horas de silencio. La mascota va más despacio, no se envía nada y las comidas que caen enteras en las horas de silencio corren de tu cuenta." },
             { q: "¿Da miedo a los niños?", a: "No. Las consecuencias son reales pero suaves: la mascota va al veterinario o a la protectora, nunca hay nada desagradable y siempre hay una nueva oportunidad." },
-            { q: "¿Qué mascotas hay disponibles?", a: "Hoy, [perros](species:dog) y [gatos](species:cat): un perro mestizo y un gato doméstico gratuitos y, en el reto de 12 semanas, todas las razas del [registro de animales](page:animals), que también recoge sus necesidades con fuentes. Hay más especies previstas." },
+            { q: "¿Qué mascotas hay disponibles?", a: "Hoy, [perros](species:dog) y [gatos](species:cat): un perro mestizo y un gato doméstico gratuitos y el reto de 12 semanas con cualquiera de los dos o con cualquier raza del [registro de animales](page:animals), que también recoge sus necesidades con fuentes. Hay más especies previstas." },
             { q: "¿En qué idiomas?", a: "Hoy la app está en inglés y esloveno. Llegarán más idiomas a medida que PetPrep se lance en nuevos países." },
             { q: "¿Qué pasa cuando tengamos una mascota real?", a: "PetPrep puede convertirse en un asistente de IA para tu mascota real. Esta parte está en desarrollo." },
           ],
@@ -777,7 +781,7 @@ const es: Dictionary = {
             {
               heading: "3. El reto de 12 semanas, el Care Score y el certificado",
               items: [
-                "El reto dura 12 semanas (84 días de programa) y empieza con la compra; cada cuidador tiene su propia fecha de finalización. El tiempo durante el que el juego espera el pago no cuenta para las 12 semanas.",
+                "El reto dura 12 semanas (84 días de programa) y empieza con la compra; cada cuidador tiene su propia fecha de finalización. El tiempo durante el que el juego espera el pago no cuenta para las 12 semanas. Si pasas una mascota gratuita al reto, las 12 semanas también empiezan con la compra; la edad de la mascota no se reinicia, y los días anteriores a la compra siguen visibles en el historial, marcados como anteriores al reto, pero no cuentan ni para las 12 semanas ni para el Care Score ni para el certificado.",
                 "El Care Score (0–100) muestra qué parte de las rutinas previstas (comida, agua, limpieza, el paseo, una sesión de adiestramiento) ha realizado el propio cuidador; cada enfermedad de la mascota lo reduce. El tiempo en que el juego está detenido o la mascota está en el veterinario, así como las horas de silencio, nunca cuentan en contra del cuidador.",
                 "Tras 12 semanas se registra una puntuación final que ya no cambia; el cuidado posterior al reto no la afecta. Con una puntuación de 70 o más puedes crear en la aplicación un Certificado de responsabilidad (PDF); por debajo de 70 recibes un informe del reto.",
                 "Si la comida, el agua o la limpieza se mantienen al 0 % durante 24 horas, la protectora se lleva a la mascota (fin del juego). El juego con esa mascota termina, no hay certificado y recibes un informe del reto.",
@@ -789,10 +793,11 @@ const es: Dictionary = {
               heading: "4. Funciones gratuitas y de pago, compras y reembolsos",
               items: [
                 "El perro mestizo y el gato doméstico son gratuitos para siempre y son la forma de probar PetPrep; no existe una prueba gratuita del reto. Una mascota gratuita no tiene programa de 12 semanas ni certificado, el padre o la madre ve el historial de los últimos 7 días y la mascota tiene un conjunto básico de imágenes y vídeos.",
-                "El Reto PetPrep de 12 semanas con una raza de pago es una compra única (49,99 € en Eslovenia; la tienda muestra el precio para tu país). Una compra equivale a un reto para una mascota; cada nuevo reto con una nueva mascota es una nueva compra. Los hermanos que cuidan de la misma mascota pagan una sola vez.",
+                "El Reto PetPrep de 12 semanas es una compra única, no una suscripción (49,99 € en Eslovenia; la tienda muestra el precio para tu país). En la versión actual de la app puedes elegirlo con cualquier raza, incluidos el perro mestizo y el gato doméstico. Una compra equivale a un reto para una mascota; cada nuevo reto con una nueva mascota es una nueva compra. Los hermanos que cuidan de la misma mascota pagan una sola vez.",
+                "Un padre o una madre puede pasar al reto un perro mestizo o un gato doméstico gratuito que alguien ya cuida, al mismo precio y con la misma mascota. No es posible tras un fin del juego ni con perros mestizos creados en una primera versión de la app; la app lo indica cuando es el caso. Una mascota del reto (también una que se ha pasado al reto y un perro mestizo o gato doméstico elegido para el reto) no puede volver al plan gratuito; solo un reembolso devuelve a él a un perro mestizo o un gato doméstico (ver más abajo).",
                 "El padre o la madre compra en su propia aplicación a través de App Store o Google Play; en la aplicación del niño no hay compras. La tienda procesa el pago según sus propias condiciones.",
                 "Puedes crear una mascota del reto antes de comprarlo. Hasta que el reto esté pagado, el juego está en pausa: la mascota espera a salvo, sus necesidades no bajan y nada empeora. En cuanto compras, el juego continúa donde se detuvo.",
-                "Los reembolsos los gestionan App Store y Google Play según sus propias normas; solicítalo en la tienda donde hiciste la compra. Si la tienda reembolsa una compra antes de que termine el reto, el juego de esa mascota vuelve a quedar en pausa. Las imágenes y los vídeos creados después de la compra se conservan.",
+                "Los reembolsos los gestionan App Store y Google Play según sus propias normas; solicítalo en la tienda donde hiciste la compra. Si la tienda reembolsa una compra antes de que termine el reto, el juego de esa mascota vuelve a quedar en pausa. Las imágenes y los vídeos creados después de la compra se conservan. Un perro mestizo o un gato doméstico no se pausa, sino que vuelve al plan gratuito: el reto termina sin certificado, vuelven a aplicarse las reglas del plan gratuito y la mascota muestra otra vez el conjunto básico de imágenes y vídeos. Si más adelante vuelves a comprar el reto para esa mascota, empiezan 12 semanas nuevas con la nueva compra.",
                 "Tras un fin del juego (protectora), una compra no desbloquea la mascota; un nuevo reto es una nueva mascota y una nueva compra.",
                 "Deseos (cosas para la mascota, cuando estén disponibles): un niño puede pedirlas, pero solo el padre o la madre puede comprarlas, en su propia aplicación. Un artículo comprado pertenece a la mascota para la que se compró y es solo estético: no afecta al juego, a la puntuación ni al certificado. Tras un fin del juego o cuando se elimina la mascota, la compra se considera consumida y no se reembolsa. Si la tienda reembolsa la compra, el artículo (en el caso de los premios, los premios no usados) se retira.",
                 "Si eliminas una mascota, un niño o la cuenta mientras un reto comprado sigue en curso, la compra se considera consumida: no se traslada a otra mascota y la eliminación no supone un reembolso. La aplicación te avisa antes y te pide que lo confirmes.",
@@ -820,7 +825,7 @@ const es: Dictionary = {
             {
               heading: "7. Notificaciones",
               paragraphs: [
-                "Si lo permites en el dispositivo, la aplicación envía notificaciones push: recordatorios al cuidador, avisos a los padres cuando una mascota se queda sin comida, agua o limpieza, y noticias sobre enfermedades, el fin del juego y el final del reto. Las notificaciones nunca contienen el nombre del niño ni el de la mascota y no se envían durante las horas de silencio. Puedes retirar el permiso en cualquier momento en los ajustes del dispositivo; sin notificaciones, un cuidador puede saltarse rutinas, lo que afecta al juego y a la puntuación.",
+                "Si lo permites en el dispositivo, la aplicación envía notificaciones push: recordatorios al cuidador, avisos a los padres cuando una mascota se queda sin comida, agua o limpieza, y noticias sobre enfermedades, el fin del juego y el final del reto. Las notificaciones nunca contienen el nombre del niño ni el de la mascota y no se envían durante las horas de silencio. Puedes retirar el permiso en cualquier momento en los ajustes del dispositivo; sin notificaciones, un cuidador puede saltarse rutinas, lo que afecta al juego y a la puntuación. Además, los padres reciben como máximo una vez por mascota gratuita un recordatorio sobre el reto cuando alguien la ha cuidado al menos 5 de sus primeros 7 días.",
               ],
             },
             {
