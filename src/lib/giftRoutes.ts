@@ -26,3 +26,8 @@ export function giftThanksParams(locale: Locale, enabled: boolean = isGiftEnable
 export function giftSitemapPaths(enabled: boolean = isGiftEnabled(), hasBuyUrl: boolean = giftBuyUrl() !== null): Record<Locale, string> | null {
   return enabled && hasBuyUrl ? giftPathsOf("gift") : null;
 }
+
+/** Static params of `/auth/return` (M6-S01b): the one English-tree page, only while the switch is on. Never in the sitemap. */
+export function authReturnParams(enabled: boolean = isGiftEnabled()): { locale: Locale }[] {
+  return enabled ? [{ locale: "en" }] : [];
+}
