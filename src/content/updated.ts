@@ -12,7 +12,7 @@ export const pageUpdated: Record<RouteKey, string> = {
   afterAdoption: "2026-10-09",
   pricing: "2026-11-11",
   faq: "2026-11-11",
-  partners: "2026-10-09",
+  partners: "2026-11-11",
   investors: "2026-10-10",
   contact: "2026-10-10",
   privacy: "2026-11-11",
