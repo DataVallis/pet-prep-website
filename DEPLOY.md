@@ -44,6 +44,20 @@ petprep.si with the **next daily deploy — at most ~1 day later** (plus any Git
 
 Need it live now (a launch, a fix)? Run workflow → target `production`.
 
+## Build-time switches (gift voucher, M6-S01)
+
+`NEXT_PUBLIC_*` values are inlined when the site is built, so changing one needs a new build. Production is built by CI from the committed `.env.production`:
+
+| value | meaning |
+|---|---|
+| `NEXT_PUBLIC_FEATURE_GIFT` | exactly `1` = gift, thank-you and redeem pages on; anything else = off (404, no sitemap entry) |
+| `NEXT_PUBLIC_LS_GIFT_URL` | Lemon Squeezy checkout URL of the gift product |
+| `NEXT_PUBLIC_PETPREP_API_URL` | API for the redeem form, default `https://api.petprep.si` |
+
+- **Flip = a pull request** that edits `.env.production`. Do not use a repository variable: CI reuses the image of a green run per git tree (`plan` job), so an unchanged tree would ship the old image.
+- The manual full build (`Dockerfile`, `deploy/deploy.sh`) reads the same `.env.production` (`.dockerignore` lets that one file through); there are no build args for these values.
+- Order for go-live (David): app in the stores → Lemon Squeezy product + webhook + server env → server switch "Gift vouchers" on → this switch. Then check `/gift`, `/redeem` and that `sitemap.xml` lists `/gift` and `/sl/darilni-bon` only.
+
 ## Disk (every deploy)
 
 `deploy/deploy.sh` (same keep rule as the API's `prune_release_images`, pet-prep DEPLOYMENT.md D31):

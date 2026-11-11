@@ -3,6 +3,8 @@ import { locales, sitePageKeys, pathFor, type Locale, type RouteKey } from "@/i1
 import { absoluteUrl } from "@/lib/site";
 import { pageUpdated } from "@/content/updated";
 import { alternatesFor, pathAlternates } from "@/lib/seo";
+import { giftSitemapPaths } from "@/lib/giftRoutes";
+import { giftUpdated } from "@/lib/gift";
 import { promiseKitConfig, promiseKitSitemapEntries } from "@/lib/promiseKit";
 import { registry } from "@/content/registry/registry";
 import { emergencyHref } from "@/components/care/CarePages";
@@ -88,6 +90,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: pathAlternates(each((l) => coloringPageHref(l, p))) },
     })),
   );
+  // Gift voucher sales page (M6-S01): only while NEXT_PUBLIC_FEATURE_GIFT=1; the other gift pages are never listed.
+  const giftPaths = giftSitemapPaths();
+  const gift = giftPaths
+    ? (["en", "sl"] as const).map((locale) => ({
+        url: absoluteUrl(giftPaths[locale]),
+        lastModified: new Date(giftUpdated),
+        changeFrequency: "monthly" as const,
+        priority: 0.6,
+        alternates: { languages: { en: absoluteUrl(giftPaths.en), sl: absoluteUrl(giftPaths.sl), "x-default": absoluteUrl(giftPaths.en) } },
+      }))
+    : [];
   // Pet Promise Kit (M6-S02): English and Slovenian only, and only while NEXT_PUBLIC_FEATURE_PROMISE_KIT=1.
   const promiseKit = promiseKitSitemapEntries(promiseKitConfig().enabled).map((e) => ({
     url: absoluteUrl(e.path),
@@ -96,5 +109,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
     alternates: { languages: Object.fromEntries(Object.entries(e.languages).map(([k, v]) => [k, absoluteUrl(v)])) },
   }));
-  return [...pages, ...register, ...care, ...emergency, ...coloring, ...promiseKit];
+  return [...pages, ...register, ...care, ...emergency, ...coloring, ...gift, ...promiseKit];
 }

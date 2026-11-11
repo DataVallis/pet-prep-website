@@ -10,6 +10,8 @@ WORKDIR /app
 ENV NEXT_TELEMETRY_DISABLED=1
 ARG NEXT_PUBLIC_SITE_URL=https://petprep.si
 ENV NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL}
+# Gift voucher switches (NEXT_PUBLIC_FEATURE_GIFT, NEXT_PUBLIC_LS_GIFT_URL, NEXT_PUBLIC_PETPREP_API_URL) come from the
+# committed .env.production, which `next build` reads (README → Gift voucher); no build args, so there is one source.
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 # /investors prerenders the "12 Weeks" episode and view counts at build time; the read-only YouTube key

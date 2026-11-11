@@ -9,6 +9,7 @@ import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { ConsentDefaults, GoogleAnalytics, GoogleTagManager } from "@/components/ConsentAndAnalytics";
 import { Kockica } from "@/components/Kockica";
+import { PrivatePageGate } from "@/components/gift/PrivatePageGate";
 import { fontClasses } from "../fonts";
 import "../globals.css";
 
@@ -60,8 +61,11 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
           {children}
         </main>
         <Footer locale={locale} dict={dict} />
-        <GoogleAnalytics />
-        <GoogleTagManager />
+        {/* No third-party scripts on the gift thanks / redeem pages (code and e-mail are in the DOM): M6-S01. */}
+        <PrivatePageGate>
+          <GoogleAnalytics />
+          <GoogleTagManager />
+        </PrivatePageGate>
       </body>
     </html>
   );
