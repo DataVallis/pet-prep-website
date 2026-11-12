@@ -500,6 +500,7 @@ const pl: RegistryCopy = {
     open_fontanelle: "W rasie może występować otwarte ciemiączko, czyli miękkie miejsce na czaszce, które nie zamyka się całkowicie.",
     collapsing_trachea: "W rasie może występować zapadanie się tchawicy, czyli osłabienie tchawicy, które może powodować kaszel i trudności w oddychaniu.",
     gm1_gangliosidosis: "W rasie może występować gangliozydoza GM1, dziedziczna choroba układu nerwowego; test DNA rodziców pozwala ją wykluczyć.",
+    gm2_gangliosidosis: "W rasie stwierdzono gangliozydozę GM2, śmiertelną dziedziczną chorobę układu nerwowego.",
     addisons_disease: "W rasie może występować choroba Addisona, czyli niedobór hormonów nadnerczy.",
     protein_losing_disease: "W rasie mogą występować choroby nerek lub jelit z utratą białka, które mogą powodować biegunkę i chudnięcie.",
     diabetes_mellitus: "W rasie może występować cukrzyca – organizm nie potrafi prawidłowo regulować poziomu cukru we krwi.",

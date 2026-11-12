@@ -487,6 +487,7 @@ const it: RegistryCopy = {
     open_fontanelle: "Nella razza può presentarsi una fontanella aperta, un punto morbido del cranio che non si chiude del tutto.",
     collapsing_trachea: "Nella razza può presentarsi il collasso della trachea, una debolezza della trachea che può causare tosse e difficoltà respiratorie.",
     gm1_gangliosidosis: "Nella razza può presentarsi la gangliosidosi GM1, una malattia ereditaria del sistema nervoso; un test del DNA dei genitori può escluderla.",
+    gm2_gangliosidosis: "Nella razza è stata riscontrata la gangliosidosi GM2, una malattia ereditaria mortale del sistema nervoso.",
     addisons_disease: "Nella razza può presentarsi il morbo di Addison, una carenza di ormoni prodotti dalle ghiandole surrenali.",
     protein_losing_disease: "Nella razza possono presentarsi malattie dei reni o dell’intestino con perdita di proteine, che possono causare diarrea e perdita di peso.",
     diabetes_mellitus: "Nella razza può presentarsi il diabete mellito, in cui l’organismo non riesce a regolare correttamente lo zucchero nel sangue.",

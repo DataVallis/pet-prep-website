@@ -605,6 +605,7 @@ const fi: RegistryCopy = {
     open_fontanelle: "Rodulla voi esiintyä avointa aukiletta, kallon pehmeää kohtaa, joka ei sulkeudu kokonaan.",
     collapsing_trachea: "Rodulla voi esiintyä henkitorven kasaanpainumista, henkitorven heikkoutta, joka voi aiheuttaa yskää ja hengitysvaikeuksia.",
     gm1_gangliosidosis: "Rodulla voi esiintyä GM1-gangliosidoosia, perinnöllistä hermoston sairautta; vanhempien DNA-testillä se voidaan sulkea pois.",
+    gm2_gangliosidosis: "Rodulla on todettu GM2-gangliosidoosia, kuolemaan johtavaa perinnöllistä hermoston sairautta.",
     addisons_disease: "Rodulla voi esiintyä Addisonin tautia, lisämunuaisten hormonien puutetta.",
     protein_losing_disease: "Rodulla voi esiintyä munuaisten tai suoliston proteiinia hukkaavia sairauksia, jotka voivat aiheuttaa ripulia ja laihtumista.",
     diabetes_mellitus: "Rodulla voi esiintyä diabetesta (diabetes mellitus), jossa elimistö ei pysty säätelemään verensokeriaan kunnolla.",

@@ -559,6 +559,7 @@ const nb: RegistryCopy = {
     open_fontanelle: "Åpen fontanelle, et mykt punkt på skallen som ikke lukker seg helt, kan forekomme i rasen.",
     collapsing_trachea: "Trakeakollaps, en svakhet i luftrøret som kan gi hoste og pustevansker, kan forekomme i rasen.",
     gm1_gangliosidosis: "GM1-gangliosidose, en arvelig sykdom i nervesystemet, kan forekomme i rasen; en DNA-test av foreldrene kan utelukke den.",
+    gm2_gangliosidosis: "GM2-gangliosidose, en dødelig arvelig sykdom i nervesystemet, er funnet i rasen.",
     addisons_disease: "Addisons sykdom, mangel på hormoner fra binyrene, kan forekomme i rasen.",
     protein_losing_disease: "Proteintapende sykdommer i nyrene eller tarmen, som kan gi diaré og vekttap, kan forekomme i rasen.",
     diabetes_mellitus: "Diabetes mellitus (sukkersyke), der kroppen ikke klarer å regulere blodsukkeret ordentlig, kan forekomme i rasen.",
