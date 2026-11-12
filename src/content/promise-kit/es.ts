@@ -144,7 +144,7 @@ export const es: KitCopy = {
       "Algunos «no lo sé»: es vuestra tarea. Informaos y volved a responder.",
       "Un «no» es información, no un fracaso. Puede significar «todavía no», «otra mascota» o «no», y cada una de esas respuestas es un buen resultado de una decisión meditada.",
     ],
-    pointer: "Las preguntas sobre salud, alergias o sobre lo que necesita un animal son para un médico, un veterinario o una protectora, no para esta hoja.",
+    pointer: "Las preguntas sobre salud, alergias o sobre lo que necesita una mascota son para un médico, un veterinario o una protectora, no para esta hoja.",
   },
   award: {
     title: "Diploma del primer mes",
@@ -158,7 +158,7 @@ export const es: KitCopy = {
   },
   next: {
     title: "¿Y ahora qué?",
-    lead: "El papel es un buen comienzo. Pero no es lo mismo que un animal de verdad en casa, y el siguiente paso es una forma de saber más.",
+    lead: "El papel es un buen comienzo. Pero no es lo mismo que una mascota de verdad en casa, y el siguiente paso es una forma de saber más.",
     steps: [
       { title: "Imprimid y hablad", text: "Con la conversación en familia y la Promesa, todos vais en la misma dirección." },
       { title: "Probad un mes", text: "Rellenad con sinceridad las cuatro tablas semanales durante todo el mes." },

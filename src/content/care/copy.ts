@@ -242,11 +242,11 @@ const es: CareCopy = {
     eyebrow: "Consejos · alimentación",
     lead: (w) => `Qué alimentos son tóxicos, arriesgados o aceptables para los ${w.plural}: ordenados por nivel de riesgo, explicados de forma sencilla y con enlace a cada fuente.`,
     emergencyTitle: "¿Ha comido algo tóxico?",
-    emergencyText: "Llama enseguida a tu veterinario o a una línea de información toxicológica para animales. Apunta qué ha comido y cuánto, y no esperes a que aparezcan signos.",
+    emergencyText: "Llama enseguida a tu veterinario o a una línea de información toxicológica para animales. Apunta qué ha comido y cuánto, y no esperes a que aparezcan síntomas.",
   },
   food: {
     why: "Por qué",
-    signs: "Signos que hay que vigilar",
+    signs: "Síntomas que hay que vigilar",
     whatToDo: "Qué hacer",
     serving: "Cómo dárselo",
     forKids: "Para niños",
