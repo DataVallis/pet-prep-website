@@ -709,6 +709,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S797", "S10", "S123", "S795", "S798"],
     },
+    borzoi: {
+      aka: "Borzoi, borzoj, ruski chrt, Russian Wolfhound, Russian Hunting Sighthound",
+      text: [
+        "Ruski hrt (borzoj) je dolgodlaki hrt iz Rusije, vzrejen za lov na zajce in lisice; standard FCI ga opisuje kot plemenitega, visokega, vitkega in močnega psa na razmeroma dolgih nogah z dolgo, svilnato, valovito dlako, ki je lahko katere koli barve od bele do črne, razen rjave, modre in izabelne, ter navaja zaželeno višino 75–85 cm pri psih in 68–78 cm pri psicah. PDSA navaja povprečno težo 27–47 kg pri psih in psicah ter življenjsko dobo več kot 10 let, PetMD 9–14 let; pes te velikosti doraste pri približno 15–18 mesecih (velikostni razred PetMD).",
+        "PDSA priporoča najmanj 1 uro gibanja na dan, razdeljeno na nekaj sprehodov, brez povodca le na varnem, ograjenem mestu. Piše, da imajo ruski hrti zelo močan lovski nagon in jih ne priporoča k manjšim živalim ali mlajšim otrokom, da so primerni za izkušene lastnike in potrebujejo nekoga doma večino časa, da jih je treba socializirati že od mladosti in česati nekajkrat na teden; med obrokom in gibanjem naj bo premor. PetMD svetuje česanje vsaj dva- do trikrat na teden in kot najpogostejšo zdravstveno težavo navaja napihnjenost želodca.",
+      ],
+      sources: ["S802", "S800", "S803", "S10"],
+    },
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
       text: [

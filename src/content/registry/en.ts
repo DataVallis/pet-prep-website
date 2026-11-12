@@ -689,6 +689,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S797", "S10", "S123", "S795", "S798"],
     },
+    borzoi: {
+      aka: "Russian Wolfhound, Russian Hunting Sighthound, Russkaya Psovaya Borzaya, Ruski hrt",
+      text: [
+        "The Borzoi, or Russian Hunting Sighthound, is a long-haired sighthound from Russia, bred to course hare and fox; the FCI standard describes a dog of aristocratic appearance, tall, lean and strong, rather high-legged, with a long, silky, wavy coat that may be any colour from white to black except brown, blue and isabella, and gives a desirable height of 75–85 cm for males and 68–78 cm for bitches. The PDSA gives an average weight of 27–47 kg for males and females and a lifespan of over 10 years, PetMD 9–14 years; a dog of this size is fully grown at about 15–18 months (PetMD size class).",
+        "The PDSA recommends a minimum of 1 hour of exercise a day, split into a couple of walks, with time off-lead only in a secure area, says Borzois have a very high prey drive and are not recommended with smaller pets or younger children, suit experienced owners and need someone at home most of the time, should be socialised from a young age, and need brushing a few times a week; leave a gap between eating and exercising. PetMD recommends brushing at least two to three times a week and names bloat as the most common health issue.",
+      ],
+      sources: ["S802", "S800", "S803", "S10"],
+    },
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
       text: [
