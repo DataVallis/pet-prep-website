@@ -430,11 +430,11 @@ const es: Dictionary = {
       meta: {
         title: "Precios: PetPrep es gratis para empezar; el reto de 12 semanas cuesta 49,99 €",
         description:
-          "La mascota mestiza es gratis para siempre. El Reto PetPrep de 12 semanas cuesta 49,99 € por mascota, en un único pago. Un solo precio para los hermanos que comparten mascota. También como mejora de tu mascota gratuita.",
+          "El perro mestizo es gratis para siempre. El Reto PetPrep de 12 semanas cuesta 49,99 € por mascota, en un único pago. Un solo precio para los hermanos que comparten mascota. También como mejora de tu mascota gratuita.",
       },
       eyebrow: "Precios",
       title: "Precios sencillos y justos.",
-      lead: "Empieza gratis con una mascota mestiza. Compra el reto completo de 12 semanas cuando quieras: las 12 semanas empiezan con la compra. También sirve para la mascota gratuita que tu hijo ya cuida.",
+      lead: "Empieza gratis con un perro mestizo. Compra el reto completo de 12 semanas cuando quieras: las 12 semanas empiezan con la compra. También sirve para la mascota gratuita que tu hijo ya cuida.",
       blocks: [
         { type: "pricing" },
         {
@@ -457,7 +457,7 @@ const es: Dictionary = {
           type: "faq",
           heading: "Preguntas sobre precios",
           items: [
-            { q: "¿La versión gratuita es gratis de verdad?", a: "Sí. La mascota mestiza es gratis para siempre, con la simulación completa, paseos reales y el panel para padres." },
+            { q: "¿La versión gratuita es gratis de verdad?", a: "Sí. El perro mestizo es gratis para siempre, con la simulación completa, paseos reales y el panel para padres." },
             { q: "¿Qué incluye el reto?", a: "Razas exigentes como el [border collie](breed:border_collie), los estados de ánimo de tu mascota en vídeos con IA, el Certificado de responsabilidad al final y acceso para ambos padres. También puedes elegirlo con el perro mestizo o el gato doméstico." },
             { q: "¿Podemos pasar al reto con la mascota gratuita que ya tiene mi hijo?", a: "Sí, mientras el perro mestizo o el gato doméstico gratuito siga en el juego. En la app de padres, empieza el reto desde la tarjeta de tu hijo. La mascota sigue siendo la misma: nombre, aspecto, edad y órdenes aprendidas. Las 12 semanas, el Care Score y el certificado cuentan desde la compra; los días anteriores siguen en el historial, marcados como anteriores al reto, y no cuentan. El precio es el mismo: 49,99 € en un solo pago, sin suscripción. Los perros mestizos creados en una primera versión de la app no se pueden pasar al reto; la app te avisa si es tu caso." },
             { q: "¿Puede una mascota del reto volver al plan gratuito?", a: "No por decisión propia. Un perro mestizo o un gato doméstico solo vuelve al plan gratuito si la tienda reembolsa la compra; entonces el reto termina, sin certificado. Si vuelves a comprar el reto más adelante, empiezan 12 semanas nuevas." },
@@ -492,7 +492,7 @@ const es: Dictionary = {
             { q: "¿Qué pasa si mi hijo se olvida?", a: "Primero la mascota envía recordatorios amables. Si una necesidad se queda a cero, la mascota enferma y pasa 12 horas en el veterinario. Tras un día entero sin cuidados, se la lleva la protectora virtual, y se puede volver a empezar." },
             { q: "¿Pueden los hermanos compartir una mascota?", a: "Sí. Cada niño firma su propio contrato, cada acción se atribuye a quien la hizo y cada niño recibe su propio Care Score justo." },
             { q: "¿Y el colegio y la hora de dormir?", a: "Configura las horas de silencio. La mascota va más despacio, no se envía nada y las comidas que caen enteras en las horas de silencio corren de tu cuenta." },
-            { q: "¿Da miedo a los niños?", a: "No. Las consecuencias son reales pero suaves: la mascota va al veterinario o a la protectora, nunca hay nada desagradable y siempre hay una nueva oportunidad." },
+            { q: "¿Asusta a los niños?", a: "No. Las consecuencias son reales pero suaves: la mascota va al veterinario o a la protectora, nunca hay nada desagradable y siempre hay una nueva oportunidad." },
             { q: "¿Qué mascotas hay disponibles?", a: "Hoy, [perros](species:dog) y [gatos](species:cat): un perro mestizo y un gato doméstico gratuitos y el reto de 12 semanas con cualquiera de los dos o con cualquier raza del [registro de animales](page:animals), que también recoge sus necesidades con fuentes. Hay más especies previstas." },
             { q: "¿En qué idiomas?", a: "Hoy la app está en inglés y esloveno. Llegarán más idiomas a medida que PetPrep se lance en nuevos países." },
             { q: "¿Qué pasa cuando tengamos una mascota real?", a: "PetPrep puede convertirse en un asistente de IA para tu mascota real. Esta parte está en desarrollo." },
@@ -507,7 +507,7 @@ const es: Dictionary = {
           "PetPrep colabora con tiendas de mascotas, protectoras, veterinarios, adiestradores, aseguradoras, fabricantes de collares y colegios para ayudar a las familias a tener mascotas de forma responsable.",
       },
       eyebrow: "Socios",
-      title: "Familias mejor preparadas para todos los que se preocupan por los animales.",
+      title: "Familias mejor preparadas, para todos los que cuidan de los animales.",
       lead:
         "Las familias que terminan PetPrep saben lo que exige de verdad una mascota. Estamos creando una red de socios que llegue a ellas en el momento adecuado, siempre bien identificada y con el consentimiento de la familia.",
       planned: true,
@@ -547,7 +547,7 @@ const es: Dictionary = {
       eyebrow: "Inversores",
       title: "De un reto de 12 semanas a una relación de 10 a 15 años.",
       lead:
-        "PetPrep da a los padres una prueba objetiva de si su hijo está preparado para una mascota real y después acompaña a la familia durante toda la vida del animal.",
+        "PetPrep da a los padres una prueba objetiva de si su hijo está preparado para una mascota real y después acompaña a la familia durante toda la vida de la mascota.",
       blocks: [
         {
           type: "cards",
@@ -564,7 +564,7 @@ const es: Dictionary = {
           heading: "Modelo de negocio",
           head: ["Fuente de ingresos", "Modelo", "Estado"],
           rows: [
-            ["Mascota mestiza", "Gratis para siempre (captación)", "Decidido"],
+            ["Perro mestizo", "Gratis para siempre (captación)", "Decidido"],
             ["Reto PetPrep de 12 semanas", "49,99 € por mascota, pago único", "Decidido"],
             ["Deseos: cosas para la mascota (solo estéticas)", "Compras dentro de la app: 5,99 € por artículo, premios a 2,99 € los 10, pack a 15,99 €; también en la versión gratuita", "Desarrollado; compra en la tienda muy pronto"],
             ["Ofertas de socios", "Comisiones de tiendas, aseguradoras, veterinarios y adiestradores", "Previsto"],

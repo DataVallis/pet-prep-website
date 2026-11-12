@@ -3,12 +3,12 @@ import type { GiftCopy } from "./types.ts";
 export const es: GiftCopy = {
   meta: {
     title: "Vale regalo: el Reto PetPrep de 12 semanas",
-    description: "No regales un cachorro. Regala una prueba: un vale regalo para el Reto PetPrep de 12 semanas, en el que un niño y su familia practican cómo cuidar de un animal antes de decidirse por uno de verdad.",
+    description: "No regales un cachorro. Regala una prueba: un vale regalo para el Reto PetPrep de 12 semanas, en el que un niño y su familia practican cómo cuidar de una mascota antes de decidirse por una de verdad.",
   },
   breadcrumb: "Vale regalo",
   eyebrow: "Vale regalo",
   title: "No regales un cachorro. Regala una prueba.",
-  lead: "Un vale regalo para el Reto PetPrep de 12 semanas: doce semanas cuidando de un animal simulado que parece de verdad, antes de que la familia decida si quiere uno real. Para quien no deja de pedir una mascota y para los padres que quieren una respuesta.",
+  lead: "Un vale regalo para el Reto PetPrep de 12 semanas: doce semanas cuidando de una mascota simulada que parece de verdad, antes de que la familia decida si quiere una real. Para quien no deja de pedir una mascota y para los padres que quieren una respuesta.",
   buy: {
     button: "Comprar un vale regalo",
     soon: "Próximamente",
@@ -20,9 +20,9 @@ export const es: GiftCopy = {
   what: {
     heading: "Qué es PetPrep",
     paragraphs: [
-      "PetPrep es una app en la que el niño cuida cada día de un animal simulado que parece de verdad: le da de comer y de beber, lo saca a pasear, lo educa y limpia lo que ensucia. Si se descuidan los cuidados, el animal lo muestra, igual que lo haría uno real.",
+      "PetPrep es una app en la que el niño cuida cada día de una mascota simulada que parece de verdad: le da de comer y de beber, la saca a pasear, la educa y limpia lo que ensucia. Si descuida los cuidados, la mascota lo muestra, igual que lo haría una de verdad.",
       "Como padre o madre, tienes un panel con un semáforo y una puntuación de cuidado (Care Score), para ver cómo va todo sin tener que vigilar cada paso.",
-      "Después de doce semanas, la familia recibe un Certificado de responsabilidad y, lo que es más importante, una respuesta sincera a si está preparada para un animal de verdad.",
+      "Después de doce semanas, la familia recibe un Certificado de responsabilidad y, lo que es más importante, una respuesta sincera a si está preparada para una mascota de verdad.",
     ],
   },
   how: {
@@ -30,14 +30,14 @@ export const es: GiftCopy = {
     steps: [
       { title: "Compra", text: "Compras el vale en esta página. El código te llega por correo electrónico." },
       { title: "Imprime", text: "Tras la compra, pega el código en la página de agradecimiento e imprime el vale en una hoja A4. En cada hoja caben dos vales, que puedes doblar o recortar." },
-      { title: "Un progenitor lo canjea", text: "En la web, un padre o una madre inicia sesión igual que en la app e introduce el código. El reto se añade a la familia." },
-      { title: "Empieza el reto", text: "En la app, el progenitor elige el animal al que se aplica el reto y comienzan las doce semanas." },
+      { title: "Un padre o una madre lo canjea", text: "En la web, un padre o una madre inicia sesión igual que en la app e introduce el código. El reto se añade a la familia." },
+      { title: "Empieza el reto", text: "En la app, el padre o la madre elige la mascota a la que se aplica el reto y comienzan las doce semanas." },
     ],
   },
   included: {
     heading: "Qué incluye",
     items: [
-      "Un Reto PetPrep de 12 semanas para un animal, igual que si se comprara en la app",
+      "Un Reto PetPrep de 12 semanas para una mascota, igual que si se comprara en la app",
       "Cualquier especie y raza disponible en la app en el momento de elegir",
       "Todos los vídeos, el historial completo de cuidados y el Certificado de responsabilidad",
       "Un vale imprimible con espacio para tu dedicatoria personal (rellena «Para» y «De» a mano)",
@@ -48,31 +48,31 @@ export const es: GiftCopy = {
     forTitle: "El vale es para ti si",
     forItems: [
       "un niño de tu familia lleva tiempo pidiendo una mascota y quieres que lo pruebe antes de decidir,",
-      "buscas un regalo para un nieto, una sobrina o un ahijado que no sea un animal vivo ni una promesa,",
-      "quieres que la experiencia de cuidar de un animal nazca de lo que hace el niño o la niña y no de tus palabras.",
+      "buscas un regalo para un nieto, una sobrina o un ahijado que no sea una mascota viva ni una promesa,",
+      "quieres que la experiencia de cuidar de una mascota nazca de lo que hace el niño o la niña y no de tus palabras.",
     ],
     notTitle: "El vale no es para ti si",
     notItems: [
-      "quieres regalar un animal de verdad: PetPrep es una simulación y el vale ni incluye ni promete un animal real,",
-      "en la familia no hay ningún progenitor con cuenta en la app: el canje se hace desde la cuenta de padres,",
+      "quieres regalar una mascota de verdad: PetPrep es una simulación y el vale ni incluye ni promete una mascota real,",
+      "en la familia no hay ningún padre o madre con cuenta en la app: el canje se hace desde la cuenta de padres,",
       "buscas un juego rápido sin que los padres participen: PetPrep está pensado para que un adulto acompañe y decida.",
     ],
   },
   faq: {
     heading: "Preguntas frecuentes",
     items: [
-      { q: "¿Cuánto tiempo es válido el vale?", a: "El vale es válido durante 12 meses desde la compra. Cuando un progenitor lo canjea, el reto queda en la cuenta familiar y no caduca. Las doce semanas empiezan cuando el progenitor asigna el reto a un animal en la app, no al canjear el vale." },
+      { q: "¿Cuánto tiempo es válido el vale?", a: "El vale es válido durante 12 meses desde la compra. Cuando un padre o una madre lo canjea, el reto queda en la cuenta familiar y no caduca. Las doce semanas empiezan cuando el padre o la madre asigna el reto a una mascota en la app, no al canjear el vale." },
       { q: "¿Puedo pedir un reembolso?", a: "Un vale sin canjear se puede reembolsar en los 14 días siguientes a la compra. Un vale ya canjeado no se puede reembolsar. Los reembolsos se gestionan a través de Lemon Squeezy, donde lo compraste, y tus derechos legales como consumidor no se ven afectados." },
       { q: "¿En qué dispositivos funciona?", a: "La app PetPrep es para iPhone y para móviles Android. El vale se canjea en esta web, desde cualquier navegador." },
       { q: "¿Necesito una cuenta?", a: "Para comprar e imprimir el vale, no. Para canjearlo, la familia necesita una cuenta de padres en la app: en la web inicias sesión igual que en la app y luego introduces el código." },
       { q: "¿Sirve el vale para un gato?", a: "Sí. Hoy la app tiene perros y gatos, y el vale sirve para cualquier especie y raza disponible en la app en el momento de elegir." },
-      { q: "¿Habrá un animal de verdad después del reto?", a: "El vale no lo promete ni lo incluye. El reto ayuda a una familia a responder con sinceridad si está preparada. La decisión sobre un animal de verdad sigue siendo vuestra." },
+      { q: "¿Habrá una mascota de verdad después del reto?", a: "El vale no lo promete ni lo incluye. El reto ayuda a una familia a responder con sinceridad si está preparada. La decisión sobre una mascota de verdad sigue siendo vuestra." },
       { q: "¿Qué pasa con el código cuando lo escribo?", a: "En la página donde se imprime el vale, el código no se guarda ni se envía a ningún sitio: el vale se dibuja en tu navegador. El código solo se comprueba al canjearlo." },
     ],
   },
   redeemLink: {
     heading: "¿Ya tienes un vale?",
-    text: "Un progenitor puede canjear el vale en la web. Inicia sesión igual que en la app e introduce el código del vale.",
+    text: "Un padre o una madre puede canjear el vale en la web. Inicia sesión igual que en la app e introduce el código del vale.",
     button: "Canjear un vale",
   },
   kit: {
@@ -93,29 +93,29 @@ export const es: GiftCopy = {
     previewEmpty: "Introduce el código y aquí aparecerá el vale.",
     stepsHeading: "Cómo se canjea el vale",
     steps: [
-      "Un progenitor crea una cuenta de padres en la app PetPrep.",
+      "Un padre o una madre crea una cuenta de padres en la app PetPrep.",
       "Abre la página para canjear el vale.",
       "Inicia sesión igual que en la app e introduce el código del vale.",
-      "En la app, elige el animal al que se aplica el reto.",
+      "En la app, elige la mascota a la que se aplica el reto.",
     ],
     notChecked: "Esta página no comprueba si el código es válido. Eso solo ocurre al canjearlo.",
     voucher: {
       kind: "Vale regalo",
       title: "El Reto PetPrep de 12 semanas",
-      line: "Un reto para un animal en la app PetPrep.",
+      line: "Un reto para una mascota en la app PetPrep.",
       code: "Código",
       redeemAt: "Canjéalo en",
       validity: "Válido durante 12 meses desde la compra",
       forLabel: "Para",
       fromLabel: "De",
-      parentNote: "Un progenitor canjea el código en la web, después de iniciar sesión igual que en la app.",
+      parentNote: "Un padre o una madre canjea el código en la web, después de iniciar sesión igual que en la app.",
     },
   },
   redeem: {
     meta: { title: "Canjear un vale regalo", description: "Inicia sesión en tu cuenta de padres e introduce el código del vale regalo para añadir el reto a tu familia." },
     eyebrow: "Vale regalo",
     title: "Canjear un vale regalo",
-    lead: "Inicia sesión como lo haces en la app PetPrep e introduce el código del vale. El reto se añade a la cuenta familiar y el animal lo eliges en la app.",
+    lead: "Inicia sesión como lo haces en la app PetPrep e introduce el código del vale. El reto se añade a la cuenta familiar y la mascota la eliges en la app.",
     codeLabel: "Código del vale",
     codeHint: "El código está en el vale. Los espacios no importan.",
     emailLabel: "Correo electrónico",
@@ -138,7 +138,7 @@ export const es: GiftCopy = {
     returnBack: "Volver a la página de canje",
   },
   messages: {
-    redeemed: "El reto se ha añadido. Abre la app y elige el animal al que se aplica.",
+    redeemed: "El reto se ha añadido. Abre la app y elige la mascota a la que se aplica.",
     redeemed_already: "Este vale ya está canjeado en tu cuenta familiar. El reto te espera en la app.",
     invalid_request: "Introduce el código del vale.",
     invalid_code: "No reconocemos este código. Comprueba que coincide exactamente con el del vale e inténtalo de nuevo.",
