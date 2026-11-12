@@ -546,6 +546,7 @@ const da: RegistryCopy = {
     open_fontanelle: "En åben fontanel, et blødt sted på kraniet der ikke lukker sig helt, kan forekomme i racen.",
     collapsing_trachea: "Kollaps af luftrøret, en svaghed i luftrøret der kan give hoste og åndedrætsbesvær, kan forekomme i racen.",
     gm1_gangliosidosis: "GM1-gangliosidose, en arvelig sygdom i nervesystemet, kan forekomme i racen; en DNA-test af forældrene kan udelukke den.",
+    gm2_gangliosidosis: "GM2-gangliosidose, en dødelig arvelig sygdom i nervesystemet, er fundet i racen.",
     addisons_disease: "Addisons sygdom, hvor binyrerne danner for lidt hormon, kan forekomme i racen.",
     protein_losing_disease: "Sygdomme i nyrerne eller tarmen hvor kroppen taber protein, og som kan give diarré og vægttab, kan forekomme i racen.",
     diabetes_mellitus: "Sukkersyge (diabetes mellitus), hvor kroppen ikke kan styre blodsukkeret ordentligt, kan forekomme i racen.",

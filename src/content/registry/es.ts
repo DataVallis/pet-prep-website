@@ -474,6 +474,7 @@ const es: RegistryCopy = {
     open_fontanelle: "En la raza puede darse una fontanela abierta, una zona blanda del cráneo que no llega a cerrarse del todo.",
     collapsing_trachea: "En la raza puede darse el colapso traqueal, una debilidad de la tráquea que puede causar tos y dificultad para respirar.",
     gm1_gangliosidosis: "En la raza puede darse la gangliosidosis GM1, una enfermedad hereditaria del sistema nervioso; una prueba de ADN de los progenitores permite descartarla.",
+    gm2_gangliosidosis: "En la raza se ha encontrado la gangliosidosis GM2, una enfermedad hereditaria mortal del sistema nervioso.",
     addisons_disease: "En la raza puede darse la enfermedad de Addison, una falta de hormonas de las glándulas suprarrenales.",
     protein_losing_disease: "En la raza pueden darse enfermedades con pérdida de proteínas por los riñones o el intestino, que pueden causar diarrea y pérdida de peso.",
     diabetes_mellitus: "En la raza puede darse la diabetes mellitus, en la que el cuerpo no controla bien el azúcar en sangre.",

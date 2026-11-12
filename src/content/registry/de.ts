@@ -457,6 +457,7 @@ const de: RegistryCopy = {
     open_fontanelle: "In der Rasse kann eine offene Fontanelle auftreten, eine weiche Stelle am Schädel, die sich nicht vollständig schließt.",
     collapsing_trachea: "In der Rasse kann ein Trachealkollaps auftreten, eine Schwäche der Luftröhre, die Husten und Atemnot verursachen kann.",
     gm1_gangliosidosis: "In der Rasse kann GM1-Gangliosidose auftreten, eine erbliche Erkrankung des Nervensystems; ein DNA-Test der Elterntiere kann sie ausschließen.",
+    gm2_gangliosidosis: "In der Rasse wurde GM2-Gangliosidose festgestellt, eine tödliche erbliche Erkrankung des Nervensystems.",
     addisons_disease: "In der Rasse kann Morbus Addison auftreten, ein Mangel an Hormonen der Nebennieren.",
     protein_losing_disease: "In der Rasse können Erkrankungen mit Eiweißverlust über die Nieren oder den Darm auftreten, die Durchfall und Gewichtsverlust verursachen können.",
     diabetes_mellitus: "In der Rasse kann Diabetes mellitus auftreten, bei dem der Körper seinen Blutzucker nicht richtig regulieren kann.",

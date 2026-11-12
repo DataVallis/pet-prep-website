@@ -483,6 +483,7 @@ const nl: RegistryCopy = {
     open_fontanelle: "Een open fontanel, een zachte plek op de schedel die niet helemaal sluit, kan bij het ras voorkomen.",
     collapsing_trachea: "Tracheacollaps, een zwakte van de luchtpijp die hoesten en ademhalingsproblemen kan veroorzaken, kan bij het ras voorkomen.",
     gm1_gangliosidosis: "GM1-gangliosidose, een erfelijke ziekte van het zenuwstelsel, kan bij het ras voorkomen; met een DNA-test van de ouderdieren kan die worden uitgesloten.",
+    gm2_gangliosidosis: "GM2-gangliosidose, een dodelijke erfelijke ziekte van het zenuwstelsel, is bij het ras vastgesteld.",
     addisons_disease: "De ziekte van Addison, een tekort aan hormonen van de bijnieren, kan bij het ras voorkomen.",
     protein_losing_disease: "Ziekten waarbij eiwit verloren gaat via de nieren of de darmen, en die diarree en gewichtsverlies kunnen veroorzaken, kunnen bij het ras voorkomen.",
     diabetes_mellitus: "Diabetes mellitus (suikerziekte), waarbij het lichaam de bloedsuiker niet goed kan regelen, kan bij het ras voorkomen.",

@@ -479,6 +479,7 @@ const fr: RegistryCopy = {
     open_fontanelle: "Une fontanelle ouverte, une zone molle du crâne qui ne se ferme pas complètement, peut survenir dans la race.",
     collapsing_trachea: "Le collapsus trachéal, une faiblesse de la trachée qui peut provoquer toux et difficultés respiratoires, peut survenir dans la race.",
     gm1_gangliosidosis: "La gangliosidose GM1, une maladie héréditaire du système nerveux, peut survenir dans la race ; un test ADN des parents permet de l’exclure.",
+    gm2_gangliosidosis: "La gangliosidose GM2, une maladie héréditaire mortelle du système nerveux, a été observée dans la race.",
     addisons_disease: "La maladie d’Addison, un manque d’hormones produites par les glandes surrénales, peut survenir dans la race.",
     protein_losing_disease: "Des maladies des reins ou de l’intestin avec perte de protéines, qui peuvent provoquer diarrhée et perte de poids, peuvent survenir dans la race.",
     diabetes_mellitus: "Le diabète sucré, où l’organisme ne parvient pas à bien réguler sa glycémie, peut survenir dans la race.",

@@ -455,6 +455,7 @@ const en: RegistryCopy = {
     open_fontanelle: "An open fontanelle, a soft spot on the skull that does not close fully, can occur in the breed.",
     collapsing_trachea: "A collapsing trachea, a weakness of the windpipe that can cause coughing and breathing difficulty, can occur in the breed.",
     gm1_gangliosidosis: "GM1 gangliosidosis, an inherited disease of the nervous system, can occur in the breed; a DNA test of the parents can rule it out.",
+    gm2_gangliosidosis: "GM2 gangliosidosis, a fatal inherited disease of the nervous system, has been found in the breed.",
     addisons_disease: "Addison's disease, a lack of hormones from the adrenal glands, can occur in the breed.",
     protein_losing_disease: "Protein-losing diseases of the kidneys or the gut, which can cause diarrhoea and weight loss, can occur in the breed.",
     diabetes_mellitus: "Diabetes mellitus, where the body cannot control its blood sugar properly, can occur in the breed.",
@@ -696,6 +697,14 @@ const en: RegistryCopy = {
         "The PDSA recommends a minimum of 1 hour of exercise a day, split into a couple of walks, with time off-lead only in a secure area, says Borzois have a very high prey drive and are not recommended with smaller pets or younger children, suit experienced owners and need someone at home most of the time, should be socialised from a young age, and need brushing a few times a week; leave a gap between eating and exercising. PetMD recommends brushing at least two to three times a week and names bloat as the most common health issue.",
       ],
       sources: ["S802", "S800", "S803", "S10"],
+    },
+    japanese_chin: {
+      aka: "Japanese Spaniel, Japan Chin, Chin, Japonski čin",
+      text: [
+        "The Japanese Chin is a small companion dog from Japan; the Royal Kennel Club breed standard describes an elegant, aristocratic, compact little dog with a profuse, long, silky coat, black and white or red and white (never tricolour), a short, wide muzzle and a look of astonishment, and gives an ideal weight of 1.8–3.2 kg, and PetMD a height of 8–11 inches (about 20–28 cm). A dog of this size is fully grown at about 8–12 months (PetMD size class); a 2024 UK study (McMillan et al., tabled by Dogs Trust) gives a median life expectancy of 12.5 years.",
+        "The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming more than once a week, says the breed sheds and suits a flat or apartment, and lists it in Breed Watch Category 1. PetMD says the Japanese Chin is a flat-faced (brachycephalic) breed that can have difficulty breathing and overheats easily, so exercise in hot or humid weather belongs to the cooler times of the day; that it is generally good with children when interactions are supervised, can develop separation anxiety, and should go to socialisation classes early; and it recommends brushing once or twice a week, cleaning the ears every two to three weeks and a bath about monthly.",
+      ],
+      sources: ["S806", "S10", "S123", "S805", "S809"],
     },
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",

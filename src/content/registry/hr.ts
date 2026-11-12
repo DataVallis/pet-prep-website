@@ -564,6 +564,7 @@ const hr: RegistryCopy = {
     open_fontanelle: "U pasmini se može pojaviti otvorena fontanela, meko mjesto na lubanji koje se ne zatvori do kraja.",
     collapsing_trachea: "U pasmini se može pojaviti kolaps dušnika, slabost dušnika koja može uzrokovati kašalj i otežano disanje.",
     gm1_gangliosidosis: "U pasmini se može pojaviti GM1 gangliozidoza, nasljedna bolest živčanog sustava; DNK test roditelja može je isključiti.",
+    gm2_gangliosidosis: "U pasmini je utvrđena GM2 gangliozidoza, smrtonosna nasljedna bolest živčanog sustava.",
     addisons_disease: "U pasmini se može pojaviti Addisonova bolest, nedostatak hormona nadbubrežnih žlijezda.",
     protein_losing_disease: "U pasmini se mogu pojaviti bolesti bubrega ili crijeva s gubitkom proteina, koje mogu uzrokovati proljev i gubitak težine.",
     diabetes_mellitus: "U pasmini se može pojaviti šećerna bolest (diabetes mellitus), pri kojoj tijelo ne može pravilno regulirati šećer u krvi.",

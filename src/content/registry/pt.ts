@@ -480,6 +480,7 @@ const pt: RegistryCopy = {
     open_fontanelle: "Na raça pode ocorrer uma fontanela aberta, um ponto mole do crânio que não fecha completamente.",
     collapsing_trachea: "Na raça pode ocorrer o colapso da traqueia, uma fraqueza da traqueia que pode provocar tosse e dificuldade em respirar.",
     gm1_gangliosidosis: "Na raça pode ocorrer a gangliosidose GM1, uma doença hereditária do sistema nervoso; um teste de ADN dos progenitores pode excluí-la.",
+    gm2_gangliosidosis: "Na raça foi detetada a gangliosidose GM2, uma doença hereditária fatal do sistema nervoso.",
     addisons_disease: "Na raça pode ocorrer a doença de Addison, uma falta de hormonas produzidas pelas glândulas suprarrenais.",
     protein_losing_disease: "Na raça podem ocorrer doenças dos rins ou do intestino com perda de proteínas, que podem provocar diarreia e perda de peso.",
     diabetes_mellitus: "Na raça pode ocorrer a diabetes mellitus, em que o organismo não consegue regular corretamente o açúcar no sangue.",

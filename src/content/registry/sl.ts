@@ -476,6 +476,7 @@ const sl: RegistryCopy = {
     open_fontanelle: "Pri pasmi se lahko pojavi odprta mečava, mehko mesto na lobanji, ki se ne zapre povsem.",
     collapsing_trachea: "Pri pasmi se lahko pojavi kolaps sapnika, šibkost sapnika, ki lahko povzroča kašelj in težko dihanje.",
     gm1_gangliosidosis: "Pri pasmi se lahko pojavi gangliozidoza GM1, dedna bolezen živčevja; test DNK staršev jo lahko izključi.",
+    gm2_gangliosidosis: "Pri pasmi so ugotovili gangliozidozo GM2, smrtno dedno bolezen živčevja.",
     addisons_disease: "Pri pasmi se lahko pojavi Addisonova bolezen, pomanjkanje hormonov nadledvične žleze.",
     protein_losing_disease: "Pri pasmi se lahko pojavijo bolezni, pri katerih telo izgublja beljakovine skozi ledvice ali črevesje, kar lahko povzroči drisko in hujšanje.",
     diabetes_mellitus: "Pri pasmi se lahko pojavi sladkorna bolezen (diabetes mellitus), pri kateri telo ne uravnava dobro krvnega sladkorja.",
@@ -716,6 +717,14 @@ const sl: RegistryCopy = {
         "PDSA priporoča najmanj 1 uro gibanja na dan, razdeljeno na nekaj sprehodov, brez povodca le na varnem, ograjenem mestu. Piše, da imajo ruski hrti zelo močan lovski nagon in jih ne priporoča k manjšim živalim ali mlajšim otrokom, da so primerni za izkušene lastnike in potrebujejo nekoga doma večino časa, da jih je treba socializirati že od mladosti in česati nekajkrat na teden; med obrokom in gibanjem naj bo premor. PetMD svetuje česanje vsaj dva- do trikrat na teden in kot najpogostejšo zdravstveno težavo navaja napihnjenost želodca.",
       ],
       sources: ["S802", "S800", "S803", "S10"],
+    },
+    japanese_chin: {
+      aka: "Japanese Chin, japonski cin, čin, Japanese Spaniel",
+      text: [
+        "Japonski čin je majhen spremljevalni pes z Japonske; standard The Royal Kennel Club ga opisuje kot elegantnega, plemenitega, čvrstega malega psa z bujno, dolgo, svilnato dlako, črno-belo ali rdeče-belo (nikoli trobarvno), s kratkim, širokim gobčkom in začudenim pogledom ter navaja idealno težo 1,8–3,2 kg, PetMD pa višino 8–11 palcev (približno 20–28 cm). Pes te velikosti doraste pri približno 8–12 mesecih (velikostni razred PetMD); britanska raziskava iz leta 2024 (McMillan in sod., tabela Dogs Trust) navaja mediano pričakovane življenjske dobe 12,5 leta.",
+        "The Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje večkrat na teden, navaja, da mu dlaka izpada in da je primeren za stanovanje, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da je japonski čin ploskoobrazna (brahicefalna) pasma, ki lahko težje diha in se hitro pregreje, zato naj bo gibanje v vročem ali soparnem vremenu ob hladnejših delih dneva; da se z otroki na splošno dobro razume, če so stiki pod nadzorom, da lahko razvije ločitveno tesnobo in naj gre zgodaj v šolo socializacije; svetuje česanje enkrat do dvakrat na teden, čiščenje ušes vsaka dva do tri tedne in kopanje približno enkrat na mesec.",
+      ],
+      sources: ["S806", "S10", "S123", "S805", "S809"],
     },
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",

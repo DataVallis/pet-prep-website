@@ -532,6 +532,7 @@ const cs: RegistryCopy = {
     open_fontanelle: "U plemene se může vyskytnout otevřená fontanela, měkké místo na lebce, které se úplně neuzavře.",
     collapsing_trachea: "U plemene se může vyskytnout kolaps průdušnice, ochablost průdušnice, která může způsobovat kašel a potíže s dýcháním.",
     gm1_gangliosidosis: "U plemene se může vyskytnout gangliosidóza GM1, dědičné onemocnění nervové soustavy; DNA test rodičů ji může vyloučit.",
+    gm2_gangliosidosis: "U plemene byla zjištěna gangliosidóza GM2, smrtelné dědičné onemocnění nervové soustavy.",
     addisons_disease: "U plemene se může vyskytnout Addisonova choroba, nedostatek hormonů nadledvin.",
     protein_losing_disease: "U plemene se mohou vyskytnout onemocnění ledvin nebo střev se ztrátou bílkovin, která mohou způsobit průjem a hubnutí.",
     diabetes_mellitus: "U plemene se může vyskytnout cukrovka (diabetes mellitus), kdy tělo nedokáže správně regulovat hladinu cukru v krvi.",
