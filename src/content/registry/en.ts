@@ -681,6 +681,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S790", "S268", "S10", "S787", "S791"],
     },
+    bouvier_des_flandres: {
+      aka: "Bouvier, Flanders Cattle Dog, Vlaamse Koehond",
+      text: [
+        "The Bouvier des Flandres is a cattle dog from Flanders, in Belgium and France; the FCI standard describes a short, compact, powerful dog with strong, well-muscled limbs, a coarse, dry, slightly tousled coat of about 6 cm with a moustache and a full beard, usually grey, brindle or overlaid with black (uniform black is also accepted), and gives a height of 62–68 cm and a weight of about 35–40 kg for males, and 59–65 cm and about 27–35 kg for bitches. A dog of this size is fully grown at about 15–18 months (PetMD size class); a 2024 UK study (McMillan et al., tabled by Dogs Trust) gives a median life expectancy of 11.3 years.",
+        "The Royal Kennel Club calls the Bouvier strong and versatile, originally a cattle herder, recommends up to 1 hour of exercise a day, grooming every day and a large house with a large garden, and lists it in Breed Watch Category 1. PetMD says they can be good with young children and other large dogs when introductions are supervised, have a strong prey drive around cats and small pets, need early socialisation, are prone to being overweight, and recommends brushing at least once or twice a week, cleaning the ears every two to three weeks, trimming the nails every three to four weeks and no exercise one hour before and one hour after eating.",
+      ],
+      sources: ["S797", "S10", "S123", "S795", "S798"],
+    },
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
       text: [

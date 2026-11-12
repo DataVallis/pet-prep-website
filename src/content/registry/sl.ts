@@ -701,6 +701,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S790", "S268", "S10", "S787", "S791"],
     },
+    bouvier_des_flandres: {
+      aka: "Bouvier des Flandres, bouvier, flandrijski govedar, flanders cattle dog, vlaamse koehond",
+      text: [
+        "Flandrijski govedar (bouvier des Flandres) je gonič goveda iz Flandrije v Belgiji in Franciji; standard FCI ga opisuje kot kratkega, čokatega, močnega psa z močnimi, mišičastimi nogami in grobo, suho, rahlo skuštrano dlako, dolgo približno 6 cm, z brki in polno brado, navadno sive, tigraste ali s črnim nadihom (sprejeta je tudi enotno črna), ter navaja višino 62–68 cm in težo približno 35–40 kg pri psih ter 59–65 cm in približno 27–35 kg pri psicah. Pes te velikosti doraste pri približno 15–18 mesecih (velikostni razred PetMD); britanska raziskava iz leta 2024 (McMillan in sod., tabela Dogs Trust) navaja mediano pričakovane življenjske dobe 11,3 leta.",
+        "The Royal Kennel Club ga opisuje kot močnega in vsestranskega psa, ki je sprva gnal govedo, priporoča do 1 ure gibanja na dan, česanje vsak dan ter veliko hišo z velikim vrtom in ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da se lahko dobro razume z majhnimi otroki in drugimi velikimi psi, če so prvi stiki pod nadzorom, da ima močan lovski nagon do mačk in malih živali, da potrebuje zgodnjo socializacijo in se rad zredi, ter svetuje česanje vsaj enkrat do dvakrat na teden, čiščenje ušes vsaka dva do tri tedne, striženje krempljev vsake tri do štiri tedne in nobenega gibanja eno uro pred obrokom in eno uro po njem.",
+      ],
+      sources: ["S797", "S10", "S123", "S795", "S798"],
+    },
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
       text: [
