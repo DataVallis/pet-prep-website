@@ -592,6 +592,7 @@ const nb: RegistryCopy = {
     ear_infections_prone: "Rasen er disponert for øreinfeksjoner; følg godt med på ørehygienen.",
     familial_nephropathy: "En arvelig nyresykdom (familiær nefropati) forekommer i rasen; det finnes en DNA-test av foreldrene.",
     hereditary_nephritis: "En arvelig nyresykdom (arvelig nefritt, også kalt samojedhundens arvelige glomerulopati) forekommer i rasen.",
+    hereditary_nephritis_pkd: "Arvelige nyresykdommer (arvelig nefritt og polycystisk nyresykdom) forekommer i rasen.",
     panosteitis: "Panosteitt, en smertefull betennelse i de lange knoklene som oftest rammer unge hunder i vekst, kan forekomme i rasen.",
     urinary_incontinence: "Urininkontinens, ufrivillig lekkasje av urin, kan forekomme i rasen.",
     osteochondritis: "Osteochondritis dissecans (OCD), en forstyrrelse i leddbrusken hos hunder i vekst, kan forekomme i rasen.",

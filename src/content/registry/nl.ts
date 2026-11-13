@@ -508,6 +508,7 @@ const nl: RegistryCopy = {
     ear_infections_prone: "Het ras is vatbaar voor oorontstekingen; let goed op de hygiëne van de oren.",
     familial_nephropathy: "Een erfelijke nierziekte (familiaire nefropathie) komt bij het ras voor; er is een DNA-test voor de ouderdieren beschikbaar.",
     hereditary_nephritis: "Een erfelijke nierziekte (erfelijke nefritis, ook wel erfelijke glomerulopathie van de samojeed genoemd) komt bij het ras voor.",
+    hereditary_nephritis_pkd: "Erfelijke nierziekten (erfelijke nefritis en polycysteuze nierziekte) komen bij het ras voor.",
     panosteitis: "Panosteïtis, een pijnlijke ontsteking van de lange pijpbeenderen die meestal jonge, groeiende honden treft, kan bij het ras voorkomen.",
     splenic_torsion: "Een draaiing van de milt, waarvoor je dringend naar de dierenarts moet, komt bij dit ras vaker voor dan bij andere grote rassen.",
     urinary_incontinence: "Urine-incontinentie, het onbedoeld verliezen van urine, kan bij het ras voorkomen.",

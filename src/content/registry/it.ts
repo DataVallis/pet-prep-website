@@ -512,6 +512,7 @@ const it: RegistryCopy = {
     ear_infections_prone: "La razza è predisposta alle infezioni delle orecchie; presta molta attenzione all’igiene delle orecchie.",
     familial_nephropathy: "Nella razza si riscontra una malattia renale ereditaria (nefropatia familiare); è disponibile un test del DNA dei genitori.",
     hereditary_nephritis: "Nella razza si riscontra una malattia renale ereditaria (nefrite ereditaria, chiamata anche glomerulopatia ereditaria del samoiedo).",
+    hereditary_nephritis_pkd: "Nella razza si riscontrano malattie renali ereditarie (nefrite ereditaria e malattia del rene policistico).",
     panosteitis: "Nella razza può presentarsi la panosteite, un’infiammazione dolorosa delle ossa lunghe che di solito colpisce i cani giovani in crescita.",
     splenic_torsion: "La torsione della milza, che richiede cure veterinarie urgenti, è più frequente in questa razza che in altre razze grandi.",
     urinary_incontinence: "Nella razza può presentarsi l’incontinenza urinaria, una perdita involontaria di urina.",

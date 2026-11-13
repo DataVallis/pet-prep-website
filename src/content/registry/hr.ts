@@ -597,6 +597,7 @@ const hr: RegistryCopy = {
     ear_infections_prone: "Pasmina je sklona upalama uha; pomno prati higijenu ušiju.",
     familial_nephropathy: "U pasmini se javlja nasljedna bolest bubrega (obiteljska nefropatija); dostupan je DNK test roditelja.",
     hereditary_nephritis: "U pasmini se javlja nasljedna bolest bubrega (nasljedni nefritis, poznat i kao nasljedna glomerulopatija samojeda).",
+    hereditary_nephritis_pkd: "U pasmini se javljaju nasljedne bolesti bubrega (nasljedni nefritis i policistična bolest bubrega).",
     panosteitis: "U pasmini se može pojaviti panosteitis, bolna upala dugih kostiju koja obično pogađa mlade pse u rastu.",
     splenic_torsion: "Torzija slezene, koja zahtijeva hitnu veterinarsku pomoć, u ovoj se pasmini javlja češće nego kod drugih velikih pasmina.",
     urinary_incontinence: "U pasmini se može pojaviti urinarna inkontinencija, nekontrolirano curenje mokraće.",

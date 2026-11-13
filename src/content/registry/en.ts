@@ -480,6 +480,7 @@ const en: RegistryCopy = {
     ear_infections_prone: "The breed is prone to ear infections; keep a close eye on ear hygiene.",
     familial_nephropathy: "An inherited kidney disease (familial nephropathy) occurs in the breed; a DNA test of the parents is available.",
     hereditary_nephritis: "An inherited kidney disease (hereditary nephritis, also called Samoyed hereditary glomerulopathy) occurs in the breed.",
+    hereditary_nephritis_pkd: "Inherited kidney diseases (hereditary nephritis and polycystic kidney disease) occur in the breed.",
     panosteitis: "Panosteitis, a painful inflammation of the long bones that usually affects young, growing dogs, can occur in the breed.",
     splenic_torsion: "Splenic torsion, a twisting of the spleen that needs urgent veterinary care, is more common in this breed than in other large breeds.",
     urinary_incontinence: "Urinary incontinence, an uncontrolled leaking of urine, can occur in the breed.",
@@ -712,6 +713,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club calls the Norwich one of the smallest terriers with a lovable disposition, recommends up to 1 hour of exercise a day and grooming more than once a week, says the breed sheds and suits a flat or apartment, and lists it as a vulnerable native breed. PetMD says Norwich Terriers typically get along well with children and other pets, are high-energy and need daily exercise and mental stimulation, have strong hunting instincts, so a secure leash and a well-fenced yard are a must, and should be socialised from an early age; it recommends brushing at least twice a week, brushing the teeth at least once a week, trimming the nails about once a month and a bath no more than once every three months.",
       ],
       sources: ["S812", "S815", "S10", "S813", "S814"],
+    },
+    miniature_bull_terrier: {
+      aka: "Mini Bull Terrier, Mini Bull, Bull Terrier (Miniature), English Miniature Bull Terrier, miniaturni bulterier",
+      text: [
+        "The Miniature Bull Terrier is a small terrier from Great Britain; the FCI lists it among the bull type terriers, and the Royal Kennel Club says it was first recognised as a separate variety in 1943, bred from smaller Bull Terriers to stay under 35.5 cm (14 inches). PetMD gives a height of 10–14 inches (about 25–36 cm) and a weight of 18–28 pounds (about 8–13 kg); a dog of this size is fully grown at about 9–12 months (PetMD size class). The Royal Kennel Club gives a lifespan of over 10 years and PetMD 11–13 years.",
+        "The Royal Kennel Club describes the breed as courageous, full of spirit, with a fun loving attitude, recommends up to 1 hour of exercise a day and grooming once a week, says the breed sheds and lists it as a vulnerable native breed. PetMD says Miniature Bull Terriers are generally affectionate and good with children, a friendly family companion, can get along with other pets if properly socialised, need regular exercise and mental stimulation and will not thrive if left alone for long periods; it recommends early socialisation and brushing about once a week.",
+      ],
+      sources: ["S818", "S820", "S821", "S10"],
     },
 
     lhasa_apso: {

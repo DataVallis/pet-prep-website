@@ -504,6 +504,7 @@ const fr: RegistryCopy = {
     ear_infections_prone: "La race est sujette aux otites ; surveillez de près l’hygiène des oreilles.",
     familial_nephropathy: "Une maladie rénale héréditaire (néphropathie familiale) s’observe dans la race ; un test ADN des parents existe.",
     hereditary_nephritis: "Une maladie rénale héréditaire (néphrite héréditaire, aussi appelée glomérulopathie héréditaire du samoyède) s’observe dans la race.",
+    hereditary_nephritis_pkd: "Des maladies rénales héréditaires (néphrite héréditaire et polykystose rénale) s’observent dans la race.",
     panosteitis: "La panostéite, une inflammation douloureuse des os longs qui touche généralement les jeunes chiens en croissance, peut survenir dans la race.",
     splenic_torsion: "La torsion de la rate, qui exige des soins vétérinaires urgents, est plus fréquente dans cette race que chez les autres grandes races.",
     urinary_incontinence: "L’incontinence urinaire, une fuite d’urine incontrôlée, peut survenir dans la race.",

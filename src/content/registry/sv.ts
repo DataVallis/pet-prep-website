@@ -577,6 +577,7 @@ const sv: RegistryCopy = {
     ear_infections_prone: "Rasen är benägen att få öroninfektioner; håll noga koll på öronhygienen.",
     familial_nephropathy: "En ärftlig njursjukdom (familjär nefropati) förekommer i rasen; ett DNA-test av föräldrarna finns.",
     hereditary_nephritis: "En ärftlig njursjukdom (hereditär nefrit, även kallad samojedhundens ärftliga glomerulopati) förekommer i rasen.",
+    hereditary_nephritis_pkd: "Ärftliga njursjukdomar (hereditär nefrit och polycystisk njursjukdom) förekommer i rasen.",
     panosteitis: "Panosteit, en smärtsam inflammation i de långa rörbenen som oftast drabbar unga hundar som växer, kan förekomma i rasen.",
     urinary_incontinence: "Urininkontinens, ett okontrollerat urinläckage, kan förekomma i rasen.",
     osteochondritis: "Osteochondritis dissecans (OCD), en störning i ledbrosket hos växande hundar, kan förekomma i rasen.",

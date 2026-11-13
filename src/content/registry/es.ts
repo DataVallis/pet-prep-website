@@ -499,6 +499,7 @@ const es: RegistryCopy = {
     ear_infections_prone: "La raza tiene tendencia a las infecciones de oído; vigila de cerca la higiene de las orejas.",
     familial_nephropathy: "En la raza se da una enfermedad renal hereditaria (nefropatía familiar); existe una prueba de ADN para los progenitores.",
     hereditary_nephritis: "En la raza se da una enfermedad renal hereditaria (nefritis hereditaria, también llamada glomerulopatía hereditaria del samoyedo).",
+    hereditary_nephritis_pkd: "En la raza se dan enfermedades renales hereditarias (nefritis hereditaria y enfermedad renal poliquística).",
     panosteitis: "En la raza puede darse la panosteítis, una inflamación dolorosa de los huesos largos que suele afectar a perros jóvenes en crecimiento.",
     splenic_torsion: "La torsión del bazo, que requiere atención veterinaria urgente, es más frecuente en esta raza que en otras razas grandes.",
     urinary_incontinence: "En la raza puede darse la incontinencia urinaria, una pérdida de orina involuntaria.",
