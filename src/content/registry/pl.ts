@@ -525,6 +525,7 @@ const pl: RegistryCopy = {
     ear_infections_prone: "Rasa ma skłonność do zapaleń uszu; uważnie dbaj o higienę uszu.",
     familial_nephropathy: "W rasie występuje dziedziczna choroba nerek (rodzinna nefropatia); dostępny jest test DNA rodziców.",
     hereditary_nephritis: "W rasie występuje dziedziczna choroba nerek (dziedziczne zapalenie nerek, nazywane też dziedziczną glomerulopatią samojedów).",
+    hereditary_nephritis_pkd: "W rasie występują dziedziczne choroby nerek (dziedziczne zapalenie nerek i wielotorbielowatość nerek).",
     panosteitis: "W rasie może występować panosteitis, bolesne zapalenie kości długich, które dotyka zwykle młode, rosnące psy.",
     splenic_torsion: "Skręt śledziony, który wymaga pilnej pomocy weterynarza, występuje w tej rasie częściej niż u innych dużych ras.",
     urinary_incontinence: "W rasie może występować nietrzymanie moczu, czyli niekontrolowany wyciek moczu.",

@@ -638,6 +638,7 @@ const fi: RegistryCopy = {
     ear_infections_prone: "Rotu on altis korvatulehduksille; pidä korvien puhtaudesta tarkasti huolta.",
     familial_nephropathy: "Rodulla esiintyy perinnöllistä munuaissairautta (familiaalinen nefropatia); vanhemmille on saatavilla DNA-testi.",
     hereditary_nephritis: "Rodulla esiintyy perinnöllistä munuaissairautta (perinnöllinen nefriitti, jota kutsutaan myös samojedinkoiran perinnölliseksi glomerulopatiaksi).",
+    hereditary_nephritis_pkd: "Rodulla esiintyy perinnöllisiä munuaissairauksia (perinnöllinen nefriitti ja munuaisten monirakkulatauti).",
     panosteitis: "Rodulla voi esiintyä panosteiittia, pitkien luiden kivuliasta tulehdusta, joka koskee yleensä nuoria, kasvavia koiria.",
     urinary_incontinence: "Rodulla voi esiintyä virtsankarkailua, hallitsematonta virtsan vuotamista.",
     osteochondritis: "Rodulla voi esiintyä osteokondroosia (osteochondritis dissecans, OCD), kasvavien koirien nivelruston häiriötä.",

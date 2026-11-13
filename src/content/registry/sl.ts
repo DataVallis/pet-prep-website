@@ -501,6 +501,7 @@ const sl: RegistryCopy = {
     ear_infections_prone: "Pasma je nagnjena k vnetjem ušes; skrbno pazite na higieno ušes.",
     familial_nephropathy: "Pri pasmi se pojavlja dedna bolezen ledvic (družinska nefropatija); za starše je na voljo test DNK.",
     hereditary_nephritis: "Pri pasmi se pojavlja dedna bolezen ledvic (dedni nefritis, imenovan tudi samojedska dedna glomerulopatija).",
+    hereditary_nephritis_pkd: "Pri pasmi se pojavljata dedni bolezni ledvic (dedni nefritis in policistična bolezen ledvic).",
     panosteitis: "Pri pasmi se lahko pojavi panosteitis, boleče vnetje dolgih kosti, ki navadno prizadene mlade pse med rastjo.",
     splenic_torsion: "Pri pasmi je zasuk vranice, ki zahteva nujno pomoč veterinarja, pogostejši kot pri drugih velikih pasmah.",
     urinary_incontinence: "Pri pasmi se lahko pojavi inkontinenca, nehotno uhajanje urina.",
@@ -732,6 +733,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club ga opisuje kot enega najmanjših terierjev ljubeznive narave, priporoča do 1 ure gibanja na dan in česanje večkrat na teden, navaja, da mu dlaka izpada in da je primeren za stanovanje, ter ga uvršča med ogrožene britanske pasme. PetMD piše, da se norwich terierji navadno dobro razumejo z otroki in drugimi živalmi, da so zelo živahni in potrebujejo vsakodnevno gibanje in miselne izzive, da imajo močan lovski nagon, zato sta varen povodec in dobro ograjen vrt nujna, in da jih je treba socializirati že zgodaj; svetuje česanje vsaj dvakrat na teden, ščetkanje zob vsaj enkrat na teden, striženje krempljev približno enkrat na mesec in kopanje največ enkrat na tri mesece.",
       ],
       sources: ["S812", "S815", "S10", "S813", "S814"],
+    },
+    miniature_bull_terrier: {
+      aka: "Miniature Bull Terrier, mini bulterier, mini bull, mini bull terier, pritlikavi bulterier",
+      text: [
+        "Miniaturni bulterier je majhen terier iz Velike Britanije; FCI ga uvršča med bulterierje, The Royal Kennel Club pa piše, da je bil kot samostojna različica priznan leta 1943 in da so ga vzrejali iz manjših bulterierjev, da bi ostal pod 35,5 cm (14 palcev). PetMD navaja višino 10–14 palcev (približno 25–36 cm) in težo 18–28 funtov (približno 8–13 kg); pes te velikosti doraste pri približno 9–12 mesecih (velikostni razred PetMD). The Royal Kennel Club navaja življenjsko dobo več kot 10 let, PetMD pa 11–13 let.",
+        "The Royal Kennel Club ga opisuje kot pogumnega, polnega energije in igrivega, priporoča do 1 ure gibanja na dan in česanje enkrat na teden, navaja, da mu dlaka izpada, ter ga uvršča med ogrožene britanske pasme. PetMD piše, da so miniaturni bulterierji na splošno ljubeči in dobri z otroki ter prijazni družinski spremljevalci, da se ob pravilni socializaciji lahko razumejo z drugimi živalmi, da potrebujejo redno gibanje in miselne izzive ter da ne uspevajo, če so dolgo sami; svetuje zgodnjo socializacijo in česanje približno enkrat na teden.",
+      ],
+      sources: ["S818", "S820", "S821", "S10"],
     },
 
     lhasa_apso: {

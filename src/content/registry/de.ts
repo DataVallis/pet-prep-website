@@ -482,6 +482,7 @@ const de: RegistryCopy = {
     ear_infections_prone: "Die Rasse neigt zu Ohrentzündungen; achten Sie genau auf die Ohrenhygiene.",
     familial_nephropathy: "In der Rasse kommt eine erbliche Nierenerkrankung (familiäre Nephropathie) vor; ein DNA-Test der Elterntiere ist verfügbar.",
     hereditary_nephritis: "In der Rasse kommt eine erbliche Nierenerkrankung vor (hereditäre Nephritis, auch hereditäre Glomerulopathie des Samojeden genannt).",
+    hereditary_nephritis_pkd: "In der Rasse kommen erbliche Nierenerkrankungen vor (hereditäre Nephritis und polyzystische Nierenerkrankung).",
     panosteitis: "In der Rasse kann Panostitis auftreten, eine schmerzhafte Entzündung der langen Röhrenknochen, die meist junge, wachsende Hunde betrifft.",
     splenic_torsion: "Eine Milzdrehung, die sofortige tierärztliche Hilfe braucht, kommt in dieser Rasse häufiger vor als bei anderen großen Rassen.",
     urinary_incontinence: "In der Rasse kann Harninkontinenz auftreten, ein unkontrolliertes Austreten von Urin.",

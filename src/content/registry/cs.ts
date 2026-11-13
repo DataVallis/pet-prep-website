@@ -557,6 +557,7 @@ const cs: RegistryCopy = {
     ear_infections_prone: "Plemeno má sklon k infekcím uší; pečlivě dbejte na hygienu uší.",
     familial_nephropathy: "U plemene se vyskytuje dědičné onemocnění ledvin (familiární nefropatie); k dispozici je DNA test rodičů.",
     hereditary_nephritis: "U plemene se vyskytuje dědičné onemocnění ledvin (dědičná nefritida, nazývaná také dědičná glomerulopatie samojedů).",
+    hereditary_nephritis_pkd: "U plemene se vyskytují dědičná onemocnění ledvin (dědičná nefritida a polycystické onemocnění ledvin).",
     panosteitis: "U plemene se může vyskytnout panosteitida, bolestivý zánět dlouhých kostí, který obvykle postihuje mladé, rostoucí psy.",
     splenic_torsion: "Torze sleziny, která vyžaduje okamžitou veterinární péči, se u tohoto plemene vyskytuje častěji než u jiných velkých plemen.",
     urinary_incontinence: "U plemene se může vyskytnout močová inkontinence, nekontrolovaný únik moči.",
