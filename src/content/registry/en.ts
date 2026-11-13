@@ -705,7 +705,15 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming more than once a week, says the breed sheds and suits a flat or apartment, and lists it in Breed Watch Category 1. PetMD says the Japanese Chin is a flat-faced (brachycephalic) breed that can have difficulty breathing and overheats easily, so exercise in hot or humid weather belongs to the cooler times of the day; that it is generally good with children when interactions are supervised, can develop separation anxiety, and should go to socialisation classes early; and it recommends brushing once or twice a week, cleaning the ears every two to three weeks and a bath about monthly.",
       ],
       sources: ["S806", "S10", "S123", "S805", "S809"],
+    },    norwich_terrier: {
+      aka: "Norwich, Norwich terier",
+      text: [
+        "The Norwich Terrier is one of the smallest terriers, from Great Britain; the FCI standard describes a low, keen, compact and strong little dog with a hard, wiry, straight coat that forms a ruff around the face, erect ears with pointed tips, in all shades of red, wheaten, black and tan or grizzle, and gives an ideal height of 25 cm. The UKC standard gives an ideal weight of approximately 12 pounds (about 5.4 kg) for males and females; a dog of this size is fully grown at about 9–12 months (PetMD size class). The Royal Kennel Club gives a lifespan of over 10 years and PetMD 12–15 years.",
+        "The Royal Kennel Club calls the Norwich one of the smallest terriers with a lovable disposition, recommends up to 1 hour of exercise a day and grooming more than once a week, says the breed sheds and suits a flat or apartment, and lists it as a vulnerable native breed. PetMD says Norwich Terriers typically get along well with children and other pets, are high-energy and need daily exercise and mental stimulation, have strong hunting instincts, so a secure leash and a well-fenced yard are a must, and should be socialised from an early age; it recommends brushing at least twice a week, brushing the teeth at least once a week, trimming the nails about once a month and a bath no more than once every three months.",
+      ],
+      sources: ["S812", "S815", "S10", "S813", "S814"],
     },
+
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
       text: [
