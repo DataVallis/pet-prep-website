@@ -372,6 +372,8 @@ const en: RegistryCopy = {
       dna_vwd2: "DNA test for von Willebrand disease type 2 (vWD2), an inherited bleeding disorder",
       dna_l2hga: "DNA test for L-2-hydroxyglutaric aciduria (L-2-HGA), an inherited metabolic disease of the nervous system",
       dna_pll: "DNA test for primary lens luxation (PLL), an inherited eye disease in which the lens slips out of place",
+      dna_mps3b: "DNA test for mucopolysaccharidosis type IIIB (MPS IIIB), an inherited metabolic disease of the nervous system",
+      dna_tbox: "DNA test for the T-box gene behind the natural bob tail",
       dna_loa: "DNA test for late onset ataxia (LOA), an inherited disease that affects balance and coordination",
       dna_sca: "DNA test for spinocerebellar ataxia (SCA), an inherited disease of the nervous system",
     },
@@ -481,6 +483,7 @@ const en: RegistryCopy = {
     familial_nephropathy: "An inherited kidney disease (familial nephropathy) occurs in the breed; a DNA test of the parents is available.",
     hereditary_nephritis: "An inherited kidney disease (hereditary nephritis, also called Samoyed hereditary glomerulopathy) occurs in the breed.",
     hereditary_nephritis_pkd: "Inherited kidney diseases (hereditary nephritis and polycystic kidney disease) occur in the breed.",
+    mucopolysaccharidosis_mps3b: "Mucopolysaccharidosis type IIIB, an inherited metabolic disease that affects the nervous system, occurs in the breed; a DNA test of the parents is available.",
     panosteitis: "Panosteitis, a painful inflammation of the long bones that usually affects young, growing dogs, can occur in the breed.",
     splenic_torsion: "Splenic torsion, a twisting of the spleen that needs urgent veterinary care, is more common in this breed than in other large breeds.",
     urinary_incontinence: "Urinary incontinence, an uncontrolled leaking of urine, can occur in the breed.",
@@ -721,6 +724,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club describes the breed as courageous, full of spirit, with a fun loving attitude, recommends up to 1 hour of exercise a day and grooming once a week, says the breed sheds and lists it as a vulnerable native breed. PetMD says Miniature Bull Terriers are generally affectionate and good with children, a friendly family companion, can get along with other pets if properly socialised, need regular exercise and mental stimulation and will not thrive if left alone for long periods; it recommends early socialisation and brushing about once a week.",
       ],
       sources: ["S818", "S820", "S821", "S10"],
+    },
+    schipperke: {
+      aka: "Little Captain, Little Black Devil, Spitzke, šiperke",
+      text: [
+        "The Schipperke is a small sheepdog from Belgium; the FCI places it among the sheepdogs and its standard describes a lupoid dog of small dimensions but very solidly built, totally black, with a ruff, mane and culottes. The FCI standard gives a weight of 3–9 kg (an average of 4–7 kg is sought after) and PetMD a height of 10–13 inches (about 25–33 cm); a dog of this size is fully grown at about 9–12 months (PetMD size class). A large UK study (McMillan et al. 2024) found a median life expectancy of 14.2 years, and the Royal Kennel Club gives over 12 years.",
+        "The FCI standard calls the Schipperke an excellent small guard dog, bubbling with vitality, aloof with strangers and very gentle with children. The Royal Kennel Club recommends up to 1 hour of exercise a day and grooming more than once a week, says the breed sheds and suits a flat or apartment, and lists it in Breed Watch Category 1. PetMD says Schipperkes need activities that keep mind and body busy, are intelligent but strong-willed, that some keep a high prey drive, and recommends early socialisation, daily tooth brushing and cleaning the ears every two weeks; VCA recommends brushing at least twice a week.",
+      ],
+      sources: ["S824", "S825", "S826", "S827", "S828", "S771", "S10"],
     },
 
     lhasa_apso: {

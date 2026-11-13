@@ -378,6 +378,8 @@ const sl: RegistryCopy = {
       dna_vwd2: "Test DNK za von Willebrandovo bolezen tipa 2 (vWD2), dedno motnjo strjevanja krvi",
       dna_l2hga: "Test DNK za L-2-hidroksiglutarno acidurijo (L-2-HGA), dedno presnovno bolezen živčevja",
       dna_pll: "Test DNK za primarno luksacijo leče (PLL), dedno bolezen oči, pri kateri leča zdrsne s svojega mesta",
+      dna_mps3b: "Test DNK za mukopolisaharidozo tipa IIIB (MPS IIIB), dedno presnovno bolezen živčevja",
+      dna_tbox: "Test DNK za gen T-box, ki povzroča naravno kratek rep",
       dna_loa: "Test DNK za pozno nastalo ataksijo (LOA), dedno bolezen, ki prizadene ravnotežje in usklajenost gibov",
       dna_sca: "Test DNK za spinocerebelarno ataksijo (SCA), dedno bolezen živčevja",
       dna_hcm_mc: "Test DNK za hipertrofično kardiomiopatijo (MC HCM)",
@@ -502,6 +504,7 @@ const sl: RegistryCopy = {
     familial_nephropathy: "Pri pasmi se pojavlja dedna bolezen ledvic (družinska nefropatija); za starše je na voljo test DNK.",
     hereditary_nephritis: "Pri pasmi se pojavlja dedna bolezen ledvic (dedni nefritis, imenovan tudi samojedska dedna glomerulopatija).",
     hereditary_nephritis_pkd: "Pri pasmi se pojavljata dedni bolezni ledvic (dedni nefritis in policistična bolezen ledvic).",
+    mucopolysaccharidosis_mps3b: "Pri pasmi se pojavlja mukopolisaharidoza tipa IIIB, dedna presnovna bolezen, ki prizadene živčevje; na voljo je test DNK staršev.",
     panosteitis: "Pri pasmi se lahko pojavi panosteitis, boleče vnetje dolgih kosti, ki navadno prizadene mlade pse med rastjo.",
     splenic_torsion: "Pri pasmi je zasuk vranice, ki zahteva nujno pomoč veterinarja, pogostejši kot pri drugih velikih pasmah.",
     urinary_incontinence: "Pri pasmi se lahko pojavi inkontinenca, nehotno uhajanje urina.",
@@ -741,6 +744,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club ga opisuje kot pogumnega, polnega energije in igrivega, priporoča do 1 ure gibanja na dan in česanje enkrat na teden, navaja, da mu dlaka izpada, ter ga uvršča med ogrožene britanske pasme. PetMD piše, da so miniaturni bulterierji na splošno ljubeči in dobri z otroki ter prijazni družinski spremljevalci, da se ob pravilni socializaciji lahko razumejo z drugimi živalmi, da potrebujejo redno gibanje in miselne izzive ter da ne uspevajo, če so dolgo sami; svetuje zgodnjo socializacijo in česanje približno enkrat na teden.",
       ],
       sources: ["S818", "S820", "S821", "S10"],
+    },
+    schipperke: {
+      aka: "Schipperke, šiperke, siperke, mali kapitan, Little Captain",
+      text: [
+        "Schipperke je majhen ovčarski pes iz Belgije; FCI ga uvršča med ovčarske pse, njen standard pa ga opisuje kot volčjemu podobnega psa majhnih mer, a zelo čvrste postave, povsem črnega, z ovratnikom, grivo in »hlačkami«. Standard FCI navaja težo 3–9 kg (zaželeno povprečje 4–7 kg), PetMD pa višino 10–13 palcev (približno 25–33 cm); pes te velikosti doraste pri približno 9–12 mesecih (velikostni razred PetMD). Velika britanska raziskava (McMillan in sod. 2024) je ugotovila mediano življenjske dobe 14,2 leta, The Royal Kennel Club pa navaja več kot 12 let.",
+        "Standard FCI ga opisuje kot odličnega malega čuvaja, polnega življenjske energije, zadržanega do tujcev in zelo nežnega z otroki. The Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje večkrat na teden, navaja, da mu dlaka izpada in da je primeren za stanovanje, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da schipperke potrebuje dejavnosti, ki zaposlijo um in telo, da je bister, a svojeglav, da imajo nekateri močan lovski nagon, ter svetuje zgodnjo socializacijo, vsakodnevno ščetkanje zob in čiščenje ušes vsaka dva tedna; VCA svetuje česanje vsaj dvakrat na teden.",
+      ],
+      sources: ["S824", "S825", "S826", "S827", "S828", "S771", "S10"],
     },
 
     lhasa_apso: {
