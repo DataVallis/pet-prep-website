@@ -725,7 +725,15 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje večkrat na teden, navaja, da mu dlaka izpada in da je primeren za stanovanje, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da je japonski čin ploskoobrazna (brahicefalna) pasma, ki lahko težje diha in se hitro pregreje, zato naj bo gibanje v vročem ali soparnem vremenu ob hladnejših delih dneva; da se z otroki na splošno dobro razume, če so stiki pod nadzorom, da lahko razvije ločitveno tesnobo in naj gre zgodaj v šolo socializacije; svetuje česanje enkrat do dvakrat na teden, čiščenje ušes vsaka dva do tri tedne in kopanje približno enkrat na mesec.",
       ],
       sources: ["S806", "S10", "S123", "S805", "S809"],
+    },    norwich_terrier: {
+      aka: "Norwich Terrier, norwiški terier, norwich",
+      text: [
+        "Norwich terier je eden najmanjših terierjev, iz Velike Britanije; standard FCI ga opisuje kot nizkega, živahnega, čvrstega in močnega malega psa s trdo, žimasto, ravno dlako, ki okoli glave tvori ovratnik, s pokonci stoječimi ušesi s koničastimi vrhovi, v vseh odtenkih rdeče, pšenično rumene, črno-rjave ali sivkaste (grizzle) barve, ter navaja idealno višino 25 cm. Standard UKC navaja idealno težo približno 12 funtov (približno 5,4 kg) za samce in samice; pes te velikosti doraste pri približno 9–12 mesecih (velikostni razred PetMD). The Royal Kennel Club navaja življenjsko dobo več kot 10 let, PetMD pa 12–15 let.",
+        "The Royal Kennel Club ga opisuje kot enega najmanjših terierjev ljubeznive narave, priporoča do 1 ure gibanja na dan in česanje večkrat na teden, navaja, da mu dlaka izpada in da je primeren za stanovanje, ter ga uvršča med ogrožene britanske pasme. PetMD piše, da se norwich terierji navadno dobro razumejo z otroki in drugimi živalmi, da so zelo živahni in potrebujejo vsakodnevno gibanje in miselne izzive, da imajo močan lovski nagon, zato sta varen povodec in dobro ograjen vrt nujna, in da jih je treba socializirati že zgodaj; svetuje česanje vsaj dvakrat na teden, ščetkanje zob vsaj enkrat na teden, striženje krempljev približno enkrat na mesec in kopanje največ enkrat na tri mesece.",
+      ],
+      sources: ["S812", "S815", "S10", "S813", "S814"],
     },
+
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
       text: [
