@@ -812,6 +812,28 @@
         "Berger de Beauce",
         "Bas rouge"
       ]
+    },
+    "bouvier_des_flandres": {
+      "name": "Bovaro delle Fiandre",
+      "slug": "bovaro-delle-fiandre",
+      "synonyms": [
+        "Bouvier des Flandres"
+      ]
+    },
+    "borzoi": {
+      "name": "Borzoi",
+      "slug": "borzoi",
+      "synonyms": [
+        "Levriero russo"
+      ]
+    },
+    "japanese_chin": {
+      "name": "Chin giapponese",
+      "slug": "chin-giapponese",
+      "synonyms": [
+        "Japanese Chin",
+        "Cane giapponese Chin"
+      ]
     }
   },
   "suitability_labels": {
