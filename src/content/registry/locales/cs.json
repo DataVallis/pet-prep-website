@@ -943,6 +943,88 @@
         "Apso",
         "Lhasa-apso"
       ]
+    },
+    "border_terrier": {
+      "name": "Border teriér",
+      "slug": "border-terier",
+      "synonyms": [
+        "Border terrier",
+        "Border",
+        "Border terier"
+      ]
+    },
+    "leonberger": {
+      "name": "Leonberger",
+      "slug": "leonberger",
+      "synonyms": [
+        "Leonberg",
+        "Leo",
+        "leonbergr"
+      ]
+    },
+    "beauceron": {
+      "name": "Beauceron",
+      "slug": "beauceron",
+      "synonyms": [
+        "Bos de Beauce",
+        "Berger de Beauce",
+        "Beauce",
+        "Bas rouge"
+      ]
+    },
+    "bouvier_des_flandres": {
+      "name": "Flanderský bouvier",
+      "slug": "flandersky-bouvier",
+      "synonyms": [
+        "Bouvier des Flandres",
+        "Bouvier",
+        "flanderský pastevecký pes"
+      ]
+    },
+    "borzoi": {
+      "name": "Barzoj",
+      "slug": "barzoj",
+      "synonyms": [
+        "Borzoi",
+        "Ruský chrt",
+        "ruský psí chrt"
+      ]
+    },
+    "japanese_chin": {
+      "name": "Japonský chin",
+      "slug": "japonsky-chin",
+      "synonyms": [
+        "Japan-chin",
+        "Japan chin",
+        "Chin",
+        "japonský spaniel"
+      ]
+    },
+    "norwich_terrier": {
+      "name": "Norwich teriér",
+      "slug": "norwich-terier",
+      "synonyms": [
+        "Norwich terrier",
+        "Norwich",
+        "norwichský teriér"
+      ]
+    },
+    "miniature_bull_terrier": {
+      "name": "Miniaturní bulteriér",
+      "slug": "miniaturni-bulterier",
+      "synonyms": [
+        "Mini bulteriér",
+        "Miniature Bull Terrier",
+        "Mini Bull"
+      ]
+    },
+    "schipperke": {
+      "name": "Šiperka",
+      "slug": "siperka",
+      "synonyms": [
+        "Schipperke",
+        "malý kapitán"
+      ]
     }
   },
   "suitability_labels": {
