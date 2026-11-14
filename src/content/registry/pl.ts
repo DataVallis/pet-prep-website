@@ -421,6 +421,7 @@ const pl: RegistryCopy = {
       dna_tbox: "Test DNA w kierunku genu T-box, odpowiadającego za naturalnie krótki ogon",
       dna_loa: "Test DNA w kierunku ataksji o późnym początku (LOA), dziedzicznej choroby zaburzającej równowagę i koordynację ruchów",
       dna_sca: "Test DNA w kierunku ataksji rdzeniowo-móżdżkowej (SCA), dziedzicznej choroby układu nerwowego",
+      dna_chg: "Test DNA w kierunku wrodzonej niedoczynności tarczycy z wolem (CHG), dziedzicznej choroby tarczycy obecnej od urodzenia",
     },
   },
   health: {

@@ -456,6 +456,7 @@ const hr: RegistryCopy = {
       dna_tbox: "DNK test na gen T-box koji uzrokuje prirodno kratak rep",
       dna_loa: "DNK test na ataksiju s kasnim početkom (LOA), nasljednu bolest koja utječe na ravnotežu i koordinaciju",
       dna_sca: "DNK test na spinocerebelarnu ataksiju (SCA), nasljednu bolest živčanog sustava",
+      dna_chg: "DNK test na prirođenu hipotireozu sa strumom (CHG), nasljednu bolest štitnjače prisutnu od rođenja",
     },
   },
   health: {

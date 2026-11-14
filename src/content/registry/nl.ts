@@ -404,6 +404,7 @@ const nl: RegistryCopy = {
       dna_tbox: "DNA-test op het T-box-gen achter de natuurlijke stompstaart",
       dna_loa: "DNA-test op laat optredende ataxie (LOA), een erfelijke ziekte die evenwicht en coördinatie aantast",
       dna_sca: "DNA-test op spinocerebellaire ataxie (SCA), een erfelijke ziekte van het zenuwstelsel",
+      dna_chg: "DNA-test op aangeboren hypothyreoïdie met struma (CHG), een erfelijke schildklierziekte die al vanaf de geboorte aanwezig is",
     },
   },
   health: {

@@ -441,6 +441,7 @@ const sv: RegistryCopy = {
       dna_tbox: "DNA-test för T-box-genen bakom den naturliga stubbsvansen",
       dna_loa: "DNA-test för sent debuterande ataxi (LOA), en ärftlig sjukdom som påverkar balans och koordination",
       dna_sca: "DNA-test för spinocerebellär ataxi (SCA), en ärftlig sjukdom i nervsystemet",
+      dna_chg: "DNA-test för medfödd hypotyreos med struma (CHG), en ärftlig sköldkörtelsjukdom som finns från födseln",
     },
   },
   health: {

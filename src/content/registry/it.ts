@@ -408,6 +408,7 @@ const it: RegistryCopy = {
       dna_tbox: "Test del DNA per il gene T-box, responsabile della coda naturalmente corta",
       dna_loa: "Test del DNA per l’atassia a esordio tardivo (LOA), una malattia ereditaria che compromette equilibrio e coordinazione",
       dna_sca: "Test del DNA per l’atassia spinocerebellare (SCA), una malattia ereditaria del sistema nervoso",
+      dna_chg: "Test del DNA per l’ipotiroidismo congenito con gozzo (CHG), una malattia ereditaria della tiroide presente dalla nascita",
     },
   },
   health: {

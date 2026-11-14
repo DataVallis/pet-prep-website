@@ -395,6 +395,7 @@ const es: RegistryCopy = {
       dna_tbox: "Prueba de ADN del gen T-box, responsable de la cola corta natural",
       dna_loa: "Prueba de ADN de ataxia de aparición tardía (LOA), una enfermedad hereditaria que afecta al equilibrio y la coordinación",
       dna_sca: "Prueba de ADN de ataxia espinocerebelosa (SCA), una enfermedad hereditaria del sistema nervioso",
+      dna_chg: "Prueba de ADN de hipotiroidismo congénito con bocio (CHG), una enfermedad hereditaria de la tiroides presente desde el nacimiento",
     },
   },
   health: {

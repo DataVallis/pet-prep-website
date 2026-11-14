@@ -382,6 +382,7 @@ const sl: RegistryCopy = {
       dna_tbox: "Test DNK za gen T-box, ki povzroča naravno kratek rep",
       dna_loa: "Test DNK za pozno nastalo ataksijo (LOA), dedno bolezen, ki prizadene ravnotežje in usklajenost gibov",
       dna_sca: "Test DNK za spinocerebelarno ataksijo (SCA), dedno bolezen živčevja",
+      dna_chg: "Test DNK za prirojeno hipotiroidijo z golšo (CHG), dedno bolezen ščitnice, ki je prisotna od rojstva",
       dna_hcm_mc: "Test DNK za hipertrofično kardiomiopatijo (MC HCM)",
       dna_sma: "Test DNK za spinalno mišično atrofijo (SMA)",
       dna_pk_def: "Test DNK za pomanjkanje piruvat-kinaze (PK def)",
@@ -760,6 +761,14 @@ const sl: RegistryCopy = {
         "Standard FCI opisuje belgijskega ovčarja kot pozornega in dejavnega psa, polnega energije, brez strahu ali napadalnosti. The Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje večkrat na teden, navaja, da mu dlaka izpada in da potrebuje veliko hišo z velikim vrtom, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da se tervuren tesno naveže na družino, potrebuje veliko gibanja in miselnih izzivov ter lahko poskuša »pasti« otroke in manjše živali; svetuje zgodnjo socializacijo, česanje enkrat na teden (med menjavo dlake skoraj vsak dan), čiščenje ušes vsakih en do dva tedna in kopanje vsakih štiri do šest tednov.",
       ],
       sources: ["S312", "S313", "S830", "S832", "S10"],
+    },
+    toy_fox_terrier: {
+      aka: "toy fox terrier, amertoy, American Toy Terrier, TFT, Toy Fox Terrier",
+      text: [
+        "Toy fox terier je majhen ameriški terier iz skupine pritlikavih psov AKC; standard AKC opisuje uravnoteženega, atletsko grajenega pritlikavega psa s kratko, svilnato dlako, pokončnimi koničastimi uhlji in pretežno belim telesom ter trobarvno, belo-rjavkasto, belo-črno ali belo-čokoladno-rjavkasto glavo. PetMD navaja težo 4–9 funtov (okoli 1,8–4 kg) in višino 8,5–11,5 palca (okoli 21–29 cm); pes te velikosti zraste do okoli 8–12 mesecev (PetMD). PetMD in WebMD navajata življenjsko dobo 13–15 let.",
+        "Standard AKC toy fox terierja opisuje kot inteligentnega, budnega, prijaznega in zvestega lastnikom. PetMD priporoča vsaj eno uro gibanja na dan, česanje enkrat ali dvakrat na teden ter zgodnjo vzgojo in socializacijo, in piše, da ima pasma še vedno močan lovski nagon. WebMD navaja, da so odlični družabniki za obzirne, predvsem starejše otroke, družinam z majhnimi otroki pa jih ne priporoča; ob dolgem samotenju lahko pokažejo ločitveno tesnobo, svetuje pa vsakodnevno umivanje zob, tedensko čiščenje ušes in mesečno striženje krempljev.",
+      ],
+      sources: ["S833", "S834", "S835", "S10"],
     },
 
     lhasa_apso: {

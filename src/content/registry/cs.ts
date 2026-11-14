@@ -453,6 +453,7 @@ const cs: RegistryCopy = {
       dna_tbox: "DNA test na gen T-box, který způsobuje přirozeně krátký ocas",
       dna_loa: "DNA test na pozdně nastupující ataxii (LOA), dědičné onemocnění, které narušuje rovnováhu a koordinaci",
       dna_sca: "DNA test na spinocerebelární ataxii (SCA), dědičné onemocnění nervové soustavy",
+      dna_chg: "DNA test na vrozenou hypotyreózu se strumou (CHG), dědičné onemocnění štítné žlázy přítomné od narození",
     },
   },
   health: {

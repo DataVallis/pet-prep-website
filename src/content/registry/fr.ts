@@ -400,6 +400,7 @@ const fr: RegistryCopy = {
       dna_tbox: "Test ADN du gène T-box, à l'origine de la queue naturellement courte",
       dna_loa: "Test ADN de l’ataxie d’apparition tardive (LOA), une maladie héréditaire qui affecte l’équilibre et la coordination",
       dna_sca: "Test ADN de l’ataxie spinocérébelleuse (SCA), une maladie héréditaire du système nerveux",
+      dna_chg: "Test ADN de l’hypothyroïdie congénitale avec goitre (CHG), une maladie héréditaire de la thyroïde présente dès la naissance",
     },
   },
   health: {
