@@ -494,6 +494,7 @@ const fi: RegistryCopy = {
       dna_tbox: "DNA-testi T-box-geenille, joka aiheuttaa luonnollisen töpöhännän",
       dna_loa: "DNA-testi: myöhään alkava ataksia (LOA) – perinnöllinen sairaus, joka heikentää tasapainoa ja liikkeiden koordinaatiota",
       dna_sca: "DNA-testi: spinoserebellaarinen ataksia (SCA) – perinnöllinen hermoston sairaus",
+      dna_chg: "DNA-testi: synnynnäinen kilpirauhasen vajaatoiminta ja struuma (CHG) – perinnöllinen, syntymästä asti esiintyvä kilpirauhasen sairaus",
     },
   },
   health: {

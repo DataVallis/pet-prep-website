@@ -378,6 +378,7 @@ const de: RegistryCopy = {
       dna_tbox: "DNA-Test auf das T-Box-Gen, das die natürliche Stummelrute verursacht",
       dna_loa: "DNA-Test auf spät einsetzende Ataxie (LOA), eine erbliche Erkrankung, die Gleichgewicht und Koordination beeinträchtigt",
       dna_sca: "DNA-Test auf spinozerebelläre Ataxie (SCA), eine erbliche Erkrankung des Nervensystems",
+      dna_chg: "DNA-Test auf angeborene Schilddrüsenunterfunktion mit Kropf (CHG), eine erbliche Schilddrüsenerkrankung, die von Geburt an besteht",
     },
   },
   health: {

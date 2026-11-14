@@ -401,6 +401,7 @@ const pt: RegistryCopy = {
       dna_tbox: "Teste de ADN para o gene T-box, responsável pela cauda naturalmente curta",
       dna_loa: "Teste de ADN da ataxia de início tardio (LOA), uma doença hereditária que afeta o equilíbrio e a coordenação",
       dna_sca: "Teste de ADN da ataxia espinocerebelosa (SCA), uma doença hereditária do sistema nervoso",
+      dna_chg: "Teste de ADN do hipotiroidismo congénito com bócio (CHG), uma doença hereditária da tiroide presente desde o nascimento",
     },
   },
   health: {

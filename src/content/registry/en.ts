@@ -376,6 +376,7 @@ const en: RegistryCopy = {
       dna_tbox: "DNA test for the T-box gene behind the natural bob tail",
       dna_loa: "DNA test for late onset ataxia (LOA), an inherited disease that affects balance and coordination",
       dna_sca: "DNA test for spinocerebellar ataxia (SCA), an inherited disease of the nervous system",
+      dna_chg: "DNA test for congenital hypothyroidism with goiter (CHG), an inherited thyroid disease present from birth",
     },
   },
   health: {
@@ -740,6 +741,14 @@ const en: RegistryCopy = {
         "The FCI standard calls the Belgian Shepherd a watchful and active dog, bursting with energy, showing no fear or aggressiveness. The Royal Kennel Club recommends more than 2 hours of exercise a day and grooming more than once a week, says the breed sheds and suits a large house with a large garden, and lists it in Breed Watch Category 1. PetMD says Tervurens form close bonds with their family, need a lot of physical activity and mental stimulation, may try to herd children and smaller animals, and recommends early socialisation, weekly brushing (near daily while shedding), cleaning the ears every one or two weeks and a bath every four to six weeks.",
       ],
       sources: ["S312", "S313", "S830", "S832", "S10"],
+    },
+    toy_fox_terrier: {
+      aka: "American Toy Terrier, Amertoy, TFT, toy fox terier",
+      text: [
+        "The Toy Fox Terrier is a small American terrier in the AKC Toy Group; the AKC standard describes a well-balanced toy dog of athletic appearance, with a short, satiny coat, erect pointed ears and a mostly white body with a tri-colour, white and tan, white and black or white, chocolate and tan head. PetMD gives a weight of 4–9 pounds (about 1.8–4 kg) and a height of 8.5–11.5 inches (about 21–29 cm); a dog of this size is fully grown at about 8–12 months (PetMD). PetMD and WebMD give a lifespan of 13–15 years.",
+        "The AKC standard calls the Toy Fox Terrier intelligent, alert, friendly and loyal to its owners. PetMD recommends at least an hour of exercise every day, brushing once or twice a week and early training and socialisation, and says the breed still has a strong prey drive. WebMD says Toy Fox Terriers are great companions for respectful, older children but are not recommended for families with small children, may show separation anxiety when left alone for long, and recommends brushing the teeth daily, washing the ears every week and trimming the nails every month.",
+      ],
+      sources: ["S833", "S834", "S835", "S10"],
     },
 
     lhasa_apso: {

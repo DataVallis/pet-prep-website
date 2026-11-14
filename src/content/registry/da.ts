@@ -444,6 +444,7 @@ const da: RegistryCopy = {
       dna_tbox: "DNA-test for T-box-genet bag den naturlige stumphale",
       dna_loa: "DNA-test for sent indsættende ataksi (LOA), en arvelig sygdom der påvirker balance og koordination",
       dna_sca: "DNA-test for spinocerebellar ataksi (SCA), en arvelig sygdom i nervesystemet",
+      dna_chg: "DNA-test for medfødt hypothyreose med struma (CHG), en arvelig sygdom i skjoldbruskkirtlen, der er til stede fra fødslen",
     },
   },
   health: {
