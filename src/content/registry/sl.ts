@@ -770,6 +770,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S833", "S834", "S835", "S10"],
     },
+    gordon_setter: {
+      aka: "gordon seter, škotski seter, gordon, Gordon Setter, Black and Tan Setter",
+      text: [
+        "Gordonski seter je velik črno-rjav ptičar s Škotske (FCI skupina 7, ptičarji; država izvora Velika Britanija). Standard FCI ga opisuje kot elegantnega psa »galopirajočih linij« z globoko, sijočo premogovo črno dlako in kostanjevo rdečimi rjavimi oznakami; za pse navaja višino 66 cm in težo 29,5 kg, za psice 62 cm in 25,5 kg. Pes te velikosti zraste do okoli 15–18 mesecev (PetMD), Royal Kennel Club pa navaja življenjsko dobo več kot 10 let.",
+        "Standard FCI gordonskega setra opisuje kot pogumnega, odprtega in prijazne, umirjene narave; PDSA kot prijazno, inteligentno pasmo, ki rada ima opravila. Royal Kennel Club priporoča več kot dve uri gibanja na dan ter veliko hišo z vrtom, PDSA pa piše, da gosto dlako potrebuje vsakodnevno česanje. PetMD svetuje, naj se pes uro pred obrokom in po njem ne giblje intenzivno, naj se mladiči zgodaj socializirajo in naj se zaradi močnega lovskega nagona posebej vadi odpoklic. WebMD priporoča vsakodnevno umivanje zob in kopanje približno enkrat na mesec ter navaja, da se z majhnimi otroki razume le zmerno dobro.",
+      ],
+      sources: ["S841", "S842", "S843", "S844", "S845", "S10"],
+    },
 
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
