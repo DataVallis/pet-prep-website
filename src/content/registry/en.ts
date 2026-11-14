@@ -733,6 +733,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S824", "S825", "S826", "S827", "S828", "S771", "S10"],
     },
+    belgian_tervuren: {
+      aka: "Tervuren, Tervueren, Terv, Belgian Shepherd Dog (Tervueren), belgijski ovčar tervuren",
+      text: [
+        "The Belgian Tervuren is the long-haired, fawn variety of the Belgian Shepherd, a sheepdog from Belgium; the FCI recognises one Belgian Shepherd breed with four varieties. The FCI standard describes a harmoniously proportioned dog combining elegance and power, with a long coat forming a ruff, breeches and a plumed tail, and allows for the Tervueren only fawn or grey with a black overlay and a black mask (fawn preferred). It gives a height of about 62 cm for males and 58 cm for females and a weight of about 25–30 kg for males and 20–25 kg for females; a dog of this size is fully grown at about 12–15 months (PetMD size class). The Royal Kennel Club gives a lifespan of over 10 years and PetMD 12–14 years.",
+        "The FCI standard calls the Belgian Shepherd a watchful and active dog, bursting with energy, showing no fear or aggressiveness. The Royal Kennel Club recommends more than 2 hours of exercise a day and grooming more than once a week, says the breed sheds and suits a large house with a large garden, and lists it in Breed Watch Category 1. PetMD says Tervurens form close bonds with their family, need a lot of physical activity and mental stimulation, may try to herd children and smaller animals, and recommends early socialisation, weekly brushing (near daily while shedding), cleaning the ears every one or two weeks and a bath every four to six weeks.",
+      ],
+      sources: ["S312", "S313", "S830", "S832", "S10"],
+    },
 
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
