@@ -810,6 +810,43 @@
         "Beauceron",
         "Berger de Beauce"
       ]
+    },
+    "bouvier_des_flandres": {
+      "name": "Bouvier des Flandres",
+      "slug": "bouvier-des-flandres",
+      "synonyms": [
+        "Boiadeiro de Flandres"
+      ]
+    },
+    "borzoi": {
+      "name": "Borzoi",
+      "slug": "borzoi",
+      "synonyms": [
+        "Galgo russo"
+      ]
+    },
+    "japanese_chin": {
+      "name": "Chin japonês",
+      "slug": "chin-japones",
+      "synonyms": [
+        "Japanese Chin",
+        "Spaniel japonês"
+      ]
+    },
+    "norwich_terrier": {
+      "name": "Norwich terrier",
+      "slug": "norwich-terrier"
+    },
+    "miniature_bull_terrier": {
+      "name": "Bull terrier miniatura",
+      "slug": "bull-terrier-miniatura",
+      "synonyms": [
+        "Miniature Bull Terrier"
+      ]
+    },
+    "schipperke": {
+      "name": "Schipperke",
+      "slug": "schipperke"
     }
   },
   "suitability_labels": {
