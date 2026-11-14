@@ -750,6 +750,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S833", "S834", "S835", "S10"],
     },
+    gordon_setter: {
+      aka: "Black and Tan Setter, Scottish Setter, Gordon, gordonski seter",
+      text: [
+        "The Gordon Setter is a large black-and-tan gundog from Scotland (FCI Group 7, pointing dogs; country of origin Great Britain). The FCI standard describes a stylish dog with galloping lines and a deep, shining coal-black coat with chestnut-red tan markings; it gives a height of 66 cm and a weight of 29.5 kg for males, and 62 cm and 25.5 kg for females. A dog of this size is fully grown at about 15–18 months (PetMD), and the Royal Kennel Club gives a lifespan of over 10 years.",
+        "The FCI standard calls the Gordon Setter bold, outgoing and of a kindly, even disposition; PDSA describes a friendly, intelligent breed that likes to be kept busy. The Royal Kennel Club recommends more than two hours of exercise a day, a large house and garden, and PDSA says the heavy coat needs daily grooming. PetMD advises restricting exercise for an hour before and after meals, socialising puppies early and paying special attention to recall training because of the breed's high prey drive. WebMD recommends brushing the teeth daily and a bath about once a month, and says the breed is only moderately good with young children.",
+      ],
+      sources: ["S841", "S842", "S843", "S844", "S845", "S10"],
+    },
 
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
