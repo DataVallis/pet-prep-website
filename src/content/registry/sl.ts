@@ -753,6 +753,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S824", "S825", "S826", "S827", "S828", "S771", "S10"],
     },
+    belgian_tervuren: {
+      aka: "tervuren, tervueren, terv, belgijski ovčar (tervuren), Belgian Tervuren, Belgian Shepherd Dog (Tervueren)",
+      text: [
+        "Belgijski ovčar tervuren je dolgodlaka, plava različica belgijskega ovčarja, ovčarskega psa iz Belgije; FCI priznava eno pasmo belgijskega ovčarja s štirimi različicami. Standard FCI opisuje skladno grajenega psa, ki združuje eleganco in moč, z dolgo dlako, ki tvori ovratnik, »hlačke« in košat rep, in za tervurena dovoljuje le plavo ali sivo barvo s črnim nadihom in črno masko (prednost ima plava). Navaja višino približno 62 cm za pse in 58 cm za psice ter težo približno 25–30 kg za pse in 20–25 kg za psice; pes te velikosti doraste pri približno 12–15 mesecih (velikostni razred PetMD). The Royal Kennel Club navaja življenjsko dobo več kot 10 let, PetMD pa 12–14 let.",
+        "Standard FCI opisuje belgijskega ovčarja kot pozornega in dejavnega psa, polnega energije, brez strahu ali napadalnosti. The Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje večkrat na teden, navaja, da mu dlaka izpada in da potrebuje veliko hišo z velikim vrtom, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da se tervuren tesno naveže na družino, potrebuje veliko gibanja in miselnih izzivov ter lahko poskuša »pasti« otroke in manjše živali; svetuje zgodnjo socializacijo, česanje enkrat na teden (med menjavo dlake skoraj vsak dan), čiščenje ušes vsakih en do dva tedna in kopanje vsakih štiri do šest tednov.",
+      ],
+      sources: ["S312", "S313", "S830", "S832", "S10"],
+    },
 
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
