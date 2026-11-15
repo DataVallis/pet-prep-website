@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs", 10: "sighthounds" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa", TR: "Turkey", MG: "Madagascar" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa", TR: "Turkey", MG: "Madagascar", AF: "Afghanistan" };
 
 const en: RegistryCopy = {
   mistakes: {
@@ -757,6 +757,14 @@ const en: RegistryCopy = {
         "The FCI standard calls the Gordon Setter bold, outgoing and of a kindly, even disposition; PDSA describes a friendly, intelligent breed that likes to be kept busy. The Royal Kennel Club recommends more than two hours of exercise a day, a large house and garden, and PDSA says the heavy coat needs daily grooming. PetMD advises restricting exercise for an hour before and after meals, socialising puppies early and paying special attention to recall training because of the breed's high prey drive. WebMD recommends brushing the teeth daily and a bath about once a month, and says the breed is only moderately good with young children.",
       ],
       sources: ["S841", "S842", "S843", "S844", "S845", "S10"],
+    },
+    afghan_hound: {
+      aka: "Afghan, Tazi, Baluchi Hound, afganski hrt",
+      text: [
+        "The Afghan Hound is a tall, long-coated sighthound from Afghanistan (FCI Group 10, sighthounds; country of origin Afghanistan, under British patronage). The FCI standard describes a dog that gives the impression of strength and dignity, combining speed and power, with a long, very fine coat; it accepts all colours except merle. It gives an ideal height of 68–74 cm for males and 63–69 cm for females, and the AKC standard a weight of about 60 pounds (27 kg) for males and about 50 pounds (23 kg) for females. A dog of this size is fully grown at about 15–18 months (PetMD), and the Royal Kennel Club gives a lifespan of over 10 years.",
+        "The FCI standard calls the Afghan Hound dignified and aloof, with a certain keen fierceness. The Royal Kennel Club recommends more than two hours of exercise a day, grooming every day and a large house and garden; PDSA says the long, silky coat needs daily brushing, that Afghan Hounds, if well socialised, are good with children, and that their strong chase instinct means care around other pets. PetMD advises waiting at least an hour after a meal before exercise and a bath at least every week or two, and WebMD recommends brushing the teeth daily.",
+      ],
+      sources: ["S849", "S850", "S851", "S852", "S853", "S854", "S10"],
     },
 
     lhasa_apso: {

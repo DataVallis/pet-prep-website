@@ -16,7 +16,7 @@ type Fci = { number: number; group: number; origin: string };
 const PROPER_START = /^(Maine Coon|Chesapeake|Jack Russell)\b/;
 const mid = (name: string) => (PROPER_START.test(name) ? name : name.charAt(0).toLocaleLowerCase("sl") + name.slice(1));
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi", 10: "hrti" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turčija", MG: "Madagaskar" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turčija", MG: "Madagaskar", AF: "Afganistan" };
 
 const sl: RegistryCopy = {
   mistakes: {
@@ -777,6 +777,14 @@ const sl: RegistryCopy = {
         "Standard FCI gordonskega setra opisuje kot pogumnega, odprtega in prijazne, umirjene narave; PDSA kot prijazno, inteligentno pasmo, ki rada ima opravila. Royal Kennel Club priporoča več kot dve uri gibanja na dan ter veliko hišo z vrtom, PDSA pa piše, da gosto dlako potrebuje vsakodnevno česanje. PetMD svetuje, naj se pes uro pred obrokom in po njem ne giblje intenzivno, naj se mladiči zgodaj socializirajo in naj se zaradi močnega lovskega nagona posebej vadi odpoklic. WebMD priporoča vsakodnevno umivanje zob in kopanje približno enkrat na mesec ter navaja, da se z majhnimi otroki razume le zmerno dobro.",
       ],
       sources: ["S841", "S842", "S843", "S844", "S845", "S10"],
+    },
+    afghan_hound: {
+      aka: "afganec, afgan, tazi, Afghan Hound, Afghan",
+      text: [
+        "Afganski hrt je visok, dolgodlak hrt iz Afganistana (FCI skupina 10, hrti; država izvora Afganistan, pod britanskim pokroviteljstvom). Standard FCI ga opisuje kot psa, ki daje vtis moči in dostojanstva ter združuje hitrost in moč, z dolgo, zelo fino dlako; dovoljuje vse barve razen merle. Za pse navaja idealno višino 68–74 cm, za psice 63–69 cm, standard AKC pa težo okoli 60 funtov (27 kg) za pse in okoli 50 funtov (23 kg) za psice. Pes te velikosti zraste do okoli 15–18 mesecev (PetMD), Royal Kennel Club pa navaja življenjsko dobo več kot 10 let.",
+        "Standard FCI afganskega hrta opisuje kot dostojanstvenega in zadržanega, z nekaj ostre bojevitosti. Royal Kennel Club priporoča več kot dve uri gibanja na dan, vsakodnevno nego dlake ter veliko hišo z vrtom; PDSA piše, da dolgo, svilnato dlako potrebuje vsakodnevno česanje, da se afganski hrti ob dobri socializaciji dobro razumejo z otroki in da je zaradi močnega nagona za lovljenje potrebna previdnost ob drugih hišnih živalih. PetMD svetuje, naj po obroku vsaj eno uro počaka s sprehodom, in kopanje vsaj na teden ali dva, WebMD pa vsakodnevno umivanje zob.",
+      ],
+      sources: ["S849", "S850", "S851", "S852", "S853", "S854", "S10"],
     },
 
     lhasa_apso: {
