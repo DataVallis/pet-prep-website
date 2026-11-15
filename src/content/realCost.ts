@@ -20,6 +20,16 @@ export function realCostPath(locale: RealCostLocale): string {
   return locale === "en" ? `/${realCostSlug.en}` : `/${locale}/${realCostSlug[locale]}`;
 }
 
+/** Breeds whose register page links to this page (David 2026-11-15: Labrador only for now). */
+export const realCostBreedIds: readonly string[] = ["labrador_retriever"];
+
+/** The register page's link card for `breedId` in `locale`, or null (other breeds, other 13 languages). */
+export function realCostLinkFor(locale: string, breedId: string): { href: string; title: string; text: string; cta: string } | null {
+  if (!realCostBreedIds.includes(breedId) || !(realCostLocales as readonly string[]).includes(locale)) return null;
+  const l = locale as RealCostLocale;
+  return { href: realCostPath(l), ...realCostCopy[l].registryLink };
+}
+
 /** hreflang map of the two language versions (absolute URLs), English as x-default. */
 export function realCostAlternates(absolute: (path: string) => string): Record<string, string> {
   return { en: absolute(realCostPath("en")), sl: absolute(realCostPath("sl")), "x-default": absolute(realCostPath("en")) };
@@ -36,6 +46,8 @@ export type RealCostCopy = {
   how: { title: string; items: string[] };
   sources: { title: string; items: string[] };
   email: { title: string; text: string };
+  /** Card on the breed's register page (src/app/[locale]/[slug]/[species]/[breed]/page.tsx). */
+  registryLink: { title: string; text: string; cta: string };
 };
 
 export const realCostCopy: Record<RealCostLocale, RealCostCopy> = {
@@ -88,6 +100,11 @@ export const realCostCopy: Record<RealCostLocale, RealCostCopy> = {
       title: "About the e-mail field",
       text: "The summary works without an e-mail. If you leave one and tick the box, we save it for PetPrep news and tips; every message has an unsubscribe link.",
     },
+    registryLink: {
+      title: "How much work is a Labrador?",
+      text: "Play one day with a Labrador in 3D and see the walks, meals and costs add up over a week, a year and 13 years. With a summary parents can print.",
+      cta: "Try it",
+    },
   },
   sl: {
     meta: {
@@ -137,6 +154,11 @@ export const realCostCopy: Record<RealCostLocale, RealCostCopy> = {
     email: {
       title: "O polju za e-naslov",
       text: "Povzetek deluje brez e-naslova. Če ga vpišete in označite privolitev, ga shranimo za novice in nasvete PetPrep; v vsakem sporočilu je povezava za odjavo.",
+    },
+    registryLink: {
+      title: "Koliko dela je z labradorcem?",
+      text: "Zaženite en dan z labradorcem v 3D in poglejte, koliko sprehodov, obrokov in stroškov se nabere v tednu, letu in 13 letih. S povzetkom za starše, ki ga lahko natisnete.",
+      cta: "Preizkusi",
     },
   },
 };

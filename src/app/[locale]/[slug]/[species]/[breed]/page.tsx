@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { compareSlug, isLocale, locales, pageSlugs, pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { breedBySlug, breedsOf, registry, speciesBySlug, type Breed, type Species } from "@/content/registry/registry";
+import { realCostLinkFor } from "@/content/realCost";
 import { ownerMistakes, breedHref, breedMetaDescription, breedMetaTitle, breedUpdated, buildBreedView, compareHref, formatDay, getRegistryCopy, portraitSrc, qaText, relatedBreeds, speciesHref } from "@/lib/registry/views";
 import { buildPathMetadata } from "@/lib/seo";
 import { breadcrumbsLd, breedPageLd, faqLd, graph } from "@/lib/jsonld";
@@ -160,6 +161,8 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
   const cite = c.page.sourceLabel;
   const breed = r.breed;
   const mistakes = ownerMistakes(locale, breed);
+  // »How much work is a Labrador?« (M6-S04): Labrador only, SL + EN only (David 2026-11-15).
+  const realCost = realCostLinkFor(locale, breed.id);
 
   const ld = graph(
     breedPageLd({
@@ -253,6 +256,18 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
             />
             <figcaption className="text-[13px] text-muted">{v.portrait.caption}</figcaption>
           </figure>
+        ) : null}
+
+        {realCost ? (
+          <aside aria-labelledby="real-cost" className="mb-16 flex max-w-4xl flex-col gap-3 rounded-[22px] bg-mint-tint p-6 sm:mb-20 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+            <div className="flex flex-col gap-2">
+              <h2 id="real-cost" className="h-card text-[22px] leading-tight sm:text-[24px]">{realCost.title}</h2>
+              <p className="text-[16px] leading-relaxed text-[#2a312d]">{realCost.text}</p>
+            </div>
+            <Link href={realCost.href} className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-xl bg-graphite px-5 text-[15px] font-semibold text-white hover:opacity-90">
+              {realCost.cta}
+            </Link>
+          </aside>
         ) : null}
 
         {v.glance.length ? (
