@@ -766,6 +766,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S849", "S850", "S851", "S852", "S853", "S854", "S10"],
     },
+    australian_silky_terrier: {
+      aka: "Silky Terrier, Silky, avstralski svilnati terier",
+      text: [
+        "The Australian Silky Terrier is a small, keenly alert toy terrier from Australia (FCI Group 3, terriers; section toy terriers), known in North America as the Silky Terrier. The FCI standard asks for a flat, fine, glossy coat of silky texture in blue and tan — all shades of blue and tan are acceptable, silver and white are not — and a height of 23–26 cm for males, with females slightly smaller. The standards give no weight (\"in proportion to height\"); PetMD and WebMD put it at around 10 pounds (about 4.5 kg). A dog of this size is fully grown at about 8–12 months (PetMD), and the Royal Kennel Club gives a lifespan of over 12 years (PetMD and WebMD: 13–15 years).",
+        "The FCI standard describes a courageous and dignified toy terrier, second to none as a companion. The Royal Kennel Club recommends up to 30 minutes of exercise a day, grooming every day and says the breed suits a flat. PetMD says Silkies are good around other pets and children if socialised properly at a young age, recommends socialisation classes before 16 weeks, cleaning the ears every two to three weeks and keeping the dog on a leash or in a fenced area because of its prey drive; WebMD recommends brushing the teeth daily and a bath about once a month.",
+      ],
+      sources: ["S855", "S856", "S857", "S858", "S10"],
+    },
 
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
