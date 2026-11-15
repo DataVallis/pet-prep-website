@@ -887,6 +887,55 @@
         "Lhasa-apso",
         "Lhasa"
       ]
+    },
+    "beauceron": {
+      "name": "Beauceron",
+      "slug": "beauceron",
+      "synonyms": [
+        "Berger de Beauce"
+      ]
+    },
+    "border_terrier": {
+      "name": "Border terrier",
+      "slug": "border-terrier",
+      "synonyms": []
+    },
+    "borzoi": {
+      "name": "Borzoi",
+      "slug": "borzoi",
+      "synonyms": []
+    },
+    "bouvier_des_flandres": {
+      "name": "Bouvier des Flandres",
+      "slug": "bouvier-des-flandres",
+      "synonyms": []
+    },
+    "japanese_chin": {
+      "name": "Japanese chin",
+      "slug": "japanese-chin",
+      "synonyms": []
+    },
+    "leonberger": {
+      "name": "Leonberger",
+      "slug": "leonberger",
+      "synonyms": []
+    },
+    "miniature_bull_terrier": {
+      "name": "Miniature bullterrier",
+      "slug": "miniature-bullterrier",
+      "synonyms": [
+        "Miniature bull terrier"
+      ]
+    },
+    "norwich_terrier": {
+      "name": "Norwich terrier",
+      "slug": "norwich-terrier",
+      "synonyms": []
+    },
+    "schipperke": {
+      "name": "Schipperke",
+      "slug": "schipperke",
+      "synonyms": []
     }
   },
   "suitability_labels": {
