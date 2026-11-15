@@ -959,6 +959,76 @@
         "Apso",
         "Lhasa-apso"
       ]
+    },
+    "beauceron": {
+      "name": "Beauceron",
+      "slug": "beauceron",
+      "synonyms": [
+        "Boseron",
+        "Boseški ovčar",
+        "Berger de Beauce"
+      ]
+    },
+    "border_terrier": {
+      "name": "Border terijer",
+      "slug": "border-terijer",
+      "synonyms": [
+        "Border terrier"
+      ]
+    },
+    "borzoi": {
+      "name": "Ruski hrt",
+      "slug": "ruski-hrt",
+      "synonyms": [
+        "Borzoj",
+        "Borzoi"
+      ]
+    },
+    "bouvier_des_flandres": {
+      "name": "Flandrijski govedarski pas",
+      "slug": "flandrijski-govedarski-pas",
+      "synonyms": [
+        "Bouvier des Flandres",
+        "Bouvier",
+        "Flandrijski govedar"
+      ]
+    },
+    "japanese_chin": {
+      "name": "Japanski čin",
+      "slug": "japanski-cin",
+      "synonyms": [
+        "Japanski španijel",
+        "Japanski chin",
+        "Japanese chin"
+      ]
+    },
+    "leonberger": {
+      "name": "Leonberger",
+      "slug": "leonberger",
+      "synonyms": []
+    },
+    "miniature_bull_terrier": {
+      "name": "Minijaturni bulterijer",
+      "slug": "minijaturni-bulterijer",
+      "synonyms": [
+        "Miniature bull terrier",
+        "Minijaturni bul terijer"
+      ]
+    },
+    "norwich_terrier": {
+      "name": "Norwich terijer",
+      "slug": "norwich-terijer",
+      "synonyms": [
+        "Norwich terrier"
+      ]
+    },
+    "schipperke": {
+      "name": "Šiperke",
+      "slug": "siperke",
+      "synonyms": [
+        "Schipperke",
+        "Belgijski špic"
+      ]
     }
   },
   "suitability_labels": {
