@@ -16,7 +16,7 @@ type Fci = { number: number; group: number; origin: string };
 const PROPER_START = /^(Maine Coon|Chesapeake|Jack Russell)\b/;
 const mid = (name: string) => (PROPER_START.test(name) ? name : name.charAt(0).toLocaleLowerCase("sl") + name.slice(1));
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi", 10: "hrti" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turčija", MG: "Madagaskar" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turčija", MG: "Madagaskar", AF: "Afganistan" };
 
 const sl: RegistryCopy = {
   mistakes: {
@@ -378,8 +378,11 @@ const sl: RegistryCopy = {
       dna_vwd2: "Test DNK za von Willebrandovo bolezen tipa 2 (vWD2), dedno motnjo strjevanja krvi",
       dna_l2hga: "Test DNK za L-2-hidroksiglutarno acidurijo (L-2-HGA), dedno presnovno bolezen živčevja",
       dna_pll: "Test DNK za primarno luksacijo leče (PLL), dedno bolezen oči, pri kateri leča zdrsne s svojega mesta",
+      dna_mps3b: "Test DNK za mukopolisaharidozo tipa IIIB (MPS IIIB), dedno presnovno bolezen živčevja",
+      dna_tbox: "Test DNK za gen T-box, ki povzroča naravno kratek rep",
       dna_loa: "Test DNK za pozno nastalo ataksijo (LOA), dedno bolezen, ki prizadene ravnotežje in usklajenost gibov",
       dna_sca: "Test DNK za spinocerebelarno ataksijo (SCA), dedno bolezen živčevja",
+      dna_chg: "Test DNK za prirojeno hipotiroidijo z golšo (CHG), dedno bolezen ščitnice, ki je prisotna od rojstva",
       dna_hcm_mc: "Test DNK za hipertrofično kardiomiopatijo (MC HCM)",
       dna_sma: "Test DNK za spinalno mišično atrofijo (SMA)",
       dna_pk_def: "Test DNK za pomanjkanje piruvat-kinaze (PK def)",
@@ -476,6 +479,7 @@ const sl: RegistryCopy = {
     open_fontanelle: "Pri pasmi se lahko pojavi odprta mečava, mehko mesto na lobanji, ki se ne zapre povsem.",
     collapsing_trachea: "Pri pasmi se lahko pojavi kolaps sapnika, šibkost sapnika, ki lahko povzroča kašelj in težko dihanje.",
     gm1_gangliosidosis: "Pri pasmi se lahko pojavi gangliozidoza GM1, dedna bolezen živčevja; test DNK staršev jo lahko izključi.",
+    gm2_gangliosidosis: "Pri pasmi so ugotovili gangliozidozo GM2, smrtno dedno bolezen živčevja.",
     addisons_disease: "Pri pasmi se lahko pojavi Addisonova bolezen, pomanjkanje hormonov nadledvične žleze.",
     protein_losing_disease: "Pri pasmi se lahko pojavijo bolezni, pri katerih telo izgublja beljakovine skozi ledvice ali črevesje, kar lahko povzroči drisko in hujšanje.",
     diabetes_mellitus: "Pri pasmi se lahko pojavi sladkorna bolezen (diabetes mellitus), pri kateri telo ne uravnava dobro krvnega sladkorja.",
@@ -500,6 +504,8 @@ const sl: RegistryCopy = {
     ear_infections_prone: "Pasma je nagnjena k vnetjem ušes; skrbno pazite na higieno ušes.",
     familial_nephropathy: "Pri pasmi se pojavlja dedna bolezen ledvic (družinska nefropatija); za starše je na voljo test DNK.",
     hereditary_nephritis: "Pri pasmi se pojavlja dedna bolezen ledvic (dedni nefritis, imenovan tudi samojedska dedna glomerulopatija).",
+    hereditary_nephritis_pkd: "Pri pasmi se pojavljata dedni bolezni ledvic (dedni nefritis in policistična bolezen ledvic).",
+    mucopolysaccharidosis_mps3b: "Pri pasmi se pojavlja mukopolisaharidoza tipa IIIB, dedna presnovna bolezen, ki prizadene živčevje; na voljo je test DNK staršev.",
     panosteitis: "Pri pasmi se lahko pojavi panosteitis, boleče vnetje dolgih kosti, ki navadno prizadene mlade pse med rastjo.",
     splenic_torsion: "Pri pasmi je zasuk vranice, ki zahteva nujno pomoč veterinarja, pogostejši kot pri drugih velikih pasmah.",
     urinary_incontinence: "Pri pasmi se lahko pojavi inkontinenca, nehotno uhajanje urina.",
@@ -701,6 +707,102 @@ const sl: RegistryCopy = {
       ],
       sources: ["S790", "S268", "S10", "S787", "S791"],
     },
+    bouvier_des_flandres: {
+      aka: "Bouvier des Flandres, bouvier, flandrijski govedar, flanders cattle dog, vlaamse koehond",
+      text: [
+        "Flandrijski govedar (bouvier des Flandres) je gonič goveda iz Flandrije v Belgiji in Franciji; standard FCI ga opisuje kot kratkega, čokatega, močnega psa z močnimi, mišičastimi nogami in grobo, suho, rahlo skuštrano dlako, dolgo približno 6 cm, z brki in polno brado, navadno sive, tigraste ali s črnim nadihom (sprejeta je tudi enotno črna), ter navaja višino 62–68 cm in težo približno 35–40 kg pri psih ter 59–65 cm in približno 27–35 kg pri psicah. Pes te velikosti doraste pri približno 15–18 mesecih (velikostni razred PetMD); britanska raziskava iz leta 2024 (McMillan in sod., tabela Dogs Trust) navaja mediano pričakovane življenjske dobe 11,3 leta.",
+        "The Royal Kennel Club ga opisuje kot močnega in vsestranskega psa, ki je sprva gnal govedo, priporoča do 1 ure gibanja na dan, česanje vsak dan ter veliko hišo z velikim vrtom in ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da se lahko dobro razume z majhnimi otroki in drugimi velikimi psi, če so prvi stiki pod nadzorom, da ima močan lovski nagon do mačk in malih živali, da potrebuje zgodnjo socializacijo in se rad zredi, ter svetuje česanje vsaj enkrat do dvakrat na teden, čiščenje ušes vsaka dva do tri tedne, striženje krempljev vsake tri do štiri tedne in nobenega gibanja eno uro pred obrokom in eno uro po njem.",
+      ],
+      sources: ["S797", "S10", "S123", "S795", "S798"],
+    },
+    borzoi: {
+      aka: "Borzoi, borzoj, ruski chrt, Russian Wolfhound, Russian Hunting Sighthound",
+      text: [
+        "Ruski hrt (borzoj) je dolgodlaki hrt iz Rusije, vzrejen za lov na zajce in lisice; standard FCI ga opisuje kot plemenitega, visokega, vitkega in močnega psa na razmeroma dolgih nogah z dolgo, svilnato, valovito dlako, ki je lahko katere koli barve od bele do črne, razen rjave, modre in izabelne, ter navaja zaželeno višino 75–85 cm pri psih in 68–78 cm pri psicah. PDSA navaja povprečno težo 27–47 kg pri psih in psicah ter življenjsko dobo več kot 10 let, PetMD 9–14 let; pes te velikosti doraste pri približno 15–18 mesecih (velikostni razred PetMD).",
+        "PDSA priporoča najmanj 1 uro gibanja na dan, razdeljeno na nekaj sprehodov, brez povodca le na varnem, ograjenem mestu. Piše, da imajo ruski hrti zelo močan lovski nagon in jih ne priporoča k manjšim živalim ali mlajšim otrokom, da so primerni za izkušene lastnike in potrebujejo nekoga doma večino časa, da jih je treba socializirati že od mladosti in česati nekajkrat na teden; med obrokom in gibanjem naj bo premor. PetMD svetuje česanje vsaj dva- do trikrat na teden in kot najpogostejšo zdravstveno težavo navaja napihnjenost želodca.",
+      ],
+      sources: ["S802", "S800", "S803", "S10"],
+    },
+    japanese_chin: {
+      aka: "Japanese Chin, japonski cin, čin, Japanese Spaniel",
+      text: [
+        "Japonski čin je majhen spremljevalni pes z Japonske; standard The Royal Kennel Club ga opisuje kot elegantnega, plemenitega, čvrstega malega psa z bujno, dolgo, svilnato dlako, črno-belo ali rdeče-belo (nikoli trobarvno), s kratkim, širokim gobčkom in začudenim pogledom ter navaja idealno težo 1,8–3,2 kg, PetMD pa višino 8–11 palcev (približno 20–28 cm). Pes te velikosti doraste pri približno 8–12 mesecih (velikostni razred PetMD); britanska raziskava iz leta 2024 (McMillan in sod., tabela Dogs Trust) navaja mediano pričakovane življenjske dobe 12,5 leta.",
+        "The Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje večkrat na teden, navaja, da mu dlaka izpada in da je primeren za stanovanje, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da je japonski čin ploskoobrazna (brahicefalna) pasma, ki lahko težje diha in se hitro pregreje, zato naj bo gibanje v vročem ali soparnem vremenu ob hladnejših delih dneva; da se z otroki na splošno dobro razume, če so stiki pod nadzorom, da lahko razvije ločitveno tesnobo in naj gre zgodaj v šolo socializacije; svetuje česanje enkrat do dvakrat na teden, čiščenje ušes vsaka dva do tri tedne in kopanje približno enkrat na mesec.",
+      ],
+      sources: ["S806", "S10", "S123", "S805", "S809"],
+    },    norwich_terrier: {
+      aka: "Norwich Terrier, norwiški terier, norwich",
+      text: [
+        "Norwich terier je eden najmanjših terierjev, iz Velike Britanije; standard FCI ga opisuje kot nizkega, živahnega, čvrstega in močnega malega psa s trdo, žimasto, ravno dlako, ki okoli glave tvori ovratnik, s pokonci stoječimi ušesi s koničastimi vrhovi, v vseh odtenkih rdeče, pšenično rumene, črno-rjave ali sivkaste (grizzle) barve, ter navaja idealno višino 25 cm. Standard UKC navaja idealno težo približno 12 funtov (približno 5,4 kg) za samce in samice; pes te velikosti doraste pri približno 9–12 mesecih (velikostni razred PetMD). The Royal Kennel Club navaja življenjsko dobo več kot 10 let, PetMD pa 12–15 let.",
+        "The Royal Kennel Club ga opisuje kot enega najmanjših terierjev ljubeznive narave, priporoča do 1 ure gibanja na dan in česanje večkrat na teden, navaja, da mu dlaka izpada in da je primeren za stanovanje, ter ga uvršča med ogrožene britanske pasme. PetMD piše, da se norwich terierji navadno dobro razumejo z otroki in drugimi živalmi, da so zelo živahni in potrebujejo vsakodnevno gibanje in miselne izzive, da imajo močan lovski nagon, zato sta varen povodec in dobro ograjen vrt nujna, in da jih je treba socializirati že zgodaj; svetuje česanje vsaj dvakrat na teden, ščetkanje zob vsaj enkrat na teden, striženje krempljev približno enkrat na mesec in kopanje največ enkrat na tri mesece.",
+      ],
+      sources: ["S812", "S815", "S10", "S813", "S814"],
+    },
+    miniature_bull_terrier: {
+      aka: "Miniature Bull Terrier, mini bulterier, mini bull, mini bull terier, pritlikavi bulterier",
+      text: [
+        "Miniaturni bulterier je majhen terier iz Velike Britanije; FCI ga uvršča med bulterierje, The Royal Kennel Club pa piše, da je bil kot samostojna različica priznan leta 1943 in da so ga vzrejali iz manjših bulterierjev, da bi ostal pod 35,5 cm (14 palcev). PetMD navaja višino 10–14 palcev (približno 25–36 cm) in težo 18–28 funtov (približno 8–13 kg); pes te velikosti doraste pri približno 9–12 mesecih (velikostni razred PetMD). The Royal Kennel Club navaja življenjsko dobo več kot 10 let, PetMD pa 11–13 let.",
+        "The Royal Kennel Club ga opisuje kot pogumnega, polnega energije in igrivega, priporoča do 1 ure gibanja na dan in česanje enkrat na teden, navaja, da mu dlaka izpada, ter ga uvršča med ogrožene britanske pasme. PetMD piše, da so miniaturni bulterierji na splošno ljubeči in dobri z otroki ter prijazni družinski spremljevalci, da se ob pravilni socializaciji lahko razumejo z drugimi živalmi, da potrebujejo redno gibanje in miselne izzive ter da ne uspevajo, če so dolgo sami; svetuje zgodnjo socializacijo in česanje približno enkrat na teden.",
+      ],
+      sources: ["S818", "S820", "S821", "S10"],
+    },
+    schipperke: {
+      aka: "Schipperke, šiperke, siperke, mali kapitan, Little Captain",
+      text: [
+        "Schipperke je majhen ovčarski pes iz Belgije; FCI ga uvršča med ovčarske pse, njen standard pa ga opisuje kot volčjemu podobnega psa majhnih mer, a zelo čvrste postave, povsem črnega, z ovratnikom, grivo in »hlačkami«. Standard FCI navaja težo 3–9 kg (zaželeno povprečje 4–7 kg), PetMD pa višino 10–13 palcev (približno 25–33 cm); pes te velikosti doraste pri približno 9–12 mesecih (velikostni razred PetMD). Velika britanska raziskava (McMillan in sod. 2024) je ugotovila mediano življenjske dobe 14,2 leta, The Royal Kennel Club pa navaja več kot 12 let.",
+        "Standard FCI ga opisuje kot odličnega malega čuvaja, polnega življenjske energije, zadržanega do tujcev in zelo nežnega z otroki. The Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje večkrat na teden, navaja, da mu dlaka izpada in da je primeren za stanovanje, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da schipperke potrebuje dejavnosti, ki zaposlijo um in telo, da je bister, a svojeglav, da imajo nekateri močan lovski nagon, ter svetuje zgodnjo socializacijo, vsakodnevno ščetkanje zob in čiščenje ušes vsaka dva tedna; VCA svetuje česanje vsaj dvakrat na teden.",
+      ],
+      sources: ["S824", "S825", "S826", "S827", "S828", "S771", "S10"],
+    },
+    belgian_tervuren: {
+      aka: "tervuren, tervueren, terv, belgijski ovčar (tervuren), Belgian Tervuren, Belgian Shepherd Dog (Tervueren)",
+      text: [
+        "Belgijski ovčar tervuren je dolgodlaka, plava različica belgijskega ovčarja, ovčarskega psa iz Belgije; FCI priznava eno pasmo belgijskega ovčarja s štirimi različicami. Standard FCI opisuje skladno grajenega psa, ki združuje eleganco in moč, z dolgo dlako, ki tvori ovratnik, »hlačke« in košat rep, in za tervurena dovoljuje le plavo ali sivo barvo s črnim nadihom in črno masko (prednost ima plava). Navaja višino približno 62 cm za pse in 58 cm za psice ter težo približno 25–30 kg za pse in 20–25 kg za psice; pes te velikosti doraste pri približno 12–15 mesecih (velikostni razred PetMD). The Royal Kennel Club navaja življenjsko dobo več kot 10 let, PetMD pa 12–14 let.",
+        "Standard FCI opisuje belgijskega ovčarja kot pozornega in dejavnega psa, polnega energije, brez strahu ali napadalnosti. The Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje večkrat na teden, navaja, da mu dlaka izpada in da potrebuje veliko hišo z velikim vrtom, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da se tervuren tesno naveže na družino, potrebuje veliko gibanja in miselnih izzivov ter lahko poskuša »pasti« otroke in manjše živali; svetuje zgodnjo socializacijo, česanje enkrat na teden (med menjavo dlake skoraj vsak dan), čiščenje ušes vsakih en do dva tedna in kopanje vsakih štiri do šest tednov.",
+      ],
+      sources: ["S312", "S313", "S830", "S832", "S10"],
+    },
+    toy_fox_terrier: {
+      aka: "toy fox terrier, amertoy, American Toy Terrier, TFT, Toy Fox Terrier",
+      text: [
+        "Toy fox terier je majhen ameriški terier iz skupine pritlikavih psov AKC; standard AKC opisuje uravnoteženega, atletsko grajenega pritlikavega psa s kratko, svilnato dlako, pokončnimi koničastimi uhlji in pretežno belim telesom ter trobarvno, belo-rjavkasto, belo-črno ali belo-čokoladno-rjavkasto glavo. PetMD navaja težo 4–9 funtov (okoli 1,8–4 kg) in višino 8,5–11,5 palca (okoli 21–29 cm); pes te velikosti zraste do okoli 8–12 mesecev (PetMD). PetMD in WebMD navajata življenjsko dobo 13–15 let.",
+        "Standard AKC toy fox terierja opisuje kot inteligentnega, budnega, prijaznega in zvestega lastnikom. PetMD priporoča vsaj eno uro gibanja na dan, česanje enkrat ali dvakrat na teden ter zgodnjo vzgojo in socializacijo, in piše, da ima pasma še vedno močan lovski nagon. WebMD navaja, da so odlični družabniki za obzirne, predvsem starejše otroke, družinam z majhnimi otroki pa jih ne priporoča; ob dolgem samotenju lahko pokažejo ločitveno tesnobo, svetuje pa vsakodnevno umivanje zob, tedensko čiščenje ušes in mesečno striženje krempljev.",
+      ],
+      sources: ["S833", "S834", "S835", "S10"],
+    },
+    gordon_setter: {
+      aka: "gordon seter, škotski seter, gordon, Gordon Setter, Black and Tan Setter",
+      text: [
+        "Gordonski seter je velik črno-rjav ptičar s Škotske (FCI skupina 7, ptičarji; država izvora Velika Britanija). Standard FCI ga opisuje kot elegantnega psa »galopirajočih linij« z globoko, sijočo premogovo črno dlako in kostanjevo rdečimi rjavimi oznakami; za pse navaja višino 66 cm in težo 29,5 kg, za psice 62 cm in 25,5 kg. Pes te velikosti zraste do okoli 15–18 mesecev (PetMD), Royal Kennel Club pa navaja življenjsko dobo več kot 10 let.",
+        "Standard FCI gordonskega setra opisuje kot pogumnega, odprtega in prijazne, umirjene narave; PDSA kot prijazno, inteligentno pasmo, ki rada ima opravila. Royal Kennel Club priporoča več kot dve uri gibanja na dan ter veliko hišo z vrtom, PDSA pa piše, da gosto dlako potrebuje vsakodnevno česanje. PetMD svetuje, naj se pes uro pred obrokom in po njem ne giblje intenzivno, naj se mladiči zgodaj socializirajo in naj se zaradi močnega lovskega nagona posebej vadi odpoklic. WebMD priporoča vsakodnevno umivanje zob in kopanje približno enkrat na mesec ter navaja, da se z majhnimi otroki razume le zmerno dobro.",
+      ],
+      sources: ["S841", "S842", "S843", "S844", "S845", "S10"],
+    },
+    afghan_hound: {
+      aka: "afganec, afgan, tazi, Afghan Hound, Afghan",
+      text: [
+        "Afganski hrt je visok, dolgodlak hrt iz Afganistana (FCI skupina 10, hrti; država izvora Afganistan, pod britanskim pokroviteljstvom). Standard FCI ga opisuje kot psa, ki daje vtis moči in dostojanstva ter združuje hitrost in moč, z dolgo, zelo fino dlako; dovoljuje vse barve razen merle. Za pse navaja idealno višino 68–74 cm, za psice 63–69 cm, standard AKC pa težo okoli 60 funtov (27 kg) za pse in okoli 50 funtov (23 kg) za psice. Pes te velikosti zraste do okoli 15–18 mesecev (PetMD), Royal Kennel Club pa navaja življenjsko dobo več kot 10 let.",
+        "Standard FCI afganskega hrta opisuje kot dostojanstvenega in zadržanega, z nekaj ostre bojevitosti. Royal Kennel Club priporoča več kot dve uri gibanja na dan, vsakodnevno nego dlake ter veliko hišo z vrtom; PDSA piše, da dolgo, svilnato dlako potrebuje vsakodnevno česanje, da se afganski hrti ob dobri socializaciji dobro razumejo z otroki in da je zaradi močnega nagona za lovljenje potrebna previdnost ob drugih hišnih živalih. PetMD svetuje, naj po obroku vsaj eno uro počaka s sprehodom, in kopanje vsaj na teden ali dva, WebMD pa vsakodnevno umivanje zob.",
+      ],
+      sources: ["S849", "S850", "S851", "S852", "S853", "S854", "S10"],
+    },
+    australian_silky_terrier: {
+      aka: "silky terier, svilnati terier, silky, Australian Silky Terrier, Silky Terrier",
+      text: [
+        "Avstralski svilnati terier je majhen, zelo pozoren pritlikavi terier iz Avstralije (FCI skupina 3, terierji; sekcija pritlikavi terierji), v Severni Ameriki znan kot Silky Terrier. Standard FCI zahteva ravno, fino, bleščečo dlako svilnate strukture v modri in rjavkasti barvi — sprejemljivi so vsi odtenki modre in rjavkaste, srebrna in bela pa ne — in višino 23–26 cm za pse, psice so lahko nekoliko nižje. Standardi teže ne navajajo (»v sorazmerju z višino«); PetMD in WebMD navajata okoli 10 funtov (približno 4,5 kg). Pes te velikosti zraste do okoli 8–12 mesecev (PetMD), Royal Kennel Club pa navaja življenjsko dobo več kot 12 let (PetMD in WebMD: 13–15 let).",
+        "Standard FCI ga opisuje kot pogumnega in dostojanstvenega pritlikavega terierja, ki mu kot spremljevalcu ni para. Royal Kennel Club priporoča do 30 minut gibanja na dan in vsakodnevno nego dlake ter piše, da je primeren za stanovanje. PetMD piše, da se svilnati terierji ob pravilni zgodnji socializaciji dobro razumejo z drugimi hišnimi živalmi in otroki, priporoča tečaj socializacije pred 16. tednom, čiščenje ušes na dva do tri tedne ter povodec ali ograjo zaradi lovskega nagona; WebMD svetuje vsakodnevno umivanje zob in kopanje približno enkrat na mesec.",
+      ],
+      sources: ["S855", "S856", "S857", "S858", "S10"],
+    },
+    parson_russell_terrier: {
+      aka: "parson jack russell terier, parson terier, parson, Parson Russell Terrier, Parson Jack Russell Terrier",
+      text: [
+        "Parson russell terier je delovni terier iz Velike Britanije — delaven, živahen in gibčen, prvotno vzrejen za lov na lisice (FCI skupina 3, terierji; sekcija veliki in srednji terierji). Je druga pasma kot jack russell terier: Kennel Club ga je prvič priznal leta 1990 kot parson jack russell terierja. Standard FCI zahteva belega ali pretežno belega psa z rjavimi, limonastimi ali črnimi lisami ali katero koli kombinacijo teh barv, s kocinasto, polkocinasto ali kratko dlako, in idealno višino 36 cm za pse in 33 cm za psice. PDSA navaja povprečno težo 6–8 kg. Pes te velikosti doraste pri približno 9–12 mesecih (PetMD), Royal Kennel Club pa navaja življenjsko dobo več kot 12 let (WebMD: 13 do 15 let).",
+        "Standard FCI ga opisuje kot pogumnega in prijaznega. Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje enkrat na teden; PDSA piše, da so ti psi polni energije, da jim najbolj ustreza 1–2 uri gibanja na dan, da se dobro razumejo z otroki, da so odlični družinski psi in da jih je treba že mlade socializirati z drugimi živalmi v družini. PetMD navaja, da imajo nekateri močan lovski nagon, ter priporoča vsakodnevno ščetkanje zob, čiščenje ušes vsaka dva tedna in kopanje na dva do štiri tedne; WebMD dodaja, da ne marajo biti sami in imajo lahko ločitveno tesnobo.",
+      ],
+      sources: ["S864", "S865", "S866", "S867", "S868", "S10"],
+    },
+
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
       text: [

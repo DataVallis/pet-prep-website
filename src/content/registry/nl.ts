@@ -29,7 +29,7 @@ const hm = (t: unknown) => String(t).replace(/^0(\d)/, "$1").replace(":", ".");
 type Fci = { number: number; group: number; origin: string };
 /** Dutch FCI group names (Raad van Beheer), in running-text form. */
 const fciGroups: Record<number, string> = { 1: "herdershonden en veedrijvers, behalve Zwitserse sennenhonden", 2: "pinschers en schnauzers – molossers – Zwitserse sennenhonden en verwante rassen", 3: "terriërs", 4: "teckels", 5: "keeshonden en oertypen", 6: "lopende honden, zweethonden en verwante rassen", 7: "staande honden", 8: "retrievers, spaniëls en waterhonden", 9: "gezelschapshonden", 10: "windhonden" };
-const origins: Record<string, string> = { GB: "Groot-Brittannië", FR: "Frankrijk", DE: "Duitsland", US: "Verenigde Staten", CU: "Cuba", CH: "Zwitserland", IT: "Italië", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "België", HU: "Hongarije", JP: "Japan", ZA: "Zuid-Afrika", "BE-FR": "België / Frankrijk", PT: "Portugal", CA: "Canada", HR: "Kroatië", AU: "Australië", RU: "Rusland", IE: "Ierland", "AF-C": "Centraal-Afrika", TR: "Turkije", MG: "Madagaskar" };
+const origins: Record<string, string> = { GB: "Groot-Brittannië", FR: "Frankrijk", DE: "Duitsland", US: "Verenigde Staten", CU: "Cuba", CH: "Zwitserland", IT: "Italië", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "België", HU: "Hongarije", JP: "Japan", ZA: "Zuid-Afrika", "BE-FR": "België / Frankrijk", PT: "Portugal", CA: "Canada", HR: "Kroatië", AU: "Australië", RU: "Rusland", IE: "Ierland", "AF-C": "Centraal-Afrika", TR: "Turkije", MG: "Madagaskar", AF: "Afghanistan" };
 
 const nl: RegistryCopy = {
   mistakes: {
@@ -50,7 +50,7 @@ const nl: RegistryCopy = {
   hub: {
     title: "Leer je toekomstige huisdier kennen voordat het thuiskomt.",
     intro:
-      "Wat elke diersoort en elk ras in PetPrep echt nodig heeft – volgens kennelclubs, kattenstamboekorganisaties, veterinaire organisaties en onderzoeken, met een link naar elke bron. Plus de regels waarmee PetPrep het dier simuleert.",
+      "Wat elke diersoort en elk ras in PetPrep echt nodig heeft – volgens kennelclubs, kattenstamboekorganisaties, dierenartsenorganisaties en onderzoeken, met een link naar elke bron. Plus de regels waarmee PetPrep het dier simuleert.",
     breedCount: (n) => `${n} ${s(n, "ras", "rassen")} in het register`,
     open: "Bekijk de rassen",
     openA11y: (many) => `Bekijk de rassen: ${lc(many)}`,
@@ -58,10 +58,10 @@ const nl: RegistryCopy = {
     otherSpecies: "Meer diersoorten staan gepland.",
     methodTitle: "Zo bouwen we dit register",
     method: [
-      "Elk feit komt uit een genoemde bron – kennelclubs, kattenstamboekorganisaties, veterinaire organisaties en verenigingen, en peer-reviewed onderzoek – en linkt ernaar. Rasstandaarden vatten we in onze eigen woorden samen.",
+      "Elk feit komt uit een genoemde bron – kennelclubs, kattenstamboekorganisaties, dierenartsenorganisaties en verenigingen, en peer-reviewed onderzoek – en linkt ernaar. Rasstandaarden vatten we in onze eigen woorden samen.",
       "Waarden die door geen enkele bron worden ondersteund, tonen we nooit als feit. Waar PetPrep voor het spel een getal moet kiezen, staat dat alleen onder “Zo simuleert PetPrep het”, gemarkeerd als spelregel.",
       "Dezelfde gegevens sturen de app aan: de labels, het aantal maaltijden, de stappendoelen en de speelsessies op deze pagina’s zijn dezelfde die het huisdier in de app gebruikt.",
-      "Dit register is geen veterinair advies. Gezondheidsinformatie is alleen bedoeld als oriëntatie en is niet door een dierenarts gecontroleerd.",
+      "Dit register vervangt geen advies van een dierenarts. Gezondheidsinformatie is alleen bedoeld als oriëntatie en is niet door een dierenarts gecontroleerd.",
     ],
   },
   speciesStatus: { available: "In de app", coming_soon: "Binnenkort in de app", info_only: "Alleen ter informatie" },
@@ -246,7 +246,7 @@ const nl: RegistryCopy = {
           ? "Leert commando’s even snel als de kruising uit het gratis plan."
           : `Leert commando’s ${f.num(p.multiplier)}× zo snel als de kruising uit het gratis plan.`,
     senior_share: (p, f) => `Wordt senior in maand ${p.months} (${f.num(p.months / 12, 1)} jaar) – het laatste kwart van de verwachte levensduur van het ras.`,
-    walk_sensor: () => "Wandelingen tellen echte stappen uit Apple Health of Health Connect (met toestemming, alleen lezen) en uit de bewegingssensor van de telefoon – geen gps.",
+    walk_sensor: () => "Wandelingen tellen echte stappen uit Apple Gezondheid of Health Connect (met toestemming, alleen lezen) en uit de bewegingssensor van de telefoon – geen gps.",
     play_instead_of_steps: (p, f) =>
       `Geen wandelingen: een volwassen kat heeft ${p.sessions} ${s(p.sessions, "speelsessie", "speelsessies")} per dag met een kattenhengel nodig, met minstens ${f.num(p.gap_minutes / 60)} uur ertussen.`,
     litter_rule: (p) =>
@@ -300,7 +300,7 @@ const nl: RegistryCopy = {
       dna_poag_pll: "DNA-test op primair openhoekglaucoom en primaire lensluxatie (POAG/PLL), erfelijke oogziekten die tot blindheid kunnen leiden",
       hip_scheme: "Röntgenonderzoek op heupdysplasie (VK: BVA/KC-programma)",
       elbow_scheme: "Röntgenonderzoek op elleboogdysplasie (VK: BVA/KC-programma)",
-      eye_scheme: "Oogonderzoek door een veterinaire oogspecialist (VK: BVA/KC/ISDS-programma; bij sommige rassen met gonioscopie)",
+      eye_scheme: "Oogonderzoek door een dierenoogarts (VK: BVA/KC/ISDS-programma; bij sommige rassen met gonioscopie)",
       heart_scheme: "Hartonderzoek op mitralisklepziekte",
       boas_grading: "Ademhalingstest op brachycefaal obstructief luchtwegsyndroom (BOAS-gradering)",
       ivdd_screening: "Rugscreening op hernia (intervertebrale discusziekte, IVDD)",
@@ -400,8 +400,11 @@ const nl: RegistryCopy = {
       dna_vwd2: "DNA-test op de ziekte van Von Willebrand type 2 (vWD2), een erfelijke bloedingsstoornis",
       dna_l2hga: "DNA-test op L-2-hydroxyglutaarzuuracidurie (L-2-HGA), een erfelijke stofwisselingsziekte van het zenuwstelsel",
       dna_pll: "DNA-test op primaire lensluxatie (PLL), een erfelijke oogziekte waarbij de lens verschuift",
+      dna_mps3b: "DNA-test op mucopolysacharidose type IIIB (MPS IIIB), een erfelijke stofwisselingsziekte van het zenuwstelsel",
+      dna_tbox: "DNA-test op het T-box-gen achter de natuurlijke stompstaart",
       dna_loa: "DNA-test op laat optredende ataxie (LOA), een erfelijke ziekte die evenwicht en coördinatie aantast",
       dna_sca: "DNA-test op spinocerebellaire ataxie (SCA), een erfelijke ziekte van het zenuwstelsel",
+      dna_chg: "DNA-test op aangeboren hypothyreoïdie met struma (CHG), een erfelijke schildklierziekte die al vanaf de geboorte aanwezig is",
     },
   },
   health: {
@@ -483,6 +486,7 @@ const nl: RegistryCopy = {
     open_fontanelle: "Een open fontanel, een zachte plek op de schedel die niet helemaal sluit, kan bij het ras voorkomen.",
     collapsing_trachea: "Tracheacollaps, een zwakte van de luchtpijp die hoesten en ademhalingsproblemen kan veroorzaken, kan bij het ras voorkomen.",
     gm1_gangliosidosis: "GM1-gangliosidose, een erfelijke ziekte van het zenuwstelsel, kan bij het ras voorkomen; met een DNA-test van de ouderdieren kan die worden uitgesloten.",
+    gm2_gangliosidosis: "GM2-gangliosidose, een dodelijke erfelijke ziekte van het zenuwstelsel, is bij het ras vastgesteld.",
     addisons_disease: "De ziekte van Addison, een tekort aan hormonen van de bijnieren, kan bij het ras voorkomen.",
     protein_losing_disease: "Ziekten waarbij eiwit verloren gaat via de nieren of de darmen, en die diarree en gewichtsverlies kunnen veroorzaken, kunnen bij het ras voorkomen.",
     diabetes_mellitus: "Diabetes mellitus (suikerziekte), waarbij het lichaam de bloedsuiker niet goed kan regelen, kan bij het ras voorkomen.",
@@ -507,6 +511,8 @@ const nl: RegistryCopy = {
     ear_infections_prone: "Het ras is vatbaar voor oorontstekingen; let goed op de hygiëne van de oren.",
     familial_nephropathy: "Een erfelijke nierziekte (familiaire nefropathie) komt bij het ras voor; er is een DNA-test voor de ouderdieren beschikbaar.",
     hereditary_nephritis: "Een erfelijke nierziekte (erfelijke nefritis, ook wel erfelijke glomerulopathie van de samojeed genoemd) komt bij het ras voor.",
+    hereditary_nephritis_pkd: "Erfelijke nierziekten (erfelijke nefritis en polycysteuze nierziekte) komen bij het ras voor.",
+    mucopolysaccharidosis_mps3b: "Mucopolysacharidose type IIIB, een erfelijke stofwisselingsziekte die het zenuwstelsel aantast, komt in het ras voor; een DNA-test van de ouders is beschikbaar.",
     panosteitis: "Panosteïtis, een pijnlijke ontsteking van de lange pijpbeenderen die meestal jonge, groeiende honden treft, kan bij het ras voorkomen.",
     splenic_torsion: "Een draaiing van de milt, waarvoor je dringend naar de dierenarts moet, komt bij dit ras vaker voor dan bij andere grote rassen.",
     urinary_incontinence: "Urine-incontinentie, het onbedoeld verliezen van urine, kan bij het ras voorkomen.",
@@ -554,12 +560,12 @@ const nl: RegistryCopy = {
     needsTitle: "Wat het nodig heeft",
     needsIntro: (species) =>
       species === "cat"
-        ? "Volgens kattenstamboekorganisaties, veterinaire organisaties en onderzoeken. Waar bronnen verschillen, staat elke bron erbij."
-        : "Volgens rasstandaarden, kennelclubs, veterinaire organisaties en onderzoeken. Waar bronnen verschillen, staat elke bron erbij.",
+        ? "Volgens kattenstamboekorganisaties, dierenartsenorganisaties en onderzoeken. Waar bronnen verschillen, staat elke bron erbij."
+        : "Volgens rasstandaarden, kennelclubs, dierenartsenorganisaties en onderzoeken. Waar bronnen verschillen, staat elke bron erbij.",
     general: (many) => `Algemene richtlijnen voor ${lc(many)} (niet specifiek voor dit ras):`,
     noData: "Nog niet in onze bronnen.",
     simTitle: "Zo simuleert PetPrep het",
-    simBadge: "Spelregels, geen veterinair advies",
+    simBadge: "Spelregels, geen advies van een dierenarts",
     simIntro:
       "In PetPrep is één echte week één maand in het leven van het huisdier. Dit zijn de regels die het spel voor dit ras gebruikt. PetPrep heeft ze gekozen op basis van de bronnen op deze pagina; het zijn geen verzorgingsinstructies voor een echt huisdier.",
     simInfoOnly: "Dit ras staat alleen ter informatie in het register; de app simuleert het nog niet.",
@@ -597,7 +603,7 @@ const nl: RegistryCopy = {
     sourcesAll: "Alle bronnen tonen",
     sourcesFewer: "Minder tonen",
     sourceLabel: (id, publisher) => `Bron ${id}: ${publisher}`,
-    disclaimer: "PetPrep is een simulatie voor gezinnen. Deze pagina is geen veterinair advies – vraag voor een echt huisdier een dierenarts of de rasvereniging.",
+    disclaimer: "PetPrep is een simulatie voor gezinnen. Deze pagina vervangt geen advies van een dierenarts – vraag voor een echt huisdier een dierenarts of de rasvereniging.",
     backTo: (many) => `Alle ${lc(many)}`,
     compareWith: "Vergelijk met andere rassen",
     related: { title: "Vergelijkbare rassen", intro: (many) => `Andere ${lc(many)} in het register met vergelijkbare behoeften – elk met onderbouwde feiten.` },

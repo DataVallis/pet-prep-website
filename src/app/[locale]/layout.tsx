@@ -61,7 +61,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
           {children}
         </main>
         <Footer locale={locale} dict={dict} />
-        {/* No third-party scripts on the gift thanks / redeem pages (code and e-mail are in the DOM): M6-S01. */}
+        {/* No third-party scripts on the gift thanks / redeem pages and /auth/return (code, sign-in e-mail and password or the sign-in token are there): M6-S01, M6-S01b. */}
         <PrivatePageGate>
           <GoogleAnalytics />
           <GoogleTagManager />

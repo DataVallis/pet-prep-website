@@ -56,7 +56,7 @@ const fciGroups: Record<number, string> = {
   9: "sällskapshundar",
   10: "vinthundar",
 };
-const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrike", DE: "Tyskland", US: "USA", CU: "Kuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexiko", BE: "Belgien", HU: "Ungern", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien / Frankrike", PT: "Portugal", CA: "Kanada", HR: "Kroatien", AU: "Australien", RU: "Ryssland", IE: "Irland", "AF-C": "Centralafrika", TR: "Turkiet", MG: "Madagaskar" };
+const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrike", DE: "Tyskland", US: "USA", CU: "Kuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexiko", BE: "Belgien", HU: "Ungern", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien / Frankrike", PT: "Portugal", CA: "Kanada", HR: "Kroatien", AU: "Australien", RU: "Ryssland", IE: "Irland", "AF-C": "Centralafrika", TR: "Turkiet", MG: "Madagaskar", AF: "Afghanistan" };
 const hours = (n: number) => s(n, "timme", "timmar");
 
 const sv: RegistryCopy = {
@@ -437,8 +437,11 @@ const sv: RegistryCopy = {
       dna_vwd2: "DNA-test för von Willebrands sjukdom typ 2 (vWD2), en ärftlig blödningsrubbning",
       dna_l2hga: "DNA-test för L-2-hydroxiglutarsyrauri (L-2-HGA), en ärftlig ämnesomsättningssjukdom i nervsystemet",
       dna_pll: "DNA-test för primär linsluxation (PLL), en ärftlig ögonsjukdom där linsen glider ur sitt läge",
+      dna_mps3b: "DNA-test för mukopolysackaridos typ IIIB (MPS IIIB), en ärftlig ämnesomsättningssjukdom i nervsystemet",
+      dna_tbox: "DNA-test för T-box-genen bakom den naturliga stubbsvansen",
       dna_loa: "DNA-test för sent debuterande ataxi (LOA), en ärftlig sjukdom som påverkar balans och koordination",
       dna_sca: "DNA-test för spinocerebellär ataxi (SCA), en ärftlig sjukdom i nervsystemet",
+      dna_chg: "DNA-test för medfödd hypotyreos med struma (CHG), en ärftlig sköldkörtelsjukdom som finns från födseln",
     },
   },
   health: {
@@ -544,6 +547,7 @@ const sv: RegistryCopy = {
     open_fontanelle: "En öppen fontanell, en mjuk punkt på skallen som inte sluter sig helt, kan förekomma i rasen.",
     collapsing_trachea: "Trakeakollaps, en svaghet i luftstrupen som kan ge hosta och andningssvårigheter, kan förekomma i rasen.",
     gm1_gangliosidosis: "GM1-gangliosidos, en ärftlig sjukdom i nervsystemet, kan förekomma i rasen; ett DNA-test av föräldrarna kan utesluta den.",
+    gm2_gangliosidosis: "GM2-gangliosidos, en dödlig ärftlig sjukdom i nervsystemet, har påträffats i rasen.",
     addisons_disease: "Addisons sjukdom, brist på hormoner från binjurarna, kan förekomma i rasen.",
     protein_losing_disease: "Sjukdomar där kroppen förlorar protein via njurarna eller tarmen, och som kan ge diarré och viktnedgång, kan förekomma i rasen.",
     diabetes_mellitus: "Diabetes mellitus (sockersjuka), där kroppen inte kan reglera blodsockret ordentligt, kan förekomma i rasen.",
@@ -576,6 +580,8 @@ const sv: RegistryCopy = {
     ear_infections_prone: "Rasen är benägen att få öroninfektioner; håll noga koll på öronhygienen.",
     familial_nephropathy: "En ärftlig njursjukdom (familjär nefropati) förekommer i rasen; ett DNA-test av föräldrarna finns.",
     hereditary_nephritis: "En ärftlig njursjukdom (hereditär nefrit, även kallad samojedhundens ärftliga glomerulopati) förekommer i rasen.",
+    hereditary_nephritis_pkd: "Ärftliga njursjukdomar (hereditär nefrit och polycystisk njursjukdom) förekommer i rasen.",
+    mucopolysaccharidosis_mps3b: "Mukopolysackaridos typ IIIB, en ärftlig ämnesomsättningssjukdom som drabbar nervsystemet, förekommer i rasen; ett DNA-test av föräldrarna finns.",
     panosteitis: "Panosteit, en smärtsam inflammation i de långa rörbenen som oftast drabbar unga hundar som växer, kan förekomma i rasen.",
     urinary_incontinence: "Urininkontinens, ett okontrollerat urinläckage, kan förekomma i rasen.",
     osteochondritis: "Osteochondritis dissecans (OCD), en störning i ledbrosket hos växande hundar, kan förekomma i rasen.",

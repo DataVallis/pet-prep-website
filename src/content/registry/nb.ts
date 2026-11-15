@@ -65,7 +65,7 @@ const fciGroups: Record<number, string> = {
   9: "selskapshunder",
   10: "mynder",
 };
-const origins: Record<string, string> = { GB: "Storbritannia", FR: "Frankrike", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Sveits", IT: "Italia", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgia", HU: "Ungarn", JP: "Japan", ZA: "Sør-Afrika", "BE-FR": "Belgia/Frankrike", PT: "Portugal", CA: "Canada", HR: "Kroatia", AU: "Australia", RU: "Russland", IE: "Irland", "AF-C": "Sentral-Afrika", TR: "Tyrkia", MG: "Madagaskar" };
+const origins: Record<string, string> = { GB: "Storbritannia", FR: "Frankrike", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Sveits", IT: "Italia", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgia", HU: "Ungarn", JP: "Japan", ZA: "Sør-Afrika", "BE-FR": "Belgia/Frankrike", PT: "Portugal", CA: "Canada", HR: "Kroatia", AU: "Australia", RU: "Russland", IE: "Irland", "AF-C": "Sentral-Afrika", TR: "Tyrkia", MG: "Madagaskar", AF: "Afghanistan" };
 const hours = (n: number) => s(n, "time", "timer");
 const times = (n: number) => (n === 1 ? "én gang" : `${n} ganger`);
 /** "every N days" for the litter and care rules. */
@@ -450,8 +450,11 @@ const nb: RegistryCopy = {
       dna_vwd2: "DNA-test for von Willebrands sykdom type 2 (vWD2), en arvelig blødersykdom",
       dna_l2hga: "DNA-test for L-2-hydroksyglutarsyreuri (L-2-HGA), en arvelig stoffskiftesykdom i nervesystemet",
       dna_pll: "DNA-test for primær linseluksasjon (PLL), en arvelig øyesykdom der linsen glir ut av stilling",
+      dna_mps3b: "DNA-test for mukopolysakkaridose type IIIB (MPS IIIB), en arvelig stoffskiftesykdom i nervesystemet",
+      dna_tbox: "DNA-test for T-box-genet bak den naturlige stumphalen",
       dna_loa: "DNA-test for sent debuterende ataksi (LOA), en arvelig sykdom som påvirker balanse og koordinasjon",
       dna_sca: "DNA-test for spinocerebellar ataksi (SCA), en arvelig sykdom i nervesystemet",
+      dna_chg: "DNA-test for medfødt hypotyreose med struma (CHG), en arvelig sykdom i skjoldkjertelen som er til stede fra fødselen",
     },
   },
   health: {
@@ -559,6 +562,7 @@ const nb: RegistryCopy = {
     open_fontanelle: "Åpen fontanelle, et mykt punkt på skallen som ikke lukker seg helt, kan forekomme i rasen.",
     collapsing_trachea: "Trakeakollaps, en svakhet i luftrøret som kan gi hoste og pustevansker, kan forekomme i rasen.",
     gm1_gangliosidosis: "GM1-gangliosidose, en arvelig sykdom i nervesystemet, kan forekomme i rasen; en DNA-test av foreldrene kan utelukke den.",
+    gm2_gangliosidosis: "GM2-gangliosidose, en dødelig arvelig sykdom i nervesystemet, er funnet i rasen.",
     addisons_disease: "Addisons sykdom, mangel på hormoner fra binyrene, kan forekomme i rasen.",
     protein_losing_disease: "Proteintapende sykdommer i nyrene eller tarmen, som kan gi diaré og vekttap, kan forekomme i rasen.",
     diabetes_mellitus: "Diabetes mellitus (sukkersyke), der kroppen ikke klarer å regulere blodsukkeret ordentlig, kan forekomme i rasen.",
@@ -591,6 +595,8 @@ const nb: RegistryCopy = {
     ear_infections_prone: "Rasen er disponert for øreinfeksjoner; følg godt med på ørehygienen.",
     familial_nephropathy: "En arvelig nyresykdom (familiær nefropati) forekommer i rasen; det finnes en DNA-test av foreldrene.",
     hereditary_nephritis: "En arvelig nyresykdom (arvelig nefritt, også kalt samojedhundens arvelige glomerulopati) forekommer i rasen.",
+    hereditary_nephritis_pkd: "Arvelige nyresykdommer (arvelig nefritt og polycystisk nyresykdom) forekommer i rasen.",
+    mucopolysaccharidosis_mps3b: "Mukopolysakkaridose type IIIB, en arvelig stoffskiftesykdom som rammer nervesystemet, forekommer i rasen; en DNA-test av foreldrene er tilgjengelig.",
     panosteitis: "Panosteitt, en smertefull betennelse i de lange knoklene som oftest rammer unge hunder i vekst, kan forekomme i rasen.",
     urinary_incontinence: "Urininkontinens, ufrivillig lekkasje av urin, kan forekomme i rasen.",
     osteochondritis: "Osteochondritis dissecans (OCD), en forstyrrelse i leddbrusken hos hunder i vekst, kan forekomme i rasen.",

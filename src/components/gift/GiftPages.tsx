@@ -11,7 +11,7 @@ import { formatGiftPrice, giftBuyUrl, giftPath, giftPathsOf, isGiftEnabled, isPr
 import { Faq } from "../Faq";
 import { JsonLd } from "../JsonLd";
 import { BuyButton } from "./BuyButton";
-import { RedeemForm } from "./RedeemForm";
+import { RedeemFlow } from "./RedeemFlow";
 import { ThanksClient } from "./ThanksClient";
 
 /** The `[slug]` routes call this: the language of a gift page, or a 404 while the switch is off. */
@@ -194,7 +194,8 @@ export function GiftPage({ lang }: { lang: GiftLocale }) {
             <h2 id="gift-redeem" className="font-display text-[28px] font-extrabold leading-tight tracking-[-0.02em] sm:text-[34px]">{c.redeemLink.heading}</h2>
             <p className="leading-relaxed">{c.redeemLink.text}</p>
           </div>
-          <Link href={giftPath(lang, "redeem")} className="btn btn-primary">{c.redeemLink.button}</Link>
+          {/* Plain link: a hard navigation, so no tag-manager script from an earlier page runs on the redeem page. */}
+          <a href={giftPath(lang, "redeem")} className="btn btn-primary">{c.redeemLink.button}</a>
         </section>
       </div>
     </>
@@ -218,7 +219,7 @@ export function RedeemPage({ lang }: { lang: GiftLocale }) {
     <div className="container-page pb-24 pt-10 sm:pt-14">
       <Breadcrumb lang={lang} label={c.breadcrumb} />
       <PageHead eyebrow={c.redeem.eyebrow} title={c.redeem.title} lead={c.redeem.lead} />
-      <RedeemForm locale={lang} />
+      <RedeemFlow locale={lang} />
     </div>
   );
 }

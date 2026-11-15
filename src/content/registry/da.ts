@@ -57,7 +57,7 @@ const fciGroups: Record<number, string> = {
   9: "selskabshunde",
   10: "mynder",
 };
-const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrig", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien/Frankrig", PT: "Portugal", CA: "Canada", HR: "Kroatien", AU: "Australien", RU: "Rusland", IE: "Irland", "AF-C": "Centralafrika", TR: "Tyrkiet", MG: "Madagaskar" };
+const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrig", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien/Frankrig", PT: "Portugal", CA: "Canada", HR: "Kroatien", AU: "Australien", RU: "Rusland", IE: "Irland", "AF-C": "Centralafrika", TR: "Tyrkiet", MG: "Madagaskar", AF: "Afghanistan" };
 const hours = (n: number) => s(n, "time", "timer");
 const times = (n: number) => (n === 1 ? "én gang" : `${n} gange`);
 
@@ -440,8 +440,11 @@ const da: RegistryCopy = {
       dna_vwd2: "DNA-test for von Willebrands sygdom type 2 (vWD2), en arvelig blødersygdom",
       dna_l2hga: "DNA-test for L-2-hydroxyglutarsyreuri (L-2-HGA), en arvelig stofskiftesygdom i nervesystemet",
       dna_pll: "DNA-test for primær linseluksation (PLL), en arvelig øjensygdom hvor linsen glider ud af sin plads",
+      dna_mps3b: "DNA-test for mukopolysakkaridose type IIIB (MPS IIIB), en arvelig stofskiftesygdom i nervesystemet",
+      dna_tbox: "DNA-test for T-box-genet bag den naturlige stumphale",
       dna_loa: "DNA-test for sent indsættende ataksi (LOA), en arvelig sygdom der påvirker balance og koordination",
       dna_sca: "DNA-test for spinocerebellar ataksi (SCA), en arvelig sygdom i nervesystemet",
+      dna_chg: "DNA-test for medfødt hypothyreose med struma (CHG), en arvelig sygdom i skjoldbruskkirtlen, der er til stede fra fødslen",
     },
   },
   health: {
@@ -546,6 +549,7 @@ const da: RegistryCopy = {
     open_fontanelle: "En åben fontanel, et blødt sted på kraniet der ikke lukker sig helt, kan forekomme i racen.",
     collapsing_trachea: "Kollaps af luftrøret, en svaghed i luftrøret der kan give hoste og åndedrætsbesvær, kan forekomme i racen.",
     gm1_gangliosidosis: "GM1-gangliosidose, en arvelig sygdom i nervesystemet, kan forekomme i racen; en DNA-test af forældrene kan udelukke den.",
+    gm2_gangliosidosis: "GM2-gangliosidose, en dødelig arvelig sygdom i nervesystemet, er fundet i racen.",
     addisons_disease: "Addisons sygdom, hvor binyrerne danner for lidt hormon, kan forekomme i racen.",
     protein_losing_disease: "Sygdomme i nyrerne eller tarmen hvor kroppen taber protein, og som kan give diarré og vægttab, kan forekomme i racen.",
     diabetes_mellitus: "Sukkersyge (diabetes mellitus), hvor kroppen ikke kan styre blodsukkeret ordentligt, kan forekomme i racen.",
@@ -578,6 +582,8 @@ const da: RegistryCopy = {
     ear_infections_prone: "Racen er disponeret for øreinfektioner; hold godt øje med ørehygiejnen.",
     familial_nephropathy: "En arvelig nyresygdom (familiær nefropati) forekommer i racen; der findes en DNA-test af forældrene.",
     hereditary_nephritis: "En arvelig nyresygdom (arvelig nefritis, også kaldet samojedisk arvelig glomerulopati) forekommer i racen.",
+    hereditary_nephritis_pkd: "Arvelige nyresygdomme (arvelig nefritis og polycystisk nyresygdom) forekommer i racen.",
+    mucopolysaccharidosis_mps3b: "Mukopolysakkaridose type IIIB, en arvelig stofskiftesygdom, der rammer nervesystemet, forekommer i racen; en DNA-test af forældrene er tilgængelig.",
     panosteitis: "Panosteitis, en smertefuld betændelse i de lange knogler som oftest rammer unge hunde i vækst, kan forekomme i racen.",
     urinary_incontinence: "Urininkontinens, ufrivillig lækage af urin, kan forekomme i racen.",
     osteochondritis: "Osteochondritis dissecans (OCD), en forstyrrelse i ledbrusken hos hunde i vækst, kan forekomme i racen.",

@@ -16,7 +16,7 @@ const um = (name: string) => `um ${rn(name)}`;
 type Fci = { number: number; group: number; origin: string };
 /** Portuguese FCI group names (CPC nomenclature), in running-text form. */
 const fciGroups: Record<number, string> = { 1: "cães de pastor e boieiros (exceto boieiros suíços)", 2: "cães do tipo pinscher e schnauzer – molossoides – cães de montanha e boieiros suíços", 3: "terriers", 4: "teckels", 5: "cães do tipo spitz e do tipo primitivo", 6: "sabujos, cães de pista de sangue e raças semelhantes", 7: "cães de parar", 8: "cães levantadores e cobradores de caça – cães de água", 9: "cães de companhia", 10: "lebréus" };
-const origins: Record<string, string> = { GB: "Grã-Bretanha", FR: "França", DE: "Alemanha", US: "Estados Unidos", CU: "Cuba", CH: "Suíça", IT: "Itália", "CN-XZ": "Tibete (China)", CN: "China", MX: "México", BE: "Bélgica", HU: "Hungria", JP: "Japão", ZA: "África do Sul", "BE-FR": "Bélgica / França", PT: "Portugal", CA: "Canadá", HR: "Croácia", AU: "Austrália", RU: "Rússia", IE: "Irlanda", "AF-C": "África Central", TR: "Turquia", MG: "Madagáscar" };
+const origins: Record<string, string> = { GB: "Grã-Bretanha", FR: "França", DE: "Alemanha", US: "Estados Unidos", CU: "Cuba", CH: "Suíça", IT: "Itália", "CN-XZ": "Tibete (China)", CN: "China", MX: "México", BE: "Bélgica", HU: "Hungria", JP: "Japão", ZA: "África do Sul", "BE-FR": "Bélgica / França", PT: "Portugal", CA: "Canadá", HR: "Croácia", AU: "Austrália", RU: "Rússia", IE: "Irlanda", "AF-C": "África Central", TR: "Turquia", MG: "Madagáscar", AF: "Afeganistão" };
 /** Age-like value after a preposition: «até aos 12 meses», «até ao 1 ano», «a partir dos 10 anos». */
 const art = (t: string, sing: string, pl: string) => (/^1[\s  ]/.test(t) ? sing : pl);
 
@@ -397,8 +397,11 @@ const pt: RegistryCopy = {
       dna_vwd2: "Teste de ADN da doença de von Willebrand tipo 2 (vWD2), uma doença hereditária da coagulação",
       dna_l2hga: "Teste de ADN da acidúria L-2-hidroxiglutárica (L-2-HGA), uma doença metabólica hereditária do sistema nervoso",
       dna_pll: "Teste de ADN da luxação primária do cristalino (PLL), uma doença hereditária dos olhos em que o cristalino sai do lugar",
+      dna_mps3b: "Teste de ADN para mucopolissacaridose tipo IIIB (MPS IIIB), uma doença metabólica hereditária do sistema nervoso",
+      dna_tbox: "Teste de ADN para o gene T-box, responsável pela cauda naturalmente curta",
       dna_loa: "Teste de ADN da ataxia de início tardio (LOA), uma doença hereditária que afeta o equilíbrio e a coordenação",
       dna_sca: "Teste de ADN da ataxia espinocerebelosa (SCA), uma doença hereditária do sistema nervoso",
+      dna_chg: "Teste de ADN do hipotiroidismo congénito com bócio (CHG), uma doença hereditária da tiroide presente desde o nascimento",
     },
   },
   health: {
@@ -480,6 +483,7 @@ const pt: RegistryCopy = {
     open_fontanelle: "Na raça pode ocorrer uma fontanela aberta, um ponto mole do crânio que não fecha completamente.",
     collapsing_trachea: "Na raça pode ocorrer o colapso da traqueia, uma fraqueza da traqueia que pode provocar tosse e dificuldade em respirar.",
     gm1_gangliosidosis: "Na raça pode ocorrer a gangliosidose GM1, uma doença hereditária do sistema nervoso; um teste de ADN dos progenitores pode excluí-la.",
+    gm2_gangliosidosis: "Na raça foi detetada a gangliosidose GM2, uma doença hereditária fatal do sistema nervoso.",
     addisons_disease: "Na raça pode ocorrer a doença de Addison, uma falta de hormonas produzidas pelas glândulas suprarrenais.",
     protein_losing_disease: "Na raça podem ocorrer doenças dos rins ou do intestino com perda de proteínas, que podem provocar diarreia e perda de peso.",
     diabetes_mellitus: "Na raça pode ocorrer a diabetes mellitus, em que o organismo não consegue regular corretamente o açúcar no sangue.",
@@ -504,6 +508,8 @@ const pt: RegistryCopy = {
     ear_infections_prone: "A raça tem tendência para infeções dos ouvidos; dá muita atenção à higiene das orelhas.",
     familial_nephropathy: "Na raça ocorre uma doença renal hereditária (nefropatia familiar); existe um teste de ADN dos progenitores.",
     hereditary_nephritis: "Na raça ocorre uma doença renal hereditária (nefrite hereditária, também chamada glomerulopatia hereditária do samoiedo).",
+    hereditary_nephritis_pkd: "Na raça ocorrem doenças renais hereditárias (nefrite hereditária e doença renal policística).",
+    mucopolysaccharidosis_mps3b: "Na raça ocorre a mucopolissacaridose tipo IIIB, uma doença metabólica hereditária que afeta o sistema nervoso; existe um teste de ADN dos progenitores.",
     panosteitis: "Na raça pode ocorrer a panosteíte, uma inflamação dolorosa dos ossos longos que costuma afetar cães jovens em crescimento.",
     splenic_torsion: "A torção do baço, que exige cuidados veterinários urgentes, é mais frequente nesta raça do que noutras raças grandes.",
     urinary_incontinence: "Na raça pode ocorrer incontinência urinária, uma perda involuntária de urina.",

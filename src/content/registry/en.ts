@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs", 10: "sighthounds" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa", TR: "Turkey", MG: "Madagascar" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa", TR: "Turkey", MG: "Madagascar", AF: "Afghanistan" };
 
 const en: RegistryCopy = {
   mistakes: {
@@ -372,8 +372,11 @@ const en: RegistryCopy = {
       dna_vwd2: "DNA test for von Willebrand disease type 2 (vWD2), an inherited bleeding disorder",
       dna_l2hga: "DNA test for L-2-hydroxyglutaric aciduria (L-2-HGA), an inherited metabolic disease of the nervous system",
       dna_pll: "DNA test for primary lens luxation (PLL), an inherited eye disease in which the lens slips out of place",
+      dna_mps3b: "DNA test for mucopolysaccharidosis type IIIB (MPS IIIB), an inherited metabolic disease of the nervous system",
+      dna_tbox: "DNA test for the T-box gene behind the natural bob tail",
       dna_loa: "DNA test for late onset ataxia (LOA), an inherited disease that affects balance and coordination",
       dna_sca: "DNA test for spinocerebellar ataxia (SCA), an inherited disease of the nervous system",
+      dna_chg: "DNA test for congenital hypothyroidism with goiter (CHG), an inherited thyroid disease present from birth",
     },
   },
   health: {
@@ -455,6 +458,7 @@ const en: RegistryCopy = {
     open_fontanelle: "An open fontanelle, a soft spot on the skull that does not close fully, can occur in the breed.",
     collapsing_trachea: "A collapsing trachea, a weakness of the windpipe that can cause coughing and breathing difficulty, can occur in the breed.",
     gm1_gangliosidosis: "GM1 gangliosidosis, an inherited disease of the nervous system, can occur in the breed; a DNA test of the parents can rule it out.",
+    gm2_gangliosidosis: "GM2 gangliosidosis, a fatal inherited disease of the nervous system, has been found in the breed.",
     addisons_disease: "Addison's disease, a lack of hormones from the adrenal glands, can occur in the breed.",
     protein_losing_disease: "Protein-losing diseases of the kidneys or the gut, which can cause diarrhoea and weight loss, can occur in the breed.",
     diabetes_mellitus: "Diabetes mellitus, where the body cannot control its blood sugar properly, can occur in the breed.",
@@ -479,6 +483,8 @@ const en: RegistryCopy = {
     ear_infections_prone: "The breed is prone to ear infections; keep a close eye on ear hygiene.",
     familial_nephropathy: "An inherited kidney disease (familial nephropathy) occurs in the breed; a DNA test of the parents is available.",
     hereditary_nephritis: "An inherited kidney disease (hereditary nephritis, also called Samoyed hereditary glomerulopathy) occurs in the breed.",
+    hereditary_nephritis_pkd: "Inherited kidney diseases (hereditary nephritis and polycystic kidney disease) occur in the breed.",
+    mucopolysaccharidosis_mps3b: "Mucopolysaccharidosis type IIIB, an inherited metabolic disease that affects the nervous system, occurs in the breed; a DNA test of the parents is available.",
     panosteitis: "Panosteitis, a painful inflammation of the long bones that usually affects young, growing dogs, can occur in the breed.",
     splenic_torsion: "Splenic torsion, a twisting of the spleen that needs urgent veterinary care, is more common in this breed than in other large breeds.",
     urinary_incontinence: "Urinary incontinence, an uncontrolled leaking of urine, can occur in the breed.",
@@ -681,6 +687,102 @@ const en: RegistryCopy = {
       ],
       sources: ["S790", "S268", "S10", "S787", "S791"],
     },
+    bouvier_des_flandres: {
+      aka: "Bouvier, Flanders Cattle Dog, Vlaamse Koehond",
+      text: [
+        "The Bouvier des Flandres is a cattle dog from Flanders, in Belgium and France; the FCI standard describes a short, compact, powerful dog with strong, well-muscled limbs, a coarse, dry, slightly tousled coat of about 6 cm with a moustache and a full beard, usually grey, brindle or overlaid with black (uniform black is also accepted), and gives a height of 62–68 cm and a weight of about 35–40 kg for males, and 59–65 cm and about 27–35 kg for bitches. A dog of this size is fully grown at about 15–18 months (PetMD size class); a 2024 UK study (McMillan et al., tabled by Dogs Trust) gives a median life expectancy of 11.3 years.",
+        "The Royal Kennel Club calls the Bouvier strong and versatile, originally a cattle herder, recommends up to 1 hour of exercise a day, grooming every day and a large house with a large garden, and lists it in Breed Watch Category 1. PetMD says they can be good with young children and other large dogs when introductions are supervised, have a strong prey drive around cats and small pets, need early socialisation, are prone to being overweight, and recommends brushing at least once or twice a week, cleaning the ears every two to three weeks, trimming the nails every three to four weeks and no exercise one hour before and one hour after eating.",
+      ],
+      sources: ["S797", "S10", "S123", "S795", "S798"],
+    },
+    borzoi: {
+      aka: "Russian Wolfhound, Russian Hunting Sighthound, Russkaya Psovaya Borzaya, Ruski hrt",
+      text: [
+        "The Borzoi, or Russian Hunting Sighthound, is a long-haired sighthound from Russia, bred to course hare and fox; the FCI standard describes a dog of aristocratic appearance, tall, lean and strong, rather high-legged, with a long, silky, wavy coat that may be any colour from white to black except brown, blue and isabella, and gives a desirable height of 75–85 cm for males and 68–78 cm for bitches. The PDSA gives an average weight of 27–47 kg for males and females and a lifespan of over 10 years, PetMD 9–14 years; a dog of this size is fully grown at about 15–18 months (PetMD size class).",
+        "The PDSA recommends a minimum of 1 hour of exercise a day, split into a couple of walks, with time off-lead only in a secure area, says Borzois have a very high prey drive and are not recommended with smaller pets or younger children, suit experienced owners and need someone at home most of the time, should be socialised from a young age, and need brushing a few times a week; leave a gap between eating and exercising. PetMD recommends brushing at least two to three times a week and names bloat as the most common health issue.",
+      ],
+      sources: ["S802", "S800", "S803", "S10"],
+    },
+    japanese_chin: {
+      aka: "Japanese Spaniel, Japan Chin, Chin, Japonski čin",
+      text: [
+        "The Japanese Chin is a small companion dog from Japan; the Royal Kennel Club breed standard describes an elegant, aristocratic, compact little dog with a profuse, long, silky coat, black and white or red and white (never tricolour), a short, wide muzzle and a look of astonishment, and gives an ideal weight of 1.8–3.2 kg, and PetMD a height of 8–11 inches (about 20–28 cm). A dog of this size is fully grown at about 8–12 months (PetMD size class); a 2024 UK study (McMillan et al., tabled by Dogs Trust) gives a median life expectancy of 12.5 years.",
+        "The Royal Kennel Club recommends up to 30 minutes of exercise a day and grooming more than once a week, says the breed sheds and suits a flat or apartment, and lists it in Breed Watch Category 1. PetMD says the Japanese Chin is a flat-faced (brachycephalic) breed that can have difficulty breathing and overheats easily, so exercise in hot or humid weather belongs to the cooler times of the day; that it is generally good with children when interactions are supervised, can develop separation anxiety, and should go to socialisation classes early; and it recommends brushing once or twice a week, cleaning the ears every two to three weeks and a bath about monthly.",
+      ],
+      sources: ["S806", "S10", "S123", "S805", "S809"],
+    },    norwich_terrier: {
+      aka: "Norwich, Norwich terier",
+      text: [
+        "The Norwich Terrier is one of the smallest terriers, from Great Britain; the FCI standard describes a low, keen, compact and strong little dog with a hard, wiry, straight coat that forms a ruff around the face, erect ears with pointed tips, in all shades of red, wheaten, black and tan or grizzle, and gives an ideal height of 25 cm. The UKC standard gives an ideal weight of approximately 12 pounds (about 5.4 kg) for males and females; a dog of this size is fully grown at about 9–12 months (PetMD size class). The Royal Kennel Club gives a lifespan of over 10 years and PetMD 12–15 years.",
+        "The Royal Kennel Club calls the Norwich one of the smallest terriers with a lovable disposition, recommends up to 1 hour of exercise a day and grooming more than once a week, says the breed sheds and suits a flat or apartment, and lists it as a vulnerable native breed. PetMD says Norwich Terriers typically get along well with children and other pets, are high-energy and need daily exercise and mental stimulation, have strong hunting instincts, so a secure leash and a well-fenced yard are a must, and should be socialised from an early age; it recommends brushing at least twice a week, brushing the teeth at least once a week, trimming the nails about once a month and a bath no more than once every three months.",
+      ],
+      sources: ["S812", "S815", "S10", "S813", "S814"],
+    },
+    miniature_bull_terrier: {
+      aka: "Mini Bull Terrier, Mini Bull, Bull Terrier (Miniature), English Miniature Bull Terrier, miniaturni bulterier",
+      text: [
+        "The Miniature Bull Terrier is a small terrier from Great Britain; the FCI lists it among the bull type terriers, and the Royal Kennel Club says it was first recognised as a separate variety in 1943, bred from smaller Bull Terriers to stay under 35.5 cm (14 inches). PetMD gives a height of 10–14 inches (about 25–36 cm) and a weight of 18–28 pounds (about 8–13 kg); a dog of this size is fully grown at about 9–12 months (PetMD size class). The Royal Kennel Club gives a lifespan of over 10 years and PetMD 11–13 years.",
+        "The Royal Kennel Club describes the breed as courageous, full of spirit, with a fun loving attitude, recommends up to 1 hour of exercise a day and grooming once a week, says the breed sheds and lists it as a vulnerable native breed. PetMD says Miniature Bull Terriers are generally affectionate and good with children, a friendly family companion, can get along with other pets if properly socialised, need regular exercise and mental stimulation and will not thrive if left alone for long periods; it recommends early socialisation and brushing about once a week.",
+      ],
+      sources: ["S818", "S820", "S821", "S10"],
+    },
+    schipperke: {
+      aka: "Little Captain, Little Black Devil, Spitzke, šiperke",
+      text: [
+        "The Schipperke is a small sheepdog from Belgium; the FCI places it among the sheepdogs and its standard describes a lupoid dog of small dimensions but very solidly built, totally black, with a ruff, mane and culottes. The FCI standard gives a weight of 3–9 kg (an average of 4–7 kg is sought after) and PetMD a height of 10–13 inches (about 25–33 cm); a dog of this size is fully grown at about 9–12 months (PetMD size class). A large UK study (McMillan et al. 2024) found a median life expectancy of 14.2 years, and the Royal Kennel Club gives over 12 years.",
+        "The FCI standard calls the Schipperke an excellent small guard dog, bubbling with vitality, aloof with strangers and very gentle with children. The Royal Kennel Club recommends up to 1 hour of exercise a day and grooming more than once a week, says the breed sheds and suits a flat or apartment, and lists it in Breed Watch Category 1. PetMD says Schipperkes need activities that keep mind and body busy, are intelligent but strong-willed, that some keep a high prey drive, and recommends early socialisation, daily tooth brushing and cleaning the ears every two weeks; VCA recommends brushing at least twice a week.",
+      ],
+      sources: ["S824", "S825", "S826", "S827", "S828", "S771", "S10"],
+    },
+    belgian_tervuren: {
+      aka: "Tervuren, Tervueren, Terv, Belgian Shepherd Dog (Tervueren), belgijski ovčar tervuren",
+      text: [
+        "The Belgian Tervuren is the long-haired, fawn variety of the Belgian Shepherd, a sheepdog from Belgium; the FCI recognises one Belgian Shepherd breed with four varieties. The FCI standard describes a harmoniously proportioned dog combining elegance and power, with a long coat forming a ruff, breeches and a plumed tail, and allows for the Tervueren only fawn or grey with a black overlay and a black mask (fawn preferred). It gives a height of about 62 cm for males and 58 cm for females and a weight of about 25–30 kg for males and 20–25 kg for females; a dog of this size is fully grown at about 12–15 months (PetMD size class). The Royal Kennel Club gives a lifespan of over 10 years and PetMD 12–14 years.",
+        "The FCI standard calls the Belgian Shepherd a watchful and active dog, bursting with energy, showing no fear or aggressiveness. The Royal Kennel Club recommends more than 2 hours of exercise a day and grooming more than once a week, says the breed sheds and suits a large house with a large garden, and lists it in Breed Watch Category 1. PetMD says Tervurens form close bonds with their family, need a lot of physical activity and mental stimulation, may try to herd children and smaller animals, and recommends early socialisation, weekly brushing (near daily while shedding), cleaning the ears every one or two weeks and a bath every four to six weeks.",
+      ],
+      sources: ["S312", "S313", "S830", "S832", "S10"],
+    },
+    toy_fox_terrier: {
+      aka: "American Toy Terrier, Amertoy, TFT, toy fox terier",
+      text: [
+        "The Toy Fox Terrier is a small American terrier in the AKC Toy Group; the AKC standard describes a well-balanced toy dog of athletic appearance, with a short, satiny coat, erect pointed ears and a mostly white body with a tri-colour, white and tan, white and black or white, chocolate and tan head. PetMD gives a weight of 4–9 pounds (about 1.8–4 kg) and a height of 8.5–11.5 inches (about 21–29 cm); a dog of this size is fully grown at about 8–12 months (PetMD). PetMD and WebMD give a lifespan of 13–15 years.",
+        "The AKC standard calls the Toy Fox Terrier intelligent, alert, friendly and loyal to its owners. PetMD recommends at least an hour of exercise every day, brushing once or twice a week and early training and socialisation, and says the breed still has a strong prey drive. WebMD says Toy Fox Terriers are great companions for respectful, older children but are not recommended for families with small children, may show separation anxiety when left alone for long, and recommends brushing the teeth daily, washing the ears every week and trimming the nails every month.",
+      ],
+      sources: ["S833", "S834", "S835", "S10"],
+    },
+    gordon_setter: {
+      aka: "Black and Tan Setter, Scottish Setter, Gordon, gordonski seter",
+      text: [
+        "The Gordon Setter is a large black-and-tan gundog from Scotland (FCI Group 7, pointing dogs; country of origin Great Britain). The FCI standard describes a stylish dog with galloping lines and a deep, shining coal-black coat with chestnut-red tan markings; it gives a height of 66 cm and a weight of 29.5 kg for males, and 62 cm and 25.5 kg for females. A dog of this size is fully grown at about 15–18 months (PetMD), and the Royal Kennel Club gives a lifespan of over 10 years.",
+        "The FCI standard calls the Gordon Setter bold, outgoing and of a kindly, even disposition; PDSA describes a friendly, intelligent breed that likes to be kept busy. The Royal Kennel Club recommends more than two hours of exercise a day, a large house and garden, and PDSA says the heavy coat needs daily grooming. PetMD advises restricting exercise for an hour before and after meals, socialising puppies early and paying special attention to recall training because of the breed's high prey drive. WebMD recommends brushing the teeth daily and a bath about once a month, and says the breed is only moderately good with young children.",
+      ],
+      sources: ["S841", "S842", "S843", "S844", "S845", "S10"],
+    },
+    afghan_hound: {
+      aka: "Afghan, Tazi, Baluchi Hound, afganski hrt",
+      text: [
+        "The Afghan Hound is a tall, long-coated sighthound from Afghanistan (FCI Group 10, sighthounds; country of origin Afghanistan, under British patronage). The FCI standard describes a dog that gives the impression of strength and dignity, combining speed and power, with a long, very fine coat; it accepts all colours except merle. It gives an ideal height of 68–74 cm for males and 63–69 cm for females, and the AKC standard a weight of about 60 pounds (27 kg) for males and about 50 pounds (23 kg) for females. A dog of this size is fully grown at about 15–18 months (PetMD), and the Royal Kennel Club gives a lifespan of over 10 years.",
+        "The FCI standard calls the Afghan Hound dignified and aloof, with a certain keen fierceness. The Royal Kennel Club recommends more than two hours of exercise a day, grooming every day and a large house and garden; PDSA says the long, silky coat needs daily brushing, that Afghan Hounds, if well socialised, are good with children, and that their strong chase instinct means care around other pets. PetMD advises waiting at least an hour after a meal before exercise and a bath at least every week or two, and WebMD recommends brushing the teeth daily.",
+      ],
+      sources: ["S849", "S850", "S851", "S852", "S853", "S854", "S10"],
+    },
+    australian_silky_terrier: {
+      aka: "Silky Terrier, Silky, avstralski svilnati terier",
+      text: [
+        "The Australian Silky Terrier is a small, keenly alert toy terrier from Australia (FCI Group 3, terriers; section toy terriers), known in North America as the Silky Terrier. The FCI standard asks for a flat, fine, glossy coat of silky texture in blue and tan — all shades of blue and tan are acceptable, silver and white are not — and a height of 23–26 cm for males, with females slightly smaller. The standards give no weight (\"in proportion to height\"); PetMD and WebMD put it at around 10 pounds (about 4.5 kg). A dog of this size is fully grown at about 8–12 months (PetMD), and the Royal Kennel Club gives a lifespan of over 12 years (PetMD and WebMD: 13–15 years).",
+        "The FCI standard describes a courageous and dignified toy terrier, second to none as a companion. The Royal Kennel Club recommends up to 30 minutes of exercise a day, grooming every day and says the breed suits a flat. PetMD says Silkies are good around other pets and children if socialised properly at a young age, recommends socialisation classes before 16 weeks, cleaning the ears every two to three weeks and keeping the dog on a leash or in a fenced area because of its prey drive; WebMD recommends brushing the teeth daily and a bath about once a month.",
+      ],
+      sources: ["S855", "S856", "S857", "S858", "S10"],
+    },
+    parson_russell_terrier: {
+      aka: "Parson Jack Russell Terrier, Parson Terrier, PRT, parson russell terier",
+      text: [
+        "The Parson Russell Terrier is a workmanlike, active and agile working terrier from Great Britain, originally bred to work fox (FCI Group 3, terriers; section large and medium-sized terriers). It is a different breed from the Jack Russell Terrier: the Kennel Club first recognised it in 1990 as the Parson Jack Russell Terrier. The FCI standard asks for a white or predominantly white dog with tan, lemon or black markings, or any combination of these colours, a rough, broken or smooth coat, and an ideal height of 36 cm for males and 33 cm for females. PDSA gives an average weight of 6–8 kg. A dog of this size is fully grown at about 9–12 months (PetMD), and the Royal Kennel Club gives a lifespan of over 12 years (WebMD: 13 to 15 years).",
+        "The FCI standard calls the breed bold and friendly. The Royal Kennel Club recommends up to an hour of exercise a day and grooming once a week; PDSA says these dogs are full of energy, ideally need 1–2 hours of exercise a day, get on well with children, make an excellent family pet and need socialising at a young age with other family pets. PetMD notes that some have a high prey drive and recommends daily tooth brushing, cleaning the ears every two weeks and a bath every two to four weeks; WebMD adds that they don't like being alone and may have separation anxiety.",
+      ],
+      sources: ["S864", "S865", "S866", "S867", "S868", "S10"],
+    },
+
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
       text: [

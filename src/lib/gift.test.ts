@@ -6,7 +6,6 @@ import {
   giftBuyUrl,
   giftPath,
   giftPathsOf,
-  apiLocale,
   storedGiftLocale,
   isGiftEnabled,
   isPlausibleCode,
@@ -61,15 +60,21 @@ test("redeemOutcome maps every contract answer to its message key", () => {
     [422, { error: "invalid_code" }, "invalid_code"],
     [422, { error: "expired" }, "expired"],
     [422, { error: "refunded" }, "refunded"],
-    [422, { error: "no_account" }, "no_account"],
+    [401, { error: "unauthenticated" }, "session_expired"],
+    [403, { error: "not_parent" }, "signin_not_parent"],
     [409, { error: "already_redeemed" }, "already_redeemed"],
     [429, { error: "rate_limited" }, "rate_limited"],
     [502, { error: "upstream_error" }, "upstream_error"],
     [503, { error: "unavailable" }, "unavailable"],
   ];
   for (const [status, body, key] of cases) assert.equal(redeemOutcome(status, { ...(body as object), message: "x" }), key, `${status} ${JSON.stringify(body)}`);
-  // every message key is reachable from some answer
-  assert.deepEqual(new Set([...cases.map((c) => c[2]), ...clientOnlyKeys]), new Set(messageKeys));
+  // every message key is reachable from some answer (the sign-in keys come from src/lib/webSignin.ts, tested there)
+  const signInOnly = messageKeys.filter((k) => k.startsWith("signin_") && k !== "signin_not_parent");
+  assert.deepEqual(new Set([...cases.map((c) => c[2]), ...clientOnlyKeys, ...signInOnly]), new Set(messageKeys));
+  // M6-S01b: the e-mail lookup is gone, so is its answer
+  assert.ok(!(messageKeys as readonly string[]).includes("no_account"));
+  assert.equal(redeemOutcome(422, { error: "no_account" }), "upstream_error");
+  assert.equal(redeemOutcome(401, null), "upstream_error");
 });
 
 test("redeemOutcome: unknown, unparsable and network answers are upstream_error", () => {
@@ -170,9 +175,8 @@ test("public paths: localized slugs, English at the root", () => {
   }
 });
 
-test("API language: sl and en only, everything else is sent as en; stored language is any of the 15", () => {
-  assert.equal(apiLocale("sl"), "sl");
-  for (const l of locales.filter((x) => x !== "sl")) assert.equal(apiLocale(l), "en", l);
+test("stored language is any of the 15; the redeem request sends the real website language", () => {
+  assert.match(src("../components/gift/RedeemFlow.tsx"), /JSON\.stringify\(\{ code: normalizeCode\(code\), locale \}\)/);
   for (const l of locales) assert.equal(storedGiftLocale(l), l);
   assert.equal(storedGiftLocale("xx"), null);
   assert.equal(storedGiftLocale(null), null);
@@ -202,12 +206,15 @@ test("buy link opens in a new tab with noopener", () => {
 test("the code never reaches a URL, storage, a request or analytics", () => {
   const thanks = src("../components/gift/ThanksClient.tsx");
   const voucher = src("../components/gift/Voucher.tsx");
-  const redeem = src("../components/gift/RedeemForm.tsx");
+  const redeem = src("../components/gift/RedeemFlow.tsx");
   const all = [thanks, voucher, redeem, src("../components/gift/BuyButton.tsx"), src("../components/gift/GiftPages.tsx")];
   for (const file of all) {
     assert.doesNotMatch(file, /searchParams|useSearchParams|location\.(search|hash)|URLSearchParams/);
-    assert.doesNotMatch(file, /sessionStorage|indexedDB|document\.cookie|gtag|dataLayer|console\.(log|info|debug)/);
+    assert.doesNotMatch(file, /indexedDB|document\.cookie|gtag|dataLayer|console\.(log|info|debug)/);
   }
+  // sessionStorage appears only in the redeem flow, and only as the handoff / sign-in entry helpers' storage argument
+  for (const file of [thanks, voucher, src("../components/gift/BuyButton.tsx"), src("../components/gift/GiftPages.tsx")]) assert.doesNotMatch(file, /sessionStorage/);
+  for (const m of redeem.match(/[\w.]*sessionStorage/g) ?? []) assert.equal(m, "window.sessionStorage");
   // thanks + voucher: no network at all, no router push with a query, storage only for the language marker
   for (const file of [thanks, voucher]) {
     assert.doesNotMatch(file, /fetch\(|XMLHttpRequest|sendBeacon|WebSocket/);
@@ -217,11 +224,13 @@ test("the code never reaches a URL, storage, a request or analytics", () => {
   assert.ok(storageCalls.length > 0);
   for (const call of storageCalls) assert.match(call, /^localStorage\.(getItem|removeItem)\(GIFT_LANG_KEY\)$/);
   assert.doesNotMatch(thanks, /router\.(push|replace)\([^)]*code/);
-  // redeem: no storage of any kind; the only request is the POST to the API with the code in the JSON body
+  // redeem: no localStorage; the only request of its own is the POST to the API with the code in the JSON body (sign-in requests live in webSignin.ts)
   assert.doesNotMatch(redeem, /localStorage/);
   assert.equal((redeem.match(/fetch\(/g) ?? []).length, 1);
   assert.match(redeem, /\/api\/gift\/redeem/);
   assert.match(redeem, /method: "POST"/);
+  assert.match(redeem, /JSON\.stringify\(\{ code: normalizeCode\(code\), locale \}\)/); // no e-mail in the redeem body (M6-S01b)
+  assert.doesNotMatch(redeem, /code: normalizeCode\(code\),[^}]*email/);
   // the buy button only ever stores the language
   const buy = src("../components/gift/BuyButton.tsx");
   assert.deepEqual(buy.match(/localStorage\.\w+\([^)]*\)/g), ["localStorage.setItem(GIFT_LANG_KEY, locale)", "localStorage.removeItem(GIFT_LANG_KEY)"]);
@@ -235,8 +244,8 @@ test("thanks and redeem pages are noindex and never in the sitemap or llms files
 });
 
 // MA1
-test("redeem form: no field names, method post, button disabled until hydrated, never a GET", () => {
-  const f = src("../components/gift/RedeemForm.tsx");
+test("redeem flow: no field names, method post, buttons disabled until hydrated, never a GET", () => {
+  const f = src("../components/gift/RedeemFlow.tsx");
   assert.doesNotMatch(f, /\bname=/);
   assert.match(f, /<form method="post"/);
   assert.doesNotMatch(f, /method="get"/i);
@@ -263,7 +272,7 @@ test("no third-party script on the thanks and redeem pages", () => {
   assert.match(layout, /<PrivatePageGate>\s*<GoogleAnalytics \/>\s*<GoogleTagManager \/>\s*<\/PrivatePageGate>/);
   assert.match(src("../components/gift/PrivatePageGate.tsx"), /isGiftPrivatePath\(usePathname\(\)\)/);
   // the gift components load no script of their own
-  for (const f of ["ThanksClient", "RedeemForm", "Voucher", "GiftPages"]) assert.doesNotMatch(src(`../components/gift/${f}.tsx`), /next\/script|<script|createElement\("script"/);
+  for (const f of ["ThanksClient", "RedeemFlow", "AuthReturn", "Voucher", "GiftPages"]) assert.doesNotMatch(src(`../components/gift/${f}.tsx`), /next\/script|<script|createElement\("script"/);
 });
 
 // m3
@@ -282,5 +291,5 @@ test("manual build reads .env.production; refund text marked; SL copy; timeout m
   assert.match(src("../content/gift/index.ts"), /TODO\(David\): the refund wording/);
   assert.doesNotMatch(JSON.stringify(giftCopy.sl), /botr/i);
   for (const l of locales) assert.ok(giftCopy[l].messages.timeout.length > 20, l);
-  assert.match(src("../components/gift/RedeemForm.tsx"), /AbortError" \? "timeout"/);
+  assert.match(src("../components/gift/RedeemFlow.tsx"), /AbortError" \? "timeout"/);
 });

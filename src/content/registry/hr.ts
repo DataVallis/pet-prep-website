@@ -62,7 +62,7 @@ const fciGroups: Record<number, string> = {
   9: "psi za društvo i patuljasti psi",
   10: "hrtovi",
 };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francuska", DE: "Njemačka", US: "SAD", CU: "Kuba", CH: "Švicarska", IT: "Italija", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Meksiko", BE: "Belgija", HU: "Mađarska", JP: "Japan", ZA: "Južnoafrička Republika", "BE-FR": "Belgija / Francuska", PT: "Portugal", CA: "Kanada", HR: "Hrvatska", AU: "Australija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turska", MG: "Madagaskar" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francuska", DE: "Njemačka", US: "SAD", CU: "Kuba", CH: "Švicarska", IT: "Italija", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Meksiko", BE: "Belgija", HU: "Mađarska", JP: "Japan", ZA: "Južnoafrička Republika", "BE-FR": "Belgija / Francuska", PT: "Portugal", CA: "Kanada", HR: "Hrvatska", AU: "Australija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turska", MG: "Madagaskar", AF: "Afganistan" };
 /** "sat" in the nominative after a number: 1 sat, 2 sata, 5 sati, 1,5 sata. */
 const hours = (n: number) => form(n, "sat", "sata", "sati");
 /** "sat" in the genitive after "od" / "u roku od": od 1 sata, od 2 sata, od 5 sati. */
@@ -452,8 +452,11 @@ const hr: RegistryCopy = {
       dna_vwd2: "DNK test na von Willebrandovu bolest tipa 2 (vWD2), nasljedni poremećaj zgrušavanja krvi",
       dna_l2hga: "DNK test na L-2-hidroksiglutarnu aciduriju (L-2-HGA), nasljednu metaboličku bolest živčanog sustava",
       dna_pll: "DNK test na primarnu luksaciju leće (PLL), nasljednu bolest oka pri kojoj leća sklizne s mjesta",
+      dna_mps3b: "DNK test na mukopolisaharidozu tipa IIIB (MPS IIIB), nasljednu metaboličku bolest živčanog sustava",
+      dna_tbox: "DNK test na gen T-box koji uzrokuje prirodno kratak rep",
       dna_loa: "DNK test na ataksiju s kasnim početkom (LOA), nasljednu bolest koja utječe na ravnotežu i koordinaciju",
       dna_sca: "DNK test na spinocerebelarnu ataksiju (SCA), nasljednu bolest živčanog sustava",
+      dna_chg: "DNK test na prirođenu hipotireozu sa strumom (CHG), nasljednu bolest štitnjače prisutnu od rođenja",
     },
   },
   health: {
@@ -564,6 +567,7 @@ const hr: RegistryCopy = {
     open_fontanelle: "U pasmini se može pojaviti otvorena fontanela, meko mjesto na lubanji koje se ne zatvori do kraja.",
     collapsing_trachea: "U pasmini se može pojaviti kolaps dušnika, slabost dušnika koja može uzrokovati kašalj i otežano disanje.",
     gm1_gangliosidosis: "U pasmini se može pojaviti GM1 gangliozidoza, nasljedna bolest živčanog sustava; DNK test roditelja može je isključiti.",
+    gm2_gangliosidosis: "U pasmini je utvrđena GM2 gangliozidoza, smrtonosna nasljedna bolest živčanog sustava.",
     addisons_disease: "U pasmini se može pojaviti Addisonova bolest, nedostatak hormona nadbubrežnih žlijezda.",
     protein_losing_disease: "U pasmini se mogu pojaviti bolesti bubrega ili crijeva s gubitkom proteina, koje mogu uzrokovati proljev i gubitak težine.",
     diabetes_mellitus: "U pasmini se može pojaviti šećerna bolest (diabetes mellitus), pri kojoj tijelo ne može pravilno regulirati šećer u krvi.",
@@ -596,6 +600,8 @@ const hr: RegistryCopy = {
     ear_infections_prone: "Pasmina je sklona upalama uha; pomno prati higijenu ušiju.",
     familial_nephropathy: "U pasmini se javlja nasljedna bolest bubrega (obiteljska nefropatija); dostupan je DNK test roditelja.",
     hereditary_nephritis: "U pasmini se javlja nasljedna bolest bubrega (nasljedni nefritis, poznat i kao nasljedna glomerulopatija samojeda).",
+    hereditary_nephritis_pkd: "U pasmini se javljaju nasljedne bolesti bubrega (nasljedni nefritis i policistična bolest bubrega).",
+    mucopolysaccharidosis_mps3b: "U pasmini se javlja mukopolisaharidoza tipa IIIB, nasljedna metabolička bolest koja zahvaća živčani sustav; dostupan je DNK test roditelja.",
     panosteitis: "U pasmini se može pojaviti panosteitis, bolna upala dugih kostiju koja obično pogađa mlade pse u rastu.",
     splenic_torsion: "Torzija slezene, koja zahtijeva hitnu veterinarsku pomoć, u ovoj se pasmini javlja češće nego kod drugih velikih pasmina.",
     urinary_incontinence: "U pasmini se može pojaviti urinarna inkontinencija, nekontrolirano curenje mokraće.",

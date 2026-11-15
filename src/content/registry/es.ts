@@ -12,7 +12,7 @@ const rn = (name: string) =>
 type Fci = { number: number; group: number; origin: string };
 /** Official Spanish FCI group names (FCI nomenclature), in running-text form. */
 const fciGroups: Record<number, string> = { 1: "perros de pastor y perros boyeros (excepto boyeros suizos)", 2: "perros tipo pinscher y schnauzer – molosoides – perros tipo montaña y boyeros suizos", 3: "terriers", 4: "teckels", 5: "perros tipo spitz y tipo primitivo", 6: "perros tipo sabueso, de rastro y razas semejantes", 7: "perros de muestra", 8: "perros cobradores de caza – levantadores de caza – perros de agua", 9: "perros de compañía", 10: "lebreles" };
-const origins: Record<string, string> = { GB: "Gran Bretaña", FR: "Francia", DE: "Alemania", US: "Estados Unidos", CU: "Cuba", CH: "Suiza", IT: "Italia", "CN-XZ": "Tíbet (China)", CN: "China", MX: "México", BE: "Bélgica", HU: "Hungría", JP: "Japón", ZA: "Sudáfrica", "BE-FR": "Bélgica / Francia", PT: "Portugal", CA: "Canadá", HR: "Croacia", AU: "Australia", RU: "Rusia", IE: "Irlanda", "AF-C": "África central", TR: "Turquía", MG: "Madagascar" };
+const origins: Record<string, string> = { GB: "Gran Bretaña", FR: "Francia", DE: "Alemania", US: "Estados Unidos", CU: "Cuba", CH: "Suiza", IT: "Italia", "CN-XZ": "Tíbet (China)", CN: "China", MX: "México", BE: "Bélgica", HU: "Hungría", JP: "Japón", ZA: "Sudáfrica", "BE-FR": "Bélgica / Francia", PT: "Portugal", CA: "Canadá", HR: "Croacia", AU: "Australia", RU: "Rusia", IE: "Irlanda", "AF-C": "África central", TR: "Turquía", MG: "Madagascar", AF: "Afganistán" };
 
 const es: RegistryCopy = {
   mistakes: {
@@ -25,7 +25,7 @@ const es: RegistryCopy = {
     weight: "Demasiados premios y comidas demasiado abundantes",
     heat: "Paseos con calor",
     growth: "Olvidar que el cachorro todavía está creciendo",
-    growthText: (growthEnd) => `Alcanza el tamaño adulto: ${growthEnd}. Hasta entonces, planifica el ejercicio y la comida pensando en un animal joven que aún crece, y pregunta a tu veterinario qué le conviene al tuyo.`,
+    growthText: (growthEnd) => `Alcanza el tamaño adulto: ${growthEnd}. Hasta entonces, planifica el ejercicio y la comida pensando en una mascota joven que aún crece, y pregunta a tu veterinario qué le conviene al tuyo.`,
     mind: "Poca actividad para la mente",
     health: "Pasar por alto los problemas de salud conocidos de la raza",
     practise: "En PetPrep, un niño practica precisamente estos hábitos (pasos, comidas, cuidados) antes de que llegue a casa la mascota real.",
@@ -391,12 +391,15 @@ const es: RegistryCopy = {
       dna_vwd2: "Prueba de ADN de enfermedad de von Willebrand tipo 2 (vWD2), un trastorno hemorrágico hereditario",
       dna_l2hga: "Prueba de ADN de aciduria L-2-hidroxiglutárica (L-2-HGA), una enfermedad metabólica hereditaria del sistema nervioso",
       dna_pll: "Prueba de ADN de luxación primaria del cristalino (PLL), una enfermedad ocular hereditaria en la que el cristalino se desplaza de su sitio",
+      dna_mps3b: "Prueba de ADN de mucopolisacaridosis tipo IIIB (MPS IIIB), una enfermedad metabólica hereditaria del sistema nervioso",
+      dna_tbox: "Prueba de ADN del gen T-box, responsable de la cola corta natural",
       dna_loa: "Prueba de ADN de ataxia de aparición tardía (LOA), una enfermedad hereditaria que afecta al equilibrio y la coordinación",
       dna_sca: "Prueba de ADN de ataxia espinocerebelosa (SCA), una enfermedad hereditaria del sistema nervioso",
+      dna_chg: "Prueba de ADN de hipotiroidismo congénito con bocio (CHG), una enfermedad hereditaria de la tiroides presente desde el nacimiento",
     },
   },
   health: {
-    shar_pei_fever: "En la raza puede aparecer la fiebre familiar del Shar Pei: episodios de fiebre alta con articulaciones doloridas e hinchadas y la cara hinchada; acuda al veterinario de inmediato.",
+    shar_pei_fever: "En la raza puede aparecer la fiebre familiar del Shar Pei: episodios de fiebre alta con articulaciones doloridas e hinchadas y la cara hinchada; acude enseguida al veterinario.",
     weight_gain: "Engorda con facilidad: hay que vigilar las raciones y los premios.",
     hip_elbow_dysplasia_eye_conditions: "Puede tener predisposición a la displasia de cadera y de codo y a varias enfermedades oculares hereditarias.",
     cancer_risk: "Las fuentes describen un mayor riesgo de cáncer en esta raza.",
@@ -422,7 +425,7 @@ const es: RegistryCopy = {
     back_disc_disease: "En la raza se da la enfermedad del disco intervertebral, un problema de los discos que amortiguan los huesos de la columna.",
     pra_eye_disease: "En la raza se da la atrofia progresiva de retina, una enfermedad ocular hereditaria que puede llevar poco a poco a la ceguera; existen pruebas de ADN y exámenes oculares.",
     hip_dysplasia: "En la raza se da la displasia de cadera, una articulación de la cadera mal desarrollada que puede causar artrosis; se aconseja a los criadores evaluar las caderas de los progenitores.",
-    bloat_gdv: "En la raza puede darse la dilatación-torsión gástrica, en la que el estómago se retuerce: es una urgencia que necesita un veterinario de inmediato.",
+    bloat_gdv: "En la raza puede darse la dilatación-torsión gástrica, en la que el estómago se retuerce: es una urgencia que necesita un veterinario enseguida.",
     inherited_eye_disease: "En la raza se dan enfermedades oculares hereditarias, como la anomalía del ojo del collie, las cataratas y la atrofia progresiva de retina.",
     drug_sensitivity_mdr1: "Algunos perros de la raza tienen una sensibilidad hereditaria a ciertos medicamentos (sensibilidad a múltiples fármacos, MDR1); si tu perro está afectado, díselo a tu veterinario.",
     merle_to_merle_breeding: "El merle es un color del estándar en esta raza; no deben cruzarse dos perros merle, porque sus cachorros corren el riesgo de tener problemas de vista y de oído; el Royal Kennel Club no los registra.",
@@ -474,6 +477,7 @@ const es: RegistryCopy = {
     open_fontanelle: "En la raza puede darse una fontanela abierta, una zona blanda del cráneo que no llega a cerrarse del todo.",
     collapsing_trachea: "En la raza puede darse el colapso traqueal, una debilidad de la tráquea que puede causar tos y dificultad para respirar.",
     gm1_gangliosidosis: "En la raza puede darse la gangliosidosis GM1, una enfermedad hereditaria del sistema nervioso; una prueba de ADN de los progenitores permite descartarla.",
+    gm2_gangliosidosis: "En la raza se ha encontrado la gangliosidosis GM2, una enfermedad hereditaria mortal del sistema nervioso.",
     addisons_disease: "En la raza puede darse la enfermedad de Addison, una falta de hormonas de las glándulas suprarrenales.",
     protein_losing_disease: "En la raza pueden darse enfermedades con pérdida de proteínas por los riñones o el intestino, que pueden causar diarrea y pérdida de peso.",
     diabetes_mellitus: "En la raza puede darse la diabetes mellitus, en la que el cuerpo no controla bien el azúcar en sangre.",
@@ -498,6 +502,8 @@ const es: RegistryCopy = {
     ear_infections_prone: "La raza tiene tendencia a las infecciones de oído; vigila de cerca la higiene de las orejas.",
     familial_nephropathy: "En la raza se da una enfermedad renal hereditaria (nefropatía familiar); existe una prueba de ADN para los progenitores.",
     hereditary_nephritis: "En la raza se da una enfermedad renal hereditaria (nefritis hereditaria, también llamada glomerulopatía hereditaria del samoyedo).",
+    hereditary_nephritis_pkd: "En la raza se dan enfermedades renales hereditarias (nefritis hereditaria y enfermedad renal poliquística).",
+    mucopolysaccharidosis_mps3b: "En la raza se da la mucopolisacaridosis tipo IIIB, una enfermedad metabólica hereditaria que afecta al sistema nervioso; existe una prueba de ADN de los padres.",
     panosteitis: "En la raza puede darse la panosteítis, una inflamación dolorosa de los huesos largos que suele afectar a perros jóvenes en crecimiento.",
     splenic_torsion: "La torsión del bazo, que requiere atención veterinaria urgente, es más frecuente en esta raza que en otras razas grandes.",
     urinary_incontinence: "En la raza puede darse la incontinencia urinaria, una pérdida de orina involuntaria.",
@@ -641,7 +647,7 @@ const es: RegistryCopy = {
       aka: "Kangal, Anatolian Shepherd Dog, Karabash",
       text: [
         "El pastor de Anatolia es un perro guardián de ganado grande y robusto originario de Turquía; la FCI describe al perro pastor turco como kangal (Kangal Shepherd Dog): de un solo color, del leonado al gris lobo, con máscara negra, y una altura de 72–78 cm en los machos y 65–73 cm en las hembras. El estándar estadounidense de la raza indica 110–150 libras (unos 50–68 kg) para los machos y 80–120 libras (unos 36–54 kg) para las hembras. Un perro de este tamaño termina de crecer hacia los 18–24 meses (PetMD); The Royal Kennel Club indica una esperanza de vida de más de 10 años y WebMD, de 11 a 13 años de media.",
-        "The Royal Kennel Club recomienda más de 2 horas de ejercicio al día y cuidado del pelo más de una vez por semana, indica que muda pelo y que necesita una casa grande con un jardín grande en el campo, y lo incluye en la categoría 1 de Breed Watch. PetMD escribe que el pastor de Anatolia quizá esté mejor en hogares sin niños pequeños, que los cachorros presentados pronto a otros animales suelen llevarse bien con ellos, que la socialización temprana es clave, que fuera de las dos mudas anuales basta con cepillarlo una vez por semana y que conviene evitar el ejercicio alrededor de las comidas.",
+        "El Royal Kennel Club recomienda más de 2 horas de ejercicio al día y cuidado del pelo más de una vez por semana, indica que muda pelo y que necesita una casa grande con un jardín grande en el campo, y lo incluye en la categoría 1 de Breed Watch. PetMD escribe que el pastor de Anatolia quizá esté mejor en hogares sin niños pequeños, que los cachorros presentados pronto a otros animales suelen llevarse bien con ellos, que la socialización temprana es clave, que fuera de las dos mudas anuales basta con cepillarlo una vez por semana y que conviene evitar el ejercicio alrededor de las comidas.",
       ],
       sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
     },
@@ -649,7 +655,7 @@ const es: RegistryCopy = {
       aka: "Setter irlandés rojo, Irish Setter",
       text: [
         "El setter irlandés (setter irlandés rojo) es un perro de muestra esbelto y atlético de Irlanda, criado para buscar en amplios terrenos. El estándar de la FCI describe un único color —castaño intenso sin rastro de negro— y una altura de 58–67 cm en machos y 55–62 cm en hembras; el estándar estadounidense de la raza considera ideal unas 70 libras (unos 32 kg) para un macho y 60 libras (unos 27 kg) para una hembra. Un perro de este tamaño termina de crecer hacia los 15–18 meses (PetMD), y The Royal Kennel Club indica una esperanza de vida de más de 10 años.",
-        "The Royal Kennel Club recomienda más de 2 horas de ejercicio al día y cuidado del pelo más de una vez por semana, indica que la raza muda el pelo y necesita una casa grande con un jardín grande, y la incluye en la categoría 1 de Breed Watch. La PDSA describe perros muy amables y cariñosos que se llevan bien con los niños y otras mascotas, y aconseja cuidar el pelo 2 o 3 veces por semana; PetMD recomienda revisar y limpiar las orejas cada semana y escribe que los setters irlandeses necesitan mucha compañía humana.",
+        "El Royal Kennel Club recomienda más de 2 horas de ejercicio al día y cuidado del pelo más de una vez por semana, indica que la raza muda el pelo y necesita una casa grande con un jardín grande, y la incluye en la categoría 1 de Breed Watch. La PDSA describe perros muy amables y cariñosos que se llevan bien con los niños y otras mascotas, y aconseja cuidar el pelo 2 o 3 veces por semana; PetMD recomienda revisar y limpiar las orejas cada semana y escribe que los setters irlandeses necesitan mucha compañía humana.",
       ],
       sources: ["S675", "S676", "S678", "S680", "S10"],
     },

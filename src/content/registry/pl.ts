@@ -43,7 +43,7 @@ const fciGroups: Record<number, string> = {
   9: "psy do towarzystwa",
   10: "charty",
 };
-const origins: Record<string, string> = { GB: "Wielka Brytania", FR: "Francja", DE: "Niemcy", US: "USA", CU: "Kuba", CH: "Szwajcaria", IT: "Włochy", "CN-XZ": "Tybet (Chiny)", CN: "Chiny", MX: "Meksyk", BE: "Belgia", HU: "Węgry", JP: "Japonia", ZA: "Republika Południowej Afryki", "BE-FR": "Belgia / Francja", PT: "Portugalia", CA: "Kanada", HR: "Chorwacja", AU: "Australia", RU: "Rosja", IE: "Irlandia", "AF-C": "Afryka Środkowa", TR: "Turcja", MG: "Madagaskar" };
+const origins: Record<string, string> = { GB: "Wielka Brytania", FR: "Francja", DE: "Niemcy", US: "USA", CU: "Kuba", CH: "Szwajcaria", IT: "Włochy", "CN-XZ": "Tybet (Chiny)", CN: "Chiny", MX: "Meksyk", BE: "Belgia", HU: "Węgry", JP: "Japonia", ZA: "Republika Południowej Afryki", "BE-FR": "Belgia / Francja", PT: "Portugalia", CA: "Kanada", HR: "Chorwacja", AU: "Australia", RU: "Rosja", IE: "Irlandia", "AF-C": "Afryka Środkowa", TR: "Turcja", MG: "Madagaskar", AF: "Afganistan" };
 /** "godzina" in the nominative after a number: 1 godzina, 2 godziny, 5 godzin, 1,5 godziny. */
 const hours = (n: number) => form(n, "godzina", "godziny", "godzin", "godziny");
 
@@ -417,8 +417,11 @@ const pl: RegistryCopy = {
       dna_vwd2: "Test DNA w kierunku choroby von Willebranda typu 2 (vWD2), dziedzicznego zaburzenia krzepnięcia krwi",
       dna_l2hga: "Test DNA w kierunku kwasicy L-2-hydroksyglutarowej (L-2-HGA), dziedzicznej choroby metabolicznej układu nerwowego",
       dna_pll: "Test DNA w kierunku pierwotnego zwichnięcia soczewki (PLL), dziedzicznej choroby oczu, w której soczewka przesuwa się ze swojego miejsca",
+      dna_mps3b: "Test DNA w kierunku mukopolisacharydozy typu IIIB (MPS IIIB), dziedzicznej choroby metabolicznej układu nerwowego",
+      dna_tbox: "Test DNA w kierunku genu T-box, odpowiadającego za naturalnie krótki ogon",
       dna_loa: "Test DNA w kierunku ataksji o późnym początku (LOA), dziedzicznej choroby zaburzającej równowagę i koordynację ruchów",
       dna_sca: "Test DNA w kierunku ataksji rdzeniowo-móżdżkowej (SCA), dziedzicznej choroby układu nerwowego",
+      dna_chg: "Test DNA w kierunku wrodzonej niedoczynności tarczycy z wolem (CHG), dziedzicznej choroby tarczycy obecnej od urodzenia",
     },
   },
   health: {
@@ -500,6 +503,7 @@ const pl: RegistryCopy = {
     open_fontanelle: "W rasie może występować otwarte ciemiączko, czyli miękkie miejsce na czaszce, które nie zamyka się całkowicie.",
     collapsing_trachea: "W rasie może występować zapadanie się tchawicy, czyli osłabienie tchawicy, które może powodować kaszel i trudności w oddychaniu.",
     gm1_gangliosidosis: "W rasie może występować gangliozydoza GM1, dziedziczna choroba układu nerwowego; test DNA rodziców pozwala ją wykluczyć.",
+    gm2_gangliosidosis: "W rasie stwierdzono gangliozydozę GM2, śmiertelną dziedziczną chorobę układu nerwowego.",
     addisons_disease: "W rasie może występować choroba Addisona, czyli niedobór hormonów nadnerczy.",
     protein_losing_disease: "W rasie mogą występować choroby nerek lub jelit z utratą białka, które mogą powodować biegunkę i chudnięcie.",
     diabetes_mellitus: "W rasie może występować cukrzyca – organizm nie potrafi prawidłowo regulować poziomu cukru we krwi.",
@@ -524,6 +528,8 @@ const pl: RegistryCopy = {
     ear_infections_prone: "Rasa ma skłonność do zapaleń uszu; uważnie dbaj o higienę uszu.",
     familial_nephropathy: "W rasie występuje dziedziczna choroba nerek (rodzinna nefropatia); dostępny jest test DNA rodziców.",
     hereditary_nephritis: "W rasie występuje dziedziczna choroba nerek (dziedziczne zapalenie nerek, nazywane też dziedziczną glomerulopatią samojedów).",
+    hereditary_nephritis_pkd: "W rasie występują dziedziczne choroby nerek (dziedziczne zapalenie nerek i wielotorbielowatość nerek).",
+    mucopolysaccharidosis_mps3b: "W rasie występuje mukopolisacharydoza typu IIIB, dziedziczna choroba metaboliczna atakująca układ nerwowy; dostępny jest test DNA rodziców.",
     panosteitis: "W rasie może występować panosteitis, bolesne zapalenie kości długich, które dotyka zwykle młode, rosnące psy.",
     splenic_torsion: "Skręt śledziony, który wymaga pilnej pomocy weterynarza, występuje w tej rasie częściej niż u innych dużych ras.",
     urinary_incontinence: "W rasie może występować nietrzymanie moczu, czyli niekontrolowany wyciek moczu.",

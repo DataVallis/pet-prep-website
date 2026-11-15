@@ -51,7 +51,7 @@ export const da: KitCopy = {
     intro: "Sæt jer sammen på ét sted og tag jer tid. Alle svarer, også de voksne. Skriv ned, hvad I bliver enige om; så er Løftet på næste side lettere at udfylde.",
     questions: [
       "Hvem står først op en almindelig morgen, og hvem giver dyret mad? Hvad sker der de morgener, hvor den person er træt?",
-      "Hvad ændrer sig i weekenderne, på skoledage og når planerne falder til jorden?",
+      "Hvad ændrer sig i weekenderne, på skoledage og når planerne falder i vasken?",
       "Hvad sker der i ferier og på rejser? Hvem tager sig af dyret så, og hvem betaler for det?",
       "Hvem betaler for dyrlægen, maden og de uventede udgifter? Hvor kommer de penge fra?",
       "Hvad hvis begejstringen aftager efter nogle uger? Hvilke opgaver er stadig obligatoriske?",
@@ -167,7 +167,7 @@ export const da: KitCopy = {
     appHeading: "12-ugers-udfordringen i PetPrep",
     appText: "I PetPrep-appen passer dit barn i tolv uger et naturtro, AI-genereret dyr: mad, vand, ture og oprydning. Du følger med i din egen forældreoversigt. Det er øvelse, ikke et løfte om, at et kæledyr er det rigtige for jer.",
     cta: "Læs mere på petprep.si",
-    slogan: "Klar til et kæledyr. Der hele dets liv.",
+    slogan: "Klar til et kæledyr. Der for dets hele liv.",
     mascotLine: "Held og lykke fra Curio.",
   },
 };
@@ -186,7 +186,7 @@ export const daSales: KitSales = {
   sampleHeading: "Prøv Løfte-siden først",
   sampleText: "Selve Kæledyrsløftet som en gratis A4-side: aftalen mellem et barn og de voksne med daglige opgaver, jeres egne regler og plads til alles underskrifter. Du skriver din e-mailadresse og accepterer at høre fra os; PDF-filen kommer fra kassen.",
   sampleNote: "Din e-mailadresse bruges kun til det, du accepterer i kassen.",
-  insideHeading: "Det er med",
+  insideHeading: "Det får du",
   insideIntro: "Print så mange eksemplarer, du har brug for. Alt udfyldes i hånden, så intet om dit barn bliver skrevet ind i en formular eller sendt nogen steder hen.",
   previewHeading: "Et kig på tre sider",
   previewAlt: { cover: "Forsiden af sættet Kæledyrsløftet med maskotten Curio", promise: "Siden Kæledyrsløftet med opgavefelter, regler og linjer til underskrifter", cost: "Omkostningsarket med tomme felter" },
@@ -199,7 +199,7 @@ export const daSales: KitSales = {
   notHeading: "Hvad det ikke er",
   notItems: [
     "Det er ikke en test og giver ingen point. Det kan ikke sige, om dit barn er klar.",
-    "Det indeholder ingen sundhedsråd og ingen racevejledning. Dem spørger du en dyrlæge eller et dyreinternat om.",
+    "Det indeholder ingen sundhedsråd og ingen racevejledning. Spørg en dyrlæge eller et dyreinternat om dem.",
     "Det lover ikke, at et kæledyr er den rigtige beslutning. “Ikke endnu” er også et godt svar.",
   ],
   giftText: "Leder du i stedet efter en gave? 12-ugers-udfordringen i PetPrep kan gives som gavekort.",

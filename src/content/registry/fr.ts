@@ -16,7 +16,7 @@ const hhmm = (t: unknown) => {
 type Fci = { number: number; group: number; origin: string };
 /** Official French FCI group names. */
 const fciGroups: Record<number, string> = { 1: "Chiens de berger et de bouvier (sauf chiens de bouvier suisses)", 2: "Chiens de type pinscher et schnauzer – molossoïdes – chiens de montagne et de bouvier suisses", 3: "Terriers", 4: "Teckels", 5: "Chiens de type spitz et de type primitif", 6: "Chiens courants, chiens de recherche au sang et races apparentées", 7: "Chiens d’arrêt", 8: "Chiens rapporteurs de gibier – chiens leveurs de gibier – chiens d’eau", 9: "Chiens d’agrément et de compagnie", 10: "Lévriers" };
-const origins: Record<string, string> = { GB: "Grande-Bretagne", FR: "France", DE: "Allemagne", US: "États-Unis", CU: "Cuba", CH: "Suisse", IT: "Italie", "CN-XZ": "Tibet (Chine)", CN: "Chine", MX: "Mexique", BE: "Belgique", HU: "Hongrie", JP: "Japon", ZA: "Afrique du Sud", "BE-FR": "Belgique / France", PT: "Portugal", CA: "Canada", HR: "Croatie", AU: "Australie", RU: "Russie", IE: "Irlande", "AF-C": "Afrique centrale", TR: "Turquie", MG: "Madagascar" };
+const origins: Record<string, string> = { GB: "Grande-Bretagne", FR: "France", DE: "Allemagne", US: "États-Unis", CU: "Cuba", CH: "Suisse", IT: "Italie", "CN-XZ": "Tibet (Chine)", CN: "Chine", MX: "Mexique", BE: "Belgique", HU: "Hongrie", JP: "Japon", ZA: "Afrique du Sud", "BE-FR": "Belgique / France", PT: "Portugal", CA: "Canada", HR: "Croatie", AU: "Australie", RU: "Russie", IE: "Irlande", "AF-C": "Afrique centrale", TR: "Turquie", MG: "Madagascar", AF: "Afghanistan" };
 
 const fr: RegistryCopy = {
   mistakes: {
@@ -396,8 +396,11 @@ const fr: RegistryCopy = {
       dna_vwd2: "Test ADN de la maladie de von Willebrand de type 2 (vWD2), un trouble héréditaire de la coagulation",
       dna_l2hga: "Test ADN de l’acidurie L-2-hydroxyglutarique (L-2-HGA), une maladie métabolique héréditaire du système nerveux",
       dna_pll: "Test ADN de la luxation primaire du cristallin (PLL), une maladie oculaire héréditaire dans laquelle le cristallin se déplace",
+      dna_mps3b: "Test ADN de la mucopolysaccharidose de type IIIB (MPS IIIB), une maladie métabolique héréditaire du système nerveux",
+      dna_tbox: "Test ADN du gène T-box, à l'origine de la queue naturellement courte",
       dna_loa: "Test ADN de l’ataxie d’apparition tardive (LOA), une maladie héréditaire qui affecte l’équilibre et la coordination",
       dna_sca: "Test ADN de l’ataxie spinocérébelleuse (SCA), une maladie héréditaire du système nerveux",
+      dna_chg: "Test ADN de l’hypothyroïdie congénitale avec goitre (CHG), une maladie héréditaire de la thyroïde présente dès la naissance",
     },
   },
   health: {
@@ -479,6 +482,7 @@ const fr: RegistryCopy = {
     open_fontanelle: "Une fontanelle ouverte, une zone molle du crâne qui ne se ferme pas complètement, peut survenir dans la race.",
     collapsing_trachea: "Le collapsus trachéal, une faiblesse de la trachée qui peut provoquer toux et difficultés respiratoires, peut survenir dans la race.",
     gm1_gangliosidosis: "La gangliosidose GM1, une maladie héréditaire du système nerveux, peut survenir dans la race ; un test ADN des parents permet de l’exclure.",
+    gm2_gangliosidosis: "La gangliosidose GM2, une maladie héréditaire mortelle du système nerveux, a été observée dans la race.",
     addisons_disease: "La maladie d’Addison, un manque d’hormones produites par les glandes surrénales, peut survenir dans la race.",
     protein_losing_disease: "Des maladies des reins ou de l’intestin avec perte de protéines, qui peuvent provoquer diarrhée et perte de poids, peuvent survenir dans la race.",
     diabetes_mellitus: "Le diabète sucré, où l’organisme ne parvient pas à bien réguler sa glycémie, peut survenir dans la race.",
@@ -503,6 +507,8 @@ const fr: RegistryCopy = {
     ear_infections_prone: "La race est sujette aux otites ; surveillez de près l’hygiène des oreilles.",
     familial_nephropathy: "Une maladie rénale héréditaire (néphropathie familiale) s’observe dans la race ; un test ADN des parents existe.",
     hereditary_nephritis: "Une maladie rénale héréditaire (néphrite héréditaire, aussi appelée glomérulopathie héréditaire du samoyède) s’observe dans la race.",
+    hereditary_nephritis_pkd: "Des maladies rénales héréditaires (néphrite héréditaire et polykystose rénale) s’observent dans la race.",
+    mucopolysaccharidosis_mps3b: "La mucopolysaccharidose de type IIIB, une maladie métabolique héréditaire qui touche le système nerveux, existe dans la race ; un test ADN des parents est disponible.",
     panosteitis: "La panostéite, une inflammation douloureuse des os longs qui touche généralement les jeunes chiens en croissance, peut survenir dans la race.",
     splenic_torsion: "La torsion de la rate, qui exige des soins vétérinaires urgents, est plus fréquente dans cette race que chez les autres grandes races.",
     urinary_incontinence: "L’incontinence urinaire, une fuite d’urine incontrôlée, peut survenir dans la race.",

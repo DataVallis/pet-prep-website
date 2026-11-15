@@ -25,7 +25,7 @@ const un = (name: string) => {
 type Fci = { number: number; group: number; origin: string };
 /** Italian FCI group names (ENCI nomenclature), in running-text form. */
 const fciGroups: Record<number, string> = { 1: "cani da pastore e bovari (esclusi i bovari svizzeri)", 2: "cani di tipo pinscher e schnauzer – molossoidi – cani bovari svizzeri", 3: "terrier", 4: "bassotti", 5: "cani di tipo spitz e di tipo primitivo", 6: "segugi e cani per pista di sangue", 7: "cani da ferma", 8: "cani da riporto – cani da cerca – cani da acqua", 9: "cani da compagnia", 10: "levrieri" };
-const origins: Record<string, string> = { GB: "Gran Bretagna", FR: "Francia", DE: "Germania", US: "Stati Uniti", CU: "Cuba", CH: "Svizzera", IT: "Italia", "CN-XZ": "Tibet (Cina)", CN: "Cina", MX: "Messico", BE: "Belgio", HU: "Ungheria", JP: "Giappone", ZA: "Sudafrica", "BE-FR": "Belgio / Francia", PT: "Portogallo", CA: "Canada", HR: "Croazia", AU: "Australia", RU: "Russia", IE: "Irlanda", "AF-C": "Africa centrale", TR: "Turchia", MG: "Madagascar" };
+const origins: Record<string, string> = { GB: "Gran Bretagna", FR: "Francia", DE: "Germania", US: "Stati Uniti", CU: "Cuba", CH: "Svizzera", IT: "Italia", "CN-XZ": "Tibet (Cina)", CN: "Cina", MX: "Messico", BE: "Belgio", HU: "Ungheria", JP: "Giappone", ZA: "Sudafrica", "BE-FR": "Belgio / Francia", PT: "Portogallo", CA: "Canada", HR: "Croazia", AU: "Australia", RU: "Russia", IE: "Irlanda", "AF-C": "Africa centrale", TR: "Turchia", MG: "Madagascar", AF: "Afghanistan" };
 
 const it: RegistryCopy = {
   mistakes: {
@@ -404,8 +404,11 @@ const it: RegistryCopy = {
       dna_vwd2: "Test del DNA per la malattia di von Willebrand di tipo 2 (vWD2), un disturbo ereditario della coagulazione",
       dna_l2hga: "Test del DNA per l’aciduria L-2-idrossiglutarica (L-2-HGA), una malattia metabolica ereditaria del sistema nervoso",
       dna_pll: "Test del DNA per la lussazione primaria del cristallino (PLL), una malattia ereditaria degli occhi in cui il cristallino si sposta dalla sua sede",
+      dna_mps3b: "Test del DNA per la mucopolisaccaridosi di tipo IIIB (MPS IIIB), una malattia metabolica ereditaria del sistema nervoso",
+      dna_tbox: "Test del DNA per il gene T-box, responsabile della coda naturalmente corta",
       dna_loa: "Test del DNA per l’atassia a esordio tardivo (LOA), una malattia ereditaria che compromette equilibrio e coordinazione",
       dna_sca: "Test del DNA per l’atassia spinocerebellare (SCA), una malattia ereditaria del sistema nervoso",
+      dna_chg: "Test del DNA per l’ipotiroidismo congenito con gozzo (CHG), una malattia ereditaria della tiroide presente dalla nascita",
     },
   },
   health: {
@@ -487,6 +490,7 @@ const it: RegistryCopy = {
     open_fontanelle: "Nella razza può presentarsi una fontanella aperta, un punto morbido del cranio che non si chiude del tutto.",
     collapsing_trachea: "Nella razza può presentarsi il collasso della trachea, una debolezza della trachea che può causare tosse e difficoltà respiratorie.",
     gm1_gangliosidosis: "Nella razza può presentarsi la gangliosidosi GM1, una malattia ereditaria del sistema nervoso; un test del DNA dei genitori può escluderla.",
+    gm2_gangliosidosis: "Nella razza è stata riscontrata la gangliosidosi GM2, una malattia ereditaria mortale del sistema nervoso.",
     addisons_disease: "Nella razza può presentarsi il morbo di Addison, una carenza di ormoni prodotti dalle ghiandole surrenali.",
     protein_losing_disease: "Nella razza possono presentarsi malattie dei reni o dell’intestino con perdita di proteine, che possono causare diarrea e perdita di peso.",
     diabetes_mellitus: "Nella razza può presentarsi il diabete mellito, in cui l’organismo non riesce a regolare correttamente lo zucchero nel sangue.",
@@ -511,6 +515,8 @@ const it: RegistryCopy = {
     ear_infections_prone: "La razza è predisposta alle infezioni delle orecchie; presta molta attenzione all’igiene delle orecchie.",
     familial_nephropathy: "Nella razza si riscontra una malattia renale ereditaria (nefropatia familiare); è disponibile un test del DNA dei genitori.",
     hereditary_nephritis: "Nella razza si riscontra una malattia renale ereditaria (nefrite ereditaria, chiamata anche glomerulopatia ereditaria del samoiedo).",
+    hereditary_nephritis_pkd: "Nella razza si riscontrano malattie renali ereditarie (nefrite ereditaria e malattia del rene policistico).",
+    mucopolysaccharidosis_mps3b: "Nella razza si riscontra la mucopolisaccaridosi di tipo IIIB, una malattia metabolica ereditaria che colpisce il sistema nervoso; è disponibile un test del DNA dei genitori.",
     panosteitis: "Nella razza può presentarsi la panosteite, un’infiammazione dolorosa delle ossa lunghe che di solito colpisce i cani giovani in crescita.",
     splenic_torsion: "La torsione della milza, che richiede cure veterinarie urgenti, è più frequente in questa razza che in altre razze grandi.",
     urinary_incontinence: "Nella razza può presentarsi l’incontinenza urinaria, una perdita involontaria di urina.",

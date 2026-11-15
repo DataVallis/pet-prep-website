@@ -44,12 +44,25 @@ export type GiftCopy = {
     lead: string;
     codeLabel: string;
     codeHint: string;
+    /** Sign-in e-mail field (M6-S01b: the parent signs in, the page no longer asks for an e-mail to look up). */
     emailLabel: string;
-    emailHint: string;
     button: string;
     pending: string;
-    noAccountHelp: string;
     giftLink: string;
+    signInHeading: string;
+    signInLead: string;
+    continueWithGoogle: string;
+    continueWithApple: string;
+    signInOr: string;
+    passwordLabel: string;
+    signInButton: string;
+    signInPending: string;
+    redirecting: string;
+    signInNoAccount: string;
+    signedIn: string;
+    signOut: string;
+    codeHeading: string;
+    returnBack: string;
   };
   messages: Record<MessageKey, string>;
 };

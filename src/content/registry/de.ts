@@ -7,7 +7,7 @@ const lc = (t: string) => t.charAt(0).toLocaleLowerCase("de") + t.slice(1);
 type Fci = { number: number; group: number; origin: string };
 /** Official German FCI group names (FCI / VDH). */
 const fciGroups: Record<number, string> = { 1: "Hüte- und Treibhunde (ausgenommen Schweizer Sennenhunde)", 2: "Pinscher und Schnauzer – Molosser – Schweizer Sennenhunde und andere Rassen", 3: "Terrier", 4: "Dachshunde", 5: "Spitze und Hunde vom Urtyp", 6: "Laufhunde, Schweißhunde und verwandte Rassen", 7: "Vorstehhunde", 8: "Apportierhunde – Stöberhunde – Wasserhunde", 9: "Gesellschafts- und Begleithunde", 10: "Windhunde" };
-const origins: Record<string, string> = { GB: "Großbritannien", FR: "Frankreich", DE: "Deutschland", US: "USA", CU: "Kuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexiko", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Südafrika", "BE-FR": "Belgien / Frankreich", PT: "Portugal", CA: "Kanada", HR: "Kroatien", AU: "Australien", RU: "Russland", IE: "Irland", "AF-C": "Zentralafrika", TR: "Türkei", MG: "Madagaskar" };
+const origins: Record<string, string> = { GB: "Großbritannien", FR: "Frankreich", DE: "Deutschland", US: "USA", CU: "Kuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexiko", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Südafrika", "BE-FR": "Belgien / Frankreich", PT: "Portugal", CA: "Kanada", HR: "Kroatien", AU: "Australien", RU: "Russland", IE: "Irland", "AF-C": "Zentralafrika", TR: "Türkei", MG: "Madagaskar", AF: "Afghanistan" };
 
 const de: RegistryCopy = {
   mistakes: {
@@ -374,8 +374,11 @@ const de: RegistryCopy = {
       dna_vwd2: "DNA-Test auf Von-Willebrand-Krankheit Typ 2 (vWD2), eine erbliche Blutgerinnungsstörung",
       dna_l2hga: "DNA-Test auf L-2-Hydroxyglutarazidurie (L-2-HGA), eine erbliche Stoffwechselerkrankung des Nervensystems",
       dna_pll: "DNA-Test auf primäre Linsenluxation (PLL), eine erbliche Augenerkrankung, bei der sich die Linse verschiebt",
+      dna_mps3b: "DNA-Test auf Mukopolysaccharidose Typ IIIB (MPS IIIB), eine erbliche Stoffwechselerkrankung des Nervensystems",
+      dna_tbox: "DNA-Test auf das T-Box-Gen, das die natürliche Stummelrute verursacht",
       dna_loa: "DNA-Test auf spät einsetzende Ataxie (LOA), eine erbliche Erkrankung, die Gleichgewicht und Koordination beeinträchtigt",
       dna_sca: "DNA-Test auf spinozerebelläre Ataxie (SCA), eine erbliche Erkrankung des Nervensystems",
+      dna_chg: "DNA-Test auf angeborene Schilddrüsenunterfunktion mit Kropf (CHG), eine erbliche Schilddrüsenerkrankung, die von Geburt an besteht",
     },
   },
   health: {
@@ -457,6 +460,7 @@ const de: RegistryCopy = {
     open_fontanelle: "In der Rasse kann eine offene Fontanelle auftreten, eine weiche Stelle am Schädel, die sich nicht vollständig schließt.",
     collapsing_trachea: "In der Rasse kann ein Trachealkollaps auftreten, eine Schwäche der Luftröhre, die Husten und Atemnot verursachen kann.",
     gm1_gangliosidosis: "In der Rasse kann GM1-Gangliosidose auftreten, eine erbliche Erkrankung des Nervensystems; ein DNA-Test der Elterntiere kann sie ausschließen.",
+    gm2_gangliosidosis: "In der Rasse wurde GM2-Gangliosidose festgestellt, eine tödliche erbliche Erkrankung des Nervensystems.",
     addisons_disease: "In der Rasse kann Morbus Addison auftreten, ein Mangel an Hormonen der Nebennieren.",
     protein_losing_disease: "In der Rasse können Erkrankungen mit Eiweißverlust über die Nieren oder den Darm auftreten, die Durchfall und Gewichtsverlust verursachen können.",
     diabetes_mellitus: "In der Rasse kann Diabetes mellitus auftreten, bei dem der Körper seinen Blutzucker nicht richtig regulieren kann.",
@@ -481,6 +485,8 @@ const de: RegistryCopy = {
     ear_infections_prone: "Die Rasse neigt zu Ohrentzündungen; achten Sie genau auf die Ohrenhygiene.",
     familial_nephropathy: "In der Rasse kommt eine erbliche Nierenerkrankung (familiäre Nephropathie) vor; ein DNA-Test der Elterntiere ist verfügbar.",
     hereditary_nephritis: "In der Rasse kommt eine erbliche Nierenerkrankung vor (hereditäre Nephritis, auch hereditäre Glomerulopathie des Samojeden genannt).",
+    hereditary_nephritis_pkd: "In der Rasse kommen erbliche Nierenerkrankungen vor (hereditäre Nephritis und polyzystische Nierenerkrankung).",
+    mucopolysaccharidosis_mps3b: "In der Rasse kommt Mukopolysaccharidose Typ IIIB vor, eine erbliche Stoffwechselerkrankung, die das Nervensystem betrifft; ein DNA-Test der Elterntiere ist verfügbar.",
     panosteitis: "In der Rasse kann Panostitis auftreten, eine schmerzhafte Entzündung der langen Röhrenknochen, die meist junge, wachsende Hunde betrifft.",
     splenic_torsion: "Eine Milzdrehung, die sofortige tierärztliche Hilfe braucht, kommt in dieser Rasse häufiger vor als bei anderen großen Rassen.",
     urinary_incontinence: "In der Rasse kann Harninkontinenz auftreten, ein unkontrolliertes Austreten von Urin.",

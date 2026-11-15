@@ -68,7 +68,7 @@ const fciGroups: Record<number, string> = {
   9: "společenská plemena",
   10: "chrti",
 };
-const origins: Record<string, string> = { GB: "Velká Británie", FR: "Francie", DE: "Německo", US: "USA", CU: "Kuba", CH: "Švýcarsko", IT: "Itálie", "CN-XZ": "Tibet (Čína)", CN: "Čína", MX: "Mexiko", BE: "Belgie", HU: "Maďarsko", JP: "Japonsko", ZA: "Jihoafrická republika", "BE-FR": "Belgie / Francie", PT: "Portugalsko", CA: "Kanada", HR: "Chorvatsko", AU: "Austrálie", RU: "Rusko", IE: "Irsko", "AF-C": "Střední Afrika", TR: "Turecko", MG: "Madagaskar" };
+const origins: Record<string, string> = { GB: "Velká Británie", FR: "Francie", DE: "Německo", US: "USA", CU: "Kuba", CH: "Švýcarsko", IT: "Itálie", "CN-XZ": "Tibet (Čína)", CN: "Čína", MX: "Mexiko", BE: "Belgie", HU: "Maďarsko", JP: "Japonsko", ZA: "Jihoafrická republika", "BE-FR": "Belgie / Francie", PT: "Portugalsko", CA: "Kanada", HR: "Chorvatsko", AU: "Austrálie", RU: "Rusko", IE: "Irsko", "AF-C": "Střední Afrika", TR: "Turecko", MG: "Madagaskar", AF: "Afghánistán" };
 /** "hodina" in the nominative after a number: 1 hodina, 2 hodiny, 5 hodin, 1,5 hodiny. */
 const hours = (n: number) => form(n, "hodina", "hodiny", "hodin", "hodiny");
 /** "hodina" in the genitive after "do": do 1 hodiny, do 2 hodin, do 5 hodin, do 1,5 hodiny. */
@@ -449,8 +449,11 @@ const cs: RegistryCopy = {
       dna_vwd2: "DNA test na von Willebrandovu chorobu typu 2 (vWD2), dědičnou poruchu srážlivosti krve",
       dna_l2hga: "DNA test na L-2-hydroxyglutarovou acidurii (L-2-HGA), dědičné metabolické onemocnění nervové soustavy",
       dna_pll: "DNA test na primární luxaci čočky (PLL), dědičné onemocnění očí, při kterém se čočka posune ze svého místa",
+      dna_mps3b: "DNA test na mukopolysacharidózu typu IIIB (MPS IIIB), dědičné metabolické onemocnění nervové soustavy",
+      dna_tbox: "DNA test na gen T-box, který způsobuje přirozeně krátký ocas",
       dna_loa: "DNA test na pozdně nastupující ataxii (LOA), dědičné onemocnění, které narušuje rovnováhu a koordinaci",
       dna_sca: "DNA test na spinocerebelární ataxii (SCA), dědičné onemocnění nervové soustavy",
+      dna_chg: "DNA test na vrozenou hypotyreózu se strumou (CHG), dědičné onemocnění štítné žlázy přítomné od narození",
     },
   },
   health: {
@@ -532,6 +535,7 @@ const cs: RegistryCopy = {
     open_fontanelle: "U plemene se může vyskytnout otevřená fontanela, měkké místo na lebce, které se úplně neuzavře.",
     collapsing_trachea: "U plemene se může vyskytnout kolaps průdušnice, ochablost průdušnice, která může způsobovat kašel a potíže s dýcháním.",
     gm1_gangliosidosis: "U plemene se může vyskytnout gangliosidóza GM1, dědičné onemocnění nervové soustavy; DNA test rodičů ji může vyloučit.",
+    gm2_gangliosidosis: "U plemene byla zjištěna gangliosidóza GM2, smrtelné dědičné onemocnění nervové soustavy.",
     addisons_disease: "U plemene se může vyskytnout Addisonova choroba, nedostatek hormonů nadledvin.",
     protein_losing_disease: "U plemene se mohou vyskytnout onemocnění ledvin nebo střev se ztrátou bílkovin, která mohou způsobit průjem a hubnutí.",
     diabetes_mellitus: "U plemene se může vyskytnout cukrovka (diabetes mellitus), kdy tělo nedokáže správně regulovat hladinu cukru v krvi.",
@@ -556,6 +560,8 @@ const cs: RegistryCopy = {
     ear_infections_prone: "Plemeno má sklon k infekcím uší; pečlivě dbejte na hygienu uší.",
     familial_nephropathy: "U plemene se vyskytuje dědičné onemocnění ledvin (familiární nefropatie); k dispozici je DNA test rodičů.",
     hereditary_nephritis: "U plemene se vyskytuje dědičné onemocnění ledvin (dědičná nefritida, nazývaná také dědičná glomerulopatie samojedů).",
+    hereditary_nephritis_pkd: "U plemene se vyskytují dědičná onemocnění ledvin (dědičná nefritida a polycystické onemocnění ledvin).",
+    mucopolysaccharidosis_mps3b: "U plemene se vyskytuje mukopolysacharidóza typu IIIB, dědičné metabolické onemocnění postihující nervovou soustavu; je k dispozici DNA test rodičů.",
     panosteitis: "U plemene se může vyskytnout panosteitida, bolestivý zánět dlouhých kostí, který obvykle postihuje mladé, rostoucí psy.",
     splenic_torsion: "Torze sleziny, která vyžaduje okamžitou veterinární péči, se u tohoto plemene vyskytuje častěji než u jiných velkých plemen.",
     urinary_incontinence: "U plemene se může vyskytnout močová inkontinence, nekontrolovaný únik moči.",

@@ -323,7 +323,7 @@ const nl: Dictionary = {
       meta: {
         title: "Voor ouders – het ouderdashboard van PetPrep, de Care Score en de instellingen",
         description:
-          "Wat ouders zien in PetPrep: een dagelijks stoplicht per kind, de Care Score, routines, rapporten, meldingen, stille uren, pauze en privacy by design.",
+          "Wat ouders zien in PetPrep: een dagelijks stoplicht per kind, de Care Score, routines, rapporten, meldingen, stille uren, pauze en ingebouwde privacy.",
       },
       eyebrow: "Voor ouders",
       title: "Objectief bewijs, geen nieuwe belofte.",
@@ -373,7 +373,7 @@ const nl: Dictionary = {
         },
         {
           type: "list",
-          heading: "Privacy by design",
+          heading: "Ingebouwde privacy",
           items: [
             "Kinderen loggen in met een code – geen e-mailadres, geen wachtwoord, geen achternaam.",
             "We bewaren een bijnaam en, als je die invult, een geboortejaar. Verder niets over je kind.",
@@ -580,7 +580,7 @@ const nl: Dictionary = {
             "Gezinnen met meerdere ouders, meerdere kinderen en gedeelde huisdieren, met een eerlijke score per kind.",
             "Unieke fotorealistische AI-huisdieren met gemeten en begrensde AI-kosten, media opgeslagen op gehuurde servers in Duitsland (Hetzner, EU).",
             "Behoeften van huisdieren gebaseerd op geciteerde bronnen van dierenartsen en kennelclubs, waarbij elk getal tot de bron te herleiden is.",
-            "Kinderveiligheid by design: inloggen met een pincode, zonder e-mailadres, minimale gegevens, geen advertenties, alleen gecontroleerde media.",
+            "Kinderveiligheid vanaf het ontwerp: inloggen met een pincode, zonder e-mailadres, minimale gegevens, geen advertenties, alleen gecontroleerde media.",
           ],
         },
         {
@@ -635,6 +635,7 @@ const nl: Dictionary = {
                 "Codes: inlog- en uitnodigingscodes worden alleen als hash opgeslagen en verlopen.",
                 "Foutrapporten van de app: als de app vastloopt of crasht, kan de app een kort technisch rapport naar onze server in de EU sturen (soort fout en foutmelding, locatie in de code, app- en besturingssysteemversie, schermnaam, rol ouder/kind). Het bevat geen naam, e-mailadres, gebruikers-ID of IP-adres, wordt niet met derden gedeeld en wordt na 30 dagen verwijderd.",
                 "Lijst voor vroege toegang (deze website): je e-mailadres, de taal van de pagina en het moment waarop je je aanmeldde.",
+                "Een cadeaubon inwisselen (deze website): de ouder logt in met Google, Apple of met e-mailadres en wachtwoord. Bij e-mailadres en wachtwoord controleert onze server die tegen het bestaande ouderaccount en slaat het wachtwoord nooit leesbaar op; van Google of Apple ontvangen we alleen de accountidentificatie en andere gegevens van hen bewaren we niet. Een kortlevend inlogtoken wordt maximaal 15 minuten in het geheugen van de browser bewaard. Tijdens de doorverwijzing naar Google of Apple en de terugkeer staan er twee items (petprep.signin en petprep.webSession.handoff) alleen in de sessieopslag van dit browsertabblad. Ze worden verwijderd zodra de terugkeerpagina ze leest, anders bij het sluiten van het tabblad; de overdracht wordt alleen binnen 60 seconden geaccepteerd. Na uitloggen of het sluiten van het tabblad blijft er niets bewaard in de browser. Op onze server blijven alleen kortlevende technische gegevens: een vermelding van het inlogtoken (account-ID en tijden, geen naam of e-mailadres) die ongeveer twee dagen na het verlopen automatisch wordt verwijderd, en tellers voor beperking (mislukte pogingen per account in gehashte vorm gedurende 15 minuten; verzoeken per netwerkadres hooguit een uur).",
               ],
             },
             {
@@ -786,7 +787,7 @@ const nl: Dictionary = {
                 "Na 12 weken wordt een eindscore vastgelegd die later niet meer verandert; zorg na de challenge heeft hier geen invloed op. Met een score van 70 of hoger kun je in de app een Verantwoordelijkheidscertificaat (pdf) maken; onder de 70 krijg je een rapport van de challenge.",
                 "Als eten, water of netheid 24 uur op 0% blijft, wordt het huisdier “naar het asiel gebracht” (game over). Het spel met dat huisdier eindigt, er is geen certificaat en je krijgt een rapport van de challenge.",
                 "De Care Score en het certificaat laten alleen zien hoe de verzorger in de app voor een gesimuleerd huisdier heeft gezorgd. Ze zijn geen garantie dat een kind of iemand anders klaar is voor een echt huisdier, geen professionele beoordeling en geen vervanging van je eigen oordeel of van het advies van een dierenarts, fokker of asiel. De beslissing over een echt huisdier ligt altijd bij jou.",
-                "De spelregels (maaltijden, wandelingen en verzorging per ras en leeftijd) zijn vereenvoudigd en gebaseerd op openbare bronnen. Ze zijn geen veterinair advies; vraag een dierenarts naar de gezondheid en verzorging van een echt dier.",
+                "De spelregels (maaltijden, wandelingen en verzorging per ras en leeftijd) zijn vereenvoudigd en gebaseerd op openbare bronnen. Ze vervangen geen advies van een dierenarts; vraag een dierenarts naar de gezondheid en verzorging van een echt dier.",
               ],
             },
             {
@@ -1054,7 +1055,7 @@ const nl: Dictionary = {
           items: [
             "Bij elk feit staat de bron, met een link. Bronnen worden ingedeeld naar het gewicht dat ze verdienen: A – rasstandaarden, peer-reviewed artikelen en richtlijnen van dierenartsenverenigingen; B – adviespagina’s van dierenklinieken, universiteiten en nationale dierenwelzijnsorganisaties; C – secundaire samenvattingen (encyclopedieën, persartikelen), alleen gebruikt samen met een A- of B-bron.",
             "Alleen onderbouwde feiten worden als feit getoond. Een waarde die door geen enkele bron wordt ondersteund, publiceren we niet. Waar bronnen elkaar tegenspreken, tonen we de waarde van elke bron.",
-            "Spelregels zijn geen veterinair advies. Waar het spel een getal nodig heeft dat bronnen niet precies geven (bijvoorbeeld een dagelijks stappendoel), bepaalt PetPrep die zelf op basis van de bronnen en toont die alleen onder “Hoe PetPrep het simuleert”, gemarkeerd als spelregel.",
+            "Spelregels vervangen geen advies van een dierenarts. Waar het spel een getal nodig heeft dat bronnen niet precies geven (bijvoorbeeld een dagelijks stappendoel), bepaalt PetPrep die zelf op basis van de bronnen en toont die alleen onder “Hoe PetPrep het simuleert”, gemarkeerd als spelregel.",
             "Gezondheidsinformatie is uitsluitend informatief. Ze vat samen wat de bronnen over een ras zeggen en is niet door een dierenarts gecontroleerd. Raadpleeg voor een echt dier een dierenarts.",
             "Rasstandaarden worden in onze eigen woorden samengevat, nooit uitgebreid overgenomen, en een ras wordt nooit “hypoallergeen” genoemd.",
             "De encyclopedie wordt samengesteld uit de onderzoeksgegevens van PetPrep, dezelfde gegevens die de app gebruikt. Verandert een bron of een waarde, dan wordt de encyclopedie opnieuw gegenereerd en toont elke raspagina de datum van de laatste update. Zie je een fout? Mail naar hello@petprep.si.",

@@ -73,7 +73,7 @@ const fciGroups: Record<number, string> = {
   9: "Seura- ja kääpiökoirat",
   10: "Vinttikoirat",
 };
-const origins: Record<string, string> = { GB: "Iso-Britannia", FR: "Ranska", DE: "Saksa", US: "Yhdysvallat", CU: "Kuuba", CH: "Sveitsi", IT: "Italia", "CN-XZ": "Tiibet (Kiina)", CN: "Kiina", MX: "Meksiko", BE: "Belgia", HU: "Unkari", JP: "Japani", ZA: "Etelä-Afrikka", "BE-FR": "Belgia / Ranska", PT: "Portugali", CA: "Kanada", HR: "Kroatia", AU: "Australia", RU: "Venäjä", IE: "Irlanti", "AF-C": "Keski-Afrikka", TR: "Turkki", MG: "Madagaskar" };
+const origins: Record<string, string> = { GB: "Iso-Britannia", FR: "Ranska", DE: "Saksa", US: "Yhdysvallat", CU: "Kuuba", CH: "Sveitsi", IT: "Italia", "CN-XZ": "Tiibet (Kiina)", CN: "Kiina", MX: "Meksiko", BE: "Belgia", HU: "Unkari", JP: "Japani", ZA: "Etelä-Afrikka", "BE-FR": "Belgia / Ranska", PT: "Portugali", CA: "Kanada", HR: "Kroatia", AU: "Australia", RU: "Venäjä", IE: "Irlanti", "AF-C": "Keski-Afrikka", TR: "Turkki", MG: "Madagaskar", AF: "Afganistan" };
 const hours = (n: number) => s(n, "tunti", "tuntia");
 /** "kerran", "2 kertaa" (adverbial: kerran päivässä, 3 kertaa viikossa). */
 const times = (n: number) => (n === 1 ? "kerran" : `${n}${NB}kertaa`);
@@ -490,8 +490,11 @@ const fi: RegistryCopy = {
       dna_vwd2: "DNA-testi: von Willebrandin tauti, tyyppi 2 (vWD2) – perinnöllinen verenvuotohäiriö",
       dna_l2hga: "DNA-testi: L-2-hydroksiglutaariasiduria (L-2-HGA) – perinnöllinen hermoston aineenvaihduntasairaus",
       dna_pll: "DNA-testi: primaarinen linssiluksaatio (PLL) – perinnöllinen silmäsairaus, jossa mykiö siirtyy paikaltaan",
+      dna_mps3b: "DNA-testi mukopolysakkaridoosi tyyppi IIIB:lle (MPS IIIB), joka on hermoston perinnöllinen aineenvaihduntasairaus",
+      dna_tbox: "DNA-testi T-box-geenille, joka aiheuttaa luonnollisen töpöhännän",
       dna_loa: "DNA-testi: myöhään alkava ataksia (LOA) – perinnöllinen sairaus, joka heikentää tasapainoa ja liikkeiden koordinaatiota",
       dna_sca: "DNA-testi: spinoserebellaarinen ataksia (SCA) – perinnöllinen hermoston sairaus",
+      dna_chg: "DNA-testi: synnynnäinen kilpirauhasen vajaatoiminta ja struuma (CHG) – perinnöllinen, syntymästä asti esiintyvä kilpirauhasen sairaus",
     },
   },
   health: {
@@ -605,6 +608,7 @@ const fi: RegistryCopy = {
     open_fontanelle: "Rodulla voi esiintyä avointa aukiletta, kallon pehmeää kohtaa, joka ei sulkeudu kokonaan.",
     collapsing_trachea: "Rodulla voi esiintyä henkitorven kasaanpainumista, henkitorven heikkoutta, joka voi aiheuttaa yskää ja hengitysvaikeuksia.",
     gm1_gangliosidosis: "Rodulla voi esiintyä GM1-gangliosidoosia, perinnöllistä hermoston sairautta; vanhempien DNA-testillä se voidaan sulkea pois.",
+    gm2_gangliosidosis: "Rodulla on todettu GM2-gangliosidoosia, kuolemaan johtavaa perinnöllistä hermoston sairautta.",
     addisons_disease: "Rodulla voi esiintyä Addisonin tautia, lisämunuaisten hormonien puutetta.",
     protein_losing_disease: "Rodulla voi esiintyä munuaisten tai suoliston proteiinia hukkaavia sairauksia, jotka voivat aiheuttaa ripulia ja laihtumista.",
     diabetes_mellitus: "Rodulla voi esiintyä diabetesta (diabetes mellitus), jossa elimistö ei pysty säätelemään verensokeriaan kunnolla.",
@@ -637,6 +641,8 @@ const fi: RegistryCopy = {
     ear_infections_prone: "Rotu on altis korvatulehduksille; pidä korvien puhtaudesta tarkasti huolta.",
     familial_nephropathy: "Rodulla esiintyy perinnöllistä munuaissairautta (familiaalinen nefropatia); vanhemmille on saatavilla DNA-testi.",
     hereditary_nephritis: "Rodulla esiintyy perinnöllistä munuaissairautta (perinnöllinen nefriitti, jota kutsutaan myös samojedinkoiran perinnölliseksi glomerulopatiaksi).",
+    hereditary_nephritis_pkd: "Rodulla esiintyy perinnöllisiä munuaissairauksia (perinnöllinen nefriitti ja munuaisten monirakkulatauti).",
+    mucopolysaccharidosis_mps3b: "Rodulla esiintyy mukopolysakkaridoosi tyyppi IIIB:tä, perinnöllistä aineenvaihduntasairautta, joka vaikuttaa hermostoon; vanhempien DNA-testi on saatavilla.",
     panosteitis: "Rodulla voi esiintyä panosteiittia, pitkien luiden kivuliasta tulehdusta, joka koskee yleensä nuoria, kasvavia koiria.",
     urinary_incontinence: "Rodulla voi esiintyä virtsankarkailua, hallitsematonta virtsan vuotamista.",
     osteochondritis: "Rodulla voi esiintyä osteokondroosia (osteochondritis dissecans, OCD), kasvavien koirien nivelruston häiriötä.",
