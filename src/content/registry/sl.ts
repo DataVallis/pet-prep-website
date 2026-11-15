@@ -786,6 +786,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S849", "S850", "S851", "S852", "S853", "S854", "S10"],
     },
+    australian_silky_terrier: {
+      aka: "silky terier, svilnati terier, silky, Australian Silky Terrier, Silky Terrier",
+      text: [
+        "Avstralski svilnati terier je majhen, zelo pozoren pritlikavi terier iz Avstralije (FCI skupina 3, terierji; sekcija pritlikavi terierji), v Severni Ameriki znan kot Silky Terrier. Standard FCI zahteva ravno, fino, bleščečo dlako svilnate strukture v modri in rjavkasti barvi — sprejemljivi so vsi odtenki modre in rjavkaste, srebrna in bela pa ne — in višino 23–26 cm za pse, psice so lahko nekoliko nižje. Standardi teže ne navajajo (»v sorazmerju z višino«); PetMD in WebMD navajata okoli 10 funtov (približno 4,5 kg). Pes te velikosti zraste do okoli 8–12 mesecev (PetMD), Royal Kennel Club pa navaja življenjsko dobo več kot 12 let (PetMD in WebMD: 13–15 let).",
+        "Standard FCI ga opisuje kot pogumnega in dostojanstvenega pritlikavega terierja, ki mu kot spremljevalcu ni para. Royal Kennel Club priporoča do 30 minut gibanja na dan in vsakodnevno nego dlake ter piše, da je primeren za stanovanje. PetMD piše, da se svilnati terierji ob pravilni zgodnji socializaciji dobro razumejo z drugimi hišnimi živalmi in otroki, priporoča tečaj socializacije pred 16. tednom, čiščenje ušes na dva do tri tedne ter povodec ali ograjo zaradi lovskega nagona; WebMD svetuje vsakodnevno umivanje zob in kopanje približno enkrat na mesec.",
+      ],
+      sources: ["S855", "S856", "S857", "S858", "S10"],
+    },
 
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
