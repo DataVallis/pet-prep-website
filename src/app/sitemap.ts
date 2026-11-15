@@ -7,6 +7,7 @@ import { giftSitemapPaths } from "@/lib/giftRoutes";
 import { giftUpdated } from "@/lib/gift";
 import { promiseKitAlternatePaths, promiseKitConfig, promiseKitSitemapEntries } from "@/lib/promiseKit";
 import { registry } from "@/content/registry/registry";
+import { realCostAlternates, realCostLocales, realCostPath, realCostUpdated } from "@/content/realCost";
 import { emergencyHref } from "@/components/care/CarePages";
 import { coloringPageHref } from "@/components/coloring/ColoringPages";
 import { coloringPages, coloringUpdated } from "@/content/coloring/coloring";
@@ -90,6 +91,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: pathAlternates(each((l) => coloringPageHref(l, p))) },
     })),
   );
+  // "How much work is a Labrador?" (M6-S04): Slovenian and English.
+  const realCost = realCostLocales.map((locale) => ({
+    url: absoluteUrl(realCostPath(locale)),
+    lastModified: new Date(realCostUpdated),
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+    alternates: { languages: realCostAlternates(absoluteUrl) },
+  }));
   // Gift voucher sales page (M6-S01, all 15 languages): only while NEXT_PUBLIC_FEATURE_GIFT=1 and the checkout URL is set;
   // thanks and redeem are never listed.
   const giftPaths = giftSitemapPaths();
@@ -110,5 +119,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
     alternates: { languages: pathAlternates(promiseKitAlternatePaths()) },
   }));
-  return [...pages, ...register, ...care, ...emergency, ...coloring, ...gift, ...promiseKit];
+  return [...pages, ...register, ...care, ...emergency, ...coloring, ...gift, ...promiseKit, ...realCost];
 }
