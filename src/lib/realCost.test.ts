@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { test } from "node:test";
-import { realCostAlternates, realCostCopy, realCostLocales, realCostPath, realCostSlug } from "../content/realCost.ts";
+import { realCostAlternates, realCostCopy, realCostLinkFor, realCostLocales, realCostPath, realCostSlug } from "../content/realCost.ts";
 import { buildHtml, outFile } from "../../scripts/build-real-cost.mjs";
 
 test("paths: English at the root, Slovenian under /sl, slugs match the route folders", async () => {
@@ -49,4 +49,11 @@ test("the embedded app makes no third-party request and writes e-mails only from
   // The API override exists only for localhost tests.
   const source = await readFile(new URL("../../tools/real-cost/src/main.js", import.meta.url), "utf8");
   assert.match(source, /LOCAL && QUERY\.get\('api'\)/);
+});
+
+test("register link: Labrador page in SL and EN only", () => {
+  assert.equal(realCostLinkFor("sl", "labrador_retriever")?.href, "/sl/koliko-dela-je-z-labradorcem");
+  assert.equal(realCostLinkFor("en", "labrador_retriever")?.href, "/how-much-work-is-a-labrador");
+  assert.equal(realCostLinkFor("de", "labrador_retriever"), null);
+  assert.equal(realCostLinkFor("sl", "golden_retriever"), null);
 });
