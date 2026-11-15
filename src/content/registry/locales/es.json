@@ -800,6 +800,49 @@
         "Beauceron",
         "Pastor Beauceron"
       ]
+    },
+    "borzoi": {
+      "name": "Borzoi",
+      "slug": "borzoi",
+      "synonyms": [
+        "Barzoi",
+        "Lebrel ruso",
+        "Galgo ruso"
+      ]
+    },
+    "bouvier_des_flandres": {
+      "name": "Boyero de Flandes",
+      "slug": "boyero-de-flandes",
+      "synonyms": [
+        "Bouvier des Flandres",
+        "Vlaamse Koehond"
+      ]
+    },
+    "japanese_chin": {
+      "name": "Spaniel japonés",
+      "slug": "spaniel-japones",
+      "synonyms": [
+        "Chin japonés",
+        "Chin",
+        "Japanese Chin"
+      ]
+    },
+    "miniature_bull_terrier": {
+      "name": "Bull terrier miniatura",
+      "slug": "bull-terrier-miniatura",
+      "synonyms": [
+        "Miniature bull terrier"
+      ]
+    },
+    "norwich_terrier": {
+      "name": "Norwich terrier",
+      "slug": "norwich-terrier",
+      "synonyms": []
+    },
+    "schipperke": {
+      "name": "Schipperke",
+      "slug": "schipperke",
+      "synonyms": []
     }
   },
   "suitability_labels": {
