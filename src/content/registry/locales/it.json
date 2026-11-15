@@ -834,6 +834,23 @@
         "Japanese Chin",
         "Cane giapponese Chin"
       ]
+    },
+    "miniature_bull_terrier": {
+      "name": "Bull terrier miniatura",
+      "slug": "bull-terrier-miniatura",
+      "synonyms": [
+        "Miniature bull terrier"
+      ]
+    },
+    "norwich_terrier": {
+      "name": "Norwich terrier",
+      "slug": "norwich-terrier",
+      "synonyms": []
+    },
+    "schipperke": {
+      "name": "Schipperke",
+      "slug": "schipperke",
+      "synonyms": []
     }
   },
   "suitability_labels": {
