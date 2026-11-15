@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "test": "node --test \"src/**/*.test.ts\"",
-    "kit:build": "node scripts/build-promise-kit.mjs"
+    "kit:build": "node scripts/build-promise-kit.mjs",
+    "real-cost:build": "node scripts/build-real-cost.mjs"
   },
   "dependencies": {
     "@datavallis/consent": "0.5.1",
@@ -23,9 +24,12 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cannon-es": "^0.20.0",
+    "esbuild": "^0.25.12",
     "eslint": "^9",
     "eslint-config-next": "16.4.5",
     "tailwindcss": "^4",
+    "three": "^0.187.0",
     "typescript": "^5"
   }
 }
