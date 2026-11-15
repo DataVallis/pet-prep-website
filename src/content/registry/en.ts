@@ -774,6 +774,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S855", "S856", "S857", "S858", "S10"],
     },
+    parson_russell_terrier: {
+      aka: "Parson Jack Russell Terrier, Parson Terrier, PRT, parson russell terier",
+      text: [
+        "The Parson Russell Terrier is a workmanlike, active and agile working terrier from Great Britain, originally bred to work fox (FCI Group 3, terriers; section large and medium-sized terriers). It is a different breed from the Jack Russell Terrier: the Kennel Club first recognised it in 1990 as the Parson Jack Russell Terrier. The FCI standard asks for a white or predominantly white dog with tan, lemon or black markings, or any combination of these colours, a rough, broken or smooth coat, and an ideal height of 36 cm for males and 33 cm for females. PDSA gives an average weight of 6–8 kg. A dog of this size is fully grown at about 9–12 months (PetMD), and the Royal Kennel Club gives a lifespan of over 12 years (WebMD: 13 to 15 years).",
+        "The FCI standard calls the breed bold and friendly. The Royal Kennel Club recommends up to an hour of exercise a day and grooming once a week; PDSA says these dogs are full of energy, ideally need 1–2 hours of exercise a day, get on well with children, make an excellent family pet and need socialising at a young age with other family pets. PetMD notes that some have a high prey drive and recommends daily tooth brushing, cleaning the ears every two weeks and a bath every two to four weeks; WebMD adds that they don't like being alone and may have separation anxiety.",
+      ],
+      sources: ["S864", "S865", "S866", "S867", "S868", "S10"],
+    },
 
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
