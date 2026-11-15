@@ -794,6 +794,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S855", "S856", "S857", "S858", "S10"],
     },
+    parson_russell_terrier: {
+      aka: "parson jack russell terier, parson terier, parson, Parson Russell Terrier, Parson Jack Russell Terrier",
+      text: [
+        "Parson russell terier je delovni terier iz Velike Britanije — delaven, živahen in gibčen, prvotno vzrejen za lov na lisice (FCI skupina 3, terierji; sekcija veliki in srednji terierji). Je druga pasma kot jack russell terier: Kennel Club ga je prvič priznal leta 1990 kot parson jack russell terierja. Standard FCI zahteva belega ali pretežno belega psa z rjavimi, limonastimi ali črnimi lisami ali katero koli kombinacijo teh barv, s kocinasto, polkocinasto ali kratko dlako, in idealno višino 36 cm za pse in 33 cm za psice. PDSA navaja povprečno težo 6–8 kg. Pes te velikosti doraste pri približno 9–12 mesecih (PetMD), Royal Kennel Club pa navaja življenjsko dobo več kot 12 let (WebMD: 13 do 15 let).",
+        "Standard FCI ga opisuje kot pogumnega in prijaznega. Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje enkrat na teden; PDSA piše, da so ti psi polni energije, da jim najbolj ustreza 1–2 uri gibanja na dan, da se dobro razumejo z otroki, da so odlični družinski psi in da jih je treba že mlade socializirati z drugimi živalmi v družini. PetMD navaja, da imajo nekateri močan lovski nagon, ter priporoča vsakodnevno ščetkanje zob, čiščenje ušes vsaka dva tedna in kopanje na dva do štiri tedne; WebMD dodaja, da ne marajo biti sami in imajo lahko ločitveno tesnobo.",
+      ],
+      sources: ["S864", "S865", "S866", "S867", "S868", "S10"],
+    },
 
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
