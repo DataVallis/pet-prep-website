@@ -786,6 +786,46 @@
         "Bas-rouge",
         "Bas rouge"
       ]
+    },
+    "borzoi": {
+      "name": "Barzoï",
+      "slug": "barzoi",
+      "synonyms": [
+        "Borzoi",
+        "Lévrier russe"
+      ]
+    },
+    "bouvier_des_flandres": {
+      "name": "Bouvier des Flandres",
+      "slug": "bouvier-des-flandres",
+      "synonyms": [
+        "Vlaamse Koehond"
+      ]
+    },
+    "japanese_chin": {
+      "name": "Épagneul japonais",
+      "slug": "epagneul-japonais",
+      "synonyms": [
+        "Chin",
+        "Japanese Chin"
+      ]
+    },
+    "miniature_bull_terrier": {
+      "name": "Bull Terrier miniature",
+      "slug": "bull-terrier-miniature",
+      "synonyms": [
+        "Miniature Bull Terrier"
+      ]
+    },
+    "norwich_terrier": {
+      "name": "Norwich Terrier",
+      "slug": "norwich-terrier",
+      "synonyms": []
+    },
+    "schipperke": {
+      "name": "Schipperke",
+      "slug": "schipperke",
+      "synonyms": []
     }
   },
   "suitability_labels": {
