@@ -50,7 +50,7 @@ const nl: RegistryCopy = {
   hub: {
     title: "Leer je toekomstige huisdier kennen voordat het thuiskomt.",
     intro:
-      "Wat elke diersoort en elk ras in PetPrep echt nodig heeft – volgens kennelclubs, kattenstamboekorganisaties, veterinaire organisaties en onderzoeken, met een link naar elke bron. Plus de regels waarmee PetPrep het dier simuleert.",
+      "Wat elke diersoort en elk ras in PetPrep echt nodig heeft – volgens kennelclubs, kattenstamboekorganisaties, dierenartsenorganisaties en onderzoeken, met een link naar elke bron. Plus de regels waarmee PetPrep het dier simuleert.",
     breedCount: (n) => `${n} ${s(n, "ras", "rassen")} in het register`,
     open: "Bekijk de rassen",
     openA11y: (many) => `Bekijk de rassen: ${lc(many)}`,
@@ -58,10 +58,10 @@ const nl: RegistryCopy = {
     otherSpecies: "Meer diersoorten staan gepland.",
     methodTitle: "Zo bouwen we dit register",
     method: [
-      "Elk feit komt uit een genoemde bron – kennelclubs, kattenstamboekorganisaties, veterinaire organisaties en verenigingen, en peer-reviewed onderzoek – en linkt ernaar. Rasstandaarden vatten we in onze eigen woorden samen.",
+      "Elk feit komt uit een genoemde bron – kennelclubs, kattenstamboekorganisaties, dierenartsenorganisaties en verenigingen, en peer-reviewed onderzoek – en linkt ernaar. Rasstandaarden vatten we in onze eigen woorden samen.",
       "Waarden die door geen enkele bron worden ondersteund, tonen we nooit als feit. Waar PetPrep voor het spel een getal moet kiezen, staat dat alleen onder “Zo simuleert PetPrep het”, gemarkeerd als spelregel.",
       "Dezelfde gegevens sturen de app aan: de labels, het aantal maaltijden, de stappendoelen en de speelsessies op deze pagina’s zijn dezelfde die het huisdier in de app gebruikt.",
-      "Dit register is geen veterinair advies. Gezondheidsinformatie is alleen bedoeld als oriëntatie en is niet door een dierenarts gecontroleerd.",
+      "Dit register vervangt geen advies van een dierenarts. Gezondheidsinformatie is alleen bedoeld als oriëntatie en is niet door een dierenarts gecontroleerd.",
     ],
   },
   speciesStatus: { available: "In de app", coming_soon: "Binnenkort in de app", info_only: "Alleen ter informatie" },
@@ -246,7 +246,7 @@ const nl: RegistryCopy = {
           ? "Leert commando’s even snel als de kruising uit het gratis plan."
           : `Leert commando’s ${f.num(p.multiplier)}× zo snel als de kruising uit het gratis plan.`,
     senior_share: (p, f) => `Wordt senior in maand ${p.months} (${f.num(p.months / 12, 1)} jaar) – het laatste kwart van de verwachte levensduur van het ras.`,
-    walk_sensor: () => "Wandelingen tellen echte stappen uit Apple Health of Health Connect (met toestemming, alleen lezen) en uit de bewegingssensor van de telefoon – geen gps.",
+    walk_sensor: () => "Wandelingen tellen echte stappen uit Apple Gezondheid of Health Connect (met toestemming, alleen lezen) en uit de bewegingssensor van de telefoon – geen gps.",
     play_instead_of_steps: (p, f) =>
       `Geen wandelingen: een volwassen kat heeft ${p.sessions} ${s(p.sessions, "speelsessie", "speelsessies")} per dag met een kattenhengel nodig, met minstens ${f.num(p.gap_minutes / 60)} uur ertussen.`,
     litter_rule: (p) =>
@@ -300,7 +300,7 @@ const nl: RegistryCopy = {
       dna_poag_pll: "DNA-test op primair openhoekglaucoom en primaire lensluxatie (POAG/PLL), erfelijke oogziekten die tot blindheid kunnen leiden",
       hip_scheme: "Röntgenonderzoek op heupdysplasie (VK: BVA/KC-programma)",
       elbow_scheme: "Röntgenonderzoek op elleboogdysplasie (VK: BVA/KC-programma)",
-      eye_scheme: "Oogonderzoek door een veterinaire oogspecialist (VK: BVA/KC/ISDS-programma; bij sommige rassen met gonioscopie)",
+      eye_scheme: "Oogonderzoek door een dierenoogarts (VK: BVA/KC/ISDS-programma; bij sommige rassen met gonioscopie)",
       heart_scheme: "Hartonderzoek op mitralisklepziekte",
       boas_grading: "Ademhalingstest op brachycefaal obstructief luchtwegsyndroom (BOAS-gradering)",
       ivdd_screening: "Rugscreening op hernia (intervertebrale discusziekte, IVDD)",
@@ -560,12 +560,12 @@ const nl: RegistryCopy = {
     needsTitle: "Wat het nodig heeft",
     needsIntro: (species) =>
       species === "cat"
-        ? "Volgens kattenstamboekorganisaties, veterinaire organisaties en onderzoeken. Waar bronnen verschillen, staat elke bron erbij."
-        : "Volgens rasstandaarden, kennelclubs, veterinaire organisaties en onderzoeken. Waar bronnen verschillen, staat elke bron erbij.",
+        ? "Volgens kattenstamboekorganisaties, dierenartsenorganisaties en onderzoeken. Waar bronnen verschillen, staat elke bron erbij."
+        : "Volgens rasstandaarden, kennelclubs, dierenartsenorganisaties en onderzoeken. Waar bronnen verschillen, staat elke bron erbij.",
     general: (many) => `Algemene richtlijnen voor ${lc(many)} (niet specifiek voor dit ras):`,
     noData: "Nog niet in onze bronnen.",
     simTitle: "Zo simuleert PetPrep het",
-    simBadge: "Spelregels, geen veterinair advies",
+    simBadge: "Spelregels, geen advies van een dierenarts",
     simIntro:
       "In PetPrep is één echte week één maand in het leven van het huisdier. Dit zijn de regels die het spel voor dit ras gebruikt. PetPrep heeft ze gekozen op basis van de bronnen op deze pagina; het zijn geen verzorgingsinstructies voor een echt huisdier.",
     simInfoOnly: "Dit ras staat alleen ter informatie in het register; de app simuleert het nog niet.",
@@ -603,7 +603,7 @@ const nl: RegistryCopy = {
     sourcesAll: "Alle bronnen tonen",
     sourcesFewer: "Minder tonen",
     sourceLabel: (id, publisher) => `Bron ${id}: ${publisher}`,
-    disclaimer: "PetPrep is een simulatie voor gezinnen. Deze pagina is geen veterinair advies – vraag voor een echt huisdier een dierenarts of de rasvereniging.",
+    disclaimer: "PetPrep is een simulatie voor gezinnen. Deze pagina vervangt geen advies van een dierenarts – vraag voor een echt huisdier een dierenarts of de rasvereniging.",
     backTo: (many) => `Alle ${lc(many)}`,
     compareWith: "Vergelijk met andere rassen",
     related: { title: "Vergelijkbare rassen", intro: (many) => `Andere ${lc(many)} in het register met vergelijkbare behoeften – elk met onderbouwde feiten.` },

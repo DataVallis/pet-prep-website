@@ -386,7 +386,7 @@ const nl: CareCopy = {
     related: "Vergelijkbaar eten",
     sources: "Bronnen",
     updated: "Bijgewerkt",
-    notVetReviewed: "Algemene informatie uit de bronnen hieronder, niet gecontroleerd door een dierenarts en geen vervanging van veterinair advies. Twijfel je? Bel je dierenarts.",
+    notVetReviewed: "Algemene informatie uit de bronnen hieronder, niet gecontroleerd door een dierenarts en geen vervanging van advies van een dierenarts. Twijfel je? Bel je dierenarts.",
     otherSpecies: "Andere diersoorten",
     simulates: "Zo oefenen kinderen dit in PetPrep",
     simulatesText: (w) => `In PetPrep zorgt een kind voor ${w.pet} die levensecht is nagebootst: maaltijden op het juiste moment, water, wandelingen en verzorging. Weten wat je veilig kunt delen, hoort erbij als je klaar wilt zijn voor een echt huisdier.`,
