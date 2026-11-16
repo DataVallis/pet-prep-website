@@ -58,7 +58,16 @@ export function validate(f: PartnerForm): FieldError[] {
   return out;
 }
 
-export function buildPayload(f: PartnerForm, locale: "sl" | "en"): PartnerPayload {
+/**
+ * The PetPrep API (StorePartnerInquiryRequest) accepts only "sl" and "en" as `locale` and answers 422
+ * for anything else, so the 13 other site languages are sent as "en" (the reply goes out in English or
+ * Slovenian anyway). TODO(pet-prep): allow all 15 site languages in the API, then send the real locale.
+ */
+export function apiLocale(locale: string): "sl" | "en" {
+  return locale === "sl" ? "sl" : "en";
+}
+
+export function buildPayload(f: PartnerForm, locale: string): PartnerPayload {
   return {
     company: f.company.trim(),
     contact_name: f.contact_name.trim(),
@@ -66,7 +75,7 @@ export function buildPayload(f: PartnerForm, locale: "sl" | "en"): PartnerPayloa
     type: isPartnerType(f.type) ? f.type : "other",
     message: f.message.trim(),
     website: f.website,
-    locale,
+    locale: apiLocale(locale),
   };
 }
 

@@ -1,5 +1,5 @@
 import registry from "@/content/registry/registry.json";
-import { locales } from "@/i18n/config";
+import { localeMeta, locales } from "@/i18n/config";
 import { partnerCopy, type PartnerLang } from "@/content/partners";
 import { computePartnerStats, fill, formatAsOf } from "@/lib/partnerStats";
 
@@ -21,7 +21,7 @@ export function PartnerStatsBlock({ lang }: { lang: PartnerLang }) {
   return (
     <section id="stevilke" className="flex scroll-mt-24 flex-col gap-6">
       <h2 className="h-card text-[28px] leading-tight sm:text-[34px]">{c.heading}</h2>
-      <p className="max-w-3xl text-[17px] leading-relaxed text-muted">{fill(c.intro, { date: formatAsOf(stats.asOf, lang) })}</p>
+      <p className="max-w-3xl text-[17px] leading-relaxed text-muted">{fill(c.intro, { date: formatAsOf(stats.asOf, localeMeta[lang].intl) })}</p>
       <dl className="grid gap-4 sm:grid-cols-2">
         {shown.map((it) => (
           <div key={it.label} className="flex flex-col gap-1 rounded-[22px] border border-line bg-white p-6">

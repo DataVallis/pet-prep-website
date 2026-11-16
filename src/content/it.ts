@@ -1,4 +1,5 @@
 import type { Dictionary } from "./types";
+import { partnerPages } from "./partners";
 
 const it: Dictionary = {
   meta: {
@@ -500,44 +501,7 @@ const it: Dictionary = {
         },
       ],
     },
-    partners: {
-      meta: {
-        title: "Partner — collabora con PetPrep",
-        description:
-          "PetPrep collabora con negozi di animali, rifugi, veterinari, educatori cinofili, assicurazioni, produttori di collari e scuole per aiutare le famiglie a prendere un animale in modo responsabile.",
-      },
-      eyebrow: "Partner",
-      title: "Famiglie più preparate, per chiunque abbia a cuore gli animali.",
-      lead:
-        "Le famiglie che completano PetPrep sanno cosa richiede davvero un animale. Stiamo costruendo una rete di partner che le incontri al momento giusto, sempre chiaramente indicata e sempre con il consenso della famiglia.",
-      planned: true,
-      blocks: [
-        {
-          type: "cards",
-          heading: "Con chi collaboriamo",
-          columns: 3,
-          items: [
-            { title: "Negozi di animali", text: "Raggiungi le famiglie nel momento in cui dimostrano di essere pronte, per esempio con un’offerta per il kit iniziale insieme al certificato." },
-            { title: "Rifugi, associazioni e allevatori", text: "Consiglia PetPrep prima dell’adozione o dell’acquisto, per avere meno decisioni impulsive e meno restituzioni." },
-            { title: "Veterinari", text: "Quando l’animale vero arriva a casa, l’assistente IA risponde alle prime domande e indirizza i proprietari a te, con un riepilogo del caso condiviso solo con il consenso." },
-            { title: "Educatori cinofili e scuole per cani", text: "Consigli e prenotazioni quando una famiglia passa a un cane vero." },
-            { title: "Assicurazioni per animali", text: "Offerte che tengono conto della razza quando viene registrato un animale vero, chiaramente indicate." },
-            { title: "Produttori di collari e IoT", text: "Integrazione dei dati di attività per avvisi più intelligenti e spiegati." },
-          ],
-        },
-        {
-          type: "list",
-          heading: "Perché i partner si fidano di noi",
-          items: [
-            "I bambini accedono senza email e riduciamo al minimo i loro dati, su server nell’UE.",
-            "Sullo schermo di un bambino arrivano solo contenuti verificati; non c’è pubblicità.",
-            "Ogni offerta dei partner è indicata come tale e ogni commissione viene dichiarata alla famiglia.",
-          ],
-        },
-        { type: "callout", title: "Parliamone.", text: "Stiamo preparando le condizioni di collaborazione. Dicci chi sei e cosa hai in mente.", tone: "dark" },
-        { type: "contact" },
-      ],
-    },
+    partners: partnerPages.it,
     investors: {
       meta: {
         title: "Investi in PetPrep — dalla preparazione all’animale alle cure per tutta la vita",
@@ -635,6 +599,7 @@ const it: Dictionary = {
                 "Codici: i codici di accesso e di invito sono conservati solo come hash e scadono.",
                 "Segnalazioni di errore dell’app: se l’app si blocca o si chiude in modo anomalo, può inviare un breve resoconto tecnico al nostro server nell’UE (tipo e testo dell’errore, posizione nel codice, versione dell’app e del sistema operativo, nome della schermata, ruolo genitore/bambino). Non contiene nomi, indirizzi email, ID utente né indirizzi IP, non viene condiviso con terzi e viene eliminato dopo 30 giorni.",
                 "Lista d’attesa per l’accesso anticipato (questo sito web): il tuo indirizzo email, la lingua della pagina e il momento dell’iscrizione.",
+                "Modulo partner (questo sito web): nome dell’azienda, nome della persona di contatto, indirizzo email e messaggio. Li usiamo solo per rispondere alla tua richiesta, li conserviamo per 12 mesi e poi li cancelliamo. La base giuridica è il tuo consenso, che dai spuntando la casella prima dell’invio.",
                 "Le pagine «Quanto lavoro è un cane?» (questo sito web): se inserisci la tua email e spunti la casella del consenso, conserviamo il tuo indirizzo email, il momento del consenso, la razza scelta, se hai guardato un cane o un cucciolo, la lingua della pagina e quante volte e quando hai inserito l’indirizzo l’ultima volta. Non conserviamo il tuo indirizzo IP né il tuo nome. Teniamo i dati sul nostro server nell’UE finché non ne chiedi la cancellazione. Il riepilogo stampabile viene creato nel tuo browser e non viene inviato da nessuna parte.",
                 "Riscatto di un buono regalo (questo sito): il genitore accede con Google, Apple oppure con email e password. Con email e password, il nostro server le verifica rispetto all’account genitore esistente e non conserva mai la password in chiaro; da Google o Apple riceviamo solo l’identificativo dell’account e non conserviamo altri loro dati. Un token di accesso di breve durata resta nella memoria del browser per al massimo 15 minuti. Durante il passaggio a Google o Apple e il ritorno, due voci (petprep.signin e petprep.webSession.handoff) esistono solo nello storage di sessione di questa scheda del browser. Vengono eliminate non appena la pagina di ritorno le legge e, altrimenti, alla chiusura della scheda; il passaggio di consegne è accettato solo entro 60 secondi. Dopo la disconnessione o la chiusura della scheda non resta memorizzato nulla nel browser. Sul nostro server restano solo registrazioni tecniche di breve durata: una traccia del token di accesso (ID dell’account e orari, senza nome né email) che viene eliminata automaticamente circa due giorni dopo la scadenza, e contatori di limitazione (tentativi falliti per account in forma hash per 15 minuti; richieste per indirizzo di rete per al massimo un’ora).",
               ],
@@ -682,6 +647,7 @@ const it: Dictionary = {
                 "Per gestire e proteggere il servizio con le segnalazioni di errore dell’app, che ci aiutano a risolvere blocchi e chiusure anomale (legittimo interesse).",
                 "Per adempiere agli obblighi di legge, come la contabilizzazione degli acquisti (obbligo legale).",
                 "Per inviarti email sul lancio di PetPrep se ti sei iscritto alla lista per l’accesso anticipato (consenso: puoi annullare l’iscrizione in ogni email).",
+                "Per rispondere a una richiesta inviata tramite il modulo partner (consenso; conserviamo i dati per 12 mesi).",
                 "Per inviarti via email novità e consigli di PetPrep se hai inserito la tua email e spuntato la casella del consenso nelle pagine «Quanto lavoro è un cane?» (consenso: puoi annullare l’iscrizione in ogni messaggio e chiedere in qualsiasi momento la cancellazione dei dati).",
                 "Per capire come i visitatori usano questo sito web, con Google Analytics, solo se consenti i cookie analitici (consenso: puoi modificarlo in qualsiasi momento in Impostazioni dei cookie).",
               ],

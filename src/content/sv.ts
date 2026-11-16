@@ -1,4 +1,5 @@
 import type { Dictionary } from "./types";
+import { partnerPages } from "./partners";
 
 const sv: Dictionary = {
   meta: {
@@ -500,44 +501,7 @@ const sv: Dictionary = {
         },
       ],
     },
-    partners: {
-      meta: {
-        title: "Partner – samarbeta med PetPrep",
-        description:
-          "PetPrep samarbetar med djuraffärer, djurhem, veterinärer, hundtränare, försäkringsbolag, halsbandstillverkare och skolor för att hjälpa familjer att skaffa husdjur på ett ansvarsfullt sätt.",
-      },
-      eyebrow: "Partner",
-      title: "Bättre förberedda familjer för alla som bryr sig om djur.",
-      lead:
-        "Familjer som har gått igenom PetPrep vet vad ett husdjur verkligen kräver. Vi bygger ett partnernätverk som möter dem i rätt ögonblick – tydligt märkt och alltid med familjens samtycke.",
-      planned: true,
-      blocks: [
-        {
-          type: "cards",
-          heading: "Vilka vi samarbetar med",
-          columns: 3,
-          items: [
-            { title: "Djuraffärer", text: "Nå familjer i ögonblicket då de visar att de är redo – till exempel med ett erbjudande på ett startpaket i samband med diplomet." },
-            { title: "Djurhem, omplaceringsföreningar och uppfödare", text: "Rekommendera PetPrep före adoption eller köp, så att färre beslut fattas på impuls och färre djur lämnas tillbaka." },
-            { title: "Veterinärer", text: "När det riktiga djuret har kommit hem svarar AI-assistenten på de första frågorna och hänvisar ägarna till er, med en sammanfattning av ärendet som bara delas med samtycke." },
-            { title: "Hundtränare och hundskolor", text: "Rekommendationer och bokning när en familj går vidare till en riktig hund." },
-            { title: "Djurförsäkringsbolag", text: "Erbjudanden anpassade efter rasen när ett riktigt djur registreras – tydligt märkta." },
-            { title: "Halsbandstillverkare och IoT-företag", text: "Integration av aktivitetsdata för smartare larm som förklarar." },
-          ],
-        },
-        {
-          type: "list",
-          heading: "Därför kan partner lita på oss",
-          items: [
-            "Barn loggar in utan e-post och vi håller deras data till ett minimum, på servrar inom EU.",
-            "Bara granskat innehåll når barnets skärm, och det finns ingen reklam.",
-            "Varje partnererbjudande är märkt och varje provision redovisas för familjen.",
-          ],
-        },
-        { type: "callout", title: "Låt oss prata.", text: "Villkoren för partnerskap håller på att tas fram. Berätta vilka ni är och vad ni har i tankarna.", tone: "dark" },
-        { type: "contact" },
-      ],
-    },
+    partners: partnerPages.sv,
     investors: {
       meta: {
         title: "Investera i PetPrep – från förberedelse inför husdjur till omsorg under djurets hela liv",
@@ -635,6 +599,7 @@ const sv: Dictionary = {
                 "Koder: inloggnings- och inbjudningskoder sparas bara som hashvärden och upphör att gälla.",
                 "Felrapporter från appen: om appen fryser eller kraschar kan den skicka en kort teknisk rapport till vår server inom EU (feltyp och feltext, plats i koden, app- och OS-version, skärmens namn, roll (förälder eller barn)). Den innehåller inget namn, ingen e-postadress, inget användar-ID och ingen IP-adress, delas inte med någon tredje part och raderas efter 30 dagar.",
                 "Listan för tidig tillgång (den här webbplatsen): din e-postadress, sidans språk och tidpunkten då du anmälde dig.",
+                "Partnerformulär (den här webbplatsen): företagsnamn, kontaktpersonens namn, e-postadress och meddelande. Vi använder dem bara för att svara på din förfrågan, sparar dem i 12 månader och raderar dem sedan. Den rättsliga grunden är ditt samtycke, som du ger genom att kryssa i rutan innan du skickar.",
                 "Sidorna ”Hur mycket jobb är en hund?” (den här webbplatsen): om du skriver in din e-postadress och kryssar i samtyckesrutan sparar vi din e-postadress, tidpunkten för samtycket, den ras du valde, om du tittade på en hund eller en valp, sidans språk samt hur många gånger och när du senast skrev in adressen. Vi sparar varken din IP-adress eller ditt namn. Vi behåller uppgifterna på vår server i EU tills du ber oss radera dem. Den utskrivbara sammanfattningen skapas i din webbläsare och skickas ingenstans.",
                 "Inlösen av presentkort (den här webbplatsen): föräldern loggar in med Google, Apple eller med e-postadress och lösenord. Med e-postadress och lösenord kontrollerar vår server dem mot det befintliga föräldrakontot och sparar aldrig lösenordet i klartext; från Google eller Apple får vi bara kontots identifierare och sparar inga andra uppgifter från dem. En kortlivad inloggningstoken hålls i webbläsarens minne i högst 15 minuter. Under omdirigeringen till Google eller Apple och tillbaka finns två poster (petprep.signin och petprep.webSession.handoff) bara i sessionslagringen för den här webbläsarfliken. De raderas så fort returnsidan läser dem, annars när fliken stängs; överlämningen godtas bara inom 60 sekunder. Efter utloggning eller när fliken stängs finns ingenting kvar i webbläsaren. På vår server finns bara kortlivade tekniska poster kvar: en post om inloggningstoken (konto-id och tider, inget namn eller e-postadress) som raderas automatiskt cirka två dygn efter att den löpt ut, samt räknare för begränsning (misslyckade försök per konto i hashad form i 15 minuter; förfrågningar per nätverksadress i högst en timme).",
               ],
@@ -682,6 +647,7 @@ const sv: Dictionary = {
                 "För att driva och säkra tjänsten: felrapporter från appen hjälper oss att rätta fel som får appen att frysa eller krascha (berättigat intresse).",
                 "För att uppfylla rättsliga skyldigheter, till exempel bokföring av köp (rättslig förpliktelse).",
                 "För att mejla dig om lanseringen av PetPrep om du har anmält dig till listan för tidig tillgång (samtycke – du kan avregistrera dig i varje mejl).",
+                "För att svara på en förfrågan som skickats via partnerformuläret (samtycke – vi sparar uppgifterna i 12 månader).",
                 "För att skicka PetPrep-nyheter och tips till dig via e-post om du har skrivit in din e-postadress och kryssat i samtyckesrutan på sidorna ”Hur mycket jobb är en hund?” (samtycke – du kan avsluta i varje meddelande och när som helst be oss radera uppgifterna).",
                 "För att förstå hur besökare använder den här webbplatsen, med Google Analytics, bara om du tillåter analyscookies (samtycke – du kan när som helst ändra det under Cookieinställningar).",
               ],

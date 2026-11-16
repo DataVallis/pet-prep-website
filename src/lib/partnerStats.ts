@@ -16,15 +16,12 @@ export function computePartnerStats(registry: { breeds: { species?: unknown }[] 
   return { breeds, languages, asOf: now.toISOString().slice(0, 10) };
 }
 
-const months = {
-  sl: ["januar", "februar", "marec", "april", "maj", "junij", "julij", "avgust", "september", "oktober", "november", "december"],
-  en: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-} as const;
-
-/** "11. november 2026" / "11 November 2026" from an ISO date (timezone-free). */
-export function formatAsOf(iso: string, lang: "sl" | "en"): string {
-  const [y, m, d] = iso.split("-").map(Number);
-  return lang === "sl" ? `${d}. ${months.sl[m - 1]} ${y}` : `${d} ${months.en[m - 1]} ${y}`;
+/**
+ * "11. november 2026" / "11 November 2026" / "11. marraskuuta 2026" from an ISO date (timezone-free).
+ * `intl` is the language's Intl tag (localeMeta[locale].intl), so every site language reads naturally.
+ */
+export function formatAsOf(iso: string, intl: string): string {
+  return new Intl.DateTimeFormat(intl, { dateStyle: "long", timeZone: "UTC" }).format(new Date(`${iso}T12:00:00Z`));
 }
 
 export function fill(text: string, vars: Record<string, string | number>): string {

@@ -1,4 +1,5 @@
 import type { Dictionary } from "./types";
+import { partnerPages } from "./partners";
 
 const es: Dictionary = {
   meta: {
@@ -500,44 +501,7 @@ const es: Dictionary = {
         },
       ],
     },
-    partners: {
-      meta: {
-        title: "Socios: colabora con PetPrep",
-        description:
-          "PetPrep colabora con tiendas de mascotas, protectoras, veterinarios, adiestradores, aseguradoras, fabricantes de collares y colegios para ayudar a las familias a tener mascotas de forma responsable.",
-      },
-      eyebrow: "Socios",
-      title: "Familias mejor preparadas, para todos los que cuidan de los animales.",
-      lead:
-        "Las familias que terminan PetPrep saben lo que exige de verdad una mascota. Estamos creando una red de socios que llegue a ellas en el momento adecuado, siempre bien identificada y con el consentimiento de la familia.",
-      planned: true,
-      blocks: [
-        {
-          type: "cards",
-          heading: "Con quién trabajamos",
-          columns: 3,
-          items: [
-            { title: "Tiendas de mascotas", text: "Llega a las familias justo cuando demuestran que están preparadas, por ejemplo con una oferta de kit de inicio junto al certificado." },
-            { title: "Protectoras, asociaciones y criadores", text: "Recomienda PetPrep antes de la adopción o la compra para reducir las decisiones impulsivas y las devoluciones." },
-            { title: "Veterinarios", text: "Cuando la mascota real llega a casa, el asistente de IA responde a las primeras preguntas y deriva a las familias a tu clínica, con un resumen del caso que solo se comparte con consentimiento." },
-            { title: "Adiestradores y escuelas caninas", text: "Recomendaciones y reservas cuando una familia da el paso de tener un perro de verdad." },
-            { title: "Aseguradoras de mascotas", text: "Ofertas adaptadas a la raza cuando se registra una mascota real, siempre bien identificadas." },
-            { title: "Fabricantes de collares y dispositivos IoT", text: "Integración de los datos de actividad para avisos más inteligentes y bien explicados." },
-          ],
-        },
-        {
-          type: "list",
-          heading: "Por qué confían en nosotros nuestros socios",
-          items: [
-            "Los niños entran sin correo electrónico y reducimos sus datos al mínimo, en servidores de la UE.",
-            "A la pantalla de un niño solo llega contenido verificado; no hay anuncios.",
-            "Cada oferta de un socio está identificada y cada comisión se comunica a la familia.",
-          ],
-        },
-        { type: "callout", title: "Hablemos.", text: "Estamos preparando las condiciones de colaboración. Cuéntanos quién eres y qué tienes en mente.", tone: "dark" },
-        { type: "contact" },
-      ],
-    },
+    partners: partnerPages.es,
     investors: {
       meta: {
         title: "Invierte en PetPrep: de la preparación para una mascota al cuidado de por vida",
@@ -635,6 +599,7 @@ const es: Dictionary = {
                 "Códigos: los códigos de inicio de sesión y de invitación se almacenan solo como hash y caducan.",
                 "Informes de errores de la aplicación: si la aplicación se bloquea o se cierra inesperadamente, puede enviar un breve informe técnico a nuestro servidor en la UE (tipo y texto del error, ubicación en el código, versión de la aplicación y del sistema operativo, nombre de la pantalla, rol de padre/hijo). No contiene nombre, dirección de correo electrónico, ID de usuario ni dirección IP, no se comparte con ningún tercero y se elimina a los 30 días.",
                 "Lista de acceso anticipado (este sitio web): tu dirección de correo electrónico, el idioma de la página y el momento en que te apuntaste.",
+                "Formulario de socios (este sitio web): nombre de la empresa, nombre de la persona de contacto, dirección de correo electrónico y mensaje. Los usamos únicamente para responder a tu solicitud, los conservamos 12 meses y después los eliminamos. La base jurídica es tu consentimiento, que das al marcar la casilla antes de enviar.",
                 "Las páginas «¿Cuánto trabajo es un perro?» (este sitio web): si escribes tu correo electrónico y marcas la casilla de consentimiento, guardamos tu dirección de correo, el momento del consentimiento, la raza elegida, si miraste a un perro o a un cachorro, el idioma de la página y cuántas veces y cuándo escribiste la dirección por última vez. No guardamos tu dirección IP ni tu nombre. Conservamos los datos en nuestro servidor en la UE hasta que pidas su eliminación. El resumen imprimible se crea en tu navegador y no se envía a ningún sitio.",
                 "Canje de un vale regalo (este sitio web): el padre o la madre inicia sesión con Google, Apple o con correo electrónico y contraseña. Con correo electrónico y contraseña, nuestro servidor los comprueba con la cuenta de padres existente y nunca guarda la contraseña en texto plano; de Google o Apple solo recibimos el identificador de la cuenta y no guardamos ningún otro dato suyo. Un token de inicio de sesión de corta duración se mantiene en la memoria del navegador durante 15 minutos como máximo. Durante la redirección a Google o Apple y la vuelta, existen dos entradas (petprep.signin y petprep.webSession.handoff) solo en el almacenamiento de sesión de esta pestaña del navegador. Se eliminan en cuanto la página de retorno las lee y, en caso contrario, al cerrar la pestaña; el traspaso solo se acepta dentro de los 60 segundos. Tras cerrar sesión o cerrar la pestaña no queda nada almacenado en el navegador. En nuestro servidor solo permanecen registros técnicos de corta duración: un registro del token de inicio de sesión (identificador de la cuenta y horas, sin nombre ni correo electrónico) que se elimina automáticamente unos dos días después de caducar, y contadores de limitación (intentos fallidos por cuenta en forma cifrada durante 15 minutos; solicitudes por dirección de red durante una hora como máximo).",
               ],
@@ -682,6 +647,7 @@ const es: Dictionary = {
                 "Para hacer funcionar y proteger el servicio mediante informes de errores de la aplicación que nos ayudan a corregir bloqueos y cierres inesperados (interés legítimo).",
                 "Para cumplir obligaciones legales, como la contabilidad de las compras (obligación legal).",
                 "Para enviarte correos electrónicos sobre el lanzamiento de PetPrep si te has apuntado a la lista de acceso anticipado (consentimiento; puedes darte de baja desde cualquier correo).",
+                "Para responder a una solicitud enviada mediante el formulario de socios (consentimiento; conservamos los datos 12 meses).",
                 "Para enviarte por correo novedades y consejos de PetPrep si escribiste tu correo y marcaste la casilla de consentimiento en las páginas «¿Cuánto trabajo es un perro?» (consentimiento: puedes darte de baja en cada mensaje y pedir que eliminemos los datos en cualquier momento).",
                 "Para entender cómo usan los visitantes este sitio web, con Google Analytics, solo si permites las cookies analíticas (consentimiento; puedes cambiarlo en cualquier momento en la configuración de cookies).",
               ],

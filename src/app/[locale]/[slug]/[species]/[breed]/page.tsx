@@ -161,7 +161,7 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
   const cite = c.page.sourceLabel;
   const breed = r.breed;
   const mistakes = ownerMistakes(locale, breed);
-  // »How much work is a dog?« (M6-S04): every dog breed since M6-S07 (David 2026-11-16), SL + EN only.
+  // »How much work is a dog?« (M6-S04): every dog breed since M6-S07 (David 2026-11-16), all 15 languages (M6-S08).
   const realCost = realCostLinkFor(locale, breed);
 
   const ld = graph(

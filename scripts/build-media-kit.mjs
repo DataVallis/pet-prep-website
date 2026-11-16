@@ -1,10 +1,12 @@
 #!/usr/bin/env node
 /**
- * Media kit PDFs (M6-S03): public/media/petprep-media-kit-{sl,en}.pdf, built from HTML with the system
+ * Media kit PDFs (M6-S03, all 15 site languages since M6-S08): public/media/petprep-media-kit-<locale>.pdf, built from HTML with the system
  * Chrome (google-chrome / chromium; override with CHROME=/path). Numbers are counted from
  * src/content/registry/registry.json at build time and carry the build date. Self-contained: loads the
  * copy from src/content/partners.ts and the brand fonts from src/fonts (Node 22 runs .ts natively).
- * Usage: node scripts/build-media-kit.mjs [--png <dir>]   (--png also writes one PNG per page for checking)
+ * Usage: node scripts/build-media-kit.mjs [--png <dir>] [--lang de,fi]
+ *   --png writes one PNG per page for checking; --lang builds only those languages (default: all 15).
+ * Each language is also checked for text that does not fit its A4 page (the build fails on overflow).
  */
 import { execFileSync } from "node:child_process";
 import { mkdirSync, mkdtempSync, readFileSync, writeFileSync } from "node:fs";
@@ -15,9 +17,11 @@ import { pathToFileURL } from "node:url";
 const root = resolve(import.meta.dirname, "..");
 const { kitCopy, partnerContactEmail } = await import(pathToFileURL(join(root, "src/content/partners.ts")).href);
 const { computePartnerStats, formatAsOf, fill } = await import(pathToFileURL(join(root, "src/lib/partnerStats.ts")).href);
+const { locales, localeMeta, pageSlugs } = await import(pathToFileURL(join(root, "src/i18n/config.ts")).href);
 const registry = JSON.parse(readFileSync(join(root, "src/content/registry/registry.json"), "utf8"));
 const stats = computePartnerStats(registry, ["x"], new Date());
 const chrome = process.env.CHROME || "google-chrome";
+const only = process.argv.includes("--lang") ? process.argv[process.argv.indexOf("--lang") + 1].split(",") : null;
 const pngDir = process.argv.includes("--png") ? resolve(process.argv[process.argv.indexOf("--png") + 1]) : null;
 
 const font = (file) => `data:font/woff2;base64,${readFileSync(join(root, "src/fonts", file)).toString("base64")}`;
@@ -32,7 +36,7 @@ const css = `
 @page{size:A4;margin:0}
 *{box-sizing:border-box}
 html,body{margin:0}
-body{font-family:Instrument,sans-serif;color:#121614;font-size:11.5pt;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:Instrument,sans-serif;overflow-wrap:break-word;hyphens:auto;color:#121614;font-size:11.5pt;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 .page{width:210mm;height:297mm;padding:18mm 18mm 16mm;position:relative;overflow:hidden;page-break-after:always;background:#F3F5F2;display:flex;flex-direction:column;gap:7mm}
 .page:last-child{page-break-after:auto}
 .cover{background:#121614;color:#F3F5F2;justify-content:space-between}
@@ -53,12 +57,12 @@ p{margin:0 0 3mm}
 
 function html(lang) {
   const k = kitCopy[lang];
-  const date = formatAsOf(stats.asOf, lang);
+  const date = formatAsOf(stats.asOf, localeMeta[lang].intl);
   const vars = { breeds: stats.breeds.total, dogs: stats.breeds.dogs, cats: stats.breeds.cats, date };
   const card = ([t, d]) => `<div class="card"><h3>${esc(fill(t, vars))}</h3><p>${esc(fill(d, vars))}</p></div>`;
   const paras = (a) => a.map((p) => `<p>${esc(p)}</p>`).join("");
   const foot = `<div class="foot"><span>${esc(k.company)}</span><span>${partnerContactEmail}</span></div>`;
-  const url = "petprep.si/" + (lang === "sl" ? "sl/partnerji" : "partners");
+  const url = "petprep.si/" + (lang === "en" ? "" : `${lang}/`) + pageSlugs.partners[lang];
   return `<!doctype html><html lang="${k.htmlLang}"><head><meta charset="utf-8"><title>PetPrep – ${esc(k.title)}</title><style>${css}</style></head><body>
 <section class="page cover"><img class="logo" src="${logo}" alt="PetPrep"><div><div class="band"></div><h1 style="margin-top:8mm">${esc(k.title)}</h1><p class="tag">${esc(k.tagline)}</p></div><div class="co">${esc(k.company)}<br>${partnerContactEmail} · petprep.si</div></section>
 <section class="page"><div><h2>${esc(k.what.heading)}</h2>${paras(k.what.paragraphs)}</div>
@@ -67,14 +71,17 @@ function html(lang) {
 <section class="page"><div><h2>${esc(k.coop.heading)}</h2>${k.coop.items.map(card).join("")}</div>
 <div class="card mint"><h3>${esc(k.never.heading)}</h3><p style="color:#121614">${esc(k.never.text)}</p></div>
 <div><h2>${esc(k.contact.heading)}</h2><p class="contact">${partnerContactEmail}</p><p>${esc(fill(k.contact.text, { email: partnerContactEmail, url }))}</p></div>${foot}</section>
+<script>document.documentElement.dataset.sizes = [...document.querySelectorAll(".page")].map((p) => p.scrollHeight + "/" + p.clientHeight).join(" "); document.documentElement.dataset.overflow = [...document.querySelectorAll(".page")].some((p) => p.scrollHeight > p.clientHeight + 6 || p.scrollWidth > p.clientWidth + 1) ? "yes" : "no";</script>
 </body></html>`;
 }
 
 const tmp = mkdtempSync(join(tmpdir(), "mediakit-"));
 mkdirSync(join(root, "public/media"), { recursive: true });
-for (const lang of ["sl", "en"]) {
+for (const lang of locales.filter((l) => !only || only.includes(l))) {
   const file = join(tmp, `kit-${lang}.html`);
   writeFileSync(file, html(lang));
+  const dom = execFileSync(chrome, ["--headless=new", "--no-sandbox", "--disable-gpu", "--dump-dom", `file://${file}`], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] });
+  if (!dom.includes('data-overflow="no"')) console.log(`media kit ${lang} (${/data-sizes="([^"]*)"/.exec(dom)?.[1]}): text does not fit a page (overflow) - shorten the copy in src/content/partners`);
   const out = join(root, `public/media/petprep-media-kit-${lang}.pdf`);
   execFileSync(chrome, ["--headless=new", "--no-sandbox", "--disable-gpu", "--no-pdf-header-footer", `--print-to-pdf=${out}`, `file://${file}`], { stdio: "ignore" });
   console.log("wrote", out);

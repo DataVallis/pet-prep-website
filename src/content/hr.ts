@@ -1,4 +1,5 @@
 import type { Dictionary } from "./types";
+import { partnerPages } from "./partners";
 
 const hr: Dictionary = {
   meta: {
@@ -500,44 +501,7 @@ const hr: Dictionary = {
         },
       ],
     },
-    partners: {
-      meta: {
-        title: "Partneri – surađuj s PetPrepom",
-        description:
-          "PetPrep surađuje s trgovinama za kućne ljubimce, skloništima, veterinarima, trenerima, osiguravateljima, proizvođačima ogrlica i školama kako bi obitelji ljubimce nabavljale odgovorno.",
-      },
-      eyebrow: "Partneri",
-      title: "Bolje pripremljene obitelji za sve kojima je stalo do životinja.",
-      lead:
-        "Obitelji koje završe PetPrep znaju što ljubimac stvarno traži. Gradimo partnersku mrežu koja ih dočekuje u pravom trenutku – jasno označeno i uvijek uz privolu obitelji.",
-      planned: true,
-      blocks: [
-        {
-          type: "cards",
-          heading: "S kim surađujemo",
-          columns: 3,
-          items: [
-            { title: "Trgovine za kućne ljubimce", text: "Dođite do obitelji u trenutku kad dokažu da su spremne – primjerice s ponudom početnog paketa uz certifikat." },
-            { title: "Skloništa, udruge za udomljavanje i uzgajivači", text: "Preporučite PetPrep prije udomljavanja ili kupnje – za manje impulzivnih odluka i vraćanja životinja." },
-            { title: "Veterinari", text: "Kad pravi ljubimac stigne kući, AI asistent odgovara na prva pitanja i upućuje vlasnike vama, sa sažetkom slučaja koji se dijeli samo uz privolu." },
-            { title: "Treneri i škole za pse", text: "Preporuke i rezervacije kad obitelj prijeđe na pravog psa." },
-            { title: "Osiguravatelji kućnih ljubimaca", text: "Ponude prilagođene pasmini kad se registrira pravi ljubimac – jasno označene." },
-            { title: "Proizvođači ogrlica i IoT uređaja", text: "Povezivanje podataka o aktivnosti za pametnija upozorenja s objašnjenjem." },
-          ],
-        },
-        {
-          type: "list",
-          heading: "Zašto nam partneri vjeruju",
-          items: [
-            "Djeca se prijavljuju bez e-pošte, a njihove podatke svodimo na najmanju moguću mjeru, na poslužiteljima u EU-u.",
-            "Na djetetov zaslon stiže samo provjereni sadržaj; oglasa nema.",
-            "Svaka je ponuda partnera označena, a svaka provizija otkrivena obitelji.",
-          ],
-        },
-        { type: "callout", title: "Razgovarajmo.", text: "Uvjete partnerstva upravo pripremamo. Reci nam tko si i što imaš na umu.", tone: "dark" },
-        { type: "contact" },
-      ],
-    },
+    partners: partnerPages.hr,
     investors: {
       meta: {
         title: "Investiraj u PetPrep – od spremnosti za ljubimca do brige za cijeli život",
@@ -635,6 +599,7 @@ const hr: Dictionary = {
                 "Kodovi: kodovi za prijavu i pozivni kodovi pohranjuju se samo kao sažeci (hash) i istječu.",
                 "Izvješća o pogreškama aplikacije: ako se aplikacija zamrzne ili sruši, može poslati kratko tehničko izvješće na naš poslužitelj u EU-u (vrsta i tekst pogreške, mjesto u kodu, verzija aplikacije i operacijskog sustava, naziv zaslona, uloga roditelj/dijete). Ne sadrži ime, adresu e-pošte, korisnički ID ni IP adresu, ne dijeli se ni s kojom trećom stranom i briše se nakon 30 dana.",
                 "Popis za rani pristup (ova mrežna stranica): tvoja adresa e-pošte, jezik stranice i vrijeme prijave.",
+                "Obrazac za partnere (ova mrežna stranica): naziv tvrtke, ime kontakt osobe, adresa e-pošte i poruka. Koristimo ih samo za odgovor na tvoj upit, čuvamo ih 12 mjeseci, a zatim ih brišemo. Pravna osnova je tvoj pristanak, koji daješ označavanjem kućice prije slanja.",
                 "Stranice „Koliko posla je pas?“ (ova web-stranica): ako upišeš svoju e-adresu i označiš privolu, spremamo tvoju e-adresu, vrijeme privole, odabranu pasminu, jesi li gledao psa ili štene, jezik stranice te koliko si puta i kada zadnji put upisao adresu. Ne spremamo tvoju IP adresu niti ime. Podatke čuvamo na našem poslužitelju u EU dok ne zatražiš njihovo brisanje. Sažetak za ispis nastaje u tvom pregledniku i nikamo se ne šalje.",
                 "Iskorištavanje poklon bona (ova web-stranica): roditelj se prijavljuje putem Googlea, Applea ili e-adresom i lozinkom. Kod e-adrese i lozinke naš ih poslužitelj provjerava prema postojećem roditeljskom računu i lozinku nikad ne pohranjuje u čitljivom obliku; od Googlea ili Applea primamo samo identifikator računa, a druge njihove podatke ne pohranjujemo. Kratkotrajni token za prijavu čuva se u memoriji preglednika najviše 15 minuta. Tijekom preusmjeravanja na Google ili Apple i povratka dva zapisa (petprep.signin i petprep.webSession.handoff) postoje samo u pohrani sesije (session storage) ove kartice preglednika. Brišu se čim ih pročita povratna stranica, a inače pri zatvaranju kartice; predaja sesije prihvaća se samo unutar 60 sekundi. Nakon odjave ili zatvaranja kartice ništa ne ostaje pohranjeno u pregledniku. Na našem poslužitelju ostaju samo kratkotrajni tehnički zapisi: zapis o tokenu za prijavu (ID računa i vremena, bez imena i e-adrese) koji se automatski briše otprilike dva dana nakon isteka te brojači ograničenja (neuspjeli pokušaji po računu u hashiranom obliku 15 minuta; zahtjevi po mrežnoj adresi najviše sat vremena).",
               ],
@@ -682,6 +647,7 @@ const hr: Dictionary = {
                 "Za rad i sigurnost usluge s pomoću izvješća o pogreškama aplikacije, koja nam pomažu ispraviti zamrzavanja i rušenja (legitimni interes).",
                 "Za ispunjavanje zakonskih obveza, primjerice računovodstva kupnji (pravna obveza).",
                 "Za slanje e-pošte o lansiranju PetPrepa ako si na popisu za rani pristup (privola – odjaviti se možeš u svakoj e-poruci).",
+                "Za odgovor na upit poslan putem obrasca za partnere (privola; podatke čuvamo 12 mjeseci).",
                 "Za slanje novosti i savjeta PetPrep e-poštom ako si upisao svoju e-adresu i označio privolu na stranicama „Koliko posla je pas?“ (privola – možeš se odjaviti u svakoj poruci i bilo kada zatražiti brisanje podataka).",
                 "Kako bismo razumjeli kako posjetitelji koriste ovu mrežnu stranicu, s pomoću alata Google Analytics, samo ako dopustiš analitičke kolačiće (privola – izbor možeš u svakom trenutku promijeniti u Postavkama kolačića).",
               ],

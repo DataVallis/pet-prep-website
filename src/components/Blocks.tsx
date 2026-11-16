@@ -185,15 +185,15 @@ export function Blocks({ blocks, locale, dict }: { blocks: Block[]; locale: Loca
           case "contact":
             return <ContactCards key={i} dict={dict} />;
           case "partnerStats":
-            return locale === "sl" || locale === "en" ? <PartnerStatsBlock key={i} lang={locale} /> : null;
+            return <PartnerStatsBlock key={i} lang={locale} />;
           case "partnerForm":
-            return locale === "sl" || locale === "en" ? (
+            return (
               <section key={i} id="povprasevanje" className="flex scroll-mt-24 flex-col gap-5">
                 <Heading>{partnerCopy[locale].form.heading}</Heading>
                 <Intro locale={locale}>{partnerCopy[locale].form.intro}</Intro>
                 <PartnerInquiryForm lang={locale} privacyHref={pathFor(locale, "privacy")} />
               </section>
-            ) : null;
+            );
           case "company":
             return (
               <section key={i} id={b.id} className="flex scroll-mt-24 flex-col gap-5">

@@ -36,7 +36,7 @@ export type Block =
   /** Cookie table rendered by the Kockica consent banner from what it detects on the page. */
   | { type: "cookies"; heading: string; paragraphs: string[]; settings: string; fallback: string }
   | { type: "contact" }
-  /** Partner page (M6-S03): measured numbers with a date, and the inquiry form (Slovenian and English only). */
+  /** Partner page (M6-S03): measured numbers with a date, and the inquiry form (all 15 languages, M6-S08). */
   | { type: "partnerStats" }
   | { type: "partnerForm" }
   /** The operator's legal identity (src/lib/site.ts company). */

@@ -1,4 +1,5 @@
 import type { Dictionary } from "./types";
+import { partnerPages } from "./partners";
 
 const cs: Dictionary = {
   meta: {
@@ -500,44 +501,7 @@ const cs: Dictionary = {
         },
       ],
     },
-    partners: {
-      meta: {
-        title: "Partneři – spolupracujte s PetPrepem",
-        description:
-          "PetPrep spolupracuje s prodejnami chovatelských potřeb, útulky, veterináři, trenéry, pojišťovnami, výrobci obojků a školami, aby si rodiny mazlíčky pořizovaly zodpovědně.",
-      },
-      eyebrow: "Partneři",
-      title: "Lépe připravené rodiny – pro každého, komu na zvířatech záleží.",
-      lead:
-        "Rodiny, které PetPrep dokončí, vědí, co péče o skutečného mazlíčka obnáší. Budujeme síť partnerů, která je osloví ve správnou chvíli – jasně označeně a vždy se souhlasem rodiny.",
-      planned: true,
-      blocks: [
-        {
-          type: "cards",
-          heading: "S kým spolupracujeme",
-          columns: 3,
-          items: [
-            { title: "Prodejny chovatelských potřeb", text: "Oslovte rodiny ve chvíli, kdy prokážou, že jsou připravené – třeba nabídkou startovní sady k certifikátu." },
-            { title: "Útulky, záchranné spolky a chovatelé", text: "Doporučte PetPrep před adopcí nebo koupí – ubude unáhlených rozhodnutí a vrácených zvířat." },
-            { title: "Veterináři", text: "Jakmile má rodina skutečného mazlíčka doma, AI asistent odpoví na první otázky a odkáže majitele na vás – se shrnutím případu, které sdílí jen se souhlasem." },
-            { title: "Trenéři a kynologické školy", text: "Doporučení a rezervace ve chvíli, kdy rodina přechází ke skutečnému psovi." },
-            { title: "Pojišťovny pro zvířata", text: "Nabídky podle plemene při registraci skutečného mazlíčka – jasně označené." },
-            { title: "Výrobci obojků a IoT", text: "Propojení dat o aktivitě pro chytřejší upozornění, která vysvětlují." },
-          ],
-        },
-        {
-          type: "list",
-          heading: "Proč nám partneři důvěřují",
-          items: [
-            "Děti se přihlašují bez e-mailu, jejich data držíme na minimu a na serverech v EU.",
-            "Na obrazovku dítěte se dostane jen ověřený obsah; nejsou tu žádné reklamy.",
-            "Každá nabídka partnera je označená a o každé provizi se rodina dozví.",
-          ],
-        },
-        { type: "callout", title: "Pojďme si promluvit.", text: "Podmínky partnerství připravujeme. Napište nám, kdo jste a co máte v plánu.", tone: "dark" },
-        { type: "contact" },
-      ],
-    },
+    partners: partnerPages.cs,
     investors: {
       meta: {
         title: "Investujte do PetPrepu – od připravenosti na mazlíčka k péči na celý život",
@@ -635,6 +599,7 @@ const cs: Dictionary = {
                 "Kódy: přihlašovací a zvací kódy jsou uložené jen jako hashe a po čase vyprší.",
                 "Hlášení chyb aplikace: když aplikace zamrzne nebo spadne, může odeslat krátké technické hlášení na náš server v EU (typ a text chyby, místo v kódu, verze aplikace a operačního systému, název obrazovky, role rodič/dítě). Neobsahuje jméno, e-mailovou adresu, ID uživatele ani IP adresu, nesdílí se s žádnou třetí stranou a po 30 dnech se maže.",
                 "Seznam pro předběžný přístup (tento web): vaše e-mailová adresa, jazyk stránky a čas přihlášení.",
+                "Partnerský formulář (tento web): název firmy, jméno kontaktní osoby, e-mailová adresa a zpráva. Používáme je jen k odpovědi na vaši poptávku, uchováváme je 12 měsíců a poté je smažeme. Právním základem je váš souhlas, který udělíte zaškrtnutím políčka před odesláním.",
                 "Stránky „Kolik práce je pes?“ (tento web): pokud zadáte svou e-mailovou adresu a zaškrtnete souhlas, uložíme vaši e-mailovou adresu, čas souhlasu, zvolené plemeno, zda jste si prohlíželi psa, nebo štěně, jazyk stránky a také kolikrát a kdy naposledy jste adresu zadali. Vaši IP adresu ani jméno neukládáme. Údaje uchováváme na našem serveru v EU, dokud nepožádáte o jejich výmaz. Souhrn k vytištění vzniká ve vašem prohlížeči a nikam se neodesílá.",
                 "Uplatnění dárkového poukazu (tento web): rodič se přihlásí přes Google, Apple nebo e-mailem a heslem. U e-mailu a hesla je náš server ověří proti existujícímu rodičovskému účtu a heslo nikdy neukládá v čitelné podobě; od Googlu nebo Applu dostaneme jen identifikátor účtu a žádné jiné jejich údaje neukládáme. Krátkodobý přihlašovací token je v paměti prohlížeče uchován nejdéle 15 minut. Při přesměrování na Google nebo Apple a při návratu jsou dva záznamy (petprep.signin a petprep.webSession.handoff) uloženy jen v úložišti relace (session storage) této karty prohlížeče. Smažou se ihned, jakmile je přečte návratová stránka, jinak při zavření karty; předání se přijme jen do 60 sekund. Po odhlášení nebo zavření karty nezůstane v prohlížeči uloženo nic. Na našem serveru zůstanou jen krátkodobé technické záznamy: záznam o přihlašovacím tokenu (ID účtu a časy, bez jména a e-mailu), který se samočinně smaže zhruba dva dny po vypršení, a čítače omezení (neúspěšné pokusy na účet v hashované podobě 15 minut; požadavky na síťovou adresu nejvýše hodinu).",
               ],
@@ -682,6 +647,7 @@ const cs: Dictionary = {
                 "K provozu a zabezpečení služby pomocí hlášení chyb aplikace, která nám pomáhají opravovat zamrzání a pády (oprávněný zájem).",
                 "K plnění zákonných povinností, například účetnictví u nákupů (právní povinnost).",
                 "Abychom vám poslali e-mail o spuštění PetPrepu, pokud jste se přihlásili k předběžnému přístupu (souhlas – odhlásit se můžete v každém e-mailu).",
+                "Abychom odpověděli na poptávku odeslanou přes partnerský formulář (souhlas; údaje uchováváme 12 měsíců).",
                 "Abychom vám e-mailem posílali novinky a tipy PetPrep, pokud jste zadali svou e-mailovou adresu a zaškrtli souhlas na stránkách „Kolik práce je pes?“ (souhlas – odhlásit se můžete v každé zprávě a o výmaz údajů můžete kdykoli požádat).",
                 "Abychom pomocí Google Analytics pochopili, jak návštěvníci tento web používají, jen pokud povolíte analytické cookies (souhlas – můžete ho kdykoli změnit v Nastavení cookies).",
               ],
