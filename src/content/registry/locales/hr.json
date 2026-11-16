@@ -1029,6 +1029,71 @@
         "Schipperke",
         "Belgijski špic"
       ]
+    },
+    "belgian_tervuren": {
+      "name": "Belgijski ovčar tervueren",
+      "slug": "belgijski-ovcar-tervueren",
+      "synonyms": [
+        "Tervueren",
+        "Tervuren",
+        "Belgian tervuren"
+      ]
+    },
+    "toy_fox_terrier": {
+      "name": "Toy foksterijer",
+      "slug": "toy-foksterijer",
+      "synonyms": [
+        "Toy fox terijer",
+        "Toy fox terrier"
+      ]
+    },
+    "gordon_setter": {
+      "name": "Gordon seter",
+      "slug": "gordon-seter",
+      "synonyms": [
+        "Škotski seter",
+        "Gordon setter"
+      ]
+    },
+    "afghan_hound": {
+      "name": "Afganistanski hrt",
+      "slug": "afganistanski-hrt",
+      "synonyms": [
+        "Afganski hrt",
+        "Afghan hound"
+      ]
+    },
+    "australian_silky_terrier": {
+      "name": "Australski svilenasti terijer",
+      "slug": "australski-svilenasti-terijer",
+      "synonyms": [
+        "Silky terijer",
+        "Svilenasti terijer",
+        "Silky terrier",
+        "Australian silky terrier"
+      ]
+    },
+    "parson_russell_terrier": {
+      "name": "Parson Russell terijer",
+      "slug": "parson-russell-terijer",
+      "synonyms": [
+        "Parson Russell terrier"
+      ]
+    },
+    "wire_fox_terrier": {
+      "name": "Oštrodlaki foksterijer",
+      "slug": "ostrodlaki-foksterijer",
+      "synonyms": [
+        "Foksterijer oštrodlaki",
+        "Wire fox terrier"
+      ]
+    },
+    "manchester_terrier": {
+      "name": "Manchester terijer",
+      "slug": "manchester-terijer",
+      "synonyms": [
+        "Manchester terrier"
+      ]
     }
   },
   "suitability_labels": {
