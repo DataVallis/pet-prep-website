@@ -29,7 +29,7 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           <img src="/brand/petprep-logo-horizontal.svg" alt="PetPrep" width={128} height={32} className="h-8 w-auto" />
         </Link>
 
-        <nav aria-label="Main" className="hidden flex-1 items-center gap-2 whitespace-nowrap text-[14px] font-medium lg:flex xl:gap-7 xl:text-[15px]">
+        <nav aria-label="Main" className="hidden flex-1 items-center gap-4 whitespace-nowrap text-[15px] font-medium xl:flex 2xl:gap-7">
           {navKeys.map((k) => (
             <NavLink key={k} href={pathFor(locale, k)} className={DESKTOP_ITEM} activeClassName={DESKTOP_ACTIVE}>
               {label(k)}
@@ -44,9 +44,9 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
           </NavLink>
         </nav>
 
-        <div className="ml-auto hidden shrink-0 items-center gap-2 lg:flex xl:gap-3">
+        <div className="ml-auto hidden shrink-0 items-center gap-3 xl:flex">
           <LanguageSwitcher label={dict.lang.label} />
-          <PrimaryCta locale={locale} dict={dict} className="!min-h-10 !px-3 !text-[14px] xl:!px-4 xl:!text-[15px]" />
+          <PrimaryCta locale={locale} dict={dict} className="!min-h-10 !px-4 !text-[15px]" />
         </div>
 
         {/* Mobile menu: opens without JavaScript; with JS it closes on navigation */}

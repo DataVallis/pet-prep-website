@@ -1,7 +1,7 @@
 import type { QuizCopy } from "./types.ts";
 
 export const pt: QuizCopy = {
-  nav: "Antes de ter um cão",
+  nav: "Antes do cão",
   hubMetaTitle: "Antes de ter um cão: quiz de raças, quanto trabalho dá e mais | PetPrep",
   hubMetaDesc: "Está a pensar num cão? Descubra as raças que se adaptam à sua família, veja quanto trabalho dá cada uma de verdade e experimente-a com a PetPrep antes de decidir.",
   hubEyebrow: "Antes de ter um cão",

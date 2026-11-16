@@ -1,7 +1,7 @@
 import type { QuizCopy } from "./types.ts";
 
 export const fr: QuizCopy = {
-  nav: "Avant d’adopter un chien",
+  nav: "Avant le chien",
   hubMetaTitle: "Avant d’adopter un chien : quiz des races, charge de travail et plus | PetPrep",
   hubMetaDesc: "Un chien dans votre vie ? Trouvez les races qui conviennent à votre famille, voyez le travail que chacune demande vraiment et essayez-la avec PetPrep avant de décider.",
   hubEyebrow: "Avant d’adopter un chien",

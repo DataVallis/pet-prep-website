@@ -1,7 +1,7 @@
 import type { QuizCopy } from "./types.ts";
 
 export const it: QuizCopy = {
-  nav: "Prima di prendere un cane",
+  nav: "Prima del cane",
   hubMetaTitle: "Prima di prendere un cane: quiz sulle razze, quanto lavoro serve e altro | PetPrep",
   hubMetaDesc: "Pensi a un cane? Trova le razze adatte alla tua famiglia, scopri quanto lavoro richiede davvero ciascuna e provala con PetPrep prima di decidere.",
   hubEyebrow: "Prima di prendere un cane",

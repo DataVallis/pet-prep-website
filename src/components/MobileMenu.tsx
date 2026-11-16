@@ -39,7 +39,7 @@ export function MobileMenu({ summary, children }: { summary: ReactNode; children
   }, []);
 
   return (
-    <details ref={ref} className="group relative ml-auto lg:hidden">
+    <details ref={ref} className="group relative ml-auto xl:hidden">
       {summary}
       <div
         onClick={(e) => {
