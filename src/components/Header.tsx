@@ -7,6 +7,8 @@ import { MobileMenu } from "./MobileMenu";
 import { NavLink, DESKTOP_ITEM, DESKTOP_ACTIVE } from "./NavLink";
 import { KidsMobile } from "./kids/Kids";
 import { KidsMenu } from "./kids/KidsMenu";
+import { quizCopy } from "@/content/quiz";
+import { quizHubPath } from "@/content/quiz/slugs";
 
 // "When it comes home" moved to the footer to make room for "For kids" (David 2026-10-31).
 /** Active item in the mobile menu: mint bar on the left + mint-text colour. */
@@ -21,27 +23,30 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
       <a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-3 focus:z-50 focus:rounded-md focus:bg-white focus:px-3 focus:py-2">
         {dict.nav.skip}
       </a>
-      <div className="container-page flex h-16 items-center gap-6">
+      <div className="container-page flex h-16 items-center gap-3 xl:gap-6">
         <Link href={pathFor(locale, "home")} className="flex shrink-0 items-center" aria-label={`PetPrep — ${dict.nav.home}`}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/brand/petprep-logo-horizontal.svg" alt="PetPrep" width={128} height={32} className="h-8 w-auto" />
         </Link>
 
-        <nav aria-label="Main" className="hidden flex-1 items-center gap-7 text-[15px] font-medium lg:flex">
+        <nav aria-label="Main" className="hidden flex-1 items-center gap-2 whitespace-nowrap text-[14px] font-medium lg:flex xl:gap-7 xl:text-[15px]">
           {navKeys.map((k) => (
             <NavLink key={k} href={pathFor(locale, k)} className={DESKTOP_ITEM} activeClassName={DESKTOP_ACTIVE}>
               {label(k)}
             </NavLink>
           ))}
           <KidsMenu locale={locale} />
+          <NavLink href={quizHubPath(locale)} className={DESKTOP_ITEM} activeClassName={DESKTOP_ACTIVE}>
+            {quizCopy[locale].nav}
+          </NavLink>
           <NavLink href={pathFor(locale, "pricing")} className={DESKTOP_ITEM} activeClassName={DESKTOP_ACTIVE}>
             {label("pricing")}
           </NavLink>
         </nav>
 
-        <div className="ml-auto hidden items-center gap-3 lg:flex">
+        <div className="ml-auto hidden shrink-0 items-center gap-2 lg:flex xl:gap-3">
           <LanguageSwitcher label={dict.lang.label} />
-          <PrimaryCta locale={locale} dict={dict} className="!min-h-10 !px-4 !text-[15px]" />
+          <PrimaryCta locale={locale} dict={dict} className="!min-h-10 !px-3 !text-[14px] xl:!px-4 xl:!text-[15px]" />
         </div>
 
         {/* Mobile menu: opens without JavaScript; with JS it closes on navigation */}
@@ -63,6 +68,9 @@ export function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                   {label(k)}
                 </NavLink>
               ))}
+              <NavLink href={quizHubPath(locale)} className="border-b border-line py-3 text-[17px] font-semibold" activeClassName={MOBILE_ACTIVE}>
+                {quizCopy[locale].nav}
+              </NavLink>
               <KidsMobile locale={locale} />
               {(["afterAdoption", "pricing", "faq", "contact"] as PageKey[]).map((k) => (
                 <NavLink key={k} href={pathFor(locale, k)} className="border-b border-line py-3 text-[17px] font-semibold last:border-0" activeClassName={MOBILE_ACTIVE}>

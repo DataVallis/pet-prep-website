@@ -5,6 +5,9 @@ import { giftSlugParams } from "@/lib/giftRoutes";
 import { promiseKitConfig, promiseKitSlugParams } from "@/lib/promiseKit";
 import { getDictionary } from "@/content";
 import { ogImage, ogSize } from "@/lib/og";
+import { isQuizHubSlug } from "@/content/quiz/slugs";
+import { quizCopy } from "@/content/quiz";
+import { quizHubParams } from "@/components/quiz/QuizPages";
 
 export const size = ogSize;
 export const contentType = "image/png";
@@ -15,6 +18,7 @@ export function generateStaticParams() {
     ...locales.flatMap((locale) => sitePageKeys.map((key) => ({ locale, slug: pageSlugs[key][locale] }))),
     ...giftSlugParams(),
     ...promiseKitSlugParams(promiseKitConfig().enabled),
+    ...quizHubParams(),
   ];
 }
 
@@ -22,6 +26,7 @@ export default async function Image({ params }: { params: Promise<{ locale: stri
   const { locale: l, slug } = await params;
   const locale = isLocale(l) ? l : "en";
   const dict = getDictionary(locale);
+  if (isQuizHubSlug(locale, slug)) return ogImage({ eyebrow: quizCopy[locale].hubEyebrow, title: quizCopy[locale].hubTitle, footer: `PetPrep · ${dict.meta.slogan}` });
   const key = pageKeyFromSlug(locale, slug);
   const page = key ? dict.pages[key] : undefined;
   // Gift voucher and promise kit sales pages (every language): their own title.

@@ -11,6 +11,9 @@ import { coloringParams, isColoringSlug, resolveColoring } from "@/components/co
 import { coloringSize } from "@/content/coloring/coloring";
 import { isRealCostSlug, realCostBase, realCostCopy } from "@/content/realCost";
 import { realCostBreedBySlug, realCostBreeds } from "@/lib/realCostRoutes";
+import { isQuizSlug } from "@/content/quiz/slugs";
+import { quizCopy } from "@/content/quiz";
+import { quizChildParams } from "@/components/quiz/QuizPages";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
@@ -22,12 +25,13 @@ export const alt = "PetPrep";
 export function generateStaticParams({ params }: { params: { locale: string } }) {
   if (!isLocale(params.locale)) return [];
   const locale = params.locale;
-  return [...registry.species.map((s) => ({ slug: pageSlugs.animals[locale], species: s.slug[locale] })), ...careSpeciesParams(locale), ...emergencyParams(locale), ...coloringParams(locale), ...realCostBreeds().map(({ breed }) => ({ slug: realCostBase[locale], species: breed.slug[locale] }))];
+  return [...registry.species.map((s) => ({ slug: pageSlugs.animals[locale], species: s.slug[locale] })), ...careSpeciesParams(locale), ...emergencyParams(locale), ...coloringParams(locale), ...realCostBreeds().map(({ breed }) => ({ slug: realCostBase[locale], species: breed.slug[locale] })), quizChildParams(locale)];
 }
 
 export default async function Image({ params }: { params: Promise<{ locale: string; slug: string; species: string }> }) {
   const { locale: l, slug, species } = await params;
   const locale = isLocale(l) ? l : "en";
+  if (isQuizSlug(locale, slug, species)) return ogImage({ eyebrow: quizCopy[locale].quizEyebrow, title: quizCopy[locale].quizTitle, footer: `PetPrep · ${getDictionary(locale).meta.slogan}` });
   if (isRealCostSlug(locale, slug)) {
     const hit = realCostBreedBySlug(locale, species);
     if (hit) {

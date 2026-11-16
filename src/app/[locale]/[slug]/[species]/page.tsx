@@ -19,6 +19,8 @@ import { realCostAlternates, realCostBase, realCostCopy, realCostPath, isRealCos
 import { realCostBreedBySlug, realCostBreeds } from "@/lib/realCostRoutes";
 import { RealCostPage } from "@/components/real-cost/RealCostPage";
 import { absoluteUrl } from "@/lib/site";
+import { isQuizSlug } from "@/content/quiz/slugs";
+import { QuizPage, quizChildParams, quizMetadata } from "@/components/quiz/QuizPages";
 import { buildMetadataFor } from "@/lib/seo";
 import { ColoringPageView, coloringPageMetadata, coloringParams, isColoringSlug, resolveColoring } from "@/components/coloring/ColoringPages";
 
@@ -37,6 +39,8 @@ export function generateStaticParams({ params }: { params: { locale: string } })
     ...giftThanksParams(locale),
     // "How much work is a dog?" (M6-S04 / M6-S07 / M6-S08): one page per dog breed of the register, in every language.
     ...realCostBreeds().map(({ breed }) => ({ slug: realCostBase[locale], species: breed.slug[locale] })),
+    // Breed quiz "Which breed is for you?" (M6-S06): the one child of the "Before you get a dog" hub.
+    quizChildParams(locale),
   ];
 }
 
@@ -53,6 +57,7 @@ const paths = (s: Species) => Object.fromEntries(locales.map((l) => [l, speciesH
 export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[species]">): Promise<Metadata> {
   const { locale, slug, species } = await params;
   if (isLocale(locale) && isGiftThanks(locale, slug, species)) return giftMetadata("thanks", locale);
+  if (isLocale(locale) && isQuizSlug(locale, slug, species)) return quizMetadata(locale);
   if (isLocale(locale) && isRealCostSlug(locale, slug)) {
     const hit = realCostBreedBySlug(locale, species);
     if (!hit) return {};
@@ -78,6 +83,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[
 export default async function SpeciesCatalogue({ params }: PageProps<"/[locale]/[slug]/[species]">) {
   const { locale: l, slug, species: s } = await params;
   if (isLocale(l) && isGiftThanks(l, slug, s)) return <ThanksPage lang={assertGift(l)} />;
+  if (isLocale(l) && isQuizSlug(l, slug, s)) return <QuizPage locale={l} />;
   if (isLocale(l) && isRealCostSlug(l, slug)) {
     const hit = realCostBreedBySlug(l, s);
     if (!hit) notFound();
