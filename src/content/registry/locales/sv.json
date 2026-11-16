@@ -887,6 +887,69 @@
         "Lhasa",
         "Lhasa-apso"
       ]
+    },
+    "border_terrier": {
+      "name": "Border terrier",
+      "slug": "border-terrier",
+      "synonyms": [
+        "Borderterrier"
+      ]
+    },
+    "leonberger": {
+      "name": "Leonberger",
+      "slug": "leonberger"
+    },
+    "beauceron": {
+      "name": "Beauceron",
+      "slug": "beauceron",
+      "synonyms": [
+        "Berger de Beauce"
+      ]
+    },
+    "borzoi": {
+      "name": "Borzoi",
+      "slug": "borzoi",
+      "synonyms": [
+        "Rysk vinthund",
+        "Barsoi",
+        "Russian wolfhound"
+      ]
+    },
+    "bouvier_des_flandres": {
+      "name": "Bouvier des Flandres",
+      "slug": "bouvier-des-flandres",
+      "synonyms": [
+        "Bouvier",
+        "Flanders cattle dog"
+      ]
+    },
+    "japanese_chin": {
+      "name": "Japanese chin",
+      "slug": "japanese-chin",
+      "synonyms": [
+        "Japansk spaniel",
+        "Chin"
+      ]
+    },
+    "miniature_bull_terrier": {
+      "name": "Miniatyrbullterrier",
+      "slug": "miniatyrbullterrier",
+      "synonyms": [
+        "Miniature bull terrier",
+        "Mini bullterrier",
+        "Miniatyr bullterrier"
+      ]
+    },
+    "norwich_terrier": {
+      "name": "Norwich terrier",
+      "slug": "norwich-terrier",
+      "synonyms": [
+        "Norwichterrier"
+      ]
+    },
+    "schipperke": {
+      "name": "Schipperke",
+      "slug": "schipperke"
     }
   },
   "suitability_labels": {
