@@ -9,6 +9,7 @@ import { promiseKitAlternatePaths, promiseKitConfig, promiseKitSitemapEntries } 
 import { registry } from "@/content/registry/registry";
 import { realCostAlternates, realCostLocales, realCostPath, realCostUpdated } from "@/content/realCost";
 import { realCostBreeds } from "@/lib/realCostRoutes";
+import { quizAlternates, quizHubAlternates, quizHubPath, quizPath, quizUpdated } from "@/content/quiz/slugs";
 import { emergencyHref } from "@/components/care/CarePages";
 import { coloringPageHref } from "@/components/coloring/ColoringPages";
 import { coloringPages, coloringUpdated } from "@/content/coloring/coloring";
@@ -122,5 +123,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
     alternates: { languages: pathAlternates(promiseKitAlternatePaths()) },
   }));
-  return [...pages, ...register, ...care, ...emergency, ...coloring, ...gift, ...promiseKit, ...realCost];
+  // "Before you get a dog" hub and the breed quiz (M6-S06): all 15 languages, hreflang with x-default English.
+  const quiz = locales.flatMap((locale) => [
+    { url: absoluteUrl(quizHubPath(locale)), lastModified: new Date(quizUpdated), changeFrequency: "monthly" as const, priority: 0.8, alternates: { languages: quizHubAlternates(absoluteUrl) } },
+    { url: absoluteUrl(quizPath(locale)), lastModified: new Date(quizUpdated), changeFrequency: "monthly" as const, priority: 0.8, alternates: { languages: quizAlternates(absoluteUrl) } },
+  ]);
+  return [...pages, ...quiz, ...register, ...care, ...emergency, ...coloring, ...gift, ...promiseKit, ...realCost];
 }

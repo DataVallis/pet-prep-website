@@ -13,6 +13,8 @@ import { careSpecies } from "@/content/care/care";
 import { speciesWords } from "@/content/care/copy";
 import { promiseKitConfig, promiseKitPath } from "@/lib/promiseKit";
 import { sales } from "@/content/promise-kit/sales.ts";
+import { quizCopy } from "@/content/quiz";
+import { quizHubPath, quizPath } from "@/content/quiz/slugs";
 
 /** Per-species, per-language register files: /llms/<species id>.<locale>.txt (keeps /llms-full.txt small at ~300 breeds). */
 /** Care knowledge per species and language: /llms/care-<species id>.<locale>.txt (M6-K). */
@@ -138,6 +140,9 @@ export function llmsIndex(): string {
         lines.push(`  - [${b.name[locale]}](${absoluteUrl(breedHref(locale, b))}) — ${rc.availability[b.availability].label}`);
       }
     }
+    // "Before you get a dog" hub and breed quiz (M6-S06).
+    lines.push(`- [${quizCopy[locale].hubMetaTitle}](${absoluteUrl(quizHubPath(locale))}): ${quizCopy[locale].hubMetaDesc}`);
+    lines.push(`- [${quizCopy[locale].quizMetaTitle}](${absoluteUrl(quizPath(locale))}): ${quizCopy[locale].quizMetaDesc}`);
     // Pet Promise Kit (M6-S02): every language, only while the switch is on.
     if (promiseKitConfig().enabled) {
       lines.push(`- [${sales[locale].metaTitle}](${absoluteUrl(promiseKitPath(locale))}): ${sales[locale].metaDescription}`);

@@ -15,6 +15,8 @@ import { assertGift, giftMetadata, GiftPage, RedeemPage } from "@/components/gif
 import { PromiseKitPage, promiseKitMetadata } from "@/components/promise-kit/PromiseKitPage";
 import { giftSlugParams } from "@/lib/giftRoutes";
 import { promiseKitConfig, promiseKitSlugParams } from "@/lib/promiseKit";
+import { isQuizHubSlug } from "@/content/quiz/slugs";
+import { QuizHubPage, quizHubMetadata, quizHubParams } from "@/components/quiz/QuizPages";
 
 export const dynamicParams = false;
 
@@ -24,6 +26,8 @@ export function generateStaticParams() {
     // Gift voucher (M6-S01) and Pet Promise Kit (M6-S02) sales pages, in every language, each only while its switch is on.
     ...giftSlugParams(),
     ...promiseKitSlugParams(promiseKitConfig().enabled),
+    // "Before you get a dog" hub (M6-S06), every language.
+    ...quizHubParams(),
   ];
 }
 
@@ -38,6 +42,7 @@ const legalKeys = new Set(["privacy", "terms"]);
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]">): Promise<Metadata> {
   const { locale, slug } = await params;
+  if (isLocale(locale) && isQuizHubSlug(locale, slug)) return quizHubMetadata(locale);
   const sales = isLocale(locale) ? salesPageFromSlug(locale, slug) : undefined;
   if (sales) return sales === "promiseKit" ? promiseKitMetadata(locale) : giftMetadata(sales, locale);
   const r = resolve(locale, slug);
@@ -52,6 +57,7 @@ function formatDate(locale: Locale, iso: string) {
 
 export default async function SubPage({ params }: PageProps<"/[locale]/[slug]">) {
   const { locale: localeParam, slug } = await params;
+  if (isLocale(localeParam) && isQuizHubSlug(localeParam, slug)) return <QuizHubPage locale={localeParam} />;
   const sales = isLocale(localeParam) ? salesPageFromSlug(localeParam, slug) : undefined;
   if (sales === "promiseKit") return <PromiseKitPage locale={localeParam} />;
   if (sales) {
