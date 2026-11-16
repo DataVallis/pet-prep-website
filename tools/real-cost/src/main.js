@@ -14,14 +14,28 @@ const API_URL = /(^|\.)petprep\.si$/.test(location.hostname) ? 'https://api.petp
 // Same-site paths only (start with one slash): the links replace the top window.
 const sitePath = (key, fallback) => { const v = QUERY.get(key) || ''; return /^\/(?!\/)[\w\-/]*$/.test(v) ? v : fallback; };
 const CONSENT_VERSION = '2026-11'; // the news_consent sentence in strings.js; a new wording needs a new version on the server
-const BREED = 'labrador_retriever';
-const LIFE_YEARS = 13.1; // McMillan 2024 (PetPrep S54)
+// The breed comes from the page (src/lib/realCostProfile.ts → realCostQuery, M6-S07): every value is validated
+// here, because a shared link can carry anything. Without parameters the app shows the Labrador (the first page).
+const qNum = (k, lo, hi, d) => { const v = Number(QUERY.get(k)); return QUERY.get(k) !== null && QUERY.get(k) !== '' && Number.isFinite(v) && v >= lo && v <= hi ? v : d; };
+const qPick = (k, allowed, d) => (allowed.includes(QUERY.get(k)) ? QUERY.get(k) : d);
+const BREED = /^[a-z0-9_]{1,64}$/.test(QUERY.get('breed') || '') ? QUERY.get('breed') : 'labrador_retriever';
+// Plain text only: the name ends up in innerHTML.
+const NAME_RAW = (QUERY.get('name') || '').replace(/[<>&"'`\\]/g, '').trim().slice(0, 60);
+const WALK_MIN = qNum('walk', 10, 240, 90); // register exercise fact (Labrador: Guide Dogs UK S59)
+const WALK_Q = qPick('walkq', ['at_least', 'more_than', 'up_to', 'about'], 'at_least');
+const LIFE_YEARS = qNum('life', 4, 25, 13.1); // register lifespan fact (Labrador: McMillan 2024, PetPrep S54)
+const LIFE_Q = qPick('lifeq', ['median', 'span', 'more_than', 'less_than', 'about'], 'median');
+const LIFE_LO = qNum('lifelo', 4, 25, LIFE_YEARS), LIFE_HI = qNum('lifehi', 4, 25, LIFE_YEARS);
+const GROOM = qPick('groom', ['once_a_week', 'more_than_once_a_week', 'every_day'], QUERY.has('groom') ? null : 'once_a_week');
+const GROOM_WEEK = { once_a_week: 1, more_than_once_a_week: 2, every_day: 7 }[GROOM] ?? 0;
+const SIZE = qPick('size', ['small', 'medium', 'large'], 'large');
 const PROFILES = {
-  adult: { meals: 2, walkMin: 90, walks: 2, poops: 2, trainMin: 5, takeOuts: 0, groomWeek: 1 },
-  puppy: { meals: 4, walkMin: 20, walks: 2, poops: 2, trainMin: 5, takeOuts: 7, groomWeek: 1 },
+  adult: { meals: 2, walkMin: WALK_MIN, walks: 2, poops: 2, trainMin: 5, takeOuts: 0, groomWeek: GROOM_WEEK },
+  puppy: { meals: 4, walkMin: 20, walks: 2, poops: 2, trainMin: 5, takeOuts: 7, groomWeek: GROOM_WEEK },
 };
 const STEPS_PER_MIN = 100;
-const COST = { monthly: 116, setup: 560 }; // PDSA large dog, minimum (GBP)
+// PDSA, The cost of owning a dog: minimum by size (GBP); no giant class, giant dogs use the large floor.
+const COST = { small: { monthly: 69, setup: 415 }, medium: { monthly: 83, setup: 531 }, large: { monthly: 116, setup: 560 } }[SIZE];
 // ECB euro reference rates, 13 November 2026: 1 EUR = 0.83559 GBP = 1.1052 USD. Fixed on purpose.
 const RATES = { GBP: 1, EUR: 1 / 0.83559, USD: 1.1052 / 0.83559 };
 const SYMBOL = { GBP: '£', EUR: '€', USD: '$' };
@@ -29,7 +43,27 @@ const SCALES = { day: 1, week: 7, year: 365.25, life: 365.25 * LIFE_YEARS };
 
 const state = { lang: QUERY.get('lang') === 'sl' ? 'sl' : 'en', cur: 'EUR', stage: 'adult', step: 'intro', scale: 'day', monthly: COST.monthly, setup: COST.setup, played: false };
 const $ = (s) => document.querySelector(s);
-const t = (k) => STR[state.lang][k] ?? k;
+const YEARS = Math.round(LIFE_YEARS);
+function breedVars(lang) {
+  const sl = lang === 'sl', n = (v, d = 0) => new Intl.NumberFormat(sl ? 'sl-SI' : 'en-GB', { maximumFractionDigits: d }).format(v);
+  const name = NAME_RAW || (sl ? 'Labradorec' : 'Labrador Retriever');
+  const walk = sl
+    ? { at_least: `vsaj ${n(WALK_MIN)} minut`, more_than: `več kot ${n(WALK_MIN)} minut`, up_to: `do ${n(WALK_MIN)} minut`, about: `približno ${n(WALK_MIN)} minut` }
+    : { at_least: `at least ${n(WALK_MIN)} minutes`, more_than: `more than ${n(WALK_MIN)} minutes`, up_to: `up to ${n(WALK_MIN)} minutes`, about: `about ${n(WALK_MIN)} minutes` };
+  const life = sl
+    ? { median: `približno ${n(LIFE_YEARS, 1)} leta (mediana)`, span: `${n(LIFE_LO)} do ${n(LIFE_HI)} let`, more_than: `več kot ${n(LIFE_YEARS)} let`, less_than: `manj kot ${n(LIFE_YEARS)} let`, about: `približno ${n(LIFE_YEARS)} let` }
+    : { median: `about ${n(LIFE_YEARS, 1)} years (median)`, span: `${n(LIFE_LO)} to ${n(LIFE_HI)} years`, more_than: `more than ${n(LIFE_YEARS)} years`, less_than: `less than ${n(LIFE_YEARS)} years`, about: `about ${n(LIFE_YEARS)} years` };
+  const groom = sl
+    ? { once_a_week: 'krtačenje enkrat na teden', more_than_once_a_week: 'krtačenje večkrat na teden', every_day: 'krtačenje vsak dan' }
+    : { once_a_week: 'brushing once a week', more_than_once_a_week: 'brushing more than once a week', every_day: 'brushing every day' };
+  const size = sl ? { small: 'majhnega', medium: 'srednje velikega', large: 'velikega' } : { small: 'small', medium: 'medium', large: 'large' };
+  return {
+    name, name_a: `${/^[AEIOU]/i.test(name) ? 'an' : 'a'} ${name}`, years: n(YEARS), walk_text: walk[WALK_Q], life_text: life[LIFE_Q],
+    groom_text: groom[GROOM] ?? (sl ? 'nego dlake' : 'coat care'), size_text: size[SIZE], cost_m: n(COST.monthly), cost_s: n(COST.setup),
+  };
+}
+const VARS = { sl: breedVars('sl'), en: breedVars('en') };
+const t = (k) => (STR[state.lang][k] ?? k).replace(/\{(name|name_a|years|walk_text|life_text|groom_text|size_text|cost_m|cost_s)\}/g, (_, v) => VARS[state.lang][v]);
 const nf = (n, d = 0) => new Intl.NumberFormat(state.lang === 'sl' ? 'sl-SI' : 'en-GB', { maximumFractionDigits: d }).format(n);
 const conv = (gbp) => gbp * RATES[state.cur];
 const fmtCur = (v, d = 0) => (state.lang === 'sl' ? `${nf(v, d)} ${SYMBOL[state.cur]}` : `${SYMBOL[state.cur]}${nf(v, d)}`);
@@ -41,8 +75,9 @@ function buildDay(stage) {
   const p = PROFILES[stage];
   const ev = [];
   if (stage === 'adult') {
-    ev.push({ at: 420, dur: 10, type: 'meal' }, { at: 450, dur: 45, type: 'walk' }, { at: 500, dur: 5, type: 'poop' },
-      { at: 990, dur: 5, type: 'train' }, { at: 1050, dur: 10, type: 'meal' }, { at: 1080, dur: 45, type: 'walk' }, { at: 1130, dur: 5, type: 'poop' });
+    const w = Math.round(p.walkMin / 2); // two walks a day share the breed's daily exercise
+    ev.push({ at: 420, dur: 10, type: 'meal' }, { at: 450, dur: w, type: 'walk' }, { at: 455 + w, dur: 5, type: 'poop' },
+      { at: 990, dur: 5, type: 'train' }, { at: 1050, dur: 10, type: 'meal' }, { at: 1080, dur: w, type: 'walk' }, { at: 1085 + w, dur: 5, type: 'poop' });
   } else {
     [420, 540, 660, 780, 900, 1020, 1140].forEach((m, i) => {
       ev.push({ at: m, dur: 5, type: 'out' });
@@ -321,7 +356,7 @@ function renderSummary(keepPile = false) {
   let html = row(t('r_walk'), hours(x.walkMin), 'src') + row(t('r_steps'), nf(x.steps), 'rule') + row(t('r_meals'), nf(x.meals), 'src');
   if (x.takeOuts) html += row(t('r_outs'), nf(x.takeOuts), 'src');
   html += row(t('r_bags'), nf(x.poops), 'rule') + row(t('r_train'), hours(x.trainMin), 'src');
-  if (state.scale !== 'day') html += row(t('r_groom'), nf(x.groom), 'src');
+  if (state.scale !== 'day' && GROOM_WEEK) html += row(t('r_groom'), nf(x.groom), 'src');
   $('#sum-list').innerHTML = html;
   $('#sum-note').textContent = isLife ? t(state.stage === 'puppy' ? 'note_life_puppy' : 'note_life') : state.stage === 'puppy' ? t('note_puppy') : '';
   const list = [['meal', x.meals], ['walk', x.walks], ['poop', x.poops], ['out', x.takeOuts], ['train', days]];
@@ -372,7 +407,7 @@ function renderSheet() {
     <table><thead><tr><th></th>${cols.map((c) => `<th>${t('s_' + c)}</th>`).join('')}</tr></thead><tbody>
       ${row(t('r_walk'), 'src', (x) => hours(x.walkMin))}${row(t('r_steps'), 'rule', (x) => nf(x.steps))}${row(t('r_meals'), 'src', (x) => nf(x.meals))}
       ${X[0].takeOuts ? row(t('r_outs'), 'src', (x) => nf(x.takeOuts)) : ''}${row(t('r_bags'), 'rule', (x) => nf(x.poops))}
-      ${row(t('r_train'), 'src', (x) => hours(x.trainMin))}${row(t('r_groom'), 'src', (x, i) => (i ? nf(x.groom) : '–'))}
+      ${row(t('r_train'), 'src', (x) => hours(x.trainMin))}${GROOM_WEEK ? row(t('r_groom'), 'src', (x, i) => (i ? nf(x.groom) : '–')) : ''}
     </tbody></table>
     <p class="small">${note}</p>
     <h2>${t('sheet_cost')}</h2>
@@ -462,6 +497,7 @@ document.addEventListener('click', (e) => {
   if (b.dataset.scale) { state.scale = b.dataset.scale; renderSummary(); }
   if (b.id === 'skip') { run = null; kibble.visible = false; dogAnim.mode = 'idle'; moveDog(HOME, 0.3); state.played = true; go('sum'); }
 });
+$('#monthly').value = String(COST.monthly); $('#setup').value = String(COST.setup); // the breed's PDSA size class
 $('#monthly').addEventListener('input', (e) => { state.monthly = +e.target.value; renderCost(); });
 $('#setup').addEventListener('input', (e) => { state.setup = +e.target.value; renderCost(); });
 

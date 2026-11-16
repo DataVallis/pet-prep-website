@@ -7,7 +7,7 @@ import { notFound } from "next/navigation";
 import { compareSlug, isLocale, locales, pageSlugs, pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { breedBySlug, breedsOf, registry, speciesBySlug, type Breed, type Species } from "@/content/registry/registry";
-import { realCostLinkFor } from "@/content/realCost";
+import { realCostLinkFor } from "@/lib/realCostRoutes";
 import { ownerMistakes, breedHref, breedMetaDescription, breedMetaTitle, breedUpdated, buildBreedView, compareHref, formatDay, getRegistryCopy, portraitSrc, qaText, relatedBreeds, speciesHref } from "@/lib/registry/views";
 import { buildPathMetadata } from "@/lib/seo";
 import { breadcrumbsLd, breedPageLd, faqLd, graph } from "@/lib/jsonld";
@@ -161,8 +161,8 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
   const cite = c.page.sourceLabel;
   const breed = r.breed;
   const mistakes = ownerMistakes(locale, breed);
-  // »How much work is a Labrador?« (M6-S04): Labrador only, SL + EN only (David 2026-11-15).
-  const realCost = realCostLinkFor(locale, breed.id);
+  // »How much work is a dog?« (M6-S04): every dog breed since M6-S07 (David 2026-11-16), SL + EN only.
+  const realCost = realCostLinkFor(locale, breed);
 
   const ld = graph(
     breedPageLd({
