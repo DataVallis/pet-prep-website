@@ -875,6 +875,74 @@
     "schipperke": {
       "name": "Schipperke",
       "slug": "schipperke"
+    },
+    "belgian_tervuren": {
+      "name": "Tervuerense herder",
+      "slug": "tervuerense-herder",
+      "synonyms": [
+        "Tervuren",
+        "Tervueren",
+        "Belgian Tervuren"
+      ]
+    },
+    "toy_fox_terrier": {
+      "name": "Toy fox terrier",
+      "slug": "toy-fox-terrier",
+      "synonyms": [
+        "Toy foxterriër",
+        "Amerikaanse toy terrier",
+        "Amertoy"
+      ]
+    },
+    "gordon_setter": {
+      "name": "Gordon setter",
+      "slug": "gordon-setter",
+      "synonyms": [
+        "Schotse setter"
+      ]
+    },
+    "afghan_hound": {
+      "name": "Afghaanse windhond",
+      "slug": "afghaanse-windhond",
+      "synonyms": [
+        "Afghaan",
+        "Afghan hound"
+      ]
+    },
+    "australian_silky_terrier": {
+      "name": "Australische silky terrier",
+      "slug": "australische-silky-terrier",
+      "synonyms": [
+        "Silky terrier",
+        "Silky",
+        "Australische silky terriër",
+        "Australian silky terrier"
+      ]
+    },
+    "parson_russell_terrier": {
+      "name": "Parson Russell terrier",
+      "slug": "parson-russell-terrier",
+      "synonyms": [
+        "Parson Russell",
+        "Parson Russell terriër"
+      ]
+    },
+    "wire_fox_terrier": {
+      "name": "Foxterriër ruwhaar",
+      "slug": "foxterrier-ruwhaar",
+      "synonyms": [
+        "Ruwharige foxterriër",
+        "Foxterriër draadhaar",
+        "Fox terrier ruwhaar",
+        "Wire fox terrier"
+      ]
+    },
+    "manchester_terrier": {
+      "name": "Manchester terrier",
+      "slug": "manchester-terrier",
+      "synonyms": [
+        "Manchester terriër"
+      ]
     }
   },
   "suitability_labels": {
