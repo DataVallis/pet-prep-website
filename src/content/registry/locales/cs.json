@@ -1026,6 +1026,71 @@
         "Schipperke",
         "malý kapitán"
       ]
+    },
+    "belgian_tervuren": {
+      "name": "Belgický ovčák tervueren",
+      "slug": "belgicky-ovcak-tervueren",
+      "synonyms": [
+        "Tervueren",
+        "Tervuren",
+        "Belgian Tervuren"
+      ]
+    },
+    "toy_fox_terrier": {
+      "name": "Toy foxteriér",
+      "slug": "toy-foxterier",
+      "synonyms": [
+        "Toy fox terrier"
+      ]
+    },
+    "gordon_setter": {
+      "name": "Gordon setr",
+      "slug": "gordon-setr",
+      "synonyms": [
+        "Setr gordon",
+        "Gordon Setter"
+      ]
+    },
+    "afghan_hound": {
+      "name": "Afghánský chrt",
+      "slug": "afghansky-chrt",
+      "synonyms": [
+        "Afgánský chrt",
+        "Afghan hound"
+      ]
+    },
+    "australian_silky_terrier": {
+      "name": "Australský silky teriér",
+      "slug": "australsky-silky-terier",
+      "synonyms": [
+        "Silky teriér",
+        "Silky terrier",
+        "Australian silky terrier"
+      ]
+    },
+    "parson_russell_terrier": {
+      "name": "Parson Russell teriér",
+      "slug": "parson-russell-terier",
+      "synonyms": [
+        "Parson Russell terrier",
+        "Parson Russell"
+      ]
+    },
+    "wire_fox_terrier": {
+      "name": "Foxteriér drsnosrstý",
+      "slug": "foxterier-drsnosrsty",
+      "synonyms": [
+        "Drsnosrstý foxteriér",
+        "Wire fox terrier"
+      ]
+    },
+    "manchester_terrier": {
+      "name": "Manchesterský teriér",
+      "slug": "manchestersky-terier",
+      "synonyms": [
+        "Manchester teriér",
+        "Manchester terrier"
+      ]
     }
   },
   "suitability_labels": {
