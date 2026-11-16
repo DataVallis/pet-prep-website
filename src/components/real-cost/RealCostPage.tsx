@@ -1,19 +1,21 @@
 import { pathFor } from "@/i18n/config";
 import { promiseKitConfig, promiseKitPath } from "@/lib/promiseKit";
 import { realCostCopy, type RealCostLocale } from "@/content/realCost";
+import { realCostQuery, type RealCostProfile } from "@/lib/realCostProfile";
 
 const card = "rounded-[22px] bg-white shadow-[0_1px_2px_rgba(18,22,20,0.04),0_10px_30px_rgba(18,22,20,0.06)]";
 
 /**
- * "How much work is a Labrador?" (M6-S04). The interactive 3D part is a self-contained document
+ * "How much work is a dog?" (M6-S04; one page per dog breed since M6-S07). The breed's numbers reach the
+ * embedded app as query parameters (src/lib/realCostProfile.ts → realCostQuery; the app validates each one). The interactive 3D part is a self-contained document
  * (public/real-cost/app.html, built by `npm run real-cost:build` from tools/real-cost/) shown in a
  * same-origin <iframe>: three.js loads only here, the experience keeps its own layout, and "Print" inside
  * it prints only the summary sheet. The text below the frame is the indexable content of the page.
  */
-export function RealCostPage({ locale }: { locale: RealCostLocale }) {
-  const c = realCostCopy[locale];
+export function RealCostPage({ locale, name, profile }: { locale: RealCostLocale; name: string; profile: RealCostProfile }) {
+  const c = realCostCopy(locale, name, profile);
   const kit = promiseKitConfig();
-  const query = new URLSearchParams({ lang: locale, home: pathFor(locale, "home"), partners: pathFor(locale, "partners") });
+  const query = new URLSearchParams({ lang: locale, home: pathFor(locale, "home"), partners: pathFor(locale, "partners"), ...realCostQuery(profile, name) });
   if (kit.enabled) query.set("kit", promiseKitPath(locale));
 
   return (

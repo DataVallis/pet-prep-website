@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import { englishOnlyPages, locales, pageSlugs } from "./src/i18n/config";
+import { realCostLegacy, realCostPath } from "./src/content/realCost";
 
 const nextConfig: NextConfig = {
   // Self-contained server for the Docker image (Dockerfile).
@@ -35,6 +36,8 @@ const nextConfig: NextConfig = {
       { source: "/breeds/:breed", destination: "/animals/dogs/:breed", permanent: true },
       { source: "/sl/pasme", destination: "/sl/zivali/psi", permanent: true },
       { source: "/sl/pasme/:breed", destination: "/sl/zivali/psi/:breed", permanent: true },
+      // "How much work is a Labrador?" (M6-S04) became one page per breed (M6-S07, David 2026-11-16).
+      ...realCostLegacy.map((r) => ({ source: r.source, destination: realCostPath(r.locale, r.breedSlug), permanent: true })),
       // Standard Poodle SL name: "Veliki koder" (David 2026-10-10), first published as "Veliki pudelj".
       { source: "/sl/zivali/psi/veliki-pudelj", destination: "/sl/zivali/psi/veliki-koder", permanent: true },
     ];

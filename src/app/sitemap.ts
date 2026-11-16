@@ -8,6 +8,7 @@ import { giftUpdated } from "@/lib/gift";
 import { promiseKitAlternatePaths, promiseKitConfig, promiseKitSitemapEntries } from "@/lib/promiseKit";
 import { registry } from "@/content/registry/registry";
 import { realCostAlternates, realCostLocales, realCostPath, realCostUpdated } from "@/content/realCost";
+import { realCostBreeds } from "@/lib/realCostRoutes";
 import { emergencyHref } from "@/components/care/CarePages";
 import { coloringPageHref } from "@/components/coloring/ColoringPages";
 import { coloringPages, coloringUpdated } from "@/content/coloring/coloring";
@@ -91,14 +92,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: pathAlternates(each((l) => coloringPageHref(l, p))) },
     })),
   );
-  // "How much work is a Labrador?" (M6-S04): Slovenian and English.
-  const realCost = realCostLocales.map((locale) => ({
-    url: absoluteUrl(realCostPath(locale)),
-    lastModified: new Date(realCostUpdated),
-    changeFrequency: "monthly" as const,
-    priority: 0.6,
-    alternates: { languages: realCostAlternates(absoluteUrl) },
-  }));
+  // "How much work is a dog?" (M6-S04, every dog breed since M6-S07): Slovenian and English.
+  const realCost = realCostBreeds().flatMap(({ breed }) =>
+    realCostLocales.map((locale) => ({
+      url: absoluteUrl(realCostPath(locale, breed.slug[locale])),
+      lastModified: new Date(realCostUpdated),
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+      alternates: { languages: realCostAlternates(absoluteUrl, { en: breed.slug.en, sl: breed.slug.sl }) },
+    })),
+  );
   // Gift voucher sales page (M6-S01, all 15 languages): only while NEXT_PUBLIC_FEATURE_GIFT=1 and the checkout URL is set;
   // thanks and redeem are never listed.
   const giftPaths = giftSitemapPaths();
