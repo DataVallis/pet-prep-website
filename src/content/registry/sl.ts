@@ -802,6 +802,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S864", "S865", "S866", "S867", "S868", "S10"],
     },
+    wire_fox_terrier: {
+      aka: "foksterier, žimavi foksterier, ostrodlaki fox terier, fox terier, Wire Fox Terrier, Fox Terrier (Wire)",
+      text: [
+        "Ostrodlaki foksterier je živahen in živ terier iz Velike Britanije (FCI skupina 3, terierji; sekcija veliki in srednji terierji) — ni toy fox terier. Standard FCI zahteva čvrste kosti in moč v majhnem telesu, nikoli okornem ali grobem, gosto, zelo žimasto dlako z mehkejšo podlanko, pretežno belo barvo s črnimi, črno-rjavimi ali rjavimi lisami ter višino do 39 cm za pse, psice so nekoliko manjše. Standard AKC navaja za psa v razstavni kondiciji 18 funtov, za psico približno dva funta manj, z odstopanjem enega funta (približno 7,7–8,6 kg za pse in 6,8–7,7 kg za psice). Pes te velikosti doraste pri približno 9–12 mesecih (PetMD), Royal Kennel Club pa navaja življenjsko dobo več kot 12 let (PetMD: 12–15 let).",
+        "Standard FCI ga opisuje kot prijaznega, odprtega in neustrašnega. Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje večkrat na teden; PDSA piše, da se foksterierji radi igrajo in raziskujejo, da so odlični družinski psi in da jih je treba česati enkrat ali dvakrat na teden. WebMD jih opisuje kot odlične spremljevalce otrok, a svetuje stalen nadzor ob majhnih otrocih; PetMD piše, da jih je treba zaradi močnega lovskega nagona skrbno nadzorovati ob malih živalih, ter priporoča dobro socializacijo mladička, vsakodnevno ščetkanje zob, kopanje približno enkrat na mesec in ročno trimanje dlake tri- do štirikrat na leto; WebMD svetuje striženje krempljev približno enkrat na mesec.",
+      ],
+      sources: ["S871", "S872", "S873", "S874", "S875", "S876", "S10"],
+    },
 
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
