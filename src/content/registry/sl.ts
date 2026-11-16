@@ -811,6 +811,15 @@ const sl: RegistryCopy = {
       sources: ["S871", "S872", "S873", "S874", "S875", "S876", "S10"],
     },
 
+    manchester_terrier: {
+      aka: "manchester terier, manchester, Manchester Terrier, Manchester Terrier (Standard), Black and Tan Terrier",
+      text: [
+        "Manchesterski terier je kompakten, eleganten terier iz Velike Britanije (FCI skupina 3, terierji; sekcija veliki in srednji terierji) — standardne velikosti, ne toy. Standard FCI zahteva kompaktnega, elegantnega in zdravega psa s substanco, s tesno prilegajočo, gladko, kratko in svetlečo dlako izključno globoko črne in bogate mahagonijevo rjave barve, ter navaja idealno višino 41 cm za pse in 38 cm za psice. Standard kanadske kinološke zveze (CKC) navaja težo od 5,5 do 10 kg. Pes te velikosti doraste pri približno 9–12 mesecih (PetMD), PDSA pa navaja življenjsko dobo več kot 12 let (WebMD: 15 do 17 let).",
+        "Standard FCI ga opisuje kot zagnanega, pozornega, veselega in športnega, preudarnega in predanega. PDSA priporoča do 1 ure gibanja na dan in piše, da je česanje enkrat na teden običajno dovolj. PetMD piše, da se manchesterski terierji dobro razumejo z otroki, še posebej če jih spoznajo kot mladički, in priporoča socializacijo mladička od prvega dne doma; zaradi zgodovine lovcev na podgane imajo lahko močan lovski nagon, zato morda niso primerni za dom s hrčki ali puščavskimi podganami. WebMD svetuje, da majhnih otrok nikoli ne puščate s psom brez nadzora, priporoča vsakodnevno ščetkanje zob in piše, da je pasma občutljiva na mraz, zato včasih potrebuje plašček ali pulover.",
+      ],
+      sources: ["S888", "S889", "S890", "S891", "S892", "S10"],
+    },
+
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
       text: [
