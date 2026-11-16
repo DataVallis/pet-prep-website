@@ -831,6 +831,50 @@
       "synonyms": [
         "Berger de Beauce"
       ]
+    },
+    "borzoi": {
+      "name": "Borzoi",
+      "slug": "borzoi",
+      "synonyms": [
+        "Russische windhond",
+        "Barzoi",
+        "Russian wolfhound"
+      ]
+    },
+    "bouvier_des_flandres": {
+      "name": "Bouvier des Flandres",
+      "slug": "bouvier-des-flandres",
+      "synonyms": [
+        "Vlaamse koehond",
+        "Bouvier",
+        "Flanders cattle dog"
+      ]
+    },
+    "japanese_chin": {
+      "name": "Japanse chin",
+      "slug": "japanse-chin",
+      "synonyms": [
+        "Japanese chin",
+        "Chin",
+        "Japanse spaniël"
+      ]
+    },
+    "miniature_bull_terrier": {
+      "name": "Miniature bull terrier",
+      "slug": "miniature-bull-terrier",
+      "synonyms": [
+        "Dwergbullterriër",
+        "Miniatuur bull terrier",
+        "Mini bull terrier"
+      ]
+    },
+    "norwich_terrier": {
+      "name": "Norwich terrier",
+      "slug": "norwich-terrier"
+    },
+    "schipperke": {
+      "name": "Schipperke",
+      "slug": "schipperke"
     }
   },
   "suitability_labels": {
