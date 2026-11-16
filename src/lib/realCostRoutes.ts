@@ -19,7 +19,7 @@ export function realCostBreedBySlug(locale: RealCostLocale, slug: string) {
   return realCostBreeds().find((x) => x.breed.slug[locale] === slug);
 }
 
-/** The register page's link card for `breed` in `locale` (SL + EN only), or null. */
+/** The register page's link card for `breed` in `locale` (all 15 languages), or null. */
 export function realCostLinkFor(locale: string, breed: Breed): { href: string; title: string; text: string; cta: string } | null {
   if (!isRealCostLocale(locale)) return null;
   const profile = breed.species === "dog" ? realCostProfile(breed) : null;

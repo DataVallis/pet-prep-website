@@ -15,6 +15,11 @@ import { CareSpeciesPage, EmergencyPage, careSpeciesMetadata, careSpeciesParams,
 import { isCareSlug } from "@/content/care/care";
 import { assertGift, giftMetadata, ThanksPage } from "@/components/gift/GiftPages";
 import { giftThanksParams } from "@/lib/giftRoutes";
+import { realCostAlternates, realCostBase, realCostCopy, realCostPath, isRealCostSlug } from "@/content/realCost";
+import { realCostBreedBySlug, realCostBreeds } from "@/lib/realCostRoutes";
+import { RealCostPage } from "@/components/real-cost/RealCostPage";
+import { absoluteUrl } from "@/lib/site";
+import { buildMetadataFor } from "@/lib/seo";
 import { ColoringPageView, coloringPageMetadata, coloringParams, isColoringSlug, resolveColoring } from "@/components/coloring/ColoringPages";
 
 export const dynamicParams = false;
@@ -30,6 +35,8 @@ export function generateStaticParams({ params }: { params: { locale: string } })
     ...coloringParams(locale),
     // Gift voucher thank-you page (M6-S01): a child of the sales page, only while the switch is on.
     ...giftThanksParams(locale),
+    // "How much work is a dog?" (M6-S04 / M6-S07 / M6-S08): one page per dog breed of the register, in every language.
+    ...realCostBreeds().map(({ breed }) => ({ slug: realCostBase[locale], species: breed.slug[locale] })),
   ];
 }
 
@@ -46,6 +53,12 @@ const paths = (s: Species) => Object.fromEntries(locales.map((l) => [l, speciesH
 export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[species]">): Promise<Metadata> {
   const { locale, slug, species } = await params;
   if (isLocale(locale) && isGiftThanks(locale, slug, species)) return giftMetadata("thanks", locale);
+  if (isLocale(locale) && isRealCostSlug(locale, slug)) {
+    const hit = realCostBreedBySlug(locale, species);
+    if (!hit) return {};
+    const c = realCostCopy(locale, hit.breed.name[locale], hit.profile);
+    return buildMetadataFor({ locale, path: realCostPath(locale, species), languages: realCostAlternates(absoluteUrl, hit.breed.slug), title: c.meta.title, description: c.meta.description });
+  }
   if (isLocale(locale) && isColoringSlug(locale, slug)) {
     const p = resolveColoring(locale, species);
     return p ? coloringPageMetadata(locale, p) : {};
@@ -65,6 +78,11 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[
 export default async function SpeciesCatalogue({ params }: PageProps<"/[locale]/[slug]/[species]">) {
   const { locale: l, slug, species: s } = await params;
   if (isLocale(l) && isGiftThanks(l, slug, s)) return <ThanksPage lang={assertGift(l)} />;
+  if (isLocale(l) && isRealCostSlug(l, slug)) {
+    const hit = realCostBreedBySlug(l, s);
+    if (!hit) notFound();
+    return <RealCostPage locale={l} name={hit.breed.name[l]} profile={hit.profile} />;
+  }
   if (isLocale(l) && isColoringSlug(l, slug)) {
     const p = resolveColoring(l, s);
     if (!p) notFound();

@@ -9,6 +9,8 @@ import { careSpeciesBySlug, isCareSlug } from "@/content/care/care";
 import { getCareCopy, speciesWords } from "@/content/care/copy";
 import { coloringParams, isColoringSlug, resolveColoring } from "@/components/coloring/ColoringPages";
 import { coloringSize } from "@/content/coloring/coloring";
+import { isRealCostSlug, realCostBase, realCostCopy } from "@/content/realCost";
+import { realCostBreedBySlug, realCostBreeds } from "@/lib/realCostRoutes";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 
@@ -20,12 +22,19 @@ export const alt = "PetPrep";
 export function generateStaticParams({ params }: { params: { locale: string } }) {
   if (!isLocale(params.locale)) return [];
   const locale = params.locale;
-  return [...registry.species.map((s) => ({ slug: pageSlugs.animals[locale], species: s.slug[locale] })), ...careSpeciesParams(locale), ...emergencyParams(locale), ...coloringParams(locale)];
+  return [...registry.species.map((s) => ({ slug: pageSlugs.animals[locale], species: s.slug[locale] })), ...careSpeciesParams(locale), ...emergencyParams(locale), ...coloringParams(locale), ...realCostBreeds().map(({ breed }) => ({ slug: realCostBase[locale], species: breed.slug[locale] }))];
 }
 
 export default async function Image({ params }: { params: Promise<{ locale: string; slug: string; species: string }> }) {
   const { locale: l, slug, species } = await params;
   const locale = isLocale(l) ? l : "en";
+  if (isRealCostSlug(locale, slug)) {
+    const hit = realCostBreedBySlug(locale, species);
+    if (hit) {
+      const c = realCostCopy(locale, hit.breed.name[locale], hit.profile);
+      return ogImage({ eyebrow: c.eyebrow, title: c.title, footer: `PetPrep · ${getDictionary(locale).meta.slogan}` });
+    }
+  }
   if (isColoringSlug(locale, slug)) {
     const dict = getDictionary(locale);
     const page = resolveColoring(locale, species);
