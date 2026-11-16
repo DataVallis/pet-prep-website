@@ -942,6 +942,62 @@
       "name": "Schipperke",
       "slug": "schipperke",
       "synonyms": []
+    },
+    "belgian_tervuren": {
+      "name": "Belgisk hyrdehund tervueren",
+      "slug": "belgisk-hyrdehund-tervueren",
+      "synonyms": [
+        "Tervueren",
+        "Tervuren",
+        "Belgisk tervueren",
+        "Belgian tervuren"
+      ]
+    },
+    "toy_fox_terrier": {
+      "name": "Toy fox terrier",
+      "slug": "toy-fox-terrier",
+      "synonyms": []
+    },
+    "gordon_setter": {
+      "name": "Gordon setter",
+      "slug": "gordon-setter",
+      "synonyms": []
+    },
+    "afghan_hound": {
+      "name": "Afghansk mynde",
+      "slug": "afghansk-mynde",
+      "synonyms": [
+        "Afghanhund",
+        "Afghan hound"
+      ]
+    },
+    "australian_silky_terrier": {
+      "name": "Australsk silky terrier",
+      "slug": "australsk-silky-terrier",
+      "synonyms": [
+        "Silky terrier",
+        "Australian silky terrier"
+      ]
+    },
+    "parson_russell_terrier": {
+      "name": "Parson russell terrier",
+      "slug": "parson-russell-terrier",
+      "synonyms": []
+    },
+    "wire_fox_terrier": {
+      "name": "Foxterrier strihåret",
+      "slug": "foxterrier-strihaaret",
+      "synonyms": [
+        "Strihåret foxterrier",
+        "Wire fox terrier"
+      ]
+    },
+    "manchester_terrier": {
+      "name": "Manchesterterrier",
+      "slug": "manchesterterrier",
+      "synonyms": [
+        "Manchester terrier"
+      ]
     }
   },
   "suitability_labels": {
