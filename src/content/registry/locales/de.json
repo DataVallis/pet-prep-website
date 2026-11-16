@@ -821,6 +821,69 @@
     "schipperke": {
       "name": "Schipperke",
       "slug": "schipperke"
+    },
+    "belgian_tervuren": {
+      "name": "Belgischer Schäferhund (Tervueren)",
+      "slug": "belgischer-schaeferhund-tervueren",
+      "synonyms": [
+        "Tervueren",
+        "Tervuren",
+        "Belgischer Schäferhund Tervueren",
+        "Belgian Tervuren"
+      ]
+    },
+    "toy_fox_terrier": {
+      "name": "Toy Fox Terrier",
+      "slug": "toy-fox-terrier",
+      "synonyms": [
+        "Toy Foxterrier",
+        "Toy-Foxterrier"
+      ]
+    },
+    "gordon_setter": {
+      "name": "Gordon Setter",
+      "slug": "gordon-setter"
+    },
+    "afghan_hound": {
+      "name": "Afghanischer Windhund",
+      "slug": "afghanischer-windhund",
+      "synonyms": [
+        "Afghane",
+        "Afghan Hound"
+      ]
+    },
+    "australian_silky_terrier": {
+      "name": "Australian Silky Terrier",
+      "slug": "australian-silky-terrier",
+      "synonyms": [
+        "Silky Terrier",
+        "Silky-Terrier",
+        "Australischer Silky Terrier"
+      ]
+    },
+    "parson_russell_terrier": {
+      "name": "Parson Russell Terrier",
+      "slug": "parson-russell-terrier",
+      "synonyms": [
+        "Parson-Russell-Terrier"
+      ]
+    },
+    "wire_fox_terrier": {
+      "name": "Foxterrier (Drahthaar)",
+      "slug": "foxterrier-drahthaar",
+      "synonyms": [
+        "Drahthaar-Foxterrier",
+        "Drahthaar Foxterrier",
+        "Foxterrier Drahthaar",
+        "Wire Fox Terrier"
+      ]
+    },
+    "manchester_terrier": {
+      "name": "Manchester Terrier",
+      "slug": "manchester-terrier",
+      "synonyms": [
+        "Manchester-Terrier"
+      ]
     }
   },
   "suitability_labels": {
