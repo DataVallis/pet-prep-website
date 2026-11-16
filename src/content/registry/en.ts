@@ -782,6 +782,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S864", "S865", "S866", "S867", "S868", "S10"],
     },
+    wire_fox_terrier: {
+      aka: "Fox Terrier (Wire), Wire Hair Fox Terrier, Wirehaired Fox Terrier, Fox Terrier, ostrodlaki foksterier",
+      text: [
+        "The Wire Fox Terrier is an active and lively terrier from Great Britain (FCI Group 3, terriers; section large and medium-sized terriers) — not the Toy Fox Terrier. The FCI standard asks for bone and strength in small compass, never cloddy or coarse, a dense, very wiry coat with a softer undercoat, white predominating with black, black and tan or tan markings, and a height at the withers not exceeding 39 cm for males, with females slightly less. The AKC standard puts a dog at 18 pounds in show condition and a bitch about two pounds less, with a margin of one pound either way (about 7.7–8.6 kg for males and 6.8–7.7 kg for females). A dog of this size is fully grown at about 9–12 months (PetMD), and the Royal Kennel Club gives a lifespan of over 12 years (PetMD: 12–15 years).",
+        "The FCI standard calls the breed friendly, forthcoming and fearless. The Royal Kennel Club recommends up to an hour of exercise a day and grooming more than once a week; PDSA says Fox Terriers love to play and explore, make excellent family pets and need grooming once or twice a week. WebMD calls them great companions for children but advises always supervising them around young kids; PetMD says they should be closely monitored with small pets because of their high prey drive, and recommends socialising the puppy well, daily tooth brushing, a bath about once a month and hand-stripping the coat three to four times a year; WebMD recommends trimming the nails about once a month.",
+      ],
+      sources: ["S871", "S872", "S873", "S874", "S875", "S876", "S10"],
+    },
 
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
