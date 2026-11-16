@@ -847,6 +847,71 @@
     "schipperke": {
       "name": "Schipperke",
       "slug": "schipperke"
+    },
+    "belgian_tervuren": {
+      "name": "Pastor belga tervueren",
+      "slug": "pastor-belga-tervueren",
+      "synonyms": [
+        "Tervueren",
+        "Tervuren",
+        "Belgian Tervuren"
+      ]
+    },
+    "toy_fox_terrier": {
+      "name": "Toy fox terrier",
+      "slug": "toy-fox-terrier",
+      "synonyms": [
+        "American toy terrier",
+        "Amertoy"
+      ]
+    },
+    "gordon_setter": {
+      "name": "Setter gordon",
+      "slug": "setter-gordon",
+      "synonyms": [
+        "Gordon setter",
+        "Setter escocês"
+      ]
+    },
+    "afghan_hound": {
+      "name": "Galgo afegão",
+      "slug": "galgo-afegao",
+      "synonyms": [
+        "Lebrel afegão",
+        "Afegão",
+        "Afghan hound"
+      ]
+    },
+    "australian_silky_terrier": {
+      "name": "Silky terrier australiano",
+      "slug": "silky-terrier-australiano",
+      "synonyms": [
+        "Silky terrier",
+        "Silky",
+        "Australian silky terrier"
+      ]
+    },
+    "parson_russell_terrier": {
+      "name": "Parson Russell terrier",
+      "slug": "parson-russell-terrier",
+      "synonyms": [
+        "Parson Russell"
+      ]
+    },
+    "wire_fox_terrier": {
+      "name": "Fox terrier de pelo duro",
+      "slug": "fox-terrier-de-pelo-duro",
+      "synonyms": [
+        "Fox terrier de pelo áspero",
+        "Wire fox terrier"
+      ]
+    },
+    "manchester_terrier": {
+      "name": "Manchester terrier",
+      "slug": "manchester-terrier",
+      "synonyms": [
+        "Terrier de Manchester"
+      ]
     }
   },
   "suitability_labels": {
