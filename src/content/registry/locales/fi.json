@@ -960,6 +960,69 @@
       "name": "Schipperke",
       "slug": "schipperke",
       "synonyms": []
+    },
+    "belgian_tervuren": {
+      "name": "Belgianpaimenkoira tervueren",
+      "slug": "belgianpaimenkoira-tervueren",
+      "synonyms": [
+        "Tervueren",
+        "Tervuren",
+        "Belgian Tervuren"
+      ]
+    },
+    "toy_fox_terrier": {
+      "name": "Toy Fox Terrier",
+      "slug": "toy-fox-terrier",
+      "synonyms": []
+    },
+    "gordon_setter": {
+      "name": "Gordoninsetteri",
+      "slug": "gordoninsetteri",
+      "synonyms": [
+        "Gordon Setter",
+        "Gordon setter"
+      ]
+    },
+    "afghan_hound": {
+      "name": "Afgaaninvinttikoira",
+      "slug": "afgaaninvinttikoira",
+      "synonyms": [
+        "Afghan Hound",
+        "Afgaani"
+      ]
+    },
+    "australian_silky_terrier": {
+      "name": "Australiansilkkiterrieri",
+      "slug": "australiansilkkiterrieri",
+      "synonyms": [
+        "Australian Silky Terrier",
+        "Silky Terrier",
+        "Silkkiterrieri"
+      ]
+    },
+    "parson_russell_terrier": {
+      "name": "Parsonrussellinterrieri",
+      "slug": "parsonrussellinterrieri",
+      "synonyms": [
+        "Parson Russell Terrier",
+        "Parson Russell"
+      ]
+    },
+    "wire_fox_terrier": {
+      "name": "Karkeakarvainen kettuterrieri",
+      "slug": "karkeakarvainen-kettuterrieri",
+      "synonyms": [
+        "Kettuterrieri",
+        "Wire Fox Terrier"
+      ]
+    },
+    "manchester_terrier": {
+      "name": "Manchesterinterrieri",
+      "slug": "manchesterinterrieri",
+      "synonyms": [
+        "Manchester Terrier",
+        "Manchester terrier"
+      ]
     }
   },
   "suitability_labels": {
