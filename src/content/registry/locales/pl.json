@@ -642,7 +642,7 @@
       ]
     },
     "nova_scotia_duck_tolling_retriever": {
-      "name": "Retriever z Nowej Szkocji",
+      "name": "Retriever z Nowej Szkocji",
       "slug": "retriever-z-nowej-szkocji",
       "synonyms": [
         "Toller",
@@ -738,7 +738,7 @@
       "slug": "basenji",
       "synonyms": [
         "Pies, który nie szczeka",
-        "Pies z Konga"
+        "Pies z Konga"
       ]
     },
     "greater_swiss_mountain_dog": {
@@ -899,7 +899,7 @@
       ]
     },
     "dogue_de_bordeaux": {
-      "name": "Dog z Bordeaux",
+      "name": "Dog z Bordeaux",
       "slug": "dog-z-bordeaux",
       "synonyms": [
         "Dogue de Bordeaux",
@@ -937,7 +937,7 @@
       "name": "Beauceron",
       "slug": "beauceron",
       "synonyms": [
-        "Owczarek z Beauce"
+        "Owczarek z Beauce"
       ]
     }
   },

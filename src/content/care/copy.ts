@@ -412,7 +412,7 @@ const pl: CareCopy = {
     toxic: { label: "Toksyczne – zadzwoń do weterynarza", heading: "Toksyczne: nigdy nie podawaj" },
     dangerous: { label: "Niebezpieczne", heading: "Niebezpieczne" },
     not_recommended: { label: "Niezalecane", heading: "Lepiej nie" },
-    small_amounts: { label: "W porządku w małych ilościach", heading: "W porządku jako okazjonalny smakołyk" },
+    small_amounts: { label: "W porządku w małych ilościach", heading: "W porządku jako okazjonalny smakołyk" },
   },
   hub: {
     foodsLead: (w) => `Bezpieczne, ryzykowne i toksyczne produkty dla ${w.plural} – przy każdym powód, objawy, na które trzeba uważać, i źródła.`,
@@ -440,7 +440,7 @@ const pl: CareCopy = {
     notVetReviewed: "Ogólne informacje z poniższych źródeł. Nie sprawdził ich weterynarz i nie zastępują porady weterynaryjnej. W razie wątpliwości zadzwoń do weterynarza.",
     otherSpecies: "Inne zwierzęta",
     simulates: "Jak dzieci ćwiczą to w aplikacji PetPrep",
-    simulatesText: (w) => `W aplikacji PetPrep dziecko opiekuje się realistycznym ${w.pet}: posiłki o właściwych porach, woda, spacery i pielęgnacja. Wiedza o tym, czym można bezpiecznie podzielić się ze zwierzęciem, to część gotowości na prawdziwe zwierzę domowe.`,
+    simulatesText: (w) => `W aplikacji PetPrep dziecko opiekuje się realistycznym ${w.pet}: posiłki o właściwych porach, woda, spacery i pielęgnacja. Wiedza o tym, czym można bezpiecznie podzielić się ze zwierzęciem, to część gotowości na prawdziwe zwierzę domowe.`,
     backTo: "Wszystkie produkty",
   },
   breadcrumb: "Opieka",

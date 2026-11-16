@@ -12,7 +12,7 @@ const pl: Dictionary = {
       "symulator wirtualnego zwierzaka",
       "symulator zwierzęcia AI",
       "zanim kupisz psa",
-      "dzieci i zwierzęta domowe",
+      "dzieci i zwierzęta domowe",
       "test gotowości na zwierzę",
       "panel rodzica",
       "wypróbuj rasę psa przed zakupem",
@@ -28,7 +28,7 @@ const pl: Dictionary = {
     earlyAccessSubject: "PetPrep – wczesny dostęp",
     ios: "Pobierz na iPhone’a",
     android: "Pobierz na Androida",
-    comingSoon: "Wkrótce na iPhone’a i Androida",
+    comingSoon: "Wkrótce na iPhone’a i Androida",
     readMore: "Czytaj dalej",
     contactUs: "Napisz do nas",
   },
@@ -77,12 +77,12 @@ const pl: Dictionary = {
       name: "Mieszaniec",
       text: "Pełna symulacja z realistycznym mieszańcem.",
       features: [
-        "Codzienna opieka z prawdziwymi konsekwencjami",
+        "Codzienna opieka z prawdziwymi konsekwencjami",
         "Prawdziwe spacery liczone w prawdziwych krokach z telefonu",
         "Panel rodzica, sygnalizator i Care Score",
         "Godziny ciszy i przycisk pauzy",
         "Fotorealistyczne zdjęcie twojego zwierzaka i krótkie filmy",
-        "12-tygodniowe wyzwanie możesz dodać później, z tym samym zwierzęciem",
+        "12-tygodniowe wyzwanie możesz dodać później, z tym samym zwierzęciem",
       ],
       cta: "Zacznij za darmo",
     },
@@ -93,7 +93,7 @@ const pl: Dictionary = {
       text: "Dla rodzin, które chcą pełnego doświadczenia i certyfikatu na końcu.",
       features: [
         "Wszystko, co w planie Mieszaniec",
-        "Każda rasa, np. [border collie](breed:border_collie), albo pies mieszaniec i kot domowy",
+        "Każda rasa, np. [border collie](breed:border_collie), albo pies mieszaniec i kot domowy",
         "Nastroje twojego zwierzęcia jako filmy AI",
         "Certyfikat odpowiedzialności",
         "Jedna cena, gdy rodzeństwo dzieli jedno zwierzę",
@@ -220,7 +220,7 @@ const pl: Dictionary = {
         },
       ],
       how: "Jak zacząć: załóż konto jako rodzic, dodaj siebie jako profil opiekuna i zaloguj się 6-cyfrowym kodem – na tym samym telefonie albo na innym.",
-      note: "Dostępne już dziś: darmowy pies mieszaniec i kot domowy, a także 12-tygodniowe wyzwanie z jednym z nich lub z każdą rasą psa i kota z [encyklopedii zwierząt](page:animals).",
+      note: "Dostępne już dziś: darmowy pies mieszaniec i kot domowy, a także 12-tygodniowe wyzwanie z jednym z nich lub z każdą rasą psa i kota z [encyklopedii zwierząt](page:animals).",
       link: "Jak korzystać z PetPrep samodzielnie",
     },
     after: {
@@ -235,8 +235,8 @@ const pl: Dictionary = {
         { title: "Test DNA", text: "Jakie rasy kryją się w twoim mieszańcu – i na co zwracać uwagę." },
         { title: "Karta dla weterynarza", text: "Mieszanka ras i wyniki DNA w jednym miejscu, gotowe dla weterynarza." },
       ],
-      link: "O asystencie AI",
-      planned: "W przygotowaniu",
+      link: "O asystencie AI",
+      planned: "W przygotowaniu",
     },
     species: {
       title: "Dziś psy i koty. Kolejne gatunki w drodze.",
@@ -442,7 +442,7 @@ const pl: Dictionary = {
           id: "wishes",
           heading: "Życzenia – rzeczy dla twojego zwierzęcia",
           intro:
-            "W aplikacji dziecko prosi o rzeczy dla swojego zwierzęcia; ty decydujesz i kupujesz. Dziecko nigdy nie widzi ceny. Przedmioty są wyłącznie ozdobne: nigdy nie zmieniają potrzeb, Care Score ani certyfikatu. Dostępne także dla darmowego psa mieszańca i kota domowego.",
+            "W aplikacji dziecko prosi o rzeczy dla swojego zwierzęcia; ty decydujesz i kupujesz. Dziecko nigdy nie widzi ceny. Przedmioty są wyłącznie ozdobne: nigdy nie zmieniają potrzeb, Care Score ani certyfikatu. Dostępne także dla darmowego psa mieszańca i kota domowego.",
           head: ["Przedmiot", "Cena"],
           rows: [
             ["Legowisko (kot: koszyk)", "5,99 €"],
@@ -458,12 +458,12 @@ const pl: Dictionary = {
           heading: "Pytania o ceny",
           items: [
             { q: "Czy wersja darmowa jest naprawdę darmowa?", a: "Tak. Zwierzę mieszaniec jest za darmo na zawsze – z pełną symulacją, prawdziwymi spacerami i panelem rodzica." },
-            { q: "Co obejmuje wyzwanie?", a: "Wymagające rasy, takie jak [border collie](breed:border_collie), nastroje twojego zwierzęcia jako filmy AI, Certyfikat odpowiedzialności na końcu i dostęp dla obojga rodziców. Możesz je wybrać także z psem mieszańcem lub kotem domowym." },
-            { q: "Czy możemy przejść na wyzwanie z darmowym zwierzęciem, które moje dziecko już ma?", a: "Tak, jeśli darmowy pies mieszaniec lub kot domowy jest nadal w grze. W aplikacji rodzica rozpocznij wyzwanie z karty dziecka. Zwierzę pozostaje to samo: imię, wygląd, wiek i nauczone komendy. 12 tygodni, Care Score i certyfikat liczą się od zakupu; wcześniejsze dni zostają w historii, oznaczone jako dni przed wyzwaniem, i się nie liczą. Cena jest taka sama: 49,99 € jednorazowo, bez subskrypcji. Psów mieszańców utworzonych we wczesnej wersji aplikacji nie można przenieść do wyzwania; aplikacja powie ci, czy dotyczy to twojego psa." },
-            { q: "Czy zwierzę z wyzwania może wrócić do planu bezpłatnego?", a: "Nie na życzenie. Pies mieszaniec lub kot domowy wraca do planu bezpłatnego tylko wtedy, gdy sklep zwróci pieniądze za zakup; wyzwanie kończy się wtedy bez certyfikatu. Jeśli później kupisz wyzwanie ponownie, zacznie się nowe 12 tygodni." },
-            { q: "Czy aplikacja będzie mnie namawiać do zakupu?", a: "Nie. Jeśli twoje dziecko opiekowało się darmowym zwierzęciem w co najmniej 5 z jego pierwszych 7 dni, dostaniesz jedno powiadomienie i kartę w panelu z informacją o wyzwaniu – raz na zwierzę i nigdy w godzinach ciszy. Dziecko nie widzi cen ani tego przypomnienia." },
+            { q: "Co obejmuje wyzwanie?", a: "Wymagające rasy, takie jak [border collie](breed:border_collie), nastroje twojego zwierzęcia jako filmy AI, Certyfikat odpowiedzialności na końcu i dostęp dla obojga rodziców. Możesz je wybrać także z psem mieszańcem lub kotem domowym." },
+            { q: "Czy możemy przejść na wyzwanie z darmowym zwierzęciem, które moje dziecko już ma?", a: "Tak, jeśli darmowy pies mieszaniec lub kot domowy jest nadal w grze. W aplikacji rodzica rozpocznij wyzwanie z karty dziecka. Zwierzę pozostaje to samo: imię, wygląd, wiek i nauczone komendy. 12 tygodni, Care Score i certyfikat liczą się od zakupu; wcześniejsze dni zostają w historii, oznaczone jako dni przed wyzwaniem, i się nie liczą. Cena jest taka sama: 49,99 € jednorazowo, bez subskrypcji. Psów mieszańców utworzonych we wczesnej wersji aplikacji nie można przenieść do wyzwania; aplikacja powie ci, czy dotyczy to twojego psa." },
+            { q: "Czy zwierzę z wyzwania może wrócić do planu bezpłatnego?", a: "Nie na życzenie. Pies mieszaniec lub kot domowy wraca do planu bezpłatnego tylko wtedy, gdy sklep zwróci pieniądze za zakup; wyzwanie kończy się wtedy bez certyfikatu. Jeśli później kupisz wyzwanie ponownie, zacznie się nowe 12 tygodni." },
+            { q: "Czy aplikacja będzie mnie namawiać do zakupu?", a: "Nie. Jeśli twoje dziecko opiekowało się darmowym zwierzęciem w co najmniej 5 z jego pierwszych 7 dni, dostaniesz jedno powiadomienie i kartę w panelu z informacją o wyzwaniu – raz na zwierzę i nigdy w godzinach ciszy. Dziecko nie widzi cen ani tego przypomnienia." },
             { q: "Czy rodzeństwo płaci podwójnie?", a: "Nie. Dzieci, które dzielą jedno zwierzę, płacą jedną cenę. Drugie zwierzę w rodzinie to osobne wyzwanie." },
-            { q: "Jak zapłacić?", a: "W aplikacji, przez App Store lub Google Play. Zwrotami zajmuje się sklep, w którym masz konto." },
+            { q: "Jak zapłacić?", a: "W aplikacji, przez App Store lub Google Play. Zwrotami zajmuje się sklep, w którym masz konto." },
             { q: "Czym są Życzenia i czy moje dziecko może samo coś kupić?", a: "Twoje dziecko może poprosić o legowisko, miski, zabawkę lub smakołyki dla swojego zwierzęcia – maksymalnie trzy otwarte prośby naraz. Dostajesz powiadomienie i albo kupujesz, albo wybierasz „Nie teraz”. Dziecko nigdy nie widzi cen i w aplikacji dla dzieci nie może niczego kupić." },
             { q: "Czy kupione przedmioty ułatwiają grę?", a: "Nie. Przedmioty są wyłącznie ozdobne. Nigdy nie zmieniają potrzeb, Care Score ani certyfikatu, a w Życzeniach nie ma weterynarza ani leków – nigdy „zapłać, żeby uratować zwierzę”." },
             { q: "Czy dla dorosłych jest tak samo?", a: "Tak. Jeśli używasz PetPrep samodzielnie, żeby wypróbować rasę, obowiązuje to samo: mieszaniec jest za darmo na zawsze, a 12-tygodniowe wyzwanie kosztuje 49,99 € za zwierzę." },
@@ -491,10 +491,10 @@ const pl: Dictionary = {
             { q: "Czy moje dziecko potrzebuje adresu e-mail?", a: "Nie. To ty zakładasz konto; dziecko loguje się 6-cyfrowym kodem, który wygenerujesz. Przechowujemy tylko pseudonim i opcjonalnie rok urodzenia." },
             { q: "Co się stanie, jeśli moje dziecko zapomni?", a: "Zwierzę najpierw wysyła łagodne przypomnienia. Jeśli jakaś potrzeba pozostaje na zerze, zwierzę choruje i spędza 12 godzin u weterynarza. Po całym dniu bez opieki zabiera je wirtualne schronisko – a ty możesz zacząć od nowa." },
             { q: "Czy rodzeństwo może dzielić jedno zwierzę?", a: "Tak. Każde dziecko podpisuje własną umowę, każda czynność jest przypisywana temu, kto ją wykonał, a każde dziecko dostaje własny, sprawiedliwy Care Score." },
-            { q: "A co ze szkołą i porą snu?", a: "Ustaw godziny ciszy. Zwierzę zwalnia, nic nie jest wysyłane, a posiłkami, które w całości wypadają w godzinach ciszy, zajmujesz się ty." },
+            { q: "A co ze szkołą i porą snu?", a: "Ustaw godziny ciszy. Zwierzę zwalnia, nic nie jest wysyłane, a posiłkami, które w całości wypadają w godzinach ciszy, zajmujesz się ty." },
             { q: "Czy to nie jest straszne dla dzieci?", a: "Nie. Konsekwencje są prawdziwe, ale łagodne: zwierzę trafia do weterynarza albo do schroniska, nigdy nie ma drastycznych scen i zawsze można zacząć od nowa." },
-            { q: "Jakie zwierzęta są dostępne?", a: "Dziś [psy](species:dog) i [koty](species:cat): darmowy pies mieszaniec i kot domowy, a także 12-tygodniowe wyzwanie z jednym z nich lub z każdą rasą z [encyklopedii zwierząt](page:animals), która podaje też ich potrzeby ze źródłami. Kolejne gatunki są planowane." },
-            { q: "W jakich językach?", a: "Dziś po angielsku i słoweńsku. Kolejne języki pojawią się, gdy PetPrep będzie startować w nowych krajach." },
+            { q: "Jakie zwierzęta są dostępne?", a: "Dziś [psy](species:dog) i [koty](species:cat): darmowy pies mieszaniec i kot domowy, a także 12-tygodniowe wyzwanie z jednym z nich lub z każdą rasą z [encyklopedii zwierząt](page:animals), która podaje też ich potrzeby ze źródłami. Kolejne gatunki są planowane." },
+            { q: "W jakich językach?", a: "Dziś po angielsku i słoweńsku. Kolejne języki pojawią się, gdy PetPrep będzie startować w nowych krajach." },
             { q: "Co się dzieje, gdy już mamy prawdziwe zwierzę?", a: "PetPrep może stać się asystentem AI dla twojego prawdziwego zwierzęcia. Ta część jest w przygotowaniu." },
           ],
         },
@@ -514,7 +514,7 @@ const pl: Dictionary = {
       blocks: [
         {
           type: "cards",
-          heading: "Z kim współpracujemy",
+          heading: "Z kim współpracujemy",
           columns: 3,
           items: [
             { title: "Sklepy zoologiczne", text: "Docieraj do rodzin w chwili, gdy udowadniają, że są gotowe – na przykład z ofertą wyprawki przy certyfikacie." },
@@ -578,7 +578,7 @@ const pl: Dictionary = {
           items: [
             "Silnik gry po stronie serwera z synchronizacją w czasie rzeczywistym, przetestowany na symulacjach całych dni, w dni zmiany czasu oraz przy nietypowych układach rodzinnych.",
             "Rodziny z więcej niż jednym rodzicem, kilkorgiem dzieci i wspólnymi zwierzętami, ze sprawiedliwym wynikiem dla każdego dziecka.",
-            "Niepowtarzalne, fotorealistyczne zwierzęta AI przy zmierzonych i ograniczonych kosztach AI; media przechowujemy na wynajętych serwerach w Niemczech (Hetzner, UE).",
+            "Niepowtarzalne, fotorealistyczne zwierzęta AI przy zmierzonych i ograniczonych kosztach AI; media przechowujemy na wynajętych serwerach w Niemczech (Hetzner, UE).",
             "Potrzeby zwierząt oparte na cytowanych źródłach weterynaryjnych i kynologicznych – każdą liczbę da się prześledzić do jej źródła.",
             "Bezpieczeństwo dzieci wbudowane od podstaw: logowanie PIN-em bez e-maila, minimum danych, bez reklam, wyłącznie zweryfikowane media.",
           ],
@@ -588,7 +588,7 @@ const pl: Dictionary = {
           heading: "Etap",
           paragraphs: [
             "PetPrep jest przed premierą, planowana jest zamknięta beta. Pierwszy rynek to Słowenia i region, następnie DACH i Wielka Brytania; produkt od pierwszego dnia jest budowany z myślą o lokalizacji na cały świat.",
-            "Założyciel: David Tacer, programista i przedsiębiorca. Więcej [o nas](page:about).",
+            "Założyciel: David Tacer, programista i przedsiębiorca. Więcej [o nas](page:about).",
           ],
         },
         { type: "callout", title: "Poproś o materiały dla inwestorów.", text: "Materiały, prezentację i data room udostępniamy na życzenie.", tone: "dark" },
@@ -635,7 +635,7 @@ const pl: Dictionary = {
                 "Kody: kody logowania i zaproszeń są przechowywane wyłącznie jako skróty i wygasają.",
                 "Raporty błędów aplikacji: jeśli aplikacja się zawiesi lub ulegnie awarii, może wysłać krótki raport techniczny na nasz serwer w UE (typ i treść błędu, miejsce w kodzie, wersja aplikacji i systemu, nazwa ekranu, rola rodzica/dziecka). Nie zawiera imienia, adresu e-mail, identyfikatora użytkownika ani adresu IP, nie jest udostępniany żadnej stronie trzeciej i jest usuwany po 30 dniach.",
                 "Lista wczesnego dostępu (ta strona internetowa): twój adres e-mail, język strony i czas zapisu.",
-                "Realizacja bonu podarunkowego (ta strona): rodzic loguje się przez Google, Apple albo adresem e-mail i hasłem. W przypadku adresu e-mail i hasła nasz serwer sprawdza je z istniejącym kontem rodzica i nigdy nie zapisuje hasła jawnym tekstem; od Google lub Apple otrzymujemy tylko identyfikator konta i nie przechowujemy innych danych od nich. Krótkotrwały token logowania jest trzymany w pamięci przeglądarki przez najwyżej 15 minut. Podczas przekierowania do Google lub Apple i powrotu dwa wpisy (petprep.signin i petprep.webSession.handoff) znajdują się wyłącznie w pamięci sesji (session storage) tej karty przeglądarki. Są usuwane zaraz po odczytaniu przez stronę powrotu, a w przeciwnym razie przy zamknięciu karty; przekazanie sesji jest akceptowane tylko w ciągu 60 sekund. Po wylogowaniu lub zamknięciu karty nic nie pozostaje zapisane w przeglądarce. Na naszym serwerze zostają tylko krótkotrwałe zapisy techniczne: wpis o tokenie logowania (identyfikator konta i czasy, bez imienia i adresu e-mail), usuwany automatycznie około dwóch dni po wygaśnięciu, oraz liczniki ograniczeń (nieudane próby na konto w postaci skrótu przez 15 minut; żądania na adres sieciowy przez najwyżej godzinę).",
+                "Realizacja bonu podarunkowego (ta strona): rodzic loguje się przez Google, Apple albo adresem e-mail i hasłem. W przypadku adresu e-mail i hasła nasz serwer sprawdza je z istniejącym kontem rodzica i nigdy nie zapisuje hasła jawnym tekstem; od Google lub Apple otrzymujemy tylko identyfikator konta i nie przechowujemy innych danych od nich. Krótkotrwały token logowania jest trzymany w pamięci przeglądarki przez najwyżej 15 minut. Podczas przekierowania do Google lub Apple i powrotu dwa wpisy (petprep.signin i petprep.webSession.handoff) znajdują się wyłącznie w pamięci sesji (session storage) tej karty przeglądarki. Są usuwane zaraz po odczytaniu przez stronę powrotu, a w przeciwnym razie przy zamknięciu karty; przekazanie sesji jest akceptowane tylko w ciągu 60 sekund. Po wylogowaniu lub zamknięciu karty nic nie pozostaje zapisane w przeglądarce. Na naszym serwerze zostają tylko krótkotrwałe zapisy techniczne: wpis o tokenie logowania (identyfikator konta i czasy, bez imienia i adresu e-mail), usuwany automatycznie około dwóch dni po wygaśnięciu, oraz liczniki ograniczeń (nieudane próby na konto w postaci skrótu przez 15 minut; żądania na adres sieciowy przez najwyżej godzinę).",
               ],
             },
             {
@@ -694,7 +694,7 @@ const pl: Dictionary = {
             {
               heading: "8. Obrazy i filmy generowane przez AI",
               paragraphs: [
-                "Zdjęcie i krótkie filmy każdego zwierzęcia tworzy usługa AI wyłącznie na podstawie opisu zwierzęcia (rasa, sierść, znaczenia i podobne cechy). Opis nigdy nie zawiera imion ani żadnych informacji o twojej rodzinie. Gotowe media są przechowywane na wynajętych serwerach w Niemczech (Hetzner, UE) i wyświetlane za pomocą krótkotrwałych linków.",
+                "Zdjęcie i krótkie filmy każdego zwierzęcia tworzy usługa AI wyłącznie na podstawie opisu zwierzęcia (rasa, sierść, znaczenia i podobne cechy). Opis nigdy nie zawiera imion ani żadnych informacji o twojej rodzinie. Gotowe media są przechowywane na wynajętych serwerach w Niemczech (Hetzner, UE) i wyświetlane za pomocą krótkotrwałych linków.",
               ],
             },
             {
@@ -707,8 +707,8 @@ const pl: Dictionary = {
                 "E-maile o wczesnym dostępie: Klaviyo (otrzymuje wyłącznie adres e-mail i język, które podajesz na tej stronie).",
                 "Zgoda na pliki cookie na stronie: Kockica (przechowuje twój wybór dotyczący zgody).",
                 "Analityka strony: Google Analytics 4 od Google Ireland Ltd., wyłącznie za twoją zgodą; Google Analytics 4 nie przechowuje adresów IP.",
-                "Zarządzanie tagami na stronie: Google Tag Manager od Google Ireland Ltd.; sam nie ustawia plików cookie, a ładowane przez niego tagi respektują twoją zgodę.",
-                "Osadzone filmy: YouTube od Google Ireland Ltd. (youtube-nocookie.com), ładowane dopiero po naciśnięciu odtwarzania i zgodzie na reklamowe pliki cookie.",
+                "Zarządzanie tagami na stronie: Google Tag Manager od Google Ireland Ltd.; sam nie ustawia plików cookie, a ładowane przez niego tagi respektują twoją zgodę.",
+                "Osadzone filmy: YouTube od Google Ireland Ltd. (youtube-nocookie.com), ładowane dopiero po naciśnięciu odtwarzania i zgodzie na reklamowe pliki cookie.",
               ],
             },
             {
@@ -731,7 +731,7 @@ const pl: Dictionary = {
             },
             {
               heading: "13. Zmiany",
-              paragraphs: ["O ważnych zmianach poinformujemy cię w aplikacji, zanim wejdą w życie. Data na górze strony wskazuje najnowszą wersję."],
+              paragraphs: ["O ważnych zmianach poinformujemy cię w aplikacji, zanim wejdą w życie. Data na górze strony wskazuje najnowszą wersję."],
             },
           ],
         },
@@ -739,7 +739,7 @@ const pl: Dictionary = {
           type: "cookies",
           heading: "14. Pliki cookie",
           paragraphs: [
-            "Niezbędne pliki cookie zapewniają działanie strony i zapamiętują twój wybór dotyczący zgody. Wszystkie inne pliki cookie są ustawiane tylko wtedy, gdy pozwolisz na to w banerze, według kategorii: funkcjonalne (dodatkowe funkcje), analityczne (Google Analytics: które strony są odwiedzane) i reklamowe (filmy z YouTube osadzone na niektórych stronach; na tej stronie nie wyświetlamy reklam). Sam Google Tag Manager nie ustawia plików cookie, a każdy tag, który ładuje, respektuje twój wybór. Swój wybór możesz w każdej chwili zmienić lub wycofać.",
+            "Niezbędne pliki cookie zapewniają działanie strony i zapamiętują twój wybór dotyczący zgody. Wszystkie inne pliki cookie są ustawiane tylko wtedy, gdy pozwolisz na to w banerze, według kategorii: funkcjonalne (dodatkowe funkcje), analityczne (Google Analytics: które strony są odwiedzane) i reklamowe (filmy z YouTube osadzone na niektórych stronach; na tej stronie nie wyświetlamy reklam). Sam Google Tag Manager nie ustawia plików cookie, a każdy tag, który ładuje, respektuje twój wybór. Swój wybór możesz w każdej chwili zmienić lub wycofać.",
             "Poniższą tabelę automatycznie tworzy baner zgody na podstawie tego, co wykrywa na tej stronie, więc pokazuje pliki cookie, których faktycznie używamy.",
           ],
           settings: "Zmień ustawienia plików cookie",
@@ -782,7 +782,7 @@ const pl: Dictionary = {
             {
               heading: "3. 12-tygodniowe wyzwanie, Care Score i certyfikat",
               items: [
-                "Wyzwanie trwa 12 tygodni (84 dni programu) i zaczyna się z chwilą zakupu; każdy opiekun ma własny termin zakończenia. Czas, w którym gra czeka na płatność, nie wlicza się do 12 tygodni. Jeśli przeniesiesz darmowe zwierzę do wyzwania, 12 tygodni również liczy się od zakupu; wiek zwierzęcia się nie zeruje, a dni przed zakupem pozostają widoczne w historii, oznaczone jako dni przed wyzwaniem, ale nie liczą się ani do 12 tygodni, ani do Care Score, ani do certyfikatu.",
+                "Wyzwanie trwa 12 tygodni (84 dni programu) i zaczyna się z chwilą zakupu; każdy opiekun ma własny termin zakończenia. Czas, w którym gra czeka na płatność, nie wlicza się do 12 tygodni. Jeśli przeniesiesz darmowe zwierzę do wyzwania, 12 tygodni również liczy się od zakupu; wiek zwierzęcia się nie zeruje, a dni przed zakupem pozostają widoczne w historii, oznaczone jako dni przed wyzwaniem, ale nie liczą się ani do 12 tygodni, ani do Care Score, ani do certyfikatu.",
                 "Care Score (0–100) pokazuje, jaką część oczekiwanych obowiązków (karmienie, woda, sprzątanie, spacer, sesja treningowa) opiekun wykonał sam; każda choroba zwierzęcia go obniża. Czas, w którym gra jest zatrzymana, zwierzę jest u weterynarza, oraz godziny ciszy nigdy nie liczą się na niekorzyść opiekuna.",
                 "Po 12 tygodniach zapisywany jest wynik końcowy, który później się nie zmienia; opieka po zakończeniu wyzwania na niego nie wpływa. Przy wyniku 70 lub wyższym możesz utworzyć w aplikacji Certyfikat odpowiedzialności (PDF); poniżej 70 otrzymujesz raport z wyzwania.",
                 "Jeśli jedzenie, woda lub czystość pozostają na poziomie 0% przez 24 godziny, zwierzę zostaje „oddane do schroniska” (koniec gry). Gra z tym zwierzęciem się kończy, nie ma certyfikatu, a ty otrzymujesz raport z wyzwania.",
@@ -794,11 +794,11 @@ const pl: Dictionary = {
               heading: "4. Funkcje darmowe i płatne, zakupy i zwroty",
               items: [
                 "Pies mieszaniec i kot domowy są za darmo na zawsze i są sposobem na wypróbowanie PetPrep; nie ma darmowego okresu próbnego wyzwania. Darmowe zwierzę nie ma 12-tygodniowego programu ani certyfikatu, rodzic widzi historię z ostatnich 7 dni, a zwierzę ma podstawowy zestaw obrazów i filmów.",
-                "12-tygodniowe wyzwanie PetPrep to jednorazowy zakup, a nie subskrypcja (49,99 € w Słowenii; sklep pokazuje cenę dla twojego kraju). W aktualnej wersji aplikacji możesz je wybrać z każdą rasą, także z psem mieszańcem i kotem domowym. Jeden zakup to jedno wyzwanie dla jednego zwierzęcia; każde nowe wyzwanie z nowym zwierzęciem to nowy zakup. Rodzeństwo opiekujące się tym samym zwierzęciem płaci raz.",
-                "Rodzic może przenieść do wyzwania darmowego psa mieszańca lub kota domowego, którym ktoś już się opiekuje – za tę samą cenę i z tym samym zwierzęciem. Nie jest to możliwe po zakończeniu gry ani w przypadku psów mieszańców utworzonych we wczesnej wersji aplikacji; aplikacja pokazuje, kiedy tak jest. Zwierzęcia w wyzwaniu (także przeniesionego do wyzwania oraz psa mieszańca lub kota domowego wybranego do wyzwania) nie można przełączyć z powrotem na plan bezpłatny; psa mieszańca lub kota domowego przywraca do niego tylko zwrot pieniędzy (poniżej).",
+                "12-tygodniowe wyzwanie PetPrep to jednorazowy zakup, a nie subskrypcja (49,99 € w Słowenii; sklep pokazuje cenę dla twojego kraju). W aktualnej wersji aplikacji możesz je wybrać z każdą rasą, także z psem mieszańcem i kotem domowym. Jeden zakup to jedno wyzwanie dla jednego zwierzęcia; każde nowe wyzwanie z nowym zwierzęciem to nowy zakup. Rodzeństwo opiekujące się tym samym zwierzęciem płaci raz.",
+                "Rodzic może przenieść do wyzwania darmowego psa mieszańca lub kota domowego, którym ktoś już się opiekuje – za tę samą cenę i z tym samym zwierzęciem. Nie jest to możliwe po zakończeniu gry ani w przypadku psów mieszańców utworzonych we wczesnej wersji aplikacji; aplikacja pokazuje, kiedy tak jest. Zwierzęcia w wyzwaniu (także przeniesionego do wyzwania oraz psa mieszańca lub kota domowego wybranego do wyzwania) nie można przełączyć z powrotem na plan bezpłatny; psa mieszańca lub kota domowego przywraca do niego tylko zwrot pieniędzy (poniżej).",
                 "Rodzic kupuje we własnej aplikacji przez App Store lub Google Play; w aplikacji dziecka nie ma zakupów. Płatność obsługuje sklep na własnych warunkach.",
                 "Zwierzę do wyzwania możesz utworzyć przed zakupem. Dopóki wyzwanie nie zostanie opłacone, gra jest wstrzymana: zwierzę bezpiecznie czeka, jego potrzeby nie spadają i nic się nie pogarsza. Po zakupie gra toczy się dalej tam, gdzie się zatrzymała.",
-                "Zwrotami zajmują się App Store i Google Play według własnych zasad; o zwrot poproś w sklepie, w którym dokonano zakupu. Jeśli sklep zwróci pieniądze za zakup przed zakończeniem wyzwania, gra z tym zwierzęciem zostaje ponownie wstrzymana. Obrazy i filmy utworzone po zakupie pozostają. Pies mieszaniec lub kot domowy nie zostaje wstrzymany, tylko wraca do planu bezpłatnego: wyzwanie kończy się bez certyfikatu, znów obowiązują zasady planu bezpłatnego, a zwierzę znów ma podstawowy zestaw zdjęć i filmów. Jeśli później ponownie kupisz wyzwanie dla tego zwierzęcia, nowe 12 tygodni zacznie się od nowego zakupu.",
+                "Zwrotami zajmują się App Store i Google Play według własnych zasad; o zwrot poproś w sklepie, w którym dokonano zakupu. Jeśli sklep zwróci pieniądze za zakup przed zakończeniem wyzwania, gra z tym zwierzęciem zostaje ponownie wstrzymana. Obrazy i filmy utworzone po zakupie pozostają. Pies mieszaniec lub kot domowy nie zostaje wstrzymany, tylko wraca do planu bezpłatnego: wyzwanie kończy się bez certyfikatu, znów obowiązują zasady planu bezpłatnego, a zwierzę znów ma podstawowy zestaw zdjęć i filmów. Jeśli później ponownie kupisz wyzwanie dla tego zwierzęcia, nowe 12 tygodni zacznie się od nowego zakupu.",
                 "Po zakończeniu gry (schronisko) zakup nie odblokowuje zwierzęcia; nowe wyzwanie to nowe zwierzę i nowy zakup.",
                 "Życzenia (rzeczy dla zwierzęcia, gdy będą dostępne): dziecko może poprosić, ale kupić może tylko rodzic, we własnej aplikacji. Kupiony przedmiot należy do zwierzęcia, dla którego go kupiono, i jest wyłącznie ozdobny – nie wpływa na grę, wynik ani certyfikat. Po zakończeniu gry lub usunięciu zwierzęcia zakup pozostaje wykorzystany i nie podlega zwrotowi. Jeśli sklep zwróci pieniądze za zakup, przedmiot (w przypadku smakołyków – niewykorzystane smakołyki) zostaje usunięty.",
                 "Jeśli usuniesz zwierzę, dziecko lub konto, gdy kupione wyzwanie wciąż trwa, zakup pozostaje wykorzystany: nie przechodzi na inne zwierzę, a usunięcie nie jest zwrotem. Aplikacja najpierw cię ostrzega i prosi o potwierdzenie.",
@@ -819,14 +819,14 @@ const pl: Dictionary = {
               items: [
                 "Codzienny spacer liczy prawdziwe kroki opiekuna. Jeśli na to pozwolisz, aplikacja odczytuje je z Apple Health lub Health Connect, tylko do odczytu (nigdy niczego tam nie zapisuje), albo z czujnika ruchu telefonu. Jakie dane przetwarzamy, opisuje polityka prywatności (sekcja 3).",
                 "Tryb dostosowany jest przeznaczony dla dzieci poruszających się na wózku: spacer liczy wtedy pchnięcia wózka zamiast kroków. Możesz z niego korzystać, jeśli funkcja jest dostępna w twojej wersji aplikacji. Rodzic włącza go dla konkretnego dziecka; włączenie oznacza twoją zgodę, a wyłączenie ją wycofuje (polityka prywatności, sekcja 4).",
-                "W trybie dostosowanym rodzic może wpisać minuty spaceru dziecka, tylko za dzisiejszy dzień. Odpowiadasz za te wpisy: wpisuj tylko spacery, które naprawdę się odbyły, ponieważ liczą się do Care Score i certyfikatu.",
+                "W trybie dostosowanym rodzic może wpisać minuty spaceru dziecka, tylko za dzisiejszy dzień. Odpowiadasz za te wpisy: wpisuj tylko spacery, które naprawdę się odbyły, ponieważ liczą się do Care Score i certyfikatu.",
                 "PetPrep nie korzysta z lokalizacji i nie ostrzega przed niebezpieczeństwami podczas spaceru; o bezpieczeństwo spacerów dbasz ty.",
               ],
             },
             {
               heading: "7. Powiadomienia",
               paragraphs: [
-                "Jeśli pozwolisz na to na urządzeniu, aplikacja wysyła powiadomienia push: przypomnienia dla opiekuna, alerty dla rodziców, gdy zwierzę nie ma jedzenia, wody lub czystości, oraz informacje o chorobie, końcu gry i zakończeniu wyzwania. Tytułem powiadomienia może być imię zwierzęcia, jeśli zostało mu nadane; powiadomienia nigdy nie zawierają imienia dziecka i nie są wysyłane w godzinach ciszy. Zgodę możesz w każdej chwili cofnąć w ustawieniach urządzenia; bez powiadomień opiekun może przegapić obowiązki, co wpływa na grę i wynik. Rodzice dostają też, najwyżej raz na darmowe zwierzę, przypomnienie o wyzwaniu, gdy ktoś opiekował się nim w co najmniej 5 z jego pierwszych 7 dni.",
+                "Jeśli pozwolisz na to na urządzeniu, aplikacja wysyła powiadomienia push: przypomnienia dla opiekuna, alerty dla rodziców, gdy zwierzę nie ma jedzenia, wody lub czystości, oraz informacje o chorobie, końcu gry i zakończeniu wyzwania. Tytułem powiadomienia może być imię zwierzęcia, jeśli zostało mu nadane; powiadomienia nigdy nie zawierają imienia dziecka i nie są wysyłane w godzinach ciszy. Zgodę możesz w każdej chwili cofnąć w ustawieniach urządzenia; bez powiadomień opiekun może przegapić obowiązki, co wpływa na grę i wynik. Rodzice dostają też, najwyżej raz na darmowe zwierzę, przypomnienie o wyzwaniu, gdy ktoś opiekował się nim w co najmniej 5 z jego pierwszych 7 dni.",
               ],
             },
             {
@@ -899,7 +899,7 @@ const pl: Dictionary = {
             { title: "Bez reklam, bez czatu, bez obcych", text: "Nie ma reklam ani możliwości kontaktu z innymi użytkownikami." },
             { title: "Bez śledzenia lokalizacji", text: "Spacery liczą wyłącznie kroki – z Apple Health lub Health Connect (za twoją zgodą, tylko odczyt) albo z czujnika ruchu telefonu. GPS nie jest używany." },
             { title: "Prywatne aktualizacje na żywo", text: "Aktualizacje w czasie rzeczywistym trafiają wyłącznie do dzieci, które opiekują się danym zwierzęciem, i do rodziców z tej samej rodziny." },
-            { title: "Zweryfikowane media", text: "Wyświetlamy tylko obrazy i filmy stworzone dla PetPrep i sprawdzone przez nasz serwer, z naszego magazynu w UE." },
+            { title: "Zweryfikowane media", text: "Wyświetlamy tylko obrazy i filmy stworzone dla PetPrep i sprawdzone przez nasz serwer, z naszego magazynu w UE." },
             { title: "Powiadomienia bez imienia dziecka", text: "Powiadomienia nigdy nie zawierają imienia dziecka, bo mogą się pojawić na ekranie blokady. Jako tytuł może się pojawić tylko imię zwierzęcia, jeśli zostało mu nadane." },
           ],
         },
@@ -930,7 +930,7 @@ const pl: Dictionary = {
       blocks: [
         {
           type: "cards",
-          heading: "W aplikacji",
+          heading: "W aplikacji",
           columns: 3,
           items: [
             { title: "Łatwiejsze gesty", text: "Zamiast przesuwać, dziecko przytrzymuje palec albo naciska przycisk – w każdej grze z przesuwaniem: szczotkowaniu, wędce z piórkami, wymianie żwirku i rzucaniu piłki. Rodzic włącza to dla każdego dziecka w strefie rodzica." },
@@ -940,9 +940,9 @@ const pl: Dictionary = {
         },
         {
           type: "cards",
-          heading: "Z następną aktualizacją aplikacji",
+          heading: "Z następną aktualizacją aplikacji",
           items: [
-            { title: "Spacery na wózku", text: "W trybie dostosowanym pchnięcia wózka liczą się dokładnie tak jak kroki – jedno pchnięcie to jeden krok. Rodzic może też wpisać dzisiejsze minuty spaceru, więc dziecko nie musi robić nic dodatkowego. Rodzic włącza tryb dla każdego dziecka osobno, a wyłączenie usuwa oznaczenie z historii." },
+            { title: "Spacery na wózku", text: "W trybie dostosowanym pchnięcia wózka liczą się dokładnie tak jak kroki – jedno pchnięcie to jeden krok. Rodzic może też wpisać dzisiejsze minuty spaceru, więc dziecko nie musi robić nic dodatkowego. Rodzic włącza tryb dla każdego dziecka osobno, a wyłączenie usuwa oznaczenie z historii." },
           ],
         },
         { type: "callout", title: "To samo wyzwanie dla wszystkich", text: "Dostosowania zmieniają to, jak dziecko gra, nigdy to, co się liczy. Wyniki, terminy i Certyfikat odpowiedzialności działają dokładnie tak samo. Nigdy nie pytamy, dlaczego dziecko potrzebuje dostosowania.", tone: "mint" },
@@ -1012,12 +1012,12 @@ const pl: Dictionary = {
     },
     about: {
       meta: {
-        title: "O PetPrep – firma, założyciel i skąd bierzemy informacje o zwierzętach",
+        title: "O PetPrep – firma, założyciel i skąd bierzemy informacje o zwierzętach",
         description:
-          "Kto tworzy PetPrep: założyciel David Tacer, nasza misja oraz to, jak encyklopedia zwierząt pozyskuje i sprawdza informacje.",
+          "Kto tworzy PetPrep: założyciel David Tacer, nasza misja oraz to, jak encyklopedia zwierząt pozyskuje i sprawdza informacje.",
       },
-      navLabel: "O nas",
-      eyebrow: "O nas",
+      navLabel: "O nas",
+      eyebrow: "O nas",
       title: "Kto tworzy PetPrep.",
       lead: "PetPrep powstaje w Mariborze w Słowenii, w małej firmie programistycznej. Na tej stronie piszemy, kim jesteśmy, dlaczego tworzymy PetPrep i jak decydujemy, co aplikacja i encyklopedia zwierząt mówią o zwierzętach.",
       blocks: [
@@ -1094,10 +1094,10 @@ const pl: Dictionary = {
           columns: 3,
           items: [
             { title: "Imię", text: "Curio po angielsku, Radovednež po słoweńsku." },
-            { title: "Z czego jest", text: "Miękki grafit, miętowa obroża i malinowy identyfikator – kolory PetPrep." },
+            { title: "Z czego jest", text: "Miękki grafit, miętowa obroża i malinowy identyfikator – kolory PetPrep." },
             { title: "Mówi", text: "Nigdy. Tylko oczami." },
             { title: "Uwielbia", text: "Spacery, pełną miskę i dzieci, które wracają także 15. dnia." },
-            { title: "Mieszka", text: "W naszych krótkich filmach na [TikToku](https://www.tiktok.com/@petprep.si) i [Instagramie](https://www.instagram.com/petprep.si/), @petprep.si." },
+            { title: "Mieszka", text: "W naszych krótkich filmach na [TikToku](https://www.tiktok.com/@petprep.si) i [Instagramie](https://www.instagram.com/petprep.si/), @petprep.si." },
             { title: "Zadanie", text: "Przypominać rodzinom, z przymrużeniem oka, że zwierzę potrzebuje opieki każdego dnia." },
           ],
         },
@@ -1105,7 +1105,7 @@ const pl: Dictionary = {
           type: "pair",
           id: "not-the-pet",
           heading: "Curio to nie zwierzę z aplikacji",
-          intro: "W naszych filmach Curio gra zwierzę, które potrzebuje opieki, bo każde zwierzę jej potrzebuje. W PetPrep dzieci – i dorośli, którzy sprawdzają rasę – opiekują się czymś znacznie bliższym rzeczywistości.",
+          intro: "W naszych filmach Curio gra zwierzę, które potrzebuje opieki, bo każde zwierzę jej potrzebuje. W PetPrep dzieci – i dorośli, którzy sprawdzają rasę – opiekują się czymś znacznie bliższym rzeczywistości.",
           items: [
             {
               src: "/curio/curio-profile-light.webp",
@@ -1117,7 +1117,7 @@ const pl: Dictionary = {
             {
               src: "/animals/dogs/labrador-retriever.webp",
               alt: "Realistyczny portret labradora retrievera wygenerowany przez AI – tak wyglądają zwierzęta w aplikacji PetPrep.",
-              label: "W aplikacji · obraz AI",
+              label: "W aplikacji · obraz AI",
               tone: "mint",
               title: "Twoje zwierzę w PetPrep",
               text: "Realistyczna symulacja AI prawdziwej rasy – jak ten [labrador retriever](+breed:labrador_retriever) – z codziennymi potrzebami prawdziwego zwierzęcia: posiłki, woda, spacery liczone w prawdziwych krokach, sprzątanie i trening. Zobacz, [jak to działa](+page:howItWorks).",
@@ -1132,7 +1132,7 @@ const pl: Dictionary = {
           items: [
             { src: "/curio/curio-profile-mint.webp", alt: "Curio macha na miętowym tle.", caption: "Cześć! Klasyczne machanie.", bg: "mint" },
             { src: "/curio/curio-shelf.webp", alt: "Curio stoi na białej półce i macha.", caption: "Na półce, czeka na kogoś." },
-            { src: "/curio/curio-character-sheet.webp", alt: "Curio z przodu, z boku i z tyłu, z czterema wyrazami oczu.", caption: "Z każdej strony – i jak jego oczy pokazują uczucia." },
+            { src: "/curio/curio-character-sheet.webp", alt: "Curio z przodu, z boku i z tyłu, z czterema wyrazami oczu.", caption: "Z każdej strony – i jak jego oczy pokazują uczucia." },
             { src: "/curio/curio-waving.webp", alt: "Curio na przezroczystym tle.", caption: "Wycięte – gotowe do twojego posta (zob. materiały dla mediów).", bg: "graphite" },
           ],
         },
@@ -1227,7 +1227,7 @@ const pl: Dictionary = {
           id: "how-it-started",
           heading: "Jak to się zaczęło",
           paragraphs: [
-            "W październiku 2026 r. dzieci naszego założyciela miały w odwiedzinach koleżankę. Zastanawiały się, czy wyjść na dwór, a ona powiedziała, pół po słoweńsku, pół po angielsku: „Lahko bi šli walk your pet” – „Moglibyśmy pójść walk your pet”.",
+            "W październiku 2026 r. dzieci naszego założyciela miały w odwiedzinach koleżankę. Zastanawiały się, czy wyjść na dwór, a ona powiedziała, pół po słoweńsku, pół po angielsku: „Lahko bi šli walk your pet” – „Moglibyśmy pójść walk your pet”.",
             "Nikt jej o to nie prosił. Znała PetPrep, gdzie spacer z psem liczy się tylko wtedy, gdy naprawdę wyjdziesz na dwór, i „walk your pet” po prostu stało się powodem, żeby wyjść. Tak nam się to spodobało, że je zostawiliśmy – po angielsku, w każdym języku.",
             "Prawdziwa rozmowa. Prawdziwe dzieci.",
           ],
@@ -1236,7 +1236,7 @@ const pl: Dictionary = {
           type: "screens",
           id: "in-the-app",
           heading: "Co to znaczy w PetPrep",
-          intro: "W PetPrep codzienny spacer z psem to prawdziwe kroki twojego dziecka, odczytywane z Apple Health lub Health Connect, jeśli na to pozwolisz. Siedzenie na kanapie się nie liczy, więc „walk your pet” zawsze oznacza wyjście na dwór. Bez GPS i bez lokalizacji – tylko kroki.",
+          intro: "W PetPrep codzienny spacer z psem to prawdziwe kroki twojego dziecka, odczytywane z Apple Health lub Health Connect, jeśli na to pozwolisz. Siedzenie na kanapie się nie liczy, więc „walk your pet” zawsze oznacza wyjście na dwór. Bez GPS i bez lokalizacji – tylko kroki.",
           items: [{ screen: "hud", caption: "" }],
         },
         {
