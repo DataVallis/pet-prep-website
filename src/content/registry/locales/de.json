@@ -778,6 +778,49 @@
         "Berger de Beauce",
         "Bas Rouge"
       ]
+    },
+    "borzoi": {
+      "name": "Barsoi",
+      "slug": "barsoi",
+      "synonyms": [
+        "Borzoi",
+        "Russischer Windhund",
+        "Russischer Jagdwindhund"
+      ]
+    },
+    "bouvier_des_flandres": {
+      "name": "Bouvier des Flandres",
+      "slug": "bouvier-des-flandres",
+      "synonyms": [
+        "Flandrischer Treibhund",
+        "Vlaamse Koehond"
+      ]
+    },
+    "japanese_chin": {
+      "name": "Japan Chin",
+      "slug": "japan-chin",
+      "synonyms": [
+        "Chin",
+        "Japan-Chin",
+        "Japanese Chin",
+        "Japanischer Spaniel"
+      ]
+    },
+    "miniature_bull_terrier": {
+      "name": "Miniature Bullterrier",
+      "slug": "miniature-bullterrier",
+      "synonyms": [
+        "Miniature Bull Terrier",
+        "Zwergbullterrier"
+      ]
+    },
+    "norwich_terrier": {
+      "name": "Norwich Terrier",
+      "slug": "norwich-terrier"
+    },
+    "schipperke": {
+      "name": "Schipperke",
+      "slug": "schipperke"
     }
   },
   "suitability_labels": {
