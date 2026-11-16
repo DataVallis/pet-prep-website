@@ -1,7 +1,7 @@
 import type { QuizCopy } from "./types.ts";
 
 export const fi: QuizCopy = {
-  nav: "Ennen koiran hankintaa",
+  nav: "Ennen koiraa",
   hubMetaTitle: "Ennen koiran hankintaa: rotutesti, paljonko työtä koira teettää ja muuta | PetPrep",
   hubMetaDesc: "Mietitkö koiraa? Löydä perheellesi sopivat rodut, katso paljonko työtä kukin oikeasti teettää ja kokeile sitä PetPrepillä ennen päätöstä.",
   hubEyebrow: "Ennen koiran hankintaa",

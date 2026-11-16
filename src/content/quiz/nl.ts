@@ -1,7 +1,7 @@
 import type { QuizCopy } from "./types.ts";
 
 export const nl: QuizCopy = {
-  nav: "Voordat je een hond neemt",
+  nav: "Vóór de hond",
   hubMetaTitle: "Voordat je een hond neemt: rassentest, hoeveel werk het is en meer | PetPrep",
   hubMetaDesc: "Overweeg je een hond? Ontdek welke rassen bij jullie gezin passen, zie hoeveel werk elk ras echt is en probeer het met PetPrep voordat je kiest.",
   hubEyebrow: "Voordat je een hond neemt",
