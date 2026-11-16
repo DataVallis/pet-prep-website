@@ -1,8 +1,9 @@
 /**
- * Partner inquiry form logic (M6-S03). Pure functions, no imports: unit-tested with node:test.
+ * Partner inquiry form logic (M6-S03). Pure functions (only the site language list is imported): unit-tested with node:test.
  * The form posts JSON to <API base>/api/partner-inquiries (PetPrep API; contract in
  * docs of pet-prep). Nothing here logs form data.
  */
+import { isLocale, type Locale } from "../i18n/config.ts";
 export const partnerTypes = ["series", "sponsored_content", "insurer", "directory", "shelter", "other"] as const;
 export type PartnerInquiryType = (typeof partnerTypes)[number];
 
@@ -23,7 +24,7 @@ export type PartnerPayload = {
   type: PartnerInquiryType;
   message: string;
   website: string;
-  locale: "sl" | "en";
+  locale: Locale;
 };
 
 export type FieldError = "company" | "contact_name" | "email" | "type" | "message" | "consent";
@@ -59,12 +60,11 @@ export function validate(f: PartnerForm): FieldError[] {
 }
 
 /**
- * The PetPrep API (StorePartnerInquiryRequest) accepts only "sl" and "en" as `locale` and answers 422
- * for anything else, so the 13 other site languages are sent as "en" (the reply goes out in English or
- * Slovenian anyway). TODO(pet-prep): allow all 15 site languages in the API, then send the real locale.
+ * The site language of the form, sent as is: the PetPrep API (StorePartnerInquiryRequest) accepts all 15 site
+ * languages since pet-prep #1278 (2026-11-17). An unknown value falls back to "en".
  */
-export function apiLocale(locale: string): "sl" | "en" {
-  return locale === "sl" ? "sl" : "en";
+export function apiLocale(locale: string): Locale {
+  return isLocale(locale) ? locale : "en";
 }
 
 export function buildPayload(f: PartnerForm, locale: string): PartnerPayload {
