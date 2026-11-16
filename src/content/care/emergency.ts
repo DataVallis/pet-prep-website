@@ -340,10 +340,10 @@ export const emergencyCopy: Record<Locale, {
     open: "Oficjalna strona",
     countries: { SI: "Słowenia", HR: "Chorwacja", GB: "Wielka Brytania", US: "Stany Zjednoczone", AU: "Australia" },
     vetsTitle: "Weterynarze i przychodnie z dyżurem w poszczególnych krajach",
-    vetsIntro: "W domu czy na wakacjach: wybierz kraj, filtruj według regionu lub miejscowości albo pokaż tylko przychodnie czynne całą dobę. Każdy wpis prowadzi do strony, z której go wzięliśmy – zadzwoń przed wizytą, godziny otwarcia mogą się zmienić.",
+    vetsIntro: "W domu czy na wakacjach: wybierz kraj, filtruj według regionu lub miejscowości albo pokaż tylko przychodnie czynne całą dobę. Każdy wpis prowadzi do strony, z której go wzięliśmy – zadzwoń przed wizytą, godziny otwarcia mogą się zmienić.",
     vetsStats: ["Weterynarze","Dyżury","Linie ds. zatruć","Kraje"],
     vets: {
-      chooseCountry: "Wybierz kraj", choosePrompt: "Wybierz kraj powyżej, aby zobaczyć weterynarzy, dyżury i telefony w sprawie zatruć.", typeToSearch: "Wpisz, aby wyszukać…", noMatch: "Brak wyników",
+      chooseCountry: "Wybierz kraj", choosePrompt: "Wybierz kraj powyżej, aby zobaczyć weterynarzy, dyżury i telefony w sprawie zatruć.", typeToSearch: "Wpisz, aby wyszukać…", noMatch: "Brak wyników",
       country: "Kraj", all: "Wszystkie kraje", region: "Region", allRegions: "Wszystkie regiony", search: "Miejscowość lub nazwa",
       searchPlaceholder: "np. Split, Málaga, Maribor", only24h: "Tylko całodobowe", results: "Wyniki: {n}",
       none: "Nic nie znaleziono – spróbuj innej miejscowości lub regionu.", h24: "24 h", dutyRota: "Grafik dyżurów", poisonLine: "Telefon toksykologiczny",

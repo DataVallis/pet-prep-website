@@ -1,8 +1,8 @@
 import type { RegistryCopy } from "./types";
 
 /**
- * Polish plural: 1 → one ("1 rasa"); 2–4, except 12–14, → few ("3 rasy", "22 rasy"); everything else → many
- * ("5 ras", "12 ras", "25 ras"). Non-integers take `frac` (genitive singular: "2,5 roku", "1,5 godziny").
+ * Polish plural: 1 → one ("1 rasa"); 2–4, except 12–14, → few ("3 rasy", "22 rasy"); everything else → many
+ * ("5 ras", "12 ras", "25 ras"). Non-integers take `frac` (genitive singular: "2,5 roku", "1,5 godziny").
  */
 function form(n: number, one: string, few: string, many: string, frac: string = few): string {
   if (!Number.isInteger(n)) return frac;
@@ -13,12 +13,12 @@ function form(n: number, one: string, few: string, many: string, frac: string = 
   if (t >= 2 && t <= 4 && !(h >= 12 && h <= 14)) return few;
   return many;
 }
-/** First letter lower case for values that continue a phrase ("Psy" → "psy", "Do 1 godziny" → "do 1 godziny"). */
+/** First letter lower case for values that continue a phrase ("Psy" → "psy", "Do 1 godziny" → "do 1 godziny"). */
 const lc = (t: string) => t.charAt(0).toLocaleLowerCase("pl") + t.slice(1);
 /**
  * Breed names are common nouns in Polish: lower case inside a sentence ("owczarek niemiecki", "border collie").
  * Names that start with a proper name keep the capital ("Jack Russell terrier"); later proper-name parts stay as they are
- * ("gryfon Korthalsa", "retriever z Nowej Szkocji").
+ * ("gryfon Korthalsa", "retriever z Nowej Szkocji").
  */
 const PROPER_START = /^(Jack Russell)\b/;
 const mid = (name: string) => (PROPER_START.test(name) ? name : lc(name));
@@ -70,19 +70,19 @@ const pl: RegistryCopy = {
     breedCount: (n) => `${n} ${form(n, "rasa", "rasy", "ras")} w encyklopedii`,
     open: "Zobacz rasy",
     openA11y: (many) => `Zobacz rasy ${gen(many)}`,
-    freePlan: (name, activity) => `Plan bezpłatny: ${lc(name)} (dorosłe zwierzę: ${activity}); 12-tygodniowe wyzwanie można dodać później. Nie ma osobnej strony w encyklopedii.`,
+    freePlan: (name, activity) => `Plan bezpłatny: ${lc(name)} (dorosłe zwierzę: ${activity}); 12-tygodniowe wyzwanie można dodać później. Nie ma osobnej strony w encyklopedii.`,
     otherSpecies: "Kolejne zwierzęta są w planach.",
     methodTitle: "Jak powstaje ta encyklopedia",
     method: [
       "Każdy fakt pochodzi z wymienionego z nazwy źródła – związków kynologicznych, organizacji felinologicznych, weterynaryjnych organizacji charytatywnych i stowarzyszeń oraz recenzowanych badań – i ma do niego link. Wzorce ras streszczamy własnymi słowami.",
       "Wartości, których nie potwierdza żadne źródło, nigdy nie są pokazywane jako fakty. Gdy PetPrep musi wybrać liczbę na potrzeby gry, pojawia się ona tylko w części „Jak symuluje to PetPrep” i jest oznaczona jako zasada gry.",
-      "Te same dane napędzają aplikację: oznaczenia, liczba posiłków, cele kroków i sesje zabawy na tych stronach to te same wartości, według których działa pupil w aplikacji.",
+      "Te same dane napędzają aplikację: oznaczenia, liczba posiłków, cele kroków i sesje zabawy na tych stronach to te same wartości, według których działa pupil w aplikacji.",
       "Ta encyklopedia nie jest poradą weterynaryjną. Informacje o zdrowiu mają charakter wyłącznie orientacyjny i nie zostały sprawdzone przez weterynarza.",
     ],
   },
   speciesStatus: { available: "W aplikacji", coming_soon: "Wkrótce w aplikacji", info_only: "Tylko informacyjnie" },
   availability: {
-    in_app: { label: "W aplikacji", text: "Dostępna w 12-tygodniowym wyzwaniu PetPrep." },
+    in_app: { label: "W aplikacji", text: "Dostępna w 12-tygodniowym wyzwaniu PetPrep." },
     coming_soon: { label: "Wkrótce w aplikacji", text: "Rasa jest gotowa i przetestowana; pojawi się w jednej z najbliższych wersji aplikacji." },
     info_only: { label: "Tylko informacyjnie", text: "Rasa jest w encyklopedii w celach informacyjnych; w aplikacji nie możesz jej jeszcze wybrać." },
   },
@@ -260,7 +260,7 @@ const pl: RegistryCopy = {
       `Cel kroków = minuty ruchu dziennie × ${p.per_minute} ${form(p.per_minute, "krok", "kroki", "kroków")}: dla dorosłego psa to ${p.minutes % 60 === 0 ? `${f.num(p.minutes / 60)} ${hours(p.minutes / 60)}` : `${p.minutes} ${form(p.minutes, "minuta", "minuty", "minut")}`}, czyli ${f.num(p.steps)} ${form(p.steps, "krok", "kroki", "kroków")} dziennie.`,
     learning: (p, f) =>
       p.multiplier < 1
-        ? `Uczy się komend wolniej niż mieszaniec z planu bezpłatnego (${f.num(p.multiplier)} × jego tempa).`
+        ? `Uczy się komend wolniej niż mieszaniec z planu bezpłatnego (${f.num(p.multiplier)} × jego tempa).`
         : p.multiplier === 1
           ? "Uczy się komend tak samo szybko jak mieszaniec z planu bezpłatnego."
           : `Uczy się komend ${f.num(p.multiplier)} razy szybciej niż mieszaniec z planu bezpłatnego.`,
@@ -274,7 +274,7 @@ const pl: RegistryCopy = {
     scratching_after_missed_play: () => "Po dniu bez wystarczającej ilości zabawy kot raz coś podrapie; dziecko przenosi go na drapak.",
     grooming_rule: (p) => (p.per_week === 1 ? "Czesanie raz w tygodniu." : p.per_week === 2 ? "Czesanie dwa razy w tygodniu." : `Czesanie ${p.per_week} razy w tygodniu.`),
     no_walk_in_heat: (p) =>
-      `Latem (czerwiec–sierpień; na półkuli południowej grudzień–luty) ekran dziecka i ekran spaceru w godzinach ${p.from}–${p.to} (czas lokalny rodziny) łagodnie przypominają, że w upale nie chodzimy na spacery. Bez danych pogodowych i bez kar – kroki nadal się liczą.`,
+      `Latem (czerwiec–sierpień; na półkuli południowej grudzień–luty) ekran dziecka i ekran spaceru w godzinach ${p.from}–${p.to} (czas lokalny rodziny) łagodnie przypominają, że w upale nie chodzimy na spacery. Bez danych pogodowych i bez kar – kroki nadal się liczą.`,
     care_task: (p) => {
       const q = p as unknown as { task: string; actor: string; times: number; period_days: number };
       const task: Record<string, string> = {
@@ -389,15 +389,15 @@ const pl: RegistryCopy = {
       dna_pra_b: "Test DNA w kierunku postępującego zaniku siatkówki u kotów bengalskich (PRA-b)",
       dna_jlpp: "Test DNA w kierunku młodzieńczego porażenia krtani i polineuropatii (JLPP)",
       dna_lemp2: "Test DNA w kierunku leukoencefalomielopatii (LEMP-2)",
-      dna_lemp: "Test DNA w kierunku leukoencefalomielopatii (LEMP)",
-      dna_lpn1: "Test DNA w kierunku polineuropatii leonbergerów (LPN1)",
-      dna_lpn2: "Test DNA w kierunku polineuropatii leonbergerów (LPN2)",
-      dna_lppn3: "Test DNA w kierunku porażenia krtani i polineuropatii (LPPN3)",
+      dna_lemp: "Test DNA w kierunku leukoencefalomielopatii (LEMP)",
+      dna_lpn1: "Test DNA w kierunku polineuropatii leonbergerów (LPN1)",
+      dna_lpn2: "Test DNA w kierunku polineuropatii leonbergerów (LPN2)",
+      dna_lppn3: "Test DNA w kierunku porażenia krtani i polineuropatii (LPPN3)",
       dna_huu: "Test DNA w kierunku hiperurikozurii (HUU)",
       dna_dcm: "Test DNA w kierunku kardiomiopatii rozstrzeniowej (DCM), choroby mięśnia sercowego",
       dna_pra5: "Test DNA w kierunku postępującego zaniku siatkówki (PRA5)",
       dna_dings2: "Test DNA w kierunku „choroby tańczących dobermanów” (DINGS2), zaburzenia nerwów i mięśni",
-      dna_slem: "Test DNA w kierunku gąbczastej leukoencefalomielopatii (SLEM, „zespół drżącego szczeniaka”), choroby mózgu i rdzenia kręgowego u młodych szczeniąt",
+      dna_slem: "Test DNA w kierunku gąbczastej leukoencefalomielopatii (SLEM, „zespół drżącego szczeniaka”), choroby mózgu i rdzenia kręgowego u młodych szczeniąt",
       dna_ams: "Test DNA w kierunku zespołu okaleczenia akralnego (AMS), zaburzenia nerwów, przez które pies nie czuje bólu w łapach",
       dna_dams: "Test DNA w kierunku zespołu niedokrwistości dyserytropoetycznej i miopatii (DAMS), zaburzenia krwi i mięśni",
       dna_fuco: "Test DNA w kierunku fukozydozy, dziedzicznej choroby układu nerwowego",
@@ -411,17 +411,17 @@ const pl: RegistryCopy = {
       dna_vwd3: "Test DNA w kierunku choroby von Willebranda typu 3 (vWD3), dziedzicznego zaburzenia krzepnięcia krwi",
       dna_pra_rcd3: "Test DNA w kierunku postępującego zaniku siatkówki (PRA-rcd3)",
       dna_clad: "Test DNA w kierunku niedoboru adhezji leukocytów (CLAD), dziedzicznego zaburzenia odporności",
-      dna_ncl8: "Test DNA w kierunku neuronalnej ceroidolipofuscynozy (NCL8), dziedzicznej choroby układu nerwowego",
+      dna_ncl8: "Test DNA w kierunku neuronalnej ceroidolipofuscynozy (NCL8), dziedzicznej choroby układu nerwowego",
       dna_pra_rcd1: "Test DNA w kierunku postępującego zaniku siatkówki (rcd1)",
       dna_pra4: "Test DNA w kierunku postępującego zaniku siatkówki (PRA4)",
       dna_vwd2: "Test DNA w kierunku choroby von Willebranda typu 2 (vWD2), dziedzicznego zaburzenia krzepnięcia krwi",
       dna_l2hga: "Test DNA w kierunku kwasicy L-2-hydroksyglutarowej (L-2-HGA), dziedzicznej choroby metabolicznej układu nerwowego",
       dna_pll: "Test DNA w kierunku pierwotnego zwichnięcia soczewki (PLL), dziedzicznej choroby oczu, w której soczewka przesuwa się ze swojego miejsca",
-      dna_mps3b: "Test DNA w kierunku mukopolisacharydozy typu IIIB (MPS IIIB), dziedzicznej choroby metabolicznej układu nerwowego",
-      dna_tbox: "Test DNA w kierunku genu T-box, odpowiadającego za naturalnie krótki ogon",
+      dna_mps3b: "Test DNA w kierunku mukopolisacharydozy typu IIIB (MPS IIIB), dziedzicznej choroby metabolicznej układu nerwowego",
+      dna_tbox: "Test DNA w kierunku genu T-box, odpowiadającego za naturalnie krótki ogon",
       dna_loa: "Test DNA w kierunku ataksji o późnym początku (LOA), dziedzicznej choroby zaburzającej równowagę i koordynację ruchów",
       dna_sca: "Test DNA w kierunku ataksji rdzeniowo-móżdżkowej (SCA), dziedzicznej choroby układu nerwowego",
-      dna_chg: "Test DNA w kierunku wrodzonej niedoczynności tarczycy z wolem (CHG), dziedzicznej choroby tarczycy obecnej od urodzenia",
+      dna_chg: "Test DNA w kierunku wrodzonej niedoczynności tarczycy z wolem (CHG), dziedzicznej choroby tarczycy obecnej od urodzenia",
     },
   },
   health: {
@@ -503,7 +503,7 @@ const pl: RegistryCopy = {
     open_fontanelle: "W rasie może występować otwarte ciemiączko, czyli miękkie miejsce na czaszce, które nie zamyka się całkowicie.",
     collapsing_trachea: "W rasie może występować zapadanie się tchawicy, czyli osłabienie tchawicy, które może powodować kaszel i trudności w oddychaniu.",
     gm1_gangliosidosis: "W rasie może występować gangliozydoza GM1, dziedziczna choroba układu nerwowego; test DNA rodziców pozwala ją wykluczyć.",
-    gm2_gangliosidosis: "W rasie stwierdzono gangliozydozę GM2, śmiertelną dziedziczną chorobę układu nerwowego.",
+    gm2_gangliosidosis: "W rasie stwierdzono gangliozydozę GM2, śmiertelną dziedziczną chorobę układu nerwowego.",
     addisons_disease: "W rasie może występować choroba Addisona, czyli niedobór hormonów nadnerczy.",
     protein_losing_disease: "W rasie mogą występować choroby nerek lub jelit z utratą białka, które mogą powodować biegunkę i chudnięcie.",
     diabetes_mellitus: "W rasie może występować cukrzyca – organizm nie potrafi prawidłowo regulować poziomu cukru we krwi.",
@@ -514,7 +514,7 @@ const pl: RegistryCopy = {
     eyelids_turned: "W rasie mogą występować powieki podwinięte do środka (entropium) lub odwinięte na zewnątrz (ektropium); pytaj o rodziców z przebadanymi oczami.",
     glaucoma_poag: "W rasie może występować jaskra pierwotna otwartego kąta – płyn gromadzi się w oku i powoduje ból, a czasem ślepotę; istnieje test DNA dla rodziców.",
     skin_fold_dermatitis: "Luźna skóra tworzy fałdy, które mogą się podrażniać i ulegać zakażeniu; trzeba je codziennie sprawdzać i utrzymywać w czystości i suchości.",
-    skin_fold_care: "Fałdy skóry na pysku mogą się podrażniać i ulegać zakażeniu (zapalenie fałdów skórnych); trzeba je regularnie czyścić i osuszać.",
+    skin_fold_care: "Fałdy skóry na pysku mogą się podrażniać i ulegać zakażeniu (zapalenie fałdów skórnych); trzeba je regularnie czyścić i osuszać.",
     eyelid_problems: "W rasie mogą występować problemy z powiekami: powieki podwinięte do środka (entropium) lub odwinięte na zewnątrz (ektropium) oraz cherry eye, czyli wypadnięcie gruczołu trzeciej powieki.",
     skin_allergy_face_folds: "W rasie mogą występować alergie skórne (atopia), które powodują swędzenie, a fałdy skóry na pysku trzeba codziennie czyścić.",
     skin_ear_allergies: "W rasie mogą występować alergie środowiskowe, które mogą prowadzić do nawracających zakażeń skóry lub uszu; PetMD sugeruje cotygodniowe czyszczenie uszu psa z alergią.",
@@ -528,16 +528,16 @@ const pl: RegistryCopy = {
     ear_infections_prone: "Rasa ma skłonność do zapaleń uszu; uważnie dbaj o higienę uszu.",
     familial_nephropathy: "W rasie występuje dziedziczna choroba nerek (rodzinna nefropatia); dostępny jest test DNA rodziców.",
     hereditary_nephritis: "W rasie występuje dziedziczna choroba nerek (dziedziczne zapalenie nerek, nazywane też dziedziczną glomerulopatią samojedów).",
-    hereditary_nephritis_pkd: "W rasie występują dziedziczne choroby nerek (dziedziczne zapalenie nerek i wielotorbielowatość nerek).",
-    mucopolysaccharidosis_mps3b: "W rasie występuje mukopolisacharydoza typu IIIB, dziedziczna choroba metaboliczna atakująca układ nerwowy; dostępny jest test DNA rodziców.",
+    hereditary_nephritis_pkd: "W rasie występują dziedziczne choroby nerek (dziedziczne zapalenie nerek i wielotorbielowatość nerek).",
+    mucopolysaccharidosis_mps3b: "W rasie występuje mukopolisacharydoza typu IIIB, dziedziczna choroba metaboliczna atakująca układ nerwowy; dostępny jest test DNA rodziców.",
     panosteitis: "W rasie może występować panosteitis, bolesne zapalenie kości długich, które dotyka zwykle młode, rosnące psy.",
     splenic_torsion: "Skręt śledziony, który wymaga pilnej pomocy weterynarza, występuje w tej rasie częściej niż u innych dużych ras.",
     urinary_incontinence: "W rasie może występować nietrzymanie moczu, czyli niekontrolowany wyciek moczu.",
     osteochondritis: "W rasie może występować osteochondroza rozwarstwiająca (OCD), zaburzenie chrząstki stawowej u rosnących psów.",
     scottie_cramp: "W rasie występuje „skurcz scottiego” – krótkie epizody skurczów mięśni, zwykle wywołane podekscytowaniem; nie jest bolesny.",
-    slem_shaking_puppy: "U rasy może wystąpić gąbczasta leukoencefalomielopatia (SLEM), zwana też zespołem drżącego szczeniaka; test DNA pozwala hodowcom jej uniknąć.",
-    cecs_cramping: "U rasy występuje psi zespół skurczów epileptoidalnych (CECS) – napady drżenia i skurczów mięśni.",
-    gallbladder_mucocele: "U rasy może wystąpić mukocele pęcherzyka żółciowego – pęcherzyk wypełnia się gęstym śluzem i nie opróżnia się prawidłowo; czasem potrzebna jest operacja.",
+    slem_shaking_puppy: "U rasy może wystąpić gąbczasta leukoencefalomielopatia (SLEM), zwana też zespołem drżącego szczeniaka; test DNA pozwala hodowcom jej uniknąć.",
+    cecs_cramping: "U rasy występuje psi zespół skurczów epileptoidalnych (CECS) – napady drżenia i skurczów mięśni.",
+    gallbladder_mucocele: "U rasy może wystąpić mukocele pęcherzyka żółciowego – pęcherzyk wypełnia się gęstym śluzem i nie opróżnia się prawidłowo; czasem potrzebna jest operacja.",
     periodontal_disease: "Choroba przyzębia, czyli zakażenie i zapalenie dziąseł i tkanek utrzymujących zęby, jest w tej rasie znanym problemem.",
     extra_eyelashes: "W rasie może występować dystichiaza – na wewnętrznej powierzchni lub brzegu powieki rosną małe dodatkowe rzęsy, które mogą ocierać oko; pytaj o rodziców przebadanych w programie badania oczu.",
     cm_sm_screening: "W rasie może występować malformacja typu Chiari z syringomielią, bolesna choroba z wypełnionymi płynem jamami w rdzeniu kręgowym przy mózgu; hodowcom zaleca się badanie rodziców (Wielka Brytania: program BVA/KC).",
@@ -675,8 +675,8 @@ const pl: RegistryCopy = {
     anatolian_shepherd_dog: {
       aka: "Kangal, Anatolian Shepherd Dog, Karabash",
       text: [
-        "Owczarek anatolijski to duży, mocno zbudowany pies stróżujący stada, pochodzący z Turcji; FCI opisuje tureckiego psa pasterskiego jako kangala (Kangal Shepherd Dog) – jednobarwnego, od płowego po wilczasto-sobolowego, z czarną maską, o wysokości 72–78 cm u psów i 65–73 cm u suk. Amerykański wzorzec rasy podaje 110–150 funtów (ok. 50–68 kg) dla psów i 80–120 funtów (ok. 36–54 kg) dla suk. Pies tej wielkości kończy rosnąć w wieku około 18–24 miesięcy (PetMD); The Royal Kennel Club podaje długość życia ponad 10 lat, a WebMD średnio od 11 do 13 lat.",
-        "The Royal Kennel Club zaleca ponad 2 godziny ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu, podaje, że linieje i pasuje do dużego domu z dużym ogrodem na wsi, oraz zalicza go do kategorii 1 programu Breed Watch. PetMD pisze, że owczarek anatolijski najlepiej sprawdzi się prawdopodobnie w domu bez małych dzieci, że szczenięta wcześnie zapoznane z innymi zwierzętami zwykle dobrze się z nimi dogadują, że kluczowa jest wczesna socjalizacja, że poza dwoma corocznymi linieniami sierść szczotkuje się raz w tygodniu i że należy unikać ruchu w okolicach posiłków.",
+        "Owczarek anatolijski to duży, mocno zbudowany pies stróżujący stada, pochodzący z Turcji; FCI opisuje tureckiego psa pasterskiego jako kangala (Kangal Shepherd Dog) – jednobarwnego, od płowego po wilczasto-sobolowego, z czarną maską, o wysokości 72–78 cm u psów i 65–73 cm u suk. Amerykański wzorzec rasy podaje 110–150 funtów (ok. 50–68 kg) dla psów i 80–120 funtów (ok. 36–54 kg) dla suk. Pies tej wielkości kończy rosnąć w wieku około 18–24 miesięcy (PetMD); The Royal Kennel Club podaje długość życia ponad 10 lat, a WebMD średnio od 11 do 13 lat.",
+        "The Royal Kennel Club zaleca ponad 2 godziny ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu, podaje, że linieje i pasuje do dużego domu z dużym ogrodem na wsi, oraz zalicza go do kategorii 1 programu Breed Watch. PetMD pisze, że owczarek anatolijski najlepiej sprawdzi się prawdopodobnie w domu bez małych dzieci, że szczenięta wcześnie zapoznane z innymi zwierzętami zwykle dobrze się z nimi dogadują, że kluczowa jest wczesna socjalizacja, że poza dwoma corocznymi linieniami sierść szczotkuje się raz w tygodniu i że należy unikać ruchu w okolicach posiłków.",
       ],
       sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
     },
@@ -707,7 +707,7 @@ const pl: RegistryCopy = {
     shar_pei: {
       aka: "chiński shar pei, Chinese Shar-Pei, Sharpei",
       text: [
-        "Shar pei (w USA „Chinese Shar-Pei”) to aktywny, zwarty, kwadratowo zbudowany pies średniej wielkości z Chin o krótkiej, szorstkiej, szczeciniastej sierści w jednolitym kolorze (każdym oprócz białego), ze zmarszczkami na głowie i w kłębie oraz szeroką kufą. Wzorzec Royal Kennel Club podaje wysokość 46–51 cm, a PDSA masę 20–27 kg; pies tej wielkości kończy rosnąć w wieku około 12–15 miesięcy (PetMD). Royal Kennel Club i PDSA podają długość życia ponad 10 lat, ale badanie VetCompass psów w Wielkiej Brytanii wykazało medianę 7,3 roku.",
+        "Shar pei (w USA „Chinese Shar-Pei”) to aktywny, zwarty, kwadratowo zbudowany pies średniej wielkości z Chin o krótkiej, szorstkiej, szczeciniastej sierści w jednolitym kolorze (każdym oprócz białego), ze zmarszczkami na głowie i w kłębie oraz szeroką kufą. Wzorzec Royal Kennel Club podaje wysokość 46–51 cm, a PDSA masę 20–27 kg; pies tej wielkości kończy rosnąć w wieku około 12–15 miesięcy (PetMD). Royal Kennel Club i PDSA podają długość życia ponad 10 lat, ale badanie VetCompass psów w Wielkiej Brytanii wykazało medianę 7,3 roku.",
         "Royal Kennel Club zaleca do godziny ruchu dziennie i szczotkowanie raz w tygodniu, a rasę zalicza do kategorii 2 programu Breed Watch z powodu problemów z powiekami i fałdami skóry. PDSA opisuje shar pei jako wierne, oddane psy rodzinne, które najlepiej pasują do doświadczonych opiekunów i starszych dzieci, ostrzega przed silnym instynktem łowieckim wobec mniejszych zwierząt i radzi utrzymywać fałdy skóry w czystości i suchości oraz robić przerwę między posiłkiem a ruchem.",
       ],
       sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
@@ -882,7 +882,7 @@ const pl: RegistryCopy = {
       aka: "bokser niemiecki, Boxer, Deutscher Boxer",
       text: [
         "Bokser to średniej wielkości niemiecki pies pracujący i do towarzystwa, o kwadratowej sylwetce, mocnym kośćcu i dobrze rozwiniętych mięśniach. Wzorce opisują krótką, lśniącą, gładką sierść w umaszczeniu płowym lub pręgowanym z czarną maską; białe znaczenia są dopuszczalne, ale nie powinny zajmować więcej niż jednej trzeciej sierści. Kufa powinna być szeroka i głęboka, nigdy krótka, z szerokimi nozdrzami. Dawniej ogon zwyczajowo kopiowano; wzorzec opisuje też niekopiowany ogon, a PetPrep zawsze pokazuje psa z naturalnymi uszami i ogonem.",
-        "Wzorzec nazywa go zrównoważonym, posłusznym, nieustraszonym i pewnym siebie. The Royal Kennel Club nazywa go bardzo lubianym psem rodzinnym i zaleca ponad dwie godziny ruchu dziennie oraz pielęgnację raz w tygodniu. PDSA opisuje bardzo energicznego, skorego do zabawy psa, który kocha towarzystwo ludzi, zostawiony sam może rozwinąć lęk separacyjny i ma bardzo silny instynkt łowiecki; ze względu na wielkość i żywiołowość PDSA nie poleca go do domów z młodszymi dziećmi ani osobom, które mają psa po raz pierwszy. Niektóre boksery o krótszym pysku mogą mieć poważne problemy z oddychaniem. The Royal Kennel Club podaje, że żyje ponad 10 lat.",
+        "Wzorzec nazywa go zrównoważonym, posłusznym, nieustraszonym i pewnym siebie. The Royal Kennel Club nazywa go bardzo lubianym psem rodzinnym i zaleca ponad dwie godziny ruchu dziennie oraz pielęgnację raz w tygodniu. PDSA opisuje bardzo energicznego, skorego do zabawy psa, który kocha towarzystwo ludzi, zostawiony sam może rozwinąć lęk separacyjny i ma bardzo silny instynkt łowiecki; ze względu na wielkość i żywiołowość PDSA nie poleca go do domów z młodszymi dziećmi ani osobom, które mają psa po raz pierwszy. Niektóre boksery o krótszym pysku mogą mieć poważne problemy z oddychaniem. The Royal Kennel Club podaje, że żyje ponad 10 lat.",
       ],
       sources: ["S215", "S217", "S219"],
     },
@@ -1113,7 +1113,7 @@ const pl: RegistryCopy = {
     wirehaired_pointing_griffon: {
       aka: "griffon Korthalsa, korthals, gryfon, Wirehaired pointing griffon",
       text: [
-        "Gryfon Korthalsa pochodzi z Francji; FCI zalicza go do wyżłów kontynentalnych i nazywa go przede wszystkim wszechstronnym wyżłem. Wzorzec FCI opisuje energicznego, rustykalnego psa, dłuższego niż wyższego, o szorstkiej, twardej sierści, która nigdy nie jest kędzierzawa ani wełnista, nosie zawsze brązowym i najlepiej stalowoszarej sierści z brązowymi (wątrobianymi) łatami; podaje wysokość około 55–60\u00a0cm dla psów i 50–55\u00a0cm dla suk i nazywa rasę łagodną, dumną i bardzo delikatną wobec dzieci. PetMD podaje masę ciała 35–70 funtów (około 16–32\u00a0kg).",
+        "Gryfon Korthalsa pochodzi z Francji; FCI zalicza go do wyżłów kontynentalnych i nazywa go przede wszystkim wszechstronnym wyżłem. Wzorzec FCI opisuje energicznego, rustykalnego psa, dłuższego niż wyższego, o szorstkiej, twardej sierści, która nigdy nie jest kędzierzawa ani wełnista, nosie zawsze brązowym i najlepiej stalowoszarej sierści z brązowymi (wątrobianymi) łatami; podaje wysokość około 55–60\u00a0cm dla psów i 50–55\u00a0cm dla suk i nazywa rasę łagodną, dumną i bardzo delikatną wobec dzieci. PetMD podaje masę ciała 35–70 funtów (około 16–32\u00a0kg).",
         "The Royal Kennel Club zaleca ponad dwie godziny ruchu dziennie, duży dom i duży ogród oraz pielęgnację częściej niż raz w tygodniu. PetMD zaleca szczotkowanie raz w tygodniu (niektóre psy wymagają też ręcznego trymowania), mówi, że gryfony są zwykle cierpliwe i łagodne wobec dzieci, jeśli zostały zsocjalizowane jako szczenięta, i zaznacza, że z powodu myśliwskiej przeszłości mogą mieć silny instynkt łowiecki, więc mniejsze zwierzęta, takie jak koty i króliki, mogą im się wydawać czymś do gonienia.",
       ],
       sources: ["S449", "S450", "S453"],
