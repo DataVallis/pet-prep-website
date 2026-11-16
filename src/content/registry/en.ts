@@ -791,6 +791,15 @@ const en: RegistryCopy = {
       sources: ["S871", "S872", "S873", "S874", "S875", "S876", "S10"],
     },
 
+    manchester_terrier: {
+      aka: "Manchester Terrier (Standard), Black and Tan Terrier, Manchester, manchesterski terier",
+      text: [
+        "The Manchester Terrier is a compact, elegant terrier from Great Britain (FCI Group 3, terriers; section large and medium-sized terriers) — the standard size, not the toy. The FCI standard asks for a dog that is compact, elegant and sound with substance, with a close, smooth, short and glossy coat in jet black and rich mahogany tan only, and gives an ideal height at the withers of 41 cm for males and 38 cm for females. The Canadian Kennel Club standard gives a weight of 5.5 to 10 kg (12 to 22 lb). A dog of this size is fully grown at about 9–12 months (PetMD), and PDSA gives a lifespan of over 12 years (WebMD: 15 to 17 years).",
+        "The FCI standard calls the breed keen, alert, gay and sporting, discerning and devoted. PDSA recommends up to an hour of exercise a day and says brushing once a week is generally enough. PetMD says Manchesters do well with children, especially when they meet kids as puppies, and recommends socialising the puppy from the day it comes home; it also notes a high prey drive from their history as ratters, so they may not suit homes with hamsters or gerbils. WebMD advises never leaving small children with dogs unsupervised, recommends brushing the teeth daily and says the breed is sensitive to the cold, so a coat or sweater may be needed.",
+      ],
+      sources: ["S888", "S889", "S890", "S891", "S892", "S10"],
+    },
+
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
       text: [
