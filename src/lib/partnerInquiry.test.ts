@@ -58,10 +58,10 @@ test("formatAsOf reads naturally in every site language (no English month, no ra
   }
 });
 
-test("apiLocale: the API accepts only sl and en, every other language is sent as en", () => {
-  assert.equal(apiLocale("sl"), "sl");
-  for (const l of locales.filter((x) => x !== "sl")) assert.equal(apiLocale(l), "en");
-  assert.equal(buildPayload(ok, "fi").locale, "en");
+test("apiLocale: every site language is sent as is (API accepts all 15 since pet-prep #1278), unknown → en", () => {
+  for (const l of locales) assert.equal(apiLocale(l), l);
+  assert.equal(apiLocale("xx"), "en");
+  assert.equal(buildPayload(ok, "fi").locale, "fi");
 });
 
 const strings = (v: unknown): string[] => (typeof v === "string" ? [v] : v && typeof v === "object" ? Object.values(v).flatMap(strings) : []);
