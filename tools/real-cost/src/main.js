@@ -112,7 +112,11 @@ const sun = add(new THREE.SphereGeometry(0.42, 24, 16), new THREE.MeshBasicMater
 const dog = new THREE.Group(); scene.add(dog);
 const dBody = new THREE.Group(); dog.add(dBody);
 const body = add(new THREE.CapsuleGeometry(0.3, 0.75, 8, 16), mat(C.dog), [0, 0.72, 0], dBody); body.rotation.x = Math.PI / 2;
-const head = new THREE.Group(); head.position.set(0, 1.02, 0.62); dBody.add(head);
+// Short neck between body and head, so the collar sits around it and is visible all the way round
+// (before: the ring was buried in the body and only two green patches showed on the sides).
+const NECK_TILT = 0.55; // forward lean of the neck (rad)
+const neck = add(new THREE.CylinderGeometry(0.15, 0.19, 0.34, 16), mat(C.dog), [0, 0.98, 0.5], dBody); neck.rotation.x = NECK_TILT;
+const head = new THREE.Group(); head.position.set(0, 1.16, 0.66); dBody.add(head);
 add(new THREE.SphereGeometry(0.29, 20, 16), mat(C.dog), [0, 0, 0], head);
 add(new THREE.BoxGeometry(0.26, 0.2, 0.3), mat(C.dog), [0, -0.07, 0.27], head);
 add(new THREE.SphereGeometry(0.06, 12, 8), mat(C.graphite), [0, -0.02, 0.43], head);
@@ -120,7 +124,7 @@ add(new THREE.SphereGeometry(0.06, 12, 8), mat(C.graphite), [0, -0.02, 0.43], he
   const ear = add(new THREE.SphereGeometry(0.15, 12, 10), mat(C.dogDark), [0.25 * s, -0.02, -0.02], head); ear.scale.set(0.45, 1.25, 0.9);
   add(new THREE.SphereGeometry(0.04, 10, 8), mat(C.graphite), [0.12 * s, 0.07, 0.25], head, false);
 });
-const collar = add(new THREE.TorusGeometry(0.27, 0.05, 8, 24), mat(C.mint), [0, 0.86, 0.42], dBody); collar.rotation.x = Math.PI / 2.6;
+const collar = add(new THREE.TorusGeometry(0.185, 0.045, 10, 28), mat(C.mint), [0, 1.0, 0.51], dBody); collar.rotation.x = NECK_TILT - Math.PI / 2;
 const legs = [[-0.18, 0.38], [0.18, 0.38], [-0.18, -0.38], [0.18, -0.38]].map(([x, z]) => {
   const g = new THREE.Group(); g.position.set(x, 0.55, z); dBody.add(g);
   add(new THREE.CapsuleGeometry(0.085, 0.36, 4, 10), mat(C.dog), [0, -0.24, 0], g); return g;
