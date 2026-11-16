@@ -1,4 +1,5 @@
 import type { Dictionary } from "./types";
+import { partnerPages } from "./partners";
 
 const pt: Dictionary = {
   meta: {
@@ -500,44 +501,7 @@ const pt: Dictionary = {
         },
       ],
     },
-    partners: {
-      meta: {
-        title: "Parceiros – trabalha com o PetPrep",
-        description:
-          "O PetPrep trabalha com lojas de animais, abrigos, veterinários, treinadores, seguradoras, fabricantes de coleiras e escolas para ajudar as famílias a ter animais de forma responsável.",
-      },
-      eyebrow: "Parceiros",
-      title: "Famílias mais bem preparadas para todos os que gostam de animais.",
-      lead:
-        "As famílias que terminam o PetPrep sabem o que um animal exige a sério. Estamos a construir uma rede de parceiros que vai ao encontro delas no momento certo – com identificação clara e sempre com o consentimento da família.",
-      planned: true,
-      blocks: [
-        {
-          type: "cards",
-          heading: "Com quem trabalhamos",
-          columns: 3,
-          items: [
-            { title: "Lojas de animais", text: "Chega às famílias no momento em que provam que estão prontas – por exemplo, com uma oferta de kit inicial junto ao certificado." },
-            { title: "Abrigos, associações de resgate e criadores", text: "Recomenda o PetPrep antes da adoção ou da compra, para haver menos decisões impulsivas e menos devoluções." },
-            { title: "Veterinários", text: "Quando o animal a sério chega a casa, o assistente de IA responde às primeiras perguntas e encaminha os donos para ti, com um resumo do caso partilhado apenas com consentimento." },
-            { title: "Treinadores e escolas de treino canino", text: "Recomendações e marcações quando uma família passa para um cão a sério." },
-            { title: "Seguradoras de animais", text: "Ofertas adequadas à raça quando um animal a sério é registado – claramente identificadas." },
-            { title: "Fabricantes de coleiras e IoT", text: "Integração dos dados de atividade para alertas mais inteligentes e explicados." },
-          ],
-        },
-        {
-          type: "list",
-          heading: "Porque é que os parceiros confiam em nós",
-          items: [
-            "As crianças entram sem e-mail e mantemos os seus dados no mínimo, em servidores na UE.",
-            "Só chega ao ecrã de uma criança conteúdo verificado; não há anúncios.",
-            "Todas as ofertas de parceiros estão identificadas e todas as comissões são comunicadas à família.",
-          ],
-        },
-        { type: "callout", title: "Vamos conversar.", text: "Os termos de parceria estão a ser preparados. Diz-nos quem és e o que tens em mente.", tone: "dark" },
-        { type: "contact" },
-      ],
-    },
+    partners: partnerPages.pt,
     investors: {
       meta: {
         title: "Investe no PetPrep – da preparação para um animal aos cuidados para toda a vida",
@@ -635,6 +599,7 @@ const pt: Dictionary = {
                 "Códigos: os códigos de acesso e de convite são guardados apenas como hashes e expiram.",
                 "Relatórios de erros da aplicação: se a aplicação bloquear ou falhar, pode enviar um breve relatório técnico para o nosso servidor na UE (tipo e texto do erro, localização no código, versão da aplicação e do sistema operativo, nome do ecrã, papel de pai/mãe ou criança). Não contém nome, endereço de e-mail, ID de utilizador nem endereço IP, não é partilhado com terceiros e é eliminado ao fim de 30 dias.",
                 "Lista de acesso antecipado (este site): o teu endereço de e-mail, o idioma da página e o momento em que te inscreveste.",
+                "Formulário de parceiros (este site): nome da empresa, nome da pessoa de contacto, endereço de e-mail e mensagem. Usamo-los apenas para responder ao teu pedido, guardamo-los durante 12 meses e depois eliminamo-los. O fundamento jurídico é o teu consentimento, dado ao assinalares a caixa antes de enviares.",
                 "As páginas «Quanto trabalho dá um cão?» (este site): se introduzires o teu e-mail e assinalares a caixa de consentimento, guardamos o teu endereço de e-mail, o momento do consentimento, a raça escolhida, se viste um cão ou um cachorro, o idioma da página e quantas vezes e quando introduziste o endereço pela última vez. Não guardamos o teu endereço IP nem o teu nome. Mantemos os dados no nosso servidor na UE até pedires a sua eliminação. O resumo para imprimir é criado no teu navegador e não é enviado para lado nenhum.",
                 "Resgate de um vale-oferta (este site): um dos pais inicia sessão com a Google, a Apple ou com e-mail e palavra-passe. Com e-mail e palavra-passe, o nosso servidor verifica-os com a conta de pais existente e nunca guarda a palavra-passe em texto simples; da Google ou da Apple recebemos apenas o identificador da conta e não guardamos quaisquer outros dados vindos delas. Um token de início de sessão de curta duração é mantido na memória do navegador durante no máximo 15 minutos. Durante o redirecionamento para a Google ou a Apple e o regresso, existem duas entradas (petprep.signin e petprep.webSession.handoff) apenas no armazenamento de sessão deste separador do navegador. São eliminadas assim que a página de regresso as lê e, caso contrário, ao fechar o separador; a passagem da sessão só é aceite nos 60 segundos seguintes. Depois de terminar a sessão ou fechar o separador, não fica nada guardado no navegador. No nosso servidor ficam apenas registos técnicos de curta duração: um registo do token de início de sessão (identificador da conta e horas, sem nome nem e-mail) que é eliminado automaticamente cerca de dois dias após expirar, e contadores de limitação (tentativas falhadas por conta em forma de hash durante 15 minutos; pedidos por endereço de rede durante no máximo uma hora).",
               ],
@@ -682,6 +647,7 @@ const pt: Dictionary = {
                 "Para operar e proteger o serviço com relatórios de erros da aplicação que nos ajudam a corrigir bloqueios e falhas (interesse legítimo).",
                 "Para cumprir obrigações legais, como a contabilidade das compras (obrigação legal).",
                 "Para te enviar e-mails sobre o lançamento do PetPrep, se te inscreveste na lista de acesso antecipado (consentimento – podes cancelar a subscrição em qualquer e-mail).",
+                "Para responder a um pedido enviado através do formulário de parceiros (consentimento; guardamos os dados durante 12 meses).",
                 "Para te enviar por e-mail novidades e dicas da PetPrep, se introduziste o teu e-mail e assinalaste a caixa de consentimento nas páginas «Quanto trabalho dá um cão?» (consentimento – podes cancelar a subscrição em cada mensagem e pedir a eliminação dos dados a qualquer momento).",
                 "Para perceber como os visitantes usam este site, com o Google Analytics, apenas se permitires os cookies analíticos (consentimento – podes alterá-lo a qualquer momento em Definições de cookies).",
               ],

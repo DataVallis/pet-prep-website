@@ -1,4 +1,5 @@
 import type { Dictionary } from "./types";
+import { partnerPages } from "./partners";
 
 const nl: Dictionary = {
   meta: {
@@ -500,44 +501,7 @@ const nl: Dictionary = {
         },
       ],
     },
-    partners: {
-      meta: {
-        title: "Partners – samenwerken met PetPrep",
-        description:
-          "PetPrep werkt samen met dierenwinkels, asielen, dierenartsen, trainers, verzekeraars, halsbandmakers en scholen om gezinnen te helpen op een verantwoorde manier een huisdier te nemen.",
-      },
-      eyebrow: "Partners",
-      title: "Beter voorbereide gezinnen voor iedereen die om dieren geeft.",
-      lead:
-        "Gezinnen die PetPrep afronden, weten wat een huisdier echt van je vraagt. We bouwen een partnernetwerk dat hen op het juiste moment bereikt – duidelijk gemarkeerd en altijd met toestemming van het gezin.",
-      planned: true,
-      blocks: [
-        {
-          type: "cards",
-          heading: "Met wie we samenwerken",
-          columns: 3,
-          items: [
-            { title: "Dierenwinkels", text: "Bereik gezinnen op het moment dat ze laten zien dat ze er klaar voor zijn – bijvoorbeeld met een aanbieding voor een startpakket bij het certificaat." },
-            { title: "Asielen, opvangorganisaties en fokkers", text: "Raad PetPrep aan vóór adoptie of aankoop: dat betekent minder impulsieve beslissingen en minder dieren die worden teruggebracht." },
-            { title: "Dierenartsen", text: "Zodra het echte huisdier thuis is, beantwoordt de AI-assistent de eerste vragen en verwijst eigenaren naar jou door, met een samenvatting van het geval, die alleen met toestemming wordt gedeeld." },
-            { title: "Trainers en hondenscholen", text: "Aanbevelingen en boekingen als een gezin een echte hond krijgt." },
-            { title: "Dierenverzekeraars", text: "Aanbiedingen afgestemd op het ras als er een echt huisdier wordt geregistreerd – duidelijk gemarkeerd." },
-            { title: "Makers van halsbanden en IoT", text: "Koppeling van activiteitsgegevens voor slimmere meldingen met uitleg." },
-          ],
-        },
-        {
-          type: "list",
-          heading: "Waarom partners ons vertrouwen",
-          items: [
-            "Kinderen loggen in zonder e-mailadres en we houden hun gegevens tot een minimum beperkt, op servers in de EU.",
-            "Alleen gecontroleerde inhoud komt op het scherm van een kind; er zijn geen advertenties.",
-            "Elk aanbod van een partner is gemarkeerd en elke commissie wordt aan het gezin gemeld.",
-          ],
-        },
-        { type: "callout", title: "Laten we praten.", text: "De voorwaarden voor partnerschappen worden voorbereid. Vertel ons wie je bent en wat je in gedachten hebt.", tone: "dark" },
-        { type: "contact" },
-      ],
-    },
+    partners: partnerPages.nl,
     investors: {
       meta: {
         title: "Investeer in PetPrep – van klaar voor een huisdier tot levenslange zorg",
@@ -635,6 +599,7 @@ const nl: Dictionary = {
                 "Codes: inlog- en uitnodigingscodes worden alleen als hash opgeslagen en verlopen.",
                 "Foutrapporten van de app: als de app vastloopt of crasht, kan de app een kort technisch rapport naar onze server in de EU sturen (soort fout en foutmelding, locatie in de code, app- en besturingssysteemversie, schermnaam, rol ouder/kind). Het bevat geen naam, e-mailadres, gebruikers-ID of IP-adres, wordt niet met derden gedeeld en wordt na 30 dagen verwijderd.",
                 "Lijst voor vroege toegang (deze website): je e-mailadres, de taal van de pagina en het moment waarop je je aanmeldde.",
+                "Partnerformulier (deze website): bedrijfsnaam, naam van de contactpersoon, e-mailadres en bericht. We gebruiken ze alleen om je aanvraag te beantwoorden, bewaren ze 12 maanden en verwijderen ze daarna. De rechtsgrond is je toestemming, die je geeft door het vakje aan te vinken voordat je verstuurt.",
                 "De pagina’s „Hoeveel werk is een hond?” (deze website): als je je e-mailadres invult en het toestemmingsvakje aanvinkt, bewaren we je e-mailadres, het moment van toestemming, het gekozen ras, of je naar een hond of een pup keek, de taal van de pagina en hoe vaak en wanneer je het adres voor het laatst invulde. Je IP-adres en naam bewaren we niet. We bewaren de gegevens op onze server in de EU totdat je om verwijdering vraagt. De afdrukbare samenvatting wordt in je browser gemaakt en nergens naartoe gestuurd.",
                 "Een cadeaubon inwisselen (deze website): de ouder logt in met Google, Apple of met e-mailadres en wachtwoord. Bij e-mailadres en wachtwoord controleert onze server die tegen het bestaande ouderaccount en slaat het wachtwoord nooit leesbaar op; van Google of Apple ontvangen we alleen de accountidentificatie en andere gegevens van hen bewaren we niet. Een kortlevend inlogtoken wordt maximaal 15 minuten in het geheugen van de browser bewaard. Tijdens de doorverwijzing naar Google of Apple en de terugkeer staan er twee items (petprep.signin en petprep.webSession.handoff) alleen in de sessieopslag van dit browsertabblad. Ze worden verwijderd zodra de terugkeerpagina ze leest, anders bij het sluiten van het tabblad; de overdracht wordt alleen binnen 60 seconden geaccepteerd. Na uitloggen of het sluiten van het tabblad blijft er niets bewaard in de browser. Op onze server blijven alleen kortlevende technische gegevens: een vermelding van het inlogtoken (account-ID en tijden, geen naam of e-mailadres) die ongeveer twee dagen na het verlopen automatisch wordt verwijderd, en tellers voor beperking (mislukte pogingen per account in gehashte vorm gedurende 15 minuten; verzoeken per netwerkadres hooguit een uur).",
               ],
@@ -682,6 +647,7 @@ const nl: Dictionary = {
                 "Om de dienst te laten werken en te beveiligen met foutrapporten van de app, waarmee we vastlopers en crashes kunnen oplossen (gerechtvaardigd belang).",
                 "Om aan wettelijke verplichtingen te voldoen, zoals de boekhouding van aankopen (wettelijke verplichting).",
                 "Om je te mailen over de lancering van PetPrep als je je hebt aangemeld voor vroege toegang (toestemming – je kunt je in elke e-mail afmelden).",
+                "Om een aanvraag te beantwoorden die via het partnerformulier is verstuurd (toestemming; we bewaren de gegevens 12 maanden).",
                 "Om je PetPrep-nieuws en tips per e-mail te sturen als je je e-mailadres hebt ingevuld en het toestemmingsvakje hebt aangevinkt op de pagina’s „Hoeveel werk is een hond?” (toestemming – je kunt je in elk bericht afmelden en altijd vragen om verwijdering van de gegevens).",
                 "Om te begrijpen hoe bezoekers deze website gebruiken, met Google Analytics, alleen als je analytische cookies toestaat (toestemming – je kunt dit op elk moment wijzigen onder Cookie-instellingen).",
               ],

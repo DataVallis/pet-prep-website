@@ -1,4 +1,5 @@
 import type { Dictionary } from "./types";
+import { partnerPages } from "./partners";
 
 const de: Dictionary = {
   meta: {
@@ -500,44 +501,7 @@ const de: Dictionary = {
         },
       ],
     },
-    partners: {
-      meta: {
-        title: "Partner – mit PetPrep zusammenarbeiten",
-        description:
-          "PetPrep arbeitet mit Zoofachhandel, Tierheimen, Tierärzten, Trainern, Versicherern, Halsbandherstellern und Schulen zusammen, damit Familien Haustiere verantwortungsvoll anschaffen.",
-      },
-      eyebrow: "Partner",
-      title: "Besser vorbereitete Familien – für alle, denen Tiere am Herzen liegen.",
-      lead:
-        "Familien, die PetPrep abschließen, wissen, was ein Haustier wirklich bedeutet. Wir bauen ein Partnernetzwerk auf, das sie im richtigen Moment erreicht – klar gekennzeichnet und immer mit Einwilligung der Familie.",
-      planned: true,
-      blocks: [
-        {
-          type: "cards",
-          heading: "Mit wem wir zusammenarbeiten",
-          columns: 3,
-          items: [
-            { title: "Zoofachhandel", text: "Erreichen Sie Familien in dem Moment, in dem sie beweisen, dass sie bereit sind – zum Beispiel mit einem Starterset-Angebot beim Zertifikat." },
-            { title: "Tierheime, Tierschutzvereine und Züchter", text: "Empfehlen Sie PetPrep vor der Adoption oder dem Kauf – für weniger impulsive Entscheidungen und weniger Rückgaben." },
-            { title: "Tierärzte", text: "Sobald das echte Haustier einzieht, beantwortet der KI-Assistent erste Fragen und verweist Halter an Sie, mit einer Fallzusammenfassung, die nur mit Einwilligung geteilt wird." },
-            { title: "Trainer und Hundeschulen", text: "Empfehlungen und Buchungen, wenn eine Familie zu einem echten Hund wechselt." },
-            { title: "Tierversicherer", text: "Rassespezifische Angebote, wenn ein echtes Haustier registriert wird – klar gekennzeichnet." },
-            { title: "Hersteller von Halsbändern und IoT-Geräten", text: "Einbindung von Aktivitätsdaten für intelligentere Hinweise mit Begründung." },
-          ],
-        },
-        {
-          type: "list",
-          heading: "Warum Partner uns vertrauen",
-          items: [
-            "Kinder melden sich ohne E-Mail an, und wir halten ihre Daten auf einem Minimum, auf Servern in der EU.",
-            "Nur geprüfte Inhalte erreichen den Bildschirm eines Kindes; es gibt keine Werbung.",
-            "Jedes Partnerangebot ist gekennzeichnet, und jede Provision wird der Familie offengelegt.",
-          ],
-        },
-        { type: "callout", title: "Lassen Sie uns sprechen.", text: "Die Partnerschaftsbedingungen werden gerade erarbeitet. Erzählen Sie uns, wer Sie sind und was Sie vorhaben.", tone: "dark" },
-        { type: "contact" },
-      ],
-    },
+    partners: partnerPages.de,
     investors: {
       meta: {
         title: "In PetPrep investieren – von der Haustier-Bereitschaft zur lebenslangen Tierbetreuung",
@@ -635,6 +599,7 @@ const de: Dictionary = {
                 "Codes: Anmelde- und Einladungscodes werden nur als Hashes gespeichert und laufen ab.",
                 "Fehlerberichte der App: Wenn die App hängt oder abstürzt, kann sie einen kurzen technischen Bericht an unseren Server in der EU senden (Fehlertyp und -text, Stelle im Code, App- und Betriebssystemversion, Name des Bildschirms, Rolle Eltern/Kind). Er enthält keinen Namen, keine E-Mail-Adresse, keine Nutzer-ID und keine IP-Adresse, wird an keine Dritten weitergegeben und nach 30 Tagen gelöscht.",
                 "Liste für den frühen Zugang (diese Website): Ihre E-Mail-Adresse, die Sprache der Seite und der Zeitpunkt Ihrer Anmeldung.",
+                "Partnerformular (diese Website): Firmenname, Name der Ansprechperson, E-Mail-Adresse und Nachricht. Wir verwenden sie nur, um auf Ihre Anfrage zu antworten, bewahren sie 12 Monate auf und löschen sie dann. Rechtsgrundlage ist Ihre Einwilligung, die Sie durch Ankreuzen des Kästchens vor dem Absenden erteilen.",
                 "Die Seiten „Wie viel Arbeit macht ein Hund?“ (diese Website): Wenn Sie Ihre E-Mail-Adresse eingeben und das Einwilligungskästchen ankreuzen, speichern wir Ihre E-Mail-Adresse, den Zeitpunkt der Einwilligung, die gewählte Rasse, ob Sie einen Hund oder einen Welpen angesehen haben, die Sprache der Seite sowie wie oft und wann Sie die Adresse zuletzt eingegeben haben. Ihre IP-Adresse und Ihren Namen speichern wir nicht. Die Daten liegen auf unserem Server in der EU, bis Sie ihre Löschung verlangen. Die druckbare Zusammenfassung wird in Ihrem Browser erstellt und nirgendwohin gesendet.",
                 "Gutschein einlösen (diese Website): Das Elternteil meldet sich mit Google, Apple oder mit E-Mail-Adresse und Passwort an. Bei E-Mail-Adresse und Passwort prüft unser Server beides gegen das bestehende Elternkonto und speichert das Passwort nie im Klartext; von Google oder Apple erhalten wir nur die Kontokennung und speichern keine weiteren Daten von ihnen. Ein kurzlebiges Anmelde-Token wird höchstens 15 Minuten im Arbeitsspeicher des Browsers gehalten. Während der Weiterleitung zu Google oder Apple und der Rückkehr liegen zwei Einträge (petprep.signin und petprep.webSession.handoff) nur im Session Storage dieses Browser-Tabs. Sie werden gelöscht, sobald die Rückkehrseite sie liest, andernfalls beim Schließen des Tabs; die Übergabe wird nur innerhalb von 60 Sekunden akzeptiert. Nach dem Abmelden oder Schließen des Tabs bleibt im Browser nichts gespeichert. Auf unserem Server bleiben nur kurzlebige technische Einträge: ein Eintrag zum Anmelde-Token (Konto-ID und Zeiten, kein Name und keine E-Mail-Adresse), der etwa zwei Tage nach Ablauf automatisch gelöscht wird, sowie Zähler zur Begrenzung von Versuchen (fehlgeschlagene Versuche je Konto in gehashter Form für 15 Minuten; Anfragen je Netzwerkadresse höchstens eine Stunde).",
               ],
@@ -682,6 +647,7 @@ const de: Dictionary = {
                 "Um den Dienst mit Fehlerberichten der App zu betreiben und abzusichern, die uns helfen, Hänger und Abstürze zu beheben (berechtigtes Interesse).",
                 "Um gesetzliche Pflichten zu erfüllen, etwa die Buchführung über Käufe (rechtliche Verpflichtung).",
                 "Um Sie per E-Mail über den Start von PetPrep zu informieren, wenn Sie sich für den frühen Zugang eingetragen haben (Einwilligung – Sie können sich in jeder E-Mail abmelden).",
+                "Um eine Anfrage zu beantworten, die über das Partnerformular gesendet wurde (Einwilligung; wir bewahren die Daten 12 Monate auf).",
                 "Um Ihnen PetPrep-News und Tipps per E-Mail zu senden, wenn Sie Ihre E-Mail-Adresse auf den Seiten „Wie viel Arbeit macht ein Hund?“ eingegeben und das Einwilligungskästchen angekreuzt haben (Einwilligung – Sie können sich in jeder Nachricht abmelden und jederzeit die Löschung der Daten verlangen).",
                 "Um mit Google Analytics zu verstehen, wie Besucher diese Website nutzen, nur wenn Sie Analyse-Cookies erlauben (Einwilligung – Sie können sie jederzeit unter Cookie-Einstellungen ändern).",
               ],

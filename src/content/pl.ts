@@ -1,4 +1,5 @@
 import type { Dictionary } from "./types";
+import { partnerPages } from "./partners";
 
 const pl: Dictionary = {
   meta: {
@@ -500,44 +501,7 @@ const pl: Dictionary = {
         },
       ],
     },
-    partners: {
-      meta: {
-        title: "Partnerzy – współpracuj z PetPrep",
-        description:
-          "PetPrep współpracuje ze sklepami zoologicznymi, schroniskami, weterynarzami, trenerami, ubezpieczycielami, producentami obroży i szkołami, aby pomagać rodzinom odpowiedzialnie przyjmować zwierzęta.",
-      },
-      eyebrow: "Partnerzy",
-      title: "Lepiej przygotowane rodziny dla wszystkich, którym zależy na zwierzętach.",
-      lead:
-        "Rodziny, które ukończą PetPrep, wiedzą, czego naprawdę wymaga zwierzę. Budujemy sieć partnerów, którzy docierają do nich we właściwym momencie – z wyraźnym oznaczeniem i zawsze za zgodą rodziny.",
-      planned: true,
-      blocks: [
-        {
-          type: "cards",
-          heading: "Z kim współpracujemy",
-          columns: 3,
-          items: [
-            { title: "Sklepy zoologiczne", text: "Docieraj do rodzin w chwili, gdy udowadniają, że są gotowe – na przykład z ofertą wyprawki przy certyfikacie." },
-            { title: "Schroniska, fundacje i hodowcy", text: "Polecaj PetPrep przed adopcją lub zakupem – mniej pochopnych decyzji i zwrotów." },
-            { title: "Weterynarze", text: "Gdy prawdziwe zwierzę zamieszka w domu, asystent AI odpowiada na pierwsze pytania i kieruje właścicieli do ciebie, a podsumowanie przypadku udostępnia tylko za zgodą." },
-            { title: "Trenerzy i szkoły dla psów", text: "Rekomendacje i rezerwacje, gdy rodzina przechodzi do prawdziwego psa." },
-            { title: "Ubezpieczyciele zwierząt domowych", text: "Oferty uwzględniające rasę, gdy zostanie zarejestrowane prawdziwe zwierzę – wyraźnie oznaczone." },
-            { title: "Producenci obroży i urządzeń IoT", text: "Dane o aktywności dla inteligentniejszych alertów, które tłumaczą, co się dzieje." },
-          ],
-        },
-        {
-          type: "list",
-          heading: "Dlaczego partnerzy nam ufają",
-          items: [
-            "Dzieci logują się bez e-maila, a ich dane ograniczamy do minimum, na serwerach w UE.",
-            "Na ekran dziecka trafiają tylko zweryfikowane treści; nie ma reklam.",
-            "Każda oferta partnera jest oznaczona, a każda prowizja ujawniona rodzinie.",
-          ],
-        },
-        { type: "callout", title: "Porozmawiajmy.", text: "Warunki współpracy są w przygotowaniu. Napisz, kim jesteś i co masz na myśli.", tone: "dark" },
-        { type: "contact" },
-      ],
-    },
+    partners: partnerPages.pl,
     investors: {
       meta: {
         title: "Zainwestuj w PetPrep – od gotowości na zwierzę do opieki przez całe jego życie",
@@ -635,6 +599,7 @@ const pl: Dictionary = {
                 "Kody: kody logowania i zaproszeń są przechowywane wyłącznie jako skróty i wygasają.",
                 "Raporty błędów aplikacji: jeśli aplikacja się zawiesi lub ulegnie awarii, może wysłać krótki raport techniczny na nasz serwer w UE (typ i treść błędu, miejsce w kodzie, wersja aplikacji i systemu, nazwa ekranu, rola rodzica/dziecka). Nie zawiera imienia, adresu e-mail, identyfikatora użytkownika ani adresu IP, nie jest udostępniany żadnej stronie trzeciej i jest usuwany po 30 dniach.",
                 "Lista wczesnego dostępu (ta strona internetowa): twój adres e-mail, język strony i czas zapisu.",
+                "Formularz dla partnerów (ta strona internetowa): nazwa firmy, imię i nazwisko osoby kontaktowej, adres e-mail i wiadomość. Używamy ich wyłącznie do odpowiedzi na twoje zapytanie, przechowujemy je przez 12 miesięcy, a potem usuwamy. Podstawą prawną jest twoja zgoda, wyrażona przez zaznaczenie pola przed wysłaniem.",
                 "Strony „Ile pracy wymaga pies?” (ta strona internetowa): jeśli wpiszesz swój adres e-mail i zaznaczysz pole zgody, zapiszemy twój adres e-mail, czas zgody, wybraną rasę, informację, czy oglądałeś psa, czy szczeniaka, język strony oraz to, ile razy i kiedy ostatnio wpisałeś adres. Nie zapisujemy twojego adresu IP ani imienia. Dane przechowujemy na naszym serwerze w UE, dopóki nie poprosisz o ich usunięcie. Podsumowanie do wydruku powstaje w twojej przeglądarce i nigdzie nie jest wysyłane.",
                 "Realizacja bonu podarunkowego (ta strona): rodzic loguje się przez Google, Apple albo adresem e-mail i hasłem. W przypadku adresu e-mail i hasła nasz serwer sprawdza je z istniejącym kontem rodzica i nigdy nie zapisuje hasła jawnym tekstem; od Google lub Apple otrzymujemy tylko identyfikator konta i nie przechowujemy innych danych od nich. Krótkotrwały token logowania jest trzymany w pamięci przeglądarki przez najwyżej 15 minut. Podczas przekierowania do Google lub Apple i powrotu dwa wpisy (petprep.signin i petprep.webSession.handoff) znajdują się wyłącznie w pamięci sesji (session storage) tej karty przeglądarki. Są usuwane zaraz po odczytaniu przez stronę powrotu, a w przeciwnym razie przy zamknięciu karty; przekazanie sesji jest akceptowane tylko w ciągu 60 sekund. Po wylogowaniu lub zamknięciu karty nic nie pozostaje zapisane w przeglądarce. Na naszym serwerze zostają tylko krótkotrwałe zapisy techniczne: wpis o tokenie logowania (identyfikator konta i czasy, bez imienia i adresu e-mail), usuwany automatycznie około dwóch dni po wygaśnięciu, oraz liczniki ograniczeń (nieudane próby na konto w postaci skrótu przez 15 minut; żądania na adres sieciowy przez najwyżej godzinę).",
               ],
@@ -682,6 +647,7 @@ const pl: Dictionary = {
                 "Aby utrzymywać i zabezpieczać usługę dzięki raportom błędów aplikacji, które pomagają nam usuwać zawieszenia i awarie (prawnie uzasadniony interes).",
                 "Aby wypełniać obowiązki prawne, na przykład księgowe w związku z zakupami (obowiązek prawny).",
                 "Aby wysyłać ci e-maile o premierze PetPrep, jeśli jesteś na liście wczesnego dostępu (zgoda – możesz zrezygnować w każdym e-mailu).",
+                "Aby odpowiedzieć na zapytanie wysłane przez formularz dla partnerów (zgoda; dane przechowujemy 12 miesięcy).",
                 "Aby wysyłać ci e-mailem nowości i wskazówki PetPrep, jeśli wpisałeś swój adres e-mail i zaznaczyłeś pole zgody na stronach „Ile pracy wymaga pies?” (zgoda – możesz zrezygnować w każdej wiadomości i w każdej chwili poprosić o usunięcie danych).",
                 "Aby zrozumieć, jak odwiedzający korzystają z tej strony, za pomocą Google Analytics, wyłącznie jeśli pozwolisz na analityczne pliki cookie (zgoda – możesz ją zmienić w każdej chwili w Ustawieniach plików cookie).",
               ],

@@ -1,15 +1,60 @@
 /**
- * Partner & sponsor page (M6-S03): copy of the inquiry form, the numbers block and the media kit.
- * Slovenian and English only. No imports on purpose: scripts/build-media-kit.mjs and the unit tests
- * load this file with plain Node. The page's static blocks live in content/sl.ts and content/en.ts
- * (pages.partners).
+ * Partner & sponsor page (M6-S03, all 15 site languages since M6-S08): copy of the inquiry form, the
+ * numbers block and the media kit PDFs. Slovenian and English live in this file, the other 13 languages
+ * in ./partners/<locale>.ts (each also carries its page blocks, `page`). Only type imports on purpose:
+ * scripts/build-media-kit.mjs and the unit tests load this file with plain Node.
  */
-export type PartnerLang = "sl" | "en";
+import type { Locale } from "../i18n/config.ts";
+import type { PageContent } from "./types.ts";
+import { de } from "./partners/de.ts";
+import { fr } from "./partners/fr.ts";
+import { es } from "./partners/es.ts";
+import { it } from "./partners/it.ts";
+import { pt } from "./partners/pt.ts";
+import { nl } from "./partners/nl.ts";
+import { pl } from "./partners/pl.ts";
+import { cs } from "./partners/cs.ts";
+import { hr } from "./partners/hr.ts";
+import { sv } from "./partners/sv.ts";
+import { da } from "./partners/da.ts";
+import { fi } from "./partners/fi.ts";
+import { nb } from "./partners/nb.ts";
+
+export type PartnerLang = Locale;
 export type PartnerType = "series" | "sponsored_content" | "insurer" | "directory" | "shelter" | "other";
 
 export const partnerContactEmail = "david@petprep.si";
 
-export const partnerCopy = {
+export type PartnerCopy = {
+  form: {
+    heading: string; intro: string; company: string; contactName: string; email: string; type: string; typePlaceholder: string;
+    message: string; messageHint: string; types: Record<PartnerType, string>;
+    consentBefore: string; consentLink: string; consentAfter: string; submit: string; sending: string; successTitle: string; successText: string;
+    errors: Record<"company" | "contact_name" | "email" | "type" | "message" | "consent", string>;
+    rateLimited: string; invalid: string; fallbackBefore: string; fallbackAfter: string;
+  };
+  stats: { heading: string; intro: string; breeds: string; breedsNote: string; languages: string; languagesNote: string };
+};
+
+/** Media kit PDF text (scripts/build-media-kit.mjs). Placeholders: {breeds} {dogs} {cats} {date} in the example cards, {email} {url} in contact.text. */
+export type KitDoc = {
+  htmlLang: string;
+  company: string;
+  title: string;
+  tagline: string;
+  what: { heading: string; paragraphs: readonly string[] };
+  audience: { heading: string; paragraphs: readonly string[] };
+  coop: { heading: string; items: readonly (readonly [string, string])[] };
+  examples: { heading: string; items: readonly (readonly [string, string])[] };
+  never: { heading: string; text: string };
+  contact: { heading: string; text: string };
+  page: string;
+};
+
+/** One non-SL/EN language: UI copy, media kit PDF text and the page (pages.partners). */
+export type PartnerLocalePack = { copy: PartnerCopy; kit: KitDoc; page: PageContent };
+
+const baseCopy = {
   sl: {
     form: {
       heading: "Povpraševanje za sodelovanje",
@@ -56,13 +101,6 @@ export const partnerCopy = {
       breedsNote: "{dogs} pasem psov in {cats} pasem mačk, vsaka z lastno stranjo in navedenimi viri.",
       languages: "jezikov spletne strani",
       languagesNote: "Aplikacija je danes v slovenščini in angleščini.",
-    },
-    kit: {
-      heading: "Medijski komplet",
-      intro: "Kratek pregled PetPrep za partnerje in medije: kaj je PetPrep, komu je namenjen, oblike sodelovanja in primeri vsebin.",
-      slLabel: "Medijski komplet (slovenščina)",
-      enLabel: "Medijski komplet (angleščina)",
-      meta: "PDF",
     },
   },
   en: {
@@ -112,18 +150,25 @@ export const partnerCopy = {
       languages: "website languages",
       languagesNote: "The app is currently in Slovenian and English.",
     },
-    kit: {
-      heading: "Media kit",
-      intro: "A short overview of PetPrep for partners and media: what PetPrep is, who it is for, forms of cooperation and content examples.",
-      slLabel: "Media kit (Slovenian)",
-      enLabel: "Media kit (English)",
-      meta: "PDF",
-    },
   },
-} as const;
+} satisfies Partial<Record<Locale, PartnerCopy>>;
 
-/** Media kit text (scripts/build-media-kit.mjs). Company line: PetPrep is in formation, no other company name. */
-export const kitCopy = {
+const packs: Record<Exclude<Locale, "sl" | "en">, PartnerLocalePack> = { de, fr, es, it, pt, nl, pl, cs, hr, sv, da, fi, nb };
+
+/** Form and numbers copy per site language. */
+export const partnerCopy: Record<Locale, PartnerCopy> = { ...baseCopy, ...mapPacks((p) => p.copy) };
+
+/** The partner page (pages.partners) of the 13 languages that are not in content/sl.ts / content/en.ts. */
+export const partnerPages = mapPacks((p) => p.page);
+
+function mapPacks<T>(pick: (p: PartnerLocalePack) => T): Record<Exclude<Locale, "sl" | "en">, T> {
+  return Object.fromEntries(Object.entries(packs).map(([k, v]) => [k, pick(v)])) as Record<Exclude<Locale, "sl" | "en">, T>;
+}
+
+/** Path of the media kit PDF of a language (the build script writes one per site language). */
+export const mediaKitHref = (locale: Locale): string => `/media/petprep-media-kit-${locale}.pdf`;
+
+const baseKit = {
   sl: {
     htmlLang: "sl",
     company: "PetPrep (v ustanavljanju)",
@@ -210,4 +255,7 @@ export const kitCopy = {
     contact: { heading: "Contact", text: "Write to {email} or use the form at {url}." },
     page: "Page",
   },
-} as const;
+} satisfies Partial<Record<Locale, KitDoc>>;
+
+/** Media kit text (scripts/build-media-kit.mjs). Company line: PetPrep is in formation, no other company name. */
+export const kitCopy: Record<Locale, KitDoc> = { ...baseKit, ...mapPacks((p) => p.kit) };

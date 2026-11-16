@@ -1,4 +1,5 @@
 import type { Dictionary } from "./types";
+import { partnerPages } from "./partners";
 
 const fi: Dictionary = {
   meta: {
@@ -500,44 +501,7 @@ const fi: Dictionary = {
         },
       ],
     },
-    partners: {
-      meta: {
-        title: "Kumppanit – tee yhteistyötä PetPrepin kanssa",
-        description:
-          "PetPrep tekee yhteistyötä lemmikkikauppojen, löytöeläinkotien, eläinlääkärien, kouluttajien, vakuutusyhtiöiden, pantavalmistajien ja koulujen kanssa, jotta perheet hankkisivat lemmikin vastuullisesti.",
-      },
-      eyebrow: "Kumppanit",
-      title: "Paremmin valmistautuneita perheitä kaikille, jotka välittävät eläimistä.",
-      lead:
-        "PetPrepin läpikäyneet perheet tietävät, mitä lemmikki todella vaatii. Rakennamme kumppaniverkostoa, joka kohtaa heidät oikealla hetkellä – selvästi merkittynä ja aina perheen suostumuksella.",
-      planned: true,
-      blocks: [
-        {
-          type: "cards",
-          heading: "Keiden kanssa teemme yhteistyötä",
-          columns: 3,
-          items: [
-            { title: "Lemmikkikaupat", text: "Tavoita perheet sillä hetkellä, kun ne osoittavat olevansa valmiita – esimerkiksi aloituspakettitarjouksella todistuksen yhteydessä." },
-            { title: "Löytöeläinkodit, eläinsuojeluyhdistykset ja kasvattajat", text: "Suosittele PetPrepiä ennen adoptiota tai ostoa, niin hetken mielijohteesta tehtyjä päätöksiä ja palautuksia on vähemmän." },
-            { title: "Eläinlääkärit", text: "Kun oikea lemmikki tulee kotiin, tekoälyavustaja vastaa ensimmäisiin kysymyksiin ja ohjaa omistajat teille. Tapausyhteenveto jaetaan vain suostumuksella." },
-            { title: "Kouluttajat ja koirakoulut", text: "Suosituksia ja ajanvarauksia, kun perhe hankkii oikean koiran." },
-            { title: "Lemmikkivakuutusyhtiöt", text: "Rodun huomioivia tarjouksia, kun oikea lemmikki rekisteröidään – selvästi merkittyinä." },
-            { title: "Panta- ja IoT-valmistajat", text: "Aktiivisuustietojen integrointi älykkäämpiä ja selittäviä hälytyksiä varten." },
-          ],
-        },
-        {
-          type: "list",
-          heading: "Miksi kumppanit luottavat meihin",
-          items: [
-            "Lapset kirjautuvat ilman sähköpostia, keräämme heistä mahdollisimman vähän tietoja ja säilytämme ne EU:n palvelimilla.",
-            "Lapsen näytölle pääsee vain tarkistettua sisältöä; mainoksia ei ole.",
-            "Jokainen kumppanitarjous on merkitty, ja jokainen palkkio kerrotaan perheelle.",
-          ],
-        },
-        { type: "callout", title: "Jutellaan.", text: "Kumppanuusehtoja valmistellaan. Kerro, kuka olet ja mitä sinulla on mielessä.", tone: "dark" },
-        { type: "contact" },
-      ],
-    },
+    partners: partnerPages.fi,
     investors: {
       meta: {
         title: "Sijoita PetPrepiin – lemmikkivalmiudesta elinikäiseen lemmikinhoitoon",
@@ -635,6 +599,7 @@ const fi: Dictionary = {
                 "Koodit: kirjautumis- ja kutsukoodit tallennetaan vain tiivisteinä, ja ne vanhenevat.",
                 "Sovelluksen virheraportit: jos sovellus jumiutuu tai kaatuu, se voi lähettää lyhyen teknisen raportin EU:ssa sijaitsevalle palvelimellemme (virheen tyyppi ja teksti, kohta koodissa, sovelluksen ja käyttöjärjestelmän versio, näkymän nimi, vanhemman tai lapsen rooli). Raportissa ei ole nimeä, sähköpostiosoitetta, käyttäjätunnusta eikä IP-osoitetta, sitä ei jaeta kolmansille osapuolille, ja se poistetaan 30 päivän kuluttua.",
                 "Varhaisen käyttöoikeuden lista (tämä verkkosivusto): sähköpostiosoitteesi, sivun kieli ja ilmoittautumisaika.",
+                "Kumppanilomake (tämä verkkosivusto): yrityksen nimi, yhteyshenkilön nimi, sähköpostiosoite ja viesti. Käytämme niitä vain kyselysi vastaamiseen, säilytämme niitä 12 kuukautta ja poistamme ne sen jälkeen. Oikeusperusta on suostumuksesi, jonka annat rastittamalla ruudun ennen lähettämistä.",
                 "Sivut ”Paljonko työtä koira vaatii?” (tämä verkkosivusto): jos kirjoitat sähköpostiosoitteesi ja rastitat suostumusruudun, tallennamme sähköpostiosoitteesi, suostumuksen ajankohdan, valitsemasi rodun, katsoitko koiraa vai pentua, sivun kielen sekä sen, kuinka monta kertaa ja milloin viimeksi kirjoitit osoitteen. Emme tallenna IP-osoitettasi emmekä nimeäsi. Säilytämme tiedot palvelimellamme EU:ssa, kunnes pyydät niiden poistamista. Tulostettava yhteenveto syntyy selaimessasi, eikä sitä lähetetä minnekään.",
                 "Lahjakortin lunastaminen (tämä verkkosivusto): vanhempi kirjautuu Googlella, Applella tai sähköpostiosoitteella ja salasanalla. Sähköpostiosoitteen ja salasanan palvelimemme tarkistaa olemassa olevaa vanhemman tiliä vasten, eikä tallenna salasanaa koskaan selkokielisenä; Googlelta tai Applelta saamme vain tilin tunnisteen, emmekä tallenna heiltä muita tietoja. Lyhytikäinen kirjautumistunniste säilytetään selaimen muistissa enintään 15 minuuttia. Siirryttäessä Googleen tai Appleen ja palatessa kaksi tietuetta (petprep.signin ja petprep.webSession.handoff) on vain tämän selainvälilehden istuntotallennustilassa (session storage). Ne poistetaan heti, kun paluusivu lukee ne, muuten välilehden sulkeutuessa; siirto hyväksytään vain 60 sekunnin kuluessa. Uloskirjautumisen tai välilehden sulkemisen jälkeen selaimeen ei jää mitään tallennettuna. Palvelimellamme säilyy vain lyhytikäisiä teknisiä tietoja: merkintä kirjautumistunnisteesta (tilin tunniste ja ajat, ei nimeä eikä sähköpostiosoitetta), joka poistetaan automaattisesti noin kahden vuorokauden kuluttua vanhenemisesta, sekä rajoituslaskurit (epäonnistuneet yritykset tiliä kohden tiivistettynä 15 minuuttia; pyynnöt verkko-osoitetta kohden enintään tunnin).",
               ],
@@ -682,6 +647,7 @@ const fi: Dictionary = {
                 "Palvelun ylläpito ja suojaaminen sovelluksen virheraporttien avulla, jotka auttavat meitä korjaamaan jumiutumisia ja kaatumisia (oikeutettu etu).",
                 "Lakisääteisten velvoitteiden täyttäminen, kuten ostojen kirjanpito (lakisääteinen velvoite).",
                 "Sähköpostin lähettäminen PetPrepin julkaisusta, jos liityit varhaisen käyttöoikeuden listalle (suostumus – voit perua tilauksen jokaisessa sähköpostissa).",
+                "Kumppanilomakkeella lähetettyyn kyselyyn vastaaminen (suostumus – säilytämme tiedot 12 kuukautta).",
                 "PetPrepin uutisten ja vinkkien lähettämiseksi sinulle sähköpostilla, jos kirjoitit sähköpostiosoitteesi ja rastitit suostumusruudun sivuilla ”Paljonko työtä koira vaatii?” (suostumus – voit perua tilauksen jokaisessa viestissä ja pyytää tietojen poistamista milloin tahansa).",
                 "Sen ymmärtäminen, miten kävijät käyttävät tätä verkkosivustoa, Google Analyticsin avulla, vain jos sallit analytiikkaevästeet (suostumus – voit muuttaa sitä milloin tahansa kohdassa Evästeasetukset).",
               ],
