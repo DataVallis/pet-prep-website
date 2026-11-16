@@ -1,10 +1,11 @@
 import * as THREE from 'three';
 import * as CANNON from 'cannon-es';
 import { STR } from './strings.js';
+import { PHRASES, unit as unitText } from './phrases.js';
 
 /* ---------- Data (every number has its origin in SOURCES in strings.js) ---------- */
 // Parent e-mail (optional, with consent) goes to the PetPrep API (M6-S05, POST /api/summary-leads).
-// The page runs inside an <iframe> on petprep.si (src/components/real-cost/RealCostPage.tsx). Query: lang=sl|en,
+// The page runs inside an <iframe> on petprep.si (src/components/real-cost/RealCostPage.tsx). Query: lang=<any of the 15 site languages, see phrases.js; default en>,
 // home=<path of the locale home>, partners=<path of the partner page>, kit=<path of the Promise Kit page, optional>.
 const QUERY = new URLSearchParams(location.search);
 const LOCAL = ['localhost', '127.0.0.1'].includes(location.hostname);
@@ -41,32 +42,41 @@ const RATES = { GBP: 1, EUR: 1 / 0.83559, USD: 1.1052 / 0.83559 };
 const SYMBOL = { GBP: '£', EUR: '€', USD: '$' };
 const SCALES = { day: 1, week: 7, year: 365.25, life: 365.25 * LIFE_YEARS };
 
-const state = { lang: QUERY.get('lang') === 'sl' ? 'sl' : 'en', cur: 'EUR', stage: 'adult', step: 'intro', scale: 'day', monthly: COST.monthly, setup: COST.setup, played: false };
+const LANG = QUERY.get('lang') in PHRASES ? QUERY.get('lang') : 'en';
+const state = { lang: LANG, cur: 'EUR', stage: 'adult', step: 'intro', scale: 'day', monthly: COST.monthly, setup: COST.setup, played: false };
 const $ = (s) => document.querySelector(s);
 const YEARS = Math.round(LIFE_YEARS);
+const fill = (tpl, vars) => tpl.replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? `{${k}}`);
+// Wording shared with the page (phrases.js): units with plural forms, quantifiers, life-span and brushing phrases.
 function breedVars(lang) {
-  const sl = lang === 'sl', n = (v, d = 0) => new Intl.NumberFormat(sl ? 'sl-SI' : 'en-GB', { maximumFractionDigits: d }).format(v);
-  const name = NAME_RAW || (sl ? 'Labradorec' : 'Labrador Retriever');
-  const walk = sl
-    ? { at_least: `vsaj ${n(WALK_MIN)} minut`, more_than: `več kot ${n(WALK_MIN)} minut`, up_to: `do ${n(WALK_MIN)} minut`, about: `približno ${n(WALK_MIN)} minut` }
-    : { at_least: `at least ${n(WALK_MIN)} minutes`, more_than: `more than ${n(WALK_MIN)} minutes`, up_to: `up to ${n(WALK_MIN)} minutes`, about: `about ${n(WALK_MIN)} minutes` };
-  const life = sl
-    ? { median: `približno ${n(LIFE_YEARS, 1)} leta (mediana)`, span: `${n(LIFE_LO)} do ${n(LIFE_HI)} let`, more_than: `več kot ${n(LIFE_YEARS)} let`, less_than: `manj kot ${n(LIFE_YEARS)} let`, about: `približno ${n(LIFE_YEARS)} let` }
-    : { median: `about ${n(LIFE_YEARS, 1)} years (median)`, span: `${n(LIFE_LO)} to ${n(LIFE_HI)} years`, more_than: `more than ${n(LIFE_YEARS)} years`, less_than: `less than ${n(LIFE_YEARS)} years`, about: `about ${n(LIFE_YEARS)} years` };
-  const groom = sl
-    ? { once_a_week: 'krtačenje enkrat na teden', more_than_once_a_week: 'krtačenje večkrat na teden', every_day: 'krtačenje vsak dan' }
-    : { once_a_week: 'brushing once a week', more_than_once_a_week: 'brushing more than once a week', every_day: 'brushing every day' };
-  const size = sl ? { small: 'majhnega', medium: 'srednje velikega', large: 'velikega' } : { small: 'small', medium: 'medium', large: 'large' };
+  const P = PHRASES[lang], n = (v, d = 0) => new Intl.NumberFormat(P.intl, { maximumFractionDigits: d }).format(v);
+  const u = (kind, v) => unitText(lang, kind, v, (x) => n(x, 1));
+  const name = NAME_RAW || (lang === 'sl' ? 'Labradorec' : 'Labrador Retriever');
+  const life = {
+    median: fill(P.life.median_app, { x: u('year', LIFE_YEARS) }),
+    span: fill(P.life.span, { lo: n(LIFE_LO), x: u('year', LIFE_HI) }),
+    more_than: fill(P.life.more_than, { x: u('year', YEARS) }),
+    less_than: fill(P.life.less_than, { x: u('year', YEARS) }),
+    about: fill(P.life.about, { x: u('year', YEARS) }),
+  };
+  const gbp = (v) => new Intl.NumberFormat(P.intl, { style: 'currency', currency: 'GBP', currencyDisplay: 'narrowSymbol', maximumFractionDigits: 0 }).format(v);
   return {
-    name, name_a: `${/^[AEIOU]/i.test(name) ? 'an' : 'a'} ${name}`, years: n(YEARS), walk_text: walk[WALK_Q], life_text: life[LIFE_Q],
-    groom_text: groom[GROOM] ?? (sl ? 'nego dlake' : 'coat care'), size_text: size[SIZE], cost_m: n(COST.monthly), cost_s: n(COST.setup),
+    name, name_a: `${/^[AEIOU]/i.test(name) ? 'an' : 'a'} ${name}`, years: n(YEARS), years_u: u('year', YEARS),
+    walk_text: fill(P.q[WALK_Q], { x: u('min', WALK_MIN) }), life_text: life[LIFE_Q],
+    groom_text: P.groom_app[GROOM] ?? P.groom_app.coat, size_text: P.size_app[SIZE],
+    cost_m: n(COST.monthly), cost_s: n(COST.setup), cost_m_c: gbp(COST.monthly), cost_s_c: gbp(COST.setup),
   };
 }
-const VARS = { sl: breedVars('sl'), en: breedVars('en') };
-const t = (k) => (STR[state.lang][k] ?? k).replace(/\{(name|name_a|years|walk_text|life_text|groom_text|size_text|cost_m|cost_s)\}/g, (_, v) => VARS[state.lang][v]);
-const nf = (n, d = 0) => new Intl.NumberFormat(state.lang === 'sl' ? 'sl-SI' : 'en-GB', { maximumFractionDigits: d }).format(n);
+const VARS = {};
+const varsFor = (lang) => (VARS[lang] ??= breedVars(lang));
+const t = (k) => (STR[state.lang][k] ?? k).replace(/\{(name|name_a|years|years_u|walk_text|life_text|groom_text|size_text|cost_m|cost_s|cost_m_c|cost_s_c)\}/g, (_, v) => varsFor(state.lang)[v]);
+const nf = (n, d = 0) => new Intl.NumberFormat(PHRASES[state.lang].intl, { maximumFractionDigits: d }).format(n);
+// "{n} unit" with the right plural form for the current language (kind: min | hour | year).
+const un = (kind, v) => unitText(state.lang, kind, v, (x) => nf(x, 1));
+// Currency symbol before or after the number, as the language writes it (en £83, sl 83 £, nl € 83).
+const curLayout = (lang) => { const parts = new Intl.NumberFormat(PHRASES[lang].intl, { style: 'currency', currency: 'EUR' }).formatToParts(1); return { after: parts.findIndex((x) => x.type === 'currency') > parts.findIndex((x) => x.type === 'integer'), gap: parts.some((x) => x.type === 'literal') ? '\u00a0' : '' }; };
 const conv = (gbp) => gbp * RATES[state.cur];
-const fmtCur = (v, d = 0) => (state.lang === 'sl' ? `${nf(v, d)} ${SYMBOL[state.cur]}` : `${SYMBOL[state.cur]}${nf(v, d)}`);
+const fmtCur = (v, d = 0) => { const { after, gap } = curLayout(state.lang); return after ? `${nf(v, d)}${gap}${SYMBOL[state.cur]}` : `${SYMBOL[state.cur]}${gap}${nf(v, d)}`; };
 // Amounts are kept in GBP (the PDSA source currency); other currencies are converted and marked with "~".
 const money = (gbp, d = 0, round = 1) => (state.cur === 'GBP' ? '' : '~') + fmtCur(Math.round(conv(gbp) / round) * round || conv(gbp), d);
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -383,9 +393,9 @@ function renderCost(respawn = true) {
 function promiseItems() {
   const d = totals(state.stage, 1), w = totals(state.stage, 7);
   return [
-    t('p_walk').replace('{m}', nf(d.walkMin)), t('p_meals').replace('{n}', nf(d.meals)),
+    t('p_walk').replace('{m}', un('min', d.walkMin)), t('p_meals').replace('{n}', nf(d.meals)),
     ...(d.takeOuts ? [t('p_outs').replace('{n}', nf(d.takeOuts))] : []),
-    t('p_bags'), t('p_week').replace('{h}', nf((w.walkMin + w.trainMin) / 60, 1)),
+    t('p_bags'), t('p_week').replace('{h}', un('hour', (w.walkMin + w.trainMin) / 60)),
     t('p_cost').replace('{c}', money(state.monthly)),
   ];
 }
@@ -465,8 +475,8 @@ function applyStrings() {
   document.querySelectorAll('[data-t]').forEach((el) => { el.innerHTML = t(el.dataset.t); });
   document.querySelectorAll('[data-t-ph]').forEach((el) => { el.placeholder = t(el.dataset.tPh); });
   document.querySelectorAll('#stage button').forEach((b) => b.setAttribute('aria-pressed', b.dataset.stage === state.stage));
-  $('#sponsor-link').href = sitePath('partners', state.lang === 'sl' ? '/sl/partnerji' : '/partners');
-  $('#cta-try').href = sitePath('home', state.lang === 'sl' ? '/sl' : '/');
+  $('#sponsor-link').href = sitePath('partners', state.lang === 'sl' ? '/sl/partnerji' : state.lang === 'en' ? '/partners' : `/${state.lang}`);
+  $('#cta-try').href = sitePath('home', state.lang === 'en' ? '/' : `/${state.lang}`);
   const kit = sitePath('kit', ''); $('#cta-kit').hidden = !kit; if (kit) $('#cta-kit').href = kit;
   if (state.step === 'sum') renderSummary();
   if (state.step === 'cost') renderCost(false);

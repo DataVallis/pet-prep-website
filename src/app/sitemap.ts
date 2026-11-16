@@ -92,14 +92,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: pathAlternates(each((l) => coloringPageHref(l, p))) },
     })),
   );
-  // "How much work is a dog?" (M6-S04, every dog breed since M6-S07): Slovenian and English.
+  // "How much work is a dog?" (M6-S04, every dog breed since M6-S07): all 15 languages.
   const realCost = realCostBreeds().flatMap(({ breed }) =>
     realCostLocales.map((locale) => ({
       url: absoluteUrl(realCostPath(locale, breed.slug[locale])),
       lastModified: new Date(realCostUpdated),
       changeFrequency: "monthly" as const,
       priority: 0.6,
-      alternates: { languages: realCostAlternates(absoluteUrl, { en: breed.slug.en, sl: breed.slug.sl }) },
+      alternates: { languages: realCostAlternates(absoluteUrl, breed.slug) },
     })),
   );
   // Gift voucher sales page (M6-S01, all 15 languages): only while NEXT_PUBLIC_FEATURE_GIFT=1 and the checkout URL is set;

@@ -3,6 +3,9 @@ import { readFile } from "node:fs/promises";
 import { readFileSync } from "node:fs";
 import { test } from "node:test";
 import { realCostAlternates, realCostBase, realCostCopy, realCostLegacy, realCostLocales, realCostPath, withArticle } from "../content/realCost.ts";
+import { locales, localeMeta, pageSlugs, salesSlugs } from "../i18n/config.ts";
+import { PHRASES, unit } from "../../tools/real-cost/src/phrases.js";
+import { STR } from "../../tools/real-cost/src/strings.js";
 import { realCostProfile, realCostQuery } from "./realCostProfile.ts";
 import { buildHtml, outFile } from "../../scripts/build-real-cost.mjs";
 
@@ -12,12 +15,17 @@ const dogs = registry.breeds.filter((b) => b.species === "dog");
 const lab = dogs.find((b) => b.id === "labrador_retriever")!;
 const labProfile = realCostProfile(lab)!;
 
-test("paths: English at the root, Slovenian under /sl, bases match the route folders", async () => {
+test("paths: English at the root, other languages under /<locale>, one ASCII base per language", () => {
   assert.equal(realCostPath("en", "labrador-retriever"), "/how-much-work-is-a-dog/labrador-retriever");
   assert.equal(realCostPath("sl", "labradorec"), "/sl/koliko-je-dela-s-psom/labradorec");
-  for (const l of realCostLocales) {
-    const page = await readFile(new URL(`../app/[locale]/${realCostBase[l]}/[breed]/page.tsx`, import.meta.url), "utf8");
-    assert.ok(page.includes(`const LOCALE = "${l}" as const;`), `${realCostBase[l]}/[breed]/page.tsx serves ${l}`);
+  assert.equal(realCostPath("de", "labrador-retriever"), "/de/wie-viel-arbeit-ist-ein-hund/labrador-retriever");
+  assert.deepEqual([...realCostLocales], [...locales]);
+  const bases = locales.map((l) => realCostBase[l]);
+  assert.equal(new Set(bases).size, locales.length, "bases are unique");
+  const taken = new Set<string>([...Object.values(pageSlugs).flatMap((m) => Object.values(m)), ...Object.values(salesSlugs).flatMap((m) => Object.values(m))]);
+  for (const l of locales) {
+    assert.match(realCostBase[l], /^[a-z0-9]+(-[a-z0-9]+)*$/, `${l} base is ASCII kebab-case`);
+    assert.ok(!taken.has(realCostBase[l]), `${l} base collides with a page slug`);
   }
 });
 
@@ -25,13 +33,15 @@ test("the old Labrador URLs redirect to the Labrador's page", () => {
   for (const r of realCostLegacy) assert.equal(r.breedSlug, lab.slug[r.locale]);
 });
 
-test("hreflang: both languages and x-default = English", () => {
+test("hreflang: all 15 languages and x-default = English", () => {
   const abs = (p: string) => `https://petprep.si${p}`;
-  assert.deepEqual(realCostAlternates(abs, { en: "labrador-retriever", sl: "labradorec" }), {
-    en: "https://petprep.si/how-much-work-is-a-dog/labrador-retriever",
-    sl: "https://petprep.si/sl/koliko-je-dela-s-psom/labradorec",
-    "x-default": "https://petprep.si/how-much-work-is-a-dog/labrador-retriever",
-  });
+  const slug = Object.fromEntries(locales.map((l) => [l, l === "sl" ? "labradorec" : "labrador-retriever"])) as Record<(typeof locales)[number], string>;
+  const alt = realCostAlternates(abs, slug);
+  assert.equal(Object.keys(alt).length, locales.length + 1);
+  assert.equal(alt.en, "https://petprep.si/how-much-work-is-a-dog/labrador-retriever");
+  assert.equal(alt.sl, "https://petprep.si/sl/koliko-je-dela-s-psom/labradorec");
+  assert.equal(alt.pl, "https://petprep.si/pl/ile-pracy-wymaga-pies/labrador-retriever");
+  assert.equal(alt["x-default"], alt.en);
 });
 
 test("every dog breed of the register gets a profile (new breeds included automatically)", () => {
@@ -67,19 +77,69 @@ test("English article: a / an", () => {
   assert.equal(withArticle("Afghan Hound"), "an Afghan Hound");
 });
 
-test("copy: same shape in both languages, for every breed", () => {
+test("copy: same shape in all 15 languages, for every breed", () => {
   for (const b of dogs) {
-  const p = realCostProfile(b)!;
-  const en = realCostCopy("en", b.name.en, p), sl = realCostCopy("sl", b.name.sl, p);
-  assert.equal(sl.facts.rows.length, en.facts.rows.length);
-  assert.equal(sl.how.items.length, en.how.items.length);
-  assert.equal(sl.sources.items.length, en.sources.items.length);
-  for (const c of [en, sl]) {
-    assert.ok(c.meta.description.length <= 170, "meta description fits a search snippet");
-    assert.ok(c.meta.title.includes("PetPrep"));
-    assert.ok(!/labrador/i.test(JSON.stringify(c)) || b.id === "labrador_retriever", `${b.id}: no Labrador text`);
+    const p = realCostProfile(b)!;
+    const en = realCostCopy("en", b.name.en, p);
+    for (const l of locales) {
+      const name = b.name[l] ?? b.name.en;
+      const c = realCostCopy(l, name, p);
+      assert.equal(c.facts.rows.length, en.facts.rows.length, `${b.id} ${l} rows`);
+      assert.equal(c.how.items.length, en.how.items.length);
+      assert.equal(c.sources.items.length, en.sources.items.length);
+      assert.ok(c.meta.description.length <= 170, `${b.id} ${l}: meta description ${c.meta.description.length} chars`);
+      assert.ok(c.meta.title.includes("PetPrep"));
+      for (const str of [c.meta.title, c.meta.description, c.eyebrow, c.title, c.lead, c.frameTitle, c.noScript, c.facts.title, c.facts.intro, c.facts.footnote, c.how.title, c.sources.title, c.email.title, c.email.text, c.registryLink.title, c.registryLink.text, c.registryLink.cta, ...c.facts.rows.flatMap((r) => [r.label, r.value, r.note]), ...c.how.items, ...c.sources.items]) assert.ok(!/[{}]/.test(str) && str.trim() !== "", `${b.id} ${l}: leftover placeholder or empty text: ${str}`);
+      assert.ok(!/NaN|undefined/.test(JSON.stringify(c)), `${b.id} ${l}: NaN or undefined`);
+      assert.ok(c.title.includes(name) || l === "en", `${b.id} ${l}: title carries the breed name`);
+      assert.ok(!/labrador/i.test(JSON.stringify(c)) || /labrador/i.test(name) || b.id === "labrador_retriever", `${b.id} ${l}: no Labrador text`);
+    }
   }
+});
+
+test("the page and the app share one language list, with the same Intl locale as the site", () => {
+  assert.deepEqual(Object.keys(PHRASES).sort(), [...locales].sort());
+  assert.deepEqual(Object.keys(STR).sort(), [...locales].sort());
+  for (const l of locales) assert.equal(PHRASES[l].intl, localeMeta[l].intl, `${l} intl`);
+});
+
+test("app strings: every language has exactly the English keys and only known placeholders", () => {
+  const known = /^\{(name|name_a|years|years_u|walk_text|life_text|groom_text|size_text|cost_m|cost_s|cost_m_c|cost_s_c|n|c|m|h|r)\}$/;
+  for (const l of locales) {
+    assert.deepEqual(Object.keys(STR[l]).sort(), Object.keys(STR.en).sort(), `${l} keys`);
+    for (const [k, v] of Object.entries(STR[l] as Record<string, string>)) {
+      assert.ok(v.trim().length > 0, `${l}.${k} empty`);
+      for (const ph of v.match(/\{[^}]*\}/g) ?? []) assert.match(ph, known, `${l}.${k}: ${ph}`);
+      // a placeholder of the English text must survive translation (numbers and amounts)
+      for (const ph of (STR.en as Record<string, string>)[k].match(/\{(n|c|m|h|r)\}/g) ?? []) assert.ok(v.includes(ph), `${l}.${k} lost ${ph}`);
+    }
   }
+});
+
+test("plural forms: Polish, Czech, Croatian and Slovenian units are right for the real values", () => {
+  const f = (l: keyof typeof PHRASES, kind: "min" | "hour" | "year", n: number) => unit(l, kind, n, (x: number) => String(x).replace(".", ","));
+  assert.equal(f("pl", "year", 12), "12 lat");
+  assert.equal(f("pl", "year", 13.1), "13,1 roku");
+  assert.equal(f("pl", "min", 90), "90 minut");
+  assert.equal(f("pl", "hour", 22), "22 godziny");
+  assert.equal(f("cs", "year", 7), "7 let");
+  assert.equal(f("cs", "year", 13.1), "13,1 roku");
+  assert.equal(f("cs", "hour", 3), "3 hodiny");
+  assert.equal(f("hr", "year", 11), "11 godina");
+  assert.equal(f("hr", "year", 13.1), "13,1 godine");
+  assert.equal(f("hr", "hour", 21), "21 sat");
+  assert.equal(f("sl", "year", 13), "13 let");
+  assert.equal(f("sl", "year", 13.1), "13,1 leta");
+  assert.equal(f("sl", "hour", 11.1), "11,1 ure");
+  assert.equal(f("en", "year", 1), "1 year");
+  assert.equal(f("de", "hour", 11.1), "11,1 Stunden");
+  assert.equal(f("fi", "year", 13), "13 vuotta");
+});
+
+test("the breed page copy carries the right numbers (Labrador: 90 min, 13 years)", () => {
+  assert.equal(realCostCopy("pl", "Labrador retriever", labProfile).facts.rows[0].value, "co najmniej 90 minut dziennie");
+  assert.equal(realCostCopy("de", "Labrador Retriever", labProfile).facts.rows[0].value, "mindestens 90 Minuten pro Tag");
+  assert.equal(realCostCopy("en", "Labrador Retriever", labProfile).facts.rows[5].value, "at least £116 a month");
 });
 
 test("public/real-cost/app.html is the current build of tools/real-cost/", async () => {
