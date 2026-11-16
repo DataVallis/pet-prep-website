@@ -939,6 +939,50 @@
       "synonyms": [
         "Owczarek z Beauce"
       ]
+    },
+    "borzoi": {
+      "name": "Chart rosyjski borzoj",
+      "slug": "borzoj",
+      "synonyms": [
+        "Borzoj",
+        "Chart rosyjski",
+        "Borzoi",
+        "Russian wolfhound"
+      ]
+    },
+    "bouvier_des_flandres": {
+      "name": "Bouvier des Flandres",
+      "slug": "bouvier-des-flandres",
+      "synonyms": [
+        "Bouvier",
+        "Owczarek flandryjski",
+        "Flanders cattle dog"
+      ]
+    },
+    "japanese_chin": {
+      "name": "Chin japoński",
+      "slug": "chin-japonski",
+      "synonyms": [
+        "Japanese chin",
+        "Chin",
+        "Spaniel japoński"
+      ]
+    },
+    "miniature_bull_terrier": {
+      "name": "Bulterier miniaturowy",
+      "slug": "bulterier-miniaturowy",
+      "synonyms": [
+        "Miniature bull terrier",
+        "Bull terrier miniaturowy"
+      ]
+    },
+    "norwich_terrier": {
+      "name": "Norwich terrier",
+      "slug": "norwich-terrier"
+    },
+    "schipperke": {
+      "name": "Schipperke",
+      "slug": "schipperke"
     }
   },
   "suitability_labels": {
