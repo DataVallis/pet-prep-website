@@ -28,7 +28,7 @@ export const sl: KitCopy = {
     sampleFoot: "To je ena stran kompleta Obljuba o ljubljenčku. Celoten komplet z družinskim pogovorom, tabelo za štiri tedne in drugim: petprep.si/sl/obljuba-o-ljubljencku",
   },
   cover: {
-    kicker: "Natisljivi komplet za družine",
+    kicker: "Družinski komplet za tisk",
     title: "Obljuba o ljubljenčku",
     subtitle: "Pogovorite se. Zapišite. Mesec dni preizkusite, preden se odločite.",
     noteHeading: "Sporočilo staršem",
@@ -174,11 +174,11 @@ export const sl: KitCopy = {
 
 /** Sales-page copy of the Pet Promise Kit (original text; the kit's own text is above). */
 export const slSales: KitSales = {
-  eyebrow: "Natisljivi komplet",
+  eyebrow: "Družinski komplet za tisk",
   title: "Obljuba o ljubljenčku",
   lead: "Preden ljubljenček pride domov, obljubo zapišite na papir. Enajst strani A4 za vašo družino: pogovor, dogovor s podpisi, štiritedenski preizkus za obkljukavanje in list s stroški za izpolnitev.",
-  metaTitle: "Obljuba o ljubljenčku: natisljivi družinski dogovor, preden dobite žival | PetPrep",
-  metaDescription: "Natisljivi komplet A4 za družine, ki razmišljajo o ljubljenčku: deset vprašanj za pogovor, obljuba za podpis, tabela nalog za štiri tedne, list s stroški in kontrolni seznam za starše.",
+  metaTitle: "Obljuba o ljubljenčku: družinski dogovor za tisk, preden dobite žival | PetPrep",
+  metaDescription: "Družinski komplet za tisk (A4) za vse, ki razmišljajo o ljubljenčku: deset vprašanj za pogovor, obljuba za podpis, tabela nalog za štiri tedne, list s stroški in kontrolni seznam za starše.",
   breadcrumb: "Obljuba o ljubljenčku",
   priceNote: "Enkratni nakup, prenos PDF v 15 jezikih. Plačilo in račun uredi Link, plačilna stran Stripe.",
   buy: "Kupite komplet",

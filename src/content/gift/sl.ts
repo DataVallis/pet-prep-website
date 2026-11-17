@@ -40,7 +40,7 @@ export const sl: GiftCopy = {
       "En 12-tedenski PetPrep izziv za enega ljubljenčka, enako kot nakup v aplikaciji",
       "Katera koli vrsta in pasma, ki je ob izbiri v aplikaciji na voljo",
       "Poln nabor posnetkov, celotna zgodovina skrbi in potrdilo o odgovornosti",
-      "Natisljiv bon z vašo osebno posvetilno vrstico (polji »Za« in »Od« izpolnite z roko)",
+      "Bon za tisk z vašo osebno posvetilno vrstico (polji »Za« in »Od« izpolnite z roko)",
     ],
   },
   audience: {
@@ -76,7 +76,7 @@ export const sl: GiftCopy = {
     button: "Unovčite bon",
   },
   kit: {
-    text: "Vsakemu bonu je priložen natisljiv komplet »Obljuba o ljubljenčku«.",
+    text: "Vsakemu bonu je priložen družinski komplet za tisk »Obljuba o ljubljenčku«.",
     button: "Oglejte si komplet",
   },
   thanks: {
