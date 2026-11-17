@@ -15,6 +15,8 @@ import { CareSpeciesPage, EmergencyPage, careSpeciesMetadata, careSpeciesParams,
 import { isCareSlug } from "@/content/care/care";
 import { assertGift, giftMetadata, ThanksPage } from "@/components/gift/GiftPages";
 import { giftThanksParams } from "@/lib/giftRoutes";
+import { kitThanksParams, promiseKitConfig } from "@/lib/promiseKit";
+import { KitThanksPage, kitThanksMetadata } from "@/components/promise-kit/KitThanksPage";
 import { realCostAlternates, realCostBase, realCostCopy, realCostPath, isRealCostSlug } from "@/content/realCost";
 import { realCostBreedBySlug, realCostBreeds } from "@/lib/realCostRoutes";
 import { RealCostPage } from "@/components/real-cost/RealCostPage";
@@ -37,6 +39,8 @@ export function generateStaticParams({ params }: { params: { locale: string } })
     ...coloringParams(locale),
     // Gift voucher thank-you page (M6-S01): a child of the sales page, only while the switch is on.
     ...giftThanksParams(locale),
+    // Pet Promise Kit thank-you page with the downloads (M6-S09): a child of the kit page, only while its switch is on.
+    ...kitThanksParams(locale, promiseKitConfig().enabled),
     // "How much work is a dog?" (M6-S04 / M6-S07 / M6-S08): one page per dog breed of the register, in every language.
     ...realCostBreeds().map(({ breed }) => ({ slug: realCostBase[locale], species: breed.slug[locale] })),
     // Breed quiz "Which breed is for you?" (M6-S06): the one child of the "Before you get a dog" hub.
@@ -45,6 +49,7 @@ export function generateStaticParams({ params }: { params: { locale: string } })
 }
 
 const isGiftThanks = (locale: Locale, slug: string, species: string) => slug === salesSlugs.gift[locale] && species === salesSlugs.giftThanks[locale];
+const isKitThanks = (locale: Locale, slug: string, species: string) => slug === salesSlugs.promiseKit[locale] && species === salesSlugs.giftThanks[locale];
 
 function resolve(localeParam: string, slug: string, speciesSlug: string): { locale: Locale; species: Species } | undefined {
   if (!isLocale(localeParam) || slug !== pageSlugs.animals[localeParam]) return undefined;
@@ -57,6 +62,7 @@ const paths = (s: Species) => Object.fromEntries(locales.map((l) => [l, speciesH
 export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[species]">): Promise<Metadata> {
   const { locale, slug, species } = await params;
   if (isLocale(locale) && isGiftThanks(locale, slug, species)) return giftMetadata("thanks", locale);
+  if (isLocale(locale) && isKitThanks(locale, slug, species)) return kitThanksMetadata(locale);
   if (isLocale(locale) && isQuizSlug(locale, slug, species)) return quizMetadata(locale);
   if (isLocale(locale) && isRealCostSlug(locale, slug)) {
     const hit = realCostBreedBySlug(locale, species);
@@ -83,6 +89,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[
 export default async function SpeciesCatalogue({ params }: PageProps<"/[locale]/[slug]/[species]">) {
   const { locale: l, slug, species: s } = await params;
   if (isLocale(l) && isGiftThanks(l, slug, s)) return <ThanksPage lang={assertGift(l)} />;
+  if (isLocale(l) && isKitThanks(l, slug, s)) return <KitThanksPage locale={l} />;
   if (isLocale(l) && isQuizSlug(l, slug, s)) return <QuizPage locale={l} />;
   if (isLocale(l) && isRealCostSlug(l, slug)) {
     const hit = realCostBreedBySlug(l, s);

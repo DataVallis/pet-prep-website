@@ -6,7 +6,7 @@
  * Nothing in this file stores anything.
  */
 
-import { isLocale, localeMeta, locales, salesSlugs, type Locale } from "../i18n/config.ts";
+import { localeMeta, locales, salesSlugs, type Locale } from "../i18n/config.ts";
 
 /** Gift pages exist in every site language (David 2026-11-11). */
 export type GiftLocale = Locale;
@@ -20,6 +20,8 @@ export const giftUpdated = "2026-11-11";
 
 /** Support address shown on "already redeemed" (contract §8.5). TODO(David): confirm or replace. */
 export const GIFT_SUPPORT_EMAIL = "david@petprep.si";
+/** Address the shop e-mails reply to (M6-S09, server config shop.email.support). */
+export const SHOP_SUPPORT_EMAIL = "hello@petprep.si";
 
 const prefixOf = (locale: Locale) => (locale === "en" ? "" : `/${locale}`);
 
@@ -47,14 +49,6 @@ export function redeemDisplayUrl(locale: Locale): string {
   return `petprep.si${giftPath(locale, "redeem")}`;
 }
 
-/** Reads the language marker the buy button stored: any of the 15 site languages, otherwise null. */
-export function storedGiftLocale(raw: string | null | undefined): Locale | null {
-  return raw && isLocale(raw) ? raw : null;
-}
-
-/** localStorage key that carries the language (and nothing else) from the gift page to the thanks page. */
-export const GIFT_LANG_KEY = "petprep.giftLang";
-
 /** Exactly "1" turns the gift, thanks and redeem pages on. Anything else (unset, "true", "0") = off. */
 export function isGiftEnabled(value: string | undefined = process.env.NEXT_PUBLIC_FEATURE_GIFT): boolean {
   return value === "1";
@@ -63,18 +57,6 @@ export function isGiftEnabled(value: string | undefined = process.env.NEXT_PUBLI
 /** The promise kit page has its own switch (M6-S02); the gift page links to it only when it is on. */
 export function isPromiseKitEnabled(value: string | undefined = process.env.NEXT_PUBLIC_FEATURE_PROMISE_KIT): boolean {
   return value === "1";
-}
-
-/** Lemon Squeezy checkout URL; empty/unset/malformed → null (the page then shows a disabled button). */
-export function giftBuyUrl(value: string | undefined = process.env.NEXT_PUBLIC_LS_GIFT_URL): string | null {
-  const v = value?.trim();
-  if (!v) return null;
-  try {
-    const u = new URL(v);
-    return u.protocol === "https:" ? u.toString() : null;
-  } catch {
-    return null;
-  }
 }
 
 export function apiBase(value: string | undefined = process.env.NEXT_PUBLIC_PETPREP_API_URL): string {
@@ -86,7 +68,7 @@ export function normalizeCode(raw: string): string {
   return raw.replace(/\s+/g, "");
 }
 
-/** Client-side format check only: 8–64 characters of [A-Za-z0-9-]. It says nothing about validity. */
+/** Client-side format check only: 8–64 characters of [A-Za-z0-9-] (codes are `PP-XXXX-XXXX-XXXX` since M6-S09). It says nothing about validity. */
 export function isPlausibleCode(raw: string): boolean {
   return /^[A-Za-z0-9-]{8,64}$/.test(normalizeCode(raw));
 }
@@ -190,8 +172,9 @@ export const signInKeys: readonly MessageKey[] = [
 export const clientOnlyKeys: readonly MessageKey[] = ["timeout"];
 
 /**
- * Pages whose content must never reach third-party scripts (analytics, tag managers): the thanks page shows the
- * code, the redeem page takes code, e-mail and password, and /auth/return briefly holds the ID token in the address.
+ * Pages whose content must never reach third-party scripts (analytics, tag managers): the gift thanks page shows the
+ * code, the kit thanks page holds signed download links (both carry the Stripe session id in the address, M6-S09),
+ * the redeem page takes code, e-mail and password, and /auth/return briefly holds the ID token in the address.
  * Matches the public paths of all 15 languages, with or without the internal /en prefix.
  */
 export function isGiftPrivatePath(pathname: string | null | undefined): boolean {
@@ -202,7 +185,10 @@ export function isGiftPrivatePath(pathname: string | null | undefined): boolean 
 }
 /** Return page of the Google / Apple full-page sign-in redirect (one URL for all languages, M6-S01b). */
 export const AUTH_RETURN_PATH = "/auth/return";
-const privatePaths: ReadonlySet<string> = new Set([AUTH_RETURN_PATH, ...locales.flatMap((l) => [giftPath(l, "thanks"), giftPath(l, "redeem")])]);
+const privatePaths: ReadonlySet<string> = new Set([
+  AUTH_RETURN_PATH,
+  ...locales.flatMap((l) => [giftPath(l, "thanks"), giftPath(l, "redeem"), `${promiseKitHref(l)}/${salesSlugs.giftThanks[l]}`]),
+]);
 
 /**
  * Maps an API answer (HTTP status + parsed body) to a message key. A body that did not parse (null), a

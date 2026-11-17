@@ -11,6 +11,9 @@ import { absoluteUrl, site } from "@/lib/site";
 import { formatKitPrice, giftPageOf, isKitLocale, promiseKitAlternatePaths, promiseKitConfig, promiseKitPath, promiseKitUpdated, type KitLocale } from "@/lib/promiseKit";
 import { JsonLd } from "@/components/JsonLd";
 import { Faq } from "@/components/Faq";
+import { BuyButton } from "@/components/gift/BuyButton";
+import { shopCopy } from "@/content/shop";
+import { SampleForm } from "./SampleForm";
 
 /** Metadata of the sales page; empty for a language without the page or while the switch is off. */
 export function promiseKitMetadata(locale: string): Metadata {
@@ -50,18 +53,14 @@ export function PromiseKitPage({ locale: localeParam }: { locale: string }) {
     breadcrumbsLd([{ name: dict.common.breadcrumbHome, path: home }, { name: s.breadcrumb, path: promiseKitPath(locale) }]),
     faqLd(s.faq),
   );
+  // M6-S09: buying goes through our API and Stripe; the sample is a form further down the page.
   const buttons = (
-    <div className="flex flex-wrap items-center gap-3">
-      {cfg.buyUrl ? (
-        <a href={cfg.buyUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-          {s.buy} · {price}
-        </a>
-      ) : null}
-      {cfg.sampleUrl ? (
-        <a href={cfg.sampleUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">
-          {s.sample}
-        </a>
-      ) : null}
+    <div className="flex flex-col gap-3">
+      <div className="flex flex-wrap items-start gap-3">
+        <BuyButton product="promise_kit" locale={locale} label={`${s.buy} · ${price}`} />
+        <a href="#kit-sample" className="btn btn-secondary">{s.sample}</a>
+      </div>
+      <p className="max-w-xl text-sm text-muted">{shopCopy[locale].checkout.secure}</p>
     </div>
   );
   return (
@@ -130,16 +129,12 @@ export function PromiseKitPage({ locale: localeParam }: { locale: string }) {
           </div>
         </section>
 
-        {cfg.sampleUrl ? (
-          <section className="mb-16 flex flex-col gap-4 rounded-[30px] bg-mint px-6 py-10 sm:px-10">
-            <h2 className="h-section">{s.sampleHeading}</h2>
-            <p className="max-w-2xl text-[17px] leading-relaxed">{s.sampleText}</p>
-            <div>
-              <a href={cfg.sampleUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">{s.sample}</a>
-            </div>
-            <p className="text-sm">{s.sampleNote}</p>
-          </section>
-        ) : null}
+        <section id="kit-sample" aria-labelledby="kit-sample-heading" className="mb-16 flex scroll-mt-24 flex-col gap-4 rounded-[30px] bg-mint px-6 py-10 sm:px-10">
+          <h2 id="kit-sample-heading" className="h-section">{s.sampleHeading}</h2>
+          <p className="max-w-2xl text-[17px] leading-relaxed">{s.sampleText}</p>
+          <SampleForm locale={locale} buttonLabel={s.sample} />
+          <p className="text-sm">{s.sampleNote}</p>
+        </section>
 
         <section aria-labelledby="faq" className="mb-12 flex flex-col gap-6">
           <h2 id="faq" className="h-section">{s.faqHeading}</h2>

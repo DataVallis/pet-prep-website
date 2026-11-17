@@ -2,7 +2,7 @@ import { redeemDisplayUrl, type GiftLocale } from "@/lib/gift";
 import { giftCopy } from "@/content/gift";
 import "./voucher.css";
 
-/** Font size of the code in container-width units: the long Lemon Squeezy keys (36 characters) wrap at their hyphens. */
+/** Font size of the code in container-width units: PetPrep codes (`PP-XXXX-XXXX-XXXX`, 17 characters) fit on one line; longer pasted text wraps at its hyphens. */
 function codeSize(code: string): number {
   if (code.length <= 20) return 4.6;
   if (code.length <= 40) return 3.4;

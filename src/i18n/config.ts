@@ -102,9 +102,9 @@ export function pageKeyFromSlug(locale: Locale, slug: string): PageKey | undefin
  * Gift voucher and Pet Promise Kit (M6-S01 / M6-S02, David 2026-11-11: all 15 languages). Their pages are not
  * in `pageSlugs` (they exist only while their build switch is on, so they are not part of the site-wide page
  * list), but follow the same rules: one ASCII slug per language, English at the root, the others under /<locale>.
- * Paths: sales page `/<gift>`, thank-you `/<gift>/<thanks>`, redeem `/<redeem>`, kit `/<promiseKit>`.
- * English keeps `/gift`, `/gift/thanks`, `/redeem` and `/promise-kit` (Lemon Squeezy redirects every buyer to
- * the English thank-you address; the page then forwards the buyer to their own language).
+ * Paths: sales page `/<gift>`, thank-you `/<gift>/<thanks>`, redeem `/<redeem>`, kit `/<promiseKit>`, kit
+ * thank-you `/<promiseKit>/<thanks>`. Since M6-S09 the Stripe checkout returns the buyer to the thank-you page of
+ * the language they bought in (the API is given that path), so no language forwarding is needed.
  */
 export const salesSlugs = {
   gift: { en: "gift", sl: "darilni-bon", de: "geschenkgutschein", fr: "bon-cadeau", es: "vale-regalo", it: "buono-regalo", pt: "vale-de-oferta", nl: "cadeaubon", pl: "bon-podarunkowy", cs: "darkovy-poukaz", hr: "poklon-bon", sv: "presentkort", da: "gavekort", fi: "lahjakortti", nb: "gavekort" },

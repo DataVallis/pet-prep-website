@@ -3,10 +3,8 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import {
-  giftBuyUrl,
   giftPath,
   giftPathsOf,
-  storedGiftLocale,
   isGiftEnabled,
   isPlausibleCode,
   isPromiseKitEnabled,
@@ -142,7 +140,7 @@ test("switch on: static params for all 15 languages; sitemap has the sales page 
     assert.ok(params.some((p) => p.locale === l && p.slug === salesSlugs.redeem[l]), l);
     assert.deepEqual(giftThanksParams(l, true), [{ slug: salesSlugs.gift[l], species: salesSlugs.giftThanks[l] }]);
   }
-  const paths = giftSitemapPaths(true, true);
+  const paths = giftSitemapPaths(true);
   assert.deepEqual(Object.keys(paths ?? {}).sort(), [...locales].sort());
   assert.equal(paths?.en, "/gift");
   assert.equal(paths?.sl, "/sl/darilni-bon");
@@ -175,19 +173,8 @@ test("public paths: localized slugs, English at the root", () => {
   }
 });
 
-test("stored language is any of the 15; the redeem request sends the real website language", () => {
+test("the redeem request sends the real website language", () => {
   assert.match(src("../components/gift/RedeemFlow.tsx"), /JSON\.stringify\(\{ code: normalizeCode\(code\), locale \}\)/);
-  for (const l of locales) assert.equal(storedGiftLocale(l), l);
-  assert.equal(storedGiftLocale("xx"), null);
-  assert.equal(storedGiftLocale(null), null);
-});
-
-test("buy URL: https only, unset or bad → null (button disabled)", () => {
-  assert.equal(giftBuyUrl(undefined), null);
-  assert.equal(giftBuyUrl(""), null);
-  assert.equal(giftBuyUrl("javascript:alert(1)"), null);
-  assert.equal(giftBuyUrl("http://example.com/x"), null);
-  assert.equal(giftBuyUrl("https://petprep.lemonsqueezy.com/checkout/buy/abc"), "https://petprep.lemonsqueezy.com/checkout/buy/abc");
 });
 
 test("API base defaults to api.petprep.si and drops a trailing slash", () => {
@@ -195,35 +182,39 @@ test("API base defaults to api.petprep.si and drops a trailing slash", () => {
   assert.equal(apiBase("http://localhost:8000/"), "http://localhost:8000");
 });
 
-// W7
-test("buy link opens in a new tab with noopener", () => {
+// W7 (M6-S09): the buy button asks our API for a Stripe checkout and goes there in the same tab
+test("buy button posts to the shop API and follows only the checked checkout URL", () => {
   const buy = src("../components/gift/BuyButton.tsx");
-  assert.match(buy, /target="_blank"/);
-  assert.match(buy, /rel="noopener noreferrer"/);
+  assert.match(buy, /fetch\(checkoutUrlOf\(\)/);
+  assert.match(buy, /method: "POST"/);
+  assert.match(buy, /checkoutOutcome\(res\.status, body\)/);
+  assert.match(buy, /window\.location\.assign\(result\.url\)/);
+  assert.doesNotMatch(buy, /localStorage|sessionStorage|document\.cookie/);
 });
 
-// W6 + the voucher privacy rule
-test("the code never reaches a URL, storage, a request or analytics", () => {
+// W6 + the voucher privacy rule (M6-S09: the thank-you page reads only the Stripe session id and loads the order)
+test("the code never reaches a URL, storage or analytics; the thank-you page reads only session_id", () => {
   const thanks = src("../components/gift/ThanksClient.tsx");
+  const order = src("../components/shop/OrderStatus.tsx");
   const voucher = src("../components/gift/Voucher.tsx");
   const redeem = src("../components/gift/RedeemFlow.tsx");
-  const all = [thanks, voucher, redeem, src("../components/gift/BuyButton.tsx"), src("../components/gift/GiftPages.tsx")];
+  const buy = src("../components/gift/BuyButton.tsx");
+  const all = [thanks, order, voucher, redeem, buy, src("../components/gift/GiftPages.tsx")];
   for (const file of all) {
-    assert.doesNotMatch(file, /searchParams|useSearchParams|location\.(search|hash)|URLSearchParams/);
+    assert.doesNotMatch(file, /useSearchParams|location\.hash|history\.(push|replace)State/);
     assert.doesNotMatch(file, /indexedDB|document\.cookie|gtag|dataLayer|console\.(log|info|debug)/);
   }
-  // sessionStorage appears only in the redeem flow, and only as the handoff / sign-in entry helpers' storage argument
-  for (const file of [thanks, voucher, src("../components/gift/BuyButton.tsx"), src("../components/gift/GiftPages.tsx")]) assert.doesNotMatch(file, /sessionStorage/);
+  // the only thing read from the address is the session id, through the tested helper
+  for (const file of [thanks, voucher, redeem, buy]) assert.doesNotMatch(file, /location\.search|URLSearchParams/);
+  assert.equal((order.match(/location\.search/g) ?? []).length, 1);
+  assert.match(order, /sessionIdFrom\(window\.location\.search\)/);
+  // no web storage at all on the thanks / order / voucher / buy side
+  for (const file of [thanks, order, voucher, buy]) assert.doesNotMatch(file, /localStorage|sessionStorage|setItem/);
   for (const m of redeem.match(/[\w.]*sessionStorage/g) ?? []) assert.equal(m, "window.sessionStorage");
-  // thanks + voucher: no network at all, no router push with a query, storage only for the language marker
-  for (const file of [thanks, voucher]) {
-    assert.doesNotMatch(file, /fetch\(|XMLHttpRequest|sendBeacon|WebSocket/);
-    assert.doesNotMatch(file, /setItem/);
-  }
-  const storageCalls = thanks.match(/localStorage\.\w+\(([^)]*)\)/g) ?? [];
-  assert.ok(storageCalls.length > 0);
-  for (const call of storageCalls) assert.match(call, /^localStorage\.(getItem|removeItem)\(GIFT_LANG_KEY\)$/);
-  assert.doesNotMatch(thanks, /router\.(push|replace)\([^)]*code/);
+  // the order view makes exactly one request (GET order); the thanks body and the voucher make none
+  for (const file of [thanks, voucher]) assert.doesNotMatch(file, /fetch\(|XMLHttpRequest|sendBeacon|WebSocket/);
+  assert.equal((order.match(/fetch\(/g) ?? []).length, 1);
+  assert.match(order, /fetch\(orderUrlOf\(sid\)/);
   // redeem: no localStorage; the only request of its own is the POST to the API with the code in the JSON body (sign-in requests live in webSignin.ts)
   assert.doesNotMatch(redeem, /localStorage/);
   assert.equal((redeem.match(/fetch\(/g) ?? []).length, 1);
@@ -231,9 +222,9 @@ test("the code never reaches a URL, storage, a request or analytics", () => {
   assert.match(redeem, /method: "POST"/);
   assert.match(redeem, /JSON\.stringify\(\{ code: normalizeCode\(code\), locale \}\)/); // no e-mail in the redeem body (M6-S01b)
   assert.doesNotMatch(redeem, /code: normalizeCode\(code\),[^}]*email/);
-  // the buy button only ever stores the language
-  const buy = src("../components/gift/BuyButton.tsx");
-  assert.deepEqual(buy.match(/localStorage\.\w+\([^)]*\)/g), ["localStorage.setItem(GIFT_LANG_KEY, locale)", "localStorage.removeItem(GIFT_LANG_KEY)"]);
+  // the thank-you pages send no referrer (the address carries the session id)
+  assert.match(src("../components/gift/GiftPages.tsx"), /page === "thanks" \? \{ referrer: "no-referrer" as const \}/);
+  assert.match(src("../components/promise-kit/KitThanksPage.tsx"), /referrer: "no-referrer"/);
 });
 
 test("thanks and redeem pages are noindex and never in the sitemap or llms files", () => {
@@ -258,7 +249,8 @@ test("the printed voucher never shows a computed date", () => {
   const v = src("../components/gift/Voucher.tsx");
   const t = src("../components/gift/ThanksClient.tsx");
   assert.doesNotMatch(v, /formatGiftDate|validUntil|todayIso/);
-  assert.doesNotMatch(t, /type="date"|validUntil|todayIso|formatGiftDate/);
+  // the thank-you page shows the server's expiry (formatOrderDate of expires_at), never a date it computed itself
+  assert.doesNotMatch(t, /type="date"|validUntil\(|todayIso|formatGiftDate/);
   assert.equal(giftCopy.sl.thanks.voucher.validity, "Velja 12 mesecev od nakupa");
   assert.equal(giftCopy.en.thanks.voucher.validity, "Valid for 12 months from purchase");
   for (const l of locales) assert.ok(giftCopy[l].thanks.voucher.validity.includes("12"), l);
@@ -266,20 +258,21 @@ test("the printed voucher never shows a computed date", () => {
 
 // MA3
 test("no third-party script on the thanks and redeem pages", () => {
-  for (const p of ["/gift/thanks", "/en/gift/thanks", "/sl/darilni-bon/hvala", "/redeem", "/en/redeem", "/sl/unovci", "/sl/unovci/", "/redeem/", ...locales.flatMap((l) => [giftPath(l, "thanks"), giftPath(l, "redeem")])]) assert.ok(isGiftPrivatePath(p), p);
+  for (const p of ["/gift/thanks", "/en/gift/thanks", "/sl/darilni-bon/hvala", "/redeem", "/en/redeem", "/sl/unovci", "/sl/unovci/", "/redeem/", "/promise-kit/thanks", "/sl/obljuba-o-ljubljencku/hvala", ...locales.flatMap((l) => [giftPath(l, "thanks"), giftPath(l, "redeem")])]) assert.ok(isGiftPrivatePath(p), p);
   for (const p of ["/", "/gift", "/sl/darilni-bon", "/de/geschenkgutschein", "/sl", "/privacy", "/sl/pogoji", "/redeemx", null, undefined]) assert.ok(!isGiftPrivatePath(p as string), String(p));
   const layout = src("../app/[locale]/layout.tsx");
   assert.match(layout, /<PrivatePageGate>\s*<GoogleAnalytics \/>\s*<GoogleTagManager \/>\s*<\/PrivatePageGate>/);
   assert.match(src("../components/gift/PrivatePageGate.tsx"), /isGiftPrivatePath\(usePathname\(\)\)/);
   // the gift components load no script of their own
-  for (const f of ["ThanksClient", "RedeemFlow", "AuthReturn", "Voucher", "GiftPages"]) assert.doesNotMatch(src(`../components/gift/${f}.tsx`), /next\/script|<script|createElement\("script"/);
+  for (const f of ["ThanksClient", "RedeemFlow", "AuthReturn", "Voucher", "GiftPages", "BuyButton"]) assert.doesNotMatch(src(`../components/gift/${f}.tsx`), /next\/script|<script|createElement\("script"/);
+  for (const f of ["../components/shop/OrderStatus.tsx", "../components/promise-kit/KitThanksClient.tsx", "../components/promise-kit/SampleForm.tsx"]) assert.doesNotMatch(src(f), /next\/script|<script|createElement\("script"/);
 });
 
-// m3
-test("switch on but no checkout URL: the sales page is out of the sitemap and noindex", () => {
-  assert.equal(giftSitemapPaths(true, false), null);
-  assert.deepEqual(giftSitemapPaths(true, true), giftPathsOf("gift"));
-  assert.match(src("../components/gift/GiftPages.tsx"), /noIndex = page !== "gift" \|\| giftBuyUrl\(\) === null/);
+// m3 (M6-S09: no checkout URL any more — the sales page is complete whenever the switch is on)
+test("switch on: the sales page is in the sitemap and indexable; off: nowhere", () => {
+  assert.equal(giftSitemapPaths(false), null);
+  assert.deepEqual(giftSitemapPaths(true), giftPathsOf("gift"));
+  assert.match(src("../components/gift/GiftPages.tsx"), /const noIndex = page !== "gift";/);
 });
 
 // m1 / m4 / m5 / m6
@@ -287,7 +280,10 @@ test("manual build reads .env.production; refund text marked; SL copy; timeout m
   const ignore = src("../../.dockerignore");
   assert.match(ignore, /^\.env\*$/m);
   assert.match(ignore, /^!\.env\.production$/m);
-  assert.doesNotMatch(src("../../Dockerfile"), /ARG NEXT_PUBLIC_(FEATURE_GIFT|LS_GIFT_URL|PETPREP_API_URL)/);
+  assert.doesNotMatch(src("../../Dockerfile"), /ARG NEXT_PUBLIC_(FEATURE_GIFT|PETPREP_API_URL)/);
+  // Lemon Squeezy is gone (M6-S09): no checkout URL variables and no word of it in the shop copy
+  assert.doesNotMatch(src("../../.env.production"), /NEXT_PUBLIC_LS_/);
+  for (const l of locales) assert.doesNotMatch(JSON.stringify(giftCopy[l]), /Lemon Squeezy/, l);
   assert.match(src("../content/gift/index.ts"), /TODO\(David\): the refund wording/);
   assert.doesNotMatch(JSON.stringify(giftCopy.sl), /botr/i);
   for (const l of locales) assert.ok(giftCopy[l].messages.timeout.length > 20, l);

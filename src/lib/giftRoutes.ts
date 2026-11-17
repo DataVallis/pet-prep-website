@@ -6,7 +6,7 @@
  * (thank-you, a child of the sales page), like every other localized page.
  */
 import { locales, salesSlugs, type Locale } from "../i18n/config.ts";
-import { giftBuyUrl, giftPathsOf, isGiftEnabled } from "./gift.ts";
+import { giftPathsOf, isGiftEnabled } from "./gift.ts";
 
 /** Static params `{ locale, slug }` of the top-level gift pages (sales page and redeem): none while the switch is off. */
 export function giftSlugParams(enabled: boolean = isGiftEnabled()): { locale: Locale; slug: string }[] {
@@ -19,12 +19,12 @@ export function giftThanksParams(locale: Locale, enabled: boolean = isGiftEnable
 }
 
 /**
- * Only the sales page is indexable; thanks and redeem never reach the sitemap. While the checkout URL is
- * missing the page has a dead buy button, so it stays out of the sitemap (and is noindex) until the URL is set.
+ * Only the sales page is indexable; thanks and redeem never reach the sitemap. Since M6-S09 the buy button asks
+ * our API for a Stripe checkout, so the page is complete whenever the switch is on.
  * Returns the sales-page path of every language, or null.
  */
-export function giftSitemapPaths(enabled: boolean = isGiftEnabled(), hasBuyUrl: boolean = giftBuyUrl() !== null): Record<Locale, string> | null {
-  return enabled && hasBuyUrl ? giftPathsOf("gift") : null;
+export function giftSitemapPaths(enabled: boolean = isGiftEnabled()): Record<Locale, string> | null {
+  return enabled ? giftPathsOf("gift") : null;
 }
 
 /** Static params of `/auth/return` (M6-S01b): the one English-tree page, only while the switch is on. Never in the sitemap. */

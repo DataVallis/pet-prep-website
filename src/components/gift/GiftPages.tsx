@@ -3,11 +3,12 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getDictionary } from "@/content";
 import { giftCopy } from "@/content/gift";
+import { shopCopy } from "@/content/shop";
 import { isLocale, pathFor } from "@/i18n/config";
 import { buildMetadataFor, pathAlternates } from "@/lib/seo";
 import { breadcrumbsLd, faqLd, graph } from "@/lib/jsonld";
 import { absoluteUrl } from "@/lib/site";
-import { formatGiftPrice, giftBuyUrl, giftPath, giftPathsOf, isGiftEnabled, isPromiseKitEnabled, promiseKitHref, type GiftLocale, type GiftPageKey } from "@/lib/gift";
+import { formatGiftPrice, giftPath, giftPathsOf, isGiftEnabled, isPromiseKitEnabled, promiseKitHref, type GiftLocale, type GiftPageKey } from "@/lib/gift";
 import { Faq } from "../Faq";
 import { JsonLd } from "../JsonLd";
 import { BuyButton } from "./BuyButton";
@@ -25,8 +26,8 @@ export function giftMetadata(page: GiftPageKey, locale: string): Metadata {
   const lang: GiftLocale = locale;
   const copy = giftCopy[lang];
   const meta = page === "gift" ? copy.meta : page === "thanks" ? copy.thanks.meta : copy.redeem.meta;
-  // Thanks and redeem are never indexed; the sales page is not either while its checkout URL is missing (dead buy button).
-  const noIndex = page !== "gift" || giftBuyUrl() === null;
+  // Thanks and redeem are never indexed.
+  const noIndex = page !== "gift";
   const paths = giftPathsOf(page);
   const base = buildMetadataFor({
     locale: lang,
@@ -38,7 +39,13 @@ export function giftMetadata(page: GiftPageKey, locale: string): Metadata {
   });
   // noindex pages keep their language alternates: the language switcher reads them from <head>.
   return noIndex
-    ? { ...base, alternates: { canonical: absoluteUrl(paths[lang]), languages: pathAlternates(paths) }, robots: { index: false, follow: false } }
+    ? {
+        ...base,
+        alternates: { canonical: absoluteUrl(paths[lang]), languages: pathAlternates(paths) },
+        robots: { index: false, follow: false },
+        // The thank-you address carries the Stripe session id: never send it on as a referrer (M6-S09).
+        ...(page === "thanks" ? { referrer: "no-referrer" as const } : {}),
+      }
     : base;
 }
 
@@ -67,10 +74,6 @@ function PageHead({ eyebrow, title, lead }: { eyebrow: string; title: string; le
 
 export function GiftPage({ lang }: { lang: GiftLocale }) {
   const c = giftCopy[lang];
-  const buyUrl = giftBuyUrl();
-  if (!buyUrl && process.env.NODE_ENV === "development") {
-    console.warn("[gift] NEXT_PUBLIC_LS_GIFT_URL is not set: the buy button is disabled.");
-  }
   const kitHref = isPromiseKitEnabled() ? promiseKitHref(lang) : null;
   const path = giftPath(lang, "gift");
   const dict = getDictionary(lang);
@@ -104,13 +107,14 @@ export function GiftPage({ lang }: { lang: GiftLocale }) {
             </header>
             <div className="flex flex-col gap-4">
               <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
-                <BuyButton href={buyUrl} locale={lang} label={`${c.buy.button} · ${formatGiftPrice(lang)}`} soon={c.buy.soon} newTab={c.buy.newTab} />
+                <BuyButton product="gift_voucher" locale={lang} label={`${c.buy.button} · ${formatGiftPrice(lang)}`} />
                 <p className="font-display text-[28px] font-extrabold tracking-[-0.02em]">{formatGiftPrice(lang)}</p>
               </div>
               <ul className="flex flex-col gap-1 text-[15px] text-muted">
                 <li>{c.buy.priceNote}</li>
                 <li>{c.buy.validity}</li>
                 <li>{c.buy.refund}</li>
+                <li>{shopCopy[lang].checkout.secure}</li>
               </ul>
             </div>
           </div>
