@@ -1049,6 +1049,21 @@
         "Terier manchesterski",
         "Manchester terier"
       ]
+    },
+    "tibetan_terrier": {
+      "name": "Terier tybetański",
+      "slug": "terier-tybetanski",
+      "synonyms": [
+        "Tibetan terrier"
+      ]
+    },
+    "greyhound": {
+      "name": "Chart angielski",
+      "slug": "chart-angielski",
+      "synonyms": [
+        "Greyhound",
+        "English greyhound"
+      ]
     }
   },
   "suitability_labels": {
