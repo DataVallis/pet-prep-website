@@ -809,6 +809,15 @@ const en: RegistryCopy = {
       sources: ["S904", "S905", "S906", "S907", "S909", "S10"],
     },
 
+    greyhound: {
+      aka: "English Greyhound, angleški hrt",
+      text: [
+        "The Greyhound is a large sighthound from Great Britain; the FCI lists it in Group 10 among the short-haired sighthounds. The FCI standard describes a strongly built, upstanding dog of generous proportions, muscular power and symmetrical formation, intelligent, gentle, affectionate and even tempered, with a fine, close coat in black, white, red, blue, fawn, fallow or brindle, or any of these colours broken with white; it gives an ideal height of 71–76 cm for males and 68–71 cm for females. The AKC standard gives a weight of 65 to 70 pounds (about 29.5–31.8 kg) for dogs and 60 to 65 pounds (about 27.2–29.5 kg) for bitches. A dog of this size is fully grown at about 15–18 months (PetMD). A UK VetCompass study of greyhounds under veterinary care found a median longevity of 11.4 years; the PDSA gives a lifespan of over 10 years.",
+        "The PDSA says Greyhounds aren't overly energetic: they need about an hour of exercise a day and prefer a couple of good runs to miles of walking, and their short coat needs weekly grooming. With the right socialisation as puppies they can make good family pets, but they have a strong chase instinct — PetMD says their very strong prey drive makes them a poor fit for homes with cats or other small animals. WebMD recommends brushing the teeth daily and notes that, without an insulating undercoat, Greyhounds can be susceptible to extreme temperatures.",
+      ],
+      sources: ["S912", "S913", "S914", "S916", "S917", "S918", "S920", "S10"],
+    },
+
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
       text: [
