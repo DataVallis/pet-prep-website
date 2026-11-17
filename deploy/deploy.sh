@@ -169,14 +169,23 @@ IMAGE_TAR="${IMAGE_TAR:-}"
 if [ -n "$IMAGE_REF" ]; then
   [[ "$IMAGE_REF" =~ ^[a-z0-9.-]+(/[a-z0-9._-]+)+@sha256:[0-9a-f]{64}$ ]] || fail "IMAGE_REF must be a digest reference (…@sha256:<64 hex>)"
   log "1/5 Pulling ${IMAGE_REF} (commit ${SHA})"
-  pulled=true
-  if [ -n "${PULL_DOCKER_CONFIG:-}" ]; then
-    DOCKER_CONFIG="$PULL_DOCKER_CONFIG" docker pull -q "$IMAGE_REF" >/dev/null || pulled=false
-    rm -rf "$PULL_DOCKER_CONFIG" # the login was only for this pull
-  else
-    docker pull -q "$IMAGE_REF" >/dev/null || pulled=false
-  fi
-  $pulled || fail "could not pull ${IMAGE_REF} — nothing changed, the old site keeps running"
+  # One retry (incident 2026-11-17: containerd failed to extract a layer of a valid image —
+  # "UtimesNanoAt … .next/node_modules: no such file or directory" — while the same digest ran in CI's smoke test).
+  pulled=false
+  for attempt in 1 2; do
+    if [ -n "${PULL_DOCKER_CONFIG:-}" ]; then
+      DOCKER_CONFIG="$PULL_DOCKER_CONFIG" docker pull -q "$IMAGE_REF" >/dev/null && pulled=true
+    else
+      docker pull -q "$IMAGE_REF" >/dev/null && pulled=true
+    fi
+    $pulled && break
+    if [ "$attempt" = 1 ]; then
+      log "pull failed — retrying once in 15 s"
+      sleep 15
+    fi
+  done
+  [ -n "${PULL_DOCKER_CONFIG:-}" ] && rm -rf "$PULL_DOCKER_CONFIG" # the login was only for this pull
+  $pulled || fail "could not pull ${IMAGE_REF} (2 attempts) — nothing changed, the old site keeps running"
   docker tag "$IMAGE_REF" "${IMAGE}:next"
   if [ -n "${EXPECT_TREE:-}" ]; then
     tree="$(docker image inspect -f '{{index .Config.Labels "org.petprep.tree"}}' "${IMAGE}:next" 2>/dev/null || true)"
