@@ -43,7 +43,7 @@ export function KidsMenu({ locale }: { locale: Locale }) {
           {c.items.map((it) => (
             <NavLink key={it.page} href={pathFor(locale, it.page)} onClick={close} className="flex items-center gap-4 rounded-[18px] p-2.5 hover:bg-mint-tint" activeClassName="bg-mint-tint ring-2 ring-mint">
               <Thumb item={it} size="sm" />
-              <span className="flex flex-col gap-0.5">
+              <span className="flex min-w-0 flex-col gap-0.5 whitespace-normal">
                 <span className="font-display text-[17px] font-bold text-graphite">{it.title}</span>
                 <span className="text-[14px] leading-snug text-muted">{it.text}</span>
               </span>
