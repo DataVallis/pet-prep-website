@@ -908,6 +908,22 @@
       "synonyms": [
         "Terrier de Manchester"
       ]
+    },
+    "tibetan_terrier": {
+      "name": "Terrier del Tíbet",
+      "slug": "terrier-del-tibet",
+      "synonyms": [
+        "Terrier tibetano",
+        "Tibetan terrier"
+      ]
+    },
+    "greyhound": {
+      "name": "Greyhound",
+      "slug": "greyhound",
+      "synonyms": [
+        "Galgo inglés",
+        "English greyhound"
+      ]
     }
   },
   "suitability_labels": {
