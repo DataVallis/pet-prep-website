@@ -43,7 +43,15 @@
         "Labrador retriever",
         "Labradorský retriever",
         "Lab"
-      ]
+      ],
+      "colours": {
+        "black": "Černá",
+        "yellow": "Žlutá",
+        "light-cream": "Světle krémová",
+        "fox-red": "Liščí červená",
+        "chocolate": "Čokoládová",
+        "light-liver": "Světle jaterní"
+      }
     },
     "golden_retriever": {
       "name": "Zlatý retrívr",
@@ -53,7 +61,14 @@
         "Golden retrívr",
         "Zlatý retriever",
         "Golden"
-      ]
+      ],
+      "colours": {
+        "rich-gold": "Sytě zlatá",
+        "light-gold": "Světle zlatá",
+        "deep-gold": "Tmavě zlatá",
+        "cream": "Krémová",
+        "pale-cream": "Bledě krémová"
+      }
     },
     "french_bulldog": {
       "name": "Francouzský buldoček",
@@ -63,7 +78,12 @@
         "Francouzský buldok",
         "Frenchie",
         "French bulldog"
-      ]
+      ],
+      "colours": {
+        "fawn": "Plavá",
+        "brindle": "Žíhaná",
+        "light-fawn": "Světle plavá"
+      }
     },
     "german_shepherd": {
       "name": "Německý ovčák",
@@ -73,7 +93,13 @@
         "NO",
         "Deutscher Schäferhund",
         "German shepherd"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Černá s pálením",
+        "black-gold": "Černá se zlatým pálením",
+        "sable": "Sobolí",
+        "black": "Černá"
+      }
     },
     "cavalier_king_charles_spaniel": {
       "name": "Kavalír King Charles španěl",
@@ -83,7 +109,13 @@
         "Cavalier",
         "Cavalier King Charles spaniel",
         "CKCS"
-      ]
+      ],
+      "colours": {
+        "blenheim": "Blenheim (kaštanová s bílou)",
+        "tricolour": "Tříbarevná (černá, bílá, pálení)",
+        "ruby": "Ruby (sytě červená)",
+        "black-tan": "Černá s pálením"
+      }
     },
     "beagle": {
       "name": "Bígl",
@@ -91,7 +123,13 @@
       "synonyms": [
         "Beagle",
         "Bigl"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Tříbarevná (černá, pálení, bílá)",
+        "tan-white": "Pálená s bílou",
+        "lemon-white": "Citronová s bílou",
+        "red-white": "Červenobílá"
+      }
     },
     "standard_poodle": {
       "name": "Pudl velký",
@@ -101,7 +139,14 @@
         "Královský pudl",
         "Velký pudl",
         "Standard poodle"
-      ]
+      ],
+      "colours": {
+        "black": "Černá",
+        "white": "Bílá",
+        "brown": "Hnědá",
+        "grey": "Šedá",
+        "fawn": "Meruňková"
+      }
     },
     "dachshund": {
       "name": "Jezevčík",
@@ -112,7 +157,12 @@
         "Dachshund",
         "Dackel",
         "Teckel"
-      ]
+      ],
+      "colours": {
+        "red": "Červená",
+        "black-tan": "Černá s pálením",
+        "chocolate-tan": "Čokoládová s pálením"
+      }
     },
     "australian_shepherd": {
       "name": "Australský ovčák",
@@ -120,7 +170,12 @@
       "synonyms": [
         "Aussie",
         "Australian shepherd"
-      ]
+      ],
+      "colours": {
+        "blue-merle": "Blue merle",
+        "black": "Černá",
+        "red-merle": "Red merle"
+      }
     },
     "havanese": {
       "name": "Havanský psík",
@@ -130,7 +185,15 @@
         "Bišonek havanský",
         "Havanese",
         "Bichon havanais"
-      ]
+      ],
+      "colours": {
+        "fawn": "Plavá",
+        "black": "Černá",
+        "havana-brown": "Havanská hnědá",
+        "tobacco": "Tabáková",
+        "reddish-brown": "Červenohnědá",
+        "white": "Bílá"
+      }
     },
     "west_highland_white_terrier": {
       "name": "West highland white teriér",

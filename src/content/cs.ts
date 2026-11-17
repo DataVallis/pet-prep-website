@@ -94,7 +94,7 @@ const cs: Dictionary = {
       text: "Pro rodiny, které chtějí celý zážitek a na konci certifikát.",
       features: [
         "Vše z plánu Kříženec",
-        "Jakékoli plemeno, například [border kolie](breed:border_collie), nebo kříženec a domácí kočka",
+        "Jakékoli plemeno, například [border kolie](breed:border_collie), nebo kříženec a domácí kočka",
         "Nálady vašeho mazlíčka v podobě AI videí",
         "Certifikát odpovědnosti",
         "Jedna cena, když se o mazlíčka dělí sourozenci",
@@ -155,7 +155,7 @@ const cs: Dictionary = {
       note: "Aplikace zatím není veřejně dostupná v App Store a Google Play – přihlaste se k předběžnému přístupu.",
     },
     promise: {
-      quote: "V každé rodině zazní „Slibuju, že se o něj budu starat.“ PetPrep promění slib v",
+      quote: "V každé rodině zazní „Slibuju, že se o něj budu starat.“ PetPrep promění slib v",
       highlight: "důkaz",
       text:
         "Když dítě v simulaci neuspěje, je to pro vaši rodinu úspěch: zjistíte to dřív, než by trpěl skutečný mazlíček, a dřív, než se zavážete k mnoha letům péče a výdajů.",
@@ -221,7 +221,7 @@ const cs: Dictionary = {
         },
       ],
       how: "Jak na to: založte si účet rodiče, přidejte sebe jako profil pečovatele a přihlaste se šestimístným kódem – na stejném nebo jiném telefonu.",
-      note: "Už dnes si můžete vybrat křížence a domácí kočku zdarma a 12týdenní výzvu s jedním z nich nebo s kterýmkoli plemenem psa či kočky z [encyklopedie zvířat](page:animals).",
+      note: "Už dnes si můžete vybrat křížence a domácí kočku zdarma a 12týdenní výzvu s jedním z nich nebo s kterýmkoli plemenem psa či kočky z [encyklopedie zvířat](page:animals).",
       link: "Jak používat PetPrep sami",
     },
     after: {
@@ -377,7 +377,7 @@ const cs: Dictionary = {
           heading: "Soukromí už od návrhu",
           items: [
             "Děti se přihlašují kódem – bez e-mailu, bez hesla, bez příjmení.",
-            "Ukládáme přezdívku a rok narození, pokud ho zadáte. Nic dalšího o vašem dítěti neukládáme.",
+            "Ukládáme přezdívku a rok narození, pokud ho zadáte. Nic dalšího o vašem dítěti neukládáme.",
             "Oznámení nikdy neobsahují jméno dítěte, protože se mohou zobrazit na zamčené obrazovce; v názvu může být jméno mazlíčka, pokud jste mu ho dali.",
             "Kroky se berou z Apple Health (iPhone) nebo Health Connect (Android), pokud to povolíte (jen ke čtení), a kde to jde, z pohybového senzoru telefonu. PetPrep nepoužívá GPS a nesleduje polohu.",
             "Žádné reklamy, žádný chat s cizími lidmi, servery v EU.",
@@ -435,7 +435,7 @@ const cs: Dictionary = {
       },
       eyebrow: "Ceník",
       title: "Jednoduché, férové ceny.",
-      lead: "Začněte zdarma s křížencem. Celou 12týdenní výzvu si kupte, až budete chtít – 12 týdnů začne běžet až nákupem. Funguje to i se zvířetem zdarma, o které se vaše dítě už stará.",
+      lead: "Začněte zdarma s křížencem. Celou 12týdenní výzvu si kupte, až budete chtít – 12 týdnů začne běžet až nákupem. Funguje to i se zvířetem zdarma, o které se vaše dítě už stará.",
       blocks: [
         { type: "pricing" },
         {
@@ -459,10 +459,10 @@ const cs: Dictionary = {
           heading: "Otázky o cenách",
           items: [
             { q: "Je verze zdarma opravdu zdarma?", a: "Ano. Kříženec je zdarma navždy, a to s celou simulací, skutečnými procházkami i rodičovským přehledem." },
-            { q: "Co výzva zahrnuje?", a: "Náročná plemena, jako je [border kolie](breed:border_collie), nálady vašeho mazlíčka v podobě AI videí, na konci Certifikát odpovědnosti a přístup pro oba rodiče. Vybrat si ji můžete i s křížencem nebo domácí kočkou." },
-            { q: "Můžeme převést na výzvu bezplatné zvíře, které už naše dítě má?", a: "Ano, pokud je bezplatný kříženec nebo domácí kočka ještě ve hře. V rodičovské aplikaci spusťte výzvu z karty dítěte. Zvíře zůstává stejné: jméno, vzhled, věk i naučené povely. 12 týdnů, Care Score i certifikát se počítají od nákupu; dřívější dny zůstávají v historii, označené jako dny před výzvou, a nepočítají se. Cena je stejná: 49,99 € jednorázově, bez předplatného. Křížence vytvořené v rané verzi aplikace převést nelze; aplikace vám řekne, jestli se to týká toho vašeho." },
-            { q: "Může se zvíře z výzvy vrátit do bezplatného plánu?", a: "Ne na přání. Kříženec nebo domácí kočka se do bezplatného plánu vrátí jen tehdy, když obchod vrátí peníze za nákup; výzva pak skončí bez certifikátu. Když si výzvu později koupíte znovu, začne nových 12 týdnů." },
-            { q: "Bude mě aplikace tlačit do nákupu?", a: "Ne. Pokud se vaše dítě staralo o bezplatné zvíře alespoň 5 z jeho prvních 7 dnů, dostanete jedno oznámení a kartu v přehledu s informací o výzvě – jednou na zvíře a nikdy v klidových hodinách. Dítě nevidí ceny ani tuto připomínku." },
+            { q: "Co výzva zahrnuje?", a: "Náročná plemena, jako je [border kolie](breed:border_collie), nálady vašeho mazlíčka v podobě AI videí, na konci Certifikát odpovědnosti a přístup pro oba rodiče. Vybrat si ji můžete i s křížencem nebo domácí kočkou." },
+            { q: "Můžeme převést na výzvu bezplatné zvíře, které už naše dítě má?", a: "Ano, pokud je bezplatný kříženec nebo domácí kočka ještě ve hře. V rodičovské aplikaci spusťte výzvu z karty dítěte. Zvíře zůstává stejné: jméno, vzhled, věk i naučené povely. 12 týdnů, Care Score i certifikát se počítají od nákupu; dřívější dny zůstávají v historii, označené jako dny před výzvou, a nepočítají se. Cena je stejná: 49,99 € jednorázově, bez předplatného. Křížence vytvořené v rané verzi aplikace převést nelze; aplikace vám řekne, jestli se to týká toho vašeho." },
+            { q: "Může se zvíře z výzvy vrátit do bezplatného plánu?", a: "Ne na přání. Kříženec nebo domácí kočka se do bezplatného plánu vrátí jen tehdy, když obchod vrátí peníze za nákup; výzva pak skončí bez certifikátu. Když si výzvu později koupíte znovu, začne nových 12 týdnů." },
+            { q: "Bude mě aplikace tlačit do nákupu?", a: "Ne. Pokud se vaše dítě staralo o bezplatné zvíře alespoň 5 z jeho prvních 7 dnů, dostanete jedno oznámení a kartu v přehledu s informací o výzvě – jednou na zvíře a nikdy v klidových hodinách. Dítě nevidí ceny ani tuto připomínku." },
             { q: "Platí sourozenci dvakrát?", a: "Ne. Děti, které se dělí o jednoho mazlíčka, platí jednu cenu. Druhý mazlíček v rodině je samostatná výzva." },
             { q: "Jak zaplatím?", a: "Přímo v aplikaci přes App Store nebo Google Play. Vrácení peněz vyřizuje obchod, ve kterém jste nakupovali." },
             { q: "Co jsou Přání a může dítě něco koupit samo?", a: "Dítě může pro svého mazlíčka požádat o pelíšek, misky, hračku nebo pamlsky – najednou může mít otevřené až tři žádosti. Dostanete oznámení a věc buď koupíte, nebo zvolíte „Teď ne“. Dítě ceny nikdy nevidí a v dětské aplikaci nemůže nic koupit." },
@@ -494,7 +494,7 @@ const cs: Dictionary = {
             { q: "Mohou se sourozenci o mazlíčka dělit?", a: "Ano. Každé dítě podepíše vlastní smlouvu, každý úkon se připíše tomu, kdo ho udělal, a každé dítě dostane vlastní spravedlivé Care Score." },
             { q: "A co škola a večerka?", a: "Nastavte si klidové hodiny. Mazlíček zvolní, nic se neposílá a krmení, které celé vyjde na klidové hodiny, zajistíte vy." },
             { q: "Není to pro děti strašidelné?", a: "Ne. Důsledky jsou skutečné, ale šetrné: mazlíček jde k veterináři nebo do útulku, nikdy se neděje nic drastického a vždy je možné začít znovu." },
-            { q: "Která zvířata jsou k dispozici?", a: "Dnes [psi](species:dog) a [kočky](species:cat): kříženec a domácí kočka jsou zdarma a 12týdenní výzvu si můžete vybrat s jedním z nich nebo s kterýmkoli plemenem z [encyklopedie zvířat](page:animals), kde najdete i jeho doložené potřeby. Další druhy plánujeme." },
+            { q: "Která zvířata jsou k dispozici?", a: "Dnes [psi](species:dog) a [kočky](species:cat): kříženec a domácí kočka jsou zdarma a 12týdenní výzvu si můžete vybrat s jedním z nich nebo s kterýmkoli plemenem z [encyklopedie zvířat](page:animals), kde najdete i jeho doložené potřeby. Další druhy plánujeme." },
             { q: "V jakých jazycích?", a: "Dnes v angličtině a slovinštině. Další jazyky přibudou postupně, jak PetPrep vstoupí do dalších zemí." },
             { q: "Co se stane, až si pořídíme skutečného mazlíčka?", a: "PetPrep se může stát AI asistentem pro vašeho skutečného mazlíčka. Tato část je ve vývoji." },
           ],
@@ -542,7 +542,7 @@ const cs: Dictionary = {
           items: [
             "Herní jádro na serveru se synchronizací v reálném čase, otestované na simulacích celých dnů, na dnech změny času a na hraničních situacích v rodinách.",
             "Rodiny s více rodiči, více dětmi a společnými mazlíčky, se spravedlivým skóre pro každé dítě.",
-            "Jedineční fotorealističtí AI mazlíčci s měřenými a omezenými náklady na AI; média jsou uložená na pronajatých serverech v Německu (Hetzner, EU).",
+            "Jedineční fotorealističtí AI mazlíčci s měřenými a omezenými náklady na AI; média jsou uložená na pronajatých serverech v Německu (Hetzner, EU).",
             "Potřeby zvířat podle veterinárních a kynologických zdrojů, které citujeme – u každého čísla lze dohledat jeho zdroj.",
             "Bezpečnost dětí už od návrhu: přihlášení PINem bez e-mailu, minimum dat, žádné reklamy, jen ověřená média.",
           ],
@@ -599,9 +599,9 @@ const cs: Dictionary = {
                 "Kódy: přihlašovací a zvací kódy jsou uložené jen jako hashe a po čase vyprší.",
                 "Hlášení chyb aplikace: když aplikace zamrzne nebo spadne, může odeslat krátké technické hlášení na náš server v EU (typ a text chyby, místo v kódu, verze aplikace a operačního systému, název obrazovky, role rodič/dítě). Neobsahuje jméno, e-mailovou adresu, ID uživatele ani IP adresu, nesdílí se s žádnou třetí stranou a po 30 dnech se maže.",
                 "Seznam pro předběžný přístup (tento web): vaše e-mailová adresa, jazyk stránky a čas přihlášení.",
-                "Partnerský formulář (tento web): název firmy, jméno kontaktní osoby, e-mailová adresa a zpráva. Používáme je jen k odpovědi na vaši poptávku, uchováváme je 12 měsíců a poté je smažeme. Právním základem je váš souhlas, který udělíte zaškrtnutím políčka před odesláním.",
-                "Stránky „Kolik práce je pes?“ (tento web): pokud zadáte svou e-mailovou adresu a zaškrtnete souhlas, uložíme vaši e-mailovou adresu, čas souhlasu, zvolené plemeno, zda jste si prohlíželi psa, nebo štěně, jazyk stránky a také kolikrát a kdy naposledy jste adresu zadali. Vaši IP adresu ani jméno neukládáme. Údaje uchováváme na našem serveru v EU, dokud nepožádáte o jejich výmaz. Souhrn k vytištění vzniká ve vašem prohlížeči a nikam se neodesílá.",
-                "Uplatnění dárkového poukazu (tento web): rodič se přihlásí přes Google, Apple nebo e-mailem a heslem. U e-mailu a hesla je náš server ověří proti existujícímu rodičovskému účtu a heslo nikdy neukládá v čitelné podobě; od Googlu nebo Applu dostaneme jen identifikátor účtu a žádné jiné jejich údaje neukládáme. Krátkodobý přihlašovací token je v paměti prohlížeče uchován nejdéle 15 minut. Při přesměrování na Google nebo Apple a při návratu jsou dva záznamy (petprep.signin a petprep.webSession.handoff) uloženy jen v úložišti relace (session storage) této karty prohlížeče. Smažou se ihned, jakmile je přečte návratová stránka, jinak při zavření karty; předání se přijme jen do 60 sekund. Po odhlášení nebo zavření karty nezůstane v prohlížeči uloženo nic. Na našem serveru zůstanou jen krátkodobé technické záznamy: záznam o přihlašovacím tokenu (ID účtu a časy, bez jména a e-mailu), který se samočinně smaže zhruba dva dny po vypršení, a čítače omezení (neúspěšné pokusy na účet v hashované podobě 15 minut; požadavky na síťovou adresu nejvýše hodinu).",
+                "Partnerský formulář (tento web): název firmy, jméno kontaktní osoby, e-mailová adresa a zpráva. Používáme je jen k odpovědi na vaši poptávku, uchováváme je 12 měsíců a poté je smažeme. Právním základem je váš souhlas, který udělíte zaškrtnutím políčka před odesláním.",
+                "Stránky „Kolik práce je pes?“ (tento web): pokud zadáte svou e-mailovou adresu a zaškrtnete souhlas, uložíme vaši e-mailovou adresu, čas souhlasu, zvolené plemeno, zda jste si prohlíželi psa, nebo štěně, jazyk stránky a také kolikrát a kdy naposledy jste adresu zadali. Vaši IP adresu ani jméno neukládáme. Údaje uchováváme na našem serveru v EU, dokud nepožádáte o jejich výmaz. Souhrn k vytištění vzniká ve vašem prohlížeči a nikam se neodesílá.",
+                "Uplatnění dárkového poukazu (tento web): rodič se přihlásí přes Google, Apple nebo e-mailem a heslem. U e-mailu a hesla je náš server ověří proti existujícímu rodičovskému účtu a heslo nikdy neukládá v čitelné podobě; od Googlu nebo Applu dostaneme jen identifikátor účtu a žádné jiné jejich údaje neukládáme. Krátkodobý přihlašovací token je v paměti prohlížeče uchován nejdéle 15 minut. Při přesměrování na Google nebo Apple a při návratu jsou dva záznamy (petprep.signin a petprep.webSession.handoff) uloženy jen v úložišti relace (session storage) této karty prohlížeče. Smažou se ihned, jakmile je přečte návratová stránka, jinak při zavření karty; předání se přijme jen do 60 sekund. Po odhlášení nebo zavření karty nezůstane v prohlížeči uloženo nic. Na našem serveru zůstanou jen krátkodobé technické záznamy: záznam o přihlašovacím tokenu (ID účtu a časy, bez jména a e-mailu), který se samočinně smaže zhruba dva dny po vypršení, a čítače omezení (neúspěšné pokusy na účet v hashované podobě 15 minut; požadavky na síťovou adresu nejvýše hodinu).",
               ],
             },
             {
@@ -647,8 +647,8 @@ const cs: Dictionary = {
                 "K provozu a zabezpečení služby pomocí hlášení chyb aplikace, která nám pomáhají opravovat zamrzání a pády (oprávněný zájem).",
                 "K plnění zákonných povinností, například účetnictví u nákupů (právní povinnost).",
                 "Abychom vám poslali e-mail o spuštění PetPrepu, pokud jste se přihlásili k předběžnému přístupu (souhlas – odhlásit se můžete v každém e-mailu).",
-                "Abychom odpověděli na poptávku odeslanou přes partnerský formulář (souhlas; údaje uchováváme 12 měsíců).",
-                "Abychom vám e-mailem posílali novinky a tipy PetPrep, pokud jste zadali svou e-mailovou adresu a zaškrtli souhlas na stránkách „Kolik práce je pes?“ (souhlas – odhlásit se můžete v každé zprávě a o výmaz údajů můžete kdykoli požádat).",
+                "Abychom odpověděli na poptávku odeslanou přes partnerský formulář (souhlas; údaje uchováváme 12 měsíců).",
+                "Abychom vám e-mailem posílali novinky a tipy PetPrep, pokud jste zadali svou e-mailovou adresu a zaškrtli souhlas na stránkách „Kolik práce je pes?“ (souhlas – odhlásit se můžete v každé zprávě a o výmaz údajů můžete kdykoli požádat).",
                 "Abychom pomocí Google Analytics pochopili, jak návštěvníci tento web používají, jen pokud povolíte analytické cookies (souhlas – můžete ho kdykoli změnit v Nastavení cookies).",
               ],
             },
@@ -662,7 +662,7 @@ const cs: Dictionary = {
             {
               heading: "8. Obrázky a videa vytvořené AI",
               paragraphs: [
-                "Fotku a krátká videa každého zvířete vytváří AI služba jen z popisu zvířete (plemeno, srst, kresba a podobně). Popis nikdy neobsahuje jména ani žádné informace o vaší rodině. Hotová média ukládáme na pronajatých serverech v Německu (Hetzner, EU) a zobrazujeme přes krátkodobě platné odkazy.",
+                "Fotku a krátká videa každého zvířete vytváří AI služba jen z popisu zvířete (plemeno, srst, kresba a podobně). Popis nikdy neobsahuje jména ani žádné informace o vaší rodině. Hotová média ukládáme na pronajatých serverech v Německu (Hetzner, EU) a zobrazujeme přes krátkodobě platné odkazy.",
               ],
             },
             {
@@ -675,8 +675,8 @@ const cs: Dictionary = {
                 "E-maily k předběžnému přístupu: Klaviyo (dostává jen e-mailovou adresu a jazyk, které na tomto webu zadáte).",
                 "Souhlas s cookies na webu: Kockica (ukládá vaši volbu souhlasu).",
                 "Analytika webu: Google Analytics 4 od Google Ireland Ltd., jen s vaším souhlasem; Google Analytics 4 IP adresy neukládá.",
-                "Správa značek webu: Google Tag Manager od Google Ireland Ltd.; sám cookies nenastavuje a značky, které načítá, se řídí vaším souhlasem.",
-                "Vložená videa: YouTube od Google Ireland Ltd. (youtube-nocookie.com), načtou se až po spuštění přehrávání a povolení reklamních cookies.",
+                "Správa značek webu: Google Tag Manager od Google Ireland Ltd.; sám cookies nenastavuje a značky, které načítá, se řídí vaším souhlasem.",
+                "Vložená videa: YouTube od Google Ireland Ltd. (youtube-nocookie.com), načtou se až po spuštění přehrávání a povolení reklamních cookies.",
               ],
             },
             {
@@ -707,7 +707,7 @@ const cs: Dictionary = {
           type: "cookies",
           heading: "14. Cookies",
           paragraphs: [
-            "Nezbytné cookies zajišťují fungování webu a pamatují si vaši volbu souhlasu. Všechny ostatní cookies se nastavují jen tehdy, když je povolíte v liště, podle kategorií: funkční (další funkce), analytické (Google Analytics: které stránky lidé navštěvují) a reklamní (videa z YouTube vložená na některých stránkách; na tomto webu reklamy nezobrazujeme). Google Tag Manager sám cookies nenastavuje a každý tag, který načte, se řídí vaší volbou. Svou volbu můžete kdykoli změnit nebo odvolat.",
+            "Nezbytné cookies zajišťují fungování webu a pamatují si vaši volbu souhlasu. Všechny ostatní cookies se nastavují jen tehdy, když je povolíte v liště, podle kategorií: funkční (další funkce), analytické (Google Analytics: které stránky lidé navštěvují) a reklamní (videa z YouTube vložená na některých stránkách; na tomto webu reklamy nezobrazujeme). Google Tag Manager sám cookies nenastavuje a každý tag, který načte, se řídí vaší volbou. Svou volbu můžete kdykoli změnit nebo odvolat.",
             "Tabulku níže automaticky vytváří lišta souhlasu podle toho, co na tomto webu zjistí, takže uvádí cookies, které skutečně používáme.",
           ],
           settings: "Změnit nastavení cookies",
@@ -750,7 +750,7 @@ const cs: Dictionary = {
             {
               heading: "3. 12týdenní výzva, Care Score a certifikát",
               items: [
-                "Výzva trvá 12 týdnů (84 dnů programu) a začíná nákupem; každý pečovatel má svůj vlastní konec. Doba, kdy hra čeká na platbu, se do 12 týdnů nezapočítává. Pokud bezplatné zvíře převedete na výzvu, začne 12 týdnů rovněž nákupem; věk zvířete se nevynuluje a dny před nákupem zůstávají viditelné v historii, označené jako dny před výzvou, ale nepočítají se do 12 týdnů, do Care Score ani do certifikátu.",
+                "Výzva trvá 12 týdnů (84 dnů programu) a začíná nákupem; každý pečovatel má svůj vlastní konec. Doba, kdy hra čeká na platbu, se do 12 týdnů nezapočítává. Pokud bezplatné zvíře převedete na výzvu, začne 12 týdnů rovněž nákupem; věk zvířete se nevynuluje a dny před nákupem zůstávají viditelné v historii, označené jako dny před výzvou, ale nepočítají se do 12 týdnů, do Care Score ani do certifikátu.",
                 "Care Score (0–100) ukazuje, jaký podíl očekávaných povinností (krmení, voda, úklid, procházka, výcvik) pečovatel splnil sám; každé onemocnění zvířete ho snižuje. Doba, kdy je hra zastavená nebo je zvíře u veterináře, i klidové hodiny se pečovateli nikdy nepočítají.",
                 "Po 12 týdnech se zapíše konečné skóre, které se už nemění; péče po skončení výzvy ho neovlivní. Při skóre 70 a více můžete v aplikaci vytvořit Certifikát odpovědnosti (PDF); při nižším skóre dostanete přehled výzvy.",
                 "Pokud jídlo, voda nebo čistota zůstanou 24 hodin na 0 %, zvíře je „odvezeno do útulku“ (konec hry). Hra s tímto zvířetem končí, certifikát se nevydává a dostanete přehled výzvy.",
@@ -762,11 +762,11 @@ const cs: Dictionary = {
               heading: "4. Funkce zdarma a placené, nákupy a vrácení peněz",
               items: [
                 "Pes kříženec a domácí kočka jsou zdarma navždy a slouží k vyzkoušení PetPrepu; bezplatná zkušební verze výzvy neexistuje. Bezplatné zvíře nemá 12týdenní program ani certifikát, rodič vidí historii posledních 7 dnů a zvíře má základní sadu obrázků a videí.",
-                "12týdenní výzva PetPrep je jednorázový nákup, ne předplatné (49,99 € ve Slovinsku; obchod ukazuje cenu pro vaši zemi). V aktuální verzi aplikace si ji můžete vybrat s jakýmkoli plemenem, také s křížencem a domácí kočkou. Jeden nákup je jedna výzva pro jedno zvíře; každá nová výzva s novým zvířetem je nový nákup. Sourozenci, kteří se starají o stejné zvíře, platí jednou.",
-                "Rodič může bezplatného křížence nebo domácí kočku, o které se už někdo stará, převést na výzvu za stejnou cenu a se stejným zvířetem. Po konci hry a u kříženců vytvořených v rané verzi aplikace to možné není; aplikace ukáže, kdy to platí. Zvíře ve výzvě (také převedené zvíře a kříženec nebo domácí kočka vybraní pro výzvu) nelze přepnout zpět do bezplatného plánu; křížence nebo domácí kočku tam vrátí jen vrácení peněz (viz níže).",
+                "12týdenní výzva PetPrep je jednorázový nákup, ne předplatné (49,99 € ve Slovinsku; obchod ukazuje cenu pro vaši zemi). V aktuální verzi aplikace si ji můžete vybrat s jakýmkoli plemenem, také s křížencem a domácí kočkou. Jeden nákup je jedna výzva pro jedno zvíře; každá nová výzva s novým zvířetem je nový nákup. Sourozenci, kteří se starají o stejné zvíře, platí jednou.",
+                "Rodič může bezplatného křížence nebo domácí kočku, o které se už někdo stará, převést na výzvu za stejnou cenu a se stejným zvířetem. Po konci hry a u kříženců vytvořených v rané verzi aplikace to možné není; aplikace ukáže, kdy to platí. Zvíře ve výzvě (také převedené zvíře a kříženec nebo domácí kočka vybraní pro výzvu) nelze přepnout zpět do bezplatného plánu; křížence nebo domácí kočku tam vrátí jen vrácení peněz (viz níže).",
                 "Rodič nakupuje ve své aplikaci přes App Store nebo Google Play; v aplikaci dítěte se nakupovat nedá. Platbu zpracuje obchod podle svých vlastních podmínek.",
                 "Zvíře pro výzvu můžete vytvořit ještě před nákupem. Dokud výzva není zaplacená, je hra pozastavená: zvíře bezpečně čeká, jeho potřeby neklesají a nic se nezhoršuje. Po nákupu hra pokračuje tam, kde se zastavila.",
-                "Vrácení peněz řeší App Store a Google Play podle svých vlastních pravidel; požádejte o ně v obchodě, kde jste nakoupili. Pokud obchod vrátí peníze za nákup dřív, než výzva skončí, hra s tímto zvířetem se znovu pozastaví. Obrázky a videa vytvořené po nákupu zůstávají. Kříženec nebo domácí kočka se přitom nepozastaví, ale vrátí se do bezplatného plánu: výzva skončí bez certifikátu, znovu platí pravidla bezplatného plánu a zvíře má opět základní sadu obrázků a videí. Pokud si pro toto zvíře výzvu později koupíte znovu, začne nových 12 týdnů od nového nákupu.",
+                "Vrácení peněz řeší App Store a Google Play podle svých vlastních pravidel; požádejte o ně v obchodě, kde jste nakoupili. Pokud obchod vrátí peníze za nákup dřív, než výzva skončí, hra s tímto zvířetem se znovu pozastaví. Obrázky a videa vytvořené po nákupu zůstávají. Kříženec nebo domácí kočka se přitom nepozastaví, ale vrátí se do bezplatného plánu: výzva skončí bez certifikátu, znovu platí pravidla bezplatného plánu a zvíře má opět základní sadu obrázků a videí. Pokud si pro toto zvíře výzvu později koupíte znovu, začne nových 12 týdnů od nového nákupu.",
                 "Po konci hry (útulek) nákup zvíře neodemkne; nová výzva znamená nové zvíře a nový nákup.",
                 "Přání (věci pro zvíře, až budou k dispozici): dítě může požádat, ale koupit může jen rodič, ve své aplikaci. Koupený předmět patří zvířeti, pro které byl koupen, a mění jen vzhled – neovlivňuje hru, skóre ani certifikát. Po konci hry nebo smazání zvířete zůstává nákup využitý a peníze se nevracejí. Pokud obchod peníze za nákup vrátí, předmět (u pamlsků nevyužité pamlsky) se odebere.",
                 "Pokud smažete zvíře, dítě nebo účet, zatímco koupená výzva ještě běží, nákup zůstává využitý: nepřesouvá se na jiné zvíře a smazání neznamená vrácení peněz. Aplikace vás nejprve upozorní a požádá o potvrzení.",
@@ -794,7 +794,7 @@ const cs: Dictionary = {
             {
               heading: "7. Oznámení",
               paragraphs: [
-                "Pokud je v zařízení povolíte, aplikace posílá push oznámení: připomínky pečovateli, upozornění rodičům, když zvíře nemá jídlo, vodu nebo čistotu, a zprávy o nemoci, konci hry a konci výzvy. Názvem oznámení může být jméno zvířete, pokud jste mu ho dali; jméno dítěte oznámení nikdy neobsahují a během klidových hodin se neposílají. Povolení můžete kdykoli odvolat v nastavení zařízení; bez oznámení může pečovatel zmeškat povinnosti, což ovlivní hru i skóre. Rodiče navíc dostanou nejvýše jednou na bezplatné zvíře připomínku výzvy, když se o ně někdo staral alespoň 5 z jeho prvních 7 dnů.",
+                "Pokud je v zařízení povolíte, aplikace posílá push oznámení: připomínky pečovateli, upozornění rodičům, když zvíře nemá jídlo, vodu nebo čistotu, a zprávy o nemoci, konci hry a konci výzvy. Názvem oznámení může být jméno zvířete, pokud jste mu ho dali; jméno dítěte oznámení nikdy neobsahují a během klidových hodin se neposílají. Povolení můžete kdykoli odvolat v nastavení zařízení; bez oznámení může pečovatel zmeškat povinnosti, což ovlivní hru i skóre. Rodiče navíc dostanou nejvýše jednou na bezplatné zvíře připomínku výzvy, když se o ně někdo staral alespoň 5 z jeho prvních 7 dnů.",
               ],
             },
             {
@@ -867,7 +867,7 @@ const cs: Dictionary = {
             { title: "Žádné reklamy, žádný chat, žádní cizí lidé", text: "Nejsou tu žádné reklamy ani způsob, jak kontaktovat jiné uživatele." },
             { title: "Žádné sledování polohy", text: "Procházky počítají jen kroky – z Apple Health nebo Health Connect (s vaším povolením, jen pro čtení) nebo z pohybového senzoru telefonu. GPS se nepoužívá." },
             { title: "Soukromé živé aktualizace", text: "Aktualizace v reálném čase se dostanou jen k dětem, které se o daného mazlíčka starají, a k rodičům ze stejné rodiny." },
-            { title: "Ověřená média", text: "Zobrazují se jen obrázky a videa vytvořené pro PetPrep a zkontrolované naším serverem, z našeho úložiště v EU." },
+            { title: "Ověřená média", text: "Zobrazují se jen obrázky a videa vytvořené pro PetPrep a zkontrolované naším serverem, z našeho úložiště v EU." },
             { title: "Oznámení bez jména dítěte", text: "Oznámení nikdy neobsahují jméno dítěte, protože se mohou zobrazit na zamčené obrazovce. Jako název se může zobrazit jen jméno mazlíčka, pokud jste mu ho dali." },
           ],
         },
@@ -982,7 +982,7 @@ const cs: Dictionary = {
       meta: {
         title: "O PetPrepu – společnost, zakladatel a jak získáváme informace o zvířatech",
         description:
-          "Kdo PetPrep vytváří: zakladatel David Tacer, naše poslání a jak encyklopedie zvířat získává a ověřuje své údaje.",
+          "Kdo PetPrep vytváří: zakladatel David Tacer, naše poslání a jak encyklopedie zvířat získává a ověřuje své údaje.",
       },
       navLabel: "O nás",
       eyebrow: "O nás",
@@ -1011,7 +1011,7 @@ const cs: Dictionary = {
           id: "mission",
           heading: "Naše poslání",
           paragraphs: [
-            "V každé rodině zazní „Slibuju, že se o něj budu starat.“ PetPrep ten slib promění v důkaz: 12 týdnů se dítě – nebo dospělý, který zvažuje určité plemeno – stará o realistického AI mazlíčka s denními potřebami skutečného zvířete a rodič každý den vidí, jak péče obstojí.",
+            "V každé rodině zazní „Slibuju, že se o něj budu starat.“ PetPrep ten slib promění v důkaz: 12 týdnů se dítě – nebo dospělý, který zvažuje určité plemeno – stará o realistického AI mazlíčka s denními potřebami skutečného zvířete a rodič každý den vidí, jak péče obstojí.",
             "I neúspěch v simulaci je dobrý výsledek: rodina to zjistí dřív, než by trpěl skutečný mazlíček, a dřív, než se zaváže k letům péče a výdajů. A když skutečný mazlíček domů přijde, chceme, aby byl PetPrep užitečný po celý jeho život.",
           ],
         },
@@ -1162,7 +1162,7 @@ const cs: Dictionary = {
       eyebrow: "Omalovánky",
       title: "Omalovánky zdarma k vytisknutí.",
       lead:
-        "Psi, kočky a Curio k vybarvení nebo obkreslení – vytiskněte si jednu stránku, nebo rovnou celou knížku. Na každé stránce najdete skutečnou informaci o péči o zvíře z veterinárního nebo kynologického zdroje, kterou si můžete přečíst společně.",
+        "Psi, kočky a Curio k vybarvení nebo obkreslení – vytiskněte si jednu stránku, nebo rovnou celou knížku. Na každé stránce najdete skutečnou informaci o péči o zvíře z veterinárního nebo kynologického zdroje, kterou si můžete přečíst společně.",
       blocks: [{ type: "coloringHub" }],
     },
     kids: {
