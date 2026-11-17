@@ -829,6 +829,15 @@ const sl: RegistryCopy = {
       sources: ["S904", "S905", "S906", "S907", "S909", "S10"],
     },
 
+    greyhound: {
+      aka: "greyhound, grejhaund, Greyhound, English Greyhound",
+      text: [
+        "Angleški hrt (greyhound) je velik hrt iz Velike Britanije; FCI ga uvršča v 10. skupino med kratkodlake hrte. Standard FCI opisuje močno grajenega, pokončnega psa velikodušnih proporcev, mišične moči in skladne postave, ki je inteligenten, nežen, ljubeč in umirjen, s fino, tesno prilegajočo dlako v črni, beli, rdeči, modri, plavo rjavi, bledo rjavi ali tigrasti barvi ali v kateri od teh barv z belimi lisami; navaja idealno višino 71–76\u00a0cm za pse in 68–71\u00a0cm za psice. Standard AKC navaja težo 65 do 70 funtov (okoli 29,5–31,8\u00a0kg) za pse in 60 do 65 funtov (okoli 27,2–29,5\u00a0kg) za psice. Pes te velikosti doraste pri okoli 15–18 mesecih (PetMD). Britanska študija VetCompass hrtov v veterinarski oskrbi je ugotovila mediano življenjske dobe 11,4 leta; PDSA navaja življenjsko dobo več kot 10 let.",
+        "PDSA pravi, da angleški hrti niso pretirano energični: potrebujejo okoli uro gibanja na dan, raje kot dolge sprehode pa imajo nekaj dobrih tekov; njihovo kratko dlako je treba negovati enkrat na teden. Če so kot mladički pravilno socializirani, so lahko dobri družinski psi, a imajo močan nagon za lovljenje — PetMD pravi, da zaradi zelo močnega lovskega nagona niso primerni za dom z mačkami ali drugimi malimi živalmi. WebMD priporoča vsakodnevno ščetkanje zob in opozarja, da so hrti brez izolacijske podlanke lahko občutljivi na skrajne temperature.",
+      ],
+      sources: ["S912", "S913", "S914", "S916", "S917", "S918", "S920", "S10"],
+    },
+
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
       text: [
