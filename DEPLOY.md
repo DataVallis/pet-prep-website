@@ -71,7 +71,8 @@ Need it live now (a launch, a fix)? Run workflow → target `production`.
    running, the deploy job fails with the numbers and what to check (`df -h /`, `docker system df`,
    `docker image ls`). `DEPLOY_MIN_FREE_GB=0` skips the check (the prune still runs). The variable is
    read on the server, so it applies to manual runs; for CI deploys change the default in `deploy.sh`.
-2. **After a successful deploy:** the same prune again.
+2. **Pull (step 1):** a failed `docker pull` of the digest is retried once after 15 s (incident 2026-11-17: containerd failed to extract a layer of an image that had passed CI's smoke test — `UtimesNanoAt … .next/node_modules: no such file or directory`). After two failures the deploy stops — nothing changed, the live site keeps running.
+3. **After a successful deploy:** the same prune again.
 
 **Pruned — by image id** (`docker image rm <id>`, never `-f`): every image of
 `ghcr.io/datavallis/petprep-website` or `petprep-website` whose id is **not kept**. By id because on the
