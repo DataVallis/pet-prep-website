@@ -55,7 +55,7 @@ export const pt: QuizCopy = {
   clashExercise: "Precisa de mais exercício do que pode dar",
   seeBreed: "Sobre a raça",
   calcLink: "Quanto trabalho dá?",
-  tryCta: "Experimente {name} na PetPrep",
+  tryCta: "Experimente a raça {mid} na PetPrep",
   considerNote: "As notas de saúde são informativas. Peça ao criador ou ao abrigo os resultados dos testes de saúde e fale com um veterinário.",
   adoptionTitle: "Pense também em adotar",
   adoptionText: "Nos abrigos esperam muitos cães maravilhosos, incluindo rafeiros. Lá podem dizer-lhe como o cão se comporta em casa antes de decidir. Visite um abrigo perto de si.",

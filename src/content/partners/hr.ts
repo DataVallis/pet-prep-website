@@ -44,9 +44,9 @@ export const hr: PartnerLocalePack = {
     stats: {
       heading: "Brojke",
       intro: "Navodimo samo ono što se može provjeriti u proizvodu. Stanje na dan {date}.",
-      breeds: "pasmina u enciklopediji životinja",
-      breedsNote: "{dogs} pasmina pasa i {cats} pasmina mačaka, svaka s vlastitom stranicom i navedenim izvorima.",
-      languages: "jezika web-stranice",
+      breeds: "{n|one=pasmina|few=pasmine|other=pasmina} u enciklopediji životinja",
+      breedsNote: "{dogs} {dogs|one=pasmina|few=pasmine|other=pasmina} pasa i {cats} {cats|one=pasmina|few=pasmine|other=pasmina} mačaka, svaka s vlastitom stranicom i navedenim izvorima.",
+      languages: "{n|one=jezik|few=jezika|other=jezika} web-stranice",
       languagesNote: "Aplikacija je danas na slovenskom i engleskom.",
     },
   },
@@ -82,7 +82,7 @@ export const hr: PartnerLocalePack = {
       heading: "Primjeri sadržaja",
       items: [
         ["Aplikacija", "12-tjedni izazov s realističnim AI ljubimcem i nadzornom pločom za roditelje."],
-        ["Enciklopedija pasmina", "{breeds} pasmina ({dogs} pasa, {cats} mačaka) s izvorima, stanje na dan {date}."],
+        ["Enciklopedija pasmina", "{breeds} {breeds|one=pasmina|few=pasmine|other=pasmina} ({dogs} {dogs|one=pas|few=psa|other=pasa}, {cats} {cats|one=mačka|few=mačke|other=mačaka}) s izvorima, stanje na dan {date}."],
         ["Serija „12 Weeks“", "Videoserija koja prati 12 tjedana skrbi o ljubimcu; prilika za spominjanje sponzora."],
       ],
     },

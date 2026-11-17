@@ -8,6 +8,8 @@ import { sendQuizEvent, sendQuizLead, type LeadResult } from "@/lib/breedQuizEve
 import type { QuizCopy } from "@/content/quiz/types";
 import type { EmailStrings, SponsorStrings } from "@/content/quiz";
 import type { QuizBreedView } from "@/lib/breedQuizData";
+import { midName } from "@/lib/breedName";
+import { withBreed } from "@/lib/earlyAccess";
 
 const card = "rounded-[22px] bg-white shadow-[0_1px_2px_rgba(18,22,20,0.04),0_10px_30px_rgba(18,22,20,0.06)]";
 const fill = (t: string, v: Record<string, string | number>) => t.replace(/\{(\w+)\}/g, (_, k: string) => String(v[k] ?? ""));
@@ -157,7 +159,7 @@ export function BreedQuiz(props: Props) {
         <button type="button" onClick={restart} className="btn btn-secondary">{copy.restart}</button>
       </div>
 
-      <EmailForm {...props} breed={first} />
+      <EmailForm {...props} breed={first} quiz={{ result: outcome.picks.map((p) => p.id), answers: encodeAnswers(answers) }} />
 
       <aside className="flex max-w-3xl flex-col gap-2 rounded-[22px] border border-dashed border-line p-6">
         <p className="eyebrow">{props.sponsor.sponsor_k}</p>
@@ -197,7 +199,7 @@ function PickCard({ pick, breed, rank, copy, labels, appHref, locale }: { pick: 
           </div>
         ) : null}
         <div className="mt-auto flex flex-col gap-2 pt-2">
-          <Link href={appHref} onClick={() => sendQuizEvent("app_click", locale, [breed.id])} className="btn btn-primary !whitespace-normal text-center">{fill(copy.tryCta, { name: breed.name })}</Link>
+          <Link href={withBreed(appHref, breed.id)} onClick={() => sendQuizEvent("app_click", locale, [breed.id])} className="btn btn-primary !whitespace-normal text-center">{fill(copy.tryCta, { name: breed.name, mid: midName(breed.name, locale) })}</Link>
           {breed.calc ? <Link href={breed.calc} onClick={() => sendQuizEvent("calculator_click", locale, [breed.id])} className="btn btn-secondary !whitespace-normal text-center">{copy.calcLink}</Link> : null}
           <Link href={breed.reg} className="rich-link flex min-h-11 items-center justify-center">{copy.seeBreed}</Link>
         </div>
@@ -220,7 +222,7 @@ function ShareButton({ copy, path, answers }: { copy: QuizCopy; path: string; an
   );
 }
 
-function EmailForm({ locale, email, thanks, breed }: Props & { breed: string }) {
+function EmailForm({ locale, email, thanks, breed, quiz }: Props & { breed: string; quiz: { result: string[]; answers: string } }) {
   const [value, setValue] = useState("");
   const [consent, setConsent] = useState(false);
   const [hp, setHp] = useState("");
@@ -233,7 +235,7 @@ function EmailForm({ locale, email, thanks, breed }: Props & { breed: string }) 
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(addr)) return setMsg(email.news_err_email);
     if (!consent) return setMsg(email.news_err_consent);
     setMsg(""); setBusy(true);
-    const r: LeadResult = await sendQuizLead(addr, locale, breed, hp);
+    const r: LeadResult = await sendQuizLead(addr, locale, breed, hp, { quiz });
     setBusy(false);
     if (r === "ok") setDone(true);
     else setMsg(r === "email" ? email.news_err_email : r === "proto" ? email.news_err_proto : email.news_err);

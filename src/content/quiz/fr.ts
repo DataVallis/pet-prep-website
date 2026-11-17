@@ -55,7 +55,7 @@ export const fr: QuizCopy = {
   clashExercise: "Demande plus d’exercice que vous ne pouvez en donner",
   seeBreed: "Sur cette race",
   calcLink: "Combien de travail ?",
-  tryCta: "Essayer {name} dans PetPrep",
+  tryCta: "Essayer la race {mid} dans PetPrep",
   considerNote: "Les remarques de santé sont données à titre d’information. Demandez à l’éleveur ou au refuge les résultats des tests de santé et parlez-en à un vétérinaire.",
   adoptionTitle: "Pensez aussi à l’adoption",
   adoptionText: "De nombreux chiens merveilleux, croisés compris, attendent dans les refuges. On peut y vous dire comment un chien se comporte à la maison avant que vous ne décidiez. Rendez visite à un refuge près de chez vous.",

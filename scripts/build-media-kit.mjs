@@ -59,7 +59,7 @@ function html(lang) {
   const k = kitCopy[lang];
   const date = formatAsOf(stats.asOf, localeMeta[lang].intl);
   const vars = { breeds: stats.breeds.total, dogs: stats.breeds.dogs, cats: stats.breeds.cats, date };
-  const card = ([t, d]) => `<div class="card"><h3>${esc(fill(t, vars))}</h3><p>${esc(fill(d, vars))}</p></div>`;
+  const card = ([t, d]) => `<div class="card"><h3>${esc(fill(t, vars, localeMeta[lang].intl))}</h3><p>${esc(fill(d, vars, localeMeta[lang].intl))}</p></div>`;
   const paras = (a) => a.map((p) => `<p>${esc(p)}</p>`).join("");
   const foot = `<div class="foot"><span>${esc(k.company)}</span><span>${partnerContactEmail}</span></div>`;
   const url = "petprep.si/" + (lang === "en" ? "" : `${lang}/`) + pageSlugs.partners[lang];

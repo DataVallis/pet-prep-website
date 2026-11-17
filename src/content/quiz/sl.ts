@@ -55,7 +55,7 @@ export const sl: QuizCopy = {
   clashExercise: "Potrebuje več gibanja, kot mu ga lahko daste",
   seeBreed: "O pasmi",
   calcLink: "Koliko je dela?",
-  tryCta: "Preizkusite {name} v PetPrepu",
+  tryCta: "Preizkusite pasmo {mid} v PetPrepu",
   considerNote: "Zdravstvene opombe so informativne. Pri vzreditelju ali v zavetišču vprašajte po rezultatih zdravstvenih testov in se posvetujte z veterinarjem.",
   adoptionTitle: "Razmislite tudi o posvojitvi",
   adoptionText: "V zavetiščih čaka veliko čudovitih psov, tudi mešancev. V zavetišču vam lahko povedo, kako se pes vede doma, še preden se odločite. Obiščite zavetišče v bližini.",

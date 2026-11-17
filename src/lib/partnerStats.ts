@@ -24,6 +24,25 @@ export function formatAsOf(iso: string, intl: string): string {
   return new Intl.DateTimeFormat(intl, { dateStyle: "long", timeZone: "UTC" }).format(new Date(`${iso}T12:00:00Z`));
 }
 
-export function fill(text: string, vars: Record<string, string | number>): string {
-  return Object.entries(vars).reduce((t, [k, v]) => t.replaceAll(`{${k}}`, String(v)), text);
+/**
+ * Text with placeholders. `{name}` is replaced by the value; `{name|one=…|few=…|other=…}` picks the noun
+ * form that is grammatical for the number `vars[name]` in the language `intl` (Intl.PluralRules, so
+ * sl 1 pasma / 2 pasmi / 3–4 pasme / 5+ pasem incl. 101, 102, 103, 111; pl, cs, hr have their own rules).
+ * Categories missing from a selector fall back to `other`. Without `intl` the plural selectors use "en".
+ */
+export function fill(text: string, vars: Record<string, string | number>, intl = "en"): string {
+  const rules = new Intl.PluralRules(intl);
+  const withForms = text.replace(/\{(\w+)((?:\|\w+=[^|{}]*)+)\}/g, (whole, name: string, spec: string) => {
+    const n = vars[name];
+    if (n === undefined) return whole;
+    const forms = Object.fromEntries(spec.slice(1).split("|").map((f) => [f.slice(0, f.indexOf("=")), f.slice(f.indexOf("=") + 1)]));
+    return forms[rules.select(Number(n))] ?? forms.other ?? "";
+  });
+  return Object.entries(vars).reduce((t, [k, v]) => t.replaceAll(`{${k}}`, String(v)), withForms);
+}
+
+/** Plural categories an integer 0–1000 can fall into in this language (what every selector must cover). */
+export function integerPluralCategories(intl: string): string[] {
+  const rules = new Intl.PluralRules(intl);
+  return [...new Set(Array.from({ length: 1001 }, (_, i) => rules.select(i)))];
 }

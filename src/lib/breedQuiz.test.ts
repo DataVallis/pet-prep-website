@@ -118,5 +118,6 @@ test("events: only petprep.si, one id for clicks, top 3 for completed", async ()
   const ok = await sendQuizLead("a@b.si", "sl", "x", "", { hostname: "petprep.si", fetchFn: async (u, i) => { calls.push({ url: u, init: i }); return new Response("{}", { status: 201 }); } });
   assert.equal(ok, "ok");
   const body = JSON.parse(String(calls.at(-1)!.init.body));
-  assert.deepEqual(body, { email: "a@b.si", consent: true, consent_version: "2026-11", source: "breed_quiz", locale: "sl", breed: "x", website: "" });
+  assert.equal(calls.at(-1)!.url, "https://api.petprep.si/api/email-signups");
+  assert.deepEqual(body, { email: "a@b.si", consent: true, consent_version: "2026-11", purpose: "newsletter", source: "breed_quiz", section: "result", page_path: "/", locale: "sl", species: "dog", breed: "x", website: "" });
 });

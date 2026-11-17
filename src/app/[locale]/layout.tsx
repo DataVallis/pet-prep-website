@@ -7,6 +7,7 @@ import { graph, organizationLd, websiteLd } from "@/lib/jsonld";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
+import { UtmCapture } from "@/components/UtmCapture";
 import { ConsentDefaults, GoogleAnalytics, GoogleTagManager } from "@/components/ConsentAndAnalytics";
 import { Kockica } from "@/components/Kockica";
 import { PrivatePageGate } from "@/components/gift/PrivatePageGate";
@@ -54,6 +55,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
         <ConsentDefaults />
       </head>
       <body className="flex min-h-screen flex-col">
+        <UtmCapture />
         <Kockica />
         <JsonLd data={graph(organizationLd(dict), websiteLd(dict))} />
         <Header locale={locale} dict={dict} />

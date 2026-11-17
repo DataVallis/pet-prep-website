@@ -55,7 +55,7 @@ export const pl: QuizCopy = {
   clashExercise: "Potrzebuje więcej ruchu, niż możesz zapewnić",
   seeBreed: "O rasie",
   calcLink: "Ile to pracy?",
-  tryCta: "Wypróbuj rasę {name} w PetPrep",
+  tryCta: "Wypróbuj rasę {mid} w PetPrep",
   considerNote: "Uwagi o zdrowiu mają charakter informacyjny. Zapytaj hodowcę lub schronisko o wyniki badań zdrowotnych i porozmawiaj z weterynarzem.",
   adoptionTitle: "Pomyśl też o adopcji",
   adoptionText: "W schroniskach czeka wiele wspaniałych psów, także mieszańców. W schronisku często można się dowiedzieć, jak pies zachowuje się w domu, zanim się zdecydujesz. Odwiedź schronisko w swojej okolicy.",

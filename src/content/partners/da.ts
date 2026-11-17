@@ -44,8 +44,8 @@ export const da: PartnerLocalePack = {
     stats: {
       heading: "Tal",
       intro: "Vi angiver kun det, der kan kontrolleres i produktet. Status pr. {date}.",
-      breeds: "racer i dyreleksikonet",
-      breedsNote: "{dogs} hunderacer og {cats} katteracer, hver med sin egen side og angivne kilder.",
+      breeds: "{n|one=race|other=racer} i dyreleksikonet",
+      breedsNote: "{dogs} {dogs|one=hunderace|other=hunderacer} og {cats} {cats|one=katterace|other=katteracer}, hver med sin egen side og angivne kilder.",
       languages: "sprog på hjemmesiden",
       languagesNote: "Appen findes i dag på slovensk og engelsk.",
     },
@@ -82,7 +82,7 @@ export const da: PartnerLocalePack = {
       heading: "Eksempler på indhold",
       items: [
         ["Appen", "En 12 uger lang udfordring med et realistisk AI-kæledyr og et overblik for forældre."],
-        ["Dyreleksikon", "{breeds} racer ({dogs} hunde, {cats} katte) med kilder, status pr. {date}."],
+        ["Dyreleksikon", "{breeds} {breeds|one=race|other=racer} ({dogs} {dogs|one=hund|other=hunde}, {cats} {cats|one=kat|other=katte}) med kilder, status pr. {date}."],
         ["Serien „12 Weeks”", "En videoserie, der følger 12 ugers kæledyrspleje; et sted til omtale af en sponsor."],
       ],
     },

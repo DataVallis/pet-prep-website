@@ -139,7 +139,7 @@ test("plural forms: Polish, Czech, Croatian and Slovenian units are right for th
 test("the breed page copy carries the right numbers (Labrador: 90 min, 13 years)", () => {
   assert.equal(realCostCopy("pl", "Labrador retriever", labProfile).facts.rows[0].value, "co najmniej 90 minut dziennie");
   assert.equal(realCostCopy("de", "Labrador Retriever", labProfile).facts.rows[0].value, "mindestens 90 Minuten pro Tag");
-  assert.equal(realCostCopy("en", "Labrador Retriever", labProfile).facts.rows[5].value, "at least £116 a month");
+  assert.equal(realCostCopy("en", "Labrador Retriever", labProfile).facts.rows[5].value, "at least ~€139 a month");
 });
 
 test("public/real-cost/app.html is the current build of tools/real-cost/", async () => {
@@ -165,4 +165,37 @@ test("the embedded app validates every breed parameter (a shared link can carry 
   assert.match(source, /const NAME_RAW = .*replace\(\/\[<>&"'`\\\\\]\/g, ''\)/, "the breed name is stripped of HTML characters");
   for (const k of ["walk", "life", "lifelo", "lifehi"]) assert.ok(source.includes(`qNum('${k}'`), `${k} is range-checked`);
   for (const k of ["walkq", "lifeq", "groom", "size"]) assert.ok(source.includes(`qPick('${k}'`), `${k} is from a fixed list`);
+});
+
+test("costs are shown in EUR in every language (with ~ and the ECB conversion note), never in £", () => {
+  for (const l of locales) {
+    const row = realCostCopy(l, "Labrador Retriever", labProfile).facts.rows[5];
+    assert.match(row.value, /~/, `${l}: ~ marks the converted amount`);
+    assert.match(row.value, /€|EUR/, `${l}: EUR`);
+    assert.doesNotMatch(row.value, /£/, `${l}: no pound in the amount`);
+    assert.match(row.note, /~[^,]*(€|EUR)/, `${l}: setup cost in EUR`);
+    assert.match(row.note, /13/, `${l}: the conversion note names the ECB date`);
+    assert.match(row.note, /1 £ = 1[.,]1968/, `${l}: the rate of the note`);
+  }
+});
+
+test("the embedded app offers EUR (default) and USD only; GBP is the internal source currency", async () => {
+  const html = await readFile(new URL("../../tools/real-cost/index.html", import.meta.url), "utf8");
+  assert.match(html, /data-cur="EUR"/);
+  assert.match(html, /data-cur="USD"/);
+  assert.doesNotMatch(html, /data-cur="GBP"/);
+  const source = await readFile(new URL("../../tools/real-cost/src/main.js", import.meta.url), "utf8");
+  assert.match(source, /cur: 'EUR'/);
+  const strings = await readFile(new URL("../../tools/real-cost/src/strings.js", import.meta.url), "utf8");
+  assert.doesNotMatch(strings, /\{cost_m\}\s*£|£\{cost_m\}/, "the source note shows the converted amount, not a raw pound figure");
+});
+
+test("the embedded app sends e-mails to /api/email-signups (real_cost, step5) and its 'try PetPrep' link carries the breed", async () => {
+  const source = await readFile(new URL("../../tools/real-cost/src/main.js", import.meta.url), "utf8");
+  assert.match(source, /source: 'real_cost', section: 'step5'/);
+  assert.match(source, /allowLegacy: true/);
+  assert.match(source, /\?breed=\$\{BREED\}#early-access/);
+  const html = await readFile(outFile, "utf8");
+  assert.ok(html.includes("/api/email-signups") && html.includes("/api/summary-leads"), "new endpoint with the old one as fallback");
+  assert.ok(!html.includes('data-cur="GBP"'));
 });

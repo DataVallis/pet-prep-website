@@ -70,7 +70,7 @@ export const investorsCopy = {
     lead: "Every number below updates itself from our registry, knowledge base and channels.",
     updated: "Updated automatically from our registry, knowledge base and channels.",
     cards: {
-      breeds: { label: "Breeds in the register", note: (dogs: number, cats: number) => `${dogs} dogs and ${cats} cats, new ones added nightly` },
+      breeds: { label: "Breeds in the register", note: (dogs: number, cats: number) => `${dogs} ${dogs === 1 ? "dog breed" : "dog breeds"} and ${cats} ${cats === 1 ? "cat breed" : "cat breeds"}, new ones added nightly` },
       sources: { label: "Sources", note: "Vets, kennel clubs and studies, quoted" },
       episodes: { label: "“12 Weeks” episodes", note: (views: string | null) => (views ? `${views} views on YouTube` : "On YouTube") },
       coloring: { label: "Free colouring pages", note: "Printable, A4 and US Letter" },

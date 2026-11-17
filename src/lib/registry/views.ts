@@ -745,3 +745,11 @@ export function breedMarkdown(locale: Locale, b: Breed, url: string): string {
 }
 
 export const animalsPath = (locale: Locale) => pathFor(locale, "animals");
+
+/**
+ * id → name in the page language for every breed of the register, for the early-access form: when the page URL carries
+ * `?breed=<id>` the form shows "Early access for the breed: <name>" and sends the id (components/EarlyAccessForm.tsx).
+ */
+export function breedNameMap(locale: Locale): Record<string, string> {
+  return Object.fromEntries(registry.breeds.map((b) => [b.id, b.name[locale]]));
+}

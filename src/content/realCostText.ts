@@ -25,7 +25,7 @@ export const realCostText: Record<Locale, RealCostText> = {
   en: {
     label: { walks: "Walks", meals: "Meals", training: "Training", brushing: "Brushing", life: "Life span", costs: "Costs" },
     walksVal: "{x} a day", walksNote: "about {x} a year", mealsVal: "2 a day", mealsNote: "about 731 a year", trainVal: "5 minutes a day", trainNote: "about 30 hours a year",
-    costVal: "at least {m} a month", costNote: "plus about {s} to get started, {size}, United Kingdom{giant}", giant: " (PDSA has no figure for giant dogs; this is a floor)",
+    costVal: "at least {m} a month", costNote: "plus {s} to get started, {size}, United Kingdom{giant}", giant: " (PDSA has no figure for giant dogs; this is a floor)",
     metaTitle: "How much work is {name_a}? One day, a year, {x} | PetPrep",
     metaDesc: "One day with {name_a} in 3D, multiplied to a week, a year and {x}: walks, meals and costs. With sources and a summary for parents.",
     eyebrow: "Before you get a dog", title: "How much work is {name_a}?",
@@ -43,7 +43,7 @@ export const realCostText: Record<Locale, RealCostText> = {
   sl: {
     label: { walks: "Sprehodi", meals: "Obroki", training: "Vaja", brushing: "Krtačenje", life: "Življenjska doba", costs: "Stroški" },
     walksVal: "{x} na dan", walksNote: "približno {x} na leto", mealsVal: "2 na dan", mealsNote: "približno 731 na leto", trainVal: "5 minut na dan", trainNote: "približno 30 ur na leto",
-    costVal: "najmanj {m} na mesec", costNote: "in približno {s} na začetku, {size}, Združeno kraljestvo{giant}", giant: " (za orjaške pse PDSA nima svoje številke; to je spodnja meja)",
+    costVal: "najmanj {m} na mesec", costNote: "in {s} na začetku, {size}, Združeno kraljestvo{giant}", giant: " (za orjaške pse PDSA nima svoje številke; to je spodnja meja)",
     metaTitle: "{name}: koliko je dela s tem psom? Dan, leto, {x} | PetPrep",
     metaDesc: "En dan s psom pasme {mid} v 3D, pomnožen na teden, leto in {x}: sprehodi, obroki in stroški. Z viri in povzetkom za starše.",
     eyebrow: "Preden pride pes", title: "{name}: koliko je dela s tem psom?",
@@ -61,7 +61,7 @@ export const realCostText: Record<Locale, RealCostText> = {
   de: {
     label: { walks: "Spaziergänge", meals: "Mahlzeiten", training: "Training", brushing: "Bürsten", life: "Lebenserwartung", costs: "Kosten" },
     walksVal: "{x} pro Tag", walksNote: "etwa {x} pro Jahr", mealsVal: "2 pro Tag", mealsNote: "etwa 731 pro Jahr", trainVal: "5 Minuten pro Tag", trainNote: "etwa 30 Stunden pro Jahr",
-    costVal: "mindestens {m} pro Monat", costNote: "plus etwa {s} für den Start, {size}, Vereinigtes Königreich{giant}", giant: " (Für Riesenhunde nennt PDSA keine Zahl; das ist eine Untergrenze)",
+    costVal: "mindestens {m} pro Monat", costNote: "plus {s} für den Start, {size}, Vereinigtes Königreich{giant}", giant: " (Für Riesenhunde nennt PDSA keine Zahl; das ist eine Untergrenze)",
     metaTitle: "{name}: Wie viel Arbeit macht dieser Hund? Tag, Jahr, {x} | PetPrep",
     metaDesc: "Ein Hundetag in 3D, hochgerechnet auf Woche, Jahr und Hundeleben: Gassi, Futter, Kosten. Rasse: {name}. Mit Quellen.",
     eyebrow: "Bevor ein Hund einzieht", title: "{name}: Wie viel Arbeit macht dieser Hund?",
@@ -79,7 +79,7 @@ export const realCostText: Record<Locale, RealCostText> = {
   fr: {
     label: { walks: "Promenades", meals: "Repas", training: "Éducation", brushing: "Brossage", life: "Espérance de vie", costs: "Coûts" },
     walksVal: "{x} par jour", walksNote: "environ {x} par an", mealsVal: "2 par jour", mealsNote: "environ 731 par an", trainVal: "5 minutes par jour", trainNote: "environ 30 heures par an",
-    costVal: "au moins {m} par mois", costNote: "plus environ {s} pour démarrer, {size}, Royaume-Uni{giant}", giant: " (PDSA n’a pas de chiffre pour les chiens géants ; c’est un plancher)",
+    costVal: "au moins {m} par mois", costNote: "plus {s} pour démarrer, {size}, Royaume-Uni{giant}", giant: " (PDSA n’a pas de chiffre pour les chiens géants ; c’est un plancher)",
     metaTitle: "{name} : quel travail demande ce chien ? Jour, année, {x} | PetPrep",
     metaDesc: "Une journée avec le chien en 3D, sur une semaine, un an, une vie : promenades, repas, coûts. Race : {name}. Avec sources.",
     eyebrow: "Avant d’adopter un chien", title: "{name} : quel travail demande ce chien ?",
@@ -97,7 +97,7 @@ export const realCostText: Record<Locale, RealCostText> = {
   es: {
     label: { walks: "Paseos", meals: "Comidas", training: "Adiestramiento", brushing: "Cepillado", life: "Esperanza de vida", costs: "Costes" },
     walksVal: "{x} al día", walksNote: "aproximadamente {x} al año", mealsVal: "2 al día", mealsNote: "unas 731 al año", trainVal: "5 minutos al día", trainNote: "unas 30 horas al año",
-    costVal: "al menos {m} al mes", costNote: "más unos {s} para empezar, {size}, Reino Unido{giant}", giant: " (PDSA no da una cifra para perros gigantes; es un mínimo)",
+    costVal: "al menos {m} al mes", costNote: "más {s} para empezar, {size}, Reino Unido{giant}", giant: " (PDSA no da una cifra para perros gigantes; es un mínimo)",
     metaTitle: "{name}: ¿cuánto trabajo da este perro? Día, año, {x} | PetPrep",
     metaDesc: "Un día con el perro en 3D, a una semana, un año y toda la vida: paseos, comidas, costes. Raza: {name}. Con fuentes.",
     eyebrow: "Antes de tener un perro", title: "{name}: ¿cuánto trabajo da este perro?",
@@ -115,7 +115,7 @@ export const realCostText: Record<Locale, RealCostText> = {
   it: {
     label: { walks: "Passeggiate", meals: "Pasti", training: "Addestramento", brushing: "Spazzolatura", life: "Aspettativa di vita", costs: "Costi" },
     walksVal: "{x} al giorno", walksNote: "circa {x} all’anno", mealsVal: "2 al giorno", mealsNote: "circa 731 all’anno", trainVal: "5 minuti al giorno", trainNote: "circa 30 ore all’anno",
-    costVal: "almeno {m} al mese", costNote: "più circa {s} per cominciare, {size}, Regno Unito{giant}", giant: " (PDSA non ha una cifra per i cani giganti; è un minimo)",
+    costVal: "almeno {m} al mese", costNote: "più {s} per cominciare, {size}, Regno Unito{giant}", giant: " (PDSA non ha una cifra per i cani giganti; è un minimo)",
     metaTitle: "{name}: quanto impegno richiede questo cane? Giorno, anno, {x} | PetPrep",
     metaDesc: "Un giorno con il cane in 3D, per una settimana, un anno, una vita: passeggiate, pasti, costi. Razza: {name}. Con fonti.",
     eyebrow: "Prima di avere un cane", title: "{name}: quanto impegno richiede questo cane?",
@@ -133,7 +133,7 @@ export const realCostText: Record<Locale, RealCostText> = {
   pt: {
     label: { walks: "Passeios", meals: "Refeições", training: "Treino", brushing: "Escovagem", life: "Esperança de vida", costs: "Custos" },
     walksVal: "{x} por dia", walksNote: "cerca de {x} por ano", mealsVal: "2 por dia", mealsNote: "cerca de 731 por ano", trainVal: "5 minutos por dia", trainNote: "cerca de 30 horas por ano",
-    costVal: "pelo menos {m} por mês", costNote: "mais cerca de {s} para começar, {size}, Reino Unido{giant}", giant: " (a PDSA não tem um valor para cães gigantes; é um mínimo)",
+    costVal: "pelo menos {m} por mês", costNote: "mais {s} para começar, {size}, Reino Unido{giant}", giant: " (a PDSA não tem um valor para cães gigantes; é um mínimo)",
     metaTitle: "{name}: quanto trabalho dá este cão? Dia, ano, {x} | PetPrep",
     metaDesc: "Um dia com o cão em 3D, para uma semana, um ano e uma vida: passeios, refeições, custos. Raça: {name}. Com fontes.",
     eyebrow: "Antes de ter um cão", title: "{name}: quanto trabalho dá este cão?",
@@ -151,7 +151,7 @@ export const realCostText: Record<Locale, RealCostText> = {
   nl: {
     label: { walks: "Wandelingen", meals: "Maaltijden", training: "Training", brushing: "Borstelen", life: "Levensverwachting", costs: "Kosten" },
     walksVal: "{x} per dag", walksNote: "ongeveer {x} per jaar", mealsVal: "2 per dag", mealsNote: "ongeveer 731 per jaar", trainVal: "5 minuten per dag", trainNote: "ongeveer 30 uur per jaar",
-    costVal: "minstens {m} per maand", costNote: "plus ongeveer {s} om te beginnen, {size}, Verenigd Koninkrijk{giant}", giant: " (PDSA heeft geen cijfer voor reuzenhonden; dit is een ondergrens)",
+    costVal: "minstens {m} per maand", costNote: "plus {s} om te beginnen, {size}, Verenigd Koninkrijk{giant}", giant: " (PDSA heeft geen cijfer voor reuzenhonden; dit is een ondergrens)",
     metaTitle: "{name}: hoeveel werk is deze hond? Dag, jaar, {x} | PetPrep",
     metaDesc: "Een dag met de hond in 3D, naar een week, jaar en heel leven: wandelen, eten, kosten. Ras: {name}. Met bronnen.",
     eyebrow: "Voordat je een hond neemt", title: "{name}: hoeveel werk is deze hond?",
@@ -169,7 +169,7 @@ export const realCostText: Record<Locale, RealCostText> = {
   pl: {
     label: { walks: "Spacery", meals: "Posiłki", training: "Trening", brushing: "Szczotkowanie", life: "Długość życia", costs: "Koszty" },
     walksVal: "{x} dziennie", walksNote: "około {x} rocznie", mealsVal: "2 dziennie", mealsNote: "około 731 rocznie", trainVal: "5 minut dziennie", trainNote: "około 30 godzin rocznie",
-    costVal: "co najmniej {m} miesięcznie", costNote: "plus około {s} na start, {size}, Wielka Brytania{giant}", giant: " (PDSA nie podaje liczby dla psów olbrzymich; to dolna granica)",
+    costVal: "co najmniej {m} miesięcznie", costNote: "plus {s} na start, {size}, Wielka Brytania{giant}", giant: " (PDSA nie podaje liczby dla psów olbrzymich; to dolna granica)",
     metaTitle: "{name}: ile pracy wymaga ten pies? Dzień, rok, {x} | PetPrep",
     metaDesc: "Jeden dzień z psem w 3D, na tydzień, rok i całe życie: spacery, posiłki, koszty. Rasa: {name}. Ze źródłami.",
     eyebrow: "Zanim weźmiesz psa", title: "{name}: ile pracy wymaga ten pies?",
@@ -187,7 +187,7 @@ export const realCostText: Record<Locale, RealCostText> = {
   cs: {
     label: { walks: "Procházky", meals: "Krmení", training: "Výcvik", brushing: "Kartáčování", life: "Délka života", costs: "Náklady" },
     walksVal: "{x} denně", walksNote: "přibližně {x} ročně", mealsVal: "2 denně", mealsNote: "přibližně 731 ročně", trainVal: "5 minut denně", trainNote: "přibližně 30 hodin ročně",
-    costVal: "nejméně {m} měsíčně", costNote: "plus přibližně {s} na začátek, {size}, Spojené království{giant}", giant: " (PDSA nemá číslo pro obří psy; je to spodní hranice)",
+    costVal: "nejméně {m} měsíčně", costNote: "plus {s} na začátek, {size}, Spojené království{giant}", giant: " (PDSA nemá číslo pro obří psy; je to spodní hranice)",
     metaTitle: "{name}: kolik práce dá tento pes? Den, rok, {x} | PetPrep",
     metaDesc: "Jeden den se psem ve 3D, na týden, rok a celý život: procházky, krmení, náklady. Plemeno: {name}. Se zdroji.",
     eyebrow: "Než si pořídíte psa", title: "{name}: kolik práce dá tento pes?",
@@ -205,7 +205,7 @@ export const realCostText: Record<Locale, RealCostText> = {
   hr: {
     label: { walks: "Šetnje", meals: "Obroci", training: "Trening", brushing: "Četkanje", life: "Životni vijek", costs: "Troškovi" },
     walksVal: "{x} dnevno", walksNote: "oko {x} godišnje", mealsVal: "2 dnevno", mealsNote: "oko 731 godišnje", trainVal: "5 minuta dnevno", trainNote: "oko 30 sati godišnje",
-    costVal: "najmanje {m} mjesečno", costNote: "plus oko {s} za početak, {size}, Ujedinjeno Kraljevstvo{giant}", giant: " (PDSA nema broj za divovske pse; to je donja granica)",
+    costVal: "najmanje {m} mjesečno", costNote: "plus {s} za početak, {size}, Ujedinjeno Kraljevstvo{giant}", giant: " (PDSA nema broj za divovske pse; to je donja granica)",
     metaTitle: "{name}: koliko posla traži ovaj pas? Dan, godina, {x} | PetPrep",
     metaDesc: "Jedan dan s psom u 3D-u, na tjedan, godinu i cijeli život: šetnje, obroci, troškovi. Pasmina: {name}. S izvorima.",
     eyebrow: "Prije nego uzmete psa", title: "{name}: koliko posla traži ovaj pas?",
@@ -223,7 +223,7 @@ export const realCostText: Record<Locale, RealCostText> = {
   sv: {
     label: { walks: "Promenader", meals: "Måltider", training: "Träning", brushing: "Borstning", life: "Livslängd", costs: "Kostnader" },
     walksVal: "{x} per dag", walksNote: "ungefär {x} per år", mealsVal: "2 per dag", mealsNote: "ungefär 731 per år", trainVal: "5 minuter per dag", trainNote: "ungefär 30 timmar per år",
-    costVal: "minst {m} per månad", costNote: "plus ungefär {s} för att komma igång, {size}, Storbritannien{giant}", giant: " (PDSA har ingen siffra för jättehundar; detta är ett golv)",
+    costVal: "minst {m} per månad", costNote: "plus {s} för att komma igång, {size}, Storbritannien{giant}", giant: " (PDSA har ingen siffra för jättehundar; detta är ett golv)",
     metaTitle: "{name}: hur mycket jobb är den här hunden? Dag, år, {x} | PetPrep",
     metaDesc: "En dag med hunden i 3D, uppräknad till vecka, år och hela livet: promenader, mat, kostnader. Ras: {name}. Med källor.",
     eyebrow: "Innan du skaffar hund", title: "{name}: hur mycket jobb är den här hunden?",
@@ -241,7 +241,7 @@ export const realCostText: Record<Locale, RealCostText> = {
   da: {
     label: { walks: "Gåture", meals: "Måltider", training: "Træning", brushing: "Børstning", life: "Levetid", costs: "Udgifter" },
     walksVal: "{x} om dagen", walksNote: "cirka {x} om året", mealsVal: "2 om dagen", mealsNote: "cirka 731 om året", trainVal: "5 minutter om dagen", trainNote: "cirka 30 timer om året",
-    costVal: "mindst {m} om måneden", costNote: "plus cirka {s} til at komme i gang, {size}, Storbritannien{giant}", giant: " (PDSA har intet tal for kæmpehunde; det er en nedre grænse)",
+    costVal: "mindst {m} om måneden", costNote: "plus {s} til at komme i gang, {size}, Storbritannien{giant}", giant: " (PDSA har intet tal for kæmpehunde; det er en nedre grænse)",
     metaTitle: "{name}: hvor meget arbejde er denne hund? Dag, år, {x} | PetPrep",
     metaDesc: "En dag med hunden i 3D, ganget op til uge, år og hele livet: gåture, mad, udgifter. Race: {name}. Med kilder.",
     eyebrow: "Før du får en hund", title: "{name}: hvor meget arbejde er denne hund?",
@@ -259,7 +259,7 @@ export const realCostText: Record<Locale, RealCostText> = {
   fi: {
     label: { walks: "Lenkit", meals: "Ruokinnat", training: "Koulutus", brushing: "Harjaus", life: "Elinikä", costs: "Kulut" },
     walksVal: "{x} päivässä", walksNote: "noin {x} vuodessa", mealsVal: "2 päivässä", mealsNote: "noin 731 vuodessa", trainVal: "5 minuuttia päivässä", trainNote: "noin 30 tuntia vuodessa",
-    costVal: "vähintään {m} kuukaudessa", costNote: "lisäksi noin {s} alkuun, {size}, Yhdistynyt kuningaskunta{giant}", giant: " (PDSA:lla ei ole lukua jättikoirille; tämä on alaraja)",
+    costVal: "vähintään {m} kuukaudessa", costNote: "lisäksi {s} alkuun, {size}, Yhdistynyt kuningaskunta{giant}", giant: " (PDSA:lla ei ole lukua jättikoirille; tämä on alaraja)",
     metaTitle: "{name}: paljonko työtä tämä koira teettää? Päivä, vuosi, {x} | PetPrep",
     metaDesc: "Yksi päivä koiran kanssa 3D:nä, viikoksi, vuodeksi ja koko eliniäksi: lenkit, ruoka, kulut. Rotu: {name}. Lähteineen.",
     eyebrow: "Ennen kuin hankit koiran", title: "{name}: paljonko työtä tämä koira teettää?",
@@ -277,7 +277,7 @@ export const realCostText: Record<Locale, RealCostText> = {
   nb: {
     label: { walks: "Turer", meals: "Måltider", training: "Trening", brushing: "Børsting", life: "Levealder", costs: "Kostnader" },
     walksVal: "{x} om dagen", walksNote: "omtrent {x} i året", mealsVal: "2 om dagen", mealsNote: "omtrent 731 i året", trainVal: "5 minutter om dagen", trainNote: "omtrent 30 timer i året",
-    costVal: "minst {m} i måneden", costNote: "pluss omtrent {s} for å komme i gang, {size}, Storbritannia{giant}", giant: " (PDSA har ikke noe tall for kjempehunder; dette er en nedre grense)",
+    costVal: "minst {m} i måneden", costNote: "pluss {s} for å komme i gang, {size}, Storbritannia{giant}", giant: " (PDSA har ikke noe tall for kjempehunder; dette er en nedre grense)",
     metaTitle: "{name}: hvor mye jobb er denne hunden? Dag, år, {x} | PetPrep",
     metaDesc: "En dag med hunden i 3D, ganget opp til uke, år og hele livet: turer, mat, kostnader. Rase: {name}. Med kilder.",
     eyebrow: "Før du skaffer hund", title: "{name}: hvor mye jobb er denne hunden?",

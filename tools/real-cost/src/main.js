@@ -2,9 +2,11 @@ import * as THREE from 'three';
 import * as CANNON from 'cannon-es';
 import { STR } from './strings.js';
 import { PHRASES, unit as unitText } from './phrases.js';
+import { RATES, SYMBOL } from './rates.js';
+import { browserContext, postEmailSignup } from '../../../src/lib/emailSignup.ts';
 
 /* ---------- Data (every number has its origin in SOURCES in strings.js) ---------- */
-// Parent e-mail (optional, with consent) goes to the PetPrep API (M6-S05, POST /api/summary-leads).
+// Parent e-mail (optional, with consent) goes to the PetPrep API: POST /api/email-signups (segmented, David 2026-11-17), old POST /api/summary-leads as fallback.
 // The page runs inside an <iframe> on petprep.si (src/components/real-cost/RealCostPage.tsx). Query: lang=<any of the 15 site languages, see phrases.js; default en>,
 // home=<path of the locale home>, partners=<path of the partner page>, kit=<path of the Promise Kit page, optional>.
 const QUERY = new URLSearchParams(location.search);
@@ -37,9 +39,7 @@ const PROFILES = {
 const STEPS_PER_MIN = 100;
 // PDSA, The cost of owning a dog: minimum by size (GBP); no giant class, giant dogs use the large floor.
 const COST = { small: { monthly: 69, setup: 415 }, medium: { monthly: 83, setup: 531 }, large: { monthly: 116, setup: 560 } }[SIZE];
-// ECB euro reference rates, 13 November 2026: 1 EUR = 0.83559 GBP = 1.1052 USD. Fixed on purpose.
-const RATES = { GBP: 1, EUR: 1 / 0.83559, USD: 1.1052 / 0.83559 };
-const SYMBOL = { GBP: '£', EUR: '€', USD: '$' };
+// Selectable currencies: EUR (default in every language) and USD; GBP is only the internal source currency (rates.js).
 const SCALES = { day: 1, week: 7, year: 365.25, life: 365.25 * LIFE_YEARS };
 
 const LANG = QUERY.get('lang') in PHRASES ? QUERY.get('lang') : 'en';
@@ -59,17 +59,17 @@ function breedVars(lang) {
     less_than: fill(P.life.less_than, { x: u('year', YEARS) }),
     about: fill(P.life.about, { x: u('year', YEARS) }),
   };
-  const gbp = (v) => new Intl.NumberFormat(P.intl, { style: 'currency', currency: 'GBP', currencyDisplay: 'narrowSymbol', maximumFractionDigits: 0 }).format(v);
   return {
     name, name_a: `${/^[AEIOU]/i.test(name) ? 'an' : 'a'} ${name}`, years: n(YEARS), years_u: u('year', YEARS),
     walk_text: fill(P.q[WALK_Q], { x: u('min', WALK_MIN) }), life_text: life[LIFE_Q],
     groom_text: P.groom_app[GROOM] ?? P.groom_app.coat, size_text: P.size_app[SIZE],
-    cost_m: n(COST.monthly), cost_s: n(COST.setup), cost_m_c: gbp(COST.monthly), cost_s_c: gbp(COST.setup),
+    cost_m: n(COST.monthly), cost_s: n(COST.setup),
   };
 }
 const VARS = {};
 const varsFor = (lang) => (VARS[lang] ??= breedVars(lang));
-const t = (k) => (STR[state.lang][k] ?? k).replace(/\{(name|name_a|years|years_u|walk_text|life_text|groom_text|size_text|cost_m|cost_s|cost_m_c|cost_s_c)\}/g, (_, v) => varsFor(state.lang)[v]);
+// {cost_m_c} / {cost_s_c} are the PDSA minimums in the currency that is selected right now (converted, with "~").
+const t = (k) => (STR[state.lang][k] ?? k).replace(/\{(name|name_a|years|years_u|walk_text|life_text|groom_text|size_text|cost_m|cost_s|cost_m_c|cost_s_c)\}/g, (_, v) => (v === 'cost_m_c' ? money(COST.monthly) : v === 'cost_s_c' ? money(COST.setup) : varsFor(state.lang)[v]));
 const nf = (n, d = 0) => new Intl.NumberFormat(PHRASES[state.lang].intl, { maximumFractionDigits: d }).format(n);
 // "{n} unit" with the right plural form for the current language (kind: min | hour | year).
 const un = (kind, v) => unitText(state.lang, kind, v, (x) => nf(x, 1));
@@ -77,8 +77,9 @@ const un = (kind, v) => unitText(state.lang, kind, v, (x) => nf(x, 1));
 const curLayout = (lang) => { const parts = new Intl.NumberFormat(PHRASES[lang].intl, { style: 'currency', currency: 'EUR' }).formatToParts(1); return { after: parts.findIndex((x) => x.type === 'currency') > parts.findIndex((x) => x.type === 'integer'), gap: parts.some((x) => x.type === 'literal') ? '\u00a0' : '' }; };
 const conv = (gbp) => gbp * RATES[state.cur];
 const fmtCur = (v, d = 0) => { const { after, gap } = curLayout(state.lang); return after ? `${nf(v, d)}${gap}${SYMBOL[state.cur]}` : `${SYMBOL[state.cur]}${gap}${nf(v, d)}`; };
-// Amounts are kept in GBP (the PDSA source currency); other currencies are converted and marked with "~".
-const money = (gbp, d = 0, round = 1) => (state.cur === 'GBP' ? '' : '~') + fmtCur(Math.round(conv(gbp) / round) * round || conv(gbp), d);
+// Amounts are kept in GBP internally (the PDSA source currency) and always shown converted (EUR or USD) and marked with "~".
+const money = (gbp, d = 0, round = 1) => '~' + fmtCur(Math.round(conv(gbp) / round) * round || conv(gbp), d);
+const rateNote = () => t('rate_note').replace('{r}', `1 £ = ${nf(RATES[state.cur], 4)} ${SYMBOL[state.cur]}`);
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 function buildDay(stage) {
@@ -381,9 +382,10 @@ function renderCost(respawn = true) {
   const year = state.monthly * 12, life = state.setup + year * LIFE_YEARS;
   $('#monthly-out').textContent = money(state.monthly); $('#setup-out').textContent = money(state.setup);
   $('#c-year').textContent = money(year); $('#c-life').textContent = money(life, 0, 10);
-  $('#c-day').textContent = (state.cur === 'GBP' ? '' : '~') + fmtCur(conv(year / 365.25), 2);
+  $('#c-day').textContent = '~' + fmtCur(conv(year / 365.25), 2);
   document.querySelectorAll('#cur button').forEach((b) => b.setAttribute('aria-pressed', b.dataset.cur === state.cur));
-  $('#rate-note').textContent = state.cur === 'GBP' ? '' : t('rate_note').replace('{r}', `1 £ = ${nf(RATES[state.cur], 4)} ${SYMBOL[state.cur]}`);
+  $('#rate-note').textContent = rateNote();
+  $('[data-t="cost_note"]').textContent = t('cost_note');
   const unit = coinUnit(conv(life));
   binUnit = t('legend_coin').replace('{n}', fmtCur(unit)); renderBinLabel();
   if (!respawn) return;
@@ -423,7 +425,7 @@ function renderSheet() {
     <h2>${t('sheet_cost')}</h2>
     <div class="costs"><div><span>${t('monthly')}</span><b>${money(state.monthly)}</b></div><div><span>${t('setup')}</span><b>${money(state.setup)}</b></div>
       <div><span>${t('c_year')}</span><b>${money(year)}</b></div><div><span>${t('c_life')}</span><b>${money(life, 0, 10)}</b></div></div>
-    <p class="small">${t('cost_note')} ${state.cur === 'GBP' ? '' : t('rate_note').replace('{r}', `1 £ = ${nf(RATES[state.cur], 4)} ${SYMBOL[state.cur]}`)}</p>
+    <p class="small">${t('cost_note')} ${rateNote()}</p>
     <h2>${t('sheet_promise')}</h2>
     <p>${t('sheet_promise_p')}</p>
     <ul class="chk">${promiseItems().map((s) => `<li>${s}</li>`).join('')}</ul>
@@ -450,17 +452,14 @@ $('#news').addEventListener('submit', async (e) => {
   // A filled hidden field = an autofill or a bot: the server would store nothing, so do not say thank you.
   if ($('#news-hp').value !== '' || !API_URL) { msg.textContent = t(API_URL ? 'news_err' : 'news_err_proto'); return; }
   msg.textContent = ''; btn.disabled = true;
-  try {
-    const res = await fetch(`${API_URL}/api/summary-leads`, {
-      method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-      body: JSON.stringify({ email, consent: true, consent_version: CONSENT_VERSION, source: 'real_cost', locale: state.lang, breed: BREED, stage: state.stage, website: '' }),
-    });
-    if (res.status === 201) { try { localStorage.setItem(LEFT_KEY, '1'); } catch { /* private mode */ } showNews(true); }
-    else if (res.status === 422) {
-      const body = await res.json().catch(() => ({}));
-      msg.textContent = t(body?.errors?.email ? 'news_err_email' : 'news_err');
-    } else msg.textContent = t('news_err');
-  } catch { msg.textContent = t('news_err'); }
+  // One database for every e-mail (POST /api/email-signups, segmented); the old /api/summary-leads only while that is not deployed (src/lib/emailSignup.ts).
+  const result = await postEmailSignup(
+    { email, purpose: 'newsletter', source: 'real_cost', section: 'step5', locale: state.lang, species: 'dog', breed: BREED, stage: state.stage, consentVersion: CONSENT_VERSION, honeypot: $('#news-hp').value },
+    browserContext(),
+    { api: API_URL, allowLegacy: true },
+  );
+  if (result === 'ok') { try { localStorage.setItem(LEFT_KEY, '1'); } catch { /* private mode */ } showNews(true); }
+  else msg.textContent = t(result === 'email' ? 'news_err_email' : 'news_err');
   btn.disabled = false;
 });
 $('#news-other').addEventListener('click', () => { try { localStorage.removeItem(LEFT_KEY); } catch { /* private mode */ } $('#news-email').value = ''; showNews(false); $('#news-email').focus(); });
@@ -476,7 +475,8 @@ function applyStrings() {
   document.querySelectorAll('[data-t-ph]').forEach((el) => { el.placeholder = t(el.dataset.tPh); });
   document.querySelectorAll('#stage button').forEach((b) => b.setAttribute('aria-pressed', b.dataset.stage === state.stage));
   $('#sponsor-link').href = sitePath('partners', state.lang === 'sl' ? '/sl/partnerji' : state.lang === 'en' ? '/partners' : `/${state.lang}`);
-  $('#cta-try').href = sitePath('home', state.lang === 'en' ? '/' : `/${state.lang}`);
+  // To the early-access form of the home page with this breed (`?breed=<id>`: the form names it and sends it, src/lib/earlyAccess.ts).
+  $('#cta-try').href = `${sitePath('home', state.lang === 'en' ? '/' : `/${state.lang}`)}?breed=${BREED}#early-access`;
   const kit = sitePath('kit', ''); $('#cta-kit').hidden = !kit; if (kit) $('#cta-kit').href = kit;
   if (state.step === 'sum') renderSummary();
   if (state.step === 'cost') renderCost(false);

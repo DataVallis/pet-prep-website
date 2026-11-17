@@ -55,7 +55,7 @@ export const fi: QuizCopy = {
   clashExercise: "Tarvitsee enemmän liikuntaa kuin pystyt antamaan",
   seeBreed: "Tietoa rodusta",
   calcLink: "Paljonko työtä?",
-  tryCta: "Kokeile rotua {name} PetPrepillä",
+  tryCta: "Kokeile rotua {mid} PetPrepillä",
   considerNote: "Terveyshuomautukset ovat tiedoksi. Kysy kasvattajalta tai eläinsuojelulta terveystutkimusten tuloksia ja puhu eläinlääkärin kanssa.",
   adoptionTitle: "Harkitse myös adoptiota",
   adoptionText: "Eläinsuojeluyhdistyksissä ja koiratarhoissa odottaa monia ihania koiria, myös sekarotuisia. Siellä voidaan usein kertoa, miten koira käyttäytyy kotona, ennen kuin päätät. Käy tutustumassa lähelläsi olevaan eläinten kotiin.",

@@ -44,9 +44,9 @@ export const pt: PartnerLocalePack = {
     stats: {
       heading: "Números",
       intro: "Indicamos apenas o que pode ser verificado no produto. Situação a {date}.",
-      breeds: "raças no registo de animais",
-      breedsNote: "{dogs} raças de cães e {cats} raças de gatos, cada uma com a sua página e fontes citadas.",
-      languages: "idiomas do site",
+      breeds: "{n|one=raça|other=raças} no registo de animais",
+      breedsNote: "{dogs} {dogs|one=raça|other=raças} de cães e {cats} {cats|one=raça|other=raças} de gatos, cada uma com a sua página e fontes citadas.",
+      languages: "{n|one=idioma|other=idiomas} do site",
       languagesNote: "A aplicação está atualmente em esloveno e inglês.",
     },
   },
@@ -82,7 +82,7 @@ export const pt: PartnerLocalePack = {
       heading: "Exemplos de conteúdo",
       items: [
         ["A aplicação", "Um desafio de 12 semanas com um animal virtual realista e um painel para os pais."],
-        ["Registo de raças", "{breeds} raças ({dogs} cães, {cats} gatos) com fontes, situação a {date}."],
+        ["Registo de raças", "{breeds} {breeds|one=raça|other=raças} ({dogs} {dogs|one=cão|other=cães}, {cats} {cats|one=gato|other=gatos}) com fontes, situação a {date}."],
         ["Série «12 Weeks»", "Uma série de vídeo que acompanha 12 semanas de cuidados com um animal; um espaço para a menção de um patrocinador."],
       ],
     },

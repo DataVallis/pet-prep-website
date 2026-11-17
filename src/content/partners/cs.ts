@@ -44,9 +44,9 @@ export const cs: PartnerLocalePack = {
     stats: {
       heading: "Čísla",
       intro: "Uvádíme jen to, co lze ověřit v produktu. Stav k {date}.",
-      breeds: "plemen v encyklopedii zvířat",
-      breedsNote: "{dogs} plemen psů a {cats} plemen koček, každé s vlastní stránkou a uvedenými zdroji.",
-      languages: "jazyků webu",
+      breeds: "{n|one=plemeno|few=plemena|other=plemen} v encyklopedii zvířat",
+      breedsNote: "{dogs} {dogs|one=plemeno|few=plemena|other=plemen} psů a {cats} {cats|one=plemeno|few=plemena|other=plemen} koček, každé s vlastní stránkou a uvedenými zdroji.",
+      languages: "{n|one=jazyk|few=jazyky|other=jazyků} webu",
       languagesNote: "Aplikace je dnes ve slovinštině a angličtině.",
     },
   },
@@ -82,7 +82,7 @@ export const cs: PartnerLocalePack = {
       heading: "Ukázky obsahu",
       items: [
         ["Aplikace", "12týdenní výzva s realistickým virtuálním mazlíčkem s AI a přehledem pro rodiče."],
-        ["Encyklopedie plemen", "{breeds} plemen ({dogs} psů, {cats} koček) se zdroji, stav k {date}."],
+        ["Encyklopedie plemen", "{breeds} {breeds|one=plemeno|few=plemena|other=plemen} ({dogs} {dogs|one=pes|few=psi|other=psů}, {cats} {cats|one=kočka|few=kočky|other=koček}) se zdroji, stav k {date}."],
         ["Seriál „12 Weeks“", "Videoseriál, který sleduje 12 týdnů péče o mazlíčka; místo pro zmínku o sponzorovi."],
       ],
     },

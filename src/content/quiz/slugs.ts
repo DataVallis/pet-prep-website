@@ -13,7 +13,7 @@ export const quizSlugs = {
 } as const satisfies Record<string, Record<Locale, string>>;
 
 /** Last content change of the hub and the quiz (sitemap lastmod, ISO date). */
-export const quizUpdated = "2026-11-16";
+export const quizUpdated = "2026-11-17";
 
 const prefix = (locale: Locale) => (locale === defaultLocale ? "" : `/${locale}`);
 

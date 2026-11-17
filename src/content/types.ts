@@ -155,6 +155,8 @@ export type Dictionary = {
     error: string;
     consent: string;
     privacyLink: string;
+    /** Shown when a breed is chosen (?breed=<id>), e.g. "Early access for the breed: French Bulldog". `{mid}` = the breed name in running text (lib/breedName.ts); the name is never declined. */
+    forBreed: string;
   };
   contactCards: { title: string; text: string; email: "hello" | "privacy" | "partners" | "investors" }[];
   home: {

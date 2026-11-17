@@ -6,7 +6,7 @@ import type { RouteKey } from "@/i18n/config";
  * on the page (site.legalUpdated must match). Register pages use the registry dates instead.
  */
 export const pageUpdated: Record<RouteKey, string> = {
-  home: "2026-11-11",
+  home: "2026-11-17",
   howItWorks: "2026-10-27",
   parents: "2026-11-11",
   afterAdoption: "2026-10-09",

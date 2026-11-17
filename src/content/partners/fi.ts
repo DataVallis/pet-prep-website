@@ -44,9 +44,9 @@ export const fi: PartnerLocalePack = {
     stats: {
       heading: "Luvut",
       intro: "Kerromme vain sen, minkä voi tarkistaa tuotteesta. Tilanne {date}.",
-      breeds: "rotua eläinhakemistossa",
-      breedsNote: "{dogs} koirarotua ja {cats} kissarotua, kullakin oma sivunsa ja mainitut lähteet.",
-      languages: "verkkosivuston kieltä",
+      breeds: "{n|one=rotu|other=rotua} eläinhakemistossa",
+      breedsNote: "{dogs} {dogs|one=koirarotu|other=koirarotua} ja {cats} {cats|one=kissarotu|other=kissarotua}, kullakin oma sivunsa ja mainitut lähteet.",
+      languages: "{n|one=verkkosivuston kieli|other=verkkosivuston kieltä}",
       languagesNote: "Sovellus on tällä hetkellä sloveniaksi ja englanniksi.",
     },
   },
@@ -82,7 +82,7 @@ export const fi: PartnerLocalePack = {
       heading: "Esimerkkejä sisällöstä",
       items: [
         ["Sovellus", "12 viikon haaste realistisella tekoälylemmikillä ja vanhempien ohjausnäkymä."],
-        ["Rotuhakemisto", "{breeds} rotua ({dogs} koiraa, {cats} kissaa) lähteineen, tilanne {date}."],
+        ["Rotuhakemisto", "{breeds} {breeds|one=rotu|other=rotua} ({dogs} {dogs|one=koira|other=koiraa}, {cats} {cats|one=kissa|other=kissaa}) lähteineen, tilanne {date}."],
         ["”12 Weeks”-sarja", "Videosarja, joka seuraa 12 viikon lemmikinhoitoa; paikka sponsorin maininnalle."],
       ],
     },

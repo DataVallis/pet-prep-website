@@ -55,7 +55,7 @@ export const it: QuizCopy = {
   clashExercise: "Richiede più movimento di quanto puoi offrire",
   seeBreed: "Sulla razza",
   calcLink: "Quanto lavoro è?",
-  tryCta: "Prova {name} in PetPrep",
+  tryCta: "Prova la razza {mid} in PetPrep",
   considerNote: "Le note sulla salute sono solo informative. Chiedi all’allevatore o al rifugio i risultati dei test sanitari e parlane con un veterinario.",
   adoptionTitle: "Pensa anche all’adozione",
   adoptionText: "Nei rifugi aspettano tanti cani meravigliosi, anche meticci. Lì possono spiegarti come si comporta un cane in casa prima che tu decida. Fai una visita a un rifugio vicino a te.",

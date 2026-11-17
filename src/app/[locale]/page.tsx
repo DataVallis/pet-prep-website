@@ -10,6 +10,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { HeroVisual } from "@/components/HeroVisual";
 import { EARLY_ACCESS_ID, PrimaryCta, StoreButtons } from "@/components/Cta";
 import { EarlyAccessForm } from "@/components/EarlyAccessForm";
+import { breedNameMap } from "@/lib/registry/views";
 import { site } from "@/lib/site";
 import { Pricing } from "@/components/Pricing";
 import { Faq } from "@/components/Faq";
@@ -78,7 +79,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
             </div>
           ) : (
             <div className="flex flex-col gap-1">
-              <EarlyAccessForm locale={locale} copy={dict.earlyAccess} privacyHref={pathFor(locale, "privacy")} size="lg" />
+              <EarlyAccessForm locale={locale} copy={dict.earlyAccess} privacyHref={pathFor(locale, "privacy")} size="lg" section="hero" breedNames={breedNameMap(locale)} />
               <Link href={pathFor(locale, "howItWorks")} className="inline-flex items-center gap-2 self-start font-semibold text-mint-text hover:underline">
                 {dict.cta.secondary} <Arrow />
               </Link>
@@ -303,7 +304,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
           <div className="flex flex-[1_1_460px] flex-col gap-4">
             <h2 className="h-display text-[clamp(36px,4.6vw,60px)]">{h.final.title}</h2>
             <p className="max-w-[460px] text-lg leading-relaxed">{h.final.text}</p>
-            <div className="mt-2"><StoreButtons locale={locale} dict={dict} /></div>
+            <div className="mt-2"><StoreButtons locale={locale} dict={dict} section="home_cta" /></div>
           </div>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/brand/petprep-mark.svg" alt="" width={220} height={220} className="h-auto w-[180px] sm:w-[220px]" />

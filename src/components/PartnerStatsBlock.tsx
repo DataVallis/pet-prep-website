@@ -11,17 +11,18 @@ import { computePartnerStats, fill, formatAsOf } from "@/lib/partnerStats";
 export function PartnerStatsBlock({ lang }: { lang: PartnerLang }) {
   const c = partnerCopy[lang].stats;
   const stats = computePartnerStats(registry as unknown as { breeds: { species?: unknown }[] }, locales, new Date());
+  const intl = localeMeta[lang].intl;
   type Item = { value: number; label: string; note: string };
   const items: (Item | null)[] = [
-    stats.breeds ? { value: stats.breeds.total, label: c.breeds, note: fill(c.breedsNote, { dogs: stats.breeds.dogs, cats: stats.breeds.cats }) } : null,
-    stats.languages ? { value: stats.languages, label: c.languages, note: c.languagesNote } : null,
+    stats.breeds ? { value: stats.breeds.total, label: fill(c.breeds, { n: stats.breeds.total }, intl), note: fill(c.breedsNote, { dogs: stats.breeds.dogs, cats: stats.breeds.cats }, intl) } : null,
+    stats.languages ? { value: stats.languages, label: fill(c.languages, { n: stats.languages }, intl), note: c.languagesNote } : null,
   ];
   const shown = items.filter((x): x is Item => x !== null);
   if (!shown.length) return null;
   return (
     <section id="stevilke" className="flex scroll-mt-24 flex-col gap-6">
       <h2 className="h-card text-[28px] leading-tight sm:text-[34px]">{c.heading}</h2>
-      <p className="max-w-3xl text-[17px] leading-relaxed text-muted">{fill(c.intro, { date: formatAsOf(stats.asOf, localeMeta[lang].intl) })}</p>
+      <p className="max-w-3xl text-[17px] leading-relaxed text-muted">{fill(c.intro, { date: formatAsOf(stats.asOf, intl) })}</p>
       <dl className="grid gap-4 sm:grid-cols-2">
         {shown.map((it) => (
           <div key={it.label} className="flex flex-col gap-1 rounded-[22px] border border-line bg-white p-6">

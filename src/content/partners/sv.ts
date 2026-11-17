@@ -44,8 +44,8 @@ export const sv: PartnerLocalePack = {
     stats: {
       heading: "Siffror",
       intro: "Vi anger bara det som går att kontrollera i produkten. Läget den {date}.",
-      breeds: "raser i djurregistret",
-      breedsNote: "{dogs} hundraser och {cats} kattraser, var och en med en egen sida och angivna källor.",
+      breeds: "{n|one=ras|other=raser} i djurregistret",
+      breedsNote: "{dogs} {dogs|one=hundras|other=hundraser} och {cats} {cats|one=kattras|other=kattraser}, var och en med en egen sida och angivna källor.",
       languages: "språk på webbplatsen",
       languagesNote: "Appen finns i dag på slovenska och engelska.",
     },
@@ -82,7 +82,7 @@ export const sv: PartnerLocalePack = {
       heading: "Exempel på innehåll",
       items: [
         ["Appen", "En 12 veckor lång utmaning med ett realistiskt AI-husdjur och en översikt för föräldrar."],
-        ["Rasregister", "{breeds} raser ({dogs} hundar, {cats} katter) med källor, läget den {date}."],
+        ["Rasregister", "{breeds} {breeds|one=ras|other=raser} ({dogs} {dogs|one=hund|other=hundar}, {cats} {cats|one=katt|other=katter}) med källor, läget den {date}."],
         ["Serien ”12 Weeks”", "En videoserie som följer 12 veckors husdjursomsorg; ett tillfälle att nämna en sponsor."],
       ],
     },

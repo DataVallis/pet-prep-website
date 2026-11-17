@@ -8,7 +8,7 @@
  *   min_per_day fact; the simulation uses its number, the page shows its qualifier ("more than 120 minutes");
  * - lifespan: a median first, then a span (middle), then "more than" / "less than" / "about";
  * - grooming: once a week = 1, more than once a week = 2 (a floor), every day = 7; no fact = no brushing row;
- * - costs: PDSA minimum by size (small £69 + £415, medium £83 + £531, large £116 + £560; PDSA has no giant
+ * - costs: PDSA minimum by size (GBP, shown converted to EUR/USD: small £69 + £415, medium £83 + £531, large £116 + £560; PDSA has no giant
  *   class, so giant dogs use the large figures as a floor). Toy and small → small; small-medium and medium →
  *   medium; medium-large, large and giant → large.
  */

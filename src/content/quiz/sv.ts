@@ -55,7 +55,7 @@ export const sv: QuizCopy = {
   clashExercise: "Behöver mer motion än du kan ge",
   seeBreed: "Om rasen",
   calcLink: "Hur mycket jobb är det?",
-  tryCta: "Testa {name} i PetPrep",
+  tryCta: "Testa rasen {mid} i PetPrep",
   considerNote: "Hälsoanteckningarna är till för information. Fråga uppfödaren eller hundhemmet om hälsotester och prata med en veterinär.",
   adoptionTitle: "Fundera också på adoption",
   adoptionText: "På hundhem väntar många underbara hundar, även blandraser. Där kan man ofta berätta hur en hund beter sig hemma innan du bestämmer dig. Besök ett hundhem nära dig.",

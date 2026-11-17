@@ -37,9 +37,5 @@ export function quizEmailStrings(locale: Locale): EmailStrings {
 export function quizSponsorStrings(locale: Locale): SponsorStrings {
   return Object.fromEntries(SPONSOR_KEYS.map((k) => [k, table[locale][k]])) as SponsorStrings;
 }
-/** "Thank you" after saving: same wording as the real-cost app, minus its "no need to enter it again" (this page keeps nothing). */
-export const quizThanks: Record<Locale, string> = {
-  en: "Thank you. We have your e-mail.", sl: "Hvala. Vaš e-naslov imamo.", de: "Danke. Wir haben Ihre E-Mail-Adresse.", fr: "Merci. Nous avons votre e-mail.", es: "Gracias. Ya tenemos tu correo.",
-  it: "Grazie. Abbiamo la tua e-mail.", pt: "Obrigado. Já temos o seu e-mail.", nl: "Bedankt. We hebben je e-mailadres.", pl: "Dziękujemy. Mamy Twój e-mail.", cs: "Děkujeme. Váš e-mail máme.",
-  hr: "Hvala. Imamo vašu e-adresu.", sv: "Tack. Vi har din e-postadress.", da: "Tak. Vi har din e-mailadresse.", fi: "Kiitos. Sähköpostiosoitteesi on tallessa.", nb: "Takk. Vi har e-postadressen din.",
-};
+/** "Thank you for signing up for the PetPrep news": the same wording as the real-cost app (strings.js `news_done`). */
+export const quizThanks: Record<Locale, string> = Object.fromEntries(Object.keys(quizCopy).map((l) => [l, table[l].news_done])) as Record<Locale, string>;

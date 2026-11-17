@@ -44,9 +44,9 @@ export const de: PartnerLocalePack = {
     stats: {
       heading: "Zahlen",
       intro: "Wir nennen nur, was sich im Produkt überprüfen lässt. Stand: {date}.",
-      breeds: "Rassen im Tierregister",
-      breedsNote: "{dogs} Hunderassen und {cats} Katzenrassen, jede mit eigener Seite und angegebenen Quellen.",
-      languages: "Sprachen der Website",
+      breeds: "{n|one=Rasse|other=Rassen} im Tierregister",
+      breedsNote: "{dogs} {dogs|one=Hunderasse|other=Hunderassen} und {cats} {cats|one=Katzenrasse|other=Katzenrassen}, jede mit eigener Seite und angegebenen Quellen.",
+      languages: "{n|one=Sprache|other=Sprachen} der Website",
       languagesNote: "Die App gibt es derzeit auf Slowenisch und Englisch.",
     },
   },
@@ -82,7 +82,7 @@ export const de: PartnerLocalePack = {
       heading: "Inhaltsbeispiele",
       items: [
         ["Die App", "Eine 12-wöchige Challenge mit einem realistischen KI-Haustier und einem Dashboard für Eltern."],
-        ["Rasseregister", "{breeds} Rassen ({dogs} Hunde, {cats} Katzen) mit Quellen, Stand: {date}."],
+        ["Rasseregister", "{breeds} {breeds|one=Rasse|other=Rassen} ({dogs} {dogs|one=Hund|other=Hunde}, {cats} {cats|one=Katze|other=Katzen}) mit Quellen, Stand: {date}."],
         ["Serie „12 Weeks“", "Eine Videoserie, die 12 Wochen Haustierpflege begleitet; Raum für die Nennung eines Sponsors."],
       ],
     },
