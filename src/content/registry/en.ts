@@ -800,6 +800,15 @@ const en: RegistryCopy = {
       sources: ["S888", "S889", "S890", "S891", "S892", "S10"],
     },
 
+    tibetan_terrier: {
+      aka: "Tibet Terrier, tibetanski terier",
+      text: [
+        "The Tibetan Terrier is a sturdy, medium-sized, long-haired companion dog from Tibet (FCI Group 9, companion and toy dogs; section Tibetan breeds) — a terrier in name only. The FCI standard asks for a generally square outline, a double coat with a profuse, fine, long top coat that is straight or waved, pendant feathered ears and a tail carried in a curl over the back; any colour is allowed except chocolate, liver or merle, and males stand 36–41 cm at the withers, with females slightly smaller. The Canadian Kennel Club standard gives a weight of 8.25 to 13.5 kg (18 to 30 lb). A dog of this size is fully grown at about 12–15 months (PetMD), and PDSA gives a lifespan of over 12 years (PetMD: 15–16 years).",
+        "The FCI standard calls the breed lively and good-natured, outgoing, alert and intelligent, but sparing of affection to strangers. PDSA calls Tibetan Terriers gentle, friendly and affectionate dogs that make good family pets, recommends around an hour of exercise a day and says grooming is a daily requirement. PetMD notes they can develop separation anxiety if left alone for long periods and recommends socialisation classes for the puppy before 16 weeks; it says they can be good with young children and other dogs when introductions are supervised, while WebMD says some individuals struggle with young children and other dogs. WebMD recommends brushing the teeth daily.",
+      ],
+      sources: ["S904", "S905", "S906", "S907", "S909", "S10"],
+    },
+
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
       text: [
