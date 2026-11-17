@@ -2,7 +2,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { locales, salesSlugs, pageSlugs } from "../i18n/config.ts";
-import { formatKitPrice, checkoutUrl, giftEnabled, promiseKitAlternatePaths, promiseKitEnabled, promiseKitFooterHref, promiseKitLocales, promiseKitPath, promiseKitSitemapEntries } from "./promiseKit.ts";
+import { formatKitPrice, giftEnabled, kitThanksParams, promiseKitAlternatePaths, promiseKitEnabled, promiseKitFooterHref, promiseKitLocales, promiseKitPath, promiseKitSitemapEntries } from "./promiseKit.ts";
 import { kitCopy } from "../content/promise-kit/index.ts";
 
 test("switch is on only for the exact value 1", () => {
@@ -47,13 +47,10 @@ test("switch on: all 15 languages in the sitemap and the hreflang map", () => {
   assert.equal(promiseKitFooterHref(true, "xx"), undefined);
 });
 
-test("checkout URL: missing, empty, non-https or invalid values hide the button", () => {
-  assert.equal(checkoutUrl(undefined), undefined);
-  assert.equal(checkoutUrl("  "), undefined);
-  assert.equal(checkoutUrl("http://shop.example/x"), undefined);
-  assert.equal(checkoutUrl("javascript:alert(1)"), undefined);
-  assert.equal(checkoutUrl("not a url"), undefined);
-  assert.equal(checkoutUrl(" https://petprep.lemonsqueezy.com/buy/abc "), "https://petprep.lemonsqueezy.com/buy/abc");
+test("kit thank-you page: one child of the kit page per language, none while the switch is off", () => {
+  assert.deepEqual(kitThanksParams("en", false), []);
+  assert.deepEqual(kitThanksParams("en", true), [{ slug: "promise-kit", species: "thanks" }]);
+  assert.deepEqual(kitThanksParams("sl", true), [{ slug: "obljuba-o-ljubljencku", species: "hvala" }]);
 });
 
 test("kit copy: all 15 languages have the same shape, ten questions, empty cost fields, no ages or company name", () => {

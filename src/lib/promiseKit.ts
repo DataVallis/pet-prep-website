@@ -5,8 +5,8 @@
  * case; the callers pass `process.env.NEXT_PUBLIC_…` literally (Next inlines those at build time).
  *
  * - NEXT_PUBLIC_FEATURE_PROMISE_KIT === "1"  page, sitemap, llms.txt and footer link exist; otherwise none of them.
- * - NEXT_PUBLIC_LS_KIT_URL / NEXT_PUBLIC_LS_SAMPLE_URL  Lemon Squeezy checkout links; a missing or non-https
- *   value hides that button.
+ * - Buying goes through our API and Stripe (M6-S09, src/lib/shop.ts); the thank-you page with the downloads is
+ *   `<kit page>/<thanks>` (kitThanksParams); the free sample is a form on the page (POST /api/summary-leads).
  * - NEXT_PUBLIC_FEATURE_GIFT === "1"  the page links to the gift page (owned by M6-S01).
  */
 import { isLocale, locales, salesSlugs, type Locale } from "../i18n/config.ts";
@@ -36,23 +36,10 @@ export function giftPageOf(l: KitLocale): string {
   return giftPath(l, "gift");
 }
 
-/** A checkout URL is used only when it is a non-empty https URL. */
-export function checkoutUrl(raw: string | undefined): string | undefined {
-  const v = raw?.trim();
-  if (!v) return undefined;
-  try {
-    return new URL(v).protocol === "https:" ? v : undefined;
-  } catch {
-    return undefined;
-  }
-}
-
 /** Current switch state, read from the build environment. */
 export function promiseKitConfig() {
   return {
     enabled: promiseKitEnabled(process.env.NEXT_PUBLIC_FEATURE_PROMISE_KIT),
-    buyUrl: checkoutUrl(process.env.NEXT_PUBLIC_LS_KIT_URL),
-    sampleUrl: checkoutUrl(process.env.NEXT_PUBLIC_LS_SAMPLE_URL),
     gift: giftEnabled(process.env.NEXT_PUBLIC_FEATURE_GIFT),
   };
 }
@@ -65,6 +52,11 @@ export function promiseKitLocales(enabled: boolean): KitLocale[] {
 /** Static params `{ locale, slug }` of the sales page: none while the switch is off. */
 export function promiseKitSlugParams(enabled: boolean): { locale: KitLocale; slug: string }[] {
   return promiseKitLocales(enabled).map((locale) => ({ locale, slug: salesSlugs.promiseKit[locale] }));
+}
+
+/** Static params `{ slug, species }` of the kit thank-you page (a child of the kit page): none while the switch is off. */
+export function kitThanksParams(locale: KitLocale, enabled: boolean): { slug: string; species: string }[] {
+  return enabled ? [{ slug: salesSlugs.promiseKit[locale], species: salesSlugs.giftThanks[locale] }] : [];
 }
 
 /** Paths per language for the hreflang map. */
