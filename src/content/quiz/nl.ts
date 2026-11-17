@@ -55,7 +55,7 @@ export const nl: QuizCopy = {
   clashExercise: "Heeft meer beweging nodig dan je kunt geven",
   seeBreed: "Over dit ras",
   calcLink: "Hoeveel werk is het?",
-  tryCta: "Probeer {name} in PetPrep",
+  tryCta: "Probeer het ras {mid} in PetPrep",
   considerNote: "De gezondheidsopmerkingen zijn alleen informatief. Vraag de fokker of het asiel naar gezondheidstests en praat met een dierenarts.",
   adoptionTitle: "Denk ook aan adoptie",
   adoptionText: "In asiels wachten veel prachtige honden, ook kruisingen. Een asiel kan je vaak al vertellen hoe een hond zich thuis gedraagt voordat je kiest. Bezoek er een bij jou in de buurt.",

@@ -1,17 +1,27 @@
 "use client";
 
 import Link from "next/link";
-import { useId, useState, type FormEvent } from "react";
+import { useEffect, useId, useState, type FormEvent } from "react";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/content/types";
+import { breedFromSearch } from "@/lib/earlyAccess";
+import { midName } from "@/lib/breedName";
+import { browserContext, EARLY_ACCESS_CONSENT_VERSION, postEmailSignup } from "@/lib/emailSignup";
 
 type Copy = Dictionary["earlyAccess"];
 type Tone = "light" | "dark" | "mint";
+type ChosenBreed = { id: string; name: string; species: "dog" | "cat" };
 type State = "idle" | "sending" | "done" | "invalid" | "error";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
-/** Email sign-up for early access. Posts to /api/subscribe, which stores the address in Klaviyo. */
+/**
+ * Email sign-up for early access. The browser posts to PetPrep's own database (/api/email-signups, segmented:
+ * source early_access_form, section, page, breed, UTM, referrer host) and, in parallel for now, to /api/subscribe,
+ * which stores the address in Klaviyo (until the planned sync job exists). It is a success when either one accepts it
+ * (a failure of one is only logged). When the page URL carries `?breed=<id>` (the quiz result button, breed CTAs) the
+ * form names the breed and sends it to both.
+ */
 export function EarlyAccessForm({
   locale,
   copy,
@@ -19,6 +29,8 @@ export function EarlyAccessForm({
   tone = "light",
   size = "md",
   showConsent = true,
+  section = "hero",
+  breed,
 }: {
   locale: Locale;
   copy: Copy;
@@ -26,11 +38,37 @@ export function EarlyAccessForm({
   tone?: Tone;
   size?: "md" | "lg";
   showConsent?: boolean;
+  /** Which form instance this is on the page (hero, home_cta, breed_cta …), sent as `section`. */
+  section?: string;
+  /** A breed fixed by the page itself (a breed page); otherwise `?breed=` of the URL is used (resolved against the register's index). */
+  breed?: ChosenBreed;
 }) {
   const id = useId();
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
   const [state, setState] = useState<State>("idle");
+  const [urlBreed, setUrlBreed] = useState<ChosenBreed | null>(null);
+
+  // ?breed=<id> is read in the browser (the pages are static). The id is resolved to the name in the page language (and
+  // its species) from the register's slim index, fetched only when the URL has a breed; an unknown id is ignored.
+  useEffect(() => {
+    const wanted = breedFromSearch(window.location.search);
+    if (!wanted) return;
+    let alive = true;
+    (async () => {
+      for (const species of ["dog", "cat"] as const) {
+        try {
+          const res = await fetch(`/registry/${species}/index.${locale}.json`);
+          if (!res.ok) continue;
+          const found = ((await res.json()) as { id: string; n: string }[]).find((b) => b.id === wanted);
+          if (found && alive) { setUrlBreed({ id: found.id, name: found.n, species }); return; }
+        } catch { /* no breed line: the form still works */ }
+      }
+    })();
+    return () => { alive = false; };
+  }, [locale]);
+  const chosen = breed ?? urlBreed;
+  const chosenName = chosen ? midName(chosen.name, locale) : null;
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -39,16 +77,27 @@ export function EarlyAccessForm({
       return;
     }
     setState("sending");
-    try {
-      const res = await fetch("/api/subscribe", {
-        method: "POST",
-        headers: { "content-type": "application/json" },
-        body: JSON.stringify({ email: email.trim(), locale, page: window.location.pathname, company }),
-      });
-      if (res.ok) setState("done");
-      else setState(res.status === 400 ? "invalid" : "error");
-    } catch {
-      setState("error");
+    const addr = email.trim();
+    // Our database only gets a sign-up when the consent sentence was shown to the visitor (showConsent); Klaviyo is unchanged.
+    const ours = showConsent
+      ? postEmailSignup(
+          { email: addr, purpose: "early_access", source: "early_access_form", section, locale, species: chosen?.species, breed: chosen?.id, consentVersion: EARLY_ACCESS_CONSENT_VERSION, honeypot: company },
+          browserContext(),
+        ).catch(() => "error" as const)
+      : Promise.resolve("proto" as const);
+    const klaviyo = fetch("/api/subscribe", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ email: addr, locale, page: window.location.pathname, company, breed: chosen?.id }),
+    }).then((res) => ({ ok: res.ok, status: res.status })).catch(() => ({ ok: false, status: 0 }));
+    const [a, k] = await Promise.all([ours, klaviyo]);
+    if (a === "ok" || k.ok) {
+      if (a !== "ok" && a !== "proto") console.error("[early-access] our database did not accept the sign-up:", a);
+      if (!k.ok) console.error("[early-access] Klaviyo did not accept the sign-up:", k.status);
+      setState("done");
+    } else {
+      console.error("[early-access] sign-up failed:", a, k.status);
+      setState(a === "email" || k.status === 400 ? "invalid" : "error");
     }
   }
 
@@ -74,6 +123,7 @@ export function EarlyAccessForm({
 
   return (
     <form onSubmit={onSubmit} noValidate className="flex w-full max-w-[560px] flex-col gap-2.5">
+      {chosenName ? <p className={`text-[15px] font-semibold ${dark ? "text-mint" : "text-mint-text"}`}>{copy.forBreed.replace("{mid}", () => chosenName)}</p> : null}
       <label htmlFor={`${id}-email`} className="sr-only">{copy.label}</label>
       <div className="flex flex-col gap-2.5 sm:flex-row">
         <input

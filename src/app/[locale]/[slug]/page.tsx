@@ -128,7 +128,7 @@ export default async function SubPage({ params }: PageProps<"/[locale]/[slug]">)
               <p className="font-display text-[28px] font-extrabold leading-tight tracking-[-0.02em] sm:text-[34px]">{dict.home.final.title}</p>
               <p className="leading-relaxed">{dict.earlyAccess.text}</p>
             </div>
-            <div className="w-full max-w-[560px]"><StoreButtons locale={locale} dict={dict} /></div>
+            <div className="w-full max-w-[560px]"><StoreButtons locale={locale} dict={dict} section="page_cta" /></div>
           </div>
         ) : null}
       </div>

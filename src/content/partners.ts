@@ -33,10 +33,11 @@ export type PartnerCopy = {
     errors: Record<"company" | "contact_name" | "email" | "type" | "message" | "consent", string>;
     rateLimited: string; invalid: string; fallbackBefore: string; fallbackAfter: string;
   };
+  /** `breeds` / `languages` are labels after a number: `{n|one=…|other=…}` picks the plural form for n (lib/partnerStats.ts `fill`). */
   stats: { heading: string; intro: string; breeds: string; breedsNote: string; languages: string; languagesNote: string };
 };
 
-/** Media kit PDF text (scripts/build-media-kit.mjs). Placeholders: {breeds} {dogs} {cats} {date} in the example cards, {email} {url} in contact.text. */
+/** Media kit PDF text (scripts/build-media-kit.mjs). Counts take their noun in the right plural form per language: `{dogs|one=…|few=…|other=…}` (see `fill` in lib/partnerStats.ts). Placeholders: {breeds} {dogs} {cats} {date} in the example cards, {email} {url} in contact.text. */
 export type KitDoc = {
   htmlLang: string;
   company: string;
@@ -97,9 +98,9 @@ const baseCopy = {
     stats: {
       heading: "Številke",
       intro: "Navajamo samo to, kar lahko preverimo v izdelku. Stanje na dan {date}.",
-      breeds: "pasme v registru živali",
-      breedsNote: "{dogs} pasem psov in {cats} pasem mačk, vsaka z lastno stranjo in navedenimi viri.",
-      languages: "jezikov spletne strani",
+      breeds: "{n|one=pasma|two=pasmi|few=pasme|other=pasem} v registru živali",
+      breedsNote: "{dogs} {dogs|one=pasma|two=pasmi|few=pasme|other=pasem} psov in {cats} {cats|one=pasma|two=pasmi|few=pasme|other=pasem} mačk, vsaka z lastno stranjo in navedenimi viri.",
+      languages: "{n|one=jezik|two=jezika|few=jeziki|other=jezikov} spletne strani",
       languagesNote: "Aplikacija je danes v slovenščini in angleščini.",
     },
   },
@@ -145,9 +146,9 @@ const baseCopy = {
     stats: {
       heading: "Numbers",
       intro: "We only state what we can verify in the product. As of {date}.",
-      breeds: "breeds in the animal register",
-      breedsNote: "{dogs} dog breeds and {cats} cat breeds, each with its own page and cited sources.",
-      languages: "website languages",
+      breeds: "{n|one=breed|other=breeds} in the animal register",
+      breedsNote: "{dogs} dog {dogs|one=breed|other=breeds} and {cats} cat {cats|one=breed|other=breeds}, each with its own page and cited sources.",
+      languages: "{n|one=website language|other=website languages}",
       languagesNote: "The app is currently in Slovenian and English.",
     },
   },
@@ -201,7 +202,7 @@ const baseKit = {
       heading: "Primeri vsebin",
       items: [
         ["Aplikacija", "12-tedenski izziv z realističnim AI ljubljenčkom in nadzorno ploščo za starše."],
-        ["Register pasem", "{breeds} pasem ({dogs} psov, {cats} mačk) z viri, stanje na dan {date}."],
+        ["Register pasem", "{breeds} {breeds|one=pasma|two=pasmi|few=pasme|other=pasem} ({dogs} {dogs|one=pes|two=psa|few=psi|other=psov}, {cats} {cats|one=mačka|two=mački|few=mačke|other=mačk}) z viri, stanje na dan {date}."],
         ["Serija »12 Weeks«", "Video serija, ki spremlja 12 tednov skrbi za ljubljenčka; priložnost za omembo sponzorja."],
       ],
     },
@@ -244,7 +245,7 @@ const baseKit = {
       heading: "Content examples",
       items: [
         ["The app", "A 12-week challenge with a realistic AI pet and a parent dashboard."],
-        ["Breed register", "{breeds} breeds ({dogs} dogs, {cats} cats) with sources, as of {date}."],
+        ["Breed register", "{breeds} {breeds|one=breed|other=breeds} ({dogs} {dogs|one=dog|other=dogs}, {cats} {cats|one=cat|other=cats}) with sources, as of {date}."],
         ["“12 Weeks” series", "A video series following 12 weeks of pet care; a place for a sponsor mention."],
       ],
     },

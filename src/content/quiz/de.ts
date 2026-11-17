@@ -55,7 +55,7 @@ export const de: QuizCopy = {
   clashExercise: "Braucht mehr Bewegung, als Sie bieten können",
   seeBreed: "Zur Rasse",
   calcLink: "Wie viel Arbeit ist das?",
-  tryCta: "{name} in PetPrep testen",
+  tryCta: "Rasse {mid} in PetPrep testen",
   considerNote: "Die Gesundheitshinweise dienen nur der Information. Fragen Sie Züchter oder Tierheim nach Gesundheitstests und sprechen Sie mit einer Tierärztin oder einem Tierarzt.",
   adoptionTitle: "Denken Sie auch an eine Adoption",
   adoptionText: "In Tierheimen warten viele wunderbare Hunde, auch Mischlinge. Dort erfahren Sie oft schon vorab, wie sich ein Hund im Alltag verhält. Besuchen Sie ein Tierheim in Ihrer Nähe.",

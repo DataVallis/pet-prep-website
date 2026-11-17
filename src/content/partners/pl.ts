@@ -44,9 +44,9 @@ export const pl: PartnerLocalePack = {
     stats: {
       heading: "Liczby",
       intro: "Podajemy tylko to, co można sprawdzić w produkcie. Stan na {date}.",
-      breeds: "ras w encyklopedii zwierząt",
-      breedsNote: "{dogs} ras psów i {cats} ras kotów, każda z własną stroną i podanymi źródłami.",
-      languages: "języków strony",
+      breeds: "{n|one=rasa|few=rasy|many=ras|other=rasy} w encyklopedii zwierząt",
+      breedsNote: "{dogs} {dogs|one=rasa|few=rasy|many=ras|other=rasy} psów i {cats} {cats|one=rasa|few=rasy|many=ras|other=rasy} kotów, każda z własną stroną i podanymi źródłami.",
+      languages: "{n|one=język|few=języki|many=języków|other=języka} strony",
       languagesNote: "Aplikacja jest obecnie dostępna po słoweńsku i angielsku.",
     },
   },
@@ -82,7 +82,7 @@ export const pl: PartnerLocalePack = {
       heading: "Przykłady treści",
       items: [
         ["Aplikacja", "12-tygodniowe wyzwanie z realistycznym zwierzakiem z AI i panelem dla rodziców."],
-        ["Encyklopedia ras", "{breeds} ras ({dogs} psów, {cats} kotów) ze źródłami, stan na {date}."],
+        ["Encyklopedia ras", "{breeds} {breeds|one=rasa|few=rasy|many=ras|other=rasy} ({dogs} {dogs|one=pies|few=psy|many=psów|other=psa}, {cats} {cats|one=kot|few=koty|many=kotów|other=kota}) ze źródłami, stan na {date}."],
         ["Seria „12 Weeks”", "Serial wideo śledzący 12 tygodni opieki nad zwierzakiem; miejsce na wzmiankę o sponsorze."],
       ],
     },

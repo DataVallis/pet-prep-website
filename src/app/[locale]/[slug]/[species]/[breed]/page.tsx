@@ -553,7 +553,7 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
             <p className="font-display text-[28px] font-extrabold leading-tight tracking-[-0.02em] sm:text-[34px]">{dict.home.final.title}</p>
             <p className="leading-relaxed">{dict.earlyAccess.text}</p>
           </div>
-          <div className="w-full max-w-[560px]"><StoreButtons locale={locale} dict={dict} /></div>
+          <div className="w-full max-w-[560px]"><StoreButtons locale={locale} dict={dict} section="breed_cta" breed={{ id: breed.id, name: breed.name[locale], species: r.species.id as "dog" | "cat" }} /></div>
         </div>
       </div>
     </>

@@ -2,6 +2,8 @@ import { NextResponse, type NextRequest } from "next/server";
 import { klaviyoConfig, subscribeToEarlyAccess } from "@/lib/klaviyo";
 import { isLocale } from "@/i18n/config";
 import { site } from "@/lib/site";
+import { registry } from "@/content/registry/registry";
+import { BREED_ID_RE } from "@/lib/earlyAccess";
 
 export const dynamic = "force-dynamic";
 
@@ -68,6 +70,10 @@ export async function POST(req: NextRequest) {
   }
   const language = typeof body.locale === "string" && isLocale(body.locale) ? body.locale : "en";
   const page = typeof body.page === "string" ? body.page.slice(0, 200) : "";
+  // Optional breed (?breed=<id>): only an id of the register is accepted; its English name is stored next to it.
+  const breedId = typeof body.breed === "string" && BREED_ID_RE.test(body.breed) ? body.breed : null;
+  const breedEntry = breedId ? registry.breeds.find((b) => b.id === breedId) : undefined;
+  const breed = breedEntry ? { id: breedEntry.id, name: breedEntry.name.en } : undefined;
 
   if (rateLimited(clientIp(req))) {
     return NextResponse.json({ ok: false, error: "rate_limited" }, { status: 429 });
@@ -80,7 +86,7 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const result = await subscribeToEarlyAccess(cfg, { email, language, page });
+    const result = await subscribeToEarlyAccess(cfg, { email, language, page, breed });
     if (result.ok) return NextResponse.json({ ok: true });
     console.error(`[subscribe] Klaviyo answered ${result.status}: ${result.detail}`);
     return NextResponse.json({ ok: false, error: "upstream" }, { status: 502 });

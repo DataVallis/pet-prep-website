@@ -36,7 +36,7 @@ test("hreflang: all 15 languages and x-default = English", () => {
 
 test("copy: every language has every string, nine questions with the right number of options, no placeholder leftovers", () => {
   const keys = Object.keys(quizCopy.en).sort();
-  const known = new Set(["n", "total", "name"]);
+  const known = new Set(["n", "total", "name", "mid"]);
   for (const l of locales) {
     const c = quizCopy[l] as unknown as Record<string, unknown>;
     assert.deepEqual(Object.keys(c).sort(), keys, `${l} keys`);
@@ -56,7 +56,7 @@ test("copy: every language has every string, nine questions with the right numbe
     });
     // Templates keep their placeholders.
     assert.match(quizCopy[l].stepOf, /\{n\}/); assert.match(quizCopy[l].stepOf, /\{total\}/);
-    assert.match(quizCopy[l].pool, /\{n\}/); assert.match(quizCopy[l].rank, /\{n\}/); assert.match(quizCopy[l].tryCta, /\{name\}/);
+    assert.match(quizCopy[l].pool, /\{n\}/); assert.match(quizCopy[l].rank, /\{n\}/); assert.match(quizCopy[l].tryCta, /\{mid\}/);
     // The language is not silently English.
     if (l !== "en") assert.notEqual(quizCopy[l].hubTitle, quizCopy.en.hubTitle, `${l} untranslated`);
     // Reused app strings exist.

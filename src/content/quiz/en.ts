@@ -55,7 +55,7 @@ export const en: QuizCopy = {
   clashExercise: "Needs more exercise than you can give",
   seeBreed: "About this breed",
   calcLink: "How much work is it?",
-  tryCta: "Try {name} in PetPrep",
+  tryCta: "Try the {mid} in PetPrep",
   considerNote: "Health notes are for information. Ask the breeder or shelter for health test results and talk to a vet.",
   adoptionTitle: "Also consider adoption",
   adoptionText: "Many wonderful dogs, mixed breeds included, are waiting in shelters. A shelter can also tell you how a dog behaves at home before you decide. Visit one near you.",

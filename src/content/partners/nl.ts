@@ -44,9 +44,9 @@ export const nl: PartnerLocalePack = {
     stats: {
       heading: "Cijfers",
       intro: "We noemen alleen wat in het product te controleren is. Stand per {date}.",
-      breeds: "rassen in het dierenregister",
-      breedsNote: "{dogs} hondenrassen en {cats} kattenrassen, elk met een eigen pagina en genoemde bronnen.",
-      languages: "talen van de website",
+      breeds: "{n|one=ras|other=rassen} in het dierenregister",
+      breedsNote: "{dogs} {dogs|one=hondenras|other=hondenrassen} en {cats} {cats|one=kattenras|other=kattenrassen}, elk met een eigen pagina en genoemde bronnen.",
+      languages: "{n|one=taal|other=talen} van de website",
       languagesNote: "De app is op dit moment beschikbaar in het Sloveens en Engels.",
     },
   },
@@ -82,7 +82,7 @@ export const nl: PartnerLocalePack = {
       heading: "Voorbeelden van inhoud",
       items: [
         ["De app", "Een uitdaging van 12 weken met een realistisch AI-huisdier en een dashboard voor ouders."],
-        ["Rassenregister", "{breeds} rassen ({dogs} honden, {cats} katten) met bronnen, stand per {date}."],
+        ["Rassenregister", "{breeds} {breeds|one=ras|other=rassen} ({dogs} {dogs|one=hond|other=honden}, {cats} {cats|one=kat|other=katten}) met bronnen, stand per {date}."],
         ["Serie „12 Weeks”", "Een videoserie die 12 weken huisdierverzorging volgt; een plek voor de vermelding van een sponsor."],
       ],
     },

@@ -369,7 +369,7 @@ function AppCta({ locale, speciesId }: { locale: Locale; speciesId: string }) {
         <p className="font-display text-[26px] font-extrabold leading-tight tracking-[-0.02em] sm:text-[30px]">{c.food.simulates}</p>
         <p className="leading-relaxed">{c.food.simulatesText(speciesWords(locale, speciesId))}</p>
       </div>
-      <div className="w-full max-w-[560px]"><StoreButtons locale={locale} dict={dict} /></div>
+      <div className="w-full max-w-[560px]"><StoreButtons locale={locale} dict={dict} section="care_cta" /></div>
     </div>
   );
 }

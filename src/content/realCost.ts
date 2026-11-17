@@ -9,12 +9,14 @@
 import { locales, localeMeta, defaultLocale, type Locale } from "../i18n/config.ts";
 import { GROOM_PER_WEEK, PDSA_COSTS, type RealCostProfile } from "../lib/realCostProfile.ts";
 import { PHRASES, unit } from "../../tools/real-cost/src/phrases.js";
+import { STR } from "../../tools/real-cost/src/strings.js";
+import { RATES, SYMBOL } from "../../tools/real-cost/src/rates.js";
 import { realCostText } from "./realCostText.ts";
 
 export const realCostLocales = locales;
 export type RealCostLocale = Locale;
 
-export const realCostUpdated = "2026-11-16";
+export const realCostUpdated = "2026-11-17";
 
 /**
  * One localized URL base per language (ASCII, "how much work is a dog"). The pages are built by the shared
@@ -78,7 +80,10 @@ export type RealCostCopy = {
 };
 
 const nf = (l: Locale, n: number, digits = 0) => new Intl.NumberFormat(localeMeta[l].intl, { maximumFractionDigits: digits }).format(n);
-const gbp = (l: Locale, n: number) => new Intl.NumberFormat(localeMeta[l].intl, { style: "currency", currency: "GBP", currencyDisplay: "narrowSymbol", maximumFractionDigits: 0 }).format(n);
+/** PDSA figures are GBP; the page shows EUR (the default, same as the app), converted at the fixed ECB rate and marked "~". */
+const eur = (l: Locale, gbp: number) => `~${new Intl.NumberFormat(localeMeta[l].intl, { style: "currency", currency: "EUR", currencyDisplay: "narrowSymbol", maximumFractionDigits: 0 }).format(Math.round(gbp * RATES.EUR))}`;
+/** "Converted at the ECB rate of 13 November 2026: 1 £ = 1,1968 €. Amounts with ~ are approximate." (the app's own wording per language). */
+const rateNote = (l: Locale) => (STR as Record<string, { rate_note: string }>)[l].rate_note.replace("{r}", `1 ${SYMBOL.GBP} = ${new Intl.NumberFormat(localeMeta[l].intl, { maximumFractionDigits: 4 }).format(RATES.EUR)} ${SYMBOL.EUR}`);
 
 /** "a Labrador Retriever" / "an Afghan Hound". */
 export const withArticle = (name: string) => `${/^[aeiou]/i.test(name) ? "an" : "a"} ${name}`;
@@ -117,7 +122,7 @@ export function realCostCopy(l: Locale, name: string, p: RealCostProfile): RealC
       ? [{ label: T.label.brushing, value: P.groom[p.groom], note: fill(p.groom === "more_than_once_a_week" ? P.groom_note_more : P.groom_note, { n: perYear }) }]
       : []),
     { label: T.label.life, value: lifeValue, note: lifeNote },
-    { label: T.label.costs, value: fill(T.costVal, { m: gbp(l, cost.monthly) }), note: fill(T.costNote, { ...vars, s: gbp(l, cost.setup) }) },
+    { label: T.label.costs, value: fill(T.costVal, { m: eur(l, cost.monthly) }), note: `${fill(T.costNote, { ...vars, s: eur(l, cost.setup) })}. ${rateNote(l)}` },
   ];
 
   return {

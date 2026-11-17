@@ -54,6 +54,7 @@ export type QuizCopy = {
   clashExercise: string;
   seeBreed: string;
   calcLink: string;
+  /** "Try the breed {mid} in PetPrep": `{mid}` = breed name in running text (lib/breedName.ts), so no declension is needed. */
   tryCta: string;
   considerNote: string;
   adoptionTitle: string;

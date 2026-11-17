@@ -55,7 +55,7 @@ export const da: QuizCopy = {
   clashExercise: "Har brug for mere motion, end du kan give",
   seeBreed: "Om racen",
   calcLink: "Hvor meget arbejde er det?",
-  tryCta: "Prøv {name} i PetPrep",
+  tryCta: "Prøv racen {mid} i PetPrep",
   considerNote: "Sundhedsnoterne er til information. Spørg opdrætteren eller dyreinternatet om sundhedstests, og tal med en dyrlæge.",
   adoptionTitle: "Overvej også adoption",
   adoptionText: "På internater venter mange vidunderlige hunde, også blandinger. Her kan man ofte fortælle, hvordan en hund opfører sig derhjemme, før du beslutter dig. Besøg et internat i nærheden.",

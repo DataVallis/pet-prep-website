@@ -55,7 +55,7 @@ export const cs: QuizCopy = {
   clashExercise: "Potřebuje víc pohybu, než mu můžete dát",
   seeBreed: "O plemeni",
   calcLink: "Kolik je to práce?",
-  tryCta: "Vyzkoušejte {name} v PetPrep",
+  tryCta: "Vyzkoušejte plemeno {mid} v PetPrep",
   considerNote: "Zdravotní poznámky jsou jen informativní. Zeptejte se chovatele nebo útulku na výsledky zdravotních testů a poraďte se s veterinářem.",
   adoptionTitle: "Zvažte také adopci",
   adoptionText: "V útulcích čeká mnoho skvělých psů, i kříženců. V útulku vám často řeknou, jak se pes chová doma, ještě než se rozhodnete. Navštivte útulek ve svém okolí.",

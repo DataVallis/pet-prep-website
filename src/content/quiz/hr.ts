@@ -55,7 +55,7 @@ export const hr: QuizCopy = {
   clashExercise: "Treba više kretanja nego što mu možete dati",
   seeBreed: "O pasmini",
   calcLink: "Koliko je posla?",
-  tryCta: "Isprobajte {name} u PetPrepu",
+  tryCta: "Isprobajte pasminu {mid} u PetPrepu",
   considerNote: "Zdravstvene napomene su informativne. Kod uzgajivača ili u skloništu pitajte za rezultate zdravstvenih testova i posavjetujte se s veterinarom.",
   adoptionTitle: "Razmislite i o udomljavanju",
   adoptionText: "U skloništima čeka mnogo divnih pasa, i mješanaca. U skloništu vam često mogu reći kako se pas ponaša kod kuće prije nego što se odlučite. Posjetite sklonište u blizini.",

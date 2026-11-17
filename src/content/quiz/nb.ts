@@ -55,7 +55,7 @@ export const nb: QuizCopy = {
   clashExercise: "Trenger mer mosjon enn du kan gi",
   seeBreed: "Om rasen",
   calcLink: "Hvor mye arbeid er det?",
-  tryCta: "Prøv {name} i PetPrep",
+  tryCta: "Prøv rasen {mid} i PetPrep",
   considerNote: "Helsemerknadene er til informasjon. Spør oppdretteren eller dyrehjemmet om helsetester, og snakk med en veterinær.",
   adoptionTitle: "Vurder også adopsjon",
   adoptionText: "På dyrehjem venter mange fantastiske hunder, også blandinger. Der kan de ofte fortelle hvordan en hund oppfører seg hjemme før du bestemmer deg. Besøk et dyrehjem i nærheten.",

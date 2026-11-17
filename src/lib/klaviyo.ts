@@ -42,7 +42,7 @@ async function call(cfg: KlaviyoConfig, path: string, body: unknown): Promise<Re
  */
 export async function subscribeToEarlyAccess(
   cfg: KlaviyoConfig,
-  input: { email: string; language: string; page: string },
+  input: { email: string; language: string; page: string; breed?: { id: string; name: string } },
 ): Promise<{ ok: true } | { ok: false; status: number; detail: string }> {
   // Not fatal if this fails: the subscription below creates the profile anyway.
   try {
@@ -55,6 +55,8 @@ export async function subscribeToEarlyAccess(
             petprep_language: input.language,
             petprep_signup_source: "website_early_access",
             petprep_signup_page: input.page,
+            // The breed the visitor chose (quiz result / breed page), so Klaviyo can target by dog breed.
+            ...(input.breed ? { petprep_breed: input.breed.id, petprep_breed_name: input.breed.name } : {}),
           },
         },
       },
