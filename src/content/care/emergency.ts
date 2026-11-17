@@ -371,7 +371,7 @@ export const emergencyCopy: Record<Locale, {
     vetsIntro: "Doma i na dovolené: vyberte zemi, filtrujte podle regionu nebo města, nebo zobrazte jen kliniky otevřené 24 hodin denně. U každé položky je odkaz na stránku, ze které jsme ji převzali – před návštěvou zavolejte, otevírací doba se může změnit.",
     vetsStats: ["Veterináři","Pohotovosti","Toxikologické linky","Země"],
     vets: {
-      chooseCountry: "Vyberte zemi", choosePrompt: "Nahoře vyberte zemi a uvidíte její veterináře, pohotovosti a linky pro otravy.", typeToSearch: "Pište pro hledání…", noMatch: "Nic nenalezeno",
+      chooseCountry: "Vyberte zemi", choosePrompt: "Nahoře vyberte zemi a uvidíte její veterináře, pohotovosti a linky pro otravy.", typeToSearch: "Pište pro hledání…", noMatch: "Nic nenalezeno",
       country: "Země", all: "Všechny země", region: "Region", allRegions: "Všechny regiony", search: "Město nebo název",
       searchPlaceholder: "např. Split, Málaga, Maribor", only24h: "Jen nonstop", results: "Výsledky: {n}",
       none: "Nic nenalezeno – zkuste jiné město nebo region.", h24: "24 h", dutyRota: "Rozpis pohotovostí", poisonLine: "Toxikologická linka",

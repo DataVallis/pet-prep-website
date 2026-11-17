@@ -2,8 +2,8 @@ import type { RegistryCopy } from "./types";
 
 /**
  * Czech plural: 1 → one ("1 plemeno"); exactly 2–4 → few ("3 plemena"); 0, 5+ and also 22, 23 … → many ("5 plemen",
- * "22 let" — with digits Czech uses the genitive plural for compound numbers). Non-integers take `frac`
- * (genitive singular: "2,5 roku", "1,5 hodiny").
+ * "22 let" — with digits Czech uses the genitive plural for compound numbers). Non-integers take `frac`
+ * (genitive singular: "2,5 roku", "1,5 hodiny").
  */
 function form(n: number, one: string, few: string, many: string, frac: string = few): string {
   if (!Number.isInteger(n)) return frac;
@@ -12,9 +12,9 @@ function form(n: number, one: string, few: string, many: string, frac: string = 
   if (a >= 2 && a <= 4) return few;
   return many;
 }
-/** Non-breaking space between a number and its unit ("5 kg", "15 %"). */
+/** Non-breaking space between a number and its unit ("5 kg", "15 %"). */
 const NB = "\u00a0";
-/** First letter lower case for values that continue a phrase ("Psi" → "psi", "Do 1 hodiny" → "do 1 hodiny"). */
+/** First letter lower case for values that continue a phrase ("Psi" → "psi", "Do 1 hodiny" → "do 1 hodiny"). */
 const lc = (t: string) => t.charAt(0).toLocaleLowerCase("cs") + t.slice(1);
 /**
  * Breed names are common nouns in Czech: lower case inside a sentence ("německý ovčák", "border kolie"). Names that start
@@ -39,8 +39,8 @@ const acc = (many: string) => {
   return `(${m})`;
 };
 /**
- * A formatted duration ("2 roky", "12–18 měsíců", "1 rok") in the genitive, for "do …" / "od …" ("do 2 let",
- * "od 1 roku", "do 12–18 měsíců"). Decimals already take the genitive singular ("2,5 roku").
+ * A formatted duration ("2 roky", "12–18 měsíců", "1 rok") in the genitive, for "do …" / "od …" ("do 2 let",
+ * "od 1 roku", "do 12–18 měsíců"). Decimals already take the genitive singular ("2,5 roku").
  */
 const GEN: Record<string, string> = {
   rok: "roku", roky: "let", měsíc: "měsíce", měsíce: "měsíců", týden: "týdne", týdny: "týdnů", den: "dne", dny: "dní",
@@ -48,7 +48,7 @@ const GEN: Record<string, string> = {
 };
 const toGen = (t: string) =>
   /\d,\d+\s\S+( denně)?$/.test(t) ? t : t.replace(/(\S+)( denně)?$/, (_m, w: string, d = "") => (GEN[w] ?? w) + d);
-/** "z" → "ze" where the spoken number starts with s/z/š/ž or a consonant cluster ("ze 2", "ze 7", "ze 17", "z 82"). */
+/** "z" → "ze" where the spoken number starts with s/z/š/ž or a consonant cluster ("ze 2", "ze 7", "ze 17", "z 82"). */
 const zNum = (n: number) => {
   const a = Math.abs(Math.trunc(n));
   const ze = [2, 3, 4, 6, 7, 16, 17].includes(a) || (a >= 60 && a < 80) || (a >= 100 && a < 500) || (a >= 600 && a < 800);
@@ -98,7 +98,7 @@ const cs: RegistryCopy = {
     breedCount: (n) => `${n}${NB}${form(n, "plemeno", "plemena", "plemen")} v encyklopedii`,
     open: "Zobrazit plemena",
     openA11y: (many) => `Zobrazit plemena ${gen(many)}`,
-    freePlan: (name, activity) => `Bezplatný plán: ${lc(name)} (dospělé zvíře: ${activity}); 12týdenní výzvu lze přidat později. Nemá vlastní stránku v encyklopedii.`,
+    freePlan: (name, activity) => `Bezplatný plán: ${lc(name)} (dospělé zvíře: ${activity}); 12týdenní výzvu lze přidat později. Nemá vlastní stránku v encyklopedii.`,
     otherSpecies: "Další druhy zvířat plánujeme.",
     methodTitle: "Jak tuto encyklopedii tvoříme",
     method: [
@@ -110,7 +110,7 @@ const cs: RegistryCopy = {
   },
   speciesStatus: { available: "V aplikaci", coming_soon: "Brzy v aplikaci", info_only: "Jen pro informaci" },
   availability: {
-    in_app: { label: "V aplikaci", text: "K dispozici ve 12týdenní výzvě PetPrep." },
+    in_app: { label: "V aplikaci", text: "K dispozici ve 12týdenní výzvě PetPrep." },
     coming_soon: { label: "Brzy v aplikaci", text: "Plemeno je hotové a otestované; přibude s některou z příštích verzí aplikace." },
     info_only: { label: "Jen pro informaci", text: "Plemeno je v encyklopedii pro informaci; v aplikaci si ho zatím vybrat nemůžete." },
   },
@@ -163,7 +163,7 @@ const cs: RegistryCopy = {
   },
   facets: {
     size: { label: "Velikost", values: { toy: "Trpasličí", small: "Malý", small_medium: "Malý až střední", medium: "Střední", medium_large: "Střední až velký", large: "Velký", giant: "Obří" } },
-    exercise: { label: "Pohyb denně", values: { under_1h: "Do 1 hodiny", h1_2: "1–2 hodiny", over_2h: "Více než 2 hodiny" }, line: (v) => `${lc(v)} pohybu denně` },
+    exercise: { label: "Pohyb denně", values: { under_1h: "Do 1 hodiny", h1_2: "1–2 hodiny", over_2h: "Více než 2 hodiny" }, line: (v) => `${lc(v)} pohybu denně` },
     grooming: { label: "Kartáčování", values: { weekly: "Jednou týdně", several_weekly: "Několikrát týdně", daily: "Denně", other: "Jinak" }, line: (v) => `kartáčování: ${lc(v)}` },
   },
   groups: {
@@ -234,8 +234,8 @@ const cs: RegistryCopy = {
     water_fresh: () => "Čerstvá voda musí být stále po ruce; misku denně vymyjte a doplňte.",
     grooming_sources_differ: () => "Zdroje se v četnosti kartáčování liší: od každodenního po jednou týdně.",
   },
-  // Qualifiers wrap a value already in the nominative ("2 hodiny denně"). Particles such as "více než", "nejméně",
-  // "až" and "přibližně" keep it; "do" / "od" need the genitive, which toGen() supplies ("do 2 let", "od 7 let").
+  // Qualifiers wrap a value already in the nominative ("2 hodiny denně"). Particles such as "více než", "nejméně",
+  // "až" and "přibližně" keep it; "do" / "od" need the genitive, which toGen() supplies ("do 2 let", "od 7 let").
   qualifiers: {
     exact: (t) => t,
     median: (t) => `medián ${t}`,
@@ -424,12 +424,12 @@ const cs: RegistryCopy = {
       dna_lemp: "DNA test na leukoencefalomyelopatii (LEMP)",
       dna_lpn1: "DNA test na polyneuropatii leonbergerů (LPN1)",
       dna_lpn2: "DNA test na polyneuropatii leonbergerů (LPN2)",
-      dna_lppn3: "DNA test na obrnu hrtanu a polyneuropatii (LPPN3)",
+      dna_lppn3: "DNA test na obrnu hrtanu a polyneuropatii (LPPN3)",
       dna_huu: "DNA test na hyperurikosurii (HUU)",
       dna_dcm: "DNA test na dilatační kardiomyopatii (DCM), onemocnění srdečního svalu",
       dna_pra5: "DNA test na progresivní atrofii sítnice (PRA5)",
       dna_dings2: "DNA test na nemoc „tančících dobrmanů“ (DINGS2), onemocnění nervů a svalů",
-      dna_slem: "DNA test na spongiformní leukoencefalomyelopatii (SLEM, „syndrom třesoucího se štěněte“), onemocnění mozku a míchy u mladých štěňat",
+      dna_slem: "DNA test na spongiformní leukoencefalomyelopatii (SLEM, „syndrom třesoucího se štěněte“), onemocnění mozku a míchy u mladých štěňat",
       dna_ams: "DNA test na syndrom akrální mutilace (AMS), onemocnění nervů, které bere tlapkám citlivost na bolest",
       dna_dams: "DNA test na syndrom dyserytropoetické anémie a myopatie (DAMS), onemocnění krve a svalů",
       dna_fuco: "DNA test na fukosidózu, dědičné onemocnění nervové soustavy",
@@ -535,7 +535,7 @@ const cs: RegistryCopy = {
     open_fontanelle: "U plemene se může vyskytnout otevřená fontanela, měkké místo na lebce, které se úplně neuzavře.",
     collapsing_trachea: "U plemene se může vyskytnout kolaps průdušnice, ochablost průdušnice, která může způsobovat kašel a potíže s dýcháním.",
     gm1_gangliosidosis: "U plemene se může vyskytnout gangliosidóza GM1, dědičné onemocnění nervové soustavy; DNA test rodičů ji může vyloučit.",
-    gm2_gangliosidosis: "U plemene byla zjištěna gangliosidóza GM2, smrtelné dědičné onemocnění nervové soustavy.",
+    gm2_gangliosidosis: "U plemene byla zjištěna gangliosidóza GM2, smrtelné dědičné onemocnění nervové soustavy.",
     addisons_disease: "U plemene se může vyskytnout Addisonova choroba, nedostatek hormonů nadledvin.",
     protein_losing_disease: "U plemene se mohou vyskytnout onemocnění ledvin nebo střev se ztrátou bílkovin, která mohou způsobit průjem a hubnutí.",
     diabetes_mellitus: "U plemene se může vyskytnout cukrovka (diabetes mellitus), kdy tělo nedokáže správně regulovat hladinu cukru v krvi.",
@@ -546,7 +546,7 @@ const cs: RegistryCopy = {
     eyelids_turned: "U plemene se mohou vyskytnout víčka stočená dovnitř (entropium) nebo ven (ektropium); zeptejte se, zda mají rodiče vyšetřené oči.",
     glaucoma_poag: "U plemene se může vyskytnout primární glaukom s otevřeným úhlem, kdy se v oku hromadí tekutina, což způsobuje bolest a případně slepotu; pro rodiče existuje DNA test.",
     skin_fold_dermatitis: "Volná kůže tvoří záhyby, které se mohou podráždit a zanítit; je třeba je každý den kontrolovat a udržovat čisté a suché.",
-    skin_fold_care: "Kožní záhyby na obličeji se mohou podráždit a zanítit (dermatitida kožních záhybů); je třeba je pravidelně čistit a vysoušet.",
+    skin_fold_care: "Kožní záhyby na obličeji se mohou podráždit a zanítit (dermatitida kožních záhybů); je třeba je pravidelně čistit a vysoušet.",
     eyelid_problems: "U plemene se mohou vyskytnout problémy s víčky: víčka stočená dovnitř (entropium) nebo ven (ektropium) a vyhřezlá žláza třetího víčka („cherry eye“).",
     skin_allergy_face_folds: "U plemene se mohou vyskytnout kožní alergie (atopie), které způsobují svědění, a kožní záhyby na obličeji je třeba každý den čistit.",
     skin_ear_allergies: "U plemene se mohou vyskytnout alergie na prostředí, které mohou vést k opakovaným infekcím kůže nebo uší; PetMD u psa s alergiemi doporučuje čistit uši jednou týdně.",
@@ -560,16 +560,16 @@ const cs: RegistryCopy = {
     ear_infections_prone: "Plemeno má sklon k infekcím uší; pečlivě dbejte na hygienu uší.",
     familial_nephropathy: "U plemene se vyskytuje dědičné onemocnění ledvin (familiární nefropatie); k dispozici je DNA test rodičů.",
     hereditary_nephritis: "U plemene se vyskytuje dědičné onemocnění ledvin (dědičná nefritida, nazývaná také dědičná glomerulopatie samojedů).",
-    hereditary_nephritis_pkd: "U plemene se vyskytují dědičná onemocnění ledvin (dědičná nefritida a polycystické onemocnění ledvin).",
-    mucopolysaccharidosis_mps3b: "U plemene se vyskytuje mukopolysacharidóza typu IIIB, dědičné metabolické onemocnění postihující nervovou soustavu; je k dispozici DNA test rodičů.",
+    hereditary_nephritis_pkd: "U plemene se vyskytují dědičná onemocnění ledvin (dědičná nefritida a polycystické onemocnění ledvin).",
+    mucopolysaccharidosis_mps3b: "U plemene se vyskytuje mukopolysacharidóza typu IIIB, dědičné metabolické onemocnění postihující nervovou soustavu; je k dispozici DNA test rodičů.",
     panosteitis: "U plemene se může vyskytnout panosteitida, bolestivý zánět dlouhých kostí, který obvykle postihuje mladé, rostoucí psy.",
     splenic_torsion: "Torze sleziny, která vyžaduje okamžitou veterinární péči, se u tohoto plemene vyskytuje častěji než u jiných velkých plemen.",
     urinary_incontinence: "U plemene se může vyskytnout močová inkontinence, nekontrolovaný únik moči.",
     osteochondritis: "U plemene se může vyskytnout osteochondritis dissecans (OCD), porucha kloubní chrupavky u rostoucích psů.",
     scottie_cramp: "U plemene se vyskytuje „scottie cramp“ – krátké epizody svalových křečí, obvykle vyvolané vzrušením; nejsou bolestivé.",
-    slem_shaking_puppy: "U plemene se může vyskytnout spongiformní leukoencefalomyelopatie (SLEM), nazývaná také syndrom třesoucího se štěněte; DNA test pomáhá chovatelům se jí vyhnout.",
-    cecs_cramping: "U plemene se vyskytuje psí epileptoidní křečový syndrom (CECS) – záchvaty třesu a svalových křečí.",
-    gallbladder_mucocele: "U plemene se může vyskytnout mukokéla žlučníku, kdy se žlučník naplní hustým hlenem a nemůže se správně vyprazdňovat; někdy je nutná operace.",
+    slem_shaking_puppy: "U plemene se může vyskytnout spongiformní leukoencefalomyelopatie (SLEM), nazývaná také syndrom třesoucího se štěněte; DNA test pomáhá chovatelům se jí vyhnout.",
+    cecs_cramping: "U plemene se vyskytuje psí epileptoidní křečový syndrom (CECS) – záchvaty třesu a svalových křečí.",
+    gallbladder_mucocele: "U plemene se může vyskytnout mukokéla žlučníku, kdy se žlučník naplní hustým hlenem a nemůže se správně vyprazdňovat; někdy je nutná operace.",
     periodontal_disease: "Parodontóza, infekce a zánět dásní a tkání, které drží zuby, je u plemene známým problémem.",
     extra_eyelashes: "U plemene se může vyskytnout distichiáza, kdy na vnitřní straně nebo na okraji víčka rostou drobné nadbytečné řasy, které mohou dřít o oko; zeptejte se, zda byli rodiče vyšetřeni v rámci programu pro oči.",
     cm_sm_screening: "U plemene se může vyskytnout malformace Chiariho typu a syringomyelie, bolestivé onemocnění s dutinami plnými tekutiny v míše blízko mozku; chovatelům se doporučuje rodiče vyšetřit (Velká Británie: program BVA/KC).",
@@ -597,7 +597,7 @@ const cs: RegistryCopy = {
       species === "dog"
         ? `${name}: ${hasIntro ? "povaha, " : ""}pohyb, velikost a péče | PetPrep`
         : species === "cat"
-          ? `${/kočka/i.test(name) ? name : `Kočka ${mid(name)}`}: ${hasIntro ? "povaha, " : ""}péče o srst, velikost a délka života | PetPrep`
+          ? `${/kočka/i.test(name) ? name : `Kočka ${mid(name)}`}: ${hasIntro ? "povaha, " : ""}péče o srst, velikost a délka života | PetPrep`
           : `${name} (${lc(one)}): potřeby, délka života a péče | PetPrep`,
     metaFacts: (name, facts) => `${name}: ${facts.join("; ")}. Zdroje, zdraví a rady před koupí.`,
     metaLabels: { weight: "hmotnost", exercise: "pohyb", lifespan: "délka života" },
@@ -707,16 +707,16 @@ const cs: RegistryCopy = {
     anatolian_shepherd_dog: {
       aka: "Kangal, Anatolian Shepherd Dog, Karabash",
       text: [
-        "Anatolský pastevecký pes je velký, mohutně stavěný pes k ochraně stád z Turecka; FCI popisuje tureckého pasteveckého psa jako kangala (Kangal Shepherd Dog) — jednobarevného, od plavé po vlčí sobolí s černou maskou, s kohoutkovou výškou 72–78 cm u psů a 65–73 cm u fen. Americký standard plemene uvádí 110–150 liber (asi 50–68 kg) u psů a 80–120 liber (asi 36–54 kg) u fen. Pes této velikosti dorůstá zhruba v 18–24 měsících (PetMD); The Royal Kennel Club uvádí délku života přes 10 let a WebMD v průměru 11 až 13 let.",
-        "The Royal Kennel Club doporučuje více než 2 hodiny pohybu denně a péči o srst víckrát týdně, uvádí, že pelichá a hodí se do velkého domu s velkou zahradou na venkově, a řadí ho do kategorie 1 programu Breed Watch. PetMD píše, že anatolský pastevecký pes se nejspíš nejlépe hodí do domácnosti bez malých dětí, že štěňata seznámená s jinými zvířaty včas s nimi obvykle vycházejí, že klíčová je časná socializace, že srst mimo línání dvakrát ročně stačí kartáčovat jednou týdně a že kolem krmení je třeba se vyhnout pohybu.",
+        "Anatolský pastevecký pes je velký, mohutně stavěný pes k ochraně stád z Turecka; FCI popisuje tureckého pasteveckého psa jako kangala (Kangal Shepherd Dog) — jednobarevného, od plavé po vlčí sobolí s černou maskou, s kohoutkovou výškou 72–78 cm u psů a 65–73 cm u fen. Americký standard plemene uvádí 110–150 liber (asi 50–68 kg) u psů a 80–120 liber (asi 36–54 kg) u fen. Pes této velikosti dorůstá zhruba v 18–24 měsících (PetMD); Royal Kennel Club uvádí délku života přes 10 let a WebMD v průměru 11 až 13 let.",
+        "Royal Kennel Club doporučuje více než 2 hodiny pohybu denně a péči o srst víckrát týdně, uvádí, že pelichá a hodí se do velkého domu s velkou zahradou na venkově, a řadí ho do kategorie 1 programu Breed Watch. PetMD píše, že anatolský pastevecký pes se nejspíš nejlépe hodí do domácnosti bez malých dětí, že štěňata seznámená s jinými zvířaty včas s nimi obvykle vycházejí, že klíčová je časná socializace, že srst mimo línání dvakrát ročně stačí kartáčovat jednou týdně a že kolem krmení je třeba se vyhnout pohybu.",
       ],
       sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
     },
     irish_setter: {
       aka: "Irský červený setr, Irish Setter",
       text: [
-        "Irský setr (irský červený setr) je štíhlý, atletický ohař z Irska, vyšlechtěný k hledání zvěře na rozlehlém terénu. Standard FCI popisuje jedinou barvu – sytě kaštanovou bez stopy černé – a výšku 58–67 cm u psů a 55–62 cm u fen; americký standard plemene uvádí jako ideál asi 70 liber (přibližně 32 kg) u psa a 60 liber (přibližně 27 kg) u feny. Pes této velikosti dorůstá zhruba v 15–18 měsících (PetMD) a The Royal Kennel Club uvádí délku života přes 10 let.",
-        "The Royal Kennel Club doporučuje více než 2 hodiny pohybu denně a péči o srst víc než jednou týdně, uvádí, že líná a hodí se do velkého domu s velkou zahradou, a řadí ho do kategorie 1 programu Breed Watch. PDSA ho popisuje jako velmi přátelského a mazlivého psa, který dobře vychází s dětmi i jinými zvířaty, a radí péči o srst 2–3krát týdně; PetMD doporučuje každý týden kontrolovat a čistit uši a píše, že irští setři potřebují hodně lidské společnosti.",
+        "Irský setr (irský červený setr) je štíhlý, atletický ohař z Irska, vyšlechtěný k hledání zvěře na rozlehlém terénu. Standard FCI popisuje jedinou barvu – sytě kaštanovou bez stopy černé – a výšku 58–67 cm u psů a 55–62 cm u fen; americký standard plemene uvádí jako ideál asi 70 liber (přibližně 32 kg) u psa a 60 liber (přibližně 27 kg) u feny. Pes této velikosti dorůstá zhruba v 15–18 měsících (PetMD) a Royal Kennel Club uvádí délku života přes 10 let.",
+        "Royal Kennel Club doporučuje více než 2 hodiny pohybu denně a péči o srst víc než jednou týdně, uvádí, že líná a hodí se do velkého domu s velkou zahradou, a řadí ho do kategorie 1 programu Breed Watch. PDSA ho popisuje jako velmi přátelského a mazlivého psa, který dobře vychází s dětmi i jinými zvířaty, a radí péči o srst 2–3krát týdně; PetMD doporučuje každý týden kontrolovat a čistit uši a píše, že irští setři potřebují hodně lidské společnosti.",
       ],
       sources: ["S675", "S676", "S678", "S680", "S10"],
     },
@@ -732,7 +732,7 @@ const cs: RegistryCopy = {
       aka: "Rattie, americký rat teriér, Rat Terrier",
       text: [
         "Rat teriér je malý americký teriér chovaný ve dvou velikostech – miniaturní a standardní – s krátkou, přiléhavou, hladkou a lesklou srstí. Standard plemene připouští výšku v kohoutku až 18 palců (46 cm) a PetMD uvádí pro obě velikosti hmotnost 10–25 liber (asi 4,5–11 kg); pes této velikosti je dorostlý přibližně v 9–12 měsících (PetMD). VCA uvádí délku života 12–16 let, PetMD 12–18 let.",
-        "Rat Terrier Club of America uvádí, že rat teriéři dobře vycházejí s dětmi, zvlášť pokud s nimi vyrůstají, a zvládnou byt, ale potřebují alespoň 30 minut pohybu denně. PetMD píše, že potřebují hodně fyzické i duševní stimulace, nemají rádi dlouhou samotu a celý rok mírně línají; VCA doporučuje kartáčování jednou týdně a upozorňuje, že nemusí vycházet s malými zvířaty, zvlášť s hlodavci.",
+        "Rat Terrier Club of America uvádí, že rat teriéři dobře vycházejí s dětmi, zvlášť pokud s nimi vyrůstají, a zvládnou byt, ale potřebují alespoň 30 minut pohybu denně. PetMD píše, že potřebují hodně fyzické i duševní stimulace, nemají rádi dlouhou samotu a celý rok mírně línají; VCA doporučuje kartáčování jednou týdně a upozorňuje, že nemusí vycházet s malými zvířaty, zvlášť s hlodavci.",
       ],
       sources: ["S650", "S648", "S10", "S647"],
     },

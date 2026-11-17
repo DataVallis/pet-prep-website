@@ -454,7 +454,7 @@ function csForm(n: number, one: string, few: string, many: string): string {
 
 const cs: CareCopy = {
   speciesWords: {
-    // `plural` in the accusative ("pro psy"); `pet` in the accusative ("stará se o psa").
+    // `plural` in the accusative ("pro psy"); `pet` in the accusative ("stará se o psa").
     dog: { question: "Co mohou jíst psi?", plural: "psy", pet: "psa" },
     cat: { question: "Co mohou jíst kočky?", plural: "kočky", pet: "kočku" },
   },
