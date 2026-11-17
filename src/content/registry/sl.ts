@@ -820,6 +820,15 @@ const sl: RegistryCopy = {
       sources: ["S888", "S889", "S890", "S891", "S892", "S10"],
     },
 
+    tibetan_terrier: {
+      aka: "tibetan terier, tibet terier, Tibetan Terrier, Tibet Terrier",
+      text: [
+        "Tibetanski terier je čvrst, srednje velik dolgodlak pes družabnik iz Tibeta (FCI skupina 9, psi družabniki in pritlikavi psi; sekcija tibetanske pasme) — terier je le po imenu. Standard FCI zahteva pretežno kvadratno postavo, dvojno dlako z obilno, fino in dolgo krovno dlako, ki je ravna ali valovita, viseča, bogato operjena ušesa in rep, zavihan čez hrbet; dovoljena je vsaka barva razen čokoladne, jetrne in merle, psi pa merijo 36–41 cm v vihru, psice so nekoliko manjše. Standard kanadske kinološke zveze (CKC) navaja težo od 8,25 do 13,5 kg. Pes te velikosti doraste pri približno 12–15 mesecih (PetMD), PDSA pa navaja življenjsko dobo več kot 12 let (PetMD: 15–16 let).",
+        "Standard FCI ga opisuje kot živahnega in dobrodušnega, odprtega, pozornega in inteligentnega, a do tujcev zadržanega. PDSA tibetanske terierje opisuje kot nežne, prijazne in ljubeče pse, ki so dobri družinski psi, priporoča približno uro gibanja na dan in piše, da je nega dlake vsakodnevna obveznost. PetMD opozarja, da lahko razvijejo ločitveno tesnobo, če so dolgo sami, in priporoča tečaj socializacije za mladička pred 16. tednom starosti; piše, da se ob nadzorovanem uvajanju lahko dobro razumejo z majhnimi otroki in drugimi psi, WebMD pa, da imajo nekateri z majhnimi otroki in drugimi psi težave. WebMD priporoča vsakodnevno ščetkanje zob.",
+      ],
+      sources: ["S904", "S905", "S906", "S907", "S909", "S10"],
+    },
+
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
       text: [
