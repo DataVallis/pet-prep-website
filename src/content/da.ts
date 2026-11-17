@@ -710,6 +710,7 @@ const da: Dictionary = {
           paragraphs: [
             "Nødvendige cookies får webstedet til at fungere og husker dit samtykkevalg. Alle andre cookies sættes kun, hvis du tillader dem i banneret, efter kategori: funktionelle (ekstra funktioner), analyse (Google Analytics: hvilke sider der besøges) og markedsføring (YouTube-videoer indlejret på nogle sider; vi viser ikke annoncer på dette websted). Google Tag Manager sætter ikke selv cookies, og hvert tag, den indlæser, følger dit valg. Du kan til enhver tid ændre eller trække dit valg tilbage.",
             "Tabellen nedenfor genereres automatisk af samtykkebanneret ud fra det, det finder på dette websted, så den viser de cookies, vi faktisk bruger.",
+            "Sessionslager for denne browserfane: når du kommer ind, husker webstedet i fanens sessionslager (nøgle petprep.utm) UTM-mærkerne (utm_*) i det link, du kom via, og værtsnavnet på det første andet websted, du kom fra. Det er ikke en cookie, det bliver i din browser, slettes, når du lukker fanen, og sendes kun til os, hvis du indsender en e-mailformular og giver dit samtykke, så vi kan se, hvilken kampagne tilmeldingen kommer fra.",
           ],
           settings: "Skift cookieindstillinger",
           fallback: "Cookielisten indlæses sammen med samtykkebanneret. Hvis du ikke kan se den, så tillad scripts på denne side eller skriv til {privacyEmail}.",

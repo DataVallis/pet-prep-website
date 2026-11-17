@@ -710,6 +710,7 @@ const es: Dictionary = {
           paragraphs: [
             "Las cookies necesarias hacen que el sitio web funcione y recuerdan tu elección de consentimiento. Todas las demás cookies solo se instalan si las permites en el banner, por categoría: funcionales (funciones adicionales), analíticas (Google Analytics: qué páginas se visitan) y publicitarias (vídeos de YouTube insertados en algunas páginas; en este sitio web no mostramos anuncios). Google Tag Manager no instala cookies por sí mismo, y cada etiqueta que carga respeta tu elección. Puedes cambiar o retirar tu elección en cualquier momento.",
             "El banner de consentimiento genera automáticamente la tabla siguiente a partir de lo que detecta en este sitio web, por lo que muestra las cookies que utilizamos realmente.",
+            "Almacenamiento de sesión de esta pestaña del navegador: cuando llegas, el sitio recuerda en el almacenamiento de sesión de la pestaña (clave petprep.utm) las etiquetas utm_* del enlace por el que llegaste y el nombre de host del primer otro sitio web del que vienes. No es una cookie, se queda en tu navegador, se borra al cerrar la pestaña y solo nos lo envías si envías un formulario de correo y das tu consentimiento, para que veamos de qué campaña viene la inscripción.",
           ],
           settings: "Cambiar la configuración de cookies",
           fallback: "La lista de cookies se carga con el banner de consentimiento. Si no la ves, permite los scripts en esta página o escribe a {privacyEmail}.",

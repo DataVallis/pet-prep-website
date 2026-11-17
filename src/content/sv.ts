@@ -710,6 +710,7 @@ const sv: Dictionary = {
           paragraphs: [
             "Nödvändiga cookies håller webbplatsen igång och kommer ihåg ditt val om samtycke. Alla andra cookies sätts bara om du tillåter dem i bannern, per kategori: funktionella (extra funktioner), analys (Google Analytics: vilka sidor som besöks) och marknadsföring (YouTube-videor inbäddade på vissa sidor; vi visar inga annonser på den här webbplatsen). Google Tag Manager sätter själv inga cookies, och varje tagg som den laddar följer ditt val. Du kan när som helst ändra eller återkalla ditt val.",
             "Tabellen nedan skapas automatiskt av samtyckesbannern utifrån vad den hittar på den här webbplatsen, så den visar de cookies vi faktiskt använder.",
+            "Sessionslagring för den här webbläsarfliken: när du kommer in kommer webbplatsen ihåg i flikens sessionslagring (nyckel petprep.utm) utm_*-taggarna i länken du kom via och värdnamnet på den första andra webbplatsen du kom från. Det är ingen kaka, finns kvar i din webbläsare, raderas när du stänger fliken och skickas till oss bara om du skickar ett e-postformulär och ger ditt samtycke, så att vi ser vilken kampanj anmälan kommer från.",
           ],
           settings: "Ändra cookieinställningar",
           fallback: "Listan över cookies laddas tillsammans med samtyckesbannern. Om du inte ser den, tillåt skript på den här sidan eller skriv till {privacyEmail}.",

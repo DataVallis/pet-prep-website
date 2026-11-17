@@ -710,6 +710,7 @@ const it: Dictionary = {
           paragraphs: [
             "I cookie necessari fanno funzionare il sito web e ricordano la tua scelta di consenso. Tutti gli altri cookie vengono impostati solo se li consenti nel banner, per categoria: funzionali (funzioni aggiuntive), analitici (Google Analytics: quali pagine vengono visitate) e pubblicitari (video di YouTube incorporati in alcune pagine; su questo sito web non mostriamo pubblicità). Google Tag Manager di per sé non imposta cookie e ogni tag che carica rispetta la tua scelta. Puoi modificare o revocare la tua scelta in qualsiasi momento.",
             "La tabella qui sotto viene generata automaticamente dal banner del consenso in base a ciò che rileva su questo sito web, quindi elenca i cookie che usiamo davvero.",
+            "Archiviazione di sessione di questa scheda del browser: quando arrivi, il sito ricorda nell’archiviazione di sessione della scheda (chiave petprep.utm) i parametri utm_* del link con cui sei arrivato e il nome host del primo altro sito da cui provieni. Non è un cookie, resta nel tuo browser, viene eliminata alla chiusura della scheda e ci viene inviata solo se invii un modulo email e dai il consenso, così vediamo da quale campagna proviene l’iscrizione.",
           ],
           settings: "Modifica le impostazioni dei cookie",
           fallback: "L’elenco dei cookie si carica insieme al banner del consenso. Se non lo vedi, consenti gli script su questa pagina o scrivi a {privacyEmail}.",

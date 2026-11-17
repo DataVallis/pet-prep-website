@@ -10,6 +10,7 @@ import { browserContext, EARLY_ACCESS_CONSENT_VERSION, postEmailSignup } from "@
 
 type Copy = Dictionary["earlyAccess"];
 type Tone = "light" | "dark" | "mint";
+type ChosenBreed = { id: string; name: string; species: "dog" | "cat" };
 type State = "idle" | "sending" | "done" | "invalid" | "error";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -30,7 +31,6 @@ export function EarlyAccessForm({
   showConsent = true,
   section = "hero",
   breed,
-  breedNames,
 }: {
   locale: Locale;
   copy: Copy;
@@ -40,24 +40,35 @@ export function EarlyAccessForm({
   showConsent?: boolean;
   /** Which form instance this is on the page (hero, home_cta, breed_cta …), sent as `section`. */
   section?: string;
-  /** A breed fixed by the page itself (a breed page); otherwise `?breed=` of the URL is used. */
-  breed?: string;
-  /** id → name of every breed in the page language; a breed id that is not in it is ignored. */
-  breedNames?: Record<string, string>;
+  /** A breed fixed by the page itself (a breed page); otherwise `?breed=` of the URL is used (resolved against the register's index). */
+  breed?: ChosenBreed;
 }) {
   const id = useId();
   const [email, setEmail] = useState("");
   const [company, setCompany] = useState("");
   const [state, setState] = useState<State>("idle");
-  const [urlBreed, setUrlBreed] = useState<string | null>(null);
+  const [urlBreed, setUrlBreed] = useState<ChosenBreed | null>(null);
 
-  // ?breed=<id> is read in the browser (the pages are static).
+  // ?breed=<id> is read in the browser (the pages are static). The id is resolved to the name in the page language (and
+  // its species) from the register's slim index, fetched only when the URL has a breed; an unknown id is ignored.
   useEffect(() => {
-    const t = window.setTimeout(() => setUrlBreed(breedFromSearch(window.location.search)), 0);
-    return () => window.clearTimeout(t);
-  }, []);
-  const chosen = [breed, urlBreed].find((b): b is string => Boolean(b && breedNames?.[b])) ?? null;
-  const chosenName = chosen && breedNames ? midName(breedNames[chosen], locale) : null;
+    const wanted = breedFromSearch(window.location.search);
+    if (!wanted) return;
+    let alive = true;
+    (async () => {
+      for (const species of ["dog", "cat"] as const) {
+        try {
+          const res = await fetch(`/registry/${species}/index.${locale}.json`);
+          if (!res.ok) continue;
+          const found = ((await res.json()) as { id: string; n: string }[]).find((b) => b.id === wanted);
+          if (found && alive) { setUrlBreed({ id: found.id, name: found.n, species }); return; }
+        } catch { /* no breed line: the form still works */ }
+      }
+    })();
+    return () => { alive = false; };
+  }, [locale]);
+  const chosen = breed ?? urlBreed;
+  const chosenName = chosen ? midName(chosen.name, locale) : null;
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -67,14 +78,17 @@ export function EarlyAccessForm({
     }
     setState("sending");
     const addr = email.trim();
-    const ours = postEmailSignup(
-      { email: addr, purpose: "early_access", source: "early_access_form", section, locale, breed: chosen ?? undefined, consentVersion: EARLY_ACCESS_CONSENT_VERSION, honeypot: company },
-      browserContext(),
-    ).catch(() => "error" as const);
+    // Our database only gets a sign-up when the consent sentence was shown to the visitor (showConsent); Klaviyo is unchanged.
+    const ours = showConsent
+      ? postEmailSignup(
+          { email: addr, purpose: "early_access", source: "early_access_form", section, locale, species: chosen?.species, breed: chosen?.id, consentVersion: EARLY_ACCESS_CONSENT_VERSION, honeypot: company },
+          browserContext(),
+        ).catch(() => "error" as const)
+      : Promise.resolve("proto" as const);
     const klaviyo = fetch("/api/subscribe", {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ email: addr, locale, page: window.location.pathname, company, breed: chosen ?? undefined }),
+      body: JSON.stringify({ email: addr, locale, page: window.location.pathname, company, breed: chosen?.id }),
     }).then((res) => ({ ok: res.ok, status: res.status })).catch(() => ({ ok: false, status: 0 }));
     const [a, k] = await Promise.all([ours, klaviyo]);
     if (a === "ok" || k.ok) {
@@ -109,7 +123,7 @@ export function EarlyAccessForm({
 
   return (
     <form onSubmit={onSubmit} noValidate className="flex w-full max-w-[560px] flex-col gap-2.5">
-      {chosenName ? <p className={`text-[15px] font-semibold ${dark ? "text-mint" : "text-mint-text"}`}>{copy.forBreed.replace("{mid}", chosenName)}</p> : null}
+      {chosenName ? <p className={`text-[15px] font-semibold ${dark ? "text-mint" : "text-mint-text"}`}>{copy.forBreed.replace("{mid}", () => chosenName)}</p> : null}
       <label htmlFor={`${id}-email`} className="sr-only">{copy.label}</label>
       <div className="flex flex-col gap-2.5 sm:flex-row">
         <input

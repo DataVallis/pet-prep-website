@@ -710,6 +710,7 @@ const nb: Dictionary = {
           paragraphs: [
             "Nødvendige informasjonskapsler holder nettstedet i gang og husker samtykkevalget ditt. Alle andre informasjonskapsler settes bare hvis du tillater dem i banneret, etter kategori: funksjonelle (ekstra funksjoner), analyse (Google Analytics: hvilke sider som besøkes) og markedsføring (YouTube-videoer innebygd på noen sider; vi viser ikke annonser på dette nettstedet). Google Tag Manager setter ikke selv informasjonskapsler, og hver tagg den laster inn, følger valget ditt. Du kan når som helst endre eller trekke tilbake valget ditt.",
             "Tabellen nedenfor lages automatisk av samtykkebanneret ut fra det det finner på dette nettstedet, så den viser informasjonskapslene vi faktisk bruker.",
+            "Øktlagring i denne nettleserfanen: når du kommer inn, husker nettstedet i fanens øktlagring (nøkkel petprep.utm) UTM-merkene (utm_*) i lenken du kom via og vertsnavnet på det første andre nettstedet du kom fra. Det er ikke en informasjonskapsel, den blir i nettleseren din, slettes når du lukker fanen og sendes til oss bare hvis du sender inn et e-postskjema og gir samtykke, slik at vi ser hvilken kampanje påmeldingen kommer fra.",
           ],
           settings: "Endre innstillinger for informasjonskapsler",
           fallback: "Listen over informasjonskapsler lastes sammen med samtykkebanneret. Hvis du ikke ser den, må du tillate skript på denne siden eller skrive til {privacyEmail}.",

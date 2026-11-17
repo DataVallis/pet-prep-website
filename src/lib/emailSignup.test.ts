@@ -146,3 +146,53 @@ test("early access form copy: every language names the breed with {mid}", () => 
   for (const l of locales) assert.ok(forBreed(l).includes("{mid}"), l);
   assert.equal(forBreed("sl").replace("{mid}", "francoski buldog"), "Zgodnji dostop za pasmo: francoski buldog");
 });
+
+test("visit memory: first other-site referrer is kept with the UTM and used when the current referrer is petprep.si", () => {
+  const store = memory();
+  rememberUtm("?utm_source=ig", store, "https://l.instagram.com/x", "petprep.si");
+  rememberUtm("?utm_source=later", store, "https://google.com/", "petprep.si");
+  const raw = JSON.parse(store.getItem("petprep.utm")!);
+  assert.deepEqual(raw, { source: "ig", ref: "l.instagram.com" });
+  const body = buildSignupBody(input(), ctx({ storage: store, referrer: "https://petprep.si/sl", search: "" }));
+  assert.equal(body.referrer_host, "l.instagram.com");
+  assert.deepEqual(body.utm, { source: "ig" });
+  // a referrer without any UTM is remembered too; an internal first page stores nothing
+  const s2 = memory();
+  rememberUtm("", s2, "https://petprep.si/", "petprep.si");
+  assert.equal(s2.getItem("petprep.utm"), null);
+  rememberUtm("", s2, "https://www.bing.com/", "petprep.si");
+  assert.equal(buildSignupBody(input(), ctx({ storage: s2 })).referrer_host, "www.bing.com");
+});
+
+test("legacy fallback also on a 422 that is not about the address, and when the new endpoint cannot be reached; no double save", async () => {
+  const bad422 = async (url: string) => (url.endsWith("/api/email-signups") ? new Response('{"errors":{"consent_version":["x"]}}', { status: 422 }) : new Response("{}", { status: 201 }));
+  assert.equal(await postEmailSignup(input(), ctx(), { fetchFn: bad422, allowLegacy: true }), "ok");
+  assert.equal(await postEmailSignup(input(), ctx(), { fetchFn: bad422 }), "error");
+  const urls: string[] = [];
+  const cors = async (url: string) => { urls.push(url); if (url.endsWith("/api/email-signups")) throw new TypeError("Failed to fetch"); return new Response("{}", { status: 201 }); };
+  assert.equal(await postEmailSignup(input(), ctx(), { fetchFn: cors, allowLegacy: true }), "ok");
+  assert.deepEqual(urls, ["https://api.petprep.si/api/email-signups", "https://api.petprep.si/api/summary-leads"]);
+  assert.equal(await postEmailSignup(input(), ctx(), { fetchFn: cors }), "error");
+  // an address error on the new endpoint is final: the old endpoint is not asked
+  const r = recorder(422);
+  assert.equal(await postEmailSignup(input(), ctx(), { fetchFn: r.fetchFn, allowLegacy: true }), "email");
+  assert.equal(r.calls.length, 1);
+  // both unreachable
+  assert.equal(await postEmailSignup(input(), ctx(), { fetchFn: async () => { throw new TypeError("x"); }, allowLegacy: true }), "error");
+});
+
+test("early-access form: our database only with the consent sentence shown; breed resolved from the register index with its species", () => {
+  const src = readFileSync(new URL("../components/EarlyAccessForm.tsx", import.meta.url), "utf8");
+  assert.match(src, /const ours = showConsent\s*\?\s*postEmailSignup/);
+  assert.match(src, /species: chosen\?\.species/);
+  assert.match(src, /"\{mid\}", \(\) => chosenName/, "function replacement: a name can never inject a $ pattern");
+  assert.ok(!src.includes("breedNames"), "no name map is serialised into every instance");
+});
+
+test("midName keeps proper-noun breed names as written", () => {
+  assert.equal(midName("Jack Russell terier", "sl"), "Jack Russell terier");
+  assert.equal(midName("Coton de Tuléar", "pl"), "Coton de Tuléar");
+  assert.equal(midName("Francouzský buldoček", "cs"), "francouzský buldoček");
+  assert.equal(midName("Ranskanbulldoggi", "fi"), "ranskanbulldoggi");
+  assert.equal(midName("Border Collie", "fr"), "Border Collie");
+});

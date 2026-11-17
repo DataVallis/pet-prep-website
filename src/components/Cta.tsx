@@ -2,7 +2,6 @@ import { pathFor, type Locale } from "@/i18n/config";
 import type { Dictionary } from "@/content/types";
 import { site } from "@/lib/site";
 import { withBreed } from "@/lib/earlyAccess";
-import { breedNameMap } from "@/lib/registry/views";
 import { EarlyAccessForm } from "./EarlyAccessForm";
 import { EarlyAccessLink } from "./EarlyAccessLink";
 
@@ -62,7 +61,7 @@ function PhoneIcon() {
 }
 
 /** Store buttons once live; the early-access form before launch. */
-export function StoreButtons({ locale, dict, tone = "mint", section = "footer", breed }: { locale: Locale; dict: Dictionary; tone?: "light" | "dark" | "mint"; section?: string; breed?: string }) {
+export function StoreButtons({ locale, dict, tone = "mint", section = "footer", breed }: { locale: Locale; dict: Dictionary; tone?: "light" | "dark" | "mint"; section?: string; breed?: { id: string; name: string; species: "dog" | "cat" } }) {
   if (site.launchState === "live" && site.stores.ios && site.stores.android) {
     return (
       <div className="flex flex-wrap gap-3">
@@ -71,5 +70,5 @@ export function StoreButtons({ locale, dict, tone = "mint", section = "footer", 
       </div>
     );
   }
-  return <EarlyAccessForm locale={locale} copy={dict.earlyAccess} privacyHref={pathFor(locale, "privacy")} tone={tone} section={section} breed={breed} breedNames={breedNameMap(locale)} />;
+  return <EarlyAccessForm locale={locale} copy={dict.earlyAccess} privacyHref={pathFor(locale, "privacy")} tone={tone} section={section} breed={breed} />;
 }

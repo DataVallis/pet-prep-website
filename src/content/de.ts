@@ -710,6 +710,7 @@ const de: Dictionary = {
           paragraphs: [
             "Notwendige Cookies halten die Website funktionsfähig und speichern Ihre Einwilligungsentscheidung. Alle anderen Cookies werden nur gesetzt, wenn Sie sie im Banner erlauben, nach Kategorie: Funktion (zusätzliche Funktionen), Analyse (Google Analytics: welche Seiten besucht werden) und Werbung (auf einigen Seiten eingebettete YouTube-Videos; auf dieser Website schalten wir keine Werbung). Google Tag Manager selbst setzt keine Cookies, und jedes Tag, das er lädt, richtet sich nach Ihrer Entscheidung. Sie können Ihre Entscheidung jederzeit ändern oder widerrufen.",
             "Die folgende Tabelle erstellt das Einwilligungsbanner automatisch aus dem, was es auf dieser Website erkennt; sie listet daher die Cookies, die wir tatsächlich verwenden.",
+            "Sitzungsspeicher dieses Browser-Tabs: Beim Besuch merkt sich die Website im Sitzungsspeicher des Tabs (Schlüssel petprep.utm) die utm_*-Parameter des Links, über den Sie gekommen sind, und den Hostnamen der ersten anderen Website, von der Sie kamen. Das ist kein Cookie, bleibt in Ihrem Browser, wird beim Schließen des Tabs gelöscht und wird nur dann an uns gesendet, wenn Sie ein E-Mail-Formular absenden und einwilligen, damit wir sehen, aus welcher Kampagne die Anmeldung stammt.",
           ],
           settings: "Cookie-Einstellungen ändern",
           fallback: "Die Cookie-Liste wird mit dem Einwilligungsbanner geladen. Wenn Sie sie nicht sehen, erlauben Sie Skripte auf dieser Seite oder schreiben Sie an {privacyEmail}.",

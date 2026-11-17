@@ -764,6 +764,7 @@ const en: Dictionary = {
           paragraphs: [
             "Necessary cookies keep the website working and remember your consent choice. All other cookies are set only if you allow them in the banner, by category: functional (extra features), analytics (Google Analytics: which pages are visited) and advertising (YouTube videos embedded on some pages; we do not run ads on this website). Google Tag Manager itself sets no cookies, and every tag it loads follows your choice. You can change or withdraw your choice at any time.",
             "The table below is generated automatically by the consent banner from what it finds on this website, so it lists the cookies we actually use.",
+            "Session storage of this browser tab: when you arrive, the site remembers in the tab’s session storage (key petprep.utm) the utm_* tags of the link you came by and the host name of the first other website you came from. It is not a cookie, stays in your browser, is deleted when you close the tab and is sent to us only if you submit an email form and give your consent, so we can see which campaign the sign-up came from.",
           ],
           settings: "Change cookie settings",
           fallback: "The cookie list loads with the consent banner. If you do not see it, allow scripts on this page or write to {privacyEmail}.",

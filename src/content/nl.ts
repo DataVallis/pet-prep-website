@@ -710,6 +710,7 @@ const nl: Dictionary = {
           paragraphs: [
             "Noodzakelijke cookies zorgen ervoor dat de website werkt en onthouden je toestemmingskeuze. Alle andere cookies worden alleen geplaatst als je ze in de banner toestaat, per categorie: functioneel (extra functies), analytisch (Google Analytics: welke pagina’s bezocht worden) en advertenties (YouTube-video’s die op sommige pagina’s zijn ingesloten; op deze website tonen we geen advertenties). Google Tag Manager plaatst zelf geen cookies, en elke tag die hij laadt volgt jouw keuze. Je kunt je keuze op elk moment wijzigen of intrekken.",
             "De toestemmingsbanner stelt de tabel hieronder automatisch op aan de hand van wat hij op deze website vindt; je ziet hier dus de cookies die we echt gebruiken.",
+            "Sessieopslag van dit browsertabblad: als je binnenkomt, onthoudt de website in de sessieopslag van het tabblad (sleutel petprep.utm) de utm_*-tags van de link waarmee je kwam en de hostnaam van de eerste andere website waar je vandaan kwam. Het is geen cookie, blijft in je browser, wordt gewist als je het tabblad sluit en wordt alleen naar ons gestuurd als je een e-mailformulier verstuurt en toestemming geeft, zodat we zien van welke campagne de aanmelding komt.",
           ],
           settings: "Cookie-instellingen wijzigen",
           fallback: "De lijst met cookies wordt geladen met de toestemmingsbanner. Zie je de banner niet, sta dan scripts toe op deze pagina of mail naar {privacyEmail}.",

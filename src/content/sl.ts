@@ -764,6 +764,7 @@ const sl: Dictionary = {
           paragraphs: [
             "Nujni piškotki skrbijo za delovanje strani in si zapomnijo vašo izbiro glede piškotkov. Vse druge piškotke nastavimo samo, če jih dovolite v pasici, po kategorijah: funkcionalni (dodatne funkcije), analitični (Google Analytics: katere strani obiskovalci odpirajo) in oglaševalski (videi z YouTuba, vdelani na nekaterih straneh; oglasov na tej spletni strani ne prikazujemo). Google Tag Manager sam ne nastavlja piškotkov, vsaka oznaka, ki jo naloži, pa upošteva vašo izbiro. Izbiro lahko kadar koli spremenite ali prekličete.",
             "Spodnjo tabelo samodejno ustvari pasica za privolitev glede na to, kar zazna na tej spletni strani, zato prikazuje piškotke, ki jih dejansko uporabljamo.",
+            "Seansko shranjevanje zavihka brskalnika: ob prihodu si spletna stran v seanskem pomnilniku zavihka (ključ petprep.utm) zapomni oznake utm_* povezave, po kateri ste prišli, in ime gostitelja prve druge spletne strani, od koder ste prišli. To ni piškotek, ostane v vašem brskalniku, se izbriše, ko zaprete zavihek, in nam ga pošljete samo, če oddate obrazec z e-naslovom in date privolitev, da vidimo, iz katere akcije je prijava.",
           ],
           settings: "Spremeni nastavitve piškotkov",
           fallback: "Seznam piškotkov se naloži skupaj s pasico za piškotke. Če ga ne vidite, dovolite skripte na tej strani ali pišite na {privacyEmail}.",

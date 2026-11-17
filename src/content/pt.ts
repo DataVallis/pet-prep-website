@@ -710,6 +710,7 @@ const pt: Dictionary = {
           paragraphs: [
             "Os cookies necessários mantêm o site a funcionar e memorizam a tua escolha de consentimento. Todos os outros cookies só são instalados se os permitires no banner, por categoria: funcionais (funções adicionais), analíticos (Google Analytics: que páginas são visitadas) e de publicidade (vídeos do YouTube incorporados em algumas páginas; não mostramos anúncios neste site). O Google Tag Manager não instala cookies por si só, e cada etiqueta que carrega respeita a tua escolha. Podes alterar ou retirar a tua escolha a qualquer momento.",
             "A tabela abaixo é gerada automaticamente pelo banner de consentimento a partir do que deteta neste site, por isso indica os cookies que usamos de facto.",
+            "Armazenamento de sessão deste separador do navegador: quando chegas, o site guarda no armazenamento de sessão do separador (chave petprep.utm) as etiquetas utm_* da ligação por onde chegaste e o nome do anfitrião do primeiro outro site de onde vens. Não é um cookie, fica no teu navegador, é apagado quando fechas o separador e só nos é enviado se submeteres um formulário de e-mail e deres o teu consentimento, para vermos de que campanha vem a inscrição.",
           ],
           settings: "Alterar definições de cookies",
           fallback: "A lista de cookies carrega com o banner de consentimento. Se não a vires, permite scripts nesta página ou escreve para {privacyEmail}.",

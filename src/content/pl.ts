@@ -710,6 +710,7 @@ const pl: Dictionary = {
           paragraphs: [
             "Niezbędne pliki cookie zapewniają działanie strony i zapamiętują twój wybór dotyczący zgody. Wszystkie inne pliki cookie są ustawiane tylko wtedy, gdy pozwolisz na to w banerze, według kategorii: funkcjonalne (dodatkowe funkcje), analityczne (Google Analytics: które strony są odwiedzane) i reklamowe (filmy z YouTube osadzone na niektórych stronach; na tej stronie nie wyświetlamy reklam). Sam Google Tag Manager nie ustawia plików cookie, a każdy tag, który ładuje, respektuje twój wybór. Swój wybór możesz w każdej chwili zmienić lub wycofać.",
             "Poniższą tabelę automatycznie tworzy baner zgody na podstawie tego, co wykrywa na tej stronie, więc pokazuje pliki cookie, których faktycznie używamy.",
+            "Pamięć sesji tej karty przeglądarki: gdy wchodzisz na stronę, zapamiętuje ona w pamięci sesji karty (klucz petprep.utm) znaczniki utm_* linku, którym przyszedłeś, oraz nazwę hosta pierwszej innej strony, z której przyszedłeś. To nie jest plik cookie, zostaje w twojej przeglądarce, jest usuwana po zamknięciu karty i trafia do nas tylko wtedy, gdy wyślesz formularz z adresem e-mail i wyrazisz zgodę, abyśmy widzieli, z której kampanii pochodzi zapis.",
           ],
           settings: "Zmień ustawienia plików cookie",
           fallback: "Lista plików cookie wczytuje się razem z banerem zgody. Jeśli jej nie widzisz, zezwól na skrypty na tej stronie albo napisz na {privacyEmail}.",

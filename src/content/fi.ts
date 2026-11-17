@@ -710,6 +710,7 @@ const fi: Dictionary = {
           paragraphs: [
             "Välttämättömät evästeet pitävät verkkosivuston toiminnassa ja muistavat suostumusvalintasi. Kaikki muut evästeet asetetaan vain, jos sallit ne bannerissa, luokittain: toiminnalliset (lisätoiminnot), analytiikka (Google Analytics: mitä sivuja vieraillaan) ja markkinointi (joillekin sivuille upotetut YouTube-videot; emme näytä mainoksia tällä sivustolla). Google Tag Manager ei itse aseta evästeitä, ja jokainen sen lataama tagi noudattaa valintaasi. Voit muuttaa tai perua valintasi milloin tahansa.",
             "Suostumusbanneri luo alla olevan taulukon automaattisesti sen perusteella, mitä se löytää tältä sivustolta, joten siinä ovat ne evästeet, joita todella käytämme.",
+            "Tämän selainvälilehden istuntotallennus: kun saavut, sivusto muistaa välilehden istuntotallennuksessa (avain petprep.utm) linkin utm_*-tunnisteet, jota kautta tulit, ja ensimmäisen toisen verkkosivuston isäntänimen, jolta tulit. Se ei ole eväste, pysyy selaimessasi, poistetaan, kun suljet välilehden, ja lähetetään meille vain, jos lähetät sähköpostilomakkeen ja annat suostumuksen, jotta näemme, miltä kampanjalta ilmoittautuminen tulee.",
           ],
           settings: "Muuta evästeasetuksia",
           fallback: "Evästeluettelo latautuu suostumusbannerin mukana. Jos et näe sitä, salli skriptit tällä sivulla tai kirjoita osoitteeseen {privacyEmail}.",

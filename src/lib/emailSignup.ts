@@ -62,27 +62,39 @@ export function parseUtm(search: string): Utm | undefined {
   return Object.keys(utm).length ? utm : undefined;
 }
 
-/** First page of a visit: keep its UTM in sessionStorage (never overwrites), so a later page without them still has them. Never throws. */
-export function rememberUtm(search: string, storage: SignupContext["storage"]): void {
+type Visit = { utm?: Utm; ref?: string };
+
+function readVisit(storage: SignupContext["storage"]): Visit {
   try {
-    const utm = parseUtm(search);
-    if (!utm || !storage || storage.getItem(UTM_STORE_KEY)) return;
-    storage.setItem(UTM_STORE_KEY, JSON.stringify(utm));
+    const raw = storage?.getItem(UTM_STORE_KEY);
+    if (!raw) return {};
+    const stored = JSON.parse(raw) as Record<string, unknown>;
+    const utm: Utm = {};
+    for (const k of UTM_KEYS) if (typeof stored[k] === "string" && stored[k]) utm[k] = (stored[k] as string).slice(0, 100);
+    const ref = typeof stored.ref === "string" && stored.ref ? stored.ref.slice(0, 190) : undefined;
+    return { utm: Object.keys(utm).length ? utm : undefined, ref };
+  } catch { return {}; }
+}
+
+/**
+ * First page of a visit: keep its UTM tags and the first other-site referrer host in sessionStorage (`petprep.utm`, this
+ * tab only, gone when it is closed), so a form submitted a few pages later still says what brought the visitor. Each
+ * part is written once and never overwritten. Never throws.
+ */
+export function rememberUtm(search: string, storage: SignupContext["storage"], referrer = "", hostname = ""): void {
+  try {
+    if (!storage) return;
+    const have = readVisit(storage);
+    const utm = have.utm ? undefined : parseUtm(search);
+    const ref = have.ref ? undefined : referrerHost(referrer, hostname);
+    if (!utm && !ref) return;
+    storage.setItem(UTM_STORE_KEY, JSON.stringify({ ...(have.utm ?? utm ?? {}), ref: have.ref ?? ref }));
   } catch { /* storage blocked (private mode): the current URL still works */ }
 }
 
 /** UTM of the current URL, else the one remembered from the first page of the visit. */
 export function resolveUtm(search: string, storage: SignupContext["storage"]): Utm | undefined {
-  const now = parseUtm(search);
-  if (now) return now;
-  try {
-    const raw = storage?.getItem(UTM_STORE_KEY);
-    if (!raw) return undefined;
-    const stored = JSON.parse(raw) as Record<string, unknown>;
-    const utm: Utm = {};
-    for (const k of UTM_KEYS) if (typeof stored[k] === "string" && stored[k]) utm[k] = (stored[k] as string).slice(0, 100);
-    return Object.keys(utm).length ? utm : undefined;
-  } catch { return undefined; }
+  return parseUtm(search) ?? readVisit(storage).utm;
 }
 
 /** Host of document.referrer when it is another site (not petprep.si itself); undefined otherwise. */
@@ -114,7 +126,7 @@ export function buildSignupBody(input: SignupInput, ctx: SignupContext): Record<
   if (input.quiz && input.quiz.result.length) body.quiz = { result: input.quiz.result.slice(0, 3), answers: input.quiz.answers };
   const utm = resolveUtm(ctx.search, ctx.storage);
   if (utm) body.utm = utm;
-  const ref = referrerHost(ctx.referrer, ctx.hostname);
+  const ref = referrerHost(ctx.referrer, ctx.hostname) ?? readVisit(ctx.storage).ref;
   if (ref) body.referrer_host = ref;
   return body;
 }
@@ -142,17 +154,26 @@ export async function postEmailSignup(input: SignupInput, ctx: SignupContext, op
   const api = opts.api ?? SIGNUP_API;
   const f: FetchFn = opts.fetchFn ?? ((u, i) => fetch(u, i));
   const send = (path: string, body: unknown) => f(`${api}${path}`, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(body), credentials: "omit" });
+  const legacy = async (): Promise<SignupResult> => {
+    const old = await send("/api/summary-leads", buildLegacyBody(input));
+    if (old.status === 201 || old.status === 200 || old.status === 204) return "ok";
+    return old.status === 422 ? await emailErrorOf(old) : "error";
+  };
   try {
     const res = await send("/api/email-signups", buildSignupBody(input, ctx));
     if (res.status === 204 || res.status === 200 || res.status === 201) return "ok";
-    if (res.status === 422) return await emailErrorOf(res);
-    if ((res.status === 404 || res.status === 405) && opts.allowLegacy) {
-      const old = await send("/api/summary-leads", buildLegacyBody(input));
-      if (old.status === 201 || old.status === 200 || old.status === 204) return "ok";
-      return old.status === 422 ? await emailErrorOf(old) : "error";
+    if (res.status === 422) {
+      const r = await emailErrorOf(res);
+      // A 422 about anything but the address: nothing was stored, so the old endpoint may still take it (no double save).
+      return r === "error" && opts.allowLegacy ? await legacy() : r;
     }
+    if ((res.status === 404 || res.status === 405) && opts.allowLegacy) return await legacy();
     return "error";
-  } catch { return "error"; }
+  } catch {
+    // The new endpoint was not reachable (not deployed: a blocked CORS preflight never sends the POST): try the old one.
+    if (!opts.allowLegacy) return "error";
+    try { return await legacy(); } catch { return "error"; }
+  }
 }
 
 /**

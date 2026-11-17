@@ -710,6 +710,7 @@ const hr: Dictionary = {
           paragraphs: [
             "Nužni kolačići omogućuju rad mrežne stranice i pamte tvoj izbor u vezi s privolom. Sve ostale kolačiće postavljamo samo ako ih dopustiš u prozoru za privolu, prema kategorijama: funkcionalni (dodatne funkcije), analitički (Google Analytics: koje se stranice posjećuju) i oglašivački (videozapisi s YouTubea ugrađeni na nekim stranicama; na ovoj mrežnoj stranici ne prikazujemo oglase). Google Tag Manager sam ne postavlja kolačiće, a svaka oznaka koju učita poštuje tvoj izbor. Izbor možeš promijeniti ili povući u svakom trenutku.",
             "Tablicu u nastavku automatski izrađuje traka za privolu prema onome što pronađe na ovoj mrežnoj stranici, pa navodi kolačiće koje stvarno koristimo.",
+            "Pohrana sesije ove kartice preglednika: kad dođeš, stranica u pohrani sesije kartice (ključ petprep.utm) pamti UTM oznake (utm_*) poveznice kojom si došao i naziv poslužitelja prve druge web-stranice s koje si došao. To nije kolačić, ostaje u tvom pregledniku, briše se kad zatvoriš karticu i šalje nam se samo ako pošalješ obrazac s e-adresom i daš privolu, kako bismo vidjeli iz koje kampanje je prijava.",
           ],
           settings: "Promijeni postavke kolačića",
           fallback: "Popis kolačića učitava se zajedno s prozorom za privolu. Ako ga ne vidiš, dopusti skripte na ovoj stranici ili piši na {privacyEmail}.",

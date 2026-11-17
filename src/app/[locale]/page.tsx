@@ -10,7 +10,6 @@ import { JsonLd } from "@/components/JsonLd";
 import { HeroVisual } from "@/components/HeroVisual";
 import { EARLY_ACCESS_ID, PrimaryCta, StoreButtons } from "@/components/Cta";
 import { EarlyAccessForm } from "@/components/EarlyAccessForm";
-import { breedNameMap } from "@/lib/registry/views";
 import { site } from "@/lib/site";
 import { Pricing } from "@/components/Pricing";
 import { Faq } from "@/components/Faq";
@@ -79,7 +78,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
             </div>
           ) : (
             <div className="flex flex-col gap-1">
-              <EarlyAccessForm locale={locale} copy={dict.earlyAccess} privacyHref={pathFor(locale, "privacy")} size="lg" section="hero" breedNames={breedNameMap(locale)} />
+              <EarlyAccessForm locale={locale} copy={dict.earlyAccess} privacyHref={pathFor(locale, "privacy")} size="lg" section="hero" />
               <Link href={pathFor(locale, "howItWorks")} className="inline-flex items-center gap-2 self-start font-semibold text-mint-text hover:underline">
                 {dict.cta.secondary} <Arrow />
               </Link>

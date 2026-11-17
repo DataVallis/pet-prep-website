@@ -710,6 +710,7 @@ const cs: Dictionary = {
           paragraphs: [
             "Nezbytné cookies zajišťují fungování webu a pamatují si vaši volbu souhlasu. Všechny ostatní cookies se nastavují jen tehdy, když je povolíte v liště, podle kategorií: funkční (další funkce), analytické (Google Analytics: které stránky lidé navštěvují) a reklamní (videa z YouTube vložená na některých stránkách; na tomto webu reklamy nezobrazujeme). Google Tag Manager sám cookies nenastavuje a každý tag, který načte, se řídí vaší volbou. Svou volbu můžete kdykoli změnit nebo odvolat.",
             "Tabulku níže automaticky vytváří lišta souhlasu podle toho, co na tomto webu zjistí, takže uvádí cookies, které skutečně používáme.",
+            "Úložiště relace této karty prohlížeče: když přijdete, web si v úložišti relace karty (klíč petprep.utm) zapamatuje značky utm_* odkazu, přes který jste přišli, a název hostitele prvního jiného webu, odkud jste přišli. Není to cookie, zůstává ve vašem prohlížeči, po zavření karty se smaže a odešle se nám, jen pokud odešlete e-mailový formulář a udělíte souhlas, abychom viděli, z jaké kampaně přihlášení pochází.",
           ],
           settings: "Změnit nastavení cookies",
           fallback: "Seznam cookies se načte s lištou souhlasu. Pokud ho nevidíte, povolte na této stránce skripty nebo napište na {privacyEmail}.",

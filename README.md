@@ -149,12 +149,12 @@ address, checks the origin, drops bots (honeypot field), limits 5 requests per I
 server-side (`src/lib/klaviyo.ts`, API revision `2026-07-15`): profile import with `petprep_language`,
 `petprep_signup_source`, `petprep_signup_page` and, when a breed was chosen, `petprep_breed` (id) + `petprep_breed_name`
 (English name; only ids of the register are accepted), then a subscription to the list with email marketing consent. If the
-list has double opt-in, Klaviyo sends the confirmation email. **Success = either request accepted**; a failure of one is only
+list has double opt-in, Klaviyo sends the confirmation email. Our database is only called when the consent sentence is shown (`showConsent`). **Success = either request accepted**; a failure of one is only
 logged (`console.error`) and never shown. The Klaviyo call stays until the planned sync job from our database exists.
 **Breed:** when the page URL has `?breed=<id>` (quiz result button, the calculator's »try PetPrep« button, any link built with
 `withBreed()` / `earlyAccessHref(locale, breed)` in `src/lib/earlyAccess.ts`) the form shows »Zgodnji dostop za pasmo: francoski
-buldog« (`earlyAccess.forBreed`, 15 languages, name from the register in the page language; unknown ids are ignored) and sends
-`breed`; on a breed page the breed is fixed by the page. Consent version for this form: **`ea-2026-11`** (its consent text, `earlyAccess.consent`,
+buldog« (`earlyAccess.forBreed`, 15 languages; the id is resolved to the name and species via the register's slim index `/registry/<dog|cat>/index.<locale>.json`, fetched only when the URL has a breed; unknown ids are ignored) and sends
+`breed` + `species`; on a breed page the breed is fixed by the page. Consent version for this form: **`ea-2026-11`** (its consent text, `earlyAccess.consent`,
 differs from the newsletter sentence, version `2026-11`).
 Local test: `KLAVIYO_PRIVATE_API_KEY=pk_… KLAVIYO_LIST_ID=… npm run dev`.
 
@@ -166,8 +166,8 @@ never stored); shared code `src/lib/emailSignup.ts` (also bundled into the calcu
 `early_access_form`), `section` (`step5` | `result` | `hero` | …), `page_path`, `locale`, `species`, `breed`, `stage`
 (calculator), `quiz {result, answers}` (quiz), `utm` (utm_* of the current URL, else the ones kept in `sessionStorage["petprep.utm"]`
 from the first page of the visit by `UtmCapture` in the layout; storage wrapped in try/catch), `referrer_host` (host of `document.referrer`
-when it is another site), `website` (honeypot). **Fallback:** while the endpoint answers 404 / 405 (API not deployed yet) the
-newsletter forms (quiz, calculator) post the old payload to `/api/summary-leads` exactly as before, so no e-mail is lost; the
+when it is another site, else the first other-site host of the visit kept in the same entry), `website` (honeypot). **Fallback:** while the endpoint answers 404 / 405 (API not deployed yet) the
+newsletter forms (quiz, calculator) post the old payload to `/api/summary-leads` exactly as before — also after a 422 that is not about the address, and when the new endpoint cannot be reached (blocked CORS preflight) — so no e-mail is lost; the
 early-access form has Klaviyo as its safety net. Only on petprep.si. Tests: `src/lib/emailSignup.test.ts`. Privacy policy
 (15 languages, `legalUpdated` 2026-11-17): what is stored (source, page, breed, quiz result and answers, UTM, referrer host, no
 IP) and that Klaviyo still receives early-access sign-ups.
@@ -177,6 +177,7 @@ IP) and that Klaviyo still receives early-access sign-ups.
 - Cookie banner: **Kockica** (`@datavallis/consent`, replaced CookieYes 2026-11-04) — `src/components/Kockica.tsx`, initialised at module top level (before next/script). Controller = `site.company.legalName, city`; cookie policy = the "Cookies" section of each language's privacy page (`/<privacy slug>#cookies`). Built-in texts for all 15 of our languages (sv, fi, nb since Kockica 0.4.0). Branding credit ("Powered by Kockica · Data Vallis") on — David 2026-11-05.
 - `src/components/ConsentAndAnalytics.tsx`: `<ConsentDefaults />` in `<head>` (Kockica's Consent Mode v2 defaults, all denied, + GA4 config `G-CGSBN9N46F`), `<GoogleAnalytics />` loads gtag.js and `<GoogleTagManager />` loads GTM `GTM-5JBNQD93` (David 2026-11-05) via next/script `afterInteractive`; tags in GTM follow Consent Mode. Do not add a second GA4 tag inside GTM (GA4 already loads directly — it would count visits twice). GA runs cookieless until the visitor allows **Analytics** (Consent Mode "advanced"); `services: ["ga4"]` is declared because gtag.js loads after Kockica starts.
 - Privacy page "Cookies": `KockicaCookieTable` mounts `<div data-kockica-cookie-table>` after hydration (filling it before hydration made React re-render the document and drop the banner). `data-kockica-preferences` on the footer "Cookie settings" link and the privacy-page button reopens the settings; a small corner button does too.
+- **Session storage `petprep.utm`** (`UtmCapture` in the layout, `rememberUtm` in `src/lib/emailSignup.ts`): written for every visitor on arrival — the `utm_*` tags of the first page and the host name of the first other-site referrer — this tab only, deleted when the tab closes, not a cookie. It is read and sent to our database only when the visitor submits an e-mail form with consent (`utm`, `referrer_host`). Listed in the privacy policy's Cookies section in all 15 languages.
 - `/investors` YouTube players are gated (`data-kockica-category="marketing"` + `data-src`): after the click they load only with consent to advertising cookies, else Kockica shows "Allow and show".
 - Testing in headless Chromium: Kockica hides the banner from bots (`hideFromBots`) — launch with `--disable-blink-features=AutomationControlled` and a normal user agent.
 
