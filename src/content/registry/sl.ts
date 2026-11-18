@@ -838,6 +838,15 @@ const sl: RegistryCopy = {
       sources: ["S912", "S913", "S914", "S916", "S917", "S918", "S920", "S10"],
     },
 
+    xoloitzcuintli: {
+      aka: "xoloitzcuintli, xoloitzcuintle, xolo, šolo, mehiški goli, Mexican Hairless Dog, Xoloitzcuintli",
+      text: [
+        "Mehiški goli pes (xoloitzcuintli) je starodavna primitivna pasma iz Mehike; FCI ga uvršča v 5. skupino med primitivne tipe. Standard FCI opisuje tihega in mirnega psa, veselega, pozornega in inteligentnega, ki ni nikoli napadalen, v dveh različicah, ki se razlikujeta le po dlaki in zobeh: goli z gladko golo kožo in dlakavi s kratko, ravno dlako. Pasma ima tri velikosti — 25–35\u00a0cm, 35–45\u00a0cm in 46–60\u00a0cm v višini vihra — ter barve črno, črnikasto sivo, skrilasto sivo, temno sivo, rdečkasto, jetrno rjavo, bronasto ali svetlo zlato; zaželena je enobarvna temna koža. WebMD navaja težo 10 do 15 funtov za najmanjše, 15 do 30 za srednje in 30 do 55 funtov za standardne pse (okoli 4,5–24,9\u00a0kg za vse velikosti). Pes standardne velikosti doraste pri okoli 12–15 mesecih (PetMD). PetMD in WebMD navajata življenjsko dobo 13–18 let.",
+        "PetMD pravi, da mehiški goli psi potrebujejo okoli 20 minut gibanja na dan. Gola koža potrebuje nego: PetMD svetuje pasjo kremo za sončenje pred vsakim izhodom (nikoli kreme za ljudi), VCA pa pravi, da jim najbolj ustreza toplo podnebje in da v hladnejšem vremenu potrebujejo pulover. WebMD ga opisuje kot dobrega družinskega psa za družine z otroki in priporoča ščetkanje zob dva- do trikrat na teden; PetMD dodaja, da je treba stike z otroki vedno nadzorovati, da je treba mladička socializirati, da ne postane nezaupljiv do novih ljudi, in da ima pasma močan lovski nagon do manjših živali.",
+      ],
+      sources: ["S923", "S924", "S926", "S927", "S928", "S10"],
+    },
+
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
       text: [
