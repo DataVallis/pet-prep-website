@@ -1038,6 +1038,15 @@
         "Englanninvinttikoira",
         "English greyhound"
       ]
+    },
+    "xoloitzcuintli": {
+      "name": "Meksikonkarvatonkoira",
+      "slug": "meksikonkarvatonkoira",
+      "synonyms": [
+        "Xoloitzcuintle",
+        "Xolo",
+        "Xoloitzcuintli"
+      ]
     }
   },
   "suitability_labels": {
