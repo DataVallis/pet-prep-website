@@ -1023,6 +1023,21 @@
         "Manchester Terrier",
         "Manchester terrier"
       ]
+    },
+    "tibetan_terrier": {
+      "name": "Tiibetinterrieri",
+      "slug": "tiibetinterrieri",
+      "synonyms": [
+        "Tibetan terrier"
+      ]
+    },
+    "greyhound": {
+      "name": "Greyhound",
+      "slug": "greyhound",
+      "synonyms": [
+        "Englanninvinttikoira",
+        "English greyhound"
+      ]
     }
   },
   "suitability_labels": {
