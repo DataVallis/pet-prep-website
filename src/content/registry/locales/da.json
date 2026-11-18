@@ -1012,6 +1012,15 @@
       "synonyms": [
         "English greyhound"
       ]
+    },
+    "xoloitzcuintli": {
+      "name": "Xoloitzcuintle",
+      "slug": "xoloitzcuintle",
+      "synonyms": [
+        "Xoloitzcuintli",
+        "Xolo",
+        "Mexicansk nøgenhund"
+      ]
     }
   },
   "suitability_labels": {
