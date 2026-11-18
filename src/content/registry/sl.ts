@@ -847,6 +847,15 @@ const sl: RegistryCopy = {
       sources: ["S923", "S924", "S926", "S927", "S928", "S10"],
     },
 
+    spinone_italiano: {
+      aka: "spinone, spinone italiano, italijanski spinone, italijanski ostrodlaki pticar, Italian Spinone, Spinone Italiano",
+      text: [
+        "Italijanski ostrodlaki ptičar (spinone) je italijanski ptičar; FCI ga uvršča v 7. skupino med celinske ptičarje tipa grifon. Standard FCI opisuje trdno grajenega, robustnega in krepkega psa z močnimi kostmi in ostro dlako — po naravi družabnega, krotkega in potrpežljivega ter izkušenega lovca na vsakem terenu. Barve so čisto bela, bela z oranžnimi lisami, oranžno lisasta, bela z rjavimi lisami in rjavo lisasta. Standard FCI navaja višino 60–70\u00a0cm za pse in 58–65\u00a0cm za psice ter težo 32–37\u00a0kg za pse in 28–30\u00a0kg za psice. Pes te velikosti doraste pri okoli 15–18 mesecih (PetMD). PDSA navaja življenjsko dobo več kot 10 let, PetMD 10–12 let.",
+        "PDSA ga opisuje kot energično pasmo, ki potrebuje idealno več kot 2 uri gibanja na dan, gosto in delno ostro dlako pa je treba doma česati 2- do 3-krat na teden. WebMD priporoča striženje krempljev enkrat na teden in vsakodnevno ščetkanje zob, pravi, da se praviloma dobro razume z drugimi psi in otroki, in opozarja, da se pes, ki je dolgo sam, rad spravi v težave. PetMD svetuje zgodnjo socializacijo mladička, zunaj povodec ali ograjen prostor ter da pes eno uro pred obrokom in po njem ne teče, ker obstaja nevarnost napihnjenosti.",
+      ],
+      sources: ["S935", "S936", "S937", "S938", "S10"],
+    },
+
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
       text: [
