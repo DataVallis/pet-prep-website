@@ -927,6 +927,15 @@
       "synonyms": [
         "English greyhound"
       ]
+    },
+    "xoloitzcuintli": {
+      "name": "Xoloitzcuintle",
+      "slug": "xoloitzcuintle",
+      "synonyms": [
+        "Xoloitzcuintli",
+        "Xolo",
+        "Cão pelado mexicano"
+      ]
     }
   },
   "suitability_labels": {
