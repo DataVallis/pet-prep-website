@@ -908,6 +908,31 @@
       "name": "Manchester terrier",
       "slug": "manchester-terrier",
       "synonyms": []
+    },
+    "greyhound": {
+      "name": "Greyhound",
+      "slug": "greyhound",
+      "synonyms": [
+        "Levriero inglese",
+        "English greyhound"
+      ]
+    },
+    "tibetan_terrier": {
+      "name": "Terrier tibetano",
+      "slug": "terrier-tibetano",
+      "synonyms": [
+        "Terrier del Tibet",
+        "Tibetan terrier"
+      ]
+    },
+    "xoloitzcuintli": {
+      "name": "Xoloitzcuintle",
+      "slug": "xoloitzcuintle",
+      "synonyms": [
+        "Xoloitzcuintli",
+        "Xolo",
+        "Cane nudo messicano"
+      ]
     }
   },
   "suitability_labels": {
