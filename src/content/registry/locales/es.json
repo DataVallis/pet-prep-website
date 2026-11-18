@@ -924,6 +924,16 @@
         "Galgo inglés",
         "English greyhound"
       ]
+    },
+    "xoloitzcuintli": {
+      "name": "Xoloitzcuintle",
+      "slug": "xoloitzcuintle",
+      "synonyms": [
+        "Xoloitzcuintli",
+        "Xolo",
+        "Perro pelón mexicano",
+        "Perro sin pelo mexicano"
+      ]
     }
   },
   "suitability_labels": {
