@@ -967,6 +967,23 @@
         "Xolo",
         "Mexicaanse naakthond"
       ]
+    },
+    "spinone_italiano": {
+      "name": "Spinone Italiano",
+      "slug": "spinone-italiano",
+      "synonyms": [
+        "Spinone",
+        "Italiaanse spinone",
+        "Italian Spinone"
+      ]
+    },
+    "pointer": {
+      "name": "Pointer",
+      "slug": "pointer",
+      "synonyms": [
+        "Engelse pointer",
+        "English Pointer"
+      ]
     }
   },
   "suitability_labels": {
