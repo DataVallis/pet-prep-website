@@ -190,6 +190,9 @@ const it: Dictionary = {
         { title: "Rispetta scuola e sonno", text: "Le ore di silenzio sospendono i promemoria. Un pasto che cade durante la scuola spetta a te, non a tuo figlio." },
         { title: "Conseguenze vere, con delicatezza", text: "La trascuratezza porta a una visita dal veterinario o al rifugio: mai niente che faccia paura, sempre con un nuovo inizio." },
         { title: "Unico al mondo", text: "Ogni animale ha il suo mantello, le sue macchie e i suoi occhi: fotorealistico e mai uguale a un altro." },
+        { title: "Impara", text: "Un breve esercizio al giorno: seduto, vieni, terra. Ogni razza impara con i suoi tempi." },
+        { title: "Cure secondo la razza", text: "Spazzolatura, denti, unghie o orecchie, solo dove una fonte indica quanto spesso servono alla razza." },
+        { title: "Desideri", text: "Tuo figlio può chiedere una cuccia, un gioco o dei premietti per l’animale. Decidi tu; gli oggetti cambiano solo l’aspetto." },
       ],
     },
     parents: {
@@ -270,12 +273,12 @@ const it: Dictionary = {
           type: "steps",
           heading: "Dal primo tocco al certificato",
           items: [
-            { title: "Il genitore crea la famiglia", text: "Ti registri con la tua email (l’accesso con Apple e Google è in arrivo). Aggiungi ogni figlio con un soprannome e, se vuoi, l’anno di nascita. È tutto ciò che chiediamo su tuo figlio." },
+            { title: "Il genitore crea la famiglia", text: "Ti registri con Google, Apple o la tua email. Aggiungi ogni figlio con un soprannome e, se vuoi, l’anno di nascita. È tutto ciò che chiediamo su tuo figlio." },
             { title: "Tu scegli l’animale", text: "Scegli la razza (il meticcio è gratis), la provenienza dell’animale – adottato da un rifugio o comprato da un allevatore – e la sua età all’arrivo: cucciolo, giovane, adulto o anziano." },
             { title: "Tuo figlio accede con un codice", text: "Ricevi un codice di 6 cifre valido per 15 minuti. Tuo figlio lo digita sul suo telefono: niente email e niente password. Telefono perso? Lo disconnetti da tutti i dispositivi con un tocco." },
             { title: "Il Contratto di responsabilità", text: "Tuo figlio firma una promessa con un dito. La firma è la nascita dell’animale: i bisogni iniziano a contare da quel momento, quindi non si perde nulla se firma più tardi." },
-            { title: "Dodici settimane di cure", text: "Pasti nelle giuste fasce orarie, acqua fresca, pulizia e una passeggiata quotidiana con passi veri. Man mano che l’animale cresce, i suoi bisogni cambiano." },
-            { title: "Il certificato", text: "Dopo 12 settimane l’animale compie un anno. Tuo figlio riceve un Certificato di responsabilità con il suo Care Score, oppure scoprite insieme, senza rischi, che non è ancora il momento." },
+            { title: "Dodici settimane di cure", text: "Pasti nelle fasce giuste, acqua fresca, pulizia e una passeggiata quotidiana con passi veri, più addestramento, gioco e le cure di cui la razza ha bisogno. Crescendo, i suoi bisogni cambiano." },
+            { title: "Il certificato", text: "Tuo figlio riceve un Certificato di responsabilità con il suo Care Score, oppure scoprite insieme, senza rischi, che non è ancora il momento." },
           ],
         },
         {
@@ -294,7 +297,7 @@ const it: Dictionary = {
           head: ["Bisogno", "Con che frequenza", "Se viene dimenticato"],
           rows: [
             ["Cibo", "Mattina (6–10) e sera (17–21), una volta per fascia", "Ha fame dopo circa 12,5 ore"],
-            ["Acqua", "3 volte al giorno, ad almeno 3 ore di distanza", "Ha sete dopo circa 10 ore"],
+            ["Acqua", "Quando la ciotola si svuota, almeno 3 ore di distanza", "Ha sete dopo circa 10 ore"],
             ["Passeggiata", "6.000 passi veri (i cuccioli partono da 2.000)", "Nessuna passeggiata → la mattina dopo sta male"],
             ["Pulizia", "Quando l’animale fa i bisogni, mai durante le ore di silenzio", "Niente cibo né acqua finché non è pulito"],
           ],
@@ -314,9 +317,22 @@ const it: Dictionary = {
           ],
         },
         {
+          type: "cards",
+          heading: "Più che semplici compiti",
+          columns: 3,
+          items: [
+            { title: "Scuola per cani", text: "Un breve esercizio al giorno: seduto, vieni, terra e fare i bisogni fuori. Ogni razza impara con i suoi tempi e tu vedi quali comandi conosce già." },
+            { title: "Gioco e coccole", text: "Nella sfida di 12 settimane tuo figlio può giocare a palla o coccolare l’animale quando vuole. Migliora il suo umore, mai il punteggio." },
+            { title: "Cure secondo la razza", text: "Spazzolatura, denti, unghie, orecchie o pieghe del muso, solo dove una fonte indica con che frequenza. Toelettatura e bagno sono promemoria per te." },
+            { title: "Anche i gatti", text: "Un gatto insegue una canna con le piume invece di passeggiare, e la sua lettiera va pulita e cambiata ogni settimana." },
+            { title: "Un nome e un album", text: "Puoi dare un nome all’animale. Le sue foto crescono con lui in un album, e un cucciolo festeggia perfino il suo primo compleanno." },
+            { title: "Desideri", text: "Tuo figlio può chiedere una cuccia, le ciotole, un gioco o dei premietti per l’animale. Decidi tu. Gli oggetti cambiano solo l’aspetto, mai il gioco." },
+          ],
+        },
+        {
           type: "callout",
           title: "Anche fallire è un risultato.",
-          text: "Se l’animale finisce nel rifugio virtuale, avete imparato qualcosa di prezioso, prima che a pagarne il prezzo fosse un animale vero. Puoi ricominciare, anche con una razza più facile.",
+          text: "Se l’animale finisce nel rifugio virtuale, avete imparato qualcosa di prezioso, prima che un animale vero ne pagasse il prezzo. Potete ricominciare.",
           tone: "dark",
         },
       ],
@@ -348,7 +364,7 @@ const it: Dictionary = {
           heading: "Il Care Score",
           paragraphs: [
             "Care Score = routine svolte in orario ÷ routine previste × 100, meno 10 punti per ogni malattia, tra 0 e 100.",
-            "Una routine è un compito concreto: ogni fascia dei pasti, ciascuno dei tre rabbocchi d’acqua, la pulizia di ogni bisogno entro due ore (scuola e sonno non contano) e il raggiungimento dell’obiettivo quotidiano della passeggiata.",
+            "Una routine è un compito concreto: ogni fascia dei pasti, ogni rabbocco d’acqua, la pulizia di ogni pasticcio entro due ore (scuola e sonno non contano), l’obiettivo di passeggiata del giorno, l’esercizio quotidiano di addestramento e le cure di cui la razza ha bisogno. Un gatto ha momenti di gioco e la lettiera al posto della passeggiata.",
             "Il tempo in cui hai messo in pausa il gioco, l’animale era dal veterinario o il contratto non era ancora firmato non conta mai contro tuo figlio. I giorni passati vengono congelati, quindi un punteggio non può essere riscritto in seguito.",
             "I fratelli che condividono un animale si dividono equamente ogni routine. Contano solo le azioni del singolo bambino: se uno fa tutto, ottiene 100 e l’altro 0.",
           ],
@@ -366,11 +382,24 @@ const it: Dictionary = {
           type: "list",
           heading: "Il controllo resta a te",
           items: [
-            "Ore di silenzio per scuola e sonno, nella tua ora locale, anche con il passaggio all’ora legale e all’ora solare.",
+            "Ore di silenzio per scuola e sonno e il fuso orario, per tutta la famiglia o per ogni animale separatamente, anche con il passaggio all’ora legale e all’ora solare.",
             "Metti in pausa il gioco di qualsiasi animale con un solo tocco confermato; lo schermo di tuo figlio si blocca in tempo reale.",
             "Invita l’altro genitore con un codice monouso: vedrete entrambi ogni figlio e ogni animale.",
             "Disconnetti un bambino da tutti i dispositivi se perde il telefono; i codici sono monouso e scadono dopo 15 minuti.",
             "Esporta tutti i dati della tua famiglia in un file, oppure elimina all’istante dall’app il profilo di un bambino o l’intero account.",
+          ],
+        },
+        {
+          type: "cards",
+          heading: "Anche nella tua app",
+          columns: 3,
+          items: [
+            { title: "I desideri di tuo figlio", text: "Vedi cosa ha chiesto tuo figlio e scegli Compra o Non ora. L’acquisto sarà possibile quando gli oggetti saranno su App Store e Google Play." },
+            { title: "Promemoria per le cure", text: "Per le razze che hanno bisogno di toelettatura o di un bagno ricevi un promemoria con la data. Segnalo come fatto: non influisce mai sul punteggio di tuo figlio." },
+            { title: "Un nome per l’animale", text: "Dai un nome all’animale e cambialo quando vuoi, per esempio per farlo coincidere con l’animale vero che porterai a casa più avanti." },
+            { title: "Un telefono per tutta la famiglia", text: "Con Gioca come il telefono passa al gioco di tuo figlio. Per tornare alla vista genitore serve sempre il tuo accesso." },
+            { title: "Accedi come preferisci", text: "Google, Apple o email e password. I bambini accedono sempre con un codice." },
+            { title: "Passare l’animale gratuito alla sfida", text: "Avvia la sfida di 12 settimane con l’animale gratuito che tuo figlio ha già e scegli se mantenere il Care Score ottenuto finora." },
           ],
         },
         {
@@ -453,7 +482,7 @@ const it: Dictionary = {
             ["Premi, confezione da 10", "2,99 €"],
             ["Kit di benvenuto: cuccia + ciotole + gioco", "15,99 € (invece di 17,97 €)"],
           ],
-          note: "I Desideri arrivano con il prossimo aggiornamento dell’app; si potranno acquistare non appena gli oggetti saranno disponibili su App Store e Google Play. I prezzi si riferiscono alla Slovenia; lo store mostra il prezzo per il tuo Paese.",
+          note: "Tuo figlio può già chiedere oggetti nell’app; si potranno acquistare non appena saranno disponibili su App Store e Google Play. I prezzi si riferiscono alla Slovenia; lo store mostra il prezzo per il tuo Paese.",
         },
         {
           type: "faq",
@@ -486,7 +515,7 @@ const it: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "Per che età è PetPrep?", a: "È pensato per bambini di circa 7–12 anni e funziona bene fino ai 16. Lo usano anche gli adulti, per capire se una certa razza fa davvero per loro prima di comprarla o adottarla." },
+            { q: "A chi è rivolto PetPrep?", a: "A ogni bambino che chiede un animale e ai genitori che vogliono sapere se la promessa reggerà. Lo usano anche gli adulti per capire, prima di comprare o adottare, se una razza fa davvero per loro." },
             { q: "Posso usare PetPrep da solo, senza bambini?", a: "Sì. Crea un account come genitore e aggiungi te stesso come profilo di chi si prende cura dell’animale: basta un soprannome, lascia vuoto l’anno di nascita. Scegli la razza, crea un codice di 6 cifre, poi sullo stesso telefono o su un altro scegli «Sono un bambino» e digita il codice: così diventi tu chi se ne prende cura. Visto che sarà il cane di famiglia, puoi aggiungere in seguito il partner o i figli, così ve ne occupate insieme. Il prezzo è lo stesso delle famiglie." },
             { q: "Quanto tempo richiede ogni giorno?", a: "Pochi minuti per cibo, acqua e pulizia, più la passeggiata di cui avrebbe comunque bisogno un cane vero." },
             { q: "L’app traccia la posizione di mio figlio?", a: "No. Per le passeggiate conta solo i passi. Se lo consenti, li legge da Apple Salute (iPhone) o Health Connect (Android), in sola lettura e solo i passi; dove disponibile usa anche il sensore di movimento del telefono. Chiede il permesso nella schermata della passeggiata. Il GPS non viene usato." },
@@ -496,8 +525,13 @@ const it: Dictionary = {
             { q: "E la scuola e l’ora di andare a letto?", a: "Imposta le ore di silenzio. L’animale rallenta, non viene inviato nulla e i pasti che cadono interamente nelle ore di silenzio spettano a te." },
             { q: "Fa paura ai bambini?", a: "No. Le conseguenze sono vere ma delicate: l’animale va dal veterinario o al rifugio, mai niente di cruento, e c’è sempre un nuovo inizio." },
             { q: "Quali animali sono disponibili?", a: "Oggi [cani](species:dog) e [gatti](species:cat): un cane meticcio e un gatto domestico gratuiti e la sfida di 12 settimane con uno dei due o con tutte le razze del [registro degli animali](page:animals), che riporta anche i loro bisogni con le fonti. Sono in programma altre specie." },
-            { q: "In quali lingue è disponibile?", a: "Oggi l’app è in inglese e sloveno. Arriveranno altre lingue man mano che PetPrep verrà lanciata in nuovi Paesi." },
+            { q: "In quali lingue è disponibile?", a: "L’app è in inglese e sloveno; questo sito è in 15 lingue. Altre lingue arriveranno nell’app man mano che PetPrep sarà lanciato in nuovi Paesi." },
             { q: "Cosa succede quando prendiamo un animale vero?", a: "PetPrep può diventare un assistente IA per il tuo animale vero. Questa parte è in sviluppo." },
+            { q: "Mio figlio può giocare con l’animale?", a: "Sì. Nella sfida di 12 settimane tuo figlio può giocare a palla o fare le coccole quando vuole, e un gatto insegue una canna con le piume. Il gioco migliora l’umore dell’animale ma non cambia mai il Care Score." },
+            { q: "L’animale può avere un nome?", a: "Sì. Un genitore può dargli un nome e cambiarlo in qualsiasi momento. Il nome compare sullo schermo di tuo figlio, nell’album e sul certificato." },
+            { q: "Genitore e figlio possono usare lo stesso telefono?", a: "Sì. Nell’app genitore tocca Gioca come accanto a tuo figlio e il telefono passa al suo gioco. Per tornare alla vista genitore serve il tuo accesso. Su un telefono condiviso i passi contano solo mentre è attivo il profilo del bambino." },
+            { q: "E se viaggiamo in un altro fuso orario?", a: "Puoi cambiare il fuso orario per tutta la famiglia o per ogni animale, così pasti e ore di silenzio seguono l’ora del posto in cui siete. L’app lo suggerisce quando il telefono è in un altro fuso." },
+            { q: "Cosa fa un gatto al posto della passeggiata?", a: "Un gatto ha momenti di gioco con una canna con le piume, e la sua lettiera va pulita e cambiata ogni settimana. Le razze a pelo lungo vanno anche spazzolate." },
           ],
         },
       ],
@@ -1178,7 +1212,22 @@ const it: Dictionary = {
       title: "Per i bambini che vogliono un animale.",
       lead: "Disegni da colorare da stampare, Curio e #walkyourpet: per bambini e genitori che si preparano insieme ad accogliere un animale.",
       hero: { src: "/curio/curio-waving.webp", alt: "Curio, la mascotte di PetPrep: un morbido cubo color grafite con grandi occhi bianchi, un nasino color lampone e un collare color menta, che saluta con la mano.", width: 720, height: 948 },
-      blocks: [{ type: "kidsHub" }],
+      blocks: [
+        { type: "kidsHub" },
+        {
+          type: "cards",
+          heading: "Nell’app PetPrep",
+          columns: 3,
+          items: [
+            { title: "Scuola per cani", text: "Insegna al tuo animale seduto, vieni e terra. Lodalo proprio al momento giusto!" },
+            { title: "Gioco e coccole", text: "Lancia la palla, accarezza il tuo animale o agita una canna con le piume per il tuo gatto." },
+            { title: "Desideri", text: "Il tuo animale vorrebbe una cuccia nuova o un gioco? Chiedilo ai tuoi genitori nell’app." },
+            { title: "L’album del tuo animale", text: "Guarda il tuo animale crescere in foto. Un cucciolo festeggia perfino il suo primo compleanno." },
+            { title: "Passeggiate vere", text: "Le tue passeggiate contano passi veri. Il tuo animale ne ha bisogno, e sono divertenti anche per te." },
+            { title: "Una promessa firmata", text: "Prima che arrivi il tuo animale, firmi una promessa con il dito." },
+          ],
+        },
+      ],
     },
     walkyourpet: {
       meta: {

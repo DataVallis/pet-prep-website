@@ -190,6 +190,9 @@ const sv: Dictionary = {
         { title: "Respekterar skola och sömn", text: "Tysta timmar pausar påminnelserna. En måltid som infaller under skoltid är din uppgift, inte barnets." },
         { title: "Verkliga konsekvenser, varsamt", text: "Försummelse leder till ett veterinärbesök eller till djurhemmet – aldrig skrämmande och alltid med en ny start." },
         { title: "Helt unikt", text: "Varje djur får sin egen päls, sin egen teckning och egna ögon – fotorealistiskt och aldrig likadant två gånger." },
+        { title: "Det lär sig", text: "Ett kort pass om dagen – sitt, kom, ligg. Varje ras lär sig i sin egen takt." },
+        { title: "Skötsel efter ras", text: "Borstning, tänder, klor eller öron – bara där en källa säger hur ofta rasen behöver det." },
+        { title: "Önskningar", text: "Ditt barn kan önska en säng, en leksak eller godis till djuret. Du bestämmer; sakerna ändrar bara utseendet." },
       ],
     },
     parents: {
@@ -270,12 +273,12 @@ const sv: Dictionary = {
           type: "steps",
           heading: "Från första trycket till diplomet",
           items: [
-            { title: "Föräldern skapar familjen", text: "Du registrerar dig med din e-postadress (inloggning med Apple och Google kommer). Lägg till varje barn med ett smeknamn och, om du vill, ett födelseår. Mer än så frågar vi inte om ditt barn." },
+            { title: "Föräldern skapar familjen", text: "Du registrerar dig med Google, Apple eller din e-post. Lägg till varje barn med ett smeknamn och, om du vill, ett födelseår. Mer frågar vi inte om ditt barn." },
             { title: "Du väljer djuret", text: "Välj ras (blandrasen är gratis), varifrån djuret kommer – adopterat från ett djurhem eller köpt från en uppfödare – och dess ålder vid ankomst: valp, ung, vuxen eller senior." },
             { title: "Barnet loggar in med en kod", text: "Du får en sexsiffrig kod som gäller i 15 minuter. Barnet skriver in den på sin mobil – ingen e-post och inget lösenord. Borttappad mobil? Logga ut barnet från alla enheter med ett tryck." },
             { title: "Ansvarskontraktet", text: "Barnet signerar ett löfte med fingret. Signaturen är djurets födelse: behoven börjar räknas från det ögonblicket, så inget går förlorat om barnet signerar senare." },
-            { title: "Tolv veckors skötsel", text: "Mat inom rätt tidsfönster, färskt vatten, städning och en daglig promenad med riktiga steg. När djuret växer ändras dess behov." },
-            { title: "Diplomet", text: "Efter 12 veckor fyller djuret ett år. Barnet får ett Ansvarsdiplom med sin Care Score – eller så lär ni er båda, på ett tryggt sätt, att tiden ännu inte är rätt." },
+            { title: "Tolv veckors skötsel", text: "Mat vid rätt tider, färskt vatten, städning och en daglig promenad med riktiga steg – plus träning, lek och den skötsel rasen behöver. När djuret växer ändras dess behov." },
+            { title: "Diplomet", text: "Barnet får ett Ansvarsdiplom med sin Care Score – eller så lär ni er båda, på ett tryggt sätt, att tiden ännu inte är rätt." },
           ],
         },
         {
@@ -294,7 +297,7 @@ const sv: Dictionary = {
           head: ["Behov", "Hur ofta", "Om det glöms bort"],
           rows: [
             ["Mat", "Morgon (6–10) och kväll (17–21), en gång per tidsfönster", "Hungrig efter ungefär 12,5 timmar"],
-            ["Vatten", "3 gånger om dagen, minst 3 timmar emellan", "Törstig efter ungefär 10 timmar"],
+            ["Vatten", "När skålen börjar bli tom, minst 3 timmar emellan", "Törstig efter ungefär 10 timmar"],
             ["Promenad", "6 000 riktiga steg (valpar börjar på 2 000)", "Ingen promenad alls → sjuk nästa morgon"],
             ["Städning", "När djuret har gjort en olycka – aldrig under tysta timmar", "Varken mat eller vatten förrän det är städat"],
           ],
@@ -314,9 +317,22 @@ const sv: Dictionary = {
           ],
         },
         {
+          type: "cards",
+          heading: "Mer än sysslor",
+          columns: 3,
+          items: [
+            { title: "Hundskola", text: "Ett kort pass om dagen: sitt, kom, ligg och kissa ute. Varje ras lär sig i sin egen takt, och du ser vilka kommandon djuret redan kan." },
+            { title: "Lek och gos", text: "I 12-veckorsutmaningen kan ditt barn leka med bollen eller gosa med djuret när det vill. Det höjer djurets humör, aldrig poängen." },
+            { title: "Skötsel efter ras", text: "Borstning, tänder, klor, öron eller hudveck – bara där en källa säger hur ofta. Hundfrisör och bad är påminnelser till dig." },
+            { title: "Katter också", text: "En katt jagar ett fjäderspö i stället för att gå på promenad, och kattlådan behöver rensas och bytas varje vecka." },
+            { title: "Ett namn och ett album", text: "Du kan ge djuret ett namn. Bilderna växer med det i ett album, och en valp firar till och med sin första födelsedag." },
+            { title: "Önskningar", text: "Ditt barn kan önska en säng, skålar, en leksak eller godis till djuret. Du bestämmer. Sakerna ändrar bara utseendet, aldrig spelet." },
+          ],
+        },
+        {
           type: "callout",
           title: "Att misslyckas är också ett resultat.",
-          text: "Om djuret hamnar på det virtuella djurhemmet har du lärt dig något värdefullt – innan ett riktigt djur fick betala priset. Du kan börja om, även med en lättare ras.",
+          text: "Hamnar djuret på det virtuella djurhemmet har ni lärt er något värdefullt – innan ett riktigt djur fick betala priset. Ni kan börja om.",
           tone: "dark",
         },
       ],
@@ -348,7 +364,7 @@ const sv: Dictionary = {
           heading: "Care Score",
           paragraphs: [
             "Care Score = rutiner gjorda i tid ÷ förväntade rutiner × 100, minus 10 poäng för varje sjukdom. Resultatet ligger alltid mellan 0 och 100.",
-            "En rutin är en konkret uppgift: varje mattidsfönster, var och en av de tre vattenpåfyllningarna, att städa upp varje olycka inom två timmar (skola och sömn räknas inte) och att nå dagens promenadmål.",
+            "En rutin är en konkret uppgift: varje matfönster, varje påfyllning av vatten, att städa upp varje olycka inom två timmar (skola och sömn räknas inte), dagens promenadmål, det dagliga träningspasset och den skötsel rasen behöver. En katt har lekstunder och kattlådan i stället för promenaden.",
             "Tid då du har pausat spelet, då djuret var hos veterinären eller före signeringen av kontraktet räknas aldrig mot ditt barn. Tidigare dagar låses, så en poäng kan inte skrivas om i efterhand.",
             "Syskon som delar på ett djur delar rättvist på varje rutin. Bara barnets egna handlingar räknas – om ett barn gör allt får det 100 och det andra 0.",
           ],
@@ -366,11 +382,24 @@ const sv: Dictionary = {
           type: "list",
           heading: "Du har kontrollen",
           items: [
-            "Tysta timmar för skola och sömn, enligt din lokala tid – även när det blir sommartid eller vintertid.",
+            "Tysta timmar för skola och sömn, och tidszonen – för hela familjen eller separat för varje djur, även när det blir sommartid eller vintertid.",
             "Pausa spelet för vilket djur som helst med ett bekräftat tryck; barnets skärm låses direkt.",
             "Bjud in den andra föräldern med en engångskod. Ni ser båda varje barn och varje djur.",
             "Logga ut ett barn från alla enheter om en mobil tappas bort; koderna kan bara användas en gång och slutar gälla efter 15 minuter.",
             "Exportera hela familjens data som en fil, eller radera ett barns profil eller hela ditt konto direkt i appen.",
+          ],
+        },
+        {
+          type: "cards",
+          heading: "Också i din app",
+          columns: 3,
+          items: [
+            { title: "Ditt barns önskningar", text: "Du ser vad ditt barn har önskat och väljer Köp eller Inte nu. Köp blir möjligt när sakerna finns i App Store och Google Play." },
+            { title: "Påminnelser om skötsel", text: "För raser som behöver hundfrisör eller bad får du en påminnelse med datum. Bocka av den; den påverkar aldrig ditt barns poäng." },
+            { title: "Ett namn på djuret", text: "Ge djuret ett namn och ändra det när du vill – till exempel så att det stämmer med det riktiga djur ni tar hem senare." },
+            { title: "En telefon för familjen", text: "Med Spela som växlar telefonen till ditt barns spel. Tillbaka till föräldravyn kommer du alltid bara med din inloggning." },
+            { title: "Logga in som du vill", text: "Google, Apple eller e-post och lösenord. Barn loggar alltid in med en kod." },
+            { title: "Uppgradera ett gratis djur", text: "Starta 12-veckorsutmaningen med det gratis djur ditt barn redan har, och välj om Care Score hittills ska sparas." },
           ],
         },
         {
@@ -453,7 +482,7 @@ const sv: Dictionary = {
             ["Godbitar, förpackning med 10", "2,99 €"],
             ["Välkomstpaket: bädd + skålar + leksak", "15,99 € (i stället för 17,97 €)"],
           ],
-          note: "Önskningar kommer med nästa appuppdatering och kan köpas så snart sakerna finns i App Store och Google Play. Priserna gäller i Slovenien; butiken visar priset för ditt land.",
+          note: "Ditt barn kan redan önska saker i appen; de kan köpas så snart sakerna finns i App Store och Google Play. Priserna gäller i Slovenien; butiken visar priset för ditt land.",
         },
         {
           type: "faq",
@@ -486,7 +515,7 @@ const sv: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "Vilken ålder passar PetPrep för?", a: "Appen är gjord för barn i åldern ungefär 7–12 år och fungerar bra upp till 16 år. Vuxna använder den också, för att testa om en viss ras verkligen passar dem innan de köper eller adopterar." },
+            { q: "Vem är PetPrep till för?", a: "För varje barn som tjatar om ett husdjur, och för föräldrar som vill veta om löftet håller. Vuxna använder det också för att testa om en viss ras verkligen passar dem innan de köper eller adopterar." },
             { q: "Kan jag använda PetPrep på egen hand, utan barn?", a: "Ja. Skapa ett konto som förälder och lägg till dig själv som skötarprofil – ett smeknamn räcker, lämna födelseåret tomt. Välj ras, skapa en sexsiffrig kod och välj sedan ”I’m a kid” (”Jag är ett barn”) på samma mobil eller en annan och skriv in koden – så blir du skötaren. Är tanken att det ska bli en familjehund kan du senare lägga till din partner eller dina barn så att ni sköter den tillsammans. Priset är detsamma som för familjer." },
             { q: "Hur mycket tid tar det varje dag?", a: "Några minuter för mat, vatten och städning – plus promenaden som en riktig hund ändå skulle behöva." },
             { q: "Spårar appen var mitt barn befinner sig?", a: "Nej. För promenader räknar den bara steg. Om du tillåter det läser den dem från Apple Hälsa (iPhone) eller Health Connect (Android) – bara läsning och bara steg; där det finns använder den också mobilens rörelsesensor. Appen ber om tillstånd på promenadskärmen. GPS används inte." },
@@ -496,8 +525,13 @@ const sv: Dictionary = {
             { q: "Hur blir det med skola och läggdags?", a: "Ställ in tysta timmar. Djuret saktar ner, inga påminnelser skickas och måltider som helt infaller under tysta timmar sköter du." },
             { q: "Är det läskigt för barn?", a: "Nej. Konsekvenserna är verkliga men varsamma: djuret hamnar hos veterinären eller på djurhemmet, aldrig något otäckt, och det finns alltid en ny start." },
             { q: "Vilka djur finns?", a: "[Hundar](species:dog) och [katter](species:cat) i dag: en kostnadsfri blandrashund och huskatt, och 12-veckorsutmaningen med någon av dem eller med alla raser i [djurregistret](page:animals), där även rasernas källbelagda behov redovisas. Fler arter är planerade." },
-            { q: "Vilka språk finns?", a: "Engelska och slovenska i dag. Fler språk kommer när PetPrep lanseras i nya länder." },
+            { q: "Vilka språk finns?", a: "Appen finns på engelska och slovenska, och den här webbplatsen på 15 språk. Fler språk kommer till appen när PetPrep lanseras i nya länder." },
             { q: "Vad händer när vi har skaffat ett riktigt husdjur?", a: "PetPrep kan bli en AI-assistent för ditt riktiga husdjur. Den delen är under utveckling." },
+            { q: "Kan mitt barn leka med djuret?", a: "Ja. I 12-veckorsutmaningen kan ditt barn leka med bollen eller gosa när det vill, och en katt jagar ett fjäderspö. Lek höjer djurets humör men ändrar aldrig Care Score." },
+            { q: "Kan djuret få ett namn?", a: "Ja. En förälder kan ge det ett namn och ändra det när som helst. Namnet syns på barnets skärm, i albumet och på diplomet." },
+            { q: "Kan förälder och barn dela en telefon?", a: "Ja. Tryck på Spela som vid ditt barn i föräldraappen, så växlar telefonen till barnets spel. Tillbaka till föräldravyn kommer du med din inloggning. På en delad telefon räknas steg bara medan barnets profil är aktiv." },
+            { q: "Vad händer om vi reser till en annan tidszon?", a: "Du kan ändra tidszonen för hela familjen eller för varje djur, så att mål och tysta timmar följer klockan där ni är. Appen föreslår det när telefonen är i en annan tidszon." },
+            { q: "Vad gör en katt i stället för promenaden?", a: "En katt får lekstunder med ett fjäderspö, och kattlådan behöver rensas och bytas varje vecka. Långhåriga raser behöver också borstas." },
           ],
         },
       ],
@@ -1178,7 +1212,22 @@ const sv: Dictionary = {
       title: "För barn som vill ha ett husdjur.",
       lead: "Målarbilder att skriva ut, Curio och #walkyourpet – för barn och föräldrar som tillsammans förbereder sig för ett husdjur.",
       hero: { src: "/curio/curio-waving.webp", alt: "Curio, PetPreps maskot: en mjuk grafitgrå kub med stora vita ögon, en liten hallonröd nos och ett mintgrönt halsband, som vinkar.", width: 720, height: 948 },
-      blocks: [{ type: "kidsHub" }],
+      blocks: [
+        { type: "kidsHub" },
+        {
+          type: "cards",
+          heading: "I PetPrep-appen",
+          columns: 3,
+          items: [
+            { title: "Hundskola", text: "Lär ditt djur sitt, kom och ligg. Beröm det precis i rätt ögonblick!" },
+            { title: "Lek och gos", text: "Kasta bollen, klappa ditt djur eller vifta med ett fjäderspö för din katt." },
+            { title: "Önskningar", text: "Vill ditt djur ha en ny säng eller en leksak? Fråga dina föräldrar i appen." },
+            { title: "Ditt djurs album", text: "Se ditt djur växa upp på bilder. En valp har till och med sin första födelsedag." },
+            { title: "Riktiga promenader", text: "Dina promenader räknar riktiga steg. Ditt djur behöver dem – och de är kul för dig också." },
+            { title: "Ett påskrivet löfte", text: "Innan ditt djur kommer skriver du under ett löfte med fingret." },
+          ],
+        },
+      ],
     },
     walkyourpet: {
       meta: {
