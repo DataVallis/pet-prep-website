@@ -933,6 +933,22 @@
         "Xolo",
         "Cane nudo messicano"
       ]
+    },
+    "spinone_italiano": {
+      "name": "Spinone italiano",
+      "slug": "spinone-italiano",
+      "synonyms": [
+        "Spinone",
+        "Italian Spinone"
+      ]
+    },
+    "pointer": {
+      "name": "Pointer",
+      "slug": "pointer",
+      "synonyms": [
+        "Pointer inglese",
+        "English Pointer"
+      ]
     }
   },
   "suitability_labels": {
