@@ -827,6 +827,15 @@ const en: RegistryCopy = {
       sources: ["S923", "S924", "S926", "S927", "S928", "S10"],
     },
 
+    spinone_italiano: {
+      aka: "Italian Spinone, Spinone, Spinoni, Italian Griffon, Italian Wire-haired Pointer, italijanski ostrodlaki ptičar",
+      text: [
+        "The Spinone Italiano is an Italian pointing dog; the FCI lists it in Group 7 among the continental pointers of the griffon type. The FCI standard describes a dog of solid construction, robust and vigorous, with powerful bone and a rough coat — naturally sociable, docile and patient, and an experienced hunter in all terrains. It comes in pure white, white with orange markings, orange roan, white with brown markings and brown roan. The FCI standard gives a height of 60–70 cm for males and 58–65 cm for females and a weight of 32–37 kg for males and 28–30 kg for females. A dog of this size is fully grown at about 15–18 months (PetMD). PDSA gives a lifespan of over 10 years; PetMD says 10–12 years.",
+        "PDSA calls the Spinone an energetic breed that ideally needs more than 2 hours of exercise a day, and says the thick, partly wiry coat needs grooming at home 2 or 3 times a week. WebMD recommends weekly nail trims and daily tooth brushing, says the breed is generally good with other dogs and kids, and warns that being left alone for long periods often leads to trouble. PetMD advises socialising puppies early, keeping the dog on a lead or in a fenced area outside, and not letting it exercise for an hour before or after eating, because of the risk of bloat.",
+      ],
+      sources: ["S935", "S936", "S937", "S938", "S10"],
+    },
+
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
       text: [
