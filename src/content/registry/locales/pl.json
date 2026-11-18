@@ -1064,6 +1064,15 @@
         "Greyhound",
         "English greyhound"
       ]
+    },
+    "xoloitzcuintli": {
+      "name": "Xoloitzcuintle",
+      "slug": "xoloitzcuintle",
+      "synonyms": [
+        "Xoloitzcuintli",
+        "Xolo",
+        "Meksykański pies bezwłosy"
+      ]
     }
   },
   "suitability_labels": {
