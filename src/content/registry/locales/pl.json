@@ -1073,6 +1073,25 @@
         "Xolo",
         "Meksykański pies bezwłosy"
       ]
+    },
+    "spinone_italiano": {
+      "name": "Spinone włoski",
+      "slug": "spinone-wloski",
+      "synonyms": [
+        "Spinone",
+        "Gryfon włoski",
+        "Wyżeł włoski szorstkowłosy",
+        "Italian Spinone"
+      ]
+    },
+    "pointer": {
+      "name": "Pointer",
+      "slug": "pointer",
+      "synonyms": [
+        "Pointer angielski",
+        "Wyżeł angielski",
+        "English Pointer"
+      ]
     }
   },
   "suitability_labels": {
