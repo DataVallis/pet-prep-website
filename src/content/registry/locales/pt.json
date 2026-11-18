@@ -936,6 +936,22 @@
         "Xolo",
         "Cão pelado mexicano"
       ]
+    },
+    "spinone_italiano": {
+      "name": "Spinone italiano",
+      "slug": "spinone-italiano",
+      "synonyms": [
+        "Spinone",
+        "Italian Spinone"
+      ]
+    },
+    "pointer": {
+      "name": "Pointer",
+      "slug": "pointer",
+      "synonyms": [
+        "Pointer inglês",
+        "English Pointer"
+      ]
     }
   },
   "suitability_labels": {
