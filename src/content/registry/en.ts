@@ -818,6 +818,15 @@ const en: RegistryCopy = {
       sources: ["S912", "S913", "S914", "S916", "S917", "S918", "S920", "S10"],
     },
 
+    xoloitzcuintli: {
+      aka: "Xoloitzcuintle, Xolo, Mexican Hairless Dog, Mexican Hairless, mehiški goli pes",
+      text: [
+        "The Xoloitzcuintli is an ancient primitive dog from Mexico; the FCI lists it in Group 5 among the primitive types. The FCI standard describes a silent and calm dog, cheerful, alert and intelligent, never aggressive, in two varieties that are identical except for coat and teeth: hairless, with smooth bare skin, and coated, with a short flat coat. It comes in three sizes — 25–35 cm, 35–45 cm and 46–60 cm at the withers — and in black, blackish grey, slate grey, dark grey, reddish, liver, bronze or blonde, with solid dark skin preferred. WebMD gives a weight of 10 to 15 pounds for the toy, 15 to 30 for the miniature and 30 to 55 pounds for the standard Xolo (about 4.5–24.9 kg across all sizes). A standard-size dog is fully grown at about 12–15 months (PetMD). PetMD and WebMD both give a lifespan of 13–18 years.",
+        "PetMD says Xolos need about 20 minutes of exercise every day. The bare skin needs care: PetMD advises dog sunscreen before they go outside, never human sunscreen, and VCA says they are best suited to warm climates and need a sweater in cooler temperatures. WebMD calls the Xolo a good family dog for families with children and recommends brushing the teeth two to three times a week; PetMD adds that interactions with children should always be supervised, that puppies need socialising so they don't grow up suspicious of new people, and that the breed has a high prey drive towards small animals.",
+      ],
+      sources: ["S923", "S924", "S926", "S927", "S928", "S10"],
+    },
+
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
       text: [
