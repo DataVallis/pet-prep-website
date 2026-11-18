@@ -909,6 +909,24 @@
         "Xolo",
         "Mexikanischer Nackthund"
       ]
+    },
+    "spinone_italiano": {
+      "name": "Spinone Italiano",
+      "slug": "spinone-italiano",
+      "synonyms": [
+        "Spinone",
+        "Italienischer Spinone",
+        "Italienischer Rauhaariger Vorstehhund",
+        "Italian Spinone"
+      ]
+    },
+    "pointer": {
+      "name": "Pointer",
+      "slug": "pointer",
+      "synonyms": [
+        "Englischer Pointer",
+        "English Pointer"
+      ]
     }
   },
   "suitability_labels": {
