@@ -1118,6 +1118,25 @@
         "Xolo",
         "Meksički goli pas"
       ]
+    },
+    "spinone_italiano": {
+      "name": "Talijanski oštrodlaki ptičar",
+      "slug": "talijanski-ostrodlaki-pticar",
+      "synonyms": [
+        "Spinone Italiano",
+        "Spinone",
+        "Talijanski špinone",
+        "Italian Spinone"
+      ]
+    },
+    "pointer": {
+      "name": "Pointer",
+      "slug": "pointer",
+      "synonyms": [
+        "Engleski pointer",
+        "Engleski ptičar",
+        "English Pointer"
+      ]
     }
   },
   "suitability_labels": {
