@@ -915,6 +915,23 @@
         "Chien nu du Mexique",
         "Chien nu mexicain"
       ]
+    },
+    "spinone_italiano": {
+      "name": "Spinone italien",
+      "slug": "spinone-italien",
+      "synonyms": [
+        "Spinone",
+        "Spinone Italiano",
+        "Italian Spinone"
+      ]
+    },
+    "pointer": {
+      "name": "Pointer",
+      "slug": "pointer",
+      "synonyms": [
+        "Pointer anglais",
+        "English Pointer"
+      ]
     }
   },
   "suitability_labels": {
