@@ -856,6 +856,15 @@ const sl: RegistryCopy = {
       sources: ["S935", "S936", "S937", "S938", "S10"],
     },
 
+    pointer: {
+      aka: "pointer, angleski pointer, English Pointer, Pointer",
+      text: [
+        "Angleški pointer je britanski ptičar; FCI ga uvršča v 7. skupino med britanske in irske ptičarje in seterje. Standard FCI opisuje simetričnega, dobro grajenega psa z obrisom mehkih lokov, močnega, a gibkega, pozornega ter prijazne, umirjene narave, s fino, kratko, trdo in izrazito svetlečo dlako. Običajne barve so limonasto-bela, oranžno-bela, rjavo-bela in črno-bela. Standard FCI navaja višino 63–69\u00a0cm za pse in 61–66\u00a0cm za psice, standard UKC pa delovno težo 55–75 funtov (približno 25–34\u00a0kg) za pse in 44–65 funtov (približno 20–29,5\u00a0kg) za psice. Pes te velikosti doraste pri okoli 15–18 mesecih (PetMD). PDSA navaja življenjsko dobo več kot 12 let, PetMD 10–12 let.",
+        "PDSA piše, da so pointerji zelo energični in potrebujejo idealno več kot 2 uri gibanja na dan, aktivne lastnike in dobro izurjen odpoklic, kratko dlako pa je treba česati le enkrat na teden. PetMD svetuje ograjeno dvorišče, da pes ne odtava, in opozarja, da je lahko nevaren za domače ptice; WebMD priporoča vsakodnevno ščetkanje zob in pravi, da se ne razume najbolje z majhnimi otroki. PDSA dodaja, da se ob pravi socializaciji v mladosti, kot pri vseh pasmah, dobro vključi v družinsko življenje.",
+      ],
+      sources: ["S943", "S944", "S945", "S946", "S947", "S10"],
+    },
+
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
       text: [

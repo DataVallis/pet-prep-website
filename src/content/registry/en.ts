@@ -836,6 +836,15 @@ const en: RegistryCopy = {
       sources: ["S935", "S936", "S937", "S938", "S10"],
     },
 
+    pointer: {
+      aka: "English Pointer, angleški pointer",
+      text: [
+        "The Pointer is a British pointing dog; the FCI lists it in Group 7 among the British and Irish pointers and setters. The FCI standard describes a symmetrical, well-built dog with an outline of graceful curves, strong but lissom, alert and of a kind, even disposition, with a fine, short, hard coat that has a decided sheen. Its usual colours are lemon and white, orange and white, liver and white, and black and white. The FCI standard gives a height of 63–69 cm for dogs and 61–66 cm for bitches; the UKC standard gives a working weight of 55–75 lb (about 25–34 kg) for males and 44–65 lb (about 20–29.5 kg) for females. A dog of this size is fully grown at about 15–18 months (PetMD). PDSA gives a lifespan of over 12 years; PetMD says 10–12 years.",
+        "PDSA says Pointers have high energy levels and ideally need over 2 hours of exercise a day, need active owners and good recall training, and that their short coat needs grooming just once a week. PetMD advises keeping them in an enclosed yard so they do not wander off, and notes that they may be a threat to pet birds; WebMD recommends daily tooth brushing and says they are not particularly good with young children. PDSA adds that, as with all breeds, the right socialisation as puppies helps them fit well into family life.",
+      ],
+      sources: ["S943", "S944", "S945", "S946", "S947", "S10"],
+    },
+
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
       text: [
