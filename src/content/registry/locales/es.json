@@ -934,6 +934,22 @@
         "Perro pelón mexicano",
         "Perro sin pelo mexicano"
       ]
+    },
+    "spinone_italiano": {
+      "name": "Spinone italiano",
+      "slug": "spinone-italiano",
+      "synonyms": [
+        "Spinone",
+        "Italian spinone"
+      ]
+    },
+    "pointer": {
+      "name": "Pointer",
+      "slug": "pointer",
+      "synonyms": [
+        "Pointer inglés",
+        "English pointer"
+      ]
     }
   },
   "suitability_labels": {
