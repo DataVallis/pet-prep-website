@@ -1004,6 +1004,15 @@
         "Engelsk mynde",
         "English greyhound"
       ]
+    },
+    "xoloitzcuintli": {
+      "name": "Xoloitzcuintle",
+      "slug": "xoloitzcuintle",
+      "synonyms": [
+        "Xoloitzcuintli",
+        "Xolo",
+        "Meksikansk nakenhund"
+      ]
     }
   },
   "suitability_labels": {
