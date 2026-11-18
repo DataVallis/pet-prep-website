@@ -905,6 +905,16 @@
         "Lévrier greyhound",
         "Greyhound anglais"
       ]
+    },
+    "xoloitzcuintli": {
+      "name": "Xoloitzcuintle",
+      "slug": "xoloitzcuintle",
+      "synonyms": [
+        "Xoloitzcuintli",
+        "Xolo",
+        "Chien nu du Mexique",
+        "Chien nu mexicain"
+      ]
     }
   },
   "suitability_labels": {
