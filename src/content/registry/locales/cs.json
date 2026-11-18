@@ -1178,6 +1178,27 @@
         "Xolo",
         "Mexický naháč"
       ]
+    },
+    "spinone_italiano": {
+      "name": "Italský hrubosrstý ohař",
+      "slug": "italsky-hrubosrsty-ohar",
+      "synonyms": [
+        "Spinone Italiano",
+        "Spinone",
+        "Italský spinone",
+        "Italian Spinone"
+      ]
+    },
+    "pointer": {
+      "name": "Pointer",
+      "slug": "pointer",
+      "synonyms": [
+        "Pointr",
+        "Anglický pointer",
+        "Anglický pointr",
+        "Anglický ohař",
+        "English Pointer"
+      ]
     }
   },
   "suitability_labels": {
