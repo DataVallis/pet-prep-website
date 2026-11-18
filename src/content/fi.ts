@@ -190,6 +190,9 @@ const fi: Dictionary = {
         { title: "Ottaa koulun ja unen huomioon", text: "Hiljaisten tuntien aikana muistutukset tauotetaan. Koulupäivän aikaan osuva ateria on sinun tehtäväsi, ei lapsesi." },
         { title: "Todelliset seuraukset, lempeästi", text: "Laiminlyönti tarkoittaa käyntiä eläinlääkärillä tai joutumista löytöeläinkotiin – ei koskaan pelottavasti, ja aina voi aloittaa alusta." },
         { title: "Ainutlaatuinen", text: "Jokainen lemmikki saa oman turkin, merkit ja silmät – fotorealistisesti eikä koskaan kahta samanlaista." },
+        { title: "Se oppii", text: "Lyhyt harjoitus joka päivä – istu, tänne, maahan. Jokainen rotu oppii omaan tahtiinsa." },
+        { title: "Rodun mukainen hoito", text: "Harjaus, hampaat, kynnet tai korvat – vain kun lähde kertoo, kuinka usein rotu sitä tarvitsee." },
+        { title: "Toiveet", text: "Lapsesi voi toivoa lemmikille petiä, lelua tai herkkuja. Sinä päätät; tavarat muuttavat vain ulkonäköä." },
       ],
     },
     parents: {
@@ -270,12 +273,12 @@ const fi: Dictionary = {
           type: "steps",
           heading: "Ensimmäisestä napautuksesta todistukseen",
           items: [
-            { title: "Vanhempi luo perheen", text: "Rekisteröidyt sähköpostiosoitteellasi (Apple- ja Google-kirjautuminen ovat tulossa). Lisää jokainen lapsi lempinimellä ja halutessasi syntymävuodella. Muuta emme kysy lapsestasi." },
+            { title: "Vanhempi luo perheen", text: "Rekisteröidyt Googlella, Applella tai sähköpostilla. Lisää jokainen lapsi lempinimellä ja halutessasi syntymävuodella. Muuta emme lapsestasi kysy." },
             { title: "Sinä valitset lemmikin", text: "Valitse rotu (sekarotuinen on maksuton), lemmikin alkuperä – adoptoitu löytöeläinkodista tai ostettu kasvattajalta – ja sen ikä saapumishetkellä: pentu, nuori, aikuinen tai seniori." },
             { title: "Lapsesi kirjautuu koodilla", text: "Saat 6-numeroisen koodin, joka on voimassa 15 minuuttia. Lapsesi kirjoittaa sen omaan puhelimeensa – ilman sähköpostia ja salasanaa. Katosiko puhelin? Kirjaa lapsi ulos kaikilta laitteilta yhdellä napautuksella." },
             { title: "Vastuusopimus", text: "Lapsesi allekirjoittaa lupauksen sormella. Allekirjoitus on lemmikin syntymä: tarpeet alkavat laskea vasta siitä hetkestä, joten mitään ei menetetä, vaikka hän allekirjoittaisi myöhemmin." },
-            { title: "Kaksitoista viikkoa hoitoa", text: "Ruokinta oikeissa aikaikkunoissa, raikas vesi, siivoaminen ja päivittäinen lenkki oikeilla askelilla. Lemmikin kasvaessa sen tarpeet muuttuvat." },
-            { title: "Todistus", text: "12 viikon jälkeen lemmikki täyttää vuoden. Lapsesi saa Vastuutodistuksen ja Care Scoren – tai saatte molemmat turvallisesti tietää, ettei nyt ole oikea aika." },
+            { title: "Kaksitoista viikkoa hoitoa", text: "Ruokinta oikeina aikoina, raikas vesi, siivoaminen ja päivittäinen lenkki oikeilla askelilla – lisäksi koulutus, leikki ja rodun tarvitsema hoito. Kun lemmikki kasvaa, sen tarpeet muuttuvat." },
+            { title: "Todistus", text: "Lapsesi saa Vastuutodistuksen ja Care Scoren – tai saatte molemmat turvallisesti tietää, ettei nyt ole oikea aika." },
           ],
         },
         {
@@ -294,7 +297,7 @@ const fi: Dictionary = {
           head: ["Tarve", "Kuinka usein", "Jos se unohtuu"],
           rows: [
             ["Ruoka", "Aamulla (klo 6–10) ja illalla (klo 17–21), kerran kussakin aikaikkunassa", "Nälkä noin 12,5 tunnin jälkeen"],
-            ["Vesi", "3 kertaa päivässä, vähintään 3 tunnin välein", "Jano noin 10 tunnin jälkeen"],
+            ["Vesi", "Kun kuppi alkaa tyhjentyä, vähintään 3 tuntia välissä", "Jano noin 10 tunnin jälkeen"],
             ["Lenkki", "6 000 oikeaa askelta (pennuilla aluksi 2 000)", "Ei lenkkiä lainkaan → sairas seuraavana aamuna"],
             ["Siivous", "Kun lemmikki sotkee – ei koskaan hiljaisten tuntien aikana", "Ei ruokaa eikä vettä ennen kuin on siivottu"],
           ],
@@ -314,9 +317,22 @@ const fi: Dictionary = {
           ],
         },
         {
+          type: "cards",
+          heading: "Enemmän kuin kotitöitä",
+          columns: 3,
+          items: [
+            { title: "Koirakoulu", text: "Lyhyt harjoitus joka päivä: istu, tänne, maahan ja tarpeet ulkona. Jokainen rotu oppii omaan tahtiinsa, ja näet, mitkä käskyt lemmikki jo osaa." },
+            { title: "Leikki ja rapsuttelu", text: "12 viikon haasteessa lapsesi voi leikkiä pallolla tai rapsutella lemmikkiä milloin haluaa. Se parantaa lemmikin mielialaa, ei pisteitä." },
+            { title: "Rodun mukainen hoito", text: "Harjaus, hampaat, kynnet, korvat tai kasvojen poimut – vain kun lähde kertoo, kuinka usein. Trimmaus ja kylpy ovat muistutuksia sinulle." },
+            { title: "Myös kissat", text: "Kissa jahtaa höyhenonkea lenkin sijaan, ja sen hiekkalaatikko pitää puhdistaa ja vaihtaa kerran viikossa." },
+            { title: "Nimi ja albumi", text: "Voit antaa lemmikille nimen. Sen kuvat kasvavat sen mukana albumissa, ja pentu juhlii jopa ensimmäistä syntymäpäiväänsä." },
+            { title: "Toiveet", text: "Lapsesi voi toivoa lemmikille petiä, kuppeja, lelua tai herkkuja. Sinä päätät. Tavarat muuttavat vain ulkonäköä, eivät koskaan peliä." },
+          ],
+        },
+        {
           type: "callout",
           title: "Epäonnistuminenkin on tulos.",
-          text: "Jos lemmikki päätyy virtuaaliseen löytöeläinkotiin, olette oppineet jotakin arvokasta – ennen kuin oikea eläin joutuu maksamaan hinnan. Voitte aloittaa alusta, myös helpommalla rodulla.",
+          text: "Jos lemmikki päätyy virtuaaliseen löytöeläinkotiin, olette oppineet jotain arvokasta – ennen kuin oikea eläin maksoi hinnan. Voitte aloittaa alusta.",
           tone: "dark",
         },
       ],
@@ -348,7 +364,7 @@ const fi: Dictionary = {
           heading: "Care Score",
           paragraphs: [
             "Care Score = ajallaan tehdyt rutiinit ÷ odotetut rutiinit × 100, josta vähennetään 10 pistettä jokaisesta sairastumisesta, rajattuna välille 0–100.",
-            "Rutiini on yksi konkreettinen tehtävä: jokainen ruokinta-aikaikkuna, jokainen kolmesta vedenlisäyksestä, jokaisen sotkun siivoaminen kahden tunnin kuluessa (koulu- ja uniaikaa ei lasketa) ja päivän lenkkitavoitteen saavuttaminen.",
+            "Rutiini on yksi konkreettinen tehtävä: jokainen ruokintaikkuna, jokainen veden lisääminen, jokaisen vahingon siivoaminen kahden tunnin kuluessa (koulu ja uni eivät laske), päivän lenkkitavoite, päivittäinen koulutusharjoitus ja rodun tarvitsema hoito. Kissalla on lenkin sijaan leikkihetket ja hiekkalaatikko.",
             "Aikaa, jolloin peli oli tauolla, lemmikki oli eläinlääkärissä tai sopimusta ei ollut vielä allekirjoitettu, ei koskaan lueta lapsesi tappioksi. Menneet päivät jäädytetään, joten tulosta ei voi kirjoittaa myöhemmin uudelleen.",
             "Lemmikin jakavat sisarukset jakavat jokaisen rutiinin reilusti. Vain lapsen omat teot lasketaan – jos yksi tekee kaiken, hän saa 100 ja toinen 0.",
           ],
@@ -366,11 +382,24 @@ const fi: Dictionary = {
           type: "list",
           heading: "Päätösvalta pysyy sinulla",
           items: [
-            "Hiljaiset tunnit koulua ja unta varten paikallisen aikasi mukaan – myös kesäaikaan siirryttäessä ja siitä palattaessa.",
+            "Hiljaiset tunnit koulua ja unta varten sekä aikavyöhyke – koko perheelle tai erikseen jokaiselle lemmikille, myös kesäaikaan siirryttäessä ja siitä palattaessa.",
             "Tauota minkä tahansa lemmikin peli yhdellä vahvistetulla napautuksella; lapsesi näkymä lukittuu saman tien.",
             "Kutsu toinen vanhempi kertakäyttöisellä koodilla; näette molemmat jokaisen lapsen ja jokaisen lemmikin.",
             "Kirjaa lapsi ulos kaikilta laitteilta, jos puhelin katoaa; koodit ovat kertakäyttöisiä ja vanhenevat 15 minuutissa.",
             "Vie kaikki perheesi tiedot tiedostona tai poista lapsen profiili tai koko tilisi sovelluksessa saman tien.",
+          ],
+        },
+        {
+          type: "cards",
+          heading: "Sovelluksessasi myös",
+          columns: 3,
+          items: [
+            { title: "Lapsesi toiveet", text: "Näet, mitä lapsesi on toivonut, ja valitset Osta tai Ei nyt. Ostaminen onnistuu, kun tavarat ovat App Storessa ja Google Playssa." },
+            { title: "Hoitomuistutukset", text: "Roduille, jotka tarvitsevat trimmausta tai kylvyn, saat päivätyn muistutuksen. Merkitse se tehdyksi; se ei koskaan vaikuta lapsesi pisteisiin." },
+            { title: "Nimi lemmikille", text: "Anna lemmikille nimi ja vaihda sitä milloin haluat – esimerkiksi vastaamaan oikeaa eläintä, jonka tuotte myöhemmin kotiin." },
+            { title: "Yksi puhelin perheelle", text: "Pelaa nimellä -toiminto vaihtaa puhelimen lapsesi peliin. Takaisin vanhemman näkymään pääset aina vain omalla kirjautumisellasi." },
+            { title: "Kirjaudu haluamallasi tavalla", text: "Google, Apple tai sähköposti ja salasana. Lapset kirjautuvat aina koodilla." },
+            { title: "Maksuttoman lemmikin päivitys", text: "Aloita 12 viikon haaste maksuttomalla lemmikillä, joka lapsellasi jo on, ja valitse, säilyykö tähänastinen Care Score." },
           ],
         },
         {
@@ -453,7 +482,7 @@ const fi: Dictionary = {
             ["Herkut, 10 kpl:n pakkaus", "2,99 €"],
             ["Tervetulopaketti: peti + kupit + lelu", "15,99 € (17,97 €:n sijaan)"],
           ],
-          note: "Toiveet tulevat sovelluksen seuraavassa päivityksessä; niitä voi ostaa, kun tavarat ovat saatavilla App Storessa ja Google Playssa. Hinnat koskevat Sloveniaa; kauppa näyttää maasi hinnan.",
+          note: "Lapsesi voi jo toivoa tavaroita sovelluksessa; niitä voi ostaa, kun ne ovat saatavilla App Storessa ja Google Playssa. Hinnat koskevat Sloveniaa; kauppa näyttää maasi hinnan.",
         },
         {
           type: "faq",
@@ -486,7 +515,7 @@ const fi: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "Minkä ikäisille PetPrep on tarkoitettu?", a: "Lapsille se on suunniteltu noin 7–12-vuotiaille, ja se toimii hyvin 16-vuotiaaksi asti. Myös aikuiset käyttävät sitä selvittääkseen, sopiiko tietty rotu todella heille, ennen kuin he ostavat tai adoptoivat." },
+            { q: "Kenelle PetPrep on tarkoitettu?", a: "Jokaiselle lapselle, joka pyytää lemmikkiä, ja vanhemmille, jotka haluavat tietää, pitääkö lupaus. Myös aikuiset käyttävät sitä testatakseen ennen ostoa tai adoptiota, sopiiko tietty rotu todella heille." },
             { q: "Voinko käyttää PetPrepiä yksin, ilman lapsia?", a: "Voit. Luo tili vanhempana ja lisää itsesi hoitajaprofiiliksi – lempinimi riittää, jätä syntymävuosi tyhjäksi. Valitse rotu, luo 6-numeroinen koodi ja valitse sitten samalla tai toisella puhelimella ”I’m a kid” (”Olen lapsi”) ja kirjoita koodi – näin sinusta tulee hoitaja. Koska siitä tulee perheen koira, voit myöhemmin lisätä kumppanisi tai lapsesi, jotta hoidatte sitä yhdessä. Hinta on sama kuin perheille." },
             { q: "Paljonko aikaa se vie päivässä?", a: "Muutaman minuutin ruokaan, veteen ja siivoamiseen – sekä lenkin, jonka oikea koirakin tarvitsisi." },
             { q: "Seuraako sovellus lapseni sijaintia?", a: "Ei. Lenkkejä varten se laskee vain askeleita. Jos sallit sen, sovellus lukee ne Apple Terveydestä (iPhone) tai Health Connectista (Android) – vain lukuoikeudella ja vain askeleet; jos puhelimen liikeanturi on käytettävissä, sovellus käyttää myös sitä. Lupaa kysytään lenkkinäkymässä. GPS:ää ei käytetä." },
@@ -496,8 +525,13 @@ const fi: Dictionary = {
             { q: "Entä koulu ja nukkumaanmeno?", a: "Aseta hiljaiset tunnit. Lemmikin tahti hidastuu, mitään ei lähetetä, ja kokonaan hiljaisiin tunteihin osuvat ateriat hoidat sinä." },
             { q: "Onko se lapsille pelottavaa?", a: "Ei. Seuraukset ovat todellisia mutta lempeitä: lemmikki joutuu eläinlääkäriin tai löytöeläinkotiin, mitään järkyttävää ei näytetä, ja aina voi aloittaa alusta." },
             { q: "Mitä eläimiä on saatavilla?", a: "Nyt [koirat](species:dog) ja [kissat](species:cat): maksuton sekarotuinen koira ja kotikissa sekä 12 viikon haaste jommankumman tai minkä tahansa [eläinhakemiston](page:animals) rodun kanssa – hakemistossa on myös niiden tarpeet lähteineen. Lisää lajeja on suunnitteilla." },
-            { q: "Millä kielillä?", a: "Nyt englanniksi ja sloveniaksi. Lisää kieliä tulee, kun PetPrep julkaistaan uusissa maissa." },
+            { q: "Millä kielillä?", a: "Sovellus on englanniksi ja sloveniaksi, tämä verkkosivusto 15 kielellä. Sovellukseen tulee lisää kieliä, kun PetPrep laajenee uusiin maihin." },
             { q: "Mitä tapahtuu, kun saamme oikean lemmikin?", a: "PetPrepistä voi tulla tekoälyavustaja oikealle lemmikillesi. Tämä osa on kehitteillä." },
+            { q: "Voiko lapseni leikkiä lemmikin kanssa?", a: "Kyllä. 12 viikon haasteessa lapsesi voi leikkiä pallolla tai rapsutella milloin haluaa, ja kissa jahtaa höyhenonkea. Leikki parantaa lemmikin mielialaa, mutta se ei koskaan muuta Care Scorea." },
+            { q: "Voiko lemmikillä olla nimi?", a: "Kyllä. Vanhempi voi antaa sille nimen ja vaihtaa sen milloin tahansa. Nimi näkyy lapsen näytöllä, albumissa ja todistuksessa." },
+            { q: "Voivatko vanhempi ja lapsi jakaa yhden puhelimen?", a: "Kyllä. Napauta vanhemman sovelluksessa lapsesi kohdalla Pelaa nimellä, niin puhelin vaihtuu lapsen peliin. Takaisin vanhemman näkymään pääset omalla kirjautumisellasi. Jaetussa puhelimessa askeleet lasketaan vain, kun lapsen profiili on käytössä." },
+            { q: "Entä jos matkustamme toiselle aikavyöhykkeelle?", a: "Voit vaihtaa aikavyöhykkeen koko perheelle tai jokaiselle lemmikille, jotta ateriat ja hiljaiset tunnit seuraavat paikallista aikaa. Sovellus ehdottaa sitä, kun puhelin on toisella aikavyöhykkeellä." },
+            { q: "Mitä kissa tekee lenkin sijaan?", a: "Kissa saa leikkihetkiä höyhenongen kanssa, ja sen hiekkalaatikko pitää puhdistaa ja vaihtaa kerran viikossa. Pitkäkarvaisia rotuja pitää myös harjata." },
           ],
         },
       ],
@@ -1178,7 +1212,22 @@ const fi: Dictionary = {
       title: "Lapsille, jotka haluavat lemmikin.",
       lead: "Tulostettavia värityskuvia, Curio ja #walkyourpet – lapsille ja vanhemmille, jotka valmistautuvat lemmikkiin yhdessä.",
       hero: { src: "/curio/curio-waving.webp", alt: "Curio, PetPrepin maskotti: pehmeä grafiitinharmaa kuutio, jolla on isot valkoiset silmät, pieni vadelmanpunainen nenä ja mintunvihreä panta, vilkuttaa.", width: 720, height: 948 },
-      blocks: [{ type: "kidsHub" }],
+      blocks: [
+        { type: "kidsHub" },
+        {
+          type: "cards",
+          heading: "PetPrep-sovelluksessa",
+          columns: 3,
+          items: [
+            { title: "Koirakoulu", text: "Opeta lemmikillesi istu, tänne ja maahan. Kehu sitä juuri oikealla hetkellä!" },
+            { title: "Leikki ja rapsuttelu", text: "Heitä palloa, silitä lemmikkiäsi tai heiluta kissallesi höyhenonkea." },
+            { title: "Toiveet", text: "Haluaisiko lemmikkisi uuden pedin tai lelun? Pyydä vanhemmiltasi sovelluksessa." },
+            { title: "Lemmikkisi albumi", text: "Katso, miten lemmikkisi kasvaa kuvissa. Pennulla on jopa ensimmäinen syntymäpäivä." },
+            { title: "Oikeat lenkit", text: "Lenkkisi laskevat oikeita askelia. Lemmikkisi tarvitsee niitä – ja ne ovat hauskoja sinullekin." },
+            { title: "Allekirjoitettu lupaus", text: "Ennen kuin lemmikkisi tulee, allekirjoitat lupauksen sormellasi." },
+          ],
+        },
+      ],
     },
     walkyourpet: {
       meta: {

@@ -190,6 +190,9 @@ const pt: Dictionary = {
         { title: "Respeita a escola e o sono", text: "As horas de silêncio suspendem os lembretes. Uma refeição que calha durante a escola é tarefa tua, não do teu filho." },
         { title: "Consequências reais, com cuidado", text: "Se houver descuido, o animal vai ao veterinário ou ao abrigo – nunca de forma assustadora e sempre com um novo começo." },
         { title: "Único no mundo", text: "Cada animal tem a sua pelagem, as suas manchas e os seus olhos – fotorrealista e nunca igual a outro." },
+        { title: "Aprende", text: "Um treino curto por dia – senta, anda cá, deita. Cada raça aprende ao seu ritmo." },
+        { title: "Cuidados conforme a raça", text: "Escovar, dentes, unhas ou orelhas – só quando uma fonte diz com que frequência a raça precisa." },
+        { title: "Desejos", text: "O teu filho pode pedir uma cama, um brinquedo ou guloseimas para o animal. Tu decides; os artigos só mudam o aspeto." },
       ],
     },
     parents: {
@@ -270,12 +273,12 @@ const pt: Dictionary = {
           type: "steps",
           heading: "Do primeiro toque ao certificado",
           items: [
-            { title: "O pai ou a mãe cria a família", text: "Registas-te com o teu e-mail (o início de sessão com a Apple e a Google está a caminho). Adicionas cada filho com uma alcunha e, se quiseres, o ano de nascimento. É tudo o que perguntamos sobre o teu filho." },
+            { title: "O pai ou a mãe cria a família", text: "Registas-te com Google, Apple ou o teu e-mail. Adicionas cada filho com uma alcunha e, se quiseres, o ano de nascimento. É tudo o que perguntamos sobre o teu filho." },
             { title: "Tu escolhes o animal", text: "Escolhes a raça (o cão sem raça definida é gratuito), a origem do animal – adotado num abrigo ou comprado a um criador – e a idade à chegada: cachorro, jovem, adulto ou sénior." },
             { title: "O teu filho entra com um código", text: "Recebes um código de 6 dígitos válido durante 15 minutos. O teu filho escreve-o no telemóvel dele – sem e-mail nem palavra-passe. Se o telemóvel se perder, termina a sessão em todos os dispositivos com um toque." },
             { title: "O Contrato de responsabilidade", text: "O teu filho assina uma promessa com o dedo. A assinatura é o nascimento do animal: as necessidades começam a contar a partir desse momento, por isso não se perde nada se assinar mais tarde." },
-            { title: "Doze semanas de cuidados", text: "Alimentação nas janelas horárias certas, água fresca, limpeza e um passeio diário com passos reais. À medida que o animal cresce, as necessidades mudam." },
-            { title: "O certificado", text: "Ao fim de 12 semanas o animal faz um ano. O teu filho recebe um Certificado de responsabilidade com o seu Care Score – ou descobrem os dois, em segurança, que ainda não é a altura certa." },
+            { title: "Doze semanas de cuidados", text: "Refeições nos horários certos, água fresca, limpeza e um passeio diário com passos reais – e ainda treino, brincadeira e os cuidados de que a raça precisa. À medida que o animal cresce, as necessidades mudam." },
+            { title: "O certificado", text: "O teu filho recebe um Certificado de responsabilidade com o seu Care Score – ou descobrem os dois, em segurança, que ainda não é a altura certa." },
           ],
         },
         {
@@ -294,7 +297,7 @@ const pt: Dictionary = {
           head: ["Necessidade", "Com que frequência", "Se for esquecida"],
           rows: [
             ["Comida", "Manhã (6–10) e noite (17–21), uma vez por janela", "Fome ao fim de cerca de 12,5 horas"],
-            ["Água", "3 vezes por dia, com pelo menos 3 horas de intervalo", "Sede ao fim de cerca de 10 horas"],
+            ["Água", "Quando a taça começa a esvaziar, pelo menos 3 horas de intervalo", "Sede ao fim de cerca de 10 horas"],
             ["Passeio", "6000 passos reais (os cachorros começam com 2000)", "Nenhum passeio → doente na manhã seguinte"],
             ["Limpeza", "Quando o animal suja – nunca durante as horas de silêncio", "Sem comida nem água até a sujidade ser limpa"],
           ],
@@ -314,9 +317,22 @@ const pt: Dictionary = {
           ],
         },
         {
+          type: "cards",
+          heading: "Mais do que tarefas",
+          columns: 3,
+          items: [
+            { title: "Escola de cães", text: "Um treino curto por dia: senta, anda cá, deita e fazer as necessidades lá fora. Cada raça aprende ao seu ritmo e tu vês que comandos o teu animal já sabe." },
+            { title: "Brincadeira e mimos", text: "No desafio de 12 semanas, o teu filho pode brincar com a bola ou dar mimos ao animal sempre que quiser. Melhora o humor do animal, nunca a pontuação." },
+            { title: "Cuidados conforme a raça", text: "Escovar, dentes, unhas, orelhas ou pregas do focinho – só quando uma fonte diz com que frequência. Tosquia e banho são lembretes para ti." },
+            { title: "Também gatos", text: "Um gato persegue uma vara com penas em vez de passear, e a areia tem de ser limpa e trocada todas as semanas." },
+            { title: "Um nome e um álbum", text: "Podes dar um nome ao animal. As fotos crescem com ele num álbum, e um cachorro até festeja o primeiro aniversário." },
+            { title: "Desejos", text: "O teu filho pode pedir uma cama, taças, um brinquedo ou guloseimas para o animal. Tu decides. Os artigos só mudam o aspeto, nunca o jogo." },
+          ],
+        },
+        {
           type: "callout",
           title: "Falhar também é um resultado.",
-          text: "Se o animal acabar no abrigo virtual, aprenderam algo valioso – antes de um animal a sério pagar o preço. Podem recomeçar, também com uma raça mais fácil.",
+          text: "Se o animal acabar no abrigo virtual, aprenderam algo valioso – antes de um animal verdadeiro pagar o preço. Podem começar de novo.",
           tone: "dark",
         },
       ],
@@ -348,7 +364,7 @@ const pt: Dictionary = {
           heading: "O Care Score",
           paragraphs: [
             "Care Score = rotinas cumpridas a horas ÷ rotinas previstas × 100, menos 10 pontos por cada doença, e o resultado fica sempre entre 0 e 100.",
-            "Uma rotina é uma tarefa concreta: cada janela de alimentação, cada uma das três mudanças de água, limpar cada sujidade no prazo de duas horas (a escola e o sono não contam) e atingir a meta diária do passeio.",
+            "Uma rotina é uma tarefa concreta: cada horário de refeição, cada reposição de água, limpar cada asneira em duas horas (escola e sono não contam), atingir o objetivo de passeio do dia, o treino diário e os cuidados de que a raça precisa. Um gato tem brincadeiras e a areia em vez do passeio.",
             "O tempo em que puseste o jogo em pausa, em que o animal esteve no veterinário ou antes de o contrato ser assinado nunca conta contra o teu filho. Os dias passados ficam fechados, por isso uma pontuação não pode ser reescrita mais tarde.",
             "Os irmãos que partilham um animal dividem cada rotina de forma justa. Só contam as ações de cada criança – se uma fizer tudo, fica com 100 e a outra com 0.",
           ],
@@ -366,11 +382,24 @@ const pt: Dictionary = {
           type: "list",
           heading: "O controlo continua a ser teu",
           items: [
-            "Horas de silêncio para a escola e o sono, na tua hora local – também quando muda a hora de verão.",
+            "Horas de silêncio para a escola e o sono, e o fuso horário – para toda a família ou para cada animal em separado, também quando muda a hora de verão.",
             "Põe o jogo em pausa para qualquer animal com um toque confirmado; o ecrã do teu filho bloqueia em direto.",
             "Convida o outro pai ou a outra mãe com um código de utilização única; os dois veem todos os filhos e todos os animais.",
             "Termina a sessão de um filho em todos os dispositivos se um telemóvel se perder; os códigos só podem ser usados uma vez e expiram ao fim de 15 minutos.",
             "Exporta todos os dados da tua família num ficheiro, ou elimina o perfil de um filho ou a tua conta inteira de imediato na aplicação.",
+          ],
+        },
+        {
+          type: "cards",
+          heading: "Também na tua aplicação",
+          columns: 3,
+          items: [
+            { title: "Os desejos do teu filho", text: "Vês o que o teu filho pediu e escolhes Comprar ou Agora não. A compra fica disponível quando os artigos estiverem na App Store e no Google Play." },
+            { title: "Lembretes de cuidados", text: "Para raças que precisam de tosquia ou banho, recebes um lembrete com data. Marca-o como feito; nunca afeta a pontuação do teu filho." },
+            { title: "Um nome para o animal", text: "Dá um nome ao animal e muda-o quando quiseres – por exemplo, para coincidir com o animal verdadeiro que levarem para casa mais tarde." },
+            { title: "Um telemóvel para a família", text: "Com Jogar como, o telemóvel passa para o jogo do teu filho. Para voltar à vista dos pais é sempre preciso o teu início de sessão." },
+            { title: "Entra como preferires", text: "Google, Apple ou e-mail e palavra-passe. As crianças entram sempre com um código." },
+            { title: "Passar o animal gratuito para o desafio", text: "Começa o desafio de 12 semanas com o animal gratuito que o teu filho já tem e escolhe se o Care Score até agora se mantém." },
           ],
         },
         {
@@ -453,7 +482,7 @@ const pt: Dictionary = {
             ["Guloseimas, pacote de 10", "2,99\u00a0€"],
             ["Pacote de boas-vindas: cama + tigelas + brinquedo", "15,99\u00a0€ (em vez de 17,97\u00a0€)"],
           ],
-          note: "Os Desejos chegam com a próxima atualização da aplicação; podem ser comprados assim que os artigos estiverem disponíveis na App Store e no Google Play. Os preços são os da Eslovénia; a loja mostra o preço do teu país.",
+          note: "O teu filho já pode pedir coisas na aplicação; podem ser compradas assim que os artigos estiverem disponíveis na App Store e no Google Play. Os preços são os da Eslovénia; a loja mostra o preço do teu país.",
         },
         {
           type: "faq",
@@ -486,7 +515,7 @@ const pt: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "Para que idades é o PetPrep?", a: "Foi pensado para crianças dos 7 aos 12 anos, aproximadamente, e funciona bem até aos 16. Os adultos também o usam, para testar se uma raça em particular é mesmo para eles antes de comprarem ou adotarem." },
+            { q: "Para quem é o PetPrep?", a: "Para todas as crianças que pedem um animal e para os pais que querem saber se a promessa se vai cumprir. Também é usado por adultos que querem confirmar, antes de comprar ou adotar, se uma raça é mesmo para eles." },
             { q: "Posso usar o PetPrep sem crianças?", a: "Sim. Cria uma conta como pai ou mãe e adiciona-te como perfil de cuidador – basta uma alcunha; deixa o ano de nascimento em branco. Escolhe a raça, cria um código de 6 dígitos e depois, no mesmo telemóvel ou noutro, escolhe «I’m a kid» («Sou criança») e escreve o código – é assim que passas a ser o cuidador. Como vai ser o cão da família, podes juntar mais tarde o teu companheiro ou a tua companheira, ou os teus filhos, para cuidarem dele juntos. O preço é o mesmo das famílias." },
             { q: "Quanto tempo exige por dia?", a: "Alguns minutos para a comida, a água e a limpeza – mais o passeio de que um cão a sério precisaria de qualquer forma." },
             { q: "A aplicação segue a localização do meu filho?", a: "Não. Para os passeios, só conta passos. Se o permitires, lê-os do Apple Health (iPhone) ou do Health Connect (Android) – só leitura e só passos; quando disponível, usa também o sensor de movimento do telemóvel. Pede autorização no ecrã do passeio. Não usa GPS." },
@@ -496,8 +525,13 @@ const pt: Dictionary = {
             { q: "E a escola e a hora de dormir?", a: "Define horas de silêncio. O animal abranda, não é enviado nada e as refeições que calham totalmente nas horas de silêncio ficam a teu cargo." },
             { q: "É assustador para as crianças?", a: "Não. As consequências são reais, mas suaves: o animal vai ao veterinário ou para o abrigo, nunca há nada chocante e há sempre um novo começo." },
             { q: "Que animais estão disponíveis?", a: "[Cães](species:dog) e [gatos](species:cat) hoje: um cão sem raça definida e um gato doméstico gratuitos e o desafio de 12 semanas com qualquer um deles ou com todas as raças do [registo de animais](page:animals), que indica também as suas necessidades com fontes. Estão planeadas mais espécies." },
-            { q: "Em que idiomas?", a: "Hoje a aplicação está em inglês e em esloveno. Vão chegar mais idiomas à medida que o PetPrep for lançado em novos países." },
+            { q: "Em que idiomas?", a: "A aplicação está em inglês e esloveno; este site está em 15 línguas. Chegam mais línguas à aplicação à medida que o PetPrep for lançado em novos países." },
             { q: "O que acontece depois de termos um animal a sério?", a: "O PetPrep pode tornar-se um assistente de IA para o teu animal a sério. Esta parte está em desenvolvimento." },
+            { q: "O meu filho pode brincar com o animal?", a: "Sim. No desafio de 12 semanas, o teu filho pode brincar com a bola ou dar mimos sempre que quiser, e um gato persegue uma vara com penas. A brincadeira melhora o humor do animal, mas nunca muda o Care Score." },
+            { q: "O animal pode ter um nome?", a: "Sim. Um dos pais pode dar-lhe um nome e mudá-lo a qualquer momento. O nome aparece no ecrã do teu filho, no álbum e no certificado." },
+            { q: "Pais e filhos podem partilhar um telemóvel?", a: "Sim. Na aplicação dos pais, toca em Jogar como junto ao teu filho e o telemóvel passa para o jogo dele. Para voltar à vista dos pais é preciso o teu início de sessão. Num telemóvel partilhado, os passos só contam enquanto o perfil da criança está ativo." },
+            { q: "E se viajarmos para outro fuso horário?", a: "Podes mudar o fuso horário de toda a família ou de cada animal, para que as refeições e as horas de silêncio sigam a hora local. A aplicação sugere-o quando o telemóvel está noutro fuso." },
+            { q: "O que faz um gato em vez de passear?", a: "Um gato tem brincadeiras com uma vara com penas, e a areia tem de ser limpa e trocada todas as semanas. As raças de pelo comprido também precisam de ser escovadas." },
           ],
         },
       ],
@@ -1178,7 +1212,22 @@ const pt: Dictionary = {
       title: "Para crianças que querem um animal de estimação.",
       lead: "Desenhos para colorir e imprimir, o Curio e o #walkyourpet – para crianças e pais que se preparam juntos para ter um animal de estimação.",
       hero: { src: "/curio/curio-waving.webp", alt: "O Curio, a mascote do PetPrep: um cubo cor de grafite, macio, com grandes olhos brancos, um pequeno nariz cor de framboesa e uma coleira verde-menta, a acenar.", width: 720, height: 948 },
-      blocks: [{ type: "kidsHub" }],
+      blocks: [
+        { type: "kidsHub" },
+        {
+          type: "cards",
+          heading: "Na aplicação PetPrep",
+          columns: 3,
+          items: [
+            { title: "Escola de cães", text: "Ensina o teu animal a sentar, vir e deitar. Elogia-o no momento certo!" },
+            { title: "Brincadeira e mimos", text: "Atira a bola, faz festas ao teu animal ou abana uma vara com penas para o teu gato." },
+            { title: "Desejos", text: "O teu animal gostava de uma cama nova ou de um brinquedo? Pede aos teus pais na aplicação." },
+            { title: "O álbum do teu animal", text: "Vê o teu animal crescer em fotos. Um cachorro até tem o seu primeiro aniversário." },
+            { title: "Passeios a sério", text: "Os teus passeios contam passos reais. O teu animal precisa deles – e também são divertidos para ti." },
+            { title: "Uma promessa assinada", text: "Antes de o teu animal chegar, assinas uma promessa com o dedo." },
+          ],
+        },
+      ],
     },
     walkyourpet: {
       meta: {

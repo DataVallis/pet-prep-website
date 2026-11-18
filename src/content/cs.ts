@@ -190,6 +190,9 @@ const cs: Dictionary = {
         { title: "Respektuje školu a spánek", text: "Klidové hodiny utiší připomínky. Krmení, které vyjde na dobu školy, je starost rodiče, ne dítěte." },
         { title: "Skutečné důsledky, ale citlivě", text: "Zanedbání znamená návštěvu veterináře nebo útulek – nikdy nic děsivého a vždy s možností začít znovu." },
         { title: "Jedinečný", text: "Každý mazlíček má vlastní srst, kresbu i oči – fotorealistické a nikdy dvakrát stejné." },
+        { title: "Učí se", text: "Každý den krátké cvičení – sedni, ke mně, lehni. Každé plemeno se učí svým tempem." },
+        { title: "Péče podle plemene", text: "Kartáčování, zuby, drápky nebo uši – jen tam, kde zdroj uvádí, jak často je plemeno potřebuje." },
+        { title: "Přání", text: "Dítě může pro mazlíčka poprosit o pelíšek, hračku nebo pamlsky. Rozhodujete vy; věci mění jen vzhled." },
       ],
     },
     parents: {
@@ -270,12 +273,12 @@ const cs: Dictionary = {
           type: "steps",
           heading: "Od prvního klepnutí k certifikátu",
           items: [
-            { title: "Rodič založí rodinu", text: "Zaregistrujete se e-mailem (přihlášení přes Apple a Google se připravuje). Každé dítě přidáte pod přezdívkou a volitelně i s rokem narození. Na nic dalšího se na vaše dítě neptáme." },
+            { title: "Rodič založí rodinu", text: "Zaregistrujete se přes Google, Apple nebo e-mail. Každé dítě přidáte s přezdívkou a případně rokem narození. Víc se na vaše dítě neptáme." },
             { title: "Vyberete mazlíčka", text: "Zvolíte plemeno (kříženec je zdarma), původ – z útulku, nebo od chovatele – a věk při příchodu domů: štěně, mladý, dospělý nebo senior." },
             { title: "Dítě se přihlásí kódem", text: "Dostanete šestimístný kód platný 15 minut. Dítě ho zadá do svého telefonu – bez e-mailu a bez hesla. Ztracený telefon? Jedním klepnutím ho odhlásíte ze všech zařízení." },
             { title: "Smlouva o odpovědnosti", text: "Dítě slib podepíše prstem. Podpisem se mazlíček narodí: jeho potřeby se začnou počítat až od té chvíle, takže pozdější podpis nic neubere." },
-            { title: "Dvanáct týdnů péče", text: "Krmení ve správných časových oknech, čerstvá voda, úklid a denní procházka se skutečnými kroky. S tím, jak mazlíček roste, se mění i jeho potřeby." },
-            { title: "Certifikát", text: "Po 12 týdnech je mazlíčkovi jeden rok. Dítě dostane Certifikát odpovědnosti se svým Care Score – nebo oba bez rizika zjistíte, že teď není ta správná chvíle." },
+            { title: "Dvanáct týdnů péče", text: "Krmení ve správných časech, čerstvá voda, uklízení a denní procházka se skutečnými kroky – k tomu výcvik, hra a péče, kterou plemeno potřebuje. Jak mazlíček roste, mění se jeho potřeby." },
+            { title: "Certifikát", text: "Dítě dostane Certifikát odpovědnosti se svým Care Score – nebo oba bez rizika zjistíte, že teď není ta správná chvíle." },
           ],
         },
         {
@@ -294,7 +297,7 @@ const cs: Dictionary = {
           head: ["Potřeba", "Jak často", "Když se vynechá"],
           rows: [
             ["Krmení", "Ráno (6–10) a večer (17–21), vždy jednou v každém okně", "Hlad asi po 12,5 hodiny"],
-            ["Voda", "3krát denně, vždy s odstupem alespoň 3 hodin", "Žízeň asi po 10 hodinách"],
+            ["Voda", "Když miska dochází, alespoň 3 hodiny odstup", "Žízeň asi po 10 hodinách"],
             ["Procházka", "6 000 skutečných kroků (štěňata začínají na 2 000)", "Bez procházky → nemoc další ráno"],
             ["Úklid", "Když mazlíček udělá nepořádek – nikdy během klidových hodin", "Žádné jídlo ani voda, dokud není uklizeno"],
           ],
@@ -314,9 +317,22 @@ const cs: Dictionary = {
           ],
         },
         {
+          type: "cards",
+          heading: "Víc než jen povinnosti",
+          columns: 3,
+          items: [
+            { title: "Psí škola", text: "Každý den krátké cvičení: sedni, ke mně, lehni a venčení venku. Každé plemeno se učí svým tempem a vy vidíte, které povely už mazlíček umí." },
+            { title: "Hra a mazlení", text: "Ve 12týdenní výzvě si dítě může s mazlíčkem hrát s míčkem nebo se s ním mazlit, kdykoli chce. Zlepší to náladu mazlíčka, nikdy skóre." },
+            { title: "Péče podle plemene", text: "Kartáčování, zuby, drápky, uši nebo kožní záhyby – jen tam, kde zdroj uvádí, jak často. Psí salon a koupání jsou připomínky pro vás." },
+            { title: "I kočky", text: "Kočka místo procházky honí udičku s peříčky a její záchod je potřeba čistit a jednou týdně vyměnit stelivo." },
+            { title: "Jméno a album", text: "Mazlíčkovi můžete dát jméno. Jeho fotky rostou s ním v albu a štěně dokonce slaví své první narozeniny." },
+            { title: "Přání", text: "Dítě může pro mazlíčka poprosit o pelíšek, misky, hračku nebo pamlsky. Rozhodujete vy. Věci mění jen vzhled, nikdy hru." },
+          ],
+        },
+        {
           type: "callout",
           title: "I neúspěch je výsledek.",
-          text: "Pokud mazlíček skončí ve virtuálním útulku, dozvěděli jste se něco cenného – dřív, než by to zaplatil skutečný mazlíček. Můžete začít znovu, třeba s nenáročnějším plemenem.",
+          text: "Pokud mazlíček skončí ve virtuálním útulku, naučili jste se něco cenného – dřív, než za to zaplatilo skutečné zvíře. Můžete začít znovu.",
           tone: "dark",
         },
       ],
@@ -348,7 +364,7 @@ const cs: Dictionary = {
           heading: "Care Score",
           paragraphs: [
             "Care Score = povinnosti splněné včas ÷ očekávané povinnosti × 100, minus 10 bodů za každé onemocnění, v rozmezí 0 až 100.",
-            "Povinnost je jeden konkrétní úkol: každé okno krmení, každé ze tří doplnění vody, uklizení každého nepořádku do dvou hodin (škola a spánek se nepočítají) a splnění denního cíle procházky.",
+            "Povinnost je jeden konkrétní úkol: každé okno krmení, každé doplnění vody, uklizení každé nehody do dvou hodin (škola a spánek se nepočítají), splnění denního cíle procházky, denní cvičení ve škole a péče, kterou plemeno potřebuje. Kočka má místo procházky hru a záchod.",
             "Doba, kdy byla hra pozastavená, mazlíček byl u veterináře nebo ještě nebyla podepsaná smlouva, se dítěti nikdy nepočítá. Uplynulé dny jsou uzamčené, takže skóre nejde zpětně přepsat.",
             "Sourozenci, kteří se dělí o mazlíčka, mají každou povinnost spravedlivě rozdělenou. Počítají se jen úkony, které dítě udělalo samo – když jedno udělá všechno, má 100 a druhé 0.",
           ],
@@ -366,11 +382,24 @@ const cs: Dictionary = {
           type: "list",
           heading: "Vše máte pod kontrolou",
           items: [
-            "Klidové hodiny pro školu a spánek ve vašem místním čase – i při přechodu na letní a zimní čas.",
+            "Klidové hodiny pro školu a spánek a časové pásmo – pro celou rodinu nebo zvlášť pro každého mazlíčka, i při přechodu na letní a zimní čas.",
             "Hru můžete u kteréhokoli mazlíčka pozastavit jedním potvrzeným klepnutím; obrazovka dítěte se okamžitě zamkne.",
             "Druhého rodiče pozvete jednorázovým kódem; oba vidíte každé dítě i každého mazlíčka.",
             "Při ztrátě telefonu odhlásíte dítě ze všech zařízení; kódy jsou jednorázové a vyprší za 15 minut.",
             "Všechna data rodiny můžete exportovat jako soubor, nebo v aplikaci okamžitě smazat profil dítěte či celý účet.",
+          ],
+        },
+        {
+          type: "cards",
+          heading: "Ve vaší aplikaci také",
+          columns: 3,
+          items: [
+            { title: "Přání vašeho dítěte", text: "Vidíte, o co dítě poprosilo, a zvolíte Koupit nebo Teď ne. Koupit půjde, až budou věci v App Store a Google Play." },
+            { title: "Připomínky péče", text: "U plemen, která potřebují psí salon nebo koupání, dostanete připomínku s datem. Označte ji jako hotovou; na skóre dítěte nikdy nemá vliv." },
+            { title: "Jméno pro mazlíčka", text: "Dejte mazlíčkovi jméno a změňte ho, kdykoli chcete – třeba aby odpovídalo skutečnému zvířeti, které si později přivedete domů." },
+            { title: "Jeden telefon pro celou rodinu", text: "Volbou Hrát jako přepnete telefon do hry dítěte. Zpět do rodičovského přehledu se vždy dostanete jen se svým přihlášením." },
+            { title: "Přihlášení podle vás", text: "Google, Apple nebo e-mail a heslo. Děti se vždy přihlašují kódem." },
+            { title: "Upgrade mazlíčka zdarma", text: "Spusťte 12týdenní výzvu s mazlíčkem zdarma, kterého už dítě má, a zvolte, jestli se dosavadní Care Score zachová." },
           ],
         },
         {
@@ -453,7 +482,7 @@ const cs: Dictionary = {
             ["Pamlsky, balení po 10 kusech", "2,99 €"],
             ["Uvítací balíček: pelíšek + misky + hračka", "15,99 € (místo 17,97 €)"],
           ],
-          note: "Přání přibudou s příští aktualizací aplikace; koupit je půjde, až budou předměty k dispozici v App Store a Google Play. Uvedené ceny platí pro Slovinsko; obchod ukáže cenu pro vaši zemi.",
+          note: "Dítě už může v aplikaci prosit o věci; koupit je půjde, až budou k dispozici v App Store a Google Play. Uvedené ceny platí pro Slovinsko; obchod ukáže cenu pro vaši zemi.",
         },
         {
           type: "faq",
@@ -486,7 +515,7 @@ const cs: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "Pro jaký věk je PetPrep?", a: "PetPrep je určený hlavně dětem zhruba od 7 do 12 let a dobře funguje až do 16 let. Používají ho i dospělí, kteří si chtějí před koupí nebo adopcí ověřit, jestli jim určité plemeno opravdu sedne." },
+            { q: "Pro koho je PetPrep?", a: "Pro každé dítě, které prosí o zvíře, a pro rodiče, kteří chtějí vědět, jestli slib vydrží. Používají ho i dospělí, kteří si chtějí před koupí nebo adopcí ověřit, jestli je pro ně určité plemeno opravdu vhodné." },
             { q: "Mohu PetPrep používat i bez dětí?", a: "Ano. Založte si účet rodiče a přidejte sebe jako profil pečovatele – stačí přezdívka, rok narození nechte prázdný. Vyberte plemeno, vytvořte šestimístný kód, na stejném nebo jiném telefonu zvolte „Jsem dítě“ a kód zadejte – tím se stanete pečovatelem. Protože půjde o rodinného psa, můžete později přidat partnera nebo děti a starat se o něj společně. Cena je stejná jako pro rodiny." },
             { q: "Kolik času to denně zabere?", a: "Pár minut na krmení, vodu a úklid – plus procházka, kterou by skutečný pes potřeboval tak jako tak." },
             { q: "Sleduje aplikace polohu mého dítěte?", a: "Ne. U procházek počítá jen kroky. Pokud to dovolíte, čte je z Apple Health (iPhone) nebo Health Connect (Android) – jen ke čtení a jen kroky; kde to jde, využívá i pohybový senzor telefonu. O povolení žádá na obrazovce procházky. GPS se nepoužívá." },
@@ -496,8 +525,13 @@ const cs: Dictionary = {
             { q: "A co škola a večerka?", a: "Nastavte si klidové hodiny. Mazlíček zvolní, nic se neposílá a krmení, které celé vyjde na klidové hodiny, zajistíte vy." },
             { q: "Není to pro děti strašidelné?", a: "Ne. Důsledky jsou skutečné, ale šetrné: mazlíček jde k veterináři nebo do útulku, nikdy se neděje nic drastického a vždy je možné začít znovu." },
             { q: "Která zvířata jsou k dispozici?", a: "Dnes [psi](species:dog) a [kočky](species:cat): kříženec a domácí kočka jsou zdarma a 12týdenní výzvu si můžete vybrat s jedním z nich nebo s kterýmkoli plemenem z [encyklopedie zvířat](page:animals), kde najdete i jeho doložené potřeby. Další druhy plánujeme." },
-            { q: "V jakých jazycích?", a: "Dnes v angličtině a slovinštině. Další jazyky přibudou postupně, jak PetPrep vstoupí do dalších zemí." },
+            { q: "V jakých jazycích?", a: "Aplikace je v angličtině a slovinštině, tento web v 15 jazycích. Další jazyky aplikace přibudou, až PetPrep spustíme v nových zemích." },
             { q: "Co se stane, až si pořídíme skutečného mazlíčka?", a: "PetPrep se může stát AI asistentem pro vašeho skutečného mazlíčka. Tato část je ve vývoji." },
+            { q: "Může si dítě s mazlíčkem hrát?", a: "Ano. Ve 12týdenní výzvě si dítě může hrát s míčkem nebo se mazlit, kdykoli chce, a kočka honí udičku s peříčky. Hra zlepší náladu mazlíčka, ale Care Score nikdy nezmění." },
+            { q: "Může mít mazlíček jméno?", a: "Ano. Rodič mu může dát jméno a kdykoli ho změnit. Jméno je na obrazovce dítěte, v albu a na certifikátu." },
+            { q: "Mohou rodič a dítě sdílet jeden telefon?", a: "Ano. V rodičovské aplikaci klepněte u dítěte na Hrát jako a telefon se přepne do jeho hry. Zpět do rodičovského přehledu se dostanete se svým přihlášením. Na sdíleném telefonu se kroky počítají jen tehdy, když je aktivní profil dítěte." },
+            { q: "Co když cestujeme do jiného časového pásma?", a: "Časové pásmo můžete změnit pro celou rodinu nebo pro každého mazlíčka, aby jídla a klidové hodiny odpovídaly místnímu času. Aplikace to sama navrhne, když je telefon v jiném pásmu." },
+            { q: "Co dělá kočka místo procházky?", a: "Kočka má hru s udičkou s peříčky a její záchod je potřeba čistit a jednou týdně vyměnit stelivo. Dlouhosrstá plemena je také potřeba kartáčovat." },
           ],
         },
       ],
@@ -1178,7 +1212,22 @@ const cs: Dictionary = {
       title: "Pro děti, které chtějí mazlíčka.",
       lead: "Omalovánky k vytisknutí, Curio a #walkyourpet – pro děti a rodiče, kteří se na mazlíčka připravují společně.",
       hero: { src: "/curio/curio-waving.webp", alt: "Curio, maskot PetPrepu: měkká grafitová kostička s velkýma bílýma očima, malým malinovým čumáčkem a mátovým obojkem, mává.", width: 720, height: 948 },
-      blocks: [{ type: "kidsHub" }],
+      blocks: [
+        { type: "kidsHub" },
+        {
+          type: "cards",
+          heading: "V aplikaci PetPrep",
+          columns: 3,
+          items: [
+            { title: "Psí škola", text: "Nauč mazlíčka povely sedni, ke mně a lehni. Pochval ho ve správnou chvíli!" },
+            { title: "Hra a mazlení", text: "Hoď míček, pohlaď mazlíčka nebo zamávej kočce udičkou s peříčky." },
+            { title: "Přání", text: "Chtěl by tvůj mazlíček nový pelíšek nebo hračku? Popros rodiče v aplikaci." },
+            { title: "Album tvého mazlíčka", text: "Sleduj, jak tvůj mazlíček roste na fotkách. Štěně má dokonce první narozeniny." },
+            { title: "Skutečné procházky", text: "Tvoje procházky počítají skutečné kroky. Mazlíček je potřebuje – a tebe taky baví." },
+            { title: "Podepsaný slib", text: "Než mazlíček přijde, podepíšeš prstem slib." },
+          ],
+        },
+      ],
     },
     walkyourpet: {
       meta: {
