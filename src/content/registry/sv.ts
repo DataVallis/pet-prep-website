@@ -739,15 +739,15 @@ const sv: RegistryCopy = {
     anatolian_shepherd_dog: {
       aka: "Kangal, Anatolian Shepherd Dog, Karabash",
       text: [
-        "Anatolisk herdehund är en stor, kraftigt byggd boskapsvaktare från Turkiet; FCI beskriver den turkiska herdehunden som kangal (Kangal Shepherd Dog) – enfärgad från fawn till vargsobel med svart mask, 72–78 cm hög för hanar och 65–73 cm för tikar. Den amerikanska rasstandarden anger 110–150 pund (cirka 50–68 kg) för hanar och 80–120 pund (cirka 36–54 kg) för tikar. En hund av den här storleken är fullvuxen vid omkring 18–24 månader (PetMD); The Royal Kennel Club anger en livslängd på över 10 år och WebMD i genomsnitt 11 till 13 år.",
-        "The Royal Kennel Club rekommenderar mer än 2 timmars motion om dagen och pälsvård mer än en gång i veckan, uppger att den fäller och passar i ett stort hus med stor trädgård på landet, och placerar den i Breed Watch-kategori 1. PetMD skriver att anatoliska herdehundar troligen passar bäst i hem utan små barn, att valpar som tidigt får möta andra djur oftast kommer bra överens med dem, att tidig socialisering är avgörande, att pälsen utanför de två årliga fällningsperioderna borstas en gång i veckan och att motion kring måltiderna bör undvikas.",
+        "Anatolisk herdehund är en stor, kraftigt byggd boskapsvaktare från Turkiet; FCI beskriver den turkiska herdehunden som kangal (Kangal Shepherd Dog) – enfärgad från fawn till vargsobel med svart mask, 72–78 cm hög för hanar och 65–73 cm för tikar. Den amerikanska rasstandarden anger 110–150 pund (cirka 50–68 kg) för hanar och 80–120 pund (cirka 36–54 kg) för tikar. En hund av den här storleken är fullvuxen vid omkring 18–24 månader (PetMD); Royal Kennel Club anger en livslängd på över 10 år och WebMD i genomsnitt 11 till 13 år.",
+        "Royal Kennel Club rekommenderar mer än 2 timmars motion om dagen och pälsvård mer än en gång i veckan, uppger att den fäller och passar i ett stort hus med stor trädgård på landet, och placerar den i Breed Watch-kategori 1. PetMD skriver att anatoliska herdehundar troligen passar bäst i hem utan små barn, att valpar som tidigt får möta andra djur oftast kommer bra överens med dem, att tidig socialisering är avgörande, att pälsen utanför de två årliga fällningsperioderna borstas en gång i veckan och att motion kring måltiderna bör undvikas.",
       ],
       sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
     },
     irish_setter: {
       aka: "Irländsk setter, Irish Setter",
       text: [
-        "Irländsk röd setter (irländsk setter) är en elegant, atletisk fågelhund från Irland, framavlad för att söka vida i terrängen. FCI-standarden beskriver en enda färg – mättat kastanjeröd utan spår av svart — och en mankhöjd på 58–67 cm för hanar och 55–62 cm för tikar; den amerikanska rasstandarden anger omkring 70 pund (cirka 32 kg) som idealt för en hane och 60 pund (cirka 27 kg) för en tik. En hund av den här storleken är fullvuxen vid ungefär 15–18 månader (PetMD), och Royal Kennel Club anger en livslängd på över 10 år.",
+        "Irländsk röd setter (irländsk setter) är en elegant, atletisk fågelhund från Irland, framavlad för att söka vida i terrängen. FCI-standarden beskriver en enda färg – mättat kastanjeröd utan spår av svart – och en mankhöjd på 58–67 cm för hanar och 55–62 cm för tikar; den amerikanska rasstandarden anger omkring 70 pund (cirka 32 kg) som idealt för en hane och 60 pund (cirka 27 kg) för en tik. En hund av den här storleken är fullvuxen vid ungefär 15–18 månader (PetMD), och Royal Kennel Club anger en livslängd på över 10 år.",
         "Royal Kennel Club rekommenderar mer än 2 timmars motion om dagen och pälsvård mer än en gång i veckan, anger att rasen fäller och passar ett stort hus med stor trädgård, och placerar den i Breed Watch-kategori 1. PDSA beskriver mycket vänliga, tillgivna hundar som kommer bra överens med barn och andra husdjur och rekommenderar pälsvård 2–3 gånger i veckan; PetMD rekommenderar att öronen kontrolleras och rengörs varje vecka och skriver att irländska settrar behöver mycket mänskligt sällskap.",
       ],
       sources: ["S675", "S676", "S678", "S680", "S10"],
@@ -755,7 +755,7 @@ const sv: RegistryCopy = {
     brussels_griffon: {
       aka: "Brysselgriffon, Brussels Griffon",
       text: [
-        "Griffon bruxellois är en liten sällskapshund från Belgien med ett kort, platt ansikte. FCI-standarden beskriver en röd, naturligt hård, lätt vågig päls och en vikt på 3,5–6 kg; brittiska Royal Kennel Club, som har en strävhårig och en släthårig variant, beskriver den som en smart liten hund med terrierliknande temperament. En hund av den här storleken är fullvuxen vid ungefär 8–12 månader (PetMD), och Royal Kennel Club anger en livslängd på över 12 år (PetMD: 12–15 år).",
+        "Griffon bruxellois är en liten sällskapshund från Belgien med ett kort, platt ansikte. FCI-standarden beskriver en röd, naturligt hård, lätt vågig päls och en vikt på 3,5–6 kg; brittiska Royal Kennel Club, som har en strävhårig och en släthårig variant, beskriver den som en smart liten hund med terrierliknande temperament. En hund av den här storleken är fullvuxen vid ungefär 8–12 månader (PetMD), och Royal Kennel Club anger en livslängd på över 12 år (PetMD: 12–15 år).",
         "Royal Kennel Club rekommenderar upp till 30 minuters motion om dagen och pälsvård mer än en gång i veckan, uppger att den fäller och passar i lägenhet, och placerar rasen i Breed Watch-kategori 2. PetMD beskriver en kortnosig (brakycefal) hund som har svårt för varmt, fuktigt väder, rekommenderar att rengöra ansiktsvecken ungefär en gång i veckan och borsta tänderna dagligen, och skriver att griffon bruxellois under uppsikt kommer bra överens med barn och andra husdjur men inte tycker om att vara ensam länge.",
       ],
       sources: ["S669", "S670", "S672", "S10"],
@@ -763,7 +763,7 @@ const sv: RegistryCopy = {
     rat_terrier: {
       aka: "Rattie, amerikansk rat terrier, Rat Terrier",
       text: [
-        "Rat terrier är en liten amerikansk terrier som avlas i två storlekar – miniatyr och standard – med kort, tätt åtliggande, slät och glansig päls. Rasstandarden tillåter en mankhöjd på upp till 18 tum (46 cm), och PetMD anger en vikt på 10–25 pund (cirka 4,5–11 kg) för båda storlekarna; en hund av den storleken är fullvuxen vid ungefär 9–12 månader (PetMD). VCA anger en livslängd på 12–16 år, PetMD 12–18 år.",
+        "Rat terrier är en liten amerikansk terrier som avlas i två storlekar – miniatyr och standard – med kort, tätt åtliggande, slät och glansig päls. Rasstandarden tillåter en mankhöjd på upp till 18 tum (46 cm), och PetMD anger en vikt på 10–25 pund (cirka 4,5–11 kg) för båda storlekarna; en hund av den storleken är fullvuxen vid ungefär 9–12 månader (PetMD). VCA anger en livslängd på 12–16 år, PetMD 12–18 år.",
         "Rat Terrier Club of America säger att rat terrier är bra med barn, särskilt om de växer upp med dem, och klarar sig i en lägenhet men behöver minst 30 minuters motion om dagen. PetMD skriver att de behöver mycket fysisk och mental stimulans, inte trivs med att vara ensamma länge och fäller lite året runt; VCA rekommenderar borstning en gång i veckan och varnar för att de kanske inte fungerar med smådjur, särskilt gnagare.",
       ],
       sources: ["S650", "S648", "S10", "S647"],
@@ -771,7 +771,7 @@ const sv: RegistryCopy = {
     greater_swiss_mountain_dog: {
       aka: "Grosser Schweizer Sennenhund, Greater Swiss Mountain Dog, Swissy",
       text: [
-        "Stor schweizisk sennenhund (FCI och i Storbritannien ”Great Swiss Mountain Dog”) är en kraftig, grovbenad och välmusklad trefärgad draghund från Schweiz: svart med symmetriska bruna och vita tecken. FCI-standarden anger en mankhöjd på 65–72 cm för hanar och 60–68 cm för tikar men ingen vikt; WebMD anger 52–64 kg för hanar och 39–50 kg för tikar. En hund av den storleken är fullvuxen vid ungefär 18–24 månader (PetMD), och Royal Kennel Club anger en livslängd på över 10 år (PetMD: 8–11 år).",
+        "Stor schweizisk sennenhund (FCI och i Storbritannien ”Great Swiss Mountain Dog”) är en kraftig, grovbenad och välmusklad trefärgad draghund från Schweiz: svart med symmetriska bruna och vita tecken. FCI-standarden anger en mankhöjd på 65–72 cm för hanar och 60–68 cm för tikar men ingen vikt; WebMD anger 52–64 kg för hanar och 39–50 kg för tikar. En hund av den storleken är fullvuxen vid ungefär 18–24 månader (PetMD), och Royal Kennel Club anger en livslängd på över 10 år (PetMD: 8–11 år).",
         "Royal Kennel Club rekommenderar upp till en timmes motion om dagen och borstning en gång i veckan, och säger att rasen fäller och passar i ett stort hus med stor trädgård. PetMD kallar rasen en utmärkt familjehund som är varsam med barn (all kontakt bör ske under uppsikt), rekommenderar att rengöra öronen varje vecka och att inte motionera hunden direkt före eller efter måltid på grund av risken för magomvridning (GDV); WebMD rekommenderar att borsta tänderna dagligen och vara sparsam med godis, eftersom rasen lätt blir överviktig.",
       ],
       sources: ["S653", "S654", "S656", "S658", "S10"],
@@ -779,7 +779,7 @@ const sv: RegistryCopy = {
     shar_pei: {
       aka: "kinesisk shar pei, Chinese Shar-Pei, Sharpei",
       text: [
-        "Shar pei (i USA ”Chinese Shar-Pei”) är en aktiv, kompakt, kvadratiskt byggd medelstor hund från Kina med kort, hård, borstig päls i en enda helfärg (vilken som helst utom vitt), veck på huvudet och manken och en bred nos. Royal Kennel Clubs standard anger en mankhöjd på 46–51 cm och PDSA en vikt på 20–27 kg; en hund av den storleken är fullvuxen vid ungefär 12–15 månader (PetMD). Royal Kennel Club och PDSA anger en livslängd på över 10 år, men en VetCompass-studie av hundar i Storbritannien fann en median på 7,3 år.",
+        "Shar pei (i USA ”Chinese Shar-Pei”) är en aktiv, kompakt, kvadratiskt byggd medelstor hund från Kina med kort, hård, borstig päls i en enda helfärg (vilken som helst utom vitt), veck på huvudet och manken och en bred nos. Royal Kennel Clubs standard anger en mankhöjd på 46–51 cm och PDSA en vikt på 20–27 kg; en hund av den storleken är fullvuxen vid ungefär 12–15 månader (PetMD). Royal Kennel Club och PDSA anger en livslängd på över 10 år, men en VetCompass-studie av hundar i Storbritannien fann en median på 7,3 år.",
         "Royal Kennel Club rekommenderar upp till en timmes motion om dagen och borstning en gång i veckan och placerar rasen i kategori 2 i Breed Watch på grund av problem med ögonlock och hudveck. PDSA beskriver shar pei som lojala, hängivna familjehundar som passar bäst för erfarna ägare och äldre barn, varnar för en stark jaktinstinkt mot mindre djur och rekommenderar att hålla hudvecken rena och torra och låta det gå en stund mellan mat och motion.",
       ],
       sources: ["S665", "S660", "S10", "S664", "S667", "S666"],
@@ -857,7 +857,7 @@ const sv: RegistryCopy = {
     australian_shepherd: {
       aka: "aussie",
       text: [
-        "Australian shepherd är trots namnet en amerikansk ras – en intelligent brukshund med starka vall- och vaktinstinkter. Standarden beskriver en välbalanserad, medelstor hund, något längre än hög, godmodig och ibland reserverad vid första mötet, med medellång, rak till vågig päls i blue merle, svart, red merle eller rött, var och en med eller utan vita teckningar och tanteckningar.",
+        "Australian shepherd är trots namnet en amerikansk ras – en intelligent brukshund med starka vall- och vaktinstinkter. Standarden beskriver en välbalanserad, medelstor hund, något längre än hög, godmodig och ibland reserverad vid första mötet, med medellång, rak till vågig päls i blue merle, svart, red merle eller rött, var och en med eller utan vita teckningar och tan-teckningar.",
         "Den behöver mer än två timmar motion om dagen och mentala utmaningar som problemlösningslekar och träning, och passar i ett stort hus med stor trädgård på landet. I rätt hushåll kan den bli ett riktigt bra familjedjur, men den starka vallinstinkten kan få den att valla barn, så den rekommenderas inte för familjer med mindre barn. Den tycker inte om att lämnas ensam, och pälsen behöver borstas några gånger i veckan.",
       ],
       sources: ["S131", "S133", "S134"],
@@ -865,7 +865,7 @@ const sv: RegistryCopy = {
     havanese: {
       aka: "Bichon Havanais, Havanese",
       text: [
-        "Havanais är en liten medlem av bichonfamiljen och Kubas nationalhund. Standarden beskriver en robust liten hund, lågställd, med mycket lång, mjuk, slät eller vågig päls som aldrig trimmas och en svans som bärs högt över ryggen. Den finns i fawn, svart, havannabrunt, tobak, rödbrunt och, sällan, vitt, med eller utan fläckar och tanteckningar.",
+        "Havanais är en liten medlem av bichonfamiljen och Kubas nationalhund. Standarden beskriver en robust liten hund, lågställd, med mycket lång, mjuk, slät eller vågig päls som aldrig trimmas och en svans som bärs högt över ryggen. Den finns i fawn, svart, havannabrunt, tobak, rödbrunt och, sällan, vitt, med eller utan fläckar och tan-teckningar.",
         "Standarden kallar den tillgiven, lekfull och till och med lite av en clown, och säger att den älskar barn och leker med dem i det oändliga; brittiska källor kallar den ett utmärkt familjedjur med rätt socialisering, och lätt att träna. Den behöver cirka 30 minuter motion om dagen, kan bo i lägenhet och fäller inte – men den långa pälsen behöver vårdas varje dag för att inte tova sig.",
       ],
       sources: ["S136", "S138", "S140"],
@@ -1001,7 +1001,7 @@ const sv: RegistryCopy = {
     miniature_american_shepherd: {
       aka: "Mini American, Miniature Australian Shepherd",
       text: [
-        "Miniature american shepherd kommer från USA. FCI-standarden beskriver en liten vallhund med starka vall- och vaktinstinkter, intelligent och främst en brukshund, något längre än hög, med medellång, rak till vågig och väderbeständig päls. Färgerna är svart, blue merle, rött och red merle, med eller utan vita teckningar och tanteckningar, och ögonen kan vara bruna, blå, hasselnötsbruna eller bärnstensfärgade. PetPrep ritar den i blue merle med naturlig svans.",
+        "Miniature american shepherd kommer från USA. FCI-standarden beskriver en liten vallhund med starka vall- och vaktinstinkter, intelligent och främst en brukshund, något längre än hög, med medellång, rak till vågig och väderbeständig päls. Färgerna är svart, blue merle, rött och red merle, med eller utan vita teckningar och tan-teckningar, och ögonen kan vara bruna, blå, hasselnötsbruna eller bärnstensfärgade. PetPrep ritar den i blue merle med naturlig svans.",
         "PetMD säger att den har mycket energi och behöver minst en timme motion varje dag, helst två, tillsammans med uppgifter som håller hjärnan sysselsatt, och att den bör borstas ett par gånger i veckan; AKC säger att borstning en gång i veckan räcker större delen av året, med daglig borstning under fällningsperioden. AKC säger att den kan bli en utmärkt familjehund med lydnadsträning och tidig socialisering, och brukar vara bra med barn men kan försöka valla dem; PetMD tillägger att dess hängivenhet till familjen kan leda till separationsångest när den lämnas ensam. PetMD anger livslängden till 12–13 år.",
       ],
       sources: ["S265", "S267", "S269"],
@@ -1017,7 +1017,7 @@ const sv: RegistryCopy = {
     english_springer_spaniel: {
       aka: "springer, ESS",
       text: [
-        "Engelsk springer spaniel kommer från Storbritannien, där den avlades för att söka, stöta och apportera vilt. Kennel Clubs standard beskriver en symmetriskt byggd, kompakt, stark, glad och aktiv hund – den mest högställda av de brittiska landspanielerna – med vänligt, glatt och följsamt temperament, långa fransiga öron, mörkt hasselnötsbruna ögon och tät, rak, väderbeständig päls; färgerna är leverbrunt och vitt eller svart och vitt, även med tanteckningar, och mankhöjden är cirka 51 cm. PetPrep ritar den leverbrun och vit, med naturlig svans.",
+        "Engelsk springer spaniel kommer från Storbritannien, där den avlades för att söka, stöta och apportera vilt. Kennel Clubs standard beskriver en symmetriskt byggd, kompakt, stark, glad och aktiv hund – den mest högställda av de brittiska landspanielerna – med vänligt, glatt och följsamt temperament, långa fransiga öron, mörkt hasselnötsbruna ögon och tät, rak, väderbeständig päls; färgerna är leverbrunt och vitt eller svart och vitt, även med tan-teckningar, och mankhöjden är cirka 51 cm. PetPrep ritar den leverbrun och vit, med naturlig svans.",
         "Royal Kennel Club rekommenderar mer än 2 timmar motion om dagen och pälsvård mer än en gång i veckan, och anger livslängden till över 10 år. PDSA säger att springrar blir bra familjehundar som kommer bra överens med barn och andra husdjur, är lydiga och lärvilliga och behöver pälsvård en eller två gånger i veckan samt klippning var tredje månad. AKC tillägger att de inte bör lämnas ensamma länge och att tidig socialisering och valpkurser är avgörande.",
       ],
       sources: ["S281", "S282", "S284", "S285", "S286"],
@@ -1225,7 +1225,7 @@ const sv: RegistryCopy = {
     italian_greyhound: {
       aka: "Piccolo Levriero Italiano, Italian Greyhound, Iggy",
       text: [
-        "Italiensk vinthund kommer från Italien; FCI listar den som Piccolo Levriero Italiano bland de korthåriga vinthundarna. Kennel Clubs standard beskriver en greyhound i miniatyr, smäckrare i alla proportioner, elegant, graciös och snabb, intelligent, tillgiven och livlig även om den kan verka reserverad, med kort, fin och glansig päls över tunn hud. Den anger en mankhöjd på 32–38 cm och en vikt på 3,6–4,5 kg; svart, blått, crème, fawn, rött och vitt, eller någon av dessa uppbrutna med vitt, godkänns – aldrig merle, brindle eller tanteckningar.",
+        "Italiensk vinthund kommer från Italien; FCI listar den som Piccolo Levriero Italiano bland de korthåriga vinthundarna. Kennel Clubs standard beskriver en greyhound i miniatyr, smäckrare i alla proportioner, elegant, graciös och snabb, intelligent, tillgiven och livlig även om den kan verka reserverad, med kort, fin och glansig päls över tunn hud. Den anger en mankhöjd på 32–38 cm och en vikt på 3,6–4,5 kg; svart, blått, crème, fawn, rött och vitt, eller någon av dessa uppbrutna med vitt, godkänns – aldrig merle, brindle eller tan-teckningar.",
         "Royal Kennel Club rekommenderar upp till en timme motion om dagen, säger att rasen passar i ett litet hus i stad eller på landet, behöver pälsvård en gång i veckan och inte fäller. PDSA säger att italienska vinthundar är fulla av energi, bör motioneras i ett inhägnat område eftersom de kan vara svåra att kalla in när de har sett ett byte, kan vara skygga så att tidig socialisering är nödvändig, och – eftersom skelettet är skört medan de växer – kanske inte är den perfekta rasen för hem med små barn eller andra husdjur. PetMD tillägger att den tunna pälsen inte håller dem varma, så de fryser lätt.",
       ],
       sources: ["S485", "S486", "S487", "S488"],

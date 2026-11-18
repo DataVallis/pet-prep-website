@@ -107,7 +107,7 @@ export const sv: KitCopy = {
   cost: {
     title: "Vad kostar ett husdjur?",
     intro: "Priserna beror på land, djur och era val, så siffrorna lämnar vi åt er. Ta reda på de riktiga priserna i butiker, på djurhem och hos veterinärer nära er, skriv in dem och räkna ihop dem längst ner.",
-    head: ["Kategori", "Engångs", "Per månad", "Var siffran kommer ifrån"],
+    head: ["Kategori", "Engångskostnad", "Per månad", "Var siffran kommer ifrån"],
     rows: [
       "Köp eller adoption",
       "Utrustning (bädd, skålar, koppel, transportbur, leksaker och så vidare)",
@@ -118,7 +118,7 @@ export const sv: KitCopy = {
     ],
     other: "Övrigt",
     total: "Totalt",
-    yearNote: "Första året: engångs + (per månad × 12) =",
+    yearNote: "Första året: engångskostnad + (per månad × 12) =",
     questions: [
       "Klarar vår familj av det här i många år, inte bara det första året?",
       "Vem betalar när något oväntat händer, och hur?",
@@ -167,7 +167,7 @@ export const sv: KitCopy = {
     appHeading: "12-veckorsutmaningen PetPrep",
     appText: "I appen PetPrep tar ditt barn hand om ett verklighetstroget, AI-genererat djur i tolv veckor: mat, vatten, promenader och städning. Du följer det i din egen föräldravy. Det är övning, inte ett löfte om att ett husdjur är rätt för er.",
     cta: "Läs mer på petprep.si",
-    slogan: "Redo för ett husdjur. Där för hela dess liv.",
+    slogan: "Redo för ett husdjur. Med dig under hela djurets liv.",
     mascotLine: "Lycka till önskar Curio.",
   },
 };
@@ -180,11 +180,11 @@ export const svSales: KitSales = {
   metaTitle: "Husdjurslöftet: en utskrivbar familjeöverenskommelse innan du skaffar djur | PetPrep",
   metaDescription: "Ett utskrivbart A4-paket för familjer som funderar på ett husdjur: tio frågor att prata igenom, ett Husdjurslöfte att skriva under, ett uppgiftsschema för fyra veckor, ett kostnadsblad och en checklista för föräldrar.",
   breadcrumb: "Husdjurslöftet",
-  priceNote: "Engångsköp, PDF att ladda ned på 15 språk. Betalning och kvitto sköts av Link, Stripes betalsida.",
+  priceNote: "Engångsköp, PDF att ladda ner på 15 språk. Betalning och kvitto sköts av Link, Stripes betalsida.",
   buy: "Köp paketet",
   sample: "Få den kostnadsfria provsidan",
   sampleHeading: "Prova Löftessidan först",
-  sampleText: "Själva löftet som en gratis A4-sida: överenskommelsen mellan ett barn och de vuxna, med dagliga uppgifter, era egna regler och plats för allas underskrift. Ange din e-postadress och ladda ned den direkt.",
+  sampleText: "Själva löftet som en gratis A4-sida: överenskommelsen mellan ett barn och de vuxna, med dagliga uppgifter, era egna regler och plats för allas underskrift. Ange din e-postadress och ladda ner den direkt.",
   sampleNote: "Vi använder din e-postadress bara för nyheter från PetPrep, om du kryssar i rutan. Du kan avregistrera dig när som helst.",
   insideHeading: "Det här ingår",
   insideIntro: "Skriv ut så många exemplar du behöver. Allt fylls i för hand, så ingenting om ditt barn skrivs in i ett formulär eller skickas någonstans.",

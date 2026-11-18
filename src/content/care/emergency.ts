@@ -425,7 +425,7 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Slovenien", HR: "Kroatien", GB: "Storbritannien", US: "USA", AU: "Australien" },
     vetsTitle: "Veterinärer och akutkliniker i olika länder",
     vetsIntro: "Hemma eller på semester: välj land, filtrera på region eller ort, eller visa bara kliniker som har öppet dygnet runt. Varje klinik länkar till sidan där vi hittade den – ring innan du åker, öppettiderna kan ändras.",
-    vetsStats: ["Veterinärer","Jourscheman","Giftlinjer","Länder"],
+    vetsStats: ["Veterinärer","Jourscheman","Giftrådgivningar","Länder"],
     vets: {
       chooseCountry: "Välj ett land", choosePrompt: "Välj ett land ovan för att se veterinärer, jourer och giftlinjer där.", typeToSearch: "Skriv för att söka …", noMatch: "Inga träffar",
       country: "Land", all: "Alla länder", region: "Region", allRegions: "Alla regioner", search: "Ort eller namn",
