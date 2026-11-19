@@ -964,6 +964,17 @@
       "synonyms": [
         "Terrier gallese"
       ]
+    },
+    "norwegian_elkhound": {
+      "name": "Elkhound norvegese grigio",
+      "slug": "elkhound-norvegese-grigio",
+      "synonyms": [
+        "Elkhound grigio norvegese",
+        "Norwegian Elkhound",
+        "Norwegian Elkhound Grey",
+        "Norsk Elghund Grigio",
+        "Norsk Elghund Grå"
+      ]
     }
   },
   "suitability_labels": {
