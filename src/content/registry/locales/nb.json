@@ -1037,6 +1037,24 @@
       "synonyms": [
         "Hungarian mudi"
       ]
+    },
+    "welsh_terrier": {
+      "name": "Welsh terrier",
+      "slug": "welsh-terrier",
+      "synonyms": [
+        "Welshterrier",
+        "Welshie"
+      ]
+    },
+    "norwegian_elkhound": {
+      "name": "Norsk elghund grå",
+      "slug": "norsk-elghund-gra",
+      "synonyms": [
+        "Elghund grå",
+        "Grå elghund",
+        "Norwegian elkhound",
+        "Norwegian elkhound grey"
+      ]
     }
   },
   "suitability_labels": {
