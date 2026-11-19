@@ -1070,6 +1070,24 @@
       "synonyms": [
         "Hungarian Mudi"
       ]
+    },
+    "welsh_terrier": {
+      "name": "Walesinterrieri",
+      "slug": "walesinterrieri",
+      "synonyms": [
+        "Welsh terrier"
+      ]
+    },
+    "norwegian_elkhound": {
+      "name": "Harmaa norjanhirvikoira",
+      "slug": "harmaa-norjanhirvikoira",
+      "synonyms": [
+        "Norjanhirvikoira",
+        "Norwegian Elkhound",
+        "Norwegian Elkhound Grey",
+        "Norsk Elghund Grå",
+        "Elkhound"
+      ]
     }
   },
   "suitability_labels": {
