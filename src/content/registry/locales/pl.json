@@ -1092,6 +1092,37 @@
         "Wyżeł angielski",
         "English Pointer"
       ]
+    },
+    "mudi": {
+      "name": "Mudi",
+      "slug": "mudi",
+      "synonyms": [
+        "Mudi węgierski",
+        "Hungarian Mudi"
+      ]
+    },
+    "welsh_terrier": {
+      "name": "Welsh terrier",
+      "slug": "welsh-terrier",
+      "synonyms": [
+        "Terier walijski",
+        "Welshie"
+      ]
+    },
+    "norwegian_elkhound": {
+      "name": "Elkhund szary",
+      "slug": "elkhund-szary",
+      "synonyms": [
+        "Norweski elkhund szary",
+        "Norweski elkhund",
+        "Elkhund",
+        "Norsk Elghund Grå",
+        "Elkhound",
+        "Elkie",
+        "Norwegian Elkhound",
+        "Norwegian Elkhound Grey",
+        "Norwegian Moose Dog"
+      ]
     }
   },
   "suitability_labels": {
