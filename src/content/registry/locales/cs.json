@@ -1199,6 +1199,39 @@
         "Anglický ohař",
         "English Pointer"
       ]
+    },
+    "mudi": {
+      "name": "Mudi",
+      "slug": "mudi",
+      "synonyms": [
+        "Maďarský mudi",
+        "Hungarian Mudi"
+      ]
+    },
+    "welsh_terrier": {
+      "name": "Velšský teriér",
+      "slug": "velsky-terier",
+      "synonyms": [
+        "Welsh teriér",
+        "Welshie",
+        "Welsh",
+        "Welsh terrier"
+      ]
+    },
+    "norwegian_elkhound": {
+      "name": "Norský losí pes šedý",
+      "slug": "norsky-losi-pes-sedy",
+      "synonyms": [
+        "Norský losí pes",
+        "Losí pes",
+        "Norský elkhound",
+        "Norwegian Elkhound",
+        "Elkhound",
+        "Elkie",
+        "Norwegian Elkhound Grey",
+        "Norsk Elghund Grå",
+        "Norwegian Moose Dog"
+      ]
     }
   },
   "suitability_labels": {
