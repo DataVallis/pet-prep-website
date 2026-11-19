@@ -16,7 +16,7 @@ const um = (name: string) => `um ${rn(name)}`;
 type Fci = { number: number; group: number; origin: string };
 /** Portuguese FCI group names (CPC nomenclature), in running-text form. */
 const fciGroups: Record<number, string> = { 1: "cães de pastor e boieiros (exceto boieiros suíços)", 2: "cães do tipo pinscher e schnauzer – molossoides – cães de montanha e boieiros suíços", 3: "terriers", 4: "teckels", 5: "cães do tipo spitz e do tipo primitivo", 6: "sabujos, cães de pista de sangue e raças semelhantes", 7: "cães de parar", 8: "cães levantadores e cobradores de caça – cães de água", 9: "cães de companhia", 10: "lebréus" };
-const origins: Record<string, string> = { GB: "Grã-Bretanha", FR: "França", DE: "Alemanha", US: "Estados Unidos", CU: "Cuba", CH: "Suíça", IT: "Itália", "CN-XZ": "Tibete (China)", CN: "China", MX: "México", BE: "Bélgica", HU: "Hungria", JP: "Japão", ZA: "África do Sul", "BE-FR": "Bélgica / França", PT: "Portugal", CA: "Canadá", HR: "Croácia", AU: "Austrália", RU: "Rússia", IE: "Irlanda", "AF-C": "África Central", TR: "Turquia", MG: "Madagáscar", AF: "Afeganistão" };
+const origins: Record<string, string> = { GB: "Grã-Bretanha", FR: "França", DE: "Alemanha", US: "Estados Unidos", CU: "Cuba", CH: "Suíça", IT: "Itália", "CN-XZ": "Tibete (China)", CN: "China", MX: "México", BE: "Bélgica", HU: "Hungria", JP: "Japão", ZA: "África do Sul", "BE-FR": "Bélgica / França", PT: "Portugal", CA: "Canadá", HR: "Croácia", AU: "Austrália", RU: "Rússia", IE: "Irlanda", "AF-C": "África Central", TR: "Turquia", MG: "Madagáscar", AF: "Afeganistão", NO: "Noruega" };
 /** Age-like value after a preposition: «até aos 12 meses», «até ao 1 ano», «a partir dos 10 anos». */
 const art = (t: string, sing: string, pl: string) => (/^1[\s  ]/.test(t) ? sing : pl);
 
@@ -426,6 +426,7 @@ const pt: RegistryCopy = {
     storage_disease: "Uma doença hereditária de armazenamento do sistema nervoso pode afetar cães jovens da raça; um teste de ADN dos progenitores permite aos criadores evitá-la.",
     chondrodysplasia: "Na raça ocorre a condrodisplasia, uma perturbação do crescimento da cartilagem e dos ossos; os cachorros podem ser controlados com uma radiografia.",
     polyneuropathy: "Na raça ocorre uma doença hereditária dos nervos (polineuropatia); um teste de ADN dos progenitores permite aos criadores evitá-la.",
+    fanconi_kidney_disease: "Na raça pode ocorrer a síndrome de Fanconi, uma doença renal hereditária que faz passar açúcar para a urina.",
     fanconi_syndrome: "Na raça ocorre a síndrome de Fanconi, uma doença renal hereditária que faz passar açúcar para a urina; um teste de ADN dos progenitores permite aos criadores evitá-la.",
     pyruvate_kinase_deficiency: "Na raça pode ocorrer a deficiência de piruvato quinase, um defeito hereditário dos glóbulos vermelhos que provoca anemia.",
     back_disc_disease: "Na raça ocorre a doença do disco intervertebral, um problema dos discos que amortecem as vértebras da coluna.",

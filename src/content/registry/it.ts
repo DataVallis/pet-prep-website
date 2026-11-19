@@ -25,7 +25,7 @@ const un = (name: string) => {
 type Fci = { number: number; group: number; origin: string };
 /** Italian FCI group names (ENCI nomenclature), in running-text form. */
 const fciGroups: Record<number, string> = { 1: "cani da pastore e bovari (esclusi i bovari svizzeri)", 2: "cani di tipo pinscher e schnauzer – molossoidi – cani bovari svizzeri", 3: "terrier", 4: "bassotti", 5: "cani di tipo spitz e di tipo primitivo", 6: "segugi e cani per pista di sangue", 7: "cani da ferma", 8: "cani da riporto – cani da cerca – cani da acqua", 9: "cani da compagnia", 10: "levrieri" };
-const origins: Record<string, string> = { GB: "Gran Bretagna", FR: "Francia", DE: "Germania", US: "Stati Uniti", CU: "Cuba", CH: "Svizzera", IT: "Italia", "CN-XZ": "Tibet (Cina)", CN: "Cina", MX: "Messico", BE: "Belgio", HU: "Ungheria", JP: "Giappone", ZA: "Sudafrica", "BE-FR": "Belgio / Francia", PT: "Portogallo", CA: "Canada", HR: "Croazia", AU: "Australia", RU: "Russia", IE: "Irlanda", "AF-C": "Africa centrale", TR: "Turchia", MG: "Madagascar", AF: "Afghanistan" };
+const origins: Record<string, string> = { GB: "Gran Bretagna", FR: "Francia", DE: "Germania", US: "Stati Uniti", CU: "Cuba", CH: "Svizzera", IT: "Italia", "CN-XZ": "Tibet (Cina)", CN: "Cina", MX: "Messico", BE: "Belgio", HU: "Ungheria", JP: "Giappone", ZA: "Sudafrica", "BE-FR": "Belgio / Francia", PT: "Portogallo", CA: "Canada", HR: "Croazia", AU: "Australia", RU: "Russia", IE: "Irlanda", "AF-C": "Africa centrale", TR: "Turchia", MG: "Madagascar", AF: "Afghanistan", NO: "Norvegia" };
 
 const it: RegistryCopy = {
   mistakes: {
@@ -433,6 +433,7 @@ const it: RegistryCopy = {
     storage_disease: "Una malattia ereditaria da accumulo del sistema nervoso può colpire i cani giovani della razza; un test del DNA dei genitori permette agli allevatori di evitarla.",
     chondrodysplasia: "Nella razza si riscontra la condrodisplasia, un disturbo della crescita della cartilagine e delle ossa; i cuccioli possono essere controllati con una radiografia.",
     polyneuropathy: "Nella razza si riscontra una malattia ereditaria dei nervi (polineuropatia); un test del DNA dei genitori permette agli allevatori di evitarla.",
+    fanconi_kidney_disease: "Nella razza può presentarsi la sindrome di Fanconi, una malattia renale ereditaria che fa passare lo zucchero nelle urine.",
     fanconi_syndrome: "Nella razza si riscontra la sindrome di Fanconi, una malattia renale ereditaria che fa passare lo zucchero nelle urine; un test del DNA dei genitori permette agli allevatori di evitarla.",
     pyruvate_kinase_deficiency: "Nella razza può presentarsi il deficit di piruvato chinasi, un difetto ereditario dei globuli rossi che causa anemia.",
     back_disc_disease: "Nella razza si riscontra la malattia del disco intervertebrale, un problema dei dischi che fanno da cuscinetto tra le vertebre della schiena.",

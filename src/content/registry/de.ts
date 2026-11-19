@@ -7,7 +7,7 @@ const lc = (t: string) => t.charAt(0).toLocaleLowerCase("de") + t.slice(1);
 type Fci = { number: number; group: number; origin: string };
 /** Official German FCI group names (FCI / VDH). */
 const fciGroups: Record<number, string> = { 1: "Hüte- und Treibhunde (ausgenommen Schweizer Sennenhunde)", 2: "Pinscher und Schnauzer – Molosser – Schweizer Sennenhunde und andere Rassen", 3: "Terrier", 4: "Dachshunde", 5: "Spitze und Hunde vom Urtyp", 6: "Laufhunde, Schweißhunde und verwandte Rassen", 7: "Vorstehhunde", 8: "Apportierhunde – Stöberhunde – Wasserhunde", 9: "Gesellschafts- und Begleithunde", 10: "Windhunde" };
-const origins: Record<string, string> = { GB: "Großbritannien", FR: "Frankreich", DE: "Deutschland", US: "USA", CU: "Kuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexiko", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Südafrika", "BE-FR": "Belgien / Frankreich", PT: "Portugal", CA: "Kanada", HR: "Kroatien", AU: "Australien", RU: "Russland", IE: "Irland", "AF-C": "Zentralafrika", TR: "Türkei", MG: "Madagaskar", AF: "Afghanistan" };
+const origins: Record<string, string> = { GB: "Großbritannien", FR: "Frankreich", DE: "Deutschland", US: "USA", CU: "Kuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexiko", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Südafrika", "BE-FR": "Belgien / Frankreich", PT: "Portugal", CA: "Kanada", HR: "Kroatien", AU: "Australien", RU: "Russland", IE: "Irland", "AF-C": "Zentralafrika", TR: "Türkei", MG: "Madagaskar", AF: "Afghanistan", NO: "Norwegen" };
 
 const de: RegistryCopy = {
   mistakes: {
@@ -403,6 +403,7 @@ const de: RegistryCopy = {
     storage_disease: "Eine erbliche Speicherkrankheit des Nervensystems kann junge Hunde der Rasse betreffen; mit einem DNA-Test der Elterntiere können Züchter sie vermeiden.",
     chondrodysplasia: "In der Rasse kommt Chondrodysplasie vor, eine Störung des Knorpel- und Knochenwachstums; Welpen können per Röntgen untersucht werden.",
     polyneuropathy: "In der Rasse kommt eine erbliche Nervenerkrankung (Polyneuropathie) vor; mit einem DNA-Test der Elterntiere können Züchter sie vermeiden.",
+    fanconi_kidney_disease: "In der Rasse kann das Fanconi-Syndrom vorkommen, eine erbliche Nierenerkrankung, bei der Zucker in den Urin gelangt.",
     fanconi_syndrome: "In der Rasse kommt das Fanconi-Syndrom vor, eine erbliche Nierenerkrankung, bei der Zucker in den Urin gelangt; mit einem DNA-Test der Elterntiere können Züchter es vermeiden.",
     pyruvate_kinase_deficiency: "In der Rasse kann Pyruvatkinase-Mangel auftreten, ein erblicher Defekt der roten Blutkörperchen, der zu Blutarmut führt.",
     back_disc_disease: "In der Rasse kommt die Bandscheibenerkrankung vor, ein Problem mit den polsternden Scheiben zwischen den Wirbeln des Rückens.",

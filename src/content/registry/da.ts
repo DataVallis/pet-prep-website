@@ -57,7 +57,7 @@ const fciGroups: Record<number, string> = {
   9: "selskabshunde",
   10: "mynder",
 };
-const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrig", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien/Frankrig", PT: "Portugal", CA: "Canada", HR: "Kroatien", AU: "Australien", RU: "Rusland", IE: "Irland", "AF-C": "Centralafrika", TR: "Tyrkiet", MG: "Madagaskar", AF: "Afghanistan" };
+const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrig", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien/Frankrig", PT: "Portugal", CA: "Canada", HR: "Kroatien", AU: "Australien", RU: "Rusland", IE: "Irland", "AF-C": "Centralafrika", TR: "Tyrkiet", MG: "Madagaskar", AF: "Afghanistan", NO: "Norge" };
 const hours = (n: number) => s(n, "time", "timer");
 const times = (n: number) => (n === 1 ? "én gang" : `${n} gange`);
 
@@ -476,6 +476,7 @@ const da: RegistryCopy = {
     storage_disease: "En arvelig oplagringssygdom i nervesystemet kan ramme unge hunde af racen; med en DNA-test af forældrene kan opdrættere undgå den.",
     chondrodysplasia: "Kondrodysplasi, en forstyrrelse i væksten af brusk og knogler, forekommer i racen; hvalpe kan undersøges med røntgen.",
     polyneuropathy: "En arvelig nervesygdom (polyneuropati) forekommer i racen; med en DNA-test af forældrene kan opdrættere undgå den.",
+    fanconi_kidney_disease: "Fanconis syndrom, en arvelig nyresygdom hvor der siver sukker ud i urinen, kan forekomme i racen.",
     fanconi_syndrome: "Fanconis syndrom, en arvelig nyresygdom hvor der siver sukker ud i urinen, forekommer i racen; med en DNA-test af forældrene kan opdrættere undgå den.",
     pyruvate_kinase_deficiency: "Pyruvatkinasemangel, en arvelig defekt i de røde blodlegemer der giver blodmangel (anæmi), kan forekomme i racen.",
     back_disc_disease: "Sygdom i båndskiverne, de stødpuder der sidder mellem ryghvirvlerne, forekommer i racen.",
