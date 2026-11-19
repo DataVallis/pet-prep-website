@@ -947,6 +947,15 @@
       "synonyms": [
         "Terrier gallois"
       ]
+    },
+    "norwegian_elkhound": {
+      "name": "Chien d’élan norvégien gris",
+      "slug": "chien-d-elan-norvegien-gris",
+      "synonyms": [
+        "Elkhound norvégien",
+        "Norwegian Elkhound",
+        "Norsk Elghund Grå"
+      ]
     }
   },
   "suitability_labels": {
