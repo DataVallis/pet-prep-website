@@ -865,6 +865,15 @@ const sl: RegistryCopy = {
       sources: ["S943", "S944", "S945", "S946", "S947", "S10"],
     },
 
+    welsh_terrier: {
+      aka: "valižanski terier, valizanski terier, velški terier, welsh terier, welshie, Welsh Terrier",
+      text: [
+        "Valižanski terier je terier iz Velike Britanije; FCI ga uvršča v 3. skupino med velike in srednje velike terierje. Standard FCI opisuje urejenega, delavnega, uravnoteženega in čvrstega psa z žičnato, trdo, zelo tesno in bogato dlako — ljubečega, ubogljivega in lahko vodljivega, veselega in redko plašnega. Je črn z rjavimi oznakami ali črno-sivkast z rjavimi oznakami. Standard FCI navaja višino do 39\u00a0cm in težo 9–9,5\u00a0kg (20–21 funtov). Pes te velikosti doraste pri okoli 9–12 mesecih (PetMD). Royal Kennel Club in PDSA navajata življenjsko dobo več kot 12 let, PetMD 12–15 let.",
+        "Royal Kennel Club piše, da valižanski terier potrebuje do 1 ure gibanja na dan in česanje večkrat na teden; PDSA navaja okoli uro gibanja na dan in česanje dva- do trikrat na teden ter ga opisuje kot igrivega, prijaznega psa, ki ima rad otroke in je odličen družinski pes. PetMD opozarja na močan lovski nagon — manjše živali lahko lovi — in svetuje povodec ali ograjen prostor zunaj ter socializacijo in šolanje že od mladih nog.",
+      ],
+      sources: ["S955", "S956", "S957", "S958", "S10"],
+    },
+
     mudi: {
       aka: "mudi, madžarski mudi, madzarski mudi, Hungarian Mudi",
       text: [

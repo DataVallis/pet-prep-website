@@ -845,6 +845,15 @@ const en: RegistryCopy = {
       sources: ["S943", "S944", "S945", "S946", "S947", "S10"],
     },
 
+    welsh_terrier: {
+      aka: "Welshie, Welsh, valižanski terier",
+      text: [
+        "The Welsh Terrier is a terrier from Great Britain; the FCI lists it in Group 3 among the large and medium-sized terriers. The FCI standard describes a smart, workmanlike, well-balanced and compact dog with a wiry, hard, very close and abundant coat — affectionate, obedient and easily controlled, happy and rarely shy. It is black and tan or black grizzle and tan. The FCI standard gives a height of up to 39 cm and a weight of 9–9.5 kg (20–21 lb). A dog of this size is fully grown at about 9–12 months (PetMD). The Royal Kennel Club and PDSA give a lifespan of over 12 years; PetMD says 12–15 years.",
+        "The Royal Kennel Club says the Welsh Terrier needs up to 1 hour of exercise a day and grooming more than once a week; PDSA says around an hour of exercise daily and grooming two to three times a week, and describes a playful, friendly dog that loves children and makes an excellent family pet. PetMD notes a strong prey drive — smaller animals may be chased — and advises a lead or a fenced area outside, with socialisation and training from an early age.",
+      ],
+      sources: ["S955", "S956", "S957", "S958", "S10"],
+    },
+
     mudi: {
       aka: "Hungarian Mudi, madžarski mudi",
       text: [
