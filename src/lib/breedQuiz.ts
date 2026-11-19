@@ -61,7 +61,7 @@ const EXERCISE_LEVEL: Record<string, number> = { under_1h: 0, h1_2: 1, over_2h: 
 const SIZE_RANK: Record<string, number> = { toy: 0, small: 1, small_medium: 2, medium: 3, medium_large: 4, large: 5, giant: 6 };
 /** Size answer (small / medium / large) → the ranks it covers. */
 const SIZE_RANGE: [number, number][] = [[0, 2], [2, 4], [4, 6]];
-const OLDER_CHILDREN_TAGS = ["older_children", "fragile_older_children", "independent_older_children", "lively_older_children", "sensitive_older_children"];
+const OLDER_CHILDREN_TAGS = ["older_children", "fragile_older_children", "independent_older_children", "lively_older_children", "sensitive_older_children", "defensive_older_children"];
 
 export function answersValid(a: unknown): a is number[] {
   return Array.isArray(a) && a.length === QUESTION_COUNT && QUESTION_IDS.every((id, i) => Number.isInteger(a[i]) && a[i] >= 0 && a[i] < OPTION_COUNTS[id]);
