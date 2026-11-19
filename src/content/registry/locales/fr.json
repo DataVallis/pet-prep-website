@@ -932,6 +932,21 @@
         "Pointer anglais",
         "English Pointer"
       ]
+    },
+    "mudi": {
+      "name": "Mudi",
+      "slug": "mudi",
+      "synonyms": [
+        "Mudi hongrois",
+        "Hungarian Mudi"
+      ]
+    },
+    "welsh_terrier": {
+      "name": "Welsh Terrier",
+      "slug": "welsh-terrier",
+      "synonyms": [
+        "Terrier gallois"
+      ]
     }
   },
   "suitability_labels": {
