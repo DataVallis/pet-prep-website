@@ -865,6 +865,15 @@ const sl: RegistryCopy = {
       sources: ["S943", "S944", "S945", "S946", "S947", "S10"],
     },
 
+    mudi: {
+      aka: "mudi, madžarski mudi, madzarski mudi, Hungarian Mudi",
+      text: [
+        "Mudi je madžarski ovčarski pes; FCI ga uvršča v 1. skupino med ovčarje. Standard FCI opisuje srednje velikega psa s klinasto glavo, pokončnimi ušesi in hrbtno linijo, ki se spušča proti zadku, z gosto, svetlečo, valovito ali rahlo kodrasto dlako — zelo učljivega, živahnega, pogumnega, budnega in delavnega. Barve so črna, bela, rumenorjava, pepelnata (modra), rjava, pepelnato rjava in cifra (marmorirana). Standard FCI navaja višino 41–47\u00a0cm za pse in 38–44\u00a0cm za psice, PetMD pa težo 18–29 funtov (približno 8–13\u00a0kg). Pes te velikosti doraste pri okoli 12–15 mesecih (PetMD). Royal Kennel Club navaja življenjsko dobo več kot 10 let, PetMD 12–14 let.",
+        "Royal Kennel Club piše, da mudi potrebuje do 1 ure gibanja na dan in česanje enkrat na teden, da je zvest in ljubeč do svoje družine ter potrebuje izziv za svojo energijo in inteligenco — najbolje se znajde pri izkušenem lastniku, ki mu da spodbudo, red in nalogo. PetMD ga opisuje kot pametnega, samostojnega in glasnega psa ter piše, da morajo mladički že zgodaj spoznavati otroke, druge živali in nove ljudi.",
+      ],
+      sources: ["S949", "S950", "S952", "S10"],
+    },
+
     lhasa_apso: {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
       text: [

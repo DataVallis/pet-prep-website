@@ -845,6 +845,15 @@ const en: RegistryCopy = {
       sources: ["S943", "S944", "S945", "S946", "S947", "S10"],
     },
 
+    mudi: {
+      aka: "Hungarian Mudi, madžarski mudi",
+      text: [
+        "The Mudi is a Hungarian herding dog; the FCI lists it in Group 1 among the sheepdogs. The FCI standard describes a medium-sized dog with a wedge-shaped head, prick ears and a topline that slopes towards the rear, with a dense, shiny, wavy or slightly curled coat — extremely able to learn, lively, courageous, watchful and keen to work. It comes in black, white, fawn, ash (blue), liver, ash-brown and cifra (merle). The FCI standard gives a height of 41–47 cm for males and 38–44 cm for females; PetMD gives a weight of 18–29 lb (about 8–13 kg). A dog of this size is fully grown at about 12–15 months (PetMD). The Royal Kennel Club gives a lifespan of over 10 years; PetMD says 12–14 years.",
+        "The Royal Kennel Club says the Mudi needs up to 1 hour of exercise a day and grooming once a week, is loyal and affectionate with its family, and needs an outlet for its energy and intelligence — it is best suited to an experienced owner who can give it stimulation, structure and purpose. PetMD describes it as a smart, independent and vocal dog and says Mudi puppies need socialisation from an early age to be comfortable around children, other pets and new people.",
+      ],
+      sources: ["S949", "S950", "S952", "S10"],
+    },
+
     lhasa_apso: {
       aka: "Lhasa, Apso, Lasa Apso",
       text: [
