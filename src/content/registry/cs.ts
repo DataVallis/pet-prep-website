@@ -68,7 +68,7 @@ const fciGroups: Record<number, string> = {
   9: "společenská plemena",
   10: "chrti",
 };
-const origins: Record<string, string> = { GB: "Velká Británie", FR: "Francie", DE: "Německo", US: "USA", CU: "Kuba", CH: "Švýcarsko", IT: "Itálie", "CN-XZ": "Tibet (Čína)", CN: "Čína", MX: "Mexiko", BE: "Belgie", HU: "Maďarsko", JP: "Japonsko", ZA: "Jihoafrická republika", "BE-FR": "Belgie / Francie", PT: "Portugalsko", CA: "Kanada", HR: "Chorvatsko", AU: "Austrálie", RU: "Rusko", IE: "Irsko", "AF-C": "Střední Afrika", TR: "Turecko", MG: "Madagaskar", AF: "Afghánistán" };
+const origins: Record<string, string> = { GB: "Velká Británie", FR: "Francie", DE: "Německo", US: "USA", CU: "Kuba", CH: "Švýcarsko", IT: "Itálie", "CN-XZ": "Tibet (Čína)", CN: "Čína", MX: "Mexiko", BE: "Belgie", HU: "Maďarsko", JP: "Japonsko", ZA: "Jihoafrická republika", "BE-FR": "Belgie / Francie", PT: "Portugalsko", CA: "Kanada", HR: "Chorvatsko", AU: "Austrálie", RU: "Rusko", IE: "Irsko", "AF-C": "Střední Afrika", TR: "Turecko", MG: "Madagaskar", AF: "Afghánistán", NO: "Norsko" };
 /** "hodina" in the nominative after a number: 1 hodina, 2 hodiny, 5 hodin, 1,5 hodiny. */
 const hours = (n: number) => form(n, "hodina", "hodiny", "hodin", "hodiny");
 /** "hodina" in the genitive after "do": do 1 hodiny, do 2 hodin, do 5 hodin, do 1,5 hodiny. */
@@ -478,6 +478,7 @@ const cs: RegistryCopy = {
     storage_disease: "Mladé psy tohoto plemene může postihnout dědičné střádavé onemocnění nervové soustavy; DNA test rodičů umožňuje chovatelům se mu vyhnout.",
     chondrodysplasia: "U plemene se vyskytuje chondrodysplazie, porucha růstu chrupavek a kostí; štěňata lze vyšetřit rentgenem.",
     polyneuropathy: "U plemene se vyskytuje dědičné onemocnění nervů (polyneuropatie); DNA test rodičů umožňuje chovatelům se mu vyhnout.",
+    fanconi_kidney_disease: "U plemene se může vyskytnout Fanconiho syndrom, dědičné onemocnění ledvin, při kterém uniká cukr do moči.",
     fanconi_syndrome: "U plemene se vyskytuje Fanconiho syndrom, dědičné onemocnění ledvin, při kterém uniká cukr do moči; DNA test rodičů umožňuje chovatelům se mu vyhnout.",
     pyruvate_kinase_deficiency: "U plemene se může vyskytnout nedostatek pyruvátkinázy, dědičná vada červených krvinek, která způsobuje chudokrevnost.",
     back_disc_disease: "U plemene se vyskytuje onemocnění meziobratlových plotének, tlumicích destiček mezi obratli páteře.",

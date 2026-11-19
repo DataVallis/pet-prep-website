@@ -62,7 +62,7 @@ const fciGroups: Record<number, string> = {
   9: "psi za društvo i patuljasti psi",
   10: "hrtovi",
 };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francuska", DE: "Njemačka", US: "SAD", CU: "Kuba", CH: "Švicarska", IT: "Italija", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Meksiko", BE: "Belgija", HU: "Mađarska", JP: "Japan", ZA: "Južnoafrička Republika", "BE-FR": "Belgija / Francuska", PT: "Portugal", CA: "Kanada", HR: "Hrvatska", AU: "Australija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turska", MG: "Madagaskar", AF: "Afganistan" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francuska", DE: "Njemačka", US: "SAD", CU: "Kuba", CH: "Švicarska", IT: "Italija", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Meksiko", BE: "Belgija", HU: "Mađarska", JP: "Japan", ZA: "Južnoafrička Republika", "BE-FR": "Belgija / Francuska", PT: "Portugal", CA: "Kanada", HR: "Hrvatska", AU: "Australija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turska", MG: "Madagaskar", AF: "Afganistan", NO: "Norveška" };
 /** "sat" in the nominative after a number: 1 sat, 2 sata, 5 sati, 1,5 sata. */
 const hours = (n: number) => form(n, "sat", "sata", "sati");
 /** "sat" in the genitive after "od" / "u roku od": od 1 sata, od 2 sata, od 5 sati. */
@@ -487,6 +487,7 @@ const hr: RegistryCopy = {
     storage_disease: "Nasljedna bolest nakupljanja u živčanom sustavu može zahvatiti mlade pse ove pasmine; DNK test roditelja omogućuje uzgajivačima da je izbjegnu.",
     chondrodysplasia: "U pasmini se javlja hondrodisplazija, poremećaj rasta hrskavice i kostiju; štenad se može pregledati rendgenom.",
     polyneuropathy: "U pasmini se javlja nasljedna bolest živaca (polineuropatija); DNK test roditelja omogućuje uzgajivačima da je izbjegnu.",
+    fanconi_kidney_disease: "U pasmi se može pojaviti Fanconijev sindrom, nasljedna bolest bubrega pri kojoj šećer prelazi u mokraću.",
     fanconi_syndrome:
       "U pasmini se javlja Fanconijev sindrom, nasljedna bolest bubrega zbog koje šećer prelazi u mokraću; DNK test roditelja omogućuje uzgajivačima da ga izbjegnu.",
     pyruvate_kinase_deficiency: "U pasmini se može pojaviti nedostatak piruvat-kinaze, nasljedna mana crvenih krvnih stanica koja uzrokuje anemiju.",

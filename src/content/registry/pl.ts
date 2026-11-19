@@ -43,7 +43,7 @@ const fciGroups: Record<number, string> = {
   9: "psy do towarzystwa",
   10: "charty",
 };
-const origins: Record<string, string> = { GB: "Wielka Brytania", FR: "Francja", DE: "Niemcy", US: "USA", CU: "Kuba", CH: "Szwajcaria", IT: "Włochy", "CN-XZ": "Tybet (Chiny)", CN: "Chiny", MX: "Meksyk", BE: "Belgia", HU: "Węgry", JP: "Japonia", ZA: "Republika Południowej Afryki", "BE-FR": "Belgia / Francja", PT: "Portugalia", CA: "Kanada", HR: "Chorwacja", AU: "Australia", RU: "Rosja", IE: "Irlandia", "AF-C": "Afryka Środkowa", TR: "Turcja", MG: "Madagaskar", AF: "Afganistan" };
+const origins: Record<string, string> = { GB: "Wielka Brytania", FR: "Francja", DE: "Niemcy", US: "USA", CU: "Kuba", CH: "Szwajcaria", IT: "Włochy", "CN-XZ": "Tybet (Chiny)", CN: "Chiny", MX: "Meksyk", BE: "Belgia", HU: "Węgry", JP: "Japonia", ZA: "Republika Południowej Afryki", "BE-FR": "Belgia / Francja", PT: "Portugalia", CA: "Kanada", HR: "Chorwacja", AU: "Australia", RU: "Rosja", IE: "Irlandia", "AF-C": "Afryka Środkowa", TR: "Turcja", MG: "Madagaskar", AF: "Afganistan", NO: "Norwegia" };
 /** "godzina" in the nominative after a number: 1 godzina, 2 godziny, 5 godzin, 1,5 godziny. */
 const hours = (n: number) => form(n, "godzina", "godziny", "godzin", "godziny");
 
@@ -446,6 +446,7 @@ const pl: RegistryCopy = {
     storage_disease: "Dziedziczna choroba spichrzeniowa układu nerwowego może dotykać młode psy tej rasy; test DNA rodziców pozwala hodowcom jej uniknąć.",
     chondrodysplasia: "W rasie występuje chondrodysplazja, zaburzenie wzrostu chrząstek i kości; szczenięta można zbadać prześwietleniem.",
     polyneuropathy: "W rasie występuje dziedziczna choroba nerwów (polineuropatia); test DNA rodziców pozwala hodowcom jej uniknąć.",
+    fanconi_kidney_disease: "W rasie może wystąpić zespół Fanconiego, dziedziczna choroba nerek, przy której cukier przedostaje się do moczu.",
     fanconi_syndrome: "W rasie występuje zespół Fanconiego, dziedziczna choroba nerek, przy której cukier przedostaje się do moczu; test DNA rodziców pozwala hodowcom jej uniknąć.",
     pyruvate_kinase_deficiency: "W rasie może występować niedobór kinazy pirogronianowej, dziedziczna wada czerwonych krwinek, która powoduje niedokrwistość.",
     back_disc_disease: "W rasie występuje choroba krążków międzykręgowych, czyli problem z amortyzującymi krążkami między kręgami kręgosłupa.",

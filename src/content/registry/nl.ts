@@ -29,7 +29,7 @@ const hm = (t: unknown) => String(t).replace(/^0(\d)/, "$1").replace(":", ".");
 type Fci = { number: number; group: number; origin: string };
 /** Dutch FCI group names (Raad van Beheer), in running-text form. */
 const fciGroups: Record<number, string> = { 1: "herdershonden en veedrijvers, behalve Zwitserse sennenhonden", 2: "pinschers en schnauzers – molossers – Zwitserse sennenhonden en verwante rassen", 3: "terriërs", 4: "teckels", 5: "keeshonden en oertypen", 6: "lopende honden, zweethonden en verwante rassen", 7: "staande honden", 8: "retrievers, spaniëls en waterhonden", 9: "gezelschapshonden", 10: "windhonden" };
-const origins: Record<string, string> = { GB: "Groot-Brittannië", FR: "Frankrijk", DE: "Duitsland", US: "Verenigde Staten", CU: "Cuba", CH: "Zwitserland", IT: "Italië", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "België", HU: "Hongarije", JP: "Japan", ZA: "Zuid-Afrika", "BE-FR": "België / Frankrijk", PT: "Portugal", CA: "Canada", HR: "Kroatië", AU: "Australië", RU: "Rusland", IE: "Ierland", "AF-C": "Centraal-Afrika", TR: "Turkije", MG: "Madagaskar", AF: "Afghanistan" };
+const origins: Record<string, string> = { GB: "Groot-Brittannië", FR: "Frankrijk", DE: "Duitsland", US: "Verenigde Staten", CU: "Cuba", CH: "Zwitserland", IT: "Italië", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "België", HU: "Hongarije", JP: "Japan", ZA: "Zuid-Afrika", "BE-FR": "België / Frankrijk", PT: "Portugal", CA: "Canada", HR: "Kroatië", AU: "Australië", RU: "Rusland", IE: "Ierland", "AF-C": "Centraal-Afrika", TR: "Turkije", MG: "Madagaskar", AF: "Afghanistan", NO: "Noorwegen" };
 
 const nl: RegistryCopy = {
   mistakes: {
@@ -429,6 +429,7 @@ const nl: RegistryCopy = {
     storage_disease: "Een erfelijke stapelingsziekte van het zenuwstelsel kan jonge honden van dit ras treffen; met een DNA-test van de ouderdieren kunnen fokkers dit voorkomen.",
     chondrodysplasia: "Chondrodysplasie, een stoornis in de groei van kraakbeen en bot, komt bij het ras voor; pups kunnen met een röntgenfoto worden gecontroleerd.",
     polyneuropathy: "Een erfelijke zenuwziekte (polyneuropathie) komt bij het ras voor; met een DNA-test van de ouderdieren kunnen fokkers dit voorkomen.",
+    fanconi_kidney_disease: "Het syndroom van Fanconi, een erfelijke nierziekte waarbij suiker in de urine lekt, kan bij het ras voorkomen.",
     fanconi_syndrome: "Het syndroom van Fanconi, een erfelijke nierziekte waarbij suiker in de urine lekt, komt bij het ras voor; met een DNA-test van de ouderdieren kunnen fokkers dit voorkomen.",
     pyruvate_kinase_deficiency: "Pyruvaatkinasedeficiëntie, een erfelijk defect van de rode bloedcellen dat bloedarmoede veroorzaakt, kan bij het ras voorkomen.",
     back_disc_disease: "Hernia (intervertebrale discusziekte), een probleem met de schokdempende tussenwervelschijven in de rug, komt bij het ras voor.",

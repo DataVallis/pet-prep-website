@@ -56,7 +56,7 @@ const fciGroups: Record<number, string> = {
   9: "sällskapshundar",
   10: "vinthundar",
 };
-const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrike", DE: "Tyskland", US: "USA", CU: "Kuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexiko", BE: "Belgien", HU: "Ungern", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien / Frankrike", PT: "Portugal", CA: "Kanada", HR: "Kroatien", AU: "Australien", RU: "Ryssland", IE: "Irland", "AF-C": "Centralafrika", TR: "Turkiet", MG: "Madagaskar", AF: "Afghanistan" };
+const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrike", DE: "Tyskland", US: "USA", CU: "Kuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexiko", BE: "Belgien", HU: "Ungern", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien / Frankrike", PT: "Portugal", CA: "Kanada", HR: "Kroatien", AU: "Australien", RU: "Ryssland", IE: "Irland", "AF-C": "Centralafrika", TR: "Turkiet", MG: "Madagaskar", AF: "Afghanistan", NO: "Norge" };
 const hours = (n: number) => s(n, "timme", "timmar");
 
 const sv: RegistryCopy = {
@@ -473,6 +473,7 @@ const sv: RegistryCopy = {
     storage_disease: "En ärftlig inlagringssjukdom i nervsystemet kan drabba unga hundar av rasen; ett DNA-test av föräldrarna gör att uppfödare kan undvika den.",
     chondrodysplasia: "Kondrodysplasi, en störning i brosk- och skelettillväxten, förekommer i rasen; valpar kan kontrolleras med röntgen.",
     polyneuropathy: "En ärftlig nervsjukdom (polyneuropati) förekommer i rasen; ett DNA-test av föräldrarna gör att uppfödare kan undvika den.",
+    fanconi_kidney_disease: "Fanconis syndrom, en ärftlig njursjukdom som gör att socker läcker ut i urinen, kan förekomma i rasen.",
     fanconi_syndrome: "Fanconis syndrom, en ärftlig njursjukdom som gör att socker läcker ut i urinen, förekommer i rasen; ett DNA-test av föräldrarna gör att uppfödare kan undvika den.",
     pyruvate_kinase_deficiency: "Pyruvatkinasbrist, en ärftlig defekt i de röda blodkropparna som ger blodbrist, kan förekomma i rasen.",
     back_disc_disease: "Disksjukdom, ett problem med de stötdämpande mellankotsskivorna, förekommer i rasen.",

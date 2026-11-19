@@ -16,7 +16,7 @@ type Fci = { number: number; group: number; origin: string };
 const PROPER_START = /^(Maine Coon|Chesapeake|Jack Russell)\b/;
 const mid = (name: string) => (PROPER_START.test(name) ? name : name.charAt(0).toLocaleLowerCase("sl") + name.slice(1));
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi", 10: "hrti" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turčija", MG: "Madagaskar", AF: "Afganistan" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turčija", MG: "Madagaskar", AF: "Afganistan", NO: "Norveška" };
 
 const sl: RegistryCopy = {
   mistakes: {
@@ -422,6 +422,7 @@ const sl: RegistryCopy = {
     storage_disease: "Pri mladih psih te pasme se lahko pojavi dedna bolezen kopičenja, ki prizadene živčevje; test DNK staršev vzrediteljem omogoča, da se ji izognejo.",
     chondrodysplasia: "Pri pasmi se pojavlja hondrodisplazija, motnja rasti hrustanca in kosti; mladičke je mogoče pregledati z rentgenom.",
     polyneuropathy: "Pri pasmi se pojavlja dedna bolezen živcev (polinevropatija); test DNK staršev vzrediteljem omogoča, da se ji izognejo.",
+    fanconi_kidney_disease: "Pri pasmi se lahko pojavi Fanconijev sindrom, dedna bolezen ledvic, pri kateri sladkor uhaja v urin.",
     fanconi_syndrome: "Pri pasmi se pojavlja Fanconijev sindrom, dedna bolezen ledvic, pri kateri sladkor uhaja v urin; test DNK staršev vzrediteljem omogoča, da se mu izognejo.",
     pyruvate_kinase_deficiency: "Pri pasmi se lahko pojavi pomanjkanje piruvat kinaze, dedna okvara rdečih krvnih celic, ki povzroča slabokrvnost.",
     back_disc_disease: "Pri pasmi se pojavlja bolezen medvretenčnih ploščic, ki blažijo stik med vretenci hrbtenice.",
@@ -872,6 +873,15 @@ const sl: RegistryCopy = {
         "Royal Kennel Club piše, da valižanski terier potrebuje do 1 ure gibanja na dan in česanje večkrat na teden; PDSA navaja okoli uro gibanja na dan in česanje dva- do trikrat na teden ter ga opisuje kot igrivega, prijaznega psa, ki ima rad otroke in je odličen družinski pes. PetMD opozarja na močan lovski nagon — manjše živali lahko lovi — in svetuje povodec ali ograjen prostor zunaj ter socializacijo in šolanje že od mladih nog.",
       ],
       sources: ["S955", "S956", "S957", "S958", "S10"],
+    },
+
+    norwegian_elkhound: {
+      aka: "norveški losovec, norveski losovec, losovec, norveški elkhund, elkhound, Norwegian Elkhound, Norsk Elghund Grå",
+      text: [
+        "Norveški losovec je siv nordijski lovski špic z Norveške, vzrejen za lov na lose; FCI ga uvršča v 5. skupino med nordijske lovske pse. Standard FCI opisuje tipičnega špica — čvrstega, kratkega in kvadratne postave, z majhnimi pokončnimi ušesi, repom, tesno zavitim čez hrbet, in gosto, grobo dlako srednje dolžine — ki je neustrašen, energičen in pogumen. Siva v različnih odtenkih je edina barva, ki jo standard dovoljuje. Standard FCI navaja idealno višino 52\u00a0cm za pse in 49\u00a0cm za psice, standard AKC pa težo okoli 55 funtov (25\u00a0kg) za pse in okoli 48 funtov (22\u00a0kg) za psice. Pes te velikosti doraste pri okoli 12–15 mesecih (PetMD), PetMD in WebMD pa navajata življenjsko dobo 12–15 let.",
+        "PetMD priporoča uro gibanja na dan in piše, da pasma potrebuje miselne izzive prav toliko kot telesno gibanje; z otroki vseh starosti se razume odlično, če so stiki pod nadzorom, in je čudovit družinski pes, če je kot mladiček socializiran in zgodaj šolan. PetMD svetuje varno ograjen prostor ali povodec zunaj, opozarja, da mu močno izpada dlaka in da se zaradi gostega kožuha hitro pregreje; WebMD svetuje, da dlako vsak dan češete vsaj dve minuti in mu vsak dan ščetkate zobe.",
+      ],
+      sources: ["S960", "S961", "S963", "S964", "S10"],
     },
 
     mudi: {

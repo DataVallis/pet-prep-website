@@ -73,7 +73,7 @@ const fciGroups: Record<number, string> = {
   9: "Seura- ja kääpiökoirat",
   10: "Vinttikoirat",
 };
-const origins: Record<string, string> = { GB: "Iso-Britannia", FR: "Ranska", DE: "Saksa", US: "Yhdysvallat", CU: "Kuuba", CH: "Sveitsi", IT: "Italia", "CN-XZ": "Tiibet (Kiina)", CN: "Kiina", MX: "Meksiko", BE: "Belgia", HU: "Unkari", JP: "Japani", ZA: "Etelä-Afrikka", "BE-FR": "Belgia / Ranska", PT: "Portugali", CA: "Kanada", HR: "Kroatia", AU: "Australia", RU: "Venäjä", IE: "Irlanti", "AF-C": "Keski-Afrikka", TR: "Turkki", MG: "Madagaskar", AF: "Afganistan" };
+const origins: Record<string, string> = { GB: "Iso-Britannia", FR: "Ranska", DE: "Saksa", US: "Yhdysvallat", CU: "Kuuba", CH: "Sveitsi", IT: "Italia", "CN-XZ": "Tiibet (Kiina)", CN: "Kiina", MX: "Meksiko", BE: "Belgia", HU: "Unkari", JP: "Japani", ZA: "Etelä-Afrikka", "BE-FR": "Belgia / Ranska", PT: "Portugali", CA: "Kanada", HR: "Kroatia", AU: "Australia", RU: "Venäjä", IE: "Irlanti", "AF-C": "Keski-Afrikka", TR: "Turkki", MG: "Madagaskar", AF: "Afganistan", NO: "Norja" };
 const hours = (n: number) => s(n, "tunti", "tuntia");
 /** "kerran", "2 kertaa" (adverbial: kerran päivässä, 3 kertaa viikossa). */
 const times = (n: number) => (n === 1 ? "kerran" : `${n}${NB}kertaa`);
@@ -526,6 +526,7 @@ const fi: RegistryCopy = {
     storage_disease: "Perinnöllinen hermoston kertymäsairaus voi sairastuttaa rodun nuoria koiria; vanhempien DNA-testin avulla kasvattajat voivat välttää sen.",
     chondrodysplasia: "Rodulla esiintyy kondrodysplasiaa, ruston ja luun kasvun häiriötä; pennut voidaan tutkia röntgenkuvauksella.",
     polyneuropathy: "Rodulla esiintyy perinnöllistä hermosairautta (polyneuropatiaa); vanhempien DNA-testin avulla kasvattajat voivat välttää sen.",
+    fanconi_kidney_disease: "Rodulla voi esiintyä Fanconin oireyhtymää, perinnöllistä munuaissairautta, jossa sokeria pääsee virtsaan.",
     fanconi_syndrome:
       "Rodulla esiintyy Fanconin oireyhtymää, perinnöllistä munuaissairautta, jossa sokeria pääsee virtsaan; vanhempien DNA-testin avulla kasvattajat voivat välttää sen.",
     pyruvate_kinase_deficiency: "Rodulla voi esiintyä pyruvaattikinaasin puutosta, punasolujen perinnöllistä vikaa, joka aiheuttaa anemiaa.",

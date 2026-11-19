@@ -65,7 +65,7 @@ const fciGroups: Record<number, string> = {
   9: "selskapshunder",
   10: "mynder",
 };
-const origins: Record<string, string> = { GB: "Storbritannia", FR: "Frankrike", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Sveits", IT: "Italia", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgia", HU: "Ungarn", JP: "Japan", ZA: "Sør-Afrika", "BE-FR": "Belgia/Frankrike", PT: "Portugal", CA: "Canada", HR: "Kroatia", AU: "Australia", RU: "Russland", IE: "Irland", "AF-C": "Sentral-Afrika", TR: "Tyrkia", MG: "Madagaskar", AF: "Afghanistan" };
+const origins: Record<string, string> = { GB: "Storbritannia", FR: "Frankrike", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Sveits", IT: "Italia", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgia", HU: "Ungarn", JP: "Japan", ZA: "Sør-Afrika", "BE-FR": "Belgia/Frankrike", PT: "Portugal", CA: "Canada", HR: "Kroatia", AU: "Australia", RU: "Russland", IE: "Irland", "AF-C": "Sentral-Afrika", TR: "Tyrkia", MG: "Madagaskar", AF: "Afghanistan", NO: "Norge" };
 const hours = (n: number) => s(n, "time", "timer");
 const times = (n: number) => (n === 1 ? "én gang" : `${n} ganger`);
 /** "every N days" for the litter and care rules. */
@@ -486,6 +486,7 @@ const nb: RegistryCopy = {
     storage_disease: "En arvelig lagringssykdom i nervesystemet kan ramme unge hunder av rasen; med en DNA-test av foreldrene kan oppdrettere unngå den.",
     chondrodysplasia: "Kondrodysplasi, en forstyrrelse i veksten av brusk og bein, forekommer i rasen; valper kan undersøkes med røntgen.",
     polyneuropathy: "En arvelig nervesykdom (polynevropati) forekommer i rasen; med en DNA-test av foreldrene kan oppdrettere unngå den.",
+    fanconi_kidney_disease: "Fanconis syndrom, en arvelig nyresykdom der sukker lekker ut i urinen, kan forekomme hos rasen.",
     fanconi_syndrome:
       "Fanconis syndrom, en arvelig nyresykdom som gjør at sukker lekker ut i urinen, forekommer i rasen; med en DNA-test av foreldrene kan oppdrettere unngå den.",
     pyruvate_kinase_deficiency: "Pyruvatkinasemangel, en arvelig feil ved de røde blodcellene som gir blodmangel (anemi), kan forekomme i rasen.",

@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs", 10: "sighthounds" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa", TR: "Turkey", MG: "Madagascar", AF: "Afghanistan" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa", TR: "Turkey", MG: "Madagascar", AF: "Afghanistan", NO: "Norway" };
 
 const en: RegistryCopy = {
   mistakes: {
@@ -401,6 +401,7 @@ const en: RegistryCopy = {
     storage_disease: "An inherited storage disease of the nervous system can affect young dogs of the breed; a DNA test of the parents lets breeders avoid it.",
     chondrodysplasia: "Chondrodysplasia, a disorder of cartilage and bone growth, occurs in the breed; puppies can be checked with an X-ray.",
     polyneuropathy: "An inherited nerve disease (polyneuropathy) occurs in the breed; a DNA test of the parents lets breeders avoid it.",
+    fanconi_kidney_disease: "Fanconi syndrome, an inherited kidney disease that lets sugar leak into the urine, can occur in the breed.",
     fanconi_syndrome: "Fanconi syndrome, an inherited kidney disease that lets sugar leak into the urine, occurs in the breed; a DNA test of the parents lets breeders avoid it.",
     pyruvate_kinase_deficiency: "Pyruvate kinase deficiency, an inherited defect of the red blood cells that causes anaemia, can occur in the breed.",
     back_disc_disease: "Intervertebral disc disease, a problem with the cushioning discs between the bones of the back, occurs in the breed.",
@@ -852,6 +853,15 @@ const en: RegistryCopy = {
         "The Royal Kennel Club says the Welsh Terrier needs up to 1 hour of exercise a day and grooming more than once a week; PDSA says around an hour of exercise daily and grooming two to three times a week, and describes a playful, friendly dog that loves children and makes an excellent family pet. PetMD notes a strong prey drive — smaller animals may be chased — and advises a lead or a fenced area outside, with socialisation and training from an early age.",
       ],
       sources: ["S955", "S956", "S957", "S958", "S10"],
+    },
+
+    norwegian_elkhound: {
+      aka: "Elkhound, Elkie, Norwegian Elkhound Grey, Norsk Elghund Grå, Norwegian Moose Dog, norveški losovec",
+      text: [
+        "The Norwegian Elkhound is a grey Nordic hunting spitz from Norway, bred to hunt elk; the FCI lists it in Group 5 among the Nordic hunting dogs. The FCI standard describes a typical spitz — compact, short and squarely built, with small erect ears, a tail tightly curled over the back and a thick, coarse coat of medium length — that is fearless, energetic and brave. Grey, in various shades, is the only colour the standard allows. The FCI standard gives an ideal height of 52 cm for males and 49 cm for females, and the AKC standard a weight of about 55 pounds (25 kg) for males and about 48 pounds (22 kg) for females. A dog of this size is fully grown at about 12–15 months (PetMD), and PetMD and WebMD give a lifespan of 12–15 years.",
+        "PetMD recommends one hour of exercise a day and says the breed needs mental stimulation as much as physical exercise; it calls it great around children of all ages when interactions are supervised, and a wonderful family dog when socialised as a puppy and trained early. PetMD advises a secure, fenced area or a lead outside, notes a lot of shedding and that the thick coat makes it prone to overheating; WebMD advises brushing the coat at least two minutes every day and brushing the teeth daily.",
+      ],
+      sources: ["S960", "S961", "S963", "S964", "S10"],
     },
 
     mudi: {
