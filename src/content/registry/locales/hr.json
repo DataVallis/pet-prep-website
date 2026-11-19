@@ -1137,6 +1137,38 @@
         "Engleski ptičar",
         "English Pointer"
       ]
+    },
+    "mudi": {
+      "name": "Mudi",
+      "slug": "mudi",
+      "synonyms": [
+        "Mađarski mudi",
+        "Hungarian Mudi"
+      ]
+    },
+    "welsh_terrier": {
+      "name": "Velški terijer",
+      "slug": "velski-terijer",
+      "synonyms": [
+        "Welsh terijer",
+        "Welshie",
+        "Welsh terrier"
+      ]
+    },
+    "norwegian_elkhound": {
+      "name": "Norveški sivi losovac",
+      "slug": "norveski-sivi-losovac",
+      "synonyms": [
+        "Norveški losovac",
+        "Losovac",
+        "Norveški elkhund",
+        "Norwegian Elkhound",
+        "Elkhound",
+        "Elkie",
+        "Norwegian Elkhound Grey",
+        "Norsk Elghund Grå",
+        "Norwegian Moose Dog"
+      ]
     }
   },
   "suitability_labels": {
