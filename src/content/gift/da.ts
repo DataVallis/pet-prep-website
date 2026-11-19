@@ -14,7 +14,7 @@ export const da: GiftCopy = {
     soon: "Kommer snart",
     priceNote: "Engangsbetaling, intet abonnement.",
     validity: "Gavekortet er gyldigt i 12 måneder fra købet.",
-    refund: "Et gavekort, der ikke er indløst, kan refunderes inden for 14 dage.",
+    refund: "Et gavekort, der ikke er indløst, kan refunderes inden for 14 dage.",
     newTab: "åbner i en ny fane",
   },
   what: {
@@ -40,7 +40,7 @@ export const da: GiftCopy = {
       "Én 12-ugers-udfordring i PetPrep til ét dyr, helt som hvis du købte den i appen",
       "Alle arter og racer, der er tilgængelige i appen, når dyret vælges",
       "Alle videoer, hele plejehistorikken og Ansvarsdiplomet",
-      "Et gavekort til print med plads til din egen hilsen (udfyld “Til” og “Fra” i hånden)",
+      "Et gavekort til print med plads til din egen hilsen (udfyld »Til« og »Fra« i hånden)",
     ],
   },
   audience: {
@@ -62,7 +62,7 @@ export const da: GiftCopy = {
     heading: "Ofte stillede spørgsmål",
     items: [
       { q: "Hvor længe er gavekortet gyldigt?", a: "Gavekortet er gyldigt i 12 måneder fra købet. Når en forælder har indløst det, bliver udfordringen på familiekontoen og udløber ikke. De tolv uger begynder, når forælderen tildeler udfordringen til et dyr i appen, ikke når gavekortet indløses." },
-      { q: "Kan jeg få pengene tilbage?", a: "Et gavekort, der ikke er indløst, kan refunderes inden for 14 dage efter købet. Et indløst gavekort kan ikke refunderes. Skriv til hello@petprep.si, og oplys dit ordrenummer. Dine lovbestemte forbrugerrettigheder berøres ikke." },
+      { q: "Kan jeg få pengene tilbage?", a: "Et gavekort, der ikke er indløst, kan refunderes inden for 14 dage efter købet. Et indløst gavekort kan ikke refunderes. Skriv til hello@petprep.si, og oplys dit ordrenummer. Dine lovbestemte forbrugerrettigheder berøres ikke." },
       { q: "På hvilke enheder virker det?", a: "PetPrep-appen findes til iPhone og til Android-telefoner. Gavekortet indløser du på denne hjemmeside, i en hvilken som helst browser." },
       { q: "Skal jeg have en konto?", a: "Ikke for at købe eller printe gavekortet. For at indløse det skal familien have en forældrekonto i appen: på hjemmesiden logger du ind på samme måde som i appen og skriver derefter koden." },
       { q: "Gælder gavekortet også for en kat?", a: "Ja. I dag har appen hunde og katte, og gavekortet gælder for alle arter og racer, der er tilgængelige i appen, når dyret vælges." },
@@ -76,7 +76,7 @@ export const da: GiftCopy = {
     button: "Indløs gavekort",
   },
   kit: {
-    text: "Til hvert gavekort følger det printbare sæt “Kæledyrsløftet”.",
+    text: "Til hvert gavekort følger det printbare sæt »Kæledyrsløftet«.",
     button: "Se sættet",
   },
   thanks: {
