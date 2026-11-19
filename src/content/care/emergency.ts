@@ -452,7 +452,7 @@ export const emergencyCopy: Record<Locale, {
     open: "Officiel side",
     countries: { SI: "Slovenien", HR: "Kroatien", GB: "Storbritannien", US: "USA", AU: "Australien" },
     vetsTitle: "Dyrlæger og akutte dyreklinikker, land for land",
-    vetsIntro: "Hjemme eller på ferie: Vælg land, filtrér efter region eller by, eller vis kun klinikker med åbent døgnet rundt. Hver post linker til den side vi har oplysningerne fra – ring før du tager derhen, for åbningstiderne kan ændre sig.",
+    vetsIntro: "Hjemme eller på ferie: Vælg land, filtrér efter region eller by, eller vis kun klinikker, der har åbent døgnet rundt. Hvert opslag linker til den side vi har oplysningerne fra – ring før du tager derhen, for åbningstiderne kan ændre sig.",
     vetsStats: ["Dyrlæger","Vagtplaner","Giftlinjer","Lande"],
     vets: {
       chooseCountry: "Vælg et land", choosePrompt: "Vælg et land ovenfor for at se dets dyrlæger, vagtordninger og giftlinjer.", typeToSearch: "Skriv for at søge …", noMatch: "Ingen resultater",

@@ -26,7 +26,7 @@ export const da: ShopCopy = {
     redeemed: "Dette gavekort er allerede indløst.",
     printHint: "Udskriv gavekortet nedenfor på et A4-ark, og skriv din hilsen i hånden.",
     downloadsHeading: "Dine filer",
-    downloadsLead: "PDF, A4. Linkene her virker i 24 timer, linkene i e-mailen i 30 dage.",
+    downloadsLead: "PDF, A4. Linkene her virker i 24 timer, linkene i e-mailen i 30 dage.",
     download: "Download",
     manualHeading: "Udskriv et gavekort med din kode",
     manualLead: "Har du koden fra vores e-mail? Indsæt den her for at udskrive gavekortet igen.",
@@ -42,7 +42,7 @@ export const da: ShopCopy = {
   },
   sample: {
     emailLabel: "E-mailadresse",
-    consent: "Jeg vil gerne modtage e-mails fra PetPrep. Jeg kan altid framelde mig.",
+    consent: "Jeg vil gerne modtage e-mails fra PetPrep. Jeg kan altid afmelde mig.",
     button: "Send mig prøvesiden",
     pending: "Et øjeblik …",
     ready: "Din prøveside er klar.",

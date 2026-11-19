@@ -14,7 +14,7 @@ export const da: PartnerLocalePack = {
       message: "Besked",
       messageHint: "En kort beskrivelse af din idé, land og tidsplan.",
       types: {
-        series: "Sponsorering af serien „12 Weeks”",
+        series: "Sponsorering af serien »12 Weeks«",
         sponsored_content: "Sponsoreret indhold på petprep.si",
         insurer: "Forsikringsselskab (formidling af kontakter under forberedelse)",
         directory: "Stiftende partner i kataloget",
@@ -58,7 +58,7 @@ export const da: PartnerLocalePack = {
     what: {
       heading: "Hvad PetPrep er",
       paragraphs: [
-        "PetPrep er en app med et dyreleksikon, der hjælper en familie med at forberede sig på en hund eller kat, før den flytter ind. I en 12 uger lang udfordring passer barnet et realistisk AI-kæledyr, mens forælderen i et overblik kan se, hvordan plejen virkelig går.",
+        "PetPrep er en app med et dyreleksikon, der hjælper en familie med at forberede sig på en hund eller kat, før den flytter ind. I en 12 uger lang udfordring passer barnet et realistisk AI-kæledyr, mens forælderen i et overblik kan se, hvordan plejen virkelig går.",
         "Dyreleksikonet forklarer, hvad hvert dyr har brug for, med angivne kilder. Hvert tal kan spores til en kilde, og alt partnerindhold er mærket.",
       ],
     },
@@ -71,7 +71,7 @@ export const da: PartnerLocalePack = {
     coop: {
       heading: "Samarbejdsformer",
       items: [
-        ["Sponsorering af serien „12 Weeks”", "Sponsoren nævnes i afsnittet og i beskrivelsen. Sponsoren redigerer ikke serien."],
+        ["Sponsorering af serien »12 Weeks«", "Sponsoren nævnes i afsnittet og i beskrivelsen. Sponsoren redigerer ikke serien."],
         ["Sponsoreret indhold på petprep.si", "Et mærket indlæg ved siden af en racceside eller i vidensbasen, uden indflydelse på indhold og kilder."],
         ["Forsikringsselskaber", "Fast sponsorat eller betaling pr. formidlet kontakt. Kontakt kun med forælderens udtrykkelige samtykke. Formidling af kontakter er under forberedelse."],
         ["Stiftende partner i kataloget", "Dyrlæger, hundeskoler, hundefrisører, opdrættere: en fremhævet omtale. 190 € om året, fast pris, antallet af pladser er begrænset pr. land."],
@@ -81,9 +81,9 @@ export const da: PartnerLocalePack = {
     examples: {
       heading: "Eksempler på indhold",
       items: [
-        ["Appen", "En 12 uger lang udfordring med et realistisk AI-kæledyr og et overblik for forældre."],
+        ["Appen", "En 12 uger lang udfordring med et realistisk AI-kæledyr og et overblik for forældre."],
         ["Dyreleksikon", "{breeds} {breeds|one=race|other=racer} ({dogs} {dogs|one=hund|other=hunde}, {cats} {cats|one=kat|other=katte}) med kilder, status pr. {date}."],
-        ["Serien „12 Weeks”", "En videoserie, der følger 12 ugers kæledyrspleje; et sted til omtale af en sponsor."],
+        ["Serien »12 Weeks«", "En videoserie, der følger 12 ugers kæledyrspleje; et sted til omtale af en sponsor."],
       ],
     },
     never: {
@@ -97,7 +97,7 @@ export const da: PartnerLocalePack = {
     meta: {
       title: "Partnere og sponsorer – samarbejd med PetPrep",
       description:
-        "Sponsorering af serien „12 Weeks”, sponsoreret indhold, forsikringsselskaber, stiftende partnere i kataloget samt dyreinternater og foreninger. Alt er mærket, uden indflydelse på indhold og kilder.",
+        "Sponsorering af serien »12 Weeks«, sponsoreret indhold, forsikringsselskaber, stiftende partnere i kataloget samt dyreinternater og foreninger. Alt er mærket, uden indflydelse på indhold og kilder.",
     },
     eyebrow: "Partnere og sponsorer",
     title: "Nå familier lige før de beslutter sig for et dyr.",
@@ -117,7 +117,7 @@ export const da: PartnerLocalePack = {
         heading: "Sådan kan vi samarbejde",
         columns: 3,
         items: [
-          { title: "Sponsorering af serien „12 Weeks”", text: "Serien følger 12 ugers kæledyrspleje. Sponsoren nævnes i afsnittet og i beskrivelsen; sponsoren redigerer ikke serien." },
+          { title: "Sponsorering af serien »12 Weeks«", text: "Serien følger 12 ugers kæledyrspleje. Sponsoren nævnes i afsnittet og i beskrivelsen; sponsoren redigerer ikke serien." },
           { title: "Sponsoreret indhold på petprep.si", text: "Et indlæg ved siden af en racceside eller i vidensbasen. Det er altid mærket som sponsoreret, og sponsoren har ingen indflydelse på siden eller dens angivne kilder." },
           { title: "Forsikringsselskaber", text: "Betaling pr. formidlet kontakt eller et fast sponsorat. Vi giver kun en kontakt videre med forælderens udtrykkelige samtykke og aldrig et barns oplysninger. Formidling af kontakter er under forberedelse og endnu ikke tilgængelig." },
           { title: "Stiftende partner i kataloget", text: "For dyrlæger, hundeskoler, hundefrisører og opdrættere: en fremhævet omtale med logo, beskrivelse og link. 190 € om året; prisen er fast for stiftende partnere. Antallet af pladser er begrænset pr. land." },

@@ -5,7 +5,7 @@ const da: Dictionary = {
   meta: {
     siteTitle: "PetPrep – Klar til et kæledyr. Til stede hele dets liv.",
     siteDescription:
-      "PetPrep er en kæledyrssimulator over 12 uger der viser forældre om barnet virkelig er klar til et rigtigt kæledyr – og som derefter bliver en AI-assistent gennem hele det rigtige dyrs liv.",
+      "PetPrep er en kæledyrssimulator over 12 uger der viser forældre om barnet virkelig er klar til et rigtigt kæledyr – og som derefter bliver en AI-assistent gennem hele det rigtige dyrs liv.",
     slogan: "Klar til et kæledyr. Til stede hele dets liv.",
     keywords: [
       "er mit barn klar til en hund",
@@ -69,9 +69,9 @@ const da: Dictionary = {
     hud: "Barnets startskærm: dyrets tilstand lige nu, fire behov og plejeknapperne.",
     picker: "Forældrene vælger dyret: race, oprindelse (adopteret eller fra en opdrætter) og alder ved ankomst.",
     parent: "Forældreoversigten: et trafiklys, Care Score og dagens rutiner for hvert barn.",
-    report: "Et barns rapport for 7, 30 eller 84 dage: rutiner, gåture og glemte opgaver dag for dag.",
+    report: "Et barns rapport for 7, 30 eller 84 dage: rutiner, gåture og glemte opgaver dag for dag.",
     assistant: "Når det kommer hjem: AI-assistenten gør data fra halsbåndet til ét klart forslag.",
-    certificate: "Efter 12 uger: Ansvarsdiplomet med barnets Care Score.",
+    certificate: "Efter 12 uger: Ansvarsdiplomet med barnets Care Score.",
   },
   pricingPlans: {
     free: {
@@ -89,8 +89,8 @@ const da: Dictionary = {
     },
     challenge: {
       name: "12-ugers-udfordringen",
-      badge: "12 uger + diplom",
-      unit: "pr. kæledyr · 12 uger",
+      badge: "12 uger + diplom",
+      unit: "pr. kæledyr · 12 uger",
       text: "Til familier der vil have hele oplevelsen og et diplom til sidst.",
       features: [
         "Alt i Blandingshund",
@@ -128,15 +128,15 @@ const da: Dictionary = {
   ],
   home: {
     meta: {
-      title: "PetPrep – Er dit barn klar til et kæledyr? Find ud af det på 12 uger.",
+      title: "PetPrep – Er dit barn klar til et kæledyr? Find ud af det på 12 uger.",
       description:
-        "Før et rigtigt kæledyr flytter ind, passer dit barn et naturtro AI-kæledyr i 12 uger: måltider, oprydning og rigtige gåture. Du ser hver dag om barnet virkelig er klar.",
+        "Før et rigtigt kæledyr flytter ind, passer dit barn et naturtro AI-kæledyr i 12 uger: måltider, oprydning og rigtige gåture. Du ser hver dag om barnet virkelig er klar.",
     },
     hero: {
       eyebrow: "12-ugers-udfordringen",
       title: "Klar til et kæledyr. Til stede hele dets liv.",
       lead:
-        "Før et rigtigt kæledyr flytter ind, passer dit barn et naturtro AI-kæledyr i 12 uger – giver mad, rydder op og går rigtige ture. Du ser hver dag om barnet virkelig er klar.",
+        "Før et rigtigt kæledyr flytter ind, passer dit barn et naturtro AI-kæledyr i 12 uger – giver mad, rydder op og går rigtige ture. Du ser hver dag om barnet virkelig er klar.",
       trust: ["Blandingshund gratis for altid", "Ingen reklamer, ingen chat med fremmede", "Børn skal ikke bruge e-mail"],
     },
     phone: {
@@ -151,7 +151,7 @@ const da: Dictionary = {
     promoVideo: {
       eyebrow: "PetPrep på ét minut",
       title: "Se hvordan det virker.",
-      text: "Fra valget af kæledyr og underskriften på kontrakten til skole, gåture, pelspleje og diplomet – alt hvad dit barn gør på 12 uger, og alt hvad du ser i oversigten. Curio, vores maskot, siger bare hej; kæledyret i appen er en naturtro AI-hund.",
+      text: "Fra valget af kæledyr og underskriften på kontrakten til skole, gåture, pelspleje og diplomet – alt hvad dit barn gør på 12 uger, og alt hvad du ser i oversigten. Curio, vores maskot, siger bare hej; kæledyret i appen er en naturtro AI-hund.",
       alt: "PetPreps promovideo: skærmbilleder fra appen, et barn der passer en hund, og en forælder der følger med i Care Score.",
       note: "Appen er endnu ikke offentligt tilgængelig i App Store og Google Play – tilmeld dig tidlig adgang.",
     },
@@ -206,18 +206,18 @@ const da: Dictionary = {
     adults: {
       eyebrow: "For voksne",
       title: "Prøv racen før du tager den med hjem.",
-      text: "Har du kig på en bestemt race? PetPrep er ikke kun for børn. I 12 uger passer du et AI-kæledyr af den race med dens rigtige daglige behov – og finder ud af om den virkelig er noget for dig før du køber eller adopterer.",
+      text: "Har du kig på en bestemt race? PetPrep er ikke kun for børn. I 12 uger passer du et AI-kæledyr af den race med dens rigtige daglige behov – og finder ud af om den virkelig er noget for dig før du køber eller adopterer.",
       points: [
         {
           strong: "Racens rigtige behov",
-          text: "måltider inden for faste tidsrum, vand, oprydning og et dagligt skridtmål ud fra kildebelagte motionsbehov: En voksen border collie skal have 12.000 skridt om dagen, en blandingshund 6.000.",
+          text: "måltider inden for faste tidsrum, vand, oprydning og et dagligt skridtmål ud fra kildebelagte motionsbehov: En voksen border collie skal have 12.000 skridt om dagen, en blandingshund 6.000.",
         },
         {
           strong: "Træning og hvalpeuheld",
           text: "en kort træning hver dag og en hvalp der kun kan holde sig cirka én time for hver måned den er gammel, før den skal ud – ellers er der en pyt på gulvet.",
         },
         {
-          strong: "12 uger viser om den passer ind i dit liv",
+          strong: "12 uger viser om den passer ind i dit liv",
           text: "dine arbejdsdage, din fritid og vejret. Når det bliver familiens hund, kan du senere tilføje din partner eller dine børn.",
         },
       ],
@@ -252,7 +252,7 @@ const da: Dictionary = {
     },
     pricing: { eyebrow: "Priser", title: "Enkle, fair priser." },
     faq: { title: "Det spørger forældre om", link: "Alle spørgsmål" },
-    final: { title: "Klar til et kæledyr?", text: "Find ud af det på 12 uger. Start gratis på iPhone eller Android." },
+    final: { title: "Klar til et kæledyr?", text: "Find ud af det på 12 uger. Start gratis på iPhone eller Android." },
   },
   pages: {
     howItWorks: {
@@ -264,7 +264,7 @@ const da: Dictionary = {
       eyebrow: "Sådan virker det",
       title: "Tolv uger der viser hvad et løfte er værd.",
       lead:
-        "Dit barn passer et fotorealistisk AI-kæledyr der opfører sig så tæt på et rigtigt dyr, som en app overhovedet kan. Én rigtig uge svarer til én måned af dyrets liv, så på 12 uger vokser dyret op – og du ser om pasningen holder.",
+        "Dit barn passer et fotorealistisk AI-kæledyr der opfører sig så tæt på et rigtigt dyr, som en app overhovedet kan. Én rigtig uge svarer til én måned af dyrets liv, så på 12 uger vokser dyret op – og du ser om pasningen holder.",
       blocks: [
         {
           type: "steps",
@@ -272,10 +272,10 @@ const da: Dictionary = {
           items: [
             { title: "Forælderen opretter familien", text: "Du registrerer dig med din e-mail (login med Apple og Google kommer snart). Tilføj hvert barn med et kaldenavn og eventuelt et fødselsår. Mere vil vi ikke vide om dit barn." },
             { title: "Du vælger kæledyret", text: "Vælg racen (blandingshunden er gratis), hvor dyret kommer fra – adopteret fra et internat eller købt hos en opdrætter – og dets alder ved ankomst: hvalp, ung, voksen eller senior." },
-            { title: "Dit barn logger ind med en kode", text: "Du får en sekscifret kode der gælder i 15 minutter. Dit barn skriver den på sin telefon – ingen e-mail og ingen adgangskode. Er telefonen blevet væk? Log barnet ud af alle enheder med ét tryk." },
+            { title: "Dit barn logger ind med en kode", text: "Du får en sekscifret kode der gælder i 15 minutter. Dit barn skriver den på sin telefon – ingen e-mail og ingen adgangskode. Er telefonen blevet væk? Log barnet ud af alle enheder med ét tryk." },
             { title: "Ansvarskontrakten", text: "Dit barn underskriver et løfte med fingeren. Underskriften er dyrets fødsel: Behovene begynder først at tælle fra det øjeblik, så intet går tabt hvis barnet skriver under senere." },
             { title: "Tolv ugers pasning", text: "Mad inden for de rigtige tidsrum, frisk vand, oprydning og en daglig gåtur med rigtige skridt. Efterhånden som dyret vokser, ændrer dets behov sig." },
-            { title: "Diplomet", text: "Efter 12 uger fylder dyret et år. Dit barn får Ansvarsdiplomet med sin Care Score – eller I opdager begge to, helt uden skade, at tiden ikke er inde endnu." },
+            { title: "Diplomet", text: "Efter 12 uger fylder dyret et år. Dit barn får Ansvarsdiplomet med sin Care Score – eller I opdager begge to, helt uden skade, at tiden ikke er inde endnu." },
           ],
         },
         {
@@ -293,12 +293,12 @@ const da: Dictionary = {
           intro: "Tallene kommer fra kilder hos dyrlæger og kennelklubber; hvor kilderne kun angiver et interval, fastsætter PetPrep værdien og siger det.",
           head: ["Behov", "Hvor ofte", "Hvis det bliver glemt"],
           rows: [
-            ["Mad", "Morgen (kl. 6–10) og aften (kl. 17–21), én gang i hvert tidsrum", "Sulten efter cirka 12,5 timer"],
-            ["Vand", "3 gange om dagen, mindst 3 timer imellem", "Tørstig efter cirka 10 timer"],
+            ["Mad", "Morgen (kl. 6–10) og aften (kl. 17–21), én gang i hvert tidsrum", "Sulten efter cirka 12,5 timer"],
+            ["Vand", "3 gange om dagen, mindst 3 timer imellem", "Tørstig efter cirka 10 timer"],
             ["Gåtur", "6.000 rigtige skridt (hvalpe starter på 2.000)", "Ingen gåtur overhovedet → syg næste morgen"],
             ["Oprydning", "Når dyret har lavet et uheld – aldrig i de stille timer", "Ingen mad eller vand før der er gjort rent"],
           ],
-          note: "Hvalpe spiser 4, siden 3 og så 2 gange om dagen og kan kun holde sig cirka én time for hver måned de er gamle. En [border collie](breed:border_collie) skal have 12.000 skridt og bliver hurtigere sulten.",
+          note: "Hvalpe spiser 4, siden 3 og så 2 gange om dagen og kan kun holde sig cirka én time for hver måned de er gamle. En [border collie](breed:border_collie) skal have 12.000 skridt og bliver hurtigere sulten.",
         },
         {
           type: "cards",
@@ -309,7 +309,7 @@ const da: Dictionary = {
             { title: "Måltider i skoletiden", text: "Et fodringstidsrum der ligger helt inden for de stille timer, er forælderens opgave – det tæller aldrig imod dit barn." },
             { title: "Pause når som helst", text: "Én knap sætter spillet på pause, for eksempel til en snak i familien. Intet bliver værre under pausen." },
             { title: "Blide påmindelser", text: "Dyret giver først dit barn et lille puf, siden et mere indtrængende. Først hvis et behov står på nul i en time, får du en alarm." },
-            { title: "Rigtige konsekvenser", text: "Forsømmelse betyder 12 timer hos dyrlægen. Et helt døgns forsømmelse betyder at internatet overtager dyret – og I kan starte forfra." },
+            { title: "Rigtige konsekvenser", text: "Forsømmelse betyder 12 timer hos dyrlægen. Et helt døgns forsømmelse betyder at internatet overtager dyret – og I kan starte forfra." },
             { title: "Fælles kæledyr", text: "Søskende kan dele ét kæledyr. Hver handling tilskrives det barn der udførte den, så scoren forbliver retfærdig." },
           ],
         },
@@ -369,7 +369,7 @@ const da: Dictionary = {
             "Stille timer til skole og søvn i jeres lokale tid – også når der skiftes mellem sommer- og vintertid.",
             "Sæt spillet på pause for ethvert kæledyr med ét bekræftet tryk; dit barns skærm låses med det samme.",
             "Invitér den anden forælder med en engangskode; I ser begge alle børn og alle kæledyr.",
-            "Log et barn ud af alle enheder hvis en telefon bliver væk; koderne kan kun bruges én gang og udløber efter 15 minutter.",
+            "Log et barn ud af alle enheder hvis en telefon bliver væk; koderne kan kun bruges én gang og udløber efter 15 minutter.",
             "Eksportér hele jeres families data som én fil, eller slet et barns profil eller hele din konto med det samme direkte fra appen.",
           ],
         },
@@ -436,7 +436,7 @@ const da: Dictionary = {
       },
       eyebrow: "Priser",
       title: "Enkle, fair priser.",
-      lead: "Start gratis med en blandingshund. Køb hele 12-ugers-udfordringen når du er klar – de 12 uger begynder ved købet. Det gælder også det gratis kæledyr, dit barn allerede passer.",
+      lead: "Start gratis med en blandingshund. Køb hele 12-ugers-udfordringen når du er klar – de 12 uger begynder ved købet. Det gælder også det gratis kæledyr, dit barn allerede passer.",
       blocks: [
         { type: "pricing" },
         {
@@ -461,9 +461,9 @@ const da: Dictionary = {
           items: [
             { q: "Er gratisversionen virkelig gratis?", a: "Ja. Blandingshunden er gratis for altid, med hele simulationen, rigtige gåture og forældreoversigten." },
             { q: "Hvad indeholder udfordringen?", a: "Krævende racer som [border collie](breed:border_collie), dit kæledyrs humør som AI-videoer, Ansvarsdiplomet til sidst og adgang for begge forældre. Du kan også vælge den med blandingshunden eller huskatten." },
-            { q: "Kan vi opgradere det gratis kæledyr, mit barn allerede har?", a: "Ja, så længe den gratis blandingshund eller huskat stadig er med i spillet. Start udfordringen fra dit barns kort i forældreappen. Kæledyret forbliver det samme: navn, udseende, alder og lærte kommandoer. De 12 uger, Care Score og diplomet tæller fra købet; tidligere dage bliver i historikken, markeret som dage før udfordringen, og tæller ikke med. Prisen er den samme: 49,99 € som engangskøb, uden abonnement. Blandingshunde, der blev oprettet i en tidlig version af appen, kan ikke opgraderes; appen fortæller dig, om det gælder din." },
+            { q: "Kan vi opgradere det gratis kæledyr, mit barn allerede har?", a: "Ja, så længe den gratis blandingshund eller huskat stadig er med i spillet. Start udfordringen fra dit barns kort i forældreappen. Kæledyret forbliver det samme: navn, udseende, alder og lærte kommandoer. De 12 uger, Care Score og diplomet tæller fra købet; tidligere dage bliver i historikken, markeret som dage før udfordringen, og tæller ikke med. Prisen er den samme: 49,99 € som engangskøb, uden abonnement. Blandingshunde, der blev oprettet i en tidlig version af appen, kan ikke opgraderes; appen fortæller dig, om det gælder din." },
             { q: "Kan et kæledyr i udfordringen komme tilbage til gratisplanen?", a: "Ikke efter ønske. En blandingshund eller huskat kommer kun tilbage til gratisplanen, hvis butikken refunderer købet; udfordringen slutter så uden diplom. Køber du udfordringen igen senere, starter 12 nye uger." },
-            { q: "Presser appen mig til at købe?", a: "Nej. Har dit barn passet et gratis kæledyr på mindst 5 af dets første 7 dage, får du én notifikation og et kort i din oversigt om udfordringen – én gang pr. kæledyr og aldrig i de stille timer. Dit barn ser hverken priser eller denne påmindelse." },
+            { q: "Presser appen mig til at købe?", a: "Nej. Har dit barn passet et gratis kæledyr på mindst 5 af dets første 7 dage, får du én notifikation og et kort i din oversigt om udfordringen – én gang pr. kæledyr og aldrig i de stille timer. Dit barn ser hverken priser eller denne påmindelse." },
             { q: "Betaler søskende to gange?", a: "Nej. Børn der deler ét kæledyr, betaler én pris. Et kæledyr nummer to i familien er en særskilt udfordring." },
             { q: "Hvordan betaler jeg?", a: "I appen via App Store eller Google Play. Refusion sker via din konto i butikken." },
             { q: "Hvad er Ønsker, og kan mit barn selv købe ting?", a: "Dit barn kan ønske sig en seng, skåle, legetøj eller godbidder til sit kæledyr – op til tre åbne ønsker ad gangen. Du får en notifikation og køber enten tingen eller vælger »Ikke nu«. Dit barn ser aldrig priser og kan ikke købe noget i børneappen." },
@@ -491,7 +491,7 @@ const da: Dictionary = {
             { q: "Hvor lang tid tager det hver dag?", a: "Et par minutter til mad, vand og oprydning – plus den gåtur en rigtig hund alligevel ville have brug for." },
             { q: "Sporer appen mit barns placering?", a: "Nej. Til gåture tæller den kun skridt. Hvis du giver lov, læser den dem fra Apple Sundhed (iPhone) eller Health Connect (Android) – kun læseadgang og kun skridt; hvor det er muligt, bruger den også telefonens bevægelsessensor. Den beder om tilladelse på gåturskærmen. GPS bruges ikke." },
             { q: "Skal mit barn have en e-mailadresse?", a: "Nej. Du opretter kontoen; dit barn logger ind med en sekscifret kode som du laver. Vi gemmer kun et kaldenavn og eventuelt et fødselsår." },
-            { q: "Hvad sker der hvis mit barn glemmer det?", a: "Dyret sender først blide påmindelser. Hvis et behov bliver ved med at stå på nul, bliver dyret sygt og tilbringer 12 timer hos dyrlægen. Efter et helt døgn uden pasning overtager det virtuelle internat dyret – og I kan starte forfra." },
+            { q: "Hvad sker der hvis mit barn glemmer det?", a: "Dyret sender først blide påmindelser. Hvis et behov bliver ved med at stå på nul, bliver dyret sygt og tilbringer 12 timer hos dyrlægen. Efter et helt døgn uden pasning overtager det virtuelle internat dyret – og I kan starte forfra." },
             { q: "Kan søskende dele et kæledyr?", a: "Ja. Hvert barn underskriver sin egen kontrakt, hver handling tilskrives den der udførte den, og hvert barn får sin egen retfærdige Care Score." },
             { q: "Hvad med skole og sengetid?", a: "Indstil stille timer. Dyret sætter tempoet ned, der sendes intet, og måltider der falder helt inden for de stille timer, klarer du." },
             { q: "Er det uhyggeligt for børn?", a: "Nej. Konsekvenserne er rigtige, men blide: Dyret kommer til dyrlægen eller på internat, aldrig noget voldsomt, og der er altid en ny start." },
@@ -520,7 +520,7 @@ const da: Dictionary = {
           columns: 3,
           items: [
             { title: "Problem", text: "Børn lover at passe et kæledyr; forældre har ingen neutral måde at afprøve det på før de binder sig til udgifter og mange års pasning." },
-            { title: "Løsning", text: "En realistisk simulation over 12 uger med en live forældreoversigt og en objektiv Care Score – med et Ansvarsdiplom til sidst." },
+            { title: "Løsning", text: "En realistisk simulation over 12 uger med en live forældreoversigt og en objektiv Care Score – med et Ansvarsdiplom til sidst." },
             { title: "Udvidelse", text: "Når det rigtige kæledyr er kommet hjem, en AI-assistent til det: data fra halsbåndet, AI som første kontakt med dyrlæger, vækst og ernæring, DNA-test og partnertjenester." },
           ],
         },
@@ -598,11 +598,11 @@ const da: Dictionary = {
                 "Plejeaktivitet: handlinger i simulationen (fodring, vand, oprydning, gåture), daglige skridttal (eller antal kørestolsskub i tilpasset tilstand – se afsnit 3 og 4), scorer og rapporter.",
                 "Ansvarskontrakten: barnets underskrift med fingeren, gemt som en vektorstreg sammen med tidspunktet for underskriften.",
                 "Koder: login- og invitationskoder gemmes kun som hashværdier og udløber.",
-                "Fejlrapporter fra appen: hvis appen fryser eller går ned, kan den sende en kort teknisk rapport til vores server i EU (fejltype og fejltekst, sted i koden, app- og styresystemversion, skærmens navn, rolle som forælder eller barn). Den indeholder hverken navn, e-mailadresse, bruger-id eller IP-adresse, deles ikke med tredjeparter og slettes efter 30 dage.",
+                "Fejlrapporter fra appen: hvis appen fryser eller går ned, kan den sende en kort teknisk rapport til vores server i EU (fejltype og fejltekst, sted i koden, app- og styresystemversion, skærmens navn, rolle som forælder eller barn). Den indeholder hverken navn, e-mailadresse, bruger-id eller IP-adresse, deles ikke med tredjeparter og slettes efter 30 dage.",
                 "Listen til tidlig adgang (dette websted): din e-mailadresse, sidens sprog, siden og formularen, hvor du tilmeldte dig, racen hvis du valgte en, UTM-mærkerne i det link, du kom via (hvis det havde nogen), webstedet du kom fra (kun værtsnavnet) samt tidspunktet for og ordlyden af dit samtykke. Vi gemmer ikke din IP-adresse. Vi opbevarer oplysningerne på vores server i EU, indtil du beder om at få dem slettet.",
                 "Partnerformular (dette websted): virksomhedens navn, kontaktpersonens navn, e-mailadresse og besked. Vi bruger dem kun til at besvare din forespørgsel, opbevarer dem i 12 måneder og sletter dem derefter. Retsgrundlaget er dit samtykke, som du giver ved at sætte kryds i feltet, før du sender.",
-                "Siderne „Hvor meget arbejde er en hund?” og racequizzen „Hvilken race passer til dig?” (dette websted): hvis du skriver din e-mailadresse og sætter kryds i samtykkefeltet, gemmer vi din e-mailadresse, tidspunktet for og ordlyden af samtykket, hvor du efterlod den (beregneren eller quizresultatet), siden, den race du valgte, om du så på en hund eller en hvalp, quizresultatet (op til tre racer) og dine svar på spørgsmålene, sidens sprog, UTM-mærkerne i det link, du kom via (hvis det havde nogen), webstedet du kom fra (kun værtsnavnet) samt hvor mange gange og hvornår du sidst skrev adressen. Vi gemmer hverken din IP-adresse eller dit navn. Vi opbevarer oplysningerne på vores server i EU, indtil du beder om at få dem slettet. Resuméet til print oprettes i din browser og sendes ingen steder hen.",
-                "Indløsning af gavekort (denne hjemmeside): forælderen logger ind med Google, Apple eller med e-mailadresse og adgangskode. Ved e-mailadresse og adgangskode tjekker vores server dem mod den eksisterende forældrekonto og gemmer aldrig adgangskoden i klartekst; fra Google eller Apple modtager vi kun kontoens identifikator og gemmer ingen andre oplysninger fra dem. Et kortvarigt login-token opbevares i browserens hukommelse i højst 15 minutter. Under omstillingen til Google eller Apple og tilbagevenden findes to poster (petprep.signin og petprep.webSession.handoff) kun i sessionslageret i denne browserfane. De slettes, så snart returneringssiden læser dem, ellers når fanen lukkes; overdragelsen accepteres kun inden for 60 sekunder. Efter log ud eller når fanen lukkes, er der intet gemt i browseren. På vores server er der kun kortvarige tekniske poster tilbage: en post om login-tokenet (konto-id og tidspunkter, intet navn eller e-mailadresse), som slettes automatisk cirka to døgn efter udløb, og tællere til begrænsning (mislykkede forsøg pr. konto i hashet form i 15 minutter; forespørgsler pr. netværksadresse i højst en time).",
+                "Siderne »Hvor meget arbejde er en hund?« og racequizzen »Hvilken race passer til dig?« (dette websted): hvis du skriver din e-mailadresse og sætter kryds i samtykkefeltet, gemmer vi din e-mailadresse, tidspunktet for og ordlyden af samtykket, hvor du efterlod den (beregneren eller quizresultatet), siden, den race du valgte, om du så på en hund eller en hvalp, quizresultatet (op til tre racer) og dine svar på spørgsmålene, sidens sprog, UTM-mærkerne i det link, du kom via (hvis det havde nogen), webstedet du kom fra (kun værtsnavnet) samt hvor mange gange og hvornår du sidst skrev adressen. Vi gemmer hverken din IP-adresse eller dit navn. Vi opbevarer oplysningerne på vores server i EU, indtil du beder om at få dem slettet. Resuméet til print oprettes i din browser og sendes ingen steder hen.",
+                "Indløsning af gavekort (denne hjemmeside): forælderen logger ind med Google, Apple eller med e-mailadresse og adgangskode. Ved e-mailadresse og adgangskode tjekker vores server dem mod den eksisterende forældrekonto og gemmer aldrig adgangskoden i klartekst; fra Google eller Apple modtager vi kun kontoens identifikator og gemmer ingen andre oplysninger fra dem. Et kortvarigt login-token opbevares i browserens hukommelse i højst 15 minutter. Under omstillingen til Google eller Apple og tilbagevenden findes to poster (petprep.signin og petprep.webSession.handoff) kun i sessionslageret i denne browserfane. De slettes, så snart returneringssiden læser dem, ellers når fanen lukkes; overdragelsen accepteres kun inden for 60 sekunder. Efter log ud eller når fanen lukkes, er der intet gemt i browseren. På vores server er der kun kortvarige tekniske poster tilbage: en post om login-tokenet (konto-id og tidspunkter, intet navn eller e-mailadresse), som slettes automatisk cirka to døgn efter udløb, og tællere til begrænsning (mislykkede forsøg pr. konto i hashet form i 15 minutter; forespørgsler pr. netværksadresse i højst en time).",
               ],
             },
             {
@@ -612,7 +612,7 @@ const da: Dictionary = {
                 "Sådan får vi adgang: appen på barnets telefon tæller skridt. Hvis du giver tilladelse i systemets dialogboks, læser den skridtene fra Apple Sundhed (iPhone) eller Health Connect (Android) – kun læseadgang og kun skridt. Hvor det er muligt, bruger den også telefonens bevægelsessensor (Android: tilladelsen »Fysisk aktivitet«; iPhone: »Bevægelse og fitness«); uden tilladelse til Apple Sundhed eller Health Connect er det kun bevægelsessensoren der tæller.",
                 "Hvad vi indsamler: appen sender kun dagens samlede antal skridt til vores server sammen med kilden (Apple Sundhed, Health Connect eller bevægelsessensoren) og tidspunktet for afsendelsen. Vi gemmer én dagstotal pr. passerprofil – aldrig enkelte bevægelser, ruter, placering, puls, søvn, vægt eller andre sundhedsdata. Vi skriver aldrig noget til Apple Sundhed eller Health Connect.",
                 "Sådan bruger og deler vi dem: skridttallene bruges kun til at drive gåturen i simulationen og til at vise den for forælderen (forældreoversigt og rapporter). Vi bruger dem ikke til annoncering, profilering, sundhedsvurderinger eller træning af AI-modeller, vi sælger dem ikke, og vi deler dem ikke med tredjeparter; kun vores hostingudbyder (Hetzner, servere i EU) opbevarer dem på vores vegne. Vores brug af data modtaget fra Health Connect overholder Health Connects politik for tilladelser, herunder kravene om begrænset brug (Limited Use).",
-                "Retsgrundlag og opbevaring: læsning af skridt er frivillig og sker kun med den tilladelse du giver på enheden; vi behandler dagstotalen for at levere den tjeneste du har valgt (opfyldelse af en kontrakt). Skridttal indgår i din families dataeksport og slettes sammen med passerprofilen eller din konto; de forsvinder fra vores krypterede sikkerhedskopier senest efter 35 dage.",
+                "Retsgrundlag og opbevaring: læsning af skridt er frivillig og sker kun med den tilladelse du giver på enheden; vi behandler dagstotalen for at levere den tjeneste du har valgt (opfyldelse af en kontrakt). Skridttal indgår i din families dataeksport og slettes sammen med passerprofilen eller din konto; de forsvinder fra vores krypterede sikkerhedskopier senest efter 35 dage.",
                 "Du kan til enhver tid trække tilladelsen tilbage i enhedens indstillinger: iPhone → Indstillinger → Sundhed → Dataadgang og enheder → PetPrep; Android → Health Connect → Apptilladelser → PetPrep. Tilladelsen til bevægelsessensoren kan trækkes tilbage i telefonens indstillinger for PetPrep-appen. Gåturen tæller derefter ingen nye skridt.",
               ],
             },
@@ -624,7 +624,7 @@ const da: Dictionary = {
                 "Mens den er slået til, læser appen på barnets telefon kun kørestolsskub i stedet for skridt – fra Apple Sundhed (registreret af et Apple Watch) med en separat tilladelse med kun læseadgang. På Android læser appen ikke skub; i stedet registrerer en forælder gåminutterne. Den bruger ikke bevægelsessensoren i det tilfælde. Kun dagens antal skub sendes til vores server; vi noterer for den pågældende dag at den tæller skub.",
                 "En forælder kan registrere gåminutter for et barn i tilpasset tilstand (kun for i dag). Vi gemmer datoen, antallet af minutter og hvilken forælder der registrerede gåturen.",
                 "Da oplysningen om at tilpasset tilstand er slået til, kan pege på et barns helbredstilstand, behandler vi den kun på grundlag af dit udtrykkelige samtykke (GDPR art. 9, stk. 2, litra a), som du giver som forælder eller værge på barnets vegne (GDPR art. 8) ved at slå kontakten til. Du kan til enhver tid slå tilstanden fra; appen tæller så skridt igen.",
-                "Disse data (kontakten, dage talt i skub og registrerede gåture) indgår i din families dataeksport og slettes sammen med barnets profil eller din konto; de forsvinder fra vores krypterede sikkerhedskopier senest efter 35 dage, ligesom alle andre data.",
+                "Disse data (kontakten, dage talt i skub og registrerede gåture) indgår i din families dataeksport og slettes sammen med barnets profil eller din konto; de forsvinder fra vores krypterede sikkerhedskopier senest efter 35 dage, ligesom alle andre data.",
               ],
             },
             {
@@ -649,7 +649,7 @@ const da: Dictionary = {
                 "For at opfylde retlige forpligtelser, f.eks. bogføring af køb (retlig forpligtelse).",
                 "For at sende dig e-mails om lanceringen af PetPrep hvis du har tilmeldt dig listen til tidlig adgang (samtykke – du kan afmelde dig i hver e-mail).",
                 "For at besvare en forespørgsel sendt via partnerformularen (samtykke – vi opbevarer oplysningerne i 12 måneder).",
-                "For at sende dig PetPrep-nyheder og tips på e-mail, hvis du har skrevet din e-mailadresse og sat kryds i samtykkefeltet på siderne „Hvor meget arbejde er en hund?” eller i racequizzen (samtykke – du kan afmelde dig i hver besked og til enhver tid bede om at få oplysningerne slettet).",
+                "For at sende dig PetPrep-nyheder og tips på e-mail, hvis du har skrevet din e-mailadresse og sat kryds i samtykkefeltet på siderne »Hvor meget arbejde er en hund?« eller i racequizzen (samtykke – du kan afmelde dig i hver besked og til enhver tid bede om at få oplysningerne slettet).",
                 "For at forstå hvordan besøgende bruger dette websted, med Google Analytics – kun hvis du tillader analysecookies (samtykke – du kan til enhver tid ændre det under Cookieindstillinger).",
               ],
             },
@@ -683,7 +683,7 @@ const da: Dictionary = {
             {
               heading: "10. Hvor længe vi opbevarer data",
               paragraphs: [
-                "Vi opbevarer dine data så længe din konto findes. Når du sletter et barns profil eller din konto i appen, slettes dataene straks og kan ikke gendannes; de forsvinder automatisk fra vores krypterede sikkerhedskopier senest efter 35 dage. Oplysninger som vi efter loven skal opbevare (f.eks. om køb), opbevares i den periode loven kræver. Fejlrapporter fra appen slettes automatisk efter 30 dage.",
+                "Vi opbevarer dine data så længe din konto findes. Når du sletter et barns profil eller din konto i appen, slettes dataene straks og kan ikke gendannes; de forsvinder automatisk fra vores krypterede sikkerhedskopier senest efter 35 dage. Oplysninger som vi efter loven skal opbevare (f.eks. om køb), opbevares i den periode loven kræver. Fejlrapporter fra appen slettes automatisk efter 30 dage.",
               ],
             },
             {
@@ -752,10 +752,10 @@ const da: Dictionary = {
             {
               heading: "3. 12-ugers-udfordringen, Care Score og diplomet",
               items: [
-                "Udfordringen varer 12 uger (84 programdage) og starter med købet; hver passer har sin egen afslutning. Tid hvor spillet venter på betaling, tæller ikke med i de 12 uger. Opgraderer du et gratis kæledyr til udfordringen, starter de 12 uger også med købet; kæledyrets alder nulstilles ikke, og dagene før købet forbliver synlige i historikken, markeret som dage før udfordringen, men tæller hverken med i de 12 uger, i Care Score eller til diplomet.",
+                "Udfordringen varer 12 uger (84 programdage) og starter med købet; hver passer har sin egen afslutning. Tid hvor spillet venter på betaling, tæller ikke med i de 12 uger. Opgraderer du et gratis kæledyr til udfordringen, starter de 12 uger også med købet; kæledyrets alder nulstilles ikke, og dagene før købet forbliver synlige i historikken, markeret som dage før udfordringen, men tæller hverken med i de 12 uger, i Care Score eller til diplomet.",
                 "Care Score (0–100) viser hvor stor en del af de forventede rutiner (fodring, vand, oprydning, gåturen, et træningspas) passeren selv har udført; hver sygdom hos kæledyret trækker den ned. Tid hvor spillet er stoppet, tid hvor kæledyret er hos dyrlægen, og stille timer tæller aldrig imod passeren.",
-                "Efter 12 uger registreres en endelig score som ikke ændres senere; pasning efter udfordringen påvirker den ikke. Med en score på 70 eller mere kan du oprette et Ansvarsdiplom (PDF) i appen; under 70 får du en rapport om udfordringen.",
-                "Hvis mad, vand eller renlighed står på 0 % i 24 timer, bliver kæledyret »bragt på internat« (game over). Spillet med det kæledyr slutter, der er intet diplom, og du får en rapport om udfordringen.",
+                "Efter 12 uger registreres en endelig score som ikke ændres senere; pasning efter udfordringen påvirker den ikke. Med en score på 70 eller mere kan du oprette et Ansvarsdiplom (PDF) i appen; under 70 får du en rapport om udfordringen.",
+                "Hvis mad, vand eller renlighed står på 0 % i 24 timer, bliver kæledyret »bragt på internat« (game over). Spillet med det kæledyr slutter, der er intet diplom, og du får en rapport om udfordringen.",
                 "Care Score og diplomet viser kun hvordan passeren har passet et simuleret kæledyr i appen. De er ingen garanti for at et barn eller nogen anden er klar til et rigtigt kæledyr, ikke en faglig vurdering og ingen erstatning for din egen dømmekraft eller for råd fra en dyrlæge, en opdrætter eller et internat. Beslutningen om et rigtigt kæledyr er altid din.",
                 "Spillereglerne (måltider, gåture og pasning efter race og alder) er forenklede og bygger på offentlige kilder. De er ikke veterinær rådgivning; spørg en dyrlæge om sundhed og pasning af et rigtigt dyr.",
               ],
@@ -763,7 +763,7 @@ const da: Dictionary = {
             {
               heading: "4. Gratis og betalte funktioner, køb og refusion",
               items: [
-                "Blandingshunden og huskatten er gratis for altid og er måden at prøve PetPrep på; der er ingen gratis prøveperiode for udfordringen. Et gratis kæledyr har intet 12-ugers-program og intet diplom, forælderen ser historikken for de seneste 7 dage, og kæledyret har et grundlæggende sæt billeder og videoer.",
+                "Blandingshunden og huskatten er gratis for altid og er måden at prøve PetPrep på; der er ingen gratis prøveperiode for udfordringen. Et gratis kæledyr har intet 12-ugers-program og intet diplom, forælderen ser historikken for de seneste 7 dage, og kæledyret har et grundlæggende sæt billeder og videoer.",
                 "12-ugers-udfordringen er et engangskøb, ikke et abonnement (49,99 € i Slovenien; butikken viser prisen for dit land). I den nuværende version af appen kan du vælge den med alle racer, også blandingshunden og huskatten. Ét køb er én udfordring for ét kæledyr; hver ny udfordring med et nyt kæledyr er et nyt køb. Søskende der passer det samme kæledyr, betaler én gang.",
                 "En forælder kan opgradere en gratis blandingshund eller huskat, som nogen allerede passer, til udfordringen til samme pris og med det samme kæledyr. Det er ikke muligt efter game over eller for blandingshunde, der blev oprettet i en tidlig version af appen; appen viser, når det gælder. Et kæledyr i udfordringen (også et opgraderet kæledyr og en blandingshund eller huskat valgt til udfordringen) kan ikke skiftes tilbage til gratisplanen; kun en refusion bringer en blandingshund eller huskat tilbage dertil (se nedenfor).",
                 "En forælder køber i sin egen app via App Store eller Google Play; der er ingen køb i barnets app. Butikken behandler betalingen efter sine egne vilkår.",
@@ -796,7 +796,7 @@ const da: Dictionary = {
             {
               heading: "7. Notifikationer",
               paragraphs: [
-                "Hvis du tillader det på enheden, sender appen push-notifikationer: påmindelser til passeren, advarsler til forældre når et kæledyr mangler mad, vand eller renlighed, og besked om sygdom, game over og udfordringens afslutning. En notifikations titel kan være kæledyrets navn, hvis du har givet det et; notifikationer indeholder aldrig barnets navn og sendes ikke i de stille timer. Du kan til enhver tid trække tilladelsen tilbage i enhedens indstillinger; uden notifikationer kan en passer gå glip af rutiner, hvilket påvirker spillet og scoren. Forældre får desuden højst én gang pr. gratis kæledyr en påmindelse om udfordringen, når nogen har passet det på mindst 5 af dets første 7 dage.",
+                "Hvis du tillader det på enheden, sender appen push-notifikationer: påmindelser til passeren, advarsler til forældre når et kæledyr mangler mad, vand eller renlighed, og besked om sygdom, game over og udfordringens afslutning. En notifikations titel kan være kæledyrets navn, hvis du har givet det et; notifikationer indeholder aldrig barnets navn og sendes ikke i de stille timer. Du kan til enhver tid trække tilladelsen tilbage i enhedens indstillinger; uden notifikationer kan en passer gå glip af rutiner, hvilket påvirker spillet og scoren. Forældre får desuden højst én gang pr. gratis kæledyr en påmindelse om udfordringen, når nogen har passet det på mindst 5 af dets første 7 dage.",
               ],
             },
             {
@@ -834,7 +834,7 @@ const da: Dictionary = {
             {
               heading: "13. Lovvalg og tvister",
               paragraphs: [
-                "Disse vilkår er underlagt lovgivningen i Republikken Slovenien. Forbrugere kan også påberåbe sig den ufravigelige beskyttelse i det land hvor de bor, og bruge EU’s platform for onlinetvistbilæggelse.",
+                "Disse vilkår er underlagt lovgivningen i Republikken Slovenien. Forbrugere kan også påberåbe sig den ufravigelige beskyttelse i det land hvor de bor, og bruge EU's platform for onlinetvistbilæggelse.",
               ],
             },
             {
@@ -863,7 +863,7 @@ const da: Dictionary = {
           heading: "Vores standarder",
           columns: 2,
           items: [
-            { title: "Forældre opretter alle konti", text: "Børn kan ikke tilmelde sig på egen hånd. En forælder tilføjer barnet og genererer en loginkode til engangsbrug som gælder i 15 minutter." },
+            { title: "Forældre opretter alle konti", text: "Børn kan ikke tilmelde sig på egen hånd. En forælder tilføjer barnet og genererer en loginkode til engangsbrug som gælder i 15 minutter." },
             { title: "Ingen e-mail eller adgangskode til børn", text: "Et barn logger ind med forælderens kode. Forkerte, udløbne og brugte koder får alle det samme svar, så ingen kan gætte hvilke børn der findes." },
             { title: "Minimale data", text: "Et kaldenavn og eventuelt et fødselsår. Intet efternavn, ingen fødselsdato, ingen billeder af barnet." },
             { title: "Ingen reklamer, ingen chat, ingen fremmede", text: "Der er ingen annoncering og ingen mulighed for at kontakte andre brugere." },
@@ -960,7 +960,7 @@ const da: Dictionary = {
             ["Enheder og notifikationstokens", "Logges ud og slettes med det samme"],
             ["Købsregistreringer (produkt, dato, butikkens transaktions-id, et anonymt købs-id – hverken navn eller e-mail)", "Opbevares så længe bogførings- og skattelovgivningen kræver det, og er ikke længere knyttet til din familie"],
             ["Registreringer af AI-omkostninger", "Opbevares til bogføringen uden nogen kobling til dig, dine børn eller dine kæledyr"],
-            ["Krypterede sikkerhedskopier", "Fjernes automatisk inden for 35 dage"],
+            ["Krypterede sikkerhedskopier", "Fjernes automatisk inden for 35 dage"],
           ],
           note: "Selve købene håndteres af App Store og Google Play; Apple og Google opbevarer deres registreringer efter deres egne politikker. En udfordring der er købt, men ikke gennemført, refunderes ikke når du sletter kontoen.",
         },
@@ -1013,7 +1013,7 @@ const da: Dictionary = {
           id: "mission",
           heading: "Vores mission",
           paragraphs: [
-            "Alle familier har hørt »Jeg lover at passe den.« PetPrep gør det løfte til et bevis: i 12 uger passer et barn – eller en voksen der gerne vil have en bestemt race – et naturtro AI-kæledyr med et rigtigt dyrs daglige behov, og forælderen ser hver dag hvordan pasningen holder.",
+            "Alle familier har hørt »Jeg lover at passe den.« PetPrep gør det løfte til et bevis: i 12 uger passer et barn – eller en voksen der gerne vil have en bestemt race – et naturtro AI-kæledyr med et rigtigt dyrs daglige behov, og forælderen ser hver dag hvordan pasningen holder.",
             "At fejle i simulationen er også et godt resultat: familien finder ud af det før et rigtigt dyr kommer til at lide, og før den binder sig til mange års pasning og udgifter. Når et rigtigt kæledyr så kommer hjem, vil vi gerne have at PetPrep fortsat er nyttig i hele dyrets liv.",
           ],
         },

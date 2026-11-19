@@ -25,7 +25,7 @@ export const da: KitCopy = {
     notSure: "Ved ikke",
     no: "Nej",
     licence: "Print så mange eksemplarer, som din egen familie har brug for. Del eller sælg ikke filen videre.",
-    sampleFoot: "Det her er én side fra sættet “Kæledyrsløftet”. Det fulde sæt med familiesamtalen, et skema for fire uger og meget mere: petprep.si/da/kaeledyrsloeftet",
+    sampleFoot: "Det her er én side fra sættet »Kæledyrsløftet«. Det fulde sæt med familiesamtalen, et skema for fire uger og meget mere: petprep.si/da/kaeledyrsloeftet",
   },
   cover: {
     kicker: "Printbart sæt til familier",
@@ -41,7 +41,7 @@ export const da: KitCopy = {
       "Det fortæller dig ikke, om dit barn er klar, og giver ingen point.",
       "Det erstatter ikke råd fra en dyrlæge, et dyreinternat eller en læge.",
       "Det vælger ikke en art eller race for dig.",
-      "Det lover ikke, at et kæledyr er den rigtige beslutning. Nogle gange er det bedste resultat “ikke endnu”.",
+      "Det lover ikke, at et kæledyr er den rigtige beslutning. Nogle gange er det bedste resultat »ikke endnu«.",
     ],
     insideHeading: "Indhold",
     mascot: "Curio, PetPreps maskot",
@@ -59,7 +59,7 @@ export const da: KitCopy = {
       "Hvilken voksen har ansvaret for dyret, og hvordan minder vedkommende barnet om det, når noget er glemt?",
       "Hvor i hjemmet skal dyret sove, spise og hvile? Hvor må det ikke komme?",
       "Hvad mener alle, der bor i hjemmet, også dem, der ikke er så begejstrede?",
-      "Hvor længe er “for altid”? Forestil jer, at dyret stadig er hos jer om mange år. Hvordan ser jeres familie så ud, og hvad skal holde, for at I stadig er glade?",
+      "Hvor længe er »for altid«? Forestil jer, at dyret stadig er hos jer om mange år. Hvordan ser jeres familie så ud, og hvad skal holde, for at I stadig er glade?",
     ],
     outro: "Der er ingen rigtige svar. Hvis et spørgsmål får alle til at tie, er det det, der fortjener mest tid.",
   },
@@ -140,9 +140,9 @@ export const da: KitCopy = {
     readHeading: "Sådan læser du svarene",
     read: [
       "Der er ingen point og ingen beståelsesgrænse.",
-      "Mest “ja”: tal om, hvad der får det til at blive ved, når det nye har lagt sig.",
-      "Nogle “ved ikke”: det er jeres lektie. Find ud af det, og svar så igen.",
-      "Et “nej” er information, ikke en fiasko. Det kan betyde “ikke endnu”, “et andet dyr” eller “slet ikke”, og hvert af dem er et godt resultat af en velovervejet beslutning.",
+      "Mest »ja«: tal om, hvad der får det til at blive ved, når det nye har lagt sig.",
+      "Nogle »ved ikke«: det er jeres lektie. Find ud af det, og svar så igen.",
+      "Et »nej« er information, ikke en fiasko. Det kan betyde »ikke endnu«, »et andet dyr« eller »slet ikke«, og hvert af dem er et godt resultat af en velovervejet beslutning.",
     ],
     pointer: "Spørgsmål om helbred, allergi eller om, hvad et dyr har brug for, hører hjemme hos en læge, en dyrlæge eller et dyreinternat, ikke på dette ark.",
   },
@@ -172,7 +172,7 @@ export const da: KitCopy = {
   },
 };
 
-/** Salgsside for sættet “Kæledyrsløftet” (egen tekst; selve sættets tekst står ovenfor). */
+/** Salgsside for sættet »Kæledyrsløftet« (egen tekst; selve sættets tekst står ovenfor). */
 export const daSales: KitSales = {
   eyebrow: "Printbart sæt",
   title: "Kæledyrsløftet",
@@ -185,7 +185,7 @@ export const daSales: KitSales = {
   sample: "Få den gratis prøveside",
   sampleHeading: "Prøv Løfte-siden først",
   sampleText: "Selve løftet som en gratis A4-side: aftalen mellem et barn og de voksne, med daglige opgaver, jeres egne regler og plads til alles underskrift. Skriv din e-mailadresse, og download den med det samme.",
-  sampleNote: "Vi bruger kun din e-mailadresse til nyheder fra PetPrep, hvis du sætter kryds. Du kan altid framelde dig.",
+  sampleNote: "Vi bruger kun din e-mailadresse til nyheder fra PetPrep, hvis du sætter kryds. Du kan altid afmelde dig.",
   insideHeading: "Det får du",
   insideIntro: "Print så mange eksemplarer, du har brug for. Alt udfyldes i hånden, så intet om dit barn bliver skrevet ind i en formular eller sendt nogen steder hen.",
   previewHeading: "Et kig på tre sider",
@@ -200,7 +200,7 @@ export const daSales: KitSales = {
   notItems: [
     "Det er ikke en test og giver ingen point. Det kan ikke sige, om dit barn er klar.",
     "Det indeholder ingen sundhedsråd og ingen racevejledning. Spørg en dyrlæge eller et dyreinternat om dem.",
-    "Det lover ikke, at et kæledyr er den rigtige beslutning. “Ikke endnu” er også et godt svar.",
+    "Det lover ikke, at et kæledyr er den rigtige beslutning. »Ikke endnu« er også et godt svar.",
   ],
   giftText: "Leder du i stedet efter en gave? 12-ugers-udfordringen i PetPrep kan gives som gavekort.",
   giftLink: "Se gavekortet",
