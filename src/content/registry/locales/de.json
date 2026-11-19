@@ -927,6 +927,13 @@
         "Englischer Pointer",
         "English Pointer"
       ]
+    },
+    "mudi": {
+      "name": "Mudi",
+      "slug": "mudi",
+      "synonyms": [
+        "Hungarian Mudi"
+      ]
     }
   },
   "suitability_labels": {
