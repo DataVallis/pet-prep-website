@@ -1027,6 +1027,22 @@
         "Xolo",
         "Mexikansk nakenhund"
       ]
+    },
+    "spinone_italiano": {
+      "name": "Spinone italiano",
+      "slug": "spinone-italiano",
+      "synonyms": [
+        "Spinone",
+        "Italian Spinone"
+      ]
+    },
+    "pointer": {
+      "name": "Pointer",
+      "slug": "pointer",
+      "synonyms": [
+        "Engelsk pointer",
+        "English Pointer"
+      ]
     }
   },
   "suitability_labels": {
