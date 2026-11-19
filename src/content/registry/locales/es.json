@@ -965,6 +965,17 @@
       "synonyms": [
         "Terrier galés"
       ]
+    },
+    "norwegian_elkhound": {
+      "name": "Elkhound noruego gris",
+      "slug": "elkhound-noruego-gris",
+      "synonyms": [
+        "Elkhound noruego",
+        "Cazador de alces noruego gris",
+        "Norwegian Elkhound",
+        "Norwegian Elkhound Grey",
+        "Norsk Elghund Grå"
+      ]
     }
   },
   "suitability_labels": {
