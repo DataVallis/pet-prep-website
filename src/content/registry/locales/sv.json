@@ -1084,6 +1084,13 @@
         "Tibetan Spaniel",
         "Tibbie"
       ]
+    },
+    "black_russian_terrier": {
+      "name": "Svart rysk terrier",
+      "slug": "svart-rysk-terrier",
+      "synonyms": [
+        "Black Russian Terrier"
+      ]
     }
   },
   "suitability_labels": {
