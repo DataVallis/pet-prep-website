@@ -448,6 +448,7 @@ const fi: RegistryCopy = {
       dna_aon: "DNA-testi: aikuisiällä alkava neuropatia (AON) – perinnöllinen hermosairaus",
       dna_fn: "DNA-testi: familiaalinen nefropatia (FN) – perinnöllinen munuaissairaus",
       patella_scheme: "Polvitutkimus polvilumpion sijoiltaanmenon (patellaluksaation) varalta ennen jalostusta",
+      legg_perthes_scheme: "Lonkkien röntgentutkimus Legg-Calvé-Perthesin taudin varalta ennen jalostusta",
       kidney_scheme: "Munuaisten ultraäänitutkimus puuttuvan tai epämuodostuneen munuaisen varalta (rotujärjestön suositus)",
       kidney_upc_scheme: "Virtsatesti (proteiini-kreatiniinisuhde) munuaissairauden varalta (rotujärjestön suositus)",
       dna_gld: "DNA-testi: globoidisoluleukodystrofia (GLD) – perinnöllinen hermosairaus",

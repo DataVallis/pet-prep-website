@@ -410,6 +410,7 @@ const hr: RegistryCopy = {
       dna_aon: "DNK test na neuropatiju s početkom u odrasloj dobi (AON), nasljednu bolest živaca",
       dna_fn: "DNK test na obiteljsku nefropatiju (FN), nasljednu bolest bubrega",
       patella_scheme: "Pregled čašice koljena na luksaciju patele prije uzgoja",
+      legg_perthes_scheme: "Rendgenski pregled kukova na Legg-Calvé-Perthesovu bolest prije uzgoja",
       kidney_scheme: "Ultrazvuk bubrega na nedostajući ili nepravilno razvijen bubreg (preporuka kluba pasmine)",
       kidney_upc_scheme: "Pretraga mokraće (omjer proteina i kreatinina) na bolest bubrega (preporuka kluba pasmine)",
       dna_gld: "DNK test na leukodistrofiju globoidnih stanica (GLD), nasljednu bolest živaca",

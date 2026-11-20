@@ -351,6 +351,7 @@ const sl: RegistryCopy = {
       dna_aon: "Test DNK za nevropatijo z začetkom v odrasli dobi (AON), dedno bolezen živcev",
       dna_fn: "Test DNK za družinsko nefropatijo (FN), dedno bolezen ledvic",
       patella_scheme: "Pregled pogačic za zdrsavanje pogačice (luksacijo patele) pred parjenjem",
+      legg_perthes_scheme: "Rentgenski pregled kolkov za Legg-Calvé-Perthesovo bolezen pred parjenjem",
       kidney_scheme: "Ultrazvok ledvic zaradi manjkajoče ali nepravilno razvite ledvice (priporočilo pasemskega kluba)",
       kidney_upc_scheme: "Test urina (razmerje beljakovine : kreatinin) za bolezen ledvic (priporočilo pasemskega kluba)",
       dna_gld: "Test DNK za globoidnocelično levkodistrofijo (GLD), dedno bolezen živčevja",
@@ -873,6 +874,15 @@ const sl: RegistryCopy = {
         "Royal Kennel Club piše, da valižanski terier potrebuje do 1 ure gibanja na dan in česanje večkrat na teden; PDSA navaja okoli uro gibanja na dan in česanje dva- do trikrat na teden ter ga opisuje kot igrivega, prijaznega psa, ki ima rad otroke in je odličen družinski pes. PetMD opozarja na močan lovski nagon — manjše živali lahko lovi — in svetuje povodec ali ograjen prostor zunaj ter socializacijo in šolanje že od mladih nog.",
       ],
       sources: ["S955", "S956", "S957", "S958", "S10"],
+    },
+
+    american_hairless_terrier: {
+      aka: "ameriški goli terier, ameriski goli terier, goli terier, AHT, American Hairless Terrier",
+      text: [
+        "Ameriški goli terier je majhen do srednje velik, gladko mišičast in živahen terier iz ZDA, ki ga Ameriški kinološki klub (AKC) uvršča v skupino terierjev; FCI ga ne priznava. Standard pasme opisuje energičnega, budnega, radovednega in inteligentnega psa z ušesi v obliki črke V in naravnim repom, ki ga nikoli ne krajšajo. Pasma ima dve različici: golo, brez dlake razen brkov ter dlak na obrveh in gobčku, in kratkodlako z gladko dlako. Standard navaja idealno višino 12–16 palcev (30–41\u00a0cm); PetMD navaja težo 12–28 funtov (5,4–12,7\u00a0kg) in življenjsko dobo 14–16 let, pes te velikosti pa doraste pri okoli 9–12 mesecih (PetMD).",
+        "Dogs NSW navaja okoli 20 minut gibanja na dan, PetMD pa piše, da sta redno gibanje in miselni izzivi za to pasmo nujna; opisuje jo kot odlično družbo za igro z otroki, z nadzorom ob majhnih otrocih. Gola koža potrebuje nego: pasemski klub piše, da sta krema za sončenje ali zaščitno oblačilo nujna, da se pes ne opeče, PetMD svetuje pulover v mrazu in redno kopanje, najbolje vsak teden, WebMD svetuje vsakodnevno ščetkanje zob, pasemski klub pa tedensko striženje krempljev. Pasemski klub opozarja tudi na močan lovski nagon.",
+      ],
+      sources: ["S967", "S971", "S972", "S973", "S977", "S10"],
     },
 
     norwegian_elkhound: {

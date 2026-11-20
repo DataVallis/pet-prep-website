@@ -398,6 +398,7 @@ const da: RegistryCopy = {
       dna_aon: "DNA-test for neuropati med debut i voksenalderen (AON), en arvelig nervesygdom",
       dna_fn: "DNA-test for familiær nefropati (FN), en arvelig nyresygdom",
       patella_scheme: "Kontrol af knæskallerne for patellaluksation før avl",
+      legg_perthes_scheme: "Røntgenkontrol af hofterne for Legg-Calvé-Perthes' sygdom før avl",
       kidney_scheme: "Ultralydsscanning af nyrerne for manglende eller misdannet nyre (raceklubbens anbefaling)",
       kidney_upc_scheme: "Urinprøve (forholdet mellem protein og kreatinin) for nyresygdom (raceklubbens anbefaling)",
       dna_gld: "DNA-test for globoidcelle-leukodystrofi (GLD), en arvelig nervesygdom",

@@ -355,6 +355,7 @@ const pt: RegistryCopy = {
       dna_aon: "Teste de ADN da neuropatia de início na idade adulta (AON), uma doença hereditária dos nervos",
       dna_fn: "Teste de ADN da nefropatia familiar (FN), uma doença renal hereditária",
       patella_scheme: "Controlo das rótulas para a luxação da rótula antes da reprodução",
+      legg_perthes_scheme: "Radiografia das ancas para a doença de Legg-Calvé-Perthes antes da reprodução",
       kidney_scheme: "Ecografia dos rins para detetar um rim em falta ou malformado (recomendação do clube da raça)",
       kidney_upc_scheme: "Análise de urina (rácio proteína/creatinina) para doenças renais (recomendação do clube da raça)",
       dna_gld: "Teste de ADN da leucodistrofia de células globoides (GLD), uma doença hereditária dos nervos",

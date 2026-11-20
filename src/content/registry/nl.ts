@@ -358,6 +358,7 @@ const nl: RegistryCopy = {
       dna_aon: "DNA-test op neuropathie die op volwassen leeftijd optreedt (AON), een erfelijke zenuwziekte",
       dna_fn: "DNA-test op familiaire nefropathie (FN), een erfelijke nierziekte",
       patella_scheme: "Controle van de knieschijf op patellaluxatie vóór het fokken",
+      legg_perthes_scheme: "Röntgencontrole van de heupen op de ziekte van Legg-Calvé-Perthes vóór het fokken",
       kidney_scheme: "Echo van de nieren op een ontbrekende of misvormde nier (advies van de rasvereniging)",
       kidney_upc_scheme: "Urinetest (eiwit-creatinineratio) op nierziekte (advies van de rasvereniging)",
       dna_gld: "DNA-test op globoïdcel-leukodystrofie (GLD), een erfelijke zenuwziekte",
