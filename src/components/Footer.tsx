@@ -59,6 +59,11 @@ export function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
                     <path fillRule="evenodd" d="M2.5 7.2c.2-1.5 1.3-2.6 2.8-2.8C7.4 4.1 9.7 4 12 4s4.6.1 6.7.4c1.5.2 2.6 1.3 2.8 2.8.3 1.6.5 3.2.5 4.8s-.2 3.2-.5 4.8c-.2 1.5-1.3 2.6-2.8 2.8-2.1.3-4.4.4-6.7.4s-4.6-.1-6.7-.4c-1.5-.2-2.6-1.3-2.8-2.8C2.2 15.2 2 13.6 2 12s.2-3.2.5-4.8zM10 8.5v7l6-3.5-6-3.5z" />
                   </svg>
                 </a>
+                <a href={site.social.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn" className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-graphite-3 hover:border-mint hover:text-mint">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.25H3V9.75zm6.5 0h3.83v1.54h.05c.53-1.01 1.84-2.07 3.79-2.07 4.05 0 4.8 2.66 4.8 6.13V21h-4v-4.98c0-1.19-.02-2.72-1.66-2.72-1.66 0-1.91 1.3-1.91 2.63V21h-4V9.75z" />
+                  </svg>
+                </a>
               </span>
             </div>
           </div>
