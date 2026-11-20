@@ -865,6 +865,15 @@ const en: RegistryCopy = {
       sources: ["S967", "S971", "S972", "S973", "S977", "S10"],
     },
 
+    tibetan_spaniel: {
+      aka: "Tibbie, Tibetan Spaniel, tibetanski španjel",
+      text: [
+        "The Tibetan Spaniel is a small, active and alert companion dog from Tibet (China), in the FCI group of companion and toy dogs among the Tibetan breeds, with Great Britain as the breed's patron country. The FCI standard describes it as gay and assertive, highly intelligent and aloof with strangers, alert, loyal but independent, slightly longer in body than tall, with a silky coat of moderate length, feathered ears and a richly plumed tail carried in a curl over the back; all colours are allowed except merle. The standard gives a height of about 25.4 cm and an ideal weight of 4.1–6.8 kg; a dog of this size is fully grown at about 9–12 months (PetMD). In a large UK study (McMillan et al., 2024) the breed was among the longest-lived, with a median of 15.2 years; PDSA gives a lifespan of over 12 years.",
+        "PDSA says Tibetan Spaniels need around an hour of exercise every day, will happily join in family games, generally get along well with everyone and make good family pets, and that grooming a couple of times a week is usually enough. WebMD says they are prone to separation anxiety and better suited to families with older children, need a secure fenced yard and can overheat in hot weather; it advises brushing the teeth daily, checking the ears at least once a week, checking the nails monthly and a bath roughly every month.",
+      ],
+      sources: ["S980", "S981", "S982", "S771", "S10"],
+    },
+
     norwegian_elkhound: {
       aka: "Elkhound, Elkie, Norwegian Elkhound Grey, Norsk Elghund Grå, Norwegian Moose Dog, norveški losovec",
       text: [

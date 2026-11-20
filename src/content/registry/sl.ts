@@ -885,6 +885,15 @@ const sl: RegistryCopy = {
       sources: ["S967", "S971", "S972", "S973", "S977", "S10"],
     },
 
+    tibetan_spaniel: {
+      aka: "tibetanski španjel, tibetanski spanjel, Tibbie, Tibetan Spaniel",
+      text: [
+        "Tibetanski španjel je majhen, živahen in buden pes družabnik iz Tibeta (Kitajska), ki ga FCI uvršča med pse družabnike, v sekcijo tibetanskih pasem, z Veliko Britanijo kot državo pokroviteljico pasme. Standard FCI ga opisuje kot veselega in samozavestnega, zelo inteligentnega in zadržanega do tujcev, budnega, zvestega, a samostojnega; telo je nekoliko daljše od višine, dlaka svilnata in srednje dolga, ušesa poraščena z resicami, košat rep pa zavihan čez hrbet. Dovoljene so vse barve razen merle. Standard navaja višino okoli 25,4 cm in idealno težo 4,1–6,8 kg; pes te velikosti doraste pri približno 9–12 mesecih (PetMD). V veliki britanski raziskavi (McMillan in sodelavci, 2024) je bil med najdlje živečimi pasmami, z mediano 15,2 leta; PDSA navaja življenjsko dobo več kot 12 let.",
+        "PDSA piše, da tibetanski španjeli potrebujejo okoli uro gibanja na dan, se radi pridružijo družinskim igram, se navadno dobro razumejo z vsemi in so dobri družinski psi, za nego dlake pa navadno zadošča česanje dvakrat na teden. WebMD piše, da so nagnjeni k ločitveni tesnobi in se bolje ujamejo z družinami s starejšimi otroki, da potrebujejo varno ograjeno dvorišče in se v vročem vremenu lahko pregrejejo; svetuje vsakodnevno ščetkanje zob, pregled ušes vsaj enkrat na teden, mesečni pregled krempljev in kopanje približno enkrat na mesec.",
+      ],
+      sources: ["S980", "S981", "S982", "S771", "S10"],
+    },
+
     norwegian_elkhound: {
       aka: "norveški losovec, norveski losovec, losovec, norveški elkhund, elkhound, Norwegian Elkhound, Norsk Elghund Grå",
       text: [
