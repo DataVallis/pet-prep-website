@@ -349,6 +349,7 @@ const es: RegistryCopy = {
       dna_aon: "Prueba de ADN de neuropatía de aparición adulta (AON), una enfermedad nerviosa hereditaria",
       dna_fn: "Prueba de ADN de nefropatía familiar (FN), una enfermedad renal hereditaria",
       patella_scheme: "Revisión de la rótula para detectar la luxación de rótula antes de la cría",
+      legg_perthes_scheme: "Radiografía de cadera para detectar la enfermedad de Legg-Calvé-Perthes antes de la cría",
       kidney_scheme: "Ecografía renal para detectar la falta o la malformación de un riñón (recomendación del club de la raza)",
       kidney_upc_scheme: "Análisis de orina (cociente proteína/creatinina) para detectar enfermedad renal (recomendación del club de la raza)",
       dna_gld: "Prueba de ADN de leucodistrofia de células globoides (GLD), una enfermedad nerviosa hereditaria",

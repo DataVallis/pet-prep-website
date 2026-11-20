@@ -375,6 +375,7 @@ const pl: RegistryCopy = {
       dna_aon: "Test DNA w kierunku neuropatii o początku w wieku dorosłym (AON), dziedzicznej choroby nerwów",
       dna_fn: "Test DNA w kierunku rodzinnej nefropatii (FN), dziedzicznej choroby nerek",
       patella_scheme: "Badanie rzepek w kierunku zwichnięcia rzepki przed kryciem",
+      legg_perthes_scheme: "Badanie RTG bioder w kierunku choroby Legga-Calvégo-Perthesa przed kryciem",
       kidney_scheme: "USG nerek w kierunku brakującej lub nieprawidłowo rozwiniętej nerki (zalecenie klubu rasy)",
       kidney_upc_scheme: "Badanie moczu (stosunek białka do kreatyniny) w kierunku choroby nerek (zalecenie klubu rasy)",
       dna_gld: "Test DNA w kierunku leukodystrofii komórek globoidalnych (GLD), dziedzicznej choroby układu nerwowego",

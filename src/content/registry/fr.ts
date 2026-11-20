@@ -354,6 +354,7 @@ const fr: RegistryCopy = {
       dna_aon: "Test ADN de la neuropathie de l’adulte (AON), une maladie nerveuse héréditaire",
       dna_fn: "Test ADN de la néphropathie familiale (FN), une maladie rénale héréditaire",
       patella_scheme: "Dépistage de la luxation de la rotule avant la reproduction",
+      legg_perthes_scheme: "Radiographie des hanches pour dépister la maladie de Legg-Calvé-Perthes avant la reproduction",
       kidney_scheme: "Échographie des reins pour détecter un rein absent ou malformé (recommandation du club de race)",
       kidney_upc_scheme: "Analyse d’urine (rapport protéines/créatinine) pour dépister une maladie rénale (recommandation du club de race)",
       dna_gld: "Test ADN de la leucodystrophie à cellules globoïdes (GLD), une maladie nerveuse héréditaire",

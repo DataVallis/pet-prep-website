@@ -407,6 +407,7 @@ const cs: RegistryCopy = {
       dna_aon: "DNA test na neuropatii s nástupem v dospělosti (AON), dědičné onemocnění nervů",
       dna_fn: "DNA test na familiární nefropatii (FN), dědičné onemocnění ledvin",
       patella_scheme: "Kontrola čéšek na luxaci před zařazením do chovu",
+      legg_perthes_scheme: "Rentgenové vyšetření kyčlí na Legg-Calvé-Perthesovu chorobu před zařazením do chovu",
       kidney_scheme: "Ultrazvuk ledvin na chybějící nebo nesprávně vyvinutou ledvinu (doporučení chovatelského klubu)",
       kidney_upc_scheme: "Vyšetření moči (poměr bílkoviny a kreatininu) na onemocnění ledvin (doporučení chovatelského klubu)",
       dna_gld: "DNA test na leukodystrofii globoidních buněk (GLD), dědičné onemocnění nervů",

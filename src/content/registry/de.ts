@@ -332,6 +332,7 @@ const de: RegistryCopy = {
       dna_aon: "DNA-Test auf im Erwachsenenalter einsetzende Neuropathie (AON), eine erbliche Nervenerkrankung",
       dna_fn: "DNA-Test auf familiäre Nephropathie (FN), eine erbliche Nierenerkrankung",
       patella_scheme: "Untersuchung der Kniescheiben auf Patellaluxation vor der Zucht",
+      legg_perthes_scheme: "Röntgenuntersuchung der Hüften auf Legg-Calvé-Perthes-Krankheit vor der Zucht",
       kidney_scheme: "Ultraschall der Nieren auf eine fehlende oder fehlgebildete Niere (Empfehlung des Rassezuchtvereins)",
       kidney_upc_scheme: "Urintest (Protein-Kreatinin-Verhältnis) auf Nierenerkrankung (Empfehlung des Rassezuchtvereins)",
       dna_gld: "DNA-Test auf Globoidzell-Leukodystrophie (GLD), eine erbliche Nervenerkrankung",

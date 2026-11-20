@@ -395,6 +395,7 @@ const sv: RegistryCopy = {
       dna_aon: "DNA-test för neuropati med debut i vuxen ålder (AON), en ärftlig nervsjukdom",
       dna_fn: "DNA-test för familjär nefropati (FN), en ärftlig njursjukdom",
       patella_scheme: "Kontroll av knäskålarna för patellaluxation före avel",
+      legg_perthes_scheme: "Röntgenkontroll av höfterna för Legg-Calvé-Perthes sjukdom före avel",
       kidney_scheme: "Ultraljud av njurarna för saknad eller missbildad njure (rasklubbens rekommendation)",
       kidney_upc_scheme: "Urinprov (kvoten mellan protein och kreatinin) för njursjukdom (rasklubbens rekommendation)",
       dna_gld: "DNA-test för globoidcellsleukodystrofi (GLD), en ärftlig nervsjukdom",

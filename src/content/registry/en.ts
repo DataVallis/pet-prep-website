@@ -330,6 +330,7 @@ const en: RegistryCopy = {
       dna_aon: "DNA test for adult-onset neuropathy (AON), an inherited nerve disease",
       dna_fn: "DNA test for familial nephropathy (FN), an inherited kidney disease",
       patella_scheme: "Kneecap check for luxating patella before breeding",
+      legg_perthes_scheme: "Hip X-ray check for Legg-Calvé-Perthes disease before breeding",
       kidney_scheme: "Ultrasound of the kidneys for a missing or malformed kidney (breed club recommendation)",
       kidney_upc_scheme: "Urine test (protein to creatinine ratio) for kidney disease (breed club recommendation)",
       dna_gld: "DNA test for globoid cell leukodystrophy (GLD), an inherited nerve disease",
@@ -853,6 +854,15 @@ const en: RegistryCopy = {
         "The Royal Kennel Club says the Welsh Terrier needs up to 1 hour of exercise a day and grooming more than once a week; PDSA says around an hour of exercise daily and grooming two to three times a week, and describes a playful, friendly dog that loves children and makes an excellent family pet. PetMD notes a strong prey drive — smaller animals may be chased — and advises a lead or a fenced area outside, with socialisation and training from an early age.",
       ],
       sources: ["S955", "S956", "S957", "S958", "S10"],
+    },
+
+    american_hairless_terrier: {
+      aka: "AHT, Hairless Terrier, ameriški goli terier",
+      text: [
+        "The American Hairless Terrier is a small to medium-sized, smoothly muscled and active terrier from the USA, recognised by the American Kennel Club in its Terrier Group; the FCI does not list it. The breed standard describes a dog that is energetic, alert, curious and intelligent, with V-shaped ears and a natural tail that is never docked. There are two varieties: the hairless one, free of hair except for whiskers and eyebrow and muzzle hairs, and a coated one with a short, smooth coat. The standard gives an ideal height of 12–16 inches (30–41 cm); PetMD gives a weight of 12–28 pounds (5.4–12.7 kg) and a lifespan of 14–16 years, and a dog of this size is fully grown at about 9–12 months (PetMD).",
+        "Dogs NSW gives about 20 minutes of exercise a day, and PetMD says regular exercise and mental stimulation are musts for this breed; it calls the breed great playmates for children, with supervision around young children. The bare skin needs care: the breed club says sunscreen or protective clothing is a must to prevent sunburn, PetMD advises a sweater in the cold and regular baths, preferably every week, WebMD advises brushing the teeth daily, and the breed club recommends weekly nail trimming. The breed club also notes a high prey drive.",
+      ],
+      sources: ["S967", "S971", "S972", "S973", "S977", "S10"],
     },
 
     norwegian_elkhound: {
