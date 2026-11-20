@@ -1008,6 +1008,15 @@
         "Grijze Noorse elandhond",
         "Norwegian Elkhound"
       ]
+    },
+    "american_hairless_terrier": {
+      "name": "Amerikaanse haarloze terrier",
+      "slug": "amerikaanse-haarloze-terrier",
+      "synonyms": [
+        "American Hairless Terrier",
+        "AHT",
+        "Amerikaanse haarloze terriër"
+      ]
     }
   },
   "suitability_labels": {
