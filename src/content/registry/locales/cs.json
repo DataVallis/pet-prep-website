@@ -1248,6 +1248,14 @@
         "Tibetan Spaniel",
         "Tibbie"
       ]
+    },
+    "black_russian_terrier": {
+      "name": "Ruský černý teriér",
+      "slug": "rusky-cerny-terier",
+      "synonyms": [
+        "Black Russian Terrier",
+        "Černý ruský teriér"
+      ]
     }
   },
   "suitability_labels": {
