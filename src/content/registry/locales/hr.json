@@ -1169,6 +1169,22 @@
         "Norsk Elghund Grå",
         "Norwegian Moose Dog"
       ]
+    },
+    "american_hairless_terrier": {
+      "name": "Američki bezdlaki terijer",
+      "slug": "americki-bezdlaki-terijer",
+      "synonyms": [
+        "American Hairless Terrier",
+        "AHT"
+      ]
+    },
+    "tibetan_spaniel": {
+      "name": "Tibetanski španijel",
+      "slug": "tibetanski-spanijel",
+      "synonyms": [
+        "Tibetan Spaniel",
+        "Tibbie"
+      ]
     }
   },
   "suitability_labels": {
