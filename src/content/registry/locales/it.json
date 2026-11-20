@@ -975,6 +975,28 @@
         "Norsk Elghund Grigio",
         "Norsk Elghund Grå"
       ]
+    },
+    "american_hairless_terrier": {
+      "name": "American Hairless Terrier",
+      "slug": "american-hairless-terrier",
+      "synonyms": []
+    },
+    "black_russian_terrier": {
+      "name": "Terrier nero russo",
+      "slug": "terrier-nero-russo",
+      "synonyms": [
+        "Black Russian Terrier",
+        "Terrier russo nero",
+        "Tchiorny Terrier"
+      ]
+    },
+    "tibetan_spaniel": {
+      "name": "Spaniel tibetano",
+      "slug": "spaniel-tibetano",
+      "synonyms": [
+        "Tibetan Spaniel",
+        "Tibbie"
+      ]
     }
   },
   "suitability_labels": {
