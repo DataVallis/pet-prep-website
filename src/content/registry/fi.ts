@@ -261,7 +261,7 @@ const fi: RegistryCopy = {
     kittens_play_more: () => "Kissanpentujen täytyy leikkiä useammin.",
     scratching_natural: () => "Raapiminen on luonnollista ja välttämätöntä: hanki raapimapuu äläkä koskaan rankaise raapimisesta.",
     water_fresh: () => "Raikasta vettä aina saatavilla; pese kuppi ja täytä se joka päivä.",
-    grooming_sources_differ: () => "Lähteet ovat eri mieltä kampaamisesta: suositukset vaihtelevat päivittäisestä kerran viikossa tehtävään.",
+    grooming_sources_differ: () => "Lähteet ovat eri mieltä harjauksesta: suositukset vaihtelevat päivittäisestä harjauksesta kerran viikossa tehtävään.",
   },
   qualifiers: {
     exact: (t) => t,
@@ -341,7 +341,7 @@ const fi: RegistryCopy = {
     litter_rule: (p) =>
       `Hiekkalaatikko: aikuinen kissa käyttää sitä ${times(p.uses)} päivässä; jätökset poistetaan jokaisen käynnin jälkeen ${p.scoop_hours}${NB}tunnin kuluessa (hiljaisten tuntien ulkopuolella), ja kaikki hiekka vaihdetaan ${p.change_days === 7 ? "kerran viikossa" : p.change_days === 1 ? "joka päivä" : `${p.change_days}${NB}päivän välein`}.`,
     scratching_after_missed_play: () => "Jos kissa on leikkinyt päivän aikana liian vähän, se raapii kerran jotakin; lapsi kantaa sen raapimapuulle.",
-    grooming_rule: (p) => (p.per_week === 1 ? "Kampaaminen kerran viikossa." : p.per_week === 2 ? "Kampaaminen kahdesti viikossa." : `Kampaaminen ${p.per_week}${NB}kertaa viikossa.`),
+    grooming_rule: (p) => (p.per_week === 1 ? "Harjaus kerran viikossa." : p.per_week === 2 ? "Harjaus kahdesti viikossa." : `Harjaus ${p.per_week}${NB}kertaa viikossa.`),
     no_walk_in_heat: (p) =>
       `Kesällä (kesä–elokuussa; eteläisellä pallonpuoliskolla joulu–helmikuussa) lapsen näkymä ja lenkkinäkymä näyttävät rauhallisen muistutuksen klo ${clock(p.from)}–${clock(p.to)} (perheen paikallista aikaa): ei lenkkejä helteellä. Ei säätietoja eikä rangaistusta – askeleet lasketaan silti.`,
     care_task: (p) => {

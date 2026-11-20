@@ -167,7 +167,7 @@ export const fi: KitCopy = {
     appHeading: "PetPrepin 12 viikon haaste",
     appText: "PetPrep-sovelluksessa lapsesi hoitaa kaksitoista viikkoa todentuntuista, tekoälyn luomaa eläintä: ruokinta, vesi, ulkoilu ja siivous. Sinä seuraat sitä omassa vanhempien näkymässäsi. Se on harjoittelua, ei lupaus siitä, että lemmikki sopii teille.",
     cta: "Lue lisää osoitteessa petprep.si",
-    slogan: "Valmiina lemmikkiin. Läsnä sen koko elämän.",
+    slogan: "Valmis lemmikkiin. Mukana koko sen elämän.",
     mascotLine: "Onnea toivottaa Curio.",
   },
 };

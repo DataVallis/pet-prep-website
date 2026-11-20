@@ -60,7 +60,7 @@ export const fi: QuizCopy = {
   adoptionTitle: "Harkitse myös adoptiota",
   adoptionText: "Eläinsuojeluyhdistyksissä ja koiratarhoissa odottaa monia ihania koiria, myös sekarotuisia. Siellä voidaan usein kertoa, miten koira käyttäytyy kotona, ennen kuin päätät. Käy tutustumassa lähelläsi olevaan eläinten kotiin.",
   notNowTitle: "Koira ei ehkä olisi nyt onnellinen luonasi",
-  notNowText: "Koira, joka on joka päivä yksin yli 8 tuntia, on yksinäinen ja stressaantunut, eikä se ole koiralle reilua. Tämä ei ole ei ikuisesti. Kokeile ensin PetPrepiä: perheesi hoitaa virtuaalikoiraa ja näkee, mitä oikea koira tarvitsee.",
+  notNowText: "Koira, joka on joka päivä yksin yli 8 tuntia, on yksinäinen ja stressaantunut, eikä se ole koiralle reilua. Tämä ei ole lopullinen ei. Kokeile ensin PetPrepiä: perheesi hoitaa virtuaalikoiraa ja näkee, mitä oikea koira tarvitsee.",
   notNowCta: "Kokeile ensin PetPrepiä",
   shareButton: "Kopioi linkki tulokseesi",
   shareCopied: "Linkki kopioitu",
