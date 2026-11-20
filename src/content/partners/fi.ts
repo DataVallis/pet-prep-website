@@ -54,7 +54,7 @@ export const fi: PartnerLocalePack = {
     htmlLang: "fi",
     company: "PetPrep (yritys perustamisvaiheessa)",
     title: "Lehdistöpaketti",
-    tagline: "Valmiina lemmikkiä varten. Rinnalla koko sen elämän.",
+    tagline: "Valmis lemmikkiin. Mukana koko sen elämän.",
     what: {
       heading: "Mikä PetPrep on",
       paragraphs: [
@@ -74,7 +74,7 @@ export const fi: PartnerLocalePack = {
         ["”12 Weeks”-sarjan sponsorointi", "Sponsori mainitaan jaksossa ja sen kuvauksessa. Sponsori ei muokkaa sarjan sisältöä."],
         ["Sponsoroitu sisältö petprep.si-sivustolla", "Merkitty kirjoitus rotusivun vieressä tai tietopankissa, ilman vaikutusta sisältöön tai lähteisiin."],
         ["Vakuutusyhtiöt", "Kiinteä sponsorointi tai maksu välitetystä yhteydenotosta. Yhteystieto vain vanhemman nimenomaisella suostumuksella. Yhteystietojen välitys on valmisteilla."],
-        ["Hakemiston perustajakumppani", "Eläinlääkärit, koirakoulut, koirien trimmaajat, kasvattajat: korostettu merkintä. 190 € vuodessa, hinta lukittu, paikkoja rajoitetusti maata kohti."],
+        ["Hakemiston perustajakumppani", "Eläinlääkärit, koirakoulut, koirien trimmaajat, kasvattajat: korostettu merkintä. 190 € vuodessa, hinta lukittu, paikkoja rajoitetusti maata kohti."],
         ["Eläinsuojelu- ja kodinvälitysyhdistykset", "Maksuton merkintä ja mahdollisuus suositella PetPrepiä lemmikin adoptoijille."],
       ],
     },
@@ -120,7 +120,7 @@ export const fi: PartnerLocalePack = {
           { title: "”12 Weeks”-sarjan sponsorointi", text: "Sarja seuraa 12 viikon lemmikinhoitoa. Sponsori mainitaan jaksossa ja sen kuvauksessa; sponsori ei muokkaa sarjan sisältöä." },
           { title: "Sponsoroitu sisältö petprep.si-sivustolla", text: "Kirjoitus rotusivun vieressä tai tietopankissa. Se on aina merkitty sponsoroiduksi, eikä sponsorilla ole vaikutusta sivuun tai sen mainittuihin lähteisiin." },
           { title: "Vakuutusyhtiöt", text: "Maksu välitetystä yhteydenotosta tai kiinteä sponsorointi. Välitämme yhteystiedon vain vanhemman nimenomaisella suostumuksella emmekä koskaan lapsen tietoja. Yhteystietojen välitys on valmisteilla eikä vielä käytettävissä." },
-          { title: "Hakemiston perustajakumppani", text: "Eläinlääkäreille, koirakouluille, koirien trimmaajille ja kasvattajille: korostettu merkintä logon, kuvauksen ja linkin kanssa. 190 € vuodessa; hinta on lukittu perustajakumppaneille. Paikkoja on rajoitetusti maata kohti." },
+          { title: "Hakemiston perustajakumppani", text: "Eläinlääkäreille, koirakouluille, koirien trimmaajille ja kasvattajille: korostettu merkintä logon, kuvauksen ja linkin kanssa. 190 € vuodessa; hinta on lukittu perustajakumppaneille. Paikkoja on rajoitetusti maata kohti." },
           { title: "Eläinsuojelu- ja kodinvälitysyhdistykset", text: "Merkintä on maksuton. Voit suositella PetPrepiä adoptoijille, jotta he ovat paremmin valmistautuneita eläimen tuloon." },
         ],
       },
