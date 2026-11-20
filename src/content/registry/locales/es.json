@@ -976,6 +976,30 @@
         "Norwegian Elkhound Grey",
         "Norsk Elghund Grå"
       ]
+    },
+    "american_hairless_terrier": {
+      "name": "Terrier americano sin pelo",
+      "slug": "terrier-americano-sin-pelo",
+      "synonyms": [
+        "American Hairless Terrier"
+      ]
+    },
+    "black_russian_terrier": {
+      "name": "Terrier ruso negro",
+      "slug": "terrier-ruso-negro",
+      "synonyms": [
+        "Black Russian Terrier",
+        "Terrier negro ruso",
+        "Terrier negro de Rusia",
+        "Tchiorny Terrier"
+      ]
+    },
+    "tibetan_spaniel": {
+      "name": "Spaniel tibetano",
+      "slug": "spaniel-tibetano",
+      "synonyms": [
+        "Tibetan Spaniel"
+      ]
     }
   },
   "suitability_labels": {
