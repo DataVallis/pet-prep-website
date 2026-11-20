@@ -1069,6 +1069,21 @@
         "Elkhound",
         "Norwegian Elkhound Grey"
       ]
+    },
+    "american_hairless_terrier": {
+      "name": "Amerikansk hårlös terrier",
+      "slug": "amerikansk-harlos-terrier",
+      "synonyms": [
+        "American Hairless Terrier"
+      ]
+    },
+    "tibetan_spaniel": {
+      "name": "Tibetansk spaniel",
+      "slug": "tibetansk-spaniel",
+      "synonyms": [
+        "Tibetan Spaniel",
+        "Tibbie"
+      ]
     }
   },
   "suitability_labels": {
