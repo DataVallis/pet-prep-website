@@ -985,6 +985,23 @@
         "AHT",
         "Terrier sem pelo"
       ]
+    },
+    "black_russian_terrier": {
+      "name": "Terrier negro russo",
+      "slug": "terrier-negro-russo",
+      "synonyms": [
+        "Black Russian Terrier",
+        "Terrier preto russo",
+        "Tchiorny Terrier"
+      ]
+    },
+    "tibetan_spaniel": {
+      "name": "Spaniel tibetano",
+      "slug": "spaniel-tibetano",
+      "synonyms": [
+        "Tibetan Spaniel",
+        "Tibbie"
+      ]
     }
   },
   "suitability_labels": {
