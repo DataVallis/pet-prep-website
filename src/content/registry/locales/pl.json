@@ -1123,6 +1123,24 @@
         "Norwegian Elkhound Grey",
         "Norwegian Moose Dog"
       ]
+    },
+    "american_hairless_terrier": {
+      "name": "Amerykański terier bezwłosy",
+      "slug": "amerykanski-terier-bezwlosy",
+      "synonyms": [
+        "Terier bezwłosy amerykański",
+        "American Hairless Terrier",
+        "AHT"
+      ]
+    },
+    "tibetan_spaniel": {
+      "name": "Spaniel tybetański",
+      "slug": "spaniel-tybetanski",
+      "synonyms": [
+        "Tybetański spaniel",
+        "Tibetan Spaniel",
+        "Tibbie"
+      ]
     }
   },
   "suitability_labels": {
