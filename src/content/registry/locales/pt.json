@@ -976,6 +976,15 @@
         "Elkhound",
         "Norwegian Elkhound"
       ]
+    },
+    "american_hairless_terrier": {
+      "name": "Terrier americano sem pelo",
+      "slug": "terrier-americano-sem-pelo",
+      "synonyms": [
+        "American Hairless Terrier",
+        "AHT",
+        "Terrier sem pelo"
+      ]
     }
   },
   "suitability_labels": {
