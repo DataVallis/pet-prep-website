@@ -873,6 +873,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S980", "S981", "S982", "S771", "S10"],
     },
+    black_russian_terrier: {
+      aka: "Russian Black Terrier, Russian Terrier, Tchiorny Terrier, BRT, ruski črni terier",
+      text: [
+        "The Black Russian Terrier is a large, robust and very athletic working dog from Russia, in the FCI group of Pinscher and Schnauzer type dogs. The FCI standard describes it as dignified, confident and well controlled, amiable, undemanding, smart and friendly, with a rough, thick double coat that forms abundant eyebrows, a moustache and a beard; the only colours are black and black with some intermingling grey hair. The standard gives males 72–76 cm and 50–60 kg, females 68–72 cm and 45–50 kg; a dog of this size typically reaches its adult weight at 18–24 months. The Royal Kennel Club gives its lifespan as over 10 years.",
+        "The Royal Kennel Club lists more than 2 hours of exercise and grooming every day, a large house and garden, and a coat that does not shed. PetMD says the breed is devoted to its family and can be good with children when supervised, that early and consistent socialisation is important, and that strenuous exercise should be avoided right before and after meals because of bloat. VCA lists older children as the ideal match and recommends trimming by a professional groomer every six to eight weeks.",
+      ],
+      sources: ["S985", "S986", "S989", "S990", "S10"],
+    },
 
     norwegian_elkhound: {
       aka: "Elkhound, Elkie, Norwegian Elkhound Grey, Norsk Elghund Grå, Norwegian Moose Dog, norveški losovec",
