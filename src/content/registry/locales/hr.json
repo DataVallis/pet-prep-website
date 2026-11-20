@@ -1185,6 +1185,14 @@
         "Tibetan Spaniel",
         "Tibbie"
       ]
+    },
+    "black_russian_terrier": {
+      "name": "Ruski crni terijer",
+      "slug": "ruski-crni-terijer",
+      "synonyms": [
+        "Black Russian Terrier",
+        "Crni ruski terijer"
+      ]
     }
   },
   "suitability_labels": {
