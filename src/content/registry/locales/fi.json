@@ -1380,6 +1380,49 @@
         "Norsk Elghund Grå",
         "Elkhound"
       ]
+    },
+    "american_hairless_terrier": {
+      "name": "Amerikankarvatonterrieri",
+      "slug": "amerikankarvatonterrieri",
+      "synonyms": [
+        "American Hairless Terrier",
+        "AHT"
+      ],
+      "colours": {
+        "pink-black-spots": "Vaaleanpunainen mustin laikuin",
+        "pink-chocolate-spots": "Vaaleanpunainen suklaanruskein laikuin",
+        "grey-pink-patches": "Tummanharmaa vaaleanpunaisin läikin",
+        "pink-tan-spots": "Vaaleanpunainen kellanruskein laikuin"
+      }
+    },
+    "tibetan_spaniel": {
+      "name": "Tiibetinspanieli",
+      "slug": "tiibetinspanieli",
+      "synonyms": [
+        "Tibetan Spaniel",
+        "Tibbie"
+      ],
+      "colours": {
+        "golden": "Kultainen",
+        "red": "Punainen",
+        "sable": "Soopeli",
+        "cream": "Kerma",
+        "black-tan": "Musta ja ruskea",
+        "black": "Musta"
+      }
+    },
+    "black_russian_terrier": {
+      "name": "Musta venäjänterrieri",
+      "slug": "musta-venajanterrieri",
+      "synonyms": [
+        "Venäjänmustaterrieri",
+        "Black Russian Terrier",
+        "BRT"
+      ],
+      "colours": {
+        "black": "Musta",
+        "black-grey": "Musta, harmaita karvoja"
+      }
     }
   },
   "suitability_labels": {
