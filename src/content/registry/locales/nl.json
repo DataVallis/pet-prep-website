@@ -1017,6 +1017,23 @@
         "AHT",
         "Amerikaanse haarloze terriër"
       ]
+    },
+    "black_russian_terrier": {
+      "name": "Zwarte russische terriër",
+      "slug": "zwarte-russische-terrier",
+      "synonyms": [
+        "Black Russian Terrier",
+        "Russische zwarte terriër",
+        "Tchiorny Terrier"
+      ]
+    },
+    "tibetan_spaniel": {
+      "name": "Tibetaanse spaniël",
+      "slug": "tibetaanse-spaniel",
+      "synonyms": [
+        "Tibetan Spaniel",
+        "Tibbie"
+      ]
     }
   },
   "suitability_labels": {
