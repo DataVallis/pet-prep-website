@@ -893,6 +893,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S980", "S981", "S982", "S771", "S10"],
     },
+    black_russian_terrier: {
+      aka: "ruski črni terier, ruski crni terier, črni ruski terier, ruski terier, Black Russian Terrier, Russian Black Terrier",
+      text: [
+        "Ruski črni terier je velik, robusten in zelo atletski delovni pes iz Rusije, ki ga FCI uvršča med pinče in šnavcerje. Standard FCI ga opisuje kot dostojanstvenega, samozavestnega in obvladanega, prijaznega, nezahtevnega, pametnega in družabnega; ima grobo, gosto dvojno dlako z bujnimi obrvmi, brki in brado. Dovoljeni sta le črna barva in črna s posameznimi sivimi dlakami. Standard navaja za samce 72–76 cm in 50–60 kg, za samice 68–72 cm in 45–50 kg; pes te velikosti doseže odraslo težo navadno pri 18–24 mesecih. Royal Kennel Club navaja življenjsko dobo več kot 10 let.",
+        "Royal Kennel Club navaja več kot 2 uri gibanja in česanje vsak dan, veliko hišo z vrtom ter dlako, ki ne izpada. PetMD piše, da je pasma predana družini in se z otroki lahko dobro razume pod nadzorom, da je zgodnja in dosledna socializacija pomembna ter da se je treba zaradi nevarnosti zasuka želodca izogibati napornemu gibanju tik pred obrokom in po njem. VCA navaja kot najprimernejše starejše otroke in priporoča striženje pri frizerju vsakih šest do osem tednov.",
+      ],
+      sources: ["S985", "S986", "S989", "S990", "S10"],
+    },
 
     norwegian_elkhound: {
       aka: "norveški losovec, norveski losovec, losovec, norveški elkhund, elkhound, Norwegian Elkhound, Norsk Elghund Grå",
