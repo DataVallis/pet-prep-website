@@ -54,11 +54,11 @@ export const nb: PartnerLocalePack = {
     htmlLang: "nb",
     company: "PetPrep (selskap under stiftelse)",
     title: "Pressemappe",
-    tagline: "Klar for et dyr. Der for det hele livet.",
+    tagline: "Klar for et kjæledyr. Der for hele livet.",
     what: {
       heading: "Hva PetPrep er",
       paragraphs: [
-        "PetPrep er en app med et dyreleksikon som hjelper en familie med å forberede seg på en hund eller katt før den flytter inn. I en utfordring på 12 uker tar barnet seg av et realistisk KI-kjæledyr, mens forelderen ser i en oversikt hvordan stellet faktisk går.",
+        "PetPrep er en app med et dyreleksikon som hjelper en familie med å forberede seg på en hund eller katt før den flytter inn. I en utfordring på 12 uker tar barnet seg av et realistisk AI-kjæledyr, mens forelderen ser i en oversikt hvordan stellet faktisk går.",
         "Raseleksikonet forklarer hva hvert dyr trenger, med oppgitte kilder. Hvert tall kan spores til en kilde, og alt partnerinnhold er merket.",
       ],
     },
@@ -74,16 +74,16 @@ export const nb: PartnerLocalePack = {
         ["Sponsing av serien «12 Weeks»", "Sponsoren nevnes i episoden og beskrivelsen. Sponsoren redigerer ikke serien."],
         ["Sponset innhold på petprep.si", "Et merket innlegg ved siden av en raseside eller i kunnskapsbasen, uten innflytelse på innhold og kilder."],
         ["Forsikringsselskaper", "Fast sponsing eller betaling per formidlet kontakt. Kontakt bare med forelderens uttrykkelige samtykke. Formidling av kontakter er under forberedelse."],
-        ["Grunnleggende partner i katalogen", "Veterinærer, hundeskoler, hundefrisører, oppdrettere: en fremhevet oppføring. 190 € i året, fast pris, antall plasser begrenset per land."],
+        ["Grunnleggende partner i katalogen", "Dyrleger, hundeskoler, hundefrisører, oppdrettere: en fremhevet oppføring. 190 € i året, fast pris, antall plasser begrenset per land."],
         ["Dyrehjem og foreninger", "En gratis oppføring og mulighet til å anbefale PetPrep til dem som adopterer."],
       ],
     },
     examples: {
       heading: "Eksempler på innhold",
       items: [
-        ["Appen", "En utfordring på 12 uker med et realistisk KI-kjæledyr og en oversikt for foreldre."],
+        ["Appen", "En utfordring på 12 uker med et realistisk AI-kjæledyr og en oversikt for foreldre."],
         ["Raseleksikon", "{breeds} {breeds|one=rase|other=raser} ({dogs} {dogs|one=hund|other=hunder}, {cats} {cats|one=katt|other=katter}) med kilder, status per {date}."],
-        ["Serien «12 Weeks»", "En videoserie som følger 12 uker med kjæledyrstell; et sted for omtale av en sponsor."],
+        ["Serien «12 Weeks»", "En videoserie som følger 12 uker med kjæledyrstell; et sted for omtale av en sponsor."],
       ],
     },
     never: {
@@ -117,10 +117,10 @@ export const nb: PartnerLocalePack = {
         heading: "Slik kan vi samarbeide",
         columns: 3,
         items: [
-          { title: "Sponsing av serien «12 Weeks»", text: "Serien følger 12 uker med kjæledyrstell. Sponsoren nevnes i episoden og beskrivelsen; sponsoren redigerer ikke serien." },
+          { title: "Sponsing av serien «12 Weeks»", text: "Serien følger 12 uker med kjæledyrstell. Sponsoren nevnes i episoden og beskrivelsen; sponsoren redigerer ikke serien." },
           { title: "Sponset innhold på petprep.si", text: "Et innlegg ved siden av en raseside eller i kunnskapsbasen. Det er alltid merket som sponset, og sponsoren har ingen innflytelse på siden eller kildene som oppgis." },
           { title: "Forsikringsselskaper", text: "Betaling per formidlet kontakt eller en fast sponsing. Vi gir bare en kontakt videre med forelderens uttrykkelige samtykke, og aldri opplysninger om et barn. Formidling av kontakter er under forberedelse og ikke tilgjengelig ennå." },
-          { title: "Grunnleggende partner i katalogen", text: "For veterinærer, hundeskoler, hundefrisører og oppdrettere: en fremhevet oppføring med logo, beskrivelse og lenke. 190 € i året; prisen er låst for grunnleggende partnere. Antall plasser er begrenset per land." },
+          { title: "Grunnleggende partner i katalogen", text: "For dyrleger, hundeskoler, hundefrisører og oppdrettere: en fremhevet oppføring med logo, beskrivelse og lenke. 190 € i året; prisen er låst for grunnleggende partnere. Antall plasser er begrenset per land." },
           { title: "Dyrehjem og foreninger", text: "Oppføringen er gratis. Du kan anbefale PetPrep til dem som adopterer, slik at de er bedre forberedt når dyret kommer." },
         ],
       },
