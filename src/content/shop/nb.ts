@@ -26,7 +26,7 @@ export const nb: ShopCopy = {
     redeemed: "Dette gavekortet er allerede løst inn.",
     printHint: "Skriv ut gavekortet nedenfor på et A4-ark og skriv hilsenen din for hånd.",
     downloadsHeading: "Filene dine",
-    downloadsLead: "PDF, A4. Lenkene her virker i 24 timer, lenkene i e-posten i 30 dager.",
+    downloadsLead: "PDF, A4. Lenkene her virker i 24 timer, lenkene i e-posten i 30 dager.",
     download: "Last ned",
     manualHeading: "Skriv ut et gavekort med koden din",
     manualLead: "Har du koden fra e-posten vår? Lim den inn her for å skrive ut gavekortet på nytt.",

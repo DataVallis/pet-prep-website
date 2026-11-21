@@ -509,9 +509,9 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Slovenia", HR: "Kroatia", GB: "Storbritannia", US: "USA", AU: "Australia" },
     vetsTitle: "Dyrleger og dyrlegevakter, land for land",
     vetsIntro: "Hjemme eller på ferie: velg land, filtrer etter region eller sted, eller vis bare klinikker som har åpent hele døgnet. Hver oppføring lenker til siden vi hentet opplysningene fra – ring før du drar dit, for åpningstidene kan endre seg.",
-    vetsStats: ["Veterinærer","Vaktordninger","Giftlinjer","Land"],
+    vetsStats: ["Dyrleger","Vaktordninger","Giftlinjer","Land"],
     vets: {
-      chooseCountry: "Velg et land", choosePrompt: "Velg et land ovenfor for å se veterinærer, vaktordninger og giftlinjer der.", typeToSearch: "Skriv for å søke …", noMatch: "Ingen treff",
+      chooseCountry: "Velg et land", choosePrompt: "Velg et land ovenfor for å se dyrleger, vaktordninger og giftlinjer der.", typeToSearch: "Skriv for å søke …", noMatch: "Ingen treff",
       country: "Land", all: "Alle land", region: "Region", allRegions: "Alle regioner", search: "Sted eller navn",
       searchPlaceholder: "f.eks. Split, Málaga, Maribor", only24h: "Bare døgnåpne", results: "Treff: {n}",
       none: "Ingen treff – prøv et annet sted eller en annen region.", h24: "Døgnåpent", dutyRota: "Vaktliste", poisonLine: "Giftinformasjon",
