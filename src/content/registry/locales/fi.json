@@ -969,7 +969,17 @@
       "synonyms": [
         "Mainecoon",
         "Maine coon cat"
-      ]
+      ],
+      "colours": {
+        "brown": "Ruskea",
+        "red": "Punainen",
+        "silver": "Hopea",
+        "cream": "Kerma",
+        "blue-grey": "Siniharmaa",
+        "black": "Musta",
+        "white": "Valkoinen",
+        "tortoiseshell": "Kilpikonnankuvioinen"
+      }
     },
     "british_shorthair": {
       "name": "Brittiläinen lyhytkarva",
@@ -979,14 +989,31 @@
         "Brittiläinen sininen",
         "British shorthair",
         "BSH"
-      ]
+      ],
+      "colours": {
+        "blue-grey": "Siniharmaa",
+        "black": "Musta",
+        "cream": "Kerma",
+        "lilac": "Liila",
+        "white": "Valkoinen",
+        "red": "Punainen",
+        "silver": "Hopea",
+        "tortoiseshell": "Kilpikonnankuvioinen"
+      }
     },
     "ragdoll": {
       "name": "Ragdoll",
       "slug": "ragdoll",
       "synonyms": [
         "Rag doll"
-      ]
+      ],
+      "colours": {
+        "seal-point": "Seal point",
+        "blue-point": "Blue point",
+        "lilac-point": "Lilac point",
+        "red-point": "Red point",
+        "cream-point": "Cream point"
+      }
     },
     "siberian_cat": {
       "name": "Siperiankissa",
@@ -995,7 +1022,17 @@
         "Siperialainen kissa",
         "Siperian metsäkissa",
         "Siberian cat"
-      ]
+      ],
+      "colours": {
+        "brown": "Ruskea",
+        "silver": "Hopea",
+        "red": "Punainen",
+        "black": "Musta",
+        "blue-grey": "Siniharmaa",
+        "cream": "Kerma",
+        "white": "Valkoinen",
+        "tortoiseshell": "Kilpikonnankuvioinen"
+      }
     },
     "norwegian_forest_cat": {
       "name": "Norjalainen metsäkissa",
@@ -1005,7 +1042,17 @@
         "Skogkatt",
         "Norwegian forest cat",
         "Wegie"
-      ]
+      ],
+      "colours": {
+        "brown": "Ruskea",
+        "silver": "Hopea",
+        "red": "Punainen",
+        "black": "Musta",
+        "blue-grey": "Siniharmaa",
+        "cream": "Kerma",
+        "white": "Valkoinen",
+        "tortoiseshell": "Kilpikonnankuvioinen"
+      }
     },
     "bengal": {
       "name": "Bengali",
@@ -1014,7 +1061,12 @@
         "Bengalinkissa",
         "Bengal",
         "Bengal cat"
-      ]
+      ],
+      "colours": {
+        "brown-spotted": "Ruskea täplätabby",
+        "silver-spotted": "Hopea täplätabby",
+        "snow": "Snow"
+      }
     },
     "shar_pei": {
       "name": "Shar pei",
