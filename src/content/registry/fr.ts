@@ -1368,6 +1368,318 @@ const fr: RegistryCopy = {
       ],
       sources: ["C13", "C37", "C38"],
     },
+    keeshond: {
+      aka: "Keeshond, Wolfsspitz",
+      text: [
+        "Le Spitz-loup (Keeshond) est un spitz de taille moyenne originaire d’Allemagne, la variété Wolfsspitz du spitz allemand. Il porte un poil long et dressé aux nuances de gris, une épaisse crinière et de sombres « lunettes » autour des yeux (standard FCI). Le standard FCI indique une hauteur de 49 ± 6 cm ; selon la PDSA, son poids moyen est de 16 à 20 kg. Un chien de ce gabarit atteint sa taille adulte vers 12 à 15 mois (PetMD). La PDSA donne une espérance de vie de plus de 10 ans, VCA de 12 à 14 ans.",
+        "Selon la PDSA, la race a besoin d’une heure d’exercice par jour au maximum, et son épais double pelage demande un brossage quotidien. Les Spitz-loups sont d’excellents chiens de famille : ils s’entendent avec les autres animaux du foyer et répondent bien à l’éducation, avec du temps et de la patience. VCA les décrit comme joueurs et attentionnés avec les enfants, conseille un bain environ une fois par mois et signale une mue plus abondante que la moyenne ; leur pelage épais peut aussi les rendre sensibles à la chaleur.",
+      ],
+      sources: ["S246", "S709", "S710", "S10"],
+    },
+    standard_schnauzer: {
+      aka: "Mittelschnauzer, Standard Schnauzer, Schnauzer",
+      text: [
+        "Le Schnauzer moyen est originaire d’Allemagne. La FCI le répertorie simplement sous le nom de Schnauzer, parmi les types pinscher et schnauzer. Son standard décrit un chien de taille moyenne, robuste, plutôt trapu que fin, au poil dur, rude et dense, aux oreilles tombantes et à la queue naturelle. Il indique une hauteur de 45–50 cm et un poids de 14–20 kg pour les mâles comme pour les femelles ; les couleurs sont poivre et sel et noir uni. Un chien de ce gabarit atteint sa taille adulte vers 12 à 15 mois (PetMD). Le Royal Kennel Club donne une espérance de vie de plus de 10 ans, VCA de 12 à 14 ans.",
+        "Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour. Selon lui, la race convient à une petite maison avec un petit ou moyen jardin, en ville comme à la campagne, et son pelage demande un entretien plus d’une fois par semaine. La PDSA décrit des chiens doux et patients, qui s’entendent bien avec les enfants s’ils les côtoient dès leur plus jeune âge, et dont le pelage se brosse deux à trois fois par semaine. D’après VCA, la race apprend vite mais s’ennuie vite aussi : jeux et tours lui offrent la stimulation mentale dont elle a besoin. PetMD recommande un bain chaque mois, la coupe des griffes, le nettoyage des oreilles chaque semaine ou toutes les deux semaines, et un passage chez le toiletteur chaque trimestre.",
+      ],
+      sources: ["S10", "S711", "S712", "S714", "S715", "S716", "S717"],
+    },
+    english_setter: {
+      aka: "English Setter, Laverack Setter, Llewellin Setter",
+      text: [
+        "Le setter anglais est un élégant chien d’arrêt originaire de Grande-Bretagne, sélectionné pour trouver le gibier à plumes. Le standard FCI décrit un chien de taille moyenne, aux lignes nettes et au mouvement élégant, dont le poil blanc est moucheté de couleur : « belton » bleu, orange, citron ou foie, ou tricolore. Il indique une hauteur de 65–68 cm pour les mâles et de 61–65 cm pour les femelles. Selon la PDSA, le poids moyen est de 22 à 29 kg. Un chien de ce gabarit atteint sa taille adulte vers 15 à 18 mois (PetMD), et le Royal Kennel Club donne une espérance de vie de plus de 10 ans.",
+        "Le Royal Kennel Club recommande plus de 2 heures d’exercice par jour et un entretien du pelage plus d’une fois par semaine. Selon lui, la race perd ses poils et convient à une grande maison avec un grand jardin ; il la classe en catégorie 1 du programme Breed Watch. La PDSA écrit que les setters anglais adorent les enfants et les autres animaux, ce qui en fait des chiens de famille parfaits, et conseille un brossage deux à trois fois par semaine. PetMD suggère un bain toutes les six à huit semaines et précise qu’ils n’aiment pas rester seuls longtemps ; VCA mentionne un peu de tonte et de taille chaque mois.",
+      ],
+      sources: ["S730", "S731", "S732", "S733", "S734", "S10"],
+    },
+    dogue_de_bordeaux: {
+      aka: "Bordeaux Mastiff, French Mastiff, Bordeauxdogge, DDB",
+      text: [
+        "Le Dogue de Bordeaux est un puissant chien de type molossoïde originaire de France. Le standard FCI décrit un chien trapu, athlétique et imposant, calme, équilibré et très attaché à son maître, au poil fin et court, fauve dans toutes ses nuances, de l’acajou à l’isabelle. Il indique une hauteur de 60–68 cm pour les mâles et de 58–66 cm pour les femelles, et un poids d’au moins 50 kg pour les mâles et d’au moins 45 kg pour les femelles. PetMD donne 110 à 145 livres (environ 50–66 kg) pour les mâles et 99 à 120 livres (environ 45–54 kg) pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 18 à 24 mois (PetMD). Les sources divergent sur l’espérance de vie : PetMD indique que ces chiens ne vivent généralement que 5 à 8 ans, tandis que le Royal Kennel Club annonce plus de 10 ans.",
+        "Le Royal Kennel Club recommande jusqu’à 1 heure d’exercice par jour et un toilettage une fois par semaine. Selon lui, la race perd ses poils et convient à une grande maison avec un grand jardin ; il la classe en catégorie 3 du programme Breed Watch. D’après la PDSA, les Dogues s’entendent généralement bien avec les enfants plus âgés, mais elle ne les recommande ni avec de jeunes enfants ni pour des propriétaires novices. Elle signale qu’ils bavent beaucoup et ont un instinct de prédation très marqué, et conseille de nettoyer régulièrement les plis du visage et de laisser passer un moment après le repas avant l’exercice. Selon PetMD, leur museau court peut rendre la respiration plus difficile par temps chaud.",
+      ],
+      sources: ["S755", "S756", "S757", "S759", "S10"],
+    },
+    flat_coated_retriever: {
+      aka: "Flat Coated Retriever, Flat-Coated Retriever, Flatcoat, Flattie, Flat coat",
+      text: [
+        "Le retriever à poil plat est un chien de chasse vif et actif originaire de Grande-Bretagne, sélectionné pour rapporter le gibier. Le standard FCI décrit un poil dense, bien couché, avec des franges abondantes sur les membres et la queue, uniquement noir ou foie, et un tempérament optimiste, amical, confiant et bienveillant. Il indique une hauteur préférée de 59–61,5 cm pour les mâles et de 56,5–59 cm pour les femelles, et un poids préféré de 27–36 kg pour les mâles et de 25–32 kg pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 15 à 18 mois (PetMD). Le Royal Kennel Club donne une espérance de vie de moins de 10 ans, alors qu’une étude britannique de 2024 présentée par Dogs Trust trouve une médiane de 11,7 ans.",
+        "Le Royal Kennel Club recommande plus de 2 heures d’exercice par jour et un entretien du pelage plus d’une fois par semaine. Selon lui, la race perd ses poils et convient à une grande maison avec un grand jardin ; il la classe en catégorie 1 du programme Breed Watch. PetMD qualifie les retrievers à poil plat de merveilleux chiens de famille, qui s’entendent généralement bien avec les enfants et les autres animaux, surtout si les présentations sont soignées et la socialisation bonne. Il suggère un brossage deux fois par semaine, un nettoyage des oreilles chaque semaine ou toutes les deux semaines, un bain et une coupe des griffes tous les mois ou tous les deux mois, et d’éviter l’exercice juste avant ou juste après le repas.",
+      ],
+      sources: ["S761", "S762", "S763", "S123", "S10"],
+    },
+    border_terrier: {
+      aka: "Border-terrier",
+      text: [
+        "Le Border Terrier est un petit terrier de travail originaire de Grande-Bretagne. Le standard FCI le décrit comme avant tout un terrier de travail, capable de suivre un cheval, alliant activité et ardeur. Il décrit un poil dur et dense avec un sous-poil serré, des yeux foncés à l’expression vive et de petites oreilles en V, dans les couleurs rouge, froment, grisonné et feu, ou bleu et feu. Il indique un poids de 5,9–7,1 kg pour les mâles et de 5,1–6,4 kg pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 9 à 12 mois (PetMD). Le Royal Kennel Club donne une espérance de vie de plus de 12 ans ; une étude britannique de 2024 (McMillan et al.) trouve une médiane de 14,2 ans.",
+        "Le Royal Kennel Club recommande jusqu’à 1 heure d’exercice par jour et un entretien du pelage plus d’une fois par semaine. Selon lui, la race perd ses poils et convient à un appartement ; il la classe en catégorie 1 du programme Breed Watch. La PDSA écrit que, bien socialisés, les Border Terriers adorent passer du temps avec des enfants de tous âges, mais recommande une surveillance. Elle prévient qu’ils peuvent développer une anxiété de séparation s’ils restent seuls et qu’ils ont un fort instinct de prédation : ils ne doivent pas vivre avec des lapins, des cochons d’Inde ou des rats. Elle conseille de les brosser environ deux fois par semaine et de laisser passer un moment après le repas avant l’exercice. Woodgreen suggère un foyer avec des enfants un peu plus âgés.",
+      ],
+      sources: ["S768", "S769", "S770", "S771", "S773", "S10"],
+    },
+    leonberger: {
+      aka: "Leonberg, Leonberger",
+      text: [
+        "Le Léonberg est un grand chien originaire d’Allemagne. Le standard FCI décrit un chien grand, fort, musclé mais élégant, au poil long et près du corps, aux oreilles pendantes et à la queue bien garnie. Sa robe est jaune lion, rouge, brun rougeâtre ou sable, toujours avec un masque noir. Le standard indique une hauteur de 72–80 cm pour les mâles et de 65–75 cm pour les femelles. La PDSA donne un poids moyen de 30 à 50 kg pour les mâles et les femelles, et une espérance de vie de moins de 10 ans. Comme il s’agit d’une race géante, il atteint sa taille adulte vers 18 à 24 mois (catégorie de gabarit PetMD).",
+        "Le Royal Kennel Club recommande plus de 2 heures d’exercice par jour et une grande maison avec un grand jardin. La PDSA qualifie les Léonbergs de géants doux et d’excellents chiens de famille. Selon Woodgreen, il faut brosser le chien deux à trois fois par semaine, l’éduquer et le socialiser très tôt vu sa taille, et il supporte mal de rester seul longtemps. Une étude britannique de 2024 (McMillan et al., présentée par Dogs Trust) donne une espérance de vie médiane de 10,0 ans.",
+      ],
+      sources: ["S783", "S781", "S10", "S780", "S784", "S123"],
+    },
+    beauceron: {
+      aka: "Berger de Beauce, Bas-rouge",
+      text: [
+        "Le Beauceron, ou Berger de Beauce, est un grand chien de berger français. Le standard FCI décrit un chien grand, solide, rustique, puissant et musclé, sans lourdeur, au poil court et épais, à la queue formant un léger crochet en J et aux doubles ergots aux membres postérieurs, noir et feu ou arlequin. Il indique une hauteur de 65–70 cm pour les mâles et de 61–68 cm pour les femelles. Le tableau des poids de l’AKC donne 70 à 110 livres (environ 32–50 kg) pour les mâles et les femelles. Un chien de ce gabarit atteint sa taille adulte vers 15 à 18 mois (catégorie de gabarit PetMD). Le Royal Kennel Club donne une espérance de vie de plus de 10 ans, PetMD de 10 à 12 ans.",
+        "Le Royal Kennel Club décrit le Beauceron comme un chien calme et sûr de lui, un compagnon fidèle et un chien de garde. Il recommande plus de 2 heures d’exercice par jour, un entretien du pelage plus d’une fois par semaine et une grande maison avec un grand jardin, et classe la race en catégorie 1 du programme Breed Watch. Selon PetMD, les Beaucerons peuvent être bons avec les jeunes enfants et les autres chiens quand les présentations sont surveillées. Ils peuvent se méfier des inconnus : les chiots doivent donc rencontrer tôt de nouvelles personnes. Ils aiment être le plus possible avec leur famille. PetMD recommande un brossage au moins une fois par semaine et aucun exercice une heure avant ni une heure après le repas.",
+      ],
+      sources: ["S790", "S268", "S10", "S787", "S791"],
+    },
+    bouvier_des_flandres: {
+      aka: "Vlaamse Koehond, Flanders Cattle Dog",
+      text: [
+        "Le Bouvier des Flandres est un chien de bouvier originaire des Flandres, en Belgique et en France. Le standard FCI décrit un chien court, compact et puissant, aux membres solides et bien musclés, au poil rude, sec et légèrement ébouriffé d’environ 6 cm, avec une moustache et une barbe fournie. Sa robe est généralement grise, bringée ou charbonnée de noir (le noir uni est aussi admis). Il indique une hauteur de 62–68 cm et un poids d’environ 35–40 kg pour les mâles, de 59–65 cm et d’environ 27–35 kg pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 15 à 18 mois (catégorie de gabarit PetMD). Une étude britannique de 2024 (McMillan et al., présentée par Dogs Trust) donne une espérance de vie médiane de 11,3 ans.",
+        "Le Royal Kennel Club décrit le Bouvier comme un chien fort et polyvalent, à l’origine conducteur de bétail. Il recommande jusqu’à 1 heure d’exercice par jour, un toilettage quotidien et une grande maison avec un grand jardin, et classe la race en catégorie 1 du programme Breed Watch. Selon PetMD, il peut être bon avec les jeunes enfants et les autres grands chiens quand les présentations sont surveillées, a un fort instinct de prédation envers les chats et les petits animaux, a besoin d’une socialisation précoce et est sujet au surpoids. PetMD recommande un brossage une à deux fois par semaine au minimum, un nettoyage des oreilles toutes les deux à trois semaines, une coupe des griffes toutes les trois à quatre semaines et aucun exercice une heure avant ni une heure après le repas.",
+      ],
+      sources: ["S797", "S10", "S123", "S795", "S798"],
+    },
+    borzoi: {
+      aka: "Borzoi, Lévrier russe, Russian Wolfhound, Russkaya Psovaya Borzaya",
+      text: [
+        "Le Barzoï, ou lévrier russe à poil long, est un lévrier originaire de Russie, sélectionné pour poursuivre le lièvre et le renard. Le standard FCI décrit un chien d’allure aristocratique, grand, sec et fort, plutôt haut sur pattes, au poil long, soyeux et ondulé, de toutes couleurs, du blanc au noir, à l’exception du brun, du bleu et de l’isabelle. Il indique une hauteur souhaitable de 75–85 cm pour les mâles et de 68–78 cm pour les femelles. La PDSA donne un poids moyen de 27 à 47 kg pour les mâles et les femelles, et une espérance de vie de plus de 10 ans ; PetMD annonce 9 à 14 ans. Un chien de ce gabarit atteint sa taille adulte vers 15 à 18 mois (catégorie de gabarit PetMD).",
+        "La PDSA recommande au minimum 1 heure d’exercice par jour, en deux promenades, avec des moments sans laisse uniquement dans un endroit clos. Elle écrit que les Barzoïs ont un instinct de prédation très marqué et ne sont pas recommandés avec de petits animaux ou de jeunes enfants. Ils conviennent à des maîtres expérimentés et ont besoin que quelqu’un soit présent à la maison la plupart du temps ; ils doivent être socialisés dès le plus jeune âge et brossés plusieurs fois par semaine. Il faut aussi laisser passer un moment entre le repas et l’exercice. PetMD recommande un brossage au moins deux à trois fois par semaine et cite la dilatation de l’estomac comme le problème de santé le plus fréquent.",
+      ],
+      sources: ["S802", "S800", "S803", "S10"],
+    },
+    japanese_chin: {
+      aka: "Chin japonais, Chin, Japanese Chin, Japanese Spaniel, Japan Chin",
+      text: [
+        "L’Épagneul japonais (Japanese Chin) est un petit chien de compagnie originaire du Japon. Le standard du Royal Kennel Club décrit un petit chien élégant, aristocratique et compact, au poil long, soyeux et abondant, noir et blanc ou rouge et blanc (jamais tricolore), au museau court et large et à l’air étonné. Il indique un poids idéal de 1,8–3,2 kg ; PetMD donne une hauteur de 8 à 11 pouces (environ 20–28 cm). Un chien de ce gabarit atteint sa taille adulte vers 8 à 12 mois (catégorie de gabarit PetMD). Une étude britannique de 2024 (McMillan et al., présentée par Dogs Trust) donne une espérance de vie médiane de 12,5 ans.",
+        "Le Royal Kennel Club recommande jusqu’à 30 minutes d’exercice par jour et un entretien du pelage plus d’une fois par semaine. Selon lui, la race perd ses poils et convient à un appartement ; il la classe en catégorie 1 du programme Breed Watch. PetMD écrit que l’Épagneul japonais a la face plate (brachycéphale) : il peut avoir du mal à respirer et supporte mal la chaleur. Par temps chaud ou humide, il faut donc le sortir aux heures les plus fraîches de la journée. PetMD précise qu’il s’entend généralement bien avec les enfants quand les interactions sont surveillées, qu’il peut développer une anxiété de séparation et qu’il faut l’inscrire tôt à des cours de socialisation. Il recommande un brossage une à deux fois par semaine, un nettoyage des oreilles toutes les deux à trois semaines et un bain environ une fois par mois.",
+      ],
+      sources: ["S806", "S10", "S123", "S805", "S809"],
+    },
+    norwich_terrier: {
+      aka: "Norwich, Terrier de Norwich",
+      text: [
+        "Le Norwich Terrier est l’un des plus petits terriers, originaire de Grande-Bretagne. Le standard FCI décrit un petit chien bas sur pattes, vif, compact et robuste, au poil dur, rude et droit qui forme une collerette autour du visage, aux oreilles droites à bout pointu, dans toutes les nuances de rouge, froment, noir et feu ou grisonné. Il indique une hauteur idéale de 25 cm. Le standard de l’UKC donne un poids idéal d’environ 12 livres (environ 5,4 kg) pour les mâles et les femelles. Un chien de ce gabarit atteint sa taille adulte vers 9 à 12 mois (catégorie de gabarit PetMD). Le Royal Kennel Club donne une espérance de vie de plus de 10 ans, PetMD de 12 à 15 ans.",
+        "Le Royal Kennel Club décrit le Norwich comme l’un des plus petits terriers, au caractère adorable. Il recommande jusqu’à 1 heure d’exercice par jour et un entretien du pelage plus d’une fois par semaine ; selon lui, la race perd ses poils et convient à un appartement. Il la classe parmi les races autochtones vulnérables. PetMD écrit que les Norwich Terriers s’entendent généralement bien avec les enfants et les autres animaux, qu’ils sont pleins d’énergie, ont besoin d’exercice et de stimulation mentale chaque jour, et qu’il faut les socialiser dès le plus jeune âge. Leur fort instinct de chasse exige une laisse solide et un jardin bien clôturé. PetMD recommande un brossage au moins deux fois par semaine, un brossage des dents au moins une fois par semaine, une coupe des griffes environ une fois par mois et un bain tous les trois mois au maximum.",
+      ],
+      sources: ["S812", "S815", "S10", "S813", "S814"],
+    },
+    miniature_bull_terrier: {
+      aka: "Miniature Bull Terrier, Mini Bull Terrier, Mini Bull, English Miniature Bull Terrier",
+      text: [
+        "Le Bull Terrier miniature est un petit terrier originaire de Grande-Bretagne. La FCI le range parmi les terriers de type bull ; selon le Royal Kennel Club, il a été reconnu pour la première fois comme variété distincte en 1943, issu de Bull Terriers plus petits, sélectionnés pour rester sous 35,5 cm (14 pouces). PetMD donne une hauteur de 10 à 14 pouces (environ 25–36 cm) et un poids de 18 à 28 livres (environ 8–13 kg). Un chien de ce gabarit atteint sa taille adulte vers 9 à 12 mois (catégorie de gabarit PetMD). Le Royal Kennel Club donne une espérance de vie de plus de 10 ans, PetMD de 11 à 13 ans.",
+        "Le Royal Kennel Club décrit la race comme courageuse, pleine de vitalité et d’un tempérament joyeux. Il recommande jusqu’à 1 heure d’exercice par jour et un toilettage une fois par semaine ; selon lui, la race perd ses poils. Il la classe parmi les races autochtones vulnérables. PetMD écrit que les Bull Terriers miniatures sont généralement affectueux et bons avec les enfants, de sympathiques compagnons de famille. Ils peuvent s’entendre avec les autres animaux s’ils sont bien socialisés, ont besoin d’exercice régulier et de stimulation mentale, et ne s’épanouissent pas s’ils restent seuls longtemps. PetMD recommande une socialisation précoce et un brossage environ une fois par semaine.",
+      ],
+      sources: ["S818", "S820", "S821", "S10"],
+    },
+    schipperke: {
+      aka: "Spitzke",
+      text: [
+        "Le Schipperke est un petit chien de berger originaire de Belgique. La FCI le range parmi les chiens de berger ; son standard décrit un chien de type lupoïde, de petites dimensions mais très solidement bâti, entièrement noir, avec collerette, crinière et culotte. Le standard FCI donne un poids de 3 à 9 kg (une moyenne de 4 à 7 kg est recherchée), et PetMD une hauteur de 10 à 13 pouces (environ 25–33 cm). Un chien de ce gabarit atteint sa taille adulte vers 9 à 12 mois (catégorie de gabarit PetMD). Une vaste étude britannique (McMillan et al., 2024) trouve une espérance de vie médiane de 14,2 ans ; le Royal Kennel Club annonce plus de 12 ans.",
+        "Selon le standard FCI, le Schipperke est un excellent petit chien de garde, débordant de vitalité, réservé envers les inconnus et très doux avec les enfants. Le Royal Kennel Club recommande jusqu’à 1 heure d’exercice par jour et un entretien du pelage plus d’une fois par semaine. Selon lui, la race perd ses poils et convient à un appartement ; il la classe en catégorie 1 du programme Breed Watch. PetMD écrit que les Schipperkes ont besoin d’activités qui occupent leur esprit et leur corps, qu’ils sont intelligents mais têtus et que certains gardent un fort instinct de prédation. Il recommande une socialisation précoce, un brossage des dents quotidien et un nettoyage des oreilles toutes les deux semaines. VCA recommande un brossage au moins deux fois par semaine.",
+      ],
+      sources: ["S824", "S825", "S826", "S827", "S828", "S771", "S10"],
+    },
+    belgian_tervuren: {
+      aka: "Tervueren, Tervuren, Belgian Tervuren",
+      text: [
+        "Le Berger belge Tervueren est la variété à poil long et fauve du Berger belge, un chien de berger originaire de Belgique. La FCI ne reconnaît qu’une seule race de Berger belge, en quatre variétés. Le standard FCI décrit un chien harmonieusement proportionné, qui allie élégance et puissance, au poil long formant collerette, culotte et queue en panache. Pour le Tervueren, il n’admet que le fauve charbonné ou le gris charbonné, avec un masque noir (fauve préféré). Il indique une hauteur d’environ 62 cm pour les mâles et 58 cm pour les femelles, et un poids d’environ 25–30 kg pour les mâles et 20–25 kg pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 12 à 15 mois (catégorie de gabarit PetMD). Le Royal Kennel Club donne une espérance de vie de plus de 10 ans, PetMD de 12 à 14 ans.",
+        "Selon le standard FCI, le Berger belge est un chien vigilant et actif, débordant d’énergie, qui ne montre ni peur ni agressivité. Le Royal Kennel Club recommande plus de 2 heures d’exercice par jour et un entretien du pelage plus d’une fois par semaine. Selon lui, la race perd ses poils et convient à une grande maison avec un grand jardin ; il la classe en catégorie 1 du programme Breed Watch. PetMD écrit que les Tervueren nouent des liens étroits avec leur famille, ont besoin de beaucoup d’activité physique et de stimulation mentale, et peuvent essayer de rassembler les enfants et les petits animaux. Il recommande une socialisation précoce, un brossage hebdomadaire (presque quotidien pendant la mue), un nettoyage des oreilles chaque semaine ou toutes les deux semaines et un bain toutes les quatre à six semaines.",
+      ],
+      sources: ["S312", "S313", "S830", "S832", "S10"],
+    },
+    toy_fox_terrier: {
+      aka: "American Toy Terrier, Amertoy, TFT",
+      text: [
+        "Le Toy Fox Terrier est un petit terrier américain du groupe Toy de l’AKC. Le standard de l’AKC décrit un chien d’agrément bien équilibré, d’allure athlétique, au poil court et satiné, aux oreilles dressées et pointues, au corps en majorité blanc et à la tête tricolore, blanc et feu, blanc et noir ou blanc, chocolat et feu. PetMD donne un poids de 4 à 9 livres (environ 1,8–4 kg) et une hauteur de 8,5 à 11,5 pouces (environ 21–29 cm). Un chien de ce gabarit atteint sa taille adulte vers 8 à 12 mois (PetMD). PetMD et WebMD donnent une espérance de vie de 13 à 15 ans.",
+        "Selon le standard de l’AKC, le Toy Fox Terrier est intelligent, alerte, amical et fidèle à ses maîtres. PetMD recommande au moins une heure d’exercice par jour, un brossage une à deux fois par semaine ainsi qu’une éducation et une socialisation précoces, et précise que la race garde un fort instinct de prédation. WebMD écrit que les Toy Fox Terriers sont de formidables compagnons pour des enfants plus âgés et respectueux, mais qu’ils ne sont pas recommandés dans les familles avec de jeunes enfants et peuvent montrer de l’anxiété de séparation s’ils restent longtemps seuls. Il recommande un brossage des dents quotidien, un nettoyage des oreilles chaque semaine et une coupe des griffes chaque mois.",
+      ],
+      sources: ["S833", "S834", "S835", "S10"],
+    },
+    gordon_setter: {
+      aka: "Gordon Setter, Gordon, Black and Tan Setter",
+      text: [
+        "Le setter Gordon est un grand chien d’arrêt noir et feu originaire d’Écosse (FCI groupe 7, chiens d’arrêt ; pays d’origine : Grande-Bretagne). Le standard FCI décrit un chien racé, taillé pour le galop, au poil d’un noir de jais profond et brillant, avec des marques feu rouge châtaigne. Il indique une hauteur de 66 cm et un poids de 29,5 kg pour les mâles, 62 cm et 25,5 kg pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 15 à 18 mois (PetMD), et le Royal Kennel Club donne une espérance de vie de plus de 10 ans.",
+        "Selon le standard FCI, le setter Gordon est hardi, sociable et d’un caractère bienveillant et égal ; la PDSA décrit une race amicale et intelligente qui aime avoir de l’occupation. Le Royal Kennel Club recommande plus de deux heures d’exercice par jour, une grande maison et un grand jardin, et la PDSA précise que son poil épais demande un brossage quotidien. PetMD conseille de limiter l’exercice dans l’heure qui précède et qui suit les repas, de socialiser tôt les chiots et de soigner particulièrement le rappel, car la race a un fort instinct de prédation. WebMD recommande un brossage des dents quotidien et un bain environ une fois par mois, et précise que la race n’est que moyennement adaptée aux jeunes enfants.",
+      ],
+      sources: ["S841", "S842", "S843", "S844", "S845", "S10"],
+    },
+    afghan_hound: {
+      aka: "Afghan Hound, Afghan, Tazi, Baluchi Hound",
+      text: [
+        "Le lévrier afghan est un grand lévrier à poil long originaire d’Afghanistan (FCI groupe 10, lévriers ; pays d’origine : Afghanistan, sous patronage britannique). Le standard FCI décrit un chien qui donne une impression de force et de dignité, alliant vitesse et puissance, au poil long et très fin ; toutes les couleurs sont admises, sauf le merle. Il indique une hauteur idéale de 68–74 cm pour les mâles et de 63–69 cm pour les femelles. Le standard de l’AKC donne un poids d’environ 60 livres (27 kg) pour les mâles et d’environ 50 livres (23 kg) pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 15 à 18 mois (PetMD), et le Royal Kennel Club donne une espérance de vie de plus de 10 ans.",
+        "Selon le standard FCI, le lévrier afghan est digne et distant, avec une certaine ardeur farouche. Le Royal Kennel Club recommande plus de deux heures d’exercice par jour, un toilettage quotidien, une grande maison et un grand jardin. La PDSA écrit que le poil long et soyeux doit être brossé chaque jour, que les lévriers afghans, bien socialisés, s’entendent bien avec les enfants, et que leur fort instinct de poursuite impose de la prudence avec les autres animaux. PetMD conseille d’attendre au moins une heure après le repas avant l’exercice, et un bain chaque semaine ou toutes les deux semaines au minimum. WebMD recommande un brossage des dents quotidien.",
+      ],
+      sources: ["S849", "S850", "S851", "S852", "S853", "S854", "S10"],
+    },
+    australian_silky_terrier: {
+      aka: "Australian Silky Terrier, Silky Terrier, Silky",
+      text: [
+        "Le Silky Terrier australien est un petit terrier d’agrément très vif originaire d’Australie (FCI groupe 3, terriers ; section terriers d’agrément), connu en Amérique du Nord sous le nom de Silky Terrier. Le standard FCI demande un poil plat, fin, brillant et de texture soyeuse, bleu et feu – toutes les nuances de bleu et feu sont acceptables, l’argent et le blanc ne le sont pas – et une hauteur de 23–26 cm pour les mâles, les femelles étant un peu plus petites. Les standards ne donnent pas de poids (« en proportion de la hauteur ») ; PetMD et WebMD l’estiment à environ 10 livres (environ 4,5 kg). Un chien de ce gabarit atteint sa taille adulte vers 8 à 12 mois (PetMD), et le Royal Kennel Club donne une espérance de vie de plus de 12 ans (PetMD et WebMD : 13 à 15 ans).",
+        "Selon le standard FCI, c’est un terrier d’agrément courageux et digne, sans égal comme compagnon. Le Royal Kennel Club recommande jusqu’à 30 minutes d’exercice par jour et un toilettage quotidien, et indique que la race convient à un appartement. PetMD écrit que les Silkies s’entendent bien avec les autres animaux et les enfants s’ils sont bien socialisés dès le plus jeune âge. Il recommande des cours de socialisation avant 16 semaines et un nettoyage des oreilles toutes les deux à trois semaines, et conseille de le garder en laisse ou dans un espace clos en raison de son instinct de prédation. WebMD recommande un brossage des dents quotidien et un bain environ une fois par mois.",
+      ],
+      sources: ["S855", "S856", "S857", "S858", "S10"],
+    },
+    parson_russell_terrier: {
+      aka: "Parson Jack Russell Terrier, Parson Terrier, Parson Russell, PRT",
+      text: [
+        "Le Parson Russell Terrier est un terrier de travail robuste, actif et agile originaire de Grande-Bretagne, sélectionné à l’origine pour le travail du renard (FCI groupe 3, terriers ; section terriers de grande et moyenne taille). C’est une race différente du Jack Russell Terrier : le Kennel Club l’a reconnue pour la première fois en 1990 sous le nom de Parson Jack Russell Terrier. Le standard FCI demande un chien blanc ou à dominante blanche avec des marques feu, citron ou noires, ou toute combinaison de ces couleurs, un poil dur, brisé ou lisse, et une hauteur idéale de 36 cm pour les mâles et de 33 cm pour les femelles. La PDSA donne un poids moyen de 6 à 8 kg. Un chien de ce gabarit atteint sa taille adulte vers 9 à 12 mois (PetMD), et le Royal Kennel Club donne une espérance de vie de plus de 12 ans (WebMD : 13 à 15 ans).",
+        "Selon le standard FCI, c’est une race hardie et amicale. Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour et un toilettage une fois par semaine. La PDSA écrit que ces chiens sont pleins d’énergie, ont idéalement besoin de 1 à 2 heures d’exercice par jour, s’entendent bien avec les enfants et font d’excellents chiens de famille ; elle précise qu’ils doivent être socialisés très jeunes avec les autres animaux de la famille. PetMD note que certains ont un fort instinct de prédation et recommande un brossage des dents quotidien, un nettoyage des oreilles toutes les deux semaines et un bain toutes les deux à quatre semaines. WebMD ajoute qu’ils n’aiment pas rester seuls et peuvent souffrir d’anxiété de séparation.",
+      ],
+      sources: ["S864", "S865", "S866", "S867", "S868", "S10"],
+    },
+    wire_fox_terrier: {
+      aka: "Fox terrier à poil dur, Fox-terrier poil dur, Wire Fox Terrier, Wirehaired Fox Terrier",
+      text: [
+        "Le Fox-terrier à poil dur est un terrier actif et vif originaire de Grande-Bretagne (FCI groupe 3, terriers ; section terriers de grande et moyenne taille) – à ne pas confondre avec le Toy Fox Terrier. Le standard FCI demande une bonne ossature et de la force dans un petit gabarit, sans lourdeur ni grossièreté, un poil dense et très dur avec un sous-poil plus doux, le blanc dominant avec des marques noires, noires et feu ou feu, et une hauteur au garrot ne dépassant pas 39 cm pour les mâles, les femelles étant un peu moins grandes. Le standard de l’AKC indique 18 livres pour un mâle en condition d’exposition et environ deux livres de moins pour une femelle, avec une marge d’une livre de part et d’autre (environ 7,7–8,6 kg pour les mâles et 6,8–7,7 kg pour les femelles). Un chien de ce gabarit atteint sa taille adulte vers 9 à 12 mois (PetMD), et le Royal Kennel Club donne une espérance de vie de plus de 12 ans (PetMD : 12 à 15 ans).",
+        "Selon le standard FCI, c’est une race amicale, ouverte et sans peur. Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour et un entretien du pelage plus d’une fois par semaine. La PDSA écrit que les Fox-terriers adorent jouer et explorer, font d’excellents chiens de famille et demandent un brossage une à deux fois par semaine. WebMD les décrit comme de formidables compagnons pour les enfants, mais conseille de toujours les surveiller auprès des jeunes enfants. PetMD précise qu’il faut les surveiller de près avec les petits animaux en raison de leur fort instinct de prédation, et recommande de bien socialiser le chiot, un brossage des dents quotidien, un bain environ une fois par mois et un stripping (épilage à la main) trois à quatre fois par an. WebMD recommande une coupe des griffes environ une fois par mois.",
+      ],
+      sources: ["S871", "S872", "S873", "S874", "S875", "S876", "S10"],
+    },
+    manchester_terrier: {
+      aka: "Terrier de Manchester, Manchester-terrier, Black and Tan Terrier, Manchester",
+      text: [
+        "Le Manchester Terrier est un terrier compact et élégant originaire de Grande-Bretagne (FCI groupe 3, terriers ; section terriers de grande et moyenne taille) – la taille standard, pas le toy. Le standard FCI demande un chien compact, élégant et bien constitué, solidement charpenté, au poil serré, lisse, court et brillant, uniquement noir de jais et feu acajou intense, et indique une hauteur idéale au garrot de 41 cm pour les mâles et de 38 cm pour les femelles. Le standard du Club canin canadien donne un poids de 5,5 à 10 kg (12 à 22 livres). Un chien de ce gabarit atteint sa taille adulte vers 9 à 12 mois (PetMD), et la PDSA donne une espérance de vie de plus de 12 ans (WebMD : 15 à 17 ans).",
+        "Selon le standard FCI, c’est une race vive, alerte, gaie et sportive, perspicace et dévouée. La PDSA recommande jusqu’à une heure d’exercice par jour et indique qu’un brossage par semaine suffit généralement. PetMD écrit que les Manchesters s’entendent bien avec les enfants, surtout s’ils les rencontrent dès le stade de chiot, et recommande de socialiser le chiot dès son arrivée à la maison. Il note aussi un fort instinct de prédation, hérité de leur passé de chasseurs de rats : ils ne conviennent pas forcément aux foyers avec des hamsters ou des gerbilles. WebMD conseille de ne jamais laisser de jeunes enfants seuls avec un chien, recommande un brossage des dents quotidien et précise que la race est sensible au froid, si bien qu’un manteau ou un pull peut être nécessaire.",
+      ],
+      sources: ["S888", "S889", "S890", "S891", "S892", "S10"],
+    },
+    tibetan_terrier: {
+      aka: "Terrier du Tibet, Tibetan Terrier, Tibet Terrier",
+      text: [
+        "Le Terrier tibétain est un chien de compagnie robuste, de taille moyenne, à poil long, originaire du Tibet (FCI groupe 9, chiens de compagnie et d’agrément ; section races tibétaines) – un terrier seulement de nom. Le standard FCI demande un format généralement carré, un double poil avec un poil de couverture abondant, fin et long, droit ou ondulé, des oreilles pendantes frangées et une queue portée en boucle sur le dos. Toutes les couleurs sont admises, sauf chocolat, foie ou merle. Les mâles mesurent 36–41 cm au garrot, les femelles étant un peu plus petites. Le standard du Club canin canadien donne un poids de 8,25 à 13,5 kg (18 à 30 livres). Un chien de ce gabarit atteint sa taille adulte vers 12 à 15 mois (PetMD), et la PDSA donne une espérance de vie de plus de 12 ans (PetMD : 15 à 16 ans).",
+        "Selon le standard FCI, c’est une race enjouée et de bon caractère, ouverte, alerte et intelligente, mais avare de démonstrations d’affection envers les inconnus. La PDSA décrit les Terriers tibétains comme des chiens doux, amicaux et affectueux, qui font de bons chiens de famille ; elle recommande environ une heure d’exercice par jour et indique qu’un toilettage quotidien est indispensable. PetMD note qu’ils peuvent développer une anxiété de séparation s’ils restent seuls longtemps et recommande des cours de socialisation pour le chiot avant 16 semaines. Selon lui, ils peuvent être bons avec les jeunes enfants et les autres chiens quand les présentations sont surveillées ; WebMD indique en revanche que certains ont du mal avec les jeunes enfants et les autres chiens. WebMD recommande un brossage des dents quotidien.",
+      ],
+      sources: ["S904", "S905", "S906", "S907", "S909", "S10"],
+    },
+    greyhound: {
+      aka: "Lévrier anglais, English Greyhound",
+      text: [
+        "Le Greyhound est un grand lévrier originaire de Grande-Bretagne ; la FCI le range dans le groupe 10, parmi les lévriers à poil ras. Le standard FCI décrit un chien solidement bâti, bien d’aplomb, aux proportions généreuses, à la puissance musculaire et de forme symétrique, intelligent, doux, affectueux et d’humeur égale. Son poil est fin et serré, noir, blanc, rouge, bleu, fauve, fauve clair ou bringé, ou l’une de ces couleurs avec du blanc. Il indique une hauteur idéale de 71–76 cm pour les mâles et de 68–71 cm pour les femelles. Le standard de l’AKC donne un poids de 65 à 70 livres (environ 29,5–31,8 kg) pour les mâles et de 60 à 65 livres (environ 27,2–29,5 kg) pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 15 à 18 mois (PetMD). Une étude britannique VetCompass, portant sur des Greyhounds suivis par des vétérinaires, donne une longévité médiane de 11,4 ans ; la PDSA indique une espérance de vie de plus de 10 ans.",
+        "La PDSA écrit que les Greyhounds ne sont pas excessivement énergiques : ils ont besoin d’environ une heure d’exercice par jour et préfèrent quelques bonnes courses à des kilomètres de marche. Leur poil ras se brosse une fois par semaine. Bien socialisés dès le stade de chiot, ils peuvent faire de bons chiens de famille, mais ils ont un fort instinct de poursuite : PetMD écrit que leur instinct de prédation très marqué en fait de mauvais candidats pour les foyers avec des chats ou d’autres petits animaux. WebMD recommande un brossage des dents quotidien et note que, sans sous-poil isolant, les Greyhounds peuvent être sensibles aux températures extrêmes.",
+      ],
+      sources: ["S912", "S913", "S914", "S916", "S917", "S918", "S920", "S10"],
+    },
+    xoloitzcuintli: {
+      aka: "Xoloitzcuintli, Xolo, Chien nu du Mexique, Chien nu mexicain, Mexican Hairless Dog",
+      text: [
+        "Le Xoloitzcuintle est un ancien chien de type primitif originaire du Mexique ; la FCI le range dans le groupe 5, parmi les types primitifs. Le standard FCI décrit un chien silencieux et calme, gai, alerte et intelligent, jamais agressif, en deux variétés identiques à l’exception du poil et de la dentition : nue, à la peau lisse et dénudée, et à poil, au poil court et plat. Il se décline en trois tailles (petite, intermédiaire, standard) – 25–35 cm, 35–45 cm et 46–60 cm au garrot – et en noir, gris noirâtre, gris ardoise, gris foncé, rougeâtre, foie, bronze ou blond, avec une préférence pour la peau foncée et uniforme. WebMD donne un poids de 10 à 15 livres pour la petite taille (toy), de 15 à 30 livres pour l’intermédiaire (miniature) et de 30 à 55 livres pour le standard (environ 4,5–24,9 kg toutes tailles confondues). Un chien de taille standard atteint sa taille adulte vers 12 à 15 mois (PetMD). PetMD et WebMD donnent tous deux une espérance de vie de 13 à 18 ans.",
+        "PetMD écrit que les Xolos ont besoin d’environ 20 minutes d’exercice chaque jour. La peau nue demande des soins : PetMD conseille une crème solaire pour chiens avant de sortir, jamais une crème solaire pour humains, et VCA indique qu’ils conviennent surtout aux climats chauds et ont besoin d’un pull quand il fait plus frais. WebMD décrit le Xolo comme un bon chien pour les familles avec enfants et recommande un brossage des dents deux à trois fois par semaine. PetMD ajoute que les interactions avec les enfants doivent toujours être surveillées, que les chiots doivent être socialisés pour ne pas devenir méfiants envers les inconnus, et que la race a un fort instinct de prédation envers les petits animaux.",
+      ],
+      sources: ["S923", "S924", "S926", "S927", "S928", "S10"],
+    },
+    spinone_italiano: {
+      aka: "Spinone, Spinone Italiano, Italian Spinone, Italian Wire-haired Pointer",
+      text: [
+        "Le Spinone italien est un chien d’arrêt originaire d’Italie ; la FCI le range dans le groupe 7, parmi les chiens d’arrêt continentaux de type griffon. Le standard FCI décrit un chien de construction solide, robuste et vigoureux, à l’ossature puissante et au poil rude. Sociable, docile et patient par nature, c’est aussi un chasseur expérimenté sur tous les terrains. Ses couleurs sont : blanc pur, blanc avec marques orange, orange rouan, blanc avec marques marron et marron rouan. Le standard FCI indique une hauteur de 60–70 cm pour les mâles et de 58–65 cm pour les femelles, et un poids de 32–37 kg pour les mâles et de 28–30 kg pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 15 à 18 mois (PetMD). La PDSA donne une espérance de vie de plus de 10 ans ; PetMD de 10 à 12 ans.",
+        "La PDSA décrit le Spinone comme une race énergique qui a idéalement besoin de plus de 2 heures d’exercice par jour, et indique que son poil épais et en partie dur se brosse à la maison 2 à 3 fois par semaine. WebMD recommande une coupe des griffes chaque semaine et un brossage des dents quotidien, indique que la race s’entend généralement bien avec les autres chiens et les enfants, et prévient que de longues périodes de solitude posent souvent problème. PetMD conseille de socialiser tôt le chiot, de ne le laisser sortir qu’en laisse ou dans un espace clos, et d’éviter l’exercice une heure avant et une heure après le repas, en raison du risque de dilatation de l’estomac.",
+      ],
+      sources: ["S935", "S936", "S937", "S938", "S10"],
+    },
+    pointer: {
+      aka: "Pointer anglais, English Pointer",
+      text: [
+        "Le Pointer est un chien d’arrêt britannique ; la FCI le range dans le groupe 7, parmi les chiens d’arrêt britanniques et irlandais. Le standard FCI décrit un chien symétrique et bien bâti, à la silhouette aux courbes gracieuses, fort mais souple, alerte et d’un caractère bienveillant et égal, au poil fin, court et dur, nettement brillant. Ses couleurs habituelles sont citron et blanc, orange et blanc, foie et blanc, ou noir et blanc. Le standard FCI indique une hauteur de 63–69 cm pour les mâles et de 61–66 cm pour les femelles ; le standard de l’UKC donne un poids de travail de 55 à 75 livres (environ 25–34 kg) pour les mâles et de 44 à 65 livres (environ 20–29,5 kg) pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 15 à 18 mois (PetMD). La PDSA donne une espérance de vie de plus de 12 ans ; PetMD de 10 à 12 ans.",
+        "La PDSA écrit que les Pointers ont beaucoup d’énergie et ont idéalement besoin de plus de 2 heures d’exercice par jour, qu’il leur faut des maîtres actifs et une bonne éducation au rappel, et que leur poil court ne se brosse qu’une fois par semaine. PetMD conseille de les garder dans un jardin clos pour qu’ils ne partent pas au loin, et note qu’ils peuvent représenter un danger pour les oiseaux de compagnie ; WebMD recommande un brossage des dents quotidien et indique qu’ils ne sont pas particulièrement adaptés aux jeunes enfants. La PDSA ajoute que, comme pour toutes les races, une bonne socialisation dès le stade de chiot les aide à bien s’intégrer à la vie de famille.",
+      ],
+      sources: ["S943", "S944", "S945", "S946", "S947", "S10"],
+    },
+    welsh_terrier: {
+      aka: "Terrier gallois",
+      text: [
+        "Le Welsh Terrier est un terrier originaire de Grande-Bretagne ; la FCI le range dans le groupe 3, parmi les terriers de grande et moyenne taille. Le standard FCI décrit un chien de travail élégant, bien équilibré et compact, au poil dur, rude, très serré et abondant. Il est affectueux, obéissant et facile à diriger, joyeux et rarement timide. Sa robe est noire et feu ou noire grisonnée et feu. Le standard FCI indique une hauteur allant jusqu’à 39 cm et un poids de 9–9,5 kg (20–21 livres). Un chien de ce gabarit atteint sa taille adulte vers 9 à 12 mois (PetMD). Le Royal Kennel Club et la PDSA donnent une espérance de vie de plus de 12 ans ; PetMD de 12 à 15 ans.",
+        "Le Royal Kennel Club recommande jusqu’à 1 heure d’exercice par jour et un entretien du pelage plus d’une fois par semaine ; la PDSA parle d’environ une heure d’exercice par jour et d’un brossage deux à trois fois par semaine, et décrit un chien joueur et amical qui adore les enfants et fait un excellent chien de famille. PetMD note un fort instinct de prédation – les petits animaux peuvent être pourchassés – et conseille la laisse ou un espace clos à l’extérieur, avec une socialisation et une éducation dès le plus jeune âge.",
+      ],
+      sources: ["S955", "S956", "S957", "S958", "S10"],
+    },
+    american_hairless_terrier: {
+      aka: "American Hairless Terrier, AHT, Hairless Terrier",
+      text: [
+        "L’American Hairless Terrier est un terrier actif, de petite à moyenne taille, à la musculature souple, originaire des États-Unis. L’American Kennel Club le reconnaît dans son groupe des terriers ; la FCI ne le répertorie pas. Le standard de la race décrit un chien énergique, alerte, curieux et intelligent, aux oreilles en V et à la queue naturelle, jamais écourtée. Il existe deux variétés : une variété nue, sans poils à l’exception des moustaches et des poils des sourcils et du museau, et une variété à poil, au poil court et lisse. Le standard indique une hauteur idéale de 12 à 16 pouces (30–41 cm) ; PetMD donne un poids de 12 à 28 livres (5,4–12,7 kg) et une espérance de vie de 14 à 16 ans. Un chien de ce gabarit atteint sa taille adulte vers 9 à 12 mois (PetMD).",
+        "Dogs NSW indique environ 20 minutes d’exercice par jour, et PetMD écrit qu’un exercice régulier et une stimulation mentale sont indispensables à cette race. Il décrit ces chiens comme de formidables compagnons de jeu pour les enfants, à surveiller auprès des plus jeunes. La peau nue demande des soins : le club de race indique que la crème solaire ou des vêtements de protection sont indispensables pour éviter les coups de soleil, PetMD conseille un pull par temps froid et des bains réguliers, de préférence chaque semaine, WebMD conseille un brossage des dents quotidien, et le club de race recommande une coupe des griffes chaque semaine. Le club de race note aussi un fort instinct de prédation.",
+      ],
+      sources: ["S967", "S971", "S972", "S973", "S977", "S10"],
+    },
+    tibetan_spaniel: {
+      aka: "Épagneul du Tibet, Tibetan Spaniel, Tibbie",
+      text: [
+        "L’Épagneul tibétain est un petit chien de compagnie actif et alerte originaire du Tibet (Chine), classé à la FCI dans le groupe des chiens de compagnie et d’agrément, parmi les races tibétaines, la Grande-Bretagne étant le pays patron de la race. Le standard FCI décrit un chien gai et assuré, très intelligent, distant avec les inconnus, alerte, fidèle mais indépendant. Un peu plus long que haut, il a le poil soyeux de longueur moyenne, les oreilles frangées et la queue richement plumée, portée en boucle sur le dos. Toutes les couleurs sont admises, sauf le merle. Le standard indique une hauteur d’environ 25,4 cm et un poids idéal de 4,1–6,8 kg ; un chien de ce gabarit atteint sa taille adulte vers 9 à 12 mois (PetMD). Dans une vaste étude britannique (McMillan et al., 2024), la race figure parmi les plus longévives, avec une médiane de 15,2 ans ; la PDSA donne une espérance de vie de plus de 12 ans.",
+        "La PDSA écrit que les Épagneuls tibétains ont besoin d’environ une heure d’exercice chaque jour, participent volontiers aux jeux de famille, s’entendent généralement bien avec tout le monde et font de bons chiens de famille, et qu’un brossage deux fois par semaine suffit généralement. WebMD indique qu’ils sont sujets à l’anxiété de séparation et conviennent mieux aux familles avec des enfants plus âgés, qu’ils ont besoin d’un jardin clos et sécurisé et qu’ils peuvent souffrir de la chaleur. Il conseille un brossage des dents quotidien, un contrôle des oreilles au moins une fois par semaine, un contrôle des griffes chaque mois et un bain environ une fois par mois.",
+      ],
+      sources: ["S980", "S981", "S982", "S771", "S10"],
+    },
+    black_russian_terrier: {
+      aka: "Terrier russe noir, Tchiorny Terrier, Black Russian Terrier, Russian Black Terrier, BRT",
+      text: [
+        "Le Terrier noir russe est un grand chien de travail robuste et très athlétique originaire de Russie, classé à la FCI dans le groupe des chiens de type pinscher et schnauzer. Le standard FCI le décrit comme digne, sûr de lui et maître de lui, aimable, peu exigeant, intelligent et amical, au double poil rude et épais qui forme d’abondants sourcils, une moustache et une barbe ; les seules couleurs sont le noir et le noir avec un peu de poils gris mêlés. Le standard indique pour les mâles 72–76 cm et 50–60 kg, pour les femelles 68–72 cm et 45–50 kg ; un chien de ce gabarit atteint généralement son poids adulte vers 18 à 24 mois. Le Royal Kennel Club donne une espérance de vie de plus de 10 ans.",
+        "Selon le Royal Kennel Club, la race a besoin de plus de 2 heures d’exercice par jour et d’un toilettage quotidien, convient à une grande maison avec un grand jardin et ne mue pas. PetMD écrit qu’elle est dévouée à sa famille et peut être bonne avec les enfants sous surveillance, qu’une socialisation précoce et cohérente est importante, et qu’il faut éviter l’exercice intense juste avant et après les repas en raison du risque de dilatation de l’estomac. VCA indique que des enfants plus âgés sont l’idéal et recommande une coupe par un toiletteur professionnel toutes les six à huit semaines.",
+      ],
+      sources: ["S985", "S986", "S989", "S990", "S10"],
+    },
+    neapolitan_mastiff: {
+      aka: "Mastino napoletano, Neapolitan Mastiff, Mastiff napolitain, Neo",
+      text: [
+        "Le Mâtin napolitain (Mastino napoletano) est un grand chien de garde lourd et massif originaire d’Italie ; la FCI le range dans le groupe 2, parmi les molossoïdes de type dogue. Le standard FCI le décrit comme équilibré et fidèle, non agressif, au poil court, dur et dense et à la peau épaisse et lâche qui forme de nombreux plis et rides, surtout sur la tête. Les couleurs préférées sont le gris, le gris plombé et le noir, mais le brun, le fauve et le fauve foncé sont aussi admis. Le standard indique pour les mâles 65–75 cm et 60–70 kg, pour les femelles 60–68 cm et 50–60 kg ; un chien de ce gabarit atteint généralement son poids adulte vers 18 à 24 mois. Le Royal Kennel Club et la PDSA donnent une espérance de vie de moins de 10 ans, PetMD de seulement 7 à 9 ans.",
+        "Le Royal Kennel Club recommande jusqu’à 1 heure d’exercice par jour et un toilettage une fois par semaine. Selon lui, la race mue et convient à une grande maison avec un grand jardin ; il la classe en catégorie 3 du programme Breed Watch. La PDSA signale des problèmes de paupières, comme l’entropion et l’ectropion, dus à l’excès de peau sur le visage. Elle décrit les Mâtins napolitains comme des chiens fidèles et dévoués qui adorent la vie de famille, et précise que leurs plis de peau doivent être nettoyés chaque jour. PetMD écrit qu’ils sont formidables avec les familles et les enfants, mais qu’il ne faut pas les laisser seuls avec un jeune enfant, qu’ils bavent beaucoup, et qu’une bonne socialisation et une éducation par renforcement positif doivent commencer tôt.",
+      ],
+      sources: ["S993", "S994", "S995", "S996", "S10"],
+    },
+    norwegian_elkhound: {
+      aka: "Elkhound norvégien, Norsk Elghund Grå, Norwegian Elkhound, Elkhound",
+      text: [
+        "Le Chien d’élan norvégien gris est un spitz de chasse nordique originaire de Norvège, sélectionné pour chasser l’élan ; la FCI le range dans le groupe 5, parmi les chiens nordiques de chasse. Le standard FCI décrit un spitz typique – compact, court et carré, aux petites oreilles dressées, à la queue étroitement enroulée sur le dos et au poil épais et rude de longueur moyenne – intrépide, énergique et courageux. Le gris, sous diverses nuances, est la seule couleur admise par le standard. Le standard FCI indique une hauteur idéale de 52 cm pour les mâles et de 49 cm pour les femelles, et le standard de l’AKC un poids d’environ 55 livres (25 kg) pour les mâles et d’environ 48 livres (22 kg) pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 12 à 15 mois (PetMD), et PetMD et WebMD donnent une espérance de vie de 12 à 15 ans.",
+        "PetMD recommande une heure d’exercice par jour et écrit que la race a autant besoin de stimulation mentale que d’exercice physique. Il la décrit comme formidable avec les enfants de tous âges quand les interactions sont surveillées, et comme un merveilleux chien de famille s’il est socialisé dès le stade de chiot et éduqué tôt. PetMD conseille de le garder dans un espace clos et sécurisé ou en laisse à l’extérieur, et signale une mue abondante et un poil épais qui le rend sensible à la chaleur ; WebMD conseille de brosser le poil au moins deux minutes chaque jour et de brosser les dents quotidiennement.",
+      ],
+      sources: ["S960", "S961", "S963", "S964", "S10"],
+    },
+    mudi: {
+      aka: "Mudi hongrois, Hungarian Mudi",
+      text: [
+        "Le Mudi est un chien de berger hongrois ; la FCI le range dans le groupe 1, parmi les chiens de berger. Le standard FCI décrit un chien de taille moyenne à la tête en forme de coin, aux oreilles dressées et à la ligne de dos inclinée vers l’arrière, au poil dense, brillant, ondulé ou légèrement bouclé. Il est extrêmement doué pour apprendre, vif, courageux, vigilant et désireux de travailler. Ses couleurs sont : noir, blanc, fauve, cendré (bleu), brun, brun cendré et cifra (merle). Le standard FCI indique une hauteur de 41–47 cm pour les mâles et de 38–44 cm pour les femelles ; PetMD donne un poids de 18 à 29 livres (environ 8–13 kg). Un chien de ce gabarit atteint sa taille adulte vers 12 à 15 mois (PetMD). Le Royal Kennel Club donne une espérance de vie de plus de 10 ans ; PetMD de 12 à 14 ans.",
+        "Le Royal Kennel Club recommande jusqu’à 1 heure d’exercice par jour et un toilettage une fois par semaine. Il décrit un chien fidèle et affectueux avec sa famille, qui a besoin d’un exutoire pour son énergie et son intelligence ; il convient le mieux à un maître expérimenté, capable de lui offrir stimulation, cadre et objectif. PetMD le décrit comme un chien intelligent, indépendant et qui aboie volontiers, et écrit que les chiots Mudi doivent être socialisés dès le plus jeune âge pour se sentir à l’aise avec les enfants, les autres animaux et les inconnus.",
+      ],
+      sources: ["S949", "S950", "S952", "S10"],
+    },
+    lhasa_apso: {
+      aka: "Lhasa Apso, Lhasa, Apso",
+      text: [
+        "Le Lhassa Apso est un petit chien de compagnie originaire du Tibet ; selon le Royal Kennel Club, il était à l’origine gardé par les moines tibétains comme compagnon et chien de garde. C’est un petit chien à poil long ; VCA donne une hauteur de 10 à 11 pouces (environ 25–28 cm) et un poids de 13 à 15 livres (environ 6–7 kg). Un chien de ce gabarit atteint sa taille adulte vers 9 à 12 mois (PetMD), et le Royal Kennel Club donne une espérance de vie de plus de 12 ans.",
+        "Le Royal Kennel Club recommande jusqu’à 1 heure d’exercice par jour et un toilettage quotidien. Selon lui, la race ne perd pas ses poils et convient à un appartement ; il la classe en catégorie 1 du programme Breed Watch. La PDSA écrit que les Lhassa Apsos s’entendent bien avec les enfants et les autres animaux du foyer s’ils ont été bien socialisés dès le stade de chiot, mais qu’ils peuvent se méfier un peu plus des inconnus. WebMD suggère un bain au moins toutes les deux semaines, une coupe des griffes toutes les 3 à 4 semaines et un brossage des dents aussi régulier que possible.",
+      ],
+      sources: ["S740", "S741", "S742", "S743", "S10"],
+    },
+    coton_de_tulear: {
+      aka: "Coton, Chien royal de Madagascar, Coton de Tulear",
+      text: [
+        "Le Coton de Tuléar est originaire de Madagascar, sous le patronage de la France ; la FCI le range parmi les bichons et apparentés. Le standard FCI décrit un petit chien de compagnie au poil long, blanc, de texture cotonneuse, aux yeux ronds et foncés et à l’expression vive et intelligente, d’un tempérament joyeux et équilibré, très sociable avec les gens et les autres chiens. Il indique une hauteur de 26–28 cm pour les mâles et de 23–25 cm pour les femelles, et un poids de 4–6 kg pour les mâles et de 3,5–5 kg pour les femelles ; la couleur de fond est le blanc. Un chien de ce gabarit atteint sa taille adulte vers 8 à 12 mois (PetMD) ; le Royal Kennel Club donne une espérance de vie de plus de 12 ans.",
+        "Le Royal Kennel Club recommande jusqu’à 30 minutes d’exercice par jour et un toilettage quotidien. Selon lui, la race convient à un appartement et perd peu de poils. La PDSA décrit les Cotons comme des chiens fidèles et affectueux, parfaits pour la vie de famille. PetMD écrit qu’ils s’entendent généralement bien avec les enfants et les autres animaux quand les présentations sont bien faites, et qu’ils peuvent développer une anxiété de séparation s’ils restent seuls plus de quelques heures. Il recommande de contrôler les oreilles au moins une fois par semaine et un bain environ une fois par mois.",
+      ],
+      sources: ["S10", "S721", "S722", "S724", "S725", "S726"],
+    },
+    chow_chow: {
+      aka: "Chow-chow, Chow",
+      text: [
+        "Le Chow Chow est un spitz compact, à l’allure de lion, originaire de Chine, au poil dense et dressé d’une seule couleur uniforme : noir, rouge, bleu, fauve, crème ou blanc (standard FCI). Le standard FCI indique une hauteur de 48–56 cm pour les mâles et de 46–51 cm pour les femelles ; la PDSA donne un poids moyen de 20 à 30 kg. Un chien de ce gabarit atteint sa taille adulte vers 15 à 18 mois (PetMD) ; la PDSA donne une espérance de vie de moins de 10 ans, PetMD de 8 à 12 ans.",
+        "La PDSA écrit que la race a besoin d’au moins une heure d’exercice par jour, d’un brossage quotidien et d’un temps de repos entre le repas et l’exercice. Elle décrit des chiens fidèles, qui peuvent être des compagnons idéaux dans le bon foyer, de préférence auprès de maîtres expérimentés, et ne recommande pas la race avec de jeunes enfants. Elle note un fort instinct de prédation, une tolérance parfois faible à la solitude et la nécessité de bien les socialiser dès le plus jeune âge. PetMD ajoute que le poil épais et le museau court les rendent plus sensibles à la chaleur.",
+      ],
+      sources: ["S696", "S700", "S701", "S10"],
+    },
+    old_english_sheepdog: {
+      aka: "Old English Sheepdog, Bob-tail, OES",
+      text: [
+        "Le Bobtail (Old English Sheepdog) est un grand chien de berger puissant, d’allure carrée, originaire de Grande-Bretagne, au poil abondant, rude et ébouriffé : toutes nuances de gris, grisonné ou bleu sur le corps, avec la tête, le cou et l’avant-main blancs (standard FCI). Le standard FCI indique une hauteur de 61 cm et plus pour les mâles et de 56 cm et plus pour les femelles ; la PDSA donne une hauteur moyenne de 56 à 61 cm et un poids moyen de 27 à 30 kg. Un chien de ce gabarit atteint sa taille adulte vers 15 à 18 mois (PetMD) ; la PDSA donne une espérance de vie de plus de 10 ans, PetMD de 10 à 12 ans.",
+        "La PDSA écrit que la race a besoin d’au moins deux heures d’exercice par jour, réparties en plusieurs promenades, et que le poil long demande un brossage quotidien et une coupe chez un toiletteur professionnel toutes les six semaines environ. Elle décrit des chiens de famille faciles à vivre, qui conviennent mieux aux familles avec des enfants plus âgés. Ils peuvent souffrir d’anxiété de séparation s’ils restent seuls et ont un fort instinct de berger et de prédation. Elle conseille de laisser passer un moment entre le repas et l’exercice.",
+      ],
+      sources: ["S704", "S705", "S706", "S10"],
+    },
+    pekingese: {
+      aka: "Pekingese, Pekinese, Peke",
+      text: [
+        "Le Pékinois est un petit chien d’agrément à l’allure de lion, originaire de Chine, au poil droit, modérément long, et à la crinière autour du cou. Le standard FCI indique un poids idéal ne dépassant pas 5 kg pour les mâles et 5,4 kg pour les femelles ; la PDSA donne un poids moyen de 5 kg et une hauteur de 15 à 22 cm. Un chien de ce gabarit atteint sa taille adulte vers 8 à 12 mois (PetMD) ; la PDSA donne une espérance de vie de plus de 12 ans, PetMD de 12 à 14 ans.",
+        "La PDSA recommande au moins une demi-heure d’exercice par jour, sans exagérer, car la face plate peut rendre la respiration difficile, et aucun exercice quand il fait plus chaud. Elle écrit que le poil long demande un brossage quotidien, que la race perd beaucoup de poils, surtout au printemps et à l’automne, et que les plis du visage peuvent provoquer des infections cutanées. Selon elle, les Pékinois s’entendent généralement mieux avec des adultes ou des enfants plus âgés, peuvent souffrir d’anxiété de séparation s’ils restent seuls et doivent être socialisés dès le plus jeune âge. PetMD conseille un brossage des dents quotidien, un nettoyage des oreilles chaque semaine ou toutes les deux semaines et un toilettage professionnel toutes les six à huit semaines pour un poil long.",
+      ],
+      sources: ["S690", "S693", "S694", "S10"],
+    },
   },
 };
 
