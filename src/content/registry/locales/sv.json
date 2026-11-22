@@ -42,7 +42,15 @@
         "Labrador",
         "Labbe",
         "Lab"
-      ]
+      ],
+      "colours": {
+        "black": "Svart",
+        "yellow": "Gul",
+        "light-cream": "Ljust gräddfärgad",
+        "fox-red": "Rävröd",
+        "chocolate": "Chokladbrun",
+        "light-liver": "Ljust leverbrun"
+      }
     },
     "golden_retriever": {
       "name": "Golden retriever",
@@ -50,7 +58,14 @@
       "synonyms": [
         "Golden",
         "Goldie"
-      ]
+      ],
+      "colours": {
+        "rich-gold": "Rikt guld",
+        "light-gold": "Ljust guld",
+        "deep-gold": "Djupt guld",
+        "cream": "Gräddfärgad",
+        "pale-cream": "Blekt gräddfärgad"
+      }
     },
     "french_bulldog": {
       "name": "Fransk bulldogg",
@@ -59,7 +74,12 @@
         "French bulldog",
         "Frenchie",
         "Fransk bulldog"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fawn",
+        "brindle": "Tigrerad",
+        "light-fawn": "Ljust fawn"
+      }
     },
     "german_shepherd": {
       "name": "Tysk schäferhund",
@@ -68,7 +88,13 @@
         "Schäfer",
         "Schäferhund",
         "German shepherd"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Svart och tan",
+        "black-gold": "Svart med gula tecken",
+        "sable": "Sobel",
+        "black": "Svart"
+      }
     },
     "cavalier_king_charles_spaniel": {
       "name": "Cavalier king charles spaniel",
@@ -77,7 +103,13 @@
         "Cavalier",
         "Cavalier King Charles",
         "CKCS"
-      ]
+      ],
+      "colours": {
+        "blenheim": "Blenheim (kastanjebrun och vit)",
+        "tricolour": "Trefärgad (svart, vit och tan)",
+        "ruby": "Ruby (rikt röd)",
+        "black-tan": "Svart och tan"
+      }
     },
     "beagle": {
       "name": "Beagle",
@@ -85,7 +117,13 @@
       "synonyms": [
         "Beagel",
         "Beaglehund"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Trefärgad (svart, vit och tan)",
+        "tan-white": "Tan och vit",
+        "lemon-white": "Citronvit",
+        "red-white": "Rödvit"
+      }
     },
     "standard_poodle": {
       "name": "Storpudel",
@@ -95,7 +133,14 @@
         "Stor pudel",
         "Pudel",
         "Standard poodle"
-      ]
+      ],
+      "colours": {
+        "black": "Svart",
+        "white": "Vit",
+        "brown": "Brun",
+        "grey": "Grå",
+        "fawn": "Aprikos"
+      }
     },
     "dachshund": {
       "name": "Tax",
@@ -105,7 +150,12 @@
         "Korvhund",
         "Dachshund",
         "Teckel"
-      ]
+      ],
+      "colours": {
+        "red": "Röd",
+        "black-tan": "Svart och tan",
+        "chocolate-tan": "Brun och tan"
+      }
     },
     "australian_shepherd": {
       "name": "Australian shepherd",
@@ -113,7 +163,12 @@
       "synonyms": [
         "Aussie",
         "Australian shepherd dog"
-      ]
+      ],
+      "colours": {
+        "blue-merle": "Blue merle",
+        "black": "Svart",
+        "red-merle": "Red merle"
+      }
     },
     "havanese": {
       "name": "Havanais",
@@ -122,7 +177,15 @@
         "Havaneser",
         "Havanese",
         "Bichon havanais"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fawn",
+        "black": "Svart",
+        "havana-brown": "Havannabrun",
+        "tobacco": "Tobaksbrun",
+        "reddish-brown": "Rödbrun",
+        "white": "Vit"
+      }
     },
     "west_highland_white_terrier": {
       "name": "West highland white terrier",
@@ -147,7 +210,15 @@
       "synonyms": [
         "Husky",
         "Sibirisk husky"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Gråvit",
+        "black-white": "Svartvit",
+        "red-white": "Rödvit",
+        "agouti": "Agouti",
+        "sable-white": "Sobel med vitt",
+        "white": "Vit"
+      }
     },
     "rottweiler": {
       "name": "Rottweiler",
@@ -156,7 +227,11 @@
         "Rottis",
         "Rotweiler",
         "Rottie"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Svart med rödbruna tecken",
+        "black-mahogany": "Svart med mahognyfärgade tecken"
+      }
     },
     "bulldog": {
       "name": "Bulldogg",
@@ -165,7 +240,12 @@
         "Engelsk bulldogg",
         "English bulldog",
         "Bulldog"
-      ]
+      ],
+      "colours": {
+        "red": "Röd",
+        "fawn": "Fawn",
+        "fawn-brindle": "Fawn med tigrering"
+      }
     },
     "german_shorthaired_pointer": {
       "name": "Korthårig vorsteh",
@@ -175,7 +255,14 @@
         "Kurzhaar",
         "Deutsch Kurzhaar",
         "German shorthaired pointer"
-      ]
+      ],
+      "colours": {
+        "liver-roan": "Brunskimmel",
+        "liver": "Brun",
+        "liver-white-ticked": "Brunvit med tickning",
+        "black-roan": "Svartskimmel",
+        "black": "Svart"
+      }
     },
     "yorkshire_terrier": {
       "name": "Yorkshireterrier",
@@ -192,7 +279,16 @@
       "synonyms": [
         "Cane corso italiano",
         "Corso"
-      ]
+      ],
+      "colours": {
+        "black": "Svart",
+        "grey": "Blygrå (blå)",
+        "black-brindle": "Svart brindle",
+        "grey-brindle": "Grå brindle",
+        "fawn": "Fawn",
+        "stag-red": "Hjortröd",
+        "dark-wheat": "Mörkt vetefärgad"
+      }
     },
     "pembroke_welsh_corgi": {
       "name": "Welsh corgi pembroke",
@@ -201,7 +297,13 @@
         "Corgi",
         "Pembroke",
         "Pembroke welsh corgi"
-      ]
+      ],
+      "colours": {
+        "red-white": "Rödvit",
+        "sable-white": "Sobel med vitt",
+        "fawn-white": "Fawn med vitt",
+        "tricolour": "Trefärgad (svart, vit och tan)"
+      }
     },
     "dobermann": {
       "name": "Dobermann",
@@ -209,7 +311,11 @@
       "synonyms": [
         "Doberman",
         "Dobermann pinscher"
-      ]
+      ],
+      "colours": {
+        "black-rust": "Svart med roströda tecken",
+        "brown-rust": "Brun med roströda tecken"
+      }
     },
     "boxer": {
       "name": "Boxer",
@@ -217,7 +323,11 @@
       "synonyms": [
         "Tysk boxer",
         "Deutscher Boxer"
-      ]
+      ],
+      "colours": {
+        "fawn": "Gul",
+        "brindle": "Tigrerad"
+      }
     },
     "miniature_schnauzer": {
       "name": "Dvärgschnauzer",
@@ -227,7 +337,12 @@
         "Minischnauzer",
         "Zwergschnauzer",
         "Miniature schnauzer"
-      ]
+      ],
+      "colours": {
+        "pepper-salt": "Peppar och salt",
+        "black-silver": "Svart och silver",
+        "black": "Svart"
+      }
     },
     "shih_tzu": {
       "name": "Shih tzu",
@@ -236,7 +351,12 @@
         "Shih-tzu",
         "Shitzu",
         "Shihtzu"
-      ]
+      ],
+      "colours": {
+        "gold-white": "Guldvit",
+        "black-white": "Svartvit",
+        "liver-white": "Leverbrun och vit"
+      }
     },
     "great_dane": {
       "name": "Grand danois",
@@ -245,7 +365,14 @@
         "Great dane",
         "Deutsche Dogge",
         "Dansk dogg"
-      ]
+      ],
+      "colours": {
+        "fawn": "Gul",
+        "brindle": "Tigrerad",
+        "harlequin": "Harlekin",
+        "black": "Svart",
+        "blue": "Blå"
+      }
     },
     "pomeranian": {
       "name": "Pomeranian",
@@ -254,7 +381,14 @@
         "Dvärgspets",
         "Pom",
         "Zwergspitz"
-      ]
+      ],
+      "colours": {
+        "orange": "Orange",
+        "cream": "Gräddfärgad",
+        "white": "Vit",
+        "black": "Svart",
+        "brown": "Brun"
+      }
     },
     "boston_terrier": {
       "name": "Bostonterrier",
@@ -262,7 +396,12 @@
       "synonyms": [
         "Boston terrier",
         "Boston"
-      ]
+      ],
+      "colours": {
+        "brindle-white": "Tigrerad med vitt",
+        "black-white": "Svartvit",
+        "seal-white": "Seal med vitt"
+      }
     },
     "miniature_american_shepherd": {
       "name": "Miniature american shepherd",
@@ -271,7 +410,13 @@
         "Mini aussie",
         "Miniature australian shepherd",
         "MAS"
-      ]
+      ],
+      "colours": {
+        "blue-merle": "Blue merle",
+        "black": "Svart",
+        "red-merle": "Red merle",
+        "red": "Röd"
+      }
     },
     "chihuahua": {
       "name": "Chihuahua",
@@ -280,7 +425,15 @@
         "Korthårig chihuahua",
         "Chihuahueño",
         "Chi"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fawn",
+        "cream": "Gräddfärgad",
+        "black-tan": "Svart och tan",
+        "chocolate": "Chokladbrun",
+        "white": "Vit",
+        "fawn-white": "Fawn med vitt"
+      }
     },
     "english_springer_spaniel": {
       "name": "Engelsk springer spaniel",
@@ -289,7 +442,13 @@
         "Springer spaniel",
         "Springer",
         "English springer spaniel"
-      ]
+      ],
+      "colours": {
+        "liver-white": "Leverbrun och vit",
+        "black-white": "Svartvit",
+        "liver-white-tan": "Leverbrun och vit med tan",
+        "black-white-tan": "Svartvit med tan"
+      }
     },
     "shetland_sheepdog": {
       "name": "Shetland sheepdog",
@@ -297,7 +456,13 @@
       "synonyms": [
         "Sheltie",
         "Shetland collie"
-      ]
+      ],
+      "colours": {
+        "sable-white": "Sobel med vitt",
+        "tricolour": "Trefärgad",
+        "blue-merle": "Blue merle",
+        "black-white": "Svartvit"
+      }
     },
     "brittany": {
       "name": "Epagneul breton",
@@ -306,7 +471,15 @@
         "Breton",
         "Brittany",
         "Brittany spaniel"
-      ]
+      ],
+      "colours": {
+        "orange-white": "Orange och vit",
+        "liver-white": "Leverbrun och vit",
+        "orange-roan": "Orangeskimmel",
+        "liver-roan": "Leverbrun skimmel",
+        "black-white": "Svartvit",
+        "tricolour": "Trefärgad"
+      }
     },
     "american_cocker_spaniel": {
       "name": "Amerikansk cocker spaniel",
@@ -314,7 +487,17 @@
       "synonyms": [
         "Amerikansk cocker",
         "American cocker spaniel"
-      ]
+      ],
+      "colours": {
+        "buff": "Buff",
+        "black": "Svart",
+        "black-tan": "Svart och tan",
+        "red": "Röd",
+        "chocolate": "Brun",
+        "black-white": "Svartvit",
+        "red-white": "Rödvit",
+        "tricolour": "Trefärgad"
+      }
     },
     "belgian_malinois": {
       "name": "Belgisk vallhund malinois",
@@ -323,7 +506,11 @@
         "Malinois",
         "Belgisk malinois",
         "Belgian malinois"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fawn med svart mask",
+        "mahogany": "Mahogny med svart mask"
+      }
     },
     "basset_hound": {
       "name": "Basset hound",
@@ -331,7 +518,11 @@
       "synonyms": [
         "Basset",
         "Bassethund"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Trefärgad",
+        "lemon-white": "Citronvit"
+      }
     },
     "hungarian_vizsla": {
       "name": "Korthårig vizsla",
@@ -349,7 +540,17 @@
         "Cocker spaniel",
         "Cocker",
         "English cocker spaniel"
-      ]
+      ],
+      "colours": {
+        "golden": "Gyllene",
+        "black": "Svart",
+        "liver": "Brun",
+        "black-tan": "Svart och tan",
+        "blue-roan": "Blue roan (svartskimmel)",
+        "orange-roan": "Orangeskimmel",
+        "black-white": "Svartvit",
+        "tricolour": "Trefärgad"
+      }
     },
     "maltese": {
       "name": "Malteser",
@@ -365,7 +566,13 @@
       "synonyms": [
         "Pug",
         "Carlin"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fawn",
+        "black": "Svart",
+        "apricot": "Aprikos",
+        "silver": "Silver"
+      }
     },
     "rough_collie": {
       "name": "Långhårig collie",
@@ -375,7 +582,12 @@
         "Lassie",
         "Rough collie",
         "Collie långhårig"
-      ]
+      ],
+      "colours": {
+        "sable-white": "Sobel med vitt",
+        "tricolour": "Trefärgad",
+        "blue-merle-white": "Blue merle med vitt"
+      }
     },
     "mastiff": {
       "name": "Mastiff",
@@ -383,7 +595,12 @@
       "synonyms": [
         "Engelsk mastiff",
         "English mastiff"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fawn",
+        "apricot": "Aprikos",
+        "brindle": "Tigrerad"
+      }
     },
     "shiba_inu": {
       "name": "Shiba",
@@ -391,7 +608,12 @@
       "synonyms": [
         "Shiba inu",
         "Shiba ken"
-      ]
+      ],
+      "colours": {
+        "red": "Röd",
+        "black-tan": "Svart och tan",
+        "sesame": "Sesam"
+      }
     },
     "rhodesian_ridgeback": {
       "name": "Rhodesian ridgeback",
@@ -399,7 +621,11 @@
       "synonyms": [
         "Ridgeback",
         "Rhodesian"
-      ]
+      ],
+      "colours": {
+        "red-wheaten": "Rödvetefärgad",
+        "light-wheaten": "Ljust vetefärgad"
+      }
     },
     "papillon": {
       "name": "Papillon",
@@ -408,7 +634,13 @@
         "Fjärilshund",
         "Continental toy spaniel",
         "Phalène"
-      ]
+      ],
+      "colours": {
+        "red-white": "Rödvit",
+        "sable-white": "Sobel med vitt",
+        "tricolour": "Trefärgad",
+        "black-white": "Svartvit"
+      }
     },
     "portuguese_water_dog": {
       "name": "Portugisisk vattenhund",
@@ -417,7 +649,12 @@
         "Cão de água português",
         "Portuguese water dog",
         "PWD"
-      ]
+      ],
+      "colours": {
+        "black": "Svart",
+        "black-white": "Svartvit",
+        "brown": "Brun"
+      }
     },
     "bichon_frise": {
       "name": "Bichon frisé",
@@ -434,7 +671,12 @@
         "Newfoundland",
         "Newfie",
         "Newf"
-      ]
+      ],
+      "colours": {
+        "black": "Svart",
+        "landseer": "Landseer (vit och svart)",
+        "brown": "Brun"
+      }
     },
     "dalmatian": {
       "name": "Dalmatiner",
@@ -713,7 +955,17 @@
         "Mainecoon",
         "Maine coon katt",
         "Main coon"
-      ]
+      ],
+      "colours": {
+        "brown": "Brun tabby",
+        "red": "Röd",
+        "silver": "Silver",
+        "cream": "Creme",
+        "blue-grey": "Blå",
+        "black": "Svart",
+        "white": "Vit",
+        "tortoiseshell": "Sköldpadd"
+      }
     },
     "british_shorthair": {
       "name": "Brittiskt korthår",
@@ -722,7 +974,17 @@
         "British shorthair",
         "British blue",
         "Brittisk korthårskatt"
-      ]
+      ],
+      "colours": {
+        "blue-grey": "Blå",
+        "black": "Svart",
+        "cream": "Creme",
+        "lilac": "Lila",
+        "white": "Vit",
+        "red": "Röd",
+        "silver": "Silver",
+        "tortoiseshell": "Sköldpadd"
+      }
     },
     "ragdoll": {
       "name": "Ragdoll",
@@ -730,7 +992,14 @@
       "synonyms": [
         "Rag doll",
         "Ragdollkatt"
-      ]
+      ],
+      "colours": {
+        "seal-point": "Seal point",
+        "blue-point": "Blue point",
+        "lilac-point": "Lila point",
+        "red-point": "Red point",
+        "cream-point": "Creme point"
+      }
     },
     "siberian_cat": {
       "name": "Sibirisk katt",
@@ -739,7 +1008,17 @@
         "Siberian",
         "Sibirisk skogkatt",
         "Siberian cat"
-      ]
+      ],
+      "colours": {
+        "brown": "Brun tabby",
+        "silver": "Silver",
+        "red": "Röd",
+        "black": "Svart",
+        "blue-grey": "Blå",
+        "cream": "Creme",
+        "white": "Vit",
+        "tortoiseshell": "Sköldpadd"
+      }
     },
     "norwegian_forest_cat": {
       "name": "Norsk skogkatt",
@@ -748,7 +1027,17 @@
         "Skogkatt",
         "Skogskatt",
         "Norwegian forest cat"
-      ]
+      ],
+      "colours": {
+        "brown": "Brun tabby",
+        "silver": "Silver",
+        "red": "Röd",
+        "black": "Svart",
+        "blue-grey": "Blå",
+        "cream": "Creme",
+        "white": "Vit",
+        "tortoiseshell": "Sköldpadd"
+      }
     },
     "bengal": {
       "name": "Bengal",
@@ -756,7 +1045,12 @@
       "synonyms": [
         "Bengalkatt",
         "Bengal cat"
-      ]
+      ],
+      "colours": {
+        "brown-spotted": "Brunfläckig",
+        "silver-spotted": "Silverfläckig",
+        "snow": "Snow"
+      }
     },
     "shar_pei": {
       "name": "Shar pei",
@@ -1010,14 +1304,30 @@
       "slug": "tibetansk-terrier",
       "synonyms": [
         "Tibetan terrier"
-      ]
+      ],
+      "colours": {
+        "golden": "Gyllene",
+        "white": "Vit",
+        "cream": "Gräddfärgad",
+        "grey-smoke": "Grå eller rökfärgad",
+        "parti-colour": "Tvåfärgad",
+        "tricolour": "Trefärgad (svart, vit och tan)"
+      }
     },
     "greyhound": {
       "name": "Greyhound",
       "slug": "greyhound",
       "synonyms": [
         "English greyhound"
-      ]
+      ],
+      "colours": {
+        "brindle": "Tigrerad",
+        "black": "Svart",
+        "fawn": "Fawn",
+        "blue": "Blå",
+        "red": "Röd",
+        "black-white": "Svartvit"
+      }
     },
     "xoloitzcuintli": {
       "name": "Xoloitzcuintle",
@@ -1026,7 +1336,15 @@
         "Xoloitzcuintli",
         "Xolo",
         "Mexikansk nakenhund"
-      ]
+      ],
+      "colours": {
+        "black": "Svart",
+        "slate-grey": "Skiffergrå",
+        "reddish": "Rödaktig",
+        "liver": "Leverbrun",
+        "bronze": "Brons",
+        "blonde": "Blond"
+      }
     },
     "spinone_italiano": {
       "name": "Spinone italiano",
@@ -1034,7 +1352,14 @@
       "synonyms": [
         "Spinone",
         "Italian Spinone"
-      ]
+      ],
+      "colours": {
+        "orange-white": "Vit med orange fläckar",
+        "brown-roan": "Brunskimmel",
+        "brown-white": "Vit med bruna fläckar",
+        "orange-roan": "Orangeskimmel",
+        "white": "Vit"
+      }
     },
     "pointer": {
       "name": "Pointer",
@@ -1042,7 +1367,13 @@
       "synonyms": [
         "Engelsk pointer",
         "English Pointer"
-      ]
+      ],
+      "colours": {
+        "liver-white": "Leverbrun och vit",
+        "orange-white": "Orange och vit",
+        "lemon-white": "Citronvit",
+        "black-white": "Svartvit"
+      }
     },
     "mudi": {
       "name": "Mudi",
@@ -1050,14 +1381,27 @@
       "synonyms": [
         "Ungersk mudi",
         "Hungarian Mudi"
-      ]
+      ],
+      "colours": {
+        "black": "Svart",
+        "white": "Vit",
+        "fawn": "Fawn",
+        "blue": "Askgrå (blå)",
+        "liver": "Brun",
+        "isabella": "Askbrun",
+        "blue-merle": "Merle (cifra)"
+      }
     },
     "welsh_terrier": {
       "name": "Welsh terrier",
       "slug": "welsh-terrier",
       "synonyms": [
         "Welshterrier"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Svart och tan",
+        "black-grizzle-tan": "Svartgrizzlad och tan"
+      }
     },
     "norwegian_elkhound": {
       "name": "Grå norsk älghund",
@@ -1075,7 +1419,13 @@
       "slug": "amerikansk-harlos-terrier",
       "synonyms": [
         "American Hairless Terrier"
-      ]
+      ],
+      "colours": {
+        "pink-black-spots": "Rosa med svarta fläckar",
+        "pink-chocolate-spots": "Rosa med chokladbruna fläckar",
+        "grey-pink-patches": "Mörkgrå med rosa fläckar",
+        "pink-tan-spots": "Rosa med tanfärgade fläckar"
+      }
     },
     "tibetan_spaniel": {
       "name": "Tibetansk spaniel",
@@ -1083,14 +1433,26 @@
       "synonyms": [
         "Tibetan Spaniel",
         "Tibbie"
-      ]
+      ],
+      "colours": {
+        "golden": "Gyllene",
+        "red": "Röd",
+        "sable": "Sobel",
+        "cream": "Gräddfärgad",
+        "black-tan": "Svart och tan",
+        "black": "Svart"
+      }
     },
     "black_russian_terrier": {
       "name": "Svart rysk terrier",
       "slug": "svart-rysk-terrier",
       "synonyms": [
         "Black Russian Terrier"
-      ]
+      ],
+      "colours": {
+        "black": "Svart",
+        "black-grey": "Svart med inslag av grått"
+      }
     }
   },
   "suitability_labels": {
