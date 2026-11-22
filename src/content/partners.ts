@@ -174,12 +174,12 @@ const baseKit = {
     htmlLang: "sl",
     company: "PetPrep (v ustanavljanju)",
     title: "Medijski komplet",
-    tagline: "Pripravljeni na žival. Ob njej vse življenje.",
+    tagline: "Pripravljeni na ljubljenčka. Ob njem vse življenje.",
     what: {
       heading: "Kaj je PetPrep",
       paragraphs: [
         "PetPrep je aplikacija in register živali, ki družini pomaga, da se na psa ali mačko pripravi, še preden jo pripelje domov. V 12-tedenskem izzivu skrbi za realističnega AI ljubljenčka, starš pa v nadzorni plošči vidi, kako skrb poteka v resnici.",
-        "Register pasem razloži, kaj posamezna žival potrebuje, z navedenimi viri. Vsaka številka je sledljiva do vira, vsaka partnerska vsebina pa označena.",
+        "Register pasem razloži, kaj posamezna pasma potrebuje, z navedenimi viri. Vsaka številka je sledljiva do vira, vsaka partnerska vsebina pa označena.",
       ],
     },
     audience: {

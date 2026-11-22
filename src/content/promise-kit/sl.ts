@@ -106,7 +106,7 @@ export const sl: KitCopy = {
   },
   cost: {
     title: "Koliko stane ljubljenček?",
-    intro: "Cene so odvisne od države, živali in vaših odločitev, zato številke prepuščamo vam. Poiščite prave cene v trgovinah, zavetiščih in pri veterinarjih v vaši bližini, jih vpišite in na dnu seštejte.",
+    intro: "Cene so odvisne od države, ljubljenčka in vaših odločitev, zato številke prepuščamo vam. Poiščite prave cene v trgovinah, zavetiščih in pri veterinarjih v vaši bližini, jih vpišite in na dnu seštejte.",
     head: ["Kategorija", "Enkratno", "Na mesec", "Od kod je številka"],
     rows: [
       "Nakup ali posvojitev",
@@ -144,7 +144,7 @@ export const sl: KitCopy = {
       "Nekaj »ne vem«: to je vaša domača naloga. Poizvedite in nato odgovorite znova.",
       "»Ne« je podatek, ne neuspeh. Lahko pomeni »še ne«, »drug ljubljenček« ali »sploh ne«, vsako pa je dober izid premišljene odločitve.",
     ],
-    pointer: "Vprašanja o zdravju, alergijah ali o tem, kaj žival potrebuje, sodijo k zdravniku, veterinarju ali v zavetišče, ne na ta list.",
+    pointer: "Vprašanja o zdravju, alergijah ali o tem, kaj ljubljenček potrebuje, sodijo k zdravniku, veterinarju ali v zavetišče, ne na ta list.",
   },
   award: {
     title: "Priznanje za prvi mesec",
@@ -158,7 +158,7 @@ export const sl: KitCopy = {
   },
   next: {
     title: "Kaj sledi?",
-    lead: "Papir je dober začetek. Ni pa isto kot živa žival v hiši, zato je naslednji korak možnost, da izveste več.",
+    lead: "Papir je dober začetek. Ni pa isto kot živ ljubljenček v hiši, zato je naslednji korak možnost, da izveste več.",
     steps: [
       { title: "Natisnite in se pogovorite", text: "Z družinskim pogovorom in Obljubo se vsi znajdete na isti strani." },
       { title: "Preizkusite mesec dni", text: "Štiri tedenske tabele izpolnjujte iskreno, ves mesec." },
@@ -167,7 +167,7 @@ export const sl: KitCopy = {
     appHeading: "12-tedenski izziv PetPrep",
     appText: "V aplikaciji PetPrep otrok dvanajst tednov skrbi za ljubljenčka, ustvarjenega z umetno inteligenco, ki je videti kot živ: hranjenje, voda, sprehodi in pospravljanje. Vi sliko spremljate na svoji starševski nadzorni plošči. To je vaja, ne obljuba, da je ljubljenček prava izbira za vas.",
     cta: "Več na petprep.si",
-    slogan: "Pripravljeni na žival. Ob njej vse življenje.",
+    slogan: "Pripravljeni na ljubljenčka. Ob njem vse življenje.",
     mascotLine: "Srečno vam želi Curio.",
   },
 };
@@ -177,7 +177,7 @@ export const slSales: KitSales = {
   eyebrow: "Družinski komplet za tisk",
   title: "Obljuba o ljubljenčku",
   lead: "Preden ljubljenček pride domov, obljubo zapišite na papir. Enajst strani A4 za vašo družino: pogovor, dogovor s podpisi, štiritedenski preizkus za obkljukavanje in list s stroški za izpolnitev.",
-  metaTitle: "Obljuba o ljubljenčku: družinski dogovor za tisk, preden dobite žival | PetPrep",
+  metaTitle: "Obljuba o ljubljenčku: družinski dogovor za tisk, preden dobite ljubljenčka | PetPrep",
   metaDescription: "Družinski komplet za tisk (A4) za vse, ki razmišljajo o ljubljenčku: deset vprašanj za pogovor, obljuba za podpis, tabela nalog za štiri tedne, list s stroški in kontrolni seznam za starše.",
   breadcrumb: "Obljuba o ljubljenčku",
   priceNote: "Enkratni nakup, prenos PDF v 15 jezikih. Plačilo in račun uredi Link, plačilna stran Stripe.",
@@ -194,7 +194,7 @@ export const slSales: KitSales = {
   forItems: [
     "Za starše, katerih otrok vztrajno prosi za ljubljenčka in ki želite, da se pogovor vrti okoli dejstev in vsakdana, ne samo okoli želja.",
     "Za družine, ki se še niste odločile in bi radi mirno in urejeno ugotovile, ali ljubljenček ustreza vašemu življenju.",
-    "Za stare starše, tete in strice, ki želijo otroku dati nekaj resničnega, k čemur lahko stremi, ne da bi mu izročili žival.",
+    "Za stare starše, tete in strice, ki želijo otroku dati nekaj resničnega, k čemur lahko stremi, ne da bi mu izročili ljubljenčka.",
   ],
   notHeading: "Česa ni",
   notItems: [

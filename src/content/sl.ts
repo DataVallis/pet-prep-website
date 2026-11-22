@@ -508,9 +508,9 @@ const sl: Dictionary = {
           "Sponzorstvo serije »12 Weeks«, sponzorirane vsebine, zavarovalnice, ustanovni partnerji v imenikih ter zavetišča in društva. Označeno, brez vpliva na vsebino in vire.",
       },
       eyebrow: "Partnerji in sponzorji",
-      title: "Do družin pridete tik pred odločitvijo za žival.",
+      title: "Do družin pridete tik pred odločitvijo za ljubljenčka.",
       lead:
-        "PetPrep je aplikacija in register pasem, v katerem se družina pripravi, še preden domov pripelje psa ali mačko. Iščemo partnerje, ki jim je mar za odgovorno pridobitev živali in ki to znajo povedati odkrito, z jasno oznako sodelovanja.",
+        "PetPrep je aplikacija in register pasem, v katerem se družina pripravi, še preden domov pripelje psa ali mačko. Iščemo partnerje, ki jim je mar za odgovorno pridobitev ljubljenčka in ki to znajo povedati odkrito, z jasno oznako sodelovanja.",
       blocks: [
         {
           type: "prose",
@@ -529,7 +529,7 @@ const sl: Dictionary = {
             { title: "Sponzorirane vsebine na petprep.si", text: "Prispevek ob strani pasme ali v bazi znanja. Vedno je označen kot sponzoriran, sponzor pa ne vpliva na vsebino strani in na navedene vire." },
             { title: "Zavarovalnice", text: "Plačilo za posredovan stik ali fiksno sponzorstvo. Stik posredujemo samo z izrecno privolitvijo starša, podatkov otroka ne posredujemo nikoli. Posredovanje stikov je v pripravi in še ni na voljo." },
             { title: "Ustanovni partner v imenikih", text: "Za veterinarje, pasje šole, frizerje in vzreditelje: izpostavljen vpis z logotipom, opisom in povezavo. 190 € na leto; cena je za ustanovne partnerje zaklenjena. Število mest je omejeno na državo." },
-            { title: "Zavetišča in društva", text: "Vpis je brezplačen. Posvojiteljem lahko priporočite PetPrep, da se bolje pripravijo na prihod živali." },
+            { title: "Zavetišča in društva", text: "Vpis je brezplačen. Posvojiteljem lahko priporočite PetPrep, da se bolje pripravijo na prihod ljubljenčka." },
           ],
         },
         {
