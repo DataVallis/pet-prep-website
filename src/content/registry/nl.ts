@@ -1372,6 +1372,318 @@ const nl: RegistryCopy = {
       ],
       sources: ["C13", "C37", "C38"],
     },
+    keeshond: {
+      aka: "Wolfsspits, Duitse wolfsspits, Keeshonden",
+      text: [
+        "De keeshond is een middelgrote spits uit Duitsland – de wolfsspits-variant van de Duitse spits – met een lange, afstaande vacht in grijze schakeringen, een dikke kraag en donkere ‘brilletjes’ rond de ogen (FCI-rasstandaard). De FCI-standaard noemt een schofthoogte van 49 ± 6 cm en de PDSA een gemiddeld gewicht van 16–20 kg. Een hond van dit formaat is volgroeid rond 12–15 maanden (PetMD); de PDSA noemt een levensverwachting van meer dan 10 jaar en VCA 12–14 jaar.",
+        "De PDSA schrijft dat het ras tot een uur beweging per dag nodig heeft en dat de dikke dubbele vacht dagelijks verzorgd moet worden. Volgens de PDSA zijn keeshonden uitstekende gezinshonden die goed overweg kunnen met andere huisdieren en goed te trainen zijn, mits je tijd en geduld hebt. VCA beschrijft ze als speels en voorzichtig met kinderen, raadt ongeveer eens per maand een bad aan en meldt dat ze meer verharen dan gemiddeld en door de dikke vacht snel oververhit kunnen raken.",
+      ],
+      sources: ["S246","S709","S710","S10"],
+    },
+    standard_schnauzer: {
+      aka: "Schnauzer, Mittelschnauzer, Ruwharige pinscher",
+      text: [
+        "De middenslagschnauzer komt uit Duitsland; de FCI noemt hem simpelweg schnauzer, in de groep pinschers en schnauzers. De FCI-standaard beschrijft een middelgrote, krachtige hond, eerder gedrongen dan slank, met een draadharige, ruwe en dichte vacht, hangende oren en een natuurlijke staart. Reuen en teven zijn 45–50 cm hoog en wegen 14–20 kg; de kleuren zijn peper-en-zout en zuiver zwart. Een hond van dit formaat is volgroeid rond 12–15 maanden (PetMD); de Royal Kennel Club noemt een levensverwachting van meer dan 10 jaar en VCA 12–14 jaar.",
+        "De Royal Kennel Club raadt tot een uur beweging per dag aan, zegt dat het ras past bij een klein huis met een kleine of middelgrote tuin, in de stad of op het platteland, en dat vachtverzorging vaker dan eens per week nodig is. Volgens de PDSA zijn middenslagschnauzers zachtaardige, geduldige honden die goed met kinderen overweg kunnen als ze er jong aan wennen, en moet de vacht 2 tot 3 keer per week verzorgd worden. VCA schrijft dat het ras snel leert maar zich ook snel verveelt, dus hij heeft spelletjes en trucjes nodig voor voldoende mentale uitdaging. PetMD raadt aan om maandelijks een bad te geven, de nagels te knippen, de oren elke 1 à 2 weken schoon te maken en elk kwartaal naar een hondenverzorger te gaan.",
+      ],
+      sources: ["S10","S711","S712","S714","S715","S716","S717"],
+    },
+    english_setter: {
+      aka: "Laverack setter, Llewellin setter, Setter",
+      text: [
+        "De Engelse setter is een elegante staande hond uit Groot-Brittannië, gefokt om jachtvogels op te sporen. De FCI-standaard beschrijft een hond van gemiddelde hoogte met zuivere lijnen en elegante bewegingen en een witte vacht met gekleurde spikkels – blauw, oranje, citroen of leverbruin ‘belton’, of driekleur – en een schofthoogte van 65–68 cm bij reuen en 61–65 cm bij teven; de PDSA noemt een gemiddeld gewicht van 22–29 kg. Een hond van dit formaat is volgroeid rond 15–18 maanden (PetMD), en de Royal Kennel Club noemt een levensverwachting van meer dan 10 jaar.",
+        "De Royal Kennel Club raadt meer dan 2 uur beweging per dag aan en vachtverzorging vaker dan eens per week, meldt dat het ras verhaart en past bij een groot huis met een grote tuin, en plaatst het in Breed Watch-categorie 1. Volgens de PDSA zijn Engelse setters dol op kinderen en andere huisdieren en daardoor ideaal voor gezinnen; zij raadt vachtverzorging 2 tot 3 keer per week aan. PetMD adviseert elke zes tot acht weken een bad en schrijft dat ze niet graag lang alleen zijn; VCA adviseert de vacht maandelijks wat te knippen en bij te werken.",
+      ],
+      sources: ["S730","S731","S732","S733","S734","S10"],
+    },
+    dogue_de_bordeaux: {
+      aka: "Bordeauxdog, Franse mastiff, Bordeaux mastiff, DDB",
+      text: [
+        "De Dogue de Bordeaux is een krachtige molossoïde hond uit Frankrijk. De FCI-standaard beschrijft een gedrongen, atletische en imposante hond die rustig en evenwichtig is en sterk gehecht aan zijn baas, met een fijne, korte vacht in alle tinten fawn, van mahonie tot isabel. De schofthoogte is 60–68 cm bij reuen en 58–66 cm bij teven, en het gewicht minstens 50 kg bij reuen en minstens 45 kg bij teven; PetMD noemt 110–145 pond (ongeveer 50–66 kg) voor reuen en 99–120 pond (ongeveer 45–54 kg) voor teven. Een hond van dit formaat is volgroeid rond 18–24 maanden (PetMD). De bronnen verschillen over de levensverwachting: volgens PetMD worden deze honden meestal maar 5–8 jaar oud, terwijl de Royal Kennel Club meer dan 10 jaar noemt.",
+        "De Royal Kennel Club raadt tot 1 uur beweging per dag en eenmaal per week vachtverzorging aan, meldt dat het ras verhaart en past bij een groot huis met een grote tuin, en plaatst het in Breed Watch-categorie 3. Volgens de PDSA kunnen dogues over het algemeen goed overweg met oudere kinderen, maar raadt zij ze niet aan bij jongere kinderen of beginnende hondenbezitters; zij waarschuwt voor veel kwijlen en een zeer sterk jachtinstinct en adviseert de huidplooien in het gezicht regelmatig schoon te maken en na het eten een tijdje te wachten met bewegen. PetMD schrijft dat de korte snuit het ademhalen bij warm weer moeilijker kan maken.",
+      ],
+      sources: ["S755","S756","S757","S759","S10"],
+    },
+    flat_coated_retriever: {
+      aka: "Flatcoat, Flattie, Flat-coat, Flat coated retriever",
+      text: [
+        "De flatcoated retriever is een vrolijke, actieve jachthond uit Groot-Brittannië, gefokt om wild te apporteren. De FCI-standaard beschrijft een dichte, vlak liggende vacht met goed bevederde poten en staart, uitsluitend zwart of leverbruin, en een optimistisch, vriendelijk, zelfverzekerd en goedaardig temperament. De voorkeurshoogte is 59–61,5 cm bij reuen en 56,5–59 cm bij teven en het voorkeursgewicht 27–36 kg bij reuen en 25–32 kg bij teven. Een hond van dit formaat is volgroeid rond 15–18 maanden (PetMD). De Royal Kennel Club noemt een levensverwachting van minder dan 10 jaar, terwijl een Brits onderzoek uit 2024, ingediend door Dogs Trust, een mediaan van 11,7 jaar vond.",
+        "De Royal Kennel Club raadt meer dan 2 uur beweging per dag aan en vachtverzorging vaker dan eens per week, meldt dat het ras verhaart en past bij een groot huis met een grote tuin, en plaatst het in Breed Watch-categorie 1. PetMD noemt flatcoated retrievers geweldige gezinshonden die over het algemeen goed overweg kunnen met kinderen en andere huisdieren, vooral na een goede kennismaking en socialisatie. PetMD raadt aan twee keer per week te borstelen, elke 1 à 2 weken de oren schoon te maken, elke 1 à 2 maanden een bad te geven en de nagels te knippen, en direct voor of na het eten niet te laten bewegen.",
+      ],
+      sources: ["S761","S762","S763","S123","S10"],
+    },
+    border_terrier: {
+      aka: "Border terrier",
+      text: [
+        "De border terrier is een kleine werkterriër uit Groot-Brittannië; de FCI-standaard noemt hem in wezen een werkterriër die een paard kan volgen en activiteit combineert met doorzettingsvermogen. De standaard beschrijft een ruwe, dichte vacht met een strakke ondervacht, donkere ogen met een alerte blik en kleine V-vormige oren, in rood, tarwekleurig, grizzle met tan of blauw met tan, en noemt een gewicht van 5,9–7,1 kg voor reuen en 5,1–6,4 kg voor teven. Een hond van dit formaat is volgroeid rond 9–12 maanden (PetMD). De Royal Kennel Club noemt een levensverwachting van meer dan 12 jaar, en een Brits onderzoek uit 2024 (McMillan et al.) vond een mediaan van 14,2 jaar.",
+        "De Royal Kennel Club raadt tot 1 uur beweging per dag aan en vachtverzorging vaker dan eens per week, meldt dat het ras verhaart en geschikt is voor een appartement, en plaatst het in Breed Watch-categorie 1. Volgens de PDSA vinden border terriërs het met de juiste socialisatie heerlijk om tijd door te brengen met kinderen van alle leeftijden, maar zij raadt toezicht aan. Zij waarschuwt dat ze verlatingsangst kunnen ontwikkelen als ze alleen gelaten worden, een sterk jachtinstinct hebben en niet samen met konijnen, cavia’s of ratten horen te wonen; ook adviseert zij een paar keer per week te borstelen en na het eten een tijdje te wachten met bewegen. Woodgreen raadt een gezin met wat oudere kinderen aan.",
+      ],
+      sources: ["S768","S769","S770","S771","S773","S10"],
+    },
+    leonberger: {
+      aka: "Leonberg, Leonberger hond",
+      text: [
+        "De leonberger is een grote hond uit Duitsland; de FCI-standaard beschrijft een grote, sterke, gespierde maar elegante hond met een lange, goed aansluitende vacht, hangende oren en een rijk behaarde staart, in leeuwgeel, rood, roodbruin of zandkleurig, altijd met een zwart masker. De schofthoogte is 72–80 cm bij reuen en 65–75 cm bij teven. De PDSA noemt een gemiddeld gewicht van 30–50 kg voor reuen en teven en een levensverwachting van minder dan 10 jaar; als reuzenras is hij volgroeid rond 18–24 maanden (PetMD-grootteklasse).",
+        "De Royal Kennel Club raadt meer dan 2 uur beweging per dag aan en een groot huis met een grote tuin; de PDSA noemt leonbergers zachtaardige reuzen en uitstekende gezinshonden. Woodgreen raadt aan twee tot drie keer per week te borstelen, zegt dat vroege training en socialisatie vanwege hun omvang essentieel zijn en dat ze moeite hebben met lang alleen zijn. Een Brits onderzoek uit 2024 (McMillan et al., ingediend door Dogs Trust) noemt een mediane levensverwachting van 10,0 jaar.",
+      ],
+      sources: ["S783","S781","S10","S780","S784","S123"],
+    },
+    beauceron: {
+      aka: "Berger de Beauce, Beauce-herdershond, Bas Rouge",
+      text: [
+        "De beauceron, ook Berger de Beauce genoemd, is een grote Franse herdershond; de FCI-standaard beschrijft een grote, stevige, taaie, krachtige en gespierde hond zonder plompheid, met een korte, dichte vacht, een staart met een lichte J-vormige haak en dubbele wolfsklauwen aan de achterpoten, in zwart met tan of harlekijn. De schofthoogte is 65–70 cm bij reuen en 61–68 cm bij teven. De gewichtentabel van de AKC noemt 70–110 pond (ongeveer 32–50 kg) voor reuen en teven; een hond van dit formaat is volgroeid rond 15–18 maanden (PetMD-grootteklasse). De Royal Kennel Club noemt een levensverwachting van meer dan 10 jaar en PetMD 10–12 jaar.",
+        "De Royal Kennel Club noemt de beauceron rustig en zelfverzekerd, een trouwe metgezel en waakhond. De club raadt meer dan 2 uur beweging per dag aan, vachtverzorging vaker dan eens per week en een groot huis met een grote tuin, en plaatst het ras in Breed Watch-categorie 1. PetMD schrijft dat ze goed kunnen omgaan met jonge kinderen en andere honden als de kennismaking onder toezicht verloopt. Ze kunnen op hun hoede zijn voor nieuwe mensen, dus pups moeten al vroeg nieuwe mensen ontmoeten. Ze willen het liefst zo veel mogelijk bij hun gezin zijn. PetMD raadt aan minstens één keer per week te borstelen en een uur voor en een uur na het eten niet te laten bewegen.",
+      ],
+      sources: ["S790","S268","S10","S787","S791"],
+    },
+    bouvier_des_flandres: {
+      aka: "Bouvier, Vlaamse koehond, Flanders cattle dog",
+      text: [
+        "De Bouvier des Flandres is een veedrijver uit Vlaanderen (België en Frankrijk); de FCI-standaard beschrijft een korte, gedrongen, krachtige hond met sterke, goed gespierde ledematen, een ruwe, droge, licht verward ogende vacht van ongeveer 6 cm met een snor en een volle baard, meestal grijs, gestroomd of met zwart overdekt (effen zwart wordt ook toegelaten). Reuen zijn 62–68 cm hoog en wegen ongeveer 35–40 kg, teven 59–65 cm en ongeveer 27–35 kg. Een hond van dit formaat is volgroeid rond 15–18 maanden (PetMD-grootteklasse); een Brits onderzoek uit 2024 (McMillan et al., ingediend door Dogs Trust) noemt een mediane levensverwachting van 11,3 jaar.",
+        "De Royal Kennel Club noemt de bouvier sterk en veelzijdig, oorspronkelijk een veedrijver, raadt tot 1 uur beweging per dag aan, dagelijkse vachtverzorging en een groot huis met een grote tuin, en plaatst het ras in Breed Watch-categorie 1. PetMD schrijft dat ze goed kunnen omgaan met jonge kinderen en andere grote honden als de kennismaking onder toezicht verloopt, een sterk jachtinstinct tegenover katten en kleine huisdieren hebben, vroege socialisatie nodig hebben en snel te zwaar worden. PetMD raadt aan minstens 1 à 2 keer per week te borstelen, elke twee tot drie weken de oren schoon te maken, elke drie tot vier weken de nagels te knippen en een uur voor en een uur na het eten niet te laten bewegen.",
+      ],
+      sources: ["S797","S10","S123","S795","S798"],
+    },
+    borzoi: {
+      aka: "Russische wolfshond, Russische jachtwindhond, Russkaya Psovaya Borzaya, Ruski hrt",
+      text: [
+        "De borzoi, ook Russische jachtwindhond genoemd, is een langharige windhond uit Rusland, gefokt om hazen en vossen te jagen; de FCI-standaard beschrijft een hond met een aristocratische uitstraling, hoog opgeschoten, slank en sterk, vrij hoog op de poten, met een lange, zijdeachtige, golvende vacht die elke kleur mag hebben van wit tot zwart, behalve bruin, blauw en isabel. De gewenste schofthoogte is 75–85 cm bij reuen en 68–78 cm bij teven. De PDSA noemt een gemiddeld gewicht van 27–47 kg voor reuen en teven en een levensverwachting van meer dan 10 jaar, PetMD 9–14 jaar; een hond van dit formaat is volgroeid rond 15–18 maanden (PetMD-grootteklasse).",
+        "De PDSA raadt minstens 1 uur beweging per dag aan, verdeeld over een paar wandelingen, en alleen loslopen in een veilig afgesloten ruimte. Zij schrijft dat borzoi’s een zeer sterk jachtinstinct hebben en niet worden aanbevolen bij kleinere huisdieren of jongere kinderen, dat ze passen bij ervaren eigenaren en dat er het grootste deel van de tijd iemand thuis moet zijn. Ze moeten van jongs af aan gesocialiseerd en een paar keer per week geborsteld worden; laat tussen eten en bewegen wat tijd zitten. PetMD raadt aan minstens twee tot drie keer per week te borstelen en noemt maagtorsie als het meest voorkomende gezondheidsprobleem.",
+      ],
+      sources: ["S802","S800","S803","S10"],
+    },
+    japanese_chin: {
+      aka: "Japanse spaniël, Japanse chin, Chin, Japonski čin",
+      text: [
+        "De Japanse chin is een kleine gezelschapshond uit Japan; de standaard van de Royal Kennel Club beschrijft een elegant, aristocratisch, compact hondje met een rijke, lange, zijdeachtige vacht, zwart-wit of rood-wit (nooit driekleur), een korte, brede snuit en een verbaasde blik. Het ideale gewicht is 1,8–3,2 kg en PetMD noemt een hoogte van 8–11 inch (ongeveer 20–28 cm). Een hond van dit formaat is volgroeid rond 8–12 maanden (PetMD-grootteklasse); een Brits onderzoek uit 2024 (McMillan et al., ingediend door Dogs Trust) noemt een mediane levensverwachting van 12,5 jaar.",
+        "De Royal Kennel Club raadt tot 30 minuten beweging per dag aan en vachtverzorging vaker dan eens per week, meldt dat het ras verhaart en geschikt is voor een appartement, en plaatst het in Breed Watch-categorie 1. PetMD beschrijft een kortsnuitig (brachycefaal) ras dat moeite kan hebben met ademen en snel oververhit raakt; beweging bij warm of vochtig weer plan je dus beter in de koelere uren van de dag. Volgens PetMD gaat de Japanse chin over het algemeen goed met kinderen om als dat onder toezicht gebeurt, kan hij verlatingsangst ontwikkelen en moet hij al vroeg naar socialisatielessen. PetMD raadt aan 1 à 2 keer per week te borstelen, elke twee tot drie weken de oren schoon te maken en ongeveer maandelijks een bad te geven.",
+      ],
+      sources: ["S806","S10","S123","S805","S809"],
+    },
+    norwich_terrier: {
+      aka: "Norwich, Norwich terriër",
+      text: [
+        "De norwich terrier is een van de kleinste terriërs en komt uit Groot-Brittannië; de FCI-standaard beschrijft een laag, alert, compact en sterk hondje met een harde, draadharige, rechte vacht die een kraag rond het gezicht vormt, rechtopstaande oren met spitse punten, in alle tinten rood, tarwekleurig, zwart met tan of grizzle. De ideale schofthoogte is 25 cm. De UKC-standaard noemt een ideaal gewicht van ongeveer 12 pond (circa 5,4 kg) voor reuen en teven; een hond van dit formaat is volgroeid rond 9–12 maanden (PetMD-grootteklasse). De Royal Kennel Club noemt een levensverwachting van meer dan 10 jaar en PetMD 12–15 jaar.",
+        "De Royal Kennel Club noemt de norwich een van de kleinste terriërs met een lief karakter, raadt tot 1 uur beweging per dag aan en vachtverzorging vaker dan eens per week, meldt dat het ras verhaart en geschikt is voor een appartement, en rekent het tot de kwetsbare inheemse rassen. PetMD schrijft dat norwich terriërs over het algemeen goed overweg kunnen met kinderen en andere huisdieren, veel energie hebben en dagelijks beweging en mentale prikkels nodig hebben. Ze hebben een sterk jachtinstinct, dus een stevige riem en een goed omheinde tuin zijn een must, en ze moeten van jongs af aan gesocialiseerd worden. PetMD raadt aan minstens twee keer per week te borstelen, minstens één keer per week de tanden te poetsen, ongeveer eens per maand de nagels te knippen en hooguit eens per drie maanden een bad te geven.",
+      ],
+      sources: ["S812","S815","S10","S813","S814"],
+    },
+    miniature_bull_terrier: {
+      aka: "Mini bull terrier, Mini bull, Bull terrier (miniatuur), Engelse miniature bull terrier, miniaturni bulterier",
+      text: [
+        "De miniature bull terrier is een kleine terriër uit Groot-Brittannië; de FCI rekent hem tot de terriërs van het bulltype. Volgens de Royal Kennel Club werd hij in 1943 voor het eerst erkend als aparte variant, gefokt uit kleinere bull terriërs, met een schofthoogte van maximaal 35,5 cm (14 inch). PetMD noemt een hoogte van 10–14 inch (ongeveer 25–36 cm) en een gewicht van 18–28 pond (ongeveer 8–13 kg); een hond van dit formaat is volgroeid rond 9–12 maanden (PetMD-grootteklasse). De Royal Kennel Club noemt een levensverwachting van meer dan 10 jaar en PetMD 11–13 jaar.",
+        "De Royal Kennel Club omschrijft het ras als dapper, vol pit en met een speelse instelling, raadt tot 1 uur beweging per dag aan en eenmaal per week vachtverzorging, meldt dat het ras verhaart en rekent het tot de kwetsbare inheemse rassen. PetMD schrijft dat miniature bull terriërs over het algemeen aanhankelijk zijn en goed met kinderen omgaan, vriendelijke gezinsgenoten zijn en met andere huisdieren kunnen opschieten als ze goed gesocialiseerd zijn. Ze hebben regelmatig beweging en mentale prikkels nodig en gedijen niet als ze lang alleen zijn. PetMD raadt vroege socialisatie aan en ongeveer eens per week borstelen.",
+      ],
+      sources: ["S818","S820","S821","S10"],
+    },
+    schipperke: {
+      aka: "Kleine kapitein, Kleine zwarte duivel, Spitzke, šiperke",
+      text: [
+        "De schipperke is een kleine herdershond uit België; de FCI rekent hem tot de herdershonden en de standaard beschrijft een wolfachtige hond van kleine afmetingen maar zeer stevig gebouwd, helemaal zwart, met een kraag, manen en een ‘broek’. De FCI-standaard noemt een gewicht van 3–9 kg (gemiddeld 4–7 kg is het streefgewicht) en PetMD een hoogte van 10–13 inch (ongeveer 25–33 cm); een hond van dit formaat is volgroeid rond 9–12 maanden (PetMD-grootteklasse). Een groot Brits onderzoek (McMillan et al. 2024) vond een mediane levensverwachting van 14,2 jaar, en de Royal Kennel Club noemt meer dan 12 jaar.",
+        "De FCI-standaard noemt de schipperke een uitstekende kleine waakhond, sprankelend van levenslust, gereserveerd tegenover vreemden en zeer zacht met kinderen. De Royal Kennel Club raadt tot 1 uur beweging per dag aan en vachtverzorging vaker dan eens per week, meldt dat het ras verhaart en geschikt is voor een appartement, en plaatst het in Breed Watch-categorie 1. PetMD schrijft dat schipperkes activiteiten nodig hebben die lichaam en geest bezighouden, slim maar eigenzinnig zijn en dat sommige een sterk jachtinstinct behouden; PetMD raadt vroege socialisatie, dagelijks tandenpoetsen en elke twee weken de oren schoonmaken aan. VCA raadt aan minstens twee keer per week te borstelen.",
+      ],
+      sources: ["S824","S825","S826","S827","S828","S771","S10"],
+    },
+    belgian_tervuren: {
+      aka: "Tervuren, Tervueren, Terv, Belgische herder (Tervuerense), belgijski ovčar tervuren",
+      text: [
+        "De Tervuerense herder is de langharige, fawnkleurige variant van de Belgische herder, een herdershond uit België; de FCI erkent één ras Belgische herder met vier varianten. De FCI-standaard beschrijft een harmonisch gebouwde hond die elegantie en kracht combineert, met een lange vacht die een kraag, een ‘broek’ en een bevederde staart vormt. Voor de Tervuerense herder is alleen fawn of grijs met een zwarte overlay en een zwart masker toegestaan (fawn heeft de voorkeur). De schofthoogte is ongeveer 62 cm bij reuen en 58 cm bij teven en het gewicht ongeveer 25–30 kg bij reuen en 20–25 kg bij teven; een hond van dit formaat is volgroeid rond 12–15 maanden (PetMD-grootteklasse). De Royal Kennel Club noemt een levensverwachting van meer dan 10 jaar en PetMD 12–14 jaar.",
+        "De FCI-standaard noemt de Belgische herder een waakzame en actieve hond, boordevol energie, zonder angst of agressiviteit. De Royal Kennel Club raadt meer dan 2 uur beweging per dag aan en vachtverzorging vaker dan eens per week, meldt dat het ras verhaart en past bij een groot huis met een grote tuin, en plaatst het in Breed Watch-categorie 1. PetMD schrijft dat Tervuerense herders een hechte band met hun gezin opbouwen, veel lichaamsbeweging en mentale prikkels nodig hebben en kinderen en kleinere dieren kunnen proberen te hoeden. PetMD raadt vroege socialisatie aan, wekelijks borstelen (bijna dagelijks in de rui), elke 1 à 2 weken de oren schoonmaken en elke vier tot zes weken een bad.",
+      ],
+      sources: ["S312","S313","S830","S832","S10"],
+    },
+    toy_fox_terrier: {
+      aka: "Amerikaanse toy terriër, Amertoy, TFT, Toy foxterriër",
+      text: [
+        "De toy fox terrier is een kleine Amerikaanse terriër uit de Toy Group van de AKC; de AKC-standaard beschrijft een evenwichtig gebouwde dwerghond met een atletische uitstraling, een korte, satijnachtige vacht, rechtopstaande puntoren en een grotendeels wit lichaam met een kop in driekleur, wit en tan, wit en zwart, of wit, chocoladebruin en tan. PetMD noemt een gewicht van 4–9 pond (ongeveer 1,8–4 kg) en een hoogte van 8,5–11,5 inch (ongeveer 21–29 cm); een hond van dit formaat is volgroeid rond 8–12 maanden (PetMD). PetMD en WebMD noemen een levensverwachting van 13–15 jaar.",
+        "De AKC-standaard noemt de toy fox terrier intelligent, alert, vriendelijk en trouw aan zijn baasjes. PetMD raadt minstens een uur beweging per dag, 1 à 2 keer per week borstelen en vroege training en socialisatie aan, en schrijft dat het ras nog altijd een sterk jachtinstinct heeft. WebMD schrijft dat toy fox terriërs geweldige maatjes zijn voor oudere kinderen die respectvol met de hond omgaan, maar niet worden aanbevolen voor gezinnen met kleine kinderen, verlatingsangst kunnen tonen als ze lang alleen zijn, en raadt aan dagelijks de tanden te poetsen, wekelijks de oren te wassen en maandelijks de nagels te knippen.",
+      ],
+      sources: ["S833","S834","S835","S10"],
+    },
+    gordon_setter: {
+      aka: "Zwart-met-tan setter, Schotse setter, Gordon, gordonski seter",
+      text: [
+        "De Gordon setter is een grote zwart-met-tan staande hond uit Schotland (FCI-groep 7, staande honden; land van herkomst Groot-Brittannië). De FCI-standaard beschrijft een stijlvolle hond met galopperende lijnen en een diepe, glanzende kolenzwarte vacht met kastanjerode aftekeningen (tan). De schofthoogte is 66 cm en het gewicht 29,5 kg bij reuen, bij teven 62 cm en 25,5 kg. Een hond van dit formaat is volgroeid rond 15–18 maanden (PetMD), en de Royal Kennel Club noemt een levensverwachting van meer dan 10 jaar.",
+        "De FCI-standaard noemt de Gordon setter moedig, extravert en van een vriendelijk, evenwichtig karakter; de PDSA beschrijft een vriendelijk, intelligent ras dat graag bezig wordt gehouden. De Royal Kennel Club raadt meer dan twee uur beweging per dag aan en een groot huis met tuin, en de PDSA zegt dat de zware vacht dagelijks verzorgd moet worden. PetMD adviseert een uur voor en na de maaltijd niet te laten bewegen, pups vroeg te socialiseren en wegens het sterke jachtinstinct extra aandacht te besteden aan het terugroepen. WebMD raadt aan dagelijks de tanden te poetsen en ongeveer eens per maand een bad te geven, en zegt dat het ras maar matig goed met jonge kinderen overweg kan.",
+      ],
+      sources: ["S841","S842","S843","S844","S845","S10"],
+    },
+    afghan_hound: {
+      aka: "Afghaan, Tazi, Baluchi-windhond, afganski hrt",
+      text: [
+        "De Afghaanse windhond is een hoge, langharige windhond uit Afghanistan (FCI-groep 10, windhonden; land van herkomst Afghanistan, onder Brits patronaat). De FCI-standaard beschrijft een hond die kracht en waardigheid uitstraalt en snelheid met kracht combineert, met een lange, zeer fijne vacht; alle kleuren zijn toegestaan behalve merle. De ideale schofthoogte is 68–74 cm bij reuen en 63–69 cm bij teven. De AKC-standaard noemt een gewicht van ongeveer 60 pond (27 kg) voor reuen en ongeveer 50 pond (23 kg) voor teven. Een hond van dit formaat is volgroeid rond 15–18 maanden (PetMD), en de Royal Kennel Club noemt een levensverwachting van meer dan 10 jaar.",
+        "De FCI-standaard noemt de Afghaanse windhond waardig en gereserveerd, met een zekere felheid. De Royal Kennel Club raadt meer dan twee uur beweging per dag aan, dagelijkse vachtverzorging en een groot huis met tuin. De PDSA schrijft dat de lange, zijdeachtige vacht dagelijks geborsteld moet worden, dat Afghaanse windhonden met goede socialisatie goed met kinderen overweg kunnen en dat hun sterke jachtinstinct aandacht vraagt in de buurt van andere huisdieren. PetMD adviseert om na een maaltijd minstens een uur te wachten met bewegen en minstens elke 1 à 2 weken een bad te geven; WebMD raadt aan dagelijks de tanden te poetsen.",
+      ],
+      sources: ["S849","S850","S851","S852","S853","S854","S10"],
+    },
+    australian_silky_terrier: {
+      aka: "Silky terriër, Silky, avstralski svilnati terier",
+      text: [
+        "De Australische silky terrier is een kleine, zeer alerte dwergterriër uit Australië (FCI-groep 3, terriërs; sectie dwergterriërs), in Noord-Amerika bekend als Silky Terrier. De FCI-standaard vraagt om een platte, fijne, glanzende vacht met een zijdeachtige textuur in blauw met tan – alle tinten blauw en tan zijn toegestaan, zilver en wit niet – en een schofthoogte van 23–26 cm bij reuen, met iets kleinere teven. De standaarden noemen geen gewicht (‘in verhouding tot de hoogte’); PetMD en WebMD noemen ongeveer 10 pond (circa 4,5 kg). Een hond van dit formaat is volgroeid rond 8–12 maanden (PetMD), en de Royal Kennel Club noemt een levensverwachting van meer dan 12 jaar (PetMD en WebMD: 13–15 jaar).",
+        "De FCI-standaard beschrijft een moedige en waardige dwergterriër, als gezelschapshond onovertroffen. De Royal Kennel Club raadt tot 30 minuten beweging per dag aan, dagelijkse vachtverzorging en zegt dat het ras geschikt is voor een appartement. PetMD schrijft dat silky’s goed met andere huisdieren en kinderen overweg kunnen als ze van jongs af aan goed gesocialiseerd zijn, raadt socialisatielessen vóór de leeftijd van 16 weken aan, adviseert elke twee tot drie weken de oren schoon te maken en de hond wegens zijn jachtinstinct aan de lijn of in een omheind gebied te houden. WebMD raadt aan dagelijks de tanden te poetsen en ongeveer eens per maand een bad te geven.",
+      ],
+      sources: ["S855","S856","S857","S858","S10"],
+    },
+    parson_russell_terrier: {
+      aka: "Parson Jack Russell terriër, Parson terriër, PRT, parson russell terier",
+      text: [
+        "De Parson Russell terriër is een degelijke, actieve en wendbare werkterriër uit Groot-Brittannië, oorspronkelijk gefokt voor het werk op de vos (FCI-groep 3, terriërs; sectie grote en middelgrote terriërs). Het is een ander ras dan de Jack Russell terriër: de Kennel Club erkende hem in 1990 voor het eerst als Parson Jack Russell Terrier. De FCI-standaard vraagt om een witte of overwegend witte hond met tan, citroenkleurige of zwarte aftekeningen, of elke combinatie van die kleuren, met een ruwe, gebroken of gladde vacht, en een ideale schofthoogte van 36 cm bij reuen en 33 cm bij teven. De PDSA noemt een gemiddeld gewicht van 6–8 kg. Een hond van dit formaat is volgroeid rond 9–12 maanden (PetMD), en de Royal Kennel Club noemt een levensverwachting van meer dan 12 jaar (WebMD: 13 tot 15 jaar).",
+        "De FCI-standaard noemt het ras moedig en vriendelijk. De Royal Kennel Club raadt tot een uur beweging per dag aan en eenmaal per week vachtverzorging. Volgens de PDSA zitten deze honden vol energie, hebben ze idealiter 1–2 uur beweging per dag nodig, kunnen ze goed met kinderen overweg, zijn ze uitstekende gezinshonden en moeten ze van jongs af aan gesocialiseerd worden met andere huisdieren in het gezin. PetMD merkt op dat sommige een sterk jachtinstinct hebben en raadt aan dagelijks de tanden te poetsen, elke twee weken de oren schoon te maken en elke twee tot vier weken een bad te geven. WebMD voegt toe dat ze niet graag alleen zijn en verlatingsangst kunnen hebben.",
+      ],
+      sources: ["S864","S865","S866","S867","S868","S10"],
+    },
+    wire_fox_terrier: {
+      aka: "Foxterriër ruwhaar, Ruwharige foxterriër, Foxterriër draadhaar, Foxterriër, ostrodlaki foksterier",
+      text: [
+        "De foxterriër ruwhaar is een actieve en levendige terriër uit Groot-Brittannië (FCI-groep 3, terriërs; sectie grote en middelgrote terriërs) – niet de toy fox terrier. De FCI-standaard vraagt om stevige botten en kracht in een klein formaat, nooit lomp of grof, met een dichte, zeer draadharige vacht met een zachtere ondervacht, overwegend wit met zwarte, zwarte-met-tan of tan aftekeningen, en een schofthoogte van hoogstens 39 cm bij reuen, met iets kleinere teven. De AKC-standaard noemt voor een reu in showconditie 18 pond en voor een teef ongeveer twee pond minder, met een marge van één pond omhoog of omlaag (ongeveer 7,7–8,6 kg voor reuen en 6,8–7,7 kg voor teven). Een hond van dit formaat is volgroeid rond 9–12 maanden (PetMD), en de Royal Kennel Club noemt een levensverwachting van meer dan 12 jaar (PetMD: 12–15 jaar).",
+        "De FCI-standaard noemt het ras vriendelijk, open en onbevreesd. De Royal Kennel Club raadt tot een uur beweging per dag aan en vachtverzorging vaker dan eens per week. Volgens de PDSA houden foxterriërs van spelen en verkennen, zijn ze uitstekende gezinshonden en hebben ze 1 à 2 keer per week vachtverzorging nodig. WebMD noemt ze geweldige maatjes voor kinderen, maar adviseert altijd toezicht te houden bij jonge kinderen. PetMD zegt dat ze vanwege hun sterke jachtinstinct goed in de gaten gehouden moeten worden bij kleine huisdieren, en raadt aan de pup goed te socialiseren, dagelijks de tanden te poetsen, ongeveer eens per maand een bad te geven en de vacht drie tot vier keer per jaar met de hand te trimmen. WebMD raadt aan ongeveer eens per maand de nagels te knippen.",
+      ],
+      sources: ["S871","S872","S873","S874","S875","S876","S10"],
+    },
+    manchester_terrier: {
+      aka: "Manchester terriër (standaard), Zwart-met-tan terriër, Manchester, manchesterski terier",
+      text: [
+        "De Manchester terrier is een compacte, elegante terriër uit Groot-Brittannië (FCI-groep 3, terriërs; sectie grote en middelgrote terriërs) – het standaardformaat, niet de dwergvariant. De FCI-standaard vraagt om een compacte, elegante, degelijk gebouwde hond met substantie, met een strakke, gladde, korte en glanzende vacht, uitsluitend gitzwart met rijk mahoniekleurige tan, en noemt een ideale schofthoogte van 41 cm bij reuen en 38 cm bij teven. De standaard van de Canadian Kennel Club noemt een gewicht van 5,5 tot 10 kg (12 tot 22 lb). Een hond van dit formaat is volgroeid rond 9–12 maanden (PetMD), en de PDSA noemt een levensverwachting van meer dan 12 jaar (WebMD: 15 tot 17 jaar).",
+        "De FCI-standaard noemt het ras scherp, alert, vrolijk en sportief, scherpzinnig en toegewijd. De PDSA raadt tot een uur beweging per dag aan en zegt dat eenmaal per week borstelen meestal voldoende is. PetMD schrijft dat Manchesters goed met kinderen overweg kunnen, vooral als ze die al als pup leren kennen, en raadt aan de pup te socialiseren vanaf de dag dat hij thuiskomt; ook merkt PetMD op dat ze door hun verleden als rattenvanger een sterk jachtinstinct hebben, dus ze passen misschien niet in een huis met hamsters of gerbils. WebMD adviseert jonge kinderen nooit zonder toezicht bij honden te laten, raadt aan dagelijks de tanden te poetsen en zegt dat het ras gevoelig is voor kou, dus een jasje of trui kan nodig zijn.",
+      ],
+      sources: ["S888","S889","S890","S891","S892","S10"],
+    },
+    tibetan_terrier: {
+      aka: "Tibet terriër, tibetanski terier",
+      text: [
+        "De Tibetaanse terriër is een stevige, middelgrote, langharige gezelschapshond uit Tibet (FCI-groep 9, gezelschapshonden; sectie Tibetaanse rassen) – alleen qua naam een terriër. De FCI-standaard vraagt om een over het algemeen vierkant silhouet, een dubbele vacht met een rijk, fijn, lang bovenhaar dat recht of golvend is, hangende bevederde oren en een staart die in een krul over de rug wordt gedragen; elke kleur is toegestaan behalve chocolade, leverbruin of merle. Reuen zijn 36–41 cm hoog, teven iets kleiner. De standaard van de Canadian Kennel Club noemt een gewicht van 8,25 tot 13,5 kg (18 tot 30 lb). Een hond van dit formaat is volgroeid rond 12–15 maanden (PetMD), en de PDSA noemt een levensverwachting van meer dan 12 jaar (PetMD: 15–16 jaar).",
+        "De FCI-standaard noemt het ras levendig en goedaardig, extravert, alert en intelligent, maar zuinig met genegenheid tegenover vreemden. De PDSA noemt Tibetaanse terriërs zachtaardige, vriendelijke en aanhankelijke honden die goede gezinshonden zijn, raadt ongeveer een uur beweging per dag aan en zegt dat dagelijkse vachtverzorging nodig is. PetMD merkt op dat ze verlatingsangst kunnen ontwikkelen als ze lang alleen zijn en raadt socialisatielessen voor de pup aan vóór de leeftijd van 16 weken; volgens PetMD kunnen ze goed overweg met jonge kinderen en andere honden als de kennismaking onder toezicht verloopt, terwijl WebMD zegt dat sommige exemplaren moeite hebben met jonge kinderen en andere honden. WebMD raadt aan dagelijks de tanden te poetsen.",
+      ],
+      sources: ["S904","S905","S906","S907","S909","S10"],
+    },
+    greyhound: {
+      aka: "Engelse greyhound, angleški hrt",
+      text: [
+        "De greyhound is een grote windhond uit Groot-Brittannië; de FCI plaatst hem in groep 10, bij de kortharige windhonden. De FCI-standaard beschrijft een sterk gebouwde, hoge hond met ruime proporties, spierkracht en een symmetrische bouw, intelligent, zachtaardig, aanhankelijk en met een evenwichtig karakter, met een fijne, strakke vacht in zwart, wit, rood, blauw, fawn, valbruin of gestroomd, of een van die kleuren met wit gebroken. De ideale schofthoogte is 71–76 cm bij reuen en 68–71 cm bij teven. De AKC-standaard noemt een gewicht van 65 tot 70 pond (ongeveer 29,5–31,8 kg) voor reuen en 60 tot 65 pond (ongeveer 27,2–29,5 kg) voor teven. Een hond van dit formaat is volgroeid rond 15–18 maanden (PetMD). Een Brits VetCompass-onderzoek naar greyhounds bij de dierenarts vond een mediane levensduur van 11,4 jaar; de PDSA noemt een levensverwachting van meer dan 10 jaar.",
+        "Volgens de PDSA zijn greyhounds niet overdreven energiek: ze hebben ongeveer een uur beweging per dag nodig en rennen liever af en toe flink uit dan dat ze kilometers wandelen, en hun korte vacht moet wekelijks verzorgd worden. Met de juiste socialisatie als pup kunnen ze goede gezinshonden zijn, maar ze hebben een sterk jachtinstinct – PetMD schrijft dat hun zeer sterke jachtinstinct ze slecht laat passen bij huishoudens met katten of andere kleine dieren. WebMD raadt aan dagelijks de tanden te poetsen en merkt op dat greyhounds zonder isolerende ondervacht gevoelig kunnen zijn voor extreme temperaturen.",
+      ],
+      sources: ["S912","S913","S914","S916","S917","S918","S920","S10"],
+    },
+    xoloitzcuintli: {
+      aka: "Xoloitzcuintle, Xolo, Mexicaanse naakthond, Mexicaanse haarloze hond, mehiški goli pes",
+      text: [
+        "De xoloitzcuintle is een oud, primitief hondenras uit Mexico; de FCI plaatst hem in groep 5, bij de oertypen. De FCI-standaard beschrijft een stille en rustige hond, vrolijk, alert en intelligent, nooit agressief, in twee varianten die op vacht en gebit na identiek zijn: haarloos, met gladde blote huid, en behaard, met een korte, vlakke vacht. Er zijn drie maten – 25–35 cm, 35–45 cm en 46–60 cm schofthoogte – en de kleuren zijn zwart, zwartachtig grijs, leigrijs, donkergrijs, roodachtig, leverbruin, brons of blond, met bij voorkeur een effen donkere huid. WebMD noemt een gewicht van 10 tot 15 pond voor de toy, 15 tot 30 voor de miniatuur en 30 tot 55 pond voor de standaard xolo (ongeveer 4,5–24,9 kg over alle maten). Een hond van standaardformaat is volgroeid rond 12–15 maanden (PetMD). PetMD en WebMD noemen allebei een levensverwachting van 13–18 jaar.",
+        "PetMD schrijft dat xolo’s ongeveer 20 minuten beweging per dag nodig hebben. De blote huid vraagt zorg: PetMD adviseert zonnebrandcrème voor honden voordat ze naar buiten gaan, nooit zonnebrandcrème voor mensen, en VCA zegt dat ze het best passen bij een warm klimaat en bij lagere temperaturen een trui nodig hebben. WebMD noemt de xolo een goede hond voor gezinnen met kinderen en raadt aan twee tot drie keer per week de tanden te poetsen. PetMD voegt toe dat contact met kinderen altijd onder toezicht moet gebeuren, dat pups gesocialiseerd moeten worden zodat ze niet wantrouwig tegenover nieuwe mensen opgroeien en dat het ras een sterk jachtinstinct heeft tegenover kleine dieren.",
+      ],
+      sources: ["S923","S924","S926","S927","S928","S10"],
+    },
+    spinone_italiano: {
+      aka: "Italiaanse spinone, Spinone, Spinoni, Italiaanse griffon, Italiaanse ruwharige staande hond, italijanski ostrodlaki ptičar",
+      text: [
+        "De spinone italiano is een Italiaanse staande hond; de FCI plaatst hem in groep 7, bij de continentale staande honden van het griffontype. De FCI-standaard beschrijft een stevig gebouwde, robuuste en krachtige hond met sterke botten en een ruwe vacht – van nature sociaal, volgzaam en geduldig, en een ervaren jager op elk terrein. Hij komt voor in zuiver wit, wit met oranje aftekeningen, oranjeschimmel, wit met bruine aftekeningen en bruinschimmel. De FCI-standaard noemt een schofthoogte van 60–70 cm en een gewicht van 32–37 kg bij reuen, bij teven 58–65 cm en 28–30 kg. Een hond van dit formaat is volgroeid rond 15–18 maanden (PetMD). De PDSA noemt een levensverwachting van meer dan 10 jaar; PetMD 10–12 jaar.",
+        "De PDSA noemt de spinone een energiek ras dat idealiter meer dan 2 uur beweging per dag nodig heeft en zegt dat de dikke, deels draadharige vacht 2 of 3 keer per week thuis verzorgd moet worden. WebMD raadt aan wekelijks de nagels te knippen en dagelijks de tanden te poetsen, zegt dat het ras over het algemeen goed met andere honden en kinderen overweg kan en waarschuwt dat lang alleen gelaten worden vaak tot problemen leidt. PetMD adviseert pups vroeg te socialiseren, de hond buiten aan de lijn of in een omheind gebied te houden en een uur voor en na het eten niet te laten bewegen, vanwege het risico op maagtorsie.",
+      ],
+      sources: ["S935","S936","S937","S938","S10"],
+    },
+    pointer: {
+      aka: "Engelse pointer, angleški pointer",
+      text: [
+        "De pointer is een Britse staande hond; de FCI plaatst hem in groep 7, bij de Britse en Ierse pointers en setters. De FCI-standaard beschrijft een symmetrische, goed gebouwde hond met een silhouet van sierlijke bogen, sterk maar soepel, alert en met een goedaardig, evenwichtig karakter, met een fijne, korte, harde vacht met een duidelijke glans. De gebruikelijke kleuren zijn citroen-wit, oranje-wit, leverbruin-wit en zwart-wit. De FCI-standaard noemt een schofthoogte van 63–69 cm bij reuen en 61–66 cm bij teven; de UKC-standaard noemt een werkgewicht van 55–75 lb (ongeveer 25–34 kg) voor reuen en 44–65 lb (ongeveer 20–29,5 kg) voor teven. Een hond van dit formaat is volgroeid rond 15–18 maanden (PetMD). De PDSA noemt een levensverwachting van meer dan 12 jaar; PetMD 10–12 jaar.",
+        "De PDSA schrijft dat pointers veel energie hebben en idealiter meer dan 2 uur beweging per dag nodig hebben, dat ze actieve eigenaren en goede training in terugroepen nodig hebben en dat hun korte vacht maar eenmaal per week verzorgd hoeft te worden. PetMD adviseert ze in een omheinde tuin te houden zodat ze niet weglopen en merkt op dat ze een gevaar kunnen vormen voor huisvogels; WebMD raadt aan dagelijks de tanden te poetsen en zegt dat ze niet bijzonder goed met jonge kinderen overweg kunnen. De PDSA voegt toe dat, zoals bij alle rassen, de juiste socialisatie als pup helpt om goed in het gezinsleven te passen.",
+      ],
+      sources: ["S943","S944","S945","S946","S947","S10"],
+    },
+    welsh_terrier: {
+      aka: "Welshie, Welsh, valižanski terier",
+      text: [
+        "De Welsh terrier is een terriër uit Groot-Brittannië; de FCI plaatst hem in groep 3, bij de grote en middelgrote terriërs. De FCI-standaard beschrijft een keurige, werkzame, evenwichtig gebouwde en compacte hond met een draadharige, harde, zeer dichte en rijke vacht – aanhankelijk, gehoorzaam en makkelijk te leiden, vrolijk en zelden schuw. De kleur is zwart met tan of zwart grizzle met tan. De FCI-standaard noemt een schofthoogte tot 39 cm en een gewicht van 9–9,5 kg (20–21 lb). Een hond van dit formaat is volgroeid rond 9–12 maanden (PetMD). De Royal Kennel Club en de PDSA noemen een levensverwachting van meer dan 12 jaar; PetMD 12–15 jaar.",
+        "De Royal Kennel Club zegt dat de Welsh terrier tot 1 uur beweging per dag nodig heeft en vachtverzorging vaker dan eens per week. De PDSA noemt ongeveer een uur beweging per dag en vachtverzorging twee tot drie keer per week, en beschrijft een speelse, vriendelijke hond die dol is op kinderen en een uitstekende gezinshond is. PetMD merkt een sterk jachtinstinct op – kleinere dieren kunnen worden achternagezeten – en adviseert buiten een lijn of een omheind gebied te gebruiken en de hond vanaf jonge leeftijd te socialiseren en te trainen.",
+      ],
+      sources: ["S955","S956","S957","S958","S10"],
+    },
+    american_hairless_terrier: {
+      aka: "AHT, Haarloze terriër, ameriški goli terier",
+      text: [
+        "De Amerikaanse haarloze terriër is een kleine tot middelgrote, soepel gespierde en actieve terriër uit de VS, erkend door de American Kennel Club in de terriërgroep; de FCI kent het ras niet. De rasstandaard beschrijft een energieke, alerte, nieuwsgierige en intelligente hond met V-vormige oren en een natuurlijke staart die nooit wordt gecoupeerd. Er zijn twee varianten: de haarloze, zonder haar behalve snorharen en haren boven de ogen en op de snuit, en een behaarde met een korte, gladde vacht. De standaard noemt een ideale schofthoogte van 12–16 inch (30–41 cm); PetMD noemt een gewicht van 12–28 pond (5,4–12,7 kg) en een levensverwachting van 14–16 jaar, en een hond van dit formaat is volgroeid rond 9–12 maanden (PetMD).",
+        "Dogs NSW noemt ongeveer 20 minuten beweging per dag, en PetMD zegt dat regelmatige beweging en mentale prikkels een must zijn voor dit ras; PetMD noemt het geweldige speelmaatjes voor kinderen, met toezicht bij jonge kinderen. De blote huid vraagt zorg: de rasvereniging zegt dat zonnebrandcrème of beschermende kleding onmisbaar is om zonnebrand te voorkomen, PetMD adviseert een trui bij kou en regelmatig een bad, bij voorkeur wekelijks; WebMD raadt aan dagelijks de tanden te poetsen en de rasvereniging adviseert wekelijks de nagels te knippen. De rasvereniging merkt ook een sterk jachtinstinct op.",
+      ],
+      sources: ["S967","S971","S972","S973","S977","S10"],
+    },
+    tibetan_spaniel: {
+      aka: "Tibbie, Tibetaanse spaniël, tibetanski španjel",
+      text: [
+        "De Tibetaanse spaniël is een kleine, actieve en alerte gezelschapshond uit Tibet (China), in de FCI-groep van gezelschapshonden bij de Tibetaanse rassen, met Groot-Brittannië als patronaatsland van het ras. De FCI-standaard beschrijft hem als vrolijk en zelfbewust, zeer intelligent en gereserveerd tegenover vreemden, alert, trouw maar onafhankelijk, iets langer dan hoog, met een zijdeachtige vacht van gemiddelde lengte, bevederde oren en een rijk behaarde staart die in een krul over de rug wordt gedragen; alle kleuren zijn toegestaan behalve merle. De standaard noemt een hoogte van ongeveer 25,4 cm en een ideaal gewicht van 4,1–6,8 kg; een hond van dit formaat is volgroeid rond 9–12 maanden (PetMD). In een groot Brits onderzoek (McMillan et al., 2024) behoorde het ras tot de langstlevende rassen, met een mediaan van 15,2 jaar; de PDSA noemt een levensverwachting van meer dan 12 jaar.",
+        "De PDSA schrijft dat Tibetaanse spaniëls ongeveer een uur beweging per dag nodig hebben, graag meedoen met gezinsspelletjes, over het algemeen goed met iedereen overweg kunnen en goede gezinshonden zijn, en dat een paar keer per week borstelen meestal genoeg is. WebMD zegt dat ze gevoelig zijn voor verlatingsangst en beter passen bij gezinnen met oudere kinderen, een veilig omheinde tuin nodig hebben en bij warm weer oververhit kunnen raken; WebMD raadt aan dagelijks de tanden te poetsen, minstens eens per week de oren te controleren, maandelijks de nagels te controleren en ongeveer elke maand een bad te geven.",
+      ],
+      sources: ["S980","S981","S982","S771","S10"],
+    },
+    black_russian_terrier: {
+      aka: "Russische zwarte terriër, Russische terriër, Tchiorny Terrier, BRT, ruski črni terier",
+      text: [
+        "De zwarte Russische terriër is een grote, robuuste en zeer atletische werkhond uit Rusland, in de FCI-groep van pinschers en schnauzers. De FCI-standaard beschrijft hem als waardig, zelfverzekerd en goed beheerst, beminnelijk, weinig veeleisend, slim en vriendelijk, met een ruwe, dikke dubbele vacht die rijke wenkbrauwen, een snor en een baard vormt; de enige kleuren zijn zwart en zwart met wat grijze haren. De standaard noemt voor reuen 72–76 cm en 50–60 kg, voor teven 68–72 cm en 45–50 kg; een hond van dit formaat bereikt zijn volwassen gewicht meestal rond 18–24 maanden. De Royal Kennel Club noemt een levensverwachting van meer dan 10 jaar.",
+        "De Royal Kennel Club raadt meer dan 2 uur beweging en dagelijkse vachtverzorging aan, plus een groot huis met tuin; de vacht verhaart niet. PetMD schrijft dat het ras toegewijd is aan zijn gezin en goed met kinderen overweg kan onder toezicht, dat vroege en consequente socialisatie belangrijk is en dat intensieve beweging vlak voor en na maaltijden vermeden moet worden vanwege maagtorsie. VCA noemt gezinnen met oudere kinderen ideaal en raadt aan om de vacht elke zes tot acht weken door een hondenverzorger te laten trimmen.",
+      ],
+      sources: ["S985","S986","S989","S990","S10"],
+    },
+    neapolitan_mastiff: {
+      aka: "Mastino napoletano, Neo, Napolitaan, Italiaanse mastiff, napolitanski mastif",
+      text: [
+        "De mastino napoletano (Napolitaanse mastiff) is een grote, zware en massieve waakhond uit Italië; de FCI plaatst hem in groep 2, bij de molossoïde rassen van het mastiff-type. De FCI-standaard beschrijft hem als stabiel en trouw, niet agressief, met een korte, harde, dichte vacht en dikke, losse huid die talrijke plooien en rimpels vormt, vooral op de kop. De voorkeurskleuren zijn grijs, loodgrijs en zwart, maar ook bruin, fawn en diep fawn zijn toegestaan. De standaard noemt voor reuen 65–75 cm en 60–70 kg, voor teven 60–68 cm en 50–60 kg; een hond van dit formaat bereikt zijn volwassen gewicht meestal rond 18–24 maanden. De Royal Kennel Club en de PDSA noemen een levensverwachting van minder dan 10 jaar, PetMD maar 7–9 jaar.",
+        "De Royal Kennel Club raadt tot 1 uur beweging per dag, eenmaal per week vachtverzorging en een groot huis met tuin aan, meldt dat het ras verhaart en plaatst het in Breed Watch-categorie 3. De PDSA zegt dat problemen met de oogleden, zoals entropion en ectropion, optreden door de overtollige huid rond het gezicht. De PDSA noemt Napolitaanse mastiffs trouwe, toegewijde honden die van het gezinsleven houden en zegt dat hun huidplooien dagelijks schoongemaakt moeten worden. PetMD schrijft dat ze geweldig zijn in gezinnen en met kinderen, maar niet alleen gelaten mogen worden met een klein kind, dat ze veel kwijlen en dat goede socialisatie en training met positieve bekrachtiging vroeg moeten beginnen.",
+      ],
+      sources: ["S993","S994","S995","S996","S10"],
+    },
+    norwegian_elkhound: {
+      aka: "Elkhound, Elkie, Grijze Noorse elandhond, Norsk Elghund Grå, Noorse elandhond, norveški losovec",
+      text: [
+        "De Noorse elandhond grijs is een grijze Noordse jachtspits uit Noorwegen, gefokt om op elanden te jagen; de FCI plaatst hem in groep 5, bij de Noordse jachthonden. De FCI-standaard beschrijft een typische spits – compact, kort en vierkant gebouwd, met kleine rechtopstaande oren, een staart die strak over de rug gekruld is en een dikke, ruwe vacht van gemiddelde lengte – die onbevreesd, energiek en dapper is. Grijs, in verschillende tinten, is de enige toegestane kleur. De FCI-standaard noemt een ideale schofthoogte van 52 cm voor reuen en 49 cm voor teven en de AKC-standaard een gewicht van ongeveer 55 pond (25 kg) voor reuen en ongeveer 48 pond (22 kg) voor teven. Een hond van dit formaat is volgroeid rond 12–15 maanden (PetMD), en PetMD en WebMD noemen een levensverwachting van 12–15 jaar.",
+        "PetMD raadt een uur beweging per dag aan en zegt dat het ras net zoveel mentale prikkels nodig heeft als lichaamsbeweging; PetMD noemt het geweldig met kinderen van alle leeftijden als het contact onder toezicht gebeurt, en een prachtige gezinshond als hij als pup gesocialiseerd en vroeg getraind wordt. PetMD adviseert buiten een veilig omheind gebied of een lijn te gebruiken, merkt op dat hij veel verhaart en dat hij door de dikke vacht snel oververhit raakt; WebMD raadt aan de vacht elke dag minstens twee minuten te borstelen en dagelijks de tanden te poetsen.",
+      ],
+      sources: ["S960","S961","S963","S964","S10"],
+    },
+    mudi: {
+      aka: "Hongaarse mudi, madžarski mudi",
+      text: [
+        "De mudi is een Hongaarse herdershond; de FCI plaatst hem in groep 1, bij de herdershonden. De FCI-standaard beschrijft een middelgrote hond met een wigvormige kop, rechtopstaande oren en een rug die naar achteren afloopt, met een dichte, glanzende, golvende of licht gekrulde vacht – buitengewoon leergierig, levendig, moedig, waakzaam en werklustig. Hij komt voor in zwart, wit, fawn, asgrijs (blauw), leverbruin, asbruin en cifra (merle). De FCI-standaard noemt een schofthoogte van 41–47 cm bij reuen en 38–44 cm bij teven; PetMD noemt een gewicht van 18–29 lb (ongeveer 8–13 kg). Een hond van dit formaat is volgroeid rond 12–15 maanden (PetMD). De Royal Kennel Club noemt een levensverwachting van meer dan 10 jaar; PetMD 12–14 jaar.",
+        "De Royal Kennel Club zegt dat de mudi tot 1 uur beweging per dag nodig heeft en eenmaal per week vachtverzorging, loyaal en aanhankelijk is tegenover zijn gezin en een uitlaatklep nodig heeft voor zijn energie en intelligentie; hij past het best bij een ervaren eigenaar die hem prikkels, structuur en een doel kan geven. PetMD beschrijft hem als een slimme, onafhankelijke en blafgrage hond en zegt dat mudi-pups van jongs af aan gesocialiseerd moeten worden om zich op hun gemak te voelen bij kinderen, andere huisdieren en nieuwe mensen.",
+      ],
+      sources: ["S949","S950","S952","S10"],
+    },
+    lhasa_apso: {
+      aka: "Lhasa, Apso, Lasa Apso",
+      text: [
+        "De lhasa apso is een kleine gezelschapshond uit Tibet; de Royal Kennel Club zegt dat hij oorspronkelijk door Tibetaanse monniken werd gehouden als gezelschap en waakhond. Het is een kleine hond met een lange vacht; VCA noemt een hoogte van 10–11 inch (ongeveer 25–28 cm) en een gewicht van 13–15 pond (ongeveer 6–7 kg). Een hond van dit formaat is volgroeid rond 9–12 maanden (PetMD), en de Royal Kennel Club noemt een levensverwachting van meer dan 12 jaar.",
+        "De Royal Kennel Club raadt tot 1 uur beweging per dag aan en dagelijkse vachtverzorging, zegt dat het ras niet verhaart en geschikt is voor een appartement, en plaatst het in Breed Watch-categorie 1. Volgens de PDSA kunnen lhasa apso’s met de juiste socialisatie als pup goed overweg met kinderen en andere huisdieren in het gezin, en zijn ze tegenover vreemden wat terughoudender. WebMD raadt aan minstens om de twee weken een bad te geven, elke 3 tot 4 weken de nagels te knippen en de tanden zo regelmatig mogelijk te poetsen.",
+      ],
+      sources: ["S740","S741","S742","S743","S10"],
+    },
+    coton_de_tulear: {
+      aka: "Coton, Coton de Tuléar, Koninklijke hond van Madagaskar",
+      text: [
+        "De coton de tuléar komt uit Madagaskar, onder patronaat van Frankrijk; de FCI plaatst hem bij de bichons en verwante rassen. De FCI-standaard beschrijft een kleine, langharige gezelschapshond met een witte, katoenachtige vacht, ronde donkere ogen en een levendige, intelligente uitdrukking, met een vrolijk, stabiel karakter en zeer sociaal met mensen en andere honden. De schofthoogte is 26–28 cm bij reuen en 23–25 cm bij teven en het gewicht 4–6 kg bij reuen en 3,5–5 kg bij teven; de grondkleur is wit. Een hond van dit formaat is volgroeid rond 8–12 maanden (PetMD); de Royal Kennel Club noemt een levensverwachting van meer dan 12 jaar.",
+        "De Royal Kennel Club raadt tot 30 minuten beweging per dag aan en zegt dat het ras geschikt is voor een appartement, weinig verhaart en dagelijkse vachtverzorging nodig heeft. De PDSA noemt cotons trouwe, liefdevolle honden die opbloeien in het gezinsleven en uitstekende gezinshonden zijn. PetMD schrijft dat ze over het algemeen goed overweg kunnen met kinderen en andere huisdieren als de kennismaking goed verloopt, verlatingsangst kunnen ontwikkelen als ze langer dan een paar uur alleen zijn, en raadt aan minstens eens per week de oren te controleren en ongeveer eens per maand een bad te geven.",
+      ],
+      sources: ["S10","S721","S722","S724","S725","S726"],
+    },
+    chow_chow: {
+      aka: "Chow, Chow-chow",
+      text: [
+        "De chow-chow is een compacte, leeuwachtige spits uit China met een dichte, afstaande vacht in één effen kleur: zwart, rood, blauw, fawn, crème of wit (FCI-rasstandaard). De FCI-standaard noemt een schofthoogte van 48–56 cm bij reuen en 46–51 cm bij teven; de PDSA noemt een gemiddeld gewicht van 20–30 kg. Een hond van dit formaat is volgroeid rond 15–18 maanden (PetMD); de PDSA noemt een levensverwachting van minder dan 10 jaar en PetMD 8 tot 12 jaar.",
+        "De PDSA schrijft dat het ras minstens een uur beweging per dag nodig heeft, elke dag geborsteld moet worden en dat je tussen eten en bewegen tijd moet laten. Zij beschrijft trouwe honden die in het juiste gezin, bij voorkeur met ervaren eigenaren, ideale huisdieren kunnen zijn, raadt het ras niet aan bij kleine kinderen en merkt op dat ze een sterk jachtinstinct hebben, mogelijk niet goed alleen kunnen zijn en van jongs af aan goed gesocialiseerd moeten worden. PetMD voegt toe dat de dikke vacht en de korte snuit ze gevoeliger maken voor oververhitting.",
+      ],
+      sources: ["S696","S700","S701","S10"],
+    },
+    old_english_sheepdog: {
+      aka: "Bobtail, Bob-tail, OES, Herdershond",
+      text: [
+        "De bobtail (Old English sheepdog) is een grote, sterke, vierkant ogende herdershond uit Groot-Brittannië met een rijke, ruwe, ruige vacht: elke tint grijs, grizzle of blauw op het lichaam, met een witte kop, hals en voorhand (FCI-rasstandaard). De FCI-standaard noemt een schofthoogte vanaf 61 cm bij reuen en vanaf 56 cm bij teven; de PDSA noemt een gemiddelde hoogte van 56–61 cm en een gemiddeld gewicht van 27–30 kg. Een hond van dit formaat is volgroeid rond 15–18 maanden (PetMD); de PDSA noemt een levensverwachting van meer dan 10 jaar en PetMD 10–12 jaar.",
+        "De PDSA schrijft dat het ras minstens twee uur beweging per dag nodig heeft, verdeeld over meerdere wandelingen, en dat de lange vacht dagelijks geborsteld moet worden en ongeveer elke zes weken bijgewerkt door een hondenverzorger. Zij beschrijft ontspannen gezinshonden die beter passen bij gezinnen met oudere kinderen, verlatingsangst kunnen krijgen als ze alleen gelaten worden, een sterk hoed- en jachtinstinct hebben, en adviseert tussen eten en bewegen tijd te laten.",
+      ],
+      sources: ["S704","S705","S706","S10"],
+    },
+    pekingese: {
+      aka: "Peke, Pekinees, Leeuwhondje",
+      text: [
+        "De Pekingees is een klein, leeuwachtig gezelschapshondje uit China met een vrij lange, rechte vacht en een kraag van lang haar rond de hals. De FCI-rasstandaard noemt een ideaal gewicht van hoogstens 5 kg voor reuen en 5,4 kg voor teven; de PDSA noemt een gemiddeld gewicht van 5 kg en een hoogte van 15–22 cm. Een hond van dit formaat is volgroeid rond 8–12 maanden (PetMD); de PDSA noemt een levensverwachting van meer dan 12 jaar en PetMD 12–14 jaar.",
+        "De PDSA raadt minstens een half uur beweging per dag aan, zonder te overdrijven omdat het platte gezicht het ademhalen moeilijk kan maken, en geen beweging op warmere dagen. Zij schrijft dat de lange vacht dagelijks geborsteld moet worden, dat het ras veel verhaart, vooral in het voorjaar en de herfst, dat de huidplooien in het gezicht tot huidinfecties kunnen leiden, dat pekingezen het vaak beter doen bij volwassenen of oudere kinderen, verlatingsangst kunnen krijgen als ze alleen gelaten worden en van jongs af aan gesocialiseerd moeten worden. PetMD adviseert dagelijks de tanden te poetsen, elke 1 à 2 weken de oren schoon te maken en bij een lange vacht elke zes tot acht weken professioneel te laten verzorgen.",
+      ],
+      sources: ["S690","S693","S694","S10"],
+    },
   },
 };
 
