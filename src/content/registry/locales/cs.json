@@ -50,7 +50,7 @@
         "light-cream": "Světle krémová",
         "fox-red": "Liščí červená",
         "chocolate": "Čokoládová",
-        "light-liver": "Světle jaterní"
+        "light-liver": "Světle játrová"
       }
     },
     "golden_retriever": {
@@ -222,7 +222,15 @@
         "Husky",
         "Haski",
         "Siberian husky"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Šedobílá",
+        "black-white": "Černobílá",
+        "red-white": "Červenobílá",
+        "agouti": "Agouti (divoké zbarvení)",
+        "sable-white": "Sobolí s bílou",
+        "white": "Bílá"
+      }
     },
     "rottweiler": {
       "name": "Rotvajler",
@@ -230,7 +238,11 @@
       "synonyms": [
         "Rottweiler",
         "Rotík"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Černá s pálením",
+        "black-mahogany": "Černá s mahagonovým pálením"
+      }
     },
     "bulldog": {
       "name": "Anglický buldok",
@@ -239,7 +251,12 @@
         "Buldok",
         "English bulldog",
         "British bulldog"
-      ]
+      ],
+      "colours": {
+        "red": "Červená",
+        "fawn": "Plavá",
+        "fawn-brindle": "Plavá žíhaná"
+      }
     },
     "german_shorthaired_pointer": {
       "name": "Německý krátkosrstý ohař",
@@ -249,7 +266,14 @@
         "Kurzhaar",
         "Deutsch Kurzhaar",
         "German shorthaired pointer"
-      ]
+      ],
+      "colours": {
+        "liver-roan": "Hnědá kropenatá",
+        "liver": "Hnědá",
+        "liver-white-ticked": "Hnědobílá tečkovaná",
+        "black-roan": "Černá kropenatá",
+        "black": "Černá"
+      }
     },
     "yorkshire_terrier": {
       "name": "Jorkšírský teriér",
@@ -269,7 +293,16 @@
         "Cane corso italiano",
         "Corso",
         "Italský corso pes"
-      ]
+      ],
+      "colours": {
+        "black": "Černá",
+        "grey": "Olověně šedá (modrá)",
+        "black-brindle": "Černá žíhaná",
+        "grey-brindle": "Olověně šedá žíhaná",
+        "fawn": "Plavá",
+        "stag-red": "Jelení červená",
+        "dark-wheat": "Tmavě plavá"
+      }
     },
     "pembroke_welsh_corgi": {
       "name": "Welsh corgi pembroke",
@@ -279,7 +312,13 @@
         "Pembroke",
         "Welsh corgi",
         "Pembroke Welsh corgi"
-      ]
+      ],
+      "colours": {
+        "red-white": "Červenobílá",
+        "sable-white": "Sobolí s bílou",
+        "fawn-white": "Plavá s bílou",
+        "tricolour": "Tříbarevná (černá, bílá, pálení)"
+      }
     },
     "dobermann": {
       "name": "Dobrman",
@@ -288,7 +327,11 @@
         "Dobermann",
         "Doberman",
         "Dobrmann"
-      ]
+      ],
+      "colours": {
+        "black-rust": "Černá s rezavým pálením",
+        "brown-rust": "Hnědá s rezavým pálením"
+      }
     },
     "boxer": {
       "name": "Německý boxer",
@@ -296,7 +339,11 @@
       "synonyms": [
         "Boxer",
         "Deutscher Boxer"
-      ]
+      ],
+      "colours": {
+        "fawn": "Žlutá (plavá)",
+        "brindle": "Žíhaná"
+      }
     },
     "miniature_schnauzer": {
       "name": "Knírač malý",
@@ -306,7 +353,12 @@
         "Trpasličí knírač",
         "Zwergschnauzer",
         "Miniature schnauzer"
-      ]
+      ],
+      "colours": {
+        "pepper-salt": "Pepř a sůl",
+        "black-silver": "Černostříbrná",
+        "black": "Černá"
+      }
     },
     "shih_tzu": {
       "name": "Shih-tzu",
@@ -315,7 +367,12 @@
         "Shih tzu",
         "Ši-tsu",
         "Shitzu"
-      ]
+      ],
+      "colours": {
+        "gold-white": "Zlatobílá",
+        "black-white": "Černobílá",
+        "liver-white": "Játrová s bílou"
+      }
     },
     "great_dane": {
       "name": "Německá doga",
@@ -324,7 +381,14 @@
         "Doga",
         "Deutsche Dogge",
         "Great Dane"
-      ]
+      ],
+      "colours": {
+        "fawn": "Žlutá (plavá)",
+        "brindle": "Žíhaná",
+        "harlequin": "Harlekýn (bílá s černými skvrnami)",
+        "black": "Černá",
+        "blue": "Ocelově modrá"
+      }
     },
     "pomeranian": {
       "name": "Německý špic trpasličí",
@@ -335,7 +399,14 @@
         "Trpasličí špic",
         "Zwergspitz",
         "Pom"
-      ]
+      ],
+      "colours": {
+        "orange": "Oranžová",
+        "cream": "Krémová",
+        "white": "Bílá",
+        "black": "Černá",
+        "brown": "Hnědá"
+      }
     },
     "boston_terrier": {
       "name": "Bostonský teriér",
@@ -343,7 +414,12 @@
       "synonyms": [
         "Boston",
         "Boston terrier"
-      ]
+      ],
+      "colours": {
+        "brindle-white": "Žíhaná s bílou",
+        "black-white": "Černobílá",
+        "seal-white": "Seal s bílou (velmi tmavě hnědá)"
+      }
     },
     "miniature_american_shepherd": {
       "name": "Miniaturní americký ovčák",
@@ -352,7 +428,13 @@
         "Mini aussie",
         "Miniaturní australský ovčák",
         "Miniature American shepherd"
-      ]
+      ],
+      "colours": {
+        "blue-merle": "Blue merle",
+        "black": "Černá",
+        "red-merle": "Red merle",
+        "red": "Červená"
+      }
     },
     "chihuahua": {
       "name": "Čivava",
@@ -361,7 +443,15 @@
         "Chihuahua",
         "Čivava krátkosrstá",
         "Chihuahueño"
-      ]
+      ],
+      "colours": {
+        "fawn": "Plavá",
+        "cream": "Krémová",
+        "black-tan": "Černá s pálením",
+        "chocolate": "Čokoládová",
+        "white": "Bílá",
+        "fawn-white": "Plavá s bílou"
+      }
     },
     "english_springer_spaniel": {
       "name": "Anglický špringršpaněl",
@@ -371,7 +461,13 @@
         "Springer",
         "Springer spaniel",
         "English springer spaniel"
-      ]
+      ],
+      "colours": {
+        "liver-white": "Játrová s bílou",
+        "black-white": "Černobílá",
+        "liver-white-tan": "Tříbarevná (játrová, bílá, pálení)",
+        "black-white-tan": "Tříbarevná (černá, bílá, pálení)"
+      }
     },
     "shetland_sheepdog": {
       "name": "Šeltie",
@@ -380,7 +476,13 @@
         "Sheltie",
         "Shetlandský ovčák",
         "Shetland sheepdog"
-      ]
+      ],
+      "colours": {
+        "sable-white": "Sobolí s bílou",
+        "tricolour": "Tříbarevná (černá, bílá, pálení)",
+        "blue-merle": "Blue merle",
+        "black-white": "Černobílá"
+      }
     },
     "brittany": {
       "name": "Bretaňský ohař",
@@ -390,7 +492,15 @@
         "Épagneul breton",
         "Epagneul breton",
         "Brittany"
-      ]
+      ],
+      "colours": {
+        "orange-white": "Oranžovobílá",
+        "liver-white": "Játrová s bílou",
+        "orange-roan": "Oranžová kropenatá",
+        "liver-roan": "Játrová kropenatá",
+        "black-white": "Černobílá",
+        "tricolour": "Tříbarevná"
+      }
     },
     "american_cocker_spaniel": {
       "name": "Americký kokršpaněl",
@@ -398,7 +508,17 @@
       "synonyms": [
         "Americký kokr",
         "American cocker spaniel"
-      ]
+      ],
+      "colours": {
+        "buff": "Světle plavá (buff)",
+        "black": "Černá",
+        "black-tan": "Černá s pálením",
+        "red": "Červená",
+        "chocolate": "Čokoládová",
+        "black-white": "Černobílá",
+        "red-white": "Červenobílá",
+        "tricolour": "Tříbarevná (černá, bílá, pálení)"
+      }
     },
     "belgian_malinois": {
       "name": "Belgický ovčák malinois",
@@ -407,7 +527,11 @@
         "Malinois",
         "Belgický ovčák",
         "Belgian malinois"
-      ]
+      ],
+      "colours": {
+        "fawn": "Plavá s černou maskou",
+        "mahogany": "Mahagonová s černou maskou"
+      }
     },
     "basset_hound": {
       "name": "Baset",
@@ -415,7 +539,11 @@
       "synonyms": [
         "Basset hound",
         "Basset"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Tříbarevná (černá, bílá, pálení)",
+        "lemon-white": "Citronová s bílou"
+      }
     },
     "hungarian_vizsla": {
       "name": "Maďarský krátkosrstý ohař",
@@ -435,7 +563,17 @@
         "Kokr",
         "Cocker spaniel",
         "English cocker spaniel"
-      ]
+      ],
+      "colours": {
+        "golden": "Zlatá",
+        "black": "Černá",
+        "liver": "Játrová",
+        "black-tan": "Černá s pálením",
+        "blue-roan": "Modrá kropenatá",
+        "orange-roan": "Oranžová kropenatá",
+        "black-white": "Černobílá",
+        "tricolour": "Tříbarevná (černá, bílá, pálení)"
+      }
     },
     "maltese": {
       "name": "Maltézský psík",
@@ -454,7 +592,13 @@
         "Mopsík",
         "Pug",
         "Carlin"
-      ]
+      ],
+      "colours": {
+        "fawn": "Plavá",
+        "black": "Černá",
+        "apricot": "Meruňková",
+        "silver": "Stříbrná"
+      }
     },
     "rough_collie": {
       "name": "Kolie dlouhosrstá",
@@ -464,7 +608,12 @@
         "Skotský ovčák",
         "Lassie",
         "Rough collie"
-      ]
+      ],
+      "colours": {
+        "sable-white": "Sobolí s bílou",
+        "tricolour": "Tříbarevná (černá, bílá, pálení)",
+        "blue-merle-white": "Blue merle s bílou"
+      }
     },
     "mastiff": {
       "name": "Mastif",
@@ -473,7 +622,12 @@
         "Anglický mastif",
         "Mastiff",
         "English mastiff"
-      ]
+      ],
+      "colours": {
+        "fawn": "Plavá",
+        "apricot": "Meruňková",
+        "brindle": "Žíhaná"
+      }
     },
     "shiba_inu": {
       "name": "Shiba inu",
@@ -482,7 +636,12 @@
         "Šiba",
         "Šiba inu",
         "Shiba"
-      ]
+      ],
+      "colours": {
+        "red": "Červená",
+        "black-tan": "Černá s pálením",
+        "sesame": "Sezamová"
+      }
     },
     "rhodesian_ridgeback": {
       "name": "Rhodéský ridgeback",
@@ -491,7 +650,11 @@
         "Ridgeback",
         "Rhodesian ridgeback",
         "Africký lví pes"
-      ]
+      ],
+      "colours": {
+        "red-wheaten": "Rudě pšeničná",
+        "light-wheaten": "Světle pšeničná"
+      }
     },
     "papillon": {
       "name": "Papillon",
@@ -501,7 +664,13 @@
         "Motýlek",
         "Phalène",
         "Continental toy spaniel"
-      ]
+      ],
+      "colours": {
+        "red-white": "Bílá s červenou",
+        "sable-white": "Bílá se sobolí",
+        "tricolour": "Tříbarevná (černá, bílá, pálení)",
+        "black-white": "Bílá s černou"
+      }
     },
     "portuguese_water_dog": {
       "name": "Portugalský vodní pes",
@@ -510,7 +679,12 @@
         "Cão de água português",
         "Portuguese water dog",
         "PWD"
-      ]
+      ],
+      "colours": {
+        "black": "Černá",
+        "black-white": "Černobílá",
+        "brown": "Hnědá"
+      }
     },
     "bichon_frise": {
       "name": "Bišonek kadeřavý",
@@ -529,7 +703,12 @@
         "Novofundlanďan",
         "Newfie",
         "Newfoundland"
-      ]
+      ],
+      "colours": {
+        "black": "Černá",
+        "landseer": "Landseer (bílá s černou)",
+        "brown": "Hnědá"
+      }
     },
     "dalmatian": {
       "name": "Dalmatin",
@@ -836,7 +1015,17 @@
         "Mainská kočka",
         "Mývalí kočka",
         "Main coon"
-      ]
+      ],
+      "colours": {
+        "brown": "Hnědá",
+        "red": "Rudá",
+        "silver": "Stříbrná",
+        "cream": "Krémová",
+        "blue-grey": "Modrá (šedomodrá)",
+        "black": "Černá",
+        "white": "Bílá",
+        "tortoiseshell": "Želvovinová"
+      }
     },
     "british_shorthair": {
       "name": "Britská krátkosrstá kočka",
@@ -846,7 +1035,17 @@
         "Britská kočka",
         "British shorthair",
         "British blue"
-      ]
+      ],
+      "colours": {
+        "blue-grey": "Modrá (šedomodrá)",
+        "black": "Černá",
+        "cream": "Krémová",
+        "lilac": "Lilac",
+        "white": "Bílá",
+        "red": "Rudá",
+        "silver": "Stříbrná",
+        "tortoiseshell": "Želvovinová"
+      }
     },
     "ragdoll": {
       "name": "Ragdoll",
@@ -854,7 +1053,14 @@
       "synonyms": [
         "Kočka ragdoll",
         "Rag doll"
-      ]
+      ],
+      "colours": {
+        "seal-point": "Seal point",
+        "blue-point": "Blue point",
+        "lilac-point": "Lilac point",
+        "red-point": "Red point",
+        "cream-point": "Cream point"
+      }
     },
     "siberian_cat": {
       "name": "Sibiřská kočka",
@@ -863,7 +1069,17 @@
         "Sibiřka",
         "Sibiřská lesní kočka",
         "Siberian cat"
-      ]
+      ],
+      "colours": {
+        "brown": "Hnědá",
+        "silver": "Stříbrná",
+        "red": "Rudá",
+        "black": "Černá",
+        "blue-grey": "Modrá (šedomodrá)",
+        "cream": "Krémová",
+        "white": "Bílá",
+        "tortoiseshell": "Želvovinová"
+      }
     },
     "norwegian_forest_cat": {
       "name": "Norská lesní kočka",
@@ -873,7 +1089,17 @@
         "Norka",
         "Skogkatt",
         "Norwegian forest cat"
-      ]
+      ],
+      "colours": {
+        "brown": "Hnědá",
+        "silver": "Stříbrná",
+        "red": "Rudá",
+        "black": "Černá",
+        "blue-grey": "Modrá (šedomodrá)",
+        "cream": "Krémová",
+        "white": "Bílá",
+        "tortoiseshell": "Želvovinová"
+      }
     },
     "bengal": {
       "name": "Bengálská kočka",
@@ -882,7 +1108,12 @@
         "Bengálka",
         "Bengal",
         "Bengal cat"
-      ]
+      ],
+      "colours": {
+        "brown-spotted": "Hnědá skvrnitá",
+        "silver-spotted": "Stříbrná skvrnitá",
+        "snow": "Snow (sněžná)"
+      }
     },
     "shar_pei": {
       "name": "Šar-pej",
@@ -1160,7 +1391,15 @@
       "slug": "tibetsky-terier",
       "synonyms": [
         "Tibetan terrier"
-      ]
+      ],
+      "colours": {
+        "golden": "Zlatá",
+        "white": "Bílá",
+        "cream": "Krémová",
+        "grey-smoke": "Šedá nebo kouřová",
+        "parti-colour": "Strakatá",
+        "tricolour": "Tříbarevná (černá, bílá, pálení)"
+      }
     },
     "greyhound": {
       "name": "Greyhound",
@@ -1168,7 +1407,15 @@
       "synonyms": [
         "Anglický chrt",
         "English greyhound"
-      ]
+      ],
+      "colours": {
+        "brindle": "Žíhaná",
+        "black": "Černá",
+        "fawn": "Plavá",
+        "blue": "Modrá",
+        "red": "Červená",
+        "black-white": "Černobílá"
+      }
     },
     "xoloitzcuintli": {
       "name": "Xoloitzcuintle",
@@ -1177,7 +1424,15 @@
         "Xoloitzcuintli",
         "Xolo",
         "Mexický naháč"
-      ]
+      ],
+      "colours": {
+        "black": "Černá",
+        "slate-grey": "Břidlicově šedá",
+        "reddish": "Červená",
+        "liver": "Játrová",
+        "bronze": "Bronzová",
+        "blonde": "Blond"
+      }
     },
     "spinone_italiano": {
       "name": "Italský hrubosrstý ohař",
@@ -1187,7 +1442,14 @@
         "Spinone",
         "Italský spinone",
         "Italian Spinone"
-      ]
+      ],
+      "colours": {
+        "orange-white": "Bílá s oranžovou",
+        "brown-roan": "Hnědá kropenatá",
+        "brown-white": "Bílá s hnědou",
+        "orange-roan": "Oranžová kropenatá",
+        "white": "Bílá"
+      }
     },
     "pointer": {
       "name": "Pointer",
@@ -1198,7 +1460,13 @@
         "Anglický pointr",
         "Anglický ohař",
         "English Pointer"
-      ]
+      ],
+      "colours": {
+        "liver-white": "Játrová s bílou",
+        "orange-white": "Oranžovobílá",
+        "lemon-white": "Citronová s bílou",
+        "black-white": "Černobílá"
+      }
     },
     "mudi": {
       "name": "Mudi",
@@ -1206,7 +1474,16 @@
       "synonyms": [
         "Maďarský mudi",
         "Hungarian Mudi"
-      ]
+      ],
+      "colours": {
+        "black": "Černá",
+        "white": "Bílá",
+        "fawn": "Plavá",
+        "blue": "Popelavá (modrá)",
+        "liver": "Hnědá",
+        "isabella": "Popelavě hnědá",
+        "blue-merle": "Merle (cifra)"
+      }
     },
     "welsh_terrier": {
       "name": "Velšský teriér",
@@ -1216,7 +1493,11 @@
         "Welshie",
         "Welsh",
         "Welsh terrier"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Černá s pálením",
+        "black-grizzle-tan": "Černošedá (grizzle) s pálením"
+      }
     },
     "norwegian_elkhound": {
       "name": "Norský losí pes šedý",
@@ -1239,7 +1520,13 @@
       "synonyms": [
         "American Hairless Terrier",
         "AHT"
-      ]
+      ],
+      "colours": {
+        "pink-black-spots": "Růžová s černými skvrnami",
+        "pink-chocolate-spots": "Růžová s čokoládovými skvrnami",
+        "grey-pink-patches": "Tmavě šedá s růžovými skvrnami",
+        "pink-tan-spots": "Růžová s pálenými skvrnami"
+      }
     },
     "tibetan_spaniel": {
       "name": "Tibetský španěl",
@@ -1247,7 +1534,15 @@
       "synonyms": [
         "Tibetan Spaniel",
         "Tibbie"
-      ]
+      ],
+      "colours": {
+        "golden": "Zlatá",
+        "red": "Červená",
+        "sable": "Sobolí",
+        "cream": "Krémová",
+        "black-tan": "Černá s pálením",
+        "black": "Černá"
+      }
     },
     "black_russian_terrier": {
       "name": "Ruský černý teriér",
@@ -1255,7 +1550,11 @@
       "synonyms": [
         "Black Russian Terrier",
         "Černý ruský teriér"
-      ]
+      ],
+      "colours": {
+        "black": "Černá",
+        "black-grey": "Černá s šedými chlupy"
+      }
     }
   },
   "suitability_labels": {
