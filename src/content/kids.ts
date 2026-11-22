@@ -108,7 +108,7 @@ export const kidsCopy: Record<Locale, KidsCopy> = {
     all: "Vse za otroke",
     items: [
       { page: "coloring", title: "Pobarvanke", text: "12 brezplačnih pobarvank za tiskanje, vsaka z zanimivostjo o skrbi za ljubljenčka.", image: coloringThumb },
-      { page: "curio", title: "Spoznaj Curia", text: "Curio, naša maskota, in njegovi kratki videi.", image: curioThumb },
+      { page: "curio", title: "Spoznajte Curia", text: "Curio, naša maskota, in njegovi kratki videi.", image: curioThumb },
       { page: "walkyourpet", title: "#walkyourpet", text: "Gibanje, ki ga je začel otrok: ven na sprehod.", image: null },
     ],
   },

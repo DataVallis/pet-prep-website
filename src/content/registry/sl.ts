@@ -72,16 +72,16 @@ const sl: RegistryCopy = {
     availabilityLabel: "V PetPrepu",
     sortLabel: "Razvrsti po",
     sort: { recommended: "Najprej v aplikaciji", az: "A–Ž", size: "Velikost (od majhnih do velikih)" },
-    clear: "Počisti vse",
+    clear: "Počistite vse",
     results: (total) => `{n} od ${total} ${form(total, "pasme", "pasem", "pasem", "pasem")}`,
     none: "Nobena pasma ne ustreza. Poskusite z manj filtri.",
     loading: "Nalaganje iskanja …",
     page: "Stran {n} od {total}",
     prev: "Prejšnja",
     next: "Naslednja",
-    compareAdd: "Primerjaj: {name}",
+    compareAdd: "Primerjajte: {name}",
     compareBar: "Za primerjavo izbrano: {n} od {max}",
-    compareGo: "Primerjaj",
+    compareGo: "Primerjajte",
     compareMax: "Primerjate lahko največ {max} pasme.",
     azTitle: "Vse pasme od A do Ž",
     azIntro: "Vse pasme v registru po abecedi.",
@@ -99,7 +99,7 @@ const sl: RegistryCopy = {
     intro: "Ključne potrebe ena ob drugi, iz istih virov kot na straneh pasem.",
     pick: "V katalogu izberite dve ali tri pasme in jih primerjajte.",
     back: "Nazaj na katalog",
-    remove: "Odstrani: {name}",
+    remove: "Odstranite: {name}",
     note: "Vrednosti so take, kot jih navaja posamezni vir. Kjer se viri razlikujejo, so na strani pasme prikazani vsi.",
     availabilityRow: "V PetPrepu",
     activityRow: "Dnevni cilj odraslega ljubljenčka v PetPrepu (pravilo igre)",
@@ -611,15 +611,15 @@ const sl: RegistryCopy = {
       alt: { ai_photo: (name, colour) => `${name}, ${colour} – fotografija (AI)`, ai_illustration: (name, colour) => `${name}, ${colour} – ilustracija (AI)` },
     },
     share: {
-      button: "Deli",
-      title: "Deli to pasmo",
-      copy: "Kopiraj",
+      button: "Delite",
+      title: "Delite to pasmo",
+      copy: "Kopirajte",
       copied: "Kopirano",
       linkLabel: "Povezava do te strani",
       more: "Več možnosti",
       text: (name) => `${name}: potrebe, viri in kako jo simulira PetPrep`,
       emailSubject: (name) => `${name} – register živali PetPrep`,
-      on: (network) => `Deli na ${network}`,
+      on: (network) => `Delite na ${network}`,
     },
     og: { lead: "Potrebe, viri in kako jo simulira PetPrep", photoLabel: "AI fotografija" },
     qa: {
@@ -649,7 +649,7 @@ const sl: RegistryCopy = {
       aka: "volčji špic, nemški volčji špic, Wolfsspitz, Keeshond",
       text: [
         "Keeshond je srednje velik špic iz Nemčije — različica nemškega špica, imenovana volčji špic — z dolgo, štrlečo volčje sivo dlako, gosto grivo in temnimi »očali« okoli oči (standard FCI). Standard FCI navaja višino 49 ± 6 cm; PDSA navaja povprečno težo 16–20 kg. Pes te velikosti doraste pri približno 12–15 mesecih (PetMD); PDSA navaja življenjsko dobo več kot 10 let, VCA pa 12–14 let.",
-        "PDSA piše, da potrebuje do ene ure gibanja na dan, da je treba gosto dvojno dlako česati vsak dan, da je keeshond odličen družinski pes, da se razume z drugimi živalmi v domu in da se ob potrpežljivosti dobro uči. VCA ga opiše kot igrivega in previdnega z otroki, svetuje kopanje približno enkrat na mesec in opozarja, da mu dlaka močno izpada in da se zaradi goste dlake lahko pregreje.",
+        "PDSA piše, da potrebuje do ene ure gibanja na dan, da je treba gosto dvojno dlako česati vsak dan, da je keeshond odličen družinski pes, da se razume z drugimi ljubljenčki v domu in da se ob potrpežljivosti dobro uči. VCA ga opiše kot igrivega in previdnega z otroki, svetuje kopanje približno enkrat na mesec in opozarja, da mu dlaka močno izpada in da se zaradi goste dlake lahko pregreje.",
       ],
       sources: ["S246", "S709", "S710", "S10"],
     },
@@ -681,7 +681,7 @@ const sl: RegistryCopy = {
       aka: "Flat-Coated Retriever, flat coated retriever, flatcoat, ravnodlaki prinasalec",
       text: [
         "Ravnodlaki prinašalec je bister, živahen lovski pes iz Velike Britanije, vzrejen za prinašanje divjadi. Standard FCI opisuje gosto, čim bolj gladko ležečo dlako z dobro poraslimi nogami in repom, samo v črni ali jetrno rjavi barvi, ter optimističen, prijazen, samozavesten in dobrodušen značaj. Za samce navaja zaželeno višino 59–61,5 cm, za samice 56,5–59 cm, zaželeno težo pa 27–36 kg za samce in 25–32 kg za samice. Pes te velikosti doraste pri približno 15–18 mesecih (PetMD). The Royal Kennel Club navaja življenjsko dobo manj kot 10 let, britanska raziskava iz leta 2024 v preglednici Dogs Trust pa mediano 11,7 leta.",
-        "The Royal Kennel Club priporoča več kot 2 uri gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da potrebuje veliko hišo z velikim vrtom, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD ravnodlake prinašalce opisuje kot čudovite družinske pse, ki se običajno dobro razumejo z otroki in drugimi živalmi, še posebej ob pravilnem seznanjanju in socializaciji; svetuje česanje dvakrat na teden, čiščenje ušes vsak teden ali dva, kopanje in striženje krempljev vsak mesec ali dva, odsvetuje pa gibanje tik pred obrokom ali po njem.",
+        "The Royal Kennel Club priporoča več kot 2 uri gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da potrebuje veliko hišo z velikim vrtom, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD ravnodlake prinašalce opisuje kot čudovite družinske pse, ki se običajno dobro razumejo z otroki in drugimi ljubljenčki, še posebej ob pravilnem seznanjanju in socializaciji; svetuje česanje dvakrat na teden, čiščenje ušes vsak teden ali dva, kopanje in striženje krempljev vsak mesec ali dva, odsvetuje pa gibanje tik pred obrokom ali po njem.",
       ],
       sources: ["S761", "S762", "S763", "S123", "S10"],
     },
@@ -721,7 +721,7 @@ const sl: RegistryCopy = {
       aka: "Borzoi, borzoj, ruski chrt, Russian Wolfhound, Russian Hunting Sighthound",
       text: [
         "Ruski hrt (borzoj) je dolgodlaki hrt iz Rusije, vzrejen za lov na zajce in lisice; standard FCI ga opisuje kot plemenitega, visokega, vitkega in močnega psa na razmeroma dolgih nogah z dolgo, svilnato, valovito dlako, ki je lahko katere koli barve od bele do črne, razen rjave, modre in izabelne, ter navaja zaželeno višino 75–85 cm pri psih in 68–78 cm pri psicah. PDSA navaja povprečno težo 27–47 kg pri psih in psicah ter življenjsko dobo več kot 10 let, PetMD 9–14 let; pes te velikosti doraste pri približno 15–18 mesecih (velikostni razred PetMD).",
-        "PDSA priporoča najmanj 1 uro gibanja na dan, razdeljeno na nekaj sprehodov, brez povodca le na varnem, ograjenem mestu. Piše, da imajo ruski hrti zelo močan lovski nagon in jih ne priporoča k manjšim živalim ali mlajšim otrokom, da so primerni za izkušene lastnike in potrebujejo nekoga doma večino časa, da jih je treba socializirati že od mladosti in česati nekajkrat na teden; med obrokom in gibanjem naj bo premor. PetMD svetuje česanje vsaj dva- do trikrat na teden in kot najpogostejšo zdravstveno težavo navaja napihnjenost želodca.",
+        "PDSA priporoča najmanj 1 uro gibanja na dan, razdeljeno na nekaj sprehodov, brez povodca le na varnem, ograjenem mestu. Piše, da imajo ruski hrti zelo močan lovski nagon in jih ne priporoča k manjšim ljubljenčkom ali mlajšim otrokom, da so primerni za izkušene lastnike in potrebujejo nekoga doma večino časa, da jih je treba socializirati že od mladosti in česati nekajkrat na teden; med obrokom in gibanjem naj bo premor. PetMD svetuje česanje vsaj dva- do trikrat na teden in kot najpogostejšo zdravstveno težavo navaja napihnjenost želodca.",
       ],
       sources: ["S802", "S800", "S803", "S10"],
     },
@@ -736,7 +736,7 @@ const sl: RegistryCopy = {
       aka: "Norwich Terrier, norwiški terier, norwich",
       text: [
         "Norwich terier je eden najmanjših terierjev, iz Velike Britanije; standard FCI ga opisuje kot nizkega, živahnega, čvrstega in močnega malega psa s trdo, žimasto, ravno dlako, ki okoli glave tvori ovratnik, s pokonci stoječimi ušesi s koničastimi vrhovi, v vseh odtenkih rdeče, pšenično rumene, črno-rjave ali sivkaste (grizzle) barve, ter navaja idealno višino 25 cm. Standard UKC navaja idealno težo približno 12 funtov (približno 5,4 kg) za samce in samice; pes te velikosti doraste pri približno 9–12 mesecih (velikostni razred PetMD). The Royal Kennel Club navaja življenjsko dobo več kot 10 let, PetMD pa 12–15 let.",
-        "The Royal Kennel Club ga opisuje kot enega najmanjših terierjev ljubeznive narave, priporoča do 1 ure gibanja na dan in česanje večkrat na teden, navaja, da mu dlaka izpada in da je primeren za stanovanje, ter ga uvršča med ogrožene britanske pasme. PetMD piše, da se norwich terierji navadno dobro razumejo z otroki in drugimi živalmi, da so zelo živahni in potrebujejo vsakodnevno gibanje in miselne izzive, da imajo močan lovski nagon, zato sta varen povodec in dobro ograjen vrt nujna, in da jih je treba socializirati že zgodaj; svetuje česanje vsaj dvakrat na teden, ščetkanje zob vsaj enkrat na teden, striženje krempljev približno enkrat na mesec in kopanje največ enkrat na tri mesece.",
+        "The Royal Kennel Club ga opisuje kot enega najmanjših terierjev ljubeznive narave, priporoča do 1 ure gibanja na dan in česanje večkrat na teden, navaja, da mu dlaka izpada in da je primeren za stanovanje, ter ga uvršča med ogrožene britanske pasme. PetMD piše, da se norwich terierji navadno dobro razumejo z otroki in drugimi ljubljenčki, da so zelo živahni in potrebujejo vsakodnevno gibanje in miselne izzive, da imajo močan lovski nagon, zato sta varen povodec in dobro ograjen vrt nujna, in da jih je treba socializirati že zgodaj; svetuje česanje vsaj dvakrat na teden, ščetkanje zob vsaj enkrat na teden, striženje krempljev približno enkrat na mesec in kopanje največ enkrat na tri mesece.",
       ],
       sources: ["S812", "S815", "S10", "S813", "S814"],
     },
@@ -744,7 +744,7 @@ const sl: RegistryCopy = {
       aka: "Miniature Bull Terrier, mini bulterier, mini bull, mini bull terier, pritlikavi bulterier",
       text: [
         "Miniaturni bulterier je majhen terier iz Velike Britanije; FCI ga uvršča med bulterierje, The Royal Kennel Club pa piše, da je bil kot samostojna različica priznan leta 1943 in da so ga vzrejali iz manjših bulterierjev, da bi ostal pod 35,5 cm (14 palcev). PetMD navaja višino 10–14 palcev (približno 25–36 cm) in težo 18–28 funtov (približno 8–13 kg); pes te velikosti doraste pri približno 9–12 mesecih (velikostni razred PetMD). The Royal Kennel Club navaja življenjsko dobo več kot 10 let, PetMD pa 11–13 let.",
-        "The Royal Kennel Club ga opisuje kot pogumnega, polnega energije in igrivega, priporoča do 1 ure gibanja na dan in česanje enkrat na teden, navaja, da mu dlaka izpada, ter ga uvršča med ogrožene britanske pasme. PetMD piše, da so miniaturni bulterierji na splošno ljubeči in dobri z otroki ter prijazni družinski spremljevalci, da se ob pravilni socializaciji lahko razumejo z drugimi živalmi, da potrebujejo redno gibanje in miselne izzive ter da ne uspevajo, če so dolgo sami; svetuje zgodnjo socializacijo in česanje približno enkrat na teden.",
+        "The Royal Kennel Club ga opisuje kot pogumnega, polnega energije in igrivega, priporoča do 1 ure gibanja na dan in česanje enkrat na teden, navaja, da mu dlaka izpada, ter ga uvršča med ogrožene britanske pasme. PetMD piše, da so miniaturni bulterierji na splošno ljubeči in dobri z otroki ter prijazni družinski spremljevalci, da se ob pravilni socializaciji lahko razumejo z drugimi ljubljenčki, da potrebujejo redno gibanje in miselne izzive ter da ne uspevajo, če so dolgo sami; svetuje zgodnjo socializacijo in česanje približno enkrat na teden.",
       ],
       sources: ["S818", "S820", "S821", "S10"],
     },
@@ -800,7 +800,7 @@ const sl: RegistryCopy = {
       aka: "parson jack russell terier, parson terier, parson, Parson Russell Terrier, Parson Jack Russell Terrier",
       text: [
         "Parson russell terier je delovni terier iz Velike Britanije — delaven, živahen in gibčen, prvotno vzrejen za lov na lisice (FCI skupina 3, terierji; sekcija veliki in srednji terierji). Je druga pasma kot jack russell terier: Kennel Club ga je prvič priznal leta 1990 kot parson jack russell terierja. Standard FCI zahteva belega ali pretežno belega psa z rjavimi, limonastimi ali črnimi lisami ali katero koli kombinacijo teh barv, s kocinasto, polkocinasto ali kratko dlako, in idealno višino 36 cm za pse in 33 cm za psice. PDSA navaja povprečno težo 6–8 kg. Pes te velikosti doraste pri približno 9–12 mesecih (PetMD), Royal Kennel Club pa navaja življenjsko dobo več kot 12 let (WebMD: 13 do 15 let).",
-        "Standard FCI ga opisuje kot pogumnega in prijaznega. Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje enkrat na teden; PDSA piše, da so ti psi polni energije, da jim najbolj ustreza 1–2 uri gibanja na dan, da se dobro razumejo z otroki, da so odlični družinski psi in da jih je treba že mlade socializirati z drugimi živalmi v družini. PetMD navaja, da imajo nekateri močan lovski nagon, ter priporoča vsakodnevno ščetkanje zob, čiščenje ušes vsaka dva tedna in kopanje na dva do štiri tedne; WebMD dodaja, da ne marajo biti sami in imajo lahko ločitveno tesnobo.",
+        "Standard FCI ga opisuje kot pogumnega in prijaznega. Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje enkrat na teden; PDSA piše, da so ti psi polni energije, da jim najbolj ustreza 1–2 uri gibanja na dan, da se dobro razumejo z otroki, da so odlični družinski psi in da jih je treba že mlade socializirati z drugimi ljubljenčki v družini. PetMD navaja, da imajo nekateri močan lovski nagon, ter priporoča vsakodnevno ščetkanje zob, čiščenje ušes vsaka dva tedna in kopanje na dva do štiri tedne; WebMD dodaja, da ne marajo biti sami in imajo lahko ločitveno tesnobo.",
       ],
       sources: ["S864", "S865", "S866", "S867", "S868", "S10"],
     },
@@ -835,7 +835,7 @@ const sl: RegistryCopy = {
       aka: "greyhound, grejhaund, Greyhound, English Greyhound",
       text: [
         "Angleški hrt (greyhound) je velik hrt iz Velike Britanije; FCI ga uvršča v 10. skupino med kratkodlake hrte. Standard FCI opisuje močno grajenega, pokončnega psa velikodušnih proporcev, mišične moči in skladne postave, ki je inteligenten, nežen, ljubeč in umirjen, s fino, tesno prilegajočo dlako v črni, beli, rdeči, modri, plavo rjavi, bledo rjavi ali tigrasti barvi ali v kateri od teh barv z belimi lisami; navaja idealno višino 71–76\u00a0cm za pse in 68–71\u00a0cm za psice. Standard AKC navaja težo 65 do 70 funtov (okoli 29,5–31,8\u00a0kg) za pse in 60 do 65 funtov (okoli 27,2–29,5\u00a0kg) za psice. Pes te velikosti doraste pri okoli 15–18 mesecih (PetMD). Britanska študija VetCompass hrtov v veterinarski oskrbi je ugotovila mediano življenjske dobe 11,4 leta; PDSA navaja življenjsko dobo več kot 10 let.",
-        "PDSA pravi, da angleški hrti niso pretirano energični: potrebujejo okoli uro gibanja na dan, raje kot dolge sprehode pa imajo nekaj dobrih tekov; njihovo kratko dlako je treba negovati enkrat na teden. Če so kot mladički pravilno socializirani, so lahko dobri družinski psi, a imajo močan nagon za lovljenje — PetMD pravi, da zaradi zelo močnega lovskega nagona niso primerni za dom z mačkami ali drugimi malimi živalmi. WebMD priporoča vsakodnevno ščetkanje zob in opozarja, da so hrti brez izolacijske podlanke lahko občutljivi na skrajne temperature.",
+        "PDSA pravi, da angleški hrti niso pretirano energični: potrebujejo okoli uro gibanja na dan, raje kot dolge sprehode pa imajo nekaj dobrih tekov; njihovo kratko dlako je treba negovati enkrat na teden. Če so kot mladički pravilno socializirani, so lahko dobri družinski psi, a imajo močan nagon za lovljenje — PetMD pravi, da zaradi zelo močnega lovskega nagona niso primerni za dom z mačkami ali drugimi malimi ljubljenčki. WebMD priporoča vsakodnevno ščetkanje zob in opozarja, da so hrti brez izolacijske podlanke lahko občutljivi na skrajne temperature.",
       ],
       sources: ["S912", "S913", "S914", "S916", "S917", "S918", "S920", "S10"],
     },
@@ -924,7 +924,7 @@ const sl: RegistryCopy = {
       aka: "Lhasa Apso, lhasa, apso, lasa apso, tibetanski pes",
       text: [
         "Lhasa apso je majhen spremljevalni pes iz Tibeta; The Royal Kennel Club piše, da so ga sprva imeli tibetanski menihi kot spremljevalca in čuvaja. Je majhen pes z dolgo dlako; VCA navaja višino 10–11 palcev (približno 25–28 cm) in težo 13–15 funtov (približno 6–7 kg); pes te velikosti doraste pri približno 9–12 mesecih (PetMD), The Royal Kennel Club pa navaja življenjsko dobo več kot 12 let.",
-        "The Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje vsak dan, navaja, da mu dlaka ne izpada in da je primeren za stanovanje, ter ga uvršča v 1. kategorijo programa Breed Watch. PDSA piše, da se lhasa apsi ob pravi socializaciji v mladičkovi dobi dobro razumejo z otroki in drugimi živalmi v gospodinjstvu ter da so do tujcev nekoliko bolj zadržani; WebMD svetuje kopanje vsaj enkrat na dva tedna, striženje krempljev vsake 3 do 4 tedne in čim bolj redno ščetkanje zob.",
+        "The Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje vsak dan, navaja, da mu dlaka ne izpada in da je primeren za stanovanje, ter ga uvršča v 1. kategorijo programa Breed Watch. PDSA piše, da se lhasa apsi ob pravi socializaciji v mladičkovi dobi dobro razumejo z otroki in drugimi ljubljenčki v gospodinjstvu ter da so do tujcev nekoliko bolj zadržani; WebMD svetuje kopanje vsaj enkrat na dva tedna, striženje krempljev vsake 3 do 4 tedne in čim bolj redno ščetkanje zob.",
       ],
       sources: ["S740", "S741", "S742", "S743", "S10"],
     },
@@ -964,7 +964,7 @@ const sl: RegistryCopy = {
       aka: "Anatolian Shepherd Dog, anatolski pastirski pes, kangal, kangalski ovčar",
       text: [
         "Anatolski ovčar je velik, močno grajen pes čuvaj čred iz Turčije; FCI turškega pastirskega psa opisuje kot kangala (Kangal Shepherd Dog) — enobarvnega, od plave do volčje sive barve s črno masko, visokega 72–78 cm (psi) in 65–73 cm (psice). Ameriški standard pasme navaja 110–150 funtov (približno 50–68 kg) za pse in 80–120 funtov (približno 36–54 kg) za psice. Pes te velikosti doraste pri približno 18–24 mesecih (PetMD); The Royal Kennel Club navaja življenjsko dobo več kot 10 let, WebMD pa povprečno 11 do 13 let.",
-        "The Royal Kennel Club priporoča več kot 2 uri gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da potrebuje veliko hišo z velikim vrtom na podeželju, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da je anatolski ovčar morda najbolj primeren za dom brez majhnih otrok, da se mladički, ki jih zgodaj seznanimo z drugimi živalmi, z njimi običajno razumejo, da je zgodnja socializacija ključna, da dlako zunaj menjave dvakrat na leto češemo enkrat na teden in da se je okoli obrokov treba izogibati gibanju.",
+        "The Royal Kennel Club priporoča več kot 2 uri gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da potrebuje veliko hišo z velikim vrtom na podeželju, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da je anatolski ovčar morda najbolj primeren za dom brez majhnih otrok, da se mladički, ki jih zgodaj seznanimo z drugimi ljubljenčki, z njimi običajno razumejo, da je zgodnja socializacija ključna, da dlako zunaj menjave dvakrat na leto češemo enkrat na teden in da se je okoli obrokov treba izogibati gibanju.",
       ],
       sources: ["S682", "S685", "S686", "S687", "S688", "S10"],
     },
@@ -972,7 +972,7 @@ const sl: RegistryCopy = {
       aka: "Irish Setter, irski rdeči seter, rdeči seter, seter",
       text: [
         "Irski seter (Irish Red Setter) je vitek, atletski ptičar iz Irske, vzrejen za iskanje divjadi na prostranem terenu. Standard FCI opisuje eno samo barvo — bogato kostanjevo brez sledi črne — in višino 58–67 cm za pse ter 55–62 cm za psice; ameriški standard pasme kot idealno navaja okoli 70 funtov (približno 32 kg) za psa in 60 funtov (približno 27 kg) za psico. Pes te velikosti doraste pri približno 15–18 mesecih (PetMD), The Royal Kennel Club pa navaja življenjsko dobo več kot 10 let.",
-        "The Royal Kennel Club priporoča več kot 2 uri gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da potrebuje veliko hišo z velikim vrtom, ter ga uvršča v 1. kategorijo programa Breed Watch. PDSA ga opisuje kot zelo prijaznega in ljubečega psa, ki se dobro razume z otroki in drugimi živalmi, in svetuje česanje 2- do 3-krat na teden; PetMD priporoča tedenski pregled in čiščenje ušes ter piše, da irski setri potrebujejo veliko človeške družbe.",
+        "The Royal Kennel Club priporoča več kot 2 uri gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da potrebuje veliko hišo z velikim vrtom, ter ga uvršča v 1. kategorijo programa Breed Watch. PDSA ga opisuje kot zelo prijaznega in ljubečega psa, ki se dobro razume z otroki in drugimi ljubljenčki, in svetuje česanje 2- do 3-krat na teden; PetMD priporoča tedenski pregled in čiščenje ušes ter piše, da irski setri potrebujejo veliko človeške družbe.",
       ],
       sources: ["S675", "S676", "S678", "S680", "S10"],
     },
@@ -980,7 +980,7 @@ const sl: RegistryCopy = {
       aka: "Brussels Griffon, Griffon Bruxellois, grifon",
       text: [
         "Bruseljski grifon (Griffon Bruxellois) je majhen pes družnik iz Belgije s kratkim, ploščatim obrazom. Standard FCI opisuje rdečo, naravno trdo, rahlo valovito dlako in težo 3,5–6 kg; britanski The Royal Kennel Club, ki vodi grobodlako in gladkodlako različico, ga opisuje kot pametnega malega psa s terierskim značajem. Pes te velikosti doraste pri približno 8–12 mesecih (PetMD), The Royal Kennel Club pa navaja življenjsko dobo več kot 12 let (PetMD: 12–15 let).",
-        "The Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da je primeren za stanovanje, ter ga uvršča v 2. kategorijo programa Breed Watch. PetMD ga opisuje kot ploskoobraznega (brahicefalnega) psa, ki slabo prenaša vroče in vlažno vreme, svetuje čiščenje kožnih gub na obrazu približno enkrat na teden in vsakodnevno ščetkanje zob ter piše, da se bruseljski grifoni ob nadzoru dobro razumejo z otroki in drugimi živalmi, ne marajo pa dolgo ostajati sami.",
+        "The Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje večkrat na teden, navaja, da mu izpada dlaka in da je primeren za stanovanje, ter ga uvršča v 2. kategorijo programa Breed Watch. PetMD ga opisuje kot ploskoobraznega (brahicefalnega) psa, ki slabo prenaša vroče in vlažno vreme, svetuje čiščenje kožnih gub na obrazu približno enkrat na teden in vsakodnevno ščetkanje zob ter piše, da se bruseljski grifoni ob nadzoru dobro razumejo z otroki in drugimi ljubljenčki, ne marajo pa dolgo ostajati sami.",
       ],
       sources: ["S669", "S670", "S672", "S10"],
     },
@@ -988,7 +988,7 @@ const sl: RegistryCopy = {
       aka: "rattie, ameriški rat terier, terier za podgane, Rat Terrier",
       text: [
         "Rat terier je majhen ameriški terier v dveh velikostih — miniaturni in standardni — s kratko, tesno prilegajočo, gladko in svetlečo dlako. Standard pasme dovoljuje višino do 18 palcev (46 cm) v vihru, PetMD pa za obe velikosti navaja težo 10–25 funtov (okoli 4,5–11 kg); pes te velikosti zraste do okoli 9–12 mesecev (PetMD). VCA navaja življenjsko dobo 12–16 let, PetMD 12–18 let.",
-        "Ameriški klub rat terierjev navaja, da so rat terierji dobri z otroki, še posebej če odraščajo z njimi, in da gredo v stanovanje, a potrebujejo vsaj 30 minut gibanja na dan. PetMD piše, da potrebujejo veliko telesnih in miselnih izzivov, ne marajo biti dolgo sami in jim dlaka rahlo izpada vse leto; VCA svetuje česanje enkrat na teden in opozarja, da morda niso primerni za dom z malimi živalmi, še posebej z glodavci.",
+        "Ameriški klub rat terierjev navaja, da so rat terierji dobri z otroki, še posebej če odraščajo z njimi, in da gredo v stanovanje, a potrebujejo vsaj 30 minut gibanja na dan. PetMD piše, da potrebujejo veliko telesnih in miselnih izzivov, ne marajo biti dolgo sami in jim dlaka rahlo izpada vse leto; VCA svetuje česanje enkrat na teden in opozarja, da morda niso primerni za dom z malimi ljubljenčki, še posebej z glodavci.",
       ],
       sources: ["S650", "S648", "S10", "S647"],
     },
@@ -1067,7 +1067,7 @@ const sl: RegistryCopy = {
       aka: "dachshund, teckel, jazbecar",
       text: [
         "Jazbečar je nemški lovec na jazbece in kunce, doma znan kot teckel, ki ga poznamo v več velikostih in s tremi vrstami dlake; ta stran je o standardni velikosti s kratko, gladko dlako. Standard ga opisuje kot psa, ki je glede na višino zmerno dolg, brez pretiravanja – zvestega, vsestranskega in dobrodušnega; inteligentnega, živahnega in pogumnega – z gosto, kratko, gladko dlako rdeče barve ali črne oziroma čokoladne s porjavelimi oznakami.",
-        "Potrebuje do približno eno uro gibanja na dan, razdeljeno na nekaj sprehodov s časom za vohanje, in mu ustreza majhna hiša. Ljudi ima rad in se z otroki vseh starosti praviloma dobro razume, vedno pod nadzorom; zaradi močnega lovskega nagona pa ga ne priporočajo k manjšim živalim, sam doma pa ne zdrži dobro. Zaradi dolgega hrbta in kratkih nog je nagnjen k zdrsu diska, zato naj ne skače; vzrediteljem svetujejo pregled hrbtenice pred parjenjem.",
+        "Potrebuje do približno eno uro gibanja na dan, razdeljeno na nekaj sprehodov s časom za vohanje, in mu ustreza majhna hiša. Ljudi ima rad in se z otroki vseh starosti praviloma dobro razume, vedno pod nadzorom; zaradi močnega lovskega nagona pa ga ne priporočajo k manjšim ljubljenčkom, sam doma pa ne zdrži dobro. Zaradi dolgega hrbta in kratkih nog je nagnjen k zdrsu diska, zato naj ne skače; vzrediteljem svetujejo pregled hrbtenice pred parjenjem.",
       ],
       sources: ["S124", "S125", "S126", "S127", "S129"],
     },
@@ -1091,7 +1091,7 @@ const sl: RegistryCopy = {
       aka: "westie, west highland white terrier",
       text: [
         "Zahodnoškotski beli terier ali westie je majhen terier iz Velike Britanije. Standard ga opisuje kot čvrsto grajenega malega psa z globokimi prsmi, ravnim hrbtom in trdo dvojno dlako, dolgo približno 5\u00a0cm, z majhnimi pokončnimi koničastimi ušesi in temnimi očmi pod gostimi obrvmi. Edina barva, ki jo standard dovoljuje, je bela.",
-        "Standard ga opisuje kot pozornega, veselega, pogumnega in samostojnega, a prijaznega psa. Britanski viri pravijo, da je ljubeč in igriv družinski pes za otroke vseh starosti, igro pa je treba vedno nadzorovati; potrebuje okoli uro gibanja na dan, lahko živi v stanovanju, dlaka mu izpada in česati ga je treba nekajkrat na teden. Zaradi lovskega nagona ne sodi k manjšim živalim, sam pa ne ostaja rad. Koža je znana skrb: The Royal Kennel Club sodnikom naroča, naj bodo pri tej pasmi pozorni na znake vnetja kože.",
+        "Standard ga opisuje kot pozornega, veselega, pogumnega in samostojnega, a prijaznega psa. Britanski viri pravijo, da je ljubeč in igriv družinski pes za otroke vseh starosti, igro pa je treba vedno nadzorovati; potrebuje okoli uro gibanja na dan, lahko živi v stanovanju, dlaka mu izpada in česati ga je treba nekajkrat na teden. Zaradi lovskega nagona ne sodi k manjšim ljubljenčkom, sam pa ne ostaja rad. Koža je znana skrb: The Royal Kennel Club sodnikom naroča, naj bodo pri tej pasmi pozorni na znake vnetja kože.",
       ],
       sources: ["S142", "S144", "S146", "S147"],
     },
@@ -1115,7 +1115,7 @@ const sl: RegistryCopy = {
       aka: "rottweiler, rottie",
       text: [
         "Rotvajler je srednje velik do velik, močan delovni pes iz Nemčije. Standard opisuje čvrstega psa, ne pretežkega in ne prelahkega, s kratko, grobo in gladko prilegajočo se dlako, srednje velikimi visečimi uhlji in temno rjavimi mandljastimi očmi. Edina dovoljena barva je črna z jasno omejenimi rjavimi (tan) oznakami na licih, gobcu, grlu, prsih in nogah; bele lise so napaka.",
-        "Standard ga opisuje kot dobrodušnega, mirnega, zelo vdanega, ubogljivega in delavnega psa, The Royal Kennel Club pa pravi, da je dobro vzgojen rotvajler čudovit družinski pes. Britanski viri pravijo, da potrebuje več kot dve uri gibanja na dan, veliko hišo z velikim vrtom in izkušenega lastnika, ker je tako močan; socializirati ga je treba že od malega. PDSA ga družinam z mlajšimi otroki in dojenčki ne priporoča, z drugimi živalmi pa ga nikoli ne puščajte brez nadzora. Dovolj je krtačenje enkrat na teden. Običajno živi manj kot deset let, The Royal Kennel Club pa pri pasmi spremlja obliko zadnjih nog.",
+        "Standard ga opisuje kot dobrodušnega, mirnega, zelo vdanega, ubogljivega in delavnega psa, The Royal Kennel Club pa pravi, da je dobro vzgojen rotvajler čudovit družinski pes. Britanski viri pravijo, da potrebuje več kot dve uri gibanja na dan, veliko hišo z velikim vrtom in izkušenega lastnika, ker je tako močan; socializirati ga je treba že od malega. PDSA ga družinam z mlajšimi otroki in dojenčki ne priporoča, z drugimi ljubljenčki pa ga nikoli ne puščajte brez nadzora. Dovolj je krtačenje enkrat na teden. Običajno živi manj kot deset let, The Royal Kennel Club pa pri pasmi spremlja obliko zadnjih nog.",
       ],
       sources: ["S166", "S168", "S169", "S171"],
     },
@@ -1203,7 +1203,7 @@ const sl: RegistryCopy = {
       aka: "pom, pritlikavi špic, nemški pritlikavi špic",
       text: [
         "Pomeranec je najmanjši špic: FCI ga vodi kot pritlikavo različico nemškega špica z višino 21\u00a0cm ± 3\u00a0cm, standard The Royal Kennel Club pa opisuje kompaktnega, kratkega psička z lisičjo glavo, majhnimi pokončnimi ušesi in repom, zavihanim čez hrbet. Dvojna dlaka ima mehko, puhasto podlanko in dolgo, ravno krovno dlako, ki okoli vratu oblikuje ovratnik. Standard dovoljuje veliko enobarvnih barv, na primer oranžno, krem, belo, črno in rjavo, nikoli pa merle; PetPrep ga riše z naravno, nepostriženo dlako.",
-        "FCI njegov značaj opisuje kot družaben in vesel, standard The Royal Kennel Club pa kot odprt, živahen in inteligenten. The Royal Kennel Club priporoča do 30 minut gibanja na dan in ga uvršča v stanovanje; PDSA pravi, da je treba dvojno dlako česati dva- do trikrat na teden. AKC pravi, da pomeranec bolj ustreza družinam s starejšimi otroki, da se z drugimi živalmi lahko dobro razume, če je zgodaj socializiran, in močno priporoča zgodnjo socializacijo in šolo za mladičke. The Royal Kennel Club navaja življenjsko dobo več kot 12 let.",
+        "FCI njegov značaj opisuje kot družaben in vesel, standard The Royal Kennel Club pa kot odprt, živahen in inteligenten. The Royal Kennel Club priporoča do 30 minut gibanja na dan in ga uvršča v stanovanje; PDSA pravi, da je treba dvojno dlako česati dva- do trikrat na teden. AKC pravi, da pomeranec bolj ustreza družinam s starejšimi otroki, da se z drugimi ljubljenčki lahko dobro razume, če je zgodaj socializiran, in močno priporoča zgodnjo socializacijo in šolo za mladičke. The Royal Kennel Club navaja življenjsko dobo več kot 12 let.",
       ],
       sources: ["S246", "S247", "S249", "S250", "S251"],
     },
@@ -1259,7 +1259,7 @@ const sl: RegistryCopy = {
       aka: "Cocker Spaniel (ZDA), ameriški koker",
       text: [
         "Ameriški koker španjel – v Združenih državah kar Cocker Spaniel – je druga pasma kot angleški koker španjel. Standard American Kennel Club ga opisuje kot najmanjšega psa v skupini lovskih psov, z dolgimi, operjenimi ušesi, zaobljeno lobanjo, širokim in globokim gobcem ter svilnato, ravno ali rahlo valovito dlako; je lahko črn, enobarven od svetlo kremaste do temno rdeče barve ali večbarven z belo. Standard zahteva uravnotežen značaj brez plašnosti.",
-        "The Royal Kennel Club priporoča česanje vsak dan in več kot dve uri gibanja na dan, življenjska doba pa je več kot 10 let; American Kennel Club in PetMD pišeta, da ne potrebuje veliko gibanja. PetMD te prijazne pse opisuje kot odlične družinske pse, prijazne do ljudi in drugih živali, in svetuje zgodnjo socializacijo in šolanje; VCA piše, da so z otroki običajno zelo dobri, da se radi zredijo in da jim je treba ušesa pregledati vsak teden.",
+        "The Royal Kennel Club priporoča česanje vsak dan in več kot dve uri gibanja na dan, življenjska doba pa je več kot 10 let; American Kennel Club in PetMD pišeta, da ne potrebuje veliko gibanja. PetMD te prijazne pse opisuje kot odlične družinske pse, prijazne do ljudi in drugih ljubljenčkov, in svetuje zgodnjo socializacijo in šolanje; VCA piše, da so z otroki običajno zelo dobri, da se radi zredijo in da jim je treba ušesa pregledati vsak teden.",
       ],
       sources: ["S303", "S305", "S307", "S308", "S309", "S310"],
     },
@@ -1283,7 +1283,7 @@ const sl: RegistryCopy = {
       aka: "vižla, madžarska vižla, Hungarian Vizsla",
       text: [
         "Madžarski kratkodlaki ptičar ali vižla je srednje velik, eleganten lovski pes z Madžarske s kratko rdečkasto zlato dlako. Standard FCI opisuje živahnega, prijaznega in uravnoteženega psa, ki se zlahka uči in pri delu ostaja v tesnem stiku z vodnikom; barve so odtenki rdečkasto zlate in temno peščeno zlate. The Royal Kennel Club v programu Breed Watch za pasmo ne navaja posebnih točk za pozornost sodnikov.",
-        "The Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje enkrat na teden, življenjska doba pa je več kot 12 let. PDSA ga opisuje kot psa, ki je zelo navezan na ljudi, ima rad družbo in lahko trpi zaradi ločitvene tesnobe, ko ostane sam; s starejšimi otroki se dobro razume, za dom z zelo majhnimi otroki in za začetnike pa ga PDSA ne priporoča, zaradi močnega lovskega nagona pa tudi ne skupaj z manjšimi živalmi. PDSA svetuje tudi premor med obrokom in gibanjem.",
+        "The Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje enkrat na teden, življenjska doba pa je več kot 12 let. PDSA ga opisuje kot psa, ki je zelo navezan na ljudi, ima rad družbo in lahko trpi zaradi ločitvene tesnobe, ko ostane sam; s starejšimi otroki se dobro razume, za dom z zelo majhnimi otroki in za začetnike pa ga PDSA ne priporoča, zaradi močnega lovskega nagona pa tudi ne skupaj z manjšimi ljubljenčki. PDSA svetuje tudi premor med obrokom in gibanjem.",
       ],
       sources: ["S327", "S328", "S329"],
     },
@@ -1315,7 +1315,7 @@ const sl: RegistryCopy = {
       aka: "škotski ovčar, collie, Rough Collie",
       text: [
         "Dolgodlaki škotski ovčar je velik ovčarski pes iz Velike Britanije. Standard FCI opisuje psa izjemne lepote, ki stoji z mirnim dostojanstvom, prijazne narave brez sledu živčnosti ali napadalnosti, z zelo gosto dlako z ravno, trdo krovno dlako in s tremi barvami: soboljo, trobarvno in modri merle. Standard The Royal Kennel Club ga opisuje kot odličnega psa družnika – prijaznega, veselega in dejavnega, dobrega z otroki in drugimi psi – z višino 56–61\u00a0cm pri psih in 51–56\u00a0cm pri psicah. The Royal Kennel Club pasmo uvršča v 2. kategorijo programa Breed Watch in ne registrira mladičev iz parjenja merle × merle.",
-        "The Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje vsak dan, navaja, da izgublja dlako, življenjska doba pa je več kot 12 let. PetMD piše, da so škotski ovčarji ljubeči, posebej do otrok, in se dobro razumejo z drugimi živalmi, a ne prenašajo dobro dolge samote, ko so razburjeni, pa lahko ščipajo za gležnje in pete. Navaja tudi, da je socializacija mladička ključna in da se pri pasmi pojavlja mutacija MDR1, ki vpliva na to, kako pes presnavlja nekatera zdravila.",
+        "The Royal Kennel Club priporoča do 1 ure gibanja na dan in česanje vsak dan, navaja, da izgublja dlako, življenjska doba pa je več kot 12 let. PetMD piše, da so škotski ovčarji ljubeči, posebej do otrok, in se dobro razumejo z drugimi ljubljenčki, a ne prenašajo dobro dolge samote, ko so razburjeni, pa lahko ščipajo za gležnje in pete. Navaja tudi, da je socializacija mladička ključna in da se pri pasmi pojavlja mutacija MDR1, ki vpliva na to, kako pes presnavlja nekatera zdravila.",
       ],
       sources: ["S364", "S365", "S366", "S368"],
     },
@@ -1371,7 +1371,7 @@ const sl: RegistryCopy = {
       aka: "Newfoundland, novofundlandski pes, njufi",
       text: [
         "Novofundlandec izvira iz Kanade; FCI ga uvršča med molose gorskega tipa in priznava tri barve: črno, belo-črno (landseer) in rjavo. PDSA ga opisuje kot nežnega velikana in navaja povprečno višino 66–71\u00a0cm ter povprečno težo 50–69\u00a0kg; PetMD dodaja, da je zaradi svoje zgodovine rojen plavalec.",
-        "PDSA za odraslega psa priporoča vsaj eno uro gibanja na dan, mladička pa ne smete preobremeniti, dokler se mu razvijajo kosti in sklepi; česanje opisuje kot vsakodnevno opravilo, piše, da se rad slini, in navaja življenjsko dobo pod 10 let. PetMD ga opisuje kot odličnega družinskega psa, ki se dobro razume z otroki, malimi živalmi in drugimi psi; svetuje, da igro majhnih otrok s psom vedno nadzorujete, in opozarja, da ima lahko kdaj težave, ko ostane sam.",
+        "PDSA za odraslega psa priporoča vsaj eno uro gibanja na dan, mladička pa ne smete preobremeniti, dokler se mu razvijajo kosti in sklepi; česanje opisuje kot vsakodnevno opravilo, piše, da se rad slini, in navaja življenjsko dobo pod 10 let. PetMD ga opisuje kot odličnega družinskega psa, ki se dobro razume z otroki, malimi ljubljenčki in drugimi psi; svetuje, da igro majhnih otrok s psom vedno nadzorujete, in opozarja, da ima lahko kdaj težave, ko ostane sam.",
       ],
       sources: ["S419", "S423", "S424"],
     },
@@ -1395,7 +1395,7 @@ const sl: RegistryCopy = {
       aka: "whippet, vipet",
       text: [
         "Mali angleški hrt (whippet) izvira iz Velike Britanije; FCI ga uvršča med kratkodlake hrte. Standard Kennel Cluba opisuje uravnoteženo povezavo mišične moči in elegance, fino, kratko in tesno prilegajočo dlako v kateri koli barvi ali kombinaciji barv razen merle ter nežen, ljubeč in umirjen značaj; navaja višino 47–51\u00a0cm za pse in 44–47\u00a0cm za psice, PDSA pa povprečno težo 11–18\u00a0kg.",
-        "PDSA priporoča vsaj uro gibanja na dan, tudi tek brez povodca na varovanem prostoru, in česanje z mehko krtačo enkrat na teden. Opisuje ga kot priljubljeno izbiro za družine, ker je ob otrocih miren in nežen, a priporoča dom s starejšimi otroki; ne mara biti sam in ima zelo močan lovski nagon, zato ga PDSA ne priporoča v domu z manjšimi živalmi. Pozimi mu lahko pomaga plašček, debelo in mehko ležišče pa varuje izstopajoče kosti.",
+        "PDSA priporoča vsaj uro gibanja na dan, tudi tek brez povodca na varovanem prostoru, in česanje z mehko krtačo enkrat na teden. Opisuje ga kot priljubljeno izbiro za družine, ker je ob otrocih miren in nežen, a priporoča dom s starejšimi otroki; ne mara biti sam in ima zelo močan lovski nagon, zato ga PDSA ne priporoča v domu z manjšimi ljubljenčki. Pozimi mu lahko pomaga plašček, debelo in mehko ležišče pa varuje izstopajoče kosti.",
       ],
       sources: ["S442", "S443", "S444"],
     },
@@ -1435,7 +1435,7 @@ const sl: RegistryCopy = {
       aka: "weimarec, vajmarski ptičar, Weimaraner",
       text: [
         "Weimarski ptičar izvira iz Nemčije; FCI ga uvršča med celinske ptičarje in priznava kratkodlako in dolgodlako različico. Standard FCI opisuje srednje velikega do velikega lovskega psa delovnega tipa, žilavega in zelo mišičastega, z jantarnimi očmi in širokimi, precej dolgimi uhlji; dlaka je srebrno, srnje ali mišje siva, dovoljene so le majhne bele lise na prsih in prstih, vsaka barva razen sive pa psa izključi. Navaja višino 59–70\u00a0cm in težo okoli 30–40\u00a0kg za pse ter 57–65\u00a0cm in okoli 25–35\u00a0kg za psice.",
-        "Royal Kennel Club priporoča več kot dve uri gibanja na dan, veliko hišo in velik vrt ter nego dlake enkrat na teden. PDSA piše, da so weimarski ptičarji v pravih rokah čudoviti družinski psi in da so najboljši pri lastnikih, ki pasmo poznajo, a jih zaradi zelo močnega lovskega nagona ne priporoča za dom z manjšimi otroki ali manjšimi živalmi; pravi, da lahko ob samoti razvijejo ločitveno tesnobo, ter svetuje socializacijo od malega in premor med obrokom in gibanjem. PetMD dodaja čiščenje ušes in kopanje enkrat na mesec.",
+        "Royal Kennel Club priporoča več kot dve uri gibanja na dan, veliko hišo in velik vrt ter nego dlake enkrat na teden. PDSA piše, da so weimarski ptičarji v pravih rokah čudoviti družinski psi in da so najboljši pri lastnikih, ki pasmo poznajo, a jih zaradi zelo močnega lovskega nagona ne priporoča za dom z manjšimi otroki ali manjšimi ljubljenčki; pravi, da lahko ob samoti razvijejo ločitveno tesnobo, ter svetuje socializacijo od malega in premor med obrokom in gibanjem. PetMD dodaja čiščenje ušes in kopanje enkrat na mesec.",
       ],
       sources: ["S478", "S479", "S480", "S481"],
     },
@@ -1443,7 +1443,7 @@ const sl: RegistryCopy = {
       aka: "italijanski hrt, italijanski hrtek, Piccolo Levriero Italiano, Italian Greyhound",
       text: [
         "Mali italijanski hrt izvira iz Italije; FCI ga kot „Piccolo Levriero Italiano“ uvršča med kratkodlake hrte. Standard Kennel Club ga opisuje kot hrta v malem, v vseh razmerjih bolj vitkega, elegantnega, gracioznega in hitrega v gibanju, inteligentnega, ljubečega in živahnega, čeprav se lahko zdi zadržan, s kratko, fino, svetlečo dlako na tanki koži. Navaja višino 32–38\u00a0cm in težo 3,6–4,5\u00a0kg; sprejete barve so črna, modra, kremasta, rumenorjava, rdeča in bela ali katera koli od teh z belimi lisami – nikoli merle, tigrasta ali s porjavelimi oznakami.",
-        "Royal Kennel Club priporoča do eno uro gibanja na dan, pravi, da je primeren za majhno hišo v mestu ali na podeželju, da potrebuje nego dlake enkrat na teden in da mu dlaka ne izpada. PDSA piše, da so mali italijanski hrti polni energije in naj se gibljejo v ograjenem prostoru, ker jih je težko priklicati, ko zagledajo plen, da so lahko plašni, zato je zgodnja socializacija nujna, in da zaradi krhkih kosti med rastjo morda niso najboljša izbira za dom z majhnimi otroki ali drugimi živalmi. PetMD dodaja, da jih tanka dlaka slabo greje, zato jih hitro zebe.",
+        "Royal Kennel Club priporoča do eno uro gibanja na dan, pravi, da je primeren za majhno hišo v mestu ali na podeželju, da potrebuje nego dlake enkrat na teden in da mu dlaka ne izpada. PDSA piše, da so mali italijanski hrti polni energije in naj se gibljejo v ograjenem prostoru, ker jih je težko priklicati, ko zagledajo plen, da so lahko plašni, zato je zgodnja socializacija nujna, in da zaradi krhkih kosti med rastjo morda niso najboljša izbira za dom z majhnimi otroki ali drugimi ljubljenčki. PetMD dodaja, da jih tanka dlaka slabo greje, zato jih hitro zebe.",
       ],
       sources: ["S485", "S486", "S487", "S488"],
     },
@@ -1459,7 +1459,7 @@ const sl: RegistryCopy = {
       aka: "pes svetega Huberta, Chien de Saint-Hubert, St. Hubert Hound",
       text: [
         "Bloodhound izvira iz Belgije, kjer ga FCI vodi kot „Chien de Saint-Hubert“, velikega goniča. Standard FCI ga opisuje kot najmočnejšega med vsemi goniči: nežnega, mirnega, prijaznega in družabnega z ljudmi ter posebej navezanega na lastnika, s kratko, gosto dlako, odporno proti vremenu, in mehko, ohlapno kožo. Psi tehtajo približno 46–54\u00a0kg, psice približno 40–48\u00a0kg; barve so tri: črno-rjava, jetrno-rjava in rdeča.",
-        "Royal Kennel Club priporoča več kot dve uri gibanja na dan, pravi, da je primeren za veliko hišo z velikim vrtom, da potrebuje nego dlake enkrat na teden in da mu dlaka izpada. PDSA piše, da je bloodhound primernejši za izkušene lastnike, da ga zaradi velikosti in zelo močnega lovskega nagona ne priporočajo za dom z manjšimi otroki ali manjšimi živalmi, da se slini in da morajo biti kožne gube čiste in suhe. Svetuje tudi premor med hranjenjem in gibanjem.",
+        "Royal Kennel Club priporoča več kot dve uri gibanja na dan, pravi, da je primeren za veliko hišo z velikim vrtom, da potrebuje nego dlake enkrat na teden in da mu dlaka izpada. PDSA piše, da je bloodhound primernejši za izkušene lastnike, da ga zaradi velikosti in zelo močnega lovskega nagona ne priporočajo za dom z manjšimi otroki ali manjšimi ljubljenčki, da se slini in da morajo biti kožne gube čiste in suhe. Svetuje tudi premor med hranjenjem in gibanjem.",
       ],
       sources: ["S501", "S502", "S503"],
     },
@@ -1531,7 +1531,7 @@ const sl: RegistryCopy = {
       aka: "kitajski čopasti pes, powder puff",
       text: [
         "Kitajski goli pes je majhen, živahen in eleganten družabni pes s Kitajske; FCI ga uvršča med gole pse. Ima dve različici: golo, z gladkim golim telesom in dlako le na glavi (čop), nogah in repu, ter „powder puff“, ki jo v celoti pokriva tančica dolge mehke dlake. Psi so visoki 28–33\u00a0cm, psice 23–30\u00a0cm; PetMD navaja težo 3,6–5,4\u00a0kg. Dovoljena je vsaka barva razen merle, značaj pa je opisan kot vesel in nikoli napadalen.",
-        "Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje enkrat na teden; primeren je za stanovanje, pasma pa običajno živi več kot 12 let. PetMD ga opisuje kot prijaznega psa, ki se vklopi v večino družin, tudi z otroki in drugimi živalmi – vsak stik z otroki naj bo pod nadzorom. Golo kožo je treba zaščititi pred soncem in mrazom, kremplje vsak teden pregledati, mladičke pa zgodaj in dosledno socializirati.",
+        "Royal Kennel Club priporoča do 30 minut gibanja na dan in česanje enkrat na teden; primeren je za stanovanje, pasma pa običajno živi več kot 12 let. PetMD ga opisuje kot prijaznega psa, ki se vklopi v večino družin, tudi z otroki in drugimi ljubljenčki – vsak stik z otroki naj bo pod nadzorom. Golo kožo je treba zaščititi pred soncem in mrazom, kremplje vsak teden pregledati, mladičke pa zgodaj in dosledno socializirati.",
       ],
       sources: ["S570", "S571", "S572", "S574"],
     },
@@ -1547,7 +1547,7 @@ const sl: RegistryCopy = {
       aka: "cairn, kern terier, cairnie, Cairn Terrier",
       text: [
         "Cairn terier izvira iz Velike Britanije; FCI ga uvršča med male terierje. Standard Kennel Cluba ga opisuje kot okretnega, budnega terierja delovnega, naravnega videza – živahnega, pogumnega in trdoživega, neustrašne in vesele narave, samozavestnega, a ne napadalnega. Vremensko odporna dvojna dlaka ima bogato, ostro krovno dlako; barva je kremasta, pšenično rumena, rdeča, siva ali skoraj črna, dovoljena je tudi tigrasta, značilna pa so temnejša ušesa in gobec. Standard navaja višino približno 28–31\u00a0cm in idealno težo 6–7,5\u00a0kg.",
-        "PDSA priporoča vsaj eno uro gibanja na dan in pravi, da imajo cairn terierji neskončno energije in močan lovski nagon, zato jih je treba zgodaj socializirati z mačkami in drugimi malimi živalmi ter biti previden brez povodca; ko so socializirani, se zelo dobro razumejo z otroki in so odlični družinski psi. Svetuje ročno trimanje dlake dvakrat na leto in česanje enkrat do dvakrat na teden; po Dogs Trust zelo malo izgubljajo dlako. Velika britanska raziskava (McMillan 2024, prek Dogs Trust) navaja mediano življenjske dobe 14,0 leta, PetMD 13–15 let; kot drugi majhni psi zraste do približno 9–12 mesecev (PetMD). PetMD dodaja, da potrebujejo veliko gibanja in miselnih izzivov.",
+        "PDSA priporoča vsaj eno uro gibanja na dan in pravi, da imajo cairn terierji neskončno energije in močan lovski nagon, zato jih je treba zgodaj socializirati z mačkami in drugimi malimi ljubljenčki ter biti previden brez povodca; ko so socializirani, se zelo dobro razumejo z otroki in so odlični družinski psi. Svetuje ročno trimanje dlake dvakrat na leto in česanje enkrat do dvakrat na teden; po Dogs Trust zelo malo izgubljajo dlako. Velika britanska raziskava (McMillan 2024, prek Dogs Trust) navaja mediano življenjske dobe 14,0 leta, PetMD 13–15 let; kot drugi majhni psi zraste do približno 9–12 mesecev (PetMD). PetMD dodaja, da potrebujejo veliko gibanja in miselnih izzivov.",
       ],
       sources: ["S583", "S584", "S585", "S586", "S587", "S123", "S10"],
     },
@@ -1587,7 +1587,7 @@ const sl: RegistryCopy = {
       aka: "irski volčji hrt, volčji hrt, irski hrt, irski volcji hrt, Irish Wolfhound, Wolfhound",
       text: [
         "Irski volčji hrt (Irish Wolfhound) izvira z Irske; FCI ga uvršča med hrte z ostro dlako. PDSA navaja povprečno višino 71–79\u00a0cm in povprečno težo 40–55\u00a0kg; kot drugi zelo veliki psi zraste do približno 18–24 mesecev (PetMD). Royal Kennel Club ga uvršča med zelo velike pse in pravi, da je primeren za veliko hišo z velikim vrtom na podeželju.",
-        "Royal Kennel Club priporoča več kot dve uri gibanja na dan in nego dlake večkrat na teden ter pravi, da mu dlaka izpada. Kennel Club in PDSA navajata življenjsko dobo pod 10 let; PetMD navaja 6–8 let. PDSA ga zaradi velikosti in moči ne priporoča za dom z manjšimi otroki, zaradi močnega lovskega nagona ne z manjšimi živalmi, in pravi, da naj nikoli ne bo sam več kot štiri ure. PetMD svetuje socializacijo mladička od prvega dne doma, brez gibanja tik pred obrokom ali po njem (zasuk želodca) in čiščenje ušes vsaka dva do štiri tedne.",
+        "Royal Kennel Club priporoča več kot dve uri gibanja na dan in nego dlake večkrat na teden ter pravi, da mu dlaka izpada. Kennel Club in PDSA navajata življenjsko dobo pod 10 let; PetMD navaja 6–8 let. PDSA ga zaradi velikosti in moči ne priporoča za dom z manjšimi otroki, zaradi močnega lovskega nagona ne z manjšimi ljubljenčki, in pravi, da naj nikoli ne bo sam več kot štiri ure. PetMD svetuje socializacijo mladička od prvega dne doma, brez gibanja tik pred obrokom ali po njem (zasuk želodca) in čiščenje ušes vsaka dva do štiri tedne.",
       ],
       sources: ["S615", "S617", "S619", "S620", "S10"],
     },
@@ -1643,7 +1643,7 @@ const sl: RegistryCopy = {
       aka: "ragdolka, ragdoll mačka, Rag doll",
       text: [
         "CFA opisuje ragdolla kot veliko, umirjeno mačko s poldolgo, gosto in svilnato dlako ter modrimi očmi. Temnejše „točke“ ima v več vzorcih – colourpoint brez bele, mitted z belimi tačkami, bicolour z več bele in van. Počasi dozoreva: polno barvo dlake doseže pri dveh letih, polno velikost in težo pa pri približno štirih.",
-        "CFA ga opisuje kot nežno mačko, ki vas pričaka pri vratih in vam sledi iz sobe v sobo; pogosto se igra brez iztegnjenih krempljev. PetMD piše, da je primeren tudi za družine z otroki, a naj bo prvo srečanje z otroki ali drugimi živalmi počasno in pod nadzorom, ter navaja, da nekaterim ragdollom zadošča česanje enkrat do dvakrat na teden; CFA svetuje redno česanje. Rodovniški mucki gredo v nov dom običajno pri 12–13 tednih (PDSA).",
+        "CFA ga opisuje kot nežno mačko, ki vas pričaka pri vratih in vam sledi iz sobe v sobo; pogosto se igra brez iztegnjenih krempljev. PetMD piše, da je primeren tudi za družine z otroki, a naj bo prvo srečanje z otroki ali drugimi ljubljenčki počasno in pod nadzorom, ter navaja, da nekaterim ragdollom zadošča česanje enkrat do dvakrat na teden; CFA svetuje redno česanje. Rodovniški mucki gredo v nov dom običajno pri 12–13 tednih (PDSA).",
       ],
       sources: ["C13", "C30", "C32"],
     },
@@ -1651,7 +1651,7 @@ const sl: RegistryCopy = {
       aka: "sibirka, Siberian",
       text: [
         "GCCF opisuje sibirsko mačko kot pasmo, ki se razvija počasi, z gosto, vremensko odporno dlako: pod bolj grobo krovno dlako ima gosto, mehko podlanko, ki jo spomladi in jeseni močno menja. Samci tehtajo približno 7,7–11,8\u00a0kg, samice 5,9–7,7\u00a0kg, popolnoma razvita je lahko šele pri štirih do petih letih, GCCF pa navaja življenjsko dobo 12 do 15 let ali več.",
-        "GCCF jo opisuje kot energično in igrivo, a potrpežljivo mačko – dobro izbiro za družine z majhnimi otroki –, ki se dobro razume tudi z drugimi živalmi, tudi s psi. PetMD svetuje česanje vsaj enkrat na teden, med spomladanskim in jesenskim linjanjem pa več, in poudarja, da sibirska mačka ne velja za hipoalergeno. Rodovniški mucki gredo v nov dom običajno pri 12–13 tednih (PDSA).",
+        "GCCF jo opisuje kot energično in igrivo, a potrpežljivo mačko – dobro izbiro za družine z majhnimi otroki –, ki se dobro razume tudi z drugimi ljubljenčki, tudi s psi. PetMD svetuje česanje vsaj enkrat na teden, med spomladanskim in jesenskim linjanjem pa več, in poudarja, da sibirska mačka ne velja za hipoalergeno. Rodovniški mucki gredo v nov dom običajno pri 12–13 tednih (PDSA).",
       ],
       sources: ["C13", "C34", "C35"],
     },

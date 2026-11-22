@@ -3,12 +3,12 @@ import type { GiftCopy } from "./types.ts";
 export const sl: GiftCopy = {
   meta: {
     title: "Darilni bon: 12-tedenski PetPrep izziv",
-    description: "Ne podarite kužka. Podarite preizkus: darilni bon za 12-tedenski PetPrep izziv, v katerem se otrok in družina preizkusita v skrbi za žival, preden se odločite za pravo.",
+    description: "Ne podarite kužka. Podarite preizkus: darilni bon za 12-tedenski PetPrep izziv, v katerem se otrok in družina preizkusita v skrbi za ljubljenčka, preden se odločite za pravega.",
   },
   breadcrumb: "Darilni bon",
   eyebrow: "Darilni bon",
   title: "Ne podarite kužka. Podarite preizkus.",
-  lead: "Darilni bon za 12-tedenski PetPrep izziv: dvanajst tednov skrbi za realistično simulirano žival, preden se družina odloči za pravo. Za otroka, ki si želi žival, in za starše, ki si želijo odgovor.",
+  lead: "Darilni bon za 12-tedenski PetPrep izziv: dvanajst tednov skrbi za realističnega simuliranega ljubljenčka, preden se družina odloči za pravega. Za otroka, ki si želi ljubljenčka, in za starše, ki si želijo odgovor.",
   buy: {
     button: "Kupite darilni bon",
     soon: "Kmalu",
@@ -20,9 +20,9 @@ export const sl: GiftCopy = {
   what: {
     heading: "Kaj je PetPrep",
     paragraphs: [
-      "PetPrep je aplikacija, v kateri otrok vsak dan skrbi za realistično simulirano žival: jo hrani, napoji, odpelje na sprehod, jo uči in čisti. Če skrb zamudi, žival to pokaže, tako kot bi jo v resnici.",
+      "PetPrep je aplikacija, v kateri otrok vsak dan skrbi za realističnega simuliranega ljubljenčka: ga hrani, napoji, odpelje na sprehod, uči in čisti za njim. Če skrb zamudi, ljubljenček to pokaže, tako kot bi ga v resnici.",
       "Vi kot starš imate nadzorno ploščo s semaforjem in oceno skrbi, tako da vidite, kako gre, ne da bi nadzorovali vsak korak.",
-      "Po dvanajstih tednih družina dobi potrdilo o odgovornosti in, kar je pomembnejše, pošten odgovor, ali je pripravljena na pravo žival.",
+      "Po dvanajstih tednih družina dobi Certifikat odgovornosti in, kar je pomembnejše, pošten odgovor, ali je pripravljena na pravega ljubljenčka.",
     ],
   },
   how: {
@@ -39,7 +39,7 @@ export const sl: GiftCopy = {
     items: [
       "En 12-tedenski PetPrep izziv za enega ljubljenčka, enako kot nakup v aplikaciji",
       "Katera koli vrsta in pasma, ki je ob izbiri v aplikaciji na voljo",
-      "Poln nabor posnetkov, celotna zgodovina skrbi in potrdilo o odgovornosti",
+      "Poln nabor posnetkov, celotna zgodovina skrbi in Certifikat odgovornosti",
       "Bon za tisk z vašo osebno posvetilno vrstico (polji »Za« in »Od« izpolnite z roko)",
     ],
   },
@@ -47,13 +47,13 @@ export const sl: GiftCopy = {
     heading: "Za koga je in za koga ni",
     forTitle: "Bon je za vas, če",
     forItems: [
-      "otrok v vaši družini že dolgo prosi za žival in si želite, da to preizkusi, preden se odločite,",
-      "iščete darilo za vnuka, nečakinjo ali krščenca, ki ni živa žival in ni obljuba,",
-      "želite, da izkušnja skrbi za žival izhaja iz otrokovih dejanj, ne iz vaših besed.",
+      "otrok v vaši družini že dolgo prosi za ljubljenčka in si želite, da to preizkusi, preden se odločite,",
+      "iščete darilo za vnuka, nečakinjo ali krščenca, ki ni živo bitje in ni obljuba,",
+      "želite, da izkušnja skrbi za ljubljenčka izhaja iz otrokovih dejanj, ne iz vaših besed.",
     ],
     notTitle: "Bon ni za vas, če",
     notItems: [
-      "želite podariti pravo žival: PetPrep je simulacija in bon ne vključuje ne obljublja prave živali,",
+      "želite podariti pravega ljubljenčka: PetPrep je simulacija in bon ga ne vključuje ne obljublja,",
       "družina nima starša z računom v aplikaciji: unovčitev poteka prek starševskega računa,",
       "iščete hitro igro brez sodelovanja staršev: PetPrep je zasnovan tako, da starš spremlja in odloča.",
     ],
@@ -66,7 +66,7 @@ export const sl: GiftCopy = {
       { q: "Na katerih napravah deluje?", a: "Aplikacija PetPrep je za iPhone in za telefone z Androidom. Bon unovčite na tej spletni strani, v katerem koli brskalniku." },
       { q: "Ali potrebujem račun?", a: "Za nakup in tiskanje bona računa ne potrebujete. Za unovčitev mora imeti družina starševski račun v aplikaciji: na spletni strani se prijavite enako kot v aplikaciji in nato vnesete kodo." },
       { q: "Ali bon velja tudi za mačko?", a: "Da. Danes sta v aplikaciji pes in mačka, bon pa velja za katero koli vrsto in pasmo, ki je ob izbiri v aplikaciji na voljo." },
-      { q: "Ali bo otrok po izzivu dobil žival?", a: "Tega bon ne obljublja in ne vključuje. Izziv družini pomaga pošteno odgovoriti na vprašanje, ali je pripravljena. Odločitev o pravi živali ostane vaša." },
+      { q: "Ali bo otrok po izzivu dobil ljubljenčka?", a: "Tega bon ne obljublja in ne vključuje. Izziv družini pomaga pošteno odgovoriti na vprašanje, ali je pripravljena. Odločitev o pravem ljubljenčku ostane vaša." },
       { q: "Kaj se zgodi s kodo, ko jo vpišem?", a: "Na strani za natis bona se koda ne shrani in ne pošlje nikamor: bon se nariše v vašem brskalniku. Kodo preveri šele unovčitev." },
     ],
   },
