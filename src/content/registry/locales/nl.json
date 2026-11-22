@@ -36,14 +36,29 @@
       "slug": "labrador-retriever",
       "synonyms": [
         "Labrador"
-      ]
+      ],
+      "colours": {
+        "black": "Zwart",
+        "yellow": "Geel",
+        "light-cream": "Licht crème",
+        "fox-red": "Vosrood",
+        "chocolate": "Chocolade",
+        "light-liver": "Licht leverbruin"
+      }
     },
     "golden_retriever": {
       "name": "Golden retriever",
       "slug": "golden-retriever",
       "synonyms": [
         "Golden"
-      ]
+      ],
+      "colours": {
+        "rich-gold": "Intens goud",
+        "light-gold": "Licht goud",
+        "deep-gold": "Donker goud",
+        "cream": "Crème",
+        "pale-cream": "Zeer licht crème"
+      }
     },
     "french_bulldog": {
       "name": "Franse bulldog",
@@ -52,7 +67,12 @@
         "Frenchie",
         "Bouledogue français",
         "French bulldog"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fawn",
+        "brindle": "Gestroomd",
+        "light-fawn": "Licht fawn"
+      }
     },
     "german_shepherd": {
       "name": "Duitse herder",
@@ -62,7 +82,13 @@
         "Duitse herdershond",
         "Deutscher Schäferhund",
         "German shepherd"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Zwart met tan",
+        "black-gold": "Zwart met goud",
+        "sable": "Sable",
+        "black": "Zwart"
+      }
     },
     "cavalier_king_charles_spaniel": {
       "name": "Cavalier King Charles spaniel",
@@ -71,11 +97,23 @@
         "Cavalier",
         "Cavalier King Charles spaniël",
         "Cavalier King Charles"
-      ]
+      ],
+      "colours": {
+        "blenheim": "Blenheim (kastanje en wit)",
+        "tricolour": "Driekleur (zwart, wit en tan)",
+        "ruby": "Ruby (diep rood)",
+        "black-tan": "Zwart met tan"
+      }
     },
     "beagle": {
       "name": "Beagle",
-      "slug": "beagle"
+      "slug": "beagle",
+      "colours": {
+        "tricolour": "Driekleur (zwart, tan en wit)",
+        "tan-white": "Tan met wit",
+        "lemon-white": "Lemon met wit",
+        "red-white": "Rood-wit"
+      }
     },
     "standard_poodle": {
       "name": "Grote poedel",
@@ -84,7 +122,14 @@
         "Poedel",
         "Koningspoedel",
         "Standaardpoedel"
-      ]
+      ],
+      "colours": {
+        "black": "Zwart",
+        "white": "Wit",
+        "brown": "Bruin",
+        "grey": "Grijs",
+        "fawn": "Fawn (abrikoos)"
+      }
     },
     "dachshund": {
       "name": "Teckel",
@@ -94,7 +139,12 @@
         "Worsthond",
         "Dachshund",
         "Kortharige teckel"
-      ]
+      ],
+      "colours": {
+        "red": "Rood",
+        "black-tan": "Zwart met tan",
+        "chocolate-tan": "Chocolade met tan"
+      }
     },
     "australian_shepherd": {
       "name": "Australian shepherd",
@@ -102,7 +152,12 @@
       "synonyms": [
         "Aussie",
         "Australische herder"
-      ]
+      ],
+      "colours": {
+        "blue-merle": "Blue merle",
+        "black": "Zwart",
+        "red-merle": "Red merle"
+      }
     },
     "havanese": {
       "name": "Havanezer",
@@ -110,7 +165,15 @@
       "synonyms": [
         "Bichon havanais",
         "Havanese"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fawn",
+        "black": "Zwart",
+        "havana-brown": "Havanabruin",
+        "tobacco": "Tabaksbruin",
+        "reddish-brown": "Roodbruin",
+        "white": "Wit"
+      }
     },
     "west_highland_white_terrier": {
       "name": "West Highland white terrier",
@@ -133,14 +196,26 @@
       "synonyms": [
         "Husky",
         "Siberische husky"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Grijs-wit",
+        "black-white": "Zwart-wit",
+        "red-white": "Rood-wit",
+        "agouti": "Agouti (wolfsgrijs)",
+        "sable-white": "Sable met wit",
+        "white": "Wit"
+      }
     },
     "rottweiler": {
       "name": "Rottweiler",
       "slug": "rottweiler",
       "synonyms": [
         "Rottie"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Zwart met tan",
+        "black-mahogany": "Zwart met mahonie"
+      }
     },
     "bulldog": {
       "name": "Engelse bulldog",
@@ -149,7 +224,12 @@
         "Bulldog",
         "English bulldog",
         "Britse bulldog"
-      ]
+      ],
+      "colours": {
+        "red": "Rood",
+        "fawn": "Fawn",
+        "fawn-brindle": "Fawn gestroomd"
+      }
     },
     "german_shorthaired_pointer": {
       "name": "Duitse staande hond korthaar",
@@ -159,7 +239,14 @@
         "Kurzhaar",
         "Deutsch Kurzhaar",
         "German shorthaired pointer"
-      ]
+      ],
+      "colours": {
+        "liver-roan": "Leverbruinschimmel",
+        "liver": "Leverbruin",
+        "liver-white-ticked": "Leverbruin-wit getikt",
+        "black-roan": "Zwartschimmel",
+        "black": "Zwart"
+      }
     },
     "yorkshire_terrier": {
       "name": "Yorkshire terrier",
@@ -175,7 +262,16 @@
       "synonyms": [
         "Cane corso italiano",
         "Corso"
-      ]
+      ],
+      "colours": {
+        "black": "Zwart",
+        "grey": "Grijs (blauw)",
+        "black-brindle": "Zwart gestroomd",
+        "grey-brindle": "Grijs gestroomd",
+        "fawn": "Fawn",
+        "stag-red": "Hertenrood",
+        "dark-wheat": "Donker tarwekleurig"
+      }
     },
     "pembroke_welsh_corgi": {
       "name": "Welsh corgi pembroke",
@@ -184,7 +280,13 @@
         "Corgi",
         "Pembroke",
         "Pembroke Welsh corgi"
-      ]
+      ],
+      "colours": {
+        "red-white": "Rood-wit",
+        "sable-white": "Sable met wit",
+        "fawn-white": "Fawn met wit",
+        "tricolour": "Driekleur (zwart, tan en wit)"
+      }
     },
     "dobermann": {
       "name": "Dobermann",
@@ -192,7 +294,11 @@
       "synonyms": [
         "Doberman",
         "Dobermann pinscher"
-      ]
+      ],
+      "colours": {
+        "black-rust": "Zwart met roest",
+        "brown-rust": "Bruin met roest"
+      }
     },
     "boxer": {
       "name": "Boxer",
@@ -200,7 +306,11 @@
       "synonyms": [
         "Duitse boxer",
         "Deutscher Boxer"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fawn",
+        "brindle": "Gestroomd"
+      }
     },
     "miniature_schnauzer": {
       "name": "Dwergschnauzer",
@@ -209,14 +319,24 @@
         "Zwergschnauzer",
         "Miniatuurschnauzer",
         "Miniature schnauzer"
-      ]
+      ],
+      "colours": {
+        "pepper-salt": "Peper en zout",
+        "black-silver": "Zwart met zilver",
+        "black": "Zwart"
+      }
     },
     "shih_tzu": {
       "name": "Shih tzu",
       "slug": "shih-tzu",
       "synonyms": [
         "Shih-tzu"
-      ]
+      ],
+      "colours": {
+        "gold-white": "Goud-wit",
+        "black-white": "Zwart-wit",
+        "liver-white": "Leverbruin-wit"
+      }
     },
     "great_dane": {
       "name": "Duitse dog",
@@ -225,7 +345,14 @@
         "Deense dog",
         "Deutsche Dogge",
         "Great Dane"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fawn",
+        "brindle": "Gestroomd",
+        "harlequin": "Harlekijn",
+        "black": "Zwart",
+        "blue": "Staalblauw"
+      }
     },
     "pomeranian": {
       "name": "Pomeranian",
@@ -234,14 +361,26 @@
         "Dwergkees",
         "Dwergkeeshond",
         "Pom"
-      ]
+      ],
+      "colours": {
+        "orange": "Oranje",
+        "cream": "Crème",
+        "white": "Wit",
+        "black": "Zwart",
+        "brown": "Bruin"
+      }
     },
     "boston_terrier": {
       "name": "Boston terrier",
       "slug": "boston-terrier",
       "synonyms": [
         "Boston"
-      ]
+      ],
+      "colours": {
+        "brindle-white": "Gestroomd met wit",
+        "black-white": "Zwart-wit",
+        "seal-white": "Seal met wit"
+      }
     },
     "miniature_american_shepherd": {
       "name": "Miniature American shepherd",
@@ -250,11 +389,25 @@
         "Mini aussie",
         "Mini American",
         "Miniature Australian shepherd"
-      ]
+      ],
+      "colours": {
+        "blue-merle": "Blue merle",
+        "black": "Zwart",
+        "red-merle": "Red merle",
+        "red": "Rood"
+      }
     },
     "chihuahua": {
       "name": "Chihuahua",
-      "slug": "chihuahua"
+      "slug": "chihuahua",
+      "colours": {
+        "fawn": "Fawn",
+        "cream": "Crème",
+        "black-tan": "Zwart met tan",
+        "chocolate": "Chocolade",
+        "white": "Wit",
+        "fawn-white": "Fawn met wit"
+      }
     },
     "english_springer_spaniel": {
       "name": "Engelse springer spaniel",
@@ -263,14 +416,26 @@
         "Springer spaniel",
         "Springer",
         "English springer spaniel"
-      ]
+      ],
+      "colours": {
+        "liver-white": "Leverbruin-wit",
+        "black-white": "Zwart-wit",
+        "liver-white-tan": "Leverbruin, wit en tan",
+        "black-white-tan": "Zwart, wit en tan"
+      }
     },
     "shetland_sheepdog": {
       "name": "Shetland sheepdog",
       "slug": "shetland-sheepdog",
       "synonyms": [
         "Sheltie"
-      ]
+      ],
+      "colours": {
+        "sable-white": "Sable met wit",
+        "tricolour": "Driekleur",
+        "blue-merle": "Blue merle",
+        "black-white": "Zwart-wit"
+      }
     },
     "brittany": {
       "name": "Epagneul breton",
@@ -279,7 +444,15 @@
         "Bretonse spaniël",
         "Brittany",
         "Épagneul breton"
-      ]
+      ],
+      "colours": {
+        "orange-white": "Oranje-wit",
+        "liver-white": "Leverbruin-wit",
+        "orange-roan": "Oranjeschimmel",
+        "liver-roan": "Leverbruinschimmel",
+        "black-white": "Zwart-wit",
+        "tricolour": "Driekleur"
+      }
     },
     "american_cocker_spaniel": {
       "name": "Amerikaanse cocker spaniel",
@@ -287,7 +460,17 @@
       "synonyms": [
         "Amerikaanse cocker",
         "American cocker spaniel"
-      ]
+      ],
+      "colours": {
+        "buff": "Buff",
+        "black": "Zwart",
+        "black-tan": "Zwart met tan",
+        "red": "Rood",
+        "chocolate": "Chocolade",
+        "black-white": "Zwart-wit",
+        "red-white": "Rood-wit",
+        "tricolour": "Driekleur"
+      }
     },
     "belgian_malinois": {
       "name": "Mechelse herder",
@@ -296,14 +479,22 @@
         "Malinois",
         "Belgische herder",
         "Belgian malinois"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fawn met zwart masker",
+        "mahogany": "Mahonie met zwart masker"
+      }
     },
     "basset_hound": {
       "name": "Basset hound",
       "slug": "basset-hound",
       "synonyms": [
         "Basset"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Driekleur",
+        "lemon-white": "Lemon met wit"
+      }
     },
     "hungarian_vizsla": {
       "name": "Hongaarse vizsla",
@@ -321,7 +512,17 @@
         "Cocker spaniel",
         "Cocker",
         "English cocker spaniel"
-      ]
+      ],
+      "colours": {
+        "golden": "Goudkleurig",
+        "black": "Zwart",
+        "liver": "Leverbruin",
+        "black-tan": "Zwart met tan",
+        "blue-roan": "Blauwschimmel",
+        "orange-roan": "Oranjeschimmel",
+        "black-white": "Zwart-wit",
+        "tricolour": "Driekleur"
+      }
     },
     "maltese": {
       "name": "Maltezer",
@@ -339,7 +540,13 @@
         "Mops",
         "Pug",
         "Carlin"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fawn",
+        "black": "Zwart",
+        "apricot": "Abrikoos",
+        "silver": "Zilver"
+      }
     },
     "rough_collie": {
       "name": "Schotse collie",
@@ -348,7 +555,12 @@
         "Collie",
         "Langharige collie",
         "Rough collie"
-      ]
+      ],
+      "colours": {
+        "sable-white": "Sable met wit",
+        "tricolour": "Driekleur",
+        "blue-merle-white": "Blue merle met wit"
+      }
     },
     "mastiff": {
       "name": "Mastiff",
@@ -356,14 +568,24 @@
       "synonyms": [
         "Engelse mastiff",
         "Old English mastiff"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fawn",
+        "apricot": "Abrikoos",
+        "brindle": "Gestroomd"
+      }
     },
     "shiba_inu": {
       "name": "Shiba inu",
       "slug": "shiba-inu",
       "synonyms": [
         "Shiba"
-      ]
+      ],
+      "colours": {
+        "red": "Rood",
+        "black-tan": "Zwart met tan",
+        "sesame": "Sesam"
+      }
     },
     "rhodesian_ridgeback": {
       "name": "Rhodesian ridgeback",
@@ -371,7 +593,11 @@
       "synonyms": [
         "Ridgeback",
         "Afrikaanse leeuwenhond"
-      ]
+      ],
+      "colours": {
+        "red-wheaten": "Rood tarwekleurig",
+        "light-wheaten": "Licht tarwekleurig"
+      }
     },
     "papillon": {
       "name": "Papillon",
@@ -380,7 +606,13 @@
         "Continentale dwergspaniël",
         "Phalène",
         "Vlinderhondje"
-      ]
+      ],
+      "colours": {
+        "red-white": "Wit-rood",
+        "sable-white": "Wit met sable",
+        "tricolour": "Driekleur",
+        "black-white": "Wit-zwart"
+      }
     },
     "portuguese_water_dog": {
       "name": "Portugese waterhond",
@@ -388,7 +620,12 @@
       "synonyms": [
         "Cão de água português",
         "Portie"
-      ]
+      ],
+      "colours": {
+        "black": "Zwart",
+        "black-white": "Zwart-wit",
+        "brown": "Bruin"
+      }
     },
     "bichon_frise": {
       "name": "Bichon frisé",
@@ -403,7 +640,12 @@
       "slug": "newfoundlander",
       "synonyms": [
         "Newfie"
-      ]
+      ],
+      "colours": {
+        "black": "Zwart",
+        "landseer": "Landseer (wit en zwart)",
+        "brown": "Bruin"
+      }
     },
     "dalmatian": {
       "name": "Dalmatiër",
@@ -656,7 +898,17 @@
     },
     "maine_coon": {
       "name": "Maine coon",
-      "slug": "maine-coon"
+      "slug": "maine-coon",
+      "colours": {
+        "brown": "Bruin",
+        "red": "Rood",
+        "silver": "Zilver",
+        "cream": "Crème",
+        "blue-grey": "Blauwgrijs",
+        "black": "Zwart",
+        "white": "Wit",
+        "tortoiseshell": "Schildpad"
+      }
     },
     "british_shorthair": {
       "name": "Britse korthaar",
@@ -664,11 +916,28 @@
       "synonyms": [
         "British shorthair",
         "British blue"
-      ]
+      ],
+      "colours": {
+        "blue-grey": "Blauwgrijs",
+        "black": "Zwart",
+        "cream": "Crème",
+        "lilac": "Lilac",
+        "white": "Wit",
+        "red": "Rood",
+        "silver": "Zilver",
+        "tortoiseshell": "Schildpad"
+      }
     },
     "ragdoll": {
       "name": "Ragdoll",
-      "slug": "ragdoll"
+      "slug": "ragdoll",
+      "colours": {
+        "seal-point": "Seal point",
+        "blue-point": "Blue point",
+        "lilac-point": "Lilac point",
+        "red-point": "Red point",
+        "cream-point": "Cream point"
+      }
     },
     "siberian_cat": {
       "name": "Siberische kat",
@@ -676,7 +945,17 @@
       "synonyms": [
         "Siberiër",
         "Siberische boskat"
-      ]
+      ],
+      "colours": {
+        "brown": "Bruin",
+        "silver": "Zilver",
+        "red": "Rood",
+        "black": "Zwart",
+        "blue-grey": "Blauwgrijs",
+        "cream": "Crème",
+        "white": "Wit",
+        "tortoiseshell": "Schildpad"
+      }
     },
     "norwegian_forest_cat": {
       "name": "Noorse boskat",
@@ -684,7 +963,17 @@
       "synonyms": [
         "Skogkatt",
         "Norwegian forest cat"
-      ]
+      ],
+      "colours": {
+        "brown": "Bruin",
+        "silver": "Zilver",
+        "red": "Rood",
+        "black": "Zwart",
+        "blue-grey": "Blauwgrijs",
+        "cream": "Crème",
+        "white": "Wit",
+        "tortoiseshell": "Schildpad"
+      }
     },
     "bengal": {
       "name": "Bengaal",
@@ -692,7 +981,12 @@
       "synonyms": [
         "Bengal",
         "Bengaalse kat"
-      ]
+      ],
+      "colours": {
+        "brown-spotted": "Bruin gevlekt",
+        "silver-spotted": "Zilver gevlekt",
+        "snow": "Snow"
+      }
     },
     "shar_pei": {
       "name": "Shar-pei",
@@ -950,14 +1244,30 @@
       "synonyms": [
         "Tibetaanse terrier",
         "Tibetan terrier"
-      ]
+      ],
+      "colours": {
+        "golden": "Goudkleurig",
+        "white": "Wit",
+        "cream": "Crème",
+        "grey-smoke": "Grijs of rookkleurig",
+        "parti-colour": "Parti-colour",
+        "tricolour": "Driekleur (zwart, wit en tan)"
+      }
     },
     "greyhound": {
       "name": "Greyhound",
       "slug": "greyhound",
       "synonyms": [
         "English greyhound"
-      ]
+      ],
+      "colours": {
+        "brindle": "Gestroomd",
+        "black": "Zwart",
+        "fawn": "Fawn",
+        "blue": "Blauw",
+        "red": "Rood",
+        "black-white": "Zwart-wit"
+      }
     },
     "xoloitzcuintli": {
       "name": "Xoloitzcuintle",
@@ -966,7 +1276,15 @@
         "Xoloitzcuintli",
         "Xolo",
         "Mexicaanse naakthond"
-      ]
+      ],
+      "colours": {
+        "black": "Zwart",
+        "slate-grey": "Leigrijs",
+        "reddish": "Roodachtig",
+        "liver": "Leverbruin",
+        "bronze": "Brons",
+        "blonde": "Blond"
+      }
     },
     "spinone_italiano": {
       "name": "Spinone Italiano",
@@ -975,7 +1293,14 @@
         "Spinone",
         "Italiaanse spinone",
         "Italian Spinone"
-      ]
+      ],
+      "colours": {
+        "orange-white": "Wit-oranje",
+        "brown-roan": "Bruinschimmel",
+        "brown-white": "Wit-bruin",
+        "orange-roan": "Oranjeschimmel",
+        "white": "Wit"
+      }
     },
     "pointer": {
       "name": "Pointer",
@@ -983,7 +1308,13 @@
       "synonyms": [
         "Engelse pointer",
         "English Pointer"
-      ]
+      ],
+      "colours": {
+        "liver-white": "Leverbruin-wit",
+        "orange-white": "Oranje-wit",
+        "lemon-white": "Lemon met wit",
+        "black-white": "Zwart-wit"
+      }
     },
     "mudi": {
       "name": "Mudi",
@@ -991,14 +1322,27 @@
       "synonyms": [
         "Hongaarse mudi",
         "Hungarian Mudi"
-      ]
+      ],
+      "colours": {
+        "black": "Zwart",
+        "white": "Wit",
+        "fawn": "Fawn",
+        "blue": "Asgrijs (blauw)",
+        "liver": "Leverbruin",
+        "isabella": "Asbruin",
+        "blue-merle": "Merle (cifra)"
+      }
     },
     "welsh_terrier": {
       "name": "Welsh terrier",
       "slug": "welsh-terrier",
       "synonyms": [
         "Welsh terriër"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Zwart met tan",
+        "black-grizzle-tan": "Zwart grizzle met tan"
+      }
     },
     "norwegian_elkhound": {
       "name": "Noorse elandhond grijs",
@@ -1016,7 +1360,13 @@
         "American Hairless Terrier",
         "AHT",
         "Amerikaanse haarloze terriër"
-      ]
+      ],
+      "colours": {
+        "pink-black-spots": "Roze met zwarte vlekjes",
+        "pink-chocolate-spots": "Roze met chocoladebruine vlekjes",
+        "grey-pink-patches": "Donkergrijs met roze vlekken",
+        "pink-tan-spots": "Roze met tankleurige vlekjes"
+      }
     },
     "black_russian_terrier": {
       "name": "Zwarte russische terriër",
@@ -1025,7 +1375,11 @@
         "Black Russian Terrier",
         "Russische zwarte terriër",
         "Tchiorny Terrier"
-      ]
+      ],
+      "colours": {
+        "black": "Zwart",
+        "black-grey": "Zwart met grijze haren"
+      }
     },
     "tibetan_spaniel": {
       "name": "Tibetaanse spaniël",
@@ -1033,7 +1387,15 @@
       "synonyms": [
         "Tibetan Spaniel",
         "Tibbie"
-      ]
+      ],
+      "colours": {
+        "golden": "Goudkleurig",
+        "red": "Rood",
+        "sable": "Sable",
+        "cream": "Crème",
+        "black-tan": "Zwart met tan",
+        "black": "Zwart"
+      }
     }
   },
   "suitability_labels": {
