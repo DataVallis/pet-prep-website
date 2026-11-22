@@ -1392,6 +1392,310 @@ const pl: RegistryCopy = {
       ],
       sources: ["C13", "C37", "C38"],
     },
+    keeshond: {
+      aka: "Wolfsspitz, German Wolfspitz, Keeshonden",
+      text: [
+        "Keeshond to średniej wielkości szpic z Niemiec – odmiana szpica niemieckiego zwana szpicem wilczym (Wolfsspitz) – o długiej, odstającej sierści w odcieniach szarości, gęstej kryzie i ciemnych „okularach” wokół oczu (wzorzec FCI). Wzorzec FCI podaje wysokość 49 ± 6\u00a0cm, a PDSA przeciętną masę ciała 16–20\u00a0kg. Pies tej wielkości kończy rosnąć w wieku około 12–15\u00a0miesięcy (PetMD); według PDSA żyje ponad 10\u00a0lat, według VCA 12–14\u00a0lat.",
+        "PDSA pisze, że rasa potrzebuje do godziny ruchu dziennie, a gęsta, podwójna sierść wymaga codziennej pielęgnacji. Keeshondy to według PDSA znakomite psy rodzinne: dogadują się z innymi zwierzętami w domu i dobrze reagują na szkolenie, jeśli poświęci im się czas i cierpliwość. VCA opisuje je jako skore do zabawy i delikatne wobec dzieci, radzi kąpać je mniej więcej raz w miesiącu i zaznacza, że linieją mocniej niż przeciętnie, a gęsta sierść może sprawiać, że łatwo się przegrzewają.",
+      ],
+      sources: ["S246", "S709", "S710", "S10"],
+    },
+    standard_schnauzer: {
+      aka: "Schnauzer, Mittelschnauzer, Wire-Haired Pinscher",
+      text: [
+        "Sznaucer średni pochodzi z Niemiec; w FCI figuruje po prostu jako sznaucer, w grupie pinczerów i sznaucerów. Wzorzec FCI opisuje psa średniej wielkości, mocnego, raczej krępego niż smukłego, o szorstkiej, drucianej i gęstej sierści, z uszami zwisającymi i niekupirowanym ogonem. Podaje wysokość 45–50\u00a0cm i masę ciała 14–20\u00a0kg zarówno u psów, jak i u suk; dopuszczalne umaszczenie to „pieprz i sól” oraz czarne. Pies tej wielkości kończy rosnąć w wieku około 12–15\u00a0miesięcy (PetMD); The Royal Kennel Club podaje długość życia ponad 10\u00a0lat, a VCA 12–14\u00a0lat.",
+        "The Royal Kennel Club zaleca do godziny ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu; według niego rasa pasuje do małego domu z małym lub średnim ogrodem, w mieście albo na wsi. PDSA pisze, że sznaucery to łagodne, cierpliwe psy, które dobrze dogadują się z dziećmi, jeśli od małego są z nimi oswajane, a sierść trzeba pielęgnować dwa–trzy razy w tygodniu. VCA zauważa, że rasa szybko się uczy, ale też szybko nudzi, więc gry i sztuczki dają jej potrzebną pracę dla głowy. PetMD zaleca kąpiel i obcinanie pazurów co miesiąc, czyszczenie uszu co jeden–dwa tygodnie oraz wizytę u groomera raz na kwartał.",
+      ],
+      sources: ["S10", "S711", "S712", "S714", "S715", "S716", "S717"],
+    },
+    english_setter: {
+      aka: "Laverack Setter, Llewellin Setter, Setter",
+      text: [
+        "Seter angielski to elegancki pies myśliwski z Wielkiej Brytanii, wyhodowany do wyszukiwania ptactwa łownego. Wzorzec FCI opisuje psa średniego wzrostu, o czystym zarysie i eleganckim ruchu, z białą sierścią nakrapianą kolorem – niebieskim, pomarańczowym, cytrynowym lub wątrobianym („belton”) albo trójbarwnym; wysokość to 65–68\u00a0cm u psów i 61–65\u00a0cm u suk. PDSA podaje przeciętną masę ciała 22–29\u00a0kg. Pies tej wielkości kończy rosnąć w wieku około 15–18\u00a0miesięcy (PetMD), a według The Royal Kennel Club żyje ponad 10\u00a0lat.",
+        "The Royal Kennel Club zaleca ponad dwie godziny ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu. Według niego rasa linieje i pasuje do dużego domu z dużym ogrodem, a w programie Breed Watch należy do kategorii 1. PDSA pisze, że setery angielskie uwielbiają dzieci i inne zwierzęta, więc świetnie nadają się dla rodzin, i radzi pielęgnować sierść dwa–trzy razy w tygodniu. PetMD proponuje kąpiel co sześć–osiem tygodni i zaznacza, że psy te nie lubią długo zostawać same; VCA wspomina o comiesięcznym przycinaniu i strzyżeniu.",
+      ],
+      sources: ["S730", "S731", "S732", "S733", "S734", "S10"],
+    },
+    dogue_de_bordeaux: {
+      aka: "Bordeaux Mastiff, French Mastiff, Bordeauxdogge, DDB",
+      text: [
+        "Dog z Bordeaux to potężny pies z Francji, w typie molosa. Wzorzec FCI opisuje psa krępego, atletycznego i imponującego, spokojnego, zrównoważonego i bardzo przywiązanego do właściciela, z cienką, krótką sierścią we wszystkich odcieniach płowego – od mahoniowego po izabelowaty. Podaje wysokość 60–68\u00a0cm u psów i 58–66\u00a0cm u suk oraz masę ciała co najmniej 50\u00a0kg u psów i co najmniej 45\u00a0kg u suk; według PetMD psy ważą 110–145\u00a0funtów (ok. 50–66\u00a0kg), a suki 99–120\u00a0funtów (ok. 45–54\u00a0kg). Pies tej wielkości kończy rosnąć w wieku około 18–24\u00a0miesięcy (PetMD). Źródła różnią się co do długości życia: PetMD pisze, że psy te zwykle żyją tylko 5–8\u00a0lat, a The Royal Kennel Club podaje ponad 10\u00a0lat.",
+        "The Royal Kennel Club zaleca do godziny ruchu dziennie i pielęgnację sierści raz w tygodniu. Według niego rasa linieje i pasuje do dużego domu z dużym ogrodem, a w programie Breed Watch należy do kategorii 3. PDSA pisze, że dogi z Bordeaux zwykle dobrze dogadują się ze starszymi dziećmi, ale nie poleca ich rodzinom z młodszymi dziećmi ani osobom, które po raz pierwszy mają psa. Ostrzega, że dużo się ślinią i mają bardzo silny instynkt łowiecki, i radzi regularnie czyścić fałdy na pysku oraz robić przerwę między jedzeniem a ruchem. PetMD zaznacza, że z powodu krótkiego pyska w upalną pogodę psom tym może być trudniej oddychać.",
+      ],
+      sources: ["S755", "S756", "S757", "S759", "S10"],
+    },
+    flat_coated_retriever: {
+      aka: "Flatcoat, Flattie, Flat-coat, Flat Coated Retriever",
+      text: [
+        "Flat coated retriever to żywy, aktywny pies myśliwski z Wielkiej Brytanii, wyhodowany do aportowania zwierzyny. Wzorzec FCI opisuje gęstą, płasko przylegającą sierść z bogato owłosionymi łapami i ogonem, wyłącznie czarną lub wątrobianą, oraz optymistyczne, przyjazne, pewne siebie i dobroduszne usposobienie. Preferowana wysokość to 59–61,5\u00a0cm u psów i 56,5–59\u00a0cm u suk, a preferowana masa ciała 27–36\u00a0kg u psów i 25–32\u00a0kg u suk. Pies tej wielkości kończy rosnąć w wieku około 15–18\u00a0miesięcy (PetMD). The Royal Kennel Club podaje długość życia poniżej 10\u00a0lat, natomiast brytyjskie badanie z 2024 roku, przedstawione przez Dogs Trust, wykazało medianę 11,7 roku.",
+        "The Royal Kennel Club zaleca ponad dwie godziny ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu. Według niego rasa linieje i pasuje do dużego domu z dużym ogrodem, a w programie Breed Watch należy do kategorii 1. PetMD nazywa flat coated retrievery wspaniałymi psami rodzinnymi, które zwykle dobrze dogadują się z dziećmi i innymi zwierzętami, zwłaszcza przy odpowiednim oswajaniu i socjalizacji. Zaleca szczotkowanie dwa razy w tygodniu, czyszczenie uszu co tydzień lub dwa, kąpiel i obcinanie pazurów co miesiąc lub dwa oraz unikanie wysiłku tuż przed jedzeniem i tuż po nim.",
+      ],
+      sources: ["S761", "S762", "S763", "S123", "S10"],
+    },
+    border_terrier: {
+      aka: "Border Terrier dog",
+      text: [
+        "Border terrier to mały terier pracujący z Wielkiej Brytanii; wzorzec FCI określa go jako teriera, który potrafi dotrzymać kroku koniowi i łączy aktywność z zawziętością. Opisuje szorstką, gęstą sierść z gęstym podszerstkiem, ciemne oczy o czujnym wyrazie i małe uszy w kształcie litery V; umaszczenie to rude, pszeniczne, pieprzowo-podpalane lub niebiesko-podpalane, a masa ciała 5,9–7,1\u00a0kg u psów i 5,1–6,4\u00a0kg u suk. Pies tej wielkości kończy rosnąć w wieku około 9–12\u00a0miesięcy (PetMD). The Royal Kennel Club podaje długość życia ponad 12\u00a0lat, a brytyjskie badanie z 2024 roku (McMillan i in.) wykazało medianę 14,2 roku.",
+        "The Royal Kennel Club zaleca do godziny ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu. Według niego rasa linieje i nadaje się do mieszkania, a w programie Breed Watch należy do kategorii 1. PDSA pisze, że przy właściwej socjalizacji border teriery uwielbiają spędzać czas z dziećmi w każdym wieku, ale zaleca nadzór. Ostrzega, że zostawione same mogą rozwinąć lęk separacyjny, mają silny instynkt łowiecki i nie powinny mieszkać z królikami, świnkami morskimi ani szczurami; radzi też szczotkować je kilka razy w tygodniu i robić przerwę między jedzeniem a ruchem. Woodgreen proponuje dom z nieco starszymi dziećmi.",
+      ],
+      sources: ["S768", "S769", "S770", "S771", "S773", "S10"],
+    },
+    leonberger: {
+      aka: "Leonberg, Leonberger dog",
+      text: [
+        "Leonberger to duży pies z Niemiec. Wzorzec FCI opisuje psa dużego, silnego, muskularnego, a jednocześnie eleganckiego, z długą, przylegającą sierścią, zwisającymi uszami i bogato owłosionym ogonem; umaszczenie to lwia żółć, rudy, rudobrązowy lub piaskowy, zawsze z czarną maską. Podaje wysokość 72–80\u00a0cm u psów i 65–75\u00a0cm u suk. PDSA podaje przeciętną masę ciała 30–50\u00a0kg zarówno u psów, jak i u suk oraz długość życia poniżej 10\u00a0lat; jako rasa olbrzymia kończy rosnąć w wieku około 18–24\u00a0miesięcy (klasa wielkości PetMD).",
+        "The Royal Kennel Club zaleca ponad dwie godziny ruchu dziennie oraz duży dom z dużym ogrodem; PDSA nazywa leonbergery łagodnymi olbrzymami i doskonałymi psami rodzinnymi. Woodgreen radzi szczotkować je dwa–trzy razy w tygodniu, uważa, że ze względu na rozmiary niezbędne są wczesne szkolenie i socjalizacja, i zaznacza, że trudno im znosić długą samotność. Brytyjskie badanie z 2024 roku (McMillan i in., przedstawione przez Dogs Trust) podaje medianę oczekiwanej długości życia 10,0 roku.",
+      ],
+      sources: ["S783", "S781", "S10", "S780", "S784", "S123"],
+    },
+    beauceron: {
+      aka: "Berger de Beauce, Beauce Sheepdog, Bas Rouge",
+      text: [
+        "Beauceron, czyli owczarek francuski beauceron (Berger de Beauce), to duży francuski pies pasterski. Wzorzec FCI opisuje psa dużego, solidnego, twardego, mocnego i muskularnego, bez ociężałości, z krótką, gęstą sierścią, ogonem z lekkim hakiem w kształcie litery J i podwójnymi wilczymi pazurami na tylnych łapach; umaszczenie to czarne podpalane lub arlekin. Podaje wysokość 65–70\u00a0cm u psów i 61–68\u00a0cm u suk. Według tabeli AKC masa ciała wynosi 70–110\u00a0funtów (ok. 32–50\u00a0kg) zarówno u psów, jak i u suk; pies tej wielkości kończy rosnąć w wieku około 15–18\u00a0miesięcy (klasa wielkości PetMD). The Royal Kennel Club podaje długość życia ponad 10\u00a0lat, a PetMD 10–12\u00a0lat.",
+        "The Royal Kennel Club nazywa beaucerona spokojnym, pewnym siebie i lojalnym towarzyszem oraz psem stróżującym. Zaleca ponad dwie godziny ruchu dziennie, pielęgnację sierści częściej niż raz w tygodniu oraz duży dom z dużym ogrodem, a w programie Breed Watch umieszcza rasę w kategorii 1. PetMD pisze, że beaucerony mogą dobrze dogadywać się z małymi dziećmi i innymi psami, jeśli pierwsze kontakty odbywają się pod nadzorem. Wobec nowych osób bywają nieufne, dlatego szczenięta powinny jak najwcześniej poznawać ludzi; uwielbiają przebywać z rodziną. PetMD zaleca szczotkowanie co najmniej raz w tygodniu oraz unikanie ruchu na godzinę przed jedzeniem i godzinę po nim.",
+      ],
+      sources: ["S790", "S268", "S10", "S787", "S791"],
+    },
+    bouvier_des_flandres: {
+      aka: "Bouvier, Flanders Cattle Dog, Vlaamse Koehond",
+      text: [
+        "Bouvier des Flandres to pies do pędzenia bydła z Flandrii, z terenów dzisiejszej Belgii i Francji. Wzorzec FCI opisuje psa krótkiego, zwartego i potężnego, o mocnych, dobrze umięśnionych kończynach, z szorstką, suchą, lekko rozczochraną sierścią długości około 6\u00a0cm, z wąsami i pełną brodą; zwykle jest szary, pręgowany lub przyprószony czernią (dopuszczalna jest też jednolita czerń). Podaje wysokość 62–68\u00a0cm i masę ciała około 35–40\u00a0kg u psów oraz 59–65\u00a0cm i około 27–35\u00a0kg u suk. Pies tej wielkości kończy rosnąć w wieku około 15–18\u00a0miesięcy (klasa wielkości PetMD); brytyjskie badanie z 2024 roku (McMillan i in., przedstawione przez Dogs Trust) podaje medianę oczekiwanej długości życia 11,3 roku.",
+        "The Royal Kennel Club nazywa bouviera silnym i wszechstronnym psem, z pochodzenia pasterzem bydła. Zaleca do godziny ruchu dziennie, codzienną pielęgnację sierści i duży dom z dużym ogrodem, a w programie Breed Watch umieszcza rasę w kategorii 1. PetMD pisze, że bouviery mogą dobrze dogadywać się z małymi dziećmi i innymi dużymi psami, jeśli pierwsze kontakty odbywają się pod nadzorem. Mają silny instynkt łowiecki wobec kotów i małych zwierząt, potrzebują wczesnej socjalizacji i łatwo tyją. PetMD zaleca szczotkowanie co najmniej raz lub dwa razy w tygodniu, czyszczenie uszu co dwa–trzy tygodnie, obcinanie pazurów co trzy–cztery tygodnie oraz unikanie ruchu na godzinę przed jedzeniem i godzinę po nim.",
+      ],
+      sources: ["S797", "S10", "S123", "S795", "S798"],
+    },
+    borzoi: {
+      aka: "Russian Wolfhound, Russian Hunting Sighthound, Russkaya Psovaya Borzaya, chart rosyjski",
+      text: [
+        "Borzoj, czyli chart rosyjski długowłosy (Russian Hunting Sighthound), pochodzi z Rosji i był hodowany do gonienia zajęcy i lisów. Wzorzec FCI opisuje psa o arystokratycznym wyglądzie – wysokiego, szczupłego i silnego, raczej wysokonogiego, z długą, jedwabistą, falistą sierścią w dowolnym kolorze od białego do czarnego, z wyjątkiem brązowego, niebieskiego i izabelowatego. Podaje pożądaną wysokość 75–85\u00a0cm u psów i 68–78\u00a0cm u suk. PDSA podaje przeciętną masę ciała 27–47\u00a0kg zarówno u psów, jak i u suk oraz długość życia ponad 10\u00a0lat, a PetMD 9–14\u00a0lat; pies tej wielkości kończy rosnąć w wieku około 15–18\u00a0miesięcy (klasa wielkości PetMD).",
+        "PDSA zaleca co najmniej godzinę ruchu dziennie, podzieloną na parę spacerów, ze spuszczaniem ze smyczy tylko na bezpiecznym terenie. Według PDSA borzoje mają bardzo silny instynkt łowiecki, więc nie poleca się ich do domów z mniejszymi zwierzętami ani młodszymi dziećmi; pasują do doświadczonych właścicieli i potrzebują, by ktoś był w domu przez większość dnia. Trzeba je socjalizować od małego, szczotkować kilka razy w tygodniu i robić przerwę między jedzeniem a ruchem. PetMD zaleca szczotkowanie co najmniej dwa–trzy razy w tygodniu i wymienia skręt żołądka jako najczęstszy problem zdrowotny.",
+      ],
+      sources: ["S802", "S800", "S803", "S10"],
+    },
+    japanese_chin: {
+      aka: "Japanese Spaniel, Japan Chin, Chin, chin japoński",
+      text: [
+        "Chin japoński to mały pies do towarzystwa z Japonii. Wzorzec The Royal Kennel Club opisuje eleganckiego, arystokratycznego, zwartego pieska z obfitą, długą, jedwabistą sierścią, czarno-białą lub rudo-białą (nigdy trójbarwną), krótkim, szerokim pyskiem i wyrazem zdziwienia; podaje idealną masę ciała 1,8–3,2\u00a0kg, a PetMD wysokość 8–11\u00a0cali (ok. 20–28\u00a0cm). Pies tej wielkości kończy rosnąć w wieku około 8–12\u00a0miesięcy (klasa wielkości PetMD); brytyjskie badanie z 2024 roku (McMillan i in., przedstawione przez Dogs Trust) podaje medianę oczekiwanej długości życia 12,5 roku.",
+        "The Royal Kennel Club zaleca do 30\u00a0minut ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu. Według niego rasa linieje i nadaje się do mieszkania, a w programie Breed Watch należy do kategorii 1. PetMD pisze, że chin japoński to rasa o płaskim pysku (brachycefaliczna), która może mieć trudności z oddychaniem i łatwo się przegrzewa, dlatego w upalną lub wilgotną pogodę ruch trzeba przenieść na chłodniejsze pory dnia. Zwykle dobrze dogaduje się z dziećmi, jeśli kontakty odbywają się pod nadzorem, może rozwinąć lęk separacyjny i jak najwcześniej powinien chodzić na zajęcia socjalizacyjne. PetMD zaleca szczotkowanie raz lub dwa razy w tygodniu, czyszczenie uszu co dwa–trzy tygodnie i kąpiel mniej więcej co miesiąc.",
+      ],
+      sources: ["S806", "S10", "S123", "S805", "S809"],
+    },
+    miniature_bull_terrier: {
+      aka: "Mini Bull Terrier, Mini Bull, Bull Terrier (Miniature), English Miniature Bull Terrier, bulterier miniaturowy",
+      text: [
+        "Bulterier miniaturowy to mały terier z Wielkiej Brytanii. FCI zalicza go do terierów typu bull, a według The Royal Kennel Club jako odrębną odmianę uznano go po raz pierwszy w 1943 roku; wyhodowano go z mniejszych bulterierów, tak by nie przekraczał 35,5\u00a0cm (14\u00a0cali). PetMD podaje wysokość 10–14\u00a0cali (ok. 25–36\u00a0cm) i masę ciała 18–28\u00a0funtów (ok. 8–13\u00a0kg); pies tej wielkości kończy rosnąć w wieku około 9–12\u00a0miesięcy (klasa wielkości PetMD). The Royal Kennel Club podaje długość życia ponad 10\u00a0lat, a PetMD 11–13\u00a0lat.",
+        "The Royal Kennel Club opisuje rasę jako odważną, pełną ducha i o wesołym usposobieniu. Zaleca do godziny ruchu dziennie i pielęgnację sierści raz w tygodniu, podaje, że rasa linieje, i zalicza ją do zagrożonych rodzimych ras brytyjskich. PetMD pisze, że bultery miniaturowe są zwykle czułe, dobrze dogadują się z dziećmi i są przyjaznymi towarzyszami rodziny; mogą też dogadywać się z innymi zwierzętami, jeśli zostaną właściwie zsocjalizowane. Potrzebują regularnego ruchu i pracy dla głowy, a gdy długo zostają same, źle to znoszą. PetMD zaleca wczesną socjalizację i szczotkowanie mniej więcej raz w tygodniu.",
+      ],
+      sources: ["S818", "S820", "S821", "S10"],
+    },
+    schipperke: {
+      aka: "Little Captain, Little Black Devil, Spitzke, szipperke",
+      text: [
+        "Schipperke to mały pies pasterski z Belgii; FCI zalicza go do psów pasterskich, a jego wzorzec opisuje psa wilkowatego, małych rozmiarów, ale bardzo solidnie zbudowanego, całkowicie czarnego, z kryzą, grzywą i „spodenkami”. Wzorzec FCI podaje masę ciała 3–9\u00a0kg (pożądana średnia to 4–7\u00a0kg), a PetMD wysokość 10–13\u00a0cali (ok. 25–33\u00a0cm); pies tej wielkości kończy rosnąć w wieku około 9–12\u00a0miesięcy (klasa wielkości PetMD). Duże brytyjskie badanie (McMillan i in. 2024) wykazało medianę oczekiwanej długości życia 14,2 roku, a The Royal Kennel Club podaje ponad 12\u00a0lat.",
+        "Wzorzec FCI nazywa schipperke doskonałym małym psem stróżującym, tryskającym życiem, powściągliwym wobec obcych i bardzo łagodnym wobec dzieci. The Royal Kennel Club zaleca do godziny ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu. Według niego rasa linieje i nadaje się do mieszkania, a w programie Breed Watch należy do kategorii 1. PetMD pisze, że schipperke potrzebują zajęć, które angażują umysł i ciało, są inteligentne, ale uparte, a niektóre zachowują silny instynkt łowiecki. Zaleca wczesną socjalizację, codzienne mycie zębów i czyszczenie uszu co dwa tygodnie; VCA radzi szczotkować je co najmniej dwa razy w tygodniu.",
+      ],
+      sources: ["S824", "S825", "S826", "S827", "S828", "S771", "S10"],
+    },
+    belgian_tervuren: {
+      aka: "Tervuren, Tervueren, Terv, Belgian Shepherd Dog (Tervueren), owczarek belgijski tervueren",
+      text: [
+        "Owczarek belgijski tervueren to długowłosa, płowa odmiana owczarka belgijskiego, psa pasterskiego z Belgii; FCI uznaje jedną rasę owczarka belgijskiego w czterech odmianach. Wzorzec FCI opisuje psa o harmonijnych proporcjach, łączącego elegancję z siłą, z długą sierścią tworzącą kryzę, „spodnie” i pióropusz na ogonie; dla tervueren dopuszcza wyłącznie umaszczenie płowe lub szare z czarnym nalotem i czarną maską (preferowane płowe). Podaje wysokość około 62\u00a0cm u psów i 58\u00a0cm u suk oraz masę ciała około 25–30\u00a0kg u psów i 20–25\u00a0kg u suk; pies tej wielkości kończy rosnąć w wieku około 12–15\u00a0miesięcy (klasa wielkości PetMD). The Royal Kennel Club podaje długość życia ponad 10\u00a0lat, a PetMD 12–14\u00a0lat.",
+        "Wzorzec FCI nazywa owczarka belgijskiego psem czujnym i aktywnym, tryskającym energią, bez śladu lęku czy agresji. The Royal Kennel Club zaleca ponad dwie godziny ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu. Według niego rasa linieje i pasuje do dużego domu z dużym ogrodem, a w programie Breed Watch należy do kategorii 1. PetMD pisze, że tervueren mocno przywiązują się do rodziny, potrzebują dużo ruchu i pracy dla głowy oraz mogą próbować zaganiać dzieci i mniejsze zwierzęta. Zaleca wczesną socjalizację, cotygodniowe szczotkowanie (niemal codzienne w okresie linienia), czyszczenie uszu co jeden–dwa tygodnie i kąpiel co cztery–sześć tygodni.",
+      ],
+      sources: ["S312", "S313", "S830", "S832", "S10"],
+    },
+    toy_fox_terrier: {
+      aka: "American Toy Terrier, Amertoy, TFT, toy fox terrier",
+      text: [
+        "Toy fox terrier to mały amerykański terier z grupy ras miniaturowych (Toy Group) AKC. Wzorzec AKC opisuje dobrze zbalansowanego pieska miniaturowego o atletycznej sylwetce, z krótką, atłasową sierścią, stojącymi, spiczastymi uszami i głównie białym tułowiem; głowa jest trójbarwna, biało-podpalana, biało-czarna lub biało-czekoladowo-podpalana. PetMD podaje masę ciała 4–9\u00a0funtów (ok. 1,8–4\u00a0kg) i wysokość 8,5–11,5\u00a0cala (ok. 21–29\u00a0cm); pies tej wielkości kończy rosnąć w wieku około 8–12\u00a0miesięcy (PetMD). PetMD i WebMD podają długość życia 13–15\u00a0lat.",
+        "Wzorzec AKC nazywa toy fox terriera inteligentnym, czujnym, przyjaznym i lojalnym wobec właścicieli. PetMD zaleca co najmniej godzinę ruchu dziennie, szczotkowanie raz lub dwa razy w tygodniu oraz wczesne szkolenie i socjalizację, i zaznacza, że rasa nadal ma silny instynkt łowiecki. WebMD pisze, że toy fox teriery to świetni towarzysze dla starszych dzieci, które szanują psa, ale nie poleca ich rodzinom z małymi dziećmi; zostawione na długo same mogą cierpieć na lęk separacyjny. Radzi codziennie myć zęby, co tydzień czyścić uszy i co miesiąc obcinać pazury.",
+      ],
+      sources: ["S833", "S834", "S835", "S10"],
+    },
+    gordon_setter: {
+      aka: "Black and Tan Setter, Scottish Setter, Gordon, seter szkocki",
+      text: [
+        "Seter szkocki (Gordon Setter) to duży czarno-podpalany pies myśliwski ze Szkocji (FCI: grupa 7, wyżły; kraj pochodzenia Wielka Brytania). Wzorzec FCI opisuje stylowego psa o galopujących liniach, z głęboką, lśniącą, węglowo czarną sierścią i kasztanowo-rudym podpaleniem; podaje wysokość 66\u00a0cm i masę ciała 29,5\u00a0kg u psów oraz 62\u00a0cm i 25,5\u00a0kg u suk. Pies tej wielkości kończy rosnąć w wieku około 15–18\u00a0miesięcy (PetMD), a The Royal Kennel Club podaje długość życia ponad 10\u00a0lat.",
+        "Wzorzec FCI nazywa setera szkockiego śmiałym, towarzyskim, o łagodnym i zrównoważonym usposobieniu; PDSA opisuje przyjazną, inteligentną rasę, która lubi mieć zajęcie. The Royal Kennel Club zaleca ponad dwie godziny ruchu dziennie oraz duży dom z ogrodem, a według PDSA gęsta sierść wymaga codziennej pielęgnacji. PetMD radzi ograniczyć ruch na godzinę przed posiłkami i po nich, wcześnie socjalizować szczenięta i szczególnie dbać o naukę przywołania, bo rasa ma silny instynkt łowiecki. WebMD zaleca codzienne mycie zębów i kąpiel mniej więcej raz w miesiącu oraz pisze, że rasa tylko umiarkowanie dobrze dogaduje się z małymi dziećmi.",
+      ],
+      sources: ["S841", "S842", "S843", "S844", "S845", "S10"],
+    },
+    afghan_hound: {
+      aka: "Afghan, Tazi, Baluchi Hound, chart afgański",
+      text: [
+        "Chart afgański to wysoki, długowłosy chart z Afganistanu (FCI: grupa 10, charty; kraj pochodzenia Afganistan, pod patronatem brytyjskim). Wzorzec FCI opisuje psa sprawiającego wrażenie siły i godności, łączącego szybkość z mocą, z długą, bardzo cienką sierścią; dopuszcza wszystkie umaszczenia z wyjątkiem merle. Podaje idealną wysokość 68–74\u00a0cm u psów i 63–69\u00a0cm u suk, a wzorzec AKC masę ciała około 60\u00a0funtów (27\u00a0kg) u psów i około 50\u00a0funtów (23\u00a0kg) u suk. Pies tej wielkości kończy rosnąć w wieku około 15–18\u00a0miesięcy (PetMD), a The Royal Kennel Club podaje długość życia ponad 10\u00a0lat.",
+        "Wzorzec FCI nazywa charta afgańskiego psem godnym i zdystansowanym, z pewną zadziornością. The Royal Kennel Club zaleca ponad dwie godziny ruchu dziennie, codzienną pielęgnację sierści i duży dom z ogrodem. PDSA pisze, że długa, jedwabista sierść wymaga codziennego szczotkowania, a dobrze zsocjalizowane charty afgańskie dogadują się z dziećmi; ich silny instynkt pogoni wymaga ostrożności w kontaktach z innymi zwierzętami. PetMD radzi po posiłku odczekać co najmniej godzinę, zanim pies zacznie się ruszać, i kąpać go co najmniej raz na tydzień lub dwa, a WebMD zaleca codzienne mycie zębów.",
+      ],
+      sources: ["S849", "S850", "S851", "S852", "S853", "S854", "S10"],
+    },
+    australian_silky_terrier: {
+      aka: "Silky Terrier, Silky, terier jedwabisty australijski",
+      text: [
+        "Silky terrier australijski (Australian Silky Terrier) to mały, bardzo czujny terier miniaturowy z Australii (FCI: grupa 3, teriery, sekcja teriery miniaturowe), znany w Ameryce Północnej jako Silky Terrier. Wzorzec FCI wymaga płaskiej, cienkiej, lśniącej sierści o jedwabistej strukturze w kolorze niebiesko-podpalanym – dopuszczalne są wszystkie odcienie niebieskiego i podpalenia, ale nie srebrny i biały – oraz wysokości 23–26\u00a0cm u psów; suki są nieco mniejsze. Wzorce nie podają masy ciała („proporcjonalna do wzrostu”); PetMD i WebMD podają około 10\u00a0funtów (ok. 4,5\u00a0kg). Pies tej wielkości kończy rosnąć w wieku około 8–12\u00a0miesięcy (PetMD), a The Royal Kennel Club podaje długość życia ponad 12\u00a0lat (PetMD i WebMD: 13–15\u00a0lat).",
+        "Wzorzec FCI opisuje odważnego i dostojnego teriera miniaturowego, nieustępującego nikomu jako towarzysz. The Royal Kennel Club zaleca do 30\u00a0minut ruchu dziennie i codzienną pielęgnację sierści oraz pisze, że rasa nadaje się do mieszkania. PetMD mówi, że silky teriery dobrze dogadują się z innymi zwierzętami i dziećmi, jeśli w młodym wieku zostaną właściwie zsocjalizowane. Zaleca zajęcia socjalizacyjne przed ukończeniem 16. tygodnia życia, czyszczenie uszu co dwa–trzy tygodnie oraz trzymanie psa na smyczy lub na ogrodzonym terenie z powodu jego instynktu łowieckiego. WebMD radzi codziennie myć zęby i kąpać psa mniej więcej raz w miesiącu.",
+      ],
+      sources: ["S855", "S856", "S857", "S858", "S10"],
+    },
+    parson_russell_terrier: {
+      aka: "Parson Jack Russell Terrier, Parson Terrier, PRT, Parson Russell terrier",
+      text: [
+        "Parson Russell terrier to zwinny, aktywny i o użytkowej budowie terier pracujący z Wielkiej Brytanii, pierwotnie hodowany do pracy przy lisach (FCI: grupa 3, teriery, sekcja teriery duże i średnie). To inna rasa niż jack russell terrier: Kennel Club uznał ją po raz pierwszy w 1990 roku jako Parson Jack Russell Terrier. Wzorzec FCI wymaga psa białego lub w przeważającej części białego, ze znaczeniami podpalanymi, cytrynowymi lub czarnymi albo z dowolnym połączeniem tych barw, o sierści szorstkiej, łamanej lub gładkiej, oraz idealnej wysokości 36\u00a0cm u psów i 33\u00a0cm u suk. PDSA podaje przeciętną masę ciała 6–8\u00a0kg. Pies tej wielkości kończy rosnąć w wieku około 9–12\u00a0miesięcy (PetMD), a The Royal Kennel Club podaje długość życia ponad 12\u00a0lat (WebMD: 13–15\u00a0lat).",
+        "Wzorzec FCI nazywa rasę śmiałą i przyjazną. The Royal Kennel Club zaleca do godziny ruchu dziennie i pielęgnację sierści raz w tygodniu. PDSA pisze, że te psy są pełne energii i idealnie potrzebują 1–2 godzin ruchu dziennie, dobrze dogadują się z dziećmi, są doskonałymi zwierzętami rodzinnymi, a z innymi zwierzętami w domu trzeba je oswajać od młodego wieku. PetMD zauważa, że niektóre mają silny instynkt łowiecki, i zaleca codzienne mycie zębów, czyszczenie uszu co dwa tygodnie oraz kąpiel co dwa–cztery tygodnie; WebMD dodaje, że nie lubią zostawać same i mogą mieć lęk separacyjny.",
+      ],
+      sources: ["S864", "S865", "S866", "S867", "S868", "S10"],
+    },
+    wire_fox_terrier: {
+      aka: "Fox Terrier (Wire), Wire Hair Fox Terrier, Wirehaired Fox Terrier, Fox Terrier, foksterier szorstkowłosy",
+      text: [
+        "Fox terrier szorstkowłosy to aktywny i żywy terier z Wielkiej Brytanii (FCI: grupa 3, teriery, sekcja teriery duże i średnie) – nie należy go mylić z toy fox terrierem. Wzorzec FCI wymaga kośćca i siły zamkniętych w niewielkiej sylwetce, bez ociężałości i grubości, gęstej, bardzo drucianej sierści z miększym podszerstkiem, przewagi bieli ze znaczeniami czarnymi, czarno-podpalanymi lub podpalanymi oraz wysokości w kłębie nieprzekraczającej 39\u00a0cm u psów, a u suk nieco mniejszej. Według wzorca AKC pies w kondycji wystawowej waży 18\u00a0funtów, a suka około dwóch funtów mniej, z tolerancją funta w obie strony (ok. 7,7–8,6\u00a0kg u psów i 6,8–7,7\u00a0kg u suk). Pies tej wielkości kończy rosnąć w wieku około 9–12\u00a0miesięcy (PetMD), a The Royal Kennel Club podaje długość życia ponad 12\u00a0lat (PetMD: 12–15\u00a0lat).",
+        "Wzorzec FCI nazywa rasę przyjazną, otwartą i nieustraszoną. The Royal Kennel Club zaleca do godziny ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu. PDSA pisze, że fox teriery uwielbiają się bawić i zwiedzać, są doskonałymi zwierzętami rodzinnymi, a sierść trzeba pielęgnować raz lub dwa razy w tygodniu. WebMD nazywa je świetnymi towarzyszami dla dzieci, ale radzi zawsze je nadzorować przy małych dzieciach. Według PetMD przy małych zwierzętach trzeba je pilnować z powodu silnego instynktu łowieckiego; zaleca też dobrze zsocjalizować szczenię, codziennie myć zęby, kąpać psa mniej więcej raz w miesiącu i trymować sierść ręcznie trzy–cztery razy w roku. WebMD radzi obcinać pazury mniej więcej raz w miesiącu.",
+      ],
+      sources: ["S871", "S872", "S873", "S874", "S875", "S876", "S10"],
+    },
+    manchester_terrier: {
+      aka: "Manchester Terrier (Standard), Black and Tan Terrier, Manchester, terier manchesterski",
+      text: [
+        "Manchester terrier to zwarty, elegancki terier z Wielkiej Brytanii (FCI: grupa 3, teriery, sekcja teriery duże i średnie) – w rozmiarze standardowym, nie miniaturowym. Wzorzec FCI wymaga psa zwartego, eleganckiego i zdrowego, o solidnej budowie, z przylegającą, gładką, krótką i lśniącą sierścią wyłącznie w kolorze głęboko czarnym z bogatym, mahoniowym podpaleniem; podaje idealną wysokość w kłębie 41\u00a0cm u psów i 38\u00a0cm u suk. Wzorzec Canadian Kennel Club podaje masę ciała od 5,5 do 10\u00a0kg (od 12 do 22\u00a0funtów). Pies tej wielkości kończy rosnąć w wieku około 9–12\u00a0miesięcy (PetMD), a PDSA podaje długość życia ponad 12\u00a0lat (WebMD: od 15 do 17\u00a0lat).",
+        "Wzorzec FCI nazywa rasę żywą, czujną, wesołą i sportową, bystrą i oddaną. PDSA zaleca do godziny ruchu dziennie i pisze, że zwykle wystarczy szczotkowanie raz w tygodniu. PetMD mówi, że manchester teriery dobrze dogadują się z dziećmi, zwłaszcza gdy poznają je jako szczenięta, i zaleca socjalizować szczenię od pierwszego dnia w domu. Zauważa też silny instynkt łowiecki, który wynika z historii tępienia szczurów, więc te psy mogą nie pasować do domów z chomikami czy myszoskoczkami. WebMD radzi nigdy nie zostawiać małych dzieci z psami bez nadzoru, zaleca codzienne mycie zębów i pisze, że rasa źle znosi zimno, więc może się przydać kubraczek lub sweterek.",
+      ],
+      sources: ["S888", "S889", "S890", "S891", "S892", "S10"],
+    },
+    tibetan_terrier: {
+      aka: "Tibet Terrier, terier tybetański",
+      text: [
+        "Terier tybetański to krzepki, średniej wielkości, długowłosy pies do towarzystwa z Tybetu (FCI: grupa 9, psy do towarzystwa i ozdobne, sekcja rasy tybetańskie) – terierem jest tylko z nazwy. Wzorzec FCI wymaga sylwetki z grubsza kwadratowej, podwójnej okrywy z obfitym, cienkim, długim włosem okrywowym, prostym lub falistym, zwisających uszu z frędzlami i ogona noszonego zwiniętego nad grzbietem; dopuszczalne jest każde umaszczenie oprócz czekoladowego, wątrobianego i merle. Psy mają 36–41\u00a0cm w kłębie, suki są nieco mniejsze. Wzorzec Canadian Kennel Club podaje masę ciała od 8,25 do 13,5\u00a0kg (od 18 do 30\u00a0funtów). Pies tej wielkości kończy rosnąć w wieku około 12–15\u00a0miesięcy (PetMD), a PDSA podaje długość życia ponad 12\u00a0lat (PetMD: 15–16\u00a0lat).",
+        "Wzorzec FCI nazywa rasę żywą i dobroduszną, towarzyską, czujną i inteligentną, ale oszczędną w okazywaniu uczuć obcym. PDSA opisuje teriery tybetańskie jako łagodne, przyjazne i czułe psy, które są dobrymi zwierzętami rodzinnymi, zaleca około godziny ruchu dziennie i pisze, że sierść trzeba pielęgnować codziennie. PetMD zauważa, że zostawione na długo same mogą rozwinąć lęk separacyjny, i zaleca zajęcia socjalizacyjne dla szczeniaka przed ukończeniem 16. tygodnia życia. Pisze też, że mogą dobrze dogadywać się z małymi dziećmi i innymi psami, jeśli pierwsze kontakty odbywają się pod nadzorem, podczas gdy według WebMD niektóre osobniki gorzej radzą sobie z małymi dziećmi i innymi psami. WebMD zaleca codzienne mycie zębów.",
+      ],
+      sources: ["S904", "S905", "S906", "S907", "S909", "S10"],
+    },
+    greyhound: {
+      aka: "English Greyhound, chart angielski",
+      text: [
+        "Greyhound, czyli chart angielski, to duży chart z Wielkiej Brytanii; FCI zalicza go do grupy 10, wśród chartów krótkowłosych. Wzorzec FCI opisuje psa mocno zbudowanego, wysokiego, o hojnych proporcjach, muskularnej sile i symetrycznej budowie, inteligentnego, łagodnego, czułego i zrównoważonego, z cienką, przylegającą sierścią w kolorze czarnym, białym, rudym, niebieskim, płowym, płowo-żółtym lub pręgowanym albo w dowolnym z tych kolorów łamanym bielą; podaje idealną wysokość 71–76\u00a0cm u psów i 68–71\u00a0cm u suk. Według wzorca AKC masa ciała wynosi od 65 do 70\u00a0funtów (ok. 29,5–31,8\u00a0kg) u psów i od 60 do 65\u00a0funtów (ok. 27,2–29,5\u00a0kg) u suk. Pies tej wielkości kończy rosnąć w wieku około 15–18\u00a0miesięcy (PetMD). Brytyjskie badanie VetCompass nad chartami pod opieką weterynaryjną wykazało medianę długowieczności 11,4 roku, a PDSA podaje długość życia ponad 10\u00a0lat.",
+        "PDSA pisze, że charty angielskie nie mają przesadnej energii: potrzebują około godziny ruchu dziennie i wolą parę dobrych biegów niż kilometry spacerów, a ich krótką sierść wystarczy pielęgnować raz w tygodniu. Przy właściwej socjalizacji w okresie szczenięcym mogą być dobrymi zwierzętami rodzinnymi, ale mają silny instynkt pogoni – PetMD pisze, że ich bardzo silny instynkt łowiecki sprawia, że źle pasują do domów z kotami i innymi małymi zwierzętami. WebMD zaleca codzienne mycie zębów i zauważa, że bez izolującego podszerstka charty mogą być wrażliwe na skrajne temperatury.",
+      ],
+      sources: ["S912", "S913", "S914", "S916", "S917", "S918", "S920", "S10"],
+    },
+    xoloitzcuintli: {
+      aka: "Xoloitzcuintle, Xolo, Mexican Hairless Dog, Mexican Hairless, meksykański pies bezwłosy",
+      text: [
+        "Xoloitzcuintle (xolo) to starożytny pies pierwotnego typu z Meksyku; FCI zalicza go do grupy 5, wśród psów typu pierwotnego. Wzorzec FCI opisuje psa cichego i spokojnego, pogodnego, czujnego i inteligentnego, nigdy agresywnego, w dwóch odmianach, które różnią się tylko okrywą i uzębieniem: bezwłosej, z gładką, nagą skórą, oraz owłosionej, z krótką, przylegającą sierścią. Występuje w trzech rozmiarach – 25–35\u00a0cm, 35–45\u00a0cm i 46–60\u00a0cm w kłębie – oraz w umaszczeniu czarnym, czarnoszarym, łupkowoszarym, ciemnoszarym, rudawym, wątrobianym, brązowym lub blond, przy czym preferowana jest jednolita, ciemna skóra. WebMD podaje masę ciała od 10 do 15\u00a0funtów dla rozmiaru toy, od 15 do 30 dla miniaturowego i od 30 do 55\u00a0funtów dla standardowego (ok. 4,5–24,9\u00a0kg dla wszystkich rozmiarów). Pies w rozmiarze standardowym kończy rosnąć w wieku około 12–15\u00a0miesięcy (PetMD). PetMD i WebMD podają długość życia 13–18\u00a0lat.",
+        "PetMD pisze, że xolo potrzebują około 20\u00a0minut ruchu dziennie. Naga skóra wymaga szczególnej troski: PetMD radzi przed wyjściem na dwór używać kremu przeciwsłonecznego dla psów, nigdy ludzkiego, a VCA zauważa, że rasa najlepiej czuje się w ciepłym klimacie, a w chłodniejsze dni potrzebuje swetra. WebMD nazywa xolo dobrym psem dla rodzin z dziećmi i zaleca mycie zębów dwa–trzy razy w tygodniu. PetMD dodaje, że kontakty z dziećmi zawsze powinny odbywać się pod nadzorem, szczenięta trzeba socjalizować, by nie wyrosły na nieufne wobec nowych osób, a rasa ma silny instynkt łowiecki wobec małych zwierząt.",
+      ],
+      sources: ["S923", "S924", "S926", "S927", "S928", "S10"],
+    },
+    spinone_italiano: {
+      aka: "Italian Spinone, Spinone, Spinoni, Italian Griffon, Italian Wire-haired Pointer, spinone włoski",
+      text: [
+        "Spinone włoski (Spinone Italiano) to włoski pies myśliwski wystawiający zwierzynę; FCI zalicza go do grupy 7, wśród wyżłów kontynentalnych typu gryfon. Wzorzec FCI opisuje psa o solidnej budowie, krzepkiego i żywotnego, z mocnym kośćcem i szorstką sierścią, z natury towarzyskiego, uległego i cierpliwego, a przy tym doświadczonego myśliwego w każdym terenie. Umaszczenie to czysta biel, biel z pomarańczowymi znaczeniami, pomarańczowa srokacizna, biel z brązowymi znaczeniami i brązowa srokacizna. Wzorzec FCI podaje wysokość 60–70\u00a0cm u psów i 58–65\u00a0cm u suk oraz masę ciała 32–37\u00a0kg u psów i 28–30\u00a0kg u suk. Pies tej wielkości kończy rosnąć w wieku około 15–18\u00a0miesięcy (PetMD). PDSA podaje długość życia ponad 10\u00a0lat, a PetMD 10–12\u00a0lat.",
+        "PDSA nazywa spinone rasą pełną energii, która idealnie potrzebuje ponad dwóch godzin ruchu dziennie, i pisze, że gęstą, częściowo drucianą sierść trzeba pielęgnować w domu dwa–trzy razy w tygodniu. WebMD zaleca cotygodniowe obcinanie pazurów i codzienne mycie zębów, pisze, że rasa zwykle dobrze dogaduje się z innymi psami i dziećmi, i ostrzega, że długie zostawianie psa samego często kończy się kłopotami. PetMD radzi wcześnie socjalizować szczenięta, na dworze trzymać psa na smyczy lub na ogrodzonym terenie i nie pozwalać mu na wysiłek na godzinę przed jedzeniem i po nim z powodu ryzyka skrętu żołądka.",
+      ],
+      sources: ["S935", "S936", "S937", "S938", "S10"],
+    },
+    pointer: {
+      aka: "English Pointer, pointer angielski",
+      text: [
+        "Pointer to brytyjski pies myśliwski wystawiający zwierzynę; FCI zalicza go do grupy 7, wśród wyżłów i seterów brytyjskich i irlandzkich. Wzorzec FCI opisuje psa symetrycznego, dobrze zbudowanego, o sylwetce z wdzięcznymi krzywiznami, mocnego, ale giętkiego, czujnego i o łagodnym, zrównoważonym usposobieniu, z cienką, krótką, twardą sierścią o wyraźnym połysku. Zwykle występuje w kolorach cytrynowo-białym, pomarańczowo-białym, wątrobiano-białym i czarno-białym. Wzorzec FCI podaje wysokość 63–69\u00a0cm u psów i 61–66\u00a0cm u suk; według wzorca UKC masa ciała w pracy wynosi 55–75\u00a0funtów (ok. 25–34\u00a0kg) u psów i 44–65\u00a0funtów (ok. 20–29,5\u00a0kg) u suk. Pies tej wielkości kończy rosnąć w wieku około 15–18\u00a0miesięcy (PetMD). PDSA podaje długość życia ponad 12\u00a0lat, a PetMD 10–12\u00a0lat.",
+        "PDSA pisze, że pointery mają dużo energii i idealnie potrzebują ponad dwóch godzin ruchu dziennie, wymagają aktywnych właścicieli i dobrego szkolenia przywołania, a ich krótką sierść wystarczy pielęgnować raz w tygodniu. PetMD radzi trzymać je na ogrodzonym podwórku, żeby nie uciekały, i zaznacza, że mogą zagrażać ptakom domowym; WebMD zaleca codzienne mycie zębów i pisze, że nie radzą sobie szczególnie dobrze z małymi dziećmi. PDSA dodaje, że jak w przypadku każdej rasy, właściwa socjalizacja w okresie szczenięcym pomaga im dobrze odnaleźć się w życiu rodzinnym.",
+      ],
+      sources: ["S943", "S944", "S945", "S946", "S947", "S10"],
+    },
+    welsh_terrier: {
+      aka: "Welshie, Welsh, terier walijski",
+      text: [
+        "Welsh terrier to terier z Wielkiej Brytanii; FCI zalicza go do grupy 3, wśród terierów dużych i średnich. Wzorzec FCI opisuje psa schludnego, pracowitego, dobrze zrównoważonego i zwartego, z drucianą, twardą, bardzo przylegającą i obfitą sierścią – czułego, posłusznego i łatwego w prowadzeniu, radosnego i rzadko lękliwego. Umaszczenie jest czarne podpalane lub czarno-pieprzowe podpalane. Wzorzec FCI podaje wysokość do 39\u00a0cm i masę ciała 9–9,5\u00a0kg (20–21\u00a0funtów). Pies tej wielkości kończy rosnąć w wieku około 9–12\u00a0miesięcy (PetMD). The Royal Kennel Club i PDSA podają długość życia ponad 12\u00a0lat, a PetMD 12–15\u00a0lat.",
+        "The Royal Kennel Club pisze, że welsh terrier potrzebuje do godziny ruchu dziennie i pielęgnacji sierści częściej niż raz w tygodniu; PDSA zaleca około godziny ruchu dziennie i pielęgnację dwa–trzy razy w tygodniu oraz opisuje zabawnego, przyjaznego psa, który uwielbia dzieci i jest doskonałym zwierzęciem rodzinnym. PetMD zauważa silny instynkt łowiecki – mniejsze zwierzęta mogą być przez niego ścigane – i radzi wychodzić na smyczy lub na ogrodzony teren oraz zacząć socjalizację i szkolenie od małego.",
+      ],
+      sources: ["S955", "S956", "S957", "S958", "S10"],
+    },
+    american_hairless_terrier: {
+      aka: "AHT, Hairless Terrier, amerykański terier bezwłosy",
+      text: [
+        "Amerykański terier bezwłosy to mały lub średni, gładko umięśniony i aktywny terier z USA, uznany przez American Kennel Club w grupie terierów; FCI go nie wymienia. Wzorzec rasy opisuje psa energicznego, czujnego, ciekawskiego i inteligentnego, z uszami w kształcie litery V i naturalnym ogonem, którego nigdy się nie kupiruje. Występują dwie odmiany: bezwłosa, pozbawiona sierści z wyjątkiem wibrys oraz włosów nad oczami i na pysku, oraz owłosiona, z krótką, gładką sierścią. Wzorzec podaje idealną wysokość 12–16\u00a0cali (30–41\u00a0cm); PetMD podaje masę ciała 12–28\u00a0funtów (5,4–12,7\u00a0kg) i długość życia 14–16\u00a0lat, a pies tej wielkości kończy rosnąć w wieku około 9–12\u00a0miesięcy (PetMD).",
+        "Według Dogs NSW pies potrzebuje około 20\u00a0minut ruchu dziennie, a PetMD pisze, że regularny ruch i praca dla głowy są dla tej rasy koniecznością; nazywa ją świetnymi partnerami do zabawy dla dzieci, z nadzorem przy małych dzieciach. Naga skóra wymaga szczególnej troski: klub rasy mówi, że krem przeciwsłoneczny lub ochronna odzież są konieczne, by zapobiec poparzeniom słonecznym, PetMD radzi sweterek na zimno i regularne kąpiele, najlepiej co tydzień, WebMD zaleca codzienne mycie zębów, a klub rasy cotygodniowe obcinanie pazurów. Klub rasy zauważa również silny instynkt łowiecki.",
+      ],
+      sources: ["S967", "S971", "S972", "S973", "S977", "S10"],
+    },
+    tibetan_spaniel: {
+      aka: "Tibbie, Tibetan Spaniel, spaniel tybetański",
+      text: [
+        "Spaniel tybetański to mały, aktywny i czujny pies do towarzystwa z Tybetu (Chiny), w grupie FCI psów do towarzystwa i ozdobnych, w sekcji ras tybetańskich; krajem patronackim rasy jest Wielka Brytania. Wzorzec FCI opisuje go jako wesołego i pewnego siebie, bardzo inteligentnego i zdystansowanego wobec obcych, czujnego, lojalnego, ale niezależnego, nieco dłuższego niż wyższego, z jedwabistą sierścią średniej długości, uszami z frędzlami i bogato owłosionym ogonem noszonym zwiniętym nad grzbietem; dopuszczalne są wszystkie umaszczenia z wyjątkiem merle. Wzorzec podaje wysokość około 25,4\u00a0cm i idealną masę ciała 4,1–6,8\u00a0kg; pies tej wielkości kończy rosnąć w wieku około 9–12\u00a0miesięcy (PetMD). W dużym brytyjskim badaniu (McMillan i in., 2024) rasa należała do najdłużej żyjących, z medianą 15,2 roku; PDSA podaje długość życia ponad 12\u00a0lat.",
+        "PDSA pisze, że spaniele tybetańskie potrzebują około godziny ruchu dziennie, chętnie włączają się do rodzinnych zabaw, zwykle dobrze dogadują się ze wszystkimi i są dobrymi zwierzętami rodzinnymi, a pielęgnacja parę razy w tygodniu zwykle wystarcza. WebMD mówi, że są podatne na lęk separacyjny i lepiej pasują do rodzin ze starszymi dziećmi, potrzebują bezpiecznie ogrodzonego podwórka i w upały mogą się przegrzewać; radzi codziennie myć zęby, co najmniej raz w tygodniu sprawdzać uszy, co miesiąc sprawdzać pazury i kąpać psa mniej więcej raz w miesiącu.",
+      ],
+      sources: ["S980", "S981", "S982", "S771", "S10"],
+    },
+    black_russian_terrier: {
+      aka: "Russian Black Terrier, Russian Terrier, Tchiorny Terrier, BRT, czarny terier rosyjski",
+      text: [
+        "Czarny terier rosyjski to duży, krzepki i bardzo wysportowany pies pracujący z Rosji, zaliczany w FCI do grupy pinczerów i sznaucerów. Wzorzec FCI opisuje go jako godnego, pewnego siebie i dobrze kontrolowanego, życzliwego, niewymagającego, bystrego i przyjaznego, z szorstką, gęstą, podwójną okrywą tworzącą obfite brwi, wąsy i brodę; jedyne dopuszczalne umaszczenia to czarne i czarne z domieszką siwych włosów. Wzorzec podaje 72–76\u00a0cm i 50–60\u00a0kg u psów oraz 68–72\u00a0cm i 45–50\u00a0kg u suk; pies tej wielkości zwykle osiąga dorosłą masę ciała w wieku 18–24\u00a0miesięcy. The Royal Kennel Club podaje długość życia ponad 10\u00a0lat.",
+        "The Royal Kennel Club wymienia ponad dwie godziny ruchu i codzienną pielęgnację sierści, duży dom z ogrodem oraz sierść, która nie linieje. PetMD pisze, że rasa jest oddana rodzinie i może dobrze dogadywać się z dziećmi pod nadzorem, że ważna jest wczesna i konsekwentna socjalizacja i że z powodu skrętu żołądka należy unikać intensywnego wysiłku tuż przed posiłkami i tuż po nich. VCA wymienia starsze dzieci jako idealne towarzystwo i zaleca strzyżenie u profesjonalnego groomera co sześć–osiem tygodni.",
+      ],
+      sources: ["S985", "S986", "S989", "S990", "S10"],
+    },
+    neapolitan_mastiff: {
+      aka: "Mastino Napoletano, Neo, Neapolitan, Italian Mastiff, mastif neapolitański",
+      text: [
+        "Mastif neapolitański (Mastino Napoletano) to duży, ciężki i masywny pies stróżujący z Włoch; FCI zalicza go do grupy 2, wśród molosów typu mastif. Wzorzec FCI opisuje go jako spokojnego i lojalnego, nieagresywnego, z krótką, twardą, gęstą sierścią i grubą, luźną skórą tworzącą liczne fałdy i zmarszczki, zwłaszcza na głowie. Preferowane umaszczenia to szare, ołowianoszare i czarne, ale dopuszczalne są też brązowe, płowe i ciemnopłowe. Wzorzec podaje 65–75\u00a0cm i 60–70\u00a0kg u psów oraz 60–68\u00a0cm i 50–60\u00a0kg u suk; pies tej wielkości zwykle osiąga dorosłą masę ciała w wieku 18–24\u00a0miesięcy. The Royal Kennel Club i PDSA podają długość życia poniżej 10\u00a0lat, a PetMD zaledwie 7–9\u00a0lat.",
+        "The Royal Kennel Club wymienia do godziny ruchu dziennie, pielęgnację sierści raz w tygodniu, sierść, która linieje, oraz duży dom z ogrodem; w programie Breed Watch umieszcza rasę w kategorii 3. PDSA pisze, że z powodu nadmiaru skóry na pysku występują problemy z powiekami, takie jak entropium i ektropium. Nazywa mastify neapolitańskie lojalnymi, oddanymi psami, które kochają życie rodzinne, i mówi, że fałdy skóry trzeba czyścić codziennie. PetMD pisze, że świetnie sprawdzają się w rodzinach z dziećmi, ale nie należy zostawiać ich samych z małym dzieckiem, że dużo się ślinią oraz że właściwa socjalizacja i szkolenie metodami pozytywnymi powinny zacząć się wcześnie.",
+      ],
+      sources: ["S993", "S994", "S995", "S996", "S10"],
+    },
+    norwegian_elkhound: {
+      aka: "Elkhound, Elkie, Norwegian Elkhound Grey, Norsk Elghund Grå, Norwegian Moose Dog, norweski elkhund szary",
+      text: [
+        "Elkhund szary (norweski elkhund szary) to szary nordycki szpic myśliwski z Norwegii, hodowany do polowania na łosie; FCI zalicza go do grupy 5, wśród nordyckich psów myśliwskich. Wzorzec FCI opisuje typowego szpica – zwartego, krótkiego i kwadratowo zbudowanego, z małymi stojącymi uszami, ogonem ciasno zwiniętym nad grzbietem i gęstą, szorstką sierścią średniej długości – nieustraszonego, energicznego i odważnego. Jedyne umaszczenie dopuszczone przez wzorzec to szare, w różnych odcieniach. Wzorzec FCI podaje idealną wysokość 52\u00a0cm u psów i 49\u00a0cm u suk, a wzorzec AKC masę ciała około 55\u00a0funtów (25\u00a0kg) u psów i około 48\u00a0funtów (22\u00a0kg) u suk. Pies tej wielkości kończy rosnąć w wieku około 12–15\u00a0miesięcy (PetMD), a PetMD i WebMD podają długość życia 12–15\u00a0lat.",
+        "PetMD zaleca godzinę ruchu dziennie i pisze, że rasa potrzebuje pracy dla głowy tak samo jak ruchu fizycznego; nazywa ją świetną wobec dzieci w każdym wieku, jeśli kontakty odbywają się pod nadzorem, i wspaniałym psem rodzinnym, jeśli zostanie zsocjalizowana jako szczenię i wcześnie wyszkolona. PetMD radzi bezpiecznie ogrodzony teren lub smycz na dworze, zauważa silne linienie i to, że gęsta sierść sprawia, iż pies łatwo się przegrzewa; WebMD radzi szczotkować sierść co najmniej dwie minuty dziennie i codziennie myć zęby.",
+      ],
+      sources: ["S960", "S961", "S963", "S964", "S10"],
+    },
+    mudi: {
+      aka: "Hungarian Mudi, węgierski mudi",
+      text: [
+        "Mudi to węgierski pies pasterski; FCI zalicza go do grupy 1, wśród psów pasterskich. Wzorzec FCI opisuje psa średniej wielkości, z głową w kształcie klina, uszami stojącymi i linią grzbietu opadającą ku tyłowi, z gęstą, lśniącą, falistą lub lekko kręconą sierścią – wyjątkowo pojętnego, żywego, odważnego, czujnego i chętnego do pracy. Występuje w kolorach czarnym, białym, płowym, popielatym (niebieskim), wątrobianym, popielato-brązowym i cifra (merle). Wzorzec FCI podaje wysokość 41–47\u00a0cm u psów i 38–44\u00a0cm u suk; PetMD podaje masę ciała 18–29\u00a0funtów (ok. 8–13\u00a0kg). Pies tej wielkości kończy rosnąć w wieku około 12–15\u00a0miesięcy (PetMD). The Royal Kennel Club podaje długość życia ponad 10\u00a0lat, a PetMD 12–14\u00a0lat.",
+        "Według The Royal Kennel Club mudi potrzebuje do godziny ruchu dziennie i pielęgnacji sierści raz w tygodniu, jest lojalny i czuły wobec rodziny oraz potrzebuje ujścia dla energii i inteligencji – najlepiej pasuje do doświadczonego właściciela, który zapewni mu bodźce, strukturę i cel. PetMD opisuje go jako mądrego, niezależnego i szczekliwego psa i mówi, że szczenięta mudi potrzebują socjalizacji od małego, by czuć się swobodnie przy dzieciach, innych zwierzętach i nowych osobach.",
+      ],
+      sources: ["S949", "S950", "S952", "S10"],
+    },
+    lhasa_apso: {
+      aka: "Lhasa, Apso, Lasa Apso",
+      text: [
+        "Lhasa apso to mały pies do towarzystwa z Tybetu; według The Royal Kennel Club tybetańscy mnisi trzymali go pierwotnie jako towarzysza i psa stróżującego. To niewielki pies z długą sierścią; VCA podaje wysokość 10–11\u00a0cali (ok. 25–28\u00a0cm) i masę ciała 13–15\u00a0funtów (ok. 6–7\u00a0kg). Pies tej wielkości kończy rosnąć w wieku około 9–12\u00a0miesięcy (PetMD), a The Royal Kennel Club podaje długość życia ponad 12\u00a0lat.",
+        "The Royal Kennel Club zaleca do godziny ruchu dziennie i codzienną pielęgnację sierści. Według niego rasa nie linieje i nadaje się do mieszkania, a w programie Breed Watch należy do kategorii 1. PDSA pisze, że lhasa apso dobrze dogadują się z dziećmi i innymi zwierzętami w domu, jeśli w okresie szczenięcym zostały właściwie zsocjalizowane, a wobec obcych mogą być nieco bardziej ostrożne. WebMD radzi kąpać psa co najmniej raz na dwa tygodnie, obcinać pazury co 3–4 tygodnie i myć zęby tak regularnie, jak to możliwe.",
+      ],
+      sources: ["S740", "S741", "S742", "S743", "S10"],
+    },
+    coton_de_tulear: {
+      aka: "Coton, Coton de Tuléar, Royal Dog of Madagascar",
+      text: [
+        "Coton de tulear pochodzi z Madagaskaru, pod patronatem Francji; FCI zalicza go do bichonów i ras pokrewnych. Wzorzec FCI opisuje małego, długowłosego psa do towarzystwa z białą sierścią o strukturze bawełny, okrągłymi, ciemnymi oczami i żywym, inteligentnym wyrazem, o wesołym, stabilnym usposobieniu, bardzo towarzyskiego wobec ludzi i innych psów. Podaje wysokość 26–28\u00a0cm u psów i 23–25\u00a0cm u suk oraz masę ciała 4–6\u00a0kg u psów i 3,5–5\u00a0kg u suk; podstawowa barwa sierści jest biała. Pies tej wielkości kończy rosnąć w wieku około 8–12\u00a0miesięcy (PetMD); The Royal Kennel Club podaje długość życia ponad 12\u00a0lat.",
+        "The Royal Kennel Club zaleca do 30\u00a0minut ruchu dziennie i codzienną pielęgnację sierści oraz pisze, że rasa nadaje się do mieszkania i mało linieje. PDSA nazywa coton lojalnymi i kochającymi psami, które rozkwitają w życiu rodzinnym i są doskonałymi zwierzętami rodzinnymi. PetMD mówi, że zwykle dobrze dogadują się z dziećmi i innymi zwierzętami, gdy pierwsze kontakty przebiegają właściwie, mogą rozwinąć lęk separacyjny, jeśli zostają same dłużej niż kilka godzin, i zaleca sprawdzać uszy co najmniej raz w tygodniu oraz kąpać psa mniej więcej raz w miesiącu.",
+      ],
+      sources: ["S10", "S721", "S722", "S724", "S725", "S726"],
+    },
+    chow_chow: {
+      aka: "Chow, Chow-Chow",
+      text: [
+        "Chow chow to zwarty, podobny do lwa szpic z Chin, z gęstą, odstającą sierścią w jednym, jednolitym kolorze: czarnym, rudym, niebieskim, płowym, kremowym lub białym (wzorzec FCI). Wzorzec FCI podaje wysokość 48–56\u00a0cm u psów i 46–51\u00a0cm u suk, a PDSA przeciętną masę ciała 20–30\u00a0kg. Pies tej wielkości kończy rosnąć w wieku około 15–18\u00a0miesięcy (PetMD); PDSA podaje długość życia poniżej 10\u00a0lat, a PetMD 8–12\u00a0lat.",
+        "PDSA pisze, że rasa potrzebuje co najmniej godziny ruchu dziennie, codziennego szczotkowania i przerwy między jedzeniem a ruchem. Opisuje lojalne psy, które w odpowiednim domu mogą być idealnymi zwierzętami, najlepiej u doświadczonych właścicieli; nie poleca rasy do domów z małymi dziećmi, zauważa silny instynkt łowiecki i zaznacza, że chow chow może nie znosić samotności i powinien być dobrze zsocjalizowany od małego. PetMD dodaje, że przez gęstą sierść i krótki pysk łatwiej się przegrzewa.",
+      ],
+      sources: ["S696", "S700", "S701", "S10"],
+    },
+    old_english_sheepdog: {
+      aka: "Bobtail, Bob-tail, OES, Shepherd's Dog",
+      text: [
+        "Owczarek staroangielski (bobtail) to duży, silny, kwadratowo zbudowany pies pasterski z Wielkiej Brytanii, z obfitą, szorstką, kudłatą sierścią: dowolny odcień szarego, „grizzle” lub niebieskiego na tułowiu oraz biała głowa, szyja i przód ciała (wzorzec FCI). Wzorzec FCI podaje wysokość od 61\u00a0cm w górę u psów i od 56\u00a0cm w górę u suk; PDSA podaje przeciętną wysokość 56–61\u00a0cm i przeciętną masę ciała 27–30\u00a0kg. Pies tej wielkości kończy rosnąć w wieku około 15–18\u00a0miesięcy (PetMD); PDSA podaje długość życia ponad 10\u00a0lat, a PetMD 10–12\u00a0lat.",
+        "PDSA pisze, że rasa potrzebuje co najmniej dwóch godzin ruchu dziennie, podzielonych na kilka spacerów, a długą sierść trzeba codziennie szczotkować i mniej więcej co sześć tygodni przycinać u profesjonalnego groomera. Opisuje ugodowe zwierzęta rodzinne, które lepiej pasują do rodzin ze starszymi dziećmi, mogą cierpieć na lęk separacyjny, gdy zostają same, mają silny instynkt pasterski i łowiecki; radzi też robić przerwę między jedzeniem a ruchem.",
+      ],
+      sources: ["S704", "S705", "S706", "S10"],
+    },
+    pekingese: {
+      aka: "Peke, Pekinese, Lion Dog",
+      text: [
+        "Pekińczyk to mały, podobny do lwa piesek ozdobny z Chin, z umiarkowanie długą, prostą sierścią i grzywą wokół szyi. Wzorzec FCI podaje idealną masę ciała nie więcej niż 5\u00a0kg u psów i 5,4\u00a0kg u suk; PDSA podaje przeciętną masę ciała 5\u00a0kg i wysokość 15–22\u00a0cm. Pies tej wielkości kończy rosnąć w wieku około 8–12\u00a0miesięcy (PetMD); PDSA podaje długość życia ponad 12\u00a0lat, a PetMD 12–14\u00a0lat.",
+        "PDSA zaleca co najmniej pół godziny ruchu dziennie, ale bez przesady, bo płaski pysk może utrudniać oddychanie, a w cieplejsze dni nie powinno być żadnego ruchu. Pisze, że długą sierść trzeba codziennie szczotkować, a rasa dużo linieje, zwłaszcza wiosną i jesienią. Zmarszczki na pysku mogą prowadzić do zakażeń fałdów skóry, a pekińczyki lepiej sprawdzają się u dorosłych lub starszych dzieci, mogą cierpieć na lęk separacyjny, gdy zostają same, i powinny być socjalizowane od małego. PetMD radzi codziennie myć zęby, czyścić uszy co tydzień lub dwa oraz przy długiej sierści korzystać z profesjonalnej pielęgnacji co sześć–osiem tygodni.",
+      ],
+      sources: ["S690", "S693", "S694", "S10"],
+    },
   },
 };
 
