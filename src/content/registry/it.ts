@@ -1376,6 +1376,310 @@ const it: RegistryCopy = {
       ],
       sources: ["C13", "C37", "C38"],
     },
+    keeshond: {
+      aka: "Spitz lupo, Keeshond, Wolfspitz, Wolfsspitz, Keeshonden",
+      text: [
+        "Lo spitz lupo, o keeshond, è uno spitz di taglia media originario della Germania: è la varietà Wolfsspitz dello spitz tedesco. Secondo lo standard FCI ha un mantello lungo, dal pelo staccato dal corpo e grigio sfumato, una folta criniera e scure «lenti» intorno agli occhi. L’altezza indicata dallo standard è di 49 ± 6 cm; per la PDSA il peso medio è di 16–20 kg. Un cane di questa taglia finisce di crescere verso i 12–15 mesi (PetMD). La PDSA parla di un’aspettativa di vita di oltre 10 anni, VCA di 12–14 anni.",
+        "La PDSA scrive che la razza ha bisogno fino a un’ora di movimento al giorno e che il fitto doppio mantello va spazzolato ogni giorno. Per la PDSA i keeshond sono ottimi cani di famiglia: vanno d’accordo con gli altri animali di casa e rispondono bene all’addestramento, se si ha tempo e pazienza. VCA li descrive come giocherelloni e attenti con i bambini e consiglia un bagno più o meno una volta al mese. Segnala inoltre una perdita di pelo superiore alla media e un mantello così fitto da renderli inclini al surriscaldamento.",
+      ],
+      sources: ["S246", "S709", "S710", "S10"],
+    },
+    standard_schnauzer: {
+      aka: "Schnauzer medio, Schnauzer, Mittelschnauzer, Standard Schnauzer, Wire-Haired Pinscher",
+      text: [
+        "Lo schnauzer medio è originario della Germania; la FCI lo elenca semplicemente come Schnauzer, tra i pinscher e gli schnauzer. Secondo lo standard FCI è un cane di taglia media e di costruzione forte, più tozzo che slanciato, con un mantello ruvido, duro e fitto, orecchie pendenti e coda naturale. L’altezza è di 45–50 cm e il peso di 14–20 kg, per maschi e femmine; i colori sono sale e pepe e nero puro. Un cane di questa taglia finisce di crescere verso i 12–15 mesi (PetMD). Per il Royal Kennel Club l’aspettativa di vita supera i 10 anni, per VCA è di 12–14 anni.",
+        "Il Royal Kennel Club raccomanda fino a un’ora di movimento al giorno e una cura del mantello più di una volta alla settimana. Secondo il club la razza si adatta a una casa piccola con un giardino piccolo o medio, in città come in campagna. La PDSA descrive cani dolci e pazienti, che vanno d’accordo con i bambini se li conoscono fin da piccoli, e consiglia di spazzolare il mantello due o tre volte alla settimana. VCA osserva che la razza impara in fretta ma si annoia altrettanto in fretta: giochi e trucchi le danno l’attività mentale di cui ha bisogno. PetMD consiglia un bagno al mese, il taglio delle unghie, la pulizia delle orecchie ogni una o due settimane e la toelettatura professionale ogni tre mesi.",
+      ],
+      sources: ["S10", "S711", "S712", "S714", "S715", "S716", "S717"],
+    },
+    english_setter: {
+      aka: "Setter inglese, English Setter, Laverack Setter, Llewellin Setter",
+      text: [
+        "Il setter inglese è un elegante cane da ferma originario della Gran Bretagna, selezionato per trovare la selvaggina da penna. Lo standard FCI descrive un cane di altezza media, dalla linea pulita e dal movimento elegante, con un mantello bianco punteggiato di colore: «belton» blu, arancio, limone o fegato, oppure tricolore. L’altezza è di 65–68 cm per i maschi e 61–65 cm per le femmine; per la PDSA il peso medio è di 22–29 kg. Un cane di questa taglia finisce di crescere verso i 15–18 mesi (PetMD). Per il Royal Kennel Club l’aspettativa di vita supera i 10 anni.",
+        "Il Royal Kennel Club raccomanda più di 2 ore di movimento al giorno e una cura del mantello più di una volta alla settimana. La razza perde il pelo, si adatta a una casa grande con un ampio giardino ed è inserita nella categoria 1 di Breed Watch. La PDSA scrive che i setter inglesi adorano i bambini e gli altri animali, quindi sono perfetti per le famiglie, e consiglia di spazzolarli 2–3 volte alla settimana. PetMD suggerisce un bagno ogni sei-otto settimane e avverte che non amano restare soli a lungo. VCA ricorda la tosatura e la rifinitura del mantello ogni mese.",
+      ],
+      sources: ["S730", "S731", "S732", "S733", "S734", "S10"],
+    },
+    dogue_de_bordeaux: {
+      aka: "Dogue de Bordeaux, Alano di Bordeaux, Mastino francese, Bordeaux Mastiff, French Mastiff, Bordeauxdogge, DDB",
+      text: [
+        "Il dogue de Bordeaux è un potente molossoide originario della Francia. Lo standard FCI lo descrive tozzo, atletico e imponente, calmo, equilibrato e molto legato al suo proprietario, con un mantello fine e corto in tutte le tonalità del fulvo, dal mogano all’isabella. L’altezza è di 60–68 cm per i maschi e 58–66 cm per le femmine; il peso è di almeno 50 kg per i maschi e almeno 45 kg per le femmine. PetMD indica 110–145 libbre (circa 50–66 kg) per i maschi e 99–120 libbre (circa 45–54 kg) per le femmine. Un cane di questa taglia finisce di crescere verso i 18–24 mesi (PetMD). Le fonti non concordano sull’aspettativa di vita: PetMD scrive che di solito vive solo 5–8 anni, mentre per il Royal Kennel Club supera i 10 anni.",
+        "Il Royal Kennel Club raccomanda fino a 1 ora di movimento al giorno e una cura del mantello una volta alla settimana. La razza perde il pelo, si adatta a una casa grande con un ampio giardino ed è inserita nella categoria 3 di Breed Watch. La PDSA scrive che i dogue di solito vanno d’accordo con i bambini più grandi, ma non li consiglia con i bambini piccoli né a chi ha il primo cane. Segnala molta bava e un istinto predatorio molto forte, e consiglia di pulire regolarmente le pieghe del muso e di far passare del tempo tra il pasto e il movimento. PetMD aggiunge che il muso corto può rendere più difficile respirare quando fa caldo.",
+      ],
+      sources: ["S755", "S756", "S757", "S759", "S10"],
+    },
+    flat_coated_retriever: {
+      aka: "Flat coated retriever, Retriever a pelo liscio, Flatcoat, Flattie, Flat-coat",
+      text: [
+        "Il flat coated retriever è un cane da caccia vivace e attivo originario della Gran Bretagna, selezionato per riportare la selvaggina. Secondo lo standard FCI ha un mantello fitto e piatto, con frange ben sviluppate su zampe e coda, solo nero o fegato, e un carattere ottimista, amichevole, sicuro di sé e gentile. L’altezza preferibile è di 59–61,5 cm per i maschi e 56,5–59 cm per le femmine; il peso preferibile è di 27–36 kg per i maschi e 25–32 kg per le femmine. Un cane di questa taglia finisce di crescere verso i 15–18 mesi (PetMD). Per il Royal Kennel Club l’aspettativa di vita è inferiore a 10 anni, mentre uno studio britannico del 2024 presentato da Dogs Trust ha rilevato una mediana di 11,7 anni.",
+        "Il Royal Kennel Club raccomanda più di 2 ore di movimento al giorno e una cura del mantello più di una volta alla settimana. La razza perde il pelo, si adatta a una casa grande con un ampio giardino ed è inserita nella categoria 1 di Breed Watch. PetMD definisce i flat coated retriever ottimi cani di famiglia, che di solito vanno d’accordo con i bambini e con gli altri animali, soprattutto se le presentazioni e la socializzazione sono ben fatte. Consiglia di spazzolarli due volte alla settimana, pulire le orecchie ogni una o due settimane, fare il bagno e tagliare le unghie ogni uno o due mesi, ed evitare il movimento subito prima o subito dopo i pasti.",
+      ],
+      sources: ["S761", "S762", "S763", "S123", "S10"],
+    },
+    border_terrier: {
+      aka: "Border terrier",
+      text: [
+        "Il border terrier è un piccolo terrier da lavoro originario della Gran Bretagna. Lo standard FCI lo definisce essenzialmente un terrier da lavoro, capace di seguire un cavallo, che unisce vivacità e coraggio. Ha un mantello ruvido e fitto con un sottopelo compatto, occhi scuri dall’espressione vivace e piccole orecchie a V. I colori sono rosso, grano, grizzle e focato, oppure blu e focato. Il peso è di 5,9–7,1 kg per i maschi e 5,1–6,4 kg per le femmine. Un cane di questa taglia finisce di crescere verso i 9–12 mesi (PetMD). Per il Royal Kennel Club l’aspettativa di vita supera i 12 anni; uno studio britannico del 2024 (McMillan et al.) ha rilevato una mediana di 14,2 anni.",
+        "Il Royal Kennel Club raccomanda fino a 1 ora di movimento al giorno e una cura del mantello più di una volta alla settimana. La razza perde il pelo, si adatta a un appartamento ed è inserita nella categoria 1 di Breed Watch. La PDSA scrive che, con la giusta socializzazione, i border terrier adorano stare con i bambini di ogni età, ma raccomanda di sorvegliarli. Avverte che possono soffrire di ansia da separazione se restano soli e che hanno un forte istinto predatorio, quindi non devono vivere con conigli, cavie o ratti. Consiglia di spazzolarli un paio di volte alla settimana e di far passare del tempo tra il pasto e il movimento. Woodgreen suggerisce una casa con bambini un po’ più grandi.",
+      ],
+      sources: ["S768", "S769", "S770", "S771", "S773", "S10"],
+    },
+    leonberger: {
+      aka: "Leonberger, Leonberg",
+      text: [
+        "Il leonberger è un cane di grande taglia originario della Germania. Lo standard FCI lo descrive grande, forte e muscoloso ma elegante, con un mantello lungo e aderente, orecchie pendenti e una coda ben frangiata. I colori sono giallo leone, rosso, marrone rossiccio o sabbia, sempre con maschera nera. L’altezza è di 72–80 cm per i maschi e 65–75 cm per le femmine. La PDSA indica un peso medio di 30–50 kg per maschi e femmine e un’aspettativa di vita inferiore a 10 anni. Essendo una razza gigante, finisce di crescere verso i 18–24 mesi (classe di taglia PetMD).",
+        "Il Royal Kennel Club raccomanda più di 2 ore di movimento al giorno e una casa grande con un ampio giardino; la PDSA definisce i leonberger giganti gentili e ottimi cani di famiglia. Woodgreen consiglia di spazzolarli due o tre volte alla settimana. Sempre per Woodgreen, per via della loro taglia l’addestramento e la socializzazione precoci sono essenziali, e faticano a restare soli per lunghi periodi. Uno studio britannico del 2024 (McMillan et al., presentato da Dogs Trust) indica un’aspettativa di vita mediana di 10,0 anni.",
+      ],
+      sources: ["S783", "S781", "S10", "S780", "S784", "S123"],
+    },
+    beauceron: {
+      aka: "Beauceron, Pastore di Beauce, Berger de Beauce, Bas Rouge",
+      text: [
+        "Il beauceron, o berger de Beauce, è un grande cane da pastore francese. Lo standard FCI lo descrive grosso, solido, rustico, potente e muscoloso ma senza pesantezza, con un mantello corto e fitto, una coda con un leggero uncino a J e il doppio sperone sulle zampe posteriori. I colori sono nero e focato oppure arlecchino. L’altezza è di 65–70 cm per i maschi e 61–68 cm per le femmine. Secondo la tabella dei pesi dell’AKC maschi e femmine pesano 70–110 libbre (circa 32–50 kg). Un cane di questa taglia finisce di crescere verso i 15–18 mesi (classe di taglia PetMD). Per il Royal Kennel Club l’aspettativa di vita supera i 10 anni, per PetMD è di 10–12 anni.",
+        "Il Royal Kennel Club definisce il beauceron tranquillo e sicuro di sé, un compagno fedele e un cane da guardia. Raccomanda più di 2 ore di movimento al giorno e una cura del mantello più di una volta alla settimana, indica una casa grande con un ampio giardino e inserisce la razza nella categoria 1 di Breed Watch. PetMD scrive che può andare d’accordo con i bambini piccoli e con gli altri cani se le presentazioni sono sorvegliate. Può essere diffidente con le persone nuove, per cui i cuccioli dovrebbero conoscerne presto; ama stare il più possibile con la sua famiglia. PetMD consiglia di spazzolarlo almeno una volta alla settimana e di evitare il movimento nell’ora prima e nell’ora dopo i pasti.",
+      ],
+      sources: ["S790", "S268", "S10", "S787", "S791"],
+    },
+    bouvier_des_flandres: {
+      aka: "Bovaro delle Fiandre, Bouvier des Flandres, Bouvier, Flanders Cattle Dog, Vlaamse Koehond",
+      text: [
+        "Il bovaro delle Fiandre è un cane da mandriani originario delle Fiandre, tra Belgio e Francia. Lo standard FCI lo descrive corto, compatto e potente, con arti forti e ben muscolosi, e un mantello ruvido, asciutto e leggermente arruffato di circa 6 cm, con baffi e barba folta. Di solito è grigio, tigrato o con sovrapposizione di nero; è ammesso anche il nero uniforme. L’altezza è di 62–68 cm e il peso di circa 35–40 kg per i maschi, 59–65 cm e circa 27–35 kg per le femmine. Un cane di questa taglia finisce di crescere verso i 15–18 mesi (classe di taglia PetMD). Uno studio britannico del 2024 (McMillan et al., presentato da Dogs Trust) indica un’aspettativa di vita mediana di 11,3 anni.",
+        "Il Royal Kennel Club definisce il bovaro forte e versatile, in origine un mandriano. Raccomanda fino a 1 ora di movimento al giorno, una cura del mantello quotidiana e una casa grande con un ampio giardino, e inserisce la razza nella categoria 1 di Breed Watch. PetMD scrive che può andare d’accordo con i bambini piccoli e con gli altri cani di grossa taglia se le presentazioni sono sorvegliate. Sempre secondo PetMD ha un forte istinto predatorio verso gatti e piccoli animali, ha bisogno di socializzazione precoce e tende al sovrappeso. PetMD consiglia di spazzolarlo almeno una o due volte alla settimana, pulire le orecchie ogni due o tre settimane, tagliare le unghie ogni tre o quattro settimane ed evitare il movimento nell’ora prima e nell’ora dopo i pasti.",
+      ],
+      sources: ["S797", "S10", "S123", "S795", "S798"],
+    },
+    borzoi: {
+      aka: "Borzoi, Levriero russo, Russian Wolfhound, Russian Hunting Sighthound, Russkaya Psovaya Borzaya",
+      text: [
+        "Il borzoi, o levriero russo da caccia, è un levriero a pelo lungo originario della Russia, selezionato per inseguire la lepre e la volpe. Lo standard FCI lo descrive di aspetto aristocratico, alto, asciutto e forte, piuttosto alto sulle gambe, con un mantello lungo, setoso e ondulato. Può essere di qualsiasi colore dal bianco al nero, esclusi il marrone, il blu e l’isabella. L’altezza desiderabile è di 75–85 cm per i maschi e 68–78 cm per le femmine. La PDSA indica un peso medio di 27–47 kg per maschi e femmine e un’aspettativa di vita di oltre 10 anni, PetMD di 9–14 anni. Un cane di questa taglia finisce di crescere verso i 15–18 mesi (classe di taglia PetMD).",
+        "La PDSA raccomanda almeno 1 ora di movimento al giorno, divisa in un paio di passeggiate, con il guinzaglio tolto solo in un’area recintata. Scrive che i borzoi hanno un istinto predatorio fortissimo e non sono consigliati con animali più piccoli o bambini piccoli. Sono adatti a proprietari esperti e hanno bisogno di qualcuno a casa per la maggior parte del tempo; vanno socializzati fin da piccoli e spazzolati alcune volte alla settimana, e tra il pasto e il movimento va lasciato un intervallo. PetMD raccomanda di spazzolarli almeno due o tre volte alla settimana e indica la dilatazione gastrica come il problema di salute più comune.",
+      ],
+      sources: ["S802", "S800", "S803", "S10"],
+    },
+    japanese_chin: {
+      aka: "Chin giapponese, Japanese Chin, Japanese Spaniel, Japan Chin, Cane giapponese Chin, Chin",
+      text: [
+        "Il chin giapponese è un piccolo cane da compagnia originario del Giappone. Lo standard del Royal Kennel Club lo descrive come un cagnolino elegante, aristocratico e compatto, con un mantello abbondante, lungo e setoso, nero e bianco oppure rosso e bianco (mai tricolore), un muso corto e largo e uno sguardo di stupore. Il peso ideale è di 1,8–3,2 kg; PetMD indica un’altezza di 8–11 pollici (circa 20–28 cm). Un cane di questa taglia finisce di crescere verso gli 8–12 mesi (classe di taglia PetMD). Uno studio britannico del 2024 (McMillan et al., presentato da Dogs Trust) indica un’aspettativa di vita mediana di 12,5 anni.",
+        "Il Royal Kennel Club raccomanda fino a 30 minuti di movimento al giorno e una cura del mantello più di una volta alla settimana. La razza perde il pelo, si adatta a un appartamento ed è inserita nella categoria 1 di Breed Watch. PetMD scrive che il chin giapponese è una razza dal muso piatto (brachicefala): può avere difficoltà a respirare e si surriscalda facilmente, perciò con il caldo o l’umidità il movimento va fatto nelle ore più fresche. Di solito va d’accordo con i bambini se le interazioni sono sorvegliate, può soffrire di ansia da separazione e dovrebbe frequentare presto un corso di socializzazione. PetMD consiglia di spazzolarlo una o due volte alla settimana, pulire le orecchie ogni due o tre settimane e fare il bagno circa una volta al mese.",
+      ],
+      sources: ["S806", "S10", "S123", "S805", "S809"],
+    },
+    miniature_bull_terrier: {
+      aka: "Bull terrier miniatura, Miniature Bull Terrier, Mini Bull Terrier, Mini Bull, English Miniature Bull Terrier",
+      text: [
+        "Il bull terrier miniatura è un piccolo terrier originario della Gran Bretagna. La FCI lo elenca tra i terrier di tipo bull; il Royal Kennel Club scrive che fu riconosciuto come varietà a sé nel 1943, selezionato da bull terrier più piccoli per restare sotto i 35,5 cm (14 pollici). PetMD indica un’altezza di 10–14 pollici (circa 25–36 cm) e un peso di 18–28 libbre (circa 8–13 kg). Un cane di questa taglia finisce di crescere verso i 9–12 mesi (classe di taglia PetMD). Per il Royal Kennel Club l’aspettativa di vita supera i 10 anni, per PetMD è di 11–13 anni.",
+        "Il Royal Kennel Club descrive la razza come coraggiosa, piena di spirito e dall’indole allegra. Raccomanda fino a 1 ora di movimento al giorno e una cura del mantello una volta alla settimana, indica che perde il pelo e la include tra le razze autoctone vulnerabili («Vulnerable Native Breeds»). PetMD scrive che i bull terrier miniatura di solito sono affettuosi e buoni con i bambini, compagni di famiglia amichevoli, e possono andare d’accordo con altri animali se ben socializzati. Hanno bisogno di movimento regolare e stimoli mentali e non stanno bene se restano soli per lunghi periodi. PetMD raccomanda la socializzazione precoce e una spazzolatura circa una volta alla settimana.",
+      ],
+      sources: ["S818", "S820", "S821", "S10"],
+    },
+    schipperke: {
+      aka: "Schipperke, Little Captain, Little Black Devil, Spitzke",
+      text: [
+        "Lo schipperke è un piccolo cane da pastore originario del Belgio. La FCI lo colloca tra i cani da pastore e il suo standard lo descrive di tipo lupoide, di dimensioni ridotte ma di costruzione molto solida, interamente nero, con collare, criniera e «calzoni». Lo standard FCI indica un peso di 3–9 kg (si cerca una media di 4–7 kg), PetMD un’altezza di 10–13 pollici (circa 25–33 cm). Un cane di questa taglia finisce di crescere verso i 9–12 mesi (classe di taglia PetMD). Un ampio studio britannico (McMillan et al. 2024) ha rilevato un’aspettativa di vita mediana di 14,2 anni; per il Royal Kennel Club supera i 12 anni.",
+        "Lo standard FCI definisce lo schipperke un eccellente piccolo cane da guardia, pieno di vitalità, distaccato con gli estranei e molto dolce con i bambini. Il Royal Kennel Club raccomanda fino a 1 ora di movimento al giorno e una cura del mantello più di una volta alla settimana. La razza perde il pelo, si adatta a un appartamento ed è inserita nella categoria 1 di Breed Watch. PetMD scrive che gli schipperke hanno bisogno di attività che tengano occupati mente e corpo, che sono intelligenti ma testardi e che alcuni mantengono un forte istinto predatorio. Raccomanda la socializzazione precoce, la pulizia dei denti ogni giorno e quella delle orecchie ogni due settimane; VCA consiglia di spazzolarli almeno due volte alla settimana.",
+      ],
+      sources: ["S824", "S825", "S826", "S827", "S828", "S771", "S10"],
+    },
+    belgian_tervuren: {
+      aka: "Pastore belga tervuren, Tervuren, Tervueren, Belgian Tervuren, Terv, Belgian Shepherd Dog (Tervueren)",
+      text: [
+        "Il pastore belga tervuren è la varietà a pelo lungo e fulva del pastore belga, un cane da pastore originario del Belgio; la FCI riconosce un’unica razza, il pastore belga, con quattro varietà. Lo standard FCI lo descrive di proporzioni armoniose, con eleganza e potenza insieme, e un mantello lungo che forma un collare, «calzoni» e una coda a pennacchio. Per il tervuren ammette solo il fulvo o il grigio con sovrapposizione di nero e una maschera nera (si preferisce il fulvo). L’altezza è di circa 62 cm per i maschi e 58 cm per le femmine, il peso di circa 25–30 kg per i maschi e 20–25 kg per le femmine. Un cane di questa taglia finisce di crescere verso i 12–15 mesi (classe di taglia PetMD). Per il Royal Kennel Club l’aspettativa di vita supera i 10 anni, per PetMD è di 12–14 anni.",
+        "Lo standard FCI definisce il pastore belga un cane vigile e attivo, pieno di energia, che non mostra né paura né aggressività. Il Royal Kennel Club raccomanda più di 2 ore di movimento al giorno e una cura del mantello più di una volta alla settimana. La razza perde il pelo, si adatta a una casa grande con un ampio giardino ed è inserita nella categoria 1 di Breed Watch. PetMD scrive che i tervuren si legano molto alla famiglia, hanno bisogno di tanta attività fisica e stimoli mentali e possono provare a radunare bambini e animali più piccoli. Raccomanda la socializzazione precoce, la spazzolatura settimanale (quasi quotidiana durante la muta), la pulizia delle orecchie ogni una o due settimane e un bagno ogni quattro-sei settimane.",
+      ],
+      sources: ["S312", "S313", "S830", "S832", "S10"],
+    },
+    toy_fox_terrier: {
+      aka: "Toy fox terrier, American Toy Terrier, Amertoy, TFT",
+      text: [
+        "Il toy fox terrier è un piccolo terrier americano del gruppo Toy dell’AKC. Lo standard AKC lo descrive come un cane toy ben equilibrato dall’aspetto atletico, con un mantello corto e satinato, orecchie erette e appuntite e un corpo in gran parte bianco con la testa tricolore, bianca e focata, bianca e nera oppure bianca, cioccolato e focata. PetMD indica un peso di 4–9 libbre (circa 1,8–4 kg) e un’altezza di 8,5–11,5 pollici (circa 21–29 cm). Un cane di questa taglia finisce di crescere verso gli 8–12 mesi (PetMD). Per PetMD e WebMD l’aspettativa di vita è di 13–15 anni.",
+        "Lo standard AKC definisce il toy fox terrier intelligente, vigile, amichevole e fedele ai suoi proprietari. PetMD raccomanda almeno un’ora di movimento ogni giorno, la spazzolatura una o due volte alla settimana, l’addestramento e la socializzazione precoci, e ricorda che la razza ha ancora un forte istinto predatorio. WebMD scrive che i toy fox terrier sono ottimi compagni per bambini più grandi e rispettosi, ma non sono consigliati alle famiglie con bambini piccoli. Possono mostrare ansia da separazione se restano soli a lungo. WebMD raccomanda di lavare i denti ogni giorno, pulire le orecchie ogni settimana e tagliare le unghie ogni mese.",
+      ],
+      sources: ["S833", "S834", "S835", "S10"],
+    },
+    gordon_setter: {
+      aka: "Setter Gordon, Gordon Setter, Black and Tan Setter, Scottish Setter, Gordon",
+      text: [
+        "Il setter Gordon è un cane da ferma di grande taglia, nero focato, originario della Scozia (FCI gruppo 7, cani da ferma; paese d’origine Gran Bretagna). Lo standard FCI lo descrive elegante, dalle linee da galoppatore, con un mantello profondo e lucido nero carbone e focature rosso castano. L’altezza è di 66 cm e il peso di 29,5 kg per i maschi, 62 cm e 25,5 kg per le femmine. Un cane di questa taglia finisce di crescere verso i 15–18 mesi (PetMD). Per il Royal Kennel Club l’aspettativa di vita supera i 10 anni.",
+        "Lo standard FCI definisce il setter Gordon audace, estroverso e di indole gentile ed equilibrata; la PDSA descrive una razza amichevole e intelligente a cui piace essere tenuta occupata. Il Royal Kennel Club raccomanda più di due ore di movimento al giorno e una casa grande con un ampio giardino. Secondo la PDSA il mantello folto va spazzolato ogni giorno. PetMD consiglia di limitare il movimento nell’ora prima e dopo i pasti e di socializzare presto i cuccioli. Per l’istinto predatorio molto sviluppato della razza, suggerisce di curare in modo particolare l’addestramento al richiamo. WebMD raccomanda di lavare i denti ogni giorno e di fare il bagno circa una volta al mese, e dice che la razza è solo moderatamente adatta ai bambini piccoli.",
+      ],
+      sources: ["S841", "S842", "S843", "S844", "S845", "S10"],
+    },
+    afghan_hound: {
+      aka: "Levriero afgano, Afghan Hound, Afgano, Tazi, Baluchi Hound",
+      text: [
+        "Il levriero afgano è un levriero alto e a pelo lungo originario dell’Afghanistan (FCI gruppo 10, levrieri; paese d’origine Afghanistan, con patrocinio britannico). Lo standard FCI lo descrive come un cane che dà un’impressione di forza e dignità, e che unisce velocità e potenza, con un mantello lungo e molto fine. Ammette tutti i colori tranne il merle. L’altezza ideale è di 68–74 cm per i maschi e 63–69 cm per le femmine; lo standard AKC indica un peso di circa 60 libbre (27 kg) per i maschi e circa 50 libbre (23 kg) per le femmine. Un cane di questa taglia finisce di crescere verso i 15–18 mesi (PetMD). Per il Royal Kennel Club l’aspettativa di vita supera i 10 anni.",
+        "Lo standard FCI definisce il levriero afgano dignitoso e distaccato, con una certa fierezza vivace. Il Royal Kennel Club raccomanda più di due ore di movimento al giorno, una cura del mantello quotidiana e una casa grande con un ampio giardino. La PDSA scrive che il mantello lungo e setoso va spazzolato ogni giorno e che i levrieri afgani, se ben socializzati, vanno d’accordo con i bambini; il forte istinto di inseguimento richiede attenzione con gli altri animali. PetMD consiglia di aspettare almeno un’ora dopo il pasto prima del movimento e di fare il bagno almeno ogni una o due settimane. WebMD raccomanda di lavare i denti ogni giorno.",
+      ],
+      sources: ["S849", "S850", "S851", "S852", "S853", "S854", "S10"],
+    },
+    australian_silky_terrier: {
+      aka: "Silky terrier australiano, Australian Silky Terrier, Silky Terrier, Silky",
+      text: [
+        "Il silky terrier australiano è un piccolo terrier toy, sempre vigile, originario dell’Australia (FCI gruppo 3, terrier; sezione terrier nani o toy terrier). In Nord America si chiama Silky Terrier. Lo standard FCI chiede un mantello liscio, fine e lucido, dalla consistenza setosa, blu e focato: sono ammesse tutte le tonalità di blu e focato, ma non l’argento e il bianco. L’altezza è di 23–26 cm per i maschi, con le femmine leggermente più piccole. Gli standard non indicano un peso («in proporzione all’altezza»); PetMD e WebMD lo collocano intorno a 10 libbre (circa 4,5 kg). Un cane di questa taglia finisce di crescere verso gli 8–12 mesi (PetMD). Per il Royal Kennel Club l’aspettativa di vita supera i 12 anni (PetMD e WebMD: 13–15 anni).",
+        "Lo standard FCI descrive un terrier toy coraggioso e dignitoso, secondo a nessuno come compagno. Il Royal Kennel Club raccomanda fino a 30 minuti di movimento al giorno e una cura del mantello quotidiana, e indica che la razza si adatta a un appartamento. PetMD scrive che i silky vanno d’accordo con gli altri animali e con i bambini se socializzati bene fin da piccoli. Raccomanda i corsi di socializzazione prima delle 16 settimane e la pulizia delle orecchie ogni due o tre settimane; per l’istinto predatorio, consiglia di tenere il cane al guinzaglio o in un’area recintata. WebMD raccomanda di lavare i denti ogni giorno e di fare il bagno circa una volta al mese.",
+      ],
+      sources: ["S855", "S856", "S857", "S858", "S10"],
+    },
+    parson_russell_terrier: {
+      aka: "Parson Russell terrier, Parson Jack Russell Terrier, Parson Terrier, PRT",
+      text: [
+        "Il Parson Russell terrier è un terrier da lavoro dall’aspetto funzionale, attivo e agile, originario della Gran Bretagna e selezionato in origine per lavorare sulla volpe (FCI gruppo 3, terrier; sezione terrier di taglia grande e media). È una razza diversa dal Jack Russell terrier: il Kennel Club lo riconobbe per la prima volta nel 1990 come Parson Jack Russell Terrier. Lo standard FCI chiede un cane bianco o in prevalenza bianco con focature, limone o nere, o una qualsiasi combinazione di questi colori, con un mantello ruvido, semiruvido o liscio. L’altezza ideale è di 36 cm per i maschi e 33 cm per le femmine. La PDSA indica un peso medio di 6–8 kg. Un cane di questa taglia finisce di crescere verso i 9–12 mesi (PetMD). Per il Royal Kennel Club l’aspettativa di vita supera i 12 anni (WebMD: da 13 a 15 anni).",
+        "Lo standard FCI definisce la razza audace e amichevole. Il Royal Kennel Club raccomanda fino a un’ora di movimento al giorno e una cura del mantello una volta alla settimana. La PDSA scrive che questi cani sono pieni di energia, hanno bisogno idealmente di 1–2 ore di movimento al giorno, vanno d’accordo con i bambini e sono ottimi cani di famiglia; vanno socializzati fin da piccoli con gli altri animali di casa. PetMD osserva che alcuni hanno un forte istinto predatorio e raccomanda di lavare i denti ogni giorno, pulire le orecchie ogni due settimane e fare il bagno ogni due-quattro settimane. WebMD aggiunge che non amano restare soli e possono soffrire di ansia da separazione.",
+      ],
+      sources: ["S864", "S865", "S866", "S867", "S868", "S10"],
+    },
+    wire_fox_terrier: {
+      aka: "Fox terrier a pelo duro, Wire Fox Terrier, Fox terrier a pelo ruvido, Wire Hair Fox Terrier, Wirehaired Fox Terrier",
+      text: [
+        "Il fox terrier a pelo duro è un terrier attivo e vivace originario della Gran Bretagna (FCI gruppo 3, terrier; sezione terrier di taglia grande e media). Non va confuso con il toy fox terrier. Lo standard FCI chiede ossatura e forza in uno spazio ridotto, mai massiccio né grossolano, e un mantello fitto e molto ruvido con un sottopelo più morbido. Il colore prevalente è il bianco, con macchie nere, nere e focate o focate. L’altezza al garrese non supera i 39 cm per i maschi, con le femmine leggermente più basse. Lo standard AKC indica per il maschio 18 libbre in condizione da esposizione e per la femmina circa due libbre in meno, con un margine di una libbra in più o in meno (circa 7,7–8,6 kg per i maschi e 6,8–7,7 kg per le femmine). Un cane di questa taglia finisce di crescere verso i 9–12 mesi (PetMD). Per il Royal Kennel Club l’aspettativa di vita supera i 12 anni (PetMD: 12–15 anni).",
+        "Lo standard FCI definisce la razza amichevole, espansiva e senza paura. Il Royal Kennel Club raccomanda fino a un’ora di movimento al giorno e una cura del mantello più di una volta alla settimana. La PDSA scrive che ai fox terrier piace giocare ed esplorare, che sono ottimi cani di famiglia e che vanno spazzolati una o due volte alla settimana. WebMD li definisce ottimi compagni per i bambini, ma consiglia di sorvegliarli sempre quando sono con i più piccoli. Secondo PetMD, per il forte istinto predatorio vanno tenuti sotto stretto controllo con gli animali piccoli. Raccomanda inoltre di socializzare bene il cucciolo, lavare i denti ogni giorno, fare il bagno circa una volta al mese e la rifinitura a mano del mantello (stripping) tre o quattro volte all’anno; WebMD aggiunge il taglio delle unghie circa una volta al mese.",
+      ],
+      sources: ["S871", "S872", "S873", "S874", "S875", "S876", "S10"],
+    },
+    manchester_terrier: {
+      aka: "Manchester terrier, Manchester Terrier (Standard), Black and Tan Terrier, Manchester",
+      text: [
+        "Il Manchester terrier è un terrier compatto ed elegante originario della Gran Bretagna (FCI gruppo 3, terrier; sezione terrier di taglia grande e media). Qui si parla della taglia standard, non del toy. Lo standard FCI chiede un cane compatto, elegante e sano, con sostanza, con un mantello aderente, liscio, corto e lucido, solo nero corvino e focato mogano intenso. L’altezza ideale al garrese è di 41 cm per i maschi e 38 cm per le femmine. Lo standard del Canadian Kennel Club indica un peso da 5,5 a 10 kg (da 12 a 22 libbre). Un cane di questa taglia finisce di crescere verso i 9–12 mesi (PetMD). Per la PDSA l’aspettativa di vita supera i 12 anni (WebMD: da 15 a 17 anni).",
+        "Lo standard FCI definisce la razza vivace, vigile, allegra e sportiva, perspicace e devota. La PDSA raccomanda fino a un’ora di movimento al giorno e dice che di solito basta una spazzolata alla settimana. PetMD scrive che i Manchester vanno d’accordo con i bambini, soprattutto se li conoscono da cuccioli, e raccomanda di socializzare il cucciolo dal giorno in cui arriva a casa. Osserva anche un forte istinto predatorio, legato alla loro storia di cacciatori di topi, per cui potrebbero non essere adatti a case con criceti o gerbilli. WebMD consiglia di non lasciare mai i bambini piccoli da soli con i cani e raccomanda di lavare i denti ogni giorno. Aggiunge che la razza è sensibile al freddo, quindi può servire un cappottino o un maglioncino.",
+      ],
+      sources: ["S888", "S889", "S890", "S891", "S892", "S10"],
+    },
+    tibetan_terrier: {
+      aka: "Terrier tibetano, Terrier del Tibet, Tibetan Terrier, Tibet Terrier",
+      text: [
+        "Il terrier tibetano è un cane da compagnia robusto, di taglia media e a pelo lungo, originario del Tibet (FCI gruppo 9, cani da compagnia; sezione razze tibetane): un terrier solo di nome. Lo standard FCI chiede una sagoma generalmente quadrata, un doppio mantello con un pelo lungo, fine e abbondante, liscio od ondulato, orecchie pendenti con frange e una coda portata arrotolata sul dorso. Ogni colore è ammesso tranne cioccolato, fegato o merle. I maschi misurano 36–41 cm al garrese, con le femmine leggermente più piccole. Lo standard del Canadian Kennel Club indica un peso da 8,25 a 13,5 kg (da 18 a 30 libbre). Un cane di questa taglia finisce di crescere verso i 12–15 mesi (PetMD). Per la PDSA l’aspettativa di vita supera i 12 anni (PetMD: 15–16 anni).",
+        "Lo standard FCI definisce la razza vivace e di buon carattere, estroversa, vigile e intelligente, ma poco espansiva con gli estranei. La PDSA descrive i terrier tibetani come cani dolci, amichevoli e affettuosi, buoni cani di famiglia. Raccomanda circa un’ora di movimento al giorno e dice che il mantello va curato ogni giorno. PetMD osserva che possono soffrire di ansia da separazione se restano soli a lungo e raccomanda i corsi di socializzazione per il cucciolo prima delle 16 settimane. Scrive che possono andare d’accordo con i bambini piccoli e con altri cani se le presentazioni sono sorvegliate, mentre secondo WebMD alcuni soggetti hanno difficoltà con i bambini piccoli e con altri cani. WebMD raccomanda di lavare i denti ogni giorno.",
+      ],
+      sources: ["S904", "S905", "S906", "S907", "S909", "S10"],
+    },
+    greyhound: {
+      aka: "Greyhound, Levriero inglese, English Greyhound",
+      text: [
+        "Il greyhound è un levriero di grande taglia originario della Gran Bretagna; la FCI lo colloca nel gruppo 10, tra i levrieri a pelo corto. Secondo lo standard FCI è un cane di costruzione robusta, di portamento eretto e di proporzioni generose, dalla forza muscolare e dalla struttura simmetrica, intelligente, dolce, affettuoso e dal carattere equilibrato. Il mantello è fine e aderente, nero, bianco, rosso, blu, fulvo, fulvo chiaro o tigrato, oppure uno qualsiasi di questi colori con macchie bianche. L’altezza ideale è di 71–76 cm per i maschi e 68–71 cm per le femmine. Lo standard AKC indica un peso da 65 a 70 libbre (circa 29,5–31,8 kg) per i maschi e da 60 a 65 libbre (circa 27,2–29,5 kg) per le femmine. Un cane di questa taglia finisce di crescere verso i 15–18 mesi (PetMD). Uno studio britannico VetCompass sui greyhound in cura veterinaria ha rilevato una longevità mediana di 11,4 anni; per la PDSA l’aspettativa di vita supera i 10 anni.",
+        "La PDSA scrive che i greyhound non sono troppo energici: hanno bisogno di circa un’ora di movimento al giorno e preferiscono un paio di buone corse a chilometri di camminata. Il mantello corto va spazzolato una volta alla settimana. Con la giusta socializzazione da cuccioli possono essere buoni cani di famiglia, ma hanno un forte istinto di inseguimento: PetMD scrive che il loro istinto predatorio, molto forte, li rende poco adatti a case con gatti o altri animali piccoli. WebMD raccomanda di lavare i denti ogni giorno e osserva che, senza un sottopelo isolante, i greyhound possono soffrire le temperature estreme.",
+      ],
+      sources: ["S912", "S913", "S914", "S916", "S917", "S918", "S920", "S10"],
+    },
+    xoloitzcuintli: {
+      aka: "Xoloitzcuintle, Xoloitzcuintli, Xolo, Cane nudo messicano, Mexican Hairless Dog, Mexican Hairless",
+      text: [
+        "Lo xoloitzcuintle è un antico cane di tipo primitivo originario del Messico; la FCI lo colloca nel gruppo 5, tra i cani di tipo primitivo. Lo standard FCI lo descrive silenzioso e calmo, allegro, vigile e intelligente, mai aggressivo. Esiste in due varietà, identiche tranne che per il mantello e la dentatura: quella senza pelo, con la pelle nuda e liscia, e quella con il pelo, con un mantello corto e aderente. Si trova in tre taglie (25–35 cm, 35–45 cm e 46–60 cm al garrese) e nei colori nero, grigio nerastro, grigio ardesia, grigio scuro, rossiccio, fegato, bronzo o biondo, con preferenza per la pelle scura uniforme. WebMD indica un peso di 10–15 libbre per il toy, 15–30 per il medio e 30–55 libbre per lo xolo standard (circa 4,5–24,9 kg tra tutte le taglie). Un cane di taglia standard finisce di crescere verso i 12–15 mesi (PetMD). PetMD e WebMD indicano entrambi un’aspettativa di vita di 13–18 anni.",
+        "PetMD scrive che gli xolo hanno bisogno di circa 20 minuti di movimento al giorno. La pelle nuda richiede cura: PetMD consiglia una crema solare per cani prima di uscire, mai quella per le persone. VCA dice che sono più adatti ai climi caldi e hanno bisogno di un maglioncino quando fa più fresco. WebMD definisce lo xolo un buon cane per le famiglie con bambini e raccomanda di lavare i denti due o tre volte alla settimana. PetMD aggiunge che le interazioni con i bambini vanno sempre sorvegliate, che i cuccioli vanno socializzati perché non crescano diffidenti verso le persone nuove e che la razza ha un forte istinto predatorio verso gli animali piccoli.",
+      ],
+      sources: ["S923", "S924", "S926", "S927", "S928", "S10"],
+    },
+    spinone_italiano: {
+      aka: "Spinone italiano, Spinone, Spinoni, Italian Spinone, Griffone italiano, Italian Griffon, Italian Wire-haired Pointer",
+      text: [
+        "Lo spinone italiano è un cane da ferma italiano; la FCI lo colloca nel gruppo 7, tra i cani da ferma continentali di tipo griffon. Secondo lo standard FCI è di costruzione solida, robusto e vigoroso, con una forte ossatura e un mantello ruvido: per natura socievole, docile e paziente, è un cacciatore esperto su ogni terreno. I colori sono bianco puro, bianco con macchie arancio, roano arancio, bianco con macchie marroni e roano marrone. L’altezza è di 60–70 cm per i maschi e 58–65 cm per le femmine; il peso è di 32–37 kg per i maschi e 28–30 kg per le femmine. Un cane di questa taglia finisce di crescere verso i 15–18 mesi (PetMD). Per la PDSA l’aspettativa di vita supera i 10 anni, per PetMD è di 10–12 anni.",
+        "La PDSA definisce lo spinone una razza energica, che idealmente ha bisogno di più di 2 ore di movimento al giorno, e dice che il mantello folto e in parte ruvido va spazzolato a casa 2 o 3 volte alla settimana. WebMD raccomanda di tagliare le unghie ogni settimana e di lavare i denti ogni giorno. Secondo WebMD la razza di solito va d’accordo con gli altri cani e con i bambini, ma restare soli a lungo spesso porta a guai. PetMD consiglia di socializzare presto i cuccioli, di tenere il cane al guinzaglio o in un’area recintata quando è fuori e di non farlo muovere nell’ora prima e dopo i pasti, per il rischio di dilatazione gastrica.",
+      ],
+      sources: ["S935", "S936", "S937", "S938", "S10"],
+    },
+    pointer: {
+      aka: "Pointer, Pointer inglese, English Pointer",
+      text: [
+        "Il pointer è un cane da ferma britannico; la FCI lo colloca nel gruppo 7, tra i cani da ferma britannici e irlandesi (pointer e setter). Lo standard FCI lo descrive simmetrico e ben costruito, dalla sagoma fatta di graziose linee curve, forte ma agile, vigile e dall’indole gentile ed equilibrata, con un mantello fine, corto e duro, con un netto lustro. I colori più comuni sono limone e bianco, arancio e bianco, fegato e bianco, e nero e bianco. L’altezza è di 63–69 cm per i maschi e 61–66 cm per le femmine; lo standard UKC indica un peso da lavoro di 55–75 libbre (circa 25–34 kg) per i maschi e 44–65 libbre (circa 20–29,5 kg) per le femmine. Un cane di questa taglia finisce di crescere verso i 15–18 mesi (PetMD). Per la PDSA l’aspettativa di vita supera i 12 anni, per PetMD è di 10–12 anni.",
+        "La PDSA scrive che i pointer hanno livelli di energia elevati e idealmente hanno bisogno di più di 2 ore di movimento al giorno. Richiedono proprietari attivi e un buon addestramento al richiamo, e il mantello corto va spazzolato solo una volta alla settimana. PetMD consiglia di tenerli in un giardino recintato perché non si allontanino e osserva che possono essere un pericolo per gli uccelli domestici. WebMD raccomanda di lavare i denti ogni giorno e dice che non vanno particolarmente d’accordo con i bambini piccoli. La PDSA aggiunge che, come per tutte le razze, la giusta socializzazione da cuccioli aiuta a inserirsi bene nella vita familiare.",
+      ],
+      sources: ["S943", "S944", "S945", "S946", "S947", "S10"],
+    },
+    welsh_terrier: {
+      aka: "Welsh terrier, Terrier gallese, Welshie, Welsh",
+      text: [
+        "Il Welsh terrier è un terrier originario della Gran Bretagna; la FCI lo colloca nel gruppo 3, tra i terrier di taglia grande e media. Lo standard FCI lo descrive elegante, dall’aspetto funzionale, ben equilibrato e compatto, con un mantello ruvido, duro, molto aderente e abbondante; è affettuoso, obbediente e facile da gestire, allegro e raramente timido. Il colore è nero e focato oppure nero grizzle e focato. Lo standard FCI indica un’altezza fino a 39 cm e un peso di 9–9,5 kg (20–21 libbre). Un cane di questa taglia finisce di crescere verso i 9–12 mesi (PetMD). Per il Royal Kennel Club e la PDSA l’aspettativa di vita supera i 12 anni, per PetMD è di 12–15 anni.",
+        "Il Royal Kennel Club scrive che il Welsh terrier ha bisogno di fino a 1 ora di movimento al giorno e di una cura del mantello più di una volta alla settimana. La PDSA indica circa un’ora di movimento al giorno e la spazzolatura due o tre volte alla settimana, e descrive un cane giocherellone e amichevole, che ama i bambini ed è un ottimo cane di famiglia. PetMD osserva un forte istinto predatorio, per cui gli animali più piccoli possono essere inseguiti. Consiglia il guinzaglio o un’area recintata quando è fuori e socializzazione e addestramento fin da piccolo.",
+      ],
+      sources: ["S955", "S956", "S957", "S958", "S10"],
+    },
+    american_hairless_terrier: {
+      aka: "American Hairless Terrier, AHT, Hairless Terrier",
+      text: [
+        "L’American Hairless Terrier è un terrier attivo, di taglia piccola o media e dalla muscolatura levigata, originario degli Stati Uniti. È riconosciuto dall’American Kennel Club nel suo gruppo dei terrier, mentre la FCI non lo elenca. Lo standard di razza lo descrive energico, vigile, curioso e intelligente, con orecchie a V e una coda naturale, mai tagliata. Esistono due varietà: quella senza pelo, priva di pelo a eccezione delle vibrisse e dei peli sopra gli occhi e sul muso, e quella con il pelo, con un mantello corto e liscio. L’altezza ideale è di 12–16 pollici (30–41 cm). PetMD indica un peso di 12–28 libbre (5,4–12,7 kg) e un’aspettativa di vita di 14–16 anni, e un cane di questa taglia finisce di crescere verso i 9–12 mesi (PetMD).",
+        "Dogs NSW indica circa 20 minuti di movimento al giorno. Per PetMD movimento regolare e stimoli mentali sono indispensabili per questa razza, che definisce ottima compagna di gioco per i bambini, con sorveglianza intorno ai più piccoli. La pelle nuda richiede cura: il club di razza dice che la crema solare o gli indumenti protettivi sono indispensabili per evitare le scottature. PetMD consiglia un maglioncino quando fa freddo e bagni regolari, di preferenza ogni settimana; WebMD consiglia di lavare i denti ogni giorno, e il club di razza di tagliare le unghie ogni settimana. Il club di razza segnala anche un forte istinto predatorio.",
+      ],
+      sources: ["S967", "S971", "S972", "S973", "S977", "S10"],
+    },
+    tibetan_spaniel: {
+      aka: "Spaniel tibetano, Tibetan Spaniel, Tibbie",
+      text: [
+        "Lo spaniel tibetano è un piccolo cane da compagnia, attivo e vigile, originario del Tibet (Cina). Appartiene al gruppo FCI dei cani da compagnia, sezione razze tibetane, con la Gran Bretagna come paese patrocinatore della razza. Lo standard FCI lo descrive allegro e deciso, molto intelligente e distaccato con gli estranei, vigile, fedele ma indipendente, un po’ più lungo che alto, con un mantello setoso di lunghezza media, orecchie frangiate e una coda ben piumata portata arrotolata sul dorso. Sono ammessi tutti i colori tranne il merle. Lo standard indica un’altezza di circa 25,4 cm e un peso ideale di 4,1–6,8 kg; un cane di questa taglia finisce di crescere verso i 9–12 mesi (PetMD). In un ampio studio britannico (McMillan et al., 2024) la razza era tra le più longeve, con una mediana di 15,2 anni; per la PDSA l’aspettativa di vita supera i 12 anni.",
+        "La PDSA scrive che gli spaniel tibetani hanno bisogno di circa un’ora di movimento al giorno, partecipano volentieri ai giochi di famiglia e di solito vanno d’accordo con tutti. Per la PDSA sono buoni cani di famiglia e di solito basta spazzolarli un paio di volte alla settimana. WebMD dice che sono inclini all’ansia da separazione e più adatti a famiglie con bambini più grandi, che hanno bisogno di un giardino recintato e che possono surriscaldarsi quando fa caldo. Consiglia di lavare i denti ogni giorno, controllare le orecchie almeno una volta alla settimana, controllare le unghie ogni mese e fare il bagno più o meno ogni mese.",
+      ],
+      sources: ["S980", "S981", "S982", "S771", "S10"],
+    },
+    black_russian_terrier: {
+      aka: "Terrier nero russo, Terrier russo nero, Black Russian Terrier, Russian Black Terrier, Tchiorny Terrier, BRT",
+      text: [
+        "Il terrier nero russo è un cane da lavoro di grande taglia, robusto e molto atletico, originario della Russia, nel gruppo FCI dei cani di tipo pinscher e schnauzer. Lo standard FCI lo descrive dignitoso, sicuro di sé e ben controllato, amabile, poco esigente, sveglio e amichevole, con un doppio mantello ruvido e fitto che forma sopracciglia abbondanti, baffi e barba. Gli unici colori sono il nero e il nero con un po’ di peli grigi mescolati. Lo standard indica per i maschi 72–76 cm e 50–60 kg, per le femmine 68–72 cm e 45–50 kg; un cane di questa taglia di solito raggiunge il peso adulto a 18–24 mesi. Per il Royal Kennel Club l’aspettativa di vita supera i 10 anni.",
+        "Il Royal Kennel Club indica più di 2 ore di movimento e una cura del mantello quotidiana, una casa grande con un ampio giardino, e un mantello che non perde pelo. PetMD scrive che la razza è devota alla sua famiglia e può andare d’accordo con i bambini se sorvegliata. Sempre per PetMD la socializzazione precoce e costante è importante, e l’esercizio intenso va evitato subito prima e dopo i pasti per via della dilatazione gastrica. VCA indica come abbinamento ideale i bambini più grandi e raccomanda la tosatura da parte di un toelettatore professionista ogni sei-otto settimane.",
+      ],
+      sources: ["S985", "S986", "S989", "S990", "S10"],
+    },
+    neapolitan_mastiff: {
+      aka: "Mastino napoletano, Neapolitan Mastiff, Neo, Neapolitan, Italian Mastiff",
+      text: [
+        "Il mastino napoletano (Neapolitan Mastiff) è un cane da guardia di grande taglia, pesante e massiccio, originario dell’Italia; la FCI lo colloca nel gruppo 2, tra i molossoidi di tipo dogo. Lo standard FCI lo descrive equilibrato e fedele, non aggressivo, con un mantello corto, duro e fitto e una pelle spessa e lassa che forma numerose pieghe e rughe, soprattutto sulla testa. I colori preferiti sono il grigio, il grigio piombo e il nero, ma sono ammessi anche il marrone, il fulvo e il fulvo carico. Lo standard indica per i maschi 65–75 cm e 60–70 kg, per le femmine 60–68 cm e 50–60 kg; un cane di questa taglia di solito raggiunge il peso adulto a 18–24 mesi. Per il Royal Kennel Club e la PDSA l’aspettativa di vita è inferiore a 10 anni, per PetMD solo di 7–9 anni.",
+        "Il Royal Kennel Club indica fino a 1 ora di movimento al giorno, una cura del mantello una volta alla settimana, un mantello che perde pelo e una casa grande con un ampio giardino, e inserisce la razza nella categoria 3 di Breed Watch. La PDSA spiega che l’eccesso di pelle sul muso causa problemi alle palpebre come l’entropion e l’ectropion. Definisce i mastini napoletani cani fedeli e devoti, che amano la vita di famiglia, e dice che le pieghe della pelle vanno pulite ogni giorno. PetMD scrive che sono ottimi con le famiglie e con i bambini, ma non vanno lasciati da soli con un bambino piccolo. Aggiunge che sbavano molto e che la socializzazione adeguata e l’addestramento con rinforzo positivo devono iniziare presto.",
+      ],
+      sources: ["S993", "S994", "S995", "S996", "S10"],
+    },
+    norwegian_elkhound: {
+      aka: "Elkhound norvegese grigio, Elkhound, Elkie, Norwegian Elkhound, Norwegian Elkhound Grey, Norsk Elghund Grå, Norwegian Moose Dog",
+      text: [
+        "L’elkhound norvegese grigio è uno spitz nordico da caccia, grigio, originario della Norvegia e selezionato per cacciare l’alce; la FCI lo colloca nel gruppo 5, tra i cani nordici da caccia. Lo standard FCI lo descrive come un tipico spitz, compatto, corto e di costruzione quadrata, con piccole orecchie erette, una coda strettamente arrotolata sul dorso e un mantello fitto e ruvido di media lunghezza; è coraggioso, energico e audace. Il grigio, in varie tonalità, è l’unico colore ammesso. L’altezza ideale è di 52 cm per i maschi e 49 cm per le femmine; lo standard AKC indica un peso di circa 55 libbre (25 kg) per i maschi e circa 48 libbre (22 kg) per le femmine. Un cane di questa taglia finisce di crescere verso i 12–15 mesi (PetMD). PetMD e WebMD indicano un’aspettativa di vita di 12–15 anni.",
+        "PetMD raccomanda un’ora di movimento al giorno e dice che la razza ha bisogno di stimoli mentali quanto di esercizio fisico. La definisce ottima con i bambini di ogni età se le interazioni sono sorvegliate, e un meraviglioso cane di famiglia se socializzata da cucciola e addestrata presto. PetMD consiglia un’area recintata sicura o il guinzaglio quando è fuori, osserva che perde molto pelo e che il mantello fitto la rende incline al surriscaldamento. WebMD consiglia di spazzolare il mantello almeno due minuti ogni giorno e di lavare i denti ogni giorno.",
+      ],
+      sources: ["S960", "S961", "S963", "S964", "S10"],
+    },
+    mudi: {
+      aka: "Mudi, Mudi ungherese, Hungarian Mudi",
+      text: [
+        "Il mudi è un cane da pastore ungherese; la FCI lo colloca nel gruppo 1, tra i cani da pastore. Lo standard FCI lo descrive di taglia media, con la testa a forma di cuneo, orecchie erette e una linea del dorso che scende verso la parte posteriore, con un mantello fitto, lucido, ondulato o leggermente riccio. È dotato di grande capacità di apprendimento, vivace, coraggioso, attento e desideroso di lavorare. I colori sono nero, bianco, fulvo, cenerino (blu), fegato, cenerino-marrone e cifra (merle). L’altezza è di 41–47 cm per i maschi e 38–44 cm per le femmine; PetMD indica un peso di 18–29 libbre (circa 8–13 kg). Un cane di questa taglia finisce di crescere verso i 12–15 mesi (PetMD). Per il Royal Kennel Club l’aspettativa di vita supera i 10 anni, per PetMD è di 12–14 anni.",
+        "Il Royal Kennel Club dice che il mudi ha bisogno di fino a 1 ora di movimento al giorno e di una cura del mantello una volta alla settimana. È fedele e affettuoso con la sua famiglia e ha bisogno di uno sfogo per la sua energia e la sua intelligenza: è più adatto a un proprietario esperto, che sappia offrirgli stimoli, struttura e uno scopo. PetMD lo descrive come un cane sveglio, indipendente e vocale e dice che i cuccioli di mudi hanno bisogno di socializzazione fin da piccoli, per sentirsi a loro agio con bambini, altri animali e persone nuove.",
+      ],
+      sources: ["S949", "S950", "S952", "S10"],
+    },
+    lhasa_apso: {
+      aka: "Lhasa apso, Lhasa, Apso, Lasa Apso",
+      text: [
+        "Il lhasa apso è un piccolo cane da compagnia originario del Tibet; il Royal Kennel Club scrive che in origine era tenuto dai monaci tibetani come compagno e cane da guardia. Ha taglia piccola e un mantello lungo: VCA indica un’altezza di 10–11 pollici (circa 25–28 cm) e un peso di 13–15 libbre (circa 6–7 kg). Un cane di questa taglia finisce di crescere verso i 9–12 mesi (PetMD). Per il Royal Kennel Club l’aspettativa di vita supera i 12 anni.",
+        "Il Royal Kennel Club raccomanda fino a 1 ora di movimento al giorno e una cura del mantello quotidiana. La razza non perde il pelo, si adatta a un appartamento ed è inserita nella categoria 1 di Breed Watch. La PDSA dice che i lhasa apso, con la giusta socializzazione da cuccioli, vanno d’accordo con i bambini e con gli altri animali di casa, e possono essere un po’ più diffidenti con gli estranei. WebMD suggerisce un bagno almeno ogni due settimane, il taglio delle unghie ogni 3–4 settimane e la pulizia dei denti il più regolare possibile.",
+      ],
+      sources: ["S740", "S741", "S742", "S743", "S10"],
+    },
+    coton_de_tulear: {
+      aka: "Coton de Tuléar, Coton de Tulear, Coton, Royal Dog of Madagascar",
+      text: [
+        "Il coton de Tuléar è originario del Madagascar, con la Francia come paese patrocinatore; la FCI lo colloca tra i bichon e le razze affini. Lo standard FCI lo descrive come un piccolo cane da compagnia a pelo lungo, con un mantello bianco dalla consistenza cotonosa, occhi scuri e rotondi e un’espressione vivace e intelligente. Il temperamento è allegro e stabile, molto socievole con le persone e con gli altri cani. L’altezza è di 26–28 cm per i maschi e 23–25 cm per le femmine, il peso di 4–6 kg per i maschi e 3,5–5 kg per le femmine; il colore di fondo è il bianco. Un cane di questa taglia finisce di crescere verso gli 8–12 mesi (PetMD). Per il Royal Kennel Club l’aspettativa di vita supera i 12 anni.",
+        "Il Royal Kennel Club raccomanda fino a 30 minuti di movimento al giorno e indica che la razza si adatta a un appartamento, perde poco pelo e richiede una cura del mantello quotidiana. La PDSA definisce i coton cani fedeli e affettuosi, che danno il meglio nella vita di famiglia. PetMD scrive che di solito vanno d’accordo con i bambini e con gli altri animali se le presentazioni sono fatte bene e che possono soffrire di ansia da separazione se restano soli per più di qualche ora. Raccomanda di controllare le orecchie almeno una volta alla settimana e di fare il bagno circa una volta al mese.",
+      ],
+      sources: ["S10", "S721", "S722", "S724", "S725", "S726"],
+    },
+    chow_chow: {
+      aka: "Chow chow, Chow-chow, Chow",
+      text: [
+        "Il chow chow è uno spitz compatto, simile a un leone, originario della Cina, con un mantello fitto e staccato dal corpo, di un solo colore pieno: nero, rosso, blu, fulvo, crema o bianco (standard di razza FCI). Lo standard FCI indica un’altezza di 48–56 cm per i maschi e 46–51 cm per le femmine; per la PDSA il peso medio è di 20–30 kg. Un cane di questa taglia finisce di crescere verso i 15–18 mesi (PetMD). La PDSA indica un’aspettativa di vita inferiore a 10 anni, PetMD da otto a 12 anni.",
+        "La PDSA scrive che la razza ha bisogno di almeno un’ora di movimento al giorno, di essere spazzolata ogni giorno e di un intervallo tra il pasto e il movimento. Descrive cani fedeli, che possono essere ideali nella famiglia giusta, meglio se con proprietari esperti, e non consiglia la razza con i bambini piccoli. Osserva un forte istinto predatorio e che potrebbero non tollerare di restare soli; vanno socializzati bene fin da piccoli. PetMD aggiunge che il mantello fitto e il muso corto li rendono più inclini al surriscaldamento.",
+      ],
+      sources: ["S696", "S700", "S701", "S10"],
+    },
+    old_english_sheepdog: {
+      aka: "Bobtail, Pastore inglese antico, Old English Sheepdog, Bob-tail, OES, Shepherd's Dog",
+      text: [
+        "Il bobtail (Old English Sheepdog) è un cane da pastore di grande taglia, forte e di sagoma quadrata, originario della Gran Bretagna, con un mantello abbondante, ruvido e arruffato: sul corpo qualsiasi tonalità di grigio, grizzle o blu, con testa, collo e parte anteriore bianchi (standard di razza FCI). Lo standard FCI indica un’altezza di 61 cm e oltre per i maschi e 56 cm e oltre per le femmine; la PDSA un’altezza media di 56–61 cm e un peso medio di 27–30 kg. Un cane di questa taglia finisce di crescere verso i 15–18 mesi (PetMD). La PDSA indica un’aspettativa di vita di oltre 10 anni, PetMD di 10–12 anni.",
+        "La PDSA scrive che la razza ha bisogno di almeno due ore di movimento al giorno, divise in più passeggiate, e che il mantello lungo richiede una spazzolata quotidiana e una rifinitura da un toelettatore professionista più o meno ogni sei settimane. Descrive cani di famiglia tranquilli, più adatti a famiglie con bambini più grandi. Possono soffrire di ansia da separazione quando restano soli e hanno un forte istinto di conduzione e predatorio; tra il pasto e il movimento va lasciato un intervallo.",
+      ],
+      sources: ["S704", "S705", "S706", "S10"],
+    },
+    pekingese: {
+      aka: "Pechinese, Pekingese, Pekinese, Peke, Lion Dog",
+      text: [
+        "Il pechinese è un piccolo cane da compagnia, simile a un leone, originario della Cina, con un mantello dritto di lunghezza medio-lunga e una criniera intorno al collo. Lo standard di razza FCI indica un peso ideale non superiore a 5 kg per i maschi e 5,4 kg per le femmine; per la PDSA il peso medio è di 5 kg e l’altezza di 15–22 cm. Un cane di questa taglia finisce di crescere verso gli 8–12 mesi (PetMD). La PDSA indica un’aspettativa di vita di oltre 12 anni, PetMD di 12–14 anni.",
+        "La PDSA raccomanda almeno mezz’ora di movimento al giorno senza esagerare, perché il muso piatto può rendere difficile la respirazione, e nessun movimento nei giorni più caldi. Scrive che il mantello lungo va spazzolato ogni giorno e che la razza perde molto pelo, soprattutto in primavera e in autunno. Sempre secondo la PDSA, le rughe del muso possono portare a infezioni delle pieghe della pelle e i pechinesi di solito stanno meglio con adulti o bambini più grandi, possono soffrire di ansia da separazione quando restano soli e vanno socializzati fin da piccoli. PetMD consiglia di lavare i denti ogni giorno, pulire le orecchie ogni una o due settimane e la toelettatura professionale ogni sei-otto settimane per un mantello lungo.",
+      ],
+      sources: ["S690", "S693", "S694", "S10"],
+    },
   },
 };
 
