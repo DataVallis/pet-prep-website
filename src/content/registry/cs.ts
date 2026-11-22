@@ -1425,6 +1425,310 @@ const cs: RegistryCopy = {
       ],
       sources: ["C13", "C37", "C38"],
     },
+    keeshond: {
+      aka: "Vlčí špic, Wolfsspitz, German Wolfspitz, Keeshonden",
+      text: [
+        "Německý špic vlčí, zvaný také keeshond, je varieta německého špice: středně velký špic z Německa s dlouhou, odstávající šedě stínovanou srstí, hustou hřívou a tmavými „brýlemi“ kolem očí (standard FCI). Standard FCI uvádí výšku 49 ± 6 cm, PDSA průměrnou hmotnost 16–20 kg. Pes této velikosti dorůstá zhruba ve 12–15 měsících (PetMD); délku života PDSA uvádí přes 10 let, VCA 12–14 let.",
+        "Podle PDSA plemeno potřebuje až hodinu pohybu denně a hustá dvouvrstvá srst vyžaduje každodenní péči; keeshondi jsou výborní rodinní psi, vycházejí s ostatními zvířaty v domácnosti a při dostatku času a trpělivosti dobře reagují na výcvik. VCA je popisuje jako hravé a k dětem opatrné, radí je koupat zhruba jednou měsíčně a upozorňuje na nadprůměrné línání i na to, že kvůli husté srsti může být pes náchylný k přehřátí.",
+      ],
+      sources: ["S246", "S709", "S710", "S10"],
+    },
+    standard_schnauzer: {
+      aka: "Střední knírač, Schnauzer, Mittelschnauzer, Wire-Haired Pinscher",
+      text: [
+        "Knírač střední pochází z Německa; FCI ho vede prostě jako knírače ve skupině pinčů a kníračů. Standard FCI popisuje středně velkého, silného psa, spíše podsaditého než štíhlého, s drsnou, tvrdou a hustou srstí, převislýma ušima a přirozeným ocasem. Uvádí výšku 45–50 cm a hmotnost 14–20 kg u psů i fen; zbarvení je pepř se solí a čistě černé. Pes této velikosti dorůstá zhruba ve 12–15 měsících (PetMD); Royal Kennel Club uvádí délku života přes 10 let, VCA 12–14 let.",
+        "Royal Kennel Club doporučuje až hodinu pohybu denně a péči o srst víc než jednou týdně; podle něj se plemeno hodí do malého domu s malou nebo středně velkou zahradou ve městě i na venkově. PDSA píše, že knírači jsou mírní, trpěliví psi, kteří dobře vycházejí s dětmi, pokud se s nimi seznámí v útlém věku, a že srst je třeba pročesávat dvakrát až třikrát týdně. VCA upozorňuje, že se plemeno rychle učí, ale také rychle nudí, takže mu hry a triky dopřávají potřebné duševní cvičení; PetMD doporučuje koupel jednou měsíčně, zkracování drápků, čištění uší každý jeden až dva týdny a návštěvu psího salonu jednou za čtvrt roku.",
+      ],
+      sources: ["S10", "S711", "S712", "S714", "S715", "S716", "S717"],
+    },
+    english_setter: {
+      aka: "Laverack Setter, Llewellin Setter, Setter",
+      text: [
+        "Anglický setr je elegantní ohař z Velké Británie, vyšlechtěný k vyhledávání pernaté zvěře. Standard FCI popisuje psa střední výšky, čistých linií a elegantního pohybu, s bílou srstí s barevným kropením – modrý, oranžový, citronový nebo játrový „belton“, případně tříbarevný – a výškou 65–68 cm u psů a 61–65 cm u fen; PDSA uvádí průměrnou hmotnost 22–29 kg. Pes této velikosti dorůstá zhruba v 15–18 měsících (PetMD) a Royal Kennel Club uvádí délku života přes 10 let.",
+        "Royal Kennel Club doporučuje více než 2 hodiny pohybu denně a péči o srst víc než jednou týdně, uvádí, že líná a hodí se do velkého domu s velkou zahradou, a řadí ho do kategorie 1 programu Breed Watch. Podle PDSA anglický setr miluje děti i jiná zvířata, a je proto ideální do rodin; péči o srst doporučuje 2–3krát týdně. PetMD radí koupel každých šest až osm týdnů a upozorňuje, že pes nerad zůstává dlouho sám; VCA zmiňuje také každoměsíční zastřihování a úpravu srsti.",
+      ],
+      sources: ["S730", "S731", "S732", "S733", "S734", "S10"],
+    },
+    dogue_de_bordeaux: {
+      aka: "Francouzská doga, Bordeaux Mastiff, French Mastiff, Bordeauxdogge, DDB",
+      text: [
+        "Bordeauxská doga je mohutný molossoidní pes z Francie. Standard FCI popisuje podsaditého, atletického a impozantního psa, klidného, vyrovnaného a velmi oddaného svému pánovi, s jemnou, krátkou srstí ve všech odstínech plavé od mahagonové po izabelovou. Uvádí výšku 60–68 cm u psů a 58–66 cm u fen a hmotnost nejméně 50 kg u psů a nejméně 45 kg u fen; PetMD uvádí 110–145 liber (asi 50–66 kg) u psů a 99–120 liber (asi 45–54 kg) u fen. Pes této velikosti dorůstá zhruba v 18–24 měsících (PetMD). Zdroje se v délce života rozcházejí: PetMD píše, že tito psi obvykle žijí jen 5–8 let, zatímco Royal Kennel Club uvádí přes 10 let.",
+        "Royal Kennel Club doporučuje až hodinu pohybu denně a péči o srst jednou týdně, uvádí, že líná a hodí se do velkého domu s velkou zahradou, a řadí ho do kategorie 3 programu Breed Watch. PDSA uvádí, že bordeauxské dogy obvykle dobře vycházejí se staršími dětmi, ale nedoporučuje je k menším dětem ani pro majitele, kteří mají psa poprvé; upozorňuje na silné slinění a velmi vysoký lovecký pud a radí pravidelně čistit kožní záhyby na obličeji a po jídle nechat před pohybem odstup. PetMD píše, že kvůli krátkému čenichu může být v horkém počasí dýchání ztížené.",
+      ],
+      sources: ["S755", "S756", "S757", "S759", "S10"],
+    },
+    flat_coated_retriever: {
+      aka: "Flatcoat, Flattie, Flat-coat, Flat Coated Retriever",
+      text: [
+        "Flat coated retriever je čilý, aktivní ohař z Velké Británie, vyšlechtěný k aportování zvěře. Standard FCI popisuje hustou, přiléhavou srst s bohatým praporem na nohou a ocase, pouze černou nebo játrovou, a optimistickou, přátelskou, sebevědomou a dobromyslnou povahu. Uvádí upřednostňovanou výšku 59–61,5 cm u psů a 56,5–59 cm u fen a upřednostňovanou hmotnost 27–36 kg u psů a 25–32 kg u fen. Pes této velikosti dorůstá zhruba v 15–18 měsících (PetMD). Royal Kennel Club uvádí délku života pod 10 let, britská studie z roku 2024, kterou předložila organizace Dogs Trust, však zjistila medián 11,7 roku.",
+        "Royal Kennel Club doporučuje více než 2 hodiny pohybu denně a péči o srst víc než jednou týdně, uvádí, že líná a hodí se do velkého domu s velkou zahradou, a řadí ho do kategorie 1 programu Breed Watch. PetMD označuje plemeno za skvělého rodinného psa, který obvykle dobře vychází s dětmi i jinými zvířaty, zejména při správném seznámení a socializaci; radí kartáčovat dvakrát týdně, čistit uši jednou za týden až dva, koupat a zkracovat drápky jednou za měsíc až dva a vyhnout se pohybu těsně před jídlem i po něm.",
+      ],
+      sources: ["S761", "S762", "S763", "S123", "S10"],
+    },
+    border_terrier: {
+      aka: "Border terrier, Border",
+      text: [
+        "Border teriér je malý pracovní teriér z Velké Británie; standard FCI ho označuje za v podstatě pracovního teriéra, který dokáže držet krok s koněm a spojuje čilost s odvahou. Popisuje tvrdou, hustou srst s přiléhavou podsadou, tmavé oči s bystrým výrazem a malé uši ve tvaru V; zbarvení je červené, pšeničné, šedě žíhané s pálením nebo pálené, případně modré s pálením. Uvádí hmotnost 5,9–7,1 kg u psů a 5,1–6,4 kg u fen. Pes této velikosti dorůstá zhruba v 9–12 měsících (PetMD). Royal Kennel Club uvádí délku života přes 12 let a britská studie z roku 2024 (McMillan a kol.) zjistila medián 14,2 roku.",
+        "Royal Kennel Club doporučuje až hodinu pohybu denně a péči o srst víc než jednou týdně, uvádí, že líná a hodí se do bytu, a řadí ho do kategorie 1 programu Breed Watch. PDSA píše, že při správné socializaci budou border teriéři rádi trávit čas s dětmi všech věkových skupin, ale doporučuje dohled; upozorňuje, že pokud zůstanou sami, může se u nich rozvinout separační úzkost, že mají silný lovecký pud a neměli by žít s králíky, morčaty ani potkany, a radí je kartáčovat několikrát týdně a po jídle nechat před pohybem odstup. Woodgreen doporučuje domácnost s trochu staršími dětmi.",
+      ],
+      sources: ["S768", "S769", "S770", "S771", "S773", "S10"],
+    },
+    leonberger: {
+      aka: "Leonberg, Leonberský pes",
+      text: [
+        "Leonberger je velký pes z Německa. Standard FCI popisuje velkého, silného, svalnatého, a přesto elegantního psa s dlouhou, přiléhavou srstí, převislýma ušima a bohatě osrstěným ocasem, zbarveného lví žlutě, červeně, červenohnědě nebo pískově, vždy s černou maskou; výška je 72–80 cm u psů a 65–75 cm u fen. PDSA uvádí průměrnou hmotnost 30–50 kg u psů i fen a délku života pod 10 let; jako obří plemeno dorůstá zhruba v 18–24 měsících (velikostní třída PetMD).",
+        "Royal Kennel Club doporučuje více než 2 hodiny pohybu denně a velký dům s velkou zahradou; PDSA označuje leonbergery za mírné obry a výborné rodinné psy. Woodgreen doporučuje kartáčovat dvakrát až třikrát týdně, uvádí, že kvůli velikosti je nezbytný včasný výcvik a socializace, a že dlouhou samotu snáší špatně. Britská studie z roku 2024 (McMillan a kol., předložená organizací Dogs Trust) uvádí medián délky života 10,0 roku.",
+      ],
+      sources: ["S783", "S781", "S10", "S780", "S784", "S123"],
+    },
+    beauceron: {
+      aka: "Berger de Beauce, Beauce Sheepdog, Bas Rouge",
+      text: [
+        "Beauceron neboli Berger de Beauce je velký francouzský pastevecký pes. Standard FCI popisuje velkého, pevného, otužilého, silného a svalnatého psa bez těžkopádnosti, s krátkou, hustou srstí, ocasem s lehkým háčkem ve tvaru J a dvojitými paspárky na zadních končetinách, v černém s pálením nebo harlekýnském zbarvení; výška je 65–70 cm u psů a 61–68 cm u fen. Tabulka hmotnosti plemen AKC uvádí 70–110 liber (asi 32–50 kg) u psů i fen; pes této velikosti dorůstá zhruba v 15–18 měsících (velikostní třída PetMD). Royal Kennel Club uvádí délku života přes 10 let, PetMD 10–12 let.",
+        "Royal Kennel Club označuje beaucerona za klidného a sebevědomého, loajálního společníka a hlídače, doporučuje více než 2 hodiny pohybu denně, péči o srst víc než jednou týdně a velký dům s velkou zahradou a řadí ho do kategorie 1 programu Breed Watch. PetMD píše, že při seznámení pod dohledem může být dobrý s malými dětmi a jinými psy; k novým lidem může být ostražitý, a štěňata proto mají co nejdříve poznat cizí lidi. Nejraději je podle PetMD se svou rodinou co nejvíce; radí ho kartáčovat nejméně jednou týdně a hodinu před jídlem i hodinu po něm ho nezatěžovat pohybem.",
+      ],
+      sources: ["S790", "S268", "S10", "S787", "S791"],
+    },
+    bouvier_des_flandres: {
+      aka: "Bouvier, Flanderský pastevecký pes, Flanders Cattle Dog, Vlaamse Koehond",
+      text: [
+        "Flanderský bouvier je honácký pes z Flander v Belgii a ve Francii. Standard FCI popisuje krátkého, kompaktního, silného psa se silnými, dobře osvalenými končetinami, s hrubou, suchou, mírně rozcuchanou srstí dlouhou asi 6 cm, s knírem a plným plnovousem, zbarvenou nejčastěji šedě, žíhaně nebo s černým přestřikem (přípustná je i jednobarevná černá). U psů uvádí výšku 62–68 cm a hmotnost asi 35–40 kg, u fen 59–65 cm a asi 27–35 kg. Pes této velikosti dorůstá zhruba v 15–18 měsících (velikostní třída PetMD); britská studie z roku 2024 (McMillan a kol., předložená organizací Dogs Trust) uvádí medián délky života 11,3 roku.",
+        "Royal Kennel Club označuje bouviera za silného a všestranného, původně honáckého psa, doporučuje až hodinu pohybu denně, každodenní péči o srst a velký dům s velkou zahradou a řadí ho do kategorie 1 programu Breed Watch. PetMD píše, že při seznámení pod dohledem mohou být dobří s malými dětmi a jinými velkými psy, mají silný lovecký pud vůči kočkám a drobným zvířatům, potřebují včasnou socializaci a mají sklon k nadváze; doporučuje kartáčovat nejméně jednou až dvakrát týdně, čistit uši každé dva až tři týdny, zkracovat drápky každé tři až čtyři týdny a hodinu před jídlem i hodinu po něm psa nezatěžovat pohybem.",
+      ],
+      sources: ["S797", "S10", "S123", "S795", "S798"],
+    },
+    borzoi: {
+      aka: "Ruský chrt, Ruský psí chrt, Russian Wolfhound, Russian Hunting Sighthound, Russkaya Psovaya Borzaya",
+      text: [
+        "Barzoj neboli ruský psí chrt je dlouhosrstý chrt z Ruska, vyšlechtěný ke štvaní zajíců a lišek. Standard FCI popisuje psa aristokratického vzhledu, vysokého, štíhlého a silného, spíše vysokonohého, s dlouhou, hedvábnou, vlnitou srstí v jakémkoli zbarvení od bílé po černou s výjimkou hnědé, modré a izabelové; žádoucí výška je 75–85 cm u psů a 68–78 cm u fen. PDSA uvádí průměrnou hmotnost 27–47 kg u psů i fen a délku života přes 10 let, PetMD 9–14 let; pes této velikosti dorůstá zhruba v 15–18 měsících (velikostní třída PetMD).",
+        "PDSA doporučuje nejméně hodinu pohybu denně rozdělenou do několika procházek a volný pohyb bez vodítka jen v zabezpečeném prostoru. Uvádí, že barzojové mají velmi silný lovecký pud, nedoporučují se k menším zvířatům ani mladším dětem, hodí se pro zkušené majitele a potřebují, aby byl většinu času někdo doma. Mají se socializovat od útlého věku, srst je třeba kartáčovat několikrát týdně a mezi jídlem a pohybem je třeba dodržet odstup. PetMD doporučuje kartáčovat nejméně dvakrát až třikrát týdně a jako nejčastější zdravotní potíž uvádí nadmutí žaludku.",
+      ],
+      sources: ["S802", "S800", "S803", "S10"],
+    },
+    japanese_chin: {
+      aka: "Japonský spaniel, Japanese Spaniel, Japan Chin, Chin",
+      text: [
+        "Japonský chin je malý společenský pes z Japonska. Standard Royal Kennel Club popisuje elegantního, aristokratického, kompaktního malého psa s bohatou, dlouhou, hedvábnou srstí, černobílého nebo červenobílého zbarvení (nikdy tříbarevného), s krátkým, širokým čenichem a udiveným výrazem a uvádí ideální hmotnost 1,8–3,2 kg; PetMD uvádí výšku 8–11 palců (asi 20–28 cm). Pes této velikosti dorůstá zhruba v 8–12 měsících (velikostní třída PetMD); britská studie z roku 2024 (McMillan a kol., předložená organizací Dogs Trust) uvádí medián délky života 12,5 roku.",
+        "Royal Kennel Club doporučuje až 30 minut pohybu denně a péči o srst víc než jednou týdně, uvádí, že líná a hodí se do bytu, a řadí ho do kategorie 1 programu Breed Watch. PetMD píše, že japonský chin je plemeno s plochým obličejem (brachycefalické), které může mít potíže s dýcháním a snadno se přehřívá, takže pohyb za horka nebo vlhka patří na chladnější část dne. Podle PetMD obvykle dobře vychází s dětmi, pokud je kontakt pod dohledem, může u něj vzniknout separační úzkost a měl by brzy chodit do socializačních kurzů. Doporučuje kartáčovat jednou až dvakrát týdně, čistit uši každé dva až tři týdny a koupat zhruba jednou měsíčně.",
+      ],
+      sources: ["S806", "S10", "S123", "S805", "S809"],
+    },
+    miniature_bull_terrier: {
+      aka: "Mini bulteriér, Mini Bull, Bull Terrier (Miniature), English Miniature Bull Terrier",
+      text: [
+        "Miniaturní bulteriér je malý teriér z Velké Británie. FCI ho řadí mezi teriéry býčího typu a Royal Kennel Club uvádí, že jako samostatná varieta byl poprvé uznán v roce 1943 a byl vyšlechtěn z menších bulteriérů tak, aby nepřesáhl 35,5 cm (14 palců). PetMD uvádí výšku 10–14 palců (asi 25–36 cm) a hmotnost 18–28 liber (asi 8–13 kg); pes této velikosti dorůstá zhruba v 9–12 měsících (velikostní třída PetMD). Royal Kennel Club uvádí délku života přes 10 let, PetMD 11–13 let.",
+        "Royal Kennel Club popisuje plemeno jako odvážné, plné ohně a zábavné povahy, doporučuje až hodinu pohybu denně a péči o srst jednou týdně, uvádí, že líná, a vede ho jako ohrožené původní plemeno (vulnerable native breed). PetMD píše, že miniaturní bulteriéři jsou obvykle mazliví a dobří s dětmi, přátelští rodinní společníci, při správné socializaci mohou vycházet s jinými zvířaty, potřebují pravidelný pohyb a duševní stimulaci a nedaří se jim, když jsou dlouho sami; doporučuje včasnou socializaci a kartáčování zhruba jednou týdně.",
+      ],
+      sources: ["S818", "S820", "S821", "S10"],
+    },
+    schipperke: {
+      aka: "Malý kapitán, Little Captain, Little Black Devil, Spitzke",
+      text: [
+        "Šiperka je malý pastevecký pes z Belgie. FCI ji řadí mezi pastevecké psy a její standard popisuje psa vlčího typu malých rozměrů, ale velmi pevné stavby, celého černého, s límcem, hřívou a „kalhotami“. Standard FCI uvádí hmotnost 3–9 kg (žádoucí je průměr 4–7 kg), PetMD výšku 10–13 palců (asi 25–33 cm); pes této velikosti dorůstá zhruba v 9–12 měsících (velikostní třída PetMD). Velká britská studie (McMillan a kol., 2024) zjistila medián délky života 14,2 roku a Royal Kennel Club uvádí přes 12 let.",
+        "Standard FCI označuje šiperku za výborného malého hlídače, překypujícího vitalitou, k cizím lidem odtažitého a k dětem velmi jemného. Royal Kennel Club doporučuje až hodinu pohybu denně a péči o srst víc než jednou týdně, uvádí, že líná a hodí se do bytu, a řadí ho do kategorie 1 programu Breed Watch. PetMD píše, že šiperky potřebují činnosti, které zaměstnají mysl i tělo, jsou inteligentní, ale svéhlavé a někteří jedinci si ponechávají silný lovecký pud; doporučuje včasnou socializaci, každodenní čištění zubů a čištění uší každé dva týdny. VCA doporučuje kartáčovat nejméně dvakrát týdně.",
+      ],
+      sources: ["S824", "S825", "S826", "S827", "S828", "S771", "S10"],
+    },
+    belgian_tervuren: {
+      aka: "Tervueren, Tervuren, Terv, Belgian Shepherd Dog (Tervueren)",
+      text: [
+        "Belgický ovčák tervueren je dlouhosrstá plavá varieta belgického ovčáka, pasteveckého psa z Belgie; FCI uznává jedno plemeno belgického ovčáka se čtyřmi varietami. Standard FCI popisuje harmonicky stavěného psa, který spojuje eleganci se silou, s dlouhou srstí tvořící límec, kalhoty a prapor na ocase; pro tervueren připouští jen plavé nebo šedé zbarvení s černým přestřikem a černou maskou (přednost má plavá). Uvádí výšku asi 62 cm u psů a 58 cm u fen a hmotnost asi 25–30 kg u psů a 20–25 kg u fen; pes této velikosti dorůstá zhruba ve 12–15 měsících (velikostní třída PetMD). Royal Kennel Club uvádí délku života přes 10 let, PetMD 12–14 let.",
+        "Standard FCI označuje belgického ovčáka za ostražitého a aktivního psa, překypujícího energií, který nejeví strach ani agresivitu. Royal Kennel Club doporučuje více než 2 hodiny pohybu denně a péči o srst víc než jednou týdně, uvádí, že líná a hodí se do velkého domu s velkou zahradou, a řadí ho do kategorie 1 programu Breed Watch. PetMD píše, že tervuerenové si vytvářejí úzké vazby se svou rodinou, potřebují hodně pohybu i duševní stimulace a mohou se pokoušet děti a menší zvířata pást; doporučuje včasnou socializaci, kartáčování jednou týdně (v období línání téměř denně), čištění uší každý jeden až dva týdny a koupel každé čtyři až šest týdnů.",
+      ],
+      sources: ["S312", "S313", "S830", "S832", "S10"],
+    },
+    toy_fox_terrier: {
+      aka: "American Toy Terrier, Amertoy, TFT",
+      text: [
+        "Toy foxteriér je malý americký teriér ze skupiny toy plemen podle AKC. Standard AKC popisuje dobře vyvážené toy plemeno atletického vzhledu s krátkou, saténovou srstí, vzpřímenýma špičatýma ušima a převážně bílým tělem, s hlavou tříbarevnou, bílou s pálením, bílou s černou nebo bílou s čokoládovou a pálením. PetMD uvádí hmotnost 4–9 liber (asi 1,8–4 kg) a výšku 8,5–11,5 palce (asi 21–29 cm); pes této velikosti dorůstá zhruba v 8–12 měsících (PetMD). PetMD i WebMD uvádějí délku života 13–15 let.",
+        "Standard AKC označuje toy foxteriéra za inteligentního, bdělého, přátelského a věrného svým majitelům. PetMD doporučuje alespoň hodinu pohybu denně, kartáčování jednou až dvakrát týdně a včasný výcvik a socializaci a uvádí, že plemeno má stále silný lovecký pud. WebMD píše, že toy foxteriéři jsou skvělí společníci pro ohleduplné starší děti, ale pro rodiny s malými dětmi se nedoporučují a při dlouhé samotě mohou projevovat separační úzkost; doporučuje čistit zuby denně, čistit uši jednou týdně a zkracovat drápky jednou měsíčně.",
+      ],
+      sources: ["S833", "S834", "S835", "S10"],
+    },
+    gordon_setter: {
+      aka: "Setr gordon, Black and Tan Setter, Scottish Setter, Gordon",
+      text: [
+        "Gordon setr je velký černý ohař s pálením ze Skotska (skupina FCI 7, ohaři; zemí původu je Velká Británie). Standard FCI popisuje stylového psa s liniemi cválajícího koně a hlubokou, lesklou uhlově černou srstí s kaštanově červenými pálenými znaky; uvádí výšku 66 cm a hmotnost 29,5 kg u psů a 62 cm a 25,5 kg u fen. Pes této velikosti dorůstá zhruba v 15–18 měsících (PetMD) a Royal Kennel Club uvádí délku života přes 10 let.",
+        "Standard FCI označuje gordon setra za odvážného a otevřeného psa laskavé, vyrovnané povahy; PDSA ho popisuje jako přátelské a inteligentní plemeno, které má rádo zaměstnání. Royal Kennel Club doporučuje více než dvě hodiny pohybu denně a velký dům se zahradou, PDSA uvádí, že hustá srst vyžaduje každodenní kartáčování. PetMD radí hodinu před jídlem i po něm pohyb omezit, štěňata včas socializovat a kvůli silnému loveckému pudu plemene klást zvláštní důraz na výcvik odvolání. WebMD doporučuje čistit zuby denně a koupat zhruba jednou měsíčně a uvádí, že s malými dětmi vychází jen průměrně.",
+      ],
+      sources: ["S841", "S842", "S843", "S844", "S845", "S10"],
+    },
+    afghan_hound: {
+      aka: "Afgánský chrt, Afghan, Tazi, Baluchi Hound",
+      text: [
+        "Afghánský chrt je vysoký dlouhosrstý chrt z Afghánistánu (skupina FCI 10, chrti; zemí původu je Afghánistán, pod britským patronátem). Standard FCI popisuje psa, který působí dojmem síly a důstojnosti a spojuje rychlost s mohutností, s dlouhou, velmi jemnou srstí; přijímá všechna zbarvení kromě merle. Uvádí ideální výšku 68–74 cm u psů a 63–69 cm u fen; standard AKC uvádí hmotnost asi 60 liber (27 kg) u psů a asi 50 liber (23 kg) u fen. Pes této velikosti dorůstá zhruba v 15–18 měsících (PetMD) a Royal Kennel Club uvádí délku života přes 10 let.",
+        "Standard FCI označuje afghánského chrta za důstojného a odtažitého, s jistou bystrou divokostí. Royal Kennel Club doporučuje více než dvě hodiny pohybu denně, každodenní péči o srst a velký dům se zahradou; PDSA uvádí, že dlouhá hedvábná srst vyžaduje každodenní kartáčování, že afghánští chrti jsou při dobré socializaci vhodní k dětem a že kvůli silnému loveckému instinktu je třeba opatrnosti u jiných zvířat. PetMD radí po jídle počkat nejméně hodinu, než se pes začne pohybovat, a koupat nejméně jednou za týden až dva; WebMD doporučuje čistit zuby denně.",
+      ],
+      sources: ["S849", "S850", "S851", "S852", "S853", "S854", "S10"],
+    },
+    australian_silky_terrier: {
+      aka: "Silky teriér, Silky Terrier, Silky",
+      text: [
+        "Australský silky teriér je malý, nanejvýš bdělý toy teriér z Austrálie (skupina FCI 3, teriéři; sekce toy teriéři), v Severní Americe zvaný silky teriér. Standard FCI požaduje plochou, jemnou, lesklou srst hedvábné struktury v modré s pálením – přijatelné jsou všechny odstíny modré a pálené, stříbrná a bílá ne – a výšku 23–26 cm u psů; fenky jsou o něco menší. Standardy hmotnost neuvádějí („úměrná výšce“); PetMD a WebMD ji udávají okolo 10 liber (asi 4,5 kg). Pes této velikosti dorůstá zhruba v 8–12 měsících (PetMD) a Royal Kennel Club uvádí délku života přes 12 let (PetMD a WebMD: 13–15 let).",
+        "Standard FCI popisuje odvážného a důstojného toy teriéra, který jako společník nemá konkurenci. Royal Kennel Club doporučuje až 30 minut pohybu denně, každodenní péči o srst a uvádí, že plemeno se hodí do bytu. PetMD píše, že silky teriéři vycházejí s jinými zvířaty i dětmi, pokud jsou v útlém věku správně socializováni; doporučuje socializační kurzy před 16. týdnem, čištění uší každé dva až tři týdny a vzhledem k loveckému pudu držet psa na vodítku nebo v oploceném prostoru. WebMD doporučuje čistit zuby denně a koupat zhruba jednou měsíčně.",
+      ],
+      sources: ["S855", "S856", "S857", "S858", "S10"],
+    },
+    parson_russell_terrier: {
+      aka: "Parson Jack Russell Terrier, Parson Terrier, PRT",
+      text: [
+        "Parson Russell teriér je aktivní a hbitý teriér pracovního vzhledu z Velké Británie, původně chovaný k práci na lišce (skupina FCI 3, teriéři; sekce velcí a střední teriéři). Je to jiné plemeno než jack russell teriér: Kennel Club ho poprvé uznal v roce 1990 jako Parson Jack Russell Terrier. Standard FCI požaduje bílého nebo převážně bílého psa se znaky pálenými, citronovými nebo černými, případně v jakékoli kombinaci těchto barev, s drsnou, přerušovanou nebo hladkou srstí a ideální výškou 36 cm u psů a 33 cm u fen. PDSA uvádí průměrnou hmotnost 6–8 kg. Pes této velikosti dorůstá zhruba v 9–12 měsících (PetMD) a Royal Kennel Club uvádí délku života přes 12 let (WebMD: 13 až 15 let).",
+        "Standard FCI označuje plemeno za odvážné a přátelské. Royal Kennel Club doporučuje až hodinu pohybu denně a péči o srst jednou týdně; PDSA píše, že tito psi jsou plní energie, ideálně potřebují 1–2 hodiny pohybu denně, dobře vycházejí s dětmi, jsou výbornými rodinnými mazlíčky a v útlém věku je třeba je socializovat s ostatními zvířaty v rodině. PetMD poznamenává, že někteří mají silný lovecký pud, a doporučuje denně čistit zuby, čistit uši každé dva týdny a koupat každé dva až čtyři týdny; WebMD dodává, že nemají rádi samotu a může se u nich objevit separační úzkost.",
+      ],
+      sources: ["S864", "S865", "S866", "S867", "S868", "S10"],
+    },
+    wire_fox_terrier: {
+      aka: "Drsnosrstý foxteriér, Fox Terrier (Wire), Wire Hair Fox Terrier, Wirehaired Fox Terrier, Fox Terrier",
+      text: [
+        "Foxteriér drsnosrstý je aktivní a temperamentní teriér z Velké Británie (skupina FCI 3, teriéři; sekce velcí a střední teriéři), nikoli toy foxteriér. Standard FCI požaduje kost a sílu v malém rámci, nikdy neotesanou ani hrubou stavbu, hustou, velmi drsnou srst s jemnější podsadou, převažující bílou s černými, černými pálenými nebo pálenými znaky a kohoutkovou výšku nepřesahující 39 cm u psů; fenky jsou o něco menší. Standard AKC uvádí pro psa 18 liber ve výstavní kondici a pro fenu asi o dvě libry méně, s odchylkou jedné libry na obě strany (asi 7,7–8,6 kg u psů a 6,8–7,7 kg u fen). Pes této velikosti dorůstá zhruba v 9–12 měsících (PetMD) a Royal Kennel Club uvádí délku života přes 12 let (PetMD: 12–15 let).",
+        "Standard FCI označuje plemeno za přátelské, otevřené a nebojácné. Royal Kennel Club doporučuje až hodinu pohybu denně a péči o srst víc než jednou týdně; PDSA píše, že foxteriéři rádi si hrají a zkoumají, jsou výbornými rodinnými mazlíčky a péči o srst vyžadují jednou až dvakrát týdně. WebMD je označuje za skvělé společníky dětí, ale u malých dětí radí vždy dohlížet; PetMD uvádí, že kvůli silnému loveckému pudu je třeba je v blízkosti malých zvířat pečlivě sledovat, a doporučuje štěně dobře socializovat, denně čistit zuby, koupat zhruba jednou měsíčně a srst ručně trimovat třikrát až čtyřikrát ročně; WebMD doporučuje zkracovat drápky zhruba jednou měsíčně.",
+      ],
+      sources: ["S871", "S872", "S873", "S874", "S875", "S876", "S10"],
+    },
+    manchester_terrier: {
+      aka: "Manchester teriér, Manchester Terrier (Standard), Black and Tan Terrier, Manchester",
+      text: [
+        "Manchesterský teriér je kompaktní, elegantní teriér z Velké Británie (skupina FCI 3, teriéři; sekce velcí a střední teriéři), standardní velikosti, nikoli toy. Standard FCI požaduje psa kompaktního, elegantního, zdravé a pevné stavby, s přiléhavou, hladkou, krátkou a lesklou srstí pouze v uhlově černé a sytě mahagonové pálené barvě, a uvádí ideální kohoutkovou výšku 41 cm u psů a 38 cm u fen. Standard Canadian Kennel Club uvádí hmotnost 5,5 až 10 kg (12 až 22 liber). Pes této velikosti dorůstá zhruba v 9–12 měsících (PetMD) a PDSA uvádí délku života přes 12 let (WebMD: 15 až 17 let).",
+        "Standard FCI označuje plemeno za bystré, bdělé, veselé a sportovní, s dobrým úsudkem a oddané. PDSA doporučuje až hodinu pohybu denně a uvádí, že kartáčování jednou týdně obvykle stačí. PetMD píše, že manchesterští teriéři vycházejí dobře s dětmi, zvlášť pokud je poznají už jako štěňata, a doporučuje štěně socializovat od prvního dne doma; poznamenává také silný lovecký pud z doby, kdy chytali potkany, takže se nemusejí hodit do domácností s křečky nebo pískomily. WebMD radí nikdy nenechávat malé děti se psy bez dozoru, doporučuje denně čistit zuby a uvádí, že plemeno je citlivé na chlad, takže může být zapotřebí obleček nebo svetr.",
+      ],
+      sources: ["S888", "S889", "S890", "S891", "S892", "S10"],
+    },
+    tibetan_terrier: {
+      aka: "Tibet Terrier",
+      text: [
+        "Tibetský teriér je statný, středně velký dlouhosrstý společenský pes z Tibetu (skupina FCI 9, společenská a toy plemena; sekce tibetská plemena), teriér jen podle jména. Standard FCI požaduje celkově čtvercový obrys, dvouvrstvou srst s bohatou, jemnou, dlouhou, rovnou nebo vlnitou svrchní srstí, převislé osrstěné uši a ocas nesený stočený na hřbetě; povoleno je jakékoli zbarvení kromě čokoládového, játrového a merle a psi měří v kohoutku 36–41 cm, fenky jsou o něco menší. Standard Canadian Kennel Club uvádí hmotnost 8,25 až 13,5 kg (18 až 30 liber). Pes této velikosti dorůstá zhruba ve 12–15 měsících (PetMD) a PDSA uvádí délku života přes 12 let (PetMD: 15–16 let).",
+        "Standard FCI označuje plemeno za živé a dobromyslné, otevřené, bdělé a inteligentní, ale k cizím lidem zdrženlivé v projevech náklonnosti. PDSA popisuje tibetské teriéry jako mírné, přátelské a mazlivé psy, kteří jsou dobrými rodinnými mazlíčky; doporučuje okolo hodiny pohybu denně a uvádí, že péče o srst je každodenní nutností. PetMD poznamenává, že pokud zůstanou dlouho sami, může se u nich rozvinout separační úzkost, a doporučuje štěně přihlásit do socializačních kurzů před 16. týdnem; píše, že při seznámení pod dohledem mohou být dobří s malými dětmi i jinými psy, zatímco WebMD uvádí, že někteří jedinci mají s malými dětmi a jinými psy potíže. WebMD doporučuje čistit zuby denně.",
+      ],
+      sources: ["S904", "S905", "S906", "S907", "S909", "S10"],
+    },
+    greyhound: {
+      aka: "Anglický chrt, English Greyhound",
+      text: [
+        "Greyhound je velký chrt z Velké Británie; FCI ho vede ve skupině 10 mezi krátkosrstými chrty. Standard FCI popisuje silně stavěného, vzpřímeného psa velkorysých proporcí, svalnaté síly a souměrné stavby, inteligentního, mírného, mazlivého a vyrovnané povahy, s jemnou, přiléhavou srstí černou, bílou, červenou, modrou, plavou, žlutohnědou nebo žíhanou, případně s jakoukoli z těchto barev přerušenou bílou; uvádí ideální výšku 71–76 cm u psů a 68–71 cm u fen. Standard AKC uvádí hmotnost 65 až 70 liber (asi 29,5–31,8 kg) u psů a 60 až 65 liber (asi 27,2–29,5 kg) u fen. Pes této velikosti dorůstá zhruba v 15–18 měsících (PetMD). Britská studie VetCompass o chrtech v péči veterinářů zjistila medián délky života 11,4 roku; PDSA uvádí přes 10 let.",
+        "PDSA uvádí, že greyhoundi nejsou přehnaně energičtí: potřebují asi hodinu pohybu denně a dávají přednost několika dobrým během před kilometry chůze; jejich krátká srst vyžaduje kartáčování jednou týdně. Při správné socializaci v útlém věku z nich mohou být dobří rodinní psi, mají však silný pronásledovací instinkt – PetMD píše, že jejich velmi silný lovecký pud je činí nevhodnými do domácností s kočkami nebo jinými malými zvířaty. WebMD doporučuje čistit zuby denně a poznamenává, že bez izolační podsady mohou být greyhoundi citliví na extrémní teploty.",
+      ],
+      sources: ["S912", "S913", "S914", "S916", "S917", "S918", "S920", "S10"],
+    },
+    xoloitzcuintli: {
+      aka: "Xoloitzcuintli, Xolo, Mexický naháč, Mexican Hairless Dog, Mexican Hairless",
+      text: [
+        "Xoloitzcuintle je starobylý primitivní pes z Mexika; FCI ho vede ve skupině 5 mezi primitivními typy. Standard FCI popisuje tichého a klidného psa, veselého, bdělého a inteligentního, nikdy agresivního, ve dvou varietách, které se liší jen srstí a chrupem: bezsrstá s hladkou holou kůží a osrstěná s krátkou přiléhavou srstí. Vyskytuje se ve třech velikostech – 25–35 cm, 35–45 cm a 46–60 cm v kohoutku – a v barvě černé, černošedé, břidlicově šedé, tmavě šedé, načervenalé, játrové, bronzové nebo světle plavé, přičemž se upřednostňuje celistvá tmavá kůže. WebMD uvádí hmotnost 10 až 15 liber pro toy, 15 až 30 liber pro miniaturní a 30 až 55 liber pro standardní velikost (asi 4,5–24,9 kg napříč velikostmi). Pes standardní velikosti dorůstá zhruba ve 12–15 měsících (PetMD). PetMD i WebMD uvádějí délku života 13–18 let.",
+        "PetMD píše, že xolové potřebují asi 20 minut pohybu denně. Holá kůže vyžaduje péči: PetMD radí před vycházkou použít opalovací krém pro psy, nikdy ne pro lidi, a VCA uvádí, že se nejlépe hodí do teplého podnebí a v chladu potřebují svetr. WebMD označuje xola za dobrého rodinného psa pro rodiny s dětmi a doporučuje čistit zuby dvakrát až třikrát týdně; PetMD dodává, že kontakt s dětmi má být vždy pod dohledem, že štěňata je třeba socializovat, aby z nich nevyrostli psi nedůvěřiví k novým lidem, a že plemeno má silný lovecký pud vůči malým zvířatům.",
+      ],
+      sources: ["S923", "S924", "S926", "S927", "S928", "S10"],
+    },
+    spinone_italiano: {
+      aka: "Spinone, Spinoni, Italský spinone, Italian Spinone, Italian Griffon, Italian Wire-haired Pointer",
+      text: [
+        "Italský hrubosrstý ohař (spinone italiano) je italský ohař; FCI ho vede ve skupině 7 mezi kontinentálními ohaři typu grifonů. Standard FCI popisuje psa pevné stavby, robustního a svěžího, se silnou kostrou a hrubou srstí – od přírody společenského, povolného a trpělivého a zkušeného lovce v každém terénu. Zbarvení je čistě bílé, bílé s oranžovými znaky, oranžově kropenaté, bílé s hnědými znaky a hnědě kropenaté. Standard FCI uvádí výšku 60–70 cm u psů a 58–65 cm u fen a hmotnost 32–37 kg u psů a 28–30 kg u fen. Pes této velikosti dorůstá zhruba v 15–18 měsících (PetMD). PDSA uvádí délku života přes 10 let, PetMD 10–12 let.",
+        "PDSA označuje spinone za energické plemeno, které ideálně potřebuje více než 2 hodiny pohybu denně, a uvádí, že hustou, částečně drsnou srst je třeba doma pročesávat 2–3krát týdně. WebMD doporučuje zkracovat drápky jednou týdně a čistit zuby denně, uvádí, že plemeno obvykle vychází s jinými psy i dětmi, a varuje, že dlouhá samota často vede k potížím. PetMD radí štěňata včas socializovat, venku psa držet na vodítku nebo v oploceném prostoru a hodinu před jídlem i po něm ho nezatěžovat pohybem kvůli riziku nadmutí žaludku.",
+      ],
+      sources: ["S935", "S936", "S937", "S938", "S10"],
+    },
+    pointer: {
+      aka: "Anglický pointer, English Pointer",
+      text: [
+        "Pointer je britský ohař; FCI ho vede ve skupině 7 mezi britskými a irskými ohaři a setry. Standard FCI popisuje souměrného, dobře stavěného psa s obrysem půvabných křivek, silného, ale hbitého, bdělého a laskavé, vyrovnané povahy, s jemnou, krátkou, tvrdou srstí s výrazným leskem. Obvyklá zbarvení jsou citronově bílé, oranžově bílé, játrově bílé a černobílé. Standard FCI uvádí výšku 63–69 cm u psů a 61–66 cm u fen; standard UKC pracovní hmotnost 55–75 liber (asi 25–34 kg) u psů a 44–65 liber (asi 20–29,5 kg) u fen. Pes této velikosti dorůstá zhruba v 15–18 měsících (PetMD). PDSA uvádí délku života přes 12 let, PetMD 10–12 let.",
+        "PDSA píše, že pointeři mají vysokou energii a ideálně potřebují přes 2 hodiny pohybu denně, vyžadují aktivní majitele a dobrý výcvik odvolání a jejich krátká srst stačí kartáčovat jen jednou týdně. PetMD radí chovat je v oploceném dvoře, aby se nevzdalovali, a upozorňuje, že mohou ohrožovat ptáky chované jako mazlíčci; WebMD doporučuje čistit zuby denně a uvádí, že k malým dětem se příliš nehodí. PDSA dodává, že jako u všech plemen pomáhá správná socializace v útlém věku zapadnout do rodinného života.",
+      ],
+      sources: ["S943", "S944", "S945", "S946", "S947", "S10"],
+    },
+    welsh_terrier: {
+      aka: "Welsh teriér, Welshie, Welsh",
+      text: [
+        "Velšský teriér je teriér z Velké Británie; FCI ho vede ve skupině 3 mezi velkými a středními teriéry. Standard FCI popisuje elegantního, pracovního, dobře vyváženého a kompaktního psa s drsnou, tvrdou, velmi přiléhavou a bohatou srstí – mazlivého, poslušného a snadno ovladatelného, veselého a málokdy plachého. Zbarvení je černé s pálením nebo černošedé s pálením. Standard FCI uvádí výšku do 39 cm a hmotnost 9–9,5 kg (20–21 liber). Pes této velikosti dorůstá zhruba v 9–12 měsících (PetMD). Royal Kennel Club a PDSA uvádějí délku života přes 12 let, PetMD 12–15 let.",
+        "Royal Kennel Club uvádí, že velšský teriér potřebuje až hodinu pohybu denně a péči o srst víc než jednou týdně; PDSA uvádí okolo hodiny pohybu denně a kartáčování dvakrát až třikrát týdně a popisuje hravého, přátelského psa, který miluje děti a je výborným rodinným mazlíčkem. PetMD poznamenává silný lovecký pud – menší zvířata může honit – a radí venku vodítko nebo oplocený prostor a socializaci a výcvik od útlého věku.",
+      ],
+      sources: ["S955", "S956", "S957", "S958", "S10"],
+    },
+    american_hairless_terrier: {
+      aka: "AHT, Hairless Terrier",
+      text: [
+        "Americký bezsrstý teriér je malý až středně velký, hladce osvalený a aktivní teriér z USA, uznaný organizací American Kennel Club ve skupině teriérů; FCI ho nevede. Standard plemene popisuje energického, bdělého, zvídavého a inteligentního psa s ušima ve tvaru V a přirozeným ocasem, který se nikdy nekupíruje. Existují dvě variety: bezsrstá, bez chlupů kromě vousů a chlupů na obočí a čenichu, a osrstěná s krátkou, hladkou srstí. Standard uvádí ideální výšku 12–16 palců (30–41 cm); PetMD uvádí hmotnost 12–28 liber (5,4–12,7 kg) a délku života 14–16 let a pes této velikosti dorůstá zhruba v 9–12 měsících (PetMD).",
+        "Dogs NSW uvádí asi 20 minut pohybu denně a PetMD píše, že pravidelný pohyb a duševní stimulace jsou pro plemeno nezbytné; označuje je za skvělé herní kamarády dětí, u malých dětí však za dohledu. Holá kůže vyžaduje péči: plemenný klub uvádí, že opalovací krém nebo ochranný oděv je nutností, aby se zabránilo spálení, PetMD radí v zimě svetr a pravidelné koupele, nejlépe každý týden, WebMD doporučuje čistit zuby denně a plemenný klub zkracovat drápky jednou týdně. Plemenný klub také poznamenává silný lovecký pud.",
+      ],
+      sources: ["S967", "S971", "S972", "S973", "S977", "S10"],
+    },
+    tibetan_spaniel: {
+      aka: "Tibbie, Tibetan Spaniel",
+      text: [
+        "Tibetský španěl je malý, aktivní a bdělý společenský pes z Tibetu (Čína), ve skupině FCI společenských a toy plemen mezi tibetskými plemeny, přičemž patronátní zemí plemene je Velká Británie. Standard FCI ho popisuje jako veselého a sebevědomého, vysoce inteligentního a k cizím lidem odtažitého, bdělého, věrného, ale nezávislého, o málo delšího než vysokého, s hedvábnou srstí střední délky, osrstěnýma ušima a bohatě osrstěným ocasem neseným stočeným na hřbetě; povolena jsou všechna zbarvení kromě merle. Standard uvádí výšku asi 25,4 cm a ideální hmotnost 4,1–6,8 kg; pes této velikosti dorůstá zhruba v 9–12 měsících (PetMD). Ve velké britské studii (McMillan a kol., 2024) patřilo plemeno k nejdéle žijícím, s mediánem 15,2 roku; PDSA uvádí délku života přes 12 let.",
+        "PDSA píše, že tibetští španělé potřebují okolo hodiny pohybu denně, rádi se zapojí do rodinných her, obvykle dobře vycházejí se všemi a jsou dobrými rodinnými mazlíčky a že obvykle stačí kartáčovat srst párkrát týdně. WebMD uvádí, že jsou náchylní k separační úzkosti a lépe se hodí do rodin se staršími dětmi, potřebují bezpečně oplocený dvůr a v horkém počasí se mohou přehřát; doporučuje čistit zuby denně, kontrolovat uši nejméně jednou týdně, kontrolovat drápky jednou měsíčně a koupat zhruba jednou měsíčně.",
+      ],
+      sources: ["S980", "S981", "S982", "S771", "S10"],
+    },
+    black_russian_terrier: {
+      aka: "Černý ruský teriér, Russian Black Terrier, Russian Terrier, Tchiorny Terrier, BRT",
+      text: [
+        "Ruský černý teriér je velký, robustní a velmi atletický pracovní pes z Ruska, ve skupině FCI pinčů a kníračů. Standard FCI ho popisuje jako důstojného, sebevědomého a dobře ovladatelného, přívětivého, nenáročného, chytrého a přátelského, s drsnou, hustou dvouvrstvou srstí, která tvoří bohaté obočí, knír a plnovous; jediná zbarvení jsou černá a černá s příměsí šedých chlupů. Standard uvádí u psů 72–76 cm a 50–60 kg, u fen 68–72 cm a 45–50 kg; pes této velikosti obvykle dosahuje dospělé hmotnosti v 18–24 měsících. Royal Kennel Club uvádí délku života přes 10 let.",
+        "Royal Kennel Club uvádí více než 2 hodiny pohybu a každodenní péči o srst, velký dům se zahradou a srst, která nelíná. PetMD píše, že plemeno je oddané své rodině a pod dohledem může být dobré s dětmi, že důležitá je včasná a důsledná socializace a že se kvůli nadmutí žaludku má vyhnout namáhavému pohybu těsně před jídlem i po něm. VCA uvádí jako ideální partnery starší děti a doporučuje stříhání v psím salonu každých šest až osm týdnů.",
+      ],
+      sources: ["S985", "S986", "S989", "S990", "S10"],
+    },
+    neapolitan_mastiff: {
+      aka: "Mastino napoletano, Neapolský mastif, Neo, Neapolitan, Italian Mastiff",
+      text: [
+        "Neapolský mastin (mastino napoletano) je velký, těžký a mohutný hlídací pes z Itálie; FCI ho vede ve skupině 2 mezi molossoidními plemeny typu mastifů. Standard FCI ho popisuje jako vyrovnaného a věrného, neagresivního, s krátkou, tvrdou, hustou srstí a tlustou, volnou kůží, která tvoří četné záhyby a vrásky, zejména na hlavě. Upřednostňovaná zbarvení jsou šedá, olověná šeď a černá, ale také hnědá, plavá a sytě plavá. Standard uvádí u psů 65–75 cm a 60–70 kg, u fen 60–68 cm a 50–60 kg; pes této velikosti obvykle dosahuje dospělé hmotnosti v 18–24 měsících. Royal Kennel Club a PDSA uvádějí délku života pod 10 let, PetMD jen 7–9 let.",
+        "Royal Kennel Club uvádí až hodinu pohybu denně, péči o srst jednou týdně, línající srst a velký dům se zahradou; řadí plemeno do kategorie 3 programu Breed Watch a PDSA uvádí, že kvůli nadbytku kůže na obličeji se vyskytují potíže s víčky, například entropium a ektropium. PDSA označuje neapolské mastiny za věrné, oddané psy, kteří milují rodinný život, a uvádí, že jejich kožní záhyby je třeba čistit denně. PetMD píše, že jsou skvělí s rodinami a dětmi, ale s malým dítětem by neměli zůstat sami, že hodně slintají a že řádná socializace a výcvik pozitivním posilováním mají začít brzy.",
+      ],
+      sources: ["S993", "S994", "S995", "S996", "S10"],
+    },
+    norwegian_elkhound: {
+      aka: "Norský losí pes, Losí pes, Elkhound, Elkie, Norwegian Elkhound Grey, Norsk Elghund Grå, Norwegian Moose Dog",
+      text: [
+        "Norský losí pes šedý je šedý severský lovecký špic z Norska, vyšlechtěný k lovu losů; FCI ho vede ve skupině 5 mezi severskými lovčími psy. Standard FCI popisuje typického špice – kompaktního, krátkého a čtvercové stavby, s malýma vzpřímenýma ušima, ocasem pevně stočeným na hřbetě a hustou, hrubou srstí střední délky –, který je nebojácný, energický a statečný. Šedá v různých odstínech je jedinou barvou, kterou standard připouští. Standard FCI uvádí ideální výšku 52 cm u psů a 49 cm u fen a standard AKC hmotnost asi 55 liber (25 kg) u psů a asi 48 liber (22 kg) u fen. Pes této velikosti dorůstá zhruba ve 12–15 měsících (PetMD) a PetMD a WebMD uvádějí délku života 12–15 let.",
+        "PetMD doporučuje hodinu pohybu denně a píše, že plemeno potřebuje duševní stimulaci stejně jako fyzický pohyb; označuje ho za skvělého k dětem všech věkových skupin, pokud je kontakt pod dohledem, a za báječného rodinného psa, když je jako štěně socializován a brzy cvičen. PetMD radí zabezpečený oplocený prostor nebo venku vodítko, poznamenává silné línání i to, že kvůli husté srsti může být pes náchylný k přehřátí; WebMD radí kartáčovat srst alespoň dvě minuty denně a čistit zuby denně.",
+      ],
+      sources: ["S960", "S961", "S963", "S964", "S10"],
+    },
+    mudi: {
+      aka: "Maďarský mudi, Hungarian Mudi",
+      text: [
+        "Mudi je maďarský pastevecký pes; FCI ho vede ve skupině 1 mezi pasteveckými psy. Standard FCI popisuje středně velkého psa s klínovitou hlavou, vzpřímenýma ušima a hřbetní linií sklánějící se k zádi, s hustou, lesklou, vlnitou nebo mírně zakroucenou srstí – mimořádně učenlivého, živého, odvážného, ostražitého a dychtivého pracovat. Vyskytuje se v černé, bílé, plavé, popelavé (modré), játrové, popelavě hnědé a cifra (merle). Standard FCI uvádí výšku 41–47 cm u psů a 38–44 cm u fen; PetMD uvádí hmotnost 18–29 liber (asi 8–13 kg). Pes této velikosti dorůstá zhruba ve 12–15 měsících (PetMD). Royal Kennel Club uvádí délku života přes 10 let, PetMD 12–14 let.",
+        "Royal Kennel Club uvádí, že mudi potřebuje až hodinu pohybu denně a péči o srst jednou týdně, je věrný a mazlivý ke své rodině a potřebuje uplatnit svou energii a inteligenci – nejlépe se hodí pro zkušeného majitele, který mu dokáže dát stimulaci, řád a smysl. PetMD ho popisuje jako chytrého, nezávislého a hlasitého psa a píše, že štěňata mudi potřebují socializaci od útlého věku, aby se cítila dobře mezi dětmi, jinými zvířaty a novými lidmi.",
+      ],
+      sources: ["S949", "S950", "S952", "S10"],
+    },
+    lhasa_apso: {
+      aka: "Lhasa, Apso, Lasa Apso",
+      text: [
+        "Lhasa apso je malý společenský pes z Tibetu; Royal Kennel Club uvádí, že ho původně chovali tibetští mniši jako společníka a hlídače. Je to malý pes s dlouhou srstí; VCA uvádí výšku 10–11 palců (asi 25–28 cm) a hmotnost 13–15 liber (asi 6–7 kg). Pes této velikosti dorůstá zhruba v 9–12 měsících (PetMD) a Royal Kennel Club uvádí délku života přes 12 let.",
+        "Royal Kennel Club doporučuje až hodinu pohybu denně a každodenní péči o srst, uvádí, že plemeno nelíná a hodí se do bytu, a řadí ho do kategorie 1 programu Breed Watch. PDSA píše, že lhasa apso dobře vychází s dětmi i jinými zvířaty v domácnosti, pokud jsou jako štěňata správně socializována, a k cizím lidem mohou být o něco ostražitější; WebMD doporučuje koupat nejméně jednou za dva týdny, zkracovat drápky každé 3 až 4 týdny a čistit zuby co nejpravidelněji.",
+      ],
+      sources: ["S740", "S741", "S742", "S743", "S10"],
+    },
+    coton_de_tulear: {
+      aka: "Coton, Coton de Tuléar, Royal Dog of Madagascar",
+      text: [
+        "Coton de Tuléar pochází z Madagaskaru pod patronátem Francie; FCI ho vede mezi bišonky a příbuznými plemeny. Standard FCI popisuje malého dlouhosrstého společenského psa s bílou srstí s bavlněnou strukturou, kulatýma tmavýma očima a živým, inteligentním výrazem, veselé, vyrovnané povahy a velmi společenského k lidem i jiným psům. Uvádí výšku 26–28 cm u psů a 23–25 cm u fen a hmotnost 4–6 kg u psů a 3,5–5 kg u fen; základní barva je bílá. Pes této velikosti dorůstá zhruba v 8–12 měsících (PetMD); Royal Kennel Club uvádí délku života přes 12 let.",
+        "Royal Kennel Club doporučuje až 30 minut pohybu denně a uvádí, že plemeno se hodí do bytu, málo líná a vyžaduje každodenní péči o srst. PDSA označuje coton de tuléar za věrné a mazlivé psy, kterým rodinný život svědčí a kteří jsou výbornými rodinnými mazlíčky. PetMD píše, že obvykle vycházejí s dětmi i jinými zvířaty, pokud je seznámení správně provedeno, a že u nich může vzniknout separační úzkost, pokud zůstanou sami déle než pár hodin; doporučuje kontrolovat uši nejméně jednou týdně a koupat zhruba jednou měsíčně.",
+      ],
+      sources: ["S10", "S721", "S722", "S724", "S725", "S726"],
+    },
+    chow_chow: {
+      aka: "Chow, Chow-Chow",
+      text: [
+        "Čau-čau je kompaktní špic podobný lvovi z Číny s hustou odstávající srstí v jedné jednolité barvě: černé, červené, modré, plavé, krémové nebo bílé (standard FCI). Standard FCI uvádí výšku 48–56 cm u psů a 46–51 cm u fen; PDSA průměrnou hmotnost 20–30 kg. Pes této velikosti dorůstá zhruba v 15–18 měsících (PetMD); PDSA uvádí délku života pod 10 let, PetMD 8 až 12 let.",
+        "PDSA píše, že plemeno potřebuje nejméně hodinu pohybu denně, každodenní kartáčování a odstup mezi jídlem a pohybem. Popisuje věrné psy, kteří mohou být ideálními mazlíčky ve správné domácnosti, nejlépe se zkušenými majiteli; plemeno nedoporučuje k malým dětem a poznamenává silný lovecký pud, to, že nemusí snášet samotu, a že je třeba je dobře socializovat od útlého věku. PetMD dodává, že hustá srst a krátký čenich zvyšují sklon k přehřátí.",
+      ],
+      sources: ["S696", "S700", "S701", "S10"],
+    },
+    old_english_sheepdog: {
+      aka: "Bobtail, Bob-tail, OES, Shepherd's Dog",
+      text: [
+        "Starý anglický ovčák je velký, silný pastevecký pes čtvercového vzhledu z Velké Británie s bohatou, drsnou, huňatou srstí: jakýkoli odstín šedé, žíhané nebo modré na těle, s bílou hlavou, krkem a předními partiemi (standard FCI). Standard FCI uvádí výšku 61 cm a více u psů a 56 cm a více u fen; PDSA průměrnou výšku 56–61 cm a průměrnou hmotnost 27–30 kg. Pes této velikosti dorůstá zhruba v 15–18 měsících (PetMD); PDSA uvádí délku života přes 10 let, PetMD 10–12 let.",
+        "PDSA píše, že plemeno potřebuje nejméně dvě hodiny pohybu denně rozdělené do několika procházek a že dlouhá srst vyžaduje každodenní kartáčování a zastřižení v psím salonu zhruba každých šest týdnů. Popisuje pohodové rodinné mazlíčky, kteří se lépe hodí do rodin se staršími dětmi, mohou trpět separační úzkostí, když zůstanou sami, mají silný pastevecký a lovecký pud, a radí po jídle nechat před pohybem odstup.",
+      ],
+      sources: ["S704", "S705", "S706", "S10"],
+    },
+    pekingese: {
+      aka: "Pekingský palácový psík, Peke, Pekinese, Lion Dog",
+      text: [
+        "Pekinéz je malý toy pes podobný lvovi z Číny se středně dlouhou, rovnou srstí a hřívou kolem krku. Standard FCI uvádí ideální hmotnost nejvýše 5 kg u psů a 5,4 kg u fen; PDSA uvádí průměrnou hmotnost 5 kg a výšku 15–22 cm. Pes této velikosti dorůstá zhruba v 8–12 měsících (PetMD); PDSA uvádí délku života přes 12 let, PetMD 12–14 let.",
+        "PDSA doporučuje nejméně půl hodiny pohybu denně, ale bez přehánění, protože plochý obličej může ztěžovat dýchání, a v horkých dnech žádný pohyb. Píše, že dlouhá srst vyžaduje každodenní kartáčování, že plemeno silně líná, zejména na jaře a na podzim, že vrásky na obličeji mohou vést k infekcím kožních záhybů, že se pekinézům obvykle lépe daří s dospělými nebo staršími dětmi, že mohou trpět separační úzkostí, když zůstanou sami, a že by měli být socializováni od útlého věku. PetMD radí denně čistit zuby, čistit uši každý týden až dva a u dlouhé srsti zajistit profesionální úpravu každých šest až osm týdnů.",
+      ],
+      sources: ["S690", "S693", "S694", "S10"],
+    },
   },
 };
 
