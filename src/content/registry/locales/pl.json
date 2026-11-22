@@ -1511,6 +1511,22 @@
         "black": "Czarny",
         "black-grey": "Czarny z siwymi włosami"
       }
+    },
+    "neapolitan_mastiff": {
+      "name": "Mastif neapolitański",
+      "slug": "mastif-neapolitanski",
+      "synonyms": [
+        "Mastino napoletano",
+        "Neapolitan Mastiff",
+        "Neo"
+      ],
+      "colours": {
+        "grey": "Szary",
+        "black": "Czarny",
+        "mahogany": "Mahoniowy",
+        "fawn": "Płowy",
+        "deep-fawn": "Ciemnopłowy"
+      }
     }
   },
   "suitability_labels": {

@@ -1475,6 +1475,22 @@
         "black": "Musta",
         "black-grey": "Musta, harmaita karvoja"
       }
+    },
+    "neapolitan_mastiff": {
+      "name": "Napolinmastiffi",
+      "slug": "napolinmastiffi",
+      "synonyms": [
+        "Mastino napoletano",
+        "Neapolitan Mastiff",
+        "Neo"
+      ],
+      "colours": {
+        "grey": "Harmaa",
+        "black": "Musta",
+        "mahogany": "Mahonginruskea",
+        "fawn": "Kellanruskea",
+        "deep-fawn": "Tumma kellanruskea"
+      }
     }
   },
   "suitability_labels": {

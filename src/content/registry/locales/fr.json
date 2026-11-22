@@ -1345,6 +1345,23 @@
         "black-tan": "Noir et feu",
         "black": "Noir"
       }
+    },
+    "neapolitan_mastiff": {
+      "name": "Mâtin napolitain",
+      "slug": "matin-napolitain",
+      "synonyms": [
+        "Mastino napoletano",
+        "Neapolitan Mastiff",
+        "Mastiff napolitain",
+        "Neo"
+      ],
+      "colours": {
+        "grey": "Gris",
+        "black": "Noir",
+        "mahogany": "Acajou",
+        "fawn": "Fauve",
+        "deep-fawn": "Fauve foncé"
+      }
     }
   },
   "suitability_labels": {

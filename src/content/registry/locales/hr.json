@@ -1555,6 +1555,22 @@
         "black": "Crna",
         "black-grey": "Crna sa sijedim dlakama"
       }
+    },
+    "neapolitan_mastiff": {
+      "name": "Napuljski mastif",
+      "slug": "napuljski-mastif",
+      "synonyms": [
+        "Mastino napoletano",
+        "Neapolitan Mastiff",
+        "Napolitanski mastif"
+      ],
+      "colours": {
+        "grey": "Siva",
+        "black": "Crna",
+        "mahogany": "Mahagonij",
+        "fawn": "Jelenje žuta (fawn)",
+        "deep-fawn": "Tamna jelenje žuta"
+      }
     }
   },
   "suitability_labels": {

@@ -1453,6 +1453,22 @@
         "black": "Svart",
         "black-grey": "Svart med inslag av grått"
       }
+    },
+    "neapolitan_mastiff": {
+      "name": "Mastino napoletano",
+      "slug": "mastino-napoletano",
+      "synonyms": [
+        "Neapolitansk mastiff",
+        "Neapolitan Mastiff",
+        "Neo"
+      ],
+      "colours": {
+        "grey": "Grå",
+        "black": "Svart",
+        "mahogany": "Mahogny",
+        "fawn": "Fawn",
+        "deep-fawn": "Mörk fawn"
+      }
     }
   },
   "suitability_labels": {

@@ -1343,6 +1343,22 @@
         "black": "Schwarz",
         "black-grey": "Schwarz, grau meliert"
       }
+    },
+    "neapolitan_mastiff": {
+      "name": "Mastino Napoletano",
+      "slug": "mastino-napoletano",
+      "synonyms": [
+        "Neapolitanischer Mastiff",
+        "Neapolitan Mastiff",
+        "Neo"
+      ],
+      "colours": {
+        "grey": "Grau",
+        "black": "Schwarz",
+        "mahogany": "Mahagoni",
+        "fawn": "Falb",
+        "deep-fawn": "Dunkelfalb"
+      }
     }
   },
   "suitability_labels": {
