@@ -1364,6 +1364,22 @@
         "black-tan": "Preto e fogo",
         "black": "Preto"
       }
+    },
+    "neapolitan_mastiff": {
+      "name": "Mastim napolitano",
+      "slug": "mastim-napolitano",
+      "synonyms": [
+        "Mastino napoletano",
+        "Neapolitan Mastiff",
+        "Neo"
+      ],
+      "colours": {
+        "grey": "Cinzento",
+        "black": "Preto",
+        "mahogany": "Mogno",
+        "fawn": "Fulvo",
+        "deep-fawn": "Fulvo escuro"
+      }
     }
   },
   "suitability_labels": {

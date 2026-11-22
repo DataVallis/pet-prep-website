@@ -1555,6 +1555,22 @@
         "black": "Černá",
         "black-grey": "Černá s šedými chlupy"
       }
+    },
+    "neapolitan_mastiff": {
+      "name": "Neapolský mastin",
+      "slug": "neapolsky-mastin",
+      "synonyms": [
+        "Mastino napoletano",
+        "Neapolitan Mastiff",
+        "Neapolský mastif"
+      ],
+      "colours": {
+        "grey": "Šedá",
+        "black": "Černá",
+        "mahogany": "Mahagonová",
+        "fawn": "Plavá",
+        "deep-fawn": "Tmavě plavá"
+      }
     }
   },
   "suitability_labels": {

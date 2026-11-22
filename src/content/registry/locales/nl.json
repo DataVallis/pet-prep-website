@@ -1396,6 +1396,22 @@
         "black-tan": "Zwart met tan",
         "black": "Zwart"
       }
+    },
+    "neapolitan_mastiff": {
+      "name": "Mastino napoletano",
+      "slug": "mastino-napoletano",
+      "synonyms": [
+        "Napolitaanse mastiff",
+        "Neapolitan Mastiff",
+        "Neo"
+      ],
+      "colours": {
+        "grey": "Grijs",
+        "black": "Zwart",
+        "mahogany": "Mahonie",
+        "fawn": "Fawn",
+        "deep-fawn": "Donker fawn"
+      }
     }
   },
   "suitability_labels": {

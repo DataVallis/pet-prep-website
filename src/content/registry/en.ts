@@ -882,6 +882,15 @@ const en: RegistryCopy = {
       sources: ["S985", "S986", "S989", "S990", "S10"],
     },
 
+    neapolitan_mastiff: {
+      aka: "Mastino Napoletano, Neo, Neapolitan, Italian Mastiff, napolitanski mastif",
+      text: [
+        "The Neapolitan Mastiff (Mastino Napoletano) is a large, heavy and massive guardian dog from Italy; the FCI lists it in Group 2 among the Molossoid breeds of Mastiff type. The FCI standard describes it as steady and loyal, not aggressive, with a short, hard, dense coat and thick, loose skin that forms numerous folds and wrinkles, especially on the head. Preferred colours are grey, lead grey and black, but also brown, fawn and deep fawn. The standard gives males 65–75 cm and 60–70 kg, females 60–68 cm and 50–60 kg; a dog of this size typically reaches its adult weight at 18–24 months. The Royal Kennel Club and PDSA give its lifespan as under 10 years, PetMD as just 7–9 years.",
+        "The Royal Kennel Club lists up to 1 hour of exercise a day, grooming once a week, a coat that sheds, and a large house and garden; it places the breed in Breed Watch Category 3, and PDSA says eyelid problems such as entropion and ectropion occur because of the excessive skin over the face. PDSA calls Neapolitan Mastiffs loyal, devoted dogs that love family life and says their skin folds need daily cleaning. PetMD says they are great with families and children but should not be left alone with a small child, that they drool a lot, and that proper socialisation and positive-reinforcement training should start early.",
+      ],
+      sources: ["S993", "S994", "S995", "S996", "S10"],
+    },
+
     norwegian_elkhound: {
       aka: "Elkhound, Elkie, Norwegian Elkhound Grey, Norsk Elghund Grå, Norwegian Moose Dog, norveški losovec",
       text: [

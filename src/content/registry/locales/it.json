@@ -1359,6 +1359,22 @@
         "black-tan": "Nero e focato",
         "black": "Nero"
       }
+    },
+    "neapolitan_mastiff": {
+      "name": "Mastino napoletano",
+      "slug": "mastino-napoletano",
+      "synonyms": [
+        "Mastino",
+        "Neapolitan Mastiff",
+        "Neo"
+      ],
+      "colours": {
+        "grey": "Grigio",
+        "black": "Nero",
+        "mahogany": "Mogano",
+        "fawn": "Fulvo",
+        "deep-fawn": "Fulvo scuro (cervo)"
+      }
     }
   },
   "suitability_labels": {

@@ -1362,6 +1362,22 @@
         "black-tan": "Negro y fuego",
         "black": "Negro"
       }
+    },
+    "neapolitan_mastiff": {
+      "name": "Mastín napolitano",
+      "slug": "mastin-napolitano",
+      "synonyms": [
+        "Mastino napoletano",
+        "Neapolitan Mastiff",
+        "Neo"
+      ],
+      "colours": {
+        "grey": "Gris",
+        "black": "Negro",
+        "mahogany": "Caoba",
+        "fawn": "Leonado",
+        "deep-fawn": "Leonado oscuro"
+      }
     }
   },
   "suitability_labels": {

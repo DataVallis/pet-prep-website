@@ -902,6 +902,15 @@ const sl: RegistryCopy = {
       sources: ["S985", "S986", "S989", "S990", "S10"],
     },
 
+    neapolitan_mastiff: {
+      aka: "napolitanski mastif, neapeljski mastif, mastino napoletano, mastino, Neapolitan Mastiff, Neo",
+      text: [
+        "Napolitanski mastif (Mastino Napoletano) je velik, težak in masiven čuvaj iz Italije, ki ga FCI uvršča v 2. skupino med molose tipa doge. Standard FCI ga opisuje kot mirnega in zvestega, ne napadalnega, s kratko, trdo in gosto dlako ter debelo, ohlapno kožo, ki zlasti na glavi tvori številne gube in nagubanosti. Zaželene barve so siva, svinčeno siva in črna, pa tudi rjava, plava in temno plava. Standard navaja za samce 65–75 cm in 60–70 kg, za samice 60–68 cm in 50–60 kg; pes te velikosti doseže odraslo težo navadno pri 18–24 mesecih. Royal Kennel Club in PDSA navajata življenjsko dobo manj kot 10 let, PetMD le 7–9 let.",
+        "Royal Kennel Club navaja do 1 uro gibanja na dan, česanje enkrat na teden, dlako, ki izpada, ter veliko hišo z vrtom; pasmo uvršča v 3. kategorijo programa Breed Watch, PDSA pa piše, da se zaradi odvečne kože na obrazu pojavljajo težave z vekami, kot sta entropij in ektropij. PDSA napolitanske mastife opisuje kot zveste, predane pse, ki uživajo v družinskem življenju, in poudarja, da je treba kožne gube čistiti vsak dan. PetMD piše, da se odlično razumejo z družinami in otroki, a jih ne smemo pustiti samih z majhnim otrokom, da se močno slinijo in da sta socializacija in učenje s pozitivno spodbudo pomembna od malih nog.",
+      ],
+      sources: ["S993", "S994", "S995", "S996", "S10"],
+    },
+
     norwegian_elkhound: {
       aka: "norveški losovec, norveski losovec, losovec, norveški elkhund, elkhound, Norwegian Elkhound, Norsk Elghund Grå",
       text: [
