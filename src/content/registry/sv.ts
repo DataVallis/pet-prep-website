@@ -991,6 +991,30 @@ const sv: RegistryCopy = {
       ],
       sources: ["S993", "S994", "S995", "S996", "S10"],
     },
+    norfolk_terrier: {
+      aka: "Norfolk, Norfolk terrier, Norfolkterrier",
+      text: [
+        "Norfolkterriern är en av de minsta terrierna och kommer från Storbritannien. FCI räknar den till de små terrierna i grupp 3. FCI-standarden beskriver en låg, pigg, kompakt och kraftig liten hund, en ”liten demon” för sin storlek, med ett älskvärt temperament, vaken och orädd. Pälsen är hård, sträv och rak, och de medelstora, V-formade öronen faller framåt tätt intill kinden. Färgerna är alla nyanser av rött, vetefärgat, svart och tan eller grizzle. Standarden anger en idealhöjd på 25 cm men ingen vikt. UKC:s standard anger 11–12 pund (cirka 5–5,4 kg) och PDSA 5–5,5 kg. En hund i den här storleksklassen är fullvuxen vid ungefär 9–12 månader. Royal Kennel Club anger en livslängd på över 10 år, Woodgreen 12–15 år.",
+        "Royal Kennel Club rekommenderar upp till en timmes motion om dagen och pälsvård mer än en gång i veckan. Enligt klubben fäller rasen och passar i lägenhet, och den står i Breed Watch-kategori 1, och ingen hälsoundersökning före avel rekommenderas. PDSA skriver att den hårda pälsen behöver kammas ett par gånger i veckan och trimmas tre till fyra gånger om året, och att norfolkterriern älskar att gräva. Woodgreen beskriver rasen som mild och tålmodig med barn, men alltid under uppsikt. Norfolkterriern tycker inte om att vara ensam länge och kan vara en riktig rymningskonstnär, så stängslet måste vara rymningssäkert. Jaktdriften är stark, så smådjur som kaniner och marsvin kanske inte är säkra i närheten av den.",
+      ],
+      sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
+    },
+    belgian_sheepdog: {
+      aka: "Groenendael, Belgian Shepherd Groenendael, Belgian Shepherd Dog (Groenendael), Belgian Groenendael, Belgisk vallhund groenendael, Belgisk vallhund",
+      text: [
+        "Groenendael är den långhåriga, svarta varianten av belgisk vallhund, en vallhundsras från Belgien. FCI erkänner en enda ras, belgisk vallhund, med fyra varianter och räknar den till vallhundarna i grupp 1. FCI-standarden beskriver en harmoniskt proportionerad hund som förenar elegans och kraft, med ganska små, högt ansatta, upprättstående öron. Pälsen är lång och slät, längre kring halsen och på bröstet, och för groenendael tillåter standarden bara enfärgat svart. Mankhöjden är cirka 62 cm för hanar och 58 cm för tikar, och vikten cirka 25–30 kg för hanar och 20–25 kg för tikar. En hund i den här storleksklassen är fullvuxen vid ungefär 12–15 månader (PetMD). Royal Kennel Club anger en livslängd på över 10 år, PetMD och WebMD 12–14 år.",
+        "Royal Kennel Club beskriver en vaksam, reserverad och mycket intelligent hund med stor arbetslust. Klubben rekommenderar mer än 2 timmars motion om dagen och pälsvård mer än en gång i veckan. Enligt klubben fäller rasen och passar i ett stort hus med stor trädgård, och den står i Breed Watch-kategori 1. PetMD skriver att belgiska vallhundar knyter starka band till sina människor, behöver mycket motion och mental stimulans och kan försöka valla barn och katter. PetMD rekommenderar tidig socialisering, borstning varje vecka och öronrengöring en eller två gånger i månaden. Enligt WebMD behöver de nästan två timmars motion varje dag och passar inte om man är borta många timmar i sträck. WebMD rekommenderar daglig tandborstning och bad en gång i månaden.",
+      ],
+      sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
+    },
+    finnish_lapphund: {
+      aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, Finsk lapphund",
+      text: [
+        "Finsk lapphund (suomenlapinkoira) är en vall- och vakthund från Finland som från början användes för att valla renar. FCI räknar den till de nordiska vakt- och vallhundarna i grupp 5. FCI-standarden beskriver en hund av under medelstorlek som är intelligent, modig, lugn och foglig, vänlig och trogen. Täckpälsen är rik, lång och sträv och ligger över en mjuk, tät underull. Alla färger är tillåtna. Standarden anger en idealhöjd på 49 cm för hanar och 44 cm för tikar, med 3 cm tolerans, men ingen vikt. PetMD och WebMD anger 33–53 pund (cirka 15–24 kg), och en hund i den här storleksklassen är fullvuxen vid ungefär 12–15 månader. Royal Kennel Club anger en livslängd på över 12 år, PetMD och WebMD 12–15 år.",
+        "Royal Kennel Club anger att rasen behöver upp till en timmes motion om dagen och pälsvård en gång i veckan. Enligt klubben fäller den och passar i ett litet hus med liten eller medelstor trädgård, och den står i Breed Watch-kategori 1. WebMD skriver att lappies fungerar bra med barn eftersom de är en sällskapsras för familjen, och att klorna bör klippas en gång i månaden. Enligt PetMD vill de ha mycket sällskap, skäller gärna och behöver bara badas en gång i månaden. Socialiseras de som valpar går de bra ihop med människor i alla åldrar. PetMD tar upp höft- och armbågsdysplasi och progressiv retinal atrofi som sjukdomar man bör känna till.",
+      ],
+      sources: ["S1003", "S1004", "S1006", "S1007", "S10"],
+    },
     norwegian_elkhound: {
       aka: "Norsk grå älghund, Norsk älghund grå, Norwegian Elkhound, Elkhound, Norwegian Elkhound Grey",
       text: [
