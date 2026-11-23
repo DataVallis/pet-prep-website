@@ -1611,6 +1611,14 @@ const de: RegistryCopy = {
       ],
       sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
     },
+    belgian_sheepdog: {
+      aka: "Groenendael, Belgian Shepherd Groenendael, Belgian Shepherd Dog (Groenendael), Belgian Groenendael, Belgischer Schäferhund Groenendael",
+      text: [
+        "Der Groenendael (Belgian Sheepdog) ist die langhaarige schwarze Varietät des Belgischen Schäferhundes, eines Hütehundes aus Belgien. Die FCI erkennt nur eine Rasse Belgischer Schäferhund an, und zwar mit vier Varietäten, und führt sie in Gruppe 1 unter den Hütehunden. Der FCI-Standard beschreibt einen harmonisch proportionierten Hund, der Eleganz und Kraft verbindet, mit eher kleinen, hoch angesetzten Stehohren und langem, glattem Haar, das an Hals und Vorbrust noch länger ist; für den Groenendael lässt er nur einfarbiges Schwarz zu. Als Widerristhöhe nennt der Standard etwa 62 cm für Rüden und 58 cm für Hündinnen, als Gewicht etwa 25–30 kg für Rüden und 20–25 kg für Hündinnen. Ein Hund dieser Größe ist mit etwa 12–15 Monaten ausgewachsen (PetMD-Größenklasse). Der Royal Kennel Club gibt eine Lebenserwartung von über 10 Jahren an, PetMD und WebMD 12–14 Jahre.",
+        "Der Royal Kennel Club beschreibt einen wachsamen, vorsichtigen und sehr intelligenten Hund mit großer Arbeitsfreude. Er empfiehlt mehr als 2 Stunden Bewegung am Tag und mehr als einmal pro Woche Fellpflege, sagt, die Rasse haare und eigne sich für ein großes Haus mit großem Garten, und führt sie in Breed-Watch-Kategorie 1. PetMD schreibt, Belgische Schäferhunde bauten eine enge Bindung zu ihren Menschen auf, brauchten viel Bewegung und geistige Beschäftigung und könnten versuchen, Kinder und Katzen zu hüten. Empfohlen werden frühe Sozialisierung, wöchentliches Bürsten und das Reinigen der Ohren ein- bis zweimal im Monat. WebMD schreibt, sie brauchten fast zwei Stunden Bewegung am Tag und seien keine gute Wahl für Menschen, die stundenlang außer Haus sind; empfohlen werden tägliches Zähneputzen und einmal im Monat ein Bad.",
+      ],
+      sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnischer Lapphund, Finnish Lapphund, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
       text: [
