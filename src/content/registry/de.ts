@@ -1603,6 +1603,22 @@ const de: RegistryCopy = {
       ],
       sources: ["S993", "S994", "S995", "S996", "S10"],
     },
+    norfolk_terrier: {
+      aka: "Norfolk Terrier, Norfolk, Norfolk terrier",
+      text: [
+        "Der Norfolk Terrier gehört zu den kleinsten Terriern und stammt aus Großbritannien; die FCI führt ihn in Gruppe 3 unter den kleinen Terriern. Der FCI-Standard beschreibt einen niedrigen, wachen, kompakten und kräftigen kleinen Hund, der für seine Größe ein „Teufelskerl“ ist, mit liebenswertem Wesen, aufmerksam und furchtlos; sein Fell ist hart, drahtig und gerade, die mittelgroßen V-Ohren fallen nach vorn und liegen dicht an der Wange an. Die Farben sind alle Rottöne, Weizenfarben, Schwarz mit Brand oder Grizzle. Der Standard nennt eine ideale Widerristhöhe von 25 cm, aber kein Gewicht; der UKC-Standard gibt 11 bis 12 Pfund (etwa 5–5,4 kg) an, die PDSA 5–5,5 kg. Ein Hund dieser Größe erreicht sein Erwachsenengewicht in der Regel mit 9–12 Monaten. Der Royal Kennel Club gibt eine Lebenserwartung von über 10 Jahren an, Woodgreen 12–15 Jahre.",
+        "Der Royal Kennel Club nennt bis zu 1 Stunde Bewegung am Tag, mehr als einmal pro Woche Fellpflege und ein Fell, das haart, und sagt, die Rasse könne in einer Wohnung leben; er führt sie in Breed-Watch-Kategorie 1 und nennt keine empfohlenen Gesundheitsuntersuchungen vor der Zucht. Die PDSA schreibt, das drahtige Fell müsse ein paarmal pro Woche gekämmt und drei- bis viermal im Jahr getrimmt werden, außerdem graben Norfolk Terrier gern. Woodgreen nennt sie sanft und geduldig im Umgang mit Kindern, allerdings immer unter Aufsicht. Sie seien nicht gern lange allein, könnten Ausbruchskünstler sein und bräuchten einen Zaun, aus dem sie nicht entwischen können; mit ihrem starken Jagdtrieb seien kleine Haustiere wie Kaninchen oder Meerschweinchen in ihrer Nähe womöglich nicht sicher.",
+      ],
+      sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
+    },
+    finnish_lapphund: {
+      aka: "Finnischer Lapphund, Finnish Lapphund, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
+      text: [
+        "Der Finnische Lapphund (Finnish Lapponian Dog, Suomenlapinkoira) ist ein Wach- und Hütehund aus Finnland, der ursprünglich zum Hüten von Rentieren eingesetzt wurde; die FCI führt ihn in Gruppe 5 unter den nordischen Wach- und Hütehunden. Der FCI-Standard beschreibt einen Hund von knapp unter mittlerer Größe, intelligent, mutig, ruhig und fügsam, freundlich und treu, mit reichlichem, langem, hartem Deckhaar über weicher, dichter Unterwolle; alle Farben sind zugelassen. Der Standard nennt eine ideale Widerristhöhe von 49 cm für Rüden und 44 cm für Hündinnen bei einer Toleranz von 3 cm, aber kein Gewicht; PetMD und WebMD geben 33–53 Pfund (etwa 15–24 kg) an, und ein Hund dieser Größe erreicht sein Erwachsenengewicht in der Regel mit 12–15 Monaten. Der Royal Kennel Club gibt eine Lebenserwartung von über 12 Jahren an, PetMD und WebMD 12–15 Jahre.",
+        "Der Royal Kennel Club nennt bis zu 1 Stunde Bewegung am Tag, einmal pro Woche Fellpflege, ein Fell, das haart, und ein kleines Haus mit kleinem oder mittelgroßem Garten; er führt die Rasse in Breed-Watch-Kategorie 1. WebMD schreibt, Lappies kämen gut mit Kindern aus, weil sie Familienbegleithunde seien, und ihre Krallen sollten einmal im Monat gekürzt werden. PetMD schreibt, sie sehnten sich nach Gesellschaft, seien ausgesprochen bellfreudig, müssten nur einmal im Monat gebadet werden und kämen mit Menschen jeden Alters zurecht, wenn sie als Welpen sozialisiert würden. Als Erkrankungen, über die man Bescheid wissen sollte, nennt PetMD Hüft- und Ellbogendysplasie sowie progressive Retinaatrophie.",
+      ],
+      sources: ["S1003", "S1004", "S1006", "S1007", "S10"],
+    },
     norwegian_elkhound: {
       aka: "Norwegischer Elchhund, Grauer Elchhund, Elchhund, Norwegian Elkhound, Norsk Elghund Grå",
       text: [
