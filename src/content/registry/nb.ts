@@ -1568,6 +1568,14 @@ const nb: RegistryCopy = {
       ],
       sources: ["S812", "S815", "S10", "S813", "S814"],
     },
+    norfolk_terrier: {
+      aka: "Norfolk, Norfolk terrier, Norfolkterrier",
+      text: [
+        "Norfolk terrier er en av de minste terrierne, fra Storbritannia. FCI fører den opp i gruppe 3 blant de små terrierne. FCI-standarden beskriver en lav, ivrig, kompakt og sterk liten hund, en «demon» i forhold til størrelsen, med et vennlig vesen, våken og uredd. Pelsen er hard, stri og rett, og de middels store, V-formede ørene faller fremover tett inntil kinnet. Fargene er alle nyanser av rødt, hvete, svart og tan eller grizzle. Standarden oppgir en ideell mankehøyde på 25 cm, men oppgir ingen vekt. UKC-standarden oppgir 11–12 pund (ca. 5–5,4 kg), og PDSA 5–5,5 kg. En hund av denne størrelsen er vanligvis utvokst ved 9–12 måneder. The Royal Kennel Club oppgir en levealder på over ti år, Woodgreen 12–15 år.",
+        "The Royal Kennel Club anbefaler opptil 1 time mosjon om dagen og pelsstell mer enn én gang i uken. Klubben sier at rasen røyter og kan bo i en leilighet, plasserer den i Breed Watch-kategori 1 og anbefaler ingen helseundersøkelse før avl. PDSA skriver at den stride pelsen må kammes et par ganger i uken og trimmes tre til fire ganger i året, og at norfolk terrierne elsker å grave. Woodgreen kaller dem milde og tålmodige med barn, men alltid under tilsyn. De liker ikke å være alene lenge, kan være ekte rømningskunstnere som trenger et gjerde de ikke kommer seg ut av, og har sterke jaktinstinkter, så små kjæledyr som kaniner og marsvin er kanskje ikke trygge i nærheten av dem.",
+      ],
+      sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
+    },
     miniature_bull_terrier: {
       aka: "Miniatyrbullterrier, Miniature bullterrier, Miniature Bull Terrier, Mini Bull Terrier, Mini Bull, English Miniature Bull Terrier",
       text: [
@@ -1591,6 +1599,14 @@ const nb: RegistryCopy = {
         "FCI-standarden kaller den belgiske gjeterhunden våken og aktiv, sprengfull av energi, uten frykt eller aggressivitet. The Royal Kennel Club anbefaler mer enn 2 timer mosjon om dagen og pelsstell mer enn én gang i uken. Rasen røyter og passer i et stort hus med stor hage, og den står i Breed Watch-kategori 1. PetMD skriver at tervueren knytter seg tett til familien og trenger mye fysisk aktivitet og mental stimulering. De kan forsøke å gjete barn og mindre dyr. PetMD anbefaler tidlig sosialisering, ukentlig børsting (nesten daglig under røyting), rengjøring av ørene hver til annenhver uke og bad hver fjerde til sjette uke.",
       ],
       sources: ["S312", "S313", "S830", "S832", "S10"],
+    },
+    belgian_sheepdog: {
+      aka: "Groenendael, Belgisk fårehund groenendael, Belgisk gjeterhund groenendael, Belgian Shepherd Groenendael, Belgian Shepherd Dog (Groenendael), Belgian Groenendael",
+      text: [
+        "Belgisk fårehund groenendael er den langhårede, svarte varianten av belgisk gjeterhund, en gjeterhundrase fra Belgia. FCI anerkjenner én rase, belgisk gjeterhund, med fire varianter, og fører den opp i gruppe 1 blant gjeterhundene. FCI-standarden beskriver en harmonisk proporsjonert hund som forener eleganse og kraft, med ganske små, høytsittende, oppreiste ører og lang, glatt pels som er lengst rundt halsen og på forbrystet. For groenendael tillater standarden bare ensfarget svart. Mankehøyden er ca. 62 cm for hannhunder og 58 cm for tisper, og vekten ca. 25–30 kg for hannhunder og 20–25 kg for tisper. En hund av denne størrelsen er utvokst ved rundt 12–15 måneder (PetMDs størrelsesklasse). The Royal Kennel Club oppgir en levealder på over ti år, PetMD og WebMD 12–14 år.",
+        "The Royal Kennel Club beskriver en våken, avventende og svært intelligent hund med stor arbeidslyst. Klubben anbefaler mer enn 2 timer mosjon om dagen og pelsstell mer enn én gang i uken, sier at rasen røyter og passer i et stort hus med stor hage, og plasserer den i Breed Watch-kategori 1. PetMD skriver at belgiske fårehunder knytter sterke bånd til menneskene sine og trenger rikelig med mosjon og mental stimulering. De kan forsøke å gjete barn og katter. PetMD anbefaler tidlig sosialisering, ukentlig børsting og rengjøring av ørene en til to ganger i måneden. WebMD sier at de trenger nesten to timer mosjon hver dag og ikke er noe godt valg for folk som er borte mange timer av gangen. WebMD anbefaler også daglig tannpuss og bad én gang i måneden.",
+      ],
+      sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
     },
     toy_fox_terrier: {
       aka: "Toy foxterrier, Toy Fox Terrier, American Toy Terrier, Amertoy, TFT",
