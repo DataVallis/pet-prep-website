@@ -1676,6 +1676,22 @@ const es: RegistryCopy = {
       ],
       sources: ["S812", "S815", "S10", "S813", "S814"],
     },
+    norfolk_terrier: {
+      aka: "Norfolk, Norfolk terrier, Terrier de Norfolk",
+      text: [
+        "El norfolk terrier es uno de los terriers más pequeños y procede de Gran Bretaña; la FCI lo incluye en el grupo 3, entre los terriers de talla pequeña. El estándar de la FCI describe un perro bajo, vivo, compacto y fuerte, un «demonio» para su tamaño, de carácter encantador, alerta e intrépido. Tiene el pelo duro, áspero y recto, y las orejas medianas en forma de V, caídas hacia delante junto a la mejilla. Los colores son todos los tonos de rojo, trigo, negro y fuego, o grizzle. El estándar indica una altura ideal de 25 cm, pero no el peso; el estándar de la UKC indica de 11 a 12 libras (unos 5–5,4 kg) y la PDSA, 5–5,5 kg. Un perro de este tamaño suele alcanzar su peso adulto entre los 9 y los 12 meses. El Royal Kennel Club indica una esperanza de vida de más de 10 años y Woodgreen, de 12–15 años.",
+        "El Royal Kennel Club recomienda hasta 1 hora de ejercicio al día y cuidado del pelo más de una vez por semana, indica que la raza muda el pelo y que puede vivir en un piso. La incluye en la categoría 1 de Breed Watch y no recomienda ninguna prueba de salud previa a la cría. La PDSA dice que el pelo áspero necesita peinarse un par de veces por semana y un stripping tres o cuatro veces al año, y que a los norfolk les encanta cavar. Woodgreen los describe como dulces y pacientes con los niños, siempre con supervisión. Indica que no les gusta quedarse solos durante mucho rato, que pueden ser unos artistas de la fuga y necesitan una valla a prueba de escapes, y que tienen un fuerte instinto de presa, así que quizá no sea seguro dejarlos con mascotas pequeñas como conejos o cobayas.",
+      ],
+      sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
+    },
+    finnish_lapphund: {
+      aka: "Perro finlandés de Laponia, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
+      text: [
+        "El perro finlandés de Laponia (Finnish Lapponian Dog, Suomenlapinkoira) es un perro de pastoreo y guarda originario de Finlandia, empleado originalmente para pastorear renos; la FCI lo incluye en el grupo 5, entre los perros nórdicos de guarda y pastoreo. El estándar de la FCI lo describe como un perro de talla inferior a la mediana, inteligente, valiente, tranquilo y dócil, amistoso y fiel. Tiene un pelo exterior largo, abundante y áspero, con un subpelo suave y denso, y se admiten todos los colores. El estándar indica una altura ideal de 49 cm en los machos y 44 cm en las hembras, con una tolerancia de 3 cm, pero no el peso; PetMD y WebMD indican 33–53 libras (unos 15–24 kg). Un perro de este tamaño suele alcanzar su peso adulto entre los 12 y los 15 meses. El Royal Kennel Club indica una esperanza de vida de más de 12 años; PetMD y WebMD, de 12–15 años.",
+        "El Royal Kennel Club recomienda hasta 1 hora de ejercicio al día y cuidado del pelo una vez por semana. Indica que la raza muda el pelo y que necesita una casa pequeña con un jardín pequeño o mediano, y la incluye en la categoría 1 de Breed Watch. WebMD dice que los lappies son buenos con los niños porque son perros de compañía para la familia, y que hay que recortarles las uñas una vez al mes. PetMD indica que ansían compañía, que son ladradores consumados y que basta con bañarlos una vez al mes. Añade que pueden llevarse bien con personas de todas las edades si se socializan de cachorros, y menciona la displasia de cadera y de codo y la atrofia progresiva de retina como problemas que conviene conocer.",
+      ],
+      sources: ["S1003", "S1004", "S1006", "S1007", "S10"],
+    },
   },
 };
 
