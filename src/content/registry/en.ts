@@ -900,6 +900,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
     },
+    belgian_sheepdog: {
+      aka: "Groenendael, Belgian Shepherd Groenendael, Belgian Shepherd Dog (Groenendael), Belgian Groenendael, belgijski ovčar groenendael",
+      text: [
+        "The Belgian Sheepdog (Groenendael) is the long-haired, black variety of the Belgian Shepherd, a sheepdog from Belgium; the FCI recognises one Belgian Shepherd breed with four varieties and lists it in Group 1 among the sheepdogs. The FCI standard describes a harmoniously proportioned dog combining elegance and power, with rather small, high-set erect ears and a long, smooth coat that is longer around the neck and forechest; for the Groenendael it allows only uniform black. It gives a height of about 62 cm for males and 58 cm for females and a weight of about 25–30 kg for males and 20–25 kg for females; a dog of this size is fully grown at about 12–15 months (PetMD size class). The Royal Kennel Club gives a lifespan of over 10 years, and PetMD and WebMD 12–14 years.",
+        "The Royal Kennel Club describes a watchful, wary and highly intelligent dog with an appetite for work, recommends more than 2 hours of exercise a day and grooming more than once a week, says the breed sheds and suits a large house with a large garden, and lists it in Breed Watch Category 1. PetMD says Belgian Sheepdogs develop strong bonds with their people, need ample exercise and mental stimulation, may try to herd children and cats, and recommends early socialisation, weekly brushing and cleaning the ears once or twice a month. WebMD says they need almost two hours of exercise each day, are not a good choice for people who are away for long hours, and recommends brushing the teeth daily and a monthly bath.",
+      ],
+      sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
+    },
 
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, finski laponski pes",
