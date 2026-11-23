@@ -1472,6 +1472,326 @@ const nb: RegistryCopy = {
       ],
       sources: ["C13", "C37", "C38"],
     },
+    keeshond: {
+      aka: "Wolfsspitz, Keeshond, Keeshonden, tysk ulvespiss",
+      text: [
+        "Keeshond er en mellomstor spisshund fra Tyskland, ulvespissvarianten av tysk spiss. FCI-standarden beskriver en hund med lang, stående pels i gråskyggede nyanser, tykk man og mørke «briller» rundt øynene. Mankehøyden er 49 ± 6 cm, og PDSA oppgir en gjennomsnittsvekt på 16–20 kg. En hund av denne størrelsen er utvokst ved rundt 12–15 måneder (PetMD). PDSA oppgir en levealder på over ti år, VCA 12–14 år.",
+        "PDSA skriver at rasen trenger opptil én time mosjon om dagen, og at den tykke dobbeltpelsen krever daglig pelsstell. Ifølge PDSA er keeshonder utmerkede familiehunder som kommer godt overens med andre kjæledyr i hjemmet, og de lærer godt hvis man gir dem tid og tålmodighet. VCA beskriver dem som lekne og forsiktige med barn og anbefaler bad omtrent hver måned. De røyter mer enn gjennomsnittet, og den tykke pelsen kan gjøre at de lett blir overopphetet.",
+      ],
+      sources: ["S246", "S709", "S710", "S10"],
+    },
+    standard_schnauzer: {
+      aka: "Schnauzer, Mellomschnauzer, Wire-Haired Pinscher",
+      text: [
+        "Mellomschnauzer (Standard Schnauzer) kommer fra Tyskland. FCI fører den ganske enkelt opp som Schnauzer blant pinscher- og schnauzertypene. FCI-standarden beskriver en mellomstor, sterk hund som er kraftig bygd snarere enn slank, med stri, hard og tett pels, hengende ører og naturlig hale. Mankehøyden er 45–50 cm og vekten 14–20 kg, for både hannhunder og tisper. Fargene er pepper og salt og ren svart. En hund av denne størrelsen er utvokst ved rundt 12–15 måneder (PetMD). The Royal Kennel Club oppgir en levealder på over ti år, VCA 12–14 år.",
+        "The Royal Kennel Club anbefaler opptil én time mosjon om dagen og pelsstell mer enn én gang i uken. Rasen passer i et lite hus med liten eller middels stor hage, i by eller på landet. PDSA skriver at schnauzere er milde, tålmodige hunder som kommer godt overens med barn hvis de blir kjent med dem tidlig, og at pelsen trenger stell to–tre ganger i uken. VCA skriver at rasen lærer raskt, men også blir fort lei, så lek og små triks gir den nødvendig mental trening. PetMD anbefaler bad hver måned, klipping av klørne og rengjøring av ørene hver til annenhver uke og en profesjonell hundefrisør hvert kvartal.",
+      ],
+      sources: ["S10", "S711", "S712", "S714", "S715", "S716", "S717"],
+    },
+    english_setter: {
+      aka: "Engelsk setter, Laverack Setter, Llewellin Setter, Setter",
+      text: [
+        "Engelsk setter er en elegant fuglehund fra Storbritannia, avlet for å finne ville fugler. FCI-standarden beskriver en hund av middels høyde, ren i omrisset og elegant i bevegelsene. Pelsen er hvit med fargeflekker: «belton» i blått, oransje, sitrongult eller leverbrunt, eller trefarget. Mankehøyden er 65–68 cm for hannhunder og 61–65 cm for tisper, og PDSA oppgir en gjennomsnittsvekt på 22–29 kg. En hund av denne størrelsen er utvokst ved rundt 15–18 måneder (PetMD). The Royal Kennel Club oppgir en levealder på over ti år.",
+        "The Royal Kennel Club anbefaler mer enn 2 timer mosjon om dagen og pelsstell mer enn én gang i uken. Rasen røyter og passer i et stort hus med stor hage, og den står i Breed Watch-kategori 1. PDSA skriver at engelske settere elsker barn og andre kjæledyr og dermed passer godt for familier, og anbefaler pelsstell 2–3 ganger i uken. PetMD foreslår bad hver sjette til åttende uke og skriver at de ikke liker å være alene lenge. VCA nevner noe klipping og trimming hver måned.",
+      ],
+      sources: ["S730", "S731", "S732", "S733", "S734", "S10"],
+    },
+    dogue_de_bordeaux: {
+      aka: "Bordeauxdogge, Bordeaux Mastiff, French Mastiff, DDB",
+      text: [
+        "Dogue de Bordeaux (bordeauxdogge) er en kraftig molosserhund fra Frankrike. FCI-standarden beskriver en tettbygd, atletisk og imponerende hund som er rolig, balansert og svært knyttet til eieren. Den har fin, kort pels i alle nyanser av fawn, fra mahogni til isabella. Mankehøyden er 60–68 cm for hannhunder og 58–66 cm for tisper, og vekten minst 50 kg for hannhunder og minst 45 kg for tisper. PetMD oppgir 110–145 pund (ca. 50–66 kg) for hannhunder og 99–120 pund (ca. 45–54 kg) for tisper. En hund av denne størrelsen er utvokst ved rundt 18–24 måneder (PetMD). Kildene er uenige om levealderen: PetMD skriver at disse hundene vanligvis bare lever i 5–8 år, mens The Royal Kennel Club oppgir over ti år.",
+        "The Royal Kennel Club anbefaler opptil 1 time mosjon om dagen og pelsstell én gang i uken. Rasen røyter og passer i et stort hus med stor hage, og den står i Breed Watch-kategori 3. PDSA skriver at bordeauxdogger vanligvis kommer godt overens med eldre barn, men anbefaler dem ikke til mindre barn eller førstegangseiere. PDSA advarer også om mye sikling og et svært sterkt jaktinstinkt, og råder til å rengjøre ansiktsfoldene jevnlig og vente en stund etter måltidet før hunden mosjonerer. PetMD skriver at den korte snuten kan gjøre det vanskeligere å puste i varmt vær.",
+      ],
+      sources: ["S755", "S756", "S757", "S759", "S10"],
+    },
+    flat_coated_retriever: {
+      aka: "Flatcoated retriever, Flatcoat, Flattie, Flat Coated Retriever",
+      text: [
+        "Flatcoated retriever er en oppvakt, aktiv fuglehund fra Storbritannia, avlet for å apportere vilt. FCI-standarden beskriver en tett, glatt liggende pels med godt befjærede ben og hale, bare i svart eller leverbrunt, og et optimistisk, vennlig, selvsikkert og godlynt temperament. Den foretrukne mankehøyden er 59–61,5 cm for hannhunder og 56,5–59 cm for tisper, og den foretrukne vekten 27–36 kg for hannhunder og 25–32 kg for tisper. En hund av denne størrelsen er utvokst ved rundt 15–18 måneder (PetMD). The Royal Kennel Club oppgir en levealder på under ti år, mens en britisk studie fra 2024, lagt frem av Dogs Trust, fant en median på 11,7 år.",
+        "The Royal Kennel Club anbefaler mer enn 2 timer mosjon om dagen og pelsstell mer enn én gang i uken. Rasen røyter og passer i et stort hus med stor hage, og den står i Breed Watch-kategori 1. PetMD kaller flatcoated retrievere fantastiske familiehunder som vanligvis kommer godt overens med barn og andre kjæledyr, særlig med riktig introduksjon og sosialisering. PetMD foreslår børsting to ganger i uken, rengjøring av ørene hver eller annenhver uke, og bad og klipping av klørne hver eller annenhver måned. Man bør også unngå mosjon rett før og etter måltider.",
+      ],
+      sources: ["S761", "S762", "S763", "S123", "S10"],
+    },
+    border_terrier: {
+      aka: "Border terrier",
+      text: [
+        "Border terrier er en liten arbeidsterrier fra Storbritannia. FCI-standarden kaller den i bunn og grunn en arbeidsterrier som kan holde følge med en hest, og som forener aktivitet med pågangsmot. Den har hard, tett pels med tett underull, mørke øyne med et våkent uttrykk og små V-formede ører, i rødt, hvete, grizzle og tan eller blått og tan. Vekten er 5,9–7,1 kg for hannhunder og 5,1–6,4 kg for tisper. En hund av denne størrelsen er utvokst ved rundt 9–12 måneder (PetMD). The Royal Kennel Club oppgir en levealder på over 12 år, og en britisk studie fra 2024 (McMillan m.fl.) fant en median på 14,2 år.",
+        "The Royal Kennel Club anbefaler opptil 1 time mosjon om dagen og pelsstell mer enn én gang i uken. Rasen røyter og passer i en leilighet, og den står i Breed Watch-kategori 1. PDSA skriver at border terriere med riktig sosialisering vil elske å være sammen med barn i alle aldre, men anbefaler tilsyn. De kan utvikle separasjonsangst hvis de blir latt alene, har sterkt jaktinstinkt og bør ikke bo sammen med kaniner, marsvin eller rotter. PDSA råder til å børste et par ganger i uken og vente en stund etter måltidet før hunden mosjonerer. Woodgreen foreslår et hjem med litt eldre barn.",
+      ],
+      sources: ["S768", "S769", "S770", "S771", "S773", "S10"],
+    },
+    leonberger: {
+      aka: "Leonberger, Leonberg",
+      text: [
+        "Leonberger er en stor hund fra Tyskland. FCI-standarden beskriver en stor, sterk, muskuløs, men likevel elegant hund med lang, tettliggende pels, hengende ører og en godt behåret hale. Fargene er løvegul, rød, rødbrun eller sandfarget, alltid med svart maske. Mankehøyden er 72–80 cm for hannhunder og 65–75 cm for tisper. PDSA oppgir en gjennomsnittsvekt på 30–50 kg for både hannhunder og tisper og en levealder på under ti år. Som kjempehund er den utvokst ved rundt 18–24 måneder (PetMDs størrelsesklasse).",
+        "The Royal Kennel Club anbefaler mer enn 2 timer mosjon om dagen og et stort hus med stor hage. PDSA kaller leonbergere milde kjemper og utmerkede familiehunder. Woodgreen anbefaler børsting to–tre ganger i uken og sier at tidlig trening og sosialisering er avgjørende på grunn av størrelsen. Ifølge Woodgreen har de også vanskelig for å være alene i lange perioder. En britisk studie fra 2024 (McMillan m.fl., lagt frem av Dogs Trust) oppgir en median forventet levealder på 10,0 år.",
+      ],
+      sources: ["S783", "S781", "S10", "S780", "S784", "S123"],
+    },
+    beauceron: {
+      aka: "Beauceron, Berger de Beauce, Beauce Sheepdog, Bas Rouge",
+      text: [
+        "Beauceron (Berger de Beauce) er en stor fransk gjeterhund. FCI-standarden beskriver en stor, solid, hardfør, kraftig og muskuløs hund uten å være tung, med kort, tykk pels, en hale med en liten J-formet krøk og doble ulveklør på bakbena. Fargene er svart med brune tegninger (black and tan) eller harlekin. Mankehøyden er 65–70 cm for hannhunder og 61–68 cm for tisper. AKCs vektoversikt oppgir 70–110 pund (ca. 32–50 kg) for både hannhunder og tisper. En hund av denne størrelsen er utvokst ved rundt 15–18 måneder (PetMDs størrelsesklasse). The Royal Kennel Club oppgir en levealder på over ti år og PetMD 10–12 år.",
+        "The Royal Kennel Club kaller beauceronen rolig og selvsikker, en lojal følgesvenn og vakthund. Klubben anbefaler mer enn 2 timer mosjon om dagen, pelsstell mer enn én gang i uken og et stort hus med stor hage, og rasen står i Breed Watch-kategori 1. PetMD skriver at de kan være gode med små barn og andre hunder når introduksjonene skjer under tilsyn. De kan være på vakt overfor nye mennesker, så valper bør tidlig møte nye mennesker, og de liker å være sammen med familien så mye som mulig. PetMD anbefaler børsting minst én gang i uken og ingen mosjon én time før og én time etter måltider.",
+      ],
+      sources: ["S790", "S268", "S10", "S787", "S791"],
+    },
+    bouvier_des_flandres: {
+      aka: "Bouvier des Flandres, Bouvier, Flanders Cattle Dog, Vlaamse Koehond",
+      text: [
+        "Bouvier des Flandres er en gjeterhund for storfe fra Flandern (Belgia og Frankrike). FCI-standarden beskriver en kort, kompakt, kraftig hund med sterke, godt muskuløse ben og en grov, tørr, litt rufsete pels på omtrent 6 cm med bart og fullt skjegg. Pelsen er vanligvis grå, brindle eller med svart overlegg, og ensfarget svart godtas også. Mankehøyden er 62–68 cm og vekten ca. 35–40 kg for hannhunder, og 59–65 cm og ca. 27–35 kg for tisper. En hund av denne størrelsen er utvokst ved rundt 15–18 måneder (PetMDs størrelsesklasse). En britisk studie fra 2024 (McMillan m.fl., lagt frem av Dogs Trust) oppgir en median forventet levealder på 11,3 år.",
+        "The Royal Kennel Club kaller bouvieren sterk og allsidig, opprinnelig en gjeter for storfe. Klubben anbefaler opptil 1 time mosjon om dagen, daglig pelsstell og et stort hus med stor hage, og rasen står i Breed Watch-kategori 1. PetMD skriver at de kan være gode med små barn og andre store hunder når introduksjonene skjer under tilsyn. De har sterkt jaktinstinkt overfor katter og små kjæledyr, trenger tidlig sosialisering og blir lett overvektige. PetMD anbefaler børsting minst en til to ganger i uken, rengjøring av ørene annenhver til hver tredje uke, klipping av klørne hver tredje til fjerde uke og ingen mosjon én time før og én time etter måltider.",
+      ],
+      sources: ["S797", "S10", "S123", "S795", "S798"],
+    },
+    borzoi: {
+      aka: "Borzoi, russisk mynde, Russian Wolfhound, Russian Hunting Sighthound, Russkaya Psovaya Borzaya",
+      text: [
+        "Borzoi (russisk mynde, Russian Hunting Sighthound) er en langhåret mynde fra Russland, avlet for å jage hare og rev. FCI-standarden beskriver en hund med aristokratisk utseende, høy, slank og sterk, ganske høybeint. Pelsen er lang, silkeaktig og bølget og kan ha alle farger fra hvit til svart, bortsett fra brun, blå og isabella. Den ønskede mankehøyden er 75–85 cm for hannhunder og 68–78 cm for tisper. PDSA oppgir en gjennomsnittsvekt på 27–47 kg for både hannhunder og tisper og en levealder på over ti år, PetMD 9–14 år. En hund av denne størrelsen er utvokst ved rundt 15–18 måneder (PetMDs størrelsesklasse).",
+        "PDSA anbefaler minst 1 time mosjon om dagen, fordelt på et par turer, og at hunden bare er løs i et sikkert område. Borzoier har svært sterkt jaktinstinkt og anbefales ikke sammen med mindre kjæledyr eller yngre barn. Ifølge PDSA passer rasen for erfarne eiere, trenger at noen er hjemme mesteparten av tiden, bør sosialiseres fra ung alder og trenger børsting noen ganger i uken. Det bør gå en stund mellom måltid og mosjon. PetMD anbefaler børsting minst to–tre ganger i uken og peker på magedreining (bloat) som det vanligste helseproblemet.",
+      ],
+      sources: ["S802", "S800", "S803", "S10"],
+    },
+    japanese_chin: {
+      aka: "Japansk chin, Japanese Chin, Japanese Spaniel, Japan Chin, Chin",
+      text: [
+        "Japansk chin (Japanese Chin) er en liten selskapshund fra Japan. Rasestandarden til The Royal Kennel Club beskriver en elegant, aristokratisk, kompakt liten hund med rik, lang, silkeaktig pels, svart og hvit eller rød og hvit (aldri trefarget), en kort, bred snute og et forbauset uttrykk. Den ideelle vekten er 1,8–3,2 kg, og PetMD oppgir en høyde på 8–11 tommer (ca. 20–28 cm). En hund av denne størrelsen er utvokst ved rundt 8–12 måneder (PetMDs størrelsesklasse). En britisk studie fra 2024 (McMillan m.fl., lagt frem av Dogs Trust) oppgir en median forventet levealder på 12,5 år.",
+        "The Royal Kennel Club anbefaler opptil 30 minutter mosjon om dagen og pelsstell mer enn én gang i uken. Rasen røyter og passer i en leilighet, og den står i Breed Watch-kategori 1. PetMD skriver at japansk chin er en flatnese (brakycefal) rase som kan få pusteproblemer og lett blir overopphetet, så mosjon i varmt eller fuktig vær hører hjemme i de kjøligste delene av døgnet. Ifølge PetMD er den som regel god med barn når samspillet skjer under tilsyn, kan utvikle separasjonsangst og bør tidlig gå på sosialiseringskurs. PetMD anbefaler børsting en til to ganger i uken, rengjøring av ørene annenhver til hver tredje uke og bad omtrent hver måned.",
+      ],
+      sources: ["S806", "S10", "S123", "S805", "S809"],
+    },
+    norwich_terrier: {
+      aka: "Norwich terrier, Norwich",
+      text: [
+        "Norwich terrier er en av de minste terrierne, fra Storbritannia. FCI-standarden beskriver en lav, ivrig, kompakt og sterk liten hund med hard, stri, rett pels som danner en krage rundt ansiktet, og oppreiste ører med spisse tupper. Fargene er alle nyanser av rødt, hvete, svart og tan eller grizzle. Den ideelle mankehøyden er 25 cm. UKC-standarden oppgir en ideell vekt på omtrent 12 pund (ca. 5,4 kg) for både hannhunder og tisper. En hund av denne størrelsen er utvokst ved rundt 9–12 måneder (PetMDs størrelsesklasse). The Royal Kennel Club oppgir en levealder på over ti år og PetMD 12–15 år.",
+        "The Royal Kennel Club kaller norwichen en av de minste terrierne med et elskverdig vesen. Klubben anbefaler opptil 1 time mosjon om dagen og pelsstell mer enn én gang i uken, og rasen røyter og passer i en leilighet. Den er ført opp som en sårbar britisk rase. PetMD skriver at norwich terriere vanligvis kommer godt overens med barn og andre kjæledyr. De har mye energi og trenger daglig mosjon og mental stimulering. De har sterke jaktinstinkter, så et sikkert hundebånd og en godt inngjerdet hage er et must, og de bør sosialiseres fra tidlig alder. PetMD anbefaler børsting minst to ganger i uken, tannpuss minst én gang i uken, klipping av klørne omtrent hver måned og bad høyst én gang hver tredje måned.",
+      ],
+      sources: ["S812", "S815", "S10", "S813", "S814"],
+    },
+    miniature_bull_terrier: {
+      aka: "Miniatyrbullterrier, Miniature bullterrier, Miniature Bull Terrier, Mini Bull Terrier, Mini Bull, English Miniature Bull Terrier",
+      text: [
+        "Miniatyrbullterrier er en liten terrier fra Storbritannia. FCI fører den opp blant bullterrierne, og The Royal Kennel Club sier at den ble anerkjent som egen variant første gang i 1943. Den ble avlet fra mindre bullterriere for å holde seg under 35,5 cm (14 tommer). PetMD oppgir en høyde på 10–14 tommer (ca. 25–36 cm) og en vekt på 18–28 pund (ca. 8–13 kg). En hund av denne størrelsen er utvokst ved rundt 9–12 måneder (PetMDs størrelsesklasse). The Royal Kennel Club oppgir en levealder på over ti år og PetMD 11–13 år.",
+        "The Royal Kennel Club beskriver rasen som modig, full av liv og med en lekende holdning. Klubben anbefaler opptil 1 time mosjon om dagen og pelsstell én gang i uken, og rasen røyter. Den er ført opp som en sårbar britisk rase. PetMD skriver at miniatyrbullterriere som regel er kjærlige og gode med barn, og kaller dem en vennlig familiehund. De kan komme godt overens med andre kjæledyr hvis de er riktig sosialisert, trenger jevnlig mosjon og mental stimulering og trives ikke hvis de blir latt alene i lange perioder. PetMD anbefaler tidlig sosialisering og børsting omtrent én gang i uken.",
+      ],
+      sources: ["S818", "S820", "S821", "S10"],
+    },
+    schipperke: {
+      aka: "Schipperke, Little Captain, Little Black Devil, Spitzke",
+      text: [
+        "Schipperke er en liten gjeterhund fra Belgia. FCI plasserer den blant gjeterhundene, og standarden beskriver en ulvelignende hund av små dimensjoner, men svært solid bygd, helt svart, med krage, man og «bukser». FCI-standarden oppgir en vekt på 3–9 kg (et gjennomsnitt på 4–7 kg er ønsket), og PetMD en høyde på 10–13 tommer (ca. 25–33 cm). En hund av denne størrelsen er utvokst ved rundt 9–12 måneder (PetMDs størrelsesklasse). En stor britisk studie (McMillan m.fl., 2024) fant en median forventet levealder på 14,2 år, og The Royal Kennel Club oppgir over 12 år.",
+        "FCI-standarden kaller schipperken en fremragende liten vakthund, sprudlende av livskraft, reservert overfor fremmede og svært mild mot barn. The Royal Kennel Club anbefaler opptil 1 time mosjon om dagen og pelsstell mer enn én gang i uken. Rasen røyter og passer i en leilighet, og den står i Breed Watch-kategori 1. PetMD skriver at schipperker er intelligente, men viljesterke, og trenger aktiviteter som holder både hode og kropp i sving. Noen beholder et sterkt jaktinstinkt. PetMD anbefaler tidlig sosialisering, daglig tannpuss og rengjøring av ørene annenhver uke. VCA anbefaler børsting minst to ganger i uken.",
+      ],
+      sources: ["S824", "S825", "S826", "S827", "S828", "S771", "S10"],
+    },
+    belgian_tervuren: {
+      aka: "Belgisk gjeterhund tervueren, Tervuren, Tervueren, Terv, Belgian Shepherd Dog (Tervueren)",
+      text: [
+        "Belgisk tervueren er den langhårede, fawnfargede varianten av belgisk gjeterhund fra Belgia. FCI anerkjenner én rase, belgisk gjeterhund, med fire varianter. FCI-standarden beskriver en harmonisk proporsjonert hund som forener eleganse og kraft, med lang pels som danner krage, «bukser» og en fjærlignende hale. For tervueren tillater den bare fawn eller grått med svart overlegg og svart maske (fawn foretrekkes). Mankehøyden er ca. 62 cm for hannhunder og 58 cm for tisper, og vekten ca. 25–30 kg for hannhunder og 20–25 kg for tisper. En hund av denne størrelsen er utvokst ved rundt 12–15 måneder (PetMDs størrelsesklasse). The Royal Kennel Club oppgir en levealder på over ti år og PetMD 12–14 år.",
+        "FCI-standarden kaller den belgiske gjeterhunden våken og aktiv, sprengfull av energi, uten frykt eller aggressivitet. The Royal Kennel Club anbefaler mer enn 2 timer mosjon om dagen og pelsstell mer enn én gang i uken. Rasen røyter og passer i et stort hus med stor hage, og den står i Breed Watch-kategori 1. PetMD skriver at tervueren knytter seg tett til familien og trenger mye fysisk aktivitet og mental stimulering. De kan forsøke å gjete barn og mindre dyr. PetMD anbefaler tidlig sosialisering, ukentlig børsting (nesten daglig under røyting), rengjøring av ørene hver til annenhver uke og bad hver fjerde til sjette uke.",
+      ],
+      sources: ["S312", "S313", "S830", "S832", "S10"],
+    },
+    toy_fox_terrier: {
+      aka: "Toy foxterrier, Toy Fox Terrier, American Toy Terrier, Amertoy, TFT",
+      text: [
+        "Toy fox terrier er en liten amerikansk terrier i AKCs toygruppe. AKC-standarden beskriver en velbalansert toyhund med atletisk utseende, kort, silkeglatt pels, oppreiste, spisse ører og en overveiende hvit kropp. Hodet er trefarget, hvitt og tan, hvitt og svart eller hvitt, sjokoladebrunt og tan. PetMD oppgir en vekt på 4–9 pund (ca. 1,8–4 kg) og en høyde på 8,5–11,5 tommer (ca. 21–29 cm). En hund av denne størrelsen er utvokst ved rundt 8–12 måneder (PetMD). PetMD og WebMD oppgir en levealder på 13–15 år.",
+        "AKC-standarden kaller toy fox terrieren intelligent, våken, vennlig og lojal mot eierne. PetMD anbefaler minst én times mosjon hver dag, børsting en til to ganger i uken og tidlig trening og sosialisering, og skriver at rasen fortsatt har sterkt jaktinstinkt. WebMD skriver at toy fox terriere er flotte følgesvenner for respektfulle, eldre barn, men ikke anbefales for familier med små barn. De kan vise separasjonsangst når de er alene lenge. WebMD anbefaler daglig tannpuss, vask av ørene hver uke og klipping av klørne hver måned.",
+      ],
+      sources: ["S833", "S834", "S835", "S10"],
+    },
+    gordon_setter: {
+      aka: "Gordon setter, Black and Tan Setter, Scottish Setter, Gordon",
+      text: [
+        "Gordon setter er en stor fuglehund i svart og brunt fra Skottland (FCI-gruppe 7, stående fuglehunder; opprinnelsesland Storbritannia). FCI-standarden beskriver en stilig hund med galopperende linjer og en dyp, skinnende kullsvart pels med kastanjerøde tegninger. Mankehøyden er 66 cm og vekten 29,5 kg for hannhunder, og 62 cm og 25,5 kg for tisper. En hund av denne størrelsen er utvokst ved rundt 15–18 måneder (PetMD). The Royal Kennel Club oppgir en levealder på over ti år.",
+        "FCI-standarden kaller gordon setteren dristig, utadvendt og av et vennlig, jevnt sinnelag. PDSA beskriver en vennlig, intelligent rase som liker å være opptatt. The Royal Kennel Club anbefaler mer enn to timer mosjon om dagen og et stort hus med hage, og PDSA sier at den tykke pelsen trenger daglig stell. PetMD råder til å begrense mosjon i én time før og etter måltider, sosialisere valper tidlig og legge særlig vekt på innkallingstrening på grunn av rasens sterke jaktinstinkt. WebMD anbefaler daglig tannpuss og bad omtrent én gang i måneden, og skriver at rasen bare er moderat god med små barn.",
+      ],
+      sources: ["S841", "S842", "S843", "S844", "S845", "S10"],
+    },
+    afghan_hound: {
+      aka: "Afghansk mynde, Afghan Hound, Afghan, Tazi, Baluchi Hound",
+      text: [
+        "Afghansk mynde er en høy, langhåret mynde fra Afghanistan (FCI-gruppe 10, mynder; opprinnelsesland Afghanistan, under britisk patronat). FCI-standarden beskriver en hund som gir et inntrykk av styrke og verdighet og forener fart og kraft, med lang, svært fin pels. Alle farger godtas unntatt merle. Den ideelle mankehøyden er 68–74 cm for hannhunder og 63–69 cm for tisper, og AKC-standarden oppgir en vekt på ca. 60 pund (27 kg) for hannhunder og ca. 50 pund (23 kg) for tisper. En hund av denne størrelsen er utvokst ved rundt 15–18 måneder (PetMD). The Royal Kennel Club oppgir en levealder på over ti år.",
+        "FCI-standarden kaller den afghanske mynden verdig og reservert, med en viss intens ildfullhet. The Royal Kennel Club anbefaler mer enn to timer mosjon om dagen, daglig pelsstell og et stort hus med hage. PDSA sier at den lange, silkeaktige pelsen må børstes daglig. Ifølge PDSA er afghanske mynder gode med barn hvis de er godt sosialisert, og det sterke jaktinstinktet betyr at man må være forsiktig rundt andre kjæledyr. PetMD råder til å vente minst en time etter et måltid før mosjon og til å bade hunden minst hver til annenhver uke. WebMD anbefaler daglig tannpuss.",
+      ],
+      sources: ["S849", "S850", "S851", "S852", "S853", "S854", "S10"],
+    },
+    australian_silky_terrier: {
+      aka: "Australsk silketerrier, Australian Silky Terrier, Silky Terrier, Silky",
+      text: [
+        "Australsk silketerrier er en liten, våken toyterrier fra Australia (FCI-gruppe 3, terriere; seksjon toyterriere). I Nord-Amerika er den kjent som Silky Terrier. FCI-standarden beskriver en tettliggende, fin, blank pels med silkeaktig tekstur i blått og tan. Alle nyanser av blått og tan godtas, sølv og hvitt gjør det ikke. Mankehøyden er 23–26 cm for hannhunder, og tispene er noe mindre. Standardene oppgir ingen vekt («i forhold til høyden»), mens PetMD og WebMD angir rundt 10 pund (ca. 4,5 kg). En hund av denne størrelsen er utvokst ved rundt 8–12 måneder (PetMD). The Royal Kennel Club oppgir en levealder på over 12 år (PetMD og WebMD: 13–15 år).",
+        "FCI-standarden beskriver en modig og verdig toyterrier, uovertruffen som selskapshund. The Royal Kennel Club anbefaler opptil 30 minutter mosjon om dagen og daglig pelsstell, og sier at rasen passer i en leilighet. PetMD skriver at silketerriere er gode sammen med andre kjæledyr og barn hvis de blir riktig sosialisert i ung alder. PetMD anbefaler sosialiseringskurs før valpen er 16 uker gammel, rengjøring av ørene annenhver til hver tredje uke og at hunden holdes i bånd eller i en inngjerdet hage på grunn av jaktinstinktet. WebMD anbefaler daglig tannpuss og bad omtrent én gang i måneden.",
+      ],
+      sources: ["S855", "S856", "S857", "S858", "S10"],
+    },
+    parson_russell_terrier: {
+      aka: "Parson Russell terrier, Parson Jack Russell Terrier, Parson Terrier, PRT",
+      text: [
+        "Parson Russell terrier er en arbeidsvillig, aktiv og kvikk terrier fra Storbritannia, opprinnelig avlet for å jakte på rev (FCI-gruppe 3, terriere; seksjon store og mellomstore terriere). Den er en annen rase enn jack russell terrier: The Kennel Club anerkjente den første gang i 1990 som Parson Jack Russell Terrier. FCI-standarden ber om en hvit eller overveiende hvit hund med tan, sitrongule eller svarte tegninger, eller en kombinasjon av disse fargene. Pelsen er ru, brutt eller glatt. Den ideelle mankehøyden er 36 cm for hannhunder og 33 cm for tisper. PDSA oppgir en gjennomsnittsvekt på 6–8 kg. En hund av denne størrelsen er utvokst ved rundt 9–12 måneder (PetMD). The Royal Kennel Club oppgir en levealder på over 12 år (WebMD: 13–15 år).",
+        "FCI-standarden kaller rasen dristig og vennlig. The Royal Kennel Club anbefaler opptil én times mosjon om dagen og pelsstell én gang i uken. PDSA sier at disse hundene er fulle av energi og ideelt sett trenger 1–2 timer mosjon om dagen. De kommer godt overens med barn, er utmerkede familiehunder og må sosialiseres i ung alder med andre kjæledyr i familien. PetMD peker på at noen har sterkt jaktinstinkt, og anbefaler daglig tannpuss, rengjøring av ørene annenhver uke og bad annenhver til hver fjerde uke. WebMD legger til at de ikke liker å være alene og kan ha separasjonsangst.",
+      ],
+      sources: ["S864", "S865", "S866", "S867", "S868", "S10"],
+    },
+    wire_fox_terrier: {
+      aka: "Foxterrier strihåret, Wire Fox Terrier, Fox Terrier (Wire), Wirehaired Fox Terrier, Fox Terrier",
+      text: [
+        "Strihåret foxterrier (Wire Fox Terrier) er en aktiv og livlig terrier fra Storbritannia (FCI-gruppe 3, terriere; seksjon store og mellomstore terriere). Den er ikke det samme som toy fox terrier. FCI-standarden ber om kraftig benbygning og styrke i en liten kropp, aldri klumpete eller grov. Pelsen er tett og svært stri, med mykere underull. Hvitt er dominerende farge, med svarte, svarte og tan eller tan tegninger. Mankehøyden overstiger ikke 39 cm for hannhunder, og tisper er noe lavere. AKC-standarden angir 18 pund for en hannhund i utstillingskondisjon og omtrent to pund mindre for en tispe, med en margin på ett pund til hver side (ca. 7,7–8,6 kg for hannhunder og 6,8–7,7 kg for tisper). En hund av denne størrelsen er utvokst ved rundt 9–12 måneder (PetMD). The Royal Kennel Club oppgir en levealder på over 12 år (PetMD: 12–15 år).",
+        "FCI-standarden kaller rasen vennlig, imøtekommende og uredd. The Royal Kennel Club anbefaler opptil én times mosjon om dagen og pelsstell mer enn én gang i uken. PDSA sier at foxterriere elsker å leke og utforske, er utmerkede familiehunder og trenger stell en til to ganger i uken. WebMD kaller dem flotte følgesvenner for barn, men råder til alltid å føre tilsyn rundt små barn. PetMD skriver at de bør følges nøye sammen med små kjæledyr på grunn av det sterke jaktinstinktet. PetMD anbefaler også god sosialisering av valpen, daglig tannpuss, bad omtrent én gang i måneden og håndtrimming av pelsen tre til fire ganger i året. WebMD anbefaler klipping av klørne omtrent hver måned.",
+      ],
+      sources: ["S871", "S872", "S873", "S874", "S875", "S876", "S10"],
+    },
+    manchester_terrier: {
+      aka: "Manchester terrier, Manchester Terrier (Standard), Black and Tan Terrier, Manchester",
+      text: [
+        "Manchester terrier er en kompakt, elegant terrier fra Storbritannia (FCI-gruppe 3, terriere; seksjon store og mellomstore terriere). Teksten gjelder standardstørrelsen, ikke toyvarianten. FCI-standarden ber om en hund som er kompakt, elegant og solid, med substans, med tett, glatt, kort og blank pels i bare kullsvart og rik mahognibrun tan. Den ideelle mankehøyden er 41 cm for hannhunder og 38 cm for tisper. Canadian Kennel Clubs standard oppgir en vekt på 5,5–10 kg (12–22 lb). En hund av denne størrelsen er utvokst ved rundt 9–12 måneder (PetMD). PDSA oppgir en levealder på over 12 år (WebMD: 15–17 år).",
+        "FCI-standarden kaller rasen ivrig, våken, livlig og sporty, kresen og hengiven. PDSA anbefaler opptil én time mosjon om dagen og sier at børsting én gang i uken som regel er nok. PetMD skriver at manchester terriere går godt sammen med barn, særlig når de møter barn som valper, og anbefaler å sosialisere valpen fra den dagen den kommer hjem. PetMD peker også på sterkt jaktinstinkt fra tiden som rottefanger, så de passer kanskje ikke i hjem med hamstere eller ørkenrotter. WebMD råder til aldri å la små barn være alene med hunder, anbefaler daglig tannpuss og skriver at rasen er følsom for kulde, så en kåpe eller genser kan være nødvendig.",
+      ],
+      sources: ["S888", "S889", "S890", "S891", "S892", "S10"],
+    },
+    tibetan_terrier: {
+      aka: "Tibetansk terrier, Tibetan Terrier, Tibet Terrier",
+      text: [
+        "Tibetansk terrier er en robust, mellomstor, langhåret selskapshund fra Tibet (FCI-gruppe 9, selskaps- og toyhunder; seksjon tibetanske raser). Den er en terrier bare i navnet. FCI-standarden ber om et overordnet kvadratisk omriss, en dobbeltpels med rikelig, fin, lang overpels som er rett eller bølget, hengende, befjærede ører og en hale som bæres krøllet over ryggen. Alle farger er tillatt unntatt sjokolade, lever og merle. Hannhunder måler 36–41 cm i mankehøyde, og tispene er noe mindre. Canadian Kennel Clubs standard oppgir en vekt på 8,25–13,5 kg (18–30 lb). En hund av denne størrelsen er utvokst ved rundt 12–15 måneder (PetMD). PDSA oppgir en levealder på over 12 år (PetMD: 15–16 år).",
+        "FCI-standarden kaller rasen livlig og godmodig, utadvendt, våken og intelligent, men sparsom med hengivenhet overfor fremmede. PDSA kaller tibetanske terriere milde, vennlige og kjærlige hunder som er gode familiehunder. PDSA anbefaler rundt én times mosjon om dagen og sier at daglig pelsstell er nødvendig. PetMD skriver at de kan utvikle separasjonsangst hvis de er alene i lange perioder, og anbefaler sosialiseringskurs for valpen før 16 uker. Ifølge PetMD kan de være gode med små barn og andre hunder når introduksjonene skjer under tilsyn, mens WebMD skriver at enkelte hunder har problemer med små barn og andre hunder. WebMD anbefaler daglig tannpuss.",
+      ],
+      sources: ["S904", "S905", "S906", "S907", "S909", "S10"],
+    },
+    greyhound: {
+      aka: "Greyhound, engelsk mynde, English Greyhound",
+      text: [
+        "Greyhound er en stor mynde fra Storbritannia. FCI fører den opp i gruppe 10 blant de korthårede myndene. FCI-standarden beskriver en kraftig oppbygd, høyreist hund med gode proporsjoner, muskelkraft og symmetrisk oppbygning. Den er intelligent, mild, kjærlig og jevnlynt, med fin, tettliggende pels i svart, hvitt, rødt, blått, fawn, fallow eller brindle, eller i en av disse fargene brutt med hvitt. Den ideelle mankehøyden er 71–76 cm for hannhunder og 68–71 cm for tisper. AKC-standarden oppgir en vekt på 65–70 pund (ca. 29,5–31,8 kg) for hannhunder og 60–65 pund (ca. 27,2–29,5 kg) for tisper. En hund av denne størrelsen er utvokst ved rundt 15–18 måneder (PetMD). En britisk VetCompass-studie av greyhounder under veterinærmessig omsorg fant en median levealder på 11,4 år. PDSA oppgir en levealder på over ti år.",
+        "PDSA sier at greyhounder ikke er overdrevent energiske. De trenger omtrent én time mosjon om dagen og foretrekker et par gode løpeturer framfor milevis med gåing, og den korte pelsen trenger stell én gang i uken. Med riktig sosialisering som valper kan de bli gode familiehunder, men de har et sterkt jaktinstinkt. PetMD skriver at det svært sterke jaktinstinktet gjør dem lite egnet i hjem med katter eller andre små dyr. WebMD anbefaler daglig tannpuss og peker på at greyhounder, som mangler isolerende underull, kan være utsatt for ekstreme temperaturer.",
+      ],
+      sources: ["S912", "S913", "S914", "S916", "S917", "S918", "S920", "S10"],
+    },
+    xoloitzcuintli: {
+      aka: "Xoloitzcuintle, Xoloitzcuintli, Xolo, mexicansk nakenhund, Mexican Hairless Dog",
+      text: [
+        "Xoloitzcuintle (xolo) er en eldgammel, primitiv hund fra Mexico. FCI fører den opp i gruppe 5 blant de primitive typene. FCI-standarden beskriver en stille og rolig hund, munter, våken og intelligent, aldri aggressiv. Den finnes i to varianter som er like bortsett fra pels og tenner: nakne, med glatt bar hud, og pelskledde, med kort, glatt pels. Den kommer i tre størrelser, 25–35 cm, 35–45 cm og 46–60 cm i mankehøyde, og i svart, svartgrått, skifergrått, mørkegrått, rødlig, leverbrunt, bronse eller blondt, og ensfarget mørk hud er foretrukket. WebMD oppgir en vekt på 10–15 pund for toy, 15–30 pund for miniatyr og 30–55 pund for standard xolo (ca. 4,5–24,9 kg for alle størrelser). En hund av standardstørrelse er utvokst ved rundt 12–15 måneder (PetMD). PetMD og WebMD oppgir begge en levealder på 13–18 år.",
+        "PetMD skriver at xoloer trenger omtrent 20 minutter mosjon hver dag. Den nakne huden krever stell. PetMD råder til å bruke solkrem for hunder før hunden går ut, aldri solkrem for mennesker. VCA sier at xoloer passer best i varmt klima og trenger en genser når det er kjøligere. WebMD kaller xoloen en god familiehund for familier med barn og anbefaler tannpuss to–tre ganger i uken. PetMD legger til at samspill med barn alltid bør skje under tilsyn, at valper må sosialiseres slik at de ikke vokser opp med mistenksomhet overfor nye mennesker, og at rasen har sterkt jaktinstinkt overfor små dyr.",
+      ],
+      sources: ["S923", "S924", "S926", "S927", "S928", "S10"],
+    },
+    spinone_italiano: {
+      aka: "Spinone italiano, Italian Spinone, Spinone, Spinoni, Italian Griffon, Italian Wire-haired Pointer",
+      text: [
+        "Spinone italiano er en italiensk stående fuglehund. FCI fører den opp i gruppe 7 blant de kontinentale stående hundene av griffontypen. FCI-standarden beskriver en hund med solid bygning, robust og kraftfull, med kraftig benbygning og ru pels. Den er naturlig omgjengelig, føyelig og tålmodig, og en erfaren jakthund i alle slags terreng. Fargene er ren hvit, hvit med oransje tegninger, oransje skimmel, hvit med brune tegninger og brun skimmel. FCI-standarden oppgir en mankehøyde på 60–70 cm for hannhunder og 58–65 cm for tisper og en vekt på 32–37 kg for hannhunder og 28–30 kg for tisper. En hund av denne størrelsen er utvokst ved rundt 15–18 måneder (PetMD). PDSA oppgir en levealder på over ti år, PetMD 10–12 år.",
+        "PDSA kaller spinoneen en energisk rase som ideelt sett trenger mer enn 2 timer mosjon om dagen, og sier at den tykke, delvis stri pelsen trenger stell hjemme 2–3 ganger i uken. WebMD anbefaler klipping av klørne hver uke og daglig tannpuss. Ifølge WebMD er rasen som regel god med andre hunder og barn, men det oppstår ofte problemer hvis den blir latt alene i lange perioder. PetMD råder til å sosialisere valper tidlig, holde hunden i bånd eller i et inngjerdet område utendørs og ikke la den mosjonere én time før eller etter måltider på grunn av faren for magedreining (bloat).",
+      ],
+      sources: ["S935", "S936", "S937", "S938", "S10"],
+    },
+    pointer: {
+      aka: "Pointer, engelsk pointer, English Pointer",
+      text: [
+        "Pointer er en britisk stående fuglehund. FCI fører den opp i gruppe 7 blant de britiske og irske pointerne og setterne. FCI-standarden beskriver en symmetrisk, godt bygd hund med et omriss av grasiøse kurver, sterk, men smidig, våken og med et vennlig, jevnt sinnelag. Pelsen er fin, kort og hard, med tydelig glans. De vanligste fargene er sitrongul og hvit, oransje og hvit, leverbrun og hvit og svart og hvit. FCI-standarden oppgir en mankehøyde på 63–69 cm for hannhunder og 61–66 cm for tisper, og UKC-standarden en arbeidsvekt på 55–75 lb (ca. 25–34 kg) for hannhunder og 44–65 lb (ca. 20–29,5 kg) for tisper. En hund av denne størrelsen er utvokst ved rundt 15–18 måneder (PetMD). PDSA oppgir en levealder på over 12 år, PetMD 10–12 år.",
+        "PDSA sier at pointere har høyt energinivå og ideelt sett trenger over 2 timer mosjon om dagen. De trenger aktive eiere og god innkallingstrening, og den korte pelsen trenger bare stell én gang i uken. PetMD råder til å holde dem i en inngjerdet hage slik at de ikke stikker av, og peker på at de kan være en trussel mot fugler som holdes som kjæledyr. WebMD anbefaler daglig tannpuss og skriver at de ikke er spesielt gode med små barn. PDSA legger til at riktig sosialisering som valper, som for alle raser, hjelper dem å passe godt inn i familielivet.",
+      ],
+      sources: ["S943", "S944", "S945", "S946", "S947", "S10"],
+    },
+    welsh_terrier: {
+      aka: "Welsh terrier, Welshie, Welsh",
+      text: [
+        "Welsh terrier er en terrier fra Storbritannia. FCI fører den opp i gruppe 3 blant de store og mellomstore terrierne. FCI-standarden beskriver en velstelt, arbeidsvillig, velbalansert og kompakt hund med stri, hard, svært tett og rikelig pels. Den er kjærlig, lydig og lett å styre, glad og sjelden sky. Fargen er svart og tan eller svart grizzle og tan. FCI-standarden oppgir en høyde på opptil 39 cm og en vekt på 9–9,5 kg (20–21 lb). En hund av denne størrelsen er utvokst ved rundt 9–12 måneder (PetMD). The Royal Kennel Club og PDSA oppgir en levealder på over 12 år, PetMD 12–15 år.",
+        "The Royal Kennel Club sier at welsh terrieren trenger opptil 1 time mosjon om dagen og pelsstell mer enn én gang i uken. PDSA anbefaler rundt én times mosjon daglig og pelsstell to–tre ganger i uken, og beskriver en lekende, vennlig hund som elsker barn og er en utmerket familiehund. PetMD peker på et sterkt jaktinstinkt, så mindre dyr kan bli jaget, og råder til bånd eller et inngjerdet område utendørs, med sosialisering og trening fra tidlig alder.",
+      ],
+      sources: ["S955", "S956", "S957", "S958", "S10"],
+    },
+    american_hairless_terrier: {
+      aka: "Amerikansk hårløs terrier, American Hairless Terrier, AHT, Hairless Terrier",
+      text: [
+        "Amerikansk hårløs terrier (American Hairless Terrier) er en liten til mellomstor, aktiv terrier fra USA, med jevn muskulatur. American Kennel Club har anerkjent den i terriergruppen, men FCI fører den ikke opp. Rasestandarden beskriver en hund som er energisk, våken, nysgjerrig og intelligent, med V-formede ører og en naturlig hale som aldri kuttes. Det finnes to varianter: den hårløse, uten hår bortsett fra værhår og hår på øyenbryn og snute, og en pelskledd variant med kort, glatt pels. Standarden oppgir en ideell høyde på 12–16 tommer (30–41 cm). PetMD oppgir en vekt på 12–28 pund (5,4–12,7 kg) og en levealder på 14–16 år, og en hund av denne størrelsen er utvokst ved rundt 9–12 måneder (PetMD).",
+        "Dogs NSW oppgir omtrent 20 minutter mosjon om dagen, og PetMD sier at jevnlig mosjon og mental stimulering er et must for rasen. PetMD kaller dem flotte lekekamerater for barn, med tilsyn rundt små barn. Den nakne huden krever stell. Rasekluben sier at solkrem eller beskyttende klær er et must for å unngå solbrenthet, og anbefaler å klippe klørne hver uke. PetMD råder til en genser i kulden og jevnlige bad, helst hver uke, og WebMD råder til daglig tannpuss. Rasekluben peker også på et sterkt jaktinstinkt.",
+      ],
+      sources: ["S967", "S971", "S972", "S973", "S977", "S10"],
+    },
+    tibetan_spaniel: {
+      aka: "Tibetansk spaniel, Tibetan Spaniel, Tibbie",
+      text: [
+        "Tibetansk spaniel er en liten, aktiv og våken selskapshund fra Tibet (Kina). I FCI hører den til gruppen for selskaps- og toyhunder, blant de tibetanske rasene, med Storbritannia som patronatsland. FCI-standarden beskriver den som munter og selvsikker, svært intelligent og reservert overfor fremmede, lojal, men selvstendig. Den er litt lengre enn høy, med silkeaktig pels av middels lengde, befjærede ører og en rikt behåret hale som bæres krøllet over ryggen. Alle farger er tillatt unntatt merle. Standarden oppgir en høyde på ca. 25,4 cm og en ideell vekt på 4,1–6,8 kg. En hund av denne størrelsen er utvokst ved rundt 9–12 måneder (PetMD). I en stor britisk studie (McMillan m.fl., 2024) var rasen blant de mest langlivede, med en median på 15,2 år. PDSA oppgir en levealder på over 12 år.",
+        "PDSA sier at tibetanske spanieler trenger rundt én time mosjon hver dag, gjerne er med på lek med familien, som regel kommer godt overens med alle og er gode familiehunder, og at pelsstell et par ganger i uken vanligvis er nok. WebMD skriver at de er utsatt for separasjonsangst, passer best for familier med eldre barn, trenger en sikker, inngjerdet hage og kan bli overopphetet i varmt vær. WebMD anbefaler daglig tannpuss, kontroll av ørene minst én gang i uken, kontroll av klørne hver måned og bad omtrent hver måned.",
+      ],
+      sources: ["S980", "S981", "S982", "S771", "S10"],
+    },
+    black_russian_terrier: {
+      aka: "Svart russisk terrier, Black Russian Terrier, Russian Black Terrier, Tchiorny Terrier, BRT",
+      text: [
+        "Svart russisk terrier er en stor, robust og svært atletisk brukshund fra Russland. I FCI hører den til gruppen for pinscher- og schnauzertyper. FCI-standarden beskriver den som verdig, selvsikker og godt kontrollert, vennlig, nøysom, smart og omgjengelig, med en ru, tykk dobbeltpels som danner rikelig med øyenbryn, bart og skjegg. De eneste fargene er svart og svart med noe innblandet grått hår. Standarden oppgir 72–76 cm og 50–60 kg for hannhunder og 68–72 cm og 45–50 kg for tisper. En hund av denne størrelsen når vanligvis voksen vekt ved 18–24 måneder. The Royal Kennel Club oppgir en levealder på over ti år.",
+        "The Royal Kennel Club angir mer enn 2 timer mosjon og daglig pelsstell, og sier at rasen trenger et stort hus med hage og at pelsen ikke røyter. PetMD skriver at rasen er hengiven mot familien og kan være god med barn når samspillet skjer under tilsyn. Tidlig og konsekvent sosialisering er viktig, og kraftig mosjon bør unngås rett før og etter måltider på grunn av magedreining (bloat). VCA mener at eldre barn passer best, og anbefaler trimming hos en profesjonell hundefrisør hver sjette til åttende uke.",
+      ],
+      sources: ["S985", "S986", "S989", "S990", "S10"],
+    },
+    neapolitan_mastiff: {
+      aka: "Mastino napoletano, Napolitansk mastiff, Neapolitan Mastiff, Neo, Italian Mastiff",
+      text: [
+        "Mastino napoletano (napolitansk mastiff) er en stor, tung og massiv vakthund fra Italia. FCI fører den opp i gruppe 2 blant molosserne av mastifftypen. FCI-standarden beskriver den som stødig og lojal, ikke aggressiv, med kort, hard, tett pels og tykk, løs hud som danner mange folder og rynker, særlig på hodet. Foretrukne farger er grå, blygrå og svart, men også brun, fawn og dyp fawn. Standarden oppgir 65–75 cm og 60–70 kg for hannhunder og 60–68 cm og 50–60 kg for tisper. En hund av denne størrelsen når vanligvis voksen vekt ved 18–24 måneder. The Royal Kennel Club og PDSA oppgir en levealder på under ti år, PetMD bare 7–9 år.",
+        "The Royal Kennel Club angir opptil 1 time mosjon om dagen og pelsstell én gang i uken, sier at rasen røyter og trenger et stort hus med hage, og plasserer den i Breed Watch-kategori 3. PDSA sier at øyelokksproblemer som entropion og ektropion forekommer på grunn av den overskytende huden i ansiktet. PDSA kaller napolitanske mastiffer lojale, hengivne hunder som elsker familielivet, og sier at hudfoldene trenger daglig rengjøring. PetMD skriver at de er flotte med familier og barn, men ikke bør være alene med et lite barn. De siler mye, og riktig sosialisering og positiv forsterkning i treningen bør starte tidlig.",
+      ],
+      sources: ["S993", "S994", "S995", "S996", "S10"],
+    },
+    finnish_lapphund: {
+      aka: "Finsk lapphund, Finnish Lapphund, Suomenlapinkoira, Finnish Lapponian Dog, Lappie",
+      text: [
+        "Finsk lapphund (Suomenlapinkoira) er en gjeter- og vakthund fra Finland, opprinnelig brukt til å gjete rein. FCI fører den opp i gruppe 5 blant de nordiske vakt- og gjeterhundene. FCI-standarden beskriver den som noe mindre enn middels stor, intelligent, modig, rolig og føyelig, vennlig og trofast, med rikelig lang, stri overpels over myk, tett underull. Alle farger er tillatt. Den ideelle mankehøyden er 49 cm for hannhunder og 44 cm for tisper, med en toleranse på 3 cm, men standarden oppgir ingen vekt. PetMD og WebMD oppgir 33–53 pund (ca. 15–24 kg), og en hund av denne størrelsen når vanligvis voksen vekt ved 12–15 måneder. The Royal Kennel Club oppgir en levealder på over 12 år, PetMD og WebMD 12–15 år.",
+        "The Royal Kennel Club angir opptil 1 time mosjon om dagen og pelsstell én gang i uken, sier at rasen røyter og passer i et lite hus med liten eller middels stor hage, og plasserer den i Breed Watch-kategori 1. WebMD kaller lapphunder gode med barn fordi de er en familierase, og sier at klørne bør klippes én gang i måneden. PetMD skriver at de higer etter selskap, er dyktige bjeffere og bare trenger bad hver måned. De kan komme godt overens med mennesker i alle aldre når de er sosialisert som valper. PetMD nevner hofte- og albueleddsdysplasi og progressiv retinal atrofi som tilstander man bør kjenne til.",
+      ],
+      sources: ["S1003", "S1004", "S1006", "S1007", "S10"],
+    },
+    norwegian_elkhound: {
+      aka: "Norsk elghund grå, Norwegian Elkhound, Elkhound, Elkie, Norwegian Moose Dog",
+      text: [
+        "Norsk elghund grå er en nordisk jaktspisshund fra Norge, avlet for å jakte elg. FCI fører den opp i gruppe 5 blant de nordiske jakthundene. FCI-standarden beskriver en typisk spisshund som er kompakt, kort og kvadratisk bygd, med små oppreiste ører, en hale som er tett krøllet over ryggen og en tykk, grov pels av middels lengde. Den er uredd, energisk og modig. Grå, i ulike nyanser, er den eneste fargen standarden tillater. FCI-standarden oppgir en ideell mankehøyde på 52 cm for hannhunder og 49 cm for tisper, og AKC-standarden en vekt på ca. 55 pund (25 kg) for hannhunder og ca. 48 pund (22 kg) for tisper. En hund av denne størrelsen er utvokst ved rundt 12–15 måneder (PetMD), og PetMD og WebMD oppgir en levealder på 12–15 år.",
+        "PetMD anbefaler én times mosjon om dagen og sier at rasen trenger mental stimulering like mye som fysisk mosjon. PetMD kaller den flott rundt barn i alle aldre når samspillet skjer under tilsyn, og en fantastisk familiehund når den er sosialisert som valp og trent tidlig. PetMD råder til et sikkert, inngjerdet område eller bånd utendørs og peker på mye røyting og på at den tykke pelsen gjør den utsatt for overoppheting. WebMD råder til å børste pelsen minst to minutter hver dag og pusse tennene daglig.",
+      ],
+      sources: ["S960", "S961", "S963", "S964", "S10"],
+    },
+    mudi: {
+      aka: "Mudi, ungarsk mudi, Hungarian Mudi",
+      text: [
+        "Mudi er en ungarsk gjeterhund. FCI fører den opp i gruppe 1 blant gjeterhundene. FCI-standarden beskriver en mellomstor hund med kileformet hode, oppreiste ører og en overlinje som skråner mot bakparten, med tett, blank, bølget eller svakt krøllet pels. Den er ekstremt lærevillig, livlig, modig, våken og arbeidslysten. Fargene er svart, hvitt, fawn, askegrå (blå), leverbrun, askebrun og cifra (merle). FCI-standarden oppgir en mankehøyde på 41–47 cm for hannhunder og 38–44 cm for tisper, og PetMD en vekt på 18–29 lb (ca. 8–13 kg). En hund av denne størrelsen er utvokst ved rundt 12–15 måneder (PetMD). The Royal Kennel Club oppgir en levealder på over ti år, PetMD 12–14 år.",
+        "The Royal Kennel Club sier at mudien trenger opptil 1 time mosjon om dagen og pelsstell én gang i uken. Den er lojal og kjærlig mot familien, trenger et utløp for energien og intelligensen sin og passer best for en erfaren eier som kan gi den stimulering, struktur og et formål. PetMD beskriver den som en smart, selvstendig og bjeffeglad hund og sier at mudivalper trenger sosialisering fra tidlig alder for å bli trygge rundt barn, andre kjæledyr og nye mennesker.",
+      ],
+      sources: ["S949", "S950", "S952", "S10"],
+    },
+    lhasa_apso: {
+      aka: "Lhasa apso, Lhasa, Apso",
+      text: [
+        "Lhasa apso er en liten selskapshund fra Tibet. The Royal Kennel Club sier at den opprinnelig ble holdt av tibetanske munker som selskaps- og vakthund. Den er liten, med lang pels. VCA oppgir en høyde på 10–11 tommer (ca. 25–28 cm) og en vekt på 13–15 pund (ca. 6–7 kg). En hund av denne størrelsen er utvokst ved rundt 9–12 måneder (PetMD), og The Royal Kennel Club oppgir en levealder på over 12 år.",
+        "The Royal Kennel Club anbefaler opptil 1 time mosjon om dagen og daglig pelsstell. Rasen røyter ikke og passer i en leilighet, og den står i Breed Watch-kategori 1. PDSA sier at lhasa apsoer kommer godt overens med barn og andre kjæledyr i hjemmet, gitt riktig sosialisering som valper, og kan være litt mer på vakt overfor fremmede. WebMD foreslår bad minst annenhver uke, klipping av klørne hver tredje til fjerde uke og tannpuss så ofte som mulig.",
+      ],
+      sources: ["S740", "S741", "S742", "S743", "S10"],
+    },
+    coton_de_tulear: {
+      aka: "Coton de tuléar, Coton, Royal Dog of Madagascar",
+      text: [
+        "Coton de tuléar kommer fra Madagaskar, under fransk patronat. FCI fører den opp blant bichonene og beslektede raser. FCI-standarden beskriver en liten, langhåret selskapshund med hvit, bomullsaktig pels, runde, mørke øyne og et livlig, intelligent uttrykk. Den har et glad, stabilt temperament og er svært omgjengelig mot mennesker og andre hunder. Mankehøyden er 26–28 cm for hannhunder og 23–25 cm for tisper, og vekten 4–6 kg for hannhunder og 3,5–5 kg for tisper. Grunnfargen er hvit. En hund av denne størrelsen er utvokst ved rundt 8–12 måneder (PetMD). The Royal Kennel Club oppgir en levealder på over 12 år.",
+        "The Royal Kennel Club anbefaler opptil 30 minutter mosjon om dagen og sier at rasen passer i en leilighet, røyter lite og trenger daglig pelsstell. PDSA kaller cotoner lojale og kjærlige hunder som trives med familielivet og er utmerkede familiehunder. PetMD skriver at de som regel kommer godt overens med barn og andre kjæledyr når introduksjonene gjøres riktig, og at de kan utvikle separasjonsangst hvis de blir alene i mer enn noen få timer. PetMD anbefaler kontroll av ørene minst én gang i uken og bad omtrent én gang i måneden.",
+      ],
+      sources: ["S10", "S721", "S722", "S724", "S725", "S726"],
+    },
+    chow_chow: {
+      aka: "Chow chow, Chow, Chow-Chow",
+      text: [
+        "Chow chow er en kompakt, løvelignende spisshund fra Kina med tett, stående pels i én ensfarget farge: svart, rødt, blått, fawn, krem eller hvitt (FCI-rasestandarden). Mankehøyden er 48–56 cm for hannhunder og 46–51 cm for tisper, og PDSA oppgir en gjennomsnittsvekt på 20–30 kg. En hund av denne størrelsen er utvokst ved rundt 15–18 måneder (PetMD). PDSA oppgir en levealder på under ti år og PetMD 8–12 år.",
+        "PDSA skriver at rasen trenger minst én time mosjon om dagen og daglig børsting, og at det bør gå en stund mellom måltid og mosjon. Den beskriver lojale hunder som kan være ideelle kjæledyr i riktig hjem, helst hos erfarne eiere, og anbefaler ikke rasen sammen med små barn. PDSA peker på et sterkt jaktinstinkt, på at rasen kanskje ikke tåler å være alene, og på at den bør sosialiseres godt fra ung alder. PetMD legger til at den tykke pelsen og den korte snuten gjør at de lettere blir overopphetet.",
+      ],
+      sources: ["S696", "S700", "S701", "S10"],
+    },
+    old_english_sheepdog: {
+      aka: "Old English Sheepdog, Bobtail, OES",
+      text: [
+        "Old English Sheepdog er en stor, sterk, kvadratisk gjeterhund fra Storbritannia med rik, stri, lurvete pels. Pelsen er i en hvilken som helst nyanse av grå, grizzle eller blå på kroppen, med hvitt hode, hals og forpart (FCI-rasestandarden). FCI-standarden oppgir en mankehøyde på minst 61 cm for hannhunder og minst 56 cm for tisper, og PDSA en gjennomsnittlig høyde på 56–61 cm og en gjennomsnittsvekt på 27–30 kg. En hund av denne størrelsen er utvokst ved rundt 15–18 måneder (PetMD). PDSA oppgir en levealder på over ti år og PetMD 10–12 år.",
+        "PDSA skriver at rasen trenger minst to timer mosjon om dagen, fordelt på flere turer, og at den lange pelsen trenger daglig børsting og trimming hos en profesjonell hundefrisør omtrent hver sjette uke. Den beskriver avslappede familiehunder som passer bedre for familier med eldre barn. De kan lide av separasjonsangst når de blir alene og har sterkt gjete- og jaktinstinkt. PDSA råder til å vente en stund mellom måltid og mosjon.",
+      ],
+      sources: ["S704", "S705", "S706", "S10"],
+    },
+    pekingese: {
+      aka: "Pekingeser, Pekingese, Peke, Pekinese, Lion Dog",
+      text: [
+        "Pekingeser er en liten, løvelignende toyhund fra Kina med moderat lang, rett pels og en man rundt halsen. FCI-rasestandarden oppgir en ideell vekt på høyst 5 kg for hannhunder og 5,4 kg for tisper, og PDSA en gjennomsnittsvekt på 5 kg og en høyde på 15–22 cm. En hund av denne størrelsen er utvokst ved rundt 8–12 måneder (PetMD). PDSA oppgir en levealder på over 12 år og PetMD 12–14 år.",
+        "PDSA anbefaler minst en halv times mosjon om dagen uten å overdrive, siden det flate ansiktet kan gjøre det vanskelig å puste, og ingen mosjon på varmere dager. Den lange pelsen trenger daglig børsting, og rasen røyter mye, særlig om våren og høsten. Rynkene i ansiktet kan føre til hudfoldinfeksjoner. Pekingesere klarer seg som regel best sammen med voksne eller eldre barn, kan lide av separasjonsangst når de blir alene og bør sosialiseres fra ung alder. PetMD råder til daglig tannpuss, rengjøring av ørene hver til annenhver uke og profesjonelt pelsstell hver sjette til åttende uke for lang pels.",
+      ],
+      sources: ["S690", "S693", "S694", "S10"],
+    },
   },
 };
 
