@@ -1714,6 +1714,30 @@ const da: RegistryCopy = {
       ],
       sources: ["S993", "S994", "S995", "S996", "S10"],
     },
+    norfolk_terrier: {
+      aka: "Norfolk, Norfolk terrier, Norfolkterrier",
+      text: [
+        "Norfolk terrier er en af de mindste terriere og stammer fra Storbritannien. FCI placerer den i gruppe 3 blandt de små terriere. FCI-standarden beskriver en lav, livlig, kompakt og stærk lille hund, en »djævel« i forhold til sin størrelse. Den har et elskeligt temperament og er vagtsom og uden frygt. Pelsen er hård, strid og ret, og ørerne er mellemstore, V-formede og falder fremad tæt ind mod kinden. Farverne er alle nuancer af rød, hvedefarvet, sort og tan eller grizzle. Standarden angiver en ideel højde på 25 cm, men ingen vægt. UKC-standarden angiver 11–12 pund (ca. 5–5,4 kg), og PDSA 5–5,5 kg. En hund af denne størrelse er typisk udvokset ved omkring 9–12 måneder. Royal Kennel Club angiver en levetid på over 10 år, Woodgreen 12–15 år.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje mere end én gang om ugen. Klubben skriver, at racen fælder, og at den kan bo i en lejlighed. Den står i Breed Watch-kategori 1, og der anbefales ingen sundhedsundersøgelse før avl. PDSA skriver, at den stride pels skal redes et par gange om ugen og trimmes tre til fire gange om året, og at norfolk terriere elsker at grave. Woodgreen kalder dem milde og tålmodige over for børn, men altid under opsyn. De bryder sig ikke om at være alene i længere tid. De kan finde på at stikke af, så de har brug for et hegn, de ikke kan slippe ud af. Jagtinstinktet er stærkt, så små kæledyr som kaniner og marsvin er måske ikke i sikkerhed omkring dem.",
+      ],
+      sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
+    },
+    belgian_sheepdog: {
+      aka: "Groenendael, Belgian Shepherd Groenendael, Belgian Shepherd Dog (Groenendael), Belgian Groenendael",
+      text: [
+        "Belgisk hyrdehund groenendael er den langhårede, sorte variant af belgisk hyrdehund, en hyrderace fra Belgien. FCI anerkender én race, belgisk hyrdehund, med fire varianter og placerer den i gruppe 1 blandt hyrdehundene. FCI-standarden beskriver en harmonisk proportioneret hund, der forener elegance og styrke. Ørerne er forholdsvis små, højtsiddende og opretstående, og pelsen er lang og glat, længst omkring halsen og forbrystet. For groenendael tillader standarden kun ensfarvet sort. Den angiver en højde på cirka 62 cm for hanner og 58 cm for tæver og en vægt på cirka 25–30 kg for hanner og 20–25 kg for tæver. En hund af denne størrelse er udvokset ved omkring 12–15 måneder (PetMD's størrelsesklasse). Royal Kennel Club angiver en levetid på over 10 år, PetMD og WebMD 12–14 år.",
+        "Royal Kennel Club beskriver en vagtsom, forbeholden og meget intelligent hund med stor arbejdslyst. Klubben anbefaler mere end 2 timers motion om dagen og pelspleje mere end én gang om ugen. Den skriver, at racen fælder og passer til et stort hus med stor have, og placerer den i Breed Watch-kategori 1. PetMD skriver, at belgiske hyrdehunde knytter sig stærkt til deres mennesker og har brug for rigelig motion og mental stimulering. De kan finde på at hyrde børn og katte. PetMD anbefaler tidlig socialisering, børstning en gang om ugen og rensning af ørerne en til to gange om måneden. WebMD skriver, at de har brug for næsten to timers motion hver dag, og at de ikke er et godt valg, hvis man er væk i mange timer ad gangen. WebMD anbefaler desuden at børste tænderne dagligt og give bad en gang om måneden.",
+      ],
+      sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
+    },
+    finnish_lapphund: {
+      aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
+      text: [
+        "Finsk lapphund (suomenlapinkoira) er en hyrde- og vagthund fra Finland, som oprindeligt blev brugt til at passe rensdyr. FCI placerer den i gruppe 5 blandt de nordiske vagt- og hyrdehunde. FCI-standarden beskriver en hund, der er mindre end mellemstor, intelligent, modig, rolig og føjelig, venlig og trofast. Dækpelsen er rigelig, lang og hård, med en blød, tæt underuld. Alle farver er tilladt. Standarden angiver en ideel højde på 49 cm for hanner og 44 cm for tæver med en tolerance på 3 cm, men ingen vægt. PetMD og WebMD angiver 33–53 pund (ca. 15–24 kg). En hund af denne størrelse er typisk udvokset ved omkring 12–15 måneder. Royal Kennel Club angiver en levetid på over 12 år, PetMD og WebMD 12–15 år.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje en gang om ugen. Klubben skriver, at racen fælder og passer til et lille hus med en lille eller mellemstor have, og placerer den i Breed Watch-kategori 1. WebMD kalder lappierne gode med børn, fordi de er en selskabshund for hele familien, og skriver, at kløerne bør klippes en gang om måneden. PetMD skriver, at de har et stærkt behov for selskab og er gode til at gø. De skal kun have bad en gang om måneden. Hvis de er socialiseret som hvalpe, kan de komme godt ud af det med mennesker i alle aldre. PetMD nævner hofte- og albuedysplasi samt progressiv retinal atrofi (PRA) som lidelser, man bør kende til.",
+      ],
+      sources: ["S1003", "S1004", "S1006", "S1007", "S10"],
+    },
     norwegian_elkhound: {
       aka: "Elkhound, Elkie, Norsk Elghund Grå, Norsk elghund",
       text: [
