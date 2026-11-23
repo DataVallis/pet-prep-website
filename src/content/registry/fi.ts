@@ -1525,6 +1525,318 @@ const fi: RegistryCopy = {
       ],
       sources: ["C13", "C37", "C38"],
     },
+    keeshond: {
+      aka: "Wolfsspitz, German Wolfspitz",
+      text: [
+        "Keeshond on keskikokoinen pystykorva Saksasta, saksanpystykorvan muunnos, jota kutsutaan susipystykorvaksi (Wolfsspitz). Sillä on pitkä, ihosta pystyyn nouseva, harmaasävyinen turkki, tuuhea kaulus ja silmien ympärillä tummat ”silmälasit” (FCI:n rotumääritelmä). Säkäkorkeus on rotumääritelmän mukaan 49 ± 6 cm, ja PDSA ilmoittaa keskipainoksi 16–20 kg. Tämänkokoinen koira on täysikasvuinen noin 12–15 kuukauden iässä (PetMD). Eliniäksi PDSA ilmoittaa yli 10 vuotta ja VCA 12–14 vuotta.",
+        "PDSA:n mukaan rotu tarvitsee enintään tunnin liikuntaa päivässä ja paksu kaksikerroksinen turkki päivittäistä turkinhoitoa. PDSA kuvaa keeshondit erinomaisiksi perhekoiriksi, jotka tulevat toimeen kotona asuvien muiden lemmikkien kanssa ja oppivat hyvin, kun niille antaa aikaa ja kärsivällisyyttä. VCA:n mukaan ne ovat leikkisiä ja varovaisia lasten kanssa. VCA neuvoo kylvettämään koiran noin kerran kuussa ja huomauttaa, että karvanlähtö on keskimääräistä runsaampaa ja että paksu turkki voi altistaa ylikuumenemiselle.",
+      ],
+      sources: ["S246", "S709", "S710", "S10"],
+    },
+    standard_schnauzer: {
+      aka: "Schnauzer, Mittelschnauzer, keskikokoinen snautseri, Wire-Haired Pinscher",
+      text: [
+        "Snautseri (Standard Schnauzer) on kotoisin Saksasta. FCI luettelee sen pinserien ja snautserien ryhmässä nimellä snautseri. FCI:n rotumääritelmän mukaan se on keskikokoinen, vahva ja tanakka eikä hoikka koira, jolla on karkea, kova ja tiheä turkki, luppakorvat ja luonnollinen häntä. Säkäkorkeus on 45–50 cm ja paino 14–20 kg sekä uroksilla että nartuilla. Värit ovat pippuri ja suola sekä puhtaan musta. Tämänkokoinen koira on täysikasvuinen noin 12–15 kuukauden iässä (PetMD). The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta ja VCA 12–14 vuotta.",
+        "The Royal Kennel Club suosittelee enintään tunnin liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa. Sen mukaan rotu sopii pieneen taloon, jossa on pieni tai keskikokoinen piha kaupungissa tai maaseudulla. PDSA kuvaa snautserit lempeiksi ja kärsivällisiksi koiriksi, jotka tulevat hyvin toimeen lasten kanssa, kun ne tutustutetaan lapsiin jo nuorena. PDSA neuvoo hoitamaan turkkia 2–3 kertaa viikossa. VCA:n mukaan rotu oppii nopeasti mutta myös kyllästyy nopeasti, joten pelit ja temput antavat sille tarvittavaa henkistä liikuntaa. PetMD suosittelee kylpyä kuukausittain sekä kynsien leikkausta ja korvien puhdistusta 1–2 viikon välein. Lisäksi se neuvoo käyttämään ammattitrimmaajaa kolmen kuukauden välein.",
+      ],
+      sources: ["S10", "S711", "S712", "S714", "S715", "S716", "S717"],
+    },
+    english_setter: {
+      aka: "Laverack Setter, Llewellin Setter",
+      text: [
+        "Englanninsetteri on tyylikäs lintukoira Isosta-Britanniasta, jalostettu löytämään riistalintuja. FCI:n rotumääritelmän mukaan se on keskikorkea, siistilinjainen ja liikkeiltään tyylikäs koira. Valkoisessa turkissa on värillisiä pilkkuja (”belton”): sininen, oranssi, sitruunankeltainen tai maksanruskea. Turkki voi olla myös kolmivärinen. Säkäkorkeus on uroksilla 65–68 cm ja nartuilla 61–65 cm, ja PDSA ilmoittaa keskipainoksi 22–29 kg. Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD). The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta.",
+        "The Royal Kennel Club suosittelee yli 2 tuntia liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa. Sen mukaan rotu karvaa ja sopii isoon taloon, jossa on iso piha. Rotu kuuluu sen Breed Watch -luokkaan 1. PDSA:n mukaan englanninsetterit rakastavat lapsia ja muita lemmikkejä, joten ne sopivat erinomaisesti perheisiin. PDSA neuvoo hoitamaan turkkia 2–3 kertaa viikossa. PetMD ehdottaa kylpyä 6–8 viikon välein ja toteaa, etteivät ne pidä pitkistä yksinoloajoista. VCA mainitsee lisäksi jonkin verran leikkausta ja trimmausta joka kuukausi.",
+      ],
+      sources: ["S730", "S731", "S732", "S733", "S734", "S10"],
+    },
+    dogue_de_bordeaux: {
+      aka: "Bordeaux Mastiff, French Mastiff, Bordeauxdogge, DDB",
+      text: [
+        "Bordeauxindoggi (Dogue de Bordeaux) on voimakas molossityyppinen koira Ranskasta. FCI:n rotumääritelmän mukaan se on tanakka, urheilullinen ja vaikuttava koira, joka on rauhallinen, tasapainoinen ja kiintyy omistajaansa vahvasti. Sillä on hieno, lyhyt turkki, jonka väri on mikä tahansa kellanruskean sävy mahonginruskeasta isabellaan. Säkäkorkeus on uroksilla 60–68 cm ja nartuilla 58–66 cm. Paino on vähintään 50 kg uroksilla ja vähintään 45 kg nartuilla. PetMD ilmoittaa uroksille 110–145 paunaa (noin 50–66 kg) ja nartuille 99–120 paunaa (noin 45–54 kg). Tämänkokoinen koira on täysikasvuinen noin 18–24 kuukauden iässä (PetMD). Lähteet ovat eliniästä eri mieltä: PetMD:n mukaan nämä koirat elävät tyypillisesti vain 5–8 vuotta, kun taas The Royal Kennel Club ilmoittaa yli 10 vuotta.",
+        "The Royal Kennel Club suosittelee enintään tunnin liikuntaa päivässä ja turkinhoitoa kerran viikossa. Sen mukaan rotu karvaa ja sopii isoon taloon, jossa on iso piha. Rotu kuuluu sen Breed Watch -luokkaan 3. PDSA toteaa, että bordeauxindoggit tulevat yleensä hyvin toimeen isompien lasten kanssa. Pienempien lasten seuraan tai ensikertalaisille omistajille PDSA ei kuitenkaan suosittele niitä. Se varoittaa runsaasta kuolaamisesta ja hyvin voimakkaasta saalisvietistä ja neuvoo puhdistamaan kasvojen ihopoimut säännöllisesti sekä pitämään ruokailun jälkeen tauon ennen liikuntaa. PetMD:n mukaan lyhyt kuono voi vaikeuttaa hengittämistä kuumalla säällä.",
+      ],
+      sources: ["S755", "S756", "S757", "S759", "S10"],
+    },
+    flat_coated_retriever: {
+      aka: "Flatcoat, Flattie, Flat-coat, Flat Coated Retriever",
+      text: [
+        "Sileäkarvainen noutaja (flat-coated retriever) on eloisa ja aktiivinen lintukoira Isosta-Britanniasta, jalostettu noutamaan riistaa. FCI:n rotumääritelmän mukaan sillä on tiheä, tasaisesti asettuva turkki, jonka jaloissa ja hännässä on runsaasti hapsuja. Väri on vain musta tai maksanruskea. Luonteeltaan rotu on optimistinen, ystävällinen, itsevarma ja hyväntahtoinen. Suositeltu säkäkorkeus on uroksilla 59–61,5 cm ja nartuilla 56,5–59 cm ja suositeltu paino uroksilla 27–36 kg ja nartuilla 25–32 kg. Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD). The Royal Kennel Club ilmoittaa eliniäksi alle 10 vuotta, kun taas Dogs Trustin kautta esitellyn brittiläisen tutkimuksen (2024) mediaani oli 11,7 vuotta.",
+        "The Royal Kennel Club suosittelee yli 2 tuntia liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa. Sen mukaan rotu karvaa ja sopii isoon taloon, jossa on iso piha. Rotu kuuluu sen Breed Watch -luokkaan 1. PetMD kutsuu sileäkarvaisia noutajia upeiksi perhekoiriksi, jotka tulevat yleensä hyvin toimeen lasten ja muiden lemmikkien kanssa, etenkin kun tutustuminen ja sosiaalistaminen hoidetaan kunnolla. PetMD ehdottaa harjausta kaksi kertaa viikossa, korvien puhdistusta viikon tai kahden välein sekä kylpyä ja kynsien leikkausta kuukauden tai kahden välein. Lisäksi se neuvoo välttämään liikuntaa juuri ennen ruokailua ja sen jälkeen.",
+      ],
+      sources: ["S761", "S762", "S763", "S123", "S10"],
+    },
+    border_terrier: {
+      aka: "Border Terrier",
+      text: [
+        "Borderterrieri on pieni työterrieri Isosta-Britanniasta. FCI:n rotumääritelmän mukaan se on pohjimmiltaan työterrieri, joka pystyy seuraamaan hevosta ja jossa yhdistyvät toimeliaisuus ja periksiantamattomuus. Turkki on karkea ja tiheä, aluskarva tiivis, silmät ovat tummat ja ilme terävä. Korvat ovat pienet ja V-muotoiset. Värit ovat punainen, vehnänkeltainen, grizzle ja ruskea tai sininen ja ruskea. Paino on uroksilla 5,9–7,1 kg ja nartuilla 5,1–6,4 kg. Tämänkokoinen koira on täysikasvuinen noin 9–12 kuukauden iässä (PetMD). The Royal Kennel Club ilmoittaa eliniäksi yli 12 vuotta, ja brittiläisessä tutkimuksessa (McMillan ym. 2024) mediaani oli 14,2 vuotta.",
+        "The Royal Kennel Club suosittelee enintään tunnin liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa. Sen mukaan rotu karvaa ja sopii kerrostaloasuntoon. Rotu kuuluu sen Breed Watch -luokkaan 1. PDSA toteaa, että oikealla sosiaalistamisella borderterrierit viihtyvät kaikenikäisten lasten kanssa, mutta suosittelee valvontaa. PDSA varoittaa, että yksin jätettynä niille voi kehittyä eroahdistus. Niillä on myös voimakas saalisvietti, joten niitä ei pidä pitää yhdessä kaniinien, marsujen tai rottien kanssa. PDSA neuvoo harjaamaan turkkia pari kertaa viikossa ja pitämään ruokailun jälkeen tauon ennen liikuntaa. Woodgreen ehdottaa kotia, jossa on hieman vanhempia lapsia.",
+      ],
+      sources: ["S768", "S769", "S770", "S771", "S773", "S10"],
+    },
+    leonberger: {
+      aka: "Leonberg, Leonberger",
+      text: [
+        "Leonberginkoira on suuri koira Saksasta. FCI:n rotumääritelmän mukaan se on suuri, vahva, lihaksikas mutta tyylikäs koira, jolla on pitkä, tiiviisti asettuva turkki, riippukorvat ja runsaskarvainen häntä. Väri on leijonankeltainen, punainen, punaruskea tai hiekanvärinen, ja naamio on aina musta. Säkäkorkeus on uroksilla 72–80 cm ja nartuilla 65–75 cm. PDSA ilmoittaa keskipainoksi 30–50 kg sekä uroksille että nartuille ja eliniäksi alle 10 vuotta. Jättiläisrotuna se on täysikasvuinen noin 18–24 kuukauden iässä (PetMD:n kokoluokka).",
+        "The Royal Kennel Club suosittelee yli 2 tuntia liikuntaa päivässä sekä isoa taloa, jossa on iso piha. PDSA kutsuu leonberginkoiria lempeiksi jättiläisiksi ja erinomaisiksi perhekoiriksi. Woodgreen suosittelee harjausta 2–3 kertaa viikossa. Sen mukaan varhainen koulutus ja sosiaalistaminen ovat koon vuoksi välttämättömiä ja pitkät yksinoloajat rodulle vaikeita. Brittiläisen tutkimuksen (McMillan ym. 2024, Dogs Trustin kautta) mukaan elinajanodotteen mediaani on 10,0 vuotta.",
+      ],
+      sources: ["S783", "S781", "S10", "S780", "S784", "S123"],
+    },
+    beauceron: {
+      aka: "Berger de Beauce, Beauce Sheepdog, Bas Rouge",
+      text: [
+        "Beauceron eli Berger de Beauce on suuri ranskalainen paimenkoira. FCI:n rotumääritelmän mukaan se on iso, vankka, kestävä, voimakas ja lihaksikas mutta ei kömpelö. Turkki on lyhyt ja tiheä, häntä hieman J-kirjaimen muotoon koukistunut ja takajaloissa on kaksoissudenkynnet. Värit ovat musta ja ruskea tai harlekiini. Säkäkorkeus on uroksilla 65–70 cm ja nartuilla 61–68 cm. AKC:n rotukohtainen painotaulukko ilmoittaa uroksille ja nartuille 70–110 paunaa (noin 32–50 kg). Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD:n kokoluokka). The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta ja PetMD 10–12 vuotta.",
+        "The Royal Kennel Club kuvaa beauceronin hiljaiseksi ja itsevarmaksi, uskolliseksi seura- ja vartiokoiraksi. Se suosittelee yli 2 tuntia liikuntaa päivässä, turkinhoitoa useammin kuin kerran viikossa sekä isoa taloa, jossa on iso piha. Rotu kuuluu sen Breed Watch -luokkaan 1. PetMD:n mukaan beauceronit voivat tulla hyvin toimeen pienten lasten ja muiden koirien kanssa, kun tutustuminen tapahtuu valvotusti. Ne voivat suhtautua uusiin ihmisiin varauksella, joten pentujen tulisi tutustua uusiin ihmisiin varhain. Ne haluavat myös olla perheensä seurassa mahdollisimman paljon. PetMD suosittelee harjausta vähintään kerran viikossa ja sitä, ettei koiraa liikuteta tuntia ennen ruokailua eikä tuntia sen jälkeen.",
+      ],
+      sources: ["S790", "S268", "S10", "S787", "S791"],
+    },
+    bouvier_des_flandres: {
+      aka: "Bouvier, Flanders Cattle Dog, Vlaamse Koehond",
+      text: [
+        "Flanderinkarjakoira (Bouvier des Flandres) on karjakoira Flanderista, Belgiasta ja Ranskasta. FCI:n rotumääritelmän mukaan se on lyhyt, tiivis ja voimakas, ja sillä on vahvat, hyvin lihaksikkaat raajat. Turkki on noin 6 cm pitkä, karkea, kuiva ja hieman pörröinen, ja koiralla on viikset ja täysi parta. Väri on yleensä harmaa, tiikerijuovainen tai mustan peittämä, ja myös yksivärinen musta on hyväksytty. Säkäkorkeus on uroksilla 62–68 cm ja paino noin 35–40 kg, nartuilla 59–65 cm ja noin 27–35 kg. Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD:n kokoluokka). Brittiläisen tutkimuksen (McMillan ym. 2024, Dogs Trustin kautta) mukaan elinajanodotteen mediaani on 11,3 vuotta.",
+        "The Royal Kennel Club kuvaa bouvierin vahvaksi ja monipuoliseksi, alun perin karjaa paimentaneeksi koiraksi. Se suosittelee enintään tunnin liikuntaa päivässä, päivittäistä turkinhoitoa ja isoa taloa, jossa on iso piha. Rotu kuuluu sen Breed Watch -luokkaan 1. PetMD:n mukaan bouvierit voivat tulla hyvin toimeen pienten lasten ja muiden isojen koirien kanssa, kun tutustuminen tapahtuu valvotusti. Niillä on voimakas saalisvietti kissoja ja pieniä lemmikkejä kohtaan, ne tarvitsevat varhaista sosiaalistamista ja ovat alttiita ylipainolle. PetMD suosittelee harjausta vähintään kerran tai kaksi viikossa, korvien puhdistusta 2–3 viikon välein ja kynsien leikkausta 3–4 viikon välein. Lisäksi se neuvoo välttämään liikuntaa tuntia ennen ruokailua ja tuntia sen jälkeen.",
+      ],
+      sources: ["S797", "S10", "S123", "S795", "S798"],
+    },
+    borzoi: {
+      aka: "Russian Wolfhound, Russian Hunting Sighthound, Russkaya Psovaya Borzaya",
+      text: [
+        "Venäjänvinttikoira (borzoi) eli venäläinen ajavinttikoira on pitkäkarvainen vinttikoira Venäjältä, jalostettu ajamaan jänistä ja kettua. FCI:n rotumääritelmän mukaan se on aristokraattinen, korkea, hoikka ja vahva koira, jolla on melko pitkät jalat ja pitkä, silkkinen, aaltoileva turkki. Turkki voi olla minkä värinen tahansa valkoisesta mustaan, ruskeaa, sinistä ja isabellaa lukuun ottamatta. Toivottu säkäkorkeus on uroksilla 75–85 cm ja nartuilla 68–78 cm. PDSA ilmoittaa keskipainoksi 27–47 kg sekä uroksille että nartuille ja eliniäksi yli 10 vuotta, PetMD 9–14 vuotta. Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD:n kokoluokka).",
+        "PDSA suosittelee vähintään tunnin liikuntaa päivässä jaettuna pariin lenkkiin. Vapaana koiraa saa pitää vain turvallisella alueella. PDSA:n mukaan borzoilla on erittäin voimakas saalisvietti, joten niitä ei suositella pienempien eläinten eikä nuorempien lasten seuraan. Ne sopivat kokeneille omistajille ja tarvitsevat jonkun kotiin suurimmaksi osaksi ajasta. Ne tulee sosiaalistaa nuoresta asti, ja turkkia on harjattava muutaman kerran viikossa. Syömisen ja liikunnan välillä on pidettävä tauko. PetMD suosittelee harjausta vähintään 2–3 kertaa viikossa ja mainitsee mahalaukun kiertymän yleisimpänä terveysongelmana.",
+      ],
+      sources: ["S802", "S800", "S803", "S10"],
+    },
+    japanese_chin: {
+      aka: "Japanese Spaniel, Japan Chin, Chin",
+      text: [
+        "Japaninpentu on pieni seurakoira Japanista. The Royal Kennel Clubin rotumääritelmän mukaan se on tyylikäs, aristokraattinen ja tiivis pikku koira. Turkki on runsas, pitkä ja silkkinen, ja väri on mustavalkoinen tai punavalkoinen (ei koskaan kolmivärinen). Kuono on lyhyt ja leveä, ja ilme on hämmästynyt. Ihannepaino on 1,8–3,2 kg, ja PetMD:n mukaan korkeus on 8–11 tuumaa (noin 20–28 cm). Tämänkokoinen koira on täysikasvuinen noin 8–12 kuukauden iässä (PetMD:n kokoluokka). Brittiläisen tutkimuksen (McMillan ym. 2024, Dogs Trustin kautta) mukaan elinajanodotteen mediaani on 12,5 vuotta.",
+        "The Royal Kennel Club suosittelee enintään 30 minuuttia liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa. Sen mukaan rotu karvaa ja sopii kerrostaloasuntoon. Rotu kuuluu sen Breed Watch -luokkaan 1. PetMD kertoo, että japaninpentu on lyhytkuonoinen (brakykefaalinen) rotu, jolla voi olla hengitysvaikeuksia ja joka ylikuumenee helposti. Kuumalla tai kosteella säällä liikunta kuuluu siksi päivän viileämpiin aikoihin. PetMD:n mukaan japaninpentu tulee yleensä hyvin toimeen lasten kanssa, kun yhdessäolo on valvottua. Sille voi kehittyä eroahdistus, ja se kannattaa viedä varhain sosiaalistamiskurssille. PetMD suosittelee harjausta kerran tai kaksi viikossa, korvien puhdistusta 2–3 viikon välein ja kylpyä noin kuukausittain.",
+      ],
+      sources: ["S806", "S10", "S123", "S805", "S809"],
+    },
+    norwich_terrier: {
+      aka: "Norwich, Norwich Terrier",
+      text: [
+        "Norwichinterrieri on yksi pienimmistä terriereistä, kotoisin Isosta-Britanniasta. FCI:n rotumääritelmän mukaan se on matala, valpas, tiivis ja vahva pikku koira. Turkki on kova, karkea ja suora, ja se muodostaa kasvojen ympärille kauluksen. Korvat ovat pystyt ja teräväkärkiset. Värit ovat kaikki punaisen sävyt, vehnänkeltainen, musta ja ruskea tai grizzle. Ihannesäkäkorkeus on 25 cm. UKC:n rotumääritelmä antaa ihannepainoksi noin 12 paunaa (noin 5,4 kg) sekä uroksille että nartuille. Tämänkokoinen koira on täysikasvuinen noin 9–12 kuukauden iässä (PetMD:n kokoluokka). The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta ja PetMD 12–15 vuotta.",
+        "The Royal Kennel Club kutsuu norwichinterrieriä yhdeksi pienimmistä terriereistä, joilla on rakastettava luonne. Se suosittelee enintään tunnin liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa. Sen mukaan rotu karvaa ja sopii kerrostaloasuntoon. Se luokittelee rodun haavoittuvaksi kotimaiseksi roduksi (vulnerable native breed). PetMD:n mukaan norwichinterrierit tulevat yleensä hyvin toimeen lasten ja muiden lemmikkien kanssa. Ne ovat vilkkaita ja tarvitsevat päivittäistä liikuntaa ja henkistä virikettä. Niillä on vahva metsästysvietti, joten turvallinen talutushihna ja hyvin aidattu piha ovat välttämättömiä. Ne tulee myös sosiaalistaa varhain. PetMD suosittelee harjausta vähintään kaksi kertaa viikossa, hampaiden harjausta vähintään kerran viikossa, kynsien leikkausta noin kerran kuussa ja kylpyä korkeintaan kolmen kuukauden välein.",
+      ],
+      sources: ["S812", "S815", "S10", "S813", "S814"],
+    },
+    miniature_bull_terrier: {
+      aka: "Mini Bull Terrier, Mini Bull, Bull Terrier (Miniature), English Miniature Bull Terrier",
+      text: [
+        "Kääpiöbullterrieri on pieni terrieri Isosta-Britanniasta. FCI luokittelee sen bullterrierityyppisiin terriereihin. The Royal Kennel Clubin mukaan se tunnustettiin erillisenä muunnoksena ensimmäisen kerran vuonna 1943. Se on jalostettu pienemmistä bullterriereistä pysymään alle 35,5 cm:n (14 tuuman) korkuisena. PetMD ilmoittaa korkeudeksi 10–14 tuumaa (noin 25–36 cm) ja painoksi 18–28 paunaa (noin 8–13 kg). Tämänkokoinen koira on täysikasvuinen noin 9–12 kuukauden iässä (PetMD:n kokoluokka). The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta ja PetMD 11–13 vuotta.",
+        "The Royal Kennel Club kuvaa rodun rohkeaksi, eloisaksi ja hauskuutta rakastavaksi. Se suosittelee enintään tunnin liikuntaa päivässä ja turkinhoitoa kerran viikossa. Sen mukaan rotu karvaa. Lisäksi se luokittelee rodun haavoittuvaksi kotimaiseksi roduksi (vulnerable native breed). PetMD:n mukaan kääpiöbullterrierit ovat yleensä kiintyviä ja hyviä lasten kanssa, ystävällisiä perheenjäseniä. Ne voivat tulla toimeen muiden lemmikkien kanssa, jos ne on sosiaalistettu kunnolla. Ne tarvitsevat säännöllistä liikuntaa ja henkistä virikettä, eivätkä ne viihdy, jos ne jätetään pitkiksi ajoiksi yksin. PetMD suosittelee varhaista sosiaalistamista ja harjausta noin kerran viikossa.",
+      ],
+      sources: ["S818", "S820", "S821", "S10"],
+    },
+    schipperke: {
+      aka: "Little Captain, Little Black Devil, Spitzke",
+      text: [
+        "Schipperke on pieni paimenkoira Belgiasta. FCI sijoittaa sen paimenkoirien joukkoon. Rotumääritelmän mukaan se on pienikokoinen mutta hyvin vankkarakenteinen, susimainen ja kokonaan musta koira, jolla on kaulus, harja ja ”housut”. FCI:n rotumääritelmä ilmoittaa painoksi 3–9 kg (tavoitteena keskipaino 4–7 kg) ja PetMD korkeudeksi 10–13 tuumaa (noin 25–33 cm). Tämänkokoinen koira on täysikasvuinen noin 9–12 kuukauden iässä (PetMD:n kokoluokka). Laajan brittiläisen tutkimuksen (McMillan ym. 2024) mukaan elinajanodotteen mediaani on 14,2 vuotta, ja The Royal Kennel Club ilmoittaa eliniäksi yli 12 vuotta.",
+        "FCI:n rotumääritelmä kutsuu schipperkeä erinomaiseksi pieneksi vartiokoiraksi, joka on täynnä elinvoimaa, pidättyväinen vieraita kohtaan ja hyvin lempeä lasten kanssa. The Royal Kennel Club suosittelee enintään tunnin liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa. Sen mukaan rotu karvaa ja sopii kerrostaloasuntoon. Rotu kuuluu sen Breed Watch -luokkaan 1. PetMD:n mukaan schipperket tarvitsevat tekemistä, joka pitää mielen ja kehon vilkkaana. Ne ovat älykkäitä mutta jääräpäisiä, ja joillakin on voimakas saalisvietti. PetMD suosittelee varhaista sosiaalistamista, päivittäistä hampaiden harjausta ja korvien puhdistusta kahden viikon välein. VCA suosittelee harjausta vähintään kaksi kertaa viikossa.",
+      ],
+      sources: ["S824", "S825", "S826", "S827", "S828", "S771", "S10"],
+    },
+    belgian_tervuren: {
+      aka: "Tervuren, Tervueren, Terv, Belgian Shepherd Dog (Tervueren)",
+      text: [
+        "Belgianpaimenkoira tervueren on belgianpaimenkoiran pitkäkarvainen, kellanruskea muunnos Belgiasta. FCI tunnistaa yhden belgianpaimenkoirarodun, jolla on neljä muunnosta. FCI:n rotumääritelmän mukaan se on sopusuhtainen koira, jossa yhdistyvät eleganssi ja voima. Pitkä turkki muodostaa kauluksen ja housut, ja häntä on hulmuava. Tervuerenilla sallitaan vain kellanruskea tai harmaa väri mustalla peitevärillä ja mustalla naamiolla (kellanruskea on ensisijainen). Säkäkorkeus on noin 62 cm uroksilla ja 58 cm nartuilla ja paino noin 25–30 kg uroksilla ja 20–25 kg nartuilla. Tämänkokoinen koira on täysikasvuinen noin 12–15 kuukauden iässä (PetMD:n kokoluokka). The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta ja PetMD 12–14 vuotta.",
+        "FCI:n rotumääritelmä kutsuu belgianpaimenkoiraa valppaaksi ja aktiiviseksi, energiaa puhkuvaksi koiraksi, joka ei osoita pelkoa eikä aggressiivisuutta. The Royal Kennel Club suosittelee yli 2 tuntia liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa. Sen mukaan rotu karvaa ja sopii isoon taloon, jossa on iso piha. Rotu kuuluu sen Breed Watch -luokkaan 1. PetMD:n mukaan tervuerenit kiintyvät perheeseensä tiiviisti ja tarvitsevat paljon liikuntaa ja henkistä virikettä. Ne saattavat yrittää paimentaa lapsia ja pienempiä eläimiä. PetMD suosittelee varhaista sosiaalistamista, viikoittaista harjausta (karvanlähdön aikana lähes päivittäin), korvien puhdistusta 1–2 viikon välein ja kylpyä 4–6 viikon välein.",
+      ],
+      sources: ["S312", "S313", "S830", "S832", "S10"],
+    },
+    toy_fox_terrier: {
+      aka: "American Toy Terrier, Amertoy, TFT",
+      text: [
+        "Toy Fox Terrier on pieni amerikkalainen terrieri, joka kuuluu AKC:n seurakoirien ryhmään (Toy Group). AKC:n rotumääritelmän mukaan se on hyvin tasapainoinen, urheilullisen näköinen pieni koira, jolla on lyhyt, satiinimainen turkki ja pystyt, teräväkärkiset korvat. Vartalo on enimmäkseen valkoinen, ja pää on kolmivärinen, valkoruskea, valkomusta tai valkoinen, suklaanruskea ja ruskea. PetMD ilmoittaa painoksi 4–9 paunaa (noin 1,8–4 kg) ja korkeudeksi 8,5–11,5 tuumaa (noin 21–29 cm). Tämänkokoinen koira on täysikasvuinen noin 8–12 kuukauden iässä (PetMD). PetMD ja WebMD ilmoittavat eliniäksi 13–15 vuotta.",
+        "AKC:n rotumääritelmä kutsuu toy fox terrieriä älykkääksi, valppaaksi, ystävälliseksi ja omistajilleen uskolliseksi. PetMD suosittelee vähintään tunnin liikuntaa joka päivä, harjausta kerran tai kaksi viikossa sekä varhaista koulutusta ja sosiaalistamista. Se toteaa myös, että rodulla on yhä voimakas saalisvietti. WebMD:n mukaan toy fox terrierit ovat hienoja seuralaisia lapsille, jotka osaavat kunnioittaa koiraa. Ne sopivat vanhemmille lapsille, mutta niitä ei suositella perheisiin, joissa on pieniä lapsia. Yksin pitkään jätettynä niille voi tulla eroahdistus. WebMD suosittelee hampaiden harjausta päivittäin, korvien pesua viikoittain ja kynsien leikkausta kuukausittain.",
+      ],
+      sources: ["S833", "S834", "S835", "S10"],
+    },
+    gordon_setter: {
+      aka: "Black and Tan Setter, Scottish Setter, Gordon",
+      text: [
+        "Gordoninsetteri on suuri mustaruskea lintukoira Skotlannista (FCI:n ryhmä 7, seisovat koirat; alkuperämaa Iso-Britannia). FCI:n rotumääritelmän mukaan se on tyylikäs koira, jonka linjat ovat laukkaavat. Turkin väri on syvä, kiiltävä hiilenmusta, ja merkit ovat kastanjanpunertavanruskeat. Säkäkorkeus on uroksilla 66 cm ja paino 29,5 kg, nartuilla 62 cm ja 25,5 kg. Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD). The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta.",
+        "FCI:n rotumääritelmä kutsuu gordoninsetteriä rohkeaksi, ulospäin suuntautuneeksi, hyväntahtoiseksi ja tasaluonteiseksi. PDSA kuvaa rodun ystävälliseksi ja älykkääksi, ja se haluaa pitää itsensä kiireisenä. The Royal Kennel Club suosittelee yli 2 tuntia liikuntaa päivässä sekä isoa taloa ja pihaa. PDSA:n mukaan paksu turkki vaatii päivittäistä hoitoa. PetMD neuvoo rajoittamaan liikuntaa tunnin ajan ennen ruokailua ja sen jälkeen ja sosiaalistamaan pennut varhain. Rodun voimakkaan saalisvietin vuoksi luoksetulon harjoitteluun kannattaa kiinnittää erityistä huomiota. WebMD suosittelee hampaiden harjausta päivittäin ja kylpyä noin kerran kuussa. Sen mukaan rotu on vain kohtalaisen hyvä pienten lasten kanssa.",
+      ],
+      sources: ["S841", "S842", "S843", "S844", "S845", "S10"],
+    },
+    afghan_hound: {
+      aka: "Afghan, Tazi, Baluchi Hound",
+      text: [
+        "Afgaaninvinttikoira on pitkäkarvainen, korkea vinttikoira Afganistanista (FCI:n ryhmä 10, vinttikoirat; alkuperämaa Afganistan, brittiläisen suojeluksen alaisena). FCI:n rotumääritelmän mukaan koira antaa vaikutelman voimasta ja arvokkuudesta, ja siinä yhdistyvät nopeus ja voima. Turkki on pitkä ja hyvin hieno. Kaikki värit hyväksytään merleä lukuun ottamatta. Ihannesäkäkorkeus on uroksilla 68–74 cm ja nartuilla 63–69 cm. AKC:n rotumääritelmä antaa painoksi noin 60 paunaa (27 kg) uroksille ja noin 50 paunaa (23 kg) nartuille. Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD). The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta.",
+        "FCI:n rotumääritelmä kutsuu afgaaninvinttikoiraa arvokkaaksi ja pidättyväiseksi, ja siinä on tiettyä kiivautta. The Royal Kennel Club suosittelee yli 2 tuntia liikuntaa päivässä, päivittäistä turkinhoitoa sekä isoa taloa ja pihaa. PDSA toteaa, että pitkä, silkkinen turkki vaatii päivittäistä harjausta. Hyvin sosiaalistetut afgaaninvinttikoirat tulevat PDSA:n mukaan hyvin toimeen lasten kanssa, ja niiden voimakas jahtivietti edellyttää varovaisuutta muiden lemmikkien seurassa. PetMD neuvoo odottamaan vähintään tunnin aterian jälkeen ennen liikuntaa ja kylvettämään koiran vähintään viikon tai kahden välein. WebMD suosittelee hampaiden harjausta päivittäin.",
+      ],
+      sources: ["S849", "S850", "S851", "S852", "S853", "S854", "S10"],
+    },
+    australian_silky_terrier: {
+      aka: "Silky Terrier, Silky, silkkiterrieri",
+      text: [
+        "Australiansilkkiterrieri on pieni, hyvin valpas seuraterrieri Australiasta (FCI:n ryhmä 3, terrierit; osasto seuraterrierit). Pohjois-Amerikassa se tunnetaan nimellä Silky Terrier. FCI:n rotumääritelmä edellyttää tasaista, hienoa, kiiltävää ja silkkimäistä turkkia, jonka väri on sininen ja ruskea. Kaikki sinisen ja ruskean sävyt kelpaavat, hopea ja valkoinen eivät. Säkäkorkeus on uroksilla 23–26 cm, ja nartut ovat hieman pienempiä. Rotumääritelmät eivät anna painoa (”korkeuteen suhteutettu”), mutta PetMD ja WebMD ilmoittavat sen olevan noin 10 paunaa (noin 4,5 kg). Tämänkokoinen koira on täysikasvuinen noin 8–12 kuukauden iässä (PetMD). The Royal Kennel Club ilmoittaa eliniäksi yli 12 vuotta (PetMD ja WebMD: 13–15 vuotta).",
+        "FCI:n rotumääritelmä kuvaa rodun rohkeaksi ja arvokkaaksi seuraterrieriksi, joka on seuralaisena vertaansa vailla. The Royal Kennel Club suosittelee enintään 30 minuuttia liikuntaa päivässä ja päivittäistä turkinhoitoa. Sen mukaan rotu sopii kerrostaloasuntoon. PetMD:n mukaan silkit tulevat hyvin toimeen muiden lemmikkien ja lasten kanssa, jos ne on sosiaalistettu kunnolla nuorena. PetMD suosittelee sosiaalistamiskursseja ennen 16 viikon ikää ja korvien puhdistusta 2–3 viikon välein. Saalisvietin vuoksi koiraa kannattaa pitää talutushihnassa tai aidatulla alueella. WebMD suosittelee hampaiden harjausta päivittäin ja kylpyä noin kerran kuussa.",
+      ],
+      sources: ["S855", "S856", "S857", "S858", "S10"],
+    },
+    parson_russell_terrier: {
+      aka: "Parson Jack Russell Terrier, Parson Terrier, PRT",
+      text: [
+        "Parsonrussellinterrieri on työkykyinen, aktiivinen ja ketterä työterrieri Isosta-Britanniasta, alun perin ketun parissa työskentelyyn jalostettu (FCI:n ryhmä 3, terrierit; osasto isot ja keskikokoiset terrierit). Se on eri rotu kuin jackrussellinterrieri: The Kennel Club tunnusti sen ensimmäisen kerran vuonna 1990 nimellä Parson Jack Russell Terrier. FCI:n rotumääritelmän mukaan koira on valkoinen tai pääosin valkoinen, ja siinä on ruskeita, sitruunankeltaisia tai mustia merkkejä tai mikä tahansa näiden yhdistelmä. Turkki on karkea, rikkonainen tai sileä. Ihannesäkäkorkeus on 36 cm uroksilla ja 33 cm nartuilla. PDSA ilmoittaa keskipainoksi 6–8 kg. Tämänkokoinen koira on täysikasvuinen noin 9–12 kuukauden iässä (PetMD). The Royal Kennel Club ilmoittaa eliniäksi yli 12 vuotta (WebMD: 13–15 vuotta).",
+        "FCI:n rotumääritelmä kutsuu rotua rohkeaksi ja ystävälliseksi. The Royal Kennel Club suosittelee enintään tunnin liikuntaa päivässä ja turkinhoitoa kerran viikossa. PDSA kertoo, että nämä koirat ovat täynnä energiaa ja tarvitsevat ihanteellisesti 1–2 tuntia liikuntaa päivässä. Ne tulevat hyvin toimeen lasten kanssa ja ovat erinomaisia perhekoiria. Perheen muiden lemmikkien kanssa ne tarvitsevat sosiaalistamista jo nuorena. PetMD toteaa, että joillakin on voimakas saalisvietti. Se suosittelee hampaiden harjausta päivittäin, korvien puhdistusta kahden viikon välein ja kylpyä 2–4 viikon välein. WebMD lisää, etteivät ne pidä yksin olemisesta ja että niille voi kehittyä eroahdistus.",
+      ],
+      sources: ["S864", "S865", "S866", "S867", "S868", "S10"],
+    },
+    wire_fox_terrier: {
+      aka: "Fox Terrier (Wire), Wire Hair Fox Terrier, Wirehaired Fox Terrier, Fox Terrier",
+      text: [
+        "Karkeakarvainen kettuterrieri on aktiivinen ja eloisa terrieri Isosta-Britanniasta (FCI:n ryhmä 3, terrierit; osasto isot ja keskikokoiset terrierit). Se ei siis ole toy fox terrieri. FCI:n rotumääritelmän mukaan pienessä koossa on oltava luustoa ja voimaa, mutta ei koskaan kömpelyyttä eikä karkeutta. Turkki on tiheä ja hyvin karkea, ja aluskarva on pehmeämpi. Väri on pääosin valkoinen, ja merkit ovat mustat, mustat ja ruskeat tai ruskeat. Säkäkorkeus ei saa ylittää uroksilla 39 cm, ja nartuilla se on hieman pienempi. AKC:n rotumääritelmä antaa urokselle painoksi 18 paunaa näyttelykunnossa ja nartulle noin kaksi paunaa vähemmän, yhden paunan vaihteluvälillä suuntaan tai toiseen (noin 7,7–8,6 kg uroksilla ja 6,8–7,7 kg nartuilla). Tämänkokoinen koira on täysikasvuinen noin 9–12 kuukauden iässä (PetMD). The Royal Kennel Club ilmoittaa eliniäksi yli 12 vuotta (PetMD: 12–15 vuotta).",
+        "FCI:n rotumääritelmä kutsuu rotua ystävälliseksi, avoimeksi ja pelottomaksi. The Royal Kennel Club suosittelee enintään tunnin liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa. PDSA kertoo, että kettuterrierit rakastavat leikkimistä ja tutkimista, ovat erinomaisia perhekoiria ja tarvitsevat turkinhoitoa kerran tai kaksi viikossa. WebMD kutsuu niitä hienoiksi lasten seuralaisiksi mutta neuvoo valvomaan niitä aina pienten lasten seurassa. PetMD toteaa, että voimakkaan saalisvietin vuoksi niitä tulee tarkkailla tiiviisti pienten lemmikkien lähellä. PetMD suosittelee pennun hyvää sosiaalistamista, hampaiden harjausta päivittäin, kylpyä noin kerran kuussa ja turkin käsin trimmausta 3–4 kertaa vuodessa. WebMD suosittelee lisäksi kynsien leikkausta noin kerran kuussa.",
+      ],
+      sources: ["S871", "S872", "S873", "S874", "S875", "S876", "S10"],
+    },
+    manchester_terrier: {
+      aka: "Manchester Terrier (Standard), Black and Tan Terrier, Manchester",
+      text: [
+        "Manchesterinterrieri on tiivis, tyylikäs terrieri Isosta-Britanniasta (FCI:n ryhmä 3, terrierit; osasto isot ja keskikokoiset terrierit). Se on vakiokokoinen, ei kääpiömuunnos (toy). FCI:n rotumääritelmän mukaan koira on tiivis, tyylikäs ja terveen oloinen ja sillä on ainesta. Turkki on tiheä, sileä, lyhyt ja kiiltävä, ja sen väri on vain hohtavan musta ja rikkaan mahonginruskea. Ihannesäkäkorkeus on 41 cm uroksilla ja 38 cm nartuilla. Canadian Kennel Clubin rotumääritelmä ilmoittaa painoksi 5,5–10 kg (12–22 paunaa). Tämänkokoinen koira on täysikasvuinen noin 9–12 kuukauden iässä (PetMD). PDSA ilmoittaa eliniäksi yli 12 vuotta (WebMD: 15–17 vuotta).",
+        "FCI:n rotumääritelmä kutsuu rotua innokkaaksi, valppaaksi, iloiseksi, urheilulliseksi, arvostelukykyiseksi ja omistautuneeksi. PDSA suosittelee enintään tunnin liikuntaa päivässä ja toteaa, että harjaus kerran viikossa riittää yleensä. PetMD kertoo, että manchesterinterrierit tulevat hyvin toimeen lasten kanssa, etenkin jos ne tapaavat lapsia pentuina. PetMD suosittelee pennun sosiaalistamista kotiintulopäivästä lähtien. PetMD huomauttaa myös, että rodulla on voimakas saalisvietti, joka periytyy rottien pyytäjinä toimimisesta, joten se ei välttämättä sovi koteihin, joissa on hamstereita tai gerbiilejä. WebMD neuvoo, ettei pieniä lapsia koskaan jätetä koirien kanssa ilman valvontaa. Se suosittelee hampaiden harjausta päivittäin ja toteaa, että rotu on herkkä kylmälle, joten takki tai villapaita voi olla tarpeen.",
+      ],
+      sources: ["S888", "S889", "S890", "S891", "S892", "S10"],
+    },
+    tibetan_terrier: {
+      aka: "Tibet Terrier",
+      text: [
+        "Tiibetinterrieri on tanakka, keskikokoinen ja pitkäkarvainen seurakoira Tiibetistä (FCI:n ryhmä 9, seura- ja kääpiökoirat; osasto tiibetiläiset rodut). Terrieri se on vain nimeltään. FCI:n rotumääritelmän mukaan koiran yleisilme on neliömäinen. Turkki on kaksinkertainen, ja päällyskarva on runsas, hieno ja pitkä, suora tai aaltoileva. Korvat ovat riippuvat ja hapsulliset, ja häntä kiertyy selän yli. Kaikki värit sallitaan paitsi suklaanruskea, maksanruskea ja merle. Urosten säkäkorkeus on 36–41 cm, ja nartut ovat hieman pienempiä. Canadian Kennel Clubin rotumääritelmä ilmoittaa painoksi 8,25–13,5 kg (18–30 paunaa). Tämänkokoinen koira on täysikasvuinen noin 12–15 kuukauden iässä (PetMD). PDSA ilmoittaa eliniäksi yli 12 vuotta (PetMD: 15–16 vuotta).",
+        "FCI:n rotumääritelmän mukaan rotu on eloisa, hyväluonteinen, ulospäin suuntautunut, valpas ja älykäs, mutta vieraille se ei osoita hellyyttä helposti. PDSA kuvaa tiibetinterrierit lempeiksi, ystävällisiksi ja kiintyviksi koiriksi, jotka sopivat hyvin perhekoiriksi. PDSA suosittelee noin tunnin liikuntaa päivässä ja toteaa, että turkinhoito on päivittäinen tehtävä. PetMD:n mukaan yksin pitkiksi ajoiksi jätettynä niille voi kehittyä eroahdistus. PetMD suosittelee pennun sosiaalistamiskursseja ennen 16 viikon ikää ja kertoo, että ne voivat tulla hyvin toimeen pienten lasten ja muiden koirien kanssa, kun tutustuminen on valvottua. WebMD:n mukaan joillakin yksilöillä on kuitenkin vaikeuksia pienten lasten ja muiden koirien kanssa. WebMD suosittelee hampaiden harjausta päivittäin.",
+      ],
+      sources: ["S904", "S905", "S906", "S907", "S909", "S10"],
+    },
+    greyhound: {
+      aka: "English Greyhound, englanninvinttikoira",
+      text: [
+        "Greyhound on suuri vinttikoira Isosta-Britanniasta. FCI luokittelee sen ryhmään 10, lyhytkarvaisiin vinttikoiriin. FCI:n rotumääritelmän mukaan se on vahvarakenteinen ja ryhdikäs koira, jonka mittasuhteet ovat runsaat, lihasvoima suuri ja rakenne symmetrinen. Luonteeltaan se on älykäs, lempeä, kiintyvä ja tasainen. Turkki on hieno ja tiivis, ja sen väri on musta, valkoinen, punainen, sininen, kellanruskea, vaalea kellanruskea (fallow) tai tiikerijuovainen, tai mikä tahansa näistä valkoisella rikottuna. Ihannesäkäkorkeus on uroksilla 71–76 cm ja nartuilla 68–71 cm. AKC:n rotumääritelmä antaa uroksille painoksi 65–70 paunaa (noin 29,5–31,8 kg) ja nartuille 60–65 paunaa (noin 27,2–29,5 kg). Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD). Eläinlääkärin hoidossa olleita greyhoundeja koskevassa brittiläisessä VetCompass-tutkimuksessa mediaani-ikä oli 11,4 vuotta, ja PDSA ilmoittaa eliniäksi yli 10 vuotta.",
+        "PDSA toteaa, etteivät greyhoundit ole erityisen energisiä. Ne tarvitsevat noin tunnin liikuntaa päivässä ja pitävät kunnon pyrähdyksestä enemmän kuin kilometrien kävelystä. Niiden lyhyt turkki tarvitsee hoitoa viikoittain. Oikealla sosiaalistamisella pentuna niistä voi tulla hyviä perhekoiria, mutta niillä on voimakas jahtivietti. PetMD:n mukaan erittäin voimakas saalisvietti tekee niistä huonon valinnan koteihin, joissa on kissoja tai muita pieniä eläimiä. WebMD suosittelee hampaiden harjausta päivittäin ja toteaa, että ilman eristävää aluskarvaa greyhoundit voivat olla herkkiä äärilämpötiloille.",
+      ],
+      sources: ["S912", "S913", "S914", "S916", "S917", "S918", "S920", "S10"],
+    },
+    xoloitzcuintli: {
+      aka: "Xoloitzcuintle, Xolo, Mexican Hairless Dog, Mexican Hairless",
+      text: [
+        "Meksikonkarvatonkoira (xoloitzcuintli) on muinainen alkukantainen koira Meksikosta. FCI sijoittaa sen ryhmään 5, alkukantaisiin rotuihin. FCI:n rotumääritelmän mukaan se on hiljainen ja rauhallinen, iloinen, valpas ja älykäs koira, joka ei koskaan ole aggressiivinen. Muunnoksia on kaksi, ja ne ovat keskenään samanlaiset turkkia ja hampaita lukuun ottamatta: karvaton, jolla on sileä paljas iho, ja karvallinen, jolla on lyhyt, tasainen turkki. Kokoja on kolme, ja säkäkorkeus on 25–35 cm, 35–45 cm tai 46–60 cm. Värit ovat musta, mustanharmaa, liuskeenharmaa, tummanharmaa, punertava, maksanruskea, pronssi tai vaalea (blonde), ja yksivärinen tumma iho on suositeltava. WebMD ilmoittaa painoksi 10–15 paunaa toy-koon, 15–30 paunaa pienoiskoon ja 30–55 paunaa vakiokoon xololle (noin 4,5–24,9 kg kaikkien kokojen osalta). Vakiokokoinen koira on täysikasvuinen noin 12–15 kuukauden iässä (PetMD). PetMD ja WebMD ilmoittavat molemmat eliniäksi 13–18 vuotta.",
+        "PetMD:n mukaan xolot tarvitsevat noin 20 minuuttia liikuntaa joka päivä. Paljas iho vaatii hoitoa: PetMD neuvoo käyttämään koirille tarkoitettua aurinkovoidetta ennen ulos menoa, ei koskaan ihmisten aurinkovoidetta. VCA:n mukaan ne sopivat parhaiten lämpimään ilmastoon ja tarvitsevat villapaidan viileämmällä säällä. WebMD kutsuu xoloa hyväksi perhekoiraksi lapsiperheisiin ja suosittelee hampaiden harjausta 2–3 kertaa viikossa. PetMD lisää, että lasten kanssa yhdessäolo tulee aina valvoa ja että pennut on sosiaalistettava, etteivät ne kasva epäluuloisiksi uusia ihmisiä kohtaan. PetMD lisää myös, että rodulla on voimakas saalisvietti pieniä eläimiä kohtaan.",
+      ],
+      sources: ["S923", "S924", "S926", "S927", "S928", "S10"],
+    },
+    spinone_italiano: {
+      aka: "Italian Spinone, Spinone, Italian Griffon, Italian Wire-haired Pointer",
+      text: [
+        "Spinone (Spinone Italiano) on italialainen lintukoira. FCI sijoittaa sen ryhmään 7, mannermaisiin seisoviin koiriin, griffontyyppisiin. FCI:n rotumääritelmän mukaan se on vankkarakenteinen, tanakka ja tarmokas koira, jolla on voimakas luusto ja karkea turkki. Luonteeltaan se on seurallinen, tottelevainen ja kärsivällinen, ja se on kokenut metsästäjä kaikessa maastossa. Värit ovat puhtaan valkoinen, valkoinen oranssein merkein, oranssi sekakarvainen, valkoinen ruskein merkein ja ruskea sekakarvainen. Säkäkorkeus on uroksilla 60–70 cm ja nartuilla 58–65 cm ja paino uroksilla 32–37 kg ja nartuilla 28–30 kg. Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD). PDSA ilmoittaa eliniäksi yli 10 vuotta ja PetMD 10–12 vuotta.",
+        "PDSA kutsuu spinonea energiseksi roduksi, joka tarvitsee ihanteellisesti yli 2 tuntia liikuntaa päivässä. PDSA:n mukaan paksu, osin karkea turkki vaatii hoitoa kotona 2–3 kertaa viikossa. WebMD suosittelee kynsien leikkausta viikoittain ja hampaiden harjausta päivittäin. Sen mukaan rotu on yleensä hyvä muiden koirien ja lasten kanssa, mutta pitkät yksinoloajat johtavat usein ongelmiin. PetMD neuvoo sosiaalistamaan pennut varhain ja pitämään koiran ulkona talutushihnassa tai aidatulla alueella. Mahalaukun kiertymän vaaran vuoksi koiraa ei pidä liikuttaa tuntiin ennen ruokailua eikä sen jälkeen.",
+      ],
+      sources: ["S935", "S936", "S937", "S938", "S10"],
+    },
+    pointer: {
+      aka: "English Pointer",
+      text: [
+        "Pointteri on brittiläinen lintukoira. FCI sijoittaa sen ryhmään 7, brittiläisiin ja irlantilaisiin pointtereihin ja setteriin. FCI:n rotumääritelmän mukaan se on symmetrinen ja hyvin rakentunut koira, jonka ääriviivat kaartuvat sulavasti. Se on vahva mutta notkea, valpas ja luonteeltaan lempeä ja tasainen. Turkki on hieno, lyhyt ja kova, ja siinä on selvä kiilto. Tavalliset värit ovat sitruunankeltainen ja valkoinen, oranssi ja valkoinen, maksanruskea ja valkoinen sekä mustavalkoinen. FCI:n rotumääritelmä antaa säkäkorkeudeksi 63–69 cm uroksille ja 61–66 cm nartuille. UKC:n rotumääritelmä antaa työpainoksi 55–75 paunaa (noin 25–34 kg) uroksille ja 44–65 paunaa (noin 20–29,5 kg) nartuille. Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD). PDSA ilmoittaa eliniäksi yli 12 vuotta ja PetMD 10–12 vuotta.",
+        "PDSA toteaa, että pointtereilla on paljon energiaa ja ne tarvitsevat ihanteellisesti yli 2 tuntia liikuntaa päivässä, aktiivisia omistajia ja hyvää luoksetulokoulutusta. Niiden lyhyt turkki tarvitsee hoitoa vain kerran viikossa. PetMD neuvoo pitämään ne aidatulla pihalla, jotta ne eivät karkaile, ja mainitsee, että ne voivat olla uhka lemmikkilinnuille. WebMD suosittelee hampaiden harjausta päivittäin ja toteaa, etteivät ne ole erityisen hyviä pienten lasten kanssa. PDSA lisää, että kuten kaikilla roduilla, oikea sosiaalistaminen pentuna auttaa niitä sopeutumaan perhe-elämään.",
+      ],
+      sources: ["S943", "S944", "S945", "S946", "S947", "S10"],
+    },
+    welsh_terrier: {
+      aka: "Welshie, Welsh",
+      text: [
+        "Walesinterrieri on terrieri Isosta-Britanniasta. FCI sijoittaa sen ryhmään 3, isoihin ja keskikokoisiin terriereihin. FCI:n rotumääritelmän mukaan se on tyylikäs, työhön sopiva, hyvin tasapainoinen ja tiivis koira, jolla on karkea, kova, hyvin tiivis ja runsas turkki. Luonteeltaan se on kiintyvä, tottelevainen ja helposti hallittava, iloinen ja harvoin arka. Väri on musta ja ruskea tai mustanharmaa (grizzle) ja ruskea. FCI:n rotumääritelmä antaa säkäkorkeudeksi enintään 39 cm ja painoksi 9–9,5 kg (20–21 paunaa). Tämänkokoinen koira on täysikasvuinen noin 9–12 kuukauden iässä (PetMD). The Royal Kennel Club ja PDSA ilmoittavat eliniäksi yli 12 vuotta ja PetMD 12–15 vuotta.",
+        "The Royal Kennel Club toteaa, että walesinterrieri tarvitsee enintään tunnin liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa. PDSA mainitsee noin tunnin liikunnan päivittäin ja turkinhoidon 2–3 kertaa viikossa. Se kuvaa rodun leikkisäksi ja ystävälliseksi koiraksi, joka rakastaa lapsia ja on erinomainen perhekoira. PetMD toteaa, että rodulla on voimakas saalisvietti ja pienempiä eläimiä saatetaan jahdata. Se neuvoo käyttämään ulkona talutushihnaa tai aidattua aluetta sekä sosiaalistamaan ja kouluttamaan koiraa varhain.",
+      ],
+      sources: ["S955", "S956", "S957", "S958", "S10"],
+    },
+    american_hairless_terrier: {
+      aka: "AHT, Hairless Terrier",
+      text: [
+        "Amerikankarvatonterrieri on pieni tai keskikokoinen, sileälihaksinen ja aktiivinen terrieri Yhdysvalloista. American Kennel Club on tunnustanut sen terrieriryhmässään, mutta FCI ei luettele sitä. Rotumääritelmän mukaan se on energinen, valpas, utelias ja älykäs koira, jolla on V-muotoiset korvat ja luonnollinen häntä, jota ei koskaan typistetä. Muunnoksia on kaksi: karvaton, jolla ei ole karvaa muualla kuin viiksikarvoissa sekä kulmakarvoissa ja kuonon karvoissa, ja karvallinen, jolla on lyhyt, sileä turkki. Rotumääritelmä antaa ihannekorkeudeksi 12–16 tuumaa (30–41 cm). PetMD ilmoittaa painoksi 12–28 paunaa (5,4–12,7 kg) ja eliniäksi 14–16 vuotta, ja tämänkokoinen koira on täysikasvuinen noin 9–12 kuukauden iässä (PetMD).",
+        "Dogs NSW ilmoittaa noin 20 minuuttia liikuntaa päivässä. PetMD:n mukaan säännöllinen liikunta ja henkinen virike ovat rodulle välttämättömiä. PetMD kutsuu rotua loistaviksi leikkikavereiksi lapsille, kun valvonta on mukana pienten lasten seurassa. Paljas iho vaatii hoitoa: rotuyhdistyksen mukaan aurinkovoide tai suojavaatetus on välttämätön auringonpolttaman estämiseksi. PetMD neuvoo villapaitaa kylmällä ja säännöllisiä kylpyjä, mieluiten viikoittain. WebMD neuvoo harjaamaan hampaat päivittäin ja rotuyhdistys leikkaamaan kynnet viikoittain. Rotuyhdistys mainitsee myös voimakkaan saalisvietin.",
+      ],
+      sources: ["S967", "S971", "S972", "S973", "S977", "S10"],
+    },
+    tibetan_spaniel: {
+      aka: "Tibbie, Tibetan Spaniel",
+      text: [
+        "Tiibetinspanieli on pieni, aktiivinen ja valpas seurakoira Tiibetistä (Kiina). FCI sijoittaa sen seura- ja kääpiökoirien ryhmään tiibetiläisten rotujen joukkoon, ja rodun suojelijamaa on Iso-Britannia. FCI:n rotumääritelmän mukaan se on iloinen, itsevarma, erittäin älykäs, vieraisiin pidättyväinen, valpas, uskollinen mutta itsenäinen. Se on hieman korkeuttaan pidempi. Turkki on silkkinen ja keskipitkä, korvat ovat hapsulliset ja häntä on runsashapsuinen ja kiertyy selän yli. Kaikki värit sallitaan paitsi merle. Rotumääritelmä antaa korkeudeksi noin 25,4 cm ja ihannepainoksi 4,1–6,8 kg. Tämänkokoinen koira on täysikasvuinen noin 9–12 kuukauden iässä (PetMD). Laajassa brittiläisessä tutkimuksessa (McMillan ym. 2024) rotu oli pitkäikäisimpien joukossa, mediaanina 15,2 vuotta. PDSA ilmoittaa eliniäksi yli 12 vuotta.",
+        "PDSA toteaa, että tiibetinspanielit tarvitsevat noin tunnin liikuntaa joka päivä ja osallistuvat mielellään perheen leikkeihin. Ne tulevat yleensä hyvin toimeen kaikkien kanssa ja ovat hyviä perhekoiria. Turkinhoito pari kertaa viikossa riittää yleensä. WebMD:n mukaan niille tulee helposti eroahdistus. Ne sopivat paremmin perheisiin, joissa on isompia lapsia, tarvitsevat turvallisen aidatun pihan ja voivat ylikuumentua kuumalla säällä. WebMD neuvoo harjaamaan hampaat päivittäin, tarkistamaan korvat vähintään kerran viikossa, tarkistamaan kynnet kuukausittain ja kylvettämään koiran noin kerran kuussa.",
+      ],
+      sources: ["S980", "S981", "S982", "S771", "S10"],
+    },
+    black_russian_terrier: {
+      aka: "Russian Black Terrier, Russian Terrier, Tchiorny Terrier, BRT",
+      text: [
+        "Musta venäjänterrieri on suuri, vankka ja erittäin urheilullinen työkoira Venäjältä. FCI sijoittaa sen pinserien ja snautserien tyyppisten koirien ryhmään. FCI:n rotumääritelmän mukaan se on arvokas, itsevarma ja hyvin hallittu, ystävällinen, vaatimaton, älykäs ja mukava. Turkki on karkea, tuuhea ja kaksinkertainen, ja se muodostaa runsaat kulmakarvat, viikset ja parran. Värit ovat vain musta sekä musta, jossa on jonkin verran harmaita karvoja. Rotumääritelmä antaa uroksille 72–76 cm ja 50–60 kg, nartuille 68–72 cm ja 45–50 kg. Tämänkokoinen koira saavuttaa aikuispainonsa tyypillisesti 18–24 kuukauden iässä. The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta.",
+        "The Royal Kennel Club mainitsee yli 2 tuntia liikuntaa ja turkinhoitoa päivittäin sekä ison talon ja pihan. Sen mukaan turkista ei lähde karvaa. PetMD toteaa, että rotu on omistautunut perheelleen ja voi olla hyvä lasten kanssa valvottuna. Varhainen ja johdonmukainen sosiaalistaminen on tärkeää, ja rasittavaa liikuntaa tulee välttää heti ennen ruokailua ja sen jälkeen mahalaukun kiertymän vuoksi. VCA pitää ihanteellisena isompia lapsia ja suosittelee ammattitrimmaajan trimmausta 6–8 viikon välein.",
+      ],
+      sources: ["S985", "S986", "S989", "S990", "S10"],
+    },
+    neapolitan_mastiff: {
+      aka: "Mastino Napoletano, Neo, Neapolitan, Italian Mastiff",
+      text: [
+        "Napolinmastiffi (Mastino Napoletano) on suuri, raskas ja massiivinen vartijakoira Italiasta. FCI sijoittaa sen ryhmään 2, mastiffityyppisiin molosseihin. FCI:n rotumääritelmän mukaan se on vakaa ja uskollinen, ei aggressiivinen. Turkki on lyhyt, kova ja tiheä, ja paksu, löysä iho muodostaa lukuisia poimuja ja ryppyjä etenkin päähän. Suositeltuja värejä ovat harmaa, lyijynharmaa ja musta, mutta myös ruskea, kellanruskea ja tumma kellanruskea ovat sallittuja. Rotumääritelmä antaa uroksille 65–75 cm ja 60–70 kg, nartuille 60–68 cm ja 50–60 kg. Tämänkokoinen koira saavuttaa aikuispainonsa tyypillisesti 18–24 kuukauden iässä. The Royal Kennel Club ja PDSA ilmoittavat eliniäksi alle 10 vuotta, PetMD vain 7–9 vuotta.",
+        "The Royal Kennel Club mainitsee enintään tunnin liikuntaa päivässä, turkinhoitoa kerran viikossa, karvanlähdön sekä ison talon ja pihan. Se sijoittaa rodun Breed Watch -luokkaan 3. PDSA toteaa, että kasvojen liiallisen ihon vuoksi esiintyy luomiongelmia, kuten entropiota ja ektropiota. PDSA kuvaa napolinmastiffit uskollisiksi ja omistautuneiksi koiriksi, jotka rakastavat perhe-elämää. Sen mukaan niiden ihopoimut vaativat päivittäistä puhdistusta. PetMD:n mukaan ne ovat loistavia perheen ja lasten kanssa, mutta niitä ei tule jättää yksin pienen lapsen kanssa. Ne kuolaavat paljon, ja kunnollinen sosiaalistaminen ja myönteiseen vahvistamiseen perustuva koulutus tulee aloittaa varhain.",
+      ],
+      sources: ["S993", "S994", "S995", "S996", "S10"],
+    },
+    norwegian_elkhound: {
+      aka: "Elkhound, Elkie, Norwegian Elkhound Grey, Norsk Elghund Grå, Norwegian Moose Dog, norjanhirvikoira",
+      text: [
+        "Harmaa norjanhirvikoira on harmaa pohjoismainen metsästyspystykorva Norjasta, jalostettu hirven metsästykseen. FCI sijoittaa sen ryhmään 5, pohjoismaisiin metsästyskoiriin. FCI:n rotumääritelmän mukaan se on tyypillinen pystykorva: tiivis, lyhyt ja neliömäinen, ja sillä on pienet pystykorvat, tiukasti selän yli kiertyvä häntä ja paksu, karkea, keskipitkä turkki. Luonteeltaan se on pelkäämätön, energinen ja rohkea. Rotumääritelmä sallii värin vain harmaana eri sävyissä. FCI:n rotumääritelmä antaa ihannesäkäkorkeudeksi 52 cm uroksille ja 49 cm nartuille ja AKC:n rotumääritelmä painoksi noin 55 paunaa (25 kg) uroksille ja noin 48 paunaa (22 kg) nartuille. Tämänkokoinen koira on täysikasvuinen noin 12–15 kuukauden iässä (PetMD). PetMD ja WebMD ilmoittavat eliniäksi 12–15 vuotta.",
+        "PetMD suosittelee tunnin liikuntaa päivässä ja toteaa, että rotu tarvitsee henkistä virikettä yhtä paljon kuin fyysistä liikuntaa. PetMD kutsuu rotua loistavaksi kaikenikäisten lasten kanssa, kun yhdessäolo on valvottua, ja upeaksi perhekoiraksi, kun se on sosiaalistettu pentuna ja koulutettu varhain. Se neuvoo käyttämään ulkona turvallista aidattua aluetta tai talutushihnaa ja mainitsee runsaan karvanlähdön ja sen, että paksu turkki altistaa ylikuumenemiselle. WebMD neuvoo harjaamaan turkkia vähintään kaksi minuuttia joka päivä ja harjaamaan hampaat päivittäin.",
+      ],
+      sources: ["S960", "S961", "S963", "S964", "S10"],
+    },
+    mudi: {
+      aka: "Hungarian Mudi",
+      text: [
+        "Mudi on unkarilainen paimenkoira. FCI sijoittaa sen ryhmään 1, paimenkoiriin. FCI:n rotumääritelmän mukaan se on keskikokoinen koira, jolla on kiilamainen pää, pystykorvat ja takaosaa kohti laskeva yläprofiili. Turkki on tiheä, kiiltävä, aaltoileva tai hieman kihara. Luonteeltaan se on erittäin oppivainen, eloisa, rohkea, valpas ja työhön innokas. Värit ovat musta, valkoinen, kellanruskea, tuhkanharmaa (sininen), maksanruskea, tuhkanruskea ja cifra (merle). FCI:n rotumääritelmä antaa säkäkorkeudeksi 41–47 cm uroksille ja 38–44 cm nartuille, ja PetMD ilmoittaa painoksi 18–29 paunaa (noin 8–13 kg). Tämänkokoinen koira on täysikasvuinen noin 12–15 kuukauden iässä (PetMD). The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta ja PetMD 12–14 vuotta.",
+        "The Royal Kennel Club toteaa, että mudi tarvitsee enintään tunnin liikuntaa päivässä ja turkinhoitoa kerran viikossa. Rotu on uskollinen ja kiintyvä perheelleen, ja se tarvitsee purkautumiskeinon energialleen ja älykkyydelleen. Se sopii parhaiten kokeneelle omistajalle, joka pystyy antamaan sille virikkeitä, rakennetta ja tarkoituksen. PetMD kuvaa mudin älykkääksi, itsenäiseksi ja äänekkääksi koiraksi. PetMD:n mukaan mudipentujen on sosiaalistuttava varhain, jotta ne tuntevat olonsa mukavaksi lasten, muiden lemmikkien ja uusien ihmisten seurassa.",
+      ],
+      sources: ["S949", "S950", "S952", "S10"],
+    },
+    lhasa_apso: {
+      aka: "Lhasa, Apso, Lasa Apso",
+      text: [
+        "Lhasa apso on pieni seurakoira Tiibetistä. The Royal Kennel Clubin mukaan tiibetiläiset munkit pitivät sitä alun perin seuralaisena ja vahtikoirana. Se on pieni ja pitkäkarvainen koira. VCA ilmoittaa korkeudeksi 10–11 tuumaa (noin 25–28 cm) ja painoksi 13–15 paunaa (noin 6–7 kg). Tämänkokoinen koira on täysikasvuinen noin 9–12 kuukauden iässä (PetMD), ja The Royal Kennel Club ilmoittaa eliniäksi yli 12 vuotta.",
+        "The Royal Kennel Club suosittelee enintään tunnin liikuntaa päivässä ja päivittäistä turkinhoitoa. Sen mukaan rodusta ei lähde karvaa ja se sopii kerrostaloasuntoon. Rotu kuuluu sen Breed Watch -luokkaan 1. PDSA toteaa, että lhasa apsot tulevat hyvin toimeen lasten ja talon muiden lemmikkien kanssa, kun ne on sosiaalistettu oikein pentuina. Ne voivat olla hieman varovaisempia vieraiden suhteen. WebMD ehdottaa kylpyä vähintään kahden viikon välein, kynsien leikkausta 3–4 viikon välein ja hampaiden harjausta mahdollisimman säännöllisesti.",
+      ],
+      sources: ["S740", "S741", "S742", "S743", "S10"],
+    },
+    coton_de_tulear: {
+      aka: "Coton, Coton de Tuléar, Royal Dog of Madagascar",
+      text: [
+        "Coton de Tuléar on kotoisin Madagaskarilta ja Ranskan suojeluksessa. FCI luettelee sen bichonien ja sukulaisrotujen joukossa. FCI:n rotumääritelmän mukaan se on pieni, pitkäkarvainen seurakoira, jolla on valkoinen, puuvillamainen turkki, pyöreät tummat silmät ja eloisa, älykäs ilme. Luonne on iloinen ja vakaa, ja koira on erittäin seurallinen ihmisten ja muiden koirien kanssa. Säkäkorkeus on 26–28 cm uroksilla ja 23–25 cm nartuilla ja paino 4–6 kg uroksilla ja 3,5–5 kg nartuilla. Pohjaväri on valkoinen. Tämänkokoinen koira on täysikasvuinen noin 8–12 kuukauden iässä (PetMD). The Royal Kennel Club ilmoittaa eliniäksi yli 12 vuotta.",
+        "The Royal Kennel Club suosittelee enintään 30 minuuttia liikuntaa päivässä ja päivittäistä turkinhoitoa. Sen mukaan rotu sopii kerrostaloasuntoon ja karvaa vähän. PDSA kutsuu cotoneja uskollisiksi ja rakastaviksi koiriksi, jotka viihtyvät perhe-elämässä ja ovat erinomaisia perhekoiria. PetMD toteaa, että ne tulevat yleensä hyvin toimeen lasten ja muiden lemmikkien kanssa, kun tutustuminen hoidetaan oikein. Niille voi kehittyä eroahdistus, jos ne jätetään yksin yli muutamaksi tunniksi. PetMD suosittelee korvien tarkistamista vähintään kerran viikossa ja kylpyä noin kerran kuussa.",
+      ],
+      sources: ["S10", "S721", "S722", "S724", "S725", "S726"],
+    },
+    chow_chow: {
+      aka: "Chow, Chow-Chow",
+      text: [
+        "Chow chow on tiivis, leijonamainen pystykorva Kiinasta. Sillä on tiheä, ihosta pystyyn nouseva turkki, joka on yksivärinen: musta, punainen, sininen, kellanruskea, kerma tai valkoinen (FCI:n rotumääritelmä). FCI:n rotumääritelmä antaa säkäkorkeudeksi 48–56 cm uroksille ja 46–51 cm nartuille, ja PDSA ilmoittaa keskipainoksi 20–30 kg. Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD). PDSA ilmoittaa eliniäksi alle 10 vuotta ja PetMD 8–12 vuotta.",
+        "PDSA:n mukaan rotu tarvitsee vähintään tunnin liikuntaa päivässä, harjausta joka päivä ja tauon ruokailun ja liikunnan välillä. Se kuvaa chow chowt uskollisiksi koiriksi, jotka voivat olla ihanteellisia lemmikkejä oikeassa kodissa, mieluiten kokeneiden omistajien kanssa. PDSA ei suosittele rotua pienten lasten seuraan. Se mainitsee voimakkaan saalisvietin ja sen, etteivät ne välttämättä siedä yksinoloa. Ne tulee myös sosiaalistaa hyvin nuoresta asti. PetMD lisää, että paksu turkki ja lyhyt kuono altistavat ne ylikuumenemiselle.",
+      ],
+      sources: ["S696", "S700", "S701", "S10"],
+    },
+    old_english_sheepdog: {
+      aka: "Bobtail, Bob-tail, OES, Shepherd's Dog",
+      text: [
+        "Bobtail (old english sheepdog) on suuri, vankka ja neliömäisen oloinen paimenkoira Isosta-Britanniasta. Sillä on runsas, karkea ja pörröinen turkki. Väri on mikä tahansa harmaan, grizzlen tai sinisen sävy vartalolla, ja pää, kaula ja etuosa ovat valkoiset (FCI:n rotumääritelmä). FCI:n rotumääritelmä antaa säkäkorkeudeksi uroksille vähintään 61 cm ja nartuille vähintään 56 cm, ja PDSA ilmoittaa keskikorkeudeksi 56–61 cm ja keskipainoksi 27–30 kg. Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD). PDSA ilmoittaa eliniäksi yli 10 vuotta ja PetMD 10–12 vuotta.",
+        "PDSA:n mukaan rotu tarvitsee vähintään kaksi tuntia liikuntaa päivässä jaettuna useaan lenkkiin. Pitkä turkki tarvitsee päivittäisen harjauksen ja ammattitrimmaajan trimmauksen noin kuuden viikon välein. PDSA kuvaa bobtailit letkeiksi perhekoiriksi, jotka sopivat paremmin perheisiin, joissa on isompia lapsia. Yksin jätettynä niille voi tulla eroahdistus, ja niillä on voimakas paimennus- ja saalisvietti. PDSA neuvoo pitämään ruokailun ja liikunnan välillä tauon.",
+      ],
+      sources: ["S704", "S705", "S706", "S10"],
+    },
+    pekingese: {
+      aka: "Peke, Pekinese, Lion Dog",
+      text: [
+        "Pekingeesi on pieni, leijonamainen seurakoira Kiinasta. Sillä on kohtalaisen pitkä, suora turkki ja harja kaulan ympärillä. FCI:n rotumääritelmä antaa ihannepainoksi enintään 5 kg uroksille ja 5,4 kg nartuille, ja PDSA ilmoittaa keskipainoksi 5 kg ja korkeudeksi 15–22 cm. Tämänkokoinen koira on täysikasvuinen noin 8–12 kuukauden iässä (PetMD). PDSA ilmoittaa eliniäksi yli 12 vuotta ja PetMD 12–14 vuotta.",
+        "PDSA suosittelee vähintään puolta tuntia liikuntaa päivässä mutta ei liikaa, koska litteän kuonon vuoksi hengittäminen voi olla vaikeaa. Kuumina päivinä liikuntaa ei suositella. PDSA kirjoittaa, että pitkä turkki tarvitsee päivittäisen harjauksen ja että rodusta lähtee paljon karvaa erityisesti keväällä ja syksyllä. Kasvojen ryppyihin voi tulla ihopoimutulehduksia. Pekingeesit tulevat usein paremmin toimeen aikuisten tai isompien lasten kanssa, ne voivat kärsiä eroahdistuksesta yksin jätettyinä ja ne tulee sosiaalistaa nuoresta asti. PetMD neuvoo harjaamaan hampaat päivittäin, puhdistamaan korvat viikon tai kahden välein ja teettämään pitkän turkin ammattitrimmauksen 6–8 viikon välein.",
+      ],
+      sources: ["S690", "S693", "S694", "S10"],
+    },
   },
 };
 
