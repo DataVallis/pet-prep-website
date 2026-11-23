@@ -931,7 +931,7 @@ const hr: RegistryCopy = {
     german_shorthaired_pointer: {
       aka: "kratkodlaki ptičar, GSP, Deutsch Kurzhaar",
       text: [
-        "Njemački kratkodlaki ptičar svestran je lovački pas iz Njemačke, građen za rad u polju i vodi, s kratkom, gustom dlakom koja je pod rukom tvrda, širokim plosnatim ušima postavljenima visoko i tamnosmeđim bademastim očima. Njegov američki standard dopušta jednobojnu smeđu, smeđu s bijelim (npr. s pjegama), jednobojnu crnu te crnu s bijelim; crvena, narančasta, limun ili podpaline i potpuno bijeli pas isključuju se. Standard opisuje kupiran rep – PetPrep psa uvijek prikazuje s prirodnim repom.",
+        "Njemački kratkodlaki ptičar svestran je lovački pas iz Njemačke, građen za rad u polju i vodi, s kratkom, gustom dlakom koja je pod rukom tvrda, širokim plosnatim ušima postavljenima visoko i tamnosmeđim bademastim očima. Njegov američki standard dopušta jednobojnu smeđu, smeđu s bijelim (npr. s pjegama), jednobojnu crnu te crnu s bijelim; crvena, narančasta, limun-bijela ili podpaline i potpuno bijeli pas isključuju se. Standard opisuje kupiran rep – PetPrep psa uvijek prikazuje s prirodnim repom.",
         "Standard ga naziva ljubaznim, inteligentnim i spremnim udovoljiti. Royal Kennel Club i PDSA kažu da treba više od dva sata kretanja dnevno; PDSA dodaje da se u šetnji može probuditi njegov nagon za lov, markiranje i donošenje, pa treba dobro uvježbati dozivanje, te da ga je prilično lako dresirati. Dlaku treba njegovati jednom do dvaput tjedno, a umjereno se linja. Velika britanska studija navodi medijan očekivanog životnog vijeka od 13,4 godine.",
       ],
       sources: ["S185", "S186", "S187", "S188", "S189", "S123"],
@@ -1479,6 +1479,318 @@ const hr: RegistryCopy = {
         "Ima mnogo energije, uživa u interaktivnim igrama i rado se penje; GCCF kaže da je tolerantna prema djeci koja se prema njoj odnose s poštovanjem, drugim mačkama i psima naviklima na mačke. PetMD savjetuje češljanje i četkanje najmanje jednom tjedno, češće dok se linja u proljeće i jesen, i napominje da separacijska anksioznost može biti problem ako često dugo ostaje sama. Rodovnički mačići obično odlaze u novi dom s 12–13 tjedana (PDSA).",
       ],
       sources: ["C13", "C37", "C38"],
+    },
+    keeshond: {
+      aka: "Vučji špic, Keeshond, Wolfsspitz, njemački vučji špic, Keeshonden",
+      text: [
+        "Vučji špic (keeshond) srednje je velik špic iz Njemačke, vučja varijanta njemačkog špica (Wolfsspitz). Ima dugu, odstojeću dlaku sivih nijansi, gustu grivu i tamne „naočale“ oko očiju (standard FCI-ja). Standard FCI-ja navodi visinu od 49 ± 6 cm, a PDSA prosječnu težinu od 16–20 kg. Pas te veličine odraste s otprilike 12–15 mjeseci (PetMD). PDSA navodi životni vijek dulji od 10 godina, a VCA 12–14 godina.",
+        "PDSA piše da pasmini treba do sat vremena kretanja dnevno, a gustu dvostruku dlaku treba njegovati svaki dan. Prema PDSA-u vučji špicevi izvrsni su obiteljski ljubimci koji se slažu s drugim ljubimcima u kućanstvu, a uz malo vremena i strpljenja dobro reagiraju na dresuru. VCA ih opisuje kao razigrane i obzirne prema djeci, savjetuje kupanje otprilike jednom mjesečno te navodi da se linjaju više od prosjeka i da su zbog guste dlake skloni pregrijavanju.",
+      ],
+      sources: ["S246", "S709", "S710", "S10"],
+    },
+    standard_schnauzer: {
+      aka: "Srednji šnaucer, Standardni šnaucer, Schnauzer, Mittelschnauzer, Wire-Haired Pinscher",
+      text: [
+        "Srednji šnaucer (standardni šnaucer) potječe iz Njemačke. FCI ga vodi jednostavno kao šnaucera, u skupini pinčera i šnaucera. Standard FCI-ja opisuje srednje velika, snažna psa zdepaste, a ne vitke građe, s oštrom, grubom i gustom dlakom, visećim ušima i prirodnim repom. Visina je 45–50 cm, a težina 14–20 kg za mužjake i ženke; boje su papar i sol te čista crna. Pas te veličine odraste s otprilike 12–15 mjeseci (PetMD). Royal Kennel Club navodi životni vijek dulji od 10 godina, a VCA 12–14 godina.",
+        "Royal Kennel Club preporučuje do sat vremena kretanja dnevno i njegu dlake više puta tjedno. Navodi da pasmini odgovara mala kuća s malim ili srednje velikim vrtom, u gradu ili na selu. PDSA piše da su šnauceri nježni, strpljivi psi koji se dobro slažu s djecom ako ih se rano upozna s njima, a dlaku treba njegovati dva do tri puta tjedno. VCA navodi da pasmina brzo uči, ali se i brzo dosađuje, pa joj igre i trikovi pružaju misaonu aktivnost koja joj je potrebna. PetMD preporučuje kupanje jednom mjesečno, podrezivanje noktiju, čišćenje ušiju svakih jedan do dva tjedna i odlazak profesionalnom frizeru za pse svaka tri mjeseca.",
+      ],
+      sources: ["S10", "S711", "S712", "S714", "S715", "S716", "S717"],
+    },
+    english_setter: {
+      aka: "Engleski seter, English Setter, Laverack Setter, Llewellin Setter, Setter",
+      text: [
+        "Engleski seter elegantan je ptičar iz Velike Britanije, uzgojen za traženje pernate divljači. Standard FCI-ja opisuje psa srednje visine, čistih linija i elegantnog kretanja, s bijelom dlakom prošaranom sitnim pjegama u boji (belton): plavom, narančastom, limun-bijelom ili jetrenom, ili trobojnom. Visina je 65–68 cm za mužjake i 61–65 cm za ženke. PDSA navodi prosječnu težinu od 22–29 kg. Pas te veličine odraste s otprilike 15–18 mjeseci (PetMD), a Royal Kennel Club navodi životni vijek dulji od 10 godina.",
+        "Royal Kennel Club preporučuje više od 2 sata kretanja dnevno i njegu dlake više puta tjedno. Navodi da se pasmina linja i da joj odgovara velika kuća s velikim vrtom, a svrstava je u 1. kategoriju programa Breed Watch. PDSA piše da engleski seteri vole djecu i druge ljubimce pa su savršeni za obitelji, a njegu dlake savjetuje 2–3 puta tjedno. PetMD predlaže kupanje svakih šest do osam tjedana i napominje da ne vole dugo ostajati sami. VCA spominje malo šišanja i podrezivanja dlake svaki mjesec.",
+      ],
+      sources: ["S730", "S731", "S732", "S733", "S734", "S10"],
+    },
+    dogue_de_bordeaux: {
+      aka: "Bordoška doga, Dogue de Bordeaux, Francuski mastif, Bordeaux Mastiff, French Mastiff, Bordeauxdogge, DDB",
+      text: [
+        "Bordoška doga (dogue de Bordeaux) snažan je molos iz Francuske. Standard FCI-ja opisuje zdepasta, atletska i dojmljiva psa, mirna, uravnotežena i vrlo privrženog vlasniku, s finom, kratkom dlakom u svim nijansama žute, od mahagonija do izabele. Visina je 60–68 cm za mužjake i 58–66 cm za ženke, a težina najmanje 50 kg za mužjake i najmanje 45 kg za ženke. PetMD navodi 110–145 funti (oko 50–66 kg) za mužjake i 99–120 funti (oko 45–54 kg) za ženke. Pas te veličine odraste s otprilike 18–24 mjeseca (PetMD). Izvori se ne slažu oko životnog vijeka: PetMD piše da ti psi obično žive samo 5–8 godina, dok Royal Kennel Club navodi više od 10 godina.",
+        "Royal Kennel Club preporučuje do 1 sat kretanja dnevno i njegu dlake jednom tjedno. Navodi da se pasmina linja i da joj odgovara velika kuća s velikim vrtom, a svrstava je u 3. kategoriju programa Breed Watch. PDSA piše da se bordoške doge uglavnom dobro slažu sa starijom djecom, ali ih ne preporučuje uz manju djecu ni onima koji prvi put imaju psa. Upozorava na jako slinjenje i vrlo snažan lovački nagon te savjetuje redovito čišćenje kožnih nabora na licu i razmak između jela i kretanja. PetMD navodi da im zbog kratke njuške po vrućem vremenu može biti otežano disanje.",
+      ],
+      sources: ["S755", "S756", "S757", "S759", "S10"],
+    },
+    flat_coated_retriever: {
+      aka: "Flat coated retriver, Ravnodlaki retriver, Flat-Coated Retriever, Flatcoat, Flattie, Flat-coat",
+      text: [
+        "Flat coated retriver živahan je, aktivan ptičar iz Velike Britanije, uzgojen za donošenje odstrijeljene divljači. Standard FCI-ja opisuje gustu, priljubljenu dlaku s bogatim resama na nogama i repu, samo crne ili jetrene boje, te optimističnu, prijateljsku, samouvjerenu i dobroćudnu narav. Poželjna visina je 59–61,5 cm za mužjake i 56,5–59 cm za ženke, a poželjna težina 27–36 kg za mužjake i 25–32 kg za ženke. Pas te veličine odraste s otprilike 15–18 mjeseci (PetMD). Royal Kennel Club navodi životni vijek kraći od 10 godina, a britanska studija iz 2024. koju navodi Dogs Trust utvrdila je medijan od 11,7 godine.",
+        "Royal Kennel Club preporučuje više od 2 sata kretanja dnevno i njegu dlake više puta tjedno. Navodi da se pasmina linja i da joj odgovara velika kuća s velikim vrtom, a svrstava je u 1. kategoriju programa Breed Watch. PetMD flat coated retrivere naziva divnim obiteljskim psima koji se uglavnom dobro slažu s djecom i drugim ljubimcima, osobito uz pravilno upoznavanje i socijalizaciju. Savjetuje četkanje dvaput tjedno, čišćenje ušiju svaki tjedan ili svaka dva tjedna te kupanje i podrezivanje noktiju svaki mjesec ili svaka dva mjeseca, a kretanje neposredno prije i poslije jela treba izbjegavati.",
+      ],
+      sources: ["S761", "S762", "S763", "S123", "S10"],
+    },
+    border_terrier: {
+      aka: "Border terijer, Border Terrier",
+      text: [
+        "Border terijer malen je radni terijer iz Velike Britanije. Standard FCI-ja kaže da je u biti radni terijer, sposoban pratiti konja, koji spaja živahnost s hrabrošću. Opisuje grubu, gustu dlaku s gustom podlakom, tamne oči oštra pogleda i male uši u obliku slova V. Boje dlake su crvena, pšenična, sijeda s podpalinama i plava s podpalinama. Težina je 5,9–7,1 kg za mužjake i 5,1–6,4 kg za ženke. Pas te veličine odraste s otprilike 9–12 mjeseci (PetMD). Royal Kennel Club navodi životni vijek dulji od 12 godina, a britanska studija iz 2024. (McMillan i sur.) utvrdila je medijan od 14,2 godine.",
+        "Royal Kennel Club preporučuje do 1 sat kretanja dnevno i njegu dlake više puta tjedno. Navodi da se pasmina linja i da joj odgovara stan, a svrstava je u 1. kategoriju programa Breed Watch. PDSA piše da će border terijeri uz pravilnu socijalizaciju uživati u društvu djece svih uzrasta, ali preporučuje nadzor. Upozorava da mogu razviti separacijsku anksioznost ako ostaju sami, da imaju snažan lovački nagon i da ne bi smjeli živjeti s kunićima, zamorcima ni štakorima. Savjetuje četkanje nekoliko puta tjedno i razmak između jela i kretanja. Woodgreen predlaže dom s nešto starijom djecom.",
+      ],
+      sources: ["S768", "S769", "S770", "S771", "S773", "S10"],
+    },
+    leonberger: {
+      aka: "Leonberger, Leonberg",
+      text: [
+        "Leonberger je velik pas iz Njemačke. Standard FCI-ja opisuje velika, snažna, mišićava, a ipak elegantna psa s dugom, priljubljenom dlakom, visećim ušima i bogato obraslim repom. Boja je lavlje žuta, crvena, crvenkastosmeđa ili pješčana, uvijek s crnom maskom. Visina je 72–80 cm za mužjake i 65–75 cm za ženke. PDSA navodi prosječnu težinu od 30–50 kg za mužjake i ženke te životni vijek kraći od 10 godina. Kao div među pasminama odraste s otprilike 18–24 mjeseca (PetMD, prema razredu veličine).",
+        "Royal Kennel Club preporučuje više od 2 sata kretanja dnevno te veliku kuću s velikim vrtom. PDSA leonbergere naziva nježnim divovima i izvrsnim obiteljskim ljubimcima. Woodgreen preporučuje četkanje dva do tri puta tjedno i kaže da su zbog veličine ključni rana dresura i socijalizacija te da teško podnose kad dugo ostaju sami. Britanska studija iz 2024. (McMillan i sur., prema Dogs Trustu) navodi medijan očekivanog životnog vijeka od 10,0 godina.",
+      ],
+      sources: ["S783", "S781", "S10", "S780", "S784", "S123"],
+    },
+    beauceron: {
+      aka: "Beauceron, Berger de Beauce, Bas Rouge",
+      text: [
+        "Beauceron (berger de Beauce) velik je francuski ovčar. Standard FCI-ja opisuje krupna, čvrsta, izdržljiva, snažna i mišićava psa koji ne djeluje glomazno, s kratkom, gustom dlakom, repom s blagom kukom u obliku slova J i dvostrukim ostrugama na stražnjim nogama. Boja je crna s podpalinama ili harlekin. Visina je 65–70 cm za mužjake i 61–68 cm za ženke. Tablica težina AKC-a navodi 70–110 funti (oko 32–50 kg) za mužjake i ženke. Pas te veličine odraste s otprilike 15–18 mjeseci (PetMD, prema razredu veličine). Royal Kennel Club navodi životni vijek dulji od 10 godina, a PetMD 10–12 godina.",
+        "Royal Kennel Club beauceronu pripisuje mirnoću i samouvjerenost te ga opisuje kao odanog pratitelja i čuvara. Preporučuje više od 2 sata kretanja dnevno, njegu dlake više puta tjedno i veliku kuću s velikim vrtom, a svrstava ga u 1. kategoriju programa Breed Watch. PetMD piše da mogu biti dobri s malom djecom i drugim psima ako se upoznavanja odvijaju pod nadzorom te da znaju biti oprezni prema novim ljudima, pa štenad treba rano upoznati s njima. Navodi i da vole što više vremena provoditi s obitelji. Preporučuje četkanje barem jednom tjedno te izbjegavanje kretanja sat vremena prije i poslije jela.",
+      ],
+      sources: ["S790", "S268", "S10", "S787", "S791"],
+    },
+    bouvier_des_flandres: {
+      aka: "Flandrijski govedarski pas, Bouvier des Flandres, Flandrijski govedar, Bouvier, Flanders Cattle Dog, Vlaamse Koehond",
+      text: [
+        "Flandrijski govedarski pas (bouvier des Flandres) potječe iz Flandrije, u Belgiji i Francuskoj. Standard FCI-ja opisuje kratka, zbijena, snažna psa s jakim, dobro razvijenim mišićima nogu, grubom, suhom, lagano razbarušenom dlakom dugom oko 6 cm, s brkovima i punom bradom. Boje su uglavnom siva, tigrasta ili crnom prošarana (dopuštena je i jednobojna crna). Za mužjake navodi visinu od 62–68 cm i težinu od oko 35–40 kg, a za ženke 59–65 cm i oko 27–35 kg. Pas te veličine odraste s otprilike 15–18 mjeseci (PetMD, prema razredu veličine). Britanska studija iz 2024. (McMillan i sur., prema Dogs Trustu) navodi medijan očekivanog životnog vijeka od 11,3 godine.",
+        "Royal Kennel Club flandrijskog govedarskog psa naziva snažnim i svestranim psom, izvorno pastirskim psom za goveda. Preporučuje do 1 sat kretanja dnevno, svakodnevnu njegu dlake i veliku kuću s velikim vrtom, a svrstava ga u 1. kategoriju programa Breed Watch. PetMD piše da mogu biti dobri s malom djecom i drugim velikim psima ako se upoznavanja odvijaju pod nadzorom, da imaju jak lovački nagon prema mačkama i malim ljubimcima, da trebaju ranu socijalizaciju i da su skloni debljanju. Savjetuje četkanje barem jednom do dvaput tjedno, čišćenje ušiju svaka dva do tri tjedna, podrezivanje noktiju svaka tri do četiri tjedna i izbjegavanje kretanja sat vremena prije i poslije jela.",
+      ],
+      sources: ["S797", "S10", "S123", "S795", "S798"],
+    },
+    borzoi: {
+      aka: "Ruski hrt, Borzoj, Borzoi, Russian Wolfhound, Russian Hunting Sighthound, Russkaya Psovaya Borzaya",
+      text: [
+        "Ruski hrt (borzoj) dugodlaki je hrt iz Rusije, uzgojen za lov na zeca i lisicu. Standard FCI-ja opisuje psa aristokratskog izgleda, visokog, mršavog i snažnog, prilično dugih nogu, s dugom, svilenkastom, valovitom dlakom. Dopuštena je svaka boja od bijele do crne, osim smeđe, plave i izabele. Poželjna visina je 75–85 cm za mužjake i 68–78 cm za ženke. PDSA navodi prosječnu težinu od 27–47 kg za mužjake i ženke te životni vijek dulji od 10 godina, a PetMD 9–14 godina. Pas te veličine odraste s otprilike 15–18 mjeseci (PetMD, prema razredu veličine).",
+        "PDSA preporučuje najmanje 1 sat kretanja dnevno, podijeljen na nekoliko šetnji, a bez uzice samo na sigurnom, ograđenom prostoru. Piše da borzoji imaju vrlo jak lovački nagon pa se ne preporučuju uz manje ljubimce ni uz mlađu djecu, da odgovaraju iskusnim vlasnicima i da trebaju nekoga kod kuće veći dio vremena. Dodaje da ih treba socijalizirati od malih nogu, četkati nekoliko puta tjedno i ostaviti razmak između jela i kretanja. PetMD preporučuje četkanje najmanje dva do tri puta tjedno, a nadutost želuca navodi kao najčešći zdravstveni problem.",
+      ],
+      sources: ["S802", "S800", "S803", "S10"],
+    },
+    japanese_chin: {
+      aka: "Japanski čin, Japanski španijel, Japanese Chin, Japanese Spaniel, Japan Chin, Chin",
+      text: [
+        "Japanski čin malen je pas za društvo iz Japana. Standard Royal Kennel Cluba opisuje otmjena, aristokratska, zbijena malog psa s bogatom, dugom, svilenkastom dlakom, crno-bijelom ili crveno-bijelom (nikad trobojnom), kratkom, širokom njuškom i izrazom iznenađenja. Idealna težina je 1,8–3,2 kg, a PetMD navodi visinu od 8–11 inča (oko 20–28 cm). Pas te veličine odraste s otprilike 8–12 mjeseci (PetMD, prema razredu veličine). Britanska studija iz 2024. (McMillan i sur., prema Dogs Trustu) navodi medijan očekivanog životnog vijeka od 12,5 godine.",
+        "Royal Kennel Club preporučuje do 30 minuta kretanja dnevno i njegu dlake više puta tjedno. Navodi da se pasmina linja i da joj odgovara stan, a svrstava je u 1. kategoriju programa Breed Watch. PetMD piše da je japanski čin pasmina plosnatog (brahicefalnog) lica koja može imati teškoća s disanjem i lako se pregrijava, pa kretanje po vrućem ili vlažnom vremenu treba ostaviti za hladnije doba dana. Navodi i da se uglavnom dobro slaže s djecom kad se druženje odvija pod nadzorom, da može razviti separacijsku anksioznost i da ga treba rano uključiti u škole za štence. Preporučuje četkanje jednom do dvaput tjedno, čišćenje ušiju svaka dva do tri tjedna i kupanje otprilike jednom mjesečno.",
+      ],
+      sources: ["S806", "S10", "S123", "S805", "S809"],
+    },
+    norwich_terrier: {
+      aka: "Norwich terijer, Norwich Terrier, Norwich",
+      text: [
+        "Norwich terijer potječe iz Velike Britanije i jedan je od najmanjih terijera. Standard FCI-ja opisuje niska, živahna, zbijena i snažna malog psa s tvrdom, oštrom, ravnom dlakom koja oko lica tvori ovratnik i uspravnim ušima šiljastih vrhova. Dlaka može biti u svim nijansama crvene, pšenična, crna s podpalinama ili sijeda. Idealna visina je 25 cm. Standard UKC-a navodi idealnu težinu od otprilike 12 funti (oko 5,4 kg) za mužjake i ženke. Pas te veličine odraste s otprilike 9–12 mjeseci (PetMD, prema razredu veličine). Royal Kennel Club navodi životni vijek dulji od 10 godina, a PetMD 12–15 godina.",
+        "Royal Kennel Club norwich terijera opisuje kao jednog od najmanjih terijera, ljupke naravi. Preporučuje do 1 sat kretanja dnevno i njegu dlake više puta tjedno, navodi da se pasmina linja i da joj odgovara stan, a vodi je kao ranjivu domaću britansku pasminu (vulnerable native breed). PetMD piše da se norwich terijeri obično dobro slažu s djecom i drugim ljubimcima, da su vrlo energični i trebaju svakodnevno kretanje i misaone poticaje te da ih treba socijalizirati od malih nogu. Zbog snažnih lovačkih instinkata nužni su sigurna uzica i dobro ograđeno dvorište. Preporučuje četkanje najmanje dvaput tjedno, pranje zubi najmanje jednom tjedno, podrezivanje noktiju otprilike jednom mjesečno i kupanje najviše jednom u tri mjeseca.",
+      ],
+      sources: ["S812", "S815", "S10", "S813", "S814"],
+    },
+    miniature_bull_terrier: {
+      aka: "Minijaturni bulterijer, Miniature Bull Terrier, Mini Bull Terrier, Mini Bull, Bull Terrier (Miniature)",
+      text: [
+        "Minijaturni bulterijer malen je terijer iz Velike Britanije. FCI ga svrstava među terijere bul tipa. Royal Kennel Club navodi da je kao zasebna varijanta prvi put priznat 1943., a uzgojen je od manjih bulterijera tako da ostane ispod 35,5 cm (14 inča). PetMD navodi visinu od 10–14 inča (oko 25–36 cm) i težinu od 18–28 funti (oko 8–13 kg). Pas te veličine odraste s otprilike 9–12 mjeseci (PetMD, prema razredu veličine). Royal Kennel Club navodi životni vijek dulji od 10 godina, a PetMD 11–13 godina.",
+        "Royal Kennel Club opisuje pasminu kao hrabru, punu duha i veselog raspoloženja. Preporučuje do 1 sat kretanja dnevno i njegu dlake jednom tjedno, navodi da se pasmina linja, a vodi je kao ranjivu domaću britansku pasminu (vulnerable native breed). PetMD piše da su minijaturni bulterijeri uglavnom privrženi i dobri s djecom te prijateljski obiteljski pratitelji, da se uz pravilnu socijalizaciju mogu slagati s drugim ljubimcima, da trebaju redovito kretanje i misaone poticaje te da im ne odgovara dugo ostajati sami. Preporučuje ranu socijalizaciju i četkanje otprilike jednom tjedno.",
+      ],
+      sources: ["S818", "S820", "S821", "S10"],
+    },
+    schipperke: {
+      aka: "Šiperke, Schipperke, Little Captain, Little Black Devil, Spitzke",
+      text: [
+        "Šiperke je mali ovčar iz Belgije; FCI ga svrstava među ovčare. Njegov standard opisuje psa nalik vuku, malih dimenzija, ali vrlo čvrste građe, potpuno crnog, s ovratnikom, grivom i „hlačicama“ na stražnjim nogama. Standard FCI-ja navodi težinu od 3–9 kg (poželjan je prosjek od 4–7 kg), a PetMD visinu od 10–13 inča (oko 25–33 cm). Pas te veličine odraste s otprilike 9–12 mjeseci (PetMD, prema razredu veličine). Velika britanska studija (McMillan i sur. 2024.) utvrdila je medijan očekivanog životnog vijeka od 14,2 godine, a Royal Kennel Club navodi više od 12 godina.",
+        "Standard FCI-ja opisuje šiperkea kao izvrsnog malog čuvara, prepunog životne snage, suzdržanog prema strancima i vrlo nježnog prema djeci. Royal Kennel Club preporučuje do 1 sat kretanja dnevno i njegu dlake više puta tjedno, navodi da se pasmina linja i da joj odgovara stan, a svrstava je u 1. kategoriju programa Breed Watch. PetMD piše da pasmini trebaju aktivnosti koje zaokupljaju i um i tijelo. Inteligentna je, ali tvrdoglava, a neki primjerci zadržavaju snažan lovački nagon. PetMD preporučuje ranu socijalizaciju, svakodnevno pranje zubi i čišćenje ušiju svaka dva tjedna, a VCA četkanje najmanje dvaput tjedno.",
+      ],
+      sources: ["S824", "S825", "S826", "S827", "S828", "S771", "S10"],
+    },
+    belgian_tervuren: {
+      aka: "Belgijski ovčar tervueren, Tervueren, Tervuren, Terv, Belgian Shepherd Dog (Tervueren)",
+      text: [
+        "Belgijski ovčar tervueren dugodlaka je, žutosmeđa varijanta belgijskog ovčara, pastirskog psa iz Belgije. FCI priznaje jednu pasminu belgijskog ovčara s četiri varijante. Standard FCI-ja opisuje skladno građena psa koji spaja eleganciju i snagu, s dugom dlakom koja tvori ovratnik, „hlače“ i resast rep. Za tervueren dopušta samo žutosmeđu ili sivu boju s crnim pokrovom i crnu masku (žutosmeđa je poželjnija). Visina je oko 62 cm za mužjake i 58 cm za ženke, a težina oko 25–30 kg za mužjake i 20–25 kg za ženke. Pas te veličine odraste s otprilike 12–15 mjeseci (PetMD, prema razredu veličine). Royal Kennel Club navodi životni vijek dulji od 10 godina, a PetMD 12–14 godina.",
+        "Standard FCI-ja opisuje belgijskog ovčara kao budna i aktivna psa, prepuna energije, bez straha i agresivnosti. Royal Kennel Club preporučuje više od 2 sata kretanja dnevno i njegu dlake više puta tjedno, navodi da se pasmina linja i da joj odgovara velika kuća s velikim vrtom, a svrstava je u 1. kategoriju programa Breed Watch. PetMD piše da tervuereni stvaraju bliske veze s obitelji, trebaju puno tjelesne aktivnosti i misaonih poticaja te mogu pokušavati „stjerivati“ djecu i manje životinje. Preporučuje ranu socijalizaciju, tjedno četkanje (gotovo svakodnevno u razdoblju linjanja), čišćenje ušiju svaki tjedan ili svaka dva tjedna i kupanje svakih četiri do šest tjedana.",
+      ],
+      sources: ["S312", "S313", "S830", "S832", "S10"],
+    },
+    toy_fox_terrier: {
+      aka: "Toy foksterijer, Toy Fox Terrier, American Toy Terrier, Amertoy, TFT",
+      text: [
+        "Toy foksterijer malen je američki terijer iz skupine toy pasmina AKC-a. Standard AKC-a opisuje skladna toy psa atletskog izgleda, s kratkom, satenskom dlakom, uspravnim šiljastim ušima i pretežno bijelim tijelom, a glava je trobojna, bijelo-žutosmeđa, bijelo-crna ili bijelo-čokoladno-žutosmeđa. PetMD navodi težinu od 4–9 funti (oko 1,8–4 kg) i visinu od 8,5–11,5 inča (oko 21–29 cm). Pas te veličine odraste s otprilike 8–12 mjeseci (PetMD). PetMD i WebMD navode životni vijek od 13–15 godina.",
+        "Standard AKC-a toy foksterijera naziva inteligentnim, budnim, prijateljskim i odanim vlasnicima. PetMD preporučuje najmanje sat vremena kretanja svaki dan, četkanje jednom do dvaput tjedno te ranu dresuru i socijalizaciju, a navodi i da pasmina i dalje ima snažan lovački nagon. WebMD piše da su toy foksterijeri sjajni pratitelji za obzirnu stariju djecu, ali se ne preporučuju obiteljima s malom djecom te da mogu pokazivati separacijsku anksioznost kad dugo ostaju sami. Preporučuje svakodnevno pranje zubi, tjedno čišćenje ušiju i mjesečno podrezivanje noktiju.",
+      ],
+      sources: ["S833", "S834", "S835", "S10"],
+    },
+    gordon_setter: {
+      aka: "Gordon seter, Škotski seter, Gordon Setter, Black and Tan Setter, Scottish Setter, Gordon",
+      text: [
+        "Gordon seter velik je crno-podpalni ptičar iz Škotske (FCI skupina 7, ptičari; zemlja podrijetla Velika Britanija). Standard FCI-ja opisuje otmjena psa s „galopirajućim“ linijama, s dubokom, sjajnom ugljenocrnom dlakom i kestenjastocrvenim podpalinama. Visina je 66 cm, a težina 29,5 kg za mužjake, odnosno 62 cm i 25,5 kg za ženke. Pas te veličine odraste s otprilike 15–18 mjeseci (PetMD), a Royal Kennel Club navodi životni vijek dulji od 10 godina.",
+        "Standard FCI-ja gordon setera naziva smjelim, otvorenim, dobroćudnim i ujednačenog temperamenta, a PDSA opisuje prijateljsku, inteligentnu pasminu koja voli biti zaposlena. Royal Kennel Club preporučuje više od dva sata kretanja dnevno te veliku kuću s vrtom, a PDSA kaže da gustu dlaku treba njegovati svaki dan. PetMD savjetuje ograničiti kretanje sat vremena prije i poslije obroka i štenad rano socijalizirati. Zbog snažnog lovačkog nagona pasmine posebnu pozornost treba posvetiti dresuri dozivanja. WebMD preporučuje svakodnevno pranje zubi i kupanje otprilike jednom mjesečno te navodi da je pasmina samo umjereno dobra s malom djecom.",
+      ],
+      sources: ["S841", "S842", "S843", "S844", "S845", "S10"],
+    },
+    afghan_hound: {
+      aka: "Afganistanski hrt, Afganski hrt, Afghan Hound, Afghan, Tazi, Baluchi Hound",
+      text: [
+        "Afganistanski hrt visok je dugodlaki hrt iz Afganistana (FCI skupina 10, hrtovi; zemlja podrijetla Afganistan, pod britanskim pokroviteljstvom). Standard FCI-ja opisuje psa koji ostavlja dojam snage i dostojanstva, spaja brzinu i snagu te ima dugu, vrlo finu dlaku. Dopuštene su sve boje osim merle. Idealna visina je 68–74 cm za mužjake i 63–69 cm za ženke, a standard AKC-a navodi težinu od oko 60 funti (27 kg) za mužjake i oko 50 funti (23 kg) za ženke. Pas te veličine odraste s otprilike 15–18 mjeseci (PetMD), a Royal Kennel Club navodi životni vijek dulji od 10 godina.",
+        "Standard FCI-ja opisuje afganistanskog hrta kao dostojanstvena i suzdržana psa, s određenom prodornom žestinom. Royal Kennel Club preporučuje više od dva sata kretanja dnevno, svakodnevnu njegu dlake i veliku kuću s vrtom. PDSA piše da dugu, svilenkastu dlaku treba četkati svaki dan, da su afganistanski hrtovi, ako su dobro socijalizirani, dobri s djecom te da zbog snažnog nagona za potjerom treba biti oprezan s drugim ljubimcima. PetMD savjetuje da nakon obroka treba pričekati najmanje sat vremena prije kretanja te da ga treba kupati najmanje jednom u tjedan ili dva, a WebMD preporučuje svakodnevno pranje zubi.",
+      ],
+      sources: ["S849", "S850", "S851", "S852", "S853", "S854", "S10"],
+    },
+    australian_silky_terrier: {
+      aka: "Australski svilenasti terijer, Svilenasti terijer, Australian Silky Terrier, Silky Terrier, Silky",
+      text: [
+        "Australski svilenasti terijer malen je, vrlo budan toy terijer iz Australije (FCI skupina 3, terijeri; sekcija toy terijera), u Sjevernoj Americi poznat kao silky terrier. Standard FCI-ja traži ravnu, finu, sjajnu dlaku svilenaste strukture u plavoj boji s podpalinama. Dopuštene su sve nijanse plave s podpalinama, a srebrna i bijela nisu. Visina je 23–26 cm za mužjake, a ženke su nešto manje. Standardi ne navode težinu („razmjerna visini“); PetMD i WebMD navode oko 10 funti (oko 4,5 kg). Pas te veličine odraste s otprilike 8–12 mjeseci (PetMD), a Royal Kennel Club navodi životni vijek dulji od 12 godina (PetMD i WebMD: 13–15 godina).",
+        "Standard FCI-ja opisuje hrabra i dostojanstvena toy terijera kojem nema premca kao pratitelju. Royal Kennel Club preporučuje do 30 minuta kretanja dnevno, svakodnevnu njegu dlake i navodi da pasmini odgovara stan. PetMD piše da su svilenasti terijeri dobri s drugim ljubimcima i djecom ako se kao mladi pravilno socijaliziraju. Preporučuje škole za štence prije navršenih 16 tjedana, čišćenje ušiju svaka dva do tri tjedna te držanje na uzici ili u ograđenom prostoru zbog lovačkog nagona. WebMD preporučuje svakodnevno pranje zubi i kupanje otprilike jednom mjesečno.",
+      ],
+      sources: ["S855", "S856", "S857", "S858", "S10"],
+    },
+    parson_russell_terrier: {
+      aka: "Parson Russell terijer, Parson Russell Terrier, Parson Jack Russell Terrier, Parson Terrier, PRT",
+      text: [
+        "Parson russell terijer čvrst je, aktivan i okretan radni terijer iz Velike Britanije, izvorno uzgojen za rad na lisici (FCI skupina 3, terijeri; sekcija velikih i srednje velikih terijera). Riječ je o pasmini različitoj od jack russell terijera: Kennel Club ju je prvi put priznao 1990. kao Parson Jack Russell Terrier. Standard FCI-ja traži bijelog ili pretežno bijelog psa sa žutosmeđim, limun-bijelim ili crnim oznakama ili njihovom kombinacijom. Dlaka je gruba, prijelazna ili glatka, a idealna visina 36 cm za mužjake i 33 cm za ženke. PDSA navodi prosječnu težinu od 6–8 kg. Pas te veličine odraste s otprilike 9–12 mjeseci (PetMD), a Royal Kennel Club navodi životni vijek dulji od 12 godina (WebMD: 13–15 godina).",
+        "Standard FCI-ja pasminu naziva smjelom i prijateljskom. Royal Kennel Club preporučuje do sat vremena kretanja dnevno i njegu dlake jednom tjedno. PDSA piše da su ti psi puni energije, da im idealno treba 1–2 sata kretanja dnevno, da se dobro slažu s djecom, da su izvrsni obiteljski ljubimci i da ih treba rano socijalizirati s ostalim ljubimcima u obitelji. PetMD navodi da neki imaju snažan lovački nagon te preporučuje svakodnevno pranje zubi, čišćenje ušiju svaka dva tjedna i kupanje svaka dva do četiri tjedna. WebMD dodaje da ne vole biti sami i da mogu imati separacijsku anksioznost.",
+      ],
+      sources: ["S864", "S865", "S866", "S867", "S868", "S10"],
+    },
+    wire_fox_terrier: {
+      aka: "Oštrodlaki foksterijer, Foksterijer oštrodlaki, Wire Fox Terrier, Fox Terrier (Wire), Wire Hair Fox Terrier, Wirehaired Fox Terrier",
+      text: [
+        "Oštrodlaki foksterijer aktivan je i živahan terijer iz Velike Britanije (FCI skupina 3, terijeri; sekcija velikih i srednje velikih terijera). Ne treba ga miješati s toy foksterijerom. Standard FCI-ja traži snažnu kost i čvrstoću u malom okviru, nikad nezgrapnu ni grubu. Dlaka je gusta, vrlo oštra, s mekšom podlakom, pretežno bijela s oznakama crne, crne s podpalinama ili žutosmeđe boje. Visina u grebenu je do 39 cm za mužjake, a nešto manja za ženke. Standard AKC-a navodi da mužjak u izložbenoj kondiciji teži 18 funti, a ženka oko dvije funte manje, uz odstupanje od jedne funte u oba smjera (oko 7,7–8,6 kg za mužjake i 6,8–7,7 kg za ženke). Pas te veličine odraste s otprilike 9–12 mjeseci (PetMD), a Royal Kennel Club navodi životni vijek dulji od 12 godina (PetMD: 12–15 godina).",
+        "Standard FCI-ja pasminu naziva prijateljskom, otvorenom i neustrašivom. Royal Kennel Club preporučuje do sat vremena kretanja dnevno i njegu dlake više puta tjedno. PDSA piše da foksterijeri vole igru i istraživanje, da su izvrsni obiteljski ljubimci i da dlaku treba njegovati jednom do dvaput tjedno. WebMD ih naziva sjajnim pratiteljima za djecu, ali savjetuje da uz malu djecu uvijek budu pod nadzorom. PetMD navodi da ih zbog snažnog lovačkog nagona treba pomno pratiti uz male ljubimce. Preporučuje dobru socijalizaciju štenceta, svakodnevno pranje zubi, kupanje otprilike jednom mjesečno i ručno trimanje dlake tri do četiri puta godišnje, a WebMD podrezivanje noktiju otprilike jednom mjesečno.",
+      ],
+      sources: ["S871", "S872", "S873", "S874", "S875", "S876", "S10"],
+    },
+    manchester_terrier: {
+      aka: "Manchester terijer, Manchester Terrier (Standard), Black and Tan Terrier, Manchester",
+      text: [
+        "Manchester terijer zbijen je, elegantan terijer iz Velike Britanije (FCI skupina 3, terijeri; sekcija velikih i srednje velikih terijera) – riječ je o standardnoj, a ne toy veličini. Standard FCI-ja traži zbijena, elegantna i zdrava psa čvrste građe, s kratkom, glatkom, priljubljenom i sjajnom dlakom, isključivo ugljenocrne boje s bogatim podpalinama boje mahagonija. Idealna visina u grebenu je 41 cm za mužjake i 38 cm za ženke. Standard Canadian Kennel Cluba navodi težinu od 5,5 do 10 kg (12 do 22 funte). Pas te veličine odraste s otprilike 9–12 mjeseci (PetMD), a PDSA navodi životni vijek dulji od 12 godina (WebMD: 15 do 17 godina).",
+        "Standard FCI-ja pasminu opisuje kao oštroumnu, budnu, veselu, sportski nastrojenu, razboritu i odanu. PDSA preporučuje do sat vremena kretanja dnevno i kaže da je četkanje jednom tjedno obično dovoljno. PetMD piše da se manchester terijeri dobro slažu s djecom, osobito ako se s njima upoznaju kao štenad, i preporučuje socijalizaciju od dana kad štene dođe kući. Navodi i snažan lovački nagon koji potječe iz njihove prošlosti lovaca na štakore, pa možda nisu prikladni za domove s hrčcima ili gerbilima. WebMD savjetuje da malu djecu nikad ne treba ostavljati sa psom bez nadzora, preporučuje svakodnevno pranje zubi i navodi da je pasmina osjetljiva na hladnoću pa joj može zatrebati kaput ili džemper.",
+      ],
+      sources: ["S888", "S889", "S890", "S891", "S892", "S10"],
+    },
+    tibetan_terrier: {
+      aka: "Tibetanski terijer, Tibetan Terrier, Tibet Terrier",
+      text: [
+        "Tibetanski terijer snažan je, srednje velik dugodlaki pas za društvo iz Tibeta (FCI skupina 9, pratilački i društveni psi; sekcija tibetskih pasmina) – terijer samo po imenu. Standard FCI-ja traži općenito kvadratan oblik tijela, dvostruku dlaku s bogatom, finom, dugom, ravnom ili valovitom pokrovnom dlakom, viseće uši s resama i rep koji se nosi uvijen preko leđa. Dopuštena je svaka boja osim čokoladne, jetrene i merle. Mužjaci u grebenu mjere 36–41 cm, a ženke su nešto manje. Standard Canadian Kennel Cluba navodi težinu od 8,25 do 13,5 kg (18 do 30 funti). Pas te veličine odraste s otprilike 12–15 mjeseci (PetMD), a PDSA navodi životni vijek dulji od 12 godina (PetMD: 15–16 godina).",
+        "Standard FCI-ja pasminu opisuje kao živahnu i dobroćudnu, otvorenu, budnu i inteligentnu, ali suzdržanu u iskazivanju naklonosti prema strancima. PDSA tibetanske terijere naziva nježnim, prijateljskim i privrženim psima, dobrim obiteljskim ljubimcima, preporučuje oko sat vremena kretanja dnevno i kaže da je njega dlake potrebna svaki dan. PetMD navodi da mogu razviti separacijsku anksioznost ako dugo ostaju sami i preporučuje škole za štence prije navršenih 16 tjedana. Piše i da mogu biti dobri s malom djecom i drugim psima kad se upoznavanja odvijaju pod nadzorom, dok WebMD navodi da se neki primjerci teško snalaze s malom djecom i drugim psima. WebMD preporučuje svakodnevno pranje zubi.",
+      ],
+      sources: ["S904", "S905", "S906", "S907", "S909", "S10"],
+    },
+    greyhound: {
+      aka: "Greyhound, Engleski hrt, English Greyhound",
+      text: [
+        "Greyhound je velik hrt iz Velike Britanije; FCI ga svrstava u skupinu 10, među kratkodlake hrtove. Standard FCI-ja opisuje snažno građena, uspravna psa velikodušnih proporcija, mišićave snage i simetrične građe, inteligentna, nježna, privržena i ujednačene naravi. Dlaka je fina i priljubljena, u crnoj, bijeloj, crvenoj, plavoj, žutosmeđoj, svijetlosmeđoj ili tigrastoj boji, ili u bilo kojoj od tih boja prekinutih bijelom. Idealna visina je 71–76 cm za mužjake i 68–71 cm za ženke. Standard AKC-a navodi težinu od 65 do 70 funti (oko 29,5–31,8 kg) za mužjake i 60 do 65 funti (oko 27,2–29,5 kg) za ženke. Pas te veličine odraste s otprilike 15–18 mjeseci (PetMD). Britanska studija VetCompass o greyhoundima pod veterinarskom skrbi utvrdila je medijan životnog vijeka od 11,4 godine; PDSA navodi životni vijek dulji od 10 godina.",
+        "PDSA piše da greyhoundi nisu pretjerano energični: trebaju oko sat vremena kretanja dnevno i više vole nekoliko dobrih trčanja nego kilometre hodanja, a njihovu kratku dlaku treba njegovati jednom tjedno. Uz pravilnu socijalizaciju u štenećoj dobi mogu biti dobri obiteljski ljubimci, ali imaju snažan nagon za potjerom. PetMD piše da zbog vrlo jakog lovačkog nagona slabo odgovaraju domovima s mačkama ili drugim malim životinjama. WebMD preporučuje svakodnevno pranje zubi i navodi da su greyhoundi bez izolacijske podlake mogu biti osjetljivi na ekstremne temperature.",
+      ],
+      sources: ["S912", "S913", "S914", "S916", "S917", "S918", "S920", "S10"],
+    },
+    xoloitzcuintli: {
+      aka: "Xoloitzcuintle, Xoloitzcuintli, Xolo, Meksički goli pas, Mexican Hairless Dog",
+      text: [
+        "Xoloitzcuintle je drevan primitivni pas iz Meksika; FCI ga svrstava u skupinu 5, među špiceve i pse primitivnog tipa. Standard FCI-ja opisuje tihog i mirnog psa, veselog, budnog i inteligentnog, nikad agresivnog. Postoje dvije varijante, jednake osim po dlaci i zubima: gola, s glatkom golom kožom, i dlakava, s kratkom, priljubljenom dlakom. Dolazi u tri veličine – 25–35 cm, 35–45 cm i 46–60 cm u grebenu – te u crnoj, crnkastosivoj, škriljastosivoj, tamnosivoj, crvenkastoj, jetrenoj, brončanoj ili blond boji, a poželjna je jednolično tamna koža. WebMD navodi težinu od 10 do 15 funti za toy, 15 do 30 za patuljastog i 30 do 55 funti za standardnog xola (oko 4,5–24,9 kg za sve veličine). Pas standardne veličine odraste s otprilike 12–15 mjeseci (PetMD). PetMD i WebMD navode životni vijek od 13–18 godina.",
+        "PetMD piše da xolima treba oko 20 minuta kretanja svaki dan. Gola koža traži njegu. PetMD savjetuje kremu za sunčanje za pse prije izlaska, nikad onu za ljude, a VCA navodi da im najviše odgovara topla klima i da im pri hladnijim temperaturama treba džemper. WebMD xola naziva dobrim psom za obitelji s djecom i preporučuje pranje zubi dva do tri puta tjedno. PetMD dodaje da druženje s djecom uvijek treba biti pod nadzorom, da štenad treba socijalizirati kako ne bi odrasla sumnjičava prema novim ljudima te da pasmina ima snažan lovački nagon prema malim životinjama.",
+      ],
+      sources: ["S923", "S924", "S926", "S927", "S928", "S10"],
+    },
+    spinone_italiano: {
+      aka: "Talijanski oštrodlaki ptičar, Talijanski špinone, Spinone Italiano, Italian Spinone, Spinone, Italian Griffon, Italian Wire-haired Pointer",
+      text: [
+        "Talijanski oštrodlaki ptičar (spinone italiano) potječe iz Italije; FCI ga svrstava u skupinu 7, među kontinentalne ptičare grifonskog tipa. Standard FCI-ja opisuje psa čvrste građe, robusna i snažna, s jakom kosti i grubom dlakom, po naravi društvena, poslušna i strpljiva te iskusna lovca na svakom terenu. Dolazi u čisto bijeloj, bijeloj s narančastim oznakama, narančastoj šarenoj, bijeloj sa smeđim oznakama i smeđoj šarenoj boji. Standard FCI-ja navodi visinu od 60–70 cm za mužjake i 58–65 cm za ženke te težinu od 32–37 kg za mužjake i 28–30 kg za ženke. Pas te veličine odraste s otprilike 15–18 mjeseci (PetMD). PDSA navodi životni vijek dulji od 10 godina, a PetMD 10–12 godina.",
+        "PDSA spinonea naziva energičnom pasminom kojoj idealno treba više od 2 sata kretanja dnevno i piše da gustu, djelomično oštru dlaku treba njegovati kod kuće 2 ili 3 puta tjedno. WebMD preporučuje podrezivanje noktiju svaki tjedan i svakodnevno pranje zubi, navodi da se pasmina uglavnom dobro slaže s drugim psima i djecom te upozorava da dugo ostajanje samog često dovodi do problema. PetMD savjetuje ranu socijalizaciju štenadi te držanje psa na uzici ili u ograđenom prostoru kad je vani. Savjetuje i da se pas ne kreće sat vremena prije i poslije jela zbog opasnosti od nadutosti želuca.",
+      ],
+      sources: ["S935", "S936", "S937", "S938", "S10"],
+    },
+    pointer: {
+      aka: "Pointer, Engleski pointer, Engleski ptičar, English Pointer",
+      text: [
+        "Pointer je britanski ptičar; FCI ga svrstava u skupinu 7, među britanske i irske ptičare i setere. Standard FCI-ja opisuje skladno građena psa elegantnih, zaobljenih obrisa, snažna, ali gipka, budna, dobroćudne i ujednačene naravi, s finom, kratkom, tvrdom i izrazito sjajnom dlakom. Uobičajene boje su limun-bijela, narančasto-bijela, jetreno-bijela i crno-bijela. Standard FCI-ja navodi visinu od 63–69 cm za mužjake i 61–66 cm za ženke, a standard UKC-a radnu težinu od 55–75 funti (oko 25–34 kg) za mužjake i 44–65 funti (oko 20–29,5 kg) za ženke. Pas te veličine odraste s otprilike 15–18 mjeseci (PetMD). PDSA navodi životni vijek dulji od 12 godina, a PetMD 10–12 godina.",
+        "PDSA piše da su pointeri vrlo energični i da im idealno treba više od 2 sata kretanja dnevno, da trebaju aktivne vlasnike i dobru dresuru dozivanja te da njihovu kratku dlaku treba njegovati samo jednom tjedno. PetMD savjetuje držanje u ograđenom dvorištu kako ne bi odlutali i navodi da bi mogli ugroziti kućne ptice. WebMD preporučuje svakodnevno pranje zubi i kaže da nisu osobito dobri s malom djecom. PDSA dodaje da, kao i kod svih pasmina, pravilna socijalizacija u štenećoj dobi pomaže da se dobro uklope u obiteljski život.",
+      ],
+      sources: ["S943", "S944", "S945", "S946", "S947", "S10"],
+    },
+    welsh_terrier: {
+      aka: "Velški terijer, Welsh Terrier, Welshie, Welsh",
+      text: [
+        "Velški terijer potječe iz Velike Britanije; FCI ga svrstava u skupinu 3, među velike i srednje velike terijere. Standard FCI-ja opisuje otmjena, radna, dobro uravnotežena i zbijena psa s oštrom, tvrdom, vrlo gustom i obilnom dlakom, privrženog, poslušnog i lako vodljivog, veselog i rijetko plašljivog. Boja je crna s podpalinama ili crno sijeda s podpalinama. Standard FCI-ja navodi visinu do 39 cm i težinu od 9–9,5 kg (20–21 funta). Pas te veličine odraste s otprilike 9–12 mjeseci (PetMD). Royal Kennel Club i PDSA navode životni vijek dulji od 12 godina, a PetMD 12–15 godina.",
+        "Royal Kennel Club navodi da velškom terijeru treba do 1 sat kretanja dnevno i njega dlake više puta tjedno. PDSA navodi oko sat vremena kretanja dnevno i njegu dlake dva do tri puta tjedno te ga opisuje kao razigranog, prijateljskog psa koji voli djecu i izvrstan je obiteljski ljubimac. PetMD navodi snažan lovački nagon, zbog kojeg bi mogao progoniti manje životinje, te savjetuje uzicu ili ograđeni prostor vani, uz socijalizaciju i dresuru od najranije dobi.",
+      ],
+      sources: ["S955", "S956", "S957", "S958", "S10"],
+    },
+    american_hairless_terrier: {
+      aka: "Američki bezdlaki terijer, American Hairless Terrier, Hairless Terrier, AHT",
+      text: [
+        "Američki bezdlaki terijer malen je do srednje velik, glatko mišićav i aktivan terijer iz SAD-a, kojeg je American Kennel Club priznao u skupini terijera; FCI ga ne vodi. Standard pasmine opisuje energična, budna, znatiželjna i inteligentna psa s ušima u obliku slova V i prirodnim repom koji se nikad ne kupira. Postoje dvije varijante: bezdlaka, bez dlake osim brkova te dlačica na obrvama i njušci, i dlakava, s kratkom, glatkom dlakom. Standard navodi idealnu visinu od 12–16 inča (30–41 cm). PetMD navodi težinu od 12–28 funti (5,4–12,7 kg) i životni vijek od 14–16 godina, a pas te veličine odraste s otprilike 9–12 mjeseci (PetMD).",
+        "Dogs NSW navodi oko 20 minuta kretanja dnevno, a PetMD piše da su redovito kretanje i misaoni poticaji za ovu pasminu nužni. Naziva ih sjajnim drugovima u igri za djecu, uz nadzor kad je u blizini mala djeca. Gola koža traži njegu. Klub pasmine kaže da su krema za sunčanje ili zaštitna odjeća nužni za sprječavanje opeklina. PetMD savjetuje džemper po hladnom vremenu i redovito kupanje, po mogućnosti svaki tjedan, WebMD svakodnevno pranje zubi, a klub pasmine tjedno podrezivanje noktiju. Klub pasmine navodi i snažan lovački nagon.",
+      ],
+      sources: ["S967", "S971", "S972", "S973", "S977", "S10"],
+    },
+    tibetan_spaniel: {
+      aka: "Tibetanski španijel, Tibetan Spaniel, Tibbie",
+      text: [
+        "Tibetanski španijel malen je, aktivan i budan pas za društvo iz Tibeta (Kina). FCI ga svrstava u skupinu pratilačkih i društvenih pasa, među tibetske pasmine, a zemlja pokroviteljica pasmine je Velika Britanija. Standard FCI-ja opisuje ga kao veselog i samouvjerenog, vrlo inteligentnog i suzdržanog prema strancima, budnog, odanog, ali neovisnog. Tijelo mu je nešto dulje nego što je visoko, dlaka svilenasta i srednje duljine, uši s resama, a rep bogato resast i nošen uvijen preko leđa. Dopuštene su sve boje osim merle. Standard navodi visinu od oko 25,4 cm i idealnu težinu od 4,1–6,8 kg. Pas te veličine odraste s otprilike 9–12 mjeseci (PetMD). U velikoj britanskoj studiji (McMillan i sur., 2024.) pasmina je bila među najdugovječnijima, s medijanom od 15,2 godine; PDSA navodi životni vijek dulji od 12 godina.",
+        "PDSA piše da tibetanskim španijelima treba oko sat vremena kretanja svaki dan, da će se rado uključiti u obiteljske igre, da se uglavnom dobro slažu sa svima i da su dobri obiteljski ljubimci. Njega dlake nekoliko puta tjedno obično je dovoljna. WebMD navodi da su skloni separacijskoj anksioznosti i da više odgovaraju obiteljima sa starijom djecom. Trebaju sigurno ograđeno dvorište, a po vrućem se vremenu mogu pregrijati. WebMD savjetuje svakodnevno pranje zubi, provjeru ušiju najmanje jednom tjedno, provjeru noktiju svaki mjesec i kupanje otprilike svaki mjesec.",
+      ],
+      sources: ["S980", "S981", "S982", "S771", "S10"],
+    },
+    black_russian_terrier: {
+      aka: "Ruski crni terijer, Crni ruski terijer, Black Russian Terrier, Russian Black Terrier, Russian Terrier, Tchiorny Terrier, BRT",
+      text: [
+        "Ruski crni terijer velik je, robustan i vrlo atletski radni pas iz Rusije, iz FCI-jeve skupine pinčera i šnaucera. Standard FCI-ja opisuje ga kao dostojanstvenog, samouvjerenog i dobro kontroliranog, ljubaznog, nezahtjevnog, pametnog i prijateljskog, s grubom, gustom dvostrukom dlakom koja tvori bujne obrve, brkove i bradu. Jedine boje su crna i crna s djelomično primiješanim sijedim dlakama. Standard navodi 72–76 cm i 50–60 kg za mužjake te 68–72 cm i 45–50 kg za ženke. Pas te veličine obično dosegne odraslu težinu s 18–24 mjeseca. Royal Kennel Club navodi životni vijek dulji od 10 godina.",
+        "Royal Kennel Club navodi više od 2 sata kretanja i njege dlake svaki dan, veliku kuću s vrtom te da se pasmina ne linja. PetMD piše da je pasmina odana obitelji i da može biti dobra s djecom uz nadzor, da je važna rana i dosljedna socijalizacija te da treba izbjegavati naporno kretanje neposredno prije i poslije obroka zbog nadutosti želuca. VCA kao idealan dom navodi onaj sa starijom djecom i preporučuje šišanje kod profesionalnog frizera za pse svakih šest do osam tjedana.",
+      ],
+      sources: ["S985", "S986", "S989", "S990", "S10"],
+    },
+    neapolitan_mastiff: {
+      aka: "Napuljski mastif, Mastino napoletano, Neapolitan Mastiff, Mastino Napoletano, Neo, Neapolitan, Italian Mastiff",
+      text: [
+        "Napuljski mastif (mastino napoletano) velik je, težak i masivan pas čuvar iz Italije; FCI ga svrstava u skupinu 2, među molose tipa mastifa. Standard FCI-ja opisuje ga kao postojana i odana psa, ne agresivna, s kratkom, tvrdom, gustom dlakom i debelom, opuštenom kožom koja tvori brojne nabore i bore, osobito na glavi. Poželjne boje su siva, olovnosiva i crna, ali i smeđa, žutosmeđa i tamnožutosmeđa. Standard navodi 65–75 cm i 60–70 kg za mužjake te 60–68 cm i 50–60 kg za ženke. Pas te veličine obično dosegne odraslu težinu s 18–24 mjeseca. Royal Kennel Club i PDSA navode životni vijek kraći od 10 godina, a PetMD samo 7–9 godina.",
+        "Royal Kennel Club navodi do 1 sat kretanja dnevno, njegu dlake jednom tjedno, dlaku koja se linja te veliku kuću s vrtom. Pasminu svrstava u 3. kategoriju programa Breed Watch, a PDSA kaže da zbog viška kože na licu nastaju problemi s kapcima, poput entropija i ektropija. PDSA napuljske mastife naziva odanim, predanim psima koji vole obiteljski život i kaže da njihove kožne nabore treba čistiti svaki dan. PetMD piše da su sjajni s obiteljima i djecom, ali ih ne bi trebalo ostavljati samima s malim djetetom, da jako sline te da s pravilnom socijalizacijom i dresurom pozitivnim potkrepljivanjem treba početi rano.",
+      ],
+      sources: ["S993", "S994", "S995", "S996", "S10"],
+    },
+    norwegian_elkhound: {
+      aka: "Norveški sivi losovac, Norveški losovac, Losovac, Norveški elkhund, Norwegian Elkhound, Elkhound, Elkie, Norsk Elghund Grå, Norwegian Moose Dog",
+      text: [
+        "Norveški sivi losovac nordijski je lovački špic iz Norveške, uzgojen za lov na losa; FCI ga svrstava u skupinu 5, među nordijske lovačke pse. Standard FCI-ja opisuje tipičnog špica – zbijena, kratka i kvadratne građe, s malim uspravnim ušima, repom čvrsto uvijenim preko leđa i gustom, grubom dlakom srednje duljine – neustrašiva, energična i hrabra. Dopuštena je samo siva boja, u raznim nijansama. Standard FCI-ja navodi idealnu visinu od 52 cm za mužjake i 49 cm za ženke, a standard AKC-a težinu od oko 55 funti (25 kg) za mužjake i oko 48 funti (22 kg) za ženke. Pas te veličine odraste s otprilike 12–15 mjeseci (PetMD), a PetMD i WebMD navode životni vijek od 12–15 godina.",
+        "PetMD preporučuje sat vremena kretanja dnevno i piše da pasmini podjednako kao tjelesno kretanje treba misaoni poticaj. Naziva je sjajnom uz djecu svih uzrasta kad je druženje pod nadzorom te divnim obiteljskim psom ako se kao štene socijalizira i rano dresira. PetMD savjetuje siguran, ograđeni prostor ili uzicu vani te navodi da se jako linja i da je zbog guste dlake sklon pregrijavanju. WebMD savjetuje četkanje dlake najmanje dvije minute svaki dan i svakodnevno pranje zubi.",
+      ],
+      sources: ["S960", "S961", "S963", "S964", "S10"],
+    },
+    mudi: {
+      aka: "Mudi, Mađarski mudi, Hungarian Mudi",
+      text: [
+        "Mudi je mađarski pastirski pas; FCI ga svrstava u skupinu 1, među ovčare. Standard FCI-ja opisuje srednje velika psa klinaste glave, uspravnih ušiju i linije leđa koja se spušta prema začelju, s gustom, sjajnom, valovitom ili lagano kovrčavom dlakom, iznimno sposobna za učenje, živahna, hrabra, budna i željna rada. Dolazi u crnoj, bijeloj, žutosmeđoj, pepeljastoj (plavoj), jetrenoj, pepeljastosmeđoj i cifra (merle) boji. Standard FCI-ja navodi visinu od 41–47 cm za mužjake i 38–44 cm za ženke, a PetMD težinu od 18–29 funti (oko 8–13 kg). Pas te veličine odraste s otprilike 12–15 mjeseci (PetMD). Royal Kennel Club navodi životni vijek dulji od 10 godina, a PetMD 12–14 godina.",
+        "Royal Kennel Club kaže da mudiju treba do 1 sat kretanja dnevno i njega dlake jednom tjedno te da je odan i privržen svojoj obitelji. Mora imati kamo usmjeriti energiju i inteligenciju, pa mu najbolje odgovara iskusan vlasnik koji mu može pružiti poticaje, strukturu i svrhu. PetMD ga opisuje kao pametnog, neovisnog i glasnog psa te piše da štenad mudija treba socijalizirati od rane dobi kako bi se osjećala ugodno uz djecu, druge ljubimce i nove ljude.",
+      ],
+      sources: ["S949", "S950", "S952", "S10"],
+    },
+    lhasa_apso: {
+      aka: "Lhasa apso, Lhasa Apso, Lhasa, Apso, Lasa Apso",
+      text: [
+        "Lhasa apso malen je pas za društvo iz Tibeta. Royal Kennel Club navodi da su ga izvorno držali tibetski redovnici kao pratitelja i čuvara. Ima dugu dlaku; VCA navodi visinu od 10–11 inča (oko 25–28 cm) i težinu od 13–15 funti (oko 6–7 kg). Pas te veličine odraste s otprilike 9–12 mjeseci (PetMD), a Royal Kennel Club navodi životni vijek dulji od 12 godina.",
+        "Royal Kennel Club preporučuje do 1 sat kretanja dnevno i svakodnevnu njegu dlake, navodi da se pasmina ne linja i da joj odgovara stan te je svrstava u 1. kategoriju programa Breed Watch. PDSA piše da se psi pasmine lhasa apso, uz pravilnu socijalizaciju u štenećoj dobi, dobro slažu s djecom i drugim ljubimcima u kućanstvu te da prema strancima mogu biti nešto oprezniji. WebMD predlaže kupanje najmanje jednom u dva tjedna, podrezivanje noktiju svaka 3 do 4 tjedna i što redovitije pranje zubi.",
+      ],
+      sources: ["S740", "S741", "S742", "S743", "S10"],
+    },
+    coton_de_tulear: {
+      aka: "Coton de Tuléar, Coton de Tulear, Coton, Royal Dog of Madagascar",
+      text: [
+        "Coton de tuléar potječe s Madagaskara, a zemlja pokroviteljica pasmine je Francuska; FCI ga svrstava među bišone i srodne pasmine. Standard FCI-ja opisuje malog dugodlakog psa za društvo s bijelom dlakom pamučne strukture, okruglim tamnim očima i živahnim, inteligentnim izrazom lica. Narav mu je vesela i stabilna, a prema ljudima i drugim psima vrlo je društven. Visina je 26–28 cm za mužjake i 23–25 cm za ženke, a težina 4–6 kg za mužjake i 3,5–5 kg za ženke; osnovna boja je bijela. Pas te veličine odraste s otprilike 8–12 mjeseci (PetMD); Royal Kennel Club navodi životni vijek dulji od 12 godina.",
+        "Royal Kennel Club preporučuje do 30 minuta kretanja dnevno te navodi da pasmini odgovara stan, da se malo linja i da joj treba svakodnevna njega dlake. PDSA cotone naziva odanim i ljubaznim psima koji u obiteljskom životu cvjetaju i izvrsnim obiteljskim ljubimcima. PetMD piše da se uglavnom slažu s djecom i drugim ljubimcima kad se upoznavanja provedu pravilno te da mogu razviti separacijsku anksioznost ako ostaju sami dulje od nekoliko sati. Preporučuje provjeru ušiju najmanje jednom tjedno i kupanje otprilike jednom mjesečno.",
+      ],
+      sources: ["S10", "S721", "S722", "S724", "S725", "S726"],
+    },
+    chow_chow: {
+      aka: "Chow chow, Čau-čau, Chow-chow, Chow Chow, Chow",
+      text: [
+        "Chow chow zbijen je špic nalik lavu iz Kine, s gustom, odstojećom dlakom jedne čvrste boje: crne, crvene, plave, žutosmeđe, krem ili bijele (standard FCI-ja). Standard FCI-ja navodi visinu od 48–56 cm za mužjake i 46–51 cm za ženke; PDSA navodi prosječnu težinu od 20–30 kg. Pas te veličine odraste s otprilike 15–18 mjeseci (PetMD). PDSA navodi životni vijek kraći od 10 godina, a PetMD 8–12 godina.",
+        "PDSA piše da pasmini treba najmanje sat vremena kretanja dnevno, svakodnevno četkanje i razmak između jela i kretanja. Opisuje ih kao odane pse koji u pravom domu mogu biti idealni ljubimci, po mogućnosti uz iskusne vlasnike. Ne preporučuje ih uz malu djecu. Navodi snažan lovački nagon i da možda ne podnose ostajanje sami te da ih treba dobro socijalizirati od malih nogu. PetMD dodaje da su zbog guste dlake i kratke njuške skloniji pregrijavanju.",
+      ],
+      sources: ["S696", "S700", "S701", "S10"],
+    },
+    old_english_sheepdog: {
+      aka: "Stari engleski ovčar, Staroengleski ovčar, Old English Sheepdog, Bobtail, Bob-tail, OES",
+      text: [
+        "Stari engleski ovčar velik je, snažan ovčar kvadratnog izgleda iz Velike Britanije, s bujnom, grubom, čupavom dlakom (standard FCI-ja). Tijelo može biti bilo koje nijanse sive, sijede ili plave, a glava, vrat i prednji dio tijela su bijeli. Standard FCI-ja navodi visinu od 61 cm i više za mužjake te 56 cm i više za ženke; PDSA navodi prosječnu visinu od 56–61 cm i prosječnu težinu od 27–30 kg. Pas te veličine odraste s otprilike 15–18 mjeseci (PetMD); PDSA navodi životni vijek dulji od 10 godina, a PetMD 10–12 godina.",
+        "PDSA piše da pasmini treba najmanje dva sata kretanja dnevno, podijeljena na nekoliko šetnji, te da dugu dlaku treba četkati svaki dan i šišati kod profesionalnog frizera otprilike svakih šest tjedana. Opisuje ih kao staložene obiteljske ljubimce koji više odgovaraju obiteljima sa starijom djecom. Mogu patiti od separacijske anksioznosti kad ostaju sami i imaju snažan pastirski i lovački nagon, a PDSA savjetuje ostaviti razmak između jela i kretanja.",
+      ],
+      sources: ["S704", "S705", "S706", "S10"],
+    },
+    pekingese: {
+      aka: "Pekinezer, Pekingese, Peke, Pekinese, Lion Dog",
+      text: [
+        "Pekinezer je malen pas za društvo nalik lavu iz Kine, s umjereno dugom, ravnom dlakom i grivom oko vrata. Standard FCI-ja navodi idealnu težinu od najviše 5 kg za mužjake i 5,4 kg za ženke; PDSA navodi prosječnu težinu od 5 kg i visinu od 15–22 cm. Pas te veličine odraste s otprilike 8–12 mjeseci (PetMD); PDSA navodi životni vijek dulji od 12 godina, a PetMD 12–14 godina.",
+        "PDSA preporučuje najmanje pola sata kretanja dnevno, ali bez pretjerivanja jer im zbog plosnatog lica disanje može biti otežano, a po toplijim danima treba odustati od kretanja. Piše da dugu dlaku treba četkati svaki dan, da se pasmina jako linja, osobito u proljeće i jesen, i da kožni nabori na licu mogu dovesti do upala kože. Pekinezeri se bolje snalaze s odraslima ili starijom djecom, mogu patiti od separacijske anksioznosti kad ostaju sami i treba ih socijalizirati od malih nogu. PetMD savjetuje svakodnevno pranje zubi, čišćenje ušiju svaki tjedan ili svaka dva tjedna i profesionalnu njegu svakih šest do osam tjedana za dugu dlaku.",
+      ],
+      sources: ["S690", "S693", "S694", "S10"],
     },
   },
 };
