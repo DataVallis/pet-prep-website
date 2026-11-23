@@ -920,6 +920,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
     },
+    belgian_sheepdog: {
+      aka: "groenendael, grunendal, belgijski ovčar, belgijski ovčar (groenendael), Belgian Sheepdog, Belgian Shepherd Groenendael",
+      text: [
+        "Belgijski ovčar groenendael je dolgodlaka, črna različica belgijskega ovčarja, ovčarskega psa iz Belgije; FCI priznava eno pasmo belgijskega ovčarja s štirimi različicami in jo uvršča v 1. skupino med ovčarske pse. Standard FCI opisuje skladno grajenega psa, ki združuje eleganco in moč, z razmeroma majhnimi, visoko nasajenimi pokončnimi ušesi in dolgo, gladko dlako, ki je okrog vratu in na prsih daljša; za groenendaela dovoljuje le enotno črno barvo. Navaja višino približno 62 cm za pse in 58 cm za psice ter težo približno 25–30 kg za pse in 20–25 kg za psice; pes te velikosti doraste pri približno 12–15 mesecih (velikostni razred PetMD). The Royal Kennel Club navaja življenjsko dobo več kot 10 let, PetMD in WebMD pa 12–14 let.",
+        "The Royal Kennel Club ga opisuje kot pozornega, previdnega in zelo inteligentnega psa, ki rad dela, priporoča več kot dve uri gibanja na dan in česanje večkrat na teden, navaja, da mu dlaka izpada in da potrebuje veliko hišo z velikim vrtom, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da se belgijski ovčar tesno naveže na svoje ljudi, potrebuje veliko gibanja in miselnih izzivov ter lahko poskuša »pasti« otroke in mačke; svetuje zgodnjo socializacijo, česanje enkrat na teden in čiščenje ušes enkrat do dvakrat na mesec. WebMD navaja, da potrebuje skoraj dve uri gibanja na dan, da ni primeren za ljudi, ki so dolge ure zdoma, ter svetuje vsakodnevno ščetkanje zob in kopanje enkrat na mesec.",
+      ],
+      sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
+    },
 
     finnish_lapphund: {
       aka: "finski laponski pes, finski lapphund, laponski pes, lapinkoira, suomenlapinkoira, Finnish Lapphund, Finnish Lapponian Dog",
