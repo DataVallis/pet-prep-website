@@ -1393,6 +1393,19 @@
         "sable": "Fulvo carbonato",
         "cream": "Crema"
       }
+    },
+    "norfolk_terrier": {
+      "name": "Norfolk terrier",
+      "slug": "norfolk-terrier",
+      "synonyms": [
+        "Norfolk"
+      ],
+      "colours": {
+        "red": "Rosso",
+        "wheaten": "Grano",
+        "black-tan": "Nero e focato",
+        "grizzle": "Grizzle"
+      }
     }
   },
   "suitability_labels": {

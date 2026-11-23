@@ -1588,6 +1588,19 @@
         "sable": "Sable",
         "cream": "Krem"
       }
+    },
+    "norfolk_terrier": {
+      "name": "Norfolk terijer",
+      "slug": "norfolk-terijer",
+      "synonyms": [
+        "Norfolk terrier"
+      ],
+      "colours": {
+        "red": "Crvena",
+        "wheaten": "Pšenična",
+        "black-tan": "Crna s paležom",
+        "grizzle": "Grizzle"
+      }
     }
   },
   "suitability_labels": {

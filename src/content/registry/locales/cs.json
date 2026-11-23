@@ -1588,6 +1588,21 @@
         "sable": "Sobolí",
         "cream": "Krémová"
       }
+    },
+    "norfolk_terrier": {
+      "name": "Norfolk teriér",
+      "slug": "norfolk-terier",
+      "synonyms": [
+        "Norfolk terrier",
+        "Norfolk",
+        "norfolkský teriér"
+      ],
+      "colours": {
+        "red": "Červená",
+        "wheaten": "Pšeničná",
+        "black-tan": "Černá s pálením",
+        "grizzle": "Grizzle (šedá s červenou)"
+      }
     }
   },
   "suitability_labels": {

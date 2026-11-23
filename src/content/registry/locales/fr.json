@@ -1380,6 +1380,19 @@
         "sable": "Sable",
         "cream": "Crème"
       }
+    },
+    "norfolk_terrier": {
+      "name": "Norfolk Terrier",
+      "slug": "norfolk-terrier",
+      "synonyms": [
+        "Norfolk"
+      ],
+      "colours": {
+        "red": "Rouge",
+        "wheaten": "Froment",
+        "black-tan": "Noir et feu",
+        "grizzle": "Grizzle"
+      }
     }
   },
   "suitability_labels": {

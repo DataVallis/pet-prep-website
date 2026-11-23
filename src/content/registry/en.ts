@@ -892,6 +892,15 @@ const en: RegistryCopy = {
       sources: ["S993", "S994", "S995", "S996", "S10"],
     },
 
+    norfolk_terrier: {
+      aka: "Norfolk, Norfolk terrier, norfolk terier, norfolški terier",
+      text: [
+        "The Norfolk Terrier is one of the smallest terriers, from Great Britain; the FCI lists it in Group 3 among the small-sized terriers. The FCI standard describes a low, keen, compact and strong little dog, a \"demon\" for its size, with a lovable disposition, alert and fearless, with a hard, wiry, straight coat and medium-sized V-shaped ears that drop forward close to the cheek; the colours are all shades of red, wheaten, black and tan or grizzle. The standard gives an ideal height of 25 cm but no weight; the UKC standard gives 11 to 12 pounds (about 5–5.4 kg), and PDSA gives 5–5.5 kg. A dog of this size typically reaches its adult weight at 9–12 months. The Royal Kennel Club gives a lifespan of over 10 years and Woodgreen 12–15 years.",
+        "The Royal Kennel Club lists up to 1 hour of exercise a day, grooming more than once a week and a coat that sheds, and says the breed can live in a flat; it places it in Breed Watch Category 1 and lists no recommended pre-breeding health screening. PDSA says the wiry coat needs combing a couple of times a week and stripping three to four times a year, and that Norfolks love to dig. Woodgreen calls them gentle and patient with children, always with supervision, says they do not enjoy being left alone for long, can be escape artists that need an escape-proof fence, and have a strong prey drive, so small pets like rabbits or guinea pigs may not be safe around them.",
+      ],
+      sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
+    },
+
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, finski laponski pes",
       text: [
