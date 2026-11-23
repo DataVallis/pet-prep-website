@@ -1362,6 +1362,24 @@
         "fawn": "Fauve",
         "deep-fawn": "Fauve foncé"
       }
+    },
+    "finnish_lapphund": {
+      "name": "Chien finnois de Laponie",
+      "slug": "chien-finnois-de-laponie",
+      "synonyms": [
+        "Finnish Lapphund",
+        "Lapphund finlandais",
+        "Suomenlapinkoira",
+        "Lapinkoira"
+      ],
+      "colours": {
+        "black-tan": "Noir et feu",
+        "black": "Noir",
+        "brown": "Marron",
+        "wolf-sable": "Sable loup",
+        "sable": "Sable",
+        "cream": "Crème"
+      }
     }
   },
   "suitability_labels": {

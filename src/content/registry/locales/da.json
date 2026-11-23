@@ -1461,6 +1461,23 @@
         "fawn": "Fawn",
         "deep-fawn": "Mørk fawn"
       }
+    },
+    "finnish_lapphund": {
+      "name": "Finsk lapphund",
+      "slug": "finsk-lapphund",
+      "synonyms": [
+        "Finnish Lapphund",
+        "Suomenlapinkoira",
+        "Lapinkoira"
+      ],
+      "colours": {
+        "black-tan": "Sort og tan",
+        "black": "Sort",
+        "brown": "Brun",
+        "wolf-sable": "Ulvegrå zobel",
+        "sable": "Zobel",
+        "cream": "Creme"
+      }
     }
   },
   "suitability_labels": {

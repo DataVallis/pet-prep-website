@@ -16,7 +16,7 @@ const hhmm = (t: unknown) => {
 type Fci = { number: number; group: number; origin: string };
 /** Official French FCI group names. */
 const fciGroups: Record<number, string> = { 1: "Chiens de berger et de bouvier (sauf chiens de bouvier suisses)", 2: "Chiens de type pinscher et schnauzer – molossoïdes – chiens de montagne et de bouvier suisses", 3: "Terriers", 4: "Teckels", 5: "Chiens de type spitz et de type primitif", 6: "Chiens courants, chiens de recherche au sang et races apparentées", 7: "Chiens d’arrêt", 8: "Chiens rapporteurs de gibier – chiens leveurs de gibier – chiens d’eau", 9: "Chiens d’agrément et de compagnie", 10: "Lévriers" };
-const origins: Record<string, string> = { GB: "Grande-Bretagne", FR: "France", DE: "Allemagne", US: "États-Unis", CU: "Cuba", CH: "Suisse", IT: "Italie", "CN-XZ": "Tibet (Chine)", CN: "Chine", MX: "Mexique", BE: "Belgique", HU: "Hongrie", JP: "Japon", ZA: "Afrique du Sud", "BE-FR": "Belgique / France", PT: "Portugal", CA: "Canada", HR: "Croatie", AU: "Australie", RU: "Russie", IE: "Irlande", "AF-C": "Afrique centrale", TR: "Turquie", MG: "Madagascar", AF: "Afghanistan", NO: "Norvège" };
+const origins: Record<string, string> = { GB: "Grande-Bretagne", FR: "France", DE: "Allemagne", US: "États-Unis", CU: "Cuba", CH: "Suisse", IT: "Italie", "CN-XZ": "Tibet (Chine)", CN: "Chine", MX: "Mexique", BE: "Belgique", HU: "Hongrie", JP: "Japon", ZA: "Afrique du Sud", "BE-FR": "Belgique / France", PT: "Portugal", CA: "Canada", HR: "Croatie", AU: "Australie", RU: "Russie", IE: "Irlande", "AF-C": "Afrique centrale", TR: "Turquie", MG: "Madagascar", AF: "Afghanistan", NO: "Norvège", FI: "Finlande" };
 
 const fr: RegistryCopy = {
   mistakes: {
@@ -365,6 +365,7 @@ const fr: RegistryCopy = {
       dna_sma: "Test ADN de l’amyotrophie spinale (SMA)",
       dna_pk_def: "Test ADN du déficit en pyruvate kinase (PK def)",
       hcm_negative: "Les chats reproducteurs doivent être négatifs pour la HCM (maladie cardiaque : cardiomyopathie hypertrophique)",
+      dna_gsd2: "Test ADN de la glycogénose de type II (GSD II, maladie de Pompe)",
       dna_gsd4: "Test ADN de la glycogénose de type IV (GSD IV)",
       dna_pra_b: "Test ADN de l’atrophie progressive de la rétine du bengal (PRA-b)",
       dna_jlpp: "Test ADN de la paralysie laryngée juvénile et polyneuropathie (JLPP)",

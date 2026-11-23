@@ -7,7 +7,7 @@ const lc = (t: string) => t.charAt(0).toLocaleLowerCase("de") + t.slice(1);
 type Fci = { number: number; group: number; origin: string };
 /** Official German FCI group names (FCI / VDH). */
 const fciGroups: Record<number, string> = { 1: "Hüte- und Treibhunde (ausgenommen Schweizer Sennenhunde)", 2: "Pinscher und Schnauzer – Molosser – Schweizer Sennenhunde und andere Rassen", 3: "Terrier", 4: "Dachshunde", 5: "Spitze und Hunde vom Urtyp", 6: "Laufhunde, Schweißhunde und verwandte Rassen", 7: "Vorstehhunde", 8: "Apportierhunde – Stöberhunde – Wasserhunde", 9: "Gesellschafts- und Begleithunde", 10: "Windhunde" };
-const origins: Record<string, string> = { GB: "Großbritannien", FR: "Frankreich", DE: "Deutschland", US: "USA", CU: "Kuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexiko", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Südafrika", "BE-FR": "Belgien / Frankreich", PT: "Portugal", CA: "Kanada", HR: "Kroatien", AU: "Australien", RU: "Russland", IE: "Irland", "AF-C": "Zentralafrika", TR: "Türkei", MG: "Madagaskar", AF: "Afghanistan", NO: "Norwegen" };
+const origins: Record<string, string> = { GB: "Großbritannien", FR: "Frankreich", DE: "Deutschland", US: "USA", CU: "Kuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexiko", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Südafrika", "BE-FR": "Belgien / Frankreich", PT: "Portugal", CA: "Kanada", HR: "Kroatien", AU: "Australien", RU: "Russland", IE: "Irland", "AF-C": "Zentralafrika", TR: "Türkei", MG: "Madagaskar", AF: "Afghanistan", NO: "Norwegen", FI: "Finnland" };
 
 const de: RegistryCopy = {
   mistakes: {
@@ -343,6 +343,7 @@ const de: RegistryCopy = {
       dna_sma: "DNA-Test auf spinale Muskelatrophie (SMA)",
       dna_pk_def: "DNA-Test auf Pyruvatkinase-Mangel (PK-Mangel)",
       hcm_negative: "Zuchtkatzen müssen HCM-negativ sein (Herzerkrankung: hypertrophe Kardiomyopathie)",
+      dna_gsd2: "DNA-Test auf Glykogenspeicherkrankheit Typ II (GSD II, Morbus Pompe)",
       dna_gsd4: "DNA-Test auf Glykogenspeicherkrankheit Typ IV (GSD IV)",
       dna_pra_b: "DNA-Test auf progressive Retinaatrophie bei Bengalkatzen (PRA-b)",
       dna_jlpp: "DNA-Test auf juvenile Larynxparalyse und Polyneuropathie (JLPP)",

@@ -1527,6 +1527,24 @@
         "fawn": "Płowy",
         "deep-fawn": "Ciemnopłowy"
       }
+    },
+    "finnish_lapphund": {
+      "name": "Fiński lapphund",
+      "slug": "finski-lapphund",
+      "synonyms": [
+        "Finnish Lapphund",
+        "Lapinkoira",
+        "Suomenlapinkoira",
+        "fiński pies lapoński"
+      ],
+      "colours": {
+        "black-tan": "Czarny z podpalaniem",
+        "black": "Czarny",
+        "brown": "Brązowy",
+        "wolf-sable": "Wilczasty",
+        "sable": "Sobolowy",
+        "cream": "Kremowy"
+      }
     }
   },
   "suitability_labels": {

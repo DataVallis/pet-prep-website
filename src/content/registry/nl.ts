@@ -29,7 +29,7 @@ const hm = (t: unknown) => String(t).replace(/^0(\d)/, "$1").replace(":", ".");
 type Fci = { number: number; group: number; origin: string };
 /** Dutch FCI group names (Raad van Beheer), in running-text form. */
 const fciGroups: Record<number, string> = { 1: "herdershonden en veedrijvers, behalve Zwitserse sennenhonden", 2: "pinschers en schnauzers – molossers – Zwitserse sennenhonden en verwante rassen", 3: "terriërs", 4: "teckels", 5: "keeshonden en oertypen", 6: "lopende honden, zweethonden en verwante rassen", 7: "staande honden", 8: "retrievers, spaniëls en waterhonden", 9: "gezelschapshonden", 10: "windhonden" };
-const origins: Record<string, string> = { GB: "Groot-Brittannië", FR: "Frankrijk", DE: "Duitsland", US: "Verenigde Staten", CU: "Cuba", CH: "Zwitserland", IT: "Italië", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "België", HU: "Hongarije", JP: "Japan", ZA: "Zuid-Afrika", "BE-FR": "België / Frankrijk", PT: "Portugal", CA: "Canada", HR: "Kroatië", AU: "Australië", RU: "Rusland", IE: "Ierland", "AF-C": "Centraal-Afrika", TR: "Turkije", MG: "Madagaskar", AF: "Afghanistan", NO: "Noorwegen" };
+const origins: Record<string, string> = { GB: "Groot-Brittannië", FR: "Frankrijk", DE: "Duitsland", US: "Verenigde Staten", CU: "Cuba", CH: "Zwitserland", IT: "Italië", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "België", HU: "Hongarije", JP: "Japan", ZA: "Zuid-Afrika", "BE-FR": "België / Frankrijk", PT: "Portugal", CA: "Canada", HR: "Kroatië", AU: "Australië", RU: "Rusland", IE: "Ierland", "AF-C": "Centraal-Afrika", TR: "Turkije", MG: "Madagaskar", AF: "Afghanistan", NO: "Noorwegen", FI: "Finland" };
 
 const nl: RegistryCopy = {
   mistakes: {
@@ -369,6 +369,7 @@ const nl: RegistryCopy = {
       dna_sma: "DNA-test op spinale musculaire atrofie (SMA)",
       dna_pk_def: "DNA-test op pyruvaatkinasedeficiëntie (PK def)",
       hcm_negative: "Fokkatten moeten HCM-negatief zijn (hartziekte: hypertrofische cardiomyopathie)",
+      dna_gsd2: "DNA-test op glycogeenstapelingsziekte type II (GSD II, ziekte van Pompe)",
       dna_gsd4: "DNA-test op glycogeenstapelingsziekte type IV (GSD IV)",
       dna_pra_b: "DNA-test op progressieve retina-atrofie bij de Bengaal (PRA-b)",
       dna_jlpp: "DNA-test op juveniele larynxparalyse en polyneuropathie (JLPP)",

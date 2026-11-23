@@ -43,7 +43,7 @@ const fciGroups: Record<number, string> = {
   9: "psy do towarzystwa",
   10: "charty",
 };
-const origins: Record<string, string> = { GB: "Wielka Brytania", FR: "Francja", DE: "Niemcy", US: "USA", CU: "Kuba", CH: "Szwajcaria", IT: "Włochy", "CN-XZ": "Tybet (Chiny)", CN: "Chiny", MX: "Meksyk", BE: "Belgia", HU: "Węgry", JP: "Japonia", ZA: "Republika Południowej Afryki", "BE-FR": "Belgia / Francja", PT: "Portugalia", CA: "Kanada", HR: "Chorwacja", AU: "Australia", RU: "Rosja", IE: "Irlandia", "AF-C": "Afryka Środkowa", TR: "Turcja", MG: "Madagaskar", AF: "Afganistan", NO: "Norwegia" };
+const origins: Record<string, string> = { GB: "Wielka Brytania", FR: "Francja", DE: "Niemcy", US: "USA", CU: "Kuba", CH: "Szwajcaria", IT: "Włochy", "CN-XZ": "Tybet (Chiny)", CN: "Chiny", MX: "Meksyk", BE: "Belgia", HU: "Węgry", JP: "Japonia", ZA: "Republika Południowej Afryki", "BE-FR": "Belgia / Francja", PT: "Portugalia", CA: "Kanada", HR: "Chorwacja", AU: "Australia", RU: "Rosja", IE: "Irlandia", "AF-C": "Afryka Środkowa", TR: "Turcja", MG: "Madagaskar", AF: "Afganistan", NO: "Norwegia", FI: "Finlandia" };
 /** "godzina" in the nominative after a number: 1 godzina, 2 godziny, 5 godzin, 1,5 godziny. */
 const hours = (n: number) => form(n, "godzina", "godziny", "godzin", "godziny");
 
@@ -386,6 +386,7 @@ const pl: RegistryCopy = {
       dna_sma: "Test DNA w kierunku rdzeniowego zaniku mięśni (SMA)",
       dna_pk_def: "Test DNA w kierunku niedoboru kinazy pirogronianowej (PK def)",
       hcm_negative: "Koty hodowlane muszą mieć ujemny wynik badania w kierunku HCM (choroba serca: kardiomiopatia przerostowa)",
+      dna_gsd2: "Test DNA w kierunku glikogenozy typu II (GSD II, choroba Pompego)",
       dna_gsd4: "Test DNA w kierunku glikogenozy typu IV (GSD IV)",
       dna_pra_b: "Test DNA w kierunku postępującego zaniku siatkówki u kotów bengalskich (PRA-b)",
       dna_jlpp: "Test DNA w kierunku młodzieńczego porażenia krtani i polineuropatii (JLPP)",

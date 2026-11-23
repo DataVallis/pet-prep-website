@@ -1412,6 +1412,24 @@
         "fawn": "Fawn",
         "deep-fawn": "Donker fawn"
       }
+    },
+    "finnish_lapphund": {
+      "name": "Finse lappenhond",
+      "slug": "finse-lappenhond",
+      "synonyms": [
+        "Finnish Lapphund",
+        "Finse lapphund",
+        "Suomenlapinkoira",
+        "Lapinkoira"
+      ],
+      "colours": {
+        "black-tan": "Zwart met tan",
+        "black": "Zwart",
+        "brown": "Bruin",
+        "wolf-sable": "Wolfsgrauw sable",
+        "sable": "Sable",
+        "cream": "Crème"
+      }
     }
   },
   "suitability_labels": {

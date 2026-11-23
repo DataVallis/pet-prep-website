@@ -1380,6 +1380,24 @@
         "fawn": "Fulvo",
         "deep-fawn": "Fulvo escuro"
       }
+    },
+    "finnish_lapphund": {
+      "name": "Cão-finlandês-da-lapónia",
+      "slug": "cao-finlandes-da-laponia",
+      "synonyms": [
+        "Finnish Lapphund",
+        "Lapphund finlandês",
+        "Suomenlapinkoira",
+        "Lapinkoira"
+      ],
+      "colours": {
+        "black-tan": "Preto e fogo",
+        "black": "Preto",
+        "brown": "Castanho",
+        "wolf-sable": "Zibelina lobo",
+        "sable": "Zibelina",
+        "cream": "Creme"
+      }
     }
   },
   "suitability_labels": {

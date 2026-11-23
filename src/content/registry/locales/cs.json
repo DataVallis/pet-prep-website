@@ -1571,6 +1571,23 @@
         "fawn": "Plavá",
         "deep-fawn": "Tmavě plavá"
       }
+    },
+    "finnish_lapphund": {
+      "name": "Finský laponský pes",
+      "slug": "finsky-laponsky-pes",
+      "synonyms": [
+        "Finnish Lapphund",
+        "Suomenlapinkoira",
+        "Lapinkoira"
+      ],
+      "colours": {
+        "black-tan": "Černá s pálením",
+        "black": "Černá",
+        "brown": "Hnědá",
+        "wolf-sable": "Vlčí sobolí",
+        "sable": "Sobolí",
+        "cream": "Krémová"
+      }
     }
   },
   "suitability_labels": {

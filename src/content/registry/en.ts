@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs", 10: "sighthounds" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa", TR: "Turkey", MG: "Madagascar", AF: "Afghanistan", NO: "Norway" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa", TR: "Turkey", MG: "Madagascar", AF: "Afghanistan", NO: "Norway", FI: "Finland" };
 
 const en: RegistryCopy = {
   mistakes: {
@@ -341,6 +341,7 @@ const en: RegistryCopy = {
       dna_sma: "DNA test for spinal muscular atrophy (SMA)",
       dna_pk_def: "DNA test for pyruvate kinase deficiency (PK def)",
       hcm_negative: "Breeding cats must be HCM negative (heart disease: hypertrophic cardiomyopathy)",
+      dna_gsd2: "DNA test for glycogen storage disease type II (GSD II, Pompe disease)",
       dna_gsd4: "DNA test for glycogen storage disease type IV (GSD IV)",
       dna_pra_b: "DNA test for progressive retinal atrophy in the Bengal (PRA-b)",
       dna_jlpp: "DNA test for juvenile laryngeal paralysis and polyneuropathy (JLPP)",
@@ -889,6 +890,15 @@ const en: RegistryCopy = {
         "The Royal Kennel Club lists up to 1 hour of exercise a day, grooming once a week, a coat that sheds, and a large house and garden; it places the breed in Breed Watch Category 3, and PDSA says eyelid problems such as entropion and ectropion occur because of the excessive skin over the face. PDSA calls Neapolitan Mastiffs loyal, devoted dogs that love family life and says their skin folds need daily cleaning. PetMD says they are great with families and children but should not be left alone with a small child, that they drool a lot, and that proper socialisation and positive-reinforcement training should start early.",
       ],
       sources: ["S993", "S994", "S995", "S996", "S10"],
+    },
+
+    finnish_lapphund: {
+      aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, finski laponski pes",
+      text: [
+        "The Finnish Lapphund (Finnish Lapponian Dog, Suomenlapinkoira) is a herding and watch dog from Finland, originally used to keep reindeer; the FCI lists it in Group 5 among the Nordic watchdogs and herders. The FCI standard describes it as smaller than medium sized, intelligent, courageous, calm and docile, friendly and faithful, with a profuse long, harsh outer coat over a soft, dense undercoat; all colours are permitted. The standard gives an ideal height of 49 cm for males and 44 cm for females, with a tolerance of 3 cm, but no weight; PetMD and WebMD give 33–53 pounds (about 15–24 kg), and a dog of this size typically reaches its adult weight at 12–15 months. The Royal Kennel Club gives its lifespan as over 12 years, PetMD and WebMD as 12–15 years.",
+        "The Royal Kennel Club lists up to 1 hour of exercise a day, grooming once a week, a coat that sheds, and a small house with a small or medium garden; it places the breed in Breed Watch Category 1. WebMD calls Lappies good with children because they are a family companion breed, and says their nails should be trimmed once a month. PetMD says they crave companionship, are accomplished barkers, need only monthly bathing and can get along with people of all ages when socialised as a puppy; it names hip and elbow dysplasia and progressive retinal atrophy as conditions to know about.",
+      ],
+      sources: ["S1003", "S1004", "S1006", "S1007", "S10"],
     },
 
     norwegian_elkhound: {
