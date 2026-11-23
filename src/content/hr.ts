@@ -309,14 +309,14 @@ const hr: Dictionary = {
             { title: "Obroci tijekom škole", text: "Vremenski okvir hranjenja koji u cijelosti pada u tihe sate zadatak je roditelja – nikad ne ide na štetu djeteta." },
             { title: "Pauza u svakom trenutku", text: "Jedan gumb pauzira igru, primjerice za obiteljski razgovor. Dok traje pauza, ništa se ne pogoršava." },
             { title: "Nježni podsjetnici", text: "Ljubimac najprije blago podsjeti dijete, a zatim hitno. Tek ako neka potreba sat vremena ostane na nuli, ti dobivaš upozorenje." },
-            { title: "Stvarne posljedice", text: "Zanemarivanje znači 12 sati kod veterinara. Cijeli dan zanemarivanja znači da ljubimca preuzima sklonište – a ti možeš početi ispočetka." },
+            { title: "Stvarne posljedice", text: "Zanemarivanje znači 12 sati kod veterinara, a cijeli dan zanemarivanja znači da ljubimca preuzima sklonište – a ti možeš početi ispočetka." },
             { title: "Zajednički ljubimci", text: "Braća i sestre mogu dijeliti jednog ljubimca. Svaka se radnja pripisuje djetetu koje ju je obavilo, pa ocjena ostaje pravedna." },
           ],
         },
         {
           type: "callout",
           title: "I neuspjeh je rezultat.",
-          text: "Ako ljubimac završi u virtualnom skloništu, naučili ste nešto dragocjeno – prije nego što je cijenu platila prava životinja. Možete početi ispočetka, i s lakšom pasminom.",
+          text: "Ako ljubimac završi u virtualnom skloništu, obitelj je naučila nešto dragocjeno – prije nego što je cijenu platila prava životinja. Možeš početi ispočetka, i s lakšom pasminom.",
           tone: "dark",
         },
       ],
@@ -395,7 +395,7 @@ const hr: Dictionary = {
       eyebrow: "Kad stigne kući",
       title: "Simulacija završava. Briga ne.",
       lead:
-        "Kad tvoja obitelj dovede pravog ljubimca kući, jedan dodir pretvara PetPrep u asistenta za cijeli život životinje – u stvarnom vremenu, bez traka zdravlja i već upoznat s ritmom tvoje obitelji.",
+        "Kad tvoja obitelj dovede pravog ljubimca kući, jedan dodir pretvara PetPrep u asistenta za cijeli život životinje – u stvarnom vremenu, bez traka života i već upoznat s ritmom tvoje obitelji.",
       planned: true,
       blocks: [
         {
@@ -491,7 +491,7 @@ const hr: Dictionary = {
             { q: "Koliko vremena treba svaki dan?", a: "Nekoliko minuta za hranu, vodu i čišćenje – plus šetnja koja je pravom psu ionako potrebna." },
             { q: "Prati li aplikacija lokaciju mog djeteta?", a: "Ne. Za šetnje broji samo korake. Ako to dopustiš, čita ih iz aplikacije Apple Health (iPhone) ili Health Connect (Android) – samo čitanje i samo koraci; gdje je dostupan, koristi i senzor pokreta na mobitelu. Dopuštenje traži na zaslonu šetnje. GPS se ne koristi." },
             { q: "Treba li mom djetetu adresa e-pošte?", a: "Ne. Račun otvaraš ti; dijete se prijavljuje šesteroznamenkastim kodom koji izradiš. Pohranjujemo samo nadimak i, po želji, godinu rođenja." },
-            { q: "Što ako dijete zaboravi?", a: "Ljubimac najprije šalje nježne podsjetnike. Ako neka potreba ostane na nuli, ljubimac se razboli i provede 12 sati kod veterinara. Nakon cijelog dana bez brige preuzima ga virtualno sklonište – a vi možete početi ispočetka." },
+            { q: "Što ako dijete zaboravi?", a: "Ljubimac najprije šalje nježne podsjetnike. Ako neka potreba ostane na nuli, ljubimac se razboli i provede 12 sati kod veterinara. Nakon cijelog dana bez brige preuzima ga virtualno sklonište – a ti možeš početi ispočetka." },
             { q: "Mogu li braća i sestre dijeliti ljubimca?", a: "Da. Svako dijete potpisuje vlastiti ugovor, svaka se radnja pripisuje onome tko ju je obavio i svako dijete dobiva svoj pravedni Care Score." },
             { q: "A škola i vrijeme za spavanje?", a: "Postavi tihe sate. Ljubimac usporava, ništa se ne šalje, a obroke koji u cijelosti padaju u tihe sate preuzimaš ti." },
             { q: "Je li djeci strašno?", a: "Nije. Posljedice su stvarne, ali nježne: ljubimac ide veterinaru ili u sklonište, nikad ništa uznemirujuće, i uvijek postoji novi početak." },
@@ -541,7 +541,7 @@ const hr: Dictionary = {
           type: "list",
           heading: "Dosad izgrađeno",
           items: [
-            "Pokretač igre na poslužitelju sa sinkronizacijom u stvarnom vremenu, testiran na simulacijama cijelih dana, danima promjene na ljetno ili zimsko vrijeme i rubnim slučajevima u obiteljima.",
+            "Poslužiteljski pogon igre sa sinkronizacijom u stvarnom vremenu, testiran na simulacijama cijelih dana, danima promjene na ljetno ili zimsko vrijeme i rubnim slučajevima u obiteljima.",
             "Obitelji s više roditelja, više djece i zajedničkim ljubimcima, s pravednim bodovanjem za svako dijete.",
             "Jedinstveni fotorealistični AI ljubimci s izmjerenim i ograničenim troškovima AI-ja, a mediji se pohranjuju na unajmljenim poslužiteljima u Njemačkoj (Hetzner, EU).",
             "Potrebe ljubimaca temeljene na navedenim veterinarskim i kinološkim izvorima, pri čemu se svaka brojka može pratiti do svog izvora.",
@@ -601,8 +601,8 @@ const hr: Dictionary = {
                 "Izvješća o pogreškama aplikacije: ako se aplikacija zamrzne ili sruši, može poslati kratko tehničko izvješće na naš poslužitelj u EU-u (vrsta i tekst pogreške, mjesto u kodu, verzija aplikacije i operacijskog sustava, naziv zaslona, uloga roditelj/dijete). Ne sadrži ime, adresu e-pošte, korisnički ID ni IP adresu, ne dijeli se ni s kojom trećom stranom i briše se nakon 30 dana.",
                 "Popis za rani pristup (ova mrežna stranica): tvoja adresa e-pošte, jezik stranice, stranica i obrazac na kojem si se prijavio, pasmina ako si je odabrao, UTM oznake poveznice kojom si došao (ako ih je imala), web s kojeg si došao (samo naziv poslužitelja) te vrijeme i tekst tvoje privole. Ne spremamo tvoju IP adresu. Podatke čuvamo na našem poslužitelju u EU dok ne zatražiš njihovo brisanje.",
                 "Obrazac za partnere (ova mrežna stranica): naziv tvrtke, ime kontakt osobe, adresa e-pošte i poruka. Koristimo ih samo za odgovor na tvoj upit, čuvamo ih 12 mjeseci, a zatim ih brišemo. Pravna osnova je tvoj pristanak, koji daješ označavanjem kućice prije slanja.",
-                "Stranice „Koliko posla je pas?“ i kviz pasmina „Koja pasmina je za vas?“ (ova web-stranica): ako upišeš svoju e-adresu i označiš privolu, spremamo tvoju e-adresu, vrijeme i tekst privole, gdje si je ostavio (kalkulator ili rezultat kviza), stranicu, odabranu pasminu, jesi li gledao psa ili štene, rezultat kviza (do tri pasmine) i tvoje odgovore na pitanja, jezik stranice, UTM oznake poveznice kojom si došao (ako ih je imala), web s kojeg si došao (samo naziv poslužitelja) te koliko si puta i kada zadnji put upisao adresu. Ne spremamo tvoju IP adresu niti ime. Podatke čuvamo na našem poslužitelju u EU dok ne zatražiš njihovo brisanje. Sažetak za ispis nastaje u tvom pregledniku i nikamo se ne šalje.",
-                "Iskorištavanje poklon bona (ova web-stranica): roditelj se prijavljuje putem Googlea, Applea ili e-adresom i lozinkom. Kod e-adrese i lozinke naš ih poslužitelj provjerava prema postojećem roditeljskom računu i lozinku nikad ne pohranjuje u čitljivom obliku; od Googlea ili Applea primamo samo identifikator računa, a druge njihove podatke ne pohranjujemo. Kratkotrajni token za prijavu čuva se u memoriji preglednika najviše 15 minuta. Tijekom preusmjeravanja na Google ili Apple i povratka dva zapisa (petprep.signin i petprep.webSession.handoff) postoje samo u pohrani sesije (session storage) ove kartice preglednika. Brišu se čim ih pročita povratna stranica, a inače pri zatvaranju kartice; predaja sesije prihvaća se samo unutar 60 sekundi. Nakon odjave ili zatvaranja kartice ništa ne ostaje pohranjeno u pregledniku. Na našem poslužitelju ostaju samo kratkotrajni tehnički zapisi: zapis o tokenu za prijavu (ID računa i vremena, bez imena i e-adrese) koji se automatski briše otprilike dva dana nakon isteka te brojači ograničenja (neuspjeli pokušaji po računu u hashiranom obliku 15 minuta; zahtjevi po mrežnoj adresi najviše sat vremena).",
+                "Stranice „Koliko posla je pas?“ i kviz pasmina „Koja pasmina je za tebe?“ (ova mrežna stranica): ako upišeš svoju e-adresu i označiš privolu, spremamo tvoju e-adresu, vrijeme i tekst privole, gdje si je ostavio (kalkulator ili rezultat kviza), stranicu, odabranu pasminu, jesi li gledao psa ili štene, rezultat kviza (do tri pasmine) i tvoje odgovore na pitanja, jezik stranice, UTM oznake poveznice kojom si došao (ako ih je imala), web s kojeg si došao (samo naziv poslužitelja) te koliko si puta i kada zadnji put upisao adresu. Ne spremamo tvoju IP adresu niti ime. Podatke čuvamo na našem poslužitelju u EU dok ne zatražiš njihovo brisanje. Sažetak za ispis nastaje u tvom pregledniku i nikamo se ne šalje.",
+                "Unovčavanje poklon bona (ova mrežna stranica): roditelj se prijavljuje putem Googlea, Applea ili e-adresom i lozinkom. Kod e-adrese i lozinke naš ih poslužitelj provjerava prema postojećem roditeljskom računu i lozinku nikad ne pohranjuje u čitljivom obliku; od Googlea ili Applea primamo samo identifikator računa, a druge njihove podatke ne pohranjujemo. Kratkotrajni token za prijavu čuva se u memoriji preglednika najviše 15 minuta. Tijekom preusmjeravanja na Google ili Apple i povratka dva zapisa (petprep.signin i petprep.webSession.handoff) postoje samo u pohrani sesije (session storage) ove kartice preglednika. Brišu se čim ih pročita povratna stranica, a inače pri zatvaranju kartice; predaja sesije prihvaća se samo unutar 60 sekundi. Nakon odjave ili zatvaranja kartice ništa ne ostaje pohranjeno u pregledniku. Na našem poslužitelju ostaju samo kratkotrajni tehnički zapisi: zapis o tokenu za prijavu (ID računa i vremena, bez imena i e-adrese) koji se automatski briše otprilike dva dana nakon isteka te brojači ograničenja (neuspjeli pokušaji po računu u hashiranom obliku 15 minuta; zahtjevi po mrežnoj adresi najviše sat vremena).",
               ],
             },
             {
@@ -710,7 +710,7 @@ const hr: Dictionary = {
           paragraphs: [
             "Nužni kolačići omogućuju rad mrežne stranice i pamte tvoj izbor u vezi s privolom. Sve ostale kolačiće postavljamo samo ako ih dopustiš u prozoru za privolu, prema kategorijama: funkcionalni (dodatne funkcije), analitički (Google Analytics: koje se stranice posjećuju) i oglašivački (videozapisi s YouTubea ugrađeni na nekim stranicama; na ovoj mrežnoj stranici ne prikazujemo oglase). Google Tag Manager sam ne postavlja kolačiće, a svaka oznaka koju učita poštuje tvoj izbor. Izbor možeš promijeniti ili povući u svakom trenutku.",
             "Tablicu u nastavku automatski izrađuje traka za privolu prema onome što pronađe na ovoj mrežnoj stranici, pa navodi kolačiće koje stvarno koristimo.",
-            "Pohrana sesije ove kartice preglednika: kad dođeš, stranica u pohrani sesije kartice (ključ petprep.utm) pamti UTM oznake (utm_*) poveznice kojom si došao i naziv poslužitelja prve druge web-stranice s koje si došao. To nije kolačić, ostaje u tvom pregledniku, briše se kad zatvoriš karticu i šalje nam se samo ako pošalješ obrazac s e-adresom i daš privolu, kako bismo vidjeli iz koje kampanje je prijava.",
+            "Pohrana sesije ove kartice preglednika: kad dođeš, stranica u pohrani sesije kartice (ključ petprep.utm) pamti UTM oznake (utm_*) poveznice kojom si došao i naziv poslužitelja prve druge mrežne stranice s koje si došao. To nije kolačić, ostaje u tvom pregledniku, briše se kad zatvoriš karticu i šalje nam se samo ako pošalješ obrazac s e-adresom i daš privolu, kako bismo vidjeli iz koje kampanje je prijava.",
           ],
           settings: "Promijeni postavke kolačića",
           fallback: "Popis kolačića učitava se zajedno s prozorom za privolu. Ako ga ne vidiš, dopusti skripte na ovoj stranici ili piši na {privacyEmail}.",
@@ -1236,7 +1236,7 @@ const hr: Dictionary = {
         {
           type: "callout",
           title: "Prvi je trenutak naš. Sljedeći bi mogao biti tvoj.",
-          text: "Podijeli šetnju svoje obitelji uz #walkyourpet i označi @petprep.si. Pitanja ili priča koju bi htio ispričati: hello@petprep.si.",
+          text: "Podijeli šetnju svoje obitelji uz #walkyourpet i označi @petprep.si. Pitanja ili priča koju želiš ispričati: hello@petprep.si.",
           tone: "dark",
         },
         {

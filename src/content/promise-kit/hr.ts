@@ -1,6 +1,6 @@
 import type { KitCopy, KitSales } from "./types.ts";
 
-/** Hrvatski: roditeljima se obraćamo na „ti”, kao i drugdje na stranici; stranice za dijete nemaju rodno obilježene oblike (prezent i futur). */
+/** Hrvatski: roditeljima se obraćamo na „ti“, kao i drugdje na stranici; stranice za dijete nemaju rodno obilježene oblike (prezent i futur). */
 export const hr: KitCopy = {
   lang: "hr",
   htmlLang: "hr",
@@ -25,7 +25,7 @@ export const hr: KitCopy = {
     notSure: "Ne znam",
     no: "Ne",
     licence: "Ispiši onoliko primjeraka koliko treba tvojoj obitelji. Molimo te da datoteku ne dijeliš i ne preprodaješ.",
-    sampleFoot: "Ovo je jedna stranica iz kompleta „Obećanje za ljubimca”. Cijeli komplet s obiteljskim razgovorom, tablicom za četiri tjedna i više: petprep.si/hr/obecanje-za-ljubimca",
+    sampleFoot: "Ovo je jedna stranica iz kompleta „Obećanje za ljubimca“. Cijeli komplet s obiteljskim razgovorom, tablicom za četiri tjedna i više: petprep.si/hr/obecanje-za-ljubimca",
   },
   cover: {
     kicker: "Komplet za ispis za obitelji",
@@ -41,7 +41,7 @@ export const hr: KitCopy = {
       "Ne govori ti je li tvoje dijete spremno i ne daje ocjenu.",
       "Ne zamjenjuje savjet veterinara, skloništa ili liječnika.",
       "Ne bira vrstu ni pasminu umjesto tebe.",
-      "Ne obećava da je ljubimac dobra odluka. Ponekad je najbolji ishod „još ne”.",
+      "Ne obećava da je ljubimac dobra odluka. Ponekad je najbolji ishod „još ne“.",
     ],
     insideHeading: "Sadržaj",
     mascot: "Curio, maskota PetPrepa",
@@ -59,7 +59,7 @@ export const hr: KitCopy = {
       "Koja je odrasla osoba odgovorna za ljubimca i kako podsjeća dijete kad se nešto zaboravi?",
       "Gdje će u vašem domu ljubimac spavati, jesti i odmarati se? Gdje ne smije?",
       "Što o tome misle svi koji žive u kući, uključujući one koji nisu baš oduševljeni?",
-      "Koliko dugo je „zauvijek”? Zamislite da je ljubimac s vama i za mnogo godina. Kakva je tada vaša obitelj i što mora vrijediti da još uvijek budete zadovoljni?",
+      "Koliko dugo je „zauvijek“? Zamislite da je ljubimac s vama i za mnogo godina. Kakva je tada vaša obitelj i što mora vrijediti da još uvijek budete zadovoljni?",
     ],
     outro: "Točnih odgovora nema. Ako neko pitanje utiša sve, posvetite mu najviše vremena.",
   },
@@ -140,9 +140,9 @@ export const hr: KitCopy = {
     readHeading: "Kako čitati odgovore",
     read: [
       "Nema ocjene ni praga prolaznosti.",
-      "Uglavnom „da”: razgovarajte o tome što će osigurati da tako ostane kad novost prođe.",
-      "Nekoliko „ne znam”: to je vaša domaća zadaća. Informirajte se pa odgovorite ponovno.",
-      "„Ne” je informacija, a ne neuspjeh. Može značiti „još ne”, „drugi ljubimac” ili „uopće ne”, a svaki je od tih odgovora dobar ishod pažljive odluke.",
+      "Uglavnom „da“: razgovarajte o tome što će osigurati da tako ostane kad novost prođe.",
+      "Nekoliko „ne znam“: to je vaša domaća zadaća. Informirajte se pa odgovorite ponovno.",
+      "„Ne“ je informacija, a ne neuspjeh. Može značiti „još ne“, „drugi ljubimac“ ili „uopće ne“, a svaki je od tih odgovora dobar ishod pažljive odluke.",
     ],
     pointer: "Pitanja o zdravlju, alergijama ili o tome što životinja treba pripadaju liječniku, veterinaru ili skloništu, a ne ovom listu.",
   },
@@ -167,12 +167,12 @@ export const hr: KitCopy = {
     appHeading: "12-tjedni izazov PetPrep",
     appText: "U aplikaciji PetPrep tvoje se dijete dvanaest tjedana brine o realističnoj životinji koju je stvorila umjetna inteligencija: hranjenje, voda, šetnje i čišćenje. Ti pratiš što se događa na svojoj roditeljskoj nadzornoj ploči. To je vježba, a ne obećanje da je ljubimac pravi izbor za vas.",
     cta: "Saznaj više na petprep.si",
-    slogan: "Spremni za ljubimca. Uz njega cijeli njegov život.",
-    mascotLine: "Sretno želi Curio.",
+    slogan: "Spremni za ljubimca. Uz njega cijeli život.",
+    mascotLine: "Sretno ti želi Curio.",
   },
 };
 
-/** Prodajna stranica kompleta „Obećanje za ljubimca” (izvorni tekst; tekst samog kompleta nalazi se gore). */
+/** Prodajna stranica kompleta „Obećanje za ljubimca“ (izvorni tekst; tekst samog kompleta nalazi se gore). */
 export const hrSales: KitSales = {
   eyebrow: "Komplet za ispis",
   title: "Obećanje za ljubimca",
@@ -184,8 +184,8 @@ export const hrSales: KitSales = {
   buy: "Kupi komplet",
   sample: "Preuzmi besplatnu probnu stranicu",
   sampleHeading: "Najprije isprobaj stranicu s Obećanjem",
-  sampleText: "Samo Obećanje kao besplatna stranica A4: dogovor između djeteta i odraslih, sa svakodnevnim zadacima, vašim pravilima i mjestom za potpise svih. Upišite adresu e-pošte i odmah je preuzmite.",
-  sampleNote: "Vašu adresu e-pošte koristimo samo za novosti PetPrepa, ako označite kućicu. Odjaviti se možete u bilo kojem trenutku.",
+  sampleText: "Samo Obećanje kao besplatna stranica A4: dogovor između djeteta i odraslih, sa svakodnevnim zadacima, vlastitim pravilima i mjestom za potpise svih. Upiši adresu e-pošte i odmah je preuzmi.",
+  sampleNote: "Tvoju adresu e-pošte koristimo samo za novosti PetPrepa, ako označiš kućicu. Odjaviti se možeš u bilo kojem trenutku.",
   insideHeading: "Što je unutra",
   insideIntro: "Ispiši onoliko primjeraka koliko ti treba. Sve se ispunjava rukom pa se ništa o tvojem djetetu ne upisuje u obrazac niti se bilo kamo šalje.",
   previewHeading: "Pogled na tri stranice",
@@ -200,7 +200,7 @@ export const hrSales: KitSales = {
   notItems: [
     "Nije test i ne daje ocjenu. Ne može reći je li tvoje dijete spremno.",
     "Ne sadrži zdravstvene savjete ni pravila o pasminama. Za to pitaj veterinara ili sklonište.",
-    "Ne obećava da je ljubimac dobra odluka. I „još ne” je dobar odgovor.",
+    "Ne obećava da je ljubimac dobra odluka. I „još ne“ je dobar odgovor.",
   ],
   giftText: "Tražiš li radije poklon? 12-tjedni izazov PetPrep možeš pokloniti bonom.",
   giftLink: "Pogledaj poklon bon",
@@ -210,7 +210,7 @@ export const hrSales: KitSales = {
     { q: "Treba li mi aplikacija PetPrep?", a: "Ne. Komplet je samo na papiru i radi sam za sebe. Posljednja stranica spominje aplikaciju kao jedan mogući sljedeći korak." },
     { q: "Kako ga ispisati?", a: "To je običan PDF u formatu A4. Ispiši cijeli komplet ili samo stranice koje trebaš. Stranice s tjednim tablicama možeš ponovno ispisati ako želiš još jedan mjesec." },
     { q: "Što dobivam pri kupnji?", a: "Datoteka za preuzimanje s kompletom u PDF-u na petnaest jezika, po jedanaest A4 stranica. Ispiši verziju na svojem jeziku." },
-    { q: "Prikupljaju li se podaci o mojoj obitelji?", a: "Sam komplet ne prikuplja ništa: to je PDF koji ispunjavaš olovkom. Pri kupnji web-trgovina obrađuje tvoje podatke o plaćanju i e-adresu." },
+    { q: "Prikupljaju li se podaci o mojoj obitelji?", a: "Sam komplet ne prikuplja ništa: to je PDF koji ispunjavaš olovkom. Pri kupnji internetska trgovina obrađuje tvoje podatke o plaćanju i e-adresu." },
     { q: "Smijem li dijeliti datoteku?", a: "Ispiši onoliko primjeraka koliko treba tvojoj obitelji, ali datoteku ne dijeli i ne preprodaji." },
   ],
 };

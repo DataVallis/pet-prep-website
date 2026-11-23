@@ -46,7 +46,7 @@ export const hr: PartnerLocalePack = {
       intro: "Navodimo samo ono što se može provjeriti u proizvodu. Stanje na dan {date}.",
       breeds: "{n|one=pasmina|few=pasmine|other=pasmina} u enciklopediji životinja",
       breedsNote: "{dogs} {dogs|one=pasmina|few=pasmine|other=pasmina} pasa i {cats} {cats|one=pasmina|few=pasmine|other=pasmina} mačaka, svaka s vlastitom stranicom i navedenim izvorima.",
-      languages: "{n|one=jezik|few=jezika|other=jezika} web-stranice",
+      languages: "{n|one=jezik|few=jezika|other=jezika} mrežne stranice",
       languagesNote: "Aplikacija je danas na slovenskom i engleskom.",
     },
   },
@@ -108,7 +108,7 @@ export const hr: PartnerLocalePack = {
         type: "prose",
         heading: "Kome je PetPrep namijenjen",
         paragraphs: [
-          "PetPrep nagovara obitelji tik prije odluke o ljubimcu i odrasle koji provjeravaju odgovara li im određena pasmina doista. Naš čitatelj ne traži naslijepo: već zna koju vrstu i pasminu proučava, a u [enciklopediji životinja](page:animals) čita što ta životinja treba, uz navedene izvore.",
+          "PetPrep dopire do obitelji tik prije odluke o ljubimcu i odrasle koji provjeravaju odgovara li im određena pasmina doista. Naš čitatelj ne traži naslijepo: već zna koju vrstu i pasminu proučava, a u [enciklopediji životinja](page:animals) čita što ta životinja treba, uz navedene izvore.",
           "Za partnera je to rijedak trenutak. Odluka još nije donesena, ali je zanimanje konkretno. Zato nam je važno da je svaka suradnja jasno označena i da nikad ne mijenja ono što obitelji čitaju.",
         ],
       },
