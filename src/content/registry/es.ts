@@ -1684,6 +1684,14 @@ const es: RegistryCopy = {
       ],
       sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
     },
+    belgian_sheepdog: {
+      aka: "Groenendael, Belgian Shepherd Groenendael, Belgian Shepherd Dog (Groenendael), Belgian Groenendael, Pastor belga groenendael",
+      text: [
+        "El pastor belga groenendael (Belgian Sheepdog) es la variedad negra de pelo largo del pastor belga, un perro pastor originario de Bélgica. La FCI reconoce una sola raza de pastor belga, con cuatro variedades, y la incluye en el grupo 1, entre los perros de pastoreo. El estándar de la FCI describe un perro de proporciones armoniosas que combina elegancia y fuerza, con orejas erguidas bastante pequeñas y de inserción alta, y un pelo largo y liso, más abundante alrededor del cuello y el pecho. Para el groenendael solo admite el negro uniforme. Fija una altura de unos 62 cm en machos y 58 cm en hembras y un peso de unos 25–30 kg en machos y 20–25 kg en hembras. Un perro de este tamaño alcanza su tamaño adulto hacia los 12–15 meses (categoría de tamaño de PetMD). El Royal Kennel Club indica una esperanza de vida de más de 10 años; PetMD y WebMD, de 12–14 años.",
+        "El Royal Kennel Club describe un perro vigilante, receloso y muy inteligente, con ganas de trabajar. Recomienda más de 2 horas de ejercicio al día y cuidado del pelo más de una vez por semana; indica que la raza muda el pelo y es adecuada para una casa grande con un jardín grande, y la incluye en la categoría 1 de Breed Watch. PetMD señala que los pastores belgas crean vínculos estrechos con su familia, necesitan mucho ejercicio y estimulación mental, y pueden intentar pastorear a los niños y a los gatos. Recomienda una socialización temprana, el cepillado semanal y la limpieza de las orejas una o dos veces al mes. WebMD indica que necesitan casi dos horas de ejercicio al día y que no son una buena opción para quien pasa muchas horas fuera de casa. Recomienda cepillarles los dientes a diario y bañarlos una vez al mes.",
+      ],
+      sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
+    },
     finnish_lapphund: {
       aka: "Perro finlandés de Laponia, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
       text: [
