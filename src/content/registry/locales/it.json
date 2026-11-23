@@ -1155,6 +1155,15 @@
         "Belgian Tervuren"
       ]
     },
+    "belgian_sheepdog": {
+      "name": "Pastore belga groenendael",
+      "slug": "pastore-belga-groenendael",
+      "synonyms": [
+        "Groenendael",
+        "Belgian Shepherd Groenendael",
+        "Belgian Groenendael"
+      ]
+    },
     "toy_fox_terrier": {
       "name": "Toy fox terrier",
       "slug": "toy-fox-terrier",
