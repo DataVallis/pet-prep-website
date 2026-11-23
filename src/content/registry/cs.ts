@@ -1538,6 +1538,30 @@ const cs: RegistryCopy = {
       ],
       sources: ["S312", "S313", "S830", "S832", "S10"],
     },
+    norfolk_terrier: {
+      aka: "Norfolk, Norfolk terrier, norfolk teriér, norfolkský teriér",
+      text: [
+        "Norfolk teriér je jeden z nejmenších teriérů, pochází z Velké Británie; FCI ho řadí do skupiny 3 mezi malé teriéry. Standard FCI popisuje nízkého, čilého, kompaktního a silného psíka, na svou velikost pravého „démona“, s milou povahou, ostražitého a nebojácného, s tvrdou, drátovitou, rovnou srstí a středně velkýma ušima ve tvaru V, které padají dopředu těsně k tváři; barvy jsou všechny odstíny červené, pšeničné, černé s pálením nebo „grizzle“. Standard uvádí ideální výšku 25 cm, ale hmotnost neuvádí; standard UKC uvádí 11 až 12 liber (asi 5–5,4 kg) a PDSA 5–5,5 kg. Pes této velikosti obvykle dorůstá dospělé hmotnosti v 9–12 měsících. Royal Kennel Club uvádí délku života přes 10 let a Woodgreen 12–15 let.",
+        "Royal Kennel Club uvádí až 1 hodinu pohybu denně, péči o srst víc než jednou týdně a línání, píše, že plemeno se hodí do bytu, řadí ho do kategorie 1 programu Breed Watch a nedoporučuje žádné zdravotní vyšetření před připuštěním. PDSA píše, že drátovitou srst je třeba pročesávat několikrát týdně a třikrát až čtyřikrát ročně trimovat a že norfolkové rádi hrabou. Woodgreen je popisuje jako jemné a trpělivé k dětem, vždy však pod dohledem; uvádí, že nemají rádi dlouhé osamění, bývají mistry útěků, a proto potřebují plot, pod kterým ani přes který neuniknou, a mají silný lovecký pud, takže malá zvířata jako králíci nebo morčata vedle nich nemusí být v bezpečí.",
+      ],
+      sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
+    },
+    belgian_sheepdog: {
+      aka: "Groenendael, Belgian Shepherd Groenendael, Belgian Shepherd Dog (Groenendael), Belgian Groenendael, belgický ovčák groenendael",
+      text: [
+        "Belgický ovčák groenendael je dlouhosrstá černá varieta belgického ovčáka, pasteveckého psa z Belgie; FCI uznává jedno plemeno belgického ovčáka se čtyřmi varietami a řadí ho do skupiny 1 mezi pastevecké psy. Standard FCI popisuje harmonicky stavěného psa, který spojuje eleganci se silou, s poměrně malýma, vysoko nasazenýma vzpřímenýma ušima a dlouhou hladkou srstí, delší na krku a na přední straně hrudi; pro groenendael připouští jen jednolitě černou barvu. Uvádí výšku asi 62 cm u psů a 58 cm u fen a hmotnost asi 25–30 kg u psů a 20–25 kg u fen; pes této velikosti dorůstá zhruba ve 12–15 měsících (velikostní třída PetMD). Royal Kennel Club uvádí délku života přes 10 let, PetMD a WebMD 12–14 let.",
+        "Royal Kennel Club popisuje ostražitého, obezřetného a velmi inteligentního psa s chutí do práce, doporučuje více než 2 hodiny pohybu denně a péči o srst víc než jednou týdně, uvádí, že se line a hodí se do velkého domu s velkou zahradou, a řadí ho do kategorie 1 programu Breed Watch. PetMD píše, že belgičtí ovčáci groenendael si vytvářejí silné pouto ke svým lidem, potřebují hodně pohybu i duševní stimulace a mohou se pokoušet děti a kočky pást; doporučuje včasnou socializaci, kartáčování jednou týdně a čištění uší jednou až dvakrát měsíčně. WebMD uvádí, že potřebují téměř dvě hodiny pohybu denně, nejsou dobrou volbou pro lidi, kteří bývají dlouho mimo domov, a doporučuje denní čištění zubů a koupání jednou měsíčně.",
+      ],
+      sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
+    },
+    finnish_lapphund: {
+      aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, finský laponský pes",
+      text: [
+        "Finský laponský pes (Finnish Lapponian Dog, Suomenlapinkoira) je pastevecký a hlídací pes z Finska, původně využívaný k pasení sobů; FCI ho řadí do skupiny 5 mezi severské hlídací a pastevecké psy. Standard FCI popisuje psa menšího než střední velikosti, inteligentního, odvážného, klidného a učenlivého, přátelského a věrného, s bohatou dlouhou, hrubou krycí srstí a měkkou hustou podsadou; připouští všechny barvy. Standard uvádí ideální výšku 49 cm u psů a 44 cm u fen s tolerancí 3 cm, ale hmotnost neuvádí; PetMD a WebMD uvádějí 33–53 liber (asi 15–24 kg) a pes této velikosti obvykle dorůstá dospělé hmotnosti ve 12–15 měsících. Royal Kennel Club uvádí délku života přes 12 let, PetMD a WebMD 12–15 let.",
+        "Royal Kennel Club uvádí až 1 hodinu pohybu denně, péči o srst jednou týdně, línání a malý dům s malou nebo středně velkou zahradou; plemeno řadí do kategorie 1 programu Breed Watch. WebMD označuje lapphundy za dobré k dětem, protože jde o rodinné společenské plemeno, a uvádí, že drápy je třeba zkracovat jednou měsíčně. PetMD píše, že touží po společnosti, jsou výborní štěkači, stačí je koupat jen jednou měsíčně a pokud jsou od štěněte socializovaní, vycházejí s lidmi všech věkových skupin; jako onemocnění, o kterých je dobré vědět, uvádí dysplazii kyčlí a loktů a progresivní atrofii sítnice.",
+      ],
+      sources: ["S1003", "S1004", "S1006", "S1007", "S10"],
+    },
     toy_fox_terrier: {
       aka: "American Toy Terrier, Amertoy, TFT",
       text: [
