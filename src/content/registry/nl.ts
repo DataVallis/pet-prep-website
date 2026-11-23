@@ -1685,6 +1685,30 @@ const nl: RegistryCopy = {
       ],
       sources: ["S690","S693","S694","S10"],
     },
+    norfolk_terrier: {
+      aka: "Norfolk",
+      text: [
+        "De Norfolk terrier is een van de kleinste terriërs en komt uit Groot-Brittannië; de FCI plaatst hem in groep 3, bij de kleine terriërs. De FCI-standaard beschrijft een laaggebouwd, alert, compact en sterk hondje, een ‘demon’ voor zijn formaat, met een innemend, waakzaam en onbevreesd karakter. Hij heeft een harde, draadharige, rechte vacht en middelgrote V-vormige oren die vlak langs de wang naar voren hangen; de kleuren zijn alle tinten rood, tarwekleurig, black and tan of grizzle. De standaard noemt een ideale schofthoogte van 25 cm maar geen gewicht; de UKC-standaard noemt 11 tot 12 pond (ongeveer 5–5,4 kg) en de PDSA 5–5,5 kg. Een hond van dit formaat is volgroeid rond 9–12 maanden. De Royal Kennel Club noemt een levensverwachting van meer dan 10 jaar en Woodgreen 12–15 jaar.",
+        "De Royal Kennel Club raadt tot 1 uur beweging per dag aan en vachtverzorging vaker dan eens per week, meldt dat het ras verhaart en geschikt is voor een appartement, en plaatst het in Breed Watch-categorie 1; aanbevolen gezondheidsonderzoeken vóór het fokken noemt zij niet. De PDSA schrijft dat de draadharige vacht een paar keer per week gekamd en drie tot vier keer per jaar getrimd moet worden en dat Norfolks graag graven. Woodgreen noemt ze zachtaardig en geduldig met kinderen (altijd onder toezicht) en zegt dat ze niet graag lang alleen zijn, dat het ontsnappingskunstenaars kunnen zijn die een uitbraakbestendige omheining nodig hebben en dat ze een sterk jachtinstinct hebben, waardoor kleine huisdieren zoals konijnen of cavia’s in hun buurt misschien niet veilig zijn.",
+      ],
+      sources: ["S1010","S1011","S1012","S1013","S1016","S10"],
+    },
+    belgian_sheepdog: {
+      aka: "Groenendael, Belgische herder Groenendael, Belgian Shepherd Groenendael, Belgian Shepherd Dog (Groenendael), Belgian Groenendael",
+      text: [
+        "De Groenendaeler (Belgian Sheepdog) is de langharige, zwarte variant van de Belgische herder, een herdershond uit België; de FCI erkent één ras Belgische herder met vier varianten en plaatst het in groep 1, bij de herdershonden. De FCI-standaard beschrijft een harmonieus gebouwde hond die elegantie en kracht combineert, met vrij kleine, hoog aangezette rechtopstaande oren en een lange, gladde vacht met langer haar rond de hals en op de borst; bij de Groenendaeler is alleen effen zwart toegestaan. De standaard noemt een schofthoogte van ongeveer 62 cm voor reuen en 58 cm voor teven en een gewicht van ongeveer 25–30 kg voor reuen en 20–25 kg voor teven; een hond van dit formaat is volgroeid rond 12–15 maanden (PetMD-grootteklasse). De Royal Kennel Club noemt een levensverwachting van meer dan 10 jaar en PetMD en WebMD 12–14 jaar.",
+        "De Royal Kennel Club beschrijft een waakzame, behoedzame en zeer intelligente hond met zin in werk. Zij raadt meer dan 2 uur beweging per dag aan en vachtverzorging vaker dan eens per week, meldt dat het ras verhaart en past bij een groot huis met een grote tuin, en plaatst het in Breed Watch-categorie 1. PetMD schrijft dat Groenendaelers een sterke band met hun mensen opbouwen, veel beweging en mentale stimulatie nodig hebben en mogelijk proberen kinderen en katten te hoeden; zij raadt vroege socialisatie, wekelijks borstelen en één à twee keer per maand de oren schoonmaken aan. WebMD zegt dat ze bijna twee uur beweging per dag nodig hebben, geen goede keuze zijn voor wie lange dagen van huis is, en adviseert dagelijks de tanden te poetsen en maandelijks te baden.",
+      ],
+      sources: ["S312","S313","S1019","S1020","S1021","S10"],
+    },
+    finnish_lapphund: {
+      aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, Finse lappenhond",
+      text: [
+        "De Finse lappenhond (Finnish Lapphund, Suomenlapinkoira) is een hoede- en waakhond uit Finland, oorspronkelijk gebruikt om rendieren te hoeden; de FCI plaatst hem in groep 5, bij de Noordse waak- en hoedhonden. De FCI-standaard beschrijft een hond die kleiner is dan middelgroot: intelligent, moedig, kalm en volgzaam, vriendelijk en trouw, met een overvloedige, lange, ruwe dekvacht over een zachte, dichte ondervacht; alle kleuren zijn toegestaan. De standaard noemt een ideale schofthoogte van 49 cm voor reuen en 44 cm voor teven, met een marge van 3 cm, maar geen gewicht; PetMD en WebMD noemen 33–53 pond (ongeveer 15–24 kg). Een hond van dit formaat is volgroeid rond 12–15 maanden. De Royal Kennel Club noemt een levensverwachting van meer dan 12 jaar en PetMD en WebMD 12–15 jaar.",
+        "De Royal Kennel Club raadt tot 1 uur beweging per dag aan en wekelijkse vachtverzorging, meldt dat het ras verhaart en past bij een klein huis met een kleine of middelgrote tuin, en plaatst het in Breed Watch-categorie 1. WebMD noemt lappies goed met kinderen, omdat het een gezelschapsras voor gezinnen is, en zegt dat hun nagels eens per maand geknipt moeten worden. PetMD schrijft dat ze hunkeren naar gezelschap, flink blaffen, slechts eens per maand gebaad hoeven te worden en met mensen van alle leeftijden overweg kunnen als ze als pup gesocialiseerd zijn; als aandoeningen om te kennen noemt PetMD heup- en elleboogdysplasie en progressieve retina-atrofie.",
+      ],
+      sources: ["S1003","S1004","S1006","S1007","S10"],
+    },
   },
 };
 
