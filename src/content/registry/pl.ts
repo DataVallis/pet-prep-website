@@ -1697,6 +1697,30 @@ const pl: RegistryCopy = {
       ],
       sources: ["S690", "S693", "S694", "S10"],
     },
+    norfolk_terrier: {
+      aka: "Norfolk, Norfolk terrier",
+      text: [
+        "Norfolk terrier to jeden z najmniejszych terierów, rasa z Wielkiej Brytanii; FCI zalicza go do terierów małych rozmiarów (grupa 3). Według wzorca FCI to pies niski, żywy, zwarty i mocny, „demon” jak na swoje rozmiary: sympatyczny, czujny i nieustraszony, z twardą, drucianą, prostą sierścią i średniej wielkości uszami w kształcie litery V, opadającymi do przodu przy policzku. Dopuszczalne umaszczenie to wszystkie odcienie rudego, pszeniczne, czarne podpalane i grizzle. Wzorzec podaje idealną wysokość 25\u00a0cm, ale nie podaje masy ciała; według wzorca UKC pies waży 11–12 funtów (około 5–5,4\u00a0kg), według PDSA 5–5,5\u00a0kg. Pies tej wielkości zwykle osiąga dorosłą masę w wieku około 9–12\u00a0miesięcy. The Royal Kennel Club podaje długość życia ponad 10\u00a0lat, a Woodgreen 12–15\u00a0lat.",
+        "The Royal Kennel Club zaleca do 1\u00a0godziny ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu. Podaje też, że rasa linieje i może mieszkać w mieszkaniu, zalicza ją do kategorii 1 programu Breed Watch i nie wymienia zalecanych badań zdrowotnych przed kryciem. PDSA pisze, że druciana sierść wymaga rozczesywania około dwa razy w tygodniu i trymowania trzy–cztery razy w roku, a norfolki uwielbiają kopać. Według Woodgreen są łagodne i cierpliwe wobec dzieci, ale zawsze pod nadzorem dorosłych. Nie lubią zostawać same na długo i potrafią uciekać, dlatego potrzebują ogrodzenia zabezpieczonego przed ucieczką. Mają silny instynkt łowiecki, więc małe zwierzęta, takie jak króliki czy świnki morskie, mogą przy nich nie być bezpieczne.",
+      ],
+      sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
+    },
+    belgian_sheepdog: {
+      aka: "Groenendael, Belgian Shepherd Groenendael, Belgian Shepherd Dog (Groenendael), Belgian Groenendael",
+      text: [
+        "Owczarek belgijski groenendael to długowłosa, czarna odmiana owczarka belgijskiego, psa pasterskiego z Belgii; FCI uznaje jedną rasę owczarka belgijskiego w czterech odmianach i zalicza ją do psów pasterskich (grupa 1). Wzorzec FCI opisuje harmonijnie zbudowanego psa łączącego elegancję z siłą, z dość małymi, wysoko osadzonymi, stojącymi uszami i długą, gładką sierścią, dłuższą na szyi i przedpiersiu; u groenendaela dopuszcza tylko jednolicie czarne umaszczenie. Podaje wysokość około 62\u00a0cm u psów i 58\u00a0cm u suk oraz masę ciała około 25–30\u00a0kg u psów i 20–25\u00a0kg u suk. Pies tej wielkości jest w pełni wyrośnięty w wieku około 12–15\u00a0miesięcy (według klasy wielkości PetMD). The Royal Kennel Club podaje długość życia ponad 10\u00a0lat, a PetMD i WebMD 12–14\u00a0lat.",
+        "The Royal Kennel Club opisuje psa czujnego, ostrożnego, bardzo inteligentnego i chętnego do pracy. Zaleca ponad 2\u00a0godziny ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu, podaje, że rasa linieje i pasuje do dużego domu z dużym ogrodem, i zalicza ją do kategorii 1 programu Breed Watch. PetMD pisze, że owczarki belgijskie silnie wiążą się ze swoimi ludźmi, potrzebują dużo ruchu i pracy dla głowy, mogą próbować zaganiać dzieci i koty; radzi wcześnie socjalizować psa, szczotkować go co tydzień i czyścić mu uszy raz lub dwa razy w miesiącu. WebMD podaje, że potrzebują prawie dwóch godzin ruchu dziennie i nie są dobrym wyborem dla osób, które długo przebywają poza domem; zaleca też codzienne mycie zębów i kąpiel raz w miesiącu.",
+      ],
+      sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
+    },
+    finnish_lapphund: {
+      aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
+      text: [
+        "Fiński lapphund (Suomenlapinkoira) to pies pasterski i stróżujący z Finlandii, pierwotnie używany do pilnowania reniferów; FCI zalicza go do grupy 5, do północnych psów stróżujących i pasterskich. Wzorzec FCI opisuje psa poniżej średniej wielkości, inteligentnego, odważnego, spokojnego i uległego, przyjaznego i wiernego, z obfitym, długim, szorstkim włosem okrywowym i miękkim, gęstym podszerstkiem; dopuszcza wszystkie umaszczenia. Podaje idealną wysokość 49\u00a0cm u psów i 44\u00a0cm u suk, z tolerancją 3\u00a0cm, ale nie podaje masy ciała; PetMD i WebMD podają 33–53 funtów (około 15–24\u00a0kg), a pies tej wielkości zwykle osiąga dorosłą masę w wieku około 12–15\u00a0miesięcy. The Royal Kennel Club podaje długość życia ponad 12\u00a0lat, a PetMD i WebMD 12–15\u00a0lat.",
+        "The Royal Kennel Club zaleca do 1\u00a0godziny ruchu dziennie i pielęgnację sierści raz w tygodniu, podaje, że rasa linieje i pasuje do małego domu z małym lub średnim ogrodem, i zalicza ją do kategorii 1 programu Breed Watch. WebMD pisze, że lapphundy dobrze dogadują się z dziećmi, bo to rasa towarzysząca rodzinie, a pazury trzeba przycinać raz w miesiącu. PetMD zauważa, że lapphundy potrzebują towarzystwa, bywają wielkimi szczekaczami i wystarczy je kąpać raz w miesiącu, a dobrze zsocjalizowane od szczenięcia mogą żyć w zgodzie z ludźmi w każdym wieku. Jako choroby, o których warto wiedzieć, wymienia dysplazję stawów biodrowych i łokciowych oraz postępujący zanik siatkówki.",
+      ],
+      sources: ["S1003", "S1004", "S1006", "S1007", "S10"],
+    },
   },
 };
 
