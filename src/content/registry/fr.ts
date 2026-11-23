@@ -1681,6 +1681,22 @@ const fr: RegistryCopy = {
       ],
       sources: ["S690", "S693", "S694", "S10"],
     },
+    norfolk_terrier: {
+      aka: "Norfolk",
+      text: [
+        "Le Norfolk Terrier est l’un des plus petits terriers. Originaire de Grande-Bretagne, il est classé par la FCI dans le groupe 3, parmi les terriers de petite taille. Le standard FCI le décrit comme un petit chien bas sur pattes, vif, compact et robuste, un « démon » pour sa taille, au caractère aimable, alerte et intrépide. Son poil est dur, rude et droit ; ses oreilles, de taille moyenne, en V, retombent vers l’avant, bien plaquées contre la joue. Les couleurs de robe admises sont toutes les nuances de rouge, de froment, de noir et feu ou de grizzle. Le standard donne une hauteur idéale de 25 cm, mais aucun poids ; le standard de l’UKC indique 11 à 12 livres (environ 5–5,4 kg) et la PDSA 5–5,5 kg. Un chien de ce gabarit atteint son poids adulte vers 9 à 12 mois. Le Royal Kennel Club donne une espérance de vie de plus de 10 ans, Woodgreen de 12 à 15 ans.",
+        "Le Royal Kennel Club recommande jusqu’à 1 heure d’exercice par jour et un toilettage plus d’une fois par semaine. Selon lui, la race perd ses poils et peut vivre en appartement. Il la classe en catégorie 1 du programme Breed Watch et ne mentionne aucun dépistage de santé recommandé avant la reproduction. La PDSA écrit que le poil dur doit être peigné deux fois par semaine environ et épilé à la main (stripping) trois à quatre fois par an, et que les Norfolk adorent creuser. Woodgreen les décrit comme doux et patients avec les enfants, mais toujours sous surveillance. Il ajoute qu’ils n’aiment pas rester seuls longtemps et qu’ils peuvent être de vrais champions de l’évasion : il faut donc une clôture sans faille. Comme ils ont un fort instinct de prédation, les petits animaux de compagnie, tels que les lapins ou les cochons d’Inde, ne sont peut-être pas en sécurité auprès d’eux.",
+      ],
+      sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
+    },
+    finnish_lapphund: {
+      aka: "Finnish Lapphund, Finnish Lapponian Dog, Chien finnois de Laponie, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
+      text: [
+        "Le chien finnois de Laponie (Finnish Lapphund, Suomenlapinkoira) est un chien de berger et de garde originaire de Finlande, utilisé à l’origine pour la garde des rennes. La FCI le classe dans le groupe 5, parmi les chiens de garde et de berger nordiques. Le standard FCI le décrit comme un chien de taille inférieure à la moyenne, intelligent, courageux, calme et docile, amical et fidèle, au poil de couverture long, rude et abondant, doublé d’un sous-poil doux et dense ; toutes les couleurs de robe sont admises. Le standard donne une hauteur idéale de 49 cm pour les mâles et de 44 cm pour les femelles, avec une tolérance de 3 cm, mais aucun poids ; PetMD et WebMD indiquent 33–53 livres (environ 15–24 kg). Un chien de ce gabarit atteint son poids adulte vers 12 à 15 mois. Le Royal Kennel Club donne une espérance de vie de plus de 12 ans, PetMD et WebMD de 12 à 15 ans.",
+        "Le Royal Kennel Club recommande jusqu’à 1 heure d’exercice par jour et un toilettage hebdomadaire. Selon lui, la race perd ses poils et convient à une petite maison avec un petit ou moyen jardin. Il la classe en catégorie 1 du programme Breed Watch. WebMD juge les Lappies bons avec les enfants, car ce sont des chiens de compagnie pour toute la famille, et conseille de leur couper les griffes une fois par mois. PetMD écrit qu’ils ont besoin de compagnie, qu’ils aboient volontiers, qu’un bain par mois suffit et qu’ils peuvent s’entendre avec des personnes de tous âges s’ils ont été socialisés étant chiots. Il cite la dysplasie de la hanche et du coude ainsi que l’atrophie rétinienne progressive parmi les affections à connaître.",
+      ],
+      sources: ["S1003", "S1004", "S1006", "S1007", "S10"],
+    },
   },
 };
 
