@@ -1674,6 +1674,30 @@ const pt: RegistryCopy = {
       ],
       sources: ["S690", "S693", "S694", "S10"],
     },
+    norfolk_terrier: {
+      aka: "Norfolk, Norfolk Terrier, Terrier de Norfolk",
+      text: [
+        "O norfolk terrier é um dos mais pequenos terriers, originário da Grã-Bretanha; a FCI inclui-o no Grupo 3, entre os terriers de pequeno porte. O padrão da FCI descreve um cão baixo, vivo, compacto e robusto, um «demónio» para o seu tamanho, de feitio afetuoso, atento e destemido. Tem pelo duro, áspero e liso e orelhas em V de tamanho médio, que caem para a frente junto à face; as cores são todos os tons de vermelho, trigo, preto e fogo, ou grisalho. O padrão indica uma altura ideal de 25 cm, mas não dá o peso; o padrão do UKC indica 11–12 libras (cerca de 5–5,4 kg) e a PDSA 5–5,5 kg. Um cão deste porte atinge o peso adulto por volta dos 9–12 meses. O Royal Kennel Club indica uma esperança de vida de mais de 10 anos e a Woodgreen de 12–15 anos.",
+        "O Royal Kennel Club recomenda até 1 hora de exercício por dia e cuidados com o pelo mais de uma vez por semana. Indica que a raça larga pelo e se adapta a um apartamento, inclui-a na categoria 1 do Breed Watch e não refere nenhum rastreio de saúde recomendado antes da reprodução. A PDSA diz que o pelo áspero precisa de ser penteado duas vezes por semana e de stripping três a quatro vezes por ano, e que os norfolks adoram cavar. A Woodgreen descreve-os como meigos e pacientes com as crianças, mas sempre com vigilância. Diz que não gostam de ficar sozinhos durante muito tempo, que podem fugir com facilidade e precisam de uma vedação à prova de fugas, e que têm um forte instinto de presa, pelo que animais pequenos, como coelhos ou porquinhos-da-índia, podem não estar seguros junto deles.",
+      ],
+      sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
+    },
+    belgian_sheepdog: {
+      aka: "Groenendael, Pastor belga, Belgian Sheepdog, Belgian Shepherd Groenendael, Belgian Shepherd Dog (Groenendael), Belgian Groenendael",
+      text: [
+        "O pastor belga groenendael (Belgian Sheepdog) é a variedade preta de pelo comprido do pastor belga, um cão de pastor originário da Bélgica; a FCI reconhece uma só raça de pastor belga, com quatro variedades, e inclui-a no Grupo 1, entre os cães de pastor. O padrão da FCI descreve um cão de proporções harmoniosas, que alia elegância e força, com orelhas erguidas, bastante pequenas e de inserção alta, e pelo comprido e liso, mais abundante à volta do pescoço e no peito; para o groenendael admite apenas o preto uniforme. Indica uma altura de cerca de 62 cm nos machos e 58 cm nas fêmeas e um peso de cerca de 25–30 kg nos machos e 20–25 kg nas fêmeas. Um cão deste porte atinge o tamanho adulto por volta dos 12–15 meses (classe de tamanho da PetMD). O Royal Kennel Club indica uma esperança de vida de mais de 10 anos e a PetMD e a WebMD de 12–14 anos.",
+        "O Royal Kennel Club descreve um cão vigilante, desconfiado e muito inteligente, com vontade de trabalhar. Recomenda mais de 2 horas de exercício por dia e cuidados com o pelo mais de uma vez por semana, indica que a raça larga pelo e se adapta a uma casa grande com um jardim grande, e inclui-a na categoria 1 do Breed Watch. A PetMD diz que os pastores belgas criam laços estreitos com a família, precisam de muito exercício e estimulação mental e podem tentar pastorear crianças e gatos; recomenda socialização precoce, escovagem semanal e limpeza das orelhas uma ou duas vezes por mês. A WebMD diz que precisam de quase duas horas de exercício por dia e que não são uma boa escolha para quem passa muitas horas fora de casa; recomenda escovar os dentes todos os dias e dar banho uma vez por mês.",
+      ],
+      sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
+    },
+    finnish_lapphund: {
+      aka: "Finnish Lapphund, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, Lapphund finlandês",
+      text: [
+        "O cão-finlandês-da-lapónia (Finnish Lapphund, Suomenlapinkoira) é um cão de pastoreio e de guarda originário da Finlândia, usado inicialmente para guardar renas; a FCI inclui-o no Grupo 5, entre os cães de guarda e de pastoreio nórdicos. O padrão da FCI descreve-o como um cão de porte abaixo do médio, inteligente, corajoso, calmo e dócil, amigável e fiel, com pelo de cobertura comprido, áspero e abundante, sobre um subpelo macio e denso; admite todas as cores. O padrão indica uma altura ideal de 49 cm nos machos e 44 cm nas fêmeas, com uma tolerância de 3 cm, mas não dá o peso; a PetMD e a WebMD indicam 33–53 libras (cerca de 15–24 kg). Um cão deste porte atinge o peso adulto por volta dos 12–15 meses. O Royal Kennel Club indica uma esperança de vida de mais de 12 anos e a PetMD e a WebMD de 12–15 anos.",
+        "O Royal Kennel Club recomenda até 1 hora de exercício por dia e cuidados com o pelo uma vez por semana. Indica que a raça larga pelo e se adapta a uma casa pequena com um jardim pequeno ou médio, e inclui-a na categoria 1 do Breed Watch. A WebMD diz que os lappies são bons com crianças, por serem uma raça de companhia da família, e que as unhas devem ser cortadas uma vez por mês. A PetMD diz que gostam muito de companhia, ladram bastante, só precisam de banho uma vez por mês e dão-se bem com pessoas de todas as idades se forem socializados em cachorros; refere a displasia da anca e do cotovelo e a atrofia progressiva da retina como problemas a conhecer.",
+      ],
+      sources: ["S1003", "S1004", "S1006", "S1007", "S10"],
+    },
   },
 };
 
