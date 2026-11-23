@@ -1646,6 +1646,30 @@ const fi: RegistryCopy = {
       ],
       sources: ["S312", "S313", "S830", "S832", "S10"],
     },
+    norfolk_terrier: {
+      aka: "Norfolk, Norfolk terrier, norfolkinterrieri",
+      text: [
+        "Norfolkinterrieri on Isosta-Britanniasta kotoisin oleva, terriereistä pienimpiin kuuluva rotu. FCI sijoittaa sen ryhmään 3, pienten terrierien joukkoon. FCI:n rotumääritelmän mukaan se on matala, tarmokas, tiivis ja vahva pieni koira, joka on kokoonsa nähden ”pieni piru” ja luonteeltaan herttainen, valpas ja pelkäämätön. Turkki on kova, karkea ja suora, ja keskikokoiset V-muotoiset korvat taittuvat eteenpäin poskea vasten. Värit ovat kaikki punaisen ja vehnänvärisen sävyt, musta ja ruskea tai grizzle. Rotumääritelmä antaa ihannesäkäkorkeudeksi 25 cm mutta ei painoa; UKC:n rotumääritelmä ilmoittaa painoksi 11–12 paunaa (noin 5–5,4 kg) ja PDSA 5–5,5 kg. Tämänkokoinen koira saavuttaa yleensä aikuispainonsa 9–12 kuukauden iässä. The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta ja Woodgreen 12–15 vuotta.",
+        "The Royal Kennel Club suosittelee enintään tunnin liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa. Sen mukaan rotu karvaa ja voi asua kerrostaloasunnossa. Rotu kuuluu sen Breed Watch -luokkaan 1, eikä ennen jalostusta suositella mitään terveystarkastuksia. PDSA:n mukaan kova turkki pitää kammata pari kertaa viikossa ja trimmata kolme tai neljä kertaa vuodessa, ja norfolkinterrierit rakastavat kaivamista. Woodgreen kuvaa ne lempeiksi ja kärsivällisiksi lasten kanssa, aina valvotusti. Sen mukaan ne eivät viihdy pitkään yksin ja voivat olla taitavia karkureita, joten ne tarvitsevat aidan, josta ne eivät pääse karkaamaan. Niillä on voimakas saalisvietti, joten pienet lemmikit, kuten kanit tai marsut, eivät välttämättä ole turvassa niiden seurassa.",
+      ],
+      sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
+    },
+    belgian_sheepdog: {
+      aka: "Groenendael, Belgian Shepherd Groenendael, Belgian Shepherd Dog (Groenendael), Belgian Groenendael, belgianpaimenkoira groenendael",
+      text: [
+        "Belgianpaimenkoira groenendael on belgianpaimenkoiran pitkäkarvainen, musta muunnos Belgiasta. FCI tunnistaa yhden belgianpaimenkoirarodun, jolla on neljä muunnosta, ja sijoittaa sen ryhmään 1, paimenkoirien joukkoon. FCI:n rotumääritelmän mukaan se on sopusuhtainen koira, jossa yhdistyvät eleganssi ja voima. Korvat ovat melko pienet, korkealle kiinnittyneet ja pystyt, ja pitkä, sileä turkki on kaulalla ja eturinnassa vielä pidempää. Groenendaelilla sallitaan vain yhtenäinen musta väri. Säkäkorkeus on noin 62 cm uroksilla ja 58 cm nartuilla ja paino noin 25–30 kg uroksilla ja 20–25 kg nartuilla. Tämänkokoinen koira on täysikasvuinen noin 12–15 kuukauden iässä (PetMD:n kokoluokka). The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta ja PetMD sekä WebMD 12–14 vuotta.",
+        "The Royal Kennel Club kuvaa rodun valppaaksi, varautuneeksi ja erittäin älykkääksi, työhaluiseksi koiraksi. Se suosittelee yli 2 tuntia liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa. Sen mukaan rotu karvaa ja sopii isoon taloon, jossa on iso piha. Rotu kuuluu sen Breed Watch -luokkaan 1. PetMD:n mukaan belgianpaimenkoirat kiintyvät ihmisiinsä tiiviisti ja tarvitsevat paljon liikuntaa ja henkistä virikettä. Ne saattavat yrittää paimentaa lapsia ja kissoja. PetMD suosittelee varhaista sosiaalistamista, viikoittaista harjausta ja korvien puhdistusta kerran tai kahdesti kuukaudessa. WebMD:n mukaan ne tarvitsevat lähes kaksi tuntia liikuntaa päivässä, eivätkä sovi ihmisille, jotka ovat pitkiä päiviä poissa kotoa. WebMD suosittelee päivittäistä hampaiden harjausta ja kuukausittaista kylpyä.",
+      ],
+      sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
+    },
+    finnish_lapphund: {
+      aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
+      text: [
+        "Suomenlapinkoira (englanniksi Finnish Lapphund tai Finnish Lapponian Dog) on Suomesta kotoisin oleva paimennus- ja vartiokoira, jota käytettiin alun perin porojen paimentamiseen. FCI sijoittaa sen ryhmään 5, pohjoisten vartio- ja paimenkoirien joukkoon. FCI:n rotumääritelmän mukaan se on keskikokoa pienempi, älykäs, rohkea, rauhallinen ja tottelevainen, ystävällinen ja uskollinen. Peitinkarva on runsas, pitkä ja karkea, ja sen alla on pehmeä, tiheä aluskarva. Kaikki värit sallitaan. Rotumääritelmä antaa ihannesäkäkorkeudeksi 49 cm uroksilla ja 44 cm nartuilla, sallittu poikkeama on 3 cm, mutta ei painoa. PetMD ja WebMD ilmoittavat painoksi 33–53 paunaa (noin 15–24 kg), ja tämänkokoinen koira saavuttaa yleensä aikuispainonsa 12–15 kuukauden iässä. The Royal Kennel Club ilmoittaa eliniäksi yli 12 vuotta ja PetMD sekä WebMD 12–15 vuotta.",
+        "The Royal Kennel Club suosittelee enintään tunnin liikuntaa päivässä ja turkinhoitoa kerran viikossa. Sen mukaan rotu karvaa ja sopii pieneen taloon, jossa on pieni tai keskikokoinen piha. Rotu kuuluu sen Breed Watch -luokkaan 1. WebMD:n mukaan lappiet sopivat hyvin lasten kanssa, koska ne ovat perheen seurakoiria, ja niiden kynnet pitää leikata kerran kuukaudessa. PetMD:n mukaan ne kaipaavat seuraa, ovat ahkeria haukkujia ja tarvitsevat kylvyn vain kuukausittain. Pentuna sosiaalistettuina ne tulevat toimeen kaikenikäisten ihmisten kanssa. PetMD mainitsee lonkka- ja kyynärniveldysplasian sekä etenevän verkkokalvon surkastuman sairauksina, jotka kannattaa tuntea.",
+      ],
+      sources: ["S1003", "S1004", "S1006", "S1007", "S10"],
+    },
     toy_fox_terrier: {
       aka: "American Toy Terrier, Amertoy, TFT",
       text: [

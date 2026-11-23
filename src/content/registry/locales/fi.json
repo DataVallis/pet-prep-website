@@ -1264,6 +1264,16 @@
         "Belgian Tervuren"
       ]
     },
+    "belgian_sheepdog": {
+      "name": "Belgianpaimenkoira groenendael",
+      "slug": "belgianpaimenkoira-groenendael",
+      "synonyms": [
+        "Groenendael",
+        "Belgian Shepherd Groenendael",
+        "Belgian Groenendael",
+        "Belgianpaimenkoira (groenendael)"
+      ]
+    },
     "toy_fox_terrier": {
       "name": "Toy Fox Terrier",
       "slug": "toy-fox-terrier",
