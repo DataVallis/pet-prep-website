@@ -1793,6 +1793,30 @@ const hr: RegistryCopy = {
       ],
       sources: ["S690", "S693", "S694", "S10"],
     },
+    norfolk_terrier: {
+      aka: "Norfolk terijer, Norfolk, Norfolk terrier",
+      text: [
+        "Norfolk terijer britanska je pasmina i jedan od najmanjih terijera; FCI ga svrstava u skupinu 3, među terijere malih dimenzija. Standard FCI-ja opisuje niska, žustra, zbijena i snažna psića, „demona“ za svoju veličinu, ljupke naravi, budna i neustrašiva, s tvrdom, žičastom, ravnom dlakom i srednje velikim ušima u obliku slova V koje padaju prema naprijed uz obraz; dopuštene su sve nijanse crvene, pšenična, crna s podpalinom i grizzle. Standard navodi idealnu visinu od 25 cm, ali ne i težinu; standard UKC-a navodi 11–12 funti (oko 5–5,4 kg), a PDSA 5–5,5 kg. Pas te veličine obično odraste s 9–12 mjeseci. Royal Kennel Club navodi životni vijek dulji od 10 godina, a Woodgreen 12–15 godina.",
+        "Royal Kennel Club navodi da joj treba do 1 sat kretanja dnevno i njega dlake više puta tjedno, da se linja i da može živjeti u stanu; svrstava je u 1. kategoriju programa Breed Watch i ne navodi preporučene zdravstvene preglede prije uzgoja. PDSA piše da žičastu dlaku treba češljati otprilike dvaput tjedno i trimati tri do četiri puta godišnje te da norfolk terijeri vole kopati. Woodgreen ih opisuje kao nježne i strpljive s djecom, uvijek uz nadzor, i piše da ne vole dugo ostajati sami, da znaju bježati pa im treba ograda iz koje ne mogu pobjeći te da imaju jak lovački nagon, pa manji ljubimci poput kunića ili zamoraca uz njih možda nisu sigurni.",
+      ],
+      sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
+    },
+    belgian_sheepdog: {
+      aka: "Belgijski ovčar groenendael, Groenendael, Belgian Shepherd Groenendael, Belgian Shepherd Dog (Groenendael), Belgian Groenendael",
+      text: [
+        "Belgijski ovčar groenendael crna je dugodlaka varijanta belgijskog ovčara, pastirskog psa iz Belgije; FCI belgijskog ovčara vodi kao jednu pasminu s četiri varijante i svrstava je u skupinu 1, među ovčare. Standard FCI-ja opisuje skladno građena psa koji spaja eleganciju i snagu, s prilično malim, visoko postavljenim uspravnim ušima i dugom, glatkom dlakom, duljom oko vrata i prsa; za groenendael dopušta samo jednolično crnu boju. Navodi visinu od oko 62 cm za mužjake i 58 cm za ženke te težinu od oko 25–30 kg za mužjake i 20–25 kg za ženke; pas te veličine odraste s otprilike 12–15 mjeseci (PetMD, prema razredu veličine). Royal Kennel Club navodi životni vijek dulji od 10 godina, a PetMD i WebMD 12–14 godina.",
+        "Royal Kennel Club opisuje budna, oprezna i vrlo inteligentna psa koji voli raditi, preporučuje više od 2 sata kretanja dnevno i njegu dlake više puta tjedno, navodi da se pasmina linja i da joj odgovara velika kuća s velikim vrtom, a svrstava je u 1. kategoriju programa Breed Watch. PetMD piše da se belgijski ovčari jako vežu uz svoje ljude, trebaju puno kretanja i misaonih poticaja te mogu pokušavati „stjerivati“ djecu i mačke; preporučuje ranu socijalizaciju, tjedno četkanje i čišćenje ušiju jednom ili dvaput mjesečno. WebMD navodi da im treba gotovo dva sata kretanja svaki dan i da nisu dobar izbor za ljude koji dugo nisu kod kuće, a preporučuje svakodnevno pranje zubi i kupanje jednom mjesečno.",
+      ],
+      sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
+    },
+    finnish_lapphund: {
+      aka: "Finski laponski pas, Finski lapphund, Finnish Lapphund, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
+      text: [
+        "Finski laponski pas (Suomenlapinkoira) pastirski je i čuvarski pas iz Finske koji se izvorno koristio za čuvanje sobova; FCI ga svrstava u skupinu 5, među nordijske čuvarske i pastirske pse. Standard FCI-ja opisuje psa manjeg od srednje veličine, inteligentna, hrabra, mirna i povodljiva, prijateljska i vjerna, s obilnom, dugom, grubom pokrovnom dlakom i mekom, gustom poddlakom; dopuštene su sve boje. Navodi idealnu visinu od 49 cm za mužjake i 44 cm za ženke, uz toleranciju od 3 cm, ali ne i težinu; PetMD i WebMD navode 33–53 funti (oko 15–24 kg), a pas te veličine obično odraste s 12–15 mjeseci. Royal Kennel Club navodi životni vijek dulji od 12 godina, a PetMD i WebMD 12–15 godina.",
+        "Royal Kennel Club navodi da joj treba do 1 sat kretanja dnevno i njega dlake jednom tjedno, da se linja i da joj odgovara mala kuća s malim ili srednje velikim vrtom; svrstava je u 1. kategoriju programa Breed Watch. WebMD piše da su finski laponski psi dobri s djecom jer su obiteljski psi i da im nokte treba podrezivati jednom mjesečno. PetMD navodi da jako vole društvo, da su skloni lajanju, da ih je dovoljno kupati jednom mjesečno i da se mogu slagati s ljudima svih dobi ako su kao štenad socijalizirani; kao bolesti koje vrijedi poznavati navodi displaziju kuka i lakta te progresivnu atrofiju mrežnice.",
+      ],
+      sources: ["S1003", "S1004", "S1006", "S1007", "S10"],
+    },
   },
 };
 
