@@ -16,7 +16,7 @@ type Fci = { number: number; group: number; origin: string };
 const PROPER_START = /^(Maine Coon|Chesapeake|Jack Russell)\b/;
 const mid = (name: string) => (PROPER_START.test(name) ? name : name.charAt(0).toLocaleLowerCase("sl") + name.slice(1));
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi", 10: "hrti" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turčija", MG: "Madagaskar", AF: "Afganistan", NO: "Norveška" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turčija", MG: "Madagaskar", AF: "Afganistan", NO: "Norveška", FI: "Finska" };
 
 const sl: RegistryCopy = {
   mistakes: {
@@ -388,6 +388,7 @@ const sl: RegistryCopy = {
       dna_sma: "Test DNK za spinalno mišično atrofijo (SMA)",
       dna_pk_def: "Test DNK za pomanjkanje piruvat-kinaze (PK def)",
       hcm_negative: "Vzrejne mačke morajo biti HCM negativne (bolezen srca: hipertrofična kardiomiopatija)",
+      dna_gsd2: "Test DNK za bolezen kopičenja glikogena tipa II (GSD II, Pompejeva bolezen)",
       dna_gsd4: "Test DNK za bolezen kopičenja glikogena tipa IV (GSD IV)",
       dna_pra_b: "Test DNK za progresivno atrofijo mrežnice pri bengalski mački (PRA-b)",
       dna_jlpp: "Test DNK za juvenilno paralizo grla in polinevropatijo (JLPP)",
@@ -909,6 +910,15 @@ const sl: RegistryCopy = {
         "Royal Kennel Club navaja do 1 uro gibanja na dan, česanje enkrat na teden, dlako, ki izpada, ter veliko hišo z vrtom; pasmo uvršča v 3. kategorijo programa Breed Watch, PDSA pa piše, da se zaradi odvečne kože na obrazu pojavljajo težave z vekami, kot sta entropij in ektropij. PDSA napolitanske mastife opisuje kot zveste, predane pse, ki uživajo v družinskem življenju, in poudarja, da je treba kožne gube čistiti vsak dan. PetMD piše, da se odlično razumejo z družinami in otroki, a jih ne smemo pustiti samih z majhnim otrokom, da se močno slinijo in da sta socializacija in učenje s pozitivno spodbudo pomembna od malih nog.",
       ],
       sources: ["S993", "S994", "S995", "S996", "S10"],
+    },
+
+    finnish_lapphund: {
+      aka: "finski laponski pes, finski lapphund, laponski pes, lapinkoira, suomenlapinkoira, Finnish Lapphund, Finnish Lapponian Dog",
+      text: [
+        "Finski laponski pes (Suomenlapinkoira) je pastirski pes in čuvaj s Finske, ki so ga nekoč uporabljali pri reji severnih jelenov; FCI ga uvršča v 5. skupino med nordijske čuvaje in pastirske pse. Standard FCI ga opisuje kot manjšega od srednje velikega, inteligentnega, pogumnega, mirnega in vodljivega, prijaznega in zvestega, z bogato, dolgo in trdo krovno dlako ter mehko, gosto podlanko; dovoljene so vse barve. Standard navaja idealno višino 49 cm za samce in 44 cm za samice z odstopanjem 3 cm, teže pa ne; PetMD in WebMD navajata 33–53 funtov (približno 15–24 kg), pes te velikosti pa doseže odraslo težo navadno pri 12–15 mesecih. Royal Kennel Club navaja življenjsko dobo več kot 12 let, PetMD in WebMD 12–15 let.",
+        "Royal Kennel Club navaja do 1 uro gibanja na dan, česanje enkrat na teden, dlako, ki izpada, ter manjšo hišo z majhnim ali srednje velikim vrtom; pasmo uvršča v 1. kategorijo programa Breed Watch. WebMD piše, da se finski laponski psi dobro razumejo z otroki, ker so družinski spremljevalci, in da jim je treba kremplje striči enkrat na mesec. PetMD piše, da hrepenijo po družbi, da radi lajajo, da jih je dovolj kopati enkrat na mesec in da se, če so socializirani kot mladički, razumejo z ljudmi vseh starosti; med težavami, ki jih je dobro poznati, navaja displazijo kolkov in komolcev ter progresivno atrofijo mrežnice.",
+      ],
+      sources: ["S1003", "S1004", "S1006", "S1007", "S10"],
     },
 
     norwegian_elkhound: {

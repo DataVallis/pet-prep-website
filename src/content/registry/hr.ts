@@ -62,7 +62,7 @@ const fciGroups: Record<number, string> = {
   9: "psi za društvo i patuljasti psi",
   10: "hrtovi",
 };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francuska", DE: "Njemačka", US: "SAD", CU: "Kuba", CH: "Švicarska", IT: "Italija", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Meksiko", BE: "Belgija", HU: "Mađarska", JP: "Japan", ZA: "Južnoafrička Republika", "BE-FR": "Belgija / Francuska", PT: "Portugal", CA: "Kanada", HR: "Hrvatska", AU: "Australija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turska", MG: "Madagaskar", AF: "Afganistan", NO: "Norveška" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francuska", DE: "Njemačka", US: "SAD", CU: "Kuba", CH: "Švicarska", IT: "Italija", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Meksiko", BE: "Belgija", HU: "Mađarska", JP: "Japan", ZA: "Južnoafrička Republika", "BE-FR": "Belgija / Francuska", PT: "Portugal", CA: "Kanada", HR: "Hrvatska", AU: "Australija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turska", MG: "Madagaskar", AF: "Afganistan", NO: "Norveška", FI: "Finska" };
 /** "sat" in the nominative after a number: 1 sat, 2 sata, 5 sati, 1,5 sata. */
 const hours = (n: number) => form(n, "sat", "sata", "sati");
 /** "sat" in the genitive after "od" / "u roku od": od 1 sata, od 2 sata, od 5 sati. */
@@ -421,6 +421,7 @@ const hr: RegistryCopy = {
       dna_sma: "DNK test na spinalnu mišićnu atrofiju (SMA)",
       dna_pk_def: "DNK test na nedostatak piruvat-kinaze (PK def)",
       hcm_negative: "Mačke za uzgoj moraju biti HCM-negativne (bolest srca: hipertrofična kardiomiopatija)",
+      dna_gsd2: "DNK test na bolest nakupljanja glikogena tipa II (GSD II, Pompeova bolest)",
       dna_gsd4: "DNK test na bolest nakupljanja glikogena tipa IV (GSD IV)",
       dna_pra_b: "DNK test na progresivnu atrofiju mrežnice kod bengalske mačke (PRA-b)",
       dna_jlpp: "DNK test na juvenilnu paralizu grkljana i polineuropatiju (JLPP)",

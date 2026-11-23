@@ -16,7 +16,7 @@ const um = (name: string) => `um ${rn(name)}`;
 type Fci = { number: number; group: number; origin: string };
 /** Portuguese FCI group names (CPC nomenclature), in running-text form. */
 const fciGroups: Record<number, string> = { 1: "cães de pastor e boieiros (exceto boieiros suíços)", 2: "cães do tipo pinscher e schnauzer – molossoides – cães de montanha e boieiros suíços", 3: "terriers", 4: "teckels", 5: "cães do tipo spitz e do tipo primitivo", 6: "sabujos, cães de pista de sangue e raças semelhantes", 7: "cães de parar", 8: "cães levantadores e cobradores de caça – cães de água", 9: "cães de companhia", 10: "lebréus" };
-const origins: Record<string, string> = { GB: "Grã-Bretanha", FR: "França", DE: "Alemanha", US: "Estados Unidos", CU: "Cuba", CH: "Suíça", IT: "Itália", "CN-XZ": "Tibete (China)", CN: "China", MX: "México", BE: "Bélgica", HU: "Hungria", JP: "Japão", ZA: "África do Sul", "BE-FR": "Bélgica / França", PT: "Portugal", CA: "Canadá", HR: "Croácia", AU: "Austrália", RU: "Rússia", IE: "Irlanda", "AF-C": "África Central", TR: "Turquia", MG: "Madagáscar", AF: "Afeganistão", NO: "Noruega" };
+const origins: Record<string, string> = { GB: "Grã-Bretanha", FR: "França", DE: "Alemanha", US: "Estados Unidos", CU: "Cuba", CH: "Suíça", IT: "Itália", "CN-XZ": "Tibete (China)", CN: "China", MX: "México", BE: "Bélgica", HU: "Hungria", JP: "Japão", ZA: "África do Sul", "BE-FR": "Bélgica / França", PT: "Portugal", CA: "Canadá", HR: "Croácia", AU: "Austrália", RU: "Rússia", IE: "Irlanda", "AF-C": "África Central", TR: "Turquia", MG: "Madagáscar", AF: "Afeganistão", NO: "Noruega", FI: "Finlândia" };
 /** Age-like value after a preposition: «até aos 12 meses», «até ao 1 ano», «a partir dos 10 anos». */
 const art = (t: string, sing: string, pl: string) => (/^1[\s  ]/.test(t) ? sing : pl);
 
@@ -366,6 +366,7 @@ const pt: RegistryCopy = {
       dna_sma: "Teste de ADN da atrofia muscular espinal (SMA)",
       dna_pk_def: "Teste de ADN da deficiência de piruvato quinase (PK def)",
       hcm_negative: "Os gatos reprodutores devem ter resultado negativo para a HCM (doença cardíaca: cardiomiopatia hipertrófica)",
+      dna_gsd2: "Teste de ADN da glicogenose tipo II (GSD II, doença de Pompe)",
       dna_gsd4: "Teste de ADN da glicogenose tipo IV (GSD IV)",
       dna_pra_b: "Teste de ADN da atrofia progressiva da retina do bengal (PRA-b)",
       dna_jlpp: "Teste de ADN da paralisia laríngea juvenil e polineuropatia (JLPP)",

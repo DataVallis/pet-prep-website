@@ -1378,6 +1378,24 @@
         "fawn": "Leonado",
         "deep-fawn": "Leonado oscuro"
       }
+    },
+    "finnish_lapphund": {
+      "name": "Perro finlandés de Laponia",
+      "slug": "perro-finlandes-de-laponia",
+      "synonyms": [
+        "Finnish Lapphund",
+        "Lapphund finlandés",
+        "Suomenlapinkoira",
+        "Lapinkoira"
+      ],
+      "colours": {
+        "black-tan": "Negro y fuego",
+        "black": "Negro",
+        "brown": "Marrón",
+        "wolf-sable": "Sable lobo",
+        "sable": "Sable",
+        "cream": "Crema"
+      }
     }
   },
   "suitability_labels": {

@@ -57,7 +57,7 @@ const fciGroups: Record<number, string> = {
   9: "selskabshunde",
   10: "mynder",
 };
-const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrig", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien/Frankrig", PT: "Portugal", CA: "Canada", HR: "Kroatien", AU: "Australien", RU: "Rusland", IE: "Irland", "AF-C": "Centralafrika", TR: "Tyrkiet", MG: "Madagaskar", AF: "Afghanistan", NO: "Norge" };
+const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrig", DE: "Tyskland", US: "USA", CU: "Cuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexico", BE: "Belgien", HU: "Ungarn", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien/Frankrig", PT: "Portugal", CA: "Canada", HR: "Kroatien", AU: "Australien", RU: "Rusland", IE: "Irland", "AF-C": "Centralafrika", TR: "Tyrkiet", MG: "Madagaskar", AF: "Afghanistan", NO: "Norge", FI: "Finland" };
 const hours = (n: number) => s(n, "time", "timer");
 const times = (n: number) => (n === 1 ? "én gang" : `${n} gange`);
 
@@ -409,6 +409,7 @@ const da: RegistryCopy = {
       dna_sma: "DNA-test for spinal muskelatrofi (SMA)",
       dna_pk_def: "DNA-test for pyruvatkinasemangel (PK def)",
       hcm_negative: "Avlskatte skal være HCM-negative (hjertesygdommen hypertrofisk kardiomyopati)",
+      dna_gsd2: "DNA-test for glykogenoplagringssygdom type II (GSD II, Pompes sygdom)",
       dna_gsd4: "DNA-test for glykogenoplagringssygdom type IV (GSD IV)",
       dna_pra_b: "DNA-test for progressiv retinal atrofi hos bengal (PRA-b)",
       dna_jlpp: "DNA-test for juvenil larynxlammelse og polyneuropati (JLPP)",

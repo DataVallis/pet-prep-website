@@ -1375,6 +1375,24 @@
         "fawn": "Fulvo",
         "deep-fawn": "Fulvo scuro (cervo)"
       }
+    },
+    "finnish_lapphund": {
+      "name": "Cane finnico della Lapponia",
+      "slug": "cane-finnico-della-lapponia",
+      "synonyms": [
+        "Finnish Lapphund",
+        "Lapphund finlandese",
+        "Suomenlapinkoira",
+        "Lapinkoira"
+      ],
+      "colours": {
+        "black-tan": "Nero e focato",
+        "black": "Nero",
+        "brown": "Marrone",
+        "wolf-sable": "Grigio lupo",
+        "sable": "Fulvo carbonato",
+        "cream": "Crema"
+      }
     }
   },
   "suitability_labels": {

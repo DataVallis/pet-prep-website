@@ -56,7 +56,7 @@ const fciGroups: Record<number, string> = {
   9: "sällskapshundar",
   10: "vinthundar",
 };
-const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrike", DE: "Tyskland", US: "USA", CU: "Kuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexiko", BE: "Belgien", HU: "Ungern", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien / Frankrike", PT: "Portugal", CA: "Kanada", HR: "Kroatien", AU: "Australien", RU: "Ryssland", IE: "Irland", "AF-C": "Centralafrika", TR: "Turkiet", MG: "Madagaskar", AF: "Afghanistan", NO: "Norge" };
+const origins: Record<string, string> = { GB: "Storbritannien", FR: "Frankrike", DE: "Tyskland", US: "USA", CU: "Kuba", CH: "Schweiz", IT: "Italien", "CN-XZ": "Tibet (Kina)", CN: "Kina", MX: "Mexiko", BE: "Belgien", HU: "Ungern", JP: "Japan", ZA: "Sydafrika", "BE-FR": "Belgien / Frankrike", PT: "Portugal", CA: "Kanada", HR: "Kroatien", AU: "Australien", RU: "Ryssland", IE: "Irland", "AF-C": "Centralafrika", TR: "Turkiet", MG: "Madagaskar", AF: "Afghanistan", NO: "Norge", FI: "Finland" };
 const hours = (n: number) => s(n, "timme", "timmar");
 
 const sv: RegistryCopy = {
@@ -406,6 +406,7 @@ const sv: RegistryCopy = {
       dna_sma: "DNA-test för spinal muskelatrofi (SMA)",
       dna_pk_def: "DNA-test för pyruvatkinasbrist (PK def)",
       hcm_negative: "Avelskatter måste vara HCM-negativa (hjärtsjukdomen hypertrofisk kardiomyopati)",
+      dna_gsd2: "DNA-test för glykogeninlagringssjukdom typ II (GSD II, Pompes sjukdom)",
       dna_gsd4: "DNA-test för glykogeninlagringssjukdom typ IV (GSD IV)",
       dna_pra_b: "DNA-test för progressiv retinal atrofi hos bengal (PRA-b)",
       dna_jlpp: "DNA-test för juvenil larynxförlamning och polyneuropati (JLPP)",

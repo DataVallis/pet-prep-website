@@ -1571,6 +1571,23 @@
         "fawn": "Jelenje žuta (fawn)",
         "deep-fawn": "Tamna jelenje žuta"
       }
+    },
+    "finnish_lapphund": {
+      "name": "Finski laponski pas",
+      "slug": "finski-laponski-pas",
+      "synonyms": [
+        "Finnish Lapphund",
+        "Suomenlapinkoira",
+        "Lapinkoira"
+      ],
+      "colours": {
+        "black-tan": "Crna s paležom",
+        "black": "Crna",
+        "brown": "Smeđa",
+        "wolf-sable": "Vučje siva",
+        "sable": "Sable",
+        "cream": "Krem"
+      }
     }
   },
   "suitability_labels": {

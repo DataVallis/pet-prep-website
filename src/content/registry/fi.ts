@@ -73,7 +73,7 @@ const fciGroups: Record<number, string> = {
   9: "Seura- ja kääpiökoirat",
   10: "Vinttikoirat",
 };
-const origins: Record<string, string> = { GB: "Iso-Britannia", FR: "Ranska", DE: "Saksa", US: "Yhdysvallat", CU: "Kuuba", CH: "Sveitsi", IT: "Italia", "CN-XZ": "Tiibet (Kiina)", CN: "Kiina", MX: "Meksiko", BE: "Belgia", HU: "Unkari", JP: "Japani", ZA: "Etelä-Afrikka", "BE-FR": "Belgia / Ranska", PT: "Portugali", CA: "Kanada", HR: "Kroatia", AU: "Australia", RU: "Venäjä", IE: "Irlanti", "AF-C": "Keski-Afrikka", TR: "Turkki", MG: "Madagaskar", AF: "Afganistan", NO: "Norja" };
+const origins: Record<string, string> = { GB: "Iso-Britannia", FR: "Ranska", DE: "Saksa", US: "Yhdysvallat", CU: "Kuuba", CH: "Sveitsi", IT: "Italia", "CN-XZ": "Tiibet (Kiina)", CN: "Kiina", MX: "Meksiko", BE: "Belgia", HU: "Unkari", JP: "Japani", ZA: "Etelä-Afrikka", "BE-FR": "Belgia / Ranska", PT: "Portugali", CA: "Kanada", HR: "Kroatia", AU: "Australia", RU: "Venäjä", IE: "Irlanti", "AF-C": "Keski-Afrikka", TR: "Turkki", MG: "Madagaskar", AF: "Afganistan", NO: "Norja", FI: "Suomi" };
 const hours = (n: number) => s(n, "tunti", "tuntia");
 /** "kerran", "2 kertaa" (adverbial: kerran päivässä, 3 kertaa viikossa). */
 const times = (n: number) => (n === 1 ? "kerran" : `${n}${NB}kertaa`);
@@ -459,6 +459,7 @@ const fi: RegistryCopy = {
       dna_sma: "DNA-testi: spinaalinen lihasatrofia (SMA)",
       dna_pk_def: "DNA-testi: pyruvaattikinaasin puutos (PK def)",
       hcm_negative: "Jalostuskissojen on oltava HCM-negatiivisia (sydänsairaus: hypertrofinen kardiomyopatia)",
+      dna_gsd2: "DNA-testi: glykogeenin kertymäsairaus tyyppi II (GSD II, Pompen tauti)",
       dna_gsd4: "DNA-testi: glykogeenin kertymäsairaus tyyppi IV (GSD IV)",
       dna_pra_b: "DNA-testi: bengalien etenevä verkkokalvon surkastuma (PRA-b)",
       dna_jlpp: "DNA-testi: nuoruusiän kurkunpään halvaus ja polyneuropatia (JLPP)",
