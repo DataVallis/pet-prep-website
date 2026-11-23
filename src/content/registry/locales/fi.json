@@ -1508,6 +1508,19 @@
         "sable": "Soopeli",
         "cream": "Kerma"
       }
+    },
+    "norfolk_terrier": {
+      "name": "Norfolkinterrieri",
+      "slug": "norfolkinterrieri",
+      "synonyms": [
+        "Norfolk terrier"
+      ],
+      "colours": {
+        "red": "Punainen",
+        "wheaten": "Vehnänvärinen",
+        "black-tan": "Musta ja ruskea",
+        "grizzle": "Grizzle"
+      }
     }
   },
   "suitability_labels": {

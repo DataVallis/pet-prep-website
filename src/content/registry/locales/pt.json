@@ -1398,6 +1398,19 @@
         "sable": "Zibelina",
         "cream": "Creme"
       }
+    },
+    "norfolk_terrier": {
+      "name": "Norfolk terrier",
+      "slug": "norfolk-terrier",
+      "synonyms": [
+        "Norfolk"
+      ],
+      "colours": {
+        "red": "Vermelho",
+        "wheaten": "Trigo",
+        "black-tan": "Preto e fogo",
+        "grizzle": "Grizzle"
+      }
     }
   },
   "suitability_labels": {

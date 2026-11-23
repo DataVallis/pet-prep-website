@@ -1545,6 +1545,19 @@
         "sable": "Sobolowy",
         "cream": "Kremowy"
       }
+    },
+    "norfolk_terrier": {
+      "name": "Norfolk terrier",
+      "slug": "norfolk-terrier",
+      "synonyms": [
+        "Norfolk"
+      ],
+      "colours": {
+        "red": "Rudy",
+        "wheaten": "Pszeniczny",
+        "black-tan": "Czarny z podpalaniem",
+        "grizzle": "Grizzle"
+      }
     }
   },
   "suitability_labels": {

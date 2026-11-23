@@ -1377,6 +1377,19 @@
         "sable": "Zobel",
         "cream": "Creme"
       }
+    },
+    "norfolk_terrier": {
+      "name": "Norfolk Terrier",
+      "slug": "norfolk-terrier",
+      "synonyms": [
+        "Norfolk"
+      ],
+      "colours": {
+        "red": "Rot",
+        "wheaten": "Weizenfarben",
+        "black-tan": "Schwarz mit Brand",
+        "grizzle": "Grizzle"
+      }
     }
   },
   "suitability_labels": {

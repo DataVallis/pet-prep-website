@@ -912,6 +912,15 @@ const sl: RegistryCopy = {
       sources: ["S993", "S994", "S995", "S996", "S10"],
     },
 
+    norfolk_terrier: {
+      aka: "norfolk terier, norfolški terier, norfolk, Norfolk Terrier",
+      text: [
+        "Norfolk terier je eden najmanjših terierjev in prihaja iz Velike Britanije; FCI ga uvršča v 3. skupino med male terierje. Standard FCI ga opisuje kot nizkega, živahnega, kompaktnega in močnega psička, »vraga« za svojo velikost, ljubeznive narave, pozornega in neustrašnega, s trdo, žimasto, ravno dlako ter srednje velikimi ušesi v obliki črke V, ki visijo naprej tik ob licih; barve so vsi odtenki rdeče, pšenično rumena, črno-rjava ali sivkasta (grizzle). Standard navaja idealno višino 25 cm, teže pa ne; standard UKC navaja 11 do 12 funtov (približno 5–5,4 kg), PDSA pa 5–5,5 kg. Pes te velikosti doseže odraslo težo navadno pri 9–12 mesecih. Royal Kennel Club navaja življenjsko dobo več kot 10 let, Woodgreen pa 12–15 let.",
+        "Royal Kennel Club navaja do 1 uro gibanja na dan, česanje večkrat na teden in dlako, ki izpada, ter piše, da lahko pasma živi v stanovanju; uvršča jo v 1. kategorijo programa Breed Watch in ne navaja priporočenih zdravstvenih pregledov pred vzrejo. PDSA piše, da je žimasto dlako treba česati nekajkrat na teden in trimati tri- do štirikrat na leto ter da norfolki radi kopljejo. Woodgreen piše, da so nežni in potrpežljivi z otroki, vedno pod nadzorom, da ne marajo biti dolgo sami, da znajo pobegniti in potrebujejo ograjo, skozi katero ne morejo uiti, ter da imajo močan lovski nagon, zato manjše živali, kot so kunci ali morski prašički, ob njih morda niso varne.",
+      ],
+      sources: ["S1010", "S1011", "S1012", "S1013", "S1016", "S10"],
+    },
+
     finnish_lapphund: {
       aka: "finski laponski pes, finski lapphund, laponski pes, lapinkoira, suomenlapinkoira, Finnish Lapphund, Finnish Lapponian Dog",
       text: [

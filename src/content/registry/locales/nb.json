@@ -1474,6 +1474,19 @@
         "sable": "Sobel",
         "cream": "Krem"
       }
+    },
+    "norfolk_terrier": {
+      "name": "Norfolk terrier",
+      "slug": "norfolk-terrier",
+      "synonyms": [
+        "Norfolkterrier"
+      ],
+      "colours": {
+        "red": "Rød",
+        "wheaten": "Hvete",
+        "black-tan": "Svart med brune tegn",
+        "grizzle": "Grizzle"
+      }
     }
   },
   "suitability_labels": {
