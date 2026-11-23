@@ -1489,6 +1489,14 @@ const fr: RegistryCopy = {
       ],
       sources: ["S312", "S313", "S830", "S832", "S10"],
     },
+    belgian_sheepdog: {
+      aka: "Groenendael, Belgian Shepherd Groenendael, Belgian Shepherd Dog (Groenendael), Belgian Groenendael, Berger belge Groenendael",
+      text: [
+        "Le Berger belge Groenendael est la variété à poil long et noir du Berger belge, un chien de berger originaire de Belgique. La FCI ne reconnaît qu’une seule race de Berger belge, en quatre variétés, et la classe dans le groupe 1, parmi les chiens de berger. Le standard FCI décrit un chien harmonieusement proportionné, qui allie élégance et puissance, aux oreilles plutôt petites, dressées et attachées haut, et au poil long et lisse, plus long autour du cou et sur l’avant-poitrail. Pour le Groenendael, il n’admet que le noir uni. Il indique une hauteur d’environ 62 cm pour les mâles et 58 cm pour les femelles, et un poids d’environ 25–30 kg pour les mâles et 20–25 kg pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 12 à 15 mois (catégorie de gabarit PetMD). Le Royal Kennel Club donne une espérance de vie de plus de 10 ans, PetMD et WebMD de 12 à 14 ans.",
+        "Le Royal Kennel Club décrit un chien vigilant, méfiant et très intelligent, avec une grande envie de travailler. Il recommande plus de 2 heures d’exercice par jour et un entretien du pelage plus d’une fois par semaine ; selon lui, la race perd ses poils et convient à une grande maison avec un grand jardin. Il la classe en catégorie 1 du programme Breed Watch. PetMD écrit que les Bergers belges Groenendael nouent des liens étroits avec leur famille, ont besoin de beaucoup d’activité physique et de stimulation mentale, et peuvent essayer de rassembler les enfants et les chats. Il recommande une socialisation précoce, un brossage hebdomadaire et un nettoyage des oreilles une à deux fois par mois. WebMD indique qu’ils ont besoin de près de deux heures d’exercice par jour, qu’ils ne conviennent pas aux personnes qui s’absentent de longues heures, et recommande un brossage des dents quotidien et un bain mensuel.",
+      ],
+      sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
+    },
     toy_fox_terrier: {
       aka: "American Toy Terrier, Amertoy, TFT",
       text: [
