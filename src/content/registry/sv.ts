@@ -738,6 +738,314 @@ const sv: RegistryCopy = {
     },
   },
   intros: {
+    keeshond: {
+      aka: "Wolfsspitz, Wolfspitz",
+      text: [
+        "Keeshond är en medelstor spets från Tyskland – wolfspitz-varianten av tysk spets – med lång, utstående päls i grå nyanser, en tjock man och mörka ”glasögon” runt ögonen (FCI-standarden). FCI-standarden anger en mankhöjd på 49 ± 6 cm och PDSA en genomsnittlig vikt på 16–20 kg. En hund av den här storleken är fullvuxen vid ungefär 12–15 månader (PetMD). PDSA anger en livslängd på över 10 år, VCA 12–14 år.",
+        "Enligt PDSA behöver rasen upp till en timmes motion om dagen, och den tjocka dubbelpälsen behöver skötas varje dag. PDSA beskriver keeshonden som en utmärkt familjehund som kommer överens med familjens andra husdjur och lär sig bra, om du ger den tid och tålamod. VCA beskriver den som lekfull och försiktig med barn och rekommenderar ett bad ungefär en gång i månaden. VCA påpekar också att den fäller mer än genomsnittet och att den tjocka pälsen kan göra att den lätt blir överhettad.",
+      ],
+      sources: ["S246", "S709", "S710", "S10"],
+    },
+    standard_schnauzer: {
+      aka: "Schnauzer, Mittelschnauzer, Standard schnauzer",
+      text: [
+        "Mellanschnauzern kommer från Tyskland; FCI kallar den helt enkelt schnauzer och räknar den till gruppen pinscher och schnauzer. FCI-standarden beskriver en medelstor, stark hund, snarare satt än slank, med sträv, hård och tät päls, hängande öron och naturlig svans. Den anger en mankhöjd på 45–50 cm och en vikt på 14–20 kg för både hanar och tikar; färgerna är peppar och salt samt helsvart. En hund av den här storleken är fullvuxen vid ungefär 12–15 månader (PetMD). Royal Kennel Club anger en livslängd på över 10 år, VCA 12–14 år.",
+        "Royal Kennel Club rekommenderar upp till en timmes motion om dagen och pälsvård mer än en gång i veckan, och säger att rasen passar i ett litet hus med liten eller medelstor trädgård, i stan eller på landet. PDSA beskriver schnauzern som en mild, tålmodig hund som kommer bra överens med barn om den får träffa dem tidigt, och säger att pälsen behöver skötas 2–3 gånger i veckan. VCA påpekar att rasen lär sig snabbt men också blir uttråkad lika snabbt, så den behöver lekar och trick som mental träning. PetMD rekommenderar bad varje månad, kloklippning och rengöring av öronen var eller varannan vecka och ett besök hos en hundfrisör var tredje månad.",
+      ],
+      sources: ["S10", "S711", "S712", "S714", "S715", "S716", "S717"],
+    },
+    english_setter: {
+      aka: "English Setter",
+      text: [
+        "Engelsk setter är en elegant fågelhund från Storbritannien, framavlad för att hitta fågelvilt. FCI-standarden beskriver en medelhög hund med rena linjer och eleganta rörelser, och vit päls med fina färgade prickar, så kallad belton – blå, orange, citrongul eller leverbrun – eller trefärgad. Den anger en mankhöjd på 65–68 cm för hanar och 61–65 cm för tikar, och PDSA anger en genomsnittlig vikt på 22–29 kg. En hund av den här storleken är fullvuxen vid ungefär 15–18 månader (PetMD), och Royal Kennel Club anger en livslängd på över 10 år.",
+        "Royal Kennel Club rekommenderar mer än 2 timmars motion om dagen och pälsvård mer än en gång i veckan. Enligt klubben fäller rasen och passar i ett stort hus med stor trädgård, och den står i Breed Watch-kategori 1. PDSA säger att engelska settrar älskar barn och andra husdjur, vilket gör dem perfekta för familjer, och rekommenderar pälsvård 2–3 gånger i veckan. PetMD föreslår ett bad var sjätte till åttonde vecka och skriver att de inte tycker om att vara ensamma länge; VCA nämner att pälsen behöver klippas och trimmas lite varje månad.",
+      ],
+      sources: ["S730", "S731", "S732", "S733", "S734", "S10"],
+    },
+    dogue_de_bordeaux: {
+      aka: "Bordeauxdogg, Bordeauxmastiff",
+      text: [
+        "Dogue de Bordeaux är en kraftfull molosser från Frankrike. FCI-standarden beskriver en satt, atletisk och imponerande hund som är lugn, balanserad och mycket fäst vid sin ägare, med fin, kort päls i alla nyanser av fawn, från mahogny till isabella. Den anger en mankhöjd på 60–68 cm för hanar och 58–66 cm för tikar och en vikt på minst 50 kg för hanar och minst 45 kg för tikar; PetMD anger 110–145 pund (cirka 50–66 kg) för hanar och 99–120 pund (cirka 45–54 kg) för tikar. En hund av den här storleken är fullvuxen vid ungefär 18–24 månader (PetMD). Källorna är oense om livslängden: enligt PetMD lever de här hundarna oftast bara 5–8 år, medan Royal Kennel Club anger över 10 år.",
+        "Royal Kennel Club rekommenderar upp till en timmes motion om dagen och pälsvård en gång i veckan. Enligt klubben fäller rasen och passar i ett stort hus med stor trädgård, och den står i Breed Watch-kategori 3. PDSA säger att dogue de Bordeaux i regel kommer bra överens med äldre barn, men rekommenderar den inte till familjer med mindre barn eller till förstagångsägare. PDSA varnar också för att rasen dreglar mycket och har en mycket stark jaktinstinkt, och rekommenderar att ansiktsvecken rengörs regelbundet och att det får gå en stund mellan mat och motion. PetMD skriver att den korta nosen kan göra det svårare att andas i varmt väder.",
+      ],
+      sources: ["S755", "S756", "S757", "S759", "S10"],
+    },
+    flat_coated_retriever: {
+      aka: "Flat-coated retriever, Flat coated retriever",
+      text: [
+        "Flatcoated retriever är en pigg och aktiv fågelhund från Storbritannien, framavlad för att apportera vilt. FCI-standarden beskriver en tät, slätt liggande päls med välbehårade ben och svans, enbart i svart eller leverbrunt, och ett optimistiskt, vänligt, självsäkert och godmodigt temperament. Den anger en önskvärd mankhöjd på 59–61,5 cm för hanar och 56,5–59 cm för tikar och en önskvärd vikt på 27–36 kg för hanar och 25–32 kg för tikar. En hund av den här storleken är fullvuxen vid ungefär 15–18 månader (PetMD). Royal Kennel Club anger en livslängd på under 10 år, medan en brittisk studie från 2024, sammanställd av Dogs Trust, fann en median på 11,7 år.",
+        "Royal Kennel Club rekommenderar mer än 2 timmars motion om dagen och pälsvård mer än en gång i veckan. Enligt klubben fäller rasen och passar i ett stort hus med stor trädgård, och den står i Breed Watch-kategori 1. PetMD kallar flatcoated retrievers underbara familjehundar som i regel fungerar bra med barn och andra husdjur, särskilt om de introduceras och socialiseras på rätt sätt. PetMD föreslår borstning två gånger i veckan, rengöring av öronen var eller varannan vecka, bad och kloklippning var eller varannan månad och ingen motion strax före eller efter måltid.",
+      ],
+      sources: ["S761", "S762", "S763", "S123", "S10"],
+    },
+    border_terrier: {
+      aka: "Borderterrier",
+      text: [
+        "Border terrier är en liten terrier från Storbritannien, framavlad för arbete. Enligt FCI-standarden är den i grunden en arbetsterrier som kan hålla jämna steg med en häst och som förenar aktivitet med jaktlust. Standarden beskriver en hård, tät täckpäls med tät underull, mörka ögon med skarp blick och små V-formade öron, i rött, vetefärgat, grizzle och tan eller blått och tan. Den anger en vikt på 5,9–7,1 kg för hanar och 5,1–6,4 kg för tikar. En hund av den här storleken är fullvuxen vid ungefär 9–12 månader (PetMD). Royal Kennel Club anger en livslängd på över 12 år, och en brittisk studie från 2024 (McMillan m.fl.) fann en median på 14,2 år.",
+        "Royal Kennel Club rekommenderar upp till en timmes motion om dagen och pälsvård mer än en gång i veckan. Enligt klubben fäller rasen och passar i lägenhet, och den står i Breed Watch-kategori 1. PDSA säger att en väl socialiserad border terrier älskar att umgås med barn i alla åldrar, men rekommenderar tillsyn. PDSA varnar för att den kan få separationsångest om den lämnas ensam. Den har också stark jaktinstinkt och bör inte bo ihop med kaniner, marsvin eller råttor. PDSA rekommenderar borstning ett par gånger i veckan och att låta det gå en stund mellan mat och motion. Woodgreen föreslår ett hem med lite äldre barn.",
+      ],
+      sources: ["S768", "S769", "S770", "S771", "S773", "S10"],
+    },
+    leonberger: {
+      text: [
+        "Leonberger är en stor hund från Tyskland. FCI-standarden beskriver en stor, stark och muskulös men elegant hund med lång, åtliggande päls, hängande öron och välbehårad svans, i lejongult, rött, rödbrunt eller sandfärgat, alltid med svart mask. Den anger en mankhöjd på 72–80 cm för hanar och 65–75 cm för tikar. PDSA anger en genomsnittlig vikt på 30–50 kg för både hanar och tikar och en livslängd på under 10 år. Som jätteras är den fullvuxen vid ungefär 18–24 månader (PetMD, efter storleksklass).",
+        "Royal Kennel Club rekommenderar mer än 2 timmars motion om dagen och ett stort hus med stor trädgård, och PDSA kallar leonbergern en mild jätte och en utmärkt familjehund. Woodgreen rekommenderar borstning 2–3 gånger i veckan och säger att tidig träning och socialisering är avgörande med tanke på storleken. Woodgreen påpekar också att den har svårt att vara ensam långa stunder. En brittisk studie från 2024 (McMillan m.fl., sammanställd av Dogs Trust) anger en medianlivslängd på 10,0 år.",
+      ],
+      sources: ["S783", "S781", "S10", "S780", "S784", "S123"],
+    },
+    beauceron: {
+      aka: "Berger de Beauce",
+      text: [
+        "Beauceron, eller berger de Beauce, är en stor fransk vallhund. FCI-standarden beskriver en stor, solid, tålig, kraftfull och muskulös hund som ändå inte är tung, med kort, tjock päls, en svans med en lätt J-formad krok och dubbla sporrar på bakbenen, i svart och tan eller harlekin. Den anger en mankhöjd på 65–70 cm för hanar och 61–68 cm för tikar. AKC:s vikttabell anger 70–110 pund (cirka 32–50 kg) för både hanar och tikar. En hund i den här storleksklassen är fullvuxen vid ungefär 15–18 månader (PetMD). Royal Kennel Club anger en livslängd på över 10 år, PetMD 10–12 år.",
+        "Royal Kennel Club kallar beauceronen lugn och självsäker, en lojal kamrat och vakthund. Klubben rekommenderar mer än 2 timmars motion om dagen, pälsvård mer än en gång i veckan och ett stort hus med stor trädgård, och rasen står i Breed Watch-kategori 1. Enligt PetMD kan den fungera bra med små barn och andra hundar om introduktionerna sker under uppsikt. Den kan vara reserverad mot nya människor, så valpen bör få träffa nya människor tidigt. Helst vill den vara med sin familj så mycket som möjligt. PetMD rekommenderar borstning minst en gång i veckan och ingen motion en timme före eller efter måltid.",
+      ],
+      sources: ["S790", "S268", "S10", "S787", "S791"],
+    },
+    bouvier_des_flandres: {
+      aka: "Bouvier, Flanders cattle dog",
+      text: [
+        "Bouvier des Flandres är en boskapshund från Flandern (Belgien och Frankrike). FCI-standarden beskriver en kort, kompakt och kraftfull hund med starka, välmusklade ben och en grov, torr, lätt rufsig päls på cirka 6 cm med mustasch och helskägg. Pälsen är oftast grå, tigrerad eller med svart anlöpning (helsvart godtas också). Standarden anger en mankhöjd på 62–68 cm och en vikt på cirka 35–40 kg för hanar, och 59–65 cm och cirka 27–35 kg för tikar. En hund i den här storleksklassen är fullvuxen vid ungefär 15–18 månader (PetMD). En brittisk studie från 2024 (McMillan m.fl., sammanställd av Dogs Trust) anger en medianlivslängd på 11,3 år.",
+        "Royal Kennel Club kallar bouviern stark och mångsidig, ursprungligen en boskapsvallare. Klubben rekommenderar upp till en timmes motion om dagen, pälsvård varje dag och ett stort hus med stor trädgård, och rasen står i Breed Watch-kategori 1. Enligt PetMD kan den fungera bra med små barn och andra stora hundar om introduktionerna sker under uppsikt, men den har stark jaktinstinkt mot katter och smådjur. Den behöver tidig socialisering och går lätt upp i vikt. PetMD rekommenderar borstning minst en eller två gånger i veckan, rengöring av öronen varannan till var tredje vecka, kloklippning var tredje till fjärde vecka och ingen motion en timme före eller efter måltid.",
+      ],
+      sources: ["S797", "S10", "S123", "S795", "S798"],
+    },
+    borzoi: {
+      aka: "Rysk vinthund, Barsoi, Russian wolfhound",
+      text: [
+        "Borzoi, eller rysk vinthund, är en långhårig vinthund från Ryssland, framavlad för jakt på hare och räv. FCI-standarden beskriver en hund med aristokratiskt utseende – hög, smal och stark, ganska högbent – med lång, silkeslen, vågig päls i alla färger från vitt till svart utom brunt, blått och isabella. Den anger en önskvärd mankhöjd på 75–85 cm för hanar och 68–78 cm för tikar. PDSA anger en genomsnittlig vikt på 27–47 kg för både hanar och tikar och en livslängd på över 10 år, PetMD 9–14 år. En hund i den här storleksklassen är fullvuxen vid ungefär 15–18 månader (PetMD).",
+        "PDSA rekommenderar minst en timmes motion om dagen, uppdelad på ett par promenader, och att den bara får springa lös i ett säkert område. Enligt PDSA har borzoin en mycket stark jaktinstinkt och rekommenderas inte till hem med mindre djur eller yngre barn. Den passar erfarna ägare, behöver ha någon hemma större delen av tiden och bör socialiseras från ung ålder. Pälsen behöver borstas några gånger i veckan, och det bör gå en stund mellan mat och motion. PetMD rekommenderar borstning minst 2–3 gånger i veckan och nämner magomvridning som det vanligaste hälsoproblemet.",
+      ],
+      sources: ["S802", "S800", "S803", "S10"],
+    },
+    japanese_chin: {
+      aka: "Japansk spaniel, Chin",
+      text: [
+        "Japanese chin är en liten sällskapshund från Japan. Royal Kennel Clubs standard beskriver en elegant, aristokratisk och kompakt liten hund med riklig, lång och silkeslen päls, svartvit eller rödvit (aldrig trefärgad), kort och bred nos och ett förvånat uttryck. Standarden anger en idealvikt på 1,8–3,2 kg, och PetMD anger en mankhöjd på 8–11 tum (cirka 20–28 cm). En hund i den här storleksklassen är fullvuxen vid ungefär 8–12 månader (PetMD). En brittisk studie från 2024 (McMillan m.fl., sammanställd av Dogs Trust) anger en medianlivslängd på 12,5 år.",
+        "Royal Kennel Club rekommenderar upp till 30 minuters motion om dagen och pälsvård mer än en gång i veckan. Enligt klubben fäller rasen och passar i lägenhet, och den står i Breed Watch-kategori 1. PetMD skriver att japanese chin är en trubbnosig (brakycefal) ras som kan ha svårt att andas och lätt blir överhettad, så när det är varmt eller fuktigt bör den motioneras under dygnets svalare timmar. Den fungerar i regel bra med barn under uppsikt, kan utveckla separationsångest och bör tidigt gå på valpkurs för socialisering. PetMD rekommenderar borstning en eller två gånger i veckan, rengöring av öronen varannan till var tredje vecka och ett bad ungefär en gång i månaden.",
+      ],
+      sources: ["S806", "S10", "S123", "S805", "S809"],
+    },
+    norwich_terrier: {
+      aka: "Norwichterrier",
+      text: [
+        "Norwich terrier är en av de minsta terriererna och kommer från Storbritannien. FCI-standarden beskriver en låg, ivrig, kompakt och stark liten hund med upprättstående, spetsiga öron och hård, sträv, rak päls som bildar en krage runt ansiktet. Pälsen finns i alla nyanser av rött, vetefärgat, svart och tan eller grizzle. Den anger en idealhöjd på 25 cm. UKC:s standard anger en idealvikt på ungefär 12 pund (cirka 5,4 kg) för både hanar och tikar. En hund i den här storleksklassen är fullvuxen vid ungefär 9–12 månader (PetMD). Royal Kennel Club anger en livslängd på över 10 år, PetMD 12–15 år.",
+        "Royal Kennel Club kallar norwich terrier en av de minsta terriererna, med ett älskvärt sinnelag. Klubben rekommenderar upp till en timmes motion om dagen och pälsvård mer än en gång i veckan, säger att rasen fäller och passar i lägenhet, och räknar den till de sårbara brittiska raserna. Enligt PetMD kommer norwich terrier oftast bra överens med barn och andra husdjur. Den har mycket energi och behöver daglig motion och mental stimulans. Jaktinstinkten är stark, så ett säkert koppel och en väl inhägnad trädgård är ett måste, och den bör socialiseras tidigt. PetMD rekommenderar borstning minst två gånger i veckan, tandborstning minst en gång i veckan, kloklippning ungefär en gång i månaden och bad högst en gång var tredje månad.",
+      ],
+      sources: ["S812", "S815", "S10", "S813", "S814"],
+    },
+    miniature_bull_terrier: {
+      aka: "Miniature bull terrier, Mini bullterrier, Miniatyr bullterrier",
+      text: [
+        "Miniatyrbullterrier är en liten terrier från Storbritannien. FCI räknar den till terrierer av bullterriertyp. Enligt Royal Kennel Club erkändes den som en egen variant första gången 1943; den togs fram ur mindre bullterrier för att hålla sig under 35,5 cm (14 tum). PetMD anger en mankhöjd på 10–14 tum (cirka 25–36 cm) och en vikt på 18–28 pund (cirka 8–13 kg). En hund i den här storleksklassen är fullvuxen vid ungefär 9–12 månader (PetMD). Royal Kennel Club anger en livslängd på över 10 år, PetMD 11–13 år.",
+        "Royal Kennel Club beskriver rasen som modig och full av liv, med ett lekfullt sinne. Klubben rekommenderar upp till en timmes motion om dagen och pälsvård en gång i veckan, säger att rasen fäller och räknar den till de sårbara brittiska raserna. Enligt PetMD är miniatyrbullterriern oftast tillgiven och bra med barn – en vänlig familjehund som kan komma överens med andra husdjur om den är väl socialiserad. Den behöver regelbunden motion och mental stimulans och trivs inte om den lämnas ensam långa stunder. PetMD rekommenderar tidig socialisering och borstning ungefär en gång i veckan.",
+      ],
+      sources: ["S818", "S820", "S821", "S10"],
+    },
+    schipperke: {
+      text: [
+        "Schipperke är en liten vallhund från Belgien. FCI räknar den till vallhundarna, och standarden beskriver en liten men mycket kraftigt byggd hund av vargtyp (lupoid), helt svart, med krage, man och byxor. FCI-standarden anger en vikt på 3–9 kg (ett genomsnitt på 4–7 kg eftersträvas), och PetMD anger en mankhöjd på 10–13 tum (cirka 25–33 cm). En hund i den här storleksklassen är fullvuxen vid ungefär 9–12 månader (PetMD). En stor brittisk studie (McMillan m.fl. 2024) fann en medianlivslängd på 14,2 år, och Royal Kennel Club anger över 12 år.",
+        "FCI-standarden kallar schipperken en utmärkt liten vakthund som sprudlar av livskraft, är reserverad mot främlingar och mycket mild mot barn. Royal Kennel Club rekommenderar upp till en timmes motion om dagen och pälsvård mer än en gång i veckan. Enligt klubben fäller rasen och passar i lägenhet, och den står i Breed Watch-kategori 1. PetMD skriver att schipperken behöver aktiviteter som håller både kropp och huvud sysselsatta, att den är intelligent men envis och att vissa har kvar en stark jaktinstinkt. PetMD rekommenderar tidig socialisering, daglig tandborstning och rengöring av öronen varannan vecka; VCA rekommenderar borstning minst två gånger i veckan.",
+      ],
+      sources: ["S824", "S825", "S826", "S827", "S828", "S771", "S10"],
+    },
+    belgian_tervuren: {
+      aka: "Belgisk tervueren, Belgian tervuren, Tervueren, Tervuren",
+      text: [
+        "Tervueren är den långhåriga, fawnfärgade varianten av belgisk vallhund från Belgien; FCI erkänner en enda ras, belgisk vallhund, med fyra varianter. FCI-standarden beskriver en harmoniskt proportionerad hund som förenar elegans och kraft, med lång päls som bildar krage, byxor och plymformad svans. För tervueren tillåter den bara fawn eller grått, i båda fallen med svart anlöpning och svart mask (fawn föredras). Den anger en mankhöjd på cirka 62 cm för hanar och 58 cm för tikar och en vikt på cirka 25–30 kg för hanar och 20–25 kg för tikar. En hund i den här storleksklassen är fullvuxen vid ungefär 12–15 månader (PetMD). Royal Kennel Club anger en livslängd på över 10 år, PetMD 12–14 år.",
+        "FCI-standarden kallar belgisk vallhund en vaksam och aktiv hund som sprudlar av energi, utan rädsla eller aggressivitet. Royal Kennel Club rekommenderar mer än 2 timmars motion om dagen och pälsvård mer än en gång i veckan. Enligt klubben fäller rasen och passar i ett stort hus med stor trädgård, och den står i Breed Watch-kategori 1. PetMD skriver att tervueren knyter starka band till sin familj, behöver mycket fysisk aktivitet och mental stimulans och kan försöka valla barn och mindre djur. PetMD rekommenderar tidig socialisering, borstning varje vecka (nästan dagligen under fällningen), rengöring av öronen var eller varannan vecka och ett bad var fjärde till sjätte vecka.",
+      ],
+      sources: ["S312", "S313", "S830", "S832", "S10"],
+    },
+    toy_fox_terrier: {
+      text: [
+        "Toy fox terrier är en liten amerikansk terrier i AKC:s Toy Group. AKC:s standard beskriver en välbalanserad dvärghund med atletiskt utseende, kort, satinglänsande päls och upprättstående, spetsiga öron. Kroppen är till största delen vit, och huvudet är trefärgat eller vitt och tan, vitt och svart eller vitt, chokladbrunt och tan. PetMD anger en vikt på 4–9 pund (cirka 1,8–4 kg) och en mankhöjd på 8,5–11,5 tum (cirka 21–29 cm). En hund av den här storleken är fullvuxen vid ungefär 8–12 månader (PetMD). PetMD och WebMD anger en livslängd på 13–15 år.",
+        "AKC:s standard kallar toy fox terrier intelligent, vaken, vänlig och lojal mot sina ägare. PetMD rekommenderar minst en timmes motion varje dag, borstning en eller två gånger i veckan och tidig träning och socialisering, och påpekar att rasen fortfarande har en stark jaktinstinkt. Enligt WebMD är toy fox terrier ett fint sällskap för hänsynsfulla, äldre barn, men rasen rekommenderas inte till familjer med små barn. Den kan också få separationsångest om den lämnas ensam länge. WebMD rekommenderar daglig tandborstning, rengöring av öronen varje vecka och kloklippning varje månad.",
+      ],
+      sources: ["S833", "S834", "S835", "S10"],
+    },
+    gordon_setter: {
+      aka: "Gordon setter",
+      text: [
+        "Gordonsetter är en stor svart och tanfärgad fågelhund från Skottland (FCI grupp 7, stående fågelhundar; ursprungsland Storbritannien). FCI-standarden beskriver en stilfull hund med galopperande linjer och djupt, glänsande kolsvart päls med kastanjeröda tanteckningar. Den anger en mankhöjd på 66 cm och en vikt på 29,5 kg för hanar, och 62 cm och 25,5 kg för tikar. En hund av den här storleken är fullvuxen vid ungefär 15–18 månader (PetMD), och Royal Kennel Club anger en livslängd på över 10 år.",
+        "FCI-standarden kallar gordonsettern djärv och utåtriktad, med ett vänligt och jämnt sinnelag, och PDSA beskriver en vänlig, intelligent ras som gärna vill ha något att göra. Royal Kennel Club rekommenderar mer än två timmars motion om dagen och ett stort hus med trädgård, och PDSA säger att den kraftiga pälsen behöver skötas varje dag. PetMD rekommenderar begränsad motion en timme före och efter måltid, tidig socialisering av valpen och extra fokus på inkallningsträning, eftersom rasen har stark jaktinstinkt. WebMD rekommenderar daglig tandborstning och ett bad ungefär en gång i månaden, och säger att rasen bara fungerar måttligt bra med små barn.",
+      ],
+      sources: ["S841", "S842", "S843", "S844", "S845", "S10"],
+    },
+    afghan_hound: {
+      aka: "Afghan hound",
+      text: [
+        "Afghanhund är en hög, långhårig vinthund från Afghanistan (FCI grupp 10, vinthundar; ursprungsland Afghanistan, under brittiskt beskydd). FCI-standarden beskriver en hund som ger ett intryck av styrka och värdighet och förenar snabbhet med kraft, med lång, mycket fin päls; alla färger utom merle godtas. Den anger en idealhöjd på 68–74 cm för hanar och 63–69 cm för tikar, och AKC:s standard anger en vikt på cirka 60 pund (27 kg) för hanar och cirka 50 pund (23 kg) för tikar. En hund av den här storleken är fullvuxen vid ungefär 15–18 månader (PetMD), och Royal Kennel Club anger en livslängd på över 10 år.",
+        "FCI-standarden kallar afghanhunden värdig och reserverad, med en viss skärpa och vildhet. Royal Kennel Club rekommenderar mer än två timmars motion om dagen, pälsvård varje dag och ett stort hus med trädgård. PDSA säger att den långa, silkeslena pälsen behöver borstas varje dag och att en väl socialiserad afghanhund är bra med barn, men att den starka jaktinstinkten kräver försiktighet med andra husdjur. PetMD rekommenderar minst en timmes vila efter måltid innan hunden motioneras och ett bad minst var eller varannan vecka, och WebMD rekommenderar daglig tandborstning.",
+      ],
+      sources: ["S849", "S850", "S851", "S852", "S853", "S854", "S10"],
+    },
+    australian_silky_terrier: {
+      aka: "Silky terrier",
+      text: [
+        "Australian silky terrier är en liten, mycket vaken dvärgterrier från Australien (FCI grupp 3, terrier; sektionen dvärgterrier), i Nordamerika känd som silky terrier. FCI-standarden kräver en slät, fin, glansig päls med silkeslen struktur i blått och tan – alla nyanser av blått och tan godtas, silver och vitt gör det inte – och en mankhöjd på 23–26 cm för hanar; tikar är något mindre. Standarderna anger ingen vikt (”i proportion till höjden”), men PetMD och WebMD anger omkring 10 pund (cirka 4,5 kg). En hund av den här storleken är fullvuxen vid ungefär 8–12 månader (PetMD), och Royal Kennel Club anger en livslängd på över 12 år (PetMD och WebMD: 13–15 år).",
+        "FCI-standarden beskriver en modig och värdig dvärgterrier, ett sällskap utan like. Royal Kennel Club rekommenderar upp till 30 minuters motion om dagen och pälsvård varje dag, och säger att rasen passar i lägenhet. Enligt PetMD fungerar silky terrier bra med andra husdjur och barn om den socialiseras ordentligt i ung ålder. PetMD rekommenderar valpkurs före 16 veckors ålder, rengöring av öronen varannan till var tredje vecka och att hålla hunden i koppel eller i ett inhägnat område på grund av jaktinstinkten. WebMD rekommenderar daglig tandborstning och ett bad ungefär en gång i månaden.",
+      ],
+      sources: ["S855", "S856", "S857", "S858", "S10"],
+    },
+    parson_russell_terrier: {
+      text: [
+        "Parson russell terrier är en arbetsvillig, aktiv och smidig arbetsterrier från Storbritannien, ursprungligen framavlad för rävjakt (FCI grupp 3, terrier; sektionen stora och medelstora terrier). Den är en annan ras än jack russell terrier: Kennel Club erkände den första gången 1990, då under namnet Parson Jack Russell Terrier. FCI-standarden kräver en vit eller övervägande vit hund med tanfärgade, citronfärgade eller svarta teckningar, eller en kombination av dem, med sträv, slät eller så kallad broken päls och en idealhöjd på 36 cm för hanar och 33 cm för tikar. PDSA anger en genomsnittlig vikt på 6–8 kg. En hund av den här storleken är fullvuxen vid ungefär 9–12 månader (PetMD), och Royal Kennel Club anger en livslängd på över 12 år (WebMD: 13–15 år).",
+        "FCI-standarden kallar rasen djärv och vänlig. Royal Kennel Club rekommenderar upp till en timmes motion om dagen och pälsvård en gång i veckan. PDSA säger att de här hundarna är fulla av energi och helst behöver 1–2 timmars motion om dagen. De kommer bra överens med barn, är utmärkta familjehundar och behöver tidigt socialiseras med familjens andra husdjur. PetMD påpekar att vissa har stark jaktinstinkt och rekommenderar daglig tandborstning, rengöring av öronen varannan vecka och ett bad varannan till var fjärde vecka. WebMD tillägger att de inte tycker om att vara ensamma och kan få separationsångest.",
+      ],
+      sources: ["S864", "S865", "S866", "S867", "S868", "S10"],
+    },
+    wire_fox_terrier: {
+      aka: "Strävhårig foxterrier, Wire fox terrier",
+      text: [
+        "Strävhårig foxterrier är en aktiv och livlig terrier från Storbritannien (FCI grupp 3, terrier; sektionen stora och medelstora terrier) – inte samma ras som toy fox terrier. FCI-standarden kräver benstomme och styrka i ett litet format, utan att hunden blir klumpig eller grov, och en tät, mycket strävhårig päls med mjukare underull. Vitt ska dominera, med svarta, svart och tanfärgade eller tanfärgade teckningar, och mankhöjden får inte överstiga 39 cm för hanar; tikar är något mindre. AKC:s standard anger 18 pund för en hane i utställningskondition och ungefär två pund mindre för en tik, med ett pund hit eller dit (cirka 7,7–8,6 kg för hanar och 6,8–7,7 kg för tikar). En hund av den här storleken är fullvuxen vid ungefär 9–12 månader (PetMD), och Royal Kennel Club anger en livslängd på över 12 år (PetMD: 12–15 år).",
+        "FCI-standarden kallar rasen vänlig, tillmötesgående och orädd. Royal Kennel Club rekommenderar upp till en timmes motion om dagen och pälsvård mer än en gång i veckan. PDSA säger att foxterrier älskar att leka och utforska, är utmärkta familjehundar och behöver pälsvård en eller två gånger i veckan. WebMD kallar dem ett fint sällskap för barn men rekommenderar alltid tillsyn när små barn är med. Enligt PetMD bör de hållas under noggrann uppsikt när det finns smådjur i närheten, på grund av den starka jaktinstinkten. PetMD rekommenderar god socialisering av valpen, daglig tandborstning, ett bad ungefär en gång i månaden och handtrimning av pälsen tre till fyra gånger om året; WebMD rekommenderar kloklippning ungefär en gång i månaden.",
+      ],
+      sources: ["S871", "S872", "S873", "S874", "S875", "S876", "S10"],
+    },
+    manchester_terrier: {
+      aka: "Manchester terrier",
+      text: [
+        "Manchesterterrier är en kompakt, elegant terrier från Storbritannien (FCI grupp 3, terrier; sektionen stora och medelstora terrier) – standardstorleken, inte toyvarianten. FCI-standarden kräver en kompakt, elegant och sund hund med substans och tät, slät, kort och glansig päls, enbart i kolsvart med djupt mahognyfärgad tan. Den anger en idealhöjd på 41 cm för hanar och 38 cm för tikar. Canadian Kennel Clubs standard anger en vikt på 5,5–10 kg (12–22 pund). En hund av den här storleken är fullvuxen vid ungefär 9–12 månader (PetMD), och PDSA anger en livslängd på över 12 år (WebMD: 15–17 år).",
+        "FCI-standarden kallar rasen ivrig, vaken, glad och sportig, omdömesgill och hängiven. PDSA rekommenderar upp till en timmes motion om dagen och säger att borstning en gång i veckan oftast räcker. Enligt PetMD fungerar manchesterterrier bra med barn, särskilt om de får träffa barn redan som valpar, och valpen bör socialiseras från första dagen i sitt nya hem. PetMD påpekar också att rasen har en stark jaktinstinkt från tiden som råttjägare, så den passar kanske inte i hem med hamstrar eller gerbiler. WebMD avråder från att någonsin lämna små barn ensamma med hundar, rekommenderar daglig tandborstning och skriver att rasen är känslig för kyla, så ett täcke eller en tröja kan behövas.",
+      ],
+      sources: ["S888", "S889", "S890", "S891", "S892", "S10"],
+    },
+    tibetan_terrier: {
+      aka: "Tibetan terrier",
+      text: [
+        "Tibetansk terrier är en robust, medelstor, långhårig sällskapshund från Tibet (FCI grupp 9, sällskapshundar; sektionen tibetanska raser) – terrier bara till namnet. FCI-standarden kräver en i stort sett kvadratisk kroppsform, dubbelpäls med riklig, fin och lång täckpäls som är rak eller vågig, hängande, välbehårade öron och en svans som bärs ringlad över ryggen. Alla färger är tillåtna utom choklad, leverbrunt och merle, och hanarna är 36–41 cm i mankhöjd; tikarna är något mindre. Canadian Kennel Clubs standard anger en vikt på 8,25–13,5 kg (18–30 pund). En hund av den här storleken är fullvuxen vid ungefär 12–15 månader (PetMD), och PDSA anger en livslängd på över 12 år (PetMD: 15–16 år).",
+        "FCI-standarden kallar rasen livlig och godmodig, utåtriktad, vaken och intelligent, men sparsam med tillgivenhet mot främlingar. PDSA kallar tibetanska terrier milda, vänliga och tillgivna hundar som blir bra familjehundar, rekommenderar omkring en timmes motion om dagen och säger att pälsen behöver skötas varje dag. PetMD påpekar att de kan utveckla separationsångest om de lämnas ensamma långa stunder och rekommenderar valpkurs före 16 veckors ålder. Enligt PetMD kan de fungera bra med små barn och andra hundar om introduktionerna sker under uppsikt, medan WebMD skriver att vissa individer har svårt med små barn och andra hundar. WebMD rekommenderar daglig tandborstning.",
+      ],
+      sources: ["S904", "S905", "S906", "S907", "S909", "S10"],
+    },
+    greyhound: {
+      aka: "English greyhound",
+      text: [
+        "Greyhound är en stor vinthund från Storbritannien; FCI räknar den till de korthåriga vinthundarna i grupp 10. FCI-standarden beskriver en kraftigt byggd, ståtlig hund med generösa proportioner, muskelkraft och symmetrisk byggnad – intelligent, mild, tillgiven och med jämnt temperament. Pälsen är fin och tät, i svart, vitt, rött, blått, fawn, ljust fawn eller tigrerat, eller någon av dessa färger med vitt. Standarden anger en idealhöjd på 71–76 cm för hanar och 68–71 cm för tikar. AKC:s standard anger en vikt på 65–70 pund (cirka 29,5–31,8 kg) för hanar och 60–65 pund (cirka 27,2–29,5 kg) för tikar. En hund av den här storleken är fullvuxen vid ungefär 15–18 månader (PetMD). En brittisk VetCompass-studie av greyhounds under veterinärvård fann en medianlivslängd på 11,4 år, och PDSA anger en livslängd på över 10 år.",
+        "Enligt PDSA är greyhounds inte särskilt energiska: de behöver omkring en timmes motion om dagen och föredrar ett par ordentliga löprundor framför långa promenader. Den korta pälsen behöver skötas en gång i veckan. Med rätt socialisering som valpar kan de bli bra familjehundar, men de har en stark jaktinstinkt. Enligt PetMD är den så stark att de inte passar i hem med katter eller andra smådjur. WebMD rekommenderar daglig tandborstning och påpekar att greyhounds, som saknar isolerande underull, kan vara känsliga för extrema temperaturer.",
+      ],
+      sources: ["S912", "S913", "S914", "S916", "S917", "S918", "S920", "S10"],
+    },
+    xoloitzcuintli: {
+      aka: "Xoloitzcuintli, Xolo, Mexikansk nakenhund",
+      text: [
+        "Xoloitzcuintle är en uråldrig ras av urhundstyp från Mexiko; FCI räknar den till grupp 5, spetsar och raser av urhundstyp. FCI-standarden beskriver en tyst och lugn hund, glad, vaken och intelligent, aldrig aggressiv, i två varianter som bara skiljer sig åt i päls och tänder: den hårlösa med slät, bar hud och den hårbeklädda med kort, slät päls. Den finns i tre storlekar – 25–35 cm, 35–45 cm och 46–60 cm i mankhöjd – och i svart, svartgrått, skiffergrått, mörkgrått, rödaktigt, leverbrunt, brons eller blont, helst med enfärgad, mörk hud. WebMD anger en vikt på 10–15 pund för toy, 15–30 pund för miniatyr och 30–55 pund för standard (cirka 4,5–24,9 kg för alla storlekar sammantaget). En hund i standardstorlek är fullvuxen vid ungefär 12–15 månader (PetMD). PetMD och WebMD anger båda en livslängd på 13–18 år.",
+        "Enligt PetMD behöver xolon omkring 20 minuters motion varje dag. Den bara huden behöver omsorg: PetMD rekommenderar solskydd för hundar innan den går ut, aldrig solskydd för människor. VCA skriver att rasen passar bäst i varmt klimat och behöver en tröja när det är kallare. WebMD kallar xolon en bra hund för barnfamiljer och rekommenderar tandborstning 2–3 gånger i veckan. PetMD tillägger att kontakten med barn alltid bör ske under uppsikt, att valpar behöver socialiseras så att de inte växer upp misstänksamma mot nya människor och att rasen har stark jaktinstinkt mot smådjur.",
+      ],
+      sources: ["S923", "S924", "S926", "S927", "S928", "S10"],
+    },
+    spinone_italiano: {
+      aka: "Spinone, Italian Spinone",
+      text: [
+        "Spinone italiano är en italiensk stående fågelhund; FCI räknar den till de kontinentala stående fågelhundarna av griffontyp i grupp 7. FCI-standarden beskriver en solid, robust och kraftfull hund med grov benstomme och sträv päls – naturligt sällskaplig, foglig och tålmodig, och en erfaren jägare i all slags terräng. Den finns i helvitt, vitt med orange fläckar, orangeskimmel, vitt med bruna fläckar och brunskimmel. FCI-standarden anger en mankhöjd på 60–70 cm för hanar och 58–65 cm för tikar och en vikt på 32–37 kg för hanar och 28–30 kg för tikar. En hund av den här storleken är fullvuxen vid ungefär 15–18 månader (PetMD). PDSA anger en livslängd på över 10 år, PetMD 10–12 år.",
+        "PDSA kallar spinonen en energisk ras som helst behöver mer än 2 timmars motion om dagen, och säger att den tjocka, delvis sträva pälsen behöver skötas hemma 2–3 gånger i veckan. WebMD rekommenderar kloklippning varje vecka och daglig tandborstning och säger att rasen i regel fungerar bra med andra hundar och barn, men varnar för att den ofta hittar på bus om den lämnas ensam länge. PetMD rekommenderar att socialisera valpen tidigt och att hålla hunden i koppel eller i ett inhägnat område utomhus. Den bör inte heller motioneras en timme före eller efter måltid, på grund av risken för magomvridning.",
+      ],
+      sources: ["S935", "S936", "S937", "S938", "S10"],
+    },
+    pointer: {
+      aka: "Engelsk pointer, English Pointer",
+      text: [
+        "Pointer är en brittisk stående fågelhund; FCI räknar den till de brittiska och irländska stående fågelhundarna i grupp 7. FCI-standarden beskriver en symmetrisk, välbyggd hund med mjukt svängda konturer, stark men smidig och vaken, med ett vänligt, jämnt sinnelag. Pälsen är fin, kort och hård med tydlig glans. De vanligaste färgerna är citron och vitt, orange och vitt, leverbrunt och vitt samt svart och vitt. FCI-standarden anger en mankhöjd på 63–69 cm för hanar och 61–66 cm för tikar, och UKC:s standard anger en arbetsvikt på 55–75 pund (cirka 25–34 kg) för hanar och 44–65 pund (cirka 20–29,5 kg) för tikar. En hund av den här storleken är fullvuxen vid ungefär 15–18 månader (PetMD). PDSA anger en livslängd på över 12 år, PetMD 10–12 år.",
+        "Enligt PDSA har pointern mycket energi och behöver helst över 2 timmars motion om dagen. Den behöver aktiva ägare och bra inkallningsträning, men den korta pälsen behöver bara skötas en gång i veckan. PetMD rekommenderar att hålla den på en inhägnad tomt så att den inte ger sig av, och påpekar att den kan vara ett hot mot fåglar som hålls som husdjur. WebMD rekommenderar daglig tandborstning och säger att rasen inte är särskilt bra med små barn. PDSA tillägger att rätt socialisering som valp, precis som för alla raser, hjälper den att passa in i familjelivet.",
+      ],
+      sources: ["S943", "S944", "S945", "S946", "S947", "S10"],
+    },
+    welsh_terrier: {
+      aka: "Welshterrier",
+      text: [
+        "Welsh terrier är en terrier från Storbritannien; FCI räknar den till de stora och medelstora terriererna i grupp 3. FCI-standarden beskriver en stilig, arbetsvillig, välbalanserad och kompakt hund med sträv, hård, mycket tät och riklig päls – tillgiven, lydig och lätt att hantera, glad och sällan skygg. Färgen är svart och tan eller svartgrizzlad och tan. FCI-standarden anger en mankhöjd på högst 39 cm och en vikt på 9–9,5 kg (20–21 pund). En hund av den här storleken är fullvuxen vid ungefär 9–12 månader (PetMD). Royal Kennel Club och PDSA anger en livslängd på över 12 år, PetMD 12–15 år.",
+        "Enligt Royal Kennel Club behöver welsh terrier upp till en timmes motion om dagen och pälsvård mer än en gång i veckan. PDSA anger omkring en timmes motion om dagen och pälsvård 2–3 gånger i veckan, och beskriver en lekfull, vänlig hund som älskar barn och blir en utmärkt familjehund. PetMD påpekar att rasen har stark jaktinstinkt och kan jaga mindre djur, och rekommenderar koppel eller ett inhägnat område utomhus samt socialisering och träning från tidig ålder.",
+      ],
+      sources: ["S955", "S956", "S957", "S958", "S10"],
+    },
+    american_hairless_terrier: {
+      aka: "American Hairless Terrier",
+      text: [
+        "Amerikansk hårlös terrier är en liten till medelstor, smidigt musklad och aktiv terrier från USA. American Kennel Club räknar den till sin Terrier Group, men FCI har inte erkänt rasen. Rasstandarden beskriver en energisk, vaken, nyfiken och intelligent hund med V-formade öron och naturlig svans som aldrig kuperas. Rasen finns i två varianter: den hårlösa, som saknar hår så när som på morrhår och hårstrån på ögonbryn och nos, och den hårbeklädda med kort, slät päls. Standarden anger en idealhöjd på 12–16 tum (30–41 cm); PetMD anger en vikt på 12–28 pund (5,4–12,7 kg) och en livslängd på 14–16 år. En hund av den här storleken är fullvuxen vid ungefär 9–12 månader (PetMD).",
+        "Dogs NSW anger omkring 20 minuters motion om dagen, och PetMD säger att regelbunden motion och mental stimulans är ett måste för rasen. PetMD kallar den en fin lekkamrat för barn, med tillsyn när små barn är med. Den bara huden behöver omsorg: rasklubben säger att solskydd eller skyddande kläder är ett måste för att förebygga solbränna. PetMD rekommenderar en tröja när det är kallt och regelbundna bad, helst varje vecka, och WebMD rekommenderar daglig tandborstning. Rasklubben rekommenderar kloklippning varje vecka och påpekar också att rasen har stark jaktinstinkt.",
+      ],
+      sources: ["S967", "S971", "S972", "S973", "S977", "S10"],
+    },
+    tibetan_spaniel: {
+      aka: "Tibetan Spaniel, Tibbie",
+      text: [
+        "Tibetansk spaniel är en liten, aktiv och vaken sällskapshund från Tibet (Kina). FCI räknar den till sällskapshundarna (tibetanska raser), och Storbritannien är rasens beskyddarland. FCI-standarden beskriver den som glad och självsäker, mycket intelligent och reserverad mot främlingar, vaken, lojal men självständig. Kroppen är något längre än hög, pälsen silkeslen och medellång, öronen välbehårade och den rikt fransade svansen bärs ringlad över ryggen; alla färger utom merle är tillåtna. Standarden anger en mankhöjd på cirka 25,4 cm och en idealvikt på 4,1–6,8 kg. En hund av den här storleken är fullvuxen vid ungefär 9–12 månader (PetMD). I en stor brittisk studie (McMillan m.fl., 2024) var rasen bland de mest långlivade, med en median på 15,2 år; PDSA anger en livslängd på över 12 år.",
+        "Enligt PDSA behöver tibetansk spaniel omkring en timmes motion varje dag och är gärna med i familjens lekar. Den kommer i regel bra överens med alla och blir en bra familjehund, och pälsvård ett par gånger i veckan räcker oftast. WebMD skriver att rasen lätt får separationsångest och passar bättre i familjer med äldre barn, att den behöver en säker, inhägnad trädgård och att den kan bli överhettad i varmt väder. WebMD rekommenderar daglig tandborstning, kontroll av öronen minst en gång i veckan, kontroll av klorna varje månad och ett bad ungefär en gång i månaden.",
+      ],
+      sources: ["S980", "S981", "S982", "S771", "S10"],
+    },
+    black_russian_terrier: {
+      aka: "Black Russian Terrier",
+      text: [
+        "Svart rysk terrier är en stor, robust och mycket atletisk brukshund från Ryssland, som FCI räknar till gruppen pinscher och schnauzer. FCI-standarden beskriver den som värdig, självsäker och väl kontrollerad, vänlig, anspråkslös, smart och sällskaplig, med sträv, tjock dubbelpäls som bildar yviga ögonbryn, mustasch och skägg. De enda tillåtna färgerna är svart och svart med inslag av grått. Standarden anger en mankhöjd på 72–76 cm och en vikt på 50–60 kg för hanar och 68–72 cm och 45–50 kg för tikar. En hund av den här storleken når oftast sin vuxenvikt vid 18–24 månader. Royal Kennel Club anger en livslängd på över 10 år.",
+        "Enligt Royal Kennel Club behöver rasen mer än 2 timmars motion och pälsvård varje dag och ett stort hus med trädgård; pälsen fäller inte. PetMD skriver att rasen är hängiven sin familj och kan fungera bra med barn under uppsikt, att tidig och konsekvent socialisering är viktig och att ansträngande motion bör undvikas strax före och efter måltid på grund av risken för magomvridning. Enligt VCA passar den bäst i familjer med äldre barn, och VCA rekommenderar trimning hos en hundfrisör var sjätte till åttonde vecka.",
+      ],
+      sources: ["S985", "S986", "S989", "S990", "S10"],
+    },
+    neapolitan_mastiff: {
+      aka: "Neapolitansk mastiff, Neapolitan Mastiff, Neo",
+      text: [
+        "Mastino napoletano är en stor, tung och massiv vakthund från Italien; FCI räknar den till molosserna av mastifftyp i grupp 2. FCI-standarden beskriver den som stabil och lojal, inte aggressiv, med kort, hård, tät päls och tjock, lös hud som bildar många veck och rynkor, särskilt på huvudet. De föredragna färgerna är grått, blygrått och svart, men även brunt, fawn och mörk fawn förekommer. Standarden anger en mankhöjd på 65–75 cm och en vikt på 60–70 kg för hanar och 60–68 cm och 50–60 kg för tikar. En hund av den här storleken når oftast sin vuxenvikt vid 18–24 månader. Royal Kennel Club och PDSA anger en livslängd på under 10 år, PetMD bara 7–9 år.",
+        "Enligt Royal Kennel Club behöver rasen upp till en timmes motion om dagen, pälsvård en gång i veckan och ett stort hus med trädgård, och den fäller. Klubben har placerat rasen i Breed Watch-kategori 3, och PDSA skriver att ögonlocksproblem som entropion och ektropion förekommer på grund av den överflödiga huden i ansiktet. PDSA kallar mastino napoletano lojala, hängivna hundar som älskar familjelivet, och säger att hudvecken behöver rengöras varje dag. PetMD skriver att de är fantastiska med familjer och barn men inte bör lämnas ensamma med ett litet barn, att de dreglar mycket och att socialisering och träning med positiv förstärkning bör börja tidigt.",
+      ],
+      sources: ["S993", "S994", "S995", "S996", "S10"],
+    },
+    norwegian_elkhound: {
+      aka: "Norsk grå älghund, Norsk älghund grå, Norwegian Elkhound, Elkhound, Norwegian Elkhound Grey",
+      text: [
+        "Grå norsk älghund är en grå nordisk jaktspets från Norge, framavlad för älgjakt; FCI räknar den till de nordiska jakthundarna i grupp 5. FCI-standarden beskriver en typisk spets – kompakt, kort och kvadratiskt byggd, med små upprättstående öron, en svans som bärs tätt ringlad över ryggen och en tjock, grov, medellång päls – som är orädd, energisk och modig. Grått i olika nyanser är den enda färg standarden tillåter. FCI-standarden anger en idealhöjd på 52 cm för hanar och 49 cm för tikar, och AKC:s standard en vikt på cirka 55 pund (25 kg) för hanar och cirka 48 pund (22 kg) för tikar. En hund av den här storleken är fullvuxen vid ungefär 12–15 månader (PetMD), och PetMD och WebMD anger en livslängd på 12–15 år.",
+        "PetMD rekommenderar en timmes motion om dagen och säger att rasen behöver mental stimulans lika mycket som fysisk motion. Enligt PetMD är den fantastisk med barn i alla åldrar under uppsikt, och en underbar familjehund om den socialiseras som valp och tränas tidigt. PetMD rekommenderar ett säkert inhägnat område eller koppel utomhus och påpekar att rasen fäller mycket och att den tjocka pälsen gör att den lätt blir överhettad. WebMD rekommenderar att borsta pälsen minst två minuter varje dag och att borsta tänderna dagligen.",
+      ],
+      sources: ["S960", "S961", "S963", "S964", "S10"],
+    },
+    mudi: {
+      aka: "Ungersk mudi, Hungarian Mudi",
+      text: [
+        "Mudi är en ungersk vallhund; FCI räknar den till vallhundarna i grupp 1. FCI-standarden beskriver en medelstor hund med kilformat huvud, upprättstående öron och en rygglinje som sluttar bakåt, med tät, glansig, vågig eller lätt lockig päls – mycket lättlärd, livlig, modig, vaksam och arbetsvillig. Den finns i svart, vitt, fawn, askgrått (blått), brunt, askbrunt och merle (cifra). FCI-standarden anger en mankhöjd på 41–47 cm för hanar och 38–44 cm för tikar; PetMD anger en vikt på 18–29 pund (cirka 8–13 kg). En hund av den här storleken är fullvuxen vid ungefär 12–15 månader (PetMD). Royal Kennel Club anger en livslängd på över 10 år, PetMD 12–14 år.",
+        "Enligt Royal Kennel Club behöver mudin upp till en timmes motion om dagen och pälsvård en gång i veckan. Den är lojal och tillgiven mot sin familj och behöver utlopp för sin energi och intelligens. Den passar bäst hos en erfaren ägare som kan ge den stimulans, struktur och uppgifter. PetMD beskriver en smart, självständig hund som gärna hörs, och säger att mudivalpar behöver socialiseras från tidig ålder för att känna sig trygga med barn, andra husdjur och nya människor.",
+      ],
+      sources: ["S949", "S950", "S952", "S10"],
+    },
+    lhasa_apso: {
+      aka: "Lhasa, Lhasa-apso",
+      text: [
+        "Lhasa apso är en liten sällskapshund från Tibet; enligt Royal Kennel Club hölls den ursprungligen av tibetanska munkar som sällskaps- och vakthund. Det är en liten hund med lång päls. VCA anger en mankhöjd på 10–11 tum (cirka 25–28 cm) och en vikt på 13–15 pund (cirka 6–7 kg). En hund av den här storleken är fullvuxen vid ungefär 9–12 månader (PetMD), och Royal Kennel Club anger en livslängd på över 12 år.",
+        "Royal Kennel Club rekommenderar upp till en timmes motion om dagen och pälsvård varje dag. Enligt klubben fäller rasen inte och passar i lägenhet, och den står i Breed Watch-kategori 1. PDSA säger att lhasa apso kommer bra överens med barn och andra husdjur i hemmet om den socialiseras rätt som valp, men att den kan vara lite mer reserverad mot främlingar. WebMD föreslår ett bad minst varannan vecka, kloklippning var tredje till fjärde vecka och tandborstning så regelbundet som möjligt.",
+      ],
+      sources: ["S740", "S741", "S742", "S743", "S10"],
+    },
+    coton_de_tulear: {
+      aka: "Coton, Coton de Tulear",
+      text: [
+        "Coton de Tuléar kommer från Madagaskar och står under franskt beskydd; FCI räknar den till bichoner och besläktade raser. FCI-standarden beskriver en liten, långhårig sällskapshund med vit päls med bomullsstruktur, runda mörka ögon och ett livligt, intelligent uttryck. Temperamentet är glatt och stabilt, och den är mycket sällskaplig mot både människor och andra hundar. Standarden anger en mankhöjd på 26–28 cm för hanar och 23–25 cm för tikar och en vikt på 4–6 kg för hanar och 3,5–5 kg för tikar; grundfärgen är vit. En hund av den här storleken är fullvuxen vid ungefär 8–12 månader (PetMD), och Royal Kennel Club anger en livslängd på över 12 år.",
+        "Royal Kennel Club rekommenderar upp till 30 minuters motion om dagen och säger att rasen passar i lägenhet, fäller lite och behöver pälsvård varje dag. PDSA kallar coton de Tuléar lojala och kärleksfulla hundar som trivs med familjelivet och blir utmärkta familjehundar. Enligt PetMD kommer de i regel överens med barn och andra husdjur om introduktionerna görs på rätt sätt, men de kan utveckla separationsångest om de lämnas ensamma mer än några timmar. PetMD rekommenderar kontroll av öronen minst en gång i veckan och ett bad ungefär en gång i månaden.",
+      ],
+      sources: ["S10", "S721", "S722", "S724", "S725", "S726"],
+    },
+    chow_chow: {
+      aka: "Chow-chow, Chowchow",
+      text: [
+        "Chow chow är en kompakt, lejonliknande spets från Kina med tät, utstående päls i en enda helfärg: svart, röd, blå, fawn, gräddfärgad eller vit (FCI-standarden). FCI-standarden anger en mankhöjd på 48–56 cm för hanar och 46–51 cm för tikar, och PDSA anger en genomsnittlig vikt på 20–30 kg. En hund av den här storleken är fullvuxen vid ungefär 15–18 månader (PetMD). PDSA anger en livslängd på under 10 år, PetMD 8–12 år.",
+        "Enligt PDSA behöver rasen minst en timmes motion om dagen och borstning varje dag, och det bör gå en stund mellan mat och motion. PDSA beskriver lojala hundar som kan vara perfekta i rätt hem, helst hos erfarna ägare, men rekommenderar inte rasen till familjer med små barn. PDSA påpekar också att de har stark jaktinstinkt, kanske inte klarar av att vara ensamma och bör socialiseras väl från ung ålder. PetMD tillägger att den tjocka pälsen och den korta nosen gör att de lättare blir överhettade.",
+      ],
+      sources: ["S696", "S700", "S701", "S10"],
+    },
+    old_english_sheepdog: {
+      aka: "Bobtail, Old English Sheepdog",
+      text: [
+        "Old english sheepdog är en stor, stark vallhund från Storbritannien med kvadratiskt intryck och riklig, sträv, raggig päls: kroppen är grå, grizzle eller blå i alla nyanser, och huvud, hals och framdel är vita (FCI-standarden). FCI-standarden anger en mankhöjd på 61 cm och uppåt för hanar och 56 cm och uppåt för tikar; PDSA anger en genomsnittlig mankhöjd på 56–61 cm och en genomsnittlig vikt på 27–30 kg. En hund av den här storleken är fullvuxen vid ungefär 15–18 månader (PetMD). PDSA anger en livslängd på över 10 år, PetMD 10–12 år.",
+        "Enligt PDSA behöver rasen minst två timmars motion om dagen, uppdelad på flera promenader. Den långa pälsen behöver borstas varje dag och klippas hos en hundfrisör ungefär var sjätte vecka. PDSA beskriver lättsamma familjehundar som passar bättre i familjer med äldre barn, kan drabbas av separationsångest när de lämnas ensamma och har stark vallnings- och jaktinstinkt. PDSA rekommenderar också att låta det gå en stund mellan mat och motion.",
+      ],
+      sources: ["S704", "S705", "S706", "S10"],
+    },
+    pekingese: {
+      aka: "Pekinges, Peke, Pekinese",
+      text: [
+        "Pekingese är en liten, lejonliknande dvärghund från Kina med måttligt lång, rak päls och en man runt halsen. FCI-standarden anger en idealvikt på högst 5 kg för hanar och 5,4 kg för tikar; PDSA anger en genomsnittlig vikt på 5 kg och en mankhöjd på 15–22 cm. En hund av den här storleken är fullvuxen vid ungefär 8–12 månader (PetMD). PDSA anger en livslängd på över 12 år, PetMD 12–14 år.",
+        "PDSA rekommenderar minst en halvtimmes motion om dagen utan att överdriva, eftersom det platta ansiktet kan göra det svårt att andas, och ingen motion alls när det är varmt. Den långa pälsen behöver borstas varje dag, och rasen fäller mycket, särskilt på våren och hösten. Enligt PDSA kan ansiktsrynkorna leda till infektioner i hudvecken. Pekingesen trivs oftast bättre med vuxna eller äldre barn, kan drabbas av separationsångest när den lämnas ensam och bör socialiseras från ung ålder. PetMD rekommenderar daglig tandborstning, rengöring av öronen var eller varannan vecka och, om pälsen hålls lång, professionell pälsvård var sjätte till åttonde vecka.",
+      ],
+      sources: ["S690", "S693", "S694", "S10"],
+    },
     anatolian_shepherd_dog: {
       aka: "Kangal, Anatolian Shepherd Dog, Karabash",
       text: [
