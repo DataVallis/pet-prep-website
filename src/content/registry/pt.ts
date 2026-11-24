@@ -1690,6 +1690,22 @@ const pt: RegistryCopy = {
       ],
       sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
     },
+    bracco_italiano: {
+      aka: "Braco italiano, Bracco Italiano, Italian Pointer, Italian Pointing Dog, Bracco",
+      text: [
+        "O braco italiano (Bracco Italiano) é um cão de parar originário de Itália; a FCI inclui-o no Grupo 7, entre os cães de parar continentais do tipo braco. O padrão da FCI descreve um cão de constituição forte e harmoniosa e aspeto poderoso, com pelo curto, denso e brilhante e orelhas compridas que chegam à ponta do focinho; admite o branco, o branco com manchas laranja ou âmbar, o branco com manchas castanhas, o ruão laranja e o ruão fígado. Indica uma altura de 58–67 cm nos machos e 55–62 cm nas fêmeas e um peso de 25–40 kg consoante o porte. Um cão deste porte atinge o tamanho adulto por volta dos 15–18 meses (classe de tamanho da PetMD). O Royal Kennel Club indica uma esperança de vida de menos de 10 anos, a PetMD de 10–14 anos e o Bracco Italiano Club of America uma mediana de 11 anos.",
+        "O Royal Kennel Club recomenda mais de 2 horas de exercício por dia e cuidados com o pelo uma vez por semana, indica que a raça larga pelo e se adapta a uma casa grande com um jardim grande no campo, e inclui-a na categoria 1 do Breed Watch. A PetMD descreve um cão brincalhão, inteligente, meigo e afetuoso, geralmente bom com outros cães e com crianças, que gosta de estar perto da família e pode não se adaptar a um lar onde se passa muito tempo fora de casa; recomenda socialização precoce, escovagem semanal e limitar o exercício imediatamente antes e depois das refeições, devido ao risco de dilatação-torção gástrica. O Bracco Italiano Club of America pede aos criadores que façam o rastreio da anca, do cotovelo, dos olhos e dos rins dos progenitores.",
+      ],
+      sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
+    },
+    german_pinscher: {
+      aka: "Pinscher alemão, Deutscher Pinscher, Standard Pinscher, Pinscher médio, German Pinscher",
+      text: [
+        "O pinscher alemão (Deutscher Pinscher) é um cão de guarda e companhia originário da Alemanha, antepassado do dobermann e do pinscher anão; a FCI inclui-o no Grupo 2, entre os cães do tipo pinscher e schnauzer. O padrão da FCI descreve um cão de pelo curto, porte médio, elegante e de construção quadrada, com porte orgulhoso e temperamento vivo, brioso, seguro de si e equilibrado, com orelhas naturais descaídas em forma de V e cauda natural; admite apenas as cores uniformes, do vermelho-veado ao vermelho-acastanhado escuro, e o preto laca com marcas vermelhas ou castanhas. Indica uma altura de 45–50 cm e um peso de 14–20 kg nos machos e nas fêmeas. Um cão deste porte atinge o tamanho adulto por volta dos 12–15 meses (classe de tamanho da PetMD). O Royal Kennel Club indica uma esperança de vida de mais de 10 anos e a PetMD e a WebMD de 12–14 anos.",
+        "O Royal Kennel Club recomenda até 1 hora de exercício por dia e cuidados com o pelo uma vez por semana, indica que a raça larga pelo, se integra bem na vida familiar e se adapta a uma casa pequena com um jardim pequeno ou médio, e inclui-a na categoria 1 do Breed Watch. A PetMD diz que os pinschers alemães podem dar-se bem com crianças se forem bem treinados e socializados, sempre com supervisão, têm um instinto de caça forte e precisam de um jardim vedado e de estimulação mental diária; recomenda socialização consistente desde cachorros, escovagem semanal, limpeza semanal das orelhas e banho a cada seis a oito semanas. A WebMD diz que são adequados para donos experientes e que as unhas precisam de ser cortadas uma vez por mês.",
+      ],
+      sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapphund, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, Lapphund finlandês",
       text: [
