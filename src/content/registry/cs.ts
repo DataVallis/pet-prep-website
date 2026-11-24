@@ -1557,6 +1557,22 @@ const cs: RegistryCopy = {
       ],
       sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
     },
+    bracco_italiano: {
+      aka: "Italian Pointer, Italian Pointing Dog, Bracco, italský ohař",
+      text: [
+        "Bracco Italiano (italský ohař) je ohař z Itálie, který zvěř vystavuje; FCI ho řadí do skupiny 7 mezi kontinentální ohaře typu braque. Standard FCI popisuje pevně a harmonicky stavěného psa mohutného vzhledu s krátkou, hustou a lesklou srstí a dlouhýma ušima, které sahají až ke špičce nosu; připouští bílou, bílou s oranžovými nebo jantarovými skvrnami, bílou s hnědými skvrnami, oranžově kropenatou a játrově kropenatou. Uvádí výšku 58–67 cm u psů a 55–62 cm u fen a hmotnost 25–40 kg podle velikosti. Pes této velikosti dorůstá zhruba v 15–18 měsících (PetMD). Royal Kennel Club uvádí délku života pod 10 let, PetMD 10–14 let a Bracco Italiano Club of America medián 11 let.",
+        "Royal Kennel Club doporučuje více než 2 hodiny pohybu denně a péči o srst jednou týdně, uvádí, že plemeno líná a hodí se do velkého domu s velkou zahradou na venkově, a řadí je do kategorie 1 programu Breed Watch. PetMD popisuje hravého, inteligentního, mírného a mazlivého psa, který obvykle vychází s jinými psy i s dětmi, rád je blízko svým lidem a nemusí se hodit do rodiny, která je často pryč z domova; radí brzy socializovat, kartáčovat jednou týdně a omezit pohyb těsně před jídlem a po něm kvůli riziku nadmutí žaludku. Bracco Italiano Club of America žádá chovatele, aby u rodičů nechali vyšetřit kyčle, lokty, oči a ledviny.",
+      ],
+      sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
+    },
+    german_pinscher: {
+      aka: "Deutscher Pinscher, Standard Pinscher, střední pinč",
+      text: [
+        "Německý pinč (Deutscher Pinscher) je hlídací a společenský pes z Německa, předek dobrmana a malého pinče; FCI ho řadí do skupiny 2 mezi pinče a knírače. Standard FCI popisuje hladkosrstého, středně velkého, elegantního psa čtvercového formátu s hrdým držením těla a živou, temperamentní, sebejistou a vyrovnanou povahou, s přirozenými klopenými ušima ve tvaru V a přirozeným ocasem; připouští jen jednobarevnou jelenovitě červenou až tmavě červenohnědou srst nebo lesklou černou s rudým či hnědým pálením. Uvádí výšku 45–50 cm a hmotnost 14–20 kg u psů i fen. Pes této velikosti dorůstá zhruba ve 12–15 měsících (PetMD). Royal Kennel Club uvádí délku života přes 10 let, PetMD a WebMD 12–14 let.",
+        "Royal Kennel Club doporučuje až 1 hodinu pohybu denně a péči o srst jednou týdně, uvádí, že plemeno líná, dobře zapadá do rodinného života a hodí se do malého domu s malou nebo střední zahradou, a řadí je do kategorie 1 programu Breed Watch. PetMD píše, že němečtí pinčové mohou s dětmi dobře vycházet, pokud jsou dobře vycvičení a socializovaní, vždy však pod dohledem; mají silný lovecký pud a potřebují oplocenou zahradu a každodenní duševní podněty. Radí důsledně socializovat už od štěněcího věku, kartáčovat a čistit uši jednou týdně a koupat zhruba každých šest až osm týdnů. WebMD uvádí, že se hodí zkušenému majiteli a že jim je třeba jednou měsíčně zastřihávat drápky.",
+      ],
+      sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, finský laponský pes",
       text: [
