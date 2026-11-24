@@ -1160,6 +1160,20 @@
         "German Pinscher"
       ]
     },
+    "bedlington_terrier": {
+      "name": "Bedlington Terrier",
+      "slug": "bedlington-terrier",
+      "synonyms": [
+        "Bedlington",
+        "Bedlington terrier"
+      ],
+      "colours": {
+        "blue": "Bleu",
+        "liver": "Foie",
+        "blue-tan": "Bleu et feu",
+        "liver-tan": "Foie et feu"
+      }
+    },
     "toy_fox_terrier": {
       "name": "Toy Fox Terrier",
       "slug": "toy-fox-terrier",
