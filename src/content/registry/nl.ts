@@ -1701,6 +1701,22 @@ const nl: RegistryCopy = {
       ],
       sources: ["S312","S313","S1019","S1020","S1021","S10"],
     },
+    bracco_italiano: {
+      aka: "Italiaanse staande hond, Italian Pointer, Italian Pointing Dog, Bracco",
+      text: [
+        "De bracco italiano (Italiaanse staande hond) is een staande jachthond uit Italië; de FCI plaatst hem in groep 7, bij de continentale staande honden van het braquetype. De FCI-standaard beschrijft een stevig en harmonieus gebouwde hond met een krachtige uitstraling, een korte, dichte en glanzende vacht en lange oren die tot de punt van de neus reiken; toegestaan zijn wit, wit met oranje of amberkleurige vlekken, wit met bruine vlekken, oranjeschimmel en leverbruinschimmel. De standaard noemt een schofthoogte van 58–67 cm voor reuen en 55–62 cm voor teven en een gewicht van 25–40 kg, afhankelijk van de grootte; een hond van dit formaat is volgroeid rond 15–18 maanden (PetMD-grootteklasse). De Royal Kennel Club noemt een levensverwachting van minder dan 10 jaar, PetMD 10–14 jaar en de Bracco Italiano Club of America een gemiddelde van 11 jaar.",
+        "De Royal Kennel Club raadt meer dan 2 uur beweging per dag aan en wekelijkse vachtverzorging, meldt dat het ras verhaart en past bij een groot huis met een grote tuin op het platteland, en plaatst het in Breed Watch-categorie 1. PetMD beschrijft een speelse, intelligente, zachtaardige en aanhankelijke hond die over het algemeen goed overweg kan met andere honden en kinderen, graag dicht bij zijn mensen is en mogelijk niet geschikt is voor een gezin dat vaak van huis is. Zij raadt vroege socialisatie en wekelijks borstelen aan en adviseert de beweging vlak voor en na de maaltijd te beperken vanwege het risico op maagtorsie. De Bracco Italiano Club of America vraagt fokkers om de heupen, ellebogen, ogen en nieren van de ouderdieren te laten onderzoeken.",
+      ],
+      sources: ["S1023","S1024","S1027","S1028","S10"],
+    },
+    german_pinscher: {
+      aka: "Deutscher Pinscher, Standard Pinscher, Middenslag pinscher, Pinscher",
+      text: [
+        "De Duitse pinscher (Deutscher Pinscher) is een waak- en gezelschapshond uit Duitsland en de voorouder van de dobermann en de dwergpinscher; de FCI plaatst hem in groep 2, bij de pinschers en schnauzers. De FCI-standaard beschrijft een kortharige, middelgrote, elegante en vierkant gebouwde hond met een trotse houding, een levendig, pittig, zelfverzekerd en evenwichtig temperament, natuurlijke V-vormige hangoren en een natuurlijke staart; toegestaan zijn alleen effen hertrood tot donkerroodbruin en glanzend zwart met rode of bruine aftekeningen. De standaard noemt een schofthoogte van 45–50 cm en een gewicht van 14–20 kg voor zowel reuen als teven; een hond van dit formaat is volgroeid rond 12–15 maanden (PetMD-grootteklasse). De Royal Kennel Club noemt een levensverwachting van meer dan 10 jaar en PetMD en WebMD 12–14 jaar.",
+        "De Royal Kennel Club raadt tot 1 uur beweging per dag aan en wekelijkse vachtverzorging, meldt dat het ras verhaart, goed in een gezin past en geschikt is voor een klein huis met een kleine of middelgrote tuin, en plaatst het in Breed Watch-categorie 1. PetMD schrijft dat Duitse pinschers goed met kinderen overweg kunnen als ze goed getraind en gesocialiseerd zijn en altijd onder toezicht staan, dat ze een sterk jachtinstinct hebben en een omheinde tuin en dagelijkse mentale stimulatie nodig hebben. Zij raadt consequente socialisatie vanaf pupleeftijd aan, wekelijks borstelen, elke week de oren schoonmaken en ongeveer eens per zes tot acht weken baden. WebMD zegt dat ze geschikt zijn voor ervaren eigenaren en dat de nagels maandelijks geknipt moeten worden.",
+      ],
+      sources: ["S1030","S1031","S1032","S1033","S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, Finse lappenhond",
       text: [
