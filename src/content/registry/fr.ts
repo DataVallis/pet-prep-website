@@ -1516,6 +1516,14 @@ const fr: RegistryCopy = {
       ],
       sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
     },
+    bedlington_terrier: {
+      aka: "Bedlington, Bedlington terrier",
+      text: [
+        "Le Bedlington Terrier est un terrier originaire de Grande-Bretagne, qui doit son nom à la ville minière de Bedlington, dans le Northumberland ; la FCI le classe dans le groupe 3, parmi les terriers de grande et moyenne taille. Le standard FCI décrit un chien gracieux, souple et musclé, de bon caractère, affectueux et digne, plein d’entrain et de confiance, au poil très caractéristique, épais et floconneux, bien décollé de la peau, avec une houppe fournie, presque blanche ; il admet le bleu, le foie ou le sable, avec ou sans feu. Il indique une hauteur d’environ 41 cm et un poids de 8,2–10,4 kg. Un chien de ce gabarit atteint sa taille adulte vers 9 à 12 mois (catégorie de gabarit PetMD). Une étude britannique de 2024 présentée par le Dogs Trust relève une espérance de vie médiane de 13,7 ans, et la PDSA donne une espérance de vie de plus de 10 ans.",
+        "La PDSA recommande au moins une heure d’exercice par jour et écrit que le Bedlington ne perd pas énormément de poils, qu’il peut se montrer patient et tolérant avec les enfants sous surveillance, qu’il a un instinct de prédation très fort et qu’il ne faut pas le laisser seul plus de quatre heures ; elle range parmi les affections à connaître la toxicose du cuivre, une accumulation héréditaire de cuivre dans le foie, et conseille un toilettage professionnel environ toutes les six semaines pour garder la coupe classique. Woodgreen recommande un brossage deux à trois fois par semaine et un jardin entièrement clôturé, et précise que la race ne convient pas bien à la vie en appartement. PetMD écrit qu’il convient aux familles avec des enfants plus âgés et qu’il a besoin d’une socialisation constante dès le plus jeune âge ; WebMD recommande un brossage des dents quotidien.",
+      ],
+      sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
+    },
     toy_fox_terrier: {
       aka: "American Toy Terrier, Amertoy, TFT",
       text: [
