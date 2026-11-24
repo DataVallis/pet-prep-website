@@ -1619,6 +1619,14 @@ const de: RegistryCopy = {
       ],
       sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
     },
+    bracco_italiano: {
+      aka: "Bracco Italiano, Italian Pointer, Italian Pointing Dog, Bracco, Italienischer Vorstehhund",
+      text: [
+        "Der Bracco Italiano (Italian Pointing Dog) ist ein italienischer Vorstehhund; die FCI führt ihn in Gruppe 7 unter den Kontinentalen Vorstehhunden vom Typ „Braque“. Der FCI-Standard beschreibt einen kräftigen, harmonisch gebauten Hund von mächtiger Erscheinung mit kurzem, dichtem, glänzendem Haar und langen Ohren, die bis zur Nasenspitze reichen; zugelassen sind Weiß, Weiß mit orangefarbenen oder bernsteinfarbenen Abzeichen, Weiß mit braunen Abzeichen, Orangeschimmel und Braunschimmel. Als Widerristhöhe nennt der Standard 58–67 cm für Rüden und 55–62 cm für Hündinnen, als Gewicht je nach Größe 25–40 kg. Ein Hund dieser Größe ist mit etwa 15–18 Monaten ausgewachsen (PetMD-Größenklasse). Der Royal Kennel Club gibt eine Lebenserwartung von unter 10 Jahren an, PetMD 10–14 Jahre und der Bracco Italiano Club of America einen Median von 11 Jahren.",
+        "Der Royal Kennel Club empfiehlt mehr als 2 Stunden Bewegung am Tag und einmal pro Woche Fellpflege, sagt, die Rasse haare und eigne sich für ein großes Haus mit großem Garten auf dem Land, und führt sie in Breed-Watch-Kategorie 1. PetMD beschreibt einen verspielten, intelligenten, sanften und anhänglichen Hund, der in der Regel gut mit anderen Hunden und mit Kindern auskommt, gern in der Nähe seiner Menschen ist und für Familien, die oft außer Haus sind, womöglich nicht passt; empfohlen werden frühe Sozialisierung, wöchentliches Bürsten und eine Einschränkung der Bewegung unmittelbar vor und nach den Mahlzeiten wegen des Risikos einer Magendrehung. Der Bracco Italiano Club of America bittet Züchter, bei den Elterntieren Hüft- und Ellbogengelenke, Augen und Nieren untersuchen zu lassen.",
+      ],
+      sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnischer Lapphund, Finnish Lapphund, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
       text: [
