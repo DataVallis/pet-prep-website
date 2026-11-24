@@ -1573,6 +1573,14 @@ const cs: RegistryCopy = {
       ],
       sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
     },
+    bedlington_terrier: {
+      aka: "Bedlington, Bedlington teriér, Bedlington terrier",
+      text: [
+        "Bedlingtonský teriér pochází z Velké Británie a jméno dostal podle hornického města Bedlington v Northumberlandu; FCI ho řadí do skupiny 3 mezi velké a střední teriéry. Standard FCI popisuje půvabného, pružného a svalnatého psa dobré povahy, který je přítulný a důstojný, temperamentní a sebevědomý, s velmi výraznou hustou, nadýchanou srstí, která od kůže odstává, a bohatou, téměř bílou kšticí na hlavě; připouští modrou, játrovou nebo pískovou barvu, s pálením i bez pálení. Uvádí výšku asi 41 cm a hmotnost 8,2–10,4 kg; pes této velikosti dorůstá zhruba v 9–12 měsících (velikostní třída PetMD). Britská studie z roku 2024 (podle Dogs Trust) uvádí medián délky života 13,7 roku, PDSA pak přes 10 let.",
+        "PDSA doporučuje nejméně hodinu pohybu denně a uvádí, že bedlingtonští teriéři línají jen málo, pod dohledem mohou být k dětem trpěliví a tolerantní, mají velmi silný lovecký pud a neměli by zůstávat sami déle než čtyři hodiny; mezi zdravotními problémy, které je dobré znát, jmenuje toxikózu mědi, dědičné hromadění mědi v játrech, a doporučuje profesionální střih zhruba každých šest týdnů kvůli typickému vzhledu. Woodgreen doporučuje kartáčovat je dvakrát až třikrát týdně a mít plně oplocenou zahradu a uvádí, že se pro život v bytě příliš nehodí. PetMD píše, že se hodí do rodin se staršími dětmi a že je třeba je od štěněcího věku důsledně socializovat; WebMD doporučuje čistit jim zuby každý den.",
+      ],
+      sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, finský laponský pes",
       text: [
