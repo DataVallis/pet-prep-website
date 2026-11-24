@@ -484,6 +484,7 @@ const fi: RegistryCopy = {
       dna_gm1: "DNA-testi: GM1-gangliosidoosi (perinnöllinen hermoston sairaus)",
       dna_gm2: "DNA-testi: GM2-gangliosidoosi (perinnöllinen hermoston sairaus)",
       dna_vwd3: "DNA-testi: von Willebrandin tauti, tyyppi 3 (vWD3) – perinnöllinen verenvuotohäiriö",
+      dna_commd1: "Kuparitoksikoositesti (COMMD1), perinnöllinen kuparin kertyminen maksaan",
       dna_pra_rcd3: "DNA-testi: etenevä verkkokalvon surkastuma (PRA-rcd3)",
       dna_clad: "DNA-testi: koiran leukosyyttien adheesiovaje (CLAD), perinnöllinen immuunipuutos",
       dna_ncl8: "DNA-testi neuronaalisen seroidilipofuskinoosin (NCL8) varalta – perinnöllinen hermoston sairaus",
@@ -544,6 +545,8 @@ const fi: RegistryCopy = {
     merle_to_merle_breeding:
       "Merle on tällä rodulla rotumääritelmän mukainen väri; kahta merlekoiraa ei pidä pariuttaa keskenään, koska tällaisilla pennuilla on heikentyneen näön ja kuulon riski – The Royal Kennel Club ei rekisteröi niitä.",
     kneecap_luxation: "Rodulla esiintyy patellaluksaatiota, jossa polvilumpio siirtyy tilapäisesti pois paikaltaan.",
+    copper_liver_disease: "Rodulla esiintyy kuparitoksikoosia eli perinnöllistä kuparin kertymistä maksaan, joka voi johtaa krooniseen maksatulehdukseen; kasvattajat voivat testata sen.",
+    retinal_eye_conditions: "Rodulla esiintyy perinnöllisiä silmäsairauksia, kuten verkkokalvon dysplasiaa; silmätutkimuksia on saatavilla.",
     pra_and_eyelashes:
       "Rodulla esiintyy silmäongelmia: etenevää verkkokalvon surkastumaa, joka voi vähitellen johtaa sokeuteen, ja ylimääräisiä silmäripsiä, jotka hankaavat silmää (distikiaasi); kasvattajia neuvotaan tutkituttamaan vanhempien silmät.",
     liver_shunt: "Rodulla voi esiintyä maksasunttia (portosysteeminen suntti), jossa veri ohittaa maksan.",

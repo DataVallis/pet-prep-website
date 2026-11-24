@@ -371,6 +371,7 @@ const sl: RegistryCopy = {
       dna_gm1: "Test DNK za gangliozidozo GM1 (dedna bolezen živčevja)",
       dna_gm2: "Test DNK za gangliozidozo GM2 (dedna bolezen živčevja)",
       dna_vwd3: "Test DNK za von Willebrandovo bolezen tipa 3 (vWD3), dedno motnjo strjevanja krvi",
+      dna_commd1: "Test za bakrovo toksikozo (COMMD1), dedno kopičenje bakra v jetrih",
       dna_pra_rcd3: "Test DNK za progresivno atrofijo mrežnice (PRA-rcd3)",
       dna_clad: "Test DNK za pomanjkanje adhezije levkocitov (CLAD), dedno motnjo imunskega sistema",
       dna_ncl8: "Test DNK za nevronsko ceroidno lipofuscinozo (NCL8), dedno bolezen živčevja",
@@ -435,6 +436,8 @@ const sl: RegistryCopy = {
     drug_sensitivity_mdr1: "Nekateri psi te pasme so dedno občutljivi na nekatera zdravila (MDR1) – če je vaš pes občutljiv, to povejte veterinarju.",
     merle_to_merle_breeding: "Merle je pri tej pasmi barva iz standarda; dveh psov merle pa ne smemo pariti med seboj, ker imajo takšni mladiči večje tveganje za okvare vida in sluha – The Royal Kennel Club jih ne registrira.",
     kneecap_luxation: "Pri pasmi se pojavlja zdrsavanje pogačice (luksacija patele), ko pogačica začasno skoči iz ležišča.",
+    copper_liver_disease: "Pri pasmi se pojavlja bakrova toksikoza, dedno kopičenje bakra v jetrih, ki lahko vodi v kronični hepatitis; vzreditelji lahko starše testirajo.",
+    retinal_eye_conditions: "Pri pasmi se pojavljajo dedne bolezni oči, na primer displazija mrežnice; na voljo so pregledi oči.",
     pra_and_eyelashes: "Pri pasmi se pojavljajo težave z očmi: progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, in dodatne trepalnice, ki drgnejo oko (distihiaza); vzrediteljem svetujejo pregled oči staršev.",
     liver_shunt: "Pri pasmi se lahko pojavi portosistemski (jetrni) šant, pri katerem kri obide jetra.",
     skin_allergies: "Kožne alergije so pri pasmi znana skrb; The Royal Kennel Club sodnikom naroča, naj bodo pozorni na znake vnetja kože, lastnikom pa svetujejo, naj se pred izbiro šampona posvetujejo z veterinarjem.",
@@ -943,6 +946,14 @@ const sl: RegistryCopy = {
         "The Royal Kennel Club priporoča do eno uro gibanja na dan in česanje enkrat na teden, navaja, da mu dlaka izpada, da se dobro vklopi v družinsko življenje in da mu zadošča manjša hiša z majhnim ali srednje velikim vrtom, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da je nemški pinč ob dobri vzgoji in socializaciji lahko dober z otroki, a vedno pod nadzorom, da ima močan lovski nagon, potrebuje ograjeno dvorišče in vsak dan miselne izzive; svetuje dosledno socializacijo od mladička, česanje in čiščenje ušes enkrat na teden ter kopanje približno vsakih šest do osem tednov. WebMD piše, da je primeren za izkušenega lastnika in da mu je treba kremplje striči enkrat na mesec.",
       ],
       sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
+    },
+    bedlington_terrier: {
+      aka: "bedlington, bedlingtonski terier, Bedlington Terrier",
+      text: [
+        "Bedlington terier je terier iz Velike Britanije, imenovan po rudarskem mestu Bedlington v Northumberlandu; FCI ga uvršča v 3. skupino med velike in srednje velike terierje. Standard FCI opisuje gracioznega, gibkega in mišičastega psa, dobre narave, ljubečega in dostojanstvenega, živahnega in samozavestnega, z zelo značilno gosto, mehko dlako, ki stoji stran od kože, in bujnim, skoraj belim čopom na glavi; dovoljuje modro, jetrno rjavo ali peščeno barvo, s porjavelimi oznakami ali brez njih. Navaja višino okoli 41 cm in težo 8,2–10,4 kg; pes te velikosti doraste pri približno 9–12 mesecih (velikostni razred PetMD). Britanska raziskava iz leta 2024, ki jo povzema Dogs Trust, navaja mediano življenjske dobe 13,7 leta, PDSA pa več kot 10 let.",
+        "PDSA priporoča vsaj eno uro gibanja na dan in piše, da bedlingtonu dlaka ne izpada močno, da je lahko potrpežljiv in strpen do otrok (vedno pod nadzorom), da ima zelo močan lovski nagon in naj ne bo sam več kot štiri ure; med boleznimi navaja bakrovo toksikozo, dedno kopičenje bakra v jetrih, za klasičen videz pa obisk pri pasjem frizerju približno vsakih šest tednov. Woodgreen svetuje česanje dva- do trikrat na teden in povsem ograjen vrt ter piše, da ni primeren za stanovanje. PetMD piše, da je primeren za družine s starejšimi otroki in da mladiček potrebuje dosledno socializacijo; WebMD svetuje vsakodnevno ščetkanje zob.",
+      ],
+      sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
     },
 
     finnish_lapphund: {
