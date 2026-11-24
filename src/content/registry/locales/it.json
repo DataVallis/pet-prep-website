@@ -1173,6 +1173,35 @@
         "Italian Pointing Dog"
       ]
     },
+    "german_pinscher": {
+      "name": "Pinscher tedesco",
+      "slug": "pinscher-tedesco",
+      "synonyms": [
+        "Pinscher",
+        "Deutscher Pinscher",
+        "German Pinscher",
+        "Standard Pinscher",
+        "Pinscher medio"
+      ],
+      "colours": {
+        "black-tan": "Nero e focato",
+        "red": "Rosso"
+      }
+    },
+    "bedlington_terrier": {
+      "name": "Bedlington terrier",
+      "slug": "bedlington-terrier",
+      "synonyms": [
+        "Bedlington",
+        "Terrier di Bedlington"
+      ],
+      "colours": {
+        "blue": "Blu",
+        "liver": "Fegato",
+        "blue-tan": "Blu e focato",
+        "liver-tan": "Fegato e focato"
+      }
+    },
     "toy_fox_terrier": {
       "name": "Toy fox terrier",
       "slug": "toy-fox-terrier",
