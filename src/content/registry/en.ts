@@ -916,6 +916,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
     },
+    german_pinscher: {
+      aka: "Deutscher Pinscher, Standard Pinscher, Pinscher, nemški pinč, srednji pinč",
+      text: [
+        "The German Pinscher (Deutscher Pinscher) is a watch and companion dog from Germany and the ancestor of the Dobermann and the Miniature Pinscher; the FCI lists it in Group 2 among the Pinscher and Schnauzer types. The FCI standard describes a smooth-haired, medium-sized, elegant and square-built dog with a proud carriage, a lively, spirited, self-assured and even temperament, natural V-shaped drop ears and a natural tail; it allows only self-coloured deer red to dark red-brown and lacquer black with red or brown markings. It gives a height of 45–50 cm and a weight of 14–20 kg for dogs and bitches; a dog of this size is fully grown at about 12–15 months (PetMD size class). The Royal Kennel Club gives a lifespan of over 10 years, and PetMD and WebMD 12–14 years.",
+        "The Royal Kennel Club recommends up to 1 hour of exercise a day and grooming once a week, says the breed sheds, fits well into family life and suits a small house with a small or medium garden, and lists it in Breed Watch Category 1. PetMD says German Pinschers can be good with children when well trained and socialised, always with supervision, have a strong prey drive and need a fenced yard and daily mental stimulation; it recommends consistent socialisation from puppyhood, weekly brushing, weekly ear cleaning and a bath about every six to eight weeks. WebMD says they suit an experienced owner and that their nails need trimming monthly.",
+      ],
+      sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
+    },
 
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, finski laponski pes",

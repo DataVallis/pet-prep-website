@@ -936,6 +936,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
     },
+    german_pinscher: {
+      aka: "pinč, srednji pinč, nemski pinc, German Pinscher, Deutscher Pinscher, Standard Pinscher",
+      text: [
+        "Nemški pinč (Deutscher Pinscher) je čuvaj in družabni pes iz Nemčije ter prednik dobermana in pritlikavega pinča; FCI ga uvršča v 2. skupino med pinče in šnavcerje. Standard FCI opisuje gladkodlakega, srednje velikega, elegantnega psa kvadratne postave in ponosne drže, živahnega, samozavestnega in uravnovešenega značaja, z naravnimi povešenimi uhlji v obliki črke V in naravnim repom; dovoljuje le enobarvno jelenje rdečo do temno rdečerjavo ter lakasto črno barvo z rdečimi ali rjavimi oznakami. Navaja višino 45–50 cm in težo 14–20 kg za pse in psice; pes te velikosti doraste pri približno 12–15 mesecih (velikostni razred PetMD). The Royal Kennel Club navaja življenjsko dobo več kot 10 let, PetMD in WebMD pa 12–14 let.",
+        "The Royal Kennel Club priporoča do eno uro gibanja na dan in česanje enkrat na teden, navaja, da mu dlaka izpada, da se dobro vklopi v družinsko življenje in da mu zadošča manjša hiša z majhnim ali srednje velikim vrtom, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD piše, da je nemški pinč ob dobri vzgoji in socializaciji lahko dober z otroki, a vedno pod nadzorom, da ima močan lovski nagon, potrebuje ograjeno dvorišče in vsak dan miselne izzive; svetuje dosledno socializacijo od mladička, česanje in čiščenje ušes enkrat na teden ter kopanje približno vsakih šest do osem tednov. WebMD piše, da je primeren za izkušenega lastnika in da mu je treba kremplje striči enkrat na mesec.",
+      ],
+      sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
+    },
 
     finnish_lapphund: {
       aka: "finski laponski pes, finski lapphund, laponski pes, lapinkoira, suomenlapinkoira, Finnish Lapphund, Finnish Lapponian Dog",
