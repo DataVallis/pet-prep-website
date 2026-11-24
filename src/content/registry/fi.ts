@@ -1865,6 +1865,30 @@ const fi: RegistryCopy = {
       ],
       sources: ["S690", "S693", "S694", "S10"],
     },
+    bracco_italiano: {
+      aka: "Bracco Italiano, Italian Pointer, Italian Pointing Dog, Bracco",
+      text: [
+        "Italianseisoja (Bracco Italiano, englanniksi Italian Pointing Dog) on Italiasta kotoisin oleva seisova lintukoira. FCI sijoittaa sen ryhmään 7, mannermaisiin seisoviin koiriin ”braque”-tyyppisten rotujen joukkoon. FCI:n rotumääritelmän mukaan se on vahvarakenteinen ja sopusuhtainen, voimakkaan vaikutelman antava koira, jolla on lyhyt, tiivis ja kiiltävä turkki sekä pitkät korvat, jotka yltävät kuonon kärkeen. Sallittuja värejä ovat valkoinen, valkoinen oranssein tai meripihkan värisin laikuin, valkoinen ruskein laikuin, oranssi sekakarvainen ja maksanruskea sekakarvainen. Säkäkorkeus on uroksilla 58–67 cm ja nartuilla 55–62 cm, ja paino on koosta riippuen 25–40 kg. Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD:n kokoluokka). The Royal Kennel Club ilmoittaa eliniäksi alle 10 vuotta, PetMD 10–14 vuotta ja Bracco Italiano Club of America mediaaniksi 11 vuotta.",
+        "The Royal Kennel Club suosittelee yli 2 tuntia liikuntaa päivässä ja turkinhoitoa kerran viikossa. Sen mukaan rotu karvaa ja sopii maalle isoon taloon, jossa on iso piha. Rotu kuuluu sen Breed Watch -luokkaan 1. PetMD kuvaa rodun leikkisäksi, älykkääksi, lempeäksi ja kiintyväksi. Rotu tulee yleensä hyvin toimeen muiden koirien ja lasten kanssa ja haluaa olla lähellä ihmisiään, joten se ei välttämättä sovi perheelle, joka on usein poissa kotoa. PetMD suosittelee varhaista sosiaalistamista, harjausta kerran viikossa sekä liikunnan rajoittamista juuri ennen ruokailua ja sen jälkeen mahalaukun kiertymän riskin vuoksi. Bracco Italiano Club of America toivoo kasvattajien tutkivan vanhempien lonkat, kyynärpäät, silmät ja munuaiset.",
+      ],
+      sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
+    },
+    german_pinscher: {
+      aka: "Deutscher Pinscher, Standard Pinscher, Pinscher",
+      text: [
+        "Saksanpinseri (saksaksi Deutscher Pinscher) on Saksasta kotoisin oleva vartio- ja seurakoira sekä dobermannin ja kääpiöpinserin esi-isä. FCI sijoittaa sen ryhmään 2, pinserien ja snautserien joukkoon. FCI:n rotumääritelmän mukaan se on sileäkarvainen, keskikokoinen, tyylikäs ja neliömäinen koira, jolla on ylväs ryhti sekä vilkas, tulinen, itsevarma ja tasainen luonne. Korvat ovat luonnostaan V-muotoiset ja luppaiset, ja häntä on luonnollinen. Sallittuja värejä ovat vain yksivärinen peuranpunaisesta tummanpunaruskeaan sekä kiiltävän musta punaisin tai ruskein merkein. Säkäkorkeus on 45–50 cm ja paino 14–20 kg sekä uroksilla että nartuilla. Tämänkokoinen koira on täysikasvuinen noin 12–15 kuukauden iässä (PetMD:n kokoluokka). The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta ja PetMD sekä WebMD 12–14 vuotta.",
+        "The Royal Kennel Club suosittelee enintään tunnin liikuntaa päivässä ja turkinhoitoa kerran viikossa. Sen mukaan rotu karvaa, sopeutuu hyvin perhe-elämään ja sopii pieneen taloon, jossa on pieni tai keskikokoinen piha. Rotu kuuluu sen Breed Watch -luokkaan 1. PetMD:n mukaan saksanpinserit voivat tulla hyvin toimeen lasten kanssa, kun ne on koulutettu ja sosiaalistettu hyvin, aina valvotusti. Niillä on voimakas saalisvietti, ja ne tarvitsevat aidatun pihan ja päivittäistä henkistä virikettä. PetMD suosittelee johdonmukaista sosiaalistamista pennusta alkaen, harjausta kerran viikossa, korvien puhdistusta kerran viikossa ja kylpyä noin 6–8 viikon välein. WebMD:n mukaan rotu sopii kokeneelle omistajalle ja sen kynnet pitää leikata kerran kuukaudessa.",
+      ],
+      sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
+    },
+    bedlington_terrier: {
+      aka: "Bedlington, Bedlington terrier, bedlingtoninterrieri",
+      text: [
+        "Bedlingtoninterrieri on Isosta-Britanniasta kotoisin oleva terrieri, joka on saanut nimensä Northumberlandin kaivoskaupungista Bedlingtonista. FCI sijoittaa sen ryhmään 3, isojen ja keskikokoisten terrierien joukkoon. FCI:n rotumääritelmän mukaan se on sulavalinjainen, notkea ja lihaksikas koira, joka on hyväluonteinen, hellä ja arvokas, tulinen ja täynnä itseluottamusta. Turkki on hyvin tunnusomainen: paksu ja nukkamainen, ja se törröttää selvästi irti ihosta. Päälaen tupsu on runsas ja lähes valkoinen. Sallittuja värejä ovat sininen, maksanruskea tai hiekanvärinen, joko ruskein merkein tai ilman. Säkäkorkeus on noin 41 cm ja paino 8,2–10,4 kg. Tämänkokoinen koira on täysikasvuinen noin 9–12 kuukauden iässä (PetMD:n kokoluokka). Dogs Trustin esittelemässä brittiläisessä vuoden 2024 tutkimuksessa eliniän mediaaniksi saatiin 13,7 vuotta, ja PDSA ilmoittaa eliniäksi yli 10 vuotta.",
+        "PDSA suosittelee vähintään tunnin liikuntaa päivässä. Sen mukaan bedlingtoninterrierit eivät karvaa kovin paljon, voivat olla kärsivällisiä ja sietäviä lasten seurassa valvotusti, niillä on hyvin voimakas saalisvietti, eikä niitä pitäisi jättää yksin yli neljäksi tunniksi. PDSA mainitsee tunnetuiksi sairauksiksi muun muassa kuparitoksikoosin eli perinnöllisen kuparin kertymisen maksaan, ja suosittelee klassisen ulkonäön vuoksi ammattitrimmausta noin kuuden viikon välein. Woodgreen suosittelee harjausta kaksi tai kolme kertaa viikossa ja kokonaan aidattua pihaa, ja sen mukaan rotu ei sovellu hyvin kerrostaloasuntoon. PetMD:n mukaan ne sopivat perheisiin, joissa on isompia lapsia, ja tarvitsevat johdonmukaista sosiaalistamista pentuina. WebMD suosittelee hampaiden harjausta päivittäin.",
+      ],
+      sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
+    },
   },
 };
 
