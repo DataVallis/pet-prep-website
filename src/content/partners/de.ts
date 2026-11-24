@@ -54,12 +54,12 @@ export const de: PartnerLocalePack = {
     htmlLang: "de",
     company: "PetPrep (in Gründung)",
     title: "Pressemappe",
-    tagline: "Bereit für ein Tier. Und danach ein Leben lang an seiner Seite.",
+    tagline: "Bereit für ein Haustier. An seiner Seite – sein ganzes Leben lang.",
     what: {
       heading: "Was PetPrep ist",
       paragraphs: [
-        "PetPrep ist eine App mit Tierregister, die Familien hilft, sich auf einen Hund oder eine Katze vorzubereiten, bevor das Tier einzieht. In einer 12-wöchigen Challenge kümmert sich das Kind um ein realistisches KI-Haustier, und die Eltern sehen im Dashboard, wie die Pflege tatsächlich läuft.",
-        "Das Rasseregister erklärt, was jedes Tier braucht, mit angegebenen Quellen. Jede Zahl lässt sich bis zur Quelle zurückverfolgen, und jeder Partnerinhalt ist gekennzeichnet.",
+        "PetPrep ist eine App mit Tierregister, die Familien hilft, sich auf einen Hund oder eine Katze vorzubereiten, bevor das Haustier einzieht. In einer 12-wöchigen Challenge kümmert sich das Kind um ein realistisches KI-Haustier, und die Eltern sehen im Dashboard, wie die Pflege tatsächlich läuft.",
+        "Das Rasseregister erklärt, was jedes Haustier braucht, mit angegebenen Quellen. Jede Zahl lässt sich bis zur Quelle zurückverfolgen, und jeder Partnerinhalt ist gekennzeichnet.",
       ],
     },
     audience: {
@@ -83,7 +83,7 @@ export const de: PartnerLocalePack = {
       items: [
         ["Die App", "Eine 12-wöchige Challenge mit einem realistischen KI-Haustier und einem Dashboard für Eltern."],
         ["Rasseregister", "{breeds} {breeds|one=Rasse|other=Rassen} ({dogs} {dogs|one=Hund|other=Hunde}, {cats} {cats|one=Katze|other=Katzen}) mit Quellen, Stand: {date}."],
-        ["Serie „12 Weeks“", "Eine Videoserie, die 12 Wochen Haustierpflege begleitet; Raum für die Nennung eines Sponsors."],
+        ["Serie „12 Weeks“", "Eine Videoserie, die 12 Wochen Haustierpflege begleitet; Raum für die Nennung eines Sponsors."],
       ],
     },
     never: {
@@ -100,7 +100,7 @@ export const de: PartnerLocalePack = {
         "Sponsoring der Serie „12 Weeks“, gesponserte Inhalte, Versicherer, Gründungspartner im Verzeichnis sowie Tierheime und Vereine. Gekennzeichnet und ohne Einfluss auf Inhalt und Quellen.",
     },
     eyebrow: "Partner und Sponsoren",
-    title: "Erreichen Sie Familien kurz vor der Entscheidung für ein Tier.",
+    title: "Erreichen Sie Familien kurz vor der Entscheidung für ein Haustier.",
     lead:
       "PetPrep ist eine App mit Rasseregister, in der sich eine Familie vorbereitet, bevor sie einen Hund oder eine Katze nach Hause holt. Wir suchen Partner, denen verantwortungsvolle Tierhaltung am Herzen liegt und die dazu offen stehen – mit klar gekennzeichneter Zusammenarbeit.",
     blocks: [
@@ -108,7 +108,7 @@ export const de: PartnerLocalePack = {
         type: "prose",
         heading: "Für wen PetPrep gedacht ist",
         paragraphs: [
-          "PetPrep spricht Familien kurz vor der Entscheidung für ein Haustier an und Erwachsene, die prüfen, ob eine bestimmte Rasse wirklich zu ihnen passt. Unsere Leserinnen und Leser suchen nicht ins Blaue hinein: Sie wissen schon, welche Tierart und Rasse sie sich ansehen, und lesen im [Tierregister](page:animals), was dieses Tier braucht – mit angegebenen Quellen.",
+          "PetPrep spricht Familien kurz vor der Entscheidung für ein Haustier an und Erwachsene, die prüfen, ob eine bestimmte Rasse wirklich zu ihnen passt. Unsere Leserinnen und Leser suchen nicht ins Blaue hinein: Sie wissen schon, welche Tierart und Rasse sie sich ansehen, und lesen im [Tierregister](page:animals), was dieses Haustier braucht – mit angegebenen Quellen.",
           "Für Partner ist das ein seltener Moment. Die Entscheidung ist noch nicht gefallen, das Interesse aber konkret. Deshalb ist uns wichtig, dass jede Zusammenarbeit klar gekennzeichnet ist und nie verändert, was Familien bei uns lesen.",
         ],
       },
@@ -117,11 +117,11 @@ export const de: PartnerLocalePack = {
         heading: "So können wir zusammenarbeiten",
         columns: 3,
         items: [
-          { title: "Sponsoring der Serie „12 Weeks“", text: "Die Serie begleitet 12 Wochen Haustierpflege. Der Sponsor wird in der Folge und in ihrer Beschreibung genannt; er redigiert die Serie nicht." },
+          { title: "Sponsoring der Serie „12 Weeks“", text: "Die Serie begleitet 12 Wochen Haustierpflege. Der Sponsor wird in der Folge und in ihrer Beschreibung genannt; er redigiert die Serie nicht." },
           { title: "Gesponserte Inhalte auf petprep.si", text: "Ein Beitrag neben einer Rasseseite oder in der Wissensbasis. Er ist immer als gesponsert gekennzeichnet, und der Sponsor hat keinen Einfluss auf die Seite oder ihre angegebenen Quellen." },
           { title: "Versicherer", text: "Vergütung pro vermitteltem Kontakt oder ein festes Sponsoring. Wir geben einen Kontakt nur mit ausdrücklicher Einwilligung der Eltern weiter und nie Daten eines Kindes. Die Kontaktvermittlung ist in Vorbereitung und noch nicht verfügbar." },
           { title: "Gründungspartner im Verzeichnis", text: "Für Tierärzte, Hundeschulen, Hundefriseure und Züchter: ein hervorgehobener Eintrag mit Logo, Beschreibung und Link. 190 € pro Jahr; der Preis ist für Gründungspartner garantiert. Die Plätze sind pro Land begrenzt." },
-          { title: "Tierheime und Vereine", text: "Der Eintrag ist kostenlos. Sie können PetPrep Adoptierenden empfehlen, damit sie besser auf die Ankunft des Tieres vorbereitet sind." },
+          { title: "Tierheime und Vereine", text: "Der Eintrag ist kostenlos. Sie können PetPrep Adoptierenden empfehlen, damit sie besser auf die Ankunft des Haustieres vorbereitet sind." },
         ],
       },
       {

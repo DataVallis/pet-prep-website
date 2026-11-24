@@ -26,7 +26,7 @@ export const de: ShopCopy = {
     redeemed: "Dieser Gutschein wurde bereits eingelöst.",
     printHint: "Drucken Sie den Gutschein unten auf ein A4-Blatt und schreiben Sie Ihre Nachricht von Hand hinein.",
     downloadsHeading: "Ihre Dateien",
-    downloadsLead: "PDF, A4. Diese Links gelten 24 Stunden, die Links in der E-Mail 30 Tage.",
+    downloadsLead: "PDF, A4. Diese Links gelten 24 Stunden, die Links in der E-Mail 30 Tage.",
     download: "Herunterladen",
     manualHeading: "Gutschein mit Ihrem Code drucken",
     manualLead: "Sie haben den Code aus unserer E-Mail? Fügen Sie ihn hier ein, um den Gutschein erneut zu drucken.",
