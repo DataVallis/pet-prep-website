@@ -366,6 +366,7 @@ const en: RegistryCopy = {
       dna_gm1: "DNA test for GM1 gangliosidosis (an inherited disease of the nervous system)",
       dna_gm2: "DNA test for GM2 gangliosidosis (an inherited disease of the nervous system)",
       dna_vwd3: "DNA test for von Willebrand disease type 3 (vWD3), an inherited bleeding disorder",
+      dna_commd1: "Test for copper toxicosis (COMMD1), an inherited build-up of copper in the liver",
       dna_pra_rcd3: "DNA test for progressive retinal atrophy (PRA-rcd3)",
       dna_clad: "DNA test for canine leukocyte adhesion deficiency (CLAD), an inherited immune disorder",
       dna_ncl8: "DNA test for neuronal ceroid lipofuscinosis (NCL8), an inherited disease of the nervous system",
@@ -414,6 +415,8 @@ const en: RegistryCopy = {
     drug_sensitivity_mdr1: "Some dogs of the breed have an inherited sensitivity to certain medicines (multi-drug sensitivity, MDR1) — if your dog is affected, tell your vet.",
     merle_to_merle_breeding: "Merle is a standard colour in this breed; two merle dogs should not be bred together, because such puppies risk impaired sight and hearing — the Royal Kennel Club does not register them.",
     kneecap_luxation: "Luxating patellas, where the kneecap temporarily slips out of place, occur in the breed.",
+    copper_liver_disease: "Copper toxicosis, an inherited build-up of copper in the liver that can lead to chronic hepatitis, occurs in the breed; breeders can test for it.",
+    retinal_eye_conditions: "Inherited eye conditions such as retinal dysplasia occur in the breed; eye examinations are available.",
     pra_and_eyelashes: "Eye problems occur in the breed: progressive retinal atrophy, which can slowly lead to blindness, and extra eyelashes that rub on the eye (distichiasis); breeders are advised to have the parents' eyes tested.",
     liver_shunt: "A portosystemic (liver) shunt, where blood bypasses the liver, can occur in the breed.",
     skin_allergies: "Skin allergies are a known concern in the breed; The Royal Kennel Club asks judges to look for signs of skin inflammation, and owners are advised to ask their vet before choosing a shampoo.",
@@ -923,6 +926,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to 1 hour of exercise a day and grooming once a week, says the breed sheds, fits well into family life and suits a small house with a small or medium garden, and lists it in Breed Watch Category 1. PetMD says German Pinschers can be good with children when well trained and socialised, always with supervision, have a strong prey drive and need a fenced yard and daily mental stimulation; it recommends consistent socialisation from puppyhood, weekly brushing, weekly ear cleaning and a bath about every six to eight weeks. WebMD says they suit an experienced owner and that their nails need trimming monthly.",
       ],
       sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
+    },
+    bedlington_terrier: {
+      aka: "Bedlington, Bedlington terier, bedlingtonski terier",
+      text: [
+        "The Bedlington Terrier is a terrier from Great Britain, named after the mining town of Bedlington in Northumberland; the FCI lists it in Group 3 among the large and medium-sized terriers. The FCI standard describes a graceful, lithe, muscular dog that is good-tempered, affectionate and dignified, spirited and full of confidence, with a very distinctive thick, linty coat that stands well out from the skin and a profuse, nearly white topknot; it allows blue, liver or sandy, with or without tan. It gives a height of about 41 cm and a weight of 8.2–10.4 kg; a dog of this size is fully grown at about 9–12 months (PetMD size class). A 2024 UK study tabled by Dogs Trust found a median lifespan of 13.7 years, and PDSA gives a lifespan of over 10 years.",
+        "PDSA recommends at least an hour of exercise a day, says Bedlingtons are not huge shedders, can be patient and tolerant around children with supervision, have a very strong prey drive and should not be left alone for more than four hours; it names copper toxicosis, an inherited build-up of copper in the liver, among the conditions to know about, and a professional groom about every six weeks for the classic look. Woodgreen recommends brushing two to three times a week and a fully enclosed garden, and says they are not well suited to living in a flat. PetMD says they suit families with older children and need consistent socialisation as puppies; WebMD recommends brushing their teeth daily.",
+      ],
+      sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
     },
 
     finnish_lapphund: {

@@ -434,6 +434,7 @@ const da: RegistryCopy = {
       dna_gm1: "DNA-test for GM1-gangliosidose (en arvelig sygdom i nervesystemet)",
       dna_gm2: "DNA-test for GM2-gangliosidose (en arvelig sygdom i nervesystemet)",
       dna_vwd3: "DNA-test for von Willebrands sygdom type 3 (vWD3), en arvelig blødersygdom",
+      dna_commd1: "Test for kobberforgiftning (COMMD1), en arvelig ophobning af kobber i leveren",
       dna_pra_rcd3: "DNA-test for progressiv retinal atrofi (PRA-rcd3)",
       dna_clad: "DNA-test for canin leukocyt-adhæsionsdefekt (CLAD), en arvelig immunsygdom",
       dna_ncl8: "DNA-test for neuronal ceroid lipofuscinose (NCL8), en arvelig sygdom i nervesystemet",
@@ -490,6 +491,8 @@ const da: RegistryCopy = {
     merle_to_merle_breeding:
       "Merle er en standardfarve i denne race; to merlehunde bør ikke parres med hinanden fordi hvalpene risikerer nedsat syn og hørelse – Royal Kennel Club registrerer dem ikke.",
     kneecap_luxation: "Patellaluksation, hvor knæskallen midlertidigt glider ud af sin plads, forekommer i racen.",
+    copper_liver_disease: "Kobberforgiftning, en arvelig ophobning af kobber i leveren, der kan føre til kronisk leverbetændelse, forekommer i racen; opdrættere kan teste for den.",
+    retinal_eye_conditions: "Arvelige øjensygdomme som nethindedysplasi forekommer i racen; øjenundersøgelser er mulige.",
     pra_and_eyelashes:
       "Øjenproblemer forekommer i racen: progressiv retinal atrofi som langsomt kan føre til blindhed, og ekstra øjenhår der gnider mod øjet (distichiasis); opdrættere rådes til at få forældrenes øjne undersøgt.",
     liver_shunt: "En portosystemisk shunt (levershunt), hvor blodet løber uden om leveren, kan forekomme i racen.",

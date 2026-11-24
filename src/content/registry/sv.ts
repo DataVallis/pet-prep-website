@@ -431,6 +431,7 @@ const sv: RegistryCopy = {
       dna_gm1: "DNA-test för GM1-gangliosidos (en ärftlig sjukdom i nervsystemet)",
       dna_gm2: "DNA-test för GM2-gangliosidos (en ärftlig sjukdom i nervsystemet)",
       dna_vwd3: "DNA-test för von Willebrands sjukdom typ 3 (vWD3), en ärftlig blödningsrubbning",
+      dna_commd1: "Test för kopparförgiftning (COMMD1), en ärftlig ansamling av koppar i levern",
       dna_pra_rcd3: "DNA-test för progressiv retinal atrofi (PRA-rcd3)",
       dna_clad: "DNA-test för canin leukocytadhesionsdefekt (CLAD), en ärftlig immunsjukdom",
       dna_ncl8: "DNA-test för neuronal ceroidlipofuscinos (NCL8), en ärftlig sjukdom i nervsystemet",
@@ -488,6 +489,8 @@ const sv: RegistryCopy = {
     merle_to_merle_breeding:
       "Merle är en standardfärg i rasen; två merlefärgade hundar bör inte paras med varandra, eftersom valparna riskerar nedsatt syn och hörsel – Royal Kennel Club registrerar inte sådana valpar.",
     kneecap_luxation: "Patellaluxation, där knäskålen tillfälligt hoppar ur sitt läge, förekommer i rasen.",
+    copper_liver_disease: "Kopparförgiftning, en ärftlig ansamling av koppar i levern som kan leda till kronisk leverinflammation, förekommer i rasen; uppfödare kan testa för den.",
+    retinal_eye_conditions: "Ärftliga ögonsjukdomar som näthinnedysplasi förekommer i rasen; ögonundersökningar finns.",
     pra_and_eyelashes:
       "Ögonproblem förekommer i rasen: progressiv retinal atrofi (PRA), som långsamt kan leda till blindhet, och extra ögonfransar som skaver mot ögat (distikiasis); uppfödare rekommenderas att låta ögonundersöka föräldrarna.",
     liver_shunt: "Portosystemisk shunt (levershunt), där blodet leds förbi levern, kan förekomma i rasen.",

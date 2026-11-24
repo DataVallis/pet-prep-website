@@ -446,6 +446,7 @@ const hr: RegistryCopy = {
       dna_gm1: "DNK test na GM1 gangliozidozu (nasljednu bolest živčanog sustava)",
       dna_gm2: "DNK test na GM2 gangliozidozu (nasljednu bolest živčanog sustava)",
       dna_vwd3: "DNK test na von Willebrandovu bolest tipa 3 (vWD3), nasljedni poremećaj zgrušavanja krvi",
+      dna_commd1: "Test na toksikozu bakrom (COMMD1), nasljedno nakupljanje bakra u jetri",
       dna_pra_rcd3: "DNK test na progresivnu atrofiju mrežnice (PRA-rcd3)",
       dna_clad: "DNK test na nedostatak adhezije leukocita (CLAD), nasljedni poremećaj imuniteta",
       dna_ncl8: "DNK test na neuronsku ceroidnu lipofuscinozu (NCL8), nasljednu bolest živčanog sustava",
@@ -505,6 +506,8 @@ const hr: RegistryCopy = {
     merle_to_merle_breeding:
       "Merle je u ovoj pasmini boja prema standardu; dva merle psa ne bi se smjela pariti jer takva štenad može imati oštećen vid i sluh – Royal Kennel Club ih ne upisuje u rodovnu knjigu.",
     kneecap_luxation: "U pasmini se javlja luksacija patele, pri kojoj čašica koljena povremeno iskoči s mjesta.",
+    copper_liver_disease: "U pasmini se javlja toksikoza bakrom, nasljedno nakupljanje bakra u jetri koje može dovesti do kroničnog hepatitisa; uzgajivači mogu testirati roditelje.",
+    retinal_eye_conditions: "U pasmini se javljaju nasljedne bolesti očiju, primjerice displazija mrežnice; pregledi očiju su dostupni.",
     pra_and_eyelashes:
       "U pasmini se javljaju problemi s očima: progresivna atrofija mrežnice, koja polako može dovesti do sljepoće, i dodatne trepavice koje trljaju oko (distihijaza); uzgajivačima se savjetuje da roditeljima pregledaju oči.",
     liver_shunt: "U pasmini se može pojaviti portosistemski (jetreni) šant, pri kojem krv zaobilazi jetru.",
