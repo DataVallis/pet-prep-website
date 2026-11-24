@@ -1697,6 +1697,14 @@ const it: RegistryCopy = {
       ],
       sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
     },
+    bracco_italiano: {
+      aka: "Italian Pointer, Italian Pointing Dog, Bracco, Bracco italiano",
+      text: [
+        "Il bracco italiano (Italian Pointing Dog) è un cane da ferma originario dell’Italia. La FCI lo inserisce nel gruppo 7, tra i cani da ferma continentali, di tipo bracco. Lo standard FCI descrive un cane di costruzione robusta e armoniosa, dall’aspetto potente, con un mantello corto, fitto e lucido e orecchie lunghe che arrivano fino alla punta del naso. Sono ammessi bianco, bianco con macchie arancio o ambra, bianco con macchie marroni, roano arancio e roano marrone. Lo standard indica un’altezza di 58–67 cm per i maschi e 55–62 cm per le femmine e un peso di 25–40 kg a seconda della taglia. Un cane di questa taglia finisce di crescere verso i 15–18 mesi (classe di taglia PetMD). Il Royal Kennel Club indica un’aspettativa di vita inferiore a 10 anni, PetMD di 10–14 anni e il Bracco Italiano Club of America una mediana di 11 anni.",
+        "Il Royal Kennel Club raccomanda più di 2 ore di movimento al giorno e una cura del mantello una volta alla settimana. La razza perde il pelo, si adatta a una casa grande con un ampio giardino in campagna ed è inserita nella categoria 1 di Breed Watch. PetMD descrive un cane giocherellone, intelligente, mite e affettuoso, in genere socievole con gli altri cani e con i bambini, che ama stare vicino alle sue persone e può non essere adatto a chi è spesso fuori casa. Raccomanda la socializzazione precoce, la spazzolatura settimanale e di limitare il movimento subito prima e dopo i pasti, a causa del rischio di dilatazione gastrica. Il Bracco Italiano Club of America chiede agli allevatori di sottoporre i genitori a controlli di anche, gomiti, occhi e reni.",
+      ],
+      sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, Lapphund finlandese, Cane finlandese della Lapponia",
       text: [
