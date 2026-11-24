@@ -1709,6 +1709,14 @@ const pt: RegistryCopy = {
       ],
       sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
     },
+    bedlington_terrier: {
+      aka: "Bedlington, Bedlington Terrier",
+      text: [
+        "O bedlington terrier é um terrier originário da Grã-Bretanha que deve o nome à localidade mineira de Bedlington, em Northumberland; a FCI inclui-o no Grupo 3, entre os terriers de porte grande e médio. O padrão da FCI descreve um cão elegante, ágil e musculoso, de bom feitio, afetuoso e digno, brioso e cheio de confiança, com um pelo muito característico, espesso e de aspeto algodoado, bem afastado da pele, e um topete abundante, quase branco; admite o azul, o fígado ou o areia, com ou sem fogo. Indica uma altura de cerca de 41 cm e um peso de 8,2–10,4 kg. Um cão deste porte atinge o tamanho adulto por volta dos 9–12 meses (classe de tamanho da PetMD). Um estudo britânico de 2024 apresentado pela Dogs Trust apurou uma mediana de esperança de vida de 13,7 anos, e a PDSA indica mais de 10 anos.",
+        "A PDSA recomenda pelo menos uma hora de exercício por dia e refere que os bedlingtons não largam muito pelo, podem ser pacientes e tolerantes com as crianças sob supervisão, têm um instinto de caça muito forte e não devem ficar sozinhos mais de quatro horas. Entre os problemas de saúde a conhecer, cita a toxicose por cobre, uma acumulação hereditária de cobre no fígado, e aconselha levá-los a um tosquiador profissional de seis em seis semanas para manter o aspeto clássico. A Woodgreen recomenda escovar duas a três vezes por semana e ter um jardim totalmente vedado, e diz que não se adaptam bem a viver em apartamento. A PetMD indica que se dão bem em famílias com crianças mais velhas e precisam de socialização consistente desde cachorros; a WebMD recomenda escovar-lhes os dentes todos os dias.",
+      ],
+      sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapphund, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, Lapphund finlandês",
       text: [
