@@ -1497,6 +1497,22 @@ const fr: RegistryCopy = {
       ],
       sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
     },
+    bracco_italiano: {
+      aka: "Braque italien, Bracco Italiano, Italian Pointer, Italian Pointing Dog, Bracco",
+      text: [
+        "Le Braque italien (Bracco Italiano) est un chien d’arrêt originaire d’Italie ; la FCI le classe dans le groupe 7, parmi les chiens d’arrêt continentaux de type « braque ». Le standard FCI décrit un chien à la construction solide et harmonieuse, à l’allure puissante, au poil court, dense et brillant, aux longues oreilles qui atteignent le bout du nez ; il admet le blanc, le blanc avec des taches orange ou ambrées, le blanc avec des taches marron, l’orange rouan et le marron rouan. Il indique une hauteur de 58–67 cm pour les mâles et de 55–62 cm pour les femelles, et un poids de 25–40 kg selon la taille. Un chien de ce gabarit atteint sa taille adulte vers 15 à 18 mois (catégorie de gabarit PetMD). Le Royal Kennel Club donne une espérance de vie de moins de 10 ans, PetMD de 10 à 14 ans et le Bracco Italiano Club of America une durée de vie médiane de 11 ans.",
+        "Le Royal Kennel Club recommande plus de 2 heures d’exercice par jour et un entretien du pelage une fois par semaine ; selon lui, la race perd ses poils et convient à une grande maison avec un grand jardin à la campagne. Il la classe en catégorie 1 du programme Breed Watch. PetMD décrit un chien joueur, intelligent, doux et affectueux, en général à l’aise avec les autres chiens et avec les enfants, qui aime rester près de ses maîtres et peut ne pas convenir à une famille souvent absente de la maison. Il recommande une socialisation précoce, un brossage hebdomadaire et de limiter l’exercice juste avant et après les repas, en raison du risque de dilatation-torsion de l’estomac. Le Bracco Italiano Club of America demande aux éleveurs de faire dépister les hanches, les coudes, les yeux et les reins des parents.",
+      ],
+      sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
+    },
+    german_pinscher: {
+      aka: "Pinscher allemand, Pinscher, Pinscher moyen, Deutscher Pinscher, Standard Pinscher, German Pinscher",
+      text: [
+        "Le Pinscher allemand (Deutscher Pinscher) est un chien de garde et de compagnie originaire d’Allemagne, ancêtre du Dobermann et du pinscher nain ; la FCI le classe dans le groupe 2, parmi les pinschers et schnauzers. Le standard FCI décrit un chien à poil ras, de taille moyenne, élégant et de format carré, au port fier, au tempérament vif, plein d’entrain, sûr de lui et égal, aux oreilles naturelles en V retombantes et à la queue naturelle ; il n’admet que l’unicolore rouge cerf à brun-rouge foncé et le noir laqué avec des marques rouges ou brunes. Il indique une hauteur de 45–50 cm et un poids de 14–20 kg pour les mâles comme pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 12 à 15 mois (catégorie de gabarit PetMD). Le Royal Kennel Club donne une espérance de vie de plus de 10 ans, PetMD et WebMD de 12 à 14 ans.",
+        "Le Royal Kennel Club recommande jusqu’à 1 heure d’exercice par jour et un entretien du pelage une fois par semaine ; selon lui, la race perd ses poils, s’intègre bien à la vie de famille et convient à une petite maison avec un jardin petit ou moyen. Il la classe en catégorie 1 du programme Breed Watch. PetMD écrit que les pinschers allemands peuvent bien s’entendre avec les enfants s’ils sont bien éduqués et socialisés, toujours sous surveillance, qu’ils ont un fort instinct de prédation et qu’il leur faut un jardin clôturé et une stimulation mentale quotidienne. Il recommande une socialisation régulière dès le plus jeune âge, un brossage hebdomadaire, un nettoyage des oreilles chaque semaine et un bain environ toutes les six à huit semaines. WebMD indique qu’ils conviennent à un maître expérimenté et qu’il faut leur couper les griffes une fois par mois.",
+      ],
+      sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
+    },
     toy_fox_terrier: {
       aka: "American Toy Terrier, Amertoy, TFT",
       text: [
