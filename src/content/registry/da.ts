@@ -1733,6 +1733,30 @@ const da: RegistryCopy = {
       ],
       sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
     },
+    bracco_italiano: {
+      aka: "Italian Pointer, Italian Pointing Dog, Bracco",
+      text: [
+        "Bracco Italiano er en stående jagthund fra Italien. FCI placerer den i gruppe 7, stående jagthunde, blandt de kontinentale stående jagthunde af braque-typen. FCI-standarden beskriver en hund med kraftig, harmonisk bygning og et kraftigt udseende, med kort, tæt og blank pels og lange ører, der når frem til snudespidsen. Standarden tillader hvid, hvid med orange- eller ravfarvede aftegninger, hvid med brune aftegninger, orangeskimlet og brunskimlet. Den angiver en højde på 58–67 cm for hanner og 55–62 cm for tæver og en vægt på 25–40 kg afhængigt af størrelsen. En hund af denne størrelse er udvokset ved omkring 15–18 måneder (PetMD's størrelsesklasse). Royal Kennel Club angiver en levetid på under 10 år, PetMD 10–14 år og Bracco Italiano Club of America en median på 11 år.",
+        "Royal Kennel Club anbefaler mere end 2 timers motion om dagen og pelspleje en gang om ugen. Klubben skriver, at racen fælder og passer til et stort hus med stor have på landet, og placerer den i Breed Watch-kategori 1. PetMD beskriver en legesyg, intelligent, mild og kærlig hund, der som regel kommer godt ud af det med andre hunde og børn, gerne vil være tæt på sine mennesker og måske ikke passer til en familie, der ofte er væk hjemmefra. PetMD anbefaler tidlig socialisering, børstning en gang om ugen og at begrænse motionen lige før og efter måltider på grund af risikoen for mavedrejning. Bracco Italiano Club of America opfordrer opdrættere til at undersøge avlshundenes hofter, albuer, øjne og nyrer.",
+      ],
+      sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
+    },
+    german_pinscher: {
+      aka: "Tysk pinscher, Deutscher Pinscher, Standard Pinscher",
+      text: [
+        "Pinscher (tysk pinscher, Deutscher Pinscher) er en vagt- og selskabshund fra Tyskland og stamfader til dobermann og dværgpinscher. FCI placerer den i gruppe 2, pinschere og schnauzere. FCI-standarden beskriver en korthåret, mellemstor, elegant og kvadratisk bygget hund med stolt holdning og et livligt, temperamentsfuldt, selvsikkert og ligevægtigt væsen, med naturlige V-formede hængeører og naturlig hale. Standarden tillader kun ensfarvet hjorterød til mørk rødbrun samt lakeret sort med røde eller brune aftegninger. Den angiver en højde på 45–50 cm og en vægt på 14–20 kg for både hanner og tæver. En hund af denne størrelse er udvokset ved omkring 12–15 måneder (PetMD's størrelsesklasse). Royal Kennel Club angiver en levetid på over 10 år, PetMD og WebMD 12–14 år.",
+        "Royal Kennel Club anbefaler op til 1 times motion om dagen og pelspleje en gang om ugen. Klubben skriver, at racen fælder, passer godt ind i familielivet og trives i et lille hus med lille eller mellemstor have, og placerer den i Breed Watch-kategori 1. PetMD skriver, at pinschere kan være gode med børn, hvis de er veltrænede og godt socialiserede og altid er under opsyn, at de har et stærkt jagtinstinkt og har brug for en indhegnet have og daglig mental stimulering. PetMD anbefaler konsekvent socialisering fra hvalpealderen, børstning en gang om ugen, ørerensning en gang om ugen og bad cirka hver sjette til ottende uge. WebMD skriver, at racen passer til en erfaren ejer, og at kløerne skal klippes hver måned.",
+      ],
+      sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
+    },
+    bedlington_terrier: {
+      aka: "Bedlington, Bedlingtonterrier",
+      text: [
+        "Bedlington terrier er en terrier fra Storbritannien, opkaldt efter minebyen Bedlington i Northumberland. FCI placerer den i gruppe 3, terriere, blandt de store og mellemstore terriere. FCI-standarden beskriver en yndefuld, smidig og muskuløs hund med et godt temperament, kærlig og værdig, livlig og fuld af selvtillid. Pelsen er meget karakteristisk: tyk og luftig, med hår, der står langt ud fra huden, og en fyldig, næsten hvid tot på hovedet. Standarden tillader blå, leverfarvet eller sandfarvet, med eller uden tan. Den angiver en højde på cirka 41 cm og en vægt på 8,2–10,4 kg. En hund af denne størrelse er udvokset ved omkring 9–12 måneder (PetMD's størrelsesklasse). En britisk undersøgelse fra 2024, fremlagt af Dogs Trust, viste en medianlevetid på 13,7 år, og PDSA angiver en levetid på over 10 år.",
+        "PDSA anbefaler mindst en times motion om dagen og skriver, at racen ikke fælder ret meget, kan være tålmodig og tolerant over for børn, når en voksen er med, har et meget stærkt jagtinstinkt og ikke bør lades alene i mere end fire timer. PDSA nævner kobberforgiftning, en arvelig ophobning af kobber i leveren, blandt de sygdomme, man bør kende til, og at den klassiske klipning kræver en professionel hundefrisør cirka hver sjette uge. Woodgreen anbefaler børstning to til tre gange om ugen og en helt indhegnet have og skriver, at racen ikke egner sig så godt til lejlighed. PetMD skriver, at racen passer til familier med større børn og har brug for konsekvent socialisering som hvalp. WebMD anbefaler at børste tænderne dagligt.",
+      ],
+      sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
       text: [
