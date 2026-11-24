@@ -908,6 +908,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
     },
+    bracco_italiano: {
+      aka: "Italian Pointer, Italian Pointing Dog, Bracco, italijanski ptičar",
+      text: [
+        "The Bracco Italiano (Italian Pointing Dog) is a pointing gundog from Italy; the FCI lists it in Group 7 among the continental pointing dogs of the »Braque« type. The FCI standard describes a dog of strong and harmonious construction with a powerful appearance, a short, dense and glossy coat and long ears that reach the tip of the nose; it allows white, white with orange or amber patches, white with brown patches, orange roan and liver roan. It gives a height of 58–67 cm for males and 55–62 cm for females and a weight of 25–40 kg depending on size; a dog of this size is fully grown at about 15–18 months (PetMD size class). The Royal Kennel Club gives a lifespan of under 10 years, PetMD 10–14 years, and the Bracco Italiano Club of America a median of 11 years.",
+        "The Royal Kennel Club recommends more than 2 hours of exercise a day and grooming once a week, says the breed sheds and suits a large house with a large garden in the country, and lists it in Breed Watch Category 1. PetMD describes a playful, intelligent, gentle and affectionate dog that is generally good with other dogs and children, likes to be close to its people and may not suit a family that is often away from home; it recommends early socialisation, weekly brushing and limiting exercise right before and after meals because of the risk of bloat. The Bracco Italiano Club of America asks breeders to screen the parents' hips, elbows, eyes and kidneys.",
+      ],
+      sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
+    },
 
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, finski laponski pes",

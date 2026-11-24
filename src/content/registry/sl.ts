@@ -928,6 +928,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
     },
+    bracco_italiano: {
+      aka: "bracco, braco, italijanski pticar, Bracco Italiano, Italian Pointer, Italian Pointing Dog",
+      text: [
+        "Italijanski ptičar (bracco italiano) je ptičar iz Italije; FCI ga uvršča v 7. skupino med celinske ptičarje tipa »braque«. Standard FCI opisuje močnega, skladno grajenega psa mogočnega videza s kratko, gosto in svetlečo dlako ter dolgimi uhlji, ki sežejo do konice nosu; dovoljuje belo barvo, belo z oranžnimi ali jantarnimi lisami, belo z rjavimi lisami ter oranžno in rjavo lisasto (roan) barvo. Navaja višino 58–67 cm za pse in 55–62 cm za psice ter težo 25–40 kg, odvisno od velikosti; pes te velikosti doraste pri približno 15–18 mesecih (velikostni razred PetMD). The Royal Kennel Club navaja življenjsko dobo manj kot 10 let, PetMD 10–14 let, ameriški klub pasme (Bracco Italiano Club of America) pa mediano 11 let.",
+        "The Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje enkrat na teden, navaja, da mu dlaka izpada in da potrebuje veliko hišo z velikim vrtom na podeželju, ter ga uvršča v 1. kategorijo programa Breed Watch. PetMD ga opisuje kot igrivega, inteligentnega, nežnega in ljubečega psa, ki se praviloma dobro razume z drugimi psi in z otroki, rad je blizu svojih ljudi in morda ni primeren za družino, ki je pogosto zdoma; svetuje zgodnjo socializacijo, česanje enkrat na teden in manj gibanja tik pred obrokom in po njem zaradi nevarnosti napenjanja (zasuka želodca). Ameriški klub pasme vzrediteljem svetuje pregled kolkov, komolcev, oči in ledvic staršev.",
+      ],
+      sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
+    },
 
     finnish_lapphund: {
       aka: "finski laponski pes, finski lapphund, laponski pes, lapinkoira, suomenlapinkoira, Finnish Lapphund, Finnish Lapponian Dog",
