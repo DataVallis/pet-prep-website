@@ -1318,6 +1318,21 @@
         "Pinscher"
       ]
     },
+    "bedlington_terrier": {
+      "name": "Bedlington terrier",
+      "slug": "bedlington-terrier",
+      "synonyms": [
+        "Bedlington",
+        "Terier bedlington",
+        "Bedlington terier"
+      ],
+      "colours": {
+        "blue": "Niebieski",
+        "liver": "Wątrobiany",
+        "blue-tan": "Niebieski z podpalaniem",
+        "liver-tan": "Wątrobiany z podpalaniem"
+      }
+    },
     "toy_fox_terrier": {
       "name": "Toy fox terrier",
       "slug": "toy-fox-terrier",
