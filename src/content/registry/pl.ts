@@ -1732,6 +1732,14 @@ const pl: RegistryCopy = {
       ],
       sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
     },
+    bedlington_terrier: {
+      aka: "Bedlington, terier bedlington",
+      text: [
+        "Bedlington terrier to terier z Wielkiej Brytanii, nazwany od górniczego miasteczka Bedlington w Northumberland; FCI zalicza go do grupy 3, wśród terierów dużych i średnich. Wzorzec FCI opisuje psa wdzięcznego, zwinnego i umięśnionego, o dobrym usposobieniu, czułego, pełnego godności, żywego i pewnego siebie, z bardzo charakterystyczną, gęstą, kłaczkowatą sierścią odstającą od skóry i obfitym, niemal białym czubkiem na głowie; dopuszcza umaszczenie niebieskie, wątrobiane lub piaskowe, z podpalaniem lub bez. Podaje wysokość około 41\u00a0cm i masę ciała 8,2–10,4\u00a0kg. Pies tej wielkości jest w pełni wyrośnięty w wieku około 9–12\u00a0miesięcy (według klasy wielkości PetMD). Brytyjskie badanie z 2024 roku, zaprezentowane przez Dogs Trust, wykazało medianę długości życia 13,7\u00a0roku, a PDSA podaje ponad 10\u00a0lat.",
+        "PDSA zaleca co najmniej godzinę ruchu dziennie i podaje, że bedlingtony nie linieją zbyt mocno, pod nadzorem mogą być cierpliwe i tolerancyjne wobec dzieci, mają bardzo silny instynkt łowiecki i nie należy zostawiać ich samych na dłużej niż cztery godziny. Do chorób, o których warto wiedzieć, zalicza toksykozę miedziową, czyli dziedziczne gromadzenie się miedzi w wątrobie, a żeby zachować klasyczny wygląd rasy, zaleca profesjonalną pielęgnację mniej więcej co sześć tygodni. Woodgreen zaleca szczotkowanie dwa–trzy razy w tygodniu oraz całkowicie ogrodzony ogród i pisze, że te psy nie najlepiej nadają się do życia w mieszkaniu. PetMD podaje, że pasują do rodzin ze starszymi dziećmi i jako szczenięta potrzebują konsekwentnej socjalizacji; WebMD zaleca codzienne mycie zębów.",
+      ],
+      sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
       text: [
