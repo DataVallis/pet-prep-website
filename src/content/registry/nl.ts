@@ -1720,6 +1720,14 @@ const nl: RegistryCopy = {
       ],
       sources: ["S1030","S1031","S1032","S1033","S10"],
     },
+    bedlington_terrier: {
+      aka: "Bedlington, Bedlington Terrier",
+      text: [
+        "De Bedlington terrier is een terriër uit Groot-Brittannië, genoemd naar het mijnwerkersstadje Bedlington in Northumberland; de FCI plaatst hem in groep 3, bij de grote en middelgrote terriërs. De FCI-standaard beschrijft een gracieuze, soepele, gespierde hond met een goedaardig, aanhankelijk en waardig karakter, vol vuur en zelfvertrouwen, met een heel kenmerkende dikke, vlasachtige vacht die ver van de huid af staat en een volle, bijna witte kuif; toegestaan zijn blauw, leverbruin of zandkleurig, met of zonder tan. De standaard noemt een schofthoogte van ongeveer 41 cm en een gewicht van 8,2–10,4 kg; een hond van dit formaat is volgroeid rond 9–12 maanden (PetMD-grootteklasse). Een Brits onderzoek uit 2024 (via Dogs Trust) noemt een mediane levensverwachting van 13,7 jaar en de PDSA meer dan 10 jaar.",
+        "De PDSA raadt minstens een uur beweging per dag aan en meldt dat Bedlingtons niet erg sterk verharen, geduldig en verdraagzaam kunnen zijn met kinderen (onder toezicht), een zeer sterk jachtinstinct hebben en niet langer dan vier uur alleen thuis mogen blijven. Als een van de aandoeningen waarvan eigenaren op de hoogte moeten zijn noemt zij kopertoxicose, een erfelijke ophoping van koper in de lever, en voor de klassieke look een professionele trimbeurt ongeveer elke zes weken. Woodgreen raadt aan twee tot drie keer per week te borstelen en een volledig omheinde tuin te hebben, en zegt dat ze niet goed geschikt zijn voor een flat. PetMD schrijft dat ze goed passen bij gezinnen met oudere kinderen en als pup consequente socialisatie nodig hebben; WebMD raadt aan hun tanden dagelijks te poetsen.",
+      ],
+      sources: ["S1035","S1037","S1038","S1040","S1041","S123","S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, Finse lappenhond",
       text: [

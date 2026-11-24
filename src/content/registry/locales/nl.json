@@ -1210,6 +1210,20 @@
         "Pinscher"
       ]
     },
+    "bedlington_terrier": {
+      "name": "Bedlington terrier",
+      "slug": "bedlington-terrier",
+      "synonyms": [
+        "Bedlington",
+        "Bedlington Terrier"
+      ],
+      "colours": {
+        "blue": "Blauw",
+        "liver": "Leverbruin",
+        "blue-tan": "Blauw met tan",
+        "liver-tan": "Leverbruin met tan"
+      }
+    },
     "toy_fox_terrier": {
       "name": "Toy fox terrier",
       "slug": "toy-fox-terrier",
