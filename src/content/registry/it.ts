@@ -1708,6 +1708,22 @@ const it: RegistryCopy = {
       ],
       sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
     },
+    german_pinscher: {
+      aka: "Deutscher Pinscher, German Pinscher, Standard Pinscher, Pinscher, Pinscher tedesco, Pinscher medio",
+      text: [
+        "Il pinscher tedesco (Deutscher Pinscher) è un cane da guardia e da compagnia originario della Germania, antenato del dobermann e del pinscher nano. La FCI lo inserisce nel gruppo 2, tra i cani di tipo pinscher e schnauzer. Lo standard FCI descrive un cane a pelo corto e liscio, di taglia media, elegante e di costruzione quadrata, dal portamento fiero e dal carattere vivace, pieno di temperamento, sicuro di sé ed equilibrato, con orecchie a V pendenti e coda al naturale. Sono ammessi solo il rosso cervo unicolore fino al rosso-marrone scuro e il nero laccato con focature rosse o marroni. Lo standard indica un’altezza di 45–50 cm e un peso di 14–20 kg per maschi e femmine. Un cane di questa taglia finisce di crescere verso i 12–15 mesi (classe di taglia PetMD). Il Royal Kennel Club indica un’aspettativa di vita di oltre 10 anni, PetMD e WebMD di 12–14 anni.",
+        "Il Royal Kennel Club raccomanda fino a 1 ora di movimento al giorno e una cura del mantello una volta alla settimana. La razza perde il pelo, si integra bene in famiglia, si adatta a una casa di piccole dimensioni con un giardino piccolo o medio ed è inserita nella categoria 1 di Breed Watch. PetMD scrive che i pinscher tedeschi possono andare d’accordo con i bambini se ben addestrati e socializzati, sempre sotto sorveglianza, hanno un forte istinto predatorio e hanno bisogno di un giardino recintato e di stimoli mentali ogni giorno. Raccomanda una socializzazione costante fin da cuccioli, la spazzolatura settimanale, la pulizia settimanale delle orecchie e il bagno circa ogni sei-otto settimane. WebMD scrive che sono adatti a proprietari già esperti e che le unghie vanno tagliate ogni mese.",
+      ],
+      sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
+    },
+    bedlington_terrier: {
+      aka: "Bedlington, Bedlington terrier, Terrier di Bedlington",
+      text: [
+        "Il bedlington terrier è un terrier originario della Gran Bretagna e deve il nome alla cittadina mineraria di Bedlington, nel Northumberland. La FCI lo inserisce nel gruppo 3, tra i terrier di taglia grande e media. Lo standard FCI descrive un cane dall’aspetto aggraziato, agile e muscoloso, di buon carattere, affettuoso e dignitoso, vivace e sicuro di sé, dal mantello molto caratteristico, folto e lanuginoso, che si stacca bene dalla pelle, con un ciuffo sul capo abbondante e quasi bianco. Sono ammessi blu, marrone fegato o sabbia, con o senza focature. Lo standard indica un’altezza di circa 41 cm e un peso di 8,2–10,4 kg. Un cane di questa taglia finisce di crescere verso i 9–12 mesi (classe di taglia PetMD). Uno studio britannico del 2024 presentato dal Dogs Trust ha rilevato un’aspettativa di vita mediana di 13,7 anni, mentre la PDSA indica oltre 10 anni.",
+        "La PDSA raccomanda almeno un’ora di movimento al giorno e scrive che i bedlington non perdono molto pelo, possono essere pazienti e tolleranti con i bambini sotto sorveglianza, hanno un istinto predatorio molto forte e non andrebbero lasciati soli per più di quattro ore. Tra le condizioni da conoscere cita la tossicosi da rame, un accumulo ereditario di rame nel fegato, e una toelettatura professionale circa ogni sei settimane per l’aspetto classico. Woodgreen raccomanda di spazzolarli due o tre volte alla settimana e di avere un giardino completamente recintato, e scrive che non sono adatti a vivere in appartamento. PetMD scrive che sono adatti a famiglie con bambini più grandi e che hanno bisogno di una socializzazione costante fin da cuccioli. WebMD raccomanda di lavare loro i denti ogni giorno.",
+      ],
+      sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, Lapphund finlandese, Cane finlandese della Lapponia",
       text: [
