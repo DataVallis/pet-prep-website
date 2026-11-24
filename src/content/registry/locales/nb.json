@@ -1497,6 +1497,50 @@
         "black-tan": "Svart med brune tegn",
         "grizzle": "Grizzle"
       }
+    },
+    "bracco_italiano": {
+      "name": "Bracco Italiano",
+      "slug": "bracco-italiano",
+      "synonyms": [
+        "Bracco",
+        "Italian pointer",
+        "Italian pointing dog"
+      ],
+      "colours": {
+        "orange-white": "Oransje og hvit",
+        "brown-white": "Brun og hvit",
+        "orange-roan": "Oransje roan",
+        "brown-roan": "Brun roan",
+        "white": "Hvit"
+      }
+    },
+    "german_pinscher": {
+      "name": "Pinscher",
+      "slug": "pinscher",
+      "synonyms": [
+        "Tysk pinscher",
+        "Deutscher Pinscher",
+        "German pinscher",
+        "Standard pinscher"
+      ],
+      "colours": {
+        "black-tan": "Svart med brune tegn",
+        "red": "Rød"
+      }
+    },
+    "bedlington_terrier": {
+      "name": "Bedlington terrier",
+      "slug": "bedlington-terrier",
+      "synonyms": [
+        "Bedlingtonterrier",
+        "Bedlington"
+      ],
+      "colours": {
+        "blue": "Blå",
+        "liver": "Leverbrun",
+        "blue-tan": "Blå med brune tegn",
+        "liver-tan": "Leverbrun med brune tegn"
+      }
     }
   },
   "suitability_labels": {
