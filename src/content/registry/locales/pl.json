@@ -1296,6 +1296,28 @@
         "Belgian Shepherd Groenendael"
       ]
     },
+    "bracco_italiano": {
+      "name": "Bracco italiano",
+      "slug": "bracco-italiano",
+      "synonyms": [
+        "Wyżeł włoski",
+        "Wyżeł włoski krótkowłosy",
+        "Bracco",
+        "Italian Pointer",
+        "Italian Pointing Dog"
+      ]
+    },
+    "german_pinscher": {
+      "name": "Pinczer niemiecki",
+      "slug": "pinczer-niemiecki",
+      "synonyms": [
+        "Deutscher Pinscher",
+        "Standard Pinscher",
+        "German Pinscher",
+        "Pinczer średni",
+        "Pinscher"
+      ]
+    },
     "toy_fox_terrier": {
       "name": "Toy fox terrier",
       "slug": "toy-fox-terrier",

@@ -1713,6 +1713,22 @@ const pl: RegistryCopy = {
       ],
       sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
     },
+    bracco_italiano: {
+      aka: "Italian Pointer, Italian Pointing Dog, Bracco, wyżeł włoski krótkowłosy",
+      text: [
+        "Bracco italiano (wyżeł włoski krótkowłosy) to włoski pies myśliwski wystawiający zwierzynę; FCI zalicza go do grupy 7, wśród wyżłów kontynentalnych typu braque. Wzorzec FCI opisuje psa o mocnej, harmonijnej budowie i potężnej sylwetce, z krótką, gęstą, błyszczącą sierścią i długimi uszami sięgającymi do czubka nosa; dopuszcza umaszczenie białe, białe z pomarańczowymi lub bursztynowymi łatami, białe z brązowymi łatami oraz dereszowate pomarańczowe i dereszowate brązowe. Podaje wysokość 58–67\u00a0cm u psów i 55–62\u00a0cm u suk oraz masę ciała 25–40\u00a0kg, zależnie od wzrostu. Pies tej wielkości jest w pełni wyrośnięty w wieku około 15–18\u00a0miesięcy (według klasy wielkości PetMD). The Royal Kennel Club podaje długość życia poniżej 10\u00a0lat, PetMD 10–14\u00a0lat, a Bracco Italiano Club of America medianę 11\u00a0lat.",
+        "The Royal Kennel Club zaleca ponad 2\u00a0godziny ruchu dziennie i pielęgnację sierści raz w tygodniu, podaje, że rasa linieje i pasuje do dużego domu z dużym ogrodem na wsi, i zalicza ją do kategorii 1 programu Breed Watch. PetMD opisuje psa chętnego do zabawy, inteligentnego, łagodnego i czułego, który zwykle dogaduje się z innymi psami i dziećmi, lubi być blisko swoich ludzi i może się nie sprawdzić w rodzinie, której często nie ma w domu; radzi wcześnie socjalizować psa, szczotkować go co tydzień i ograniczać ruch tuż przed jedzeniem i po nim z powodu ryzyka skrętu żołądka. Bracco Italiano Club of America prosi hodowców o przebadanie rodziców pod kątem bioder, łokci, oczu i nerek.",
+      ],
+      sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
+    },
+    german_pinscher: {
+      aka: "Deutscher Pinscher, Standard Pinscher, Pinscher, pinczer średni",
+      text: [
+        "Pinczer niemiecki (Deutscher Pinscher) to niemiecki pies stróżujący i do towarzystwa, przodek dobermana i pinczera miniaturowego; FCI zalicza go do grupy 2, wśród pinczerów i sznaucerów. Wzorzec FCI opisuje psa krótkowłosego, średniej wielkości, o eleganckiej, kwadratowej sylwetce i dumnej postawie, żywego, ognistego, pewnego siebie i zrównoważonego, z nieprzycinanymi uszami w kształcie litery V, opadającymi do przodu, i niekopiowanym ogonem; dopuszcza tylko umaszczenie jednolite, od jeleniorudego do ciemnorudobrązowego, oraz czarne lakierowane z czerwonymi lub brązowymi podpalaniami. Podaje wysokość 45–50\u00a0cm i masę ciała 14–20\u00a0kg zarówno u psów, jak i u suk. Pies tej wielkości jest w pełni wyrośnięty w wieku około 12–15\u00a0miesięcy (według klasy wielkości PetMD). The Royal Kennel Club podaje długość życia ponad 10\u00a0lat, a PetMD i WebMD 12–14\u00a0lat.",
+        "The Royal Kennel Club zaleca do 1\u00a0godziny ruchu dziennie i pielęgnację sierści raz w tygodniu, podaje, że rasa linieje, dobrze odnajduje się w rodzinie i pasuje do małego domu z małym lub średnim ogrodem, i zalicza ją do kategorii 1 programu Breed Watch. PetMD pisze, że pinczery niemieckie mogą dobrze dogadywać się z dziećmi, jeśli są dobrze wyszkolone i zsocjalizowane, ale zawsze pod nadzorem; mają silny instynkt łowiecki i potrzebują ogrodzonego terenu oraz codziennej stymulacji umysłowej. Radzi konsekwentnie socjalizować psa od szczeniaka, szczotkować go i czyścić mu uszy co tydzień oraz kąpać mniej więcej co sześć do ośmiu tygodni. WebMD podaje, że to rasa dla doświadczonego opiekuna, a pazury trzeba przycinać raz w miesiącu.",
+      ],
+      sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
       text: [
