@@ -1692,6 +1692,22 @@ const es: RegistryCopy = {
       ],
       sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
     },
+    bracco_italiano: {
+      aka: "Braco italiano, Bracco Italiano, Italian Pointer, Italian Pointing Dog, Bracco",
+      text: [
+        "El braco italiano (Bracco Italiano) es un perro de muestra originario de Italia; la FCI lo incluye en el grupo 7, entre los perros de muestra continentales (tipo braco). El estándar de la FCI describe un perro de constitución fuerte y armoniosa y aspecto poderoso, con pelo corto, denso y brillante y orejas largas que llegan hasta la punta de la nariz. Admite el blanco, el blanco con manchas naranjas o ámbar, el blanco con manchas marrones, el roano naranja y el roano marrón. Fija una altura de 58–67 cm en machos y 55–62 cm en hembras y un peso de 25–40 kg según la talla. Un perro de este tamaño alcanza su tamaño adulto hacia los 15–18 meses (categoría de tamaño de PetMD). El Royal Kennel Club indica una esperanza de vida de menos de 10 años; PetMD, de 10–14 años, y el Bracco Italiano Club of America, una mediana de 11 años.",
+        "El Royal Kennel Club recomienda más de 2 horas de ejercicio al día y cuidado del pelo una vez por semana; indica que la raza muda el pelo y es adecuada para una casa grande con un jardín grande en el campo, y la incluye en la categoría 1 de Breed Watch. PetMD describe un perro juguetón, inteligente, dulce y cariñoso, que por lo general se lleva bien con otros perros y con los niños, que disfruta de estar cerca de su familia y que quizá no encaje en un hogar donde se pasa mucho tiempo fuera de casa. Recomienda una socialización temprana, el cepillado semanal y limitar el ejercicio justo antes y después de las comidas, por el riesgo de dilatación-torsión gástrica. El Bracco Italiano Club of America pide a los criadores que revisen las caderas, los codos, los ojos y los riñones de los progenitores.",
+      ],
+      sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
+    },
+    german_pinscher: {
+      aka: "Pinscher alemán, Deutscher Pinscher, Standard Pinscher, Pinscher mediano, German Pinscher",
+      text: [
+        "El pinscher alemán (Deutscher Pinscher) es un perro de guarda y compañía originario de Alemania, antepasado del dobermann y del pinscher miniatura; la FCI lo incluye en el grupo 2, entre los perros tipo pinscher y schnauzer. El estándar de la FCI describe un perro de pelo corto, tamaño mediano, elegante y de formato cuadrado, de porte orgulloso y carácter vivo, brioso, seguro de sí mismo y equilibrado, con las orejas naturales caídas en V y la cola natural. Solo admite el unicolor, del rojo ciervo al rojo pardo oscuro, y el negro laca con marcas rojas o marrones. Fija una altura de 45–50 cm y un peso de 14–20 kg para machos y hembras. Un perro de este tamaño alcanza su tamaño adulto hacia los 12–15 meses (categoría de tamaño de PetMD). El Royal Kennel Club indica una esperanza de vida de más de 10 años; PetMD y WebMD, de 12–14 años.",
+        "El Royal Kennel Club recomienda hasta 1 hora de ejercicio al día y cuidado del pelo una vez por semana; indica que la raza muda el pelo, que encaja bien en la vida familiar y que es adecuada para una casa pequeña con un jardín pequeño o mediano, y la incluye en la categoría 1 de Breed Watch. PetMD señala que los pinschers alemanes pueden llevarse bien con los niños si están bien educados y socializados, siempre con supervisión, que tienen un fuerte instinto de presa y que necesitan un jardín vallado y estimulación mental a diario. Recomienda socializarlos de forma constante desde cachorros, el cepillado semanal, la limpieza semanal de las orejas y un baño cada seis u ocho semanas aproximadamente. WebMD indica que son adecuados para dueños con experiencia y que hay que recortarles las uñas una vez al mes.",
+      ],
+      sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
+    },
     finnish_lapphund: {
       aka: "Perro finlandés de Laponia, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
       text: [
