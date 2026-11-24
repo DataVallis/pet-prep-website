@@ -1630,6 +1630,22 @@ const de: RegistryCopy = {
       ],
       sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
     },
+    german_pinscher: {
+      aka: "Deutscher Pinscher, German Pinscher, Standard Pinscher, Pinscher",
+      text: [
+        "Der Deutsche Pinscher ist ein Wach- und Begleithund aus Deutschland und der Vorfahre des Dobermanns und des Zwergpinschers; die FCI führt ihn in Gruppe 2 unter den Pinschern und Schnauzern. Der FCI-Standard beschreibt einen glatthaarigen, mittelgroßen, eleganten und quadratisch gebauten Hund mit stolzer Haltung und einem lebhaften, temperamentvollen, selbstsicheren und ausgeglichenen Wesen, mit natürlichen, V-förmigen Hängeohren und natürlicher Rute; zugelassen sind nur einfarbig Hirschrot bis Dunkelrotbraun sowie Lackschwarz mit roten oder braunen Abzeichen. Als Widerristhöhe nennt der Standard 45–50 cm und als Gewicht 14–20 kg für Rüden und Hündinnen. Ein Hund dieser Größe ist mit etwa 12–15 Monaten ausgewachsen (PetMD-Größenklasse). Der Royal Kennel Club gibt eine Lebenserwartung von über 10 Jahren an, PetMD und WebMD 12–14 Jahre.",
+        "Der Royal Kennel Club empfiehlt bis zu 1 Stunde Bewegung am Tag und einmal pro Woche Fellpflege, sagt, die Rasse haare, passe gut zum Familienleben und eigne sich für ein kleines Haus mit kleinem oder mittelgroßem Garten, und führt sie in Breed-Watch-Kategorie 1. PetMD schreibt, Deutsche Pinscher könnten gut mit Kindern auskommen, wenn sie gut erzogen und sozialisiert seien, dies aber stets unter Aufsicht; sie hätten einen starken Jagdtrieb und brauchten einen eingezäunten Garten und täglich geistige Beschäftigung. Empfohlen werden konsequente Sozialisierung ab dem Welpenalter, wöchentliches Bürsten, wöchentliche Ohrenreinigung und etwa alle sechs bis acht Wochen ein Bad. WebMD schreibt, sie passten zu erfahrenen Haltern, und ihre Krallen müssten einmal im Monat gekürzt werden.",
+      ],
+      sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
+    },
+    bedlington_terrier: {
+      aka: "Bedlington Terrier, Bedlington",
+      text: [
+        "Der Bedlington Terrier ist ein Terrier aus Großbritannien, benannt nach der Bergbaustadt Bedlington in Northumberland; die FCI führt ihn in Gruppe 3 unter den großen und mittelgroßen Terriern. Der FCI-Standard beschreibt einen anmutigen, geschmeidigen, muskulösen Hund, der gutmütig, anhänglich und würdevoll sowie temperamentvoll und voller Selbstvertrauen ist, mit einem sehr charakteristischen dichten, flockigen Haarkleid, das gut von der Haut absteht, und einem üppigen, fast weißen Kopfschopf; zugelassen sind Blau, Leberbraun oder Sandfarben, mit oder ohne Brand. Als Widerristhöhe nennt der Standard etwa 41 cm und als Gewicht 8,2–10,4 kg. Ein Hund dieser Größe ist mit etwa 9–12 Monaten ausgewachsen (PetMD-Größenklasse). Eine britische Studie aus dem Jahr 2024, die Dogs Trust vorgelegt wurde, ermittelte eine mediane Lebenserwartung von 13,7 Jahren, und PDSA gibt eine Lebenserwartung von über 10 Jahren an.",
+        "PDSA empfiehlt mindestens eine Stunde Bewegung am Tag und schreibt, Bedlingtons haarten nicht stark, könnten unter Aufsicht geduldig und tolerant gegenüber Kindern sein, hätten einen sehr starken Jagdtrieb und sollten nicht länger als vier Stunden allein gelassen werden; als eine der Erkrankungen, über die man Bescheid wissen sollte, nennt PDSA die Kupfertoxikose, eine erbliche Kupferansammlung in der Leber, und empfiehlt für das klassische Aussehen etwa alle sechs Wochen einen professionellen Hundefriseur. Woodgreen empfiehlt, zwei- bis dreimal pro Woche zu bürsten und einen vollständig eingezäunten Garten zu haben, und schreibt, sie eigneten sich nicht gut für das Leben in einer Wohnung. PetMD schreibt, sie passten zu Familien mit älteren Kindern und brauchten schon als Welpen konsequente Sozialisierung; WebMD empfiehlt, ihnen täglich die Zähne zu putzen.",
+      ],
+      sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnischer Lapphund, Finnish Lapphund, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
       text: [

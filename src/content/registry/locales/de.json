@@ -1534,6 +1534,33 @@
         "Italienischer Vorstehhund"
       ]
     },
+    "german_pinscher": {
+      "name": "Deutscher Pinscher",
+      "slug": "pinscher",
+      "synonyms": [
+        "Pinscher",
+        "German Pinscher",
+        "Standard Pinscher"
+      ],
+      "colours": {
+        "black-tan": "Schwarz mit Brand",
+        "red": "Rot"
+      }
+    },
+    "bedlington_terrier": {
+      "name": "Bedlington Terrier",
+      "slug": "bedlington-terrier",
+      "synonyms": [
+        "Bedlington",
+        "Bedlingtonterrier"
+      ],
+      "colours": {
+        "blue": "Blau",
+        "liver": "Leberbraun",
+        "blue-tan": "Blau mit Brand",
+        "liver-tan": "Leberbraun mit Brand"
+      }
+    },
     "finnish_lapphund": {
       "name": "Finnischer Lapphund",
       "slug": "finnischer-lapphund",
