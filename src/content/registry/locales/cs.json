@@ -1359,6 +1359,21 @@
         "Střední pinč"
       ]
     },
+    "bedlington_terrier": {
+      "name": "Bedlingtonský teriér",
+      "slug": "bedlingtonsky-terier",
+      "synonyms": [
+        "Bedlington teriér",
+        "Bedlington",
+        "Bedlington terrier"
+      ],
+      "colours": {
+        "blue": "Modrá",
+        "liver": "Játrová",
+        "blue-tan": "Modrá s pálením",
+        "liver-tan": "Játrová s pálením"
+      }
+    },
     "toy_fox_terrier": {
       "name": "Toy foxteriér",
       "slug": "toy-foxterier",
