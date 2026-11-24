@@ -1343,6 +1343,35 @@
         "Belgian shepherd groenendael"
       ]
     },
+    "bracco_italiano": {
+      "name": "Bracco Italiano",
+      "slug": "bracco-italiano",
+      "synonyms": [
+        "Talijanski ptičar",
+        "Bracco",
+        "Italian pointer",
+        "Italian pointing dog"
+      ]
+    },
+    "german_pinscher": {
+      "name": "Njemački pinč",
+      "slug": "njemacki-pinc",
+      "synonyms": [
+        "Srednji pinč",
+        "Deutscher Pinscher",
+        "German pinscher",
+        "Standard pinscher"
+      ]
+    },
+    "bedlington_terrier": {
+      "name": "Bedlington terijer",
+      "slug": "bedlington-terijer",
+      "synonyms": [
+        "Bedlington",
+        "Bedlingtonski terijer",
+        "Bedlington terrier"
+      ]
+    },
     "toy_fox_terrier": {
       "name": "Toy foksterijer",
       "slug": "toy-foksterijer",
