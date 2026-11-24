@@ -1531,6 +1531,50 @@
         "black-tan": "Musta ja ruskea",
         "grizzle": "Grizzle"
       }
+    },
+    "bracco_italiano": {
+      "name": "Italianseisoja",
+      "slug": "italianseisoja",
+      "synonyms": [
+        "Bracco Italiano",
+        "Bracco",
+        "Italian pointer",
+        "Italian pointing dog"
+      ],
+      "colours": {
+        "orange-white": "Valkoinen ja oranssi",
+        "brown-white": "Valkoinen ja ruskea",
+        "orange-roan": "Oranssi sekakarvainen",
+        "brown-roan": "Ruskea sekakarvainen",
+        "white": "Valkoinen"
+      }
+    },
+    "german_pinscher": {
+      "name": "Saksanpinseri",
+      "slug": "saksanpinseri",
+      "synonyms": [
+        "Deutscher Pinscher",
+        "German pinscher",
+        "Standard pinscher"
+      ],
+      "colours": {
+        "black-tan": "Musta ja ruskea",
+        "red": "Punainen"
+      }
+    },
+    "bedlington_terrier": {
+      "name": "Bedlingtoninterrieri",
+      "slug": "bedlingtoninterrieri",
+      "synonyms": [
+        "Bedlington terrier",
+        "Bedlington"
+      ],
+      "colours": {
+        "blue": "Sininen",
+        "liver": "Maksanruskea",
+        "blue-tan": "Sininen ja ruskea",
+        "liver-tan": "Maksanruskea ja ruskea"
+      }
     }
   },
   "suitability_labels": {
