@@ -1812,6 +1812,30 @@ const hr: RegistryCopy = {
       ],
       sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
     },
+    bracco_italiano: {
+      aka: "Bracco Italiano, Talijanski ptičar, Bracco, Italian Pointer, Italian Pointing Dog",
+      text: [
+        "Bracco Italiano (talijanski ptičar) talijanska je pasmina ptičara; FCI ga svrstava u skupinu 7, među kontinentalne ptičare tipa „braque“. Standard FCI-ja opisuje snažna, skladno građena psa moćnog izgleda, s kratkom, gustom i sjajnom dlakom te dugim ušima koje sežu do vrha nosa; dopuštene su bijela, bijela s narančastim ili jantarnim pjegama, bijela sa smeđim pjegama te narančasti i jetreno smeđi roan (prošarana dlaka). Navodi visinu od 58–67 cm za mužjake i 55–62 cm za ženke te težinu od 25–40 kg, ovisno o veličini; pas te veličine odraste s otprilike 15–18 mjeseci (PetMD, prema razredu veličine). Royal Kennel Club navodi životni vijek kraći od 10 godina, PetMD 10–14 godina, a američki klub pasmine (Bracco Italiano Club of America) medijan od 11 godina.",
+        "Royal Kennel Club preporučuje više od 2 sata kretanja dnevno i njegu dlake jednom tjedno, navodi da se pasmina linja i da joj odgovara velika kuća s velikim vrtom na selu, a svrstava je u 1. kategoriju programa Breed Watch. PetMD opisuje razigranog, inteligentnog, nježnog i privrženog psa koji se u pravilu dobro slaže s drugim psima i djecom, voli biti blizu svojih ljudi i možda nije prikladan za obitelj koja često nije kod kuće; savjetuje ranu socijalizaciju, tjedno četkanje i manje kretanja neposredno prije i poslije obroka zbog opasnosti od proširenja i torzije želuca. Bracco Italiano Club of America traži od uzgajivača da roditeljima pregledaju kukove, laktove, oči i bubrege.",
+      ],
+      sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
+    },
+    german_pinscher: {
+      aka: "Njemački pinč, Srednji pinč, Deutscher Pinscher, German Pinscher, Standard Pinscher",
+      text: [
+        "Njemački pinč (Deutscher Pinscher) njemački je pas čuvar i pas za društvo te predak dobermana i patuljastog pinča; FCI ga svrstava u skupinu 2, među pinčere i šnaucere. Standard FCI-ja opisuje glatkodlakog, srednje velikog, elegantnog psa četvrtaste građe i ponosnog držanja, živahna, odvažna i samouvjerena, ujednačene naravi, s prirodnim visećim ušima u obliku slova V i prirodnim repom; dopuštene su samo jednobojna jelenskocrvena do tamna crvenosmeđa te sjajna crna s crvenim ili smeđim oznakama. Navodi visinu od 45–50 cm i težinu od 14–20 kg za pse i kuje; pas te veličine odraste s otprilike 12–15 mjeseci (PetMD, prema razredu veličine). Royal Kennel Club navodi životni vijek dulji od 10 godina, a PetMD i WebMD 12–14 godina.",
+        "Royal Kennel Club preporučuje do 1 sat kretanja dnevno i njegu dlake jednom tjedno, navodi da se pasmina linja, da se dobro uklapa u obiteljski život i da joj odgovara mala kuća s malim ili srednje velikim vrtom, a svrstava je u 1. kategoriju programa Breed Watch. PetMD piše da njemački pinčevi uz dobru dresuru i socijalizaciju mogu biti dobri s djecom, uvijek uz nadzor, da imaju jak lovački nagon te da trebaju ograđeno dvorište i svakodnevne misaone poticaje; savjetuje dosljednu socijalizaciju od štenećih dana, tjedno četkanje, tjedno čišćenje ušiju i kupanje otprilike svakih šest do osam tjedana. WebMD navodi da odgovaraju iskusnim vlasnicima i da im nokte treba podrezivati jednom mjesečno.",
+      ],
+      sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
+    },
+    bedlington_terrier: {
+      aka: "Bedlington terijer, Bedlington, Bedlingtonski terijer, Bedlington terrier",
+      text: [
+        "Bedlington terijer britanski je terijer, nazvan po rudarskom gradu Bedlingtonu u Northumberlandu; FCI ga svrstava u skupinu 3, među velike i srednje velike terijere. Standard FCI-ja opisuje graciozna, gipka i mišićava psa, dobre naravi, privržena i dostojanstvena, živahna i samouvjerena, s vrlo osebujnom gustom, vunastom dlakom koja se odiže od kože i bujnim, gotovo bijelim čuperkom na glavi; dopuštene su plava, jetreno smeđa i pješčana boja, s podpalinom ili bez nje. Navodi visinu od oko 41 cm i težinu od 8,2–10,4 kg; pas te veličine odraste s otprilike 9–12 mjeseci (PetMD, prema razredu veličine). Prema britanskom istraživanju iz 2024., koje navodi udruga Dogs Trust, medijan životnog vijeka iznosi 13,7 godine, a PDSA navodi vijek dulji od 10 godina.",
+        "PDSA preporučuje najmanje sat vremena kretanja dnevno i piše da se bedlingtoni malo linjaju, da uz nadzor mogu biti strpljivi i tolerantni prema djeci, da imaju vrlo jak lovački nagon te da ne bi trebali ostajati sami dulje od četiri sata; među bolestima koje vrijedi poznavati navodi toksikozu bakrom, nasljedno nakupljanje bakra u jetri, a za klasičan izgled preporučuje posjet profesionalnom frizeru otprilike svakih šest tjedana. Woodgreen savjetuje četkanje dva do tri puta tjedno i potpuno ograđen vrt te piše da nisu prikladni za život u stanu. PetMD navodi da odgovaraju obiteljima sa starijom djecom i da štenadi treba dosljedna socijalizacija; WebMD preporučuje svakodnevno pranje zubi.",
+      ],
+      sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finski laponski pas, Finski lapphund, Finnish Lapphund, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
       text: [
