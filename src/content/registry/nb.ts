@@ -1611,6 +1611,30 @@ const nb: RegistryCopy = {
       ],
       sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
     },
+    bracco_italiano: {
+      aka: "Italian Pointer, Italian Pointing Dog, Bracco",
+      text: [
+        "Bracco Italiano er en stående fuglehund fra Italia. FCI fører den opp i gruppe 7, stående fuglehunder, blant de kontinentale stående fuglehundene av braque-typen. FCI-standarden beskriver en hund med solid, harmonisk bygning og et kraftfullt uttrykk, med kort, tett og blank pels og lange ører som rekker helt til snutespissen. Standarden tillater hvit, hvit med oransje eller ravfargede tegn, hvit med brune tegn, oransje roan og leverbrun roan. Mankehøyden er 58–67 cm for hannhunder og 55–62 cm for tisper, og vekten 25–40 kg avhengig av størrelsen. En hund av denne størrelsen er utvokst ved rundt 15–18 måneder (PetMDs størrelsesklasse). The Royal Kennel Club oppgir en levealder på under ti år, PetMD 10–14 år og Bracco Italiano Club of America en median på 11 år.",
+        "The Royal Kennel Club anbefaler mer enn 2 timer mosjon om dagen og pelsstell én gang i uken. Klubben sier at rasen røyter og passer i et stort hus med stor hage på landet, og plasserer den i Breed Watch-kategori 1. PetMD beskriver en leken, intelligent, mild og kjærlig hund som vanligvis kommer godt overens med andre hunder og barn, liker å være tett på menneskene sine og kanskje ikke passer for familier som ofte er borte hjemmefra. PetMD anbefaler tidlig sosialisering, ukentlig børsting og å begrense mosjon rett før og etter måltider på grunn av risikoen for magedreining. Bracco Italiano Club of America oppfordrer oppdrettere til å undersøke hofter, albuer, øyne og nyrer hos foreldredyrene.",
+      ],
+      sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
+    },
+    german_pinscher: {
+      aka: "Tysk pinscher, Deutscher Pinscher, Standard Pinscher",
+      text: [
+        "Pinscher (tysk pinscher, Deutscher Pinscher) er en vakt- og selskapshund fra Tyskland og stamfar til dobermann og dvergpinscher. FCI fører den opp i gruppe 2, pinschere og schnauzere. FCI-standarden beskriver en korthåret, middelsstor, elegant og kvadratisk bygd hund med stolt holdning og et livlig, temperamentsfullt, selvsikkert og jevnt vesen, med naturlige V-formede hengeører og naturlig hale. Standarden tillater bare ensfarget hjorterød til mørk rødbrun samt lakksvart med røde eller brune tegn. Mankehøyden er 45–50 cm og vekten 14–20 kg for både hannhunder og tisper. En hund av denne størrelsen er utvokst ved rundt 12–15 måneder (PetMDs størrelsesklasse). The Royal Kennel Club oppgir en levealder på over ti år, PetMD og WebMD 12–14 år.",
+        "The Royal Kennel Club anbefaler opptil 1 time mosjon om dagen og pelsstell én gang i uken. Klubben sier at rasen røyter, passer godt inn i familielivet og trives i et lite hus med liten eller middels stor hage, og plasserer den i Breed Watch-kategori 1. PetMD skriver at pinschere kan være gode med barn hvis de er godt opplært og sosialisert og alltid er under tilsyn, at de har sterkt jaktinstinkt og trenger inngjerdet hage og daglig mental stimulering. PetMD anbefaler jevn sosialisering fra valpealderen, ukentlig børsting, ukentlig rengjøring av ørene og bad omtrent hver sjette til åttende uke. WebMD sier at rasen passer for en erfaren eier, og at klørne må klippes hver måned.",
+      ],
+      sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
+    },
+    bedlington_terrier: {
+      aka: "Bedlington, Bedlingtonterrier",
+      text: [
+        "Bedlington terrier er en terrier fra Storbritannia, oppkalt etter gruvebyen Bedlington i Northumberland. FCI fører den opp i gruppe 3, terriere, blant de store og mellomstore terrierne. FCI-standarden beskriver en grasiøs, smidig og muskuløs hund med godt lynne, kjærlig og verdig, livlig og full av selvtillit. Pelsen er svært karakteristisk: tykk og luftig, med hår som står langt ut fra huden, og en fyldig, nesten hvit totte på hodet. Standarden tillater blå, leverbrun eller sandfarget, med eller uten brune tegn. Mankehøyden er ca. 41 cm og vekten 8,2–10,4 kg. En hund av denne størrelsen er utvokst ved rundt 9–12 måneder (PetMDs størrelsesklasse). En britisk studie fra 2024, lagt fram av Dogs Trust, viste en median levealder på 13,7 år, og PDSA oppgir en levealder på over ti år.",
+        "PDSA anbefaler minst én times mosjon om dagen og sier at rasen ikke røyter mye, kan være tålmodig og tolerant overfor barn når en voksen er til stede, har et svært sterkt jaktinstinkt og ikke bør være alene i mer enn fire timer. PDSA nevner kobberforgiftning, en arvelig opphopning av kobber i leveren, blant sykdommene man bør kjenne til, og at den klassiske klippen krever profesjonell hundefrisør omtrent hver sjette uke. Woodgreen anbefaler børsting to til tre ganger i uken og en helt inngjerdet hage, og sier at rasen ikke egner seg så godt i leilighet. PetMD skriver at rasen passer for familier med større barn og trenger jevn sosialisering som valp. WebMD anbefaler daglig tannpuss.",
+      ],
+      sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
+    },
     toy_fox_terrier: {
       aka: "Toy foxterrier, Toy Fox Terrier, American Toy Terrier, Amertoy, TFT",
       text: [
