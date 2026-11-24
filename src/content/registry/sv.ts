@@ -1010,6 +1010,30 @@ const sv: RegistryCopy = {
       ],
       sources: ["S312", "S313", "S1019", "S1020", "S1021", "S10"],
     },
+    bracco_italiano: {
+      aka: "Bracco Italiano, Italian Pointer, Italian Pointing Dog, Bracco",
+      text: [
+        "Bracco Italiano (italiensk pointer) är en stående fågelhund från Italien. FCI räknar den till grupp 7, stående fågelhundar, och till de kontinentala stående hundarna av braquetyp. FCI-standarden beskriver en hund med kraftig, harmonisk byggnad och kraftfullt uttryck, med kort, tät och glänsande päls och långa öron som når fram till nosspetsen. Standarden tillåter vitt, vitt med orange eller bärnstensfärgade fläckar, vitt med bruna fläckar, orangeskimmel och brunskimmel. Mankhöjden är 58–67 cm för hanar och 55–62 cm för tikar, och vikten 25–40 kg beroende på storlek. En hund i den här storleksklassen är fullvuxen vid ungefär 15–18 månader (PetMD). Royal Kennel Club anger en livslängd på under 10 år, PetMD 10–14 år och Bracco Italiano Club of America en medianlivslängd på 11 år.",
+        "Royal Kennel Club rekommenderar mer än 2 timmars motion om dagen och pälsvård en gång i veckan. Enligt klubben fäller rasen och passar i ett stort hus med stor trädgård på landet, och den står i Breed Watch-kategori 1. PetMD beskriver en lekfull, intelligent, mild och tillgiven hund som i allmänhet kommer bra överens med andra hundar och barn, gillar att vara nära sina människor och kanske inte passar en familj som ofta är borta hemifrån. PetMD rekommenderar tidig socialisering, borstning varje vecka och att begränsa motionen precis före och efter måltider på grund av risken för magomvridning. Bracco Italiano Club of America ber uppfödare att hälsoundersöka föräldradjurens höfter, armbågar, ögon och njurar.",
+      ],
+      sources: ["S1023", "S1024", "S1027", "S1028", "S10"],
+    },
+    german_pinscher: {
+      aka: "Tysk pinscher, Deutscher Pinscher, Standard Pinscher, Pinscher",
+      text: [
+        "Tysk pinscher (Deutscher Pinscher) är en vakt- och sällskapshund från Tyskland och stamfader till dobermann och dvärgpinscher. FCI räknar den till grupp 2, pinscher och schnauzer. FCI-standarden beskriver en korthårig, medelstor, elegant och kvadratiskt byggd hund med stolt hållning och ett livligt, temperamentsfullt, självsäkert och jämnt lynne, med naturliga V-formade hängöron och naturlig svans. Standarden tillåter bara enfärgad hjortröd till mörkt rödbrun samt svart med röda eller bruna tecken. Mankhöjden är 45–50 cm och vikten 14–20 kg för både hanar och tikar. En hund i den här storleksklassen är fullvuxen vid ungefär 12–15 månader (PetMD). Royal Kennel Club anger en livslängd på över 10 år, PetMD och WebMD 12–14 år.",
+        "Royal Kennel Club rekommenderar upp till en timmes motion om dagen och pälsvård en gång i veckan. Enligt klubben fäller rasen, passar bra i familjelivet och trivs i ett litet hus med liten eller medelstor trädgård, och den står i Breed Watch-kategori 1. PetMD skriver att rasen kan vara bra med barn om den är väl tränad och socialiserad och alltid står under uppsikt, att den har en stark jaktinstinkt och behöver en inhägnad trädgård och mental stimulans varje dag. PetMD rekommenderar konsekvent socialisering redan som valp, borstning varje vecka, öronrengöring varje vecka och bad ungefär var sjätte till åttonde vecka. Enligt WebMD passar rasen en erfaren ägare, och klorna behöver klippas varje månad.",
+      ],
+      sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
+    },
+    bedlington_terrier: {
+      aka: "Bedlington terrier, Bedlington, Bedlingtonterrier",
+      text: [
+        "Bedlington terrier är en terrier från Storbritannien, uppkallad efter gruvstaden Bedlington i Northumberland. FCI räknar den till grupp 3, terrier, och till sektionen stora och medelstora terrier. FCI-standarden beskriver en graciös, smidig och muskulös hund med gott lynne, tillgiven och värdig, livlig och full av självförtroende. Pälsen är mycket karakteristisk: tjock och luddig, med hår som står långt ut från huden, och en yvig, nästan vit toppknut på hjässan. Standarden tillåter blått, leverbrunt eller sandfärgat, med eller utan tan. Mankhöjden är cirka 41 cm och vikten 8,2–10,4 kg. En hund i den här storleksklassen är fullvuxen vid ungefär 9–12 månader (PetMD). En brittisk studie från 2024, presenterad av Dogs Trust, visade en medianlivslängd på 13,7 år, och PDSA anger en livslängd på över 10 år.",
+        "PDSA rekommenderar minst en timmes motion om dagen och skriver att rasen inte fäller särskilt mycket, kan vara tålmodig och tolerant mot barn under uppsikt, har en mycket stark jaktinstinkt och inte bör lämnas ensam i mer än fyra timmar. PDSA tar upp kopparförgiftning, en ärftlig ansamling av koppar i levern, bland de tillstånd man bör känna till, och nämner att den klassiska klippningen kräver en professionell hundfrisör ungefär var sjätte vecka. Woodgreen rekommenderar borstning två till tre gånger i veckan och en helt inhägnad trädgård, och skriver att rasen inte passar så bra i lägenhet. PetMD skriver att rasen passar familjer med äldre barn och behöver konsekvent socialisering som valp. WebMD rekommenderar daglig tandborstning.",
+      ],
+      sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, Finsk lapphund",
       text: [
