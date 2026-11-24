@@ -1711,6 +1711,14 @@ const es: RegistryCopy = {
       ],
       sources: ["S1030", "S1031", "S1032", "S1033", "S10"],
     },
+    bedlington_terrier: {
+      aka: "Bedlington, Bedlington Terrier",
+      text: [
+        "El bedlington terrier es un terrier originario de Gran Bretaña que debe su nombre a la localidad minera de Bedlington, en Northumberland; la FCI lo incluye en el grupo 3, entre los terriers de talla grande y mediana. El estándar de la FCI describe un perro elegante, ágil y musculoso, de buen carácter, cariñoso y digno, brioso y lleno de confianza, con un pelaje muy característico, espeso y de aspecto algodonoso, que se separa bien de la piel, y un copete abundante, casi blanco. Admite el azul, el hígado o el color arena, con o sin fuego. Fija una altura de unos 41 cm y un peso de 8,2–10,4 kg. Un perro de este tamaño alcanza su tamaño adulto hacia los 9–12 meses (categoría de tamaño de PetMD). Un estudio británico de 2024 presentado por Dogs Trust halló una mediana de esperanza de vida de 13,7 años, y la PDSA indica más de 10 años.",
+        "La PDSA recomienda al menos una hora de ejercicio al día y señala que los bedlington no mudan demasiado el pelo, que pueden ser pacientes y tolerantes con los niños bajo supervisión, que tienen un instinto de presa muy fuerte y que no deben quedarse solos más de cuatro horas. Entre las enfermedades que conviene conocer cita la toxicosis por cobre, una acumulación hereditaria de cobre en el hígado, y recomienda llevarlos a un peluquero canino profesional más o menos cada seis semanas para conservar el aspecto clásico. Woodgreen recomienda cepillarlos dos o tres veces por semana y tener un jardín totalmente vallado, y dice que no son muy adecuados para vivir en un piso. PetMD indica que encajan bien en familias con niños mayores y que necesitan una socialización constante desde cachorros; WebMD recomienda cepillarles los dientes a diario.",
+      ],
+      sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
+    },
     finnish_lapphund: {
       aka: "Perro finlandés de Laponia, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
       text: [
