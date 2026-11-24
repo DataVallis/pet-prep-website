@@ -1524,6 +1524,16 @@
         "deep-fawn": "Dunkelfalb"
       }
     },
+    "bracco_italiano": {
+      "name": "Bracco Italiano",
+      "slug": "bracco-italiano",
+      "synonyms": [
+        "Bracco",
+        "Italian Pointer",
+        "Italian Pointing Dog",
+        "Italienischer Vorstehhund"
+      ]
+    },
     "finnish_lapphund": {
       "name": "Finnischer Lapphund",
       "slug": "finnischer-lapphund",
