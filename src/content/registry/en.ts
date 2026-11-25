@@ -935,6 +935,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
     },
+    kerry_blue_terrier: {
+      aka: "Kerry Blue, Kerry, Kerry blue terier",
+      text: [
+        "The Kerry Blue Terrier is a terrier from Ireland; the FCI lists it in Group 3 among the large and medium-sized terriers. The FCI standard describes an upstanding, well-knit, muscular dog with terrier character throughout and a soft, plentiful, wavy coat that may be blue of any shade, with or without black points. The FCI standard gives a weight of 15–18 kg for males, with bitches proportionately less, and a height of 45.5–49.5 cm for males and 44.5–48 cm for bitches; a dog of this size is fully grown at about 12–15 months (PetMD size class). WebMD gives a lifespan of 12–15 years and VCA 10–12 years.",
+        "PetMD recommends about an hour of exercise every day, says the breed makes a wonderful pet for families who can keep up with its grooming and exercise needs, that it is a social breed that may develop separation anxiety if left alone for long periods, and that it may be tempted to chase smaller animals. It recommends daily toothbrushing, cleaning the ears every two to four weeks, a bath about once a month and a professional groom about every six weeks. WebMD says Kerries are affectionate, good with children and easy to train, that their coat sheds very little and that owners must spend time socialising them; VCA recommends brushing and combing every other day.",
+      ],
+      sources: ["S1043", "S1046", "S1047", "S1048", "S10"],
+    },
 
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, finski laponski pes",
