@@ -638,7 +638,11 @@
     },
     "dalmatian": {
       "name": "Dalmata",
-      "slug": "dalmata"
+      "slug": "dalmata",
+      "colours": {
+        "black-spotted": "Macchie nere",
+        "liver-spotted": "Macchie marroni (fegato)"
+      }
     },
     "australian_cattle_dog": {
       "name": "Australian cattle dog",
@@ -647,11 +651,23 @@
         "Bovaro australiano",
         "Blue heeler",
         "Red heeler"
-      ]
+      ],
+      "colours": {
+        "blue-speckled": "Blu picchiettato",
+        "red-speckle": "Rosso picchiettato"
+      }
     },
     "whippet": {
       "name": "Whippet",
-      "slug": "whippet"
+      "slug": "whippet",
+      "colours": {
+        "fawn": "Fulvo",
+        "brindle": "Tigrato",
+        "black": "Nero",
+        "blue": "Blu",
+        "fawn-white": "Fulvo e bianco",
+        "brindle-white": "Tigrato e bianco"
+      }
     },
     "wirehaired_pointing_griffon": {
       "name": "Griffone a pelo duro Korthals",
@@ -659,21 +675,37 @@
       "synonyms": [
         "Griffone Korthals",
         "Korthals"
-      ]
+      ],
+      "colours": {
+        "steel-grey-liver": "Grigio acciaio con marrone",
+        "liver-roan": "Marrone roano",
+        "liver": "Marrone",
+        "liver-white": "Marrone e bianco",
+        "orange-white": "Arancio e bianco"
+      }
     },
     "chesapeake_bay_retriever": {
       "name": "Chesapeake Bay retriever",
       "slug": "chesapeake-bay-retriever",
       "synonyms": [
         "Chessie"
-      ]
+      ],
+      "colours": {
+        "brown": "Marrone",
+        "sedge": "Color carice (sedge)",
+        "deadgrass": "Color erba secca (deadgrass)"
+      }
     },
     "samoyed": {
       "name": "Samoiedo",
       "slug": "samoiedo",
       "synonyms": [
         "Samoyed"
-      ]
+      ],
+      "colours": {
+        "white": "Bianco",
+        "cream": "Crema"
+      }
     },
     "scottish_terrier": {
       "name": "Scottish terrier",
@@ -681,14 +713,23 @@
       "synonyms": [
         "Scottie",
         "Terrier scozzese"
-      ]
+      ],
+      "colours": {
+        "black": "Nero",
+        "brindle": "Tigrato",
+        "wheaten": "Grano"
+      }
     },
     "weimaraner": {
       "name": "Bracco di Weimar",
       "slug": "bracco-di-weimar",
       "synonyms": [
         "Weimaraner"
-      ]
+      ],
+      "colours": {
+        "silver-grey": "Grigio argento",
+        "roe-grey": "Grigio capriolo"
+      }
     },
     "italian_greyhound": {
       "name": "Piccolo levriero italiano",
@@ -697,14 +738,27 @@
         "Levriero italiano",
         "Levrierino",
         "Italian greyhound"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fulvo",
+        "blue": "Grigio ardesia",
+        "black": "Nero",
+        "cream": "Crema",
+        "red": "Rosso",
+        "white": "Bianco",
+        "fawn-white": "Fulvo e bianco"
+      }
     },
     "giant_schnauzer": {
       "name": "Schnauzer gigante",
       "slug": "schnauzer-gigante",
       "synonyms": [
         "Riesenschnauzer"
-      ]
+      ],
+      "colours": {
+        "black": "Nero",
+        "pepper-salt": "Pepe e sale"
+      }
     },
     "bloodhound": {
       "name": "Cane di Sant’Uberto",
@@ -712,7 +766,12 @@
       "synonyms": [
         "Sant’Uberto",
         "Bloodhound"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Nero e focato",
+        "liver-tan": "Fegato e focato",
+        "red": "Rosso"
+      }
     },
     "akita": {
       "name": "Akita americano",
@@ -720,7 +779,13 @@
       "synonyms": [
         "Akita",
         "American akita"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fulvo rossiccio",
+        "pinto": "Pezzato",
+        "brindle": "Tigrato",
+        "white": "Bianco"
+      }
     },
     "cardigan_welsh_corgi": {
       "name": "Welsh corgi Cardigan",
@@ -728,7 +793,15 @@
       "synonyms": [
         "Corgi",
         "Cardigan Welsh corgi"
-      ]
+      ],
+      "colours": {
+        "red-white": "Rosso e bianco",
+        "brindle-white": "Tigrato e bianco",
+        "sable-white": "Sable e bianco",
+        "blue-merle": "Blu merle",
+        "tricolour-brindle": "Tricolore con focature tigrate",
+        "tricolour-red": "Tricolore con focature rosse"
+      }
     },
     "german_wirehaired_pointer": {
       "name": "Bracco tedesco a pelo duro",
@@ -736,14 +809,24 @@
       "synonyms": [
         "Drahthaar",
         "Deutsch Drahthaar"
-      ]
+      ],
+      "colours": {
+        "liver-roan": "Marrone roano",
+        "liver-white": "Marrone e bianco",
+        "liver": "Marrone"
+      }
     },
     "saint_bernard": {
       "name": "San Bernardo",
       "slug": "san-bernardo",
       "synonyms": [
         "Cane di San Bernardo"
-      ]
+      ],
+      "colours": {
+        "red-white": "Rosso e bianco",
+        "white-red": "Bianco con macchie rosse",
+        "brindle-white": "Rosso tigrato e bianco"
+      }
     },
     "staffordshire_bull_terrier": {
       "name": "Staffordshire bull terrier",
@@ -751,14 +834,31 @@
       "synonyms": [
         "Staffie",
         "Staffy"
-      ]
+      ],
+      "colours": {
+        "brindle": "Tigrato",
+        "brindle-white": "Tigrato e bianco",
+        "red": "Rosso",
+        "black-white": "Nero e bianco",
+        "fawn": "Fulvo",
+        "black": "Nero",
+        "blue": "Blu",
+        "red-white": "Rosso e bianco",
+        "blue-white": "Blu e bianco",
+        "fawn-white": "Fulvo e bianco",
+        "white": "Bianco"
+      }
     },
     "airedale_terrier": {
       "name": "Airedale terrier",
       "slug": "airedale-terrier",
       "synonyms": [
         "Airedale"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Focato con sella nera",
+        "grizzle-tan": "Focato con sella grigia"
+      }
     },
     "russell_terrier": {
       "name": "Jack Russell terrier",
@@ -766,11 +866,21 @@
       "synonyms": [
         "Jack Russell",
         "Russell terrier"
-      ]
+      ],
+      "colours": {
+        "white-tan": "Bianco e focato",
+        "tricolour": "Tricolore",
+        "white-black": "Bianco e nero"
+      }
     },
     "bullmastiff": {
       "name": "Bullmastiff",
-      "slug": "bullmastiff"
+      "slug": "bullmastiff",
+      "colours": {
+        "fawn": "Fulvo",
+        "red": "Rosso",
+        "brindle": "Tigrato"
+      }
     },
     "chinese_crested": {
       "name": "Cane crestato cinese",
@@ -779,7 +889,12 @@
         "Crestato cinese",
         "Cane nudo cinese",
         "Chinese crested"
-      ]
+      ],
+      "colours": {
+        "pink-spotted": "Rosa con macchie scure",
+        "slate": "Grigio ardesia scuro",
+        "pink": "Rosa"
+      }
     },
     "nova_scotia_duck_tolling_retriever": {
       "name": "Retriever della Nuova Scozia",
@@ -787,18 +902,38 @@
       "synonyms": [
         "Toller",
         "Nova Scotia duck tolling retriever"
-      ]
+      ],
+      "colours": {
+        "red-white": "Rosso con segni bianchi",
+        "orange-white": "Arancio con segni bianchi",
+        "red": "Rosso"
+      }
     },
     "cairn_terrier": {
       "name": "Cairn terrier",
       "slug": "cairn-terrier",
       "synonyms": [
         "Cairn"
-      ]
+      ],
+      "colours": {
+        "wheaten": "Grano",
+        "red": "Rosso",
+        "cream": "Crema",
+        "grey": "Grigio",
+        "nearly-black": "Quasi nero"
+      }
     },
     "bull_terrier": {
       "name": "Bull terrier",
-      "slug": "bull-terrier"
+      "slug": "bull-terrier",
+      "colours": {
+        "white": "Bianco",
+        "brindle": "Tigrato",
+        "black-brindle": "Tigrato nero",
+        "red": "Rosso",
+        "fawn": "Fulvo",
+        "tricolour": "Tricolore"
+      }
     },
     "miniature_pinscher": {
       "name": "Pinscher nano",
@@ -807,7 +942,11 @@
         "Pinscher miniatura",
         "Zwergpinscher",
         "Mini pinscher"
-      ]
+      ],
+      "colours": {
+        "red": "Rosso",
+        "black-tan": "Nero e focato"
+      }
     },
     "pyrenean_mountain_dog": {
       "name": "Cane da montagna dei Pirenei",
@@ -816,7 +955,14 @@
         "Montagna dei Pirenei",
         "Patou",
         "Great Pyrenees"
-      ]
+      ],
+      "colours": {
+        "white": "Bianco",
+        "white-badger": "Bianco con macchie color tasso",
+        "white-grey": "Bianco con macchie grigie",
+        "white-yellow": "Bianco con macchie giallo pallido",
+        "white-orange": "Bianco con macchie arancio"
+      }
     },
     "soft_coated_wheaten_terrier": {
       "name": "Irish soft coated wheaten terrier",
@@ -832,14 +978,27 @@
       "slug": "levriero-irlandese",
       "synonyms": [
         "Irish wolfhound"
-      ]
+      ],
+      "colours": {
+        "grey": "Grigio",
+        "wheaten": "Grano",
+        "fawn": "Fulvo",
+        "red": "Rosso",
+        "black": "Nero",
+        "white": "Bianco puro"
+      }
     },
     "american_staffordshire_terrier": {
       "name": "American Staffordshire terrier",
       "slug": "american-staffordshire-terrier",
       "synonyms": [
         "Amstaff"
-      ]
+      ],
+      "colours": {
+        "brindle": "Tigrato",
+        "blue": "Blu",
+        "black": "Nero"
+      }
     },
     "lagotto_romagnolo": {
       "name": "Lagotto romagnolo",
@@ -847,7 +1006,16 @@
       "synonyms": [
         "Lagotto",
         "Cane da acqua romagnolo"
-      ]
+      ],
+      "colours": {
+        "brown-roan": "Marrone roano",
+        "off-white": "Bianco sporco",
+        "white-brown": "Bianco con macchie marroni",
+        "white-orange": "Bianco con macchie arancio",
+        "orange-roan": "Arancio roano",
+        "brown": "Marrone",
+        "orange": "Arancio"
+      }
     },
     "alaskan_malamute": {
       "name": "Alaskan malamute",
@@ -855,11 +1023,24 @@
       "synonyms": [
         "Malamute",
         "Malamute dell’Alaska"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Grigio e bianco",
+        "black-white": "Nero e bianco",
+        "sable-white": "Sable e bianco",
+        "red-white": "Rosso e bianco",
+        "white": "Bianco"
+      }
     },
     "basenji": {
       "name": "Basenji",
-      "slug": "basenji"
+      "slug": "basenji",
+      "colours": {
+        "red-white": "Rosso e bianco",
+        "black-white": "Nero e bianco",
+        "tricolour": "Tricolore (nero, focato e bianco)",
+        "brindle-white": "Tigrato e bianco"
+      }
     },
     "maine_coon": {
       "name": "Maine coon",
@@ -962,7 +1143,15 @@
       "synonyms": [
         "Rattie",
         "American rat terrier"
-      ]
+      ],
+      "colours": {
+        "black-tan-white": "Tricolore (nero, focato e bianco)",
+        "chocolate-tan-white": "Cioccolato, focato e bianco",
+        "black-white": "Nero e bianco",
+        "apricot-white": "Albicocca e bianco",
+        "lemon-white": "Limone e bianco",
+        "blue-tan-white": "Blu, focato e bianco"
+      }
     },
     "greater_swiss_mountain_dog": {
       "name": "Grande bovaro svizzero",
@@ -981,7 +1170,15 @@
         "Sharpei",
         "Shar pei cinese",
         "Chinese shar-pei"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fulvo",
+        "red": "Rosso",
+        "cream": "Crema",
+        "black": "Nero",
+        "chocolate": "Cioccolato",
+        "blue": "Blu (grigio ardesia)"
+      }
     },
     "brussels_griffon": {
       "name": "Griffon bruxellois",
@@ -989,7 +1186,12 @@
       "synonyms": [
         "Grifone di Bruxelles",
         "Brussels Griffon"
-      ]
+      ],
+      "colours": {
+        "red": "Rosso",
+        "black-tan": "Nero e focato",
+        "black": "Nero"
+      }
     },
     "irish_setter": {
       "name": "Setter irlandese",
@@ -1000,12 +1202,16 @@
       ]
     },
     "anatolian_shepherd_dog": {
-      "name": "Pastore dell'Anatolia",
+      "name": "Pastore dell’Anatolia",
       "slug": "pastore-dell-anatolia",
       "synonyms": [
         "Kangal",
         "Anatolian Shepherd Dog"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fulvo con maschera nera",
+        "wolf-sable": "Lupato con maschera nera"
+      }
     },
     "chow_chow": {
       "name": "Chow chow",
@@ -1031,7 +1237,17 @@
         "Pekinese",
         "Peke",
         "Pekingese"
-      ]
+      ],
+      "colours": {
+        "red-gold": "Rosso dorato con maschera nera",
+        "fawn": "Fulvo con maschera nera",
+        "sable": "Sable con maschera nera",
+        "cream": "Crema",
+        "black": "Nero",
+        "black-tan": "Nero e focato",
+        "white": "Bianco",
+        "parti-colour": "Pezzato (bianco con macchie colorate)"
+      }
     },
     "keeshond": {
       "name": "Spitz lupo",
@@ -1171,7 +1387,14 @@
         "Bracco",
         "Italian Pointer",
         "Italian Pointing Dog"
-      ]
+      ],
+      "colours": {
+        "orange-white": "Bianco e arancio",
+        "brown-white": "Bianco e marrone",
+        "orange-roan": "Arancio roano",
+        "brown-roan": "Marrone roano",
+        "white": "Bianco"
+      }
     },
     "german_pinscher": {
       "name": "Pinscher tedesco",
@@ -1452,6 +1675,30 @@
         "wheaten": "Grano",
         "black-tan": "Nero e focato",
         "grizzle": "Grizzle"
+      }
+    },
+    "kerry_blue_terrier": {
+      "name": "Kerry blue terrier",
+      "slug": "kerry-blue-terrier",
+      "synonyms": [
+        "Kerry Blue",
+        "Kerry"
+      ],
+      "colours": {
+        "blue": "Blu",
+        "deep-slate-blue": "Blu ardesia scuro",
+        "light-blue-grey": "Grigio blu chiaro"
+      }
+    },
+    "irish_terrier": {
+      "name": "Irish terrier",
+      "slug": "irish-terrier",
+      "synonyms": [
+        "Terrier irlandese"
+      ],
+      "colours": {
+        "red": "Rosso",
+        "yellow-red": "Giallo-rosso"
       }
     }
   },
