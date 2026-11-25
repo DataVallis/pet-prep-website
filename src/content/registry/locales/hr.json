@@ -1140,7 +1140,12 @@
         "Amstaff",
         "Am staff",
         "American staffordshire terrier"
-      ]
+      ],
+      "colours": {
+        "brindle": "Tigrasta",
+        "blue": "Plava",
+        "black": "Crna"
+      }
     },
     "lagotto_romagnolo": {
       "name": "Lagotto romagnolo",
@@ -1150,7 +1155,16 @@
         "Romanjski vodeni pas",
         "Pas za tartufe",
         "Tartufar"
-      ]
+      ],
+      "colours": {
+        "brown-roan": "Smeđi roan",
+        "off-white": "Bjelkasta",
+        "white-brown": "Bijela sa smeđim pjegama",
+        "white-orange": "Bijela s narančastim pjegama",
+        "orange-roan": "Narančasti roan",
+        "brown": "Smeđa",
+        "orange": "Narančasta"
+      }
     },
     "alaskan_malamute": {
       "name": "Aljaški malamut",
@@ -1159,7 +1173,14 @@
         "Malamut",
         "Malamute",
         "Alaskan malamute"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Sivo-bijela",
+        "black-white": "Crno-bijela",
+        "sable-white": "Sable-bijela",
+        "red-white": "Crveno-bijela",
+        "white": "Bijela"
+      }
     },
     "basenji": {
       "name": "Basenji",
@@ -1168,7 +1189,13 @@
         "Basendži",
         "Pas koji ne laje",
         "Kongoanski terijer"
-      ]
+      ],
+      "colours": {
+        "red-white": "Crveno-bijela",
+        "black-white": "Crno-bijela",
+        "tricolour": "Trobojna (crna, palež i bijela)",
+        "brindle-white": "Tigrasto-bijela"
+      }
     },
     "greater_swiss_mountain_dog": {
       "name": "Veliki švicarski planinski pas",
@@ -1292,7 +1319,15 @@
       "synonyms": [
         "Shar Pei",
         "Kineski šarpej"
-      ]
+      ],
+      "colours": {
+        "fawn": "Jelenje žuta (fawn)",
+        "red": "Crvena",
+        "cream": "Krem",
+        "black": "Crna",
+        "chocolate": "Čokoladna",
+        "blue": "Plavosiva"
+      }
     },
     "rat_terrier": {
       "name": "Rat terijer",
@@ -1300,7 +1335,15 @@
       "synonyms": [
         "Rattie",
         "Američki rat terijer"
-      ]
+      ],
+      "colours": {
+        "black-tan-white": "Trobojna (crna, palež i bijela)",
+        "chocolate-tan-white": "Trobojna (čokoladna, palež i bijela)",
+        "black-white": "Crno-bijela",
+        "apricot-white": "Marelično-bijela",
+        "lemon-white": "Limun-bijela",
+        "blue-tan-white": "Trobojna (plava, palež i bijela)"
+      }
     },
     "brussels_griffon": {
       "name": "Briselski grifon",
@@ -1308,7 +1351,12 @@
       "synonyms": [
         "Griffon Bruxellois",
         "Brussels Griffon"
-      ]
+      ],
+      "colours": {
+        "red": "Crvena",
+        "black-tan": "Crna s paležom",
+        "black": "Crna"
+      }
     },
     "irish_setter": {
       "name": "Irski crveni seter",
@@ -1324,7 +1372,11 @@
       "synonyms": [
         "Kangal",
         "Anatolian Shepherd Dog"
-      ]
+      ],
+      "colours": {
+        "fawn": "Jelenje žuta s crnom maskom",
+        "wolf-sable": "Vučje siva s crnom maskom"
+      }
     },
     "chow_chow": {
       "name": "Chow chow",
@@ -1348,7 +1400,17 @@
       "slug": "pekinezer",
       "synonyms": [
         "Pekingese"
-      ]
+      ],
+      "colours": {
+        "red-gold": "Crvenozlatna s crnom maskom",
+        "fawn": "Jelenje žuta s crnom maskom",
+        "sable": "Sable s crnom maskom",
+        "cream": "Krem",
+        "black": "Crna",
+        "black-tan": "Crna s paležom",
+        "white": "Bijela",
+        "parti-colour": "Bijela s obojenim pjegama (parti-colour)"
+      }
     },
     "keeshond": {
       "name": "Vučji špic",
@@ -1610,7 +1672,7 @@
         "white": "Bijela",
         "cream": "Krem",
         "grey-smoke": "Siva ili dimnosiva",
-        "parti-colour": "Šarena (parti-colour)",
+        "parti-colour": "Bijela s obojenim pjegama (parti-colour)",
         "tricolour": "Trobojna (crna, bijela i palež)"
       }
     },
@@ -1811,6 +1873,39 @@
         "black-tan": "Crna s paležom",
         "grizzle": "Grizzle"
       }
+    },
+    "kerry_blue_terrier": {
+      "name": "Kerry blue terijer",
+      "slug": "kerry-blue-terijer",
+      "synonyms": [
+        "Kerry blue",
+        "Kerry",
+        "Kerry blue terrier"
+      ],
+      "colours": {
+        "blue": "Plava",
+        "deep-slate-blue": "Tamna škriljavoplava",
+        "light-blue-grey": "Svijetla plavosiva"
+      }
+    },
+    "irish_terrier": {
+      "name": "Irski terijer",
+      "slug": "irski-terijer",
+      "synonyms": [
+        "Irish terrier"
+      ],
+      "colours": {
+        "red": "Crvena",
+        "yellow-red": "Žutocrvena"
+      }
+    },
+    "bluetick_coonhound": {
+      "name": "Bluetick coonhound",
+      "slug": "bluetick-coonhound",
+      "synonyms": [
+        "Bluetick",
+        "Blue Tick Coonhound"
+      ]
     }
   },
   "suitability_labels": {
