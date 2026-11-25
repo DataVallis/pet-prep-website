@@ -729,7 +729,11 @@
         "Dalmatiner",
         "Dalmatinac",
         "Dalmatian"
-      ]
+      ],
+      "colours": {
+        "black-spotted": "Crno pjegava",
+        "liver-spotted": "Jetreno pjegava"
+      }
     },
     "australian_cattle_dog": {
       "name": "Australski govedarski pas",
@@ -739,7 +743,11 @@
         "Red heeler",
         "Heeler",
         "Australian cattle dog"
-      ]
+      ],
+      "colours": {
+        "blue-speckled": "Plavo sitnopjegava (blue speckled)",
+        "red-speckle": "Crveno sitnopjegava (red speckle)"
+      }
     },
     "whippet": {
       "name": "Whippet",
@@ -748,7 +756,15 @@
         "Vipet",
         "Engleski mali hrt",
         "Snap dog"
-      ]
+      ],
+      "colours": {
+        "fawn": "Jelenje žuta (fawn)",
+        "brindle": "Tigrasta",
+        "black": "Crna",
+        "blue": "Plava (siva)",
+        "fawn-white": "Jelenje žuto-bijela (fawn)",
+        "brindle-white": "Tigrasto-bijela"
+      }
     },
     "wirehaired_pointing_griffon": {
       "name": "Francuski oštrodlaki ptičar Korthals",
@@ -758,7 +774,14 @@
         "Korthalsov grifon",
         "Griffon korthals",
         "Wirehaired pointing griffon"
-      ]
+      ],
+      "colours": {
+        "steel-grey-liver": "Čeličnosiva s jetrenim mrljama",
+        "liver-roan": "Jetreni roan",
+        "liver": "Jetrena",
+        "liver-white": "Jetreno-bijela",
+        "orange-white": "Narančasto-bijela"
+      }
     },
     "chesapeake_bay_retriever": {
       "name": "Chesapeake Bay retriver",
@@ -767,7 +790,12 @@
         "Chessie",
         "Chesapeake",
         "Chesapeake Bay retriever"
-      ]
+      ],
+      "colours": {
+        "brown": "Smeđa",
+        "sedge": "Sedge (crvenkastozlatna)",
+        "deadgrass": "Deadgrass (boje suhe trave)"
+      }
     },
     "samoyed": {
       "name": "Samojed",
@@ -776,7 +804,11 @@
         "Samojedski pas",
         "Samoyed",
         "Sammy"
-      ]
+      ],
+      "colours": {
+        "white": "Bijela",
+        "cream": "Krem"
+      }
     },
     "scottish_terrier": {
       "name": "Škotski terijer",
@@ -785,7 +817,12 @@
         "Scottie",
         "Scottish terrier",
         "Aberdeenski terijer"
-      ]
+      ],
+      "colours": {
+        "black": "Crna",
+        "brindle": "Tigrasta",
+        "wheaten": "Pšenična"
+      }
     },
     "weimaraner": {
       "name": "Vajmarski ptičar",
@@ -795,7 +832,11 @@
         "Weimaraner",
         "Weimarski ptičar",
         "Weim"
-      ]
+      ],
+      "colours": {
+        "silver-grey": "Srebrnosiva",
+        "roe-grey": "Srnastosiva"
+      }
     },
     "italian_greyhound": {
       "name": "Talijanski hrtić",
@@ -805,7 +846,16 @@
         "Piccolo levriero italiano",
         "Italian greyhound",
         "Iggy"
-      ]
+      ],
+      "colours": {
+        "fawn": "Jelenje žuta (fawn)",
+        "blue": "Plavosiva",
+        "black": "Crna",
+        "cream": "Krem",
+        "red": "Crvena",
+        "white": "Bijela",
+        "fawn-white": "Jelenje žuto-bijela (fawn)"
+      }
     },
     "giant_schnauzer": {
       "name": "Veliki šnaucer",
@@ -814,7 +864,11 @@
         "Divovski šnaucer",
         "Riesenschnauzer",
         "Giant schnauzer"
-      ]
+      ],
+      "colours": {
+        "black": "Crna",
+        "pepper-salt": "Papar i sol"
+      }
     },
     "bloodhound": {
       "name": "Pas svetog Huberta",
@@ -823,7 +877,12 @@
         "Bloodhound",
         "Bladhaund",
         "Chien de Saint-Hubert"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Crna s paležom",
+        "liver-tan": "Jetrena s paležom",
+        "red": "Crvena"
+      }
     },
     "akita": {
       "name": "Američka akita",
@@ -831,7 +890,13 @@
       "synonyms": [
         "Akita",
         "American akita"
-      ]
+      ],
+      "colours": {
+        "fawn": "Crvenkastožuta (red fawn)",
+        "pinto": "Pinto (šarena)",
+        "brindle": "Tigrasta",
+        "white": "Bijela"
+      }
     },
     "cardigan_welsh_corgi": {
       "name": "Welsh corgi cardigan",
@@ -841,7 +906,15 @@
         "Corgi",
         "Velški korgi cardigan",
         "Cardigan Welsh corgi"
-      ]
+      ],
+      "colours": {
+        "red-white": "Crveno-bijela",
+        "brindle-white": "Tigrasto-bijela",
+        "sable-white": "Sable-bijela",
+        "blue-merle": "Plavi merle",
+        "tricolour-brindle": "Trobojna s tigrastim paležom",
+        "tricolour-red": "Trobojna s crvenim paležom"
+      }
     },
     "german_wirehaired_pointer": {
       "name": "Njemački oštrodlaki ptičar",
@@ -851,7 +924,12 @@
         "Drahthaar",
         "Deutsch Drahthaar",
         "German wirehaired pointer"
-      ]
+      ],
+      "colours": {
+        "liver-roan": "Jetreni roan",
+        "liver-white": "Jetreno-bijela",
+        "liver": "Jetrena"
+      }
     },
     "saint_bernard": {
       "name": "Bernardinac",
@@ -861,7 +939,12 @@
         "St. Bernard",
         "Bernhardiner",
         "Saint Bernard"
-      ]
+      ],
+      "colours": {
+        "red-white": "Crveno-bijela",
+        "white-red": "Bijela s crvenim pjegama",
+        "brindle-white": "Crvenotigrasto-bijela"
+      }
     },
     "staffordshire_bull_terrier": {
       "name": "Stafordski bulterijer",
@@ -871,7 +954,20 @@
         "Staffordshire bull terijer",
         "Staffie",
         "Staffordshire bull terrier"
-      ]
+      ],
+      "colours": {
+        "brindle": "Tigrasta",
+        "brindle-white": "Tigrasto-bijela",
+        "red": "Crvena",
+        "black-white": "Crno-bijela",
+        "fawn": "Jelenje žuta (fawn)",
+        "black": "Crna",
+        "blue": "Plava",
+        "red-white": "Crveno-bijela",
+        "blue-white": "Plavo-bijela",
+        "fawn-white": "Jelenje žuto-bijela (fawn)",
+        "white": "Bijela"
+      }
     },
     "airedale_terrier": {
       "name": "Airedale terijer",
@@ -881,7 +977,11 @@
         "Airedale terrier",
         "Airedale",
         "Kralj terijera"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Crna s paležom",
+        "grizzle-tan": "Grizzle s paležom"
+      }
     },
     "russell_terrier": {
       "name": "Jack Russell terijer",
@@ -891,7 +991,12 @@
         "Jack russel",
         "Džek rasel terijer",
         "JRT"
-      ]
+      ],
+      "colours": {
+        "white-tan": "Bijela s paležom",
+        "tricolour": "Trobojna",
+        "white-black": "Bijelo-crna"
+      }
     },
     "bullmastiff": {
       "name": "Bulmastif",
@@ -899,7 +1004,12 @@
       "synonyms": [
         "Bullmastiff",
         "Bull mastiff"
-      ]
+      ],
+      "colours": {
+        "fawn": "Jelenje žuta (fawn)",
+        "red": "Crvena",
+        "brindle": "Tigrasta"
+      }
     },
     "chinese_crested": {
       "name": "Kineski kukmasti pas",
@@ -909,7 +1019,12 @@
         "Kukmasti pas",
         "Powder puff",
         "Chinese crested"
-      ]
+      ],
+      "colours": {
+        "pink-spotted": "Ružičasta s tamnim pjegama",
+        "slate": "Tamna škriljavosiva",
+        "pink": "Ružičasta"
+      }
     },
     "nova_scotia_duck_tolling_retriever": {
       "name": "Novoškotski retriver",
@@ -919,7 +1034,12 @@
         "Novoškotski patkarski retriver",
         "Nova Scotia duck tolling retriever",
         "NSDTR"
-      ]
+      ],
+      "colours": {
+        "red-white": "Crvena s bijelim oznakama",
+        "orange-white": "Narančasta s bijelim oznakama",
+        "red": "Crvena"
+      }
     },
     "cairn_terrier": {
       "name": "Cairn terijer",
@@ -928,7 +1048,14 @@
         "Cairn",
         "Kern terijer",
         "Cairn terrier"
-      ]
+      ],
+      "colours": {
+        "wheaten": "Pšenična",
+        "red": "Crvena",
+        "cream": "Krem",
+        "grey": "Siva",
+        "nearly-black": "Gotovo crna"
+      }
     },
     "bull_terrier": {
       "name": "Bulterijer",
@@ -937,7 +1064,15 @@
         "Engleski bulterijer",
         "Bull terrier",
         "Bully"
-      ]
+      ],
+      "colours": {
+        "white": "Bijela",
+        "brindle": "Tigrasta",
+        "black-brindle": "Crnotigrasta",
+        "red": "Crvena",
+        "fawn": "Jelenje žuta (fawn)",
+        "tricolour": "Trobojna"
+      }
     },
     "miniature_pinscher": {
       "name": "Patuljasti pinč",
@@ -947,7 +1082,11 @@
         "Pinč",
         "Min pin",
         "Zwergpinscher"
-      ]
+      ],
+      "colours": {
+        "red": "Crvena",
+        "black-tan": "Crna s paležom"
+      }
     },
     "pyrenean_mountain_dog": {
       "name": "Pirinejski planinski pas",
@@ -957,7 +1096,14 @@
         "Patou",
         "Great Pyrenees",
         "Chien de montagne des Pyrénées"
-      ]
+      ],
+      "colours": {
+        "white": "Bijela",
+        "white-badger": "Bijela s jazavčastim pjegama",
+        "white-grey": "Bijela sa sivim pjegama",
+        "white-yellow": "Bijela s blijedožutim pjegama",
+        "white-orange": "Bijela s narančastim pjegama"
+      }
     },
     "soft_coated_wheaten_terrier": {
       "name": "Irski mekodlaki pšenični terijer",
@@ -976,7 +1122,15 @@
         "Vučji hrt",
         "Irish wolfhound",
         "Cú faoil"
-      ]
+      ],
+      "colours": {
+        "grey": "Siva",
+        "wheaten": "Pšenična",
+        "fawn": "Jelenje žuta (fawn)",
+        "red": "Crvena",
+        "black": "Crna",
+        "white": "Čisto bijela"
+      }
     },
     "american_staffordshire_terrier": {
       "name": "Američki stafordski terijer",
@@ -1351,7 +1505,14 @@
         "Bracco",
         "Italian pointer",
         "Italian pointing dog"
-      ]
+      ],
+      "colours": {
+        "orange-white": "Bijelo-narančasta",
+        "brown-white": "Bijelo-smeđa",
+        "orange-roan": "Narančasti roan",
+        "brown-roan": "Smeđi roan",
+        "white": "Bijela"
+      }
     },
     "german_pinscher": {
       "name": "Njemački pinč",
@@ -1361,7 +1522,11 @@
         "Deutscher Pinscher",
         "German pinscher",
         "Standard pinscher"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Crna s paležom",
+        "red": "Crvena"
+      }
     },
     "bedlington_terrier": {
       "name": "Bedlington terijer",
@@ -1370,7 +1535,13 @@
         "Bedlington",
         "Bedlingtonski terijer",
         "Bedlington terrier"
-      ]
+      ],
+      "colours": {
+        "blue": "Plava",
+        "liver": "Jetrena",
+        "blue-tan": "Plava s paležom",
+        "liver-tan": "Jetrena s paležom"
+      }
     },
     "toy_fox_terrier": {
       "name": "Toy foksterijer",
