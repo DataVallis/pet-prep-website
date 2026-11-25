@@ -1728,6 +1728,14 @@ const de: RegistryCopy = {
       ],
       sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
     },
+    bluetick_coonhound: {
+      aka: "Bluetick, Blue Tick Coonhound, Coonhound",
+      text: [
+        "Der Bluetick Coonhound ist ein Coonhound und stammt aus den USA. Der von Dogs NSW wiedergegebene Rassestandard beschreibt einen schnellen, gut bemuskelten Laufhund mit gepflegtem, kompaktem Körper und glänzendem Fell: ein dunkelblauer, dicht gesprenkelter Körper mit schwarzen Flecken, Kopf und Ohren überwiegend schwarz, mit oder ohne lohfarbene Abzeichen. Rüden wiegen 25–36 kg und haben eine Widerristhöhe von 56–69 cm, Hündinnen wiegen 20–30 kg bei 53–64 cm Widerristhöhe; ein Hund dieser Größe ist mit etwa 15–18 Monaten ausgewachsen (PetMD-Größenklasse). PetMD gibt eine durchschnittliche Lebenserwartung von 11–12 Jahren an.",
+        "Dogs NSW empfiehlt etwa 40 Minuten Bewegung am Tag und rät, die Rasse im Umgang mit Katzen und anderen Kleintieren zu beaufsichtigen. PetMD schreibt, Bluetick Coonhounds brauchten jeden Tag ausgiebige geistige Anregung und körperliche Bewegung; Leine und ein eingezäunter Garten seien unverzichtbar, weil sie einer Fährte unermüdlich folgten. Sie eigneten sich möglicherweise besser für ältere Kinder und erfahrene Halter, seien lauter als der Durchschnitt, und ihr kurzes Fell müsse nur einmal pro Woche gebürstet werden.",
+      ],
+      sources: ["S1061", "S1060", "S10"],
+    },
   },
 };
 

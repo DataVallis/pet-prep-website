@@ -1685,6 +1685,15 @@
         "red": "Rot",
         "yellow-red": "Gelbrot"
       }
+    },
+    "bluetick_coonhound": {
+      "name": "Bluetick Coonhound",
+      "slug": "bluetick-coonhound",
+      "synonyms": [
+        "Bluetick",
+        "Blue Tick Coonhound",
+        "Coonhound"
+      ]
     }
   },
   "suitability_labels": {
