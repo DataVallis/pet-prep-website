@@ -1637,6 +1637,14 @@ const nb: RegistryCopy = {
       ],
       sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
     },
+    bluetick_coonhound: {
+      aka: "Bluetick, Blue Tick Coonhound, coonhound",
+      text: [
+        "Bluetick coonhound er en coonhound fra USA. Rasestandarden som Dogs NSW gjengir, beskriver en rask, muskuløs støver med kompakt, velformet kropp og blank pels: kroppen er mørkeblå med tett marmorering og svarte flekker, mens hodet og ørene for det meste er svarte, med eller uten brune tegn. Hannhunder veier 25–36 kg og er 56–69 cm høye, tisper veier 20–30 kg og er 53–64 cm høye. En hund av denne størrelsen er utvokst ved rundt 15–18 måneder (PetMDs størrelsesklasse). PetMD oppgir en gjennomsnittlig levealder på 11–12 år.",
+        "Dogs NSW anbefaler omtrent 40 minutter mosjon hver dag og at rasen bør holdes under oppsikt sammen med katter og andre små dyr. PetMD skriver at bluetick coonhound trenger mye mental stimulering og mosjon hver dag, at bånd og inngjerdet hage er et must fordi den følger et luktspor uten å gi seg, at den kan passe best for eldre barn og erfarne eiere, at den er mer høylytt enn gjennomsnittet, og at den korte pelsen bare trenger børsting én gang i uken.",
+      ],
+      sources: ["S1061", "S1060", "S10"],
+    },
     kerry_blue_terrier: {
       aka: "Kerry Blue Terrier, Kerry Blue",
       text: [
