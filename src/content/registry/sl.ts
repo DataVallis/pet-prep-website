@@ -972,6 +972,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
     },
+    bluetick_coonhound: {
+      aka: "Bluetick Coonhound, bluetick, blue tick coonhound, coonhound",
+      text: [
+        "Bluetick coonhound je gonič, ki izvira iz Združenih držav Amerike. Standard pasme, ki ga objavlja Dogs NSW, ga opisuje kot hitrega, mišičastega goniča s čvrstim, kompaktnim telesom in sijočo dlako: temno modro, gosto pegasto telo s črnimi lisami, pretežno črno glavo in ušesi, z rjavimi oznakami ali brez njih. Psi tehtajo 55–80 funtov (približno 25–36 kg) in merijo 56–69 cm, psice tehtajo 45–65 funtov (približno 20–30 kg) in merijo 53–64 cm; pes te velikosti doraste pri približno 15–18 mesecih (velikostni razred PetMD). PetMD navaja povprečno življenjsko dobo 11–12 let.",
+        "Dogs NSW priporoča približno 40 minut gibanja na dan in piše, da je treba psa nadzorovati ob mačkah in drugih manjših živalih. PetMD piše, da bluetick coonhound vsak dan potrebuje veliko miselnih izzivov in gibanja, da sta povodec in dobro ograjen vrt nujna, ker vztrajno sledi vonju, da je morda primernejši za starejše otroke in izkušene lastnike, da je glasnejši od povprečja in da njegovo kratko dlako zadostuje česati enkrat na teden.",
+      ],
+      sources: ["S1061", "S1060", "S10"],
+    },
 
 
     finnish_lapphund: {

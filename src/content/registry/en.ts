@@ -952,6 +952,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
     },
+    bluetick_coonhound: {
+      aka: "Bluetick, Blue Tick Coonhound, coonhound",
+      text: [
+        "The Bluetick Coonhound is a coonhound that originated in the United States. The breed standard printed by Dogs NSW describes a speedy, well-muscled hound with a neat, compact body and a glossy coat: a dark blue, thickly mottled body spotted with black, a mostly black head and ears, with or without tan markings. Males weigh 55–80 lb (about 25–36 kg) and stand 22–27 inches tall, females weigh 45–65 lb (about 20–30 kg) and stand 21–25 inches; a dog of this size is fully grown at about 15–18 months (PetMD size class). PetMD gives an average lifespan of 11–12 years.",
+        "Dogs NSW recommends about 40 minutes of exercise a day and says the breed should be monitored around cats or other small animals. PetMD says Bluetick Coonhounds need extensive mental stimulation and physical exercise every day, that leashes and fenced yards are a must because they follow a scent relentlessly, that they may be better suited for older children and experienced owners, that they are louder than average and that their short coat needs only a once-a-week brushing.",
+      ],
+      sources: ["S1061", "S1060", "S10"],
+    },
 
 
     finnish_lapphund: {
