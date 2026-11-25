@@ -1759,6 +1759,30 @@ const da: RegistryCopy = {
       ],
       sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
     },
+    kerry_blue_terrier: {
+      aka: "Kerry blue terrier, Kerry blue, Kerry",
+      text: [
+        "Kerry blue terrier er en terrier fra Irland. FCI placerer den i gruppe 3, terriere, blandt de store og mellemstore terriere. FCI-standarden beskriver en rank, velbygget og muskuløs hund med terrierens væsen helt igennem og en blød, tæt og bølget pels, som kan være blå i alle nuancer, med eller uden sorte aftegninger. Standarden angiver en vægt på 15–18 kg for hanner (tæverne er tilsvarende lettere) og en højde på 45,5–49,5 cm for hanner og 44,5–48 cm for tæver. En hund af denne størrelse er udvokset ved omkring 12–15 måneder (PetMD's størrelsesklasse). WebMD angiver en levetid på 12–15 år og VCA på 10–12 år.",
+        "PetMD anbefaler cirka en times motion hver dag og beskriver racen som en vidunderlig hund for familier, der har overskud til pelsplejen og motionen. Den er selskabelig, kan udvikle separationsangst, hvis den ofte er alene i længere tid, og kan få lyst til at jagte mindre dyr. PetMD anbefaler daglig tandbørstning, ørerensning hver anden til fjerde uge, bad cirka en gang om måneden og et besøg hos en professionel hundefrisør cirka hver sjette uge. WebMD beskriver kerry blue terrieren som kærlig, god ved børn og nem at træne. Pelsen fælder meget lidt, og ejeren skal afsætte tid til socialisering. VCA anbefaler børstning og kæmning hver anden dag.",
+      ],
+      sources: ["S1043", "S1046", "S1047", "S1048", "S10"],
+    },
+    irish_terrier: {
+      aka: "Irsk terrier, Irish terrier",
+      text: [
+        "Irsk terrier er en terrier fra Irland. FCI placerer den i gruppe 3, terriere, blandt de store og mellemstore terriere. FCI-standarden beskriver en aktiv, livlig, adræt og sej hund med en yndefuld, slank krop og en tæt, strid pels, der er ensfarvet rød, hvederød eller gulrød. Standarden angiver en vægt på 12,25 kg for hanner og 11,4 kg for tæver og en højde på cirka 45,5 cm. En hund af denne størrelse er udvokset ved omkring 12–15 måneder (PetMD's størrelsesklasse). Royal Kennel Club og PDSA angiver en levetid på over 12 år og PetMD på 13–15 år.",
+        "Royal Kennel Club anbefaler op til en times motion om dagen og pelspleje mere end én gang om ugen. Ifølge PDSA har racen et højt energiniveau og skal plejes to til tre gange om ugen, og tidlig socialisering og træning er meget vigtigt. Woodgreen skriver, at den kan blive en fremragende familiehund, mild og kærlig over for børnene i sin egen husstand, men at jagtinstinktet er stærkt og udløses af små dyr. Øjne, ører og mund bør tjekkes hver uge, og mange ejere lader pelsen trimme cirka hver anden måned. WebMD anbefaler at børste tænderne dagligt.",
+      ],
+      sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
+    },
+    bluetick_coonhound: {
+      aka: "Bluetick, Blue Tick Coonhound, coonhound",
+      text: [
+        "Bluetick coonhound er en coonhound, der stammer fra USA. Standarden, som Dogs NSW gengiver, beskriver en hurtig, muskuløs hund med en velbygget, kompakt krop og en blank pels: kroppen er mørkeblå og tæt marmoreret med sorte pletter, hovedet overvejende sort og ørerne sorte, med eller uden tanfarvede aftegninger. Hanner vejer 55–80 lb (cirka 25–36 kg) og måler 22–27 tommer i højden, tæver vejer 45–65 lb (cirka 20–30 kg) og måler 21–25 tommer. En hund af denne størrelse er udvokset ved omkring 15–18 måneder (PetMD's størrelsesklasse). PetMD angiver en gennemsnitlig levetid på 11–12 år.",
+        "Dogs NSW anbefaler cirka 40 minutters motion om dagen og skriver, at racen bør holdes under opsyn omkring katte og andre små dyr. Ifølge PetMD har den brug for rigelig mental stimulering og fysisk motion hver dag. Den skal føres i snor og have en indhegnet have, fordi den ihærdigt følger et spor. Racen passer måske bedre til større børn og erfarne ejere, er mere højlydt end gennemsnittet, og den korte pels skal kun børstes en gang om ugen.",
+      ],
+      sources: ["S1061", "S1060", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
       text: [
