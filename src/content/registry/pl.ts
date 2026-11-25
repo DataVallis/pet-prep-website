@@ -1742,6 +1742,30 @@ const pl: RegistryCopy = {
       ],
       sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
     },
+    kerry_blue_terrier: {
+      aka: "Kerry blue, Kerry, terier kerry blue",
+      text: [
+        "Kerry blue terrier to terier z Irlandii; FCI zalicza go do grupy 3, wśród terierów dużych i średnich. Wzorzec FCI opisuje psa prężnego, zwartego, umięśnionego, o terierowym charakterze w każdym calu, z miękką, obfitą, falistą sierścią, która może mieć dowolny odcień niebieskiego, z czarnymi odmianami lub bez nich. Wzorzec FCI podaje masę ciała 15–18\u00a0kg u psów, u suk proporcjonalnie mniejszą, oraz wysokość 45,5–49,5\u00a0cm u psów i 44,5–48\u00a0cm u suk. Pies tej wielkości jest w pełni wyrośnięty w wieku około 12–15\u00a0miesięcy (według klasy wielkości PetMD). WebMD podaje długość życia 12–15\u00a0lat, a VCA 10–12\u00a0lat.",
+        "PetMD zaleca około godziny ruchu dziennie, pisze, że rasa jest wspaniałym psem domowym dla rodzin, które sprostają jej potrzebom pielęgnacyjnym i ruchowym, że to rasa towarzyska, u której po długim pozostawieniu w samotności może rozwinąć się lęk separacyjny, oraz że może ją ciągnąć do pogoni za mniejszymi zwierzętami. Zaleca codzienne szczotkowanie zębów, czyszczenie uszu co dwa–cztery tygodnie, kąpiel mniej więcej raz w miesiącu i profesjonalną pielęgnację co około sześć tygodni. WebMD pisze, że kerry blue terriery są czułe, dobrze dogadują się z dziećmi i łatwo się je szkoli, że ich sierść linieje bardzo mało, a właściciele muszą poświęcić czas na ich socjalizację; VCA zaleca szczotkowanie i czesanie co drugi dzień.",
+      ],
+      sources: ["S1043", "S1046", "S1047", "S1048", "S10"],
+    },
+    irish_terrier: {
+      aka: "Irish terrier, irlandzki terier",
+      text: [
+        "Terier irlandzki to terier z Irlandii; FCI zalicza go do grupy 3, wśród terierów dużych i średnich. Wzorzec FCI opisuje psa czynnego, żywego, zwinnego i żylastego, o wdzięcznej, smukłej sylwetce i gęstej, szorstkiej sierści w jednolitym kolorze: czerwonym, czerwonopszenicznym lub żółtoczerwonym. Wzorzec FCI podaje masę ciała 12,25\u00a0kg u psów i 11,4\u00a0kg u suk oraz wysokość około 45,5\u00a0cm. Pies tej wielkości jest w pełni wyrośnięty w wieku około 12–15\u00a0miesięcy (według klasy wielkości PetMD). The Royal Kennel Club i PDSA podają długość życia ponad 12\u00a0lat, a PetMD 13–15\u00a0lat.",
+        "The Royal Kennel Club zaleca do godziny ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu; PDSA pisze, że terriery irlandzkie mają dużo energii i wymagają pielęgnacji dwa–trzy razy w tygodniu, a socjalizacja i szkolenie od najmłodszych lat są bardzo ważne. Woodgreen pisze, że mogą być doskonałymi psami rodzinnymi, łagodnymi i czułymi wobec dzieci z własnego domu, że ich silny instynkt łowiecki uruchamiają małe zwierzęta, że oczy, uszy i pysk warto sprawdzać co tydzień, a wielu właścicieli strzyże sierść mniej więcej co dwa miesiące. WebMD zaleca codzienne mycie zębów.",
+      ],
+      sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
+    },
+    bluetick_coonhound: {
+      aka: "Bluetick, Blue Tick Coonhound, coonhound",
+      text: [
+        "Bluetick coonhound to coonhound, rasa pochodząca ze Stanów Zjednoczonych. Wzorzec rasy opublikowany przez Dogs NSW opisuje szybkiego, dobrze umięśnionego psa gończego o zgrabnym, zwartym ciele i lśniącej sierści: ciemnoniebieskie, gęsto cętkowane ciało z czarnymi plamami, głowa i uszy w większości czarne, z podpalaniem lub bez. Psy ważą 55–80\u00a0funtów (około 25–36\u00a0kg) i mają 22–27\u00a0cali wysokości, suki ważą 45–65\u00a0funtów (około 20–30\u00a0kg) i mają 21–25\u00a0cali. Pies tej wielkości jest w pełni wyrośnięty w wieku około 15–18\u00a0miesięcy (według klasy wielkości PetMD). PetMD podaje średnią długość życia 11–12\u00a0lat.",
+        "Dogs NSW zaleca około 40\u00a0minut ruchu dziennie i pisze, że w pobliżu kotów i innych małych zwierząt rasę należy pilnować. PetMD pisze, że bluetick coonhoundy potrzebują codziennie dużo bodźców umysłowych i ruchu, że smycz i ogrodzony ogród to konieczność, bo psy te nieustępliwie podążają za zapachem, że mogą lepiej pasować do rodzin ze starszymi dziećmi i doświadczonych właścicieli, że są głośniejsze niż przeciętnie, a ich krótka sierść wymaga szczotkowania tylko raz w tygodniu.",
+      ],
+      sources: ["S1061", "S1060", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
       text: [
