@@ -1769,6 +1769,38 @@
         "blue-tan": "Blå och tan",
         "liver-tan": "Leverbrun och tan"
       }
+    },
+    "kerry_blue_terrier": {
+      "name": "Kerry blue terrier",
+      "slug": "kerry-blue-terrier",
+      "synonyms": [
+        "Kerry blue",
+        "Kerry"
+      ],
+      "colours": {
+        "blue": "Blå",
+        "deep-slate-blue": "Mörk skifferblå",
+        "light-blue-grey": "Ljus blågrå"
+      }
+    },
+    "irish_terrier": {
+      "name": "Irish terrier",
+      "slug": "irish-terrier",
+      "synonyms": [
+        "Irländsk terrier"
+      ],
+      "colours": {
+        "red": "Röd",
+        "yellow-red": "Gulröd"
+      }
+    },
+    "bluetick_coonhound": {
+      "name": "Bluetick coonhound",
+      "slug": "bluetick-coonhound",
+      "synonyms": [
+        "Bluetick",
+        "Blue Tick Coonhound"
+      ]
     }
   },
   "suitability_labels": {
