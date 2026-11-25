@@ -1721,6 +1721,30 @@ const es: RegistryCopy = {
       ],
       sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
     },
+    kerry_blue_terrier: {
+      aka: "Kerry blue, Kerry, Kerry Blue Terrier",
+      text: [
+        "El kerry blue terrier es un terrier originario de Irlanda; la FCI lo incluye en el grupo 3, entre los terriers de talla grande y mediana. El estándar de la FCI describe un perro erguido, bien proporcionado y musculoso, con carácter de terrier en todo su porte, y un pelaje suave, abundante y ondulado, azul de cualquier tono, con o sin extremidades negras. Fija un peso de 15–18 kg en los machos, algo menos en las hembras, y una altura de 45,5–49,5 cm en los machos y 44,5–48 cm en las hembras. Un perro de este tamaño alcanza su tamaño adulto hacia los 12–15 meses (categoría de tamaño de PetMD). WebMD indica una esperanza de vida de 12–15 años y VCA, de 10–12 años.",
+        "PetMD recomienda cerca de una hora de ejercicio al día y describe una mascota estupenda para familias que puedan atender sus necesidades de ejercicio y de cuidado del pelo. Según PetMD, es una raza sociable que puede sufrir ansiedad por separación si se queda sola mucho tiempo y a la que puede tentar perseguir a animales más pequeños. Aconseja cepillarle los dientes a diario, limpiarle los oídos cada 2–4 semanas, bañarlo aproximadamente una vez al mes y llevarlo a un peluquero canino profesional cada seis semanas más o menos. WebMD dice que los kerry son cariñosos, buenos con los niños y fáciles de adiestrar, que apenas mudan el pelo y que conviene dedicar tiempo a socializarlos; VCA recomienda cepillarlos y peinarlos en días alternos.",
+      ],
+      sources: ["S1043", "S1046", "S1047", "S1048", "S10"],
+    },
+    irish_terrier: {
+      aka: "Terrier irlandés, Irish Terrier",
+      text: [
+        "El terrier irlandés es un terrier originario de Irlanda; la FCI lo incluye en el grupo 3, entre los terriers de talla grande y mediana. El estándar de la FCI describe un perro activo, vivaz y ágil, de silueta elegante y aerodinámica, con un pelaje duro, denso y áspero de un solo color: rojo, rojo trigo o rojo amarillento. Fija un peso de 12,25 kg en los machos y de 11,4 kg en las hembras, y una altura de unos 45,5 cm. Un perro de este tamaño alcanza su tamaño adulto hacia los 12–15 meses (categoría de tamaño de PetMD). El Royal Kennel Club y la PDSA indican una esperanza de vida de más de 12 años, y PetMD, de 13–15 años.",
+        "El Royal Kennel Club recomienda hasta una hora de ejercicio al día y cuidados del pelo más de una vez por semana. La PDSA señala que los terriers irlandeses tienen mucha energía y necesitan cuidados del pelo dos o tres veces por semana, y que la socialización y el adiestramiento desde pequeños son muy importantes. Woodgreen dice que pueden ser excelentes perros de familia, delicados y cariñosos con los niños de la casa, pero que su fuerte instinto de presa se despierta ante los animales pequeños; aconseja revisarles los ojos, los oídos y la boca cada semana y comenta que muchos propietarios les hacen recortar el pelo cada dos meses aproximadamente. WebMD recomienda cepillarles los dientes a diario.",
+      ],
+      sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
+    },
+    bluetick_coonhound: {
+      aka: "Bluetick, Blue Tick Coonhound, coonhound, Bluetick Coonhound",
+      text: [
+        "El bluetick coonhound es un coonhound (perro de caza de mapaches) originario de Estados Unidos. El estándar de la raza publicado por Dogs NSW describe un sabueso veloz y musculoso, de cuerpo compacto y bien proporcionado y de pelo brillante: el cuerpo es azul oscuro, densamente moteado y manchado de negro; la cabeza y las orejas son mayormente negras, y puede haber o no marcas de fuego. Los machos pesan 55–80 libras (unos 25–36 kg) y miden 22–27 pulgadas de alzada; las hembras pesan 45–65 libras (unos 20–30 kg) y miden 21–25 pulgadas. Un perro de este tamaño alcanza su tamaño adulto hacia los 15–18 meses (categoría de tamaño de PetMD). PetMD indica una esperanza de vida media de 11–12 años.",
+        "Dogs NSW recomienda unos 40 minutos de ejercicio al día y señala que hay que vigilar al perro cuando está cerca de gatos u otros animales pequeños. PetMD dice que los bluetick coonhound necesitan mucha estimulación mental y ejercicio físico a diario, que son imprescindibles la correa y un jardín vallado porque siguen un rastro sin descanso, que quizá encajen mejor en familias con niños mayores y con propietarios con experiencia, que son más ruidosos que la media y que su pelo corto solo necesita un cepillado a la semana.",
+      ],
+      sources: ["S1061", "S1060", "S10"],
+    },
     finnish_lapphund: {
       aka: "Perro finlandés de Laponia, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
       text: [
