@@ -1838,6 +1838,30 @@ const hr: RegistryCopy = {
       ],
       sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
     },
+    kerry_blue_terrier: {
+      aka: "Kerry blue terijer, Kerry blue, Kerry, Kerry blue terrier",
+      text: [
+        "Kerry blue terijer je terijer iz Irske; FCI je svrstava u skupinu 3, među velike i srednje velike terijere. Standard FCI-ja opisuje uspravna, čvrsto građena i mišićava psa s izrazitim terijerskim karakterom te mekom, obilnom, valovitom dlakom koja može biti plava u svim nijansama, s crnim oznakama ili bez njih. Standard navodi težinu od 15–18 kg za mužjake, a ženke su razmjerno lakše, te visinu od 45,5–49,5 cm za mužjake i 44,5–48 cm za ženke; pas te veličine odraste s otprilike 12–15 mjeseci (PetMD, prema razredu veličine). WebMD navodi životni vijek od 12–15 godina, a VCA od 10–12 godina.",
+        "PetMD preporučuje otprilike sat vremena kretanja svaki dan, piše da je pasmina odličan kućni ljubimac za obitelji koje mogu udovoljiti njezinim potrebama za njegom i kretanjem, da je društvena i da može razviti tjeskobu zbog odvajanja ako dugo ostaje sama te da bi mogla progoniti manje životinje. Savjetuje svakodnevno pranje zuba, čišćenje ušiju svaka dva do četiri tjedna, kupanje otprilike jednom mjesečno i odlazak profesionalnom frizeru za pse otprilike svakih šest tjedana. WebMD piše da su kerryji privrženi, dobri s djecom, da se lako dresiraju, da se vrlo malo linjaju i da vlasnici moraju izdvojiti vrijeme za njihovu socijalizaciju; VCA preporučuje četkanje i češljanje svaki drugi dan.",
+      ],
+      sources: ["S1043", "S1046", "S1047", "S1048", "S10"],
+    },
+    irish_terrier: {
+      aka: "Irski terijer, Irish terrier",
+      text: [
+        "Irski terijer pasmina je terijera iz Irske; FCI je svrstava u skupinu 3, među velike i srednje velike terijere. Standard FCI-ja opisuje aktivna, živahna, gipka i žilava psa graciozne, vitke linije i guste, žičane dlake jednobojne crvene, pšenično crvene ili žutocrvene boje. Standard navodi težinu od 12,25 kg za mužjake i 11,4 kg za ženke te visinu od oko 45,5 cm; pas te veličine odraste s otprilike 12–15 mjeseci (PetMD, prema razredu veličine). Royal Kennel Club i PDSA navode životni vijek dulji od 12 godina, a PetMD 13–15 godina.",
+        "Royal Kennel Club preporučuje do sat vremena kretanja dnevno i njegu dlake češće nego jednom tjedno; PDSA piše da irski terijeri imaju puno energije, da im dlaku treba njegovati dva do tri puta tjedno te da su socijalizacija i dresura u ranoj dobi vrlo važne. Woodgreen navodi da mogu biti izvrsni obiteljski psi, nježni i privrženi djeci iz vlastitog kućanstva, da ih jak lovački nagon potiče na potjeru za malim životinjama, da im jednom tjedno treba pregledati oči, uši i usta te da mnogi vlasnici dlaku šišaju otprilike svaka dva mjeseca. WebMD preporučuje svakodnevno pranje zuba.",
+      ],
+      sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
+    },
+    bluetick_coonhound: {
+      aka: "Bluetick coonhound, Bluetick, Blue Tick Coonhound, Coonhound",
+      text: [
+        "Bluetick coonhound pas je za lov na rakune koji potječe iz Sjedinjenih Američkih Država. Standard pasmine koji objavljuje Dogs NSW opisuje brzog, snažno mišićavog goniča urednog, zbijenog tijela i sjajne dlake: tamnoplavo, gusto prošarano tijelo s crnim pjegama te većim dijelom crna glava i uši, s oznakama boje paleži ili bez njih. Mužjaci teže 55–80 funti (oko 25–36 kg) i visoki su 22–27 inča, a ženke teže 45–65 funti (oko 20–30 kg) i visoke su 21–25 inča; pas te veličine odraste s otprilike 15–18 mjeseci (PetMD, prema razredu veličine). PetMD navodi prosječan životni vijek od 11–12 godina.",
+        "Dogs NSW preporučuje otprilike 40 minuta kretanja dnevno i savjetuje da se pasmina nadzire u blizini mačaka i drugih malih životinja. PetMD piše da bluetick coonhoundima treba obilje mentalne stimulacije i svakodnevnog kretanja, da su uzica i ograđeno dvorište nužni jer neumorno slijede miris traga, da su možda prikladniji za stariju djecu i iskusne vlasnike, da laju glasnije od prosjeka te da im kratku dlaku treba četkati samo jednom tjedno.",
+      ],
+      sources: ["S1061", "S1060", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finski laponski pas, Finski lapphund, Finnish Lapphund, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
       text: [
