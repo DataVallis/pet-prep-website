@@ -1712,6 +1712,22 @@ const de: RegistryCopy = {
       ],
       sources: ["S690", "S693", "S694", "S10"],
     },
+    kerry_blue_terrier: {
+      aka: "Kerry Blue, Kerry, Kerry-Blue-Terrier",
+      text: [
+        "Der Kerry Blue Terrier ist ein Terrier aus Irland; die FCI führt ihn in Gruppe 3 unter den großen und mittelgroßen Terriern. Der FCI-Standard beschreibt einen aufrechten, gut gebauten, muskulösen Hund mit durch und durch terriertypischem Wesen und einem weichen, üppigen, gewellten Fell, das in jeder Blauschattierung vorkommen darf, mit oder ohne schwarze Abzeichen. Als Gewicht nennt der Standard 15–18 kg für Rüden, bei Hündinnen entsprechend weniger, und als Widerristhöhe 45,5–49,5 cm bei Rüden und 44,5–48 cm bei Hündinnen; ein Hund dieser Größe ist mit etwa 12–15 Monaten ausgewachsen (PetMD-Größenklasse). WebMD gibt eine Lebenserwartung von 12–15 Jahren an, VCA 10–12 Jahre.",
+        "PetMD empfiehlt täglich etwa eine Stunde Bewegung und schreibt, die Rasse sei ein wunderbares Haustier für Familien, die mit Fellpflege und Auslauf Schritt halten können; sie sei gesellig, könne bei langem Alleinsein Trennungsangst entwickeln und neige möglicherweise dazu, kleineren Tieren nachzujagen. Empfohlen werden tägliches Zähneputzen, alle zwei bis vier Wochen eine Ohrenreinigung, etwa einmal im Monat ein Bad und etwa alle sechs Wochen ein Besuch beim professionellen Hundefriseur. WebMD schreibt, Kerrys seien anhänglich, gut mit Kindern und leicht zu erziehen, sie haarten sehr wenig, und die Halter müssten sich Zeit für die Sozialisierung nehmen; VCA empfiehlt, sie jeden zweiten Tag zu bürsten und zu kämmen.",
+      ],
+      sources: ["S1043", "S1046", "S1047", "S1048", "S10"],
+    },
+    irish_terrier: {
+      aka: "Irish Terrier, Irischer Terrier",
+      text: [
+        "Der Irish Terrier ist ein Terrier aus Irland; die FCI führt ihn in Gruppe 3 unter den großen und mittelgroßen Terriern. Der FCI-Standard beschreibt einen aktiven, lebhaften, geschmeidigen und drahtigen Hund mit anmutiger, rassiger Linie und einem dichten, drahtigen Fell, das einfarbig rot, rot-weizenfarben oder gelbrot ist. Als Gewicht nennt der FCI-Standard 12,25 kg für Rüden und 11,4 kg für Hündinnen und als Widerristhöhe etwa 45,5 cm; ein Hund dieser Größe ist mit etwa 12–15 Monaten ausgewachsen (PetMD-Größenklasse). Der Royal Kennel Club und die PDSA geben eine Lebenserwartung von über 12 Jahren an, PetMD 13–15 Jahre.",
+        "Der Royal Kennel Club empfiehlt bis zu einer Stunde Bewegung am Tag und mehr als einmal pro Woche Fellpflege; die PDSA schreibt, Irish Terrier hätten viel Energie, brauchten zwei- bis dreimal pro Woche Fellpflege, und Sozialisierung und Erziehung von klein auf seien sehr wichtig. Woodgreen schreibt, sie könnten ausgezeichnete Familienhunde sein, sanft und anhänglich gegenüber den Kindern im eigenen Haushalt, ihr starker Jagdtrieb werde durch kleine Tiere ausgelöst, Augen, Ohren und Maul sollten wöchentlich kontrolliert werden, und viele Halter ließen das Fell alle paar Monate scheren. WebMD empfiehlt, ihnen täglich die Zähne zu putzen.",
+      ],
+      sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
+    },
   },
 };
 

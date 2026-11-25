@@ -961,7 +961,12 @@
       "slug": "american-staffordshire-terrier",
       "synonyms": [
         "AmStaff"
-      ]
+      ],
+      "colours": {
+        "black": "Schwarz",
+        "blue": "Blau",
+        "brindle": "Gestromt"
+      }
     },
     "lagotto_romagnolo": {
       "name": "Lagotto Romagnolo",
@@ -969,18 +974,40 @@
       "synonyms": [
         "Lagotto",
         "Trüffelhund"
-      ]
+      ],
+      "colours": {
+        "brown": "Braun",
+        "brown-roan": "Braunschimmel",
+        "off-white": "Gebrochenes Weiß",
+        "orange": "Orange",
+        "orange-roan": "Orangeschimmel",
+        "white-brown": "Weiß mit braunen Platten",
+        "white-orange": "Weiß mit orangefarbenen Platten"
+      }
     },
     "alaskan_malamute": {
       "name": "Alaskan Malamute",
       "slug": "alaskan-malamute",
       "synonyms": [
         "Malamute"
-      ]
+      ],
+      "colours": {
+        "black-white": "Schwarz-Weiß",
+        "grey-white": "Grau-Weiß",
+        "red-white": "Rot-Weiß",
+        "sable-white": "Zobel-Weiß",
+        "white": "Weiß"
+      }
     },
     "basenji": {
       "name": "Basenji",
-      "slug": "basenji"
+      "slug": "basenji",
+      "colours": {
+        "black-white": "Schwarz-Weiß",
+        "brindle-white": "Gestromt-Weiß",
+        "red-white": "Rot-Weiß",
+        "tricolour": "Tricolour (Schwarz, Lohfarben, Weiß)"
+      }
     },
     "maine_coon": {
       "name": "Maine Coon",
@@ -1079,7 +1106,15 @@
       "synonyms": [
         "Rattie",
         "American Rat Terrier"
-      ]
+      ],
+      "colours": {
+        "apricot-white": "Apricot-Weiß",
+        "black-tan-white": "Tricolour (Schwarz, Lohfarben, Weiß)",
+        "black-white": "Schwarz-Weiß",
+        "blue-tan-white": "Blau-Weiß mit Brand",
+        "chocolate-tan-white": "Schokobraun-Weiß mit Brand",
+        "lemon-white": "Lemon-Weiß"
+      }
     },
     "greater_swiss_mountain_dog": {
       "name": "Großer Schweizer Sennenhund",
@@ -1096,7 +1131,15 @@
       "synonyms": [
         "Chinesischer Shar-Pei",
         "Sharpei"
-      ]
+      ],
+      "colours": {
+        "black": "Schwarz",
+        "blue": "Blau",
+        "chocolate": "Schokobraun",
+        "cream": "Creme",
+        "fawn": "Falb",
+        "red": "Rot"
+      }
     },
     "brussels_griffon": {
       "name": "Griffon Bruxellois",
@@ -1104,7 +1147,12 @@
       "synonyms": [
         "Brüsseler Griffon",
         "Brussels Griffon"
-      ]
+      ],
+      "colours": {
+        "black": "Schwarz",
+        "black-tan": "Schwarz mit Brand",
+        "red": "Rot"
+      }
     },
     "irish_setter": {
       "name": "Irish Red Setter",
@@ -1121,7 +1169,11 @@
       "synonyms": [
         "Kangal",
         "Anatolian Shepherd Dog"
-      ]
+      ],
+      "colours": {
+        "fawn": "Falb mit schwarzer Maske",
+        "wolf-sable": "Wolfszobel mit schwarzer Maske"
+      }
     },
     "chow_chow": {
       "name": "Chow-Chow",
@@ -1146,7 +1198,17 @@
         "Pekinese",
         "Peke",
         "Löwenhund"
-      ]
+      ],
+      "colours": {
+        "black": "Schwarz",
+        "black-tan": "Schwarz mit Brand",
+        "cream": "Creme",
+        "fawn": "Falb mit schwarzer Maske",
+        "parti-colour": "Gescheckt",
+        "red-gold": "Goldrot mit schwarzer Maske",
+        "sable": "Zobel mit schwarzer Maske",
+        "white": "Weiß"
+      }
     },
     "keeshond": {
       "name": "Wolfsspitz",
@@ -1532,7 +1594,14 @@
         "Italian Pointer",
         "Italian Pointing Dog",
         "Italienischer Vorstehhund"
-      ]
+      ],
+      "colours": {
+        "brown-roan": "Braunschimmel",
+        "brown-white": "Braun-Weiß",
+        "orange-roan": "Orangeschimmel",
+        "orange-white": "Orange-Weiß",
+        "white": "Weiß"
+      }
     },
     "german_pinscher": {
       "name": "Deutscher Pinscher",
@@ -1590,6 +1659,31 @@
         "wheaten": "Weizenfarben",
         "black-tan": "Schwarz mit Brand",
         "grizzle": "Grizzle"
+      }
+    },
+    "kerry_blue_terrier": {
+      "name": "Kerry Blue Terrier",
+      "slug": "kerry-blue-terrier",
+      "synonyms": [
+        "Kerry Blue",
+        "Kerry",
+        "Kerry-Blue-Terrier"
+      ],
+      "colours": {
+        "blue": "Blau",
+        "deep-slate-blue": "Dunkles Schieferblau",
+        "light-blue-grey": "Helles Blaugrau"
+      }
+    },
+    "irish_terrier": {
+      "name": "Irish Terrier",
+      "slug": "irish-terrier",
+      "synonyms": [
+        "Irischer Terrier"
+      ],
+      "colours": {
+        "red": "Rot",
+        "yellow-red": "Gelbrot"
       }
     }
   },
