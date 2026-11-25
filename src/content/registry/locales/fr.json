@@ -1664,6 +1664,38 @@
         "black-tan": "Noir et feu",
         "grizzle": "Grizzle"
       }
+    },
+    "kerry_blue_terrier": {
+      "name": "Kerry Blue Terrier",
+      "slug": "kerry-blue-terrier",
+      "synonyms": [
+        "Kerry Blue",
+        "Kerry"
+      ],
+      "colours": {
+        "blue": "Bleu",
+        "deep-slate-blue": "Bleu ardoise foncé",
+        "light-blue-grey": "Gris bleu clair"
+      }
+    },
+    "irish_terrier": {
+      "name": "Irish Terrier",
+      "slug": "irish-terrier",
+      "synonyms": [
+        "Terrier irlandais"
+      ],
+      "colours": {
+        "red": "Rouge",
+        "yellow-red": "Jaune rougeâtre"
+      }
+    },
+    "bluetick_coonhound": {
+      "name": "Bluetick Coonhound",
+      "slug": "bluetick-coonhound",
+      "synonyms": [
+        "Bluetick",
+        "Blue Tick Coonhound"
+      ]
     }
   },
   "suitability_labels": {

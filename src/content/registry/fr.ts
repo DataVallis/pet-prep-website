@@ -1526,6 +1526,30 @@ const fr: RegistryCopy = {
       ],
       sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
     },
+    kerry_blue_terrier: {
+      aka: "Kerry Blue, Kerry",
+      text: [
+        "Le Kerry Blue Terrier est un terrier originaire d’Irlande ; la FCI le classe dans le groupe 3, parmi les terriers de grande et moyenne taille. Le standard FCI décrit un chien bien campé, compact et musclé, avec un caractère de terrier en toutes circonstances, au poil doux, abondant et ondulé, qui peut être de toutes les nuances de bleu, avec ou sans extrémités noires. Il indique un poids de 15–18 kg pour les mâles, un peu moins pour les femelles, et une hauteur de 45,5–49,5 cm pour les mâles et de 44,5–48 cm pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 12 à 15 mois (catégorie de gabarit PetMD). WebMD donne une espérance de vie de 12 à 15 ans et VCA de 10 à 12 ans.",
+        "PetMD recommande environ une heure d’exercice par jour et écrit que la race est un merveilleux animal de compagnie pour les familles capables de répondre à ses besoins de toilettage et d’exercice, qu’elle est sociable et peut développer de l’anxiété de séparation si elle reste longtemps seule, et qu’elle peut être tentée de pourchasser de plus petits animaux. Il recommande un brossage des dents quotidien, un nettoyage des oreilles toutes les deux à quatre semaines, un bain environ une fois par mois et un toilettage professionnel environ toutes les six semaines. WebMD écrit que les Kerry Blue sont affectueux, bons avec les enfants et faciles à éduquer, qu’ils perdent très peu de poils et qu’il faut prendre le temps de les socialiser ; VCA recommande un brossage et un peignage tous les deux jours.",
+      ],
+      sources: ["S1043", "S1046", "S1047", "S1048", "S10"],
+    },
+    irish_terrier: {
+      aka: "Terrier irlandais",
+      text: [
+        "L’Irish Terrier est un terrier originaire d’Irlande ; la FCI le classe dans le groupe 3, parmi les terriers de grande et moyenne taille. Le standard FCI décrit un chien actif, vif, souple et nerveux, à la silhouette gracieuse et racée, au poil dense et dur, de couleur unie : rouge, froment rougeâtre ou jaune rougeâtre. Il indique un poids de 12,25 kg pour les mâles et de 11,4 kg pour les femelles et une hauteur d’environ 45,5 cm. Un chien de ce gabarit atteint sa taille adulte vers 12 à 15 mois (catégorie de gabarit PetMD). Le Royal Kennel Club et la PDSA donnent une espérance de vie de plus de 12 ans, PetMD de 13 à 15 ans.",
+        "Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour et un toilettage plus d’une fois par semaine ; la PDSA écrit que les Irish Terriers ont un niveau d’énergie élevé, qu’il faut les toiletter deux ou trois fois par semaine et que la socialisation et l’éducation dès le plus jeune âge sont très importantes. Woodgreen écrit qu’ils peuvent être d’excellents chiens de famille, doux et affectueux avec les enfants de leur propre foyer, que leur fort instinct de prédation est déclenché par les petits animaux, qu’il faut vérifier chaque semaine les yeux, les oreilles et la bouche, et que beaucoup de maîtres font tondre leur chien tous les deux mois environ. WebMD recommande un brossage des dents quotidien.",
+      ],
+      sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
+    },
+    bluetick_coonhound: {
+      aka: "Bluetick, Blue Tick Coonhound, Coonhound",
+      text: [
+        "Le Bluetick Coonhound est un chien de chasse au raton laveur originaire des États-Unis. Le standard de race publié par Dogs NSW décrit un chien courant rapide et bien musclé, au corps net et compact et au poil brillant : corps bleu foncé, densément moucheté et tacheté de noir, tête et oreilles surtout noires, avec ou sans marques feu. Les mâles pèsent 55 à 80 livres (environ 25–36 kg) pour 22 à 27 pouces de hauteur (environ 56–69 cm), les femelles 45 à 65 livres (environ 20–30 kg) pour 21 à 25 pouces (environ 53–64 cm). Un chien de ce gabarit atteint sa taille adulte vers 15 à 18 mois (catégorie de gabarit PetMD). PetMD donne une espérance de vie moyenne de 11 à 12 ans.",
+        "Dogs NSW recommande environ 40 minutes d’exercice par jour et précise qu’il faut surveiller la race en présence de chats ou d’autres petits animaux. PetMD écrit que les Bluetick Coonhounds ont besoin chaque jour d’une importante stimulation mentale et d’un exercice physique soutenu, que la laisse et un jardin clôturé sont indispensables car ils suivent une piste sans relâche, qu’ils conviennent peut-être mieux à des enfants plus âgés et à des maîtres expérimentés, qu’ils sont plus bruyants que la moyenne et que leur poil court ne demande qu’un brossage par semaine.",
+      ],
+      sources: ["S1061", "S1060", "S10"],
+    },
     toy_fox_terrier: {
       aka: "American Toy Terrier, Amertoy, TFT",
       text: [
