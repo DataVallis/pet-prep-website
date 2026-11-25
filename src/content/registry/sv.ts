@@ -1036,6 +1036,30 @@ const sv: RegistryCopy = {
       ],
       sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
     },
+    kerry_blue_terrier: {
+      aka: "Kerry blue terrier, Kerry blue",
+      text: [
+        "Kerry blue terrier är en terrier från Irland. FCI räknar den till grupp 3, terrier, och till sektionen stora och medelstora terrier. FCI-standarden beskriver en reslig, välbyggd och muskulös hund med genomgående terrierkaraktär och en mjuk, tät och vågig päls som kan vara blå i valfri nyans, med eller utan svarta avtecken. Standarden anger en vikt på 15–18 kg för hanar (tikarna proportionellt lägre) och en mankhöjd på 45,5–49,5 cm för hanar och 44,5–48 cm för tikar. En hund i den här storleksklassen är fullvuxen vid ungefär 12–15 månader (PetMD). WebMD anger en livslängd på 12–15 år och VCA på 10–12 år.",
+        "PetMD rekommenderar ungefär en timmes motion om dagen och beskriver rasen som ett underbart husdjur för familjer som orkar med pälsvården och motionsbehovet. Den är social, kan få separationsångest om den lämnas ensam under långa perioder och kan frestas att jaga mindre djur. PetMD rekommenderar daglig tandborstning, öronrengöring var andra till fjärde vecka, bad ungefär en gång i månaden och besök hos en professionell hundfrisör ungefär var sjätte vecka. WebMD beskriver kerry blue terriern som tillgiven, bra med barn och lättränad. Pälsen fäller mycket lite, och ägaren måste ägna tid åt att socialisera hunden. VCA rekommenderar borstning och kamning varannan dag.",
+      ],
+      sources: ["S1043", "S1046", "S1047", "S1048", "S10"],
+    },
+    irish_terrier: {
+      aka: "Irish terrier, Irländsk terrier",
+      text: [
+        "Irish terrier är en terrier från Irland. FCI räknar den till grupp 3, terrier, och till sektionen stora och medelstora terrier. FCI-standarden beskriver en aktiv, livlig, smidig och seg hund med graciös, rask kroppsbyggnad och en tät, sträv päls i enfärgat rött, vetefärgat rött eller gulrött. Standarden anger en vikt på 12,25 kg för hanar och 11,4 kg för tikar och en mankhöjd på cirka 45,5 cm. En hund i den här storleksklassen är fullvuxen vid ungefär 12–15 månader (PetMD). Royal Kennel Club och PDSA anger en livslängd på över 12 år och PetMD på 13–15 år.",
+        "Royal Kennel Club rekommenderar upp till en timmes motion om dagen och pälsvård oftare än en gång i veckan. Enligt PDSA har rasen hög energinivå och behöver pälsvård två till tre gånger i veckan, och socialisering och träning från ung ålder är mycket viktigt. Woodgreen skriver att den kan bli en utmärkt familjehund, mild och tillgiven mot barnen i det egna hushållet, men att jaktinstinkten är stark och väcks av små djur. Ögon, öron och mun bör kontrolleras varje vecka, och många ägare låter klippa pälsen ungefär varannan månad. WebMD rekommenderar daglig tandborstning.",
+      ],
+      sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
+    },
+    bluetick_coonhound: {
+      aka: "Bluetick, Blue Tick Coonhound",
+      text: [
+        "Bluetick coonhound är en tvättbjörnshund med ursprung i USA. Dogs NSW:s rasstandard beskriver en snabb, välmuskulerad drevhund med en välbyggd, kompakt kropp och blank päls: mörkblå, tätt melerad kropp med svarta fläckar, mestadels svart huvud och svarta öron, med eller utan tanfärgade avtecken. Hanar väger 55–80 lb (cirka 25–36 kg) och har en mankhöjd på 22–27 tum, tikar väger 45–65 lb (cirka 20–30 kg) och har en mankhöjd på 21–25 tum. En hund i den här storleksklassen är fullvuxen vid ungefär 15–18 månader (PetMD). PetMD anger en genomsnittlig livslängd på 11–12 år.",
+        "Dogs NSW rekommenderar ungefär 40 minuters motion om dagen och skriver att rasen bör hållas under uppsikt i närheten av katter och andra små djur. Enligt PetMD behöver den mycket mental stimulans och fysisk motion varje dag. Koppel och inhägnad gård är ett måste, eftersom den följer ett spår outtröttligt. Rasen kan passa bättre för äldre barn och erfarna ägare, är mer högljudd än genomsnittet, och den korta pälsen behöver bara borstas en gång i veckan.",
+      ],
+      sources: ["S1061", "S1060", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, Finsk lapphund",
       text: [
