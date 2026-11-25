@@ -1891,6 +1891,30 @@ const fi: RegistryCopy = {
       ],
       sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
     },
+    kerry_blue_terrier: {
+      aka: "Kerry blue, Kerry, Kerry blue terrier, kerrynsininterrieri",
+      text: [
+        "Kerrynsininterrieri on Irlannista kotoisin oleva terrieri. FCI sijoittaa sen ryhmään 3, isojen ja keskikokoisten terrierien joukkoon. FCI:n rotumääritelmän mukaan se on ryhdikäs, tiivisrakenteinen ja lihaksikas koira, jonka luonne on terrieriä läpikotaisin. Turkki on pehmeä, runsas ja aaltoileva, ja se voi olla sininen millä tahansa sävyllä, mustin merkein tai ilman. Urosten painoksi mainitaan 15–18 kg (nartut ovat vastaavasti kevyempiä), ja säkäkorkeus on uroksilla 45,5–49,5 cm ja nartuilla 44,5–48 cm. Tämänkokoinen koira on täysikasvuinen noin 12–15 kuukauden iässä (PetMD:n kokoluokka). WebMD ilmoittaa eliniäksi 12–15 vuotta ja VCA 10–12 vuotta.",
+        "PetMD suosittelee noin tunnin liikuntaa päivässä ja kuvaa rotua ihanaksi lemmikiksi perheille, jotka jaksavat panostaa turkinhoitoon ja liikuntaan. Se on seurallinen rotu, jolle voi kehittyä eroahdistus, jos se jää pitkiksi ajoiksi yksin, ja se saattaa innostua jahtaamaan pienempiä eläimiä. PetMD suosittelee hampaiden harjausta päivittäin, korvien puhdistusta kahden–neljän viikon välein, kylpyä noin kerran kuussa ja ammattitrimmausta noin kuuden viikon välein. WebMD:n mukaan kerrynsininterrierit ovat hellyydenkipeitä, tulevat hyvin toimeen lasten kanssa ja ovat helppoja kouluttaa, niiden turkki karvaa hyvin vähän ja omistajan on varattava aikaa sosiaalistamiseen; VCA suosittelee harjausta ja kampausta joka toinen päivä.",
+      ],
+      sources: ["S1043", "S1046", "S1047", "S1048", "S10"],
+    },
+    irish_terrier: {
+      aka: "Irish terrier, irlanninterrieri",
+      text: [
+        "Irlanninterrieri on Irlannista kotoisin oleva terrieri. FCI sijoittaa sen ryhmään 3, isojen ja keskikokoisten terrierien joukkoon. FCI:n rotumääritelmän mukaan se on vilkas, eloisa, notkea ja sitkeä koira, jonka ääriviivat ovat sulavat ja vauhdikkaat ja jonka turkki on tiheä ja karkea sekä yksivärinen: punainen, punertavan vehnänvärinen tai keltapunainen. Urosten painoksi ilmoitetaan 12,25 kg ja narttujen 11,4 kg, ja säkäkorkeus on noin 45,5 cm. Tämänkokoinen koira on täysikasvuinen noin 12–15 kuukauden iässä (PetMD:n kokoluokka). The Royal Kennel Club ja PDSA ilmoittavat eliniäksi yli 12 vuotta ja PetMD 13–15 vuotta.",
+        "The Royal Kennel Club suosittelee enintään tunnin liikuntaa päivässä ja turkinhoitoa useammin kuin kerran viikossa. PDSA:n mukaan irlanninterrierit ovat hyvin energisiä ja tarvitsevat turkinhoitoa kaksi tai kolme kertaa viikossa; sosiaalistaminen ja koulutus jo nuorena ovat erittäin tärkeitä. Woodgreenin mukaan ne voivat olla erinomaisia perhekoiria, jotka ovat lempeitä ja helliä oman perheensä lasten kanssa; niiden vahva saalisvietti herää pienistä eläimistä, silmät, korvat ja suu pitäisi tarkistaa viikoittain, ja monet omistajat leikkauttavat turkin parin kuukauden välein. WebMD suosittelee hampaiden harjausta päivittäin.",
+      ],
+      sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
+    },
+    bluetick_coonhound: {
+      aka: "Bluetick, Blue Tick Coonhound, coonhound",
+      text: [
+        "Bluetick coonhound on Yhdysvalloista kotoisin oleva coonhound-ajokoira. Dogs NSW:n julkaisema rotumääritelmä kuvaa vauhdikkaan ja hyvälihaksisen ajokoiran, jolla on siisti, tiivis vartalo ja kiiltävä turkki: vartalo on tummansininen ja tiheään mustatäpläinen, pää ja korvat ovat enimmäkseen mustat, ja ruskeita merkkejä voi olla tai olla olematta. Urokset painavat 55–80 paunaa (noin 25–36 kg) ja niiden säkäkorkeus on 22–27 tuumaa, nartut painavat 45–65 paunaa (noin 20–30 kg) ja niiden säkäkorkeus on 21–25 tuumaa. Tämänkokoinen koira on täysikasvuinen noin 15–18 kuukauden iässä (PetMD:n kokoluokka). PetMD ilmoittaa keskimääräiseksi eliniäksi 11–12 vuotta.",
+        "Dogs NSW suosittelee noin 40 minuutin liikuntaa päivässä ja toteaa, että rotua pitää valvoa kissojen ja muiden pienten eläinten seurassa. PetMD:n mukaan bluetick coonhoundit tarvitsevat joka päivä paljon sekä henkistä virikettä että liikuntaa; talutin ja aidattu piha ovat välttämättömiä, koska ne seuraavat hajujälkeä väsymättä. PetMD:n mukaan rotu voi sopia paremmin isommille lapsille ja kokeneille omistajille, se on keskimääräistä äänekkäämpi, ja sen lyhyt turkki tarvitsee harjausta vain kerran viikossa.",
+      ],
+      sources: ["S1061", "S1060", "S10"],
+    },
   },
 };
 

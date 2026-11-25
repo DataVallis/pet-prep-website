@@ -1793,11 +1793,38 @@
       }
     },
     "kerry_blue_terrier": {
+      "name": "Kerrynsininterrieri",
+      "slug": "kerrynsininterrieri",
+      "synonyms": [
+        "Kerry blue terrier",
+        "Kerry blue",
+        "Kerry"
+      ],
       "colours": {
         "blue": "Sininen",
         "deep-slate-blue": "Tumma liuskeensininen",
         "light-blue-grey": "Vaalea siniharmaa"
       }
+    },
+    "irish_terrier": {
+      "name": "Irlanninterrieri",
+      "slug": "irlanninterrieri",
+      "synonyms": [
+        "Irish terrier"
+      ],
+      "colours": {
+        "red": "Punainen",
+        "yellow-red": "Keltapunainen"
+      }
+    },
+    "bluetick_coonhound": {
+      "name": "Bluetick coonhound",
+      "slug": "bluetick-coonhound",
+      "synonyms": [
+        "Bluetick",
+        "Blue Tick Coonhound",
+        "Coonhound"
+      ]
     }
   },
   "suitability_labels": {
