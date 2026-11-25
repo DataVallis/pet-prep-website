@@ -432,6 +432,7 @@ const sv: RegistryCopy = {
       dna_gm2: "DNA-test för GM2-gangliosidos (en ärftlig sjukdom i nervsystemet)",
       dna_vwd3: "DNA-test för von Willebrands sjukdom typ 3 (vWD3), en ärftlig blödningsrubbning",
       dna_commd1: "Test för kopparförgiftning (COMMD1), en ärftlig ansamling av koppar i levern",
+      dna_hfh: "DNA-test för ärftlig trampdynehyperkeratos (HFH), en ärftlig förtjockning av trampdynorna",
       dna_pra_rcd3: "DNA-test för progressiv retinal atrofi (PRA-rcd3)",
       dna_clad: "DNA-test för canin leukocytadhesionsdefekt (CLAD), en ärftlig immunsjukdom",
       dna_ncl8: "DNA-test för neuronal ceroidlipofuscinos (NCL8), en ärftlig sjukdom i nervsystemet",
@@ -540,6 +541,7 @@ const sv: RegistryCopy = {
     heart_cardiomyopathy_aortic_stenosis: "Hjärtproblem som kardiomyopati och aortastenos kan förekomma i rasen.",
     dental_disease_care: "En stor brittisk studie nämner tandsjukdom som det vanligaste problemet i rasen, och ägare rekommenderas att prioritera tandvården.",
     bladder_stones: "Blåssten, ansamlingar av mineraler som bildas i urinblåsan och urinen, kan förekomma i rasen.",
+    footpad_hyperkeratosis: "Ärftlig trampdynehyperkeratos (HFH), en ärftlig förtjockning av trampdynorna som kan spricka, kan förekomma i rasen.",
     deafness: "Dövhet på ett eller båda öronen förekommer i rasen; valpars hörsel kan kontrolleras med ett BAER-test.",
     mitral_valve_disease:
       "Mitralisklaffsjukdom, en hjärtsjukdom där en försvagad klaff låter blod flöda tillbaka in i hjärtat, förekommer i rasen; en veterinär kan lyssna på avelshundarnas hjärtan innan de används i avel.",

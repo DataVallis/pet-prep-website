@@ -445,6 +445,7 @@ const nb: RegistryCopy = {
       dna_gm2: "DNA-test for GM2-gangliosidose (en arvelig sykdom i nervesystemet)",
       dna_vwd3: "DNA-test for von Willebrands sykdom type 3 (vWD3), en arvelig blødersykdom",
       dna_commd1: "Test for kobberforgiftning (COMMD1), en arvelig opphopning av kobber i leveren",
+      dna_hfh: "DNA-test for arvelig tredeputehyperkeratose (HFH), en arvelig fortykkelse av tredeputene",
       dna_pra_rcd3: "DNA-test for progressiv retinal atrofi (PRA-rcd3)",
       dna_clad: "DNA-test for canin leukocytt-adhesjonsdefekt (CLAD), en arvelig immunsykdom",
       dna_ncl8: "DNA-test for nevronal ceroid lipofuscinose (NCL8), en arvelig sykdom i nervesystemet",
@@ -555,6 +556,7 @@ const nb: RegistryCopy = {
     heart_cardiomyopathy_aortic_stenosis: "Hjerteproblemer som kardiomyopati og aortastenose kan forekomme i rasen.",
     dental_disease_care: "En stor britisk studie nevner tannsykdom som det vanligste problemet hos rasen, og eiere rådes til å prioritere tannstell.",
     bladder_stones: "Blærestein, ansamlinger av mineraler som dannes i blæren og urinen, kan forekomme i rasen.",
+    footpad_hyperkeratosis: "Arvelig tredeputehyperkeratose (HFH), en arvelig fortykkelse av tredeputene som kan sprekke, kan forekomme i rasen.",
     deafness: "Døvhet på ett eller begge ører forekommer i rasen; valpers hørsel kan undersøkes med en BAER-test.",
     mitral_valve_disease:
       "Mitralklaffsykdom, en hjertesykdom der en svekket klaff lar blodet strømme tilbake i hjertet, forekommer i rasen; en dyrlege kan lytte på hjertet til avlshunder før de brukes i avl.",

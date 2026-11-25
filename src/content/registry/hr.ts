@@ -447,6 +447,7 @@ const hr: RegistryCopy = {
       dna_gm2: "DNK test na GM2 gangliozidozu (nasljednu bolest živčanog sustava)",
       dna_vwd3: "DNK test na von Willebrandovu bolest tipa 3 (vWD3), nasljedni poremećaj zgrušavanja krvi",
       dna_commd1: "Test na toksikozu bakrom (COMMD1), nasljedno nakupljanje bakra u jetri",
+      dna_hfh: "DNK test za nasljednu hiperkeratozu jastučića (HFH), nasljedno zadebljanje jastučića šapa",
       dna_pra_rcd3: "DNK test na progresivnu atrofiju mrežnice (PRA-rcd3)",
       dna_clad: "DNK test na nedostatak adhezije leukocita (CLAD), nasljedni poremećaj imuniteta",
       dna_ncl8: "DNK test na neuronsku ceroidnu lipofuscinozu (NCL8), nasljednu bolest živčanog sustava",
@@ -559,6 +560,7 @@ const hr: RegistryCopy = {
     heart_cardiomyopathy_aortic_stenosis: "U pasmini se mogu pojaviti problemi sa srcem poput kardiomiopatije i stenoze aorte.",
     dental_disease_care: "Velika britanska studija navodi bolesti zubi kao najčešći problem u pasmini, a vlasnicima se savjetuje da njegu zubi stave na prvo mjesto.",
     bladder_stones: "U pasmini se mogu pojaviti kamenci u mokraćnom mjehuru, nakupine minerala koje nastaju u mjehuru i mokraći.",
+    footpad_hyperkeratosis: "Kod pasmine se može pojaviti nasljedna hiperkeratoza jastučića (HFH), nasljedno zadebljanje jastučića šapa koji mogu pucati.",
     deafness: "U pasmini se javlja gluhoća na jedno ili oba uha; sluh štenadi može se provjeriti BAER testom.",
     mitral_valve_disease:
       "U pasmini se javlja bolest mitralnog zaliska, stanje srca pri kojem oslabljeni zalistak propušta krv natrag u srce; veterinar može poslušati srce psa prije uzgoja.",
