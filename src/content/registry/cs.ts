@@ -1783,6 +1783,30 @@ const cs: RegistryCopy = {
       ],
       sources: ["S690", "S693", "S694", "S10"],
     },
+    kerry_blue_terrier: {
+      aka: "Kerry Blue, Kerry, Kerry blue terrier, Kerry blue teriér",
+      text: [
+        "Kerry blue teriér pochází z Irska; FCI ho řadí do skupiny 3 mezi velké a středně velké teriéry. Standard FCI popisuje urostlého, pevně stavěného a svalnatého psa, který je teriérem v každém ohledu, s měkkou, hustou, vlnitou srstí v jakémkoli odstínu modré, s černými znaky nebo bez nich. Standard FCI uvádí hmotnost 15–18 kg u psů (u fen úměrně méně) a výšku 45,5–49,5 cm u psů a 44,5–48 cm u fen; pes této velikosti dorůstá zhruba ve 12–15 měsících (velikostní třída PetMD). WebMD uvádí délku života 12–15 let a VCA 10–12 let.",
+        "PetMD doporučuje asi hodinu pohybu denně a označuje plemeno za skvělého domácího mazlíčka pro rodiny, které zvládnou náročnou péči o srst i dostatek pohybu; dodává, že je společenské, při dlouhém osamění může trpět separační úzkostí a může ho lákat honit menší zvířata. Radí čistit zuby denně, uši jednou za dva až čtyři týdny, koupat zhruba jednou měsíčně a srst nechat profesionálně upravit zhruba každých šest týdnů. WebMD uvádí, že kerry blue teriéři jsou přítulní, dobře vycházejí s dětmi a dají se snadno vycvičit, že jejich srst téměř nelíná a že majitelé musí věnovat čas jejich socializaci; VCA doporučuje srst kartáčovat a pročesávat obden.",
+      ],
+      sources: ["S1043", "S1046", "S1047", "S1048", "S10"],
+    },
+    irish_terrier: {
+      aka: "Irish Terrier, Irish terrier, irský teriér",
+      text: [
+        "Irský teriér pochází z Irska; FCI ho řadí do skupiny 3 mezi velké a středně velké teriéry. Standard FCI popisuje činného, čilého, hbitého a žilnatého psa s půvabnou, štíhlou linií a hustou, drátovitou srstí jednobarevně červené, pšeničně červené nebo žlutočervené barvy. Standard FCI uvádí hmotnost 12,25 kg u psů a 11,4 kg u fen a výšku asi 45,5 cm; pes této velikosti dorůstá zhruba ve 12–15 měsících (velikostní třída PetMD). Royal Kennel Club a PDSA uvádějí délku života přes 12 let, PetMD 13–15 let.",
+        "Royal Kennel Club doporučuje až hodinu pohybu denně a péči o srst častěji než jednou týdně. PDSA píše, že irští teriéři mají hodně energie, že srst je třeba kartáčovat dvakrát až třikrát týdně a že je od útlého věku velmi důležitá socializace a výcvik. Woodgreen uvádí, že se z nich mohou stát skvělí rodinní psi, jemní a mazliví k dětem ve vlastní domácnosti, že jejich silný lovecký pud rozpoutávají malá zvířata, že by se jim měly každý týden zkontrolovat oči, uši a tlama a že mnoho majitelů nechává srst upravovat zhruba jednou za dva měsíce. WebMD doporučuje čistit jim zuby denně.",
+      ],
+      sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
+    },
+    bluetick_coonhound: {
+      aka: "Bluetick, Blue Tick Coonhound, Bluetick Coonhound, coonhound",
+      text: [
+        "Bluetick coonhound je coonhound původem ze Spojených států. Standard plemene zveřejněný organizací Dogs NSW popisuje rychlého, dobře osvaleného honiče s úhledným, kompaktním tělem a lesklou srstí; tělo je tmavě modré, hustě mramorované s černými skvrnami, hlava a uši jsou převážně černé, s pálením nebo bez něj. Psi váží 55–80 liber (asi 25–36 kg) a měří 22–27 palců, feny váží 45–65 liber (asi 20–30 kg) a měří 21–25 palců; pes této velikosti dorůstá zhruba v 15–18 měsících (velikostní třída PetMD). PetMD uvádí průměrnou délku života 11–12 let.",
+        "Dogs NSW doporučuje asi 40 minut pohybu denně a píše, že je třeba hlídat jeho chování ke kočkám a dalším malým zvířatům. PetMD uvádí, že bluetick coonhoundi potřebují každý den hodně duševního vytížení i pohybu, že venku musí být na vodítku a doma potřebují oplocenou zahradu, protože neúnavně sledují stopu, že se mohou lépe hodit ke starším dětem a zkušeným majitelům, že jsou hlasitější než průměr a že jejich krátkou srst stačí kartáčovat jednou týdně.",
+      ],
+      sources: ["S1061", "S1060", "S10"],
+    },
   },
 };
 
