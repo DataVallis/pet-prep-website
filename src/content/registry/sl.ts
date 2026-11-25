@@ -955,6 +955,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
     },
+    kerry_blue_terrier: {
+      aka: "kerry blue, kerry, Kerry Blue Terrier",
+      text: [
+        "Kerry blue terier je terier z Irske; FCI ga uvršča v 3. skupino med velike in srednje velike terierje. Standard FCI ga opisuje kot pokončnega, čvrsto grajenega, mišičastega psa s terierskim značajem in mehko, bogato, valovito dlako, ki je lahko modra v kateremkoli odtenku, s temnejšimi črnimi deli ali brez njih. Standard FCI navaja težo 15–18 kg za pse (psice so sorazmerno lažje) in višino 45,5–49,5 cm za pse ter 44,5–48 cm za psice; pes te velikosti doraste pri približno 12–15 mesecih (velikostni razred PetMD). WebMD navaja življenjsko dobo 12–15 let, VCA pa 10–12 let.",
+        "PetMD priporoča približno uro gibanja na dan in piše, da je kerry čudovit pes za družine, ki zmorejo njegovo nego in gibanje, da je družaben in lahko razvije ločitveno tesnobo, če je dolgo sam, ter da lahko lovi manjše živali. Priporoča vsakodnevno ščetkanje zob, čiščenje ušes vsaka dva do štiri tedne, kopanje približno enkrat na mesec in obisk pasjega frizerja približno vsakih šest tednov. WebMD piše, da so kerryji ljubeči, dobri z otroki in se zlahka učijo, da njihova dlaka zelo malo izpada in da jih morajo lastniki socializirati; VCA priporoča česanje vsak drugi dan.",
+      ],
+      sources: ["S1043", "S1046", "S1047", "S1048", "S10"],
+    },
 
     finnish_lapphund: {
       aka: "finski laponski pes, finski lapphund, laponski pes, lapinkoira, suomenlapinkoira, Finnish Lapphund, Finnish Lapponian Dog",
