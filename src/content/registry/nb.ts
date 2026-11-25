@@ -1637,6 +1637,22 @@ const nb: RegistryCopy = {
       ],
       sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
     },
+    kerry_blue_terrier: {
+      aka: "Kerry Blue Terrier, Kerry Blue",
+      text: [
+        "Kerry blue terrier er en terrier fra Irland. FCI fører den opp i gruppe 3, terriere, blant de store og mellomstore terrierne. FCI-standarden beskriver en oppreist, velbygd, muskuløs hund med terrierpreg i alt den gjør, og en myk, tett og bølget pels som kan være blå i alle nyanser, med eller uten sorte tegn. Standarden oppgir en vekt på 15–18 kg for hannhunder, forholdsmessig mindre for tisper, og en mankehøyde på 45,5–49,5 cm for hannhunder og 44,5–48 cm for tisper. En hund av denne størrelsen er utvokst ved rundt 12–15 måneder (PetMDs størrelsesklasse). WebMD oppgir en levealder på 12–15 år og VCA 10–12 år.",
+        "PetMD anbefaler omtrent én times mosjon hver dag. Rasen er et flott kjæledyr for familier som klarer å følge opp pelsstellet og mosjonsbehovet. Den er sosial og kan utvikle separasjonsangst hvis den er alene i lange perioder, og den kan fristes til å jage mindre dyr. PetMD anbefaler daglig tannpuss, rengjøring av ørene hver andre til fjerde uke, bad omtrent én gang i måneden og profesjonell hundefrisør omtrent hver sjette uke. WebMD skriver at kerry blue terriere er kjærlige, gode med barn og lette å lære opp, at pelsen røyter svært lite og at eierne må bruke tid på sosialisering. VCA anbefaler børsting og kamming annenhver dag.",
+      ],
+      sources: ["S1043", "S1046", "S1047", "S1048", "S10"],
+    },
+    irish_terrier: {
+      aka: "Irish Terrier",
+      text: [
+        "Irsk terrier er en terrier fra Irland. FCI fører den opp i gruppe 3, terriere, blant de store og mellomstore terrierne. FCI-standarden beskriver en aktiv, livlig, smidig og seig hund med en grasiøs, slank silhuett og en tett, stri pels som er ensfarget rød, hvetefarget rød eller gulrød. Standarden oppgir en vekt på 12,25 kg for hannhunder og 11,4 kg for tisper og en mankehøyde på ca. 45,5 cm. En hund av denne størrelsen er utvokst ved rundt 12–15 måneder (PetMDs størrelsesklasse). The Royal Kennel Club og PDSA oppgir en levealder på over 12 år, og PetMD 13–15 år.",
+        "The Royal Kennel Club anbefaler opptil én times mosjon om dagen og pelsstell mer enn én gang i uken. PDSA sier at irske terriere har mye energi, trenger pelsstell to til tre ganger i uken, og at sosialisering og trening fra ung alder er svært viktig. Woodgreen sier at de kan bli svært gode familiehunder som er milde og kjærlige mot barna i familien, at det sterke jaktinstinktet utløses av små dyr, at øyne, ører og munn bør sjekkes hver uke, og at mange eiere får pelsen klippet med et par måneders mellomrom. WebMD anbefaler daglig tannpuss.",
+      ],
+      sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
+    },
     toy_fox_terrier: {
       aka: "Toy foxterrier, Toy Fox Terrier, American Toy Terrier, Amertoy, TFT",
       text: [

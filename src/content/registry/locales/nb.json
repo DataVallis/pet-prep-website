@@ -1541,6 +1541,21 @@
         "blue-tan": "Blå med brune tegn",
         "liver-tan": "Leverbrun med brune tegn"
       }
+    },
+    "kerry_blue_terrier": {
+      "name": "Kerry blue terrier",
+      "slug": "kerry-blue-terrier",
+      "synonyms": [
+        "Kerry Blue Terrier",
+        "Kerry Blue"
+      ]
+    },
+    "irish_terrier": {
+      "name": "Irsk terrier",
+      "slug": "irsk-terrier",
+      "synonyms": [
+        "Irish Terrier"
+      ]
     }
   },
   "suitability_labels": {
