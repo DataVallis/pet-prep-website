@@ -1463,6 +1463,14 @@ const pt: RegistryCopy = {
       ],
       sources: ["S806", "S10", "S123", "S805", "S809"],
     },
+    norwich_terrier: {
+      aka: "Norwich, Norwich Terrier, Terrier de Norwich",
+      text: [
+        "O norwich terrier é um dos mais pequenos terriers, originário da Grã-Bretanha; o padrão da FCI descreve um cão baixo, vivo, compacto e robusto, com pelo duro, áspero e liso que forma uma gola em redor da cara, orelhas erguidas de pontas aguçadas, em todos os tons de vermelho, trigo, preto e fogo, ou grisalho, e indica uma altura ideal de 25 cm. O padrão do UKC indica um peso ideal de cerca de 12 libras (cerca de 5,4 kg) para machos e fêmeas; um cão deste porte atinge o tamanho adulto por volta dos 9–12 meses (classe de tamanho da PetMD). O Royal Kennel Club indica uma esperança de vida de mais de 10 anos e a PetMD de 12–15 anos.",
+        "O Royal Kennel Club descreve o norwich como um dos mais pequenos terriers, de feitio encantador; recomenda até 1 hora de exercício por dia e cuidados com o pelo mais de uma vez por semana, indica que a raça larga pelo e se adapta a um apartamento, e classifica-a como raça nativa vulnerável. A PetMD diz que os norwich terriers costumam dar-se bem com crianças e com outros animais de estimação, têm muita energia e precisam de exercício diário e de estímulo mental, e têm um forte instinto de caça, pelo que uma trela segura e um jardim bem vedado são indispensáveis; devem ser socializados desde cedo. Recomenda escovar o pelo, no mínimo, duas vezes por semana, escovar os dentes pelo menos uma vez por semana, aparar as unhas cerca de uma vez por mês e dar banho no máximo de três em três meses.",
+      ],
+      sources: ["S812", "S815", "S10", "S813", "S814"],
+    },
     miniature_bull_terrier: {
       aka: "Bull terrier miniatura, Mini Bull Terrier, Mini Bull, Bull Terrier (Miniature), English Miniature Bull Terrier",
       text: [

@@ -1345,7 +1345,10 @@
     },
     "norwich_terrier": {
       "name": "Norwich terrier",
-      "slug": "norwich-terrier"
+      "slug": "norwich-terrier",
+      "synonyms": [
+        "Norwich"
+      ]
     },
     "miniature_bull_terrier": {
       "name": "Bull terrier miniatura",
