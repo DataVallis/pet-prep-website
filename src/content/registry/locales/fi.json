@@ -694,7 +694,11 @@
       "synonyms": [
         "Dalmatialainen",
         "Dalmatian"
-      ]
+      ],
+      "colours": {
+        "black-spotted": "Mustatäpläinen",
+        "liver-spotted": "Maksanruskeatäpläinen"
+      }
     },
     "australian_cattle_dog": {
       "name": "Australiankarjakoira",
@@ -704,14 +708,26 @@
         "Heeler",
         "Blue heeler",
         "Australian cattle dog"
-      ]
+      ],
+      "colours": {
+        "blue-speckled": "Sinipilkullinen",
+        "red-speckle": "Punapilkullinen"
+      }
     },
     "whippet": {
       "name": "Whippet",
       "slug": "whippet",
       "synonyms": [
         "Whippet-vinttikoira"
-      ]
+      ],
+      "colours": {
+        "fawn": "Kellanruskea",
+        "brindle": "Tiikerijuovainen",
+        "black": "Musta",
+        "blue": "Sininen",
+        "fawn-white": "Kellanruskea ja valkoinen",
+        "brindle-white": "Tiikerijuovainen ja valkoinen"
+      }
     },
     "wirehaired_pointing_griffon": {
       "name": "Korthalsingriffoni",
@@ -721,7 +737,14 @@
         "Korthals griffon",
         "Wirehaired pointing griffon",
         "Griffon korthals"
-      ]
+      ],
+      "colours": {
+        "steel-grey-liver": "Teräksenharmaa maksanruskein laikuin",
+        "liver-roan": "Maksanruskea sekakarvainen",
+        "liver": "Maksanruskea",
+        "liver-white": "Maksanruskea ja valkoinen",
+        "orange-white": "Oranssi ja valkoinen"
+      }
     },
     "chesapeake_bay_retriever": {
       "name": "Chesapeakelahdennoutaja",
@@ -730,7 +753,12 @@
         "Chessie",
         "Chesapeake",
         "Chesapeake bay retriever"
-      ]
+      ],
+      "colours": {
+        "brown": "Ruskea",
+        "sedge": "Punertavankultainen (sedge)",
+        "deadgrass": "Kuivan ruohon värinen (deadgrass)"
+      }
     },
     "samoyed": {
       "name": "Samojedinkoira",
@@ -739,7 +767,11 @@
         "Samojedi",
         "Samoyed",
         "Sammy"
-      ]
+      ],
+      "colours": {
+        "white": "Valkoinen",
+        "cream": "Kerma"
+      }
     },
     "scottish_terrier": {
       "name": "Skotlanninterrieri",
@@ -747,7 +779,12 @@
       "synonyms": [
         "Scottie",
         "Scottish terrier"
-      ]
+      ],
+      "colours": {
+        "black": "Musta",
+        "brindle": "Tiikerijuovainen",
+        "wheaten": "Vehnänvärinen"
+      }
     },
     "weimaraner": {
       "name": "Weimarinseisoja",
@@ -755,7 +792,11 @@
       "synonyms": [
         "Weimari",
         "Weimaraner"
-      ]
+      ],
+      "colours": {
+        "silver-grey": "Hopeanharmaa",
+        "roe-grey": "Kauriinharmaa"
+      }
     },
     "italian_greyhound": {
       "name": "Italianvinttikoira",
@@ -765,7 +806,16 @@
         "Italian greyhound",
         "Piccolo levriero italiano",
         "Iggy"
-      ]
+      ],
+      "colours": {
+        "fawn": "Kellanruskea",
+        "blue": "Siniharmaa",
+        "black": "Musta",
+        "cream": "Kerma",
+        "red": "Punainen",
+        "white": "Valkoinen",
+        "fawn-white": "Kellanruskea ja valkoinen"
+      }
     },
     "giant_schnauzer": {
       "name": "Suursnautseri",
@@ -774,7 +824,11 @@
         "Jättisnautseri",
         "Riesenschnauzer",
         "Giant schnauzer"
-      ]
+      ],
+      "colours": {
+        "black": "Musta",
+        "pepper-salt": "Suola ja pippuri"
+      }
     },
     "bloodhound": {
       "name": "Vihikoira",
@@ -782,7 +836,12 @@
       "synonyms": [
         "Bloodhound",
         "Chien de Saint-Hubert"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Musta ja ruskea",
+        "liver-tan": "Maksanruskea ja punaruskea",
+        "red": "Punainen"
+      }
     },
     "akita": {
       "name": "Amerikanakita",
@@ -790,7 +849,13 @@
       "synonyms": [
         "Akita",
         "American akita"
-      ]
+      ],
+      "colours": {
+        "fawn": "Punertava kellanruskea",
+        "pinto": "Kirjava (valkoinen, värilaikut)",
+        "brindle": "Tiikerijuovainen",
+        "white": "Valkoinen"
+      }
     },
     "cardigan_welsh_corgi": {
       "name": "Welsh corgi cardigan",
@@ -799,7 +864,15 @@
         "Corgi",
         "Cardigan",
         "Cardigan welsh corgi"
-      ]
+      ],
+      "colours": {
+        "red-white": "Punavalkoinen",
+        "brindle-white": "Tiikerijuovainen ja valkoinen",
+        "sable-white": "Soopelivalkoinen",
+        "blue-merle": "Sinimerle",
+        "tricolour-brindle": "Kolmivärinen tiikerijuovaisin merkein",
+        "tricolour-red": "Kolmivärinen punaisin merkein"
+      }
     },
     "german_wirehaired_pointer": {
       "name": "Karkeakarvainen saksanseisoja",
@@ -808,7 +881,12 @@
         "Drahthaar",
         "Deutsch Drahthaar",
         "German wirehaired pointer"
-      ]
+      ],
+      "colours": {
+        "liver-roan": "Maksanruskea sekakarvainen",
+        "liver-white": "Maksanruskea ja valkoinen",
+        "liver": "Maksanruskea"
+      }
     },
     "saint_bernard": {
       "name": "Bernhardinkoira",
@@ -818,7 +896,12 @@
         "Saint Bernard",
         "St. Bernard",
         "Bernhardiner"
-      ]
+      ],
+      "colours": {
+        "red-white": "Punavalkoinen",
+        "white-red": "Valkoinen punaisin laikuin",
+        "brindle-white": "Punatiikerijuovainen ja valkoinen"
+      }
     },
     "staffordshire_bull_terrier": {
       "name": "Staffordshirenbullterrieri",
@@ -827,7 +910,20 @@
         "Staffi",
         "Staffie",
         "Staffordshire bull terrier"
-      ]
+      ],
+      "colours": {
+        "brindle": "Tiikerijuovainen",
+        "brindle-white": "Tiikerijuovainen ja valkoinen",
+        "red": "Punainen",
+        "black-white": "Mustavalkoinen",
+        "fawn": "Kellanruskea",
+        "black": "Musta",
+        "blue": "Sininen",
+        "red-white": "Punavalkoinen",
+        "blue-white": "Sinivalkoinen",
+        "fawn-white": "Kellanruskea ja valkoinen",
+        "white": "Valkoinen"
+      }
     },
     "airedale_terrier": {
       "name": "Airedalenterrieri",
@@ -835,7 +931,11 @@
       "synonyms": [
         "Airedale",
         "Airedale terrier"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Musta ja ruskea",
+        "grizzle-tan": "Mustanharmaa (grizzle) ja ruskea"
+      }
     },
     "russell_terrier": {
       "name": "Jackrussellinterrieri",
@@ -845,7 +945,12 @@
         "Jack Russell terrier",
         "Russell terrier",
         "JRT"
-      ]
+      ],
+      "colours": {
+        "white-tan": "Valkoinen ja ruskea",
+        "tricolour": "Kolmivärinen",
+        "white-black": "Valkoinen ja musta"
+      }
     },
     "bullmastiff": {
       "name": "Bullmastiffi",
@@ -853,7 +958,12 @@
       "synonyms": [
         "Bullmastiff",
         "Bull mastiff"
-      ]
+      ],
+      "colours": {
+        "fawn": "Kellanruskea",
+        "red": "Punainen",
+        "brindle": "Tiikerijuovainen"
+      }
     },
     "chinese_crested": {
       "name": "Kiinanharjakoira",
@@ -862,7 +972,12 @@
         "Harjakoira",
         "Chinese crested",
         "Powder puff"
-      ]
+      ],
+      "colours": {
+        "pink-spotted": "Vaaleanpunainen tummin täplin",
+        "slate": "Tumma liuskeenharmaa",
+        "pink": "Vaaleanpunainen"
+      }
     },
     "nova_scotia_duck_tolling_retriever": {
       "name": "Novascotiannoutaja",
@@ -871,7 +986,12 @@
         "Toller",
         "Nova Scotia duck tolling retriever",
         "NSDTR"
-      ]
+      ],
+      "colours": {
+        "red-white": "Punainen valkoisin merkein",
+        "orange-white": "Oranssi valkoisin merkein",
+        "red": "Punainen"
+      }
     },
     "cairn_terrier": {
       "name": "Cairnterrieri",
@@ -879,7 +999,14 @@
       "synonyms": [
         "Cairn",
         "Cairn terrier"
-      ]
+      ],
+      "colours": {
+        "wheaten": "Vehnänvärinen",
+        "red": "Punainen",
+        "cream": "Kerma",
+        "grey": "Harmaa",
+        "nearly-black": "Lähes musta"
+      }
     },
     "bull_terrier": {
       "name": "Bullterrieri",
@@ -887,7 +1014,15 @@
       "synonyms": [
         "Bull terrier",
         "English bull terrier"
-      ]
+      ],
+      "colours": {
+        "white": "Valkoinen",
+        "brindle": "Tiikerijuovainen",
+        "black-brindle": "Musta tiikerijuovainen",
+        "red": "Punainen",
+        "fawn": "Kellanruskea",
+        "tricolour": "Kolmivärinen"
+      }
     },
     "miniature_pinscher": {
       "name": "Kääpiöpinseri",
@@ -897,7 +1032,11 @@
         "Zwergpinscher",
         "Miniature pinscher",
         "Min pin"
-      ]
+      ],
+      "colours": {
+        "red": "Punainen",
+        "black-tan": "Musta ja ruskea"
+      }
     },
     "pyrenean_mountain_dog": {
       "name": "Pyreneittenkoira",
@@ -907,7 +1046,14 @@
         "Great Pyrenees",
         "Patou",
         "Pyrenean mountain dog"
-      ]
+      ],
+      "colours": {
+        "white": "Valkoinen",
+        "white-badger": "Valkoinen mäyränvärisin laikuin",
+        "white-grey": "Valkoinen harmain laikuin",
+        "white-yellow": "Valkoinen vaaleankeltaisin laikuin",
+        "white-orange": "Valkoinen oranssein laikuin"
+      }
     },
     "soft_coated_wheaten_terrier": {
       "name": "Vehnäterrieri",
@@ -926,7 +1072,15 @@
       "synonyms": [
         "Irish wolfhound",
         "Wolfhound"
-      ]
+      ],
+      "colours": {
+        "grey": "Harmaa",
+        "wheaten": "Vehnänvärinen",
+        "fawn": "Kellanruskea",
+        "red": "Punainen",
+        "black": "Musta",
+        "white": "Puhtaanvalkoinen"
+      }
     },
     "american_staffordshire_terrier": {
       "name": "Amerikanstaffordshirenterrieri",
@@ -935,7 +1089,12 @@
         "Amstaffi",
         "AmStaff",
         "American Staffordshire terrier"
-      ]
+      ],
+      "colours": {
+        "brindle": "Tiikerijuovainen",
+        "blue": "Sininen",
+        "black": "Musta"
+      }
     },
     "lagotto_romagnolo": {
       "name": "Lagotto romagnolo",
@@ -944,7 +1103,16 @@
         "Lagotto",
         "Romagnanvesikoira",
         "Tryffelikoira"
-      ]
+      ],
+      "colours": {
+        "brown-roan": "Ruskea sekakarvainen",
+        "off-white": "Luonnonvalkoinen",
+        "white-brown": "Valkoinen ruskein laikuin",
+        "white-orange": "Valkoinen oranssein laikuin",
+        "orange-roan": "Oranssi sekakarvainen",
+        "brown": "Ruskea",
+        "orange": "Oranssi"
+      }
     },
     "alaskan_malamute": {
       "name": "Alaskanmalamuutti",
@@ -953,7 +1121,14 @@
         "Malamuutti",
         "Alaskan malamute",
         "Malamute"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Harmaavalkoinen",
+        "black-white": "Mustavalkoinen",
+        "sable-white": "Soopelivalkoinen",
+        "red-white": "Punavalkoinen",
+        "white": "Valkoinen"
+      }
     },
     "basenji": {
       "name": "Basenji",
@@ -961,7 +1136,13 @@
       "synonyms": [
         "Kongonkoira",
         "Haukkumaton koira"
-      ]
+      ],
+      "colours": {
+        "red-white": "Punavalkoinen",
+        "black-white": "Mustavalkoinen",
+        "tricolour": "Kolmivärinen (musta, ruskea ja valkoinen)",
+        "brindle-white": "Tiikerijuovainen ja valkoinen"
+      }
     },
     "maine_coon": {
       "name": "Maine coon",
@@ -1074,7 +1255,15 @@
       "synonyms": [
         "Kiinalainen shar pei",
         "Sharpei"
-      ]
+      ],
+      "colours": {
+        "fawn": "Kellanruskea",
+        "red": "Punainen",
+        "cream": "Kerma",
+        "black": "Musta",
+        "chocolate": "Suklaanruskea",
+        "blue": "Sininen"
+      }
     },
     "greater_swiss_mountain_dog": {
       "name": "Isosveitsinpaimenkoira",
@@ -1091,7 +1280,15 @@
       "synonyms": [
         "Rat Terrier",
         "Rattie"
-      ]
+      ],
+      "colours": {
+        "black-tan-white": "Kolmivärinen (musta, ruskea ja valkoinen)",
+        "chocolate-tan-white": "Suklaanruskea, punaruskea ja valkoinen",
+        "black-white": "Mustavalkoinen",
+        "apricot-white": "Aprikoosi ja valkoinen",
+        "lemon-white": "Sitruunankeltainen ja valkoinen",
+        "blue-tan-white": "Sininen, ruskea ja valkoinen"
+      }
     },
     "brussels_griffon": {
       "name": "Brysselingriffoni",
@@ -1099,7 +1296,12 @@
       "synonyms": [
         "Griffon Bruxellois",
         "Brussels Griffon"
-      ]
+      ],
+      "colours": {
+        "red": "Punainen",
+        "black-tan": "Musta ja ruskea",
+        "black": "Musta"
+      }
     },
     "irish_setter": {
       "name": "Irlanninsetteri",
@@ -1115,7 +1317,11 @@
       "synonyms": [
         "Kangal",
         "Anatolian Shepherd Dog"
-      ]
+      ],
+      "colours": {
+        "fawn": "Kellanruskea, musta naamio",
+        "wolf-sable": "Sudenharmaa, musta naamio"
+      }
     },
     "chow_chow": {
       "name": "Chow chow",
@@ -1137,7 +1343,17 @@
       "synonyms": [
         "Peke",
         "Pekingese"
-      ]
+      ],
+      "colours": {
+        "red-gold": "Punakultainen, musta naamio",
+        "fawn": "Kellanruskea, musta naamio",
+        "sable": "Soopeli, musta naamio",
+        "cream": "Kerma",
+        "black": "Musta",
+        "black-tan": "Musta ja ruskea",
+        "white": "Valkoinen",
+        "parti-colour": "Kirjava"
+      }
     },
     "keeshond": {
       "name": "Keeshond",
@@ -1574,6 +1790,13 @@
         "liver": "Maksanruskea",
         "blue-tan": "Sininen ja ruskea",
         "liver-tan": "Maksanruskea ja ruskea"
+      }
+    },
+    "kerry_blue_terrier": {
+      "colours": {
+        "blue": "Sininen",
+        "deep-slate-blue": "Tumma liuskeensininen",
+        "light-blue-grey": "Vaalea siniharmaa"
       }
     }
   },
