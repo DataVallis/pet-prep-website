@@ -1698,6 +1698,30 @@ const nl: RegistryCopy = {
       ],
       sources: ["S1010","S1011","S1012","S1013","S1016","S10"],
     },
+    kerry_blue_terrier: {
+      aka: "Kerry blue, Kerry, Kerry Blue Terrier",
+      text: [
+        "De Kerry blue terrier is een terriër uit Ierland; de FCI plaatst hem in groep 3, bij de grote en middelgrote terriërs. De FCI-standaard beschrijft een trotse, compacte, gespierde hond die door en door een terriër is, met een zachte, volle, golvende vacht in elke tint blauw, met of zonder zwarte aftekeningen. De standaard noemt een gewicht van 15–18 kg voor reuen, bij teven naar verhouding minder, en een schofthoogte van 45,5–49,5 cm voor reuen en 44,5–48 cm voor teven. Een hond van dit formaat is volgroeid rond 12–15 maanden (PetMD-grootteklasse). WebMD noemt een levensverwachting van 12–15 jaar en VCA 10–12 jaar.",
+        "PetMD raadt ongeveer een uur beweging per dag aan, noemt het ras een prachtig huisdier voor gezinnen die aan zijn verzorgings- en bewegingsbehoefte kunnen voldoen, en schrijft dat het een sociaal ras is dat verlatingsangst kan ontwikkelen als het lang alleen blijft en dat het kleinere dieren kan najagen. PetMD adviseert dagelijks tandenpoetsen, de oren om de twee tot vier weken schoonmaken, ongeveer één keer per maand baden en de vacht ongeveer elke zes weken professioneel laten trimmen. WebMD zegt dat Kerry’s aanhankelijk zijn, goed met kinderen overweg kunnen en gemakkelijk te trainen zijn, dat hun vacht heel weinig verhaart en dat eigenaren tijd moeten besteden aan socialisatie; VCA raadt aan om de hond om de dag te borstelen en te kammen.",
+      ],
+      sources: ["S1043", "S1046", "S1047", "S1048", "S10"],
+    },
+    irish_terrier: {
+      aka: "Ierse terrier, Irish Terrier",
+      text: [
+        "De Ierse terrier is een terriër uit Ierland; de FCI plaatst hem in groep 3, bij de grote en middelgrote terriërs. De FCI-standaard beschrijft een actieve, levendige, soepele en pezige hond met een gracieus, rank silhouet en een dichte, draadharige vacht in één kleur: rood, rood tarwekleurig of geelrood. De standaard noemt een gewicht van 12,25 kg voor reuen en 11,4 kg voor teven en een schofthoogte van ongeveer 45,5 cm. Een hond van dit formaat is volgroeid rond 12–15 maanden (PetMD-grootteklasse). De Royal Kennel Club en de PDSA noemen een levensverwachting van meer dan 12 jaar en PetMD 13–15 jaar.",
+        "De Royal Kennel Club raadt tot een uur beweging per dag aan en vachtverzorging vaker dan eens per week. De PDSA schrijft dat Ierse terriërs veel energie hebben, twee of drie keer per week verzorgd moeten worden en dat socialisatie en training op jonge leeftijd erg belangrijk zijn. Woodgreen zegt dat ze uitstekende gezinshonden kunnen zijn, zachtaardig en aanhankelijk met de kinderen in hun eigen gezin, dat hun sterke jachtinstinct door kleine dieren wordt gewekt, dat ogen, oren en bek wekelijks gecontroleerd moeten worden en dat veel eigenaren de vacht om de paar maanden laten trimmen. WebMD raadt aan om hun tanden dagelijks te poetsen.",
+      ],
+      sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
+    },
+    bluetick_coonhound: {
+      aka: "Bluetick, Blue Tick Coonhound, coonhound, Bluetick Coonhound",
+      text: [
+        "De bluetick coonhound is een coonhound (een jachthond voor wasberen) uit de Verenigde Staten. De rasstandaard die Dogs NSW publiceert, beschrijft een snelle, goed gespierde jachthond met een net, compact lichaam en een glanzende vacht: een donkerblauw, dicht gemarmerd lichaam met zwarte vlekken, een grotendeels zwarte kop en zwarte oren, met of zonder tankleurige aftekeningen. Reuen wegen 55–80 pond (ongeveer 25–36 kg) en zijn 22–27 inch (ongeveer 56–69 cm) hoog; teven wegen 45–65 pond (ongeveer 20–30 kg) en zijn 21–25 inch (ongeveer 53–64 cm) hoog. Een hond van dit formaat is volgroeid rond 15–18 maanden (PetMD-grootteklasse). PetMD noemt een gemiddelde levensverwachting van 11–12 jaar.",
+        "Dogs NSW raadt ongeveer 40 minuten beweging per dag aan en zegt dat het ras in de buurt van katten of andere kleine dieren in de gaten gehouden moet worden. PetMD schrijft dat bluetick coonhounds elke dag veel mentale prikkels en lichaamsbeweging nodig hebben, dat een riem en een omheinde tuin onmisbaar zijn omdat ze een geurspoor onvermoeibaar volgen, dat ze misschien beter passen bij oudere kinderen en ervaren eigenaren, dat ze luider zijn dan gemiddeld en dat hun korte vacht maar één keer per week geborsteld hoeft te worden.",
+      ],
+      sources: ["S1061", "S1060", "S10"],
+    },
     belgian_sheepdog: {
       aka: "Groenendael, Belgische herder Groenendael, Belgian Shepherd Groenendael, Belgian Shepherd Dog (Groenendael), Belgian Groenendael",
       text: [
