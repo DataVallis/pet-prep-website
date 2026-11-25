@@ -1734,6 +1734,22 @@ const it: RegistryCopy = {
       ],
       sources: ["S1003", "S1004", "S1006", "S1007", "S10"],
     },
+    kerry_blue_terrier: {
+      aka: "Kerry Blue, Kerry, Kerry Blue Terrier",
+      text: [
+        "Il Kerry blue terrier è un terrier originario dell’Irlanda; la FCI lo inserisce nel gruppo 3, tra i terrier di taglia grande e media. Lo standard FCI descrive un cane dal portamento eretto, ben compatto e muscoloso, con un carattere da terrier in ogni suo aspetto e un mantello morbido, abbondante e ondulato, che può essere blu in tutte le tonalità, con o senza estremità nere. Lo standard FCI indica un peso di 15–18 kg per i maschi, proporzionalmente inferiore per le femmine, e un’altezza di 45,5–49,5 cm per i maschi e 44,5–48 cm per le femmine; un cane di questa taglia finisce di crescere verso i 12–15 mesi (classe di taglia PetMD). WebMD indica un’aspettativa di vita di 12–15 anni e VCA di 10–12 anni.",
+        "PetMD raccomanda circa un’ora di movimento al giorno, scrive che la razza è un meraviglioso cane da compagnia per le famiglie in grado di soddisfare le sue esigenze di toelettatura e movimento, che è una razza socievole che può soffrire di ansia da separazione se lasciata sola a lungo e che può essere tentata di rincorrere animali più piccoli. Consiglia di lavare i denti ogni giorno, di pulire le orecchie ogni due-quattro settimane, di fare il bagno circa una volta al mese e di rivolgersi a un toelettatore professionista circa ogni sei settimane. WebMD scrive che i Kerry sono affettuosi, bravi con i bambini e facili da addestrare, che il loro mantello perde pochissimo pelo e che i proprietari devono dedicare tempo alla loro socializzazione; VCA raccomanda di spazzolarli e pettinarli a giorni alterni.",
+      ],
+      sources: ["S1043", "S1046", "S1047", "S1048", "S10"],
+    },
+    irish_terrier: {
+      aka: "Irish Terrier, Terrier irlandese",
+      text: [
+        "L’Irish terrier è un terrier originario dell’Irlanda; la FCI lo inserisce nel gruppo 3, tra i terrier di taglia grande e media. Lo standard FCI descrive un cane attivo, vivace, agile e resistente, dalla linea slanciata e aggraziata, con un mantello fitto e ruvido a tinta unita, rosso, rosso grano o giallo-rosso. Lo standard FCI indica un peso di 12,25 kg per i maschi e di 11,4 kg per le femmine e un’altezza di circa 45,5 cm; un cane di questa taglia finisce di crescere verso i 12–15 mesi (classe di taglia PetMD). Il Royal Kennel Club e la PDSA indicano un’aspettativa di vita di oltre 12 anni, PetMD di 13–15 anni.",
+        "Il Royal Kennel Club raccomanda fino a un’ora di movimento al giorno e una toelettatura più di una volta alla settimana; la PDSA scrive che gli Irish terrier hanno livelli di energia elevati, richiedono la toelettatura due o tre volte alla settimana e che la socializzazione e l’addestramento fin da cuccioli sono molto importanti. Woodgreen scrive che possono essere ottimi cani da famiglia, dolci e affettuosi con i bambini della propria casa, che il loro forte istinto predatorio si risveglia davanti agli animali piccoli, che occhi, orecchie e bocca vanno controllati ogni settimana e che molti proprietari fanno tosare il mantello ogni paio di mesi. WebMD raccomanda di lavare loro i denti ogni giorno.",
+      ],
+      sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
+    },
   },
 };
 
