@@ -367,6 +367,7 @@ const en: RegistryCopy = {
       dna_gm2: "DNA test for GM2 gangliosidosis (an inherited disease of the nervous system)",
       dna_vwd3: "DNA test for von Willebrand disease type 3 (vWD3), an inherited bleeding disorder",
       dna_commd1: "Test for copper toxicosis (COMMD1), an inherited build-up of copper in the liver",
+      dna_hfh: "DNA test for hereditary footpad hyperkeratosis (HFH), an inherited thickening of the foot pads",
       dna_pra_rcd3: "DNA test for progressive retinal atrophy (PRA-rcd3)",
       dna_clad: "DNA test for canine leukocyte adhesion deficiency (CLAD), an inherited immune disorder",
       dna_ncl8: "DNA test for neuronal ceroid lipofuscinosis (NCL8), an inherited disease of the nervous system",
@@ -454,6 +455,7 @@ const en: RegistryCopy = {
     heart_cardiomyopathy_aortic_stenosis: "Heart problems such as cardiomyopathy and aortic stenosis can occur in the breed.",
     dental_disease_care: "A large UK study names dental disease as the most common problem in the breed, and owners are advised to make dental care a priority.",
     bladder_stones: "Bladder stones, collections of minerals that form in the bladder and urine, can occur in the breed.",
+    footpad_hyperkeratosis: "Hereditary footpad hyperkeratosis (HFH), an inherited thickening of the foot pads that can crack, can occur in the breed.",
     deafness: "Deafness in one or both ears occurs in the breed; puppies' hearing can be checked with a BAER test.",
     mitral_valve_disease: "Mitral valve disease, a heart condition where a weakened valve lets blood flow back into the heart, occurs in the breed; a vet can listen to breeding dogs' hearts before they are bred.",
     eye_problems_pra_cataracts_dry_eye: "Eye problems occur in the breed, such as progressive retinal atrophy, which can slowly lead to blindness, cataracts and dry eye; eye testing is available.",
@@ -942,7 +944,15 @@ const en: RegistryCopy = {
         "PetMD recommends about an hour of exercise every day, says the breed makes a wonderful pet for families who can keep up with its grooming and exercise needs, that it is a social breed that may develop separation anxiety if left alone for long periods, and that it may be tempted to chase smaller animals. It recommends daily toothbrushing, cleaning the ears every two to four weeks, a bath about once a month and a professional groom about every six weeks. WebMD says Kerries are affectionate, good with children and easy to train, that their coat sheds very little and that owners must spend time socialising them; VCA recommends brushing and combing every other day.",
       ],
       sources: ["S1043", "S1046", "S1047", "S1048", "S10"],
+    },    irish_terrier: {
+      aka: "irski terier",
+      text: [
+        "The Irish Terrier is a terrier from Ireland; the FCI lists it in Group 3 among the large and medium-sized terriers. The FCI standard describes an active, lively, lithe and wiry dog with a graceful, racy outline and a dense, wiry coat that is whole-coloured red, red wheaten or yellow red. The FCI standard gives a weight of 12.25 kg for dogs and 11.4 kg for bitches and a height of about 45.5 cm; a dog of this size is fully grown at about 12–15 months (PetMD size class). The Royal Kennel Club and PDSA give a lifespan of over 12 years, and PetMD 13–15 years.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day and grooming more than once a week; PDSA says Irish Terriers have high energy levels, need grooming two or three times a week and that socialisation and training at a young age are very important. Woodgreen says they can make excellent family dogs, gentle and affectionate with the children in their own household, that their strong prey drive is triggered by small animals, that eyes, ears and mouth should be checked weekly and that many owners have the coat clipped every couple of months. WebMD recommends brushing their teeth daily.",
+      ],
+      sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
     },
+
 
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, finski laponski pes",

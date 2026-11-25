@@ -372,6 +372,7 @@ const sl: RegistryCopy = {
       dna_gm2: "Test DNK za gangliozidozo GM2 (dedna bolezen živčevja)",
       dna_vwd3: "Test DNK za von Willebrandovo bolezen tipa 3 (vWD3), dedno motnjo strjevanja krvi",
       dna_commd1: "Test za bakrovo toksikozo (COMMD1), dedno kopičenje bakra v jetrih",
+      dna_hfh: "DNK test za dedno hiperkeratozo blazinic (HFH), dedno zadebelitev tačnih blazinic",
       dna_pra_rcd3: "Test DNK za progresivno atrofijo mrežnice (PRA-rcd3)",
       dna_clad: "Test DNK za pomanjkanje adhezije levkocitov (CLAD), dedno motnjo imunskega sistema",
       dna_ncl8: "Test DNK za nevronsko ceroidno lipofuscinozo (NCL8), dedno bolezen živčevja",
@@ -475,6 +476,7 @@ const sl: RegistryCopy = {
     heart_cardiomyopathy_aortic_stenosis: "Pri pasmi se lahko pojavijo bolezni srca, kot sta kardiomiopatija in zožitev aorte (aortna stenoza).",
     dental_disease_care: "Velika britanska raziskava navaja bolezen zob kot najpogostejšo težavo pasme, zato lastnikom svetuje, naj negi zob namenijo posebno pozornost.",
     bladder_stones: "Pri pasmi se lahko pojavijo kamni v mehurju, skupki mineralov, ki nastanejo v mehurju in urinu.",
+    footpad_hyperkeratosis: "Pri pasmi se lahko pojavi dedna hiperkeratoza blazinic (HFH), dedna zadebelitev tačnih blazinic, ki lahko razpokajo.",
     deafness: "Pri pasmi se pojavlja gluhost na eno ali obe ušesi; sluh mladičev je mogoče preveriti s testom BAER.",
     mitral_valve_disease: "Pri pasmi se pojavlja bolezen mitralne zaklopke – oslabljena srčna zaklopka pušča kri nazaj v srce; veterinar lahko psom pred vzrejo posluša srce.",
     eye_problems_pra_cataracts_dry_eye: "Pri pasmi se pojavljajo težave z očmi, na primer progresivna atrofija mrežnice, ki lahko počasi vodi v slepoto, siva mrena in suho oko; očesni pregled je na voljo.",
@@ -962,7 +964,15 @@ const sl: RegistryCopy = {
         "PetMD priporoča približno uro gibanja na dan in piše, da je kerry čudovit pes za družine, ki zmorejo njegovo nego in gibanje, da je družaben in lahko razvije ločitveno tesnobo, če je dolgo sam, ter da lahko lovi manjše živali. Priporoča vsakodnevno ščetkanje zob, čiščenje ušes vsaka dva do štiri tedne, kopanje približno enkrat na mesec in obisk pasjega frizerja približno vsakih šest tednov. WebMD piše, da so kerryji ljubeči, dobri z otroki in se zlahka učijo, da njihova dlaka zelo malo izpada in da jih morajo lastniki socializirati; VCA priporoča česanje vsak drugi dan.",
       ],
       sources: ["S1043", "S1046", "S1047", "S1048", "S10"],
+    },    irish_terrier: {
+      aka: "Irish Terrier",
+      text: [
+        "Irski terier je terier z Irske; FCI ga uvršča v 3. skupino med velike in srednje velike terierje. Standard FCI ga opisuje kot dejavnega, živahnega, gibčnega in žilavega psa elegantne, hitre postave z gosto, žičasto dlako enotne barve – rdeče, rdeče pšenične ali rumeno rdeče. Standard FCI navaja težo 12,25 kg za pse in 11,4 kg za psice ter višino približno 45,5 cm; pes te velikosti doraste pri približno 12–15 mesecih (velikostni razred PetMD). Royal Kennel Club in PDSA navajata življenjsko dobo več kot 12 let, PetMD pa 13–15 let.",
+        "Royal Kennel Club priporoča do ene ure gibanja na dan in česanje večkrat na teden; PDSA piše, da imajo irski terierji veliko energije, da jih je treba česati dvakrat ali trikrat na teden ter da sta socializacija in šolanje v mladosti zelo pomembna. Woodgreen piše, da so lahko odlični družinski psi, nežni in ljubeči do otrok v svojem domu, da njihov močan lovski nagon sprožijo manjše živali, da je treba oči, ušesa in usta pregledati vsak teden ter da jim mnogi lastniki dajo dlako ostriči približno vsaka dva meseca. WebMD priporoča vsakodnevno ščetkanje zob.",
+      ],
+      sources: ["S1051", "S1053", "S1055", "S1056", "S1057", "S1058", "S10"],
     },
+
 
     finnish_lapphund: {
       aka: "finski laponski pes, finski lapphund, laponski pes, lapinkoira, suomenlapinkoira, Finnish Lapphund, Finnish Lapponian Dog",

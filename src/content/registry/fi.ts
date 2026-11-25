@@ -485,6 +485,7 @@ const fi: RegistryCopy = {
       dna_gm2: "DNA-testi: GM2-gangliosidoosi (perinnöllinen hermoston sairaus)",
       dna_vwd3: "DNA-testi: von Willebrandin tauti, tyyppi 3 (vWD3) – perinnöllinen verenvuotohäiriö",
       dna_commd1: "Kuparitoksikoositesti (COMMD1), perinnöllinen kuparin kertyminen maksaan",
+      dna_hfh: "DNA-testi perinnölliselle anturoiden hyperkeratoosille (HFH), anturoiden perinnölliselle paksuuntumiselle",
       dna_pra_rcd3: "DNA-testi: etenevä verkkokalvon surkastuma (PRA-rcd3)",
       dna_clad: "DNA-testi: koiran leukosyyttien adheesiovaje (CLAD), perinnöllinen immuunipuutos",
       dna_ncl8: "DNA-testi neuronaalisen seroidilipofuskinoosin (NCL8) varalta – perinnöllinen hermoston sairaus",
@@ -600,6 +601,7 @@ const fi: RegistryCopy = {
     heart_cardiomyopathy_aortic_stenosis: "Rodulla voi esiintyä sydänongelmia, kuten kardiomyopatiaa ja aorttastenoosia.",
     dental_disease_care: "Laajan brittiläisen tutkimuksen mukaan hammassairaudet ovat rodun yleisin ongelma, ja omistajia neuvotaan pitämään hampaiden hoitoa etusijalla.",
     bladder_stones: "Rodulla voi esiintyä virtsakiviä, mineraalikertymiä, jotka muodostuvat virtsarakkoon ja virtsaan.",
+    footpad_hyperkeratosis: "Rodulla voi esiintyä perinnöllistä anturoiden hyperkeratoosia (HFH), anturoiden perinnöllistä paksuuntumista, jolloin anturat voivat haljeta.",
     deafness: "Rodulla esiintyy kuuroutta toisessa tai molemmissa korvissa; pentujen kuulo voidaan tutkia BAER-testillä.",
     mitral_valve_disease:
       "Rodulla esiintyy mitraaliläppäsairautta, sydänsairautta, jossa heikentynyt läppä päästää verta virtaamaan takaisin sydämeen; eläinlääkäri voi kuunnella jalostuskoirien sydämen ennen jalostusta.",

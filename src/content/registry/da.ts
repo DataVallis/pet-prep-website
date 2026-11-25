@@ -435,6 +435,7 @@ const da: RegistryCopy = {
       dna_gm2: "DNA-test for GM2-gangliosidose (en arvelig sygdom i nervesystemet)",
       dna_vwd3: "DNA-test for von Willebrands sygdom type 3 (vWD3), en arvelig blødersygdom",
       dna_commd1: "Test for kobberforgiftning (COMMD1), en arvelig ophobning af kobber i leveren",
+      dna_hfh: "DNA-test for arvelig trædepudehyperkeratose (HFH), en arvelig fortykkelse af trædepuderne",
       dna_pra_rcd3: "DNA-test for progressiv retinal atrofi (PRA-rcd3)",
       dna_clad: "DNA-test for canin leukocyt-adhæsionsdefekt (CLAD), en arvelig immunsygdom",
       dna_ncl8: "DNA-test for neuronal ceroid lipofuscinose (NCL8), en arvelig sygdom i nervesystemet",
@@ -540,6 +541,7 @@ const da: RegistryCopy = {
     heart_cardiomyopathy_aortic_stenosis: "Hjerteproblemer som kardiomyopati og aortastenose kan forekomme i racen.",
     dental_disease_care: "Et stort britisk studie nævner tandsygdom som det hyppigste problem i racen, og ejere rådes til at prioritere tandpleje.",
     bladder_stones: "Blæresten, ansamlinger af mineraler der dannes i blæren og urinen, kan forekomme i racen.",
+    footpad_hyperkeratosis: "Arvelig trædepudehyperkeratose (HFH), en arvelig fortykkelse af trædepuderne, som kan revne, kan forekomme i racen.",
     deafness: "Døvhed på det ene eller begge ører forekommer i racen; hvalpes hørelse kan undersøges med en BAER-test.",
     mitral_valve_disease:
       "Mitralklapsygdom, en hjertesygdom hvor en svækket klap lader blodet løbe tilbage i hjertet, forekommer i racen; en dyrlæge kan lytte på avlshundes hjerte før avl.",
