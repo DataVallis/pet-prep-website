@@ -1700,6 +1700,14 @@
         "red": "Rosso",
         "yellow-red": "Giallo-rosso"
       }
+    },
+    "bluetick_coonhound": {
+      "name": "Bluetick coonhound",
+      "slug": "bluetick-coonhound",
+      "synonyms": [
+        "Bluetick",
+        "Blue Tick Coonhound"
+      ]
     }
   },
   "suitability_labels": {
