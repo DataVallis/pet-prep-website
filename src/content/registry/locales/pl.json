@@ -1488,7 +1488,10 @@
     },
     "norwich_terrier": {
       "name": "Norwich terrier",
-      "slug": "norwich-terrier"
+      "slug": "norwich-terrier",
+      "synonyms": [
+        "Norwich"
+      ]
     },
     "schipperke": {
       "name": "Schipperke",

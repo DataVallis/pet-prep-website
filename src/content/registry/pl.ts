@@ -1486,6 +1486,14 @@ const pl: RegistryCopy = {
       ],
       sources: ["S806", "S10", "S123", "S805", "S809"],
     },
+    norwich_terrier: {
+      aka: "Norwich, Norwich Terrier",
+      text: [
+        "Norwich terrier to jeden z najmniejszych terierów, rasa z Wielkiej Brytanii. Według wzorca FCI to pies niski, żywy, zwarty i mocny, z twardą, drucianą, prostą sierścią, która tworzy kryzę wokół pyska, i stojącymi uszami o spiczastych końcach. Dopuszczalne umaszczenie to wszystkie odcienie rudego, pszeniczne, czarne podpalane i grizzle. Wzorzec podaje idealną wysokość 25\u00a0cm. Według wzorca UKC idealna masa ciała to około 12\u00a0funtów (ok. 5,4\u00a0kg) zarówno u psów, jak i u suk. Pies tej wielkości kończy rosnąć w wieku około 9–12\u00a0miesięcy (klasa wielkości PetMD). The Royal Kennel Club podaje długość życia ponad 10\u00a0lat, a PetMD 12–15\u00a0lat.",
+        "The Royal Kennel Club nazywa norwicha jednym z najmniejszych terierów o ujmującym usposobieniu, zaleca do 1\u00a0godziny ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu. Według niego rasa linieje i nadaje się do mieszkania, a wymienia ją jako rodzimą rasę „vulnerable” (narażoną). PetMD pisze, że norwich terriery zwykle dobrze dogadują się z dziećmi i innymi zwierzętami domowymi, mają dużo energii i potrzebują codziennego ruchu oraz stymulacji umysłowej, a przy ich silnym instynkcie łowieckim niezbędne są bezpieczna smycz i dobrze ogrodzony ogród. Należy je socjalizować od najmłodszych lat. PetMD zaleca szczotkowanie sierści co najmniej dwa razy w tygodniu, mycie zębów co najmniej raz w tygodniu, przycinanie pazurów mniej więcej raz w miesiącu oraz kąpiel nie częściej niż raz na trzy miesiące.",
+      ],
+      sources: ["S812", "S815", "S10", "S813", "S814"],
+    },
     miniature_bull_terrier: {
       aka: "Mini Bull Terrier, Mini Bull, Bull Terrier (Miniature), English Miniature Bull Terrier, bulterier miniaturowy",
       text: [
