@@ -1696,6 +1696,16 @@
         "Bluetick",
         "Blue Tick Coonhound"
       ]
+    },
+    "welsh_springer_spaniel": {
+      "name": "Welsh Springer Spaniel",
+      "slug": "welsh-springer-spaniel",
+      "synonyms": [
+        "Welsh Springer",
+        "Welshie",
+        "Welsh Starter",
+        "Springer gallois"
+      ]
     }
   },
   "suitability_labels": {
