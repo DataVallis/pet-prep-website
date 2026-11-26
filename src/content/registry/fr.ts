@@ -1550,6 +1550,14 @@ const fr: RegistryCopy = {
       ],
       sources: ["S1061", "S1060", "S10"],
     },
+    welsh_springer_spaniel: {
+      aka: "Welsh Springer, Welshie, Welsh Starter, Springer gallois",
+      text: [
+        "Le Welsh Springer Spaniel est un épagneul leveur de gibier originaire de Grande-Bretagne ; la FCI le classe dans le groupe 8, parmi les chiens leveurs de gibier. Le standard FCI décrit un chien symétrique et compact, sans être haut sur pattes, bâti pour l’endurance et le travail soutenu, au poil droit, plat et soyeux, rouge foncé et blanc uniquement, au tempérament vigoureux, gai et très actif, d’un naturel bienveillant. Le standard FCI donne une hauteur d’environ 48 cm pour les mâles et 46 cm pour les femelles ; PetMD indique un poids de 35 à 55 livres (environ 16–25 kg) ; un chien de ce gabarit atteint sa taille adulte vers 12 à 15 mois (catégorie de gabarit PetMD). Une vaste étude britannique publiée en 2024 (McMillan et al., via le tableau du Dogs Trust) donne une espérance de vie médiane de 14,0 ans ; le Royal Kennel Club donne plus de 10 ans.",
+        "Le Royal Kennel Club recommande plus de 2 heures d’exercice par jour et un toilettage plus d’une fois par semaine, et indique que la race perd ses poils. Selon VCA, l’entretien du pelage n’est pas difficile, avec un brossage une à deux fois par semaine. PetMD décrit les Welsh Springers comme des chiens de famille affectueux, fidèles et d’un tempérament équilibré ; il écrit que leur fort instinct de prédation impose de les garder en permanence en laisse ou dans un espace clos et sécurisé, qu’ils ne devraient pas vivre dans un foyer avec de petits animaux, et que la socialisation précoce et une éducation cohérente sont particulièrement importantes. WebMD indique qu’ils s’entendent bien avec les enfants et recommande un brossage des dents quotidien, ainsi qu’un bain et une coupe des griffes chaque mois.",
+      ],
+      sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
+    },
     toy_fox_terrier: {
       aka: "American Toy Terrier, Amertoy, TFT",
       text: [
