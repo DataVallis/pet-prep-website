@@ -980,6 +980,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S1061", "S1060", "S10"],
     },
+    welsh_springer_spaniel: {
+      aka: "velški springer, velski springer spanjel, Welsh Springer Spaniel, Welsh Springer, Welshie",
+      text: [
+        "Velški springer španjel je pes za dviganje divjadi iz Velike Britanije; FCI ga uvršča v 8. skupino med pse za dviganje divjadi. Standard FCI ga opisuje kot skladnega, kompaktnega psa, ki ni visokonog in je zgrajen za vzdržljivost in trdo delo, z ravno, gladko, svilnato dlako samo rdeče-bele barve ter z močnim, veselim in zelo dejavnim značajem prijazne narave. Standard FCI navaja višino približno 48 cm za pse in 46 cm za psice; PetMD navaja težo 35–55 funtov (približno 16–25 kg), pes te velikosti pa doraste pri približno 12–15 mesecih (velikostni razred PetMD). Velika britanska raziskava iz leta 2024 (McMillan in sodelavci, v tabeli Dogs Trust) navaja mediano pričakovane življenjske dobe 14,0 leta; Royal Kennel Club navaja več kot 10 let.",
+        "Royal Kennel Club priporoča več kot dve uri gibanja na dan in česanje večkrat na teden ter navaja, da mu izpada dlaka. VCA piše, da nega dlake ni zahtevna in zadostuje česanje enkrat ali dvakrat na teden. PetMD piše, da so velški springerji ljubeči, zvesti in umirjeni družinski psi, da jih je zaradi močnega lovskega nagona treba vedno imeti na povodcu ali na varno ograjenem prostoru in da ne sodijo v dom z malimi živalmi ter da sta zgodnja socializacija in dosledno šolanje še posebej pomembna. WebMD piše, da so dobri z otroki, in priporoča vsakodnevno ščetkanje zob ter kopanje in striženje krempljev enkrat na mesec.",
+      ],
+      sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
+    },
 
 
     finnish_lapphund: {
