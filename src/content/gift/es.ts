@@ -62,7 +62,7 @@ export const es: GiftCopy = {
     heading: "Preguntas frecuentes",
     items: [
       { q: "¿Cuánto tiempo es válido el vale?", a: "El vale es válido durante 12 meses desde la compra. Cuando un padre o una madre lo canjea, el reto queda en la cuenta familiar y no caduca. Las doce semanas empiezan cuando el padre o la madre asigna el reto a una mascota en la app, no al canjear el vale." },
-      { q: "¿Puedo pedir un reembolso?", a: "Un vale sin canjear se puede reembolsar en los 14 días siguientes a la compra. Un vale canjeado no se puede reembolsar. Escriba a hello@petprep.si indicando su número de pedido. Sus derechos legales como consumidor no se ven afectados." },
+      { q: "¿Puedo pedir un reembolso?", a: "Un vale sin canjear se puede reembolsar en los 14 días siguientes a la compra. Un vale canjeado no se puede reembolsar. Escribe a hello@petprep.si indicando tu número de pedido. Tus derechos legales como consumidor no se ven afectados." },
       { q: "¿En qué dispositivos funciona?", a: "La app PetPrep es para iPhone y para móviles Android. El vale se canjea en esta web, desde cualquier navegador." },
       { q: "¿Necesito una cuenta?", a: "Para comprar e imprimir el vale, no. Para canjearlo, la familia necesita una cuenta de padres en la app: en la web inicias sesión igual que en la app y luego introduces el código." },
       { q: "¿Sirve el vale para un gato?", a: "Sí. Hoy la app tiene perros y gatos, y el vale sirve para cualquier especie y raza disponible en la app en el momento de elegir." },
@@ -83,7 +83,7 @@ export const es: GiftCopy = {
     meta: { title: "Gracias: imprime tu vale", description: "Pega el código de tu correo e imprime el vale regalo." },
     eyebrow: "Vale regalo",
     title: "Gracias. Vamos a imprimir el vale.",
-    lead: "Su código está aquí abajo, listo para imprimir. También se lo hemos enviado por correo, junto con el vale para imprimir.",
+    lead: "Tu código está aquí abajo, listo para imprimir. También te lo hemos enviado por correo, junto con el vale para imprimir.",
     codeLabel: "Código del correo",
     codeHint: "Pega el código tal como aparece en el correo.",
     codeInvalid: "Este código no parece correcto. Tiene entre 8 y 64 letras, números y guiones.",

@@ -683,7 +683,7 @@ const es: Dictionary = {
             {
               heading: "10. Cuánto tiempo conservamos los datos",
               paragraphs: [
-                "Conservamos tus datos mientras exista tu cuenta. Cuando eliminas en la aplicación el perfil de un niño o tu cuenta, los datos se eliminan de inmediato y no se pueden recuperar; desaparecen automáticamente de nuestras copias de seguridad cifradas en un plazo máximo de 35 días. Los registros que la ley nos obliga a conservar (por ejemplo, de las compras) se conservan durante el plazo que exige la ley. Los informes de errores de la aplicación se eliminan automáticamente a los 30 días.",
+                "Conservamos tus datos mientras exista tu cuenta. Cuando eliminas en la aplicación el perfil de un niño o tu cuenta, los datos se eliminan enseguida y no se pueden recuperar; desaparecen automáticamente de nuestras copias de seguridad cifradas en un plazo máximo de 35 días. Los registros que la ley nos obliga a conservar (por ejemplo, de las compras) se conservan durante el plazo que exige la ley. Los informes de errores de la aplicación se eliminan automáticamente a los 30 días.",
               ],
             },
             {
