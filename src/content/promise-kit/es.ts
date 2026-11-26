@@ -184,8 +184,8 @@ export const esSales: KitSales = {
   buy: "Comprar el kit",
   sample: "Recibir la página de muestra gratis",
   sampleHeading: "Prueba primero la página de la Promesa",
-  sampleText: "La propia Promesa, como página A4 gratuita: el acuerdo entre un niño y los adultos, con tareas diarias, sus propias normas y espacio para la firma de todos. Escriba su correo y descárguela al momento.",
-  sampleNote: "Solo usamos su correo para novedades de PetPrep, si marca la casilla. Puede darse de baja cuando quiera.",
+  sampleText: "La propia Promesa, como página A4 gratuita: el acuerdo entre un niño y los adultos, con tareas diarias, sus propias normas y espacio para la firma de todos. Escribe tu correo y descárgala al momento.",
+  sampleNote: "Solo usamos tu correo para novedades de PetPrep, si marcas la casilla. Puedes darte de baja cuando quieras.",
   insideHeading: "Qué contiene",
   insideIntro: "Imprime tantas copias como necesites. Todo se rellena a mano, así que nada sobre tu hijo o hija se escribe en un formulario ni se envía a ninguna parte.",
   previewHeading: "Un vistazo a tres páginas",
@@ -194,7 +194,7 @@ export const esSales: KitSales = {
   forItems: [
     "Padres cuyo hijo o hija no deja de pedir una mascota y que quieren que la conversación gire en torno a hechos y rutina diaria, y no solo a deseos.",
     "Familias que aún no se han decidido y quieren una forma tranquila y ordenada de descubrir si una mascota encaja en su vida.",
-    "Abuelos, tíos y tías que quieren darle a un niño o una niña algo real por lo que esforzarse, sin regalarle un animal.",
+    "Abuelos, tíos y tías que quieren darle a un niño o una niña algo real por lo que esforzarse, sin regalarle una mascota.",
   ],
   notHeading: "Lo que no es",
   notItems: [
