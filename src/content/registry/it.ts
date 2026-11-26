@@ -1470,6 +1470,14 @@ const it: RegistryCopy = {
       ],
       sources: ["S806", "S10", "S123", "S805", "S809"],
     },
+    norwich_terrier: {
+      aka: "Norwich, Norwich Terrier, Terrier di Norwich",
+      text: [
+        "Il Norwich terrier è uno dei terrier più piccoli, originario della Gran Bretagna. Lo standard FCI descrive un cane di taglia piccola, basso, vivace, compatto e robusto, con il pelo duro, ruvido e diritto, che forma una gorgiera attorno al muso, e le orecchie erette dalla punta appuntita; il colore può essere in tutte le tonalità di rosso, grano, nero focato o grizzle (screziato di grigio). Lo standard FCI indica un’altezza ideale di 25 cm; lo standard UKC un peso ideale di circa 12 libbre (circa 5,4 kg) per maschi e femmine. Un cane di questa taglia finisce di crescere verso i 9–12 mesi (classe di taglia PetMD). Il Royal Kennel Club indica un’aspettativa di vita di oltre 10 anni, PetMD di 12–15 anni.",
+        "Il Royal Kennel Club definisce il Norwich uno dei terrier più piccoli, dal carattere adorabile; raccomanda fino a un’ora di movimento al giorno e una cura del mantello più di una volta alla settimana, e segnala che la razza perde il pelo, si adatta a un appartamento ed è inserita nell’elenco delle razze native vulnerabili (Vulnerable Native Breeds). PetMD scrive che i Norwich terrier di solito vanno d’accordo con i bambini e con gli altri animali, hanno molta energia e bisogno ogni giorno di movimento e di stimoli mentali, e vanno socializzati fin da piccoli; il loro forte istinto di caccia rende indispensabili un guinzaglio sicuro e un giardino ben recintato. Consiglia di spazzolarli almeno due volte alla settimana, di pulire loro i denti almeno una volta alla settimana, di tagliare le unghie circa una volta al mese e di fare il bagno non più di una volta ogni tre mesi.",
+      ],
+      sources: ["S812", "S815", "S10", "S813", "S814"],
+    },
     miniature_bull_terrier: {
       aka: "Bull terrier miniatura, Miniature Bull Terrier, Mini Bull Terrier, Mini Bull, English Miniature Bull Terrier",
       text: [
