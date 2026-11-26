@@ -1519,11 +1519,19 @@ const cs: RegistryCopy = {
       ],
       sources: ["S806", "S10", "S123", "S805", "S809"],
     },
+    norwich_terrier: {
+      aka: "Norwich, Norwich terier, Norwich teriér, norwichský teriér, Norwich terrier",
+      text: [
+        "Norwich teriér patří k nejmenším teriérům a pochází z Velké Británie. Standard FCI popisuje nízkého, čilého, kompaktního a pevně stavěného psíka s tvrdou, drátovitou, rovnou srstí, která na obličeji tvoří límec, a se vzpřímenýma špičatýma ušima; barvy jsou všechny odstíny červené, pšeničné, černé s pálením nebo „grizzle“. Ideální výška je podle něj 25 cm. Standard UKC uvádí ideální hmotnost přibližně 12 liber (asi 5,4 kg) u psů i fen; pes této velikosti dorůstá zhruba v 9–12 měsících (velikostní třída PetMD). Royal Kennel Club uvádí délku života přes 10 let, PetMD 12–15 let.",
+        "Royal Kennel Club označuje norwich teriéra za jednoho z nejmenších teriérů s milou povahou, doporučuje až hodinu pohybu denně a péči o srst častěji než jednou týdně, uvádí, že plemeno líná a hodí se do bytu, a vede ho jako ohrožené původní plemeno. PetMD píše, že norwich teriéři obvykle dobře vycházejí s dětmi i jinými zvířaty, mají hodně energie a potřebují každodenní pohyb i duševní stimulaci; mají silný lovecký pud, a proto jsou nutností bezpečné vodítko a dobře oplocená zahrada, a je třeba je od útlého věku socializovat. Doporučuje je kartáčovat nejméně dvakrát týdně, čistit jim zuby aspoň jednou týdně, zkracovat drápky zhruba jednou měsíčně a koupat je nejvýš jednou za tři měsíce.",
+      ],
+      sources: ["S812", "S815", "S10", "S813", "S814"],
+    },
     miniature_bull_terrier: {
       aka: "Mini bulteriér, Mini Bull, Bull Terrier (Miniature), English Miniature Bull Terrier",
       text: [
         "Miniaturní bulteriér je malý teriér z Velké Británie. FCI ho řadí mezi teriéry býčího typu a Royal Kennel Club uvádí, že jako samostatná varieta byl poprvé uznán v roce 1943 a byl vyšlechtěn z menších bulteriérů tak, aby nepřesáhl 35,5 cm (14 palců). PetMD uvádí výšku 10–14 palců (asi 25–36 cm) a hmotnost 18–28 liber (asi 8–13 kg); pes této velikosti dorůstá zhruba v 9–12 měsících (velikostní třída PetMD). Royal Kennel Club uvádí délku života přes 10 let, PetMD 11–13 let.",
-        "Royal Kennel Club popisuje plemeno jako odvážné, plné ohně a zábavné povahy, doporučuje až hodinu pohybu denně a péči o srst jednou týdně, uvádí, že líná, a vede ho jako ohrožené původní plemeno (vulnerable native breed). PetMD píše, že miniaturní bulteriéři jsou obvykle mazliví a dobří s dětmi, přátelští rodinní společníci, při správné socializaci mohou vycházet s jinými zvířaty, potřebují pravidelný pohyb a duševní stimulaci a nedaří se jim, když jsou dlouho sami; doporučuje včasnou socializaci a kartáčování zhruba jednou týdně.",
+        "Royal Kennel Club popisuje plemeno jako odvážné, plné ohně a zábavné povahy, doporučuje až hodinu pohybu denně a péči o srst jednou týdně, uvádí, že líná, a vede ho jako ohrožené původní plemeno. PetMD píše, že miniaturní bulteriéři jsou obvykle mazliví a dobří s dětmi, přátelští rodinní společníci, při správné socializaci mohou vycházet s jinými zvířaty, potřebují pravidelný pohyb a duševní stimulaci a nedaří se jim, když jsou dlouho sami; doporučuje včasnou socializaci a kartáčování zhruba jednou týdně.",
       ],
       sources: ["S818", "S820", "S821", "S10"],
     },
