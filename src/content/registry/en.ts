@@ -960,6 +960,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S1061", "S1060", "S10"],
     },
+    welsh_springer_spaniel: {
+      aka: "Welsh Springer, Welshie, Welsh Starter, velški springer španjel, velski springer spanjel",
+      text: [
+        "The Welsh Springer Spaniel is a flushing gundog from Great Britain; the FCI lists it in Group 8 among the flushing dogs. The FCI standard describes a symmetrical, compact dog that is not leggy, built for endurance and hard work, with a straight, flat, silky coat that is rich red and white only, and a strong, merry, very active temperament with a kindly disposition. The FCI standard gives a height of about 48 cm for dogs and 46 cm for bitches; PetMD gives a weight of 35–55 lb (about 16–25 kg), and a dog of this size is fully grown at about 12–15 months (PetMD size class). A large UK study published in 2024 (McMillan et al., in the Dogs Trust table) gives a median life expectancy of 14.0 years; the Royal Kennel Club gives a lifespan of over 10 years.",
+        "The Royal Kennel Club recommends more than two hours of exercise a day and grooming more than once a week, and notes that the breed sheds. VCA says coat care is not difficult, with brushing once or twice a week. PetMD calls Welsh Springers loving, loyal, even-tempered family dogs, says their strong prey drive means they should be kept on a leash or in a securely fenced area at all times and that they should not join homes with small pets, and that early socialisation and consistent training are especially important. WebMD says they are good with children and recommends daily tooth brushing and a monthly bath and nail trim.",
+      ],
+      sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
+    },
 
 
     finnish_lapphund: {
