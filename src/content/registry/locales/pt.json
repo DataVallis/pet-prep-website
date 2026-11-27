@@ -1216,7 +1216,15 @@
       "synonyms": [
         "Chow-chow",
         "Chow"
-      ]
+      ],
+      "colours": {
+        "red": "Vermelho",
+        "black": "Preto",
+        "cream": "Creme",
+        "fawn": "Fulvo",
+        "blue": "Azul",
+        "white": "Branco"
+      }
     },
     "old_english_sheepdog": {
       "name": "Bobtail",
@@ -1224,7 +1232,11 @@
       "synonyms": [
         "Antigo cão pastor inglês",
         "Old English Sheepdog"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Cinzento e branco",
+        "blue-white": "Azul e branco"
+      }
     },
     "pekingese": {
       "name": "Pequinês",
@@ -1259,7 +1271,11 @@
       "synonyms": [
         "Mittelschnauzer",
         "Standard Schnauzer"
-      ]
+      ],
+      "colours": {
+        "pepper-salt": "Sal e pimenta",
+        "black": "Preto"
+      }
     },
     "coton_de_tulear": {
       "name": "Coton de Tuléar",
@@ -1273,7 +1289,15 @@
       "slug": "setter-ingles",
       "synonyms": [
         "English Setter"
-      ]
+      ],
+      "colours": {
+        "blue-belton": "Belton azul",
+        "orange-belton": "Belton laranja",
+        "blue-belton-tan": "Tricolor (belton azul e fogo)",
+        "lemon-belton": "Belton limão",
+        "liver-belton": "Belton fígado",
+        "liver-belton-tan": "Tricolor (belton fígado e fogo)"
+      }
     },
     "dogue_de_bordeaux": {
       "name": "Dogue de Bordéus",
@@ -1282,7 +1306,13 @@
         "Dogue de Bordeaux",
         "Mastim de Bordéus",
         "Bordeaux mastiff"
-      ]
+      ],
+      "colours": {
+        "mahogany-brown-mask": "Mogno com máscara castanha",
+        "fawn-black-mask": "Fulvo com máscara preta",
+        "fawn-no-mask": "Fulvo sem máscara",
+        "isabella": "Isabela"
+      }
     },
     "flat_coated_retriever": {
       "name": "Flat-coated retriever",
@@ -1291,7 +1321,11 @@
         "Retriever de pelo liso",
         "Flat coated retriever",
         "Flatcoat"
-      ]
+      ],
+      "colours": {
+        "black": "Preto",
+        "liver": "Fígado"
+      }
     },
     "lhasa_apso": {
       "name": "Lhasa apso",
@@ -1300,18 +1334,39 @@
         "Lhasa",
         "Lhasa-apso",
         "Apso"
-      ]
+      ],
+      "colours": {
+        "golden": "Dourado",
+        "honey": "Mel",
+        "dark-grizzle": "Grisalho escuro",
+        "smoke": "Fumo",
+        "parti-colour": "Malhado",
+        "black": "Preto",
+        "white": "Branco",
+        "brown": "Castanho"
+      }
     },
     "border_terrier": {
       "name": "Border terrier",
-      "slug": "border-terrier"
+      "slug": "border-terrier",
+      "colours": {
+        "grizzle-tan": "Grisalho e fogo",
+        "red": "Vermelho",
+        "wheaten": "Trigo",
+        "blue-tan": "Azul e fogo"
+      }
     },
     "leonberger": {
       "name": "Leonberger",
       "slug": "leonberger",
       "synonyms": [
         "Leonberg"
-      ]
+      ],
+      "colours": {
+        "lion-yellow": "Amarelo-leão",
+        "red": "Vermelho",
+        "sandy": "Cor de areia"
+      }
     },
     "beauceron": {
       "name": "Pastor de Beauce",
@@ -1319,7 +1374,11 @@
       "synonyms": [
         "Beauceron",
         "Berger de Beauce"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Preto e fogo",
+        "harlequin": "Arlequim"
+      }
     },
     "bouvier_des_flandres": {
       "name": "Bouvier des Flandres",
@@ -1720,6 +1779,45 @@
         "wheaten": "Trigo",
         "black-tan": "Preto e fogo",
         "grizzle": "Grizzle"
+      }
+    },
+    "welsh_springer_spaniel": {
+      "name": "Welsh springer spaniel",
+      "slug": "welsh-springer-spaniel",
+      "synonyms": [
+        "Springer spaniel galês",
+        "Welsh Springer",
+        "Welshie"
+      ]
+    },
+    "smooth_fox_terrier": {
+      "name": "Fox terrier de pelo liso",
+      "slug": "fox-terrier-de-pelo-liso",
+      "synonyms": [
+        "Smooth fox terrier",
+        "Foxie"
+      ],
+      "colours": {
+        "tricolour": "Tricolor",
+        "white-tan": "Branco e fogo",
+        "white-black": "Branco e preto",
+        "white": "Todo branco"
+      }
+    },
+    "bearded_collie": {
+      "name": "Bearded collie",
+      "slug": "bearded-collie",
+      "synonyms": [
+        "Beardie",
+        "Collie barbudo"
+      ],
+      "colours": {
+        "grey-white": "Cinzento-ardósia e branco",
+        "black-white": "Preto e branco",
+        "blue-white": "Azul e branco",
+        "brown-white": "Castanho e branco",
+        "fawn-white": "Fulvo avermelhado e branco",
+        "sandy-white": "Cor de areia e branco"
       }
     }
   },

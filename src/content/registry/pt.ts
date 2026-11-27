@@ -1751,6 +1751,30 @@ const pt: RegistryCopy = {
       ],
       sources: ["S1061", "S1060", "S10"],
     },
+    welsh_springer_spaniel: {
+      aka: "Welsh Springer, Welshie, Welsh Starter, Springer spaniel galês",
+      text: [
+        "O welsh springer spaniel é um spaniel levantador de caça originário da Grã-Bretanha; a FCI inclui-o no Grupo 8, na secção dos cães levantadores de caça. O padrão da FCI descreve um cão simétrico e compacto, de pernas não demasiado altas, feito para a resistência e o trabalho duro, com pelo liso, assente e sedoso, apenas em vermelho intenso e branco, e de temperamento robusto, alegre, muito ativo e de boa índole. O padrão da FCI indica uma altura de cerca de 48 cm nos machos e 46 cm nas fêmeas; a PetMD indica um peso de 35–55 libras (cerca de 16–25 kg), e um cão deste porte atinge o tamanho adulto por volta dos 12–15 meses (classe de tamanho da PetMD). Um grande estudo britânico publicado em 2024 (McMillan et al., apresentado pelo Dogs Trust) indica uma esperança de vida mediana de 14,0 anos; o Royal Kennel Club indica mais de 10 anos.",
+        "O Royal Kennel Club recomenda mais de duas horas de exercício por dia e cuidados com o pelo mais de uma vez por semana, e indica que a raça larga pelo. A VCA diz que o pelo não dá muito trabalho, bastando escová-lo uma ou duas vezes por semana. A PetMD descreve os welsh springers como cães de família carinhosos, leais e de feitio equilibrado; diz que, por terem um forte instinto de caça, devem andar sempre de trela ou num espaço bem vedado e não são indicados para casas com animais pequenos, e que a socialização precoce e um treino consistente são especialmente importantes. A WebMD diz que se dão bem com crianças e recomenda escovar os dentes todos os dias, dar banho e aparar as unhas uma vez por mês.",
+      ],
+      sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
+    },
+    smooth_fox_terrier: {
+      aka: "Fox terrier de pelo liso, Fox Terrier (Smooth), Smooth-coated Fox Terrier, Foxie, Fox Terrier",
+      text: [
+        "O fox terrier de pelo liso é um terrier ativo e vivo originário da Grã-Bretanha (Grupo 3 da FCI, terriers; secção dos terriers grandes e médios), a variedade de pelo liso do fox terrier de pelo duro, e não o toy fox terrier. O padrão da FCI pede ossatura e força num corpo compacto, nunca pesado nem grosseiro, com pelo liso, assente, duro e denso, e predomínio do branco: todo branco, ou branco com manchas fogo, pretas ou pretas e fogo. Pede uma altura à cernelha que não ultrapasse os 39 cm nos machos, sendo as fêmeas ligeiramente mais baixas, e indica um peso de 7,5–8 kg nos machos e 7–7,5 kg nas fêmeas. Um cão deste porte atinge o tamanho adulto por volta dos 9–12 meses (PetMD), e o Dogs Trust indica uma esperança de vida habitual de mais de 12 anos (PetMD: 10–13 anos).",
+        "O padrão da FCI descreve a raça como simpática, expansiva e destemida. A PDSA recomenda pelo menos uma hora de exercício por dia e a WebMD 1 a 2 horas. A PetMD diz que os fox terriers de pelo liso se dão bem com crianças, são animais de família ideais e, apesar do pelo curto, largam pelo com moderação; recomenda escová-los uma vez por semana e considera essencial a socialização precoce com outros cães e gatos. A WebMD considera-os ótimos companheiros para crianças, mas aconselha a vigiar a interação, refere o forte instinto de caça e recomenda escovar os dentes todos os dias e verificar as orelhas todas as semanas.",
+      ],
+      sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
+    },
+    bearded_collie: {
+      aka: "Beardie, Highland Collie, Hairy Mou'ed Collie, Mountain Collie, Collie barbudo",
+      text: [
+        "O bearded collie é um cão de pastor esguio e ativo originário da Grã-Bretanha; a FCI inclui-o no Grupo 1, na secção dos cães de pastor. O padrão da FCI descreve um cão de constituição robusta, que não deve parecer demasiado pesado, de expressão viva e curiosa, com um pelo duplo e desgrenhado — subpelo macio e farto sob um pelo exterior liso e áspero, que não deve ser aparado — em cinzento-ardósia, fulvo avermelhado, preto, azul, todos os tons de cinzento, castanho ou cor de areia, com ou sem manchas brancas, nunca merle. O padrão da FCI indica uma altura de 53–56 cm nos machos e 51–53 cm nas fêmeas, mas não indica peso; a PDSA indica um peso médio de 20–25 kg, e um cão deste porte atinge o tamanho adulto por volta dos 12–15 meses (classe de tamanho da PetMD). Um grande estudo britânico publicado em 2024 (McMillan et al., apresentado pelo Dogs Trust) indica uma esperança de vida mediana de 13,9 anos; o Royal Kennel Club indica mais de 12 anos.",
+        "O Royal Kennel Club recomenda até uma hora de exercício por dia e cuidados com o pelo todos os dias, e indica que a raça larga pelo e se adapta bem a uma casa grande com jardim grande. A PDSA descreve os beardies como cães meigos, adoráveis e felizes, perfeitos para a família, mas diz que o forte instinto de pastoreio pode levá-los a tentar arrebanhar adultos e crianças dentro de casa. A PetMD diz que são meigos com as crianças, embora toda a interação entre crianças e cães deva ser vigiada, e recomenda escovar todos os dias e socializar o cachorro desde o dia em que chega a casa. A WebMD diz que são sociáveis e podem ficar ansiosos se passarem muito tempo sozinhos, precisam de estímulo físico e mental e não são uma raça hipoalergénica.",
+      ],
+      sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapphund, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, Lapphund finlandês",
       text: [
