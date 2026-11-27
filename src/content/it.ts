@@ -275,7 +275,7 @@ const it: Dictionary = {
             { title: "Tuo figlio accede con un codice", text: "Ricevi un codice di 6 cifre valido per 15 minuti. Tuo figlio lo digita sul suo telefono: niente email e niente password. Telefono perso? Lo disconnetti da tutti i dispositivi con un tocco." },
             { title: "Il Contratto di responsabilità", text: "Tuo figlio firma una promessa con un dito. La firma è la nascita dell’animale: i bisogni iniziano a contare da quel momento, quindi non si perde nulla se firma più tardi." },
             { title: "Dodici settimane di cure", text: "Pasti nelle giuste fasce orarie, acqua fresca, pulizia e una passeggiata quotidiana con passi veri. Man mano che l’animale cresce, i suoi bisogni cambiano." },
-            { title: "Il certificato", text: "Dopo 12 settimane l’animale compie un anno. Tuo figlio riceve un Certificato di responsabilità con il suo Care Score, oppure scoprite insieme, senza rischi, che non è ancora il momento." },
+            { title: "Il certificato", text: "Dopo 12 settimane l’animale compie un anno. Tuo figlio riceve un Certificato di responsabilità con il suo Care Score, oppure scopri insieme a lui, senza rischi, che non è ancora il momento." },
           ],
         },
         {
@@ -316,7 +316,7 @@ const it: Dictionary = {
         {
           type: "callout",
           title: "Anche fallire è un risultato.",
-          text: "Se l’animale finisce nel rifugio virtuale, avete imparato qualcosa di prezioso, prima che a pagarne il prezzo fosse un animale vero. Puoi ricominciare, anche con una razza più facile.",
+          text: "Se l’animale finisce nel rifugio virtuale, hai imparato qualcosa di prezioso, prima che a pagarne il prezzo fosse un animale vero. Puoi ricominciare, anche con una razza più facile.",
           tone: "dark",
         },
       ],
@@ -430,9 +430,9 @@ const it: Dictionary = {
     },
     pricing: {
       meta: {
-        title: "Prezzi — PetPrep è gratis per iniziare, 49,99 € per la sfida di 12 settimane",
+        title: "Prezzi — PetPrep è gratis per iniziare, 49,99 € per la sfida di 12 settimane",
         description:
-          "Il cane meticcio è gratis per sempre. La sfida PetPrep di 12 settimane costa 49,99 € per animale, con un acquisto una tantum. Un solo prezzo per i fratelli che condividono un animale. Anche come upgrade del tuo animale gratuito.",
+          "Il cane meticcio è gratis per sempre. La sfida PetPrep di 12 settimane costa 49,99 € per animale, con un acquisto una tantum. Un solo prezzo per i fratelli che condividono un animale. Anche come upgrade del tuo animale gratuito.",
       },
       eyebrow: "Prezzi",
       title: "Prezzi semplici ed equi.",
@@ -447,11 +447,11 @@ const it: Dictionary = {
             "Nell’app tuo figlio chiede oggetti per il suo animale; tu decidi e li compri. Tuo figlio non vede mai un prezzo. Gli oggetti sono solo estetici: non cambiano mai i bisogni, il Care Score o il certificato. Disponibili anche per il cane meticcio e il gatto domestico gratuiti.",
           head: ["Oggetto", "Prezzo"],
           rows: [
-            ["Cuccia (gatto: cestino)", "5,99 €"],
-            ["Ciotole per cibo e acqua", "5,99 €"],
-            ["Gioco (cane: corda o gioco che squittisce; gatto: topolino di peluche o canna con piume)", "5,99 € per gioco"],
-            ["Premi, confezione da 10", "2,99 €"],
-            ["Kit di benvenuto: cuccia + ciotole + gioco", "15,99 € (invece di 17,97 €)"],
+            ["Cuccia (gatto: cestino)", "5,99 €"],
+            ["Ciotole per cibo e acqua", "5,99 €"],
+            ["Gioco (cane: corda o gioco che squittisce; gatto: topolino di peluche o canna con piume)", "5,99 € per gioco"],
+            ["Premi, confezione da 10", "2,99 €"],
+            ["Kit di benvenuto: cuccia + ciotole + gioco", "15,99 € (invece di 17,97 €)"],
           ],
           note: "I Desideri arrivano con il prossimo aggiornamento dell’app; si potranno acquistare non appena gli oggetti saranno disponibili su App Store e Google Play. I prezzi si riferiscono alla Slovenia; lo store mostra il prezzo per il tuo Paese.",
         },
@@ -461,14 +461,14 @@ const it: Dictionary = {
           items: [
             { q: "La versione gratuita è davvero gratuita?", a: "Sì. Il cane meticcio è gratis per sempre, con la simulazione completa, le passeggiate vere e il pannello per i genitori." },
             { q: "Cosa include la sfida?", a: "Razze impegnative come il [border collie](breed:border_collie), gli stati d’animo del tuo animale in video creati con l’IA, il Certificato di responsabilità alla fine e l’accesso per entrambi i genitori. Puoi sceglierla anche con il cane meticcio o il gatto domestico." },
-            { q: "Possiamo passare alla sfida con l’animale gratuito che mio figlio ha già?", a: "Sì, se il cane meticcio o il gatto domestico gratuito è ancora in gioco. Nell’app dei genitori, avvia la sfida dalla scheda di tuo figlio. L’animale resta lo stesso: nome, aspetto, età e comandi imparati. Le 12 settimane, il Care Score e il certificato contano dall’acquisto; i giorni precedenti restano nello storico, segnati come precedenti alla sfida, e non contano. Il prezzo è lo stesso: 49,99 € una tantum, senza abbonamento. I cani meticci creati in una prima versione dell’app non possono passare alla sfida; l’app ti dice se è il tuo caso." },
+            { q: "Possiamo passare alla sfida con l’animale gratuito che mio figlio ha già?", a: "Sì, se il cane meticcio o il gatto domestico gratuito è ancora in gioco. Nell’app dei genitori, avvia la sfida dalla scheda di tuo figlio. L’animale resta lo stesso: nome, aspetto, età e comandi imparati. Le 12 settimane, il Care Score e il certificato contano dall’acquisto; i giorni precedenti restano nello storico, segnati come precedenti alla sfida, e non contano. Il prezzo è lo stesso: 49,99 € una tantum, senza abbonamento. I cani meticci creati in una prima versione dell’app non possono passare alla sfida; l’app ti dice se è il tuo caso." },
             { q: "Un animale della sfida può tornare al piano gratuito?", a: "Non a scelta. Un cane meticcio o un gatto domestico torna al piano gratuito solo se lo store rimborsa l’acquisto; la sfida allora termina, senza certificato. Se in seguito acquisti di nuovo la sfida, iniziano 12 nuove settimane." },
             { q: "L’app mi spingerà a comprare?", a: "No. Se tuo figlio si è preso cura di un animale gratuito in almeno 5 dei suoi primi 7 giorni, ricevi una notifica e una scheda nel tuo pannello sulla sfida: una sola volta per animale, mai durante le ore di silenzio. Tuo figlio non vede né i prezzi né questo promemoria." },
             { q: "I fratelli pagano due volte?", a: "No. I bambini che condividono un animale pagano un solo prezzo. Un secondo animale in famiglia è una sfida a parte." },
             { q: "Come si paga?", a: "Nell’app, tramite App Store o Google Play. I rimborsi sono gestiti dal tuo account dello store." },
             { q: "Cosa sono i Desideri? Mio figlio può comprare qualcosa da solo?", a: "Tuo figlio può chiedere una cuccia, le ciotole, un gioco o dei premi per il suo animale, con al massimo tre richieste aperte alla volta. Ricevi una notifica e decidi se comprarlo o scegliere «Non ora». Tuo figlio non vede mai i prezzi e non può comprare nulla nell’app per bambini." },
             { q: "Gli oggetti acquistati rendono il gioco più facile?", a: "No. Gli oggetti sono solo estetici. Non cambiano mai i bisogni, il Care Score o il certificato, e nei Desideri non ci sono veterinari né medicine: mai «paga per salvare il tuo animale»." },
-            { q: "Vale lo stesso per gli adulti?", a: "Sì. Se usi PetPrep da solo per provare una razza, vale lo stesso: il meticcio è gratis per sempre e la sfida di 12 settimane costa 49,99 € per animale." },
+            { q: "Vale lo stesso per gli adulti?", a: "Sì. Se usi PetPrep da solo per provare una razza, vale lo stesso: il meticcio è gratis per sempre e la sfida di 12 settimane costa 49,99 € per animale." },
           ],
         },
       ],
@@ -530,8 +530,8 @@ const it: Dictionary = {
           head: ["Fonte di ricavo", "Modello", "Stato"],
           rows: [
             ["Cane meticcio", "Gratis per sempre (acquisizione)", "Deciso"],
-            ["Sfida PetPrep di 12 settimane", "49,99 € per animale, acquisto una tantum", "Deciso"],
-            ["Desideri — oggetti per l’animale (solo estetici)", "Acquisti in-app: 5,99 € per oggetto, premi a 2,99 € per 10, kit a 15,99 €; anche nella versione gratuita", "Sviluppato, acquisto nello store a breve"],
+            ["Sfida PetPrep di 12 settimane", "49,99 € per animale, acquisto una tantum", "Deciso"],
+            ["Desideri — oggetti per l’animale (solo estetici)", "Acquisti in-app: 5,99 € per oggetto, premi a 2,99 € per 10, kit a 15,99 €; anche nella versione gratuita", "Sviluppato, acquisto nello store a breve"],
             ["Offerte dei partner", "Commissioni da negozi, assicurazioni, veterinari ed educatori cinofili", "In programma"],
             ["Assistente IA per l’animale vero", "Abbonamento", "In programma"],
             ["Test del DNA per cani e gatti", "Vendita dei test e commissioni dei partner", "In programma"],
@@ -764,7 +764,7 @@ const it: Dictionary = {
               heading: "4. Funzioni gratuite e a pagamento, acquisti e rimborsi",
               items: [
                 "Il cane meticcio e il gatto domestico sono gratis per sempre e sono il modo per provare PetPrep; non esiste una prova gratuita della sfida. Un animale gratuito non ha il programma di 12 settimane né il certificato; il genitore vede la cronologia degli ultimi 7 giorni e l’animale ha un set di base di immagini e video.",
-                "La sfida PetPrep di 12 settimane è un acquisto una tantum, non un abbonamento (49,99 € in Slovenia; lo store mostra il prezzo per il tuo Paese). Nella versione attuale dell’app puoi sceglierla con qualsiasi razza, anche con il cane meticcio e il gatto domestico. Un acquisto corrisponde a una sfida per un animale; ogni nuova sfida con un nuovo animale è un nuovo acquisto. I fratelli che si prendono cura dello stesso animale pagano una sola volta.",
+                "La sfida PetPrep di 12 settimane è un acquisto una tantum, non un abbonamento (49,99 € in Slovenia; lo store mostra il prezzo per il tuo Paese). Nella versione attuale dell’app puoi sceglierla con qualsiasi razza, anche con il cane meticcio e il gatto domestico. Un acquisto corrisponde a una sfida per un animale; ogni nuova sfida con un nuovo animale è un nuovo acquisto. I fratelli che si prendono cura dello stesso animale pagano una sola volta.",
                 "Un genitore può passare alla sfida un cane meticcio o un gatto domestico gratuito di cui qualcuno si prende già cura, allo stesso prezzo e con lo stesso animale. Non è possibile dopo la fine del gioco né per i cani meticci creati in una prima versione dell’app; l’app lo indica quando è il caso. Un animale della sfida (anche uno passato alla sfida e un cane meticcio o gatto domestico scelto per la sfida) non può tornare al piano gratuito; solo un rimborso riporta lì un cane meticcio o un gatto domestico (vedi sotto).",
                 "Il genitore acquista nella propria app tramite App Store o Google Play; nell’app del bambino non ci sono acquisti. Lo store elabora il pagamento secondo le proprie condizioni.",
                 "Puoi creare un animale per la sfida prima di acquistarla. Finché la sfida non è pagata, il gioco è in pausa: l’animale aspetta al sicuro, i suoi bisogni non calano e non peggiora nulla. Una volta effettuato l’acquisto, il gioco riprende da dove si era fermato.",
@@ -1215,7 +1215,7 @@ const it: Dictionary = {
           heading: "Unisciti al movimento",
           intro: "Per partecipare non ti serve l’app. Ogni famiglia che esce per un animale – vero o quello con cui si allena – ne fa parte.",
           items: [
-            { title: "Esci", text: "Porta il cane a fare la sua passeggiata. Oppure, se state ancora decidendo se prendere un animale, fate la passeggiata che fareste con lui." },
+            { title: "Esci", text: "Porta il cane a fare la sua passeggiata. Oppure, se stai ancora decidendo se prendere un animale, fai la passeggiata che faresti con lui." },
             { title: "Cattura il momento", text: "Le scarpe vicino alla porta, un guinzaglio, il sentiero, le zampe sull’erba. Niente volti, niente nomi." },
             { title: "Condividilo", text: "Pubblicalo con #walkyourpet e tagga @petprep.si su Instagram o TikTok. Con il tuo permesso, potremmo condividere i momenti più belli qui e sui nostri profili." },
           ],

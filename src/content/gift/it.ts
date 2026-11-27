@@ -28,7 +28,7 @@ export const it: GiftCopy = {
   how: {
     heading: "Come funziona il buono",
     steps: [
-      { title: "Acquista", text: "Acquisti il buono su questa pagina. Il codice arriva via e-mail." },
+      { title: "Acquista", text: "Acquista il buono su questa pagina. Il codice arriva via e-mail." },
       { title: "Stampa", text: "Dopo l’acquisto incolla il codice nella pagina di ringraziamento e stampa il buono su un foglio A4. Su ogni foglio ci sono due buoni, da piegare o ritagliare." },
       { title: "Un genitore lo riscatta", text: "Sul sito un genitore accede come nell’app e inserisce il codice. La sfida viene aggiunta alla famiglia." },
       { title: "Si comincia", text: "Nell’app il genitore sceglie l’animale a cui si riferisce la sfida e iniziano le dodici settimane." },
@@ -40,7 +40,7 @@ export const it: GiftCopy = {
       "Una sfida PetPrep di 12 settimane per un animale, come se la acquistassi nell’app",
       "Qualsiasi specie e razza disponibile nell’app al momento della scelta",
       "Tutti i video, l’intera cronologia delle cure e il Certificato di responsabilità",
-      "Un buono stampabile con spazio per la tua dedica personale (compila a mano « Per » e « Da »)",
+      "Un buono stampabile con spazio per la tua dedica personale (compila a mano «Per» e «Da»)",
     ],
   },
   audience: {
@@ -62,11 +62,11 @@ export const it: GiftCopy = {
     heading: "Domande frequenti",
     items: [
       { q: "Per quanto tempo è valido il buono?", a: "Il buono è valido 12 mesi dall’acquisto. Una volta riscattato da un genitore, la sfida resta nell’account familiare e non scade. Le dodici settimane iniziano quando il genitore assegna la sfida a un animale nell’app, non al momento del riscatto." },
-      { q: "Posso chiedere il rimborso?", a: "Un buono non riscattato può essere rimborsato entro 14 giorni dall'acquisto. Un buono riscattato non è rimborsabile. Scriva a hello@petprep.si indicando il numero d'ordine. I suoi diritti di legge come consumatore restano invariati." },
+      { q: "Posso chiedere il rimborso?", a: "Un buono non riscattato può essere rimborsato entro 14 giorni dall’acquisto. Un buono riscattato non è rimborsabile. Scrivi a hello@petprep.si indicando il numero d’ordine. I tuoi diritti di legge come consumatore restano invariati." },
       { q: "Su quali dispositivi funziona?", a: "L’app PetPrep è disponibile per iPhone e per gli smartphone Android. Il buono si riscatta su questo sito, con qualsiasi browser." },
       { q: "Mi serve un account?", a: "Non per acquistare e stampare il buono. Per riscattarlo la famiglia ha bisogno di un account genitore nell’app: sul sito accedi come nell’app e poi inserisci il codice." },
       { q: "Il buono vale anche per un gatto?", a: "Sì. Oggi l’app ha cani e gatti e il buono vale per qualsiasi specie e razza disponibile nell’app al momento della scelta." },
-      { q: "Dopo la sfida arriverà un animale vero?", a: "Il buono non lo promette e non lo include. La sfida aiuta la famiglia a rispondere onestamente alla domanda se è pronta. La decisione su un animale vero resta vostra." },
+      { q: "Dopo la sfida arriverà un animale vero?", a: "Il buono non lo promette e non lo include. La sfida aiuta la famiglia a rispondere onestamente alla domanda se è pronta. La decisione su un animale vero resta alla tua famiglia." },
       { q: "Che cosa succede al codice quando lo digito?", a: "Nella pagina di stampa del buono il codice non viene salvato né inviato da nessuna parte: il buono viene disegnato nel tuo browser. Il codice viene verificato solo al momento del riscatto." },
     ],
   },
@@ -76,17 +76,17 @@ export const it: GiftCopy = {
     button: "Riscatta un buono",
   },
   kit: {
-    text: "Ogni buono include il kit stampabile « La promessa dell’animale ».",
+    text: "Ogni buono include il kit stampabile «La promessa dell’animale».",
     button: "Scopri il kit",
   },
   thanks: {
     meta: { title: "Grazie: stampa il tuo buono", description: "Incolla il codice ricevuto via e-mail e stampa il buono regalo." },
     eyebrow: "Buono regalo",
     title: "Grazie. Stampiamo il buono.",
-    lead: "Il suo codice è qui sotto, pronto da stampare. Glielo abbiamo inviato anche via e-mail, insieme al buono da stampare.",
+    lead: "Il tuo codice è qui sotto, pronto da stampare. Te lo abbiamo inviato anche via e-mail, insieme al buono da stampare.",
     codeLabel: "Codice ricevuto via e-mail",
     codeHint: "Incolla il codice esattamente come appare nell’e-mail.",
-    codeInvalid: "Questo codice non sembra corretto. È composto tra 8 e 64 lettere, cifre e trattini.",
+    codeInvalid: "Questo codice non sembra corretto. È composto da 8 a 64 lettere, cifre e trattini.",
     print: "Stampa il buono",
     privacy: "Il codice resta nel tuo browser. Non lo salviamo, non lo inviamo a un server e non lo mettiamo nell’indirizzo della pagina. Quando chiudi la pagina, sparisce.",
     previewHeading: "Anteprima del buono",

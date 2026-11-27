@@ -25,7 +25,7 @@ export const it: KitCopy = {
     notSure: "Non lo so",
     no: "No",
     licence: "Stampa tutte le copie che servono alla tua famiglia. Per favore, non condividere né rivendere il file.",
-    sampleFoot: "Questa è una pagina del kit « La promessa dell’animale ». Il kit completo, con la conversazione in famiglia, la tabella di quattro settimane e altro: petprep.si/it/promessa-animale",
+    sampleFoot: "Questa è una pagina del kit «La promessa dell’animale». Il kit completo, con la conversazione in famiglia, la tabella di quattro settimane e altro: petprep.si/it/promessa-animale",
   },
   cover: {
     kicker: "Kit stampabile per le famiglie",
@@ -41,7 +41,7 @@ export const it: KitCopy = {
       "Non ti dice se tuo figlio o tua figlia è pronto e non dà alcun punteggio.",
       "Non sostituisce il parere di un veterinario, di un rifugio o di un medico.",
       "Non sceglie al posto tuo una specie o una razza.",
-      "Non promette che un animale sia la decisione giusta. A volte il risultato migliore è « non ancora ».",
+      "Non promette che un animale sia la decisione giusta. A volte il risultato migliore è «non ancora».",
     ],
     insideHeading: "All’interno",
     mascot: "Curio, la mascotte di PetPrep",
@@ -59,7 +59,7 @@ export const it: KitCopy = {
       "Quale adulto è responsabile dell’animale e come segnala ciò che è stato dimenticato?",
       "Dove, in casa, dormirà, mangerà e riposerà l’animale? Dove non potrà andare?",
       "Che cosa pensano tutti quelli che vivono in casa, compresi quelli che non sono molto convinti?",
-      "Quanto dura « per sempre »? Immaginate che l’animale sia ancora con voi tra molti anni. Com’è allora la vostra famiglia e che cosa deve reggere perché siate ancora contenti?",
+      "Quanto dura «per sempre»? Immaginate che l’animale sia ancora con voi tra molti anni. Com’è allora la vostra famiglia e che cosa deve reggere perché siate ancora contenti?",
     ],
     outro: "Non ci sono risposte giuste. Se una domanda fa tacere tutti, è quella a cui dedicare più tempo.",
   },
@@ -140,9 +140,9 @@ export const it: KitCopy = {
     readHeading: "Come leggere le risposte",
     read: [
       "Non c’è alcun punteggio né una soglia da superare.",
-      "Soprattutto « sì »: parlate di ciò che permetterà di mantenere le cose così quando la novità sarà passata.",
-      "Qualche « non lo so »: sono i vostri compiti a casa. Informatevi e poi rispondete di nuovo.",
-      "Un « no » è un’informazione, non un fallimento. Può voler dire « non ancora », « un altro animale » o « no » e basta, e ognuna di queste è un buon risultato di una decisione ponderata.",
+      "Soprattutto «sì»: parlate di ciò che permetterà di mantenere le cose così quando la novità sarà passata.",
+      "Qualche «non lo so»: sono i vostri compiti a casa. Informatevi e poi rispondete di nuovo.",
+      "Un «no» è un’informazione, non un fallimento. Può voler dire «non ancora», «un altro animale» o «no» e basta, e ognuna di queste è un buon risultato di una decisione ponderata.",
     ],
     pointer: "Le domande su salute, allergie o su ciò di cui un animale ha bisogno spettano a un medico, a un veterinario o a un rifugio, non a questa pagina.",
   },
@@ -172,7 +172,7 @@ export const it: KitCopy = {
   },
 };
 
-/** Pagina di vendita del kit « La promessa dell’animale » (testo originale; il testo del kit è sopra). */
+/** Pagina di vendita del kit «La promessa dell’animale» (testo originale; il testo del kit è sopra). */
 export const itSales: KitSales = {
   eyebrow: "Kit stampabile",
   title: "La promessa dell’animale",
@@ -184,8 +184,8 @@ export const itSales: KitSales = {
   buy: "Acquista il kit",
   sample: "Ricevi la pagina di prova gratuita",
   sampleHeading: "Prova prima la pagina della Promessa",
-  sampleText: "La Promessa stessa, come pagina A4 gratuita: l'accordo tra un bambino e gli adulti, con i compiti di ogni giorno, le vostre regole e lo spazio per la firma di tutti. Inserisca il suo indirizzo e-mail e la scarichi subito.",
-  sampleNote: "Usiamo il suo indirizzo solo per le novità di PetPrep, se spunta la casella. Può annullare l'iscrizione in qualsiasi momento.",
+  sampleText: "La Promessa stessa, come pagina A4 gratuita: l’accordo tra un bambino e gli adulti, con i compiti di ogni giorno, le vostre regole e lo spazio per la firma di tutti. Inserisci il tuo indirizzo e-mail e scaricala subito.",
+  sampleNote: "Usiamo il tuo indirizzo solo per le novità di PetPrep, se spunti la casella. Puoi annullare l’iscrizione in qualsiasi momento.",
   insideHeading: "Che cosa contiene",
   insideIntro: "Stampa tutte le copie che ti servono. Tutto si compila a mano, quindi nulla su tuo figlio o tua figlia viene digitato in un modulo o inviato da qualche parte.",
   previewHeading: "Uno sguardo a tre pagine",
@@ -200,7 +200,7 @@ export const itSales: KitSales = {
   notItems: [
     "Non è un test e non dà alcun punteggio. Non può dirti se tuo figlio o tua figlia è pronto.",
     "Non contiene consigli sulla salute né regole sulle razze. Per quelli, chiedi a un veterinario o a un rifugio.",
-    "Non promette che un animale sia la decisione giusta. Anche « non ancora » è una buona risposta.",
+    "Non promette che un animale sia la decisione giusta. Anche «non ancora» è una buona risposta.",
   ],
   giftText: "Cerchi invece un regalo? La sfida PetPrep di 12 settimane si può regalare con un buono.",
   giftLink: "Scopri il buono regalo",

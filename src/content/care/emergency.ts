@@ -259,7 +259,7 @@ export const emergencyCopy: Record<Locale, {
     vetsIntro: "A casa o in vacanza: scegli il Paese, filtra per regione o località, oppure mostra solo le cliniche aperte 24 ore su 24. Ogni scheda rimanda alla pagina da cui l’abbiamo presa. Chiama prima di andare, perché gli orari possono cambiare.",
     vetsStats: ["Veterinari","Turni di guardia","Linee antiveleni","Paesi"],
     vets: {
-      chooseCountry: "Scegli un paese", choosePrompt: "Scegli un paese qui sopra per vedere i suoi veterinari, i turni di guardia e le linee antiveleni.", typeToSearch: "Scrivi per cercare…", noMatch: "Nessun risultato",
+      chooseCountry: "Scegli un Paese", choosePrompt: "Scegli un Paese qui sopra per vedere i suoi veterinari, i turni di guardia e le linee antiveleni.", typeToSearch: "Scrivi per cercare…", noMatch: "Nessun risultato",
       country: "Paese", all: "Tutti i Paesi", region: "Regione", allRegions: "Tutte le regioni", search: "Località o nome",
       searchPlaceholder: "ad es. Split, Málaga, Maribor", only24h: "Solo 24\u00a0h", results: "Risultati: {n}",
       none: "Nessun risultato: prova con un’altra località o un’altra regione.", h24: "24\u00a0h", dutyRota: "Turni di guardia", poisonLine: "Centro antiveleni",
