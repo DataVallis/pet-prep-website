@@ -1770,6 +1770,30 @@ const nl: RegistryCopy = {
       ],
       sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
     },
+    smooth_fox_terrier: {
+      aka: "Foxterriër gladhaar, Gladharige foxterriër, Foxie, Foxterriër",
+      text: [
+        "De foxterriër gladhaar is een actieve en levendige terriër uit Groot-Brittannië (FCI-groep 3, terriërs; sectie grote en middelgrote terriërs) – de gladharige variëteit van de foxterriër, niet de toy fox terrier. De FCI-standaard vraagt om stevige botten en kracht in een klein formaat, nooit lomp of grof, met een rechte, vlak liggende, gladde, harde en dichte vacht, overwegend wit – helemaal wit, of wit met tan, zwart-en-tan of zwarte aftekeningen – en een schofthoogte van hoogstens 39 cm bij reuen, met iets kleinere teven. De FCI-standaard noemt een gewicht van 7,5–8 kg voor reuen en 7–7,5 kg voor teven. Een hond van dit formaat is volgroeid rond 9–12 maanden (PetMD), en Dogs Trust noemt een levensverwachting van meestal meer dan 12 jaar (PetMD: 10–13 jaar).",
+        "De FCI-standaard noemt het ras vriendelijk, open en onbevreesd. De PDSA raadt minstens een uur beweging per dag aan, WebMD 1 à 2 uur. PetMD zegt dat foxterriërs gladhaar goed met kinderen overweg kunnen, ideale gezinshonden zijn en ondanks hun korte vacht matig verharen; het advies is eens per week borstelen, en vroege socialisatie met andere honden en katten is volgens PetMD cruciaal. WebMD noemt ze geweldige maatjes voor kinderen, maar adviseert de omgang goed in de gaten te houden, meldt een sterk jachtinstinct en raadt aan dagelijks de tanden te poetsen en wekelijks de oren te controleren.",
+      ],
+      sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
+    },
+    bearded_collie: {
+      aka: "Beardie, Highland collie, Hairy Mou’ed Collie, Mountain collie",
+      text: [
+        "De bearded collie is een slanke, actieve herdershond uit Groot-Brittannië; de FCI rekent hem tot groep 1, sectie herdershonden. De FCI-standaard beschrijft een stevig gebouwde hond die er niet te zwaar uit mag zien, met een heldere, onderzoekende blik en een ruige dubbele vacht – een zachte, wollige ondervacht onder een vlak liggend, hard dekhaar dat niet getrimd mag worden – in leigrijs, roodbruin (fawn), zwart, blauw, alle tinten grijs, bruin of zandkleurig, met of zonder witte aftekeningen, nooit merle. De FCI-standaard noemt een schofthoogte van 53–56 cm voor reuen en 51–53 cm voor teven, maar geen gewicht; de PDSA noemt een gemiddeld gewicht van 20–25 kg, en een hond van dit formaat is volgroeid rond 12–15 maanden (PetMD-grootteklasse). Een groot Brits onderzoek uit 2024 (McMillan e.a., in de tabel van Dogs Trust) noemt een mediane levensverwachting van 13,9 jaar; de Royal Kennel Club noemt een levensduur van meer dan 12 jaar.",
+        "De Royal Kennel Club raadt tot een uur beweging per dag aan en dagelijkse vachtverzorging, en meldt dat het ras verhaart en past bij een groot huis met een grote tuin. De PDSA noemt beardies zachtaardige, lieve, vrolijke honden en perfecte gezinshonden, maar zegt dat ze door hun sterke hoedinstinct thuis kunnen proberen volwassenen en kinderen te hoeden. PetMD zegt dat ze zachtaardig zijn met kinderen, al moet elk contact tussen kinderen en honden onder toezicht gebeuren, en raadt aan de vacht dagelijks te borstelen en de pup te socialiseren vanaf de dag dat hij thuiskomt. WebMD schrijft dat ze sociaal zijn en angstig kunnen worden als ze lang alleen blijven, lichamelijke en geestelijke uitdaging nodig hebben en geen hypoallergeen ras zijn.",
+      ],
+      sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
+    },
+    saluki: {
+      aka: "Perzische windhond, Gazelle hound, Arabische windhond",
+      text: [
+        "De saluki is een slanke, razendsnelle windhond uit het Midden-Oosten; de FCI rekent hem tot groep 10, sectie langharige of gefranjerde windhonden; het ras valt onder het FCI-patronaat. De FCI-standaard beschrijft een hond die een indruk van gratie en symmetrie, van grote snelheid en uithoudingsvermogen wekt, met een gladde, zachte, zijdeachtige vacht – bij de gefranjerde variant bevederd op de oren, de poten, de achterkant van de dijen en de staart – en laat elke kleur of kleurencombinatie toe, waarbij gestroomde tekening ongewenst is. De FCI-standaard noemt een gemiddelde schofthoogte van 58–71 cm, met naar verhouding kleinere teven, maar geen gewicht; de PDSA noemt een gemiddeld gewicht van 16–29,5 kg en een gemiddelde levensverwachting van meer dan 10 jaar. Als grote hond is hij meestal volgroeid rond 15–18 maanden (PetMD).",
+        "De PDSA zegt dat salukis elke dag meer dan 2 uur beweging nodig hebben, bij voorkeur op een afgesloten terrein, omdat ze een sterk jachtinstinct hebben en terugroepen niet altijd makkelijk is; WebMD adviseert ze altijd aan te lijnen en achter een hoog hek te houden. PetMD raadt aan een of twee keer per week even te borstelen en zegt dat salukis niet de hele dag alleen willen zijn en verlatingsangst kunnen ontwikkelen; WebMD raadt aan dagelijks hun tanden te poetsen. PetMD zegt dat ze niet het kindvriendelijkste ras zijn omdat ze graag een rustig huis hebben, WebMD dat ze beter af zijn in gezinnen met oudere kinderen, en de PDSA vraagt eigenaren rekening te houden met hun jachtinstinct bij andere huisdieren.",
+      ],
+      sources: ["S1085", "S1086", "S1087", "S1088", "S10"],
+    },
   },
 };
 

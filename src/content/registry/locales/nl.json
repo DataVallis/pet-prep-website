@@ -1818,6 +1818,60 @@
         "Welshie",
         "Welsh Starter"
       ]
+    },
+    "smooth_fox_terrier": {
+      "name": "Foxterriër gladhaar",
+      "slug": "foxterrier-gladhaar",
+      "synonyms": [
+        "Gladharige foxterriër",
+        "Foxterriër kortharig",
+        "Fox terrier gladhaar",
+        "Smooth fox terrier",
+        "Foxie"
+      ],
+      "colours": {
+        "tricolour": "Driekleur",
+        "white-tan": "Wit met tan",
+        "white-black": "Wit met zwart",
+        "white": "Helemaal wit"
+      }
+    },
+    "bearded_collie": {
+      "name": "Bearded collie",
+      "slug": "bearded-collie",
+      "synonyms": [
+        "Beardie",
+        "Highland collie",
+        "Hairy Mou’ed Collie"
+      ],
+      "colours": {
+        "grey-white": "Leigrijs-wit",
+        "black-white": "Zwart-wit",
+        "blue-white": "Blauw-wit",
+        "brown-white": "Bruin-wit",
+        "fawn-white": "Roodbruin (fawn) met wit",
+        "sandy-white": "Zandkleurig met wit"
+      }
+    },
+    "saluki": {
+      "name": "Saluki",
+      "slug": "saluki",
+      "synonyms": [
+        "Perzische windhond",
+        "Gazelle hound",
+        "Arabische windhond",
+        "Saluki windhond"
+      ],
+      "colours": {
+        "fawn": "Fawn",
+        "cream": "Crème",
+        "white": "Wit",
+        "golden": "Goudkleurig",
+        "red": "Rood",
+        "grizzle-tan": "Grizzle met tan",
+        "tricolour": "Driekleur",
+        "black-tan": "Zwart met tan"
+      }
     }
   },
   "suitability_labels": {
