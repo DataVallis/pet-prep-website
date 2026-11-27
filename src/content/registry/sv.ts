@@ -1060,6 +1060,30 @@ const sv: RegistryCopy = {
       ],
       sources: ["S1061", "S1060", "S10"],
     },
+    welsh_springer_spaniel: {
+      aka: "Welsh springer, Welsh Starter",
+      text: [
+        "Welsh springer spaniel är en stötande hund från Storbritannien; FCI räknar den till grupp 8, stötande hundar. FCI-standarden beskriver en symmetrisk och kompakt hund som inte är högställd och som är byggd för uthållighet och hårt arbete. Pälsen är rak, slät och silkeslen, och den enda tillåtna färgen är rikt röd och vit. Hunden är stark, glad och mycket aktiv, med ett vänligt sinnelag. Enligt FCI-standarden är mankhöjden cirka 48 cm för hanar och 46 cm för tikar. PetMD anger en vikt på 35–55 pund (cirka 16–25 kg), och en hund i den här storleksklassen är fullvuxen vid ungefär 12–15 månader (PetMD). En stor brittisk studie från 2024 (McMillan m.fl., i Dogs Trusts tabell) anger en förväntad medianlivslängd på 14,0 år, och Royal Kennel Club anger en livslängd på över 10 år.",
+        "Royal Kennel Club rekommenderar mer än två timmars motion om dagen och pälsvård mer än en gång i veckan, och noterar att rasen fäller. Enligt VCA är pälsvården inte svår: det räcker med borstning en eller två gånger i veckan. PetMD beskriver welsh springer spaniel som en kärleksfull, trogen och jämnlynt familjehund. PetMD säger att jaktinstinkten är stark, så hunden bör alltid hållas kopplad eller på en säkert inhägnad yta och passar inte i hem med smådjur. Tidig socialisering och konsekvent träning är särskilt viktiga. WebMD säger att rasen fungerar bra med barn och rekommenderar daglig tandborstning samt bad och kloklippning en gång i månaden.",
+      ],
+      sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
+    },
+    smooth_fox_terrier: {
+      aka: "Slät foxterrier, Smooth fox terrier",
+      text: [
+        "Foxterrier slät är en aktiv och livlig terrier från Storbritannien (FCI grupp 3, terrier; sektionen stora och medelstora terrier) – den släthåriga varianten av strävhårig foxterrier och inte samma ras som toy fox terrier. FCI-standarden kräver benstomme och styrka i ett litet format, utan att hunden blir klumpig eller grov, och en rak, slät, hård och tät päls. Vitt ska dominera: hunden kan vara helvit eller vit med tanfärgade, svart och tanfärgade eller svarta teckningar. Mankhöjden får inte överstiga 39 cm för hanar; tikar är något mindre. Enligt FCI-standarden väger hanar 7,5–8 kg och tikar 7–7,5 kg. En hund i den här storleksklassen är fullvuxen vid ungefär 9–12 månader (PetMD). Dogs Trust anger en livslängd på vanligtvis över 12 år (PetMD: 10–13 år).",
+        "FCI-standarden kallar rasen vänlig, tillmötesgående och orädd. PDSA rekommenderar minst en timmes motion om dagen och WebMD 1–2 timmar. Enligt PetMD kommer släthåriga foxterrier bra överens med barn och är idealiska familjehundar. Trots den korta pälsen fäller de måttligt. PetMD rekommenderar borstning en gång i veckan och menar att tidig socialisering med andra hundar och katter är avgörande. WebMD kallar dem ett fint sällskap för barn men råder föräldrar att hålla uppsikt över samspelet. Enligt WebMD är jaktinstinkten stark, och sajten rekommenderar daglig tandborstning och kontroll av öronen varje vecka.",
+      ],
+      sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
+    },
+    bearded_collie: {
+      aka: "Beardie, Highland Collie, Hairy Mou'ed Collie, Mountain Collie",
+      text: [
+        "Bearded collie är en slank, aktiv vallhund från Storbritannien; FCI räknar den till grupp 1, vall- och boskapshundar. FCI-standarden beskriver en kraftigt byggd hund som inte bör se för tung ut, med ett vaket, frågande uttryck och en rufsig dubbelpäls med mjuk, yvig underull och slät, sträv ytterpäls; pälsen får inte trimmas. Färgerna är skiffergrå, rödaktig fawn, svart, blå samt alla nyanser av grått, brunt och sandfärgat, med eller utan vita tecken men aldrig merle. Enligt FCI-standarden är mankhöjden 53–56 cm för hanar och 51–53 cm för tikar, men någon vikt anges inte. PDSA anger en genomsnittsvikt på 20–25 kg, och en hund i den här storleksklassen är fullvuxen vid ungefär 12–15 månader (PetMD). En stor brittisk studie från 2024 (McMillan m.fl., i Dogs Trusts tabell) anger en förväntad medianlivslängd på 13,9 år, och Royal Kennel Club anger en livslängd på över 12 år.",
+        "Royal Kennel Club rekommenderar upp till en timmes motion om dagen och daglig pälsvård. Klubben noterar att rasen fäller och att den passar i ett stort hus med stor trädgård. PDSA kallar beardies milda, älskvärda och glada hundar och perfekta familjehundar, men säger att den starka vallinstinkten kan göra att de försöker valla både vuxna och barn hemma. Enligt PetMD är de milda mot barn, även om allt samspel mellan barn och hundar måste ske under uppsikt. PetMD rekommenderar daglig borstning och att valpen socialiseras redan från dagen den kommer hem. WebMD beskriver beardies som sociala hundar som kan bli oroliga om de lämnas ensamma länge och som behöver både fysisk och mental stimulans. Enligt WebMD är rasen inte allergivänlig.",
+      ],
+      sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, Finsk lapphund",
       text: [
