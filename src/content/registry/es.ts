@@ -1753,6 +1753,14 @@ const es: RegistryCopy = {
       ],
       sources: ["S1003", "S1004", "S1006", "S1007", "S10"],
     },
+    welsh_springer_spaniel: {
+      aka: "Springer spaniel galés, Welsh Springer, Welshie, Welsh Starter, Welsh Springer Spaniel",
+      text: [
+        "El springer spaniel galés es un perro de caza originario de Gran Bretaña, especializado en levantar la pieza; la FCI lo incluye en el grupo 8, entre los perros levantadores de caza. El estándar de la FCI describe un perro simétrico y compacto, sin exceso de alzada, hecho para la resistencia y el trabajo duro, con un pelaje liso, plano y sedoso que solo admite el rojo intenso y blanco, y un carácter vigoroso, alegre y muy activo, de temperamento bondadoso. El estándar de la FCI fija una altura de unos 48 cm en los machos y 46 cm en las hembras; PetMD indica un peso de 35–55 libras (unos 16–25 kg). Un perro de este tamaño alcanza su desarrollo adulto hacia los 12–15 meses (según la categoría de tamaño de PetMD). Un gran estudio británico publicado en 2024 (McMillan et al., en la tabla de Dogs Trust) halló una mediana de esperanza de vida de 14,0 años; el Royal Kennel Club la sitúa por encima de los 10 años.",
+        "El Royal Kennel Club recomienda más de dos horas de ejercicio al día y cuidados del pelaje más de una vez por semana, y señala que la raza muda el pelo. VCA dice que cuidarle el pelaje no es difícil, con un cepillado una o dos veces por semana. PetMD describe a los springer galeses como perros de familia cariñosos, leales y de carácter equilibrado; añade que su fuerte instinto de presa obliga a llevarlos siempre con correa o en un espacio bien vallado, que no encajan en hogares con animales pequeños y que la socialización temprana y un adiestramiento constante son especialmente importantes. WebMD dice que son buenos con los niños y recomienda cepillarles los dientes a diario, y bañarlos y cortarles las uñas una vez al mes.",
+      ],
+      sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
+    },
   },
 };
 
