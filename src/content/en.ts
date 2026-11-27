@@ -200,6 +200,9 @@ const en: Dictionary = {
         { title: "Respects school and sleep", text: "Quiet hours pause reminders. A meal that falls during school is yours, not your child's." },
         { title: "Real consequences, gently", text: "Neglect means a vet visit or the shelter — never scary, always with a fresh start." },
         { title: "One of a kind", text: "Every pet gets its own coat, markings and eyes — photorealistic and never the same twice." },
+        { title: "It learns", text: "A short training session a day — sit, come, stay. Every breed learns at its own pace." },
+        { title: "Care for its breed", text: "Brushing, teeth, claws or ears — only where a source says how often the breed needs it." },
+        { title: "Wishes", text: "Your child can ask for a bed, a toy or treats for the pet. You decide; items are looks only." },
       ],
     },
     parents: {
@@ -280,12 +283,12 @@ const en: Dictionary = {
           type: "steps",
           heading: "From first tap to certificate",
           items: [
-            { title: "The parent creates the family", text: "You register with your email (Apple and Google sign-in are coming). Add each child with a nickname and, optionally, a birth year. That is all we ask about your child." },
+            { title: "The parent creates the family", text: "You register with Google, Apple or your email. Add each child with a nickname and, optionally, a birth year. That is all we ask about your child." },
             { title: "You choose the pet", text: "Pick the breed (the mixed breed is free), where the pet comes from — adopted from a shelter or bought from a breeder — and its age on arrival: puppy, young, adult or senior." },
             { title: "Your child logs in with a code", text: "You get a 6-digit code valid for 15 minutes. Your child types it on their phone — no email and no password. A lost phone? Sign them out of every device with one tap." },
             { title: "The Responsibility Contract", text: "Your child signs a promise with a finger. Signing is the pet's birth: needs start counting from that moment, so nothing is lost if they sign later." },
-            { title: "Twelve weeks of care", text: "Feeding in the right time windows, fresh water, cleaning up and a daily walk with real steps. As the pet grows, its needs change." },
-            { title: "The certificate", text: "After 12 weeks the pet turns one. Your child receives a Certificate of Responsibility with their Care Score — or you both learn, safely, that now is not the time." },
+            { title: "Twelve weeks of care", text: "Feeding in the right time windows, fresh water, cleaning up and a daily walk with real steps — plus training, play and the grooming the breed needs. As the pet grows, its needs change." },
+            { title: "The certificate", text: "After 12 weeks your child receives a Certificate of Responsibility with their Care Score — or you both learn, safely, that now is not the time." },
           ],
         },
         {
@@ -304,7 +307,7 @@ const en: Dictionary = {
           head: ["Need", "How often", "If it is forgotten"],
           rows: [
             ["Food", "Morning (6–10) and evening (17–21), once per window", "Hungry after about 12.5 hours"],
-            ["Water", "3 times a day, at least 3 hours apart", "Thirsty after about 10 hours"],
+            ["Water", "When the bowl runs low, at least 3 hours apart", "Thirsty after about 10 hours"],
             ["Walk", "6,000 real steps (puppies start at 2,000)", "No walk at all → ill the next morning"],
             ["Cleaning", "When the pet makes a mess — never during quiet hours", "No food or water until it is clean"],
           ],
@@ -324,9 +327,22 @@ const en: Dictionary = {
           ],
         },
         {
+          type: "cards",
+          heading: "More than chores",
+          columns: 3,
+          items: [
+            { title: "Dog school", text: "A short training session a day: sit, come, stay and going outside. Each breed learns at its own pace, and you see which commands your pet knows." },
+            { title: "Play and cuddles", text: "In the 12-week challenge your child can play ball or cuddle the pet whenever they like. It lifts the pet's mood, never the score." },
+            { title: "Care for its breed", text: "Brushing, teeth, claws, ears or face folds — only where a source says how often. Trips to the groomer and baths are reminders for you." },
+            { title: "Cats too", text: "A cat chases a feather wand instead of going for a walk, and its litter tray needs scooping and a weekly change." },
+            { title: "A name and an album", text: "You can give the pet a name. Its photos grow with it in an album, and a puppy even celebrates its first birthday." },
+            { title: "Wishes", text: "Your child can ask for a bed, bowls, a toy or treats for the pet. You decide. Items are looks only and never change the game." },
+          ],
+        },
+        {
           type: "callout",
           title: "Failing is a result too.",
-          text: "If the pet ends up at the virtual shelter, you have learned something valuable — before a real animal paid the price. You can start again, also with an easier breed.",
+          text: "If the pet ends up at the virtual shelter, you have learned something valuable — before a real animal paid the price. You can start again.",
           tone: "dark",
         },
       ],
@@ -358,7 +374,7 @@ const en: Dictionary = {
           heading: "The Care Score",
           paragraphs: [
             "Care Score = routines done on time ÷ routines expected × 100, minus 10 points for each illness, between 0 and 100.",
-            "A routine is one concrete task: each feeding window, each of the three water refills, cleaning every mess within two hours (school and sleep do not count), and reaching the daily walk goal.",
+            "A routine is one concrete task: each feeding window, each water refill, cleaning every mess within two hours (school and sleep do not count), reaching the daily walk goal, the daily training session and the grooming the breed needs. A cat has play sessions and its litter tray instead of the walk.",
             "Time when you paused the game, the pet was at the vet, or before the contract was signed never counts against your child. Past days are frozen, so a score cannot be rewritten later.",
             "Siblings sharing a pet split every routine fairly. Only a child's own actions count — if one does everything, they score 100 and the other 0.",
           ],
@@ -376,11 +392,24 @@ const en: Dictionary = {
           type: "list",
           heading: "You stay in control",
           items: [
-            "Quiet hours for school and sleep, in your local time — also across daylight saving changes.",
+            "Quiet hours for school and sleep, and the time zone — for the whole family or separately for each pet, also across daylight saving changes.",
             "Pause the game for any pet with one confirmed tap; your child's screen locks live.",
             "Invite the other parent with a one-time code; both of you see every child and every pet.",
             "Sign a child out of all devices if a phone is lost; codes are single-use and expire in 15 minutes.",
             "Export all your family's data as a file, or delete a child's profile or your whole account instantly from the app.",
+          ],
+        },
+        {
+          type: "cards",
+          heading: "Also in your app",
+          columns: 3,
+          items: [
+            { title: "Your child's wishes", text: "See what your child asked for and choose Buy or Not now. Buying opens once the items are in the App Store and Google Play." },
+            { title: "Care reminders", text: "For breeds that need a groomer or a bath, you get a reminder with a date. Mark it done; it never affects your child's score." },
+            { title: "A name for the pet", text: "Give the pet a name and change it anytime — for example to match the real pet you bring home later." },
+            { title: "One phone for the family", text: "Play as switches the phone to your child's game. Getting back to the parent view always needs your sign-in." },
+            { title: "Sign in your way", text: "Google, Apple or email and password. Children always log in with a code." },
+            { title: "Upgrade a free pet", text: "Start the 12-week challenge with the free pet your child already has, and choose whether the Care Score so far is kept." },
           ],
         },
         {
@@ -463,7 +492,7 @@ const en: Dictionary = {
             ["Treats, pack of 10", "€2.99"],
             ["Welcome bundle: bed + bowls + toy", "€15.99 (instead of €17.97)"],
           ],
-          note: "Wishes are coming with the next app update; they can be bought once the items are available in the App Store and Google Play. Prices are for Slovenia; the store shows the price for your country.",
+          note: "Your child can already ask for things in the app; buying opens once the items are available in the App Store and Google Play. Prices are for Slovenia; the store shows the price for your country.",
         },
         {
           type: "faq",
@@ -496,7 +525,7 @@ const en: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "What age is PetPrep for?", a: "For children it is designed for ages about 7 to 12, and works well up to 16. Adults use it too, to test whether a particular breed is really for them before they buy or adopt." },
+            { q: "Who is PetPrep for?", a: "For any child who keeps asking for a pet, and for parents who want to know whether the promise will hold. Adults use it too, to test whether a particular breed is really for them before they buy or adopt." },
             { q: "Can I use PetPrep on my own, without kids?", a: "Yes. Create an account as a parent and add yourself as the carer profile — a nickname is enough, leave the birth year empty. Choose the breed, create a 6-digit code, then on the same phone or another one choose “I'm a kid” and type the code — that is how you become the carer. Because it will be a family dog, you can add your partner or children later so you care for it together. The price is the same as for families." },
             { q: "How much time does it take each day?", a: "A few minutes for food, water and cleaning — plus the walk a real dog would need anyway." },
             { q: "Does the app track my child's location?", a: "No. For walks it counts steps only. If you allow it, it reads them from Apple Health (iPhone) or Health Connect (Android) — read-only and steps only; where available it also uses the phone's motion sensor. It asks for permission in the walk screen. GPS is not used." },
@@ -506,8 +535,13 @@ const en: Dictionary = {
             { q: "What about school and bedtime?", a: "Set quiet hours. The pet slows down, nothing is sent and meals that fall entirely in quiet hours are handled by you." },
             { q: "Is it scary for children?", a: "No. Consequences are real but gentle: the pet goes to the vet or the shelter, never anything graphic, and there is always a fresh start." },
             { q: "Which animals are available?", a: "[Dogs](species:dog) and [cats](species:cat) today: a free mixed-breed dog and domestic cat, and the 12-week challenge with either of them or with any breed in the [animal register](page:animals), which also lists their sourced needs. More species are planned." },
-            { q: "Which languages?", a: "English and Slovenian today. More languages are coming as PetPrep launches in new countries." },
+            { q: "Which languages?", a: "The app is in English and Slovenian; this website is in 15 languages. More app languages are coming as PetPrep launches in new countries." },
             { q: "What happens after we get a real pet?", a: "PetPrep can become an AI assistant for your real pet. This part is in development." },
+            { q: "Can my child play with the pet?", a: "Yes. In the 12-week challenge your child can play ball or cuddle the pet whenever they like, and a cat chases a feather wand. Play lifts the pet's mood but never changes the Care Score." },
+            { q: "Can the pet have a name?", a: "Yes. A parent can give it a name and change it anytime. The name shows on your child's screen, in the album and on the certificate." },
+            { q: "Can a parent and a child share one phone?", a: "Yes. In the parent app, tap Play as next to your child and the phone switches to their game. Getting back to the parent view needs your sign-in. On a shared phone, steps count only while the child's profile is active." },
+            { q: "What if we travel to another time zone?", a: "You can change the time zone for the whole family or for each pet, so meals and quiet hours follow the clock where you are. The app suggests it when your phone is in another time zone." },
+            { q: "What does a cat do instead of a walk?", a: "A cat gets play sessions with a feather wand, and its litter tray needs scooping and a weekly change. Long-haired breeds also need brushing." },
           ],
         },
       ],
@@ -1244,7 +1278,22 @@ const en: Dictionary = {
       title: "For kids who want a pet.",
       lead: "Colouring pages to print, Curio and #walkyourpet — for kids and parents getting ready for a pet together.",
       hero: { src: "/curio/curio-waving.webp", alt: "Curio, the PetPrep mascot: a soft graphite cube with big white eyes, a small raspberry nose and a mint collar, waving.", width: 720, height: 948 },
-      blocks: [{ type: "kidsHub" }],
+      blocks: [
+        { type: "kidsHub" },
+        {
+          type: "cards",
+          heading: "In the PetPrep app",
+          columns: 3,
+          items: [
+            { title: "Dog school", text: "Teach your pet to sit, come and stay. Praise it at just the right moment!" },
+            { title: "Play and cuddles", text: "Throw the ball, stroke your pet, or wave a feather wand for your cat." },
+            { title: "Wishes", text: "Would your pet like a new bed or a toy? Ask your parents in the app." },
+            { title: "Your pet's album", text: "Watch your pet grow up in photos. A puppy even has its first birthday." },
+            { title: "Real walks", text: "Your walks count real steps. Your pet needs them — and they are fun for you too." },
+            { title: "A promise you sign", text: "Before your pet arrives, you sign a promise with your finger." },
+          ],
+        },
+      ],
     },
     walkyourpet: {
       meta: {

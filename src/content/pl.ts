@@ -201,6 +201,9 @@ const pl: Dictionary = {
         { title: "Szanuje szkołę i sen", text: "Godziny ciszy wstrzymują przypomnienia. Posiłek, który wypada w czasie lekcji, należy do ciebie, a nie do dziecka." },
         { title: "Prawdziwe konsekwencje, łagodnie", text: "Zaniedbanie oznacza wizytę u weterynarza albo schronisko – nigdy nic strasznego, zawsze z możliwością nowego początku." },
         { title: "Jedyne w swoim rodzaju", text: "Każde zwierzę ma własne umaszczenie, znaczenia i oczy – fotorealistyczne i niepowtarzalne." },
+        { title: "Uczy się", text: "Krótkie ćwiczenie każdego dnia – siad, do mnie, waruj. Każda rasa uczy się we własnym tempie." },
+        { title: "Pielęgnacja według rasy", text: "Szczotkowanie, zęby, pazury lub uszy – tylko tam, gdzie źródło mówi, jak często potrzebuje tego rasa." },
+        { title: "Życzenia", text: "Dziecko może poprosić o legowisko, zabawkę lub smakołyki dla zwierzęcia. Decydujesz ty; rzeczy zmieniają tylko wygląd." },
       ],
     },
     parents: {
@@ -281,12 +284,12 @@ const pl: Dictionary = {
           type: "steps",
           heading: "Od pierwszego stuknięcia do certyfikatu",
           items: [
-            { title: "Rodzic zakłada rodzinę", text: "Rejestrujesz się, podając adres e-mail (logowanie przez Apple i Google pojawi się wkrótce). Każde dziecko dodajesz, podając pseudonim i opcjonalnie rok urodzenia. To wszystko, o co pytamy na temat twojego dziecka." },
+            { title: "Rodzic zakłada rodzinę", text: "Rejestrujesz się przez Google, Apple albo e-mail. Dodajesz każde dziecko z pseudonimem i opcjonalnie rokiem urodzenia. To wszystko, o co pytamy w sprawie dziecka." },
             { title: "Wybierasz zwierzę", text: "Wybierz rasę (mieszaniec jest za darmo), pochodzenie zwierzęcia – adoptowane ze schroniska albo z hodowli – i jego wiek w chwili przybycia: szczeniak, młody, dorosły lub senior." },
             { title: "Dziecko loguje się kodem", text: "Dostajesz 6-cyfrowy kod ważny 15 minut. Dziecko wpisuje go na swoim telefonie – bez e-maila i bez hasła. Telefon zginął? Jednym stuknięciem wylogujesz dziecko ze wszystkich urządzeń." },
             { title: "Umowa odpowiedzialności", text: "Dziecko podpisuje obietnicę palcem. Podpis to narodziny zwierzęcia: potrzeby zaczynają się liczyć od tej chwili, więc nic nie przepada, jeśli dziecko podpisze później." },
-            { title: "Dwanaście tygodni opieki", text: "Karmienie we właściwych porach, świeża woda, sprzątanie i codzienny spacer z prawdziwymi krokami. Gdy zwierzę rośnie, zmieniają się jego potrzeby." },
-            { title: "Certyfikat", text: "Po 12 tygodniach zwierzę kończy rok. Twoje dziecko otrzymuje Certyfikat odpowiedzialności ze swoim Care Score – albo oboje bezpiecznie przekonujecie się, że to jeszcze nie ten moment." },
+            { title: "Dwanaście tygodni opieki", text: "Karmienie w odpowiednich porach, świeża woda, sprzątanie i codzienny spacer z prawdziwymi krokami – do tego szkolenie, zabawa i pielęgnacja, jakiej potrzebuje rasa. Gdy zwierzę rośnie, jego potrzeby się zmieniają." },
+            { title: "Certyfikat", text: "Twoje dziecko otrzymuje Certyfikat odpowiedzialności ze swoim Care Score – albo oboje bezpiecznie przekonujecie się, że to jeszcze nie ten moment." },
           ],
         },
         {
@@ -305,7 +308,7 @@ const pl: Dictionary = {
           head: ["Potrzeba", "Jak często", "Jeśli się o niej zapomni"],
           rows: [
             ["Jedzenie", "Rano (6–10) i wieczorem (17–21), raz w każdym przedziale", "Głód po około 12,5 godziny"],
-            ["Woda", "3 razy dziennie, w odstępach co najmniej 3 godzin", "Pragnienie po około 10 godzinach"],
+            ["Woda", "Gdy miska pustoszeje, co najmniej 3 godziny odstępu", "Pragnienie po około 10 godzinach"],
             ["Spacer", "6000 prawdziwych kroków (szczeniaki zaczynają od 2000)", "Ani jednego spaceru → choroba następnego ranka"],
             ["Sprzątanie", "Gdy zwierzę nabałagani – nigdy w godzinach ciszy", "Ani jedzenia, ani wody, dopóki nie będzie posprzątane"],
           ],
@@ -325,9 +328,22 @@ const pl: Dictionary = {
           ],
         },
         {
+          type: "cards",
+          heading: "Więcej niż obowiązki",
+          columns: 3,
+          items: [
+            { title: "Szkoła dla psa", text: "Krótkie ćwiczenie każdego dnia: siad, do mnie, waruj i załatwianie się na dworze. Każda rasa uczy się we własnym tempie, a ty widzisz, jakie komendy zwierzę już zna." },
+            { title: "Zabawa i przytulanie", text: "W 12-tygodniowym wyzwaniu dziecko może bawić się piłką lub przytulać zwierzę, kiedy tylko chce. To poprawia nastrój zwierzęcia, nigdy wynik." },
+            { title: "Pielęgnacja według rasy", text: "Szczotkowanie, zęby, pazury, uszy lub fałdy na pyszczku – tylko tam, gdzie źródło mówi, jak często. Groomer i kąpiel to przypomnienia dla ciebie." },
+            { title: "Także koty", text: "Kot zamiast spaceru goni wędkę z piórkami, a jego kuwetę trzeba czyścić i raz w tygodniu wymieniać żwirek." },
+            { title: "Imię i album", text: "Możesz nadać zwierzęciu imię. Jego zdjęcia rosną razem z nim w albumie, a szczeniak obchodzi nawet swoje pierwsze urodziny." },
+            { title: "Życzenia", text: "Dziecko może poprosić o legowisko, miski, zabawkę lub smakołyki dla zwierzęcia. Decydujesz ty. Rzeczy zmieniają tylko wygląd, nigdy grę." },
+          ],
+        },
+        {
           type: "callout",
           title: "Porażka to też wynik.",
-          text: "Jeśli zwierzę trafi do wirtualnego schroniska, czegoś cennego się nauczyliście – zanim zapłaciło za to prawdziwe zwierzę. Możesz zacząć od nowa, także z łatwiejszą rasą.",
+          text: "Jeśli zwierzę trafi do wirtualnego schroniska, nauczyliście się czegoś cennego – zanim cenę zapłaciło prawdziwe zwierzę. Możecie zacząć od nowa.",
           tone: "dark",
         },
       ],
@@ -359,7 +375,7 @@ const pl: Dictionary = {
           heading: "Care Score",
           paragraphs: [
             "Care Score = obowiązki wykonane na czas ÷ obowiązki oczekiwane × 100, minus 10 punktów za każdą chorobę, w zakresie od 0 do 100.",
-            "Obowiązek to jedno konkretne zadanie: każda pora karmienia, każde z trzech uzupełnień wody, sprzątnięcie każdego bałaganu w ciągu dwóch godzin (szkoła i sen się nie liczą) oraz osiągnięcie dziennego celu spaceru.",
+            "Obowiązek to jedno konkretne zadanie: każde okno karmienia, każde dolanie wody, posprzątanie każdej wpadki w ciągu dwóch godzin (szkoła i sen się nie liczą), osiągnięcie dziennego celu spaceru, codzienne ćwiczenie w szkole i pielęgnacja, jakiej potrzebuje rasa. Kot zamiast spaceru ma zabawy i kuwetę.",
             "Czas, gdy gra była wstrzymana, zwierzę było u weterynarza albo umowa nie była jeszcze podpisana, nigdy nie liczy się na niekorzyść dziecka. Zakończony dzień zostaje zamknięty, więc wyniku nie da się później zmienić.",
             "Rodzeństwo, które dzieli jedno zwierzę, sprawiedliwie dzieli każdy obowiązek. Liczą się tylko własne czynności dziecka – jeśli jedno robi wszystko, ma wynik 100, a drugie 0.",
           ],
@@ -377,11 +393,24 @@ const pl: Dictionary = {
           type: "list",
           heading: "To ty masz kontrolę",
           items: [
-            "Godziny ciszy na szkołę i sen, według twojego czasu lokalnego – także przy zmianie czasu na letni i zimowy.",
+            "Godziny ciszy na szkołę i sen oraz strefa czasowa – dla całej rodziny lub osobno dla każdego zwierzęcia, także przy zmianie czasu na letni i zimowy.",
             "Wstrzymaj grę dla dowolnego zwierzęcia jednym potwierdzonym stuknięciem; ekran dziecka blokuje się natychmiast.",
             "Zaproś drugiego rodzica jednorazowym kodem; oboje widzicie każde dziecko i każde zwierzę.",
             "Wyloguj dziecko ze wszystkich urządzeń, jeśli zgubi telefon; kody są jednorazowe i wygasają po 15 minutach.",
             "Wyeksportuj wszystkie dane swojej rodziny do pliku albo od razu usuń w aplikacji profil dziecka lub całe konto.",
+          ],
+        },
+        {
+          type: "cards",
+          heading: "Również w twojej aplikacji",
+          columns: 3,
+          items: [
+            { title: "Życzenia dziecka", text: "Widzisz, o co poprosiło dziecko, i wybierasz Kup albo Nie teraz. Zakup będzie możliwy, gdy rzeczy pojawią się w App Store i Google Play." },
+            { title: "Przypomnienia o pielęgnacji", text: "Przy rasach, które potrzebują groomera lub kąpieli, dostajesz przypomnienie z datą. Oznacz je jako zrobione; nigdy nie wpływa na wynik dziecka." },
+            { title: "Imię dla zwierzęcia", text: "Nadaj zwierzęciu imię i zmień je, kiedy chcesz – na przykład tak, by pasowało do prawdziwego zwierzęcia, które kiedyś zamieszka w domu." },
+            { title: "Jeden telefon dla rodziny", text: "Opcja Graj jako przełącza telefon na grę dziecka. Powrót do widoku rodzica zawsze wymaga twojego logowania." },
+            { title: "Logowanie, jak wolisz", text: "Google, Apple albo e-mail i hasło. Dzieci zawsze logują się kodem." },
+            { title: "Ulepszenie darmowego zwierzęcia", text: "Rozpocznij 12-tygodniowe wyzwanie z darmowym zwierzęciem, które dziecko już ma, i wybierz, czy dotychczasowy Care Score zostaje." },
           ],
         },
         {
@@ -464,7 +493,7 @@ const pl: Dictionary = {
             ["Smakołyki, paczka 10 sztuk", "2,99 €"],
             ["Zestaw powitalny: legowisko + miski + zabawka", "15,99 € (zamiast 17,97 €)"],
           ],
-          note: "Życzenia pojawią się z następną aktualizacją aplikacji; będzie można je kupić, gdy przedmioty będą dostępne w App Store i Google Play. Ceny dotyczą Słowenii; sklep pokazuje cenę dla twojego kraju.",
+          note: "Dziecko może już prosić o rzeczy w aplikacji; kupić je będzie można, gdy będą dostępne w App Store i Google Play. Ceny dotyczą Słowenii; sklep pokazuje cenę dla twojego kraju.",
         },
         {
           type: "faq",
@@ -497,7 +526,7 @@ const pl: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "Dla dzieci w jakim wieku jest PetPrep?", a: "Stworzyliśmy go z myślą o dzieciach mniej więcej od 7 do 12 lat, ale dobrze sprawdza się też do 16. roku życia. Korzystają z niego też dorośli, żeby sprawdzić, czy konkretna rasa jest naprawdę dla nich, zanim ją kupią lub adoptują." },
+            { q: "Dla kogo jest PetPrep?", a: "Dla każdego dziecka, które prosi o zwierzę, i dla rodziców, którzy chcą wiedzieć, czy obietnica zostanie dotrzymana. Korzystają z niego też dorośli, którzy przed zakupem lub adopcją chcą sprawdzić, czy dana rasa naprawdę do nich pasuje." },
             { q: "Czy mogę korzystać z PetPrep samodzielnie, bez dzieci?", a: "Tak. Załóż konto jako rodzic i dodaj siebie jako profil opiekuna – wystarczy pseudonim, rok urodzenia zostaw pusty. Wybierz rasę, utwórz 6-cyfrowy kod, a potem na tym samym telefonie albo na innym wybierz „Jestem dzieckiem” i wpisz kod – tak stajesz się opiekunem. Ponieważ będzie to pies rodzinny, później możesz dodać partnera lub dzieci, żeby opiekować się nim razem. Cena jest taka sama jak dla rodzin." },
             { q: "Ile czasu dziennie to zajmuje?", a: "Kilka minut na jedzenie, wodę i sprzątanie – plus spacer, którego i tak potrzebowałby prawdziwy pies." },
             { q: "Czy aplikacja śledzi lokalizację mojego dziecka?", a: "Nie. Na spacerach liczy wyłącznie kroki. Jeśli na to pozwolisz, odczytuje je z Apple Health (iPhone) lub Health Connect (Android) – tylko odczyt i tylko kroki; tam, gdzie to możliwe, korzysta też z czujnika ruchu telefonu. O zgodę prosi na ekranie spaceru. GPS nie jest używany." },
@@ -507,8 +536,13 @@ const pl: Dictionary = {
             { q: "A co ze szkołą i porą snu?", a: "Ustaw godziny ciszy. Zwierzę zwalnia, nic nie jest wysyłane, a posiłkami, które w całości wypadają w godzinach ciszy, zajmujesz się ty." },
             { q: "Czy to nie jest straszne dla dzieci?", a: "Nie. Konsekwencje są prawdziwe, ale łagodne: zwierzę trafia do weterynarza albo do schroniska, nigdy nie ma drastycznych scen i zawsze można zacząć od nowa." },
             { q: "Jakie zwierzęta są dostępne?", a: "Dziś [psy](species:dog) i [koty](species:cat): darmowy pies mieszaniec i kot domowy, a także 12-tygodniowe wyzwanie z jednym z nich lub z każdą rasą z [encyklopedii zwierząt](page:animals), która podaje też ich potrzeby ze źródłami. Kolejne gatunki są planowane." },
-            { q: "W jakich językach?", a: "Dziś po angielsku i słoweńsku. Kolejne języki pojawią się, gdy PetPrep będzie startować w nowych krajach." },
+            { q: "W jakich językach?", a: "Aplikacja jest po angielsku i słoweńsku, a ta strona w 15 językach. Kolejne języki aplikacji pojawią się, gdy PetPrep wystartuje w nowych krajach." },
             { q: "Co się dzieje, gdy już mamy prawdziwe zwierzę?", a: "PetPrep może stać się asystentem AI dla twojego prawdziwego zwierzęcia. Ta część jest w przygotowaniu." },
+            { q: "Czy dziecko może bawić się ze zwierzęciem?", a: "Tak. W 12-tygodniowym wyzwaniu dziecko może bawić się piłką lub przytulać zwierzę, kiedy chce, a kot goni wędkę z piórkami. Zabawa poprawia nastrój zwierzęcia, ale nigdy nie zmienia Care Score." },
+            { q: "Czy zwierzę może mieć imię?", a: "Tak. Rodzic może nadać mu imię i zmienić je w każdej chwili. Imię widać na ekranie dziecka, w albumie i na certyfikacie." },
+            { q: "Czy rodzic i dziecko mogą korzystać z jednego telefonu?", a: "Tak. W aplikacji rodzica stuknij Graj jako przy dziecku, a telefon przełączy się na jego grę. Powrót do widoku rodzica wymaga twojego logowania. Na wspólnym telefonie kroki liczą się tylko wtedy, gdy aktywny jest profil dziecka." },
+            { q: "A jeśli wyjedziemy do innej strefy czasowej?", a: "Możesz zmienić strefę czasową dla całej rodziny lub dla każdego zwierzęcia, żeby posiłki i godziny ciszy szły za zegarem tam, gdzie jesteście. Aplikacja sama to zaproponuje, gdy telefon będzie w innej strefie." },
+            { q: "Co robi kot zamiast spaceru?", a: "Kot ma zabawy z wędką z piórkami, a jego kuwetę trzeba czyścić i raz w tygodniu wymieniać żwirek. Rasy długowłose trzeba też szczotkować." },
           ],
         },
       ],
@@ -1190,7 +1224,22 @@ const pl: Dictionary = {
       title: "Dla dzieci, które marzą o zwierzęciu.",
       lead: "Kolorowanki do druku, Curio i #walkyourpet – dla dzieci i rodziców, którzy razem przygotowują się na zwierzę.",
       hero: { src: "/curio/curio-waving.webp", alt: "Curio, maskotka PetPrep: miękka grafitowa kostka z dużymi białymi oczami, małym malinowym noskiem i miętową obrożą, macha na powitanie.", width: 720, height: 948 },
-      blocks: [{ type: "kidsHub" }],
+      blocks: [
+        { type: "kidsHub" },
+        {
+          type: "cards",
+          heading: "W aplikacji PetPrep",
+          columns: 3,
+          items: [
+            { title: "Szkoła dla psa", text: "Naucz swoje zwierzę komend siad, do mnie i waruj. Pochwal je w odpowiednim momencie!" },
+            { title: "Zabawa i przytulanie", text: "Rzuć piłkę, pogłaszcz zwierzę albo pomachaj wędką z piórkami dla kota." },
+            { title: "Życzenia", text: "Twoje zwierzę chciałoby nowe legowisko albo zabawkę? Poproś rodziców w aplikacji." },
+            { title: "Album twojego zwierzęcia", text: "Zobacz, jak twoje zwierzę rośnie na zdjęciach. Szczeniak ma nawet swoje pierwsze urodziny." },
+            { title: "Prawdziwe spacery", text: "Twoje spacery liczą prawdziwe kroki. Twoje zwierzę ich potrzebuje – a ty też dobrze się bawisz." },
+            { title: "Podpisana obietnica", text: "Zanim twoje zwierzę przyjdzie, podpisujesz palcem obietnicę." },
+          ],
+        },
+      ],
     },
     walkyourpet: {
       meta: {

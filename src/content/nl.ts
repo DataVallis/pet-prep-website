@@ -201,6 +201,9 @@ const nl: Dictionary = {
         { title: "Houdt rekening met school en slaap", text: "In de stille uren zijn de herinneringen uit. Een maaltijd die tijdens schooltijd valt, is aan jou, niet aan je kind." },
         { title: "Echte gevolgen, maar op een zachte manier", text: "Verwaarlozing leidt tot een bezoek aan de dierenarts of het asiel – nooit eng, en altijd met een nieuwe start." },
         { title: "Geen twee hetzelfde", text: "Elk huisdier krijgt een eigen vacht, aftekening en ogen – fotorealistisch en nooit twee keer dezelfde." },
+        { title: "Het leert", text: "Elke dag een korte oefening – zit, hier, af. Elk ras leert in zijn eigen tempo." },
+        { title: "Verzorging per ras", text: "Borstelen, tanden, nagels of oren – alleen waar een bron zegt hoe vaak het ras dat nodig heeft." },
+        { title: "Wensen", text: "Je kind kan om een mand, speelgoed of snoepjes voor het huisdier vragen. Jij beslist; spullen veranderen alleen het uiterlijk." },
       ],
     },
     parents: {
@@ -281,12 +284,12 @@ const nl: Dictionary = {
           type: "steps",
           heading: "Van de eerste tik tot het certificaat",
           items: [
-            { title: "De ouder maakt het gezin aan", text: "Je registreert je met je e-mailadres (inloggen met Apple en Google komt eraan). Voeg elk kind toe met een bijnaam en eventueel een geboortejaar. Meer vragen we niet over je kind." },
+            { title: "De ouder maakt het gezin aan", text: "Je registreert je met Google, Apple of je e-mailadres. Voeg elk kind toe met een bijnaam en eventueel een geboortejaar. Meer vragen we niet over je kind." },
             { title: "Jij kiest het huisdier", text: "Kies het ras (de kruising is gratis), de herkomst van het huisdier – geadopteerd uit een asiel of gekocht bij een fokker – en de leeftijd bij thuiskomst: pup, jong, volwassen of senior." },
             { title: "Je kind logt in met een code", text: "Je krijgt een 6-cijferige code die 15 minuten geldig is. Je kind typt die in op de eigen telefoon – geen e-mailadres en geen wachtwoord. Telefoon kwijt? Met één tik log je je kind uit op alle apparaten." },
             { title: "Het Verantwoordelijkheidscontract", text: "Je kind tekent een belofte met een vinger. Met die handtekening wordt het huisdier geboren: de behoeften tellen vanaf dat moment, dus er gaat niets verloren als je kind later tekent." },
-            { title: "Twaalf weken verzorging", text: "Eten geven binnen de juiste tijdvakken, vers water, opruimen en een dagelijkse wandeling met echte stappen. Naarmate het huisdier groeit, veranderen ook zijn behoeften." },
-            { title: "Het certificaat", text: "Na 12 weken wordt het huisdier een jaar oud. Je kind krijgt een Verantwoordelijkheidscertificaat met de eigen Care Score – of jullie ontdekken samen, zonder risico, dat dit nog niet het juiste moment is." },
+            { title: "Twaalf weken verzorging", text: "Voeren op de juiste tijden, vers water, opruimen en een dagelijkse wandeling met echte stappen – plus training, spelen en de verzorging die het ras nodig heeft. Terwijl het huisdier groeit, veranderen zijn behoeften." },
+            { title: "Het certificaat", text: "Je kind krijgt een Verantwoordelijkheidscertificaat met de eigen Care Score – of jullie ontdekken samen, zonder risico, dat dit nog niet het juiste moment is." },
           ],
         },
         {
@@ -305,7 +308,7 @@ const nl: Dictionary = {
           head: ["Behoefte", "Hoe vaak", "Als het wordt vergeten"],
           rows: [
             ["Eten", "’s Ochtends (6–10 uur) en ’s avonds (17–21 uur), één keer per tijdvak", "Na ongeveer 12,5 uur hongerig"],
-            ["Water", "3 keer per dag, minstens 3 uur ertussen", "Na ongeveer 10 uur dorstig"],
+            ["Water", "Als de bak leeg raakt, minstens 3 uur ertussen", "Na ongeveer 10 uur dorstig"],
             ["Wandelen", "6.000 echte stappen (pups beginnen bij 2.000)", "Helemaal niet gewandeld → de volgende ochtend ziek"],
             ["Opruimen", "Als het huisdier een ongelukje heeft – nooit tijdens stille uren", "Geen eten of water tot het schoon is"],
           ],
@@ -325,9 +328,22 @@ const nl: Dictionary = {
           ],
         },
         {
+          type: "cards",
+          heading: "Meer dan klusjes",
+          columns: 3,
+          items: [
+            { title: "Hondenschool", text: "Elke dag een korte oefening: zit, hier, af en buiten plassen. Elk ras leert in zijn eigen tempo, en jij ziet welke commando’s je huisdier al kent." },
+            { title: "Spelen en knuffelen", text: "In de 12-wekenchallenge kan je kind met de bal spelen of het huisdier knuffelen wanneer het wil. Dat verbetert de stemming van het dier, nooit de score." },
+            { title: "Verzorging per ras", text: "Borstelen, tanden, nagels, oren of huidplooien – alleen waar een bron zegt hoe vaak. De trimsalon en een bad zijn herinneringen voor jou." },
+            { title: "Ook katten", text: "Een kat jaagt op een hengel met veren in plaats van te wandelen, en de kattenbak moet worden schoongemaakt en elke week ververst." },
+            { title: "Een naam en een album", text: "Je kunt het huisdier een naam geven. Zijn foto’s groeien mee in een album, en een pup viert zelfs zijn eerste verjaardag." },
+            { title: "Wensen", text: "Je kind kan om een mand, bakjes, speelgoed of snoepjes voor het huisdier vragen. Jij beslist. Spullen veranderen alleen het uiterlijk, nooit het spel." },
+          ],
+        },
+        {
           type: "callout",
           title: "Mislukken is ook een uitkomst.",
-          text: "Belandt het huisdier in het virtuele asiel, dan heb je iets waardevols geleerd – voordat een echt dier de prijs betaalt. Je kunt opnieuw beginnen, ook met een makkelijker ras.",
+          text: "Belandt het huisdier in het virtuele asiel, dan hebben jullie iets waardevols geleerd – voordat een echt dier de prijs betaalde. Je kunt opnieuw beginnen.",
           tone: "dark",
         },
       ],
@@ -359,7 +375,7 @@ const nl: Dictionary = {
           heading: "De Care Score",
           paragraphs: [
             "Care Score = op tijd uitgevoerde routines ÷ verwachte routines × 100, min 10 punten per ziekte, met een score tussen 0 en 100.",
-            "Een routine is één concrete taak: elk voedertijdvak, elk van de drie waterbeurten, elk ongelukje dat binnen twee uur wordt opgeruimd (schooltijd en slaap tellen niet mee) en het halen van het dagelijkse wandeldoel.",
+            "Een routine is één concrete taak: elk voertijdvenster, elke keer water bijvullen, elk ongelukje binnen twee uur opruimen (school en slaap tellen niet mee), het dagelijkse wandeldoel halen, de dagelijkse trainingsoefening en de verzorging die het ras nodig heeft. Een kat heeft speelmomenten en de kattenbak in plaats van de wandeling.",
             "Tijd waarin je het spel hebt gepauzeerd, het huisdier bij de dierenarts was of het contract nog niet was getekend, telt nooit tegen je kind. Afgelopen dagen liggen vast, dus een score kan achteraf niet meer worden aangepast.",
             "Delen broers en zussen een huisdier, dan verdelen ze elke routine eerlijk. Alleen wat een kind zelf doet, telt – doet één kind alles, dan scoort dat kind 100 en het andere 0.",
           ],
@@ -377,11 +393,24 @@ const nl: Dictionary = {
           type: "list",
           heading: "Jij houdt de regie",
           items: [
-            "Stille uren voor school en slaap, in je lokale tijd – ook bij de overgang naar zomer- of wintertijd.",
+            "Stille uren voor school en slaap, en de tijdzone – voor het hele gezin of apart voor elk huisdier, ook bij de overgang naar zomer- of wintertijd.",
             "Pauzeer het spel voor elk huisdier met één bevestigde tik; het scherm van je kind gaat meteen op slot.",
             "Nodig de andere ouder uit met een eenmalige code; jullie zien allebei elk kind en elk huisdier.",
             "Log een kind uit op alle apparaten als een telefoon kwijt is; codes zijn eenmalig en verlopen na 15 minuten.",
             "Exporteer alle gegevens van je gezin als bestand, of verwijder het profiel van een kind of je hele account direct in de app.",
+          ],
+        },
+        {
+          type: "cards",
+          heading: "Ook in je app",
+          columns: 3,
+          items: [
+            { title: "De wensen van je kind", text: "Je ziet waar je kind om vroeg en kiest Kopen of Nu niet. Kopen kan zodra de spullen in de App Store en Google Play staan." },
+            { title: "Verzorgingsherinneringen", text: "Bij rassen die naar de trimsalon of in bad moeten, krijg je een herinnering met een datum. Vink hem af; het telt nooit mee in de score van je kind." },
+            { title: "Een naam voor het huisdier", text: "Geef het huisdier een naam en verander hem wanneer je wilt – bijvoorbeeld zodat hij past bij het echte dier dat later thuiskomt." },
+            { title: "Eén telefoon voor het gezin", text: "Met Spelen als schakelt de telefoon naar het spel van je kind. Terug naar de oudervisie kan altijd alleen met jouw aanmelding." },
+            { title: "Aanmelden zoals jij wilt", text: "Google, Apple of e-mail en wachtwoord. Kinderen melden zich altijd aan met een code." },
+            { title: "Gratis huisdier upgraden", text: "Start de 12-wekenchallenge met het gratis huisdier dat je kind al heeft, en kies of de Care Score tot nu toe behouden blijft." },
           ],
         },
         {
@@ -464,7 +493,7 @@ const nl: Dictionary = {
             ["Snoepjes, pak van 10", "€ 2,99"],
             ["Welkomstpakket: mand + bakken + speeltje", "€ 15,99 (in plaats van € 17,97)"],
           ],
-          note: "Wensen komen met de volgende update van de app; je kunt ze kopen zodra de artikelen beschikbaar zijn in de App Store en Google Play. De prijzen gelden voor Slovenië; in de store zie je de prijs voor jouw land.",
+          note: "Je kind kan in de app al om spullen vragen; kopen kan zodra de artikelen beschikbaar zijn in de App Store en Google Play. De prijzen gelden voor Slovenië; in de store zie je de prijs voor jouw land.",
         },
         {
           type: "faq",
@@ -497,7 +526,7 @@ const nl: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "Voor welke leeftijd is PetPrep?", a: "Voor kinderen is PetPrep bedoeld voor ongeveer 7 tot 12 jaar, en het werkt goed tot 16 jaar. Ook volwassenen gebruiken het, om te testen of een bepaald ras echt bij hen past voordat ze een dier kopen of adopteren." },
+            { q: "Voor wie is PetPrep?", a: "Voor elk kind dat om een huisdier vraagt, en voor ouders die willen weten of de belofte standhoudt. Ook volwassenen gebruiken het om vóór de aankoop of adoptie te testen of een bepaald ras echt bij hen past." },
             { q: "Kan ik PetPrep in mijn eentje gebruiken, zonder kinderen?", a: "Ja. Maak een account aan als ouder en voeg jezelf toe als verzorger – een bijnaam is genoeg, het geboortejaar mag je leeg laten. Kies het ras en maak een code van 6 cijfers aan. Kies daarna, op dezelfde telefoon of een andere, “Ik ben een kind” en typ de code in – zo word jij de verzorger. Omdat het een gezinshond wordt, kun je later je partner of kinderen toevoegen, zodat jullie er samen voor zorgen. De prijs is dezelfde als voor gezinnen." },
             { q: "Hoeveel tijd kost het per dag?", a: "Een paar minuten voor eten, water en opruimen – plus de wandeling die een echte hond toch al nodig zou hebben." },
             { q: "Volgt de app de locatie van mijn kind?", a: "Nee. Voor wandelingen telt de app alleen stappen. Met jouw toestemming leest de app die uit Apple Gezondheid (iPhone) of Health Connect (Android) – alleen lezen en alleen stappen; waar mogelijk gebruikt de app ook de bewegingssensor van de telefoon. Om toestemming wordt gevraagd in het wandelscherm. Gps wordt niet gebruikt." },
@@ -507,8 +536,13 @@ const nl: Dictionary = {
             { q: "En school en bedtijd?", a: "Stel stille uren in. Het huisdier doet dan rustiger aan, er wordt niets gestuurd en maaltijden die helemaal in de stille uren vallen, regel jij." },
             { q: "Is het eng voor kinderen?", a: "Nee. De gevolgen zijn echt, maar zacht: het huisdier gaat naar de dierenarts of het asiel, nooit iets naars om te zien, en er is altijd een nieuwe start." },
             { q: "Welke dieren zijn er?", a: "Nu [honden](species:dog) en [katten](species:cat): een gratis kruisingshond en huiskat, en de challenge van 12 weken met een van beide of met elk ras uit de [dierenencyclopedie](page:animals), waarin ook hun onderbouwde behoeften staan. Meer diersoorten zijn gepland." },
-            { q: "Welke talen?", a: "Voorlopig is de app er in het Engels en het Sloveens. Er komen meer talen bij naarmate PetPrep in nieuwe landen van start gaat." },
+            { q: "Welke talen?", a: "De app is in het Engels en Sloveens; deze website in 15 talen. Er komen meer talen in de app zodra PetPrep in nieuwe landen start." },
             { q: "Wat gebeurt er als we een echt huisdier nemen?", a: "PetPrep kan een AI-assistent worden voor je echte huisdier. Dat deel is in ontwikkeling." },
+            { q: "Kan mijn kind met het huisdier spelen?", a: "Ja. In de 12-wekenchallenge kan je kind met de bal spelen of knuffelen wanneer het wil, en een kat jaagt op een hengel met veren. Spelen verbetert de stemming van het huisdier, maar verandert nooit de Care Score." },
+            { q: "Kan het huisdier een naam krijgen?", a: "Ja. Een ouder kan het een naam geven en die altijd veranderen. De naam staat op het scherm van je kind, in het album en op het certificaat." },
+            { q: "Kunnen ouder en kind één telefoon delen?", a: "Ja. Tik in de ouder-app bij je kind op Spelen als en de telefoon schakelt naar zijn spel. Terug naar de oudervisie kan met jouw aanmelding. Op een gedeelde telefoon tellen stappen alleen zolang het profiel van het kind actief is." },
+            { q: "En als we naar een andere tijdzone reizen?", a: "Je kunt de tijdzone wijzigen voor het hele gezin of voor elk huisdier, zodat maaltijden en stille uren de klok ter plaatse volgen. De app stelt het voor als je telefoon in een andere tijdzone is." },
+            { q: "Wat doet een kat in plaats van wandelen?", a: "Een kat krijgt speelmomenten met een hengel met veren, en de kattenbak moet worden schoongemaakt en elke week ververst. Langharige rassen moeten ook geborsteld worden." },
           ],
         },
       ],
@@ -1190,7 +1224,22 @@ const nl: Dictionary = {
       title: "Voor kinderen die een huisdier willen.",
       lead: "Kleurplaten om te printen, Curio en #walkyourpet – voor kinderen en ouders die zich samen voorbereiden op een huisdier.",
       hero: { src: "/curio/curio-waving.webp", alt: "Curio, de mascotte van PetPrep: een zacht grafietkleurig blokje met grote witte ogen, een kleine frambozenrode neus en een mintgroene halsband, dat zwaait.", width: 720, height: 948 },
-      blocks: [{ type: "kidsHub" }],
+      blocks: [
+        { type: "kidsHub" },
+        {
+          type: "cards",
+          heading: "In de PetPrep-app",
+          columns: 3,
+          items: [
+            { title: "Hondenschool", text: "Leer je huisdier zit, hier en af. Prijs het precies op het goede moment!" },
+            { title: "Spelen en knuffelen", text: "Gooi de bal, aai je huisdier of zwaai met een hengel met veren voor je kat." },
+            { title: "Wensen", text: "Wil je huisdier graag een nieuwe mand of speelgoed? Vraag het je ouders in de app." },
+            { title: "Het album van je huisdier", text: "Zie je huisdier opgroeien op foto’s. Een pup heeft zelfs zijn eerste verjaardag." },
+            { title: "Echte wandelingen", text: "Je wandelingen tellen echte stappen. Je huisdier heeft ze nodig – en ze zijn ook leuk voor jou." },
+            { title: "Een getekende belofte", text: "Voordat je huisdier komt, teken je een belofte met je vinger." },
+          ],
+        },
+      ],
     },
     walkyourpet: {
       meta: {
