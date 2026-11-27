@@ -1309,14 +1309,26 @@
       "synonyms": [
         "Chow-chow",
         "Chowchow"
-      ]
+      ],
+      "colours": {
+        "red": "Rød",
+        "black": "Sort",
+        "cream": "Creme",
+        "fawn": "Fawn",
+        "blue": "Blå",
+        "white": "Hvid"
+      }
     },
     "old_english_sheepdog": {
       "name": "Old English Sheepdog",
       "slug": "old-english-sheepdog",
       "synonyms": [
         "Bobtail"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Grå/hvid",
+        "blue-white": "Blå/hvid"
+      }
     },
     "pekingese": {
       "name": "Pekingeser",
@@ -1350,7 +1362,11 @@
         "Schnauzer",
         "Mittelschnauzer",
         "Standard schnauzer"
-      ]
+      ],
+      "colours": {
+        "pepper-salt": "Peber og salt",
+        "black": "Sort"
+      }
     },
     "coton_de_tulear": {
       "name": "Coton de Tuléar",
@@ -1365,14 +1381,28 @@
       "slug": "engelsk-setter",
       "synonyms": [
         "English Setter"
-      ]
+      ],
+      "colours": {
+        "blue-belton": "Blue belton",
+        "orange-belton": "Orange belton",
+        "blue-belton-tan": "Trefarvet (blue belton og tan)",
+        "lemon-belton": "Lemon belton",
+        "liver-belton": "Liver belton",
+        "liver-belton-tan": "Trefarvet (liver belton og tan)"
+      }
     },
     "dogue_de_bordeaux": {
       "name": "Dogue de Bordeaux",
       "slug": "dogue-de-bordeaux",
       "synonyms": [
         "Bordeauxdogge"
-      ]
+      ],
+      "colours": {
+        "mahogany-brown-mask": "Mahogni, brun maske",
+        "fawn-black-mask": "Fawn, sort maske",
+        "fawn-no-mask": "Fawn, uden maske",
+        "isabella": "Isabella"
+      }
     },
     "flat_coated_retriever": {
       "name": "Flat coated retriever",
@@ -1380,7 +1410,11 @@
       "synonyms": [
         "Flatcoated retriever",
         "Flat-coated retriever"
-      ]
+      ],
+      "colours": {
+        "black": "Sort",
+        "liver": "Leverfarvet"
+      }
     },
     "lhasa_apso": {
       "name": "Lhasa apso",
@@ -1388,7 +1422,17 @@
       "synonyms": [
         "Lhasa",
         "Lhasa-apso"
-      ]
+      ],
+      "colours": {
+        "golden": "Gylden",
+        "honey": "Honningfarvet",
+        "dark-grizzle": "Mørk grizzle",
+        "smoke": "Røgfarvet",
+        "parti-colour": "Broget",
+        "black": "Sort",
+        "white": "Hvid",
+        "brown": "Brun"
+      }
     },
     "beauceron": {
       "name": "Beauceron",
@@ -1396,14 +1440,24 @@
       "synonyms": [
         "Berger de Beauce",
         "Bas Rouge"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Sort og tan",
+        "harlequin": "Harlekin"
+      }
     },
     "border_terrier": {
       "name": "Border terrier",
       "slug": "border-terrier",
       "synonyms": [
         "Borderterrier"
-      ]
+      ],
+      "colours": {
+        "grizzle-tan": "Grizzle og tan",
+        "red": "Rød",
+        "wheaten": "Hvedefarvet",
+        "blue-tan": "Blå og tan"
+      }
     },
     "borzoi": {
       "name": "Borzoi",
@@ -1431,7 +1485,12 @@
     "leonberger": {
       "name": "Leonberger",
       "slug": "leonberger",
-      "synonyms": []
+      "synonyms": [],
+      "colours": {
+        "lion-yellow": "Løvegul",
+        "red": "Rød",
+        "sandy": "Sandfarvet"
+      }
     },
     "miniature_bull_terrier": {
       "name": "Miniature bullterrier",
@@ -1793,6 +1852,47 @@
         "Bluetick",
         "Blue Tick Coonhound"
       ]
+    },
+    "welsh_springer_spaniel": {
+      "name": "Welsh springer spaniel",
+      "slug": "welsh-springer-spaniel",
+      "synonyms": [
+        "Welsh springer",
+        "Welshie",
+        "Welsh Starter"
+      ]
+    },
+    "smooth_fox_terrier": {
+      "name": "Foxterrier glathåret",
+      "slug": "foxterrier-glathaaret",
+      "synonyms": [
+        "Glathåret foxterrier",
+        "Smooth fox terrier",
+        "Foxie"
+      ],
+      "colours": {
+        "tricolour": "Trefarvet",
+        "white-tan": "Hvid med tan aftegn",
+        "white-black": "Hvid med sorte aftegn",
+        "white": "Helt hvid"
+      }
+    },
+    "bearded_collie": {
+      "name": "Bearded collie",
+      "slug": "bearded-collie",
+      "synonyms": [
+        "Beardie",
+        "Highland collie",
+        "Hairy Mou'ed Collie"
+      ],
+      "colours": {
+        "grey-white": "Skifergrå/hvid",
+        "black-white": "Sort/hvid",
+        "blue-white": "Blå/hvid",
+        "brown-white": "Brun/hvid",
+        "fawn-white": "Rødlig fawn/hvid",
+        "sandy-white": "Sandfarvet/hvid"
+      }
     }
   },
   "suitability_labels": {
