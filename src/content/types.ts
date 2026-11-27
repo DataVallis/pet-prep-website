@@ -168,9 +168,9 @@ export type Dictionary = {
     care: { title: string; text: string };
     /** Submit button of the pop-up's e-mail form. */
     button: string;
-    /** One line in the bar at the bottom of the screen (keep it under ~45 characters: phones). */
+    /** The bar's one line: the parent trigger, same sentence as `default.title` (David 2026-11-27). */
     barText: string;
-    /** Short form of `button` for the bar on phones (wider screens show `button` itself) — bar and pop-up promise the same thing: a note when the app is out. */
+    /** »Click here« — opens the pop-up (David 2026-11-27). */
     barButton: string;
     /** Accessible name of the bar. */
     barLabel: string;
