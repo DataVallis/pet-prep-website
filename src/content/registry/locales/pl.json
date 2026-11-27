@@ -1350,7 +1350,15 @@
         "Chow-chow",
         "Chow Chow",
         "Chow"
-      ]
+      ],
+      "colours": {
+        "red": "Rudy",
+        "black": "Czarny",
+        "cream": "Kremowy",
+        "fawn": "Płowy",
+        "blue": "Niebieski",
+        "white": "Biały"
+      }
     },
     "old_english_sheepdog": {
       "name": "Owczarek staroangielski",
@@ -1358,7 +1366,11 @@
       "synonyms": [
         "Bobtail",
         "Old English sheepdog"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Szaro-biały",
+        "blue-white": "Niebiesko-biały"
+      }
     },
     "pekingese": {
       "name": "Pekińczyk",
@@ -1391,7 +1403,11 @@
       "synonyms": [
         "Mittelschnauzer",
         "Standard schnauzer"
-      ]
+      ],
+      "colours": {
+        "pepper-salt": "Pieprz z solą",
+        "black": "Czarny"
+      }
     },
     "coton_de_tulear": {
       "name": "Coton de Tuléar",
@@ -1406,7 +1422,15 @@
       "slug": "seter-angielski",
       "synonyms": [
         "English Setter"
-      ]
+      ],
+      "colours": {
+        "blue-belton": "Niebieski belton",
+        "orange-belton": "Pomarańczowy belton",
+        "blue-belton-tan": "Trójkolorowy (niebieski belton z podpalaniem)",
+        "lemon-belton": "Cytrynowy belton",
+        "liver-belton": "Wątrobiany belton",
+        "liver-belton-tan": "Trójkolorowy (wątrobiany belton z podpalaniem)"
+      }
     },
     "dogue_de_bordeaux": {
       "name": "Dog z Bordeaux",
@@ -1415,7 +1439,13 @@
         "Dogue de Bordeaux",
         "Mastif francuski",
         "Dog bordoski"
-      ]
+      ],
+      "colours": {
+        "mahogany-brown-mask": "Mahoniowy z brązową maską",
+        "fawn-black-mask": "Płowy z czarną maską",
+        "fawn-no-mask": "Płowy bez maski",
+        "isabella": "Izabelowaty"
+      }
     },
     "flat_coated_retriever": {
       "name": "Flat coated retriever",
@@ -1424,7 +1454,11 @@
         "Flat-coated retriever",
         "Flatcoat",
         "Flat coat"
-      ]
+      ],
+      "colours": {
+        "black": "Czarny",
+        "liver": "Wątrobiany"
+      }
     },
     "lhasa_apso": {
       "name": "Lhasa apso",
@@ -1433,22 +1467,47 @@
         "Lhasa",
         "Apso",
         "Lhasa-apso"
-      ]
+      ],
+      "colours": {
+        "golden": "Złoty",
+        "honey": "Miodowy",
+        "dark-grizzle": "Ciemny grizzle",
+        "smoke": "Dymny",
+        "parti-colour": "Dwubarwny",
+        "black": "Czarny",
+        "white": "Biały",
+        "brown": "Brązowy"
+      }
     },
     "border_terrier": {
       "name": "Border terrier",
-      "slug": "border-terrier"
+      "slug": "border-terrier",
+      "colours": {
+        "grizzle-tan": "Grizzle z podpalaniem",
+        "red": "Rudy",
+        "wheaten": "Pszeniczny",
+        "blue-tan": "Niebieski z podpalaniem"
+      }
     },
     "leonberger": {
       "name": "Leonberger",
-      "slug": "leonberger"
+      "slug": "leonberger",
+      "colours": {
+        "lion-yellow": "Lwiożółty",
+        "red": "Rudy",
+        "sandy": "Piaskowy"
+      }
     },
     "beauceron": {
       "name": "Beauceron",
       "slug": "beauceron",
       "synonyms": [
         "Owczarek z Beauce"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Czarny z podpalaniem",
+        "harlequin": "Arlekin"
+      }
     },
     "borzoi": {
       "name": "Chart rosyjski borzoj",
@@ -1866,6 +1925,69 @@
         "wheaten": "Pszeniczny",
         "black-tan": "Czarny z podpalaniem",
         "grizzle": "Grizzle"
+      }
+    },
+    "welsh_springer_spaniel": {
+      "name": "Springer spaniel walijski",
+      "slug": "springer-spaniel-walijski",
+      "synonyms": [
+        "Welsh springer spaniel",
+        "Welsh springer",
+        "Welshie",
+        "Welsh Starter"
+      ]
+    },
+    "smooth_fox_terrier": {
+      "name": "Fox terrier krótkowłosy",
+      "slug": "fox-terrier-krotkowlosy",
+      "synonyms": [
+        "Foksterier krótkowłosy",
+        "Foksterier gładkowłosy",
+        "Smooth fox terrier",
+        "Foxie"
+      ],
+      "colours": {
+        "tricolour": "Trójkolorowy",
+        "white-tan": "Biały z podpalaniem",
+        "white-black": "Biały z czarnymi łatami",
+        "white": "Jednolicie biały"
+      }
+    },
+    "bearded_collie": {
+      "name": "Bearded collie",
+      "slug": "bearded-collie",
+      "synonyms": [
+        "Collie brodaty",
+        "Beardie",
+        "Highland collie",
+        "Hairy Mou'ed Collie"
+      ],
+      "colours": {
+        "grey-white": "Łupkowoszary z białym",
+        "black-white": "Czarny z białym",
+        "blue-white": "Niebieski z białym",
+        "brown-white": "Brązowy z białym",
+        "fawn-white": "Rudawopłowy z białym",
+        "sandy-white": "Piaskowy z białym"
+      }
+    },
+    "saluki": {
+      "name": "Saluki",
+      "slug": "chart-perski",
+      "synonyms": [
+        "Chart perski",
+        "Chart arabski",
+        "Gazelle hound"
+      ],
+      "colours": {
+        "fawn": "Płowy",
+        "cream": "Kremowy",
+        "white": "Biały",
+        "golden": "Złoty",
+        "red": "Rudy",
+        "grizzle-tan": "Grizzle z podpalaniem",
+        "tricolour": "Trójkolorowy",
+        "black-tan": "Czarny z podpalaniem"
       }
     }
   },
