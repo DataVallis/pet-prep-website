@@ -1774,6 +1774,38 @@ const pl: RegistryCopy = {
       ],
       sources: ["S1061", "S1060", "S10"],
     },
+    welsh_springer_spaniel: {
+      aka: "Welsh springer spaniel, Welsh Springer, Welshie, Welsh Starter",
+      text: [
+        "Springer spaniel walijski to płochacz z Wielkiej Brytanii; FCI zalicza go do grupy 8, wśród psów płochaczy. Wzorzec FCI opisuje psa symetrycznego, zwartego, nie na wysokich nogach, stworzonego do wytrzymałości i ciężkiej pracy, o prostej, płaskiej, jedwabistej sierści wyłącznie w kolorze intensywnie czerwono-białym, o mocnym, wesołym, bardzo żywym temperamencie i łagodnym usposobieniu. Wzorzec FCI podaje wysokość około 48\u00a0cm u psów i 46\u00a0cm u suk; PetMD podaje masę ciała 35–55\u00a0funtów (około 16–25\u00a0kg). Pies tej wielkości jest w pełni wyrośnięty w wieku około 12–15\u00a0miesięcy (według klasy wielkości PetMD). Duże brytyjskie badanie z 2024 roku (McMillan i in., w tabeli Dogs Trust) podaje medianę oczekiwanej długości życia 14,0\u00a0roku, a The Royal Kennel Club ponad 10\u00a0lat.",
+        "The Royal Kennel Club zaleca ponad 2\u00a0godziny ruchu dziennie i pielęgnację sierści częściej niż raz w tygodniu oraz zaznacza, że rasa linieje. VCA pisze, że pielęgnacja sierści nie jest trudna i wystarczy szczotkować ją raz lub dwa razy w tygodniu. PetMD opisuje springery walijskie jako kochające, wierne psy rodzinne o zrównoważonym usposobieniu; ich silny instynkt łowiecki sprawia, że trzeba je zawsze trzymać na smyczy albo na bezpiecznie ogrodzonym terenie, a do domów z małymi zwierzętami się nie nadają. Szczególnie ważne są wczesna socjalizacja i konsekwentne szkolenie. WebMD pisze, że dobrze dogadują się z dziećmi, i zaleca codzienne mycie zębów oraz comiesięczną kąpiel i przycinanie pazurów.",
+      ],
+      sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
+    },
+    smooth_fox_terrier: {
+      aka: "Fox terrier krótkowłosy, Foksterier krótkowłosy, Foksterier gładkowłosy, Smooth fox terrier, Foxie",
+      text: [
+        "Fox terrier krótkowłosy to aktywny, żywy terier z Wielkiej Brytanii (FCI: grupa 3, teriery, sekcja teriery duże i średnie), gładkowłosa odmiana fox terriera szorstkowłosego, a nie toy fox terrier. Wzorzec FCI wymaga psa mocnego i krzepkiego jak na swój niewielki rozmiar, bez ociężałości i grubych rysów, o sierści prostej, płaskiej, gładkiej, twardej i gęstej, z przewagą bieli: całkiem białej albo białej z podpalanymi, czarno-podpalanymi lub czarnymi łatami. Wysokość w kłębie nie powinna przekraczać 39\u00a0cm u psów, u suk jest nieco niższa. Wzorzec FCI podaje masę ciała 7,5–8\u00a0kg u psów i 7–7,5\u00a0kg u suk. Pies tej wielkości jest w pełni wyrośnięty w wieku około 9–12\u00a0miesięcy (według PetMD), a Dogs Trust podaje, że żyje zwykle ponad 12\u00a0lat (PetMD: 10–13\u00a0lat).",
+        "Wzorzec FCI nazywa rasę przyjazną, otwartą i nieustraszoną. PDSA zaleca co najmniej godzinę ruchu dziennie, a WebMD 1–2\u00a0godziny. PetMD pisze, że fox teriery krótkowłose dobrze dogadują się z dziećmi, są idealnymi psami rodzinnymi i mimo krótkiej sierści linieją umiarkowanie; zaleca szczotkowanie raz w tygodniu i uważa wczesną socjalizację z innymi psami i kotami za kluczową. WebMD nazywa je świetnymi towarzyszami dzieci, ale radzi nadzorować ich kontakty, zwraca uwagę na silny instynkt łowiecki i zaleca codzienne mycie zębów oraz cotygodniową kontrolę uszu.",
+      ],
+      sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
+    },
+    bearded_collie: {
+      aka: "Bearded collie, Collie brodaty, Beardie, Highland Collie, Hairy Mou'ed Collie, Mountain Collie",
+      text: [
+        "Bearded collie to szczupły, aktywny pies pasterski z Wielkiej Brytanii; FCI zalicza go do grupy 1, wśród psów pasterskich. Wzorzec FCI opisuje psa mocnej budowy, który nie powinien sprawiać wrażenia zbyt ciężkiego, o bystrym, dociekliwym spojrzeniu i kudłatej podwójnej sierści (miękki, puszysty podszerstek pod płaskim, szorstkim włosem okrywowym, którego nie wolno strzyc) w kolorze łupkowoszarym, rudawopłowym, czarnym, niebieskim, w dowolnym odcieniu szarości, brązowym lub piaskowym, z białymi znaczeniami lub bez, nigdy w maści merle. Wzorzec FCI podaje wysokość 53–56\u00a0cm u psów i 51–53\u00a0cm u suk, ale nie podaje masy ciała; PDSA podaje średnią masę 20–25\u00a0kg. Pies tej wielkości jest w pełni wyrośnięty w wieku około 12–15\u00a0miesięcy (według klasy wielkości PetMD). Duże brytyjskie badanie z 2024 roku (McMillan i in., w tabeli Dogs Trust) podaje medianę oczekiwanej długości życia 13,9\u00a0roku, a The Royal Kennel Club ponad 12\u00a0lat.",
+        "The Royal Kennel Club zaleca do godziny ruchu dziennie i codzienną pielęgnację sierści, zaznacza, że rasa linieje, i uważa, że pasuje do dużego domu z dużym ogrodem. PDSA nazywa beardie łagodnymi, ujmującymi, pogodnymi psami i idealnymi psami rodzinnymi, ale zaznacza, że z powodu silnego instynktu pasterskiego mogą próbować zaganiać dorosłych i dzieci w domu. PetMD pisze, że są łagodne wobec dzieci, choć każdy kontakt dzieci z psem powinien odbywać się pod nadzorem; zaleca codzienne szczotkowanie i socjalizację szczeniaka od pierwszego dnia w domu. WebMD pisze, że to psy towarzyskie, które po długim pozostawieniu w samotności mogą się niepokoić, potrzebują ruchu i zajęć dla umysłu, a do tego nie są rasą hipoalergiczną.",
+      ],
+      sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
+    },
+    saluki: {
+      aka: "Chart perski, Chart arabski, Persian Greyhound, Gazelle Hound, Arabian Hound",
+      text: [
+        "Saluki to smukły, bardzo szybki chart z Bliskiego Wschodu; FCI zalicza go do grupy 10, wśród chartów długowłosych lub z frędzlami, a patronat nad rasą sprawuje sama FCI. Wzorzec FCI opisuje psa sprawiającego wrażenie wdzięku i symetrii, wielkiej szybkości i wytrzymałości, o gładkiej, miękkiej, jedwabistej sierści (w odmianie z frędzlami pierzastej na uszach, nogach, z tyłu ud i na ogonie); dopuszcza każdy kolor lub ich połączenie, przy czym pręgowanie jest niepożądane. Wzorzec FCI podaje średnią wysokość 58–71\u00a0cm (u suk proporcjonalnie mniejszą), ale nie podaje masy ciała; PDSA podaje średnią masę 16–29,5\u00a0kg i średnią długość życia ponad 10\u00a0lat. Duży pies tej rasy jest zwykle w pełni wyrośnięty w wieku około 15–18\u00a0miesięcy (PetMD).",
+        "PDSA pisze, że saluki potrzebują ponad 2\u00a0godzin ruchu dziennie, najlepiej na ogrodzonym terenie, bo mają silny instynkt pogoni, a przywołanie nie zawsze jest łatwe; WebMD radzi zawsze trzymać je na smyczy i za wysokim ogrodzeniem. PetMD zaleca szybkie szczotkowanie raz lub dwa razy w tygodniu i pisze, że saluki nie lubią być same przez cały dzień i mogą cierpieć na lęk separacyjny; WebMD zaleca codzienne mycie zębów. Według PetMD nie są rasą najbardziej przyjazną dzieciom, bo lubią spokojny, cichy dom; według WebMD lepiej czują się w domach ze starszymi dziećmi, a PDSA prosi opiekunów, by pamiętali o ich instynkcie pogoni w pobliżu innych zwierząt domowych.",
+      ],
+      sources: ["S1085", "S1086", "S1087", "S1088", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
       text: [
