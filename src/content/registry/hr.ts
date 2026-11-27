@@ -1857,10 +1857,26 @@ const hr: RegistryCopy = {
     bluetick_coonhound: {
       aka: "Bluetick coonhound, Bluetick, Blue Tick Coonhound, Coonhound",
       text: [
-        "Bluetick coonhound pas je za lov na rakune koji potječe iz Sjedinjenih Američkih Država. Standard pasmine koji objavljuje Dogs NSW opisuje brzog, snažno mišićavog goniča urednog, zbijenog tijela i sjajne dlake: tamnoplavo, gusto prošarano tijelo s crnim pjegama te većim dijelom crna glava i uši, s oznakama boje paleži ili bez njih. Mužjaci teže 55–80 funti (oko 25–36 kg) i visoki su 22–27 inča, a ženke teže 45–65 funti (oko 20–30 kg) i visoke su 21–25 inča; pas te veličine odraste s otprilike 15–18 mjeseci (PetMD, prema razredu veličine). PetMD navodi prosječan životni vijek od 11–12 godina.",
+        "Bluetick coonhound pas je za lov na rakune koji potječe iz Sjedinjenih Američkih Država. Standard pasmine koji objavljuje Dogs NSW opisuje brzog, snažno mišićavog goniča urednog, zbijenog tijela i sjajne dlake: tamnoplavo, gusto prošarano tijelo s crnim pjegama te većim dijelom crna glava i uši, s podpalinama ili bez njih. Mužjaci teže 55–80 funti (oko 25–36 kg) i visoki su 22–27 inča, a ženke teže 45–65 funti (oko 20–30 kg) i visoke su 21–25 inča; pas te veličine odraste s otprilike 15–18 mjeseci (PetMD, prema razredu veličine). PetMD navodi prosječan životni vijek od 11–12 godina.",
         "Dogs NSW preporučuje otprilike 40 minuta kretanja dnevno i savjetuje da se pasmina nadzire u blizini mačaka i drugih malih životinja. PetMD piše da bluetick coonhoundima treba obilje mentalne stimulacije i svakodnevnog kretanja, da su uzica i ograđeno dvorište nužni jer neumorno slijede miris traga, da su možda prikladniji za stariju djecu i iskusne vlasnike, da laju glasnije od prosjeka te da im kratku dlaku treba četkati samo jednom tjedno.",
       ],
       sources: ["S1061", "S1060", "S10"],
+    },
+    welsh_springer_spaniel: {
+      aka: "Velški springer španijel, Velški springer, Welsh Springer Spaniel, Welsh Springer, Welshie, Welsh Starter, velški springer španjel, velski springer spanjel",
+      text: [
+        "Velški springer španijel britanski je pas za dizanje divljači; FCI ga svrstava u skupinu 8, među pse za dizanje divljači. Standard FCI-ja opisuje skladno građenog, zbijenog psa koji nije dugonog, stvorenog za izdržljivost i naporan rad, s ravnom, plosnatom, svilenkastom dlakom isključivo bogato crvene i bijele boje, snažne, vesele i vrlo aktivne naravi, ljubazne ćudi. Prema standardu FCI-ja visina u grebenu je otprilike 48 cm za mužjake i 46 cm za ženke; PetMD navodi težinu od 35–55 funti (oko 16–25 kg), a pas te veličine odraste s otprilike 12–15 mjeseci (PetMD, prema razredu veličine). Velika studija iz Ujedinjenog Kraljevstva objavljena 2024. (McMillan i suradnici, u tablici Dogs Trusta) navodi medijan životnog vijeka od 14,0 godina, a Royal Kennel Club životni vijek dulji od 10 godina.",
+        "Royal Kennel Club preporučuje više od 2 sata kretanja dnevno i njegu dlake češće nego jednom tjedno te napominje da pasmina linja. VCA piše da njega dlake nije zahtjevna i da je dovoljno četkanje jednom do dvaput tjedno. PetMD velške springere opisuje kao nježne, odane i staložene obiteljske pse; zbog snažnog lovačkog nagona, kaže, uvijek trebaju biti na povodcu ili u sigurno ograđenom prostoru, ne bi ih trebalo držati u domovima s malim ljubimcima, a rana socijalizacija i dosljedna obuka osobito su važne. WebMD navodi da se dobro slažu s djecom te preporučuje svakodnevno pranje zuba, mjesečno kupanje i podrezivanje noktiju.",
+      ],
+      sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
+    },
+    smooth_fox_terrier: {
+      aka: "Glatkodlaki foksterijer, Foksterijer glatkodlaki, Smooth Fox Terrier, Fox Terrier (Smooth), Smooth-coated Fox Terrier, Foxie, Fox Terrier, gladkodlaki foksterier",
+      text: [
+        "Glatkodlaki foksterijer aktivan je i živahan terijer iz Velike Britanije (FCI skupina 3, terijeri; sekcija velikih i srednje velikih terijera). Glatkodlaka je inačica oštrodlakog foksterijera i ne treba ga miješati s toy foksterijerom. Standard FCI-ja traži snažnu kost i čvrstoću u malom okviru, nikad nezgrapnu ni grubu. Dlaka je ravna, glatka, tvrda i gusta, a prevladava bijela boja: pas je posve bijel ili bijel s oznakama crne, crne s podpalinama ili žutosmeđe boje. Visina u grebenu je do 39 cm za mužjake, a nešto manja za ženke. Standard FCI-ja navodi težinu od 7,5–8 kg za mužjake i 7–7,5 kg za ženke. Pas te veličine odraste s otprilike 9–12 mjeseci (PetMD), a Dogs Trust navodi da obično doživi 12 i više godina (PetMD: 10–13 godina).",
+        "Standard FCI-ja pasminu naziva prijateljskom, otvorenom i neustrašivom. PDSA preporučuje najmanje sat vremena kretanja dnevno, a WebMD jedan do dva sata. PetMD piše da se glatkodlaki foksterijeri dobro slažu s djecom, da su idealni obiteljski ljubimci i da umjereno linjaju unatoč kratkoj dlaci; preporučuje četkanje jednom tjedno, a ranu socijalizaciju s drugim psima i mačkama naziva ključnom. WebMD ih naziva sjajnim pratiteljima za djecu, ali savjetuje da ih se uz djecu nadzire, upozorava na snažan lovački nagon te preporučuje svakodnevno pranje zuba i tjednu provjeru ušiju.",
+      ],
+      sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
     },
     finnish_lapphund: {
       aka: "Finski laponski pas, Finski lapphund, Finnish Lapphund, Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
