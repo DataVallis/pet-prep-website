@@ -1744,6 +1744,30 @@ const de: RegistryCopy = {
       ],
       sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
     },
+    smooth_fox_terrier: {
+      aka: "Fox Terrier (Smooth), Smooth-coated Fox Terrier, Foxie, Fox Terrier, Glatthaar-Foxterrier",
+      text: [
+        "Der Foxterrier (Glatthaar) ist ein aktiver, lebhafter Terrier aus Großbritannien (FCI-Gruppe 3, Terrier; Sektion große und mittelgroße Terrier) – das glatthaarige Gegenstück zum Foxterrier (Drahthaar), nicht zu verwechseln mit dem Toy Fox Terrier. Der FCI-Standard verlangt Knochen und Kraft auf kleinem Raum, nie plump oder grob, und ein gerades, flaches, glattes, hartes und dichtes Haar, bei dem Weiß vorherrscht: ganz weiß oder weiß mit lohfarbenen, schwarzen oder schwarz-lohfarbenen Abzeichen. Die Widerristhöhe darf bei Rüden höchstens 39 cm betragen, bei Hündinnen etwas weniger; als Gewicht nennt der FCI-Standard 7,5–8 kg für Rüden und 7–7,5 kg für Hündinnen. Ein Hund dieser Größe ist mit etwa 9–12 Monaten ausgewachsen (PetMD); der Dogs Trust nennt eine typische Lebenserwartung von 12 und mehr Jahren (PetMD: 10–13 Jahre).",
+        "Laut FCI-Standard ist die Rasse freundlich, aufgeschlossen und furchtlos. Die PDSA empfiehlt mindestens eine Stunde Bewegung am Tag, WebMD ein bis zwei Stunden. PetMD schreibt, Glatthaar-Foxterrier kämen gut mit Kindern aus, seien ideale Familienhunde und haarten trotz des kurzen Fells mäßig; PetMD rät, einmal pro Woche zu bürsten, und hält die frühe Sozialisierung mit anderen Hunden und Katzen für entscheidend. WebMD nennt sie großartige Begleiter für Kinder, rät aber, den Umgang zu beaufsichtigen, weist auf einen ausgeprägten Jagdtrieb hin und empfiehlt, täglich die Zähne zu putzen und wöchentlich die Ohren zu kontrollieren.",
+      ],
+      sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
+    },
+    bearded_collie: {
+      aka: "Beardie, Highland Collie, Hairy Mou'ed Collie, Mountain Collie",
+      text: [
+        "Der Bearded Collie ist ein schlanker, aktiver Hütehund aus Großbritannien; die FCI führt ihn in Gruppe 1 unter den Schäferhunden. Laut FCI-Standard ist er ein kräftig gebauter Hund, der nicht zu schwer wirken soll, mit wachem, fragendem Ausdruck und zottigem Doppelfell aus weicher, flauschiger Unterwolle und flachem, hartem Deckhaar, das nicht getrimmt werden darf. Die Farben sind Schiefergrau, Rotfalb, Schwarz, Blau, alle Grautöne, Braun oder Sandfarben, mit oder ohne weiße Abzeichen, nie Merle. Die Widerristhöhe beträgt laut FCI-Standard 53–56 cm bei Rüden und 51–53 cm bei Hündinnen; ein Gewicht nennt der Standard nicht, die PDSA ein Durchschnittsgewicht von 20–25 kg, und ein Hund dieser Größe ist mit etwa 12–15 Monaten ausgewachsen (PetMD-Größenklasse). Eine große britische Studie von 2024 (McMillan et al., in der Tabelle des Dogs Trust) gibt eine mediane Lebenserwartung von 13,9 Jahren an; der Royal Kennel Club nennt eine Lebensdauer von über 12 Jahren.",
+        "Der Royal Kennel Club empfiehlt bis zu einer Stunde Bewegung am Tag und tägliche Fellpflege; die Rasse haart und eignet sich für ein großes Haus mit großem Garten. Die PDSA beschreibt Beardies als sanfte, liebenswerte, fröhliche Hunde und perfekte Familienhunde, weist aber darauf hin, dass sie wegen ihres starken Hütetriebs versuchen könnten, Erwachsene und Kinder im Haus zusammenzutreiben. PetMD schreibt, sie seien sanft zu Kindern, jeder Kontakt zwischen Kindern und Hunden müsse aber beaufsichtigt werden; PetMD rät, einmal täglich zu bürsten und den Welpen vom ersten Tag im neuen Zuhause an zu sozialisieren. WebMD schreibt, sie seien gesellig und könnten ängstlich werden, wenn man sie lange allein lasse, brauchten körperliche und geistige Auslastung und seien keine hypoallergene Rasse.",
+      ],
+      sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
+    },
+    saluki: {
+      aka: "Persian Greyhound, Gazelle Hound, Arabian Hound, Persischer Windhund",
+      text: [
+        "Der Saluki ist ein schlanker, sehr schneller Windhund aus dem Nahen Osten; die FCI führt ihn in Gruppe 10 unter den langhaarigen oder befederten Windhunden, unter FCI-Patronat. Laut FCI-Standard vermittelt er den Eindruck von Anmut und Symmetrie sowie von großer Schnelligkeit und Ausdauer, mit glattem, weichem, seidigem Haar, das bei der befederten Variante an Ohren, Läufen, Hinterseite der Schenkel und Rute befedert ist; erlaubt sind alle Farben und Farbkombinationen, Gestromung ist unerwünscht. Die Widerristhöhe liegt laut FCI-Standard im Durchschnitt bei 58–71 cm, Hündinnen sind entsprechend kleiner; ein Gewicht nennt der Standard nicht, die PDSA ein Durchschnittsgewicht von 16–29,5 kg und eine durchschnittliche Lebenserwartung von über 10 Jahren. Als großer Hund ist er meist mit etwa 15–18 Monaten ausgewachsen (PetMD).",
+        "Die PDSA schreibt, Salukis brauchten täglich mehr als 2 Stunden Bewegung, am besten in einem umzäunten Bereich, da sie einen starken Jagdtrieb hätten und der Rückruf nicht immer einfach sei; WebMD rät, sie stets an der Leine und hinter einem hohen Zaun zu halten. PetMD empfiehlt, ein- bis zweimal pro Woche kurz zu bürsten, und schreibt, Salukis wollten nicht den ganzen Tag allein sein und könnten Trennungsangst entwickeln; WebMD empfiehlt tägliches Zähneputzen. Laut PetMD gehören sie nicht zu den kinderfreundlichsten Rassen, weil sie ein ruhiges Zuhause mögen, laut WebMD sind sie in Haushalten mit älteren Kindern besser aufgehoben, und die PDSA bittet Halter, den Jagdtrieb im Umgang mit anderen Haustieren zu bedenken.",
+      ],
+      sources: ["S1085", "S1086", "S1087", "S1088", "S10"],
+    },
   },
 };
 
