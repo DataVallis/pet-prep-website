@@ -976,6 +976,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
     },
+    bearded_collie: {
+      aka: "Beardie, Highland Collie, Hairy Mou'ed Collie, Mountain Collie, bradati koli",
+      text: [
+        "The Bearded Collie is a lean, active herding dog from Great Britain; the FCI lists it in Group 1 among the sheepdogs. The FCI standard describes a strongly made dog that should not look too heavy, with a bright, enquiring expression and a shaggy double coat — a soft, furry undercoat under a flat, harsh outer coat that must not be trimmed — in slate grey, reddish-fawn, black, blue, all shades of grey, brown or sandy, with or without white markings, never merle. The FCI standard gives a height of 53–56 cm for males and 51–53 cm for females but no weight; PDSA gives an average weight of 20–25 kg, and a dog of this size is fully grown at about 12–15 months (PetMD size class). A large UK study published in 2024 (McMillan et al., in the Dogs Trust table) gives a median life expectancy of 13.9 years; the Royal Kennel Club gives a lifespan of over 12 years.",
+        "The Royal Kennel Club recommends up to an hour of exercise a day and grooming every day, notes that the breed sheds and suits a large house with a large garden. PDSA calls Beardies gentle, lovable, happy dogs and perfect family pets, but says their strong herding instinct means they may try to herd adults and children at home. PetMD says they are gentle around children, though every interaction between children and dogs must be supervised, recommends a daily brushing session and socialising the puppy from the day it comes home. WebMD says they are social and can become anxious if left alone for long, need physical and mental stimulation, and are not a hypoallergenic breed.",
+      ],
+      sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
+    },
 
 
     finnish_lapphund: {

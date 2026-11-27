@@ -996,6 +996,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
     },
+    bearded_collie: {
+      aka: "bearded collie, beardie, bradati collie, Bearded Collie, Highland Collie",
+      text: [
+        "Bradati koli je vitek, dejaven ovčarski pes iz Velike Britanije; FCI ga uvršča v skupino 1 med ovčarske pse. Standard FCI opisuje močno grajenega psa, ki ne sme delovati pretežko, z bistrim, radovednim izrazom in kosmato dvojno dlako — mehko, gosto podlanko pod ravno, trdo krovno dlako, ki je ne smemo striči — v skrilasto sivi, rdečkasto plavi, črni, modri, vseh odtenkih sive, rjavi ali peščeni barvi, z belimi lisami ali brez njih, nikoli marmorirano (merle). Standard FCI navaja višino 53–56 cm za pse in 51–53 cm za psice, teže pa ne; PDSA navaja povprečno težo 20–25 kg, pes te velikosti pa doraste pri približno 12–15 mesecih (velikostni razred PetMD). Velika britanska raziskava iz leta 2024 (McMillan in sod., v tabeli Dogs Trust) navaja mediano življenjske dobe 13,9 leta; Royal Kennel Club navaja več kot 12 let.",
+        "Royal Kennel Club priporoča do 1 uro gibanja na dan in česanje vsak dan, navaja, da mu izpada dlaka, in da mu ustreza velika hiša z velikim vrtom. PDSA ga opisuje kot nežnega, ljubkega in veselega psa ter odličnega družinskega psa, a opozarja, da zaradi močnega ovčarskega nagona doma rad »pase« odrasle in otroke. PetMD piše, da je nežen z otroki, vendar mora biti vsako druženje otrok in psa pod nadzorom, priporoča vsakodnevno česanje in socializacijo mladička od prvega dne doma. WebMD piše, da je družaben in lahko postane tesnoben, če je dolgo sam, da potrebuje telesno in miselno zaposlitev ter da ni hipoalergen.",
+      ],
+      sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
+    },
 
 
     finnish_lapphund: {
