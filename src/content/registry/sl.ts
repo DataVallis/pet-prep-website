@@ -16,7 +16,7 @@ type Fci = { number: number; group: number; origin: string };
 const PROPER_START = /^(Maine Coon|Chesapeake|Jack Russell)\b/;
 const mid = (name: string) => (PROPER_START.test(name) ? name : name.charAt(0).toLocaleLowerCase("sl") + name.slice(1));
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi", 10: "hrti" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turčija", MG: "Madagaskar", AF: "Afganistan", NO: "Norveška", FI: "Finska" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turčija", MG: "Madagaskar", AF: "Afganistan", NO: "Norveška", FI: "Finska", XME: "Bližnji vzhod" };
 
 const sl: RegistryCopy = {
   mistakes: {
@@ -1003,6 +1003,14 @@ const sl: RegistryCopy = {
         "Royal Kennel Club priporoča do 1 uro gibanja na dan in česanje vsak dan, navaja, da mu izpada dlaka, in da mu ustreza velika hiša z velikim vrtom. PDSA ga opisuje kot nežnega, ljubkega in veselega psa ter odličnega družinskega psa, a opozarja, da zaradi močnega ovčarskega nagona doma rad »pase« odrasle in otroke. PetMD piše, da je nežen z otroki, vendar mora biti vsako druženje otrok in psa pod nadzorom, priporoča vsakodnevno česanje in socializacijo mladička od prvega dne doma. WebMD piše, da je družaben in lahko postane tesnoben, če je dolgo sam, da potrebuje telesno in miselno zaposlitev ter da ni hipoalergen.",
       ],
       sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
+    },
+    saluki: {
+      aka: "perzijski hrt, saluki hrt, Saluki, Persian Greyhound, Gazelle Hound",
+      text: [
+        "Saluki je vitek in zelo hiter hrt z Bližnjega vzhoda; FCI ga uvršča v skupino 10 med dolgodlake in resaste hrte, pod pokroviteljstvom FCI. Standard FCI opisuje psa, ki daje vtis gracioznosti in skladnosti, velike hitrosti in vzdržljivosti, z gladko, mehko in svilnato dlako — pri resasti različici z resami na uhljih, nogah, zadnji strani stegen in repu — ter dovoljuje vse barve in njihove kombinacije, tigrasta (brindle) pa ni zaželena. Standard FCI navaja povprečno višino 58–71 cm (psice so sorazmerno manjše), teže pa ne; PDSA navaja povprečno težo 16–29,5 kg in povprečno življenjsko dobo več kot 10 let. Kot velik pes navadno doraste pri 15–18 mesecih (PetMD).",
+        "PDSA piše, da saluki potrebuje več kot dve uri gibanja na dan, najbolje v ograjenem prostoru, saj ima močan lovski nagon in ga ni vedno lahko odpoklicati; WebMD svetuje, naj bo vedno na povodcu in za visoko ograjo. PetMD priporoča hitro česanje enkrat ali dvakrat na teden in piše, da saluki ne mara biti ves dan sam in da se lahko pri njem razvije ločitvena tesnoba; WebMD priporoča vsakodnevno ščetkanje zob. PetMD piše, da ni najbolj primeren za otroke, ker ima rad miren in tih dom, WebMD, da je bolje v družinah s starejšimi otroki, PDSA pa opozarja, naj imajo lastniki njegov lovski nagon v mislih tudi ob drugih živalih v domu.",
+      ],
+      sources: ["S1085", "S1086", "S1087", "S1088", "S10"],
     },
 
 

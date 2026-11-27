@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs", 10: "sighthounds" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa", TR: "Turkey", MG: "Madagascar", AF: "Afghanistan", NO: "Norway", FI: "Finland" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa", TR: "Turkey", MG: "Madagascar", AF: "Afghanistan", NO: "Norway", FI: "Finland", XME: "Middle East" };
 
 const en: RegistryCopy = {
   mistakes: {
@@ -983,6 +983,14 @@ const en: RegistryCopy = {
         "The Royal Kennel Club recommends up to an hour of exercise a day and grooming every day, notes that the breed sheds and suits a large house with a large garden. PDSA calls Beardies gentle, lovable, happy dogs and perfect family pets, but says their strong herding instinct means they may try to herd adults and children at home. PetMD says they are gentle around children, though every interaction between children and dogs must be supervised, recommends a daily brushing session and socialising the puppy from the day it comes home. WebMD says they are social and can become anxious if left alone for long, need physical and mental stimulation, and are not a hypoallergenic breed.",
       ],
       sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
+    },
+    saluki: {
+      aka: "Persian Greyhound, Gazelle Hound, Arabian Hound, perzijski hrt",
+      text: [
+        "The Saluki is a slender, very fast sighthound from the Middle East; the FCI lists it in Group 10 among the long-haired or fringed sighthounds, under FCI patronage. The FCI standard describes a dog that gives an impression of grace and symmetry, of great speed and endurance, with a smooth, soft, silky coat — feathered on the ears, legs, the back of the thighs and the tail in the feathered variety — and allows any colour or combination of colours, with brindles undesirable. The FCI standard gives an average height of 58–71 cm, bitches proportionally smaller, but no weight; PDSA gives an average weight of 16–29.5 kg and an average lifespan of over 10 years. As a large dog, it is usually fully grown at around 15–18 months (PetMD).",
+        "PDSA says Salukis need over two hours of exercise every day, ideally in a contained area, because they have a strong chase instinct and recall is not always easy; WebMD advises always keeping them on a leash and behind a high fence. PetMD recommends a quick brushing once or twice a week and says Salukis do not want to be left alone all day and can develop separation anxiety; WebMD recommends brushing their teeth daily. PetMD says they are not the most kid-friendly breed because they like a calm, quiet home, WebMD that they are better off in households with older children, and PDSA asks owners to keep their chase instinct in mind around other pets.",
+      ],
+      sources: ["S1085", "S1086", "S1087", "S1088", "S10"],
     },
 
 
