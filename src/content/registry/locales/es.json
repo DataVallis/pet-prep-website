@@ -1210,7 +1210,15 @@
       "synonyms": [
         "Chow-chow",
         "Chow"
-      ]
+      ],
+      "colours": {
+        "red": "Rojo",
+        "black": "Negro",
+        "cream": "Crema",
+        "fawn": "Leonado",
+        "blue": "Azul",
+        "white": "Blanco"
+      }
     },
     "old_english_sheepdog": {
       "name": "Bobtail",
@@ -1218,7 +1226,11 @@
       "synonyms": [
         "Antiguo pastor inglés",
         "Old English Sheepdog"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Gris y blanco",
+        "blue-white": "Azul y blanco"
+      }
     },
     "pekingese": {
       "name": "Pequinés",
@@ -1253,7 +1265,11 @@
       "synonyms": [
         "Mittelschnauzer",
         "Standard Schnauzer"
-      ]
+      ],
+      "colours": {
+        "pepper-salt": "Sal y pimienta",
+        "black": "Negro"
+      }
     },
     "coton_de_tulear": {
       "name": "Coton de Tuléar",
@@ -1268,14 +1284,28 @@
       "slug": "setter-ingles",
       "synonyms": [
         "English Setter"
-      ]
+      ],
+      "colours": {
+        "blue-belton": "Belton azul",
+        "orange-belton": "Belton naranja",
+        "blue-belton-tan": "Tricolor (belton azul y fuego)",
+        "lemon-belton": "Belton limón",
+        "liver-belton": "Belton hígado",
+        "liver-belton-tan": "Tricolor (belton hígado y fuego)"
+      }
     },
     "dogue_de_bordeaux": {
       "name": "Dogo de Burdeos",
       "slug": "dogo-de-burdeos",
       "synonyms": [
         "Dogue de Bordeaux"
-      ]
+      ],
+      "colours": {
+        "mahogany-brown-mask": "Caoba, máscara marrón",
+        "fawn-black-mask": "Leonado, máscara negra",
+        "fawn-no-mask": "Leonado, sin máscara",
+        "isabella": "Isabela"
+      }
     },
     "flat_coated_retriever": {
       "name": "Retriever de pelo liso",
@@ -1283,25 +1313,50 @@
       "synonyms": [
         "Flat coated retriever",
         "Flat-coated retriever"
-      ]
+      ],
+      "colours": {
+        "black": "Negro",
+        "liver": "Hígado"
+      }
     },
     "lhasa_apso": {
       "name": "Lhasa apso",
       "slug": "lhasa-apso",
       "synonyms": [
         "Lhasa"
-      ]
+      ],
+      "colours": {
+        "golden": "Dorado",
+        "honey": "Miel",
+        "dark-grizzle": "Grizzle oscuro",
+        "smoke": "Humo",
+        "parti-colour": "Multicolor",
+        "black": "Negro",
+        "white": "Blanco",
+        "brown": "Marrón"
+      }
     },
     "border_terrier": {
       "name": "Border terrier",
-      "slug": "border-terrier"
+      "slug": "border-terrier",
+      "colours": {
+        "grizzle-tan": "Grizzle y fuego",
+        "red": "Rojo",
+        "wheaten": "Trigueño",
+        "blue-tan": "Azul y fuego"
+      }
     },
     "leonberger": {
       "name": "Leonberger",
       "slug": "leonberger",
       "synonyms": [
         "Leonberg"
-      ]
+      ],
+      "colours": {
+        "lion-yellow": "Amarillo león",
+        "red": "Rojo",
+        "sandy": "Arena"
+      }
     },
     "beauceron": {
       "name": "Pastor de Beauce",
@@ -1309,7 +1364,11 @@
       "synonyms": [
         "Beauceron",
         "Pastor Beauceron"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Negro y fuego",
+        "harlequin": "Arlequín"
+      }
     },
     "borzoi": {
       "name": "Borzoi",
@@ -1715,6 +1774,17 @@
         "black-tan": "Negro y fuego",
         "grizzle": "Grizzle"
       }
+    },
+    "welsh_springer_spaniel": {
+      "name": "Springer spaniel galés",
+      "slug": "springer-spaniel-gales",
+      "synonyms": [
+        "Welsh Springer Spaniel",
+        "Welsh Springer",
+        "Welshie",
+        "Welsh Starter",
+        "Springer galés"
+      ]
     }
   },
   "suitability_labels": {
