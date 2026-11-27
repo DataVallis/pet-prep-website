@@ -1313,7 +1313,15 @@
       "synonyms": [
         "Chow-chow",
         "Chowchow"
-      ]
+      ],
+      "colours": {
+        "red": "Röd",
+        "black": "Svart",
+        "cream": "Gräddfärgad",
+        "fawn": "Fawn",
+        "blue": "Blå",
+        "white": "Vit"
+      }
     },
     "old_english_sheepdog": {
       "name": "Old english sheepdog",
@@ -1321,7 +1329,11 @@
       "synonyms": [
         "Bobtail",
         "Old English Sheepdog"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Gråvit",
+        "blue-white": "Blåvit"
+      }
     },
     "pekingese": {
       "name": "Pekingese",
@@ -1357,7 +1369,11 @@
         "Schnauzer",
         "Mittelschnauzer",
         "Standard schnauzer"
-      ]
+      ],
+      "colours": {
+        "pepper-salt": "Peppar och salt",
+        "black": "Svart"
+      }
     },
     "coton_de_tulear": {
       "name": "Coton de Tuléar",
@@ -1372,7 +1388,15 @@
       "slug": "engelsk-setter",
       "synonyms": [
         "English Setter"
-      ]
+      ],
+      "colours": {
+        "blue-belton": "Blue belton",
+        "orange-belton": "Orange belton",
+        "blue-belton-tan": "Trefärgad (blue belton och tan)",
+        "lemon-belton": "Lemon belton",
+        "liver-belton": "Liver belton",
+        "liver-belton-tan": "Trefärgad (liver belton och tan)"
+      }
     },
     "dogue_de_bordeaux": {
       "name": "Dogue de Bordeaux",
@@ -1380,7 +1404,13 @@
       "synonyms": [
         "Bordeauxdogg",
         "Bordeauxmastiff"
-      ]
+      ],
+      "colours": {
+        "mahogany-brown-mask": "Mahogny med brun mask",
+        "fawn-black-mask": "Fawn med svart mask",
+        "fawn-no-mask": "Fawn utan mask",
+        "isabella": "Isabella"
+      }
     },
     "flat_coated_retriever": {
       "name": "Flatcoated retriever",
@@ -1388,7 +1418,11 @@
       "synonyms": [
         "Flat-coated retriever",
         "Flat coated retriever"
-      ]
+      ],
+      "colours": {
+        "black": "Svart",
+        "liver": "Leverbrun"
+      }
     },
     "lhasa_apso": {
       "name": "Lhasa apso",
@@ -1396,25 +1430,50 @@
       "synonyms": [
         "Lhasa",
         "Lhasa-apso"
-      ]
+      ],
+      "colours": {
+        "golden": "Guld",
+        "honey": "Honungsfärgad",
+        "dark-grizzle": "Mörk grizzle",
+        "smoke": "Rökfärgad",
+        "parti-colour": "Flerfärgad",
+        "black": "Svart",
+        "white": "Vit",
+        "brown": "Brun"
+      }
     },
     "border_terrier": {
       "name": "Border terrier",
       "slug": "border-terrier",
       "synonyms": [
         "Borderterrier"
-      ]
+      ],
+      "colours": {
+        "grizzle-tan": "Grizzlad och tan",
+        "red": "Röd",
+        "wheaten": "Vetefärgad",
+        "blue-tan": "Blå och tan"
+      }
     },
     "leonberger": {
       "name": "Leonberger",
-      "slug": "leonberger"
+      "slug": "leonberger",
+      "colours": {
+        "lion-yellow": "Lejongul",
+        "red": "Röd",
+        "sandy": "Sandfärgad"
+      }
     },
     "beauceron": {
       "name": "Beauceron",
       "slug": "beauceron",
       "synonyms": [
         "Berger de Beauce"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Svart och tan",
+        "harlequin": "Harlekin"
+      }
     },
     "borzoi": {
       "name": "Borzoi",
@@ -1801,6 +1860,42 @@
         "Bluetick",
         "Blue Tick Coonhound"
       ]
+    },
+    "welsh_springer_spaniel": {
+      "name": "Welsh springer spaniel",
+      "slug": "welsh-springer-spaniel",
+      "synonyms": [
+        "Welsh springer"
+      ]
+    },
+    "smooth_fox_terrier": {
+      "name": "Foxterrier slät",
+      "slug": "foxterrier-slat",
+      "synonyms": [
+        "Slät foxterrier",
+        "Smooth fox terrier"
+      ],
+      "colours": {
+        "tricolour": "Trefärgad",
+        "white-tan": "Vit och tan",
+        "white-black": "Vit och svart",
+        "white": "Helvit"
+      }
+    },
+    "bearded_collie": {
+      "name": "Bearded collie",
+      "slug": "bearded-collie",
+      "synonyms": [
+        "Beardie"
+      ],
+      "colours": {
+        "grey-white": "Skiffergrå och vit",
+        "black-white": "Svartvit",
+        "blue-white": "Blåvit",
+        "brown-white": "Brun och vit",
+        "fawn-white": "Rödaktig fawn och vit",
+        "sandy-white": "Sandfärgad och vit"
+      }
     }
   },
   "suitability_labels": {
