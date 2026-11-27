@@ -1645,6 +1645,38 @@ const nb: RegistryCopy = {
       ],
       sources: ["S1061", "S1060", "S10"],
     },
+    welsh_springer_spaniel: {
+      aka: "Welsh springer, Welshie, Welsh Starter, Welsh Springer Spaniel",
+      text: [
+        "Welsh springer spaniel er en støkende fuglehund fra Storbritannia; FCI fører den opp i gruppe 8 blant støkehundene. FCI-standarden beskriver en symmetrisk, kompakt hund som ikke er høybent, bygd for utholdenhet og hardt arbeid, med rett, flat og silkemyk pels i bare rik rød og hvit og et robust, muntert og svært aktivt vesen med vennlig sinnelag. Mankehøyden er ca. 48 cm for hannhunder og 46 cm for tisper. PetMD oppgir en vekt på 35–55 pund (ca. 16–25 kg); en hund av denne størrelsen er utvokst ved rundt 12–15 måneder (PetMDs størrelsesklasse). En stor britisk studie (McMillan 2024, via Dogs Trust) oppgir en median forventet levealder på 14,0 år, og The Royal Kennel Club en levealder på over ti år.",
+        "The Royal Kennel Club anbefaler mer enn to timer mosjon om dagen og pelsstell oftere enn én gang i uken, og sier at rasen røyter. VCA sier at pelsen er lett å stelle, med børsting en eller to ganger i uken. PetMD kaller welsh springere kjærlige, lojale familiehunder med jevnt temperament, og sier at det sterke jaktinstinktet betyr at de alltid bør være i bånd eller på et sikkert, inngjerdet område, og at de ikke bør komme inn i hjem med små kjæledyr. Ifølge PetMD er tidlig sosialisering og konsekvent trening særlig viktig. WebMD sier at de er gode med barn, og anbefaler daglig tannpuss samt bad og klipping av klørne én gang i måneden.",
+      ],
+      sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
+    },
+    smooth_fox_terrier: {
+      aka: "Foxterrier glatthåret, Smooth Fox Terrier, Fox Terrier (Smooth), Smooth-coated Fox Terrier, Foxie, Fox Terrier",
+      text: [
+        "Glatthåret foxterrier (Smooth Fox Terrier) er en aktiv og livlig terrier fra Storbritannia (FCI-gruppe 3, terriere; seksjon store og mellomstore terriere). Den er den glatthårede slektningen til strihåret foxterrier og ikke det samme som toy fox terrier. FCI-standarden ber om kraftig benbygning og styrke i en liten kropp, aldri klumpete eller grov. Pelsen er rett, flat, glatt, hard og tett, med hvitt som dominerende farge: helt hvit, eller hvit med brune, svarte eller svarte og brune tegninger. Mankehøyden er høyst 39 cm for hannhunder, og tisper er noe lavere. FCI-standarden oppgir en vekt på 7,5–8 kg for hannhunder og 7–7,5 kg for tisper. En hund av denne størrelsen er utvokst ved rundt 9–12 måneder (PetMD). Dogs Trust oppgir en levealder på vanligvis over 12 år (PetMD: 10–13 år).",
+        "FCI-standarden kaller rasen vennlig, imøtekommende og uredd. PDSA anbefaler minst én times mosjon om dagen, og WebMD 1–2 timer. PetMD skriver at glatthårede foxterriere kommer godt overens med barn, er ideelle familiehunder og røyter moderat til tross for den korte pelsen. PetMD anbefaler børsting én gang i uken og kaller tidlig sosialisering med andre hunder og katter avgjørende. WebMD kaller dem flotte følgesvenner for barn, men råder til alltid å føre tilsyn, nevner et sterkt jaktinstinkt og anbefaler daglig tannpuss og ukentlig sjekk av ørene.",
+      ],
+      sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
+    },
+    bearded_collie: {
+      aka: "Beardie, Bearded Collie, Highland Collie, Hairy Mou'ed Collie, Mountain Collie",
+      text: [
+        "Bearded collie er en slank og aktiv gjeterhund fra Storbritannia; FCI fører den opp i gruppe 1 blant gjeterhundene. FCI-standarden beskriver en kraftig bygd hund som ikke må se for tung ut, med et klart, våkent uttrykk og dobbel pels: myk, lodden underull under en flat, stri dekkpels som ikke skal trimmes. Fargene er skifergrå, rødlig falben, svart, blå og alle nyanser av grått, brunt og sandfarget, med eller uten hvite tegn, men aldri merle. Mankehøyden er 53–56 cm for hannhunder og 51–53 cm for tisper; FCI-standarden oppgir ingen vekt. PDSA oppgir en gjennomsnittsvekt på 20–25 kg, og en hund av denne størrelsen er utvokst ved rundt 12–15 måneder (PetMDs størrelsesklasse). En stor britisk studie (McMillan 2024, via Dogs Trust) oppgir en median forventet levealder på 13,9 år, og The Royal Kennel Club en levealder på over 12 år.",
+        "The Royal Kennel Club anbefaler opptil én times mosjon om dagen og daglig pelsstell, og nevner at rasen røyter og passer i et stort hus med stor hage. PDSA kaller beardier milde, elskverdige og glade hunder og perfekte familiehunder, men sier at det sterke gjeteinstinktet kan få dem til å prøve å gjete både voksne og barn hjemme. PetMD skriver at de er milde med barn, selv om all kontakt mellom barn og hund må skje under tilsyn, og anbefaler daglig børsting og at valpen sosialiseres fra dagen den kommer hjem. WebMD sier at de er sosiale og kan bli engstelige hvis de er alene lenge, at de trenger fysisk og mental stimulering, og at de ikke er en hypoallergen rase.",
+      ],
+      sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
+    },
+    saluki: {
+      aka: "Persisk mynde, Saluki, Persian Greyhound, Gazelle Hound, Arabian Hound",
+      text: [
+        "Saluki er en slank og svært rask mynde fra Midtøsten; FCI fører den opp i gruppe 10 blant de langhårede eller frynsede myndene (rasen står under FCI-patronat). FCI-standarden beskriver en hund som gir inntrykk av ynde, symmetri, stor fart og utholdenhet, med glatt, myk og silkeaktig pels og frynser på ørene, bena, baksiden av lårene og halen hos den frynsede varianten. Alle farger og fargekombinasjoner godtas, men tigret er uønsket. Gjennomsnittlig mankehøyde er 58–71 cm, og tisper er forholdsmessig mindre; FCI-standarden oppgir ingen vekt. PDSA oppgir en gjennomsnittsvekt på 16–29,5 kg og en levealder på over ti år. En hund av denne størrelsen er vanligvis utvokst ved rundt 15–18 måneder (PetMD).",
+        "PDSA sier at salukier trenger mer enn to timer mosjon hver dag, helst på et inngjerdet område, fordi de har et sterkt jaktinstinkt og ikke alltid er lette å kalle inn. WebMD råder til alltid å holde dem i bånd og bak et høyt gjerde. PetMD anbefaler en rask børsting en eller to ganger i uken og skriver at salukier ikke liker å være alene hele dagen og kan utvikle separasjonsangst. WebMD anbefaler daglig tannpuss. PetMD skriver at de ikke er den mest barnevennlige rasen, siden de trives best i et rolig og stille hjem. WebMD sier at de trives best i hjem med eldre barn, og PDSA minner eierne om jaktinstinktet rundt andre kjæledyr.",
+      ],
+      sources: ["S1085", "S1086", "S1087", "S1088", "S10"],
+    },
     kerry_blue_terrier: {
       aka: "Kerry Blue Terrier, Kerry Blue",
       text: [
