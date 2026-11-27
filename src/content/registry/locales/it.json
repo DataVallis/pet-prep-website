@@ -1791,6 +1791,40 @@
         "white-black": "Bianco e nero",
         "white": "Tutto bianco"
       }
+    },
+    "bearded_collie": {
+      "name": "Bearded collie",
+      "slug": "bearded-collie",
+      "synonyms": [
+        "Collie barbuto",
+        "Beardie"
+      ],
+      "colours": {
+        "grey-white": "Grigio ardesia e bianco",
+        "black-white": "Nero e bianco",
+        "blue-white": "Blu e bianco",
+        "brown-white": "Marrone e bianco",
+        "fawn-white": "Fulvo rossiccio e bianco",
+        "sandy-white": "Sabbia e bianco"
+      }
+    },
+    "saluki": {
+      "name": "Levriero persiano",
+      "slug": "levriero-persiano",
+      "synonyms": [
+        "Saluki",
+        "Persian Greyhound"
+      ],
+      "colours": {
+        "fawn": "Fulvo",
+        "cream": "Crema",
+        "white": "Bianco",
+        "golden": "Dorato",
+        "red": "Rosso",
+        "grizzle-tan": "Grizzle e focato",
+        "tricolour": "Tricolore",
+        "black-tan": "Nero e focato"
+      }
     }
   },
   "suitability_labels": {

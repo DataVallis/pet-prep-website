@@ -1782,6 +1782,22 @@ const it: RegistryCopy = {
       ],
       sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
     },
+    bearded_collie: {
+      aka: "Bearded collie, Collie barbuto, Beardie, Highland Collie, Hairy Mou’ed Collie, Mountain Collie",
+      text: [
+        "Il Bearded collie è un cane da pastore snello e attivo originario della Gran Bretagna; la FCI lo inserisce nel gruppo 1, tra i cani da pastore. Lo standard FCI lo descrive come un cane di struttura robusta, che non deve sembrare troppo pesante, con un’espressione viva e curiosa e un mantello doppio e arruffato: sottopelo morbido e lanoso sotto un pelo di copertura piatto e ruvido, che non va tosato. I colori ammessi sono grigio ardesia, fulvo rossiccio, nero, blu e tutte le tonalità di grigio, marrone o sabbia, con o senza macchie bianche, mai merle. Sempre secondo lo standard FCI l’altezza è di 53–56 cm per i maschi e 51–53 cm per le femmine, mentre il peso non è indicato; la PDSA parla di un peso medio di 20–25 kg. Un cane di questa taglia finisce di crescere verso i 12–15 mesi (classe di taglia PetMD). Secondo un ampio studio britannico del 2024 (McMillan et al., riportato nella tabella di Dogs Trust) l’aspettativa di vita mediana è di 13,9 anni; il Royal Kennel Club indica più di 12 anni.",
+        "Il Royal Kennel Club raccomanda fino a un’ora di movimento al giorno e una spazzolata quotidiana, segnala che la razza perde il pelo e che è adatta a una casa grande con un ampio giardino. Secondo la PDSA i Bearded collie sono cani dolci, affettuosi e allegri, cani da famiglia perfetti, ma il loro forte istinto da pastore può spingerli a cercare di radunare adulti e bambini in casa. PetMD scrive che sono gentili con i bambini, anche se ogni interazione tra bambini e cani va sempre sorvegliata, e consiglia una sessione di spazzolatura al giorno e di socializzare il cucciolo fin dal primo giorno a casa. WebMD scrive che sono cani socievoli, che possono diventare ansiosi se restano soli a lungo, hanno bisogno di stimoli fisici e mentali e non sono una razza ipoallergenica.",
+      ],
+      sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
+    },
+    saluki: {
+      aka: "Levriero persiano, Saluki, Persian Greyhound, Gazelle Hound, Arabian Hound",
+      text: [
+        "Il levriero persiano, o Saluki, è un levriero snello e velocissimo originario del Medio Oriente (FCI gruppo 10, levrieri a pelo lungo o frangiato; con patrocinio FCI). Lo standard FCI descrive un cane che dà un’impressione di grazia e simmetria, di grande velocità e resistenza, con un pelo liscio, morbido e setoso che, nella varietà a pelo frangiato, forma frange sulle orecchie, sulle zampe, sul retro delle cosce e sulla coda. Sono ammessi tutti i colori e tutte le combinazioni di colori; il tigrato è indesiderato. Sempre per lo standard FCI l’altezza media è di 58–71 cm, con le femmine proporzionalmente più piccole, mentre il peso non è indicato; la PDSA parla di un peso medio di 16–29,5 kg e di un’aspettativa di vita media di oltre 10 anni. Essendo un cane di taglia grande, di solito finisce di crescere verso i 15–18 mesi (PetMD).",
+        "Secondo la PDSA i levrieri persiani hanno bisogno di più di due ore di movimento al giorno, possibilmente in uno spazio recintato, perché hanno un forte istinto di inseguimento e il richiamo non è sempre facile; WebMD consiglia di tenerli sempre al guinzaglio e dietro una recinzione alta. PetMD raccomanda una spazzolata veloce una o due volte alla settimana e scrive che non amano restare soli tutto il giorno e possono sviluppare ansia da separazione; WebMD consiglia di lavare loro i denti ogni giorno. Per PetMD non sono la razza più adatta ai bambini, perché amano una casa tranquilla e silenziosa; per WebMD stanno meglio in famiglie con bambini più grandi, mentre la PDSA invita a tenere presente il loro istinto di inseguimento quando ci sono altri animali.",
+      ],
+      sources: ["S1085", "S1086", "S1087", "S1088", "S10"],
+    },
   },
 };
 
