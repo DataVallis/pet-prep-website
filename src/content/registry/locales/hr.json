@@ -1991,6 +1991,39 @@
         "white-black": "Bijela s crnim oznakama",
         "white": "Potpuno bijela"
       }
+    },
+    "bearded_collie": {
+      "name": "Bradati koli",
+      "slug": "bradati-koli",
+      "synonyms": [
+        "Bearded collie",
+        "Beardie"
+      ],
+      "colours": {
+        "grey-white": "Škriljavosivo-bijela",
+        "black-white": "Crno-bijela",
+        "blue-white": "Plavo-bijela",
+        "brown-white": "Smeđe-bijela",
+        "fawn-white": "Crvenkastožuto-bijela (fawn)",
+        "sandy-white": "Pješčano-bijela"
+      }
+    },
+    "saluki": {
+      "name": "Saluki",
+      "slug": "saluki",
+      "synonyms": [
+        "Perzijski hrt"
+      ],
+      "colours": {
+        "fawn": "Jelenje žuta (fawn)",
+        "cream": "Krem",
+        "white": "Bijela",
+        "golden": "Zlatna",
+        "red": "Crvena",
+        "grizzle-tan": "Grizzle s podpalinama",
+        "tricolour": "Trobojna",
+        "black-tan": "Crna s podpalinama"
+      }
     }
   },
   "suitability_labels": {
