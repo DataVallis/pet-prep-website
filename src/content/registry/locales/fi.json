@@ -1924,6 +1924,24 @@
         "fawn-white": "Punertava kellanruskea ja valkoinen",
         "sandy-white": "Hiekanvärinen ja valkoinen"
       }
+    },
+    "saluki": {
+      "name": "Saluki",
+      "slug": "saluki",
+      "synonyms": [
+        "Persianvinttikoira",
+        "Persian greyhound"
+      ],
+      "colours": {
+        "fawn": "Kellanruskea",
+        "cream": "Kerma",
+        "white": "Valkoinen",
+        "golden": "Kullanvärinen",
+        "red": "Punainen",
+        "grizzle-tan": "Grizzle ja ruskea",
+        "tricolour": "Kolmivärinen",
+        "black-tan": "Musta ja ruskea"
+      }
     }
   },
   "suitability_labels": {
