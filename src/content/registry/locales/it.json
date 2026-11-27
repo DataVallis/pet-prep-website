@@ -1219,7 +1219,15 @@
       "synonyms": [
         "Chow-chow",
         "Chow"
-      ]
+      ],
+      "colours": {
+        "red": "Rosso",
+        "black": "Nero",
+        "cream": "Crema",
+        "fawn": "Fulvo",
+        "blue": "Blu",
+        "white": "Bianco"
+      }
     },
     "old_english_sheepdog": {
       "name": "Bobtail",
@@ -1228,7 +1236,11 @@
         "Pastore inglese antico",
         "Pastore inglese",
         "Old English Sheepdog"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Grigio e bianco",
+        "blue-white": "Blu e bianco"
+      }
     },
     "pekingese": {
       "name": "Pechinese",
@@ -1263,7 +1275,11 @@
       "synonyms": [
         "Mittelschnauzer",
         "Standard Schnauzer"
-      ]
+      ],
+      "colours": {
+        "pepper-salt": "Pepe e sale",
+        "black": "Nero"
+      }
     },
     "coton_de_tulear": {
       "name": "Coton de Tuléar",
@@ -1277,14 +1293,32 @@
       "slug": "setter-inglese",
       "synonyms": [
         "English Setter"
-      ]
+      ],
+      "colours": {
+        "blue-belton": "Belton blu",
+        "orange-belton": "Belton arancio",
+        "blue-belton-tan": "Tricolore (belton blu e focato)",
+        "lemon-belton": "Belton limone",
+        "liver-belton": "Belton fegato",
+        "liver-belton-tan": "Tricolore (belton fegato e focato)"
+      }
     },
     "lhasa_apso": {
       "name": "Lhasa apso",
       "slug": "lhasa-apso",
       "synonyms": [
         "Lhasa"
-      ]
+      ],
+      "colours": {
+        "golden": "Dorato",
+        "honey": "Miele",
+        "dark-grizzle": "Grizzle scuro",
+        "smoke": "Grigio fumo",
+        "parti-colour": "Pezzato",
+        "black": "Nero",
+        "white": "Bianco",
+        "brown": "Marrone"
+      }
     },
     "dogue_de_bordeaux": {
       "name": "Dogue de Bordeaux",
@@ -1292,7 +1326,13 @@
       "synonyms": [
         "Alano di Bordeaux",
         "Mastino francese"
-      ]
+      ],
+      "colours": {
+        "mahogany-brown-mask": "Mogano con maschera marrone",
+        "fawn-black-mask": "Fulvo con maschera nera",
+        "fawn-no-mask": "Fulvo senza maschera",
+        "isabella": "Isabella"
+      }
     },
     "flat_coated_retriever": {
       "name": "Flat coated retriever",
@@ -1301,18 +1341,33 @@
         "Flat-coated retriever",
         "Flatcoat",
         "Retriever a pelo liscio"
-      ]
+      ],
+      "colours": {
+        "black": "Nero",
+        "liver": "Fegato"
+      }
     },
     "border_terrier": {
       "name": "Border terrier",
-      "slug": "border-terrier"
+      "slug": "border-terrier",
+      "colours": {
+        "grizzle-tan": "Grizzle e focato",
+        "red": "Rosso",
+        "wheaten": "Grano",
+        "blue-tan": "Blu e focato"
+      }
     },
     "leonberger": {
       "name": "Leonberger",
       "slug": "leonberger",
       "synonyms": [
         "Leonberg"
-      ]
+      ],
+      "colours": {
+        "lion-yellow": "Giallo leone",
+        "red": "Rosso",
+        "sandy": "Sabbia"
+      }
     },
     "beauceron": {
       "name": "Beauceron",
@@ -1321,7 +1376,11 @@
         "Pastore di Beauce",
         "Berger de Beauce",
         "Bas rouge"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Nero e focato",
+        "harlequin": "Arlecchino"
+      }
     },
     "bouvier_des_flandres": {
       "name": "Bovaro delle Fiandre",
@@ -1710,6 +1769,28 @@
         "Bluetick",
         "Blue Tick Coonhound"
       ]
+    },
+    "welsh_springer_spaniel": {
+      "name": "Welsh springer spaniel",
+      "slug": "welsh-springer-spaniel",
+      "synonyms": [
+        "Springer spaniel gallese",
+        "Welsh springer"
+      ]
+    },
+    "smooth_fox_terrier": {
+      "name": "Fox terrier a pelo liscio",
+      "slug": "fox-terrier-a-pelo-liscio",
+      "synonyms": [
+        "Smooth fox terrier",
+        "Fox terrier liscio"
+      ],
+      "colours": {
+        "tricolour": "Tricolore",
+        "white-tan": "Bianco e focato",
+        "white-black": "Bianco e nero",
+        "white": "Tutto bianco"
+      }
     }
   },
   "suitability_labels": {

@@ -1766,6 +1766,22 @@ const it: RegistryCopy = {
       ],
       sources: ["S1061", "S1060", "S10"],
     },
+    welsh_springer_spaniel: {
+      aka: "Welsh springer spaniel, Springer spaniel gallese, Welsh Springer, Welshie, Welsh Starter",
+      text: [
+        "Il Welsh springer spaniel è un cane da caccia da cerca originario della Gran Bretagna; la FCI lo inserisce nel gruppo 8, nella sezione dei cani da cerca nella selvaggina (flushing dogs). Lo standard FCI lo descrive come un cane simmetrico e compatto, non troppo alto sulle zampe, costruito per la resistenza e per il lavoro duro, dal pelo diritto, piatto e setoso, solo di colore rosso intenso e bianco, e dal carattere robusto, allegro e molto attivo, con un’indole gentile. Sempre secondo lo standard FCI l’altezza è di circa 48 cm per i maschi e 46 cm per le femmine; PetMD indica un peso di 35–55 libbre (circa 16–25 kg). Un cane di questa taglia finisce di crescere verso i 12–15 mesi (classe di taglia PetMD). Secondo un ampio studio britannico del 2024 (McMillan et al., ripreso nella tabella di Dogs Trust) l’aspettativa di vita mediana è di 14,0 anni; il Royal Kennel Club parla di oltre 10 anni.",
+        "Il Royal Kennel Club raccomanda più di due ore di movimento al giorno e una cura del mantello più di una volta alla settimana, e segnala che la razza perde il pelo. Secondo VCA il mantello non è difficile da curare: basta spazzolarlo una o due volte alla settimana. PetMD descrive i Welsh springer come cani di famiglia affettuosi, fedeli e dal carattere equilibrato; il forte istinto predatorio impone di tenerli sempre al guinzaglio o in uno spazio ben recintato e sconsiglia di accoglierli in case con animali piccoli; particolarmente importanti sono la socializzazione precoce e un addestramento coerente. WebMD scrive che vanno d’accordo con i bambini e consiglia di lavare i denti ogni giorno e di fare il bagno e tagliare le unghie una volta al mese.",
+      ],
+      sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
+    },
+    smooth_fox_terrier: {
+      aka: "Fox terrier a pelo liscio, Fox Terrier (Smooth), Smooth-coated Fox Terrier, Smooth Fox Terrier, Foxie, Fox Terrier",
+      text: [
+        "Il fox terrier a pelo liscio è un terrier attivo e vivace originario della Gran Bretagna (FCI gruppo 3, terrier; sezione terrier di taglia grande e media): è la varietà a pelo liscio del fox terrier a pelo duro e non va confuso con il toy fox terrier. Lo standard FCI chiede ossatura e forza in uno spazio ridotto, mai massiccio né grossolano, con un mantello diritto, piatto, liscio, duro e fitto. Il colore prevalente è il bianco: tutto bianco, oppure bianco con segni focati, neri e focati oppure neri. L’altezza al garrese non supera i 39 cm per i maschi ed è leggermente inferiore per le femmine. Sempre per la FCI il peso è di 7,5–8 kg per i maschi e 7–7,5 kg per le femmine. Un cane di questa taglia finisce di crescere verso i 9–12 mesi (PetMD); Dogs Trust indica un’aspettativa di vita di solito pari o superiore a 12 anni (PetMD: 10–13 anni).",
+        "Lo standard FCI definisce la razza amichevole, espansiva e intrepida. La PDSA raccomanda almeno un’ora di movimento al giorno, WebMD da una a due ore. PetMD scrive che i fox terrier a pelo liscio vanno d’accordo con i bambini, sono ottimi cani da famiglia e, nonostante il pelo corto, perdono pelo in misura moderata; consiglia di spazzolarli una volta alla settimana e considera fondamentale la socializzazione precoce con altri cani e con i gatti. WebMD li definisce ottimi compagni per i bambini, ma consiglia di sorvegliare il loro rapporto; segnala inoltre un forte istinto predatorio e raccomanda di lavare i denti ogni giorno e di controllare le orecchie ogni settimana.",
+      ],
+      sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
+    },
   },
 };
 
