@@ -201,6 +201,9 @@ const hr: Dictionary = {
         { title: "Poštuje školu i san", text: "Tihi sati pauziraju podsjetnike. Obrok koji pada u vrijeme škole tvoj je zadatak, a ne djetetov." },
         { title: "Stvarne posljedice, nježno", text: "Zanemarivanje znači odlazak veterinaru ili u sklonište – nikad zastrašujuće, uvijek s novim početkom." },
         { title: "Jedinstven", text: "Svaki ljubimac dobiva vlastitu dlaku, šare i oči – fotorealistično i nikad dvaput isto." },
+        { title: "Uči", text: "Kratka vježba svaki dan – sjedi, dođi, lezi. Svaka pasmina uči svojim tempom." },
+        { title: "Njega prema pasmini", text: "Četkanje, zubi, pandže ili uši – samo gdje izvor kaže koliko ih često pasmina treba." },
+        { title: "Želje", text: "Dijete za ljubimca može tražiti krevet, igračku ili poslastice. Ti odlučuješ; stvari mijenjaju samo izgled." },
       ],
     },
     parents: {
@@ -281,12 +284,12 @@ const hr: Dictionary = {
           type: "steps",
           heading: "Od prvog dodira do certifikata",
           items: [
-            { title: "Roditelj stvara obitelj", text: "Registriraš se adresom e-pošte (prijava putem Applea i Googlea stiže uskoro). Svako dijete dodaš pod nadimkom i, po želji, s godinom rođenja. To je sve što pitamo o tvom djetetu." },
+            { title: "Roditelj stvara obitelj", text: "Registriraš se Googleom, Appleom ili e-adresom. Svako dijete dodaš s nadimkom i po želji godinom rođenja. To je sve što pitamo o djetetu." },
             { title: "Ti biraš ljubimca", text: "Odaberi pasminu (mješanac je besplatan), podrijetlo ljubimca – udomljen iz skloništa ili kupljen od uzgajivača – i dob pri dolasku: štene, mlad, odrastao ili senior." },
             { title: "Dijete se prijavljuje kodom", text: "Dobiješ šesteroznamenkasti kod koji vrijedi 15 minuta. Dijete ga upiše na svom mobitelu – bez e-pošte i bez lozinke. Izgubljen mobitel? Jednim dodirom odjavi dijete sa svih uređaja." },
             { title: "Ugovor o odgovornosti", text: "Dijete prstom potpisuje obećanje. Potpis je ljubimčevo rođenje: potrebe se počinju računati od tog trenutka, pa se ništa ne gubi ako potpiše kasnije." },
-            { title: "Dvanaest tjedana brige", text: "Hranjenje u pravim vremenskim okvirima, svježa voda, čišćenje i dnevna šetnja s pravim koracima. Kako ljubimac raste, mijenjaju se i njegove potrebe." },
-            { title: "Certifikat", text: "Nakon 12 tjedana ljubimac navrši godinu dana. Dijete dobiva Certifikat o odgovornosti sa svojim Care Scoreom – ili oboje na siguran način saznate da sada nije pravo vrijeme." },
+            { title: "Dvanaest tjedana brige", text: "Hranjenje u pravim terminima, svježa voda, čišćenje i svakodnevna šetnja s pravim koracima – uz to dresura, igra i njega koju pasmina treba. Kako ljubimac raste, mijenjaju se i njegove potrebe." },
+            { title: "Certifikat", text: "Dijete dobiva Certifikat o odgovornosti sa svojim Care Scoreom – ili oboje na siguran način saznate da sada nije pravo vrijeme." },
           ],
         },
         {
@@ -305,7 +308,7 @@ const hr: Dictionary = {
           head: ["Potreba", "Koliko često", "Ako se zaboravi"],
           rows: [
             ["Hrana", "Ujutro (6–10 h) i navečer (17–21 h), jednom u svakom okviru", "Gladan nakon otprilike 12,5 sata"],
-            ["Voda", "3 puta na dan, s razmakom od najmanje 3 sata", "Žedan nakon otprilike 10 sati"],
+            ["Voda", "Kad se posuda prazni, najmanje 3 sata razmaka", "Žedan nakon otprilike 10 sati"],
             ["Šetnja", "6 000 pravih koraka (štenci počinju s 2 000)", "Bez ikakve šetnje → sljedeće jutro bolestan"],
             ["Čišćenje", "Kad ljubimac napravi nered – nikad tijekom tihih sati", "Nema hrane ni vode dok se ne počisti"],
           ],
@@ -325,9 +328,22 @@ const hr: Dictionary = {
           ],
         },
         {
+          type: "cards",
+          heading: "Više od obaveza",
+          columns: 3,
+          items: [
+            { title: "Škola za pse", text: "Kratka vježba svaki dan: sjedi, dođi, lezi i obavljanje nužde vani. Svaka pasmina uči svojim tempom, a ti vidiš koje naredbe ljubimac već zna." },
+            { title: "Igra i maženje", text: "U 12-tjednom izazovu dijete se s ljubimcem može igrati loptom ili ga maziti kad god želi. To popravlja raspoloženje ljubimca, nikad rezultat." },
+            { title: "Njega prema pasmini", text: "Četkanje, zubi, pandže, uši ili nabori na licu – samo gdje izvor kaže koliko često. Frizer za pse i kupanje su podsjetnici za tebe." },
+            { title: "I mačke", text: "Mačka umjesto šetnje lovi štap s perjem, a njezin pijesak treba čistiti i jednom tjedno zamijeniti." },
+            { title: "Ime i album", text: "Ljubimcu možeš dati ime. Njegove fotografije rastu s njim u albumu, a štene čak slavi prvi rođendan." },
+            { title: "Želje", text: "Dijete za ljubimca može tražiti krevet, zdjelice, igračku ili poslastice. Ti odlučuješ. Stvari mijenjaju samo izgled, nikad igru." },
+          ],
+        },
+        {
           type: "callout",
           title: "I neuspjeh je rezultat.",
-          text: "Ako ljubimac završi u virtualnom skloništu, obitelj je naučila nešto dragocjeno – prije nego što je cijenu platila prava životinja. Možeš početi ispočetka, i s lakšom pasminom.",
+          text: "Ako ljubimac završi u virtualnom skloništu, obitelj je naučila nešto dragocjeno – prije nego što je cijenu platila prava životinja. Možeš početi ispočetka.",
           tone: "dark",
         },
       ],
@@ -359,7 +375,7 @@ const hr: Dictionary = {
           heading: "Care Score",
           paragraphs: [
             "Care Score = rutine obavljene na vrijeme ÷ očekivane rutine × 100, minus 10 bodova za svaku bolest, u rasponu od 0 do 100.",
-            "Rutina je jedan konkretan zadatak: svaki okvir hranjenja, svako od triju dolijevanja vode, čišćenje svakog nereda u roku od dva sata (škola i spavanje se ne računaju) i postizanje dnevnog cilja šetnje.",
+            "Rutina je jedan konkretan zadatak: svaki termin hranjenja, svako dolijevanje vode, čišćenje svake nezgode u roku od dva sata (škola i spavanje se ne računaju), dnevni cilj šetnje, dnevna vježba u školi i njega koju pasmina treba. Mačka umjesto šetnje ima igru i pijesak.",
             "Vrijeme dok je igra bila pauzirana, dok je ljubimac bio kod veterinara ili prije potpisivanja ugovora nikad ne ide na štetu djeteta. Prošli su dani zaključani, pa se ocjena kasnije ne može prepraviti.",
             "Braća i sestre koji dijele ljubimca pravedno dijele svaku rutinu. Računaju se samo djetetove vlastite radnje – ako jedno dijete radi sve, dobiva 100, a drugo 0.",
           ],
@@ -377,11 +393,24 @@ const hr: Dictionary = {
           type: "list",
           heading: "Sve ostaje pod tvojim nadzorom",
           items: [
-            "Tihi sati za školu i spavanje, po tvom lokalnom vremenu – i kod prelaska na ljetno ili zimsko vrijeme.",
+            "Tihi sati za školu i spavanje te vremenska zona – za cijelu obitelj ili posebno za svakog ljubimca, i kod prelaska na ljetno ili zimsko vrijeme.",
             "Pauziraj igru za bilo kojeg ljubimca jednim potvrđenim dodirom; djetetov se zaslon odmah zaključava.",
             "Pozovi drugog roditelja jednokratnim kodom; oboje vidite svako dijete i svakog ljubimca.",
             "Odjavi dijete sa svih uređaja ako se mobitel izgubi; kodovi su jednokratni i istječu nakon 15 minuta.",
             "Izvezi sve podatke svoje obitelji u datoteku ili odmah izbriši djetetov profil ili cijeli račun izravno iz aplikacije.",
+          ],
+        },
+        {
+          type: "cards",
+          heading: "I u tvojoj aplikaciji",
+          columns: 3,
+          items: [
+            { title: "Želje tvog djeteta", text: "Vidiš što je dijete tražilo i biraš Kupi ili Ne sada. Kupnja će biti moguća kad stvari budu u trgovinama App Store i Google Play." },
+            { title: "Podsjetnici za njegu", text: "Kod pasmina kojima trebaju frizer ili kupanje dobivaš podsjetnik s datumom. Označi ga kao obavljen; nikad ne utječe na djetetov rezultat." },
+            { title: "Ime za ljubimca", text: "Daj ljubimcu ime i promijeni ga kad god želiš – na primjer da odgovara pravoj životinji koju kasnije dovedete kući." },
+            { title: "Jedan mobitel za obitelj", text: "S opcijom Igraj kao mobitel prelazi u djetetovu igru. Natrag u roditeljski prikaz uvijek se vraćaš samo svojom prijavom." },
+            { title: "Prijava po tvom izboru", text: "Google, Apple ili e-adresa i lozinka. Djeca se uvijek prijavljuju kodom." },
+            { title: "Nadogradnja besplatnog ljubimca", text: "Pokreni 12-tjedni izazov s besplatnim ljubimcem kojeg dijete već ima i odaberi zadržava li se dosadašnji Care Score." },
           ],
         },
         {
@@ -464,7 +493,7 @@ const hr: Dictionary = {
             ["Poslastice, pakiranje od 10", "2,99 €"],
             ["Paket dobrodošlice: ležaljka + zdjelice + igračka", "15,99 € (umjesto 17,97 €)"],
           ],
-          note: "Želje stižu sa sljedećim ažuriranjem aplikacije; moći će se kupiti čim predmeti budu dostupni u trgovinama App Store i Google Play. Cijene vrijede za Sloveniju; trgovina prikazuje cijenu za tvoju zemlju.",
+          note: "Dijete već može tražiti stvari u aplikaciji; kupiti ih se može čim budu dostupne u trgovinama App Store i Google Play. Cijene vrijede za Sloveniju; trgovina prikazuje cijenu za tvoju zemlju.",
         },
         {
           type: "faq",
@@ -497,7 +526,7 @@ const hr: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "Za koju je dob PetPrep?", a: "Namijenjen je djeci od otprilike 7 do 12 godina, a dobro funkcionira i do 16. godine. Koriste ga i odrasli kako bi provjerili je li određena pasmina doista za njih prije kupnje ili udomljavanja." },
+            { q: "Za koga je PetPrep?", a: "Za svako dijete koje moli za ljubimca i za roditelje koji žele znati hoće li obećanje izdržati. Koriste ga i odrasli koji prije kupnje ili udomljavanja žele provjeriti je li određena pasmina zaista za njih." },
             { q: "Mogu li PetPrep koristiti sam, bez djece?", a: "Da. Otvori račun kao roditelj i dodaj sebe kao profil njegovatelja – dovoljan je nadimak, a godinu rođenja ostavi praznom. Odaberi pasminu, izradi šesteroznamenkasti kod, a zatim na istom ili drugom mobitelu odaberi „Ja sam dijete“ i upiši kod – tako postaješ njegovatelj. Budući da će to biti obiteljski pas, partnera ili djecu možeš dodati i kasnije pa se brinete zajedno. Cijena je ista kao za obitelji." },
             { q: "Koliko vremena treba svaki dan?", a: "Nekoliko minuta za hranu, vodu i čišćenje – plus šetnja koja je pravom psu ionako potrebna." },
             { q: "Prati li aplikacija lokaciju mog djeteta?", a: "Ne. Za šetnje broji samo korake. Ako to dopustiš, čita ih iz aplikacije Apple Health (iPhone) ili Health Connect (Android) – samo čitanje i samo koraci; gdje je dostupan, koristi i senzor pokreta na mobitelu. Dopuštenje traži na zaslonu šetnje. GPS se ne koristi." },
@@ -507,8 +536,13 @@ const hr: Dictionary = {
             { q: "A škola i vrijeme za spavanje?", a: "Postavi tihe sate. Ljubimac usporava, ništa se ne šalje, a obroke koji u cijelosti padaju u tihe sate preuzimaš ti." },
             { q: "Je li djeci strašno?", a: "Nije. Posljedice su stvarne, ali nježne: ljubimac ide veterinaru ili u sklonište, nikad ništa uznemirujuće, i uvijek postoji novi početak." },
             { q: "Koje su životinje dostupne?", a: "Danas [psi](species:dog) i [mačke](species:cat): besplatni mješanac i domaća mačka te 12-tjedni izazov s jednim od njih ili sa svakom pasminom iz [enciklopedije životinja](page:animals), u kojoj su navedene i njihove potrebe s izvorima. Druge vrste su u planu." },
-            { q: "Na kojim jezicima?", a: "Danas na engleskom i slovenskom. Nove jezike dodajemo kako PetPrep stiže u nove zemlje." },
+            { q: "Na kojim jezicima?", a: "Aplikacija je na engleskom i slovenskom, a ova stranica na 15 jezika. Novi jezici aplikacije stižu kako PetPrep bude kretao u nove zemlje." },
             { q: "Što se događa kad dobijemo pravog ljubimca?", a: "PetPrep može postati AI asistent za tvog pravog ljubimca. Taj je dio u razvoju." },
+            { q: "Može li se dijete igrati s ljubimcem?", a: "Da. U 12-tjednom izazovu dijete se može igrati loptom ili maziti ljubimca kad god želi, a mačka lovi štap s perjem. Igra popravlja raspoloženje ljubimca, ali nikad ne mijenja Care Score." },
+            { q: "Može li ljubimac imati ime?", a: "Da. Roditelj mu može dati ime i promijeniti ga bilo kada. Ime se vidi na djetetovu zaslonu, u albumu i na certifikatu." },
+            { q: "Mogu li roditelj i dijete dijeliti jedan mobitel?", a: "Da. U roditeljskoj aplikaciji dodirni Igraj kao pokraj djeteta i mobitel prelazi u njegovu igru. Natrag u roditeljski prikaz vraćaš se svojom prijavom. Na zajedničkom mobitelu koraci se broje samo dok je aktivan djetetov profil." },
+            { q: "Što ako putujemo u drugu vremensku zonu?", a: "Vremensku zonu možeš promijeniti za cijelu obitelj ili za svakog ljubimca, da obroci i tihi sati prate sat tamo gdje ste. Aplikacija to sama predloži kad je mobitel u drugoj zoni." },
+            { q: "Što mačka radi umjesto šetnje?", a: "Mačka ima igru sa štapom s perjem, a njezin pijesak treba čistiti i jednom tjedno zamijeniti. Dugodlake pasmine treba i četkati." },
           ],
         },
       ],
@@ -1190,7 +1224,22 @@ const hr: Dictionary = {
       title: "Za djecu koja žele ljubimca.",
       lead: "Bojanke za ispis, Curio i #walkyourpet – za djecu i roditelje koji se zajedno pripremaju za ljubimca.",
       hero: { src: "/curio/curio-waving.webp", alt: "Curio, maskota PetPrepa: mekana grafitna kocka s velikim bijelim očima, malom njuškom boje maline i ogrlicom boje mente, maše.", width: 720, height: 948 },
-      blocks: [{ type: "kidsHub" }],
+      blocks: [
+        { type: "kidsHub" },
+        {
+          type: "cards",
+          heading: "U aplikaciji PetPrep",
+          columns: 3,
+          items: [
+            { title: "Škola za pse", text: "Nauči ljubimca sjedi, dođi i lezi. Pohvali ga baš u pravom trenutku!" },
+            { title: "Igra i maženje", text: "Baci loptu, pomazi ljubimca ili mački mahni štapom s perjem." },
+            { title: "Želje", text: "Bi li tvoj ljubimac htio novi krevet ili igračku? Zamoli roditelje u aplikaciji." },
+            { title: "Album tvog ljubimca", text: "Gledaj kako tvoj ljubimac raste na fotografijama. Štene čak ima prvi rođendan." },
+            { title: "Prave šetnje", text: "Tvoje šetnje broje prave korake. Ljubimcu su potrebne – a i tebi su zabavne." },
+            { title: "Potpisano obećanje", text: "Prije nego što ljubimac dođe, prstom potpišeš obećanje." },
+          ],
+        },
+      ],
     },
     walkyourpet: {
       meta: {

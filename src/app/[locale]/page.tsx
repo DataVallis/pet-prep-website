@@ -46,6 +46,12 @@ const realismIcons = [
   <path key="d" d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />,
   <path key="e" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />,
   <path key="f" d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Zm10 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />,
+  // It learns (school): graduation cap
+  <path key="g" d="M22 10 12 5 2 10l10 5 10-5ZM6 12v5c3 2.5 9 2.5 12 0v-5M22 10v6" />,
+  // Care for its breed: brush
+  <path key="h" d="M14 3 21 10M9.5 7.5l7 7M11 6l-6.5 6.5a3 3 0 0 0 0 4.2l2.8 2.8a3 3 0 0 0 4.2 0L18 13" />,
+  // Wishes: gift
+  <path key="i" d="M3 9h18v4H3zM5 13v8h14v-8M12 9v12M12 9C10 5 6 5 7.5 7.5 8.5 9 12 9 12 9Zm0 0c2-4 6-4 4.5-1.5C15.5 9 12 9 12 9Z" />,
 ];
 
 export default async function Home({ params }: PageProps<"/[locale]">) {

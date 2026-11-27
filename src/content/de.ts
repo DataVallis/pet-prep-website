@@ -201,6 +201,9 @@ const de: Dictionary = {
         { title: "Schule und Schlaf haben Vorrang", text: "In den Ruhezeiten pausieren die Erinnerungen. Eine Mahlzeit während der Schulzeit übernehmen Sie, nicht Ihr Kind." },
         { title: "Echte Konsequenzen, behutsam", text: "Vernachlässigung bedeutet einen Tierarztbesuch oder das Tierheim – nie beängstigend, immer mit einem Neuanfang." },
         { title: "Einzigartig", text: "Jedes Haustier bekommt sein eigenes Fell, eigene Abzeichen, eigene Augen – fotorealistisch und nie zweimal gleich." },
+        { title: "Es lernt", text: "Jeden Tag eine kurze Übung – Sitz, Hier, Platz. Jede Rasse lernt in ihrem Tempo." },
+        { title: "Pflege nach Rasse", text: "Bürsten, Zähne, Krallen oder Ohren – nur dort, wo eine Quelle sagt, wie oft die Rasse das braucht." },
+        { title: "Wünsche", text: "Ihr Kind kann sich ein Bett, ein Spielzeug oder Leckerlis für das Haustier wünschen. Sie entscheiden; die Artikel ändern nur das Aussehen." },
       ],
     },
     parents: {
@@ -281,12 +284,12 @@ const de: Dictionary = {
           type: "steps",
           heading: "Vom ersten Tippen bis zum Zertifikat",
           items: [
-            { title: "Die Eltern legen die Familie an", text: "Sie registrieren sich mit Ihrer E-Mail-Adresse (Anmeldung mit Apple und Google folgt). Fügen Sie jedes Kind mit einem Spitznamen und optional einem Geburtsjahr hinzu. Mehr fragen wir über Ihr Kind nicht." },
+            { title: "Die Eltern legen die Familie an", text: "Sie registrieren sich mit Google, Apple oder Ihrer E-Mail-Adresse. Fügen Sie jedes Kind mit einem Spitznamen und optional einem Geburtsjahr hinzu. Mehr fragen wir über Ihr Kind nicht." },
             { title: "Sie wählen das Haustier", text: "Wählen Sie die Rasse (der Mischling ist kostenlos), die Herkunft des Haustiers – aus dem Tierheim adoptiert oder vom Züchter gekauft – und sein Alter beim Einzug: Welpe, jung, erwachsen oder Senior." },
             { title: "Ihr Kind meldet sich mit einem Code an", text: "Sie erhalten einen 6-stelligen Code, der 15 Minuten gilt. Ihr Kind gibt ihn auf seinem Handy ein – ohne E-Mail und ohne Passwort. Handy verloren? Mit einem Tippen melden Sie es auf allen Geräten ab." },
             { title: "Der Verantwortungsvertrag", text: "Ihr Kind unterschreibt ein Versprechen mit dem Finger. Die Unterschrift ist die Geburt des Haustiers: Erst ab diesem Moment zählen die Bedürfnisse, es geht also nichts verloren, wenn es später unterschreibt." },
-            { title: "Zwölf Wochen Pflege", text: "Füttern in den richtigen Zeitfenstern, frisches Wasser, Saubermachen und ein täglicher Spaziergang mit echten Schritten. Während das Haustier wächst, ändern sich seine Bedürfnisse." },
-            { title: "Das Zertifikat", text: "Nach 12 Wochen wird das Haustier ein Jahr alt. Ihr Kind erhält ein Verantwortungszertifikat mit seinem Care Score – oder Sie beide erfahren gefahrlos, dass jetzt noch nicht der richtige Zeitpunkt ist." },
+            { title: "Zwölf Wochen Pflege", text: "Füttern in den richtigen Zeitfenstern, frisches Wasser, Saubermachen und ein täglicher Spaziergang mit echten Schritten – dazu Training, Spiel und die Pflege, die die Rasse braucht. Während das Haustier wächst, ändern sich seine Bedürfnisse." },
+            { title: "Das Zertifikat", text: "Nach 12 Wochen erhält Ihr Kind ein Verantwortungszertifikat mit seinem Care Score – oder Sie beide erfahren gefahrlos, dass jetzt noch nicht der richtige Zeitpunkt ist." },
           ],
         },
         {
@@ -305,7 +308,7 @@ const de: Dictionary = {
           head: ["Bedürfnis", "Wie oft", "Wenn es vergessen wird"],
           rows: [
             ["Futter", "Morgens (6–10 Uhr) und abends (17–21 Uhr), einmal pro Zeitfenster", "Hungrig nach etwa 12,5 Stunden"],
-            ["Wasser", "3-mal am Tag, mindestens 3 Stunden Abstand", "Durstig nach etwa 10 Stunden"],
+            ["Wasser", "Wenn der Napf leer wird, mindestens 3 Stunden Abstand", "Durstig nach etwa 10 Stunden"],
             ["Spaziergang", "6.000 echte Schritte (Welpen beginnen bei 2.000)", "Gar kein Spaziergang → am nächsten Morgen krank"],
             ["Saubermachen", "Wenn das Haustier ein Malheur macht – nie während der Ruhezeiten", "Kein Futter und kein Wasser, bis es sauber ist"],
           ],
@@ -325,9 +328,22 @@ const de: Dictionary = {
           ],
         },
         {
+          type: "cards",
+          heading: "Mehr als Pflichten",
+          columns: 3,
+          items: [
+            { title: "Hundeschule", text: "Jeden Tag eine kurze Übung: Sitz, Hier, Platz und draußen sein Geschäft machen. Jede Rasse lernt in ihrem Tempo, und Sie sehen, welche Kommandos Ihr Haustier schon kann." },
+            { title: "Spielen und Kuscheln", text: "In der 12-Wochen-Challenge kann Ihr Kind jederzeit Ball spielen oder mit dem Haustier kuscheln. Das hebt die Laune des Tieres, nicht den Score." },
+            { title: "Pflege nach Rasse", text: "Bürsten, Zähne, Krallen, Ohren oder Gesichtsfalten – nur dort, wo eine Quelle sagt, wie oft. Hundefriseur und Baden sind Erinnerungen für Sie." },
+            { title: "Auch Katzen", text: "Eine Katze jagt eine Federangel statt spazieren zu gehen, und ihr Katzenklo muss gereinigt und einmal pro Woche gewechselt werden." },
+            { title: "Ein Name und ein Album", text: "Sie können dem Haustier einen Namen geben. Seine Fotos wachsen mit ihm im Album, und ein Welpe feiert sogar seinen ersten Geburtstag." },
+            { title: "Wünsche", text: "Ihr Kind kann sich ein Bett, Näpfe, ein Spielzeug oder Leckerlis für das Haustier wünschen. Sie entscheiden. Die Artikel ändern nur das Aussehen, nie das Spiel." },
+          ],
+        },
+        {
           type: "callout",
           title: "Auch Scheitern ist ein Ergebnis.",
-          text: "Landet das Haustier im virtuellen Tierheim, haben Sie etwas Wertvolles gelernt – bevor ein echtes Haustier den Preis dafür gezahlt hat. Sie können neu beginnen, auch mit einer einfacheren Rasse.",
+          text: "Landet das Haustier im virtuellen Tierheim, haben Sie etwas Wertvolles gelernt – bevor ein echtes Tier den Preis dafür gezahlt hat. Sie können neu beginnen.",
           tone: "dark",
         },
       ],
@@ -359,7 +375,7 @@ const de: Dictionary = {
           heading: "Der Care Score",
           paragraphs: [
             "Care Score = pünktlich erledigte Routinen ÷ erwartete Routinen × 100, minus 10 Punkte pro Krankheit, zwischen 0 und 100.",
-            "Eine Routine ist eine konkrete Aufgabe: jedes Fütterungsfenster, jede der drei Wassernachfüllungen, jedes Malheur innerhalb von zwei Stunden beseitigen (Schule und Schlaf zählen nicht) und das tägliche Spaziergangsziel erreichen.",
+            "Eine Routine ist eine konkrete Aufgabe: jedes Fütterungsfenster, jedes Nachfüllen von Wasser, das Beseitigen jedes Malheurs innerhalb von zwei Stunden (Schule und Schlaf zählen nicht), das tägliche Spaziergangsziel, die tägliche Trainingseinheit und die Pflege, die die Rasse braucht. Eine Katze hat statt des Spaziergangs Spielzeiten und ihr Katzenklo.",
             "Zeit, in der Sie das Spiel pausiert haben, das Haustier beim Tierarzt war oder der Vertrag noch nicht unterschrieben war, zählt nie gegen Ihr Kind. Vergangene Tage sind eingefroren, ein Score kann also später nicht umgeschrieben werden.",
             "Geschwister, die sich ein Haustier teilen, teilen jede Routine fair auf. Es zählen nur die eigenen Handlungen eines Kindes – erledigt eines alles, bekommt es 100 und das andere 0.",
           ],
@@ -377,11 +393,24 @@ const de: Dictionary = {
           type: "list",
           heading: "Sie behalten die Kontrolle",
           items: [
-            "Ruhezeiten für Schule und Schlaf, in Ihrer Ortszeit – auch über die Zeitumstellung hinweg.",
+            "Ruhezeiten für Schule und Schlaf und die Zeitzone – für die ganze Familie oder für jedes Haustier einzeln, auch über die Zeitumstellung hinweg.",
             "Pausieren Sie das Spiel für jedes Haustier mit einem bestätigten Tippen; der Bildschirm Ihres Kindes wird sofort gesperrt.",
             "Laden Sie den anderen Elternteil mit einem Einmalcode ein; Sie beide sehen jedes Kind und jedes Haustier.",
             "Melden Sie ein Kind auf allen Geräten ab, wenn ein Handy verloren geht; Codes gelten nur einmal und laufen nach 15 Minuten ab.",
             "Exportieren Sie alle Daten Ihrer Familie als Datei oder löschen Sie das Profil eines Kindes oder Ihr ganzes Konto sofort in der App.",
+          ],
+        },
+        {
+          type: "cards",
+          heading: "Außerdem in Ihrer App",
+          columns: 3,
+          items: [
+            { title: "Die Wünsche Ihres Kindes", text: "Sie sehen, was sich Ihr Kind gewünscht hat, und wählen Kaufen oder Jetzt nicht. Kaufen ist möglich, sobald die Artikel im App Store und bei Google Play sind." },
+            { title: "Pflege-Erinnerungen", text: "Bei Rassen, die zum Hundefriseur oder gebadet werden müssen, erhalten Sie eine Erinnerung mit Datum. Haken Sie sie ab; sie wirkt sich nie auf den Score Ihres Kindes aus." },
+            { title: "Ein Name für das Haustier", text: "Geben Sie dem Haustier einen Namen und ändern Sie ihn jederzeit – etwa passend zum echten Tier, das später einzieht." },
+            { title: "Ein Handy für die Familie", text: "Mit „Spielen als“ wechselt das Handy in das Spiel Ihres Kindes. Zurück zur Elternansicht geht es immer nur mit Ihrer Anmeldung." },
+            { title: "Anmelden, wie Sie möchten", text: "Google, Apple oder E-Mail und Passwort. Kinder melden sich immer mit einem Code an." },
+            { title: "Kostenloses Haustier upgraden", text: "Starten Sie die 12-Wochen-Challenge mit dem kostenlosen Haustier, das Ihr Kind schon hat, und wählen Sie, ob der bisherige Care Score erhalten bleibt." },
           ],
         },
         {
@@ -464,7 +493,7 @@ const de: Dictionary = {
             ["Leckerlis, 10er-Packung", "2,99 €"],
             ["Willkommenspaket: Bett + Näpfe + Spielzeug", "15,99 € (statt 17,97 €)"],
           ],
-          note: "Wünsche kommen mit dem nächsten App-Update; sie können gekauft werden, sobald die Artikel im App Store und bei Google Play verfügbar sind. Die Preise gelten für Slowenien; der Store zeigt den Preis für Ihr Land.",
+          note: "Ihr Kind kann sich in der App schon Dinge wünschen; kaufen kann man sie, sobald die Artikel im App Store und bei Google Play verfügbar sind. Die Preise gelten für Slowenien; der Store zeigt den Preis für Ihr Land.",
         },
         {
           type: "faq",
@@ -497,7 +526,7 @@ const de: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "Für welches Alter ist PetPrep gedacht?", a: "PetPrep ist für Kinder von etwa 7 bis 12 Jahren gedacht und funktioniert auch bis 16 gut. Auch Erwachsene nutzen es, um zu prüfen, ob eine bestimmte Rasse wirklich zu ihnen passt, bevor sie kaufen oder adoptieren." },
+            { q: "Für wen ist PetPrep gedacht?", a: "Für jedes Kind, das sich ein Haustier wünscht, und für Eltern, die wissen möchten, ob das Versprechen hält. Auch Erwachsene nutzen es, um vor dem Kauf oder der Adoption zu prüfen, ob eine bestimmte Rasse wirklich zu ihnen passt." },
             { q: "Kann ich PetPrep allein nutzen, ohne Kinder?", a: "Ja. Legen Sie ein Konto als Elternteil an und fügen Sie sich selbst als Betreuerprofil hinzu – ein Spitzname genügt, lassen Sie das Geburtsjahr leer. Wählen Sie die Rasse, erstellen Sie einen 6-stelligen Code und wählen Sie dann auf demselben oder einem anderen Handy „I'm a kid“ („Ich bin ein Kind“) und geben Sie den Code ein – so werden Sie zur betreuenden Person. Weil es ein Familienhund wird, können Sie später Ihren Partner oder Ihre Kinder hinzufügen und sich gemeinsam kümmern. Der Preis ist derselbe wie für Familien." },
             { q: "Wie viel Zeit kostet es pro Tag?", a: "Ein paar Minuten für Futter, Wasser und Saubermachen – plus den Spaziergang, den ein echter Hund ohnehin bräuchte." },
             { q: "Verfolgt die App den Standort meines Kindes?", a: "Nein. Für Spaziergänge zählt sie nur Schritte. Wenn Sie es erlauben, liest sie diese aus Apple Health (iPhone) oder Health Connect (Android) – nur lesend und nur Schritte; wo verfügbar, nutzt sie auch den Bewegungssensor des Handys. Die Berechtigung wird auf dem Spaziergang-Bildschirm abgefragt. GPS wird nicht genutzt." },
@@ -507,8 +536,13 @@ const de: Dictionary = {
             { q: "Was ist mit Schule und Schlafenszeit?", a: "Legen Sie Ruhezeiten fest. Das Haustier wird ruhiger, es wird nichts gesendet, und Mahlzeiten, die ganz in die Ruhezeiten fallen, übernehmen Sie." },
             { q: "Macht es Kindern Angst?", a: "Nein. Die Konsequenzen sind echt, aber behutsam: Das Haustier kommt zum Tierarzt oder ins Tierheim, nie etwas Drastisches, und es gibt immer einen Neuanfang." },
             { q: "Welche Tiere gibt es?", a: "Heute [Hunde](species:dog) und [Katzen](species:cat): einen kostenlosen Mischling und eine Hauskatze sowie die 12-wöchige Challenge mit einem der beiden oder mit jeder Rasse aus dem [Tierregister](page:animals), in dem auch ihre belegten Bedürfnisse stehen. Weitere Tierarten sind geplant." },
-            { q: "In welchen Sprachen?", a: "Die App gibt es heute auf Englisch und Slowenisch. Weitere Sprachen kommen hinzu, wenn PetPrep in neuen Ländern startet." },
+            { q: "In welchen Sprachen?", a: "Die App gibt es auf Englisch und Slowenisch, diese Website in 15 Sprachen. Weitere App-Sprachen folgen, wenn PetPrep in neuen Ländern startet." },
             { q: "Was passiert, wenn wir ein echtes Haustier bekommen?", a: "PetPrep kann zum KI-Assistenten für Ihr echtes Haustier werden. Dieser Teil ist in Entwicklung." },
+            { q: "Kann mein Kind mit dem Haustier spielen?", a: "Ja. In der 12-Wochen-Challenge kann Ihr Kind jederzeit Ball spielen oder kuscheln, und eine Katze jagt eine Federangel. Spielen hebt die Laune des Haustiers, ändert aber nie den Care Score." },
+            { q: "Kann das Haustier einen Namen haben?", a: "Ja. Ein Elternteil kann ihm einen Namen geben und ihn jederzeit ändern. Der Name steht auf dem Bildschirm Ihres Kindes, im Album und auf dem Zertifikat." },
+            { q: "Können sich Eltern und Kind ein Handy teilen?", a: "Ja. Tippen Sie in der Eltern-App beim Kind auf „Spielen als“, dann wechselt das Handy in sein Spiel. Zurück zur Elternansicht geht es mit Ihrer Anmeldung. Auf einem geteilten Handy zählen Schritte nur, solange das Profil des Kindes aktiv ist." },
+            { q: "Was, wenn wir in eine andere Zeitzone reisen?", a: "Sie können die Zeitzone für die ganze Familie oder für jedes Haustier ändern, damit Mahlzeiten und Ruhezeiten der Uhr vor Ort folgen. Die App schlägt das vor, wenn Ihr Handy in einer anderen Zeitzone ist." },
+            { q: "Was macht eine Katze statt eines Spaziergangs?", a: "Eine Katze bekommt Spielzeiten mit der Federangel, und ihr Katzenklo muss gereinigt und einmal pro Woche gewechselt werden. Langhaarige Rassen müssen außerdem gebürstet werden." },
           ],
         },
       ],
@@ -1190,7 +1224,22 @@ const de: Dictionary = {
       title: "Für Kinder, die sich ein Haustier wünschen.",
       lead: "Ausmalbilder zum Ausdrucken, Curio und #walkyourpet – für Kinder und Eltern, die sich gemeinsam auf ein Haustier vorbereiten.",
       hero: { src: "/curio/curio-waving.webp", alt: "Curio, das PetPrep-Maskottchen: ein weicher grafitfarbener Würfel mit großen weißen Augen, einer kleinen himbeerroten Nase und einem mintgrünen Halsband, winkend.", width: 720, height: 948 },
-      blocks: [{ type: "kidsHub" }],
+      blocks: [
+        { type: "kidsHub" },
+        {
+          type: "cards",
+          heading: "In der PetPrep-App",
+          columns: 3,
+          items: [
+            { title: "Hundeschule", text: "Bring deinem Haustier Sitz, Hier und Platz bei. Lob es genau im richtigen Moment!" },
+            { title: "Spielen und Kuscheln", text: "Wirf den Ball, streichle dein Haustier oder schwing für deine Katze die Federangel." },
+            { title: "Wünsche", text: "Hätte dein Haustier gern ein neues Bett oder ein Spielzeug? Frag deine Eltern in der App." },
+            { title: "Das Album deines Haustiers", text: "Sieh zu, wie dein Haustier auf Fotos groß wird. Ein Welpe hat sogar seinen ersten Geburtstag." },
+            { title: "Echte Spaziergänge", text: "Deine Spaziergänge zählen echte Schritte. Dein Haustier braucht sie – und dir machen sie auch Spaß." },
+            { title: "Ein Versprechen mit Unterschrift", text: "Bevor dein Haustier kommt, unterschreibst du ein Versprechen mit dem Finger." },
+          ],
+        },
+      ],
     },
     walkyourpet: {
       meta: {

@@ -200,6 +200,9 @@ const sl: Dictionary = {
         { title: "Spoštuje šolo in spanje", text: "Tihe ure ustavijo opomnike. Obrok med poukom je vaša naloga, ne otrokova." },
         { title: "Resnične, a nežne posledice", text: "Zanemarjanje pomeni obisk pri veterinarju ali selitev v zavetišče – nikoli strašljivo in vedno z možnostjo novega začetka." },
         { title: "Edinstven", text: "Vsak ljubljenček ima svojo dlako, svoje lise in oči – fotorealističen in nikoli dvakrat enak." },
+        { title: "Se uči", text: "Kratka vaja vsak dan – sedi, pridi, prostor. Vsaka pasma se uči po svoje." },
+        { title: "Nega po pasmi", text: "Česanje, zobje, kremplji ali ušesa – samo tam, kjer vir pove, kako pogosto jih pasma potrebuje." },
+        { title: "Želje", text: "Otrok lahko za ljubljenčka prosi za posteljo, igračo ali priboljške. Odločite vi; stvari so samo za videz." },
       ],
     },
     parents: {
@@ -280,12 +283,12 @@ const sl: Dictionary = {
           type: "steps",
           heading: "Od prvega dotika do certifikata",
           items: [
-            { title: "Starš ustvari družino", text: "Registrirate se z e-pošto (prijava z Apple in Google prihaja). Vsakega otroka dodate z vzdevkom in po želji z letnico rojstva. To je vse, kar o otroku sprašujemo." },
+            { title: "Starš ustvari družino", text: "Registrirate se z Googlom, Apple ali e-pošto. Vsakega otroka dodate z vzdevkom in po želji z letnico rojstva. To je vse, kar o otroku sprašujemo." },
             { title: "Izberete ljubljenčka", text: "Izberete pasmo (mešanček je brezplačen), izvor (posvojen iz zavetišča ali od vzreditelja) in starost ob prihodu: mladiček, mlad, odrasel ali starejši." },
             { title: "Otrok se prijavi s kodo", text: "Dobite 6-mestno kodo, ki velja 15 minut. Otrok jo vtipka na svojem telefonu – brez e-pošte in gesla. Izgubljen telefon? Z enim dotikom ga odjavite z vseh naprav." },
             { title: "Pogodba o odgovornosti", text: "Otrok s prstom podpiše obljubo. Z podpisom se ljubljenček rodi: potrebe začnejo teči šele takrat, zato otrok ničesar ne izgubi, če podpiše kasneje." },
-            { title: "Dvanajst tednov skrbi", text: "Hranjenje v pravih časovnih oknih, sveža voda, čiščenje in vsakodnevni sprehod s pravimi koraki. Ko ljubljenček raste, se njegove potrebe spreminjajo." },
-            { title: "Certifikat", text: "Po 12 tednih ljubljenček dopolni eno leto. Otrok prejme Certifikat odgovornosti s svojim Care Score – ali pa oba varno ugotovita, da zdaj še ni pravi čas." },
+            { title: "Dvanajst tednov skrbi", text: "Hranjenje v pravih časovnih oknih, sveža voda, čiščenje in vsakodnevni sprehod s pravimi koraki – pa še šola, igra in nega, ki jo potrebuje pasma. Ko ljubljenček raste, se njegove potrebe spreminjajo." },
+            { title: "Certifikat", text: "Po 12 tednih otrok prejme Certifikat odgovornosti s svojim Care Score – ali pa oba varno ugotovita, da zdaj še ni pravi čas." },
           ],
         },
         {
@@ -304,7 +307,7 @@ const sl: Dictionary = {
           head: ["Potreba", "Kako pogosto", "Če otrok pozabi"],
           rows: [
             ["Hrana", "Zjutraj (6–10) in zvečer (17–21), enkrat v vsakem oknu", "Lačen po približno 12,5 ure"],
-            ["Voda", "3-krat na dan, vsaj 3 ure narazen", "Žejen po približno 10 urah"],
+            ["Voda", "Ko se skleda prazni, vsaj 3 ure narazen", "Žejen po približno 10 urah"],
             ["Sprehod", "6.000 pravih korakov (mladiček začne pri 2.000)", "Brez sprehoda → naslednje jutro zboli"],
             ["Čiščenje", "Ko naredi nered – nikoli med tihimi urami", "Hrane in vode ni, dokler ni počiščeno"],
           ],
@@ -324,9 +327,22 @@ const sl: Dictionary = {
           ],
         },
         {
+          type: "cards",
+          heading: "Več kot le opravila",
+          columns: 3,
+          items: [
+            { title: "Pasja šola", text: "Kratka vaja vsak dan: sedi, pridi, prostor in lulanje zunaj. Vsaka pasma se uči po svoje, vi pa vidite, katere ukaze ljubljenček že zna." },
+            { title: "Igra in crkljanje", text: "V 12-tedenskem izzivu se otrok lahko z ljubljenčkom kadar koli igra z žogo ali ga crklja. To izboljša razpoloženje ljubljenčka, ne pa ocene." },
+            { title: "Nega po pasmi", text: "Česanje, zobje, kremplji, ušesa ali gube na obrazu – samo tam, kjer vir pove, kako pogosto. Frizer in kopanje sta opomnika za vas." },
+            { title: "Tudi mačke", text: "Muca namesto sprehoda lovi palico s peresom, njen pesek pa je treba čistiti in enkrat na teden zamenjati." },
+            { title: "Ime in album", text: "Ljubljenčku lahko daste ime. Njegove fotografije rastejo z njim v albumu, mladiček pa praznuje celo prvi rojstni dan." },
+            { title: "Želje", text: "Otrok lahko za ljubljenčka prosi za posteljo, sklede, igračo ali priboljške. Odločite vi. Stvari so samo za videz in igre nikoli ne spremenijo." },
+          ],
+        },
+        {
           type: "callout",
           title: "Tudi neuspeh je rezultat.",
-          text: "Če ljubljenček konča v virtualnem zavetišču, ste se naučili nekaj dragocenega – preden je ceno plačal pravi ljubljenček. Lahko začnete znova, tudi z lažjo pasmo.",
+          text: "Če ljubljenček konča v virtualnem zavetišču, ste se naučili nekaj dragocenega – preden je ceno plačal pravi ljubljenček. Lahko začnete znova.",
           tone: "dark",
         },
       ],
@@ -358,7 +374,7 @@ const sl: Dictionary = {
           heading: "Care Score",
           paragraphs: [
             "Care Score = pravočasno opravljene rutine ÷ pričakovane rutine × 100, minus 10 točk za vsako bolezen, med 0 in 100.",
-            "Rutina je ena konkretna naloga: vsako okno hranjenja, vsako od treh dolivanj vode, čiščenje vsakega nereda v dveh urah (šola in spanje se ne štejeta) in dosežen dnevni cilj sprehoda.",
+            "Rutina je ena konkretna naloga: vsako okno hranjenja, vsako dolivanje vode, čiščenje vsakega nereda v dveh urah (šola in spanje se ne štejeta), dosežen dnevni cilj sprehoda, dnevna vaja v šoli in nega, ki jo potrebuje pasma. Muca ima namesto sprehoda igro in pesek.",
             "Čas, ko ste igro ustavili, ko je bil ljubljenček pri veterinarju ali pred podpisom pogodbe, nikoli ne vpliva negativno na otrokovo oceno. Pretekli dnevi so zaklenjeni, zato se ocena naknadno ne more spremeniti.",
             "Sorojenci s skupnim ljubljenčkom si vsako rutino pošteno razdelijo. Šteje le, kar je otrok naredil sam – če eden naredi vse, ima 100, drugi 0.",
           ],
@@ -376,11 +392,24 @@ const sl: Dictionary = {
           type: "list",
           heading: "Nadzor ostane pri vas",
           items: [
-            "Tihe ure za šolo in spanje po vašem lokalnem času – tudi ob prestopu na poletni ali zimski čas.",
+            "Tihe ure za šolo in spanje ter časovni pas – za vso družino ali posebej za vsakega ljubljenčka, tudi ob prestopu na poletni ali zimski čas.",
             "Premor za kateregakoli ljubljenčka z enim potrjenim dotikom; otrokov zaslon se zaklene takoj.",
             "Drugega starša povabite z enkratno kodo; oba vidita vse otroke in vse ljubljenčke.",
             "Otroka ob izgubi telefona odjavite z vseh naprav; kode so enkratne in potečejo v 15 minutah.",
             "Vse podatke družine lahko kar v aplikaciji izvozite v datoteko ali takoj izbrišete otrokov profil oziroma celoten račun.",
+          ],
+        },
+        {
+          type: "cards",
+          heading: "Še v vaši aplikaciji",
+          columns: 3,
+          items: [
+            { title: "Želje vašega otroka", text: "Vidite, za kaj je otrok prosil, in izberete Kupi ali Ne zdaj. Nakup bo mogoč, ko bodo stvari v App Store in Google Play." },
+            { title: "Opomniki za nego", text: "Pri pasmah, ki potrebujejo frizerja ali kopanje, dobite opomnik z datumom. Označite ga kot opravljenega; na otrokovo oceno nikoli ne vpliva." },
+            { title: "Ime za ljubljenčka", text: "Ljubljenčku date ime in ga kadar koli spremenite – na primer, da se ujema s pravim ljubljenčkom, ki ga pozneje pripeljete domov." },
+            { title: "En telefon za vso družino", text: "Z gumbom Igraj kot telefon preklopite v otrokovo igro. Nazaj v pogled starša pridete vedno samo s svojo prijavo." },
+            { title: "Prijava po vaši izbiri", text: "Google, Apple ali e-pošta in geslo. Otroci se vedno prijavijo s kodo." },
+            { title: "Nadgradnja brezplačnega ljubljenčka", text: "12-tedenski izziv začnete z brezplačnim ljubljenčkom, ki ga otrok že ima, in izberete, ali se dosedanji Care Score ohrani." },
           ],
         },
         {
@@ -463,7 +492,7 @@ const sl: Dictionary = {
             ["Priboljški, paket po 10", "2,99 €"],
             ["Paket „Dobrodošlica“: postelja + skledi + igrača", "15,99 € (namesto 17,97 €)"],
           ],
-          note: "„Želje“ prihajajo z naslednjo posodobitvijo aplikacije; kupiti jih bo mogoče, ko bodo stvari na voljo v App Store in Google Play. Cene veljajo v Sloveniji, trgovina pokaže ceno za vašo državo.",
+          note: "Otrok lahko v aplikaciji že prosi za stvari; kupiti jih bo mogoče, ko bodo na voljo v App Store in Google Play. Cene veljajo v Sloveniji, trgovina pokaže ceno za vašo državo.",
         },
         {
           type: "faq",
@@ -496,7 +525,7 @@ const sl: Dictionary = {
         {
           type: "faq",
           items: [
-            { q: "Za katero starost je PetPrep?", a: "Za otroke je namenjen približno od 7 do 12 let, dobro pa deluje do 16. leta. Uporabljajo ga tudi odrasli, ki želijo pred nakupom ali posvojitvijo preizkusiti, ali je določena pasma res zanje." },
+            { q: "Za koga je PetPrep?", a: "Za vsakega otroka, ki prosi za ljubljenčka, in za starše, ki želijo vedeti, ali bo obljuba zdržala. Uporabljajo ga tudi odrasli, ki želijo pred nakupom ali posvojitvijo preveriti, ali je določena pasma res zanje." },
             { q: "Ali lahko PetPrep uporabljam sam, brez otrok?", a: "Da. Ustvarite račun kot starš in sebe dodajte kot skrbnika – dovolj je vzdevek, letnice rojstva ne vpišete. Izberete pasmo, ustvarite 6-mestno kodo, nato na istem ali drugem telefonu izberete „Sem otrok“ in vtipkate kodo – tako postanete skrbnik. Ker bo to družinski pes, lahko kasneje dodate partnerja ali otroke, da skrbite skupaj. Cena je enaka kot za družine." },
             { q: "Koliko časa vzame na dan?", a: "Nekaj minut za hrano, vodo in čiščenje – in sprehod, ki bi ga pravi pes tako ali tako potreboval." },
             { q: "Ali aplikacija sledi lokaciji otroka?", a: "Ne. Aplikacija za sprehod samo šteje korake. Če to dovolite, jih bere iz aplikacije Apple Zdravje (iPhone) ali Health Connect (Android) – samo za branje in samo korake; kjer je na voljo, uporabi tudi senzor gibanja v telefonu. Za dovoljenje vpraša v oknu sprehoda. GPS se ne uporablja." },
@@ -506,8 +535,13 @@ const sl: Dictionary = {
             { q: "Kaj pa šola in spanje?", a: "Nastavite tihe ure. Ljubljenček se upočasni, obvestil ni, obroke, ki v celoti padejo v tihe ure, pa opravite vi." },
             { q: "Je za otroke strašljivo?", a: "Ne. Posledice so resnične, a nežne: ljubljenček gre k veterinarju ali v zavetišče, nikoli nič grafičnega, in vedno obstaja nov začetek." },
             { q: "Katere živali so na voljo?", a: "Danes [psi](species:dog) in [mačke](species:cat): brezplačni mešanček in domača mačka ter 12-tedenski izziv z njima ali s katero koli pasmo iz [registra živali](page:animals), kjer so navedene tudi njihove potrebe z viri. Druge vrste so v načrtu." },
-            { q: "V katerih jezikih?", a: "Danes v angleščini in slovenščini. Več jezikov dodajamo, ko PetPrep prihaja v nove države." },
+            { q: "V katerih jezikih?", a: "Aplikacija je v angleščini in slovenščini, ta spletna stran pa v 15 jezikih. Novi jeziki aplikacije pridejo, ko bo PetPrep prišel v nove države." },
             { q: "Kaj se zgodi, ko dobimo pravega ljubljenčka?", a: "PetPrep lahko postane AI asistent za vašega pravega ljubljenčka. Ta del je v razvoju." },
+            { q: "Ali se otrok lahko igra z ljubljenčkom?", a: "Da. V 12-tedenskem izzivu se otrok lahko z ljubljenčkom kadar koli igra z žogo ali ga crklja, muca pa lovi palico s peresom. Igra izboljša razpoloženje ljubljenčka, Care Score pa se zaradi nje ne spremeni." },
+            { q: "Ali ima lahko ljubljenček ime?", a: "Da. Starš mu lahko da ime in ga kadar koli spremeni. Ime je na otrokovem zaslonu, v albumu in na certifikatu." },
+            { q: "Ali si starš in otrok lahko delita en telefon?", a: "Da. V aplikaciji starša pri otroku tapnete Igraj kot in telefon preklopi v njegovo igro. Nazaj v pogled starša pridete s svojo prijavo. Na skupnem telefonu se koraki štejejo le, ko je odprt otrokov profil." },
+            { q: "Kaj, če potujemo v drug časovni pas?", a: "Časovni pas lahko spremenite za vso družino ali za vsakega ljubljenčka posebej, da obroki in tihe ure sledijo uri, kjer ste. Aplikacija to predlaga sama, ko je telefon v drugem časovnem pasu." },
+            { q: "Kaj počne muca namesto sprehoda?", a: "Muca se igra s palico s peresom, njen pesek pa je treba čistiti in enkrat na teden zamenjati. Dolgodlake pasme je treba tudi česati." },
           ],
         },
       ],
@@ -1242,7 +1276,22 @@ const sl: Dictionary = {
       title: "Za otroke, ki si želijo hišnega ljubljenčka.",
       lead: "Pobarvanke za tiskanje, Curio in #walkyourpet – za otroke in starše, ki se skupaj pripravljajo na hišnega ljubljenčka.",
       hero: { src: "/curio/curio-waving.webp", alt: "Curio, maskota PetPrepa: mehka grafitna kocka z velikima belima očesoma, malinastim nosom in metino ovratnico, ki maha.", width: 720, height: 948 },
-      blocks: [{ type: "kidsHub" }],
+      blocks: [
+        { type: "kidsHub" },
+        {
+          type: "cards",
+          heading: "V aplikaciji PetPrep",
+          columns: 3,
+          items: [
+            { title: "Pasja šola", text: "Nauči ljubljenčka sedi, pridi in prostor. Pohvali ga ob pravem trenutku!" },
+            { title: "Igra in crkljanje", text: "Vrzi žogo, poboži ljubljenčka ali muci pomahaj s palico s peresom." },
+            { title: "Želje", text: "Bi si tvoj ljubljenček želel novo posteljo ali igračo? V aplikaciji prosi starše." },
+            { title: "Album tvojega ljubljenčka", text: "Glej, kako ljubljenček raste na fotografijah. Mladiček ima celo prvi rojstni dan." },
+            { title: "Pravi sprehodi", text: "Tvoji sprehodi štejejo prave korake. Ljubljenček jih potrebuje – in zabavni so tudi zate." },
+            { title: "Obljuba s podpisom", text: "Preden ljubljenček pride, s prstom podpišeš obljubo." },
+          ],
+        },
+      ],
     },
     walkyourpet: {
       meta: {
