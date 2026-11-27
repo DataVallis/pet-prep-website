@@ -1893,6 +1893,24 @@
         "fawn-white": "Rødlig fawn/hvid",
         "sandy-white": "Sandfarvet/hvid"
       }
+    },
+    "saluki": {
+      "name": "Saluki",
+      "slug": "saluki",
+      "synonyms": [
+        "Persisk mynde",
+        "Persian greyhound"
+      ],
+      "colours": {
+        "fawn": "Fawn",
+        "cream": "Creme",
+        "white": "Hvid",
+        "golden": "Gylden",
+        "red": "Rød",
+        "grizzle-tan": "Grizzle og tan",
+        "tricolour": "Trefarvet",
+        "black-tan": "Sort og tan"
+      }
     }
   },
   "suitability_labels": {
