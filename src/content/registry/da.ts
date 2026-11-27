@@ -1807,6 +1807,14 @@ const da: RegistryCopy = {
       ],
       sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
     },
+    saluki: {
+      aka: "Persisk mynde, Persian Greyhound, Gazelle Hound, Arabian Hound",
+      text: [
+        "Saluki er en slank, meget hurtig mynde fra Mellemøsten; FCI fører den i gruppe 10 blandt de langhårede eller frynsede mynder, under FCI's protektion. FCI-standarden beskriver en hund, der giver indtryk af ynde og symmetri samt af stor hurtighed og udholdenhed, med en glat, blød, silkeagtig pels – med frynser på ørerne, benene, bagsiden af lårene og halen hos den frynsede variant – og tillader alle farver og farvekombinationer, dog er tigrering uønsket. FCI-standarden angiver en gennemsnitlig højde på 58–71 cm, tæver tilsvarende mindre, men ingen vægt; PDSA angiver en gennemsnitsvægt på 16–29,5 kg og en gennemsnitlig levetid på over 10 år. Som stor hund er den som regel udvokset ved omkring 15–18 måneder (PetMD).",
+        "PDSA skriver, at salukier har brug for mere end to timers motion hver dag, helst på et indhegnet område, fordi de har et stærkt jagtinstinkt, og fordi indkaldet ikke altid er nemt; WebMD råder ejere til altid at holde dem i snor og bag et højt hegn. PetMD anbefaler en hurtig børstning en eller to gange om ugen og skriver, at salukier ikke bryder sig om at være alene en hel dag og kan udvikle separationsangst; WebMD anbefaler daglig tandbørstning. Ifølge PetMD er de ikke den mest børnevenlige race, fordi de trives i et roligt og stille hjem; ifølge WebMD har de det bedre i familier med større børn; og PDSA beder ejere huske på jagtinstinktet over for andre kæledyr.",
+      ],
+      sources: ["S1085", "S1086", "S1087", "S1088", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund",
       text: [
