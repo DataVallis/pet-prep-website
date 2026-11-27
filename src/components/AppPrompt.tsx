@@ -162,7 +162,7 @@ export function AppPrompt({
             <div className="flex min-w-0 flex-1 items-center gap-3 sm:justify-center sm:gap-5 sm:pl-11">
               <p className="min-w-0 flex-1 text-[14px] font-medium leading-tight sm:flex-none sm:text-base">{copy.barText}</p>
               <button type="button" onClick={() => open("bar")} className="btn btn-mint !min-h-11 shrink-0 !px-3.5 !text-[14px] sm:!px-5 sm:!text-[15px]">
-                {stores ? stores.barLabel : <><span className="sm:hidden">{copy.barButton}</span><span className="hidden sm:inline">{copy.button}</span></>}
+                {stores ? stores.barLabel : copy.barButton}
               </button>
             </div>
             <button type="button" onClick={closeBar} aria-label={copy.close} className="-mr-1 grid size-11 shrink-0 place-items-center rounded-full border border-graphite-3 text-muted-dark hover:text-fog">

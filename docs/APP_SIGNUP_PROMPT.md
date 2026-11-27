@@ -64,7 +64,8 @@ visits; if it stays under 1 %, change the wording first (one variable at a time)
 
 - Trigger numbers: 8 s + half the page; quiet periods 30 / 7 days (`src/lib/appPrompt.ts`).
 - Which pages are "none" / "quiet" (table above).
-- Button: »Tell me when it's out« (bar on phones: the short form »Notify me«); the header keeps »Get early access«.
+- Pop-up button: »Tell me when it's out«; the header keeps »Get early access«.
+- **Bar wording is David's (2026-11-27, after seeing it live):** the bar asks the trigger question »Is your child asking for a pet?« (same sentence as the default pop-up headline, on every page) and its button says »Click here«.
 - Picture: a real app screen (`/screens/<en|sl>/hud.webp`; other languages show the English screen like the rest of
   the site). A short screen recording of the app would say more — replace the image when David supplies one.
 
