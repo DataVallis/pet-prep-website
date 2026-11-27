@@ -1939,6 +1939,14 @@ const fi: RegistryCopy = {
       ],
       sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
     },
+    saluki: {
+      aka: "Persian Greyhound, Gazelle Hound, Arabian Hound, persianvinttikoira",
+      text: [
+        "Saluki on Lähi-idästä kotoisin oleva solakka ja erittäin nopea vinttikoira. FCI sijoittaa sen ryhmään 10, osastoon pitkä- tai hapsukarvaiset vinttikoirat, ja rotu on FCI:n suojeluksessa. FCI:n rotumääritelmän mukaan koira vaikuttaa sulavalta ja symmetriseltä sekä erittäin nopealta ja kestävältä. Turkki on sileä, pehmeä ja silkkinen, ja hapsuisessa muunnoksessa korvissa, jaloissa, reisien takaosassa ja hännässä on hapsut. Kaikki värit ja värien yhdistelmät ovat sallittuja, mutta tiikerijuovaisuus on epätoivottavaa. FCI:n rotumääritelmän mukaan säkäkorkeus on keskimäärin 58–71 cm ja nartut ovat vastaavasti pienempiä, mutta painoa määritelmä ei ilmoita. PDSA ilmoittaa keskipainoksi 16–29,5 kg ja eliniäksi keskimäärin yli 10 vuotta. Suurikokoisena koirana se on täysikasvuinen noin 15–18 kuukauden iässä (PetMD:n kokoluokka).",
+        "PDSA:n mukaan salukit tarvitsevat liikuntaa yli kaksi tuntia päivässä, mieluiten aidatulla alueella, koska niillä on voimakas saalisvietti eikä luoksetulo ole aina helppoa. WebMD neuvoo pitämään koiran aina hihnassa ja korkean aidan takana. PetMD suosittelee pikaharjausta kerran tai kaksi kertaa viikossa ja toteaa, että salukit eivät viihdy yksin koko päivää ja voivat kärsiä eroahdistuksesta. WebMD suosittelee hampaiden harjaamista päivittäin. PetMD:n mukaan rotu ei kuulu lapsiystävällisimpiin, koska se viihtyy rauhallisessa ja hiljaisessa kodissa. WebMD:n mukaan salukille sopii paremmin perhe, jossa on isompia lapsia, ja PDSA muistuttaa, että koiran saalisvietti on otettava huomioon, kun kotona on muita lemmikkejä.",
+      ],
+      sources: ["S1085", "S1086", "S1087", "S1088", "S10"],
+    },
   },
 };
 
