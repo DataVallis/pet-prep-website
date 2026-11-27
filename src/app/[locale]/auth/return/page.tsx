@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { AppPromptHint } from "@/components/AppPromptHint";
 import { AuthReturn } from "@/components/gift/AuthReturn";
 import { authReturnParams } from "@/lib/giftRoutes";
 import { isGiftEnabled } from "@/lib/gift";
@@ -18,5 +19,5 @@ export const metadata: Metadata = {
 
 export default function AuthReturnPage() {
   if (!isGiftEnabled()) notFound();
-  return <AuthReturn />;
+  return <><AppPromptHint variant="none" /><AuthReturn /></>;
 }

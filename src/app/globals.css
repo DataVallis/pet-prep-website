@@ -209,3 +209,19 @@
   .print-sheet img { max-height: 260mm; width: auto !important; max-width: 100%; }
   .print-sheet .print-only { display: block; }
 }
+
+/* App sign-up prompt (components/AppPrompt.tsx): the page keeps room for the bar and the cookie-settings button sits above it. */
+body.has-app-bar { padding-bottom: 68px; }
+body.has-app-bar .kockica-revisit { bottom: 80px; }
+.app-bar { animation: app-prompt-up 0.28s ease-out both; }
+.app-prompt[open] { animation: app-prompt-up 0.3s ease-out both; }
+@keyframes app-prompt-up {
+  from { transform: translateY(24px); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .app-bar, .app-prompt[open] { animation: none; }
+}
+@media print {
+  .app-bar, .app-prompt { display: none !important; }
+}

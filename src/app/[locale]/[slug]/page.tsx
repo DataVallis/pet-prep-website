@@ -8,6 +8,7 @@ import { buildMetadata } from "@/lib/seo";
 import { breadcrumbLd, faqLd, graph, webPageLd } from "@/lib/jsonld";
 import { site } from "@/lib/site";
 import { JsonLd } from "@/components/JsonLd";
+import { AppPromptHint } from "@/components/AppPromptHint";
 import { Blocks } from "@/components/Blocks";
 import { StoreButtons } from "@/components/Cta";
 import { coloringHubLd } from "@/components/coloring/ColoringPages";
@@ -39,6 +40,8 @@ function resolve(localeParam: string, slug: string) {
 }
 
 const legalKeys = new Set(["privacy", "terms"]);
+/** Pages where the app sign-up bar and pop-up stay away: legal and account pages, contact, partners (a different audience). */
+const noPromptKeys = new Set(["privacy", "terms", "childSafety", "deleteAccount", "accessibility", "contact", "partners"]);
 
 export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]">): Promise<Metadata> {
   const { locale, slug } = await params;
@@ -59,10 +62,10 @@ export default async function SubPage({ params }: PageProps<"/[locale]/[slug]">)
   const { locale: localeParam, slug } = await params;
   if (isLocale(localeParam) && isQuizHubSlug(localeParam, slug)) return <QuizHubPage locale={localeParam} />;
   const sales = isLocale(localeParam) ? salesPageFromSlug(localeParam, slug) : undefined;
-  if (sales === "promiseKit") return <PromiseKitPage locale={localeParam} />;
+  if (sales === "promiseKit") return <><AppPromptHint variant="none" /><PromiseKitPage locale={localeParam} /></>;
   if (sales) {
     const lang = assertGift(localeParam);
-    return sales === "gift" ? <GiftPage lang={lang} /> : <RedeemPage lang={lang} />;
+    return <><AppPromptHint variant="none" />{sales === "gift" ? <GiftPage lang={lang} /> : <RedeemPage lang={lang} />}</>;
   }
   const r = resolve(localeParam, slug);
   if (!r) notFound();
@@ -83,6 +86,7 @@ export default async function SubPage({ params }: PageProps<"/[locale]/[slug]">)
   return (
     <>
       <JsonLd data={ld} />
+      {noPromptKeys.has(key) ? <AppPromptHint variant="none" /> : key === "care" ? <AppPromptHint variant="care" /> : null}
       <div className="container-page pb-24 pt-10 sm:pt-14">
         <nav aria-label="Breadcrumb" className="mb-8 text-sm text-muted">
           <ol className="flex items-center gap-2">

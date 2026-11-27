@@ -5,6 +5,7 @@ import { breadcrumbLd, graph, webPageLd } from "@/lib/jsonld";
 import { getDictionary } from "@/content";
 import { investorsCopy } from "@/content/investors";
 import { JsonLd } from "@/components/JsonLd";
+import { AppPromptHint } from "@/components/AppPromptHint";
 import { InvestorsPage } from "@/components/investors/InvestorsPage";
 import { getInvestorStats } from "@/lib/investorStats";
 
@@ -35,6 +36,7 @@ export default async function Investors({ params }: PageProps<"/[locale]/investo
   return (
     <>
       <JsonLd data={ld} />
+      <AppPromptHint variant="none" />
       <InvestorsPage stats={await getInvestorStats()} />
     </>
   );

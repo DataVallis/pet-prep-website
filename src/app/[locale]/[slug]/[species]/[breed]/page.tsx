@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AppPromptHint } from "@/components/AppPromptHint";
 import { compareSlug, isLocale, locales, pageSlugs, pathFor, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { breedBySlug, breedsOf, registry, speciesBySlug, type Breed, type Species } from "@/content/registry/registry";
@@ -120,7 +121,7 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
   if (isLocale(p.locale) && isCareSlug(p.locale, p.slug)) {
     const cf = resolveCareFood(p.locale, p.species, p.breed);
     if (!cf) notFound();
-    return <CareFoodPage locale={p.locale} species={cf.species} food={cf.food} />;
+    return <><AppPromptHint variant="care" /><CareFoodPage locale={p.locale} species={cf.species} food={cf.food} /></>;
   }
   const r = resolve(p.locale, p.slug, p.species, p.breed);
   if (!r) notFound();
@@ -191,6 +192,7 @@ export default async function BreedOrComparePage({ params }: PageProps<"/[locale
   return (
     <>
       <JsonLd data={ld} />
+      <AppPromptHint variant="breed" breed={{ id: breed.id, name: breed.name[locale], species: r.species.id as "dog" | "cat", image: v.portrait?.src }} />
       <div className="container-page pb-24 pt-10 sm:pt-14">
         <Crumbs items={[home, animals, catalogue, { name: v.name }]} />
 

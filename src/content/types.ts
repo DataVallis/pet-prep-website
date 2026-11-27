@@ -158,6 +158,26 @@ export type Dictionary = {
     /** Shown when a breed is chosen (?breed=<id>), e.g. "Early access for the breed: French Bulldog". `{mid}` = the breed name in running text (lib/breedName.ts); the name is never declined. */
     forBreed: string;
   };
+  /** Bar + pop-up asking for early access on every page (components/AppPrompt.tsx, docs/APP_SIGNUP_PROMPT.md). Parents are addressed formally. */
+  appPrompt: {
+    /** Parent wording: every page without its own. */
+    default: { title: string; text: string };
+    /** Breed pages; the breed's name is shown above the title in its dictionary form, so the title never declines it. */
+    breed: { title: string; text: string };
+    /** Care knowledge and food pages. */
+    care: { title: string; text: string };
+    /** Submit button of the pop-up's e-mail form. */
+    button: string;
+    /** One line in the bar at the bottom of the screen (keep it under ~45 characters: phones). */
+    barText: string;
+    /** Short form of `button` for the bar on phones (wider screens show `button` itself) — bar and pop-up promise the same thing: a note when the app is out. */
+    barButton: string;
+    /** Accessible name of the bar. */
+    barLabel: string;
+    close: string;
+    /** Alt text of the app screenshot in the pop-up. */
+    screenAlt: string;
+  };
   contactCards: { title: string; text: string; email: "hello" | "privacy" | "partners" | "investors" }[];
   home: {
     meta: { title: string; description: string };
