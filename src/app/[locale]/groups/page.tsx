@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { AppPromptHint } from "@/components/AppPromptHint";
 import { buildMetadataFor } from "@/lib/seo";
 import { groupsCopy } from "@/content/groups";
 import { GroupsPage } from "@/components/groups/GroupsPage";
@@ -26,5 +27,5 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/groups">
 export default async function Groups({ params }: PageProps<"/[locale]/groups">) {
   const { locale } = await params;
   if (locale !== "en") notFound();
-  return <GroupsPage />;
+  return <><AppPromptHint variant="none" /><GroupsPage /></>;
 }

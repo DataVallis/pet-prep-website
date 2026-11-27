@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AppPromptHint } from "@/components/AppPromptHint";
 import { isLocale, locales, pageSlugs, pathFor, salesSlugs, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { breedsOf, registry, speciesBySlug, type Species } from "@/content/registry/registry";
@@ -88,13 +89,13 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/[slug]/[
 
 export default async function SpeciesCatalogue({ params }: PageProps<"/[locale]/[slug]/[species]">) {
   const { locale: l, slug, species: s } = await params;
-  if (isLocale(l) && isGiftThanks(l, slug, s)) return <ThanksPage lang={assertGift(l)} />;
-  if (isLocale(l) && isKitThanks(l, slug, s)) return <KitThanksPage locale={l} />;
-  if (isLocale(l) && isQuizSlug(l, slug, s)) return <QuizPage locale={l} />;
+  if (isLocale(l) && isGiftThanks(l, slug, s)) return <><AppPromptHint variant="none" /><ThanksPage lang={assertGift(l)} /></>;
+  if (isLocale(l) && isKitThanks(l, slug, s)) return <><AppPromptHint variant="none" /><KitThanksPage locale={l} /></>;
+  if (isLocale(l) && isQuizSlug(l, slug, s)) return <><AppPromptHint variant="quiet" /><QuizPage locale={l} /></>;
   if (isLocale(l) && isRealCostSlug(l, slug)) {
     const hit = realCostBreedBySlug(l, s);
     if (!hit) notFound();
-    return <RealCostPage locale={l} name={hit.breed.name[l]} profile={hit.profile} />;
+    return <><AppPromptHint variant="quiet" /><RealCostPage locale={l} name={hit.breed.name[l]} profile={hit.profile} /></>;
   }
   if (isLocale(l) && isColoringSlug(l, slug)) {
     const p = resolveColoring(l, s);
@@ -102,10 +103,10 @@ export default async function SpeciesCatalogue({ params }: PageProps<"/[locale]/
     return <ColoringPageView locale={l} page={p} />;
   }
   if (isLocale(l) && isCareSlug(l, slug)) {
-    if (isEmergencySlug(l, s)) return <EmergencyPage locale={l} />;
+    if (isEmergencySlug(l, s)) return <><AppPromptHint variant="none" /><EmergencyPage locale={l} /></>;
     const sp = resolveCareSpecies(l, s);
     if (!sp) notFound();
-    return <CareSpeciesPage locale={l} species={sp} />;
+    return <><AppPromptHint variant="care" /><CareSpeciesPage locale={l} species={sp} /></>;
   }
   const r = resolve(l, slug, s);
   if (!r) notFound();

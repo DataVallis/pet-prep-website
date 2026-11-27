@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { notFound } from "next/navigation";
-import { isLocale, locales, localeMeta } from "@/i18n/config";
+import { isLocale, locales, localeMeta, pathFor, screenLocale } from "@/i18n/config";
 import { getDictionary } from "@/content";
 import { site } from "@/lib/site";
 import { graph, organizationLd, websiteLd } from "@/lib/jsonld";
@@ -10,6 +10,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { UtmCapture } from "@/components/UtmCapture";
 import { ConsentDefaults, GoogleAnalytics, GoogleTagManager } from "@/components/ConsentAndAnalytics";
 import { Kockica } from "@/components/Kockica";
+import { AppPrompt } from "@/components/AppPrompt";
 import { PrivatePageGate } from "@/components/gift/PrivatePageGate";
 import { fontClasses } from "../fonts";
 import "../globals.css";
@@ -63,6 +64,15 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
           {children}
         </main>
         <Footer locale={locale} dict={dict} />
+        {/* Bar + pop-up asking for early access (store buttons once live); pages opt out or pick the wording with <AppPromptHint>. */}
+        <AppPrompt
+          locale={locale}
+          copy={dict.appPrompt}
+          formCopy={dict.earlyAccess}
+          privacyHref={pathFor(locale, "privacy")}
+          screenSrc={`/screens/${screenLocale(locale)}/hud.webp`}
+          stores={site.launchState === "live" && site.stores.ios && site.stores.android ? { ios: site.stores.ios, android: site.stores.android, iosLabel: dict.cta.ios, androidLabel: dict.cta.android, barLabel: dict.cta.primary } : null}
+        />
         {/* No third-party scripts on the gift thanks / redeem pages and /auth/return (code, sign-in e-mail and password or the sign-in token are there): M6-S01, M6-S01b. */}
         <PrivatePageGate>
           <GoogleAnalytics />

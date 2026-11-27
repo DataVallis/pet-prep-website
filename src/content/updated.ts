@@ -15,7 +15,7 @@ export const pageUpdated: Record<RouteKey, string> = {
   partners: "2026-11-17",
   investors: "2026-10-10",
   contact: "2026-10-10",
-  privacy: "2026-11-17",
+  privacy: "2026-11-27",
   terms: "2026-11-11",
   childSafety: "2026-11-11",
   deleteAccount: "2026-10-20",

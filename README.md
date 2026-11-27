@@ -141,7 +141,7 @@ They are **product previews rendered in the CGP**, not captures from a device. R
 ## Early access (Klaviyo + our database)
 
 Before launch the calls to action show an email form (`src/components/EarlyAccessForm.tsx`, instances: `hero`, `home_cta`,
-`breed_cta`, `care_cta`, `page_cta`). On submit the browser sends **two requests in parallel**: to our own database
+`breed_cta`, `care_cta`, `page_cta`; the pop-up reuses it with `source="app_prompt"`, see **App sign-up prompt**). On submit the browser sends **two requests in parallel**: to our own database
 (`/api/email-signups`, see **E-mails**) and to `/api/subscribe` (`src/app/api/subscribe/route.ts`), which validates the
 address, checks the origin, drops bots (honeypot field), limits 5 requests per IP per 10 minutes and calls Klaviyo
 server-side (`src/lib/klaviyo.ts`, API revision `2026-07-15`): profile import with `petprep_language`,
@@ -155,6 +155,20 @@ buldog« (`earlyAccess.forBreed`, 15 languages; the id is resolved to the name a
 `breed` + `species`; on a breed page the breed is fixed by the page. Consent version for this form: **`ea-2026-11`** (its consent text, `earlyAccess.consent`,
 differs from the newsletter sentence, version `2026-11`).
 Local test: `KLAVIYO_PRIVATE_API_KEY=pk_… KLAVIYO_LIST_ID=… npm run dev`.
+
+## App sign-up prompt — bar + pop-up (David 2026-11-27)
+
+Every page asks for the same thing as its own call to action: an e-mail for early access to the app (store buttons once
+`site.launchState` is "live"). `src/components/AppPrompt.tsx` (mounted in the locale layout) shows a **bar** at the bottom
+after 240 px of scrolling and **one pop-up per visit** (8 s on the page + half of it seen, or exit intent on desktop; bottom
+sheet on phones). Never over the cookie banner, another dialog, the page's own e-mail form, or while typing. Pages choose the
+wording or opt out with `<AppPromptHint variant="default|breed|care|quiet|none" />` (`quiet` = bar only: quiz, calculator;
+`none`: emergency, sales and thank-you pages, legal, contact, partners, investors, groups, auth). Rules and numbers:
+`src/lib/appPrompt.ts` (+ test). Copy: `appPrompt` in all 15 dictionaries. Sign-ups go through `EarlyAccessForm` with
+`source: app_prompt`, `section: popup_<wording>` / `bar_<wording>`. The answer is kept in `localStorage["petprep.prompt"]`
+(sign-up made / when closed; no address; in the privacy policy). Any accepted early-access form sets `signedUp` and fires
+`petprep:signed-up` on `window`. GA events `app_prompt_view|close|signup|store`. Full spec, decisions and follow-ups:
+`docs/APP_SIGNUP_PROMPT.md`.
 
 ## E-mails (David 2026-11-17: one database, segmented)
 

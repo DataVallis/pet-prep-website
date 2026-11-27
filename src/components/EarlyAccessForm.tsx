@@ -7,6 +7,7 @@ import type { Dictionary } from "@/content/types";
 import { breedFromSearch } from "@/lib/earlyAccess";
 import { midName } from "@/lib/breedName";
 import { browserContext, EARLY_ACCESS_CONSENT_VERSION, postEmailSignup } from "@/lib/emailSignup";
+import { SIGNED_UP_EVENT, writeMemory } from "@/lib/appPrompt";
 
 type Copy = Dictionary["earlyAccess"];
 type Tone = "light" | "dark" | "mint";
@@ -20,7 +21,8 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
  * source early_access_form, section, page, breed, UTM, referrer host) and, in parallel for now, to /api/subscribe,
  * which stores the address in Klaviyo (until the planned sync job exists). It is a success when either one accepts it
  * (a failure of one is only logged). When the page URL carries `?breed=<id>` (the quiz result button, breed CTAs) the
- * form names the breed and sends it to both.
+ * form names the breed and sends it to both. Once an address is accepted the browser remembers it (localStorage
+ * `petprep.prompt`, no address stored) and tells the app sign-up prompt (components/AppPrompt.tsx) to stay away.
  */
 export function EarlyAccessForm({
   locale,
@@ -31,6 +33,10 @@ export function EarlyAccessForm({
   showConsent = true,
   section = "hero",
   breed,
+  source = "early_access_form",
+  showBreedLine = true,
+  stacked = false,
+  onDone,
 }: {
   locale: Locale;
   copy: Copy;
@@ -42,6 +48,14 @@ export function EarlyAccessForm({
   section?: string;
   /** A breed fixed by the page itself (a breed page); otherwise `?breed=` of the URL is used (resolved against the register's index). */
   breed?: ChosenBreed;
+  /** `source` in our e-mail database: early_access_form (the page's own forms) or app_prompt (bar / pop-up). */
+  source?: string;
+  /** Show the »Early access for the breed: …« line above the field (the pop-up names the breed itself). */
+  showBreedLine?: boolean;
+  /** Field above a full-width button at every width (the pop-up: long button labels must not squeeze the field). */
+  stacked?: boolean;
+  /** Called once the address was accepted. */
+  onDone?: () => void;
 }) {
   const id = useId();
   const [email, setEmail] = useState("");
@@ -81,7 +95,7 @@ export function EarlyAccessForm({
     // Our database only gets a sign-up when the consent sentence was shown to the visitor (showConsent); Klaviyo is unchanged.
     const ours = showConsent
       ? postEmailSignup(
-          { email: addr, purpose: "early_access", source: "early_access_form", section, locale, species: chosen?.species, breed: chosen?.id, consentVersion: EARLY_ACCESS_CONSENT_VERSION, honeypot: company },
+          { email: addr, purpose: "early_access", source, section, locale, species: chosen?.species, breed: chosen?.id, consentVersion: EARLY_ACCESS_CONSENT_VERSION, honeypot: company },
           browserContext(),
         ).catch(() => "error" as const)
       : Promise.resolve("proto" as const);
@@ -95,6 +109,11 @@ export function EarlyAccessForm({
       if (a !== "ok" && a !== "proto") console.error("[early-access] our database did not accept the sign-up:", a);
       if (!k.ok) console.error("[early-access] Klaviyo did not accept the sign-up:", k.status);
       setState("done");
+      let store: Storage | null = null;
+      try { store = window.localStorage; } catch { /* blocked */ }
+      writeMemory(store, { signedUp: true });
+      window.dispatchEvent(new Event(SIGNED_UP_EVENT));
+      onDone?.();
     } else {
       console.error("[early-access] sign-up failed:", a, k.status);
       setState(a === "email" || k.status === 400 ? "invalid" : "error");
@@ -106,7 +125,7 @@ export function EarlyAccessForm({
 
   if (state === "done") {
     return (
-      <div role="status" className={`flex items-start gap-3 rounded-[16px] p-4 ${dark ? "bg-graphite-2" : "bg-white"}`}>
+      <div role="status" data-early-access className={`flex items-start gap-3 rounded-[16px] p-4 ${dark ? "bg-graphite-2" : "bg-white"}`}>
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" className={`mt-0.5 shrink-0 ${dark ? "text-mint" : "text-mint-text"}`}>
           <path d="M20 6 9 17l-5-5" />
         </svg>
@@ -122,10 +141,10 @@ export function EarlyAccessForm({
   const message = state === "invalid" ? copy.invalid : state === "error" ? copy.error : "";
 
   return (
-    <form onSubmit={onSubmit} noValidate className="flex w-full max-w-[560px] flex-col gap-2.5">
-      {chosenName ? <p className={`text-[15px] font-semibold ${dark ? "text-mint" : "text-mint-text"}`}>{copy.forBreed.replace("{mid}", () => chosenName)}</p> : null}
+    <form onSubmit={onSubmit} noValidate data-early-access className="flex w-full max-w-[560px] flex-col gap-2.5">
+      {chosenName && showBreedLine ? <p className={`text-[15px] font-semibold ${dark ? "text-mint" : "text-mint-text"}`}>{copy.forBreed.replace("{mid}", () => chosenName)}</p> : null}
       <label htmlFor={`${id}-email`} className="sr-only">{copy.label}</label>
-      <div className="flex flex-col gap-2.5 sm:flex-row">
+      <div className={`flex flex-col gap-2.5 ${stacked ? "" : "sm:flex-row"}`}>
         <input
           id={`${id}-email`}
           type="email"
@@ -141,7 +160,7 @@ export function EarlyAccessForm({
           placeholder={copy.placeholder}
           aria-invalid={state === "invalid" ? true : undefined}
           aria-describedby={message ? `${id}-msg` : undefined}
-          className={`${inputH} w-full min-w-0 flex-1 rounded-[12px] border-[1.5px] px-4 outline-none transition-colors ${
+          className={`${inputH} w-full min-w-0 flex-1 rounded-[12px] border-[1.5px] px-4 outline-none transition-[border-color,box-shadow] focus-visible:shadow-[0_0_0_3px_var(--color-mint)] ${
             dark
               ? "border-graphite-3 bg-graphite-2 text-fog placeholder:text-muted-dark focus:border-mint"
               : "border-graphite/25 bg-white text-graphite placeholder:text-muted focus:border-graphite"
@@ -166,11 +185,11 @@ export function EarlyAccessForm({
           {state === "sending" ? copy.sending : copy.button}
         </button>
       </div>
-      <p id={`${id}-msg`} role="alert" className={`min-h-[1.25rem] text-sm font-medium ${dark ? "text-[#ff9c90]" : "text-danger"}`}>
+      <p id={`${id}-msg`} role="alert" className={`${stacked && !message ? "hidden" : "min-h-[1.25rem]"} text-sm font-medium ${dark ? "text-[#ff9c90]" : "text-danger"}`}>
         {message}
       </p>
       {showConsent ? (
-        <p className={`-mt-1 text-[13px] leading-relaxed ${muted}`}>
+        <p className={`${stacked ? "mt-1" : "-mt-1"} text-[13px] leading-relaxed ${muted}`}>
           {copy.consent}{" "}
           <Link href={privacyHref} className="underline underline-offset-2">
             {copy.privacyLink}
