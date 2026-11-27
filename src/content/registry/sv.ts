@@ -1084,6 +1084,14 @@ const sv: RegistryCopy = {
       ],
       sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
     },
+    saluki: {
+      aka: "Persisk vinthund, Persian Greyhound, Gazelle Hound, Arabian Hound",
+      text: [
+        "Saluki är en smal, mycket snabb vinthund från Mellanöstern; FCI räknar den till grupp 10, långhåriga eller befjädrade vinthundar, under FCI:s beskydd. FCI-standarden beskriver en hund som ger ett intryck av behag och symmetri, av stor snabbhet och uthållighet, med en slät, mjuk, silkeslen päls – med befjädring på öronen, benen, baksidan av låren och svansen hos den befjädrade varianten – och tillåter alla färger och färgkombinationer, där tigrering är oönskad. FCI-standarden anger en genomsnittlig mankhöjd på 58–71 cm, med proportionellt mindre tikar, men anger ingen vikt; PDSA anger en genomsnittlig vikt på 16–29,5 kg och en genomsnittlig livslängd på över 10 år. En stor hund är vanligtvis fullvuxen vid ungefär 15–18 månader (PetMD).",
+        "PDSA skriver att salukis behöver över två timmars motion varje dag, helst på ett inhägnat område, eftersom de har en stark jaktinstinkt och inkallningen inte alltid är lätt; WebMD råder ägare att alltid ha dem kopplade och bakom ett högt staket. PetMD rekommenderar en snabb borstning en eller två gånger i veckan och säger att salukis inte vill lämnas ensamma en hel dag och kan utveckla separationsångest. WebMD rekommenderar daglig tandborstning. Enligt PetMD är de inte den mest barnvänliga rasen eftersom de trivs i ett lugnt och tyst hem; enligt WebMD mår de bättre i hushåll med äldre barn; och PDSA ber ägare tänka på jaktinstinkten när det gäller andra husdjur.",
+      ],
+      sources: ["S1085", "S1086", "S1087", "S1088", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, Finsk lapphund",
       text: [
