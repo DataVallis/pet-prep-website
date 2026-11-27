@@ -1819,6 +1819,24 @@
         "fawn-white": "Fulvo avermelhado e branco",
         "sandy-white": "Cor de areia e branco"
       }
+    },
+    "saluki": {
+      "name": "Galgo persa",
+      "slug": "galgo-persa",
+      "synonyms": [
+        "Saluki",
+        "Persian greyhound"
+      ],
+      "colours": {
+        "fawn": "Fulvo",
+        "cream": "Creme",
+        "white": "Branco",
+        "golden": "Dourado",
+        "red": "Vermelho",
+        "grizzle-tan": "Grisalho e fogo",
+        "tricolour": "Tricolor",
+        "black-tan": "Preto e fogo"
+      }
     }
   },
   "suitability_labels": {
