@@ -1785,6 +1785,57 @@
         "Welsh Starter",
         "Springer galés"
       ]
+    },
+    "smooth_fox_terrier": {
+      "name": "Fox terrier de pelo liso",
+      "slug": "fox-terrier-de-pelo-liso",
+      "synonyms": [
+        "Fox terrier liso",
+        "Smooth fox terrier",
+        "Fox terrier (pelo liso)"
+      ],
+      "colours": {
+        "tricolour": "Tricolor",
+        "white-tan": "Blanco y fuego",
+        "white-black": "Blanco y negro",
+        "white": "Todo blanco"
+      }
+    },
+    "bearded_collie": {
+      "name": "Collie barbudo",
+      "slug": "collie-barbudo",
+      "synonyms": [
+        "Bearded collie",
+        "Beardie",
+        "Highland collie"
+      ],
+      "colours": {
+        "grey-white": "Gris pizarra y blanco",
+        "black-white": "Negro y blanco",
+        "blue-white": "Azul y blanco",
+        "brown-white": "Marrón y blanco",
+        "fawn-white": "Leonado rojizo y blanco",
+        "sandy-white": "Arena y blanco"
+      }
+    },
+    "saluki": {
+      "name": "Saluki",
+      "slug": "saluki",
+      "synonyms": [
+        "Galgo persa",
+        "Lebrel persa",
+        "Lebrel de las gacelas"
+      ],
+      "colours": {
+        "fawn": "Leonado",
+        "cream": "Crema",
+        "white": "Blanco",
+        "golden": "Dorado",
+        "red": "Rojo",
+        "grizzle-tan": "Grizzle y fuego",
+        "black-tan": "Negro y fuego",
+        "tricolour": "Tricolor"
+      }
     }
   },
   "suitability_labels": {

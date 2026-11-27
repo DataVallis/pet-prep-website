@@ -1761,6 +1761,30 @@ const es: RegistryCopy = {
       ],
       sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
     },
+    smooth_fox_terrier: {
+      aka: "Fox terrier de pelo liso, Fox terrier liso, Smooth Fox Terrier, Fox Terrier (Smooth), Smooth-coated Fox Terrier, Foxie",
+      text: [
+        "El fox terrier de pelo liso es un terrier activo y vivaz originario de Gran Bretaña (grupo 3 de la FCI, terriers; sección terriers de talla grande y media): la variedad de pelo liso del fox terrier de pelo duro, distinta del toy fox terrier. El estándar de la FCI pide un perro de hueso fuerte y mucha fortaleza en poco volumen, nunca tosco ni grosero, con un pelo liso, plano, duro y denso. Predomina el blanco, que puede ser todo blanco o llevar marcas fuego, negras o negras y fuego. La altura a la cruz no debe superar los 39 cm en machos, y es algo menor en hembras. El estándar de la FCI indica un peso de 7,5–8 kg en machos y de 7–7,5 kg en hembras. Un perro de este tamaño termina de crecer hacia los 9–12 meses (PetMD), y Dogs Trust indica una esperanza de vida de por lo general más de 12 años (PetMD: 10–13 años).",
+        "El estándar de la FCI define la raza como amistosa, abierta y valiente. La PDSA recomienda al menos una hora de ejercicio al día, y WebMD, de 1 a 2 horas. PetMD dice que los fox terriers de pelo liso se llevan bien con los niños, son excelentes mascotas de familia y, aunque tienen el pelo corto, mudan con moderación; recomienda cepillarlos una vez por semana y considera fundamental socializar al cachorro pronto con otros perros y gatos. WebMD los llama estupendos compañeros para los niños, pero aconseja vigilar su trato con los más pequeños; señala un fuerte instinto de presa y recomienda cepillarles los dientes a diario y revisarles los oídos una vez por semana.",
+      ],
+      sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
+    },
+    bearded_collie: {
+      aka: "Collie barbudo, Beardie, Bearded Collie, Highland Collie, Hairy Mou'ed Collie, Mountain Collie",
+      text: [
+        "El collie barbudo es un perro de pastoreo esbelto y activo originario de Gran Bretaña; la FCI lo incluye en el grupo 1, entre los perros de pastor. El estándar de la FCI describe un perro de constitución fuerte que no debe parecer demasiado pesado, de expresión viva e inquisitiva, con un pelo doble y desgreñado (un subpelo suave y lanoso bajo un pelo exterior plano y áspero que no debe recortarse) en gris pizarra, leonado rojizo, negro o azul, en todos los matices de gris, marrón o arena, con o sin marcas blancas, pero nunca merle. El estándar de la FCI fija una altura de 53–56 cm en machos y de 51–53 cm en hembras, pero no el peso; la PDSA indica un peso medio de 20–25 kg. Un perro de este tamaño termina de crecer hacia los 12–15 meses (categoría de tamaño de PetMD). Un gran estudio británico de 2024 (McMillan et al., recogido en la tabla de Dogs Trust) halló una esperanza de vida mediana de 13,9 años, y el Royal Kennel Club la sitúa por encima de los 12 años.",
+        "El Royal Kennel Club recomienda hasta una hora de ejercicio al día y cuidar el pelo a diario, y señala que la raza muda y que se adapta bien a una casa grande con un jardín grande. La PDSA describe a los collies barbudos como perros dulces, encantadores y alegres, y como excelentes mascotas de familia, pero advierte de que su fuerte instinto de pastoreo puede llevarlos a intentar pastorear a adultos y niños en casa. PetMD dice que son delicados con los niños, aunque toda interacción entre niños y perros debe estar supervisada; recomienda cepillarlos a diario y socializar al cachorro desde el día en que llega a casa. WebMD dice que son sociables y pueden volverse ansiosos si se quedan solos mucho tiempo, que necesitan estimulación física y mental y que no son hipoalergénicos.",
+      ],
+      sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
+    },
+    saluki: {
+      aka: "Saluki, Galgo persa, Lebrel persa, Persian Greyhound, Gazelle Hound, Arabian Hound",
+      text: [
+        "El saluki es un lebrel esbelto y muy veloz originario de Oriente Medio (grupo 10 de la FCI, lebreles; sección de lebreles de pelo largo o con flecos; bajo patrocinio de la FCI). El estándar de la FCI describe un perro que transmite una impresión de gracia y simetría, de gran velocidad y resistencia, con un pelo liso, suave y sedoso (con flecos en las orejas, las patas, la parte posterior de los muslos y la cola en la variedad con flecos). Admite cualquier color o combinación de colores, y considera indeseable el atigrado. El estándar de la FCI indica una altura media de 58–71 cm, con las hembras proporcionalmente más pequeñas, pero no el peso; la PDSA indica un peso medio de 16–29,5 kg y una esperanza de vida media de más de 10 años. Un perro de este tamaño termina de crecer hacia los 15–18 meses (PetMD).",
+        "La PDSA dice que los salukis necesitan más de dos horas de ejercicio al día, a ser posible en un espacio vallado, porque tienen un fuerte instinto de persecución y no siempre acuden cuando se los llama; WebMD aconseja pasearlos siempre con correa y mantenerlos tras una valla alta. PetMD recomienda un cepillado rápido una o dos veces por semana y dice que a los salukis no les gusta quedarse solos todo el día y pueden desarrollar ansiedad por separación; WebMD recomienda cepillarles los dientes a diario. PetMD dice que no son la raza más indicada para familias con niños porque prefieren un hogar tranquilo y silencioso, WebMD que se sienten mejor en hogares con niños mayores, y la PDSA pide a los dueños que tengan presente su instinto de persecución cuando haya otras mascotas.",
+      ],
+      sources: ["S1085", "S1086", "S1087", "S1088", "S10"],
+    },
   },
 };
 
