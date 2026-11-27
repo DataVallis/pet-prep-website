@@ -988,6 +988,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
     },
+    smooth_fox_terrier: {
+      aka: "foksterier, gladkodlaki fox terier, kratkodlaki foksterier, fox terier, Smooth Fox Terrier, Fox Terrier (Smooth)",
+      text: [
+        "Gladkodlaki foksterier je živahen in živ terier iz Velike Britanije (FCI skupina 3, terierji; sekcija veliki in srednji terierji) — gladkodlaki brat ostrodlakega foksterierja, ne toy fox terier. Standard FCI zahteva čvrste kosti in moč v majhnem telesu, nikoli okornem ali grobem, ravno, gladko, trdo in gosto dlako, pretežno belo barvo — povsem belo ali belo z rjavimi, črno-rjavimi ali črnimi lisami — ter višino do 39 cm za pse, psice so nekoliko manjše. Standard FCI navaja težo 7,5–8 kg za pse in 7–7,5 kg za psice. Pes te velikosti doraste pri približno 9–12 mesecih (PetMD), Dogs Trust pa navaja življenjsko dobo običajno več kot 12 let (PetMD: 10–13 let).",
+        "Standard FCI ga opisuje kot prijaznega, odprtega in neustrašnega. PDSA priporoča vsaj 1 uro gibanja na dan, WebMD 1 do 2 uri. PetMD piše, da se gladkodlaki foksterierji dobro razumejo z otroki, da so idealni družinski psi in da jim kljub kratki dlaki zmerno izpada dlaka, priporoča česanje enkrat na teden in poudarja zgodnjo socializacijo z drugimi psi in mačkami; WebMD jih opisuje kot odlične spremljevalce otrok, a svetuje nadzor ob igri z otroki, opozarja na močan lovski nagon ter priporoča vsakodnevno ščetkanje zob in tedenski pregled ušes.",
+      ],
+      sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
+    },
 
 
     finnish_lapphund: {

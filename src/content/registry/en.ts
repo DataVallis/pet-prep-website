@@ -968,6 +968,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
     },
+    smooth_fox_terrier: {
+      aka: "Fox Terrier (Smooth), Smooth-coated Fox Terrier, Foxie, Fox Terrier, gladkodlaki foksterier",
+      text: [
+        "The Smooth Fox Terrier is an active and lively terrier from Great Britain (FCI Group 3, terriers; section large and medium-sized terriers) — the smooth-coated sibling of the Wire Fox Terrier, not the Toy Fox Terrier. The FCI standard asks for bone and strength in small compass, never cloddy or coarse, a straight, flat, smooth, hard and dense coat, white predominating — all white, or white with tan, black and tan or black markings — and a height at the withers not exceeding 39 cm for males, with females slightly less. The FCI standard gives a weight of 7.5–8 kg for males and 7–7.5 kg for females. A dog of this size is fully grown at about 9–12 months (PetMD), and Dogs Trust gives a lifespan of typically 12+ years (PetMD: 10–13 years).",
+        "The FCI standard calls the breed friendly, forthcoming and fearless. PDSA recommends at least an hour of exercise a day, and WebMD 1 to 2 hours. PetMD says Smooth Fox Terriers get along well with children, make ideal family pets and are moderate shedders despite their short coat, recommends brushing once a week and calls early socialisation with other dogs and cats key; WebMD calls them great companions for children but advises monitoring their interactions, notes a high prey drive, and recommends daily tooth brushing and checking the ears weekly.",
+      ],
+      sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
+    },
 
 
     finnish_lapphund: {
