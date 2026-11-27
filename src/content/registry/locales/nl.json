@@ -1241,7 +1241,15 @@
         "Chowchow",
         "Chow Chow",
         "Chow"
-      ]
+      ],
+      "colours": {
+        "red": "Rood",
+        "black": "Zwart",
+        "cream": "Crème",
+        "fawn": "Fawn",
+        "blue": "Blauw",
+        "white": "Wit"
+      }
     },
     "old_english_sheepdog": {
       "name": "Bobtail",
@@ -1249,7 +1257,11 @@
       "synonyms": [
         "Old English sheepdog",
         "Oud Engelse herdershond"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Grijs-wit",
+        "blue-white": "Blauw-wit"
+      }
     },
     "pekingese": {
       "name": "Pekingees",
@@ -1284,7 +1296,11 @@
         "Schnauzer",
         "Mittelschnauzer",
         "Standard schnauzer"
-      ]
+      ],
+      "colours": {
+        "pepper-salt": "Peper en zout",
+        "black": "Zwart"
+      }
     },
     "coton_de_tulear": {
       "name": "Coton de Tuléar",
@@ -1298,7 +1314,15 @@
       "slug": "engelse-setter",
       "synonyms": [
         "English Setter"
-      ]
+      ],
+      "colours": {
+        "blue-belton": "Blue belton",
+        "orange-belton": "Orange belton",
+        "blue-belton-tan": "Driekleur (blue belton met tan)",
+        "lemon-belton": "Lemon belton",
+        "liver-belton": "Liver belton",
+        "liver-belton-tan": "Driekleur (liver belton met tan)"
+      }
     },
     "dogue_de_bordeaux": {
       "name": "Dogue de Bordeaux",
@@ -1307,7 +1331,13 @@
         "Bordeauxdog",
         "Franse mastiff",
         "Bordeaux mastiff"
-      ]
+      ],
+      "colours": {
+        "mahogany-brown-mask": "Mahonie met bruin masker",
+        "fawn-black-mask": "Fawn met zwart masker",
+        "fawn-no-mask": "Fawn zonder masker",
+        "isabella": "Isabella"
+      }
     },
     "flat_coated_retriever": {
       "name": "Flatcoated retriever",
@@ -1316,7 +1346,11 @@
         "Flat-coated retriever",
         "Flat coated retriever",
         "Flatcoat"
-      ]
+      ],
+      "colours": {
+        "black": "Zwart",
+        "liver": "Leverbruin"
+      }
     },
     "lhasa_apso": {
       "name": "Lhasa apso",
@@ -1325,22 +1359,47 @@
         "Lhasa",
         "Lhasa-apso",
         "Apso"
-      ]
+      ],
+      "colours": {
+        "golden": "Goudkleurig",
+        "honey": "Honingkleurig",
+        "dark-grizzle": "Donkere grizzle",
+        "smoke": "Rookkleurig",
+        "parti-colour": "Parti-colour (wit met gekleurde vlekken)",
+        "black": "Zwart",
+        "white": "Wit",
+        "brown": "Bruin"
+      }
     },
     "border_terrier": {
       "name": "Border terrier",
-      "slug": "border-terrier"
+      "slug": "border-terrier",
+      "colours": {
+        "grizzle-tan": "Grizzle met tan",
+        "red": "Rood",
+        "wheaten": "Tarwekleurig",
+        "blue-tan": "Blauw met tan"
+      }
     },
     "leonberger": {
       "name": "Leonberger",
-      "slug": "leonberger"
+      "slug": "leonberger",
+      "colours": {
+        "lion-yellow": "Leeuwgeel",
+        "red": "Rood",
+        "sandy": "Zandkleurig"
+      }
     },
     "beauceron": {
       "name": "Beauceron",
       "slug": "beauceron",
       "synonyms": [
         "Berger de Beauce"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Zwart met tan",
+        "harlequin": "Harlekijn"
+      }
     },
     "borzoi": {
       "name": "Borzoi",
@@ -1750,6 +1809,15 @@
         "black-tan": "Zwart met tan",
         "grizzle": "Grizzle"
       }
+    },
+    "welsh_springer_spaniel": {
+      "name": "Welsh springer spaniel",
+      "slug": "welsh-springer-spaniel",
+      "synonyms": [
+        "Welsh Springer",
+        "Welshie",
+        "Welsh Starter"
+      ]
     }
   },
   "suitability_labels": {
