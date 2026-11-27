@@ -1915,6 +1915,30 @@ const fi: RegistryCopy = {
       ],
       sources: ["S1061", "S1060", "S10"],
     },
+    welsh_springer_spaniel: {
+      aka: "Welsh Springer, Welshie, Welsh Starter, Welsh Springer Spaniel, walesinspringerspanieli",
+      text: [
+        "Walesinspringerspanieli on Isosta-Britanniasta kotoisin oleva ajava lintukoira, jonka FCI sijoittaa ryhmään 8, ajaviin koiriin. FCI:n rotumääritelmän mukaan se on tasapainoinen ja tiivis mutta ei korkearaajainen koira, joka on rakennettu kestämään pitkää ja raskasta työtä. Turkki on suora, tasainen ja silkkinen, ja väri on vain syvänpunainen ja valkoinen. Luonteeltaan se on vahva, iloinen ja erittäin vilkas mutta hyväntahtoinen. Saman määritelmän mukaan säkäkorkeus on uroksilla noin 48 cm ja nartuilla noin 46 cm. PetMD ilmoittaa painoksi 35–55 paunaa (noin 16–25 kg), ja tämänkokoinen koira on täysikasvuinen noin 12–15 kuukauden iässä (PetMD:n kokoluokka). Laajan brittiläisen tutkimuksen (McMillan 2024, Dogs Trustin kautta) mukaan elinajanodotteen mediaani on 14,0 vuotta. The Royal Kennel Club ilmoittaa eliniäksi yli 10 vuotta.",
+        "The Royal Kennel Club suosittelee liikuntaa yli kaksi tuntia päivässä ja turkinhoitoa useammin kuin kerran viikossa, ja se toteaa rodun karvaavan. VCA:n mukaan turkinhoito ei ole vaikeaa, sillä harjaus kerran tai kaksi viikossa riittää. PetMD kuvaa walesinspringerspanielit rakastaviksi, uskollisiksi ja tasaluonteisiksi perhekoiriksi. PetMD:n mukaan voimakkaan saalisvietin vuoksi koira on pidettävä aina hihnassa tai turvallisesti aidatulla alueella, eikä sitä pitäisi ottaa kotiin, jossa on pieniä lemmikkejä. Varhainen sosiaalistaminen ja johdonmukainen koulutus ovat PetMD:n mukaan erityisen tärkeitä. WebMD:n mukaan rotu sopii hyvin lasten kanssa, ja se suosittelee hampaiden harjausta päivittäin sekä kylpyä ja kynsien leikkausta kerran kuussa.",
+      ],
+      sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
+    },
+    smooth_fox_terrier: {
+      aka: "Fox Terrier (Smooth), Smooth-coated Fox Terrier, Foxie, Fox Terrier, sileäkarvainen kettuterrieri",
+      text: [
+        "Sileäkarvainen kettuterrieri on Isosta-Britanniasta kotoisin oleva vilkas ja eloisa terrieri (FCI:n ryhmä 3, terrierit; osasto isot ja keskikokoiset terrierit). Se on karkeakarvaisen kettuterrierin sileäkarvainen sisarrotu eikä sama rotu kuin toy fox terrieri. FCI:n rotumääritelmän mukaan pienessä koossa on oltava luustoa ja voimaa, mutta ei koskaan kömpelyyttä eikä karkeutta. Turkki on suora, tasainen, sileä, kova ja tiheä. Valkoinen on vallitseva väri: koira on joko kokonaan valkoinen tai valkoinen ruskein, musta-ruskein tai mustin merkein. Säkäkorkeus saa olla uroksilla enintään 39 cm, ja nartut ovat hieman pienempiä. FCI:n rotumääritelmä ilmoittaa painoksi 7,5–8 kg uroksille ja 7–7,5 kg nartuille. Tämänkokoinen koira on täysikasvuinen noin 9–12 kuukauden iässä (PetMD). Dogs Trust ilmoittaa eliniäksi tyypillisesti yli 12 vuotta (PetMD: 10–13 vuotta).",
+        "FCI:n rotumääritelmän mukaan rotu on ystävällinen, avoin ja pelkäämätön. PDSA suosittelee vähintään tunnin liikuntaa päivässä, WebMD 1–2 tuntia. PetMD:n mukaan sileäkarvaiset kettuterrierit tulevat hyvin toimeen lasten kanssa, sopivat ihanteellisesti perhekoiriksi ja karvaavat lyhyestä turkistaan huolimatta kohtalaisesti. PetMD suosittelee harjausta kerran viikossa ja pitää avainasiana, että koira totutetaan ajoissa muihin koiriin ja kissoihin. WebMD:n mukaan rotu on erinomainen seuralainen lapsille, mutta koiran ja lasten yhteistä oleskelua on valvottava, ja rodulla on voimakas saalisvietti. WebMD suosittelee myös hampaiden harjausta päivittäin ja korvien tarkistamista kerran viikossa.",
+      ],
+      sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
+    },
+    bearded_collie: {
+      aka: "Beardie, Highland Collie, Hairy Mou'ed Collie, Mountain Collie",
+      text: [
+        "Bearded collie on Isosta-Britanniasta kotoisin oleva sulavalinjainen ja vilkas paimenkoira, jonka FCI sijoittaa ryhmään 1, lammas- ja karjakoiriin. FCI:n rotumääritelmän mukaan koira on vahvarakenteinen mutta ei saa vaikuttaa liian raskaalta, ja sen ilme on valpas ja utelias. Turkki on takkuinen ja kaksikerroksinen: pehmeän, tuuhean aluskarvan päällä on tasainen, karkea peitinkarva, jota ei saa trimmata. Värinä ovat liuskeenharmaa, punertava kellanruskea, musta, sininen, kaikki harmaan sävyt, ruskea ja hiekanvärinen, valkoisin merkein tai ilman. Merle-väriä rodulla ei ole koskaan. Säkäkorkeus on FCI:n rotumääritelmän mukaan uroksilla 53–56 cm ja nartuilla 51–53 cm, mutta painoa määritelmä ei ilmoita. PDSA:n mukaan keskipaino on 20–25 kg, ja tämänkokoinen koira on täysikasvuinen noin 12–15 kuukauden iässä (PetMD:n kokoluokka). Laajan brittiläisen tutkimuksen (McMillan 2024, Dogs Trustin kautta) mukaan elinajanodotteen mediaani on 13,9 vuotta. The Royal Kennel Club ilmoittaa eliniäksi yli 12 vuotta.",
+        "The Royal Kennel Club suosittelee liikuntaa enintään tunnin päivässä ja turkinhoitoa joka päivä. Sen mukaan rotu karvaa ja sopii isoon taloon, jossa on iso piha. PDSA kuvaa bearded collieita lempeiksi, rakastettaviksi ja iloisiksi koiriksi ja pitää niitä täydellisinä perhekoirina. PDSA:n mukaan vahva paimennusvietti voi kuitenkin saada koiran yrittämään paimentaa kotona sekä aikuisia että lapsia. PetMD:n mukaan rotu on lempeä lasten kanssa, mutta lasten ja koiran kaikkea yhdessäoloa on silti valvottava. PetMD suosittelee päivittäistä harjausta ja pennun sosiaalistamista heti kotiin tulosta alkaen. WebMD:n mukaan rotu on sosiaalinen ja voi ahdistua, jos se jää pitkäksi aikaa yksin; se tarvitsee sekä liikuntaa että henkistä virikettä, eikä se ole hypoallergeeninen rotu.",
+      ],
+      sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
+    },
   },
 };
 

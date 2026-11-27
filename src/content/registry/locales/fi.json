@@ -1328,14 +1328,26 @@
       "slug": "chow-chow",
       "synonyms": [
         "Chow-chow"
-      ]
+      ],
+      "colours": {
+        "red": "Punainen",
+        "black": "Musta",
+        "cream": "Kerma",
+        "fawn": "Kellanruskea",
+        "blue": "Siniharmaa",
+        "white": "Valkoinen"
+      }
     },
     "old_english_sheepdog": {
       "name": "Bobtail",
       "slug": "bobtail",
       "synonyms": [
         "Old English Sheepdog"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Harmaavalkoinen",
+        "blue-white": "Sinivalkoinen"
+      }
     },
     "pekingese": {
       "name": "Pekingeesi",
@@ -1369,7 +1381,11 @@
         "Standard Schnauzer",
         "Keskikokoinen snautseri",
         "Mittelschnauzer"
-      ]
+      ],
+      "colours": {
+        "pepper-salt": "Suola ja pippuri",
+        "black": "Musta"
+      }
     },
     "coton_de_tulear": {
       "name": "Coton de Tuléar",
@@ -1385,14 +1401,28 @@
       "synonyms": [
         "English Setter",
         "Laverack-setteri"
-      ]
+      ],
+      "colours": {
+        "blue-belton": "Sinipilkullinen (blue belton)",
+        "orange-belton": "Oranssipilkullinen (orange belton)",
+        "blue-belton-tan": "Kolmivärinen (sinipilkullinen ja ruskea)",
+        "lemon-belton": "Sitruunankeltapilkullinen (lemon belton)",
+        "liver-belton": "Maksanruskeapilkullinen (liver belton)",
+        "liver-belton-tan": "Kolmivärinen (maksanruskeapilkullinen ja ruskea)"
+      }
     },
     "dogue_de_bordeaux": {
       "name": "Bordeauxindoggi",
       "slug": "bordeauxindoggi",
       "synonyms": [
         "Dogue de Bordeaux"
-      ]
+      ],
+      "colours": {
+        "mahogany-brown-mask": "Mahonginruskea, ruskea naamio",
+        "fawn-black-mask": "Kellanruskea, musta naamio",
+        "fawn-no-mask": "Kellanruskea, ei naamiota",
+        "isabella": "Isabella"
+      }
     },
     "flat_coated_retriever": {
       "name": "Sileäkarvainen noutaja",
@@ -1400,28 +1430,52 @@
       "synonyms": [
         "Flat coated retriever",
         "Flat-coated retriever"
-      ]
+      ],
+      "colours": {
+        "black": "Musta",
+        "liver": "Maksanruskea"
+      }
     },
     "lhasa_apso": {
       "name": "Lhasa apso",
       "slug": "lhasa-apso",
       "synonyms": [
         "Lhasa-apso"
-      ]
+      ],
+      "colours": {
+        "golden": "Kultainen",
+        "honey": "Hunajanvärinen",
+        "dark-grizzle": "Tumma mustanharmaa (grizzle)",
+        "smoke": "Savunharmaa",
+        "parti-colour": "Kirjava",
+        "black": "Musta",
+        "white": "Valkoinen",
+        "brown": "Ruskea"
+      }
     },
     "beauceron": {
       "name": "Beauceron",
       "slug": "beauceron",
       "synonyms": [
         "Berger de Beauce"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Musta ja ruskea",
+        "harlequin": "Harlekiini"
+      }
     },
     "border_terrier": {
       "name": "Borderterrieri",
       "slug": "borderterrieri",
       "synonyms": [
         "Border terrier"
-      ]
+      ],
+      "colours": {
+        "grizzle-tan": "Mustanharmaa (grizzle) ja ruskea",
+        "red": "Punainen",
+        "wheaten": "Vehnänvärinen",
+        "blue-tan": "Sininen ja ruskea"
+      }
     },
     "borzoi": {
       "name": "Venäjänvinttikoira",
@@ -1450,7 +1504,12 @@
       "slug": "leonberginkoira",
       "synonyms": [
         "Leonberger"
-      ]
+      ],
+      "colours": {
+        "lion-yellow": "Leijonankeltainen",
+        "red": "Punainen",
+        "sandy": "Hiekanvärinen"
+      }
     },
     "miniature_bull_terrier": {
       "name": "Kääpiöbullterrieri",
@@ -1825,6 +1884,46 @@
         "Blue Tick Coonhound",
         "Coonhound"
       ]
+    },
+    "welsh_springer_spaniel": {
+      "name": "Walesinspringerspanieli",
+      "slug": "walesinspringerspanieli",
+      "synonyms": [
+        "Welsh springer spaniel",
+        "Welsh springer",
+        "Welshie"
+      ]
+    },
+    "smooth_fox_terrier": {
+      "name": "Sileäkarvainen kettuterrieri",
+      "slug": "sileakarvainen-kettuterrieri",
+      "synonyms": [
+        "Smooth fox terrier",
+        "Foxie"
+      ],
+      "colours": {
+        "tricolour": "Kolmivärinen",
+        "white-tan": "Valkoinen ja ruskea",
+        "white-black": "Valkoinen ja musta",
+        "white": "Kokonaan valkoinen"
+      }
+    },
+    "bearded_collie": {
+      "name": "Bearded collie",
+      "slug": "bearded-collie",
+      "synonyms": [
+        "Beardie",
+        "Highland collie",
+        "Hairy Mou'ed Collie"
+      ],
+      "colours": {
+        "grey-white": "Liuskeenharmaa ja valkoinen",
+        "black-white": "Mustavalkoinen",
+        "blue-white": "Sinivalkoinen",
+        "brown-white": "Ruskea ja valkoinen",
+        "fawn-white": "Punertava kellanruskea ja valkoinen",
+        "sandy-white": "Hiekanvärinen ja valkoinen"
+      }
     }
   },
   "suitability_labels": {
