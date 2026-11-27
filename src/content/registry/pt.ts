@@ -1783,6 +1783,14 @@ const pt: RegistryCopy = {
       ],
       sources: ["S1003", "S1004", "S1006", "S1007", "S10"],
     },
+    saluki: {
+      aka: "Galgo persa, Saluki, Persian Greyhound, Gazelle Hound, Arabian Hound",
+      text: [
+        "O galgo persa (Saluki) é um galgo esguio e muito veloz originário do Médio Oriente; a FCI inclui-o no Grupo 10, entre os galgos de pelo comprido ou franjado, sob patrocínio da própria FCI. O padrão da FCI descreve um cão que transmite uma impressão de graça e simetria, de grande velocidade e resistência, com pelo liso, macio e sedoso — com franjas nas orelhas, nas pernas, na parte de trás das coxas e na cauda na variedade franjada — e admite qualquer cor ou combinação de cores, sendo o tigrado indesejável. O padrão da FCI indica uma altura média de 58–71 cm, com as fêmeas proporcionalmente mais pequenas, mas não indica peso; a PDSA indica um peso médio de 16–29,5 kg e uma esperança de vida média de mais de 10 anos. Sendo um cão grande, costuma atingir o tamanho adulto por volta dos 15–18 meses (PetMD).",
+        "A PDSA diz que os galgos persas precisam de mais de duas horas de exercício por dia, de preferência numa área vedada, porque têm um forte instinto de perseguição e nem sempre é fácil chamá-los de volta; a WebMD aconselha a mantê-los sempre de trela e atrás de uma vedação alta. A PetMD recomenda uma escovagem rápida uma ou duas vezes por semana e diz que não gostam de ficar sozinhos todo o dia e podem desenvolver ansiedade de separação; a WebMD recomenda escovar os dentes todos os dias. A PetMD diz que não são a raça mais indicada para crianças, porque gostam de uma casa calma e sossegada, a WebMD que se dão melhor em famílias com crianças mais velhas, e a PDSA pede aos donos que tenham o instinto de perseguição em conta perto de outros animais.",
+      ],
+      sources: ["S1085", "S1086", "S1087", "S1088", "S10"],
+    },
   },
 };
 
