@@ -1591,6 +1591,38 @@ const cs: RegistryCopy = {
       ],
       sources: ["S1035", "S1037", "S1038", "S1040", "S1041", "S123", "S10"],
     },
+    welsh_springer_spaniel: {
+      aka: "Welsh springer spaniel, Welsh Springer, Welshie, Welsh Starter, velšský špringršpaněl",
+      text: [
+        "Velšský špringršpaněl je lovecký pes z Velké Británie, který vyhání zvěř z úkrytu; FCI ho řadí do skupiny 8 mezi slídiče. Standard FCI popisuje souměrného, kompaktního psa, který není vysokonohý, stvořeného pro vytrvalost a těžkou práci, s rovnou, plochou, hedvábnou srstí výhradně sytě červenobílé barvy, se silným, veselým, velmi čilým temperamentem a mírnou povahou. Standard FCI uvádí výšku asi 48 cm u psů a 46 cm u fen; PetMD uvádí hmotnost 35–55 liber (asi 16–25 kg) a pes této velikosti dorůstá zhruba ve 12–15 měsících (velikostní třída PetMD). Velká britská studie z roku 2024 (McMillan a kol., v tabulce Dogs Trust) uvádí medián očekávané délky života 14,0 roku; Royal Kennel Club uvádí délku života přes 10 let.",
+        "Royal Kennel Club doporučuje více než 2 hodiny pohybu denně a péči o srst častěji než jednou týdně a uvádí, že plemeno líná. VCA píše, že péče o srst není náročná a stačí kartáčování jednou nebo dvakrát týdně. PetMD popisuje velšské špringršpaněly jako přítulné, věrné rodinné psy vyrovnané povahy; kvůli silnému loveckému pudu by měli být vždy na vodítku nebo na bezpečně oplocené ploše a do domácností s malými zvířaty se nehodí. Zvlášť důležitá je včasná socializace a důsledný výcvik. WebMD uvádí, že dobře vycházejí s dětmi, a doporučuje každodenní čištění zubů a měsíční koupel i zkracování drápků.",
+      ],
+      sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
+    },
+    smooth_fox_terrier: {
+      aka: "Smooth fox terrier, Smooth-coated Fox Terrier, Foxie, Fox Terrier, hladkosrstý foxteriér",
+      text: [
+        "Foxteriér hladkosrstý je aktivní a temperamentní teriér z Velké Británie (FCI: skupina 3, teriéři, sekce velcí a středně velcí teriéři), hladkosrstá odrůda foxteriéra drsnosrstého, nikoli toy foxteriér. Standard FCI požaduje psa malého rámce se silnou kostrou a pevnou stavbou, nikdy ne těžkopádného ani hrubého, s rovnou, plochou, hladkou, tvrdou a hustou srstí, v níž převládá bílá: celobílou nebo bílou s pálenými, černopálenými či černými znaky. Výška v kohoutku nesmí u psů přesáhnout 39 cm, u fen je o něco nižší. Standard FCI uvádí hmotnost 7,5–8 kg u psů a 7–7,5 kg u fen. Pes této velikosti dorůstá zhruba v 9–12 měsících (PetMD) a Dogs Trust uvádí obvyklou délku života přes 12 let (PetMD: 10–13 let).",
+        "Standard FCI označuje plemeno za přátelské, otevřené a nebojácné. PDSA doporučuje nejméně hodinu pohybu denně, WebMD 1–2 hodiny. PetMD píše, že foxteriéři hladkosrstí dobře vycházejí s dětmi, jsou ideálními rodinnými psy a navzdory krátké srsti středně línají; doporučuje kartáčování jednou týdně a včasnou socializaci s jinými psy a kočkami považuje za klíčovou. WebMD je označuje za skvělé společníky dětí, radí však na jejich vzájemné kontakty dohlížet, upozorňuje na vysoký lovecký pud a doporučuje každodenní čištění zubů a týdenní kontrolu uší.",
+      ],
+      sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
+    },
+    bearded_collie: {
+      aka: "Bearded collie, Vousatá kolie, Beardie, Highland Collie, Hairy Mou'ed Collie, Mountain Collie",
+      text: [
+        "Bearded kolie je štíhlý, aktivní pastevecký pes z Velké Británie; FCI ho řadí do skupiny 1 mezi pastevecké psy. Standard FCI popisuje psa pevné stavby, který nesmí působit příliš těžce, s bystrým, zvídavým výrazem a huňatou dvojitou srstí (měkká, huňatá podsada pod plochou, hrubou krycí srstí, která se nesmí stříhat) v barvě břidlicově šedé, červenavě plavé, černé, modré, v jakémkoli odstínu šedé, hnědé nebo písčité, s bílými znaky nebo bez nich, nikdy merle. Standard FCI uvádí výšku 53–56 cm u psů a 51–53 cm u fen, hmotnost však neuvádí; PDSA uvádí průměrnou hmotnost 20–25 kg a pes této velikosti dorůstá zhruba ve 12–15 měsících (velikostní třída PetMD). Velká britská studie z roku 2024 (McMillan a kol., v tabulce Dogs Trust) uvádí medián očekávané délky života 13,9 roku; Royal Kennel Club uvádí délku života přes 12 let.",
+        "Royal Kennel Club doporučuje až hodinu pohybu denně a každodenní péči o srst, uvádí, že plemeno líná a hodí se do velkého domu s velkou zahradou. PDSA označuje bearded kolie za mírné, milé a veselé psy a ideální rodinné mazlíčky, upozorňuje však, že kvůli silnému pasteveckému instinktu se mohou doma pokoušet pást dospělé i děti. PetMD píše, že jsou k dětem jemní, každý kontakt dětí se psem má však probíhat pod dohledem; doporučuje každodenní kartáčování a socializaci štěněte od prvního dne doma. WebMD píše, že jsou společenští, mohou být úzkostní, když zůstanou dlouho sami, potřebují pohyb i duševní podněty a nejde o hypoalergenní plemeno.",
+      ],
+      sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
+    },
+    saluki: {
+      aka: "Perský chrt, Arabský chrt, Persian Greyhound, Gazelle Hound, Arabian Hound",
+      text: [
+        "Saluki je štíhlý, velmi rychlý chrt z Blízkého východu; FCI ho řadí do skupiny 10 mezi dlouhosrsté nebo třásnité chrty a plemeno je pod patronací samotné FCI. Standard FCI popisuje psa působícího dojmem půvabu a souměrnosti, velké rychlosti a vytrvalosti, s hladkou, měkkou, hedvábnou srstí (u třásnité odrůdy jsou třásně na uších, nohou, na zadní straně stehen a na ocase); připouští jakoukoli barvu nebo kombinaci barev, žíhání je však nežádoucí. Standard FCI uvádí průměrnou výšku 58–71 cm (feny úměrně menší), hmotnost však neuvádí; PDSA uvádí průměrnou hmotnost 16–29,5 kg a průměrnou délku života přes 10 let. Velký pes tohoto plemene dorůstá obvykle zhruba v 15–18 měsících (PetMD).",
+        "PDSA píše, že saluki potřebují přes 2 hodiny pohybu denně, nejlépe na oplocené ploše, protože mají silný pud pronásledování a přivolání není vždy snadné; WebMD radí mít je vždy na vodítku a za vysokým plotem. PetMD doporučuje krátké kartáčování jednou nebo dvakrát týdně a píše, že saluki nechtějí zůstávat sami celý den a mohou trpět separační úzkostí; WebMD doporučuje čistit jim zuby každý den. Podle PetMD nepatří mezi nejvhodnější plemena pro děti, protože mají rádi klidný, tichý domov; podle WebMD jim je lépe v domácnostech se staršími dětmi a PDSA žádá majitele, aby na jejich pud pronásledování pamatovali v blízkosti dalších mazlíčků.",
+      ],
+      sources: ["S1085", "S1086", "S1087", "S1088", "S10"],
+    },
     finnish_lapphund: {
       aka: "Finnish Lapponian Dog, Suomenlapinkoira, Lapinkoira, Lappie, Lapphund, finský laponský pes",
       text: [

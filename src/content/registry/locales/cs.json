@@ -1367,7 +1367,15 @@
       "synonyms": [
         "Chow-chow",
         "Chow Chow"
-      ]
+      ],
+      "colours": {
+        "red": "Červená",
+        "black": "Černá",
+        "cream": "Krémová",
+        "fawn": "Plavá",
+        "blue": "Modrá",
+        "white": "Bílá"
+      }
     },
     "old_english_sheepdog": {
       "name": "Starý anglický ovčák",
@@ -1375,7 +1383,11 @@
       "synonyms": [
         "Bobtail",
         "Old English Sheepdog"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Šedobílá",
+        "blue-white": "Modrobílá"
+      }
     },
     "pekingese": {
       "name": "Pekinéz",
@@ -1411,7 +1423,11 @@
         "Střední knírač",
         "Mittelschnauzer",
         "Standard schnauzer"
-      ]
+      ],
+      "colours": {
+        "pepper-salt": "Pepř a sůl",
+        "black": "Černá"
+      }
     },
     "coton_de_tulear": {
       "name": "Coton de Tuléar",
@@ -1426,7 +1442,15 @@
       "slug": "anglicky-setr",
       "synonyms": [
         "English Setter"
-      ]
+      ],
+      "colours": {
+        "blue-belton": "Modrý belton",
+        "orange-belton": "Oranžový belton",
+        "blue-belton-tan": "Tříbarevná (modrý belton s pálením)",
+        "lemon-belton": "Citronový belton",
+        "liver-belton": "Játrový belton",
+        "liver-belton-tan": "Tříbarevná (játrový belton s pálením)"
+      }
     },
     "dogue_de_bordeaux": {
       "name": "Bordeauxská doga",
@@ -1434,7 +1458,13 @@
       "synonyms": [
         "Dogue de Bordeaux",
         "Francouzská doga"
-      ]
+      ],
+      "colours": {
+        "mahogany-brown-mask": "Mahagonová s hnědou maskou",
+        "fawn-black-mask": "Plavá s černou maskou",
+        "fawn-no-mask": "Plavá bez masky",
+        "isabella": "Izabelová"
+      }
     },
     "flat_coated_retriever": {
       "name": "Flat coated retriever",
@@ -1443,7 +1473,11 @@
         "Flat-coated retriever",
         "Flat coated retrívr",
         "Flatcoat"
-      ]
+      ],
+      "colours": {
+        "black": "Černá",
+        "liver": "Játrová"
+      }
     },
     "lhasa_apso": {
       "name": "Lhasa apso",
@@ -1452,7 +1486,17 @@
         "Lhasa",
         "Apso",
         "Lhasa-apso"
-      ]
+      ],
+      "colours": {
+        "golden": "Zlatá",
+        "honey": "Medová",
+        "dark-grizzle": "Tmavě šedá (grizzle)",
+        "smoke": "Kouřová",
+        "parti-colour": "Dvoubarevná",
+        "black": "Černá",
+        "white": "Bílá",
+        "brown": "Hnědá"
+      }
     },
     "border_terrier": {
       "name": "Border teriér",
@@ -1461,7 +1505,13 @@
         "Border terrier",
         "Border",
         "Border terier"
-      ]
+      ],
+      "colours": {
+        "grizzle-tan": "Grizzle s pálením",
+        "red": "Červená",
+        "wheaten": "Pšeničná",
+        "blue-tan": "Modrá s pálením"
+      }
     },
     "leonberger": {
       "name": "Leonberger",
@@ -1471,7 +1521,12 @@
         "Leo",
         "leonbergr",
         "Leonberský pes"
-      ]
+      ],
+      "colours": {
+        "lion-yellow": "Lví žlutá",
+        "red": "Červená",
+        "sandy": "Písková"
+      }
     },
     "beauceron": {
       "name": "Beauceron",
@@ -1481,7 +1536,11 @@
         "Berger de Beauce",
         "Beauce",
         "Bas rouge"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Černá s pálením",
+        "harlequin": "Harlekýn"
+      }
     },
     "bouvier_des_flandres": {
       "name": "Flanderský bouvier",
@@ -1841,6 +1900,70 @@
         "mahogany": "Mahagonová",
         "fawn": "Plavá",
         "deep-fawn": "Tmavě plavá"
+      }
+    },
+    "welsh_springer_spaniel": {
+      "name": "Velšský špringršpaněl",
+      "slug": "velsky-springrspanel",
+      "synonyms": [
+        "Welsh springer spaniel",
+        "Welsh springer",
+        "Welshie",
+        "Welsh Starter",
+        "Velšský springer španěl"
+      ]
+    },
+    "smooth_fox_terrier": {
+      "name": "Foxteriér hladkosrstý",
+      "slug": "foxterier-hladkosrsty",
+      "synonyms": [
+        "Hladkosrstý foxteriér",
+        "Smooth fox terrier",
+        "Foxie"
+      ],
+      "colours": {
+        "tricolour": "Tříbarevná",
+        "white-tan": "Bílá s pálenými znaky",
+        "white-black": "Bílá s černými znaky",
+        "white": "Celá bílá"
+      }
+    },
+    "bearded_collie": {
+      "name": "Bearded kolie",
+      "slug": "bearded-kolie",
+      "synonyms": [
+        "Bearded collie",
+        "Vousatá kolie",
+        "Beardie",
+        "Highland collie",
+        "Hairy Mou'ed Collie"
+      ],
+      "colours": {
+        "grey-white": "Břidlicově šedá s bílou",
+        "black-white": "Černobílá",
+        "blue-white": "Modrobílá",
+        "brown-white": "Hnědobílá",
+        "fawn-white": "Červenoplavá s bílou",
+        "sandy-white": "Písková s bílou"
+      }
+    },
+    "saluki": {
+      "name": "Saluki",
+      "slug": "saluki",
+      "synonyms": [
+        "Perský chrt",
+        "Arabský chrt",
+        "Gazelle hound"
+      ],
+      "colours": {
+        "fawn": "Plavá",
+        "cream": "Krémová",
+        "white": "Bílá",
+        "golden": "Zlatá",
+        "red": "Červená",
+        "grizzle-tan": "Grizzle s pálením",
+        "tricolour": "Tříbarevná",
+        "black-tan": "Černá s pálením"
       }
     },
     "finnish_lapphund": {
