@@ -1896,6 +1896,24 @@
         "fawn-white": "Rödaktig fawn och vit",
         "sandy-white": "Sandfärgad och vit"
       }
+    },
+    "saluki": {
+      "name": "Saluki",
+      "slug": "saluki",
+      "synonyms": [
+        "Persisk vinthund",
+        "Persian greyhound"
+      ],
+      "colours": {
+        "fawn": "Fawn",
+        "cream": "Gräddfärgad",
+        "white": "Vit",
+        "golden": "Gyllene",
+        "red": "Röd",
+        "grizzle-tan": "Grizzlad och tan",
+        "tricolour": "Trefärgad",
+        "black-tan": "Svart och tan"
+      }
     }
   },
   "suitability_labels": {
