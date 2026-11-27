@@ -1762,6 +1762,14 @@ const nl: RegistryCopy = {
       ],
       sources: ["S1003","S1004","S1006","S1007","S10"],
     },
+    welsh_springer_spaniel: {
+      aka: "Welsh springer, Welshie, Welsh Starter",
+      text: [
+        "De Welsh springer spaniel is een jachthond uit Groot-Brittannië die wild opdrijft; de FCI rekent hem tot groep 8, sectie opdrijvers. De FCI-standaard beschrijft een symmetrische, compacte hond die niet hoog op de poten staat, gebouwd voor uithoudingsvermogen en zwaar werk, met een rechte, vlak liggende, zijdeachtige vacht in uitsluitend diep rood en wit, en een krachtig, vrolijk en zeer actief temperament met een vriendelijk karakter. De FCI-standaard noemt een schofthoogte van ongeveer 48 cm voor reuen en 46 cm voor teven; PetMD noemt een gewicht van 35–55 pond (ongeveer 16–25 kg), en een hond van dit formaat is volgroeid rond 12–15 maanden (PetMD-grootteklasse). Een groot Brits onderzoek uit 2024 (McMillan e.a., in de tabel van Dogs Trust) noemt een mediane levensverwachting van 14,0 jaar; de Royal Kennel Club noemt een levensduur van meer dan 10 jaar.",
+        "De Royal Kennel Club raadt meer dan 2 uur beweging per dag aan en vachtverzorging vaker dan eens per week, en meldt dat het ras verhaart. VCA zegt dat vachtverzorging niet moeilijk is: een of twee keer per week borstelen. PetMD omschrijft Welsh springers als liefdevolle, trouwe en evenwichtige gezinshonden; door hun sterke jachtinstinct moeten ze altijd aangelijnd zijn of in een veilig omheinde ruimte verblijven, passen ze niet in een gezin met kleine huisdieren en zijn vroege socialisatie en consequente training extra belangrijk. WebMD schrijft dat ze goed met kinderen overweg kunnen en adviseert dagelijks tandenpoetsen en eens per maand baden en de nagels knippen.",
+      ],
+      sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
+    },
   },
 };
 
