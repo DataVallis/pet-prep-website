@@ -58,7 +58,7 @@ export const it: PartnerLocalePack = {
     what: {
       heading: "Che cos’è PetPrep",
       paragraphs: [
-        "PetPrep è un’app con un registro degli animali che aiuta una famiglia a prepararsi all’arrivo di un cane o di un gatto prima di portarlo a casa. In una sfida di 12 settimane il bambino si prende cura di un animale virtuale realistico, mentre il genitore vede in una dashboard come procedono davvero le cure.",
+        "PetPrep è un’app con un registro degli animali che aiuta una famiglia a prepararsi all’arrivo di un cane o di un gatto prima di portarlo a casa. In una sfida di 12 settimane il bambino si prende cura di un animale virtuale realistico, mentre il genitore vede nel pannello per i genitori come procedono davvero le cure.",
         "Il registro delle razze spiega di che cosa ha bisogno ogni animale, con le fonti citate. Ogni numero è riconducibile a una fonte e ogni contenuto dei partner è segnalato come tale.",
       ],
     },
@@ -74,14 +74,14 @@ export const it: PartnerLocalePack = {
         ["Sponsorizzazione della serie «12 Weeks»", "Lo sponsor viene citato nell’episodio e nella sua descrizione. Non interviene sui contenuti della serie."],
         ["Contenuti sponsorizzati su petprep.si", "Un articolo segnalato come tale accanto alla pagina di una razza o nella base di conoscenza, senza alcuna influenza su contenuti e fonti."],
         ["Assicurazioni", "Sponsorizzazione fissa o compenso per ogni contatto segnalato. Solo con il consenso esplicito di un genitore. La segnalazione di contatti è in preparazione."],
-        ["Partner fondatore dell’elenco", "Veterinari, scuole cinofile, toelettatori, allevatori: una scheda in evidenza. 190 € l’anno, prezzo bloccato, posti limitati per paese."],
+        ["Partner fondatore dell’elenco", "Veterinari, scuole cinofile, toelettatori, allevatori: una scheda in evidenza. 190 € l’anno, prezzo bloccato, posti limitati per paese."],
         ["Rifugi e associazioni", "Una scheda gratuita e la possibilità di consigliare PetPrep a chi adotta."],
       ],
     },
     examples: {
       heading: "Esempi di contenuti",
       items: [
-        ["L’app", "Una sfida di 12 settimane con un animale virtuale realistico e una dashboard per i genitori."],
+        ["L’app", "Una sfida di 12 settimane con un animale virtuale realistico e un pannello per i genitori."],
         ["Registro delle razze", "{breeds} {breeds|one=razza|other=razze} ({dogs} {dogs|one=cane|other=cani}, {cats} {cats|one=gatto|other=gatti}) con le fonti, dati al {date}."],
         ["Serie «12 Weeks»", "Una serie video che segue 12 settimane di cure per un animale; uno spazio per la menzione di uno sponsor."],
       ],
@@ -120,7 +120,7 @@ export const it: PartnerLocalePack = {
           { title: "Sponsorizzazione della serie «12 Weeks»", text: "La serie segue 12 settimane di cure per un animale. Lo sponsor viene citato nell’episodio e nella sua descrizione; non interviene sui contenuti della serie." },
           { title: "Contenuti sponsorizzati su petprep.si", text: "Un articolo accanto alla pagina di una razza o nella base di conoscenza. È sempre segnalato come sponsorizzato e lo sponsor non ha alcuna influenza sulla pagina né sulle fonti citate." },
           { title: "Assicurazioni", text: "Compenso per ogni contatto segnalato oppure una sponsorizzazione fissa. Trasmettiamo un contatto solo con il consenso esplicito di un genitore e mai dati di un minore. La segnalazione di contatti è in preparazione e non ancora disponibile." },
-          { title: "Partner fondatore dell’elenco", text: "Per veterinari, scuole cinofile, toelettatori e allevatori: una scheda in evidenza con logo, descrizione e link. 190 € l’anno; il prezzo è bloccato per i partner fondatori. I posti sono limitati per paese." },
+          { title: "Partner fondatore dell’elenco", text: "Per veterinari, scuole cinofile, toelettatori e allevatori: una scheda in evidenza con logo, descrizione e link. 190 € l’anno; il prezzo è bloccato per i partner fondatori. I posti sono limitati per paese." },
           { title: "Rifugi e associazioni", text: "La scheda è gratuita. Può consigliare PetPrep a chi adotta, così arriva più preparato all’arrivo dell’animale." },
         ],
       },

@@ -397,7 +397,7 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
       steps: [
         "Scegli un disegno e stampalo in A4 o US Letter: basta il bianco e nero.",
         "Coloralo, oppure ricopia il disegno su un foglio bianco.",
-        "Leggete insieme la curiosità sulla pagina: ognuna proviene da una fonte veterinaria o da un ente cinofilo.",
+        "Leggi insieme la curiosità sulla pagina: ognuna proviene da una fonte veterinaria o da un ente cinofilo.",
       ],
     },
     share: {
