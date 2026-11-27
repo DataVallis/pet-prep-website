@@ -1195,14 +1195,26 @@
       "synonyms": [
         "Chow-chow",
         "Chow"
-      ]
+      ],
+      "colours": {
+        "red": "Rouge",
+        "black": "Noir",
+        "cream": "Crème",
+        "fawn": "Fauve",
+        "blue": "Bleu",
+        "white": "Blanc"
+      }
     },
     "old_english_sheepdog": {
       "name": "Bobtail",
       "slug": "bobtail",
       "synonyms": [
         "Old English Sheepdog"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Gris et blanc",
+        "blue-white": "Bleu et blanc"
+      }
     },
     "pekingese": {
       "name": "Pékinois",
@@ -1235,7 +1247,11 @@
       "synonyms": [
         "Mittelschnauzer",
         "Standard Schnauzer"
-      ]
+      ],
+      "colours": {
+        "pepper-salt": "Poivre et sel",
+        "black": "Noir"
+      }
     },
     "coton_de_tulear": {
       "name": "Coton de Tuléar",
@@ -1250,11 +1266,25 @@
       "slug": "setter-anglais",
       "synonyms": [
         "English Setter"
-      ]
+      ],
+      "colours": {
+        "blue-belton": "Bleu belton",
+        "orange-belton": "Orange belton",
+        "blue-belton-tan": "Tricolore (bleu belton et feu)",
+        "lemon-belton": "Citron belton",
+        "liver-belton": "Foie belton",
+        "liver-belton-tan": "Tricolore (foie belton et feu)"
+      }
     },
     "dogue_de_bordeaux": {
       "name": "Dogue de Bordeaux",
-      "slug": "dogue-de-bordeaux"
+      "slug": "dogue-de-bordeaux",
+      "colours": {
+        "mahogany-brown-mask": "Acajou, masque marron",
+        "fawn-black-mask": "Fauve, masque noir",
+        "fawn-no-mask": "Fauve, sans masque",
+        "isabella": "Isabelle"
+      }
     },
     "flat_coated_retriever": {
       "name": "Retriever à poil plat",
@@ -1263,7 +1293,11 @@
         "Flat Coated Retriever",
         "Flat-Coated Retriever",
         "Flat coat"
-      ]
+      ],
+      "colours": {
+        "black": "Noir",
+        "liver": "Foie"
+      }
     },
     "lhasa_apso": {
       "name": "Lhassa Apso",
@@ -1271,14 +1305,30 @@
       "synonyms": [
         "Lhasa Apso",
         "Lhasa"
-      ]
+      ],
+      "colours": {
+        "golden": "Doré",
+        "honey": "Miel",
+        "dark-grizzle": "Grisonné foncé",
+        "smoke": "Fumé",
+        "parti-colour": "Bicolore",
+        "black": "Noir",
+        "white": "Blanc",
+        "brown": "Marron"
+      }
     },
     "border_terrier": {
       "name": "Border Terrier",
       "slug": "border-terrier",
       "synonyms": [
         "Border-terrier"
-      ]
+      ],
+      "colours": {
+        "grizzle-tan": "Grisonné et feu",
+        "red": "Rouge",
+        "wheaten": "Froment",
+        "blue-tan": "Bleu et feu"
+      }
     },
     "leonberger": {
       "name": "Léonberg",
@@ -1286,7 +1336,12 @@
       "synonyms": [
         "Leonberg",
         "Leonberger"
-      ]
+      ],
+      "colours": {
+        "lion-yellow": "Jaune lion",
+        "red": "Rouge",
+        "sandy": "Sable"
+      }
     },
     "beauceron": {
       "name": "Beauceron",
@@ -1295,7 +1350,11 @@
         "Berger de Beauce",
         "Bas-rouge",
         "Bas rouge"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Noir et feu",
+        "harlequin": "Arlequin"
+      }
     },
     "borzoi": {
       "name": "Barzoï",
@@ -1706,6 +1765,56 @@
         "Welsh Starter",
         "Springer gallois"
       ]
+    },
+    "smooth_fox_terrier": {
+      "name": "Fox-terrier à poil lisse",
+      "slug": "fox-terrier-a-poil-lisse",
+      "synonyms": [
+        "Fox terrier à poil lisse",
+        "Fox-terrier poil lisse",
+        "Smooth Fox Terrier",
+        "Foxie"
+      ],
+      "colours": {
+        "tricolour": "Tricolore",
+        "white-tan": "Blanc et feu",
+        "white-black": "Blanc et noir",
+        "white": "Tout blanc"
+      }
+    },
+    "bearded_collie": {
+      "name": "Colley barbu",
+      "slug": "colley-barbu",
+      "synonyms": [
+        "Bearded Collie",
+        "Beardie"
+      ],
+      "colours": {
+        "grey-white": "Gris ardoise et blanc",
+        "black-white": "Noir et blanc",
+        "blue-white": "Bleu et blanc",
+        "brown-white": "Marron et blanc",
+        "fawn-white": "Fauve rougeâtre et blanc",
+        "sandy-white": "Sable et blanc"
+      }
+    },
+    "saluki": {
+      "name": "Saluki",
+      "slug": "saluki",
+      "synonyms": [
+        "Lévrier persan",
+        "Persian Greyhound"
+      ],
+      "colours": {
+        "fawn": "Fauve",
+        "cream": "Crème",
+        "white": "Blanc",
+        "golden": "Doré",
+        "red": "Rouge",
+        "grizzle-tan": "Grisonné et feu",
+        "tricolour": "Tricolore",
+        "black-tan": "Noir et feu"
+      }
     }
   },
   "suitability_labels": {

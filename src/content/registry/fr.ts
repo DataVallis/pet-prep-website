@@ -1558,6 +1558,30 @@ const fr: RegistryCopy = {
       ],
       sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
     },
+    smooth_fox_terrier: {
+      aka: "Fox-terrier à poil lisse, Fox Terrier (Smooth), Smooth Fox Terrier, Smooth-coated Fox Terrier, Foxie, Fox Terrier",
+      text: [
+        "Le fox-terrier à poil lisse est un terrier actif et vif originaire de Grande-Bretagne (FCI groupe 3, terriers ; section terriers de grande et moyenne taille) – le pendant à poil lisse du fox-terrier à poil dur, à ne pas confondre avec le Toy Fox Terrier. Le standard FCI demande une bonne ossature et de la force dans un format réduit, sans lourdeur ni grossièreté, un poil droit, plat, lisse, dur et dense, le blanc dominant (entièrement blanc, ou blanc avec des marques feu, noires et feu, ou noires), et une hauteur au garrot n’excédant pas 39 cm chez les mâles, les femelles étant un peu moins grandes. Il indique un poids de 7,5 à 8 kg pour les mâles et de 7 à 7,5 kg pour les femelles. Un chien de ce gabarit atteint sa taille adulte vers 9 à 12 mois (PetMD), et le Dogs Trust indique une espérance de vie courante de plus de 12 ans (PetMD : 10 à 13 ans).",
+        "Le standard FCI décrit la race comme amicale, ouverte et intrépide. La PDSA recommande au moins une heure d’exercice par jour, et WebMD une à deux heures. Selon PetMD, les Fox-terriers à poil lisse s’entendent bien avec les enfants, sont des chiens de famille idéaux et perdent modérément du poil malgré leur poil court ; il recommande un brossage hebdomadaire et juge essentielle une socialisation précoce avec les autres chiens et les chats. WebMD les décrit comme d’excellents compagnons pour les enfants, mais conseille de surveiller leurs interactions, signale un fort instinct de prédation et recommande un brossage des dents quotidien ainsi qu’un contrôle des oreilles chaque semaine.",
+      ],
+      sources: ["S1070", "S873", "S1071", "S1072", "S1075", "S10"],
+    },
+    bearded_collie: {
+      aka: "Colley barbu, Bearded Collie, Beardie, Highland Collie, Hairy Mou’ed Collie, Mountain Collie",
+      text: [
+        "Le colley barbu (Bearded Collie) est un chien de berger élancé et actif originaire de Grande-Bretagne ; la FCI le classe dans le groupe 1, parmi les chiens de berger. Le standard FCI décrit un chien solidement bâti, qui ne doit pas paraître trop lourd, à l’expression vive et curieuse, au pelage double et hirsute (un sous-poil doux et fourni sous un poil de couverture plat et dur, qui ne doit pas être taillé), de couleur gris ardoise, fauve rougeâtre, noir, bleu, ou de toutes les nuances de gris, de brun ou de sable, avec ou sans marques blanches, jamais merle. Le standard FCI indique une hauteur de 53 à 56 cm pour les mâles et de 51 à 53 cm pour les femelles, mais aucun poids ; la PDSA indique un poids moyen de 20 à 25 kg, et un chien de ce gabarit atteint sa taille adulte vers 12 à 15 mois (catégorie de gabarit PetMD). Une vaste étude britannique publiée en 2024 (McMillan et al., reprise dans le tableau du Dogs Trust) donne une espérance de vie médiane de 13,9 ans ; le Royal Kennel Club indique plus de 12 ans.",
+        "Le Royal Kennel Club recommande jusqu’à une heure d’exercice par jour et un toilettage quotidien ; il précise que la race perd du poil et convient à une grande maison avec un grand jardin. La PDSA décrit les colleys barbus comme des chiens doux, adorables et joyeux, des compagnons de famille parfaits, mais précise que leur fort instinct de berger peut les pousser à vouloir rassembler adultes et enfants à la maison. Selon PetMD, ils sont doux avec les enfants, même si chaque interaction entre enfants et chiens doit être surveillée ; il recommande un brossage quotidien et de socialiser le chiot dès son arrivée à la maison. WebMD écrit qu’ils sont sociables et peuvent devenir anxieux s’ils restent seuls longtemps, qu’ils ont besoin de stimulation physique et mentale, et qu’ils ne sont pas une race hypoallergénique.",
+      ],
+      sources: ["S1076", "S1078", "S1079", "S1081", "S1082", "S123", "S10"],
+    },
+    saluki: {
+      aka: "Saluki, Lévrier persan, Persian Greyhound, Gazelle Hound, Arabian Hound",
+      text: [
+        "Le Saluki est un lévrier élancé et très rapide originaire du Moyen-Orient ; la FCI le classe dans le groupe 10, parmi les lévriers à poil long ou frangé, sous son patronage. Le standard FCI décrit un chien qui donne une impression de grâce et de symétrie, de grande vitesse et d’endurance, au poil lisse, doux et soyeux – frangé sur les oreilles, les membres, l’arrière des cuisses et la queue dans la variété frangée – et admet toutes les couleurs ou combinaisons de couleurs, le bringé étant indésirable. Le standard FCI donne une hauteur moyenne de 58 à 71 cm, les femelles étant proportionnellement plus petites, mais aucun poids ; la PDSA indique un poids moyen de 16 à 29,5 kg et une espérance de vie moyenne de plus de 10 ans. Comme il s’agit d’un grand chien, il atteint généralement sa taille adulte vers 15 à 18 mois (PetMD).",
+        "La PDSA indique que les Salukis ont besoin de plus de 2 heures d’exercice par jour, idéalement dans un espace clos, car ils ont un fort instinct de poursuite et le rappel n’est pas toujours facile ; WebMD conseille de toujours les tenir en laisse et de les garder derrière une clôture haute. PetMD recommande un brossage rapide une à deux fois par semaine et précise que les Salukis n’aiment pas rester seuls toute la journée et peuvent développer une anxiété de séparation ; WebMD recommande un brossage des dents quotidien. Selon PetMD, ils ne sont pas la race la plus adaptée aux enfants, car ils aiment un foyer calme et paisible ; selon WebMD, ils s’épanouissent mieux dans une famille avec des enfants plus âgés, et la PDSA demande aux propriétaires de garder à l’esprit leur instinct de poursuite en présence d’autres animaux.",
+      ],
+      sources: ["S1085", "S1086", "S1087", "S1088", "S10"],
+    },
     toy_fox_terrier: {
       aka: "American Toy Terrier, Amertoy, TFT",
       text: [
