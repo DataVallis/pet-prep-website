@@ -1736,6 +1736,14 @@ const de: RegistryCopy = {
       ],
       sources: ["S1061", "S1060", "S10"],
     },
+    welsh_springer_spaniel: {
+      aka: "Welsh Springer, Welshie, Welsh Starter",
+      text: [
+        "Der Welsh Springer Spaniel ist ein Stöberhund aus Großbritannien (FCI-Gruppe 8, Sektion Stöberhunde). Laut FCI-Standard ist er ein symmetrischer, kompakter Hund, nicht hochbeinig und für Ausdauer und harte Arbeit gebaut, mit glattem, flachem, seidigem Haar ausschließlich in sattem Rot und Weiß und einem kräftigen, fröhlichen, sehr aktiven Temperament mit freundlichem Wesen. Die Widerristhöhe beträgt laut FCI-Standard etwa 48 cm bei Rüden und 46 cm bei Hündinnen; PetMD nennt ein Gewicht von 16–25 kg, und ein Hund dieser Größe ist mit etwa 12–15 Monaten ausgewachsen (PetMD-Größenklasse). Eine große britische Studie von 2024 (McMillan et al., in der Tabelle des Dogs Trust) nennt eine mittlere Lebenserwartung von 14,0 Jahren; der Royal Kennel Club gibt eine Lebensdauer von über 10 Jahren an.",
+        "Der Royal Kennel Club empfiehlt mehr als 2 Stunden Bewegung am Tag und mehr als einmal pro Woche Fellpflege; die Rasse haart. Laut VCA ist die Fellpflege unkompliziert, ein- bis zweimal pro Woche Bürsten genüge. PetMD beschreibt Welsh Springer als liebevolle, treue und ausgeglichene Familienhunde; wegen ihres starken Jagdtriebs sollten sie stets an der Leine oder in einem sicher eingezäunten Bereich gehalten werden und passten nicht in Haushalte mit Kleintieren, und frühe Sozialisierung und konsequentes Training seien besonders wichtig. WebMD schreibt, sie kämen gut mit Kindern aus, und empfiehlt tägliches Zähneputzen sowie einmal im Monat Baden und Krallenschneiden.",
+      ],
+      sources: ["S1062", "S1064", "S1065", "S1066", "S1067", "S123", "S10"],
+    },
   },
 };
 
