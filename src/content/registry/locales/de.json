@@ -1181,7 +1181,15 @@
       "synonyms": [
         "Chow",
         "Chow Chow"
-      ]
+      ],
+      "colours": {
+        "red": "Rot",
+        "black": "Schwarz",
+        "cream": "Creme",
+        "fawn": "Falb",
+        "blue": "Blau",
+        "white": "Weiß"
+      }
     },
     "old_english_sheepdog": {
       "name": "Altenglischer Schäferhund",
@@ -1189,7 +1197,11 @@
       "synonyms": [
         "Bobtail",
         "Old English Sheepdog"
-      ]
+      ],
+      "colours": {
+        "grey-white": "Grau-Weiß",
+        "blue-white": "Blau-Weiß"
+      }
     },
     "pekingese": {
       "name": "Pekingese",
@@ -1224,7 +1236,11 @@
       "synonyms": [
         "Standard Schnauzer",
         "Standardschnauzer"
-      ]
+      ],
+      "colours": {
+        "pepper-salt": "Pfeffer-Salz",
+        "black": "Schwarz"
+      }
     },
     "coton_de_tulear": {
       "name": "Coton de Tuléar",
@@ -1239,7 +1255,15 @@
       "slug": "english-setter",
       "synonyms": [
         "Englischer Setter"
-      ]
+      ],
+      "colours": {
+        "blue-belton": "Blue Belton",
+        "orange-belton": "Orange Belton",
+        "blue-belton-tan": "Tricolour (Blue Belton und Lohfarben)",
+        "lemon-belton": "Lemon Belton",
+        "liver-belton": "Liver Belton",
+        "liver-belton-tan": "Tricolour (Liver Belton und Lohfarben)"
+      }
     },
     "dogue_de_bordeaux": {
       "name": "Bordeauxdogge",
@@ -1248,7 +1272,13 @@
         "Dogue de Bordeaux",
         "Bordeaux-Dogge",
         "Französische Dogge"
-      ]
+      ],
+      "colours": {
+        "mahogany-brown-mask": "Mahagoni mit brauner Maske",
+        "fawn-black-mask": "Falb mit schwarzer Maske",
+        "fawn-no-mask": "Falb ohne Maske",
+        "isabella": "Isabell"
+      }
     },
     "flat_coated_retriever": {
       "name": "Flat Coated Retriever",
@@ -1257,7 +1287,11 @@
         "Flatcoat",
         "Flat-Coated Retriever",
         "Flat Coat"
-      ]
+      ],
+      "colours": {
+        "black": "Schwarz",
+        "liver": "Leberbraun"
+      }
     },
     "lhasa_apso": {
       "name": "Lhasa Apso",
@@ -1265,21 +1299,42 @@
       "synonyms": [
         "Lhasa",
         "Apso"
-      ]
+      ],
+      "colours": {
+        "golden": "Golden",
+        "honey": "Honigfarben",
+        "dark-grizzle": "Dunkles Grizzle",
+        "smoke": "Rauchfarben",
+        "parti-colour": "Gescheckt",
+        "black": "Schwarz",
+        "white": "Weiß",
+        "brown": "Braun"
+      }
     },
     "border_terrier": {
       "name": "Border Terrier",
       "slug": "border-terrier",
       "synonyms": [
         "Border-Terrier"
-      ]
+      ],
+      "colours": {
+        "grizzle-tan": "Grizzle mit Brand",
+        "red": "Rot",
+        "wheaten": "Weizenfarben",
+        "blue-tan": "Blau mit Brand"
+      }
     },
     "leonberger": {
       "name": "Leonberger",
       "slug": "leonberger",
       "synonyms": [
         "Leonberg"
-      ]
+      ],
+      "colours": {
+        "lion-yellow": "Löwengelb",
+        "red": "Rot",
+        "sandy": "Sandfarben"
+      }
     },
     "beauceron": {
       "name": "Beauceron",
@@ -1287,7 +1342,11 @@
       "synonyms": [
         "Berger de Beauce",
         "Bas Rouge"
-      ]
+      ],
+      "colours": {
+        "black-tan": "Schwarz mit Brand",
+        "harlequin": "Harlekin"
+      }
     },
     "borzoi": {
       "name": "Barsoi",
@@ -1703,6 +1762,54 @@
         "Welshie",
         "Welsh Starter"
       ]
+    },
+    "smooth_fox_terrier": {
+      "name": "Foxterrier (Glatthaar)",
+      "slug": "foxterrier-glatthaar",
+      "synonyms": [
+        "Glatthaar-Foxterrier",
+        "Glatthaar Foxterrier",
+        "Foxterrier Glatthaar",
+        "Smooth Fox Terrier"
+      ],
+      "colours": {
+        "tricolour": "Tricolour",
+        "white-tan": "Weiß mit lohfarbenen Abzeichen",
+        "white-black": "Weiß mit schwarzen Abzeichen",
+        "white": "Ganz weiß"
+      }
+    },
+    "bearded_collie": {
+      "name": "Bearded Collie",
+      "slug": "bearded-collie",
+      "synonyms": [
+        "Beardie"
+      ],
+      "colours": {
+        "grey-white": "Schiefergrau-Weiß",
+        "black-white": "Schwarz-Weiß",
+        "blue-white": "Blau-Weiß",
+        "brown-white": "Braun-Weiß",
+        "fawn-white": "Rotfalb-Weiß",
+        "sandy-white": "Sandfarben-Weiß"
+      }
+    },
+    "saluki": {
+      "name": "Saluki",
+      "slug": "saluki",
+      "synonyms": [
+        "Persischer Windhund"
+      ],
+      "colours": {
+        "fawn": "Falb",
+        "cream": "Creme",
+        "white": "Weiß",
+        "golden": "Golden",
+        "red": "Rot",
+        "grizzle-tan": "Grizzle mit Brand",
+        "tricolour": "Tricolour",
+        "black-tan": "Schwarz mit Brand"
+      }
     }
   },
   "suitability_labels": {
