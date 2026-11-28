@@ -1517,7 +1517,16 @@
         "Chart rosyjski",
         "Borzoi",
         "Russian wolfhound"
-      ]
+      ],
+      "colours": {
+        "white-red": "Biały z czerwonymi łatami",
+        "white": "Biały",
+        "red": "Czerwony",
+        "sable": "Czerwony sable",
+        "brindle": "Pręgowany",
+        "black-tan": "Czarny z podpalaniem",
+        "black": "Czarny"
+      }
     },
     "bouvier_des_flandres": {
       "name": "Bouvier des Flandres",
@@ -1526,7 +1535,13 @@
         "Bouvier",
         "Owczarek flandryjski",
         "Flanders cattle dog"
-      ]
+      ],
+      "colours": {
+        "grey-brindle": "Ciemnoszary pręgowany",
+        "brindle": "Pręgowany",
+        "black-brindle": "Pręgowany z czarnym przyciemnieniem",
+        "black": "Czarny"
+      }
     },
     "japanese_chin": {
       "name": "Chin japoński",
@@ -1535,7 +1550,11 @@
         "Japanese chin",
         "Chin",
         "Spaniel japoński"
-      ]
+      ],
+      "colours": {
+        "black-white": "Czarno-biały",
+        "red-white": "Czerwono-biały"
+      }
     },
     "miniature_bull_terrier": {
       "name": "Bulterier miniaturowy",
@@ -1543,14 +1562,28 @@
       "synonyms": [
         "Miniature bull terrier",
         "Bull terrier miniaturowy"
-      ]
+      ],
+      "colours": {
+        "white": "Biały",
+        "brindle": "Pręgowany",
+        "black-brindle": "Czarny pręgowany",
+        "red": "Rudy",
+        "fawn": "Płowy",
+        "tricolour": "Trójkolorowy (czarny, podpalany, biały)"
+      }
     },
     "norwich_terrier": {
       "name": "Norwich terrier",
       "slug": "norwich-terrier",
       "synonyms": [
         "Norwich"
-      ]
+      ],
+      "colours": {
+        "red": "Rudy",
+        "wheaten": "Pszeniczny",
+        "black-tan": "Czarny z podpalaniem",
+        "grizzle": "Grizzle"
+      }
     },
     "schipperke": {
       "name": "Schipperke",
@@ -1563,7 +1596,11 @@
         "Tervueren",
         "Tervuren",
         "Belgian Tervuren"
-      ]
+      ],
+      "colours": {
+        "fawn": "Płowy z czarną maską",
+        "grey": "Szary z czarną maską"
+      }
     },
     "belgian_sheepdog": {
       "name": "Owczarek belgijski groenendael",
@@ -1662,7 +1699,13 @@
         "Toy fox terier",
         "Amerykański toy terier",
         "Amertoy"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Trójkolorowy (biały, czarny, podpalany)",
+        "chocolate-tan-white": "Biały, czekoladowy i podpalany",
+        "tan-white": "Biało-podpalany",
+        "black-white": "Biało-czarny"
+      }
     },
     "gordon_setter": {
       "name": "Seter szkocki",
@@ -1678,7 +1721,16 @@
       "synonyms": [
         "Afgan",
         "Afghan hound"
-      ]
+      ],
+      "colours": {
+        "gold-black-mask": "Złoty z czarną maską",
+        "cream": "Kremowy",
+        "red-black-mask": "Czerwony z czarną maską",
+        "black": "Czarny",
+        "black-tan": "Czarny z podpalaniem",
+        "blue": "Niebieski",
+        "brindle": "Pręgowany"
+      }
     },
     "australian_silky_terrier": {
       "name": "Silky terrier australijski",
@@ -1694,7 +1746,13 @@
       "synonyms": [
         "Parson Russell",
         "Parson Russell terier"
-      ]
+      ],
+      "colours": {
+        "white-tan": "Biały z podpalaniem",
+        "tricolour": "Trójkolorowy",
+        "white-lemon": "Cytrynowo-biały",
+        "white-black": "Biały z czarnymi łatami"
+      }
     },
     "wire_fox_terrier": {
       "name": "Fox terrier szorstkowłosy",
@@ -1702,7 +1760,12 @@
       "synonyms": [
         "Foksterier szorstkowłosy",
         "Wire fox terrier"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Trójkolorowy",
+        "white-tan": "Biały z podpalaniem",
+        "white-black": "Biały z czarnymi łatami"
+      }
     },
     "manchester_terrier": {
       "name": "Manchester terrier",
