@@ -448,8 +448,8 @@ export const coloringCopy: Record<Locale, ColoringCopy> = {
     licence: "Gratuito para uso pessoal, familiar e na sala de aula. Por favor, não vendas nem voltes a publicar os desenhos.",
     page: {
       metaTitle: (t) => `${t} – desenho para colorir gratuito para imprimir | PetPrep`,
-      metaDescription: (t) => `${t}: um desenho para colorir gratuito para crianças, para imprimir (PDF em A4 e US Letter), com uma curiosidade real sobre cuidados a animais de estimação e a respetiva fonte. Do PetPrep.`,
-      lead: "Gratuito para imprimir e colorir. Na página, uma curiosidade real sobre cuidados a animais de estimação para lerem juntos.",
+      metaDescription: (t) => `${t}: um desenho para colorir gratuito para crianças, para imprimir (PDF em A4 e US Letter), com uma curiosidade real sobre cuidados com animais de estimação e a respetiva fonte. Do PetPrep.`,
+      lead: "Gratuito para imprimir e colorir. Na página, uma curiosidade real sobre cuidados com animais de estimação para lerem juntos.",
       print: "Imprimir",
       pdfA4: "PDF (A4)",
       pdfLetter: "PDF (US Letter)",

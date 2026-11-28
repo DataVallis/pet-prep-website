@@ -62,7 +62,7 @@ export const pt: GiftCopy = {
     heading: "Perguntas frequentes",
     items: [
       { q: "Durante quanto tempo é válido o vale?", a: "O vale é válido durante 12 meses a partir da compra. Depois de um dos pais o resgatar, o desafio fica na conta da família e não expira. As doze semanas começam quando o pai ou a mãe atribui o desafio a um animal na aplicação, e não no momento do resgate." },
-      { q: "Posso pedir o reembolso?", a: "Um vale não resgatado pode ser reembolsado no prazo de 14 dias após a compra. Um vale resgatado não é reembolsável. Escreva para hello@petprep.si com o número da encomenda. Os seus direitos legais de consumidor não são afetados." },
+      { q: "Posso pedir o reembolso?", a: "Um vale não resgatado pode ser reembolsado no prazo de 14 dias após a compra. Um vale resgatado não é reembolsável. Escreve para hello@petprep.si com o número da encomenda. Os teus direitos legais de consumidor não são afetados." },
       { q: "Em que dispositivos funciona?", a: "A aplicação PetPrep existe para iPhone e para telemóveis Android. O vale resgata-se neste site, em qualquer navegador." },
       { q: "Preciso de uma conta?", a: "Para comprar e imprimir o vale, não. Para o resgatar, a família precisa de uma conta de pais na aplicação: no site inicias sessão como na aplicação e depois introduzes o código." },
       { q: "O vale serve para um gato?", a: "Sim. Hoje a aplicação tem cães e gatos, e o vale serve para qualquer espécie e raça disponível na aplicação no momento da escolha." },
@@ -83,7 +83,7 @@ export const pt: GiftCopy = {
     meta: { title: "Obrigado: imprime o teu vale", description: "Cola o código do teu e-mail e imprime o vale-oferta." },
     eyebrow: "Vale-oferta",
     title: "Obrigado. Vamos imprimir o vale.",
-    lead: "O seu código está abaixo, pronto a imprimir. Também lho enviámos por e-mail, juntamente com o vale para imprimir.",
+    lead: "O teu código está abaixo, pronto a imprimir. Também to enviámos por e-mail, juntamente com o vale para imprimir.",
     codeLabel: "Código do e-mail",
     codeHint: "Cola o código tal como aparece no e-mail.",
     codeInvalid: "Este código não parece correto. Tem entre 8 e 64 letras, algarismos e hífenes.",
