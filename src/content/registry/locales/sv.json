@@ -1482,7 +1482,16 @@
         "Rysk vinthund",
         "Barsoi",
         "Russian wolfhound"
-      ]
+      ],
+      "colours": {
+        "white-red": "Vit med röda fläckar",
+        "white": "Vit",
+        "red": "Röd",
+        "sable": "Röd sobel",
+        "brindle": "Tigrerad",
+        "black-tan": "Svart och tan",
+        "black": "Svart"
+      }
     },
     "bouvier_des_flandres": {
       "name": "Bouvier des Flandres",
@@ -1490,7 +1499,13 @@
       "synonyms": [
         "Bouvier",
         "Flanders cattle dog"
-      ]
+      ],
+      "colours": {
+        "grey-brindle": "Mörkgrå tigrerad",
+        "brindle": "Tigrerad",
+        "black-brindle": "Svarttigrerad",
+        "black": "Svart"
+      }
     },
     "japanese_chin": {
       "name": "Japanese chin",
@@ -1498,7 +1513,11 @@
       "synonyms": [
         "Japansk spaniel",
         "Chin"
-      ]
+      ],
+      "colours": {
+        "black-white": "Svartvit",
+        "red-white": "Rödvit"
+      }
     },
     "miniature_bull_terrier": {
       "name": "Miniatyrbullterrier",
@@ -1507,14 +1526,28 @@
         "Miniature bull terrier",
         "Mini bullterrier",
         "Miniatyr bullterrier"
-      ]
+      ],
+      "colours": {
+        "white": "Vit",
+        "brindle": "Tigrerad",
+        "black-brindle": "Svarttigrerad",
+        "red": "Röd",
+        "fawn": "Fawn",
+        "tricolour": "Trefärgad"
+      }
     },
     "norwich_terrier": {
       "name": "Norwich terrier",
       "slug": "norwich-terrier",
       "synonyms": [
         "Norwichterrier"
-      ]
+      ],
+      "colours": {
+        "red": "Röd",
+        "wheaten": "Vetefärgad",
+        "black-tan": "Svart och tan",
+        "grizzle": "Grizzle"
+      }
     },
     "schipperke": {
       "name": "Schipperke",
@@ -1528,7 +1561,11 @@
         "Belgian tervuren",
         "Tervueren",
         "Tervuren"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fawn med svart mask",
+        "grey": "Grå med svart mask"
+      }
     },
     "belgian_sheepdog": {
       "name": "Belgisk vallhund groenendael",
@@ -1542,7 +1579,13 @@
     },
     "toy_fox_terrier": {
       "name": "Toy fox terrier",
-      "slug": "toy-fox-terrier"
+      "slug": "toy-fox-terrier",
+      "colours": {
+        "tricolour": "Trefärgad (vit, svart och tan)",
+        "chocolate-tan-white": "Vit, chokladbrun och tan",
+        "tan-white": "Vit och tan",
+        "black-white": "Vit och svart"
+      }
     },
     "gordon_setter": {
       "name": "Gordonsetter",
@@ -1556,7 +1599,16 @@
       "slug": "afghanhund",
       "synonyms": [
         "Afghan hound"
-      ]
+      ],
+      "colours": {
+        "gold-black-mask": "Guld med svart mask",
+        "cream": "Gräddfärgad",
+        "red-black-mask": "Röd med svart mask",
+        "black": "Svart",
+        "black-tan": "Svart och tan",
+        "blue": "Blå",
+        "brindle": "Tigrerad"
+      }
     },
     "australian_silky_terrier": {
       "name": "Australian silky terrier",
@@ -1567,7 +1619,13 @@
     },
     "parson_russell_terrier": {
       "name": "Parson russell terrier",
-      "slug": "parson-russell-terrier"
+      "slug": "parson-russell-terrier",
+      "colours": {
+        "white-tan": "Vit och tan",
+        "tricolour": "Trefärgad",
+        "white-lemon": "Vit och citron",
+        "white-black": "Vit och svart"
+      }
     },
     "wire_fox_terrier": {
       "name": "Foxterrier strävhårig",
@@ -1575,7 +1633,12 @@
       "synonyms": [
         "Strävhårig foxterrier",
         "Wire fox terrier"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Trefärgad",
+        "white-tan": "Vit och tan",
+        "white-black": "Vit och svart"
+      }
     },
     "manchester_terrier": {
       "name": "Manchesterterrier",
