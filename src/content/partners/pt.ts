@@ -21,7 +21,7 @@ export const pt: PartnerLocalePack = {
         shelter: "Abrigo ou associação",
         other: "Outro",
       },
-      consentBefore: "Aceito que a PetPrep trate os dados deste formulário para responder ao meu pedido, tal como descrito na ",
+      consentBefore: "Aceito que o PetPrep trate os dados deste formulário para responder ao meu pedido, tal como descrito na ",
       consentLink: "política de privacidade",
       consentAfter: ".",
       submit: "Enviar pedido",
@@ -54,18 +54,18 @@ export const pt: PartnerLocalePack = {
     htmlLang: "pt-PT",
     company: "PetPrep (empresa em constituição)",
     title: "Dossiê de imprensa",
-    tagline: "Preparados para um animal. Ao seu lado a vida inteira.",
+    tagline: "Prontos para um animal de estimação. Presentes durante toda a vida dele.",
     what: {
-      heading: "O que é a PetPrep",
+      heading: "O que é o PetPrep",
       paragraphs: [
-        "A PetPrep é uma aplicação com um registo de animais que ajuda a família a preparar-se para um cão ou um gato antes de o levar para casa. Num desafio de 12 semanas, a criança cuida de um animal virtual realista, enquanto os pais veem num painel como correm realmente os cuidados.",
+        "O PetPrep é uma aplicação com um registo de animais que ajuda a família a preparar-se para um cão ou um gato antes de o levar para casa. Num desafio de 12 semanas, a criança cuida de um animal virtual realista, enquanto os pais veem num painel como correm realmente os cuidados.",
         "O registo de raças explica o que cada animal precisa, com fontes citadas. Cada número pode ser rastreado até à fonte e todo o conteúdo de parceiros está identificado como tal.",
       ],
     },
     audience: {
       heading: "Público",
       paragraphs: [
-        "Famílias prestes a decidir sobre um animal de companhia e adultos que querem testar se uma raça realmente lhes convém. O leitor já sabe que espécie e que raça está a estudar, por isso a atenção é concreta.",
+        "Famílias prestes a decidir sobre um animal de estimação e adultos que querem testar se uma raça realmente lhes convém. O leitor já sabe que espécie e que raça está a estudar, por isso a atenção é concreta.",
       ],
     },
     coop: {
@@ -74,8 +74,8 @@ export const pt: PartnerLocalePack = {
         ["Patrocínio da série «12 Weeks»", "Menção ao patrocinador no episódio e na respetiva descrição. O patrocinador não edita a série."],
         ["Conteúdo patrocinado em petprep.si", "Um artigo identificado como tal, junto à página de uma raça ou na base de conhecimento, sem influência no conteúdo nem nas fontes."],
         ["Seguradoras", "Patrocínio fixo ou pagamento por contacto encaminhado. Contactos apenas com o consentimento explícito dos pais. O encaminhamento de contactos está em preparação."],
-        ["Parceiro fundador do diretório", "Veterinários, escolas de treino canino, tosquiadores, criadores: uma entrada em destaque. 190 € por ano, preço garantido, vagas limitadas por país."],
-        ["Abrigos e associações", "Uma entrada gratuita e a possibilidade de recomendar a PetPrep a quem adota."],
+        ["Parceiro fundador do diretório", "Veterinários, escolas de treino canino, tosquiadores, criadores: uma entrada em destaque. 190\u00a0€ por ano, preço garantido, vagas limitadas por país."],
+        ["Abrigos e associações", "Uma entrada gratuita e a possibilidade de recomendar o PetPrep a quem adota."],
       ],
     },
     examples: {
@@ -95,20 +95,20 @@ export const pt: PartnerLocalePack = {
   },
   page: {
     meta: {
-      title: "Parceiros e patrocinadores – colabore com a PetPrep",
+      title: "Parceiros e patrocinadores – colabore com o PetPrep",
       description:
         "Patrocínio da série «12 Weeks», conteúdo patrocinado, seguradoras, parceiros fundadores do diretório, abrigos e associações. Tudo identificado, sem influência no conteúdo nem nas fontes.",
     },
     eyebrow: "Parceiros e patrocinadores",
     title: "Chegue às famílias mesmo antes de decidirem sobre um animal.",
     lead:
-      "A PetPrep é uma aplicação e um registo de raças onde a família se prepara antes de levar um cão ou um gato para casa. Procuramos parceiros que se importem com a adoção responsável e que o digam abertamente, com a colaboração claramente identificada.",
+      "O PetPrep é uma aplicação e um registo de raças onde a família se prepara antes de levar um cão ou um gato para casa. Procuramos parceiros que se importem com a adoção responsável e que o digam abertamente, com a colaboração claramente identificada.",
     blocks: [
       {
         type: "prose",
-        heading: "A quem se dirige a PetPrep",
+        heading: "A quem se dirige o PetPrep",
         paragraphs: [
-          "A PetPrep dirige-se a famílias prestes a decidir sobre um animal e a adultos que querem testar se uma raça realmente lhes convém. O nosso leitor não procura às cegas: já sabe que espécie e que raça está a estudar e, no [registo de animais](page:animals), lê o que esse animal precisa, com fontes citadas.",
+          "O PetPrep dirige-se a famílias prestes a decidir sobre um animal e a adultos que querem testar se uma raça realmente lhes convém. O nosso leitor não procura às cegas: já sabe que espécie e que raça está a estudar e, no [registo de animais](page:animals), lê o que esse animal precisa, com fontes citadas.",
           "Para um parceiro, é um momento raro. A decisão ainda não foi tomada, mas o interesse é concreto. Por isso, é importante para nós que cada colaboração esteja claramente identificada e nunca altere aquilo que as famílias leem.",
         ],
       },
@@ -120,8 +120,8 @@ export const pt: PartnerLocalePack = {
           { title: "Patrocínio da série «12 Weeks»", text: "A série acompanha 12 semanas de cuidados com um animal. O patrocinador é mencionado no episódio e na respetiva descrição; não edita a série." },
           { title: "Conteúdo patrocinado em petprep.si", text: "Um artigo junto à página de uma raça ou na base de conhecimento. Está sempre identificado como patrocinado e o patrocinador não tem qualquer influência na página nem nas fontes citadas." },
           { title: "Seguradoras", text: "Pagamento por contacto encaminhado ou um patrocínio fixo. Só passamos um contacto com o consentimento explícito dos pais e nunca dados de uma criança. O encaminhamento de contactos está em preparação e ainda não está disponível." },
-          { title: "Parceiro fundador do diretório", text: "Para veterinários, escolas de treino canino, tosquiadores e criadores: uma entrada em destaque com logótipo, descrição e ligação. 190 € por ano; o preço fica garantido para os parceiros fundadores. As vagas são limitadas por país." },
-          { title: "Abrigos e associações", text: "A entrada é gratuita. Pode recomendar a PetPrep a quem adota, para que chegue mais bem preparado à chegada do animal." },
+          { title: "Parceiro fundador do diretório", text: "Para veterinários, escolas de treino canino, tosquiadores e criadores: uma entrada em destaque com logótipo, descrição e ligação. 190\u00a0€ por ano; o preço fica garantido para os parceiros fundadores. As vagas são limitadas por país." },
+          { title: "Abrigos e associações", text: "A entrada é gratuita. Pode recomendar o PetPrep a quem adota, para que chegue mais bem preparado à chegada do animal." },
         ],
       },
       {
@@ -140,7 +140,7 @@ export const pt: PartnerLocalePack = {
         type: "downloads",
         id: "media-kit",
         heading: "Dossiê de imprensa",
-        intro: "Uma breve apresentação da PetPrep para parceiros e meios de comunicação: o que é a PetPrep, a quem se destina, formas de colaboração e exemplos de conteúdo.",
+        intro: "Uma breve apresentação do PetPrep para parceiros e meios de comunicação: o que é o PetPrep, a quem se destina, formas de colaboração e exemplos de conteúdo.",
         items: [
           { href: "/media/petprep-media-kit-pt.pdf", label: "Dossiê de imprensa (português)", meta: "PDF" },
           { href: "/media/petprep-media-kit-en.pdf", label: "Dossiê de imprensa (inglês)", meta: "PDF" },

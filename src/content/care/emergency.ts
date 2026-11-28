@@ -285,9 +285,9 @@ export const emergencyCopy: Record<Locale, {
     countries: { SI: "Eslovénia", HR: "Croácia", GB: "Reino Unido", US: "Estados Unidos", AU: "Austrália" },
     vetsTitle: "Veterinários e clínicas de urgência por país",
     vetsIntro: "Em casa ou de férias: escolhe o país, filtra por região ou localidade, ou mostra apenas as clínicas abertas 24 horas por dia. Cada entrada tem uma ligação para a página de onde a tirámos. Liga antes de ir, porque os horários podem mudar.",
-    vetsStats: ["Veterinários","Escalas de urgência","Linhas antivenenos","Países"],
+    vetsStats: ["Veterinários", "Escalas de urgência", "Linhas toxicológicas", "Países"],
     vets: {
-      chooseCountry: "Escolhe um país", choosePrompt: "Escolhe um país acima para veres os veterinários, os serviços de urgência e as linhas antivenenos.", typeToSearch: "Escreve para pesquisar…", noMatch: "Sem resultados",
+      chooseCountry: "Escolhe um país", choosePrompt: "Escolhe um país acima para veres os veterinários, os serviços de urgência e as linhas de apoio toxicológico.", typeToSearch: "Escreve para pesquisar…", noMatch: "Sem resultados",
       country: "País", all: "Todos os países", region: "Região", allRegions: "Todas as regiões", search: "Localidade ou nome",
       searchPlaceholder: "p. ex. Split, Málaga, Maribor", only24h: "Só 24\u00a0h", results: "Resultados: {n}",
       none: "Sem resultados – experimenta outra localidade ou outra região.", h24: "24\u00a0h", dutyRota: "Escalas de serviço", poisonLine: "Linha toxicológica",

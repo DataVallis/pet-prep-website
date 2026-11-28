@@ -97,8 +97,8 @@ export const PHRASES = {
     groom: { once_a_week: 'uma vez por semana', more_than_once_a_week: 'várias vezes por semana', every_day: 'todos os dias' },
     groom_note: '{n} vezes por ano', groom_note_more: 'pelo menos {n} vezes por ano',
     groom_app: { once_a_week: 'escovagem uma vez por semana', more_than_once_a_week: 'escovagem várias vezes por semana', every_day: 'escovagem todos os dias', coat: 'cuidados com o pelo' },
-    size: { small: 'cão pequeno', medium: 'cão de porte médio', large: 'cão grande' },
-    size_app: { small: 'um cão pequeno', medium: 'um cão de porte médio', large: 'um cão grande' },
+    size: { small: 'cão pequeno', medium: 'cão de tamanho médio', large: 'cão grande' },
+    size_app: { small: 'um cão pequeno', medium: 'um cão de tamanho médio', large: 'um cão grande' },
   },
   nl: {
     intl: 'nl-NL',
