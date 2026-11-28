@@ -16,7 +16,7 @@ type Fci = { number: number; group: number; origin: string };
 const PROPER_START = /^(Maine Coon|Chesapeake|Jack Russell)\b/;
 const mid = (name: string) => (PROPER_START.test(name) ? name : name.charAt(0).toLocaleLowerCase("sl") + name.slice(1));
 const fciGroups: Record<number, string> = { 1: "ovčarski in pastirski psi", 2: "pinči in šnavcerji, molosi ter švicarski planšarski in pastirski psi", 3: "terierji", 4: "jazbečarji", 5: "špici in pasme pramaternega tipa", 6: "goniči, krvosledniki in sorodne pasme", 7: "ptičarji", 8: "prinašalci, šarivci in vodni psi", 9: "psi za družbo in pritlikavi psi", 10: "hrti" };
-const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turčija", MG: "Madagaskar", AF: "Afganistan", NO: "Norveška", FI: "Finska", XME: "Bližnji vzhod" };
+const origins: Record<string, string> = { GB: "Velika Britanija", FR: "Francija", DE: "Nemčija", US: "ZDA", CU: "Kuba", CH: "Švica", IT: "Italija", "CN-XZ": "Tibet (Kitajska)", CN: "Kitajska", MX: "Mehika", BE: "Belgija", HU: "Madžarska", JP: "Japonska", ZA: "Južna Afrika", "BE-FR": "Belgija / Francija", PT: "Portugalska", CA: "Kanada", HR: "Hrvaška", AU: "Avstralija", RU: "Rusija", IE: "Irska", "AF-C": "Srednja Afrika", TR: "Turčija", MG: "Madagaskar", AF: "Afganistan", NO: "Norveška", FI: "Finska", IS: "Islandija", XME: "Bližnji vzhod" };
 
 const sl: RegistryCopy = {
   mistakes: {
@@ -1019,6 +1019,14 @@ const sl: RegistryCopy = {
         "PetMD priporoča vsaj uro gibanja na dan in po navedbah kluba pasme česanje dvakrat do trikrat na teden, da se dlaka ne sprijemlje; WebMD priporoča ščetkanje zob vsak dan ali vsak drugi dan in opozarja, da se barbet zaradi gostega kožuha hitro pregreje, zato ni dober spremljevalec pri teku. PetMD in WebMD ga opisujeta kot prijaznega, mirnega psa, ki se dobro razume z otroki in drugimi živalmi, mu ne izpada veliko dlake in ne mara biti dolgo sam; PetMD piše, da mladiči barbeta potrebujejo dobro socializacijo.",
       ],
       sources: ["S1094", "S1095", "S1096", "S10"],
+    },
+    icelandic_sheepdog: {
+      aka: "islandski špic, islandski ovcar, Icelandic Sheepdog, Íslenskur Fjárhundur",
+      text: [
+        "Islandski ovčar je nordijski pastirski špic, nekoliko manjši od srednje velikega, čvrst, s pokončnimi ušesi in zavitim repom; FCI ga uvršča v skupino 5 med nordijske čuvaje in pastirske pse, z Islandijo kot državo izvora. Standard FCI opisuje gosto, izjemno odporno dvojno dlako v več barvah, vedno z belimi oznakami, in navaja idealno višino 46 cm za pse in 42 cm za psice, teže pa ne; WebMD navaja 11,3–13,6 kg (25 do 30 funtov) in povprečno življenjsko dobo 12 do 14 let (tudi PetMD: 12–14 let). Kot pes te velikosti navadno doraste pri 12–15 mesecih (PetMD).",
+        "Dogs NSW navaja približno 40 minut gibanja na dan, WebMD pa piše, da pasma potrebuje zmerno gibanje vsak dan in je primerna za aktivno družino. PetMD priporoča česanje vsaj enkrat na teden in pregled ušes enkrat na mesec; WebMD priporoča ščetkanje zob vsak dan in kopanje vsakih 4 do 6 tednov. WebMD ga opisuje kot ljubečega družinskega psa, ki je potrpežljiv z otroki in je lahko nesrečen, če je pogosto dolgo sam; PetMD piše, da mu dlaka izpada vse leto, da lahko veliko laja in da je treba mladiče socializirati že od malega. Zaradi pastirskega nagona lovi avtomobile in druge premikajoče se predmete (WebMD), AKC pa poudarja, da je varna ograja nujna, da ne pobegne z vrta.",
+      ],
+      sources: ["S1100", "S1101", "S1102", "S1104", "S1106", "S10"],
     },
 
 

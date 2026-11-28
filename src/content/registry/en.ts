@@ -5,7 +5,7 @@ const s = (n: number, one: string, many: string) => (n === 1 ? one : many);
 const a = (name: string) => `${/^[AEIOU]/.test(name) ? "an" : "a"} ${name}`;
 type Fci = { number: number; group: number; origin: string };
 const fciGroups: Record<number, string> = { 1: "sheepdogs and cattle dogs", 2: "pinscher and schnauzer types, molossoid breeds and Swiss mountain and cattle dogs", 3: "terriers", 4: "dachshunds", 5: "spitz and primitive types", 6: "scent hounds and related breeds", 7: "pointing dogs", 8: "retrievers, flushing dogs and water dogs", 9: "companion and toy dogs", 10: "sighthounds" };
-const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa", TR: "Turkey", MG: "Madagascar", AF: "Afghanistan", NO: "Norway", FI: "Finland", XME: "Middle East" };
+const origins: Record<string, string> = { GB: "Great Britain", FR: "France", DE: "Germany", US: "USA", CU: "Cuba", CH: "Switzerland", IT: "Italy", "CN-XZ": "Tibet (China)", CN: "China", MX: "Mexico", BE: "Belgium", HU: "Hungary", JP: "Japan", ZA: "South Africa", "BE-FR": "Belgium / France", PT: "Portugal", CA: "Canada", HR: "Croatia", AU: "Australia", RU: "Russia", IE: "Ireland", "AF-C": "Central Africa", TR: "Turkey", MG: "Madagascar", AF: "Afghanistan", NO: "Norway", FI: "Finland", IS: "Iceland", XME: "Middle East" };
 
 const en: RegistryCopy = {
   mistakes: {
@@ -999,6 +999,14 @@ const en: RegistryCopy = {
         "PetMD recommends at least an hour of exercise every day and, citing the breed club, brushing two to three times a week to prevent matting; WebMD recommends brushing the teeth every day or two and warns that the thick coat makes the Barbet overheat quickly, so it is not a good jogging partner. PetMD and WebMD describe a friendly, calm dog that gets along well with children and other pets, does not shed much and does not thrive when left alone for long periods; PetMD says Barbet puppies need proper socialisation.",
       ],
       sources: ["S1094", "S1095", "S1096", "S10"],
+    },
+    icelandic_sheepdog: {
+      aka: "Icelandic Spitz, Iceland Dog, Íslenskur Fjárhundur, islandski ovčar",
+      text: [
+        "The Icelandic Sheepdog is a Nordic herding spitz, slightly under medium size and sturdy, with erect ears and a curled tail; the FCI lists it in Group 5 among the Nordic watchdogs and herders, with Iceland as its country of origin. The FCI standard describes a thick, extremely weather-resistant double coat in several colours, always with white markings, and gives an ideal height of 46 cm for males and 42 cm for females, but no weight; WebMD gives 11.3–13.6 kg (25 to 30 pounds) and an average lifespan of 12 to 14 years (PetMD: also 12–14 years). As a dog of this size, it is usually fully grown at around 12–15 months (PetMD).",
+        "Dogs NSW gives about 40 minutes of exercise a day, and WebMD says the breed needs moderate exercise every day and suits an active family. PetMD recommends brushing at least once a week and checking the ears once a month; WebMD recommends brushing the teeth every day and a bath every 4 to 6 weeks. WebMD describes loving family dogs that are patient with children and may be unhappy when left alone for long periods; PetMD notes that they shed year-round, can bark a lot, and that puppies should be socialised from a young age. Because of their herding instinct they chase cars and other moving objects (WebMD), and the AKC says a secure fence is essential to keep them from escaping the yard.",
+      ],
+      sources: ["S1100", "S1101", "S1102", "S1104", "S1106", "S10"],
     },
 
 
