@@ -992,6 +992,14 @@ const en: RegistryCopy = {
       ],
       sources: ["S1085", "S1086", "S1087", "S1088", "S10"],
     },
+    barbet: {
+      aka: "French Water Dog, francoski vodni pes",
+      text: [
+        "The Barbet is a medium-sized French water dog, bred for hunting waterfowl; the FCI lists it in Group 8 among the water dogs. The FCI standard describes a thick, woolly, long and curly coat that covers the whole body in its natural state and forms a beard on the chin — which gave the breed its name — and allows solid black, grey, brown, fawn, pale fawn, white or more or less pied. The FCI standard gives a height of 58–65 cm for males and 53–61 cm for females, but no weight; WebMD gives 18–27 kg for males and 13.5–23 kg for females, and says the average lifespan is over 10 years, with many dogs living 12 to 14 years (PetMD: 12–15 years). As a medium-sized dog, it is usually fully grown at around 12–15 months (PetMD).",
+        "PetMD recommends at least an hour of exercise every day and, citing the breed club, brushing two to three times a week to prevent matting; WebMD recommends brushing the teeth every day or two and warns that the thick coat makes the Barbet overheat quickly, so it is not a good jogging partner. PetMD and WebMD describe a friendly, calm dog that gets along well with children and other pets, does not shed much and does not thrive when left alone for long periods; PetMD says Barbet puppies need proper socialisation.",
+      ],
+      sources: ["S1094", "S1095", "S1096", "S10"],
+    },
 
 
     finnish_lapphund: {
