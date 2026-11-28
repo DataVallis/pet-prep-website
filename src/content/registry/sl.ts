@@ -1012,6 +1012,14 @@ const sl: RegistryCopy = {
       ],
       sources: ["S1085", "S1086", "S1087", "S1088", "S10"],
     },
+    barbet: {
+      aka: "francoski vodni pes, Barbet, French Water Dog",
+      text: [
+        "Barbet je srednje velik francoski vodni pes, vzrejen za lov na vodne ptice; FCI ga uvršča v skupino 8 med vodne pse. Standard FCI opisuje gosto, volnato, dolgo in kodrasto dlako, ki v naravnem stanju pokriva vse telo in pod gobcem tvori brado — po njej je pasma dobila ime — ter dovoljuje enobarvno črno, sivo, rjavo, plavo rjavo, svetlo plavo rjavo, belo ali bolj ali manj lisasto barvo. Standard FCI navaja višino 58–65 cm za pse in 53–61 cm za psice, teže pa ne; WebMD navaja 18–27 kg za pse in 13,5–23 kg za psice ter povprečno življenjsko dobo več kot 10 let, pri čemer mnogi psi živijo 12 do 14 let (PetMD: 12–15 let). Kot srednje velik pes navadno doraste pri 12–15 mesecih (PetMD).",
+        "PetMD priporoča vsaj uro gibanja na dan in po navedbah kluba pasme česanje dvakrat do trikrat na teden, da se dlaka ne sprijemlje; WebMD priporoča ščetkanje zob vsak dan ali vsak drugi dan in opozarja, da se barbet zaradi gostega kožuha hitro pregreje, zato ni dober spremljevalec pri teku. PetMD in WebMD ga opisujeta kot prijaznega, mirnega psa, ki se dobro razume z otroki in drugimi živalmi, mu ne izpada veliko dlake in ne mara biti dolgo sam; PetMD piše, da mladiči barbeta potrebujejo dobro socializacijo.",
+      ],
+      sources: ["S1094", "S1095", "S1096", "S10"],
+    },
 
 
     finnish_lapphund: {
