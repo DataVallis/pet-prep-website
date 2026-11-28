@@ -1355,7 +1355,15 @@
         "Borzoi",
         "Russischer Windhund",
         "Russischer Jagdwindhund"
-      ]
+      ],
+      "colours": {
+        "white-red": "Weiß mit roten Platten",
+        "white": "Weiß",
+        "sable": "Rotzobel",
+        "brindle": "Gestromt",
+        "black-tan": "Schwarz mit Brand",
+        "black": "Schwarz"
+      }
     },
     "bouvier_des_flandres": {
       "name": "Bouvier des Flandres",
@@ -1363,7 +1371,13 @@
       "synonyms": [
         "Flandrischer Treibhund",
         "Vlaamse Koehond"
-      ]
+      ],
+      "colours": {
+        "grey-brindle": "Dunkelgrau gestromt",
+        "brindle": "Gestromt",
+        "black-brindle": "Gestromt mit schwarzer Überlagerung",
+        "black": "Schwarz"
+      }
     },
     "japanese_chin": {
       "name": "Japan Chin",
@@ -1373,7 +1387,11 @@
         "Japan-Chin",
         "Japanese Chin",
         "Japanischer Spaniel"
-      ]
+      ],
+      "colours": {
+        "black-white": "Schwarz-Weiß",
+        "red-white": "Rot-Weiß"
+      }
     },
     "miniature_bull_terrier": {
       "name": "Miniature Bullterrier",
@@ -1381,11 +1399,25 @@
       "synonyms": [
         "Miniature Bull Terrier",
         "Zwergbullterrier"
-      ]
+      ],
+      "colours": {
+        "white": "Weiß",
+        "brindle": "Gestromt",
+        "black-brindle": "Schwarz gestromt",
+        "red": "Rot",
+        "fawn": "Falb",
+        "tricolour": "Tricolour (Schwarz, Lohfarben, Weiß)"
+      }
     },
     "norwich_terrier": {
       "name": "Norwich Terrier",
-      "slug": "norwich-terrier"
+      "slug": "norwich-terrier",
+      "colours": {
+        "red": "Rot",
+        "wheaten": "Weizenfarben",
+        "black-tan": "Schwarz mit Brand",
+        "grizzle": "Grizzle"
+      }
     },
     "schipperke": {
       "name": "Schipperke",
@@ -1399,7 +1431,11 @@
         "Tervuren",
         "Belgischer Schäferhund Tervueren",
         "Belgian Tervuren"
-      ]
+      ],
+      "colours": {
+        "fawn": "Falb mit schwarzer Maske",
+        "grey": "Grau mit schwarzer Maske"
+      }
     },
     "belgian_sheepdog": {
       "name": "Belgischer Schäferhund (Groenendael)",
@@ -1417,7 +1453,13 @@
       "synonyms": [
         "Toy Foxterrier",
         "Toy-Foxterrier"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Tricolour (Weiß, Schwarz, Lohfarben)",
+        "chocolate-tan-white": "Weiß, Schokobraun und Lohfarben",
+        "tan-white": "Weiß-Lohfarben",
+        "black-white": "Weiß-Schwarz"
+      }
     },
     "gordon_setter": {
       "name": "Gordon Setter",
@@ -1429,7 +1471,15 @@
       "synonyms": [
         "Afghane",
         "Afghan Hound"
-      ]
+      ],
+      "colours": {
+        "gold-black-mask": "Gold mit schwarzer Maske",
+        "cream": "Creme",
+        "red-black-mask": "Rot mit schwarzer Maske",
+        "black": "Schwarz",
+        "black-tan": "Schwarz mit Brand",
+        "blue": "Blau"
+      }
     },
     "australian_silky_terrier": {
       "name": "Australian Silky Terrier",
@@ -1445,7 +1495,12 @@
       "slug": "parson-russell-terrier",
       "synonyms": [
         "Parson-Russell-Terrier"
-      ]
+      ],
+      "colours": {
+        "white-tan": "Weiß-Lohfarben",
+        "tricolour": "Tricolour (Weiß, Schwarz, Lohfarben)",
+        "white-black": "Weiß-Schwarz"
+      }
     },
     "wire_fox_terrier": {
       "name": "Foxterrier (Drahthaar)",
@@ -1455,7 +1510,12 @@
         "Drahthaar Foxterrier",
         "Foxterrier Drahthaar",
         "Wire Fox Terrier"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Tricolour (Weiß, Schwarz, Lohfarben)",
+        "white-tan": "Weiß-Lohfarben",
+        "white-black": "Weiß-Schwarz"
+      }
     },
     "manchester_terrier": {
       "name": "Manchester Terrier",
