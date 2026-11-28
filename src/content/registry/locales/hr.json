@@ -1546,7 +1546,16 @@
       "synonyms": [
         "Borzoj",
         "Borzoi"
-      ]
+      ],
+      "colours": {
+        "white-red": "Bijela s crvenim pjegama",
+        "white": "Bijela",
+        "red": "Crvena",
+        "sable": "Crveni sable",
+        "brindle": "Tigrasta",
+        "black-tan": "Crna s podpalinama",
+        "black": "Crna"
+      }
     },
     "bouvier_des_flandres": {
       "name": "Flandrijski govedarski pas",
@@ -1555,7 +1564,13 @@
         "Bouvier des Flandres",
         "Bouvier",
         "Flandrijski govedar"
-      ]
+      ],
+      "colours": {
+        "grey-brindle": "Tamnosiva tigrasta",
+        "brindle": "Tigrasta",
+        "black-brindle": "Tigrasta s crnim preljevom",
+        "black": "Crna"
+      }
     },
     "japanese_chin": {
       "name": "Japanski čin",
@@ -1564,7 +1579,11 @@
         "Japanski španijel",
         "Japanski chin",
         "Japanese chin"
-      ]
+      ],
+      "colours": {
+        "black-white": "Crno-bijela",
+        "red-white": "Crveno-bijela"
+      }
     },
     "leonberger": {
       "name": "Leonberger",
@@ -1582,14 +1601,28 @@
       "synonyms": [
         "Miniature bull terrier",
         "Minijaturni bul terijer"
-      ]
+      ],
+      "colours": {
+        "white": "Bijela",
+        "brindle": "Tigrasta",
+        "black-brindle": "Crnotigrasta",
+        "red": "Crvena",
+        "fawn": "Jelenje žuta (fawn)",
+        "tricolour": "Trobojna"
+      }
     },
     "norwich_terrier": {
       "name": "Norwich terijer",
       "slug": "norwich-terijer",
       "synonyms": [
         "Norwich terrier"
-      ]
+      ],
+      "colours": {
+        "red": "Crvena",
+        "wheaten": "Pšenična",
+        "black-tan": "Crna s podpalinama",
+        "grizzle": "Grizzle"
+      }
     },
     "schipperke": {
       "name": "Šiperke",
@@ -1606,7 +1639,11 @@
         "Tervueren",
         "Tervuren",
         "Belgian tervuren"
-      ]
+      ],
+      "colours": {
+        "fawn": "Jelenje žuta s crnom maskom",
+        "grey": "Siva s crnom maskom"
+      }
     },
     "belgian_sheepdog": {
       "name": "Belgijski ovčar groenendael",
@@ -1670,7 +1707,13 @@
       "synonyms": [
         "Toy fox terijer",
         "Toy fox terrier"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Trobojna (bijela, crna i podpalina)",
+        "chocolate-tan-white": "Bijela s čokoladnim oznakama i podpalinama",
+        "tan-white": "Bijela s podpalinama",
+        "black-white": "Bijela s crnim oznakama"
+      }
     },
     "gordon_setter": {
       "name": "Gordon seter",
@@ -1686,7 +1729,16 @@
       "synonyms": [
         "Afganski hrt",
         "Afghan hound"
-      ]
+      ],
+      "colours": {
+        "gold-black-mask": "Zlatna s crnom maskom",
+        "cream": "Krem",
+        "red-black-mask": "Crvena s crnom maskom",
+        "black": "Crna",
+        "black-tan": "Crna s podpalinama",
+        "blue": "Plavosiva",
+        "brindle": "Tigrasta"
+      }
     },
     "australian_silky_terrier": {
       "name": "Australski svilenasti terijer",
@@ -1703,7 +1755,13 @@
       "slug": "parson-russell-terijer",
       "synonyms": [
         "Parson Russell terrier"
-      ]
+      ],
+      "colours": {
+        "white-tan": "Bijela s podpalinama",
+        "tricolour": "Trobojna",
+        "white-lemon": "Bijela s blijedožutim oznakama",
+        "white-black": "Bijela s crnim oznakama"
+      }
     },
     "wire_fox_terrier": {
       "name": "Oštrodlaki foksterijer",
@@ -1711,7 +1769,12 @@
       "synonyms": [
         "Foksterijer oštrodlaki",
         "Wire fox terrier"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Trobojna",
+        "white-tan": "Bijela s podpalinama",
+        "white-black": "Bijela s crnim oznakama"
+      }
     },
     "manchester_terrier": {
       "name": "Manchester terijer",
