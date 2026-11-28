@@ -1408,7 +1408,16 @@
         "Russische windhond",
         "Barzoi",
         "Russian wolfhound"
-      ]
+      ],
+      "colours": {
+        "white-red": "Wit met rode aftekeningen",
+        "white": "Wit",
+        "red": "Rood",
+        "sable": "Roodsable",
+        "brindle": "Gestroomd",
+        "black-tan": "Zwart met tan",
+        "black": "Zwart"
+      }
     },
     "bouvier_des_flandres": {
       "name": "Bouvier des Flandres",
@@ -1417,7 +1426,13 @@
         "Vlaamse koehond",
         "Bouvier",
         "Flanders cattle dog"
-      ]
+      ],
+      "colours": {
+        "grey-brindle": "Donkergrijs gestroomd",
+        "brindle": "Gestroomd",
+        "black-brindle": "Gestroomd met zwarte waas",
+        "black": "Zwart"
+      }
     },
     "japanese_chin": {
       "name": "Japanse chin",
@@ -1426,7 +1441,11 @@
         "Japanese chin",
         "Chin",
         "Japanse spaniël"
-      ]
+      ],
+      "colours": {
+        "black-white": "Zwart-wit",
+        "red-white": "Rood-wit"
+      }
     },
     "miniature_bull_terrier": {
       "name": "Miniature bull terrier",
@@ -1435,11 +1454,25 @@
         "Dwergbullterriër",
         "Miniatuur bull terrier",
         "Mini bull terrier"
-      ]
+      ],
+      "colours": {
+        "white": "Wit",
+        "brindle": "Gestroomd",
+        "black-brindle": "Zwart gestroomd",
+        "red": "Rood",
+        "fawn": "Fawn",
+        "tricolour": "Driekleur (zwart, tan en wit)"
+      }
     },
     "norwich_terrier": {
       "name": "Norwich terrier",
-      "slug": "norwich-terrier"
+      "slug": "norwich-terrier",
+      "colours": {
+        "red": "Rood",
+        "wheaten": "Tarwe",
+        "black-tan": "Zwart met tan",
+        "grizzle": "Grizzle"
+      }
     },
     "schipperke": {
       "name": "Schipperke",
@@ -1452,7 +1485,11 @@
         "Tervuren",
         "Tervueren",
         "Belgian Tervuren"
-      ]
+      ],
+      "colours": {
+        "fawn": "Fawn met zwart masker",
+        "grey": "Grijs met zwart masker"
+      }
     },
     "belgian_sheepdog": {
       "name": "Groenendaeler",
@@ -1552,7 +1589,13 @@
         "Toy foxterriër",
         "Amerikaanse toy terrier",
         "Amertoy"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Driekleur (wit, zwart en tan)",
+        "chocolate-tan-white": "Wit, chocolade en tan",
+        "tan-white": "Wit met tan",
+        "black-white": "Wit met zwart"
+      }
     },
     "gordon_setter": {
       "name": "Gordon setter",
@@ -1567,7 +1610,16 @@
       "synonyms": [
         "Afghaan",
         "Afghan hound"
-      ]
+      ],
+      "colours": {
+        "gold-black-mask": "Goud met zwart masker",
+        "cream": "Crème",
+        "red-black-mask": "Rood met zwart masker",
+        "black": "Zwart",
+        "black-tan": "Zwart met tan",
+        "blue": "Blauwgrijs",
+        "brindle": "Gestroomd"
+      }
     },
     "australian_silky_terrier": {
       "name": "Australische silky terrier",
@@ -1585,7 +1637,13 @@
       "synonyms": [
         "Parson Russell",
         "Parson Russell terriër"
-      ]
+      ],
+      "colours": {
+        "white-tan": "Wit met tan",
+        "tricolour": "Driekleur",
+        "white-lemon": "Wit met lemon",
+        "white-black": "Wit met zwart"
+      }
     },
     "wire_fox_terrier": {
       "name": "Foxterriër ruwhaar",
@@ -1595,7 +1653,12 @@
         "Foxterriër draadhaar",
         "Fox terrier ruwhaar",
         "Wire fox terrier"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Driekleur",
+        "white-tan": "Wit met tan",
+        "white-black": "Wit met zwart"
+      }
     },
     "manchester_terrier": {
       "name": "Manchester terrier",
