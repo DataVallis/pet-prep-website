@@ -1377,7 +1377,16 @@
         "Barzoi",
         "Lebrel ruso",
         "Galgo ruso"
-      ]
+      ],
+      "colours": {
+        "white-red": "Blanco con manchas rojas",
+        "white": "Blanco",
+        "red": "Rojo",
+        "sable": "Sable rojo",
+        "brindle": "Atigrado",
+        "black-tan": "Negro y fuego",
+        "black": "Negro"
+      }
     },
     "bouvier_des_flandres": {
       "name": "Boyero de Flandes",
@@ -1385,7 +1394,13 @@
       "synonyms": [
         "Bouvier des Flandres",
         "Vlaamse Koehond"
-      ]
+      ],
+      "colours": {
+        "grey-brindle": "Atigrado gris oscuro",
+        "brindle": "Atigrado",
+        "black-brindle": "Atigrado carbonado de negro",
+        "black": "Negro"
+      }
     },
     "japanese_chin": {
       "name": "Spaniel japonés",
@@ -1394,19 +1409,37 @@
         "Chin japonés",
         "Chin",
         "Japanese Chin"
-      ]
+      ],
+      "colours": {
+        "black-white": "Negro y blanco",
+        "red-white": "Rojo y blanco"
+      }
     },
     "miniature_bull_terrier": {
       "name": "Bull terrier miniatura",
       "slug": "bull-terrier-miniatura",
       "synonyms": [
         "Miniature bull terrier"
-      ]
+      ],
+      "colours": {
+        "white": "Blanco",
+        "brindle": "Atigrado",
+        "black-brindle": "Atigrado negro",
+        "red": "Rojo",
+        "fawn": "Leonado",
+        "tricolour": "Tricolor (negro, fuego y blanco)"
+      }
     },
     "norwich_terrier": {
       "name": "Norwich terrier",
       "slug": "norwich-terrier",
-      "synonyms": []
+      "synonyms": [],
+      "colours": {
+        "red": "Rojo",
+        "wheaten": "Trigo",
+        "black-tan": "Negro y fuego",
+        "grizzle": "Grizzle"
+      }
     },
     "schipperke": {
       "name": "Schipperke",
@@ -1420,7 +1453,11 @@
         "Tervueren",
         "Tervuren",
         "Belgian Tervuren"
-      ]
+      ],
+      "colours": {
+        "fawn": "Leonado carbonado con máscara negra",
+        "grey": "Gris carbonado con máscara negra"
+      }
     },
     "belgian_sheepdog": {
       "name": "Pastor belga groenendael",
@@ -1518,7 +1555,13 @@
       "synonyms": [
         "American toy terrier",
         "Amertoy"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Tricolor (blanco, negro y fuego)",
+        "chocolate-tan-white": "Blanco, chocolate y fuego",
+        "tan-white": "Blanco y fuego",
+        "black-white": "Blanco y negro"
+      }
     },
     "gordon_setter": {
       "name": "Setter Gordon",
@@ -1535,7 +1578,16 @@
         "Galgo afgano",
         "Afgano",
         "Afghan hound"
-      ]
+      ],
+      "colours": {
+        "gold-black-mask": "Dorado con máscara negra",
+        "cream": "Crema",
+        "red-black-mask": "Rojo con máscara negra",
+        "black": "Negro",
+        "black-tan": "Negro y fuego",
+        "blue": "Azul (gris pizarra)",
+        "brindle": "Atigrado"
+      }
     },
     "australian_silky_terrier": {
       "name": "Silky terrier australiano",
@@ -1551,7 +1603,13 @@
       "slug": "parson-russell-terrier",
       "synonyms": [
         "Parson Russell"
-      ]
+      ],
+      "colours": {
+        "white-tan": "Blanco y fuego",
+        "tricolour": "Tricolor",
+        "white-lemon": "Blanco y limón",
+        "white-black": "Blanco y negro"
+      }
     },
     "wire_fox_terrier": {
       "name": "Fox terrier de pelo duro",
@@ -1559,7 +1617,12 @@
       "synonyms": [
         "Fox terrier duro",
         "Wire fox terrier"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Tricolor",
+        "white-tan": "Blanco y fuego",
+        "white-black": "Blanco y negro"
+      }
     },
     "manchester_terrier": {
       "name": "Manchester terrier",
