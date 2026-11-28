@@ -1549,7 +1549,13 @@
         "Bouvier des Flandres",
         "Bouvier",
         "flanderský pastevecký pes"
-      ]
+      ],
+      "colours": {
+        "grey-brindle": "Tmavě šedá žíhaná",
+        "brindle": "Žíhaná",
+        "black-brindle": "Žíhaná s černým překryvem",
+        "black": "Černá"
+      }
     },
     "borzoi": {
       "name": "Barzoj",
@@ -1558,7 +1564,16 @@
         "Borzoi",
         "Ruský chrt",
         "ruský psí chrt"
-      ]
+      ],
+      "colours": {
+        "white-red": "Bílá s červenými znaky",
+        "white": "Bílá",
+        "red": "Červená",
+        "sable": "Červená sobolí",
+        "brindle": "Žíhaná",
+        "black-tan": "Černá s pálením",
+        "black": "Černá"
+      }
     },
     "japanese_chin": {
       "name": "Japonský chin",
@@ -1568,7 +1583,11 @@
         "Japan chin",
         "Chin",
         "japonský spaniel"
-      ]
+      ],
+      "colours": {
+        "black-white": "Černobílá",
+        "red-white": "Červenobílá"
+      }
     },
     "norwich_terrier": {
       "name": "Norwich teriér",
@@ -1577,7 +1596,13 @@
         "Norwich terrier",
         "Norwich",
         "norwichský teriér"
-      ]
+      ],
+      "colours": {
+        "red": "Červená",
+        "wheaten": "Pšeničná",
+        "black-tan": "Černá s pálením",
+        "grizzle": "Grizzle"
+      }
     },
     "miniature_bull_terrier": {
       "name": "Miniaturní bulteriér",
@@ -1586,7 +1611,15 @@
         "Mini bulteriér",
         "Miniature Bull Terrier",
         "Mini Bull"
-      ]
+      ],
+      "colours": {
+        "white": "Bílá",
+        "brindle": "Žíhaná",
+        "black-brindle": "Černá žíhaná",
+        "red": "Červená",
+        "fawn": "Plavá",
+        "tricolour": "Tříbarevná"
+      }
     },
     "schipperke": {
       "name": "Šiperka",
@@ -1603,7 +1636,11 @@
         "Tervueren",
         "Tervuren",
         "Belgian Tervuren"
-      ]
+      ],
+      "colours": {
+        "fawn": "Plavá s černou maskou",
+        "grey": "Šedá s černou maskou"
+      }
     },
     "belgian_sheepdog": {
       "name": "Belgický ovčák groenendael",
@@ -1665,7 +1702,13 @@
       "slug": "toy-foxterier",
       "synonyms": [
         "Toy fox terrier"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Tříbarevná (bílá, černá, pálení)",
+        "chocolate-tan-white": "Bílá a čokoládová s pálením",
+        "tan-white": "Bílá s pálením",
+        "black-white": "Bílá s černou"
+      }
     },
     "gordon_setter": {
       "name": "Gordon setr",
@@ -1681,7 +1724,16 @@
       "synonyms": [
         "Afgánský chrt",
         "Afghan hound"
-      ]
+      ],
+      "colours": {
+        "gold-black-mask": "Zlatá s černou maskou",
+        "cream": "Krémová",
+        "red-black-mask": "Červená s černou maskou",
+        "black": "Černá",
+        "black-tan": "Černá s pálením",
+        "blue": "Modrá",
+        "brindle": "Žíhaná"
+      }
     },
     "australian_silky_terrier": {
       "name": "Australský silky teriér",
@@ -1698,7 +1750,13 @@
       "synonyms": [
         "Parson Russell terrier",
         "Parson Russell"
-      ]
+      ],
+      "colours": {
+        "white-tan": "Bílá s pálenými znaky",
+        "tricolour": "Tříbarevná",
+        "white-lemon": "Bílá s citronovými znaky",
+        "white-black": "Bílá s černými znaky"
+      }
     },
     "wire_fox_terrier": {
       "name": "Foxteriér drsnosrstý",
@@ -1706,7 +1764,12 @@
       "synonyms": [
         "Drsnosrstý foxteriér",
         "Wire fox terrier"
-      ]
+      ],
+      "colours": {
+        "tricolour": "Tříbarevná",
+        "white-tan": "Bílá s pálenými znaky",
+        "white-black": "Bílá s černými znaky"
+      }
     },
     "manchester_terrier": {
       "name": "Manchesterský teriér",
